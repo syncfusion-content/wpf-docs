@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating-Data
+title: Populating Data| GroupBar | Wpf | Syncfusion
 description: populating data
 platform: wpf
 control: GroupBar
@@ -21,23 +21,23 @@ Create a GroupBar control in XAML, as seen below.
 
 <syncfusion:GroupBar Name="groupBar1">
 
-   <syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" >
+<syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" >
 
-        <syncfusion:GroupView>
+<syncfusion:GroupView>
 
-          <syncfusion:GroupViewItem Text="New GroupViewItem" />
+<syncfusion:GroupViewItem Text="New GroupViewItem" />
 
-        </syncfusion:GroupView>
+</syncfusion:GroupView>
 
-   </syncfusion:GroupBarItem>
-
-
-
-   <syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" />
+</syncfusion:GroupBarItem>
 
 
 
-   <syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  />
+<syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" />
+
+
+
+<syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  />
 
 
 
@@ -69,33 +69,33 @@ GroupBar gBar = new GroupBar();
 
 
 
-            GroupBarItem gBarItem1 = new GroupBarItem() { HeaderText ="NewGroupBarItem1", 					IsSelected = true };
+GroupBarItem gBarItem1 = new GroupBarItem() { HeaderText ="NewGroupBarItem1", 					IsSelected = true };
 
 
 
-            GroupView gView = new GroupView();
+GroupView gView = new GroupView();
 
-            GroupViewItem gViewItem = new GroupViewItem() { Text="New GroupViewItem"};
+GroupViewItem gViewItem = new GroupViewItem() { Text="New GroupViewItem"};
 
-            gView.Items.Add(gViewItem);
-
-
-
-            gBarItem1.Content = gView;
+gView.Items.Add(gViewItem);
 
 
 
-            GroupBarItem gBarItem2 = new GroupBarItem() { HeaderText="NewGroupBarItem2"};
-
-            GroupBarItem gBarItem3 = new GroupBarItem() { HeaderText="NewGroupBarItem3"};
+gBarItem1.Content = gView;
 
 
 
-            gBar.Items.Add(gBarItem1);
+GroupBarItem gBarItem2 = new GroupBarItem() { HeaderText="NewGroupBarItem2"};
 
-            gBar.Items.Add(gBarItem2);
+GroupBarItem gBarItem3 = new GroupBarItem() { HeaderText="NewGroupBarItem3"};
 
-            gBar.Items.Add(gBarItem3);
+
+
+gBar.Items.Add(gBarItem1);
+
+gBar.Items.Add(gBarItem2);
+
+gBar.Items.Add(gBarItem3);
 
 
 

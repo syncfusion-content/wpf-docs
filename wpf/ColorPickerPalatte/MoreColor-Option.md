@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MoreColor-Option
+title: MoreColor Option| ColorPickerPalette | Wpf | Syncfusion
 description: morecolor option
 platform: wpf
 control: ColorPickerPalette
@@ -11,7 +11,7 @@ documentation: ug
 
 In addition to colors in Theme colors and Standard colors, MoreColor feature allows you to select wide range of color options. MoreColor feature includes two categories namely Standard Colors and Custom Colors. The Standard Colors includes 140 colors clustered in the shape of a Hexagon. The color chosen from this cluster will also be added in the RecentlyUsedPanel. You can also set the visibility of the MoreColor Option by using the MoreColorOptionVisibility property.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MoreColor Option can be used when you want to select colors using standard and custom colors.
 
@@ -30,7 +30,7 @@ The following code example illustrates how to add the MoreColor Option to an App
 
 <sync:ColorPickerPalette x:Name="ColorPicker" 
 
-                         MoreColorOptionVisibility="Visible" />
+MoreColorOptionVisibility="Visible" />
 
 {% endhighlight %}
 
@@ -64,9 +64,9 @@ colorpicker.MoreColorOptionVisibility = System.Visibility.Visible;
 
 
 
-## Properties
+### Properties
 
-  _MoreColorOptionVisibility Property Table_
+
 
 <table>
 <tr>
@@ -86,7 +86,7 @@ Visibility.Visible</td><td>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 To view samples: 
 

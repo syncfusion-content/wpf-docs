@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boundary-Detection
+title: Boundary Detection| MenuAdv | Wpf | Syncfusion
 description: boundary detection
 platform: wpf
 control: MenuAdv
@@ -25,11 +25,11 @@ MenuItemAdv detects the boundaries and opens its submenu in the opposite directi
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv will be very useful when the number of submenu item levels are more and the opening of the submenu crosses the boundary, this feature allows the submenu be always visible by adjusting its position.
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

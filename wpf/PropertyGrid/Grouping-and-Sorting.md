@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping-and-Sorting
+title: Grouping and Sorting | PropertyGrid  | wpf | Syncfusion
 description: grouping and sorting
 platform: wpf
 control: PropertyGrid 
@@ -11,7 +11,7 @@ documentation: ug
 
 PropertyGrid groups the properties based on Category Attribute of the property and you can also sort the properties in both ascending and descending order. Sorting will be done based on the SortDirection property of the PropertyGrid control.
 
-Using Grouping and Sorting in an Application
+## Using Grouping and Sorting in an Application
 
 You can change the Sorting order by setting the SortDirection property. 
 
@@ -19,11 +19,9 @@ When you click the SortButton in PropertyGrid, the properties in PropertyGrid wi
 
 When you click the GroupButton, then the properties will be displayed by grouping based on the Category Attribute of the property.
 
-Properties
+### Properties
 
-
-
-Grouping and SortingTable
+_Grouping and Sorting Table_
 
 <table>
 <tr>
@@ -50,12 +48,9 @@ ListSortDirection</td><td>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.
 3. Now expand the PropertyGrid treeview item in the Sample Browser.
 4. Choose any one of the samples listed under it to launch. 
-
-
-

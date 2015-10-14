@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview
+title: Overview| Hierarchical Navigator | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Overview
+# Hierarchical Navigator
 
 The HierarchyNavigator control in WPF provides a bread-crumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
 
-##Features
+## Features
 
 The features of the HierarchyNavigator control are the following:
 

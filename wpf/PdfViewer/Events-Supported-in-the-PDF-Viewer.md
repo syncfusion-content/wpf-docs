@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events-Supported-in-the-PDF-Viewer
+title: Events Supported in the PDF Viewer| PDF Viewer | Wpf | Syncfusion
 description: events supported in the pdf viewer
 platform: wpf
 control: PDF Viewer
@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential PDF viewer for WPF also provides several events that enables you to design/modify the existing behavior according to your requirement. The following table lists out the events available in the PDF viewer and their functionalities.
 
-Events Table
+### Events Table
 
 <table>
 <tr>
@@ -43,7 +43,7 @@ N/A</td></tr>
 
 In spite of the above event the following events are supported in the PdfDocumentView control.
 
-Event Table
+### Event Table
 
 <table>
 <tr>

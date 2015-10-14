@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonBar-LauncherButton-Command-Support
+title: RibbonBar LauncherButton Command Support | Ribbon | WPF | Syncfusion
 description: ribbonbar launcherbutton command support
 platform: wpf
 control: Ribbon
@@ -25,11 +25,20 @@ Command for RibbonBar LauncherButton can be set using LauncherCommand attached p
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<TextBox Name="mainTextBox" Width="150"></TextBox>        <!-- LauncherButton Command and LauncherButton CommandTarget-->        <syncfusion:RibbonBar  IsLauncherButtonVisible="True" syncfusion:RibbonBar.LauncherCommand="ApplicationCommands.Paste" syncfusion:RibbonBar.LauncherCommandTarget="{Binding ElementName=mainTextBox}" >        </syncfusion:RibbonBar>{% endhighlight %}</td></tr>
+{% highlight xml %}
+<TextBox Name="mainTextBox" Width="150">
+</TextBox>        
+<!-- LauncherButton Command and LauncherButton CommandTarget-->        
+<syncfusion:RibbonBar  IsLauncherButtonVisible="True" syncfusion:RibbonBar.LauncherCommand="ApplicationCommands.Paste" syncfusion:RibbonBar.LauncherCommandTarget="{Binding ElementName=mainTextBox}" >
+</syncfusion:RibbonBar>
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight C# %}//LauncherButton CommandRibbonBar.SetLauncherCommand(mainRibbonBar, ApplicationCommands.Paste);//LauncherButton CommandTargetRibbonBar.SetLauncherCommandTarget(mainRibbonBar, mainTextBox);{% endhighlight %}</td></tr>
+{% highlight C# %}
+//LauncherButton CommandRibbonBar.SetLauncherCommand(mainRibbonBar, ApplicationCommands.Paste);
+//LauncherButton CommandTargetRibbonBar.SetLauncherCommandTarget(mainRibbonBar, mainTextBox);
+{% endhighlight %}
+</tr>
 </table>
 
 

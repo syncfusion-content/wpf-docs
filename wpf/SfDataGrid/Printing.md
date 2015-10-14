@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing
+title: Printing | SfDataGrid | WPF | Syncfusion
 description: printing
 platform: wpf
 control: SfDataGrid
@@ -20,7 +20,7 @@ EssentialDataGrid for WPF provides in-built support for print and print preview.
 
 The following table lists the methods available in SfDataGrid for printing support feature.
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
@@ -41,7 +41,7 @@ Invoked to print the data displayed in SfDataGrid with default settings (print p
 </table>
 The following table lists the SfDataGrid properties in SfDataGrid’s PrintSettings.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -202,15 +202,15 @@ The following screenshot displays the SfDataGrid in print preview mode.
 
 
 
-_SfDataGrid in print preview mode_
-
+SfDataGrid in print preview mode
+{:.caption}
 ## Custom Printing
 
 The default SfDataGrid.ShowPrintPreview() provides you the multiple options in printing. It also provides the flexibility to write CustomPrintManager.  The descendant of Custom Print Manager is derived from GridPrintManager based on the required level of customization method that is overridden.  
 
 The following table lists all the overridable methods of GridPrintManager.
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -476,8 +476,8 @@ The following screenshot displays you how SfDataGrid is printed.
 
 
 
-_SfDataGrid in print mode_
-
+SfDataGrid in print mode
+{:.caption}
 ## How to
 
 ### How to set Header and Footer in Printable Page
@@ -542,4 +542,5 @@ The following screenshot displays the output for Header and Footer applied in Pr
 
 
 
-_Header and Footer applied in Printable page_
+Header and Footer applied in Printable page
+{:.caption}

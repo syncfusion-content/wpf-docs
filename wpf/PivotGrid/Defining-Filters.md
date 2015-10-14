@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Defining-Filters
+title: Defining Filters| | Wpf | Syncfusion
 description: defining filters
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Defining Filters
+# Defining Filters
 
 Filters can be added to PivotGrid by the following way:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -28,3 +29,4 @@ this.PivotGridControl1.Filters.Add(new FilterExpression { Expression="Product = 
 Me.PivotGridControl1.Filters.Add(New FilterExpression With {.Expression="Product = Bike" .Name="Product Filter" })
 
 {% endhighlight %} 
+{% endtabs %}

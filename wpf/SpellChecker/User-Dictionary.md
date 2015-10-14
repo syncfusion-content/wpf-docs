@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Dictionary
+title: User Dictionary | SpellChecker | wpf | Syncfusion
 description: user dictionary
 platform: wpf
 control: SpellChecker
@@ -11,20 +11,14 @@ documentation: ug
 
 Spell Checker can also look into the specified user dictionary for spell checking.
 
-
-
 ### Methods
-
-
-
-Methods table
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Prototype**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 SetUserDictionary</td><td>
@@ -42,8 +36,7 @@ The UserDictionary will be taken into account only if we pass true to this metho
 
 Create a SpellChecker instance and set the user dictionary as given in the below code.
 
-{%highlight c#%}
-
+{% highlight c# %}
 
 SpellChecker SpellCheck = new SpellChecker();
 
@@ -53,8 +46,7 @@ SpellCheck.SetIncludeUserDiction-aryInSuggestions(true);
 
 {% endhighlight %}
 
-
-### Sample Link
+#### Sample Link
 
 To access the sample link:
 
@@ -62,6 +54,3 @@ To access the sample link:
 2. Select User Interface.
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to Tools -> SpellChecker -> SpellCheckerDemo.
-
-
-

@@ -1,24 +1,23 @@
 ---
 layout: post
-title: Ports
+title: Ports | SfDiagram | wpf | Syncfusion
 description: ports
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Ports
+# Ports
 
 Essential Diagram for WinRT provides support to define custom ports for making connections. The ConnectionPort class is used for defining custom ports on nodes. Any number of ports can be defined on a node. Ports in the SfDiagram support absolute and relative positioning.
-Adding Ports to a Node
+
+### Adding Ports to a Node
 
 To add a port to the node, you must specify the position of the port by using the Left and Top properties, and then specify the Node to host the port by using the Node property. Once this is done, the port is added to the Ports collection of the Node.
 
 The following code shows how to add a connection port to the node:
 
-[C#]
-
-
+{% highlight c# %}
 
 // Creating NodeViewModel
 
@@ -102,19 +101,15 @@ nodes.Add(n);
 
 diagramcontrol.Nodes = nodes;
 
-
+{% endhighlight %}
 
 ![](Ports_images/Ports_img1.png)
-{:.image }
 
-
-Setting the Port Shape
+## Setting the Port Shape
 
 Shape is a collection of predefined geometry. The default value for Node Port Shape is _Cross_. The following code shows how to set the Shape for a Node Port:
 
-[C#]
-
-
+{% highlight c# %}
 
 NodePort  n1=new NodePort()
 
@@ -136,30 +131,29 @@ ShapeStyle=GetPortStyle()
 
 };
 
-Setting the Port Shape Style
+{% endhighlight %}
+
+## Setting the Port Shape Style
 
 Shape can be customized by applying styles through the ShapeStyle property. The following code shows how to set the ShapeStyle property:
 
-[XAML]
+{% highlight xaml %}
 
+<Style TargetType="Path" x:Key="portstyle">
 
-&lt;Style TargetType="Path" x:Key="portstyle"&gt;
+<Setter Property="Stroke" Value="Green"></Setter>
 
-&lt;Setter Property="Stroke" Value="Green"&gt;&lt;/Setter&gt;
+<Setter Property="Fill" Value="Yellow"></Setter>
 
-&lt;Setter Property="Fill" Value="Yellow"&gt;&lt;/Setter&gt;
+<Setter Property="StrokeThickness" Value="1"></Setter>
 
-&lt;Setter Property="StrokeThickness" Value="1"&gt;&lt;/Setter&gt;
+<Setter Property="Stretch" Value="Fill"></Setter>
 
-&lt;Setter Property="Stretch" Value="Fill"&gt;&lt;/Setter&gt;
+</Style>
 
-&lt;/Style&gt;
+{% endhighlight %}
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 NodePort  n1=new NodePort()
 
@@ -181,23 +175,23 @@ ShapeStyle=this.Resources["portstyle"] as Style
 
 };
 
-
+{% endhighlight %}
 
 ![](Ports_images/Ports_img2.png)
-{:.image }
 
 
-Port Constraints
+
+## Port Constraints
 
 PortConstraints property is used to enable or disable certain behaviors of Nodes. This property isapplicab le only to the Port of the SfDiagram control.
 
-_Table_ _6__: Constraints Table_
+_Constraints Table_
 
 <table>
 <tr>
-<td>
-Constraints</td><td>
-Description</td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 Connectable</td><td>
@@ -233,22 +227,20 @@ The default value for PortConstraints property is Inherit.
 
 The following code example illustrates how to set the PortConstraints property for a Node Port in the SfDiagram:
 
-[C#]
+{% highlight c# %}
 
 nodeport.Constraints = nodeport.Constraints | PortConstraints.Connectable;
 
-> ![](Ports_images/Ports_img3.jpeg)
-{:.image }
-_Note: PortConstraints property is manipulated using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
+{% endhighlight %}
 
-Setting Up a Port Connection
+N> PortConstraints property is manipulated using bitwise operations. For more information about bitwise operations, see Bitwise Operations.
+### Setting Up a Port Connection
 
 The SourcePort and TargetPort properties are used to specify the Source and Target Ports for establishing a connection between two nodes. Also, the SourceNode and TargetNode properties should be specified. 
 
 The following code shows how to establish a port connection:
 
-[C#]
-
+{% highlight c# %}
 
 // Creating NodeViewModel-SourceNode
 
@@ -271,8 +263,6 @@ Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 ShapeStyle = GetStyle()
 
 };
-
-
 
 // Creating NodePort for NodeViewModel
 
@@ -334,8 +324,6 @@ ShapeStyle = GetStyle()
 
 };
 
-
-
 // Creating NodePort for NodeViewModel
 
 target.Ports = new ObservableCollection<INodePort>()
@@ -390,24 +378,17 @@ TargetPort = target.Ports.ToList()[0] as NodePort,
 
 };
 
-
-
 // Adding Connection to the SfDiagram
 lines.Add(con);
 
 diagramcontrol.Connectors = lines;
 
+{% endhighlight %}
 
 
 ![](Ports_images/Ports_img4.png)
-{:.image }
 
-
-
-
-PortVisibility
-
-
+## PortVisibility
 
 The PortVisibility property is used to control the visibility of ports on a node. PortVisibility has the following four options.
 
@@ -416,31 +397,32 @@ The PortVisibility property is used to control the visibility of ports on a node
 3. Visible 
 4. Collapse 
 
-Properties
+### Properties
 
-_Table_ _7__: Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 PortVisibility </td><td>
 Gets and sets whether the port can be visible or not.</td><td>
 PortVisibility </td></tr>
 </table>
-Enum Fields
 
-_Table_ _8__: List of Ennum fields_
+### Enum Fields
+
+_List of Ennum fields_
 
 <table>
 <tr>
-<td>
-Enum</td><td>
-Description  </td></tr>
+<th>
+Enum</th><th>
+Description  </th></tr>
 <tr>
 <td>
 MouseOver</td><td>
@@ -458,15 +440,12 @@ Port is always visible.</td></tr>
 Collapse</td><td>
 Port is always collapsed.</td></tr>
 </table>
-> ![](Ports_images/Ports_img5.jpeg)
-{:.image }
-_Note: Maintain some distance (25 pixels) around the Node. Port is visible when the pointer enters its surrounding area. This is applicable only for MouseOver and MouseOverOnConnect._ 
+
+N> Maintain some distance (25 pixels) around the Node. Port is visible when the pointer enters its surrounding area. This is applicable only for MouseOver and MouseOverOnConnect.
 
 The PortVisibility property is used to control the visibility of Ports.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Node.
 
@@ -546,15 +525,13 @@ private NodePort AddPort(double x, double y, Node node)
 
 }
 
+ {% endhighlight %}
 
-
-Inherit PortVisibility 
-
-
+### Inherit PortVisibility 
 
 PortVisibility property can be set in the Diagram, Node, and Port. This helps control the visibility in a single place (Diagram instance) instead of all ports. Port’s visibility can be controlled by using two properties; 
 
-PortVisibility and Constraints. 
+### PortVisibility and Constraints. 
 
 When Port’s Constraint is set to InheritPortVisibility, visibility is updated based on Node’s PortVisibility property. Similarly, when Node’s Constraint property is set to InheritPortVisibility, visibility is updated based on Diagram’s PortVisibility. 
 
@@ -564,17 +541,11 @@ To stop node’s inheritance with Diagram
 
 Port visibility of a particular node can be stopped by removing InheritPortVisibility from the Node.Constraints as shown in the following code.
 
-[C#]
-
-
+{% highlight c# %}
 
 //Sets PortVisibility to the SfDiagram.
 
-
-
 sfDiagram.PortVisibility = PortVisibility.MouseOverOnConnect;
-
-
 
 Node node = new Node()
 
@@ -603,20 +574,16 @@ node.Constraints = NodeConstraints.Default & ~NodeConstraints.InheritPortVisibil
      AddPort(0.5, 0.1,node),
 
  }
+ 
+ {% endhighlight %}
 
 To stop Port’s inheritance with Node
 
-[C#]
-
-
+{% highlight c# %}
 
 // Sets PortVisibility to the SfDiagram.
 
-
-
 sfDiagram.PortVisibility = PortVisibility.MouseOverOnConnect;
-
-
 
 Node node = new Node()
 
@@ -634,19 +601,13 @@ Node node = new Node()
 
 INodePort port = AddPort(0.5, 0.1,node);
 
-
-
 //Overrides port visibility.
 
 port.PortVisibility = PortVisibility.MouseOver,
 
-
-
 // Removes InheritPortVisibility from PortConstraints. 
 
 port.Constraints = PortConstraints.Default & ~PortConstraints.InheritPortVisibility;
-
-
 
  //Adds Port to Node.
 
@@ -657,6 +618,5 @@ port.Constraints = PortConstraints.Default & ~PortConstraints.InheritPortVisibil
      port
 
  }
-
-
-
+ 
+ {% endhighlight %}

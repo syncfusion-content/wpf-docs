@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-range-of-points-dynamically
+title: Add range of points dynamically| SfChart | Wpf | Syncfusion
 description: add range of points dynamically
 platform: wpf
 control: SfChart

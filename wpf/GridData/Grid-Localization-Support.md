@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Grid Localization Support
+title: Grid Localization Support | GridData (Classic) | wpf | Syncfusion
 description: Grid Localization Support
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # Grid Localization Support
 
 Localization is the process of making your application multi-lingual, by formatting content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and the location (e.g. En-US is the culture for English spoken in  United States; En-GB is the culture for English spoken in  Great Britain). Syncfusion Grid allows you to set custom resource through the Resx file. The user can simply give the string values in the resource file for a specific culture and set the culture in the application. The given string values are set to the Grid that does not affect the Code Block of the Grid
 
-Adding Localization to an Application 
+## Adding Localization to an Application 
 
 The following steps explain the implementation of Localization support in applications.
 
-## Creating an Application
+### Creating an Application
 
 Create a WPF application and add GridDataControl to it. 
 
-Creating a Resource File
+### Creating a Resource File
 
 To create a Resource file:
 
@@ -27,57 +27,39 @@ To create a Resource file:
 3. Use the prescribed naming convention as it is mandatory. 
 4. The following screenshot explains the addition of a Resource File to the application. 
 
-
-
    ![](Getting-Started_images/Getting-Started_img159.png)
-
-
-
-
 
 5. Select the String option in the Resource file. This is explained in the following screenshot.
 
-
-
    ![StringSelection](Getting-Started_images/Getting-Started_img160.png)
-
-
-
-
 
 6. Enter the “Name” and “Value” in the Resource file. 
 
    The String Property names used in the Grid are given in the Property table. This is explained in the following screenshot.
 
-
-
    ![](Getting-Started_images/Getting-Started_img161.png)
 
+   
+### Setting the Culture Information in the Application
+
+The culture information should be set in the application before the InitializeComponent() method is called. Now, the application is set to Britain English Culture info. The following code snippet explains the implementation of this.
 
 
-   Setting the Culture Information in the Application
+{% highlight c# %}
 
-   The culture information should be set in the application before the InitializeComponent() method is called. Now, the application is set to Britain English Culture info. The following code snippet explains the implementation of this.
+public MainWindow()
 
+{
 
-
-
-
-        public MainWindow()
-
-					{
-
-						System.Threading.Thread.CurrentThread.CurrentUICulture = new               System.Globalization.CultureInfo("en-GB");
-
-
-
-						InitializeComponent();
-
-					}
+	System.Threading.Thread.CurrentThread.CurrentUICulture = new               System.Globalization.CultureInfo("en-GB");
 
 
 
-   {:.prettyprint}
+	InitializeComponent();
+
+}
+
+{% endhighlight %}
 
 ### Properties
 
@@ -453,8 +435,8 @@ string</td></tr>
 </table>
 
 
-### Sample Link
+#### Sample Link
 
 Refer to the sample in the shipped Sample Browser: 
 
-Essential Studio WPF Sample Browser  Grid  LocalizationSupport LocalizationDemo.
+Essential Studio - WPF Sample Browser - Grid -  LocalizationSupport - LocalizationDemo.

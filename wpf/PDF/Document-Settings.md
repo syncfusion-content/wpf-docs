@@ -28,8 +28,6 @@ The following are the list of attributes available under PdfDocumentInformation 
 
 {% highlight c# %}
 
-
-
 PdfLoadedDocument document = new PdfLoadedDocument("input.pdf");
 
 //Accesses document information.        
@@ -45,12 +43,13 @@ Console.WriteLine(document.DocumentInformation.Keywords);
 Console.WriteLine(document.DocumentInformation.Creator);
 
 Console.WriteLine(document.DocumentInformation.Producer);
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim document As New PdfLoadedDocument("input.pdf")
 
@@ -67,15 +66,15 @@ Console.WriteLine(document.DocumentInformation.Keywords)
 Console.WriteLine(document.DocumentInformation.Creator)
 
 Console.WriteLine(document.DocumentInformation.Producer)
+
 {% endhighlight %}
+
 
 N> You can write the document information with the newly created document.
 
 The following code example illustrates how to write the document information.
 
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -121,9 +120,9 @@ document.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -169,19 +168,21 @@ document.Close(True)
 
 {% endhighlight %}
 
+
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
-![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img1.png)
+![](Document-Settings_images/Document-Settings_img1.png)
 
 
 
 N> You cannot overwrite the existing metadata information.
 
+
 ## Viewer Preference
 
 A PDF file can control the way the document is presented on the screen when it is opened in the viewer. Essential PDF allows you to set these preferences using the PdfViewerPreferences class. You can perform the following customizations of the viewer when the document is open.
 
-List of customizations
+#### List of customizations
 
 <table>
 <tr>
@@ -211,22 +212,36 @@ A flag specifying whether to display the document's title in the top bar.</td></
 <tr>
 <td>
 PageLayout </td><td>
-The page layout to be used when the document is opened.* OneColumn - Displays the pages in one column.* SinglePage - Displays one page at a time.* TwoColumnLeft - Displays the pages in two columns with odd-numbered pages on the left.* TwoColumnRight - Displays the pages in two columns with odd-numbered pages on the right.* TwoPageLeft - Displays the pages two at a time with odd-numbered pages on the left.* TwoPageRight - Displays the pages two at a time with odd-numbered pages on the right.</td></tr>
+The page layout to be used when the document is opened.
+<br>  OneColumn - Displays the pages in one column.
+<br>  SinglePage - Displays one page at a time.
+<br>  TwoColumnLeft - Displays the pages in two columns with odd-numbered pages on the left.
+<br>  TwoColumnRight - Displays the pages in two columns with odd-numbered pages on the right.
+<br>  TwoPageLeft - Displays the pages two at a time with odd-numbered pages on the left.
+<br>  TwoPageRight - Displays the pages two at a time with odd-numbered pages on the right.</td></tr>
 <tr>
 <td>
 <br>PageMode </td><td>
-The page mode specifies how the document should be displayed when opened.* UseNone - Neither document outline nor thumbnail images visible. * UseOutlines - Document outline visible.* UseThumbs - Thumbnail images visible.* FullScreen - Full-screen mode, without menu bar, window controls, or any other window visible.* UseOC - Optional content group panel visible.* UseAttachments - Attachments panel visible.<br></td></tr>
+The page mode specifies how the document should be displayed when opened.
+<br>  UseNone - Neither document outline nor thumbnail images visible. 
+<br>  UseOutlines - Document outline visible.
+<br>  UseThumbs - Thumbnail images visible.
+<br>  FullScreen - Full-screen mode, without menu bar, window controls, or any other window visible.
+<br>  UseOC - Optional content group panel visible.
+<br>  UseAttachments - Attachments panel visible.<br></td></tr>
 <tr>
 <td>
 PageScaling </td><td>
-An option to be selected when a print dialog is displayed for this document* AppDefault – Indicates the conforming reader’s default print scaling* None – Indicates no page scaling.</td></tr>
+An option to be selected when a print dialog is displayed for this document
+<br>  AppDefault – Indicates the conforming reader’s default print scaling
+<br>  None – Indicates no page scaling.</td></tr>
 </table>
 
 
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -278,9 +293,9 @@ document.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -329,6 +344,7 @@ document.Save("Sample.pdf")
 'Closes the document.
 
 document.Close(True)
+
 {% endhighlight %}
 
 ![](Document-Settings_images/Document-Settings_img2.png)

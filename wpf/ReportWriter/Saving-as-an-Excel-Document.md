@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Saving-as-an-Excel-Document
+title: Saving as an Excel Document | ReportWriter | WPF | Syncfusion
 description: saving as an excel document
 platform: wpf
-control: Report Writer
+control: ReportWriter
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 The RDL report generated using the Report Designer can be exported as an Excel document using the following code example. 
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -23,7 +23,6 @@ ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 
 reportWriter.Save("Sample.xls", WriterFormat.Excel);
 {% endhighlight %}
-
 
 {% highlight vbnet %}
 
@@ -37,3 +36,4 @@ reportWriter.Save("Sample.xls", WriterFormat.Excel);
 
 {% endhighlight %}
 
+{% endtabs %}

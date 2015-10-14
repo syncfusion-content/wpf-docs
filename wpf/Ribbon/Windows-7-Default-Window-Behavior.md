@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows-7-Default-Window-Behavior
+title: Windows 7 Default Window Behavior | Ribbon | WPF | Syncfusion
 description: windows 7 default window behavior
 platform: wpf
 control: Ribbon

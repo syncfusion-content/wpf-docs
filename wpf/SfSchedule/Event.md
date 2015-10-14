@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event
+title: Event| SfSchedule | Wpf | Syncfusion
 description: event
 platform: wpf
 control: SfSchedule

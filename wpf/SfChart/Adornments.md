@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adornments
+title: Adornments| SfChart | Wpf | Syncfusion
 description: adornments
 platform: wpf
 control: SfChart
@@ -39,41 +39,41 @@ The following code example explains the positioning of adornments in the Chart S
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel></local:ViewModel>
+<local:ViewModel></local:ViewModel>
 
-            </syncfusion:SfChart.DataContext>
+</syncfusion:SfChart.DataContext>
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis />
+<syncfusion:CategoryAxis />
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis />
+<syncfusion:NumericalAxis />
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-                <syncfusion:ColumnSeries.AdornmentsInfo>
+<syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
-                    <syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red"></syncfusion:ChartAdornmentInfo>
 
-                </syncfusion:ColumnSeries.AdornmentsInfo>
 
-            </syncfusion:ColumnSeries>
+<syncfusion:ColumnSeries.AdornmentsInfo>
 
-        </syncfusion:SfChart>
-		
-		{% endhighlight %}
+<syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red"></syncfusion:ChartAdornmentInfo>
+
+</syncfusion:ColumnSeries.AdornmentsInfo>
+
+</syncfusion:ColumnSeries>
+
+</syncfusion:SfChart>
+
+{% endhighlight %}
 
 ![](Adornments_images/Adornments_img1.png)
 
@@ -87,7 +87,7 @@ SfChart allows you to define your own template for symbols by specifying SymbolT
 
 The following APIs are used in customizing the adornments.
 
-Customizing Adornments
+
 
 <table>
 <tr>
@@ -153,53 +153,53 @@ The following code explains the customization of adornments.
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.Resources>
+<syncfusion:SfChart.Resources>
 
-                <DataTemplate x:Key="labeltemplate">
+<DataTemplate x:Key="labeltemplate">
 
-                    <TextBlock Text="{Binding}" ></TextBlock>
+<TextBlock Text="{Binding}" ></TextBlock>
 
-                </DataTemplate>
-
-
-
-            </syncfusion:SfChart.Resources>
-
-            <syncfusion:SfChart.DataContext>
-
-                <local:ViewModel></local:ViewModel>
-
-            </syncfusion:SfChart.DataContext>
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis />
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis  />
-
-            </syncfusion:SfChart.SecondaryAxis>
+</DataTemplate>
 
 
 
-            <syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+</syncfusion:SfChart.Resources>
+
+<syncfusion:SfChart.DataContext>
+
+<local:ViewModel></local:ViewModel>
+
+</syncfusion:SfChart.DataContext>
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis />
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis  />
+
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-                <syncfusion:ColumnSeries.AdornmentsInfo>
-
-                    <syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowLabel="True" SegmentLabelContent="YValue"  SegmentLabelFormat="#"  ShowMarker="True" Symbol="Ellipse" LabelTemplate="{StaticResource labeltemplate}" SymbolWidth="40" SymbolHeight="40" SymbolInterior="Red"></syncfusion:ChartAdornmentInfo>
-
-                </syncfusion:ColumnSeries.AdornmentsInfo>
+<syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
 
 
-            </syncfusion:ColumnSeries>
+<syncfusion:ColumnSeries.AdornmentsInfo>
 
-        </syncfusion:SfChart>
+<syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowLabel="True" SegmentLabelContent="YValue"  SegmentLabelFormat="#"  ShowMarker="True" Symbol="Ellipse" LabelTemplate="{StaticResource labeltemplate}" SymbolWidth="40" SymbolHeight="40" SymbolInterior="Red"></syncfusion:ChartAdornmentInfo>
+
+</syncfusion:ColumnSeries.AdornmentsInfo>
+
+
+
+</syncfusion:ColumnSeries>
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -213,7 +213,7 @@ Connector is a line that is used to connect the data point in the series to the 
 
 The following APIs are used in Connectors.
 
-Adornments
+### Adornments
 
 <table>
 <tr>
@@ -245,57 +245,57 @@ The following code explains how to add connector line to the adornments.
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.Resources>
+<syncfusion:SfChart.Resources>
 
-                <DataTemplate x:Key="labeltemplate">
+<DataTemplate x:Key="labeltemplate">
 
-                    <TextBlock Text="{Binding}" ></TextBlock>
+<TextBlock Text="{Binding}" ></TextBlock>
 
-                </DataTemplate>
+</DataTemplate>
 
-                <Style x:Key="linestyle" TargetType="Path">
+<Style x:Key="linestyle" TargetType="Path">
 
-                    <Setter Property="Stroke" Value="Blue"></Setter>
+<Setter Property="Stroke" Value="Blue"></Setter>
 
-                    <Setter Property="StrokeThickness" Value="3"></Setter>
+<Setter Property="StrokeThickness" Value="3"></Setter>
 
-                </Style>
+</Style>
 
-            </syncfusion:SfChart.Resources>
+</syncfusion:SfChart.Resources>
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel></local:ViewModel>
+<local:ViewModel></local:ViewModel>
 
-            </syncfusion:SfChart.DataContext>
+</syncfusion:SfChart.DataContext>
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis  />
+<syncfusion:CategoryAxis  />
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis   />
+<syncfusion:NumericalAxis   />
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-                <syncfusion:LineSeries.AdornmentsInfo>
-
-                    <syncfusion:ChartAdornmentInfo   ShowLabel="True"  SegmentLabelContent="YValue"  ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red" ConnectorRotationAngle="90" ShowConnectorLine="True" ConnectorHeight="20" ConnectorLineStyle="{StaticResource linestyle}"  SegmentLabelFormat="#"   LabelTemplate="{StaticResource labeltemplate}"/>
-
-                </syncfusion:LineSeries.AdornmentsInfo>
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-            </syncfusion:LineSeries>
+<syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:SfChart>
+<syncfusion:LineSeries.AdornmentsInfo>
+
+<syncfusion:ChartAdornmentInfo   ShowLabel="True"  SegmentLabelContent="YValue"  ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red" ConnectorRotationAngle="90" ShowConnectorLine="True" ConnectorHeight="20" ConnectorLineStyle="{StaticResource linestyle}"  SegmentLabelFormat="#"   LabelTemplate="{StaticResource labeltemplate}"/>
+
+</syncfusion:LineSeries.AdornmentsInfo>
+
+
+
+</syncfusion:LineSeries>
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -307,14 +307,14 @@ The following code explains how to add connector line to the adornments.
 
 When there are more points or points with similar values, the labels in Pie or Doughnut chart overlap with each other. SmartLabel feature is used here to prevent the overlap, by allowing labels to realign with respect to the available space.
 
-###Advantages of using Smart Labels
+### Advantages of using Smart Labels
 
 1. Avoids the overlap of segment labels.
 2. To view the label clearly and place the labels around the chart.
 
 
 
-SmartLabel
+### SmartLabel
 
 <table>
 <tr>
@@ -335,7 +335,7 @@ UseSeriesPalette</td><td>
 Gets or sets the boolean value that represents a value whether to set the series’ segment interior to the adornment connector line stroke and as label background brush.</td></tr>
 </table>
 
-###SmartLabels with LabelPosition as OutsideExtended
+### SmartLabels with LabelPosition as OutsideExtended
 
 Segment label is positioned outside the circular chart with an extended connector line. The following code example illustrates how to set SmartLabels for OutsideExtended position with Bezier type connector line.
 
@@ -343,25 +343,25 @@ Segment label is positioned outside the circular chart with an extended connecto
 
 <syncfusion:PieSeries
 
-                LabelPosition="OutsideExtended"
+LabelPosition="OutsideExtended"
 
 ItemsSource="{Binding CompanyDetails}"
 
-                XBindingPath="CompanyName"
+XBindingPath="CompanyName"
 
-                 YBindingPath="CompanyTurnOver"
+YBindingPath="CompanyTurnOver"
 
-                EnableSmartLabels="True">
+EnableSmartLabels="True">
 
 
 
-            <syncfusion:PieSeries.AdornmentsInfo>
+<syncfusion:PieSeries.AdornmentsInfo>
 
-                <syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" />
+<syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" />
 
-            </syncfusion:PieSeries.AdornmentsInfo>
+</syncfusion:PieSeries.AdornmentsInfo>
 
-        </syncfusion:PieSeries>
+</syncfusion:PieSeries>
 
 
 
@@ -379,23 +379,23 @@ Segment label is positioned outside the circular chart. The following code examp
 
 <syncfusion:PieSeries
 
-                LabelPosition="Outside"
+LabelPosition="Outside"
 
 ItemsSource="{Binding CompanyDetails}"
 
-                XBindingPath="CompanyName"
+XBindingPath="CompanyName"
 
-                 YBindingPath="CompanyTurnOver"
+YBindingPath="CompanyTurnOver"
 
-                EnableSmartLabels="True">
+EnableSmartLabels="True">
 
-            <syncfusion:PieSeries.AdornmentsInfo>
+<syncfusion:PieSeries.AdornmentsInfo>
 
-                <syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" />
+<syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" />
 
-            </syncfusion:PieSeries.AdornmentsInfo>
+</syncfusion:PieSeries.AdornmentsInfo>
 
-        </syncfusion:PieSeries>
+</syncfusion:PieSeries>
 
 
 {% endhighlight %}
@@ -415,21 +415,21 @@ Segment label is positioned inside the circular chart. The following code illus
 
 <syncfusion:PieSeries
 
-                LabelPosition="Inside" ItemsSource="{Binding CompanyDetails}"
+LabelPosition="Inside" ItemsSource="{Binding CompanyDetails}"
 
-                XBindingPath="CompanyName"
+XBindingPath="CompanyName"
 
-                 YBindingPath="CompanyTurnOver"
+YBindingPath="CompanyTurnOver"
 
-                EnableSmartLabels="True">
+EnableSmartLabels="True">
 
-            <syncfusion:PieSeries.AdornmentsInfo>
+<syncfusion:PieSeries.AdornmentsInfo>
 
-                <syncfusion:ChartAdornmentInfo ShowLabel="True" />
+<syncfusion:ChartAdornmentInfo ShowLabel="True" />
 
-            </syncfusion:PieSeries.AdornmentsInfo>
+</syncfusion:PieSeries.AdornmentsInfo>
 
-        </syncfusion:PieSeries>
+</syncfusion:PieSeries>
 
 {% endhighlight %}
 
@@ -451,29 +451,29 @@ The following code example and screenshot demonstrate the usage of UseSeriesPale
 
 {% highlight xml %}
 
-<syncfusion:PieSeries
+	<syncfusion:PieSeries
 
-                ConnectorType="Bezier"
+	ConnectorType="Bezier"
 
-                LabelPosition="OutsideExtended"
+	LabelPosition="OutsideExtended"
 
-            ItemsSource="{Binding CompanyDetails}"
+	ItemsSource="{Binding CompanyDetails}"
 
-                XBindingPath="CompanyName"
+	XBindingPath="CompanyName"
 
-                 YBindingPath="CompanyTurnOver"
+	YBindingPath="CompanyTurnOver"
 
-                EnableSmartLabels="True">
+	EnableSmartLabels="True">
 
-            <syncfusion:PieSeries.AdornmentsInfo>
+	<syncfusion:PieSeries.AdornmentsInfo>
 
-                <syncfusion:ChartAdornmentInfo UseSeriesPalette="True" ShowLabel="True" ConnectorHeight="40" ShowConnectorLine="True"/>
+	<syncfusion:ChartAdornmentInfo UseSeriesPalette="True" ShowLabel="True" ConnectorHeight="40" ShowConnectorLine="True"/>
 
-            </syncfusion:PieSeries.AdornmentsInfo>
+	</syncfusion:PieSeries.AdornmentsInfo>
 
 
 
-        </syncfusion:PieSeries>
+	</syncfusion:PieSeries>
 
 {% endhighlight %}
 
@@ -485,7 +485,7 @@ The following code example and screenshot demonstrate the usage of UseSeriesPale
 
 SfChart adornments, also known as DataLabels, can be customized with direct APIs. The following APIs are used in customizing the adornments.
 
-Customizing Adornments
+
 
 <table>
 <tr>
@@ -537,11 +537,11 @@ The following code illustrates the various customization for adornments.
 
 <syncfusion:ColumnSeries Label="2013"
 
-                 ItemsSource="{Binding Computers}"
+ItemsSource="{Binding Computers}"
 
-                 XBindingPath="Computer"
+XBindingPath="Computer"
 
-                 YBindingPath="Year2013"
+YBindingPath="Year2013"
 
                                      >
 
@@ -551,23 +551,23 @@ The following code illustrates the various customization for adornments.
 
 <syncfusion:ChartAdornmentInfo ShowLabel="True"  
 
-                                                   HorizontalAlignment="Center"
+HorizontalAlignment="Center"
 
-                                                   VerticalAlignment="Center"
+VerticalAlignment="Center"
 
-                  ShowMarker="True"
+ShowMarker="True"
 
-                  Symbol="Ellipse"
+Symbol="Ellipse"
 
-                  SymbolWidth="50"
+SymbolWidth="50"
 
-                  SymbolHeight="50"
+SymbolHeight="50"
 
-                                                   SymbolInterior="GreenYellow"
+SymbolInterior="GreenYellow"
 
-                  SymbolStroke="Black"
+SymbolStroke="Black"
 
-                                                   >                    </syncfusion:ChartAdornmentInfo>
+>                    </syncfusion:ChartAdornmentInfo>
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -649,43 +649,43 @@ The following code example explains the customization of adornments labels.
 
 <syncfusion:ColumnSeries Label="2013"
 
-                         ItemsSource="{Binding Computers}"
+ItemsSource="{Binding Computers}"
 
-                         XBindingPath="Computer"
+XBindingPath="Computer"
 
-                         YBindingPath="Year2013"
+YBindingPath="Year2013"
 
-                                      >
+>
 
 <!—Adornment Label Customization-->
 
-        <syncfusion:ColumnSeries.AdornmentsInfo>
+<syncfusion:ColumnSeries.AdornmentsInfo>
 
-      <syncfusion:ChartAdornmentInfo ShowLabel="True"  
+<syncfusion:ChartAdornmentInfo ShowLabel="True"  
 
-                                     FontFamily="Times New Roman" 
+FontFamily="Times New Roman" 
 
-                                     FontStyle="Normal" 
+FontStyle="Normal" 
 
-   FontSize="22" 
+FontSize="22" 
 
-                                     BorderThickness="2" 
+BorderThickness="2" 
 
-   BorderBrush="Black" 
+BorderBrush="Black" 
 
-                                     Background="YellowGreen" 
+Background="YellowGreen" 
 
-   Foreground="Brown"  
+Foreground="Brown"  
 
-                                     Margin="5"
+Margin="5"
 
-                                     SegmentLabelFormat="# cm">
+SegmentLabelFormat="# cm">
 
-                    </syncfusion:ChartAdornmentInfo>  </syncfusion:ColumnSeries.AdornmentsInfo>
+</syncfusion:ChartAdornmentInfo>  </syncfusion:ColumnSeries.AdornmentsInfo>
 
 
 
- </syncfusion:ColumnSeries>    
+</syncfusion:ColumnSeries>    
 
 {% endhighlight %}
 

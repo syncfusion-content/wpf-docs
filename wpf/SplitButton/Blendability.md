@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blendability
+title: Blendability | SplitButton | wpf | Syncfusion
 description: blendability
 platform: wpf
 control: SplitButtonAdv
@@ -12,6 +12,7 @@ documentation: ug
 The button controls can be modified by using the Expression Blend.
 
 To modify the button control:
+
 
 * Open Sample in the Expression Blend. 
 * Right click the button control and choose Edit Template option as below:

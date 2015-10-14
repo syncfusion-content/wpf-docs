@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Support-for-All-Level-Type-Member
+title: Support for All Level Type Member| OLAP Grid | Wpf | Syncfusion
 description: support for "all" level type member 
 platform: wpf
 control: OLAP Grid
@@ -11,18 +11,18 @@ documentation: ug
 
 This feature enables you to display the “All” level type member across the rows and columns in the OlapGrid. This member behaves as parent to other members in its hierarchy by controlling their visibility through expander. 
 
- Properties
+###  Properties
 
-_Property Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 ShowLevelTypeAll </td><td>
@@ -37,6 +37,7 @@ NA </td></tr>
 
 To display the “All” level type member, set the _ShowLevelTypeAll_ property to _true_. By default this is set to _false_.  
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -61,24 +62,25 @@ OlapDataManager DataManager = New OlapDataManager() { ShowLevelTypeAll = True }
 
 
 
-
+{% endtabs %}
 
 
 
 ![](Support-for-All-Level-Type-Member_images/Support-for-All-Level-Type-Member_img1.png)
 
 
-_Member with Level type “All” is displayed._
+Member with Level type “All” is displayed.
+{:.caption}
 
-## Sample Link
+### Sample Link
 
 A demo of this feature is available in the following location:
 
-## Windows XP
+#### Windows XP
 
 _..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code Demo_
 
-## Windows 7/Vista
+#### Windows 7/Vista
 
 _C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\ WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code Demo_
 

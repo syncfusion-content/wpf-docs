@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive-Features
+title: Interactive Features| SfChart | Wpf | Syncfusion
 description: interactive features
 platform: wpf
 control: SfChart
@@ -17,7 +17,7 @@ The ToolTip feature allows you to display any information over a ChartSeries. It
 
 By default, a small box containing the data point's y values are displayed as the ToolTip. The y values vary depending on the ChartSeries. For example, a single y value is usually displayed in Column and BarSeries. In the FinancialSeries, high, low, open, and close values are displayed in ToolTip.
 
-ToolTip API Definitions
+### ToolTip API Definitions
 
 <table>
 <tr>
@@ -76,9 +76,9 @@ The following code example can be added to enable and customize the ToolTip feat
 
 <syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" Label="Company Details" ItemsSource="{Binding CompanyDetails}"
 
-                 ShowTooltip="True" syncfusion:ChartTooltip.EnableAnimation="True"            syncfusion:ChartTooltip.HorizontalAlignment="Left" syncfusion:ChartTooltip.VerticalAlignment="Bottom"
+ShowTooltip="True" syncfusion:ChartTooltip.EnableAnimation="True"            syncfusion:ChartTooltip.HorizontalAlignment="Left" syncfusion:ChartTooltip.VerticalAlignment="Bottom"
 
-                 syncfusion:ChartTooltip.TooltipMargin="3" />
+syncfusion:ChartTooltip.TooltipMargin="3" />
 
 
 
@@ -100,7 +100,6 @@ You can modify the behavior of crosshairs, based on your requirement. The appear
 
 The properties used in customizing CrossHairBehavior.
 
-Customizing CrossHairBehavior
 
 <table>
 <tr>
@@ -126,7 +125,7 @@ Gets or sets the Style value that represents the style for the horizontal line.<
 </table>
 
 
-###Adding CrossHairBehavior to the SfChart
+### Adding CrossHairBehavior to the SfChart
 
 ChartCrossHairBehavior implements the feature of tracking data points in a chart. It defines the values in the X and Y axes, when the cursor is moved along the chart. Adding crosshairs makes the SfChart more interactive. The following steps show you how to add CrossHairBehavior to the SfChart.
 
@@ -134,12 +133,12 @@ ChartCrossHairBehavior implements the feature of tracking data points in a chart
 
 
 
-         <syncfusion:SfChart.Behaviors>
+<syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartCrossHairBehavior/>
+<syncfusion:ChartCrossHairBehavior/>
 
-        </syncfusion:SfChart.Behaviors>
-		
+</syncfusion:SfChart.Behaviors>
+
 		{% endhighlight %}
 
 ###Create an instance for ChartCrossHairBehavior and add this to the Behaviors collection.
@@ -152,15 +151,15 @@ To display the movement of X and Y values in the axis set the ShowTrackBallInfo 
 
 <syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:CategoryAxis ShowTrackBallInfo="True" />
+<syncfusion:CategoryAxis ShowTrackBallInfo="True" />
 
-        </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
-        <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-            <syncfusion:NumericalAxis  ShowTrackBallInfo="True"/>
+<syncfusion:NumericalAxis  ShowTrackBallInfo="True"/>
 
-        </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
 		{% endhighlight %}
 
@@ -181,11 +180,11 @@ You can create an instance for ChartTrackBallBehavior and add it to the Behavior
 
 
 
-<syncfusion:SfChart.Behaviors>
+	<syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartTrackBallBehavior/>
+	<syncfusion:ChartTrackBallBehavior/>
 
-        </syncfusion:SfChart.Behaviors>
+	</syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -199,9 +198,9 @@ To view the movement of TrackBallBehavior in the Axis, set the ShowTrackBallInfo
 
 <syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:CategoryAxis ShowTrackBallInfo="True"  />
+<syncfusion:CategoryAxis ShowTrackBallInfo="True"  />
 
-        </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -213,7 +212,6 @@ To view the movement of TrackBallBehavior in the Axis, set the ShowTrackBallInfo
 
 The appearance of the TrackBall can be customized using ChartTrackBallStyle, AxisLabelAlignment, LabelHorizontalAlignment, LabelVerticalAlignment, LineStyle and UseSeriesPalette properties. 
 
-TrackBall Properties
 
 <table>
 <tr>
@@ -286,7 +284,7 @@ The panning behavior allows moving the visible area of the chart when it is zoom
 
 SfChart provides the following events while zooming and panning the chart.
 
-Zooming and Panning Events
+
 
 <table>
 <tr>
@@ -339,9 +337,9 @@ Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming prope
 
 <syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True"/>
+<syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True"/>
 
-        </syncfusion:SfChart.Behaviors>
+</syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -351,9 +349,9 @@ Also, there are options for selection zooming, when you want to zoom in on a par
 
 <syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True"/>
+<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True"/>
 
-        </syncfusion:SfChart.Behaviors>
+</syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -365,18 +363,18 @@ Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property,
 
 <syncfusion:SfChart.SecondaryAxis>
 
-            <syncfusion:NumericalAxis  EnableTouchMode="True"/>
+<syncfusion:NumericalAxis  EnableTouchMode="True"/>
 
-        </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-        <syncfusion:SfChart.Behaviors>
+<syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" />
+<syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" />
 
-        </syncfusion:SfChart.Behaviors>
-		
+</syncfusion:SfChart.Behaviors>
+
 		{% endhighlight %}
 
 Zooming relative to the cursor- By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
@@ -385,9 +383,9 @@ Zooming relative to the cursor- By enabling the ZoomRelativeToCursor property, y
 
 <syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True"/>
+<syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True"/>
 
-        </syncfusion:SfChart.Behaviors>
+</syncfusion:SfChart.Behaviors>
 {% endhighlight %}
 
 ###ZoomPosition and ZoomFactor
@@ -408,9 +406,9 @@ The value of ZoomFactor and ZoomPosition must also fall within the value of 0 to
 
 <syncfusion:SfChart.SecondaryAxis>
 
-            <syncfusion:NumericalAxis ZoomPosition="0.4" ZoomFactor="0.2"/>
+<syncfusion:NumericalAxis ZoomPosition="0.4" ZoomFactor="0.2"/>
 
-        </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
@@ -434,9 +432,9 @@ In some scenarios, you may be required to maintain the interval count as a const
 
 <syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:NumericalAxis Interval="2" FontSize="14" EnableAutoIntervalOnZooming="False"/>
+<syncfusion:NumericalAxis Interval="2" FontSize="14" EnableAutoIntervalOnZooming="False"/>
 
-        </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 {% endhighlight %}
 Here, Interval is defined as 2, to maintain this interval on zooming.
 
@@ -463,7 +461,7 @@ SfChart provides an interactive toolbar for zooming and panning. Using this tool
 
 By default, the Zooming Toolbar has options like ZoomIn, ZoomOut and Reset. Selection Zoom icon and Panning icon are enabled, when the EnableSelectionZooming property is set as “True”. 
 
-Zooming Toolbar
+
 
 <table>
 <tr>
@@ -502,11 +500,11 @@ The following code example can be used to display the zooming tool bar in SfChar
 
 <chart:SfChart>
 
-    <chart:SfChart.Behaviors>
+<chart:SfChart.Behaviors>
 
-         <chart:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItems="All" ToolBarOrientation="Horizontal" HorizontalPosition="Left" VerticalPosition="Top" ToolBarBackground="#E6E6E6" EnableSelectionZooming="True"/>
+<chart:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItems="All" ToolBarOrientation="Horizontal" HorizontalPosition="Left" VerticalPosition="Top" ToolBarBackground="#E6E6E6" EnableSelectionZooming="True"/>
 
-    </chart:SfChart.Behaviors>
+</chart:SfChart.Behaviors>
 
 </chart:SfChart>
 
@@ -608,7 +606,7 @@ Segment selection is used to highlight the particular data point in series.
 
 The following properties are used to configure segment selection.
 
-Property Table
+### Property Table
 
 <table>
 <tr>
@@ -728,19 +726,19 @@ Use the following code example to set series selection in a SfChart.
 
 <chart:ColumnSeries   XBindingPath="FruitName"  
 
-                      SeriesSelectionBrush="Blue" 
+SeriesSelectionBrush="Blue" 
 
-                      YBindingPath="People1"
+YBindingPath="People1"
 
-                      ItemsSource="{Binding Fruits}">
+ItemsSource="{Binding Fruits}">
 
 <chart:ColumnSeries.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo   AdornmentsPosition="TopAndBottom"
 
-                            ShowLabel="true"                                                                        
+ShowLabel="true"                                                                        
 
-                            HighlightOnSelection="True"/>
+HighlightOnSelection="True"/>
 
 </chart:ColumnSeries.AdornmentsInfo>
 
@@ -752,11 +750,11 @@ Use the following code example to set series selection in a SfChart.
 
 <chart:ColumnSeries   XBindingPath="FruitName"
 
-                      YBindingPath="People2"
+YBindingPath="People2"
 
-                      SeriesSelectionBrush="Blue"
+SeriesSelectionBrush="Blue"
 
-                      ItemsSource="{Binding Fruits}">
+ItemsSource="{Binding Fruits}">
 
 
 
@@ -768,9 +766,9 @@ Use the following code example to set series selection in a SfChart.
 
 <chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
 
-                              ShowLabel="true"                                                                        
+ShowLabel="true"                                                                        
 
-                              HighlightOnSelection="True"/>
+HighlightOnSelection="True"/>
 
 </chart:ColumnSeries3D.AdornmentsInfo>
 
@@ -840,7 +838,7 @@ A type of VirtualKeyModifiers, used to cancel dragging.</td></tr>
 
 The following events are used to interact with dragging.
 
-Drag Properties
+### Drag Properties
 
 <table>
 <tr>
@@ -1000,7 +998,7 @@ The resizable scrollbar is a type of scrollbar that can be resized within the tr
 
 The following are the customizing APIs of the scrollbar in SfChart.
 
-ScrollBar Customization
+### ScrollBar Customization
 
 <table>
 <tr>
@@ -1034,25 +1032,25 @@ Gets or sets a template for the visible range label view in touch mode.</td></tr
 
 <Grid.Resources>
 
-            <DataTemplate x:Key="thumblabeltemplate">
+<DataTemplate x:Key="thumblabeltemplate">
 
-                <Grid>
+<Grid>
 
-                    <Border BorderBrush="Pink" BorderThickness="2">
+<Border BorderBrush="Pink" BorderThickness="2">
 
-                        <TextBlock Text="{Binding}" FontSize="15"></TextBlock>
+<TextBlock Text="{Binding}" FontSize="15"></TextBlock>
 
-                    </Border>
+</Border>
 
-                </Grid>
+</Grid>
 
-            </DataTemplate>
+</DataTemplate>
 
-        </Grid.Resources>
+</Grid.Resources>
 
 
 
-        <syncfusion:NumericalAxis EnableScrollBar="True" DeferredScrolling="True" EnableTouchMode="True" ThumbLabelVisibility="Visible" ThumbLabelTemplate="{StaticResource thumblabeltemplate}" />
+<syncfusion:NumericalAxis EnableScrollBar="True" DeferredScrolling="True" EnableTouchMode="True" ThumbLabelVisibility="Visible" ThumbLabelTemplate="{StaticResource thumblabeltemplate}" />
 
 {% endhighlight %}
 
@@ -1082,33 +1080,33 @@ The following example shows the HighlighOnSelection feature for adornment.
 
 
 
-        <syncfusion:SfChart.Behaviors>
+<syncfusion:SfChart.Behaviors>
 
-            <syncfusion:ChartSelectionBehavior/>
+<syncfusion:ChartSelectionBehavior/>
 
-        </syncfusion:SfChart.Behaviors>
-
-
-
-        <syncfusion:FastLineBitmapSeries  XBindingPath="Category" YBindingPath="Value" ItemsSource="{Binding CategoricalDatas}" 
-
-                                              SegmentSelectionBrush="Red" >
+</syncfusion:SfChart.Behaviors>
 
 
 
-            <syncfusion:FastLineBitmapSeries.AdornmentsInfo>
+<syncfusion:FastLineBitmapSeries  XBindingPath="Category" YBindingPath="Value" ItemsSource="{Binding CategoricalDatas}" 
 
-                <syncfusion:ChartAdornmentInfo  ShowLabel="True" UseSeriesPalette="True" HighlightOnSelection="True"/>
-
-            </syncfusion:FastLineBitmapSeries.AdornmentsInfo>
+  SegmentSelectionBrush="Red" >
 
 
 
-        </syncfusion:FastLineBitmapSeries>
+<syncfusion:FastLineBitmapSeries.AdornmentsInfo>
+
+<syncfusion:ChartAdornmentInfo  ShowLabel="True" UseSeriesPalette="True" HighlightOnSelection="True"/>
+
+</syncfusion:FastLineBitmapSeries.AdornmentsInfo>
 
 
 
-    </syncfusion:SfChart>
+</syncfusion:FastLineBitmapSeries>
+
+
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 

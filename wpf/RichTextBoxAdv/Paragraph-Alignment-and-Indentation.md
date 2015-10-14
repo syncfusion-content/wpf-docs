@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paragraph-Alignment-and-Indentation
+title: Paragraph Alignment and Indentation| RichTextBoxAdv | Wpf | Syncfusion
 description: paragraph alignment and indentation
 platform: wpf
 control: RichTextBoxAdv
@@ -11,11 +11,9 @@ documentation: ug
 
 The paragraph alignment and indentation features allow you to define content in paragraphs. They can be added only inside the sections. We can keep _n_ number of paragraphs inside SectionAdv. Each paragraph may contain inline elements such as SpanAdv, HyperlinkAdv, ImageContainerAdv, and UIContainerAdv. 
 
-## Properties
+### Properties
 
 
-
-Property Table
 
 <table>
 <tr>
@@ -80,7 +78,7 @@ InlineCollection</td></tr>
 ParagraphAdv can be added directly to an application using the following code snippet:
 
 
-
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
@@ -106,4 +104,4 @@ ParagraphAdv can be added directly to an application using the following code sn
  richtext.Document = document;
 
 {% endhighlight %}
-
+{% endtabs %}

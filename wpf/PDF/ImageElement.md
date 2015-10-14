@@ -38,9 +38,9 @@ PdfBitmap class provides functionality of raster images described above. Masks 
 
 DrawImage method of the PdfGraphics class draws a given image at a specified location and contains parameters that provide control over the image alignment and scaling.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -72,9 +72,9 @@ doc.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -105,13 +105,12 @@ doc.Save("Output.pdf")
 doc.Close(True)
 {% endhighlight %}
 
+
 ## Working with TIFF
 
 Essential PDF provides you the ability to convert single page or multipage TIFF file into PDF document. When you render a MultiFrame image (Gif, Tif), only the active frame of the image is rendered. The following code illustrates how to draw multipage tiff files using Essential PDF API.
 
 {% highlight c# %}
-
-
 
 // Creates a new instance of PdfDocument class.
 

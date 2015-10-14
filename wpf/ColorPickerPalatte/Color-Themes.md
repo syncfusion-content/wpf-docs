@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color-Themes
+title: Color Themes| ColorPickerPalette | Wpf | Syncfusion
 description: color themes
 platform: wpf
 control: ColorPickerPalette
@@ -67,9 +67,9 @@ colorpicker.Themes = PaletteTheme.Apex;
 
 
 
-## Properties
+### Properties
 
-_Color Theme Properties Table_
+
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ PaletteTheme.Office</td><td>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 To view samples: 
 

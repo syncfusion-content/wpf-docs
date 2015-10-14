@@ -1,33 +1,29 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | SfDiagram | wpf | Syncfusion
 description: exporting
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Exporting
+# Exporting
 
 SfDiagram can be exported to the following File formats:
 
 Image File Format
 
-1.   Png
+1. Png
 2. Jpeg
 3. Tiff
 4. Gif
 5. Bitmap
 
-
-
 Contents of the Diagram can be exported as raster image files by using Export function. This exporting can be customized by using ExportSettings.
-
-
 
 The following code illustrates how to use ExportSettings Property of the SfDiagram:
 
-[C#]
+{% highlight c# %}
 
   ExportSettings settings= new ExportSettings() 
 
@@ -40,31 +36,29 @@ The following code illustrates how to use ExportSettings Property of the SfDiagr
 
           ExportMode = ExportMode.Content
 
-     };   
-
-
+     };
 
   //Assigns the ExportSettings
 
   sfdiagram.ExportSettings = settings;
 
-
+{% endhighlight %}
 
 
 
 The following code shows how to export the SfDiagram:
 
-[C#]
+{% highlight c# %}
 
  //Method to Export the SfDiagram
 
  sfdiagram.Export();
 
+{% endhighlight %}
 
 
 
-
-1. Export Mode
+### Export Mode
 
 <table>
 <tr>

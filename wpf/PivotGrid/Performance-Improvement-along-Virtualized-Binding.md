@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance Improvement along Virtualized Binding
+title: Performance Improvement along Virtualized Binding| PivotGrid | Wpf | Syncfusion
 description: Performance Improvement along Virtualized Binding
 platform: wpf
 control: PivotGrid
@@ -11,22 +11,22 @@ documentation: ug
 
 This feature provides high performance for a large set of records. This feature also helps load the data in the PivotGrid control on demand.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 Users can view the output in a few seconds for a large number of records that have been bound with the PivotGrid control. 
 
 ### Properties
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
- {{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }} </th><th>
- {{ '**Type**' | markdownify }}</th><th>
- {{ '**Data Type**' | markdownify }}</th><th>
- {{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 UseIndexedEngine</td><td>
@@ -70,222 +70,222 @@ DateTime _startIndex = DateTime.Now;
 
 public MainPage()
 
-        {
+{
 
-            InitializeComponent();
-
-
-
-            pivotGrid.PivotEngine.EnableOnDemandCalculations =
-
-                    pivotGrid.PivotEngine.UseIndexedEngine = true;
+InitializeComponent();
 
 
 
-                pivotGrid.PivotEngine.GetValue = ItemObjectLookup;
+pivotGrid.PivotEngine.EnableOnDemandCalculations =
+
+pivotGrid.PivotEngine.UseIndexedEngine = true;
 
 
 
-               ObservableCollection<ItemObject> itemsSourceObject =
-
-                    (AssociatedObject.DataContext as ViewModel.ViewModel).ItemObjectCollection;
+pivotGrid.PivotEngine.GetValue = ItemObjectLookup;
 
 
 
-                pivotGrid.PivotEngine.PivotSchemaChanged +=
+ObservableCollection<ItemObject> itemsSourceObject =
 
-                    PivotEngine_PivotSchemaChanged;
+(AssociatedObject.DataContext as ViewModel.ViewModel).ItemObjectCollection;
 
 
 
-                pivotGrid.ItemSource = itemsSourceObject;
+pivotGrid.PivotEngine.PivotSchemaChanged +=
 
-        }
+PivotEngine_PivotSchemaChanged;
+
+
+
+pivotGrid.ItemSource = itemsSourceObject;
+
+}
 
 
 
 private void PivotEngine_PivotSchemaChanged(object sender, PivotSchemaChangedArgs e)
 
-        {
+{
 
-            _startIndex = DateTime.Now;
+_startIndex = DateTime.Now;
 
-            pivotGrid.Dispatcher.BeginInvoke(DispatcherPriority.SystemIdle, new Action(() =>
+pivotGrid.Dispatcher.BeginInvoke(DispatcherPriority.SystemIdle, new Action(() =>
 
-                {
+{
 
-                    if (!pivotGrid.IgnoreRefesh)
+if (!pivotGrid.IgnoreRefesh)
 
-                    {
+{
 
-                        if ((_scrollViewer.Content as TextBlock) != null)
+if ((_scrollViewer.Content as TextBlock) != null)
 
-                            (_scrollViewer.Content as TextBlock).Text = string.Empty;
+(_scrollViewer.Content as TextBlock).Text = string.Empty;
 
 
 
-                        CheckTime(_startIndex, "Initial part done in");
+CheckTime(_startIndex, "Initial part done in");
 
-                        ContinueLoadingAsynchonolously(
+ContinueLoadingAsynchonolously(
 
-                            pivotGrid.PivotEngine.IndexEngine, _startIndex);
+pivotGrid.PivotEngine.IndexEngine, _startIndex);
 
-                    }
+}
 
-                }));
+}));
 
-        }
+}
 
 
 
-        private void ContinueLoadingAsynchonolously(IndexEngine engine, DateTime startIndex)
+private void ContinueLoadingAsynchonolously(IndexEngine engine, DateTime startIndex)
 
-        {
+{
 
-            pivotGrid.Dispatcher.BeginInvoke(new Action(() =>
+pivotGrid.Dispatcher.BeginInvoke(new Action(() =>
 
-                {
+{
 
-                    if (engine != null && engine.HighRowLevel < engine.RowCount - 1)
+if (engine != null && engine.HighRowLevel < engine.RowCount - 1)
 
-                    {
+{
 
-                        int cutOff = Math.Min(engine.HighRowLevel + 800, engine.RowCount - 1);
+int cutOff = Math.Min(engine.HighRowLevel + 800, engine.RowCount - 1);
 
 
 
-                        object o = engine[cutOff, 0]; ////Gets 800 more rows from the pivot engine (on demand calculation).
+object o = engine[cutOff, 0]; ////Gets 800 more rows from the pivot engine (on demand calculation).
 
 
 
-                        if ((_scrollViewer.Content as TextBlock) != null)
+if ((_scrollViewer.Content as TextBlock) != null)
 
-                        {
+{
 
-                            (_scrollViewer.Content as TextBlock).Text +=
+(_scrollViewer.Content as TextBlock).Text +=
 
-                                string.Format("\n{0}/{1}", engine.HighRowLevel, engine.RowCount - 1);
+string.Format("\n{0}/{1}", engine.HighRowLevel, engine.RowCount - 1);
 
-                            ContinueLoadingAsynchonolously(engine, startIndex); //Recursive call to update the rows of the PivotEngine until they reach high row level.
+ContinueLoadingAsynchonolously(engine, startIndex); //Recursive call to update the rows of the PivotEngine until they reach high row level.
 
-                        }
+}
 
-                    }
+}
 
-                    else
+else
 
-                    {
+{
 
-                        CheckTime(startIndex, "Load Completed");
+CheckTime(startIndex, "Load Completed");
 
-                    }
+}
 
-                }), DispatcherPriority.SystemIdle);
+}), DispatcherPriority.SystemIdle);
 
-        }
+}
 
 
 
-        private void CheckTime(DateTime start, string label)
+private void CheckTime(DateTime start, string label)
 
-        {
+{
 
-            if (_textBlock != null)
+if (_textBlock != null)
 
-                _textBlock.Text += string.Format("\n{0} {1:0.0000} seconds.", label,
+_textBlock.Text += string.Format("\n{0} {1:0.0000} seconds.", label,
 
-                                                 DateTime.Now.Subtract(start).TotalSeconds);
+DateTime.Now.Subtract(start).TotalSeconds);
 
-        }
+}
 
 
 
 
 
-        public IComparable ItemObjectLookup(object o, string name)
+public IComparable ItemObjectLookup(object o, string name)
 
-        {
+{
 
-            IComparable c = null;
+IComparable c = null;
 
-            var io = o as ItemObject;
+var io = o as ItemObject;
 
-            if (io != null)
+if (io != null)
 
-            {
+{
 
-                switch (name)
+switch (name)
 
-                {
+{
 
-                    case "Date":
+case "Date":
 
-                        c = io.Date;
+c = io.Date;
 
-                        break;
+break;
 
-                    case "Client":
+case "Client":
 
-                        c = io.Client;
+c = io.Client;
 
-                        break;
+break;
 
-                    case "Campaign":
+case "Campaign":
 
-                        c = io.Campaign;
+c = io.Campaign;
 
-                        break;
+break;
 
-                    case "Color":
+case "Color":
 
-                        c = io.Color;
+c = io.Color;
 
-                        break;
+break;
 
-                    case "Shape":
+case "Shape":
 
-                        c = io.Shape;
+c = io.Shape;
 
-                        break;
+break;
 
-                    case "Price":
+case "Price":
 
-                        c = io.Price;
+c = io.Price;
 
-                        break;
+break;
 
-                    case "Spend":
+case "Spend":
 
-                        c = io.Spend;
+c = io.Spend;
 
-                        break;
+break;
 
-                    case "ColH":
+case "ColH":
 
-                        c = io.ColH;
+c = io.ColH;
 
-                        break;
+break;
 
-                    case "ColI":
+case "ColI":
 
-                        c = io.ColI;
+c = io.ColI;
 
-                        break;
+break;
 
-                    case "ColJ":
+case "ColJ":
 
-                        c = io.ColJ;
+c = io.ColJ;
 
-                        break;
+break;
 
-                }
+}
 
-            }
+}
 
-            return c;
+return c;
 
-        } 
-		
+} 
+
 {% endhighlight %} 
 
 

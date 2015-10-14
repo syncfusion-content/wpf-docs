@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SelectedItem
+title: SelectedItem | TileView | wpf | Syncfusion
 description: selecteditem
 platform: wpf
 control: TileView Control
@@ -17,6 +17,8 @@ This feature will be very useful who you want to get the SelectedItem.
 
 ## Adding SelectedItem to an Application
 
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -43,6 +45,7 @@ this.TileView.SelectedItem = Tile1;
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
 ## Properties
@@ -52,11 +55,11 @@ SelectedItem Property Table
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 SelectedItem</td><td>
@@ -74,11 +77,11 @@ SelectedItem Event Table
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Arguments**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Event </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 SelectedItemChanged</td><td>

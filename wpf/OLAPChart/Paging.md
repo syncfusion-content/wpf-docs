@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging| OLAP Chart | Wpf | Syncfusion
 description: paging
 platform: wpf
 control: OLAP Chart
@@ -18,61 +18,61 @@ When you process large CellSet, it is split into several number of segments and 
 ## Adding OlapPager in Application
 
 1. Include the following Syncfusionassembly from the installed location.
-1. Syncfusion.OlapShared.Wpf
+   1. Syncfusion.OlapShared.Wpf
 
-   Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
+   Assembly Location: &lt;system drive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
 
 2. Add the respective namespace and OlapPager in XAML as follows.
 
    
 
-    
+   ~~~xaml    
 
-			<Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		<Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-			xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-			xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
+		xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
 
-			x:Class="SampleApplication.MainWindow"
+		x:Class="SampleApplication.MainWindow"
 
-				Title="MainWindow" Height="350" Width="525">
+		Title="MainWindow" Height="350" Width="525">
 
-			<Grid>
+		<Grid>
 
-				<Grid.RowDefinitions>
+		<Grid.RowDefinitions>
 
-						<RowDefinition Height="*"/>
+		<RowDefinition Height="*"/>
 
-						<RowDefinition Height="Auto"/>
+		<RowDefinition Height="Auto"/>
 
-				</Grid.RowDefinitions>
+		</Grid.RowDefinitions>
 
-			<GroupBox  Header="OlapChart" Grid.Row="0">
+		<GroupBox  Header="OlapChart" Grid.Row="0">
 
-				 <syncfusion:OlapChart  Name="olapChart" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapChart>
+		<syncfusion:OlapChart  Name="olapChart" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapChart>
 
-			</GroupBox>
+		</GroupBox>
 
-			<GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
+		<GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
 
-			<pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
+		<pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
 
-			</GroupBox>
+		</GroupBox>
 
-			</Grid>
+		</Grid>
 
-			</Window> 
-	
+		</Window> 
 
 
+   ~~~
    
 
 3. Enable paging in OlapReport.
 
-   ~~~ cs
+   ~~~csharp
 
       
 
@@ -175,108 +175,108 @@ When you process large CellSet, it is split into several number of segments and 
 			}   
 			
    ~~~
-   {:.prettyprint}
+   
 
          
-
+   ~~~csharp
 
 
 				
 
-				Imports Syncfusion.Olap.Manager
+		Imports Syncfusion.Olap.Manager
 
-				Imports Syncfusion.Olap.Reports
+		Imports Syncfusion.Olap.Reports
 
-				Namespace SampleApplication
+		Namespace SampleApplication
 
-				Partial Public Class MainWindow
+		Partial Public Class MainWindow
 
-				Inherits SampleWindow
+		Inherits SampleWindow
 
-				Private _connectionString As String
+		Private _connectionString As String
 
-				Private _olapDataManager As OlapDataManager
-
-
-
-				Public Sub New()
-
-				InitializeComponent()
-
-				_connectionString = "Enter a valid connection string"
-
-				'Created connection string is passed to OlapDataManager as argument
-
-				_olapDataManager = New OlapDataManager(_connectionString)
-
-				'Created OlapReport is set as a current report to OlapDataManager
-
-				_olapDataManager.SetCurrentReport(SimpleDimensions())
-
-				'Finally OlapChart control gets the data from the created OlapDataManager
-
-				Me.olapChart.OlapDataManager = _olapDataManager
-
-				Me.olapChart.DataBind()
-
-				End Sub
+		Private _olapDataManager As OlapDataManager
 
 
 
-				Private Function SimpleDimensions() As OlapReport
+		Public Sub New()
 
-				Dim olapReport As New OlapReport()
+		InitializeComponent()
 
-				olapReport.CurrentCubeName = "Adventure Works"
+		_connectionString = "Enter a valid connection string"
 
-				olapReport.EnablePaging = True
+		'Created connection string is passed to OlapDataManager as argument
 
-					olapReport.PagerOptions.CategorialPageSize = 10
+		_olapDataManager = New OlapDataManager(_connectionString)
 
-					olapReport.PagerOptions.SeriesPageSize = 10
+		'Created OlapReport is set as a current report to OlapDataManager
 
-					Dim dimensionElement As New DimensionElement() With {.Name = "Customer", .HierarchyName = "Customer"}
+		_olapDataManager.SetCurrentReport(SimpleDimensions())
 
-				dimensionElement.AddLevel("Customer Geography", "Country")
+		'Finally OlapChart control gets the data from the created OlapDataManager
 
-				olapReport.CategoricalElements.Add(dimensionElement)
+		Me.olapChart.OlapDataManager = _olapDataManager
 
+		Me.olapChart.DataBind()
 
-
-				Dim measureElements As New MeasureElements()
-
-				measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
-
-				olapReport.SeriesElements.Add(measureElements)
+		End Sub
 
 
 
-				dimensionElement = New DimensionElement() With {.Name = "Geography", .HierarchyName = "Geography"}
+		Private Function SimpleDimensions() As OlapReport
 
-				dimensionElement.AddLevel("Geography", "Country")
+		Dim olapReport As New OlapReport()
 
-				olapReport.CategoricalElements.Add(dimensionElement)
+		olapReport.CurrentCubeName = "Adventure Works"
+
+		olapReport.EnablePaging = True
+
+		olapReport.PagerOptions.CategorialPageSize = 10
+
+		olapReport.PagerOptions.SeriesPageSize = 10
+
+		Dim dimensionElement As New DimensionElement() With {.Name = "Customer", .HierarchyName = "Customer"}
+
+		dimensionElement.AddLevel("Customer Geography", "Country")
+
+		olapReport.CategoricalElements.Add(dimensionElement)
 
 
 
-				dimensionElement = New DimensionElement() With {.Name = "Date"}
+		Dim measureElements As New MeasureElements()
 
-				dimensionElement.AddLevel("Fiscal", "Fiscal Year")
+		measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
-				olapReport.SeriesElements.Add(dimensionElement)
+		olapReport.SeriesElements.Add(measureElements)
 
 
 
-				Return olapReport
+		dimensionElement = New DimensionElement() With {.Name = "Geography", .HierarchyName = "Geography"}
 
-				End Function
+		dimensionElement.AddLevel("Geography", "Country")
 
-				End Class
+		olapReport.CategoricalElements.Add(dimensionElement)
 
-				End Namespace
+
+
+		dimensionElement = New DimensionElement() With {.Name = "Date"}
+
+		dimensionElement.AddLevel("Fiscal", "Fiscal Year")
+
+		olapReport.SeriesElements.Add(dimensionElement)
+
+
+
+		Return olapReport
+
+		End Function
+
+		End Class
+
+		End Namespace
+
 	
-	
-
+   ~~~
 
 
    ![](Paging_images/Paging_img1.png)
@@ -285,11 +285,11 @@ When you process large CellSet, it is split into several number of segments and 
    ![](Paging_images/Paging_img2.png)
 
 
-## Sample Link
+### Sample Link
 
 Refer to the following location for the sample:
 
-<system drive>\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
+&lt;system drive&gt;\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
 
 WPF\OlapChart.WPF\Paging
 

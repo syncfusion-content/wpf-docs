@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting 
+title: Conditional Formatting | PivotGrid | Wpf | Syncfusion
 description: Conditional Formatting
 platform: wpf
 control: PivotGrid
@@ -26,10 +26,11 @@ Conditional Formatting can be used in Marketing software to help users easily tr
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img10.png)
 
 
-### Adding Conditional Formatting
+## Adding Conditional Formatting
 
 Conditional Formatting can be added to code behind and XAML, as shown in the following code snippets. 
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -65,53 +66,53 @@ Conditional Formatting can be added to code behind and XAML, as shown in the fol
 
 
 
-<syncfusion:PivotGrid.ConditionalFormats> 
+	<syncfusion:PivotGrid.ConditionalFormats> 
 
-   <!-- Adding Conditions. -->                       
+	<!-- Adding Conditions. -->                       
 
-   <syncfusion:PivotGridDataConditionalFormat Name="C1">
+	<syncfusion:PivotGridDataConditionalFormat Name="C1">
 
-      <!-- Specifying the Cell Style. -->
+	<!-- Specifying the Cell Style. -->
 
-      <syncfusion:PivotGridDataConditionalFormat.CellStyle>
+	<syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-          <syncfusion:PivotGridCellStyle Background="Green" FontFamily="Calibri" FontSize="12"/>
+	<syncfusion:PivotGridCellStyle Background="Green" FontFamily="Calibri" FontSize="12"/>
 
-      </syncfusion:PivotGridDataConditionalFormat.CellStyle>
+	</syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-      <!-- Specifying Conditions. --> 
+	<!-- Specifying Conditions. --> 
 
-      <syncfusion:PivotGridDataConditionalFormat.Conditions>
+	<syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-          <syncfusion:PivotGridDataCondition ConditionType="GreaterThan" Value="5000000" MeasureElement="Amount" PredicateType="And"/>
+	<syncfusion:PivotGridDataCondition ConditionType="GreaterThan" Value="5000000" MeasureElement="Amount" PredicateType="And"/>
 
-          </syncfusion:PivotGridDataConditionalFormat.Conditions>
+	</syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-      </syncfusion:PivotGridDataConditionalFormat>
+	</syncfusion:PivotGridDataConditionalFormat>
 
-   <syncfusion:PivotGridDataConditionalFormat Name="C2">
+	<syncfusion:PivotGridDataConditionalFormat Name="C2">
 
-      <!-- Specifying the Cell Style. -->
+	<!-- Specifying the Cell Style. -->
 
-      <syncfusion:PivotGridDataConditionalFormat.CellStyle>
+	<syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-          <syncfusion:PivotGridCellStyle Background="Red" FontFamily="Calibri" FontSize="12"/>
+	<syncfusion:PivotGridCellStyle Background="Red" FontFamily="Calibri" FontSize="12"/>
 
-      </syncfusion:PivotGridDataConditionalFormat.CellStyle>
+	</syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-      <!-- Specifying Conditions. --> 
+	<!-- Specifying Conditions. --> 
 
-      <syncfusion:PivotGridDataConditionalFormat.Conditions>
+	<syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-          <syncfusion:PivotGridDataCondition ConditionType="LessThan" Value="100000
+	<syncfusion:PivotGridDataCondition ConditionType="LessThan" Value="100000
 
-" MeasureElement="Amount" PredicateType="And"/>
+	" MeasureElement="Amount" PredicateType="And"/>
 
-          </syncfusion:PivotGridDataConditionalFormat.Conditions>
+	</syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-      </syncfusion:PivotGridDataConditionalFormat>           
+	</syncfusion:PivotGridDataConditionalFormat>           
 
-</syncfusion:PivotGrid.ConditionalFormats>
+	</syncfusion:PivotGrid.ConditionalFormats>
 
 {% endhighlight %} 
 
@@ -128,13 +129,13 @@ PivotGridDataConditionalFormat conditionalFormat1 = new PivotGridDataConditional
 
 conditionalFormat1.Conditions.Add(new PivotGridDataCondition() { 
 
-            ConditionType= PivotGridDataConditionType.GreaterThan , 
+ConditionType= PivotGridDataConditionType.GreaterThan , 
 
-            MeasureElement="Amount",
+MeasureElement="Amount",
 
-            Value="5000000",
+Value="5000000",
 
-            PredicateType = PredicateType.And });
+PredicateType = PredicateType.And });
 
 
 
@@ -156,13 +157,13 @@ PivotGridDataConditionalFormat conditionalFormat2 = new PivotGridDataConditional
 
 conditionalFormat2.Conditions.Add(new PivotGridDataCondition() { 
 
-            ConditionType= PivotGridDataConditionType.LessThan , 
+ConditionType= PivotGridDataConditionType.LessThan , 
 
-            MeasureElement="Amount",
+MeasureElement="Amount",
 
-            Value="100000",
+Value="100000",
 
-            PredicateType = PredicateType.And });
+PredicateType = PredicateType.And });
 
 
 
@@ -242,14 +243,14 @@ Me.PivotGrid1.ConditionalFormats.Add(conditionalFormat1)
 Me.PivotGrid1.ConditionalFormats.Add(conditionalFormat2)
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img11.png)
 
 
 
-#### Sample Link
+### Sample Link
 
 A sample application that illustrates Conditional Formatting is distributed along with the Essential PivotGrid WPF installation and can be found at:
 

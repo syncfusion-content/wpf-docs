@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Conversion-Support
+title: Conversion Support | XlsIO | WPF | Syncfusion
 description: conversion support
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -16,12 +16,8 @@ Essential XlsIO supports converting workbook and worksheets into a Pdf document,
 Essential XlsIO allows exporting an Excel document into PDF format. Use the Convert method of the ExcelToPdfConverter class to convert the Excel spreadsheet and save the PDF output. 
 
 N> You need to have both Essential PDF and Essential XlsIO installed in your system since Syncfusion.ExceltoPDFConverter.Base.dll is conditionally shipped when both XlsIO.Base and Pdf.Base is installed.
-
-
-
-{% highlight C# %}
-
-
+{% tabs %}
+{% highlight C# %} 
 
 //Step 1: Instantiates the spreadsheet creation engine.
 ExcelEngine excelEngine = new ExcelEngine();
@@ -64,11 +60,11 @@ pdfDoc = converter.Convert(settings);
 
 pdfDoc.Save("ExceltoPDF.pdf");
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+ {% endhighlight %}
 
 
+{% highlight vbnet %} 
 
 'Step 1: Instantiates the spreadsheet creation engine.
 
@@ -113,9 +109,11 @@ pdfDoc = converter.Convert(settings)
 'Saves the pdf file.
 
 pdfDoc.Save("ExceltoPDF.pdf")
-{% endhighlight %}
 
-##Supported Elements
+{% endhighlight %}
+{% endtabs %}
+
+###Supported Elements
 
 This feature provides support for the following elements:
 
@@ -139,7 +137,7 @@ This feature provides support for the following elements:
 * Print Order Support
 * Unicode in Headers and Footers​
 
-##Styles
+###Styles
 
 This feature supports almost all the styles supported by Excel 2007.
 
@@ -157,7 +155,7 @@ This feature supports almost all character formatting. The supported character f
 * Left, right, and center justification
 * Line breaks within the cell
 
-###Headers and Footers 
+##Headers and Footers 
 
 Page headers and footers are supported and can contain images, text, and page number fields. 
 
@@ -187,7 +185,7 @@ Built-In Table styles present in the Excel documents is also preserved in the ge
 
 Rotated text present in the Excel sheet cell is preserved in the generated PDF document.
 
-###Excel sheet Page Setup options
+##Excel sheet Page Setup options
 
 The Page setup option of the input Excel sheet is preserved in the generated PDF document. The following are the Excel page setup options that are preserved.
 
@@ -202,7 +200,10 @@ The other language and unicode present in the input Excel document is preserved 
 
 The Background image present in the Excel document is preserved in the generated PDF document.
 
+
 N> The image gets tiled based on the size of the output pdf document.
+
+
 
 ###Comments
 
@@ -221,7 +222,7 @@ The following list contains unsupported elements that presently is not preserved
 * Text rotations
 * Background images
 
-###Printing Titles when Converting the Excel to PDF 
+##Printing Titles when Converting the Excel to PDF 
 
 Title rows and columns in the Excel sheet can be printed on the PDF page by using this feature. By setting the print titles for rows and columns in the Excel sheet, the same gets reflected in the PDF when converting the Excel to PDF.
 
@@ -235,8 +236,6 @@ The Print order enabled in the Excel document is considered while laying out the
 
 * Down Then Over
 * Over Then Down
-
-
 
 N> It considers the Print Area and Page breaks while laying out, based on Print Order.
 
@@ -254,8 +253,10 @@ For More Information refer to: AutoFilters, Validating Data, Template Markers, G
 
 Essential XlsIO can convert a worksheet to an image of type bitmap or metafile based on the input range of rows and columns with all basic formats preserved. The sheet can be converted and saved to disk or stream. The converted image can be inserted in a pdf by using Essential PDF.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -310,11 +311,11 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+ {% endhighlight %} 
 
 
+{% highlight vbnet %} 
 
 'Step 1: Instantiates the spreadsheet creation engine.
 
@@ -366,14 +367,17 @@ workbook.Close()
 excelEngine.ThrowNotSavedOnDestroy = False
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %} 
+{% endtabs %}
 
-![](Conversion-Support_images/Conversion-Support_img1.jpeg)
+![](Conversion-Support_images/Conversion-Support_img4.jpeg)
 
 
 
 Essential XlsIO can convert a worksheet based on the input range of the rows and columns that does not support the following elements:
+
+
 
 * Subscript/Superscript
 * RTF
@@ -382,12 +386,16 @@ Essential XlsIO can convert a worksheet based on the input range of the rows and
 * Charts and Chart Worksheet
 * Complex conditional formatting
 * Gradient fill is partially supported
+
+
 ## Convert Chart to Image 
 
-N>
 
-* This section is applicable only to the Windows Forms and WPF platforms of XlsIO.
-* For Windows Forms platform, you must add additional references to the following DLLs: PresentationFramework.dll and PresentationCore.dll.
+N> This section is applicable only to the Windows Forms and WPF platforms of XlsIO.
+N>
+N> For Windows Forms platform, you must add additional references to the following DLLs: PresentationFramework.dll and PresentationCore.dll.
+
+
 
 Essential XlsIO provides support to convert a Chart in Microsoft Excel to an image. This can be done by using the ExcelChartToImageConverter class. To render a Chart in Excel as an image, you must add references to the following DLLs in your application:
 
@@ -400,8 +408,10 @@ Essential XlsIO provides support to convert a Chart in Microsoft Excel to an ima
 
 The following code example illustrates converting an Excel Chart to an image.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -474,11 +484,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+{% endhighlight %} 
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 'Step 1: Instantiates the spreadsheet creation engine.
 
@@ -549,11 +557,15 @@ image__1.Save("output.png")
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows an Excel Chart converted to an image.
 
-![](Conversion-Support_images/Conversion-Support_img2.jpeg)
+
+
+![](Conversion-Support_images/Conversion-Support_img6.jpeg)
 
 
 

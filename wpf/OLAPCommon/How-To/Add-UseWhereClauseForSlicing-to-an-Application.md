@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-UseWhereClauseForSlicing-to-an-Application
+title: Add UseWhereClauseForSlicing to an Application| OLAPCommon | Wpf | Syncfusion
 description: add usewhereclauseforslicing to an application
 platform: wpf
 control: OLAPCommon
@@ -15,6 +15,7 @@ The user can add the UseWhereClauseForSlicing property to an application by sett
 
 To perform slicing operation using ‘Where’ clause:
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager.UseWhereClauseForSlicing = true;
@@ -26,9 +27,10 @@ OlapDataManager.UseWhereClauseForSlicing = true;
 OlapDataManager.UseWhereClauseForSlicing = True 
 
 {% endhighlight  %}
+{% endtabs %}
 
 To perform slicing operation using ‘Select’ clause:
-
+{% tabs %}
 {% highlight c# %}
 
 this.olapGridControl1.OlapDataManager.UseWhereClauseForSlicing = false;
@@ -40,4 +42,4 @@ this.olapGridControl1.OlapDataManager.UseWhereClauseForSlicing = false;
 Me.olapGridControl1.OlapDataManager.UseWhereClauseForSlicing = False
 
 {% endhighlight  %}
-
+{% endtabs %}

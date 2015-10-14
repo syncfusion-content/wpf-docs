@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Tab-Scroll-Button
+title: Setting Tab Scroll Button | TabControlExt | wpf | Syncfusion
 description: setting tab scroll button
 platform: wpf
 control: TabControlExt
@@ -19,10 +19,9 @@ Tab Scroll button visibility is controlled by using the TabScrollButtonVisibilit
 
 Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabcontrolExt -->
 
@@ -90,16 +89,23 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Visible;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 ![](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg)
 
 
 
+{% seealso %}
+
+Tab Scroll Style
+
+Tab Scrolling Time
+
+{% endseealso %}
 
 
-See Also
-
-Tab Scroll Style, Tab Scrolling Time
 

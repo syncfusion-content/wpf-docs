@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Virtualization
+title: Data Virtualization | SfDataGrid | WPF | Syncfusion
 description: data virtualization
 platform: wpf
 control: SfDataGrid
@@ -91,8 +91,6 @@ Custom Data Virtualization is helpful for retrieving data from data sources on d
 ### Virtual Methods of VirtualizingCollectionView
 
 VirtualizingCollectionView contains the following virtual methods to override operations in CustomVirtualizingCollectionView class.
-
-_Virtual Methods Table_
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Validation
+title: Data Validation | SfDataGrid | WPF | Syncfusion
 description: data validation
 platform: wpf
 control: SfDataGrid
@@ -21,7 +21,7 @@ SfDataGrid provides a convenient way to validate data and indicate the errors al
 
 
 
-N> GridColumn.GridValidationMode takes higher priority that its behavior overrides SfDataGrid behavior._
+N> GridColumn.GridValidationMode takes higher priority that its behavior overrides SfDataGrid behavior.
 
 . The following are different approaches to validate errors on data.
 
@@ -123,9 +123,9 @@ public System.Collections.IEnumerable GetErrors(string propertyName)
 
 
 
-_DataGrid with Email field validation_
-
-N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode._
+DataGrid with Email field validation
+{:.caption}
+N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode.
 
 
 
@@ -135,7 +135,7 @@ N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMod
 
 Once the UI interactive validations are successful, the Data layer validates the corresponding values for the members that specify validation rules. You can use two different modes in Validation like ‘InView’ or ‘InEdit’. System.ComponentModel.DataAnnotations assembly is added to the reference to use DataAnnotations.
 
-N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode._
+N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode.
 
 #### Some of the commonly used ValidationAttributes are as follows:
 
@@ -176,8 +176,8 @@ The following screenshot displays the output.
 
 
 
-_DataGrid with Validation through Data Annotations_
-
+DataGrid with Validation through Data Annotations
+{:.caption}
 ### Validation through Events
 
 SfDataGrid offers Validation through events when a cell moves into Edit mode and its focus is lost. Validation is done through the following events:
@@ -250,8 +250,8 @@ The following screenshot displays the output.
 
 
 
-_DataGrid with Cell Validation_
-
+DataGrid with Cell Validation
+{:.caption}
 #### Row Validation
 
 In SfDataGridRowValidation, two events are raised when you edit a cell in a row, and then you can move the focus from the edited row. The following events are associated with Row Validation in the DataGrid control:
@@ -317,8 +317,8 @@ The following screenshot illustrates the output.
 
 
 
-_DataGrid with Row Validation_
-
+DataGrid with Row Validation
+{:.caption}
 ### How To
 
 #### How to change the Validation error template?
@@ -660,4 +660,5 @@ The following screenshot displays the output.
 
 
 
-_DataGrid with Changed Validation error template_
+DataGrid with Changed Validation error template
+{:.caption}

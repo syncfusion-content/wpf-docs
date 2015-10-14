@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar-Customization
+title: Calendar Customization| Gantt | Wpf | Syncfusion
 description: calendar customization
 platform: wpf
 control: Gantt
@@ -27,7 +27,7 @@ You can also use this to schedule the works that have different week cycle. For 
 
 ## Properties
 
-_Properties_
+
 
 <table>
 <tr>
@@ -81,37 +81,37 @@ Define the value to weekdays, months, FY Numbering, default start time and defau
 
 The following code illustrates adding Calendar Customization to an Application:
 
-
+{% tabs %}
 {% highlight html  %}
 
 
 
 
-  <sync:GanttControl Grid.Row="1"  x:Name="Gantt">
+<sync:GanttControl Grid.Row="1"  x:Name="Gantt">
 
-                <sync:GanttControl.TaskAttributeMapping>
+<sync:GanttControl.TaskAttributeMapping>
 
-                    <sync:TaskAttributeMapping TaskIdMapping="Id"
+<sync:TaskAttributeMapping TaskIdMapping="Id"
 
-                                            TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                            StartDateMapping="StDate" 
+StartDateMapping="StDate" 
 
-                                            ChildMapping="ChildTask"
+ChildMapping="ChildTask"
 
-                                            FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                            DurationMapping="Duration"                                            
+DurationMapping="Duration"                                            
 
-                                            ProgressMapping="Complete"
+ProgressMapping="Complete"
 
-                                            PredecessorMapping="Predecessor">
+PredecessorMapping="Predecessor">
 
-                    </sync:TaskAttributeMapping>
+</sync:TaskAttributeMapping>
 
-                </sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl.TaskAttributeMapping>
 
-            </sync:GanttControl>           
+</sync:GanttControl>           
 
 
 
@@ -144,6 +144,8 @@ Gantt.DefaultEndTime = new GanttTime() { Hour = 6};
 
 
 {% endhighlight %}
+{% endtabs %}
+
 The following image shows Customized Calender:
 
 
@@ -152,7 +154,8 @@ The following image shows Customized Calender:
 
 
 
-_Customized Calender_
+Customized Calender
+{:.caption}
 
 ### Samples Link
 

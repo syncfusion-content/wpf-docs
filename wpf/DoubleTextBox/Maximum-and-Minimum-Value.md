@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-Value
+title: Maximum and Minimum Value| DoubleTextBox  | Wpf | Syncfusion
 description: maximum and minimum value
 platform: wpf
 control: DoubleTextBox 
@@ -82,9 +82,10 @@ MinValidation is set to OnKeyPress, so you cannot enter a value less than the Mi
 
 
 
-See Also
+{% seealso %}
 
 NullValue support
 
 Binding support
 
+{% endseealso %}

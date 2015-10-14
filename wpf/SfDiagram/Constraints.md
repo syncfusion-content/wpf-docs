@@ -1,23 +1,21 @@
 ---
 layout: post
-title: Constraints
+title: Constraints | SfDiagram | wpf | Syncfusion
 description: constraints
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Constraints
+# Constraints
 
 The GraphConstraints property is used to enable or disable all the behaviors or certain behaviors of the SfDiagram control. This property is applicable to the entire SfDiagram control.
 
-
-
 <table>
 <tr>
-<td>
-Constraint</td><td>
-Description</td></tr>
+<th>
+Constraint</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -84,23 +82,16 @@ Default</td><td>
 Enables all behaviors of the control.</td></tr>
 </table>
 
-
-
 The default value for GraphConstraints property is _Default_.
-
-
 
 The following code example illustrates how to add the Undo constraint to existing constraints in SfDiagram:
 
-
-
-[C#]
+{% highlight c# %}
 
 sfdiagram.Constraints = sfdiagram.Constraints | GraphConstraints.Undoable;
 
+{% endhighlight %}
 
 
-![](Constraints_images/Constraints_img1.jpeg)
-{:.image }
-_Note: GraphConstraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
+N> GraphConstraints property is manipulated by using bitwise operations. For more information about bitwise operations, see Bitwise Operations.
 

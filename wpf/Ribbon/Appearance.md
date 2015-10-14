@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | Ribbon | WPF | Syncfusion
 description: appearance
 platform: wpf
 control: Ribbon
@@ -131,11 +131,32 @@ The following code example illustrates how to set the Blend visual style for the
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<syncfusion:RibbonWindow x:Class="EssentialRibbonApplication.RibbonWindow1"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                          Title="Window1" Height="300" Width="320" Loaded="RibbonWindow_Loaded"  syncfusion:SkinStorage.VisualStyle="Blend">    <syncfusion:Ribbon x:Name="ribbon" Loaded="ribbon_Loaded" >        <syncfusion:Ribbon.ApplicationMenu>            <syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" >            </syncfusion:ApplicationMenu>        </syncfusion:Ribbon.ApplicationMenu>        <syncfusion:RibbonTab Caption="Message"  syncfusion:Ribbon.KeyTip="H" IsChecked="True">            <syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" >            </syncfusion:RibbonBar>        </syncfusion:RibbonTab>    </syncfusion:Ribbon></syncfusion:RibbonWindow>{% endhighlight %}</td></tr>
+{% highlight xml %}
+<syncfusion:RibbonWindow 
+x:Class="EssentialRibbonApplication.RibbonWindow1"  
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                          
+Title="Window1" Height="300" Width="320" Loaded="RibbonWindow_Loaded"  
+syncfusion:SkinStorage.VisualStyle="Blend">    
+<syncfusion:Ribbon x:Name="ribbon" Loaded="ribbon_Loaded" >        
+<syncfusion:Ribbon.ApplicationMenu>            
+<syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" >            
+</syncfusion:ApplicationMenu>        
+</syncfusion:Ribbon.ApplicationMenu>        
+<syncfusion:RibbonTab Caption="Message"  syncfusion:Ribbon.KeyTip="H" IsChecked="True">            
+<syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" >            
+</syncfusion:RibbonBar>        
+</syncfusion:RibbonTab>    
+</syncfusion:Ribbon>
+</syncfusion:RibbonWindow>
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight c# %}// Set "Blend" visual style for the Ribbon control.SkinStorage.SetVisualStyle(this, "Blend");{% endhighlight %}</td></tr>
+{% highlight c# %}
+// Set "Blend" visual style for the Ribbon control.SkinStorage.SetVisualStyle(this, "Blend");
+{% endhighlight %}
+</tr>
 </table>
 
 

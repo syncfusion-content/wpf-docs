@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MiniToolbar
+title: MiniToolbar | Ribbon | WPF | Syncfusion
 description: minitoolbar
 platform: wpf
 control: Ribbon

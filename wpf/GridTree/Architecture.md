@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Architecture
+title: Architecture| GridTree | Wpf | Syncfusion
 description: architecture
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design-Time Support
+title: Design Time Support | Chart(Classic) | wpf | Syncfusion
 description: Design-Time Support
 platform: wpf
 control: Chart (Classic)

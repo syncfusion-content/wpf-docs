@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner-Background
+title: Range Adorner Background| PercentTextBox  | Wpf | Syncfusion
 description: range adorner background
 platform: wpf
 control: PercentTextBox 
@@ -14,16 +14,16 @@ The RangeAdornerBackground property is used to set the background color of the r
 ![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)
 
 
-## Properties
+### Properties
 
-Property table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 RangeAdornerBackground</td><td>
@@ -34,13 +34,12 @@ Color name</td></tr>
 
 We have to set the RangeAdornerBackground property either in XAML or the code file.
 
-<table>
-<tr>
-<td>
-{% highlight xml %} RangeAdornerBackground="LightGreen"{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}control.RangeAdornerBackground = Brushes.LightGreen;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %} RangeAdornerBackground="LightGreen"
+{% endhighlight %}
+
+{% highlight c# %}control.RangeAdornerBackground = Brushes.LightGreen;
+{% endhighlight %}
+{% endtabs %}
 
 

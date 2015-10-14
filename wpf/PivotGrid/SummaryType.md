@@ -1,23 +1,23 @@
 ---
 layout: post
-title: SummaryType
+title: SummaryType| PivotGrid | Wpf | Syncfusion
 description: summarytype
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## SummaryType
+# SummaryType
 
 SummaryType is an enumerator defined in the PivotComputationInfo class that is used to specify the type of the summary. The following table lists the various summary types that are used for performing calculations:
 
-_Summar types table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 DoubleTotalSum</td><td>
@@ -65,21 +65,21 @@ Displays the aggregated value in the Pivot Computation column if all the values 
 </table>  
 
 
-### DisplayIfDiscreteValues Summary Type
+## DisplayIfDiscreteValues Summary Type
 
 DisplayIfDiscreteLevelsEqual is a new summary type that has been added to the PivotComputationInfo class of the Pivot Grid control. This summary type displays the  aggregated value in the Pivot Computation column if all the values are common, else the default value displayed is “*”.
 
 You can also change the default  value to any custom string of your choice by using the PadString property.
 
-#### Property
+### Property
 
-_Property Table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 PadString</td><td>
@@ -87,8 +87,9 @@ You can use this property to specify a custom string in the Pivot Computation co
 </table>
 
 
-#### Code Sample
+### Code Sample
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -125,38 +126,40 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 
  {% endhighlight %} 
+ {% endtabs %}
  
-#### Screenshot
+### Screenshot
 
 ![](Concepts_images/Concepts_img7.png)
 
 
 
-_DisplayIfDiscreteValues Summary Type Illustrated_
+DisplayIfDiscreteValues Summary Type Illustrated
+{:.caption}
 
-#### Sample Location
+### Sample Location
 
 {InstallationDrive}:\Users\{UserName}\AppData\Local\Syncfusion\EssentialStudio\11.1.0.9\Wpf \PivotAnalysis.Wpf\ Summaries\CustomSummaries Demo
 
-### DisplayIfDiscreteValues Summary Type in Numeric Format
+## DisplayIfDiscreteValues Summary Type in Numeric Format
 
 This feature lets users provide an optional value like 999, 99, or 1000 to represent a discrete value. This will behave like the DisplayIfDiscreteValuesEqual summary type but it will carry a number format instead of characters to represent the aggregate values. The user can assign certain fields to be in a number format instead of the PadString displaying a special character, e.g., 999 instead of ***.
 
-#### Use Case Scenario
+### Use Case Scenario
 
 Users can perform calculations using the numeric format assigned to a field when it is exported to Excel. Previously the summary type of “DisplayIfDiscreteValue” was always treated as a string which on exported to excel, user cannot perform any calculations since it had string format assigned for the field.
 
-#### Property
+### Property
 
-_Property Table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 PadString</td><td>
@@ -166,12 +169,13 @@ string</td></tr>
 </table> 
 
 
-#### Adding DisplayIfDiscreteValues Summary Type in Numeric Format in an Application 
+### Adding DisplayIfDiscreteValues Summary Type in Numeric Format in an Application 
 
 To enable the DisplayIfDiscreteValues summary type in numeric format in an application, we need to set a numerical value to the property PadString. For example, PadString=”999”
 
 The following code sample explains how to set PadString to display the discrete value in a numerical format. It can be set by XAML or C# code.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -208,15 +212,17 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "999" 
 Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Amount", .FieldName="Amount", .SummaryType= SummaryType. DisplayIfDiscreteValuesEqual, .PadString = "999" }
 
 {% endhighlight %} 
+{% endtabs %}
 
 
 ![](Concepts_images/Concepts_img8.png)
 
 
 
-_DisplayIfDiscreteValues Summary Type in Numeric Format_
+DisplayIfDiscreteValues Summary Type in Numeric Format
+{:.caption}
 
-#### Sample Location
+### Sample Location
 
 {Installation Drive}:\Users\{UserName}\AppData\Local\Syncfusion\EssentialStudio\11.4.0.20\Wpf \PivotAnalysis.Wpf\Summaries\CustomSummaries Demo
 

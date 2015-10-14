@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enabling-and-Disabling-Schedule-Editor
+title: Enabling and Disabling Schedule Editor| SfSchedule | Wpf | Syncfusion
 description: enabling and disabling schedule editor
 platform: wpf
 control: SfSchedule
@@ -10,6 +10,7 @@ documentation: ug
 # Enabling and Disabling Schedule Editor
 
 The Editor can be disabled or enabled using the property AllowEditing and its default value is True.
+{% tabs %}
 {% highlight html %}
 
 
@@ -32,6 +33,7 @@ The Editor can be disabled or enabled using the property AllowEditing and its de
 
               this.grid.Children.Add(schedule);
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img1.png)
 

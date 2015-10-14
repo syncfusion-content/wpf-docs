@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MinimizedItemContent-and-MaximizedItemContent
+title: MinimizedItemContent-and-MaximizedItemContent | TileView | wpf | Syncfusion
 description: minimizeditemcontent and maximizeditemcontent
 platform: wpf
 control: TileView Control
@@ -90,16 +90,15 @@ The following code example illustrates how to add the MinimizedItemContent and M
 
 ## Properties
 
-_MinimizedItemContent / MaximizedItemContent Properties Table_
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MinimizedItemContent</td><td>

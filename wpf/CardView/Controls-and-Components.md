@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Controls-and-Components
+title: Controls and Components | CardView | wpf | Syncfusion 
 description: controls and components
 platform: wpf
 control: CardView
@@ -14,8 +14,6 @@ The following controls assemble the CardView control.
 * CardView
 * CardViewItem
 
-
-
 ## CardView
 
 ## Use Case Scenarios
@@ -26,12 +24,11 @@ The following screenshot displays the CardView:
 
 ![](Controls-and-Components_images/Controls-and-Components_img1.png)
 
-
+Structure of the CardView Control
+{:.caption}
 
 * CardViewHeader: It shows the header of the card view control
 * CardViewItem: It contains the list of ComboBox’s items
-
-
 
 ## Sample link
 
@@ -42,7 +39,6 @@ The following screenshot displays the CardView:
 
 ## Appearance
 
-
 You can customize the appearance of the ComboBoxAdv control by editing the style of the control in Expression Blend or by using the following properties exposed by CardView control:
 
 * Edit style in Expression Blend 
@@ -50,16 +46,17 @@ You can customize the appearance of the ComboBoxAdv control by editing the style
 
 ## Blendability
 
-
 You can edit the style of ComboBoxAdv by using Expression Blend. To edit the ComboBoxAdv control’s style in Expression Blend:
 
 1. Drag the CardView control to the Design view. The CardView control will appear as shown in the screen shot displayed below.
+
 2. Right-click the CardView control, select Edit Template, and then select Edit a Copy. 
 
-
-
-![](Controls-and-Components_images/Controls-and-Components_img2.png)
-
+   ![](Controls-and-Components_images/Controls-and-Components_img2.png)
+   
+   CardView Control in Edit Template 
+   {:.caption}
+   
 ## Features of CardView control
 
 ## Grouping
@@ -92,14 +89,19 @@ NA</td></tr>
 
 CanGroup property can be added directly to an application using the following code snippet:
 
+{% highlight xaml %}
 
+<syncfusion:CardView CanGroup="False">        
 
-{% highlight xml %}
-<syncfusion:CardView CanGroup="False">        </syncfusion:CardView>
+</syncfusion:CardView>
+
 {% endhighlight  %}
-{% highlight c# %}
-CardView cardview = new CardView();       cardview.CanGroup = false;
 
+{% highlight c# %}
+
+CardView cardview = new CardView();       
+
+cardview.CanGroup = false;
 
 {% endhighlight %}
 
@@ -137,14 +139,19 @@ NA</td></tr>
 
 CanSort can be added directly to an application using the following code snippet: 
 
-{% highlight xml %}
+{% highlight xaml %}
 
-<syncfusion:CardView CanSort="False">        </syncfusion:CardView>
+<syncfusion:CardView CanSort="False">        
+
+</syncfusion:CardView>
+
 {% endhighlight  %}
+
 {% highlight c# %}
 
-CardView cardview = new CardView();       cardview.CanSort = false;
+CardView cardview = new CardView();       
 
+cardview.CanSort = false;
 
 {% endhighlight %}
 
@@ -187,13 +194,19 @@ CanEdit property can be added directly to an application using the following cod
 
 {% highlight xml %}
 
-<syncfusion:CardView CanEdit="False">        </syncfusion:CardView>
+<syncfusion:CardView CanEdit="False">        
+
+</syncfusion:CardView>
+
 {% endhighlight  %}
+
 {% highlight c# %}
-CardView cardview = new CardView();       cardview.CanEdit = false;
+
+CardView cardview = new CardView();       
+
+cardview.CanEdit = false;
+
 {% endhighlight  %}
-
-
 
 ## Header Panel
 
@@ -227,18 +240,21 @@ ShowHeader property can be added directly to an application using the following 
 
 {% highlight xml %}
 
+<syncfusion:CardView ShowHeader="False">        
 
-<syncfusion:CardView ShowHeader="False">        </syncfusion:CardView>
+</syncfusion:CardView>
+
 {% endhighlight %}
-{% highlight c# %}
-CardView cardview = new CardView();       cardview.ShowHeader = false;</td></tr>
 
+{% highlight c# %}
+
+CardView cardview = new CardView();       
+
+cardview.ShowHeader = false;</td></tr>
 
 {% endhighlight %}
 
 ![](Controls-and-Components_images/Controls-and-Components_img3.png)
 
-
-
-
-
+CardView control view when ShowHeader=false.
+{:.caption}

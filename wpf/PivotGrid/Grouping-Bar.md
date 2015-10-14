@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Bar
+title: Grouping Bar| PivotGrid | Wpf | Syncfusion
 description: Grouping Bar 
 platform: wpf
 control: PivotGrid
@@ -25,14 +25,15 @@ The Field headers identify fields in the pivot grid. A field header contains:
 
 The headers of all visible fields are contained within header areas. The headers of row and column fields are displayed within the row header and column header areas, respectively. The headers of data fields are displayed within the data header area.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 At times, you may expect the Grid to perform sorting and filtering at run-time.
 
-#### Adding Grouping Bar 
+## Adding Grouping Bar 
 
 By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupingBar property of PivotGrid to False.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -125,19 +126,20 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldNam
 pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Features_images/Features_img3.png)
 
 
 
-#### Filtering
+## Filtering
 
 Filtering of data displays only a subset of data that meets criteria specified by you and hides data that you don’t want to get displayed. The Items present in the FilterHeaderArea, ColumnHeaderArea and RowHeaderArea provides the option of run-time filtering which is represented as a Funnel symbol on it. On clicking, it opens a filter popup which displays a list of elements through which filtering can be applied. 
 
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Features_images/Features_img4.png)
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -157,12 +159,12 @@ pivotGridControl1.GroupingBar.AllowFiltering = false;
 pivotGridControl1.GroupingBar.AllowFiltering = False 
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 The above code snippets disable Filtering in Grouping Bar.
 
-#### Sorting
+## Sorting
 
 Sorting data enables you to quickly visualize, organize and understand the data better., It also enables you to find data that you want, and ultimately helps to make more effective decisions. By default, PivotGrid will populate the data in ascending order. Sorting order can be changed clicking on the item present in the RowHeaderArea and ColumnHeaderArea. The Sort indicator present in the item represents the Sort type whether it is ascending sort or descending sort. 
 
@@ -192,16 +194,16 @@ pivotGridControl1.GroupingBar.AllowSorting = False
 
 The above code snippets disable Sorting in Grouping Bar.
 
-#### Sample Link
+### Sample Link
 
 ..\..\ Syncfusion\BI\WPF\PivotAnalysis.WPF\Samples\Grouping\Grid GroupingBar Demo
 
 
-### Disable Grouping by Specific Fields 
+## Disable Grouping by Specific Fields 
 
 This feature enables the user to prevent the drop of certain pivot items that has been dragged either from PivotSchemaDesigner or within the pivot grid to the grouping bar at runtime.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature enables the user to restrict grouping for any specific field at runtime.
 
@@ -211,18 +213,17 @@ The following screenshot shows disabled grouping:
 
 
 
-#### Properties
+### Properties
 
-Properties Table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 AllowRunTimeGroupByField</td><td>
@@ -240,18 +241,19 @@ bool</td><td>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 A sample is provided in the following location:
 
 {InstalledLoction}:\Users\{User}AppData\Local\Syncfusion\EssentialStudio\{InstalledVersion}\BI\WPF\PivotAnalysis.WPF\Samples\Grouping Bar\Grouping Bar Demo
 
-#### Adding Disable Grouping by Specific Fields to an Application 
+## Adding Disable Grouping by Specific Fields to an Application 
 
 The user needs to set the AllowRunTimeGroupByField property value to enable/disable grouping. The AllowRunTimeGroupByField property is added to PivotItem, PivotComputationInfo and FilterItemsCollection. The ShowDisabledGroupBackground property will allow user to set a disabled look to the grouping disabled pivot items.  
 
 The following code snippets, explains the implementation of the disable grouping by specific fields feature:
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -343,5 +345,5 @@ Me.pivotGrid1.PivotCalculations.Add(New PivotComputationInfo() With {.FieldName 
 Me.pivotGrid1.ShowDisabledGroupBackground = True 
 
 {% endhighlight %}  
-
+{% endtabs %}
 

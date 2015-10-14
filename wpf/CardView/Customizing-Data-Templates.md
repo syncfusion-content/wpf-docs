@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Data-Templates
+title: Customizing Data Templates | CardView | wpf | Syncfusion
 description: customizing data templates
 platform: wpf
 control: CardView
@@ -15,68 +15,58 @@ Data templates can be customized for items and headers. This section explains ho
 
 You can customize how a business object is displayed using ItemTemplate of CardViewItem. The following example shows the usage of ItemTemplate.
 
-{% highlight xml %}
+{% highlight xaml %}
 
-  <syncfusion:CardView ItemsSource="{Binding Contacts}" >
+<syncfusion:CardView ItemsSource="{Binding Contacts}" >
 
+	<syncfusion:CardView.ItemTemplate>
 
+		<DataTemplate >
 
-                <syncfusion:CardView.ItemTemplate>
+			<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
-                    <DataTemplate >
+				<ListBoxItem>
 
-                        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+					<StackPanel Orientation="Horizontal">
 
-                            <ListBoxItem>
+						<TextBlock Text="Name:"/>
 
-                                <StackPanel Orientation="Horizontal">
+						<TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
 
-                                    <TextBlock Text="Name:"/>
+					</StackPanel>
 
-                                    <TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
-
-                                </StackPanel>
-
-                            </ListBoxItem>
+				</ListBoxItem>
 
 
 
-                            <ListBoxItem>
+				<ListBoxItem>
 
-                                <StackPanel Orientation="Horizontal">
+					<StackPanel Orientation="Horizontal">
 
-                                    <TextBlock Text="Age    :"/>
+						<TextBlock Text="Age    :"/>
 
-                                    <TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
+						<TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
 
-                                </StackPanel>
+					</StackPanel>
 
-                            </ListBoxItem>
+				</ListBoxItem>
 
-                        </ListBox>
+			</ListBox>
 
-                    </DataTemplate>
+		</DataTemplate>
 
-                </syncfusion:CardView.ItemTemplate>
+	</syncfusion:CardView.ItemTemplate>
 
-
-
-            </syncfusion:CardView>
-
+</syncfusion:CardView>
 
 {% endhighlight %}
 
-
-
-
 Implementing the above code generates the following output.
-
-
 
 ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
-
-
+CardView with ItemTemplate
+{:.caption}
 
 ## Header Template 
 
@@ -84,50 +74,44 @@ You can also customize header of the CardViewItem using a header template. This 
 
 1. Define a data template for the header as follows.
 
+   ~~~ xaml
 
+	  <DataTemplate x:Key="headerTemplate">
 
-		  <DataTemplate x:Key="headerTemplate">
+				<Grid>
 
-					<Grid>
+					<Border Background="Gray">
 
-						<Border Background="Gray">
+					<TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-						<TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+					</Border>
 
-						</Border>
+				</Grid>
 
-					</Grid>
+	  </DataTemplate>
 
-		  </DataTemplate>
-
-
-
-
+   ~~~
 
 2. Set the HeaderTemplate for the CardViewItem to the above template.
 
+   ~~~ xaml
 
+		<syncfusion:CardView ItemsSource="{Binding Contacts}" 
 
+							 ItemTemplate="{StaticResource contactTemplate}" 
 
+							 HeaderTemplate="{StaticResource headerTemplate}"
 
+							/>
 
-			<syncfusion:CardView ItemsSource="{Binding Contacts}" 
+   ~~~
 
-											 ItemTemplate="{StaticResource contactTemplate}" 
+This generates the following CardView control.
 
-											 HeaderTemplate="{StaticResource headerTemplate}"
-
-											/>
-
-
-
-
-
-   This generates the following CardView control.
-
-   ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
-
-   {:.prettyprint}
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+  
+CardView control with Header Template
+{:.caption}
 
 ## EditItem Template
 
@@ -135,96 +119,79 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 1. Define a data template for the content as follows.
 
+   ~~~ xaml
+
+		<DataTemplate x:Key="contactEditTemplate">
+
+				<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0" ToolTip="{Binding Path=Validation.HasError, ElementName=txt}">
+
+					<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
+
+						<Grid >
+
+							<Grid.ColumnDefinitions>
+
+								<ColumnDefinition Width="75"/>
+
+								<ColumnDefinition />
+
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Name:"/>
+
+							<TextBox Grid.Column="1"   x:Name="txt" HorizontalAlignment="Stretch" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+
+						</Grid>
+
+					</ListBoxItem>
 
 
 
-		   <DataTemplate x:Key="contactEditTemplate">
+					<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-					<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0" ToolTip="{Binding Path=Validation.HasError, ElementName=txt}">
+						<Grid >
 
-						<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
+							<Grid.ColumnDefinitions>
 
-							<Grid >
+								<ColumnDefinition Width="75"/>
 
-								<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
 
-									<ColumnDefinition Width="75"/>
+							</Grid.ColumnDefinitions>
 
-									<ColumnDefinition />
+							<TextBlock Text="Age:"/>
 
-								</Grid.ColumnDefinitions>
+							<TextBox  Grid.Column="1"  Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
 
-								<TextBlock Text="Name:"/>
+						</Grid>
 
-								<TextBox Grid.Column="1"   x:Name="txt" HorizontalAlignment="Stretch" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+					</ListBoxItem>
+					
+				</ListBox>
 
-							</Grid>
+		</DataTemplate>
 
-						</ListBoxItem>
-
-
-
-						<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
-
-							<Grid >
-
-								<Grid.ColumnDefinitions>
-
-									<ColumnDefinition Width="75"/>
-
-									<ColumnDefinition Width="*"/>
-
-								</Grid.ColumnDefinitions>
-
-								<TextBlock Text="Age:"/>
-
-								<TextBox  Grid.Column="1"  Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
-
-							</Grid>
-
-						</ListBoxItem>
-
-
-
-
-
-					</ListBox>
-
-				</DataTemplate>
-
-
-
-
-
+   ~~~
+   
 2. Set EditItemTemplate for the CardView to the above template.
 
+   ~~~ xaml
 
+		<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
-			<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+						 ItemTemplate="{StaticResource contactTemplate}" 
 
-											 ItemTemplate="{StaticResource contactTemplate}" 
+						 EditItemTemplate="{StaticResource contactEditTemplate}"
 
-											 EditItemTemplate="{StaticResource contactEditTemplate}"
+						 HeaderTemplate="{StaticResource headerTemplate}" />
 
-											 HeaderTemplate="{StaticResource headerTemplate}"
+   ~~~
 
-											/>
+Implementing the above codes generate the following CardView control. 
 
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
+CardView with EditItemTempate
+{:.caption}
 
-
-
-
-
-   Implementing the above codes generate the following CardView control. 
-
-
-
-   ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
-
-
-
-   N> You can edit the values in the CardView control by double-clicking the CardViewItem.
-
-   {:.prettyprint}
-
+N> You can edit the values in the CardView control by double-clicking the CardViewItem.

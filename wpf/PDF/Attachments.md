@@ -17,8 +17,6 @@ In order to add attachment to a PDF document, you need to create PdfAttachment o
 
 {% highlight c# %}
 
-
-
 //Creates a new PDF document.
 
 PdfDocument document = new PdfDocument();
@@ -62,12 +60,13 @@ g.DrawString("This document contains attachments. To view the attachment click o
 document.Save("Output.pdf");
 
 document.Close();
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -112,6 +111,7 @@ g.DrawString("This document contains attachments. To view the attachment click o
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
 
@@ -119,9 +119,9 @@ document.Close()
 
 Essential PDF allows you to add attachments to the existing PDF document.
 
+
+
 {% highlight c# %}
-
-
 
 //Loads the PDF document.
 
@@ -155,9 +155,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the PDF document.
 
@@ -190,7 +190,9 @@ document.Attachments.Add(attachment)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
+
 
 ## Delete attachments from PDF LoadedDocument
 
@@ -202,8 +204,6 @@ In order to remove an attachment from an existing PDF document, you need to use 
 
 
 {% highlight c# %}
-
-
 
 //Loads the PDF document.
 
@@ -225,9 +225,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the PDF document.
 
@@ -246,15 +246,17 @@ document.Attachments.RemoveAt(1)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
+
 
 ## Extracting the attachments
 
 In order to get all the attachments from the PDF file, you need to loop through the PdfAttachmentCollection of the Document object. Each element of this collection represents a PdfAttachment object. All iterations in for-each loop through the PdfAttachmentCollection collection will return a PdfAttachment object. Once this object is available, you can retrieve either all the properties of the attached file or the file itself.
 
+
+
 {% highlight c# %}
-
-
 
 //Loads the PDF document.
 
@@ -284,9 +286,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the PDF document.
 

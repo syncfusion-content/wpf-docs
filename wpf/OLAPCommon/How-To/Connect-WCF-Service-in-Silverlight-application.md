@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connect-WCF-Service-in-Silverlight-application
+title: Connect WCF Service in Silverlight application| OLAPCommon | Wpf | Syncfusion
 description: connect wcf service in silverlight application
 platform: wpf
 control: OLAPCommon
@@ -13,6 +13,7 @@ The user can connect the above WCF service using Channel Factory by CustomBindin
 
 The below code snippet demonstrates how to connect the WCF service:
 
+{% tabs %}
 {% highlight c# %}
 
 Binding customBinding = new CustomBinding(new BinaryMessageEncodingBindingElement(), new HttpTransportBindingElement { MaxReceivedMessageSize = 2147483647 });
@@ -52,4 +53,4 @@ Dim _dataProvider As IOlapDataProvider = clientChannel.CreateChannel()
 _olapDataManager.DataProvider = _dataProvider
 
 {% endhighlight  %}
-
+{% endtabs %}

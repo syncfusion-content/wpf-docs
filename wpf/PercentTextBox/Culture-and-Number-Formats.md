@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Culture-and-Number-Formats
+title: Culture and Number Formats| PercentTextBox  | Wpf | Syncfusion
 description: culture and number formats
 platform: wpf
 control: PercentTextBox 
@@ -9,31 +9,42 @@ documentation: ug
 
 # Culture and Number Formats
 
-# Culture
+## Culture
 
 PercentTextBox provides globalization support through the Culture property. 
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="en-US" PercentValue="1234567"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("en-US");{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                       
+   Culture="en-US" PercentValue="1234567"/>
+   {% endhighlight %}
+
+
+{% highlight C# %}
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;percentTextBox.Height = 25;
+percentTextBox.PercentValue = 1234567;
+percentTextBox.Culture = new CultureInfo("en-US");
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"    
+                      Culture="bs-Latn" PercentValue="1234567"/>
+					  {% endhighlight %}
+			
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="bs-Latn" PercentValue="1234567"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("bs-Latn");{% endhighlight %}</td></tr>
-</table>
+{% highlight C# %}
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;percentTextBox.Height = 25;
+percentTextBox.PercentValue = 1234567;
+percentTextBox.Culture = new CultureInfo("bs-Latn");
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
@@ -41,44 +52,59 @@ PercentTextBox provides globalization support through the Culture property.
 
 As you have seen in these samples whenever you change the Culture property the PercentValue is formatted based on the Culture.
 
-# Number Format
+## Number Format
 
 You can customize the Number Format either by using the Number Format property or the PercentGroupSeparator, PercentGroupSizes, PercentDecimalDigits, PercentDecimalSeparator, PercentNegativePattern, PercentPositivePattern, and PercentageSymbol properties.
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"             PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>        <numberformat:NumberFormatInfo PercentGroupSeparator="/"        PercentDecimalDigits="4" PercentDecimalSeparator="*"         PercentSymbol="%"/>    </syncfusion:PercentTextBox.NumberFormat></syncfusion:PercentTextBox>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"    
+         PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>   
+		 <numberformat:NumberFormatInfo PercentGroupSeparator="/"    
+		 PercentDecimalDigits="4" PercentDecimalSeparator="*"      
+		 PercentSymbol="%"/>    
+		 </syncfusion:PercentTextBox.NumberFormat>
+{% endhighlight %}
+{% highlight C# %}
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;percentTextBox.Height = 25;p
+ercentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};
+{% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"   
+ PercentValue="1234567"          
+ PercentageSymbol="%" PercentDecimalDigits="4"   
+ PercentDecimalSeparator="*" PercentGroupSeparator="/"/>
+						 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="1234567"                            PercentageSymbol="%" PercentDecimalDigits="4"                           PercentDecimalSeparator="*" PercentGroupSeparator="/"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.PercentageSymbol = "%";percentTextBox.PercentDecimalDigits = 4;percentTextBox.PercentDecimalSeparator = "/";percentTextBox.PercentGroupSeparator = "*";{% endhighlight %}</td></tr>
-</table>
+{% highlight C# %}
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;
+percentTextBox.Height = 25;
+percentTextBox.PercentValue = 1234567;percentTextBox.PercentageSymbol = "%";
+percentTextBox.PercentDecimalDigits = 4;percentTextBox.PercentDecimalSeparator = "/";
+percentTextBox.PercentGroupSeparator = "*";
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
 
 
-# PercentPositivePattern
+## PercentPositivePattern
 
 Gets or sets the format pattern for the positive percent values. In the table displayed below “%” denotes the Percent symbol and n denotes the number.
 
-PercentPositivePattern table
+
 
 <table>
 <tr>
 <th>
-{{ '**Value**' | markdownify }}</th><th>
-{{ '**Associated Pattern**' | markdownify }}</th></tr>
+Value</th><th>
+Associated Pattern</th></tr>
 <tr>
 <td>
 0</td><td>
@@ -120,13 +146,13 @@ n%</td></tr>
 
 Gets or sets the format pattern for the negative percent values. In the table displayed below “%” denotes the Percent symbol and n denotes the number.
 
-PercentNegativePattern table
+
 
 <table>
 <tr>
 <th>
-{{ '**Value**' | markdownify }}</th><th>
-{{ '**Associated Pattern**' | markdownify }}</th></tr>
+Value</th><th>
+Associated Pattern</th></tr>
 <tr>
 <td>
 0</td><td>

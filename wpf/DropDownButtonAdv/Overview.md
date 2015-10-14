@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Overview
+# DropDownButtonAdv
 
 The DropDownButtonAdv acts as a normal menu control. The content will be displayed in the DropDown Popup when the button is clicked.
 

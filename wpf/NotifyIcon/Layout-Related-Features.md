@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Related-Features
+title: Layout Related Features| NotifyIcon | Wpf | Syncfusion
 description: layout related features
 platform: wpf
 control: NotifyIcon
@@ -15,13 +15,13 @@ This section illustrates the following Layout-related feature of NotifyIcon cont
 
 NotifyIcon supports different visual styles to enhance its look and feel. The visual style for the NotifyIcon is set by using the VisualStyle property.
 
-_Property table_
+### Property table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -31,7 +31,7 @@ Sets the visual style for the NotifyIcon control. The options provided are as fo
 
 The below code can be used to set various visual style.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -52,60 +52,66 @@ SkinStorage.VisualStyle(notifyIcon, Blend");
 
 SkinStorage.VisualStyle(notifyIcon, "Office2007Silver");
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
 
 
-_NotifyIcon with "Office2007Blue" Visual Style_
+NotifyIcon with "Office2007Blue" Visual Style
+{:.caption}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 
 
-_NotifyIcon with "Blend" Visual Style_
+NotifyIcon with "Blend" Visual Style
+{:.caption}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
 
 
-_NotifyIcon with "Office2007Silver" Visual Style_
+NotifyIcon with "Office2007Silver" Visual Style
+{:.caption}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img4.png)
 
 
 
-_NotifyIcon with "Metro" Visual Style_
+NotifyIcon with "Metro" Visual Style
+{:.caption}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img5.png)
 
 
 
-_NotifyIcon with "Transparent" Visual Style_
+NotifyIcon with "Transparent" Visual Style
+{:.caption}
 
 ## Customizing the Header of the NotifyIcon
 
 You can set the background and foreground for the BalloonTipHeader by using the HeaderBackground and HeaderForeground properties, respectively. Use the code below to set these properties.
 
-
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" 
 ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)
 
 
 
-_HeaderForeground = "Red"; HeaderBackground = "Blue"_
+HeaderForeground = "Red"; HeaderBackground = "Blue"
+{:.caption}
 

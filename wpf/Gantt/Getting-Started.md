@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| Gantt | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Gantt
@@ -266,4 +266,4 @@ The following are the steps to create Gantt control through designer.
 
 
 5. Now you can customize the properties of Gantt control in the Properties Window.
-   {:.prettyprint}
+   

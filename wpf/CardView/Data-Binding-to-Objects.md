@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding-to-Objects
+title: Data Binding to Objects | CardView | wpf | Syncfusion
 description: data-binding to objects
 platform: wpf
 control: CardView
@@ -13,227 +13,220 @@ The CardView control can also support data-binding to objects. The following exa
 
 1. Create a class that act as a model for CardViewItem as follows.
 
+   ~~~ csharp
 
+		public class Contact : IDataErrorInfo
 
-		   public class Contact : IDataErrorInfo
+		{
+
+			[Required]
+
+			public string Name
 
 			{
 
-				[Required]
+				get;
 
-				public string Name
-
-				{
-
-					get;
-
-					set;            
-
-				}
-
-
-
-				[Range(1, 100)]
-
-				public int Age
-
-				{
-
-					get;
-
-					set;            
-
-				}        
-
-
-
-				#region IDataErrorInfo Members
-
-
-
-				public string Error
-
-				{
-
-					get { return this[String.Empty]; }
-
-				}
-
-
-
-				public string this[string columnName]
-
-				{
-
-					get 
-
-					{
-
-						string result = String.Empty;
-
-						if (columnName == "Name")
-
-						{
-
-							if (string.IsNullOrEmpty(this.Name))
-
-							{
-
-								result = "Name is mandatory";
-
-							}
-
-						}
-
-
-
-						if (columnName == "Age")
-
-						{
-
-							if (this.Age < 1 || this.Age > 100)
-
-							{
-
-								result = "Invalid Age";
-
-							}
-
-						}
-
-						return result;
-
-					}
-
-				}
-
-
-
-				#endregion
+				set;            
 
 			}
 
 
 
+			[Range(1, 100)]
 
-2. Create a ViewModel class and initialize the items as follows.
+			public int Age
+
+			{
+
+				get;
+
+				set;            
+
+			}        
 
 
 
-			   public class ViewModel
+			#region IDataErrorInfo Members
+
+
+
+			public string Error
+
+			{
+
+				get { return this[String.Empty]; }
+
+			}
+
+
+
+			public string this[string columnName]
+
+			{
+
+				get 
 
 				{
 
-					public ObservableCollection<Contact> Contacts { get; set; }
+					string result = String.Empty;
 
-					public ViewModel()
+					if (columnName == "Name")
 
 					{
 
-						Contacts = new ObservableCollection<Contact>();
+						if (string.IsNullOrEmpty(this.Name))
 
-						PopulateData();
+						{
+
+							result = "Name is mandatory";
+
+						}
+
+					}
+
+
+
+					if (columnName == "Age")
+
+					{
+
+						if (this.Age < 1 || this.Age > 100)
+
+						{
+
+							result = "Invalid Age";
+
+						}
 
 					}
 
-					private void PopulateData()
-
-					{            
-
-						Contacts.Add(new Contact() { Name = "John", Age = 26});
-
-						Contacts.Add(new Contact() { Name = "Mark",  Age = 25 });
-
-						Contacts.Add(new Contact() { Name = "Steven", Age = 26});
-
-
-
-					}
+					return result;
 
 				}
 
+			}
 
 
 
+			#endregion
+
+		}
+
+   ~~~
+
+2. Create a ViewModel class and initialize the items as follows.
+
+   ~~~ csharp
+
+		public class ViewModel
+
+		{
+
+			public ObservableCollection<Contact> Contacts { get; set; }
+
+			public ViewModel()
+
+			{
+
+				Contacts = new ObservableCollection<Contact>();
+
+				PopulateData();
+
+			}
+
+			private void PopulateData()
+
+			{            
+
+				Contacts.Add(new Contact() { Name = "John", Age = 26});
+
+				Contacts.Add(new Contact() { Name = "Mark",  Age = 25 });
+
+				Contacts.Add(new Contact() { Name = "Steven", Age = 26});
+
+
+
+			}
+
+		}
+
+
+   ~~~
 
 3. Create a ViewModel instance and use it as DataContext for the root window.
 
+   ~~~ xaml
 
+		<Window.DataContext>
 
-			<Window.DataContext>
+		   <local:ViewModel/>
 
-			   <local:ViewModel/>
+		</Window.DataContext>
 
-			</Window.DataContext>
-
-
-
-
-
-
+   ~~~
 
 4. Configure the ItemTemplate and HeaderTemplate for the CardView control.
 
+   ~~~ csharp
+
+		<syncfusion:CardView ItemsSource="{Binding Contacts}" >
+
+			<syncfusion:CardView.ItemTemplate>
+
+					<DataTemplate >
+
+						<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+							<ListBoxItem>
+
+								<StackPanel Orientation="Horizontal">
+
+									<TextBlock Text="Name:"/>
+
+									<TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
+
+								</StackPanel>
+
+							</ListBoxItem>
 
 
-				  <syncfusion:CardView ItemsSource="{Binding Contacts}" >
 
-					  <syncfusion:CardView.ItemTemplate>
+							<ListBoxItem>
 
-								<DataTemplate >
+								<StackPanel Orientation="Horizontal">
 
-									<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+									<TextBlock Text="Age    :"/>
 
-										<ListBoxItem>
+									<TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
 
-											<StackPanel Orientation="Horizontal">
+								</StackPanel>
 
-												<TextBlock Text="Name:"/>
+							</ListBoxItem>
 
-												<TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
+						</ListBox>
 
-											</StackPanel>
+					</DataTemplate>
 
-										</ListBoxItem>
+				</syncfusion:CardView.ItemTemplate>
 
+				 <syncfusion:CardView.HeaderTemplate>
 
+						   <DataTemplate>
 
-										<ListBoxItem>
+								<TextBlock Text="{Binding Name}"/>
 
-											<StackPanel Orientation="Horizontal">
+						   </DataTemplate>
 
-												<TextBlock Text="Age    :"/>
+				 </syncfusion:CardView.HeaderTemplate>
 
-												<TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
+		</syncfusion:CardView>
 
-											</StackPanel>
+   ~~~
 
-										</ListBoxItem>
+This creates the following CardView control.
 
-									</ListBox>
+![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)
 
-								</DataTemplate>
-
-							</syncfusion:CardView.ItemTemplate>
-
-							 <syncfusion:CardView.HeaderTemplate>
-
-									   <DataTemplate>
-
-											<TextBlock Text="{Binding Name}"/>
-
-									   </DataTemplate>
-
-							 </syncfusion:CardView.HeaderTemplate>
-
-				   </syncfusion:CardView>
-
-
-   {:.prettyprint}
-
-   This creates the following CardView control.
-
-   ![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)
-
-   _CardView with object binding_
-
+CardView with object binding
+{:.caption}

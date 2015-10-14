@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization| DocumentContainer | Wpf | Syncfusion
 description: localization
 platform: wpf
 control: DocumentContainer

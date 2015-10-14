@@ -21,9 +21,9 @@ Essential PDF provides you support to stamp over newly created document as well 
 
 ### Adding Text Stamp in the PDF document
 
+
+
 {% highlight c# %}
-
-
 
 //Loads the document.
 
@@ -49,9 +49,9 @@ lDoc.Save("Stamp.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the document.
 
@@ -74,13 +74,13 @@ g.DrawString("Imported using Essential PDF", Font, PdfPens.Red, PdfBrushes.Red, 
 'Saves the new document.
 
 lDoc.Save("Stamp.pdf")
+
 {% endhighlight %}
 
 ### Adding Image Stamp in the PDF document
 
+
 {% highlight c# %}
-
-
 
 //Loads the document.
 
@@ -106,9 +106,9 @@ lDoc.Save("Stamp.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the document.
 
@@ -131,15 +131,17 @@ g.DrawImage(image, New PointF(0, 0), lPage.Graphics.ClientSize)
 'Saves the new document.
 
 lDoc.Save("Stamp.pdf")
+
 {% endhighlight %}
+
 
 ## Overlay Documents
 
 Overlay documents support for importing pages from existing PDF documents as templates. This feature can be used to overlap two PDF pages one above the other.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new document.
 
@@ -171,9 +173,9 @@ doc.Save("NewPDF.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new document.
 
@@ -202,7 +204,9 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize())
 'Saves the new document.
 
 doc.Save("NewPDF.pdf")
+
 {% endhighlight %}
+
 
 ## Transform PDF
 
@@ -237,12 +241,13 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize());
 //Saves the new document.
 
 doc.Save("NewPDF.pdf");
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new document.
 
@@ -273,9 +278,11 @@ g.DrawPdfTemplate(template, PointF.Empty, page.GetClientSize())
 doc.Save("NewPDF.pdf")
 
 {% endhighlight %}
+
+
 N> This template can be scaled, rotated, placed at different coordinates, and so on.
 
-Restrictions 
+#### Restrictions 
 
 This above process can also convert annotations, but with some limitations as follows.
 

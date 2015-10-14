@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MinimizedItemTemplate-and-MaximizedItemTemplate
+title: MinimizedItemTemplate-and-MaximizedItemTemplate | TileView | wpf | Syncfusion
 description: minimizeditemtemplate and maximizeditemtemplate
 platform: wpf
 control: TileView Control
@@ -122,16 +122,14 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
 ## Properties
 
-_MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
-
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MinimizedItemTemplate </td><td>

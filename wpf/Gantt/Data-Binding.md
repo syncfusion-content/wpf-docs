@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding| Gantt | Wpf | Syncfusion
 description: data binding
 platform: wpf
 control: Gantt
@@ -21,6 +21,7 @@ Binding TaskDetials collection to Gantt Control
 
 The following code illustrates how to bind the Task Detials to the Gantt Control:
 
+{% tabs %}
 {% highlight html %}
 
 
@@ -32,14 +33,11 @@ The following code illustrates how to bind the Task Detials to the Gantt Control
 
 
 
- //Initializing Gantt
- GanttControl Gantt = new GanttControl();
+//Initializing Gantt
+GanttControl Gantt = new GanttControl();
 
  ViewModel model=  new ViewModel();
  Gantt.ItemsSource = model.GanttItemSource;
-
-{% endhighlight  %}
-{% highlight c# %}
 
 
 
@@ -52,56 +50,57 @@ ObservableCollection<TaskDetails> GetDataSourceStartToStart()
 ObservableCollection<TaskDetails> task = ObservableCollection<TaskDetails>();
 task.Add(new TaskDetails { TaskId = 1, 
 
-                           TaskName = "Scope", 
+TaskName = "Scope", 
 
-                           StartDate = new DateTime(2011, 1, 3), 
+StartDate = new DateTime(2011, 1, 3), 
 
-                           FinishDate = new DateTime(2011, 1, 14),  
+FinishDate = new DateTime(2011, 1, 14),  
 
-                           Progress = 40d });
+Progress = 40d });
 task[0].Child.Add(new TaskDetails { TaskId = 2, 
 
-                    TaskName = "Determine project office scope", 
+TaskName = "Determine project office scope", 
 
-                    StartDate = new DateTime(2011, 1, 3), 
+StartDate = new DateTime(2011, 1, 3), 
 
-                    FinishDate = new DateTime(2011, 1, 5), 
+FinishDate = new DateTime(2011, 1, 5), 
 
-                    Progress = 20d });
+Progress = 20d });
 task[0].Child.Add(new TaskDetails { TaskId = 3, 
 
-                   TaskName = "Justify Project Offfice via business model", 
+TaskName = "Justify Project Offfice via business model", 
 
-                    StartDate = new DateTime(2011, 1, 6), 
+StartDate = new DateTime(2011, 1, 6), 
 
-                    FinishDate = new DateTime(2011, 1, 7), 
+FinishDate = new DateTime(2011, 1, 7), 
 
-                    Progress = 20d });
+Progress = 20d });
 task[0].Child.Add(new TaskDetails { TaskId = 4, 
 
-                    TaskName = "Secure executive sponsorship", 
+TaskName = "Secure executive sponsorship", 
 
-                    StartDate = new DateTime(2011, 1, 10), 
+StartDate = new DateTime(2011, 1, 10), 
 
-                    FinishDate = new DateTime(2011, 1, 14), 
+FinishDate = new DateTime(2011, 1, 14), 
 
-                    Progress = 20d });
+ Progress = 20d });
 
 task[0].Child.Add(new TaskDetails { TaskId = 5, 
 
-                    TaskName = "Secure complete", 
+TaskName = "Secure complete", 
 
-                    StartDate = new DateTime(2011, 1, 14), 
+StartDate = new DateTime(2011, 1, 14), 
 
-                    FinishDate = new DateTime(2011, 1, 14), 
+FinishDate = new DateTime(2011, 1, 14), 
 
-                    Progress = 20d });
+Progress = 20d });
 
 return task;
 
 }
 
 {% endhighlight  %}
+{% endtabs %}
 
 The following image shows the BindingTask Details:
 
@@ -128,12 +127,20 @@ To view samples:
 Essential Gantt for WPF allow you to bind any type of IEnumerable source to Gantt.You can bind any collection to Gantt using the TaskAttributeMapping class. This will get the mapping name of the requied fields from the underlying source. With this mapping the Gantt will get the required information to render the Chart nodes.
 
 The following code illustrate how to map the properties using the TaskAttributeMapping class:
-
+{% tabs %}
 {% highlight html %}
 
 
- <gantt:TaskAttributeMapping TaskIdMapping="Id"                     TaskNameMapping="Name"                     StartDateMapping="StartDate"                      ChildMapping="ChildTask"                     FinishDateMapping="EndDate"                     DurationMapping="Duration"                     ResourceInfoMapping="Resource"                     ProgressMapping="Complete"                     PredecessorMapping="Predecessor">
- </gantt:TaskAttributeMapping>
+<gantt:TaskAttributeMapping TaskIdMapping="Id"                 
+  TaskNameMapping="Name"                  
+   StartDateMapping="StartDate"               
+      ChildMapping="ChildTask"                
+     FinishDateMapping="EndDate"               
+     DurationMapping="Duration"                 
+   ResourceInfoMapping="Resource"                 
+   ProgressMapping="Complete"               
+    PredecessorMapping="Predecessor">
+</gantt:TaskAttributeMapping>
 
 {% endhighlight  %}
 {% highlight c# %}
@@ -151,16 +158,24 @@ The following code illustrate how to map the properties using the TaskAttributeM
   attributes.ProgressMapping = "Predecessor";
 
 {% endhighlight  %}
+{% endtabs %}
 
 The following code illustrates how to bind the external source to Gantt control:
 
-
+{% tabs %}
 {% highlight html %}
 
 
 <Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding GanttItemSource}">
       <Sync:GanttControl.TaskMapping>
-           <Sync:TaskCollectionMapping TaskIdMapping="Id"                                       TaskNameMapping="Name"                                       StartDateMapping="SDate"                                       FinishDateMapping="EDate"                                       ResourceNameMapping="ResName"                                       ChildMapping="ChildTask"                                       PredecessorMapping="Predecessor"                                       ProgressMapping="Complete" />
+           <Sync:TaskCollectionMapping TaskIdMapping="Id"  
+                                     TaskNameMapping="Name"
+                                      StartDateMapping="SDate"
+                                      FinishDateMapping="EDate"
+                                      ResourceNameMapping="ResName"
+                                       ChildMapping="ChildTask"
+                                     PredecessorMapping="Predecessor"
+                                      ProgressMapping="Complete" />
             </Sync:GanttControl.TaskMapping>
 </Sync:GanttControl>
 
@@ -188,8 +203,6 @@ The following code illustrates how to bind the external source to Gantt control:
 
  Gantt.ItemsSource = model.GanttItemSource;
 
-{% endhighlight  %}
-{% highlight c# %}
 
 
 
@@ -204,56 +217,57 @@ ObservableCollection<Task> task = ObservableCollection<Task>();
 
 task.Add(new Task { Id = 1, 
 
-                    Name = "Scope", 
+Name = "Scope", 
 
-                    StartDate = new DateTime(2011, 1, 3), 
+StartDate = new DateTime(2011, 1, 3), 
 
-                    EndDate = new DateTime(2011, 1, 14),
+EndDate = new DateTime(2011, 1, 14),
 
-                    Progress = 40d });
+Progress = 40d });
 task[0].ChildTask.Add(new Task { Id = 2, 
 
-                    Name = "Determine project office scope", 
+Name = "Determine project office scope", 
 
-                    StartDate = new DateTime(2011, 1, 3), 
+StartDate = new DateTime(2011, 1, 3), 
 
-                    EndDate = new DateTime(2011, 1, 5), 
+EndDate = new DateTime(2011, 1, 5), 
 
-                    Progress = 20d });
+Progress = 20d });
 task[0].ChildTask.Add(new Task { Id = 3, 
 
-                    Name = "Justify Project Offfice via business model", 
+Name = "Justify Project Offfice via business model", 
 
-                    StartDate = new DateTime(2011, 1, 6), 
+StartDate = new DateTime(2011, 1, 6), 
 
-                    EndDate = new DateTime(2011, 1, 7), 
+EndDate = new DateTime(2011, 1, 7), 
 
-                    Progress = 20d });
+Progress = 20d });
 task[0].ChildTask.Add(new Task { Id = 4, 
 
-                    Name = "Secure executive sponsorship", 
+Name = "Secure executive sponsorship", 
 
-                    StartDate = new DateTime(2011, 1, 10), 
+StartDate = new DateTime(2011, 1, 10), 
 
-                    EndDate = new DateTime(2011, 1, 14), 
+EndDate = new DateTime(2011, 1, 14), 
 
-                    Progress = 20d });
+ Progress = 20d });
 
 task[0].ChildTask.Add(new Task { Id = 5, 
 
-                    Name = "Secure complete", 
+Name = "Secure complete", 
 
-                    StartDate = new DateTime(2011, 1, 14), 
+StartDate = new DateTime(2011, 1, 14), 
 
-                    EndDate = new DateTime(2011, 1, 14), 
+EndDate = new DateTime(2011, 1, 14), 
 
-                    Progress = 20d });
+Progress = 20d });
 
 return task;
 
 }
 
 {% endhighlight  %}
+{% endtabs %}
 
 The following image shows the External Property Binding:
 

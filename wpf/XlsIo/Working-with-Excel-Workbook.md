@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working-with-Excel-Workbook
+title: Working with Excel Workbook | XlsIO | WPF | Syncfusion
 description: working with excel workbook 
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -14,10 +14,12 @@ Essential XlsIO supports working with workbook similar to MS Excel. The followin
 ## Create a new Workbook
 
 To create a new workbook, use the Create method in workbooks collection. The following procedure creates a new workbook. A better way to create a workbook is to assign it to an object variable. In the following code example, the Workbook object returned by the create method is assigned to an object variable, workbook. 
+
+
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -67,7 +69,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();
+
+
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -117,15 +122,21 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Clone a Workbook
 
 The following procedure is used to clone a workbook. The Clone method returns a workbook that can be used for other processes without affecting the existing workbook.
+
+
+
+
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -166,7 +177,9 @@ clonedWorkbook.Close();
 
 excelEngine.Dispose();
 
+
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -213,6 +226,8 @@ clonedWorkbook.Close()
 
 excelEngine.Dispose()
 {% endhighlight %}
+{% endtabs %}
+
 
 ## Protect Workbook
 
@@ -234,10 +249,14 @@ MS Excel provides the creator of a workbook the ability to protect the Structure
 
 
 Protect method of IWorkbook interface provides options to protect and unprotect documents with password in XlsIO. You can also set/reset the Window and Structure option in this method. The following code example illustrates how to protect a workbook with a password.
+
+
+
+
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -291,7 +310,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -347,6 +368,7 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 The following illustration shows a protected document where no sheets can be added/removed to or from the document.
 
@@ -363,11 +385,14 @@ You can unprotect or remove protection for a document by entering the password i
 ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img4.png)
 
 
-
 XlsIO also provides support to unprotect a workbook with password by using the UnProtect method.
+
+
+
+
+{% tabs %}
+
 {% highlight C# %}
-
-
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -418,7 +443,9 @@ workbook.Close();
 
 excelEngine.Dispose();
 
+
 {% endhighlight %}
+
 
 {% highlight vbnet %}
 
@@ -466,4 +493,5 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 

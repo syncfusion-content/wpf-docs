@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events | GridControl | wpf | Syncfusion
 description: events
 platform: wpf
 control: Grid Control
@@ -17,7 +17,7 @@ Let us look on each event and its event handler in detail in the following topic
 
 These events are widely used to allow customization of each and every cell in the required format. QueryCellInfo accepts an argument of type GridQueryCellInfoEventArgs and CommitCellInfo accepts an argument of type GridCommitCellInfoEventArgs. The table below lists the customization properties exposed by these two event arguments.
 
-_Properties_
+
 
 <table>
 <tr>
@@ -146,9 +146,12 @@ The following output is generated using the code above.
 
 
 
-_QueryCellInfo and CommitCellInfo_
+QueryCellInfo and CommitCellInfo
+{:.caption}
 
 ## QueryBaseStyles
+
+
 {% highlight c# %}
 
 
@@ -190,7 +193,7 @@ void grid_QueryBaseStyles(object sender, GridQueryBaseStylesEventArgs e)
 
 This event is used to provide base styles for desired grid cells. It receives an argument of type GridQueryBaseStylesEventArgs that contains the following parameters.
 
-_Properties_
+
 
 <table>
 <tr>
@@ -236,13 +239,13 @@ The following output is generated using the code above.
 
 
 
-_QueryBaseStyles_
+QueryBaseStyles
+{:.caption}
 
 ## QueryCoveredRange
 
 This event is used to define covered ranges in the required cells. It receives an argument of type GridQueryCoveredRangeEventArgs containing the following information about the event.
 
-_Property_
 
 <table>
 <tr>
@@ -316,13 +319,14 @@ The following output is generated using the code above.
 
 
 
-_QueryCoveredRange_
+QueryCoveredRange
+{:.caption}
 
 ## QueryCellSpanBackgrounds
 
 This event lets you create cell spans and customize their backgrounds. It receives an argument of type GridQueryCellSpanBackgroundsEventArgs containing the following properties.
 
-_Property_
+
 
 <table>
 <tr>
@@ -394,7 +398,8 @@ The following output is generated using the code above.
 
 
 
-_QueryCellSpanBackgrounds_
+QueryCellSpanBackgrounds
+{:.caption}
 
 ## ResizingRows and ResizingColumns
 
@@ -402,7 +407,6 @@ These events are used to control over resizing of specific rows or columns. They
 
 Properties of GridResizingRowsEventArgs
 
-_Property_
 
 <table>
 <tr>
@@ -434,7 +438,7 @@ Indicates the point at which the mouse hits the row before resizing.</td></tr>
 
 Properties of GridResizingColumnsEventArgs
 
-_Property_
+
 
 <table>
 <tr>
@@ -519,7 +523,6 @@ args.AllowResize = false;
 
 The following table provides information on the properties of the event:
 
-_Property_
 
 <table>
 <tr>
@@ -552,7 +555,7 @@ Indicates the point at which the mouse hits the row before resizing.</td></tr>
 
 The following table provides information on the properties of the event:
 
-_Property_
+
 
 <table>
 <tr>
@@ -637,7 +640,6 @@ void grid_ResizingColumns(object sender, GridResizingColumnsEventArgs args)
 
 These events are triggered when one or more rows or columns are inserted. The event handler receives an argument of type GridRangeInsertedEventArgs containing data related to this event. The following GridRangeInsertedEventArgs properties provide information specific to these events.
 
-_Property_
 
 <table>
 <tr>
@@ -703,7 +705,6 @@ void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
 
 These events are raised when a range of rows or columns are moved from one position to another. Their event handlers receive an argument of type GridRangeMovedEventArgs containing data related to these events. Following are the event argument properties information about the rows or columns migration.
 
-_Property_
 
 <table>
 <tr>
@@ -769,11 +770,12 @@ void Model_ColumnsMoved(object sender, GridRangeMovedEventArgs e)
 
 
 {% endhighlight  %}
+
+
 ## RowsRemoved and ColumnsRemoved
 
 These events are triggered when a range of rows or columns are removed from the grid. Their event handlers receive an argument of type GridRangeRemovedEventArgs containing data related to these events. Following are the event argument properties that provides information about the rows or columns removal.
 
-_Property_
 
 <table>
 <tr>
@@ -846,7 +848,7 @@ This event is triggered when some grid data is about to be copied to the clipboa
 
 It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-_Property_
+
 
 <table>
 <tr>
@@ -911,7 +913,7 @@ void Model_ClipboardCanCopy(object sender, GridCutPasteEventArgs e)
 
 This event is triggered when some grid data is about to be moved to the clipboard. Inside this event handler, you can check for the data and range of cells going to be moved and cancel the operation if you do not want to move the data. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-_Property_
+
 
 <table>
 <tr>
@@ -976,7 +978,7 @@ void Model_ClipboardCanCut(object sender, GridCutPasteEventArgs e)
 
 This event gets fired when some grid data is about to be pasted from the clipboard. Inside this event handler, you can check for the data and range of cells going to be pasted and cancel the operation if you don’t want to paste the data. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-_Property_
+
 
 <table>
 <tr>
@@ -1042,7 +1044,7 @@ void Model_ClipboardCanPaste(object sender, GridCutPasteEventArgs e)
 
 This event gets fired when some grid data is being copied to the clipboard. Inside this event handler, you can check for the data and range of cells being copied and cancel the operation if you don’t want to copy the data. You can also provide custom formatted data for copying to clipboard. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-_Property_
+
 
 <table>
 <tr>
@@ -1111,7 +1113,6 @@ void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
 This event gets fired when some grid data is being moved to the clipboard. Inside this event handler, you can check for the data and range of cells being moved and cancel the operation if you don’t want to move the data. You can also provide custom formatted data for moving to clipboard. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-_Property_
 
 <table>
 <tr>
@@ -1180,7 +1181,7 @@ void Model_ClipboardCut(object sender, GridCutPasteEventArgs e)
 
 This event gets fired when some grid data is being pasted from the clipboard. Inside this event handler, you can check for the data and range of cells being pasted and cancel the operation if you don’t want to paste the data. You can also provide custom formatted data for saving into grid cells. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-_Property_
+
 
 <table>
 <tr>
@@ -1293,7 +1294,8 @@ The following output is generated using the code above.
 
 
 
-_CellButtonClick_
+CellButtonClick
+{:.caption}
 
 ## CellClick
 
@@ -1304,9 +1306,6 @@ This event is triggered when a cell is clicked. It receives an argument of type 
 This event can be triggered using the following code:
 
 {% highlight c# %}
-
-
-
 
 
 grid.CellClick += new GridCellClickEventHandler(grid_CellClick);
@@ -1342,7 +1341,8 @@ The following output is generated using the code above.
 
 
 
-_CellClick_
+CellClick
+{:.caption}
 
 ## Cell Mouse Events
 
@@ -1436,7 +1436,8 @@ The following outputs are generated using the code above.
 
 
 
-_MouseUp_
+MouseUp
+{:.caption}
 
 
 
@@ -1444,7 +1445,8 @@ _MouseUp_
 
 
 
-_MouseMove_
+MouseMove
+{:.caption}
 
 
 
@@ -1452,7 +1454,8 @@ _MouseMove_
 
 
 
-_MouseHover_
+MouseHover
+{:.caption}
 
 
 
@@ -1460,7 +1463,8 @@ _MouseHover_
 
 
 
-_MouseDown_
+MouseDown
+{:.caption}
 
 ## CurrentCellActivating
 

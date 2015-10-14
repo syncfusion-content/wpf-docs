@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| SfChart | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Overview
+# SfChart
 
 SfChart provides a perfect way to visualize data with a high level of user interactivity that focus on development productivity and simplicity of use. SfChart provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
@@ -15,7 +15,7 @@ SfChart provides a perfect way to visualize data with a high level of user inter
 
 
 
-##Key features of SfChart
+## Key features of SfChart
 
 * SfChart supports 38 different types of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
 * Capable of rendering large amount of data within the few milliseconds (ms). It is one of the fastest charts in the market.
@@ -41,7 +41,7 @@ FAQ- This section contains commonly asked questions related to SfChart.
 
 The following conventions are used in the following user guide to help you identify key points and features.
 
-Conventions
+### Conventions
 
 <table>
 <tr>

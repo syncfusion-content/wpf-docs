@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KeyTip-for-Collapsed-Ribbon-bars
+title: KeyTip for Collapsed Ribbon bars | Ribbon | WPF | Syncfusion
 description: keytip for collapsed ribbon bars
 platform: wpf
 control: Ribbon

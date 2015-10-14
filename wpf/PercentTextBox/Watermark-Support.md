@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark-Support
+title: Watermark Support| PercentTextBox  | Wpf | Syncfusion
 description: watermark support
 platform: wpf
 control: PercentTextBox 
@@ -42,31 +42,31 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
    
 
-    <syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
 
-            WatermarkText="Type Here" CornerRadius="3" 
+WatermarkText="Type Here" CornerRadius="3" 
 
-            WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
+WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
 
-            UseNullOption="True">
+UseNullOption="True">
 
-    <syncfusion:PercentTextBox.WatermarkTemplate>
+<syncfusion:PercentTextBox.WatermarkTemplate>
 
-        <DataTemplate>
+<DataTemplate>
 
-            <Border Background="LightGray">
+<Border Background="LightGray">
 
-                <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+<TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
 
-            </Border>
+</Border>
 
-        </DataTemplate>
+</DataTemplate>
 
-    </syncfusion:PercentTextBox.WatermarkTemplate>
+</syncfusion:PercentTextBox.WatermarkTemplate>
 
 </syncfusion:PercentTextBox>
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 

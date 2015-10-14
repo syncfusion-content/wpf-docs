@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| GroupBar | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: GroupBar
@@ -73,7 +73,7 @@ The following steps describe how to create the GroupBar control via Visual Studi
    ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-   {:.prettyprint}
+   
 
 
 Using the Collection Editor, add the GroupBarItems and configure their properties.The GroupBar control can also be created and configured using Microsoft Expression Blend. Follow these steps to do so. 
@@ -119,7 +119,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 6. Figure 8: Collection Editor for GroupBar in Expression BlendGroupBarItem using the properties in the Collection Editor.
 
-   {:.prettyprint}
+
 
 You can also customize the appearance of the GroupBar control and its items by using the template-editing feature available in Expression Blend.
 
@@ -128,10 +128,22 @@ You can also customize the appearance of the GroupBar control and its items by u
 To create the GroupBar control through code, use the following XAML or C# code.
 
 
+{% tabs %}
+{% highlight xml %}
+<!-- Adding GroupBar -->
+<syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> 
+{% endhighlight %} 
 
-{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> {% endhighlight %} 
-
-{% highlight C# %}//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar; {% endhighlight %} 
+{% highlight C# %}
+//Creating an instance of GroupBar
+GroupBar groupBar = new GroupBar();
+//Setting height for GroupBargroupBar.Height = 300;
+//Setting width for GroupBar
+groupBar.Width = 200;
+//Adding GroupBar to window
+this.Content = groupBar;
+ {% endhighlight %} 
+{% endtabs %}
 
 ### Itemssource Support/GroupBar Control
 
@@ -163,23 +175,23 @@ Add items to the ObservableCollection, by using the following code.
 
 private void Window1_Loaded(object sender, RoutedEventArgs e)
 
-        {
+{
 
-            SampleList = new ObservableCollection<RegionStatistics>();
+SampleList = new ObservableCollection<RegionStatistics>();
 
-            SampleList.Add(new RegionStatistics() { Name = "Mexico", Population = "107,449,525", Location="North America" });
+SampleList.Add(new RegionStatistics() { Name = "Mexico", Population = "107,449,525", Location="North America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "Canada", Population = "33,098,932", Location = "North America" });
+SampleList.Add(new RegionStatistics() { Name = "Canada", Population = "33,098,932", Location = "North America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "United States", Population = "304,228,357", Location = "North America" });
+SampleList.Add(new RegionStatistics() { Name = "United States", Population = "304,228,357", Location = "North America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "Costa Rica", Population = "04,075,261", Location = "Central America" });
+SampleList.Add(new RegionStatistics() { Name = "Costa Rica", Population = "04,075,261", Location = "Central America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "Brazil", Population = "188,078,287", Location = "South America" });
+SampleList.Add(new RegionStatistics() { Name = "Brazil", Population = "188,078,287", Location = "South America" });
 
-            gri.DataContext = this;
+gri.DataContext = this;
 
-        }
+}
 {% endhighlight %}
 
 
@@ -189,10 +201,17 @@ private void Window1_Loaded(object sender, RoutedEventArgs e)
 
 
 
-
-{% highlight xml %}<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> {% endhighlight %} 
-{% highlight C# %}Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind); {% endhighlight %} 
-
+{% tabs %}
+{% highlight xml %}
+<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> 
+{% endhighlight %} 
+{% highlight C# %}
+Binding bind = new Binding();  
+bind.Source = this; 
+bind.Path = new PropertyPath("SampleList");  
+gBar.SetBinding(GroupBar.ItemssourceProperty, bind);
+		{% endhighlight %} 
+{% endtabs %}
 
 
 
@@ -217,15 +236,15 @@ Apply the ItemTemplate to GroupBar, by using the following code.
 
 {% highlight xml %}       
 
- <sync:GroupBar.ItemTemplate>
+<sync:GroupBar.ItemTemplate>
 
-                <DataTemplate>
+<DataTemplate>
 
-                    <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+<TextBlock Text="{Binding Name}" FontWeight="Bold"/>
 
-                </DataTemplate>
+</DataTemplate>
 
-            </sync:GroupBar.ItemTemplate>
+</sync:GroupBar.ItemTemplate>
 
 
 {% endhighlight %}
@@ -258,13 +277,13 @@ The Item Container Style should be declared as follows.
 </sync:GroupBar.ItemContainerStyle>
 
 
-
+{% endhighlight %}
 
 
 Apply Header Template to the Header Template property of the Item, by using the following code.
 
 
-
+{% highlight xml %}
 <Setter Property="Header" Value="{Binding}"/>
 
                         <Setter Property="HeaderTemplate">
@@ -282,14 +301,14 @@ Apply Header Template to the Header Template property of the Item, by using the 
                          </Setter>
 
 
-
+{% endhighlight %}
 
 
 Apply Content Template to Content Template property of the item, by using the following code.
 
 
-
-
+{% highlight xml %}
+ 
 
  <Setter Property="Content" Value="{Binding}"/>
 
@@ -341,17 +360,17 @@ N>Data Template has been written for North America Statistics data
 
 <DataTemplate x:Key="North">
 
-         <StackPanel Height="50">
+<StackPanel Height="50">
 
-              <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Blue"/>
+<TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Blue"/>
 
-              <TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Blue"/>
+<TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Blue"/>
 
-              <TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Blue"/>
+<TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Blue"/>
 
-         </StackPanel>
+</StackPanel>
 
- </DataTemplate>
+</DataTemplate>
 
 {% endhighlight %}
 
@@ -361,15 +380,15 @@ N> Data Template has been written for South America Statistics data.
 
 <DataTemplate x:Key="South">
 
-        <StackPanel Height="50">
+<StackPanel Height="50">
 
-            <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Red"/>
+<TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Red"/>
 
-            <TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Red"/>
+<TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Red"/>
 
-            <TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Red"/>
+<TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Red"/>
 
-        </StackPanel>
+</StackPanel>
 
 </DataTemplate>
 
@@ -383,15 +402,15 @@ N> Data Template has been written for Other Statistics data.
 
 <DataTemplate x:Key="Other">
 
-    <StackPanel Height="50">
+<StackPanel Height="50">
 
-        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Brown"/>
+<TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Brown"/>
 
-        <TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Brown"/>
+<TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Brown"/>
 
-        <TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Brown"/>
+<TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Brown"/>
 
-      </StackPanel>
+</StackPanel>
 
 </DataTemplate>
 
@@ -403,49 +422,49 @@ N> Following is the data template selector logic set by the user.
 
 /// <summary>
 
-    /// Logic for Template Selector
+/// Logic for Template Selector
 
-    /// </summary>
+/// </summary>
 
-    public class SampleTemplateSelector : DataTemplateSelector
+public class SampleTemplateSelector : DataTemplateSelector
 
-    {
+{
 
-        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+public override DataTemplate SelectTemplate(object item, DependencyObject container)
 
-        {
+{
 
-            Window win = Application.Current.MainWindow;
+Window win = Application.Current.MainWindow;
 
 
 
-            if (((RegionStatistics)item).Location == "North America")
+if (((RegionStatistics)item).Location == "North America")
 
-            {
+{
 
-                return win.Resources["North"] as DataTemplate;
+return win.Resources["North"] as DataTemplate;
 
-            }
+}
 
-            else if (((RegionStatistics)item).Location == "South America")
+else if (((RegionStatistics)item).Location == "South America")
 
-            {
+{
 
-                return win.Resources["South"] as DataTemplate;
+return win.Resources["South"] as DataTemplate;
 
-            }
+}
 
-            else
+else
 
-            {
+{
 
-                return win.Resources["Other"] as DataTemplate;
+return win.Resources["Other"] as DataTemplate;
 
-            }
+}
 
-        }
+}
 
-    }
+}
 {% endhighlight %}
 
 
@@ -455,27 +474,27 @@ N> The ContentTemplate Selector can be applied as follows.
 
 <sync:GroupBar.ItemContainerStyle>
 
-                    <Style TargetType="{x:Type sync:GroupBarItem}">
+<Style TargetType="{x:Type sync:GroupBarItem}">
 
-                        <Setter Property="Header" Value="{Binding}"/>
+<Setter Property="Header" Value="{Binding}"/>
 
-                        <Setter Property="HeaderTemplate">
+<Setter Property="HeaderTemplate">
 
-                            <Setter.Value>
+<Setter.Value>
 
-                                <DataTemplate>
+<DataTemplate>
 
-                                    <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+<TextBlock Text="{Binding Name}" FontWeight="Bold"/>
 
-                                </DataTemplate>
+</DataTemplate>
 
-                            </Setter.Value>
+</Setter.Value>
 
-                        </Setter>
+</Setter>
 
-                        <Setter Property="Content" Value="{Binding}"/>
+<Setter Property="Content" Value="{Binding}"/>
 
-                    <Setter Property="ContentTemplateSelector" Value="{StaticResource Selector}"/>
+<Setter Property="ContentTemplateSelector" Value="{StaticResource Selector}"/>
 
 </Style>
 
@@ -509,17 +528,17 @@ gBar.ContextMenuItemClick += new GroupBarContextMenuItemEventHandler(gBar_Contex
 
 private void gBar_ContextMenuItemClick(object sender, GroupBarContextMenuItemEventArgs e)
 
-        {
+{
 
-           	if (e.MenuItem.ToString() == "Add Tab")
+if (e.MenuItem.ToString() == "Add Tab")
 
-          	{
+{
 
-      SampleList.Add(new RegionStatistics() { Name = "New Item", Population = 			"00,000,000", Location = "**** ****" });
+SampleList.Add(new RegionStatistics() { Name = "New Item", Population = 			"00,000,000", Location = "**** ****" });
 
-                e.Handled = true;
+e.Handled = true;
 
- 	}
+}
 
 }
 {% endhighlight %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization-and-Deserialization
+title: Serialization and Deserialization | SfDataGrid | WPF | Syncfusion
 description: serialization and deserialization
 platform: wpf
 control: SfDataGrid
@@ -15,7 +15,7 @@ The DataGrid control supports Serialization and Deserialization. The entire Grid
 
 The DataGrid control includes following methods for Serialization and Deserialization.
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -202,15 +202,15 @@ The following screenshot displays the output.
 
 
 
-_DataGrid with Serialization and Deserialization_
-
+DataGrid with Serialization and Deserialization
+{:.caption}
 ### SerializationOptions and DeserializationOptions
 
 To customize the serialization and deserialization process, you can use SerializationOptions and DeserializationOptions respectively. Following are the list of properties provided by these classes.
 
 ### SerializationOptions
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -268,9 +268,10 @@ Boolean</td><td>
 Gets or sets the value that determines whether the method serialize StackedHeaderRows</td><td>
 True</td></tr>
 </table>
+
 DeserializationOptions
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -335,7 +336,7 @@ SerializationController is a public class that handles serialization and deseria
 
 SerializationController contains the following methods to perform serialization and deserialization operations.
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
@@ -456,7 +457,7 @@ public virtual void Dispose()</td><td>
 Method used to dispose SerializationController</td></tr>
 </table>
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -624,8 +625,8 @@ The following screenshot illustrates the grid after deserialization.
 
 
 
-_DataGrid after Serialization and Deserialization_
-
+DataGrid after Serialization and Deserialization
+{:.caption}
 You can overcome the above scenario by customizing the SerilalizationController and refer to the following code example that illustrates how to preserve the new unbound column during deserialization.
 
 
@@ -698,8 +699,8 @@ The following screenshot illustrates the output image after deserializing grid u
 ![](Features_images/Features_img198.png)
 
 
-_DataGrid after Serialization and Deserialization using custom serialization controller_
-
+DataGrid after Serialization and Deserialization using custom serialization controller
+{:.caption}
 ### How to serialize custom column in SfDataGrid
 
 By default, the grid columns are serialized during serialization of DataGrid. But when custom column is added in grid, it is not serialized. Since DataContractSerializer is used the custom column type has to be identified to serialize and deserialize the custom column. To serialize the custom column, you can override SerializationController. Refer to the following code example.

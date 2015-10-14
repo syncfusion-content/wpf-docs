@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EditDeleting-Appointments
+title: EditDeleting Appointments| SfSchedule | Wpf | Syncfusion
 description: edit/deleting appointments
 platform: wpf
 control: SfSchedule

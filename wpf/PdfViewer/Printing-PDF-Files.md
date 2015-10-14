@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing-PDF-Files 
+title: Printing PDF Files | PDF Viewer | Wpf | Syncfusion
 description: printing pdf files 
 platform: wpf
 control: PDF Viewer
@@ -19,6 +19,7 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 The PrintDocument property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. This type of printing can be used when trying to print the PDF document with the custom printer settings. The following code sample demonstrates this:
 
+{% tabs %}
 {% highlight c# %}
 
 PrintDialog dialog = new PrintDialog();
@@ -42,9 +43,11 @@ dialog.Document = viewer.PrintDocument
 dialog.Document.Print()
 
 {% endhighlight %}
+{% endtabs %}
 
 When you prefer to perform Silent printing with the default printer settings, then using Print method in the PDF Viewer control is the best approach. The following code example illustrates the same.
 
+{% tabs %}
 {% highlight c# %}
 
 // Printing document using Print method
@@ -62,3 +65,4 @@ pdfviewer1.Print();
 pdfviewer1.Print()
 
 {% endhighlight %}
+{% endtabs %}

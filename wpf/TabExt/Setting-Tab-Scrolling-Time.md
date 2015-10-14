@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Tab-Scrolling-Time
+title: Setting Tab Scrolling Time | TabControlExt | wpf | Syncfusion
 description: setting tab scrolling time
 platform: wpf
 control: TabControlExt
@@ -13,10 +13,9 @@ Tab Scrolling Time is controlled by using the ScrollingTime property. This depen
 
 Here is the code snippet to set the Tab Scrolling Time.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabControlExt with CloseButtonType is Both -->
 
@@ -47,16 +46,14 @@ Here is the code snippet to set the Tab Scrolling Time.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-
-
 // Creating instance of the TabControlExt control
 
 TabControlExt tabControlExt = new TabControlExt();
-
 
 
 // Creating the instance of StackPanel
@@ -92,10 +89,20 @@ tabControlExt.ScrollingTime = 1000;
 // Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+
 {% endhighlight %}
 
+{% endtabs %}
 
-See Also
 
-Tab Scroll Style, Tab Scroll Button
+{% seealso %}
+
+Tab Scroll Style
+
+Tab Scroll Button
+
+{% endseealso %}
+
+
+
 

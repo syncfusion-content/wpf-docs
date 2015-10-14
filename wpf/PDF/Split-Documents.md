@@ -13,9 +13,9 @@ Splitting operation is used to generate a set of PDF documents, each of which is
 
 The pattern should be in .NET format (for example: "myfile {0:000}.pdf") or just a pdf name. In latter case, the unique name have numbers before ".pdf".
 
+
+
 {% highlight c# %}
-
-
 
 //Loads document.
 
@@ -31,9 +31,9 @@ loadedDocument.Split(destFilePattern);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads document.
 
@@ -47,15 +47,16 @@ Const destFilePattern As String = "Output" + "split{0:00}.pdf"
 
 loadedDocument.Split(destFilePattern)
 
- {% endhighlight %}
+{% endhighlight %}
+
 
 N> Splitting algorithm uses Import Page methods, so the result would be similar to it.
 
 Essential PDF also allows you to split pages as per your wish. The following code example illustrates this.
 
+
+
 {% highlight c# %}
-
-
 
 //Loads an existing document, which needs to be split.
 
@@ -97,9 +98,9 @@ document2.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads an existing document, which needs to be split.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CategoryEditor-support
+title: CategoryEditor support | PropertyGrid  | wpf | Syncfusion
 description: categoryeditor support
 platform: wpf
 control: PropertyGrid 
@@ -11,7 +11,7 @@ documentation: ug
 
 The PropertyGrid control supports several built-in editors, to give a good look and feel for the application (like in Expression Blend) using CustomEditors or CategoryEditors. CategoryEditor support enables you to set related properties (one or more properties) on a custom control. CategoryEditor can be applied for Grouping. While sorting, default editors will be displayed.
 
-Adding CategoryEditor support to an Application 
+## Adding CategoryEditor support to an Application 
 
 Using CategoryEditor, you can set the related properties on a custom control. 
 
@@ -21,9 +21,7 @@ In the below example, FontWeightButton and FontListBox are the custom controls.
 
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                            Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center">
     <syncfusion:PropertyGrid.CategoryEditors>
@@ -58,19 +56,14 @@ In the below example, FontWeightButton and FontListBox are the custom controls.
     </syncfusion:PropertyGrid.CategoryEditors>
 </syncfusion:PropertyGrid>
 
-
 {% endhighlight %}
-
 
 ![](CategoryEditor-support_images/CategoryEditor-support_img1.png)
 
 
+### Properties
 
-
-
-Properties
-
-CategoryEditor Table
+_CategoryEditor Table_
 
 <table>
 <tr>
@@ -90,12 +83,9 @@ CategoryEditorCollection</td><td>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.
 3. Now expand the PropertyGrid treeview item in the Sample Browser.
 4. Choose any one of the samples listed under it to launch. 
-
-
-

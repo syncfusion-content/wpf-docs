@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Window-State
+title: Setting Window State| DocumentContainer | Wpf | Syncfusion
 description: setting window state
 platform: wpf
 control: DocumentContainer

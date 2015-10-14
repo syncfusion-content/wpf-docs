@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Popup-Options
+title: Popup Options| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: popup options
 platform: wpf
 control: SfMultiColumnDropDownControl

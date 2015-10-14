@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | CardView | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: CardView
@@ -13,6 +13,8 @@ documentation: ug
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
+Structure of the CardView Control
+{:.caption}
 
 ## Create the CardView Control
 
@@ -24,6 +26,8 @@ To create the CardView control through Visual Studio, drag the CardView from the
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
+Dragging CardView to the Visual Studio Designer
+{:.caption}
 
 ### Through Expression Blend
 
@@ -33,107 +37,106 @@ The CardView control can also be created and configured using Expression Blend. 
    1. Syncfusion.Shared.Wpf
    2. Syncfusion.Tools.Wpf
    3. Syncfusion.Core
+   
 2. Search for CardView in the Toolbox.
 
-
-
    ![](Getting-Started_images/Getting-Started_img3.png)
-
-
+   
+   CardView in Expression Blend Toolbox
+   {:.caption}
+   
 3. Drag the CardView to the designer. This generates the following CardView control.
 
    ![](Getting-Started_images/Getting-Started_img4.png)
 
-
+   Dragging CardView to the Expression Blend Designer
+   {:.caption}
+   
 4. To add the items to the CardView by using the CollectionEditor, select the CardView and go to Properties area, and then click Items (Collection) under Common Properties.
 
-   ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
-
-
-
+   ![](Getting-Started_images/Getting-Started_img5.png)
+   
+   CardView Properties
+   {:.caption}
+   
 5. Once the Collection Editor opens, click Add Another Item.  The Select Object window opens.
+
 6. Select the CardViewItem by typing CardViewItem in the search box, and then click OK.
 
-
-
    ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-
+   
+   Collection Editor for CardView in Expression Blend
+   {:.caption}
+   
 7. Configure the CardViewItem using the properties in the Collection Editor.
 
-
-
-   N> You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
-   {:.prettyprint}
-   
+N> You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
+      
 ### Through XAML
 
 To create the CardView control through XAML, add the following namespace to the directives list.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
-
+{% endhighlight %}
 
 After adding the above namespace the CardViewControl can be added to the application as follows:
 
+{% highlight xaml %}
 
+ <syncfusion:CardView >
 
-         <syncfusion:CardView >
+	<syncfusion:CardViewItem Header="Item1" >
 
-            <syncfusion:CardViewItem Header="Item1" >
+		<ListBox>
 
-                <ListBox>
+			<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                    <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
+				<Grid >
 
-                        <Grid >
+					<Grid.ColumnDefinitions>
 
-                            <Grid.ColumnDefinitions>
+						<ColumnDefinition Width="75"/>
 
-                                <ColumnDefinition Width="75"/>
+						<ColumnDefinition Width="*"/>
 
-                                <ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
 
-                            </Grid.ColumnDefinitions>
+					<TextBlock Text="Name:"/>
 
-                            <TextBlock Text="Name:"/>
+					<TextBox  Grid.Column="1" Text="David" />
 
-                            <TextBox  Grid.Column="1" Text="David" />
+				</Grid>
 
-                        </Grid>
+			</ListBoxItem>
 
-                    </ListBoxItem>
+			<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                    <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
+				<Grid >
 
-                        <Grid >
+					<Grid.ColumnDefinitions>
 
-                            <Grid.ColumnDefinitions>
+						<ColumnDefinition Width="75"/>
 
-                                <ColumnDefinition Width="75"/>
+						<ColumnDefinition Width="*"/>
 
-                                <ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
 
-                            </Grid.ColumnDefinitions>
+					<TextBlock Text="DOB:"/>
 
-                            <TextBlock Text="DOB:"/>
+					<TextBox  Grid.Column="1" Text="2/25/1986" />
 
-                            <TextBox  Grid.Column="1" Text="2/25/1986" />
+				</Grid>
 
-                        </Grid>
+			</ListBoxItem>
 
-                    </ListBoxItem>
+		</ListBox>
 
-                </ListBox>
+	</syncfusion:CardViewItem>
 
-            </syncfusion:CardViewItem>
-
-        </syncfusion:CardView>
-
+</syncfusion:CardView>
 
 {% endhighlight %}
 
@@ -146,27 +149,20 @@ To create the CardView control through C#, include the following namespace to th
 
 using Syncfusion.Windows.Tools.Controls;
 
-
 {% endhighlight %}
 
-
 Next, create the CardView control as illustrated in the following code example.
-
-
 
 {% highlight C# %}
 
 CardView cardView = new CardView();
 
-            CardViewItem cardViewItem1 = new CardViewItem();
+CardViewItem cardViewItem1 = new CardViewItem();
 
-            TextBlock tBlock = new TextBlock() { Text = "John" };
+TextBlock tBlock = new TextBlock() { Text = "John" };
 
-            cardViewItem1.Content = tBlock;
+cardViewItem1.Content = tBlock;
 
-            cardView.Items.Add(cardViewItem1);
+cardView.Items.Add(cardViewItem1);
 
 {% endhighlight %}
-
-
-

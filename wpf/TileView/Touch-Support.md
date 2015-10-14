@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch-Support
+title: Touch Support | TileView | wpf | Syncfusion
 description: touch support
 platform: wpf
 control: TileView Control

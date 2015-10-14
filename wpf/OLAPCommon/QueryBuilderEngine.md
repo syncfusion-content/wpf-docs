@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QueryBuilderEngine
+title: QueryBuilderEngine| OLAPCommon  | Wpf | Syncfusion
 description: querybuilderengine
 platform: wpf
 control: OLAPCommon 
@@ -33,7 +33,8 @@ Based on the current report, the TogglePivot value and the axis position of each
 
 
 
-_Figure8: MDXQuerySpecification_
+ MDXQuerySpecification
+ {:.caption}
 
 
 
@@ -41,7 +42,7 @@ Once the query specification is created, the GenerateQueryEx() method of QueryBu
 
 ## Steps in Query Generation
 
-### To generate a query:
+To generate a query:
 
 1. Get the query specification and iterate through the items in each category (With, Select and Where) of specification and separately store the column elements, row elements, filter elements and slice elements.
 2. The filter, slicer and sort elements are moved to the appropriate axis based on their axis property.

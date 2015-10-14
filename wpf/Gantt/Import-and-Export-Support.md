@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import-and-Export-Support
+title: Import and Export Support| Gantt | Wpf | Syncfusion
 description: import and export support
 platform: wpf
 control: Gantt
@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Gantt allows you to export and import the task details. You can export the task details as XML files and import them again when needed. You can open the exported XML files in MS Project too. The XML file, exported from MS Project can also be opened in Gantt control. You can import and export the details using the provided APIs.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -35,7 +35,7 @@ DelegateCommand</td></tr>
 </table>
 
 
-_Methods_
+### Methods
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ bool</td></tr>
 
 The following code illustrates how to Import and Export Task Details from or to XML.
 
-
+{% tabs  %}
 {% highlight html %}
 
 
@@ -74,15 +74,15 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 
 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-      <Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
+<Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
 
-              Margin="0,10,0,0" Width="200"                    
-              Command="{Binding ExportToXMLCommand, ElementName=gantt}"                    Content="Export To XML" />
-      <Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
+Margin="0,10,0,0" Width="200"                    
+Command="{Binding ExportToXMLCommand, ElementName=gantt}"                    Content="Export To XML" />
+<Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
 
-              Margin="0,10,0,0" Width="200"
-              Command="{Binding ImportFromXMLCommand, ElementName=gantt}"
-              Content="Import From XML" />
+Margin="0,10,0,0" Width="200"
+Command="{Binding ImportFromXMLCommand, ElementName=gantt}"
+Content="Import From XML" />
 </StackPanel>
 
 {% endhighlight  %}
@@ -90,31 +90,31 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 
 
-       private void SaveButton_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            if (this.Gantt.ExportToXML())
-            {
-                MessageBox.Show("Tasks exported successfully.", 
-                                "XML Import/Export", 
-                                 MessageBoxButton.OK, 
-                                 MessageBoxImage.Information);
-            }
-        }
+private void SaveButton_Click(object sender, System.Windows.RoutedEventArgs e)
+{
+if (this.Gantt.ExportToXML())
+{
+MessageBox.Show("Tasks exported successfully.", 
+"XML Import/Export", 
+MessageBoxButton.OK, 
+MessageBoxImage.Information);
+}
+}
 
-        private void Open_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            if (this.Gantt.ImportFromXML())
-            {
-                MessageBox.Show("Tasks imported successfully.", 
-                                "XML Import/Export", 
-                                MessageBoxButton.OK, 
-                                MessageBoxImage.Information);
-            }
-        }
+private void Open_Click(object sender, System.Windows.RoutedEventArgs e)
+{
+if (this.Gantt.ImportFromXML())
+{
+MessageBox.Show("Tasks imported successfully.", 
+"XML Import/Export", 
+MessageBoxButton.OK, 
+MessageBoxImage.Information);
+}
+}
 
 
 {% endhighlight  %}
-
+{% endtabs  %}
 
 The following image shows XML Export Import:
 
@@ -124,7 +124,8 @@ The following image shows XML Export Import:
 
 
 
-_XML Export Import_
+XML Export Import
+{:.caption}
 
 
 
@@ -136,11 +137,12 @@ The following image shows Importing the exported document in MS Project:
 
 
 
-_Exported document opened in MS Project_
+Exported document opened in MS Project
+{:caption}
 
 
 
-## Samples Link
+### Samples Link
 
 To view samples: 
 

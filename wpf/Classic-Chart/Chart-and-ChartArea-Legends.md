@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart and ChartArea Legends
+title: Chart and ChartArea Legends | Chart(Classic) | wpf | Syncfusion
 description: Chart and ChartArea Legends
 platform: wpf
 control: Chart (Classic)
@@ -26,8 +26,6 @@ The LegendIcon property is used to set the required icon.
 
 The following table provides more information on the property used.
 
-_Property_
-
 <table>
 <tr>
 <th>
@@ -47,7 +45,6 @@ Enum(ChartLegenIcon)</td></tr>
 
 The following table provides more information on the event used.
 
-_Events_
 
 <table>
 <tr>
@@ -68,7 +65,6 @@ The Icon is changed whenever the value for LegendIcon property changes.</td></tr
 
 The following table provides more information on the method used.
 
-_Methods_
 
 <table>
 <tr>
@@ -91,7 +87,7 @@ The legend icon can be customized by using the following code exaples.
 
 1. Using XAML
 
-
+   ~~~ xaml
 
 
 
@@ -100,15 +96,16 @@ The legend icon can be customized by using the following code exaples.
 				<syncfusion:ChartSeries Name="SeriesA" LegendIcon="Circle" Type="Bar" BindingPathX="FruitName"
 
 				BindingPathsY="Price,NumberOfFruits,FruitID,Year" Label="Series A" Stroke="#FF000000" StrokeThickness="0.5" ></syncfusion:ChartSeries>
-
+   ~~~
+   
 2. Using C#
 
-
+   ~~~ csharp
 
 				Chart1.Areas[0].Series[0].LegendIcon = ChartLegendIcon.Circle;
-
+   ~~~
    Run the code. The following output is displayed.
 
    ![](Chart-Controls_images/Chart-Controls_img195.jpeg)
 
-   {:.prettyprint}
+   

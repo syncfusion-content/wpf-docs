@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximizing-MDI-window
+title: Maximizing MDI window| DocumentContainer | Wpf | Syncfusion
 description: maximizing mdi window
 platform: wpf
 control: DocumentContainer

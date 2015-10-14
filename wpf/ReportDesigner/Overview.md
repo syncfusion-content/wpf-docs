@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | ReportDesigner | wpf | Syncfusion
 description:  overview
 platform: wpf
 control: Report Designer
@@ -24,7 +24,7 @@ The important features of the Essential Report Designer for WPF are:
 
 
 
-![C:/Users/radhas/Desktop/sshot-1.png](Overview_images/Overview_img1.png)
+![](Overview_images/Overview_img1.png)
 
 
 
@@ -32,7 +32,7 @@ It can be used to design data in a variety of interactive formats and place repo
 
 
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-84.png](Overview_images/Overview_img2.png)
+![](Overview_images/Overview_img2.png)
 
 
 

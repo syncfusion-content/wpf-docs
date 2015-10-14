@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-and-Storing-OLAP-Report
+title: Creating and Storing OLAP Report| OLAP Client  | Wpf | Syncfusion
 description: creating and storing olap report
 platform: wpf
 control: OLAP Client 

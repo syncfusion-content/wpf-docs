@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Support
+title: Keyboard Support| RichTextBoxAdv | Wpf | Syncfusion
 description: keyboard support
 platform: wpf
 control: RichTextBoxAdv
@@ -13,7 +13,7 @@ RichTextBoxAdv provides some shortcut keys for ease of use. The following table 
 
 
 
-Keyboard shortcuts table
+### Keyboard shortcuts table
 
 <table>
 <tr>

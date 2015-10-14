@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| Circular Gauge | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Circular Gauge
@@ -13,79 +13,80 @@ documentation: ug
 
 The following code example explains how to add a Circular Gauge:
 
+{% tabs %}
 {% highlight xml %}
 
 
 
 <Window x:Class="SampleCircularGauge.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        Title="MainWindow" Height="350" Width="525">
+Title="MainWindow" Height="350" Width="525">
 
-    <Grid Name="Grid" Background="Black">
+<Grid Name="Grid" Background="Black">
 
-     <syncfusion:SfCircularGauge x:Name="gauge"  >
+<syncfusion:SfCircularGauge x:Name="gauge"  >
 
-       <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
-
-
-
-            <syncfusion:SfCircularGauge.GaugeHeader>
+<syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
 
 
 
-                <TextBlock Text="Temperature (K)" 
-
-                              Height="40" Width="150" 
-
-                              FontSize="20" Foreground="White"/>
+<syncfusion:SfCircularGauge.GaugeHeader>
 
 
 
-            </syncfusion:SfCircularGauge.GaugeHeader>
+<TextBlock Text="Temperature (K)" 
 
-            <syncfusion:SfCircularGauge.MainScale>
+Height="40" Width="150" 
 
-         <syncfusion:CircularScale StartAngle="135" 
-
-                                   SweepAngle="270" 
-
-                                   StartValue="0"
-
-                                   EndValue="100"
-
-                                   Interval="10">
+FontSize="20" Foreground="White"/>
 
 
 
-              <syncfusion:CircularScale.Ranges>
+</syncfusion:SfCircularGauge.GaugeHeader>
 
-                   <syncfusion:CircularRange StartValue="0" 
+<syncfusion:SfCircularGauge.MainScale>
 
-                                             EndValue="60" Stroke="#666666" />
+<syncfusion:CircularScale StartAngle="135" 
 
-                   <syncfusion:CircularRange StartValue="60" 
+SweepAngle="270" 
 
-                                             EndValue="100" Stroke="#C1252C" />
+StartValue="0"
 
-              </syncfusion:CircularScale.Ranges>
+EndValue="100"
+
+Interval="10">
 
 
 
-              <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Ranges>
 
-                  <syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
+<syncfusion:CircularRange StartValue="0" 
 
-              </syncfusion:CircularScale.Pointers>
+EndValue="60" Stroke="#666666" />
 
-         </syncfusion:CircularScale>
+<syncfusion:CircularRange StartValue="60" 
 
-    </syncfusion:SfCircularGauge.MainScale>
+EndValue="100" Stroke="#C1252C" />
+
+</syncfusion:CircularScale.Ranges>
+
+
+
+<syncfusion:CircularScale.Pointers>
+
+<syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
+
+</syncfusion:CircularScale.Pointers>
+
+</syncfusion:CircularScale>
+
+</syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>    </Grid>
 
@@ -98,37 +99,37 @@ The following code example explains how to add a Circular Gauge:
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            circularGauge.GaugeHeaderPosition = new Point(300,600);
+circularGauge.GaugeHeaderPosition = new Point(300,600);
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.StartAngle = 135;
+_mainscale.StartAngle = 135;
 
-            _mainscale.SweepAngle = 270;
+_mainscale.SweepAngle = 270;
 
-            _mainscale.StartValue = 0;
+_mainscale.StartValue = 0;
 
-            _mainscale.EndValue = 100;
+_mainscale.EndValue = 100;
 
-            _mainscale.Interval = 10;
+_mainscale.Interval = 10;
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
 
-            _mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.NeedlePointer, Value = 170 });
+_mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.NeedlePointer, Value = 170 });
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
 
-            circularGauge.GaugeHeader = _textBlock;
+circularGauge.GaugeHeader = _textBlock;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
-
+{% endtabs %}
 
 
 
@@ -142,7 +143,7 @@ The following code example explains how to add a Circular Gauge:
 
 Syncfusion Reference Manager is used to add Syncfusion Tools.
 
-### To add SfCircularGauge Control, follow the steps below:
+To add SfCircularGauge Control, follow the steps below:
 
 1. Create a simple WPF application by using Visual Studio.
 
@@ -190,58 +191,61 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 7. Add the following code example to create a simple SfCircularGauge control.
 
 
-			<Window x:Class="SampleCircularGauge.MainWindow"
+   ~~~html
+   
+		<Window x:Class="SampleCircularGauge.MainWindow"
 
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-					Title="MainWindow" Height="350" Width="525">
+		Title="MainWindow" Height="350" Width="525">
 
-				<Grid Name="Grid" Background="Black">
+		<Grid Name="Grid" Background="Black">
 
-					<syncfusion:SfCircularGauge></syncfusion:SfCircularGauge>
+		<syncfusion:SfCircularGauge></syncfusion:SfCircularGauge>
 
-				</Grid>
+		</Grid>
 
-			</Window>
-
-
-
-
+		</Window>
 
 
+   ~~~
 
-			using System.Windows;
 
-			using Syncfusion.UI.Xaml.Gauges;
+   ~~~csharp
 
-			namespace CircularGauge
+		using System.Windows;
 
-			{
+		using Syncfusion.UI.Xaml.Gauges;
 
-				public partial class MainWindow : Window
+		namespace CircularGauge
 
-				{
+		{
 
-					public MainWindow()
+		public partial class MainWindow : Window
 
-					{
+		{
 
-						InitializeComponent();
+		public MainWindow()
 
-						SfCircularGauge circulargauge = new SfCircularGauge();
+		{
 
-						this.Grid.Children.Add(circulargauge); 
+		InitializeComponent();
 
-					 }
+		SfCircularGauge circulargauge = new SfCircularGauge();
 
-				}
+		this.Grid.Children.Add(circulargauge); 
 
-			}
+		}
 
+		}
+
+		}
+
+   ~~~		
 
 8. The SfCircularGauge control is created as follows.
 
@@ -251,7 +255,7 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-   N>  1. The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. 2. The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.
+N>  1. The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. 2. The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.
 
-   {:.prettyprint}
+
 

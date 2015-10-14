@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EmptyPoints
+title: EmptyPoints| SfChart | Wpf | Syncfusion
 description: emptypoints
 platform: wpf
 control: SfChart
@@ -13,6 +13,7 @@ The data collection that is passed to the chart can have NaN, or infinite values
 
 The following code example shows how to handle empty points in a series using sample data.
 
+{% tabs %}
 {% highlight xml %}
 
      <syncfusion:SfChart>
@@ -75,169 +76,170 @@ The following code example shows how to handle empty points in a series using sa
 
 public class CategoryDataViewModel
 
-        {
+{
 
-            public CategoryDataViewModel()
+public CategoryDataViewModel()
 
-            {
+{
 
-                EmptyPointDatas = new ObservableCollection<CategoryData>();
+EmptyPointDatas = new ObservableCollection<CategoryData>();
 
-                EmptyPointDatas.Add(new CategoryData("Baseball", 2, 1));
+EmptyPointDatas.Add(new CategoryData("Baseball", 2, 1));
 
-                EmptyPointDatas.Add(new CategoryData("Football", 10, 6));
+EmptyPointDatas.Add(new CategoryData("Football", 10, 6));
 
-                EmptyPointDatas.Add(new CategoryData("Hockey", double.NaN, double.NaN));
+EmptyPointDatas.Add(new CategoryData("Hockey", double.NaN, double.NaN));
 
-                EmptyPointDatas.Add(new CategoryData("Basketball", 22, 18));
+EmptyPointDatas.Add(new CategoryData("Basketball", 22, 18));
 
-                EmptyPointDatas.Add(new CategoryData("IceHockey", 21, 18));
+EmptyPointDatas.Add(new CategoryData("IceHockey", 21, 18));
 
-                EmptyPointDatas.Add(new CategoryData("Volleyball", 16, 12));
+EmptyPointDatas.Add(new CategoryData("Volleyball", 16, 12));
 
-                EmptyPointDatas.Add(new CategoryData("Cricket", 20, 15));
+EmptyPointDatas.Add(new CategoryData("Cricket", 20, 15));
 
-            }
+}
 
 
 
-            public ObservableCollection<CategoryData> EmptyPointDatas
+public ObservableCollection<CategoryData> EmptyPointDatas
 
-            {
+{
 
-                get;
+get;
 
-                set;
+set;
 
-            }
+}
 
-        }
+}
 
-        public class CategoryData : INotifyPropertyChanged
+public class CategoryData : INotifyPropertyChanged
 
-        {
+{
 
-            private string category;
+private string category;
 
-            private double value;
+private double value;
 
-            private double value2;
+private double value2;
 
 
 
-            public CategoryData(string category, double value, double value2)
+public CategoryData(string category, double value, double value2)
 
-            {
+{
 
-                Category = category; Value = value; Value2 = value2;
+Category = category; Value = value; Value2 = value2;
 
-            }
+}
 
 
 
-            public string Category
+public string Category
 
-            {
+{
 
-                get
+get
 
-                { return category; }
+{ return category; }
 
-                set
+set
 
-                {
+{
 
-                    if (category != value)
+if (category != value)
 
-                    {
+{
 
-                        category = value;
+category = value;
 
-                        OnPropertyChanged("Category");
+OnPropertyChanged("Category");
 
-                    }
+}
 
-                }
+}
 
-            }
+}
 
 
 
-            public double Value
+public double Value
 
-            {
+{
 
-                get
+get
 
-                { return value; }
+{ return value; }
 
-                set
+set
 
-                {
+{
 
-                    if (this.value != value)
+if (this.value != value)
 
-                    {
+{
 
-                        this.value = value;
+this.value = value;
 
-                        OnPropertyChanged("Value");
+OnPropertyChanged("Value");
 
-                    }
+}
 
-                }
+}
 
-            }
+}
 
 
 
-            public double Value2
+public double Value2
 
-            {
+{
 
-                get
+get
 
-                { return value2; }
+{ return value2; }
 
-                set
+set
 
-                {
+{
 
-                    if (value2 != value)
+if (value2 != value)
 
-                    {
+{
 
-                        value2 = value; OnPropertyChanged("Value2");
+value2 = value; OnPropertyChanged("Value2");
 
-                    }
+}
 
-                }
+}
 
-            }
+}
 
 
 
-            void OnPropertyChanged(string propertyName)
+void OnPropertyChanged(string propertyName)
 
-            {
+{
 
-                if (PropertyChanged != null)
+if (PropertyChanged != null)
 
-                {
+{
 
-                    PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 
-                }
+}
 
-            }
+}
 
 
 
-            public event PropertyChangedEventHandler PropertyChanged;
+public event PropertyChangedEventHandler PropertyChanged;
 
-        }
+}
 
 {% endhighlight %}
+{% endtabs %}
 
 The following is a screenshot of a ColumnSeries with empty points.
 

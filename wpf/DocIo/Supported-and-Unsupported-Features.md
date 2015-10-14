@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-and-Unsupported-Features
+title: Supported and Unsupported Features| DocIO | Wpf | Syncfusion
 description: supported and unsupported features
 platform: wpf
 control: DocIO
@@ -15,7 +15,7 @@ This section describes the platform wise support and unsupported elements in Doc
 
 The list of various supported and non-supported elements of Essential DocIO in Silverlight platform is given in the following table.
 
-_Supported Elements in Silverlight Platform_
+### Supported Elements in Silverlight Platform
 
 <table>
 <tr>
@@ -296,7 +296,7 @@ Yes</td></tr>
 
 The list of various supported and non-supported elements of Essential DocIO in Windows, ASP.NET, WPF, and ASP.NET MVC platforms is given in the following table.
 
-_Supported Elements in Windows, ASP.NET, WPF, and ASP.NET MVC_
+### Supported Elements in Windows, ASP.NET, WPF, and ASP.NET MVC
 
 <table>
 <tr>
@@ -577,7 +577,7 @@ Yes</td></tr>
 
 The list of various supported and non-supported elements of Essential DocIO in Windows store platform is given in the following table.
 
-_Supported Elements in Windows Store Platform_
+### Supported Elements in Windows Store Platform
 
 <table>
 <tr>

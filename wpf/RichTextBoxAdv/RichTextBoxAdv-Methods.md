@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RichTextBoxAdv-Methods
+title: RichTextBoxAdv Methods| RichTextBoxAdv | Wpf | Syncfusion
 description:  richtextboxadv methods
 platform: wpf
 control: RichTextBoxAdv
@@ -11,7 +11,7 @@ documentation: ug
 
 
 
-Methods Table
+### Methods Table
 
 <table>
 <tr>

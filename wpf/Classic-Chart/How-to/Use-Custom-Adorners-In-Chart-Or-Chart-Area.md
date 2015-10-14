@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use-Custom-Adorners-In-Chart-Or-Chart-Area
+title: Use Custom Adorners In Chart Or Chart Area | wpf | Syncfusion
 description: use custom adorners in chart or chart area
 platform: wpf
 control: Chart (Classic)
@@ -10,10 +10,10 @@ documentation: ug
 ## Use Custom Adorners In Chart Or Chart Area
 
 Custom Adorners can be added to the Chart or ChartArea to add any custom UI elements over the Chart or ChartArea. The following code example illustrates adding and removing adorners to a ChartArea.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart Name="Chart1">
 
@@ -34,9 +34,6 @@ Custom Adorners can be added to the Chart or ChartArea to add any custom UI elem
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
 
 public class Window1 : Window
 
@@ -136,7 +133,7 @@ internal class CustomAdorner : Adorner
 
 }
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg)
 

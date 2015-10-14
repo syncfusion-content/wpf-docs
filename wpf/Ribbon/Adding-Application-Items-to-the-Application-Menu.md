@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Application-Items-to-the-Application-Menu
+title: Adding Application Items to the Application Menu | Ribbon | WPF | Syncfusion
 description: adding application items to the application menu
 platform: wpf
 control: Ribbon
@@ -45,5 +45,5 @@ Application Items are the items that are displayed in the right pane of the Appl
 
 ## See Also
 
-Adding Application Menu to the Ribbon Window, Adding Items to the Application Menu
+[Adding Application Menu to the Ribbon Window](http://help.syncfusion.com/wpf/ribbon/adding-application-menu-to-the-ribbon-window), [Adding Items to the Application Menu](http://help.syncfusion.com/wpf/ribbon/adding-items-to-the-application-menu)
 

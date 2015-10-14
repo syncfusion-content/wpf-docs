@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Sparkline-Types
+title: Sparkline Types | SfSparkline | wpf | Syncfusion
 description: sparkline types
 platform: wpf
-control: Sparkline
+control: SfSparkline
 documentation: ug
 ---
 
@@ -12,129 +12,122 @@ documentation: ug
 ## Line Sparkline
 
 Line sparkline rendered using polyline and the following code is used to create line sparkline,
-{% highlight html %}
 
-…
+{% highlight xaml %}
 
-            <Grid.DataContext>
+<Grid.DataContext>
 
-                <local:UsersViewModel/>
+	<local:UsersViewModel/>
 
-            </Grid.DataContext>
+</Grid.DataContext>
 
-            <Syncfusion:SfLineSparkline 
+<Syncfusion:SfLineSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
-	                ItemsSource="{Binding UsersList}" 
-
-YBindingPath="NoOfUsers">
-
-            </Syncfusion:SfLineSparkline >
+</Syncfusion:SfLineSparkline >
 
 {% endhighlight  %}
 
 The following illustrates the result of the above code sample,
 
-![C:/Users/ApoorvahR/Desktop/1.png](Sparkline-Types_images/Sparkline-Types_img1.png)
-
+![](Sparkline-Types_images/Sparkline-Types_img1.png)
 
 
 ## Column Sparkline
 
 Column sparkline used to visualize the raw data as a rectangle and following code is used to create column sparkline,
-{% highlight html %}
 
-   <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
+{% highlight xaml %}
 
-        </Syncfusion:SfColumnSparkline>
+<Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
+
+</Syncfusion:SfColumnSparkline>
+
 {% endhighlight  %}
+
 Following is the snapshot for Column Sparkline,
 
-![C:/Users/ApoorvahR/Desktop/2.png](Sparkline-Types_images/Sparkline-Types_img2.png)
-
-
+![](Sparkline-Types_images/Sparkline-Types_img2.png)
 
 ## Area sparkline
 
 Following code is used to create area sparkline and all the line sparkline features are applicable for area sparkline,
-{% highlight html %}
 
-  <Syncfusion:SfAreaSparkline 
+{% highlight xaml %}
 
- ItemsSource="{Binding UsersList}"  YBindingPath="NoOfUsers">
+<Syncfusion:SfAreaSparkline ItemsSource="{Binding UsersList}"  YBindingPath="NoOfUsers">
 
-  </Syncfusion:SfAreaSparkline >
+</Syncfusion:SfAreaSparkline >
+
 {% endhighlight  %}
+
 Following is the snapshot for area sparkline,
 
-![C:/Users/ApoorvahR/Desktop/3.png](Sparkline-Types_images/Sparkline-Types_img3.png)
-
-
+![](Sparkline-Types_images/Sparkline-Types_img3.png)
 
 ## WinLoss Sparkline
 
 WinLoss sparkline render as a column segment and it show the positive, negative and neutral values.
-{% highlight html %}
 
-…
+{% tabs %}
 
-  <Page.DataContext>
+{% highlight xaml %}
 
-            <local:MatchDetailsViewModel/>
+<Page.DataContext>
 
-  </Page.DataContext>
+	<local:MatchDetailsViewModel/>
 
-        <Syncfusion:SfWinLossSparkline x:Name="sparkline" ItemsSource="{Binding Match}" YBindingPath="Result" >
+</Page.DataContext>
 
-        </Syncfusion:SfWinLossSparkline>
+<Syncfusion:SfWinLossSparkline x:Name="sparkline" ItemsSource="{Binding Match}" YBindingPath="Result" >
+
+</Syncfusion:SfWinLossSparkline>
 
 {% endhighlight %}
-{% highlight c# %}
 
+{% highlight c# %}
 
 public class MatchDetailsModel
 
-    {
+{
 
-        public double Result { get; set; }
+	public double Result { get; set; }
 
-        public string Status { get; set; }
+	public string Status { get; set; }
 
-    }
+}
 
+public class MatchDetailsViewModel
 
+{
 
-    public class MatchDetailsViewModel
+	public MatchDetailsViewModel()
 
-    {
+	{
 
-        public MatchDetailsViewModel()
+		this.Match = new ObservableCollection<MatchDetailsModel>();
 
-        {
+		this.Match.Add(new MatchDetailsModel() { Result = 1, Status = "Win" });
 
-            this.Match = new ObservableCollection<MatchDetailsModel>();
+		this.Match.Add(new MatchDetailsModel() { Result = -1, Status = "Loss" });
 
-            this.Match.Add(new MatchDetailsModel() { Result = 1, Status = "Win" });
+		this.Match.Add(new MatchDetailsModel() { Result = 0, Status = "Draw" });
 
-            this.Match.Add(new MatchDetailsModel() { Result = -1, Status = "Loss" });
+		this.Match.Add(new MatchDetailsModel() { Result = 1, Status = "Win" });
 
-            this.Match.Add(new MatchDetailsModel() { Result = 0, Status = "Draw" });
+		this.Match.Add(new MatchDetailsModel() { Result = 1, Status = "Win" });
 
-            this.Match.Add(new MatchDetailsModel() { Result = 1, Status = "Win" });
+		this.Match.Add(new MatchDetailsModel() { Result = -1, Status = "Loss" });
 
-            this.Match.Add(new MatchDetailsModel() { Result = 1, Status = "Win" });
+	}
 
-            this.Match.Add(new MatchDetailsModel() { Result = -1, Status = "Loss" });
+	public ObservableCollection<MatchDetailsModel> Match { get; set; }
 
-        }
+}
 
-        public ObservableCollection<MatchDetailsModel> Match { get; set; }
-
-    }
 {% endhighlight  %}
+
+{% endtabs %}
+
 Execute the above code to render the following output.
 
-
-![C:/Users/ApoorvahR/Desktop/4.png](Sparkline-Types_images/Sparkline-Types_img4.png)
-
-
-
+![](Sparkline-Types_images/Sparkline-Types_img4.png)

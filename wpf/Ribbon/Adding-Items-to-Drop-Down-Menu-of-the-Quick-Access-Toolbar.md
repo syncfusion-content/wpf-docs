@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar
+title: Adding Items to Drop Down Menu of the Quick Access Toolbar | Ribbon | WPF | Syncfusion
 description: adding items to drop-down menu of the quick access toolbar
 platform: wpf
 control: Ribbon
@@ -74,5 +74,5 @@ this.ribbon1.QuickAccessToolBar.QATMenuItems.Add(button2);
 
 ## See Also
 
-Quick Access Toolbar
+[Quick Access Toolbar](http://help.syncfusion.com/wpf/ribbon/quick-access-toolbar)
 

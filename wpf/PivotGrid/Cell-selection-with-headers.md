@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Cell selection with headers
+title: Cell selection with headers| PivotGrid | Wpf | Syncfusion
 description: Cell selection with headers
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Cell selection with headers
+# Cell selection with headers
 
 PivotGrid control provides cell selection feature that is used to select values along the row and column headers according to their covered ranges.
 
-Properties
+### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-    {{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Parameters</th><th>
+    Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 EnableSelectionWithHeaders</td><td>
@@ -35,6 +35,7 @@ bool</td></tr>
 The following code example explains the usage of the "EnableAllowSelctionWithHeaders" property. You can use the mentioned 
 property either in XAML or C#.
 
+{% tabs %}
 {% highlight xml %}  
 
 
@@ -47,6 +48,7 @@ property either in XAML or C#.
 this.pivotGrid1.AllowSelectionWithHeaders = true;
 
 {% endhighlight %} 
+{% endtabs %}
 
 It is used to select the header cells along with the value cells while selecting the respective row(s) or column(s). Refer the following screenshots.
 
@@ -55,12 +57,14 @@ It is used to select the header cells along with the value cells while selecting
 
 
 Selecting the sub-columns along with headers
+{:.caption}
 
 ![D:/Capture16.PNG](Features_images/Features_img68.png)
 
 
 
 Selecting the entire row along with headers
+{:.caption}
 
 ### Sample Link
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonGallery
+title: RibbonGallery | Ribbon | WPF | Syncfusion
 description: ribbongallery
 platform: wpf
 control: Ribbon

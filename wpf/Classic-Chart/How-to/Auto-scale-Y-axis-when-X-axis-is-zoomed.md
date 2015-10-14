@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-scale-Y-axis-when-X-axis-is-zoomed
+title: Auto scale Y axis when X axis is zoomed | wpf | Syncfusion
 description: auto scale y axis when x axis is zoomed
 platform: wpf
 control: Chart (Classic)
@@ -19,6 +19,8 @@ documentation: ug
 
 
 The following code example must be given under the VisibleRangeChanged event.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -212,3 +214,4 @@ End Sub
 {% endhighlight  %}
 
 
+{% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| PercentTextBox  | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: PercentTextBox 
@@ -17,23 +17,22 @@ documentation: ug
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-# PercentTextBox Members
+## PercentTextBox Members
 
 PercentTextBox exposes the following members:
 
-# Properties
+### Properties
 
-Property table
 
 <table>
 <tr>
 <th>
-{{ '**Name**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Value it Accepts**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Default Value**' | markdownify }}</th><th>
-{{ '**Reference Link**' | markdownify }}</th></tr>
+Name</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 ApplyNegativeForeground</td><td>
@@ -326,15 +325,15 @@ ZeroColor</td></tr>
 
 ### Methods
 
-Methods table
+
 
 <table>
 <tr>
 <th>
-{{ '**Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th><th>
-{{ '**Overloads**' | markdownify }}</th></tr>
+Name</th><th>
+Description</th><th>
+Return Type</th><th>
+Overloads</th></tr>
 <tr>
 <td>
 Copy()</td><td>
@@ -357,16 +356,16 @@ Void</td><td>
 
 ### Events
 
-Events table
+
 
 <table>
 <tr>
 <th>
-{{ '**Name**' | markdownify }}</th><th>
-{{ '**Event Type**' | markdownify }}</th><th>
-{{ '**Event Args Parameter**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Reference Link**' | markdownify }}</th></tr>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 PercentValueChanged</td><td>
@@ -424,51 +423,52 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 
 
 
-![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
+   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
 
 
 3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 4. Add the following reference with the sample project:
+
 1. Syncfusion.Shared.WPF.dll
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 2. Click the C# file, to open the C# file and add the PercentTextBox to the application. 
 
-{% highlight c# %}
+
  
-   
+   ~~~csharp   
 
-    public partial class MainWindow : Window
+		public partial class MainWindow : Window
 
-    {
+		{
 
-        public MainWindow()
+		public MainWindow()
 
-        {
+		{
 
-            InitializeComponent();
+		InitializeComponent();
 
-            Syncfusion.Windows.Shared.PercentTextBox percentTextBox = new Syncfusion.Windows.Shared.PercentTextBox();
+		Syncfusion.Windows.Shared.PercentTextBox percentTextBox = new Syncfusion.Windows.Shared.PercentTextBox();
 
-            percentTextBox.Width = 150;
+		percentTextBox.Width = 150;
 
-            percentTextBox.Height = 25;
+		percentTextBox.Height = 25;
 
-            this.LayoutRoot.Children.Add(percentTextBox);
+		this.LayoutRoot.Children.Add(percentTextBox);
 
-        }
+		}
 
-     }
-
- {% endhighlight %}
+		}
 
 
+
+   ~~~
 
 
 
@@ -479,11 +479,6 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 
 N>If you do not set any PercentValue to the PercentTextBox then the default value will be as follows: If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
-### See Also
-
-Creating a PercentTextBox by using XAML
-
-Creating a PercentTextBox by using Expression Blend
 
 ## Creating a PercentTextBox by using XAML
 
@@ -495,36 +490,35 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
- {% highlight xml %}
+   ~~~xaml
 
     
 
-    <Window x:Class="WpfApp.MainWindow"
+		<Window x:Class="WpfApp.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-    <Grid x:Name="LayoutRoot">
-
-        <syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
-
-    </Grid>
-
-</Window>
-
- {% endhighlight %}
+		Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 
+
+		<Grid x:Name="LayoutRoot">
+
+		<syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
+
+		</Grid>
+
+		</Window>
+
+
+   ~~~
 
 
 
@@ -533,9 +527,6 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 
-### See Also
-
-Creating a PercentTextBox by using Expression Blend
 
 ## Creating a PercentTextBox by using Expression Blend
 
@@ -546,53 +537,53 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 3. In the Project types panel, select WPF Application and then click OK.
 
-![](Getting-Started_images/Getting-Started_img10.png)
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 4. Add the following reference with the sample project:
-1. Syncfusion.Shared.WPF.dll
-2. On the Window menu, select Assets. This opens the Assets Library dialog box.
+   1. Syncfusion.Shared.WPF.dll
+   2. On the Window menu, select Assets. This opens the Assets Library dialog box.
 5. In the Search box, type PercentTextBox. This displays the search results.
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 6. Drag the PercentTextBox control to Design View.
 
-![](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
- {% highlight xml %}
+
 
     
+   ~~~xaml
+
+
+		<Window x:Class="WpfApp.MainWindow"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 
 
-<Window x:Class="WpfApp.MainWindow"
+		<Grid x:Name="LayoutRoot">
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		<syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		</Grid>
 
-        Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+		</Window>
 
-
-
-    <Grid x:Name="LayoutRoot">
-
-        <syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
-
-    </Grid>
-
-</Window>
-
- {% endhighlight %}
+   ~~~
 
 
 
@@ -601,51 +592,43 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 ![](Getting-Started_images/Getting-Started_img13.png)
 
 
-### See Also
-
-Creating a PercentTextBox by using XAML
-
-Creating a PercentTextBox by using C#
-
-Blendability
-
 ## Setting Value
 
 You have to use the PercentValue property to set value for the PercentTextBox.
 
 N> Do not use the Text property to set the value for the PercentTextBox. Use only the PercentValue property.
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="100"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}percentTextBox.PercentValue = 100;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"    
+PercentValue="100"/>
+{% endhighlight %}
+
+{% highlight c# %}
+percentTextBox.PercentValue = 100;
+{% endhighlight %}
+{% endtabs %}
+
 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
 
 
-### See Also
-
-Minimum and Maximum Value
-
-NullValue support
 
 ## Setting Minimum and Maximum Value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the PercentTextBox.
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25"                            PercentValue="100" MinValue="-999.99" MaxValue="999.99"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25" 
+PercentValue="100" MinValue="-999.99" MaxValue="999.99"/>
+{% endhighlight %}
+
+{% highlight c# %}
+percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img15.png)
@@ -657,20 +640,23 @@ You can set the Watermark for the PercentTextBox by using the WatermarkText prop
 
 N> WatermarkText is visible only when the value is null.
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="100"            PercentValue="{x:Null}" MinValue="-999" MaxValue="999"            UseNullOption="True"            WatermarkText="Type Here" WatermarkTextIsVisible="True"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;percentTextBox.WatermarkText = "Type Here";percentTextBox.WatermarkTextIsVisible = true;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="100"        
+    PercentValue="{x:Null}" MinValue="-999" MaxValue="999"       
+	UseNullOption="True"          
+	WatermarkText="Type Here" WatermarkTextIsVisible="True"/>
+	{% endhighlight %}
+	
+{% highlight c# %}
+percentTextBox.UseNullOption = true;
+percentTextBox.NullValue = null;
+percentTextBox.WatermarkText = "Type Here";
+percentTextBox.WatermarkTextIsVisible = true;
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 
-
-### See Also
-
-WatermarkTemplate
 

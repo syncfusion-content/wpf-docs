@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Events
+title: Events | GridData (Classic) | wpf | Syncfusion
 description: Events
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # Events
@@ -15,33 +15,29 @@ The GridData control offers technical benefits by declaring all its events as Ro
 ## Subscribing to Events
 
 In order to get event notifications, the grid needs to be wired up with the required events. This process is called as subscribing to the events. It can be done using either XAML or C# code.
-{% highlight xml %}
 
+{% tabs %}
 
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" ItemsSource="{StaticResource ordersSource}"
 
 MouseMove="dataGrid_MouseMove">
 
-
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 this.dataGrid.MouseMove+=new MouseEventHandler(dataGrid_MouseMove);
 
-
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 For either of the above code languages, you should have the following C# code to handle the MouseMove event.
+
 {% highlight c# %}
-
-
-
 
 private void dataGrid_MouseMove(object sender, MouseEventArgs e)
 
@@ -55,19 +51,13 @@ private void dataGrid_MouseMove(object sender, MouseEventArgs e)
 
 N> These Grid WPF mouse events are more advantageous than using any other default mouse events because the default mouse events are controlled by Mouse Controller that makes it very hard to access the underlying data; whereas in case of Grid mouse events, it is directly possible to access the underlying data easily.
 
-
-
 ## Unsubscribing the events
 
 If you do not want the grid to listen to the event, you can unwire the event from the grid as follows.
+
 {% highlight c# %}
 
-
-
-
 this.dataGrid.MouseMove-=new MouseEventHandler(dataGrid_MouseMove);
-
-
 
 {% endhighlight %}
 

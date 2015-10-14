@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon-State-Persistence
+title: Ribbon State Persistence | Ribbon | WPF | Syncfusion
 description: ribbon state persistence
 platform: wpf
 control: Ribbon
@@ -188,8 +188,7 @@ The user can persist the Ribbon States at application exit and load by handling 
 
 {% highlight c# %}
  
-    
-
+   
 <syncfusion:RibbonWindow x:Class="RibbonSample.Window1" x:Name="ribbonwindow"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -258,7 +257,7 @@ private void ribbonwindow_Loaded(object sender, RoutedEventArgs e)
 
   }
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 

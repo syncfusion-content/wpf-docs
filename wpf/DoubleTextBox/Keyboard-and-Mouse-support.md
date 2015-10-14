@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-and-Mouse-support
+title: Keyboard and Mouse support| DoubleTextBox  | Wpf | Syncfusion
 description: keyboard and mouse support
 platform: wpf
 control: DoubleTextBox 

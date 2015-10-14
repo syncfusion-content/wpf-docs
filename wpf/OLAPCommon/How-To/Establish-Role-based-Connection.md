@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Establish-Role-based-Connection
+title: Establish Role based Connection| OLAPCommon | Wpf | Syncfusion
 description: establish role-based connection
 platform: wpf
 control: OLAPCommon
@@ -14,7 +14,7 @@ documentation: ug
 You can apply Role-based filtering to OLAP components by specifying the appropriate role name designed for specific set of users in the SSAS Cube. You must specify the role name in the “Roles” attribute of the connection string. The following code example illustrates this.
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -33,3 +33,4 @@ Dim olapDataManager As OlapDataManager = New OlapDataManager("Data Source=http:/
 
 
 {% endhighlight  %}
+{% endtabs %}

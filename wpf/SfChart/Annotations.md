@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations
+title: Annotations| SfChart | Wpf | Syncfusion
 description: annotations
 platform: wpf
 control: SfChart
@@ -13,7 +13,7 @@ SfChart supports Annotations. It allows you to mark the specific area of interes
 
 The following APIs are used to define and customize Annotation.
 
-## Annotations
+### Annotations
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ Events
 
 The following events are supported by Annotation.
 
-## Annotation Events
+### Annotation Events
 
 <table>
 <tr>
@@ -144,9 +144,9 @@ The following code example and screenshot demonstrate the usage of TextAnnotatio
 
 <syncfusion:SfChart.Annotations>
 
-            <syncfusion:TextAnnotation Text="Company Details" CoordinateUnit="Pixel" FontFamily="Calibri (Body)" FontSize="14"FontStyle="Italic" Angle="35" X1="300" Y1="580" EnableEditing="True" />
+ <syncfusion:TextAnnotation Text="Company Details" CoordinateUnit="Pixel" FontFamily="Calibri (Body)" FontSize="14"FontStyle="Italic" Angle="35" X1="300" Y1="580" EnableEditing="True" />
 
-        </syncfusion:SfChart.Annotations>
+</syncfusion:SfChart.Annotations>
 
 {% endhighlight %}
 
@@ -189,7 +189,7 @@ SfChart provides you with an editing option for the text in any annotations. The
 
 
 
-### OnEditMode:
+### OnEditMode
 
 ![C:/Users/sureshs/Desktop/sshot-3.png](Annotations_images/Annotations_img3.png)
 
@@ -233,11 +233,11 @@ The following code demonstrates how to add ImageAnnotation to chart control.
 
 <syncfusion:SfChart.Annotations>
 
-            <syncfusion:ImageAnnotation ImageSource="Annotation.png" Angle="35" Text="Company Growth" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Foreground="Red" CoordinateUnit="Axis"  X1="1" X2="3.5" Y1="1600" Y2="1710" >
+<syncfusion:ImageAnnotation ImageSource="Annotation.png" Angle="35" Text="Company Growth" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Foreground="Red" CoordinateUnit="Axis"  X1="1" X2="3.5" Y1="1600" Y2="1710" >
 
-                </syncfusion:ImageAnnotation>
+</syncfusion:ImageAnnotation>
 
-        </syncfusion:SfChart.Annotations>
+</syncfusion:SfChart.Annotations>
 
 
 
@@ -301,9 +301,9 @@ The following code example demonstrates the usage of RectangleAnnotation.
 
 <syncfusion:SfChart.Annotations>
 
-            <syncfusion:RectangleAnnotation Text="Company Growth" Foreground="Red" FontSize="14" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  CoordinateUnit="Axis" X1=0" X2="1" Y1="500" Y2="550"/>
+<syncfusion:RectangleAnnotation Text="Company Growth" Foreground="Red" FontSize="14" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  CoordinateUnit="Axis" X1=0" X2="1" Y1="500" Y2="550"/>
 
-        </syncfusion:SfChart.Annotations>
+</syncfusion:SfChart.Annotations>
 {% endhighlight %}
 
 
@@ -343,9 +343,9 @@ The following code demonstrates how to add a LineAnnotation to the chart control
 
 <syncfusion:SfChart.Annotations>
 
-            <syncfusion:LineAnnotation ShowLine="True" LineCap="Arrow" Stroke="Red" StrokeThickness="3" CoordinateUnit="Axis" X1="0" X2="1" Y1="300" Y2="300"/>
+<syncfusion:LineAnnotation ShowLine="True" LineCap="Arrow" Stroke="Red" StrokeThickness="3" CoordinateUnit="Axis" X1="0" X2="1" Y1="300" Y2="300"/>
 
-        </syncfusion:SfChart.Annotations>
+</syncfusion:SfChart.Annotations>
 
 {% endhighlight %}
 
@@ -363,10 +363,11 @@ SfChart provides dragging and resizing support for ShapeAnnotations.The followin
 
   <syncfusion:SfChart.Annotations>
 
-      <syncfusion:RectangleAnnotation CoordinateUnit="Axis X1="0" Y1=”500" X2="1" Y2="550" CanResize="True" CanDrag="True"/>
+   <syncfusion:RectangleAnnotation CoordinateUnit="Axis X1="0" Y1=”500" X2="1" Y2="550" CanResize="True" CanDrag="True"/>
 
  </syncfusion:SfChart.Annotations>
 {% endhighlight %}
+
 ![C:/Users/rachel/Desktop/wpf/sshot-81.png](Annotations_images/Annotations_img7.png)
 
 

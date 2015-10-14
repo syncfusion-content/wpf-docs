@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Data Model
-description: Data Model
+description: Data Model | GridData (Classic) | WPF | Syncfusion
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 
@@ -53,9 +53,6 @@ DataTableCollectionView – Uses the DataView to provide Sorting/Filtering and u
 To specify groups, add GroupDescriptions to ICollectionViewAdv.GroupDescriptions. The following code example shows adding groups to Northwind database.
 {% highlight c# %}
 
-
-
-
 var northwind = new Northwind("Data Source = Northwind.sdf");
 
 var orders = northwind.Orders;
@@ -91,9 +88,6 @@ Iterating through the whole structure
 
 The TopLevelGroup is an extended Group class. Iteration through the whole structure can be performed by looping through the structure using a foreach loop, since the Group already has an Enumerator implemented.
 {% highlight c# %}
-
-
-
 
 var northwind = new Northwind("Data Source = Northwind.sdf");
 
@@ -144,9 +138,6 @@ Specifies a caption summary row required by an UI control to display the group c
 Adding SortDescriptions to the ICollectionView would sort the internal data.
 {% highlight c# %}
 
-
-
-
 var orders = northwind.Orders;
 
 var queryableCollectionView = new QueryableCollectionView(orders);
@@ -169,9 +160,6 @@ foreach (var record in queryableCollectionView.Records)
 
 The TopLevelGroup works in conjunction with the sort descriptions present in the ICollectionView. It would automatically sort the groups and its bottom level group (records).
 {% highlight c# %}
-
-
-
 
 var orders = northwind.Orders;
 

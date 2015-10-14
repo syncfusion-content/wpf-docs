@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events| DropDownButtonAdv | Wpf | Syncfusion
 description: events
 platform: wpf
 control: DropDownButtonAdv
@@ -18,11 +18,16 @@ This event occurs before opening the DropDown.
 The following code adds the DropDownOpening event handler to the DropDownButtonAdv control:
 
 
+{% tabs %}
+{% highlight xml %} 
+<shared:DropDownButtonAdv DropDownOpening="DropDownButtonAdv_DropDownOpening"/>
+{% endhighlight %}
 
-{% highlight xml %} <shared:DropDownButtonAdv DropDownOpening="DropDownButtonAdv_DropDownOpening"/>{% endhighlight %}
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownOpening +=new CancelEventHandler(button_DropDownOpening);{% endhighlight %}
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.DropDownOpening +=new CancelEventHandler(button_DropDownOpening);
+{% endhighlight %}
+{% endtabs %}
 
 
 ## DropDownOpened
@@ -33,11 +38,16 @@ The following code adds the DropDownOpened event handler to the DropDownButtonAd
 
 
 
+{% tabs %}
+{% highlight xml %}
+<shared:DropDownButtonAdv DropDownOpened="DropDownButtonAdv_DropDownOpened"/> 
+{% endhighlight %}
 
-{% highlight xml %}<shared:DropDownButtonAdv DropDownOpened="DropDownButtonAdv_DropDownOpened"/> {% endhighlight %}
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownOpened +=new RoutedEventHandler(button_DropDownOpened); {% endhighlight %} 
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.DropDownOpened +=new RoutedEventHandler(button_DropDownOpened); 
+{% endhighlight %} 
+{% endtabs %}
 
 
 ## DropDownClosing
@@ -48,11 +58,16 @@ The following code adds the DropDownClosing event handler to the DropDownButtonA
 
 
 
+{% tabs %}
+{% highlight xml %} 
+<shared:DropDownButtonAdv DropDownClosing="DropDownButtonAdv_DropDownClosing"/>
+{% endhighlight %}
 
-{% highlight xml %} <shared:DropDownButtonAdv DropDownClosing="DropDownButtonAdv_DropDownClosing"/>{% endhighlight %}
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownClosing +=new CancelEventHandler(button_DropDownClosing);{% endhighlight %}
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.DropDownClosing +=new CancelEventHandler(button_DropDownClosing);
+{% endhighlight %}
+{% endtabs %}
 
 ## DropDownClosed 
 
@@ -61,10 +76,15 @@ This event occurs after closed the DropDown.
 The following code adds the DropDownClosed event handler to the DropDownButtonAdv control:
 
 
+{% tabs %}
+{% highlight xml %} 
+<shared:DropDownButtonAdv DropDownClosed="DropDownButtonAdv_DropDownClosed"/> 
+{% endhighlight %} 
 
-{% highlight xml %} <shared:DropDownButtonAdv DropDownClosed="DropDownButtonAdv_DropDownClosed"/> {% endhighlight %} 
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownClosed +=new RoutedEventHandler(button_DropDownClosed); {% endhighlight %} 
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.DropDownClosed +=new RoutedEventHandler(button_DropDownClosed); 
+{% endhighlight %} 
+{% endtabs %}
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit-Mode
+title: Edit Mode| Hierarchical Navigator | Wpf | Syncfusion
 description: edit mode
 platform: wpf
 control: Hierarchical Navigator

@@ -1,31 +1,33 @@
 ---
 layout: post
-title: Add-labels-for-track-ball
+title: Add labels for track ball | SfSparkline | wpf | Syncfusion
 description: add labels for track ball
 platform: wpf
-control: Sparkline
+control: SfSparkline
 documentation: ug
 ---
 
-### Add labels for track ball
+# Add labels for track ball
 
 We can add labels for track ball to show the corresponding values. In order to add labels for the trackball, you need to subscribe the event OnSparklineMouseMove and you can get the following data’s from event argument.
 
-{% highlight xml %}
+{% tabs %}
 
-      <Page.DataContext>
+{% highlight xaml %}
 
-            <local:UsersViewModel/>
+<Page.DataContext>
 
-      </Page.DataContext>
+	<local:UsersViewModel/>
 
-            <Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
+</Page.DataContext>
 
-            </Syncfusion:SfLineSparkline>
+<Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
+
+</Syncfusion:SfLineSparkline>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
     ContentPresenter info;
 
@@ -52,13 +54,11 @@ We can add labels for track ball to show the corresponding values. In order to a
             info.Arrange(new Rect(args.Coordinate.X,args.Coordinate.Y,info.ActualWidth,info.ActualHeight));
 
         }
-		{% endhighlight %}
+		
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the snapshot for track ball labels,
 
-![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
-
-
-
-
-
+![](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)

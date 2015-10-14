@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip
+title: Tooltip| SfSchedule | Wpf | Syncfusion
 description: tooltip
 platform: wpf
 control: SfSchedule
@@ -10,6 +10,7 @@ documentation: ug
 # Tooltip
 
 Appointment Tooltip is used to view the details of the appointment in user required design. This tooltip will be displayed when the mouse is over the appointments whereas in touch device it will be displayed on holding over the appointments. The schedule appointment tooltip will be displayed only when the AppointmentTooltipTemplate property is set. The AppointmentTooltipTemplate is of type DataTemplate.
+{% tabs %}
 {% highlight html %}
 
 
@@ -17,39 +18,39 @@ Appointment Tooltip is used to view the details of the appointment in user requi
 
 <Schedule:SfSchedule ScheduleType="Week" Background="WhiteSmoke" >
 
-    <Schedule:SfSchedule.AppointmentTooltipTemplate>
+<Schedule:SfSchedule.AppointmentTooltipTemplate>
 
-        <DataTemplate>
+<DataTemplate>
 
-            <Grid Background="WhiteSmoke"  Height="90" Width="210">
+<Grid Background="WhiteSmoke"  Height="90" Width="210">
 
-                <Grid.RowDefinitions>
+<Grid.RowDefinitions>
 
-                    <RowDefinition/>
+<RowDefinition/>
 
-                    <RowDefinition Height="10"/>
+<RowDefinition Height="10"/>
 
-                    <RowDefinition/>
+<RowDefinition/>
 
-                    <RowDefinition />
+<RowDefinition />
 
-                </Grid.RowDefinitions>
+</Grid.RowDefinitions>
 
-                <Border Grid.Row="0" Background="{Binding AppointmentBackground}">
+<Border Grid.Row="0" Background="{Binding AppointmentBackground}">
 
-                    <TextBlock Margin="10,5,0,0"  FontSize="16" Text="{Binding Subject}" Grid.Row="0"/>
+<TextBlock Margin="10,5,0,0"  FontSize="16" Text="{Binding Subject}" Grid.Row="0"/>
 
-                </Border>
+</Border>
 
-                <TextBlock FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="20,0,0,0" Text="Location: " Grid.Row="2"/>
+<TextBlock FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="20,0,0,0" Text="Location: " Grid.Row="2"/>
 
-                <TextBlock FontSize="16" Margin="20,0,0,0" Text="{Binding Location}" Grid.Row="3"/>
+<TextBlock FontSize="16" Margin="20,0,0,0" Text="{Binding Location}" Grid.Row="3"/>
 
-            </Grid>
+</Grid>
 
-        </DataTemplate>
+</DataTemplate>
 
-    </Schedule:SfSchedule.AppointmentTooltipTemplate>
+</Schedule:SfSchedule.AppointmentTooltipTemplate>
 
 </Schedule:SfSchedule>
 
@@ -75,6 +76,7 @@ Location = "Hutchison Road"
 });
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Tooltip_images/Tooltip_img1.jpeg)
 

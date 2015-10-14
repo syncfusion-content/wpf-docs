@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change-the-position-of-the-Chart-Legend
+title: Change the position of the Chart Legend | wpf | Syncfusion
 description: change the position of the chart legend
 platform: wpf
 control: Chart (Classic)
@@ -10,8 +10,6 @@ documentation: ug
 ## Change the position of the Chart Legend
 
 Chart Legend can be docked by using the Dock property of DockPanel class. The Legend can be docked to the top, left, bottom or right of either the Chart or Chart Area; also it can be placed anywhere inside or outside the Chart Area (floating).
-
-_Property Table_
 
 <table>
 <tr>
@@ -24,10 +22,10 @@ ChartDockPanel.Dock</td><td>
 Docks the Chart Legend in the Chart or Chart Area. The values provided are as follows:Top: Docks the Chart Legend to the top.Bottom: Docks the Chart Legend to the bottom.Right: Docks the Chart Legend to the right.Left: Docks the Chart Legend to the left.Floating: Chart Legend can be dragged anywhere inside or outside the Chart Area.</td></tr>
 </table>
 The following code example illustrates how to dock the Chart Legend in the Chart Area.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <chart:Chart.Legends>
 
@@ -48,16 +46,11 @@ The following code example illustrates how to dock the Chart Legend in the Chart
 
 {% highlight c# %}
 
-
-
-
 ChartDockPanel.SetDock(Legend1, ChartDock.Left);
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img1.png)
-
-
 
 ![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img2.png)
 

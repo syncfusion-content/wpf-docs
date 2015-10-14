@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | DateTimeEdit | wpf | Syncfusion
 description: overview
 platform: wpf
 control: DateTimeEdit
@@ -24,19 +24,9 @@ The core features of the DateTimeEdit are as follows:
 
 ## Control Structure
 
-
-
 ![](Overview_images/Overview_img1.png)
 
-
-
-
-
 ![](Overview_images/Overview_img2.png)
-
-
-
-
 
 ![](Overview_images/Overview_img3.png)
 

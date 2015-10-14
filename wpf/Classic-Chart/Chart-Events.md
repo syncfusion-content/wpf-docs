@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Events
+title: Chart Events | Chart(Classic) | wpf | Syncfusion
 description: Chart Events
 platform: wpf
 control: Chart (Classic)
@@ -15,10 +15,10 @@ ChartAxis events that could be used to track the Axis changes are as follows.
 Axis.Changed
 
 This event is triggered whenever any properties of the axis are changed.
+
+
+
 {% highlight c#  %}
-
-
-
 
 Area.PrimaryAxis.Changed += new EventHandler(PrimaryAxis_Changed);   
 
@@ -36,10 +36,9 @@ void PrimaryAxis_Changed(object sender, EventArgs e)
 
 Axis.RangeChanged
 {% endhighlight  %}
+
 Both Primary and Secondary Axis comes with Rangechanged event. This event occurs when the Range of the axis is changed. We could get the old and new range from this event.
 {% highlight c# %}
-
-
 
 
 ///<summary>
@@ -68,15 +67,11 @@ void PrimaryAxis_RangeChanged(object sender, ChartAxisRangeArgs e)
 
 }
 {% endhighlight  %}
-See Also
-
-ChartSeries MouseEvents, Chart MouseEventArgs
 
 ## Chart Series Mouse Events
 
 The following are the mouse events and their corresponding descriptions:
 
-_Events_
 
 <table>
 <tr>
@@ -121,9 +116,10 @@ MouseRightButtonDown</td><td>
 This event is handled when right mouse button is pressed over the series.</td></tr>
 </table>
 These events can be initialized using the following lines of code.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sfchart:ChartSeries Data="0 3 1 4 2 5 3 9 6 4 7 3 8 5 9 11" Type="Pie" MouseClick="ChartSeries_MouseClick"
@@ -131,10 +127,6 @@ These events can be initialized using the following lines of code.
 MouseHover="ChartSeries_MouseHover"/>
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
-
 
 ChartSeries chartSeries = new ChartSeries();
 
@@ -150,17 +142,15 @@ private void ChartSeries_MouseClick(object sender, EventArgs e)
 
 }
 {% endhighlight  %}
-See Also
 
-Chart Axis Events, Chart MouseEventArgs
+{% endtabs %}
 
 ## Chart MouseEventArgs
 
 ChartMouseEventArgs are the arguments returned when the mouse events are triggered by ChartSeries. ChartMouseEventArgs returns the segment on which the mouse events are triggered along with default mouse event args. This event args can be used to perform customization of a segment when a mouse event is encountered. The segment returns different values that can be used to perform calculations or operations. The following lines of code demonstrates how ChartMouseEventArgs can be used to retrieve information about the ChartSeries segment.
+
+
 {% highlight c# %}
-
-
-
 
 series.MouseClick += new ChartMouseEventHandler(series_MouseClick);
 
@@ -179,7 +169,3 @@ MessageBox.Show("X = " + point.X.ToString() + "\n" + "Y = " + point.Y.ToString()
 ![](Chart-Controls_images/Chart-Controls_img221.jpeg)
 
 
-
-See Also
-
-Chart Axis Events, Chart MouseEventArgs

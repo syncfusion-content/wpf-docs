@@ -1,53 +1,44 @@
 ---
 layout: post
-title: Rulers
+title: Rulers | SfDiagram | wpf | Syncfusion
 description: rulers
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Rulers
+# Rulers
 
 The ruler provides a horizontal and vertical guide for measuring in the Diagram control. The ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
 
-
-
-Adding Rulers to the Diagram
+## Adding Rulers to the Diagram
 
 Use the following code example to add the ruler to the Diagram.
 
-[C#]
-
-
+{% highlight c# %}
 
 diagramControl.HorizontalRuler = new Ruler();
 
 diagramControl.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
 
-
+{% endhighlight %}
 
 ![](Rulers_images/Rulers_img1.png)
-{:.image }
+
+Default ruler
+{:.caption}
 
 
-_Figure_ _88__: Default ruler_
 
-
-
-Customizing the Ruler
+## Customizing the Ruler
 
 By default, ruler segments are arranged based on measurement units.
 
 Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. Use the following code example to customize the ruler:
 
-[C#]
-
-
+{% highlight c# %}
 
     // Customizing the Ruler
-
-
 
     public class CustomRuler : Ruler
 
@@ -57,8 +48,6 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
         {
 
-
-
             //Creating a custom segment with 12 intervals.
 
             return new CustomSegment() {Intervals=12 };
@@ -67,13 +56,7 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
     }
 
-
-
-
-
     // Customizing RulerSegment 
-
-
 
     public class CustomSegment : RulerSegment
 
@@ -113,21 +96,17 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
     }
 
-
-
     // Customizing the Ruler ticks.
-
-
 
     public class CustomTick : Tick
 
     {
 
-        // &lt;summary&gt;
+        // <summary>
 
         /// To update the ticks values start value, length, alignment
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="start">Start value</param>
 
@@ -135,11 +114,7 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
         /// <param name="align">Alignment of the tick</param>
 
-
-
-        protected override void ArrangeTick(out double start, out double length, out            
-
-                                                                   TickAlignment align)
+        protected override void ArrangeTick(out double start, out double length, out  TickAlignment align)
 
         {
 
@@ -183,15 +158,11 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
     }
 
-
+ {% endhighlight %}
 
 In this example, the ruler segment width is set to 200 and the number of intervals is customized as 12.
 
 ![](Rulers_images/Rulers_img2.png)
-{:.image }
 
-
-_Figure_ _89__: Customized ruler segments_
-
-
-
+Customized ruler segments
+{:.caption}

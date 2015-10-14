@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | GridControl | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: Grid Control
@@ -231,7 +231,7 @@ The following output is generated using the code above.
 
 The visual aspects of the cell text can be controlled by the following properties.
 
-_Visual properties_
+
 
 <table>
 <tr>
@@ -263,7 +263,7 @@ Determines the angle of rotation of the text</td></tr>
   
 
 
-
+     {%highlight c#%}
 
 			//Setting text, foreground and fonts
 
@@ -324,10 +324,11 @@ Determines the angle of rotation of the text</td></tr>
 			this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
 
 			this.grid.Model[8, 5].CellValue = "Font style is Normal";
+			
+			{%endhighlight%}
 
 
-
-   #### Output
+#### Output
 
    The following output is generated using the code above.
 
@@ -343,7 +344,7 @@ Determines the angle of rotation of the text</td></tr>
 
 
 
-
+           {%highlight c#%}
 
 
 
@@ -388,10 +389,13 @@ Determines the angle of rotation of the text</td></tr>
 			this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
 
 			this.grid.Model.RowHeights[12] = 50;
+			
+			
+			{%endhighlight%}
 
 
 
-   #### Output
+#### Output
 
    The following output is generated using the code above.
 
@@ -401,15 +405,15 @@ Determines the angle of rotation of the text</td></tr>
 
 
 
-   #### Borders
+#### Borders
 
    Cell borders can be customized to have different color, thickness and style. It is possible to have different border styles for top, bottom, left and right borders for the same cell.
 
-   #### Setting Borders
+#### Setting Borders
 
 
 
-
+           {%highlight c#%}
 
 
 
@@ -493,9 +497,9 @@ Determines the angle of rotation of the text</td></tr>
 
 			this.grid.Model[15, 6].Borders.Right.DashStyle = DashStyles.DashDotDot;
 
+            {%endhighlight%}
 
-
-   #### Output
+#### Output
 
    The following output is generated using the code above.
 
@@ -509,7 +513,7 @@ Determines the angle of rotation of the text</td></tr>
 
 Essential Grid allows the user to specify the format string for Text and DateTime cell values. The following table lists the various format strings supported.
 
-_Data formats_
+
 
 <table>
 <tr>
@@ -543,7 +547,6 @@ $3.14</td></tr>
 </table>
 
 
-_Format_
 
 <table>
 <tr>
@@ -583,7 +586,7 @@ s</td><td>
 
 
 
-
+            {%highlight c#%}
 
 			//Setting Text formats            
 
@@ -626,14 +629,17 @@ s</td><td>
 				rowIndex += 3;
 
 			}
+			
+			
+			{%endhighlight%}
 
 
 
-2. Setting DateTime format
+2.Setting DateTime format
 
 
 
-
+            {%highlight c#%}
 
 
 			//Setting DateTime formats            
@@ -679,8 +685,10 @@ s</td><td>
 				rowIndex += 3;
 
 			}
+			
+			{%endhighlight%}
 
-   {:.prettyprint}
+   
 
 #### Output
 
@@ -715,6 +723,9 @@ this.grid.Model[row, col].Format = "{0:US}";
 this.grid.Model[row, col].FormatProvider = new CustomNumberFormat();
 
 {% endhighlight  %}
+
+
+
 {% highlight vbnet %}
 
 
@@ -937,9 +948,11 @@ The following output is generated using the code above.
 
 
 
-See Also
+{%seealso%}
 
 QueryCoveredRange event
+
+{%endseealso%}
 
 ## Banner Cells
 
@@ -1021,9 +1034,11 @@ The following output is generated using the code above.
 
 
 
-See Also
+{%seealso%}
 
 QueryCellSpanBackgrounds event
+
+{%endseealso%}
 
 ## Overlapping Cells 
 
@@ -1073,7 +1088,7 @@ Properties, Methods and Events tables
 
 ### Properties
 
-_Properties_
+
 
 <table>
 <tr>

@@ -1,61 +1,57 @@
 ---
 layout: post
-title: Annotations
+title: Annotations | SfDiagram | wpf | Syncfusion
 description: annotations
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Annotations
+# Annotations
 
 The Annotations property of the SfDiagram provides support to add annotations to the Diagraming objects (Node and Connector).
 
-Customizing the Appearance of the Annotations
+## Customizing the Appearance of the Annotations
 
-Template for Editing Annotations
+### Template for Editing Annotations
 
 You can specify a template for editing an annotation by using the DataTemplate property. The default template for editing an annotation is TextBox.
 
-[XAML]
+{% highlight xaml %}
 
+<DataTemplate x:Key="edittemplate">
 
+	<TextBox Text="{Binding Path=Content, Mode=TwoWay}"	ManipulationMode="None" AcceptsReturn="True">
 
-&lt;DataTemplate x:Key="edittemplate"&gt;
+	</TextBox>
 
-<TextBox Text="{Binding Path=Content, Mode=TwoWay}" 
+</DataTemplate>
 
-ManipulationMode="None" AcceptsReturn="True">
+{% endhighlight %}
 
-&lt;/TextBox&gt;
-
-&lt;/DataTemplate&gt;
-
-Template for Viewing Annotations
+### Template for Viewing Annotations
 
 You can specify a template for viewing an annotation by using the DataTemplate property. The default template for viewing an annotation is TextBlock.
 
-[XAML]
+{% highlight xaml %}
 
+<DataTemplate x:Key="viewtemplate">
 
+	<Border Padding="10">
 
-&lt;DataTemplate x:Key="viewtemplate"&gt;
+		<TextBlock Text="{Binding Path=Content, Mode=TwoWay}" FontWeight="ExtraBold" FontSize="15" FontFamily="Times New Roman">
 
-&lt;Border Padding="10"&gt;
+		</TextBlock>
 
-&lt;TextBlock Text="{Binding Path=Content, Mode=TwoWay}" FontWeight="ExtraBold" FontSize="15" FontFamily="Times New Roman"&gt;
+	</Border>
 
-      &lt;/TextBlock&gt;
+</DataTemplate>
 
-&lt;/Border&gt;
-
-&lt;/DataTemplate&gt;
+{% endhighlight %}
 
 The following code example shows how to create an annotation.
 
-[C#]
-
-
+{% highlight c# %}
 
 new AnnotationEditorViewModel()
 
@@ -75,21 +71,21 @@ ViewTemplate=this.Resources["viewtemplate"] as DataTemplate
 
 }
 
-Editing Annotations
+{% endhighlight %}
+
+## Editing Annotations
 
 You can edit an annotation by double-clicking it. When a node is double-clicked, the first annotation displayed enters the Edit mode.
 
 ![](Annotations_images/Annotations_img1.png)
-{:.image }
 
 
-Adding the Annotations to Nodes
+
+### Adding the Annotations to Nodes
 
 The following code example shows how to add annotations to a Node:
 
-[C#]
-
-
+{% highlight c# %}
 
 // Creating Node
 
@@ -191,19 +187,17 @@ nodes.Add(n);
 
 diagramcontrol.Nodes = nodes;
 
-
+{% endhighlight %}
 
 ![](Annotations_images/Annotations_img2.png)
-{:.image }
 
 
-Adding Annotations to Connectors
+
+### Adding Annotations to Connectors
 
 The following code example shows how to add annotations to a Connector:
 
-[C#]
-
-
+{% highlight c# %}
 
 // Creates Connector
 
@@ -217,8 +211,6 @@ c.SourcePoint = new Point(100, 100);
 
 c.Foreground = new SolidColorBrush(Colors.Black);
 
-
-
 // Creates Annotator Collection
 
 c.Annotations = new ObservableCollection<IAnnotation>()
@@ -228,6 +220,7 @@ c.Annotations = new ObservableCollection<IAnnotation>()
 new AnnotationEditorViewModel()
 
 {
+
 
 Content="Label1", 
 
@@ -262,9 +255,6 @@ lines.Add(c);
 
 diagramcontrol.Connectors = lines;
 
-
+{% endhighlight %}
 
 ![](Annotations_images/Annotations_img3.png)
-{:.image }
-
-

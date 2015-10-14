@@ -1,6 +1,6 @@
 ---
 layout: post
-title: All-Day-Panel
+title: All Day Panel| They are | Wpf | Syncfusion
 description: all-day panel 
 platform: wpf
 control: SfSchedule
@@ -10,11 +10,13 @@ documentation: ug
 # All-Day Panel 
 
 The schedule All Day panel visibility can be customized by ShowAllDay and its default value is true.
+
+{% tabs %}
 {% highlight html %}
 
 
 
-    <Schedule:SfSchedule x:Name="schedule" ShowAllDay="False"/>
+<Schedule:SfSchedule x:Name="schedule" ShowAllDay="False"/>
 
 
 {% endhighlight  %}
@@ -22,14 +24,15 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ShowAllDay = false;
+schedule.ShowAllDay = false;
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 
 ![](All-Day-Panel_images/All-Day-Panel_img1.png)

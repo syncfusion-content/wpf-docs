@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scrolling-Ribbon-Tab-and-Ribbon-Bar
+title: Scrolling Ribbon Tab and Ribbon Bar | Ribbon | WPF | Syncfusion
 description: scrolling ribbon tab and ribbon bar
 platform: wpf
 control: Ribbon

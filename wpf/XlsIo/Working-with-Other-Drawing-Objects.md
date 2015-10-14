@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working-with-Other-Drawing-Objects
+title: Working with Other Drawing Objects | XlsIO | WPF | Syncfusion
 description: working with other drawing objects 
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -15,7 +15,11 @@ Essential XlsIO supports working with form controls, OLE objects, and auto-shape
 
 Essential XlsIO provides support to read and write the Text Box, Check Box, and Combo Box controls. It enables creation of forms that are user-friendly and also enhances the appearance of the forms.
 
+
 N> Essential XlsIO provides support to read and write Form controls. Support for Active X Form controls is not yet available.
+
+
+
 
 This section explains the usage of the following Form controls.
 
@@ -29,8 +33,10 @@ This section explains the usage of the following Form controls.
 
 Essential XlsIO can read and write text boxes. The ITextBoxShape interface lets you add a new text box inside a worksheet. The IFill interface is used to customize the inner appearance of the textbox. IShapeLineFormat interface is used to modify the border. Various other properties like Horizontal and Vertical Alignment, Alternative Text, Text Rotation, and so on, are also supported.
 
-{% highlight C#  %}
 
+
+{% tabs %}
+{% highlight C# %} 
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -94,12 +100,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
-{% endhighlight %}
+
+{% endhighlight %} 
 
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -165,9 +170,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-{% endhighlight %}
-
-![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img1.png)
+{% endhighlight %} 
+{% endtabs %}
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png)
 
 
 
@@ -175,9 +180,10 @@ excelEngine.Dispose()
 
 Essential XlsIO supports reading and writing check boxes. This can be done by using the ICheckBoxShape interface that is used to add a check box inside a worksheet.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %}  
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -251,9 +257,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -327,9 +331,10 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-{% endhighlight %}
+{% endhighlight %} 
+{% endtabs %}
 
-![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png)
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png)
 
 
 
@@ -337,9 +342,10 @@ excelEngine.Dispose()
 
 Essential XlsIO provides support to read/write a Combo Box control. This is achieved by using the IComboBoxShape interface that is used to add a combo box inside a worksheet. The following code example illustrates how to read/write a Combo Box control.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %}  
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -410,11 +416,11 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
@@ -486,10 +492,11 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
-
-![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png)
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png)
 
 
 
@@ -497,9 +504,12 @@ excelEngine.Dispose()
 
 Essential XlsIO now provides support to read/write an Option Button control for XLSX format. This can be achieved by using the IOptionButtonShape interface that is used to add an Option button inside a worksheet. The IFill interface is used to customize its appearance. IShapeLineFormat interface is used to modify the border. Various other text alignment properties are also supported. The following code example illustrates how to read/write an Option button control.
 
-{% highlight C#  %}
 
 
+
+{% tabs %}
+
+{% highlight C# %} 
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -575,11 +585,12 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
-{% endhighlight %}
+
+ {% endhighlight %} 
+
+
 
 {% highlight vbnet %}
-
-
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -654,10 +665,11 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+ {% endhighlight %}
+{% endtabs %}
 
-![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png)
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png)
 
 
 
@@ -665,11 +677,16 @@ excelEngine.Dispose()
 
 Object Linking and Embedding (OLE) is one of the best known ways to insert data into Microsoft Office documents. Though embedding or linking objects increases the size of the original document, it helps improve the document readability by providing offline reading of documents (where the existing online links can be replaced). In order to read the content of the object, associated software needs to be installed in the machine. For example, a PDF file linked or embedded to an Excel file needs Adobe Reader in order to launch and read the PDF file. Essential XlsIO supports read and write of OLE Objects in XLSX file format. Objects can either be linked or embedded in the Excel documents by using IOleObject interface. 
 
+
+
 N> Currently read and write functions for OLE Objects are supported in Windows, ASP.NET, and WPF platforms only.
 
-List of Properties 
 
-_Properties available_
+
+
+
+_List of Properties_ 
+
 
 <table>
 <tr>
@@ -709,14 +726,14 @@ Normal</td><td>
 System.Drawing.Size</td><td>
 Gets of sets the size of the OLE object.</td></tr>
 </table>
-
-
-##Displaying an OleObject as Icon
+Displaying an OleObject as Icon
 
 The following code example illustrates the condition when the property is set to True.
 
-{% highlight C#  %}
 
+
+{% tabs %}
+{% highlight C# %}  
 
 
 // Step 1: Instantiates the spreadsheet creation engine.
@@ -771,11 +788,11 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -832,14 +849,16 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Setting the Location of an OleObject
 
 The following code example illustrates the condition when the location is set to K column, 8th cell.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %} 
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -895,9 +914,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -954,14 +971,16 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Getting Image of an OleObject
 
 The following code example illustrates the condition where image of the oleObject is accessed.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %} 
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1015,11 +1034,11 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
-{% endhighlight %}
+
+
+ {% endhighlight %}
 
 {% highlight vbnet %}
-
-
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1078,14 +1097,16 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Getting Shape from an OleObject
 
 The following code example illustrates the condition when the property is set to any .png file image.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %}  
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1139,11 +1160,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
-{% endhighlight %}
+{% endhighlight %} 
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1200,14 +1219,16 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Setting the Size of the Object
 
 The following code example illustrates the condition when the property is set to (30,30).
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %}  
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1262,12 +1283,12 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1324,8 +1345,9 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ##OLE Objects and Linking Types
 
@@ -1342,9 +1364,10 @@ Linking an OLE Object to an Excel document
 
 The following code example illustrates how to link an OLE Object to an Excel document.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %}  
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1405,12 +1428,12 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight vbnet %} 
 
 ' Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1477,150 +1500,149 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 2. Embedded Objects  
 
-Embedded objects are stored in the document. When a file is opened in another machine, the embedded object can be viewed without having access to the original data.
+   Embedded objects are stored in the document. When a file is opened in another machine, the embedded object can be viewed without having access to the original data.
 
-Embedding an OLE Object in an Excel document
+   Embedding an OLE Object in an Excel document
 
-The following code example illustrates how to embed an OLE Object to an Excel document.
+   The following code example illustrates how to embed an OLE Object to an Excel document.
 
-{% highlight C#  %}
 
+   ~~~ csharp
 
 
-// Step 1: Instantiates the spreadsheet creation engine.
+    // Step 1: Instantiates the spreadsheet creation engine.
 
-ExcelEngine excelEngine = new ExcelEngine();
+    ExcelEngine excelEngine = new ExcelEngine();
 
 
 
-// Step 2: Instantiates the excel application object.
+    // Step 2: Instantiates the excel application object.
 
-IApplication application = excelEngine.Excel;
+    IApplication application = excelEngine.Excel;
 
 
 
-// A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
+    // A new workbook is created. [Equivalent to creating a new workbook in MS Excel).
 
-// The new workbook will have 2 worksheets.
+    // The new workbook will have 2 worksheets.
 
-IWorkbook workbook = application.Workbooks.Create(2);
+    IWorkbook workbook = application.Workbooks.Create(2);
 
 
 
-IWorksheet sheet = workbook.Worksheets[0];
+    IWorksheet sheet = workbook.Worksheets[0];
 
 
 
-Image image = Image.FromFile("image.png");
+    Image image = Image.FromFile("image.png");
 
 
 
-// Selects the object, the image for the display icon, and the type of the OLEObject to insert.
+    // Selects the object, the image for the display icon, and the type of the OLEObject to insert.
 
-IOleObject ole1 = sheet.OleObjects.Add("Test.pptx", image, OleLinkType.Embed);
+    IOleObject ole1 = sheet.OleObjects.Add("Test.pptx", image, OleLinkType.Embed);
 
 
 
-// Sets the location.
+    // Sets the location.
 
-ole1.Location = sheet[5, 2];
+    ole1.Location = sheet[5, 2];
 
 
 
-// Sets the size.
+    // Sets the size.
 
-ole1.Size = new Size(30, 30);
+    ole1.Size = new Size(30, 30);
 
-string fileName = "Output.xlsx";
+    string fileName = "Output.xlsx";
 
-workbook.Version = ExcelVersion.Excel2010;
+    workbook.Version = ExcelVersion.Excel2010;
 
 
 
-workbook.SaveAs(fileName);
+    workbook.SaveAs(fileName);
 
 
 
-// Closes the workbook.
+    // Closes the workbook.
 
-workbook.Close();
+    workbook.Close();
 
-excelEngine.Dispose();         
-{% endhighlight %}
+    excelEngine.Dispose();         
 
+   ~~~
+   
+   ~~~ vbnet
 
-{% highlight vbnet %}
+        ' Step 1: Instantiates the spreadsheet creation engine.
 
+        Dim excelEngine As ExcelEngine = New ExcelEngine
 
 
-' Step 1: Instantiates the spreadsheet creation engine.
 
-Dim excelEngine As ExcelEngine = New ExcelEngine
+        ' Step 2: Instantiates the excel application object.
 
+        Dim application As IApplication = excelEngine.Excel
 
 
-' Step 2: Instantiates the excel application object.
 
-Dim application As IApplication = excelEngine.Excel
+        ' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
+        'The new workbook will have 2 worksheets.
 
+        Dim workbook As IWorkbook = application.Workbooks.Create(2)
 
-' A new workbook is created. [Equivalent to creating a new workbook in MS Excel].
 
-'The new workbook will have 2 worksheets.
 
-Dim workbook As IWorkbook = application.Workbooks.Create(2)
+        ' Accesses via index.
 
+        Dim sheet As IWorkbook = workbook.Worksheets(0)
 
 
-' Accesses via index.
 
-Dim sheet As IWorkbook = workbook.Worksheets(0)
+        Dim image As Image = Image.FromFile("image.png")
 
 
 
-Dim image As Image = Image.FromFile("image.png")
+        ' Selects the object, the image for the display icon, and the type of the OLEObject to insert.
 
+        Dim ole1 As IOleObject = sheet.OleObjects.Add("Test.pptx", image, OleLinkType.Embed)
 
 
-' Selects the object, the image for the display icon, and the type of the OLEObject to insert.
 
-Dim ole1 As IOleObject = sheet.OleObjects.Add("Test.pptx", image, OleLinkType.Embed)
+        ' Sets the location.
 
+        ole1.Location = sheet(5, 2)
 
 
-' Sets the location.
 
-ole1.Location = sheet(5, 2)
+        ' Sets the size.
 
+        ole1.Size = New Size(30, 30)
 
+        Dim fileName As String = "Output.xlsx"
 
-' Sets the size.
+        workbook.Version = ExcelVersion.Excel2010
 
-ole1.Size = New Size(30, 30)
 
-Dim fileName As String = "Output.xlsx"
 
-workbook.Version = ExcelVersion.Excel2010
+        workbook.SaveAs(fileName)
 
 
 
-workbook.SaveAs(fileName)
+        ' Closes the workbook.
 
+        workbook.Close()
 
+        excelEngine.Dispose()
 
-' Closes the workbook.
-
-workbook.Close()
-
-excelEngine.Dispose()
-
-{% endhighlight %}
-
-![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png)
+   ~~~
+   
+![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img7.png)
 
 
 
@@ -1630,7 +1652,7 @@ AutoShapes help you draw objects on your document. You can create various shapes
 
 The IShape interface is the in-memory representation of the AutoShapes in an Excel workbook. These are used to create Autoshapes and to set properties for those shapes The ITextFrame interface can be used to set various shape text formats.
 
-###Features
+Features
 
 Essential XlsIO supports all major AutoShape features.
 
@@ -1638,19 +1660,18 @@ Essential XlsIO supports all major AutoShape features.
 * Text
 * AlignmentSolidFill
 
-###Interactive Features
+Interactive Features
 
 * Choose one from the options Excel 2003, Excel 2007, Excel 2010 to generate a document in Excel 2003, Excel 2007, and Excel 2010 respectively.
 * Click Create to generate and view the document generated using XlsIO.
 * All features in the preceding list are illustrated in this file.
 
-
-
 The following code example is an illustration of the output.
 
-{% highlight C#  %}
 
+{% tabs %}
 
+{% highlight C# %}  
 
 //New instance of XlsIO is created. [Equivalent to launching MS Excel with no workbooks open].
 
@@ -1866,11 +1887,11 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 'New instance of XlsIO is created. [Equivalent to launching MS Excel with no workbooks open].
 
@@ -2079,11 +2100,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 
+
 'No exception will be thrown if there are unsaved workbooks.
 
 excelEngine.ThrowNotSavedOnDestroy = False
 
 excelEngine.Dispose()
+
 {% endhighlight %}
 
-
+{% endtabs %}

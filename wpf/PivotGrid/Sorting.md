@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting 
+title: Sorting | PivotGrid | Wpf | Syncfusion
 description: sorting 
 platform: wpf
 control: PivotGrid
@@ -8,10 +8,11 @@ documentation: ug
 ---
 
 
-## Sorting
+# Sorting
 
 Sorting data enables you to quickly visualize and understand your data better, organize and find the data that you want, and ultimately make more effective decisions. By default, PivotGrid will populate the data in ascending order. Sorting order can be changed using the Comparer field of PivotItem.
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -116,3 +117,4 @@ End If
 
 {% endhighlight %} 
 
+{% endtabs %}

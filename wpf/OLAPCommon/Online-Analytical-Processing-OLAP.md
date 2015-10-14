@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Online-Analytical-Processing-OLAP
+title: Online Analytical Processing OLAP| OLAPCommon  | Wpf | Syncfusion
 description: online analytical processing (olap)
 platform: wpf
 control: OLAPCommon 
@@ -33,9 +33,8 @@ Or
 
 These setup files can be downloaded at [Microsoft download center](http://www.microsoft.com/en-us/download/details.aspx?id=23089).
 
-> Note: By default the below setup files will be installed while installing Syncfusion’ Essential studio setup for BI edition:
-
-> SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
+N>  By default the below setup files will be installed while installing Syncfusion’ Essential studio setup for BI edition:
+N> SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
 
 
 

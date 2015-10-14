@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working-with-Template-Markers
+title: Working with Template Markers | XlsIO | WPF | Syncfusion
 description: working with template markers 
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ This is another variant of the Template based approach, but the difference is th
 
 ## Create from Array
 
-###Marker Syntax
+Marker Syntax
 
 Each marker starts with some prefix. By default, it is "%" character, and followed by the variable name and properties. There can be several arguments after the variable that are delimited by some character. By default, it is semicolon (;).
 
@@ -21,11 +21,11 @@ Each marker starts with some prefix. By default, it is "%" character, and follow
 
 
 
-##Source
+Source
 
 XlsIO can be used to bind various data sources to these markers. This includes data sources such as Data Table, Data Set, Data Reader, Data View, Array, Variable and Formulas.
 
-###Arguments
+Arguments
 
 You can specify the following arguments in the marker to customize the worksheet.
 
@@ -44,7 +44,9 @@ Here is the sample after dynamically filling the data during runtime.
 
 The unique advantage of this approach is that the end-user can have customized reports without modifying the source code of the report generating application. The following code example illustrates how to bind the data from a data table, array, and formula to a marker.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -126,10 +128,10 @@ workbook.close();
 
 ecelEngine.Dispose();
 
-{% endhighlight %}
+{% endhighlight %} 
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 'Instantiates the spreadsheet creation engine.
@@ -205,11 +207,17 @@ workbook.SaveAs(fileName)
 workbook.close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
+
 Here, CreateTemplateMarkerProcessor returns the ITemplateMarkersProcessor interface that creates and manipulates the marker data. ApplyMarkers method of ITemplateMarkersProcessor is the special method that processes the markers in the template. You can also specify the marker by using the following code example.
 
-{% highlight C# %}
 
+{% tabs %}
+
+
+{% highlight C# %}  
 
 
 //Instantiates the spreadsheet creation engine.
@@ -289,12 +297,12 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();            
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 'Instantiates the spreadsheet creation engine.
 
@@ -367,11 +375,14 @@ workbook.SaveAs(fileName)
 workbook.close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 You can also create charts from the data that is bound at runtime by using the marker.
+![](Working-with-Template-Markers_images/Working-with-Template-Markers_img3.jpeg)
 
-Refer to How to Create Template Markers using XlsIO for more details.
+ Refer to How to Create Template Markers using XlsIO for more details.
 
 ## Create from DataTable 
 
@@ -379,12 +390,14 @@ Detect Data Type and Number Formats
 
 XlsIO now supports detecting the data type and applying the number format to the Template marker. The following is the sample after dynamically detecting and applying data type and number format.
 
-![](Working-with-Template-Markers_images/Working-with-Template-Markers_img3.png)
+![](Working-with-Template-Markers_images/Working-with-Template-Markers_img4.png)
 
 
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 //Instantiates the spreadsheet creation engine.
@@ -437,11 +450,11 @@ workbook.Close();
 
 excelEngine.Dispose();            
 
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 'Instantiates the spreadsheet creation engine.
 
@@ -489,9 +502,11 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()            
-{% endhighlight %}
 
-_List of enumerations_ 
+{% endhighlight %}
+{% endtabs %}
+
+List of enumerations
 
 <table>
 <tr>
@@ -517,15 +532,19 @@ Represents the ‘None’ action.</td></tr>
 
 XlsIO allows the CreateConditionalFormat method in the ITemplateMarkerProcessor to dynamically apply the conditional format. It then creates or applies the conditional format to the template marker range dynamically.  Here is the sample for dynamically applied conditional format to data during runtime.
 
-![](Working-with-Template-Markers_images/Working-with-Template-Markers_img4.png)
+
+
+![](Working-with-Template-Markers_images/Working-with-Template-Markers_img5.png)
 
 
 
 The following code example illustrates how to create or apply conditional format to the Marker.
 
-{% highlight C# %}
 
 
+{% tabs %}
+
+{% highlight C# %}  
 
 //Instantiates the spreadsheet creation engine.
 
@@ -579,11 +598,11 @@ workbook.Close();
 
 excelEngine.Dispose();            
 
-{% endhighlight %}
 
-{% highlight vbnet %}
+{% endhighlight %} 
 
 
+{% highlight vbnet %} 
 
 'Instantiates the spreadsheet creation engine.
 
@@ -635,13 +654,16 @@ workbook.Close()
 excelEngine.Dispose()            
 
 {% endhighlight %}
+{% endtabs %}
 
 For More Information refer to: AutoFilters, Validating Data, Template Markers, Grouping and Ungrouping
 
 ## Create from Business objects 
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 #region Initialize Workbook
@@ -911,12 +933,12 @@ workbook.SaveAs(fileName);
 workbook.close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 'Instantiates the spreadsheet creation engine.
 
@@ -1167,12 +1189,16 @@ workbook.SaveAs(fileName)
 workbook.close();
 
 excelEngine.Dispose();
+
 {% endhighlight %}
+{% endtabs %}
 
 GetCustomerAsObjects Method:
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 //Loads Data.
@@ -1282,8 +1308,10 @@ numbersDt = GetTable();
             return tmpCustomers;
 
         }
-{% endhighlight %}
 
+
+
+{% endhighlight %}
 
 {% highlight vbnet %}
 
@@ -1402,14 +1430,16 @@ numbersDt = GetTable()
             Return tmpCustomers
 
         End Function
-
+		
 {% endhighlight %}
+{% endtabs %}		
 
 Customer Class
 
+
+{% tabs %}
+
 {% highlight C# %}
-
-
 
 class Customer
    {
@@ -1490,10 +1520,12 @@ class Customer
         }
         #endregion
     }
+
+
 {% endhighlight %}
 
-
 {% highlight vbnet %}
+
 
 Class Customer 
 
@@ -1560,235 +1592,6 @@ Class Customer
          End Sub      
         #End Region
 End Class    
-{% endhighlight %}
 
-## Inserting images into Template Markers
-
-You can generate reports more appealingly with image support in Template Markers. The possible images supported are listed as follows. 
-
-* GIF
-* JPEG
-* PNG
-* BMP
-* TIFF
-
-Automatically, XlsIO detects the property as image when its type is System.Drawing.Image or byte []. XlsIO provides special markers options to format the images such as size, fittocell & position. The size of the image is measured as “width,height” in pixels and the position is denoted as “vertical – horizontal”. When the size is not specified, then the default size (50,50 px) is applied.
-
-In the following example, a marker is added for merging images.  Like a simple template marker, data source and property name is specified (%Customers.Image;) for image also. Further, the image size is specified as 70x70 px (size:70) and its position as middle-center of the cell.
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image001.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img5.png)
-
-
-
-The list of markers that support to insert and format the images are specified in the following table. 
-
-_List of Markers_
-
-<table>
-<tr>
-<th>
-No</th><th>
-Usage in Template</th><th>
-Description</th></tr>
-<tr>
-<td>
-1</td><td>
-No parameter<br>Ex: %Customers.CustomerImage;</td><td>
-Image is applied with a default size (50x50 px) and position (Top-Left).</td></tr>
-<tr>
-<td>
-2</td><td>
-fittocell <br>Ex: %Customers.CustomerImage;fittocell</td><td>
-The image is applied to cell width and height.</td></tr>
-<tr>
-<td>
-3</td><td>
-size:width,heightEx:%Customers.CustomerImage;size:60(or)%Customers.CustomerImage;size:60,60</td><td>
-Image is applied to the specified size (width, height).Heightparameter is optional. Value of width is applied when height is not specified.</td></tr>
-<tr>
-<td>
-4</td><td>
-position:positionEx:%Customers.CustomerImage;position:middle-center(or)%Customers.CustomerImage;position:right </td><td>
-Image is positioned (top-left, top-center, etc.,) within the cell.</td></tr>
-</table>
-
-
-The following table displays the list of image position enumeration.
-
-_List of image position enumeration_
-
-<table>
-<tr>
-<th>
-Enum</th><th>
-Description</th></tr>
-<tr>
-<td>
-Top-Left</td><td>
-Positions vertically top and horizontally left to the cell.</td></tr>
-<tr>
-<td>
-Top-Center</td><td>
-Positions vertically top and horizontally center to the cell.</td></tr>
-<tr>
-<td>
-Top-Right</td><td>
-Positions vertically top and horizontally right to the cell.</td></tr>
-<tr>
-<td>
-Middle-Left</td><td>
-Positions vertically middle and horizontally left to the cell.</td></tr>
-<tr>
-<td>
-Middle-Center</td><td>
-Positions vertically middle and horizontally center to the cell.</td></tr>
-<tr>
-<td>
-Middle-Right</td><td>
-Positions vertically middle and horizontally right to the cell.</td></tr>
-<tr>
-<td>
-Bottom-Left</td><td>
-Positions vertically bottom and horizontally left to the cell.</td></tr>
-<tr>
-<td>
-Bottom-Middle</td><td>
-Positions vertically bottom and horizontally middle to the cell.</td></tr>
-<tr>
-<td>
-Bottom-Right</td><td>
-Positions vertically bottom and horizontally right to the cell.</td></tr>
-</table>
-
-
-The following code examples illustrate on how to insert images in to the Template Marker.
-
-1. Here, the Url of an image is added in the xml document. By Xml Schema Definition it can be a string or AnyURI type.
-
- <Customers>
-
-<SalesPerson>Andy Bernard</SalesPerson>
-
-<SalesJanJune>45000</SalesJanJune>
-
-<SalesJulyDec>58000</SalesJulyDec>
-
-<Change>29</Change>
-
-<Image>images/image.jpg</Image>
-
-</Customers>
-
-
-
-1. Include image property in the class. 
-
-class Customer
-
-    {
-
-        private string SalesPerson;
-
-        private string SalesJanJune;
-
-        private string SalesJulyDec;
-
-        private int Change;
-
-        private byte[] Image;
-
-    }
-
-
-
-2. Images mapped in the xml document are converted to byte array and filled in to DataTable.
-3. Finally, the marker object is created and applied. Inserting images sets its row height.
-
-// Creates Template Marker Processor.
-
-ITemplateMarkersProcessor marker = workbook.CreateTemplateMarkersProcessor();
-
-// Northwind customers table.
-
-marker.AddVariable("Customers", northwindDt, VariableTypeAction.DetectNumberFormat);
-
-// Processes the markers and detects the number format along with the data type in the template.
-
-marker.ApplyMarkers();
-
-
-
-The output screens of all the image insertion options along with its input templates are as follows.
-
-##Default image input and output
-
-When the size and position is not mentioned, the default size of 50x50pixels and top-left position are applied.
-
-* Input Template
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image002.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img6.png)
-
-
-
-* Output Screen
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image003.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img7.png)
-
-
-
-###Image with FitToCell attribute
-
-* Input Template
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image004.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img8.png)
-
-
-
-* Output
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image005.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img9.png)
-
-
-
-###Image with Size
-
-* Input Template
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image006.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img10.png)
-
-
-
-* Output
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image007.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img11.png)
-
-
-
-###Image with Position
-
-* Input Template
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image008.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img12.png)
-
-
-
-*  Output
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image009.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img13.png)
-
-
-
-###Image with position and size
-
-* Input Template
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image010.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img14.png)
-
-
-
-*  Output
-
-![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image011.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img15.png)
-
-
-
+ {% endhighlight %}
+{% endtabs %}

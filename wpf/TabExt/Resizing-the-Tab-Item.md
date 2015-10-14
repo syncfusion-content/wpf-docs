@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing-the-Tab-Item
+title: Resizing the Tab Item | TabControlExt | wpf | Syncfusion
 description: resizing the tab item
 platform: wpf
 control: TabControlExt
@@ -18,10 +18,9 @@ Tab Items are resized by using the TabItemSize property. This property comes wit
 
 To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabcontrolExt  -->
 
@@ -40,6 +39,7 @@ To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -102,16 +102,21 @@ tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg)
 
+{% seealso %}
 
+Editing the Tab Item Header at Run Time
 
+Tab Item Header Image
 
+Tab Item Header Image Alignment
 
-See Also
+Context Menu for the Tab Item
 
-Editing the Tab Item Header at Run Time, Tab Item Header Image, Tab Item Header Image Alignment, Context Menu for the Tab Item
-
+{% endseealso %}

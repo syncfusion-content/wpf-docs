@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Switch-between-Skins-at-Run-time
+title: Switch between Skins at Run time| SkinManager | Wpf | Syncfusion
 description: switch between skins at run-time
 platform: wpf
 control: SkinManager
@@ -43,23 +43,23 @@ Below is the code snippet to explain how to switch between the skins at run-time
 
 <Grid Name="grid">        
 
-        <Grid.ColumnDefinitions>
+<Grid.ColumnDefinitions>
 
-            <ColumnDefinition Width="*"/>
+<ColumnDefinition Width="*"/>
 
-            <ColumnDefinition Width="*"/>
+<ColumnDefinition Width="*"/>
 
-        </Grid.ColumnDefinitions>
+</Grid.ColumnDefinitions>
 
-        <ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged" Width="150" Height="30">
+<ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged" Width="150" Height="30">
 
-            <ComboBoxItem> Blend </ComboBoxItem>
+<ComboBoxItem> Blend </ComboBoxItem>
 
-            <ComboBoxItem> ShinyBlue </ComboBoxItem>
+<ComboBoxItem> ShinyBlue </ComboBoxItem>
 
-        </ComboBox>
+</ComboBox>
 
-        <syncfusion:CalendarEdit Name="calendar" Grid.Column="1"></syncfusion:CalendarEdit>        
+<syncfusion:CalendarEdit Name="calendar" Grid.Column="1"></syncfusion:CalendarEdit>        
 
 </Grid>
 
@@ -79,25 +79,25 @@ The following code snippet explains how to set the switch between the skins.
 
 Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
-        {
+{
 
-            if (themecombobox.SelectedIndex == 0)
+if (themecombobox.SelectedIndex == 0)
 
-            {
+{
 
-                SkinStorage.SetVisualStyle(calendar, "ShinyBlue");
+SkinStorage.SetVisualStyle(calendar, "ShinyBlue");
 
-            }
+}
 
-            Else if (themecombobox.SelectedIndex == 1)
+Else if (themecombobox.SelectedIndex == 1)
 
-            {
+{
 
-                SkinStorage.SetVisualStyle(calendar, "Blend");
+SkinStorage.SetVisualStyle(calendar, "Blend");
 
-            }
+}
 
-        }
+}
 
 
 {% endhighlight %}

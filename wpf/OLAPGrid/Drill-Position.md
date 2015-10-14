@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill-Position
+title: Drill Position| OLAP Grid | Wpf | Syncfusion
 description: drill position
 platform: wpf
 control: OLAP Grid
@@ -11,24 +11,23 @@ documentation: ug
 
 Drill position feature enables the user to drill only the current position of a selected member in the OlapReport. This will exclude the drilled data of the selected member in other positions by using MDX query.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 This feature is useful when the objective of analysis is to view the drilled data only in current position of selected member.
 
-## Tables for Properties, Methods, and Events
 
 ### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 DrillType</td><td>
@@ -39,15 +38,15 @@ Enum</td><td>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 A sample is available in following locations:
 
-## Windows XP:
+#### Windows XP:
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Data Relation\Drill Types Demo
 
-## Windows 7/Vista:
+####  Windows 7/Vista:
 
 C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\WPF\OlapGrid.WPF\SamplesData Relation\Drill Types Demo
 
@@ -55,6 +54,7 @@ C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\WPF\Olap
 
 Adding Drill position feature to an application is described in the following code snippet:
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -72,7 +72,7 @@ dataManager.CurrentReport.DrillType = DrillType.DrillPosition;
 dataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
     {% endhighlight %}
-
+{% endtabs %}
 
 
 

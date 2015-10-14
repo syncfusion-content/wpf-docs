@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointments-Creation
+title: Appointments Creation| SfSchedule | Wpf | Syncfusion
 description: appointments creation
 platform: wpf
 control: SfSchedule

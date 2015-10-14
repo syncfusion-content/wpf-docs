@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Filter-Expression
+title: Filter Expression| PivotGrid | Wpf | Syncfusion
 description: filter expression
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Filter Expression
+# Filter Expression
 
 This class encapsulates the information needed to define a filter. It contains the following properties.
 
-Property Table
+### Property Table
 
 <table>
 <tr>
 <th>
-{{ '**Property Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Value it Accepts**' | markdownify }}</th></tr>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th></tr>
 <tr>
 <td>
 CaseSensitive</td><td>

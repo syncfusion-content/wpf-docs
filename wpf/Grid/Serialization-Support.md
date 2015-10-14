@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Serialization-Support
+title: Serialization Support | Grid | WPF | Syncfusion
 description: serialization support
 platform: wpf
-control: Grid Control
+control: Grid
 documentation: ug
 ---
 
@@ -11,44 +11,35 @@ documentation: ug
 
 Essential GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 Serialization can be implemented for the applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of the GridControl to an XML file and it can be loaded at any time.
 
-Adding Serialization to an Application 
+## Adding Serialization to an Application 
 
 The following sample application explains the implementation of the Serialization support to GirdControl.
 
 1. Create an application. Create a WPF application and add the GridControl to it. 
 2. Call the Serialization support methods
 
-
-
-In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
+   In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
 
 {% highlight c# %}
-
-
-
 // To Serialize the GridControl.
 
 this.grid.Model.Serialize("Data.xml");
 
-
-
 // To Deserialize the GridControl.
 
 this.grid.Model.Deserialize("Data.xml");
-
-
 {% endhighlight  %}
 
 
-3. Run the application
+3.Run the application
 
 Run the application. Click the Serialize button to serialize the initial load; this creates an XML file and saves it. Click the second button ModifyGridStyle to make some changes in the GridControl. Now click the Deserialize button which restores the old settings of the GridControl. 
 
-Supported Properties for Serialization
+### Supported Properties for Serialization
 
 The following properties are Serialized in the GridControl.
 
@@ -75,8 +66,6 @@ The following properties are Serialized in the GridControl.
 * WrapCellBehavior
 
 ## Methods
-
-_Serialization Support Table_
 
 <table>
 <tr>

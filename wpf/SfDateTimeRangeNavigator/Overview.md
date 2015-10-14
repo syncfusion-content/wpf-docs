@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfDateTimeRangeNavigator | wpf | Syncfusion
 description: overview
 platform: wpf
-control: DateTime Range Navigator
+control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
@@ -17,6 +17,3 @@ The SfDateTimeRangeNavigator is a time bound Data Visualization control. Its p
 * Smart Label calculation while Zooming.
 * Select a particular region through large period of time.
 * Gets the data from a selected region. 
-
-
-

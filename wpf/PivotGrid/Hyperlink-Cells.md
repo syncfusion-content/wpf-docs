@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hyperlink Cells
+title: Hyperlink Cells| PivotGrid | Wpf | Syncfusion
 description: Hyperlink Cells
 platform: wpf
 control: PivotGrid
@@ -24,7 +24,7 @@ Hyperlink Cell’s property can be applied to the following cells:
 
 You can Hyperlink cells and can perform some custom operation on a Cell click. While doing so, you can get the complete information of the Cell like its Type, Range etc.
 
-### Enabling Hyperlink Cells
+## Enabling Hyperlink Cells
 
 You can enable a cell present in the Grid as a Hyperlink by setting the IsHyperlinkCell property of that cell style to True.
 
@@ -32,6 +32,7 @@ Example: To make a column header cell as a hyperlink, set PivotGrid.ColumnHeader
 
 The property usage is illustrated in the code given below.
 
+{% tabs %}
 {% highlight C# %} 
 
 // Instantiating PivotGridControl.
@@ -116,7 +117,7 @@ Me. PivotGrid1.SummaryCellStyle.IsHyperlinkCell = True
 Me.PivotGrid1.ValueCellStyle.IsHyperlinkCell = True
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 The below screen shot shows how the Column Header is hyperlinked.
@@ -137,7 +138,7 @@ The below screen shot shows how the value in a cell is hyperlinked.
 
 
 
-#### Sample Link
+### Sample Link
 
 ..\..\ Syncfusion\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Hyperlink Cell Demo
 

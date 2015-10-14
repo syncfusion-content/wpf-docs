@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Formatting
+title: Styles and Formatting| DocIO | Wpf | Syncfusion
 description: styles and formatting
 platform: wpf
 control: DocIO
@@ -45,9 +45,9 @@ Collection of DocIO Character and Paragraph styles are accessible through the W
 
 DocIO Style class is a base class for the other style classes. Style is an abstract class. CharacterFormat property of Style class specifies character formatting. This property returns the instance of WCharacterFormat type. Name property specifies the name of the style. BaseStyle property specifies the base style (style inherits formatting of base style). User can apply one of the built-in Word styles by using the WParagraph.ApplyStyle method. The built-in styles are accessible through the BuiltinStyle enumeration.
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -71,9 +71,10 @@ Gets the type of style.  </td></tr>
 IsPrimaryStyle</td><td>
 Gets or sets the Primary style definition. If you set this to true, then the corresponding style will be displayed in Syles ribbon of Microsoft Word.</td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -89,14 +90,15 @@ Applies base style for current style.</td></tr>
 Clone</td><td>
 Clones itself.</td></tr>
 </table>
-Acessing Styles
+
+### Acessing Styles
 
 You can access the collection of styles defined in the document by using the Styles property. This collection holds both the built-in and user-defined styles in a document. A particular style can be obtained by its name or index.
 
 The following code example illustrates how to access the collection of styles defined in the Word document.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 
@@ -140,6 +142,7 @@ Dim style As IStyle= coll.FindByName(String Stylename,StyleType styleType)
 
 Dim style1 As IStyle = coll(0)
 {% endhighlight   %}
+{% endtabs %}
 
 ## Character Formatting Properties
 
@@ -149,7 +152,7 @@ This sections elaborates how to deal with the Character Styles. The class Charac
 
 N> DocIO does not provide support to add user-defined character styles to the document
 
-Class Hierarchy
+### Class Hierarchy
 
 Style
 
@@ -157,9 +160,9 @@ Style
 
     CharacterStyle
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -197,9 +200,9 @@ Gets or sets the stylistic set type (Microsoft Word 2010 specific property).</td
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Public Methods_
+
 
 <table>
 <tr>
@@ -215,11 +218,12 @@ Clones itself.</td></tr>
 NameToBuiltIn</td><td>
 Converts string style names to BuiltinStyle.</td></tr>
 </table>
-Character Formatting
+
+### Character Formatting
 
 The class WCharacterFormat represents the character formats in EssentialDocIO. It is used to get or set the formatting for text chunks, special symbol, or marker (for example marker of picture, text box, footnote, etc.). WCharacterFormat customizes the appearance of the element (for example text chunk or symbol) in the document, starting with font name to the style of texture and spacing between characters.
 
-Class Hierarchy
+### Class Hierarchy
 
 FormatBase
 
@@ -227,9 +231,9 @@ FormatBase
 
          WCharacterFormat
 
-Public Constructor
+### Public Constructor
 
-_Public Constructor_
+
 
 <table>
 <tr>
@@ -243,9 +247,9 @@ Initializes a new instance of the WCharacterFormat class.</td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -378,7 +382,7 @@ Gets or sets the the localeidentifier (language) of the formatted Asian characte
 The following code example illustrates how to use the WCharacterFormat class.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 
@@ -633,6 +637,7 @@ textRange.CharacterFormat.LocaleIdASCII = 1093
 
 textRange.CharacterFormat.LocaleIdFarEast = 2052
 {% endhighlight   %}
+{% endtabs %}
 
 ## Paragraph Formatting Properties
 
@@ -646,11 +651,12 @@ WParagraphStyle class represents paragraph style in DocIO. Paragraph Style is a
 
 
 
-_Setting Paragraph Style_
+Setting Paragraph Style
+{:.caption}
 
 DocIO also lets you add your own paragraph styles to the document. A collection of DocIOParagraph Styles is accessible through WordDocument.Styles property. You can apply one of the built-in Word paragraph styles by using the WParagraph.ApplyStyle method. You can also use the ApplyBaseStyle method to apply the base style for the current paragraph style.
 
-Class Hierarchy
+### Class Hierarchy
 
 Style
 
@@ -658,9 +664,8 @@ Style
 
     WParagraphStyle
 
-Public Constructors
+### Public Constructors
 
-_Public Constructor_
 
 <table>
 <tr>
@@ -672,9 +677,10 @@ Description</th></tr>
 WParagraphStyle.WParagraphStyle (IWordDocument)</td><td>
 Initializes a new instance of the WParagraphStyle class.  </td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+### Public Properties
+
+
 
 <table>
 <tr>
@@ -696,9 +702,9 @@ Gets the type of the style.</td></tr>
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Public Methods_
+
 
 <table>
 <tr>
@@ -719,7 +725,7 @@ Clones itself.</td></tr>
 The following code example illustrates how to create user-defined Paragraph Styles by using DocIO.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 IWordDocument doc = new WordDocument();
@@ -852,6 +858,7 @@ section.AddParagraph()
 doc.Save("UserStyle.doc")
 
 {% endhighlight   %}
+{% endtabs %}
 
 The following code illustrates how to apply built-in paragraph styles to the Word document.
 
@@ -911,7 +918,7 @@ WParagraphFormat class represents paragraph formatting in Essential DocIO. The 
 
 _Paragraph Formatting_
 
-Class Hierarchy
+### Class Hierarchy
 
 FormatBase
 
@@ -919,9 +926,9 @@ FormatBase
 
             WParagraphFormat 
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
+
 
 <table>
 <tr>
@@ -937,9 +944,10 @@ Initializes a new instance of WParagraphFormat class. </td></tr>
 WParagraphFormat.WParagraphFormat (IWordDocument)</td><td>
 Initializes a new instance of WParagraphFormat class.</td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+### Public Properties
+
+
 
 <table>
 <tr>
@@ -1032,7 +1040,7 @@ MirrorIndents</td><td>
 Gets or sets a value indicating whether the indentation type is mirror indents (Microsoft Word 2007 and 2010 specific property).</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c#  %}
 
 para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8;
@@ -1045,12 +1053,13 @@ para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8;
 para.ParagraphFormat.OutlineLevel = OutlineLevel.Level8
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Tabs
 
 Tabs class represents a tab collection within a paragraph. Tab class represents a single tab within the tab collection.
 
-Class Hierarchy
+### Class Hierarchy
 
 WParagraphFormat
 
@@ -1058,9 +1067,9 @@ WParagraphFormat
 
     Tabs
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -1086,9 +1095,9 @@ Gets or sets the Clear tab position.</td></tr>
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Public Methods_
+
 
 <table>
 <tr>
@@ -1121,7 +1130,7 @@ Removes tab at specified tab position from the tab collection.</td></tr>
 The following code example illustrates how to add the tab to a paragraph and delete the tab from a paragraph.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 
@@ -1230,6 +1239,7 @@ paragraph.AppendText("Tabs are added and removed")
 document.Save("Sample.doc", FormatType.Doc)
 
 {% endhighlight   %}
+{% endtabs %}
 
 ## List Style Properties
 
@@ -1252,11 +1262,12 @@ The following screenshot demonstrates how to create list styles by using Microso
 
 
 
-_Creating List Styles_
+Creating List Styles
+{:.caption}
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -1286,9 +1297,9 @@ Initializes a new instance of the ListStyle class.</td></tr>
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Public Methods_
+
 
 <table>
 <tr>
@@ -1308,9 +1319,9 @@ Static method. Creates empty list style.</td></tr>
 
 WListLevel class represents list level in Essential DocIO. By using the WListLevel class, you can customize the list level options.
 
-Public Constructor
+### Public Constructor
 
-_Public Constructor_
+
 
 <table>
 <tr>
@@ -1322,9 +1333,10 @@ Description</th></tr>
 WListLevel.WListLevel (ListStyle)</td><td>
 Initializes new instance of WListLevel class.</td></tr>
 </table>
- Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -1340,9 +1352,10 @@ Clones this instance.  </td></tr>
 GetListItemText</td><td>
 Gets list symbol for specified item index.</td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+### Public Properties
+
+
 
 <table>
 <tr>
@@ -1415,7 +1428,7 @@ When true, number generated will include previous levels (used for legal numberi
 The following code example illustrates how to create user-defined list styles and apply it to a paragraph.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 
@@ -1667,6 +1680,7 @@ paragraph.ListFormat.ContinueListNumbering()
 
 paragraph.ListFormat.ListLevelNumber = 0
 {% endhighlight   %}
+{% endtabs %}
 
 
 ### List Format
@@ -1679,7 +1693,7 @@ WListFormat class specifies the formatting for DocIO list paragraph. The type of
 * Use IncreaseIndentLevel or DecreaseIndentLevel to increase or decrease indent for the level.
 * To remove list from the paragraph, use RemoveList method.
 
-Class Hierarchy
+### Class Hierarchy
 
 FormatBase
 
@@ -1687,9 +1701,9 @@ FormatBase
 
             WListFormat 
 
-Public Constructor
+### Public Constructor
 
-_Public Constructors_
+
 
 <table>
 <tr>
@@ -1703,9 +1717,9 @@ Initializes new instance of WListFormat class.</td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -1739,9 +1753,9 @@ Gets or sets whether numbering of the list must restart from previous list.</td>
 </table>
 
 
-Public Methods
+### Public Methods
 
- _Public Methods_
+
 
 <table>
 <tr>
@@ -1782,7 +1796,7 @@ Removes the list from current paragraph.  </td></tr>
 The following code example illustrates how to use the WListFormat and List Styles in DocIO.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 
@@ -2073,6 +2087,7 @@ section.AddParagraph()
 
 section.AddParagraph()
 {% endhighlight  %}
+{% endtabs %}
 
 ## Text Box Format
 
@@ -2082,7 +2097,8 @@ Text Box control is a container that provides support to insert text, images, an
 
 
 
-_Formatting Text Box_
+Formatting Text Box
+{:.caption}
 
 ### Position
 
@@ -2133,7 +2149,7 @@ You can specify the style of the border line of the text box by using the LineS
 * ThinThick
 * Triple 
 
-Class Hierarchy
+### Class Hierarchy
 
  FormatBase
 
@@ -2141,9 +2157,9 @@ Class Hierarchy
 
             WTextBoxFormat
 
- Public Constructor
+###  Public Constructor
 
-_Public Constructor_
+
 
 <table>
 <tr>
@@ -2157,9 +2173,9 @@ Initializes a new instance of the WTextBoxFormat class.</td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -2231,9 +2247,8 @@ Gets or sets  the textbox vertical position (in points).  </td></tr>
 Width</td><td>
 Gets or sets  the textbox width (in points).  </td></tr>
 </table>
- Public Methods
 
-_Public Methods_
+###  Public Methods
 
 <table>
 <tr>
@@ -2250,7 +2265,7 @@ Clones textbox format.</td></tr>
 The following code example illustrates how to use the WTextBox and TextBoxFormat classes.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 
 
@@ -2505,4 +2520,5 @@ section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)
 doc.Save("TextBoxes.doc")
 
 {% endhighlight   %}
+{% endtabs %}
 

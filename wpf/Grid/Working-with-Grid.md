@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working-with-Grid
+title: Working with Grid | Grid | WPF | Syncfusion
 description: working with grid
 platform: wpf
-control: Grid Control
+control: Grid
 documentation: ug
 ---
 
@@ -17,7 +17,6 @@ This section deals with essential features of Grid control, which are listed bel
 * Selection Modes-Discusses on different selection modes in a grid
 
 
-
 ## Controlling Rows and Columns
 
 Each Grid instance is tied to a model, which contains the data represented by the Grid control. The grid model exposes properties that allow the user to manipulate grid rows and columns.
@@ -27,16 +26,9 @@ Setting Rows and Columns count
 The grid model has RowCount and ColumnCount properties. These can be set to change the number of rows and columns in the grid control, as shown below:
 
 {% highlight c# %}
-
-
-
-
-
 // Set Row count
 
 grid.Model.RowCount = 10;
-
-
 
 // Set Column count
 
@@ -49,11 +41,6 @@ grid.Model.ColumnCount = 20;
 The grid model also stores information on row heights and column widths. Its ColumnWidths and RowHeights properties can be changed using indexers as shown below:
 
 {% highlight c# %}
-
-
-
-
-
 // Setting column widths
 
 grid.Model.ColumnWidths[0] = 30;
@@ -66,8 +53,6 @@ grid.Model.ColumnWidths[3] = 50;
 
 grid.Model.ColumnWidths[4] = 250;
 
-
-
 // Setting row heights
 
 grid.Model.RowHeights[5] = 40;
@@ -78,16 +63,12 @@ grid.Model.RowHeights[3] = 40;
 
 ![](Working-with-Grid_images/Working-with-Grid_img1.jpeg)
 
-
+Setting Row heights and Column widths
+{:.caption}
 
 You can also specify the DefaultLineSize setting on ColumnWidths and RowHeights in order to set the default width or height.
 
-
 {% highlight c# %}
-
-
-
-
 grid.Model.RowHeights.DefaultLineSize = 20;
 
 grid.Model.ColumnWidths.DefaultLineSize = 100;
@@ -100,20 +81,15 @@ Essential Grid supports efficient hiding of rows and columns. You can hide and u
 
 N> SetHidden method accepts the following three parameters: 
 
-* _The first parameter is an integer, which specifies the starting row/column to hide/unhide_
-* _The second parameter is an integer, which specifies the ending row/column to hide/unhide_
-* _Third is a boolean parameter that determines whether to hide or unhide the specified number of rows or columns. The rows/columns will be hidden when this parameter is set to true._
-
+* The first parameter is an integer, which specifies the starting row/column to hide/unhide_
+* The second parameter is an integer, which specifies the ending row/column to hide/unhide_
+* Third is a boolean parameter that determines whether to hide or unhide the specified number of rows or columns. The 
+  rows/columns will be hidden when this parameter is set to true._
 
 
 The following code illustrates the usage of SetHidden method:
 
 {% highlight c# %}
-
-
-
-
-
 // Hide rows
 
 grid.Model.RowHeights.SetHidden(2, 100, true);
@@ -123,9 +99,6 @@ grid.Model.RowHeights.SetHidden(110, 1000, true);
 // Unhide rows
 
 grid.Model.RowHeights.SetHidden(1010, 10000, false);
-
-
-
 //Hide columns
 
 grid.Model.ColumnWidths.SetHidden(2, 100, true);
@@ -140,40 +113,31 @@ grid.Model.ColumnWidths.SetHidden(1010, 10000, false);
 
 ![](Working-with-Grid_images/Working-with-Grid_img2.jpeg)
 
-
+Hiding rows and columns
+{:.caption}
 
 ### Freeze Rows and Columns
 
 It is possible to fix any number of rows and columns so that they are still visible when a grid is scrolled. This feature is called as freezing. It can be achieved in the Grid by setting the FrozenRows and FrozenColumns properties of grid model, as shown below:
 
-
 {% highlight c# %}
-
-
-
-
 // Freeze rows and columns
 
 grid.Model.FrozenRows = 4;
 
 grid.Model.FrozenColumns = 3;
-
-
 {% endhighlight  %}
+
 ![](Working-with-Grid_images/Working-with-Grid_img3.jpeg)
 
-
+Frozen rows and columns
+{:.caption}
 
 You can also fix rows to the right of the grid and columns to the bottom. Such fixed rows and columns are referred to as Footer rows and Footer columns. The properties FooterRows and FooterColumns determine the number of footer rows and footer columns. The footer row or column can be customized by using the FooterStyle property.
 
 The following code illustrates the usage of FooterRows, FooterColumns and FooterStyle properties:
 
 {% highlight c# %}
-
-
-
-
-
 // Footer rows and columns
 
 grid.Model.FooterRows = 3;
@@ -181,14 +145,12 @@ grid.Model.FooterRows = 3;
 grid.Model.FooterColumns = 1;
 
 grid.Model.FooterStyle.Background = Brushes.LightCoral;
-
-
 {% endhighlight  %}
+
 ![](Working-with-Grid_images/Working-with-Grid_img4.jpeg)
 
-
-
-
+Footer rows and footer columns
+{:.caption}
 
 ### Header Rows and Columns
 
@@ -197,11 +159,6 @@ Grid allows the user to have any number of header rows and columns. It is done b
 The following code illustrates the usage of HeaderRows, HeaderColumns and HeaderStyle properties:
 
 {% highlight c# %}
-
-
-
-
-
 // Header rows and columns
 
 grid.Model.HeaderRows = 3;
@@ -209,42 +166,34 @@ grid.Model.HeaderRows = 3;
 grid.Model.HeaderColumns = 2;
 
 grid.Model.HeaderStyle.Font.FontStyle = FontStyles.Italic;
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img5.jpeg)
 
-
+Header rows and header columns
+{:.caption}
 
 ### Resize Rows and Columns
 
 Grid allows the user to resize the rows and columns at run time. When this feature is enabled and if you move the mouse over the row or column divider, it will show a resize cursor using which you can resize the row or column to the required level. The following images illustrate the resizing of a column and a row:
 
 
-
 ![](Working-with-Grid_images/Working-with-Grid_img6.jpeg)
 
-
-
-
+Column Resizing
+{:.caption}
 
 ![](Working-with-Grid_images/Working-with-Grid_img7.jpeg)
 
-
+Row Resizing
+{:.caption}
 
 This feature is turned on by default. To disable column or row resizing, you need to detach the corresponding mouse controllers from grid, as shown below:
 
-
 {% highlight c# %}
-
-
-
-
 IMouseController controller = grid.MouseControllerDispatcher.Find ("ResizeRowsMouseController");
 
 grid.MouseControllerDispatcher.Remove(controller);
-
-
 
 controller = grid.MouseControllerDispatcher.Find  ("ResizeColumnsMouseController");
 
@@ -269,15 +218,9 @@ The following code illustrates the usage of InsertColumns and InsertRows methods
 
 
 {% highlight c# %}
-
-
-
-
 //Insert a column at position 2.
 
 grid.Model.InsertColumns(2, 1);
-
-
 
 //Insert 2 rows at position 5.
 
@@ -287,13 +230,13 @@ grid.Model.InsertRows(5, 2);
 
 ![](Working-with-Grid_images/Working-with-Grid_img8.jpeg)
 
-
-
-
+Inserted new Column at index 2
+{:.caption}
 
 ![](Working-with-Grid_images/Working-with-Grid_img9.jpeg)
 
-
+Inserted new Row at index 7
+{:.caption}
 
 N> You can track the moment the rows or columns are inserted by handling the RowsInserted and ColumnsInserted events.
 
@@ -304,7 +247,7 @@ The rows and columns can be rearranged dynamically by moving them from one posit
 * MoveRows()
 * MoveColumns()
 
-### These methods accept the following three parameters: 
+These methods accept the following three parameters: 
 
 * Position from which the rows or columns should be removed
 * Number of rows or columns
@@ -316,25 +259,19 @@ The following code illustrates the usage of MoveColumns and MoveRows methods:
 
 
 {% highlight c# %}
-
-
-
-
 //Move 3 rows from index 2 to index 5.
 
 grid.Model.MoveRows(2, 3, 5);
 
-
-
 //Move 2 columns from index 1 to index 4.
 
 grid.Model.MoveColumns(1, 2, 4);
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img10.jpeg)
 
-
+Moving rows and columns
+{:.caption}
 
 N> You can track the moment the rows or columns are moved by handling the RowsMoved and  ColumnsMoved event.
 
@@ -347,27 +284,20 @@ It is possible to remove a range of rows and columns from the grid. The APIs Rem
 
 The following code illustrates the usage of RemoveColumns and RemoveRows methods:
 
-
 {% highlight c# %}
-
-
-
-
 //Remove 4 rows from position 3.
 
 grid.Model.RemoveRows(3, 4);
 
-
-
 //Remove 3 columns from position 2.
 
 grid.Model.RemoveColumns(2, 3);
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img11.jpeg)
 
-
+Removing columns 2, 3 and 4
+{:.caption}
 
 You can track the moment the rows or columns are inserted by handling the RowsRemoved and ColumnsRemoved events.
 
@@ -382,17 +312,10 @@ The GridResizeToFitOptions enum value specifies how the resizing action should b
 
 The following code illustrates the usage of ResizeRowsToFit and ResizeColumnsToFit methods:
 
-
 {% highlight c# %}
-
-
-
-
 //Auto fit column 3
 
 grid.Model.ResizeColumnsToFit(GridRangeInfo.Col(3), GridResizeToFitOptions.NoShrinkSize);
-
-
 
 //Auto fit row 2
 
@@ -402,24 +325,19 @@ grid.Model.ResizeRowsToFit(GridRangeInfo.Row(2), GridResizeToFitOptions.NoShrink
 
 ![](Working-with-Grid_images/Working-with-Grid_img12.jpeg)
 
-
-
-
+Auto fit Column 3
+{:.caption}
 
 ![](Working-with-Grid_images/Working-with-Grid_img13.jpeg)
 
-
+Auto fit Row 2
+{:.caption}
 
 ## Drag-and-Drop Support
 
 Essential Grid for WPF provides support for drag-and-drop functionality. This feature enables the user to just click a column header and drag it to a new position. It is not required to select the column header for dragging. This is an easy way of rearranging the columns dynamically. You can enable or disable this feature using AllowDragColumns property of the Grid as follows:
 
 {% highlight c# %}
-
-
-
-
-
 //Allow column dragging
 
 this.grid.AllowDragColumns = true;
@@ -430,7 +348,8 @@ The following image illustrates this feature:
 
 ![](Working-with-Grid_images/Working-with-Grid_img14.jpeg)
 
-
+Drag and Drop support
+{:.caption}
 
 In the above image, you can see the column header 1 being dragged to be placed before column 3.
 
@@ -456,28 +375,17 @@ CopyPasteOption property defines the list of clipboard operations supported by t
 Here are the sample code snippets that define certain copy paste behaviors.  
 
 {% highlight c# %}
-
-
-
-
-
 //Copy cell data with style
 
 gridControl.Model.Options.CopyPasteOption |= CopyPaste.CopyCellData;
-
-
 
 //Cut cell data with style
 
 gridControl.Model.Options.CopyPasteOption |= CopyPaste.CutCell;
 
-
-
 //Paste cell data with style
 
 gridControl.Model.Options.CopyPasteOption |= CopyPaste.PasteCell;
-
-
 
 //Code to cut copy paste cell text (excluding style)
 
@@ -488,14 +396,12 @@ gridControl.Model.Options.CopyPasteOption |= CopyPaste.CopyText;
 gridControl.Model.Options.CopyPasteOption |= CopyPaste.CutText;
 
 gridControl.Model.Options.CopyPasteOption |= CopyPaste.PasteText;
-
-
 {% endhighlight %}
+
 ![](Working-with-Grid_images/Working-with-Grid_img15.jpeg)
 
-
-
-
+Pasting the grid data in Notepad
+{:.caption}
 
 ### Text Data Exchange
 
@@ -511,20 +417,13 @@ The above attributes are discussed below in detail:
 This property specifies a delimiter for the text to be pasted. It can be used when you want to paste the cell data in CSV (Comma-Separated Values) format.
 
 {% highlight c# %}
-
-
-
-
-
 gridControl.Model.TextDataExchange.TabDelimiter = ",";
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img16.jpeg)
 
-
-
-
+Pasting the grid data in CSV format
+{:.caption}
 
 ### CopyTextToBuffer() Method
 
@@ -534,18 +433,10 @@ This method lets you place the cell data into an intermediate buffer, which can 
 * Selected range of cells 
 * Boolean value-This should be set to true for cut operation and should be set to false for copy operation.
 
-
-
 The following code illustrates the CopyTextToBuffer method:
 
-
 {% highlight c# %}
-
-
-
-
 gridControl.Model.TextDataExchange.CopyTextToBuffer(out buffer, gridControl.Model.SelectedRanges, out row, out col, false);
-
 {% endhighlight  %}
 
 ### Result of this Method Call
@@ -560,14 +451,8 @@ It returns the following values:
 
 The values returned by the CopyTextToBuffer method is passed as parameter to the PasteTextFromBuffer method using the below code: 
 
-
 {% highlight c# %}
-
-
-
-
 gridControl.Model.TextDataExchange.PasteTextFromBuffer(buffer, gridControl.Model.SelectedRanges);
-
 {% endhighlight  %}
 
 ### Result of this Method Call
@@ -593,10 +478,6 @@ For instance, let us consider performing the copy and paste operations in HTML f
 
 
 {% highlight c# %}
-
-
-
-
 class HtmlCopy : IGridCopyPaste
 
 {
@@ -604,9 +485,6 @@ class HtmlCopy : IGridCopyPaste
     public void Copy(GridCellData gridData, GridRangeInfoList rangeList)
 
     {
-
-
-
         IDataObject iData = null;
 
         iData = Clipboard.GetDataObject();
@@ -622,20 +500,14 @@ class HtmlCopy : IGridCopyPaste
         int bottom = rangeList[0].Bottom;
 
         string stylesheet = string.Empty;
-
-
-
-
-
-        StringBuilder sb = new StringBuilder();
+		
+		StringBuilder sb = new StringBuilder();
 
         GridStyleInfoStore gsis;
 
         GridStyleInfo style;
-
-
-
-        sb.Append("<html><body><table border=1>");
+		
+		sb.Append("<html><body><table border=1>");
 
         for (int row = top; row <= bottom; row++)
 
@@ -646,16 +518,12 @@ class HtmlCopy : IGridCopyPaste
             for (int col = left; col <= right; col++)
 
             {
-
-
-
-                gsis = gridData[row - top, col - left];
+                
+				gsis = gridData[row - top, col - left];
 
                 style = new GridStyleInfo(gsis);
-
-
-
-                stylesheet = "\"";
+				
+				stylesheet = "\"";
 
                 if (style.HasBackground)
 
@@ -669,8 +537,6 @@ class HtmlCopy : IGridCopyPaste
 
                 }
 
-
-
                 if (style.HasForeground)
 
                 {
@@ -683,8 +549,6 @@ class HtmlCopy : IGridCopyPaste
 
                 }
 
-
-
                 if (style.HasHorizontalAlignment)
 
                 {
@@ -692,8 +556,6 @@ class HtmlCopy : IGridCopyPaste
                     stylesheet = stylesheet + ";text-align:" + style.HorizontalAlignment;
 
                 }
-
-
 
                 if (style.HasVerticalAlignment)
 
@@ -704,14 +566,11 @@ class HtmlCopy : IGridCopyPaste
                 }
 
 
-
-                if (style.HasBorders)
+               if (style.HasBorders)
 
                 {
 
                     string borderBrush;
-
-
 
                     borderBrush = style.Borders.Left.Brush.ToString();
 
@@ -719,23 +578,17 @@ class HtmlCopy : IGridCopyPaste
 
                     stylesheet = stylesheet + ";border-left:solid  #" + borderBrush;
 
-
-
                     borderBrush = style.Borders.Right.Brush.ToString();
 
                     borderBrush = borderBrush.Substring(3, borderBrush.Length - 3);
 
                     stylesheet = stylesheet + ";border-right:solid  #" + borderBrush;
 
-
-
                     borderBrush = style.Borders.Bottom.Brush.ToString();
 
                     borderBrush = borderBrush.Substring(3, borderBrush.Length - 3);
 
                     stylesheet = stylesheet + ";border-bottom:solid  #" + borderBrush;
-
-
 
                     borderBrush = style.Borders.Top.Brush.ToString();
 
@@ -745,12 +598,7 @@ class HtmlCopy : IGridCopyPaste
 
                 }
 
-
-
-
-
                 stylesheet = stylesheet + "\"";
-
 
 
                 if (!stylesheet.Equals("\"\""))
@@ -761,8 +609,6 @@ class HtmlCopy : IGridCopyPaste
 
                 }
 
-
-
                 else
 
                 {
@@ -770,8 +616,6 @@ class HtmlCopy : IGridCopyPaste
                     sb.Append(@"<td>");
 
                 }
-
-
 
                 if (!style.CellValue.ToString().Equals(""))
 
@@ -781,8 +625,6 @@ class HtmlCopy : IGridCopyPaste
 
                 }
 
-
-
                 else
 
                 {
@@ -790,8 +632,6 @@ class HtmlCopy : IGridCopyPaste
                     sb.Append("<pre>       </pre>");
 
                 }
-
-
 
                 sb.Append("</td>");
 
@@ -811,11 +651,7 @@ class HtmlCopy : IGridCopyPaste
 
         Clipboard.SetDataObject(dataObject);
 
-
-
     }
-
-
 
     public void Cut(GridCellData grodCellData, GridRangeInfoList rangeList)
 
@@ -832,36 +668,32 @@ class HtmlCopy : IGridCopyPaste
     }
 
 }
-
 {% endhighlight  %}
 
 The next step is to attach the above custom copy and paste operations to the grid control.
 
 
 {% highlight c# %}
-
-
-
-
 HtmlCopy htmlCopy = new HtmlCopy();
 
 gridControl.Model.GridCopyPaste = htmlCopy;
-
-
 {% endhighlight  %}
+
 ![](Working-with-Grid_images/Working-with-Grid_img17.jpeg)
 
+Pasting the grid data in HTML format
+{:.caption}
 
+{% seealso %}
 
-See Also
+* [ClipboardCanCopy event](http://docs.syncfusion.com/wpf/grid/events#clipboardcancopy)
+* [ClipboardCanCut event](http://docs.syncfusion.com/wpf/grid/events#clipboardcancut)
+* [ClipboardCanPaste event](http://docs.syncfusion.com/wpf/grid/events#clipboardcanpaste)
+* [ClipboardCopy event](http://docs.syncfusion.com/wpf/grid/events#clipboardcopy)
+* [ClipboardCut event](http://docs.syncfusion.com/wpf/grid/events#clipboardcut)
+* [ClipboardPaste event](http://docs.syncfusion.com/wpf/grid/events#clipboardpaste)
 
-* ClipboardCanCopy event
-* ClipboardCanCut event
-* ClipboardCanPaste event
-* ClipboardCopy event
-* ClipboardCut event
-* ClipboardPaste event
-
+{% endseealso %}
 
 
 ## Selection Modes
@@ -872,14 +704,11 @@ There are two modes of selection available in the Grid. They are,
 * Record-Based Selection 
 
 
-
 ### Model-Based Selection
 
 1. In Model-based selection, you will be able to select cell ranges; but the selections will have no knowledge of nested tables, grouping or sorting and hence the functionality is limited like a data bound grid (GridData control). 
 2. To use the model selection capability, set AllowSelections to any flag except none.
 3. Selection can be made through keyboard and mouse.
-
-
 
 ### Record-Based Selection 
 
@@ -887,8 +716,6 @@ There are two modes of selection available in the Grid. They are,
 2. In Record-based selection, the complete grid records (rows) will be selected and these selections function properly with nested tables, sorting, and so on. 
 3. To use the record selections, you must set AllowSelections to none and then set ListBoxSelectionMode to any flag except none.
 4. Selection can be made through keyboard and mouse with some restriction. For more details, see Record-based Selection in this topic.
-
-
 
 Let us know more about these selection Modes.
 
@@ -901,8 +728,6 @@ N> Setting the Flag to None will disable selecting of cells.
 The possible values for this type of selection are defined by the enum GridSelectionFlags. To control the selection behavior of the grid, set any of the following flags to the AllowSelection property. 
 
 ### Selection Flags
-
-_Selection Flags_
 
 <table>
 <tr>
@@ -951,7 +776,6 @@ Any</td><td>
 Allows selection of rows, columns, table, cell and multiple ranges of cells; also extends SHIFT Key support and alpha blending.</td></tr>
 </table>
 
-
 You can combine more than one flag to customize the current selection behavior.
 
 ### Example
@@ -959,24 +783,17 @@ You can combine more than one flag to customize the current selection behavior.
 Here is an example code snippet that sets the selection mode for selecting multiple columns.
 
 {% highlight c# %}
-
-
-
-
-
 grid.Model.Options.AllowSelection = GridSelectionFlags.Multiple | GridSelectionFlags.Column;
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img18.jpeg)
 
-
+Selecting multiple Columns
+{:.caption}
 
 ### Format Selections
 
 It is possible to modify the appearance of the selection through property settings. The following properties work in combinations to produce some special effects.
-
-_Property_
 
 <table>
 <tr>
@@ -1001,18 +818,13 @@ HighlightSelectionForeground</td><td>
 Specifies the foreground color for selection.</td></tr>
 </table>
 
-
 Below code provides alpha blended selection:
 
 
 {% highlight c# %}
-
-
-
-
 LinearGradientBrush brush = new LinearGradientBrush(new GradientStopCollection()
-
-{  new GradientStop(GridUtil.GetXamlConvertedValue<Color>("#A0E01020"), 0d),
+{  
+   new GradientStop(GridUtil.GetXamlConvertedValue<Color>("#A0E01020"), 0d),
 
    new GradientStop(GridUtil.GetXamlConvertedValue<Color>("#A0E01020"), 0.318681d),
 
@@ -1034,36 +846,27 @@ grid.Model.Options.DrawSelectionOptions = GridDrawSelectionOptions.AlphaBlend;
 
 ![](Working-with-Grid_images/Working-with-Grid_img19.jpeg)
 
-
+Alpha-blended selection
+{:.caption}
 
 Below code lets you set the background of the selection:
 
 
 {% highlight c# %}
-
-
-
-
 grid.Model.Options.DrawSelectionOptions = GridDrawSelectionOptions.ReplaceBackground;
 
 grid.Model.Options.HighlightSelectionBackground = Brushes.LightBlue;
-
-
 {% endhighlight %}
-
 
 ![](Working-with-Grid_images/Working-with-Grid_img20.jpeg)
 
-
+Selection Background set to blue
+{:.caption}
 
 Below code lets you set the foreground of the selection:
 
 
 {% highlight c# %}
-
-
-
-
 grid.Model.Options.DrawSelectionOptions = GridDrawSelectionOptions.ReplaceTextColor;
 
 grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
@@ -1072,7 +875,8 @@ grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
 
 ![](Working-with-Grid_images/Working-with-Grid_img21.jpeg)
 
-
+Foreground of the selection set to pink
+{:.caption}
 
 ### Record-Based Selection
 
@@ -1086,53 +890,43 @@ Grid offers the following three types of record-based selections which are toget
 
 To enable record-based selection, set the ListBoxSelectionMode property to any of the above specified List Box Selection Mode values. To enable list box selection, turn off the model-based selection by setting the AllowSelection property to Row. Below is a detailed description of List Box Selection Modes.
 
- SelectionMode-One
+#### SelectionMode-One
 
 It allows you to select only one item (record). Say, you have selected a record. Now if you select some other record, the previous record selection will be cleared. Hence it is a one record selection mode. The following code is used to set this mode:
 
 {% highlight c# %}
-
-
-
-
-
 grid.AllowSelection = GridSelectionFlags.Row;
+
 grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.One;
 {% endhighlight  %}
 
-
 ![](Working-with-Grid_images/Working-with-Grid_img22.jpeg)
 
-
+SelectionMode-one
+{:.caption}
 
 N> Record can be selected using a single mouse click or using UP or DOWN Arrow Keys
 
-### SelectionMode - MultiSimple
+#### SelectionMode - MultiSimple
 
 In this selection mode, you will be able to select multiple items individually. Say, you have selected a record using mouse and you want to select one more record. Click another record and you will notice that the previous selection is not cleared. You can hence select multiple records without the need of SHIFT or CTRL keys.
 
 The following code is used to set this mode:
 
-
 {% highlight c# %}
-
-
-
-
 grid.AllowSelection = GridSelectionFlags.Row;
+
 grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiSimple;
-
-
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img23.jpeg)
 
-
+SelectionMode – MultiSimple
+{:.caption}
 
 N> It does not support the use of SHIFT, CTRL and arrow keys to extend the selection.
 
-### SelectionMode - MultiExtended
+#### SelectionMode - MultiExtended
 
 This selection type allows multiple items selection through SHIFT, CTRL and arrow keys. 
 
@@ -1144,26 +938,20 @@ You can do any of the following when this selection mode is enabled:
 
 The following code is used to set this mode:
 
-
 {% highlight c# %}
-
-
-
-
 grid.AllowSelection = GridSelectionFlags.Row;
-grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 
+grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img24.jpeg)
 
+SelectionMode - MultiExtended
+{:.caption}
 
-
-The Model.Selections Collection
+### The Model.Selections Collection
 
 The entire grid selections are managed by the GridModel.Selections collection. It exposes several APIs that let you add, remove and operate on different grid selections. Below is the description of some important properties and APIs:
-
-_Property/Methods_
 
 <table>
 <tr>
@@ -1219,84 +1007,50 @@ Allowed width values are:
 * Auto
 
 
-
-N> You can also provide numeric values for *.
-
-> * can be preceded by any double value.
+N> You can also provide numeric values for *, where * can be preceded by any double value.
 
 The following code illustrates how to set the Width property of GridDataVisibleColumn.
 
-{% highlight html %}
-
-
-
-
+{% highlight xml %}
 Width Value set to Star:
 
-                    <syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/>
-
-
+<syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/>
 
 Width value set to “Double”
 
-                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="40" >
+<syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="40" >
 
-                       </syncfusion:GridDataVisibleColumn>
-
-
+</syncfusion:GridDataVisibleColumn>
 
 Width value set to “SizeToCells”                   
 
-
-
 <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" Width="SizeToCells" Binding="{Binding EmployeeID}"/>
-
-
 
 Width value set to "SizeToHeader”
 
-                    <syncfusion:GridDataVisibleColumn MappingName="ShipName" Width="SizeToHeader" Binding="{Binding ShipName}"/>
+<syncfusion:GridDataVisibleColumn MappingName="ShipName" Width="SizeToHeader" Binding="{Binding ShipName}"/>
 
-
-
-
-
-                </syncfusion:GridDataControl.VisibleColumns>
-
-
-
-
-
+</syncfusion:GridDataControl.VisibleColumns>
+{% endhighlight %}
 
 Define the Width, by using the following code.
 
-{% endhighlight  %}
 {% highlight c# %}
-
-
 Width = new GridDataControlLength(value, GridControlLengthUnitType.Star); 
-
-
 
 (or)
 
-
-
 Width = new GridDataControlLength(value); 
-
-
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img25.jpeg)
 
-
+Customized width of GridDataVisibleColumn
+{:.caption}
 
 ### Property Details
 
 The following table consists of the property details.
-
-_Property_
 
 <table>
 <tr>
@@ -1338,11 +1092,9 @@ You can use this feature to copy data to one or more locations.
 You can use this feature by using the following code:
 
 {% highlight c# %}
-
 this.grid.AllowDragDrop = true;
 
 this.grid.Model.Options.DataObjectConsumerOptions = GridDataObjectConsumerOptions.Styles;
-
 {% endhighlight  %}
 
 Excel Like Drag and Drop has the following features:
@@ -1350,7 +1102,7 @@ Excel Like Drag and Drop has the following features:
 * Uses IDataObject to copy, store, and retrieve data. 
 * Uses DragDrop API, which is available in WPF, to initiate drag-and-drop.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -1373,27 +1125,26 @@ GridDataObjectConsumerOptions</td><td>
 Gets or sets the enum value for the DragDrop Consumer Option.</td><td>
 Normal</td><td>
 Enum</td><td>
- this.grid.Model.Options.DataObjectConsumerOptions = GridDataObjectConsumerOptions.Styles;</td></tr>
+this.grid.Model.Options.DataObjectConsumerOptions = GridDataObjectConsumerOptions.Styles;</td></tr>
 <tr>
 <td>
 DragDropDropTargetFlags</td><td>
 Gets or sets the enum value for values that can be copied or moved and provides other options for DragDropTargetFlags.</td><td>
 Normal</td><td>
 Enum</td><td>
-  this.grid.Model.Options.DragDropDropTargetFlags</td></tr>
+this.grid.Model.Options.DragDropDropTargetFlags</td></tr>
 </table>
 
-
-_Event_
+### Event
 
 <table>
 <tr>
-<td>
-When is the event triggered?</td><td>
-How is it handled?</td><td>
-Method (event handler) that handles the event?</td><td>
-What are the event args associated?</td><td>
-Purpose of the Event</td></tr>
+<th>
+When is the event triggered?</th><th>
+How is it handled?</th><th>
+Method (event handler) that handles the event?</th><th>
+What are the event args associated?</th><th>
+Purpose of the Event</th></tr>
 <tr>
 <td>
 Occurs when the user releases the mouse over a cell at the end of an OLE drag-and-drop operation and before the data is applied to the grid.</td><td>
@@ -1430,36 +1181,26 @@ This feature can be implemented for application which contains more rows and col
 This topic explains how to implement the Resizing support to an application. The following steps explain the implementation of the Resizing support to an application. 
 
 1. Set the Resizing border properties
-2. Resizing is a built-in property and there is no need to set any special property to enable it. But there are options to set the hidden border color and thickness. Set the HiddenBorderBrush property to any color of the brush for the Model object.  The assigned color will be brushed in the border color of the hidden column or row. Set the HiddenBorderThickness property to an int value say 3. 
+2. Resizing is a built-in property and there is no need to set any special property to enable it. But there are options to 
+   set the hidden border color and thickness. Set the HiddenBorderBrush property to any color of the brush for the Model object.  The assigned color will be brushed in the border color of the hidden column or row. Set the HiddenBorderThickness property to an int value say 3. 
 
 The following code snippet explains the implementation of the HiddenBorderBrush and HidderBorderThickness properties.
 
+{% tabs %}
 
 {% highlight c# %}
-
-
-
-
 this.gridControl.Model.HiddenBorderBrush = Brushes.Red ;
 
 this.gridControl.Model.HiddenBorderThikness = 3; 
+{% endhighlight %}
 
-
-{% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
-
-
 Me.gridControl.Model.HiddenBorderBrush = Brushes.Red
 
 Me.gridControl.Model.HiddenBorderThikness = 3
+{% endhighlight %}
 
-
-
-{% endhighlight  %}
+{% endtabs %}
 
 ### Run the application
 
@@ -1467,64 +1208,46 @@ To set the rows or columns as hidden by code, you can use the SetHidden() method
 
 The following code snippet explains the implementation of the SetHidden() method of ColumnWidths and RowHeights property.
 
+{% tabs %}
 
 {% highlight c# %}
-
-
-
-
 // To hide columns and rows.
 
 this.gridControl.ColumnWidths.SetHidden(3, 4, true);
 
 this.gridControl.RowHeights.SetHidden(3, 4, true);
 
-
-
 // To unhide columns and rows.
 
 this.gridControl.ColumnWidths.SetHidden(3, 4, false);
 
 this.gridControl.RowHeights.SetHidden(3, 4, false);
-
-
 {% endhighlight  %}
+
 {% highlight vbnet %}
-
-
-
-
-
-
 // To hide columns and rows.
 
 Me.gridControl.ColumnWidths.SetHidden(3, 4, True)
 
 Me.gridControl.RowHeights.SetHidden(3, 4, True)
 
-
-
 // To unhide columns and rows.
 
 Me.gridControl.ColumnWidths.SetHidden(3, 4, False)
 
 Me.gridControl.RowHeights.SetHidden(3, 4, False)
-
-
 {% endhighlight  %}
 
+{% endtabs %}
 
 The following is a sample output of Resizing support implementation.
 
-
-
 ![](Working-with-Grid_images/Working-with-Grid_img26.png)
 
+Row index and Column index for 3 and 4 are hidden
+{:.caption}
 
-
-
-
-Hide and unhide a rows or Columns during run-time.
+### Hide and unhide a rows or Columns during run-time.
 
 To hide a column or a row, hover at the line of the column or row. It shows a resizing cursor with a single bar so that you can drag the line to its next header cell. After joining to the neighbor Header Cell, the line will be darkened which means that a column or a row is hidden. To unhide the hidden rows or columns, hover on the dark marked line. The cursor will then be changed to a double bar and by double clicking, l the hidden rows or columns can be resized to its original size.
 
@@ -1534,45 +1257,42 @@ Hover over the header cell’s border line. The cursor will be changed to single
 
 ![](Working-with-Grid_images/Working-with-Grid_img27.png)
 
-
+Hover on the border line of a header
+{:.caption}
 
 Drag it to Column 2 so that the Border color changes as like in the following screenshot.
 
 
-
 ![](Working-with-Grid_images/Working-with-Grid_img28.png)
 
+After dragging and joining the border line to the neighbor cell
+{:.caption}
 
 
 The following image shows the output after hiding the row by Mouse Dragging.
 
-
-
 ![](Working-with-Grid_images/Working-with-Grid_img29.png)
 
-
+Output of the hidden column to the neighbor cell
+{:.caption}
 
 To unhide the hidden row, hover the mouse on the hidden column border line. A double bar cursor will then be displayed as in the following screenshot.
 
-
-
 ![](Working-with-Grid_images/Working-with-Grid_img30.png)
 
-
+Hover on the hidden Column the Cursor changes to double bar
+{:.caption}
 
 Double clicking on it will unhide all the hidden columns in that particular hidden column.
 
-
-
 ![](Working-with-Grid_images/Working-with-Grid_img31.png)
 
+After double clicking the hidden column it unhides all the hidden Columns
+{:.caption}
 
-
-Tables for Properties, Methods, and Events
+### Tables for Properties, Methods, and Events
 
 ### Properties
-
-_Resizing support Table_
 
 <table>
 <tr>
@@ -1601,30 +1321,28 @@ GridModel</td></tr>
 
 ### Methods
 
-_Resizing support Table_
-
 <table>
 <tr>
 <th>
-Method</th><th>
+Metdod</th><th>
 Description</th><th>
 Parameters</th><th>
-Available inside the Property</th><th>
+Available inside tde Property</th><th>
 Return Type</th></tr>
 <tr>
-<th>
-SetHidden()</th><th>
-Sets the specified “from” rows to “to” rows as hidden. </th><th>
-int from, int to, bool hide</th><th>
-RowHeights</th><th>
-void</th></tr>
+<td>
+Setdidden()</td><td>
+Sets tde specified “from” rows to “to” rows as hidden. </td><td>
+int from, int to, bool hide</td><td>
+RowHeights</td><td>
+void</td></tr>
 <tr>
-<th>
-SetHidden()</th><th>
-Sets the specified “from” rows to “to” rows as hidden. </th><th>
-int from, int to, bool hide</th><th>
-ColumnWidths</th><th>
-void</th></tr>
+<td>
+Setdidden()</td><td>
+Sets tde specified “from” rows to “to” rows as hidden. </td><td>
+int from, int to, bool hide</td><td>
+ColumnWidtds</td><td>
+void</td></tr>
 </table>
 
 ### Sample Link
@@ -1648,99 +1366,70 @@ Essential Grid has a GridModelCommandManager class that implements support for t
 
 The CommandStack property of the GridControl class will return a reference to the GridCommandStack object that is associated with a grid. It is through this property that you can access the undo/redo support in Essential Grid. For example, you can use the enabled property of the CommandStack to control whether or not the grid supports undo/redo at any given moment. The following code samples show you some CommandStack properties.
 
+{% tabs %}
 
 {% highlight c# %}
-
-
-
-
 // Turn off the Undo buffer. 
 
 this.grid.Model.CommandStack.Enabled = false;
-
-
 
 // Turn on the Undo buffer.
 
 this.grid.Model.CommandStack.Enabled = true;
 
-
-
 // Execute the latest command from the undo stack.
 
 this.grid.Model.CommandStack.Undo();
-
-
 
 // Execute the latest command from the redo stack.
 
 this.grid.Model.CommandStack.Redo();
 
-
-
 // Clear the Undo buffer.
 
 this.grid.Model.CommandStack.UndoStack.Clear();
 
-
-
 // Clear the Redo buffer.
 
 this.grid.Model.CommandStack.RedoStack.Clear();
-
-
 
 // Clear both the Undo and Redo buffers.
 
 this.grid.Model.CommandStack.Clear();
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
-
-
-
-
-
 'Turn off the Undo buffer. 
 
 Me.grid.Model.CommandStack.Enabled = False
-
-
 
 'Turn on the Undo buffer.
 
 Me.grid.Model.CommandStack.Enabled = True
 
-
-
 'Execute the latest command from the undo stack.
 
 this.grid.Model.CommandStack.Undo()
-
-
 
 'Execute the latest command from the redo stack.
 
 this.grid.Model.CommandStack.Redo()
 
-
-
 'Clear the Undo buffer.
 
 Me.grid.Model.CommandStack.UndoStack.Clear()
-
-
 
 'Clear the Redo buffer.
 
 Me.grid.Model.CommandStack.RedoStack.Clear()
 
-
-
 'Clear both the Undo and Redo buffers.
 
 Me.grid.Model.CommandStack.Clear()
 {% endhighlight  %}
+
+{% endtabs %}
 
 ### Transactions
 
@@ -1748,42 +1437,31 @@ A transaction is a series of steps that should be treated as a single action in 
 
 A call to BeginTrans will mark the start of a series of actions that are to be treated as a single undo/redo step. Once BeginTrans has begun, all the changes are marked as being a member of a single transaction until either CommitTrans or RollBack is called. CommitTrans signals a successful end to the transaction. A call to RollBack will cause all the changes in the current transaction to be undone and will end the transaction processing. A RollBack call will return the grid in the same state that it was in, immediately prior to the call to BeginTrans.
 
+{% tabs %}
 
 {% highlight c# %}
-
-
 // Begin the transaction. 
 
 this.grid.Model.CommandStack.BeginTrans("Transaction beginning");
-
-
 
 // Commit the transaction.
 
 this.grid.Model.CommandStack.CommitTrans();
 
-
-
 // Rollback the current transaction.
 
 this.grid.Model.CommandStack.Rollback();
-
-
 {% endhighlight  %}
+
+
 {% highlight vbnet %}
-
-
 'Begin the transaction.
 
 Me.grid.Model.CommandStack.BeginTrans("Transaction beginning")
 
-
-
 'Commit the transaction.
 
 Me.grid.Model.CommandStack.CommitTrans()
-
-
 
 'Rollback the current transaction.
 
@@ -1791,13 +1469,14 @@ Me.grid.Model.CommandStack.UndoStack.Rollback()
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 It is also possible to nest transactions. If you are in the middle of a transaction, it is okay to call BeginTrans again. But, when such nested transactions are undone, they are treated as part of a single parent transaction.
-
-
 
 ![](Working-with-Grid_images/Working-with-Grid_img32.png)
 
-
+Undo/Redo Stack in Essential Grid
+{:.caption}
 
 ### Derived Commands
 
@@ -1807,21 +1486,16 @@ The undo/redo architecture of Essential Grid is complete as shipped with the pro
 
 The following code snippet demonstrates how to implement support for current cell activated action in undo/redo operations.
 
+{% tabs %}
+
 {% highlight c# %}
-
-
-
-
-
 public class GridCellActivatedCommand : GridModelCommand
 
 {
 
     private RowColumnIndex cell;
 
-
-
-    public GridCellActivatedCommand(GridModel model, RowColumnIndex cell)
+	public GridCellActivatedCommand(GridModel model, RowColumnIndex cell)
 
         : base(model)
 
@@ -1831,9 +1505,7 @@ public class GridCellActivatedCommand : GridModelCommand
 
     }
 
-
-
-    public override void Execute()
+	public override void Execute()
 
     {
 
@@ -1842,10 +1514,6 @@ public class GridCellActivatedCommand : GridModelCommand
     }
 
 }
-
-
-
-
 
 void grid_CurrentCellActivated(object sender, SyncfusionRoutedEventArgs args)
 
@@ -1861,20 +1529,13 @@ void grid_CurrentCellActivated(object sender, SyncfusionRoutedEventArgs args)
 
 }
 {% endhighlight  %}
+
 {% highlight vbnet %}
-
-
- 
-
-
-
 Public Class GridCellActivatedCommand
 
 Inherits GridModelCommand
 
 Private cell As RowColumnIndex
-
-
 
 Public Sub New(ByVal model As GridModel, ByVal cell As RowColumnIndex)
 
@@ -1884,8 +1545,6 @@ Me.cell = cell
 
 End Sub
 
-
-
 Public Overrides Sub Execute()
 
 Me.Grid.ActiveGridView.CurrentCell.MoveTo(cell)
@@ -1893,10 +1552,6 @@ Me.Grid.ActiveGridView.CurrentCell.MoveTo(cell)
 End Sub
 
 End Class
-
-
-
-
 
 Private Sub grid_CurrentCellActivated(ByVal sender As Object, ByVal args As SyncfusionRoutedEventArgs)
 
@@ -1909,11 +1564,11 @@ End If
 End Sub
 {% endhighlight  %}
 
+{% endtabs %}
+
 ### Tables for Properties, Methods, and Events
 
 #### Properties
-
-_Properties_
 
 <table>
 <tr>
@@ -1966,10 +1621,7 @@ CLR Property</td><td>
 bool</td></tr>
 </table>
 
-
 #### Methods
-
-_Methods_
 
 <table>
 <tr>
@@ -2022,7 +1674,6 @@ Undo()</td><td>
 void</td></tr>
 </table>
 
-
 #### Sample Link
 
 To view samples: 
@@ -2032,8 +1683,8 @@ To view samples:
 3. Expand the Excel-like Features item in the sample browser.
 4. Choose the Undo Redo Demo sample to launch.
 
-## Graphic Cell
 
+## Graphic Cell
 
 A graphic cell is a special type of cell that helps users render any content over the Grid control regardless of the underlying cell. Graphic cells have a separate style info class and model (GraphicModel) which is used to decide the styles and behaviors of graphic cells and their content.
 
@@ -2043,17 +1694,12 @@ You can get the GraphicStyleInfo object from the GraphicModel class by passing t
 
 
 {% highlight c# %}
-
-
 GraphicStyleInfo style = this.grid.Model.GraphicModel[Row, Column];
-
-
 {% endhighlight  %}
+
 Graphic cells have the following properties.
 
 #### Properties
-
-_Properties_
 
 <table>
 <tr>
@@ -2130,15 +1776,11 @@ Graphic cells have built-in support for the following cell types:
 * RichTextBox Cell
 
 
-
 ### Image Cell
 
 The image cell type is used to load images inside graphic cells. To load the graphic image cell in the Grid control you have to set the CellType as ImageCell and the CellValue as BitmapImage as shown in the following code sample.
 
-
 {% highlight c# %}
-
-
 var style = this.grid.Model.GraphicModel[cellspan.RowIndex, cellspan.ColumnIndex];
 
 style.CellType = "ImageCell";
@@ -2146,21 +1788,18 @@ style.CellType = "ImageCell";
 BitmapImage bi = new BitmapImage(new Uri(@"..\..\Resources\Sunset.jpg", UriKind.RelativeOrAbsolute));
 
 style.CellValue = bi;
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img33.png)
 
-
+Image Graphic Cell
+{:.caption}
 
 ### RichTextBox Cell
 
 The RichTextBox cell type is used to load a rich text box inside graphic cells. To load the rich text box over the Grid control, you have to set the CellType as RichTextBox and the CellValue as FlowDocument as shown in the following code sample.
 
-
 {% highlight c# %}
-
-
 FlowDocument _flowDocument = new FlowDocument();
 
 Paragraph _paragraph = new Paragraph();
@@ -2203,11 +1842,12 @@ style.CellType = "RichTextBox";
 
 style.CellValue = _flowDocument;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img34.png)
 
-
+RichTextBox Graphic Cell
+{:.caption}
 
 ### Custom Cell Types
 
@@ -2217,19 +1857,15 @@ The following code can be used to register the chart cell type in the graphic mo
 
 
 {% highlight c# %}
-
-
 this.grid.Model.GraphicModel.CellModels.Add("Chart", new GraphicChartCellModel());
-
-
 {% endhighlight  %}
+
+
 In general, the built-in cell types are also constructed only in this way. Every such cell type has its own cell model and renderer classes in the code base. These cell model and renderer classes originate from the GraphicCellModelBase and GraphicCellRendererBase classes. These two classes define the basic functionality for a cell type.
 
 The GraphicCellRendererBase class has the following virtual methods you can override in you custom cell render class.
 
 #### Methods
-
-_Methods_
 
 <table>
 <tr>
@@ -2288,10 +1924,7 @@ This cell displays a chart control over the grid cells as seen in Microsoft Exce
 
 #### CellModel class
 
-
 {% highlight c# %}
-
-
 public class GraphicChartCellModel:GraphicCellModel<GraphicChartCellRenderer>
 
 {
@@ -2303,16 +1936,11 @@ public class GraphicChartCellModel:GraphicCellModel<GraphicChartCellRenderer>
     }
 
 }
-
 {% endhighlight  %}
-
-
 
 #### CellRenderer Class
 
-
 {% highlight c# %}
-
 
 public class GraphicChartCellRenderer : GraphicCellRendererBase<Chart>
 
@@ -2363,17 +1991,11 @@ public class GraphicChartCellRenderer : GraphicCellRendererBase<Chart>
     }
 
 }
-
 {% endhighlight  %}
 
 The ChartExtensions class is used to create the Chart control (Syncfusion.Windows.Chart) from the IChartShape object (Syncfusion.XlsIO.IChartShape). While importing the Excel file to the Grid control, the chart in the Excel file is added to the graphic cell collection and the cell value is set as IChartShape.
 
 {% highlight c# %}
-
-
-
-
-
 public static class ChartExtensions
 
 {
@@ -2564,8 +2186,6 @@ public static class ChartExtensions
 
         }
 
-
-
         if (chartShape.HasLegend)
 
         {
@@ -2682,8 +2302,6 @@ public static class ChartExtensions
 
 }
 
-
-
 public class ChartDataPoint
 
 {
@@ -2711,8 +2329,6 @@ The GraphicModel class has the following two events for customizing the graphic 
 
 #### Events
 
-_Events_
-
 <table>
 <tr>
 <th>
@@ -2738,29 +2354,21 @@ To add the graphic cell to the Grid control, you have to create the instance for
 The following code sample demonstrates adding GraphicCell to the Grid control through GraphicModel.
 
 {% highlight c# %}
-
-
-
 GraphicCellSpanInfo cellspan = new GraphicCellSpanInfo(rowIndex, colIndex, 300, 300);
 
 this.grid.Model.GraphicModel.GraphicCells.Add(cellspan);
-
-
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img35.png)
 
-
+Graphic Cell
+{:.caption}
 
 #### Setting Cell Type to the Graphic Cell
 
 After adding the graphic cell to GraphicModel you can see the empty cell over the Grid control in the specified position. Now you have set the CellType, CellValue, and other style information by accessing the GraphicStyleInfo from GraphicModel. You can get the graphic cell style from the GraphicModel by passing the row and column index. Then by using that style you can set the cell type, cell values and other customization options for the Graphic cell, as shown in the following code sample.
 
 {% highlight c# %}
-
-
-
 var style = this.grid.Model.GraphicModel[cellspan.RowIndex, cellspan.ColumnIndex];
 
 style.CellType = "ImageCell";
@@ -2768,12 +2376,12 @@ style.CellType = "ImageCell";
 BitmapImage bi = new BitmapImage(new Uri(@"..\..\Resources\Sunset.jpg", UriKind.RelativeOrAbsolute));
 
 style.CellValue = bi;
-
 {% endhighlight  %}
 
 ![](Working-with-Grid_images/Working-with-Grid_img36.png)
 
+Image Graphic Cell
+{:.caption}
 
 
 If you do not set the offset value in the GraphicCellSpanInfo object, the control inside the graphic cells will be loaded in the starting position of the row and column index. By setting the offset value in the GraphicCellSpanInfo you can place the control anywhere in the cell.
-
