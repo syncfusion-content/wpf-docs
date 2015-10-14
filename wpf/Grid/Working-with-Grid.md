@@ -686,12 +686,12 @@ Pasting the grid data in HTML format
 
 {% seealso %}
 
-* [ClipboardCanCopy event](http://docs.syncfusion.com/wpf/grid/events#clipboardcancopy)
-* [ClipboardCanCut event](http://docs.syncfusion.com/wpf/grid/events#clipboardcancut)
-* [ClipboardCanPaste event](http://docs.syncfusion.com/wpf/grid/events#clipboardcanpaste)
-* [ClipboardCopy event](http://docs.syncfusion.com/wpf/grid/events#clipboardcopy)
-* [ClipboardCut event](http://docs.syncfusion.com/wpf/grid/events#clipboardcut)
-* [ClipboardPaste event](http://docs.syncfusion.com/wpf/grid/events#clipboardpaste)
+* [ClipboardCanCopy event](http://help.syncfusion.com/wpf/grid/events#clipboardcancopy)
+* [ClipboardCanCut event](http://help.syncfusion.com/wpf/grid/events#clipboardcancut)
+* [ClipboardCanPaste event](http://help.syncfusion.com/wpf/grid/events#clipboardcanpaste)
+* [ClipboardCopy event](http://help.syncfusion.com/wpf/grid/events#clipboardcopy)
+* [ClipboardCut event](http://help.syncfusion.com/wpf/grid/events#clipboardcut)
+* [ClipboardPaste event](http://help.syncfusion.com/wpf/grid/events#clipboardpaste)
 
 {% endseealso %}
 

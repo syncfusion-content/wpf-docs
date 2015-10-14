@@ -145,7 +145,7 @@ SfDataGrid enables fitting the height of the row based on its content on-demand 
 ### GetAutoRowHeight
 
 The GetAutoRowHeight method returns true or false by which the row height can be calculated. It returns false for 
-index that does not belong to the recorded rows. This method is specifically implemented in the [GridColumnSizer](http://docs.syncfusion.com/wpf/sfdatagrid/columns)class. 
+index that does not belong to the recorded rows. This method is specifically implemented in the [GridColumnSizer](http://help.syncfusion.com/wpf/sfdatagrid/columns)class. 
 
 It calculates height by the column that has large data. The following are the parameters for calculation of height.
 
@@ -445,7 +445,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 2. By using QueryRowHeight Event
 
-   By using QueryRowHeight event, you can match the RowIndex from QueryRowHeightEventArgs with GetHeaderIndex () helper method that returns index of the Header. You can refer to the following link to get more [resolver](http://docs.syncfusion.com/wpf) methods of the SfDataGrid.
+   By using QueryRowHeight event, you can match the RowIndex from QueryRowHeightEventArgs with GetHeaderIndex () helper method that returns index of the Header. You can refer to the following link to get more [resolver](http://help.syncfusion.com/wpf) methods of the SfDataGrid.
 
    N> Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex () method.
 
@@ -521,7 +521,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 When you utilize the special feature AutoRowHeight support of the SfDataGrid control, the row height can grow automatically with the text length you type. You need to raise the QueryRowHeight event and invalidate the row when you complete the editing.
 
-If you want the row to be resized with text that you have typed after editing, you can call InValidateRowHeight (int RowIndex) method in the [CurrentCellEndEdit](http://docs.syncfusion.com/wpf/sfdatagrid/editing#currentcellendedit) event of the SfDataGrid and it resets the row height internally. 
+If you want the row to be resized with text that you have typed after editing, you can call InValidateRowHeight (int RowIndex) method in the [CurrentCellEndEdit](http://help.syncfusion.com/wpf/sfdatagrid/editing#currentcellendedit) event of the SfDataGrid and it resets the row height internally. 
 
 Then call the InvalidateMeasureInfo method in VisualContainer to refresh the view. The QueryRowHeight event is called again for that row alone and it resizes the row based on the edited content.  This measures the row again and arrange it for you.
 
@@ -599,7 +599,7 @@ N> If the InvalidateMeasuerInfo method is not called, grid does not refresh auto
 
 ## How to customize the Height of the TableSummaryRow control
 
-The SfDataGrid control provides support to customize the height of the Table summary row. By utilizing the QueryRowHeight event, you can check whether the RowIndex is a table summary index from the QueryRowHeightEventArgs by using helper method IsTableSummaryIndex in GridIndexResolver class. You can refer to the following link to get more [resolver](http://docs.syncfusion.com/wpf) methods of the SfDataGrid.
+The SfDataGrid control provides support to customize the height of the Table summary row. By utilizing the QueryRowHeight event, you can check whether the RowIndex is a table summary index from the QueryRowHeightEventArgs by using helper method IsTableSummaryIndex in GridIndexResolver class. You can refer to the following link to get more [resolver](http://help.syncfusion.com/wpf) methods of the SfDataGrid.
 
 N> Need to use the namespace Syncfusion.UI.Xaml.Grid.Helper. 
 

@@ -701,7 +701,7 @@ Adding CurrentCellValidating Event to an Application
 
 To add the CurrentCellValidating event to an application:
 
-1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application <http://docs.syncfusion.com/wpf/griddata/data-binding>
+1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application <http://help.syncfusion.com/wpf/griddata/data-binding>
 
 2. In the following code example, we have set ProductList as ItemsSource. Hooking the CurrentCellValidating event follows. 
 
@@ -859,7 +859,7 @@ Adding RowValidating Event to an Application
 
 To add the RowValidating event to an application:
 
-1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application: <http://docs.syncfusion.com/wpf/griddata/data-binding>
+1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application: <http://help.syncfusion.com/wpf/griddata/data-binding>
 
    In the following code we have set ProductList as ItemsSource. Hooking the RowValidating event follows.
 

@@ -1005,7 +1005,7 @@ Assembly Dependencies for this Conversion
 
 N> You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
 N> Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
-N> Currently, [Word to PDF](http://docs.syncfusion.com/windowsforms/docio/importing-and-exporting#saving-a-word-document-as-pdf) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+N> Currently, [Word to PDF](http://help.syncfusion.com/windowsforms/docio/importing-and-exporting#saving-a-word-document-as-pdf) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
 
 
 The following code example lets you to convert a Word document to PDF.
@@ -1296,7 +1296,7 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 
 
 
-N> * Parameter "pageIndex" is a zero based index. * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word. * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.* You can refer to the [Word to PDF](http://docs.syncfusion.com/windowsforms/docio/importing-and-exporting#saving-a-word-document-as-an-image) Conversion for supported and unsupported elements in Word to Image conversion.
+N> * Parameter "pageIndex" is a zero based index. * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word. * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.* You can refer to the [Word to PDF](http://help.syncfusion.com/windowsforms/docio/importing-and-exporting#saving-a-word-document-as-an-image) Conversion for supported and unsupported elements in Word to Image conversion.
 
 The following code example lets you to render a Word document as image.
 

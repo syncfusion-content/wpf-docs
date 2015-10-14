@@ -4915,7 +4915,7 @@ Choose the Export to PDF sample to launch.
 ## Adding Column Chooser to an Application
 
 1. Bind an ItemsSource to GridDataControl. Refer to the following link for more information about binding an ItemsSource to GridDataControl: 
-[Data Binding](http://docs.syncfusion.com/wpf/griddata/data-binding).
+[Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding).
 
 {% highlight xaml %}
 
