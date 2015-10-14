@@ -9,7 +9,7 @@ documentation: ug
 
 ## Installed Location
 
-The following Table represent Assemblies/ Samples and its installed location
+The following table represents Assemblies or Samples and the installed location.
 
 <table>
 <tr>
