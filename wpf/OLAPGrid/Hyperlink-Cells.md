@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hyperlink-Cells
+title: Hyperlink Cells| OLAP Grid | Wpf | Syncfusion
 description: hyperlink cells
 platform: wpf
 control: OLAP Grid
@@ -23,7 +23,9 @@ Hyperlink Cell’s property can be applied to the following cells:
 
 The Hyperlink cells can be enabled by the following property of OlapGrid such as:
 
-  {% highlight c# %}
+
+{% tabs %}
+{% highlight c# %}
 
     
 
@@ -50,7 +52,7 @@ this.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = true;
 this.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = true;
 
 
-    {% endhighlight %}
+ {% endhighlight %}
 
 
 
@@ -83,7 +85,7 @@ Me.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = True
 
     {% endhighlight %}
 
-
+{% endtabs %}
 
 
 
@@ -91,6 +93,7 @@ Me.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = True
 
 The Hyperlink Click event can be tagged by the following way:
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -120,13 +123,14 @@ Me.OlapGrid1.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHa
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 
 
 The LinkClick event will return the clicked Cell Descriptor.
 
+{% tabs %}
   {% highlight c# %}
 
    
@@ -162,7 +166,7 @@ End Sub
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 

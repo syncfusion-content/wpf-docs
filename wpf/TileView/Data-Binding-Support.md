@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding-Support
+title: Data Binding Support | TileView | wpf | Syncfusion
 description: data binding support
 platform: wpf
 control: TileView Control
@@ -17,6 +17,7 @@ Data Binding can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the Data Binding to an application through XAML and C#.
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -129,6 +130,8 @@ public class Data
 
 {% endhighlight %}
 
+
+{% endtabs %}
 
 
 ![](Data-Binding-Support_images/Data-Binding-Support_img1.png)

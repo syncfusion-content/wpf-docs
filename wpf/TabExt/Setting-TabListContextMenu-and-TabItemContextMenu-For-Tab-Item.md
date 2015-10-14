@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item
+title: Setting TabListContextMenu and TabItemContextMenu For Tab Item | TabControlExt | wpf | Syncfusion
 description: setting tablistcontextmenu and tabitemcontextmenu for tab item
 platform: wpf
 control: TabControlExt
@@ -21,8 +21,9 @@ The context menu of the Tab Item has the following menu items.
 
 To enable the Tab Item context menu, use the below code.
 
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -94,12 +95,9 @@ tabControlExt.ShowTabItemContextMenu = true;
 stackPanel.Children.Add(tabControlExt);
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_img1.jpeg)
-
-
-
-
 
 ## Tab Item Context Menu Events
 
@@ -107,15 +105,22 @@ stackPanel.Children.Add(tabControlExt);
 
 This event is handled when the 'Close All But This' menu item in the TabItemContextMenu is clicked.
 
-###OnCloseAllTabs Event
+### OnCloseAllTabs Event
 
 This event is handled when the 'Close All' menuitem in TabItemContextMenu is clicked.
 
-###  Event
+### Event
 
 This event is handled when the 'Close' menu item in TabItemContextMenu is clicked.
 
-See Also
+{% seealso %}
 
-Resizing the Tab Item, Editing the Tab Item Header at Run Time, Tab Item Header Image, Tab Item Header Image Alignment
+Resizing the Tab Item
 
+Editing the Tab Item Header at Run Time
+
+Tab Item Header Image
+
+Tab Item Header Image Alignment
+
+{% endseealso %}

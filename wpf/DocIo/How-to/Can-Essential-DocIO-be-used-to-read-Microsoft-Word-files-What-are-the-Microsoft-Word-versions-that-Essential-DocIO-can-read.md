@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Can-Essential-DocIO-be-used-to-read-Microsoft-Word-files-What-are-the-Microsoft-Word-versions-that-Essential-DocIO-can-read
+title: Can Essential DocIO be used to read Microsoft Word files What are the Microsoft Word versions that Essential DocIO can read| DocIO | Wpf | Syncfusion
 description: can essential docio be used to read microsoft word files? what are the microsoft word versions that essential docio can read?
 platform: wpf
 control: DocIO

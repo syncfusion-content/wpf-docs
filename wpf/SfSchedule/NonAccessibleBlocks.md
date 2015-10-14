@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NonAccessibleBlocks
+title: NonAccessibleBlocks| SfSchedule | Wpf | Syncfusion
 description: nonaccessibleblocks 
 platform: wpf
 control: SfSchedule
@@ -10,7 +10,8 @@ documentation: ug
 # NonAccessibleBlocks 
 
  For a particular Starting and Ending time the block could not be accessed by setting the NonAccessibleBlocks property.
-{% highlight html %}
+{% tabs %}
+ {% highlight html %}
 
 
               <Schedule:SfSchedule ScheduleType="Week"  IntervalHeight="30">
@@ -42,6 +43,7 @@ documentation: ug
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 
 ![](NonAccessibleBlocks_images/NonAccessibleBlocks_img1.png)
@@ -50,11 +52,11 @@ documentation: ug
 
 
 
-## NonAccessibleBlockTemplate :
+## NonAccessibleBlockTemplate 
 
 The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate property.
 
-
+{% tabs %}
 {% highlight html %}
 
 
@@ -99,6 +101,7 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](NonAccessibleBlocks_images/NonAccessibleBlocks_img2.png)
 

@@ -1,18 +1,19 @@
 ---
 layout: post
-title: Track-ball
+title: Track ball | SfSparkline | wpf | Syncfusion
 description: track ball
 platform: wpf
-control: Sparkline
+control: SfSparkline
 documentation: ug
 ---
 
 # Track ball
 
 This is used to indicate the value point on mouse move and this feature applicable for line and area sparkline.
-{% highlight html %}
 
-  <Syncfusion:SfLineSparkline 
+{% highlight xaml %}
+
+<Syncfusion:SfLineSparkline 
 
                 ItemsSource="{Binding UsersList}" 
 
@@ -21,10 +22,9 @@ This is used to indicate the value point on mouse move and this feature applicab
                 YBindingPath="NoOfUsers">
 
   </Syncfusion:SfLineSparkline >
+  
 {% endhighlight %}
+
 Following is the snapshot for track ball,
 
-![C:/Users/ApoorvahR/Desktop/6.png](Track-ball_images/Track-ball_img1.png)
-
-
-
+![](Track-ball_images/Track-ball_img1.png)

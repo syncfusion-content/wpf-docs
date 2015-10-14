@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import-and-Export
+title: Import and Export| SfSchedule | Wpf | Syncfusion
 description: import and export
 platform: wpf
 control: SfSchedule

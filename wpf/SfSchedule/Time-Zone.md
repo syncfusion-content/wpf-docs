@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time-Zone
+title: Time Zone| SfSchedule | Wpf | Syncfusion
 description: time zone
 platform: wpf
 control: SfSchedule

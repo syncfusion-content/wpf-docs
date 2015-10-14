@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UI-Automation-Support-for-Ribbon
+title: UI Automation Support for Ribbon | Ribbon | WPF | Syncfusion
 description: ui automation support for ribbon
 platform: wpf
 control: Ribbon

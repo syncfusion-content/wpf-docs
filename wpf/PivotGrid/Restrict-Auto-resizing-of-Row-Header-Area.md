@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict Auto-resizing of Row Header Area
+title: Restrict Auto resizing of Row Header Area| PivotGrid | Wpf | Syncfusion
 description: Restrict Auto-resizing of Row Header Area
 platform: wpf
 control: PivotGrid
@@ -8,26 +8,26 @@ documentation: ug
 ---
 
 
-## Restrict Auto-resizing of Row Header Area
+# Restrict Auto-resizing of Row Header Area
 
 
 The PivotGrid control provides support for restricting the row header items from being stretched when there are too many items in the computation area. When the Computation button (Show List button) located in the DataHeaderArea of the grouping bar is clicked, the Computation List window appears with the computation fields. 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature will restrict the row header items from being stretched and maintains its size with the fixed one so that users can view most of the data in the viewable area instead of scrolling to view the data.
 
-Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 AllowRowHeaderAreaAutoSizing</td><td>
@@ -37,12 +37,13 @@ Boolean </td></tr>
 </table>
 
 
-### Enabling Resizing Pivot Grid
+## Enabling Resizing Pivot Grid
 
 Users can enable or disable this feature by using the AllowRowHeaderAreaAutoSizing__property. To show the Computation button (Show Fields button) and to restrict the row header items from being stretched when more items are added to the computation area, set this property to false. To hide the Computation button (Show Fields Button) and to allow the row header items to stretch when more items are added to the computation area, set this property to true. By default the property is set to true.
 
 The following code illustrates how to restrict the items from stretching and how to show the Computation List window through Computation button click:
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -58,6 +59,7 @@ this.pivotGrid1.AllowRowHeaderAreaAutoSizing = false;
 Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = False
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![C:/Users/maheswarir/Desktop/When property = true in wpf.PNG](Features_images/Features_img21.png)
 
@@ -65,6 +67,7 @@ Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = False
 
 The following code illustrates how to allow the items to stretch and how to hide the Computation button:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -80,6 +83,7 @@ this.pivotGrid1.AllowRowHeaderAreaAutoSizing = true;
 Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = True 
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![C:/Users/maheswarir/Desktop/when false.PNG](Features_images/Features_img22.png)
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfSparkline | wpf | Syncfusion
 description: overview
 platform: wpf
-control: Sparkline
+control: SfSparkline
 documentation: ug
 ---
 

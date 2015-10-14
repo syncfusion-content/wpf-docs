@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Bar Context Menu 
+title: Grouping Bar Context Menu | PivotGrid | Wpf | Syncfusion
 description: Grouping Bar Context Menu 
 platform: wpf
 control: PivotGrid

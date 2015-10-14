@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-Support
+title: Binding Support| PercentTextBox  | Wpf | Syncfusion
 description: binding support
 platform: wpf
 control: PercentTextBox 
@@ -19,13 +19,13 @@ The following example shows a simple binding between the PercentValue of the Per
 
    <StackPanel>
 
-    <syncfusion:PercentTextBox x:Name="percentTextBox1" Width="150" Margin="10"/>
+<syncfusion:PercentTextBox x:Name="percentTextBox1" Width="150" Margin="10"/>
 
-    <syncfusion:PercentTextBox x:Name="percentTextBox2" Width="150" Margin="10"  
+<syncfusion:PercentTextBox x:Name="percentTextBox2" Width="150" Margin="10"  
 
-                     PercentValue="{Binding ElementName=percentTextBox1, 
+PercentValue="{Binding ElementName=percentTextBox1, 
 
-                     Path=PercentValue,Mode=TwoWay}"/>
+Path=PercentValue,Mode=TwoWay}"/>
 
 </StackPanel>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Support
+title: Keyboard Support| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: keyboard support
 platform: wpf
 control: SfMultiColumnDropDownControl
@@ -11,7 +11,7 @@ documentation: ug
 
 The following table lists the keyboard shortcuts supported by the MultiColumnDropDown control.
 
-List of Keyboard Shortcut
+### List of Keyboard Shortcut
 
 <table>
 <tr>

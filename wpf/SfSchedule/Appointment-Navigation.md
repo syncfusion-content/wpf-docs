@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointment-Navigation
+title: Appointment Navigation| SfSchedule | Wpf | Syncfusion
 description: appointment navigation
 platform: wpf
 control: SfSchedule
@@ -10,13 +10,14 @@ documentation: ug
 # Appointment Navigation
 
 When there is no appointment in the current view, we can navigate to view the previous appointment or next appointment from the current view. This can be enabled or disabled using the property ShowNavigationTap. The default value of ShowNavigationTap property is False.  
+{% tabs %}
 {% highlight html %}
 
 
 
-     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Week"
+<Schedule:SfSchedule x:Name="schedule" ScheduleType="Week"
 
-                          ShowAppointmentNavigationButtons ="True"  /> 
+ShowAppointmentNavigationButtons ="True"  /> 
 
 
 {% endhighlight  %}
@@ -26,17 +27,17 @@ When there is no appointment in the current view, we can navigate to view the pr
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ScheduleType = ScheduleType.Week;
+schedule.ScheduleType = ScheduleType.Week;
 
-            schedule.ShowAppointmentNavigationButtons = true;
+schedule.ShowAppointmentNavigationButtons = true;
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Appointment-Navigation_images/Appointment-Navigation_img1.png)
 
@@ -49,17 +50,17 @@ Previous appointment navigation button can be customized by PreviousNavigationBu
 
 
 
-            <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True">
+<Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True">
 
-            <Schedule:SfSchedule.PreviousNavigationButtonTemplate>
+<Schedule:SfSchedule.PreviousNavigationButtonTemplate>
 
-                <DataTemplate>
+<DataTemplate>
 
 <Border Height="200" Width="50" Background="Red"/>                </DataTemplate>
 
-            </Schedule:SfSchedule.PreviousNavigationButtonTemplate>
+</Schedule:SfSchedule.PreviousNavigationButtonTemplate>
 
-        </Schedule:SfSchedule>
+</Schedule:SfSchedule>
 
 {% endhighlight  %}
 
@@ -74,15 +75,15 @@ By using the NextNavigationButtonTemplate property the next appointment navigati
 
 
 
-            <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True">
+<Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True">
 
-             <Schedule:SfSchedule.NextNavigationButtonTemplate>                <DataTemplate>
+<Schedule:SfSchedule.NextNavigationButtonTemplate>                <DataTemplate>
 
 <Border Height="200" Width="50" Background="Red"/>                                </DataTemplate>
 
-            </Schedule:SfSchedule.NextNavigationButtonTemplate>
+</Schedule:SfSchedule.NextNavigationButtonTemplate>
 
-        </Schedule:SfSchedule>
+</Schedule:SfSchedule>
 
 {% endhighlight  %}
 

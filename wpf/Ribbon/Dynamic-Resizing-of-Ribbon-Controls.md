@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic-Resizing-of-Ribbon-Controls
+title: Dynamic Resizing of Ribbon Controls | Ribbon | WPF | Syncfusion
 description: dynamic resizing of ribbon controls
 platform: wpf
 control: Ribbon
@@ -25,11 +25,17 @@ The following code illustrates this.
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<syncfusion:Ribbon Name="MyRibbon" IsAutoSizeFormEnabled="True"></syncfusion:Ribbon>{% endhighlight %}</td></tr>
+{% highlight xml %}
+<syncfusion:Ribbon Name="MyRibbon" IsAutoSizeFormEnabled="True">
+</syncfusion:Ribbon>
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight C# %}Ribbon MyRibbon = new Ribbon();MyRibbon.IsAutoSizeFormEnabled = true;{% endhighlight %}</td></tr>
+{% highlight C# %}
+Ribbon MyRibbon = new Ribbon();
+MyRibbon.IsAutoSizeFormEnabled = true;
+{% endhighlight %}
+</tr>
 </table>
 
 

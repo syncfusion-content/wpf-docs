@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| OLAP Chart | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Overview
+# OLAPChart
 
 Essential OLAP Chart control allows you to efficiently visualize the multidimensional data from the OLAP data source, with the help of a report, which is bound to it.
 
@@ -39,14 +39,14 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
-_Document Conventions Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Convention**' | markdownify }}</th><th>
-{{ '**Icon**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Convention}</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>

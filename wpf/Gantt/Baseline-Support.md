@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Baseline-Support
+title: Baseline Support| Gantt | Wpf | Syncfusion
 description: baseline support
 platform: wpf
 control: Gantt
@@ -25,11 +25,11 @@ N> Variance view will have the read-only Grid. You cannot edit the cells in Gant
 
 This will help the Project Leads to compare the current progress of the project to the baseline and modify or rework the plan of existing tasks in order to meet deadlines. Organizations can use this to compare the current progress of the project to the initial estimation, analyze the rework of the plan or the budget of the project in to meet deadlines and exact user requirements.
 
-Properties, Methods and Events:
 
-Methods:
 
-_Methods_
+### Methods
+
+
 
 <table>
 <tr>
@@ -69,67 +69,69 @@ To add Baseline Table View to an application:
 
 The following codes illustrate this:
 
-
+{% tabs %}
 {% highlight html %}
 
 
-   <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
+<gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
-             ItemsSource="{Binding GanttItemSource}"  
+ItemsSource="{Binding GanttItemSource}"  
 
-             ToolTipTemplate="{StaticResource toolTipTemplate}">          
+ToolTipTemplate="{StaticResource toolTipTemplate}">          
 
-                <gantt:GanttControl.TaskAttributeMapping>
+<gantt:GanttControl.TaskAttributeMapping>
 
-                    <gantt:TaskAttributeMapping TaskIdMapping="Id"
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                            TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                            DurationMapping="Duration"
+DurationMapping="Duration"
 
-                                            StartDateMapping="StDate"                                           
+StartDateMapping="StDate"                                           
 
-                                            FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                            ChildMapping="ChildTask"  
+ChildMapping="ChildTask"  
 
-                                            ProgressMapping="Complete"
+ProgressMapping="Complete"
 
-                                            PredecessorMapping="Predecessor"                                             
+PredecessorMapping="Predecessor"                                             
 
-                                            ResourceInfoMapping="Resource"
+ResourceInfoMapping="Resource"
 
-                                            CostMapping="Cost"
+CostMapping="Cost"
 
-                                            BaselineCostMapping="BaselineCost"
+BaselineCostMapping="BaselineCost"
 
-                                            BaselineFinishMapping="BaselineEnd"
+BaselineFinishMapping="BaselineEnd"
 
-                                            BaselineStartMapping="BaselineStart" >
+BaselineStartMapping="BaselineStart" >
 
-                    </gantt:TaskAttributeMapping>
+</gantt:TaskAttributeMapping>
 
-                </gantt:GanttControl.TaskAttributeMapping>
+</gantt:GanttControl.TaskAttributeMapping>
 
-            </gantt:GanttControl>
+</gantt:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
 
 
-   // To load the Variance Table View 
+// To load the Variance Table View 
 
-   this.Gantt.LoadVarianceTableView();
+this.Gantt.LoadVarianceTableView();
 
 
 
-   // To load the Default [Editing] View
+// To load the Default [Editing] View
 
-   this.Gantt.LoadDefaultTableView();
+this.Gantt.LoadDefaultTableView();
 
 
 {% endhighlight  %}
+{% endtabs %}
+
 The following image shows the BaseLine Table View:
 
 
@@ -137,7 +139,8 @@ The following image shows the BaseLine Table View:
 ![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)
 
 
-_BaseLine Table View_
+BaseLine Table View
+{:.caption}
 
 ## Samples
 
@@ -156,7 +159,7 @@ On-Demand Baseline Column inclusion will dynamically add the baseline columns na
 
 Initially, Gantt will get loaded with a default set of columns. Then, you can add the baseline columns on demand basis to Gantt Grid, by selecting the columns from the drop down cell. 
 
-Use Case Scenario
+### Use Case Scenario
 
 This helps the Project Lead to store the estimation and will help to schedule the project in an efficient way by comparing the progress on planning itself. Organizations can have the default set of columns on Gantt Grid on loading, and when they need to compare a field with the estimate data, they can pick that column from the drop down. 
 
@@ -166,11 +169,12 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-_On-Demand Baseline Column Inclusion_
+On-Demand Baseline Column Inclusion
+{:caption}
 
-## Properties
+### Properties
 
-_Property_
+
 
 <table>
 <tr>
@@ -198,69 +202,68 @@ To add the On-Demand Baseline Column Inclusion to an application you need to ena
 4. By selecting a column name from the drop down cell, the corresponding column will be dynamically added to the Gantt Grid.
 
 The following codes illustrate Adding On-Demand Baseline Column Inclusion to an Application:
-
+{% tabs %}
 {% highlight html %}
 
 
 
 
 
-   <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
+<gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
-             ItemsSource="{Binding GanttItemSource}"  
+ItemsSource="{Binding GanttItemSource}"  
 
-             ToolTipTemplate="{StaticResource toolTipTemplate}"
+ToolTipTemplate="{StaticResource toolTipTemplate}"
 
-             ShowAddNewColumn="True">          
+ShowAddNewColumn="True">          
 
-                <gantt:GanttControl.TaskAttributeMapping>
+<gantt:GanttControl.TaskAttributeMapping>
 
-                    <gantt:TaskAttributeMapping TaskIdMapping="Id"
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                            TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                            DurationMapping="Duration"
+DurationMapping="Duration"
 
-                                            StartDateMapping="StDate"                                           
+StartDateMapping="StDate"                                           
 
-                                            FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                            ChildMapping="ChildTask"  
+ChildMapping="ChildTask"  
 
-                                            ProgressMapping="Complete"
+ProgressMapping="Complete"
 
-                                            PredecessorMapping="Predecessor"                                             
+PredecessorMapping="Predecessor"                                             
 
-                                            ResourceInfoMapping="Resource"
+ResourceInfoMapping="Resource"
 
-                                            CostMapping="Cost"
+CostMapping="Cost"
 
-                                           BaselineCostMapping="BaselineCost"
+BaselineCostMapping="BaselineCost"
 
-                                          BaselineFinishMapping="BaselineEnd"
+BaselineFinishMapping="BaselineEnd"
 
-                                         BaselineStartMapping="BaselineStart"
+BaselineStartMapping="BaselineStart"
 
-                                            >
+>
 
-                    </gantt:TaskAttributeMapping>
+</gantt:TaskAttributeMapping>
 
-                </gantt:GanttControl.TaskAttributeMapping>
+</gantt:GanttControl.TaskAttributeMapping>
 
-            </gantt:GanttControl>
+</gantt:GanttControl>
 
 
 {% endhighlight  %}
 {% highlight c# %}
 
 
+// Displaying the Add New column drop down 
 
-
-   // Displaying the Add New column drop down 
-
-   this.Gantt.ShowAddNewColumn = true;
+this.Gantt.ShowAddNewColumn = true;
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Samples Link
 
@@ -279,13 +282,13 @@ Project statistics will provide the current statistics of the project in an obje
 
 This will provide enough information about the project. The entire project information will be available in the form of an object of type “ProjectInfo”. You can set your own visual to display the statistics. 
 
-Use Case Scenario
+### Use Case Scenario
 
 This will be useful for Project Leads to take decisions based on the current status. An Organization can use this to present the current statuses of their projects to their clients. They can also use this for analysis before making important decisions on projects.
 
-Methods
+### Methods
 
-_Methods_
+
 
 <table>
 <tr>
@@ -315,68 +318,70 @@ To add Project Statistics to an application:
 
 The following codes illustrate adding Project Statistics to an application:
 
+{% tabs %}
 {% highlight html %}
 
 
 
-   <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
+<gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
-             ItemsSource="{Binding GanttItemSource}"  
+ItemsSource="{Binding GanttItemSource}"  
 
-             ToolTipTemplate="{StaticResource toolTipTemplate}">          
+ToolTipTemplate="{StaticResource toolTipTemplate}">          
 
-                <gantt:GanttControl.TaskAttributeMapping>
+<gantt:GanttControl.TaskAttributeMapping>
 
-                    <gantt:TaskAttributeMapping TaskIdMapping="Id"
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                            TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                            DurationMapping="Duration"
+DurationMapping="Duration"
 
-                                            StartDateMapping="StDate"                                           
+StartDateMapping="StDate"                                           
 
-                                            FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                            ChildMapping="ChildTask"  
+ChildMapping="ChildTask"  
 
-                                            ProgressMapping="Complete"
+ProgressMapping="Complete"
 
-                                            PredecessorMapping="Predecessor"                                             
+PredecessorMapping="Predecessor"                                             
 
-                                            ResourceInfoMapping="Resource"
+ResourceInfoMapping="Resource"
 
-                                            CostMapping="Cost"
+CostMapping="Cost"
 
-                                           BaselineCostMapping="BaselineCost"
+BaselineCostMapping="BaselineCost"
 
-                                          BaselineFinishMapping="BaselineEnd"
+BaselineFinishMapping="BaselineEnd"
 
-                          BaselineStartMapping="BaselineStart"
+BaselineStartMapping="BaselineStart"
 
-                                            >
+>
 
-                    </gantt:TaskAttributeMapping>
+</gantt:TaskAttributeMapping>
 
-                </gantt:GanttControl.TaskAttributeMapping>
+</gantt:GanttControl.TaskAttributeMapping>
 
-            </gantt:GanttControl>
+</gantt:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
 
 
-   // To get the Project Statistics 
+// To get the Project Statistics 
 
-   ProjectInfo projInfo = this.Gantt.GetProjectStatistics(); 
+ProjectInfo projInfo = this.Gantt.GetProjectStatistics(); 
 
-                   (or)
+	   (or)
 
-   ProjectInfo projInfo = new ProjectInfo();
+ProjectInfo projInfo = new ProjectInfo();
 
-   projInfo = this.Gantt.GetProjectStatistics();      
+projInfo = this.Gantt.GetProjectStatistics();      
 
 {% endhighlight  %}
+{% endtabs %}
 
 Sample Project Statistic Visual:
 
@@ -386,7 +391,8 @@ Sample Project Statistic Visual:
 
 
 
-_Project Statistics_
+Project Statistics
+{:.caption}
 
 ### Samples
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization Support
+title: Localization Support | Chart(Classic) | wpf | Syncfusion
 description: Localization Support
 platform: wpf
 control: Chart (Classic)
@@ -51,21 +51,12 @@ The culture information should be set in the application before the InitializeCo
 {% highlight c# %}
 
 
-
-
-
-
 System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja");
-
-
 
 {% endhighlight  %}
 
 ![](Chart-Controls_images/Chart-Controls_img234.png)
 
-
-
-_Localization Property Table_
 
 <table>
 <tr>

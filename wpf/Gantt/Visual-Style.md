@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual-Style
+title: Visual Style| Gantt | Wpf | Syncfusion
 description: visual style
 platform: wpf
 control: Gantt
@@ -16,9 +16,9 @@ Essential Gantt enables you to customize the appearance of the control. This sup
 * Office2010Silver
 * Metro
 
-## Properties
+### Properties
 
-_Property_
+
 
 <table>
 <tr>
@@ -44,6 +44,7 @@ You can customize the theme using the VisualStyle property.
 
 The following code illustrates how to set the VisualStyle of Gantt control:
 
+{% tabs %}
 {% highlight html %}
 
 
@@ -59,7 +60,7 @@ Gantt.VisualStyle = VisualStyle.Office2010Blue;
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 The following shows Office 2010 Blue:
 
@@ -69,7 +70,8 @@ The following shows Office 2010 Blue:
 
 
 
-_Office 2010 Blue_
+Office 2010 Blue
+{:.caption}
 
 The following image shows Office 2010 silver:
 
@@ -79,7 +81,8 @@ The following image shows Office 2010 silver:
 
 
 
-_Office 2010Silver_
+Office 2010Silver
+{:.caption}
 
 The following image shows Office 2010Silver:
 
@@ -88,8 +91,8 @@ The following image shows Office 2010Silver:
 ![](Visual-Style_images/Visual-Style_img3.png)
 
 
-
-_Office2010Black_
+Office2010Black
+{:.caption}
 
 The following image shows Office 2010Metro:
 
@@ -99,7 +102,8 @@ The following image shows Office 2010Metro:
 
 
 
-_Metro_
+Metro
+{:.caption}
 
 ## Samples Link
 

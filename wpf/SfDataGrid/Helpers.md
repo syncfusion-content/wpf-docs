@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Helpers
+title: Helpers | SfDataGrid | WPF | Syncfusion
 description: helpers
 platform: wpf
 control: SfDataGrid
@@ -15,7 +15,7 @@ SfDataGrid has GridIndexResolver static class present in Syncfusion.UI.Xaml.Grid
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 
-_Proptotype Table_
+Proptotype Table
 
 <table>
 <tr>

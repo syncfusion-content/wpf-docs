@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mouse-Support
+title: Mouse Support| Hierarchical Navigator | Wpf | Syncfusion
 description: mouse support
 platform: wpf
 control: Hierarchical Navigator

@@ -15,13 +15,13 @@ You can insert a TextBox in the Report Designer and drag report items to the Tex
 
 2.Drag the TextBox to the Report Designer panel. A TextBox appears on the Report Designer window.
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-17.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img1.png)
+  ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img1.png)
 
 
 
-1.To add the first value of the data field, drag the data field from the Report Data to the added TextBox.
+3.To add the first value of the data field, drag the data field from the Report Data to the added TextBox.
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img2.png)
+  ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img2.png)
 
 
 
@@ -33,21 +33,25 @@ To apply styles to the TextBox:
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img3.png)
+  ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img3.png)
 
 
 
 2.In the TextBox properties dialog, select any of the following:
 
-1.General to change the name and value of the TextBox.
-2.Alignment to set the horizontal alignment, vertical alignment, and padding of the TextBox.
-3.Font to set the font family, font size, font color, font style, font effects, and line spacing of the TextBox.
-4.Fill to set the background color of the TextBox.
-5.Visibility to set the visibility of the TextBox when the report is initially run.
+  I.General to change the name and value of the TextBox.
+  
+  II.Alignment to set the horizontal alignment, vertical alignment, and padding of the TextBox.
+  
+  III.Font to set the font family, font size, font color, font style, font effects, and line spacing of the TextBox.
+  
+  IV.Fill to set the background color of the TextBox.
+  
+  V.Visibility to set the visibility of the TextBox when the report is initially run.
 
 
 
-  ![C:/Users/radhas/Desktop/ScreenShot/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img4.png)
+  ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img4.png)
 
 
 
@@ -64,11 +68,10 @@ To apply styles to the TextBox:
 5.Set the desired values and click OK. 
 
 
-
-Note: When you set a value that starts with the character “=“, then it assigns the default value of that property to the TextBox.
+  N> When you set a value that starts with the character “=“, then it assigns the default value of that property to the TextBox.
  
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img6.png)
+  ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img6.png)
 
 
 
@@ -77,15 +80,15 @@ Note: When you set a value that starts with the character “=“, then it assig
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-20.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img7.png)
+  ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img7.png)
 
 
 
-###Deleting TextBox
+### Deleting TextBox
 
 To delete the TextBox, right click the TextBox to be deleted, and then select Delete.
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-21.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img8.png)
+![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img8.png)
 
 
 

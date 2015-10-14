@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Schedule-Appointment-Status
+title: Schedule Appointment Status| SfSchedule | Wpf | Syncfusion
 description: schedule appointment status
 platform: wpf
 control: SfSchedule
@@ -29,7 +29,7 @@ schedule.Appointments.Add(new ScheduleAppointment() { Status= new ScheduleAppoin
 
 
 
-## AppointmentStatusCollection:
+## AppointmentStatusCollection
 
 The AppointmentStatusCollection property used to set the status to collection of appointments.
 {% highlight c# %}

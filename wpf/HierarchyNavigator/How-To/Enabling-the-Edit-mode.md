@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enabling-the-Edit-mode
+title: Enabling the Edit mode| Hierarchical Navigator | Wpf | Syncfusion
 description: enabling the edit mode
 platform: wpf
 control: Hierarchical Navigator

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | DockingManager | wpf | Syncfusion
 description: localization
 platform: wpf
 control: DockingManager
@@ -32,7 +32,7 @@ Sets the string for the ToolTip of Auto Hide button in the DockingManager.</td>
 {{'![](Localization_images/Localization_img1.png)'|markdownify}}
 </td>
 <td>
-{{'![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/38.png](Localization_images/Localization_img2.png)'|markdownify}}
+{{'![](Localization_images/Localization_img2.png)'|markdownify}}
 
 </td></tr>
 <tr>
@@ -42,11 +42,13 @@ Sets the string for ToolTipof Close button in DockingManager.</td></tr>
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img3.png)'|markdownify}}
+
+{{ '_CloseButtonTooltipText(en-US)_' | markdownify }}
 </td>
 <td>
 {{'![](Localization_images/Localization_img4.png)'|markdownify}}
 
-{{ '_CloseButtonTooltipText(en-US)                                      CloseButtonTooltipText(fr-FR)_' | markdownify }}</td></tr>
+{{ '_CloseButtonTooltipText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 ContextMenuButtonTooltipText</td><td>
@@ -56,7 +58,7 @@ Sets the string for the ToolTip of Context Menu button in DockingManager.</td></
 {{'![](Localization_images/Localization_img5.png)'|markdownify}}
 </td>
 <td>
-{{'![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/42.png](Localization_images/Localization_img6.png)'|markdownify}}
+{{'![](Localization_images/Localization_img6.png)'|markdownify}}
 
 </td></tr>
 <tr>
@@ -66,11 +68,13 @@ Sets the string for the context menu item in DockingManager.</td></tr>
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img7.png)'|markdownify}}
+
+{{ '_ContextMenu(en-US)_' | markdownify }}
 </td>
 <td>
-{{'![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/52.png](Localization_images/Localization_img8.png)'|markdownify}}
+{{'![](Localization_images/Localization_img8.png)'|markdownify}}
 
-{{ '_ContextMenu(en-US)                                     ContextMenu(fr-FR)_' | markdownify }}</td></tr>
+{{ '_ContextMenu(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 MoveToNextTabGroup </td><td>
@@ -78,11 +82,13 @@ Sets the string for MoveToNextTabGroup context menu item in the DockingManager a
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img9.png)'|markdownify}}
+
+{{ '_MoveToNextTabGroup(en-US)_' | markdownify }}
 </td>
 <td>
 {{'![](Localization_images/Localization_img10.png)'|markdownify}}
 
-{{ '_MoveToNextTabGroup(en-US)                                        MoveToNextTabGroup(fr-FR)_' | markdownify }}</td></tr>
+{{ '_MoveToNextTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 MoveToPreviousTabGroup</td><td>
@@ -90,11 +96,13 @@ Sets the string for MoveToPreviousTabGroup context menu item in the DockingManag
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img11.png)'|markdownify}}
+
+{{ '_MoveToPreviousTabGroup(en-US)_' | markdownify }}
 </td>
 <td>
 {{'![](Localization_images/Localization_img12.png)'|markdownify}}
 
-{{ '_MoveToPreviousTabGroup(en-US)                           MoveToPreviousTabGroup(fr-FR)_' | markdownify }}</td></tr>
+{{ '_MoveToPreviousTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 NewTabgroupMenuItemCancel</td><td>
@@ -102,11 +110,13 @@ Sets the string for the Tab context menu item in the DockingManager and Document
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img13.png)'|markdownify}}
+
+{{ '_NewTabGroup(en-US)_' | markdownify }}
 </td>
 <td>
-{{'![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/48.png](Localization_images/Localization_img14.png)'|markdownify}}
+{{'![](Localization_images/Localization_img14.png)'|markdownify}}
 
-{{ '_NewTabGroup(en-US)                            NewTabGroup(fr-FR)_' | markdownify }}</td></tr>
+{{ '_NewTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 TabCloseCloseAllButThisTabCloseAllFloatingDocumentDockableNewHorizontalTabGroupNewVerticalTabGroup</td><td>
@@ -114,11 +124,13 @@ Sets the string for the menu item in the Document Container and DockingManager.<
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img15.png)'|markdownify}}
+
+{{ '_MenuItem(en-US)_' | markdownify }}
 </td>
 <td>
 {{'![](Localization_images/Localization_img16.png)'|markdownify}}
 
-{{ '_MenuItem(en-US)                                                  MenuItem(fr-FR)_' | markdownify }}</td></tr>
+{{ '_MenuItem(fr-FR)_' | markdownify }}</td></tr>
 </table>
 
 

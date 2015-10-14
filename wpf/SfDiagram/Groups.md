@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Groups
+title: Groups | SfDiagram | wpf | Syncfusion
 description: groups
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Groups
+# Groups
 
 The SfDiagram provides support to group and ungroup nodes. Grouping feature is useful when you want to apply the same edits to a number of objects, and yet retain their individuality. All the operations performed on a group also affect the individual items in the group. However, any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities. 
 
-Create Group
+## Create Group
 
 You can create a group by using the following methods:
 
@@ -22,9 +22,7 @@ By Using Nodes Property
 
 The following code example illustrates how to create a group by using Nodes property:
 
-[C#]  
-
-
+{% highlight c# %}  
 
 // Creating Nodes
 
@@ -98,12 +96,13 @@ return n;
 
 }
 
-By using the ParentGroup property in Node
+{% endhighlight %}
+
+### By using the ParentGroup property in Node
 
 The following code example illustrates how to create a group by using ParentGroup property of Node:
 
-[C#]
-
+{% highlight c# %}
 
 
 // Creating Groups
@@ -168,54 +167,44 @@ return n;
 
 }
 
-
+{% endhighlight %}
 
 ![](Groups_images/Groups_img1.png)
-{:.image }
 
-
-Selecting a Group
+## Selecting a Group
 
 You can select a group by clicking on any one of its children. Consecutive clicks on a child object, select the parent groups in the order of their creation. In a similar manner, consecutive clicks on a child object leads to the selection of inner groups, and eventually the object itself, and the cycle continues.
 
 The following steps illustrate how to select an object that has two groups.
 
 ![](Groups_images/Groups_img2.png)
-{:.image }
+
 
 
 1. Click on Node1 to select the outer group.
+
 2. Click again to select the inner group to where it belongs.
 
-![](Groups_images/Groups_img3.png)
-{:.image }
-
+   ![](Groups_images/Groups_img3.png)
 
 3. Finally, click again to select the child node after all groups have been traversed.
 
-![](Groups_images/Groups_img4.png)
-{:.image }
+   ![](Groups_images/Groups_img4.png)
 
-
-Editing a Group
+## Editing a Group
 
 To edit a group, you have to make sure that the corresponding group is selected. The following features apply to the edits performed on an object.
 
 * When the edit operation is performed on an object that is a group, then all its children are also affected. For example, resizing a group, automatically resizes its child objects to fit the selection area.
 
-![](Groups_images/Groups_img5.png)
-{:.image }
+  ![](Groups_images/Groups_img5.png)
+
 
 
 * When an individual object is selected, then the edit operation is performed on that particular object only.
 
-![](Groups_images/Groups_img6.png)
-{:.image }
-
+  ![](Groups_images/Groups_img6.png)
 
 * When size or position of a node contained in a group is getting changed, the group's size and position update its area to fit the child objects.
 
-![](Groups_images/Groups_img7.png)
-{:.image }
-
-
+  ![](Groups_images/Groups_img7.png)

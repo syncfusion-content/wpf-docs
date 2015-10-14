@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Range-Band
+title: Range Band | SfSparkline | wpf | Syncfusion
 description: range band
 platform: wpf
-control: Sparkline
+control: SfSparkline
 documentation: ug
 ---
 
 # Range Band
 
 Range band feature used to highlight the particular mentioned range along Y axis.
-{% highlight html %}
 
-  <Syncfusion:SfLineSparkline 
+{% highlight xaml %}
 
-                ItemsSource="{Binding UsersList}" 
+<Syncfusion:SfLineSparkline 
 
-                BandRangeStart="2000”
+			ItemsSource="{Binding UsersList}" 
 
-                BandRangeEnd="-1000” RangeBandBrush="Green”
+			BandRangeStart="2000”
 
-                YBindingPath="NoOfUsers">
+			BandRangeEnd="-1000” RangeBandBrush="Green”
 
-  </Syncfusion:SfLineSparkline >
+			YBindingPath="NoOfUsers">
+
+</Syncfusion:SfLineSparkline >
+
 {% endhighlight %}
+
 Following is the snapshot for range band,
 
-![C:/Users/ApoorvahR/Desktop/5.png](Range-Band_images/Range-Band_img1.png)
-
-
-
+![](Range-Band_images/Range-Band_img1.png)

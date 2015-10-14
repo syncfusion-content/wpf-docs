@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging| OLAP Client  | Wpf | Syncfusion
 description: paging
 platform: wpf
 control: OLAP Client 
@@ -23,236 +23,238 @@ by using PageSetting window.
 1. Include the following Syncfusion assembly from the installed location.
    1. Syncfusion.OlapShared.Wpf
 
-   Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
+   Assembly Location: &lt;system drive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
 
 2. Create a new OlapClient sample as follows.
 
+   ~~~xaml
 
+		<Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-			<Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-			xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		x:Class="SampleApplication.MainWindow"
 
-			x:Class="SampleApplication.MainWindow"
+		Title="MainWindow" Height="350" Width="525">
 
-			Title="MainWindow" Height="350" Width="525">
+		<Grid>
 
-				<Grid>
+		<Grid.RowDefinitions>
 
-					<Grid.RowDefinitions>
+		<RowDefinition Height="*"/>
 
-							<RowDefinition Height="*"/>
+		<RowDefinition Height="Auto"/>
 
-							<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
 
-					</Grid.RowDefinitions>
+		<GroupBox  Header="OlapClient" Grid.Row="0">
 
-				<GroupBox  Header="OlapClient" Grid.Row="0">
+		<syncfusion:OlapClient  Name="olapClient" Background="Transparent" SeriesStrokeThickness="0">         
 
-					 <syncfusion:OlapClient  Name="olapClient" Background="Transparent" SeriesStrokeThickness="0">         
+		</syncfusion:OlapClient>
 
-					 </syncfusion:OlapClient>
+		</GroupBox>
 
-				</GroupBox>
+		</Grid>
 
-				</Grid>
+		</Window>
 
-			</Window>
-
-
+   ~~~
 
 3. Enable paging in OlapReport.
 
+   ~~~csharp
 
+		using Syncfusion.Olap.Manager;
 
-				using Syncfusion.Olap.Manager;
+		using Syncfusion.Olap.Reports;
 
-				using Syncfusion.Olap.Reports;
+		namespace SampleApplication
 
-				namespace SampleApplication
+		{
 
-				{
+		public partial class MainWindow : SampleWindow
 
-				public partial class MainWindow : SampleWindow
+		{
 
-				  {
+		private string _connectionString;
 
-					private string _connectionString;
+		private OlapDataManager _olapDataManager;
 
-					private OlapDataManager _olapDataManager;
+		public MainWindow()
 
-					public MainWindow()
+		{  
 
-					 {  
+		InitializeComponent();
 
-					   InitializeComponent();
+		_connectionString = "Enter a valid connection string";
 
-					   _connectionString = "Enter a valid connection string";
+		//Created connection string is passed to OlapDataManager as argument
 
-					   //Created connection string is passed to OlapDataManager as argument
+		_olapDataManager = new OlapDataManager(_connectionString);
 
-					   _olapDataManager = new OlapDataManager(_connectionString);
+		//Created OlapReport is set as a current report to OlapDataManager
 
-					   //Created OlapReport is set as a current report to OlapDataManager
+		_olapDataManager.SetCurrentReport(SimpleDimensions());
 
-					   _olapDataManager.SetCurrentReport(SimpleDimensions());
+		//Finally OlapClient control gets the data from the created OlapDataManager
 
-					   //Finally OlapClient control gets the data from the created OlapDataManager
+		this.olapClient.OlapDataManager = _olapDataManager;
 
-					   this.olapClient.OlapDataManager = _olapDataManager;
+		this.olapClient.DataBind();
 
-					   this.olapClient.DataBind();
+		}
 
-					 }
+		private OlapReport SimpleDimensions()
 
-					private OlapReport SimpleDimensions()
+		{
 
-					{
+		OlapReport olapReport = new OlapReport();
 
-					   OlapReport olapReport = new OlapReport();
+		olapReport.CurrentCubeName = "Adventure Works";
 
-					   olapReport.CurrentCubeName = "Adventure Works";
+		olapReport.EnablePaging = true;
 
-					   olapReport.EnablePaging = true;
+		olapReport.PagerOptions.CategorialPageSize = 10;
 
-					   olapReport.PagerOptions.CategorialPageSize = 10;
+		olapReport.PagerOptions.SeriesPageSize = 10;
 
-						olapReport.PagerOptions.SeriesPageSize = 10;
+		DimensionElement dimensionElement = new DimensionElement() { Name = "Customer", HierarchyName = "Customer" };
 
-					   DimensionElement dimensionElement = new DimensionElement() { Name = "Customer", HierarchyName = "Customer" };
+		dimensionElement.AddLevel("Customer Geography", "Country");
 
-					   dimensionElement.AddLevel("Customer Geography", "Country");
+		olapReport.CategoricalElements.Add(dimensionElement);
 
-					   olapReport.CategoricalElements.Add(dimensionElement);
+		MeasureElements measureElements = new MeasureElements();
 
-					   MeasureElements measureElements = new MeasureElements();
+		measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 
-					   measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+		olapReport.SeriesElements.Add(measureElements);
 
-					   olapReport.SeriesElements.Add(measureElements);
+		dimensionElement = new DimensionElement() { Name = "Geography", HierarchyName = "Geography" };
 
-					   dimensionElement = new DimensionElement() { Name = "Geography", HierarchyName = "Geography" };
+		dimensionElement.AddLevel("Geography", "Country");
 
-					   dimensionElement.AddLevel("Geography", "Country");
+		olapReport.CategoricalElements.Add(dimensionElement);
 
-					   olapReport.CategoricalElements.Add(dimensionElement);
+		dimensionElement = new DimensionElement() { Name = "Date" };
 
-					   dimensionElement = new DimensionElement() { Name = "Date" };
+		dimensionElement.AddLevel("Fiscal", "Fiscal Year");
 
-					   dimensionElement.AddLevel("Fiscal", "Fiscal Year");
+		olapReport.SeriesElements.Add(dimensionElement);
 
-					   olapReport.SeriesElements.Add(dimensionElement);
 
 
+		return olapReport;
 
-					   return olapReport;
+		}
 
-					 }
+		}
 
-				  }
+		} 
 
-				} 
+   ~~~
 
+   ~~~vbnet
+   
+		Imports Syncfusion.Olap.Manager
 
+		Imports Syncfusion.Olap.Reports
 
-				Imports Syncfusion.Olap.Manager
+		Namespace SampleApplication
 
-				Imports Syncfusion.Olap.Reports
+		Partial Public Class MainWindow
 
-				Namespace SampleApplication
+		Inherits SampleWindow
 
-				Partial Public Class MainWindow
+		Private _connectionString As String
 
-				Inherits SampleWindow
+		Private _olapDataManager As OlapDataManager
 
-				Private _connectionString As String
 
-				Private _olapDataManager As OlapDataManager
 
+		Public Sub New()
 
+		InitializeComponent()
 
-				Public Sub New()
+		_connectionString = "Enter a valid connection string"
 
-				InitializeComponent()
+		'Created connection string is passed to OlapDataManager as argument
 
-				_connectionString = "Enter a valid connection string"
+		_olapDataManager = New OlapDataManager(_connectionString)
 
-				'Created connection string is passed to OlapDataManager as argument
+		'Created OlapReport is set as a current report to OlapDataManager
 
-				_olapDataManager = New OlapDataManager(_connectionString)
+		_olapDataManager.SetCurrentReport(SimpleDimensions())
 
-				'Created OlapReport is set as a current report to OlapDataManager
+		'Finally OlapClient control gets the data from the created OlapDataManager
 
-				_olapDataManager.SetCurrentReport(SimpleDimensions())
+		Me.olapClient.OlapDataManager = _olapDataManager
 
-				'Finally OlapClient control gets the data from the created OlapDataManager
+		Me.olapClient.DataBind()
 
-				Me.olapClient.OlapDataManager = _olapDataManager
+		End Sub
 
-				Me.olapClient.DataBind()
 
-				End Sub
 
+		Private Function SimpleDimensions() As OlapReport
 
+		Dim olapReport As New OlapReport()
 
-				Private Function SimpleDimensions() As OlapReport
+		olapReport.CurrentCubeName = "Adventure Works"
 
-				Dim olapReport As New OlapReport()
+		olapReport.EnablePaging = True
 
-				olapReport.CurrentCubeName = "Adventure Works"
+		olapReport.PagerOptions.CategorialPageSize = 10
 
-				olapReport.EnablePaging = True
+		olapReport.PagerOptions.SeriesPageSize = 10
 
-						 olapReport.PagerOptions.CategorialPageSize = 10
 
-						  olapReport.PagerOptions.SeriesPageSize = 10
 
+		Dim dimensionElement As New DimensionElement() With {.Name = "Customer", .HierarchyName = "Customer"}
 
+		dimensionElement.AddLevel("Customer Geography", "Country")
 
-				Dim dimensionElement As New DimensionElement() With {.Name = "Customer", .HierarchyName = "Customer"}
+		olapReport.CategoricalElements.Add(dimensionElement)
 
-				dimensionElement.AddLevel("Customer Geography", "Country")
 
-				olapReport.CategoricalElements.Add(dimensionElement)
 
+		Dim measureElements As New MeasureElements()
 
+		measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
-				Dim measureElements As New MeasureElements()
+		olapReport.SeriesElements.Add(measureElements)
 
-				measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
-				olapReport.SeriesElements.Add(measureElements)
 
+		dimensionElement = New DimensionElement() With {.Name = "Geography", .HierarchyName = "Geography"}
 
+		dimensionElement.AddLevel("Geography", "Country")
 
-				dimensionElement = New DimensionElement() With {.Name = "Geography", .HierarchyName = "Geography"}
+		olapReport.CategoricalElements.Add(dimensionElement)
 
-				dimensionElement.AddLevel("Geography", "Country")
 
-				olapReport.CategoricalElements.Add(dimensionElement)
 
+		dimensionElement = New DimensionElement() With {.Name = "Date"}
 
+		dimensionElement.AddLevel("Fiscal", "Fiscal Year")
 
-				dimensionElement = New DimensionElement() With {.Name = "Date"}
+		olapReport.SeriesElements.Add(dimensionElement)
 
-				dimensionElement.AddLevel("Fiscal", "Fiscal Year")
 
-				olapReport.SeriesElements.Add(dimensionElement)
 
+		Return olapReport
 
+		End Function
 
-				Return olapReport
+		End Class
 
-				End Function
+		End Namespace
 
-				End Class
 
-				End Namespace
-
-
-
+   ~~~
 
 
    ![](Paging_images/Paging_img1.png)
@@ -261,13 +263,13 @@ by using PageSetting window.
 
    ![](Paging_images/Paging_img2.png)
 
-   {:.prettyprint}
+   
 
 ### Sample Link:
 
 Refer to the following location for the sample:
 
-<system drive>\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
+&lt;system drive&gt;\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
 
 WPF\OlapClient.WPF\Paging
 

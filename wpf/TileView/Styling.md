@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling
+title: Styling | TileView | wpf | Syncfusion
 description: styling
 platform: wpf
 control: TileView Control
@@ -27,8 +27,10 @@ The TileViewControl has the following built-in styles:
 
 
 
-These styles can be applied to the control using XAML. The following code example illustrates how to apply Office2007Blue style to the TileViewControl.
+These styles can be applied to the control using XAML and C#. The following code example illustrates how to apply Office2007Blue style to the TileViewControl.
 
+
+{%tabs %}
 
 {% highlight xml %}
 
@@ -38,15 +40,13 @@ These styles can be applied to the control using XAML. The following code exampl
 
 
 
-These styles can also be applied to the control using C# as follows.
-
 
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(tileViewInstance, "Office2010Blue");
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 The following illustrations show the TileViewControl that is applied with different built-in styles.
@@ -151,7 +151,7 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
         </Style>
 
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -172,7 +172,7 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
         </syncfusion:TileViewControl>
 
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -239,7 +239,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
             }
    ~~~
-   {:.prettyprint}
+  
 
 
 
@@ -322,7 +322,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
         </Style>
    ~~~
-   {:.prettyprint}
+   
 
 
 3. Define the Style selector in the Window’s resource.
@@ -334,7 +334,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
      <local:TileViewItemContainerStyleSelector x:Key="tileViewStyleSelector"/>
 
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -350,7 +350,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
          </syncfusion:TileViewControl>
    ~~~
-   {:.prettyprint}
+   
 
 
 

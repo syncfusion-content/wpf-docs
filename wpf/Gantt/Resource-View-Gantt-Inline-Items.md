@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resource-View-Gantt-Inline-Items
+title: Resource View Gantt Inline Items| Gantt | Wpf | Syncfusion
 description: resource view gantt (inline items)
 platform: wpf
 control: Gantt
@@ -23,23 +23,23 @@ The following code illustrates how to add inline items dynamically to the underl
 
 //To add dynamic inline items
 
- Item item = new Item() 
+Item item = new Item() 
 
-             { 
+{ 
 
-              StartDate = new DateTime(2012, 01, 19), 
+StartDate = new DateTime(2012, 01, 19), 
 
-              FinishDate = new DateTime(2012, 01, 25) 
+FinishDate = new DateTime(2012, 01, 25) 
 
-             };
+};
 
- viewModel.GanttItemSource[0].SubItems[0].InLineItems.Add(item);
+viewModel.GanttItemSource[0].SubItems[0].InLineItems.Add(item);
 
 {% endhighlight  %}
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 A resource view is very useful when you need to manage the resources in a project.
 
@@ -68,27 +68,27 @@ The following code illustrates this.
 
  <gantt:GanttControl x:Name="Gantt"
 
-                    Grid.Row="1"
+Grid.Row="1"
 
-                    ScheduleType="CustomNumeric"
+ScheduleType="CustomNumeric"
 
-                    CustomScheduleSource="{Binding CustomScheduleInfo}"
+CustomScheduleSource="{Binding CustomScheduleInfo}"
 
-                    ItemsSource="{Binding TeamDetails}">
+ItemsSource="{Binding TeamDetails}">
 
-                <gantt:GanttControl.TaskAttributeMapping>
+<gantt:GanttControl.TaskAttributeMapping>
 
-                    <gantt:TaskAttributeMapping TaskNameMapping="Name"
+<gantt:TaskAttributeMapping TaskNameMapping="Name"
 
-                                                ChildMapping="SubItems"
+ChildMapping="SubItems"
 
-                                                StartPointMapping="Start"
+StartPointMapping="Start"
 
-                                                FinishPointMapping="End"
+FinishPointMapping="End"
 
-                                           InLineTaskMapping="InLineItems"/>
+InLineTaskMapping="InLineItems"/>
 
-                </gantt:GanttControl.TaskAttributeMapping>
+</gantt:GanttControl.TaskAttributeMapping>
 
 </gantt:GanttControl>
 
@@ -102,43 +102,43 @@ The following code is the sample data source of a resource view Gantt in a custo
 
  ObservableCollection<Item> teams = new ObservableCollection<Item>();
 
-            teams.Add(new Item() { Name = "RDU Team" });
+teams.Add(new Item() { Name = "RDU Team" });
 
-            Item Person = new Item() { Name = "Robert" };
+Item Person = new Item() { Name = "Robert" };
 
-            Person.InLineItems.Add(new Item() { Start =0, End=2, Name = "Market Analysis", Progress = 50d });
+Person.InLineItems.Add(new Item() { Start =0, End=2, Name = "Market Analysis", Progress = 50d });
 
-            Person.InLineItems.Add(new Item() { Start =2, End=4, Name = "Competitor Analysis", Progress = 20d });
+Person.InLineItems.Add(new Item() { Start =2, End=4, Name = "Competitor Analysis", Progress = 20d });
 
-            Person.InLineItems.Add(new Item() { Start = 3, End = 6,Name = "Desing Spec" });
+Person.InLineItems.Add(new Item() { Start = 3, End = 6,Name = "Desing Spec" });
 
-            teams[0].SubItems.Add(Person);
+teams[0].SubItems.Add(Person);
 
-            Person = new Item() { Name = "Michael" };
+Person = new Item() { Name = "Michael" };
 
-            Person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Basic Requirement Analysis", Progress = 40 });
+Person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Basic Requirement Analysis", Progress = 40 });
 
-            Person.InLineItems.Add(new Item() { Start = 5, End = 7, Name = "Requirement Spec" });
+Person.InLineItems.Add(new Item() { Start = 5, End = 7, Name = "Requirement Spec" });
 
-            teams[0].SubItems.Add(Person);
+teams[0].SubItems.Add(Person);
 
-            Person = new Item() { Name = "Anne" };
+Person = new Item() { Name = "Anne" };
 
-            Person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Estimation", Progress = 30 });
+Person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Estimation", Progress = 30 });
 
-            Person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Budget & Plan Spec" });
+Person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Budget & Plan Spec" });
 
-            teams[0].SubItems.Add(Person);
+teams[0].SubItems.Add(Person);
 
-            teams.Add(new Item() { Name = "Graphics Team" });
+teams.Add(new Item() { Name = "Graphics Team" });
 
-            Person = new Item() { Name = "Madhan" };
+Person = new Item() { Name = "Madhan" };
 
-            Person.InLineItems.Add(new Item() { Start = 0, End = 3, Name = "Identifying UI modules", Progress = 40 });
+Person.InLineItems.Add(new Item() { Start = 0, End = 3, Name = "Identifying UI modules", Progress = 40 });
 
-            Person.InLineItems.Add(new Item() { Start = 2, End = 5, Name = "Defining UI Design" });
+Person.InLineItems.Add(new Item() { Start = 2, End = 5, Name = "Defining UI Design" });
 
-            teams[1].SubItems.Add(Person);
+teams[1].SubItems.Add(Person);
 
 
 
@@ -169,7 +169,13 @@ The following code sample illustrates this:
 
  <gantt:GanttControl Grid.Row="1" x:Name="Gantt">
                 <gantt:GanttControl.TaskAttributeMapping>
-                    <gantt:TaskAttributeMapping                                             TaskNameMapping="Name"                                            StartDateMapping="StartDate"                                             ChildMapping="SubItems"                                            FinishDateMapping="FinishDate"                                            InLineTaskMapping="InLineItems">
+                    <gantt:TaskAttributeMapping       
+                     TaskNameMapping="Name"      
+                     StartDateMapping="StartDate"   
+                     ChildMapping="SubItems"   
+                      FinishDateMapping="FinishDate"   
+                     InLineTaskMapping="InLineItems">
+
                     </gantt:TaskAttributeMapping>
                 </gantt:GanttControl.TaskAttributeMapping>
  </gantt:GanttControl>
@@ -184,21 +190,21 @@ The following is the sample data source for the resource view Gantt:
 
 
 
- ObservableCollection<Item> teams = new ObservableCollection<Item>();
-            teams.Add(new Item() { Name = "RDU Team" });
-            Item Person = new Item() { Name = "Robert" };
-            Person.InLineItems.Add(new Item(){ StartDate = new DateTime(2012, 01, 07), FinishDate = new DateTime(2012, 01, 11), Name = "Market Analysis", Progress = 50d });
-            Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 11), FinishDate = new DateTime(2012, 01, 15), Name = "Competitor Analysis", Progress = 20d });
-            Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 13), FinishDate = new DateTime(2012, 01, 19), Name = "Desing Spec" });
-            teams[0].SubItems.Add(Person);
-            Person = new Item() { Name = "Michael" };
-            Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 18), FinishDate = new DateTime(2012, 01, 19), Name = "Basic Requirement Analysis", Progress = 40 });
-            Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 19), FinishDate = new DateTime(2012, 01, 21), Name = "Requirement Spec" });
-            teams[0].SubItems.Add(Person);
-            Person = new Item() { Name = "Anne" };
-            Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 24), Name = "Estimation", Progress = 30 });
-            Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24), FinishDate = new DateTime(2012, 01, 26), Name = "Budget & Plan Spec" });
-            teams[0].SubItems.Add(Person);
+ObservableCollection<Item> teams = new ObservableCollection<Item>();
+teams.Add(new Item() { Name = "RDU Team" });
+Item Person = new Item() { Name = "Robert" };
+Person.InLineItems.Add(new Item(){ StartDate = new DateTime(2012, 01, 07), FinishDate = new DateTime(2012, 01, 11), Name = "Market Analysis", Progress = 50d });
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 11), FinishDate = new DateTime(2012, 01, 15), Name = "Competitor Analysis", Progress = 20d });
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 13), FinishDate = new DateTime(2012, 01, 19), Name = "Desing Spec" });
+teams[0].SubItems.Add(Person);
+Person = new Item() { Name = "Michael" };
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 18), FinishDate = new DateTime(2012, 01, 19), Name = "Basic Requirement Analysis", Progress = 40 });
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 19), FinishDate = new DateTime(2012, 01, 21), Name = "Requirement Spec" });
+teams[0].SubItems.Add(Person);
+Person = new Item() { Name = "Anne" };
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 24), Name = "Estimation", Progress = 30 });
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24), FinishDate = new DateTime(2012, 01, 26), Name = "Budget & Plan Spec" });
+teams[0].SubItems.Add(Person);
 
 {% endhighlight  %}
 
@@ -234,7 +240,7 @@ Grid Region:The grid will display only the information about the team and its re
 
 Chart Region: The chart will display only the information about the team and the tasks assigned to each resource in the team (InLineItems). It will not display the information about resources (SubItems).
 
-## Sample Link
+### Sample Link
 
 To view samples: 
 

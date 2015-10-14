@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-the-color-of-the-Loading-Indicator 
+title: Changing the color of the Loading Indicator | PDF Viewer | Wpf | Syncfusion
 description: changing the color of the loading indicator 
 platform: wpf
 control: PDF Viewer
@@ -11,6 +11,7 @@ documentation: ug
 
 PDF Viewer allows you to change the color of the loading indicator displayed when loading the PDF document. The following code example illustrates the same.
 
+{% tabs %}
 {% highlight C# %}
 
 // Changing the color of the loading indicator to Red
@@ -27,3 +28,4 @@ pdfviewer1.LoadingIndicator.LoaderColor = System.Windows.Media.Color.FromArgb(25
 pdfviewer1.LoadingIndicator.LoaderColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 0)
 
 {% endhighlight %}
+{% endtabs %}

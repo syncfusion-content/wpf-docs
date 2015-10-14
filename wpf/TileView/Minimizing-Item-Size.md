@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minimizing-Item-Size
+title: Minimizing Item Size | TileView | wpf | Syncfusion
 description: minimizing item size
 platform: wpf
 control: TileView Control
@@ -112,11 +112,11 @@ _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MinimizedItemsPercentage</td><td>
@@ -129,16 +129,15 @@ DependencyProperty</td><td>
 
 ## Events
 
-_MinimizedItemsPercentageChanged Table_
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Arguments**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Event </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MinimizedItemsPercentageChanged</td><td>

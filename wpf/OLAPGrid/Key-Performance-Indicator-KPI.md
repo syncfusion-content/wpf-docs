@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Performance-Indicator-KPI
+title: Key Performance Indicator KPI| OLAP Grid | Wpf | Syncfusion
 description: key performance indicator (kpi)
 platform: wpf
 control: OLAP Grid

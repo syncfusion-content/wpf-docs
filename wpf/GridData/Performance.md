@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Performance
+title: Performance | GridData (Classic) | wpf | Syncfusion
 description: Performance
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # Performance
@@ -15,136 +15,118 @@ Essential Grid has a high performance standard, where you can make the grid to w
 This section illustrates an example that let you know how to handle high frequency updates using grid while keeping the CPU usage at a minimum level. It uses a simple data source with few double-valued columns. It changes random cell values and also does record insertions and removals, using a timer event.
 
 The following code illustrates changing of random cell values:
+
 {% highlight c# %}
-
-
-
 
 private void timer_Tick(object sender, EventArgs e)
 
-        {
+{
 
 ....................
 
 for (int i = 0; i < numberOfChangesEachTimer; i++)
 
-            {
+	{
 
-                int recNum = rand.Next(table.Rows.Count - 1);
+		int recNum = rand.Next(table.Rows.Count - 1);
 
-                int col = rand.Next(table.Columns.Count - 1) + 1;
+		int col = rand.Next(table.Columns.Count - 1) + 1;
 
-                DataRow drow = table.Rows[recNum];
+		DataRow drow = table.Rows[recNum];
 
-                if (drow.RowState != DataRowState.Deleted && !(drow[col] is DBNull))
+		if (drow.RowState != DataRowState.Deleted && !(drow[col] is DBNull))
 
-                {
+		{
 
-                    double value = (int)(Convert.ToDouble(drow[col]) * (rand.Next(50) / 100.0f + 0.8));
+			double value = (int)(Convert.ToDouble(drow[col]) * (rand.Next(50) / 100.0f + 0.8));
 
-                    //Console.WriteLine("{0}, {1}: {2}", recNum, col, value);
+			//Console.WriteLine("{0}, {1}: {2}", recNum, col, value);
 
-                    drow[col] = value;
+			drow[col] = value;
 
-                }
+		}
 
-           }
+   }
 
 }
 
 {% endhighlight  %}
 
 The following code illustrates record insertions and removals:
+
 {% highlight c# %}
-
-
-
 
 private void timer_Tick(object sender, EventArgs e)
 
-        {
+{
 
 ....................
 
 if (toggleInsertRemove > 0 && (timerCount % insertRemoveModulus) == 0)
 
-            {
+	{
 
-                icount = ++icount % (toggleInsertRemove * 2);
+		icount = ++icount % (toggleInsertRemove * 2);
 
-                shouldInsert = icount < toggleInsertRemove;
+		shouldInsert = icount < toggleInsertRemove;
 
+		if (shouldInsert)
 
+		{
 
-                if (shouldInsert)
+			for (int ri = 0; ri < insertRemoveCount; ri++)
 
-                {
+			{
 
-                    for (int ri = 0; ri < insertRemoveCount; ri++)
+				int recNum = rand.Next(Math.Min(30, table.Rows.Count));
 
-                    {
+				double next = rand.Next(100);
 
-                        int recNum = rand.Next(Math.Min(30, table.Rows.Count));
+				object[] values = new object[table.Columns.Count];
 
+				values[0] = "H" + ti.ToString("00000");
 
+				for (int n = 1; n < table.Columns.Count; n++)
 
-                        double next = rand.Next(100);
+					values[n] = next + n;
 
+				DataRow drow = table.NewRow();
 
+				drow.ItemArray = values;
 
-                        object[] values = new object[table.Columns.Count];
+				table.Rows.InsertAt(drow, recNum);
 
-                        values[0] = "H" + ti.ToString("00000");
+				ti++;
 
-                        for (int n = 1; n < table.Columns.Count; n++)
+			}
 
-                            values[n] = next + n;
+		}
 
+		else
 
+		{
 
-                        DataRow drow = table.NewRow();
+			for (int ri = 0; ri < insertRemoveCount; ri++)
 
-                        drow.ItemArray = values;
+			{
 
-                        table.Rows.InsertAt(drow, recNum);
+				int recNum = 5; //rand.Next(m_set.Count - 1);
 
+				int rowNum = recNum + 1;
 
+				// Underlying data structure (this could be a data table or whatever structure
 
-                        ti++;
+				// you use behind a virtual grid).
 
-                    }
+				if (table.Rows.Count > 10)
 
-                }
+					table.Rows.RemoveAt(recNum);
 
-                else
+			}
 
-                {
+		}
 
-                    for (int ri = 0; ri < insertRemoveCount; ri++)
-
-                    {
-
-                        int recNum = 5; //rand.Next(m_set.Count - 1);
-
-                        int rowNum = recNum + 1;
-
-
-
-                        // Underlying data structure (this could be a data table or whatever structure
-
-                        // you use behind a virtual grid).
-
-
-
-                        if (table.Rows.Count > 10)
-
-                            table.Rows.RemoveAt(recNum);
-
-                    }
-
-                }
-
-            }
+	}
 
 }
 
@@ -156,19 +138,13 @@ N> For complete code of this example, refer the following browser sample: ...\My
 
 [PLINQ](http://msdn.microsoft.com/en-us/library/dd997425.aspx) is the parallel implementation of the standard LINQ. GridDataControl uses a QueryableCollectionView that works on top of LINQ expressions for performing major operations such as Sorting, Filtering, Grouping and Summaries calculation. Since PLINQ works on top of LINQ expression trees, QueryableCollectionView now has a property UsePLINQ = true / false (this class implements _IParallelizableView_ interface) that would add a AsParallel() to change it into a Parallel Query. Sorting, Grouping and Summary operations would be automatically done in parallel when this property is set.
 
-
-
 _Plinq support_
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight xml %}
-
-
-
-<syncfusion:GridDataControl
-
-                x:Name="grid"  
+<syncfusion:GridDataControl x:Name="grid"  
 
                 AutoPopulateColumns="True"    
 
@@ -176,24 +152,18 @@ _Plinq support_
 
                 UsePLINQ="True"
 
-VisualStyle="Office14Silver">
+				VisualStyle="Office14Silver">
 
-    </syncfusion:GridDataControl>
-
-
+</syncfusion:GridDataControl>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
-
-
-
-
 this.gridDataControl1.UsePLINQ = true;
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 N> This only works for strongly-typed collections and not for legacy object models like DataTable.

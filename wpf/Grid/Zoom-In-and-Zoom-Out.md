@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zoom-In-and-Zoom-Out
+title: Zoom In and Zoom Out | GridControl | wpf | Syncfusion
 description: zoom in and zoom out
 platform: wpf
 control: Grid Control
@@ -17,7 +17,7 @@ When a larger number of cells are updated in the Grid, the user can view the gri
 
 ## Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -61,7 +61,8 @@ gridControl.ZoomScale = 1.5;
 
 
 
-_Increased Zoom Scale_
+Increased Zoom Scale
+{:.caption}
 
 
 
@@ -69,7 +70,8 @@ _Increased Zoom Scale_
 
 
 
-_Decreased Zoom Scale_
+Decreased Zoom Scale
+{:.caption}
 
 
 

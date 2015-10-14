@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| DocIO | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: DocIO
 documentation: ug
 ---
 
-# Overview
+# DocIO
 
 Essential DocIO is a native .NET Word library that is used by developers to easily create, read, write, and convert Microsoft Word documents by using C#, VB.NET, and managed C++ code from any of the following .NET platforms - Windows Forms, WPF, Silverlight, Lightswitch, ASP.NET, ASP.NET MVC, Windows Store applications, Windows Phone Silverlight 8 and 8.1, and Windows Phone 8.1 applications. It is a non-UI component that provides a full-fledged document instance model similar to the Microsoft Office COM libraries to iterate with the document elements explicitly and perform necessary manipulation. It is built from scratch in C# and does not require Microsoft Word to be installed in the machine. It supports Word 97-2003, 2007, 2010, and 2013 documents; also, it provides support to convert the Word documents to commonly used file formats such as RTF, TXT, HTML and vice versa. Furthermore, it provides support to render a Word document as an Image, PDF file, and export EPUB in high quality.
 
@@ -49,7 +49,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions helps you quickly to identify the important sections of information while using the content.
 
-_Document Conventions_
+### Document Conventions
 
 <table>
 <tr>

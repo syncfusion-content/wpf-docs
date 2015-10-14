@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Virtualization
+title: Grid Virtualization | Therearetwooptionsforexportingagrid | wpf | Syncfusion
 description: grid virtualization
 platform: wpf
 control: Grid Control

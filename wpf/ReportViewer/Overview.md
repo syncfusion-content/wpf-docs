@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | ReportViewer | WPF | Syncfusion
 description: overview
 platform: wpf
-control: Report Viewer
+control: ReportViewer
 documentation: ug
 ---
 
@@ -24,15 +24,14 @@ The important features of WPFReport Viewer are listed as follows:
 * Printing - Prints the assigned document.
 * Customization - You can customize the Report Viewer appearance.
 
-
-
 ![](Overview_images/Overview_img1.png)
 
-
+Report Viewer WPF
+{:.caption}
 
 By using the Report Viewer, you can show variety of interactive MicrosoftReport Definition Language (RDL) standard reports. The reports can be exported to PDF and displayed by using Report Viewer.
 
 ![](Overview_images/Overview_img2.png)
 
-
-
+Report Viewer WPF sample
+{:.caption}

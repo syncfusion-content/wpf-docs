@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | ReportWriter | WPF | Syncfusion
 description: overview
 platform: wpf
-control: Report Writer
+control: ReportWriter
 documentation: ug
 ---
 

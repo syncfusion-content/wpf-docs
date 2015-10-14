@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| RichTextBoxAdv | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Overview
+# RichTextBoxAdv
 
 RichTextBoxAdv is a control for formatting text, such as aligning and indenting paragraphs, and displaying the content in pages or in a Web layout mode.
 

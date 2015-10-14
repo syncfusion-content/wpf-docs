@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-the-elements-to-an-Axis
+title: Add the elements to an Axis| OLAPCommon | Wpf | Syncfusion
 description: add the elements to an axis
 platform: wpf
 control: OLAPCommon
@@ -13,6 +13,7 @@ After creating the element, add the element to the specific axis. The OlapReport
 
 The following codes will describe the adding of the elements to categorical, series element:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -50,4 +51,4 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
-
+{% endtabs %}

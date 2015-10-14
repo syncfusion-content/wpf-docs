@@ -36,9 +36,8 @@ Some of the page sizes supported is as follows:
 
 The following code sample illustrate the various page settings.
 
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -78,9 +77,9 @@ document.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -118,6 +117,7 @@ document.Save("Output.pdf")
 
 document.Close(True)
 {% endhighlight %}
+
 
 ## Add a Page
 
@@ -159,9 +159,9 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -258,9 +258,10 @@ graphics.DrawString("Page 2", font, PdfBrushes.Black, PointF.Empty)
 loadedDocument.Save("Output.pdf")
 
 loadedDocument.Close()
+
 {% endhighlight %}
 
-Removing a page
+#### Removing a page
 
 You can also remove pages from an existing PDF document by using following methods of the PdfLoadedPageCollection class.
 
@@ -442,13 +443,13 @@ document.Close()
 {% endhighlight %}
 
 
-Implementation Note
+#### Implementation Note
 
 Importing is done by converting the page content into PdfTemplate object that is, the new page does not inherit the possible complex layer structure, so that, only one default layer can be seen and something can be placed beneath that layer. However, you can not manipulate the "old" layers as they do not exist.
 
 This conversion is performed in order to avoid an incomplete page, harming further output. 
 
-Restrictions
+#### Restrictions
 
 * The bookmark tree might not appear like the original document if just part of it is copied, as it is hard to recreate the tree with parts of the bookmark.
 * Some of the contents are usually imported from the original document to the final document during saving process. Hence, the original document should be closed only after the final document is saved.
@@ -465,9 +466,8 @@ PDF provides higher-level facilities that permit an application to describe, sel
 
 The DrawString method draws the text string at the specified location with the selected Brush and Font.
 
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -499,9 +499,9 @@ doc.Save("Sample.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 

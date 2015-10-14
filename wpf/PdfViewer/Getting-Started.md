@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| PDF Viewer | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: PDF Viewer
@@ -11,11 +11,11 @@ documentation: ug
 
 This Section explains about the Assemblies deployment, Subsequent sections that take you through the structure of the PdfViewerControl component and explains how to create Simple application with PdfViewerControl, how to create a custom Viewer using the PdfDocumentView control.
 
-Assemblies Deployment
+## Assemblies Deployment
 
 This topic explains about the assembly that is required in your WPF application when you want to use PdfViewerControl. The following is the list of assemblies.
 
-Assemblies Table
+### Assemblies Table
 
 <table>
 <tr>
@@ -43,6 +43,7 @@ The PDF Viewer component that contains the rendering area and other related UI e
 Syncfusion.Shared.Wpf</td><td>
 The component provides various UI styles and themes used in the PdfViewer control.</td></tr>
 </table>
+
 ## Feature Summary
 
 Supported features include:
@@ -53,7 +54,7 @@ Supported features include:
 
 Supported and non-supported elements of Essential PDF Viewer for Windows Forms, WPF and ASP.NET MVC are listed in the following table.
 
-Supported and non-supported elements
+### Supported and non-supported elements
 
 <table>
 <tr>
@@ -375,6 +376,7 @@ Yes (raster and vector formats)</td><td>
 Yes (raster format only)</td><td>
 No</td></tr>
 </table>
+
 *Supports only Brushes (text and shapes).
 
 **Supports only URI annotation.
@@ -388,8 +390,8 @@ The following screenshot is a pictorial representation of PDF Viewer.
 ![C:/Users/Suresh/Desktop/WPF UG/StructureOfPDFViewer_edited.png](Getting-Started_images/Getting-Started_img1.png)
 
 
-
 Structure of PDF Viewer
+{:.caption}
 
 ToolStrip
 
@@ -398,6 +400,7 @@ ToolStrip
 
 
 Structure of ToolStrip
+{:.caption}
 
 1. File Open Dialog
 2. Save File Dialog
@@ -412,6 +415,7 @@ Structure of ToolStrip
 11. Preset magnification
 12. Fill window
 13. Fit page to window
+
 ## Create a Simple Application with Essential PDF Viewer
 
 
@@ -420,150 +424,153 @@ Following steps demonstrate how to create a simple application with Essential Pd
 1. Create new WPF application in Visual Studio.
 2. Open the Visual Studio tool box. Navigate to “Syncfusion WPF Toolbox” tab, and drag the PdfViewerControl toolbox item to the Designer window. 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
-PDF Viewer control in toolbox
+    PDF Viewer control in toolbox
 
-When you drag the PdfViewerControl toolbox item to the window, it automatically adds the required references to the current application.
+   When you drag the PdfViewerControl toolbox item to the window, it automatically adds the required references to the current application.
 
 3. To add the PdfViewerControl using code, add the following assemblies as reference to the project.
-1. Syncfusion.Compression.Base
-2. Syncfusion.Core
-3. Syncfusion.Pdf.Base
-4. Syncfusion.PdfViewer.Wpf
-5. Syncfusion.Shared.Wpf
+   1. Syncfusion.Compression.Base
+   2. Syncfusion.Core
+   3. Syncfusion.Pdf.Base
+   4. Syncfusion.PdfViewer.Wpf
+   5. Syncfusion.Shared.Wpf
 4. Add the following highlighted Syncfusion namesspace in XAML to make use of PdfViewerControl. 
 
 
+   ~~~xaml
 
-{% highlight xml %}
+		<Window
 
-<Window
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns: Syncfusion ="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
 
-        xmlns: Syncfusion ="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
+		x:Class="GettingStartedWPF.MainWindow"
 
-        x:Class="GettingStartedWPF.MainWindow"
+		Title="MainWindow" Height="350" Width="525">
 
-        Title="MainWindow" Height="350" Width="525">
+   ~~~		
 
-{% endhighlight %}
 
 5. Add the following code in XAML
 
-{% highlight xml %}
+   ~~~xaml
 
-<syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
+		<syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
 
 
-{% endhighlight %}
+   ~~~
+   
 6. PdfViewerControl’s ItemSource property allows you to bind PDF documents in XAML. The ItemsSource property accepts a stream input that can be bound to the viewer during initialization.
-1. Create a simple class that loads a PDF report and provides the stream as a property that can bound to the Viewer as illustrated in the following code example. Save the class file as PdfReport.cs
 
-
-
-{% highlight C# %}
-
-
-
-    public class PdfReport : INotifyPropertyChanged
-
-    {
-
-
-
-          private Stream docStream;
-
-
-
-          public event PropertyChangedEventHandler PropertyChanged;
-
-
-
-          public Stream DocumentStream
-
-          {
-
-              get
-
-              {
-
-                return docStream;
-
-               }
-
-              set
-
-              {
-
-                docStream = value;
-
-                OnPropertyChanged(new PropertyChangedEventArgs("DocumentStream"));
-
-              }
-
-          }
+   1. Create a simple class that loads a PDF report and provides the stream as a property that can bound to the Viewer as illustrated in the following code example. Save the class file as PdfReport.cs
 
 
 
 
+   ~~~csharp
 
-          public PdfReport()
 
-          {
+		public class PdfReport : INotifyPropertyChanged
 
-            //Load the stream from the local system.
+		{
 
-            docStream = new FileStream("Barcode.pdf", FileMode.OpenOrCreate);           
 
-           }
+
+		private Stream docStream;
+
+
+
+		public event PropertyChangedEventHandler PropertyChanged;
+
+
+
+		public Stream DocumentStream
+
+		{
+
+		get
+
+		{
+
+		return docStream;
+
+		}
+
+		set
+
+		{
+
+		docStream = value;
+
+		OnPropertyChanged(new PropertyChangedEventArgs("DocumentStream"));
+
+		}
+
+		}
 
 
 
 
 
-           public void OnPropertyChanged(PropertyChangedEventArgs e)
+		public PdfReport()
 
-           {
+		{
 
-            if (PropertyChanged != null)
+		//Load the stream from the local system.
 
-                PropertyChanged(this, e);
+		docStream = new FileStream("Barcode.pdf", FileMode.OpenOrCreate);           
 
-           }
-
-      }
+		}
 
 
-{% endhighlight %}
 
 
-2. In order to bind the DocumentStream property of the PdfReport class, set the DataContext for the Window. To add the DataContext in XAML, use the following code example.
-{% highlight xml %}
+
+		public void OnPropertyChanged(PropertyChangedEventArgs e)
+
+		{
+
+		if (PropertyChanged != null)
+
+		PropertyChanged(this, e);
+
+		}
+
+		}
 
 
-    <Window.DataContext>
+   ~~~
 
-        <local:PdfReport/>
 
-    </Window.DataContext>
+   2. In order to bind the DocumentStream property of the PdfReport class, set the DataContext for the Window. To add the DataContext in XAML, use the following code example.
 
-{% endhighlight %}
+   ~~~xaml
 
-3. Once the DataContext has been set, the ItemSource dependency property can be set by using the following code example in XAML.
+		<Window.DataContext>
 
-{% highlight xml %}
+		<local:PdfReport/>
 
-<Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
+		</Window.DataContext>
 
-{% endhighlight %}
+   ~~~
+
+   3. Once the DataContext has been set, the ItemSource dependency property can be set by using the following code example in XAML.
+
+   {% highlight xml %}
+
+    <Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
+
+   {% endhighlight %}
 
 7. Alternatively, the Open button from the toolbar can also be used to load documents at runtime.
+
 ## Customize PDF Viewer by using PdfDocumentView
 
 
@@ -571,30 +578,32 @@ In addition to the PdfViewerControl, Syncfusion also provides PdfDocumentView co
 
 1. Drag the PdfDocumentView control from the toolbox and drop it into the application’s window. Name the control as documentViewer.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-Toolbox showing the PdfDocumentView control
+   Toolbox showing the PdfDocumentView control
 
 2. The PdfDocumentView control has the rendering area where the pages are displayed in a virtualized scroll viewer.
 3. The following XAML code illustrtaes how the PdfDocumentView control is added to the application.
 
 
 
-{% highlight xml %}
+   ~~~xaml
 
-<Syncfusion:PdfDocumentView Name="documentViewer"/>
-{% endhighlight %}
+	<Syncfusion:PdfDocumentView Name="documentViewer"/>
 
-Loading a document
+   ~~~
+   
+   Loading a document
 
-To load a document in the PdfDocumentView control, add a button to your application by dragging the Button control available in the toolbox. Name the button as openBtn. In the click event of the button, add the following C# code.
-
-{% highlight C# %}
-
+   To load a document in the PdfDocumentView control, add a button to your application by dragging the Button control available in the toolbox. Name the button as openBtn. In the click event of the button, add the following C# code.
 
 
+
+
+   ~~~csharp
+   
         private void openBtn_Click(object sender, RoutedEventArgs e)
 
         {             
@@ -623,11 +632,11 @@ To load a document in the PdfDocumentView control, add a button to your applicat
 
         }
 
-{% endhighlight %}
+   ~~~
 
 The following table displays the set of APIs available for loading and unloading PDF documents.
 
-Method Table
+### Method Table
 
 <table>
 <tr>
@@ -652,7 +661,8 @@ Unloads the loaded PDF.</td><td>
 N/A</td><td>
 Void</td></tr>
 </table>
-Page Navigation
+
+## Page Navigation
 
 In addition to the virtualized page view in a scroll viewer, PdfDocumentView control also provides GoToPage and GoToPageAtIndex methods for page navigation. To add page navigation buttons to your application, add two buttons that helps in navigation for next and previous pages. Name them as gotoNextPageBtn and gotoPrevPageBtn respectively. In the click event of the buttons, add the following code.
 
@@ -660,37 +670,37 @@ In addition to the virtualized page view in a scroll viewer, PdfDocumentView con
 
 
 
-        private void gotoNextPageBtn_Click(object sender, RoutedEventArgs e)
+	private void gotoNextPageBtn_Click(object sender, RoutedEventArgs e)
 
-        {
+	{
 
-            //Check if the current page is not the last page and then navigate to the next page
+	//Check if the current page is not the last page and then navigate to the next page
 
-            if (documentViewer.CurrentPageIndex != documentViewer.PageCount)
+	if (documentViewer.CurrentPageIndex != documentViewer.PageCount)
 
-            {
+	{
 
-                documentViewer.GoToPageAtIndex(documentViewer.CurrentPageIndex + 1);
+	documentViewer.GoToPageAtIndex(documentViewer.CurrentPageIndex + 1);
 
-            }
+	}
 
-        }
+	}
 
 
 
-        private void gotoPrevPageBtn_Click(object sender, RoutedEventArgs e)
+	private void gotoPrevPageBtn_Click(object sender, RoutedEventArgs e)
 
-        {
+	{
 
-            //Check if the current page is not the first page and then navigate to the previous page
+	//Check if the current page is not the first page and then navigate to the previous page
 
-            if (documentViewer.CurrentPageIndex != 1)
+	if (documentViewer.CurrentPageIndex != 1)
 
-            {
+	{
 
-                documentViewer.GoToPageAtIndex(documentViewer.CurrentPageIndex -1);
+	documentViewer.GoToPageAtIndex(documentViewer.CurrentPageIndex -1);
 
-            }
+	}
 
 
 
@@ -698,7 +708,7 @@ In addition to the virtualized page view in a scroll viewer, PdfDocumentView con
 {% endhighlight %}
 
 
-Maginifcation Operations
+## Maginifcation Operations
 
 The PdfDocumentView control also provides various magnification operations through ZoomMode, and ZoomPercentage properties. To add magnifying buttons to the application, add two buttons and name them as fitPageBtn and fitWidthBtn. In the click event of the buttons, add the following C# code.
 
@@ -706,29 +716,29 @@ The PdfDocumentView control also provides various magnification operations throu
 
 
 
-        private void fitPageBtn_Click(object sender, RoutedEventArgs e)
+private void fitPageBtn_Click(object sender, RoutedEventArgs e)
 
-        {
-
-
-
-            documentViewer.ZoomMode = Syncfusion.Windows.PdfViewer.ZoomMode.FitPage;
-
-        }
+{
 
 
 
-        private void fitWidthBtn_Click(object sender, RoutedEventArgs e)
+documentViewer.ZoomMode = Syncfusion.Windows.PdfViewer.ZoomMode.FitPage;
 
-        {
+}
 
-            documentViewer.ZoomMode = Syncfusion.Windows.PdfViewer.ZoomMode.FitWidth;
 
-        }
+
+private void fitWidthBtn_Click(object sender, RoutedEventArgs e)
+
+{
+
+documentViewer.ZoomMode = Syncfusion.Windows.PdfViewer.ZoomMode.FitWidth;
+
+}
 {% endhighlight %}
 
 
-Printing a Document
+## Printing a Document
 
 The PdfDocumentView control also provides the Print APIs, to print the PDF documents programmatically using the PdfDocumentView control, add the following C# code to the click event of your print button.
 
@@ -736,25 +746,25 @@ The PdfDocumentView control also provides the Print APIs, to print the PDF docum
 
 
 
-        private void printBtn_Click(object sender, RoutedEventArgs e)
+private void printBtn_Click(object sender, RoutedEventArgs e)
 
-        {
+{
 
-            System.Windows.Controls.PrintDialog dialog = new System.Windows.Controls.PrintDialog();
-
-
-
-            if(dialog.ShowDialog()== true)
-
-            {
-
-                dialog.PrintDocument(documentViewer.PrintDocument.DocumentPaginator, "Print Document");
-
-            }          
+System.Windows.Controls.PrintDialog dialog = new System.Windows.Controls.PrintDialog();
 
 
 
-        }
+if(dialog.ShowDialog()== true)
+
+{
+
+dialog.PrintDocument(documentViewer.PrintDocument.DocumentPaginator, "Print Document");
+
+}          
+
+
+
+}
 {% endhighlight %}
 
 
@@ -765,4 +775,5 @@ The following screenshot illustrates the completely customized PDF Viewer create
 
 
 A customized PDF Viewer using PdfDocumentView control
+{:.caption}
 

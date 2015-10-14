@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling
+title: Styling | CardView | wpf | Syncfusion
 description: styling
 platform: wpf
 control: CardView
@@ -26,16 +26,13 @@ The CardView control has the following built-in styles:
 9. Transparent
 
 
-
 These visual styles can be applied to the CardView control through XAML. The following example illustrates how to apply Office2007Blue style to the CardView control.
 
- {% highlight xml %}
+{% highlight xaml %}
 
-<syncfusion:CardView         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
-
+<syncfusion:CardView syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>  
 
 {% endhighlight %}
-
 
 These styles can also be applied to the CardView control through C#. The following code example illustrates this.
 
@@ -43,9 +40,7 @@ These styles can also be applied to the CardView control through C#. The followi
 
 SkinStorage.SetVisualStyle(cardViewInstance, "Office2010Blue");
 
-
 {% endhighlight %}
-
 
 ## ItemContainerStyle
 
@@ -53,52 +48,42 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
 
 1. Create a style for CardViewItem.
 
+   ~~~ xaml
 
+		<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
 
-			<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
+			<Setter Property="Header" Value="{Binding Name}"/>
 
-						<Setter Property="Header" Value="{Binding Name}"/>
+			<Setter Property="Foreground" Value="Green"/>
 
-						<Setter Property="Foreground" Value="Green"/>
+			<Setter Property="FontWeight" Value="Bold"/>
 
-						<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="FontSize" Value="16"/>
 
-						<Setter Property="FontSize" Value="16"/>
+		</Style>
 
-					</Style>
-
-
-
-
-
+   ~~~
+   
 2. Set the ItemContainerStyle of CardView.
    
+   ~~~ xaml
 
+		<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
-			<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+				 ItemTemplate="{StaticResource contactTemplate}"
 
-											 ItemTemplate="{StaticResource contactTemplate}"
+				 EditItemTemplate="{StaticResource contactEditTemplate}"
 
-											 EditItemTemplate="{StaticResource contactEditTemplate}"
+				 ItemContainerStyle="{StaticResource contactStyle}"/>
 
-											 ItemContainerStyle="{StaticResource contactStyle}"
+   ~~~
+   
+This generates the following CardView control.
 
-																			/>
+![](Styling_images/Styling_img1.png)
 
-
-
-
-
-   {:.prettyprint}
-
-    This generates the following CardView control.
-
-
-
-    ![](Styling_images/Styling_img1.png)
-
-
-
+CardView control with styled items
+{:.caption}
 
 ## ItemContainerStyleSelector
 
@@ -106,138 +91,95 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 1. Create the styles in the Window’s resource as follows.
 
+   ~~~ xaml
 
+		<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
 
+			<Setter Property="Header" Value="{Binding Name}"/>
 
-			<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
+			<Setter Property="Foreground" Value="Green"/>
 
-						<Setter Property="Header" Value="{Binding Name}"/>
+			<Setter Property="FontWeight" Value="Bold"/>
 
-						<Setter Property="Foreground" Value="Green"/>
+			<Setter Property="FontSize" Value="16"/>
 
-						<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
 
-						<Setter Property="FontSize" Value="16"/>
+		<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2">
 
-					</Style>
+			<Setter Property="Header" Value="{Binding Name}"/>
 
+			<Setter Property="Foreground" Value="Blue"/>
 
+			<Setter Property="FontWeight" Value="Bold"/>
 
-					<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2">
+			<Setter Property="FontSize" Value="16"/>
 
-						<Setter Property="Header" Value="{Binding Name}"/>
+		</Style>
 
-						<Setter Property="Foreground" Value="Blue"/>
-
-						<Setter Property="FontWeight" Value="Bold"/>
-
-						<Setter Property="FontSize" Value="16"/>
-
-					</Style>
-
-
-
-
-
-
-
-
-
-
-
+   ~~~
+   
 2. Create StyleSelector in the code.
 
+   ~~~ csharp
 
+		public class CardViewItemContainerStyleSelector : StyleSelector
 
-						public class CardViewItemContainerStyleSelector : StyleSelector
+		{
+			public override Style SelectStyle(object item, DependencyObject container)
 
-						{
+			{
+				Window window = Application.Current.MainWindow;
 
+				int age = (item as Contact).Age;
 
+				if (age > 18)
 
-							public override Style SelectStyle(object item, DependencyObject container)
+				{
 
-							{
+					return ((Style)window.Resources["ageStyle1"]);
 
+				}
 
+				else
 
-								Window window = Application.Current.MainWindow;
+				{
 
+					return ((Style)window.Resources["ageStyle2"]);
 
+				}
+			}
+		}
 
-								int age = (item as Contact).Age;
-
-								if (age > 18)
-
-								{
-
-									return ((Style)window.Resources["ageStyle1"]);
-
-								}
-
-								else
-
-								{
-
-									return ((Style)window.Resources["ageStyle2"]);
-
-								}
-
-
-
-							}
-
-						}
-
-
-
-
-
-
-
-
-
-
+   ~~~
 
 3. Define the style selector in the Window’s resource.
 
 
+   ~~~ xaml
 
+		<local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/>
 
-
-        <local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/>
-
-
-
-
+   ~~~
 
 4. Set the ItemContainerStyleSelector for the CardView control.
 
 
+   ~~~ xaml
 
+		<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
+						 ItemTemplate="{StaticResource contactTemplate}"
 
-         <syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+						 EditItemTemplate="{StaticResource contactEditTemplate}"
 
-                                 ItemTemplate="{StaticResource contactTemplate}"
+						 ItemContainerStyleSelector="{StaticResource cardViewItemContainerStyleSelector}" />
 
-                                 EditItemTemplate="{StaticResource contactEditTemplate}"
+   ~~~
 
-                                 ItemContainerStyleSelector="{StaticResource cardViewItemContainerStyleSelector}"
+This generates the following CardView control.
 
+![](Styling_images/Styling_img2.png)
 
-
-                                                                />
-
-
-
-
-   {:.prettyprint}
-
-    This generates the following CardView control.
-
-    ![](Styling_images/Styling_img2.png)
-
-
-
-
+CardView control styled with ItemContainerStyleSelctor
+{:.caption}

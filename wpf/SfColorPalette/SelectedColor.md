@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SelectedColor
+title: SelectedColor | Color Palette | wpf | Syncfusion
 description: selectedcolor
 platform: wpf
 control: Color Palette

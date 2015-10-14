@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Data-Templates
+title: Customizing Data Templates| MenuAdv | Wpf | Syncfusion
 description: customizing data templates
 platform: wpf
 control: MenuAdv
@@ -24,29 +24,29 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 
 
 
-            <syncfusion:MenuAdv.ItemTemplate>
+<syncfusion:MenuAdv.ItemTemplate>
 
 
 
-                <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
+<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
 
-                    <StackPanel Orientation="Horizontal">
+<StackPanel Orientation="Horizontal">
 
-                        <Image Source="App.ico"  Width="15" Height="15"/>
+<Image Source="App.ico"  Width="15" Height="15"/>
 
-                     <TextBlock Text="{Binding Header}" FontWeight="Bold" 			FontStyle="Italic" />
+<TextBlock Text="{Binding Header}" FontWeight="Bold" 			FontStyle="Italic" />
 
-                    </StackPanel>
+</StackPanel>
 
-                </HierarchicalDataTemplate>
-
-
-
-            </syncfusion:MenuAdv.ItemTemplate>
+</HierarchicalDataTemplate>
 
 
 
-        </syncfusion:MenuAdv>
+</syncfusion:MenuAdv.ItemTemplate>
+
+
+
+</syncfusion:MenuAdv>
 
 
 {% endhighlight %}

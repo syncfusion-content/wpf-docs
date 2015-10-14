@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotSchemaDesigner-for-WPF
+title: PivotSchemaDesigner for WPF| PivotGrid | Wpf | Syncfusion
 description: pivotschemadesigner for wpf
 platform: wpf
 control: PivotGrid
@@ -93,7 +93,7 @@ The PivotTableDesigner can be bound to PivotGrid with the help of the PivotContr
 The user can customize the PivotTable field list in PivotSchemaDesigner. The user can hide the unnecessary fields from the 
 PivotSchemaDesigner by using the ShowDisplayFieldsOnly property.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature enables the user to load required set of items in PivotSchemaDesigner.
 
@@ -107,18 +107,18 @@ The following screen shot shows a PivotSchemaDesigner control with all items and
 
 
 
-#### Properties
+### Properties
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 ShowDisplayFieldsOnly</td><td>
@@ -129,7 +129,7 @@ Boolean</td><td>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 A sample is placed in the following location:
 
@@ -137,6 +137,7 @@ SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_
 
 ### Sample IList Data
 
+{% tabs %}
 {% highlight C# %}  
 
 public class ProductSales
@@ -456,6 +457,6 @@ End Class
 End Class
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 

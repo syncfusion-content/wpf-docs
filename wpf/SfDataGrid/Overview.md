@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfDataGrid | WPF | Syncfusion
 description: overview
 platform: wpf
 control: SfDataGrid
@@ -68,7 +68,7 @@ Both SfDataGrid and GridDataControl almost have the same set of features. But Sf
 
 Comparatively, the performance of SfDataGrid control is better than the GridDataControl. You can see the list of some of the specific API difference between GridDataControl and SfDataGrid as follows:
 
- _Property Table_
+Property Table
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ The number of columns is freeze from right.</td></tr>
 </table>
 You can see the list of rich set of features in SfDataGrid over GridDataControl as follows:
 
- _Rich set of features in SfDataGrid over GridDataControl_
+Rich set of features in SfDataGrid over GridDataControl
 
 <table>
 <tr>

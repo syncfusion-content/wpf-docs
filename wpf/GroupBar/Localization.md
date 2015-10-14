@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization| GroupBar | Wpf | Syncfusion
 description: localization
 platform: wpf
 control: GroupBar

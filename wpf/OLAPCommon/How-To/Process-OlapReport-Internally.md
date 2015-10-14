@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Process-OlapReport-Internally
+title: Process OlapReport Internally| OLAPCommon | Wpf | Syncfusion
 description: process olapreport internally
 platform: wpf
 control: OLAPCommon

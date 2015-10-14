@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| SfSchedule | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: SfSchedule
@@ -11,49 +11,51 @@ documentation: ug
 
 ## Creating a Schedule
 
-1.Schedule is available in the following assembly and namespace:
-{% highlight html %}
-             Assembly: Syncfusion.SfSchedule.WPF
-
-Namespace: Syncfusion.UI.Xaml.Schedule
-
-Refer to the following code to add a Schedule:
+1. Schedule is available in the following assembly and namespace:
 
 
+   Assembly: Syncfusion.SfSchedule.WPF
 
-<Window x:Class="SfScheduleSample.MainWindow"       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   Namespace: Syncfusion.UI.Xaml.Schedule
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        xmlns:schedule="http://schemas.syncfusion.com/wpf"
-
-        WindowStartupLocation="CenterScreen" WindowStyle="None"
-
-        Width="950" Height="600">
-
-    <Grid x:Name="LayoutRoot">
-
-        <schedule:SfSchedule/>
-
-    </Grid>
-
-</Window>
-
-{% endhighlight  %}
+   Refer to the following code to add a Schedule:
 
 
-{% highlight c# %}
+   ~~~xaml
+   
+	<Window x:Class="SfScheduleSample.MainWindow"       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+	        xmlns:schedule="http://schemas.syncfusion.com/wpf"
+
+	        WindowStartupLocation="CenterScreen" WindowStyle="None"
+
+	        Width="950" Height="600">
+
+	    <Grid x:Name="LayoutRoot">
+
+	        <schedule:SfSchedule/>
+
+	    </Grid>
+
+        </Window>
+
+   ~~~
 
 
 
-SfSchedule schedule = new SfSchedule();
-
-this.grid.Children.Add(schedule);
+   ~~~csharp
 
 
-{% endhighlight  %}
+	SfSchedule schedule = new SfSchedule();
 
-2.Run the above code and now the empty Scheduler can be seen as follows but with no appointments. In order to display the appointments on the scheduler, either the local or remote data needs to be passed to it.
+	this.grid.Children.Add(schedule);
+
+   ~~~
+
+
+2. Run the above code and now the empty Scheduler can be seen as follows but with no appointments. In order to display the appointments on the scheduler, either the local or remote data needs to be passed to it.
 
 
 
@@ -69,53 +71,55 @@ Syncfusion Reference Manager is used to add   Syncfusion Tools in Visual Studio.
 
 To Add SfSchedule Control, follow the steps below:
 
-1.Create a simple WPF application using Visual Studio.
+1. Create a simple WPF application using Visual Studio.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
-2.Right Click on the Project and select Syncfusion Reference Manager.
+2. Right Click on the Project and select Syncfusion Reference Manager.
 
-  ![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
-3.The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
+3. The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
-  ![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-4.Search for “SfSchedule” using SearchBox and select SfSchedule Control.  Click on done to add selected SfSchedule Control.
+4. Search for “SfSchedule” using SearchBox and select SfSchedule Control.  Click on done to add selected SfSchedule Control.
 
-  ![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
+ 
 
 
+5. The SfSchedule assemblies will be automatically added to the Project after Clicking OK
 
-5.The SfSchedule assemblies will be automatically added to the Project after Clicking OK
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
-  ![](Getting-Started_images/Getting-Started_img6.png)
 
 
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
-  ![](Getting-Started_images/Getting-Started_img7.png)
 
 
+6. Create a namespace reference to the SfSchedule control using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfSchedule control’s namespace reference Syncfusion.UI.Xaml.Schedule available in the Syncfusion.SfSchedule.WPF assembly.
 
-6.Create a namespace reference to the SfSchedule control using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfSchedule control’s namespace reference Syncfusion.UI.Xaml.Schedule available in the Syncfusion.SfSchedule.WPF assembly.
 
-{% highlight html %}
+   ~~~xaml
+   
+      xmlns:schedule="http://schemas.syncfusion.com/wpf"
 
-xmlns:schedule="http://schemas.syncfusion.com/wpf"
 
 
+         (or)
 
-(or)
 
 
+   xmlns:schedule="clr-namespace:Syncfusion.UI.Xaml.Schedule;assembly=Syncfusion.SfSchedule.WPF"
 
-xmlns:schedule="clr-namespace:Syncfusion.UI.Xaml.Schedule;assembly=Syncfusion.SfSchedule.WPF"
 
 
 
@@ -123,83 +127,79 @@ xmlns:schedule="clr-namespace:Syncfusion.UI.Xaml.Schedule;assembly=Syncfusion.Sf
 
 
 
+   ~~~
 
-{% endhighlight  %}
 
 
 
 
 
+7. Add the following code to create a simple SfSchedule control.
 
-7.Add the following code to create a simple SfSchedule control.
+   ~~~xaml
 
-{% highlight html %}
+		<Window x:Class="SfScheduleSample.MainWindow"       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-<Window x:Class="SfScheduleSample.MainWindow"       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		        xmlns:schedule="http://schemas.syncfusion.com/wpf"
 
-        xmlns:schedule="http://schemas.syncfusion.com/wpf"
+		        WindowStartupLocation="CenterScreen" WindowStyle="None"
 
-        WindowStartupLocation="CenterScreen" WindowStyle="None"
+		        Width="950" Height="600">
 
-        Width="950" Height="600">
+		    <Grid x:Name="LayoutRoot">
 
-    <Grid x:Name="LayoutRoot">
+		        <schedule:SfSchedule/>
+	
+	       </Grid>
 
-        <schedule:SfSchedule/>
+	  </Window>
 
-    </Grid>
 
-</Window>
 
+   ~~~
 
 
-{% endhighlight  %}
 
+   ~~~csharp
 
-{% highlight c# %}
+		using Syncfusion.UI.Xaml.Schedule;
 
+		using System.Windows;
 
 
 
-using Syncfusion.UI.Xaml.Schedule;
+		namespace SfScheduleSample
 
-using System.Windows;
+		{
 
+		    public partial class MainWindow : Window
 
+		    {
 
-namespace SfScheduleSample
+		        public MainWindow()
 
-{
+		        {
 
-    public partial class MainWindow : Window
+		            InitializeComponent();
 
-    {
+		            SfSchedule sfSchedule = new SfSchedule();
 
-        public MainWindow()
+		            this.LayoutRoot.Children.Add(sfSchedule);
 
-        {
+		        }
 
-            InitializeComponent();
+		    }
 
-            SfSchedule sfSchedule = new SfSchedule();
+		}
+		
+   ~~~
 
-            this.LayoutRoot.Children.Add(sfSchedule);
 
-        }
+8. The simple SfSchedule control will be created as shown in the figure below.
 
-    }
-
-}
-
-
-{% endhighlight  %}
-
-
-8.The simple SfSchedule control will be created as shown in the figure below.
-
-![C:/Users/jeyasri/Pictures/Schedule/Default.png](Getting-Started_images/Getting-Started_img8.png)
+   ![C:/Users/jeyasri/Pictures/Schedule/Default.png](Getting-Started_images/Getting-Started_img8.png)
 
 
 

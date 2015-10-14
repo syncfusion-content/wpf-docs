@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointment-Template-Customization
+title: Appointment Template Customization| SfSchedule | Wpf | Syncfusion
 description: appointment template customization
 platform: wpf
 control: SfSchedule
@@ -10,45 +10,46 @@ documentation: ug
 # Appointment Template Customization
 
 The default appearance of the Appointment can be customized by using the AppointmentTemplate property. The AppointmentTemplate is a ControlTemplate type, used to customize or override the default template of the Appointments.
-{% highlight c# %}
+{% tabs %}
+{% highlight xml %}
 
 <Schedule:SfSchedule>
 
-    <Schedule:SfSchedule.AppointmentTemplate>
+<Schedule:SfSchedule.AppointmentTemplate>
 
-        <ControlTemplate>
+<ControlTemplate>
 
-            <Grid>
+<Grid>
 
-                <Rectangle Fill="{Binding AppointmentBackground}"/>
+<Rectangle Fill="{Binding AppointmentBackground}"/>
 
-                <Grid>
+<Grid>
 
-                    <Grid.RowDefinitions>
+<Grid.RowDefinitions>
 
-                        <RowDefinition Height="0.25*"/>
+<RowDefinition Height="0.25*"/>
 
-                        <RowDefinition Height="0.75*"/>
+<RowDefinition Height="0.75*"/>
 
-                    </Grid.RowDefinitions>
+</Grid.RowDefinitions>
 
-                    <Grid.ColumnDefinitions>
+<Grid.ColumnDefinitions>
 
-                        <ColumnDefinition/><ColumnDefinition/>
+<ColumnDefinition/><ColumnDefinition/>
 
-                    </Grid.ColumnDefinitions>
+</Grid.ColumnDefinitions>
 
-                    <TextBlock Margin="10,2,0,0" Text="{Binding Subject}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Foreground="White" FontWeight="Light" FontFamily="Segoe UI"/>
+<TextBlock Margin="10,2,0,0" Text="{Binding Subject}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Foreground="White" FontWeight="Light" FontFamily="Segoe UI"/>
 
-                    <Image Source="../Assets/Team.png" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Stretch="Fill" />
+<Image Source="../Assets/Team.png" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Stretch="Fill" />
 
-                    <TextBlock Text="{Binding StartTime}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Foreground="White" FontWeight="Light" FontFamily="Segoe UI" TextWrapping="NoWrap"/>
+<TextBlock Text="{Binding StartTime}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Foreground="White" FontWeight="Light" FontFamily="Segoe UI" TextWrapping="NoWrap"/>
 
-                </Grid></Grid>
+</Grid></Grid>
 
-        </ControlTemplate>
+</ControlTemplate>
 
-    </Schedule:SfSchedule.AppointmentTemplate>
+</Schedule:SfSchedule.AppointmentTemplate>
 
 </Schedule:SfSchedule>  
 
@@ -72,7 +73,7 @@ The default appearance of the Appointment can be customized by using the Appoint
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 

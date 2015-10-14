@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set-and-Override-Visual-Style-at-Application-Level
+title: Set and Override Visual Style at Application Level| SkinManager | Wpf | Syncfusion
 description: set and override visual style at application level
 platform: wpf
 control: SkinManager
@@ -21,33 +21,33 @@ The following code snippet explains how to override the Syncfusion Blend Style f
 
 <Application x:Class="WpfApplication2.App"
 
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-             StartupUri="MainWindow.xaml">
+StartupUri="MainWindow.xaml">
 
 
 
-        <Application.Resources>
+<Application.Resources>
 
-            <ResourceDictionary>
+<ResourceDictionary>
 
-                <ResourceDictionary.MergedDictionaries>
+<ResourceDictionary.MergedDictionaries>
 
-                    <ResourceDictionary Source="/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/BlendStyle.xaml"/>
+<ResourceDictionary Source="/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/BlendStyle.xaml"/>
 
-                </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary.MergedDictionaries>
 
-                <Style TargetType="syncfusion:Ribbon" BasedOn="{StaticResource BlendRibbonStyle}">
+<Style TargetType="syncfusion:Ribbon" BasedOn="{StaticResource BlendRibbonStyle}">
 
-                    <Setter Property="FontSize" Value="19"/>
+<Setter Property="FontSize" Value="19"/>
 
-                </Style>
+</Style>
 
-            </ResourceDictionary>
+</ResourceDictionary>
 
-        </Application.Resources>
+</Application.Resources>
 
 </Application>
 

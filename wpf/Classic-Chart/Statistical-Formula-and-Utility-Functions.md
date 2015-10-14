@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Statistical Formula and Utility Functions
+title: Statistical Formula and Utility Functions | Chart(Classic) | wpf | Syncfusion
 description: Statistical Formula and Utility Functions
 platform: wpf
 control: Chart (Classic)
@@ -20,7 +20,6 @@ This feature allows the user to calculate basic statistical functions that inclu
 
 ## Methods
 
-_Statistical and Utility Functions Methods Table_
 
 <table>
 <tr>
@@ -223,6 +222,7 @@ Double</td></tr>
 Adding Statistical Formula and Utility Functions to an Application
 
 ## Statistical Formulas
+
 {% highlight c# %}
 
 
@@ -259,6 +259,7 @@ string val = "";
 
 
 ## Perform ANOVA Test
+
 {% highlight c# %}
 
 
@@ -321,9 +322,8 @@ FTestResult ftest = BasicStatisticalFormulas.FTest(0.05, series1, series2);
 
 
 ## Perform T-Test
+
 {% highlight c# %}
-
-
 
 
 TTestResult ttest = BasicStatisticalFormulas.TTestEqualVariances(meandiff.Value, 0.1, series1, series2);
@@ -351,11 +351,8 @@ TTestResult ttest = BasicStatisticalFormulas.TTestEqualVariances(meandiff.Value,
 ![](Chart-Controls_images/Chart-Controls_img242.png)
 
 
-
 ## Perform Z-Test
 {% highlight c# %}
-
-
 
 
 ZTestResult ztest = BasicStatisticalFormulas.ZTest(meandiff.Value, 10, 5, 0.5, series1, series2);
@@ -385,8 +382,8 @@ ZTestResult ztest = BasicStatisticalFormulas.ZTest(meandiff.Value, 10, 5, 0.5, s
 ![](Chart-Controls_images/Chart-Controls_img243.png)
 
 
-
 ## Normal Distribution
+
 {% highlight c# %}
 
 
@@ -399,6 +396,7 @@ value.Text = UtilityFunctions.NormalDistribution((double)probability.SelectedIte
 
 
 ## F-Cumulative Distribution
+
 {% highlight c# %}
 
 
@@ -411,6 +409,7 @@ value.Text = UtilityFunctions.FCumulativeDistribution((double)probability.Select
 
 
 ## T-Cumulative Distribution
+
 {% highlight c# %}
 
 

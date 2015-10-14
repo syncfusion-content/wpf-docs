@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| DocumentContainer | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: DocumentContainer
@@ -62,10 +62,18 @@ To create the Document Container control through designer, drag a Document Conta
 To create the Document Container programmatically, use the following XAML or C# code.
 
 
+{% tabs %}
+{% highlight xml %}
+<!-- Adding Document Container -->
+<syncfusion:DocumentContainer Name="DocContainer"/>
+{% endhighlight %}
 
-{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer"/>{% endhighlight %}
-
-{% highlight C# %}//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();//Adding control to the windowthis.Content = DocContainer;{% endhighlight %}
-
+{% highlight C# %}
+//Creating instance of document container
+DocumentContainer DocContainer = new DocumentContainer();
+//Adding control to the windowthis.
+Content = DocContainer;
+{% endhighlight %}
+{% endtabs %}
 
 

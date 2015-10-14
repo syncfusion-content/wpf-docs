@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Node-Style
+title: Custom Node Style| Gantt | Wpf | Syncfusion
 description: custom node style
 platform: wpf
 control: Gantt
@@ -29,7 +29,7 @@ The following are the steps to add custom node style to an application:
 
 1. Define a style as needed with the target type for each node type as given in the following table:
 
-_Custom Node Types_
+### Custom Node Types
 
 <table>
 <tr>
@@ -73,82 +73,82 @@ The following code illustrates how to define style:
                     >
 
 
-   <!-- Header Node style-->
+ <!-- Header Node style-->
 
 
-      <Style TargetType="chart:HeaderNode">
+    <Style TargetType="chart:HeaderNode">
 
 
-          <Setter Property="MaxHeight" Value="24"/>
+        <Setter Property="MaxHeight" Value="24"/>
 
 
-          <Setter Property="Template">
+        <Setter Property="Template">
 
 
-              <Setter.Value>
+            <Setter.Value>
 
 
-                  <ControlTemplate TargetType="chart:HeaderNode">
+                <ControlTemplate TargetType="chart:HeaderNode">
 
 
-                      <Border Background="{TemplateBinding Background}" Name="PART_HeaderBorder" 
+                    <Border Background="{TemplateBinding Background}" Name="PART_HeaderBorder" 
 
 
                             BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0">
 
 
-                          <Grid Width="{TemplateBinding NodeWidth}" VerticalAlignment="Center">
+                        <Grid Width="{TemplateBinding NodeWidth}" VerticalAlignment="Center">
 
 
-                              <Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
 
 
-                                  <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="10" />
 
 
-                                  <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
 
 
-                                  <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="10" />
 
 
-                              </Grid.ColumnDefinitions>
+                            </Grid.ColumnDefinitions>
 
 
-                              <Rectangle HorizontalAlignment="Left" Grid.Column="1" Height="6.4" VerticalAlignment="Top" Width="{TemplateBinding NodeWidth}" Stroke="#FF111111">
+                            <Rectangle HorizontalAlignment="Left" Grid.Column="1" Height="6.4" VerticalAlignment="Top" Width="{TemplateBinding NodeWidth}" Stroke="#FF111111">
 
 
-                                  <Rectangle.Fill>
+                                <Rectangle.Fill>
 
 
-                                      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 
 
-                                          <GradientStop Color="#FF414141" Offset="0" />
+                                        <GradientStop Color="#FF414141" Offset="0" />
 
 
-                                          <GradientStop Color="#FF6D6D6D" Offset="0.087" />
+                                        <GradientStop Color="#FF6D6D6D" Offset="0.087" />
 
 
-                                          <GradientStop Color="#FF767676" Offset="0.304" />
+                                        <GradientStop Color="#FF767676" Offset="0.304" />
 
 
-                                          <GradientStop Color="Black" Offset="0.957" />
+                                        <GradientStop Color="Black" Offset="0.957" />
 
 
-                                          <GradientStop Color="#FF343434" Offset="1" />
+                                        <GradientStop Color="#FF343434" Offset="1" />
 
 
-                                      </LinearGradientBrush>
+                                    </LinearGradientBrush>
 
 
-                                  </Rectangle.Fill>
+                                </Rectangle.Fill>
 
 
-                              </Rectangle>
+                            </Rectangle>
 
 
-                              <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
+                            <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
 
 
                                   HorizontalAlignment="Left"
@@ -172,31 +172,31 @@ The following code illustrates how to define style:
                                   Width="10.135">
 
 
-                                  <Path.Fill>
+                                <Path.Fill>
 
 
-                                      <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
+                                    <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
 
 
-                                          <GradientStop Color="DimGray" Offset="0.008" />
+                                        <GradientStop Color="DimGray" Offset="0.008" />
 
 
-                                          <GradientStop Color="#FF7F7F7F" Offset="0.511" />
+                                        <GradientStop Color="#FF7F7F7F" Offset="0.511" />
 
 
-                                          <GradientStop Color="#FF2A2A2A" Offset="1" />
+                                        <GradientStop Color="#FF2A2A2A" Offset="1" />
 
 
-                                      </LinearGradientBrush>
+                                    </LinearGradientBrush>
 
 
-                                  </Path.Fill>
+                                </Path.Fill>
 
 
-                              </Path>
+                            </Path>
 
 
-                              <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
+                            <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
 
 
                                   HorizontalAlignment="Left"
@@ -220,46 +220,46 @@ The following code illustrates how to define style:
                                   Width="10.135">
 
 
-                                  <Path.Fill>
+                                <Path.Fill>
 
 
-                                      <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
+                                    <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
 
 
-                                          <GradientStop Color="DimGray" Offset="0.008" />
+                                        <GradientStop Color="DimGray" Offset="0.008" />
 
 
-                                          <GradientStop Color="#FF7F7F7F" Offset="0.511" />
+                                        <GradientStop Color="#FF7F7F7F" Offset="0.511" />
 
 
-                                          <GradientStop Color="#FF2A2A2A" Offset="1" />
+                                        <GradientStop Color="#FF2A2A2A" Offset="1" />
 
 
-                                      </LinearGradientBrush>
+                                    </LinearGradientBrush>
 
 
-                                  </Path.Fill>
+                                </Path.Fill>
 
 
-                              </Path>
+                            </Path>
 
 
-                          </Grid>
+                        </Grid>
 
 
-                      </Border>
+                    </Border>
 
 
-                  </ControlTemplate>
+                </ControlTemplate>
 
 
-              </Setter.Value>
+            </Setter.Value>
 
 
-          </Setter>
+        </Setter>
 
 
-      </Style>
+    </Style>
 
     <!-- Task Node style-->
     <Style x:Key="TaskNode" TargetType="{x:Type chart:GanttNode}">
@@ -378,58 +378,58 @@ The following code illustrates how to add the styles to the application:
  <sync:GanttControl Grid.Row="1"  x:Name="Gantt" ItemsSource="{Binding GanttItemSource}" ToolTipTemplate="{StaticResource toolTipTemplate}"
 
 
-                                 VisualStyle="Office2010Silver">
+ VisualStyle="Office2010Silver">
 
 
-                  <sync:GanttControl.TaskAttributeMapping>
+ <sync:GanttControl.TaskAttributeMapping>
 
 
-                      <sync:TaskAttributeMapping TaskIdMapping="Id"
+ <sync:TaskAttributeMapping TaskIdMapping="Id"
 
 
-                                            TaskNameMapping="Name"
+  TaskNameMapping="Name"
 
 
-                                            StartDateMapping="StDate" 
+  StartDateMapping="StDate" 
 
 
-                                            ChildMapping="ChildTask"
+  ChildMapping="ChildTask"
 
 
-                                            FinishDateMapping="EndDate"
+  FinishDateMapping="EndDate"
 
 
-                                            DurationMapping="Duration"                                            
+   DurationMapping="Duration"                                            
 
 
-                                            ProgressMapping="Complete"
+   ProgressMapping="Complete"
 
 
-                                            PredecessorMapping="Predecessor">
+  PredecessorMapping="Predecessor">
 
 
 
 
 
-                      </sync:TaskAttributeMapping>
+  </sync:TaskAttributeMapping>
 
 
-                  </sync:GanttControl.TaskAttributeMapping>
+  </sync:GanttControl.TaskAttributeMapping>
 
 
-                  <sync:GanttControl.Resources>
+   <sync:GanttControl.Resources>
 
 
-                      <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
+   <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
 
 
-                      <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
+  <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
 
 
-                  </sync:GanttControl.Resources>
+  </sync:GanttControl.Resources>
 
 
-              </sync:GanttControl>
+   </sync:GanttControl>
 
 {% endhighlight  %}
 
@@ -445,7 +445,8 @@ _Custom Node Style_
 
 
 
-_Custom Node Style_
+Custom Node Style
+{:caption}
 
 ## Samples Link
 

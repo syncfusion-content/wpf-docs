@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data-Population
+title: Data Population| GridTree | Wpf | Syncfusion
 description: data population
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 The primary requirement of the data displayed in the GridTree control is that the parent node and the child node share the same schema (i.e. have the same columns to display). To populate the GridTree control, you need to handle the RequestTreeItems event (This event gets fired for every tree node that is being populated in order to retrieve its child nodes). In the event arguments, the ParentItem property indicates the item whose children are being requested. The list of children can be set using this property. If this property is empty, it implies that the event is requesting the root nodes. The following code example illustrates a minimal RequestTreeItems handler.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -57,7 +57,7 @@ private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeItemsEv
 
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
 The only requirement on ChildList returned by the RequestTreeItems is that it should be an IEnumerable list of typed objects that share a single type.
 
@@ -71,7 +71,7 @@ The default behavior of the GridTree control is to display all simple, public pr
 
 The following code example illustrates how to set these properties for the GridTreeColumns by using XAML code.
 
-{%highlight xml%}
+{% highlight xml %}
 
 
 
@@ -92,7 +92,7 @@ The following code example illustrates how to set these properties for the GridT
 </sf:GridTreeControl>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 * PercentWidth-This is another width property that plays a role in column sizing, if you had set GridTreeControl.PercentSizingBehavior(The PercentSizingBehavior determines how the grid columns should be sized when the grid is resized) to some value other than 'None'. If you set a value to the PercentWidth property, this column will be resized according to the sizing algorithms. For more details refer the PercentSizingBehavior section.
 * StyleInfo-StyleInfo is a GridStyleInfo object that controls the appearance of the cells in this column. This object enables you to set various column properties, including the Font, and Background and Foreground color. All properties exposed in the GridStyleInfo objects are customizable by using this StyleInfo property.

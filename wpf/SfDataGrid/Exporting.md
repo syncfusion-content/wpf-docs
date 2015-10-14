@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | SfDataGrid | WPF | Syncfusion
 description: exporting
 platform: wpf
 control: SfDataGrid
@@ -34,7 +34,7 @@ You can Export SfDatagrid to Excel by using the following extension methods pres
 
 The ExportToExcel method has the following overloads.
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -135,8 +135,8 @@ The following screenshot displays the output for the DataGrid.
 ![](Features_images/Features_img202.png)
 
 
-_DataGrid_
-
+DataGrid
+{:.caption}
 The following screenshot displays the exported excel sheet.
 
 
@@ -145,11 +145,11 @@ The following screenshot displays the exported excel sheet.
 
 
 
-_Exported data in excel sheet_
-
+Exported data in excel sheet
+{:.caption}
 The ExcelExportingOptions class has the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ Delegate handler customizes the exporting of Details View.</td><td>
 
 The ExportCollectionToExcel method has the following overloads.
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -326,7 +326,7 @@ ExportToExcel and ExportCollectionToExcel provide the following delegate handler
 
 This delegate handler allows you to customize the styles for Headers, Table Summary, Group Summary and Caption Summary rows. It includes the GridExcelExportingEventArgs event data class that contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -441,8 +441,8 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Applying cell styles based on the cell type using GridExcelExportingHandler._
-
+Applying cell styles based on the cell type using GridExcelExportingHandler.
+{:.caption}
 The following screenshot displays the Exported excel sheet.
 
 
@@ -451,15 +451,15 @@ The following screenshot displays the Exported excel sheet.
 
 
 
-_Exported excel sheet_
-
+Exported excel sheet
+{:.caption}
 
 
 #### GridCellExcelExportingHandler
 
 A delegate handler handles or customizes a cell in Excel. It occurs for every exported cell. It includes the GridCellExcelExportingEventArgs event data class that contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -555,21 +555,21 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Customized font using GridCellExcelExportingHandler_
-
+Customized font using GridCellExcelExportingHandler
+{:.caption}
 The following screenshot displays the Exported excel sheet,
 
 ![](Features_images/Features_img207.png)
 
 
 
-_Exported excel sheet_
-
+Exported excel sheet
+{:.caption}
 #### GridChildExportingEventHandler
 
 This handler allows you to skip the exporting of DetailsView Grid columns or the whole DetailsView Grid. It includes the GridChildExportingEventArgs event data class that contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -644,8 +644,8 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Skipped exporting of Details View Grid using ChildExportingHandler_
-
+Skipped exporting of Details View Grid using ChildExportingHandler
+{:.caption}
 The following screenshot displays the exported excel sheet,
 
 
@@ -654,8 +654,8 @@ The following screenshot displays the exported excel sheet,
 
 
 
-_Exported excel sheet_
-
+Exported excel sheet
+{:.caption}
 ## Export to PDF
 
 SfDataGrid control provides support to Export its content into a PDF file. You can export Grouping, Sorting, Filtering, Paging, Summaries and Details view into PDF. 
@@ -667,7 +667,7 @@ The following assemblies are added along with default DLL’s.
 
 The following extension methods present in the Syncfusion.UI.Xaml.Grid.converter namespace is used to export the SfDataGrid into PDF_._
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -702,7 +702,7 @@ You can customize how the SfDataGrid content is exported into PDF by using vario
 
 PdfExportingOptions has the following properties and delegate handlers.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -879,15 +879,15 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Exporting SfDataGrid into PDF using the ExportToPdf method._
-
+Exporting SfDataGrid into PDF using the ExportToPdf method.
+{:.caption}
 The following screenshot displays the exported Pdf file.
 
 ![](Features_images/Features_img211.png)
 
 
-_Exported Pdf file_
-
+Exported Pdf file
+{:.caption}
 ### Delegate and Events
 
 Export to Pdf provides the following delegate handler to customize the exporting behavior.
@@ -902,7 +902,7 @@ Export to Pdf provides the following delegate handler to customize the exporting
 
 This delegate handler allows you to customize the styles for Header, Records, Table Summary, Group Summary and Caption Summary rows. It is invoked for each row types. It includes the GridPdfExportingEventArgs class that contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -990,23 +990,23 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Cell styles based on the cell type using GridPdfExportingEventHandler._
-
+Cell styles based on the cell type using GridPdfExportingEventHandler.
+{:.caption}
 The following screenshot displays the exported Pdf file.
 
 ![](Features_images/Features_img213.png)
 
 
 
-_Exported Pdf file_
-
+Exported Pdf file
+{:.caption}
 
 
 ##### GridCellPdfExporting Eventhandler
 
 This delegate handler allows you to handle or customize each cell in Pdf. It is invoked while exporting each cell. It includes the GridCellPdfExportingEventArgs class that contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1115,21 +1115,21 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Customized PDFGridCell using GridCellPdfExportingEventhandler._
-
+Customized PDFGridCell using GridCellPdfExportingEventhandler.
+{:.caption}
 The following screenshot displays the exported PDF file.
 
 ![](Features_images/Features_img215.png)
 
 
 
-_Exported PDF file_
-
+Exported PDF file
+{:.caption}
 #### ChildGridPdfExportingEventhandler
 
 This handler allows you to skip or customize the exporting of DetailsViewGrid. It is invoked for each details view while exporting. It includes the ChildGridPdfExportingEventArgs that includes the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1210,7 +1210,8 @@ The following screenshot displays the output for DataGrid.
 
 
 
-_Skipped and Customized exporting of Details View Grid using ChildGridExportingHandler._
+Skipped and Customized exporting of Details View Grid using ChildGridExportingHandler.
+{:.caption}
 
 The following screenshot displays the exported PDF file.
 
@@ -1222,13 +1223,13 @@ The following screenshot displays the exported PDF file.
 
 
 
-_Exported PDF file_
-
+Exported PDF file
+{:.caption}
 ### PdfHeaderFooterEventhandler
 
 This handler allows you to add the Header and Footer to each page of exported PDF file. It is invoked only once while exporting SfDataGrid into PdfDocument using ExportToPdf method and it is not invoked while using ExportToPdfGrid method. It includes the PdfHeaderFooterEventArgs that contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1298,8 +1299,8 @@ The following screenshot displays you the exported PDF file.
 
 
 
-_Exported PDF file_
-
+Exported PDF file
+{:.caption}
 ## How To
 
 ### How to embedded fonts in PDF export
@@ -1411,5 +1412,5 @@ The following screenshot displays the output for the above code,
 
 
 
-_Changing Page orientation to Landscape_
-
+Changing Page orientation to Landscape
+{:.caption}

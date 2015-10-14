@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Type
+title: Layout Type | TabControlExt | wpf | Syncfusion
 description: layout type
 platform: wpf
 control: TabControlExt
@@ -19,24 +19,19 @@ You can set the layout type for the TabControlExt control by using the TabItemLa
 
 Here is the code snippet to set the layout type as "MultiLine".
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabcontrolExt  -->
 
 <syncfusion:TabControlExt Name="tabControlExt" TabItemLayout="MultiLine">
-
-
 
     <!-- Adding TabItemExt -->
 
     <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
     </syncfusion:TabItemExt>
-
-
 
     <!-- Adding TabItemExt -->
 
@@ -45,58 +40,44 @@ Here is the code snippet to set the layout type as "MultiLine".
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
-
 
 // Creating instance of the TabControlExt control
 
 TabControlExt tabControlExt = new TabControlExt();
 
-
-
 //Creating the instance of StackPanel
 
 StackPanel stackPanel = new StackPanel();
-
-
 
 //Creating instance of the TabItemExt 
 
 TabItemExt tabItemExt1 = new TabItemExt();
 
-
-
 // Setting header of the TabItemExt
 
 tabItemExt1.Header = "TabItemExt1";
-
-
 
 //Adding TabItemExt to TabControlExt
 
 tabControlExt.Items.Add(tabItemExt1);            
 
-
-
 // Changing the Visibility of Scroll button 
 
 tabControlExt.TabItemLayout = TabItemLayoutType.MultiLine;  
 
-
-
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Layout-Type_images/Layout-Type_img1.jpeg)
-
-
-
 
 
 ## TabItemLayoutChanged Event
@@ -107,8 +88,6 @@ The following code snippet illustrates handling the TabItemLayoutChanged event.
 
 
 {% highlight c# %}
-
-
 
 /// <summary>
 
@@ -137,4 +116,3 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Hidden;
 
 
 In the above example, when the TabItemLayoutType property is set to MultiLine, the Tab Scroll button is hidden, as it is no longer needed to view the contents.
-

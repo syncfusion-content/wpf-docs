@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Value Chooser
+title: Pivot Value Chooser| PivotGrid | Wpf | Syncfusion
 description: Pivot Value Chooser
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Pivot Value Chooser
+# Pivot Value Chooser
 
 The Pivot Value Chooser is used to list all the pivot fields in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a pivot calculation and add it to the pivot grid, drag and drop the grid fields, and rearrange the calculation column in the PivotGrid control at run time.
 
@@ -19,19 +19,20 @@ This feature enables users to show or hide particular pivot calculations in the 
 
 
 
-_Pivot Grid with Pivot Value Chooser_
+Pivot Grid with Pivot Value Chooser
+{:.caption}
 
 ### Properties
 
-_Properties Table_
+
 
 <table>
 <tr>
 <td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+Property</td><td>
+Description}</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 ShowPivotValueChooser</td><td>
@@ -47,31 +48,32 @@ ObservableCollectionOf type PivotComputationInfo</td></tr>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 A sample of this feature can be found in the following location:
 
 {InstalledDrive}:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\BI\Wpf\PivotAnalysis.Wpf\Samples\Product Showcase\RowPivotsOnly Demo
 
-### Showing the Pivot Value Chooser in an Application
+## Showing the Pivot Value Chooser in an Application
 
 Users can show or hide the Pivot Value Chooser by setting the ShowPivotValueChooser property to true or false, respectively. The RowPivotsOnly mode must be enabled in the pivot grid for this feature to function.
 
-_Note: PossiblePivotCalculations is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the PivotGrid control’s ItemSource._
+N> PossiblePivotCalculations is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the PivotGrid control’s ItemSource.
 
-#### Showing the Pivot Value Chooser with Possible Pivot Calculations
+### Showing the Pivot Value Chooser with Possible Pivot Calculations
 
+{% tabs %}
 {% highlight C# %}  
 
 
 
 ObservableCollection<PivotComputationInfo> possibleComputations = new ObservableCollection<PivotComputationInfo>()
 
-            {
+{
 
-                //Add computation collection.
+//Add computation collection.
 
-            };
+};
 
 this.pivotGridControl1.PossiblePivotCalculations = possibleComputations;
 
@@ -98,9 +100,11 @@ Me.pivotGridControl1.RowPivotsOnly = True
 Me.pivotGridControl1.ShowPivotValueChooser = True
 
 {% endhighlight %} 
+{% endtabs %}
 
-#### Showing Pivot Value Chooser without Possible Pivot Calculations
+### Showing Pivot Value Chooser without Possible Pivot Calculations
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -120,6 +124,6 @@ Me.pivotGridControl1.RowPivotsOnly = True
 Me.pivotGridControl1.ShowPivotValueChooser = True 
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 

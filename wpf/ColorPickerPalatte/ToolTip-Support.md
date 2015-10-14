@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip-Support
+title: ToolTip Support| ColorPickerPalette | Wpf | Syncfusion
 description: tooltip support
 platform: wpf
 control: ColorPickerPalette
@@ -13,7 +13,7 @@ The ToolTip is a small hover box with information about the item on which mouse 
 
 For Example: The color can be applied to background or text. The variant color percentage difference details can then be obtained from the base colors.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 You can use ToolTip support to know the color name and its variant details.
 
@@ -25,7 +25,7 @@ You can use ToolTip support to know the color name and its variant details.
 
 
 
-## Sample Link
+### Sample Link
 
 To view samples: 
 

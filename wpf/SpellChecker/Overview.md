@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | SpellChecker | wpf | Syncfusion
 description: overview
 platform: wpf
 control: SpellChecker
@@ -19,14 +19,8 @@ You can use Spell Checker to correct spelling mistakes for any input texts.
 
 Spell Checking engine contains in-built dialog for checking spellings.
 
-
-
 ![](Overview_images/Overview_img1.png)
 
-
-
 * The Input Text is the text given as input to the Spell Checker to checkthe spellings. The word which is spell-checked will be highlighted in red color.
+
 * The Suggestions List is the list box which will show the suggestions for the currently spell -checked word.
-
-
-

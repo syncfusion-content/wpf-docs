@@ -1,31 +1,25 @@
 ---
 layout: post
-title: Clear-StatePersistance-Entries
+title: Clear StatePersistance Entries | DockingManager | wpf | Syncfusion
 description:  clear statepersistance entries
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-##  Clear StatePersistance Entries
+#  Clear StatePersistance Entries
 
 In StatePersistence of DockingManager we have five ways to store the state. Similarly, we have ways to clear those entries as given below
 
-
-
-{% highlight html %}
+{% highlight c# %}
 
 //Deletes the Registry Entries.
 
 DockingManager.DeleteDockState();
 
-
-
 //Deletes the persistance file in Isolatedstorage location.
 
 DockingManager.DeleteInternalIsolatedStorage();
-
-
 
 //Deletes the specified state file.
 
@@ -33,7 +27,7 @@ DockingManager.DeleteDockState(filename);
 
 {% endhighlight %}
 
-Refer Also
+#### Refer Also
 
 State Persistence in DockingManager
 

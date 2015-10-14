@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| ColorPickerPalette | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: ColorPickerPalette
@@ -25,6 +25,7 @@ The various elements of the ColorPickerPalette are illustrated in the following 
 * The Recently User Colors stores the Colors that are recently selected.
 * The More Colors Option provides wide range of color in addition to colors in the palette.
 * The Theme Variant Colors represents the Theme colors with variant.
+
 ## Add ColorPickerPalette to an Application
 
 
@@ -52,9 +53,9 @@ The following code example illustrates how to add the ColorPickerPalette control
 
 
 
-            ColorPickerPalette colorpicker = new ColorPickerPalette();
+ColorPickerPalette colorpicker = new ColorPickerPalette();
 
-           this.LayoutRoot.Children.Add(colorpicker);
+this.LayoutRoot.Children.Add(colorpicker);
 {% endhighlight %}
 
 
@@ -86,7 +87,7 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
    ![](Getting-Started_images/Getting-Started_img3.png)
    
-   {:.prettyprint}
+   
 
 
 

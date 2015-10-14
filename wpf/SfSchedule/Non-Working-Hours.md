@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Non-Working-Hours
+title: Non Working Hours| SfSchedule | Wpf | Syncfusion
 description: non-working hours
 platform: wpf
 control: SfSchedule
@@ -28,23 +28,24 @@ The starting and ending work hour of a day is set using the WorkStartHour and Wo
 ## Non-Working Hour Brush
 
 The Non-Working hour’s background brush can be customized using the NonWorkingHourBrush property. 
+{% tabs %}
 {% highlight html %}
 
 
 
-        <Grid Background="White">
+<Grid Background="White">
 
-            <Schedule:SfSchedule IsHighLightWorkingHours="True" 
+<Schedule:SfSchedule IsHighLightWorkingHours="True" 
 
-                             NonWorkingDays="Sunday,Saturday" 
+NonWorkingDays="Sunday,Saturday" 
 
-                             WorkStartHour="9" 
+WorkStartHour="9" 
 
-                             WorkEndHour="18" 
+WorkEndHour="18" 
 
-                             ScheduleType="Week"  NonWorkingHourBrush="LightBlue"/>
+ScheduleType="Week"  NonWorkingHourBrush="LightBlue"/>
 
-        </Grid>
+</Grid>
 
 
 
@@ -54,25 +55,25 @@ The Non-Working hour’s background brush can be customized using the NonWorking
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.IsHighLightWorkingHours = true;
+schedule.IsHighLightWorkingHours = true;
 
-            schedule.ScheduleType = ScheduleType.Week;
+schedule.ScheduleType = ScheduleType.Week;
 
-            schedule.WorkStartHour = 9;
+schedule.WorkStartHour = 9;
 
-            schedule.WorkEndHour = 18;
+schedule.WorkEndHour = 18;
 
-            schedule.NonWorkingDays = "Sunday,Saturday";
+schedule.NonWorkingDays = "Sunday,Saturday";
 
-            schedule.NonWorkingHourBrush = new SolidColorBrush(Colors.LightBlue);
+schedule.NonWorkingHourBrush = new SolidColorBrush(Colors.LightBlue);
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Non-Working-Hours_images/Non-Working-Hours_img1.png)
 

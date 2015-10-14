@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Saving-Excel-Workbook
+title: Saving Excel Workbook | XlsIO | WPF | Syncfusion
 description: saving excel workbook
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -17,11 +17,11 @@ The following code
 
 
 
- example shows how to save a workbook to disk, as a file in Windows Forms, WPF, Web applications. To know more about how to open a workbook as a file, refer to Open Workbook as File section.
+example shows how to save a workbook to disk, as a file in Windows Forms, WPF, Web applications. To know more about how to open a workbook as a file, refer to Open Workbook as File section.
 
-{% highlight C# %}
-
-
+{% tabs %}
+ 
+{% highlight C# %}  
 
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
@@ -34,12 +34,13 @@ workbook.SaveAs("Sample.xlsx", Response, ExcelDownloadType.Open);
 
 //Streams the workbook to the client browser and prompts for Save dialog box.
 workbook.SaveAs("Sample.xlsx", ExcelSaveType.SaveAsXLS, Response, ExcelDownloadType.PromptDialog);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
 
+{% highlight vbnet %} 
 
 'Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013
@@ -52,16 +53,19 @@ workbook.SaveAs("Sample.xlsx", Response, ExcelDownloadType.Open)
 
 'Streams the workbook to the client browser.
 workbook.SaveAs("Sample.xlsx", ExcelSaveType.SaveAsXLS, Response, ExcelDownloadType.PromptDialog)
+
 {% endhighlight %}
+{% endtabs %}
 
 ##Saving Workbook in WinRT
 
 The following code example shows how to save a workbook as a file in WinRT application. To know about how to open a workbook in WinRT application, refer to Open Workbook as File section.
 
- {% highlight C# %}
 
+{% tabs %}
+ 
 
-
+{% highlight C# %}  
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
 
@@ -77,12 +81,14 @@ StorageFile storageFile = await savePicker.PickSaveFileAsync();
 
 //Saves changes to the specified storage file.
 await workbook.SaveAsAsync(storageFile);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
 
+
+{% highlight vbnet %} 
 
 'Sets workbook version.
 
@@ -106,13 +112,18 @@ Dim storageFile As StorageFile = Await savePicker.PickSaveFileAsync()
 
 Await workbook.SaveAsAsync(storageFile)
 
-Saving Workbook in Windows Phone 8
 {% endhighlight %}
+{% endtabs %}
+
+##Saving Workbook in Windows Phone 8
+
 The following code example shows how to save a workbook as a file in Windows Phone 8 application. To know more about how to open a workbook in Windows Phone 8 application, refer to Open Workbook as File section.
 
- {% highlight C# %}
 
 
+{% tabs %}
+
+{% highlight C# %}  
 
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
@@ -125,12 +136,12 @@ StorageFile storageFile = await local.CreateFileAsync("CreateSpreadsheet.xlsx", 
 
 //Saves changes to the specified storage file.
 await workbook.SaveAsAsync(storageFile);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
-
+{% highlight vbnet %} 
 
 'Sets workbook version.
 
@@ -147,41 +158,48 @@ Dim storageFile As StorageFile = Await local.CreateFileAsync("CreateSpreadsheet.
 'Saves changes to the specified storage file.
 
 Await workbook.SaveAsAsync(storageFile)
+
 {% endhighlight %}
-For more information on overloads of the Workbook's Save method, refer to Class Reference in the top right of the
- online [documentation](http://docs.syncfusion.com/winrt/xlsio/introduction-to-essential-xlsio).
+{% endtabs %}
+
+For more information on overloads of the Workbook's Save method, refer to Class Reference in the top right of the online [documentation](http://docs.syncfusion.com/windowsforms/xlsio).
 
 ## Save Workbook as a Stream 
 
 The following code example shows how to save a workbook as a stream in Windows Forms, WPF, Web applications. To know about how to open a workbook as a stream, refer to Open Workbook as Stream section.
+
+
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
 
 //Saves the workbook to stream.
 workbook.SaveAs(stream, ExcelSaveType.SaveAsTemplate);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
-
+{% highlight vbnet %} 
 
 'Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013
 
 'Saves the workbook to a stream.
 workbook.SaveAs(stream, ExcelSaveType.SaveAsTemplate)
+
 {% endhighlight %}
+{% endtabs %}
+
 ## Save an Encrypted Workbook
 
 This section illustrates how to save an encrypted document in XlsIO.
 
-##Encryption
+Encryption
 
 Encryption is a method for protecting a workbook with a password that converts it into the form that cannot be understood and restricts anyone anonymous from accessing the data in a document.
 
@@ -197,27 +215,30 @@ There are two different passwords to encrypt a document.
 
 
 
-![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img2.png)
+   ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img2.png)
 
 
 
 2. Password to Modify-This password does not encrypt and is only meant to give specific users permission to edit workbook data and save changes to the file.
 
-![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img3.png)
+   ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img3.png)
+
+
 
 
 
 N> Password protection of a workbook file is different from the workbook structure and window protection that you can set in the Protect Workbook dialog box.
 
-1. Read-Only Recommended-This option prompts read-only recommendation when you open the file to remind that the data is important and should not be changed. This can be set with or without a password to open the file.
+
+
+
+
+Read-Only Recommended-This option prompts read-only recommendation when you open the file to remind that the data is important and should not be changed. This can be set with or without a password to open the file.
 
 XlsIO allows you to set encryption with all the above options through the IWorkbook interface. You can set the password for encryption through the PasswordToOpen property. The following code example illustrates how to encrypt an Excel workbook with password to open, modify, and set the read-only option.
 
-
- {% highlight C# %}
-
-
-
+{% tabs %}
+{% highlight C# %}  
 
 // Encryption:
 
@@ -236,12 +257,12 @@ workbook.SetWriteProtectionPassword("modify_password");
 // Sets the workbook as read-only.
 
 workbook.ReadOnlyRecommended = true;
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
-
+{% highlight vbnet %} 
 
 ' Encryption:
 
@@ -262,6 +283,7 @@ workbook.SetWriteProtectionPassword("modify_password")
 workbook.ReadOnlyRecommended= true
 
 {% endhighlight %}
+{% endtabs %}
 
 Now, the encrypted workbook can be saved. Refer to Saving Excel Workbook section for more details. To know more on how to open an encrypted document, refer to Open Encrypted Workbook section.
 
@@ -271,7 +293,7 @@ N> Essential XlsIO supports default encryption of the type "Office97-2000 compat
 
 
 
-###Encryption and Decryption for Excel 97to2003
+##Encryption and Decryption for Excel 97to2003
 
 Parse and serialization support of encrypted files are available in MS Excel 97 onwards. The type of encryption used in Excel 2010/2013 is Agile encryption and MS Excel 2007 with SP2 can open MS Excel 2010 encrypted files as well.
 
@@ -279,8 +301,10 @@ Parse and serialization support of encrypted files are available in MS Excel 97 
 
 The following is the code example to save a document as Comma Separated Value (CSV) to disk. To know more about how to open a CSV file, refer to Open a CSV File section.
 
-{% highlight C# %}
 
+{% tabs %}
+ 
+{% highlight C# %}  
 
 
 //Saves the CSV file to disk.
@@ -291,12 +315,12 @@ workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.Open, ExcelHttpCo
 
 //Streams the CSV file to the client browser and prompts Save dialog box.
 workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.PromptDialog, ExcelHttpContentType.CSV);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
-
+{% highlight vbnet %} 
 
 'Saves the CSV file to disk.
 workbook.SaveAs("Sample.csv", ",")
@@ -306,15 +330,19 @@ workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.Open, ExcelHttpCo
 
 'Streams the CSV file to the client browser and prompts Save dialog box.
 workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.PromptDialog, ExcelHttpContentType.CSV)
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Save Workbook as HTML 
 
 The following is the code example to save the document as HTML.
- {% highlight C# %}
 
 
 
+{% tabs %}
+
+{% highlight C# %}  
 
 //Saves the workbook to a stream.
 workbook.SaveAsHTML(stream);
@@ -324,12 +352,12 @@ workbook.SaveAsHTML(stream, HtmlSaveOptions.Default);
 
 //Saves the workbook as HTML file with options.
 workbook.SaveAsHTML("Sample.html", HtmlSaveOptions.Default);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
-
+{% highlight vbnet %} 
 
 'Saves the workbook to a stream.
 workbook.SaveAsHTML(stream)
@@ -339,15 +367,19 @@ workbook.SaveAsHTML(stream, HtmlSaveOptions.Default)
 
 'Saves the workbook as a HTML file with options.
 workbook.SaveAsHTML("Sample.html", HtmlSaveOptions.Default)
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Save Workbook as XML
 
 The following code example illustrates how to save the document as XML. To know more about how to open a HTML file, refer to Open an XML Workbook section.
 
-{% highlight C# %}
 
+{% tabs %}
+ 
 
+{% highlight C# %}  
 
 //Saves the workbook to a stream with save options.
 workbook.SaveAsXML(stream, ExcelXmlSaveType.MSExcel);
@@ -357,12 +389,12 @@ workbook.SaveAsXML("Sample.xml", ExcelXmlSaveType.MSExcel);
 
 //Saves the workbook to XML writer with save options.
 workbook.SaveAsXml(xmlWriter, ExcelXmlSaveType.MSExcel);
+
 {% endhighlight %}
 
-{% highlight vbnet %}
 
 
-
+{% highlight vbnet %} 
 
 'Saves the workbook to stream with save options.
 workbook.SaveAsXML(stream, ExcelXmlSaveType.MSExcel)
@@ -372,23 +404,26 @@ workbook.SaveAsXML("Sample.xml", ExcelXmlSaveType.MSExcel)
 
 'Saves the workbook to XML writer with save options.
 workbook.SaveAsXml(xmlWriter, ExcelXmlSaveType.MSExcel)
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Save Workbook with Reduced size
 
 Essential XlsIO uses the default compression technique to compresses files with .NET compression. A new compression technique has been implemented that considerably reduces the size of the compressed XLSX files.
 
-Use Case Scenarios
+###Use Case Scenarios
 
 The reduced size of the compressed file results in reduced data transfer between applications.
 
 How to set the Compression level:
 
 The Compression level can be set at the IApplication interface. This sets the level for all the workbooks created by using the same instance of Excel Engine.
- {% highlight C# %}
 
 
+{% tabs %}
 
+{% highlight C# %} 
 
 ExcelEngine excelEngine = new ExcelEngine();
 
@@ -415,12 +450,11 @@ workbook.Close();
 
 //Disposes the Workbook.
 excelEngine.Dispose();
-{% endhighlight %}
 
-{% highlight vbnet %}
-
+ {% endhighlight %}
 
 
+{% highlight vbnet %} 
 
 Dim excelEngine As New ExcelEngine()
 
@@ -453,8 +487,9 @@ workbook.Close()
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
-_Other Compression Options_
+Other Compression Options
 
 <table>
 <tr>

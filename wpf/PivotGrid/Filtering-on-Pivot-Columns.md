@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering on Pivot Columns
+title: Filtering on Pivot Columns| PivotGrid | Wpf | Syncfusion
 description: Filtering on Pivot Columns
 platform: wpf
 control: PivotGrid
@@ -17,14 +17,14 @@ Pivot Grid allows you to restrict the display of records by using a mechanism ca
 
 The following methods are used to perform filtering on Pivot Columns.
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Prototype**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 ApplySavedValueFilter</td><td>
@@ -63,17 +63,17 @@ This method will recompute all summaries, ignoring any summary row whose�
 </table>
 
 
-#### Properties
+### Properties
 
 The following properties are used to perform filtering on Pivot Columns.
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowFilter</td><td>
@@ -86,7 +86,7 @@ Specifies whether the PivotGridControl is used to pivot only rows, or both 
 
 
 
-#### Events
+### Events
 
 The following event is used to perform filtering on Pivot Columns.
 
@@ -95,9 +95,9 @@ Events Table
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 FilterActionCompleted</td><td>
@@ -147,8 +147,9 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo(){FieldName =
 
 
 Filtering on Pivot Columns
+{:.caption}
 
-#### Sample Link
+### Sample Link
 
 {InstallationDrive}:\Users\{UserName}\AppData\Local\Syncfusion\EssentialStudio\11.1.0.9\Wpf \PivotAnalysis.Wpf\Product Showcase\RowPivotsOnly Demo
 

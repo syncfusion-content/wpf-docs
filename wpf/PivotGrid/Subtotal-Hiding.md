@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Subtotal Hiding
+title: Subtotal Hiding| | Wpf | Syncfusion
 description: Subtotal Hiding
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Subtotal Hiding
+# Subtotal Hiding
 
 The sub-total hiding feature is used to show or hide sub-totals in PivotGrid. This feature enables you to have an abstract view of the data, in case of a larger data table by hiding sub-totals using the ShowSubTotals__property.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 When the user has more computational fields with sub-totals for each group in PivotGrid, as shown here, it can be difficult to view all the data. In such cases, you can hide the sub-totals and make it visible when required.
 
@@ -25,17 +25,17 @@ The following screenshot shows the PivotGrid with the sub-totals shown and hidde
 
 
 
-#### Properties
+### Properties
 
-_Properties_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value it Accepts</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 ShowSubTotals</td><td>
@@ -57,18 +57,18 @@ Boolean</td></tr>
 </table>
 
 
-#### Methods
+### Methods
 
-_Methods_
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 SubTotalsRendering</th><th>
@@ -86,15 +86,16 @@ Void</th></tr>
 </table>
 
 
-#### Adding sub-total hiding to an application 
+### Adding sub-total hiding to an application 
 
 The following code example shows how to set values for the ShowSubTotals property:
 
-#### To hide sub-totals
+### To hide sub-totals
 
 In XAML,
 
 To hide sub-totals, set the ShowSubTotals property as False as illustrated here.
+
 
 {% highlight xml %} 
 
@@ -116,6 +117,7 @@ Through Code Behind,
 
 To hide sub-totals, set the ShowSubTotals property as False in the MainWindow() constructor.
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -146,15 +148,15 @@ End Sub
 
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Features_images/Features_img29.png)
 
 
 
-####To hide sub-totals for columns
+To hide sub-totals for columns
 
-#### In XAML,
+ In XAML,
 
 To hide sub-totals, set the ShowColumnSubTotals property as False as illustrated here.
 
@@ -174,10 +176,11 @@ ShowColumnSubTotals="False" ItemSource="{Binding Source={StaticResource data}}" 
 
 {% endhighlight %} 
 
-#### Through Code Behind,
+### Through Code Behind,
 
 To hide sub-totals for columns, set the ShowColumnSubTotals property to False in MainWindow() constructor.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -207,16 +210,17 @@ Public Sub MainWindow()
 End Sub
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![](Features_images/Features_img30.png)
 
 
+ To hide sub-totals for rows:
 
-#### To hide sub-totals for rows:
-
-#### In XAML,
+In XAML,
 
 To hide sub-totals, set the ShowRowSubTotals property as False as illustrated here.
+
 
 {% highlight xml %} 
 
@@ -234,10 +238,11 @@ ShowRowSubTotals="False" ItemSource="{Binding Source={StaticResource data}}" >
 
 {% endhighlight %} 
 
-#### Through Code Behind
+### Through Code Behind
 
 To hide sub-totals for rows, set the ShowRowSubTotals property as False in the MainWindow() constructor.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -267,6 +272,7 @@ Public Sub MainWindow()
 End Sub
 
 {% endhighlight %} 
+{% endtabs %}
 
 Subtotal Hiding
 

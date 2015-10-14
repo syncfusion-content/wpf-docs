@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting| SfChart | Wpf | Syncfusion
 description: exporting
 platform: wpf
 control: SfChart
@@ -22,7 +22,7 @@ You can export the SfChart as image that is useful for many applications. The im
 
 The Save method is used for exporting the chart as Image. The following are the overloading methods.
 
-Overloading Methods
+### Overloading Methods
 
 <table>
 <tr>
@@ -46,33 +46,34 @@ Export the chart image using the stream and its corresponding encoder.</td></tr>
 
 The following code example illustrates the chart exporting feature.
 
+{% tabs %}
 {% highlight xml %}
 
 
 
 <syncfusion:SfChart x:Name="Chart">
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis  Header="Company Name"/>
+<syncfusion:CategoryAxis  Header="Company Name"/>
 
-            </syncfusion:SfChart.PrimaryAxis>
-
-
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
-
-            </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-            <syncfusion:LineSeries  Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
+
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-        </syncfusion:SfChart>
+<syncfusion:LineSeries  Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+
+
+
+</syncfusion:SfChart>
 
 
 
@@ -93,3 +94,4 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 
 {% endhighlight %}
+{% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering
+title: Filtering| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: filtering
 platform: wpf
 control: SfMultiColumnDropDownControl
@@ -36,13 +36,13 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
-                                           AllowIncrementalFiltering="True"
+AllowIncrementalFiltering="True"
 
-                                           DisplayMember="Name" 
+DisplayMember="Name" 
 
-                                           ValueMember="Designation "                                                     
+ValueMember="Designation "                                                     
 
-                                           ItemsSource="{Binding GridItemSource}">
+ItemsSource="{Binding GridItemSource}">
 
 
 
@@ -62,21 +62,19 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
+
 In above code example Name property is defined as DisplayMember. Therefore, when you start typing on the Editor, it filters the items that are in the Name Colum. The following screenshot displays the output for IncrementalFiltering.
 ![](Features_images/Features_img9.png)
 
 
 
-### How To
+## How To
 
-#### How to Search MultipleColumn in SfMultiColumnDropDownControl?
+### How to Search MultipleColumn in SfMultiColumnDropDownControl?
 
 By default, SfMultiColumnDropDownControl enables you to filter text based on the Display Member. However, you can override the FilterRecord method to search the MultipleColumn in SfMultiColumnDropDownControl. To achieve this, refer to the following code example.
 
 {% highlight C# %}
-
-
-
 
 
 class CustomMultiColumnControl:SfMultiColumnDropDownControl
@@ -195,6 +193,7 @@ class CustomMultiColumnControl:SfMultiColumnDropDownControl
 
 }
 {% endhighlight %}
+
 Here, Name is defined as DisplayMember. But it also searches the match case from the City__Column and displays the filtered item as illustrated in the following screenshot.
 
 ![](Features_images/Features_img10.png)

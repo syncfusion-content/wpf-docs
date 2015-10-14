@@ -1,29 +1,26 @@
 ---
 layout: post
-title: Top Summary Layout
+title: Top Summary Layout| PivotGrid | Wpf | Syncfusion
 description: Top Summary Layout
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Top Summary Layout
+# Top Summary Layout
 
 This feature provides support to display the summary data of each PivotItem at the top and at the beginning of value cells. 
 
-### Tables for Properties, Methods and Events
 
-### Properties
-
-_Property Table_
+###Property Table
 
 <table>
 <tr>
-<td>
- {{ '**Property**' | markdownify }}</td><td>
- {{ '**Description**' | markdownify }}</td><td>
- {{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Default Value**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Data Type</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 GridLayout </td><td>
@@ -38,6 +35,7 @@ To show the summary at the top of the Pivot Grid value cells, you can set the bu
 
 The following code shows how to set the GridLayout property. You can also set the value using XAML, C# or VB language.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -61,18 +59,20 @@ this.pivotGrid.GridLayout = GridLayout.TopSummary;
 
 Me.pivotGrid.GridLayout = GridLayout.TopSummary
 
-{% endhighlight %} 
+{% endhighlight %}
+{% endtabs %} 
 
 The following image illustrates a Pivot Grid which is set show the summary data at the top.  
 
 ![](Features_images/Features_img58.png)
 
 
-_Summary data at the top_
+Summary data at the top
+{:.caption}
 
-#### Sample Link
+### Sample Link
 
-Windows 8/7/Vista
+#### Windows 8/7/Vista
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\BI\WPF\PivotAnalysis.WPF\ProductShowCase\PivotCustomization Demo
 

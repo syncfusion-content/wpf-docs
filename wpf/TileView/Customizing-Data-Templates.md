@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Data-Templates
+title: Customizing Data Templates | TileView | wpf | Syncfusion
 description: customizing data templates
 platform: wpf
 control: TileView Control
@@ -13,7 +13,7 @@ Data template can be customized for items and headers of the control. This secti
 
 ## Item Template 
 
-You can customize how a business object is displayed as Tileview using the _ItemTemplate_ of _TileViewControl_. The following code example shows the usage of _ItemTemplate_.
+You can customize how a business object is displayed as Tileview using the ItemTemplate of TileViewControl. The following code example shows the usage of ItemTemplate.
 
 
 {% highlight xml %}
@@ -120,7 +120,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 
 
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -177,7 +177,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 
         </DataTemplate>
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -217,7 +217,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 
         </syncfusion:TileViewControl>
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -262,7 +262,7 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
         </DataTemplate>
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -282,7 +282,7 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
         </syncfusion:TileViewControl>
 
    ~~~
-   {:.prettyprint}
+   
 
 
 

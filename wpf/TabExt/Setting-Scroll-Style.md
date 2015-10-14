@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Scroll-Style
+title: Setting Scroll Style | TabControlExt | wpf | Syncfusion
 description: setting scroll style
 platform: wpf
 control: TabControlExt
@@ -20,8 +20,9 @@ The following Tab Scroll styles supported by the TabControlExt control.
 
 The following code snippet illustrates how to set the Tab Scroll style as "Extended".
 
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding TabControlExt -->
@@ -100,6 +101,9 @@ tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
 stackPanel.Children.Add(tabControlExt); 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 
 ![](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg)
 
@@ -115,8 +119,6 @@ When the TabControlExt has many Tab Items, it is complicated to scroll the Tab I
 
 
 {% highlight c# %}
-
-
 
 /// <summary>
 
@@ -142,9 +144,13 @@ tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 
 In the above example, the Tab Item Size Mode is set to "ShrinkToFit" when the Tab Scroll style is switched to the Extended mode.
 
+{% seealso %}
+
+Tab Scrolling Time
+
+Tab Scroll Button
+
+{% endseealso %}
 
 
-See Also
-
-Tab Scrolling Time, Tab Scroll Button
 

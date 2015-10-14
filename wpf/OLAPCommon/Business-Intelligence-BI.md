@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Business-Intelligence-BI
+title: Business Intelligence BI| OLAPCommon  | Wpf | Syncfusion
 description: business intelligence (bi)
 platform: wpf
 control: OLAPCommon 

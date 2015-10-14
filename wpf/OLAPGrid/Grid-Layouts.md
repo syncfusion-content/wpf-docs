@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Layouts
+title: Grid Layouts| OLAP Grid | Wpf | Syncfusion
 description: grid layouts
 platform: wpf
 control: OLAP Grid
@@ -26,6 +26,7 @@ Normal Layout is the default layout of OlapGrid in which the summary cells are p
 
 ![Grid Normal](Grid-Layouts_images/Grid-Layouts_img1.png)
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -54,7 +55,7 @@ Me.OlapGrid1.Layout = GridLayout.Normal
 
     {% endhighlight %}
 
-
+{% endtabs %}
 
 
 
@@ -64,6 +65,7 @@ In the Excel-like layout, the summary cells are positioned at the bottom and the
 
 ![](Grid-Layouts_images/Grid-Layouts_img2.png)
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -92,7 +94,7 @@ Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 
@@ -102,6 +104,7 @@ This kind of layout is used to display member properties along with dimension me
 
 ![](Grid-Layouts_images/Grid-Layouts_img3.png)
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -131,7 +134,7 @@ Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 ## Normal Top Summary Layout
@@ -140,6 +143,7 @@ In Normal Top Summary layout, the summary cells are positioned at the top of eac
 
 ![Grid Normal Top](Grid-Layouts_images/Grid-Layouts_img4.png)
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -168,7 +172,7 @@ Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
     {% endhighlight %}
 
-
+{% endtabs %}
 
 
 
@@ -178,6 +182,7 @@ In this kind of layout, the summary cells were made hidden and the child member 
 
 ![Grid No Summaries](Grid-Layouts_images/Grid-Layouts_img5.png)
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -207,7 +212,7 @@ Me.OlapGrid1.Layout = GridLayout.NoSummaries
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind-the-content-of-the-RichTextBoxAdv-By-Using-MVVM
+title: Bind the content of the RichTextBoxAdv By Using MVVM| RichTextBoxAdv | Wpf | Syncfusion
 description: bind the content of the richtextboxadv by using mvvm
 platform: wpf
 control: RichTextBoxAdv
@@ -15,6 +15,7 @@ You can explicitly update the XAMLText or HTMLText property to view model for co
 
 The following code example illustrates defining MVVM extension for the XAMLText property of the RichTextBoxAdv control.
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -166,6 +167,7 @@ DescriptionXaml = "<RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/wi
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Sample
 

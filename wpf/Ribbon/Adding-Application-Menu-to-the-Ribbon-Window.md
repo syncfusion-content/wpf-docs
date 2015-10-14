@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Application-Menu-to-the-Ribbon-Window
+title: Adding Application Menu to the Ribbon Window | Ribbon | WPF | Syncfusion
 description: adding application menu to the ribbon window
 platform: wpf
 control: Ribbon
@@ -60,5 +60,5 @@ Image is added to application menu button by using the ApplicationButtonImage pr
 
 ## See Also
 
-Adding Items to the Application Menu, Adding Application Items to the Application Menu
+[Adding Items to the Application Menu](http://help.syncfusion.com/wpf/ribbon/adding-items-to-the-application-menu), [Adding Application Items to the Application Menu](http://help.syncfusion.com/wpf/ribbon/adding-items-to-the-application-menu)
 

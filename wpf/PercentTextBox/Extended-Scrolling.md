@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extended-Scrolling
+title: Extended Scrolling| PercentTextBox  | Wpf | Syncfusion
 description: extended scrolling
 platform: wpf
 control: PercentTextBox 
@@ -18,13 +18,14 @@ The EnableExtendedScrolling property is used to change the values based on the c
 
 We have to set the EnableExtendedScrolling property either in XAML or the code file.
 
-<table>
-<tr>
-<td colspan = "2">
-{% highlight xml %}  EnableExtendedScrolling ="True"{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %} control.EnableExtendedScrolling = true;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %} 
+ EnableExtendedScrolling ="True"
+ {% endhighlight %}
+
+{% highlight c# %} 
+control.EnableExtendedScrolling = true;
+{% endhighlight %}
+{% endtabs %}
 
 

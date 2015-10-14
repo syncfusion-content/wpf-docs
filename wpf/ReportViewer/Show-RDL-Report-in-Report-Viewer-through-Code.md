@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Show-RDL-Report-in-Report-Viewer-through-Code
+title: Show RDL Report in Report Viewer through Code | ReportViewer | WPF | Syncfusion
 description: show rdl report in report viewer through code
 platform: wpf
-control: Report Viewer
+control: ReportViewer
 documentation: ug
 ---
 
@@ -16,22 +16,19 @@ You can create a simple sample through code with the Syncfusion WPF ReportViewer
    
    ![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img1.png)
 
+   Adding References
+   {:.caption}
 
-
-   _Note: The added references appeared under References folder._
-
-
-
- 
-
-    ![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img2.png)
-
-
-
+   N> The added references appeared under References folder.
+   
+   ![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img2.png)
+   
+   Added References
+   {:.caption}
+   
 3. Set Grid name in auto generated XAML of MainWindow.
 
    ~~~xml
-
    <Window x:Class="WpfApplication13.MainWindow"
 
    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -45,7 +42,7 @@ You can create a simple sample through code with the Syncfusion WPF ReportViewer
    </Window>
 
    ~~~
-   {:.prettyprint}
+  
 
 4. Add Report Viewer in MainWindowgrid.
 
@@ -69,15 +66,10 @@ You can create a simple sample through code with the Syncfusion WPF ReportViewer
    
    };
    ~~~
-   {:.prettyprint}
-
-
-
+  
 5. Run the application. The following output is displayed.
 
-
-
-![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img3.png)
-
-
-
+   ![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img3.png)
+   
+   Report Viewer Sample RDL demo
+   {:.caption}

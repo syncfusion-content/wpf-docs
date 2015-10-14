@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependency-Relationship
+title: Dependency Relationship| Gantt | Wpf | Syncfusion
 description: dependency relationship
 platform: wpf
 control: Gantt
@@ -48,7 +48,7 @@ Start-to-Finish—You cannot finish a task until another the other task is start
 
 
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -92,65 +92,65 @@ ObservableCollection<TaskDetails> GetDataSourceStartToStart()
 ObservableCollection<TaskDetails> task = ObservableCollection<TaskDetails>();
 task.Add(new TaskDetails { TaskId = 1, 
 
-                           TaskName = "Scope", 
+TaskName = "Scope", 
 
-                           StartDate = new DateTime(2011, 1, 3), 
+StartDate = new DateTime(2011, 1, 3), 
 
-                           FinishDate = new DateTime(2011, 1, 14),  
+FinishDate = new DateTime(2011, 1, 14),  
 
-                           Progress = 40d });
+Progress = 40d });
 task[0].Child.Add(new TaskDetails { TaskId = 2, 
 
-                    TaskName = "Determine project office scope", 
+TaskName = "Determine project office scope", 
 
-                    StartDate = new DateTime(2011, 1, 3), 
+StartDate = new DateTime(2011, 1, 3), 
 
-                    FinishDate = new DateTime(2011, 1, 5), 
+FinishDate = new DateTime(2011, 1, 5), 
 
-                    Progress = 20d });
+Progress = 20d });
 task[0].Child.Add(new TaskDetails { TaskId = 3, 
 
-                   TaskName = "Justify Project Offfice via business model", 
+TaskName = "Justify Project Offfice via business model", 
 
-                    StartDate = new DateTime(2011, 1, 6), 
+StartDate = new DateTime(2011, 1, 6), 
 
-                    FinishDate = new DateTime(2011, 1, 7), 
+FinishDate = new DateTime(2011, 1, 7), 
 
-                    Progress = 20d });
+Progress = 20d });
 task[0].Child.Add(new TaskDetails { TaskId = 4, 
 
-                    TaskName = "Secure executive sponsorship", 
+TaskName = "Secure executive sponsorship", 
 
-                    StartDate = new DateTime(2011, 1, 10), 
+StartDate = new DateTime(2011, 1, 10), 
 
-                    FinishDate = new DateTime(2011, 1, 14), 
+FinishDate = new DateTime(2011, 1, 14), 
 
-                    Progress = 20d });
+ Progress = 20d });
 
 task[0].Child.Add(new TaskDetails { TaskId = 5, 
 
-                    TaskName = "Secure complete", 
+TaskName = "Secure complete", 
 
-                    StartDate = new DateTime(2011, 1, 14), 
+StartDate = new DateTime(2011, 1, 14), 
 
-                    FinishDate = new DateTime(2011, 1, 14), 
+FinishDate = new DateTime(2011, 1, 14), 
 
-                    Progress = 20d });
+Progress = 20d });
 
 //Adding dependency relationShip 
 task[0].Child[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, 
 
-             GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+GanttTaskRelationship = GanttTaskRelationship.StartToStart });
 
 
 task[0].Child[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, 
 
-             GanttTaskRelationship = GanttTaskRelationship.StartToFinish });
+GanttTaskRelationship = GanttTaskRelationship.StartToFinish });
 
 
 task[0].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, 
 
-             GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
 
 return task;
 
@@ -166,7 +166,7 @@ The following image shows the Dependency Relationship:
 
 
 
-## Samples Link
+### Samples Link
 
 To view samples: 
 
@@ -189,7 +189,11 @@ You can edit the predecessor information from the GanttGrid. For resource, you c
 
 While creating a new predecessor in Grid, it should be in the following format:
 
+{% highlight c# %}
+
 	{Task ID}{GanttTaskRelationship} 
+	
+	{% endhighlight  %}
 
 Here the {GanttTaskRelationship} is any one of the following:
 
@@ -225,41 +229,41 @@ Adding Dynamic Predecessors and Resources to an Application
 
 The dynamic editing of predecessor will be automatically included in the Gantt by default. There is no need to provide any additional data for that. The following codes illustrate this:
 
-{% highlight html %}
+{% highlight xml %}
 
  
 
-   <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
+<gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
-             ItemsSource="{Binding GanttItemSource}" 
+ItemsSource="{Binding GanttItemSource}" 
 
-             ToolTipTemplate="{StaticResource toolTipTemplate}"> 
+ToolTipTemplate="{StaticResource toolTipTemplate}"> 
 
-              <gantt:GanttControl.TaskAttributeMapping>
+<gantt:GanttControl.TaskAttributeMapping>
 
-                    <gantt:TaskAttributeMapping TaskIdMapping="Id"
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                            TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                            DurationMapping="Duration"
+DurationMapping="Duration"
 
-                                            StartDateMapping="StDate"                                           
+StartDateMapping="StDate"                                           
 
-                                            FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                            ChildMapping="ChildTask"  
+ChildMapping="ChildTask"  
 
-                                            ProgressMapping="Complete"
+ProgressMapping="Complete"
 
-                                            PredecessorMapping="Predecessor"  
+PredecessorMapping="Predecessor"  
 
-                                            ResourceInfoMapping="Resource">
+ResourceInfoMapping="Resource">
 
-                    </gantt:TaskAttributeMapping>
+</gantt:TaskAttributeMapping>
 
-                </gantt:GanttControl.TaskAttributeMapping>
+</gantt:GanttControl.TaskAttributeMapping>
 
-            </gantt:GanttControl>
+</gantt:GanttControl>
 
 
 
@@ -273,11 +277,14 @@ The following code will illustrate how to dynamically add resource and predecess
 {% highlight c# %}
 
 
-   // To Add the Dynamic Predecessors
+// To Add the Dynamic Predecessors
 
-   this.viewModel.GanttItemSource[0].ChildTask[2].Predecessor.Add(new Predecessor() {   GanttTaskIndex = 4,    GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+this.viewModel.GanttItemSource[0].ChildTask[2].Predecessor.Add(new Predecessor() 
+{   GanttTaskIndex = 4,    GanttTaskRelationship = GanttTaskRelationship.FinishToStart 
+});
 
-   //To Add the Dynamic Resources   this.viewModel.GanttItemSource[0].ChildTask[2].Resource.Add(new Resource { ID = 3, Name = "Resource3" });
+//To Add the Dynamic Resources   
+this.viewModel.GanttItemSource[0].ChildTask[2].Resource.Add(new Resource { ID = 3, Name = "Resource3" });
 
 
 {% endhighlight %}

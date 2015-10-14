@@ -23,6 +23,7 @@ XMP is provided with the following schemas:
 * Basic Job Ticket Schema 
 * Paged-Text Schema 
 * PDF Schema 
+
 ## Basic Schema
 
 
@@ -41,9 +42,9 @@ BasicSchema class is used to create the basic schema properties.
 
 Refer the following code sample to create XMP basic schema.
 
+
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -85,9 +86,9 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim pdfDoc As PdfDocument = New PdfDocument()
 
@@ -126,7 +127,9 @@ basic.Rating.Add(-25)
 'Saves the document.
 
 pdfDoc.Save("DocumentInformation.pdf")
+
 {% endhighlight %}
+
 
 ## Dublin Core Schema
 
@@ -144,9 +147,9 @@ The Dublin Core schema provides a set of commonly used properties such as,
 
 DublinCoreSchema class is used to create the Dublincore schema properties.
 
+
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -178,9 +181,9 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim pdfDoc As New PdfDocument()
 
@@ -209,7 +212,9 @@ dublin.Publisher.Add("Essential PDF")
 'Saves the document.
 
 pdfDoc.Save("DocumentInformation.pdf")
+
 {% endhighlight %}
+
 
 ## Rights Management Schema
 
@@ -223,9 +228,8 @@ This schema includes properties related to rights management. These properties p
 
 
 
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -252,12 +256,13 @@ rights.Marked = true;
 pdfDoc.Save("DocumentInformation.pdf");
 
 pdfDoc.Close();
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim pdfDoc As New PdfDocument()
 
@@ -284,7 +289,9 @@ rights.Marked = True
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+
 {% endhighlight %}
+
 
 ## Basic Job Ticket Schema
 
@@ -292,9 +299,9 @@ This schema describes very simple workflow or job information.
 
 * JobRef
 
+
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -320,9 +327,9 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim pdfDoc As New PdfDocument()
 
@@ -345,7 +352,9 @@ basicJob.JobRef.Add("PDF document creation")
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+
 {% endhighlight %}
+
 
 ## Paged-Text Schema
 
@@ -358,9 +367,9 @@ The Paged-Text schema is used for text appearence on page in a document.
 
 
 
+
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -392,9 +401,9 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim pdfDoc As New PdfDocument()
 
@@ -423,7 +432,9 @@ pagedText.PlateNames.Add("Sample page")
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+
 {% endhighlight %}
+
 
 ## PDF Schema
 
@@ -431,9 +442,9 @@ This schema specifies properties used with Adobe PDF documents.
 
 PDFSchema class is used to create the PDF Schema. It has the following set of properties.
 
+
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -463,9 +474,9 @@ pdfDoc.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim pdfDoc As New PdfDocument()
 
@@ -492,7 +503,9 @@ pdfSchema.Keywords = "Essential PDF"
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+
 {% endhighlight %}
+
 
 ## Custom Schema
 
@@ -503,9 +516,9 @@ A custom schema defines the structure of the customized information records. You
 
 Add the following code to define a custom schema. 
 
+
+
 {% highlight c# %}
-
-
 
 //Creates PDF document.
 
@@ -537,9 +550,9 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates PDF document.
 
@@ -570,6 +583,7 @@ cs("Project") = "Data processing"
 pdfDoc.Save("DocumentInformation.pdf")
 {% endhighlight %}
 
+
 ## Adding Custom Metadata
 
 Essential PDF allows you to add required metadata (custom metadata) to a PDF document. Custom metadata can be an information about the document that cannot fit in the predefined metadata fields. For example, when a metadata field “Link” is available, you can only provide a link there. But, Essential PDF allows you to add additional information like Author, date of creation, etc. about the link. This feature allows you to add as many new metadata fields as you want. You cannot add metadata fields under the predefined metadata fields.
@@ -580,6 +594,7 @@ To add a custom metadata field,
 
 * Create an XML document container 
 * Create a custom schema 
+
 ### Create an XML Document container
 
 
@@ -587,17 +602,17 @@ The custom metadata to be created has to be stored and linked to the PDF documen
 
 You can add the following code to create an XML document to store custom metadata fields. 
 
+
+
 {% highlight c# %}
-
-
 
 XmpMetadata xmp = new XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData); 
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim xmp As New XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData)
 
@@ -669,9 +684,9 @@ The above code sample illustrates creation of custom schema or first-level metad
 
 Full code is used to create a custom meatadata field as illustrated in the following code.
 
+
+
 {% highlight c# %}
-
-
 
 PdfDocument pdfDoc = new PdfDocument();
 
@@ -696,12 +711,13 @@ cs["DOCID"] = "SYNCSAM001";
 pdfDoc.Save("CustomMetaField.pdf");
 
 pdfDoc.Close();
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the PDF document.
 
@@ -728,9 +744,10 @@ cs("DOCID") = "SYNCSAM001"
 pdfDoc.Save("CustomMetaField.pdf")
 
 pdfDoc.Close()
+
 {% endhighlight %}
 
-Security
+### Security
 
 Essential PDF allows you to create a secure PDF document with support for user password and owner password, document encryption and access right of the document.
 
@@ -738,35 +755,35 @@ The document can be encrypted with 40, 128 and 256 bit key to protect its conten
 
 The document can be protected using 2 passwords; a user password and an owner password.
 
-User Password
+#### User Password
 
 The user password allows you to view the document and the access to document is restricted based on the access rights that have been set.
 
-Owner Password
+#### Owner Password
 
 The owner password allows you to get full control over the PDF document. When both passwords are identical, you are considered to log in as owner.
 
-Allow Print 
+#### Allow Print 
 
 If this flag is not set, then you are not allowed to print the document. If this property is true, then you are allowed to print the document, depending on the value of FullQualityPrint flag and encryption key size. If encryption key size is 40 bit, then FullQualityPrint flag property is ignored. If encryption key size is 128 bit and if FullQualityPrint flag is set, then the document is printed at full quality, otherwise printing of the document is limited to a low-level representation of the document, of degraded quality. This degraded quality printing is viewer implementation dependent.
 
-Full Quality Print 
+#### Full Quality Print 
 
 This property has effect only when AllowPrint flag is set and encryption key size is 128 bit.
 
-EditAnnotations
+#### EditAnnotations
 
 If this flag is set, it allows you to add or modify text annotations and fill in interactive forms fields.
 
-Fill Fields
+#### Fill Fields
 
 This flag is effective only when using 128 bit encryption. If this flag is set, it allows you to fill in existing interactive form fields.
 
-Copy Content 
+#### Copy Content 
 
 When document is encrypted using 128 bit and if this flag is set, it allows you to copy or otherwise extract text and graphics from the document by operations other than those controlled by AccessibilityCopyContent flag. When using a 40 bit encryption, this flag controls extraction of text and graphics to provide accessibility to disabled users and for other purposes. 
 
-Accessibility Copy Content 
+#### Accessibility Copy Content 
 
 This property is effective only while using 128 bit encryption and flag set. It allows you to copy or otherwise extract text and graphics from the document to provide accessibility to disabled users and for other purposes.
 
@@ -774,9 +791,9 @@ This property is effective only while using 128 bit encryption and flag set. It 
 
 Essential PDF allows you to encrypt your document in RC4 encryption. 
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -821,12 +838,13 @@ graphics.DrawString(text, font, brush, new PointF(0, 40));
 document.Save("Output.pdf");
 
 document.Close();
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -869,15 +887,16 @@ graphics.DrawString(text, font, brush, New PointF(0, 40))
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
 ## AES Encryption
 
 Essential PDF allows you to create an AES encrypted PDF document.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -925,9 +944,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -970,9 +989,10 @@ graphics.DrawString(text, font, brush, New PointF(0, 40))
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
-Digitally Sign the new PDF document
+### Digitally Sign the new PDF document
 
 A digital signature is an electronic signature that is used to authenticate the identity of the sender of a message or the signer of a document, and to ensure that the original content of the message or document is unchanged. It stores information about the signee and the state of the document at the moment of signing.
 
@@ -1036,15 +1056,15 @@ Sets the timestamp for the signature. Allows you to include timestamp for the di
 </table>
 
 
-Standard Signature
+#### Standard Signature
 
 PdfCertificate class is used to get the certificates from disk or another device such as PFX file. The PFX file type is an encrypted security file that stores secure certificates that are used to authenticate a PDF document. One needs a password to access these files. The PFX files are supported with private keys.
 
 PdfSignature class has methods and properties that allow setting the signature information such as reason, location information, bounds where the signature has to be placed, and contact information.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -1090,9 +1110,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -1118,7 +1138,7 @@ Dim bmp As New PdfBitmap("syncfusion_logo.gif")
 
 'Sets signature info.
 
-signature.Bounds = New RectangleF(New PointF(0, 0),                 bmp.PhysicalDimension)
+signature.Bounds = New RectangleF(New PointF(0, 0), bmp.PhysicalDimension)
 
 signature.ContactInfo = "johndoe@owned.us"
 
@@ -1138,7 +1158,7 @@ document.Close()
 
 {% endhighlight %}
 
-Author Signature
+#### Author Signature
 
 By default, documents are signed with standard signature types. Certificated property of PdfSignature is used to create author’s signature. When signed with this type of signature, any modification after signing is detected, and hence do not support added multiple signatures.
 
@@ -1146,9 +1166,9 @@ N> This implementation of certification will only work with Acrobat 7 and higher
 
 
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -1198,9 +1218,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -1247,15 +1267,16 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
 ## Digitally Sign the existing PDF document
 
 Essential PDF allows you to put signature in an existing PDF document as in a newly created PDF.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -1301,9 +1322,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -1350,6 +1371,7 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
 ## Timestamp in Digital signature
@@ -1362,9 +1384,9 @@ To apply timestamp using Essential PDF, the TimeStampServer property of the PdfS
 
 The following code illustrates the method for adding timestamp in the digital signature.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -1414,9 +1436,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding| OLAP Client  | Wpf | Syncfusion
 description: data binding
 platform: wpf
 control: OLAP Client 
@@ -16,6 +16,7 @@ by passing a valid connection string.
 
 The following code example illustrates the binding of the OLAP Client control to a server.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -41,12 +42,13 @@ Me.olapClient1.OlapDataManager = olapDataManager
 Me.olapClient1.DataBind()
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ## Binding OLAP Client to the Offline Cube
 
 The following code example illustrates how to bind the OLAP Client control to an offline cube.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -73,6 +75,6 @@ Me.olapClient1.OlapDataManager = olapDataManager
 Me.olapClient1.DataBind()
 
 {% endhighlight %}
-
+{% endtabs %}
 
 

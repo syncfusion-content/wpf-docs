@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create-RDLC-Reports-in-the-Report-Designer
+title: Create RDLC Reports in the Report Designer | ReportDesigner | wpf | Syncfusion
 description: create rdlc reports in the report designer
 platform: wpf
 control: Report Designer
@@ -79,7 +79,7 @@ public class DataSource
 
 
 
-   ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig86.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img1.png)
+   ![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img1.png)
 
 
 
@@ -87,7 +87,7 @@ public class DataSource
 
 
 
-  ![C:/Users/anandakumars/Desktop/1.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img2.png)
+  ![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img2.png)
 
 
 
@@ -95,7 +95,7 @@ public class DataSource
 
 
 
-  ![C:/Users/anandakumars/Desktop/2.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img3.png)
+  ![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img3.png)
 
 
 
@@ -105,7 +105,7 @@ public class DataSource
 
 9.Select the collection of business objects by selecitng the necessary method in the provided assembly.
 
-  ![C:/Users/anandakumars/Desktop/FRImages/21.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img4.png)
+  ![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img4.png)
 
 
 
@@ -113,7 +113,7 @@ public class DataSource
 
 
 
-  ![C:/Users/anandakumars/Desktop/3.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img5.png)
+  ![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img5.png)
 
 
 

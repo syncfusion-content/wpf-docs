@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization/Deserialization 
+title: Serialization/Deserialization | PivotGrid | Wpf | Syncfusion
 description: Serialization/Deserialization 
 platform: wpf
 control: PivotGrid
@@ -8,20 +8,20 @@ documentation: ug
 ---
 
 
-## Serialization/Deserialization
+# Serialization/Deserialization
 
 
 Using this feature, you can save the current state of PivotGrid as an XML file format and restore the same at any time. 
 
 The following properties of PivotGrid control can be serialized.
 
-_Property Table_
+### Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td></tr>
+<th>
+Property Name</th><th>
+Type</th></tr>
 <tr>
 <td>
 AllowResizeColumns</td><td>
@@ -107,14 +107,15 @@ bool</td></tr>
 
 On Serialization, the expand and the collapse state of PivotGrid cells are maintained. So while de-serializing, the item source specified for the Grid should be as same as that when used in Serialization. This can be ignored by setting IgnoreExpandCollapseOnSerialization property of PivotGrid control to False.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Serialization can be implemented for applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of PivotGridControl to an XML file and it can be loaded at any time.
 
-#### Adding Serialization/Deserialization
+### Adding Serialization/Deserialization
 
 Serialization/Deserialization can be achieved using the following code snippet,
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -177,20 +178,20 @@ Me.pivotGrid1.Deserialize("C:/PivotGrid.xml")
 
 {% endhighlight %} 
 
+{% endtabs %}
+
+### Methods
 
 
-#### Methods
-
-_Methods Table_
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 Serialize()</td><td>
@@ -226,7 +227,7 @@ void</td></tr>
 
 
 
-#### Sample Link
+### Sample Link
 
 To access a Conditional Formatting sample:
 

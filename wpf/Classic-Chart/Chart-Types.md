@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Types
+title: Chart Types | Chart(Classic) | wpf | Syncfusion
 description: Chart Types
 platform: wpf
 control: Chart (Classic)
@@ -26,7 +26,6 @@ The appearance of the lines and the points can be configured with options such a
 
 The following are the details about Line Chart:
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -50,7 +49,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template parameters_
 
 <table>
 <tr>
@@ -93,11 +91,8 @@ A sample which demonstrates Line Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
-See Also
 
-Chart Types
-
-Fast Line Chart
+### Fast Line Chart
 
 Use a Fast Line chart instead of a Line chart when displaying a large number of data points in the chart. This chart type improves performance by foregoing some features in the Line chart.
 
@@ -109,7 +104,6 @@ Use a Fast Line chart instead of a Line chart when displaying a large number of 
 
 The following are the details about Fast Line Chart:
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -132,7 +126,6 @@ Template
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -192,7 +185,6 @@ Following types of lines are supported for FastLine chart:
 
 ### Property
 
-_Property Table_
 
 <table>
 <tr>
@@ -216,10 +208,8 @@ System.Drawing.Pen </td><td>
 To customize the FastLine chart, use the Pen property of ChartFastSeriesPresenter.
 
 The following code illustrates this: 
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Name="series" Type="FastLine" IsIndexed="True"  Interior="LightBlue" >
 
@@ -233,7 +223,7 @@ The following code illustrates this:
 
 {% endhighlight  %}
 
-{{ '![](Chart-Controls_images/Chart-Controls_img69.png)' | markdownify }}
+![](Chart-Controls_images/Chart-Controls_img69.png)
 
 
 
@@ -246,11 +236,8 @@ To view a sample
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to _Chart.WPF\Samples\3.5\WindowsSamples\Chart Customization\ FastLine Customization Demo\_
 
-See Also
 
-Chart Types
-
-FastSpline Chart Series
+### FastSpline Chart Series
 
 FastSpline is used to render a large number of data points as a smooth line in a fast manner and helps in improving the performance of the chart. Its view is similar to the Line chart, but plots a fitted curve through each data point in series. FastSpline draws a smooth flowing line through all data points in the data set.
 
@@ -259,8 +246,6 @@ The appearance of the FastSpline can be configured with options such as interior
 ### Chart Type Characteristic
 
 The following table lists the main characteristic of the FastSpline chart.
-
-_Characteristics of FastSpline Chart_
 
 <table>
 <tr>
@@ -293,7 +278,7 @@ FastSpline chart is useful in the following fields where high volume data is use
 * Scientific Research
 * Economics
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -309,6 +294,8 @@ Draws the spline when set to paths {{ '_Data_' | markdownify }} property.</td></
 ### Template for FastSpline
 
 The following code example illustrates the template for the FastSpline chart:
+
+
 {% highlight xml %}
 
 
@@ -329,7 +316,7 @@ The following code example illustrates the template for the FastSpline chart:
 
 A sample for FastSpline is placed in the following location:
 
-[http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast Charts/Fast](http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast) Chart Types Demo
+[http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast Charts/Fast](http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast%20Charts/) Chart Types Demo
 
 ### Adding FastSpline Chart to an Application 
 
@@ -345,7 +332,6 @@ To add FastSpline chart to an application do the following:
 
 The following code example illustrates the usage of FastSpline charts.
 {% highlight xml %}
-
 
 <sfchart:Chart>
 
@@ -374,8 +360,6 @@ The appearance of the lines and the points can be configured with options such a
 
 The following are the details about Spline Chart:
 
-_Data Requirement_
-
 <table>
 <tr>
 <th colspan = "2">
@@ -393,9 +377,10 @@ one or more</td></tr>
 Number of series</td><td>
 one or more</td></tr>
 </table>
-Spline Settings
 
-_Spline Setting_
+
+### Spline Settings
+
 
 <table>
 <tr>
@@ -416,7 +401,6 @@ attached property which lets you control the spline curvature</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -464,9 +448,6 @@ A sample which demonstrates Line Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Rotated Spline Chart
 
@@ -482,7 +463,6 @@ The following image shows a sample Rotated Spline Chart.
 
 The following are the details about Rotated Spline Chart:
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -503,7 +483,6 @@ one or more</td></tr>
 </table>
 Rotated Spline Settings
 
-_Rotated Spline Settings_
 
 <table>
 <tr>
@@ -523,9 +502,6 @@ A sample which demonstrates Line Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Step Line Chart
 
@@ -539,7 +515,6 @@ Step Line Charts use horizontal and vertical lines to connect data points result
 
 The following are the details about Step Line Chart:
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -563,7 +538,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -621,9 +595,6 @@ A sample which demonstrates Line Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
-See Also
-
-Chart Types
 
 ## Bar Charts
 
@@ -645,7 +616,6 @@ The following image shows a multi series Bar Chart.
 
 The following are the details about Bar Chart:
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -666,7 +636,6 @@ one or more</td></tr>
 </table>
 Bar Chart Settings
 
-_Bar Setting_
 
 <table>
 <tr>
@@ -686,10 +655,6 @@ Attached property that specifies the space between columnsPossible values lie be
 ### Template
 
 While setting template the following parameters can be used.
-
-
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -732,9 +697,6 @@ A sample which demonstrates Bar Chart Types is available in the following sample
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
 
-See Also
-
-Chart Types
 
 ### FastBar ChartType	
 
@@ -761,12 +723,9 @@ To add FastBar ChartType to the application:
 1. Select FastBar from the enum of type ChartTypes. 
 2. Assign it to the Type property in the ChartSeries. This can be added using xaml and also using C# code as given in the following code examples.
 
+   ~~~ xaml
 
-
-   Code Table
-
-
-
+   
 			  <syncfusion:ChartSeries Type="FastBar"/>      
 
 
@@ -775,11 +734,12 @@ To add FastBar ChartType to the application:
 
 			   Area1.Series[0].Type = ChartTypes.FastBar;
 
+   ~~~
 
 
    ![Description: C:/Users/sujithas/Desktop/DesktopFiles/Assigned wrk/2011/Images/sshot-2.png](Chart-Controls_images/Chart-Controls_img75.png)
 
-   {:.prettyprint}
+   
 
 ### Sample Link
 
@@ -808,13 +768,11 @@ To run the UI WPF sample
 
    ![](Chart-Controls_images/Chart-Controls_img76.jpeg)
 
-   {:.prettyprint}
+   
 
 ### Data Requirements
 
 The following are the details about Stacking Bar Chart:
-
-_Data Requirement_
 
 <table>
 <tr>
@@ -833,9 +791,10 @@ one or more</td></tr>
 Number of series   </td><td>
 one or more</td></tr>
 </table>
+
+
 Stacking Bar Chart Properties
 
-_Stacking Bar Chart_
 
 <table>
 <tr>
@@ -855,8 +814,6 @@ Attached property that specifies the space between columnsPossible values lie be
 ### Template
 
 While setting template the following parameters can be used:
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -910,11 +867,8 @@ A sample which demonstrates Bar Chart Types is available in the following sample
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
 
-See Also
 
-Chart Types
-
-Gantt Chart
+### Gantt Chart
 
 Frequently used in project management, a Gantt chart provides a graphical illustration of a schedule to help plan, coordinate, and track specific tasks in a project.
 
@@ -925,8 +879,6 @@ Frequently used in project management, a Gantt chart provides a graphical illust
 ### Data Requirements
 
 The following are the details about Gantt Chart:
-
-_Data Requirement_
 
 <table>
 <tr>
@@ -967,8 +919,6 @@ attached property that specifies the space between columnsPossible values lie be
 ### Template
 
 While setting template the following parameters can be used.
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -1011,9 +961,6 @@ A sample which demonstrates Gantt Chart Type is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Gantt Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Tornado Chart
 
@@ -1026,8 +973,6 @@ The Tornado chart is a bar chart which shows the variability of an output to sev
 ### Data Requirements
 
 The following are the details about Tornado Chart:
-
-_Data Requirement_
 
 <table>
 <tr>
@@ -1046,9 +991,10 @@ one or more</td></tr>
 Number of series</td><td>
 one or more</td></tr>
 </table>
+
+
 Tornado Settings
 
-_Table55: Tornado Setting_
 
 <table>
 <tr>
@@ -1068,8 +1014,6 @@ attached property that specifies the space between columnsPossible values lie be
 ### Template
 
 While setting template the following parameters can be used:
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -1112,11 +1056,8 @@ A sample which demonstrates Tornado Chart Type is available in the following sam
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Tornado Chart Demo_
 
-See Also
 
-Chart Types
-
-Stacked Bar 100 Chart
+### Stacked Bar 100 Chart
 
 In the 100 percent Stacked Bar Chart, the cumulative proportion of each stacked element always totals 100 percent. This type of chart is great to visualize the relative contribution of each series values to the whole.
 
@@ -1130,7 +1071,6 @@ The following image shows a sample Stacking Bar 100 Chart.
 
 The following are the details about Stacking Bar 100 Chart:
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -1153,9 +1093,7 @@ A sample which demonstrates Bar Chart Types is available in the following sample
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
 
-See Also
 
-Chart Types
 
 ## Column Charts
 
@@ -1173,7 +1111,7 @@ The following image shows a multi series Column Chart.
 
 Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -1359,10 +1297,6 @@ A sample which demonstrates Column Chart Types is available in the following sam
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
 
-See Also
-
-Chart Types
-
 ### Stacking Column Chart
 
 Stacking Column Charts are similar to regular column charts except that the Y values stack on top of each other in the specified series order. This helps visualize the relationship of parts to the whole.
@@ -1475,18 +1409,13 @@ When negative values are added, Stacking Column chart can be made to be stacked 
 Following code is used to do this.
 {% highlight c# %}
 
-
-
-
 ChartStackingColumnType.SetRequiresNegativeSeriesStack(this.chartArea2, true);
 {% endhighlight  %}
 A sample which demonstrates Column Chart Types is available in the following sample installation path.
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
 
-See Also
 
-Chart Types
 
 ### Stacking Column 100 Chart
 
@@ -1500,7 +1429,7 @@ The following image shows a sample Stacking Column 100 Chart.
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -1522,7 +1451,7 @@ one or more</td></tr>
 
 ### Spline Settings
 
-_Spline Setting_
+
 
 <table>
 <tr>
@@ -1543,7 +1472,6 @@ y-axis range is set from 0 - 100If true, y-axis range is set from 0 - 1. Default
 
 While setting template, the following parameters can be used.
 
-_Template parameters_
 
 <table>
 <tr>
@@ -1713,9 +1641,7 @@ Series</td><td>
 ChartSeries</td><td>
 reference to series-owner</td></tr>
 </table>
-See Also
 
-Chart Types
 
 ### Fast Column Chart
 
@@ -1741,14 +1667,9 @@ The Chart type Fast Column is added in the Enum of type ChartTypes.
 
 
 
-
-_Fast Column Chart_
-
-
-
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -1770,7 +1691,7 @@ one or more</td></tr>
 
 ### Custom Properties
 
-_Custom Property_
+
 
 <table>
 <tr>
@@ -1791,7 +1712,7 @@ sets the interval between columnsPossible values lie between 0 and 1.</td></tr>
 
 While setting template the following parameters can be used: 
 
-_Template Parameter_
+
 
 <table>
 <tr>
@@ -1835,24 +1756,21 @@ A sample which demonstrates Fast Column Chart Type is available in the following
 _..My Documents\Syncfusion\Essential Studio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance-> Fast chart types_
 
 The following code example illustrate the usage of Fast Column charts.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Type="FastColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 {% endhighlight %}
+
 {% highlight c# %}
-
-
-
-
 
 ChartSeries series = new ChartSeries();
 
 series.Type = ChartTypes.FastColumn;
 {% endhighlight  %}
+{% endtabs %}
 
 Run the sample. 
 
@@ -1860,11 +1778,6 @@ A Fast Column chart is displayed pertaining to the data source it is bound to.
 
 ![](Chart-Controls_images/Chart-Controls_img86.jpeg)
 
-
-
-See Also
-
-Chart Types
 
 ## Area Charts
 
@@ -1882,7 +1795,6 @@ The following image shows a multi series Area Chart.
 
 Data Requirements
 
-_Data Requirements_
 
 <table>
 <tr>
@@ -1906,8 +1818,6 @@ one or more</td></tr>
 
 The following parameters can be used while specifying template.
 
-_Template Parameter_
-
 <table>
 <tr>
 <th>
@@ -1964,10 +1874,6 @@ A sample which demonstrates Area Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
-See Also
-
-Chart Types
-
 ### Spline Area Chart
 
 Spline Area Chart is similar to an Area Chart with the only difference being the way in which the points of a series are connected. It connects each series of points by a smooth spline curve. 
@@ -1982,7 +1888,7 @@ The following image shows a multi series Spline Area Chart.
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -2004,7 +1910,7 @@ one or more</td></tr>
 
 ### SplineArea Properties
 
-_Spline Area Property_
+
 
 <table>
 <tr>
@@ -2025,7 +1931,6 @@ responsible for spline curvature</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -2083,9 +1988,6 @@ A sample which demonstrates Area Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Stacking Area Chart
 
@@ -2099,7 +2001,7 @@ The following image shows a sample Stacking Area Chart.
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -2123,7 +2025,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameters_
 
 <table>
 <tr>
@@ -2193,18 +2094,13 @@ reference to series-owner</td></tr>
 When negative values are added, Stacking Area chart can be made to be stacked separately in the chart area, above and below the x- axis 0.
 {% highlight c# %}
 
-
-
-
 ChartStackingAreaType.SetRequiresNegativeSeriesStack(this.chartArea1, true);
 {% endhighlight  %}
 A sample which demonstrates Area Chart Types is available in the following sample installation path.
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
-See Also
 
-Chart Types
 
 ### StackingArea100 Chart
 
@@ -2223,8 +2119,8 @@ A sample that demonstrates the StackingArea100 chart type is available in the fo
 ### Adding StackingArea100 Chart to Chart Area
 
 The StackingArea100 chart type can be added into a chart area through the following code example:
-{% highlight xml %}
 
+{% highlight xml %}
 
   <syncfusion:Chart>
 
@@ -2238,15 +2134,9 @@ The StackingArea100 chart type can be added into a chart area through the follow
 
   </syncfusion:Chart>
 
-
-
-
 {% endhighlight  %}
 
 
-
-
-_Table83: Data Requirement Table_
 
 <table>
 <tr>
@@ -2273,26 +2163,19 @@ The data template for a 100% stacked area chart can be overridden by changing th
 [XAML: Default Template]
 
 
-
   <DataTemplate x:Key="{x:Type local:ChartStackingArea100Segment}">
 
     <Path Stroke="{Binding Stroke}" StrokeThickness="{Binding StrokeThickness}" Fill="{Binding Interior}"  Data="{Binding Geometry}" ToolTip="{Binding ToolTip}"/>
 
   </DataTemplate>
 
-
-
 [Custom Template]
-
-
 
 <DataTemplate x:Key="customTemplate">
 
     <Path Stroke="{Binding Stroke}" StrokeThickness="4" Fill="Red"  Data="{Binding Geometry}"/>
 
   </DataTemplate>
-
-
 
 [Apply Template]
 
@@ -2307,12 +2190,12 @@ The data template for a 100% stacked area chart can be overridden by changing th
  </syncfusion:ChartArea>
 
 </syncfusion:Chart>
+
 {% endhighlight  %}
 
 
 When setting template, the following parameters can be used:
 
-_Parameters for setting the Template_
 
 <table>
 <tr>
@@ -2357,7 +2240,6 @@ Step Area Charts are similar to regular area charts except that instead of a str
 
 ### Data Requirements
 
-_Data Requitement_
 
 <table>
 <tr>
@@ -2381,7 +2263,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -2449,9 +2330,6 @@ A sample which demonstrates Area Chart Types is available in the following sampl
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Range Area Chart
 
@@ -2463,7 +2341,7 @@ Range Area Chart is a variation of Area Chart type that lets you plot bands of d
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -2484,8 +2362,6 @@ one or more</td></tr>
 </table>
 
 ### Custom Properties
-
- _Custom Property_
 
 <table>
 <tr>
@@ -2512,9 +2388,6 @@ specifies the brush that should be used for the segment where the 1st  y value i
 
 The following parameters can be used while specifying template.
 
-
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -2547,9 +2420,6 @@ A sample which demonstrates Range Area Chart Type is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Range-Area Chart Demo_
 
-See Also
-
-Chart Types
 
 ## Accumulation Charts
 
@@ -2565,7 +2435,7 @@ Funnel charts are often used to represent stages in a sales process and show the
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -2587,7 +2457,7 @@ one or more</td></tr>
 
 ### FunnelType Properties
 
-_FunnelType Property_
+
 
 <table>
 <tr>
@@ -2620,7 +2490,6 @@ method of data displaying</td></tr>
 
 While setting template the following parameters can be used:
 
-_Parameters_
 
 <table>
 <tr>
@@ -2668,10 +2537,6 @@ A sample which demonstrates Accumulation Chart Types is available in the followi
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Accumulation Chart Demo_
 
-See Also
-
-Chart Types
-
 ### Pyramid Chart
 
 Pyramid chart is similar to the funnel chart. It is often used for geographical purposes. The Pyramid Chart type displays the data which when totalled will be 100%. This type of chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Pyramid chart can be viewed as 2D or 3D.
@@ -2684,7 +2549,7 @@ The following images are some sample Pyramid Charts.
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -2738,7 +2603,6 @@ method of data displaying</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameters_
 
 <table>
 <tr>
@@ -2781,9 +2645,6 @@ A sample which demonstrates Accumulation Chart Types is available in the followi
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Accumulation Chart Demo_
 
-See Also
-
-Chart Types
 
 ## XY Charts (Bubble and Scatter)
 
@@ -2803,7 +2664,6 @@ The following image shows a multi series Scatter Chart.
 
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -2827,7 +2687,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameters_
 
 <table>
 <tr>
@@ -2863,9 +2722,6 @@ reference to series-owner</td></tr>
 You can modify the size of the Scatter chart by using the Height and Width properties of Scatter-Type, as shown in the following code sample:
 {% highlight xml %}
 
-
-
-
 <syncfusion:ChartSeries Name="Series1" Type="Scatter" 
 
 DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY="Price" syncfusion:ChartScatterType.ScatterHeight="30" syncfusion:ChartScatterType.ScatterWidth="30">
@@ -2873,13 +2729,12 @@ DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY
 </syncfusion:ChartSeries>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 ChartScatterType.SetScatterWidth(seriesname, 30);
 ChartScatterType.SetScatterHeight(seriesname, 30);
+
 {% endhighlight  %}
 A sample which demonstrates Scatter and Bubble Chart Types is available in the following sample installation path.
 
@@ -2906,8 +2761,6 @@ The Chart type Fast Scatter is added in the Enum of type ChartTypes.
 
 ### Data Requirements
 
-_Data Requirement_
-
 <table>
 <tr>
 <th colspan = "2">
@@ -2929,8 +2782,6 @@ one or more</td></tr>
 ### Template
 
 While setting template the following parameters can be used:
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -2960,24 +2811,21 @@ ChartSeries</td><td>
 reference to series-owner</td></tr>
 </table>
 The following code example illustrates the usage of Fast Scatter charts.
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Type="FastScatter" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
-
 
 ChartSeries series = new ChartSeries();
 
 series.Type = ChartTypes.FastScatter;
+
 {% endhighlight  %}
+
 Run the sample. 
 
 A Fast Scatter chart is displayed.
@@ -2989,10 +2837,9 @@ A Fast Scatter chart is displayed.
 Customizing the Height and Width of the Fast Scatter Chart
 
 You can modify the size of the Fast Scatter chart by using the Height and Width properties of FastScatter-Type, as shown in the following code sample:
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Name="Series1" Type="FastScatter" 
 
@@ -3000,23 +2847,21 @@ DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY
 
 </syncfusion:ChartSeries>
 
-
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 ChartFastScatterType.SetFastScatterWidth(seriesname, 30);
 ChartFastScatterType.SetFastScatterHeight(seriesname, 30);
+
 {% endhighlight  %}
+
+{% endtabs %}
+
 A sample which demonstrates Fast Scatter Chart Types is available in the following sample installation path.
 
 _..My Documents\Syncfusion\Essential Studio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance-> Fast chart types_
 
-See Also
-
-Chart Types
 
 ### Bubble Chart
 
@@ -3032,7 +2877,6 @@ The following image shows a multi series Bubble Chart.
 
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -3054,7 +2898,6 @@ one or more</td></tr>
 
 ### BubbleType Properties
 
-_Property Table_
 
 <table>
 <tr>
@@ -3081,7 +2924,6 @@ maximal figure radius</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3129,9 +2971,6 @@ A sample which demonstrates Scatter and Bubble Chart Types is available in the f
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Scatter And Bubble Chart Demo_
 
-See Also
-
-Chart Types
 
 ## Financial Charts
 
@@ -3147,7 +2986,6 @@ The following image shows a CandleChart displaying a single series.
 
 ### Data Requirements
 
-_Property Table_
 
 <table>
 <tr>
@@ -3169,7 +3007,6 @@ one or more</td></tr>
 
 ### CandleType Properties
 
-_Property Table_
 
 <table>
 <tr>
@@ -3190,7 +3027,6 @@ interval between line groupsPossible value lies between 0 and 1.</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3253,9 +3089,6 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
-
-Chart Types
 
 ### HiLo Chart
 
@@ -3269,7 +3102,6 @@ The Hi Lo Chart expect 2 Y values to be specified in the series. One value shoul
 
 ### Data Requirements
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3293,7 +3125,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3336,9 +3167,7 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
 
-Chart Types
 
 ### HiLoOpenClose Chart
 
@@ -3350,7 +3179,7 @@ Hi Lo Open Close Chart is a special kind of chart that is normally used in stock
 
 ### Data Requirements
 
-_Data Parameter_
+
 
 <table>
 <tr>
@@ -3374,7 +3203,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameters_
 
 <table>
 <tr>
@@ -3457,9 +3285,6 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Kagi Chart
 
@@ -3469,11 +3294,8 @@ The penetration of a prior column's high or low, by the latest closing price, al
 
 ![](Chart-Controls_images/Chart-Controls_img102.jpeg)
 
-
-
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -3495,7 +3317,6 @@ one or more</td></tr>
 
 ### KagiType Properties
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3516,7 +3337,6 @@ price difference which should overcome in order to change diagram direction</td>
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3554,10 +3374,6 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
-
-Chart Types
-
 ### Point and Figure Chart
 
 Point and Figure Chart is used to identify support levels, resistance levels and chart patterns. The chart ignores the time factor and concentrates solely on movements in price - a column of Xs or Os may take one day or several weeks to complete. By convention, the first X in a column is plotted one box above the last O in the previous column (and the first O in a column is plotted one box below the highest X).  
@@ -3572,7 +3388,6 @@ This chart requires 2 Y values, the high value and the low value for the specifi
 
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -3619,8 +3434,6 @@ price difference which should be overcome in order to change diagram direction</
 ### Template
 
 While setting template the following parameters can be used.
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -3673,10 +3486,6 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
-
-Chart Types
-
 ### Renko Chart
 
 Renko charting method is thought to have acquired its name from "renga" which is the Japanese word for bricks. Renko Charts were introduced by Steve Nison. Renko (Bricks) are drawn equal in size for a determined amount. A brick is drawn in the direction of the prior move only if prices move by a minimum amount. If prices change by the determined amount or more, a new brick is drawn. If prices change by less than the determined amount (specified by ReversalAmount), the new price is ignored. The default value of ReversalAmount is 1.
@@ -3691,7 +3500,6 @@ Since a Renko chart isolates the underlying trends by filtering out the minor up
 
 ### Data Requirements
 
-_Data Requirements_
 
 <table>
 <tr>
@@ -3713,7 +3521,6 @@ one or more</td></tr>
 
 ### Renko Customization
 
-_Renko Customization_
 
 <table>
 <tr>
@@ -3734,7 +3541,7 @@ price of one Renko segment</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameters_
+
 
 <table>
 <tr>
@@ -3787,9 +3594,7 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
 
-Chart Types
 
 ### ThreeLineBreak Chart
 
@@ -3805,7 +3610,6 @@ The ReversalAmount specifies the threshold amount by which the price should chan
 
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -3827,7 +3631,6 @@ one or more</td></tr>
 
 ### Renko Customization
 
-_Renko Customization_
 
 <table>
 <tr>
@@ -3848,7 +3651,6 @@ sets the break line count Default value is 3.</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -3901,9 +3703,6 @@ A sample which demonstrates Financial Chart Types is available in the following 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Box and Whisker Chart
 
@@ -3923,7 +3722,6 @@ The following is an example of a Box and Whisker plot.
 
 ### Custom Properties
 
-_Property Table_
 
 <table>
 <tr>
@@ -3944,7 +3742,6 @@ interval between columnsPossible value lies between 0 and 1.</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -4046,8 +3843,6 @@ reference to series-owner</td></tr>
 
 ### Data Requirements
 
-_Data Requirement_
-
 <table>
 <tr>
 <th colspan = "2">
@@ -4071,18 +3866,12 @@ one or more</td></tr>
 Outliers that are greater than the segment height can be rendered in the chart. Essential chart also provides option to set a difference in such outlier rendering. This difference can be set using the SetDefaultOutlierVisible property.
 {% highlight c# %}
 
-
-
-
 ChartBoxAndWhiskerType.SetDefaultOutlierVisible(ser, false);
 {% endhighlight  %}
 A sample which demonstrates Box And Whisker Chart Type is available in the following sample installation path.
 
 ..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Box-and-Whisker Chart Demo
 
-See Also
-
-Chart Types
 
 ### Fast HiLo Open Close
 
@@ -4105,7 +3894,7 @@ The Chart type HiLo Open Close is added in the Enum of type ChartTypes.
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -4128,8 +3917,6 @@ one or more</td></tr>
 ### Template
 
 While setting template the following parameters can be used:
-
-_Template Parameter_
 
 <table>
 <tr>
@@ -4213,30 +4000,24 @@ A sample which demonstrates Financial Chart Types is available in the following 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance\Fast chart types_
 
 The following code illustrates the creation of Fast High Low (HiLo) Open Close charts.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Type="HiLoOpenClose" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 ChartSeries series = new ChartSeries();
 
 series.Type = ChartTypes.HiLoOpenClose;
 {% endhighlight  %}
+{% endtabs %}
 
 Run the sample. The following output is provided.
 
 ![](Chart-Controls_images/Chart-Controls_img108.jpeg)
-
-
 
 ## Pie Charts
 
@@ -4247,10 +4028,8 @@ A Pie Chart renders Y values as slices in a pie. These slices are rendered in pr
 ![](Chart-Controls_images/Chart-Controls_img109.jpeg)
 
 
-
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -4272,7 +4051,6 @@ one or more</td></tr>
 
 ### Pie Type Properties
 
-_Pie Type Properties_
 
 <table>
 <tr>
@@ -4293,7 +4071,6 @@ index of segment which should be leant out</td></tr>
 
 While setting template, the following parameters can be used.
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -4356,10 +4133,6 @@ A sample which demonstrates Pie Chart Types is available in the following sample
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Pie Chart Demo_
 
-See Also
-
-Chart Types, ChartSegment Labels
-
 ### Doughnut Chart
 
 Doughnut charts are pie charts with a hole, whose value is specified as the doughnut coefficient. The Doughnut Chart is best suited for presenting data in proportions.
@@ -4367,10 +4140,8 @@ Doughnut charts are pie charts with a hole, whose value is specified as the doug
 ![](Chart-Controls_images/Chart-Controls_img110.jpeg)
 
 
-
 ### Data Requirements
 
-_Data Requirement_
 
 <table>
 <tr>
@@ -4391,8 +4162,6 @@ one or more</td></tr>
 </table>
 
 ### Doughnut Type Properties
-
-_Doughnut Type Properties_
 
 <table>
 <tr>
@@ -4419,7 +4188,6 @@ number which shows relation of inner radius to outer radius</td></tr>
 
 While setting template the following parameters can be used:
 
-_Template Parameters_
 
 <table>
 <tr>
@@ -4472,9 +4240,6 @@ A sample which demonstrates Pie Chart Types is available in the following sample
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Pie Chart Demo_
 
-See Also
-
-Chart Types, ChartSegment Labels
 
 ## Polar Chart
 
@@ -4489,8 +4254,6 @@ It is a form of graph that allows a visual comparison between several quantitati
 
 
 ### Data Requirements
-
-_Data Requirement_
 
 <table>
 <tr>
@@ -4514,7 +4277,6 @@ one or more</td></tr>
 
 While setting template the following parameters can be used.
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -4557,9 +4319,6 @@ A sample that illustrates Circular Chart Type is available in the following samp
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Circular Chart Demo_
 
-See Also
-
-Chart Types
 
 ### Special Support in Radar and Polar Charts
 
@@ -4603,7 +4362,7 @@ Following are the screenshots of the chart when IsClosed is set to True and Fals
 
 ### Properties
 
-_Properties_
+
 
 <table>
 <tr>
@@ -4638,8 +4397,10 @@ Attached</td><td>
 DataTemplate</td></tr>
 </table>
 Adding Support for IsClosed and DrawType in Radar and Polar Charts to an Application 
-{% highlight xml %}
 
+
+{% tabs %}
+{% highlight xml %}
 
 Polar Chart
 
@@ -4684,6 +4445,7 @@ ChartRadarType.SetRadarSymbol(Series1, this.Resources["sym"] as DataTemplate);
 ChartRadarType.SetDrawType(Area1, ChartRadarDrawType.Line);    ChartRadarType.SetIsClosed(Area1, true);
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Stacking Charts
 
@@ -4706,7 +4468,7 @@ The Fast Stacking Column chart is added in the Enum of type ChartTypes.
 
 ### Data Requirements
 
-_Data Requirement_
+
 
 <table>
 <tr>
@@ -4728,7 +4490,6 @@ one or more</td></tr>
 
 ### Custom StackingColumn100 Properties
 
-_Properties_
 
 <table>
 <tr>
@@ -4749,7 +4510,6 @@ The y-axis range is set between 0 and 100If true, the y-axis range is set betwee
 
 While setting template the following parameters can be used:
 
-_Template Parameter_
 
 <table>
 <tr>
@@ -4799,24 +4559,23 @@ ChartSeries</td><td>
 reference to series-owner</td></tr>
 </table>
 The following code example illustrates the usage of Fast Stacking Column charts.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Type="FastStackingColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 ChartSeries series = new ChartSeries();
 
 series.Type = ChartTypes.FastStackingColumn;
 {% endhighlight  %}
+
+{% endtabs %}
+
 Run the sample. 
 
 A Fast Stacking Column chart is displayed pertaining to the data source it is bound to.
@@ -4887,9 +4646,6 @@ Line charts with missing data points can be drawn with gaps for the missing poin
 SetBreakLineForNonIndexedData is used to specify whether the line segments could be drawn with break lines. SetBreakLineForDoublePointsDistanceMoreThan is used to set the distance for lines that should be broken.
 {% highlight c# %}
 
-
-
-
 ChartLineType.SetBreakLineForNonIndexedData(Chart1.Areas[0].Series[0], true);
 
 ChartLineType.SetBreakLineForDoublePointsDistanceMoreThan(Chart1.Areas[0].Series[0], 1);
@@ -4905,17 +4661,12 @@ N> This feature can be applied for both Line and Spline type charts. This can be
 Break Lines for Spline Type
 {% highlight c# %}
 
-
-
-
 ChartSplineType.SetBreakLineForNonIndexedData(Chart1.Areas[0].Series[0], true);
 
 ChartSplineType.SetBreakLineForDoublePointsDistanceMoreThan(Chart1.Areas[0].Series[0], 1);
 {% endhighlight  %}
 The following code could be used to specify the break distance for axis with DateTime ValueTypes.
 {% highlight c# %}
-
-
 
 
 ChartLineType.SetBreakLineForTimeSpanPointsDistanceMoreThan(Chart2.Areas[0].Series[0], new TimeSpan(1, 0, 0, 0));
@@ -4928,8 +4679,6 @@ N> This feature can be applied for non-indexed data alone. It cannot be applied 
 ## Heat Map Control
 
 HeatMapControl is a control that lays out bound child items in rectangles, whose area is based on their "weight", and whose color is based on their "color weight". It can also be bound to hierarchical data.
-
-_Property Table_
 
 <table>
 <tr>
@@ -4988,7 +4737,6 @@ The heat map control contains the IsGradientBrush property, which supports linea
 
 ### Property Details
 
-_Property Table_
 
 <table>
 <tr>
@@ -5013,7 +4761,6 @@ LowestWeightGradient,  MedianWeightGradient,                          HighestWei
 
 The following code is used to set a gradient brush for a heat map control.
 {% highlight xml %}
-
 
 <syncfusion:HeatMapControl Grid.Row="0" x:Name="heatMap" IsGradientBrush="True"  LowestWeightGradient="{StaticResource SeriesBInterior}"  
 
@@ -5056,7 +4803,7 @@ The HeatMap control ships with the enhancement of customizing the text within th
 
 ### Properties
 
-_Properties_
+
 
 <table>
 <tr>
@@ -5084,34 +4831,28 @@ Enum</td></tr>
 Adding Text Wrapping Behavior in HeatMapItem to an Application
 
 To add the text wrapping support to the HeatMapItem:
+{% tabs %}
 {% highlight xml %}
 
-
-
-
 <syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Wrap"/>
-
-
 
 {% endhighlight  %}
 {% highlight c# %}
 
-
  heatMap.TextIntersectAction = TextIntersectActions.Wrap;
 
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img124.png)
 
 
 
 To shrink the text for the HeatMapItem.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Shrink"/>
 
@@ -5126,6 +4867,7 @@ To shrink the text for the HeatMapItem.
 
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img125.png)
 
@@ -5152,10 +4894,9 @@ It can be used for rendering large number of points like Stock Market Analysis.
 Adding FastScatter to an Application 
 
 FastScatter and FastColumn Chart types can be added using the property Type in ChartSeries.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 //Add FastScatter chart type to the series.
 
@@ -5166,26 +4907,18 @@ FastScatter and FastColumn Chart types can be added using the property Type in C
 {% highlight c# %}
 
 
-
-
-
 //Add FastScatter chart type to the series.
-
-
 
 Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 
-
-
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastScatter.png](Chart-Controls_images/Chart-Controls_img126.png)
 
+{% tabs %}
 {% highlight xml %}
-
-
-
-
 
 //Add FastColumn chart type to the series.
 
@@ -5198,18 +4931,14 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 {% highlight c# %}
 
 
-
-
-
 //Add FastColumn chart type to the series.
-
 
 
 Chart1.Areas[0].Series[0].Type = ChartTypes.FastColumn;
 
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastColumn.png](Chart-Controls_images/Chart-Controls_img127.png)
 
@@ -5218,10 +4947,9 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastColumn;
 Customizing the Height and Width of the Fast Scatter Chart
 
 You can modify the size of the Fast Scatter chart by using the Height and Width properties of FastScatter-Type, as shown in the following code example:
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Name="Series1" Type="FastScatter" 
 
@@ -5232,12 +4960,11 @@ DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
 ChartFastScatterType.SetFastScatterWidth(seriesname, 30);
 ChartFastScatterType.SetFastScatterHeight(seriesname, 30);
+
 {% endhighlight  %}
+{% endtabs %}
 
 ## Custom Charts
 
@@ -5254,7 +4981,8 @@ To set the Custom type feature in chart application:
 1. Initialize the Custom Enum value to the Type property of ChartSeries control.
 
 
-
+   ~~~ xaml
+   
 			   <syncfusion:ChartSeries Type="Custom" />
 
 
@@ -5268,14 +4996,14 @@ To set the Custom type feature in chart application:
 				chart.Areas[0].Series[0].Type = ChartTypes.Custom;
 
 
-
+   ~~~
 
 
 4. Create a new custom class, which should inherit the Segment abstract class. 
 5. Create another new custom class, which should be inherited by ChartType class and override the CalculateSegments method to customize the new chart type based on requirements. 
 6. In these CalculateSegments methods, add create new Segment object and add it to the Segments property of ChartSeries control.
 
-
+   ~~~ csharp
 
 
 
@@ -5321,19 +5049,22 @@ To set the Custom type feature in chart application:
 
 				 }
 
-
+   ~~~
 
 7. Create a new object for your own custom class and initialize it to the ChartType property of ChartSeries control.
 
 
-
+   ~~~ csharp
+   
 					//Inititalize the customized Hybrid Area line type to ther Series.
 
 					chart.Areas[0].Series[0].ChartType = new HybridChartType();
 
+   ~~~
+   
 8. Finally, define a Template design for your new custom chart type by initializing the Template property of ChartSeries control.
 
-
+   ~~~ xaml
 
 				<!--Hybird Area Line Type Template-->
 
@@ -5366,13 +5097,12 @@ To set the Custom type feature in chart application:
 					chart.Areas[0].Series[0].Template = App.Current.Resources["HybirdAreaLineType"] as DataTemplate;
 
 
+   ~~~
 
 
+   ![](Chart-Controls_images/Chart-Controls_img128.png)
 
-   ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/CustomChartTYpe.png](Chart-Controls_images/Chart-Controls_img128.png)
 
-
-   {:.prettyprint}
 Sample Link
 
 To run the UI Chart WPF samples:
@@ -5394,5 +5124,5 @@ To run the UI Chart WPF samples:
 
 6. Run the sample by opening the project file.
 
-{:.prettyprint}
+
 

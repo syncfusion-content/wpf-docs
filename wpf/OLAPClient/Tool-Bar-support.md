@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool-Bar-support
+title: Tool Bar support| OLAP Client  | Wpf | Syncfusion
 description: tool bar support
 platform: wpf
 control: OLAP Client 
@@ -19,7 +19,7 @@ This toolbar contains menus to invoke the particular operation of OLAP Client.
 
 
 
-_Toolbar Table_
+### Toolbar Table
 
 <table>
 <tr>
@@ -176,7 +176,7 @@ By using the menus in the OLAP ChartToolBar, the user can customise the appearan
 
 The following is the list of options in the OLAP Chart Tool Bar.
 
-_List of options in the_ _OLAP Chart Tool Bar_
+### List of options in the_ _OLAP Chart Tool Bar
 
 <table>
 <tr>
@@ -269,7 +269,7 @@ By using the menus in the OLAP Grid Tool Bar, the user can customise the appeara
 
 The following are the options in the OLAP Grid Tool Bar.
 
-_List of options in the_ _OLAP Grid Tool Bar_
+### List of options in the_ _OLAP Grid Tool Bar
 
 <table>
 <tr>
@@ -354,7 +354,7 @@ You can customize the visibility of the toolbar options based on their requireme
 
 ### Properties
 
-_Properties_
+
 
 <table>
 <tr>
@@ -476,6 +476,7 @@ Boolean</td></tr>
 
 Adding/Removing OLAP Client toolbar options in an application
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -508,10 +509,10 @@ this.olapClient1.OlapClientToolBar.ShowConnectOptionButton = false;
 
 
 
-When set as True, then it shows from the toolbar.
+'When set as True, then it shows from the toolbar.
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 ### Sample Link

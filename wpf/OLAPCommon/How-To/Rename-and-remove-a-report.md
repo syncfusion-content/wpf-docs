@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rename-and-remove-a-report
+title: Rename and remove a report| OLAPCommon | Wpf | Syncfusion
 description: rename and remove a report
 platform: wpf
 control: OLAPCommon
@@ -15,6 +15,7 @@ Once the report collection is loaded with reports, you can rename or remove any 
 
 A report in the report collection of OlapDataManager can be renamed by invoking RenameReport method with arguments such as, index of the report and new name for the report or with old name and new name of the report. The following code snippet will illustrate this: 
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -34,6 +35,7 @@ olapDataManager.RenameReport(2, "SalesAnalysisOn2003")
 olapDataManager.RenameReport("RevenueAnalysis", "RevenueAnalysisOn2003")
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## RemoveReport
 
@@ -41,6 +43,7 @@ A report in the report collection of the OlapDataManager can be removed by invok
 
 The following code snippet will illustrate the removal of a report:
 
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.RemoveReport("SalesAnalysisOn2005");
@@ -52,4 +55,4 @@ olapDataManager.RemoveReport("SalesAnalysisOn2005");
 olapDataManager.RemoveReport("SalesAnalysisOn2005")
 
 {% endhighlight  %}
-
+{% endtabs %}

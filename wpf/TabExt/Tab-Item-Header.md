@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tab-Item-Header
+title: Tab Item Header | TabControlExt | wpf | Syncfusion
 description: tab item header
 platform: wpf
 control: TabControlExt
@@ -17,10 +17,9 @@ You can add images to the Tab Item headers by using the Image property of the Ta
 
 The following code snippet illustrates how to add images to the tab item header.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabcontrolExt  -->
 
@@ -35,6 +34,7 @@ The following code snippet illustrates how to add images to the tab item header.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -80,15 +80,28 @@ tabControlExt.Items.Add(tabItemExt1);
 //Adding control to the stack panel
 
 stackPanel.Children.Add(tabControlExt);
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg)
 
 
-See Also
 
-Editing the Tab Item Header at Run Time, Tab Item Header Image, Tab Item Header Image Alignment, Context Menu for the Tab Item
+{% seealso %}
+
+Editing the Tab Item Header at Run Time 
+
+Tab Item Header Image
+
+Tab Item Header Image Alignment 
+
+Context Menu for the Tab Item
+
+
+{% endseealso %}
+
 
 ## Image Alignment
 
@@ -103,10 +116,9 @@ You can align the Tab Item header image by using the ImageAlignment property of 
 
 To set the tab item header image alignment as "AboveText", use the below code.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabControlExt  -->
 
@@ -172,16 +184,13 @@ tabControlExt.Items.Add(tabItemExt1);
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+
 {% endhighlight %}
 
 
-
+{% endtabs %}
 
 ![](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg)
-
-
-
-
 
 ### ImageAlignmentChanged Event
 
@@ -191,8 +200,6 @@ The following code snippet illustrates handling the ImageAlignmentChanged event.
 
 
 {% highlight c# %}
-
-
 
 /// <summary>
 
@@ -217,12 +224,21 @@ tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 }
 
 }
+
 {% endhighlight %}
 
 
 In the above example, when the ImageAlignment property is set to LeftOfText, the Tab Item header looks enlarged. To avoid this, the TabItemSize property is set as ShrinkToFit.
 
-See Also
+{% seealso %}
 
-Editing the Tab Item Header at Run Time, Tab Item Header Image, Tab Item Header Image Alignment, Context Menu for the Tab Item
+Editing the Tab Item Header at Run Time
 
+Tab Item Header Image
+
+Tab Item Header Image Alignment
+
+Context Menu for the Tab Item
+
+
+{% endseealso %}

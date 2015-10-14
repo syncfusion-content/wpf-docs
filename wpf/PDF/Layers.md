@@ -17,8 +17,6 @@ PdfPageLayer is used to create unlimited levels of layers and sub-layers in a pa
 
 {% highlight c# %}
 
-
-
 //Creates PDF document.
 
 PdfDocument document = new PdfDocument();
@@ -113,9 +111,9 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates PDF document.
 
@@ -208,7 +206,9 @@ graphics.DrawArc(pen, 0, 0, 50, 50, -60, 60)
 'Saves to disk.
 
 document.Save("Sample.pdf")
+
 {% endhighlight %}
+
 
 ## Modifying PDF Layer in the Loaded PDF document
 
@@ -217,8 +217,6 @@ You can remove the layers from an exsisting document by loading the layer from t
 PdfLoadedPage contain its own PdfPageLayerCollection. You can remove the layer by its name using Remove method.
 
 {% highlight c# %}
-
-
 
 //Loads the document.
 
@@ -240,9 +238,9 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Load the document
 
@@ -263,7 +261,9 @@ coll.Remove("Layer 1")
 'Save to disk
 
 document.Save("Sample.pdf")
+
 {% endhighlight %}
+
 
 ## Toggle the visibility of the layer
 
@@ -276,8 +276,6 @@ You can toggle the visibility of the PdfLayer when printing the PDF document usi
 
 
 {% highlight c# %}
-
-
 
 PdfDocument document = new PdfDocument();
 
@@ -321,9 +319,9 @@ document.Save("Sample.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 Dim document As New PdfDocument()
 

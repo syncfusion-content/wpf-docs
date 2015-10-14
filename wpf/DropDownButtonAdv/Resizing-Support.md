@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing-Support
+title: Resizing Support| | Wpf | Syncfusion
 description: resizing support
 platform: wpf
 control: DropDownButtonAdv
@@ -19,15 +19,15 @@ Setting IsResizable property to true:
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
-   <shared:DropDownMenuGroup IsResizable=”True”>
+<shared:DropDownMenuGroup IsResizable=”True”>
 
-       <shared:DropDownMenuItem Header="Menu Item 1"/>
+<shared:DropDownMenuItem Header="Menu Item 1"/>
 
-       <shared:DropDownMenuItem Header="Menu Item 2"/>
+<shared:DropDownMenuItem Header="Menu Item 2"/>
 
-       <shared:DropDownMenuItem Header="Menu Item 3"/>
+<shared:DropDownMenuItem Header="Menu Item 3"/>
 
-   </shared:DropDownMenuGroup>
+</shared:DropDownMenuGroup>
 
 </shared:DropDownButtonAdv>
 

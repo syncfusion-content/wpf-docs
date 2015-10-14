@@ -1,45 +1,37 @@
 ---
 layout: post
-title: Appendix
+title: Appendix | SfDiagram | wpf | Syncfusion
 description: appendix
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Appendix
+# Appendix
 
 The following topics are discussed in the following section:
 
 * Rendering
 * Bitwise Operations
 
-Rendering
+## Rendering
 
 Diagram consists of many internal controls like Node, Connector, Port, Annotations, and so on. These controls can be added and manipulated in different ways. This has been discussed in detail in the following topics:
-
-
 
 * Diagram Objects are used for representing Diagram Elements
 * Usage of Scenario, Advantages, and Disadvantages of Diagram Objects
 * Mapping a View
 * Workflow
 
-
-
-Diagram Objects used for representing Diagram Elements
-
-
+### Diagram Objects used for representing Diagram Elements
 
 SfDiagram uses various data types to represent Diagram Objects; all data types must implement the corresponding interfaces. The supported data types are listed in the following table:
 
-
-
 <table>
 <tr>
-<td>
-Diagram Element</td><td colspan = "3">
-Diagram Object</td></tr>
+<th>
+Diagram Element</th><th colspan = "3">
+Diagram Object</th></tr>
 <tr>
 <td>
 </td><td>
@@ -84,22 +76,17 @@ SelectorViewModel</td><td>
 Selector</td></tr>
 </table>
 
-
-Usage of Scenario, Advantages and Disadvantages of Diagram Objects
-
-
+### Usage of Scenario, Advantages and Disadvantages of Diagram Objects
 
 The following table illustrates the usage of scenario, advantages and disadvantages of Diagram Objects.
 
-
-
 <table>
 <tr>
-<td>
-Diagram Object</td><td>
-Usage Scenario</td><td>
-Advantages</td><td>
-Disadvantages</td></tr>
+<th>
+Diagram Object</th><th>
+Usage Scenario</th><th>
+Advantages</th><th>
+Disadvantages</th></tr>
 <tr>
 <td>
 Interface</td><td rowspan = "2">
@@ -119,27 +106,18 @@ Easy access to View anywhere.Simpler and easy to use.</td><td>
 When requirements keep growing, huge implementation in a single class can make it unclear.Trying to access this object in a Non-UI thread leads to an exception. During Virtualization, performance and memory usage are not as good as using Non-UI objects.</td></tr>
 </table>
 
-
-Mapping View for Non-UI Objects
-
-
+### Mapping View for Non-UI Objects
 
 A Non-UI element can be visualized as a Node, Connector or any Diagram Element by using the following methods:
-
-
 
 * ViewDictionary
 * Calling Virtual Methods
 
-
-
-ViewDictionary
+### ViewDictionary
 
 ViewDictionary is used for creating and reusing Views for Non-UI elements. Scrolling in Diagram with Virtualization enabled causes objects to get into view and off view very frequently. This ViewDictionary recycles the view by caching the view when an object goes off view, and reuses the same view when another object comes into view. This improves the performance of SfDiagram that has a huge set of Diagrams by keeping the count of visuals to a minimum.
 
-
-
-ViewDictionary consists of a collection of DiagramKeyValue<DataTemplate>; a particular Non-UI object is mapped to a DataTemplate by using a Key. The criteria for mapping are as follows:
+ViewDictionary consists of a collection of DiagramKeyValue &lt;DataTemplate&gt; a particular Non-UI object is mapped to a DataTemplate by using a Key. The criteria for mapping are as follows:
 
 1. Key specified in Non-UI element and the DiagramKeyValue should be equal.
 2. If Key is a Type, the Non-UI element’s Type should be assignable to key set to DiagramKeyValue.
@@ -156,11 +134,9 @@ The following steps illustrate how to add, delete or recycle a View from the Vie
 
 
 
-Calling Virtual Methods
+### Calling Virtual Methods
 
 When there is no View found in the ViewDictionary, following virtual methods can be called to get a view. As these are virtual methods, they can be overridden by deriving the SfDiagram class. The following virtual methods are used to create a View for Non-UI elements.
-
-
 
 * Node - SfDiagram.GetNodeForItemOverride()
 * Connector - SfDiagram.GetConnectorForItemOverride()
@@ -169,11 +145,9 @@ When there is no View found in the ViewDictionary, following virtual methods can
 
 
 
-Workflow
+### Workflow
 
 The following is the internal workflow for creating a view on Diagram Objects:
-
-
 
 1. Add objects to be visualized into the Diagram.
 2. When the added object is already a View, it can be used directly.
@@ -183,85 +157,53 @@ The following is the internal workflow for creating a view on Diagram Objects:
 6. The Non-UI object is set as the Data Context for the view that is created or reused dynamically.
 7. View is ready for use.
 
-
-
 ![](Appendix_images/Appendix_img1.png)
-{:.image }
 
-
-
-
-Bitwise Operations
-
-
-
-
+## Bitwise Operations
 
 In this section, Bitwise Operations are illustrated by using Graph Constraints. The same can be reproduced while working with Node Constraints, Connector Constraints or Port Constraints
 
 
-Add Operation
-
-
+### Add Operation
 
 You can add or enable multiple values at a time by using Bitwise ‘|’ (OR) operator.
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 SfDiagram diagramcontrol=new SfDiagram();
 
 diagramcontrol.Constraints = GraphConstraints.Pannable | GraphConstraints.Zoomable;
 
-
+{% endhighlight %}
 
 In the preceding example, SfDiagram control is both Pannable and Zoomable.
 
-
-
-Remove Operation
-
-
+### Remove Operation
 
 You can remove or disable values by using Bitwise ‘&~’ (XOR) operator.
 
-
-
-[C#]
-
+{% highlight c# %}
 
 SfDiagram diagramcontrol=new SfDiagram();
 
 diagramcontrol.Constraints = diagramcontrol.Constraints &~ GraphConstraints.Zoomable;
 
+{% endhighlight %}
 
 In the preceding example, Zoomable property is disabled in SfDiagram control, but all the other constraints are enabled.
 
-
-Check Operation
-
-
+### Check Operation
 
 You can check any value by using Bitwise ‘&’ (AND) operator.
 
-
-
-[C#]
-
+{% highlight c# %}
 
 SfDiagram diagramcontrol=new SfDiagram();
 
 if((diagramcontrol.Constraints & GraphConstraints.Zoomable)== GraphConstraints.Zoomable)
 
+{% endhighlight %}
 
 In the preceding example, a check is made on whether the zoom constraints are enabled in the SfDiagram control. The expression returns a zoom constraint, when the SfDiagram control constraints have zoom constraints.
 
-
-
-![](Appendix_images/Appendix_img2.jpeg)
-{:.image }
-_Note_: _ZoomPan property needs to be enabled for the above settings to take effect._
-
+N> ZoomPan property needs to be enabled for the above settings to take effect.

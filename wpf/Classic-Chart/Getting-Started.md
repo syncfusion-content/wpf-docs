@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Chart(Classic) | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Chart (Classic)
@@ -40,14 +40,12 @@ The complete summary of the features of the Chart control for WPF are listed as 
 * Animation feature is added to the chart with multiple animation options. 
 * Annotation with various Predefined shapes can attached to the chart.
 * Legend icons can be displayed according to the corresponding Chart Type.
-## Elaborate Structure of Chart Control 
 
+## Elaborate Structure of Chart Control 
 
 A chart is composed of various sub elements such as legends, areas, toolbars, headers, and footers. The following screenshot illustrates the elements of the Chart control.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-
-
 
 ## Creating a Simple Chart using Designer 
 
@@ -57,146 +55,118 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
 2. Drag the Chart control from the Toolbox and drop it to the designer. It generates a chart with two default series in the designer.
 
    ![](Getting-Started_images/Getting-Started_img3.png)
 
-
-
    The following code is auto generated in the XAML window.
 
-       
+   ~~~ xaml    
 
-				<syncfusion:Chart HorizontalAlignment="Left" Margin="10,10,0,0" Name="chart1"      
+		<syncfusion:Chart HorizontalAlignment="Left" Margin="10,10,0,0" Name="chart1"      
 
-													VerticalAlignment="Top">
+											VerticalAlignment="Top">
 
-					<syncfusion:ChartArea ZoomInCoefficient="0.5" ZoomOutCoefficient="2">
+			<syncfusion:ChartArea ZoomInCoefficient="0.5" ZoomOutCoefficient="2">
 
-						<syncfusion:ChartSeries Data="1,1,2,2,3,3,4,4,5,5,6,6" 
+				<syncfusion:ChartSeries Data="1,1,2,2,3,3,4,4,5,5,6,6" 
 
-																		SegmentWidthMode="Fixed"/>
+																SegmentWidthMode="Fixed"/>
 
-						<syncfusion:ChartSeries Data="1,2,2,3,3,4,4,5,5,3,6,2" 
+				<syncfusion:ChartSeries Data="1,2,2,3,3,4,4,5,5,3,6,2" 
 
-																		SegmentWidthMode="Fixed”/>
+																SegmentWidthMode="Fixed”/>
 
-					</syncfusion:ChartArea>
+			</syncfusion:ChartArea>
 
-				</syncfusion:Chart>
+		</syncfusion:Chart>
 
 
-
+   ~~~
+   
 3. Click the Expand button at the right corner of the chart area in the designer. It generates the Smart Tag for the chart area.
 
    ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/st.png](Getting-Started_images/Getting-Started_img4.png)
 
-
-
 4. You can reuse this default series or else you can delete them and add a new series using the Smart Tag. Use DataSource property of ChartSeries to have the data collection bound to chart series, and to visualize the data in various forms such as bar chart, column chart, pie, pyramid, or other chart types. Refer to the section Chart Series to know more about data-binding to a chart series.
+
 5. To add a title to the chart area, select the Properties tab in the chart area and enter a title for the chart area in the Header field.
-
-
 
    ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/HeaderProperty_HL.png](Getting-Started_images/Getting-Started_img5.png)
 
-
-
    ![](Getting-Started_images/Getting-Started_img6.png)
-
-
 
 6. To set the axis header, expand the PrimaryAxis and enter the axis header in the Header field. Similarly, you can do this for the SecondaryAxis.
 
    ![C:/Users/johnbowlinboscok/Desktop/UG Images/PrimaryAxisHeader_HL.png](Getting-Started_images/Getting-Started_img7.png)
 
-
-
    ![](Getting-Started_images/Getting-Started_img8.png)
-
-
 
 7. To add a legend to the chart area, click Add Chart Area Legend in the Smart Tag.
 
    ![](Getting-Started_images/Getting-Started_img9.png)
 
-
-
    ![](Getting-Started_images/Getting-Started_img10.png)
-
-
 
    N> The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True._
 
-   ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowLegend_HL.png](Getting-Started_images/Getting-Started_img11.png)
-
-
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 8. To display the data labels, set the ShowDataLabels property of ChartSeries as True.
 
-   ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowDataLabels_HL.png](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
-
-
-   ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/DataLabels.png](Getting-Started_images/Getting-Started_img13.png)
-
-
+   ![](Getting-Started_images/Getting-Started_img13.png)
 
 9. To set icon text of the chart legend, set the Label property of ChartSeries.
 
-   ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/SeriesLabel_HL.png](Getting-Started_images/Getting-Started_img14.png)
-
-
+   ![](Getting-Started_images/Getting-Started_img14.png)
 
    ![](Getting-Started_images/Getting-Started_img15.png)
 
+   ~~~ xaml
 
+	 <syncfusion:Chart HorizontalAlignment="Left" Margin="10,10,0,0" Name="chart1”   
 
- 
+										 VerticalAlignment="Top">
 
-			 <syncfusion:Chart HorizontalAlignment="Left" Margin="10,10,0,0" Name="chart1”   
+			<syncfusion:ChartArea  ZoomInCoefficient="0.5" ZoomOutCoefficient="2" 
 
-												 VerticalAlignment="Top">
+														  Header="My First Chart Control">
 
-					<syncfusion:ChartArea  ZoomInCoefficient="0.5" ZoomOutCoefficient="2" 
+				<syncfusion:ChartArea.Legend>
 
-																  Header="My First Chart Control">
+					<syncfusion:ChartLegend />
 
-						<syncfusion:ChartArea.Legend>
+				</syncfusion:ChartArea.Legend>
 
-							<syncfusion:ChartLegend />
+				<syncfusion:ChartArea.SecondaryAxis>
 
-						</syncfusion:ChartArea.Legend>
+					<syncfusion:ChartAxis Header="Secondary Axis" />
 
-						<syncfusion:ChartArea.SecondaryAxis>
+				</syncfusion:ChartArea.SecondaryAxis>
 
-							<syncfusion:ChartAxis Header="Secondary Axis" />
+				<syncfusion:ChartArea.PrimaryAxis>
 
-						</syncfusion:ChartArea.SecondaryAxis>
+					<syncfusion:ChartAxis Header="Primary Axis" />
 
-						<syncfusion:ChartArea.PrimaryAxis>
+				</syncfusion:ChartArea.PrimaryAxis>
 
-							<syncfusion:ChartAxis Header="Primary Axis" />
+				<syncfusion:ChartSeries Label="FirstSeries" Data="1,1,2,2,3,3,4,4,5,5,6,6" 
 
-						</syncfusion:ChartArea.PrimaryAxis>
+								  SegmentWidthMode="Fixed" ShowDataLabels="True"/>
 
-						<syncfusion:ChartSeries Label="FirstSeries" Data="1,1,2,2,3,3,4,4,5,5,6,6" 
+				<syncfusion:ChartSeries Label="SecondSeries" 
 
-										  SegmentWidthMode="Fixed" ShowDataLabels="True"/>
+																Data="1,2,2,3,3,4,4,5,5,3,6,2" 
 
-						<syncfusion:ChartSeries Label="SecondSeries" 
+																SegmentWidthMode="Fixed" ShowDataLabels="True”/>
 
-																		Data="1,2,2,3,3,4,4,5,5,3,6,2" 
+	   </syncfusion:ChartArea>
 
-																		SegmentWidthMode="Fixed" ShowDataLabels="True”/>
-
-			   </syncfusion:ChartArea>
-
-		     </syncfusion:Chart>
+	 </syncfusion:Chart>
 			 
-   {:.prettyprint}
+   ~~~
    
 ### Chart Control Smart Tag Support
 
@@ -206,13 +176,9 @@ The following screenshot illustrates the Smart Tag for chart.
 
 ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/Chart_ST.png](Getting-Started_images/Getting-Started_img16.png)
 
-
-
 The following screenshot illustrates the Smart Tag for chart area.
 
 ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartArea_ST.png](Getting-Started_images/Getting-Started_img17.png)
-
-
 
 The following screenshot illustrates the Smart Tag for chart legend.
 
@@ -225,27 +191,30 @@ The following screenshot illustrates the Smart Tag for chart legend.
 To create a data-binding application for Chart control:
 
 1. Add the following Syncfusion assembly references to your project.
-   1. Syncfusion.Chart.WPF
-   2. Syncfusion.Shared.WPF
-3. Syncfusion.Core
+
+   I. Syncfusion.Chart.WPF
+   
+   II. Syncfusion.Shared.WPF
+   
+   III. Syncfusion.Core
+   
 2. Create a namespace reference to Syncfusion.Chart.WPF using the Syncfusion global namespace reference schemas.syncfusion.com. The Chart control is available in the Syncfusion.Chart.WPF namespace of Syncfusion.Chart.WPF dll.
 
+   ~~~ xaml
 
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
+   ~~~		
 
+   ~~~ csharp		
 
-                xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		using Syncfusion.Windows.Chart;
 
-
-
-
-   using Syncfusion.Windows.Chart;
-
+   ~~~
+   
 3. To create a simple series, initialize the Chart, ChartArea,and ChartSeries as in the following code example.
 
-
-
-
+   ~~~ xaml
 
 					<syncfusion:Chart>
 
@@ -257,374 +226,357 @@ To create a data-binding application for Chart control:
 
 					</syncfusion:Chart>
 
-
-
-
-
-
-
+   ~~~    
+   
+   ~~~ csharp
+   
 		Chart chart = new Chart();
 
-					//Adding a new area.
+		//Adding a new area.
 
-					chart.Areas.Add(new ChartArea());
+		chart.Areas.Add(new ChartArea());
 
-					//Adding a new series.
+		//Adding a new series.
 
-					chart.Areas[0].Series.Add(new ChartSeries());
+		chart.Areas[0].Series.Add(new ChartSeries());
 
-					//Assigning window's content property.
+		//Assigning window's content property.
 
-					this.Content = chart;
+		this.Content = chart;
 
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img19.png)
 
-
-
 4. To set a header to the chart area, use the Header property of ChartArea.
 
+   ~~~ xaml
+  
+		 <syncfusion:Chart>
 
+		 <syncfusion:ChartArea Header="Student Participation in Sports">
 
-				 <syncfusion:Chart>
+					 <syncfusion:ChartSeries/>
 
-				 <syncfusion:ChartArea Header="Student Participation in Sports">
+			   </syncfusion:ChartArea>
 
-							 <syncfusion:ChartSeries/>
+		</syncfusion:Chart>
 
-					   </syncfusion:ChartArea>
+   ~~~ 
+   
+   ~~~ csharp
 
-				</syncfusion:Chart>
+		Chart chart = new Chart();
 
+		//Adding a new area.
 
+		chart.Areas.Add(new ChartArea());
 
+		//Adding a new series.
 
+		chart.Areas[0].Series.Add(new ChartSeries());
 
-				Chart chart = new Chart();
+		//Assigning Header to chart area.
 
-				//Adding a new area.
+		chart.Areas[0].Header = "Student Participation in Sports";
 
-				chart.Areas.Add(new ChartArea());
+		//Assigning window's content property.
 
-				//Adding a new series.
+		this.Content = chart;               
 
-				chart.Areas[0].Series.Add(new ChartSeries());
-
-				//Assigning Header to chart area.
-
-				chart.Areas[0].Header = "Student Participation in Sports";
-
-				//Assigning window's content property.
-
-				this.Content = chart;               
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img20.png)
-
-
 
 5. To set headers to the primary and secondary axes, use the Header property of ChartAxis.
 
 
+   ~~~ xaml
+
+		<syncfusion:Chart>
+
+			<syncfusion:ChartArea Header="Student Participation in Sports">
+
+				<syncfusion:ChartArea.PrimaryAxis>
+
+					 <syncfusion:ChartAxis Header="Sport Name"/>
+
+				</syncfusion:ChartArea.PrimaryAxis>
+
+				<syncfusion:ChartArea.SecondaryAxis>
+
+					 <syncfusion:ChartAxis Header="Interest in Millions"/>
+
+				</syncfusion:ChartArea.SecondaryAxis>
+
+				<syncfusion:ChartSeries/>
+
+			</syncfusion:ChartArea>
+
+	   </syncfusion:Chart>
+
+   ~~~
+   
+   ~~~ csharp
+
+		Chart chart = new Chart();
+
+		//Adding a new area.
+
+		chart.Areas.Add(new ChartArea());
+
+		//Adding a new series.
+
+		chart.Areas[0].Series.Add(new ChartSeries());
+
+		//Assigning Header to chart area.
+
+		chart.Areas[0].Header = "Student Participation in Sports";
+
+		//Adding header to primary axis
+
+		chart.Areas[0].PrimaryAxis.Header = "Sport Name";
+
+		//Adding header to secondary axis
+
+		chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
+
+		//Assigning window's content property.
+
+		this.Content = chart;
 
 
-
-					<syncfusion:Chart>
-
-						<syncfusion:ChartArea Header="Student Participation in Sports">
-
-							<syncfusion:ChartArea.PrimaryAxis>
-
-								 <syncfusion:ChartAxis Header="Sport Name"/>
-
-							</syncfusion:ChartArea.PrimaryAxis>
-
-							<syncfusion:ChartArea.SecondaryAxis>
-
-								 <syncfusion:ChartAxis Header="Interest in Millions"/>
-
-							</syncfusion:ChartArea.SecondaryAxis>
-
-							<syncfusion:ChartSeries/>
-
-						</syncfusion:ChartArea>
-
-				   </syncfusion:Chart>
-
-
-
-
-
-		
-
-					Chart chart = new Chart();
-
-					//Adding a new area.
-
-					chart.Areas.Add(new ChartArea());
-
-					//Adding a new series.
-
-					chart.Areas[0].Series.Add(new ChartSeries());
-
-					//Assigning Header to chart area.
-
-					chart.Areas[0].Header = "Student Participation in Sports";
-
-					//Adding header to primary axis
-
-					chart.Areas[0].PrimaryAxis.Header = "Sport Name";
-
-					//Adding header to secondary axis
-
-					chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
-
-					//Assigning window's content property.
-
-					this.Content = chart;
-
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img21.png)
 
-
-
 6. Use the DataSource property of ChartSeries to bind collection objects with the chart series and to visualize data from collection.
+
 7. Create a class to represent a chart point. Each instance of this class is visualized as a chart point in the chart series_._ Make sure that the class has two properties, one for positioning a point along x-axis and another one for positioning a point along y-axis.
-
-
 
    N> Y mapping property should be a double compatible type, and x mapping property can be double string, DateTime, TimeSpan, and etc.
 
+   ~~~ csharp
+   
+		public class Sport
 
+		{
 
-				public class Sport
+			private int sportid;
+
+			private string sportname;
+
+			private double interest;
+
+			public Sport()
+
+			{        }
+
+			public Sport(int sportid, string sportname, double interests)
+
+			{
+
+				this.sportid = sportid;
+
+				this.sportname = sportname;
+
+				this.interest = interests;
+
+			}
+
+			public int SportID
+
+			{
+
+				get { return sportid; }
+
+				set
 
 				{
 
-					private int sportid;
-
-					private string sportname;
-
-					private double interest;
-
-					public Sport()
-
-					{        }
-
-					public Sport(int sportid, string sportname, double interests)
-
-					{
-
-						this.sportid = sportid;
-
-						this.sportname = sportname;
-
-						this.interest = interests;
-
-					}
-
-					public int SportID
-
-					{
-
-						get { return sportid; }
-
-						set
-
-						{
-
-							sportid = value;
-
-						}
-
-					}
-
-					public string SportName
-
-					{
-
-						get { return sportname; }
-
-						set
-
-						{
-
-							sportname = value;
-
-						}
-
-					}
-
-					public double Interest
-
-					{
-
-						get { return interest; }
-
-						set
-
-						{
-
-							interest = value;
-
-						}
-
-					}
+					sportid = value;
 
 				}
 
+			}
+
+			public string SportName
+
+			{
+
+				get { return sportname; }
+
+				set
+
+				{
+
+					sportname = value;
+
+				}
+
+			}
+
+			public double Interest
+
+			{
+
+				get { return interest; }
+
+				set
+
+				{
+
+					interest = value;
+
+				}
+
+			}
+
+		}
+
+				
+   ~~~
+   
 8. Create a Model class with a collection property which is a collection of the previously defined class.  For more details about the types of collection that chart supports refer to the section 4.2.2. Populate the collection property. In the following code example, the collection is populated using simple code simulation.
 
+   ~~~ csharp
 
+		// Namespace to be included for ObservableCollection.
 
-				// Namespace to be included for ObservableCollection.
+		using System.Collections.ObjectModel;
 
-				using System.Collections.ObjectModel;
+		public class Model
 
-				public class Model
+		{
 
-				{
+			public Model()
 
-					public Model()
+			{
 
-					{
+				SportDetails = new ObservableCollection<Sport>();
 
-						SportDetails = new ObservableCollection<Sport>();
+				SportDetails.Add(new Sport(101, "Golf", 9));
 
-						SportDetails.Add(new Sport(101, "Golf", 9));
+				SportDetails.Add(new Sport(102, "Soccer", 37));
 
-						SportDetails.Add(new Sport(102, "Soccer", 37));
+				SportDetails.Add(new Sport(103, "Hockey", 10));
 
-						SportDetails.Add(new Sport(103, "Hockey", 10));
+				SportDetails.Add(new Sport(104, "Rugby", 17));
 
-						SportDetails.Add(new Sport(104, "Rugby", 17));
+				SportDetails.Add(new Sport(105, "Shuttle", 30));
 
-						SportDetails.Add(new Sport(105, "Shuttle", 30));
+				SportDetails.Add(new Sport(106, "Cricket", 15));
 
-						SportDetails.Add(new Sport(106, "Cricket", 15));
+				SportDetails.Add(new Sport(107, "Baseball", 6));
 
-						SportDetails.Add(new Sport(107, "Baseball", 6));
+				SportDetails.Add(new Sport(108, "Tennis", 10));
 
-						SportDetails.Add(new Sport(108, "Tennis", 10));
+			}
 
-					}
+			public ObservableCollection<Sport> SportDetails
 
-					public ObservableCollection<Sport> SportDetails
+			{
 
-					{
+				get;
 
-						get;
+				set;
 
-						set;
+			}
 
-					}
+		}
 
-				}
-
+   ~~~ 
+   
 9. Bind the collection property to the DataSource property of ChartSeries.
 
+   ~~~ xaml
+
+	 //Reference to Application
+
+		  xmlns:local="clr-namespace:GettingStarted"
+
+		  ..........
+
+		  <Grid.DataContext>
+
+				<local:Model/>
+
+		  </Grid.DataContext>
+
+		 <syncfusion:Chart>
+
+			<syncfusion:ChartArea Header="Student Participation in Sports">
+
+				<syncfusion:ChartArea.PrimaryAxis>
+
+					 <syncfusion:ChartAxis Header="Sport Name"/>
+
+				</syncfusion:ChartArea.PrimaryAxis>
+
+				<syncfusion:ChartArea.SecondaryAxis>
+
+					 <syncfusion:ChartAxis Header="Interest in Millions"/>
+
+				</syncfusion:ChartArea.SecondaryAxis>
+
+				<syncfusion:ChartSeries DataSource="{Binding SportDetails}"/>
+
+			</syncfusion:ChartArea>
+
+	   </syncfusion:Chart>
 
 
-				 //Reference to Application
+   ~~~ 
+   
+   ~~~ csharp
 
-					  xmlns:local="clr-namespace:GettingStarted"
+   Chart chart = new Chart();
 
+	   //Adding a new area.
 
+	   chart.Areas.Add(new ChartArea());
 
-					  ..........
+	   //Adding a new series.
 
+	   chart.Areas[0].Series.Add(new ChartSeries());
 
+	   //Assigning Header to chart area.
 
-					 <Grid.DataContext>
+	   chart.Areas[0].Header = "Student Participation in Sports";
 
-							<local:Model/>
+	   //Adding header to primary axis
 
-					  </Grid.DataContext>
+	   chart.Areas[0].PrimaryAxis.Header = "Sport Name";
 
-					 <syncfusion:Chart>
+	   //Adding header to secondary axis
 
-						<syncfusion:ChartArea Header="Student Participation in Sports">
-
-							<syncfusion:ChartArea.PrimaryAxis>
-
-								 <syncfusion:ChartAxis Header="Sport Name"/>
-
-							</syncfusion:ChartArea.PrimaryAxis>
-
-							<syncfusion:ChartArea.SecondaryAxis>
-
-								 <syncfusion:ChartAxis Header="Interest in Millions"/>
-
-							</syncfusion:ChartArea.SecondaryAxis>
-
-							<syncfusion:ChartSeries DataSource="{Binding SportDetails}"/>
-
-						</syncfusion:ChartArea>
-
-				   </syncfusion:Chart>
-
-
-
-
-
-			   Chart chart = new Chart();
-
-				   //Adding a new area.
-
-				   chart.Areas.Add(new ChartArea());
-
-				   //Adding a new series.
-
-				   chart.Areas[0].Series.Add(new ChartSeries());
-
-				   //Assigning Header to chart area.
-
-				   chart.Areas[0].Header = "Student Participation in Sports";
-
-				   //Adding header to primary axis
-
-				   chart.Areas[0].PrimaryAxis.Header = "Sport Name";
-
-				   //Adding header to secondary axis
-
-				   chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
+	   chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
 
 
 
-				   //Assigning DataContext with the model
+	   //Assigning DataContext with the model
 
-				   this.DataContext = new Model();
+	   this.DataContext = new Model();
 
-				   //Creating a new binding for DataSource
+	   //Creating a new binding for DataSource
 
-				   Binding dataSrcBinding = new Binding("SportDetails") 
+	   Binding dataSrcBinding = new Binding("SportDetails") 
 
-																	 { Source = this.DataContext };
+														 { Source = this.DataContext };
 
-				   // Binding sport details to Datasource 
+	   // Binding sport details to Datasource 
 
-				   BindingOperations.SetBinding(chart.Areas[0].Series[0],  
+	   BindingOperations.SetBinding(chart.Areas[0].Series[0],  
 
-																				ChartSeries.DataSourceProperty, 
+																	ChartSeries.DataSourceProperty, 
 
-																				dataSrcBinding);        
+																	dataSrcBinding);        
 
+	   //Assigning window's content property.
 
+	   this.Content = chart;
 
-				   //Assigning window's content property.
-
-				   this.Content = chart;
-
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img22.png)
 
@@ -632,127 +584,120 @@ To create a data-binding application for Chart control:
 
 10. If you do not have any model in your application, you can simply assign the DataSource with a collection object (which is a collection of objects of the class stated in point 7).
 
+    ~~~ csharp
 
+		// Namespace to be included for ObservableCollection.
 
-				// Namespace to be included for ObservableCollection.
+		using System.Collections.ObjectModel;
 
-				using System.Collections.ObjectModel;
+		public class SportCollection : ObservableCollection<Sport>
 
-				public class SportCollection : ObservableCollection<Sport>
+		{
 
-				{
+			public SportCollection()
 
-					public SportCollection()
+			{
 
-					{
+				this.Add(new Sport() { SportID = 101, SportName = "Golf", Interest = 9 });
 
-						this.Add(new Sport() { SportID = 101, SportName = "Golf", Interest = 9 });
+				this.Add(new Sport() { SportID = 102, SportName = "Soccer", Interest = 37 });
 
-						this.Add(new Sport() { SportID = 102, SportName = "Soccer", Interest = 37 });
+				this.Add(new Sport() { SportID = 103, SportName = "Hockey", Interest = 10 });
 
-						this.Add(new Sport() { SportID = 103, SportName = "Hockey", Interest = 10 });
+				this.Add(new Sport() { SportID = 104, SportName = "Rugby", Interest = 17 });
 
-						this.Add(new Sport() { SportID = 104, SportName = "Rugby", Interest = 17 });
+				this.Add(new Sport() { SportID = 105, SportName = "Shuttle", Interest = 30 });
 
-						this.Add(new Sport() { SportID = 105, SportName = "Shuttle", Interest = 30 });
+				this.Add(new Sport() { SportID = 106, SportName = "Cricket", Interest = 15 });
 
-						this.Add(new Sport() { SportID = 106, SportName = "Cricket", Interest = 15 });
+				this.Add(new Sport() { SportID = 107, SportName = "Baseball", Interest = 6 });
 
-						this.Add(new Sport() { SportID = 107, SportName = "Baseball", Interest = 6 });
+				this.Add(new Sport() { SportID = 108, SportName = "Tennis", Interest = 10 });
 
-						this.Add(new Sport() { SportID = 108, SportName = "Tennis", Interest = 10 });
+			}
 
-					}
-
-				}
-
-
-
-
-
-					  //Reference to application
-
-					xmlns:local="clr-namespace:GettingStarted"
-
-
-
-				 ..............
-
-
-
-					 <Window.Resources>
-
-						   <local:SportCollection x:Key="sportCollection"/>
-
-					 </Window.Resources>
-
-
-
-					 <syncfusion:Chart>
-
-						<syncfusion:ChartArea Header="Student Participation in Sports">
-
-							<syncfusion:ChartArea.PrimaryAxis>
-
-								 <syncfusion:ChartAxis Header="Sport Name"/>
-
-							</syncfusion:ChartArea.PrimaryAxis>
-
-							<syncfusion:ChartArea.SecondaryAxis>
-
-								 <syncfusion:ChartAxis Header="Interest in Millions"/>
-
-							</syncfusion:ChartArea.SecondaryAxis>
-
-							<syncfusion:ChartSeries DataSource="{StaticResource sportCollection}"/>
-
-						</syncfusion:ChartArea>
-
-				   </syncfusion:Chart>
-
-
-
+		}
 		
+    ~~~  
+   
+    ~~~ xaml
+   
+		  //Reference to application
 
-					Chart chart = new Chart();
+		xmlns:local="clr-namespace:GettingStarted"
 
-					//Adding a new area.
+	 ..............
 
-					chart.Areas.Add(new ChartArea());
+		 <Window.Resources>
 
-					//Adding a new series.
+			   <local:SportCollection x:Key="sportCollection"/>
 
-					chart.Areas[0].Series.Add(new ChartSeries());
+		 </Window.Resources>
 
-					//Assigning a header to chart area.
+		 <syncfusion:Chart>
 
-					chart.Areas[0].Header = "Student Participation in Sports";
+			<syncfusion:ChartArea Header="Student Participation in Sports">
 
-					//Adding header to primary axis
+				<syncfusion:ChartArea.PrimaryAxis>
 
-					chart.Areas[0].PrimaryAxis.Header = "Sport Name";
+					 <syncfusion:ChartAxis Header="Sport Name"/>
 
-					//Adding header to secondary axis
+				</syncfusion:ChartArea.PrimaryAxis>
 
-					chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
+				<syncfusion:ChartArea.SecondaryAxis>
 
-					// Assigning sport collection to Datasource 
+					 <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-					chart.Areas[0].Series[0].DataSource = new SportCollection();
+				</syncfusion:ChartArea.SecondaryAxis>
 
-					//Assigning Window's content property.
+				<syncfusion:ChartSeries DataSource="{StaticResource sportCollection}"/>
 
-					this.Content = chart;
+			</syncfusion:ChartArea>
+
+	   </syncfusion:Chart>
 
 
+    ~~~  
+   
+    ~~~ csharp
+		
+		Chart chart = new Chart();
+
+		//Adding a new area.
+
+		chart.Areas.Add(new ChartArea());
+
+		//Adding a new series.
+
+		chart.Areas[0].Series.Add(new ChartSeries());
+
+		//Assigning a header to chart area.
+
+		chart.Areas[0].Header = "Student Participation in Sports";
+
+		//Adding header to primary axis
+
+		chart.Areas[0].PrimaryAxis.Header = "Sport Name";
+
+		//Adding header to secondary axis
+
+		chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
+
+		// Assigning sport collection to Datasource 
+
+		chart.Areas[0].Series[0].DataSource = new SportCollection();
+
+		//Assigning Window's content property.
+
+		this.Content = chart;
+
+    ~~~
 
     ![](Getting-Started_images/Getting-Started_img23.png)
 
-
-
 11. Specify the BindingPathX and BindingPathsY with mapping names. The mapping names are simply the names of the properties whose value has to be taken for x-axis value and y-axis values, respectively. Running your project can have a chart with a column type loaded with the data points specified by you.
 
-
+    ~~~ xaml
 
 					 <syncfusion:Chart>
 
@@ -780,9 +725,9 @@ To create a data-binding application for Chart control:
 
 				   </syncfusion:Chart>
 
-
-
-
+    ~~~
+	
+	~~~ csharp
 
 					Chart chart = new Chart();
 
@@ -806,8 +751,6 @@ To create a data-binding application for Chart control:
 
 					chart.Areas[0].SecondaryAxis.Header = "Interest in Millions";
 
-
-
 					// Assigning sport collection to Datasource 
 
 					chart.Areas[0].Series[0].DataSource = new SportCollection();
@@ -825,15 +768,15 @@ To create a data-binding application for Chart control:
 					this.Content = chart;
 
 
-
+    ~~~
+	
     ![](Getting-Started_images/Getting-Started_img24.png)
-
-
 
 12. To add data labels to chart points, set ShowDataLabels property of ChartSeries as true. You can modify the default values and appearance of the labels using the AdornmentsInfo property of ChartSeries (instance of the ChartAdornmentsInfo). The ChartAdornmentsInfo class is used to configure the settings of data label positions, label contents, symbols, and etc.
 
 
-
+    ~~~ xaml
+	
 					 <syncfusion:Chart>
 
 						<syncfusion:ChartArea Header="Student Participation in Sports">
@@ -862,9 +805,9 @@ To create a data-binding application for Chart control:
 
 				   </syncfusion:Chart>
 
-
-
-
+    ~~~
+	
+	~~~ csharp
 
 					Chart chart = new Chart();
 
@@ -908,7 +851,7 @@ To create a data-binding application for Chart control:
 
 					this.Content = chart; 
 
-
+    ~~~
 
     ![](Getting-Started_images/Getting-Started_img25.png)
 
@@ -916,8 +859,8 @@ To create a data-binding application for Chart control:
 
 13. To add legends to the chart area, set ShowLegend property of ChartArea as true.
 
-
-
+    ~~~ xaml
+	
 					 <syncfusion:Chart>
 
 						<syncfusion:ChartArea ShowLegend="True” 
@@ -948,11 +891,11 @@ To create a data-binding application for Chart control:
 
 				   </syncfusion:Chart>
 
+    ~~~
+	
+	~~~ csharp
 
-
-		
-
-					   Chart chart = new Chart();
+					Chart chart = new Chart();
 
 					//Adding a new area.
 
@@ -998,17 +941,13 @@ To create a data-binding application for Chart control:
 
 					this.Content = chart;
 
-
-
-
+    ~~~
 
     ![](Getting-Started_images/Getting-Started_img26.png)
 
-
-
 14. To have an icon label in the legend, set the Label property of ChartSeries with a required string. To modify the default icon of the legend, use the LegendIcon property of ChartSeries. 
 
-
+    ~~~ xaml
 
 					   <syncfusion:Chart>
 
@@ -1043,8 +982,9 @@ To create a data-binding application for Chart control:
 				   </syncfusion:Chart>
 
 
-
-		
+    ~~~
+	
+	~~~ csharp
 
 					 Chart chart = new Chart();
 
@@ -1098,15 +1038,14 @@ To create a data-binding application for Chart control:
 
 					this.Content = chart;
 
-
+    ~~~
  
-     ![](Getting-Started_images/Getting-Started_img27.png)
-
+    ![](Getting-Started_images/Getting-Started_img27.png)
 
 
 15. To change the default legend icon, set the LegendIcon property of ChartSeries with an icon type.
 
-
+    ~~~ xaml
 
 					   <syncfusion:Chart>
 
@@ -1142,11 +1081,11 @@ To create a data-binding application for Chart control:
 
 				   </syncfusion:Chart>
 
+    ~~~	
+	
+	~~~ csharp
 
-
-
-
-					  Chart chart = new Chart();
+					Chart chart = new Chart();
 
 					//Adding a new area.
 
@@ -1202,11 +1141,9 @@ To create a data-binding application for Chart control:
 
 
 
-
+    ~~~
 
     ![](Getting-Started_images/Getting-Started_img28.png)
-
-    {:.prettyprint}
 
 ## Class Diagram
 
@@ -1214,13 +1151,10 @@ The class diagram for Essential Chart for WPF is as follows.
 
 ![](Getting-Started_images/Getting-Started_img29.jpeg)
 
-
-
 ### Chart
 
 A chart is a type of information graphic or graphic organizer that represents tabular numeric data and / or functions. Chart is often used to make it easier to understand large quantities of data and the relationship between different parts of the data. Charts can be read more quickly than the raw data using which they are created.
 
-_Property Table_
 
 <table>
 <tr>
@@ -1252,7 +1186,7 @@ gets or sets the corner radius</td></tr>
 Legends</td><td>
 gets the collection of Chart Legends</td></tr>
 </table>
-_Methods Table_
+
 
 <table>
 <tr>
@@ -1284,5 +1218,3 @@ saves to xps format</td></tr>
 SwitchPrintingMode</td><td>
 switches to the printing mode</td></tr>
 </table>
-
-

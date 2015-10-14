@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding  | TileView | wpf | Syncfusion
 description: data binding
 platform: wpf
 control: TileView Control
@@ -31,7 +31,7 @@ The TileViewControl supports binding to objects. The following code example illu
 
       }
    ~~~
-   {:.prettyprint}
+   
 
 
 2. Create a ViewModel class and initialize the items as follows:
@@ -82,7 +82,7 @@ The TileViewControl supports binding to objects. The following code example illu
 
     }
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -99,7 +99,7 @@ The TileViewControl supports binding to objects. The following code example illu
 
      </Window.DataContext>
    ~~~
-   {:.prettyprint}
+   
 
 
 4. Configure the _ItemsSource_ and _ItemContainerStyle_ of the TileViewControl.
@@ -125,7 +125,7 @@ The TileViewControl supports binding to objects. The following code example illu
         </syncfusion:TileViewControl>
 
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -165,7 +165,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
      </Books>
    ~~~
-   {:.prettyprint}
+   
 
 
 2. Add _XmlDataProvider_ for the above XML document.
@@ -177,7 +177,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
      <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/> 
 
    ~~~
-   {:.prettyprint}
+   
 
 
 
@@ -215,7 +215,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
      </syncfusion:TileViewControl>
    ~~~
-   {:.prettyprint}
+   
 
 
 

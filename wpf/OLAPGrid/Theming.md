@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theming
+title: Theming| OLAP Grid | Wpf | Syncfusion
 description: theming
 platform: wpf
 control: OLAP Grid
@@ -27,17 +27,17 @@ Theming is the process of applying particular settings to the visual elements of
 
 This feature enables users to develop a single application and apply different looks as necessary. 
 
- Properties
+###  Properties
 
-_Property Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -57,6 +57,7 @@ A sample demo available in the following link,
 
 The following code sample demonstrates how to add theming to the OlapGrid control.
 
+{% tabs %}
   {% highlight xml %}
 
    
@@ -82,7 +83,7 @@ The following code sample demonstrates how to add theming to the OlapGrid contro
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 

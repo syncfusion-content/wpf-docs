@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Support
+title: Keyboard Support| Hierarchical Navigator | Wpf | Syncfusion
 description: keyboard support
 platform: wpf
 control: Hierarchical Navigator
@@ -11,7 +11,7 @@ documentation: ug
 
 The HierarchyNavigator control supports keyboard navigation. This allows you to select an item and open a pop-up menu by using the keyboard.
 
-Keyboard functionality table
+### Keyboard functionality table
 
 <table>
 <tr>

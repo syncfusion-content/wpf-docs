@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Modes
+title: Layout Modes| RichTextBoxAdv | Wpf | Syncfusion
 description: layout modes
 platform: wpf
 control: RichTextBoxAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive-Features
+title: Interactive Features | SfDataGrid | WPF | Syncfusion
 description: interactive features
 platform: wpf
 control: SfDataGrid
@@ -54,8 +54,6 @@ The following code example illustrates context menu usage with GroupCaptionConte
 
 
 {% highlight xml %}
-
-
 
 
 
@@ -228,8 +226,8 @@ public static class ContextMenuCommands
 
 
 
-_Context menu usage with GroupCaptionContextMenu_
-
+Context menu usage with GroupCaptionContextMenu
+{:.caption}
 ### Limitations:
 
 You can not open your custom context menu when you are in edit mode. When you right-click on any record cell, customRecordContextMenu is displayed.                               
@@ -277,8 +275,8 @@ The following screenshot illustrates aDefault Column Chooser window.
 
 
 
-_Default Column Chooser window_
-
+Default Column Chooser window
+{:.caption}
 N> The default Column Chooser displays the empty window when there is no hidden column initially.
 
 ### Customizing Column Chooser
@@ -296,7 +294,7 @@ Default ColumnChooser is implemented with this interface for drag-and-drop opera
 
 ### Methods in IColumnChooser:
 
-_IColumnChooser method table_
+IColumnChooser method table
 
 <table>
 <tr>
@@ -491,13 +489,13 @@ The following screenshot illustrates a Custom Column Chooser.
 
 
 
-_Custom Column Chooser_
-
+Custom Column Chooser
+{:.caption}
 ### Drag and Drop Customization:
 
 By default, column drag-and-drop operations are handled by GridColumnDragDropController class. You can achieve drag-and-drop customization by overriding the methods in GridColumnDragDropController class.
 
-_GridColumnDragDropController virtual methods table_
+GridColumnDragDropController virtual methods table
 
 <table>
 <tr>
@@ -559,7 +557,7 @@ GridColumnChooserController class plays a vital role in Column Chooser drag-and-
 
 ### Properties and Methods in GridColumnChooserController:
 
-_Property table_
+Property table
 
 <table>
 <tr>
@@ -577,14 +575,14 @@ True</td></tr>
 </table>
 
 
-_Method table_
+Method table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 Show</td><td>
@@ -626,8 +624,8 @@ The following screenshot displays a DataGrid with a RowHeader:
 
 
 
-_DataGrid with a RowHeader_
-
+DataGrid with a RowHeader
+{:.caption}
 ### RowHeader Width:
 
 By default, the RowHeader width value is set to ’45’ (Data Type: double).you can customize the width by setting any desired width as a numeric value to RowHeaderWidth property in SfDataGrid.
@@ -662,7 +660,7 @@ By default, the RowHeader width value is set to ’45’ (Data Type: double).you
 
 The following table lists the different RowHeader indicators.
 
-_RowHeader indicators table_
+RowHeader indicators table
 
 <table>
 <tr>
@@ -838,13 +836,13 @@ The following image displays the output of the RowHeader with customized current
 
 
 
-_RowHeader with customized current row indicator_
-
+RowHeader with customized current row indicator
+{:.caption}
 ## ToolTip
 
 The ToolTip provides support to show the pop-up window that displays information when the mouse hovers over the cells in the DataGrid. The following properties in the GridColumn enable and customize the ToolTip support in the SfDataGrid.
 
-_Properties in the GridColumn_
+Properties in the GridColumn
 
 <table>
 <tr>
@@ -943,15 +941,15 @@ The following screenshot shows the default ToolTip of a cell with text in the Po
 ![](Features_images/Features_img186.png)
 
 
-_Default ToolTip of a cell with text in the Popup_
-
+Default ToolTip of a cell with text in the Popup
+{:.caption}
 Likewise, you can enable the default ToolTip for the Header by setting the GridColumn.ShowHeaderToolTip property. 
 
 ![](Features_images/Features_img187.png)
 
 
-_Default ToolTip for the Header_
-
+Default ToolTip for the Header
+{:.caption}
 ### ToolTip customization
 
 You can customize the ToolTip in the following ways:
@@ -1004,8 +1002,8 @@ The following screenshot shows the customized default ToolTip of the SfDataGrid.
 
 
 
-_Customized default ToolTip_
-
+Customized default ToolTip
+{:.caption}
 ### By using the ToolTipTemplate
 
 You can customize the default ToolTip by loading the Data Template as its content by setting the GridColumn.ToolTipTemplate. The DataContext for the ToolTipTemplate is set based on the GridColumn.SetCellBoundToolTip. When the SetCellBoundToolTip is false, the underlying record is the DataContext for the ToolTipTemplate. Otherwise, the DataContextHelper continues to be the DataContext for the ToolTipTemplate.
@@ -1054,15 +1052,15 @@ The following screenshot shows the customized ToolTip loaded with image control 
 
 
 
-_ToolTip loaded with image_
-
+ToolTip loaded with image
+{:.caption}
 The following screenshot shows the customized ToolTip of the Header loaded in the Popup.
 
 ![](Features_images/Features_img190.png)
 
 
-_ToolTip of Header with image_
-
+ToolTip of Header with image
+{:.caption}
 ### By using the ToolTipTemplateSelector
 
 You can customize the default ToolTip by loading different DataTemplates based on the DataContext by setting the GridColumn.ToolTipTemplateSelector. It provides a way to select the DataTemplate based on the data object and the data-bound element. The DataContext for the ToolTip via the ToolTipTemplateSelector is set based on the GridColumn.SetCellBoundToolTip. When the SetCellBoundToolTip is false, underlying record is the DataContext for the Tooltip. Otherwise, the DataContextHelper is the DataContext for the ToolTip.
@@ -1283,8 +1281,8 @@ The following screenshot shows the different ToolTips of the cells.
 
 
 
-_Different ToolTip with ToolTipTemplateSelector_
-
+Different ToolTip with ToolTipTemplateSelector
+{:.caption}
 ### How to use the same DataTemplate for all the columns and display the ToolTip based on Record and Cell value?
 
 When you are defining the GridColumn.ToolTipTemplate, do not define the DataTemplate for each column separately when you want to display based on the CellValue or the GridColumn.MappingName, in other words. 
@@ -1381,8 +1379,8 @@ In the following XAML code, the same DataTemplate is set to all the columns to d
 ![](Features_images/Features_img192.png)
 
 
-_Same ToolTip style for all the columns_
-
+Same ToolTip style for all the columns
+{:.caption}
 In the image, when the mouse hovers on any cell, the tool tip style is the same for all the columns.
 
 ## How To
@@ -1503,15 +1501,15 @@ The Menu Items are changed at Execute time according to the column position.
 
 
 
-_Menu Items changed at Execute time according to column position_
-
+Menu Items changed at Execute time according to column position
+{:.caption}
 
 
 ![](Features_images/Features_img194.png)
 
 
-_Menu Items changed at Execute time according to column position_
-
+Menu Items changed at Execute time according to column position
+{:.caption}
 
 
 ### How to display row index in row header
@@ -1573,4 +1571,5 @@ The following screenshot displays a row index in row header.
 
 
 
-_Row index in row header_
+Row index in row header
+{:.caption}

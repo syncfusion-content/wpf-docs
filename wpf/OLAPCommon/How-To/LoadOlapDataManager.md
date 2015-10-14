@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoadOlapDataManager
+title: LoadOlapDataManager| OLAPCommon | Wpf | Syncfusion
 description: loadolapdatamanager
 platform: wpf
 control: OLAPCommon
@@ -11,6 +11,7 @@ documentation: ug
 
 The following code snippet explains loading an OlapReport to CurrentReport property of an OlapDataManager using LoadOlapDataManager method:
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager.LoadOlapDataManager(olapReport);
@@ -22,4 +23,4 @@ OlapDataManager.LoadOlapDataManager(olapReport);
 OlapDataManager.LoadOlapDataManager(olapReport)
 
 {% endhighlight  %}
-
+{% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print
+title: Print | Chart(Classic) | wpf | Syncfusion
 description: Print
 platform: wpf
 control: Chart (Classic)
@@ -13,7 +13,6 @@ Essential Chart for WPF now comes with support to print the chart and printing o
 ![C:/Users/michaelprabhu/Desktop/print.png](Chart-Controls_images/Chart-Controls_img237.png)
 
 
-
 ## Use Case Scenarios
 
 Printing the chart is useful for visual representation in organizational meetings.
@@ -24,7 +23,6 @@ Printing the chart is useful for visual representation in organizational meeting
 
 ## Methods
 
-_Methods_
 
 <table>
 <tr>
@@ -57,6 +55,8 @@ Void</td></tr>
 ## Printing a Chart
 
 Charts can be printed by using the following code example.
+
+{% tabs %}
 {% highlight xml %}
 
 
@@ -72,3 +72,4 @@ Chart1.Print();
 
 Chart1.PrintSwitchMode();
 {% endhighlight  %}
+{% endtabs %}

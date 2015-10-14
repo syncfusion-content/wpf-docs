@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get-page-count
+title: Get page count| PDF Viewer | Wpf | Syncfusion
 description: get page count
 platform: wpf
 control: PDF Viewer
@@ -11,6 +11,7 @@ documentation: ug
 
 The number of pages as viewed in the PDF Viewer can be found by using the PageCount property.
 
+{% tabs %}
 {% highlight c# %}
 
 int count = pdfViewer1.PageCount;
@@ -24,3 +25,4 @@ Dim count As Integer = pdfViewer1.PageCount
 
 
 {% endhighlight %}
+{% endtabs %}

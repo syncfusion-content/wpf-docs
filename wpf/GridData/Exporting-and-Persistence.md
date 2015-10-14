@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Exporting and persistence
+title: Exporting and persistence | GridData (Classic) | wpf | Syncfusion
 description: Exporting and persistence
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 
@@ -30,18 +30,12 @@ You can convert the entire content of a GridDataControl to an Excel Spreadsheet.
 * ExcelVersion.Excel2007
 
 The following code illustrates the conversion of GridDataControl contents to an Excel Spreadsheet: 
+
 {% highlight c# %}
-
-
-
 
 gridDataControl.ExportToExcel("Sample.xlsx", ExcelVersion.Excel2007 );
 
-
-
 (or)
-
-
 
 gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
@@ -49,13 +43,7 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 ![](Getting-Started_images/Getting-Started_img129.jpeg)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img130.jpeg)
-
-
 
 The above images shows how the entire content of the GridDataControl is exported to an Excel Spreadsheet.
 
@@ -64,12 +52,11 @@ The above images shows how the entire content of the GridDataControl is exported
 You can also avail the choice of converting the selected rows of GridDataControl to an Excel Spreadsheet.
 
 The following code illustrates the conversion of selected rows of GridDataControl to an Excel Spreadsheet:
+
 {% highlight c# %}
 
-
-
-
 grid.ExportToExcel(grid.Model.SelectedRanges.ActiveRange,"sample.xlsx", ExcelVersion.Excel2007);
+
 {% endhighlight  %}
 
 #### GridDataControl with Nested Child
@@ -77,18 +64,12 @@ grid.ExportToExcel(grid.Model.SelectedRanges.ActiveRange,"sample.xlsx", ExcelVer
 You can convert the content of a GridDataControl, with Nested Child to an Excel Spreadsheet. Parent and visible child content are exported to Excel Spreadsheet.
 
 The following code illustrates the conversion of GridDataControl with Nested Child to an Excel Spreadsheet:
+
 {% highlight c# %}
-
-
-
 
 gridDataControl.ExportToExcel("Sample.xlsx", ExcelVersion.Excel2007 );
 
-
-
 (or)
-
-
 
 gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
@@ -96,50 +77,31 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 N> Only the visible child's contents are exported.
 
-
-
 ![](Getting-Started_images/Getting-Started_img131.jpeg)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img132.jpeg)
-
-
 
 The above images shows how the GridControl, with Nested Child is exported to an Excel Spreadsheet.
 
 #### GridDataControl with Grouping
 
 You can convert the content of a GridDataControl, with Grouping to an Excel Spreadsheet. The following code illustrates this feature:
+
 {% highlight c# %}
-
-
-
 
 gridDataControl.ExportToExcel("Sample.xlsx", ExcelVersion.Excel2007 );
 
-
-
 (or)
-
-
 
 gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 {% endhighlight  %}
+
 N> Only the visible grouping contents are exported.
 
 ![](Getting-Started_images/Getting-Started_img133.jpeg)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img134.jpeg)
-
-
 
 The above images shows how the GridControl, with Grouping is exported to an Excel Spreadsheet.
 
@@ -153,46 +115,29 @@ To enable exporting, the following .dll files must be added along with the defau
 * Syncfusion.XlsIO.WPF 
 * Syncfusion.GridConverter.Wpf
 
-
-
 Converting GridDataControl to CSV format
 
 You can convert the entire content of a grid control to a CSV file by using the following code:
+
 {% highlight c# %}
-
-
-
 
 this.gdc.Model.ExportToCSV("Sample.csv")
 
 {% endhighlight  %}
+
 {% highlight vbnet %}
 
-
-
-
-
 Me.gdc.Model.ExportToCSV("Sample.csv")
-
-
 
 {% endhighlight  %}
 
 When the code runs, the following output displays.
 
-
-
 ![](Getting-Started_images/Getting-Started_img135.jpeg)
-
-
-
-
 
 When you are ready to export the entire grid, click Export to CSV; the grid content can then be converted to CSV format. 
 
 ![](Getting-Started_images/Getting-Started_img136.jpeg)
-
-
 
 ## Export to PDF
 
@@ -205,8 +150,6 @@ The pdf export can be performed in the following two ways:
 
 * Export by PdfGrid
 * Export by PdfLightTable
-
-
 
 PdfGrid: In the PdfGrid, the formatting can be done to all levels of the PdfGrid. The features like row and column spanning are also supported by the PdfGrid. It offers, full control over the appearance of the PdfGrid table and is recommended to draw complex table structures. 
 
@@ -231,8 +174,10 @@ Essential GridData control allows you to export the GridData control’s entire 
 A large data can be maintained asPDFpdf file and the entire content of the GridData control can be exported iPDF a pdf file.
 
 The following XAML code example shows, how the GridData control is defined in an application.
-{% highlight xml %}
-syncfusion:GridDataContro” x:Name=”dataGrid"
+
+{% highlight xaml %}
+
+<syncfusion:GridDataContro” x:Name=”dataGrid"
 
                             AutoPopulat”Colum”s="False"
 
@@ -304,31 +249,25 @@ yncfusionyncfusion:GridDataVisibleColumn He”derText="Shi” Address" 
 
 ![](Getting-Started_images/Getting-Started_img137.png)
 
-
-
 #### Exporting to PdfGrid
 
 The following code example illustrates how to export the entire content of the GridData control into a PdfGrid.
 
 {% highlight c# %}
 
-
-
-
-
 // Dialog to save the newly created pdf document.
 
 SaveFileDialog sfd = new SaveFileDialog
 
-        {
+{
 
-            DefaultExt = ".pdf",
+  DefaultExt = ".pdf",
 
-            Filter = "Adobe PDF Files(*.pdf)|*.pdf",
+  Filter = "Adobe PDF Files(*.pdf)|*.pdf",
 
-            FilterIndex = 1
+  FilterIndex = 1
 
-        };
+};
 
 // Newly created pdf document object.
 
@@ -358,17 +297,13 @@ if (sfd.ShowDialog() == true)
 
 The following screenshot shows the exported pdf document:
 
-
-
 ![](Getting-Started_images/Getting-Started_img138.png)
-
-
 
 #### Exporting to PdfLightTable Document
 
 The following code example illustrates how to export the entire content of the GridData control into a PdfLightTable document file.
-{% highlight c# %}
 
+{% highlight c# %}
 
 // Dialog to save the newly created pdf document.
 
@@ -405,14 +340,11 @@ if (sfd.ShowDialog() == true)
         Process.Start(sfd.FileName);
 
     }
-
 }
 
 {% endhighlight  %}
 
 ![](Getting-Started_images/Getting-Started_img139.png)
-
-
 
 #### Export Selected Range
 
@@ -420,27 +352,25 @@ You can convert the selected range of the GridData control into a pdf file.
 
 ![](Getting-Started_images/Getting-Started_img140.png)
 
-
-
 #### Exporting to PdfGrid
 
 The following code illustrates the conversion of a selected range of the GridData control to a PdfGrid.
-{% highlight c# %}
 
+{% highlight c# %}
 
 // Dialog to save the newly created pdf document.
 
 SaveFileDialog sfd = new SaveFileDialog
 
-        {
+{
 
-            DefaultExt = ".pdf",
+	DefaultExt = ".pdf",
 
-            Filter = "Adobe PDF Files(*.pdf)|*.pdf",
+    Filter = "Adobe PDF Files(*.pdf)|*.pdf",
 
-            FilterIndex = 1
+    FilterIndex = 1
 
-        };
+};
 
 // Newly created pdf document object.
 
@@ -468,17 +398,16 @@ if (sfd.ShowDialog() == true)
 
 }
 {% endhighlight  %}
+
 The following screenshot shows the exported pdf document of a selected range of the GridData control:
 
 ![](Getting-Started_images/Getting-Started_img141.png)
 
-
-
 #### Exporting to PdfLightTable Document
 
 The following code illustrates the conversion of a selected range of the GridData control to a PdfLightTable document.
-{% highlight c# %}
 
+{% highlight c# %}
 
 // Dialog to save the newly created pdf document.
 
@@ -524,10 +453,6 @@ The following screenshot shows the exported PdfLightTable document of the select
 
 ![](Getting-Started_images/Getting-Started_img142.png)
 
-
-
-
-
 #### Export GridDataControl with Grouping
 
 The GridData control converts the content of the GridData control to a pdf document with grouping.
@@ -536,29 +461,20 @@ The following screenshot illustrates how the GridData control appears as a pdf f
 
 ![](Getting-Started_images/Getting-Started_img143.png)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img144.png)
-
-
-
-
 
 The following screenshot illustrates how the GridData control appears as a PdfLightTable document after grouping the data.
 
 ![](Getting-Started_images/Getting-Started_img145.png)
 
-
-
 #### Exporting Customized GridData Control 
 
 Use the following code to customize the GridData control with blend styling.
-{% highlight xml %}
+
+{% highlight xaml %}
 
 
-        <syncfusion:GridDataControl x:Name="grid"
+<syncfusion:GridDataControl x:Name="grid"
 
                                     Grid.Row="0"
 
@@ -574,15 +490,13 @@ Use the following code to customize the GridData control with blend styling.
 
                                     ContextMenuOptions="CustomWithDefault"
 
-                                    ContextMenuStyle="{StaticResource 
-
-                                                       RContextMenuStyle}"
+                                    ContextMenuStyle="{StaticResource RContextMenuStyle}"
 
                                     EnableBlendStyling="True"
 
                                     HeaderStyle="{StaticResource                                                                             
 
-GridDataHeaderCellControlStyle2}"
+									GridDataHeaderCellControlStyle2}"
 
                                     HideColumnsWhenGrouped="True"
 
@@ -606,11 +520,7 @@ GridDataHeaderCellControlStyle2}"
 
                                     ShowTooltips="True"
 
-                                    StyleManager="{StaticResource 
-
-                                                        CustomGridDataStyleManager}">
-
-
+                                    StyleManager="{StaticResource CustomGridDataStyleManager}">
 
             <!--  Table Summary rows created here  -->
 
@@ -741,67 +651,65 @@ GridDataHeaderCellControlStyle2}"
 
 
         </syncfusion:GridDataControl>
+
 {% endhighlight %}
 
 Use the following code to export a customized GridData control:
 
 #### Button Code to Export:
-{% highlight xml %}
 
+{% highlight xaml %}
 
-<Button Name="Exportbtn" Content="Export To Pdf" 
-
-                            Click="Exportbtn_Click"/>
-
+<Button Name="Exportbtn" Content="Export To Pdf"  Click="Exportbtn_Click"/>
 
 {% endhighlight  %}
+
 Button Click Event Code:
+
 {% highlight c# %}
 
 
 private void Exportbtn_Click(object sender, RoutedEventArgs e)
 
-        {
+{
 
-            // Dialog to save the exported document.
+// Dialog to save the exported document.
 
-            SaveFileDialog sfd = new SaveFileDialog
+SaveFileDialog sfd = new SaveFileDialog
 
-            {
+{
 
-                DefaultExt = ".pdf",
+  DefaultExt = ".pdf",
 
-                Filter = "Adobe PDF Files(*.pdf)|*.pdf",
+  Filter = "Adobe PDF Files(*.pdf)|*.pdf",
 
-                FilterIndex = 1
+  FilterIndex = 1
 
-            };
+ };
 
-            // Pdf document object to save the data as a pdf file.
+// Pdf document object to save the data as a pdf file.
 
-            PdfDocument document = new PdfDocument();
+ PdfDocument document = new PdfDocument();
 
-            if (sfd.ShowDialog() == true)
+ if (sfd.ShowDialog() == true)
 
-            {
+{
 
-                using (Stream stream = sfd.OpenFile())
+  using (Stream stream = sfd.OpenFile())
 
-                {
+  {
 
-                    document = dataGrid.Model.ExportToPdfGridDocument(
+   document = dataGrid.Model.ExportToPdfGridDocument(GridRangeInfo.Table());
 
-                                                              GridRangeInfo.Table());
+   document.Save(stream);
 
-                    document.Save(stream);
+   Process.Start(sfd.FileName);
 
-                    Process.Start(sfd.FileName);
+  }
 
-                }
+  }
 
-            }
-
-        }
+}
 
 {% endhighlight  %}
 
@@ -809,21 +717,13 @@ private void Exportbtn_Click(object sender, RoutedEventArgs e)
 
 The below screenshot shows the customized blend styling of the GridData control.
 
-
-
 ![](Getting-Started_images/Getting-Started_img146.png)
-
-
 
 #### Exported PDF Document
 
 The screenshot below shows a PDF document of the blend styling GridData control.
 
-
-
 ![](Getting-Started_images/Getting-Started_img147.png)
-
-
 
 ## Serialization in GridDataControl
 
@@ -831,7 +731,7 @@ GridDataControl state can be serialized in XML format.
 
 All the properties that are exposed in GridDataTableProperties can be serialized. 
 
-Serializing 
+### Serializing 
 
 There are two methods to serialize forms:
 
@@ -845,28 +745,20 @@ There are two methods to serialize forms:
 ### Serializing as XML String
 
 The following code illustrates how to serialize as an XML string. 
+
 {% highlight c# %}
 
-
-
-
 string result = this.dataGrid.Model.SerializeAsString();
-
-
 
 {% endhighlight %}
 
 ### Serializing as an XML File
 
 The following code illustrates how to serialize as an XML file. 
+
 {% highlight c# %}
 
-
-
-
 this.dataGrid.Model.Serialize("sample.xml");
-
-
 
 {% endhighlight  %}
 
@@ -882,13 +774,12 @@ There are two methods to serialize forms:
 ### De-serialize from XML String
 
 The following code illustrates how to de-serialize from an XML string_._ 
+
 {% highlight c# %}
 
+this.dataGrid.Model.DeserializeFromString(content); 
 
-
-
-this.dataGrid.Model.DeserializeFromString(content); // the content should be an XML string saved during the serialization process.
-
+// the content should be an XML string saved during the serialization process.
 
 {% endhighlight  %}
 
@@ -896,10 +787,11 @@ this.dataGrid.Model.DeserializeFromString(content); // the content should be an 
 ### De-serialize from XML File
 
 The following code illustrates how to de-serialize from an XML file.
+
 {% highlight c# %}
 
+this.dataGrid.Model.Deserialize("sample.xml"); 
 
+// sample.xml file should be the XML file saved during the serialization process.
 
-
-this.dataGrid.Model.Deserialize("sample.xml"); // sample.xml file should be the XML file saved during the serialization process.
 {% endhighlight  %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance| PercentTextBox  | Wpf | Syncfusion
 description: appearance 
 platform: wpf
 control: PercentTextBox 
@@ -34,24 +34,24 @@ The steps to edit the PercentTextBox Template by using Expression Blend are as f
 1. Create a simple WPF application in Expression Blend.
 2. Drag and drop the PercentTextBox into the application from the Assets tab.
 
-![](Appearance_images/Appearance_img1.png)
+   ![](Appearance_images/Appearance_img1.png)
 
 
 3. After creating the PercentTextBox, select the PercentTextBox and navigate to Object -> Edit Style -> Edit a Copy, to edit the Template of the PercentTextBox.
 
-![](Appearance_images/Appearance_img2.png)
+   ![](Appearance_images/Appearance_img2.png)
 
 
-Another way to edit the Template is as follows:
+   Another way to edit the Template is as follows:
 
 4. In Object and Timeline, right-click the PercentTextBox control and select the Edit Template option, as displayed below.
 
-![](Appearance_images/Appearance_img3.png)
+   ![](Appearance_images/Appearance_img3.png)
 
 
-This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
+   This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
 
-![](Appearance_images/Appearance_img4.png)
+   ![](Appearance_images/Appearance_img4.png)
 
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the PercentTextBox.
@@ -59,11 +59,11 @@ The result of these steps is an XAML, which is placed within your application. T
  {% highlight xml %}
 
 
-    <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
 
-                            CornerRadius="2" Style="{StaticResource 
+CornerRadius="2" Style="{StaticResource 
 
-                            PercentTextBoxStyle1}"/>
+PercentTextBoxStyle1}"/>
 
  {% endhighlight %}
 
@@ -83,16 +83,6 @@ Now you can replace the existing Template setter and Triggers with your own crea
 
 Here is a simple example to customize the UnFocused state of the PercentTextBox: 
 
- {% highlight xml %}
-
-
-   <Trigger Property="IsFocused" Value="False">
-
-    <Setter Property="Background" TargetName="Border" Value="LightGray"/>
-
-</Trigger>
-
- {% endhighlight %}
 
 
 

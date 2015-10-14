@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Items-to-the-Application-Menu
+title: Adding Items to the Application Menu | Ribbon | WPF | Syncfusion
 description: adding items to the application menu
 platform: wpf
 control: Ribbon
@@ -46,5 +46,5 @@ Ribbon instance now enables the user to add more detailed description to the men
 
 ## See Also
 
-Adding Application Menu to the Ribbon Window, Adding Application Items to the Application Menu
+[Adding Application Menu to the Ribbon Window](http://help.syncfusion.com/wpf/ribbon/adding-application-menu-to-the-ribbon-window), [Adding Application Items to the Application Menu](http://help.syncfusion.com/wpf/ribbon/adding-application-items-to-the-application-menu)
 

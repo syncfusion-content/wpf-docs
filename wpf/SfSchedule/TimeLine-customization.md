@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TimeLine-customization
+title: TimeLine customization| SfSchedule | Wpf | Syncfusion
 description: timeline customization
 platform: wpf
 control: SfSchedule
@@ -15,9 +15,10 @@ Timeline elements of Day, Week and TimeLine view can be customized by using the 
 
 Time interval can be customized using the TimeInterval property. The default interval is One hour.
 
-## TimeMode :
+## TimeMode 
 
 SfSchedule Time format can be changed by using the TimeMode property.
+{% tabs %}
 {% highlight html %}
   
 
@@ -50,6 +51,7 @@ SfSchedule Time format can be changed by using the TimeMode property.
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](TimeLine-customization_images/TimeLine-customization_img1.png)
 

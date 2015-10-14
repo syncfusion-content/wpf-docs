@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | Spreadsheet | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: Spreadsheet
@@ -13,14 +13,13 @@ documentation: ug
 
 You can customize the font setting of Spreadsheet cells using this feature. You can apply various font family, font color and font size.
 
-
-
 ### Font Settings in Spreadsheet Control
 
 Spreadsheet control provides API support for specifying the font style for the cells text. You can apply various font settings using the _CellStyle_ property. Use the _CurrentExcelRangeStyle_ property, to apply style for the current selected cells. You can also specify the worksheet range for applying style. The following code illustrates this:
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight c# %}
 
 //Applying font settings to a worksheet range
 
@@ -56,10 +55,9 @@ spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Bold = true;
 
 spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
+{% highlight vbnet %}
 
 ' Applying font settings to a worksheet range 
 
@@ -91,68 +89,51 @@ spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Bold = True
 
 spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = True
 
+{% endhighlight %}
 
-{%endhighlight%}
-
+{% endtabs %}
 
 ![](Appearance_images/Appearance_img1.png)
-
-
-
-
 
 ### Using Command 
 
 You can set the font family to the spreadsheet cells using the _FontFamilyCommand_. To set the font family, specify the font name as command parameter. The following code illustrates this:
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= FontFamilyCommand}" CommandParameter =" Arial Black">
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ## Merge cells
 
 Spreadsheet control provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
 
-You can merge/unmerge the group of cell using the MergeCommand. To merge the cell, pass the command parameter as MergeAndCenter. To unmerge the cells pass the command parameter as UnMerge_._
+You can merge/unmerge the group of cell using the MergeCommand. To merge the cell, pass the command parameter as MergeAndCenter. To unmerge the cells pass the command parameter as UnMerge.
 
 The following code illustrates how to merge the selected cells in Spreadsheet:
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= MergeCommand}" CommandParameter ="MergeAndCenter">
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 The following code illustrates how to unmerge the selected cells in Spreadsheet:
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= MergeCommand}" CommandParameter =" UnMerge">
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Appearance_images/Appearance_img2.png)
-
-
-
-
 
 ## Borders
 
@@ -162,8 +143,7 @@ To add border to an individual cell use the BorderCommand. You can also specify 
 
 The following code illustrates, how to add and remove the cell border in Spreadsheet Control
 
-{%highlight xml%}
-
+{%highlight xaml%}
 
 <!--To draw the Bottom Border-->
 
@@ -183,15 +163,9 @@ The following code illustrates, how to add and remove the cell border in Spreads
 
 </Button>
 
-
-{%endhighlight%}
-
+{% endhighlight %}
 
 ![](Appearance_images/Appearance_img3.png)
-
-
-
-
 
 ## Freeze Panes
 
@@ -204,15 +178,9 @@ To apply the freeze panes, use the FreezePaneCommand. You can pass one of the fo
 * FreezeFirstColumn—To freeze the first column only
 
 
-
-
-
 The following code illustrates this:
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= FreezePaneCommand}" Grid.Row="2">
 
@@ -222,11 +190,9 @@ The following code illustrates this:
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Appearance_images/Appearance_img4.png)
-
-
 
 ## Wrap Text Support
 
@@ -238,24 +204,19 @@ You can manually wrap text and resize cells when the text or cell value exceeds 
 
 Users can wrap text for a selected range of cells by just calling a method.
 
-
-
 ![](Appearance_images/Appearance_img5.png)
 
-
-
-## Properties, Methods and Events 
 
 ### Methods
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 SetWrapText()</td><td>
@@ -264,5 +225,3 @@ Overloads: nil </td><td>
 Nil</td><td>
 void</td></tr>
 </table>
-
-

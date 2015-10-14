@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale-Label-Settings
+title: Scale Label Settings| Bullet Graph  | Wpf | Syncfusion
 description: scale label settings
 platform: wpf
 control: Bullet Graph 
@@ -9,30 +9,31 @@ documentation: ug
 
 # Scale Label settings
 
-## Labels:
+## Labels
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
-## Customizing Labels:
+## Customizing Labels
 
 The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelSize, the font size of the labels is modified. 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight html %}
 
 
-        <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+<syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
-                                  QualitativeRangesSize="30" 
+QualitativeRangesSize="30" 
 
-                                  QuantitativeScaleLength="400"
+QuantitativeScaleLength="400"
 
-                                  LabelOffset="5" 
+LabelOffset="5" 
 
-                                  LabelStroke="Red">
+LabelStroke="Red">
 
-        </syncfusion:SfBulletGraph>
+</syncfusion:SfBulletGraph>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -40,41 +41,42 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 
 
-   SfBulletGraph bulletgraph = new SfBulletGraph();
+SfBulletGraph bulletgraph = new SfBulletGraph();
 
-      bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
 
-      bulletgraph.Orientation = Orientation.Horizontal;
+bulletgraph.Orientation = Orientation.Horizontal;
 
-      bulletgraph.Minimum = 0;
+bulletgraph.Minimum = 0;
 
-      bulletgraph.Maximum = 10;
+bulletgraph.Maximum = 10;
 
-      bulletgraph.Interval = 2;
+bulletgraph.Interval = 2;
 
-      bulletgraph.QualitativeRangesSize = 30;
+bulletgraph.QualitativeRangesSize = 30;
 
-      bulletgraph.QuantitativeScaleLength = 400;
+bulletgraph.QuantitativeScaleLength = 400;
 
-      bulletgraph.LabelOffset = 5;
+bulletgraph.LabelOffset = 5;
 
-      bulletgraph.LabelSize = 10;
+bulletgraph.LabelSize = 10;
 
-      bulletgraph.LabelFormat = "";
+bulletgraph.LabelFormat = "";
 
-      bulletgraph.LabelStroke = new SolidColorBrush(Colors.Red);
+bulletgraph.LabelStroke = new SolidColorBrush(Colors.Red);
 
-      this.Grid.Children.Add(bulletgraph);
+this.Grid.Children.Add(bulletgraph);
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 
 ![C:/Users/Giftline/Desktop/New folder/8.jpg](Concept-and-Features_images/Concept-and-Features_img11.png)
 
-_Customizing Labels of Bullet Graph_
+Customizing Labels of Bullet Graph
+{:.caption}
 
 ## Label Position
 
@@ -83,24 +85,25 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 1. Below (Default)
 2. Above
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight html %}
 
 
-        <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+<syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
-                                  QualitativeRangesSize="30" 
+QualitativeRangesSize="30" 
 
-                                  QuantitativeScaleLength="400"                                  
+QuantitativeScaleLength="400"                                  
 
-                                  LabelOffset="5" LabelStroke="Black"
+LabelOffset="5" LabelStroke="Black"
 
-                                  TickPosition="Cross"
+TickPosition="Cross"
 
-                                  LabelPosition="Above">
+LabelPosition="Above">
 
-        </syncfusion:SfBulletGraph>
+</syncfusion:SfBulletGraph>
 
 {% endhighlight  %}
 {% highlight html %}
@@ -109,32 +112,34 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 
 SfBulletGraph bulletgraph = new SfBulletGraph();
 
-      bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
 
-      bulletgraph.Orientation = Orientation.Horizontal;
+bulletgraph.Orientation = Orientation.Horizontal;
 
-      bulletgraph.Minimum = 0;
+bulletgraph.Minimum = 0;
 
-      bulletgraph.Maximum = 10;
+bulletgraph.Maximum = 10;
 
-      bulletgraph.Interval = 2;
+bulletgraph.Interval = 2;
 
-      bulletgraph.QualitativeRangesSize = 30;
+bulletgraph.QualitativeRangesSize = 30;
 
-      bulletgraph.QuantitativeScaleLength = 400;
+bulletgraph.QuantitativeScaleLength = 400;
 
-      bulletgraph.LabelOffset = 5;
+bulletgraph.LabelOffset = 5;
 
-      bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
+bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
 
-      bulletgraph.TickPosition = BulletGraphTicksPosition.Cross;
+bulletgraph.TickPosition = BulletGraphTicksPosition.Cross;
 
-      bulletgraph.LabelPosition = BulletGraphLabelsPosition.Above;
+bulletgraph.LabelPosition = BulletGraphLabelsPosition.Above;
 
-      this.Grid.Children.Add(bulletgraph);
+this.Grid.Children.Add(bulletgraph);
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![C:/Users/Giftline/Desktop/New folder/9.jpg](Concept-and-Features_images/Concept-and-Features_img12.png)
 
-_Customizing Label Position of Bullet Graph_
+Customizing Label Position of Bullet Graph
+{:.caption}

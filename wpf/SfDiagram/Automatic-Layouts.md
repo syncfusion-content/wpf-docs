@@ -1,26 +1,24 @@
 ---
 layout: post
-title: Automatic-Layouts
+title: Automatic Layouts | SfDiagram | wpf | Syncfusion
 description: automatic layouts
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Automatic Layouts
+# Automatic Layouts
 
 SfDiagram provides support to specify automatic layouts for nodes. It includes the following layout modes:
 
 * Directed-Tree Layout
 * Radial-Tree Layout
 
-Directed-Tree Layout
+### Directed-Tree Layout
 
 The Directed-Tree layout mode enables you to arrange the nodes in a tree-like structure. This layout can be applied to any Diagram that comprises a directed tree graph with unique root and child nodes. This creates the Diagrams easier because the node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the nodes based on the layout root.
 
-[C#]
-
-
+{% highlight c# %}
 
 // Creates Layout
 
@@ -42,8 +40,6 @@ SpaceBetweenSubTrees = 50
 
 };
 
-
-
 // Creates Nodes
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -60,8 +56,6 @@ Node n5 = AddNode("Mary-CSE ");
 
 Node n6 = AddNode("Jim-CSE ");
 
-
-
 // Creates Connections
 
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
@@ -75,8 +69,6 @@ Connector line3 = AddConnector(n1, n4);
 Connector line4 = AddConnector(n3, n5);            
 
 Connector line5 = AddConnector(n3, n6);
-
-
 
 // Adds Nodes to the SfDiagram
 
@@ -93,8 +85,6 @@ nodes.Add(n5);
 nodes.Add(n6);
 
 diagramcontrol.Nodes = nodes;    
-
-
 
 // Adds Connections to the SfDiagram
 
@@ -146,8 +136,6 @@ return n;
 
 }
 
-
-
 private Connector AddConnector(Node source, Node target)
 
 {
@@ -173,18 +161,15 @@ return line;
 }
 
 
+{% endhighlight %}
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img1.png)
-{:.image }
 
-
-Radial-TreeLayout
+### Radial-TreeLayout
 
 The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree layout positions the nodes based on the layout root.
 
-[C#]
-
-
+{% highlight c# %}
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
@@ -301,63 +286,61 @@ diagramcontrol.Connectors = Lines;
 
 }
 
-
+{% endhighlight %}
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img2.png)
-{:.image }
 
 
-Updating the Layout
+
+## Updating the Layout
 
 When changes are made to content in the SfDiagram. For example, linking new nodes or adding new connectors, the layout has to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram:
 
-[C#]
-
-
+{% highlight c# %}
 
 SfDiagram diagramcontrol=new SfDiagram();
 
 (diagramcontrol.LayoutManager.Layout as DirectedTreeLayout).UpdateLayout();
 
-Layout Bounds, Margins, and Alignments
+{% endhighlight %}
 
-Description
+
+## Layout Bounds, Margins, and Alignments
+
+### Description
 
 Diagram layouts can be arranged at the custom positions based upon the layout bounds, margins, and alignments.
 
-Examples
+### Examples
 
 Layout Alignments and Bounds
 
-[C#]
+{% highlight c# %}
 
 diagramControl.LayoutManager = new LayoutManager()
 
-                {
+{
 
-                    Layout = new DirectedTreeLayout() 
+	Layout = new DirectedTreeLayout() 
 
-                    {
+	{
 
-                        HorizontalSpacing=30, 
+		HorizontalSpacing=30, 
 
-                        VerticalSpacing=50, 
+		VerticalSpacing=50, 
 
-                        HorizotalAlignment=HorizontalAlignment.Left,
+		HorizotalAlignment=HorizontalAlignment.Left,
 
-                        VerticalAlignment=VerticalAlignment.Top,
+		VerticalAlignment=VerticalAlignment.Top,
 
-                        Bounds=new Rect(100,100,500,500),
+		Bounds=new Rect(100,100,500,500),
 
-                        Margin=new Thickness(25,25,25,25) 
+		Margin=new Thickness(25,25,25,25) 
 
-                    }
+	}
 
-                };
+};
 
-
+{% endhighlight %}
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img3.png)
-{:.image }
-
-

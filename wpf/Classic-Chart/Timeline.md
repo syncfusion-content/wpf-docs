@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TimeLine
+title: TimeLine | Chart(Classic) | wpf | Syncfusion
 description: TimeLine
 platform: wpf
 control: Chart (Classic)
@@ -66,8 +66,6 @@ To view sample,
 
 ## Properties
 
-
-_Properties_
 
 <table>
 <tr>
@@ -166,9 +164,9 @@ NA</td></tr>
 ## Setting the Starting and Ending Date
 
 You can specify the starting date and ending date for the TimeLine control by using the StartDate and EndDate attached properties. This is applicable when the ValueType property of PrimayAxis is set to _DateTime_. The following code example illustrates this.
+
+{% tabs %}
 {% highlight xml %}
-
-
 
 
 <sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartDate='9/27/2006' sync:TimeLineControl.EndDate='12/7/2007'>
@@ -185,12 +183,12 @@ You can specify the starting date and ending date for the TimeLine control by us
 {% highlight c# %}
 
 
-
-
 TimeLineControl.SetStartDate(timelineControl, datalist[20].TimeStamp);
 
 TimeLineControl.SetEndDate(timelineControl, datalist[40].TimeStamp);
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img256.png)
 
@@ -199,10 +197,9 @@ TimeLineControl.SetEndDate(timelineControl, datalist[40].TimeStamp);
 ## Setting the Starting and Ending Value
 
 You can specify the starting value and ending value for the TimeLine control by using the StartValue and EndValue attached properties. This is applicable when the ValueType property of the PrimayAxis is set to Double. The following code example illustrates this.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartValue='0' sync:TimeLineControl.EndValue='20'>
 
@@ -216,15 +213,12 @@ You can specify the starting value and ending value for the TimeLine control by 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
-
 TimeLineControl.SetStartValue(timelineControl, 0);
 
 TimeLineControl.SetEndValue(timelineControl, 20);
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img257.png)

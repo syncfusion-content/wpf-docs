@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Style 
+title: Cell Style | PivotGrid | Wpf | Syncfusion
 description: Cell Style
 platform: wpf
 control: PivotGrid
@@ -12,16 +12,16 @@ documentation: ug
 
 The following properties of a grid cell can be customized so that the grid appears in a custom style rather than the default one.
 
-Property Table
+### Property Table
 
 <table>
 <tr>
 <th>
-{{ '**Property Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Value it Accepts**' | markdownify }}</th><th>
-{{ '**Reference link**' | markdownify }}</th></tr>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -68,21 +68,21 @@ Column, row, summary, and value cells of a grid can be formatted independently u
  * ValueCellStyle  –  Specifies the style for value cells.
 
 
-
+{% tabs %}
 {% highlight C# %} 
  
 
-    		// Specifying the Background color for Grid column header
+// Specifying the Background color for Grid column header
 
-            this.PivotGridControl1.ColumnHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
+this.PivotGridControl1.ColumnHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
 
-            // Specifying the Background color for Grid row header
+// Specifying the Background color for Grid row header
 
-            this.PivotGridControl1.RowHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
+this.PivotGridControl1.RowHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
 
-            // Specifying the Background color for Grid summary cell
+// Specifying the Background color for Grid summary cell
 
-            this.PivotGridControl1.SummaryCellStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
+this.PivotGridControl1.SummaryCellStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
 
  {% endhighlight %} 
 
@@ -105,6 +105,7 @@ Me.PivotGridControl1.SummaryCellStyle.Background = New SolidColorBrush(Color.Fro
 
 
 {% endhighlight %}
+{% endtabs %}
 
 
 The formatting set in the above code generates the following PivotTable.

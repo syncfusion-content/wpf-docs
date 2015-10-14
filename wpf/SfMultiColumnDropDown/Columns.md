@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns
+title: Columns| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: columns
 platform: wpf
 control: SfMultiColumnDropDownControl
@@ -29,7 +29,7 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
 <Window.DataContext>
 
-  <local:Viewmodel/>
+<local:Viewmodel/>
 
 </Window.DataContext>
 
@@ -39,15 +39,15 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
-                                           AllowIncrementalFiltering="False"                 
+AllowIncrementalFiltering="False"                 
 
-                                           AutoGenerateColumns="false"
+AutoGenerateColumns="false"
 
-                                           DisplayMember="Name" 
+DisplayMember="Name" 
 
-                                           ValueMember="Title"                                                           
+ValueMember="Title"                                                           
 
-                                           ItemsSource="{Binding GridItemSource}">
+ItemsSource="{Binding GridItemSource}">
 
 <syncfusion:SfMultiColumnDropDownControl.Columns>
 
@@ -63,6 +63,7 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
+
 The above code example displays the following output.
 
 ![](Features_images/Features_img4.png)

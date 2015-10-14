@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Spreadsheet | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Spreadsheet
@@ -14,28 +14,16 @@ documentation: ug
  The following are steps to create a new WPF application in Visual Studio:
 
 1. Open Visual Studio.
+
 2. Click File tab and navigate to New > Project.
-
-
 
    ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
-
 3. In the New Project dialog box, select WPF Application, enter a name for the application in the Name field and click OK.
-
-
 
    ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-
-
-
-
 4. Now, a new WPF application will be created.
-
-
 
 ## Adding Spreadsheet Control to WPF Application
 
@@ -44,78 +32,70 @@ documentation: ug
 Following are the steps to add the Spreadsheet control to WPF application using Visual Studio.
 
 1. Create a new WPF application in Visual Studio. 
+
 2. In Visual Studio Toolbox, click Syncfusion WPF Toolbox tab.
 
-
-
-
-
    ![](Getting-Started_images/Getting-Started_img3.png) 
+   
+3. Drag SpreadsheetControl to the Designer area.
 
-
-
-1. Drag SpreadsheetControl to the Designer area.
-2. Customize the properties of SpreadsheetControl using Properties window.
-
-
+4. Customize the properties of SpreadsheetControl using Properties window.
 
    N> To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code.
 
-   ~~~ xml
+   ~~~ xaml
 
-   
-
-   <syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
+	<syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
+	
    ~~~
-   {:.prettyprint}
-
 
 ### Through XAML and C#
 
 You can also add the Spreadsheet control to a WPF application through XAML and C#. The following code example illustrates this. 
 
-{%highlight xml%}
+{% tabs %}
 
-
+{% highlight xaml %}
 
 <syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
  
  SpreadsheetControl Spreadsheet1 = new SpreadsheetControl();LayoutRoot.Children.Add(Spreadsheet1);
-{%endhighlight%}
  
+{% endhighlight %} 
  
-{%highlight vbnet%}
-
+{% highlight vbnet %}
 
 Dim Spreadsheet1 As SpreadsheetControl = New SpreadsheetControl()LayoutRoot.Children.Add(Spreadsheet1)
-{%endhighlight%}
 
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Loading Excel Files in Spreadsheet Control
 
 You can open the Excel document in the Spreadsheet control using _ImportFromExcel_ method. The following code illustrates this.
 
+{% tabs %}
 
-
-{%highlight c#%}
+{% highlight c# %}
 
 FileStream stream = new FileStream(@"..\..\Data\DefaultSheet.xlsx", FileMode.Open);
+
 spreadsheet.ImportFromExcel(stream);
-{%endhighlight%}
 
-{%highlight vbnet%}
+{% endhighlight %}
 
+{% highlight vbnet %}
  
  Dim stream As FileStream = New FileStream("..\..\Data\DefaultSheet.xlsx", FileMode.Open)spreadsheet.ImportFromExcel(stream)
 
-{%endhighlight%}
+{% endhighlight %} 
 
-
- 
+{% endtabs %}
 
 N> You can also open the Excel document using ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will display the Open dialog box. Using this Open dialog, you can open the Excel document in the Spreadsheet control.
 
@@ -123,43 +103,20 @@ N> You can also open the Excel document using ImportFromExcelCommand. When you e
 
 ### Structure of the SpreadsheetRibbon Control
 
-
-
 ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-
 
 ### Structure of the Spreadsheet Control
 
-
-
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-
-
-
-
 ## Architecture
-
-### Architecture
 
 The Spreadsheet control supports ControlTemplate to define its content. By default, its content includes a TabControlExt object that contains number of TabItemExt based on sheet count. The TabItemExt contains a ScrollViewer object that contains a SpreadsheetGrid object.
 
 The following sketch illustrates the Spreadsheet control architecture.
 
-
-
 ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-
 
 ### Accessing the Underlying Grid control
 
 The Spreadsheet control is a control derived class that has its own properties. You can use Grid control derived property namely ActiveSpreadsheetGrid _to_ get its grid-like behavior. To access the underlying Grid control associated with the Spreadsheet control, you can use the SpreadsheetControl.GridProperties.ActiveSpreadsheetGrid property.
-
-
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance
+title: Performance| SfChart | Wpf | Syncfusion
 description: performance
 platform: wpf
 control: SfChart

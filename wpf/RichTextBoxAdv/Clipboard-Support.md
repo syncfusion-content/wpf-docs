@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard-Support
+title: Clipboard Support| RichTextBoxAdv | Wpf | Syncfusion
 description: clipboard support
 platform: wpf
 control: RichTextBoxAdv
@@ -19,11 +19,10 @@ Clipboard support in the RichTextBoxAdv control allows you to cut, copy, and pas
 
 
 
-## Methods
+### Methods
 
 
 
-Methods table
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-Support
+title: Binding Support| DoubleTextBox  | Wpf | Syncfusion
 description: binding support
 platform: wpf
 control: DoubleTextBox 
@@ -21,11 +21,11 @@ The following example shows a simple binding between the value of the DoubleText
 
 <StackPanel>
 
-    <syncfusion:DoubleTextBox x:Name="doubleTextBox1" Width="150" Margin="10"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Width="150" Margin="10"/>
 
-    <syncfusion:DoubleTextBox x:Name="doubleTextBox2" Width="150" Margin="10" 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Width="150" Margin="10" 
 
-                Value="{Binding ElementName=doubleTextBox1,Path=Value,Mode=TwoWay}"/>
+Value="{Binding ElementName=doubleTextBox1,Path=Value,Mode=TwoWay}"/>
 
 </StackPanel>
 
@@ -46,13 +46,13 @@ The Data Context property provides its value to child elements. So you can set t
 
 <StackPanel DataContext="{StaticResource myCustomer}">
 
-    <TextBox Text="{Binding FirstName}"/>
+<TextBox Text="{Binding FirstName}"/>
 
-    <TextBox Text ="{Binding LastName}"/>
+<TextBox Text ="{Binding LastName}"/>
 
-    <syncfusion:DoubleTextBox Value="{Binding Phone}"/>
+<syncfusion:DoubleTextBox Value="{Binding Phone}"/>
 
-    <syncfusion:DoubleTextBox Value="{Binding Income}"/>
+<syncfusion:DoubleTextBox Value="{Binding Income}"/>
 
 </StackPanel>
 {% endhighlight %}
@@ -68,21 +68,21 @@ If you want to bind values other than double values, you need to use the Value C
 
 <StackPanel>
 
-    <StackPanel.Resources>
+<StackPanel.Resources>
 
-        <c:StringToDoubleConverter x:Key="stringToDoubleConverter"/>
+<c:StringToDoubleConverter x:Key="stringToDoubleConverter"/>
 
-    </StackPanel.Resources>
+</StackPanel.Resources>
 
 
 
-    <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Margin="10"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Margin="10"/>
 
-    <TextBox x:Name="textBox" Width="150" Margin="10" Text="{Binding 
+<TextBox x:Name="textBox" Width="150" Margin="10" Text="{Binding 
 
-             ElementName=doubleTextBox,Path=Value,Mode=TwoWay,
+ElementName=doubleTextBox,Path=Value,Mode=TwoWay,
 
-             Converter={StaticResource stringToDoubleConverter}}"/>    
+Converter={StaticResource stringToDoubleConverter}}"/>    
 
 </StackPanel>
 

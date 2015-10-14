@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Interactivity
+title: Interactivity | SfDateTimeRangeNavigator | wpf | Syncfusion
 description: interactivity
 platform: wpf
-control: DateTime Range Navigator
+control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ SfDateTimeRangeNavigator provides interactive features such as zooming, panning.
 
 The ZoomPosition and ZoomFactor of the chart axis can be bind with the SfDateTimeRangeNavigator.
 
-_Property Table_
+### Property
 
 <table>
 <tr>
@@ -55,7 +55,7 @@ Used to get the End value of the Selected range of the Navigator</td></tr>
 </table>
 
 
-_Event Table_
+### Event
 
 <table>
 <tr>
@@ -70,8 +70,7 @@ ValueChanged(Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar changed</td></tr>
 </table>
 
-{% highlight html %}
-
+{% highlight xaml %}
 
 <chart:SfChart x:Name="financialChart">            
 
@@ -85,7 +84,7 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 
                   <chart:NumericalAxis  />  
 
- </chart:SfChart.SecondaryAxis>            
+</chart:SfChart.SecondaryAxis>            
 
 <chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date"  High="High" Open="Open" Close="Close" Low="Low"  Label="Candleseries">            
 
@@ -93,15 +92,13 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 
 </chart:SfChart>        
 
+<chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date" >                
 
+	<chart:SfDateTimeRangeNavigator.Content>                   
 
- <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date" >                
+		<chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" >                    </chart:SfLineSparkline>                
 
-<chart:SfDateTimeRangeNavigator.Content>                   
-
- <chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" >                    </chart:SfLineSparkline>                
-
-</chart:SfDateTimeRangeNavigator.Content>            
+	</chart:SfDateTimeRangeNavigator.Content>            
 
 </chart:SfDateTimeRangeNavigator>
 
@@ -109,19 +106,14 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 {% endhighlight  %}
 The following is the screenshot of SfDateTimeRangeNavigator selecting one Quarter of data.
 
-![C:/Users/ApoorvahR/Desktop/3.png](Interactivity_images/Interactivity_img1.png)
+![](Interactivity_images/Interactivity_img1.png)
 
-
-
-_SfDateTimeRangeNavigator selecting  one Quarter of data_
+SfDateTimeRangeNavigator selecting  one Quarter of data
+{:.caption}
 
 The following is the screenshot of SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data.
 
+![](Interactivity_images/Interactivity_img2.png)
 
-
-![C:/Users/ApoorvahR/Desktop/4.png](Interactivity_images/Interactivity_img2.png)
-
-
-
-_SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data_
-
+SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data
+{:.caption}

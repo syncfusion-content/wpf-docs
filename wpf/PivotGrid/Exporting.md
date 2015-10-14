@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting| PivotGrid | Wpf | Syncfusion
 description: Exporting
 platform: wpf
 control: PivotGrid
@@ -20,6 +20,7 @@ The GridPdfExport class provides support for exporting data from a PivotGrid to 
 
   * Syncfusion.PivotGridConverter.Wpf
 
+  {% tabs %}
 {% highlight C# %}  
 
 
@@ -75,7 +76,7 @@ If savedialog.ShowDialog() = True Then
 End If
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Features_images/Features_img15.png)
 
@@ -90,7 +91,7 @@ PivotGrid for WPF can be exported as an XLS file using Essential XlsIO. The user
 The GridExcelExport class provides support for exporting data from a PivotGrid to an Excel spreadsheet for verification and/or computation. The following dlls should be added, along with the default dlls in the reference folder: 
 
 *  Syncfusion.PivotGridConverter.Wpf
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -145,7 +146,7 @@ If savedialog.ShowDialog() = True Then
 End If
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Features_images/Features_img16.png)
 
@@ -161,7 +162,7 @@ The GridWordExport class provides support for exporting data from a PivotGrid to
 
  *Syncfusion.PivotGridConverter.Wpf
 
- 
+ {% tabs %}
 {% highlight C# %}  
 
 
@@ -218,6 +219,7 @@ If savedialog.ShowDialog() = True Then
 End If
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![](Features_images/Features_img17.png)
 
@@ -227,7 +229,7 @@ End If
 
 PivotGridControl for WPF provides support to export itself to CSV file format. 
 
-## Use Case Scenarios 
+### Use Case Scenarios 
 
 You can export the contents of the PivotGridControl to the CSV file format for future references and analysis purposes.
 
@@ -236,11 +238,11 @@ Methods
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 Export(string filename)</td><td>

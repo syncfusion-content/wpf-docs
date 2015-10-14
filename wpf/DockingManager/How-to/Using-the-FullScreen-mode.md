@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using-the-FullScreen-mode
+title: Using the FullScreen mode | DockingManager | wpf | Syncfusion
 description: using the fullscreen mode
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-## Using the FullScreen mode
+# Using the FullScreen mode
 
 The FullScreen Mode is used to display the control in full screen. This will be effective while you use TDI Modes. The TabPanel will be hidden and visible on mouse roll-over. For this, you have TDIFullScreenMode property. This property is of type FullScreen mode which has following values.
 
@@ -23,12 +23,38 @@ This Mode window will be in full screen and the TabPanel will be hidden, and it 
 
 In this mode, fullscreen will be disabled and only the Tab panel will be hidden and visible only on mouse roll-over.
 
+{% tabs %}
 
-{% highlight html %}
+{% highlight xaml %}
 
-<!-- To use Control Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="ControlMode"/><!-- None disables this feature--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="None"/><!-- To use Window Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="WindowMode"/>
+<!-- To use Control Mode-->
 
-//Disables this feature.DockingManager.TDIFullScreenMode = FullScreenMode.None;//To use controlMode.DockingManager.TDIFullScreenMode = FullScreenMode.ControlMode;//To use Window Mode.DockingManager.TDIFullScreenMode = FullScreenMode.WindowMode;
+<syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="ControlMode"/>
+
+<!-- None disables this feature-->
+
+<syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="None"/>
+
+<!-- To use Window Mode-->
+
+<syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="WindowMode"/>
+
 {% endhighlight  %}
 
+{% highlight c# %}
 
+//Disables this feature.
+
+DockingManager.TDIFullScreenMode = FullScreenMode.None;
+
+//To use controlMode.
+
+DockingManager.TDIFullScreenMode = FullScreenMode.ControlMode;
+
+//To use Window Mode.
+
+DockingManager.TDIFullScreenMode = FullScreenMode.WindowMode;
+
+{% endhighlight  %}
+
+{% endtabs %}

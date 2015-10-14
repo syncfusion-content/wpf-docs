@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footnotes-and-Endnotes
+title: Footnotes and Endnotes| DocIO | Wpf | Syncfusion
 description: footnotes and endnotes
 platform: wpf
 control: DocIO
@@ -50,9 +50,8 @@ ParagraphItem
 
              WFootnote
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
 
 <table>
 <tr>
@@ -66,9 +65,8 @@ Initializes a new instance of the WFootnote class  </td></tr>
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Public Properties_
 
 <table>
 <tr>
@@ -108,6 +106,7 @@ Specifies custom (string) marker for footnote. If footnote is autonumbered, this
 
 The following code example illustrates how to create a Footnote and an Endnote by using Essential DocIO.
 
+{% tabs %}
 {% highlight  c# %}
 
 
@@ -231,15 +230,14 @@ paragraph.AppendText("Essential DocIO is a .NET library that has a simple yet an
 
 document.Save("Sample.doc", Syncfusion.DocIO.FormatType.Doc)
 {% endhighlight   %}
-
+{% endtabs %}
 
 ### Footnote and Endnote Separators
 
 A Footnote or Endnote separator is a line preserved between the body and the endnotes or footnotes in a Microsoft Word document. A footnote or endnote continuation separator is a line running across the top section indicating that the footnotes or endnotes are carried over from the preceding page if they run over to the second page. A footnote or endnote continuation notice is a special character or word preserved at the bottom of the footer area to indicate that the footnotes or endnotes continue to the next page.
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
 
 <table>
 <tr>
@@ -257,9 +255,8 @@ Initializes a new instance of the Endnote class.</td></tr>
 </table>
 
 
-Public Properties 
+### Public Properties 
 
-_Public Properties_
 
 <table>
 <tr>

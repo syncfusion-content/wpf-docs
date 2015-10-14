@@ -1,35 +1,32 @@
 ---
 layout: post
-title: Updating and Editing
+title: Updating and Editing| PivotGrid | Wpf | Syncfusion
 description: Updating and Editing
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Updating and Editing
+# Updating and Editing
 
-### Editing and Updating in Value and Total Cells in the PivotGrid Control
+## Editing and Updating in Value and Total Cells in the PivotGrid Control
 
 Editing and updating the value cells and total cells is possible now in the PivotGrid control. Editing and updating can be enabled through the EnableValueEditing and EnableUpdating properties respectively. While handling the editing and updating operations, the values will be calculated automatically and its total values will be reflected.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Editing and updating features are useful when users would like to edit the values at run time and save their changes to the underlying data source, thereby reflecting its update in the total cells.
 
-### Tables for Properties, Methods, and Events
 
-### Properties
-
-_Properties Table_
+### Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 EnableValueEditing</td><td>
@@ -64,15 +61,15 @@ Boolean</td></tr>
 
 ### Events
 
-_Event Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th></tr>
+Event</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th></tr>
 <tr>
 <th>
 ChangeValue</th><th>
@@ -82,13 +79,13 @@ Event </th></tr>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
-Updating Demo
+#### Updating Demo
 
 {InstalledDrive}\Users\{User}\AppData\Local\Syncfusion\EssentialStudio\{Version}\BI\WPF\PivotAnalysis.Wpf\Samples\Interactive Features\Updating Demo
 
-Editing Demo
+#### Editing Demo
 
 {InstalledDrive}\Users\{User}\AppData\Local\Syncfusion\EssentialStudio\{Version}\BI\WPF\PivotAnalysis.Wpf\Samples\Interactive Features\Editing Demo
 
@@ -97,6 +94,7 @@ Editing Demo
 
 You can enable updating in value and total cells by setting the EnableValueEditing and EnableUpdating Boolean properties of the PivotGrid control to true. Enabling the AllowEditingOfTotalCells property allows you to edit the total cells in the PivotGrid control.
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -126,6 +124,7 @@ Me.pivotGrid1.EnableValueEditing = True
 Me.pivotGrid1.EnableUpdating = True 
 
  {% endhighlight %} 
+ {% endtabs %}
 
 ‘To Enable Editing Total cells in PivotGridControl Me.pivotGrid1.EditManager.AllowEditingOfTotalCells = True
 
@@ -141,6 +140,7 @@ Me.pivotGrid1.EnableUpdating = True
 
 A custom editing manager can be used so that you can format the PivotCellInfo. This can be handled by overriding the ChangeValue event. The following code demonstrates its implementation where the formatted text is customized by appending * after editing the cell.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -236,9 +236,11 @@ End Sub
 End Class
 
 {% endhighlight %} 
+{% endtabs %}
 
 While updating the PivotGrid control you can throttle its updating speed which can be set through the ThrottleUpdateRate property. It gets the value in milliseconds as the time interval for UI refreshes to take place. Zero indicates immediate refresh of the UI without any delays. Throttling the refresh rate can minimize CPU usage. The default value is zero, but depending upon your updating rate, values of 300 to 500 milliseconds may give lower CPU usage. The following code explains its implementation.
 
+{% tabs %}
 {% highlight C# %}   
 
 
@@ -258,6 +260,7 @@ this.pivotGrid1.UpdateManager.ThrottleUpdateRate = 300;
 Me.pivotGrid1.UpdateManager.ThrottleUpdateRate = 300 
 
 {% endhighlight %} 
+{% endtabs %}
 
 
 

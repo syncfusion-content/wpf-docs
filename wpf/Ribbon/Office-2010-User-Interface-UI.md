@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Office-2010-User-Interface-UI
+title: Office 2010 User Interface UI | Ribbon | WPF | Syncfusion
 description: office 2010 user interface (ui)
 platform: wpf
 control: Ribbon

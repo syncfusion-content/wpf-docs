@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spell-Checking-Options
+title: Spell Checking Options | SpellChecker | wpf | Syncfusion
 description: spell checking options
 platform: wpf
 control: SpellChecker
@@ -11,19 +11,13 @@ documentation: ug
 
 The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of  email id's and addresses, filenames, htmltags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 
-
-
 ### Properties
-
-
-
-Property Table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExcludeEmailAddress</td><td>
@@ -59,9 +53,7 @@ Specifies whether or not to Spell Check numbers or words with numbers during Spe
 
 Create a spell checker instance and set the spell checking options as given below:
 
-{%highlight c#%}
-
-
+{%highlight c# %}
 
 SpellChecker SpellCheck = new SpellChecker();
 
@@ -79,7 +71,6 @@ SpellCheck.ExcludeWordsInUpperCase = true;
 
 SpellCheck.ExcludeWordsWithNumbers = true;
 
-
 {%endhighlight%}
 
 ### Sample Link
@@ -90,6 +81,3 @@ To access the sample link:
 2. Select User Interface.
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to Tools -> SpellChecker -> SpellCheckerDemo.
-
-
-

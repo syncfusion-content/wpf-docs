@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connecting-to-Mondrian-Server-through-XMLA
+title: Connecting to Mondrian Server through XMLA| OLAPCommon | Wpf | Syncfusion
 description: connecting to mondrian server through xmla
 platform: wpf
 control: OLAPCommon
@@ -14,7 +14,7 @@ documentation: ug
 The following code illustrates how to connect to the Mondrian server:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -44,6 +44,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 [Click here](http://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
 

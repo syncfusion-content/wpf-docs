@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging| OLAPCommon  | Wpf | Syncfusion
 description: paging
 platform: wpf
 control: OLAPCommon 
@@ -16,7 +16,7 @@ Paging feature can be achieved by setting the _EnablePaging_ property to _true_ 
 
 
 The following code snippet demonstrates how to enable paging in current report:
-
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.CurrentReport.EnablePaging = true;
@@ -28,6 +28,7 @@ olapDataManager.CurrentReport.EnablePaging = true;
 olapDataManager.CurrentReport.EnablePaging = True
 
 {% endhighlight  %}
+{% endtabs %}
 
 The user can customize the page settings such as current page, page size (for both row and column).
 
@@ -36,7 +37,7 @@ The user can customize the page settings such as current page, page size (for bo
 The following code explains how to customize current page and page size settings:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.CurrentReport.PagerOptions.CategorialCurrentPage = 1;
@@ -60,4 +61,4 @@ olapDataManager.CurrentReport.PagerOptions.CategorialPageSize = 50
 olapDataManager.CurrentReport.PagerOptions.SeriesPageSize = 50
 
 {% endhighlight  %}
-
+{% endtabs %}

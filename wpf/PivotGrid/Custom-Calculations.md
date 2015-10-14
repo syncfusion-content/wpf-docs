@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Calculations
+title: Custom Calculations| PivotGrid | Wpf | Syncfusion
 description: Custom Calculations
 platform: wpf
 control: PivotGrid
@@ -39,16 +39,16 @@ Hence, the sales amount for FY 2011 is 33.33 % of overall year sales (FY 2008 to
 
 ### Properties
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property</th><th>
+Description </th><th>
+Type**' | markdownify }} </th><th>
+Data Type </th><th>
+Reference links</th></tr>
 <tr>
 <td>
 CalculationType</td><td>
@@ -76,6 +76,7 @@ _<SystemDrive>:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<vers
 
 To show the value cell as a percentage of its summary cells, use the following code snippet:
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -100,6 +101,7 @@ this.pivotGrid1.PivotCalculations.Add(new Syncfusion.PivotAnalysis.Base.PivotCom
 Me.pivotGrid1.PivotCalculations.Add(New Syncfusion.PivotAnalysis.Base.PivotComputationInfo() With {.FieldName = "Amount", .Format = "C", .CalculationName = "Total Amount", .CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, .BaseField = "Country"})
 
 {% endhighlight %} 
+{% endtabs %}
 
 To change the value cell’s calculation for different view dynamically, do the following procedure through Pivot Schema Designer control:
 

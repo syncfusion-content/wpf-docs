@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Custom-XML-Support
+title: Custom XML Support | XlsIO | WPF | Syncfusion
 description: custom xml support
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -11,8 +11,10 @@ documentation: ug
 
 Add XML
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 string fileName = "output.xlsx";
@@ -50,10 +52,11 @@ book.SaveAs(fileName);
 book.Close();
 
 excelEngine.Dipose();
+
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 Dim fileName As String = "output.xlsx"
 
@@ -90,11 +93,15 @@ book.SaveAs(fileName)
 book.Close()
 
 excelEngine.Dipose()
+
 {% endhighlight %}
+{% endtabs %}
 
-Read XML
+##Read XML
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %} 
 
 
 
@@ -129,11 +136,11 @@ byte[] xmlData = customXmlPart.Data;
 
 
 System.Text.Encoding.Default.GetString(xmlData);
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 Dim fileName As String = "output.xlsx"
@@ -168,5 +175,6 @@ Dim xmlData() As Byte = customXmlPart.Data
 
 System.Text.Encoding.Default.GetString(xmlData)
 
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}

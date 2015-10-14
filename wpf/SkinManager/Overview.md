@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview
+title: Overview| SkinManager | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: SkinManager
 documentation: ug
 ---
 
-# Overview
+# SkinManager
 
 The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
 
-###Feature Summary
+## Feature Summary
 
 * 9 Built-In skins support for the Syncfusion controls as well as the Microsoft controls.
 * Applying Custom color for the WPF controls by setting the Single property.
@@ -27,7 +27,7 @@ Skins can be applied to the control by setting the VisualStyle property defined 
 
 
 
-Visual Style Property
+### Visual Style Property
 
 <table>
 <tr>
@@ -47,25 +47,26 @@ Setting VisualStyle in XAMLSetting VisualStyle in C#</td></tr>
 </table>
 
 
-##Setting VisualStyle in XAML
+## Setting VisualStyle in XAML
 
 The following code snippet explains how to set the VisualStyle property in XAML.
 
 1. Add the following namespace in the sample.
 
-
+   ~~~xaml
 
          xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-
+   ~~~
+   
 2. Set the VisualStyle property for the control as shown below. 
 
-
+   ~~~xaml
 
 		   <syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle="Blend">
 		   </syncfusion:CalendarEdit>  
 
-   {:.prettyprint}
+   ~~~
 
 ## Setting VisualStyle in C#
 
@@ -79,22 +80,22 @@ The following code snippet explains how to set the VisualStyle property in C#.
 
 
 
-
+   ~~~xaml
 
           <syncfusion:CalendarEdit Name="calendar">
 		  </syncfusion:CalendarEdit> 
 
-
+   ~~~
 
 2. Add the following line in code behind file.
 
 
-
+   ~~~csharp
 
 
           SkinStorage.SetVisualStyle(calendar, "Blend");
 
-   {:.prettyprint}
+   ~~~
 
 The output is displayed as shown below.
 
@@ -105,6 +106,7 @@ The output is displayed as shown below.
 
 
 Calendar with Blend Style
+{:.caption}
 
 ## Active Color Scheme
 
@@ -112,7 +114,7 @@ You can set the custom color for the WPF controls by using the ActiveColorScheme
 
 
 
-ActiveColorScheme Property
+### ActiveColorScheme Property
 
 <table>
 <tr>
@@ -132,33 +134,33 @@ Setting ActiveColorScheme property in XAMLSetting ActiveColorScheme property in 
 </table>
 
 
-##Setting ActiveColorScheme property in XAML
+## Setting ActiveColorScheme property in XAML
 
 The following code snippet explains how to set the ActiveColorScheme property in XAML.
 
 1. Add the following namespace in the sample.
 
 
-
+   ~~~xaml
 
 
             xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
 
-
+   ~~~
 
 
 2. Set the ActiveColorScheme property for the control as shown below.
 
 
 
-
+   ~~~xaml
 
           <syncfusion:CalendarEdit Name="calendar" syncfusion:SkinManager.ActiveColorScheme="Red">
 		  </syncfusion:CalendarEdit> 
 
 
-   {:.prettyprint}
+   ~~~
    
 ## Setting ActiveColorScheme property in C#
 
@@ -172,26 +174,26 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 
 
-
+   ~~~xaml
 
 				<syncfusion:CalendarEdit Name="calendar">
 				</syncfusion:CalendarEdit> 
 
 
 
-
+   ~~~   
 
 2. Add the following line in code behind file.
 
 
 
-
+   ~~~csharp
 
              SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
 
 
-
+   ~~~
 
 
 
@@ -199,9 +201,10 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
    ![](Overview_images/Overview_img2.png)
 
-   {:.prettyprint}
+
 
 Calendar with Custom Color
+{:.caption}
 
 ## Metro Theme Customization
 
@@ -256,6 +259,7 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 
 
 Metro Customization Demo
+{:.caption}
 
 ## ResourceDictionary Path for Syncfusion Themes
 
@@ -283,7 +287,7 @@ To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the a
 
 {% endhighlight %}
 
-Controls table
+### Controls table
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations
+title: Annotations | Chart(Classic) | wpf | Syncfusion
 description: Annotations
 platform: wpf
 control: Chart (Classic)
@@ -12,7 +12,6 @@ documentation: ug
 
 Annotations at specific X-Y coordinates can be added to the chart programmatically. The ChartSeriesAnnotation type used to define an annotation provides these properties:
 
-_Property_
 
 <table>
 <tr>
@@ -46,7 +45,6 @@ Apecifies the look and feel of a specific annotation instance.</td></tr>
 </table>
 The AnnotationsCollection type, which is the container for the above ChartSeriesAnnotation instances, provides some properties that are applied on all the annotations:
 
-_Property_
 
 <table>
 <tr>
@@ -69,9 +67,9 @@ Z and y values above are x-y coordinates of the plotIf {{ '_true_' | markdownify
 
 
 Here is a code example that adds a few annotations to a chart.
+
+{% tabs %}
 {% highlight xml %}
-
-
 
 
 <sfchart:ChartSeries Name="series1"  Label="Series1" Type="Area" Interior="LightSkyBlue">
@@ -105,10 +103,6 @@ Here is a code example that adds a few annotations to a chart.
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 // Series1 Annotations
 
 ChartSeriesAnnotation ser1LowPoint = new ChartSeriesAnnotation() { X = 1, Y = 20, Description = "Series 1 Low Point" };
@@ -123,15 +117,12 @@ this.Chart1.Areas[0].Series[0].Annotations.Items.Add(ser1HighPoint);
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The resultant annotations look like this.
 
 ![](Chart-Controls_images/Chart-Controls_img229.jpeg)
 
-
-
-See Also
-
-Annotations at Control Coordinates
 
 ## Annotations At Control Coordinates
 
@@ -139,7 +130,6 @@ Chart for WPF also lets you add some annotations to the chart at specific contro
 
 Here are some Chart control properties that let you add annotations at Chart control coordinates:
 
-_Property_
 
 <table>
 <tr>
@@ -157,7 +147,6 @@ Defines a custom look and feel for the annotation.</td></tr>
 </table>
 The ChartAnnotationLabel type used to define an annotation exposes these properties.
 
-_Property_
 
 <table>
 <tr>
@@ -178,9 +167,9 @@ OffsetY</td><td>
 Y offset from the top-left of the control used to determine the y-location of the annotation.</td></tr>
 </table>
 Here is some code example that shows how to add annotations at Chart coordinates and how to customize their look and feel.
+
+
 {% highlight xml %}
-
-
 
 
 <syncfusion:Chart Name="chart1">
@@ -226,18 +215,11 @@ Here is some code example that shows how to add annotations at Chart coordinates
 ![](Chart-Controls_images/Chart-Controls_img230.jpeg)
 
 
-
-See Also
-
-Annotations at Control Coordinates
-
 ## Annotation Shapes
 
 Predefined shapes for annotation objects are used to point at specific information about a position in the chart. For example: Circle, Arrow etc. 
 
 The following table describes more about the annotation shapes:
-
-_Property Table_
 
 <table>
 <tr>
@@ -281,10 +263,10 @@ Double Value</td></tr>
 
 
 The following code example illustrates the creation of predefined annotation shape for a Chart.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart.AnnotationsLabel>
 
@@ -301,9 +283,6 @@ The following code example illustrates the creation of predefined annotation sha
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
 Chart1.AnnotationsLabel[0].OffsetX = 200;
 
 Chart1.AnnotationsLabel[0].OffsetY = 200;
@@ -314,6 +293,9 @@ Chart1.AnnotationsLabel[0].AnnotationShape = AnnotationShapes.Circle;
 
 Chart1.AnnotationsLabel[0].AnnotationShape = Red;
 {% endhighlight  %}
+
+{% endtabs %}
+
 Run the code. The following output is displayed.
 
 ![](Chart-Controls_images/Chart-Controls_img231.jpeg)

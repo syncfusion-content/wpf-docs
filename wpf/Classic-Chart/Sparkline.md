@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline
+title: Sparkline | Chart(Classic) | wpf | Syncfusion
 description: Sparkline
 platform: wpf
 control: Chart (Classic)
@@ -22,7 +22,7 @@ The following screenshot shows three  types of sparklines, which are  drawn insi
 
 ## Properties
 
-_Properties of Sparkline Control_
+
 
 <table>
 <tr>
@@ -156,8 +156,11 @@ Drawing Line Sparkline in an Application
 The line type of spark line represents a set of data points, connected by a line. 
 
 Refer to the following code examples to draw  the line sparkline.
+
+
+{% tabs %}
+
 {% highlight c# %}
-[C#.NET]
 
 
 
@@ -173,9 +176,6 @@ this.sparkLine1.SparkLineType = SparkLine.SparkLineType.Line;
 {% highlight vbnet %}
 
 
-
-
-
 'Set Sparkline points to source property
 
 Me.sparkLine1.ItemSource = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
@@ -188,7 +188,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType.Line
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img248.png)
 
@@ -199,8 +199,9 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType.Line
 The column type of spark line represents each data point by a column. The vertical column direction represents the negative or positive value.
 
 Refer to the following code examples to draw the column sparkline:
+
+{% tabs %}
 {% highlight c# %}
-[C#.NET]
 
 //Set Sparkline points to source property
 
@@ -212,7 +213,6 @@ this.sparkLine1.SparkLineType = SparkLine.SparkLineType.Column;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-
 
 
 'Set Sparkline points to source property
@@ -229,6 +229,8 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. Column
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img249.png)
 
 
@@ -238,8 +240,9 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. Column
 The Winloss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
 
 Refer to the following code examples to draw the WinLoss sparkline:
+
+{% tabs %}
 {% highlight c# %}
-[C#.NET]
 
 //Set Sparkline points to source property
 
@@ -252,13 +255,9 @@ this.sparkLine1.SparkLineType = SparkLine.SparkLineType.WinLoss;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-
-
 'Set Sparkline points to source property
 
 Me.sparkLine1.ItemSource = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-
 
 'Set line type sparkline
 
@@ -267,6 +266,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. WinLoss
 
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img250.png)
 
@@ -279,8 +279,11 @@ Markers Support for Line
 This marker feature supports data points of line sparkline. You can choose the marker color for data points.  
 
 Refer to the following code examples to enable the marker in line sparkline.
+
+{% tabs %}
+
 {% highlight c# %}
-[C#.NET]
+
 
 //To enable marker to sparkline for all data points
 
@@ -289,13 +292,13 @@ this.sparkLine1.Markers.ShowMarker  =true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-
-
 'To enable marker to sparkline for all data points
 
 Me.sparkLine1.Markers.ShowMarker  =True
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img251.png)
 
@@ -304,8 +307,10 @@ Me.sparkLine1.Markers.ShowMarker  =True
 You can choose the highlight color for data points.
 
 Refer to the following code examples to enable the marker in column sparkline.
+
+{% tabs %}
+
 {% highlight c# %}
-[C#.NET]
 
 //To enable marker to sparkline high,low,start,end,negative data points
 
@@ -336,14 +341,17 @@ Me.sparkLine1.IsLastPointHighlighted = true;
 
 Me.sparkLine1.IsNegativePointHighlighted = true;
 {% endhighlight  %}
+
+{% endtabs %}
 
 ### Markers Support for Column
 
 This marker feature supports high point, low point, start point, end point and negative points of column sparkline.  You can choose the highlight color for data points.
 
 Refer to the following code examples to enable the marker in column sparkline.
+
+{% tabs %}
 {% highlight c# %}
-[C#.NET]
 
 //To enable marker to sparkline high,low,start,end,negative data points
 
@@ -360,8 +368,6 @@ this.sparkLine1.IsNegativePointHighlighted = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-
-
 //To enable marker to sparkline high,low,start,end,negative data points
 
 Me.sparkLine1.IsHighPointHighlighted = true;
@@ -374,7 +380,7 @@ Me.sparkLine1.IsLastPointHighlighted = true;
 
 Me.sparkLine1.IsNegativePointHighlighted = true;
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img252.png)
 
@@ -385,8 +391,11 @@ Me.sparkLine1.IsNegativePointHighlighted = true;
 This marker feature supports High Points, Low Points, Start Point, End point and Negative Point of WinLoss Sparkline. You can choose the highlight color for data points. The markers feature of WinLoss is the same as Column markers.  
 
 Refer to the following code examples to enable the marker in column sparkline.
+
+{% tabs %}
+
 {% highlight c# %}
-[C#.NET]
+
 
 //To enable marker to sparkline high,low,start,end,negative data points
 
@@ -403,8 +412,6 @@ this.sparkLine1.IsNegativePointHighlighted = true;
 {% highlight vbnet %}
 
 
-
-
 //To enable marker to sparkline high,low,start,end,negative data points
 
 Me.sparkLine1.IsHighPointHighlighted = true;
@@ -417,7 +424,7 @@ Me.sparkLine1.IsLastPointHighlighted = true;
 
 Me.sparkLine1.IsNegativePointHighlighted = true;
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img253.png)
 
@@ -429,7 +436,7 @@ Range Band is useful for displaying the normal range of a variable in a Sparklin
 
 You can customize a particular range by using the BandRange, EnableRangeBand and RangeBandInterior properties.
 
-_Properties_
+
 
 <table>
 <tr>
@@ -462,11 +469,8 @@ Brush</td><td>
 NA</td></tr>
 </table>
 The following code example shows how to configure the range band.
+
 {% highlight xml %}
-
-
-
-
 <syncfusion:SparkLine Grid.Row="0" Grid.Column="10" ItemsSource="{Binding Collections}" DataMemberPath="Y" SparkLineType="Line" BandRange="-5,8" IsEnableRangeBand="True" RangeBandInterior="Red"/>
 
 {% endhighlight  %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Selection
+title: Cell Selection| OLAP Grid | Wpf | Syncfusion
 description: cell selection
 platform: wpf
 control: OLAP Grid
@@ -19,6 +19,7 @@ Using Cell Selection, you can select cells that can be copied to clipboard or no
 
 The following code snippets show how to create an OlapGrid and specify its cell selection.
 
+{% tabs %}
   {% highlight xml %}
 
     
@@ -97,7 +98,7 @@ Me.OlapGrid1.DataBind()
 
     {% endhighlight %}
 
-
+{% endtabs %}
 
 
 
@@ -108,7 +109,7 @@ The screenshot below illustrates the Cell Selection.
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)
 
 
-## Sample Link
+### Sample Link
 
 A sample application that illustrates Cell Selection Chart is distributed along with the Essential OLAP Grid WPF installation and can be found at:  
 

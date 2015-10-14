@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command-Support
+title: Command Support | Spreadsheet | wpf | Syncfusion
 description: command support
 platform: wpf
 control: Spreadsheet
@@ -11,18 +11,16 @@ documentation: ug
 
 The Spreadsheet control provides the build in commands to show case the features available in Spreadsheet. It can be executed in the Spreadsheet whenever it is bound to Command Property. 
 
-
-
-Commands Table
+### Commands Table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 BoldCommand</td><td>
@@ -215,16 +213,16 @@ NA</td></tr>
 </table>
 
 
-Parameterized Commands
+### Parameterized Commands
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 BorderCommand</td><td>
@@ -354,5 +352,3 @@ CommandBase</td><td>
 Double</td><td>
 NA</td></tr>
 </table>
-
-

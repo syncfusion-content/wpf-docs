@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tick-settings
+title: Tick settings| Circular Gauge | Wpf | Syncfusion
 description: tick settings
 platform: wpf
 control: Circular Gauge
@@ -15,41 +15,41 @@ Ticks help you to identify the gauge’s data value by marking the gauge scale 
 
 A tick’s length, stroke, and stroke thickness are set by the TickLength, TickStroke, and TickStrokeThickness UI properties. Like ticks, small ticks use similar UI properties to set the SmallTickLength, SmallTickStroke, and SmallTickStrokeThickness.
 
-### Code Example:
+### Code Example
 
 {% highlight xml %}
 
 
 
-             <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale 
+<syncfusion:CircularScale 
 
-                                            Interval="20" 
+Interval="20" 
 
-                                            MinorTicksPerInterval="3"
+MinorTicksPerInterval="3"
 
-                                            TickLength="20"
+TickLength="20"
 
-                                            TickStroke="White"  
+TickStroke="White"  
 
-                                            TickStrokeThickness="2" 
+TickStrokeThickness="2" 
 
-                                            SmallTickLength="10"
+SmallTickLength="10"
 
-                                            SmallTickStroke="White"
+SmallTickStroke="White"
 
-                                            SmallTickStrokeThickness="1" 
+SmallTickStrokeThickness="1" 
 
-                                            >
+>
 
-                   </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-             </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -58,33 +58,33 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.Interval = 20;
+_mainscale.Interval = 20;
 
-            _mainscale.MinorTicksPerInterval = 3;
+_mainscale.MinorTicksPerInterval = 3;
 
-            _mainscale.TickLength = 20;
+_mainscale.TickLength = 20;
 
-            _mainscale.TickStroke = new SolidColorBrush(Colors.White);
+_mainscale.TickStroke = new SolidColorBrush(Colors.White);
 
-            _mainscale.TickStrokeThickness = 2;
+_mainscale.TickStrokeThickness = 2;
 
-            _mainscale.SmallTickLength = 10;
+_mainscale.SmallTickLength = 10;
 
-            _mainscale.SmallTickStroke = new SolidColorBrush(Colors.Black);
+_mainscale.SmallTickStroke = new SolidColorBrush(Colors.Black);
 
-            _mainscale.SmallTickStrokeThickness = 1;
+_mainscale.SmallTickStrokeThickness = 1;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
 
 
-### Screenshot:
+### Screenshot
 
 ![](Tick-settings_images/Tick-settings_img1.png)
 
@@ -100,8 +100,9 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -110,41 +111,41 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 <syncfusion:SfCircularGauge  x:Name="gauge">
 
-            <syncfusion:SfCircularGauge.Scales >
+<syncfusion:SfCircularGauge.Scales >
 
-                <syncfusion:CircularScale  x:Name="CircularScale" 
+<syncfusion:CircularScale  x:Name="CircularScale" 
 
-                                           TickShape="Triangle"
+TickShape="Triangle"
 
-                                           Interval="10" 
+Interval="10" 
 
-                                           MinorTicksPerInterval="1"
+MinorTicksPerInterval="1"
 
-                                           TickLength="20"
+TickLength="20"
 
-                                           TickStroke="White"  
+TickStroke="White"  
 
-                                           TickStrokeThickness="3" 
+TickStrokeThickness="3" 
 
-                                           SmallTickLength="10"
+SmallTickLength="10"
 
-                                           SmallTickStroke="White"
+SmallTickStroke="White"
 
-                                           SmallTickStrokeThickness="3" 
+SmallTickStrokeThickness="3" 
 
-                                           StartAngle="135" 
+StartAngle="135" 
 
-                                           SweepAngle="270" 
+SweepAngle="270" 
 
-                                           StartValue="0"
+StartValue="0"
 
-                                           EndValue="100">
+EndValue="100">
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.Scales>
+</syncfusion:SfCircularGauge.Scales>
 
-        </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -153,41 +154,41 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 
 
-           SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale scale = new CircularScale();
+CircularScale scale = new CircularScale();
 
-            scale.Interval = 10;
+scale.Interval = 10;
 
-            scale.MinorTicksPerInterval = 1;
+scale.MinorTicksPerInterval = 1;
 
-            scale.TickShape = TickShape.Triangle;
+scale.TickShape = TickShape.Triangle;
 
-            scale.TickLength = 20;
+scale.TickLength = 20;
 
-            scale.TickStroke = new SolidColorBrush(Colors.White);
+scale.TickStroke = new SolidColorBrush(Colors.White);
 
-            scale.TickStrokeThickness = 3;
+scale.TickStrokeThickness = 3;
 
-            scale.SmallTickLength = 10;
+scale.SmallTickLength = 10;
 
-            scale.StartValue = 0;
+scale.StartValue = 0;
 
-            scale.EndValue = 100;
+scale.EndValue = 100;
 
-            scale.SmallTickStroke = new SolidColorBrush(Colors.White);
+scale.SmallTickStroke = new SolidColorBrush(Colors.White);
 
-            scale.SmallTickStrokeThickness = 3;
+scale.SmallTickStrokeThickness = 3;
 
-            circularGauge.Scales.Add(scale);
+circularGauge.Scales.Add(scale);
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
 
+{% endtabs %}
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Tick-settings_images/Tick-settings_img2.png)
 
@@ -204,25 +205,26 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-            <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale TickPosition="Cross"
+<syncfusion:CircularScale TickPosition="Cross"
 
-                              TickLength="25" SmallTickLength="15">
+TickLength="25" SmallTickLength="15">
 
-                    </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-            </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -231,25 +233,25 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.TickPosition = TickPosition.Cross;
+_mainscale.TickPosition = TickPosition.Cross;
 
-            _mainscale.TickLength = 25;
+_mainscale.TickLength = 25;
 
-            _mainscale.SmallTickLength = 15;
+_mainscale.SmallTickLength = 15;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
+{% endtabs %}
 
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Tick-settings_images/Tick-settings_img3.png)
 

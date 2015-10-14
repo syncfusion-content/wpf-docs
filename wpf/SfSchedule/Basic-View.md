@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-View
+title: Basic View| SfSchedule | Wpf | Syncfusion
 description: basic view
 platform: wpf
 control: SfSchedule
@@ -21,6 +21,7 @@ Schedule provides 4 different types of viewing the calendar,
 Using the property “ScheduleType” of SfSchedule, we can set the above view. Refer to the following code to set the View type of schedule.
 
 Code Example:
+{% tabs %}
 {% highlight html %}
 
 
@@ -60,13 +61,14 @@ this.grid.Children.Add(schedule);
 
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Basic-View_images/Basic-View_img1.png)
 
 
 
 Month View Scheduling
+{:.caption}
 
 
 

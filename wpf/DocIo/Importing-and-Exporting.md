@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Importing-and-Exporting
+title: Importing and Exporting| DocIO | Wpf | Syncfusion
 description: importing and exporting
 platform: wpf
 control: DocIO
@@ -26,32 +26,34 @@ This section shows you how to load and save an RTFdocument using Essential DocIO
 The following code example illustrates how to open an RTF file.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Opens the RTF file through WordDocument constructor.WordDocument doc = new WordDocument("Sample.rtf", FormatType.Rtf);
+//Opens the RTF file through WordDocument constructor.
+WordDocument doc = new WordDocument("Sample.rtf", FormatType.Rtf);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Opens the RTF file through WordDocument constructor.Dim doc As New WordDocument("Sample.rtf", FormatType.Rtf)
+'Opens the RTF file through WordDocument constructor.
+Dim doc As New WordDocument("Sample.rtf", FormatType.Rtf)
 {% endhighlight   %}
+{% endtabs %}
 
 
 The following code example lets you to save as RTF.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 doc.Save("samplertf.rtf",FormatType.Rtf );
 {% endhighlight   %}
 {% highlight vbnet  %}
 doc.Save("samplertf.rtf",FormatType.Rtf )
 {% endhighlight   %}
-
+{% endtabs %}
 
 ### Supported and Unsupported Elements
 
 DocIO Supports the following document elements.
 
-_Document Elements_
 
 <table>
 <tr>
@@ -232,24 +234,29 @@ The following references enable to validate the HTML string for XHTML compliance
 The following code example illustrates how to load a HTML file.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Opens the HTML file through WordDocument constructor.WordDocument doc = new WordDocument("Sample.html", FormatType.Html);
+//Opens the HTML file through WordDocument constructor.
+WordDocument doc = new WordDocument("Sample.html", FormatType.Html);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Opens the HTML file through WordDocument constructor.Dim doc As New WordDocument("Sample.html", FormatType.Html)
+'Opens the HTML file through WordDocument constructor.
+Dim doc As New WordDocument("Sample.html", FormatType.Html)
 {% endhighlight  %}
-
+{% endtabs %}
 
 You can also use the Open method of WordDocument class to load a XHTML file into WordDocument class.
 
-
+{% tabs %}
 {% highlight c#  %}
-//Opens the HTML file through Open method.doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict);
+//Opens the HTML file through Open method.
+doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Opens the HTML file through Open method.doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict)
+'Opens the HTML file through Open method.
+doc.Open("Sample.html", FormatType.Html, XHTMLValidationType.Strict)
 {% endhighlight   %}
+{% endtabs %}
 
 Here the Parameter XHTMLValidationType denotes the validation schema against the input XHTML document. Please refer to the XHTML Validaiton section to know more about the XHTML schema definition.
 
@@ -272,13 +279,24 @@ The following are the two overloaded methods:
 The following code example illustrates loading the HTML file containing the partial path of an image. 
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Creates a new instance for a Word document.WordDocument document = new WordDocument();//Sets the base folder path.string basePath=@"C:\InputFolder\";//Opens the HTML file along with the base path of the HTML file.document.Open(Path .Combine (basePath ,"Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath);           
+//Creates a new instance for a Word document.
+WordDocument document = new WordDocument();
+//Sets the base folder path.
+string basePath=@"C:\InputFolder\";
+//Opens the HTML file along with the base path of the HTML file.
+document.Open(Path .Combine (basePath ,"Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath);           
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Creates a new instance for a Word document.Dim document As New WordDocument()'Sets the base folder path.Dim basePath As String = "C:\InputFolder\"'Opens the HTML file along with the base path of the HTML file.document.Open(Path.Combine(basePath, "Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath)
+'Creates a new instance for a Word document.
+Dim document As New WordDocument()
+'Sets the base folder path.
+Dim basePath As String = "C:\InputFolder\"
+'Opens the HTML file along with the base path of the HTML file.
+document.Open(Path.Combine(basePath, "Input.html"), Syncfusion.DocIO.FormatType.Automatic, XHTMLValidationType.None, basePath)
 {% endhighlight   %}
+{% endtabs %}
 
 ### Inserting a HTML Formatted String
 
@@ -287,35 +305,43 @@ This section elaborates how to insert a valid HTML string into the body or parag
 The following code illustrates how to insert a HTML string into the body part of a section.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”);
+//Inserts XHTML String.
+section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”)
+'Inserts XHTML String.
+section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”)
 {% endhighlight   %}
+{% endtabs %}
 
 
 You can also insert the HTML string in the particular position of the document by specifying the index of the paragraph in the InsertXHTML overload of the TextBody class.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1);
+//Inserts XHTML with Paragraph index.
+section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1);
 {% endhighlight   %}
 {% highlight vbnet %}
-'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1)
+'Inserts XHTML with Paragraph index.
+section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1)
 {% endhighlight   %}
+{% endtabs %}
 
 
 You can also insert the HTML string in the particular position of the document by specifying the index of the paragraph and paragraph item in the InsertXHTML overload of the TextBody class.
 
 
 {% highlight c#  %}
-//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2);
+//Inserts XHTML with Paragraph and Paragraph item index.
+section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2)
+'Inserts XHTML with Paragraph and Paragraph item index.
+section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2)
 {% endhighlight   %}
 
 
@@ -330,10 +356,16 @@ The following code example illustrates, appending a HTML formatted string into a
 
 
 {% highlight c#  %}
-//Adds a new paragraph to the section.IWParagraph paragraph = section.AddParagraph();//Appends XHTML in the Paragraph.paragraph.AppendXHTML(htmlstring);
+//Adds a new paragraph to the section.
+IWParagraph paragraph = section.AddParagraph();
+//Appends XHTML in the Paragraph.
+paragraph.AppendXHTML(htmlstring);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Adds a new paragraph to the section.Dim paragraph As IWParagraph = section.AddParagraph()'Appends XHTML in the Paragraph.paragraph.AppendXHTML(htmlstring)
+'Adds a new paragraph to the section.
+Dim paragraph As IWParagraph = section.AddParagraph()
+'Appends XHTML in the Paragraph.
+paragraph.AppendXHTML(htmlstring)
 {% endhighlight   %}
 
 
@@ -359,7 +391,7 @@ The None type provides the feature to manipulate the XHTML without using Strict 
 
 The following table illustrates the basic comparison between the Transitional and Strict validation types.
 
-_Validation Types_
+### Validation Types
 
 <table>
 <tr>
@@ -380,14 +412,16 @@ The Transitional type DTD adds support for HTML presentation elements. That me
 The following code illustrates how to validate a HTML string.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Checks the valid XHTML.section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict);
+//Checks the valid XHTML.
+section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Checks the valid XHTML.section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict)
+'Checks the valid XHTML.
+section.Body.IsValidXHTML(htmlString, XHTMLValidationType.Strict)
 {% endhighlight  %}
-
+{% endtabs %}
 
 ### Parameter Description
 
@@ -403,50 +437,58 @@ N> Currently XHTML Validation is not supported in Windows Store applications.
 The following code example shows how to save a HTML document.
 
 
-
+{% tabs %}
 {% highlight c#  %}
- HTMLExport htmlExport = new HTMLExport();//Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");
+ HTMLExport htmlExport = new HTMLExport();
+//Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");
 {% endhighlight   %}
 {% highlight vbnet  %}
-Dim htmlExport As New HTMLExport()'Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")
+Dim htmlExport As New HTMLExport()
+'Saves the document as HTML file in local storage.htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")
 {% endhighlight   %}
-
+{% endtabs %}
 
 The following code shows how to save a HTML document in a stream.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-MemoryStream stream = new MemoryStream();HTMLExport htmlExport = new HTMLExport();//Saves the document as HTML file in a stream.htmlExport.SaveAsXhtml(doc,stream);
+MemoryStream stream = new MemoryStream();
+HTMLExport htmlExport = new HTMLExport();
+//Saves the document as HTML file in a stream.
+htmlExport.SaveAsXhtml(doc,stream);
 {% endhighlight   %}
 {% highlight vbnet  %}
-Dim stream As New MemoryStream()Dim htmlExport As New HTMLExport()'Saves the document as HTML file in a stream.htmlExport.SaveAsXhtml(doc,stream)
+Dim stream As New MemoryStream()
+Dim htmlExport As New HTMLExport()
+'Saves the document as HTML file in a stream.
+htmlExport.SaveAsXhtml(doc,stream)
 {% endhighlight   %}
-
+{% endtabs %}
 
 You can also use the overload of Save method in WordDocument class to export the HTML document.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 document.Save(fileName,FormatType.Html);
 {% endhighlight   %}
 {% highlight vbnet  %}
  document.Save(fileName,FormatType.Html)
 {% endhighlight   %}
-
+{% endtabs %}
 
 The following code example saves the exported XHTML file into a stream.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 document.Save(stream,FormatType.Html);
 {% endhighlight   %}
 {% highlight vbnet  %}
 document.Save(stream,FormatType.Html)
 {% endhighlight  %}
-
+{% endtabs %}
 
 ### SaveOptions Class
 
@@ -455,43 +497,54 @@ It provides some more flexibility and some extra features when exporting the HTM
 The following code example shows how to save the style sheet as internal style sheet and save the images as base 64 string using SaveOptions class. While using this there is no separate folder created to save images and all the contents are stored within the HTML file itself.
 
 
-
+{% tabs %}
 {% highlight c#  %}
- WordDocument doc = new WordDocument(@"..\..\DocToHTML.doc");HTMLExport htmlExport = new HTMLExport();//Sets style sheet type as internal.doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal;//Specifies image folder. This will store the image as base 64 string.doc.SaveOptions.HtmlExportImagesFolder = "\\";     htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");
+ WordDocument doc = new WordDocument(@"..\..\DocToHTML.doc");
+HTMLExport htmlExport = new HTMLExport();
+//Sets style sheet type as internal.
+doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal;
+//Specifies image folder. This will store the image as base 64 string.
+doc.SaveOptions.HtmlExportImagesFolder = "\\";   
+  htmlExport.SaveAsXhtml(doc,  "doctohtml_res.html");
 {% endhighlight   %}
 {% highlight vbnet  %}
- Dim doc As New WordDocument("..\..\DocToHTML.doc")Dim htmlExport As New HTMLExport()'Sets style sheet type as internal.doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal'Specifies image folder. This will store image as base 64 string.doc.SaveOptions.HtmlExportImagesFolder = "\"htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")
+ Dim doc As New WordDocument("..\..\DocToHTML.doc")
+Dim htmlExport As New HTMLExport()
+'Sets style sheet type as internal.
+doc.SaveOptions.HtmlExportCssStyleSheetType = CssStyleSheetType.Internal
+'Specifies image folder. This will store image as base 64 string.
+doc.SaveOptions.HtmlExportImagesFolder = "\"htmlExport.SaveAsXhtml(doc, "doctohtml_res.html")
 {% endhighlight   %}
-
+{% endtabs %}
 
 The following code example shows how to preserve the TextFormField’s text as normal text while exporting to HTML document. When you set the property HtmlExportTextInputFormFieldAsText to true then the content of the TextFormField is preserved as normal text. Otherwise it is preserved as editable TextFormField.
 
 
-
+{% tabs %}
 {% highlight c#  %}
  document.SaveOptions.HtmlExportTextInputFormFieldAsText = true;
 {% endhighlight  %}
 {% highlight vbnet  %}
  document.SaveOptions.HtmlExportTextInputFormFieldAsText = True
 {% endhighlight  %}
-
+{% endtabs %}
 
 You can turn off the Header and Footer contents in the exported HTML document by using the HtmlExportHeadersFooters property of SaveOptions class. The following code illustrates the same.
 
-
+{% tabs %}
 {% highlight c#  %}
  document.SaveOptions.HtmlExportHeadersFooters = false;
 {% endhighlight   %}
 {% highlight vbnet  %}
  document.SaveOptions.HtmlExportHeadersFooters = False
 {% endhighlight  %}
+{% endtabs %}
 
-
-Supported Document Elements
+### Supported Document Elements
 
 DocIO supports the following document elements.
 
-_Document Elements_
+
 
 <table>
 <tr>
@@ -868,33 +921,32 @@ This section shows you how to Load and Save a Text document using Essential DocI
 The following code example lets you to load a Text document.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 WordDocument doc = new WordDocument(@"..\..\Document.txt");
 {% endhighlight   %}
 {% highlight vbnet  %}
 Dim doc As New WordDocument("..\..\Document.txt")
 {% endhighlight   %}
-
+{% endtabs %}
 
 The following code example lets you to save as Text file.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 doc.Save( "sample.txt", FormatType.Txt );
 {% endhighlight   %}
 {% highlight vbnet  %}
-
 doc.Save( "sample.txt", FormatType.Txt )
 {% endhighlight   %}
-
+{% endtabs %}
 
 ### Supported Document Elements
 
 DocIO supports the following document elements.
 
-_Document Elements_
+
 
 <table>
 <tr>
@@ -951,30 +1003,28 @@ Assembly Dependencies for this Conversion
 
 
 
-> You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
-
-> Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
-
-> Currently, [Word to PDF](http://docs.syncfusion.com/windowsforms/docio/importing-and-exporting#saving-a-word-document-as-pdf) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
+N> You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
+N> Layouting the contents of a Word document as pages in Essential DocIO is not exactly the same as layouting of Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word.
+N> Currently, [Word to PDF](http://docs.syncfusion.com/windowsforms/docio/importing-and-exporting#saving-a-word-document-as-pdf) _conversion is not supported in Silverlight, WinRT and Windows Phone applications.
 
 
 The following code example lets you to convert a Word document to PDF.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 WordDocument wordDoc = new WordDocument("sample.doc");DocToPDFConverter converter = new DocToPDFConverter();//Converts a Word document into a PDF document.PdfDocument pdfDoc = converter.ConvertToPDF(wordDoc);//Saves the PDF file.pdfDoc.Save("DoctoPDF.pdf");
 {% endhighlight  %}
 {% highlight vbnet  %}
 Dim wordDoc As New WordDocument("sample.doc")Dim converter As New DocToPDFConverter()'Converts a Word document into a PDF document.Dim pdfDoc As PdfDocument = converter.ConvertToPDF(wordDoc)'Saves the PDF file.pdfDoc.Save("DoctoPDF.pdf")
 {% endhighlight   %}
-
+{% endtabs %}
 
 ### Supported and Unsupported Elements 
 
 Word to PDF conversion feature provides support for the following elements.
 
-_Supported and Unsupported Elements_
+
 
 <table>
 <tr>
@@ -1112,14 +1162,14 @@ The following platforms support the EPub conversion process:
 The following code example illustrates how to convert a Word document to EPub file format.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 //Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);         //Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);
 {% endhighlight   %}
 {% highlight vbnet  %}
 'Loads any .doc or .docx file.Dim document As WordDocument = New WordDocument(filename)'Saves the EPub file.document.Save("Sample.epub", FormatType.EPub)
 {% endhighlight   %}
-
+{% endtabs %}
 
 The following screenshot illustrates the resultant EPub document.
 
@@ -1129,7 +1179,8 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-_Word document converted to EPub File Format_
+Word document converted to EPub File Format
+{:.caption}
 
 ### EmbeddingFont
 
@@ -1138,13 +1189,24 @@ Conversion of EPub by using default options does not embed font files. Hence, th
 The following code example illustrates how to embed font file.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);          //Turns on embedding font files.document.SaveOptions.EPubExportFont = true;//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);
+//Loads any .doc or .docx file.
+WordDocument document = new WordDocument(filename);      
+    //Turns on embedding font files.
+	document.SaveOptions.EPubExportFont = true;
+	//Saves the EPub file.
+	document.Save("Sample.epub", FormatType.EPub);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Loads any .doc or .docx file.Dim document As WordDocument = New WordDocument(filename)'Turns on embedding font files.document.SaveOptions.EPubExportFont = True'Saves the EPub file.document.Save("Sample.epub", FormatType.EPub)
+'Loads any .doc or .docx file.
+Dim document As WordDocument = New WordDocument(filename)
+'Turns on embedding font files.
+document.SaveOptions.EPubExportFont = True
+'Saves the EPub file.
+document.Save("Sample.epub", FormatType.EPub)
 {% endhighlight   %}
+{% endtabs %}
 
 
 The following screenshot illustrates the resultant EPub document.
@@ -1155,7 +1217,8 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-_Embedding fonts in an EPub File_
+Embedding fonts in an EPub File
+{:.caption}
 
 ### Exporting Header and Footer
 
@@ -1164,13 +1227,24 @@ Header and Footer in the Word document are helpful in placing specific informati
 The following code example illustrates how to export header and footer.
 
 
-
+{% tabs %}
 {% highlight c#  %}
-//Loads any .doc or .docx file.WordDocument document = new WordDocument(filename);//Turns on exporting headers and footers.document.SaveOptions.HtmlExportHeadersFooters = true;//Saves the EPub file.document.Save("Sample.epub", FormatType.EPub);
+//Loads any .doc or .docx file.
+WordDocument document = new WordDocument(filename);
+//Turns on exporting headers and footers.
+document.SaveOptions.HtmlExportHeadersFooters = true;
+//Saves the EPub file.
+document.Save("Sample.epub", FormatType.EPub);
 {% endhighlight   %}
 {% highlight vbnet  %}
-'Loads any .doc or .docx file.Dim document As WordDocument = New WordDocument(filename)'Turns on exporting headers and footers.document.SaveOptions.HtmlExportHeadersFooters = True'Saves the EPub file.   document.Save("Sample.epub", FormatType.EPub)
+'Loads any .doc or .docx file.
+Dim document As WordDocument = New WordDocument(filename)
+'Turns on exporting headers and footers.
+document.SaveOptions.HtmlExportHeadersFooters = True
+'Saves the EPub file.   
+document.Save("Sample.epub", FormatType.EPub)
 {% endhighlight   %}
+{% endtabs %}
 
 
 The following is the screenshot of the resultant EPub document with the disabled header and footer contents.
@@ -1179,7 +1253,8 @@ The following is the screenshot of the resultant EPub document with the disabled
 
 
 
-_Exporting Header and Footer_
+Exporting Header and Footer
+{:.caption}
 
 ### Supported Elements
 
@@ -1226,12 +1301,12 @@ N> * Parameter "pageIndex" is a zero based index. * Layouting the contents of a 
 The following code example lets you to render a Word document as image.
 
 
-
+{% tabs %}
 {% highlight c#  %}
 Image[] images = document.RenderAsImages(ImageType.Metafile);Stream stream = document.RenderAsImages(0, ImageFormat.Emf);Image image = document.RenderAsImages(5, ImageType.Metafile);//This converts pages 2, 3, 4 in the document into images.Image[] images = document.RenderAsImages(1, 3, ImageType.Metafile);
 {% endhighlight   %}
 {% highlight vbnet  %}
 Dim images() As Image = document.RenderAsImages(ImageType.Metafile)Dim stream As Stream = document.RenderAsImages(0, ImageFormat.Emf)Dim image As Image = document.RenderAsImages(5, ImageType.Metafile)'This converts pages 2, 3, 4 in the document into images.Dim images() As Image = document.RenderAsImages(1, 3, ImageType.Metafile)
 {% endhighlight   %}
-
+{% endtabs %}
 

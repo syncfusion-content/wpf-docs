@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing
+title: Printing| SfChart | Wpf | Syncfusion
 description: printing
 platform: wpf
 control: SfChart
@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart supports printing that enables you to print the chart. This support works in Windows 8.1 but not in Windows 8.
 
-Printing
+
 
 <table>
 <tr>
@@ -26,28 +26,28 @@ This method is used to print the chart by invoking the Charm window listing with
 
 
 The following code example illustrates the Printing feature.
-
+{% tabs %}
 {% highlight xml %}
 
 
 
 <syncfusion:SfChart HorizontalAlignment="Right" VerticalAlignment="Top" Height="400" Width="650" Margin="0,50,100,0"
 
-                    Palette="Metro" Loaded="ChartOnLoaded"
+Palette="Metro" Loaded="ChartOnLoaded"
 
-                    >
+>
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:NumericalAxis Interval="2" FontSize="14" />
+<syncfusion:NumericalAxis Interval="2" FontSize="14" />
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis FontSize="14"/>
+<syncfusion:NumericalAxis FontSize="14"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
@@ -59,17 +59,18 @@ The following code example illustrates the Printing feature.
 
 private void ChartOnLoaded(object sender, RoutedEventArgs routedEventArgs)
 
-        {
+{
 
-            var chart = sender as SfChart;
+var chart = sender as SfChart;
 
-            if (chart != null)
+if (chart != null)
 
-                chart.Print();
+chart.Print();
 
-        }
+}
 
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot illustrates Printing.
 

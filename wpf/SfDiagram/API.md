@@ -1,26 +1,24 @@
 ---
 layout: post
-title: API
+title: API | SfDiagram | wpf | Syncfusion
 description: api
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### API
+# API
 
 SfDiagram Properties
 
 The following table lists the General Properties associated with the SfDiagram control:
 
-
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 Constraints</td><td>
@@ -143,14 +141,7 @@ Gets or sets the print margin.</td><td>
 Thickness</td></tr>
 </table>
 
-
-
-
-
-
-Methods
-
-
+### Methods
 
 <table>
 <tr>
@@ -180,16 +171,9 @@ void UnregisterForPrinting()</td><td>
 This method is used to unregister the printing task from the printer.</td></tr>
 </table>
 
-
-
-
-INode Properties
-
-
+### INode Properties
 
 The following table lists the Properties associated with INode of the SfDiagram control:
-
-_Table_ _12__: Property Table_
 
 <table>
 <tr>
@@ -300,20 +284,18 @@ Gets or sets the ConnectorPadding of the Node. </td><td>
 </table>
 
 
-IConnector Properties
+### IConnector Properties
 
 
 
 The following table lists the Properties associated with IConnector of the SfDiagram control:
 
-_Table_ _13__: Property Table_
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 AutoBind</td><td>
@@ -432,16 +414,14 @@ Gets or sets the SourcePadding of the LineConnector. </td><td>
 </table>
 
 
-IConnectorSegment properties
-
-_Table_ _14__: Property Table_
+### IConnectorSegment properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 BezierSmooth</td><td>
@@ -454,23 +434,14 @@ Decides whether to consider IConnector.Smooth or IConnectorSegment.Smooth</td><t
 EnumConstraints.NoneConstraints.Inherit</td></tr>
 </table>
 
-
-
-
-INodePort Properties
-
-
-
-The following table lists the Properties associated with INodePort of the SfDiagram control:
-
-_Table_ _15__: Property Table_
+### INodePort Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 Node</td><td>
@@ -501,7 +472,7 @@ Gets or sets the ConnectorPadding of the Port. </td><td>
 
 
 
-ISymbol Properties
+### ISymbol Properties
 
 
 
@@ -511,10 +482,10 @@ The following table lists the Properties associated with ISymbol of the SfDiagra
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 Symbol</td><td>
@@ -528,7 +499,7 @@ Gets or sets the Symbol Template of the NodePort.</td><td>
 </table>
 
 
-Stencil Properties
+### Stencil Properties
 
 
 
@@ -538,10 +509,10 @@ The following table lists the Properties associated with Stencil of the SfDiagra
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 SelectedFilter</td><td>
@@ -550,7 +521,7 @@ Gets or sets the selected Filter of the NodePort.</td><td>
 </table>
 
 
-Annotations Properties
+### Annotations Properties
 
 
 
@@ -560,10 +531,10 @@ The following table lists the Properties associated with Annotations of the SfDi
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 Alignment</td><td>
@@ -602,7 +573,7 @@ Specifies the template for viewing the annotation.</td><td>
 </table>
 
 
-Layout Properties
+### Layout Properties
 
 
 
@@ -612,10 +583,10 @@ The following table lists the Layout Properties associated with Directed Tree La
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Value</th></tr>
 <tr>
 <td>
 HorizontalSpacing</td><td>
@@ -661,16 +632,16 @@ VerticalAlignment enumVerticalAlignment.CenterVerticalAlignment.TopVerticalAlign
 
 
 
-PageSettings Properties
+### PageSettings Properties
 
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 PageWidth</td><td>
@@ -733,15 +704,14 @@ Gets or sets the OffPageMaxMargin.</td><td>
 Thickness</td></tr>
 </table>
 
-
-
+### Property
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value </td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value </th></tr>
 <tr>
 <td>
 ScrollLimit</td><td>
@@ -768,15 +738,15 @@ MaximumScrollableArea </td></tr>
 </table>
 
 
-Scroll Limit
+## Scroll Limit
 
 The following table lists the Properties associated with ScrollLimit of PageSettings. 
 
 <table>
 <tr>
-<td>
-Enum Field</td><td>
-Description</td></tr>
+<th>
+Enum Field</th><th>
+Description</th></tr>
 <tr>
 <td>
 Infinity </td><td>
@@ -794,7 +764,7 @@ AutoScroll is stopped when the captured element / pointer reaches the limited sc
 
 
 
-SfDiagram Events
+## SfDiagram Events
 
 
 
@@ -802,10 +772,10 @@ The following table lists the Events associated with the SfDiagram control:
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 ConnectorSourceChangedEvent</td><td>
@@ -866,15 +836,13 @@ Event: Raised when an item is unselected. Event cannot be cancelled.Event Args: 
 
 
 
-SfDiagram Event Arguments
-
-
+### SfDiagram Event Arguments
 
 <table>
 <tr>
-<td>
-Event Args</td><td>
-Description</td></tr>
+<th>
+Event Args</th><th>
+Description</th></tr>
 <tr>
 <td>
 ChangeEventArgs<object,ConnectorChangedArgs></td><td>
@@ -897,37 +865,30 @@ DiagramPreviewEventArgs</td><td>
 Item: Gets new object as a node, connector, or group where the event is raised.Cancel: When set to true, this is cancelled.</td></tr>
 </table>
 
-
-
-
-Public or Virtual Methods
-
-
+### Public or Virtual Methods
 
 The following table lists the Public or Virtual Methods associated with the SfDiagram control:
 
-
-
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 Connectors</td><td>
-Add(<AnyType >arg1)</td><td>
+Add(&lt;AnyType &gt;arg1)</td><td>
 To Add any object(ConnectorViewModel, IConnector) into SfDiagram.</td></tr>
 <tr>
 <td>
 Groups</td><td>
-Add(<AnyType >arg1)</td><td>
+Add(&lt;AnyType &gt;arg1)</td><td>
 To Add any object(GroupViewModel, IGroup) into SfDiagram.</td></tr>
 <tr>
 <td>
 Nodes</td><td>
-Add(<AnyType>arg1)</td><td>
+Add(&lt;AnyType &gt;arg1)</td><td>
 To Add any object(NodeViewModel, INode) into SfDiagram.</td></tr>
 <tr>
 <td>
@@ -952,14 +913,14 @@ This provides all of the pages to be printed, in the form of UIElements, to an i
 </table>
 
 
-SfDiagram Event
+### SfDiagram Event
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoScrolled </td><td>
@@ -968,15 +929,15 @@ Event: Raised when pointer reaches the AutoScrollBorder. Event can be cancelled.
 </table>
 
 
-SfDiagram Event Arguments
+### SfDiagram Event Arguments
 
 
 
 <table>
 <tr>
-<td>
-Event Args</td><td>
-Description </td></tr>
+<th>
+Event Args</th><th>
+Description </th></tr>
 <tr>
 <td>
 AutoScrolledArgs </td><td>
@@ -986,14 +947,14 @@ Cancel               : when set to true, this is cancelled. Item                
 
 
 
-Public or Virtual Methods
+### Public or Virtual Methods
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description </td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description </th></tr>
 <tr>
 <td>
 OnAutoScroll </td><td>
@@ -1004,7 +965,7 @@ This method sets the default value for AutoScrolledArgs when you create the inst
 
 
 
-INode Methods
+### INode Methods
 
 The following table lists the INode Methods associated with the SfDiagram control:
 
@@ -1012,24 +973,24 @@ The following table lists the INode Methods associated with the SfDiagram contro
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 Annotations</td><td>
-Add(<IAnnotation >arg1)</td><td>
+Add(&lt;IAnnotation&gt;arg1)</td><td>
 To Add object(IAnnotation) into SfDiagram</td></tr>
 <tr>
 <td>
 Ports</td><td>
-Add(<INodePort >arg1)</td><td>
+Add(&lt;INodePort&gt;arg1)</td><td>
 To Add object(INodePort) into SfDiagram</td></tr>
 </table>
 
 
-IConnector Methods
+### IConnector Methods
 
 The following table lists the IConnector Methods associated with the SfDiagram control:
 
@@ -1037,24 +998,24 @@ The following table lists the IConnector Methods associated with the SfDiagram c
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 Annotations</td><td>
-Add(<IAnnotation >arg1)</td><td>
+Add(&lt;IAnnotation&gt;arg1)</td><td>
 To Add object(IAnnotation) into SfDiagram</td></tr>
 <tr>
 <td>
 Segments</td><td>
-Add(<IConnectorSegment >arg1)</td><td>
+Add(&lt;IConnectorSegment&gt;arg1)</td><td>
 To Add object(IConnectorSegment) into SfDiagram</td></tr>
 </table>
 
 
-IGroup Methods
+### IGroup Methods
 
 The following table lists the IGroup Methods associated with the SfDiagram control:
 
@@ -1062,29 +1023,29 @@ The following table lists the IGroup Methods associated with the SfDiagram contr
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 Connectors</td><td>
-Add(<AnyType >arg1)</td><td>
+Add(&lt;AnyType&gt;arg1)</td><td>
 To Add any object(ConnectorViewModel, IConnector) into SfDiagram</td></tr>
 <tr>
 <td>
 Groups</td><td>
-Add(<AnyType >arg1)</td><td>
+Add(&lt;AnyType&gt;arg1)</td><td>
 To Add any object(GroupViewModel, IGroup) into SfDiagram</td></tr>
 <tr>
 <td>
 Nodes</td><td>
-Add(<AnyType >arg1)</td><td>
+Add(&lt;AnyType&gt;arg1)</td><td>
 To Add any object(NodeViewModel, INode) into SfDiagram</td></tr>
 </table>
 
 
-Stencil Methods
+### Stencil Methods
 
 
 
@@ -1094,29 +1055,29 @@ The following table lists the Stencil Methods associated with the SfDiagram cont
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 SymbolFilters</td><td>
-Add(<ISymbolFilterProvider >arg1)</td><td>
+Add(&lt;ISymbolFilterProvider&gt;arg1)</td><td>
 To Add object(ISymbolFilterProvider) into SfDiagram</td></tr>
 <tr>
 <td>
 SymbolGroups</td><td>
-Add(<ISymbolGroupProvider >arg1)</td><td>
+Add(&lt;ISymbolGroupProvider&gt;arg1)</td><td>
 To Add object(ISymbolGroupProvider) into SfDiagram</td></tr>
 <tr>
 <td>
 SymbolSource</td><td>
-Add(<ISymbol >arg1)</td><td>
+Add(&lt;ISymbol&gt;arg1)</td><td>
 To Add object(ISymbol) into SfDiagram</td></tr>
 </table>
 
 
-ILineSegment Properties
+### ILineSegment Properties
 
 The following table lists the properties associated with ILineSegment of the SfDiagram control:
 
@@ -1124,10 +1085,10 @@ The following table lists the properties associated with ILineSegment of the SfD
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Point</td><td>
@@ -1136,7 +1097,7 @@ Point</td></tr>
 </table>
 
 
-ILineSegmentLength Properties
+### ILineSegmentLength Properties
 
 The following table lists the properties associated with ILineSegmentLength of the SfDiagram control:
 
@@ -1144,10 +1105,10 @@ The following table lists the properties associated with ILineSegmentLength of t
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Length</td><td>
@@ -1166,7 +1127,7 @@ RelativeMode.AbsoluteRelativeMode.Relative</td></tr>
 </table>
 
 
-IOrthogonalSegment Properties
+### IOrthogonalSegment Properties
 
 The following table lists the properties associated with IOrthogonalSegment of the SfDiagram control:
 
@@ -1174,10 +1135,10 @@ The following table lists the properties associated with IOrthogonalSegment of t
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Length</td><td>
@@ -1191,16 +1152,16 @@ OrthogonalDirection.AutoOrthogonalDirection.LeftOrthogonalDirection.TopOrthogona
 </table>
 
 
-IQuadraticCurveSegment Properties
+### IQuadraticCurveSegment Properties
 
 The following table lists the properties associated with IQuadraticCurveSegment of the SfDiagram control:
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Point1</td><td>
@@ -1214,7 +1175,7 @@ Point</td></tr>
 </table>
 
 
-ICubicCurveSegment Properties
+### ICubicCurveSegment Properties
 
 The following table lists the properties associated with ICubicCurveSegment of the SfDiagram control:
 
@@ -1222,10 +1183,10 @@ The following table lists the properties associated with ICubicCurveSegment of t
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Point1</td><td>
@@ -1254,16 +1215,16 @@ Vector</td></tr>
 </table>
 
 
-Snapping to Gridlines
+### Snapping to Gridlines
 
 Gridlines and snapping can be defined by the SfDiagram.SnapSettings property.
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 SnapSettings</td><td>
@@ -1272,14 +1233,14 @@ SnapSettings</td></tr>
 </table>
 
 
-SfDiagram.SnapSettings Properties
+### SfDiagram.SnapSettings Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 SnapConstraints</td><td>
@@ -1300,14 +1261,14 @@ Gridlines</td></tr>
 
 
 
-Gridlines Properties
+### Gridlines Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Strokes</td><td>
@@ -1331,16 +1292,16 @@ True/False</td></tr>
 </table>
 
 
-SfDiagram.SnapSetting Properties
+### SfDiagram.SnapSetting Properties
 
 The following table lists the properties associated with guidelines in the SfDiagram control:
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 SnapToObject</td><td>

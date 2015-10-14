@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-the-Refresh-button
+title: Using the Refresh button| Hierarchical Navigator | Wpf | Syncfusion
 description: using the refresh button
 platform: wpf
 control: Hierarchical Navigator
@@ -13,13 +13,19 @@ The Refresh button is on the right side of the HierarchyNavigator control. Click
 
 ![](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)
 
-
+{% tabs %}
 {% highlight xml %}
 <syncfusion:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
+{% endhighlight %}
+{% highlight c# %}
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+<br>hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);
 
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);
-
-private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e)<br>{<br>     //Occurs when Refresh Button Click<br>}
+private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e)<br>
+{<br>    
+ //Occurs when Refresh Button Click<br>
+ }
 {% endhighlight  %}
+{% endtabs %}
 
 

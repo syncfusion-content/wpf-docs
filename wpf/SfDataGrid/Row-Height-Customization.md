@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row-Height-Customization
+title: Row Height Customization | SfDataGrid | WPF | Syncfusion
 description: row height customization
 platform: wpf
 control: SfDataGrid
@@ -134,8 +134,8 @@ The following screenshot displays the output.
 
 
 
-_Query Row Height event_
-
+Query Row Height event
+{:.caption}
 ## AutoRowHeight
 
 By default, the RowHeight is not adjusted based on the text located in the GridCell. When large text in collection is loaded to the SfDataGrid and columns have defined TextWrapping with wrap, it looks like the content is wrapped and clipped with the default row height. 
@@ -211,8 +211,8 @@ As a result of TextWrapping, the text is wrapped but the height is not increased
 
 
 
-_Text wrap_
-
+Text wrap
+{:.caption}
 By adding the following code example, you can improve the readability of the content.
 
 
@@ -278,8 +278,8 @@ Now, you can see that the height of the row is resized based on the large text c
 
 
 
-_Output_
-
+Output
+{:.caption}
 The height of the row is calculated based on all the column values. With the GridRowSizingOptions, you can restrict the calculation to only a few columns that have large data instead of doing it for all the columns. You can also improve the performance of row height calculation with the GridRowSizingOptions.
 
 The following code example explains how to use the GridRowSizingOptions. 
@@ -408,8 +408,8 @@ In the above code example, CustomerID, ContactName and ContactTitle are excluded
 
 
 
-_Hidden column with Height calculation_
-
+Hidden column with Height calculation
+{:.caption}
 ## How to Customize the Height of the Header Row
 
 The SfDataGrid provides support to customize the height of the Header row also. You can achieve this by the following ways:
@@ -421,7 +421,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 
 
-
+{% highlight xml %}
 
 
 
@@ -441,7 +441,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 								   ItemsSource="{Binding CustomerDetails}"/>
 
-
+{% endhighlight %}
 
 2. By using QueryRowHeight Event
 
@@ -457,7 +457,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 
 
-
+{% highlight xml %}
 
 
 			<syncfusion:SfDataGrid x:Name="syncgrid"
@@ -475,11 +475,11 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 								   ItemsSource="{Binding CustomerDetails}"/>
 
 
+{% endhighlight %}
 
 
 
-
-
+{% highlight js %}
 
 
 			// Hooks event for the SfDataGrid.
@@ -503,7 +503,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 				}
 
 			}
-
+{% endhighlight %}
 
 
    The following screenshot displays the output.
@@ -512,9 +512,10 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 
 
-   _Increased Header Row Height_
+   Increased Header Row Height
+   {:.caption}
 
-   {:.prettyprint}
+   
 
 ## How the row height can auto grow with the text length 
 
@@ -590,8 +591,8 @@ Run the above code example. Edit with large text and complete editing. Press Tab
 ![](Features_images/Features_img171.png)
 
 
-_AutoRowHeight_
-
+AutoRowHeight
+{:.caption}
 N> If the InvalidateMeasuerInfo method is not called, grid does not refresh automatically. You need to explicitly refresh the grid though this method.
 
 
@@ -605,7 +606,7 @@ N> Need to use the namespace Syncfusion.UI.Xaml.Grid.Helper.
 The following code example explains you how to customize the Height of TableSummaryRow control in the QueryRowHeight event. 
 
 
-{% highlight C# %}
+{% highlight js %}
 
 
 
@@ -647,8 +648,8 @@ The following screenshot displays the output of customized TableSummaryRow contr
 
 
 
-_Customized TableSummaryRow_
-
+Customized TableSummaryRow
+{:.caption}
 ### Limitations
 
 1. Details View is not supported with QueryRowHeight event. If you have Details View with the QueryRowHeight event, the event does not raise any record row. If you have TableSummary with Details View, then you can resize the TableSummary alone.

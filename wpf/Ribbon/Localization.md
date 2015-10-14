@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | Ribbon | WPF | Syncfusion
 description: localization
 platform: wpf
 control: Ribbon

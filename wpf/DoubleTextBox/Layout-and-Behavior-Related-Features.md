@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-and-Behavior-Related-Features
+title: Layout and Behavior Related Features| DoubleTextBox  | Wpf | Syncfusion
 description: layout and behavior related features
 platform: wpf
 control: DoubleTextBox 
@@ -27,7 +27,7 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 The Foreground of the DoubleTextBox can be customized based on the Value property. When a Negative value is assigned to a Value property, then automatically a NegativeForeground value is assigned to the Foreground property.
 
-Note: The NegativeForeground in the DoubleTextBox can be enabled by setting the ApplyNegativeForeground property to true.
+N> The NegativeForeground in the DoubleTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
 
 {% highlight xml %}
@@ -36,7 +36,7 @@ Note: The NegativeForeground in the DoubleTextBox can be enabled by setting the 
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value="-123" 
 
-                           ApplyNegativeForeground="True" NegativeForeground="Red"/>
+ApplyNegativeForeground="True" NegativeForeground="Red"/>
 
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Note: The ZeroColor in the DoubleTextBox can be enabled by setting the ApplyZero
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value ="0"
 
-            ApplyZeroColor="True" ZeroColor="Magenta"/>
+ApplyZeroColor="True" ZeroColor="Magenta"/>
 
 {% endhighlight %}
 

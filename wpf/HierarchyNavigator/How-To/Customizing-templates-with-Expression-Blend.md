@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-templates-with-Expression-Blend
+title: Customizing templates with Expression Blend| Hierarchical Navigator | Wpf | Syncfusion
 description: customizing templates with expression blend
 platform: wpf
 control: Hierarchical Navigator
@@ -54,7 +54,7 @@ The steps to customize templates by using Expression Blend are as follows:
    ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img7.png)
 
 
-   {:.prettyprint}
+
    
 #### Customized sample styles
 
@@ -63,6 +63,8 @@ The steps to customize sample styles are as follows:
 1. Add a HierarchyNavigator control to the new sample project
 2. Add items. Refer Adding items to the HierarchyNavigator control.
 
+   ~~~xaml
+   
       xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;
 	  assembly=Syncfusion.Tools.Silverlight"
 
@@ -89,11 +91,11 @@ The steps to customize sample styles are as follows:
 		</syncfusion:HierarchyNavigator.Items>
 		</syncfusion:HierarchyNavigator>
 
+   ~~~
 
+      ItemContainerStyle has been changed for the HierarchyNavigator control.
 
-   ItemContainerStyle has been changed for the HierarchyNavigator control.
-
-   To steps to edit the styles are as follows:
+      To steps to edit the styles are as follows:
 
 3. Right-click the HierarchyNavigator control and select Edit Template, then select Edit Copy and type specify the style name for the HierarchyNavigator control. Then, edit the template as you require. 
 
@@ -109,7 +111,7 @@ The steps to customize sample styles are as follows:
 
    ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img9.png)
 
-   {:.prettyprint}
+
 
 #### Sample XAML for ItemContainerStyle
 

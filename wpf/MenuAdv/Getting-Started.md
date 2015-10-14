@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| MenuAdv | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: MenuAdv
@@ -40,7 +40,7 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 4. Using the Collection Editor, add the GroupBarItems and configure their properties.
 
-   {:.prettyprint}
+   
 
 ### Through Expression Blend
 
@@ -57,17 +57,17 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 
 
-3.	Drag the MenuAdv to the designer. This will generate an empty menu bar. 
-4. 	To add the MenuItemAdvs to the MenuAdv control, select the MenuAdv and go to Properties area.
-5. 	Click Items (Collection) under Common Properties.
+3. Drag the MenuAdv to the designer. This will generate an empty menu bar. 
+4. To add the MenuItemAdvs to the MenuAdv control, select the MenuAdv and go to Properties area.
+5. Click Items (Collection) under Common Properties.
 
 
    ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
-6. 	Once the Collection Editor opens, click Add another item.  The Select Object window will open.
-7. 	Select MenuItemAdv by typing MenuItemAdv in the search box, and then click OK.
+6. Once the Collection Editor opens, click Add another item.  The Select Object window will open.
+7. Select MenuItemAdv by typing MenuItemAdv in the search box, and then click OK.
 
 
 
@@ -75,11 +75,11 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 
 
-8. 	Configure the properties (such as header or icon) of the MenuItemAdv using the properties in the Collection Editor. This will generate the following control.
+8. Configure the properties (such as header or icon) of the MenuItemAdv using the properties in the Collection Editor. This will generate the following control.
 
 	![](Getting-Started_images/Getting-Started_img7.png)
 
-   {:.prettyprint}
+   
 
 N> You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend.
 
@@ -96,47 +96,47 @@ The MenuAdv control can also be created through XAML. The following code example
 
 
 
-            <syncfusion:MenuItemAdv Header="Products" >
+<syncfusion:MenuItemAdv Header="Products" >
 
 
 
-              <syncfusion:MenuItemAdv Header="Business Intelligence" />              
+<syncfusion:MenuItemAdv Header="Business Intelligence" />              
 
 
 
-                <syncfusion:MenuItemAdv Header="User Interface" >
+<syncfusion:MenuItemAdv Header="User Interface" >
 
 
 
-                    <syncfusion:MenuItemAdv Header="WPF  ">
+<syncfusion:MenuItemAdv Header="WPF  ">
 
 
 
-                        <syncfusion:MenuItemAdv Header="Tools"/>
+<syncfusion:MenuItemAdv Header="Tools"/>
 
-                        <syncfusion:MenuItemAdv Header="Chart"/>
+<syncfusion:MenuItemAdv Header="Chart"/>
 
-                        <syncfusion:MenuItemAdv Header="Grid"/>
+<syncfusion:MenuItemAdv Header="Grid"/>
 
-                        <syncfusion:MenuItemAdv Header="Diagram"/>
+<syncfusion:MenuItemAdv Header="Diagram"/>
 
-                        <syncfusion:MenuItemAdv Header="Gauge"/>
+<syncfusion:MenuItemAdv Header="Gauge"/>
 
-                        <syncfusion:MenuItemAdv Header="Schedule"/>
+<syncfusion:MenuItemAdv Header="Schedule"/>
 
-                        <syncfusion:MenuItemAdv Header="Edit"/>
-
-
-
-                    </syncfusion:MenuItemAdv>
+<syncfusion:MenuItemAdv Header="Edit"/>
 
 
 
-                    <syncfusion:MenuItemAdv Header="Silverlight "/>               
+</syncfusion:MenuItemAdv>
 
 
 
-                <syncfusion:MenuItemAdv Header="Reporting" />   
+<syncfusion:MenuItemAdv Header="Silverlight "/>               
+
+
+
+<syncfusion:MenuItemAdv Header="Reporting" />   
 
 
 
@@ -170,73 +170,73 @@ MenuAdv mAdv = new MenuAdv();
 
 
 
-     MenuItemAdv product = new MenuItemAdv() { Header = "Products" };
+MenuItemAdv product = new MenuItemAdv() { Header = "Products" };
 
 
 
-     MenuItemAdv bi = new MenuItemAdv() { Header = "Business Intelligence" };            
+MenuItemAdv bi = new MenuItemAdv() { Header = "Business Intelligence" };            
 
 
 
-       MenuItemAdv ui = new MenuItemAdv() { Header = "User Interface" };
+MenuItemAdv ui = new MenuItemAdv() { Header = "User Interface" };
 
 
 
-          MenuItemAdv wpf = new MenuItemAdv() { Header = "WPF" };
+MenuItemAdv wpf = new MenuItemAdv() { Header = "WPF" };
 
 
 
-            MenuItemAdv tools = new MenuItemAdv() { Header = "Tools" };
+MenuItemAdv tools = new MenuItemAdv() { Header = "Tools" };
 
-            MenuItemAdv chart = new MenuItemAdv() { Header = "Chart" };
+MenuItemAdv chart = new MenuItemAdv() { Header = "Chart" };
 
-            MenuItemAdv grid = new MenuItemAdv() { Header = "Grid" };
+MenuItemAdv grid = new MenuItemAdv() { Header = "Grid" };
 
-            MenuItemAdv diagram = new MenuItemAdv() { Header = "Diagram" };
+MenuItemAdv diagram = new MenuItemAdv() { Header = "Diagram" };
 
-            MenuItemAdv  gauge= new MenuItemAdv() { Header = "Gauge" };
+MenuItemAdv  gauge= new MenuItemAdv() { Header = "Gauge" };
 
-            MenuItemAdv schedule = new MenuItemAdv() { Header = "Schedule" };
+MenuItemAdv schedule = new MenuItemAdv() { Header = "Schedule" };
 
-            MenuItemAdv edit = new MenuItemAdv() { Header = "Edit" };                         
-
-
-
-            wpf.Items.Add(tools);
-
-            wpf.Items.Add(chart);
-
-            wpf.Items.Add(grid);
-
-            wpf.Items.Add(diagram);
-
-            wpf.Items.Add(gauge);
-
-            wpf.Items.Add(schedule);
-
-            wpf.Items.Add(edit);
+MenuItemAdv edit = new MenuItemAdv() { Header = "Edit" };                         
 
 
 
-          MenuItemAdv sl = new MenuItemAdv() { Header = "Silverlight" };
+wpf.Items.Add(tools);
 
-          ui.Items.Add(wpf);
+wpf.Items.Add(chart);
 
-          ui.Items.Add(sl);
+wpf.Items.Add(grid);
 
+wpf.Items.Add(diagram);
 
+wpf.Items.Add(gauge);
 
-        MenuItemAdv reporting = new MenuItemAdv() { Header = "Reporting" };
+wpf.Items.Add(schedule);
 
-        product.Items.Add(bi);
-
-        product.Items.Add(ui);                
-
-        product.Items.Add(reporting);
+wpf.Items.Add(edit);
 
 
 
-   mAdv.Items.Add(product);
+MenuItemAdv sl = new MenuItemAdv() { Header = "Silverlight" };
+
+ui.Items.Add(wpf);
+
+ui.Items.Add(sl);
+
+
+
+MenuItemAdv reporting = new MenuItemAdv() { Header = "Reporting" };
+
+product.Items.Add(bi);
+
+product.Items.Add(ui);                
+
+product.Items.Add(reporting);
+
+
+
+mAdv.Items.Add(product);
 
 {% endhighlight %}
 

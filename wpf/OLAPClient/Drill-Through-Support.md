@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill-Through-Support
+title: Drill Through Support| OLAP Client  | Wpf | Syncfusion
 description: drill-through support
 platform: wpf
 control: OLAP Client 
@@ -11,9 +11,9 @@ documentation: ug
 
 Drill-through retrieves the underlying table rows that are used to create a specified cell in a cube. 
 
-## Property			
+### Property			
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -34,6 +34,7 @@ Boolean</td></tr>
 
 The following code example explains you on how to enable the drill-through option in your application.
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -87,25 +88,28 @@ End Sub
 
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Drill-Through-Support_images/Drill-Through-Support_img1.png)
 
 
 
-_Hyperlink Cell Click_
+Hyperlink Cell Click
+{:.caption}
 
 ![](Drill-Through-Support_images/Drill-Through-Support_img2.png)
 
 
 
-_Attribute Hierarchy Selector_
+Attribute Hierarchy Selector
+{:.caption}
 
 ![](Drill-Through-Support_images/Drill-Through-Support_img3.png)
 
 
 
-_Grid with drill-through data_
+Grid with drill-through data
+{:.caption}
 
 ### Sample Link
 

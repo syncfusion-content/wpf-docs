@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print Preview and Print
+title: Print Preview and Print| PivotGrid | Wpf | Syncfusion
 description: Print Preview and Print
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Print Preview and Print
+# Print Preview and Print
 
 Essential PivotGrid for WPF provides in-built support for printing and print preview. This feature provides a print dialog that allows you to preview the output and make any modifications if required before printing.
 
@@ -15,20 +15,20 @@ Essential PivotGrid for WPF provides in-built support for printing and print pre
 
 Printing option allows you to have a hard copy of the PivotGrid.
 
-### Tables for Properties, Methods, and Events
+
 
 ### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
 <td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type}</td><td>
+Reference links</td></tr>
 <tr>
 <td>
 PrintHeader </td><td>
@@ -47,17 +47,17 @@ Boolean</td><td>
 
 ### Methods
 
-_Methods Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th><th>
+Reference links</th></tr>
 <tr>
 <th>
 ShowPrintPreview</th><th>
@@ -90,6 +90,7 @@ This feature has been implemented to provide printing support for PivotGrid cont
 
 Following code example shows how to set the PrintHeader and PrintFooter properties.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -119,9 +120,9 @@ Following code example shows how to call ShowPrintPreview methods.
 
 
  {% endhighlight %} 
+{% endtabs %}
 
-
-#### Print Preview
+### Print Preview
 
 The following screenshot displays a Print Preview window along with a header and footer:
 
@@ -129,14 +130,15 @@ The following screenshot displays a Print Preview window along with a header and
 
 
 
-_Print Preview_
+Print Preview
+{:.caption}
 
 The Print Preview window provides the following options:  “Zooming”, “Page Settings”,”Print”. 
 
 You can use these options to get a magnified view of the PivotGrid or to change the page setup or to print the PivotGrid 
 control respectively.
 
-#### Zooming
+### Zooming
 
 Click on the “Zoom” drop-down button in the print preview window and select the desired percentage to magnify the print 
 preview in PivotGrid. You can choose from various preset zoom level options such as 50%, 100%, 200% or 400%.
@@ -147,9 +149,10 @@ The following screen shot shows the zooming options dropdown in the Print previe
 
 
 
-_Zooming_
+Zooming
+{:.caption}
 
-#### Page Settings
+### Page Settings
 
 Click the “PageSettings” button in the print preview to change the page settings while printing.
 
@@ -159,9 +162,10 @@ The following screenshot shows the Page setting icon in a Print preview window:
 
 
 
-_Page settings_
+Page settings
+{:.caption}
 
-#### Print 
+### Print 
 
 Click the “Print” button in the print preview window to print the PivotGrid content.
 
@@ -171,11 +175,12 @@ The following screen shot shows the Print icon in the print preview window.
 
 
 
-_Print option_
+Print option
+{:.caption}
 
 ### Sample Link
 
-Windows 8/7/Vista
+#### Windows 8/7/Vista
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\BI\WPF\PivotAnalysis.Wpf\Printing\Printing Demo
 
