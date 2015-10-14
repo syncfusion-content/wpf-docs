@@ -10,7 +10,7 @@ documentation: ug
 
 ### Activating a window
 
-A particular child window can be activate in DockingManager, using its name or reference through the property **ActiveWindow**  property and **ActivateWindow** method which passes the element to get activate as its argument.
+A particular child window can be activated in DockingManager, using its name or reference through the property **ActiveWindow**  property and **ActivateWindow** method that passes the element to activate its argument.
 
 {% highlight c# %}
 
@@ -26,9 +26,9 @@ DockingManager1.ActivateWindow("Content1");
 
 ### Adding Window Programmatically
 
-Any UI elements can be added inside the DockingManager as the child windows. The windows will be add as Dock windows, since the default value of the state is **“Dock”**.  The UI element will be added in the DockingManager using the **Add** method of the **Children** property of the DockingManager.
+Any UI elements can be added inside the DockingManager as its child windows. The windows is added as Dock windows, since the default value of the state is **“Dock”**.  The UI element is added in the DockingManager using the **Add** method of the **Children** property of the DockingManager.
 
-For instance, ContentControl has added as windows for DockingManager
+For instance, ContentControl is added as a window for DockingManager
 
 {% highlight c# %}
 
@@ -74,7 +74,7 @@ DockingManager1.Children.Add(content5);
 
 ### Setting States for Window programmatically
 
-The states for the particular child window can be set programmatically using the **SetState** method of DockingManager containing two argument.
+The states for the particular child window can be set programmatically using the **SetState** method of DockingManager containing two arguments.
 
 {% highlight c# %}
 
@@ -111,7 +111,7 @@ DockingManager.SetState(content1, DockState.AutoHidden);
 
 ### Making Window AutoHide programatically
 
-To make the window autohidden programmatically call **ExecuteAutoHide** method of DockingManager.
+To autohide the window programmatically call **ExecuteAutoHide** method of DockingManager.
 
 {% highlight c# %}
 
@@ -124,15 +124,15 @@ DockingManager1.ExecuteAutoHide(Content1);
 
 ##### Making Window Float and Document programmatically
 
-The docking window can be made float and document using the **SetState** property with its **DockState** value as **Float** and **AutoHidden** respectively
+The docking window can be made to float and document using the **SetState** property with its **DockState** value as **Float** and **AutoHidden** respectively
 
 {% highlight c# %}
 
-//which makes the content1 to float 
+//to make the content1 float 
 
 DockingManager.SetState(Content1, DockState.Float);
 
-//which makes the content1 as Document window
+//to make the content1 as Document window
 
 DockingManager.SetState(Content1, DockState.Document);
 
@@ -142,14 +142,14 @@ DockingManager.SetState(Content1, DockState.Document);
 
 ### Hiding Window Programmatically
 
-To make the window to hide, set **State** property of the DockingManager as **Hidden**.
+To hide the window, set **State** property of the DockingManager as **Hidden**.
 
 {% highlight c# %}
 
 DockingManager.SetState(Content1, DockState.Hidden);
 {% endhighlight %}
 
-To make the window to hide programatically, call the **ExecuteClose** method which closes the window passed as an argument.
+To hide the window programatically, call the **ExecuteClose** method, that closes the window passed as an argument.
 
 {% highlight c# %}
 
@@ -190,7 +190,7 @@ dockingmanager.Children.Add(content1);
 
 dockingmanager.Children.Add(content2);
 
-//The following code describes how to remove the child window programatically using the remove method
+//The following code describes how to remove the child window programatically using the remove method.
 
 dockingmanager.Children.Remove(content2);
 
@@ -200,7 +200,7 @@ Grid1.Children.Add(dockingmanager);
 
 ### Restricting Docking in Float Window
 
-The float window will allow to dock by default. To restrict this behavior set **CanDockOnFloat** as **False** for particular window.
+The float window allows you to dock by default. To restrict this behavior, you can set **CanDockOnFloat** as **False** for that particular window.
 
 {% highlight xml %}
 
@@ -220,7 +220,7 @@ syncfusion:DockingManager.CanDockonFloat="False"
 
 ### Restricting Docking by Drag Providers
 
-DockingManager allows to dock the children in different side using the DragProviders. To restrict dockability of the dock children to any particular side, set the property **Dockability** with the required values.
+DockingManager allows you to dock the children in different sides using the DragProviders. To restrict dockability of the dock children to any particular side, set the property **Dockability** with the required values.
 
 * Setting Dockability as **Horizontal** – restrict the children to dock only on Horizontal side by providing the Horizontal Drag providers.
 
@@ -320,7 +320,7 @@ syncfusion:DockingManager.State="Float"/>
 
 
 
-The **CanDrag** an attached property, which helps to enable or disable the dragging functionality of a window by setting its value as **True** or **False** respectively. By default its value is **True**, to disable this functionality turn its value to **False**.
+The **CanDrag** an attached property, that helps to enable or disable the dragging functionality of a window by setting its value as **True** or **False** respectively. By default its value is **True**, to disable this functionality turn its value to **False**.
 
 {% highlight xml %}
 
@@ -366,7 +366,7 @@ To drag the border of a dock window, set the property **DraggingType**  as **Bor
 
 ### Customizing a resizing behaviors
 
-DockingManager allows to resize the dock and float windows by default. To restrict resizing the dock and float windows respectively, set the **CanResizeInDockedState** and **CanResizeInFloatState** properties with it value as **False**.
+DockingManager allows you to resize the dock and float windows by default. To restrict resizing the dock and float windows respectively, set the **CanResizeInDockedState** and **CanResizeInFloatState** properties with it value as **False**.
 
 {% highlight xml %}
 
@@ -466,7 +466,7 @@ syncfusion:DockingManager.State="Float"                                         
 
 ### Configuring window sizing
 
-DockingManager allows to set the desired width and height for the dock windows. The window will occupy 90 **Width** and **Height** based on the container by default.
+DockingManager allows you to set the desired width and height for the dock windows. The window occupies 90 **Width** and **Height** based on the container by default.
 
 #### Desire height and width
 
@@ -557,7 +557,7 @@ The Splitter of the dock window can be customized using the SplitterSize and Spl
 
 ### Occupy whole window
 
-To arrange the dock windows to whole available space in the DockingManager, set the property **DockFill** as **True**. 
+To arrange the dock windows to a whole available space in the DockingManager, set the property **DockFill** as **True**. 
 
 {% highlight xml %}
 
@@ -572,7 +572,7 @@ To arrange the dock windows to whole available space in the DockingManager, set 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img20.jpeg)
 
 
-And when this functionality is enabled, DockingManager will change the Dockwindow to AutoHidden state, if any document state window is present .
+And when this functionality is enabled, DockingManager changes the Dockwindow to AutoHidden state, when any document state window is present .
 
 {% highlight xml %}
 
@@ -664,9 +664,9 @@ The custom context menu items can be added in addition to default contextmenu it
 
 #### Customizing ContextmenuItems Visibility
 
-The default context menu will be visible on right clicking the different state child windows and it visibility can be customized.  
+The default context menu is visible on right-clicking the different state child windows and its visibility can be customized.  
 
-The default context menu items shown as in the following screenshot:
+The default context menu items as shown in the following screenshot:
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img25.jpeg)
 
@@ -725,7 +725,7 @@ To add a client control in the DockingManager, set an attached property **Client
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="False">
 
-// A client control TextBox has been added
+// A client control TextBox has been added.
 
 <syncfusion:DockingManager.ClientControl>
 
