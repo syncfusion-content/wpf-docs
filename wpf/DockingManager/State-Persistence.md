@@ -12,7 +12,7 @@ documentation: ug
 
 State persistence is the combined process of serialization and deserialization. 
 
-DockingManager provides built in state persistence functionality to save and load at different states and sides. And it also provides DeleteDockState and Reset Method to work on state functionality
+DockingManager provides built-in state persistence functionality to save and load at different states and sides. And it also provides DeleteDockState and Reset Method to work on state functionality.
 
 To reset the DockingManager state, set the **ResetState()** method for DockingManager instance.
 
@@ -40,9 +40,9 @@ DockingManager1.DeleteDockState();
 
 ### Auto Save / Load functionalities
 
-DockingManager supports AutoSave support, which allows to persist its state automatically. To enable this functionality, set the **PersistState** property as **True**. The default value of the **PersistState** property is **False**.
+DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the **PersistState** property as **True**. The default value of the **PersistState** property is **False**.
 
-To implement the auto save functionality, set the **PersistState** property as **True**. It will save the state of the DockingManager in an isolated storage format while WindowClosing. The same has been explained in the following code 
+To implement the auto save functionality, set the **PersistState** property as **True**. It saves the state of the DockingManager in an isolated storage format while WindowClosing. The same is explained in the following code example.
 
 {% highlight c# %}
 DockingManager1.PersistState = true;     
@@ -74,19 +74,19 @@ DockingManager1.LoadDockState();
 
 ### Serialize a complex layout
 
-DockingManager allows to save a complex layout also. For example, it also save the complex layout like Nested DockingManager.
+DockingManager allows you to save a complex layout also. For example, it also saves the complex layout like Nested DockingManager.
 
 ### Serialize the dynamically added children
 
-By default, DockingManager can’t serialized its Saved Layout, when its children collection modified after DockState is saved. Since in the DockingManager, the state persistance feature implemented in such a way that the DockingManager will matches the children collection of saved layout with current DockingManager layout internally and loaded only the same state of  the DockingManager  of the  children collection which is same as saved layout, so if any children collections changes dynamically, it would result in improper layout.
+By default, DockingManager cannot serialize its Saved Layout, when its child collection is modified after DockState is saved. Since in the DockingManager, the state persistance feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads only the same state of the DockingManager of the children collection, same as saved layout, so when any child collection changes dynamically, it results in an improper layout.
 
-To save the dynamically added children, we need to use dispatcher, but it has some limitation. For this case, we should maintain serialized files in application level and deserialize if needed.
+To save the dynamically added children, you can use dispatcher, but it has some limitations. For this case, you can maintain serialized files in application level and deserialize when needed.
 
 ### Various formats to Save / Load states
 
-DockingManager allows to save and load the Dockstates of windows in DockingManager in different format.
+DockingManager allows you to save and load the Dockstates of windows in DockingManager in different format.
 
-Some of the formats are find as below:
+Some of the formats are:
 
 <table>
 <tr>
@@ -96,11 +96,11 @@ Some of the formats are find as below:
 
 **Load and save the Dockstate using Isolated Storage:**
 
-DockingManager allows to save and load the dockstate using isolated storage  
+DockingManager allows you to save and load the dockstate using isolated storage.  
 
 {% highlight c# %}
 
-// Shows the Isolated storage format
+// Shows the Isolated storage format.
 
 DockingManager1.LoadDockState();
 
@@ -114,11 +114,11 @@ DockingManager1.ResetState();
 
 **Save** **and** **Load** **using** **BinaryFormatter**
 
-DockingManager allows to save and load the state of the DockingManager using binary formatter
+DockingManager allows you to save and load the state of the DockingManager using binary formatter.
 
 {% highlight c# %}
 
-// Shows the Load and save method performs in BinaryFormatter
+// Shows the Load and save method performs in BinaryFormatter.
 
 BinaryFormatter formatter =  new BinaryFormatter();
 
@@ -136,11 +136,11 @@ DockingManager1.SaveDockState(formatter);
 
 **Save** **and** **Load** **using** **Xml** **file** 
 
-DockingManager allows to save and load the xml file. And it is done using binary formatter and sop formatter. The code has been explained below:
+DockingManager allows you to save and load the xml file. And it is done using binary formatter and sop formatter. The code example is as follows:
 
 {% highlight c# %}
 
-//Shows serialization methods using xml file
+//Shows serialization methods using xml file.
 
 BinaryFormatter formatter =  new BinaryFormatter();
 
@@ -164,11 +164,11 @@ SoapFormatter formatter1 = new SoapFormatter(); DocContainer.SaveDockState(forma
 
 **Save** **and** **Load** **using** **Bin**
 
-DockingManager allows to load and save the dock state in the bin file. 
+DockingManager allows you to load and save the dock state in the bin file. 
 
 {% highlight c# %}
 
-//Shows the load and save dockstate in bindary formatter
+//Shows the load and save dockstate in bindary formatter.
 
 BinaryFormatter format = new BinaryFormatter();
 
@@ -184,11 +184,11 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin")
 
 **Save** **and** **Load** **using** **Xmlwriter** 
 
-DockingManager allows to load and save the dock state using XMLWriter
+DockingManager allows you to load and save the dock state using XMLWriter.
 
 {% highlight c# %}
 
-//Shows the SaveDockSte method using xmlwriter
+//Shows the SaveDockSte method using xmlwriter.
 
 XmlWriter writer = XmlWriter.Create("DockStates.xml");            DockingManager.SaveDockState(writer);  
 
