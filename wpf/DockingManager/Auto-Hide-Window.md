@@ -8,7 +8,7 @@ documentation: ug
 ---
 ## Auto Hide Window
 
-AutoHide window is one of the state in the DockingManager. To make children of the DockingManager to Autohidden, set its **State** value **as** **AutoHidden**. 
+AutoHide window is one of the states in the DockingManager. To enable Autohidden for DockingManager's children, set its **State** value **as** **AutoHidden**. 
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img1.jpeg)
 
@@ -45,7 +45,7 @@ syncfusion:DockingManager.SideInDockedMode="Bottom"></ContentControl>
 
 
 
-The AutoHidewindow can be placed according to the TargetName through the property **TargetNameInDockedMode** property of the DockingManager.  When autohide the dockingwindow , it will autohidden in the place according to its Parent position. For instance, when the parent is in left side, by default the autohide window will place in the left side, irrespective of its SideInDockedMode value.
+The AutoHidewindow can be placed according to the TargetName through the property **TargetNameInDockedMode** property of the DockingManager.  When you enable autohide in dockingwindow , it is autohidden in the place according to its Parent position. For instance, when the parent is in left side, by default, the autohide window is placed in the left side, irrespective of its SideInDockedMode value.
 
 {% highlight xml %}
 
@@ -92,7 +92,7 @@ syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1"></ContentCont
 
 ###  Side panel Customization
 
-The side panel and side panel header can be customize by applying its background, borderbrush and  borderthickness  through  **SidePanelBackground , SidePanelBorderBrush ,SidePanelBorderThickness, SideItemBackground and SideItemBorderBrush** properties of the DockingManager.
+The side panel and side panel header can be customized by applying its background, borderbrush and  borderthickness  through  **SidePanelBackground , SidePanelBorderBrush ,SidePanelBorderThickness, SideItemBackground and SideItemBorderBrush** properties of the DockingManager.
 
 {% highlight xml %}
 
@@ -121,7 +121,7 @@ syncfusion:DockingManager.State="AutoHidden"
 
 #### SideTabItem Customization
 
-The SideTabItem can be customized using an attached property **SideTabItemForeground** and **SideTabItemBackground**  of DockingManager.
+The SideTabItem can be customized using the attached properties **SideTabItemForeground** and **SideTabItemBackground**  of DockingManager.
 
 {% highlight xml %}
 
@@ -148,7 +148,7 @@ syncfusion:DockingManager.SideTabItemBackground="Pink"
 
 ### Excel-like Scrollable panel
 
-This feature **EnableScrollableSidePanel** used to provide scroll support when Auto Hidden tab items get overflow on Side panel.  By default, its values is **False**,to enable this feature turns its values to **True**.
+The **EnableScrollableSidePanel** feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default, its value is **False**,to enable this feature you can set its value to **True**.
 
 {% highlight xml %}
 
@@ -212,9 +212,9 @@ This feature **EnableScrollableSidePanel** used to provide scroll support when A
 
 ### Changing pinning behavior        
 
-Auto Hidden Tabbed window provides two different pinning behavior are **AutoHideActive** and **AutoHideGroup** modes of **AutoHideTabsMode** property.
+Auto Hidden Tabbed window provides two different pinning behaviors, **AutoHideActive** and **AutoHideGroup** modes.
 
-**AutoHideActive** – Used to Auto Hide current active element of Tabbed Dock Window.
+**AutoHideActive** – Used to Auto Hide current active element of tabbed dock window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager" AutoHideTabsMode="AutoHideActive">
@@ -240,7 +240,7 @@ Auto Hidden Tabbed window provides two different pinning behavior are **AutoHide
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img7.jpeg)
 
 
-**AutoHideGroup** **–** Used to Auto Hide Entire Tabbed Dock Window as a group.
+**AutoHideGroup** – Used to auto-hide the entire tabbed dock window as a group.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager" AutoHideTabsMode="AutoHideGroup">
@@ -346,7 +346,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 ### Enabling and disabling the Autohide functionality
 
-The Pin button which performs Auto Hide functionality, can be visible by default. It can invisible to disable the AutoHide functionality through **AutoHideVisibility** property. 
+The Pin button that performs Auto Hide functionality, can be visible by default. It can be invisible to disable the AutoHide functionality through **AutoHideVisibility** property. 
 
 {% highlight xml %}
 
@@ -369,7 +369,7 @@ The Pin button which performs Auto Hide functionality, can be visible by default
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img9.jpeg)
 
 
-To enable or disable the Autohide functionality for a specific child in the DockingManager , an attached property **CanAutoHide** is used. By default its value is **true**,to disable this functionality turn its value to **false**.
+To enable or disable the Autohide functionality for a specific child in the DockingManager, an attached property **CanAutoHide** is used. By default its value is **true**, to disable this functionality you can set its value to **false**.
 
 {% highlight xml %}
 
@@ -392,7 +392,7 @@ To enable or disable the Autohide functionality for a specific child in the Dock
 
 ### AutoHide Animation enabled on Mouse Click
 
-Whenever mouse over the AutoHidden tab, the autohide animation will start. To disable this functionality, set the property **IsAnimationEnabledOnMouseOver** as **False** that allows to click the autohide tab to start autohide animation. By default, its values is **True**.
+On mouse over the AutoHidden tab, the autohide animation starts. To disable this functionality, set the property **IsAnimationEnabledOnMouseOver** as **False** that allows you to click the autohide tab to start autohide animation. By default, its values is **True**.
 
 {% highlight xml %}
 
