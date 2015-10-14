@@ -10,18 +10,18 @@ documentation: ug
 
 ### Local Copy
 
-Local copy can supported by the Syncfusion assembly reference in the Solution Explorer, It can be achieved by setting it’s the Copy Local property of the reference to True. So that Syncfusion assemblies will be copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines that similar to manual copy.
+Local copy is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its Copy Local property of the reference to True, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines that are similar to manual copy.
 
 ![](Deployment_images/Deployment_img1.jpeg)
 
 
 ### GAC
 
-Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the the developer machines. Also Syncfusion [Assembly Manager](C:\Users\Selvaganapathy\Desktop\assembly manager# "") will help to Add/ Remove the Syncfusion assemblies to/from GAC.
+Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the the developer machines. Also Syncfusion [Assembly Manager](C:\Users\Selvaganapathy\Desktop\assembly manager# "") helps you Add or Remove the Syncfusion assemblies to or from GAC.
 
 ### Clickonce Deployment
 
-While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx# "") deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
+While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx# "") the deployment for publishing an application with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
 ![](Deployment_images/Deployment_img2.jpeg)
 
@@ -35,7 +35,7 @@ __Publish__ __Status__ __option__ __changed__ __as__ __Include__
 
 #### ClickOnce signing process
 
-Before publishing a ClickOnce application, sign to ensure whether its fully trusted, so that you can authenticate the information. The following steps are used for signing a ClickOnce application.
+Before publishing a ClickOnce application, ensure whether it is fully trusted, so that you can authenticate the information. The following steps are used for signing a ClickOnce application.
 
 Signing ClickOnce involves two steps,
 
