@@ -8,7 +8,7 @@ documentation: ug
 ---
 ## Floating Window
 
-Floating window is one of the state in the DockingManager. To make children of the DockingManager as **Float**, set its **state** values as **Float**.
+Floating window is one of the states in the DockingManager. To make children of the DockingManager as **Float**, set its **state** values as **Float**.
 
 Floating window is like a Popup window and it has some limitation in resizing. To avoid this limitation, set the **UseNativeFloatWindow** property for the DockingManager as **True**.
 
@@ -28,7 +28,7 @@ Floating window is like a Popup window and it has some limitation in resizing. T
 
 ### Rolling Up support
 
-The float window will roll up to top using the property **IsRollUpTopProperty**. To enable this functionality set its value as **True**, by default its value is **False**.        
+The float window is rolled up to top using the property **IsRollUpTopProperty**. To enable this functionality set its value as **True**, by default its value is **False**.        
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" IsRollupFloatWindow="True">
@@ -48,13 +48,13 @@ syncfusion:DockingManager.State="Float"/>
 
 ### Multiple Monitor functionalities
 
-The default behavior of the float window will remain as Popup in the DockingManager. 
+The default behavior of the float window remains as Popup in the DockingManager. 
 
 On using MultiMonitor scenario, the FloatWindow behavior as follows:
 
-* FloatWindow can able to resize both in primary and secondary monitor.
-* On showing half of the float window between primary and secondary monitor, the float window remains in half between the monitor while plug in and plug out the secondary monitor.
-* When float window is moved to secondary monitor from primary monitor, the float window remains at the secondary monitor itself while plug in.
+* FloatWindow can be resized both in primary and secondary monitor.
+* On showing half of the float window between primary and secondary monitor, the float window remains in half between the monitor while plugged in and plugged out of the secondary monitor.
+* When float window is moved to secondary monitor from primary monitor, the float window remains at the secondary monitor itself while plugged in.
 
 __Making__ __the__ __same__ __behavior__ __like__ __WPF__ __window__ __for__ __Float__ __Window__ __in__ __Multiple__ __Monitor__
 
@@ -62,9 +62,9 @@ To make float window behave like a WPF window in multiple monitor, set the prope
 
 On using MultiMonitor scenario, the FloatWindow behavior as follows:
 
-* NativeFloatWindow can able to resize both in primary and secondary monitor.
-* On showing half of the NativeFloatWindow between primary and in secondary monitor, the NativeFloatWindow remains at left side in primary monitor while plug in and plug out the secondary monitor.
-* When NativeFloatWindow is moved to secondary monitor from primary monitor, it remains at the primary monitor itself while plug in and plug out.
+* NativeFloatWindow can be resized both in primary and secondary monitor.
+* On showing half of the NativeFloatWindow between primary and in secondary monitor, the NativeFloatWindow remains at the left side in primary monitor while plugged in and plugged out of the secondary monitor.
+* When NativeFloatWindow is moved to secondary monitor from primary monitor, it remains at the primary monitor itself while plugged in and plugged out.
 
 ### Enabling and Disabling the float functionality
 
@@ -91,7 +91,7 @@ syncfusion:DockingManager.CanFloat="False"/>
 
 ### Enabling and Disabling the float functionality Operation on Double Click
 
-The float window change its state to **Dock** while double clicking its header by default. To disable this functionality for the specific child, set **NoDock** property as **True**.       
+The float window changes its state to **Dock** when you double click its header by default. To disable this functionality for the specific child, set **NoDock** property as **True**.       
 
 {% highlight xml %}
 
@@ -107,9 +107,9 @@ The float window change its state to **Dock** while double clicking its header b
 
 ### Maximize/Minimize Support
 
-The float window provide Minimize /Maximize support for the better usability. This support will be achieved through the property **UseNativeFloatWindow** 
+The float window provides Minimize or Maximize support for better usability. This support can be achieved through the property **UseNativeFloatWindow** 
 
-* It helps a particular Float window to provide a maximized view
+* It helps a particular Float window to provide a maximized view.
 * It can minimize a Float window and can be restored when needed.
 
 
