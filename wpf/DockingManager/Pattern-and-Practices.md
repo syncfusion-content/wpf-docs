@@ -66,11 +66,11 @@ The docking manager provides an **ActiveWindowChanged** event. Using this, the
 
 The view model has a collection of workspaces that is data-bound to the **ItemsSource** property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the docking manager.
 
-Every dock element we see in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
+Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
 **Data** **Template** 
 
-Since WPF has an implicit template approach, it is easy for us to apply visuals to the view models. In this application, the data templates are defined in **App.xaml** with only the **DataType** attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
+Since WPF has an implicit template approach, it is easy to apply visuals to the view models. In this application, the data templates are defined in **App.xaml** with only the **DataType** attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
 
 {% highlight xml %}
 <application.resources>
@@ -133,7 +133,7 @@ Microsoft.Practices.ServiceLocation.dll
 
 Microsoft.Practices.Unity.dll
 
-2. Rename MainWindow to Shell in the Project
+2. Rename MainWindow to Shell in the Project.
 3. Add new class called Bootstrapper.cs to initialize the prism application. Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShell method.
 
 {% highlight c# %}
@@ -195,7 +195,7 @@ bootstrapper.Run();
 
 {% endhighlight %}
 
-5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window.
+5. Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
 {% highlight xml %}
 
 xmlns:prsm="http://www.codeplex.com/prism"
@@ -206,7 +206,7 @@ xmlns:prsm="http://www.codeplex.com/prism"
 
 {% endhighlight %}
 
-In the following code, a region called “MainRegion” has been created to load DockingManager Module views
+In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
 
 {% highlight xml %}
 <Window x:Class="DockingManagerPrism.App.MainWindow "
@@ -235,7 +235,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% endhighlight %}
 
-6. Adding Module to the project
+6. Add Module to the project.
 
 Right-click the Solution project, point to “Add” and then click “NewProject”. Then a new window called AddNewProject opens. Select “ClassLibrary” from Visual C#, then rename the project with desired name and click OK. Now a New Module is created in the Solution Project.
 
@@ -245,7 +245,7 @@ Now add following assemblies to the Module project:
 * PresentationFramework.dll
 * WindowsBase.dll
 
-Also add following Prism assemblies:
+Also add the following Prism assemblies:
 
 * Microsoft.Practices.Composite.dll
 * Microsoft.Practices.Composite.Presentation.dll
@@ -274,7 +274,7 @@ moduleCatalog.AddModule(typeof(DockingModule));
 
 {% endhighlight %}
 
-8. Adding Views to the Module, shown here bottomleftmodule, similary the view for the module can be added according to number of modules.
+8. Adding Views to the Module, shown here is bottomleftmodule, similary the view for the module can be added according to number of modules.
 
 {% highlight xml %}
 <UserControl x:Class="DockingManagerPrism.Modules.BottomLeftModule"
@@ -311,7 +311,7 @@ d:DesignHeight="300" d:DesignWidth="300">
 
 9. Add a region to the shell.
 
-After creating View for the Module, register the view as Module using the following code.
+After creating View for the Module, register the view as Module using the following code example.
 
 {% highlight c# %}
 public class DockingModule : IModule
