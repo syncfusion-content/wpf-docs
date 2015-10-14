@@ -4,7 +4,7 @@ The UI for Dock, Float and Document windows of DockingManager can be changed usi
 
 ### Visual Styles
 
-To have a rich and professional look and feel for the Dockwindows, apply the visual styles. Some of the available visual style are as follows:
+When you want a rich and professional look and feel for the Dockwindows, you can apply the visual styles. Some of the available visual style are as follows:
 
 <table>
 <tr>
@@ -12,9 +12,9 @@ To have a rich and professional look and feel for the Dockwindows, apply the vis
 * Blend<br/>* Office2007Blue<br/>* Office2007Black<br/>* Office2007Silver<br/>* Office2010Blue<br/>* Office2010Black<br/>* Office2010Silver<br/>* VS2010<br/>* Metro<br/>* Transparent<br/></td></tr>
 </table>
 
-The visual style can be apply for the DockingManager using the property **VisualStyle** , an attached property of the **SkinStorage**.
+The visual style can be applied for the DockingManager using the property **VisualStyle** , an attached property of the **SkinStorage**.
 
-* Blend – set the visual style as Blend for the DockingManager.
+* Blend – Set the visual style as Blend for the DockingManager.
 
 {% highlight c# %}
 
@@ -29,7 +29,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Blend");
 ![](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
 
 
-* Office2007Blue – set visual style for DockingManager as Office2007Blue
+* Office2007Blue – Set visual style for DockingManager as Office2007Blue.
 
 {% highlight c# %}
 
@@ -44,7 +44,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Blue");
 ![](StylingandTemplates_images/StylingandTemplates_img2.jpeg)
 
 
-* Office2007Black – setting visual style for DockingManager as Office2007Black
+* Office2007Black – Setting visual style for DockingManager as Office2007Black.
 
 {% highlight c# %}
 
@@ -59,7 +59,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black");
 ![](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
 
 
-* Office2007Silver – Setting visualstyle for the DockingManager as Office2007Silver
+* Office2007Silver – Setting visualstyle for the DockingManager as Office2007Silver.
 
 {% highlight c# %}
 
@@ -74,7 +74,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Silver");
 ![](StylingandTemplates_images/StylingandTemplates_img4.jpeg)
 
 
-* Office2010Blue – set the VisualStyle for DockingManager as Office2010Blue
+* Office2010Blue – Set the visual style for DockingManager as Office2010Blue.
 
 {% highlight c# %}
 
@@ -89,7 +89,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2010Blue");
 ![](StylingandTemplates_images/StylingandTemplates_img5.jpeg)
 
 
-* Office2010Black – setting visual style for DockingManager as Office2010Black
+* Office2010Black – Set visual style for DockingManager as Office2010Black
 
 {% highlight c# %}
 
@@ -106,7 +106,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2010Black");
 
 
 
-* Office2010SSilver – Setting Visual style as Office2010Silver
+* Office2010SSilver – Set visual style as Office2010Silver.
 
 {% highlight c# %}
 
@@ -121,7 +121,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2010Silver");
 ![](StylingandTemplates_images/StylingandTemplates_img7.jpeg)
 
 
-* VS2010- setting visualstyle for the DockingManager as VS2010
+* VS2010- Setting visual style for the DockingManager as VS2010.
 
 {% highlight c# %}
 
@@ -136,7 +136,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"VS2010");
 ![](StylingandTemplates_images/StylingandTemplates_img8.jpeg)
 
 
-* Metro – setting visual style for DockingManager as Metro.
+* Metro – Sett visual style for DockingManager as Metro.
 
 {% highlight c# %}
 
@@ -151,7 +151,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Metro");
 ![](StylingandTemplates_images/StylingandTemplates_img9.jpeg)
 
 
-* Transparent – Setting visual style for DockingManager as Transparent
+* Transparent – Setting visual style for DockingManager as Transparent.
 
 {% highlight c# %}
 
@@ -168,13 +168,13 @@ SkinStorage.SetVisualStyle(DockingManager1,"Transparent");
 
 ### Blend support
 
-To edit the style and template available in DockingManager, please create the new project in the Blend, the following screenshot is shown as below:
+To edit the style and template available in DockingManager, you can create a new project in the Blend, as shown in the following screenshot.
 
-The blend project will be created and the new window will get open.
+The blend project is created and the new window is opened.
 
-Editing Styles and Templates Using Expression Blend
+Editing Styles and Templates Using Expression Blend.
 
-DockingManager allows to edit the style and template properties r. To do this, open your project in blend and the the below screen shows the same.****
+DockingManager allows you to edit the style and template properties. To do this, open your project in blend as shown in the following screenshot.
 
 ![StartScreen](StylingandTemplates_images/StylingandTemplates_img11.jpeg)
 
@@ -187,7 +187,7 @@ Using the option, the template of the available DockingManager parts can be edit
 ![EditTemplate](StylingandTemplates_images/StylingandTemplates_img12.jpeg)
 
 
-Similarly the Edit Additional Styles option used to edit the available style properties.It allows to customize the AutoHideButton, Menu Button, and Close Button by editing the control templates. The following is the custom style applied for these three buttons.
+Similarly the Edit Additional Styles option is used to edit the available style properties. It allows you to customize the AutoHideButton, Menu Button, and Close Button by editing the control templates. The following is the custom style applied for these three buttons.
 
 **AwlButtonTemplate**
 
@@ -229,7 +229,7 @@ The following properties have been applied to customize the Dock Header.
 
 ### Dock Window Style
 
-DockingManager allows to set style for some of the Docking controls such as **DockedHeaderPresenter**, **DockedElementTabbedHost**. The same will explain in DockHeaderStyle and DockedElementTabbedHostStyle section.
+DockingManager allows you to set style for some of the Docking controls such as **DockedHeaderPresenter**, **DockedElementTabbedHost**. This is explained in detail under the DockHeaderStyle and DockedElementTabbedHostStyle section.
 
 #### AwlButtonTemplate
 
@@ -283,7 +283,7 @@ The style of the pin button of the Dock window can customized using the **AwlBut
 #### CloseButtonTemplate
 
 
-The close button for the Docked window can be customized using the **CloseButtonTemplate** which is used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
+The close button for the Docked window can be customized using the **CloseButtonTemplate**, and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
 
 
 {% highlight xml %}
@@ -932,7 +932,7 @@ Syncfusion:DockingManager.State="Document"></ContentControl>
 
 #### FloatWindowStyle
 
-The style for the float window can be applied using the **FloatWindowStyle** property of the DockingManager by setting its TargetType as **AutoTemplatedContentControl**. It get or set the style for the floatwindow when it is rendered.
+The style for the float window can be applied using the **FloatWindowStyle** property of the DockingManager by setting its TargetType as **AutoTemplatedContentControl**. It gets or sets the style for the floatwindow when it is rendered.
 
 {% highlight xml %}
 
@@ -942,7 +942,7 @@ The style for the float window can be applied using the **FloatWindowStyle** pro
 
 #### NativeWindowStyle
 
-The NativeFloatwindow of DockingManager can be customized using the **NativeWindowStyle** property of the DockingManager with the TargetType as NativeFloatWindow
+The NativeFloatwindow of DockingManager can be customized using the **NativeWindowStyle** property of the DockingManager with the TargetType as NativeFloatWindow.
 
 {% highlight xml %}
 
@@ -1125,9 +1125,9 @@ The style for the sidepanel of the DockingManager can be customized using the **
 
 ### Drag Provider Style
 
-DragProviders are those that appears while dragging a window. It allows to drag the window at left, right, top and bottom using the respective drag providers.
+DragProviders are those that appear while dragging a window. It allows you to drag the window to the left, right, top and bottom using the respective drag providers.
 
-DragProviders are displayed for providing option to dock the floatwindow while dragging and this drag provider button templates can be changed by the following templates.
+DragProviders are displayed for providing options to dock the floatwindow while dragging and this drag provider button templates can be changed by the following templates.
 
 #### BottomDragProvider
 
@@ -1173,7 +1173,7 @@ syncfusion:DockingManager.State="Dock"/>
 
 #### LeftDragProvider
 
-The **LeftDragProvider** is used to dock the dock window at the left side and it can be customized using the **LeftDragProvider** property that helps to customize the template for the Left DragProvider by setting its Target as **ContentControl**. The same has been explained below:
+The **LeftDragProvider** is used to dock the dock window to the left side and it can be customized using the **LeftDragProvider** property that helps to customize the template for the Left DragProvider by setting its Target as **ContentControl**. The same has been explained below:
 
 {% highlight xml %}
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
@@ -1215,7 +1215,7 @@ syncfusion:DockingManager.State="Dock"/>
 
 #### RightDragProvider
 
-To dock the DockingManager at the right side, the **RightDragProvider** is used and it can be customized using the **RightDragProviderTemplate** with the TargetType as **ContentControl****.**
+To dock the DockingManager to the right side, the **RightDragProvider** is used and it can be customized using the **RightDragProviderTemplate** with the TargetType as **ContentControl****.**
 
 {% highlight xml %}
 
@@ -1256,7 +1256,7 @@ syncfusion:DockingManager.State="Dock"/>
 
 #### TopDragProvider
 
-To dock the DockingManager at the top side, the **TopDragProvider** is used and it can be customized using the **TopDragProviderTemplate** with the TargetType as ContentControl.
+To dock the DockingManager at the top, the **TopDragProvider** is used and it can be customized using the **TopDragProviderTemplate** with the TargetType as ContentControl.
 
 {% highlight xml %}
 
@@ -1297,7 +1297,7 @@ syncfusion:DockingManager.State="Dock"/>
 
 #### CenterDragProvider
 
-CenterDragProvider is used to dock the children of the DockingManager at the center Position and it template can be customized using the property CenterDragProvider.
+CenterDragProvider is used to dock the children of the DockingManager at the center Position and its template can be customized using the property CenterDragProvider.
 
 {% highlight xml %}
 
