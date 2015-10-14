@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UIAutomation
+title: UIAutomation | SfDataPagerControl | wpf | Syncfusion
 description: uiautomation
 platform: wpf
 control: SfDataPager Control

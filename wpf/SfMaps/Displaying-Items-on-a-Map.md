@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Displaying-Items-on-a-Map
+title: Displaying Items on a Map | SfMap | wpf | Syncfusion
 description: displaying items on a map
 platform: wpf
 control: SfMap

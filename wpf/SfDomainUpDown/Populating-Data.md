@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating-Data
+title: Populating Data | DomainUpDown | wpf | Syncfusion
 description: populating data
 platform: wpf
 control: DomainUpDown

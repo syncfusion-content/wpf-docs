@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collapsing-the-TaskBar
+title: Collapsing the TaskBar | TaskBar | wpf | Syncfusion
 description: collapsing the taskbar
 platform: wpf
 control: TaskBar
@@ -15,7 +15,7 @@ This property is used in both TaskBar and TaskBarItems.
 
 Use the following code snippet to expand or collapse the TaskBar.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -72,7 +72,7 @@ Use the following code snippet to expand or collapse the TaskBar.
 TaskBar.SetIsOpened(taskBar, false);
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)
@@ -81,7 +81,7 @@ TaskBar.SetIsOpened(taskBar, false);
 
 
 
-See Also
+{%seealso%}
 
 Expander Button Size
-
+{%endseealso%}

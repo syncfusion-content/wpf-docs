@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Concepts-and-Feature
+title: Concepts and Feature | SfLinearGauge | wpf | Syncfusion
 description: concepts and feature
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge
 documentation: ug
 ---
 

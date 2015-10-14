@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner
+title: Range Adorner | CurrencyTextBox | wpf | Syncfusion
 description: range adorner
 platform: wpf
 control: CurrencyTextBox 
@@ -15,8 +15,6 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 ![](Range-Adorner_images/Range-Adorner_img1.png)
 
 
-
-_Range Adorner property table_
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-the-Animation-Speed
+title: Setting the Animation Speed | TaskBar | wpf | Syncfusion
 description: setting the animation speed
 platform: wpf
 control: TaskBar
@@ -13,7 +13,7 @@ You can set the animation speed, which controls the time taken to expand or coll
 
 Use the following code snippet to set this property.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -73,7 +73,7 @@ TaskBar.SetSpeed(taskBar, 10);
 {% endhighlight %}
 
 
-
+{%endtabs%}
 
 ## Methods handled with Speed Property
 

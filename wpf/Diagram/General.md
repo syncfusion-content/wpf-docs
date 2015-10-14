@@ -1,6 +1,6 @@
 ---
 layout: post
-title: General
+title: General | Diagram | wpf | Syncfusion
 description: general
 platform: wpf
 control: Diagram
@@ -25,7 +25,8 @@ The corresponding node or connector is selected by moving the mouse pointer to t
 
 
 
-_Node Selection_
+Node Selection
+{:.caption}
 
 ## Move Nodes and Connectors
 
@@ -43,7 +44,8 @@ To move the connector, follow these steps.
 
 
 
-_Moving Connector_
+Moving Connector
+{:.caption}
 
 As seen, the connector will then be removed from the old node and added to the node that is currently hit.
 
@@ -51,7 +53,7 @@ As seen, the connector will then be removed from the old node and added to the n
 
 The labels of the nodes and connectors are equipped with Multiline support i.e. you can specify the labels to span multiple lines by setting the LabelTextWrapping property to wrap the text and by specifying the width of the label. Also, several other customization properties have been added for the labels. These are listed below: 
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -315,7 +317,8 @@ The following output is generated using the code snippets above:
 
 
 
-_Customized Multiline Label_
+Customized Multiline Label
+{:.caption}
 
 ### Customize the Context Menu of Nodes and Line Connectors
 
@@ -434,8 +437,8 @@ line.ContextMenu = menu
 ![](Diagram-View_images/Diagram-View_img89.jpeg)
 
 
-
-_Custom Context Menu_
+Custom Context Menu
+{:.c}
 
 The context menu can also be specified for all the nodes on the page using the NodeContextMenu property. Similarly to specify custom context menu for all the lines on the page, the LineConnectorContextMenu property of DiagramView can be used as follows:
 {% highlight c# %}

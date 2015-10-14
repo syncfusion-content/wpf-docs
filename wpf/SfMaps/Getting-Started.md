@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfMap | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: SfMap
@@ -49,7 +49,7 @@ Namespace: Syncfusion.UI.Xaml.Maps
 
 You can create the SfMap control programmatically through XAML and C#. In the following code example. 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -79,6 +79,8 @@ ShapeFileLayer layer = new ShapeFileLayer();
 layer.Uri = "MapApp.world1.shp";            
 syncMap.Layers.Add(layer);
 {% endhighlight %}
+
+{%endtabs%}
 
 ## Configure the SfMap Control
 
@@ -236,6 +238,8 @@ The .dbf file that is included in the main shape file, is required to work with 
 
 You can customize the shape’s color by using ShapeFill, ShapeStroke and ShapeStrokeThickness properties in ShapeSettings.
 
+
+{%tabs%}
 {% highlight C# %}
 
 
@@ -320,6 +324,8 @@ public class Country : INotifyPropertyChanged    {        public string NAME { g
  </syncfusion:SfMap.Layers>        
  </syncfusion:SfMap >
 {% endhighlight %}
+
+{%endtabs%}
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 

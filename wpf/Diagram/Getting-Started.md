@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Diagram | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Diagram
@@ -54,7 +54,7 @@ Rulers display the coordinates of elements on the diagram page. Negative label v
 
 
 
-![C:/Users/jeganr/Desktop/UGDocumentation/diagramWPF/DiagramPageIllustrated.png](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -86,7 +86,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
    ![](Getting-Started_images/Getting-Started_img4.png)
 
-   {:.prettyprint}
+   
 
 3. A new WPF application is created.
 
@@ -402,7 +402,7 @@ Following are the steps to create Diagram Control through Designer.
 
    ![](Getting-Started_images/Getting-Started_img9.png)
 
-   {:.prettyprint}
+   
 
 Kindly refer to Add Diagram Model to the Diagram Control and Add Diagram View to the Diagram Control to add the model and view to the control.
 
@@ -882,7 +882,7 @@ Essential Diagram WPF allows you to specify automatic layouts the nodes. Followi
 * Radial-Tree layout
 * Table layout
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -991,7 +991,7 @@ The Layout Manager lets you orient the tree in many directions and create sophis
 
 The Bounds property of the DiagramView class can be used to specify the position of the root node based on which the entire tree gets generated.
 
-_Property Table_ 
+
 
 <table>
 <tr>
@@ -1035,7 +1035,7 @@ Thickness</td></tr>
 
 Methods
 
-_Methods Table_ 
+
 
 <table>
 <tr>
@@ -1329,7 +1329,7 @@ The following code shows how the automatic layout can be generated.
 
    ![](Getting-Started_images/Getting-Started_img11.jpeg)
 
-   {:.prettyprint}
+   
 
 
 
@@ -1363,11 +1363,6 @@ tree.RefreshLayout()
 Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
 
 
-See Also
-
-Layout Spacing
-
-Tree Orientation
 
 #### Hierarchical – Tree Layout
 
@@ -1383,7 +1378,6 @@ The Layout Manager lets you orient the hierarchical tree in many directions. The
 * RightLeft - Places the root node at the right and the child nodes are arranged on the left side of the root node. 
 
 
-_Property Table_
 
 <table>
 <tr>
@@ -1429,7 +1423,8 @@ Gets or sets the bounds value which specifies the position of the root node in c
 CLR property</td><td>
 Thickness</td></tr>
 </table>
-_Methods Table_
+
+
 
 <table>
 <tr>
@@ -1507,7 +1502,7 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 2. Then the nodes can be added and the connections can be specified as follows:
 
-
+    {%highlight c#%}
 
 
 
@@ -1820,12 +1815,14 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 				'Adding to the Diagram Model.                 
 
 				diagramModel.Connections.Add(connection)
+				
+			{%endhighlight%}
 
 
 
    ![](Getting-Started_images/Getting-Started_img12.jpeg)
 
-   {:.prettyprint}
+   
 
 Layout Spacing
 
@@ -1861,7 +1858,7 @@ tree.RefreshLayout()
 
 Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
 
-See Also
+{%seealso%}
 
 Layout Spacing Refer Concepts and Features -> Diagram Model -> Layout Spacing
 
@@ -1869,13 +1866,14 @@ Tree Orientation Refer Concepts and Features -> Diagram Model -> Tree Orientatio
 
 Cyclic path in Hierarchical-Tree Layout: Refer Concepts and Features -> Diagram Model -> Cyclic path in Hierarchical – TreeLayout.
 
+{%endseealso%}
+
 #### Radial – Tree Layout
 
 The Radial-TreeLayoutis a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout. The Radial-Tree layout will position the nodes based on the layout root.
 
 The Bounds property of the DiagramView class can be used to specify the position of the root node, based on which the entire tree gets generated.
 
-_Property Table_
 
 <table>
 <tr>
@@ -1903,7 +1901,9 @@ Gets or sets the bounds value which specifies the position of the root node in c
 CLR property</td><td>
 Thickness</td></tr>
 </table>
-_Methods Table_
+
+
+
 
 <table>
 <tr>
@@ -1924,7 +1924,9 @@ N/A</td></tr>
 
 
 1. The LayoutType should be set to RadialTreeLayout in DiagramModel class.
-
+   
+   
+   {%highlight xml%}
 
 
 
@@ -1980,14 +1982,16 @@ N/A</td></tr>
 
 
 			</Window>
+			
+	{%endhighlight%}
 
 
-2. Then the nodes can be added and the connections can be specified as follows:
+2.Then the nodes can be added and the connections can be specified as follows:
 
 
 
 
-
+   {%highlight c#%}
 
 
 			//Define Spacings.
@@ -2181,11 +2185,11 @@ N/A</td></tr>
 
 				diagramModel.Connections.Add(connection)
 
-
+           {%endhighlight%}
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
-   {:.prettyprint}
+   
 
 Layout Spacing
 
@@ -2223,7 +2227,6 @@ Here diagramModel and diagramView is an instance of DiagramModel and DiagramView
 
 Table layout arranges the nodes in a tabular structure based on specified intervals between them. The number of nodes in each row and column can be specified and the layout will take place accordingly. The nodes are assigned rows and columns based on the order in which they are added to the model and based on the maximum nodes allowed in that row and column. This layout enables to layout nodes automatically without the need to specify offset positions for each node.
 
-_Property Table_
 
 <table>
 <tr>
@@ -2281,7 +2284,7 @@ Gets or sets the bounds value which specifies the position of the root node in c
 CLR property</td><td>
 Thickness</td></tr>
 </table>
-_Methods_
+
 
 <table>
 <tr>
@@ -2313,7 +2316,7 @@ When set to Vertical, the Columncount is automatically calculated based on the n
 
 The Bounds property of the DiagramView class can be used to specify the position of the first node.
 
-{% highlight html  %}
+{% highlight xml  %}
 
 
 
@@ -2479,7 +2482,7 @@ The BowTie Diagram is a graphical representation of the risk assessment process.
 
 Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2531,7 +2534,7 @@ The following code illustrates how to generate the BowTie layout:
 
 1. The LayoutType should be set to BowtieLayout in DiagramModel class.
 
-
+        {%highlight html%}
 
 
 			   <!--Diagram Control-->       
@@ -2551,6 +2554,9 @@ The following code illustrates how to generate the BowTie layout:
 				</syncfusion:DiagramControl.View>
 
 			</syncfusion:DiagramControl>
+			
+			
+			{%endhighlight%}
 
 
 
@@ -2558,7 +2564,7 @@ The following code illustrates how to generate the BowTie layout:
 2. Then, the nodes are defined and the connections are made.
 
 
-
+    {%highlight c#%}
 
 
 					//Tree spacing properties.
@@ -2837,10 +2843,12 @@ The following code illustrates how to generate the BowTie layout:
 
 				Connect(n4, n6)
 
-
+       {%endhighlight%}
+	   
+	   
    ![](Getting-Started_images/Getting-Started_img15.png)
 
-   {:.prettyprint}
+   
 
 Layout Spacing
 
@@ -2881,7 +2889,7 @@ Use Case Scenarios
 
 Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2955,15 +2963,16 @@ table.RefreshLayout()
 
 When the code runs, the table layout will be applied to the specified node collection.  
 
-_Note: If the OrderNodes property is set to null, then the table layout will be applied to the entire diagram._
+N> If the OrderNodes property is set to null, then the table layout will be applied to the entire diagram.
 
 
 
-![C:/Users/labuser/Desktop/selection.PNG](Getting-Started_images/Getting-Started_img16.png)
+![](Getting-Started_images/Getting-Started_img16.png)
 
 
 
-_Table Layout Applied for Specified Nodes_
+Table Layout Applied for Specified Nodes
+{:.caption}
 
 #### Aligning the Layout on a Specified Location
 

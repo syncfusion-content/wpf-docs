@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding-Support
+title: Data Binding Support | CurrencyTextBox | wpf | Syncfusion
 description: data binding support
 platform: wpf
 control: CurrencyTextBox 

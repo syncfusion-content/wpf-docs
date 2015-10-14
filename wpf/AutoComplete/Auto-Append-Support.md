@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-Append-Support
+title: Auto Append Support | AutoComplete | wpf | Syncfusion
 description: auto append support
 platform: wpf
 control: AutoComplete
@@ -15,7 +15,8 @@ Auto Append is used to guide the complete text by appending the entered text wit
 
 ![](Auto-Append-Support_images/Auto-Append-Support_img1.png)
 
-_Auto Append_
+Auto Append
+{:.caption}
 
 
 
@@ -41,7 +42,6 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend 
 
 ### Properties
 
-  _Property Table for Auto Append_
 
 <table>
 <tr>
@@ -63,7 +63,7 @@ bool(true)</td><td>
 
 ### Events
 
-   _Event Table for Auto Append_
+
 
 <table>
 <tr>

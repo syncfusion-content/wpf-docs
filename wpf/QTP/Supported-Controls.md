@@ -1,30 +1,28 @@
 ---
 layout: post
-title: Supported-Controls
+title: Supported Controls | QTP | wpf | Syncfusion
 description: supported controls
 platform: wpf
 control: QTP
 documentation: ug
 ---
 
-## Supported Controls
+## Essential Grid
 
-### Essential Grid
+This section covers the supported properties and methods in the Essential Grid. 
 
-This section covers the supported properties and methods in Essential Grid. 
+### Properties 
 
-## Properties 
 
-Properties Table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference</th></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -41,17 +39,17 @@ int</td><td>
 N/A</td></tr>
 </table>
 
-## Methods
+### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 bool SetCurrentCell(int row, int col)</td><td>
@@ -211,21 +209,21 @@ int row, int col</td><td>
 string</td></tr>
 </table>
 
-### Essential Chart
+## Essential Chart
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 SetScrollPosition</td><td>
@@ -300,19 +298,19 @@ Void</td><td>
 NA</td></tr>
 </table>
 
-### Essential SfDataGrid
+## Essential SfDataGrid
 
 ### Properties
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -331,15 +329,15 @@ N/A</td></tr>
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 void SetCurrentCell(int row,int col);</th><th>
@@ -378,19 +376,18 @@ NA</td><td>
 void</td></tr>
 </table>
 
-### Essential SfMultiColumnDropDownControl
+## Essential SfMultiColumnDropDownControl
 
 ### Methods
 
-Methods Table
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 void SetSelectedIndex(int index);</th><th>
@@ -411,19 +408,19 @@ NA</td><td>
 void</td></tr>
 </table>
 
-### Essential SfDataPager
+## Essential SfDataPager
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 void SetCurrentPage(int pageIndex</td><td>
@@ -433,3 +430,105 @@ void</td></tr>
 </table>
 
 
+## Essential PivotGrid
+
+### Methods
+
+<table>
+<tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
+<tr>
+<td>
+void ShowGroupingBar()<br/><br/></td><td>
+Sets the GroupingBar properties of PivotGrid when ShowGroupingBar value is true.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+void<br/><br/></td></tr>
+<tr>
+<td>
+void ResizeColumns(int left, int right, double width);<br/><br/></td><td>
+Resizes the column of internal Grid for desired width.<br/><br/></td><td>
+int left, int right, double width<br/><br/></td><td>
+void<br/><br/></td></tr>
+<tr>
+<td>
+void ResizeRows(int top, int bottom, double height);<br/><br/></td><td>
+Resizes the row of internal Grid for desired height.<br/><br/></td><td>
+int top, int bottom, double height<br/><br/></td><td>
+void<br/><br/></td></tr>
+<tr>
+<td>
+bool LoadInBackgroundCompleted()<br/><br/></td><td>
+Returns the value as true once the LoadInBackground action has been completed.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool AllowSelection()<br/><br/></td><td>
+Returns the value when selecting the cells of internal Grid.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool AllowSelectionWithHeaders();<br/><br/></td><td>
+Return the value when selecting the value cells along with headers of PivotGrid.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+void CellClick(int rowIndex, int colIndex);<br/><br/></td><td>
+Performs the click action to the cell of internal Grid by using specific row, column.<br/><br/></td><td>
+int rowIndex, int colIndex<br/><br/></td><td>
+void<br/><br/></td></tr>
+<tr>
+<td>
+void ExpandAll()<br/><br/></td><td>
+Expands all the rows or columns of PivotGrid.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+void<br/><br/></td></tr>
+<tr>
+<td>
+void CollapseAll()<br/><br/></td><td>
+Collapses all the rows or columns of PivotGrid.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+void<br/><br/></td></tr>
+<tr>
+<td>
+bool SortBegin()<br/><br/></td><td>
+Indicates whether the sorting operation has been started when sorting the values of PivotGrid.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool SortCompleted()<br/><br/></td><td>
+Indicates whether the sorting operation has been completed when the values of PivotGrid have sorted.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool CanDrop()<br/><br/></td><td>
+Returns the value when the PivotItem has been dropped between GroupingBar fields.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool ContextMenuOpening()<br/><br/></td><td>
+Returns the value when opening the context menu of PivotItem.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool FilterPopupOpened()<br/><br/></td><td>
+Returns the value when clicking the filter popup of any PivotItem to filter the values.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+bool FilterActionCompleted()<br/><br/></td><td>
+Indicates whether the filtering action has been completed if the values are added in filters of PivotGrid.<br/><br/></td><td>
+N/A<br/><br/></td><td>
+bool<br/><br/></td></tr>
+</table>

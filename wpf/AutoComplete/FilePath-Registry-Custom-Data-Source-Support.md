@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FilePath-Registry--Custom-Data-Source-Support
+title: FilePath-Registry--Custom-Data-Source-Support | AutoComplete | wpf | Syncfusion
 description: filepath, registry & custom data source support
 platform: wpf
 control: AutoComplete
@@ -17,7 +17,8 @@ system as the source. This is illustrated in the following image.
 
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img1.png)
 
-_Source—FilePath_ 
+Source—FilePath
+{:.caption}
 
 
 
@@ -27,7 +28,8 @@ is used when the Registry keys are required as input. This is illustrated in the
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png)
 
 
-_Source—Registry_
+Source—Registry
+{:.caption}
 
 
 When the value of the Source property is set as Custom, the AutoComplete loads the values from the Business objects 
@@ -37,7 +39,8 @@ below.
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png)
 
 
-_Source—Custom_
+Source—Custom
+{:.caption}
 
 
 ## Adding Data Source Support to an Application
@@ -87,7 +90,6 @@ this.autoComplete3.CustomSource = products;
 
 ### Properties
 
-  _Property Table for Data Source Support_
 
 <table>
 <tr>
@@ -109,7 +111,6 @@ SourceMode(enum)</td><td>
 
 ### Events
 
-_Event Table for Data Source Support_
 
 <table>
 <tr>

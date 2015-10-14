@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support | OLAPGauge | wpf | Syncfusion
 description: rtl support
 platform: wpf
 control: OLAP Gauge
@@ -17,15 +17,15 @@ Some cultures have a written language that reads from right to left. Controls de
 
 ## Properties
 
-_Property Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -38,6 +38,8 @@ enum</td></tr>
 
 To enable RTL support, the FlowDirection property of the OLAP Gauge control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
 
+
+{%tabs%}
 {% highlight xml %}
 
    
@@ -71,7 +73,7 @@ Me.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 
 
-
+{%endtabs%}
 
 
 
@@ -82,7 +84,8 @@ Me.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 ![](RTL-Support_images/RTL-Support_img1.jpeg)
 
 
-_RTL support for OLAP Gauge_
+RTL support for OLAP Gauge
+{:.caption}
 
 ## Sample Link
 

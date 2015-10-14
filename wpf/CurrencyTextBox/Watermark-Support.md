@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark-Support
+title: Watermark Support | CurrencyTextBox | wpf | Syncfusion
 description: watermark support
 platform: wpf
 control: CurrencyTextBox 
@@ -13,9 +13,6 @@ Watermark is the dummy content displayed in the CurrencyTextBox when the value i
 
 
 {% highlight xml %}
-
-
-
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="150" Height="25" 

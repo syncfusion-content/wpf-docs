@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Carousel | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Carousel
@@ -25,7 +25,7 @@ Follow the steps to add the Carousel control by using VisualStudio.
 
 1. Open Visual Studio. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -163,7 +163,7 @@ Follow the steps to add Carousel in an application by using Blend.
 
 3. Add the following Reference with the sample project.
 
-Syncfusion.Shared.Wpf.dll
+   Syncfusion.Shared.Wpf.dll
 
 4. On the Window menu, select Assets. This opens the Assets Library dialog box.
 5. In the Search box, type Carousel. This displays the search results.

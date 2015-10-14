@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blendability
+title: Blendability | ButtonAdv | wpf | Syncfusion
 description: blendability
 platform: wpf
 control: ButtonAdv
@@ -20,7 +20,8 @@ To edit the ButtonAdv control:
 
    ![](Blendability_images/Blendability_img1.png)
 
-   _Editing ButtonAdv Template Using Expression Blend_
+   Editing ButtonAdv Template Using Expression Blend
+   {:.caption}
 
 3. The Create Style Resource window appears as follows. Click OK to create a new style for Button control.
 
@@ -28,7 +29,8 @@ To edit the ButtonAdv control:
 
    ![](Blendability_images/Blendability_img2.png)
 
-   _Creating Style Resource_
+   Creating Style Resource
+   {:.caption}
 
 
 
@@ -39,12 +41,13 @@ To edit the ButtonAdv control:
    ![](Blendability_images/Blendability_img3.png)
 
 
-   _Editing Resources_
+   Editing Resources
+   {:.caption}
 
 
    ![](Blendability_images/Blendability_img4.png)
 
 
-   _ButtonControlAdv style edited in Blend_
+   ButtonControlAdv style edited in Blend
 
-   {:.prettyprint}   
+   {:.caption}

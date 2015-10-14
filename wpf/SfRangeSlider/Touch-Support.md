@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch-Support
+title: Touch Support | SfRangeSlider | wpf | Syncfusion
 description: touch support
 platform: wpf
 control: SfRangeSlider 

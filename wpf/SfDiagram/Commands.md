@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Commands
+# Commands
 
 There are several commands provided in the SfDiagram control. These commands can be executed from XAML or C# as shown in the following code examples. Some commands require parameters to be executed.
 
@@ -15,7 +15,7 @@ Execute commands without parameters
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -23,20 +23,20 @@ Execute commands without parameters
 
   graphInfo.Commands.Flip.Execute(null);    
 
+{% endhighlight %}
 
 
 
 
 
-
-[XAML]
+{% highlight xml %}
 
   <Button x:Name="Flip" 
 
           Command="{Binding Path=Info.Commands.Flip, ElementName=sfDiagram}"
 
           Content="Flip" />
-
+{% endhighlight %}
 Here, the sfDiagram refers to an instance of SfDiagram. 
 
 Customizing the Object Size
@@ -391,17 +391,17 @@ Enum FlipFlip.HorizontalFlipFlip.VerticalFlipFlip.Flip</td></tr>
 
 Execute Flip Command
 
-[C#]
+{% highlight c# %}
 
  (sfdiagram.Info as IGraphInfo).Commands.Flip.Execute(null);    
-
+{% endhighlight %}
 
 
 When the parameter is null, the object is flipped both horizontally and vertically.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -422,7 +422,7 @@ FlipParameter flipParam = new FlipParameter();
  graphInfo.Commands.Flip.Execute(flipParam);
 
 
-
+{% endhighlight %}
 
 
 
@@ -438,20 +438,20 @@ _Figure_ _70__:Without Flip_
 <table>
 <tr>
 <td>
-{ ![](Commands_images/Commands_img21.png) | markdownify }
-{:.image }
+{ '![](Commands_images/Commands_img21.png)' | markdownify }
+
 </td><td>
-{ ![](Commands_images/Commands_img22.png) | markdownify }
-{:.image }
+{ '![](Commands_images/Commands_img22.png)' | markdownify }
+
 </td><td>
-{ ![](Commands_images/Commands_img23.png) | markdownify }
-{:.image }
+{ '![](Commands_images/Commands_img23.png)' | markdownify }
+
 </td></tr>
 <tr>
 <td>
-{{ _Figure_  | markdownify }}{{ _71_ | markdownify }}{{ _: Horizontal Flip_ | markdownify }}</td><td>
-{{ _Figure_  | markdownify }}{{ _72_ | markdownify }}{{ _: Vertical Flip_ | markdownify }}</td><td>
-{{ _Figure_  | markdownify }}{{ _73_ | markdownify }}{{ _: Flip_ | markdownify }}</td></tr>
+{{ '_Figure_'  | markdownify }}{{ '_71_' | markdownify }}{{ '_: Horizontal Flip_' | markdownify }}</td><td>
+{{ '_Figure_'  | markdownify }}{{ '_72_' | markdownify }}{{ '_: Vertical Flip_' | markdownify }}</td><td>
+{{ '_Figure_'  | markdownify }}{{ '_73_' | markdownify }}{{ '_: Flip_' | markdownify }}</td></tr>
 </table>
 
 
@@ -498,7 +498,7 @@ Fits the Entire Diagram into the View
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -525,7 +525,7 @@ IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
  graphInfo.Commands.FitToPage.Execute(null);
 
 
-
+{% endhighlight %}
 
 
 
@@ -620,7 +620,7 @@ Enum ZoomCommandZoomCommand.ZoomInZoomCommand.ZoomOut</td></tr>
 
 Execute ZoomCommand
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -653,7 +653,7 @@ Execute ZoomCommand
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -691,12 +691,12 @@ Execute ResetCommand
 
 
 
-[C#]
+{% highlight c# %}
 
   IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
 
  graphInfo.Commands.Reset.Execute( new ResetParameter() { Reset = Reset.ZoomPan });
-
+{% endhighlight %}
 
 
 
@@ -751,7 +751,7 @@ Execute DrawCommand
 
 
 
-[C#]
+{% highlight c# %}
 
  void button_PointerPressed(object sender, PointerRoutedEventArgs evtArgs)
 
@@ -779,7 +779,7 @@ Execute DrawCommand
 
  }
 
-
+{% endhighlight %}
 
 Command Manager
 
@@ -988,7 +988,7 @@ Creates a user defined command: Save command
 
 
 
-[C#] 
+{% highlight c# %} 
 
 //Creates ICommand
 
@@ -1040,13 +1040,13 @@ private async void OnSaveCommand(object obj)
       }
 }
 
-
+{% endhighlight %}
 
 Map user defines command with key gesture:
 
 
 
-[C#] 
+{% highlight c# %} 
 
 //Adds new Command to CommandManager-Cntrl +S =>Save
 
@@ -1080,5 +1080,5 @@ sfdiagram.CommandManager.Commands.Add
 
 );
 
-
+{% endhighlight %}
 

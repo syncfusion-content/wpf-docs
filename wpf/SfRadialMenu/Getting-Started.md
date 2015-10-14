@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfRadialMenu  | wpf | Syncfusion
 description: getting started 
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll)
 
 The following code sample shows how to create the RadialMenu from code-behind and XAML. 
 
-
+{%tabs%}
 {%highlight xml%}
 
 
@@ -66,5 +66,6 @@ radialMenu.Items.Add(paste);
 
 
 {%endhighlight%}
+{%endtabs%}
 
 

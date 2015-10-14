@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfRangeSlider | wpf | Syncfusion
 description: getting started 
 platform: wpf
 control: SfRangeSlider 
@@ -15,6 +15,8 @@ documentation: ug
 Dependent assembly: Syncfusion.SfShared.WPF.dll
 
 The following code sample illustrates how to create the SfRangeSlider from code-behind and XAML.
+{%tabs%}
+
 
 {%highlight xml%}
 
@@ -39,4 +41,6 @@ SfRangeSlider rangeSlider = new SfRangeSlider();
 
 
 {%endhighlight%}
+
+{%endtabs%}
 

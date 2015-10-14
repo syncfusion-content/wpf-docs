@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change-the-alignment-of-the-text-in-the-UpDown-control
+title: Change the alignment of the text in the UpDown control | UpDownControl | wpf | Syncfusion
 description: change the alignment of the text in the updown control
 platform: wpf
 control: UpDown Control
@@ -13,6 +13,8 @@ You can change the alignment of the text in the UpDown control by using the Text
 
 The TextAlignment can set to the left in the UpDown control as shown in the following code example.
 
+
+{%tabs%}
 {%highlight xml%}
 <syncfusion:UpDown Name="upDown" TextAlignment="Left">
  </ syncfusion:UpDown> 
@@ -27,6 +29,8 @@ upDown.TextAlignment = TextAlignment.Left;
 
 {%endhighlight%}
 
+{%endtabs%}
+
 ![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png)
 
 
@@ -35,6 +39,8 @@ upDown.TextAlignment = TextAlignment.Left;
 
 The TextAlignment can be set to the right in the UpDown control as shown in the following code example.
 
+
+{%tabs%}
 {%highlight xml%}
 
 <syncfusion:UpDown Name="upDown" TextAlignment="Right">
@@ -49,12 +55,16 @@ UpDown upDown = new UpDown();
 upDown.TextAlignment = TextAlignment.Right;
 {%endhighlight%}
 
+{%endtabs%}
+
 ![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png)
 
 
 
 The TextAlignment can be set to the center in the UpDown control as shown in the following code example.
 
+
+{%tabs%}
 {%highlight xml%}
 
 <syncfusion:UpDown Name="upDown" TextAlignment="Center"> 
@@ -69,6 +79,7 @@ UpDown upDown = new UpDown();
 upDown.TextAlignment = TextAlignment.Center;
 
 {%endhighlight%}
+{%endtabs%}
 
 ![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png)
 
@@ -76,6 +87,7 @@ upDown.TextAlignment = TextAlignment.Center;
 
 The TextAlignment can be set to Justify in the UpDown control as shown in the following code example.
 
+{%tabs%}
 {%highlight xml%}
 
 <syncfusion:UpDown Name="upDown" TextAlignment=" Justify "> 
@@ -90,6 +102,7 @@ UpDown upDown = new UpDown();
 upDown.TextAlignment = TextAlignment.Justify;
 
 {%endhighlight%}
+{%endtabs%}
 
 ![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png)
 

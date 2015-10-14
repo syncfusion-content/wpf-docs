@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfRangeSlider | wpf | Syncfusion
 description: overview 
 platform: wpf
 control: SfRangeSlider 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | QTP | wpf | Syncfusion
 description: overview
 platform: wpf
 control: QTP
@@ -43,17 +43,18 @@ This section covers the requirements that are mandatory for installing Essential
 
 The prerequisites are tabulated in the following table.
 
-Prerequisites Table
+
 
 <table>
 <tr>
-<th>
-Testing Environments</th><th>
-QuickTest Professional of version 9.5 and aboveQuickTest Professional .NET add-in </th></tr>
+<td>
+Testing Environments</td><td>
+<li> QuickTest Professional of version 9.5 and above </li>
+<li> QuickTest Professional .NET add-in </li> </td></tr>
 <tr>
 <td>
-.NET Framework </td><td>
-.NET Framework of version 3.5 , 4.0, or 4.5</td></tr>
+<li>.NET Framework </li> </td><td>
+<li>.NET Framework of version 3.5 , 4.0, or 4.5 </li> </td></tr>
 <tr>
 <td>
 Other Requirement</td><td>
@@ -64,13 +65,15 @@ Essential Studio (User Interface edition – WPF) of the same version as the Ess
 
 Essential QuickTest Professional is compatible with the following operating systems.
 
-Compatibility Table
 
 <table>
 <tr>
-<th>
-Operating Systems</th><th>
-Microsoft Windows XPMicrosoft Windows VistaMicrosoft Windows 7Microsoft Windows 8.1</th></tr>
+<td>
+Operating Systems</td><td>
+<li>Microsoft Windows XP</li>
+<li>Microsoft Windows Vista</li>
+<li>Microsoft Windows 7 </li>
+<li>Microsoft Windows 8.1 </li> </td></tr>
 </table>
 
 

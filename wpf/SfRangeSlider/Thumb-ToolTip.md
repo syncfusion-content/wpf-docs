@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thumb-ToolTip
+title: Thumb ToolTip | SfRangeSlider | wpf | Syncfusion
 description: thumb tooltip  
 platform: wpf
 control: SfRangeSlider 

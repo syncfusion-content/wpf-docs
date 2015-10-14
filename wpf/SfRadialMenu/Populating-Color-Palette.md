@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Populating-Color-Palette
+title: Populating Color Palette | SfRadialMenu | wpf | Syncfusion
 description: populating color palette
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 

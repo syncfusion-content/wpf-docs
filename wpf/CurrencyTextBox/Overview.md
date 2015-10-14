@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | CurrencyTextBox | wpf | Syncfusion
 description: overview
 platform: wpf
 control: CurrencyTextBox 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-Algebra
+title: Supported Algebra | Calculate | wpf | Syncfusion
 description: supported algebra
 platform: wpf
 control: Calculate
@@ -155,7 +155,6 @@ In general, in order for Essential Calculate to recognize a string as containing
 
 Function Library formulas may be used as a stand-alone formula, and they can be incorporated into more complex formulas.
 
-_Function Library_
 
 <table>
 <tr>

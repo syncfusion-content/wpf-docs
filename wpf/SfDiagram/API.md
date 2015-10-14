@@ -200,7 +200,7 @@ Description</td><td>
 <tr>
 <td>
 AutoBind</td><td>
-Gets or sets a value indicating whether properties of View are binded to ViewModel. The default value is set to {{ _true_ | markdownify }}.</td><td>
+Gets or sets a value indicating whether properties of View are binded to ViewModel. The default value is set to true.</td><td>
  Boolean</td></tr>
 <tr>
 <td>
@@ -220,17 +220,17 @@ Gets or sets the ID of the node.</td><td>
 <tr>
 <td>
 IsConnecting</td><td>
-Specifies whether the node is connecting. The default value is set to {{ _true_ | markdownify }}.</td><td>
+Specifies whether the node is connecting. The default value is set to true.</td><td>
  Boolean</td></tr>
 <tr>
 <td>
 IsGrouped</td><td>
-Specifies whether the node can be grouped. The default value is set to {{ _true_ | markdownify }}.</td><td>
+Specifies whether the node can be grouped. The default value is set to true.</td><td>
  Boolean</td></tr>
 <tr>
 <td>
 IsSelected</td><td>
-Specifies whether the node is selected. The default value is set to {{ _true_ | markdownify }}.</td><td>
+Specifies whether the node is selected. The default value is set to true.</td><td>
  Boolean</td></tr>
 <tr>
 <td>
@@ -317,7 +317,7 @@ Description</td><td>
 <tr>
 <td>
 AutoBind</td><td>
-Gets or sets a value indicating whether properties of View are binded to ViewModel. The default value is set to {{ _true_ | markdownify }}.</td><td>
+Gets or sets a value indicating whether properties of View are binded to ViewModel. The default value is set to true.</td><td>
  Boolean</td></tr>
 <tr>
 <td>
@@ -342,7 +342,7 @@ Gets or sets the ID of the connector.</td><td>
 <tr>
 <td>
 IsSelected</td><td>
-Specifies whether the connector is selected. The default value is set to {{ _true_ | markdownify }}.</td><td>
+Specifies whether the connector is selected. The default value is set to true.</td><td>
  Boolean</td></tr>
 <tr>
 <td>

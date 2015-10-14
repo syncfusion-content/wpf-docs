@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | OLAPGauge | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: OLAP Gauge
@@ -13,42 +13,30 @@ documentation: ug
 
 The OLAP Gauge control provides support to adjust its radius. This is achieved by assigning a proper value to the radius property of OLAP Gauge.
 
+
+{%tabs%}
 {% highlight c# %}
  
-   
-
-
-
 this.olapGauge1.Radius = 100;
 
 this.olapGauge1.DataBind();
 
  {% endhighlight %}
 
-
-
-
  {% highlight vbnet %}
-  
-    
-
-
-
+ 
 Me.olapGauge1.Radius = 100
 
 Me.olapGauge1.DataBind()
 
  {% endhighlight %}
 
+{%endtabs%}
 
 
 
 
-
-
-
-
-![C:/Users/Hari/Pictures/OlapGauge/Radius.png](Appearance_images/Appearance_img1.png)
+![](Appearance_images/Appearance_img1.png)
 
 
 ## Sample Location
@@ -73,6 +61,9 @@ The following are the frame types supported by OLAP Gauge.
 
 
 The following code example illustrates how to set the frame type for the OLAP Gauge control.
+
+
+{%tabs%}
 
 {% highlight c# %}
  
@@ -101,32 +92,32 @@ Me.olapGauge1.FrameType = GaugeFrameType.CircularWithInnerLeftGradient
 
 
 
-
+{%endtabs%}
 
 
 
 The following screen shots illustrate the various frame types.
 
-![C:/Users/Hari/Pictures/OlapGauge/CircularWithInnerLeftGradient.png](Appearance_images/Appearance_img2.png)
+![](Appearance_images/Appearance_img2.png)
 
 
-![C:/Users/Hari/Pictures/OlapGauge/CircularWithDarkOuterFrames.png](Appearance_images/Appearance_img3.png)
-
-
-
-
-![C:/Users/Hari/Pictures/OlapGauge/CircularCenterGradient.png](Appearance_images/Appearance_img4.png)
-
-
-![C:/Users/Hari/Pictures/OlapGauge/CircularWithInnerTopGradient.png](Appearance_images/Appearance_img5.png)
-
-
-![C:/Users/Hari/Pictures/OlapGauge/Full Circle.png](Appearance_images/Appearance_img6.png)
+![](Appearance_images/Appearance_img3.png)
 
 
 
 
-![C:/Users/Hari/Pictures/OlapGauge/Half Circle.png](Appearance_images/Appearance_img7.png)
+![](Appearance_images/Appearance_img4.png)
+
+
+![](Appearance_images/Appearance_img5.png)
+
+
+![](Appearance_images/Appearance_img6.png)
+
+
+
+
+![](Appearance_images/Appearance_img7.png)
 
 
 ## Sample Location
@@ -172,9 +163,12 @@ The OLAP Gauge control allows you to present your data using different built-in-
 
 ## Applying Skins
 
-The various skin themes available can be applied to the control using the _SkinStorage.VisualStyle_ property. 
+The various skin themes available can be applied to the control using the SkinStorage.VisualStyle property. 
 
 To set the visual style for the controls, use the code given below.
+
+
+{%tabs%}
 
  {% highlight xml %}
 
@@ -216,6 +210,8 @@ SkinStorage.SetVisualStyle(olapGauge1, "Office2007Blue");
 SkinStorage.SetVisualStyle(olapGauge1, "Office2007Blue");
 
  {% endhighlight %}
+ 
+ {%endtabs%}
 
 
 Run the code. The following output is obtained.

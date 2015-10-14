@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intermediate-Values
+title: Intermediate Values | SfRangeSlider | wpf | Syncfusion
 description: intermediate values  
 platform: wpf
 control: SfRangeSlider 

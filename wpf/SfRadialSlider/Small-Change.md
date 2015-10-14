@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Small-Change
+title: Small-Change | SfRadialSlider  | wpf | Syncfusion
 description: small change  
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider 
 documentation: ug
 ---
 

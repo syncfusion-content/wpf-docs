@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Wizard | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Wizard
@@ -26,7 +26,7 @@ Here are some highlights of our Wizard control.
 Wizard control is created programmatically by using either XAML or C# code. The following lines of code can be used to create the Wizard control.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -47,6 +47,7 @@ WizardControl wizardControl = new WizardControl();
 grid.Children.Add(wizardControl); 
 {% endhighlight %}
 
+{%endtabs%}
 
 N> For creating Wizard control using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Layout-Types
+title: Layout Types | SfRadialMenu  | wpf | Syncfusion
 description: layout types
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 # Layout Types
@@ -27,7 +27,7 @@ Number of segments in the panel is determined by VisibleSegmentsCount property. 
 
 VisibleSegmentsCount property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
 
-
+{%tabs%}
 {%highlight xml%}
 
 <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />
@@ -40,12 +40,14 @@ radialMenu.LayoutType = LayoutType.Custom;
  radialMenu.VisibleSeggmentsCount = 7; 
 {%endhighlight%}
 
+{%endtabs%}
+
 
 ### SegmentIndex
 
 SegmentIndex property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the RadialMenuItems are inserted in the segment. When SegmentIndex is not specified for a RadialMenuItem (or) two or more RadialMenuItems having the same SegmentIndex, then the menu item is arranged in the next available free segment. 
 
-
+{%tabs%}
 {%highlight xml%}
 
 <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />  
@@ -71,7 +73,7 @@ radialMenu.Items.Add(item2);radialMenu.Items.Add(item5);radialMenu.Items.Add(ite
 radialMenu.Items.Add(item6); radialMenu.Items.Add(item3); </td></tr>
 {%endhighlight%}
 
-
+{%endtabs%}
 
 ![](Concepts_images/Concepts_img7.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming-and-Panning
+title: Zooming and Panning | SfMap | wpf | Syncfusion
 description: zooming and panning
 platform: wpf
 control: SfMap

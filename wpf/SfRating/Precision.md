@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Precision
+title: Precision | SfRating | wpf | Syncfusion
 description: precision
 platform: wpf
-control: Rating
+control: SfRating
 documentation: ug
 ---
 

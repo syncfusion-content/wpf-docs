@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Group-Margin
+title: Setting Group Margin | TaskBar | wpf | Syncfusion
 description: setting group margin
 platform: wpf
 control: TaskBar
@@ -15,7 +15,7 @@ You can also set the value for Left, Right, Bottom and Top group margins.
 
 Use the below code for setting the group margin.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -158,7 +158,7 @@ taskBar.GroupMargin = new Thickness(5);
 this.Content = taskBar; 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)
@@ -167,7 +167,9 @@ this.Content = taskBar;
 
 
 
-See Also
+{%seealso%}
 
 Group Width for the TaskBar
+
+{%endseealso%}
 

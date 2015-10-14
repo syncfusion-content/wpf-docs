@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PageNavigation
+title: PageNavigation | SfDataPagerControl | wpf | Syncfusion
 description: pagenavigation
 platform: wpf
 control: SfDataPager Control
@@ -54,6 +54,8 @@ This method moves the current page index to the corresponding page index that is
 When you are working with Paging, you may be in Edit mode or in CurrentPage. In this case, you can stop navigating the Paging by using the PageIndexChanging event before changing the page.
 
 The following example displays the MessageBox before the PageChanging,
+
+{%tabs%}
 
 {% highlight html %}
 
@@ -116,3 +118,5 @@ void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs arg
 
 
 {% endhighlight %}
+
+{%endtabs%}

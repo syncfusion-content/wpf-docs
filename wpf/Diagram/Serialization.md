@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization
+title: Serialization | Diagram | wpf | Syncfusion
 description: serialization
 platform: wpf
 control: Diagram
@@ -11,7 +11,6 @@ documentation: ug
 
 Serialization is the process of saving and retrieving the Essential Diagram file. Essential Diagram WPF supports saving the diagram page as an XAML file. The page and all its properties get saved. On loading, the page gets loaded in the current view with all its nodes and connections. This load and save feature allows you to save their diagram page for future use. You can continue working on their page by loading the appropriate XAML file.
 
-_Methods Table_
 
 <table>
 <tr>
@@ -107,7 +106,8 @@ The Save Dialog box will appear. Select the 'Save as Type' as XAML and select th
 
 
 
-_Save Dialog Box_
+Save Dialog Box
+{:.caption}
 
 File name with path
 
@@ -204,7 +204,8 @@ The Load Dialog box will appear. Select the 'Files of Type' as XAML and specify 
 
 
 
-_Load Dialog Box_
+Load Dialog Box
+{:.caption}
 
 File name with path
 
@@ -423,7 +424,7 @@ Properties
 
 The property of the Localization feature is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diagram-Model
+title: Diagram Model | Diagram | wpf | Syncfusion
 description: diagram model
 platform: wpf
 control: Diagram
@@ -11,16 +11,15 @@ documentation: ug
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel. The position of the nodes can be manually specified.
 
-See Also
+{%seealso%}
 
 * Bind data to Diagram Control Refer Concepts and Features -> Diagram Model -> Bind data to Diagram Control
 * Tree Spacing Refer Concepts and Features -> Diagram Model -> Tree Spacing
 * Tree Orientation Refer Concepts and Features -> Diagram Model -> Tree Orientation
 * Table Expand Mode Refer Concepts and Features -> Diagram Model -> Table Expand Mode
+{%endseealso%}
 
 
-
-_Methods Table_
 
 <table>
 <tr>
@@ -58,7 +57,7 @@ Add a Layer</td></tr>
 
 The following are general spacing properties used in many automatic layouts. Spacing refers to spaces between the nodes that lies in different levels of the tree layout and space between each node with their sibling.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -164,6 +163,8 @@ The following code illustrates these settings.
 {% highlight c# %}
 DiagramModel diagramModel = new DiagramModel();diagramModel.VerticalSpacing = 50;diagramModel.HorizontalSpacing = 50;diagramModel.SpaceBetweenSubTrees = 100;
 {% endhighlight  %}
+
+
 {% highlight vbnet %}
 Dim diagramModel As New DiagramModel()diagramModel.VerticalSpacing = 50diagramModel.HorizontalSpacing = 50diagramModel.SpaceBetweenSubTrees = 100
 {% endhighlight  %}
@@ -183,11 +184,12 @@ Horizontal Spacing refers to the spaces between the edges of the adjacent nodes 
 
 
 
-![C:/Users/jeganr/AppData/Local/Temp/Rar$DI01.402/HR&vr.png](Diagram-Model_images/Diagram-Model_img1.png)
+![](Diagram-Model_images/Diagram-Model_img1.png)
 
 
 
-_Horizontal and Vertical Spacing Properties_
+Horizontal and Vertical Spacing Properties
+{:.caption}
 
 Representation for SpaceBetweenSubTrees properties
 
@@ -199,13 +201,14 @@ SpaceBetweenSubTrees refers to the spaces between adjacent Subtrees.
 
 
 
-_SpaceBetweenSubTrees property_
+SpaceBetweenSubTrees property
+{:.caption}
 
 ## Tree Orientation
 
 The Layout Manager lets you orient the tree in many directions and can be used for the creation of many sophisticated arrangements. The Orientation property of Diagram Model can be used to specify the tree orientation.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -343,7 +346,8 @@ The orientations are illustrated below.
 
 
 
-_BottomTop Orientation_
+BottomTop Orientation
+{:.caption}
 
 
 
@@ -351,7 +355,8 @@ _BottomTop Orientation_
 
 
 
-_TopBottom Orientation_
+TopBottom Orientation
+{:.caption}
 
 
 
@@ -359,21 +364,22 @@ _TopBottom Orientation_
 
 
 
-_LeftRight Orientation_
-
+LeftRight Orientation
+{:.caption}
 
 
 ![](Diagram-Model_images/Diagram-Model_img6.jpeg)
 
 
 
-_RightLeft Orientation_
+RightLeft Orientation
+{:.caption}
 
 ## Clear Nodes and Connections
 
 Essential Diagram WPF allows you to clear the nodes and connections added to the diagram. It can be done by clearing the collections of nodes and connections from DiagramModel.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -433,7 +439,7 @@ diagramModel.Connections.Clear()
 
 DiagramModel supports binding with business objects. Nodes will be created and added into the modeldepending upon the business object and template provided. 
 
-_Property Table_ 
+
 
 <table>
 <tr>
@@ -473,7 +479,7 @@ The ItemsSource property gets the source for the list of nodes to be added to th
 
 The following code illustrates this.
 
-{% highlight html %}
+{% highlight xml %}
 
 
 
@@ -563,13 +569,14 @@ Me(0).RegionalSales.Add(New RegionSale() With {.Name = "San Fransico", .Revenue 
 
 
 
-_Data bound to the Diagram Control_
+Data bound to the Diagram Control
+{:.caption}
 
 ## Cyclic path in Hierarchical-Tree Layout
 
 The Hierarchical-Tree layout provides support for creating cyclic paths. A cycle is said to exist if nodes are connected in a chain such that the last node in the chain is connected back to the first node. For example, if there are four nodes namely n1, n2, n3 and n4, such that n1 is connected to n2, n2 is connected to n3, n3 is connected to n4, and n4 is again connected to n1 (n1-->n2-->n3-->n4), then these nodes are said to form a cycle.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -678,7 +685,8 @@ The following screenshot illustrates Cyclic Paths in the Hierarchical-Tree layou
 
 
 
-_Cyclic Paths In Hierarchical-Tree Layout_
+Cyclic Paths In Hierarchical-Tree Layout
+{:.caption}
 
 N> If a cyclic path is specified as input when the EnableCycleDetection property is set to False, then a stack overflow exception is thrown as the loop goes on forever.
 
@@ -686,16 +694,17 @@ N> If a cyclic path is specified as input when the EnableCycleDetection property
 
 Cyclic paths are very useful to demonstrate work flows which involve repeated processes.
 
-See Also
+{%seealso%}
 
 Automatic Layout Refer Getting Started -> Automatic Layout
+{%endseealso%}
 
 ## Table Expand Mode
 
 The TableExpandMode property is an enumeration which takes two values, Horizontal and Vertical. Default value is Horizontal. It specifies how the table gets expanded when more items are added to the model.
 Property
 
-_Expand Mode Table_
+
 
 <table>
 <tr>
@@ -800,7 +809,8 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
 
 
-_Table layout with TableExpandMode as Horizontal and ColumnCount as 4_
+Table layout with TableExpandMode as Horizontal and ColumnCount 
+{:.caption}
 
 
 
@@ -808,13 +818,14 @@ _Table layout with TableExpandMode as Horizontal and ColumnCount as 4_
 
 
 
-_Table layout with TableExpandMode as Vertical and RowCount as 4_
+Table layout with TableExpandMode as Vertical and RowCount 
+{:.caption}
 
 ## Row Count and Column Count
 
 RowCount and ColumnCount properties are used to specify the maximum number of rows and columns allowed in the table. Refer TableExpandMode property for more details.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -933,7 +944,8 @@ diagramModel.ColumnCount=5
 
 
 
-_RowCount specified as 3_
+RowCount specified as 3
+{:.caption}
 
 
 
@@ -941,13 +953,14 @@ _RowCount specified as 3_
 
 
 
-_ColumnCount specified as 5_
+ColumnCount specified as 5
+{:.caption}
 
 ## Enable Table Layout with Varied Node Sizes
 
 When the EnableLayoutWithVariedSizes property is set to True, center aligns the content of each cell so that all the nodes in that row and column in the table get aligned with respect to the larger cell size. This property can be set to true, if the nodes are of different sizes (width and height). 
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1050,7 +1063,8 @@ diagramModel.EnableLayoutWithVariedSizes = True
 
 
 
-_EnableLayoutWithVariedSize set to false_
+EnableLayoutWithVariedSize set to false
+{:.caption}
 
 
 
@@ -1058,5 +1072,6 @@ _EnableLayoutWithVariedSize set to false_
 
 
 
-_EnableLayoutWithVariedSize set to true_
+EnableLayoutWithVariedSize set to true
+{:.caption}
 

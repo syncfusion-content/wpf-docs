@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubbles
+title: Bubbles | SfMap | wpf | Syncfusion
 description: bubbles
 platform: wpf
 control: SfMap
@@ -15,7 +15,7 @@ Bubbles are included when data binding is set as mentioned above and the BubbleM
 
 The following properties are available in BubbleMarkerSetting:
 
-Property Table
+
 
 <table>
 <tr>
@@ -121,12 +121,13 @@ To add bubbles to a map, the bubble marker setting has to be added to the shape 
 
 
 Adding Bubbles
+{:.caption}
 
 ## Customizing Bubble Symbol
 
 The shape of the bubble symbol can be modified by using built-in symbols like circle, rectangle, diamond, triangle, trapezoid, star, pentagon, and pushpin that are available in the BubbleType enum property. Also, bubbles can be customized by setting the CustomTemplate of the BubbleMarkerSetting.
 
-Property Table
+
 
 <table>
 <tr>
@@ -222,12 +223,13 @@ Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should
 
 
 Bubble with Star Symbol
+{:.caption}
 
 ## Range Color Mapping
 
 Range color mapping is one of the features used to differentiate the bubble fill, based on its under-bound value and color ranges. It contains the following properties:
 
-Property Table
+
 
 <table>
 <tr>
@@ -343,4 +345,5 @@ Create the “Model” and the “ViewModel” as mentioned in the Data Binding 
 
 
 RangeColorMapping for Bubbles
+{:.caption}
 

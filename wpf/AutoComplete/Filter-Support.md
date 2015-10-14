@@ -13,7 +13,8 @@ Filter support is used to filter the matched list of items from the linked sourc
 
 ![](Filter-Support_images/Filter-Support_img1.png)
 
-_Filter Support_
+Filter Support
+{:.caption}
 
 
 
@@ -42,7 +43,7 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = tr
 
 ### Properties
 
-  _Property Table for Filter_
+
 
 <table>
 <tr>
@@ -64,7 +65,7 @@ bool(true)</td><td>
 
 ### Events
 
-  _Event Table for Filter_
+
 
 <table>
 <tr>

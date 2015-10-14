@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | AutoComplete | wpf | Syncfusion
 description: data binding
 platform: wpf
 control: AutoComplete
@@ -58,7 +58,8 @@ public class EmployeeListCollection : ObservableCollection<EmployeeList>
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-_AutoComplete Bound with Data Source_
+AutoComplete Bound with Data Source
+{:.caption}
 
 
 
@@ -66,7 +67,7 @@ _AutoComplete Bound with Data Source_
 
 ### Properties
 
-   _Property Table for Data Binding_
+
 
 <table>
 <tr>
@@ -88,7 +89,6 @@ Sytem.Collections.IEnumerable</td><td>
 
 ### Events
 
-_Events Table for Data Binding_
 
 <table>
 <tr>

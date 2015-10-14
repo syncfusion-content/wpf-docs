@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-Validation
+title: Maximum and Minimum Validation | UpDownControl | wpf | Syncfusion
 description: maximum and minimum validation
 platform: wpf
 control: UpDown Control
@@ -21,6 +21,8 @@ Similarly, on enabling the MinValueOnExceedMinDigit property and setting the Min
 
 The MaxValidation and MinValidation can be set for the UpDown control as shown in the following code.
 
+
+{%tabs%}
 {%highlight xml%}
 
 
@@ -47,18 +49,19 @@ upDown.MinValueOnExceedMinDigit = true;
 
 {%endhighlight%}
 
-Tables for Properties, and Events
+{%endtabs%}
 
-MaxValidation and MinValidation Properties
+### Tables for Properties, and Events
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 MaxValidation</td><td>
@@ -90,16 +93,16 @@ Not applicable</td></tr>
 </table>
 
 
-MaxValidation and MinValidation event
+### MaxValidation and MinValidation event
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 MinValidationChanged</td><td>

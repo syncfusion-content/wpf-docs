@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge-Customization
+title: Gauge Customization | OLAPGauge | wpf | Syncfusion
 description: gauge customization
 platform: wpf
 control: OLAP Gauge
@@ -13,6 +13,8 @@ documentation: ug
 
 The OLAP Gauge control provides support to display multiple gauges in a structured layout. You can customize the layout by using the ColumnsCount and RowsCount properties. These properties are used to specify the number of columns and rows for displaying controls.
 
+
+{%tabs%}
 {% highlight c# %}
  
     
@@ -39,6 +41,7 @@ Me.olapGauge.ColumnsCount = 2
 Me.olapGauge.RowsCount = 2
 
  {% endhighlight %}
+{%endtabs%}
 
 
 
@@ -47,8 +50,7 @@ Me.olapGauge.RowsCount = 2
 
 
 
-
-![C:/Users/Hari/Pictures/OlapGauge/Multiple Gauge.png](Gauge-Customization_images/Gauge-Customization_img1.png)
+![](Gauge-Customization_images/Gauge-Customization_img1.png)
 
 
 ## Sample Location
@@ -63,7 +65,7 @@ The OLAP Gauge control provides support to display Key Performance Indicators (K
 
 You can easily view the KPI Value and KPI Goal with the help of _Pointers_ and _Markers_, and the KPI status and KPI trend values through user friendly images in OLAP Gauge WPF.  Each gauge represents a member against one KPI combination.
 
-![C:/Users/Hari/Pictures/OlapGauge/KPI.png](Gauge-Customization_images/Gauge-Customization_img2.png)
+![](Gauge-Customization_images/Gauge-Customization_img2.png)
 
 
 ## Sample Location
@@ -76,6 +78,8 @@ A sample demo is available at the following location:
 
 The OLAP Gauge control provides support to customize the header, which displays the measure and KPI name. The ShowGaugeHeader property allows you to show or hide the gauge header. If the property is set to true it displays the gauge header.If it is false, then it hides the gauge header. Similarly ShowGaugeFactors and ShowGaugeLabels properties are used for showing and hiding the gauge factors and labels. The following is the code snippet. 
 
+
+{%tabs%}
 {% highlight c# %}
  
     
@@ -110,14 +114,16 @@ Me.olapGauge1.ShowGaugeLabels = True
 
 
 
-
+{%endtabs%}
 
 
 
 
 The following screen shot shows the output:
 
-![C:/Users/Hari/Pictures/OlapGauge/With labels.png](Gauge-Customization_images/Gauge-Customization_img3.png)
+![](Gauge-Customization_images/Gauge-Customization_img3.png)
+
+{%tabs%}
 
 {% highlight c# %}
  
@@ -152,7 +158,7 @@ Me.olapGauge1.ShowGaugeLabels = False
 
 
 
-
+{%endtabs%}
 
 
 
@@ -160,7 +166,7 @@ Me.olapGauge1.ShowGaugeLabels = False
 
 The following screen shot shows the output:
 
-![C:/Users/Hari/Pictures/OlapGauge/No label name inside.png](Gauge-Customization_images/Gauge-Customization_img4.png)
+![](Gauge-Customization_images/Gauge-Customization_img4.png)
 
 
 ## Sample Location

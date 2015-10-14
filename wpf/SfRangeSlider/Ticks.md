@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ticks
+title: Ticks | SfRangeSlider | wpf | Syncfusion
 description: ticks 
 platform: wpf
 control: SfRangeSlider 

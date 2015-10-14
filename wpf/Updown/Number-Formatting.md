@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number-Formatting
+title: Number Formatting | UpDownControl | wpf | Syncfusion
 description: number formatting
 platform: wpf
 control: UpDown Control
@@ -15,6 +15,8 @@ The Number formatting controls how a number is displayed in the UpDown control b
 
 The NumberFormatInfo can be set for the UpDown control as shown in the following code example.
 
+
+{%tabs%}
 {%highlight xml%}
 
 <syncfusion:UpDown HorizontalAlignment="Center" VerticalAlignment="Center" Name="upDown" Height="51"Width="140" Value="5555555">
@@ -56,24 +58,25 @@ NumberDecimalSeparator = "*"
 
 {%endhighlight%}
 
+{%endtabs%}
+
 ![](Number-Formatting_images/Number-Formatting_img1.png)
 
 
 
 
 
-Tables for Properties, and Events
+### Tables for Properties, and Events
 
-NumberFormatInfo Property
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 NumberFormatInfo</td><td>
@@ -84,16 +87,16 @@ Not applicable.</td></tr>
 </table>
 
 
-NumberFormatInfo Event
+### NumberFormatInfo Event
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 NumberFormatInfoChanged</td><td>

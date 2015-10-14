@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Pointer-Settings
+title: Pointer Settings | SfLinearGauge | wpf | Syncfusion
 description: pointer settings
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge 
 documentation: ug
 ---
 
@@ -15,6 +15,8 @@ Multiple pointers are added to the Linear Gauge to point multiple values on the 
 
 Bar pointer is an accenting line or colored bar that is placed on the Linear Gauge to mark the values. Bar pointer’s UI is customized by using the BarPointerStroke and BarPointerStrokeThickness properties.
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -69,7 +71,7 @@ Bar pointer is an accenting line or colored bar that is placed on the Linear Gau
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 The following screenshot illustrates the Linear Gauge with Bar Pointer:
 
@@ -81,6 +83,8 @@ The following screenshot illustrates the Linear Gauge with Bar Pointer:
 
 In the symbol pointer type, the value is pointed by a symbol on the scale. You can modify the symbol pointer’s size by changing the SymbolPointerHeight and SymbolPointerWidth properties. The stroke of the symbol pointer is changed by using the SymbolPointerStroke property. The SymbolPointerStyle property is used to select the symbol pointer style.
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -133,7 +137,7 @@ In the symbol pointer type, the value is pointed by a symbol on the scale. You c
 {% endhighlight %}
 
 
-
+{%endtabs%}
 
 The following screenshot illustrates the Linear Gauge with Symbol Pointer:
 
@@ -149,7 +153,7 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 2. Below (Default).
 3. Cross.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -227,7 +231,7 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 

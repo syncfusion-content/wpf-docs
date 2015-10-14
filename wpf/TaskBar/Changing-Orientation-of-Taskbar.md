@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-Orientation-of-Taskbar
+title: Changing Orientation of Taskbar | TaskBar | wpf | Syncfusion
 description: changing orientation of taskbar
 platform: wpf
 control: TaskBar
@@ -18,7 +18,7 @@ TaskBar control supports the following types of orientation.
 
 Use the below code snippet to set the orientation.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -161,7 +161,7 @@ taskBar.GroupOrientation = Orientation.Horizontal;
 this.Content = taskBar; 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)

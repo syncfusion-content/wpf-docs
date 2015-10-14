@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Different-Views-in-the-ContextViewManager
+title: Creating Different Views in the ContextViewManager | Diagram | wpf | Syncfusion
 description: creating different views in the contextviewmanager
 platform: wpf
 control: Diagram
@@ -31,11 +31,12 @@ ContextView.ContextViewMode =ContextViewMode.Predecessors
 
 {% endhighlight  %}
 
-![C:/Users/jeganr/AppData/Local/Syncfusion/EssentialStudio/10.3.0.25/WPF/Diagram.WPF/Samples/3.5/WindowsSamples/Getting Started/Context View Demo/Images/ContextViewDemo.png](Diagram-View_images/Diagram-View_img53.png)
+![](Diagram-View_images/Diagram-View_img53.png)
 
 
 
-_Context View_
+Context View
+{:.caption}
 
 N> By default, the context view manager will show the neighborhood view.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Group-Padding
+title: Setting Group Padding | TaskBar | wpf | Syncfusion
 description: setting group padding
 platform: wpf
 control: TaskBar
@@ -15,7 +15,7 @@ You can also set the value for Left, Right, Bottom and Top group padding.
 
 To set the group padding, use the below code
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -74,7 +74,7 @@ To set the group padding, use the below code
 TaskBar.SetGroupPadding(taskBar, new Thickness(20));
 
 {% endhighlight %}
-
+{%endtabs%}
 
 
 ![](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg)
@@ -82,8 +82,7 @@ TaskBar.SetGroupPadding(taskBar, new Thickness(20));
 
 
 
-
-See Also
+{%seealso%}
 
 TaskBar Item Header Image
-
+{%endseealso%}

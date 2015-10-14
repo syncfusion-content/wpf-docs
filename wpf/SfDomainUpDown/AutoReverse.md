@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoReverse
+title: AutoReverse | DomainUpDown | wpf | Syncfusion
 description: autoreverse
 platform: wpf
 control: DomainUpDown

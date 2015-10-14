@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event-Mechanism
+title: Event Mechanism | Diagram | wpf | Syncfusion
 description: event mechanism
 platform: wpf
 control: Diagram
@@ -17,7 +17,7 @@ Diagram control has several events which respond to several actions performed on
 
 The various events and their descriptions are explained in the following table.
 
-_Events Table_
+
 
 <table>
 <tr>

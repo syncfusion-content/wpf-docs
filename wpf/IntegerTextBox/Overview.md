@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | IntegerTextBox | wpf | Syncfusion
 description: overview
 platform: wpf
 control: IntegerTextBox 

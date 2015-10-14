@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map-Providers
+title: Map Providers | SfMap | wpf | Syncfusion
 description: map providers
 platform: wpf
 control: SfMap

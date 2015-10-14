@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Null-Value
+title: Null Value | UpDownControl | wpf | Syncfusion
 description: null value
 platform: wpf
 control: UpDown Control
@@ -17,7 +17,7 @@ You can enter a null value in the UpDown control only when the UseNullOption is 
 
 The NullValue can be set for the UpDown control as shown in the following code example.
 
-
+{%tabs%}
 {%highlight xml%}
 
 <syncfusion:UpDown Name="upDown" UseNullOption="true" NullValue="1"/>
@@ -36,18 +36,20 @@ upDown.NullValue = 2;
 
 {%endhighlight%}
 
-Tables for Properties and Events
+{%endtabs%}
 
-NullValue properties
+### Tables for Properties and Events
+
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 UseNullOption</td><td>
@@ -64,16 +66,16 @@ double?</td><td>
 Not applicable</td></tr>
 </table>
 
-NullValue Event Table	
+### NullValue Event Table	
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 UseNullOptionChanged</td><td>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection-Mode-Support
+title: Selection-Mode-Support | AutoComplete | wpf | Syncfusion
 description: selection mode support
 platform: wpf
 control: AutoComplete
@@ -13,9 +13,10 @@ AutoComplete supports two kinds of Selection Mode namely Single and Multiple. Yo
 
 When the SelectionMode property is set as Single, only one item can be selected at a time. The following image illustrates the Single selection mode.
 
-![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/SingleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img1.png)
+![](Selection-Mode-Support_images/Selection-Mode-Support_img1.png)
 
-_SelectionMode-Single_
+SelectionMode-Single
+{:.caption}
 
 
 
@@ -23,9 +24,10 @@ When the SelectionMode is set as Multiple, you can select multiple items by usin
 
 The following image illustrates the Multiple selection mode.
 
-![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/MultipleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img2.png)
+![](Selection-Mode-Support_images/Selection-Mode-Support_img2.png)
 
-_SelectionMode—Multiple_
+SelectionMode—Multiple
+{:.caption}
 
 
 
@@ -33,10 +35,10 @@ When the SelectionMode is set as Extended, you can select multiple items at a ti
 
 The following image illustrates the Multiple selection mode.
 
-![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/ExtendedSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img3.png)
+![](Selection-Mode-Support_images/Selection-Mode-Support_img3.png)
 
-_SelectionMode—Extended_
-
+SelectionMode—Extended
+{:.caption}
 
 Adding Single, Multiple & Extended Selection Support to an Application 
 
@@ -54,7 +56,7 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete2.SelectionMode
 
 ### Property
 
-  _Property Table for Selection Mode_
+
 
 <table>
 <tr>
@@ -76,7 +78,7 @@ SelectionMode(Single)</td><td>
 
 ### Events
 
-  _Event Table for Selection Mode_
+
 
 <table>
 <tr>

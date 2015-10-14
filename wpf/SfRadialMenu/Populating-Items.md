@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Populating-Items
+title: Populating Items | SfRadialMenu | wpf | Syncfusion
 description: populating items 
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 
@@ -14,6 +14,8 @@ documentation: ug
 Radial menu items can be populated with the business object collection. Let us create a RadialMenu which will show the list of Application commands.   
 
 The Application command model look likes below.  
+
+
 
 {%highlight c#%}
 

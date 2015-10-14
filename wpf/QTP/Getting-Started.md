@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | QTP | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: QTP
@@ -18,7 +18,8 @@ The following is a list of chapters containing information that steps you throug
 To create a new test
 
 1. Open QTP by double-clicking the QuickTest Professional icon. 
-N> The QuickTest Professional – Add-in Manager window is displayed.
+   
+   N> The QuickTest Professional – Add-in Manager window is displayed.
 
 2. Select the WPF check box under the Add-in header. This ensures that WPF add-in is installed. 
 
@@ -27,7 +28,8 @@ N> The QuickTest Professional – Add-in Manager window is displayed.
 
 
 3. Click OK. 
-N> The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
+   
+   N> The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
@@ -40,7 +42,10 @@ N> The QuickTest Professional – [Start Page] window opens. There are two tabs 
 
 
 5. A new test is created. 
-  Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
+   
+   
+   
+   N> You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 
 6. Click Record in the toolbar to start the recording. 
 
@@ -60,60 +65,64 @@ N> The QuickTest Professional – [Start Page] window opens. There are two tabs 
 
 
 
-N> The Record and run only option is selected by default._
-
+   N> The Record and run only option is selected by default.
 
 
 9. Select the following checkbox to ensure that only the applications opened by QuickTest and added applications are tested.
-1. Applications opened by Quick Test
-2. Applications opened via the Desktop (by the Window shell)
-3. Applications specified below
-10. To add an application for testing, click the + button in the Application details.
+   I. Applications opened by Quick Test
+   II. Applications opened via the Desktop (by the Window shell)
+   III. Applications specified below
+   
+10.To add an application for testing, click the + button in the Application details.
 
 
 
-N> The Application Details dialog box opens.
+   N> The Application Details dialog box opens.
 
   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
-11. For Application field, browse and select the path of the application that has to be tested by clicking 
+11.For Application field, browse and select the path of the application that has to be tested by clicking button.
+     
+   ![](Getting-Started_images/Getting-Started_img8.png)
+
+
+12.For Working folder field, browse and select the path of the working folder by clicking  button.
+    ![](Getting-Started_images/Getting-Started_img9.png)
+
+
+13.Select the Launch application check box, to launch the application immediately after clicking OK. 
+
+14.Select Include descendant processes check box, to include all the processes that are descendant to the current process. 
+
+
+
+   N> Both Launch application and Include descendant processes check boxes are selected by default.
+
+15.Click OK. 
     
-	![](Getting-Started_images/Getting-Started_img8.png)
+   N> The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot.
 
- button.
-12. For Working folder field, browse and select the path of the working folder by clicking ![](Getting-Started_images/Getting-Started_img9.png)
-
-button.
-13.  Select the Launch application check box, to launch the application immediately after clicking OK. 
-14. Select Include descendant processes check box, to include all the processes that are descendant to the current process. 
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
-N> Both Launch application and Include descendant processes check boxes are selected by default.
+16.Click OK. 
+    
+   N> The recording starts. The application in the given path is opened as displayed in the following screenshot.
 
-15. Click OK. 
-N> The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot.
-
-    ![](Getting-Started_images/Getting-Started_img10.png)
-
-
-
-16. Click OK. 
-N> The recording starts. The application in the given path is opened as displayed in the following screenshot.
-
-    ![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
-17. Perform the required valid user-action in the application. 
+17.Perform the required valid user-action in the application. 
 
-N>
+   N>
 
-* Whenever the user performs any action involving the Syncfusion control used in the application, the Syncfusion.cfg file maps the control to the corresponding DLL.
-* Finally, the DLL renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed. 
-* these method names are then recorded and displayed in the screen behind the running application, as illustrated in the following screenshot.
+   * Whenever the user performs any action involving the Syncfusion control used in the application, the Syncfusion.cfg file maps the control to the corresponding DLL.
+   * Finally, the DLL renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed. 
+   * these method names are then recorded and displayed in the screen behind the running application, as illustrated in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img12.png)
 
@@ -218,15 +227,18 @@ Saving a test is as simple as saving any other document or picture. To save a te
 3. Type the name of the file to be saved in the File name text box. 
 4. Click Save. 
 5. The test is saved.
+
+
+
 ## Running the Saved Test
 
 
 The tests that are saved can be replayed later. For running such tests, refer to the following steps.
 
 1. Click Open on the toolbar. 
-N> The Open Test dialog box opens with a list of saved tests.
+   N> The Open Test dialog box opens with a list of saved tests.
 
-![](Getting-Started_images/Getting-Started_img21.png)
+   ![](Getting-Started_images/Getting-Started_img21.png)
 
 
 
@@ -235,7 +247,7 @@ N> The Open Test dialog box opens with a list of saved tests.
 
 
 
-N> The saved test is opened with its name and the complete path as the name of the window. By default, the Expert View of the Test is opened.
+   N> The saved test is opened with its name and the complete path as the name of the window. By default, the Expert View of the Test is opened.
 
 The following image illustrates the generated methods based on recording the process in SyncfusionGridDataControl. 
 
@@ -243,7 +255,7 @@ The following image illustrates the generated methods based on recording the pro
 
 
 
-4. Click Run in the toolbar to run the test. 
+4.Click Run in the toolbar to run the test. 
 
 For more details on running the test, refer to Running a Test section.
 

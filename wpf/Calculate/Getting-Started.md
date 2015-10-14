@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Calculate | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Calculate
@@ -17,7 +17,8 @@ The following illustration shows the Class Diagram for Essential Calculate.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-_Class Diagram for Essential Calculate_
+Class Diagram for Essential Calculate
+{:.caption}
 
 ## Create Platform Application
 
@@ -29,12 +30,15 @@ This section illustrates the step-by-step procedure to create the following plat
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-_New Project Dialog Box_
+New Project Dialog Box
+{:.caption}
 
 A new WPF application is created.
 
 2. Open the main form of the application in the designer.
+
 3. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already [This is done automatically when you install Essential Studio].
+
 4. Now you need to deploy Essential Calculate into this WPF application. Refer WPF topic for detailed information.
 
 For more information refer to the following topic. 
@@ -55,9 +59,9 @@ The following steps guide you to deploy Essential Calculate:
 
 1. Go to Solution Explorer of the application you have created-> right-click Reference folder and then click Add References. 
 2. Add the below mentioned assemblies as references in the application:
-1. Syncfusion.Core.dll
-2. Syncfusion.Compression.Base.dll
-3. Syncfusion.Calculate.Base.dll
+   I. Syncfusion.Core.dll
+   II. Syncfusion.Compression.Base.dll
+   III. Syncfusion.Calculate.Base.dll
 
 
 
@@ -65,10 +69,10 @@ The following steps guide you to deploy Essential Calculate:
 
 
 
-3. Then create a CalculateEngine. The CalcQuickBase class is used to create a CalculateEngine.
+3.Then create a CalculateEngine. The CalcQuickBase class is used to create a CalculateEngine.
 
 
-
+           {%highlight c#%}
 
 
 				// Create a new CalculateQuickBase. This object represents the CalculateEngine.
@@ -84,13 +88,15 @@ The following steps guide you to deploy Essential Calculate:
 				Dim cq As CalcQuickBase
 
 				cq = New CalcQuickBase()
+				
+			{%endhighlight%}
 
 
 
-4. Use the ParseAndCompute method to perform calculations by using the CalculateEngine.
+4.Use the ParseAndCompute method to perform calculations by using the CalculateEngine.
 
 
-
+   {%highlight c#%}
 
 
 
@@ -110,9 +116,9 @@ The following steps guide you to deploy Essential Calculate:
 
 				Dim value As String = cq.ParseAndCompute(formula)
 
+      {%endhighlight%}
 
-
-5. You can alsomodify the default behavior of the CalculateEngine by using the Engine property. 
+5.You can alsomodify the default behavior of the CalculateEngine by using the Engine property. 
 
          
 
@@ -120,7 +126,7 @@ The following steps guide you to deploy Essential Calculate:
 
 
 
-
+         {%highlight c#%}
 
 					// Strings concatenated by using the ampersand operator is returned without quotation marks.
 
@@ -135,7 +141,7 @@ The following steps guide you to deploy Essential Calculate:
 					cq.Engine.UseNoAmpersandQuotes = True
 
 
-   {:.prettyprint}
+   {%endhighlight%}
 					
 N> Engine is a class that is defined as a "property" in Essential Calculate.
 
@@ -188,7 +194,8 @@ The step-by-step procedure to create a simple console application is as follows:
 
    ![](Getting-Started_images/Getting-Started_img3.png)
 
-   _Application Display_
+   Application Display
+   {:.caption}
 
 
 
@@ -197,7 +204,7 @@ The step-by-step procedure to create a simple console application is as follows:
 
 
 
-   ~~~ cs
+   {%highlight c#%}
  
 
 							using System;
@@ -260,8 +267,9 @@ The step-by-step procedure to create a simple console application is as follows:
 
 							}
 							
-   ~~~
-   {:.prettyprint}
+   
+   
+   
   
    
 							
@@ -319,16 +327,18 @@ The step-by-step procedure to create a simple console application is as follows:
 							' CalcQuickBaseTutorial
 
 							End Namespace 
+							
+				{%endhighlight%}
 
 							
 
-3. Once the code is entered, run the application by pressing F5. Then enter an expression such as 1+2 and press Enter. Enter additional algebraic combinations of constants and named functions from the Function Library like Sin, Cos, Sum and Pi. Press Enter without entering anything to terminate the program. Below is a typical display of this.
+3.Once the code is entered, run the application by pressing F5. Then enter an expression such as 1+2 and press Enter. Enter additional algebraic combinations of constants and named functions from the Function Library like Sin, Cos, Sum and Pi. Press Enter without entering anything to terminate the program. Below is a typical display of this.
 
 
 
    ![](Getting-Started_images/Getting-Started_img4.png)
 
-   {:.prettyprint}
+   
 
 ### WPF Application Using Variables and CalcQuickBase
 
@@ -342,7 +352,8 @@ In this section, you can learn how to create a WPF Application that allows you t
 
     ![](Getting-Started_images/Getting-Started_img5.png)
 
-     _Essential Calculate Reference Being Added to the Project_
+     Essential Calculate Reference Being Added to the Project
+	 {:.caption}
 
 
 
@@ -352,16 +363,17 @@ In this section, you can learn how to create a WPF Application that allows you t
 
     ![](Getting-Started_images/Getting-Started_img6.png)
 
-    _Form Showing Controls_
+    Form Showing Controls
+	{:.caption}
 
 
 
-3. Double-click the form in the designer to add a Form.Load event handler. Add the code which, is shown below to the project.
+3.Double-click the form in the designer to add a Form.Load event handler. Add the code which, is shown below to the project.
 
 
 
 
-   ~~~ cs
+   {%highlight c#%}
 
 						using Syncfusion.Calculate;
 
@@ -429,8 +441,10 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 						}
 
-   ~~~
-   {:.prettyprint}
+   {%endhighlight%}
+   
+   
+   {%highlight c#%}
    
 
 
@@ -505,20 +519,23 @@ In this section, you can learn how to create a WPF Application that allows you t
 						' Button2_Click
 
 						End Sub 
+						
+		{%endhighlight%}
 
 
 
-4. Run the sample by pressing F5. Then in the Name text box, enter Rate and in the Value text box, enter .07. Now press the Register button. Similarly, enter Amount in the Name text box, 15000 in the Value text box followed by pressing the Register button.
+4.Run the sample by pressing F5. Then in the Name text box, enter Rate and in the Value text box, enter .07. Now press the Register button. Similarly, enter Amount in the Name text box, 15000 in the Value text box followed by pressing the Register button.
 
 
 
      ![](Getting-Started_images/Getting-Started_img7.png)
 
-      _Form Showing Two Variables Registered and a Sample Calculation_
+     Form Showing Two Variables Registered and a Sample Calculation
+	 {:.caption}
 
 
 
-5. In the top text box, which is empty, enter the formula:  [Rate] * [Amount]. Press the Compute button. You can then see a screen similar to the one below.
+5.In the top text box, which is empty, enter the formula:  [Rate] * [Amount]. Press the Compute button. You can then see a screen similar to the one below.
 
     The computed product, 1050, is displayed next to the Compute button.
 
@@ -540,7 +557,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
-    _Essential Calculate Reference Being Added to the Project_
+   Essential Calculate Reference Being Added to the Project
+   {:.caption}
 
 2. As you drop the controls on the form, accept the default names so that you can copy and paste the code snippets later in this lesson. 
 3. The form has two buttons: the first is the Generate Data button and the second is the Set button. Drop a text box on the form and set its MultiLine property to True so that you can size it to occupy most of the form.  
@@ -550,7 +568,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
      ![](Getting-Started_images/Getting-Started_img9.png)
 
-     _Form with Controls Positioned_
+     Form with Controls Positioned
+	 {:.caption}
 
     You now have your basic form. Before leaving this form in the designer, double click both buttons to add the button handler code stubs to your Form1 code. You can add the code to these stubs later.
 
@@ -561,7 +580,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
      ![](Getting-Started_images/Getting-Started_img10.png)
 
 
-     _Adding a Class File to Your Project_
+     Adding a Class File to Your Project
+	 {:.caption}
 
 
 5. In the dialog that appears, name the class as ArrayCalcData.cs (or ArrayCalcData.vb depending upon the language you are using).
@@ -570,7 +590,9 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
      ![](Getting-Started_images/Getting-Started_img11.png)
 
-     _Naming the Class File_
+     Naming the Class File
+	 {:.caption}
+	 
 
 
 
@@ -932,7 +954,11 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
    ![](Getting-Started_images/Getting-Started_img12.png)
 
-    _Implementing the ICalcData Interface in C#_
+    Implementing the ICalcData Interface in C#
+	
+	{:.caption}
+	
+	
 
      Using Visual Studio 2003 with C#, add a colon after the class name in the class declaration and type ICalcData. Pressing the tab key adds the method stubs. Given below is a picture showing this technique.
 
@@ -940,7 +966,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
-     _implementing the ICalcData Interface in VB, Choosing the Interface_
+    implementing the ICalcData Interface in VB, Choosing the Interface
+	{:.caption}
 
 
 
@@ -950,7 +977,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
    ![](Getting-Started_images/Getting-Started_img14.png)
 
-    _Implementing the ICalcData Interface in VB, Adding the Members_
+    Implementing the ICalcData Interface in VB, Adding the Members
+	{:.caption}
 
 
 
@@ -1598,7 +1626,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
     ![](Getting-Started_images/Getting-Started_img15.png)
 
 
-     _Sample Display Showing Double Array, SumColumn and SumRow_
+     Sample Display Showing Double Array, SumColumn and SumRow
+	 {:.caption}
 
 
 14. The Set button allows you to set a particular value in the displayed data so you can see the effect of changing this value on the calculations in the last row and last column. Recall that your data store is mimicking an array of doubles, so it indexes from zero even though the ICalcData interface expects one-based indexing. The implementation code takes this into account. 
@@ -1701,4 +1730,5 @@ For rectangular business objects, implementing an ICalcData interface lets you u
     ![](Getting-Started_images/Getting-Started_img16.png)
 
 
-    _Sample Display After Setting 123 into Array Element (0, 0)_
+    Sample Display After Setting 123 into Array Element (0, 0)
+	{:.caption}

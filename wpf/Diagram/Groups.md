@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Groups
+title: Groups | Diagram | wpf | Syncfusion
 description: groups
 platform: wpf
 control: Diagram
@@ -17,7 +17,7 @@ The Group class is inherited from the Node class. Therefore all the node propert
 
 The following table lists the methods that are used for grouping.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ The following are the three ways to create a group in Essential Diagram WPF.
 * By using the Group Command
 * By using the Context Menu
 
-Grouping By Using Code Behind
+### Grouping By Using Code Behind
 
 The Group class enables to group nodes in Essential Diagram WPF. The AddChild method is used to add the elements to the group.
 
@@ -265,11 +265,12 @@ The following screenshot illustrates a group of two nodes created by using code 
 
 
 
-_Group of Two Nodes_
+Group of Two Nodes
+{:.caption}
 
 
 
-Grouping By Using the Group Command
+### Grouping By Using the Group Command
 
 The Group command is used to group two or more objects.
 
@@ -304,7 +305,8 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   _Selection of Objects to be Grouped_
+   Selection of Objects to be Grouped
+   {:.caption}
 
 
 
@@ -312,7 +314,8 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   _Selected Objects_
+   Selected Objects
+   {:.caption}
 
 2. Invoke the Group command. This creates a group.
 
@@ -324,7 +327,8 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   _Grouped Objects inside the Selection Rectangle_
+   Grouped Objects inside the Selection Rectangle
+   {:.caption}
 
    Grouping By Using the Context Menu
 
@@ -336,14 +340,15 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   _Grouping By Using the Context Menu_
+   Grouping By Using the Context Menu
+   {:.caption}
 
    N> The Group command is enabled only when two or more objects are selected.
 
-   See Also
+   {%seealso%}
 
    Multi-Select Nodes Refer Concepts and Features -> Nodes -> Node Resize -> Resize Single Node on Multiple Selection
-   {:.prettyprint}
+  {%endseealso%}
    
 ## Select Group
 
@@ -361,7 +366,8 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   _Outer Group Selected_
+   Outer Group Selected
+   {:.caption}
 
 2. Click again to select the inner group of which it is a part of.
 
@@ -371,7 +377,8 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   _Inner Group Selected_
+   Inner Group Selected
+   {:.caption}
 
 3. Finally, click again to select the child itself after all its groups have been traversed.
 
@@ -381,9 +388,10 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   _Selecting the Child Node Again_
-   {:.prettyprint}
+   Selecting the Child Node Again
+   {:.caption}
    
+
 ## Edit Group
 
 To edit a group, you have to make sure that the corresponding group is selected. The following features apply to the edits performed on an object.
@@ -396,7 +404,8 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-_Resizing a Group_
+ Resizing a Group 
+ {:.caption}
 
 * If an individual object is selected, then the edit operation will be performed on that particular object only. 
 
@@ -406,7 +415,8 @@ _Resizing a Group_
 
 
 
-_Resizing a Child Object_
+Resizing a Child Object
+{:.caption}
 
 Once a group is edited, the group's selection rectangle updates its area to fit the child objects.
 
@@ -416,18 +426,23 @@ Once a group is edited, the group's selection rectangle updates its area to fit 
 
 
 
-_Updated Selection Rectangle_
+Updated Selection Rectangle
+{:.caption}
 
-See Also
+{%seealso%}
 
 * Node Resize Refer Concepts and Features -> Nodes -> Node Resize
 * Node Rotate Refer Concepts and Features -> Nodes -> Node Rotate
+
+{%endseealso%}
+
+
 ## Connecting Groups
 
 
 Grouping enables to connect to groups as well as to individual objects in a group. This section illustrates how to create connections to a group and its child objects.
 
-Creating Connections to a Group
+### Creating Connections to a Group
 
 The following steps illustrate how to create connections to a group.
 
@@ -442,7 +457,8 @@ The following steps illustrate how to create connections to a group.
 
 
 
-   _Creating Connection to a Group_
+   Creating Connection to a Group
+   {:.caption}
 
 3. Release the mouse button at that point to connect to the group's boundary.
 
@@ -452,8 +468,8 @@ The following steps illustrate how to create connections to a group.
 
 
 
-   _Connection Created to the Group_
-   {:.prettyprint}
+   Connection Created to the Group
+   {:.caption}
    
 ### Creating Connections to a Objects in a Group
 
@@ -470,7 +486,8 @@ The following steps illustrate how to create connections to individual objects i
 
 
 
-   _Creating Connection to a Child Object_
+   Creating Connection to a Child Object
+   {:.caption}
  
 3. Release the mouse button at that point to connect to the node's boundary.
 
@@ -480,14 +497,15 @@ The following steps illustrate how to create connections to individual objects i
 
 
 
-   _Connection Created to the Child Object_
+   Connection Created to the Child Object
+   {:.caption}
 
    N> Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other.
 
-   See Also
+   {%seealso%}
 
    Create Line Connectors Refer Concepts and Features -> Line Connector -> Create Line Connector
-   {:.prettyprint}
+  {%endseealso%}
 
 ## Ungroup
 
@@ -701,7 +719,8 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   _Selecting a Group_
+   Selecting a Group
+   {:.caption}
 
 2. Invoke the Ungroup command. This ungroups the nodes.
 
@@ -713,7 +732,8 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   _Objects Ungrouped_
+   Objects Ungrouped
+   {:.caption}
 
    By Using the Context Menu
 
@@ -725,11 +745,12 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   _Ungrouping By Using the Context Menu_
+   Ungrouping By Using the Context Menu
+   {:.caption}
 
    N> The Ungroup command is enabled only when two or more objects are selected.
 
-   {:.prettyprint}
+   
    
 ## Layers
 
@@ -744,7 +765,7 @@ The following topics are explained subsequently,
 * Active Layer
 * Hiding a Layer
 
-_Methods Table_
+
 
 <table>
 <tr>
@@ -771,14 +792,11 @@ N/A</td></tr>
 </table>
 
 
-Creating a Layer 
+### Creating a Layer 
 
 The following code example illustrates the creation of a layer with two Nodes and one LineConnector added.
 
 {% highlight c#  %}
-
-
-
 
 
 Node n1 = new Node();
@@ -886,7 +904,7 @@ Lan1.Background = Brushes.Transparent
 
 
 
-Adding the Layer to a Model
+### Adding the Layer to a Model
 
 The following code example illustrates the addition of a layer to a model.
 
@@ -1008,7 +1026,7 @@ diagramModel.Layers.Add(Lan1)
 
 ## Hidden or Active Layer
 
-Active Layer
+#### Active Layer
 
 When a new Node or LineConnector is dropped from SymbolPalette into the DiagramPage, it will be added into all the active layers automatically. A layer can be activated or deactivated as shown in following code snippet.
 
@@ -1129,7 +1147,7 @@ Lan1.Active = False
 
 {% endhighlight   %}
 
-Hiding a Layer
+### Hiding a Layer
 
 The following code example illustrates hiding a layer. When a layer is hidden all the nodes and connectors belonging to this layer will be hidden.
 
@@ -1256,7 +1274,8 @@ Lan1.Visible = False
 
 
 
-_Before hiding the layer_
+Before hiding the layer
+{:.caption}
 
 
 
@@ -1264,5 +1283,6 @@ _Before hiding the layer_
 
 
 
-_After hiding the layer_
+After hiding the layer
+{:.caption}
 

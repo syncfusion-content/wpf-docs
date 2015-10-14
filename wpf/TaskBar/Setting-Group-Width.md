@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Group-Width
+title: Setting Group Width | TaskBar | wpf | Syncfusion
 description: setting group width
 platform: wpf
 control: TaskBar
@@ -13,7 +13,7 @@ The width of the TaskBar is customized by using the GroupWidth property. This is
 
 The following code snippet illustrates how to set the group width.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -151,7 +151,7 @@ taskBar.GroupWidth = 150;
 
 this.Content = taskBar; 
 {% endhighlight %}
-
+{%endtabs%}
 
 ![](Setting-Group-Width_images/Setting-Group-Width_img1.jpeg)
 
@@ -159,7 +159,9 @@ this.Content = taskBar;
 
 
 
-See Also
+{%seealso%}
 
 Group Margin for the TaskBar
+
+{%endseealso%}
 

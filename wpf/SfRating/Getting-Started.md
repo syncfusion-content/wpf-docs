@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfRating | wpf | Syncfusion
 description: getting started
 platform: wpf
-control: Rating
+control: SfRating
 documentation: ug
 ---
 
@@ -14,7 +14,7 @@ documentation: ug
 
 The following code sample shows how to create the rating from code-behind and XAML:
 
-
+{%tabs%}
 {%highlight xml%}
 
 
@@ -43,5 +43,5 @@ The following code sample shows how to create the rating from code-behind and XA
 SfRating rating = new SfRating();
 
 {%endhighlight%}
-
+{%endtabs%}
 

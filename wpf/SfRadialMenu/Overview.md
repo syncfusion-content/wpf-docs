@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfRadialMenu  | wpf | Syncfusion
 description: overview  
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 

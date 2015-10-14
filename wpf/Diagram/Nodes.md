@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes
+title: Nodes | Diagram | wpf | Syncfusion
 description: nodes
 platform: wpf
 control: Diagram
@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects that can be placed on the page. It is usually used to represent visual data to be placed on the page.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -332,7 +332,7 @@ No</td></tr>
 </table>
 
 
-_Methods Table_
+
 
 <table>
 <tr>
@@ -351,8 +351,7 @@ To add a port to the node</td><td>
 Create Connection Port</td></tr>
 </table>
 
-
-See Also
+{%seealso%}
 
 
 
@@ -364,7 +363,7 @@ See Also
 * Customize the label of Nodes and LineConnectors Refer Concepts and Features -> General -> Customize the label of Nodes and LineConnectors
 * Customize the ContextMenu of Nodes and LineConnectors Refer Concepts and Features -> General -> Customize the contextMenu of Nodes and LineConnectors
 
-
+{%endseealso%}
 
 ## Create Node
 
@@ -389,7 +388,9 @@ Steps for adding a node to the diagram using the SymbolPalette.
 
 
 
-_Item Selected_
+Item Selected
+
+{:.caption}
 
 * While pressing the left mouse button, drag the pointer to the drawing area.
 
@@ -399,7 +400,8 @@ _Item Selected_
 
 
 
-_Item Dragged_
+Item Dragged
+{:.caption}
 
 * Now release the mouse button. The desired node is now on the drawing area at the point where the pointer was released.
 
@@ -409,7 +411,9 @@ _Item Dragged_
 
 
 
-_Item Dropped_
+Item Dropped
+{:.caption}
+
 
 ### Adding Through XAML
 
@@ -544,7 +548,6 @@ N> If name is not specified for a node, a unique name will be automatically assi
 
 Node’s Shapes are collection of predefined geometry used to represent as Node’s style. Node Shape visually lies between Node’s Content and Node’s Background.
 
-_Property Table_
 
 <table>
 <tr>
@@ -607,7 +610,8 @@ The following is a list of built-in shapes.
 
 
 
-_Built-in Shapes_
+Built-in Shapes
+{:.caption}
 
 
 
@@ -615,7 +619,8 @@ _Built-in Shapes_
 
 
 
-_More Built-In Shapes_
+More Built-In Shapes
+{:.caption}
 
 ### Customize the appearance of the pre-defined Shape
 
@@ -752,7 +757,8 @@ diagramModel.Nodes.Add(n)
 
 
 
-_CustomNode_
+CustomNode
+{:.caption}
 
 ## Node Content
 
@@ -760,7 +766,7 @@ Node is used to visually represent any UIElements using Content property. You ca
 
 N> A Node can have both Content and Shape at the same time, doing so Content will be placed over the Shape.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -881,7 +887,9 @@ TryCast(n.Content, Button).IsHitTestVisible = True
 
 
 
-_NodeContent_
+NodeContent
+
+{:.caption}
 
 ### Business-Object Content with ContentTemplate
 
@@ -1020,13 +1028,14 @@ Specify ContentTemplate for node.
 
 
 
-_Node’s Content having Business Object with ContentTemplate_
+Node’s Content having Business Object with ContentTemplate
+
+{:.caption}
 
 ## Node Position
 
 The node's location on the drawing area can be manually specified using the node's OffsetX and OffsetY properties.
 
-_Property Table_
 
 <table>
 <tr>
@@ -1194,7 +1203,7 @@ nodeobject.AllowMove = False
 
 A node can be rotated to any angle by dragging the rotate thumb. A node always rotates on its center.
 
-_Property Table_ 
+
 
 <table>
 <tr>
@@ -1227,7 +1236,8 @@ The steps to rotate a node are as follows.
 
 
 
-_Node Rotation_
+Node Rotation
+{:.caption}
 
 
 
@@ -1262,7 +1272,7 @@ Rotation through Codebehind
 
 Rotate angle property enables the rotation of the selected object with a specified angle. It enables the support to rotate all the selected Nodes.
 
-_Property Table_ 
+
 
 <table>
 <tr>
@@ -1286,11 +1296,12 @@ No</td></tr>
 
 
 
-![C:/Users/ramyathirugnanam/Desktop/Node Rotation.PNG](Nodes_images/Nodes_img10.png)
+![](Nodes_images/Nodes_img10.png)
 
 
 
-_RotateAngle with 60 degree_
+RotateAngle with 60 degree
+{:.caption}
 
 After rotating the Group
 
@@ -1300,13 +1311,14 @@ After rotating the Group
 
 
 
-_RotateAngle with 180 degree_
+RotateAngle with 180 degree
+{:.caption}
 
 ## Node Resize
 
 Nodes can be resized to desired Width and Height by click and dragging the Resizer, based on the content alignment setting. The node’s content will also be resized accordingly. Resizing is supported in eight directions.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1340,7 +1352,8 @@ Resizing a node affects the node's width and height. To resize a node, follow th
 
 
 
-_Node Resizing Illustrated_
+Node Resizing Illustrated
+{:.caption}
 
 
 
@@ -1452,13 +1465,15 @@ diagramPage.EnableResizingCurrentNodeOnMultipleSelection = True
 
 
 
-_Resizing Single Node_
+Resizing Single Node
+
+{:.caption}
 
 ## Node Label
 
 Label is a single line or multiline text that is displayed over the Node. This Label is used to textually represent a Node with a string that can be edited in run time, there are many properties used to change the alignment and appearance settings. Label can be represented as multiline text using the TextWrapping property.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1652,7 +1667,9 @@ diagramModel.Nodes.Add(n)
 
 
 
-_Label_
+Label
+
+{:.caption}
 
 Label Editing
 
@@ -1696,11 +1713,15 @@ A user can specify a label at run time by following the below mentioned steps.
 
 
 
-_LabelEditor_
+LabelEditor
+{:.caption}
 
-See Also:
+{%seealso%}
 
 Customize the Label of Nodes and Line Connectors Refer Concepts and Features -> General -> Customize the Label of Node and LineConnectors 
+
+{%endseealso%}
+
 
 Multiline label 
 
@@ -1753,7 +1774,8 @@ n.IsLabelEditable = True
 
 
 
-_Multi line label_
+Multi line label
+{:.caption}
 
 Label Visibility
 
@@ -1839,7 +1861,8 @@ This will place the label at the center of the node.
 
 
 
-_LabelAlignment_
+LabelAlignment
+{:.caption}
 
 
 
@@ -1890,7 +1913,8 @@ n.Label = 45
 
 
 
-_LabelAngle_
+LabelAngle
+{:.caption}
 
 Multiline Label Support for LabelEditor:
 
@@ -1955,13 +1979,13 @@ diagramModel.Nodes.Add(node1)
 
 
 
-_MultilineLabel for Node_
+MultilineLabel for Node
+{:.caption}
 
 Custom Label Support for Node
 
 This feature enables you to customize the Label Position of the Nodes. The IsLabelDragable and LabelDisplacement property is used to customize the Label position of the node. LabelDisplacement property depends on LabelHorizontalAlignment and LabelVerticalAlignment.
 
-_Properties Table_
 
 <table>
 <tr>
@@ -2020,7 +2044,7 @@ The Label can be dragged from the Node at runtime, if this property is set to tr
 
 Gripper is a small rectangle which appears near the top-left corner of the node. It facilitates the node drag operation. You can drag a node by clicking and dragging the gripper. This gripper will be useful when a content of a node is specified. If this content’s IsHitTestVisible property is True clicking and dragging the node will be difficult or even impossible because all mouse operations will be handled by the Node’s Content. In this scenario Gripper will be very helpful to drag the node in the page.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2080,7 +2104,8 @@ diagramModel.Nodes.Add(n)
 
 
 
-_Gripper for Nodes_
+Gripper for Nodes
+{:.caption}
 
 
 
@@ -2162,13 +2187,13 @@ diagramModel.Nodes.Add(node)
 
 
 
-_Customized Gripper_
+Customized Gripper
+{:.caption}
 
 ## Node Selection
 
 A selected node is indicated using a rectangular resizer over the node’s border. Many interactions using keyboard, mouse commands will affect the elements that is currently selected. 
 
-_Property Table_
 
 <table>
 <tr>
@@ -2208,7 +2233,8 @@ Node can be selected at run time just by clicking on the node.
 
 
 
-_Node before selecion_
+Node before selecion
+{:.caption}
 
 
 
@@ -2216,7 +2242,8 @@ _Node before selecion_
 
 
 
-_Node after selecion_
+Node after selecion
+{:.caption}
 
 
 
@@ -2278,7 +2305,8 @@ Items can be deselected by clicking on any part of the drawing area other than t
 
 
 
-_Multiple Selections_
+Multiple Selections
+{:.caption}
 
 
 
@@ -2311,9 +2339,13 @@ nodeobject.AllowSelect = False
 
 
 {% endhighlight  %}
-See Also:
+
+
+{%seealso%}
 
 Select Nodes and Connectors Refer Concepts and Features -> General -> Select Nodes and Connectors
+
+{%endseealso%}
 
 ## Select and Move Nodes
 
@@ -2329,7 +2361,6 @@ This feature enables the user to delete the node without deleting its dependent 
 
 Properties
 
-_Deleting Nodes_
 
 <table>
 <tr>
@@ -2452,7 +2483,6 @@ While dragging the node in the diagram page, the user can customize the movement
 
 Properties
 
-_Customization of Node Movement_
 
 <table>
 <tr>
@@ -2860,13 +2890,14 @@ Following is a sample screenshot of customized resizer that has only four corner
 
 
 
-_Custom Style_
+Custom Style
+{:.caption}
 
 Tables for Properties, Methods, and Events
 
 Properties
 
-_ResizeHandler Property/ies Table_
+
 
 <table>
 <tr>
@@ -2949,7 +2980,7 @@ To view sample,
 
 The Edges properties for Node are used to retrieve the collection of incoming and outgoing connections for Node.
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -3020,7 +3051,7 @@ CollectionExt ext = node.OutEdges;
 
 The Degree properties for Node are used to retrieve the count of incoming and outgoing edges for Node. 
 
-_Properties Table_ 
+
 
 <table>
 <tr>
@@ -3090,7 +3121,7 @@ int outdegree = node4.OutDegree;
 
 The Neighbors properties for Node are used to retrieve the collection of all of the nodes connected to the specified Node. 
 
-_Properties Table_ 
+
 
 <table>
 <tr>
@@ -3162,11 +3193,12 @@ Essential Diagram for WPF provides layout representation for nodes. Numerous nod
 
 
 
-_Node Layout_
+Node Layout
+{:.caption}
 
 Properties:
 
-_Properties Table_
+
 
 <table>
 <tr>

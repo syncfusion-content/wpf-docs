@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ToolTip
+title: ToolTip | SfRadialMenu  | wpf | Syncfusion
 description: tooltip 
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 

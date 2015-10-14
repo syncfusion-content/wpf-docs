@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Number-of-Items
+title: Number of Items | SfRating | wpf | Syncfusion
 description: number of items
 platform: wpf
-control: Rating
+control: SfRating
 documentation: ug
 ---
 

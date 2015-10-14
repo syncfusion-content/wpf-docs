@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TaskBar | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: TaskBar
@@ -62,7 +62,7 @@ To create the TaskBar control through designer, do the following steps:
 
 TaskBar control is created by using either XAML or C# code. The following lines of code can be used to create a TaskBar control.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -88,6 +88,8 @@ TaskBar taskBar = new TaskBar();
 
 this.Content = taskBar; 
 {% endhighlight %}
+
+{%endtabs%}
 
 
 N> To display the TaskBar by using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
