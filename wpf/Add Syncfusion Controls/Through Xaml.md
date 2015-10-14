@@ -1,10 +1,10 @@
 ## Through XAML
 
-The following steps will helps to add a required Essential WPF Control (For example__:__ DockingManager) through XAML Code
+The following steps help you add a required Essential WPF Control through XAML Code, like DockingManager.
 
 1. Create a WPF project in Visual Studio and refer the following assemblies.
-* Syncfusion.Tools.Wpf
-* Syncfusion.Shared.Wpf
+  * Syncfusion.Tools.Wpf
+  * Syncfusion.Shared.Wpf
 2. Include an xml namespace for the above assemblies to the Main window.
 {% highlight xml %}
 
