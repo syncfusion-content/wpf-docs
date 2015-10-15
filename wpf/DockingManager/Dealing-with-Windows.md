@@ -246,7 +246,7 @@ syncfusion:DockingManager.DockAbility="Horizontal">
 
 
 
-{%highlight xml}
+{%highlight xml %}
 
 <syncfusion:DockingManager >
 
@@ -703,7 +703,7 @@ To collapse the default context menu in Document state window, set the property 
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="DockWindow" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.CollapseDefaultContextMenuItemsInDocumentTab="True" > 
 
-{% endhighlight}
+{% endhighlight%}
 To collapse the default context menu in Float state window, set the property **CollapseDefaultContextMenuInFloat** as **True**. By default, its value is **False**.
 
 {% highlight xml %}
