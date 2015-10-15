@@ -11,5 +11,5 @@ documentation: ug
 
 ## Gesture
 
-Gestures determines on which a finger or stylus to a drive over a control. The supported gestures of the WPF controls are Tap, Swipe, Pinch and Hold.
+Gesture determines which finger or stylus can be used to drive a control. The supported gestures of the WPF controls are Tap, Swipe, Pinch and Hold.
 
