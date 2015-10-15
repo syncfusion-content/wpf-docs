@@ -8,7 +8,7 @@ documentation: ug
 ---
 ## Apply Style to custom controls
 
-To apply the build in themes to your derived control using SfSkinManager, you have to set the **SetResourceReference** in the custom control. This is required to refer style property of the derived control.
+To apply the built-in themes to your derived control using SfSkinManager, you have to set the **SetResourceReference** in the custom control. This is required to refer style property of the derived control.
 
 {% highlight xml %}
 
