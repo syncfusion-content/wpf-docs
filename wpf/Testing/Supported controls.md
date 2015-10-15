@@ -9,7 +9,7 @@ documentation: ug
 
 ### Supported controls
 
-The following controls are featured with CodedUI Testing support
+The following controls are featured in CodedUI Testing Support:
 
 <table>
 <tr>
