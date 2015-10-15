@@ -9,7 +9,7 @@ documentation: ug
 #System Requirement
 ## Framework
 
-Following frameworks are supported:
+The following frameworks are supported:
 
 * Microsoft .NET Framework 3.5
 * Microsoft .NET Framework 4.0
