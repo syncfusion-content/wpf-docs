@@ -72,7 +72,7 @@ IconHeight</td><td>
 Gets or sets the double value that represents that  legend icon(s) height.</td></tr>
 </table>
 
-The following code example shows how to create a simple legend. For sample data, refer to the data section in the code example of [Line Series](http://docs.syncfusion.com/winrt/sfchart/series#lineseries).
+The following code example shows how to create a simple legend. For sample data, refer to the data section in the code example of [Line Series](http://help.syncfusion.com/winrt/sfchart/series#lineseries).
 
 {% highlight xml %}
 
@@ -154,7 +154,7 @@ CheckBoxVisibility="Visible"/>
 
 The SfChart control supports showing the legend in multiple panels, to view the legend clearly when multiple areas and greater numbers of chart series are present. Also, you can place the legend inside or outside of the chart area. To have multiple legends in a single chart, an instance for ChartLegendCollection needs to be created.
 
-The following code example shows how to create multiple legends in a single chart. For sample data, please refer to the data section in the code sample of [Line Series.](http://docs.syncfusion.com/wpf/sfchart/series#lineseries)
+The following code example shows how to create multiple legends in a single chart. For sample data, please refer to the data section in the code sample of [Line Series.](http://help.syncfusion.com/wpf/sfchart/series#lineseries)
 
 {% tabs %}
 {% highlight xml %}

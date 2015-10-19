@@ -110,7 +110,7 @@ The following screenshot demonstrates series with CustomPalette.
 
 ###None Palette
 
-This palette sets the transparent color to the series. You can identify the series existence with the help of [legends](http://docs.syncfusion.com/winrt/sfchart/legend) or [adornments](http://docs.syncfusion.com/wpf/sfchart/adornments).
+This palette sets the transparent color to the series. You can identify the series existence with the help of [legends](http://help.syncfusion.com/winrt/sfchart/legend) or [adornments](http://help.syncfusion.com/wpf/sfchart/adornments).
 
 ###Applying predefined Palette for each segment
 
@@ -274,17 +274,17 @@ SfChart provides you with the option to customize the legends depending on the a
 
 You can use the CustomTemplate property to customize the series of the SfChart. This support is available for the following series:
 
-* [LineSeries](http://docs.syncfusion.com/wpf/sfchart/series#lineseries)
-* [BubbleSeries](http://docs.syncfusion.com/wpf/sfchart/series#bubbleseries)
-* [ScatterSeries](http://docs.syncfusion.com/wpf/sfchart/series#scatterseries)
-* [ColumnSeries](http://docs.syncfusion.com/wpf/sfchart/series#columnseries)
-* [BarSeries](http://docs.syncfusion.com/wpf/sfchart/series#barseries)
-* [SplineSeries](http://docs.syncfusion.com/wpf/sfchart/series#splineseries)
-* [StepLineSeries](http://docs.syncfusion.com/wpf/sfchart/series#steplineseries)
-* [StackingColumnSeries](http://docs.syncfusion.com/wpf/sfchart/series#stackingcolumnseries)
-* [StackingBarSeries](http://docs.syncfusion.com/wpf/sfchart/series#stackingbarseries)
-* [Stackingcolumn100Series](http://docs.syncfusion.com/wpf/sfchart/series#stackingcolumn100series)
-* [StackingBar100Series](http://docs.syncfusion.com/wpf/sfchart/series#stackingbar100series)
+* [LineSeries](http://help.syncfusion.com/wpf/sfchart/series#lineseries)
+* [BubbleSeries](http://help.syncfusion.com/wpf/sfchart/series#bubbleseries)
+* [ScatterSeries](http://help.syncfusion.com/wpf/sfchart/series#scatterseries)
+* [ColumnSeries](http://help.syncfusion.com/wpf/sfchart/series#columnseries)
+* [BarSeries](http://help.syncfusion.com/wpf/sfchart/series#barseries)
+* [SplineSeries](http://help.syncfusion.com/wpf/sfchart/series#splineseries)
+* [StepLineSeries](http://help.syncfusion.com/wpf/sfchart/series#steplineseries)
+* [StackingColumnSeries](http://help.syncfusion.com/wpf/sfchart/series#stackingcolumnseries)
+* [StackingBarSeries](http://help.syncfusion.com/wpf/sfchart/series#stackingbarseries)
+* [Stackingcolumn100Series](http://help.syncfusion.com/wpf/sfchart/series#stackingcolumn100series)
+* [StackingBar100Series](http://help.syncfusion.com/wpf/sfchart/series#stackingbar100series)
 
 
 

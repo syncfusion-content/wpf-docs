@@ -162,7 +162,7 @@ Await workbook.SaveAsAsync(storageFile)
 {% endhighlight %}
 {% endtabs %}
 
-For more information on overloads of the Workbook's Save method, refer to Class Reference in the top right of the online [documentation](http://docs.syncfusion.com/windowsforms/xlsio).
+For more information on overloads of the Workbook's Save method, refer to Class Reference in the top right of the online [documentation](http://help.syncfusion.com/windowsforms/xlsio).
 
 ## Save Workbook as a Stream 
 

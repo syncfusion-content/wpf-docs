@@ -16,7 +16,7 @@ Formulas are entries in Excel document that have an equation, which calculates t
 Spreadsheet control supports various built-in functions that make large calculations in large sheets easier.
 
 Spreadsheet control supports all the formulas that are supported by the Grid control. For more details about the 
-supported formula refer to [Grid Control UG](http://docs.syncfusion.com/wpf/grid).
+supported formula refer to [Grid Control UG](http://help.syncfusion.com/wpf/grid).
 
 ## Data Validation
 

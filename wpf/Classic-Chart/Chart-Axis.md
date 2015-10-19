@@ -2008,7 +2008,7 @@ AdjustAcrossChartType - The segment starts from 1st axis and the constant behavi
 
 A sample for placing axis label and series segment in between Ticklines  is placed in the following location
 
-[http://svn.syncfusion.com/svn/studio/Source/trunk/WPF/Chart.WPF/Samples/3.5/WindowsSamples/ChartAxis ValueTypes/Logarithmic](http://svn.syncfusion.com/svn/studio/Source/trunk/WPF/Chart.WPF/Samples/3.5/WindowsSamples/ChartAxis) ValueType Demo
+[http://svn.syncfusion.com/svn/studio/Source/trunk/WPF/Chart.WPF/Samples/3.5/WindowsSamples/ChartAxis ValueTypes/Logarithmic](http://svn.syncfusion.com/svn/studio/Source/trunk/WPF/Chart.WPF/Samples/Chart%20Axis/) ValueType Demo
 
 Adding Segment Position to an Application 
 

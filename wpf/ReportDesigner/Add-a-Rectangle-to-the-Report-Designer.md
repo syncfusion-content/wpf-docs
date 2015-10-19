@@ -11,17 +11,17 @@ documentation: ug
 
 To add a rectangle to the Syncfusion Report Designer, select Rectangle from the Insert tab and drag it to the Report Designer. A rectangle appears on the Report Designer.
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-33.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img1.png)
+![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img1.png)
 
 
 
-##Applying Styles to the Rectangle
+## Applying Styles to the Rectangle
 
 To apply styles to the rectangle:
 
 1.Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-53.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)
+  ![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)
 
 
 
@@ -33,7 +33,7 @@ To apply styles to the rectangle:
 
 
 
-Note: You can also apply styles to the rectangle through the Properties grid. To open this grid, click the added rectangle.
+  N> You can also apply styles to the rectangle through the Properties grid. To open this grid, click the added rectangle.
 
 
 
@@ -41,17 +41,17 @@ The following illustration shows the rectangle styled by the properties grid.
 
 
 
-   ![C:/Users/radhas/Desktop/DesignerDocument/sshot-34.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)
+   ![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)
 
 
 
-###Adding Report Items to the Rectangle
+### Adding Report Items to the Rectangle
 
 To add report items such as text boxes, lines, and images, to the rectangle, drag the selected report items to the rectangle.
 
 
 
-   ![C:/Users/radhas/Desktop/DesignerDocument/sshot-35.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)
+   ![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)
 
 
 

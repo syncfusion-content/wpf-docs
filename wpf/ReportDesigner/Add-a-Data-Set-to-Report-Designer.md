@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-a-Data-Set-to-Report-Designer
+title: Add-a-Data-Set-to-Report-Designer | ReportDesigner | wpf | Syncfusion
 description: add a data set to report designer
 platform: wpf
 control: Report Designer
@@ -13,14 +13,14 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 1.Right click the added data source (Adventure) and click Add DataSet.
 
-   ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig13.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img1.png)
+   ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img1.png)
 
 
 
-Note: You can also open the Data Set Properties dialog by clicking New > Data Set.
+   N> You can also open the Data Set Properties dialog by clicking New > Data Set.
 
 
-   ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig14.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img2.png)
+   ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img2.png)
 
 
 
@@ -28,7 +28,7 @@ Note: You can also open the Data Set Properties dialog by clicking New > Data Se
 
 
 
-   ![C:/Users/radhas/Desktop/DesignerDocument/sshot-6.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img3.png)
+   ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img3.png)
 
 
 
@@ -36,7 +36,7 @@ Note: You can also open the Data Set Properties dialog by clicking New > Data Se
 
 
 
-   ![C:/Users/radhas/Desktop/ScreenShot/sshot-5.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img4.png)
+   ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img4.png)
 
 
 
@@ -44,7 +44,7 @@ Note: You can also open the Data Set Properties dialog by clicking New > Data Se
 
 
 
-   ![C:/Users/radhas/Desktop/ScreenShot/sshot-6.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img5.png)
+   ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img5.png)
 
 
 
@@ -56,10 +56,10 @@ Note: You can also open the Data Set Properties dialog by clicking New > Data Se
 
 
 
-Note: Now, the added data fields appears under the data set.
+   N> Now, the added data fields appears under the data set.
 
 
-![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig19.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img7.png)
+   ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img7.png)
 
 
 

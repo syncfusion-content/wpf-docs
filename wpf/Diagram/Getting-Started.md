@@ -2852,7 +2852,7 @@ The following code illustrates how to generate the BowTie layout:
 
 Layout Spacing
 
-Spacing between the nodes with respect to different levels and siblings are adjustable. This will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in [Layout Spacing](http://docs.syncfusion.com/silverlight/diagram/diagram-model#layout) under DiagramModel.
+Spacing between the nodes with respect to different levels and siblings are adjustable. This will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in [Layout Spacing](http://help.syncfusion.com/silverlight/diagram/diagram-model#layout) under DiagramModel.
 
 Refresh Layout
 
