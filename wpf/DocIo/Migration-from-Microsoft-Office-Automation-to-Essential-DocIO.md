@@ -103,7 +103,7 @@ doc.Close()
 {% endtabs %}
 
 
-N> For more information on mail merge using DocIO, you can refer to online documentation link: <http://help.syncfusion.com/windowsforms/docio/mail-merge#mail-merge-1>
+N> For more information on mail merge using DocIO, you can refer to online documentation link: <http://help.syncfusion.com/FileFormat/DocIO/MailMerge#mail-merge-1>
  
 
 ### Find and Replace
@@ -198,7 +198,7 @@ doc.Save("Find And Replace.doc")
 
 
 
-N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: <http://help.syncfusion.com/windowsforms/docio/find-and-replace>
+N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: <http://help.syncfusion.com/FileFormat/DocIO/Find%20and%20Replace>
 
 
 
@@ -305,7 +305,7 @@ doc.Close()
 {% endtabs %}
 
 
-N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link: <http://help.syncfusion.com/windowsforms/docio/working-with-bookmarks>
+N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link: <http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Bookmarks>
 
 ### Page Numbers
 
@@ -538,7 +538,7 @@ doc.Close()
 
 
 N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link: 
-<http://help.syncfusion.com/windowsforms/docio/working-with-word-documents#working-with-watermarks>
+<http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Word%20document#working-with-watermarks>
 
 ### Header or Footer
 
@@ -653,7 +653,7 @@ Dim para As WParagraph = New WParagraph(doc)  
 {% endhighlight   %}
 {% endtabs %}
 
-N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link: <http://help.syncfusion.com/windowsforms/docio/working-with-sections#working-with-headers-and-footers>
+N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link: <http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Sections#working-with-headers-and-footers>
 
 
 
@@ -823,7 +823,7 @@ doc.Save("TableDocIO.doc")
 {% endhighlight   %}
 {% endtabs %}
 
-N> For more information on creating tables using DocIO, refer to online documentation link: <http://help.syncfusion.com/windowsforms/docio/working-with-tables>
+N> For more information on creating tables using DocIO, refer to online documentation link: <http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Tables>
 
 Comments
 
@@ -985,7 +985,7 @@ doc.Save("CommentsRemovedDocIO.doc", FormatType.Doc)
 {% endtabs %}
 
 
-N> For more information on working with the comments using DocIO, you can refer to the online documentation link: <http://help.syncfusion.com/windowsforms/docio/working-with-paragraphs#comments>
+N> For more information on working with the comments using DocIO, you can refer to the online documentation link: <http://help.syncfusion.com/FileFormat/DocIO/Working%20with%20Paragraph#comments>
 
 
 ### Document Protection
