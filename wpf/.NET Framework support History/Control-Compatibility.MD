@@ -10,9 +10,9 @@ documentation: ug
 
 ## Control compatibility 
 
-Syncfusion WPF controls are always updated with the Microsoft latest Framework. The following table contains information about controls compatibility with earlier version of .NET Framework
+Syncfusion WPF controls are always updated with the Microsoft latest Framework. The following table contains information about the control's compatibility with the earlier version of .NET Framework
 
-_List of controls compatibility with earlier version of .NET Framework_
+_List of control's compatibility with the earlier version of .NET Framework_
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
-DATA   VISUALIZATION</td><td>
+DATA VISUALIZATION</td><td>
 Diagram</td><td>
 Yes</td><td>
 Yes</td><td>
