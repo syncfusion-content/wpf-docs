@@ -1,6 +1,6 @@
 # Themes
 
-SfSkinManager control helps to apply built in themes to Syncfusion UI controls for WPF. And the built in themes and its available assemblies are.
+SfSkinManager control helps to apply the built in themes to the Syncfusion UI controls for WPF. Refer to the following built in themes and its available assemblies.
 
 <table>
 <tr>
@@ -49,9 +49,9 @@ Syncfusion.Themes.Office2010Silver.Wpf.dll<br/><br/></td></tr>
 
 ### Add SfSkinManager to the Application
 
-There are [several ways](C:\Users\Selvaganapathy\Desktop\Need to redirect to Common section# "") to add Syncfusion SfSkinManager  in to Visual Studio WPF project, the following steps will helps to add through XAML Code
+There are [several ways](C:\Users\Selvaganapathy\Desktop\Need to redirect to Common section# "") to add the Syncfusion SfSkinManager in to Visual Studio WPF project. The following steps help to add the SfSkinManager through XAML Code
 
-1. Create a WPF project in Visual Studio and refer the SfSkinManager assembly (Syncfusion.SfSkinManager.Wpf)
+1. Create a WPF project in Visual Studio and refer to the SfSkinManager assembly (Syncfusion.SfSkinManager.Wpf)
 2. Include an xml namespace for the assembly to the Main window.
 
 {% highlight xml %}
@@ -72,11 +72,11 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 ### Add Themes to the Application
 
-Syncfusion UI controls for WPF supporting various visual styles stated above. Corresponding style resources are included with the specific theme assemblies.  To apply Visual Studio style “Syncfusion.Themes.VisualStudio2013.Wpf” will helps. Also refer the required theme assemblies with the project if needed. Now here we add “Syncfusion.Themes.VisualStudio2013.Wpf”
+Syncfusion UI controls for WPF supports various visual styles stated above. The corresponding style resources are included with the specific theme assemblies.  To apply Visual Studio style, use “Syncfusion.Themes.VisualStudio2013.Wpf”. Also, refer to the required theme assemblies with the project when needed. Here, the “Syncfusion.Themes.VisualStudio2013.Wpf” is added.
 
 ### Apply Visual Style to Controls
 
-Using the **VisualStyle** attached property of the SfSkinManager, We can apply any build it themes to the required control.  Now, apply the value as **VisualStudio2013** to Visual Style property of SfSkinManager for the Docking Manager control.
+By using the **VisualStyle** attached property of the **SfSkinManager**, you can apply any build in themes to the required control.  Now, apply the value as **VisualStudio2013** to the **Visual Style** property of the **SfSkinManager** for the Docking Manager control.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="VisualStudio2013">
@@ -104,7 +104,7 @@ Using the **VisualStyle** attached property of the SfSkinManager, We can apply a
 
 ### Apply themes at run time
 
-We can switch various build in themes at the runtime using the **VisualStyle** property. Here a ComboBox Control is used to switch various build in themes that are referred in assembly references.
+You can switch various build in themes at the runtime by using the **VisualStyle** property. Here, a ComboBox Control is used to switch various build in themes that are referred in the assembly references.
 
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
