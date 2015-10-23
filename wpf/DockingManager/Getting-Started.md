@@ -2,13 +2,13 @@
 
 ## Getting Started
 
-This section explains how to implement a similar UI as Visual Studio using Docking Manager. 
+This section explains how to implement a similar UI as Visual Studio by using the Docking Manager. 
 
-### Adding Docking Manager
+### Add Docking Manager
 
-There are [several ways](C:\Users\Selvaganapathy\Desktop\Need to redirect to Common section# "") to add Syncfusion control in to Visual Studio WPF project, the following steps will helps to add a Docking Manager control through XAML Code
+There are [several ways](C:\Users\Selvaganapathy\Desktop\Need to redirect to Common section# "") to add Syncfusion control in to the Visual Studio WPF project. The following steps help to add a Docking Manager control through XAML Code.
 
-* Create a WPF project in Visual Studio and refer the following assemblies.
+* Create a WPF project in Visual Studio and refer to the following assemblies.
 1. Syncfusion.Tools.Wpf
 2. Syncfusion.Shared.Wpf
 * Include an xml namespace for the above assemblies to the Main window.
@@ -26,7 +26,7 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 {% endhighlight %}
 
-* Now, Add the Docking Manager control with a required optimal name, using the included namespace.
+* Now, Add the Docking Manager control with a required optimal name by using the included namespace.
 {% highlight xml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" />
@@ -35,9 +35,9 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 {% endhighlight %}
 
-### Adding Children to the Docking Manager 
+### Add Children to the Docking Manager 
 
-Docking Manager can accept any control as its children. Here five content control added as children that further will be show with different Sides and States of Docking Manager
+Docking Manager can accept any control as its children. Here, five content control is added as the child that is displayed with different Sides and States of the Docking Manager.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager">
@@ -61,9 +61,9 @@ Docking Manager can accept any control as its children. Here five content contro
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
-### Setting Header for each child Window
+### Set Header for each child Window
 
-Docking Manger provides with an attached property called **Header** that can helps to set header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
+Docking Manger provides with an attached **Header** property that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" >
@@ -87,13 +87,13 @@ Docking Manger provides with an attached property called **Header** that can hel
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-### Setting States for each Child Window
+### Set States for each Child Window
 
-Docking Manager provides an attached property called **State** that will helps to set state of a child windows. Since **Dock** is the default value, so initially all children are stay in Docking Window.
+Docking Manager provides an attached **State** property that helps to set the state of a child windows. Since, **Dock** is the default value, initially all the children stay in the Docking Window.
 
-To make “ToolBox” window Auto hidden, set its **State** property as **AutoHidden****.** Repeat the same procedure with **State** value as **Float** and **Document** for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.****
+To Auto hide the “ToolBox” window, set its **State** property as **AutoHidden**. Repeat the same procedure with the **State** value as **Float** and **Document** for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
 
-Also need to enable Document Container for Document view by setting **UseDocumentContainer** property as **True**.
+Also, enable the Document Container for the Document view by setting the **UseDocumentContainer** property to **True**.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
@@ -117,13 +117,13 @@ Also need to enable Document Container for Document view by setting **UseDocumen
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
-### Setting Sides for children
+### Set Sides for the children
 
-Docking Manager provides an attached property called **SideInDockMode** that helps to dock a window at required side. Since **Left** is the default value**,** so initially all widows are docked in left side. 
+Docking Manager provides an attached **SideInDockMode** property that helps to dock a window at the required side. Since, **Left** is the default value, initially all the windows are docked in the left side. 
 
-Set **SideInDockMode** value as **Right** for “Solution Explorer” window to dock it on right side.
+Set the **SideInDockMode** value as **Right** for “Solution Explorer” window to dock it on the right side.
 
-Side property has **Tabbed** option that is used to tab a window on another widow. Also the windows about to tab should aware of target window’s name. So set “Output” window’s **TargetNameInDockedMode** as “SolutionExplorer” to Tab it on “SolutionExplorer” window.
+The **side** property has a **Tabbed** option used to tab a window on another window. The tabbing windows should be aware of the target window’s name. So, set “Output” window’s **TargetNameInDockedMode** as “SolutionExplorer” to Tab it on the “SolutionExplorer” window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
@@ -149,7 +149,7 @@ Side property has **Tabbed** option that is used to tab a window on another wido
 
 ### Save / Load
 
-The Persist State feature of the Docking Manager helps to save the current layout of the Docking Manager automatically, while closing the window. To enable the feature, set **PersistState** property as **True**
+The Persist State feature of the Docking Manager helps to save the current layout of the Docking Manager automatically, while closing the window. To enable this feature, set **PersistState** property to **True**
 
 {% highlight xml %}
 
@@ -171,7 +171,7 @@ The Persist State feature of the Docking Manager helps to save the current layou
 
 {% endhighlight %}
 
-The saved state can be reload by calling **LoadDockStated** method, whenever it required to load the states
+The saved state can be reload by calling the **LoadDockStated** method, whenever it is required to load the states.
 
 {% highlight c# %}
 
@@ -181,11 +181,11 @@ this.SyncDockingManager.LoadDockState();
 
 {% endhighlight %}
 
-### Setting Visual Styles
+### Set Visual Styles
 
-Docking Manager supporting various visual styles using [SfSkinManager](C:\Users\Selvaganapathy\Desktop\Navigate to SfSkinManager Documentation# ""). To apply Visual Studio style on current layout, following step will helps
+Docking Manager supports various visual styles by using the [SfSkinManager](C:\Users\Selvaganapathy\Desktop\Navigate to SfSkinManager Documentation# ""). To apply Visual Studio style on the current layout, refer to the following steps.
 
-* Refer the following assemblies with the project
+* Refer to the following assemblies with the project
 1. Syncfusion.SfSkinManager.Wpf
 2. Syncfusion.Thems.VisualStudio2013.Wpf
 
@@ -213,7 +213,7 @@ Title="MainWindow" Height="350" Width="525" />
 
 {% endhighlight %}
 
-* Now, apply the value as **VisualStudio2013** to Visual Style property of SfSkinManager for the Docking Manager control.
+* Now, apply the value as **VisualStudio2013** to the Visual Style property of the SfSkinManager for the Docking Manager control.
 
 {% highlight xml %}
 
