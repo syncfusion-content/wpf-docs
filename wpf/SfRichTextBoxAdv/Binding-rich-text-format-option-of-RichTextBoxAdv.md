@@ -7,14 +7,14 @@ control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Binding rich text format option of RichTextBoxAdv 
+# Bind rich text format option of the RichTextBoxAdv 
 
-The RichTextBoxAdv provides support to bind the rich-text format options of selection content. The following rich-text formats binding are supported by RichTextBoxAdv control: 
+The **RichTextBoxAdv** provides support to bind the rich-text format options of the selected content. The following rich-text format binding are supported by the **RichTextBoxAdv** control: 
 
-* CharacterFormat-bold, italic, font size, font family, font color, highlight color, underline, strikethrough, subscript, and superscript.
-* ParagraphFormat-before and after spacing, first line, left and right indenting, text justification, line spacing, and multilevel list.
+* CharacterFormat - bold, italic, font size, font family, font color, highlight color, underline, strikethrough, subscript, and superscript.
+* ParagraphFormat - before and after spacing, first line, left and right indenting, text justification, line spacing, and multilevel list.
 
-The following code sample demonstrates how to bind the bold format option of RichTextBoxAdv. 
+The following code example demonstrates how to bind the bold format option of the **RichTextBoxAdv**. 
 
 {% highlight html %}
 
@@ -25,11 +25,11 @@ The following code sample demonstrates how to bind the bold format option of Ric
 
 {% highlight c# %}
 
-//Initializes the new binding for toggle bold.
+//Initializes the new binding for the toggle bold.
 
 Binding binding = new Binding(){ Source = richTextBoxAdv, Path = new PropertyPath("Selection.CharacterFormat.Bold"), Mode = BindingMode.TwoWay };
 
-//Binds the IsChecked property to Selection.CharacterFormat.Bold property of RichTextBoxAdv.
+//Binds the IsChecked property to Selection.CharacterFormat.Bold property of the RichTextBoxAdv.
 
 toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);
 

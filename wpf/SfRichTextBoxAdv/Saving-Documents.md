@@ -6,9 +6,9 @@ platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
-### Saving Documents
+### Save Documents
 
-The **RichTextBoxAdv** control supports saving rich-text content to rich-text format (.rtf) files, Word documents (.doc, .docx), Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt). The following code example demonstrates how to save the contents of the **RichTextBoxAdv** control.
+The **RichTextBoxAdv** control supports to save rich-text content to rich-text format (.rtf) files, Word documents (.doc, .docx), Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt). The following code example demonstrates how to save the contents of the **RichTextBoxAdv** control.
 
 {% highlight c# %}
 //Initializes the new SfRichTextBoxAdv control.
@@ -53,15 +53,15 @@ Saves the content of the **RichTextBoxAdv** control as rich-text format (.rtf) f
 <th>
 Save(Stream stream, FormatType formatType)<br/><br/></th><th>
 void<br/><br/></th><th>
-Saves the content of **RichTextBoxAdv** as rich-text format (.rtf) files, Word documents (.doc, .docx) , Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt) into a Stream in synchronous mode.<br/><br/></th></tr>
+Saves the content of the **RichTextBoxAdv** as rich-text format (.rtf) files, Word documents (.doc, .docx) , Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt) into a Stream in synchronous mode.<br/><br/></th></tr>
 <tr>
 <th>
 SaveAsync(string filePath)<br/><br/></th><th>
 Task<bool><br/><br/></th><th>
-Saves the content of **RichTextBoxAdv** as rich-text format (.rtf) files, Word documents (.doc, .docx) , Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt) into a file in the specified location in asynchronous mode. It also keeps the UI responsive during saving.<br/><br/></th></tr>
+Saves the content of the **RichTextBoxAdv** as rich-text format (.rtf) files, Word documents (.doc, .docx) , Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt) into a file in the specified location in asynchronous mode. It also keeps the UI responsive during saving.<br/><br/></th></tr>
 <tr>
 <th>
 SaveAsync(Stream stream, FormatType formatType)<br/><br/></th><th>
 Task<bool><br/><br/></th><th>
-Saves the content of **RichTextBoxAdv** as rich-text format (.rtf) files, Word documents (.doc, .docx) , Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt) into Stream in asynchronous mode. It also keeps the UI responsive during saving.<br/><br/></th></tr>
+Saves the content of the **RichTextBoxAdv** as rich-text format (.rtf) files, Word documents (.doc, .docx) , Html documents (.htm, .html), Xaml files (.xaml) and text files (.txt) into a Stream in asynchronous mode. It also keeps the UI responsive during saving.<br/><br/></th></tr>
 </table>

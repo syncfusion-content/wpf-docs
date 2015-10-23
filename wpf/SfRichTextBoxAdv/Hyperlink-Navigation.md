@@ -9,7 +9,7 @@ documentation: ug
 
 # Hyperlink Navigation
 
-RichTextBoxAdv provides support for inserting or editing a hyperlink field and the RequestNavigate event to handle hyperlink navigation. It is easy to customize hyperlink navigation functionality by using the RequestNavigate event. This event is triggered when the hyperlink field in SfRichTextBoxAdv is tapped or left button of the mouse is clicked with the Ctrl key.
+RichTextBoxAdv provides support for inserting or editing a hyperlink field and the RequestNavigate event to handle hyperlink navigation. It is easy to customize the hyperlink navigation functionality by using the RequestNavigate event. This event is triggered when the hyperlink field in the SfRichTextBoxAdv is tapped or when the left button of the mouse is clicked with the Ctrl key.
 
 _Table_ _1_: _Hyperlink Navigation properties_
 
@@ -91,7 +91,7 @@ The following code example demonstrates how to implement the RequestNavigate eve
 
 {% highlight c# %}
 
-//Hooks the event handler for RequestNavigate event.
+//Hooks the event handler for the RequestNavigate event.
 
 richTextBoxAdv.RequestNavigate += richTextBoxAdv_RequestNavigate;
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 #### ListAdv
 
-The **ListAdv** class represents a list that you can add or edit in the document by using **Lists** property of **DocumentAdv** class. Each **ListAdv** instance contains reference to any one of the abstract lists in the document and optionally contains the definition of the list level overrides.
+The **ListAdv** class represents a list that adds or edits in the document by using the **Lists** property of the **DocumentAdv** class. Each **ListAdv** instance contains reference to any one of the abstract lists in the document and optionally contains the definition of the list level overrides.
 
 <table>
 <tr>
@@ -58,7 +58,7 @@ Releases all the resources used by the list.<br/><br/></td></tr>
 </table>
 **LevelOverrideAdvCollection******
 
-The **LevelOverrideAdvCollection** class contains a collection of list level overrides. You can get the **LevelOverrideAdv** instance of the specified level by using **indexer** property.
+The **LevelOverrideAdvCollection** class contains a collection of list level overrides. You can get the **LevelOverrideAdv** instance of the specified level by using the **indexer** property.
 
 <table>
 <tr>
@@ -98,11 +98,11 @@ Clears the list level overrides in the collection.<br/><br/></td></tr>
 Dispose<br/><br/></td><td>
 void<br/><br/></td><td>
 <br/><br/></td><td>
-Releases all the resources used by level override collection.<br/><br/></td></tr>
+Releases all the resources used by the level override collection.<br/><br/></td></tr>
 </table>
 **LevelOverrideAdv******
 
-The **LevelOverrideAdv** class represents a list level override that has definition for start at value and list level properties to override the abstract list. You can define level overrides for any existing level of the list.
+The **LevelOverrideAdv** class represents a list level override that has the definition for start at value and list level properties to override the abstract list. You can define level overrides for any existing level of the list.
 
 <table>
 <tr>
@@ -148,7 +148,7 @@ Gets or sets the level number to override.<br/><br/></td></tr>
 Dispose<br/><br/></td><td>
 void<br/><br/></td><td>
 <br/><br/></td><td>
-Releases all the resources used by level override.<br/><br/></td></tr>
+Releases all the resources used by the level override.<br/><br/></td></tr>
 </table>
 #### AbstractListAdv
 
@@ -176,7 +176,7 @@ Gets the list level collection of abstract list.<br/><br/></td></tr>
 </table>
 **ListLevelAdvCollection******
 
-The **ListLevelAdvCollection** class contains a collection of list levels. You can get the **ListLevelAdv** instance of specified level by using **indexer** property. A single level list has only one list level, whereas a multi-level list has nine list levels.
+The **ListLevelAdvCollection** class contains a collection of list levels. You can get the **ListLevelAdv** instance of the specified level by using the **indexer** property. A single level list has only one list level, whereas a multi-level list has nine list levels.
 
 <table>
 <tr>
@@ -220,7 +220,7 @@ Releases all the resources used by the list level collection.<br/><br/></td></tr
 </table>
 #### ListLevelAdv
 
-The **ListLevelAdv** class represents a list level that has the definition for properties of a list level. You can define **list** **level** properties for abstract list and level overrides of the list.
+The **ListLevelAdv** class represents a list level that has the definition for properties of a list level. You can define the list level properties for the abstract list and level overrides of the list.
 
 <table>
 <tr>
@@ -258,7 +258,7 @@ Gets or sets the start at value of the list level.<br/><br/></td></tr>
 RestartLevel<br/><br/></td><td>
 int<br/><br/></td><td>
 ListLevelAdv<br/><br/></td><td>
-Gets or sets the list level that must appear before the current list level restarts numbering. This must be less than the level number.<br/><br/></td></tr>
+Gets or sets the list level that appears before the current list level restarts numbering. This is lesser than the level number.<br/><br/></td></tr>
 <tr>
 <td>
 LevelNumber<br/><br/></td><td>
@@ -378,10 +378,10 @@ paragraph.ParagraphFormat.ListFormat.ListLevelNumber = 0;
 
 {% endhighlight %}
 
-The following code sample demonstrates how to apply the list to the selection content in the **RichTextBoxAdv** control.
+The following code sample demonstrates how to apply the list to the selected content in the **RichTextBoxAdv** control.
 
 {% highlight c# %}
-// Gets the current list for the selection content.
+// Gets the current list for the selected content.
 
 ListAdv listAdv = richTextBoxAdv.Selection.ParagraphFormat.GetList();
 
@@ -389,10 +389,10 @@ ListAdv listAdv = richTextBoxAdv.Selection.ParagraphFormat.GetList();
 
 {% endhighlight %}
 
-The following code example demonstrates how to apply a list for the selection content in the **RichTextBoxAdv** control. When the selection content has a list, then it gets modified with that list. Otherwise that list is added to the document and applied to the selection content.
+The following code example demonstrates how to apply a list for the selected content in the **RichTextBoxAdv** control. When the selection content has a list, then it gets modified with that list. Otherwise that list is added to the document and applied to the selection content.
 
 {% highlight c# %}
-// Applies list for the Selection content.
+// Applies list for the Selected content.
 
 richTextBoxAdv.Selection.ParagraphFormat.SetList(listAdv);
 
@@ -405,7 +405,7 @@ richTextBoxAdv.Selection.ParagraphFormat.ListLevelNumber = 0;
 The following code example demonstrates how to define a bulleted list in the **RichTextBoxAdv** control.
 
 {% highlight c# %}
-// Defines Bulleted List.
+// Defines the Bulleted List.
 
 listLevel.ListLevelPattern = ListLevelPattern.Bullet;
 
@@ -416,7 +416,7 @@ listLevel.ListLevelPattern = ListLevelPattern.Bullet;
 The following code sample demonstrates how to define Dot bullet in the **RichTextBoxAdv** control.
 
 {% highlight c# %}
-// Defining Dot Bullet
+// Defining a Dot Bullet
 
 listLevel.NumberFormat = "\uf0b7";
 
@@ -429,7 +429,7 @@ listLevel.CharacterFormat.FontFamily = new Windows.UI.Xaml.Media.FontFamily("Sym
 The following code example demonstrates how to define Square bullet in the **RichTextBoxAdv** control.
 
 {% highlight c# %}
-// Defines Square bullet.
+// Defines a Square bullet.
 
 listLevel.NumberFormat = "\uf0a7";
 
@@ -442,7 +442,7 @@ listLevel.CharacterFormat.FontFamily = new Windows.UI.Xaml.Media.FontFamily("Win
 The following code example demonstrates how to define Arrow bullet in the **RichTextBoxAdv** control.
 
 {% highlight c# %}
-// Defines Arrow Bullet.
+// Defines a Arrow Bullet.
 
 listLevel.NumberFormat = "\u27a4";
 
@@ -459,9 +459,9 @@ The following code example demonstrates how to define number format for numbered
 
 /* Note
 
-* The percent sign (%) followed by any number from 1 through 9 represents the number style from the respective list level. 
+* The percent sign (%) followed by any number from 1 to 9 represents the number style from the respective list level. 
 
-* For example, if you wanted the format for the first level to be "Article I." "Article II," and so on, the string for the NumberFormat property would be "Article %1." and the ListLevelPattern property would be set to ListLevelPattern.UpRoman.
+* For example, when you want the format for the first level to be "Article I." "Article II," and so on, the string for the NumberFormat property would be "Article %1." and the ListLevelPattern property would be set to ListLevelPattern.UpRoman.
 
 */
 

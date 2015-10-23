@@ -8,12 +8,12 @@ documentation: ug
 ---
 ### Mini Toolbar support 
 
-The **RichTextBoxAdv** provides support for built-in **Mini** **Toolbar** that is enabled by default. It is possible to enable/disable built-in Mini Toolbar by using **EnableMiniToolBar** property of the **RichTextBoxAdv**. 
+The **RichTextBoxAdv** provides support for built-in **Mini** **Toolbar** that is enabled by default. You can enable/disable the built-in Mini Toolbar by using the **EnableMiniToolBar** property of the **RichTextBoxAdv**. 
 
 ![](Mini-Toolbar-Support_images/Mini-Toolbar-Support_img1.jpeg)
 
 
-The following code example demonstrates how to disable the built-in mini toolbar in **RichTextBoxAdv**. 
+The following code example demonstrates how to disable the built-in mini toolbar in the **RichTextBoxAdv**. 
 
 {% highlight xml %}
 <syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" EnableMiniToolBar="False" xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.WPF" />
@@ -23,7 +23,7 @@ The following code example demonstrates how to disable the built-in mini toolbar
 {% endhighlight %}
 
 {% highlight c# %}
-//Disables the built-in mini toolbar in RichTextBoxAdv.
+//Disables the built-in mini toolbar in the RichTextBoxAdv.
 
 richTextBoxAdv.EnableMiniToolBar = false;
 

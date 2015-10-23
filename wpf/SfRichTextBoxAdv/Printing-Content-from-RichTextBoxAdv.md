@@ -6,7 +6,7 @@ platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
-### Printing Content from RichTextBoxAdv
+### Print Content from the RichTextBoxAdv
 
 The **RichTextBoxAdv** control supports page-by-page printing of rich-text content that is rendered in the editor. The following code example demonstrates how to print the contents of the **RichTextBoxAdv** control.
 
@@ -19,11 +19,11 @@ SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 
 string filePath = "D:/Sample.docx";
 
-//Loads the file from the specified path in Synchronous mode.
+//Loads the file from the specified path in the Synchronous mode.
 
 richTextBoxAdv.Load(filePath);
 
-//Prints the content of RichTextBoxAdv.
+//Prints the content of the RichTextBoxAdv.
 
 richTextBoxAdv.PrintDocument();
 

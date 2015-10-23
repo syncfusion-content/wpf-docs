@@ -8,7 +8,7 @@ documentation: ug
 ---
 ### Layout types
 
-1. **Pages**-In the **Pages** **Layout** type, the rich-text content is rendered sequentially in several pages similar to the Print Layout view of Microsoft Word.
+1. Pages - In the **Pages** **Layout** type, the rich-text content is rendered sequentially in several pages similar to the Print Layout view of the Microsoft Word.
 
 ![](Layout-types_images/Layout-types_img1.jpeg)
 
@@ -29,7 +29,7 @@ richTextBoxAdv.LayoutType = LayoutType.Pages;
 
 {% endhighlight %}
 
-2. **Continuous**-In the **Continuous** **Layout** type, the entire rich-text content is rendered continuously in a single page, similar to the Web Layout view of Microsoft Word. This layout looks like a simple text box with rich-text content and can be used for applications such as forums and blogs.
+2. Continuous - In the **Continuous** **Layout** type, the entire rich-text content is rendered continuously in a single page similar to the Web Layout view of the Microsoft Word. This layout looks like a simple textbox with rich-text content and can be used for applications such as forums and blogs.
 
 ![](Layout-types_images/Layout-types_img2.jpeg)
 
@@ -50,7 +50,7 @@ richTextBoxAdv.LayoutType = LayoutType.Continuous;
 
 {% endhighlight %}
 
-3. **Block**-In the **Block** **Layout** type, the rich-text content is rendered as read only in a single page. This layout looks like a simple text block with rich-text content such as texts, images, and tables. **Block** **Layout** also supports copying contents to the clipboard. This can be used for applications such as forums and blogs in order to display the rich-text contents with same look and feel as in the continuous layout type.
+3. Block - In the **Block** **Layout** type, the rich-text content is rendered as read only in a single page. This layout looks like a simple text block with rich-text content such as texts, images, and tables. **Block** **Layout** also supports copying contents to the clipboard. This can be used for applications such as forums and blogs in order to display the rich-text contents with same look and feel as in the continuous layout type.
 
 ![C:/Users/gunasekarant/Desktop/UG_2013Vol4/Block_4.png](Layout-types_images/Layout-types_img3.jpeg)
 
