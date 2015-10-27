@@ -1,3 +1,11 @@
+---
+layout: post
+title: Docking window
+description: Docking Window
+platform: wpf
+control: DockingManager
+documentation: ug
+---
 ## Docking Window
 
 Docking windows is one of the states of DockingManager, Since **Dock** is the default value, so initially all the children stay in Docking Window![](DockingWindow_images/DockingWindow_img1.jpeg)
