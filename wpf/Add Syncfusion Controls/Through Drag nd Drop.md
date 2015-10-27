@@ -1,3 +1,11 @@
+---
+layout: post
+title: Add Syncfusion Controls
+description: common supports
+platform: wpf
+control:Add Syncfusion Controls
+documentation: ug
+---
 # Add Syncfusion Controls
 
 ## Through Drag and Drop
