@@ -1,3 +1,12 @@
+---
+layout: post
+title: Add Syncfusion Controls
+description: common supports
+platform: wpf
+control:Add Syncfusion Controls
+documentation: ug
+---
+
 ## Through C# / VB
 
 The following steps help you add a required Essential WPF Control through C# or VB Code, like DockingManager.

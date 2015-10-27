@@ -1,3 +1,11 @@
+---
+layout: post
+title: Themes
+description: common supports
+platform: wpf
+control: Themes
+documentation: ug
+---
 # Themes
 
 SfSkinManager control helps to apply the built in themes to the Syncfusion UI controls for WPF. Refer to the following built in themes and its available assemblies.

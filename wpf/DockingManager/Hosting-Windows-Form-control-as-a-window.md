@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Hosting Windows Form control as a window
