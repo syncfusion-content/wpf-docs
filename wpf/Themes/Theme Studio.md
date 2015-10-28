@@ -15,7 +15,8 @@ It comprises of many features such as predefined themes, Import and Export optio
 
 ![](ThemeStudio_images/ThemeStudio_img1.png)
 
-Theme Studio {: .caption}
+Theme Studio 
+{:.caption}
 
 #Getting Started
 
@@ -49,7 +50,8 @@ The following list of predefined themes are currently provided in theme studio,
 
 ![](ThemeStudio_images/ThemeStudio_img2.png)
 
-Predefined Themes List {: .caption}
+Predefined Themes List 
+{:.caption}
 
 ## Applying customized skin in Theme Studio
 
@@ -57,31 +59,38 @@ We are currently providing 7 set of categories to customize the control colors. 
 
 ![](ThemeStudio_images/ThemeStudio_img3.png)
 
-Default Category {: .caption}
+Default Category 
+{:.caption}
 
 ![](ThemeStudio_images/ThemeStudio_img4.png)
 
-Header Category  {: .caption}
+Header Category
+{:.caption}
 
 ![](ThemeStudio_images/ThemeStudio_img5.png)
 
-Hover Category  {: .caption}
+Hover Category  
+{:.caption}
 
 ![](ThemeStudio_images/ThemeStudio_img6.png)
 
-Active Category  {: .caption}
+Active Category  
+{:.caption}
 
 ![](ThemeStudio_images/ThemeStudio_img7.png)
 
-Content Category {: .caption}
+Content Category 
+{:.caption}
 
 ![](ThemeStudio_images/ThemeStudio_img8.png)
 
-Range Category {: .caption}
+Range Category 
+{:.caption}
 
 ![](ThemeStudio_images/ThemeStudio_img9.png)
 
-Ticks Category {: .caption}
+Ticks Category 
+{:.caption}
 
 The hexadecimal color code can be given as input in Text area and press enter to apply the custom skin color.
 
@@ -91,7 +100,8 @@ To select desired color, click the colored button to display a popup with solid 
 
 ![](ThemeStudio_images/ThemeStudio_img11.png)
 
-Color Palette {: .caption}
+Color Palette 
+{:.caption}
 
 
 •	**Solid Color Palettes**: Provides set of color palettes with 8 variants.
@@ -100,13 +110,15 @@ Color Palette {: .caption}
 
 ![](ThemeStudio_images/ThemeStudio_img12.png)
 
-Advance Color Picker {: .caption}
+Advance Color Picker 
+{:.caption}
 
 •   **Gradient Check Box**: To choose gradient colors, select the “Gradient” check box to display a popup with 24 gradient palettes.
 
 ![](ThemeStudio_images/ThemeStudio_img13.png)
 
-Gradient Palette {: .caption}
+Gradient Palette 
+{:.caption}
 
 _**Note:** Gradient Support has been provided only for Background color properties residing in Default, Header, Hover and Active categories._
 
@@ -128,7 +140,8 @@ For example, add SfRadialMenu Control to the application. The **SfRadialMenu** c
 
 ![](ThemeStudio_images/ThemeStudio_img14.png)
 
-Exported Xaml {: .caption}
+Exported Xaml 
+{:.caption}
 
 •	Now, initialize the **SfRadialMenu** control in the **MainWindow.xaml** as below:
 
@@ -166,7 +179,8 @@ Exported Xaml {: .caption}
 
 ![](ThemeStudio_images/ThemeStudio_img15.png)
 
-SfRadialMenu with Customized Theme {: .caption}
+SfRadialMenu with Customized Theme 
+{:.caption}
 
 # Exporting Custom theme from Theme Studio
 
@@ -178,7 +192,8 @@ Click the Export button once selected the desired controls and provide a name fo
 
 ![](ThemeStudio_images/ThemeStudio_img16.png)
 
-Export Popup {: .caption}
+Export Popup 
+{:.caption}
 
 _**Note:** To obtain the customized themes for multiple controls in a single xaml file, check the **Merge and Export** option before clicking **Export** button._
 
@@ -190,7 +205,8 @@ The color values for customized theme will be saved in *.wpft format file. Along
 
 ![](ThemeStudio_images/ThemeStudio_img17.png)
 
-Output Folder {: .caption}
+Output Folder 
+{:.caption}
 
 # Importing Custom theme to Theme Studio
 
@@ -198,4 +214,5 @@ To import custom theme, click **Import** button for choosing *.wpft file contain
 
 ![](ThemeStudio_images/ThemeStudio_img18.png)
 
-Import Theme {: .caption}
+Import Theme 
+{:.caption}
