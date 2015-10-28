@@ -1,3 +1,11 @@
+---
+layout: post
+title: Styling and Templates
+description: Styling and Templates
+platform: wpf
+control: Ribbon
+documentation: ug
+---
 ## Styling and Templates
 
 The Ribbon control ships with a number of built-in themes such as Office 2007 Silver, Blue, Black, Blend, Office 2003, Shiny Red, and Shiny Blue. 
