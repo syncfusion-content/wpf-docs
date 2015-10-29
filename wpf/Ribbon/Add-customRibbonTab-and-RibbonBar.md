@@ -159,12 +159,11 @@ ToolTip="Redo" syncfusion:RibbonCommandManager.SynchronizedItem="Redo"/>
 <syncfusion:RibbonTab Caption="SEND/RECIEVE"/>
 
 </syncfusion:Ribbon>
-
+{% endhighlight %}
 
 
 In the following screenshot, customizing Ribbon is disabled and it shows only the QAT Customize window
 
-In the following screenshot, customizing Ribbon is disabled and it shows only the QAT Customize window
 
 
 ![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img17.jpeg)
