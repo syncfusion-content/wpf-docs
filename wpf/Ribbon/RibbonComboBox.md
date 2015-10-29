@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonComboBox
-description: RibbonComboBox
+title: RibbonComboBox
+description: RibbonComboBox
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonComboBox
+## RibbonComboBox
 
 **RibbonComboBox** control is used to display the list of items, as drop-down menu in **Ribbon** instance **RibbonComboBox** accepts any number of items to the **RibbonComboBox**.
 
