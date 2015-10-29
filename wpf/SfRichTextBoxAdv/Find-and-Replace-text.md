@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Find-and-Replace-text
 description: find and replace text

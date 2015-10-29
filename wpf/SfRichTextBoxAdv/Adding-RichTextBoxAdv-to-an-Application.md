@@ -1,4 +1,4 @@
-﻿---
+---
 layout: Post
 title: Adding-RichTextBoxAdv-to-an-Application
 description: Adding RichTextBoxAdv to an application
