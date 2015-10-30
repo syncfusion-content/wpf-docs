@@ -178,3 +178,58 @@ SfSkinManager.SetVisualStyle(this,(VisualStyles)Enum.Parse(typeof(VisualStyles),
 
 {% endhighlight %}
 
+## MS Controls Themes
+
+All built-in assemblies have Style resources for MS controls, so whenever an application get its style through SfSkinManager, the Theme’s corresponding MS Control style merges with the applied controls resource dictionary. 
+
+## Applying theme globally in the application
+
+By Default SfSkinManager merges the required resource files from the Theme assembly to the applied control. To apply the theme globally in the application, set the **ApplyStylesOnApplication** property to **True.** It merges all the resource files to the Application’s Resource Dictionary.
+
+{% highlight c# %}
+
+SfSkinManager.ApplyStylesOnApplication = true;
+
+
+{% endhighlight %}
+
+## Apply Style to custom controls
+
+To apply the built-in themes to your derived control using SfSkinManager, you have to set the **SetResourceReference** in the custom control. This is required to refer style property of the derived control.
+
+{% highlight xml %}
+
+
+<local:DockingAdv x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
+
+<ContentControl x:Name="SolutionExplorer" local:DockingAdv.Header="Solution Explorer"  local:DockingAdv.SideInDockedMode="Right"/>
+
+<ContentControl x:Name="ToolBox" local:DockingAdv.Header="Toolbox" local:DockingAdv.State="AutoHidden" />
+
+<ContentControl x:Name="Properties" local:DockingAdv.Header="Properties" local:DockingAdv.State="Float" />
+
+<ContentControl x:Name="Output" local:DockingAdv.Header="Output" local:DockingAdv.SideInDockedMode="Tabbed" local:DockingAdv.TargetNameInDockedMode="SolutionExplorer"/>
+
+<ContentControl x:Name="StartPage" local:DockingAdv.Header="Start Page" local:DockingAdv.State="Document" />
+
+</local:DockingAdv>
+
+public class DockingAdv : DockingManager
+
+{
+
+public DockingAdv()
+
+{
+
+SetResourceReference(StyleProperty, typeof(DockingManager));
+
+}
+
+}
+
+
+
+{% endhighlight %}
+
+

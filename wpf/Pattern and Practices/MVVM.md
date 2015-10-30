@@ -8,15 +8,13 @@ documentation: ug
 ---
 #Pattern and Practices
 
-## MVVM
-
-### Getting Started:
+### Getting Started with MVVM
 
 To perform **TabControlExt’s** **selectionChanged** Event in the ViewModel, use the following logic.
 
 Create a Viewmodel and define a Model Collection that is used to bind with the **TabControl’s** **ItemSource** property.
 
-**XAML**__:__
+XAML
 
 {% highlight xml %}
 <syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">   <syncfusion:TabControlExt.ItemTemplate>
@@ -35,7 +33,7 @@ Create a Viewmodel and define a Model Collection that is used to bind with the *
 
 {% endhighlight %}
 
-**C**__#__**:**
+C#
 
 
 {% highlight c# %}
@@ -159,7 +157,7 @@ this.RaisePropertyChanged("HeaderName");
 
 And now you need to handle the **SelectionChanged** event of the TabControlExt. So use **TabControlExtSelectionChangedCommand** and define a “SelectionChanged” command in **ViewModel** using **ICommand**. 
 
-**XAML**__:__
+XAML
 
 {% highlight xml %}
 <syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
@@ -180,7 +178,7 @@ And now you need to handle the **SelectionChanged** event of the TabControlExt. 
 
 {% endhighlight %}
 
-**C**__#__**:**
+C#
 
 
 {% highlight c# %}
@@ -225,7 +223,7 @@ The following screenshot displays final result.
 ![](MVVM_images/MVVM_img1.jpeg)
 
 
-********### Events and Commands
+### Events and Commands
 
 The following section explains how you can use event commands in code-behind with the help of view model.
 
@@ -233,7 +231,7 @@ The following section explains how you can use event commands in code-behind wit
 
 **CommandParameter** that you can easily pass an object or bind it to a property of another control. The following code example passes a string through command parameter.
 
-**XAML**__:__
+XAML
 
 {% highlight xml %}
 <syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"                              syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
@@ -242,7 +240,7 @@ The following section explains how you can use event commands in code-behind wit
 
 {% endhighlight %}
 
-**C**__#__**:**
+C#
 
 
 {% highlight c# %}
@@ -267,7 +265,7 @@ The following screenshot displays final result.
 
 Any property can bind with the Command Parameter to pass it as command in View Model.
 
-**XAML**__:__
+XAML
 
 {% highlight xml %}
 <syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"                                syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,RelativeSource={RelativeSource Self}}">
@@ -276,7 +274,7 @@ Any property can bind with the Command Parameter to pass it as command in View M
 
 {% endhighlight %}
 
-**C**__#__**:**
+C#
 
 
 {% highlight c# %}
