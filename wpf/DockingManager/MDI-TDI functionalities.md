@@ -1,17 +1,17 @@
 ---
 layout: post
-title: MDI/ TDI functionalities
+title: MDI/ TDI functionalities | DockingManager | WPF | Syncfusion
 description: MDI/ TDI functionalities 
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-## MDI/ TDI functionalities
+# MDI/ TDI functionalities
 
 The MDI and TDI functionalities are applicable for the Document window in the DockingManager.
 
-The Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface. To switch this functionality between MDI and TDI mode for the Document window, set the property **ContainerMode** with its respective values.
+The Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface. To switch this functionality between MDI and TDI mode for the Document window, set the property `ContainerMode` with its respective values.
 
 By default, the document state window is in TDI mode, with the display tab as tabbed document.
 
@@ -32,7 +32,7 @@ syncfusion:DockingManager.State="Document"/>
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
 
 
-To make the document child window as MDI document, set the **ContainerMode** as **MDI**
+To make the document child window as MDI document, set the `ContainerMode` as `MDI`
 
 {% highlight xaml %}
 
@@ -53,9 +53,9 @@ syncfusion:DockingManager.State="Document"/>
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img2.jpeg)
 
 
-### Setting MDI Window state
+## Setting MDI Window state
 
-The differenet state for the MDI Window can be set using the **SetMDIWindowState()** method of DocumentContainer. 
+The differenet state for the MDI Window can be set using the `SetMDIWindowState()` method of DocumentContainer. 
 
 * Setting MDIWindowstate as Minimized
 
@@ -77,9 +77,9 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized);
 
 {% endhighlight %}
 
-### Getting state of the MDI window
+## Getting state of the MDI window
 
-The state for the MDI window can be detect using the **GetMDIWindowState()** method of DocumentContainer.
+The state for the MDI window can be detect using the `GetMDIWindowState()` method of DocumentContainer.
 
 {% highlight c# %}
 
@@ -87,9 +87,9 @@ DocumentContainer.GetMDIWindowState(Content1);
 
 {% endhighlight %}
 
-### Detecting the maximized state of the MDI window
+## Detecting the maximized state of the MDI window
 
-To get the Maximized state of the MDI window of the Document state window, set the property **IsInMDIMaximizedState** of DocumentContainer as **True**. The container can be fetched for the DockingManager using the **DocContainer** property.
+To get the Maximized state of the MDI window of the Document state window, set the property `IsInMDIMaximizedState` of DocumentContainer as `True`. The container can be fetched for the DockingManager using the `DocContainer` property.
 
 {% highlight c# %}
 
@@ -97,9 +97,9 @@ To get the Maximized state of the MDI window of the Document state window, set t
 
 {% endhighlight %}
 
-### Resizing MDI
+## Resizing MDI
 
-MDI document window can be able to resize using the navigation arrows, to restrict resizing the MDI document windows, disable the Property **IsAllowMDIResize** of the **Documentcontainer** that can be get using the **DocContainer** property of the DockingManager. By default, its values is **False**.
+MDI document window can be able to resize using the navigation arrows, to restrict resizing the MDI document windows, disable the Property `IsAllowMDIResize` of the `Documentcontainer` that can be get using the `DocContainer` property of the DockingManager. By default, its values is `False`.
 
 {% highlight c# %}
 
@@ -107,9 +107,9 @@ MDI document window can be able to resize using the navigation arrows, to restri
 
 {% endhighlight %}
 
-### Different Keyboard Navigation Modes
+## Different Keyboard Navigation Modes
 
-DockingManager allows you to navigate between the TDI and MDI windows easily using the keyboard keys with combination of **CTRL** **+** **TAB** in five different modes through the property **SwitchMode** of the Documentcontainer that can be fetched using the DocContainer in the DocumentContainer loaded event.
+DockingManager allows you to navigate between the TDI and MDI windows easily using the keyboard keys with combination of `CTRL` `+` `TAB` in five different modes through the property `SwitchMode` of the Documentcontainer that can be fetched using the DocContainer in the DocumentContainer loaded event.
 
 There are five switch modes.
 
@@ -179,9 +179,9 @@ DockingManager1.SwitchMode = SwitchMode.VS2005;
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
 
 
-### Setting MDI Layout
+## Setting MDI Layout
 
-DockingManager allows you to set the different layout for the MDI windows with the different MDILayout values such as **Horizontal****,** **Vertical****,** **and** **Cascade** layout through the property **SetLayout****()** of DocumentContainer.
+DockingManager allows you to set the different layout for the MDI windows with the different MDILayout values such as `Horizontal` , `Vertical` and `Cascade` layout through the property `SetLayout()` of DocumentContainer.
 
 * Horizontal - Arranges the MDI windows horizontally.
 
@@ -225,9 +225,9 @@ void DocumentContainer_Loaded(object sender, RoutedEventArgs e){(DockingManager1
 
 
 
-### Closing a MDI Windows
+## Closing a MDI Windows
 
-To enable and disable closing of the MDI windows, set **CanClose** an attached property of DockingManager with its respective values. By default, its value is “**True****”**
+To enable and disable closing of the MDI windows, set `CanClose` an attached property of DockingManager with its respective values. By default, its value is `True`
 
 {% highlight xaml %}
 
@@ -237,9 +237,9 @@ To enable and disable closing of the MDI windows, set **CanClose** an attached p
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
 
 
-### Indexing an Item in TDI
+## Indexing an Item in TDI
 
-A document window can be placed at different index position using the **SetTDIIndex****()** method of the TDILayoutPanel. 
+A document window can be placed at different index position using the `SetTDIIndex()` method of the TDILayoutPanel. 
 
 {% highlight xaml %}
 
@@ -260,9 +260,9 @@ TDILayoutPanel.SetTDIIndex(Content1,0);
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
 
 
-### Drag / Drop support in TDI
+## Drag / Drop support in TDI
 
-The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property **IsTDIDragDropEnabled** of DockingManager depends upon its value **True** or **False** respectively.
+The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property `IsTDIDragDropEnabled` of DockingManager depends upon its value `True` or `False` respectively.
 
 {% highlight xaml %}
 
@@ -284,9 +284,9 @@ syncfusion:DockingManager.State="Document"/>
 
 {% endhighlight %}
 
-### Customizing Close Menu
+## Customizing Close Menu
 
-When two or more documents used in the DockingManager the Close, CloseAll and CloseAllButThis menu items are available for the document window. To collapse the visibility of these menu item, set the property **ShowClose** , **ShowCloseAll** and **ShowCloseAllButThis** as **False**.
+When two or more documents used in the DockingManager the Close, CloseAll and CloseAllButThis menu items are available for the document window. To collapse the visibility of these menu item, set the property `ShowClose` , `ShowCloseAll` and `ShowCloseAllButThis` as `False`.
 
 {% highlight xaml %}
 
@@ -321,13 +321,13 @@ syncfusion:DockingManager.ShowCloseAllButThisMenuItem="False"/>
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
 
 
-### Grouping Document Tab Group
+## Grouping Document Tab Group
 
 TDI document can be grouped like VisualStudio. It can be grouped by drag and Drop and also using the options in context menu items.
 
-#### Creating Vertical Tab Group 
+### Creating Vertical Tab Group 
 
-To create a vertical tab group in the Tabbed document, select the **New** **Vertical** **Tab** **Group** context menu item and also it can be created programmatically by calling the method **CreateVerticallTabGroup(UIElement)** of the DocumentContainer in its loaded event.
+To create a vertical tab group in the Tabbed document, select the `New` `Vertical` `Tab` `Group` context menu item and also it can be created programmatically by calling the method `CreateVerticallTabGroup(UIElement)` of the DocumentContainer in its loaded event.
 
 {% highlight c# %}
 
@@ -340,9 +340,9 @@ private void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-#### Creating Horizontal Tab Group 
+### Creating Horizontal Tab Group 
 
-To create a horizontal tab group in the Tabbed document, select the **New** **Horizontal** **Tab** **Group** context menu item and also it can be created programmatically by calling the method **CreateHorizontalTabGroup(UIElement)** of the DocumentContainer in its loaded event.
+To create a horizontal tab group in the Tabbed document, select the `New` `Horizontal` `Tab` `Group` context menu item and also it can be created programmatically by calling the method `CreateHorizontalTabGroup(UIElement)` of the DocumentContainer in its loaded event.
 
 {% highlight c# %}
 
@@ -356,9 +356,9 @@ private void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-#### Adding Tab in a Group 
+### Adding Tab in a Group 
 
-In TDI document, a new tab group can be created by dragging the TabItem into the Document area and click the **New** **Tab** **Group** Menu from context menu item.
+In TDI document, a new tab group can be created by dragging the TabItem into the Document area and click the `New` `Tab` `Group` Menu from context menu item.
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
 
@@ -366,7 +366,7 @@ In TDI document, a new tab group can be created by dragging the TabItem into the
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
 
 
-#### Disable TabGroups
+### Disable TabGroups
 
 Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property TabGroupEnabled in DockingManager. 
 
@@ -392,9 +392,9 @@ dockingManager.TabGroupEnabled = false;
 {% endtabs %}
 
 
-### VS2010 Behavior of TDI
+## VS2010 Behavior of TDI
 
-TDI document of DockingManager can be changed to Float while dragging its TDI header like the Visual Studio. This functionality can be enabled or disabled using the property **IsVs2010DraggingEnabled** depends upon its value **True** or **False** respectively. 
+TDI document of DockingManager can be changed to Float while dragging its TDI header like the Visual Studio. This functionality can be enabled or disabled using the property `IsVs2010DraggingEnabled` depends upon its value `True` or `False` respectively. 
 
 {% highlight xaml %}
 
@@ -411,9 +411,9 @@ syncfusion:DockingManager.State="Document"/>
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
 
 
-### TDI Header Renaming Support
+## TDI Header Renaming Support
 
-To enable the functionality of editing the TDI document header when you double click the document header at runtime, set the property **EnableDocumentTabHeaderEdit** of the DockingManager as **True**. By default, its value is **False**.
+To enable the functionality of editing the TDI document header when you double click the document header at runtime, set the property `EnableDocumentTabHeaderEdit` of the DockingManager as `True`. By default, its value is `False`.
 
 {% highlight xaml %}
 
@@ -421,9 +421,9 @@ To enable the functionality of editing the TDI document header when you double c
 
 {% endhighlight %}
 
-### Hiding TDI Header
+## Hiding TDI Header
 
-To hide the TDI document header when a single document child present in a DockingManager set the property **HideTDIHeaderOnSingleChild** as **True**. By default its value is **False**.
+To hide the TDI document header when a single document child present in a DockingManager set the property `HideTDIHeaderOnSingleChild` as `True`. By default its value is `False`.
 
 {% highlight xaml %}
 
@@ -438,9 +438,9 @@ To hide the TDI document header when a single document child present in a Dockin
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
 
 
-### Add new button in Header Panel
+## Add new button in Header Panel
 
-In DockingManager, the new button can be added in the Document state windows using the **IsNewButtonEnabled** property of the DocumentTabControl. To achieve this, the DocumentTabControl must be fetched from the DockingManager using the VisualUtils in Document container loaded event.
+In DockingManager, the new button can be added in the Document state windows using the `IsNewButtonEnabled` property of the DocumentTabControl. To achieve this, the DocumentTabControl must be fetched from the DockingManager using the VisualUtils in Document container loaded event.
 
 {%highlight c#%}
 

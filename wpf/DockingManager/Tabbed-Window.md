@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Tabbed Window
+title: Tabbed Window | DockingManager | WPF | Syncfusion
 description: Tabbed Window
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-## Tabbed Window
+# Tabbed Window
 
-To make the children as Tabbed windows, you can use the TargetName and set the side value as **“Tabbed”** using the property **SideInDockedMode**.
+To make the children as Tabbed windows, you can use the TargetName and set the side value as `“Tabbed”` using the property `SideInDockedMode`.
 
 ![](TabbedWindow_images/TabbedWindow_img1.jpeg)
 
 
-###  Tab alignments
+##  Tab alignments
 
-The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property **“DockTabAlignment”** with desired values such as **Top**, **Bottom**, **Left** and **Right**. 
+The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as `Top` , `Bottom` , `Left` and `Right`. 
 
-* DockTabAlignment as **Bottom**
+* DockTabAlignment as `Bottom`
 
 ![](TabbedWindow_images/TabbedWindow_img2.jpeg)
 
 
-* Setting **DockTabAlignment** as Left.
+* Setting `DockTabAlignment` as Left.
 {% highlight xml %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Left">
@@ -80,11 +80,11 @@ syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
 ![](TabbedWindow_images/TabbedWindow_img5.jpeg)
 
 
-### Closing a Tabbed window
+## Closing a Tabbed window
 
-Tabbed window provides two different closing behaviors. They are **CloseActive** and **CloseAll** modes of **CloseTabs** property.
+Tabbed window provides two different closing behaviors. They are `CloseActive` and `CloseAll` modes of `CloseTabs` property.
 
-* **CloseActive** **–** Used to close the active element of Tabbed window.
+`CloseActive` – Used to close the active element of Tabbed window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseActive">
@@ -101,7 +101,7 @@ Tabbed window provides two different closing behaviors. They are **CloseActive**
 
 {% endhighlight %}
 
- **CloseAll** **–** Used to close all the Tabbed window.
+ `CloseAll` – Used to close all the Tabbed window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseAll">

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization | DockingManager | wpf | Syncfusion
+title: Localization | DockingManager | WPF | Syncfusion
 description: localization
 platform: wpf
 control: DockingManager

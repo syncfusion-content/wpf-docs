@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Other Features | DockingManager | wpf | Syncfusion
-description: other features
+title: Other Features | DockingManager | WPF | Syncfusion
+description: Other features of DockingManager
 platform: wpf
 control: DockingManager
 documentation: ug
