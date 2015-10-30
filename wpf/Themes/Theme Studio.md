@@ -162,11 +162,11 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 # Exporting Custom theme from Theme Studio
 
-To export custom theme, click Export button to display a popup containing option to select the controls to be exported. 
+To export custom theme, click `Export` button to display a popup containing option to select the controls to be exported. 
 
-Select the control by checking the desired control’s check box or check Select All option in the popup to select all the controls. 
+Select the control by checking the desired control’s check box or check `Select All` option in the popup to select all the controls. 
 
-Click the Export button once selected the desired controls and provide a name for the customized theme. 
+Click the `Export` button once selected the desired controls and provide a name for the customized theme. 
 
 ![](ThemeStudio_images/ThemeStudio_img16.png)
 
