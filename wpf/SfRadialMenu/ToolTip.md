@@ -21,7 +21,7 @@ Position of the tooltip displayed relative to the Radial Menu can be customized 
 * Right: Tooltip is displayed right of the Radial Menu.
 * Bottom: Tooltip is displayed at the bottom of the Radial Menu.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 

@@ -28,7 +28,7 @@ Number of segments in the panel is determined by VisibleSegmentsCount property. 
 VisibleSegmentsCount property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
 
 {%tabs%}
-{%highlight xml%}
+{%highlight xaml%}
 
 <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />
 
@@ -48,7 +48,7 @@ radialMenu.LayoutType = LayoutType.Custom;
 SegmentIndex property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the RadialMenuItems are inserted in the segment. When SegmentIndex is not specified for a RadialMenuItem (or) two or more RadialMenuItems having the same SegmentIndex, then the menu item is arranged in the next available free segment. 
 
 {%tabs%}
-{%highlight xml%}
+{%highlight xaml%}
 
 <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />  
  <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />   
