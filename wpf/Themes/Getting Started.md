@@ -57,7 +57,7 @@ Syncfusion.Themes.Office2010Silver.Wpf.dll<br/><br/></td></tr>
 
 ### Add SfSkinManager to the Application
 
-There are [several ways](C:\Users\Selvaganapathy\Desktop\Need to redirect to Common section# "") to add the Syncfusion SfSkinManager in to Visual Studio WPF project. The following steps help to add the SfSkinManager through XAML Code
+There are several ways to add the Syncfusion SfSkinManager in to Visual Studio WPF project. The following steps help to add the SfSkinManager through XAML Code
 
 1. Create a WPF project in Visual Studio and refer to the SfSkinManager assembly (Syncfusion.SfSkinManager.Wpf)
 2. Include an xml namespace for the assembly to the Main window.
