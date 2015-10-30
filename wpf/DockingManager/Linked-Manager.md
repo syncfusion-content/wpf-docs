@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linked Manager | DockingManager | wpf | Syncfusion
+title: Linked Manager | DockingManager | WPF | Syncfusion
 description: Linked Manager 
 platform: wpf
 control: DockingManager
