@@ -12,7 +12,7 @@ documentation: ug
 
 The UI for Dock, Float and Document windows of DockingManager can be changed using different styles and Templates.
 
-### Visual Styles
+## Visual Styles
 
 When you want a rich and professional look and feel for the Dockwindows, you can apply the visual styles. Some of the available visual style are as follows:
 
@@ -172,7 +172,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Transparent");
 ![](StylingandTemplates_images/StylingandTemplates_img10.jpeg)
 
 
-### Blend support
+## Blend support
 
 To edit the style and template available in DockingManager, you can create a new project in the Blend, as shown in the following screenshot.
 
@@ -233,11 +233,11 @@ The following properties have been applied to customize the Dock Header.
 ![Templating](StylingandTemplates_images/StylingandTemplates_img13.jpeg)
 
 
-### Dock Window Style
+## Dock Window Style
 
 DockingManager allows you to set style for some of the Docking controls such as `DockedHeaderPresenter` , `DockedElementTabbedHost`. This is explained in detail under the DockHeaderStyle and DockedElementTabbedHostStyle section.
 
-#### AwlButtonTemplate
+### AwlButtonTemplate
 
 The style of the pin button of the Dock window can customized using the `AwlButtonTemplate` property of DockingManager with the TargetType as `ToggleButton` to have a customized look and feel for the Pin Button. 
 
@@ -286,7 +286,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 
 
 
-#### CloseButtonTemplate
+### CloseButtonTemplate
 
 
 The close button for the Docked window can be customized using the `CloseButtonTemplate`, and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
@@ -334,7 +334,7 @@ syncfusion:DockingManager.Header="Child2"/>
 ![](StylingandTemplates_images/StylingandTemplates_img15.jpeg)
 
 
-#### MenuButtonTemplate
+### MenuButtonTemplate
 
 The context menu button appearance in the Dock window header can be customized using `MenuButtonTemplate` property by setting with the Target Type as `ToggleButton`.
 
@@ -388,7 +388,7 @@ The context menu button appearance in the Dock window header can be customized u
 ![](StylingandTemplates_images/StylingandTemplates_img16.jpeg)
 
 
-#### MinimizeButton Template
+### MinimizeButton Template
 
 The minimize button for the dock window can be customized using the `MinimizeButtonTemplate` by setting with the TargetType as `ToggleButton`.
 
@@ -435,7 +435,7 @@ The minimize button for the dock window can be customized using the `MinimizeBut
 ![](StylingandTemplates_images/StylingandTemplates_img17.jpeg)
 
 
-#### MaximizeButtonTemplate
+### MaximizeButtonTemplate
 
 The maximize button for the dock window can be customized using the `MaximizeButtonTemplate` property with the TargetType as `ToggleButton`.
 
@@ -483,7 +483,7 @@ The maximize button for the dock window can be customized using the `MaximizeBut
 ![](StylingandTemplates_images/StylingandTemplates_img18.jpeg)
 
 
-#### RestoreButtonTemplate 
+### RestoreButtonTemplate 
 
 The Restore button for the dock window can be customized using the `RestoreButtonTemplate` property with the TargetType as `ToggleButton`.
 
@@ -544,7 +544,7 @@ syncfusion:DockingManager.State="Dock"></ContentControl>
 ![](StylingandTemplates_images/StylingandTemplates_img19.jpeg)
 
 
-#### TabItemTemplate
+### TabItemTemplate
 
 DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its template can be customized using `TabItemTemplate` with the TargetType as `TabItem`.
 
@@ -666,7 +666,7 @@ Syncfusion:DockingManager.SideInDockedMode="Tabbed"/>
 ![](StylingandTemplates_images/StylingandTemplates_img20.jpeg)
 
 
-#### DockedElementTabbedHostStyle
+### DockedElementTabbedHostStyle
 
 The DockedElementTabbedHost can be customized using the DockedElementTabbedHostStyle with the TargetType as DockedElementTabbedHost
 
@@ -749,7 +749,7 @@ ContentTemplateSelector="{TemplateBinding ContentControl.ContentTemplateSelector
 ![](StylingandTemplates_images/StylingandTemplates_img21.jpeg)
 
 
-#### DockHeaderStyle
+### DockHeaderStyle
 
 The header of the dock window can be customized using the property `DockHeaderStyle` with the TargetType as `DockHeaderPresenter`.
 
@@ -777,7 +777,7 @@ The header of the dock window can be customized using the property `DockHeaderSt
 ![](StylingandTemplates_images/StylingandTemplates_img22.jpeg)
 
 
-#### DockWindowContextMenuItemStyle
+### DockWindowContextMenuItemStyle
 
 
 The context menu of DockingManager can be customized using the DockWindowContextMenuItemStyle by setting its Target Type as `CustomMenuItem`
@@ -831,11 +831,11 @@ Syncfusion:DockingManager.State="Dock"></ContentControl>
 ![](StylingandTemplates_images/StylingandTemplates_img23.jpeg)
 
 
-### Float Window Style
+## Float Window Style
 
 The float window can be customized using its template and style.
 
-#### FloatWindowTemplate 
+### FloatWindowTemplate 
 
 Template of FloatWindow can be customized using the `FloatWindowTemplate` with the TargetType as `ContentControl`.
 
@@ -928,7 +928,7 @@ Syncfusion:DockingManager.State="Document"></ContentControl>
 ![](StylingandTemplates_images/StylingandTemplates_img24.jpeg)
 
 
-#### FloatWindowStyle
+### FloatWindowStyle
 
 The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as `AutoTemplatedContentControl`. It gets or sets the style for the floatwindow when it is rendered.
 
@@ -938,7 +938,7 @@ The style for the float window can be applied using the `FloatWindowStyle` prope
 
 {% endhighlight %}
 
-#### NativeWindowStyle
+### NativeWindowStyle
 
 The NativeFloatwindow of DockingManager can be customized using the `NativeWindowStyle` property of the DockingManager with the TargetType as NativeFloatWindow.
 
@@ -979,11 +979,11 @@ Syncfusion:DockingManager.State="Document"></ContentControl>
 ![](StylingandTemplates_images/StylingandTemplates_img25.jpeg)
 
 
-### Auto Hide Window Style
+## Auto Hide Window Style
 
 AutoHidden window is constructed by SidePanels and SideTabItems. To customize the AutoHidden window, the following  style and Templates are used as follows:
 
-#### SideTabItemTemplate
+### SideTabItemTemplate
 
 The template of the SideTabItem of the DockingManager can be customized using the `SideTabItemTemplate` with the TargetType as `TabItem`.
 
@@ -1035,7 +1035,7 @@ TextBlock.Foreground="{StaticResource Default.TabForeground}"/>
 ![](StylingandTemplates_images/StylingandTemplates_img26.jpeg)
 
 
-#### SideItemStyle
+### SideItemStyle
 
 The style for the sideTabItem can be changed using `SideItemStyle`, by settings its TargetType as `TabItem`
 
@@ -1082,7 +1082,7 @@ syncfusion:DockingManager.State="Dock"></ContentControl>
 ![](StylingandTemplates_images/StylingandTemplates_img27.jpeg)
 
 
-#### SidePanelTemplate
+### SidePanelTemplate
 
 SidePanel template in AutoHidden window can changed using `SidePanelTemplate` with the TargetType `SidePanel`.
 
@@ -1110,7 +1110,7 @@ ItemsSource="{TemplateBinding TabChildren}"/>
 ![](StylingandTemplates_images/StylingandTemplates_img28.jpeg)
 
 
-####  SidePanelStyle
+###  SidePanelStyle
 
 The style for the sidepanel of the DockingManager can be customized using the `SidePanelStyle` property with the TargetType as `SidePanel`.
 
@@ -1121,13 +1121,13 @@ The style for the sidepanel of the DockingManager can be customized using the `S
 
 ![](StylingandTemplates_images/StylingandTemplates_img29.jpeg)
 
-### Drag Provider Style
+## Drag Provider Style
 
 DragProviders are those that appear while dragging a window. It allows you to drag the window to the left, right, top and bottom using the respective drag providers.
 
 DragProviders are displayed for providing options to dock the floatwindow while dragging and this drag provider button templates can be changed by the following templates.
 
-#### BottomDragProvider
+### BottomDragProvider
 
 The `BottomDragProvider` is used to dock the children of the Docking in the bottom side and it’s template can be customized using the `BottomDragProviderTemplate` by setting its TargetType as `ContentControl`.
 
@@ -1169,7 +1169,7 @@ syncfusion:DockingManager.State="Dock"/>
 ![](StylingandTemplates_images/StylingandTemplates_img30.jpeg)
 
 
-#### LeftDragProvider
+### LeftDragProvider
 
 The `LeftDragProvider` is used to dock the dock window to the left side and it can be customized using the `LeftDragProvider` property that helps to customize the template for the Left DragProvider by setting its Target as `ContentControl`. The same has been explained below:
 
@@ -1211,7 +1211,7 @@ syncfusion:DockingManager.State="Dock"/>
 ![](StylingandTemplates_images/StylingandTemplates_img31.jpeg)
 
 
-#### RightDragProvider
+### RightDragProvider
 
 To dock the DockingManager to the right side, the `RightDragProvider` is used and it can be customized using the `RightDragProviderTemplate` with the TargetType as `ContentControl`.
 
@@ -1252,7 +1252,7 @@ syncfusion:DockingManager.State="Dock"/>
 ![](StylingandTemplates_images/StylingandTemplates_img32.jpeg)
 
 
-#### TopDragProvider
+### TopDragProvider
 
 To dock the DockingManager at the top, the `TopDragProvider` is used and it can be customized using the `TopDragProviderTemplate` with the TargetType as ContentControl.
 
@@ -1293,7 +1293,7 @@ syncfusion:DockingManager.State="Dock"/>
 ![](StylingandTemplates_images/StylingandTemplates_img33.jpeg)
 
 
-#### CenterDragProvider
+### CenterDragProvider
 
 CenterDragProvider is used to dock the children of the DockingManager at the center Position and its template can be customized using the property CenterDragProvider.
 
@@ -1334,7 +1334,7 @@ syncfusion:DockingManager.State="Dock"/>
 ![](StylingandTemplates_images/StylingandTemplates_img34.jpeg)
 
 
-### DocumentTabControlStyle
+## DocumentTabControlStyle
 
 Document state in DockingManager used the DocumentTabControl. To customize the Document in the DockingManager the `DocumentTabControlStyle` property is used by setting its TargetType as `DocumentTabControl`.
 
@@ -1373,7 +1373,7 @@ syncfusion:DockingManager.State="Document"></ContentControl>
 ![](StylingandTemplates_images/StylingandTemplates_img35.jpeg)
 
 
-### DocumentTabItemStyle
+## DocumentTabItemStyle
 
 Each Document TabItem in DockingManager constructed by the TabItemExt and its style can be customized using `DocumentTabItemStyle` with the TargetType as `TabItemExt`
 
@@ -1407,7 +1407,7 @@ syncfusion:DockingManager.State="Document"/>
 ![](StylingandTemplates_images/StylingandTemplates_img36.jpeg)
 
 
-### DocumentMDIHeaderStyle
+## DocumentMDIHeaderStyle
 
 The header style for the Document MDI can be changed using the `DocumentMDIHeaderStyle` with the TargetType as `DocumentHeader`.
 
@@ -1437,7 +1437,7 @@ syncfusion:DockingManager.State="Document"/>
 ![](StylingandTemplates_images/StylingandTemplates_img37.jpeg)
 
 
-### TabControl style
+## TabControl style
 
 Tabcontrol inside the DockWindow for Tabbed side Windows can be customized using `TabControlStyle` with the TargetType as `TabControl` in the DockingManager
 
@@ -1472,7 +1472,7 @@ Tabcontrol inside the DockWindow for Tabbed side Windows can be customized using
 ![](StylingandTemplates_images/StylingandTemplates_img38.jpeg)
 
 
-#### TabItemStyle
+### TabItemStyle
 
 The style for the Tabbed children of DockingManager can be customized using the `TabItemStyle` property with the Target Type as `TabItem`.
 
