@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch Support
+title: Touch Support | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Touch Support

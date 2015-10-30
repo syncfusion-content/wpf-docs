@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing
+title: Testing | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Testing

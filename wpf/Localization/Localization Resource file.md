@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Localization

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Pattern and Practices
+title: Pattern and Practices | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Pattern and Practices
 documentation: ug
 ---
 #Pattern and Practices
+
 ## MVVM
 
 ### Getting Started:
