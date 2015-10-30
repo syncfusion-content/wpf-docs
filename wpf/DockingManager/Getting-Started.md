@@ -14,7 +14,7 @@ This section explains how to implement a similar UI as Visual Studio by using th
 
 ### Add Docking Manager
 
-There are [several ways](C:\Users\Selvaganapathy\Desktop\Need to redirect to Common section# "") to add Syncfusion control in to the Visual Studio WPF project. The following steps help to add a Docking Manager control through XAML Code.
+There are several ways to add Syncfusion control in to the Visual Studio WPF project. The following steps help to add a Docking Manager control through XAML Code.
 
 * Create a WPF project in Visual Studio and refer to the following assemblies.
 1. Syncfusion.Tools.Wpf
@@ -191,7 +191,7 @@ this.SyncDockingManager.LoadDockState();
 
 ### Set Visual Styles
 
-Docking Manager supports various visual styles by using the [SfSkinManager](C:\Users\Selvaganapathy\Desktop\Navigate to SfSkinManager Documentation# ""). To apply Visual Studio style on the current layout, refer to the following steps.
+Docking Manager supports various visual styles by using the SfSkinManager. To apply Visual Studio style on the current layout, refer to the following steps.
 
 * Refer to the following assemblies with the project
 1. Syncfusion.SfSkinManager.Wpf
