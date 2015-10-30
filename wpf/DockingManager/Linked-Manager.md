@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linked Manager 
+title: Linked Manager | DockingManager | wpf | Syncfusion
 description: Linked Manager 
 platform: wpf
 control: DockingManager
@@ -107,7 +107,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 
 #### Adding TargetManager list of DockingManager
 
-To add TargetManager list in the DockingManager call **AddToTargetManagersList()** method of the DockingManager with the valid DockingManager instance as argument.
+To add TargetManager list in the DockingManager call `AddToTargetManagersList()` method of the DockingManager with the valid DockingManager instance as argument.
 
 When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. 
 
@@ -141,7 +141,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 
 #### Removing Target Manager list
 
-To remove DockingManager from the TargetManagerList, call **RemoveFromTargetManagerList()** of DockingManager with the valid DockingManager instance argument. For instance, to remove the DockingManager1 from the TargetManagersList of DockingManager2, you can use the following code example:
+To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManagerList()` of DockingManager with the valid DockingManager instance argument. For instance, to remove the DockingManager1 from the TargetManagersList of DockingManager2, you can use the following code example:
 
 {% highlight c# %}
 
@@ -155,7 +155,7 @@ MainWindow.DockingManager2.RemoveFromTargetManagersList(this.DockingManager1);
 
 ### Nested Docking
 
-DockingManager provides the **NestedDockingManager** support, that allows you to add DockingManager as a child window to another DockingManager. 
+DockingManager provides the `NestedDockingManager` support, that allows you to add DockingManager as a child window to another DockingManager. 
 
 ### Getting Started
 

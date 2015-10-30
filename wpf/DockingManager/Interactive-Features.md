@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features | DockingManager | wpf | Syncfusion
-description: interactive features
+title: Interactive Features | DockingManager | WPF | Syncfusion
+description: interactive features of DockingManager
 platform: wpf
 control: DockingManager
 documentation: ug

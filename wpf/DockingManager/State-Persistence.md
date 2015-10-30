@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence
+title: State Persistence | DockingManager | WPF | Syncfusion
 description: State Persistence
 platform: wpf
 control: DockingManager
@@ -12,7 +12,7 @@ State persistence is the combined process of serialization and deserialization.
 
 DockingManager provides built-in state persistence functionality to save and load at different states and sides. And it also provides DeleteDockState and Reset Method to work on state functionality.
 
-To reset the DockingManager state, set the **ResetState()** method for DockingManager instance.
+To reset the DockingManager state, set the `ResetState()` method for DockingManager instance.
 
 {% highlight c# %}
 
@@ -24,7 +24,7 @@ DockingManager1.ResetState();
 
 {% endhighlight %}
 
-To delete the Dockstate of the DockingManager, set the **DeleteDockState()** for DockingManager instance
+To delete the Dockstate of the DockingManager, set the `DeleteDockState()` for DockingManager instance
 
 {% highlight c# %}
 
@@ -38,9 +38,9 @@ DockingManager1.DeleteDockState();
 
 ### Auto Save / Load functionalities
 
-DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the **PersistState** property as **True**. The default value of the **PersistState** property is **False**.
+DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the `PersistState` property as `True`. The default value of the `PersistState` property is `False`.
 
-To implement the auto save functionality, set the **PersistState** property as **True**. It saves the state of the DockingManager in an isolated storage format while WindowClosing. The same is explained in the following code example.
+To implement the auto save functionality, set the `PersistState` property as `True`. It saves the state of the DockingManager in an isolated storage format while WindowClosing. The same is explained in the following code example.
 
 {% highlight c# %}
 DockingManager1.PersistState = true;     
@@ -51,7 +51,7 @@ DockingManager1.PersistState = true;
 
 {% endhighlight %}
 
-To load the AutoPersiststate of the DockingManager, call the **LoadDockState** method of the DockingManager in its loaded event.
+To load the AutoPersiststate of the DockingManager, call the `LoadDockState` method of the DockingManager in its loaded event.
 
 {% highlight c# %}
 void DockingManager1_Loaded(object sender, RoutedEventArgs e)
@@ -92,7 +92,7 @@ Some of the formats are:
  IsolatedStorage<br/>BinaryFormat<br/> XML file<br/> XmlWriter<br/><br/><br/><br/></td></tr>
 </table>
 
-**Load and save the Dockstate using Isolated Storage:**
+`Load and save the Dockstate using Isolated Storage:`
 
 DockingManager allows you to save and load the dockstate using isolated storage.  
 
@@ -110,7 +110,7 @@ DockingManager1.ResetState();
 
 {% endhighlight %}
 
-**Save** **and** **Load** **using** **BinaryFormatter**
+#### Save and Load using BinaryFormatter
 
 DockingManager allows you to save and load the state of the DockingManager using binary formatter.
 
@@ -132,7 +132,7 @@ DockingManager1.SaveDockState(formatter);
 
 {% endhighlight %}
 
-**Save** **and** **Load** **using** **Xml** **file** 
+#### Save and Load using Xml file 
 
 DockingManager allows you to save and load the xml file. And it is done using binary formatter and sop formatter. The code example is as follows:
 
@@ -160,7 +160,7 @@ SoapFormatter formatter1 = new SoapFormatter(); DocContainer.SaveDockState(forma
 
 .
 
-**Save** **and** **Load** **using** **Bin**
+#### Save and Load using Bin
 
 DockingManager allows you to load and save the dock state in the bin file. 
 
@@ -180,7 +180,7 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin")
 
 {% endhighlight %}
 
-**Save** **and** **Load** **using** **Xmlwriter** 
+#### Save and Load using Xmlwriter 
 
 DockingManager allows you to load and save the dock state using XMLWriter.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started
-description: Getting Started
+title: Getting Started | DockingManager | WPF | Syncfusion
+description: Getting Started for DockingManager
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -71,7 +71,7 @@ Docking Manager can accept any control as its children. Here, five content contr
 
 ### Set Header for each child Window
 
-Docking Manger provides with an attached **Header** property that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
+Docking Manger provides with an attached `Header` property that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" >
@@ -97,11 +97,11 @@ Docking Manger provides with an attached **Header** property that helps to set t
 
 ### Set States for each Child Window
 
-Docking Manager provides an attached **State** property that helps to set the state of a child windows. Since, **Dock** is the default value, initially all the children stay in the Docking Window.
+Docking Manager provides an attached `State` property that helps to set the state of a child windows. Since, `Dock` is the default value, initially all the children stay in the Docking Window.
 
-To Auto hide the “ToolBox” window, set its **State** property as **AutoHidden**. Repeat the same procedure with the **State** value as **Float** and **Document** for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
+To Auto hide the “ToolBox” window, set its `State` property as `AutoHidden`. Repeat the same procedure with the `State` value as `Float` and `Document` for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
 
-Also, enable the Document Container for the Document view by setting the **UseDocumentContainer** property to **True**.
+Also, enable the Document Container for the Document view by setting the `UseDocumentContainer` property to `True`.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
@@ -127,11 +127,11 @@ Also, enable the Document Container for the Document view by setting the **UseDo
 
 ### Set Sides for the children
 
-Docking Manager provides an attached **SideInDockMode** property that helps to dock a window at the required side. Since, **Left** is the default value, initially all the windows are docked in the left side. 
+Docking Manager provides an attached `SideInDockMode` property that helps to dock a window at the required side. Since, `Left` is the default value, initially all the windows are docked in the left side. 
 
-Set the **SideInDockMode** value as **Right** for “Solution Explorer” window to dock it on the right side.
+Set the `SideInDockMode` value as `Right` for “Solution Explorer” window to dock it on the right side.
 
-The **side** property has a **Tabbed** option used to tab a window on another window. The tabbing windows should be aware of the target window’s name. So, set “Output” window’s **TargetNameInDockedMode** as “SolutionExplorer” to Tab it on the “SolutionExplorer” window.
+The `side` property has a `Tabbed` option used to tab a window on another window. The tabbing windows should be aware of the target window’s name. So, set “Output” window’s `TargetNameInDockedMode` as “SolutionExplorer” to Tab it on the “SolutionExplorer” window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
@@ -157,7 +157,7 @@ The **side** property has a **Tabbed** option used to tab a window on another wi
 
 ### Save / Load
 
-The Persist State feature of the Docking Manager helps to save the current layout of the Docking Manager automatically, while closing the window. To enable this feature, set **PersistState** property to **True**
+The Persist State feature of the Docking Manager helps to save the current layout of the Docking Manager automatically, while closing the window. To enable this feature, set `PersistState` property to `True`
 
 {% highlight xml %}
 
@@ -179,7 +179,7 @@ The Persist State feature of the Docking Manager helps to save the current layou
 
 {% endhighlight %}
 
-The saved state can be reload by calling the **LoadDockStated** method, whenever it is required to load the states.
+The saved state can be reload by calling the `LoadDockStated` method, whenever it is required to load the states.
 
 {% highlight c# %}
 
@@ -197,7 +197,7 @@ Docking Manager supports various visual styles by using the SfSkinManager. To ap
 1. Syncfusion.SfSkinManager.Wpf
 2. Syncfusion.Thems.VisualStudio2013.Wpf
 
-* Include an xml namespace for the **SfSkinManager** assembly to the Main window.
+* Include an xml namespace for the `SfSkinManager` assembly to the Main window.
 
 {% highlight xml %}
 
@@ -221,7 +221,7 @@ Title="MainWindow" Height="350" Width="525" />
 
 {% endhighlight %}
 
-* Now, apply the value as **VisualStudio2013** to the Visual Style property of the SfSkinManager for the Docking Manager control.
+* Now, apply the value as `VisualStudio2013` to the Visual Style property of the SfSkinManager for the Docking Manager control.
 
 {% highlight xml %}
 
