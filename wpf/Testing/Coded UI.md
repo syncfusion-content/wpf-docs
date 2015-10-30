@@ -6,11 +6,9 @@ platform: wpf
 control: Testing
 documentation: ug
 ---
-# Testing
+# Coded UI Testing
 
-## Coded UI
-
-### Getting Started
+## Getting Started
 
 CUIT contains the coded UI test project. When your application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
 
@@ -19,7 +17,7 @@ In case, the Coded UI test project does not appear on Visual Studio, you m
 ![](CodedUI_images/CodedUI_img1.jpeg)
 
 
-#### Adding Coded UI Test file
+### Adding Coded UI Test file
 
 The CUIT file is automatically generated, when you create the Coded UI test project. To add another test file, right-click to the test project choose Add, and then select Coded UI Test.
 
@@ -73,7 +71,7 @@ Click to Stop the Recording.
 
 
 
-#### Testing application with the Generated Coded UI Tests.
+### Testing application with the Generated Coded UI Tests.
 
 You can test the application with the generated **CUIT** method.
 
@@ -101,5 +99,40 @@ public void CodedUITestMethod1()
 
 
 ![](CodedUI_images/CodedUI_img9.jpeg)
+
+## Supported controls
+
+The following controls are featured in CodedUI Testing Support:
+
+<table>
+<tr>
+<td>
+**Supportedcontrols**<br/><br/></td><td><td>
+**Level**<br/><br/></td></tr>
+<tr>
+<td>
+CellGrid<br/><br/></td><td><td>
+3 Level<br/><br/></td></tr>
+<tr>
+<td>
+DataGrid<br/><br/></td><td><td>
+3 Level<br/><br/></td></tr>
+<tr>
+<td>
+TreeGrid<br/><br/></td><td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+GridDataControl<br/><br/></td><td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+Ribbon<br/><br/></td><td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+DockingManager<br/><br/></td><td><td>
+2 Level<br/><br/></td></tr>
+</table>
 
 
