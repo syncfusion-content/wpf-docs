@@ -120,7 +120,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 The navigation button displayed in the center of radial menu can be styled using NaviationButtonStyle property. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -135,7 +135,7 @@ IsOpen="True" />
 
 Each SfRadialMenuItem can be set with a different background color on mouse over by using the MenuMouseOverBackgroundColor property. Before that, the ShowMouseOverStyle property should be set to true.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
