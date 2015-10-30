@@ -11,7 +11,7 @@ documentation: ug
 
 The Icon property of the RadialMenu is used to customize the icon displayed in the center of RadialMenu circle.   
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
