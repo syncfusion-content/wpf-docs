@@ -6,11 +6,11 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-## Linked Manager 
+# Linked Manager 
 
 The windows from one DockingManager cannot be dragged and dropped to another, by default. Linked Manager allows you to drag and drop the windows from one DockingManager to another by the TargetDockingManager list.
 
-### Getting Started
+## Getting Started
 
 {% highlight xml %}
 
@@ -105,7 +105,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 ![](LinkedManager_images/LinkedManager_img1.jpeg)
 
 
-#### Adding TargetManager list of DockingManager
+### Adding TargetManager list of DockingManager
 
 To add TargetManager list in the DockingManager call `AddToTargetManagersList()` method of the DockingManager with the valid DockingManager instance as argument.
 
@@ -139,7 +139,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 
 {% endhighlight %}
 
-#### Removing Target Manager list
+### Removing Target Manager list
 
 To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManagerList()` of DockingManager with the valid DockingManager instance argument. For instance, to remove the DockingManager1 from the TargetManagersList of DockingManager2, you can use the following code example:
 
@@ -153,15 +153,15 @@ MainWindow.DockingManager2.RemoveFromTargetManagersList(this.DockingManager1);
 
 {% endhighlight %}
 
-### Nested Docking
+## Nested Docking
 
 DockingManager provides the `NestedDockingManager` support, that allows you to add DockingManager as a child window to another DockingManager. 
 
-### Getting Started
+## Getting Started
 
 In Nested DockingManager, the whole DockingManager can be dragged and dropped inside the Parent DockingManager and DockWindows inside the DockingManager cannot be dragged and dropped on the owner DockingManager.
 
-#### Adding DockingManager as Child in DockingManager
+### Adding DockingManager as Child in DockingManager
 
 {% highlight xml %}
 

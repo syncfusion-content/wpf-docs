@@ -6,13 +6,11 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Docking Manager
-
-## Getting Started
+# Getting Started
 
 This section explains how to implement a similar UI as Visual Studio by using the Docking Manager. 
 
-### Add Docking Manager
+## Add Docking Manager
 
 There are several ways to add Syncfusion control in to the Visual Studio WPF project. The following steps help to add a Docking Manager control through XAML Code.
 
@@ -43,7 +41,7 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 {% endhighlight %}
 
-### Add Children to the Docking Manager 
+## Add Children to the Docking Manager 
 
 Docking Manager can accept any control as its children. Here, five content control is added as the child that is displayed with different Sides and States of the Docking Manager.
 
@@ -69,7 +67,7 @@ Docking Manager can accept any control as its children. Here, five content contr
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
-### Set Header for each child Window
+## Set Header for each child Window
 
 Docking Manger provides with an attached `Header` property that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
 
@@ -95,7 +93,7 @@ Docking Manger provides with an attached `Header` property that helps to set the
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
-### Set States for each Child Window
+## Set States for each Child Window
 
 Docking Manager provides an attached `State` property that helps to set the state of a child windows. Since, `Dock` is the default value, initially all the children stay in the Docking Window.
 
@@ -125,7 +123,7 @@ Also, enable the Document Container for the Document view by setting the `UseDoc
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
-### Set Sides for the children
+## Set Sides for the children
 
 Docking Manager provides an attached `SideInDockMode` property that helps to dock a window at the required side. Since, `Left` is the default value, initially all the windows are docked in the left side. 
 
@@ -155,7 +153,7 @@ The `side` property has a `Tabbed` option used to tab a window on another window
 ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
-### Save / Load
+## Save / Load
 
 The Persist State feature of the Docking Manager helps to save the current layout of the Docking Manager automatically, while closing the window. To enable this feature, set `PersistState` property to `True`
 
@@ -189,7 +187,7 @@ this.SyncDockingManager.LoadDockState();
 
 {% endhighlight %}
 
-### Set Visual Styles
+## Set Visual Styles
 
 Docking Manager supports various visual styles by using the SfSkinManager. To apply Visual Studio style on the current layout, refer to the following steps.
 

@@ -6,7 +6,7 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-## State Persistence
+# State Persistence
 
 State persistence is the combined process of serialization and deserialization. 
 
@@ -36,7 +36,7 @@ DockingManager1.DeleteDockState();
 
 {% endhighlight %}
 
-### Auto Save / Load functionalities
+## Auto Save / Load functionalities
 
 DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the `PersistState` property as `True`. The default value of the `PersistState` property is `False`.
 
@@ -68,19 +68,19 @@ DockingManager1.LoadDockState();
 
 {% endhighlight %}
 
-### Manipulating Save / Load functionalities
+## Manipulating Save / Load functionalities
 
-### Serialize a complex layout
+## Serialize a complex layout
 
 DockingManager allows you to save a complex layout also. For example, it also saves the complex layout like Nested DockingManager.
 
-### Serialize the dynamically added children
+## Serialize the dynamically added children
 
 By default, DockingManager cannot serialize its Saved Layout, when its child collection is modified after DockState is saved. Since in the DockingManager, the state persistance feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads only the same state of the DockingManager of the children collection, same as saved layout, so when any child collection changes dynamically, it results in an improper layout.
 
 To save the dynamically added children, you can use dispatcher, but it has some limitations. For this case, you can maintain serialized files in application level and deserialize when needed.
 
-### Various formats to Save / Load states
+## Various formats to Save / Load states
 
 DockingManager allows you to save and load the Dockstates of windows in DockingManager in different format.
 

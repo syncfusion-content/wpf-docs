@@ -6,14 +6,14 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-## Tabbed Window
+# Tabbed Window
 
 To make the children as Tabbed windows, you can use the TargetName and set the side value as `“Tabbed”` using the property `SideInDockedMode`.
 
 ![](TabbedWindow_images/TabbedWindow_img1.jpeg)
 
 
-###  Tab alignments
+##  Tab alignments
 
 The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as `Top` , `Bottom` , `Left` and `Right`. 
 
@@ -80,7 +80,7 @@ syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
 ![](TabbedWindow_images/TabbedWindow_img5.jpeg)
 
 
-### Closing a Tabbed window
+## Closing a Tabbed window
 
 Tabbed window provides two different closing behaviors. They are `CloseActive` and `CloseAll` modes of `CloseTabs` property.
 
