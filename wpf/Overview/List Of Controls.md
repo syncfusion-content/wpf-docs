@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Welcome to Syncfusion Essential WPF | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Overview

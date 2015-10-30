@@ -1,12 +1,13 @@
 ---
 layout: post
-title: System Requirement
+title: System Requirement | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: System Requirement
 documentation: ug
 ---
 #System Requirement
+
 ## Framework
 
 The following frameworks are supported:

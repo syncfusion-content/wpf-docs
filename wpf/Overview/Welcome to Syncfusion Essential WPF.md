@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Welcome to Syncfusion Essential WPF | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Overview
@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 #Overview
+
 ## Welcome to Syncfusion Essential WPF
 
 Essential WPF is a comprehensive collection of over 100+ enterprise-grade WPF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Gantt, Scheduler, Diagram and much more.

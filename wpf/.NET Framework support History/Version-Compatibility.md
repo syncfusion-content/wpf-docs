@@ -1,12 +1,12 @@
 ---
 layout: post
-title: .Net Framework support History
+title: .Net Framework support History | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: .Net Framework support History
 documentation: ug
 ---
-
+#.NET Framework support History
 
 ## Version Compatibility
 

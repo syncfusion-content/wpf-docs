@@ -1,25 +1,22 @@
 ---
 layout: post
 title: Blend Support
-description: common supports
+description: common supports | WPF | Syncfusion
 platform: wpf
 control: Blend Support
 documentation: ug
 ---
 
-# Blend Support
+# Getting Started for Blend Support
 
 The following section explains about the following topics:
 
 * Edit control Style in Expression Blend
 * Edit Control Template in Expression Blend
 
-## Getting Started
-
-
 The following steps help you edit the Template in Expression Blend.
 
-### Edit control Style in Expression Blend
+## Edit control Style in Expression Blend
 
 1. Open your application in Expression Blend. 
 2. Expand the Window, Objects and Timeline.
@@ -42,7 +39,7 @@ The following steps help you edit the Template in Expression Blend.
 
       c. Create Empty – this option helps to create an empty style for selected control. If you choose it, the same **Create** **Style** **Resource** dialog box is opened. You can select the name for your style, as well as choose the location.
 
-### Edit control Template in Expression Blend
+## Edit control Template in Expression Blend
 
 1. Open your application in Expression Blend. 
 2. Expand the Window, Objects and Timeline.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment
+title: Installation and Deployment | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Installation and Deployment
