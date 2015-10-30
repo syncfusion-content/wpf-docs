@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Syncfusion Controls
+title: Add Syncfusion Controls | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Add Syncfusion Controls

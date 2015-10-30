@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes
+title: Themes | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Themes

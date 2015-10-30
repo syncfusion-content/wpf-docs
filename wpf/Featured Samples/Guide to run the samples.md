@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Featured Samples
+title: Featured Samples | WPF | Syncfusion
 description: common supports
 platform: wpf
 control: Featured Samples
