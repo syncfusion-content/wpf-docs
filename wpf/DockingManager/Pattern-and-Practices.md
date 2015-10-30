@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Patterns and Practices
+title: Patterns and Practices | Docking Manager | WPF | Syncfusion
 description: Patterns and Practices
 platform: wpf
 control: DockingManager
@@ -10,24 +10,24 @@ documentation: ug
 
 ### MVVM 
 
-This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an __item__ __control__, it is not possible to have a traditional **"Itemsource"** binding to a collection of objects in the view model. This can, however, be achieved by creating a wrapper or adapter for the DockingManager.
+This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an __item__ __control__, it is not possible to have a traditional `"Itemsource"` binding to a collection of objects in the view model. This can, however, be achieved by creating a wrapper or adapter for the DockingManager.
 
 Here a simple text-reader application is used to demonstrate this approach. Example:
 
 ![](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
 
-1. **Documents** **View**: The pane that lists all the available documents. The tooltip will display the path of the document.
-2. ******Properties** **View**: The pane that shows the properties of a document. Our PropertyGrid control is used here.
-3. **Document** **View**: The pane that uses the WPF flow-document reader to display the content of a file.
-4. **Command** **View**: The view has two commands: **Open** **Document** and **Exit**. Executing an **Open** **Document** action will open the **Open** **File** **Dialog**. The document that opened will be added to the existing documents list. Other commands like **Close** **Document** and **New** **Document** can also be implemented the same way.
+1. `Documents` `View`: The pane that lists all the available documents. The tooltip will display the path of the document.
+2. `Properties` `View`: The pane that shows the properties of a document. Our PropertyGrid control is used here.
+3. `Document` `View`: The pane that uses the WPF flow-document reader to display the content of a file.
+4. `Command` `View`: The view has two commands: `Open` Document and `Exit`. Executing an `Open` Document action will open the Open File Dialog. The document that opened will be added to the existing documents list. Other commands like `Close` Document and `New` Document can also be implemented the same way.
 5. The project structure looks like this:
 
 ![](PatternandPractices_images/PatternandPractices_img2.jpeg)
 
 
-**Docking** **Adapter** 
-The adapter is simply a user control that contains docking manager as its content. The adapter has two properties— **ItemsSource** and **ActiveDocument**. Binding a collection of objects to the **ItemsSource** property triggers a collection change where the adapter creates a corresponding framework element, example: a Content control, in the docking manager, setting the underlying data context of the control to the business model.
+#### Docking Adapter
+The adapter is simply a user control that contains docking manager as its content. The adapter has two properties— `ItemsSource` and `ActiveDocument`. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: a Content control, in the docking manager, setting the underlying data context of the control to the business model.
 
 {% highlight xml %}
 
@@ -57,20 +57,20 @@ The adapter user control also determines the state of the element, whether it sh
 
 __(__The__ __adapter__ __can__ __be__ __further__ __customized__ __to__ __add__ __elements__ __as__ __floating__ __or__ __auto____-____hidden__.)__
 
-The docking manager provides an **ActiveWindowChanged** event. Using this, the **ActiveDocument** property in the adapter needs to be updated every time focus changes to other panes.
+The docking manager provides an `ActiveWindowChanged` event. Using this, the `ActiveDocument` property in the adapter needs to be updated every time focus changes to other panes.
 
-**Application** **structure**
+#### Application structure
 
 ![](PatternandPractices_images/PatternandPractices_img4.jpeg)
 
 
-The view model has a collection of workspaces that is data-bound to the **ItemsSource** property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the docking manager.
+The view model has a collection of workspaces that is data-bound to the `ItemsSource` property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the docking manager.
 
 Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
-**Data** **Template** 
+`Data` `Template` 
 
-Since WPF has an implicit template approach, it is easy to apply visuals to the view models. In this application, the data templates are defined in **App.xaml** with only the **DataType** attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
+Since WPF has an implicit template approach, it is easy to apply visuals to the view models. In this application, the data templates are defined in `App.xaml` with only the `DataType` attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
 
 {% highlight xml %}
 <application.resources>
@@ -113,7 +113,7 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 
 Following this approach, the docking adapter can also be treated as a normal item control and can be used in any MVVM application.
 
-**Sample** **link**
+#### Sample link
 
 [http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip# "")
 
