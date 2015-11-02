@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonComboBox
+# RibbonComboBox
 
-**RibbonComboBox** control is used to display the list of items, as drop-down menu in **Ribbon** instance **RibbonComboBox** accepts any number of items to the **RibbonComboBox**.
+RibbonComboBox control is used to display the list of items, as drop-down menu in Ribbon instance RibbonComboBox accepts any number of items to the RibbonComboBox.
 
-### Creating control in XAML
+## Creating control in XAML
 
 You can use RibbonComboBox in Ribbon by add it inside the RibbonBar element.
 
@@ -70,9 +70,9 @@ You can use RibbonComboBox in Ribbon by add it inside the RibbonBar element.
 
 {% endhighlight %}
 
-### Creating control in code behind			
+## Creating control in code behind			
 
-Create instance of **RibbonComboBox** and add it to **RibbonBar** Items.
+Create instance of RibbonComboBox and add it to RibbonBar Items.
 
 {% highlight c# %}
 

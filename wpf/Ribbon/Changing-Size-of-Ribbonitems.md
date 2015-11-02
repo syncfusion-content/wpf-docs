@@ -6,13 +6,13 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Changing Size of Ribbon items
+# Changing Size of Ribbon items
 
-**SizeForm** is used to set the size of the Ribbon items that are added inside the **Ribbon** control.
+`SizeForm` is used to set the size of the Ribbon items that are added inside the **Ribbon** control.
 
-Possible values of **SizeForm** are Large, Small and ExtraSmall.
+Possible values of `SizeForm` are Large, Small and ExtraSmall.
 
-### List of controls which support SizeForm
+## List of controls which support SizeForm
 
 * RibbonButton
 * DropDownButton

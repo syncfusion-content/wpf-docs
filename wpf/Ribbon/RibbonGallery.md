@@ -6,9 +6,9 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonGallery
+# RibbonGallery
 
-### Visual Mode
+## Visual Mode
 
 RibbonGallery has two visual modes. Visual Mode of RibbonGallery is set by VisualMode property of RibbonGallery.
 
@@ -48,7 +48,7 @@ DropDown Mode
 ![](RibbonGallery_images/RibbonGallery_img2.jpeg)
 
 
-### Ribbon Gallery item
+## Ribbon Gallery item
 
 The following code example illustrates how to add RibbonGalleryItem to RibbonGallery control in Ribbon instance.
 
@@ -115,11 +115,11 @@ _RibbonGallery.Items.Add(_RibbonGalleryItem1);
 ![](RibbonGallery_images/RibbonGallery_img3.jpeg)
 
 
-### Ribbon Gallery group
+## Ribbon Gallery group
 
 Ribbon Gallery Group is a collection of Ribbon Gallery Items. Ribbon Gallery Groups are used to group the items in the Ribbon Gallery control based on some classifications.
 
-**Gallery** **filter**
+`Gallery filter`
 
 It is must, add GalleryGroupFilters to RibbonGallery control, a particular RibbonGalleryGroup gets displayed. FilterIndexes property is used to specify the indexes of the filters.
 
@@ -198,7 +198,7 @@ The following code example illustrates How to use GalleryGroup and GalleryFilter
 ![](RibbonGallery_images/RibbonGallery_img4.jpeg)
 
 
-### Adding custom menu items
+## Adding custom menu items
 
 In the expanded Gallery items (in both the Visual Mode), can add custom menu items to the bottom of the Ribbon Gallery control, using the MenuItem property of RibbonGallery.
 

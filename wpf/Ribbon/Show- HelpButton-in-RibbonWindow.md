@@ -6,9 +6,9 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Show HelpButton in RibbonWindow
+# Show HelpButton in RibbonWindow
 
-The HelpButton displays the information about the application.To enable this HelpButton in **Office2013** theme, set **ShowHelpButton** as "**True**" 
+The HelpButton displays the information about the application.To enable this HelpButton in `Office2013` theme, set `ShowHelpButton` as `True` 
 
 {% highlight xml %}
 
@@ -29,14 +29,14 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 ![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img1.jpeg)
 
 
-To set the HelpButton at the right of the RibbonWindow for the themes except Office2013, use **TabPanelItem** property of the Ribbon
+To set the HelpButton at the right of the RibbonWindow for the themes except Office2013, use `TabPanelItem` property of the Ribbon
 
 The TabPanelItem is located at the right corner below the main window close button in the following screen shot.
 
 ![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img2.jpeg)
 
 
-This following code snippet explains how to create and configure __TabPanelItem__**.**
+This following code snippet explains how to create and configure TabPanelItem.
 
 {% highlight xml %}
 

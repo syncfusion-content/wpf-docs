@@ -6,20 +6,20 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## UI for ToolTip
+# UI for ToolTip
 
 Tooltip is used to display small information about the specific element while hovering mouse on it and it was implemented as like in MS Outlook.
 
-**ScreenTip** is an enhanced **ToolTip** and it is used to show a popup window when the mouse cursor is hovered over **RibbonItem**. The popup is used to provide details of the **RibbonItem’s** function. The difference between ToolTip and ScreenTip is that, ToolTip hosts controls to show a small popup window, whereas ScreenTip includes predefined properties. With these predefined properties, you can create ScreenTip easily.
+`ScreenTip` is an enhanced ToolTip and it is used to show a popup window when the mouse cursor is hovered over `RibbonItem`. The popup is used to provide details of the `RibbonItem’s` function. The difference between ToolTip and ScreenTip is that, ToolTip hosts controls to show a small popup window, whereas ScreenTip includes predefined properties. With these predefined properties, you can create ScreenTip easily.
 
 ScreenTip has four properties.
 
-1. **Description** - Specifies the description of the ScreenTip.
-2. **Image** - Specifies the image of the ScreenTip.
-3. **Content** - Specifies the content of the ScreenTip.
-4. **HelpText** - Specifies the HelpText of the ScreenTip.
+1. `Description` - Specifies the description of the ScreenTip.
+2. `Image` - Specifies the image of the ScreenTip.
+3. `Content` - Specifies the content of the ScreenTip.
+4. `HelpText` - Specifies the HelpText of the ScreenTip.
 
-### Adding Tooltip for Ribbon items
+## Adding Tooltip for Ribbon items
 
 The following code illustrates how to set Tooltip for the RibbonItems
 
@@ -120,9 +120,9 @@ The following code illustrates how to set Tooltip for the RibbonItems
 ![](UIforToolTip_images/UIforToolTip_img1.jpeg)
 
 
-### Setting the ToolTip for the Upper and Lower Half of the Split Button
+## Setting the ToolTip for the Upper and Lower Half of the Split Button
 
-The **ToolTip** property is used to set the tooltip for the upper half of the Split Button, while the **ToggleButtonToolTip** property is used to set the tooltip for the drop-down in the lower half of the split button. Here is the code snippet for setting these properties.
+The ToolTip property is used to set the tooltip for the upper half of the Split Button, while the `ToggleButtonToolTip` property is used to set the tooltip for the drop-down in the lower half of the split button. Here is the code snippet for setting these properties.
 
 {% highlight xml %}
 
@@ -160,7 +160,7 @@ The **ToolTip** property is used to set the tooltip for the upper half of the 
 ![](UIforToolTip_images/UIforToolTip_img3.jpeg)
 
 
-### Options for Inserting Help Text in ScreenTip
+## Options for Inserting Help Text in ScreenTip
 
 Essential Tool WPF is enhanced with HelpText option. Users can add help text in ScreenTip. A line separator separates the Screen tip information from help text.
 

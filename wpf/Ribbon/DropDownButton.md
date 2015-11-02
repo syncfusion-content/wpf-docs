@@ -6,13 +6,13 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## DropDownButton
+# DropDownButton
 
 DropDownButton is a button control which contains a drop arrow, when clicked on it the menu related to the button is displayed
 
-### Creating DropDownMenuItem
+## Creating DropDownMenuItem
 
-Using **DropDownMenuItem** we can add items to **SplitButton** and **DropDownButton**.
+Using `DropDownMenuItem` we can add items to `SplitButton` and `DropDownButton`.
 
 The following code example illustrates how to use DropDownMenuItems in Ribbon instance.
 
@@ -48,7 +48,7 @@ The following code example illustrates how to use DropDownMenuItems in Ribbon in
 
 {% endhighlight %}
 
-Create instance of **DropDownMenuItems** and add it to **DropDownButton** Items.
+Create instance of `DropDownMenuItems` and add it to `DropDownButton` Items.
 
 {% highlight c# %}
 
@@ -69,11 +69,11 @@ _DropDownButton.Items.Add(_DropDownMenuItem1);
 ![](DropDownButton_images/DropDownButton_img1.jpeg)
 
 
-### Adding DropDownMenuItem to DropDownMenuGroup
+## Adding DropDownMenuItem to DropDownMenuGroup
 
-DropDownMenuItems can be grouped by using **DropDownMenuGroup**.
+DropDownMenuItems can be grouped by using `DropDownMenuGroup`.
 
-The following code example illustrates how to add Dropdown MenuItems to **DropDownMenuGroup** in **Ribbon** instance.
+The following code example illustrates how to add Dropdown MenuItems to `DropDownMenuGroup` in Ribbon instance.
 
 {% highlight xml %}
 
@@ -121,7 +121,7 @@ The following code example illustrates how to add Dropdown MenuItems to **DropDo
 
 {% endhighlight %}
 
-Create instance of **DropDownMenuItem** and add it to **DropDownMenuGroup** Items.
+Create instance of `DropDownMenuItem` and add it to `DropDownMenuGroup` Items.
 
 {% highlight c# %}
 
@@ -150,9 +150,9 @@ _DropDownMenuGroup2.Items.Add(_DropDownMenuItem3);
 ![](DropDownButton_images/DropDownButton_img2.jpeg)
 
 
-### Control can be created in three types of sizes
+## Control can be created in three types of sizes
 
-**DropDownButton** have three types of size forms. You can set size forms using SizeForm Property.
+`DropDownButton` have three types of size forms. You can set size forms using SizeForm Property.
 
 The following code example illustrates different size forms of DropDownButton in Ribbon instance.
 

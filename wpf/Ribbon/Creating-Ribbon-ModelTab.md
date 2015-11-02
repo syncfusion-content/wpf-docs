@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Creating Ribbon Model Tab
+# Creating Ribbon Model Tab
 
 Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are found in the core tabs. At this point, the core tabs will be disabled.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 Print Preview is a Modal Tab which displays Print Preview related commands
 
@@ -20,9 +20,9 @@ Print Preview is a Modal Tab which displays Print Preview related commands
 ![C:/Users/Sugapriyam/Desktop/viji/2.png](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img2.jpeg)
 
 
-### Adding Modal Tabs to an Application
+## Adding Modal Tabs to an Application
 
-To add RibbonTabs as ModalTabs in an application,use **ModalTabCollection** property of the Ribbon. This is illustrated in the code given below.
+To add RibbonTabs as ModalTabs in an application,use `ModalTabCollection` property of the Ribbon. This is illustrated in the code given below.
 
 {% highlight xml %}
 
@@ -50,9 +50,9 @@ To add RibbonTabs as ModalTabs in an application,use **ModalTabCollection** prop
 
 {% endhighlight %}
 
-### Tables for properties, methods
+## Tables for properties, methods
 
-#### Properties
+### Properties
 
 ModalTabCollection Table
 
@@ -72,7 +72,7 @@ Dependency Property<br/><br/></td><td>
 ModalTabsCollection<br/><br/></td><td>
 Null Collection<br/><br/></td></tr>
 </table>
-#### Methods
+### Methods
 
 ShowModalTab Table
 
@@ -110,11 +110,11 @@ No Params<br/><br/></td><td>
 Bool<br/><br/></td><td>
 <br/><br/></td></tr>
 </table>
-### How to handle Modal Tabs in Ribbon?
+## How to handle Modal Tabs in Ribbon?
 
-The **ShowModalTab** and **CloseModalTabs** method handle the visibility of the Modal Tabs in the Ribbon control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
+The `ShowModalTab` and `CloseModalTabs` method handle the visibility of the Modal Tabs in the Ribbon control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
 
-To show specific Modal Tab in ribbon, call **ShowModalTab** method.This can be done from any event of core Ribbon Tab control
+To show specific Modal Tab in ribbon, call `ShowModalTab` method.This can be done from any event of core Ribbon Tab control
 
 This is illustrated in the code given below.
 
@@ -136,7 +136,7 @@ this.MyRibbon.ShowModalTab("printpreviewtab");
 
 {% endhighlight %}
 
-**CloseModalTabs** method will close the currently opened Modal Tab in Ribbon control. This method should be called in any event of currently displaying Modal Tab element.This is illustrated in the code given below.
+`CloseModalTabs` method will close the currently opened Modal Tab in Ribbon control. This method should be called in any event of currently displaying Modal Tab element.This is illustrated in the code given below.
 
 {% highlight c# %}
 

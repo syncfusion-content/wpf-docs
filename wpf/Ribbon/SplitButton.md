@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## SplitButton
+# SplitButton
 
-### Adding Item to the control
+## Adding Item to the control
 
-Items to **SplitButton** are added by using **DropDownMenuItems**.
+Items to SplitButton are added by using DropDownMenuItems.
 
 {% highlight xml %}
 
@@ -52,7 +52,7 @@ Items to **SplitButton** are added by using **DropDownMenuItems**.
 
 {% endhighlight %}
 
-You can add Items to SplitButton dynamically by create instance of **DropDownMenuItems** add it to SplitButton Items.
+You can add Items to SplitButton dynamically by create instance of DropDownMenuItems add it to SplitButton Items.
 
 {% highlight c# %}
 
@@ -75,9 +75,9 @@ _RibbonBar2.Items.Add(_splitbutton);
 ![](SplitButton_images/SplitButton_img1.jpeg)
 
 
-### Three types of SizeForm
+## Three types of SizeForm
 
-**SplitButton** have three types of size forms. You can set size forms using **SizeForm** Property.
+SplitButton have three types of size forms. You can set size forms using `SizeForm` Property.
 
 The following code example illustrates different size forms of SplitButton in Ribbon instance.
 

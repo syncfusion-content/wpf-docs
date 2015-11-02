@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonListBox
+# RibbonListBox
 
-**RibbonListBox** control is used to display a list of items in a **Ribbon** instance. You can add any type of content as **RibbonListBox** items.
+RibbonListBox control is used to display a list of items in a Ribbon instance. You can add any type of content as RibbonListBox items.
 
-The following code example illustrates How to use **RibbonListBox** control in **Ribbon** instance.
+The following code example illustrates How to use RibbonListBox control in Ribbon instance.
 
 {% highlight xml %}
 

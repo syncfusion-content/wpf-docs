@@ -6,13 +6,13 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Getting Started
+# Getting Started
 
-This section explains how to implement a similar UI as Microsoft Outlook using **Ribbon**. 
+This section explains how to implement a similar UI as Microsoft Outlook using `Ribbon`. 
 
-### Adding Ribbon
+## Adding Ribbon
 
-There are several ways to add Syncfusion control in to Visual Studio WPF project, the following steps will helps to add a **Ribbon** control through XAML Code.
+There are several ways to add Syncfusion control in to Visual Studio WPF project, the following steps will helps to add a Ribbon control through XAML Code.
 
 * Create a WPF project in Visual Studio and refer the following assemblies.
 
@@ -35,7 +35,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                 x:Class="Ri
 
 {% endhighlight %}
 
-* Change the Window as **RibbonWindow**.
+* Change the Window as `RibbonWindow`.
 
 {% highlight xml %}
 
@@ -55,7 +55,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 {% endhighlight %}
 
-* Add following namespace and Inherit **MainWindow** from **RibbonWindow** in code behind.
+* Add following namespace and Inherit MainWindow from RibbonWindow in code behind.
 
 {% highlight c# %}
 
@@ -73,7 +73,7 @@ public partial class MainWindow : RibbonWindow
 
 {% endhighlight %}
 
-* Now, Add the **Ribbon** control with a required optimal name, using the included namespace in XAML.
+* Now, Add the Ribbon control with a required optimal name, using the included namespace in XAML.
 
 {% highlight xml %}
 
@@ -97,9 +97,9 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endhighlight %}
 
-### Creating control in code behind
+## Creating control in code behind
 
-To create **Ribbon** control in code behind create instance of **Ribbon** control and add it to window.
+To create Ribbon control in code behind create instance of Ribbon control and add it to window.
 
 {% highlight c# %}
 
@@ -111,9 +111,9 @@ this.AddChild(_Ribbon1);
 
 {% endhighlight %}
 
-### Setting Visual Style of Ribbon
+## Setting Visual Style of Ribbon
 
-Essential Tools WPF provides support to set the visual style for the **Ribbon** control to enhance the appearance of the control. This is achieved by using the **VisualStyle** property of the **RibbonWindow**.
+Essential Tools WPF provides support to set the visual style for the Ribbon control to enhance the appearance of the control. This is achieved by using the VisualStyle property of the RibbonWindow.
 
 Different types of build in styles available in Ribbon:
 
@@ -132,7 +132,7 @@ Different types of build in styles available in Ribbon:
 * Metro
 * Office2013
 
-Here Microsoft **Office2013** style applied to **Ribbon** Control.
+Here Microsoft `Office2013` style applied to Ribbon Control.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -160,11 +160,11 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
-### Adding RibbonTab and RibbonBar
+## Adding RibbonTab and RibbonBar
 
-#### Adding Children to Ribbon control
+### Adding Children to Ribbon control
 
-Ribbon control accept **RibbonTab** as children, Here four **RibbonTab** added and that further can customize with **RibbonBar** and **RibbonItems**.
+Ribbon control accept `RibbonTab` as children, Here four `RibbonTab` added and that further can customize with `RibbonBar` and `RibbonItems`.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -202,9 +202,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
 
-#### Populating RibbonTab with RibbonBar
+### Populating RibbonTab with RibbonBar
 
-**RibbonTab** accepts **RibbonBar** as children, here five **RibbonBar** Controls are added inside HOME **RibbonTab**. You can set the header of **RibbonBar** using **Header** property of **RibbonBar**.
+RibbonTab accepts RibbonBar as children, here five RibbonBar Controls are added inside HOME RibbonTab. You can set the header of RibbonBar using `Header` property of RibbonBar.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -254,11 +254,11 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
-### Adding different types of button in Ribbon
+## Adding different types of button in Ribbon
 
-#### Adding RibbonButton
+### Adding RibbonButton
 
-**RibbonButton** provides functionalities like normal Button, Here a **RibbonButton** control is added inside the **“New”** **RibbonBar**.
+RibbonButton provides functionalities like normal Button, Here a RibbonButton control is added inside the `New` RibbonBar.
 
 {% highlight xml %}
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">                    
@@ -341,13 +341,13 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
-#### Adding button with more options
+### Adding button with more options
 
-##### Adding DropDownButton
+#### Adding DropDownButton
 
-**DropDownButton** in the **Ribbon** instance contains a drop arrow, when clicked on it the menu related to the button is displayed.
+DropDownButton in the Ribbon instance contains a drop arrow, when clicked on it the menu related to the button is displayed.
 
-**DropDownButton** accepts **DropDownMenuItem** as its children, Here **DropDownButton** control is added inside the “New“ RibbonBar.
+DropDownButton accepts DropDownMenuItem as its children, Here DropDownButton control is added inside the “New“ RibbonBar.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -432,11 +432,11 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 
-##### Adding SplitButton
+#### Adding SplitButton
 
-**SplitButton** in the **Ribbon** instance contains a drop arrow, when clicked on it, the menu related to the button is displayed. Events are raised, when main Button is clicked as well as when the sub item in the SplitButton is clicked.
+SplitButton in the Ribbon instance contains a drop arrow, when clicked on it, the menu related to the button is displayed. Events are raised, when main Button is clicked as well as when the sub item in the SplitButton is clicked.
 
-**SplitButton** accepts **DropDownMenuItem** as its children like **DropDownButton**, Here splitbuttons are added inside the “Delete” **RibbonBar** and “Respond” **RibbonBar**.
+SplitButton accepts DropDownMenuItem as its children like DropDownButton, Here splitbuttons are added inside the “Delete” RibbonBar and “Respond” RibbonBar.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -539,15 +539,15 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 
-### Adding dropdown control to Ribbon
+## Adding dropdown control to Ribbon
 
-**RibbonComboBox** and **RibbonGallery** are DropDown controls in **Ribbon**.
+RibbonComboBox and RibbonGallery are DropDown controls in Ribbon.
 
-#### RibbonGallery
+### RibbonGallery
 
-Using the **RibbonGallery** control in **Ribbon**, items are displayed with good look and feel and it also enables the users to classify the items as groups for easy navigation.
+Using the RibbonGallery control in Ribbon, items are displayed with good look and feel and it also enables the users to classify the items as groups for easy navigation.
 
-Here **RibbonGallery** control added inside the “QuickSteps” RibbonBar. **ItemHeight**, **ItemWidth** properties are used to set height and width of **RibbonGalleryItem**.
+Here RibbonGallery control added inside the “QuickSteps” RibbonBar. `ItemHeight`, `ItemWidth` properties are used to set height and width of RibbonGalleryItem.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -666,11 +666,11 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 
-#### RibbonComboBox
+### RibbonComboBox
 
-**RibbonComboBox** control is used to display the list of items in **Ribbon** instance. You can add any number of items to the RibbonComboBox.
+RibbonComboBox control is used to display the list of items in Ribbon instance. You can add any number of items to the RibbonComboBox.
 
-Add items to **RibbonComboBox** using **ComboBoxItem.** Here **RibbonComboBox** is added inside the “Find” **RibbonBar**.
+Add items to RibbonComboBox using ComboBoxItem. Here RibbonComboBox is added inside the “Find” RibbonBar.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -799,13 +799,13 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 
-### Adding QAT
+## Adding QAT
 
-#### Adding Quick Access Toolbar to Ribbon
+### Adding Quick Access Toolbar to Ribbon
 
-**QuickAccessToolbar** in the **Ribbon** instance is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. **QAT** can be placed above or below the ribbon.
+QuickAccessToolbar in the Ribbon instance is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. `QAT` can be placed above or below the ribbon.
 
-The following code example illustrates how to add **QuickAccessToolBar** in **Ribbon** instance.
+The following code example illustrates how to add QuickAccessToolBar in Ribbon instance.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -941,9 +941,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img8.jpg)
 
 
-#### Adding items to Quick Access Toolbar	
+### Adding items to Quick Access Toolbar	
 
-**QuickAccessToolBar** property help to add item that required  to access quickly, here items added to **QuickAccessToolBar** by adding items inside the "<syncfusion:QuickAccessToolBar/>".
+QuickAccessToolBar property help to add item that required  to access quickly, here items added to QuickAccessToolBar by adding items inside the "<syncfusion:QuickAccessToolBar/>".
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -1085,9 +1085,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img9.jpg)
 
 
-#### Adding items to QAT Dropdown menu item	
+### Adding items to QAT Dropdown menu item	
 
-**QATMenuItems** property of **QuickAccessToolbar** used to add items to Dropdown menu of **QAT**. 
+QATMenuItems property of QuickAccessToolbar used to add items to Dropdown menu of QAT. 
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -1243,11 +1243,11 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img10.jpeg)
 
 
-### Adding BackStage
+## Adding BackStage
 
-#### Adding BackStageButton to Ribbon
+### Adding BackStageButton to Ribbon
 
-**BackStage** of **Ribbon** control can be added by using **BackStage** property of Ribbon. You can access backstage view by clicking **FILE** Menu in **Ribbon** instance like in Microsoft Outlook. 
+BackStage of Ribbon control can be added by using BackStage property of Ribbon. You can access backstage view by clicking `FILE` Menu in Ribbon instance like in Microsoft Outlook. 
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -1411,9 +1411,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 
-#### Adding BackStageCommandButton
+### Adding BackStageCommandButton
 
-**BackStageCommandButton** added to backstage of **Ribbon** control by adding it inside the **BackStage** Element.
+BackStageCommandButton added to backstage of Ribbon control by adding it inside the BackStage Element.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -1583,9 +1583,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img12.jpeg)
 
 
-#### Adding BackStageTabItem
+### Adding BackStageTabItem
 
-**BackStageTabItem** can also be added inside the **BackStage** Element.
+`BackStageTabItem` can also be added inside the BackStage Element.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -1775,11 +1775,11 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img13.jpg)
 
 
-#### Adding BackStage separator			
+### Adding BackStage separator			
 
-**BackStageSeperator** used to group out similar backstage elements in **BackStage** of **Ribbon** instance. 
+BackStageSeperator used to group out similar backstage elements in BackStage of Ribbon instance. 
 
-Here BackStageCommandButtons, BackStageTabItems are separated by **BackStageSeparator** according to their use.
+Here BackStageCommandButtons, BackStageTabItems are separated by `BackStageSeparator` according to their use.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -1971,17 +1971,17 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img14.jpg)
 
 
-### Application Menu
+## Application Menu
 
-#### Adding Application Menu to the Ribbon Window
+### Adding Application Menu to the Ribbon Window
 
 An Application Menu contains standard commands that are performed like in Microsoft Outlook 2003 UI. This Menu is viewed by clicking the button at the top-left corner of the window. 
 
-You can also customize the image in the Application menu button. An Application menu is added to a ribbon window by using the **ApplicationMenu** property of the **Ribbon** class.
+You can also customize the image in the Application menu button. An Application menu is added to a ribbon window by using the `ApplicationMenu` property of the Ribbon class.
 
-**BackStage** is not applicable when **ApplicationMenu** is used in **Ribbon**.
+BackStage is not applicable when `ApplicationMenu` is used in Ribbon.
 
-Here visual style is set to **Default** for **RibbonWindow**.
+Here visual style is set to `Default` for RibbonWindow.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -2147,9 +2147,9 @@ syncfusion:SkinStorage.VisualStyle="Default"
 ![](GettingStarted_images/GettingStarted_img15.jpeg)
 
 
-#### Adding Items to the Application Menu
+### Adding Items to the Application Menu
 
-Different Menu items are added to an Application Menu using the **MenuItems** property of the **ApplicationMenu**.
+Different Menu items are added to an Application Menu using the MenuItems property of the ApplicationMenu.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow
@@ -2323,11 +2323,11 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 ![](GettingStarted_images/GettingStarted_img16.jpg)
 
 
-#### Adding Application Items to the Application Menu
+### Adding Application Items to the Application Menu
 
-**ApplicationItems** are displayed in bottom of the Application menu. Different **ApplicationItems** are added to an application menu using the **ApplicationItems** property of the **ApplicationMenu** class.
+ApplicationItems are displayed in bottom of the Application menu. Different ApplicationItems are added to an application menu using the ApplicationItems property of the ApplicationMenu class.
 
-The following code example illustrates how to add **ApplicationItems** to Application menu in **Ribbon** instance.
+The following code example illustrates how to add ApplicationItems to Application menu in Ribbon instance.
 
 {% highlight xml %}
 <syncfusion:RibbonWindow

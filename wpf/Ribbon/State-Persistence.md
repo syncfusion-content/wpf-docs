@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## State Persistence
+# State Persistence
 
 State Persistence is the combined process of Serialization and Deserialization. Serialization is the process of converting the state of an object to a format in which it can be persisted as a file in the memory. The serialized format contains the object's state information. Deserialization is the complement process of Serialization, which converts into the object from the stored state information.
 
@@ -36,15 +36,15 @@ The following ribbon control states can persist separately.
    d. Window Top
 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 The Ribbon State Persistence feature helps users to load the state of the Ribbon control that existed when the application was closed. State Persistence feature gives a more consistent workflow for an application that is executed for a long time.
 
-### Tables for Properties and Methods
+## Tables for Properties and Methods
 
-#### Properties
+### Properties
 
-To enable State Persistence in Ribbon control, set the **AutoPersist** property to "**True**"
+To enable State Persistence in Ribbon control, set the `AutoPersist` property to `True`
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ ObservableCollection<RibbonElements><br/><br/></td><td>
 Null<br/><br/></td></tr>
 </table>
 
-#### Methods
+### Methods
 
 <table>
 <tr>
@@ -178,7 +178,7 @@ Title="MainWindow" Height="350" Width="525" AutoPersist="True" x:Name="RibbonWin
 
 {% endhighlight %}
 
-### Persisting Ribbon States any time while running the application
+## Persisting Ribbon States any time while running the application
 
 WPF Ribbon control now supports the persistence of its states any time while running the application.  Ribbon states can be saved and loaded at any time by using Ribbon methods. 
 
@@ -187,7 +187,7 @@ There are two methods to save and load the current Ribbon states. They are:
 * SaveRibbonState
 * LoadRibbonState
 
-Before calling the methods, it is important to specify the persisting Ribbon elements in **PersistElements** collection.This collection can be changed at any time. Save and Load states at runtime are fully based on this collection details. The following code snippet shows how to add Ribbon elements that are required to retain its state.
+Before calling the methods, it is important to specify the persisting Ribbon elements in `PersistElements` collection.This collection can be changed at any time. Save and Load states at runtime are fully based on this collection details. The following code snippet shows how to add Ribbon elements that are required to retain its state.
 
 {% highlight c# %}
 
@@ -207,9 +207,9 @@ this.MyRibbon.PersistElements.Add(RibbonElements.QuickAccessToolbar);
 
 {% endhighlight %}
 
-### Saving Ribbon States
+## Saving Ribbon States
 
-Ribbon State can be saved and loaded dynamically at run time. To save the current Ribbon State, use **SaveRibbonState** method in Ribbon.
+Ribbon State can be saved and loaded dynamically at run time. To save the current Ribbon State, use `SaveRibbonState` method in Ribbon.
 
 This method has two overloaded methods for customizing the Save state process as follows:
 
@@ -258,7 +258,7 @@ this.MyRibbon.SaveRibbonState(storage,"Customfilename.dat");
 
 ### Loading Ribbon States
 
-Load state process is also having the similar procedures of save states. We can load the Ribbon State at any time from the last saved Isolated Storage file. **LoadRibbonState** method is used to load the Ribbon state from the last saved state. This method has two overloaded methods as follows:
+Load state process is also having the similar procedures of save states. We can load the Ribbon State at any time from the last saved Isolated Storage file. `LoadRibbonState` method is used to load the Ribbon state from the last saved state. This method has two overloaded methods as follows:
 
 1. void LoadRibbonState()
 
@@ -302,7 +302,7 @@ this.MyRibbon.LoadRibbonState(storage, "Customfilename.dat");
 
 {% endhighlight %}
 
-### Saving and Loading many Ribbon States
+## Save and Load many Ribbon States
 
 Ribbon control states can easily be maintained in the Isolated Storage files. Further, It supports to Save the consecutive or different states of the Ribbon control in different Isolated Storage files and also load any saved state from the Isolated Storage files which is in old state. To save the different states of the Ribbon control at various times, use the below code
 
@@ -404,7 +404,7 @@ this.MyRibbon.LoadRibbonState(storage, "RibbonState3.dat");
 
 {% endhighlight %}
 
-### Persisting Ribbon States by XML Writer
+## Persisting Ribbon States by XML Writer
 
 The WPF Ribbon control supports state persistence in the xml file created by the user. The ribbon states can be saved and loaded in the xml file by overloading the following methods:
 
@@ -513,7 +513,7 @@ this.PART_Ribbon.SaveRibbonState(writer);
 
 {% endhighlight %}
 
-#### Methods
+### Methods
 
 <table>
 <tr>
@@ -540,7 +540,7 @@ N/A<br/><br/></td></td>
 </table>
 
 
-###    Resetting Ribbon States
+##    Resetting Ribbon States
 
 To load the Normal (Initial) Ribbon state at runtime call the **ResetRibbonState** method.This is a parameter less method. This will load the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
 
@@ -559,7 +559,7 @@ this.MyRibbon.ResetRibbonState();
 
 {% endhighlight %}
 
-### Deleting Ribbon States
+## Deleting Ribbon States
 
 To delete the unused saved Isolated Storage files, use the **DeleteRibbonState** method. This method has two overloads. They are:
 

@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonCheckBox
+# RibbonCheckBox
 
 RibbonCheckBox is used to select or unselect options from the users in Ribbon instance. RibbonCheckBox control provide similar set of functionalities like normal CheckBox control in Ribbon instance.
 
