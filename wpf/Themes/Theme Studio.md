@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Welcome to WPF Theme Studio | Complete guide to WPF Theme Studio 
+title: Overview | Complete guide to WPF Theme Studio 
 description: Desktop-based, intuitive UI customization tool for easy customization of skins and themes for the Syncfusion control suite
 platform: wpf
 control: Themes
@@ -15,8 +15,6 @@ It comprises of many features such as predefined themes, Import and Export optio
 
 ![](ThemeStudio_images/ThemeStudio_img1.png)
 
-
-#Getting Started
 
 ## Applying predefined themes in Theme Studio
 
@@ -106,7 +104,7 @@ N> Gradient Support has been provided only for Background color properties resid
 
 ## Applying generated resource xaml in application
 
-To export the customized skin, click the `Export` button. The exported custom skin contains resource dictionary xaml files of Syncfusion controls and Framework Controls.
+To [export](#exporting-custom-theme-from-theme-studio) the customized skin, click the `Export` button. The exported custom skin contains resource dictionary xaml files of Syncfusion controls and Framework Controls.
 
 ### Adding the xaml files to WPF Application
 
@@ -116,14 +114,14 @@ To export the customized skin, click the `Export` button. The exported custom sk
 
 For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` dll and dependency dll `Syncfusion.SfShared.WPF`.
 
-•	The exported xaml file of controls can be obtained from the Output folder as mentioned in the `Exporting the Custom theme` topic.
+•	The exported xaml file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
 
 •	From the Output folder, browse the `Syncfusion Controls` folder and add the required xaml file to the project.
 
 ![](ThemeStudio_images/ThemeStudio_img14.png)
 
 
-•	Now, initialize the `SfRadialMenu` control in the `MainWindow.xaml` as below:
+•	Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
 
 {% highlight xml %}
 
@@ -160,7 +158,7 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 ![](ThemeStudio_images/ThemeStudio_img15.png)
 
 
-# Exporting Custom theme from Theme Studio
+## Exporting Custom theme from Theme Studio
 
 To export custom theme, click `Export` button to display a popup containing option to select the controls to be exported. 
 
@@ -184,7 +182,7 @@ The color values for customized theme will be saved in `*.wpft` format file. Alo
 Output Folder 
 {:.caption}
 
-# Importing Custom theme to Theme Studio
+## Importing Custom theme to Theme Studio
 
 To import custom theme, click `Import` button for choosing `*.wpft` file containing customized skin color values. After importing, we can visualize the loaded custom skin color applied to controls.
 
