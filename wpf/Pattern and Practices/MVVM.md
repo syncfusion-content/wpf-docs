@@ -8,11 +8,11 @@ documentation: ug
 ---
 #Pattern and Practices
 
-### Getting Started with MVVM
+## Getting Started with MVVM
 
-To perform **TabControlExt’s** **selectionChanged** Event in the ViewModel, use the following logic.
+To perform TabControlExt’s `selectionChanged` Event in the ViewModel, use the following logic.
 
-Create a Viewmodel and define a Model Collection that is used to bind with the **TabControl’s** **ItemSource** property.
+Create a Viewmodel and define a Model Collection that is used to bind with the TabControl’s `ItemSource` property.
 
 XAML
 
@@ -155,7 +155,7 @@ this.RaisePropertyChanged("HeaderName");
 
 {% endhighlight %}
 
-And now you need to handle the **SelectionChanged** event of the TabControlExt. So use **TabControlExtSelectionChangedCommand** and define a “SelectionChanged” command in **ViewModel** using **ICommand**. 
+And now you need to handle the `SelectionChanged` event of the TabControlExt. So use `TabControlExtSelectionChangedCommand` and define a “SelectionChanged” command in `ViewModel` using `ICommand`. 
 
 XAML
 
@@ -223,13 +223,13 @@ The following screenshot displays final result.
 ![](MVVM_images/MVVM_img1.jpeg)
 
 
-### Events and Commands
+## Events and Commands
 
 The following section explains how you can use event commands in code-behind with the help of view model.
 
 ### CommandParameter:
 
-**CommandParameter** that you can easily pass an object or bind it to a property of another control. The following code example passes a string through command parameter.
+`CommandParameter` that you can easily pass an object or bind it to a property of another control. The following code example passes a string through command parameter.
 
 XAML
 
@@ -298,5 +298,5 @@ The following screenshot displays final result.
 
 #### Command Target
 
-The element where the command exists can be determined through EventBinding’s CommandTarget property. Refer to [CommandTarget Property](http://msdn.microsoft.com/en-us/library/system.windows.input.icommandsource.commandtarget%28v=vs.110%29.aspx# "") for reference.
+The element where the command exists can be determined through EventBinding’s CommandTarget property. Refer to [CommandTarget Property](http://msdn.microsoft.com/en-us/library/system.windows.input.icommandsource.commandtarget%28v=vs.110%29.aspx) for reference.
 
