@@ -6,98 +6,68 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Linked Manager 
+# Linked Manager and Nested Docking
 
-The windows from one DockingManager cannot be dragged and dropped to another, by default. Linked Manager allows you to drag and drop the windows from one DockingManager to another by the TargetDockingManager list.
+## Linked Manager
 
-## Getting Started
+The windows from one DockingManager cannot be dragged and dropped to another by default. But Linked Manager support allows you to drag and drop the windows from one DockingManager to another `TargetDockingManager` list.
 
+Source Docking Manager
 {% highlight xml %}
-
-[MainWindow.XAML]
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
 
-<ContentControl syncfusion:DockingManager.State="Document"
+<ContentControl syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="Window1" />
 
-syncfusion:DockingManager.Header="Window1"></ContentControl>
+<ContentControl syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.Header="Window2" />
 
-<ContentControl syncfusion:DockingManager.State="Dock"
-
-syncfusion:DockingManager.Header="Window2"></ContentControl>
-
-<ContentControl syncfusion:DockingManager.State="AutoHidden"
-
-syncfusion:DockingManager.Header="Window3"></ContentControl>
+<ContentControl syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="Window3" />
 
 </syncfusion:DockingManager>
 
 
-
-
-
 {% endhighlight %}
 
-{% highlight xml %}
 
-[MainWindow1.XAML]
+Target Docking Manager
+{% highlight xml %}
 
 <syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True">
 
-<ContentControl syncfusion:DockingManager.State="Dock"
+<ContentControl syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.Header="Window1"></ContentControl>
 
-syncfusion:DockingManager.Header="Window1"></ContentControl>
+<ContentControl syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.Header="Window2"></ContentControl>
 
-<ContentControl syncfusion:DockingManager.State="Dock"
-
-syncfusion:DockingManager.Header="Window2"></ContentControl>
-
-<ContentControl syncfusion:DockingManager.State="AutoHidden"
-
-syncfusion:DockingManager.Header="Window3"></ContentControl>
+<ContentControl syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="Window3"></ContentControl>
 
 </syncfusion:DockingManager>                   
-
-
-
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-[MainWindow.cs]
-
 public partial class MainWindow : Window
-
 {
-
 static int count = 0;
 
+	public MainWindow()
+	{
+		InitializeComponent();
 
+		count++;      
 
-public MainWindow()
+		MainWindow1 MainWindow = new MainWindow1();
 
-{
+		MainWindow.Title = "Docking Manager " + count;
 
-InitializeComponent();
+		MainWindow.Show();
 
-count++;      
+		this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
 
-MainWindow1 MainWindow = new MainWindow1();
-
-MainWindow.Title = "Docking Manager " + count;
-
-MainWindow.Show();
-
-this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
-
-MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
-
+		MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
+	}
 }
-
-
-
 
 
 {% endhighlight %}
@@ -107,21 +77,15 @@ MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 
 ### Adding TargetManager list of DockingManager
 
-To add TargetManager list in the DockingManager call `AddToTargetManagersList()` method of the DockingManager with the valid DockingManager instance as argument.
+To add TargetManager list in the DockingManager, call `AddToTargetManagersList()` method of the DockingManager with the valid DockingManager instance as argument.
 
-When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. 
-
-For instance DockingManager1 and DockingManager2 are the DockingManager instance and the DockingManager2 is added to TargetManagerList of DockingManager1, but the DockingManager2 is not aware of its TargetManager.
+When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. For instance DockingManager1 and DockingManager2 are the DockingManager instance and the DockingManager2 is added to TargetManagerList of DockingManager1, but the DockingManager2 is not aware of its TargetManager.
 
 Here, the windows from DockingManager1 are only allowed to be dragged and dropped in DockingManager2, 
 
 {% highlight c# %}
 
 this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
-
-
-
-
 
 {% endhighlight %}
 
@@ -136,7 +100,6 @@ MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 
 
 
-
 {% endhighlight %}
 
 ### Removing Target Manager list
@@ -147,17 +110,11 @@ To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManag
 
 MainWindow.DockingManager2.RemoveFromTargetManagersList(this.DockingManager1);
 
-
-
-
-
 {% endhighlight %}
 
 ## Nested Docking
 
-DockingManager provides the `NestedDockingManager` support, that allows you to add DockingManager as a child window to another DockingManager. 
-
-## Getting Started
+DockingManager provides the NestedDockingManager support, that allows you to add DockingManager as a child window to another DockingManager. 
 
 In Nested DockingManager, the whole DockingManager can be dragged and dropped inside the Parent DockingManager and DockWindows inside the DockingManager cannot be dragged and dropped on the owner DockingManager.
 
@@ -171,21 +128,17 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 <syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True" SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock2"  >
 
-<ContentControl syncfusion:DockingManager.Header="Dock2"                               syncfusion:DockingManager.DesiredWidthInDockedMode="600"></ContentControl>
+<ContentControl syncfusion:DockingManager.Header="Dock2" syncfusion:DockingManager.DesiredWidthInDockedMode="600" />
 
 </syncfusion:DockingManager>
 
 <syncfusion:DockingManager x:Name="DockingManager3" UseDocumentContainer="True" SideInDockedMode="Bottom"  syncfusion:DockingManager.Header="Dock3">
 
-<ContentControl syncfusion:DockingManager.Header="Dock3" 
-
-syncfusion:DockingManager.DesiredWidthInDockedMode="600"/>
+<ContentControl syncfusion:DockingManager.Header="Dock3" syncfusion:DockingManager.DesiredWidthInDockedMode="600"/>
 
 </syncfusion:DockingManager>
 
 </syncfusion:DockingManager>
-
-
 
 
 
