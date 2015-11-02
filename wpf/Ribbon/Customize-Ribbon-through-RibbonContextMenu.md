@@ -6,9 +6,9 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Customize Ribbon through RibbonContextMenu
+# Customize Ribbon through RibbonContextMenu
 
-### Functions available in Ribbon ContextMenu
+## Functions available in Ribbon ContextMenu
 
 RibbonContextMenu allows to customize the Ribbon with the Right Click and it displays different functions for Ribbon and RibbonItems.
 
@@ -58,9 +58,9 @@ It displays along with "Add to Quick Access ToolBar" function while clicking at 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcc2d14d.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img2.jpeg)
 
 
-### Adding custom item to the ContextMenu
+## Adding custom item to the ContextMenu
 
-Ribbon Context Menu supports display of custom items. To add the custom item, set an attached property called **CustomContextMenuItems** of the RibbonContextMenu
+Ribbon Context Menu supports display of custom items. To add the custom item, set an attached property called `CustomContextMenuItems` of the RibbonContextMenu
 
 {% highlight xml %}
 
@@ -90,9 +90,9 @@ Ribbon Context Menu supports display of custom items. To add the custom item, se
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcd86ccb.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img3.jpeg)
 
 
-### How to disable the RibbonContextMenu?
+## How to disable the RibbonContextMenu?
 
-In order to disable the ContextMenu handle the “**RibbonContextMenuOpening**” event
+In order to disable the ContextMenu handle the `RibbonContextMenuOpening` event
 
 {% highlight xml %}
 

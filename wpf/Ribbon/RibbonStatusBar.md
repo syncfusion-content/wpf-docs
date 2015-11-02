@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonStatusBar
+# RibbonStatusBar
 
 RibbonStatusBar control is added to a RibbonWindow to display the current status of the application or document like in Microsoft Office.
 

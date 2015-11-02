@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonMenuItem
+# RibbonMenuItem
 
-RibbonMenuItems are used as entities in menus like **ApplicationMenu**, Split Button Menu, context menu, and so on.
+RibbonMenuItems are used as entities in menus like ApplicationMenu, Split Button Menu, context menu, and so on.
 
-The following code example illustrates How to use **RibbonMenuItem** control in **Ribbon** instance.
+The following code example illustrates How to use RibbonMenuItem control in Ribbon instance.
 
 {% highlight xml %}
 

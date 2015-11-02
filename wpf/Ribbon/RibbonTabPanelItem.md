@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Ribbon TabPanelItem
+# Ribbon TabPanelItem
 
 You can set RibbonTabPannelItem in Ribbon instance like in Microsoft Office. It located on below the close button of RibbonWindow.
 

@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Add Items to QuickAccesToolBar (QAT)
+# Add Items to QuickAccesToolBar (QAT)
 
 Quick Access Toolbar is used to group the frequently used commands above or under the Ribbon, and it allows to add or remove commands to it. It is placed next to the ApplicationMenu to provide end users with the easy accessibility.
 
-### Add default QAT items
+## Add default QAT items
 
 Use the following code to add items to the QuickAccessToolbar
 
@@ -65,9 +65,9 @@ Ribbon.QuickAccessToolBar = QAT;
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img1.jpeg)
 
 
-### Add items from QAT Menu items
+## Add items from QAT Menu items
 
-Ribbon also supports to add the items from QAT Menu items.To add the items to the Drop Down Menu of the QuickAccessToolBar, use the attached property, **QATMenuItems** of the Quick Access ToolBar .  QATMenuItems can be added to the QAT by making the Selection.
+Ribbon also supports to add the items from QAT Menu items.To add the items to the Drop Down Menu of the QuickAccessToolBar, use the attached property, `QATMenuItems` of the Quick Access ToolBar .  QATMenuItems can be added to the QAT by making the Selection.
 
 {% highlight xml %}
 
@@ -135,10 +135,9 @@ The “Paste” QATMenuItem has been selected and it is displayed as one of the 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML6d3ac4.PNG](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img3.jpeg)
 
 
-### Add items from QAT Customize Window
+## Add items from QAT Customize Window
 
-To open QAT Customize Window, select **MoreCommands** option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particluar tab by using **Choose** **commands** **from** option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
-To open QAT Customize Window, select **MoreCommands** option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particluar tab by using **Choose** **commands** **from** option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
+To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particluar tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
 
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img4.jpeg)
 
@@ -146,13 +145,10 @@ To open QAT Customize Window, select **MoreCommands** option from the ContextMen
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img5.jpeg)
 
 Finally, the Items gets displayed in the QAT
-Finally, the Items gets displayed in the QAT
 
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img6.jpeg)
 
-### Add items from Ribbon context menu		
-### Add items from Ribbon context menu		
-QAT can also customized by adding the items from the Ribbon ContextMenu. Select Add to Quick Access Toolbar by right clicking the Ribbon item required to add to the QAT. Then, the respective item gets added as one of the items in the QAT.
+## Add items from Ribbon context menu		
 QAT can also customized by adding the items from the Ribbon ContextMenu. Select Add to Quick Access Toolbar by right clicking the Ribbon item required to add to the QAT. Then, the respective item gets added as one of the items in the QAT.
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML16431f9.PNG](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img7.jpeg)

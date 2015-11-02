@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonRadioButton
+# RibbonRadioButton
 
-**RibbonRadioButton** control is used to select options among a group in **Ribbon** instance. 
+RibbonRadioButton control is used to select options among a group in Ribbon instance. 
 
-The following code example illustrates How to use **RibbonRadioButton** control in **Ribbon** instance.
+The following code example illustrates How to use RibbonRadioButton control in Ribbon instance.
 
 {% highlight xml %}
 

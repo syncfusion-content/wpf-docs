@@ -8,11 +8,11 @@ documentation: ug
 ---
 ## Patterns and Practices
 
-### MVVM
+## MVVM
 
 Ribbon supports MVVM Pattern to get better control customization. The following code illustrate this
 
-####Model
+###Model
 
 {% highlight c# %}
 
@@ -94,7 +94,7 @@ public bool IsSplitButton { get; set; }
 
 {% endhighlight %}
 
-####ViewModel
+###ViewModel
 
 {% highlight c# %}
 
@@ -439,7 +439,7 @@ throw new System.NotImplementedException();
 ![](PatternsandPractices_images/PatternsandPractices_img1.jpeg)
 
 
-### Practice with PRISM
+## Practice with PRISM
 
 
 Ribbon control provides prism support. The following steps will help to create sample project in the PRISM.

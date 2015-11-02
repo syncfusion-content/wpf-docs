@@ -6,13 +6,13 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Touch Support
+# Touch Support
 
-Touch styles can be applied to a control by setting the **EnableTouch** property defined in the **SkinStorage** class to **True**. 
+Touch styles can be applied to a control by setting the `EnableTouch` property defined in the `SkinStorage` class to `True`. 
 
 ### How to enable touch in RibbonWindow?
 
-To enable touch in the RibbonWindow, set **EnableTouch** property of the SkinStorage as “**True**”.The following code snippet illustrates this
+To enable touch in the RibbonWindow, set `EnableTouch` property of the SkinStorage as `True`.The following code snippet illustrates this
 
 {% highlight xml %}
 
