@@ -12,23 +12,24 @@ documentation: ug
 
 The following steps help you add the required Essential WPF Control using Drag and Drop, like DockingManager.
 
-1. Create a WPF project in Visual Studio
-2. Find DockingManager control by writing the name of the DockingManager in the search box.
+ 1.Create a WPF project in Visual Studio
+ 2.Find DockingManager control by writing the name of the DockingManager in the search box.
 
 ![](ThroughDragndDrop_images/ThroughDragndDrop_img1.jpeg)
 
 
-3. Drag DockingManager and drop it to the designer.
+ 3.Drag DockingManager and drop it to the designer.
 
 
 ## Through XAML
 
 The following steps help you add a required Essential WPF Control through XAML Code, like DockingManager.
 
-1. Create a WPF project in Visual Studio and refer the following assemblies.
+ 1.Create a WPF project in Visual Studio and refer the following assemblies.
   * Syncfusion.Tools.Wpf
   * Syncfusion.Shared.Wpf
-2. Include an xml namespace for the above assemblies to the Main window.
+ 2.Include an xml namespace for the above assemblies to the Main window.
+
 {% highlight xml %}
 
 <Window
@@ -37,19 +38,16 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf# "") />
-
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 
 {% endhighlight %}
 
-3. Now, Add the Docking Manager control with a required optimal name, using the included namespace.
+ 3.Now, Add the Docking Manager control with a required optimal name, using the included namespace.
 
 {% highlight xml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" />
-
-
 
 {% endhighlight %}
 
@@ -58,24 +56,48 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 The following steps help you add a required Essential WPF Control through C# or VB Code, like DockingManager.
 
-1. Create a WPF project in Visual Studio and refer the following assemblies.
+ 1.Create a WPF project in Visual Studio and refer the following assemblies.
   * Syncfusion.Tools.Wpf
   * Syncfusion.Shared.Wpf
-2. Create instance of Docking Manager.
+ 2.Create instance of Docking Manager.
+ 
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 Syncfusion.Windows.Tools.Controls.DockingManager dockingManager = new Syncfusion.Windows.Tools.Controls.DockingManager();
 
 {% endhighlight %}
 
-3. Add the DockingManager instace as the content of the Window (or required element). 
+{% highlight VB %}
 
-{% highlight c# %}
+Dim dockingManager As New Syncfusion.Windows.Tools.Controls.DockingManager()
+
+{% endhighlight %}
+ 
+{% endtabs %}
+
+ 3.Add the DockingManager instace as the content of the Window (or required element). 
+ 
+{% tabs %}
+
+{% highlight C# %}
 
 Syncfusion.Windows.Tools.Controls.DockingManager dockingManager = new Syncfusion.Windows.Tools.Controls.DockingManager(); 
 
 this.Content = dockingManager; 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+
+Dim dockingManager As New Syncfusion.Windows.Tools.Controls.DockingManager()
+
+Me.Content = dockingManager
+
+{% endhighlight %}
+ 
+{% endtabs %}
 

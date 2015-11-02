@@ -8,8 +8,9 @@ documentation: ug
 ---
 # Docking Window
 
-Docking windows is one of the states of DockingManager, Since `Dock` is the default value, so initially all the children stay in Docking Window![](DockingWindow_images/DockingWindow_img1.jpeg)
-.
+Docking windows is one of the states of DockingManager, Since `Dock` is the default value, so initially all the children stay as Docking Window
+
+![](DockingWindow_images/DockingWindow_img1.jpeg)
 
 ## Configuring window in Different Sides
 
@@ -39,13 +40,11 @@ To dock 4 children of a DockingManager in 4 different sides, then use `SideInDoc
 ![](DockingWindow_images/DockingWindow_img2.jpeg)
 
 
-To set as Tabbed Window, the window should be made aware of a Target window name, as explained here. 
-
 ## Docking window in various Targets 
 
-Docking window can also be docked at any side of the Target Docking Window, through an attached property named `TargetNameInDockedMode`. 
-
-The following code helps to arrange children of DockingManager that targets a single Docking window, and docked along Left, Top, Right and Tabbed.
+Docking window can also be docked at any side of the Target Docking Window, through an attached property named `TargetNameInDockedMode`.
+ 
+Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of DockingManager that targets a single Docking window, and docked along Left, Top, Right and Tabbed.
 
 {% highlight xml %}
 <ContentControl x:Name="DockingWindow1" syncfusion:DockingManager.Header="Targeted Window" />
@@ -75,7 +74,7 @@ This feature helps to Maximize/Minimize Docked Windows for better usage of each 
 ### Enabling Maximization feature
 
 
-To enable the feature of maximizing the Docking Window, set `“MaximizeButtonEnabled”` to `“True”`
+To enable the feature of maximizing the Docking Window, set `MaximizeButtonEnabled` to `True`
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" MaximizeButtonEnabled="True">
@@ -148,7 +147,7 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 
 ## Hot Drag the window
 
-The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window, through `IsEnableHotTracking` property. By default its value is `False`, to enable this functionality turn its value to `True`.
+The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window, through `IsEnableHotTracking` property its default its value is `False`, to enable this functionality turn its value to `True`.
 
 {% highlight xml %}
 
@@ -163,7 +162,7 @@ The DockWindow Header can be highlighted when the mouse is hovered on an active 
 
 ## Enabling and disabling the dock functionality
 
-The `CanDock` property can help to enable or disable the docking functionality by setting its value as `True` or `False` respectively. By default its value is `True`, to disable this functionality turn its value to `False`.
+The `CanDock` property can help to enable or disable the docking functionality, by setting its value as `True` or `False` . By default its value is `True`, to disable this functionality turn its value to `False`.
 
 {% highlight xml %}
 

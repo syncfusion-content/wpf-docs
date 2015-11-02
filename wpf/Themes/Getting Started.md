@@ -12,9 +12,9 @@ SfSkinManager control helps to apply the built in themes to the Syncfusion UI co
 
 <table>
 <tr>
-<td>
-Styles<br/><br/></td><td>
-Assemblies<br/><br/></td></tr>
+<th>
+Styles<br/><br/></th><th>
+Assemblies<br/><br/></th></tr>
 <tr>
 <td>
 Metro<br/><br/></td><td>
@@ -174,15 +174,14 @@ You can switch various build in themes at the runtime by using the `VisualStyle`
 
 </Grid>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
 private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-
 {
-
-SfSkinManager.SetVisualStyle(this,(VisualStyles)Enum.Parse(typeof(VisualStyles),((sender as ComboBox).SelectedItem as ComboBoxItem).Content.ToString()));
-
+	SfSkinManager.SetVisualStyle(this,(VisualStyles)Enum.Parse(typeof(VisualStyles),((sender as ComboBox).SelectedItem as ComboBoxItem).Content.ToString()));
 }
-
-
 
 {% endhighlight %}
 
@@ -228,17 +227,11 @@ To apply the built-in themes to your derived control using SfSkinManager, you ha
 
 
 public class DockingAdv : DockingManager
-
 {
-
-public DockingAdv()
-
-{
-
-SetResourceReference(StyleProperty, typeof(DockingManager));
-
-}
-
+    public DockingAdv()
+	{
+		SetResourceReference(StyleProperty, typeof(DockingManager));
+	}
 }
 
 
