@@ -6,9 +6,9 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Patterns and Practices
+# Patterns and Practices
 
-## MVVM
+## Ribbon with MVVM
 
 Ribbon supports MVVM Pattern to get better control customization. The following code illustrate this
 
@@ -93,6 +93,7 @@ public bool IsSplitButton { get; set; }
 
 
 {% endhighlight %}
+
 
 ###ViewModel
 
@@ -459,9 +460,8 @@ Ribbon control provides prism support. The following steps will help to create s
 2. Rename MainWindow to Shell in the Project
 3. Add new class called Bootstrapper.cs to initialize the prism application.
 	
-	{% highlight c# %}
+{% highlight c# %}
 
-	[C#]
 
  	class Bootstrapper : UnityBootstrapper
 
@@ -493,13 +493,12 @@ Ribbon control provides prism support. The following steps will help to create s
 
 	}
 
-	{% endhighlight %}
+{% endhighlight %}
 
 4. Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 
-	{% highlight c# %}
+{% highlight c# %}
 
-	[C#]
 
 	public partial class App : Application
 
@@ -519,13 +518,12 @@ Ribbon control provides prism support. The following steps will help to create s
 
 	}
 
-	{% endhighlight %}
+{% endhighlight %}
 
 5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
 
-	{% highlight xml %}
+{% highlight xml %}
 
-	[XAML]
 
 	xmlns:Cal="http://www.codeplex.com/CompositeWPF"
 
@@ -559,19 +557,19 @@ Ribbon control provides prism support. The following steps will help to create s
 
 	</syncfusion:RibbonWindow>
 
-	{% endhighlight %}
+{% endhighlight %}
 
 6. Adding Module to the project
 
-	Right click the Solution project, point to “Add” and then click “NewProject”.Then NewWindow called AddNewProject will open.Select “ClassLibrary” from Visual C# .then rename the project with desired name and click OK.Now a New Module will be created in the Solution Project
+Right click the Solution project, point to “Add” and then click “NewProject”.Then NewWindow called AddNewProject will open.Select “ClassLibrary” from Visual C# .then rename the project with desired name and click OK.Now a New Module will be created in the Solution Project
 
-	Now add following assemblies to the Module project
+Now add following assemblies to the Module project
 
 	* PresentationCore.dll
 	* PresentationFramework.dll
 	* WindowsBase.dll
 
-	Also add following Prism assemblies
+Also add following Prism assemblies
 
 	* Microsoft.Practices.Composite.dll
 	* Microsoft.Practices.Composite.Presentation.dll
@@ -581,9 +579,8 @@ Ribbon control provides prism support. The following steps will help to create s
 
 7. In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 
-	{% highlight c# %}
+{% highlight c# %}
 
-	[C#]
 
 	class Bootstrapper : UnityBootstrapper
 
@@ -615,13 +612,12 @@ Ribbon control provides prism support. The following steps will help to create s
 
 	}
 
-	{% endhighlight %}
+{% endhighlight %}
 
 8. Adding Views to the Module
 
-	{% highlight xml %}
+{% highlight xml %}
 
-	[XAML]
 
 	<syncfusion:RibbonTab x:Class="HomeTabModule.HomeTab"
 
@@ -779,15 +775,14 @@ Ribbon control provides prism support. The following steps will help to create s
 
 	</syncfusion:RibbonTab>
 
-	{% endhighlight %}
+{% endhighlight %}
 
 9. Add a region to the shell
 
-	After creating View for the Module, register the view as Module using the below code.
+After creating View for the Module, register the view as Module using the below code.
 
-	{% highlight c# %}
+{% highlight c# %}
 
-	[C#]
 
 	public class HomeTabModules:IModule
 
@@ -813,8 +808,8 @@ Ribbon control provides prism support. The following steps will help to create s
 
 	}
 
-	{% endhighlight %}
+{% endhighlight %}
 
-	Then Run the project.RibbonTabModule will get added as one of the Module in the Shell.Similarly you can add the any number of Modules based on the complexity of the project.
+Then Run the project.RibbonTabModule will get added as one of the Module in the Shell.Similarly you can add the any number of Modules based on the complexity of the project.
 
-	![](PatternsandPractices_images/PatternsandPractices_img2.jpeg)
+![](PatternsandPractices_images/PatternsandPractices_img2.jpeg)

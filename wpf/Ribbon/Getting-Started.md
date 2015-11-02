@@ -29,7 +29,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                 x:Class="RibbonControl.MainWindow">       
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow">       
 
 </Window>
 
@@ -51,8 +51,6 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 
 
-
-
 {% endhighlight %}
 
 * Add following namespace and Inherit MainWindow from RibbonWindow in code behind.
@@ -60,12 +58,6 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% highlight c# %}
 
 using Syncfusion.Windows.Tools.Controls;
-
-
-
-{% endhighlight %}
-
-{% highlight c# %}
 
 public partial class MainWindow : RibbonWindow
 
@@ -115,23 +107,6 @@ this.AddChild(_Ribbon1);
 
 Essential Tools WPF provides support to set the visual style for the Ribbon control to enhance the appearance of the control. This is achieved by using the VisualStyle property of the RibbonWindow.
 
-Different types of build in styles available in Ribbon:
-
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* ShinyBlue
-* ShinyRed
-* VS2010
-* Transparent
-* Metro
-* Office2013
-
 Here Microsoft `Office2013` style applied to Ribbon Control.
 
 {% highlight xml %}
@@ -141,7 +116,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.MainWindow"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
 
 syncfusion:SkinStorage.VisualStyle="Office2013">
 
@@ -345,7 +320,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 #### Adding DropDownButton
 
-DropDownButton in the Ribbon instance contains a drop arrow, when clicked on it the menu related to the button is displayed.
+DropDownButton in the Ribbon instance contains a drop arrow. When clicked on it, the menu related to the button is displayed.
 
 DropDownButton accepts DropDownMenuItem as its children, Here DropDownButton control is added inside the “New“ RibbonBar.
 
@@ -434,7 +409,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 #### Adding SplitButton
 
-SplitButton in the Ribbon instance contains a drop arrow, when clicked on it, the menu related to the button is displayed. Events are raised, when main Button is clicked as well as when the sub item in the SplitButton is clicked.
+SplitButton in the Ribbon instance contains a drop arrow. When clicked on it, the menu related to the button is displayed. Events are raised, when main Button is clicked as well as when the sub item in the SplitButton is clicked.
 
 SplitButton accepts DropDownMenuItem as its children like DropDownButton, Here splitbuttons are added inside the “Delete” RibbonBar and “Respond” RibbonBar.
 

@@ -6,11 +6,12 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Overview
+# Overview
 
-### Control Structures
+Ribbon illustrates the implementation of Office2007 UI, which is a new UI layout designed by Microsoft in its new Office 2007 package. Our product exposes most of the features of the new UI and keeps intact with the WPF architecture. Configuring and designing the layout is very easy through XAML code. RibbonWindow has been implemented for giving a themed Office 2007 UI look and feel for the traditional window. Users can use full functionality of keyboard navigation, Keytips are provided for faster access to items present in the ribbon. Enhanced tooltips helps the users to gel into the application very easily.
 
-Components of Ribbon controls are
+
+## Components of Ribbon controls are
 
 * Ribbon Controls
 * Backstage Button - Used to Show/Hide the BackStage.
@@ -18,24 +19,15 @@ Components of Ribbon controls are
 * Minimize RibbonButton-Used to change the state of Ribbon.
 * RibbonStatusBar-Display the StatusBar Items.
 
-You can find Ribbon Components in Below Screen shot:
-
-![](Overview_images/Overview_img1.jpg)
-
-
-### Backstage
+## Backstage
 
 Components of BackStage view of Ribbon controls are
 
 * BackStage Items - It includes BackStageCommandButton and BackStage TabItem.
 * BackStage corner image.
 
-You can find BackStage Components in Below Screen shot.
 
-![](Overview_images/Overview_img2.jpg)
-
-
-### Key Features
+## Key Features
 
 * Provides a ribbon window that overrides the default window and can set visual styles of ribbon window to different theme styles.
 * Provides full layout like Microsoft Outlook UI.
