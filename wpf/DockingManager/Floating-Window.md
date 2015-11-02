@@ -13,9 +13,9 @@ Floating window is one of the states in the DockingManager. To make children of 
 Floating window is like a Popup window and it has some limitation in resizing. To avoid this limitation, set the `UseNativeFloatWindow` property for the DockingManager as `True`.
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="DockingManager1"  UseNativeFloatWindow="True">
+<syncfusion:DockingManager UseNativeFloatWindow="True">
 
-<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"/>
+<ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"/>
 
 </syncfusion:DockingManager>
 
@@ -31,15 +31,11 @@ Floating window is like a Popup window and it has some limitation in resizing. T
 The float window is rolled up to top using the property `IsRollUpTopProperty`. To enable this functionality set its value as `True`, by default its value is `False`.        
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="DockingManager1" IsRollupFloatWindow="True">
+<syncfusion:DockingManager IsRollupFloatWindow="True">
 
-<ContentControl x:Name="Content1"syncfusion:DockingManager.Header="Item1" 
-
-syncfusion:DockingManager.State="Float"/>
+<ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"/>
 
 </syncfusion:DockingManager>
-
-
 
 {% endhighlight %}
 
@@ -56,7 +52,7 @@ On using MultiMonitor scenario, the FloatWindow behavior as follows:
 * On showing half of the float window between primary and secondary monitor, the float window remains in half between the monitor while plugged in and plugged out of the secondary monitor.
 * When float window is moved to secondary monitor from primary monitor, the float window remains at the secondary monitor itself while plugged in.
 
-__Making__ __the__ __same__ __behavior__ __like__ __WPF__ __window__ __for__ __Float__ __Window__ __in__ __Multiple__ __Monitor__
+### Making the same behavior like WPF window for Float Window in Multiple Monitor
 
 To make float window behave like a WPF window in multiple monitor, set the property `UseNativeFloatWindow` as `True`. 
 
@@ -74,11 +70,9 @@ The `CanFloat` property helps to enable or disable the floating functionality by
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" >
 
-<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.CanFloat="True"/>
+<ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.CanFloat="True"/>
 
-<ContentControl  x:Name="Content2"syncfusion:DockingManager.Header="Item2" 
-
-syncfusion:DockingManager.CanFloat="False"/>
+<ContentControl syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.CanFloat="False"/>
 
 </syncfusion:DockingManager>
 
@@ -97,7 +91,8 @@ The float window changes its state to `Dock` when you double click its header by
 
 <syncfusion:DockingManager x:Name="DockingManager1">
 
-<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1"syncfusion:DockingManager.State="Float" syncfusion:DockingManager.NoDock="True"/>                      
+<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" 
+                syncfusion:DockingManager.State="Float" syncfusion:DockingManager.NoDock="True"/>                      
 
 </syncfusion:DockingManager>
 
@@ -119,11 +114,10 @@ The float window provides Minimize or Maximize support for better usability. Thi
 To enable the maximizing feature for the Float window, set `CanFloatMaximize` for the specific child and `UseNativeFloatWindow` as `True`.By default, its value is `False`.
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="DockingManager1" UseNativeFloatWindow="True">
+<syncfusion:DockingManager UseNativeFloatWindow="True">
 
-<ContentControl  x:Name="Content1" syncfusion:DockingManager.Header="Item1" 
-
-syncfusion:DockingManager.State="Float"                                         syncfusion:DockingManager.CanFloatMaximize="True"/>    
+<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" 
+                syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CanFloatMaximize="True"/>    
 
 </syncfusion:DockingManager>
 
