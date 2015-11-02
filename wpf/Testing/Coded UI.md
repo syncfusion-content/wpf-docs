@@ -6,9 +6,7 @@ platform: wpf
 control: Testing
 documentation: ug
 ---
-# Coded UI Testing
-
-## Getting Started
+# Getting Started with Coded UI Testing
 
 CUIT contains the coded UI test project. When your application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
 
@@ -17,7 +15,7 @@ In case, the Coded UI test project does not appear on Visual Studio, you m
 ![](CodedUI_images/CodedUI_img1.jpeg)
 
 
-### Adding Coded UI Test file
+## Adding Coded UI Test file
 
 The CUIT file is automatically generated, when you create the Coded UI test project. To add another test file, right-click to the test project choose Add, and then select Coded UI Test.
 
@@ -43,17 +41,17 @@ Then choose the Coded UI Test Builder (UI Map), shown at the bottom right side o
 
 
 
-Click to Start the Recording.
+### Click to Start the Recording.
 
 You can also pause the recording option while testing the project.
 
 
 
-Click to Stop the Recording.
+### Click to Stop the Recording.
 
 4. The Recorded steps are shown by UI Map or by pressing Alt+ S key.
 5. To delete actions that you had recorded by mistake, choose Edit Actions.
-6. To generate code that replicates your action, choose the Generate Code icon and type a name and description for your **CUIT** method.
+6. To generate code that replicates your action, choose the Generate Code icon and type a name and description for your CUIT method.
 
 ![C:/Users/marimuthu.sivalingam/Documents/My Received Files/L_AA40.tmp.PNG](CodedUI_images/CodedUI_img6.jpeg)
 
@@ -62,7 +60,7 @@ Click to Stop the Recording.
 
 
 
-**Generate** **Test** **Code** 
+### Generate Test Code 
 
 8. Choose the required Method of Description for code generation then click to Add and Generate.
 
@@ -71,9 +69,9 @@ Click to Stop the Recording.
 
 
 
-### Testing application with the Generated Coded UI Tests.
+## Testing application with the Generated Coded UI Tests.
 
-You can test the application with the generated **CUIT** method.
+You can test the application with the generated CUIT method.
 
 1. Add a test method called CodedUITestProject1.
 
@@ -92,8 +90,8 @@ public void CodedUITestMethod1()
 }
 
 {% endhighlight %}
-2. Build and run the application that has already been configured. You can also open the **CUIT** builder with the following steps.
-3. Right-click the body of the **CodedUITestMethod** and then select **Generate** **Code** **for** **Coded** **UI** **Test** -> Use **CUIT** builder as shown in the following screenshot:
+2. Build and run the application that has already been configured. You can also open the CUIT builder with the following steps.
+3. Right-click the body of the `CodedUITestMethod` and then select `Generate Code for Coded UI Test` -> Use CUIT builder as shown in the following screenshot:
 4. 
 ![](CodedUI_images/CodedUI_img8.jpeg)
 
@@ -107,31 +105,32 @@ The following controls are featured in CodedUI Testing Support:
 <table>
 <tr>
 <td>
-**Supportedcontrols**<br/><br/></td><td><td>
-**Level**<br/><br/></td></tr>
+Supportedcontrols<br/><br/></td>
+<td>
+Level<br/><br/></td></tr>
 <tr>
 <td>
-CellGrid<br/><br/></td><td><td>
+CellGrid<br/><br/></td><td>
 3 Level<br/><br/></td></tr>
 <tr>
 <td>
-DataGrid<br/><br/></td><td><td>
+DataGrid<br/><br/></td><td>
 3 Level<br/><br/></td></tr>
 <tr>
 <td>
-TreeGrid<br/><br/></td><td><td>
+TreeGrid<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 <tr>
 <td>
-GridDataControl<br/><br/></td><td><td>
+GridDataControl<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 <tr>
 <td>
-Ribbon<br/><br/></td><td><td>
+Ribbon<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 <tr>
 <td>
-DockingManager<br/><br/></td><td><td>
+DockingManager<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 </table>
 
