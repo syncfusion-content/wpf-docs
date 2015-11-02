@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Ribbon Separator	
+# Ribbon Separator	
 
 RibbonSeperator used to separate the similar setoff Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
 

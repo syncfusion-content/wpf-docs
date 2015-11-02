@@ -6,14 +6,14 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Three types of RibbonState
+# Three types of RibbonState
 
-Ribbon can be changed into three different states such as **Normal**, **Hide**, **and** **Adorner**
+Ribbon can be changed into three different states such as `Normal`, `Hide` and `Adorner`
 
 ### RibbonState enum property
 
 
-**Normal** **–**Ribbon control will be in Normal State. This is the default state 
+`Normal` **–** Ribbon control will be in Normal State. This is the default state 
 
 {% highlight xml %}
 
@@ -57,7 +57,7 @@ Ribbon can be changed into three different states such as **Normal**, **Hide**, 
 
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
 
-**Hide** **-**Ribbon control will move to the Hidden State
+`Hide` **-**Ribbon control will move to the Hidden State
 
 {% highlight xml %}
 
@@ -102,7 +102,7 @@ Ribbon can be changed into three different states such as **Normal**, **Hide**, 
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img2.jpeg)
 
 
-**Adorner** **–**In this state,ribbon will adorned above the content
+`Adorner` **–**In this state,ribbon will adorned above the content
 
 {% highlight xml %}
 
@@ -146,7 +146,7 @@ Ribbon can be changed into three different states such as **Normal**, **Hide**, 
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML7d9bdf5.PNG](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img3.jpeg)
 
-### How to change the RibbonState in run time?
+## How to change the RibbonState in run time?
 
 Ribbon State can also be changed at the Runtime.In the below code, Ribbon State has been changed dynamically in the button click event
 

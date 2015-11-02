@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Arranging Ribbon items using ButtonPanel
+# Arranging Ribbon items using ButtonPanel
 
 Button Panel represents a panel control that can display horizontal row of Ribbon Items in a single border.It is used to manage the place for the controls.
 
-### Adding items to ButtonPanel in XAML
+## Adding items to ButtonPanel in XAML
 
 Use the below code to create ButtonPanel in XAML
 
@@ -93,7 +93,7 @@ SmallIcon="Images/Orange.png" />
 ![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img1.jpeg)
 
 
-### Adding items to ButtonPanel in code behind
+## Adding items to ButtonPanel in code behind
 
 
 

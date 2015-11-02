@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## Add command to RibbonLauncherButton
+# Add command to RibbonLauncherButton
 
 Ribbon instance now provides command support for RibbonBar LauncherButton. It provides the following options.
 
@@ -14,10 +14,10 @@ Ribbon instance now provides command support for RibbonBar LauncherButton. It pr
 * Setting LauncherButton CommandTarget
 * Setting LauncherButton CommandParameter
 
-### Set RibbonBar LauncherButton Command
+## Set RibbonBar LauncherButton Command
 
 
-Command for RibbonBar LauncherButton can be set by using **LauncherCommand** attached property. The following code example illustrates this.
+Command for RibbonBar LauncherButton can be set by using `LauncherCommand` attached property. The following code example illustrates this.
 
 {% highlight xml %}
 
@@ -25,9 +25,7 @@ Command for RibbonBar LauncherButton can be set by using **LauncherCommand** att
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
 
-
-
-<syncfusion:RibbonTab  Caption="Home"  IsChecked="False">
+<syncfusion:RibbonTab  Caption="Home" IsChecked="False">
 
 <syncfusion:RibbonBar  Header="Acions"  IsLauncherButtonVisible="True" syncfusion:RibbonBar.LauncherCommand="EditingCommands.IncreaseFontSize" syncfusion:RibbonBar.LauncherCommandTarget="{Binding ElementName=Editor}">
 

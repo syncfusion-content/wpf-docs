@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-## RibbonTextBox
+# RibbonTextBox
 
 RibbonTextBox control provide similar setoff functionalities like normal TextBox control in Ribbon Instance. 
 
