@@ -14,13 +14,13 @@ The table represents the .NET framework versions vs Syncfusion ES version.
 
 <table>
 <tr>
-<td>
-Syncfusion Version<br/><br/></td><td>
-.NET 3.5<br/><br/></td><td>
-NET 4.0<br/><br/></td><td>
-NET 4.5<br/><br/></td><td>
-NET 4.5.1<br/><br/></td><td>
-NET 4.6<br/><br/></td></tr>
+<th>
+Syncfusion Version<br/><br/></th><th>
+.NET 3.5<br/><br/></th><th>
+NET 4.0<br/><br/></th><th>
+NET 4.5<br/><br/></th><th>
+NET 4.5.1<br/><br/></th><th>
+NET 4.6<br/><br/></th></tr>
 <tr>
 <td>
 Earlier Version<br/><br/></td><td>
@@ -69,11 +69,13 @@ Controls</th><th>
 .NET 3.5</th><th>
 .NET 4.0</th><th>
 .NET 4.5</th><th>
-.NET 4.5.1</th></tr>
+.NET 4.5.1</th><th>
+.NET 4.6</th></tr>
 <tr>
 <td>
 GRIDS</td><td>
 Grid</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -85,6 +87,7 @@ GridTree </td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
@@ -93,11 +96,13 @@ SfDataGrid</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 Spreadsheet</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -109,11 +114,13 @@ PropertyGrid</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 DATA VISUALIZATION</td><td>
 Diagram</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -125,12 +132,14 @@ Gantt</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfBarcode</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -141,12 +150,14 @@ SfBulletGraph</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfChart</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -157,12 +168,14 @@ SfGauge</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfMaps</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -173,12 +186,14 @@ SfSchedule </td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfAreaSparkline</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -189,12 +204,14 @@ SfLineSparkline</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfColumnSparkline</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -205,6 +222,7 @@ SfWinLossSparkline</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
@@ -213,11 +231,13 @@ SfTreeMap</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 LAYOUT</td><td>
 Carousel</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -229,11 +249,13 @@ CardView</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 DockingManager</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -245,11 +267,13 @@ DocumentContainer</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 Ribbon</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -261,11 +285,13 @@ SfChromelessWindow</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 TabSplitter</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -277,11 +303,13 @@ TileView</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
  EDITORS</td><td>
 AutoComplete</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -293,11 +321,13 @@ ButtonAdv</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 CalendarEdit</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -309,11 +339,13 @@ CheckedListBox</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 CheckListBox</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -325,11 +357,13 @@ ColorPicker</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 ColorPickerPalette</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -341,11 +375,13 @@ ComboBoxAdv</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 DateTimeEdit</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -357,11 +393,13 @@ DoubleTextBox</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 DropDownButtonAdv</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -373,12 +411,14 @@ RichTextBoxAdv</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfCalculator</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -389,12 +429,14 @@ SfDomainUpDown</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfMaskedEdit</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -405,12 +447,14 @@ SfMultiColumnDropdown</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfRadialSlider</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -421,12 +465,14 @@ SfRangeSlider</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfRating</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -437,6 +483,7 @@ SfTextboxExt</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
@@ -445,11 +492,13 @@ SfUpDown</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SplitButton</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -461,11 +510,13 @@ TimespanEdit</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
  NAVIGATION</td><td>
 GroupBar</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -477,11 +528,13 @@ HierarchyNavigator</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 MenuAdv</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -493,12 +546,14 @@ SfColorPalette</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfDataPager</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -509,6 +564,7 @@ SfDateTimeRangeNavigator</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
@@ -517,11 +573,13 @@ SfTreeNavigator</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 TabControlExt</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -533,11 +591,13 @@ TabNavigation</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 TaskBar</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -549,11 +609,13 @@ ToolBarAdv</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 TreeViewAdv</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -565,12 +627,14 @@ NotifyIcon</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SfBusyIndicator</td><td>
 No</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -581,11 +645,13 @@ SfHubTile</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 MISCELLANEOUS</td><td>
 Calculate</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -597,11 +663,13 @@ SkinManager</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 SpellChecker</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -613,11 +681,13 @@ Wizard</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 FILE   FORMATS</td><td>
 DocIO</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -629,11 +699,13 @@ PDF</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 PDFViewer</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -645,11 +717,13 @@ XlsIO</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 REPORTING</td><td>
 ReportDesigner</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -661,11 +735,13 @@ ReportWriter</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 ReportViewer</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -677,11 +753,13 @@ OlapChart</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 OlapClient</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -693,6 +771,7 @@ OlapGauge</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
@@ -701,11 +780,13 @@ OlapGrid</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
+Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
 </td><td>
 PivotGrid</td><td>
+Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>

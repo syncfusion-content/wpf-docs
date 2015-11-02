@@ -43,7 +43,7 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 ## Add Children to the Docking Manager 
 
-Docking Manager can accept any control as its children. Here, five content control is added as the child that is displayed with different Sides and States of the Docking Manager.
+Docking Manager can accept any control as its children. Here, five content controls are added as the children that is displayed with different sides and states of the Docking Manager.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager">
@@ -69,7 +69,7 @@ Docking Manager can accept any control as its children. Here, five content contr
 
 ## Set Header for each child Window
 
-Docking Manger provides with an attached `Header` property that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
+Docking Manger provides with an attached property  `Header` that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" >
@@ -95,7 +95,7 @@ Docking Manger provides with an attached `Header` property that helps to set the
 
 ## Set States for each Child Window
 
-Docking Manager provides an attached `State` property that helps to set the state of a child windows. Since, `Dock` is the default value, initially all the children stay in the Docking Window.
+Docking Manager provides an attached property `State` that helps to set the state of a child windows. Since, `Dock` is the default value, initially all the children stay in the Docking Window.
 
 To Auto hide the “ToolBox” window, set its `State` property as `AutoHidden`. Repeat the same procedure with the `State` value as `Float` and `Document` for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
 
@@ -125,11 +125,11 @@ Also, enable the Document Container for the Document view by setting the `UseDoc
 
 ## Set Sides for the children
 
-Docking Manager provides an attached `SideInDockMode` property that helps to dock a window at the required side. Since, `Left` is the default value, initially all the windows are docked in the left side. 
+Docking Manager provides an attached property `SideInDockMode` that helps to dock a window at the required side. Since, `Left` is the default value, initially all the windows are docked in the left side. 
 
 Set the `SideInDockMode` value as `Right` for “Solution Explorer” window to dock it on the right side.
 
-The `side` property has a `Tabbed` option used to tab a window on another window. The tabbing windows should be aware of the target window’s name. So, set “Output” window’s `TargetNameInDockedMode` as “SolutionExplorer” to Tab it on the “SolutionExplorer” window.
+The `side` property's `Tabbed` option is used to tab a window on another window. The tabbing windows need to be aware of the target window’s name. So, set “Output” window’s `TargetNameInDockedMode` as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
@@ -189,7 +189,7 @@ this.SyncDockingManager.LoadDockState();
 
 ## Set Visual Styles
 
-Docking Manager supports various visual styles by using the SfSkinManager. To apply Visual Studio style on the current layout, refer to the following steps.
+Docking Manager supports various visual styles by using the `SfSkinManager`. To apply Visual Studio style on the current layout, refer to the following steps.
 
 * Refer to the following assemblies with the project
 1. Syncfusion.SfSkinManager.Wpf

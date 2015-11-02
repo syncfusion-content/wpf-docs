@@ -17,6 +17,7 @@ Create a Viewmodel and define a Model Collection that is used to bind with the T
 XAML
 
 {% highlight xml %}
+
 <syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">   <syncfusion:TabControlExt.ItemTemplate>
 
 <DataTemplate>
@@ -29,40 +30,28 @@ XAML
 
 </syncfusion:TabControlExt>
 
-
-
 {% endhighlight %}
 
 C#
 
-
 {% highlight c# %}
-public class ViewModel:NotificationObject
 
+public class ViewModel:NotificationObject
 {
 
 private ObservableCollection<model> _tabcollection;
 
 public ObservableCollection<model> tabcollection
-
 {
-
 get
-
-{
-
-return _tabcollection;
-
-}
+	{
+	return _tabcollection;
+	}
 
 set
-
-{
-
-_tabcollection = value;
-
-}
-
+	{
+	_tabcollection = value;
+	}
 }
 
 private void Collection()
@@ -72,85 +61,66 @@ private void Collection()
 model model = new model()
 
 {
-
-HeaderName = "item1"
-
+	HeaderName = "item1"
 };
 
 model model1 = new model()
 
 {
-
-HeaderName = "item2"
-
+	HeaderName = "item2"
 };
 
-model model2 = new model()
+	model model2 = new model()
 
 {
-
-HeaderName = "item3"
-
+	HeaderName = "item3"
 };
-
-tabcollection.Add(model);
-
-tabcollection.Add(model1);
-
-tabcollection.Add(model2);
+	
+	tabcollection.Add(model);
+	tabcollection.Add(model1);
+	tabcollection.Add(model2);
 
 }
 
 public ViewModel()
-
 {
-
-tabcollection=new ObservableCollection<model>();
-
-Collection();
-
-}
-
+		tabcollection=new ObservableCollection<model>();
+		Collection();
+	}
 }
 
 public class model:NotificationObject
-
 {
 
-public model()
-
-{
-
-}
+public model() {}
 
 private string _headername;
 
 public string HeaderName
 
-{
+	{
 
-get
+	get
 
-{
+		{
 
-return _headername;
+		return _headername;
+
+		}
+
+	set
+
+		{
+
+		_headername = value;
+
+		this.RaisePropertyChanged("HeaderName");
+
+		}
+
+	}
 
 }
-
-set
-
-{
-
-_headername = value;
-
-this.RaisePropertyChanged("HeaderName");
-
-}
-
-}
-
-}
-
 
 
 {% endhighlight %}
@@ -160,6 +130,7 @@ And now you need to handle the `SelectionChanged` event of the TabControlExt. So
 XAML
 
 {% highlight xml %}
+
 <syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
 
 <syncfusion:TabControlExt.ItemTemplate>
@@ -174,44 +145,31 @@ XAML
 
 </syncfusion:TabControlExt>
 
-
-
 {% endhighlight %}
 
 C#
 
 
 {% highlight c# %}
+
 private ICommand selectionchanged;
 
 public ICommand SelectionChanged
-
 {
-
 get
-
-{
-
-return selectionchanged;
-
-}
-
+	{
+		return selectionchanged;
+	}
 }
 
 public ViewModel()
-
 {
-
-selectionchanged = new DelegateCommand<object>(PropertyChangedHandled);
-
+	selectionchanged = new DelegateCommand<object>(PropertyChangedHandled);
 }
 
 private void PropertyChangedHandled (object obj)
-
 {
-
-MessageBox.Show("Command Executed”);
-
+	MessageBox.Show("Command Executed”);
 }
 
 
@@ -234,9 +192,8 @@ The following section explains how you can use event commands in code-behind wit
 XAML
 
 {% highlight xml %}
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"                              syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
 
-
+<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}" syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
 
 {% endhighlight %}
 
@@ -245,11 +202,8 @@ C#
 
 {% highlight c# %}
 private void PropertyChangedHandled (object obj)
-
 {
-
-MessageBox.Show(obj.ToString());
-
+	MessageBox.Show(obj.ToString());
 }
 
 
@@ -268,26 +222,20 @@ Any property can bind with the Command Parameter to pass it as command in View M
 XAML
 
 {% highlight xml %}
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"                                syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,RelativeSource={RelativeSource Self}}">
 
+<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"  syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,RelativeSource={RelativeSource Self}}">
 
 
 {% endhighlight %}
 
 C#
 
-
 {% highlight c# %}
+
 private void PropertyChangedHandled (object obj)
-
 {
-
-MessageBox.Show("SelectedItem" +obj.ToString());
-
+	MessageBox.Show("SelectedItem" +obj.ToString());
 }
-
-
-
 
 
 {% endhighlight %}
