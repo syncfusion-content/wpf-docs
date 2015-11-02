@@ -60,11 +60,11 @@ The following steps help you edit the Template in Expression Blend.
 
 5.You have the following options:
 
-      * Edit Current – To edit the current Template of the control. When you don't have an applied Template to the control, this option is disabled.
-      * Edit a Copy – Helps to edit the default Template. When you select, Create Style Resource dialog box is opened and this dialog box is used to select the name for your style, as well as the location.
+* Edit Current – To edit the current Template of the control. When you don't have an applied Template to the control, this option is disabled.
+* Edit a Copy – Helps to edit the default Template. When you select, Create Style Resource dialog box is opened and this dialog box is used to select the name for your style, as well as the location.
 
 ![](GettingStarted_images/GettingStarted_img6.jpeg)
 
 
-      * Create Empty – This option helps to create an empty template for selected control. When you choose it, the same dialog box opens. You should select the name for your template, as well as the location.
+* Create Empty – This option helps to create an empty template for selected control. When you choose it, the same dialog box opens. You should select the name for your template, as well as the location.
 

@@ -50,7 +50,9 @@ You can also pause the recording option while testing the project.
 ### Click to Stop the Recording.
 
 4.The Recorded steps are shown by UI Map or by pressing Alt+ S key.
+
 5.To delete actions that you had recorded by mistake, choose Edit Actions.
+
 6.To generate code that replicates your action, choose the Generate Code icon and type a name and description for your CUIT method.
 
 ![C:/Users/marimuthu.sivalingam/Documents/My Received Files/L_AA40.tmp.PNG](CodedUI_images/CodedUI_img6.jpeg)
@@ -91,6 +93,7 @@ public void CodedUITestMethod1()
 {% endhighlight %}
 
 2.Build and run the application that has already been configured. You can also open the CUIT builder with the following steps.
+
 3.Right-click the body of the `CodedUITestMethod` and then select `Generate Code for Coded UI Test` -> Use CUIT builder as shown in the following screenshot:
 
 
