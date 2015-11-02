@@ -20,7 +20,7 @@ The following procedure illustrates how to install Essential Studio.
 5. Click Next. The Select the Installation and Samples Folder window opens.
 6. To install it in the displayed default location, click Install.
 7. Select the Run Dashboard check box to launch the Dashboard after installing.
-8. Click Finish. Essential Studio is installed in your system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm# "") is launched automatically.
+8. Click Finish. Essential Studio is installed in your system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
 ## Nuget Installation
 
@@ -35,7 +35,7 @@ Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The 
 
 3. Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when needed. Note: The framework number at the end of package name like, 35, 40, and 45, 451 is added.
 4. Find the installed Syncfusion Packages in the Directory location, of the solution file, of the created project (Syncfusion Packages).
-5. You can [configure ](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm "")Nuget for the required purpose.
+5. You can [configure ](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm)Nuget for the required purpose.
 
 ## Commandline installation
 
@@ -63,21 +63,21 @@ Local copy is supported by the Syncfusion assembly reference in the Solution Exp
 
 ## GAC
 
-Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the the developer machines. Also Syncfusion [Assembly Manager](C:\Users\Selvaganapathy\Desktop\assembly manager# "") helps you Add or Remove the Syncfusion assemblies to or from GAC.
+Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the the developer machines. Also Syncfusion Assembly Manager helps you Add or Remove the Syncfusion assemblies to or from GAC.
 
 ## Clickonce Deployment
 
-While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx# "") the deployment for publishing an application with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
+While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx#) the deployment for publishing an application with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
 ![](Deployment_images/Deployment_img2.jpeg)
 
 
-__Selecting__ __Application__ __Files__ __for__ __changing__ __the__ __status__
+Selecting Application Files for changing the status
 
 ![](Deployment_images/Deployment_img3.jpeg)
 
 
-__Publish__ __Status__ __option__ __changed__ __as__ __Include__
+Publish Status option changed as Include
 
 ### ClickOnce signing process
 
@@ -87,6 +87,7 @@ Signing ClickOnce involves two steps,
 
 * Signing the application manifest
 * Signing application executable
+
 #### Signing the manifest
 
 
@@ -106,8 +107,8 @@ In the Publish tab, click “Options” and in the publish options dialog check 
 
 Note: Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
 
-1. __Press__ __Windows__ __+__ __R__ __and__ __type__ __“____certmgr____.____msc____”__ __and__ __press__ __enter__ __that__ __opens__ __certificate__ __manager____.__
-2. __Right__ __click__ __the__ __“____Trusted__ __Root__ __certification__ __Authorities____”__ __and__ __navigate__ __to__ __All__ __Tasks__ __->__ __Import____.__ __Now__ __import__ __the__ .pfx __to__ __“____Trusted__ __Root__ __certification__ __Authorities____”.__ __It__ __displays__ __a__ __warning__ __for__ __first__ __time____.__ __Press__ __Yes__ __to__ __continue__ __the__ __importing____.__
+1. Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager.
+2. Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the .pfx to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing.
 
 ### Signing exe
 
@@ -128,8 +129,8 @@ The following table represents Assemblies or Samples and the installed location.
 <table>
 <tr>
 <td>
-**Assemblies****/** **Samples******<br/><br/></td><td>
-installed location****<br/><br/></td></tr>
+Assemblies/Samples<br/><br/></td><td>
+installed location<br/><br/></td></tr>
 <tr>
 <td>
 GAC<br/><br/></td><td>
@@ -145,5 +146,5 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\[Installed Version]\precompil
 <tr>
 <td>
 Samples<br/><br/></td><td>
-{{'__[__'| markdownify }}Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\WPF\samples<br/><br/></td></tr>
+[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\[Installed Version]\WPF\samples<br/><br/></td></tr>
 </table>
