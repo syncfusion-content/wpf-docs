@@ -20,22 +20,22 @@ Essential WPF is a comprehensive collection of over 100+ enterprise-grade WPF co
 
 ## Additional help resources
 
-The Knowledge Base section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
+The [Knowledge Base](http://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
 
-Similar to the Knowledge Base, the Forum section also contains responses to questions that other customers have asked in the past.
+Similar to the [Knowledge Base](http://www.syncfusion.com/kb/wpf), the [Forum](http://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
 
 ## Create a support incident
 
-If you are still unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a support ticket.
+If you are still unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
 
 ## List of Controls
 
 <table>
 <tr>
-<td>
-Category<br/><br/></td><td>
-Controls<br/><br/></td></tr>
+<th>
+Category<br/><br/></th><th>
+Controls<br/><br/></th></tr>
 <tr>
 <td>
 GRIDS<br/><br/></td><td>
