@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arranging Ribbon items using ButtonPanel
+title: Dealing with Ribbon Items | Ribbon | WPF | Syncfusion
 description: Arranging Ribbon items using ButtonPanel
 platform: wpf
 control: Ribbon
@@ -119,4 +119,177 @@ ButtonPanel.Items.Add(SplitButton);
 
 ![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img2.jpeg)
 
+
+# Changing Size of Ribbon items
+
+`SizeForm` is used to set the size of the Ribbon items that are added inside the **Ribbon** control.
+
+Possible values of `SizeForm` are Large, Small and ExtraSmall.
+
+## List of controls which support SizeForm
+
+* RibbonButton
+* DropDownButton
+* SplitButton
+
+The code to set sizeform for the above controls is illustrated below
+
+{% highlight xml %}
+
+[XAML]
+
+<syncfusion:Ribbon  VerticalAlignment="Top" >
+
+<syncfusion:RibbonTab  Caption="Home" IsChecked="True">
+
+<syncfusion:RibbonBar Header="RibbonButton">
+
+<syncfusion:RibbonButton   SizeForm="Large" Label="Reply"/>
+
+<syncfusion:RibbonButton  SizeForm="Small" />
+
+<syncfusion:ButtonPanel>
+
+<syncfusion:RibbonButton  SizeForm="ExtraSmall" Label="ReplyAll"/>
+
+</syncfusion:ButtonPanel>   
+
+</syncfusion:RibbonBar>
+
+<syncfusion:RibbonBar Header="SplitButton">
+
+<syncfusion:SplitButton   SizeForm="Large" Label="NewItem"/>
+
+<syncfusion:SplitButton   SizeForm="Small" Label="CleanUp"/>
+
+<syncfusion:ButtonPanel>
+
+<syncfusion:SplitButton  SizeForm="ExtraSmall" />   
+
+</syncfusion:ButtonPanel>   
+
+</syncfusion:RibbonBar>
+
+<syncfusion:RibbonBar Header="DropDownButton">
+
+<syncfusion:DropDownButton SizeForm="Large" Label="Delete"/>
+
+<syncfusion:DropDownButton SizeForm="Small" Label="Junk"/>
+
+<syncfusion:ButtonPanel>
+
+<syncfusion:DropDownButton  SizeForm="ExtraSmall" />
+
+</syncfusion:ButtonPanel>  
+
+</syncfusion:RibbonBar>
+
+</syncfusion:RibbonTab>
+
+<syncfusion:RibbonTab Caption="Send/Receive" IsChecked="False"/>
+
+</syncfusion:Ribbon>
+
+
+
+{% endhighlight %}
+
+![](ChangingSizeofRibbonitems_images/ChangingSizeofRibbonitems_img1.jpeg)
+
+# Add command to RibbonLauncherButton
+
+Ribbon instance now provides command support for RibbonBar LauncherButton. It provides the following options.
+
+* Setting LauncherButton Command
+* Setting LauncherButton CommandTarget
+* Setting LauncherButton CommandParameter
+
+## Set RibbonBar LauncherButton Command
+
+
+Command for RibbonBar LauncherButton can be set by using `LauncherCommand` attached property. The following code example illustrates this.
+
+{% highlight xml %}
+
+[XAML]
+
+<syncfusion:Ribbon  VerticalAlignment="Top" >
+
+<syncfusion:RibbonTab  Caption="Home" IsChecked="False">
+
+<syncfusion:RibbonBar  Header="Acions"  IsLauncherButtonVisible="True" syncfusion:RibbonBar.LauncherCommand="EditingCommands.IncreaseFontSize" syncfusion:RibbonBar.LauncherCommandTarget="{Binding ElementName=Editor}">
+
+<syncfusion:RibbonButton SizeForm="Small"  Label="Copy Folder"/>
+
+<syncfusion:RibbonButton SizeForm="Small" Label="Move Folder"/>
+
+<syncfusion:SplitButton  Label=" Split1 "   SizeForm="Large" >
+
+<syncfusion:RibbonButton SizeForm="Small"  Label="Mark to Download"/>
+
+<syncfusion:RibbonButton SizeForm="Small"  Label="UnMark to Download"/>
+
+</syncfusion:SplitButton>
+
+</syncfusion:RibbonBar>
+
+</syncfusion:RibbonTab>
+
+<syncfusion:RibbonTab  Caption="Insert" />
+
+</syncfusion:Ribbon>
+
+
+
+{% endhighlight %}
+
+
+
+The font size for the selected text is increased when launcher button is clicked
+
+![](AddingcommandtoRibbonLauncherButton_images/AddingcommandtoRibbonLauncherButton_img1.jpeg)
+
+# Show HelpButton in RibbonWindow
+
+The HelpButton displays the information about the application.To enable this HelpButton in `Office2013` theme, set `ShowHelpButton` as `True` 
+
+{% highlight xml %}
+
+[XAML]
+
+<syncfusion:RibbonWindow
+
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonButtonPanel.MainWindow"
+
+Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Office2013" ShowHelpButton="True" x:Name="RibbonWindow"/>
+
+{% endhighlight %}
+
+![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img1.jpeg)
+
+
+To set the HelpButton at the right of the RibbonWindow for the themes except Office2013, use `TabPanelItem` property of the Ribbon
+
+The TabPanelItem is located at the right corner below the main window close button in the following screen shot.
+
+![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img2.jpeg)
+
+
+This following code snippet explains how to create and configure TabPanelItem.
+
+{% highlight xml %}
+
+[XAML]
+
+<syncfusion:Ribbon.TabPanelItem>
+
+<syncfusion:RibbonButton SizeForm="ExtraSmall" SmallIcon="help16.png" />
+
+</syncfusion:Ribbon.TabPanelItem>
+
+{% endhighlight %}
 
