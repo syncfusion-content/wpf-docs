@@ -8,19 +8,19 @@ documentation: ug
 ---
 # RibbonMenuItem
 
-RibbonMenuItems are used as entities in menus like ApplicationMenu, Split Button Menu, context menu, and so on.
+RibbonMenuItems are used as entities in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 
-The following code example illustrates How to use RibbonMenuItem control in Ribbon instance.
+The following code example illustrates how to use RibbonMenuItem control in Ribbon instance.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  >
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  >
 
-<syncfusion:RibbonBar Name="_RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1">
 
 <syncfusion:RibbonMenuItem  Header="NEW" Width="100"></syncfusion:RibbonMenuItem>
 

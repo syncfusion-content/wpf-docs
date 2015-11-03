@@ -8,27 +8,27 @@ documentation: ug
 ---
 # RibbonCheckBox
 
-RibbonCheckBox is used to select or unselect options from the users in Ribbon instance. RibbonCheckBox control provide similar set of functionalities like normal CheckBox control in Ribbon instance.
+RibbonCheckBox is used to select or unselect options. RibbonCheckBox control provide similar set of functionalities like normal CheckBox control in Ribbon.
 
-The following code example illustrates How to use RibbonCheckBox control in Ribbon instance.
+The following code example illustrates how to use RibbonCheckBox control in Ribbon instance.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  >
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  >
 
-<syncfusion:RibbonBar Name="_RibbonBar1" Header="RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
 
-<syncfusion:RibbonButton   Label="Cut"/>
+<syncfusion:RibbonButton Label="Cut"/>
 
-<syncfusion:RibbonButton   Label="Copy"/>
+<syncfusion:RibbonButton Label="Copy"/>
 
 </syncfusion:RibbonBar>
 
-<syncfusion:RibbonBar  Name="_RibbonBar2" Width="150" Header="RibbonBar2">
+<syncfusion:RibbonBar Name="_ribbonBar2" Width="150" Header="RibbonBar2">
 
 <syncfusion:RibbonCheckBox  Width="140" Content="SelectAll" IsChecked="True"></syncfusion:RibbonCheckBox>
 
@@ -50,9 +50,9 @@ Create instance of RibbonCheckBox and add it to RibbonBar Items.
 
 [C#]
 
-RibbonCheckBox _RibbonCheckBox = new RibbonCheckBox(){Content = "SelectAll", IsChecked=true };
+RibbonCheckBox _ribbonCheckBox = new RibbonCheckBox(){Content = "SelectAll", IsChecked=true };
 
-_RibbonBar2.Items.Add(_RibbonCheckBox);
+_ribbonBar2.Items.Add(_ribbonCheckBox);
 
 
 
