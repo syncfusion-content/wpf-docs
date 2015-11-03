@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show HelpButton in RibbonWindow
+title: Show HelpButton in RibbonWindow | Ribbon | WPF | Syncfusion
 description: Show HelpButton in RibbonWindow
 platform: wpf
 control: Ribbon

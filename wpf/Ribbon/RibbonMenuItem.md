@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonMenuItem
+title: RibbonMenuItem | Ribbon | WPF | Syncfusion
 description: RibbonMenuItem
 platform: wpf
 control: Ribbon

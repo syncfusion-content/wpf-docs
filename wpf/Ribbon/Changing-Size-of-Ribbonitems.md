@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing Size of Ribbon items
+title: Changing Size of Ribbon items | Ribbon | WPF | Syncfusion
 description: Changing Size of Ribbon items
 platform: wpf
 control: Ribbon

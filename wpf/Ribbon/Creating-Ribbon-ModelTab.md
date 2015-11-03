@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating Ribbon Model Tab
+title: Creating Ribbon Model Tab | Ribbon | WPF | Syncfusion
 description: Creating Ribbon Model Tab
 platform: wpf
 control: Ribbon

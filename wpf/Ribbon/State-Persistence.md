@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence
+title: State Persistence | Ribbon | WPF | Syncfusion
 description: State Persistence
 platform: wpf
 control: Ribbon

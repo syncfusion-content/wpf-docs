@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonRadioButton
+title: RibbonRadioButton | Ribbon | WPF | Syncfusion
 description: RibbonRadioButton
 platform: wpf
 control: Ribbon

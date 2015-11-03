@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SimpleMenuButton
+title: SimpleMenuButton | Ribbon | WPF | Syncfusion
 description: SimpleMenuButton
 platform: wpf
 control: Ribbon

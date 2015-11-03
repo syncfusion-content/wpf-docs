@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch Support
+title: Touch Support | Ribbon | WPF | Syncfusion
 description: Touch Support
 platform: wpf
 control: Ribbon

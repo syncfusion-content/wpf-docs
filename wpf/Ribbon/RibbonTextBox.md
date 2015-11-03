@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonTextBox
+title: RibbonTextBox | Ribbon | WPF | Syncfusion
 description: RibbonTextBox
 platform: wpf
 control: Ribbon

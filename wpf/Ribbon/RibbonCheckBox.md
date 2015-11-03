@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonCheckBox
+title: RibbonCheckBox | Ribbon | WPF | Syncfusion
 description: RibbonCheckBox
 platform: wpf
 control: Ribbon

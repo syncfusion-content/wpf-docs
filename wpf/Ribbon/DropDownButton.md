@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DropDownButton
+title: DropDownButton | Ribbon | WPF | Syncfusion
 description: DropDownButton
 platform: wpf
 control: Ribbon
