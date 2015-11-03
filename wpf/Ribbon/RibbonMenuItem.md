@@ -16,7 +16,7 @@ The following code example illustrates how to use RibbonMenuItem control in Ribb
 
 [XAML]
 
-<syncfusion:Ribbon Name="_ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  >
 
@@ -40,9 +40,9 @@ Create instance of RibbonMenuItem and add it to RibbonBar Items.
 
 [C#]
 
-RibbonMenuItem _RibbonMenuItem = new RibbonMenuItem(){Header = "NEW", Width = 100};
+RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem(){Header = "NEW", Width = 100};
 
-_RibbonBar1.Items.Add(_RibbonMenuItem);
+_ribbonBar1.Items.Add(_ribbonMenuItem);
 
 
 

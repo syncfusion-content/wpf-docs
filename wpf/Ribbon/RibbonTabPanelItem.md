@@ -8,19 +8,19 @@ documentation: ug
 ---
 # Ribbon TabPanelItem
 
-You can set RibbonTabPannelItem in Ribbon instance like in Microsoft Office. It located on below the close button of RibbonWindow.
+You can set RibbonTabPannelItem in Ribbon instance like in Microsoft Office. It located below the close button of RibbonWindow.
 
-The following code example illustrates How to use RibbonTabPannelItem control in Ribbon instance.
+The following code example illustrates how to use RibbonTabPannelItem control in Ribbon instance.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  IsChecked="True">
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
 
-<syncfusion:RibbonBar Name="_RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1">
 
 <syncfusion:RibbonMenuItem  Header="NEW" Width="100"></syncfusion:RibbonMenuItem>
 
@@ -44,9 +44,9 @@ Create instance of RibbonButton and assign it to TabPanelItem property of Ribbon
 
 [C#]
 
-RibbonButton _RibbonButton = new RibbonButton() { Label="Help"};
+RibbonButton _ribbonButton = new RibbonButton() { Label="Help"};
 
-_Ribbon1.TabPanelItem = _RibbonButton;
+_ribbon.TabPanelItem = _ribbonButton;
 
 {% endhighlight %}
 

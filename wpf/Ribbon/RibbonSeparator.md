@@ -8,17 +8,17 @@ documentation: ug
 ---
 # Ribbon Separator	
 
-RibbonSeperator used to separate the similar setoff Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
+RibbonSeperator used to separate the similar set of Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
 
-The following code example illustrates How to set RibbonSeperator in Ribbon instance.
+The following code example illustrates how to set RibbonSeperator in Ribbon instance.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Caption="HOME" IsChecked="False">
+<syncfusion:RibbonTab Caption="HOME" IsChecked="True">
 
 <syncfusion:RibbonBar>
 
@@ -46,27 +46,39 @@ The following code example illustrates How to set RibbonSeperator in Ribbon inst
 
 {% endhighlight %}
 
-You can add RibbonSeperator dynamically create instance of RibbonSeperator and add it to Items of in which element you want to use separator.
+RibbonSeperator instance can be added as item to the group of other items
 
 {% highlight c# %}
 
 [C#]
 
-RibbonSeparator _RibbonSeparator = new RibbonSeparator();
+RibbonSeparator _ribbonSeparator = new RibbonSeparator();
 
-RibbonButton _RibbonButton = new RibbonButton() { Label = "Cut" };
+RibbonButton _ribbonButton1 = new RibbonButton() { Label = "New" };
 
-RibbonButton _RibbonButton1 = new RibbonButton() { Label = "Copy" };
+RibbonButton _ribbonButton2 = new RibbonButton() { Label = "Open" };
 
-RibbonButton _RibbonButton2 = new RibbonButton() { Label = "Paste" };
+RibbonButton _ribbonButton3 = new RibbonButton() { Label = "Save" };
 
-_RibbonBar.Items.Add(_RibbonSeparator);
+RibbonButton _ribbonButton4 = new RibbonButton() { Label = "Cut" };
 
-_RibbonBar.Items.Add(_RibbonButton);
+RibbonButton _ribbonButton5 = new RibbonButton() { Label = "Copy" };
 
-_RibbonBar.Items.Add(_RibbonButton1);
+RibbonButton _ribbonButton6 = new RibbonButton() { Label = "Paste" };
 
-_RibbonBar.Items.Add(_RibbonButton2);
+_ribbonBar.Items.Add(_ribbonButton1);
+
+_ribbonBar.Items.Add(_ribbonButton2);
+
+_ribbonBar.Items.Add(_ribbonButton3);
+
+_ribbonBar.Items.Add(_ribbonSeparator);
+
+_ribbonBar.Items.Add(_ribbonButton4);
+
+_ribbonBar.Items.Add(_ribbonButton5);
+
+_ribbonBar.Items.Add(_ribbonButton6);
 
 {% endhighlight %}
 
