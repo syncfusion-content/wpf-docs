@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding custom RibbonTab and RibbonBar
+title: Adding custom RibbonTab and RibbonBar | Ribbon | WPF | Syncfusion
 description: Adding custom RibbonTab and RibbonBar
 platform: wpf
 control: Ribbon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonComboBox
+title: RibbonComboBox | Ribbon | WPF | Syncfusion
 description: RibbonComboBox
 platform: wpf
 control: Ribbon

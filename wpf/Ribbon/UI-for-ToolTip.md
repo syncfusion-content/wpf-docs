@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UI for ToolTip
+title: UI for ToolTip | Ribbon | WPF | Syncfusion
 description: UI for ToolTip
 platform: wpf
 control: Ribbon

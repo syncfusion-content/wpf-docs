@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon TabPanelItem
+title: Ribbon TabPanelItem | Ribbon | WPF | Syncfusion
 description: Ribbon TabPanelItem
 platform: wpf
 control: Ribbon

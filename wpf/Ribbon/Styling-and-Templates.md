@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Templates
+title: Styling and Templates | Ribbon | WPF | Syncfusion
 description: Styling and Templates
 platform: wpf
 control: Ribbon
