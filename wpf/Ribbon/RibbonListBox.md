@@ -10,17 +10,17 @@ documentation: ug
 
 RibbonListBox control is used to display a list of items in a Ribbon instance. You can add any type of content as RibbonListBox items.
 
-The following code example illustrates How to use RibbonListBox control in Ribbon instance.
+The following code example illustrates how to use RibbonListBox control in Ribbon instance.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  IsChecked="False">
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
 
-<syncfusion:RibbonBar Name="_RibbonBar1" Header="RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
 
 <syncfusion:RibbonButton   Label="Cut"/>
 
@@ -28,15 +28,15 @@ The following code example illustrates How to use RibbonListBox control in Ribbo
 
 </syncfusion:RibbonBar>
 
-<syncfusion:RibbonBar  Name="_RibbonBar2" Width="150" Header="RibbonBar2">
+<syncfusion:RibbonBar  Name="_ribbonBar2" Width="150" Header="RibbonBar2">
 
 <syncfusion:RibbonListBox  Width="140" >
 
-<ComboBoxItem Content="Office2003Theme"/>
+<ListBoxItem Content="Office2003Theme"/>
 
-<ComboBoxItem Content="Office2007Theme"/>
+<ListBoxItem Content="Office2007Theme"/>
 
-<ComboBoxItem Content="Office2010Theme"/>
+<ListBoxItem Content="Office2010Theme"/>
 
 </syncfusion:RibbonListBox>                
 
@@ -58,21 +58,21 @@ Create instance of RibbonListBox and add it to RibbonBar Items.
 
 [C#]
 
-RibbonListBox _RibbonListBox = new RibbonListBox();
+RibbonListBox _ribbonListBox = new RibbonListBox();
 
-ComboBoxItem Item = new ComboBoxItem(){Content = "Office2003Theme"};
+ListBoxItem item1 = new ListBoxItem(){Content = "Office2003Theme"};
 
-ComboBoxItem Item1 = new ComboBoxItem(){Content = "Office2007Theme"};
+ListBoxItem item2 = new ListBoxItem(){Content = "Office2007Theme"};
 
-ComboBoxItem Item2= new ComboBoxItem(){Content = "Office2010Theme"};
+ListBoxItem item3= new ListBoxItem(){Content = "Office2010Theme"};
 
-_RibbonBar2.Items.Add(Item);
+_ribbonListBox.Items.Add(item1);
 
-_RibbonBar2.Items.Add(Item1);
+_ribbonListBox.Items.Add(item2);
 
-_RibbonBar2.Items.Add(Item2);
+_ribbonListBox.Items.Add(item3);
 
-_RibbonBar2.Items.Add(_RibbonListBox);
+_ribbonBar2.Items.Add(_ribbonListBox);
 
 
 

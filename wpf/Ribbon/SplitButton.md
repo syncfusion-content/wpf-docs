@@ -8,19 +8,21 @@ documentation: ug
 ---
 # SplitButton
 
+SplitButton will act as both normal Button as well as DropDownButton. It allow to click the button directly by clicking the upper part of the button and also it display list of items while press the below part of the button.
+
 ## Adding Item to the control
 
-Items to SplitButton are added by using DropDownMenuItems.
+DropDownMeuItem can be added as items to SplitButton.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  IsChecked="False">
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
 
-<syncfusion:RibbonBar Name="_RibbonBar1" Header="RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
 
 <syncfusion:RibbonButton   Label="Cut"/>
 
@@ -28,7 +30,7 @@ Items to SplitButton are added by using DropDownMenuItems.
 
 </syncfusion:RibbonBar>
 
-<syncfusion:RibbonBar Name="_RibbonBar2" Header="RibbonBar2">
+<syncfusion:RibbonBar Name="_ribbonBar2" Header="RibbonBar2">
 
 <syncfusion:SplitButton Label="Chart">
 
@@ -52,7 +54,7 @@ Items to SplitButton are added by using DropDownMenuItems.
 
 {% endhighlight %}
 
-You can add Items to SplitButton dynamically by create instance of DropDownMenuItems add it to SplitButton Items.
+You can add Items to SplitButton by create instance of DropDownMenuItem and add it to SplitButton.
 
 {% highlight c# %}
 
@@ -60,13 +62,13 @@ You can add Items to SplitButton dynamically by create instance of DropDownMenuI
 
 SplitButton _splitbutton = new SplitButton() { Label = "Chart" };
 
-DropDownMenuItem _DropDownMenuItem1 = new DropDownMenuItem() { Header = "PieChart" };
+DropDownMenuItem _dropDownMenuItem1 = new DropDownMenuItem() { Header = "PieChart" };
 
-DropDownMenuItem _DropDownMenuItem2 = new DropDownMenuItem() { Header = "ColumnChart" };
+DropDownMenuItem _dropDownMenuItem2 = new DropDownMenuItem() { Header = "ColumnChart" };
 
-_splitbutton.Items.Add(_DropDownMenuItem1);
+_splitbutton.Items.Add(_dropDownMenuItem1);
 
-_splitbutton.Items.Add(_DropDownMenuItem2);
+_splitbutton.Items.Add(_dropDownMenuItem2);
 
 _RibbonBar2.Items.Add(_splitbutton);
 
@@ -97,17 +99,17 @@ The following code example illustrates different size forms of SplitButton in Ri
 
 [C#]
 
-SplitButton _splitbutton=new SplitButton(){Label = "Large",SizeForm= SizeForm.Large};
+SplitButton _splitbutton1 = new SplitButton(){Label = "Large",SizeForm= SizeForm.Large};
 
-SplitButton _splitbutton1=new SplitButton(){Label = "Small",SizeForm= SizeForm.Small};
+SplitButton _splitbutton2 = new SplitButton(){Label = "Small",SizeForm= SizeForm.Small};
 
-SplitButton _splitbutton2=new SplitButton(){Label = "ExtraSmall",SizeForm= SizeForm.ExtraSmall};
+SplitButton _splitbutton3 = new SplitButton(){Label = "ExtraSmall",SizeForm= SizeForm.ExtraSmall};
 
-_RibbonBar2.Items.Add(_splitbutton);
+_ribbonBar2.Items.Add(_splitbutton1);
 
-_RibbonBar2.Items.Add(_splitbutton1);
+_ribbonBar2.Items.Add(_splitbutton2);
 
-_RibbonBar2.Items.Add(_splitbutton2);
+_ribbonBar2.Items.Add(_splitbutton3);
 
 {% endhighlight %}
 

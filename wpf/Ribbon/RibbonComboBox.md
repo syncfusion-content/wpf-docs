@@ -8,31 +8,31 @@ documentation: ug
 ---
 # RibbonComboBox
 
-RibbonComboBox control is used to display the list of items, as drop-down menu in Ribbon instance RibbonComboBox accepts any number of items to the RibbonComboBox.
+RibbonComboBox control is used to display the list of items, as ComboBox in Ribbon instance.
 
 ## Creating control in XAML
 
-You can use RibbonComboBox in Ribbon by add it inside the RibbonBar element.
+You can use RibbonComboBox in Ribbon by adding it directly to RibbonBar element.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  >
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME" IsChecked="True">
 
-<syncfusion:RibbonBar Name="_RibbonBar1" Header="RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
 
-<syncfusion:RibbonButton   Label="Cut"/>
+<syncfusion:RibbonButton Label="Cut"/>
 
-<syncfusion:RibbonButton   Label="Copy"/>
+<syncfusion:RibbonButton Label="Copy"/>
 
 </syncfusion:RibbonBar>
 
-<syncfusion:RibbonBar Name="_RibbonBar2" Width="150" Header="RibbonBar2">     
+<syncfusion:RibbonBar Name="_ribbonBar2" Width="150" Header="RibbonBar2">     
 
-<WrapPanel>
+<ButtonPanel>
 
 <syncfusion:RibbonComboBox SelectedItem="Arial" Width="80">
 
@@ -54,7 +54,7 @@ You can use RibbonComboBox in Ribbon by add it inside the RibbonBar element.
 
 </syncfusion:RibbonComboBox>
 
-</WrapPanel>
+</ButtonPanel>
 
 </syncfusion:RibbonBar>         
 
@@ -78,41 +78,41 @@ Create instance of RibbonComboBox and add it to RibbonBar Items.
 
 [C#]
 
-WrapPanel _WrapPanel = new WrapPanel();
+ButtonPanel _buttonPanel = new ButtonPanel();
 
-RibbonComboBox _RibbonComboBox = new RibbonComboBox() { Width=80};
+RibbonComboBox _ribbonComboBox1 = new RibbonComboBox() { Width=80};
 
-RibbonComboBox _RibbonComboBox1 = new RibbonComboBox() { Width=50};
+RibbonComboBox _ribbonComboBox2 = new RibbonComboBox() { Width=50};
 
-RibbonComboBoxItem ComboItem1 = new RibbonComboBoxItem() { Content = "Arial" };
+RibbonComboBoxItem comboBoxItem1 = new RibbonComboBoxItem() { Content = "Arial" };
 
-RibbonComboBoxItem ComboItem2 = new RibbonComboBoxItem() { Content = "Calibri" };
+RibbonComboBoxItem comboBoxItem2 = new RibbonComboBoxItem() { Content = "Calibri" };
 
-RibbonComboBoxItem ComboItem3 = new RibbonComboBoxItem() { Content = "Tahoma" };
+RibbonComboBoxItem comboBoxItem3 = new RibbonComboBoxItem() { Content = "Tahoma" };
 
-RibbonComboBoxItem ComboItem4 = new RibbonComboBoxItem() { Content = "11" };
+RibbonComboBoxItem comboBoxItem4 = new RibbonComboBoxItem() { Content = "11" };
 
-RibbonComboBoxItem ComboItem5 = new RibbonComboBoxItem() { Content = "12" };
+RibbonComboBoxItem comboBoxItem5 = new RibbonComboBoxItem() { Content = "12" };
 
-RibbonComboBoxItem ComboItem6 = new RibbonComboBoxItem() { Content = "13" };     
+RibbonComboBoxItem comboBoxItem6 = new RibbonComboBoxItem() { Content = "13" };     
 
-_RibbonComboBox.Items.Add(ComboItem1);
+_ribbonComboBox.Items.Add(comboBoxItem1);
 
-_RibbonComboBox.Items.Add(ComboItem2);
+_ribbonComboBox.Items.Add(comboBoxItem2);
 
-_RibbonComboBox.Items.Add(ComboItem3);
+_ribbonComboBox.Items.Add(comboBoxItem3);
 
-_RibbonComboBox1.Items.Add(ComboItem4);
+_RibbonComboBox1.Items.Add(comboBoxItem4);
 
-_RibbonComboBox1.Items.Add(ComboItem5);
+_ribbonComboBox1.Items.Add(comboBoxItem5);
 
-_RibbonComboBox1.Items.Add(ComboItem6);
+_ribbonComboBox1.Items.Add(comboBoxItem6);
 
-_WrapPanel.Children.Add(_RibbonComboBox);
+_buttonPanel.Children.Add(_ribbonComboBox1);
 
-_WrapPanel.Children.Add(_RibbonComboBox1);
+_buttonPanel.Children.Add(_ribbonComboBox2);
 
-_RibbonBar2.Items.Add(_WrapPanel);
+_ribbonBar2.Items.Add(_buttonPanel);
 
 
 
