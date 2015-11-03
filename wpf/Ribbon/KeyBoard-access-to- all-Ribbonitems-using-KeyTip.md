@@ -6,13 +6,13 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# KeyBoard access to all Ribbon items using KeyTip
+# KeyBoard access using KeyTip
 
 To invoke its command by pressing corresponding KeyTip, Ribbon control provides KeyTip support to access the Ribbonitem using Keyboard. On pressing Alt key, KeyTips for all the RibbonItem will get displayed. 
 
 ## Adding KeyTip to the Ribbon items
 
-RibbonControl provides with an attached property called **“**KeyTip**”** that helps to set the KeyTip for the Ribbonitem. It also let to set the KetTip for the RibbonTab,Launcher Button,and for the controls which are needed to add in the Ribbon Instance like RibboButton,SplitButton…etc
+RibbonControl provides with an attached property called KeyTip that helps to set the KeyTip for the Ribbonitem. It also let to set the KetTip for the RibbonTab,Launcher Button,and for the controls which are needed to add in the Ribbon Instance like RibboButton,SplitButton…etc
 
 {% highlight xml %}
 
