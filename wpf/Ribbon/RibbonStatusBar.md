@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonStatusBar
+# Ribbon StatusBar
 
-RibbonStatusBar control is added to a RibbonWindow to display the current status of the application or document like in Microsoft Office.
+RibbonStatusBar control is added to RibbonWindow to display the current status of the application or document similar in Microsoft Office.
 
-The following code example illustrates How to use RibbonStatusBar control in RibbonWindow.
+The following code example illustrates how to use RibbonStatusBar control in RibbonWindow.
 
 {% highlight xml %}
 
@@ -32,7 +32,7 @@ The following code example illustrates How to use RibbonStatusBar control in Rib
 
 </syncfusion:RibbonWindow.StatusBar>
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch"  VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch"  VerticalAlignment="Top">
 
 <!--Add RibbonTab and add its Items here-->
 
@@ -46,21 +46,21 @@ Create instance of StatusBar and assign it to RibbonStatusBar property of Ribbon
 
 [C#]
 
-RibbonStatusBar _RibbonStatusBar = new RibbonStatusBar();
+RibbonStatusBar _ribbonStatusBar = new RibbonStatusBar();
 
-WrapPanel _WrapPanel = new WrapPanel();
+WrapPanel _wrapPanel = new WrapPanel();
 
-Label _TextBlock = new Label() { Content = "Ready", Foreground = Brushes.WhiteSmoke };
+Label _textBlock1 = new Label() { Content = "Ready", Foreground = Brushes.WhiteSmoke };
 
-Label _TextBlock1 = new Label() { Content = "Page No 1", Foreground = Brushes.WhiteSmoke };
+Label _textBlock2 = new Label() { Content = "Page No 1", Foreground = Brushes.WhiteSmoke };
 
-_WrapPanel.Children.Add(_TextBlock);
+_wrapPanel.Children.Add(_textBlock1);
 
-_WrapPanel.Children.Add(_TextBlock1);
+_wrapPanel.Children.Add(_textBlock2);
 
-_RibbonStatusBar.Items.Add(_WrapPanel);
+_ribbonStatusBar.Items.Add(_wrapPanel);
 
-_RibbonWindow.StatusBar = _RibbonStatusBar;
+_ribbonWindow.StatusBar = _ribbonStatusBar;
 
 {% endhighlight %}
 

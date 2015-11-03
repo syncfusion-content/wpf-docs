@@ -10,17 +10,17 @@ documentation: ug
 
 RibbonRadioButton control is used to select options among a group in Ribbon instance. 
 
-The following code example illustrates How to use RibbonRadioButton control in Ribbon instance.
+The following code example illustrates how to use RibbonRadioButton control in Ribbon instance.
 
 {% highlight xml %}
 
 [XAML]
 
-<syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  IsChecked="True">
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
 
-<syncfusion:RibbonBar Name="_RibbonBar1" Header="RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
 
 <syncfusion:RibbonButton   Label="Cut"/>
 
@@ -28,7 +28,7 @@ The following code example illustrates How to use RibbonRadioButton control in R
 
 </syncfusion:RibbonBar>
 
-<syncfusion:RibbonBar  Name="_RibbonBar2" Width="150" Header="RibbonBar2">
+<syncfusion:RibbonBar  Name="_ribbonBar2" Width="150" Header="RibbonBar2">
 
 <syncfusion:RibbonRadioButton GroupName="Group1"  Width="140" Content="ReadOnly" IsChecked="True"></syncfusion:RibbonRadioButton>
 
@@ -52,13 +52,13 @@ Create instance of RibbonRadioButton and add it to RibbonBar Items.
 
 [C#]
 
-RibbonRadioButton _RibbonRadioButton = new RibbonRadioButton(){Content = "ReadOnly", IsChecked = true , GroupName = "Group1"};      
+RibbonRadioButton _ribbonRadioButton1 = new RibbonRadioButton(){Content = "ReadOnly", IsChecked = true , GroupName = "Group1"};      
 
-RibbonRadioButton _RibbonRadioButton1 = new RibbonRadioButton(){Content = "WriteOnly", GroupName = "Group1"};
+RibbonRadioButton _ribbonRadioButton2 = new RibbonRadioButton(){Content = "WriteOnly", GroupName = "Group1"};
 
-_RibbonBar2.Items.Add(_RibbonRadioButton);
+_ribbonBar2.Items.Add(_ribbonRadioButton1);
 
-_RibbonBar2.Items.Add(_RibbonRadioButton1);
+_ribbonBar2.Items.Add(_ribbonRadioButton2);
 
 
 
