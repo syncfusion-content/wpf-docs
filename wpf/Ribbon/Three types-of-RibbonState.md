@@ -57,7 +57,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
 
-`Hide` **-**Ribbon control will move to the Hidden State
+`Hide` -Ribbon control will move to the Hidden State
 
 {% highlight xml %}
 
