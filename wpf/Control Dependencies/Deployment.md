@@ -117,7 +117,7 @@ Syncfusion.Shared.WPF</td><td>
 <tr>
 <td>
 CardView</td><td>
-Syncfusion.Tools..WPF</td><td>
+Syncfusion.Tools.WPF</td><td>
 </td></tr>
 <tr>
 <td>
@@ -317,7 +317,7 @@ Syncfusion.SfShared.WPF</td></tr>
 <tr>
 <td>
 SfHubTile</td><td>
-Syncfusion.SfShared WPF</td><td>
+Syncfusion.SfShared.WPF</td><td>
 </td></tr>
 <tr>
 <td>
