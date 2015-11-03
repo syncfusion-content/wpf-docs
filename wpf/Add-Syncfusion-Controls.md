@@ -10,7 +10,7 @@ documentation: ug
 
 ## Through Drag and Drop
 
-The following steps help you add the required Essential WPF Control using Drag and Drop, like DockingManager.
+The following steps help you add the required Essential WPF Control using Drag and Drop, for example: DockingManager.
 
  1.Create a WPF project in Visual Studio
  
@@ -24,7 +24,7 @@ The following steps help you add the required Essential WPF Control using Drag a
 
 ## Through XAML
 
-The following steps help you add a required Essential WPF Control through XAML Code, like DockingManager.
+The following steps help you add a required Essential WPF Control through XAML Code, for example: DockingManager.
 
  1.Create a WPF project in Visual Studio and refer the following assemblies.
  
@@ -57,7 +57,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 ## Through C# / VB
 
-The following steps help you add a required Essential WPF Control through C# or VB Code, like DockingManager.
+The following steps help you add a required Essential WPF Control through C# or VB Code, for example: DockingManager.
 
  1.Create a WPF project in Visual Studio and refer the following assemblies.
  
