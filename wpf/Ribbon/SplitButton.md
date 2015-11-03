@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SplitButton
+title: SplitButton | Ribbon | WPF | Syncfusion
 description: SplitButton
 platform: wpf
 control: Ribbon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping RibbonTabs using ContextTabGroups
+title: Grouping RibbonTabs using ContextTabGroups | Ribbon | WPF | Syncfusion
 description: Grouping RibbonTabs using ContextTabGroups
 platform: wpf
 control: Ribbon

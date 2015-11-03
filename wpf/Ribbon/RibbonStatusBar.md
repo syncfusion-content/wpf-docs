@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonStatusBar
+title: RibbonStatusBar | Ribbon | WPF | Syncfusion
 description: RibbonStatusBar
 platform: wpf
 control: Ribbon

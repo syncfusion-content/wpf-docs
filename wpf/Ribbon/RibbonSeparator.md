@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon Separator	
+title: Ribbon Separator | Ribbon | WPF | Syncfusion
 description: Ribbon Separator	
 platform: wpf
 control: Ribbon

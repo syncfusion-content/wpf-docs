@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started
+title: Getting Started | Ribbon | WPF | Syncfusion
 description: Getting Started
 platform: wpf
 control: Ribbon

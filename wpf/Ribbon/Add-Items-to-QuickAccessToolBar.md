@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Items to QuickAccesToolBar (QAT)
+title: Adding Items to QuickAccesToolBar (QAT) | Ribbon | WPF | Syncfusion
 description: Adding Items to QuickAccesToolBar (QAT)
 platform: wpf
 control: Ribbon

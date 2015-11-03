@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding command to RibbonLauncherButton
+title: Adding command to RibbonLauncherButton | Ribbon | WPF | Syncfusion
 description: Adding command to RibbonLauncherButton
 platform: wpf
 control: Ribbon

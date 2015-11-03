@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KeyBoard access to all Ribbon items using KeyTip
+title: KeyBoard access to all Ribbon items using KeyTip | Ribbon | WPF | Syncfusion
 description: KeyBoard access to all Ribbon items using KeyTip
 platform: wpf
 control: Ribbon
