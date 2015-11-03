@@ -28,7 +28,7 @@ Syncfusion.Data.WPF<br/><br/>Syncfusion.Shared.WPF </td></tr>
 <td>
 SfDataPager</td><td>
 Syncfusion.SfGrid.Wpf</td><td>
-Syncfusion.Data.Wpf<br/><br/> </td></tr>
+Syncfusion.Data.Wpf</td></tr>
 <tr>
 <td>
 SfGridTree</td><td>

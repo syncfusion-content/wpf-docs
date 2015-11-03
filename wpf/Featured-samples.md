@@ -13,11 +13,11 @@ documentation: ug
 
 To run the samples, open the corresponding Dashboard from the following location:
 
-Start -> All Programs -> Syncfusion -> Essential Studio <x.x.x.x> -> Dashboard
+Start -> All Programs -> Syncfusion -> Essential Studio -> Dashboard
 
 Else open the Dashboard from the following installed location:
 
-C:\Program Files (x86)\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Dashboard\4.0\Dashboard.exe
+C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Dashboard\4.0\Dashboard.exe
 
 The following screenshot displays the Dashboard.
 

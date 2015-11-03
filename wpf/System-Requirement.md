@@ -8,6 +8,8 @@ documentation: ug
 ---
 #System Requirement
 
+This section describes the system requirements to use Syncfusion WPF Controls for development.
+
 ## Framework
 
 The following frameworks are supported:

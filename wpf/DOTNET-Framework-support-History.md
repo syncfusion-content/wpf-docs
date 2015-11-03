@@ -10,7 +10,7 @@ documentation: ug
 
 ## Version Compatibility
 
-The table represents the .NET framework versions vs Syncfusion ES version.
+The table represents the .NET framework versions vs Syncfusion Essential Studio version.
 
 <table>
 <tr>
