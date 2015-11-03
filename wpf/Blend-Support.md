@@ -9,12 +9,7 @@ documentation: ug
 
 # Getting Started for Blend Support
 
-The following section explains about the following topics:
-
-* Edit control Style in Expression Blend
-* Edit Control Template in Expression Blend
-
-The following steps help you edit the Template in Expression Blend.
+Essential WPF control's Style and Template can be editable in Expression Blend and this section explains the same:
 
 ## Edit control Style in Expression Blend
 

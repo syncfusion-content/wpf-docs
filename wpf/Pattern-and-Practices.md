@@ -10,9 +10,9 @@ documentation: ug
 
 ## Getting Started with MVVM
 
-To perform TabControlExt’s `selectionChanged` Event in the ViewModel, use the following logic.
+Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with build-in commands. 
 
-Create a Viewmodel and define a Model Collection that is used to bind with the TabControl’s `ItemSource` property.
+This section explains how to perform TabControlExt’s `selectionChanged` Event, by create a Viewmodel and define a Model Collection that is used to bind with the TabControl’s `ItemSource` property.
 
 XAML
 
@@ -125,7 +125,7 @@ public string HeaderName
 
 {% endhighlight %}
 
-And now you need to handle the `SelectionChanged` event of the TabControlExt. So use `TabControlExtSelectionChangedCommand` and define a “SelectionChanged” command in `ViewModel` using `ICommand`. 
+To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a “SelectionChanged” command using `ICommand`. 
 
 XAML
 
@@ -181,13 +181,13 @@ The following screenshot displays final result.
 ![](MVVM_images/MVVM_img1.jpeg)
 
 
-## Events and Commands
+## MVVM Commands
 
-The following section explains how you can use event commands in code-behind with the help of view model.
+The following section covers usage of commands in code-behind with the help of view model.
 
 ### CommandParameter:
 
-`CommandParameter` that you can easily pass an object or bind it to a property of another control. The following code example passes a string through command parameter.
+`CommandParameter` can easily pass an object or bind it to a property of another control. The following code example passes a string through command parameter.
 
 XAML
 
@@ -210,7 +210,6 @@ private void PropertyChangedHandled (object obj)
 
 {% endhighlight %}
 
-The following screenshot displays final result.
 
 ![](MVVM_images/MVVM_img2.jpeg)
 
@@ -240,7 +239,6 @@ private void PropertyChangedHandled (object obj)
 
 {% endhighlight %}
 
-The following screenshot displays final result.
 
 ![](MVVM_images/MVVM_img3.jpeg)
 

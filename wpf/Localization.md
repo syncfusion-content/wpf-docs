@@ -9,7 +9,9 @@ documentation: ug
 
 # Getting Started for Localization
 
-Localization is the process of making your application multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion controls allows you to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx. And by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
+Localization is the process of making your application multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain. 
+
+Syncfusion controls allows you to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx. And by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
 
 The following are the steps to localize a control:
 
@@ -17,9 +19,7 @@ The following are the steps to localize a control:
 2. Assign the value to each culture using key
 3. Assign a Current UI Culture to the application.
 
-## How to Add a Resource file, like Syncfusion.Tools.Wpf.dll Assembly?
-
-### Assign the value to each culture by using key
+## Assign the value to each culture by using key
 
 
 To localize WPF controls, the resource file needs to be created as per following steps:
@@ -33,7 +33,7 @@ To localize WPF controls, the resource file needs to be created as per following
 
 N> In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
 
-### How to assign UI Culture to the application?
+## How to assign UI Culture to the application?
 
 To assign Values in Resource, the resource file needs to be updated according to the following steps.
 
@@ -50,7 +50,7 @@ To assign Values in Resource, the resource file needs to be updated according to
 
 N> The default resource file for applicable assemblies can be downloaded from the table provided at the end.
 
-### Assign a Current UI culture to the application
+## Assign a Current UI culture to the application
 
 Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file. The following code illustrates the implementation of culture information settings.
 
