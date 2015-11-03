@@ -50,66 +50,8 @@ To add RibbonTabs as ModalTabs in an application,use `ModalTabCollection` proper
 
 {% endhighlight %}
 
-## Tables for properties, methods
 
-### Properties
 
-ModalTabCollection Table
-
-<table>
-<tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td><td>
-**Default** **Value**<br/><br/></td></tr>
-<tr>
-<td>
-ModalTabCollection<br/><br/></td><td>
-Used to store the collection of Ribbon Tabs as Modal Tabs Collection.<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-ModalTabsCollection<br/><br/></td><td>
-Null Collection<br/><br/></td></tr>
-</table>
-### Methods
-
-ShowModalTab Table
-
-<table>
-<tr>
-<td>
-**Method**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Parameters**<br/><br/></td><td>
-**Return** **Type**<br/><br/></td><td>
-**Reference** **links**<br/><br/></td></tr>
-<tr>
-<td>
-ShowModalTab<br/><br/></td><td>
-This method will show the specific Modal Tab in the Ribbon from ModalTabCollection.<br/><br/></td><td>
-(String arg1) arg1- Name of the Ribbon Tab to be displayed as Modal Tab from ModalTabCollection.<br/><br/></td><td>
-bool<br/><br/></td><td>
-<br/><br/></td></tr>
-</table>
-CloseModalTabs Table
-
-<table>
-<tr>
-<td>
-**Method**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Parameters**<br/><br/></td><td>
-**Return** **Type**<br/><br/></td><td>
-**Reference** **links**<br/><br/></td></tr>
-<tr>
-<td>
-CloseModalTabs<br/><br/></td><td>
-CloseModalTabs method will close the opened Modal Tabs in Ribbon control.<br/><br/></td><td>
-No Params<br/><br/></td><td>
-Bool<br/><br/></td><td>
-<br/><br/></td></tr>
-</table>
 ## How to handle Modal Tabs in Ribbon?
 
 The `ShowModalTab` and `CloseModalTabs` method handle the visibility of the Modal Tabs in the Ribbon control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
