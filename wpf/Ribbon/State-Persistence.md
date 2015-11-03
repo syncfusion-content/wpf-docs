@@ -49,11 +49,11 @@ To enable State Persistence in Ribbon control, set the `AutoPersist` property to
 <table>
 <tr>
 <th>
-**Property**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Type**<br/><br/></th><th>
-**Data** **Type**<br/><br/></th><th>
-**Default** **Value**<br/><br/></th></tr>
+Property<br/><br/></th><th>
+Description<br/><br/></th><th>
+Type<br/><br/></th><th>
+Data Type<br/><br/></th><th>
+Default Value<br/><br/></th></tr>
 <tr>
 <td>
 AutoPersist<br/><br/></td><td>
@@ -65,11 +65,11 @@ False<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-**Property**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Type**<br/><br/></th><th>
-**Data** **Type**<br/><br/></th><th>
-**Default** **Value**<br/><br/></th></tr>
+Property<br/><br/></th><th>
+Description<br/><br/></th><th>
+Type<br/><br/></th><th>
+Data Type<br/><br/></th><th>
+Default Value<br/><br/></th></tr>
 <tr>
 <td>
 PersistElements<br/><br/></td><td>
@@ -79,15 +79,16 @@ ObservableCollection<RibbonElements><br/><br/></td><td>
 Null<br/><br/></td></tr>
 </table>
 
+
 ### Methods
 
 <table>
 <tr>
 <th>
-**Method**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Parameters**<br/><br/></th><th>
-**Return** **Type**<br/><br/></th></tr>
+Method<br/><br/></th><th>
+Description<br/><br/></th><th>
+Parameters<br/><br/></th><th>
+Return Type<br/><br/></th></tr>
 <tr>
 <td>
 SaveRibbonState()<br/><br/></td><td>
@@ -98,10 +99,10 @@ void<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-**Method**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Parameters**<br/><br/></th><th>
-**Return** **Type**<br/><br/></th></th>
+Method<br/><br/></th><th>
+Description<br/><br/></th><th>
+Parameters<br/><br/></th><th>
+Return Type<br/><br/></th></th>
 <tr>
 <td>
 LoadRibbonState()<br/><br/></td><td>
@@ -112,10 +113,10 @@ void<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-**Method**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Parameters**<br/><br/></th><th>
-**Return** **Type**<br/><br/></th></tr>
+Method<br/><br/></th><th>
+Description<br/><br/></th><th>
+Parameters<br/><br/></th><th>
+Return Type<br/><br/></th></tr>
 <tr>
 <td>
 ResetRibbonState()<br/><br/></td><td>
@@ -126,10 +127,10 @@ void<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-**Method**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Parameters**<br/><br/></th><th>
-**Return** **Type**<br/><br/></th></tr>
+Method<br/><br/></th><th>
+Description<br/><br/></th><th>
+Parameters<br/><br/></th><th>
+Return Type<br/><br/></th></tr>
 <tr>
 <td>
 DeleteRibbonState()<br/><br/></td><td>
@@ -140,7 +141,7 @@ void<br/><br/></td></tr>
 
 ### Persisting Ribbon States at application Exit and Load
 
-To persist the Ribbon States at application exit and load,handle **AutoPersist** property. It is also possible to customize the persisting states in Ribbon control by handling the AutoPersist property individually in Ribbon, QAT and Ribbon window. 
+To persist the Ribbon States at application exit and load,handle AutoPersist property. It is also possible to customize the persisting states in Ribbon control by handling the AutoPersist property individually in Ribbon, QAT and Ribbon window. 
 
 The following code snippet shows how to handle the property in Ribbon elements.
 
@@ -518,11 +519,11 @@ this.PART_Ribbon.SaveRibbonState(writer);
 <table>
 <tr>
 <th>
-**Method**<br/><br/></th><th>
-**Description**<br/><br/></th><th>
-**Parameters**<br/><br/></th><th>
-**Return** **Type**<br/><br/></th><th>
-**Reference** **links**<br/><br/></th></tr>
+Method<br/><br/></th><th>
+Description<br/><br/></th><th>
+Parameters<br/><br/></th><th>
+Return Type<br/><br/></th><th>
+Reference links<br/><br/></th></tr>
 <tr>
 <td>
 SaveRibbonState<br/><br/></td><td>
@@ -540,9 +541,9 @@ N/A<br/><br/></td></td>
 </table>
 
 
-##    Resetting Ribbon States
+## Resetting Ribbon States
 
-To load the Normal (Initial) Ribbon state at runtime call the **ResetRibbonState** method.This is a parameter less method. This will load the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
+To load the Normal (Initial) Ribbon state at runtime call the ResetRibbonState method.This is a parameter less method. This will load the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
 
 
 {% highlight c# %}
@@ -559,9 +560,10 @@ this.MyRibbon.ResetRibbonState();
 
 {% endhighlight %}
 
+
 ## Deleting Ribbon States
 
-To delete the unused saved Isolated Storage files, use the **DeleteRibbonState** method. This method has two overloads. They are:
+To delete the unused saved Isolated Storage files, use the DeleteRibbonState method. This method has two overloads. They are:
 
 * DeleteRibbonState()
 * DeleteRibbonState(IsolatedStorageFile isoStorage, string deletefileName)
