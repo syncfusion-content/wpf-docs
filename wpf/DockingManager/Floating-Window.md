@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Floating Window
 
-Floating window is one of the states in the DockingManager. To make children of the DockingManager as `Float`, set its `state` values as `Float`.
+Floating window is one of the state in the DockingManager. To make children of the DockingManager as Float, set its `State` values as `Float`.
 
-Floating window is like a Popup window and it has some limitation in resizing. To avoid this limitation, set the `UseNativeFloatWindow` property for the DockingManager as `True`.
+Floating window is like a Popup and it has some limitation in resizing. To avoid this limitation, set the `UseNativeFloatWindow` property of the DockingManager as `True`.
 
 {% highlight xml %}
 <syncfusion:DockingManager UseNativeFloatWindow="True">
@@ -52,18 +52,9 @@ On using MultiMonitor scenario, the FloatWindow behavior as follows:
 * On showing half of the float window between primary and secondary monitor, the float window remains in half between the monitor while plugged in and plugged out of the secondary monitor.
 * When float window is moved to secondary monitor from primary monitor, the float window remains at the secondary monitor itself while plugged in.
 
-### Making the same behavior like WPF window for Float Window in Multiple Monitor
-
 To make float window behave like a WPF window in multiple monitor, set the property `UseNativeFloatWindow` as `True`. 
 
-On using MultiMonitor scenario, the FloatWindow behavior as follows:
-
-* NativeFloatWindow can be resized both in primary and secondary monitor.
-* On showing half of the NativeFloatWindow between primary and in secondary monitor, the NativeFloatWindow remains at the left side in primary monitor while plugged in and plugged out of the secondary monitor.
-* When NativeFloatWindow is moved to secondary monitor from primary monitor, it remains at the primary monitor itself while plugged in and plugged out.
-
-## Enabling and Disabling the float functionality
-
+## Enabling or Disabling the float functionality
 
 The `CanFloat` property helps to enable or disable the floating functionality by setting its value as `True` or `False` respectively. By default its value is `True`, to disable this functionality turn its value to `False`.
 
@@ -102,16 +93,7 @@ The float window changes its state to `Dock` when you double click its header by
 
 ## Maximize/Minimize Support
 
-The float window provides Minimize or Maximize support for better usability. This support can be achieved through the property `UseNativeFloatWindow` 
-
-* It helps a particular Float window to provide a maximized view.
-* It can minimize a Float window and can be restored when needed.
-
-
-### Enabling Maximization feature
-
-
-To enable the maximizing feature for the Float window, set `CanFloatMaximize` for the specific child and `UseNativeFloatWindow` as `True`.By default, its value is `False`.
+The float window provides Maximization support for better usability and it is only applicable for NativeFloatWindow. To enable the maximizing feature for the Float window, set `CanFloatMaximize` for the specific child as `True`. By default, its value is `False`.
 
 {% highlight xml %}
 <syncfusion:DockingManager UseNativeFloatWindow="True">
