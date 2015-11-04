@@ -12,7 +12,7 @@ documentation: ug
 
 Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with build-in commands. 
 
-This section explains how to perform TabControlExt’s `selectionChanged` Event, by create a Viewmodel and define a Model Collection that is used to bind with the TabControl’s `ItemSource` property.
+This section explains how to perform TabControlExt’s `selectionChanged` event, by create a Viewmodel and define a Model collection that is used to bind with the TabControl’s `ItemSource` property.
 
 XAML
 
@@ -176,7 +176,6 @@ private void PropertyChangedHandled (object obj)
 
 {% endhighlight %}
 
-The following screenshot displays final result.
 
 ![](MVVM_images/MVVM_img1.jpeg)
 
