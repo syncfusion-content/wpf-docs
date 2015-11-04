@@ -105,7 +105,7 @@ this.AddChild(_ribbon);
 
 ## Setting Visual Style of Ribbon
 
-Essential Tools WPF provides support to set the visual style for the Ribbon control to enhance the appearance of the control. This is achieved by using the VisualStyle property of the RibbonWindow.
+Essential Tools WPF support to set the `VisualStyle` for the Ribbon control to enhance the appearance of the control. This is achieved by using the VisualStyle property of the RibbonWindow.
 
 Here Microsoft `Office2013` style applied to Ribbon Control.
 
@@ -136,8 +136,6 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 ## Adding RibbonTab and RibbonBar
-
-### Adding Children to Ribbon control
 
 Ribbon control accept `RibbonTab` as children, Here four `RibbonTab` added and that further can customize with `RibbonBar` and `RibbonItems`.
 
@@ -231,8 +229,6 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 ## Adding different types of button in Ribbon
 
-### Adding RibbonButton
-
 RibbonButton provides functionalities like normal Button, Here a RibbonButton control is added inside the `New` RibbonBar.
 
 {% highlight xml %}
@@ -316,9 +312,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
-### Adding button with more options
-
-#### Adding DropDownButton
+### Adding DropDownButton
 
 DropDownButton in the Ribbon instance contains a drop arrow. When clicked on it, the menu related to the button is displayed.
 
@@ -407,7 +401,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 
-#### Adding SplitButton
+### Adding SplitButton
 
 SplitButton in the Ribbon instance contains a drop arrow. When clicked on it, the menu related to the button is displayed. Events are raised, when main Button is clicked as well as when the sub item in the SplitButton is clicked.
 
@@ -775,8 +769,6 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 ## Adding QAT
-
-### Adding Quick Access Toolbar to Ribbon
 
 QuickAccessToolbar in the Ribbon instance is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. `QAT` can be placed above or below the ribbon.
 
@@ -1219,8 +1211,6 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 ## Adding BackStage
-
-### Adding BackStageButton to Ribbon
 
 BackStage of Ribbon control can be added by using BackStage property of Ribbon. You can access backstage view by clicking `FILE` Menu in Ribbon instance like in Microsoft Outlook. 
 
@@ -1949,8 +1939,6 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 
 ## Application Menu
-
-### Adding Application Menu to the Ribbon Window
 
 An Application Menu contains standard commands that are performed like in Microsoft Outlook 2003 UI. This Menu is viewed by clicking the button at the top-left corner of the window. 
 

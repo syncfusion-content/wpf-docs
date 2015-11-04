@@ -8,7 +8,7 @@ documentation: ug
 ---
 # KeyBoard access using KeyTip
 
-To invoke its command by pressing corresponding KeyTip, Ribbon control provides KeyTip support to access the Ribbonitem using Keyboard. On pressing Alt key, KeyTips for all the RibbonItem will get displayed. 
+To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem will get displayed. 
 
 ## Adding KeyTip to the Ribbon items
 

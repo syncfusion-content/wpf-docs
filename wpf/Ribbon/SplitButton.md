@@ -54,7 +54,7 @@ DropDownMeuItem can be added as items to SplitButton.
 
 {% endhighlight %}
 
-You can add Items to SplitButton by create instance of DropDownMenuItem and add it to SplitButton.
+You can add Items to SplitButton by create instance of `DropDownMenuItem` and add it to SplitButton.
 
 {% highlight c# %}
 

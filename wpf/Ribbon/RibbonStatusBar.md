@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon StatusBar
 
-RibbonStatusBar control is added to RibbonWindow to display the current status of the application or document similar in Microsoft Office.
+`RibbonStatusBar` control is added to RibbonWindow to display the current status of the application or document similar in Microsoft Office.
 
 The following code example illustrates how to use RibbonStatusBar control in RibbonWindow.
 
