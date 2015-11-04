@@ -125,7 +125,7 @@ public string HeaderName
 
 {% endhighlight %}
 
-To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a “SelectionChanged” command using `ICommand`. 
+To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a SelectionChanged command using `ICommand`. 
 
 XAML
 
@@ -182,11 +182,11 @@ private void PropertyChangedHandled (object obj)
 
 ## MVVM Commands
 
-The following section covers usage of commands in code-behind with the help of view model.
+The following section covers usage of commands in code-behind with the help of ViewModel.
 
 ### CommandParameter:
 
-`CommandParameter` can easily pass an object or bind it to a property of another control. The following code example passes a string through command parameter.
+`CommandParameter` can easily pass an object or bind it to a property of another control. The following code example passes a string through CommandParameter.
 
 XAML
 
@@ -215,7 +215,7 @@ private void PropertyChangedHandled (object obj)
 
 #### Pass a property value through Command Parameter:
 
-Any property can bind with the Command Parameter to pass it as command in View Model.
+Any property can bind with the CommandParameter to pass it as command in ViewModel.
 
 XAML
 

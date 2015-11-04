@@ -16,11 +16,18 @@ The UI for Dock, Float and Document windows of DockingManager can be changed usi
 
 When you want a rich and professional look and feel for the Dockwindows, you can apply the visual styles. Some of the available visual style are as follows:
 
-<table>
-<tr>
-<td>
-* Blend<br/>* Office2007Blue<br/>* Office2007Black<br/>* Office2007Silver<br/>* Office2010Blue<br/>* Office2010Black<br/>* Office2010Silver<br/>* VS2010<br/>* Metro<br/>* Transparent<br/></td></tr>
-</table>
+
+* Blend
+* Office2007Blue
+* Office2007Black
+* Office2007Silver
+* Office2010Blue
+* Office2010Black
+* Office2010Silver
+* VS2010
+* Metro
+* Transparent
+
 
 The visual style can be applied for the DockingManager using the property `VisualStyle` , an attached property of the `SkinStorage`.
 
