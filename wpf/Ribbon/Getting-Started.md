@@ -79,7 +79,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1"/>
+<syncfusion:Ribbon x:Name="_ribbon"/>
 
 </Grid>
 
@@ -95,9 +95,9 @@ To create Ribbon control in code behind create instance of Ribbon control and ad
 
 {% highlight c# %}
 
-Ribbon _Ribbon1 = new Ribbon();
+Ribbon _ribbon = new Ribbon();
 
-this.AddChild(_Ribbon1);
+this.AddChild(_ribbon);
 
 
 
@@ -122,7 +122,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1"/>
+<syncfusion:Ribbon x:Name="_ribbon"/>
 
 </Grid>
 
@@ -154,7 +154,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>   
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True"/>
 
@@ -194,7 +194,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>   
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -261,7 +261,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>   
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -337,7 +337,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>   
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -426,7 +426,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -537,7 +537,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>   
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -660,7 +660,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>   
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -795,7 +795,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -933,7 +933,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -1077,7 +1077,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -1237,7 +1237,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -1403,7 +1403,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -1511,7 +1511,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
 
-<syncfusion:RibbonButton SizeForm="ExtraSmall" />                    <syncfusion:QuickAccessToolBar.QATMenuItems>
+<syncfusion:RibbonButton SizeForm="ExtraSmall" />
+
+<syncfusion:QuickAccessToolBar.QATMenuItems>
 
 <syncfusion:RibbonButton Label="Send" />
 
@@ -1575,7 +1577,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -1769,7 +1771,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -1973,7 +1975,7 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -2103,7 +2105,7 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 <syncfusion:Ribbon.ApplicationMenu>
 
-<syncfusion:ApplicationMenu Name="_ApplicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
+<syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
 
 </syncfusion:ApplicationMenu>
 
@@ -2139,7 +2141,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="False">
 
@@ -2269,7 +2271,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 <syncfusion:Ribbon.ApplicationMenu>
 
-<syncfusion:ApplicationMenu Name="_ApplicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
+<syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
 
 <syncfusion:SimpleMenuButton Label="File" Icon="Document32.png"/>
 
@@ -2319,7 +2321,7 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="_Ribbon1" VerticalAlignment="Top">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
 
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
 
@@ -2449,7 +2451,7 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 <syncfusion:Ribbon.ApplicationMenu>
 
-<syncfusion:ApplicationMenu Name="_ApplicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
+<syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
 
 <syncfusion:SimpleMenuButton Label="File" Icon="Document32.png"/>
 
