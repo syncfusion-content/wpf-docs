@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Docking Window
 
-Docking windows is one of the states of DockingManager, Since `Dock` is the default value, so initially all the children stay as Docking Window
+Docking windows is one of the state of DockingManager. Since `Dock` is the default value, so initially all the children stay as Docking Window
 
 ![](DockingWindow_images/DockingWindow_img1.jpeg)
 
@@ -25,13 +25,13 @@ The five sides that can be docked are
 To dock 4 children of a DockingManager in 4 different sides, then use `SideInDockedMode` property with the required values.
 
 {% highlight xml %}
-<ContentControl x:Name="DockingWindow1" syncfusion:DockingManager.Header="Docking Left" syncfusion:DockingManager.SideInDockedMode= "Left" />
+<ContentControl syncfusion:DockingManager.Header="Docking Left" syncfusion:DockingManager.SideInDockedMode= "Left" />
 
-<ContentControl x:Name="DockingWindow2" syncfusion:DockingManager.Header="Docking Top"  syncfusion:DockingManager.SideInDockedMode= "Top"/>
+<ContentControl syncfusion:DockingManager.Header="Docking Top"  syncfusion:DockingManager.SideInDockedMode= "Top"/>
 
-<ContentControl x:Name="DockingWindow3" syncfusion:DockingManager.Header="Docking Right"  syncfusion:DockingManager.SideInDockedMode= "Right"/>
+<ContentControl syncfusion:DockingManager.Header="Docking Right"  syncfusion:DockingManager.SideInDockedMode= "Right"/>
 
-<ContentControl x:Name="DockingWindow4" syncfusion:DockingManager.Header="Docking Bottom"  syncfusion:DockingManager.SideInDockedMode="Bottom" />
+<ContentControl syncfusion:DockingManager.Header="Docking Bottom"  syncfusion:DockingManager.SideInDockedMode="Bottom" />
 
 
 
@@ -42,20 +42,28 @@ To dock 4 children of a DockingManager in 4 different sides, then use `SideInDoc
 
 ## Docking window in various Targets 
 
-Docking window can also be docked at any side of the Target Docking Window, through an attached property named `TargetNameInDockedMode`.
+Docking window can also be docked at any side of the Target Docking Window through an attached property named `TargetNameInDockedMode`.
  
-Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of DockingManager that targets a single Docking window, and docked along Left, Top, Right and Tabbed.
+Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of DockingManager that targets a single Docking window docked along Left, Top, Right and Tabbed.
 
 {% highlight xml %}
-<ContentControl x:Name="DockingWindow1" syncfusion:DockingManager.Header="Targeted Window" />
+<ContentControl syncfusion:DockingManager.Header="Targeted Window" x:Name="DockingWindow1"/>
 
-<ContentControl x:Name="DockingWindow2" syncfusion:DockingManager.Header="Top"  syncfusion:DockingManager.SideInDockedMode= "Top" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/><!--Targeted to Docking indow1 on Top Side-->
+<!--Targeted to Docking Window1 on Top Side-->
+<ContentControl syncfusion:DockingManager.Header="Top"
+                syncfusion:DockingManager.SideInDockedMode= "Top" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
-<ContentControl x:Name="DockingWindow3" syncfusion:DockingManager.Header="Right"  syncfusion:DockingManager.SideInDockedMode= "Right" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/> <!--Targeted to DockingWindow1 on Right Side-->
+ <!--Targeted to DockingWindow1 on Right Side-->
+<ContentControl syncfusion:DockingManager.Header="Right"
+                syncfusion:DockingManager.SideInDockedMode= "Right" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
-<ContentControl x:Name="DockingWindow4" syncfusion:DockingManager.Header="Left"  syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/><!--Targeted to DockingWindow1 on Left Side-->
+<!--Targeted to DockingWindow1 on Left Side-->
+<ContentControl syncfusion:DockingManager.Header="Left"
+                syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
-<ContentControl x:Name="DockingWindow5" syncfusion:DockingManager.Header="Tabbed"  syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/><!--Targeted to DockingWindow to tab-->      
+<!--Targeted to DockingWindow to tab-->
+<ContentControl syncfusion:DockingManager.Header="Tabbed"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>      
 
 
 
@@ -74,14 +82,14 @@ This feature helps to Maximize/Minimize Docked Windows for better usage of each 
 ### Enabling Maximization feature
 
 
-To enable the feature of maximizing the Docking Window, set `MaximizeButtonEnabled` to `True`
+To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `True`
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="SyncDockingManager" MaximizeButtonEnabled="True">
+<syncfusion:DockingManager MaximizeButtonEnabled="True">
 
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"/>
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer"/>
 
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"/>
+<ContentControl syncfusion:DockingManager.Header="Toolbox"/>
 
 </syncfusion:DockingManager>
 
@@ -94,10 +102,10 @@ To enable the feature of maximizing the Docking Window, set `MaximizeButtonEnabl
 
 ### Maximize Docking Window to full screen
 
-Using `MaximizeMode` property to `FullScreen` then the Docking Windows occupies entire screen when it is in the Maximized state.
+`MaximizeMode` helps to change the maximization behaviour of DockingWinodw. Docking Windows occupies entire screen when MaximizeMode set as FullScreen and DockingWindow in the Maximized state.
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="SyncDockingManager" MaximizeButtonEnabled="True" MaximizeMode="FullScreen"/>
+<syncfusion:DockingManager MaximizeButtonEnabled="True" MaximizeMode="FullScreen"/>
 
 
 
@@ -108,7 +116,7 @@ Using `MaximizeMode` property to `FullScreen` then the Docking Windows occupies 
 
 ### Enabling Minimization feature
 
-To enable the feature of minimizing the Docking Window, set `MinimizeButtonEnabled` to `True`
+To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `True`
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" MinimizeButtonEnabled="True">
@@ -130,11 +138,11 @@ To enable the feature of minimizing the Docking Window, set `MinimizeButtonEnabl
 DockingManager provides two attached property named `CanMaximize` and `CanMinimize` to enable or disable Maximizing and Minimizing buttons respectively to the specific window.
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="SyncDockingManager"  MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">
+<syncfusion:DockingManager MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">
 
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.CanMinimize="False" />
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.CanMinimize="False" />
 
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox" syncfusion:DockingManager.CanMaximize="False"/>
+<ContentControl syncfusion:DockingManager.Header="Toolbox" syncfusion:DockingManager.CanMaximize="False"/>
 
 </syncfusion:DockingManager>
 
@@ -147,7 +155,7 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 
 ## Hot Drag the window
 
-The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window, through `IsEnableHotTracking` property its default its value is `False`, to enable this functionality turn its value to `True`.
+The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window by `IsEnableHotTracking` property. Default value of IsEnableHotTracking is `False`, to enable this functionality turn its value to `True`.
 
 {% highlight xml %}
 
@@ -160,9 +168,9 @@ The DockWindow Header can be highlighted when the mouse is hovered on an active 
 
 {% endhighlight %}
 
-## Enabling and disabling the dock functionality
+## Enabling or Disabling the Dock functionality
 
-The `CanDock` property can help to enable or disable the docking functionality, by setting its value as `True` or `False` . By default its value is `True`, to disable this functionality turn its value to `False`.
+The `CanDock` property can help to enable or disable the docking functionality by setting its value as `True` or `False`. By default its value is `True`, to disable this functionality turn its value to `False`.
 
 {% highlight xml %}
 
@@ -177,15 +185,16 @@ The `CanDock` property can help to enable or disable the docking functionality, 
 
 
 
-## Enabling and disabling the Header Visibility
+## Enabling or Disabling the Header Visibility
 
-`NoHeader` is a property, that is used to hide the header of the Docked Window, by default its value is `False`. To hide the Header, turn its value to `True`.
+`NoHeader` is an attached property, that is used to hide the header of DockWindow. Default value of NoHeader is `False`, to hide the Header turn its value to `True`.
 
 {% highlight xml %}
 
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"  syncfusion:DockingManager.NoHeader="True" /> <!--NoHeader enabled to this child-->
+<ContentControl syncfusion:DockingManager.Header="Toolbox"/>
 
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"/>
+<!--NoHeader enabled to this child-->
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.NoHeader="True" /> 
 
 
 

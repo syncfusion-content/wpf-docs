@@ -8,23 +8,27 @@ documentation: ug
 ---
 # Auto Hide Window
 
-AutoHide window is one of the states in the DockingManager. To enable Autohidden for DockingManager's children, set its `State` value as `AutoHidden`. 
+AutoHide window is one of the state in the DockingManager. To enable Autohidden for DockingManager's children, set its `State` value as `AutoHidden`. 
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img1.jpeg)
 
 
 ## Configuring window in Different Side
 
-AutoHidden window can be placed in four different sides such as Top, Bottom, Left, and Right. To place the four autohidden children in four different sides, set `SideInDockedMode` property according to its corresponding values in the DockingManager.
+AutoHidden window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four autohidden children in four different sides, set `SideInDockedMode` property according to its corresponding values in the DockingManager.
 
 {% highlight xml %}
-<ContentControl x:Name="AutoHideWindow1" syncfusion:DockingManager.Header="Top” syncfusion:DockingManager.State="AutoHidden” syncfusion:DockingManager.SideInDockedMode="Top” />
+<ContentControl syncfusion:DockingManager.Header="Top” x:Name="AutoHideWindow1"
+                syncfusion:DockingManager.State="AutoHidden” syncfusion:DockingManager.SideInDockedMode="Top” />
 
-<ContentControl x:Name="AutoHideWindow2" syncfusion:DockingManager.Header="Left" syncfusion:DockingManager.State="AutoHidden” syncfusion:DockingManager.SideInDockedMode="Left" />
+<ContentControl syncfusion:DockingManager.Header="Left" x:Name="AutoHideWindow2"
+                syncfusion:DockingManager.State="AutoHidden” syncfusion:DockingManager.SideInDockedMode="Left" />
 
-<ContentControl x:Name="AutoHideWindow3" syncfusion:DockingManager.Header="Right" syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.SideInDockedMode="Right" />
+<ContentControl syncfusion:DockingManager.Header="Right" x:Name="AutoHideWindow3"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.SideInDockedMode="Right" />
 
-<ContentControl x:Name="AutoHideWindow4" syncfusion:DockingManager.Header="Bottom" syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.SideInDockedMode="Bottom" />
+<ContentControl syncfusion:DockingManager.Header="Bottom" x:Name="AutoHideWindow4"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.SideInDockedMode="Bottom" />
 
 {% endhighlight %}
 
@@ -32,21 +36,25 @@ AutoHidden window can be placed in four different sides such as Top, Bottom, Lef
 
 
 
-The AutoHidewindow can be placed on a required target window through the `TargetNameInDockedMode` property of the DockingManager.  When you enable autohide in dockingwindow , it will autohidden in the place according to its Parent position. For instance, when the parent is in left side by default, the autohide window is placed in the left side, irrespective of its SideInDockedMode value.
+The AutoHidewindow can be placed on a required target window through the `TargetNameInDockedMode` property of the DockingManager. DockingWindow will autohidden in place according to its Parent position, if any target exist. For example: Here "Output" docked at bottom of "SolutionExplorer" which docked at left side. While autohiding Output window, it will autohide at left due to it's TargetWindow side.
 
 {% highlight xml %}
 
 <syncfusion:DockingManager>
 
-<ContentControl x:Name="AutoHideWindow1" syncfusion:DockingManager.Header="SolutionExplorer" />
+<ContentControl syncfusion:DockingManager.Header="SolutionExplorer" x:Name="SolutionExplorer"/>
 
-<ContentControl x:Name="AutoHideWindow2" syncfusion:DockingManager.Header="Server Explorer" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+<ContentControl syncfusion:DockingManager.Header="Server Explorer"
+                syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
-<ContentControl x:Name="AutoHideWindow3" syncfusion:DockingManager.Header="ToolBox" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+<ContentControl syncfusion:DockingManager.Header="ToolBox"
+                syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
-<ContentControl  x:Name="AutoHideWindow4" syncfusion:DockingManager.Header="Output" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+<ContentControl syncfusion:DockingManager.Header="Output"
+                syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
-<ContentControl  x:Name="AutoHideWindow5" syncfusion:DockingManager.Header="Properties" syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+<ContentControl syncfusion:DockingManager.Header="Properties"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
 </syncfusion:DockingManager>
 
@@ -55,13 +63,15 @@ The AutoHidewindow can be placed on a required target window through the `Target
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img3.jpeg)
 
 
-##  Side panel Customization
+## Side panel Customization
 
-The side panel and side panel header can be customized by applying its background, borderbrush and  borderthickness  through  SidePanelBackground, SidePanelBorderBrush, SidePanelBorderThickness, SideItemBackground and SideItemBorderBrush properties of the DockingManager.
+The side panel and side panel header can be customized by applying its Background, BorderBrush and BorderThickness through SidePanelBackground, SidePanelBorderBrush, SidePanelBorderThickness, SideItemBackground and SideItemBorderBrush properties of the DockingManager.
 
 {% highlight xml %}
 
-<syncfusion:DockingManager x:Name="DockingManager" SidePanelBackground="Brown" SidePanelBorderBrush="Yellow" SidePanelBorderThickness="2,2,2,2" SideItemsBackground="Green" SideItemsBorderBrush="BlueViolet"  >
+<syncfusion:DockingManager SidePanelBackground="Brown"
+                           SidePanelBorderBrush="Yellow" SideItemsBackground="Green"
+                           SidePanelBorderThickness="2,2,2,2" SideItemsBorderBrush="BlueViolet">
 
 <ContentControl syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden" />
 
@@ -76,21 +86,14 @@ The side panel and side panel header can be customized by applying its backgroun
 
 ### SideTabItem Customization
 
-The SideTabItem can be customized using the attached properties SideTabItemForeground and SideTabItemBackground of DockingManager.
+The SideTabItem can be customized using the attached properties `SideTabItemForeground` and `SideTabItemBackground` of DockingManager.
 
 {% highlight xml %}
 
-<syncfusion:DockingManager x:Name="DockingManager"  >
+<syncfusion:DockingManager x:Name="DockingManager">
 
-<ContentControl syncfusion:DockingManager.Header="SolutionExplorer"
-
-syncfusion:DockingManager.State="AutoHidden"
-
-syncfusion:DockingManager.SideTabItemForeground="Blue"
-
-syncfusion:DockingManager.SideTabItemBackground="Pink"
-
-></ContentControl>
+<ContentControl syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden"
+                syncfusion:DockingManager.SideTabItemForeground="Blue" syncfusion:DockingManager.SideTabItemBackground="Pink"/>
 
 </syncfusion:DockingManager>
 
@@ -103,39 +106,34 @@ syncfusion:DockingManager.SideTabItemBackground="Pink"
 
 ## Excel-like Scrollable panel
 
-The `EnableScrollableSidePanel` feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default, its value is `False`,to enable this feature you can set its value to `True`.
+The `EnableScrollableSidePanel` feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default EnableScrollableSidePanel value is `False`, to enable this feature you can set its value to `True`.
 
 {% highlight xml %}
 
 <syncfusion:DockingManager x:Name="dockingManager" EnableScrollableSidePanel="True">
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="SolutionExplorer" />
+ 
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="SolutionExplorer"/>
 
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="ToolBox"/>
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="ToolBox"/>
                          
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="Output" />
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="Output" />
 
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="Class view" />
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="Class view" />
 
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="Server Explorer" />
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="Server Explorer" />
 
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="Team Explorer" />
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="Team Explorer" />
 
-        <ContentControl  syncfusion:DockingManager.SideInDockedMode="Bottom"
-                         syncfusion:DockingManager.State="AutoHidden"
-                         syncfusion:DockingManager.Header="ErrorList" />
-      </syncfusion:DockingManager >
+<ContentControl syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.Header="ErrorList" />
+                
+</syncfusion:DockingManager >
 
 {% endhighlight %}
 
@@ -147,9 +145,9 @@ The `EnableScrollableSidePanel` feature is used to provide scroll support when A
 
 ## Changing pinning behavior        
 
-Auto Hidden Tabbed window provides two different pinning behaviors, `AutoHideActive` and `AutoHideGroup` modes.
+Auto Hidden Tabbed window provides two different pinning behaviors `AutoHideActive` and `AutoHideGroup` modes.
 
-`AutoHideActive` – Used to Auto Hide current active element of tabbed dock window.
+`AutoHideActive` – Used to auto-hide current active element of tabbed dock window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager" AutoHideTabsMode="AutoHideActive">
@@ -192,11 +190,12 @@ Auto Hidden Tabbed window provides two different pinning behaviors, `AutoHideAct
 
 ### Configuring Auto Hide Animation
 
-The Animation speed while Auto Hiding a window can be configured by setting required time delay to `AnimationDelay` property.
+The Animation speed while auto hiding a window can be configured by setting required time delay in `AnimationDelay` property.
 
 {% highlight xml %}
 
-<ContentControl syncfusion:DockingManager.Header="item1" syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.AnimationDelay="100"/>
+<ContentControl syncfusion:DockingManager.Header="item1"
+                syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.AnimationDelay="100"/>
 
 
 {% endhighlight %}
@@ -205,7 +204,7 @@ The Animation speed while Auto Hiding a window can be configured by setting requ
 
 ### Making different animation for AutoHideWindow
 
-DockingManager supports three different built–in animations while auto-hiding the windows such as `Fade`, `scale`, and  `slide` that can be set through the property `AutoHideAnimationMode`.
+DockingManager supports three different built–in animations while auto-hiding the windows such as `Fade`, `scale` and `slide` that can be set through the property `AutoHideAnimationMode`.
 
 
 
@@ -215,20 +214,20 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 <syncfusion:DockingManager AutoHideAnimationMode="Fade">
 
-<ContentControl x:Name="AutoHideWindow" syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden” />
+<ContentControl syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden” />
 
 </syncfusion:DockingManager>
 
 
 {% endhighlight %}
 
-`Scale` –AutoHidewindow  scale while autohiding
+`Scale` – AutoHidewindow scale while autohiding
 
 {% highlight xml %}
 
 <syncfusion:DockingManager AutoHideAnimationMode="Scale">
 
-<ContentControl x:Name="AutoHideWindow" syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden" />
+<ContentControl syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden"/>
 
 </syncfusion:DockingManager>
 
@@ -242,7 +241,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 <syncfusion:DockingManager AutoHideAnimationMode="Slide">
 
-<ContentControl x:Name="AutoHideWindow" syncfusion:DockingManager.Header="SolutionExplorer"  syncfusion:DockingManager.State="AutoHidden" />
+<ContentControl syncfusion:DockingManager.Header="SolutionExplorer"  syncfusion:DockingManager.State="AutoHidden"/>
 
 </syncfusion:DockingManager>
 
@@ -252,13 +251,13 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 ## Enabling and disabling the Autohide functionality
 
-The Pin button that performs Auto Hide functionality, can be visible by default. It can be invisible to disable the AutoHide functionality through `AutoHideVisibility` property. 
+The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through `AutoHideVisibility` property. 
 
 {% highlight xml %}
 
 <syncfusion:DockingManager  AutoHideVisibility="False">
 
-<ContentControl x:Name="AutoHideWindow" syncfusion:DockingManager.Header="SolutionExplorer" />             
+<ContentControl x:Name="AutoHideWindow" syncfusion:DockingManager.Header="SolutionExplorer"/>             
 
 </syncfusion:DockingManager>
 
@@ -268,13 +267,13 @@ The Pin button that performs Auto Hide functionality, can be visible by default.
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img9.jpeg)
 
 
-To enable or disable the Autohide functionality for a specific child in the DockingManager, an attached property `CanAutoHide` is used. By default its value is `true`, to disable this functionality you can set its value to `false`.
+To enable or disable the Autohide functionality for a specific child in the DockingManager, `CanAutoHide` can be used. By default its value is `true`, this functionality can disable by set its value as `false`.
 
 {% highlight xml %}
 
-<ContentControl x:Name="AutoHideWindow1" syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.CanAutoHide="False" />
+<ContentControl syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.CanAutoHide="False" />
 
-<ContentControl x:Name="AutoHideWinodw2" syncfusion:DockingManager.Header="ToolBox" syncfusion:DockingManager.CanAutoHide="True" />
+<ContentControl syncfusion:DockingManager.Header="ToolBox" syncfusion:DockingManager.CanAutoHide="True" />
 
 
 {% endhighlight %}
@@ -284,7 +283,7 @@ To enable or disable the Autohide functionality for a specific child in the Dock
 
 ## AutoHide Animation enabled on Mouse Click
 
-On mouse over the AutoHidden tab, the autohide animation starts. To disable this functionality, set the property `IsAnimationEnabledOnMouseOver` as `False` that allows you to click the autohide tab to start autohide animation. By default, its values is `True`.
+On mouse over the AutoHidden tab, the autohide animation starts. To disable this functionality, set the property `IsAnimationEnabledOnMouseOver` as `False` that changes the autohide tab start animation behaviour. By default, its values is `True`.
 
 {% highlight xml %}
 
