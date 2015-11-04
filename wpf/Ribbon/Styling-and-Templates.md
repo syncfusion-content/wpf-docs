@@ -71,7 +71,7 @@ Title="MainWindow" Height="350" Width="525" xmlns:syncfusion="http://schemas.syn
 
 <Grid>
 
-<syncfusion:Ribbon x:Name="ribbon" VerticalAlignment="Top"  Style="{StaticResource RibbonStyle}">
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top"  Style="{StaticResource RibbonStyle}">
 
 <syncfusion:RibbonTab  Caption="Home" IsChecked="False">
 

@@ -18,7 +18,7 @@ Use the below code to create ButtonPanel in XAML
 
 [XAML]
 
-<syncfusion:Ribbon VerticalAlignment="Top" x:Name="Ribbon">  
+<syncfusion:Ribbon VerticalAlignment="Top" x:Name="_ribbon">  
 
 <syncfusion:RibbonTab Caption="RIBBON CONTROLS" >
 
@@ -103,15 +103,15 @@ To create the ButtonPanel control in Code Behind, use the below code.
 
 [C#]
 
-DropDownButton DropDownButton = new DropDownButton() { Label = "Drop", SizeForm = Syncfusion.Windows.Tools.SizeForm.Small, SmallIcon = new BitmapImage(new Uri("/Resources/Gray.png", UriKind.Relative)) };
+DropDownButton _dropDownButton = new DropDownButton() { Label = "Drop", SizeForm = Syncfusion.Windows.Tools.SizeForm.Small, SmallIcon = new BitmapImage(new Uri("/Resources/Gray.png", UriKind.Relative)) };
 
-SplitButton SplitButton = new SplitButton() { Label = "Split", SizeForm = Syncfusion.Windows.Tools.SizeForm.Small, SmallIcon = new BitmapImage(new Uri("/Resources/Yellow.png", UriKind.Relative)) };
+SplitButton _splitButton = new SplitButton() { Label = "Split", SizeForm = Syncfusion.Windows.Tools.SizeForm.Small, SmallIcon = new BitmapImage(new Uri("/Resources/Yellow.png", UriKind.Relative)) };
 
-ButtonPanel ButtonPanel=new ButtonPanel();
+ButtonPanel _buttonPanel = new ButtonPanel();
 
-ButtonPanel.Items.Add(DropDownButton);
+_buttonPanel.Items.Add(_dropDownButton);
 
-ButtonPanel.Items.Add(SplitButton);
+_buttonPanel.Items.Add(_splitButton);
 
 
 
@@ -122,7 +122,7 @@ ButtonPanel.Items.Add(SplitButton);
 
 # Changing Size of Ribbon items
 
-`SizeForm` is used to set the size of the Ribbon items that are added inside the **Ribbon** control.
+`SizeForm` is used to set the size of the Ribbon items that are added inside the Ribbon control.
 
 Possible values of `SizeForm` are Large, Small and ExtraSmall.
 
@@ -265,7 +265,7 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonButtonPanel.MainWindow"
 
-Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Office2013" ShowHelpButton="True" x:Name="RibbonWindow"/>
+Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Office2013" ShowHelpButton="True" x:Name="_ribbonWindow"/>
 
 {% endhighlight %}
 

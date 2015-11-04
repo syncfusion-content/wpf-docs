@@ -18,13 +18,13 @@ RibbonControl provides with an attached property called KeyTip that helps to set
 
 [XAML]
 
-<syncfusion:Ribbon Name="MyRibbon" VerticalAlignment="Top">
+<syncfusion:Ribbon Name="_ribbon" VerticalAlignment="Top">
 
 
 
 <syncfusion:RibbonTab Caption="Home"  syncfusion:Ribbon.KeyTip="H" >
 
-<syncfusion:RibbonBar Header="Clipboard" Name="format_barClipboaurd"   syncfusion:Ribbon.KeyTip="FN" >
+<syncfusion:RibbonBar Header="Clipboard" syncfusion:Ribbon.KeyTip="FN" >
 
 <syncfusion:RibbonButton Label="Paste" SizeForm="Large"
 
@@ -124,7 +124,7 @@ The below example illustrates how to access particular Ribbonitem using KeyTip
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
 
-<syncfusion:RibbonTab syncfusion:Ribbon.KeyTip="F"  Caption="Folder" IsChecked="False" >
+<syncfusion:RibbonTab syncfusion:Ribbon.KeyTip="F"  Caption="Folder" IsChecked="True" >
 
 <syncfusion:RibbonBar  Header="Clean Up"  >
 
@@ -142,7 +142,7 @@ The below example illustrates how to access particular Ribbonitem using KeyTip
 
 </syncfusion:RibbonBar >
 
-<syncfusion:RibbonBar  Name="ribbonBar"   Header="Properties"  >
+<syncfusion:RibbonBar  Name="_ribbonBar"   Header="Properties"  >
 
 <syncfusion:RibbonButton syncfusion:Ribbon.KeyTip="FA"  SizeForm="Small"  Label="Show in Favourites"/>
 
@@ -187,7 +187,7 @@ The backstage feature of the Ribbon control provides KeyTip support to display K
 
 <syncfusion:Ribbon.BackStage>
 
-<syncfusion:Backstage x:Name="RibbonBackStage" syncfusion:Ribbon.KeyTip="B">
+<syncfusion:Backstage x:Name="_ribbonBackStage" syncfusion:Ribbon.KeyTip="B">
 
 <syncfusion:BackStageCommandButton Header="Save" syncfusion:Ribbon.KeyTip="S"   Command="Save" Icon="/Resources/Save16.png"/>
 
