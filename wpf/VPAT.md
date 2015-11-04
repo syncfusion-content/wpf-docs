@@ -7,11 +7,9 @@ control: Section 508 Compliance
 documentation: ug
 ---
 
-# Section 508 Compliance
+# Section 508 Compliance - Voluntary Product Accessibility Template
 
-The following Voluntary Product Accessibility information refers to Syncfusion Essential Studio for Windows Forms.
-
-## Voluntary Product Accessibility Template
+The following Voluntary Product Accessibility information refers to Syncfusion Essential Studio for WPF.
 
 <table>
 <tr>
@@ -20,39 +18,42 @@ CRITERIA<br/><br/></th><th>
 SUPPORTING FEATURES<br/><br/></th></tr>
 <tr>
 <td>
-1194.21 Software applications and operating systems.<br/><br/></td><td>
+Section 1194.21 Software applications and operating systems.<br/><br/></td><td>
 Please refer to the attached VPAT.<br/><br/></td></tr>
 <tr>
 <td>
-1194.22 Web-based intranet and internet information and applications.<br/><br/></td><td>
+Section 1194.22 Web-based intranet and internet information and applications.<br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
-1194.23 Telecommunications products.<br/><br/></td><td>
+Section 1194.23 Telecommunications products.<br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
-1194.24 Video and multimedia products.<br/><br/></td><td>
+Section 1194.24 Video and multimedia products.<br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
-1194.25 Self-contained closed products.<br/><br/></td><td>
+Section 1194.25 Self-contained closed products.<br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
-1194.26 Desktop and portable computers.<br/><br/></td><td>
+Section 1194.26 Desktop and portable computers.<br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
-1194.31 Functional performance criteria.<br/><br/></td><td>
+Section 1194.31 Functional performance criteria.<br/><br/></td><td>
 Please refer to the attached VPAT.<br/><br/></td></tr>
 <tr>
 <td>
-1194.41 Information, documentation, and support.<br/><br/></td><td>
+Section 1194.41 Information, documentation, and support.<br/><br/></td><td>
 Please refer to the attached VPAT.<br/><br/></td></tr>
 </table>
 
-Detailed Voluntary Product Accessibility Template
+## Subpart B – Technical Standards Section 1194.21 
+
+Section 1194.21 Software Applications and Operating Systems - Detail Voluntary Product Accessibility Template
+
 
 <table>
 <tr>
@@ -122,7 +123,7 @@ Not Applicable<br/><br/></td><td>
 This criterion does not apply to Essential Studio for WPF controls.<br/><br/></td></tr>
 </table>
 
-Functional Performance Criteria 1194.31 Functional performance criteria
+## Subpart C - Section 1194.31 Functional Performance Criteria
 
 <table>
 <tr>
@@ -162,7 +163,7 @@ Fully Supported<br/><br/></td><td>
 Essential Studio for WPF controls provide functionality that conforms to these criteria.<br/><br/><br/><br/></td></tr>
 </table>
 
-Subpart D -- Information, Documentation, and Support 1194.41 Information, documentation, and support
+## Subpart D - Section 1194.41 Information, documentation, and support
 
 <table>
 <tr>
@@ -172,7 +173,7 @@ Supporting Features<br/><br/></th><th>
 Remarks and explanations<br/><br/></th></tr>
 <tr>
 <td>
-Section 1194.41 (a) Product Support Documentation provided to end-users shall be made available in alternate formats upon request, at no additional<br/><br/>Charge.<br/><br/></td><td>
+Section 1194.41 (a) Product Support Documentation provided to end-users shall be made available in alternate formats upon request, at no additional charge.<br/><br/></td><td>
 Supported.<br/><br/></td><td>
 Online <a href="http://help.syncfusion.com">Documentation</a> is available.<br/><br/></td></tr>
 <tr>
