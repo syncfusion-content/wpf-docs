@@ -8,8 +8,6 @@ documentation: ug
 ---
 # Customize Ribbon through RibbonContextMenu
 
-## Functions available in Ribbon ContextMenu
-
 RibbonContextMenu allows to customize the Ribbon with the Right Click and it displays different functions for Ribbon and RibbonItems.
 
 {% highlight xml %}
@@ -90,7 +88,7 @@ Ribbon Context Menu supports display of custom items. To add the custom item, se
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcd86ccb.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img3.jpeg)
 
 
-## How to disable the RibbonContextMenu?
+## How to disable the RibbonContextMenu
 
 In order to disable the ContextMenu handle the `RibbonContextMenuOpening` event
 
@@ -221,9 +219,9 @@ Ribbon.QuickAccessToolBar = QAT;
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img1.jpeg)
 
 
-## Add items from QAT Menu items
+## Add items to QAT Menu items
 
-Ribbon also supports to add the items from QAT Menu items.To add the items to the Drop Down Menu of the QuickAccessToolBar, use the attached property, `QATMenuItems` of the Quick Access ToolBar .  QATMenuItems can be added to the QAT by making the Selection.
+Ribbon also supports to add the items to QAT Menu items. To add the items to the Drop Down Menu of the QuickAccessToolBar, use the attached property, `QATMenuItems` of the Quick Access ToolBar .  QATMenuItems can be added to the QAT by making the Selection.
 
 {% highlight xml %}
 
@@ -291,7 +289,7 @@ The “Paste” QATMenuItem has been selected and it is displayed as one of the 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML6d3ac4.PNG](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img3.jpeg)
 
 
-## Add items from QAT Customize Window
+## Add items to QAT Customize Window
 
 To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particluar tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
 
@@ -318,7 +316,7 @@ The following section illustrates how to customize Ribbon at the run time
 
 ### QAT Customized Window
 
-This topic illustrates in detail about the [QAT](#_Adding_items_from_1 "") topic.
+This topic illustrates in detail about the QAT topic.
 
 First, select MoreCommands option from the QAT to open the QAT Customized Window.
 
@@ -413,8 +411,6 @@ The steps to customize the Ribbon Item are as follows
 
 
 ## How to disable the customization in Ribbon?
-
-To disable the customization in the Ribbon, set `ShowCustomizeRibbon` property of the Ribbon as `False` 
 
 To disable the customization in the Ribbon, set `ShowCustomizeRibbon` property of the Ribbon as `False` 
 

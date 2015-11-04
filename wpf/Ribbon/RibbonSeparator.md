@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon Separator	
 
-RibbonSeperator used to separate the similar set of Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
+`RibbonSeperator` used to separate the similar set of Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
 
 The following code example illustrates how to set RibbonSeperator in Ribbon instance.
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Touch Support
 
-Touch styles can be applied to a control by setting the `EnableTouch` property defined in the `SkinStorage` class to `True`. 
+Ribbon control have touch support and it provides Touch UI which is easy to access the element in Ribbon. 
 
 ### How to enable touch in RibbonWindow?
 

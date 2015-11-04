@@ -8,9 +8,9 @@ documentation: ug
 ---
 # RibbonCheckBox
 
-RibbonCheckBox is used to select or unselect options. RibbonCheckBox control provide similar set of functionalities like normal CheckBox control in Ribbon.
+`RibbonCheckBox` is used to select or unselect options. It provides similar set of functionalities like normal CheckBox control in Ribbon.
 
-The following code example illustrates how to use RibbonCheckBox control in Ribbon instance.
+The following code example illustrates how to use `RibbonCheckBox` control in Ribbon instance.
 
 {% highlight xml %}
 

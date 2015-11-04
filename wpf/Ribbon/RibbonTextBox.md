@@ -8,11 +8,9 @@ documentation: ug
 ---
 # RibbonTextBox
 
-RibbonTextBox control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
+`RibbonTextBox` control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
 
 The following code example illustrates how to use RibbonTextBox control in Ribbon instance.
-
-You can use RibbonTextBox in Ribbon by add it inside the RibbonBar element.
 
 {% highlight xml %}
 

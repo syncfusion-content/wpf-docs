@@ -317,8 +317,6 @@ _contextTabGroup.IsGroupVisible = true;
 
 {% endhighlight %}
 
-The output of the above code is illustrated in the following screenshot
-
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img4.jpeg)
 
 

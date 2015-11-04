@@ -8,11 +8,11 @@ documentation: ug
 ---
 # RibbonComboBox
 
-RibbonComboBox control is used to display the list of items, as ComboBox in Ribbon instance.
+RibbonComboBox control is used to display the list of items, as ComboBox.
 
-## Creating control in XAML
+### Creating control in XAML
 
-You can use RibbonComboBox in Ribbon by adding it directly to RibbonBar element.
+`RibbonComboBox` can added directly to RibbonBar element.
 
 {% highlight xml %}
 
@@ -70,9 +70,9 @@ You can use RibbonComboBox in Ribbon by adding it directly to RibbonBar element.
 
 {% endhighlight %}
 
-## Creating control in code behind			
+### Creating control in code behind			
 
-Create instance of RibbonComboBox and add it to RibbonBar Items.
+Create instance for `RibbonComboBox` and add it to RibbonBar Items.
 
 {% highlight c# %}
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonMenuItem
 
-RibbonMenuItems are used as entities in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
+`RibbonMenuItem` used as entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 
 The following code example illustrates how to use RibbonMenuItem control in Ribbon instance.
 
