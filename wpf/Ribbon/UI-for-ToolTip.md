@@ -27,7 +27,7 @@ The following code illustrates how to set Tooltip for the RibbonItems
 
 [XAML]
 
-<Syncfusion:Ribbon x:Name="ribbon"   VerticalAlignment="Top">
+<Syncfusion:Ribbon x:Name="_ribbon"   VerticalAlignment="Top">
 
 <Syncfusion:RibbonTab  Caption="Home" IsChecked="False"  >
 
