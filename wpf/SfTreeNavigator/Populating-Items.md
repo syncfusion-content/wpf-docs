@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Populating Items | TreeNavigator | wpf | Syncfusion
+title: Populating Items | SfTreeNavigator | wpf | Syncfusion
 description: populating items 
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 

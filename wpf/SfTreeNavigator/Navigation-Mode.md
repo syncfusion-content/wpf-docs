@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Navigation Mode | TreeNavigator | wpf | Syncfusion
+title: Navigation Mode | SfTreeNavigator | wpf | Syncfusion
 description: navigation mode  
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Selected Item | TreeNavigator | wpf | Syncfusion
+title: Selected Item | SfTreeNavigator | wpf | Syncfusion
 description: selected item 
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 
