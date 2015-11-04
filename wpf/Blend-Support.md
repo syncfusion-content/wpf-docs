@@ -13,7 +13,7 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 
 ## Edit control Style in Expression Blend
 
-1.Open your application in Expression Blend. 
+1.Open an application in Expression Blend. 
 
 2.Expand the Window, Objects and Timeline.
 

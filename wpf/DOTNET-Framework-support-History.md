@@ -10,7 +10,7 @@ documentation: ug
 
 ## Version Compatibility
 
-The table represents the .NET framework versions vs Syncfusion Essential Studio version.
+This table represents the supported Syncfusion Essential Studio version for .NET framework versions .
 
 <table>
 <tr>
@@ -59,7 +59,6 @@ Yes<br/><br/></td></tr>
 
 Syncfusion WPF controls are always updated with the Microsoft latest Framework. The following table contains information about the control's compatibility with the earlier version of .NET Framework
 
-### List of control's compatibility with the earlier version of .NET Framework
 
 <table>
 <tr>

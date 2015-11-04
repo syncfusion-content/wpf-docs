@@ -13,13 +13,14 @@ documentation: ug
 
 To run the samples, open the corresponding Dashboard from the following location:
 
-Start -> All Programs -> Syncfusion -> Essential Studio -> Dashboard
+From Windows 10: Start -> All Apps -> Syncfusion -> Syncfusion Dashboard {{ site.releaseversion }}
 
 Else open the Dashboard from the following installed location:
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Dashboard\4.0\Dashboard.exe
 
-The following screenshot displays the Dashboard.
+N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
+
 
 ![](Guidetorunthesamples_images/Guidetorunthesamples_img1.jpeg)
 
