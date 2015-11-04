@@ -19,7 +19,7 @@ SUPPORTING FEATURES<br/><br/></th></tr>
 <tr>
 <td>
 Section 1194.21 Software applications and operating systems.<br/><br/></td><td>
-Please refer to the attached VPAT.<br/><br/></td></tr>
+Please refer to the Subpart B.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.22 Web-based intranet and internet information and applications.<br/><br/></td><td>
@@ -43,11 +43,11 @@ Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.31 Functional performance criteria.<br/><br/></td><td>
-Please refer to the attached VPAT.<br/><br/></td></tr>
+Please refer to the Subpart C.<br/><br/></td></tr>
 <tr>
 <td>
 Section 1194.41 Information, documentation, and support.<br/><br/></td><td>
-Please refer to the attached VPAT.<br/><br/></td></tr>
+Please refer to the Subpart D.<br/><br/></td></tr>
 </table>
 
 ## Subpart B – Technical Standards Section 1194.21 
