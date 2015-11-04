@@ -6,6 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
+
 # State Persistence
 
 State Persistence is the combined process of Serialization and Deserialization. Serialization is the process of converting the state of an object to a format in which it can be persisted as a file in the memory. The serialized format contains the object's state information. Deserialization is the complement process of Serialization, which converts into the object from the stored state information.
@@ -19,7 +20,7 @@ The following ribbon control states can persist separately.
 
    a. Quick Access Tool Bar Items
 
-   b. Quick Access Tool Bar State ( Above Ribbon, Below Ribbon)
+   b. Quick Access Tool Bar State (Above Ribbon, Below Ribbon)
 
 2. Ribbon
 
@@ -47,40 +48,47 @@ The Ribbon State Persistence feature helps users to load the state of the Ribbon
 To enable State Persistence in Ribbon control, set the `AutoPersist` property to `True`
 
 <table>
+<thead>
 <tr>
-<th>Property<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Data Type<br/><br/></th>
-<th>Default Value<br/><br/></th>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+<th>Data Type</th>
+<th>Default Value</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>AutoPersist<br/><br/></td>
-<td>This property will enable/disable the state persistence in Ribbon control. This property is available individually for Quick Access Tool Bar, Ribbon and Ribbon Window.<br/><br/></td>
-<td>Dependency Property<br/><br/></td>
-<td>bool<br/><br/></td>
-<td>False<br/><br/></td>
-
+<td>AutoPersist</td>
+<td>This property will enable/disable the state persistence in Ribbon control. This property is available individually for Quick Access Tool Bar, Ribbon and Ribbon Window.</td>
+<td>Dependency Property</td>
+<td>bool</td>
+<td>False</td>
 </tr>
+</tbody>
 </table>
 
 
 
 <table>
+<thead>
 <tr>
-<th>Property<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Data Type<br/><br/></th>
-<th>Default Value<br/><br/></th>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+<th>Data Type</th>
+<th>Default Value</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>PersistElements<br/><br/></td>
-<td>This property has a collection of Ribbon elements, which are used to persist states at runtime.<br/><br/></td>
-<td>CLR<br/><br/></td>
-<td>ObservableCollection<RibbonElements><br/><br/></td>
-<td>Null<br/><br/></td>
+<td>PersistElements</td>
+<td>This property has a collection of Ribbon elements, which are used to persist states at runtime.</td>
+<td>CLR</td>
+<td>ObservableCollection &lt;RibbonElements&gt;</td>
+<td>Null</td>
 </tr>
+</tbody>
 </table>
 
 
@@ -88,61 +96,61 @@ To enable State Persistence in Ribbon control, set the `AutoPersist` property to
 
 <table>
 <tr>
-<th>Method<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Parameters<br/><br/></th>
-<th>Return Type<br/><br/></th>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+<th>Return Type</th>
 </tr>
 <tr>
-<td>SaveRibbonState()<br/><br/></td>
-<td>This method will save the current State of the Ribbon control.<br/><br/></td>
-<td>(+2 Overloads)<br/><br/>No Params<br/><br/>(IsolatedStorageFile arg1, string arg2)<br/><br/>arg1 – This parameter is used to mention the custom Isolated Storage file.<br/><br/>arg2 – This is the file name in the Isolated Storage file, which is used to save the Ribbon state.<br/><br/></td>
-<td>void<br/><br/></td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th>Method<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Parameters<br/><br/></th>
-<th>Return Type<br/><br/></th>
-</tr>
-<tr>
-<td>LoadRibbonState()<br/><br/></td>
-<td>This method will load the saved state of the Ribbon.<br/><br/></td>
-<td>(+2 Overloads)<br/><br/>No Params<br/><br/>(IsolatedStorageFile arg1, string arg2)<br/><br/>arg1– This parameter is used to mention the custom Isolated Storage file.<br/><br/>arg2 – This is the file name in the Isolated Storage file, which has the stored Ribbon State.<br/><br/></td>
-<td>void<br/><br/></td>
+<td>SaveRibbonState()</td>
+<td>This method will save the current State of the Ribbon control.</td>
+<td>(+2 Overloads)No Params(IsolatedStorageFile arg1, string arg2)arg1 – This parameter is used to mention the custom Isolated Storage file.arg2 – This is the file name in the Isolated Storage file, which is used to save the Ribbon state.</td>
+<td>void</td>
 </tr>
 </table>
 
 <table>
 <tr>
-<th>Method<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Parameters<br/><br/></th>
-<th>Return Type<br/><br/></th>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+<th>Return Type</th>
 </tr>
 <tr>
-<td>ResetRibbonState()<br/><br/></td>
-<td>ResetRibbonState method will load the initial state of the Ribbon elements.<br/><br/></td>
-<td>No Params<br/><br/></td>
-<td>void<br/><br/></td>
+<td>LoadRibbonState()</td>
+<td>This method will load the saved state of the Ribbon.</td>
+<td>(+2 Overloads)No Params(IsolatedStorageFile arg1, string arg2)arg1– This parameter is used to mention the custom Isolated Storage file.arg2 – This is the file name in the Isolated Storage file, which has the stored Ribbon State.</td>
+<td>void</td>
 </tr>
 </table>
 
 <table>
 <tr>
-<th>Method<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Parameters<br/><br/></th>
-<th>Return Type<br/><br/></th>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+<th>Return Type</th>
 </tr>
 <tr>
-<td>DeleteRibbonState()<br/><br/></td>
-<td>It will be delete the saved state of the file from memory.<br/><br/></td>
-<td>(+2 Overloads)<br/><br/>1. No params<br/><br/>2.(IsolatedStorageFile arg1,<br/><br/>string arg2)<br/><br/>arg1– This parameter is used to mention the custom Isolated Storage file.<br/><br/>arg2 – This is the file name in the Isolated Storage file, which has to be deleted.<br/><br/><br/><br/></td>
-<td>void<br/><br/></td>
+<td>ResetRibbonState()</td>
+<td>ResetRibbonState method will load the initial state of the Ribbon elements.</td>
+<td>No Params</td>
+<td>void</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+<th>Return Type</th>
+</tr>
+<tr>
+<td>DeleteRibbonState()</td>
+<td>It will be delete the saved state of the file from memory.</td>
+<td>(+2 Overloads)1. No params2.(IsolatedStorageFile arg1,string arg2)arg1– This parameter is used to mention the custom Isolated Storage file.arg2 – This is the file name in the Isolated Storage file, which has to be deleted.</td>
+<td>void</td>
 </tr>
 </table>
 
@@ -525,25 +533,25 @@ this.PART_Ribbon.SaveRibbonState(writer);
 
 <table>
 <tr>
-<th>Method<br/><br/></th>
-<th>Description<br/><br/></th>
-<th>Parameters<br/><br/></th>
-<th>Return Type<br/><br/></th>
-<th>Reference links<br/><br/></th>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+<th>Return Type</th>
+<th>Reference links</th>
 </tr>
 <tr>
-<td>SaveRibbonState<br/><br/></td>
-<td>It saves the ribbon state to the xml file given in the parameter.<br/><br/></td>
-<td>XmlWriter<br/><br/></td>
-<td>N/A<br/><br/></td>
-<td>N/A<br/><br/></td>
+<td>SaveRibbonState</td>
+<td>It saves the ribbon state to the xml file given in the parameter.</td>
+<td>XmlWriter</td>
+<td>N/A</td>
+<td>N/A</td>
 </tr>
 <tr>
-<td>LoadRibbonState<br/><br/></td>
-<td>It loads the ribbon state from the xml file given in the parameter.<br/><br/></td>
-<td>XmlReader<br/><br/></td>
-<td>N/A<br/><br/></td>
-<td>N/A<br/><br/></td>
+<td>LoadRibbonState</td>
+<td>It loads the ribbon state from the xml file given in the parameter.</td>
+<td>XmlReader</td>
+<td>N/A</td>
+<td>N/A</td>
 </tr>
 </table>
 
