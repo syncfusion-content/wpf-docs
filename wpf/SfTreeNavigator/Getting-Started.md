@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started | TreeNavigator | wpf | Syncfusion
+title: Getting Started | SfTreeNavigator | wpf | Syncfusion
 description: getting started 
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 
