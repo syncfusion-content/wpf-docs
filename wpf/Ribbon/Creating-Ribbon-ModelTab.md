@@ -32,7 +32,7 @@ To add RibbonTabs as ModalTabs in an application,use `ModalTabCollection` proper
 
 <syncfusion:ModalTabCollection >
 
-<syncfusion:RibbonTab Caption="Print Preview" x:Name="printpreviewtab">
+<syncfusion:RibbonTab Caption="Print Preview" x:Name="_printPreviewTab">
 
 <syncfusion:RibbonBar Header="Sample Bar">
 
@@ -68,7 +68,7 @@ private void ShowModalTabBtn_Click(object sender, RoutedEventArgs e)
 
 { 
 
-this.MyRibbon.ShowModalTab("printpreviewtab"); 
+this._ribbon.ShowModalTab("_printPreviewTab"); 
 
 }
 
@@ -88,7 +88,7 @@ private void CloseModalTabBtn_Click(object sender, RoutedEventArgs e)
 
 { 
 
-this.MyRibbon.CloseModalTabs(); 
+this._ribbon.CloseModalTabs(); 
 
 }
 

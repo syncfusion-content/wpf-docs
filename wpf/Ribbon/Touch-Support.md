@@ -12,7 +12,7 @@ Touch styles can be applied to a control by setting the `EnableTouch` property d
 
 ### How to enable touch in RibbonWindow?
 
-To enable touch in the RibbonWindow, set `EnableTouch` property of the SkinStorage as `True`.The following code snippet illustrates this
+To enable touch in the RibbonWindow, set `EnableTouch` property of the SkinStorage as `True`. The following code snippet illustrates this
 
 {% highlight xml %}
 
@@ -26,7 +26,7 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonButtonPanel.MainWindow"
 
-Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Office2013"  x:Name="RibbonWindow" syncfusion:SkinStorage.EnableTouch="True"/>
+Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Office2013"  x:Name="_ribbonWindow" syncfusion:SkinStorage.EnableTouch="True"/>
 
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 
 [C#]
 
-SkinStorage.SetEnableTouch(RibbonWindow, true);
+SkinStorage.SetEnableTouch(_ribbonWindow, true);
 
 {% endhighlight %}
 

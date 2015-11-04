@@ -19,7 +19,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 [XAML]
 
-<syncfusion:Ribbon  RibbonState="Normal" VerticalAlignment="Top" x:Name="Ribbon" >
+<syncfusion:Ribbon  RibbonState="Normal" VerticalAlignment="Top" x:Name="_ribbon" >
 
 <syncfusion:RibbonTab  Caption="Folder" IsChecked="False" >
 
@@ -63,7 +63,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 [XAML]
 
-<syncfusion:Ribbon  RibbonState="Hide" VerticalAlignment="Top" x:Name="Ribbon" >
+<syncfusion:Ribbon  RibbonState="Hide" VerticalAlignment="Top" x:Name="_ribbon" >
 
 <syncfusion:RibbonTab  Caption="Folder" IsChecked="False" >
 
@@ -108,7 +108,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 [XAML]
 
-<syncfusion:Ribbon  RibbonState="Adorner" VerticalAlignment="Top" x:Name="Ribbon" >
+<syncfusion:Ribbon  RibbonState="Adorner" VerticalAlignment="Top" x:Name="_ribbon" >
 
 <syncfusion:RibbonTab  Caption="Folder" IsChecked="False" >
 
@@ -154,7 +154,7 @@ Ribbon State can also be changed at the Runtime.In the below code, Ribbon State 
 
 [C#]
 
-Ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Normal;
+_ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Normal;
 
 {% endhighlight %}
 
@@ -162,7 +162,7 @@ Ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Normal;
 
 [C#]
 
-Ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Hide;
+_ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Hide;
 
 {% endhighlight %}
 
@@ -170,7 +170,7 @@ Ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Hide;
 
 [C#]
 
-Ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner;
+_ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner;
 
 {% endhighlight %}
 
@@ -218,7 +218,7 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 
 <syncfusion:ContextTabGroup Label="Table Tools" BackColor="Green" IsGroupVisible="True">
 
-<syncfusion:RibbonTab Caption="Tables" IsChecked="False" />
+<syncfusion:RibbonTab Caption="Tables" IsChecked="True" />
 
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" />
 
@@ -253,7 +253,7 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
 
 <syncfusion:ContextTabGroup Label="Table tools" BackColor="Green" IsGroupVisible="True">
 
-<syncfusion:RibbonTab Caption="Tables" IsChecked="False" />
+<syncfusion:RibbonTab Caption="Tables" IsChecked="True" />
 
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" />
 
@@ -282,9 +282,9 @@ ContextTabgroup visibility can also be changed at the runtime. To change the vis
 
 <syncfusion:Ribbon.ContextTabGroups>
 
-<syncfusion:ContextTabGroup x:Name="tableContextTabGroup" Label="Table tools" BackColor="Red"  >
+<syncfusion:ContextTabGroup x:Name="_contextTabGroup" Label="Table tools" BackColor="Red"  >
 
-<syncfusion:RibbonTab Caption="Tables" IsChecked="False" >
+<syncfusion:RibbonTab Caption="Tables" IsChecked="True" >
 
 </syncfusion:RibbonTab>
 
@@ -309,7 +309,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 {
 
-tableContextTabGroup.IsGroupVisible = true;
+_contextTabGroup.IsGroupVisible = true;
 
 }
 

@@ -259,7 +259,7 @@ Title="MainWindow" Height="350" Width="525">
 
 <syncfusion:Ribbon 
 
-x:Name="Ribbon"  VerticalAlignment="Top"   
+x:Name="_ribbon"  VerticalAlignment="Top"   
 
 ItemsSource="{Binding CustomRibbonTabs}" >
 
