@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonGallery
 
-RibbonGallery provides you rich UI to display the items in Ribbon. 
+RibbonGallery provides you rich UI to display the items. 
 
 ## Visual Mode
 
@@ -19,7 +19,7 @@ RibbonGallery has two type of visual modes. Visual Mode of RibbonGallery is set 
 
 The following code example illustrates how to set VisualMode for RibbonGallery control in Ribbon instance.
 
-InRibbon mode
+### Ribbon mode
 
 {% highlight xml %}
 
@@ -35,7 +35,7 @@ InRibbon mode
 ![](RibbonGallery_images/RibbonGallery_img1.jpeg)
 
 
-DropDown Mode
+### DropDown Mode
 
 {% highlight xml %}
 

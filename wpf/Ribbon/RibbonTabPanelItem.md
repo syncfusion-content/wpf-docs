@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon TabPanelItem
 
-You can set RibbonTabPannelItem in Ribbon instance like in Microsoft Office. It located below the close button of RibbonWindow.
+`RibbonTabPannelItem` can set in Ribbon to located below the close button of RibbonWindow.
 
 The following code example illustrates how to use RibbonTabPannelItem control in Ribbon instance.
 

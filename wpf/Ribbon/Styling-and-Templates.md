@@ -8,12 +8,12 @@ documentation: ug
 ---
 # Styling and Templates
 
-The Ribbon control ships with a number of built-in themes such as Office 2007 Silver, Blue, Black, Blend, Office 2003, Shiny Red, and Shiny Blue. 
+The Ribbon control ships with a number of built-in themes such as Office2003, Office2010 Silver, Blue, Black, Blend, Metro and Office2013. 
 
 ## Visual Styles
-To override the themes to the Ribbon control’s style, first add ResourceDictionary in the sample and then define new style with the BasedOn property.When the Resource Dictionary is added, all the properties of the base style can be acquired, and then override them as desired. The same procedure can be used for overriding the other styles.Here, an example is illustrated to set the BackStageColor for the Ribbon by customizing the RibbonStyle using the BasedOn property.
+To override the themes to the Ribbon control’s style, add ResourceDictionary in the sample and define new style with the BasedOn property. When the Resource Dictionary is added, all the properties of the base style can be acquired, then override them as desired. The same procedure can be used for overriding the other styles. Here an example is illustrated to set the BackStageColor for the Ribbon by customizing the RibbonStyle using the BasedOn property.
 
-####Syntax for ResourceDictionary
+#### Syntax for ResourceDictionary
 
 {% highlight xml %}
 
@@ -25,7 +25,7 @@ To override the themes to the Ribbon control’s style, first add ResourceDictio
 {% endhighlight %}
 
 
-####Syntax for BasedOn
+#### Syntax for BasedOn
 
 {% highlight xml %}
 

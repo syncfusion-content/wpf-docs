@@ -8,7 +8,7 @@ documentation: ug
 ---
 # SimpleMenuButton
 
-The difference between SimpleMenuButton and the other menu button is that it cannot have a sub menu. This control when added outside the ribbon instance will not have the desired appearance.
+The difference between `SimpleMenuButton` and the other menu button is that it cannot have a sub menu. This control when added outside the ribbon instance will not have the desired appearance.
 
 SimpleMenuButton can be used with ApplicationMenu. 
 
