@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Themes
 
-`SfSkinManager` control helps to apply the built in themes to the Syncfusion UI controls for WPF. Refer to the following built in themes and its available assemblies.
+`SfSkinManager` control helps to apply the built-in themes to the Syncfusion UI controls for WPF. Refer to the following built in themes and its available assemblies.
 
 <table>
 <tr>
@@ -62,6 +62,8 @@ Syncfusion.Themes.Office2010Silver.Wpf.dll<br/><br/></td></tr>
 </table>
 
 ## Getting Started
+
+This section covers how to apply themes for controls using `SfSkinManager`
 
 ### Add SfSkinManager to the Application
 
@@ -120,7 +122,7 @@ By using the `VisualStyle` attached property of the SfSkinManager, you can apply
 
 ### Apply themes at run time
 
-You can switch various build in themes at the runtime by using the `VisualStyle` property. Here, a ComboBox Control is used to switch various build in themes that are referred in the assembly references.
+You can switch various build in themes at the runtime by using the `VisualStyle` property. Here, a ComboBox Control is used to switch various build-in themes that are referred in the assembly references.
 
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -176,6 +178,8 @@ You can switch various build in themes at the runtime by using the `VisualStyle`
 
 {% endhighlight %}
 
+{% tabs %}
+
 {% highlight c# %}
 
 private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -185,6 +189,21 @@ private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
 
 {% endhighlight %}
 
+Private Sub ComboBox_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
+	SfSkinManager.SetVisualStyle(Me, DirectCast([Enum].Parse(GetType(VisualStyles), TryCast(TryCast(sender, ComboBox).SelectedItem, ComboBoxItem).Content.ToString()), VisualStyles))
+End Sub 
+
+{% highlight VB %}
+
+private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+	SfSkinManager.SetVisualStyle(this,(VisualStyles)Enum.Parse(typeof(VisualStyles),((sender as ComboBox).SelectedItem as ComboBoxItem).Content.ToString()));
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## MS Controls Themes
 
 All built-in assemblies have Style resources for MS controls, so whenever an application get its style through SfSkinManager, the Theme’s corresponding MS Control style merges with the applied controls resource dictionary. 
@@ -193,12 +212,22 @@ All built-in assemblies have Style resources for MS controls, so whenever an app
 
 By Default SfSkinManager merges the required resource files from the Theme assembly to the applied control. To apply the theme globally in the application, set the `ApplyStylesOnApplication` property to `True`. It merges all the resource files to the Application’s Resource Dictionary.
 
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfSkinManager.ApplyStylesOnApplication = true;
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+SfSkinManager.ApplyStylesOnApplication = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Apply Style to custom controls
 
@@ -223,6 +252,8 @@ To apply the built-in themes to your derived control using SfSkinManager, you ha
 
 {% endhighlight %}
 
+{% tabs %}
+
 {% highlight C# %}
 
 
@@ -235,7 +266,19 @@ public class DockingAdv : DockingManager
 }
 
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Class DockingAdv
+	Inherits DockingManager
+	Public Sub New()
+		SetResourceReference(StyleProperty, GetType(DockingManager))
+	End Sub
+End Class 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
