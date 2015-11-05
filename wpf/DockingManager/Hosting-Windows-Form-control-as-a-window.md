@@ -10,11 +10,21 @@ documentation: ug
 
 ## Hosting a Windows Form control
 
-DockingManager allows you to host a WindowsForm control as a Docking Child. Here a Windows Forms WebBrowser control added as Child Window
+DockingManager allows to host a WindowsForm control as a Docking Child. Here a Windows Forms WebBrowser control added as Child Window
 
 {%highlight xml%}
 
-<syncfusion:DockingManager x:Name="DockingManager1" DockFill="True"   ><WebBrowser Name="Web1"></syncfusion:DockingManager> Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
+<syncfusion:DockingManager x:Name="DockingManager1" DockFill="True" >
+
+<WebBrowser Name="Web1" />
+
+</syncfusion:DockingManager> 
+
+{%endhighlight%}
+
+{%highlight C#%}
+
+Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 
 {%endhighlight%}
 
