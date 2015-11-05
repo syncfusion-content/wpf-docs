@@ -142,7 +142,8 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 <ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties" syncfusion:DockingManager.State="Float" />
 
 <ContentControl syncfusion:DockingManager.Header="Output"
-                syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
 
 <ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" syncfusion:DockingManager.State="Document"/>
 
@@ -235,7 +236,8 @@ Title="MainWindow" Height="350" Width="525" />
 <ContentControl syncfusion:DockingManager.Header="Properties" x:Name="Properties" syncfusion:DockingManager.State="Float" />
 
 <ContentControl syncfusion:DockingManager.Header="Output" x:Name="Output"
-                syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
 
 <ContentControl syncfusion:DockingManager.Header="Start Page"
                 syncfusion:DockingManager.State="Document" x:Name="StartPage" />

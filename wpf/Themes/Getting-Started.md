@@ -97,22 +97,26 @@ Syncfusion UI controls for WPF supports various visual styles stated above. The 
 By using the `VisualStyle` attached property of the SfSkinManager, you can apply any build in themes to the required control.  Now, apply the value as `VisualStudio2013` to the VisualStyle property of the SfSkinManager for the Docking Manager control.
 
 {% highlight xml %}
-<syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="VisualStudio2013">
+<syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True"
+                           PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="VisualStudio2013">
 
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"  syncfusion:DockingManager.SideInDockedMode="Right"/>
+<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
+                                          syncfusion:DockingManager.SideInDockedMode="Right"/>
 
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox" syncfusion:DockingManager.State="AutoHidden" />
+<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"
+                                 syncfusion:DockingManager.State="AutoHidden" />
 
-<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties" syncfusion:DockingManager.State="Float" />
+<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
+                                    syncfusion:DockingManager.State="Float" />
 
-<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output" syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
+<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
 
-<ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" syncfusion:DockingManager.State="Document" />
+<ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page"
+                                   syncfusion:DockingManager.State="Document" />
 
 </syncfusion:DockingManager>
-
-
-
 
 
 {% endhighlight %}
@@ -162,15 +166,20 @@ You can switch various build in themes at the runtime by using the `VisualStyle`
 
 <syncfusion:DockingManager Grid.Row="1" x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
 
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"  syncfusion:DockingManager.SideInDockedMode="Right"/>
+<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
+                                          syncfusion:DockingManager.SideInDockedMode="Right"/>
 
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox" syncfusion:DockingManager.State="AutoHidden" />
+<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"
+                                 syncfusion:DockingManager.State="AutoHidden" />
 
-<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties" syncfusion:DockingManager.State="Float" />
+<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
+                                    syncfusion:DockingManager.State="Float" />
 
-<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output" syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
+<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
 
-<ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" syncfusion:DockingManager.State="Document" />
+<ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" syncfusion:DockingManager.State="Document"/>
 
 </syncfusion:DockingManager>
 
@@ -189,16 +198,13 @@ private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
 
 {% endhighlight %}
 
-Private Sub ComboBox_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
-	SfSkinManager.SetVisualStyle(Me, DirectCast([Enum].Parse(GetType(VisualStyles), TryCast(TryCast(sender, ComboBox).SelectedItem, ComboBoxItem).Content.ToString()), VisualStyles))
-End Sub 
-
 {% highlight VB %}
 
-private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-{
-	SfSkinManager.SetVisualStyle(this,(VisualStyles)Enum.Parse(typeof(VisualStyles),((sender as ComboBox).SelectedItem as ComboBoxItem).Content.ToString()));
-}
+Private Sub ComboBox_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
+
+SfSkinManager.SetVisualStyle(Me, DirectCast([Enum].Parse(GetType(VisualStyles), TryCast(TryCast(sender, ComboBox).SelectedItem, ComboBoxItem).Content.ToString()), VisualStyles))
+
+End Sub 
 
 {% endhighlight %}
 
@@ -238,15 +244,17 @@ To apply the built-in themes to your derived control using SfSkinManager, you ha
 
 <local:DockingAdv x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
 
-<ContentControl x:Name="SolutionExplorer" local:DockingAdv.Header="Solution Explorer"  local:DockingAdv.SideInDockedMode="Right"/>
+<ContentControl x:Name="SolutionExplorer"
+                local:DockingAdv.Header="Solution Explorer" local:DockingAdv.SideInDockedMode="Right"/>
 
-<ContentControl x:Name="ToolBox" local:DockingAdv.Header="Toolbox" local:DockingAdv.State="AutoHidden" />
+<ContentControl x:Name="ToolBox" local:DockingAdv.Header="Toolbox" local:DockingAdv.State="AutoHidden"/>
 
-<ContentControl x:Name="Properties" local:DockingAdv.Header="Properties" local:DockingAdv.State="Float" />
+<ContentControl x:Name="Properties" local:DockingAdv.Header="Properties" local:DockingAdv.State="Float"/>
 
-<ContentControl x:Name="Output" local:DockingAdv.Header="Output" local:DockingAdv.SideInDockedMode="Tabbed" local:DockingAdv.TargetNameInDockedMode="SolutionExplorer"/>
+<ContentControl x:Name="Output" local:DockingAdv.Header="Output"
+                local:DockingAdv.SideInDockedMode="Tabbed" local:DockingAdv.TargetNameInDockedMode="SolutionExplorer"/>
 
-<ContentControl x:Name="StartPage" local:DockingAdv.Header="Start Page" local:DockingAdv.State="Document" />
+<ContentControl x:Name="StartPage" local:DockingAdv.Header="Start Page" local:DockingAdv.State="Document"/>
 
 </local:DockingAdv>
 
