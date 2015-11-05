@@ -30,7 +30,8 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 <ContentControl  syncfusion:DockingManager.Header="Item1" x:Name="Content1" />
 	
 <ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/> 
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/> 
 
 </syncfusion:DockingManager>
 
@@ -49,8 +50,9 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 <ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="Content1"/>  
 
 <ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                                                                                                   </syncfusion:DockingManager>
-
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
+				
 </syncfusion:DockingManager>
 
 {% endhighlight %}
@@ -67,8 +69,9 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 <ContentControl  syncfusion:DockingManager.Header="Item1" x:Name="Content1"/> 
 
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2" 
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
 
 </syncfusion:DockingManager>
 
@@ -90,11 +93,13 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" />  
 
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2" 
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
 
-<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="Content3"  
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                         
+<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="Content3"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                         
 
 </syncfusion:DockingManager>
 
@@ -110,10 +115,12 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"/>  
 
 <ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
 
-<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="Content3"  
-	            syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                         
+<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="Content3"
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                         
 
 </syncfusion:DockingManager>
 
