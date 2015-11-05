@@ -513,7 +513,7 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 <Grid Name="Transform">
 
 <Syncfusion:ContextMenuBorder Name="Border" Background="{TemplateBinding Background}"
-	                          BorderBrush="{TemplateBinding BorderBrush}"BorderThickness="1">
+                              BorderBrush="{TemplateBinding BorderBrush}"BorderThickness="1">
 
 <Border.ContextMenu>
 
@@ -530,11 +530,13 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 <DockPanel LastChildFill="True" Background="Red">
 
 <Border Name="Icon" DockPanel.Dock="Left" Margin="1" Width="16"
-        Background="{Binding Path=(TabItem.Content).(Syncfusion:DockingManager.Icon), RelativeSource={RelativeSource TemplatedParent}}" />
+        Background="{Binding Path=(TabItem.Content).(Syncfusion:DockingManager.Icon),
+        RelativeSource={RelativeSource TemplatedParent}}" />
 
 <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center"
-    ContentSource="Header" Margin="2,2,2,2" RecognizesAccessKey="True"
-	ContentTemplate="{Binding Path=(TabItem.Content).(Syncfusion:DockingManager.HeaderTemplate), RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}}"/>
+                  ContentSource="Header" Margin="2,2,2,2" RecognizesAccessKey="True"
+                  ContentTemplate="{Binding Path=(TabItem.Content).(Syncfusion:DockingManager.HeaderTemplate),
+                  RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}}"/>
 
 </DockPanel>
 
@@ -558,7 +560,8 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 
 <ContentControl Syncfusion:DockingManager.Header="Window1" x:Name="Content1" Syncfusion:DockingManager.State="Dock"/>
 
-<ContentControl Syncfusion:DockingManager.Header="Window2" Syncfusion:DockingManager.State="Dock" x:Name="Content2" 
+<ContentControl Syncfusion:DockingManager.Header="Window2"
+                Syncfusion:DockingManager.State="Dock" x:Name="Content2"
                 Syncfusion:DockingManager.TargetNameInDockedMode="Content1" Syncfusion:DockingManager.SideInDockedMode="Tabbed"/>
 
 </Syncfusion:DockingManager>
@@ -589,9 +592,8 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 <Setter Property="Syncfusion:DockingManager.InternalDataContext"
         Value="{Binding Path=(Syncfusion:DockedElementTabbedHost.HostedElement), RelativeSource={RelativeSource Self}}"/>
 
-<Setter Property="FocusVisualStyle" 
-	    Value="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).(Syncfusion:DockingManager.FocusVisualStyle),
-		RelativeSource={RelativeSource TemplatedParent}}"/>
+<Setter Property="FocusVisualStyle" Value="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).
+        (Syncfusion:DockingManager.FocusVisualStyle),RelativeSource={RelativeSource TemplatedParent}}"/>
 
 <Setter Property="Template">
 
@@ -599,16 +601,15 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 
 <ControlTemplate TargetType="{x:Type Syncfusion:DockedElementTabbedHost}">
 
-<Border x:Name="BorderWrap" Width="Auto" 
-	    FocusVisualStyle="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).(Syncfusion:DockingManager.FocusVisualStyle),
-        RelativeSource={RelativeSource TemplatedParent}}" SnapsToDevicePixels="True" BorderBrush="{TemplateBinding BorderBrush}" 
-		Background="Pink" BorderThickness="1">
+<Border x:Name="BorderWrap" Width="Auto" FocusVisualStyle="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).
+        (Syncfusion:DockingManager.FocusVisualStyle), RelativeSource={RelativeSource TemplatedParent}}"
+        SnapsToDevicePixels="True" BorderBrush="{TemplateBinding BorderBrush}" Background="Pink" BorderThickness="1">
 
 <DockPanel x:Name="DockPanel" Width="Auto" LastChildFill="True" Focusable="False">
 
 <Syncfusion:DockHeaderPresenter x:Name="header"DockPanel.Dock="Top" RenderTransformOrigin="0.5,0.5"
             Style="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).(Syncfusion:DockingManager.DockHeaderStyle),
-			RelativeSource={RelativeSource AncestorType={x:Type Syncfusion:DockedElementTabbedHost}}}"
+            RelativeSource={RelativeSource AncestorType={x:Type Syncfusion:DockedElementTabbedHost}}}"
             IsTemplateParenKeyboardFocusWithin="{TemplateBinding IsKeyboardFocusWithin}"/>
 
 <Grid>
@@ -646,7 +647,7 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 The header of the dock window can be customized using the property `DockHeaderStyle` with the TargetType as DockHeaderPresenter.
 
 {% highlight xaml %}
-<syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True"   >
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True"   >
 
 <syncfusion:DockingManager.DockHeaderStyle>
 
@@ -658,7 +659,7 @@ The header of the dock window can be customized using the property `DockHeaderSt
 
 </syncfusion:DockingManager.DockHeaderStyle>
 
-<ContentControl x:Name="Content1"  syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.Header="Child1" />
+<ContentControl x:Name="Content1" syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.Header="Child1" />
 
 <ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Child2" />
 
@@ -725,7 +726,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 {% highlight xml %}
 
-<Syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI"  EnableDocumentTabHeaderEdit="True">
+<Syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI" EnableDocumentTabHeaderEdit="True">
 
 <Syncfusion:DockingManager.FloatWindowTemplate>
 
@@ -734,10 +735,10 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 <AdornerDecorator>
 
 <DockPanel Focusable="False" LastChildFill="True" Opacity="{Binding Path=Opacity,
-	       RelativeSource={RelativeSource AncestorType={x:Type Syncfusion:IWindow}}}">
+           RelativeSource={RelativeSource AncestorType={x:Type Syncfusion:IWindow}}}">
 
-<Border Name="FloatWindowOutBorder"  Focusable="False" BorderBrush="{TemplateBinding BorderBrush}" 
-	    BorderThickness="{TemplateBinding BorderThickness}" Background="Red" >
+<Border Name="FloatWindowOutBorder" Focusable="False"
+        BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="Red" >
 
 <Grid Focusable="False">
 
@@ -769,8 +770,9 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 <Syncfusion:FloatWindowBorder BorderMode="Left" Name="BorderLeft" Grid.Column="0" Grid.Row="1" />
 
-<ContentPresenter Name="ContentPresenter" Grid.Column="1" Grid.Row="1" ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
-	              Content="{TemplateBinding ContentControl.Content}" />
+<ContentPresenter Name="ContentPresenter" Grid.Column="1" Grid.Row="1"
+                  ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                  Content="{TemplateBinding ContentControl.Content}" />
 
 <Syncfusion:FloatWindowBorder BorderMode="Right" Name="BorderRight" Grid.Column="2" Grid.Row="1" />
 
@@ -816,19 +818,21 @@ The style for the float window can be applied using the `FloatWindowStyle` prope
 {% highlight xml %}
 
 <syncfusion:DockingManager x:Name="DockingManager1">
-	
-	<syncfusion:DockingManager.FloatWindowStyle>
-	
-	<Style TargetType="{x:Type syncfusion:AutoTemplatedContentControl}">
-	<Setter Property="Background" Value="Red"></Setter>
-	</Style>	
-	
-	</syncfusion:DockingManager.FloatWindowStyle>
-	
-	<ContentControl syncfusion:DockingManager.Header="Child" 
-	                syncfusion:DockingManager.State="Float" syncfusion:DockingManager.SideInDockedMode="Left"/>
-					
-	<ContentControl syncfusion:DockingManager.Header="Child2"></ContentControl>
+
+<syncfusion:DockingManager.FloatWindowStyle>
+
+<Style TargetType="{x:Type syncfusion:AutoTemplatedContentControl}">
+
+<Setter Property="Background" Value="Red"></Setter>
+
+</Style>
+
+</syncfusion:DockingManager.FloatWindowStyle>
+
+<ContentControl syncfusion:DockingManager.Header="Child"
+                syncfusion:DockingManager.State="Float" syncfusion:DockingManager.SideInDockedMode="Left"/>
+
+<ContentControl syncfusion:DockingManager.Header="Child2"></ContentControl>
 	
 </syncfusion:DockingManager>
 
@@ -896,14 +900,14 @@ The template of the SideTabItem of the DockingManager can be customized using th
 <Rectangle Fill="Transparent"  Height="Auto" Width="Auto" RadiusX="5" RadiusY="5" />
 
 <Border Name="Icon" DockPanel.Dock="Left" Margin="1" Width="16"
-        Background="{Binding Path=(TabItem.Content).(Syncfusion:DockingManager.Icon), 
-		RelativeSource={RelativeSource TemplatedParent}}" />
+        Background="{Binding Path=(TabItem.Content).
+        (Syncfusion:DockingManager.Icon), RelativeSource={RelativeSource TemplatedParent}}" />
 
 <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center"
                   ContentSource="Header" Margin="2,2,2,2" RecognizesAccessKey="True"
-				  ContentTemplate="{Binding Path=(Border.DataContext).(Syncfusion:DockingManager.HeaderTemplate),
-				  ElementName=Border}" ContentTemplateSelector="{StaticResource TabItemTrimmingTemplate}"
-				  TextBlock.Foreground="{StaticResource Default.TabForeground}"/>
+                  ContentTemplate="{Binding Path=(Border.DataContext).(Syncfusion:DockingManager.HeaderTemplate),
+                  ElementName=Border}" ContentTemplateSelector="{StaticResource TabItemTrimmingTemplate}"
+                  TextBlock.Foreground={StaticResource Default.TabForeground}"/>
 
 </DockPanel>
 
@@ -944,25 +948,13 @@ The style for the sideTabItem can be changed using `SideItemStyle` by settings i
 
 </syncfusion:DockingManager.SideItemStyle>
 
-<ContentControl x:Name="content1" 
+<ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="Dock"/>
 
-syncfusion:DockingManager.Header="Child1"
+<ContentControl syncfusion:DockingManager.Header="Child2" syncfusion:DockingManager.State="AutoHidden"/>
 
-syncfusion:DockingManager.State="Dock"/>
-
-<ContentControl x:Name="content2" syncfusion:DockingManager.Header="Child2"
-
-syncfusion:DockingManager.State="AutoHidden"/>
-
-<ContentControl x:Name="content3" syncfusion:DockingManager.Header="Child3"
-
-syncfusion:DockingManager.State="Dock"></ContentControl>
+<ContentControl syncfusion:DockingManager.Header="Child3" syncfusion:DockingManager.State="Dock"/>
 
 </syncfusion:DockingManager>
-
-
-
-
 
 {% endhighlight %}
 
@@ -982,7 +974,7 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 <Border Name="PART_BorderName"  Height="{TemplateBinding ActualHeight}" Width="{TemplateBinding ActualWidth}"
         Margin="0" ClipToBounds="True" Background="Orange"Panel.ZIndex="1" KeyboardNavigation.TabIndex="1"
         BorderThickness="{Binding Path=SidePanelBorderThickness, RelativeSource={RelativeSource FindAncestor,
-		AncestorType={x:Type Syncfusion:DockingManager}}}" BorderBrush="{StaticResource TabItemBorderBrush}">
+        AncestorType={x:Type Syncfusion:DockingManager}}}" BorderBrush="{StaticResource TabItemBorderBrush}">
 
 <Border.ContextMenu>
 
@@ -995,7 +987,8 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 </Border>
 
 <Syncfusion:OpacityDockPanel LastChildFill="True"
-                             Opacity="{Binding Path=ContentOpacity, RelativeSource={RelativeSource TemplatedParent}}"/>
+                             Opacity="{Binding Path=ContentOpacity,
+                             RelativeSource={RelativeSource TemplatedParent}}"/>
 							 
 </ Canvas >
 
@@ -1058,7 +1051,7 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 
 <DataTrigger Binding="{Binding Path=IsSideButtonActive,
              RelativeSource={RelativeSource FindAncestor,
-			 AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+             AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1098,8 +1091,9 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
-             AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+<DataTrigger Binding="{Binding Path=IsSideButtonActive,
+            RelativeSource={RelativeSource FindAncestor,
+            AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1140,7 +1134,8 @@ To dock the DockWindow to the right side, RightDragProvider is used. It can be c
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+<DataTrigger Binding="{Binding Path=IsSideButtonActive,
+             RelativeSource={RelativeSource FindAncestor,
              AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
@@ -1180,7 +1175,8 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+<DataTrigger Binding="{Binding Path=IsSideButtonActive,
+             RelativeSource={RelativeSource FindAncestor,
              AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
@@ -1220,7 +1216,8 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+<DataTrigger Binding="{Binding Path=IsSideButtonActive,
+             RelativeSource={RelativeSource FindAncestor,
              AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
@@ -1321,14 +1318,18 @@ The header style for the MDI Document can be changed using the `DocumentMDIHeade
 	
 <Style TargetType="{x:Type syncfusion:DocumentHeader}">
 	
-<Setter Property="Background" Value="Maroon"></Setter><Setter Property="Foreground" Value="White"/>
+<Setter Property="Background" Value="Maroon"/>
+
+<Setter Property="Foreground" Value="White"/>
 	
 <Setter Property="HeaderTemplate">
 	
 <Setter.Value>
 	
 <DataTemplate >
+
 <TextBlock x:Name="Block" Text="Text1" />
+
 </DataTemplate>
 
 </Setter.Value>
@@ -1367,9 +1368,10 @@ Tabcontrol inside the Tabbed DockWindow can be customized using `TabControlStyle
 
 <Setter Property="Background" Value="Orange" />       
 
-<Setter Property="ItemContainerStyle" Value="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).
+<Setter Property="ItemContainerStyle"
+        Value="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).
         (Syncfusion:DockingManager.TabItemStyle), RelativeSource={RelativeSource
-		AncestorType={x:Type Syncfusion:DockedElementTabbedHost}}}" />
+        AncestorType={x:Type Syncfusion:DockedElementTabbedHost}}}" />
 
 </Style>
 
@@ -1416,7 +1418,8 @@ The style for the Tabbed children of DockingManager can be customized using the 
 <ContentControl Syncfusion:DockingManager.State="Dock" x:Name="Content1" Syncfusion:DockingManager.Header="Child1"/>
 
 <ContentControl Syncfusion:DockingManager.Header="Child2"
-	            Syncfusion:DockingManager.SideInDockedMode="Tabbed" Syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
+                Syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                Syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
 
 </Syncfusion:DockingManager>
 

@@ -107,9 +107,13 @@ BinaryFormatter formatter =  new BinaryFormatter();
 
 DockingManager1.SaveDockState(formatter, StorageFormat.Xml, "\\docking_xml.xml");
 
-SoapFormatter formatter1 = new SoapFormatter(); DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\\docking_xml_soap.xml"); 
+SoapFormatter formatter1 = new SoapFormatter();
 
-SoapFormatter formatter1 = new SoapFormatter(); DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\\docking_xml_soap.xml"); 
+DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\\docking_xml_soap.xml"); 
+
+SoapFormatter formatter1 = new SoapFormatter();
+
+DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\\docking_xml_soap.xml"); 
 
 
 {% endhighlight %}

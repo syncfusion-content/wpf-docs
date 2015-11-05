@@ -120,17 +120,19 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 {% highlight xml %}
 
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" syncfusion:DockingManager.Header="Dock1"   >
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" syncfusion:DockingManager.Header="Dock1">
 
 <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Dock1"/>
 
-<syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True" SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock2"  >
+<syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True"
+                           SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock2"  >
 
 <ContentControl syncfusion:DockingManager.Header="Dock2" syncfusion:DockingManager.DesiredWidthInDockedMode="600" />
 
 </syncfusion:DockingManager>
 
-<syncfusion:DockingManager x:Name="DockingManager3" UseDocumentContainer="True" SideInDockedMode="Bottom"  syncfusion:DockingManager.Header="Dock3">
+<syncfusion:DockingManager x:Name="DockingManager3" UseDocumentContainer="True"
+                           SideInDockedMode="Bottom"  syncfusion:DockingManager.Header="Dock3">
 
 <ContentControl syncfusion:DockingManager.Header="Dock3" syncfusion:DockingManager.DesiredWidthInDockedMode="600"/>
 
