@@ -10,9 +10,9 @@ documentation: ug
 
 State persistence is the combined process of serialization and deserialization. 
 
-DockingManager provides built-in state persistence functionality to save and load at different states and sides. And it also provides `DeleteDockState()` and `ResetState()` Method to work on state functionality.
+DockingManager provides built-in state persistence functionality to save and load at different states and sides. It also provides `DeleteDockState()` and `ResetState()` Method to work on state functionality.
 
-To reset the DockingManager state, set the `ResetState()` method for DockingManager instance.
+To reset the DockingManager state, call `ResetState()` method of DockingManager instance.
 
 {% highlight c# %}
 
@@ -21,7 +21,7 @@ DockingManager1.ResetState();
 
 {% endhighlight %}
 
-To delete the Dockstate of the DockingManager, set the `DeleteDockState()` for DockingManager instance
+To delete the Dockstate of the DockingManager, call `DeleteDockState()` of DockingManager instance
 
 {% highlight c# %}
 
@@ -54,13 +54,13 @@ void DockingManager1_Loaded(object sender, RoutedEventArgs e)
 
 ## Serialize a complex layout
 
-DockingManager allows you to save a complex layout also. For example, it also saves the complex layout like Nested DockingManager.
+DockingManager allows to save a complex layout also. For example, it also saves the complex layout like Nested DockingManager.
 
 ## Serialize the dynamically added children
 
-By default, DockingManager cannot serialize its Saved Layout, when its child collection is modified after DockState is saved. 
+By default, DockingManager cannot de-serialize its Saved Layout properly, when its child collection is modified after DockState is saved. 
 
-Since the DockingManager, the state persistance feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads only the same state of the DockingManager of the children collection, same as saved layout, so when any child collection changes dynamically, it results in an improper layout.
+Since the DockingManager state persistance feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 
 To save the dynamically added children, you can use dispatcher, but it has some limitations. For this case, you can maintain serialized files in application level and deserialize when needed.
 
