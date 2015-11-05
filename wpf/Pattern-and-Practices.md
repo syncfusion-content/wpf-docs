@@ -12,13 +12,15 @@ documentation: ug
 
 Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with build-in commands. 
 
-This section explains how to perform TabControlExt’s `selectionChanged` event, by create a Viewmodel and define a Model collection that is used to bind with the TabControl’s `ItemSource` property.
+This section explains how to perform TabControlExt’s `selectionChanged` event, by create a ViewModel and define a Model collection that is used to bind with the TabControl’s `ItemSource` property.
 
 XAML
 
 {% highlight xml %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">   <syncfusion:TabControlExt.ItemTemplate>
+<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">
+
+<syncfusion:TabControlExt.ItemTemplate>
 
 <DataTemplate>
 
@@ -43,12 +45,12 @@ private ObservableCollection<model> _tabcollection;
 
 public ObservableCollection<model> tabcollection
 {
-get
+    get
 	{
 	return _tabcollection;
 	}
 
-set
+    set
 	{
 	_tabcollection = value;
 	}
@@ -57,24 +59,20 @@ set
 private void Collection()
 
 {
+   model model = new model()
+   {
+	 HeaderName = "item1"
+   };
 
-model model = new model()
+   model model1 = new model()
+   {
+	 HeaderName = "item2"
+   };
 
-{
-	HeaderName = "item1"
-};
-
-model model1 = new model()
-
-{
-	HeaderName = "item2"
-};
-
-	model model2 = new model()
-
-{
-	HeaderName = "item3"
-};
+   model model2 = new model()
+   {
+	 HeaderName = "item3"
+   };
 	
 	tabcollection.Add(model);
 	tabcollection.Add(model1);
@@ -86,7 +84,8 @@ public ViewModel()
 {
 		tabcollection=new ObservableCollection<model>();
 		Collection();
-	}
+}
+
 }
 
 public class model:NotificationObject
@@ -97,28 +96,21 @@ public model() {}
 private string _headername;
 
 public string HeaderName
-
-	{
+{
 
 	get
-
-		{
-
+	{
 		return _headername;
-
-		}
+	}
 
 	set
-
-		{
-
+	{
 		_headername = value;
 
 		this.RaisePropertyChanged("HeaderName");
-
-		}
-
 	}
+
+}
 
 }
 
@@ -131,13 +123,14 @@ XAML
 
 {% highlight xml %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
+<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
+                          syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
 
 <syncfusion:TabControlExt.ItemTemplate>
 
 <DataTemplate>
 
-<TextBlock  Text="{Binding HeaderName}"></TextBlock>
+<TextBlock  Text="{Binding HeaderName}"/>
 
 </DataTemplate>
 
@@ -156,7 +149,7 @@ private ICommand selectionchanged;
 
 public ICommand SelectionChanged
 {
-get
+    get
 	{
 		return selectionchanged;
 	}
@@ -192,7 +185,9 @@ XAML
 
 {% highlight xml %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}" syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
+<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
+            syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
+			syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
 
 {% endhighlight %}
 
@@ -221,7 +216,10 @@ XAML
 
 {% highlight xml %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"  syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"  syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,RelativeSource={RelativeSource Self}}">
+<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
+            syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
+			syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,
+			RelativeSource={RelativeSource Self}}">
 
 
 {% endhighlight %}

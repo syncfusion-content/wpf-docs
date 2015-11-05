@@ -51,19 +51,23 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
 
 <!--Targeted to Docking Window1 on Top Side-->
 <ContentControl syncfusion:DockingManager.Header="Top"
-                syncfusion:DockingManager.SideInDockedMode= "Top" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
+                syncfusion:DockingManager.SideInDockedMode="Top"
+                syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
  <!--Targeted to DockingWindow1 on Right Side-->
 <ContentControl syncfusion:DockingManager.Header="Right"
-                syncfusion:DockingManager.SideInDockedMode= "Right" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
+                syncfusion:DockingManager.SideInDockedMode="Right"
+                syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
 <!--Targeted to DockingWindow1 on Left Side-->
 <ContentControl syncfusion:DockingManager.Header="Left"
-                syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
+                syncfusion:DockingManager.SideInDockedMode="Left"
+                syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
 <!--Targeted to DockingWindow to tab-->
 <ContentControl syncfusion:DockingManager.Header="Tabbed"
-                syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>      
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>      
 
 
 

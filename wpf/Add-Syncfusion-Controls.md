@@ -83,7 +83,7 @@ Dim dockingManager As New Syncfusion.Windows.Tools.Controls.DockingManager()
  
 {% endtabs %}
 
- 3.Add the DockingManager instace as the content of the Window (or required element). 
+ 3.Add the DockingManager instance as the content of the Window (or required element). 
  
 {% tabs %}
 

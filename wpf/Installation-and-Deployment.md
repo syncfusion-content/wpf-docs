@@ -75,14 +75,12 @@ While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.
 ![](Deployment_images/Deployment_img2.jpeg)
 
 
-Selecting Application Files for changing the status as `Include`
-
 ![](Deployment_images/Deployment_img3.jpeg)
 
 
 ### ClickOnce signing process
 
-Before publishing a ClickOnce application, ensure whether it is fully trusted, so that you can authenticate the information. The following steps are used for signing a ClickOnce application.
+Before publishing a ClickOnce application, ensure whether it is fully trusted. The following steps are used for signing a ClickOnce application.
 
 Signing ClickOnce involves two steps,
 
@@ -99,14 +97,14 @@ Navigate to project properties and select Signing tab. In the tab check “Sign 
 
 #### ClickOnce signing
 
-In the Publish tab, click “Options” and in the publish options dialog check “Use application manifest for trust information” under Manifest as in the following screenshot.
+In the Publish tab, click “Options” and check “Use application manifest for trust information” under Manifest in publish options dialog as in the following screenshot.
 
 ![](Deployment_images/Deployment_img5.jpeg)
 
 
 #### Publish options dialog box
 
-Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
+Before publishing, install the attached certificate in your machine. Follow the below steps for installing certificate in your machine.
 
 1. Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager.
 2. Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the .pfx to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing.
@@ -116,7 +114,7 @@ Before publishing, install the attached certificate in your machine and also fol
 
 The above process signs only deployment manifest. To sign the application executable, refer to the following steps.
 
-You can sign the application executable by using the Post-build command and use the signtool.exe as in the following command.
+Sign the application executable by using the Post-build command and use the signtool.exe as in the following command.
 
 {% highlight console %} 
 
@@ -129,7 +127,7 @@ N> Now, sign the exe inside obj folder and Syncfusion.pfx file placed inside Pro
 
 ## Installed Location
 
-The following table represents Assemblies or Samples and the installed location.
+The following table represents  installed location of Assemblies and Samples.
 
 <table>
 <tr>
