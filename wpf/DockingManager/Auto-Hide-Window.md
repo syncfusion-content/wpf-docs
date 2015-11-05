@@ -45,16 +45,20 @@ The AutoHidewindow can be placed on a required target window through the `Target
 <ContentControl syncfusion:DockingManager.Header="SolutionExplorer" x:Name="SolutionExplorer"/>
 
 <ContentControl syncfusion:DockingManager.Header="Server Explorer"
-                syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
 <ContentControl syncfusion:DockingManager.Header="ToolBox"
-                syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.SideInDockedMode="Right"
+                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
 <ContentControl syncfusion:DockingManager.Header="Output"
-                syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.SideInDockedMode="Bottom"
+                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
 <ContentControl syncfusion:DockingManager.Header="Properties"
-                syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
 
 </syncfusion:DockingManager>
 

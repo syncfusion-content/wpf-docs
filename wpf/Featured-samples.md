@@ -11,9 +11,9 @@ documentation: ug
 
 ## Guide to run the samples
 
-To run the samples, open the corresponding Dashboard from the following location:
+To run the samples, search it from Start by name of "Dashboard"
 
-From Windows 10: Start -> All Apps -> Syncfusion -> Syncfusion Dashboard {{ site.releaseversion }}
+![](Guidetorunthesamples_images/dashboardsearch.png)
 
 Else open the Dashboard from the following installed location:
 
