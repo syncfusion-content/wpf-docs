@@ -207,7 +207,8 @@ The float window allows to dock another float window inside it by default. This 
 
 <syncfusion:DockingManager x:Name="DockingManager1">
 
-<ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"
+<ContentControl syncfusion:DockingManager.Header="Item1"
+                syncfusion:DockingManager.State="Float"
                 syncfusion:DockingManager.CanDockonFloat="False"/>  
 
 </syncfusion:DockingManager>
@@ -287,8 +288,9 @@ The float window can be customized by setting FloatWindowHeaderBackground, Float
 
 {% highlight xml %}
 
-<syncfusion:DockingManager FloatWindowHeaderBackground="Brown" FloatWindowHeaderForeground="Blue" FloatWindowMouseOverBorderBrush="Orange"
-	                       FloatWindowSelectedHeaderBackground="pink" FloatWindowBorderBrush="Red" FloatWindowSelectedBorderBrush="BlueViolet" >
+<syncfusion:DockingManager FloatWindowHeaderBackground="Brown" FloatWindowHeaderForeground="Blue"
+                           FloatWindowMouseOverBorderBrush="Orange" FloatWindowSelectedHeaderBackground="pink"
+                           FloatWindowBorderBrush="Red" FloatWindowSelectedBorderBrush="BlueViolet" >
 
 <ContentControl syncfusion:DockingManager.Header="Float" syncfusion:DockingManager.State="Float"/>
 
@@ -405,7 +407,7 @@ To restrict resizing the height for the float and dock window respectively, set 
 
 {% highlight xml %}
 <ContentControl syncfusion:DockingManager.Header="Dockwindow" x:Name="Content1"
-	            syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.CanResizeHeightInDockedState="False"/>
+                syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.CanResizeHeightInDockedState="False"/>
 
 <ContentControl syncfusion:DockingManager.Header="Floatwindow" x:Name="Content2"
                 syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CanResizeHeightInFloatState="False"/>
@@ -418,11 +420,11 @@ To set the desired maximum width for the float and dock windows respectively, se
 
 {% highlight xml %}
 
-<ContentControl syncfusion:DockingManager.Header="Dockwindow" 
-	            syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.DesiredMaxWidthInDockedMode="1000"/>
+<ContentControl syncfusion:DockingManager.Header="Dockwindow"
+                syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.DesiredMaxWidthInDockedMode="1000"/>
 
 <ContentControl syncfusion:DockingManager.Header="Floatwindow"
-	            syncfusion:DockingManager.State="Float" syncfusion:DockingManager.DesiredMaxWidthInFloatingMode="600"/>                     
+                syncfusion:DockingManager.State="Float" syncfusion:DockingManager.DesiredMaxWidthInFloatingMode="600"/>                     
 
 
 
@@ -434,11 +436,11 @@ To set the desired maximum width for the float and dock windows respectively, se
 To set the maximum height for the float and dock windows respectively, set their properties `DesiredMaxHeightInDockedMode` and `DesiredMaxHeightInFloatingMode` with the desired values.
 
 {% highlight xml %}
-<ContentControl syncfusion:DockingManager.Header="Dockwindow"  
-	            syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.DesiredMaxHeightInDockedMode="300"/>
+<ContentControl syncfusion:DockingManager.Header="Dockwindow"
+                syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.DesiredMaxHeightInDockedMode="300"/>
 
 <ContentControl syncfusion:DockingManager.Header="Floatwindow"
-	            syncfusion:DockingManager.State="Float" syncfusion:DockingManager.DesiredMaxHeightInFloatingMode="200"/>
+                syncfusion:DockingManager.State="Float" syncfusion:DockingManager.DesiredMaxHeightInFloatingMode="200"/>
 
 {% endhighlight %}
 
@@ -457,7 +459,9 @@ The desired height and width can be set for the Dock windows through the propert
 
 <syncfusion:DockingManager x:Name="DockingManager1">  
 
-<ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.DesiredHeightInDockedMode="400" syncfusion:DockingManager.DesiredWidthInDockedMode="300"/>             
+<ContentControl syncfusion:DockingManager.Header="Item1"
+                syncfusion:DockingManager.DesiredHeightInDockedMode="400"
+                syncfusion:DockingManager.DesiredWidthInDockedMode="300"/>             
 
 </syncfusion:DockingManager>
 
@@ -472,8 +476,8 @@ To size the float window based on the children window size, set the property `Si
 
 {% highlight xml %}
 
-<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" 
-	            syncfusion:DockingManager.SizetoContentInFloat="True" Width="100" Height="24"/>             
+<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"
+                syncfusion:DockingManager.SizetoContentInFloat="True" Width="100" Height="24"/>             
 
 {% endhighlight %}
 
@@ -485,8 +489,8 @@ To size the Dock window based on the children window size, set the property `Siz
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" >
 
-<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" 
-	             syncfusion:DockingManager.SizetoContentInDock="True" Width="100" Height="24"/>
+<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"
+                syncfusion:DockingManager.SizetoContentInDock="True" Width="100" Height="24"/>
 
 </syncfusion:DockingManager>
 
@@ -575,8 +579,7 @@ To restrict the behavior of changing the Dockwindow to AutoHide when DockFill is
 <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1"/>   
 
 <ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2"
-
-syncfusion:DockingManager.State="Document"/> 
+                                  syncfusion:DockingManager.State="Document"/> 
 
 </syncfusion:DockingManager>
 
@@ -671,7 +674,7 @@ To collapse the default context menu in Dock state window, set the property `Col
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" >
 
-<ContentControl syncfusion:DockingManager.Header="DockWindow" x:Name="Content1" 
+<ContentControl syncfusion:DockingManager.Header="DockWindow" x:Name="Content1"
                 syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.CollapseDefaultContextMenuItemsInDock="True"/>
 
 </syncfusion:DockingManager>
@@ -687,7 +690,8 @@ To collapse the default context menu in Document state window, set the property 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
 	
 <ContentControl syncfusion:DockingManager.Header="DockWindow" x:Name="Content1"
-	           syncfusion:DockingManager.State="Document" syncfusion:DockingManager.CollapseDefaultContextMenuItemsInDocumentTab="True" /> 
+	           syncfusion:DockingManager.State="Document"
+               syncfusion:DockingManager.CollapseDefaultContextMenuItemsInDocumentTab="True" /> 
 
 </syncfusion:DockingManager>
 
@@ -695,8 +699,9 @@ To collapse the default context menu in Document state window, set the property 
 To collapse the default context menu in Float state window, set the property `CollapseDefaultContextMenuInFloat` as True. By default, its value is False.
 
 {% highlight xml %}
-<ContentControl syncfusion:DockingManager.Header="DockWindow" 
-	            syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CollapseDefaultContextMenuItemsInFloat="True"/>
+<ContentControl syncfusion:DockingManager.Header="DockWindow"
+                syncfusion:DockingManager.State="Float"
+                syncfusion:DockingManager.CollapseDefaultContextMenuItemsInFloat="True"/>
 
 
 {% endhighlight %}
