@@ -62,11 +62,9 @@ By default, DockingManager cannot de-serialize its Saved Layout properly, when i
 
 Since the DockingManager state persistance feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 
-To save the dynamically added children, you can use dispatcher, but it has some limitations. For this case, you can maintain serialized files in application level and deserialize when needed.
-
 ## Various formats to Save / Load states
 
-DockingManager allows you to save and load the Dockstates of windows in DockingManager in different format.
+DockingManager allows to save and load the Dockstates of windows in DockingManager in different format.
 
 Some of the formats are:
 
@@ -78,7 +76,7 @@ Some of the formats are:
 
 ### Load and save the Dockstate using Isolated Storage:
 
-DockingManager allows you to save and load the dockstate using isolated storage.  
+DockingManager allows to save and load the dockstate from isolated storage.  
 
 {% highlight c# %}
 
@@ -93,28 +91,9 @@ DockingManager1.ResetState();
 
 {% endhighlight %}
 
-### Save and Load using BinaryFormatter
-
-DockingManager allows you to save and load the state of the DockingManager using binary formatter.
-
-{% highlight c# %}
-
-// Shows the Load and save method performs in BinaryFormatter.
-
-BinaryFormatter formatter =  new BinaryFormatter();
-
-DockingManager1.LoadDockState(formatter);
-
-BinaryFormatter formatter =  new BinaryFormatter();
-
-DockingManager1.SaveDockState(formatter);
-
-
-{% endhighlight %}
-
 ### Save and Load using Xml file 
 
-DockingManager allows you to save and load the xml file. And it is done using binary formatter and sop formatter. The code example is as follows:
+DockingManager allows to save and load the xml file. It is done using binary formatter and soap formatter. The code example is below:
 
 {% highlight c# %}
 
@@ -136,9 +115,9 @@ SoapFormatter formatter1 = new SoapFormatter(); DocContainer.SaveDockState(forma
 {% endhighlight %}
 
 
-### Save and Load using Bin
+### Save and Load using Binary
 
-DockingManager allows you to load and save the dock state in the bin file. 
+DockingManager allows to load and save the dock state in the binary format file. 
 
 {% highlight c# %}
 
@@ -157,7 +136,7 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin")
 
 ### Save and Load using Xmlwriter 
 
-DockingManager allows you to load and save the dock state using XMLWriter.
+DockingManager allows to load and save the dock state using XMLWriter.
 
 {% highlight c# %}
 
