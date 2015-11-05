@@ -10,11 +10,11 @@ documentation: ug
 
 # Styling and Templates
 
-The UI for Dock, Float and Document windows of DockingManager can be changed using different styles and Templates.
+The UI for Dock, Float and Document windows of DockingManager can be changed using different Styles and Templates.
 
 ## Visual Styles
 
-When you want a rich and professional look and feel for the Dockwindows, you can apply the visual styles. Some of the available visual style are as follows:
+SkinManager provides rich and professional look and feel UI for the Dockwindows. Some of the available visual style are as follows:
 
 
 * Blend
@@ -29,7 +29,7 @@ When you want a rich and professional look and feel for the Dockwindows, you can
 * Transparent
 
 
-The visual style can be applied for the DockingManager using the property `VisualStyle` , an attached property of the `SkinStorage`.
+The visual style can be applied for the DockingManager using the property `VisualStyle` property of the `SkinStorage`.
 
 * Blend – Set the visual style as Blend for the DockingManager.
 
@@ -180,7 +180,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Transparent");
 
 ## Dock Window Style
 
-DockingManager allows you to set style for some of the Docking controls such as DockedHeaderPresenter, DockedElementTabbedHost. This is explained in detail under the DockHeaderStyle and DockedElementTabbedHostStyle section.
+DockingManager allows to set style for some of the Docking controls such as DockedHeaderPresenter, DockedElementTabbedHost. This is explained in detail under the DockHeaderStyle and DockedElementTabbedHostStyle section.
 
 ### AwlButtonTemplate
 
@@ -234,7 +234,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 ### CloseButtonTemplate
 
 
-The close button for the Docked window can be customized using the `CloseButtonTemplate`, and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
+The close button for the Docked window can be customized using the `CloseButtonTemplate` and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
 
 
 {% highlight xaml %}
@@ -281,7 +281,7 @@ syncfusion:DockingManager.Header="Child2"/>
 
 ### MenuButtonTemplate
 
-The context menu button appearance in the Dock window header can be customized using `MenuButtonTemplate` property by setting with the Target Type as `ToggleButton`.
+The context menu button appearance in the Dock window header can be customized using `MenuButtonTemplate` property by setting with the Target Type as ToggleButton.
 
 
 {% highlight xaml %}
@@ -335,7 +335,7 @@ The context menu button appearance in the Dock window header can be customized u
 
 ### MinimizeButton Template
 
-The minimize button for the dock window can be customized using the `MinimizeButtonTemplate` by setting with the TargetType as `ToggleButton`.
+The minimize button for the dock window can be customized using the `MinimizeButtonTemplate` by setting with the TargetType as ToggleButton.
 
 {% highlight xaml %}
 
@@ -382,7 +382,7 @@ The minimize button for the dock window can be customized using the `MinimizeBut
 
 ### MaximizeButtonTemplate
 
-The maximize button for the dock window can be customized using the `MaximizeButtonTemplate` property with the TargetType as `ToggleButton`.
+The maximize button for the dock window can be customized using the `MaximizeButtonTemplate` property with the TargetType as ToggleButton.
 
 {% highlight xaml %}
 
@@ -430,7 +430,7 @@ The maximize button for the dock window can be customized using the `MaximizeBut
 
 ### RestoreButtonTemplate 
 
-The Restore button for the dock window can be customized using the `RestoreButtonTemplate` property with the TargetType as `ToggleButton`.
+The Restore button for the dock window can be customized using the `RestoreButtonTemplate` property with the TargetType as ToggleButton.
 
 {% highlight xaml %}
 
@@ -483,7 +483,7 @@ The Restore button for the dock window can be customized using the `RestoreButto
 
 ### TabItemTemplate
 
-DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its tabitem template can be customized using `TabItemTemplate` with the TargetType as `TabItem`.
+DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its tabitem template can be customized using `TabItemTemplate` with the TargetType as TabItem.
 
 
 {% highlight xaml %}
@@ -578,7 +578,7 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 
 ### DockedElementTabbedHostStyle
 
-The DockedElementTabbedHost can be customized using the DockedElementTabbedHostStyle with the TargetType as DockedElementTabbedHost
+The DockedElementTabbedHost can be customized using the `DockedElementTabbedHostStyle` with the TargetType as DockedElementTabbedHost
 
 {% highlight xaml %}
 
@@ -672,7 +672,7 @@ The header of the dock window can be customized using the property `DockHeaderSt
 ### DockWindowContextMenuItemStyle
 
 
-The context menu of DockingManager can be customized using the DockWindowContextMenuItemStyle by setting its Target Type as `CustomMenuItem`
+The context menu of DockingManager can be customized using the `DockWindowContextMenuItemStyle` by setting its Target Type as CustomMenuItem.
 
 
 
@@ -811,7 +811,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 ### FloatWindowStyle
 
-The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as `AutoTemplatedContentControl`. It gets or sets the style for the floatwindow when it is rendered.
+The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as AutoTemplatedContentControl. It gets or sets the style for the floatwindow when it is rendered.
 
 {% highlight xml %}
 
@@ -899,10 +899,11 @@ The template of the SideTabItem of the DockingManager can be customized using th
         Background="{Binding Path=(TabItem.Content).(Syncfusion:DockingManager.Icon), 
 		RelativeSource={RelativeSource TemplatedParent}}" />
 
-<ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center" 
-	    ContentSource="Header" Margin="2,2,2,2" RecognizesAccessKey="True"
-        ContentTemplate="{Binding Path=(Border.DataContext).(Syncfusion:DockingManager.HeaderTemplate), ElementName=Border}"
-		ContentTemplateSelector="{StaticResource TabItemTrimmingTemplate}" TextBlock.Foreground="{StaticResource Default.TabForeground}"/>
+<ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center"
+                  ContentSource="Header" Margin="2,2,2,2" RecognizesAccessKey="True"
+				  ContentTemplate="{Binding Path=(Border.DataContext).(Syncfusion:DockingManager.HeaderTemplate),
+				  ElementName=Border}" ContentTemplateSelector="{StaticResource TabItemTrimmingTemplate}"
+				  TextBlock.Foreground="{StaticResource Default.TabForeground}"/>
 
 </DockPanel>
 
@@ -923,7 +924,7 @@ The template of the SideTabItem of the DockingManager can be customized using th
 
 ### SideItemStyle
 
-The style for the sideTabItem can be changed using `SideItemStyle`, by settings its TargetType as TabItem
+The style for the sideTabItem can be changed using `SideItemStyle` by settings its TargetType as TabItem
 
 {% highlight xaml %}
 
@@ -980,19 +981,24 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 	
 <Border Name="PART_BorderName"  Height="{TemplateBinding ActualHeight}" Width="{TemplateBinding ActualWidth}"
         Margin="0" ClipToBounds="True" Background="Orange"Panel.ZIndex="1" KeyboardNavigation.TabIndex="1"
-        BorderThickness="{Binding Path=SidePanelBorderThickness, RelativeSource={RelativeSource FindAncestor, 
+        BorderThickness="{Binding Path=SidePanelBorderThickness, RelativeSource={RelativeSource FindAncestor,
 		AncestorType={x:Type Syncfusion:DockingManager}}}" BorderBrush="{StaticResource TabItemBorderBrush}">
 
 <Border.ContextMenu>
+
 <ContextMenu Style="{StaticResource SideContextMenuStyle}" ItemsSource="{TemplateBinding TabChildren}"/>
+
 </Border.ContextMenu>
 
 <Syncfusion:DirectTabPanel Name="PART_PanelName" KeyboardNavigation.TabNavigation="Local" IsItemsHost="True"/>
 
 </Border>
 
-<Syncfusion:OpacityDockPanel LastChildFill="True" Opacity="{Binding Path=ContentOpacity, RelativeSource={RelativeSource TemplatedParent}}"/>
+<Syncfusion:OpacityDockPanel LastChildFill="True"
+                             Opacity="{Binding Path=ContentOpacity, RelativeSource={RelativeSource TemplatedParent}}"/>
+							 
 </ Canvas >
+
 </ControlTemplate>
 
 {% endhighlight %}
@@ -1018,8 +1024,10 @@ The style for the sidepanel of the DockingManager can be customized using the `S
 	  
 </syncfusion:DockingManager.SidePanelStyle>
 
-<ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="AutoHidden"/> 
+<ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="AutoHidden"/>
+
 <ContentControl syncfusion:DockingManager.Header="Child2"syncfusion:DockingManager.State="Document"/>
+
 <ContentControl syncfusion:DockingManager.Header="Child3"syncfusion:DockingManager.State="Document"/> 
 	
 </syncfusion:DockingManager>
@@ -1030,9 +1038,7 @@ The style for the sidepanel of the DockingManager can be customized using the `S
 
 ## Drag Provider Style
 
-DragProviders are those that appear while dragging a window. It allows you to drag the window to the left, right, top and bottom using the respective drag providers.
-
-DragProviders are displayed for providing options to dock the floatwindow while dragging and this drag provider button templates can be changed by the following templates.
+DragProviders are appear while dragging a window. DragProviders are displayed for providing options to dock the floatwindow while dragging and this drag provider button templates can be changed by the following templates.
 
 ### BottomDragProvider
 
@@ -1050,8 +1056,9 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, 
-	        RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+<DataTrigger Binding="{Binding Path=IsSideButtonActive,
+             RelativeSource={RelativeSource FindAncestor,
+			 AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1081,7 +1088,7 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 The LeftDragProvider is used to dock the dock window to the left side and it can be customized using the `LeftDragProvider` property that helps to customize the template for the Left DragProvider by setting its Target as ContentControl. The same has been explained below:
 
 {% highlight xaml %}
-<syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
 
 <syncfusion:DockingManager.LeftDragProvider>
 
@@ -1091,8 +1098,8 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, 
-	RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+             AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1119,7 +1126,7 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 
 ### RightDragProvider
 
-To dock the DockingManager to the right side, the RightDragProvider is used and it can be customized using the `RightDragProviderTemplate` with the TargetType as ContentControl.
+To dock the DockWindow to the right side, RightDragProvider is used. It can be customized using the `RightDragProviderTemplate` with the TargetType as ContentControl.
 
 {% highlight xaml %}
 
@@ -1133,8 +1140,8 @@ To dock the DockingManager to the right side, the RightDragProvider is used and 
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, 
-	RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+             AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1159,7 +1166,7 @@ To dock the DockingManager to the right side, the RightDragProvider is used and 
 
 ### TopDragProvider
 
-To dock the DockingManager at the top, the TopDragProvider is used and it can be customized using the `TopDragProviderTemplate` with the TargetType as ContentControl.
+To dock the DockWindow at top, the TopDragProvider is used. It can be customized using the `TopDragProviderTemplate` with the TargetType as ContentControl.
 
 {% highlight xaml %}
 
@@ -1173,8 +1180,8 @@ To dock the DockingManager at the top, the TopDragProvider is used and it can be
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, 
-	RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+             AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1199,7 +1206,7 @@ To dock the DockingManager at the top, the TopDragProvider is used and it can be
 
 ### CenterDragProvider
 
-CenterDragProvider is used to dock the children of the DockingManager at the center Position and its template can be customized using the property CenterDragProvider.
+CenterDragProvider is used to dock the children of the DockingManager at the center Position and its template can be customized using the property `CenterDragProvider`.
 
 {% highlight xaml %}
 
@@ -1213,8 +1220,8 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 <ControlTemplate.Triggers>
 
-<DataTrigger Binding="{Binding Path=IsSideButtonActive, 
-	RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+<DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor,
+             AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
 
 <Setter TargetName="Img" Property="Source" Value="Images\synclogo.png"/>
 
@@ -1239,7 +1246,7 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 ## DocumentTabControlStyle
 
-Document state in DockingManager used the DocumentTabControl. To customize the Document in the DockingManager the `DocumentTabControlStyle` property is used by setting its TargetType as DocumentTabControl.
+Document state in DockingManager used the DocumentTabControl and its style can be customized using `DocumentTabControlStyle` with the TargetType as DocumentTabControl.
 
 {% highlight xaml %}
 
@@ -1304,7 +1311,7 @@ Each Document TabItem in DockingManager constructed by the TabItemExt and its st
 
 ## DocumentMDIHeaderStyle
 
-The header style for the Document MDI can be changed using the `DocumentMDIHeaderStyle` with the TargetType as DocumentHeader.
+The header style for the MDI Document can be changed using the `DocumentMDIHeaderStyle` with the TargetType as DocumentHeader.
 
 {% highlight xaml %}
 
@@ -1333,7 +1340,9 @@ The header style for the Document MDI can be changed using the `DocumentMDIHeade
 </syncfusion:DockingManager.DocumentMDIHeaderStyle>
 
 <ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="Document"/>
+
 <ContentControl syncfusion:DockingManager.Header="Child2" syncfusion:DockingManager.State="Document"/>
+
 <ContentControl syncfusion:DockingManager.Header="Child3" syncfusion:DockingManager.State="Document"/>
 	
 </syncfusion:DockingManager>
@@ -1346,7 +1355,7 @@ The header style for the Document MDI can be changed using the `DocumentMDIHeade
 
 ## TabControl style
 
-Tabcontrol inside the DockWindow for Tabbed side Windows can be customized using `TabControlStyle` with the TargetType as TabControl in the DockingManager
+Tabcontrol inside the Tabbed DockWindow can be customized using `TabControlStyle` with the TargetType TabControl in the DockingManager
 
 {% highlight xaml %}
 
@@ -1359,8 +1368,8 @@ Tabcontrol inside the DockWindow for Tabbed side Windows can be customized using
 <Setter Property="Background" Value="Orange" />       
 
 <Setter Property="ItemContainerStyle" Value="{Binding Path=(Syncfusion:DockedElementTabbedHost.DockingManager).
-	    (Syncfusion:DockingManager.TabItemStyle), 
-		RelativeSource={RelativeSource  AncestorType={x:Type Syncfusion:DockedElementTabbedHost}}}" />
+        (Syncfusion:DockingManager.TabItemStyle), RelativeSource={RelativeSource
+		AncestorType={x:Type Syncfusion:DockedElementTabbedHost}}}" />
 
 </Style>
 
@@ -1368,8 +1377,9 @@ Tabcontrol inside the DockWindow for Tabbed side Windows can be customized using
 
 <ContentControl Syncfusion:DockingManager.State="Dock" Syncfusion:DockingManager.Header="Child1" />
 
-<ContentControl Syncfusion:DockingManager.Header="Child2" Syncfusion:DockingManager.SideInDockedMode="Tabbed"
-	              Syncfusion:DockingManager.TargetNameInDockedMode="Content1">
+<ContentControl Syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                Syncfusion:DockingManager.Header="Child2" Syncfusion:DockingManager.TargetNameInDockedMode="Content1">
+				
 </ContentControl>
 
 </Syncfusion:DockingManager>
