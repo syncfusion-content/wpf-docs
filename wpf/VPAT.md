@@ -57,9 +57,9 @@ Section 1194.21 Software Applications and Operating Systems - Detail Voluntary P
 
 <table>
 <tr>
-<th>
-CRITERIA<br/><br/></th><th>
-SUPPORTING FEATURES<br/><br/></th><th>
+<th style="width:50%">
+CRITERIA<br/><br/></th><th style="width:10%">
+SUPPORTING FEATURES<br/><br/></th><th style="width:40%">
 EXPLANATIONS<br/><br/></th></tr>
 <tr>
 <td>
@@ -127,9 +127,9 @@ This criterion does not apply to Essential Studio for WPF controls.<br/><br/></t
 
 <table>
 <tr>
-<th>
-CRITERIA<br/><br/></th><th>
-SUPPORTING FEATURES<br/><br/></th><th>
+<th style="width:50%">
+CRITERIA<br/><br/></th><th style="width:10%">
+SUPPORTING FEATURES<br/><br/></th><th style="width:40%">
 REMARKS AND EXPLANATIONS<br/><br/></th></tr>
 <tr>
 <td>
@@ -167,9 +167,9 @@ Essential Studio for WPF controls provide functionality that conforms to these c
 
 <table>
 <tr>
-<th>
-Criteria<br/><br/></th><th>
-Supporting Features<br/><br/></th><th>
+<th style="width:50%">
+Criteria<br/><br/></th><th style="width:10%">
+Supporting Features<br/><br/></th><th style="width:40%">
 Remarks and explanations<br/><br/></th></tr>
 <tr>
 <td>
