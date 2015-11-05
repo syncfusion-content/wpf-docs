@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Tabbed Window
 
-To make the children as Tabbed windows, you can use the TargetName and set the side value as `Tabbed` using the property `SideInDockedMode`.
+Child window can be arranged as Tabbed windows by setting TargetName and side value as `Tabbed` using the property `SideInDockedMode`.
 
 ![](TabbedWindow_images/TabbedWindow_img1.jpeg)
 
