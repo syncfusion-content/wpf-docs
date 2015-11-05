@@ -17,11 +17,11 @@ By default, the document state window is in TDI mode, that display child as tabb
 
 {% highlight xaml %}
 
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True"  ContainerMode="TDI">        
+<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI">        
 
 <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Document1" />   
 
-<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document" /> 
+<ContentControl syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document" /> 
 
 </syncfusion:DockingManager>
 
@@ -34,7 +34,7 @@ To make the document child window as MDI document, set the `ContainerMode` as `M
 
 {% highlight xaml %}
 
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True"  ContainerMode="MDI">        
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="MDI">        
 
 <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document"/>   
 
@@ -230,7 +230,8 @@ To enable or disable closing functionality of the MDI windows, set `CanClose` an
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="MDI"> 
 
-<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1"  syncfusion:DockingManager.State="Document" syncfusion:DockingManager.CanClose="False"/>   
+<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1"
+                syncfusion:DockingManager.State="Document" syncfusion:DockingManager.CanClose="False"/>   
 
 </syncfusion:DockingManager>
 
@@ -290,9 +291,9 @@ Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the 
 
 <ContentControl syncfusion:DockingManager.Header="Item1"
                 syncfusion:DockingManager.State="Document"
-				syncfusion:DockingManager.ShowCloseMenuItem="False"
-				syncfusion:DockingManager.ShowCloseAllMenuItem="False"
-				syncfusion:DockingManager.ShowCloseAllButThisMenuItem="False"/>                                                 
+                syncfusion:DockingManager.ShowCloseMenuItem="False"
+                syncfusion:DockingManager.ShowCloseAllMenuItem="False"
+                syncfusion:DockingManager.ShowCloseAllButThisMenuItem="False"/>                                                 
 
 
 <ContentControl syncfusion:DockingManager.Header="Item2"  

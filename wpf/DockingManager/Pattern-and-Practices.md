@@ -224,6 +224,7 @@ Title="MainWindow" Height="350" Width="525">
 <Grid>
 
 <syncfusion:DockingManager prsm:RegionManager.RegionName="MainRegion"  DockFill="True">
+
 </syncfusion:DockingManager>
 
 </Grid>
