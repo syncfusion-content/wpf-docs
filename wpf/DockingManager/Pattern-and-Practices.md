@@ -10,9 +10,9 @@ documentation: ug
 
 ## MVVM 
 
-This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Itemscontrol, it is not possible to have a traditional `Itemsource` binding to a collection of objects in the view model. This can, however, be achieved by creating a wrapper or adapter for the DockingManager.
+This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Itemscontrol, it is not possible to have a traditional `Itemsource` binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the DockingManager.
 
-Here a simple text-reader application is used to demonstrate this approach. Example:
+Here a simple text-reader application is used to demonstrate this approach.
 
 ![](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
@@ -27,7 +27,7 @@ Here a simple text-reader application is used to demonstrate this approach. Exam
 
 
 ### Docking Adapter
-The adapter is simply a user control that contains docking manager as its content. The adapter has two properties— ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: a Content control, in the docking manager, setting the underlying data context of the control to the business model.
+The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
 
 {% highlight xml %}
 
@@ -43,23 +43,23 @@ The adapter is simply a user control that contains docking manager as its conten
 ![](PatternandPractices_images/PatternandPractices_img3.jpeg)
 
 
-The text-reader application maintains a collection of workspaces. A workspace can be a normal dock pane or a document pane. The adapter also maintains an interface called __IDockElement____,__ that maintains basic attributes needed for every dock element.
+The text-reader application maintains a collection of workspaces. A workspace can be a normal dock pane or a document pane. The adapter also maintains an interface called `IDockElement` that maintains basic attributes needed for every dock element.
 
 The text-reader application is just for the sample and contains very basic operations.
 
 This article and sample intend to showcase the MVVM support for the docking manager.
-The adapter user control also determines the state of the element, whether it should be added to the docking manager as a dock element or document tab.
+The adapter user control also determines the state of the element, whether it should be added to the DockingManager as a dock element or document tab.
 
 The adapter can be further customized to add elements as floating or auto-hidden.
 
-The docking manager provides an `ActiveWindowChanged` event. Using this, the `ActiveDocument` property in the adapter needs to be updated every time focus changes to other panes.
+The DockingManager provides an `ActiveWindowChanged` event. Using this, the `ActiveDocument` property in the adapter needs to be updated every time focus changes to other panes.
 
 ### Application structure
 
 ![](PatternandPractices_images/PatternandPractices_img4.jpeg)
 
 
-The view model has a collection of workspaces that is data-bound to the `ItemsSource` property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the docking manager.
+The view model has a collection of workspaces that is data-bound to the `ItemsSource` property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
 
 Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
@@ -114,7 +114,7 @@ Following this approach, the docking adapter can also be treated as a normal ite
 
 ## Practice with PRISM
 
-The following steps help you create sample project in the PRISM.
+The following steps helps to create sample project in the PRISM.
 
 1.Create a New WPF project and add the following references to the solution project.
 
@@ -129,7 +129,10 @@ Microsoft.Practices.ServiceLocation.dll
 Microsoft.Practices.Unity.dll
 
 2.Rename MainWindow to Shell in the Project.
-3.Add new class called Bootstrapper.cs to initialize the prism application. Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShell method.
+
+3.Add new class called Bootstrapper.cs to initialize the prism application.
+
+Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShell method.
 
 {% highlight c# %}
 
