@@ -293,7 +293,9 @@ On mouse over the AutoHidden tab, the autohide animation starts. To disable this
 
 <syncfusion:DockingManager IsAnimationEnabledOnMouseOver="False">
 
-<ContentControl x:Name="AutoHideWindow1" syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden" />
+<ContentControl x:Name="AutoHideWindow1"
+                syncfusion:DockingManager.Header="SolutionExplorer"
+                syncfusion:DockingManager.State="AutoHidden" />
 
 </syncfusion:DockingManager>
 
