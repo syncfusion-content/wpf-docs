@@ -47,9 +47,9 @@ To persist the Ribbon States at application exit and load, use AutoPersist prope
 
 The following code snippet shows how to handle the property in Ribbon elements.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow
 
@@ -81,6 +81,8 @@ Title="MainWindow" Height="350" Width="525" AutoPersist="True" x:Name="RibbonWin
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Persist Ribbon States any time while running the application
 
 WPF Ribbon control supports the persistence of its states any time while running the application. Ribbon states can be saved and loaded at any time by using Ribbon methods. 
@@ -92,9 +94,9 @@ The methods to save and load the current Ribbon states are:
 
 Before calling the methods, it is important to specify the persisting Ribbon elements in `PersistElements` collection.This collection can be changed at any time. Save and Load states at runtime are fully based on this collection details. The following code snippet shows how to add Ribbon elements that are required to retain its state.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void RibbonWindow_Loaded(object sender, RoutedEventArgs e)
 
@@ -110,6 +112,22 @@ this.MyRibbon.PersistElements.Add(RibbonElements.QuickAccessToolbar);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub RibbonWindow_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+Me.MyRibbon.PersistElements.Add(RibbonElements.Ribbon)
+
+Me.MyRibbon.PersistElements.Add(RibbonElements.RibbonWindow)
+
+Me.MyRibbon.PersistElements.Add(RibbonElements.QuickAccessToolbar)
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Saving Ribbon States
 
 Ribbon State can be saved and loaded dynamically at run time. To save the current Ribbon State, use `SaveRibbonState` method in Ribbon.
@@ -123,9 +141,9 @@ This method has two overloaded methods for customizing the Save state process as
 
 In the first method, there are no parameters. It will save the current state of the Ribbon Control to the default Isolated Storage file, which is built in the source.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void SaveRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -137,27 +155,49 @@ this.MyRibbon.SaveRibbonState();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub SaveRibbonState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+Me.MyRibbon.SaveRibbonState()
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 To store the current Ribbon State in the custom Isolated Storage file, use the second overloaded method. This method has two arguments namely IsolatedStorageFile and storeFileName.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void SaveRibbonState_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User
-
-|IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.SaveRibbonState(storage,"Customfilename.dat");
 
 }
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub SaveRibbonState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.SaveRibbonState(storage,"Customfilename.dat")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Loading Ribbon States
 
@@ -169,9 +209,9 @@ Load state process is also having the similar procedures of save states. We can 
 
 The first method with no arguments will load the Ribbon State from the last saved state in the default Isolated Storage file, which is stored by the SaveRibbonState method.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -183,21 +223,29 @@ this.MyRibbon.LoadRibbonState();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub LoadRibbonState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+Me.MyRibbon.LoadRibbonState()
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The second overloaded method will load the Ribbon State from the given file name in the mentioned Isolated Storage file.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User
-
-|IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.LoadRibbonState(storage, "Customfilename.dat");
 
@@ -205,23 +253,33 @@ this.MyRibbon.LoadRibbonState(storage, "Customfilename.dat");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub LoadRibbonState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.LoadRibbonState(storage, "Customfilename.dat")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Save and Load many Ribbon States
 
 Ribbon control states can easily be maintained in the Isolated Storage files. Further, It supports to Save the consecutive or different states of the Ribbon control in different Isolated Storage files and also load any saved state from the Isolated Storage files which is in old state. To save the different states of the Ribbon control at various times, use the below code
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void SaveLevel1State_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
-
-IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.SaveRibbonState(storage,"RibbonState1.dat");
 
@@ -231,11 +289,7 @@ private void SaveLevel2State_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
-
-IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.SaveRibbonState(storage, "RibbonState2.dat");
 
@@ -245,11 +299,7 @@ private void SaveLevel3State_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
-
-IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.SaveRibbonState(storage, "RibbonState3.dat");
 
@@ -257,21 +307,47 @@ this.MyRibbon.SaveRibbonState(storage, "RibbonState3.dat");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub SaveLevel1State_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.SaveRibbonState(storage,"RibbonState1.dat")
+
+End Sub
+
+Private Sub SaveLevel2State_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.SaveRibbonState(storage, "RibbonState2.dat")
+
+End Sub
+
+Private Sub SaveLevel3State_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.SaveRibbonState(storage, "RibbonState3.dat")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 After saving the different states of the Ribbon Control, load the Ribbon state to any of the old states. The following code snippet explains the implementation.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void LoadLevel1State_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
-
-IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.LoadRibbonState(storage, "RibbonState1.dat");
 
@@ -281,11 +357,7 @@ private void LoadLevel2State_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
-
-IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.LoadRibbonState(storage, "RibbonState2.dat");
 
@@ -295,17 +367,43 @@ private void LoadLevel3State_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
-
-IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.LoadRibbonState(storage, "RibbonState3.dat");
 
 }
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub LoadLevel1State_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.LoadRibbonState(storage, "RibbonState1.dat")
+
+End Sub
+
+Private Sub LoadLevel2State_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.LoadRibbonState(storage, "RibbonState2.dat")
+
+End Sub
+
+Private Sub LoadLevel3State_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.LoadRibbonState(storage, "RibbonState3.dat")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Persisting Ribbon States by XML Writer
 
@@ -316,9 +414,9 @@ The WPF Ribbon control supports state persistence in the xml file created by the
 
 The following code illustrates this 
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="PART_Ribbon" VerticalAlignment="Top">
 
@@ -370,9 +468,11 @@ The following code illustrates this
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 private const string SaveLocation = @"D:\temp1.xml";
 
@@ -416,14 +516,50 @@ this.PART_Ribbon.SaveRibbonState(writer);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Const SaveLocation As String = "D:\temp1.xml"
+
+Private Sub OnLoadDisk(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+If Not File.Exists(SaveLocation) Then
+
+Return
+
+End If
+
+Using reader = New StringReader(File.ReadAllText(SaveLocation))
+
+Me.PART_Ribbon.LoadRibbonState(reader)
+
+End Using
+
+End Sub
+
+Private Sub OnSaveDisk(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+Using stream = New FileStream(SaveLocation, FileMode.Create)
+
+Using writer = XmlWriter.Create(stream)
+
+Me.PART_Ribbon.SaveRibbonState(writer)
+
+End Using
+End Using
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Reset Ribbon States
 
 To load the Normal (Initial) Ribbon state at runtime call the ResetRibbonState method.This is a parameter less method. This will load the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
 
+{% tabs %}
 
-{% highlight c# %}
-
-[C#]
+{% highlight C# %}
 
 private void ResetState_Click(object sender, RoutedEventArgs e)
 
@@ -435,6 +571,18 @@ this.MyRibbon.ResetRibbonState();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub ResetState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+Me.MyRibbon.ResetRibbonState()
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ## Delete Ribbon States
 
@@ -445,9 +593,9 @@ To delete the unused saved Isolated Storage files, use the DeleteRibbonState met
 
 The first overloaded method will delete the default saved file from the default Isolated Storage file location. The following code snippet shows how to delete the default saved file.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void DeleteRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -459,25 +607,47 @@ this.MyRibbon.DeleteRibbonState();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub DeleteRibbonState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+Me.MyRibbon.DeleteRibbonState()
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The second overloaded method is used to delete any file from specified Isolated Storage location. The following code snippet shows how to delete any file from the Isolated Storage location.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 private void DeleteRibbonState_Click(object sender, RoutedEventArgs e)
 
 {
 
-IsolatedStorageFile storage =
-
-IsolatedStorageFile.GetStore(IsolatedStorageScope.User
-
-|IsolatedStorageScope.Assembly, null, null);
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
 
 this.MyRibbon.DeleteRibbonState(storage,"RibbonState1.dat");
 
 }
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub DeleteRibbonState_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+IsolatedStorageFile storage = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or IsolatedStorageScope.Assembly, null, null)
+
+Me.MyRibbon.DeleteRibbonState(storage,"RibbonState1.dat")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
 

@@ -14,9 +14,9 @@ Ribbon control have touch support and it provides Touch UI which is easy to acce
 
 To enable touch in the RibbonWindow, set `EnableTouch` property of the SkinStorage as `True`. The following code snippet illustrates this
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow
 
@@ -30,12 +30,22 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetEnableTouch(_ribbonWindow, true);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetEnableTouch(_ribbonWindow, True)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](TouchSupport_images/TouchSupport_img1.jpeg)

@@ -12,9 +12,9 @@ documentation: ug
 
 The following code example illustrates how to use `RibbonCheckBox` control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -40,23 +40,34 @@ The following code example illustrates how to use `RibbonCheckBox` control in Ri
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 Create instance of RibbonCheckBox and add it to RibbonBar Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 RibbonCheckBox _ribbonCheckBox = new RibbonCheckBox(){Content = "SelectAll", IsChecked=true };
 
 _ribbonBar2.Items.Add(_ribbonCheckBox);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonCheckBox As New RibbonCheckBox() With {
+	.Content = "SelectAll",
+	.IsChecked=True
+}
+
+_ribbonBar2.Items.Add(_ribbonCheckBox)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonCheckBox_images/RibbonCheckBox_img1.jpeg)
 

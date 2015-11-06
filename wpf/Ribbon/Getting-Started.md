@@ -21,7 +21,9 @@ There are several ways to add Syncfusion control in to Visual Studio WPF project
   
 * Include an xml namespace for the above assemblies to the Main window.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Window
 
@@ -35,9 +37,13 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Change the Window as `RibbonWindow`.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow
 
@@ -53,9 +59,13 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Add following namespace and Inherit MainWindow from RibbonWindow in code behind.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 using Syncfusion.Windows.Tools.Controls;
 
@@ -65,9 +75,21 @@ public partial class MainWindow : RibbonWindow
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Imports Syncfusion.Windows.Tools.Controls
+
+Public class As partial
+
+{% endhighlight %}
+
+{% endtabs %}
+
 * Now, Add the Ribbon control with a required optimal name, using the included namespace in XAML.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow
 
@@ -89,19 +111,32 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Creating control in code behind
 
 To create Ribbon control in code behind create instance of Ribbon control and add it to window.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 Ribbon _ribbon = new Ribbon();
 
 this.AddChild(_ribbon);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbon As New Ribbon()
+
+Me.AddChild(_ribbon)
 
 {% endhighlight %}
+
+{% endtabs %}
+
 
 ## Setting Visual Style of Ribbon
 
@@ -109,7 +144,10 @@ Essential Tools WPF support to set the `VisualStyle` for the Ribbon control to e
 
 Here Microsoft `Office2013` style applied to Ribbon Control.
 
-{% highlight xml %}
+
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -132,6 +170,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
@@ -139,7 +180,12 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 Ribbon control accept `RibbonTab` as children, Here four `RibbonTab` added and that further can customize with `RibbonBar` and `RibbonItems`.
 
-{% highlight xml %}
+
+
+{% tabs %}
+
+{% highlight XAML %}
+
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -172,6 +218,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
 
@@ -179,7 +228,10 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 RibbonTab accepts RibbonBar as children, here five RibbonBar Controls are added inside HOME RibbonTab. You can set the header of RibbonBar using `Header` property of RibbonBar.
 
-{% highlight xml %}
+
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -224,6 +276,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
@@ -231,7 +286,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 RibbonButton provides functionalities like normal Button, Here a RibbonButton control is added inside the `New` RibbonBar.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">                    
 
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
@@ -242,9 +299,14 @@ RibbonButton provides functionalities like normal Button, Here a RibbonButton co
 
 {% endhighlight %}
 
+
+{% endtabs %}
+
 Also you can add several other Ribbon Button as per the requirement  
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -309,6 +371,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
@@ -318,7 +382,9 @@ DropDownButton in the Ribbon instance contains a drop arrow. When clicked on it,
 
 DropDownButton accepts DropDownMenuItem as its children, Here DropDownButton control is added inside the “New“ RibbonBar.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -397,6 +463,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img5.jpeg)
 
 
@@ -407,7 +475,10 @@ SplitButton in the Ribbon instance contains a drop arrow. When clicked on it, th
 
 SplitButton accepts DropDownMenuItem as its children like DropDownButton, Here splitbuttons are added inside the “Delete” RibbonBar and “Respond” RibbonBar.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
+
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -504,6 +575,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img6.jpg)
 
 
@@ -518,7 +591,9 @@ Using the RibbonGallery control in Ribbon, items are displayed with good look an
 
 Here RibbonGallery control added inside the “QuickSteps” RibbonBar. `ItemHeight`, `ItemWidth` properties are used to set height and width of RibbonGalleryItem.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -631,6 +706,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img7.jpeg)
 
 
@@ -641,7 +718,9 @@ RibbonComboBox control is used to display the list of items in Ribbon instance. 
 
 Add items to RibbonComboBox using ComboBoxItem. Here RibbonComboBox is added inside the “Find” RibbonBar.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -766,6 +845,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 
 ## Adding QAT
@@ -774,7 +855,10 @@ QuickAccessToolbar in the Ribbon instance is used to group the frequently used c
 
 The following code example illustrates how to add QuickAccessToolBar in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
+
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -905,6 +989,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img8.jpg)
 
 
@@ -912,7 +998,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 QuickAccessToolBar property help to add item that required  to access quickly, here items added to QuickAccessToolBar by adding items inside the "<syncfusion:QuickAccessToolBar/>".
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1049,6 +1137,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img9.jpg)
 
 
@@ -1056,7 +1146,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 QATMenuItems property of QuickAccessToolbar used to add items to Dropdown menu of QAT. 
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1207,6 +1299,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img10.jpeg)
 
 
@@ -1214,7 +1308,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 BackStage of Ribbon control can be added by using BackStage property of Ribbon. You can access backstage view by clicking `FILE` Menu in Ribbon instance like in Microsoft Outlook. 
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1371,6 +1467,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img11.jpeg)
 
 
@@ -1380,7 +1478,9 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 BackStageCommandButton added to backstage of Ribbon control by adding it inside the BackStage Element.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1547,6 +1647,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img12.jpeg)
 
 
@@ -1554,7 +1656,10 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 `BackStageTabItem` can also be added inside the BackStage Element.
 
-{% highlight xml %}
+
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1739,6 +1844,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img13.jpg)
 
 
@@ -1748,7 +1855,9 @@ BackStageSeperator used to group out similar backstage elements in BackStage of 
 
 Here BackStageCommandButtons, BackStageTabItems are separated by `BackStageSeparator` according to their use.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1935,6 +2044,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013">
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img14.jpg)
 
 
@@ -1948,7 +2059,9 @@ BackStage is not applicable when `ApplicationMenu` is used in Ribbon.
 
 Here visual style is set to `Default` for RibbonWindow.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -2109,6 +2222,8 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img15.jpeg)
 
 
@@ -2116,7 +2231,9 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 Different Menu items are added to an Application Menu using the MenuItems property of the ApplicationMenu.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -2285,6 +2402,8 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img16.jpg)
 
 
@@ -2294,7 +2413,9 @@ ApplicationItems are displayed in bottom of the Application menu. Different Appl
 
 The following code example illustrates how to add ApplicationItems to Application menu in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:RibbonWindow
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -2472,6 +2593,8 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img17.jpg)
 
