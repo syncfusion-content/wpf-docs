@@ -14,13 +14,11 @@ To invoke any command using KeyBoard, Ribbon control provides KeyTip support to 
 
 RibbonControl provides with an attached property called KeyTip that helps to set the KeyTip for the Ribbonitem. It also let to set the KetTip for the RibbonTab,Launcher Button,and for the controls which are needed to add in the Ribbon Instance like RibboButton,SplitButton…etc
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" VerticalAlignment="Top">
-
-
 
 <syncfusion:RibbonTab Caption="Home"  syncfusion:Ribbon.KeyTip="H" >
 
@@ -54,9 +52,9 @@ syncfusion:Ribbon.KeyTip="CR" />
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML589cf0b.PNG](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img1.jpeg)
 
@@ -65,9 +63,9 @@ syncfusion:Ribbon.KeyTip="CR" />
 
 KeyTip for the QAT items will get displayed by default by pressing Alt Key.The KeyTip will set  in the order like…1,2,3,4,5,6,7,8,9,09,08,07…….01,0A,0B……etc.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -101,15 +99,13 @@ ToolTip="Redo" syncfusion:RibbonCommandManager.SynchronizedItem="Redo"/>
 
 syncfusion:RibbonCommandManager.SynchronizedItem="Save" SmallIcon="/Resources/Save16.png"/>
 
-
-
 </syncfusion:QuickAccessToolBar>
 
 </syncfusion:Ribbon.QuickAccessToolBar>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML11490702.PNG](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img2.jpeg)
 
@@ -118,9 +114,9 @@ syncfusion:RibbonCommandManager.SynchronizedItem="Save" SmallIcon="/Resources/Sa
 
 The below example illustrates how to access particular Ribbonitem using KeyTip
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
 
@@ -158,9 +154,9 @@ The below example illustrates how to access particular Ribbonitem using KeyTip
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 The below screenshot displays the steps involved to access RibbonComboBox. When Alt key is pressed, KeyTip for the RibbonTab will be displayed. Then choose the desired RibbonTab with the KeyTip
 
@@ -181,9 +177,9 @@ Finally, Press the RibbonComboBox KeyTip to access it
 
 The backstage feature of the Ribbon control provides KeyTip support to display KeyTips on pressing the Alt key. It is also possible to set KeyTip for the BackStage elements which includes BackStageCommandButton, BackStageTabItem
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon.BackStage>
 
@@ -201,9 +197,9 @@ The backstage feature of the Ribbon control provides KeyTip support to display K
 
 </syncfusion:Ribbon.BackStage>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 In the below screenshot, “B” is set as KeyTip for the Backstage. So when the user press “B”, it will automatically open the BackStage
 

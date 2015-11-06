@@ -14,9 +14,9 @@ Ribbon supports MVVM Pattern to get better control customization. The following 
 
 ###Model
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 public class CustomRibbonTab
 
@@ -88,18 +88,75 @@ public bool IsSplitButton { get; set; }
 
 }
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Class CustomRibbonTab
 
 
+Public Property TabHeader() As String
 
+Public Property CustomRibbonBars() As ObservableCollection(Of CustomRibbonBar)
+
+Public Sub New()
+
+
+CustomRibbonBars = New ObservableCollection(Of CustomRibbonBar)()
+
+End Sub
+
+End Class
+
+Public Class CustomRibbonBar
+
+
+Public Property BarHeader() As String
+
+Public Property CustomRibbonItems() As ObservableCollection(Of CustomRibbonItem)
+
+Public Sub New()
+
+
+CustomRibbonItems = New ObservableCollection(Of CustomRibbonItem)()
+
+End Sub
+
+End Class
+
+Public Class CustomRibbonItem
+
+
+Public Sub New()
+
+
+IsSplitButton = False
+
+IsBoolean = True
+
+End Sub
+
+Public Property ItemHeader() As String
+
+Public Property Image() As String
+
+Public Property IsBoolean() As Boolean
+
+Public Property IsLarge() As Boolean
+
+Public Property IsSplitButton() As Boolean
+
+End Class
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ###ViewModel
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 public class ViewModel
 
@@ -189,19 +246,130 @@ Bar.CustomRibbonItems.Add(Item3);
 
 }
 
-
-
 }
-
-
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class ViewModel
+
+
+Public Property CustomRibbonTabs() As ObservableCollection(Of CustomRibbonTab)
+
+Public Sub New()
+
+
+CustomRibbonTabs = New ObservableCollection(Of CustomRibbonTab)()
+
+PopulateRibbonTabs()
+
+End Sub
+
+Private Sub PopulateRibbonTabs()
+
+
+Dim Tab1 As New CustomRibbonTab() With {.TabHeader = "Home"}
+
+PopulateRibbonHomeBars(Tab1)
+
+CustomRibbonTabs.Add(Tab1)
+
+End Sub
+
+'Home Tab
+
+Private Sub PopulateRibbonHomeBars(ByVal Tab As CustomRibbonTab)
+
+
+Dim Bar1 As New CustomRibbonBar() With {.BarHeader = "Clipboard"}
+
+PopuplateRibbonNewItems(Bar1)
+
+Dim Bar2 As New CustomRibbonBar() With {.BarHeader = "Editing"}
+
+PopuplateRibbonEditingItems(Bar2)
+
+Tab.CustomRibbonBars.Add(Bar1)
+
+Tab.CustomRibbonBars.Add(Bar2)
+
+End Sub
+
+Private Sub PopuplateRibbonNewItems(ByVal Bar As CustomRibbonBar)
+
+
+Dim Item1 As New CustomRibbonItem() With {
+	.ItemHeader = "Paste",
+	.IsLarge = True,
+	.Image = "Paste32.png"
+}
+
+Dim Item2 As New CustomRibbonItem() With {
+	.ItemHeader = "Cut",
+	.Image = "Cut16.png"
+}
+
+Dim Item3 As New CustomRibbonItem() With {
+	.ItemHeader = "Copy",
+	.Image = "Copy16.png"
+}
+
+Dim Item4 As New CustomRibbonItem() With {
+	.ItemHeader = "Format Painter",
+	.Image = "FormatPainter16.png"
+}
+
+Bar.CustomRibbonItems.Add(Item1)
+
+Bar.CustomRibbonItems.Add(Item2)
+
+Bar.CustomRibbonItems.Add(Item3)
+
+Bar.CustomRibbonItems.Add(Item4)
+
+End Sub
+
+Private Sub PopuplateRibbonEditingItems(ByVal Bar As CustomRibbonBar)
+
+
+Dim Item1 As New CustomRibbonItem() With {
+	.ItemHeader = "Hyperlink",
+	.IsLarge = True,
+	.Image = "hyperlink32.png"
+}
+
+Dim Item2 As New CustomRibbonItem() With {
+	.ItemHeader = "Replace",
+	.IsLarge = True,
+	.Image = "replace_32.png"
+}
+
+Dim Item3 As New CustomRibbonItem() With {
+	.ItemHeader = "Zoom",
+	.IsLarge = True,
+	.Image = "Zoom_32x32.png"
+}
+
+Bar.CustomRibbonItems.Add(Item1)
+
+Bar.CustomRibbonItems.Add(Item2)
+
+Bar.CustomRibbonItems.Add(Item3)
+
+End Sub
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ####MainWindow.xaml
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow x:Class="RibbonSample_in_MVVM.MainWindow"
 
@@ -245,8 +413,6 @@ Title="MainWindow" Height="350" Width="525">
 
 </ResourceDictionary>
 
-
-
 </Window.Resources>
 
 <Window.DataContext>
@@ -283,8 +449,6 @@ ItemsSource="{Binding CustomRibbonTabs}" >
 
 <Setter Property="ItemTemplateSelector" Value="{StaticResource selector}"/>
 
-
-
 </Style>
 
 </Setter.Value>
@@ -295,25 +459,21 @@ ItemsSource="{Binding CustomRibbonTabs}" >
 
 </syncfusion:Ribbon.ItemContainerStyle>
 
-
-
 </syncfusion:Ribbon>
 
 </Grid>
 
 </syncfusion:RibbonWindow>
 
-
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ####Converter.cs
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 public class BooltoSizeformConverter:IValueConverter
 
@@ -433,9 +593,116 @@ throw new System.NotImplementedException();
 
 }
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Public Class BooltoSizeformConverter
+	Implements IValueConverter
+
+
+
+
+Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+
+
+
+
+If value.Equals(True) Then
+
+
+Return "Large"
+
+
+Else
+
+
+Return "Small"
+
+End If
+
+End Function
+
+Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+
+
+Throw New NotImplementedException()
+
+End Function
+
+
+
+End Class
+
+Public Class ItemDataTemplateSelector
+	Inherits DataTemplateSelector
+
+
+Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+
+
+Dim element As FrameworkElement = TryCast(container, FrameworkElement)
+
+If element IsNot Nothing AndAlso item IsNot Nothing Then
+
+
+If TypeOf item Is CustomRibbonItem AndAlso (TryCast(item, CustomRibbonItem)).IsSplitButton Then
+
+
+Return TryCast(element.FindResource("Splitbutton"), DataTemplate)
+
+
+Else
+
+
+Return TryCast(element.FindResource("Ribbonbutton"), DataTemplate)
+
+End If
+
+
+
+End If
+
+Return Nothing
+
+End Function
+
+End Class
+
+Public Class ImageConverter
+	Implements IValueConverter
+
+
+Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+
+
+If value IsNot Nothing Then
+
+
+Dim str As String = value.ToString()
+
+Return "../Images/" & str
+
+
+Else
+
+Return value
+End If
+
+End Function
+
+Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
+
+
+Throw New System.NotImplementedException()
+
+End Function
+
+End Class
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](PatternsandPractices_images/PatternsandPractices_img1.jpeg)
 
@@ -460,8 +727,9 @@ Ribbon control provides prism support. The following steps will help to create s
 2. Rename MainWindow to Shell in the Project
 3. Add new class called Bootstrapper.cs to initialize the prism application.
 	
-{% highlight c# %}
-
+{% tabs %}
+	
+{% highlight C# %}
 
  	class Bootstrapper : UnityBootstrapper
 
@@ -495,10 +763,45 @@ Ribbon control provides prism support. The following steps will help to create s
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+	Friend Class Bootstrapper
+	Inherits UnityBootstrapper
+
+
+	Protected Overrides Function CreateShell() As DependencyObject
+
+
+	Dim shell As New Shell()
+
+	shell.Show()
+
+	Return shell
+
+	End Function
+
+	Protected Overrides Function GetModuleCatalog() As IModuleCatalog
+
+
+	Dim catalog As New ModuleCatalog()
+
+	catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
+
+	Return catalog
+
+	End Function
+
+	End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 4. Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 
-{% highlight c# %}
+{% tabs %}
 
+{% highlight C# %}
 
 	public partial class App : Application
 
@@ -520,10 +823,34 @@ Ribbon control provides prism support. The following steps will help to create s
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+	Partial Public Class App
+	Inherits Application
+
+
+	Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
+
+
+	MyBase.OnStartup(e)
+
+	Dim bootstrapper As New Bootstrapper()
+
+	bootstrapper.Run()
+
+	End Sub
+
+	End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
 
-{% highlight xml %}
+{% tabs %}
 
+{% highlight XAML %}
 
 	xmlns:Cal="http://www.codeplex.com/CompositeWPF"
 
@@ -559,6 +886,8 @@ Ribbon control provides prism support. The following steps will help to create s
 
 {% endhighlight %}
 
+{% endtabs %}
+
 6. Adding Module to the project
 
 Right click the Solution project, point to “Add” and then click “NewProject”.Then NewWindow called AddNewProject will open.Select “ClassLibrary” from Visual C# .then rename the project with desired name and click OK.Now a New Module will be created in the Solution Project
@@ -579,8 +908,9 @@ Also add following Prism assemblies
 
 7. In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 
-{% highlight c# %}
+{% tabs %}
 
+{% highlight C# %}
 
 	class Bootstrapper : UnityBootstrapper
 
@@ -614,10 +944,45 @@ Also add following Prism assemblies
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+	Friend Class Bootstrapper
+	Inherits UnityBootstrapper
+
+
+	Protected Overrides Function CreateShell() As DependencyObject
+
+
+	Dim shell As New Shell()
+
+	shell.Show()
+
+	Return shell
+
+	End Function
+
+	Protected Overrides Function GetModuleCatalog() As IModuleCatalog
+
+
+	Dim catalog As New ModuleCatalog()
+
+	catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
+
+	Return catalog
+
+	End Function
+
+	End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 8. Adding Views to the Module
 
-{% highlight xml %}
+{% tabs %}
 
+{% highlight XAML %}
 
 	<syncfusion:RibbonTab x:Class="HomeTabModule.HomeTab"
 
@@ -777,12 +1142,15 @@ Also add following Prism assemblies
 
 {% endhighlight %}
 
+{% endtabs %}
+
 9. Add a region to the shell
 
 After creating View for the Module, register the view as Module using the below code.
 
-{% highlight c# %}
+{% tabs %}
 
+{% highlight C# %}
 
 	public class HomeTabModules:IModule
 
@@ -809,6 +1177,34 @@ After creating View for the Module, register the view as Module using the below 
 	}
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+	Public Class HomeTabModules
+	Implements IModule
+
+
+	Private ReadOnly regionManager As IRegionManager
+
+	Public Sub New(ByVal regionManager As IRegionManager)
+
+
+	Me.regionManager = regionManager
+
+	End Sub
+
+	Public Sub Initialize()
+
+
+	regionManager.Regions("Tabs").Add(New HomeTab())
+
+	End Sub
+
+	End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Then Run the project.RibbonTabModule will get added as one of the Module in the Shell.Similarly you can add the any number of Modules based on the complexity of the project.
 

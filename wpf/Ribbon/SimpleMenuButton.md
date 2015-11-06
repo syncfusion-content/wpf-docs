@@ -14,9 +14,9 @@ SimpleMenuButton can be used with ApplicationMenu.
 
 The following code example illustrates How to use SimpleMenuButton control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -44,11 +44,13 @@ The following code example illustrates How to use SimpleMenuButton control in Ri
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create instance of SimpleMenuButton and add it to ApplicationMenu Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 SimpleMenuButton _SimpleMenuButton = new SimpleMenuButton() { Label = "File", Width = 100 };
 
@@ -59,6 +61,26 @@ _ApplicationMenu.Items.Add(_SimpleMenuButton);
 _ApplicationMenu.Items.Add(_SimpleMenuButton1);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _SimpleMenuButton As New SimpleMenuButton() With {
+	.Label = "File",
+	.Width = 100
+}
+
+Dim _SimpleMenuButton1 As New SimpleMenuButton() With {
+	.Label = "Open",
+	.Width = 100
+}
+
+_ApplicationMenu.Items.Add(_SimpleMenuButton)
+
+_ApplicationMenu.Items.Add(_SimpleMenuButton1)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](SimpleMenuButton_images/SimpleMenuButton_img1.jpeg)
 

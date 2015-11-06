@@ -15,9 +15,9 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 `Normal` – Ribbon control will be in Normal State. This is the default state 
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon  RibbonState="Normal" VerticalAlignment="Top" x:Name="_ribbon" >
 
@@ -55,13 +55,15 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
 
 `Hide` -Ribbon control will move to the Hidden State
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon  RibbonState="Hide" VerticalAlignment="Top" x:Name="_ribbon" >
 
@@ -99,14 +101,16 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img2.jpeg)
 
 
 `Adorner` **–**In this state,ribbon will adorned above the content
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon  RibbonState="Adorner" VerticalAlignment="Top" x:Name="_ribbon" >
 
@@ -144,35 +148,61 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML7d9bdf5.PNG](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img3.jpeg)
 
 ## How to change the RibbonState in run time?
 
 Ribbon State can also be changed at the Runtime.In the below code, Ribbon State has been changed dynamically in the button click event
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Normal;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight VB %}
 
-[C#]
+_ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Normal
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Hide;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight VB %}
 
-[C#]
+_ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Hide
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+_ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
+
+{% endhighlight %}
+
+{% endtabs %}
 
 # Grouping RibbonTabs using ContextTabGroups
 
@@ -183,9 +213,9 @@ ContextualTabGroups are used to group the RibbonTabs for easy Navigation. This C
 
 This ContextTabGroup can also be kept hidden and shown while required cases like in Word Document’s TABLETOOLS ContextTabGroups which will get displayed automatically, while selecting the table.  The following code snippet used to create a ContextTabGroup
 
-{% highlight xml %}
-
-[XAML]
+{% tabs %}
+ 
+{% highlight XAML %}
 
 <syncfusion:Ribbon.ContextTabGroups>
 
@@ -199,9 +229,9 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 
 </syncfusion:Ribbon.ContextTabGroups>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img1.jpeg)
 
@@ -209,10 +239,10 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 ## Multiple ContextTabs
 
 To differentiate one ContextTabGroup with one another, change its `BackColor` property of the ContextTabGroup , Since a ContextTabGroup Support to have multiple context Tab.
+ 
+{% tabs %}
 
-{% highlight xml %}
-
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon.ContextTabGroups>
 
@@ -234,9 +264,9 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 
 </syncfusion:Ribbon.ContextTabGroups>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img2.jpeg)
 
@@ -244,10 +274,10 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 ## ContextTabGroup Heading
 
 The `Label` property of the ContextTabGroup is used to define the Heading for the ContextTabGroup. 
+ 
+{% tabs %}
 
-{% highlight xml %}
-
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon.ContextTabGroups>
 
@@ -261,9 +291,9 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
 
 </syncfusion:Ribbon.ContextTabGroups>
 
-
-
 {% endhighlight %}
+ 
+{% endtabs %}
 
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img3.jpeg)
 
@@ -273,10 +303,10 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
 ## Changing the visibility at run time
 
 ContextTabgroup visibility can also be changed at the runtime. To change the visibility, enable `IsGroupVisible` property of the ContextTabGroup
+ 
+{% tabs %}
 
-{% highlight xml %}
-
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
 
@@ -298,12 +328,13 @@ ContextTabgroup visibility can also be changed at the runtime. To change the vis
 
 </syncfusion:Ribbon>
 
-
 {% endhighlight %}
+ 
+{% endtabs %}
+ 
+{% tabs %}
 
-{% highlight c# %}
-
-[C#]
+{% highlight C# %}
 
 private void Button_Click(object sender, RoutedEventArgs e)
 
@@ -313,9 +344,20 @@ _contextTabGroup.IsGroupVisible = true;
 
 }
 
+{% endhighlight %}
 
+{% highlight VB %}
+ 
+Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+
+_contextTabGroup.IsGroupVisible = True
+
+End Sub
 
 {% endhighlight %}
+ 
+{% endtabs %}
 
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img4.jpeg)
 

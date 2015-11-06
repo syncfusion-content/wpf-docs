@@ -23,9 +23,9 @@ ScreenTip has four properties.
 
 The following code illustrates how to set Tooltip for the RibbonItems
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <Syncfusion:Ribbon x:Name="_ribbon"   VerticalAlignment="Top">
 
@@ -117,6 +117,8 @@ The following code illustrates how to set Tooltip for the RibbonItems
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](UIforToolTip_images/UIforToolTip_img1.jpeg)
 
 
@@ -124,9 +126,9 @@ The following code illustrates how to set Tooltip for the RibbonItems
 
 The ToolTip property is used to set the tooltip for the upper half of the Split Button, while the `ToggleButtonToolTip` property is used to set the tooltip for the drop-down in the lower half of the split button. Here is the code snippet for setting these properties.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <Syncfusion:SplitButton Label="Paste" SizeForm="Large" >
 
@@ -154,6 +156,8 @@ The ToolTip property is used to set the tooltip for the upper half of the Spli
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](UIforToolTip_images/UIforToolTip_img2.jpeg)
 
 
@@ -168,9 +172,9 @@ N> When no HelpText is set the HelpText area and line seperator get automaticall
  
 Insert HelpText in ScreenTip, by using the following code.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <Syncfusion:RibbonButton IsMultiLine="True"  Label="Format Painter" SizeForm="Small"  SmallIcon="/Resources/FormatPainter16.png" >
 
@@ -183,6 +187,8 @@ Insert HelpText in ScreenTip, by using the following code.
 </Syncfusion:RibbonButton>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 
