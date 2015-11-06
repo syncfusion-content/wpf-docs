@@ -12,9 +12,9 @@ documentation: ug
 
 The following code example illustrates how to use RibbonTabPannelItem control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -38,17 +38,29 @@ The following code example illustrates how to use RibbonTabPannelItem control in
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create instance of RibbonButton and assign it to TabPanelItem property of Ribbon.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 RibbonButton _ribbonButton = new RibbonButton() { Label="Help"};
 
 _ribbon.TabPanelItem = _ribbonButton;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbonButton As New RibbonButton() With {.Label="Help"}
+
+_ribbon.TabPanelItem = _ribbonButton
+
+{% endhighlight %}
+ 
+{% endtabs %}
 
 ![](RibbonTabPanelItem_images/RibbonTabPanelItem_img1.jpeg)
 

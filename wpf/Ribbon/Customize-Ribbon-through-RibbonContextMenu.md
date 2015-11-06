@@ -10,9 +10,10 @@ documentation: ug
 
 RibbonContextMenu allows to customize the Ribbon with the Right Click and it displays different functions for Ribbon and RibbonItems.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon x:Name="Ribbon"  VerticalAlignment="Top">
 
@@ -46,6 +47,8 @@ SmallIcon="/Resources/FormatPainter16.png"  />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The below RibbonContextMenu will be generated when the user right click on the ribbon
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcc26813.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img1.jpeg)
@@ -60,9 +63,9 @@ It displays along with "Add to Quick Access ToolBar" function while clicking at 
 
 Ribbon Context Menu supports display of custom items. To add the custom item, set an attached property called `CustomContextMenuItems` of the RibbonContextMenu
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon x:Name="Ribbon"  VerticalAlignment="Top" syncfusion:RibbonContextMenu.IsCustomContextMenuItemsOnTop="True" >
 
@@ -84,6 +87,8 @@ Ribbon Context Menu supports display of custom items. To add the custom item, se
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcd86ccb.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img3.jpeg)
 
@@ -92,9 +97,9 @@ Ribbon Context Menu supports display of custom items. To add the custom item, se
 
 In order to disable the ContextMenu handle the `RibbonContextMenuOpening` event
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon x:Name="Ribbon"  VerticalAlignment="Top"  RibbonContextMenuOpening="Ribbon_ContextMenuOpening">
 
@@ -132,11 +137,12 @@ SmallIcon="/Resources/FormatPainter16.png"  />
 
 {% endhighlight %}
 
+{% endtabs %}
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
-[C#]
 
 private void Ribbon_ContextMenuOpening(object sender, ContextMenuEventArgs e)
 
@@ -149,6 +155,20 @@ e.Handled = true;
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub Ribbon_ContextMenuOpening(ByVal sender As Object, ByVal e As ContextMenuEventArgs)
+
+
+e.Handled = True
+
+End Sub
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following snapshot will be generated before handling the RibbonContextMenu event
 
@@ -168,9 +188,10 @@ Quick Access Toolbar is used to group the frequently used commands above or unde
 
 Use the following code to add items to the QuickAccessToolbar
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -194,9 +215,12 @@ ToolTip="Redo" syncfusion:RibbonCommandManager.SynchronizedItem="Redo"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
+
 
 RibbonButton RibbonButton = new RibbonButton();
 
@@ -216,6 +240,25 @@ Ribbon.QuickAccessToolBar = QAT;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim RibbonButton As New RibbonButton()
+
+RibbonButton.SmallIcon = New BitmapImage(New Uri("/Resources/Redo16.png", UriKind.Relative))
+
+RibbonButton.SizeForm = SizeForm.ExtraSmall
+
+Dim QAT As New QuickAccessToolBar()
+
+QAT.Items.Add(RibbonButton)
+
+Ribbon.QuickAccessToolBar = QAT
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img1.jpeg)
 
 
@@ -223,9 +266,10 @@ Ribbon.QuickAccessToolBar = QAT;
 
 Ribbon also supports to add the items to QAT Menu items. To add the items to the Drop Down Menu of the QuickAccessToolBar, use the attached property, `QATMenuItems` of the Quick Access ToolBar .  QATMenuItems can be added to the QAT by making the Selection.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -267,9 +311,12 @@ ToolTip="Redo" syncfusion:RibbonCommandManager.SynchronizedItem="Redo"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
+
 
 RibbonButton pasteRibbonButton = new RibbonButton() { Label = "Paste", SmallIcon = new BitmapImage(new Uri("/Resources/Paste32.png", UriKind.Relative))};
 
@@ -280,6 +327,23 @@ this.Ribbon.QuickAccessToolBar.QATMenuItems.Add(pasteRibbonButton);
 
 
 {% endhighlight %}
+
+
+{% highlight VB %}
+
+Dim pasteRibbonButton As New RibbonButton() With {
+	.Label = "Paste",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Paste32.png", UriKind.Relative))
+}
+
+
+
+Me.Ribbon.QuickAccessToolBar.QATMenuItems.Add(pasteRibbonButton)
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The “Paste” QATMenuItem has been selected and it is displayed as one of the items in the QAT. 
 
@@ -414,9 +478,10 @@ The steps to customize the Ribbon Item are as follows
 
 To disable the customization in the Ribbon, set `ShowCustomizeRibbon` property of the Ribbon as `False` 
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon  VerticalAlignment="Top" x:Name="Ribbon" ShowCustomizeRibbon="False">
 
@@ -455,8 +520,10 @@ ToolTip="Redo" syncfusion:RibbonCommandManager.SynchronizedItem="Redo"/>
 <syncfusion:RibbonTab Caption="SEND/RECIEVE"/>
 
 </syncfusion:Ribbon>
+
 {% endhighlight %}
 
+{% endtabs %}
 
 In the following screenshot, customizing Ribbon is disabled and it shows only the QAT Customize window
 

@@ -12,9 +12,9 @@ documentation: ug
 
 The following code example illustrates how to use RibbonMenuItem control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -30,23 +30,34 @@ The following code example illustrates how to use RibbonMenuItem control in Ribb
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 Create instance of RibbonMenuItem and add it to RibbonBar Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem(){Header = "NEW", Width = 100};
 
 _ribbonBar1.Items.Add(_ribbonMenuItem);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonMenuItem As New RibbonMenuItem() With {
+	.Header = "NEW",
+	.Width = 100
+}
+
+_ribbonBar1.Items.Add(_ribbonMenuItem)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonMenuItem_images/RibbonMenuItem_img1.jpeg)
 

@@ -15,29 +15,33 @@ To override the themes to the Ribbon control’s style, add ResourceDictionary i
 
 #### Syntax for ResourceDictionary
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <ResourceDictionary Source="/Syncfusion.Tools.WPF;Component/FrameWork/Ribbon/themes/Office2013Style.xaml">
 </ResourceDictionary>
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 #### Syntax for BasedOn
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 BasedOn="{StaticResource <StyleName><ControlName>Style}"
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% endtabs %}
 
-[XAML]
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow x:Class="RibbonVisualStyleSample.MainWindow"
 
@@ -110,6 +114,8 @@ Title="MainWindow" Height="350" Width="525" xmlns:syncfusion="http://schemas.syn
 </syncfusion:RibbonWindow>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
 

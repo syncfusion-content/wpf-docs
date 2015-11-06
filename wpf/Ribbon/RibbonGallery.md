@@ -21,31 +21,30 @@ The following code example illustrates how to set VisualMode for RibbonGallery c
 
 ### Ribbon mode
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
-
+{% highlight XAML %}
 
 <syncfusion:RibbonGallery Width="230" VisualMode="InRibbon" Label="RibbonGallery" LargeIcon="Word.png"/>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonGallery_images/RibbonGallery_img1.jpeg)
 
 
 ### DropDown Mode
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:RibbonGallery VisualMode="DropDown" Label="RibbonGallery" LargeIcon="Word.png" >
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonGallery_images/RibbonGallery_img2.jpeg)
 
@@ -56,9 +55,9 @@ The following code example illustrates how to add RibbonGalleryItem to RibbonGal
 
 You can add items in RibbonGallery by using RibbonGalleryItem element inside the RibbonGallery.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">          
 
@@ -92,11 +91,13 @@ You can add items in RibbonGallery by using RibbonGalleryItem element inside the
 
 {% endhighlight %}
 
+{% endtabs %}
+
 You can add items in RibbonGallery by creating instance of RibbonGalleryItem and add it to RibbonGallery Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 Image _image1 = new Image() { Source =new BitmapImage(new Uri(@"OrangeLarge.png", UriKind.RelativeOrAbsolute)) };
 
@@ -110,9 +111,25 @@ _ribbonGallery.Items.Add(_ribbonGalleryItem1);
 
 _ribbonGallery.Items.Add(_ribbonGalleryItem2);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _image1 As New Image() With {.Source = New BitmapImage(New Uri("OrangeLarge.png", UriKind.RelativeOrAbsolute))}
+
+Dim _image2 As New Image() With {.Source = New BitmapImage(New Uri("BlueLarge.png", UriKind.RelativeOrAbsolute))}
+
+Dim _ribbonGalleryItem1 As New RibbonGalleryItem() With {.Content=_image1}
+
+Dim _ribbonGalleryItem2 As New RibbonGalleryItem() With {.Content = _image2}
+
+_ribbonGallery.Items.Add(_ribbonGalleryItem1)
+
+_ribbonGallery.Items.Add(_ribbonGalleryItem2)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonGallery_images/RibbonGallery_img3.jpeg)
 
@@ -127,9 +144,9 @@ GalleryGroupFilters are used to view parlicular group. FilterIndexes property is
 
 The following code example illustrates how to use GalleryGroup and GalleryFilters property of RibbonGallery control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">                      
 
@@ -195,9 +212,9 @@ The following code example illustrates how to use GalleryGroup and GalleryFilter
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonGallery_images/RibbonGallery_img4.jpeg)
 
@@ -208,11 +225,9 @@ In the expanded Gallery items (in both the Visual Mode), can add custom menu ite
 
 The following code example illustrates how to add custom menu items to RibbonGallery control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
-
-
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">           
 
@@ -254,17 +269,15 @@ The following code example illustrates how to add custom menu items to RibbonGal
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 Custom Menu items of RibbonGallery added by creating instance of RibbonButton and add it to MenuItems property of RibbonGallery. You can use SplitButton or MenuButton instead of RibbonButton.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
-
-
+{% highlight C# %}
 
 RibbonButton _ribbonButton1 = new RibbonButton() { SizeForm = SizeForm.Small, Label = "Menu Item-1" };
 
@@ -278,9 +291,34 @@ _ribbonGallery.MenuItems.Add(_ribbonButton2);
 
 _ribbonGallery.MenuItems.Add(_ribbonButton3);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonButton1 As New RibbonButton() With {
+	.SizeForm = SizeForm.Small,
+	.Label = "Menu Item-1"
+}
+
+Dim _ribbonButton2 As New RibbonButton() With {
+	.SizeForm = SizeForm.Small,
+	.Label = "Menu Item-2"
+}
+
+Dim _ribbonButton3 As New RibbonButton() With {
+	.SizeForm = SizeForm.Small,
+	.Label = "Menu Item-3"
+}
+
+_ribbonGallery.MenuItems.Add(_ribbonButton1)
+
+_ribbonGallery.MenuItems.Add(_ribbonButton2)
+
+_ribbonGallery.MenuItems.Add(_ribbonButton3)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonGallery_images/RibbonGallery_img5.jpeg)
 

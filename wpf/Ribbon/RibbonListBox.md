@@ -12,9 +12,9 @@ documentation: ug
 
 The following code example illustrates how to use RibbonListBox control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -48,15 +48,15 @@ The following code example illustrates how to use RibbonListBox control in Ribbo
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 Create instance of RibbonListBox and add it to RibbonBar Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 RibbonListBox _ribbonListBox = new RibbonListBox();
 
@@ -74,9 +74,29 @@ _ribbonListBox.Items.Add(item3);
 
 _ribbonBar2.Items.Add(_ribbonListBox);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonListBox As New RibbonListBox()
+
+Dim item1 As New ListBoxItem() With {.Content = "Office2003Theme"}
+
+Dim item2 As New ListBoxItem() With {.Content = "Office2007Theme"}
+
+Dim item3 As New ListBoxItem() With {.Content = "Office2010Theme"}
+
+_ribbonListBox.Items.Add(item1)
+
+_ribbonListBox.Items.Add(item2)
+
+_ribbonListBox.Items.Add(item3)
+
+_ribbonBar2.Items.Add(_ribbonListBox)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonListBox_images/RibbonListBox_img1.jpeg)
 

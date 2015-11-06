@@ -12,9 +12,9 @@ documentation: ug
 
 The following code example illustrates how to use RibbonTextBox control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -40,17 +40,29 @@ The following code example illustrates how to use RibbonTextBox control in Ribbo
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create instance of RibbonTextBox and add it to RibbonBar Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 RibbonTextBox _ribbonTextBox = new RibbonTextBox(){Text = "RibbonTextBox"};
 
 _ribbonBar2.Items.Add(_ribbonTextBox);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbonTextBox As New RibbonTextBox() With {.Text = "RibbonTextBox"}
+
+_ribbonBar2.Items.Add(_ribbonTextBox)
+
+{% endhighlight %}
+ 
+{% endtabs %}
 
 ![](RibbonTextBox_images/RibbonTextBox_img1.jpeg)
 
