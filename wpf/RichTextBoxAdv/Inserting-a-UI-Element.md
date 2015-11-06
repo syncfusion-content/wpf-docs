@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inserting-a-UI-Element
+title: Inserting a UI Element| RichTextBoxAdv | Wpf | Syncfusion
 description: inserting a ui element
 platform: wpf
 control: RichTextBoxAdv
@@ -11,11 +11,9 @@ documentation: ug
 
 In order to insert a UI element in the document, ParagraphAdv provides an inline called UIContainerAdv.
 
-## Properties
+### Properties
 
 
-
-Property Table
 
 <table>
 <tr>
@@ -55,7 +53,7 @@ Boolean</td></tr>
 
 UIContainerAdv can be used to add a UI element directly to an application by using the following code snippet: 
 
-
+{% tabs %}
 {% highlight xml %}
 
 
@@ -87,7 +85,7 @@ SectionAdv section = new SectionAdv();
  document.Sections.Add(section);          
  richtext.Document = document;
 {% endhighlight %}
-
+{% endtabs %}
 
 ## Limitations
 

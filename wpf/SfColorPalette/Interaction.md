@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction
+title: Interaction | Color Palette | wpf | Syncfusion
 description: interaction
 platform: wpf
 control: Color Palette
@@ -15,8 +15,6 @@ ColorPalette having the Swatches button on the right top corner of the control, 
 
 ![](Interaction_images/Interaction_img1.png)
 
-
-
 ## Swatches
 
 Swatches page has the list of swatches, each swatches will have the list of colors.
@@ -25,12 +23,9 @@ Swatches page has the list of swatches, each swatches will have the list of colo
 
 ![](Interaction_images/Interaction_img2.png)
 
-
 ### Hardcover
 
 ![](Interaction_images/Interaction_img3.png)
-
-
 
 ### Metro
 
@@ -41,31 +36,21 @@ Swatches page has the list of swatches, each swatches will have the list of colo
 
 ![](Interaction_images/Interaction_img5.png)
 
-
-
 ### Office
 
 ![](Interaction_images/Interaction_img6.png)
-
-
 
 ### Paper
 
 ![](Interaction_images/Interaction_img7.png)
 
-
-
 ### Pushpin
 
 ![](Interaction_images/Interaction_img8.png)
 
-
-
 ### Solstice
 
 ![](Interaction_images/Interaction_img9.png)
-
-
 
 ### Urban
 
@@ -75,8 +60,3 @@ Swatches page has the list of swatches, each swatches will have the list of colo
 ### Waveform
 
 ![](Interaction_images/Interaction_img11.png)
-
-
-
-
-

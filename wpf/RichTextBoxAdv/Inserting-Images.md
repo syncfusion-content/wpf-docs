@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inserting-Images
+title: Inserting Images| RichTextBoxAdv | Wpf | Syncfusion
 description: inserting images
 platform: wpf
 control: RichTextBoxAdv
@@ -11,11 +11,10 @@ documentation: ug
 
 In order to insert an image in the document, ParagraphAdv provides an inline called ImageContainerAdv. 
 
-## Properties
+### Properties
 
 
 
-Property Table
 
 <table>
 <tr>
@@ -62,7 +61,7 @@ Boolean</td></tr>
 ImageContainerAdv can be used to add an image directly to an application using the following code snippet:
 
 
-
+{% tabs %}
 {% highlight xml %}
 
  
@@ -93,6 +92,7 @@ RichTextBoxAdv richtext = new RichTextBoxAdv();
  document.Sections.Add(section);         
  richtext.Document = document;
 {% endhighlight %}
+{% endtabs %}
 
 
 ##  Limitations

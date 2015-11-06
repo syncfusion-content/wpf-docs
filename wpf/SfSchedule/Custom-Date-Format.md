@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Date-Format
+title: Custom Date Format| SfSchedule | Wpf | Syncfusion
 description: custom date format
 platform: wpf
 control: SfSchedule
@@ -16,19 +16,20 @@ The default Header date format of the Day and Week view can be customized by usi
 The HeaderDateFormat is a String type, used to customize or override the default format of the Header date format.
 
 The Header background can be changed by HeaderBackground property.
+{% tabs %}
 {% highlight html %}
 
 
 
-    <Grid Background="White">
+<Grid Background="White">
 
-        <Schedule:SfSchedule  ScheduleType="Week"
+<Schedule:SfSchedule  ScheduleType="Week"
 
-            HeaderDateFormat="dd-MMMM-yyyy"   HeaderBackground="Red" >
+HeaderDateFormat="dd-MMMM-yyyy"   HeaderBackground="Red" >
 
-        </Schedule:SfSchedule>
+</Schedule:SfSchedule>
 
-    </Grid>
+</Grid>
 
 
 {% endhighlight  %}
@@ -36,20 +37,20 @@ The Header background can be changed by HeaderBackground property.
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ScheduleType = ScheduleType.Week;
+schedule.ScheduleType = ScheduleType.Week;
 
-            schedule.HeaderDateFormat = "dd-MMMM-yyyy";
+schedule.HeaderDateFormat = "dd-MMMM-yyyy";
 
-            schedule.HeaderBackground = new SolidColorBrush(Colors.Red);
+schedule.HeaderBackground = new SolidColorBrush(Colors.Red);
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ![](Custom-Date-Format_images/Custom-Date-Format_img1.png)
@@ -67,19 +68,20 @@ The Header background can be changed by HeaderBackground property.
 ## Time tick Format
 
 The default timespan format in Day, Week and Timeline view can be customized by using the MajorTickTimeFormat and MinorTickTimeFormat properties. 
+{% tabs %}
 {% highlight html %}
 
 
 
 
 
-   <Grid Background="White"  Name="grid">
+<Grid Background="White"  Name="grid">
 
-    <Schedule:SfSchedule  ScheduleType="Week"
+<Schedule:SfSchedule  ScheduleType="Week"
 
-      MajorTickTimeFormat="hh tt" TimeInterval="ThirtyMin"  MinorTickVisibility=" Visible"  MajorTickVisibility="Visible"       MinorTickTimeFormat=":mm tt" />
+MajorTickTimeFormat="hh tt" TimeInterval="ThirtyMin"  MinorTickVisibility=" Visible"  MajorTickVisibility="Visible"       MinorTickTimeFormat=":mm tt" />
 
-  </Grid>
+</Grid>
 
 {% endhighlight %}
 
@@ -88,26 +90,26 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ScheduleType = ScheduleType.Week;
+schedule.ScheduleType = ScheduleType.Week;
 
-            schedule.MajorTickTimeFormat = "hh tt";
+schedule.MajorTickTimeFormat = "hh tt";
 
-            schedule.TimeInterval = TimeInterval.ThirtyMin;
+schedule.TimeInterval = TimeInterval.ThirtyMin;
 
-            schedule.MajorTickVisibility=Visibility.Visible;
+schedule.MajorTickVisibility=Visibility.Visible;
 
-            schedule.MinorTickVisibility=Visibility.Visible;
+schedule.MinorTickVisibility=Visibility.Visible;
 
-            schedule.MinorTickTimeFormat = ":mm tt";
+schedule.MinorTickTimeFormat = ":mm tt";
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ![](Custom-Date-Format_images/Custom-Date-Format_img3.png)
@@ -117,18 +119,19 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 ### Month Date Format
 
 The default date format of month view can be customized by using the MonthHeaderDateFormat property.                              
+{% tabs %}
 {% highlight html %}
 
 
-  <Grid Background="White">
+<Grid Background="White">
 
-    <Schedule:SfSchedule  ScheduleType="Month"
+<Schedule:SfSchedule  ScheduleType="Month"
 
-          MonthHeaderDateFormat="dd MMM" >   
+MonthHeaderDateFormat="dd MMM" >   
 
-    </Schedule:SfSchedule>
+</Schedule:SfSchedule>
 
-  </Grid>
+</Grid>
 
 {% endhighlight  %}
 {% highlight c# %}
@@ -136,17 +139,17 @@ The default date format of month view can be customized by using the MonthHeader
 
 
 
-     SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ScheduleType = ScheduleType.Month;
+schedule.ScheduleType = ScheduleType.Month;
 
-            schedule.HeaderDateFormat = "dd MMM";
+schedule.HeaderDateFormat = "dd MMM";
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Custom-Date-Format_images/Custom-Date-Format_img4.png)
 

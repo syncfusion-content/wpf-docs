@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch-Events
+title: Touch Events| RichTextBoxAdv | Wpf | Syncfusion
 description: touch events
 platform: wpf
 control: RichTextBoxAdv
@@ -21,11 +21,9 @@ N> By default, the IsManipulationEnabled property of the RichTextBoxAdv control 
 
 
 
-## Properties
+### Properties
 
 
-
-Property Table
 
 <table>
 <tr>

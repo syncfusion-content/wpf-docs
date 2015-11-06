@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load-PDF-without-ToolStrip-in-viewer
+title: Load PDF without ToolStrip in viewer| PDF Viewer | Wpf | Syncfusion
 description: load pdf without toolstrip in viewer
 platform: wpf
 control: PDF Viewer
@@ -11,6 +11,7 @@ documentation: ug
 
 In order to view PDF without the toolstrip, make use of PdfDocumentView control instead of PdfViewerControl. Other features and options are similar to PdfViewerControl.
 
+{% tabs %}
 {% highlight c# %}
 
 PdfDocumentView pdfDocumentView1 = new PdfDocumentView();
@@ -26,6 +27,7 @@ Dim pdfDocumentView1 As New PdfDocumentView()
 pdfDocumentView1.Load("Template.pdf")
 
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot illustrates the PDF document in PdfDocumentView.
 

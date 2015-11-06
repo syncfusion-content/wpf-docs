@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | TreeViewAdv | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: TreeViewAdv
@@ -26,7 +26,7 @@ The TreeViewAdv appearance is customized by using the appearance properties avai
 The following code example illustrates the above property settings.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -101,12 +101,13 @@ treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 ![](Appearance_images/Appearance_img1.jpeg)
 
 
-_SelectedBackground = "Orange"; SelectedForeground = "Red"; SelectionUnfocussedBackcolor = "Gold"_
+SelectedBackground = "Orange"; SelectedForeground = "Red"; SelectionUnfocussedBackcolor = "Gold"
+{:.caption}
 
 
 
@@ -129,7 +130,7 @@ The various built-in visual styles are listed below.
 * Transparent
 
 
-
+{%tabs%}
 
 
 {% highlight xml %}
@@ -194,6 +195,8 @@ The various built-in visual styles are listed below.
 SkinStorage.SetVisualStyle(treeViewAdv, "Office2007Blue"); 
 
 {% endhighlight %}
+
+{%endtabs%}
 
 ![](Appearance_images/Appearance_img2.jpeg)
 
@@ -308,7 +311,7 @@ You can decorate the header text of the TreeView columns using simple property s
 
 The TreeViewAdv displays root lines, which link the nodes of a tree structure. These TreeViewAdv root lines are displayed or hidden by using the ShowRootLines property of the class TreeViewAdv. To set this property, use the below code
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -358,21 +361,25 @@ treeViewAdv.ShowRootLines = false;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Appearance_images/Appearance_img9.jpeg)
 
 
 
 
-### See Also
+{%seealso%}
 
 Line Color, Line Pen
+
+{%endseealso%}
 
 #### Line Color
 
 The color of the root lines, which connect different nodes in a TreeViewAdv control is changed by using the LineBrush property. Use the following code example to set the color of the root lines.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -431,19 +438,22 @@ treeViewAdv.LineBrush = Brushes.Red;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Appearance_images/Appearance_img10.jpeg)
 
 
 
-###See Also
 
+{%seealso%}
 Root Lines, Line Pen
+{%endseealso%}
 
 #### Line Pen
 
 The root lines which connect different nodes in a TreeViewAdv control are customized by using the LinePen property. This property specifies the pen color for a node line. To set the LinePen property, refer the below code
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -507,15 +517,19 @@ treeViewAdv.LinePen = new Pen(Brushes.Red, 1);
 
 {% endhighlight %}
 
+{%endtabs%}
+
 
 ![](Appearance_images/Appearance_img11.jpeg)
 
 
 
 
-### See Also
+{%seealso%}
 
 Root Lines, Line Color
+
+{%endseealso%}
 
 ## Customizing Item Foreground
 

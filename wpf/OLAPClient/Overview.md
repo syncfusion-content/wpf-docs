@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| OLAP Client  | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: OLAP Client 
 documentation: ug
 ---
 
-# Overview
+# OLAPClient 
 
 Essential OLAP Client control lets you efficiently browse and analyze the multidimensional data from the OLAP data source. It lists all the Cubes, 
 Dimensions, Measures and KPIs that are available in the data source, and lets you to slice and dice the cube. You can also create the report from 
@@ -56,7 +56,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
-_Conventions Table_
+
 
 <table>
 <tr>
@@ -67,7 +67,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-> {{ '_Note:_' | markdownify }}</td><td>
+{{'![](Overview_images/Overview_img2.jpeg)'| markdownify }} Note:</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Types
+title: Cell-Types | GridControl | wpf | Syncfusion
 description: cell types
 platform: wpf
 control: Grid Control
@@ -26,7 +26,6 @@ Following is the list of built-in cell types:
 
 This section elaborates you on how to employ basic controls like Check Box, Radio Button and more in a grid cell. The list of cell types and their usages are described below. The table also lists the format string for the individual cell types.
 
-_Cell Type_
 
 <table>
 <tr>
@@ -86,7 +85,8 @@ Likewise, you can also add other controls from the table above. A sample output 
 
 
 
-_Basic Cell Types_
+Basic Cell Types
+{:.caption}
 
 A check box is created in the grid.
 
@@ -102,7 +102,7 @@ N> A foreign key is a field in a relational table that matches the primary key c
 
 The table below lists various properties that can affect combo box cells.
 
-_GridStyleInfo Property_
+
 
 <table>
 <tr>
@@ -193,7 +193,8 @@ The following output is generated using the code above.
 
 
 
-_Editable Combo Box using ChoiceList_
+Editable Combo Box using ChoiceList
+{:.caption}
 
 An Editable Combo Box in a Grid is created
 
@@ -228,7 +229,8 @@ The following output is generated using the code above.
 
 
 
-_Autocomplete Combo box using  ChoiceList_
+Autocomplete Combo box using  ChoiceList
+{;.caption}
 
 An Autocomplete Combo Box in a Grid is created
 
@@ -262,7 +264,8 @@ The following output is generated using the code above.
 
 
 
-_Exclusive Combo box using ChoiceList_
+Exclusive Combo box using ChoiceList
+{:.caption}
 
 An Exclusive Combo Box in a Grid is created.
 
@@ -300,7 +303,8 @@ The following output is generated using the code above.
 
 
 
-_Editable Combo box using ItemsSource_
+Editable Combo box using ItemsSource
+{;.caption}
 
 An editable Combo Box in a Grid is created.
 
@@ -338,7 +342,8 @@ The following output is generated using the code above.
 
 
 
-_Autocomplete Combo box using ItemsSource_
+Autocomplete Combo box using ItemsSource
+{:.caption}
 
 An Autocomplete Combo Box in a Grid is created
 
@@ -372,7 +377,8 @@ The following output is generated using the code above.
 
 
 
-_Exclusive Combo box using ItemsSource_
+Exclusive Combo box using ItemsSource
+{:.caption}
 
 An Exclusive Combo Box in a Grid is created.
 
@@ -428,7 +434,8 @@ The following output is generated using the code above.
 
 
 
-_Editable Drop-down List Control_
+Editable Drop-down List Control
+{:.caption}
 
 An Editable drop-down list is created.
 
@@ -478,7 +485,8 @@ The following output is generated using the code above.
 
 
 
-_Autocomplete Drop-down List Control_
+Autocomplete Drop-down List Control
+{:.caption}
 
 Exclusive Drop-down List Bound to Linq Source with FirstName as its DisplayMember.
 
@@ -524,7 +532,8 @@ The following output is generated using the code above.
 
 
 
-_Exclusive Drop-down List Control_
+Exclusive Drop-down List Control
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
@@ -533,8 +542,6 @@ N> For complete code, please refer to the following browser sample. ...\My Docum
 ### Currency Cells
 
 This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will stripe the currency sign in the cell and attempt to parse only the number from the input. Use the GridStyleInfo properties below to customize these cells.
-
-_Currency Cells_
 
 <table>
 <tr>
@@ -619,7 +626,8 @@ The following output is generated using the code above.
 
 
 
-_Currency Cell_
+Currency Cell
+{:.caption}
 
 Currency Cell with a Negative Currency Value and a Different Negative Pattern
 
@@ -668,7 +676,8 @@ The following output is generated using the code above.
 
 
 
-_Currency Cell_
+Currency Cell
+{:.caption}
 
 Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
 
@@ -717,7 +726,8 @@ The following output is generated using the code above.
 
 
 
-_Currency Cell with a Positive Value_
+Currency Cell with a Positive Value
+{:.caption}
 
 N> For complete code, please refer to the following browser sample.
 
@@ -727,7 +737,7 @@ N> For complete code, please refer to the following browser sample.
 
 The Date Time cells incorporate DateTimeEdit controls in grid cells that will help you to interactively set a date and time value. The style properties below are applicable to this cell type.
 
-_GridStyleInfo Property_
+
 
 <table>
 <tr>
@@ -761,7 +771,7 @@ Specifies the text to be displayed when no date is set</td></tr>
 </table>
 
 
-_Date and Time Pattern_
+
 
 <table>
 <tr>
@@ -862,7 +872,8 @@ The following output is generated using the code above.
 
 
 
-_DateTime Cell_
+DateTime Cell
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo
 
@@ -870,7 +881,7 @@ N> For complete code, please refer to the following browser sample. ...\My Docum
 
 Using DoubleEdit cell type will restrict the user to enter only double (value type) values into the cell. Thus it can be used to display System.Double type values. Below are the style properties that affect this cell.
 
-_GridStyleInfo Property_
+
 
 <table>
 <tr>
@@ -997,8 +1008,8 @@ The following output is generated using the code above.
 ![](Cell-Types_images/Cell-Types_img15.jpeg)
 
 
-
-_Double Edit Cell_
+Double Edit Cell
+{:.caption}
 
 N> For complete code, please refer to the following browser sample.
 
@@ -1010,7 +1021,7 @@ N> For complete code, please refer to the following browser sample.
 
 IntegerEdit is a specialized cell type that restricts the data entry to integers. The table below lists the style properties specific to this cell type.
 
-_GridStyleInfo Property_
+
 
 <table>
 <tr>
@@ -1090,7 +1101,8 @@ The following output is generated using the code above.
 
 
 
-_Integer Edit_
+Integer Edit
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo
 
@@ -1154,7 +1166,8 @@ The following output is generated using the code above.
 
 
 
-_Mask Edit Cell_
+Mask Edit Cell
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo
 
@@ -1162,7 +1175,7 @@ N> For complete code, please refer to the following browser sample. ...\My Docum
 
 The PercentEdit cell type restricts the data entry to percentage values only. The following are the style properties used with this cell type.
 
-_GridStyleInfo Property_
+
 
 <table>
 <tr>
@@ -1274,7 +1287,8 @@ The following output is generated using the code above.
 
 
 
-_Percent Edit Cell_
+Percent Edit Cell
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo
 
@@ -1362,17 +1376,20 @@ The Cell Value for RichTextBox must be in FlowDocument as shown below.
 
 
 
-![C:/Users/kamalakannana/Desktop/IMG_03082011_073458.png](Cell-Types_images/Cell-Types_img19.png)
+![](Cell-Types_images/Cell-Types_img19.png)
 
 
 
-_RichTextBox CellType_
+RichTextBox CellType
+{:.caption}
+
+
 
 ### Up Down Edit Cells
 
 UpDownEdit cell type makes the grid cell to host an Up and Down edit control which contains a pair of arrow buttons that increase or decrease the cell value. The style properties applicable to this cell type are provided below.
 
-_GridStyleInfo Property_
+
 
 <table>
 <tr>
@@ -1478,7 +1495,8 @@ The following output is generated using the code above.
 
 
 
-_Up Down Edit_
+Up Down Edit
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo
 
@@ -1574,7 +1592,8 @@ The following output is generated using the code above.
 
 
 
-_Nested Grid_
+Nested Grid
+{:.caption}
 
 The same way you can nest a grid inside a complete row you can also nest a grid inside a whole column.
 
@@ -2032,7 +2051,8 @@ The following output is generated using the code above.
 
 
 
-_Nested Grid-Rows tied to the Parent Grid Rows_
+Nested Grid-Rows tied to the Parent Grid Rows
+{:.caption}
 
 Nested Grid Inside a Covered Range with its Columns Tied to the Columns of the Parent Grid
 
@@ -2229,7 +2249,8 @@ The following output is generated using the code above.
 
 
 
-_Nested Grid-Columns tied to the Parent Grid Columns_
+Nested Grid-Columns tied to the Parent Grid Columns
+{:.caption}
 
 Nested Grid Inside a Covered Range with its Rows and Columns Independent of Parent Grid
 
@@ -2329,7 +2350,8 @@ The following output is generated using the code above.
 
 
 
-_Nested Grid-Rows and Columns Independent of Parent Grid_
+Nested Grid-Rows and Columns Independent of Parent Grid
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo
 
@@ -2345,7 +2367,7 @@ You can use FormulaCells for every cell in a grid or for just a few cells. Even 
 
 To make all cells present in a grid as potential formula cells, you will have to set the CellType of the standard BaseStyle to a FormulaCell using the following code. 
 
-
+{%tabs%}
 {% highlight c# %}
 
 
@@ -2366,6 +2388,7 @@ this.gridControl1.BaseStylesMap["Standard"].StyleInfo.CellType = "FormulaCell";
 Me.GridControl1.BaseStylesMap("Standard"). StyleInfo.CellType = "FormulaCell"
 
 {% endhighlight  %}
+{%endtabs%}
 
 ### Using the Formula Library
 
@@ -2377,7 +2400,8 @@ Essential Grid's Formula Library contains the mathematical functions that are av
 
 
 
-_Sample Formula Library Usage_
+Sample Formula Library Usage
+{:.caption}
 
 In the above image, cell A2 has a formula that uses four different library functions: Sqrt, Pow, Cos, and Sin.
 
@@ -2385,7 +2409,7 @@ In the above image, cell A2 has a formula that uses four different library funct
 
 The current formula support will allow you to enter well-formed parenthetical algebraic expressions using operators and operands. The nine supported operators are shown in the precedence table given below, with operators on the same level being calculated as encountered when the expression is scanned from left to right. 
 
-_Code Tables_
+
 
 <table>
 <tr>
@@ -2723,6 +2747,7 @@ End Function
 
 The last step is to actually add your formula to the library. You should do this after the grid has been created, say in a Form.Load event handler.
 
+{%tabs%}
 {% highlight c# %}
 
 
@@ -2753,13 +2778,15 @@ Dim cellModel As GridFormulaCellModel = Me.gridControl1.CellModels("FormulaCell"
 cellModel.Engine.AddFunction("SumPosNums", New GridFormulaEngine.LibraryFunction(AddressOf ComputeSumPosNums))
 {% endhighlight  %}
 
+{%endtabs%}
+
 ### Function Reference Section
 
 The Syncfusion Grid control supports 370 formulas under various categories including math, statistical, logical, engineering, information, date, time, text, web, financial, lookup, and database functions.
 
 ### Math & Trigonometry functions
 
-_Math and trigonometry functions_
+
 
 <table>
 <tr>
@@ -3196,7 +3223,7 @@ TRUNCATE(number, [num_digits])</td></tr>
 
 ### Statistical functions
 
-_Statistical functions_
+
 
 <table>
 <tr>
@@ -3763,7 +3790,7 @@ ZTEST(array,x,[sigma])</td></tr>
 
 #### Logical functions
 
-_Logical functions_
+
 
 <table>
 <tr>
@@ -3810,7 +3837,6 @@ TRUE()</td></tr>
 
 ### Engineering functions
 
-_Engineering functions_
 
 <table>
 <tr>
@@ -5539,7 +5565,8 @@ The following output is generated using the code above.
 
 
 
-_Data Template with Cell Template Assigned_
+Data Template with Cell Template Assigned
+{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo
 
@@ -5785,7 +5812,8 @@ The following output is generated using the code above.
 
 
 
-_Rich Text Box Cell_
+Rich Text Box Cell
+{:.caption}
 
 ### Chart Cells
 
@@ -5962,7 +5990,8 @@ The following output is generated using the code above.
 
 
 
-_Chart Cell_
+Chart Cell
+{:.caption}
 
 ## Inserting Images into Grid Cells
 
@@ -6043,5 +6072,6 @@ The following output is generated using the code above.
 
 
 
-_Text Image Cell_
+Text Image Cell
+{:.caption}
 

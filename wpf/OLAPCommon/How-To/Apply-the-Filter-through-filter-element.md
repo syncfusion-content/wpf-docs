@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply-the-Filter-through-filter-element
+title: Apply the Filter through filter element| OLAPCommon | Wpf | Syncfusion
 description: apply the filter through filter element
 platform: wpf
 control: OLAPCommon
@@ -13,6 +13,7 @@ The filter element will get information such as filter condition and filter valu
 
 The following codes describe the creation of the filter element and its application: 
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -89,5 +90,5 @@ olapReport.FilterElements.Add(filterElement)
 
 
 {% endhighlight %}
-
+{% endtabs %}
 

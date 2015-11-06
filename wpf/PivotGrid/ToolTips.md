@@ -1,31 +1,31 @@
 ---
 layout: post
-title: ToolTips
+title: ToolTips| PivotGrid | Wpf | Syncfusion
 description: ToolTips
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## ToolTips
+# ToolTips
 
 ToolTips can be set to individual cells. The ToolTip information has the cell value and its respective row and column data and it is set in the style’s Tag property. Using a simple Boolean property, it can be set to the PivotGrid. A ToolTip’s skin will be set depending upon the theme set for the PivotGrid. Also, users can customize the ToolTip skin at the sample level. ToolTip text can be localized for its “Value”, “Row”, and “Column” text. Users can also set custom text for ToolTips.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 ToolTips can be used to show the data of any cell so that user can get the cell’s full information, e.g., the row and column on which it depends.
 
 ### Properties
 
-_Properties Table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 TooltipEnabled</td><td>
@@ -65,6 +65,7 @@ PivotAnalysis > Appearance > ToolTipDemo
 
 To show the ToolTip in the PivotGrid control you need to set the PivotGrid control’s TooltipEnabled property to true. This is the master property which controls all the styles of the ToolTip property. The following code explains its usage.
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -84,9 +85,11 @@ this.pivotGrid1.ToolTipEnabled = true;
 Me.pivotGrid1.ToolTipEnabled = True
 
 {% endhighlight %} 
+{% endtabs %}
 
 You can set the appearance of ToolTips with respect to their styles. Each style has its own ToolTipEnabled property. These properties help to set the appearance individually for each style. The following code explains its implementation.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -140,7 +143,7 @@ Me.pivotGrid1.SummaryHeaderStyle.ToolTipEnabled = True
 Me.pivotGrid1.SummaryCellStyle.ToolTipEnabled = True
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 ![C:/Users/arulraja/Desktop/Toolto.png](Features_images/Features_img37.png)
@@ -157,6 +160,7 @@ Me.pivotGrid1.SummaryCellStyle.ToolTipEnabled = True
 
 Custom data templates can be set to the PivotGrid control’s ToolTip. To do so, you need to write a data template and bind the style’s Tag property and set the key to the PivotGrid control’s CustomToolTipTemplateKey property. The following code explains its implementation.
 
+{% tabs %}
 {% highlight C# %}   
 
 
@@ -177,6 +181,7 @@ Me.pivotGrid1.CustomToolTipTemplateKey = "CustomTemplateTooltip"
 
 
 {% endhighlight %} 
+{% endtabs %}
 
 
 ![C:/Users/arulraja/Desktop/TooltipCustom.png](Features_images/Features_img40.png)
@@ -185,6 +190,7 @@ Me.pivotGrid1.CustomToolTipTemplateKey = "CustomTemplateTooltip"
 
 You can set the data template of ToolTip with respect to its styles. Each style has its own CustomToolTipTemplateKey property. These properties help to set the appearance individually for each style. The following code explains its implementation.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -236,6 +242,7 @@ Me.pivotGrid1.SummaryHeaderStyle.CustomToolTipTemplateKey = "SummaryHeaderTempla
 Me.pivotGrid1.SummaryCellStyle.CustomToolTipTemplateKey = "SummaryCellTemplateTooltip"
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![C:/Users/arulraja/Desktop/TooltipColumnCustom.png](Features_images/Features_img41.png)
 

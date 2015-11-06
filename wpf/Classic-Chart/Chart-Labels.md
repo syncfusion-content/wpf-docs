@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Labels
+title: Chart Labels | Chart(Classic) | wpf | Syncfusion
 description: Chart Labels
 platform: wpf
 control: Chart (Classic)
@@ -28,16 +28,10 @@ N> Font settings set to the Chart will be applied to all the units of chart. How
 ![](Chart-Controls_images/Chart-Controls_img171.png)
 
 
-
-See Also
-
-Chart Axis Label, Chart Axis Label Rotate, Intersecting Labels
-
 ## Chart Axis Label
 
 ChartAxis Labels can be customized by using the following given properties.
 
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -86,10 +80,11 @@ LabelDateTimeFormat</td><td>
 gets or sets the DateTime Format of the ChartAxis LabelApplicable when Axis.ValueType is DateTime</td></tr>
 </table>
 The following code example could be used to customize the Chart Axis Labels.
+
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartArea.PrimaryAxis>
 
@@ -99,8 +94,6 @@ The following code example could be used to customize the Chart Axis Labels.
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
 
 
 
@@ -124,15 +117,14 @@ The following code example could be used to customize the Chart Axis Labels.
 
  Area.PrimaryAxis.LabelFormat = "0%";           
 {% endhighlight  %}
+
+{% endtabs %}
+
+
 Following given figure illustrates Chart with customized Primary Axis labels.
 
 ![](Chart-Controls_images/Chart-Controls_img172.jpeg)
 
-
-
-See Also
-
-Chart Font Settings, Axis Label Rotate, Intersecting Labels
 
 ## Customizing Label Text
 
@@ -141,8 +133,6 @@ Apart from the default Labels displayed, you can also add Custom Labels to be di
 Properties Used to Customize Label Text
 
 The following properties are used to determine the data source for the text of the Labels.
-
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -167,9 +157,11 @@ ContentPath</td><td>
 gets or sets the content path</td></tr>
 </table>
 By assigning the LabelsMode property to ChartAxis.CustomLabels, you can add Custom Labels to the ChartAxis.
+
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <syncfusion:Chart Name="Chart1" >
@@ -200,9 +192,6 @@ By assigning the LabelsMode property to ChartAxis.CustomLabels, you can add Cust
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
 
 
 // Indicates that the axis labels need to be taken from a custom source.
@@ -246,6 +235,9 @@ area.PrimaryAxis.CustomLabels.Add(customLabel3);
 The following screenshot illustrates Chart PrimaryAxis with Custom Labels.
 {% endhighlight  %}
 
+{% endtabs %}
+
+
 ![](Chart-Controls_images/Chart-Controls_img173.jpeg)
 
 
@@ -253,9 +245,9 @@ The following screenshot illustrates Chart PrimaryAxis with Custom Labels.
 ### Labels from Data Source
 
 The following code example illustrates how Custom Labels can be used in the ChartAxis.
+
+
 {% highlight c# %}
-
-
 
 
 // Indicates that the axis labels need to be taken from a data source.
@@ -290,6 +282,7 @@ area.PrimaryAxis.PositionPath = "Position";
 
 area.PrimaryAxis.ContentPath = "Content";
 {% endhighlight  %}
+
 The following screenshot illustrates Chart PrimaryAxis with Labels from Data Source.
 
 ![](Chart-Controls_images/Chart-Controls_img174.jpeg)
@@ -301,10 +294,10 @@ The following screenshot illustrates Chart PrimaryAxis with Labels from Data Sou
 ChartAxis labels could be rotated with custom angles. Axis.LabelRotateAngle property is used to define the angle in which the Axis Labels need to be rotated.
 
 The following code example could be used to customize the labels to be rotated with 90'.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartArea.PrimaryAxis>
 
@@ -316,31 +309,25 @@ The following code example could be used to customize the labels to be rotated w
 
 {% highlight c# %}
 
-
-
-
-
 //Sets the Label to be rotated with 90' angle
 
  Area.PrimaryAxis.LabelRotateAngle = 90;           
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following figure illustrates Chart with Primary Axis labels rotated with 90' angle
 
 ![](Chart-Controls_images/Chart-Controls_img175.jpeg)
 
 
-
 N> LabelRotateAngle property will not have effect when the Axis.IntersectAction property is set as Rotate.
 
-See Also
-
-Chart Font Settings, Chart Axis Label, Intersecting Labels
 
 ## Intersecting Labels
 
 Sometimes the chart dimensions could cause the labels to intersect. The chart will, by default, render those texts one over the other. But, it also has some built-in capabilities to work around this overlap and lets you dictate the technique to follow. Refer to the properties as follows.
 
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -360,10 +347,11 @@ HidePartialLabel</td><td>
 EdgeLabelsDrawingMode</td><td>
 {{ '_Center_' | markdownify }} – draws the edge labels at the center of the GridLines{{ '_Shift_' | markdownify }} – value indicating that edge label should be shifted to either left or right so that it comes within the Chart Area</td></tr>
 </table>
+
+
+{% tabs %}
+
 {% highlight c# %}
-
-
-
 
 
 Chart1.Areas[0].PrimaryAxis.IntersectAction = ChartLabelIntersectAction.MultipleRows;
@@ -375,16 +363,15 @@ Chart1.Areas[0].PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 {% endhighlight  %}
 {% highlight xml %}
 
-
-
-
-
 <syncfusion:ChartArea.PrimaryAxis>
 
 <syncfusion:ChartAxis Header="Product Name"  IntersectAction="MultipleRows" HidePartialLabel="True" EdgeLabelsDrawingMode="Shift"  />
 
 </syncfusion:ChartArea.PrimaryAxis>
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates various techniques for avoiding the Label intersection.
 
 ![](Chart-Controls_images/Chart-Controls_img176.jpeg)
@@ -398,18 +385,11 @@ The following screenshot illustrates various techniques for avoiding the Label i
 ![](Chart-Controls_images/Chart-Controls_img178.jpeg)
 
 
-
-See Also
-
-Axis Label Rotate, Chart Font Settings, Chart Axis Label, 
-
 ## Legend Panel Customization 
 
 Essential Chart enables you to arrange the legend items in any panel. You can arrange them in common panels like Grid, StackPanel, Canvas and WrapPanel. You can also create custom panel and arrange them. 
 
 ### Property
-
-_Property Table_
 
 <table>
 <tr>
@@ -431,9 +411,9 @@ ItemsPanelTemplate </td><td>
 ### Customizing legend Panel
 
 You can customize the legend panel using the _LegendItemsPanel_ property of ChartLegend. Following code illustrates this:
+
+
 {% highlight xml %}
-
-
 
 
 <syncfusion:ChartLegend IconVisibility="Visible" BorderThickness="0" LegendPanel="Custom">                                    <syncfusion:ChartLegend.LegendItemsPanel>                                        <ItemsPanelTemplate>                                            <StackPanel Orientation="Vertical"/>                                        </ItemsPanelTemplate>                                    </syncfusion:ChartLegend.LegendItemsPanel>                                </syncfusion:ChartLegend>

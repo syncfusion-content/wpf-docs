@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Panel-Visibilities
+title: Setting Panel Visibilities| ColorPickerPalette | Wpf | Syncfusion
 description: setting panel visibilities
 platform: wpf
 control: ColorPickerPalette
@@ -11,7 +11,7 @@ documentation: ug
 
 The ColorPickerPalette control includes three panels namely ThemePanel, StandardColorPanel, RecentlyUsedPanel. You can set the visibility of these panels by using the ThemePanelVisibility, StandardPanelVisibility, RecentlyUsedPanelVisibility properties respectively. The ThemePanel displays the palette of selected theme colors and their variant colors in the panel. The StandardColorPanel displays a palette of 8 preset colors in panel. The RecentlyUsedColor panel displays the most recently used colors.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 You can use the ColorPickerPalette control to view the panels of your choice.
 
@@ -21,6 +21,7 @@ Setting Panel Visibilities can be added to an application by using XAML or C# co
 
 The following code example illustrates how to add the Setting Panel Visibilities feature to an application through XAML.
 
+
 {% highlight xml %}
 
 
@@ -28,15 +29,15 @@ The following code example illustrates how to add the Setting Panel Visibilities
 
 <sync:ColorPickerPalette x:Name="ColorPicker" 
 
-                         ThemePanelVisibility="Collapsed"/>
+ThemePanelVisibility="Collapsed"/>
 
 <sync:ColorPickerPalette x:Name="ColorPicker" 
 
-                         StandardPanelVisibility="Collapsed"/>
+StandardPanelVisibility="Collapsed"/>
 
 <sync:ColorPickerPalette x:Name="ColorPicker" 
 
-                         RecentlyUsedPanelVisibility="Collapsed"/>
+RecentlyUsedPanelVisibility="Collapsed"/>
 
 {% endhighlight %}
 
@@ -82,9 +83,9 @@ colorpicker.RecentlyUsedPanelVisibility = System.Windows.
 
 
 
-## Properties
+### Properties
 
-_Panel Visibility Properties Table_
+
 
 <table>
 <tr>
@@ -118,7 +119,7 @@ RecentlyUsedPanelVisibility.Visible</td><td>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 To view samples: 
 

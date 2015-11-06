@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Overview
+title: Overview| Circular Gauge | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: Circular Gauge
 documentation: ug
 ---
 
-# Overview
+# CircularGauge
 
 ## Introduction
 
 Circular Gauge enables you to see a single numerical value mapped against a range of colors that have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
-
-
 
 ### Use Cases
 

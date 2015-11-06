@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CloseButton-Support
+title: CloseButton Support | TileView | wpf | Syncfusion
 description: closebutton support
 platform: wpf
 control: TileView Control
@@ -19,8 +19,9 @@ This feature enables you to close a particular TileViewItem.
 
 The CloseButton feature can be added to an application by using either XAML or C# code.
 
-The following code example illustrates how to add the CloseButton feature to an application through XAML.
+The following code example illustrates how to add the CloseButton feature to an application through XAML and C#.
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -67,8 +68,6 @@ Background="White">
 
 
 
-
-The following code example illustrates how to add the CloseButton feature to an application through C#.
 
 
 {% highlight c# %}
@@ -117,7 +116,7 @@ The following code example illustrates how to add the CloseButton feature to an 
 {% endhighlight %}
 
 
-
+{% endtabs %}
 
 ![](CloseButton-Support_images/CloseButton-Support_img1.png)
 
@@ -132,11 +131,11 @@ _Property Table_
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 CloseButtonVisibility</td><td>

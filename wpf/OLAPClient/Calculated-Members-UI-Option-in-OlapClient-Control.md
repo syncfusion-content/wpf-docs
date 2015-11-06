@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated-Members-UI-Option-in-OlapClient-Control
+title: Calculated Members UI Option in OlapClient Control| OLAP Client  | Wpf | Syncfusion
 description: calculated members ui option in olapclient control
 platform: wpf
 control: OLAP Client 
@@ -18,16 +18,16 @@ control.
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 This feature can be used to add one or more measures that will be derived from the existing measure collection.
 
 For example, users can define the discount on a measure called Order Quantity (and its unique name is [Measures].[Order Quantity]), by 
 expressing the calculated measure “[Measures].[Order Quantity] + (0.1 * [Measures].[Order Quantity])”.
 
-Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ Boolean</td></tr>
 </table> 
 
 
-## Sample Link
+### Sample Link
 
 1. Open the Syncfusion Dashboard.
 2. Navigate to Business Intelligence.
@@ -61,6 +61,7 @@ Boolean</td></tr>
 
 The following code sample explains how to enable or disable the Calculated Members UI option in an OlapClient application:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -87,12 +88,14 @@ this.olapClient1.IsCalculatedMembersEnabled = true; 
 
 
 Me.olapClient1.IsCalculatedMembersEnabled = True 
-
-
-
-''''if set false, then it will be disabled or all calculated members will be deleted from the current view of the OlapClient.
-
  {% endhighlight %}
+{% endtabs %}
+
+
+
+if set false, then it will be disabled or all calculated members will be deleted from the current view of the OlapClient.
+
+
 
 {% highlight xml %}
 

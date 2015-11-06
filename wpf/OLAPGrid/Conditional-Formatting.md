@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional-Formatting
+title: Conditional Formatting| OLAP Grid | Wpf | Syncfusion
 description: conditional formatting
 platform: wpf
 control: OLAP Grid
@@ -15,7 +15,7 @@ The filter criteria are specified by the OlapGridDataConditionalFormat.Condition
 
 The style for each ConditionalFormat can be specified using OlapGridDataConditionalFormat.CellStyle property which should be of type OlapGridCellStyle.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 Conditional Formatting can be used in Marketing scenarios, where you can easily track the product sales rate of different regions.
 
@@ -23,178 +23,179 @@ Conditional Formatting can be used in Marketing scenarios, where you can easily 
 
 The following code snippets show how to create an OlapGrid and to add Conditional Formats.
 
+{% tabs %}
   {% highlight xml %}
 
     
 
-<syncfusion:OlapGrid>
+	<syncfusion:OlapGrid>
 
- <syncfusion:OlapGrid.ConditionalFormats> 
+	<syncfusion:OlapGrid.ConditionalFormats> 
 
-   <!-- Adding Conditions -->                       
+	<!-- Adding Conditions -->                       
 
-   <syncfusion:OlapGridDataConditionalFormat Name="C1">
+	<syncfusion:OlapGridDataConditionalFormat Name="C1">
 
-      <!-- Specifying Cell Style -->
+	<!-- Specifying Cell Style -->
 
-      < syncfusion:OlapGridDataConditionalFormat.CellStyle>
+	< syncfusion:OlapGridDataConditionalFormat.CellStyle>
 
-          <syncfusion:OlapGridCellStyle Background="Yellow" FontFamily="Calibri" FontSize="12"/>
+	<syncfusion:OlapGridCellStyle Background="Yellow" FontFamily="Calibri" FontSize="12"/>
 
-          </syncfusion:OlapGridDataConditionalFormat.CellStyle>
+	</syncfusion:OlapGridDataConditionalFormat.CellStyle>
 
-      <!-- Specfying Conditions --> 
+	<!-- Specfying Conditions --> 
 
-      <syncfusion:OlapGridDataConditionalFormat.Conditions>
+	<syncfusion:OlapGridDataConditionalFormat.Conditions>
 
-          <syncfusion:OlapGridDataCondition ConditionType="GreaterThan" Value="2000000" MeasureElement="Internet Sales Amount" PredicateType="Or"/>
+	<syncfusion:OlapGridDataCondition ConditionType="GreaterThan" Value="2000000" MeasureElement="Internet Sales Amount" PredicateType="Or"/>
 
-          <syncfusion:OlapGridDataCondition ConditionType="LessThan" Value="5000000" MeasureElement="Internet Sales Amount" PredicateType="And"/>
+	<syncfusion:OlapGridDataCondition ConditionType="LessThan" Value="5000000" MeasureElement="Internet Sales Amount" PredicateType="And"/>
 
-          </syncfusion:OlapGridDataConditionalFormat.Conditions>
+	</syncfusion:OlapGridDataConditionalFormat.Conditions>
 
-   </syncfusion:OlapGridDataConditionalFormat>                        
+	</syncfusion:OlapGridDataConditionalFormat>                        
 
- </syncfusion:OlapGrid.ConditionalFormats>
+	</syncfusion:OlapGrid.ConditionalFormats>
 
-</syncfusion:OlapGrid>
+	</syncfusion:OlapGrid>
 
-    {% endhighlight %}
+	{% endhighlight %}
 
 
 
 
 
-  {% highlight c# %}
+	{% highlight c# %}
 
-    
 
-OlapGrid olapGrid1 = new OlapGrid();
 
-// Instantiating OlapDataManager with Connection string.
+	OlapGrid olapGrid1 = new OlapGrid();
 
-OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+	// Instantiating OlapDataManager with Connection string.
 
-// Set current report for OlapDataManager.
+	OlapDataManager olapDataManager = new OlapDataManager(connectionString);
 
-olapDataManager.SetCurrentReport(olapReport());
+	// Set current report for OlapDataManager.
 
-// Specifying OlapDataManager to Grid.
+	olapDataManager.SetCurrentReport(olapReport());
 
-olapGrid1.OlapDataManager = OlapDataManager;
+	// Specifying OlapDataManager to Grid.
 
+	olapGrid1.OlapDataManager = OlapDataManager;
 
 
- // Specifying OlapGridData Conditional Format.
 
-OlapGridDataConditionalFormat conditionalFormat = new OlapGridDataConditionalFormat();
+	// Specifying OlapGridData Conditional Format.
 
-// Adding Conditions to OlapGridData Conditional Format.
+	OlapGridDataConditionalFormat conditionalFormat = new OlapGridDataConditionalFormat();
 
-conditionalFormat.Conditions.Add(new OlapGridDataCondition() { 
+	// Adding Conditions to OlapGridData Conditional Format.
 
-            ConditionType= OlapGridDataConditionType.GreaterThan , 
+	conditionalFormat.Conditions.Add(new OlapGridDataCondition() { 
 
-            MeasureElement="Internet Sales Amount",
+	ConditionType= OlapGridDataConditionType.GreaterThan , 
 
-            Value="2000000",
+	MeasureElement="Internet Sales Amount",
 
-            PredicateType = PredicateType.Or });
+	Value="2000000",
 
-conditionalFormat.Conditions.Add(new OlapGridDataCondition() { 
+	PredicateType = PredicateType.Or });
 
-            ConditionType= OlapGridDataConditionType.LessThan , 
+	conditionalFormat.Conditions.Add(new OlapGridDataCondition() { 
 
-            MeasureElement="Internet Sales Amount",
+	ConditionType= OlapGridDataConditionType.LessThan , 
 
-            Value="5000000",
+	MeasureElement="Internet Sales Amount",
 
-            PredicateType = PredicateType.And });
+	Value="5000000",
 
+	PredicateType = PredicateType.And });
 
 
-// Specifying Cell Style to Conditional Format.
 
-conditionalFormat.CellStyle = new OlapGridCellStyle() { Background= Brushes.Yellow, FontFamily = new FontFamily("Calibri"), FontSize=12 
+	// Specifying Cell Style to Conditional Format.
 
-};
+	conditionalFormat.CellStyle = new OlapGridCellStyle() { Background= Brushes.Yellow, FontFamily = new FontFamily("Calibri"), FontSize=12 
 
-// Adding Conditions to Grid.
+	};
 
-this.olapgrid1.ConditionalFormats.Add(conditionalFormat);
+	// Adding Conditions to Grid.
 
-// Data Binding.
+	this.olapgrid1.ConditionalFormats.Add(conditionalFormat);
 
-this.olapgrid1.DataBind();
+	// Data Binding.
 
-    {% endhighlight %}
+	this.olapgrid1.DataBind();
 
+	{% endhighlight %}
 
 
 
 
-  {% highlight vbnet %}
 
-    
+	{% highlight vbnet %}
 
-Dim olapGrid1 As OlapGrid = New OlapGrid()
 
-' Instantiating OlapDataManager with Connection string.
 
-Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+	Dim olapGrid1 As OlapGrid = New OlapGrid()
 
-' Set current report for OlapDataManager.
+	' Instantiating OlapDataManager with Connection string.
 
-olapDataManager.SetCurrentReport(olapReport())
+	Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
 
-' Specifying OlapDataManager to Grid.
+	' Set current report for OlapDataManager.
 
-olapGrid1.OlapDataManager = OlapDataManager
+	olapDataManager.SetCurrentReport(olapReport())
 
+	' Specifying OlapDataManager to Grid.
 
+	olapGrid1.OlapDataManager = OlapDataManager
 
-' Specifying OlapGridData Conditional Format.
 
-Dim conditionalFormat As OlapGridDataConditionalFormat = New OlapGridDataConditionalFormat()
 
-' Adding Conditions to OlapGridData Conditional Format.
+	' Specifying OlapGridData Conditional Format.
 
-conditionalFormat.Conditions.Add(New OlapGridDataCondition() With {.ConditionType= OlapGridDataConditionType.GreaterThan, .MeasureElement="Internet Sales Amount", .Value="2000000", .PredicateType = PredicateType.Or})
+	Dim conditionalFormat As OlapGridDataConditionalFormat = New OlapGridDataConditionalFormat()
 
-conditionalFormat.Conditions.Add(New OlapGridDataCondition() With {.ConditionType= OlapGridDataConditionType.LessThan, .MeasureElement="Internet Sales Amount", .Value="5000000", .PredicateType = PredicateType.And})
+	' Adding Conditions to OlapGridData Conditional Format.
 
+	conditionalFormat.Conditions.Add(New OlapGridDataCondition() With {.ConditionType= OlapGridDataConditionType.GreaterThan, .MeasureElement="Internet Sales Amount", .Value="2000000", .PredicateType = PredicateType.Or})
 
+	conditionalFormat.Conditions.Add(New OlapGridDataCondition() With {.ConditionType= OlapGridDataConditionType.LessThan, .MeasureElement="Internet Sales Amount", .Value="5000000", .PredicateType = PredicateType.And})
 
-' Specifying Cell Style to Conditional Format.
 
-conditionalFormat.CellStyle = New OlapGridCellStyle()
 
-Dim TempFontFamily As FontFamily = New FontFamily("Calibri"), FontSize=12
+	' Specifying Cell Style to Conditional Format.
 
-Brushes.Yellow, FontFamily = New FontFamily("Calibri"), FontSize
+	conditionalFormat.CellStyle = New OlapGridCellStyle()
 
-Background= Brushes.Yellow, FontFamily
+	Dim TempFontFamily As FontFamily = New FontFamily("Calibri"), FontSize=12
 
-' Adding Conditions to Grid.
+	Brushes.Yellow, FontFamily = New FontFamily("Calibri"), FontSize
 
-Me.olapgrid1.ConditionalFormats.Add(conditionalFormat)
+	Background= Brushes.Yellow, FontFamily
 
-' Data Binding.
+	' Adding Conditions to Grid.
 
-Me.olapgrid1.DataBind()
+	Me.olapgrid1.ConditionalFormats.Add(conditionalFormat)
 
-    {% endhighlight %}
+	' Data Binding.
 
+	Me.olapgrid1.DataBind()
 
+	{% endhighlight %}
 
 
 
+
+{% endtabs %}
 
 
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGridConditionalFormatting.png](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
 
-## Sample Link
+### Sample Link
 
 ..\..\ Syncfusion\BI\WPF\OlapGrid.WPF\Samples\Appearance\Conditional Formatting Demo
 

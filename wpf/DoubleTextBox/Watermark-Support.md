@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark-Support
+title: Watermark Support| DoubleTextBox  | Wpf | Syncfusion
 description: watermark support
 platform: wpf
 control: DoubleTextBox 
@@ -13,11 +13,11 @@ Watermark is the dummy content displayed in the DoubleTextBox when the value is 
 
 
 
-
+{% tabs %}
 {% highlight xml %} XAML {% endhighlight %} 
 
 {% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} 
-
+{% endtabs %}
 
 
 ![](Watermark-Support_images/Watermark-Support_img1.png)
@@ -40,23 +40,23 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"
 
-            WatermarkText="Type Here" CornerRadius="3" 
+WatermarkText="Type Here" CornerRadius="3" 
 
-            WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
+WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
 
-            UseNullOption="True">
+UseNullOption="True">
 
 <syncfusion:DoubleTextBox.WatermarkTemplate>
 
-    <DataTemplate>
+<DataTemplate>
 
-        <Border Background="LightGray">
+<Border Background="LightGray">
 
-            <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+<TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
 
-        </Border>
+</Border>
 
-    </DataTemplate>
+</DataTemplate>
 
 </syncfusion:DoubleTextBox.WatermarkTemplate>
 

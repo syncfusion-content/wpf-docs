@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Manipulation
+title: Data Manipulation | SfDataGrid | WPF | Syncfusion
 description: data manipulation
 platform: wpf
 control: SfDataGrid
@@ -19,7 +19,7 @@ DataGrid control handles data updating with the help of INotifyPropertyChanged i
 
 SfDataGrid.LiveDataUpdateMode: This enum type (LiveDataUpdationMode) property contains the following three modes:
 
-_LiveDataUpdationMode property table_
+LiveDataUpdationMode property table
 
 <table>
 <tr>
@@ -81,8 +81,8 @@ Following screenshot illustrates the difference between AllowDataShaping and Def
 
 
 
-_LiveDataUpdateMode set to Default_
-
+LiveDataUpdateMode set to Default
+{:.caption}
 When you set LiveDataUpdateMode as AllowDataShapping, it gets updated and arranged in order immediately. 
 
 
@@ -90,8 +90,8 @@ When you set LiveDataUpdateMode as AllowDataShapping, it gets updated and arrang
 ![](Features_images/Features_img126.png)
 
 
-_LiveDataUpdateMode set as AllowDataShapping_
-
+LiveDataUpdateMode set as AllowDataShapping
+{:.caption}
 ## AddNewRow
 
 This topic provides the description for AddNewRow feature in the DataGrid control that enables you to add new data rows in the DataGrid using the UI.
@@ -129,11 +129,11 @@ The following code example illustrates how to add AddNewRow to an application:
 ![](Features_images/Features_img127.png)
 
 
-_Adding AddNewRow to the DataGrid control_
-
+Adding AddNewRow to the DataGrid control
+{:.caption}
 The following table describes the property that participates in AddNewRow.
 
-_AddNewRow property table_
+AddNewRow property table
 
 <table>
 <tr>
@@ -152,7 +152,7 @@ This is the Enum property that helps to get or set the AddNewRow position in Dat
 N> By default AddNewRowPosition is set as “None”.
 The following table describes you the event that participates in AddNewRow.
 
-_AddNewRow Event Table_
+AddNewRow Event Table
 
 <table>
 <tr>
@@ -337,8 +337,8 @@ The following screenshot illustrates this:
 
 
 
-_Changing AddNewRow watermark text_
-
+Changing AddNewRow watermark text
+{:.caption}
 The following screenshot displays the output.
 
 
@@ -347,9 +347,8 @@ The following screenshot displays the output.
 
 
 
-_DataGrid with changed AddNewRow watermark text_
-
-
+DataGrid with changed AddNewRow watermark text
+{:.caption}
 
 N> The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
 
@@ -479,8 +478,8 @@ You can add above code example to App.Xaml or in Windows.Resources. The followin
 
 
 
-_DataGrid with customized AddNewRow watermark text wrapper_
-
+DataGrid with customized AddNewRow watermark text wrapper
+{:.caption}
 ### How to validate AddNewRow
 
 SfDataGrid control provides extensive support to use validation with AddNewRow. To validate the data in AddNewRow, you can use the Attributevalidation, Data validation using INotifyDataErrorInfo, or Custom validation using the RowValidating event. The following code example illustrates custom row validation with AddNewRow:
@@ -523,8 +522,8 @@ The following screenshot illustrate the output.
 ![](Features_images/Features_img131.png)
 
 
-_Custom row validation with AddNewRow_
-
+Custom row validation with AddNewRow
+{:.caption}
 N> DataGrid adds the new data to the data source only when the data is valid.
 
 ### How to handle AddNewRow for complex properties 

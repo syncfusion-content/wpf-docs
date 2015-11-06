@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Label-Customization
+title: Label Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
 description: label customization
 platform: wpf
-control: DateTime Range Navigator
+control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ The SfDateTimeRangeNavigator helps the user to visualize large data in a simplif
 
 User can also set the Interval which they think suitable for their data, this can be done by using Interval Property as in below code snippet. 
 
-_Property table_
+### Property
 
 <table>
 <tr>
@@ -26,60 +26,52 @@ Intervals</td><td>
 Used to set the Interval type which need to be displayed in the Navigator</td></tr>
 </table>
 
-{% highlight html %}
+{% highlight xaml %}
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" >
 
+	<syncfusion:SfDateTimeRangeNavigator.Intervals> 
 
+		<syncfusion:Interval IntervalType="Quarter"/>
 
-            <syncfusion:SfDateTimeRangeNavigator.Intervals> 
+		<syncfusion:Interval IntervalType="Month"/>
 
-                <syncfusion:Interval IntervalType="Quarter"/>
+	</syncfusion:SfDateTimeRangeNavigator.Intervals>
 
-                <syncfusion:Interval IntervalType="Month"/>
+	<syncfusion:SfDateTimeRangeNavigator.Content>
 
-            </syncfusion:SfDateTimeRangeNavigator.Intervals>
+		<syncfusion:SfChart   >
 
+			<syncfusion:SfChart.PrimaryAxis>
 
+				<syncfusion:CategoryAxis Visibility="Collapsed" />
 
-            <syncfusion:SfDateTimeRangeNavigator.Content>
+			</syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:SfChart   >
+			<syncfusion:SfChart.SecondaryAxis>
 
-                    <syncfusion:SfChart.PrimaryAxis>
+				<syncfusion:NumericalAxis Visibility="Collapsed" />
 
-                        <syncfusion:CategoryAxis Visibility="Collapsed" />
+			</syncfusion:SfChart.SecondaryAxis>
 
-                    </syncfusion:SfChart.PrimaryAxis>
+			<syncfusion:FastLineBitmapSeries XBindingPath="Date" ItemsSource="{Binding power}" YBindingPath="Value">
 
-                    <syncfusion:SfChart.SecondaryAxis>
+				</syncfusion:FastLineBitmapSeries>
 
-                        <syncfusion:NumericalAxis Visibility="Collapsed" />
+		</syncfusion:SfChart>
 
-                    </syncfusion:SfChart.SecondaryAxis>
+		</syncfusion:SfDateTimeRangeNavigator.Content>
 
-                    <syncfusion:FastLineBitmapSeries XBindingPath="Date" ItemsSource="{Binding power}" YBindingPath="Value">
-
-                        </syncfusion:FastLineBitmapSeries>
-
-                </syncfusion:SfChart>
-
-                </syncfusion:SfDateTimeRangeNavigator.Content>
-
-        </syncfusion:SfDateTimeRangeNavigator>
+</syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight  %}
 
 Following is the screenshot of showing only Quarter and Month intervals in the Navigator
 
+![](Label-Customization_images/Label-Customization_img1.png)
 
-
-![C:/Users/ApoorvahR/Desktop/5.png](Label-Customization_images/Label-Customization_img1.png)
-
-
-
-_Quarter and Month intervals in the Navigator_
-
+Quarter and Month intervals in the Navigator
+{:.caption}
 
 
 ## The Interval has the following types 
@@ -133,35 +125,31 @@ YearInterval</td><td>
 
 Label Style can be customized using the LabelBarStyle property and this can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.
 
-{% highlight html %}
+{% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
-                    <chart:LabelBarStyle Background="Red" LabelHorizontalAlignment="Left">
+	<chart:LabelBarStyle Background="Red" LabelHorizontalAlignment="Left">
 
-                        <chart:LabelBarStyle.LabelStyle>
+		<chart:LabelBarStyle.LabelStyle>
 
-                            <Style TargetType="TextBlock">
+			<Style TargetType="TextBlock">
 
-                                <Setter Property="FontSize" Value="10"/>
+				<Setter Property="FontSize" Value="10"/>
 
-                            </Style>
+			</Style>
 
-                        </chart:LabelBarStyle.LabelStyle>
+		</chart:LabelBarStyle.LabelStyle>
 
-                    </chart:LabelBarStyle>
+	</chart:LabelBarStyle>
 
-  </chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+</chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
 {% endhighlight %}
 
 Following is the screenshot of Label HorizontalAlignment set to left.
 
+![](Label-Customization_images/Label-Customization_img2.png)
 
-
-![C:/Users/ApoorvahR/Desktop/6.png](Label-Customization_images/Label-Customization_img2.png)
-
-
-
-_Label HorizontalAlignment set to left_
-
+Label HorizontalAlignment set to left
+{:.caption}

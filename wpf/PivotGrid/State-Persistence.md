@@ -1,17 +1,17 @@
 ---
 layout: post
-title: State Persistence
+title: State Persistence| PivotGrid | Wpf | Syncfusion
 description: State Persistence
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## State Persistence
+# State Persistence
 
 This feature enables the user to maintain the collapsed or expanded state in the PivotGrid when pivot schema is changed.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 The user can maintain collapsed or expanded states and save/load these settings dynamically in the PivotGrid control. 
 
@@ -21,18 +21,17 @@ The following image shows state persistence in the PivotGrid control:
 
 
 
-#### Properties
+### Properties
 
-_Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 StatePersistenceEnabled</td><td>
@@ -43,16 +42,17 @@ Boolean</td><td>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 The user can find a sample in the following location:
 
 SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Appearance\State Persistence Demo
 
-#### Adding State Persistence to an Application 
+## Adding State Persistence to an Application 
 
 The user can enable or disable the state persistence by using the following code snippets in an application:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -68,5 +68,5 @@ pivotGrid1.StatePersistenceEnabled = true;
 pivotGrid1.StatePersistenceEnabled = true
 
 {% endhighlight %} 
-
+{% endtabs %}
 

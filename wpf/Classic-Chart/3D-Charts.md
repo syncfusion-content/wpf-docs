@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D Charts
+title: 3D Charts | Chart(Classic) | wpf | Syncfusion
 description: 3D Charts
 platform: wpf
 control: Chart (Classic)
@@ -11,9 +11,11 @@ documentation: ug
 ## Enabling 3D Mode
 
 3D mode can be easily enabled on a ChartArea using the View3DMode property as follows.
+
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sfchart:Chart Name="chart1">
@@ -33,10 +35,8 @@ documentation: ug
 </sfchart:Chart>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 
 Chart chart = new Chart();
@@ -49,13 +49,15 @@ chart.Areas[0].Series.Add(new ChartSeries(ChartTypes.Column));
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img222.jpeg)
 
 
 
 3D Mode is supported in the following chart types.
 
-_3D Supported Charts_
+
 
 <table>
 <tr>
@@ -103,9 +105,7 @@ Pie</td></tr>
 StepLine</td><td>
 Doughnut</td></tr>
 </table>
-See Also
 
-Chart Types, Customizing Side Walls, Camera Projection Views
 
 ## Customizing Side Walls
 
@@ -121,9 +121,10 @@ Chart Types, Customizing Side Walls, Camera Projection Views
 
 
 The following lines of code can be used to customize the side wall's look and feel.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sfchart:ChartArea View3DMode="True">
@@ -150,8 +151,6 @@ The following lines of code can be used to customize the side wall's look and fe
 {% highlight c# %}
 
 
-
-
 chart1.Areas[0].Chart3DSettings.ShowBackWall = true;
 
 chart1.Areas[0].Chart3DSettings.ShowBottomWall = true;
@@ -166,21 +165,17 @@ chart1.Areas[0].Chart3DSettings.BottomWallBackground = Brushes.AliceBlue;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img223.jpeg)
 
-
-
-See Also
-
-Enabling 3D Mode, Camera Projection Views
 
 ## Camera Projection Views
 
 Chart 3D supports two types of camera projection views namely perspective and orthographic. Camera projection for the chart can be changed using the CameraProjection property of the Chart3D type, as follows.
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartArea View3DMode="True">
 
@@ -196,24 +191,16 @@ Chart 3D supports two types of camera projection views namely perspective and or
 {% highlight c# %}
 
 
-
-
-
 chart1.Areas[0].Chart3DSettings.CameraProjection = CameraProjection.Perspective;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img224.jpeg)
-
-
 
 ![](Chart-Controls_images/Chart-Controls_img225.jpeg)
 
-
-
-See Also
-
-Enabling 3D Mode, Customizing Side Walls
 
 ## 3-D Manhattan Bar Chart 
 
@@ -234,9 +221,8 @@ Enabling 3D Mode, Customizing Side Walls
 
 Here, the number of working days and wages of the employee in X, Y and Z axes are plotted correspondingly.
 
-Properties
+### Properties
 
-_Properties Table_
 
 <table>
 <tr>
@@ -269,11 +255,10 @@ To view samples:
 1. Open the WPF Sample Browser from the dashboard. 
 2. Navigate to WPF Chart -> Chart Area -> 3D Manhattan Chart. 
 
-
-
 Adding 3D Manhattan Bar Chart to an Application 
-{% highlight xml %}
 
+{% tabs %}
+{% highlight xml %}
 
         <sync:Chart x:Name="Chart1" >
 
@@ -288,10 +273,9 @@ Adding 3D Manhattan Bar Chart to an Application
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
 Chart1.Areas[0].IsClustered = true;
 {% endhighlight  %}
+{% endtabs %}
 
 ## 3-D Chart with Data Points in Z-Axis
 
@@ -313,7 +297,6 @@ For example, in the column chart type, BindingPathsY[0] corresponds to a mapping
 
 Following are the properties of the ChartArea class pertain to the z-axis feature.
 
-_Properties of ChartArea class_
 
 <table>
 <tr>
@@ -354,10 +337,9 @@ To view the Surface Chart demo from the dashboard:
 ### Adding Z-Axis to the Chart
 
 The z-axis (or depth axis) for 3-D charts can be enabled using EnableDepthAxis. The following code example illustrates this.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea Name="Area1" EnableDepthAxis="True" View3DMode="True"
 
@@ -371,7 +353,11 @@ this.Area1.EnableDepthAxis = true;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The attributes of the z-axis (or depth axis) can be set using the DepthAxis property. The following code example illustrates this.
+
+{% tabs %}
 {% highlight xml %}
 
 
@@ -390,8 +376,6 @@ LabelFontWeight="Bold"/>
 {% highlight c# %}
 
 
-
-
 this.Area1.DepthAxis.Header = "Z Axis";
 
 this.Area1.DepthAxis.RangePadding = ChartRangePaddingType.Normal;
@@ -400,3 +384,4 @@ this.Area1.DepthAxis.LabelForeground = new SolidColorBrush(Colors.Black);
 
 this.Area1.DepthAxis.IsAutoSetRange = true;
 {% endhighlight  %}
+{% endtabs %}

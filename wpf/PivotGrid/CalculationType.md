@@ -1,23 +1,23 @@
 ---
 layout: post
-title: CalculationType
+title: CalculationType| PivotGrid | Wpf | Syncfusion
 description: calculationtype
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## CalculationType
+# CalculationType
 
 CalculationType is an enumerator defined in the PivotComputationInfo class that is used to specify the type of the calculation. The following table lists the various calculation types that are used for performing calculations:
 
-CalculationType table
+
 
 <table>
 <tr>
 <th>
-{{ '**CalculationType**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+CalculationType</th><th>
+Description</th></tr>
 <tr>
 <td>
 NoCalculation</td><td>
@@ -85,11 +85,11 @@ Displays the rank of selected values in a specific field, listing the largest it
 </table>
 
 
-### Adding CalculationType in Application
+## Adding CalculationType in Application
 
 By default, the value of CalculationType is NoCalculation. To change the CalculationType, you can use the following code examples.
 
-#### Through XAML
+### Through XAML
 
 1. First you need to add PivotGridControl by using syncfusion:PivotGridControl class.
 2. Then, create new PivotItem by using PivotGridControl.PivotComputationInfo class.
@@ -118,7 +118,7 @@ By default, the value of CalculationType is NoCalculation. To change the Calcula
 
 {% endhighlight %} 
 
-#### Through Code Behind
+### Through Code Behind
 
 1. First you need to create a new PivotGridControl by using PivotGridControl class in Window_Loaded() event handler.
 2. Then, create a new PivotItem by using PivotComputationInfo class in PivotGridControl.
@@ -126,7 +126,7 @@ By default, the value of CalculationType is NoCalculation. To change the Calcula
 4. Add PivotCalculation into PivotGridControl.
 
 
-
+{% tabs %}
 {% highlight C# %}   
 
 
@@ -175,10 +175,11 @@ End Sub
 
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img6.png)
 
 
 
 PivotValues as PercentageOfParentColumnTotal calculation
+{:.caption}

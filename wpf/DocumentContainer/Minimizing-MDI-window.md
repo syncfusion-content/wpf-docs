@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minimizing-MDI-window
+title: Minimizing MDI window| DocumentContainer | Wpf | Syncfusion
 description: minimizing mdi window
 platform: wpf
 control: DocumentContainer

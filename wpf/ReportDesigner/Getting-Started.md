@@ -55,7 +55,7 @@ Title="MainWindow" Height="600" Width="1000" Icon="App.ico">
 
 
 
-Note: The following code is automatically generated in the XAML window.
+  N> The following code is automatically generated in the XAML window.
 
 
 {% highlight xml %}
@@ -72,26 +72,24 @@ x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
 
 {% endhighlight %}
 
-2.Check whether the following highlighted references are added to the References folder.
+3.Check whether the following highlighted references are added to the References folder.
 
-  ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig4.png](Getting-Started_images/Getting-Started_img2.png)
+  ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
-Note: After building and debugging the application, the appearance of the Report Designer is modified as shown in the following illustration.
+  N>  After building and debugging the application, the appearance of the Report Designer is modified as shown in the following illustration.
 
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-82.png](Getting-Started_images/Getting-Started_img3.png)
+  ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
-3.To view the Properties grid, click the View tab and select the Properties check box. 
+4.To view the Properties grid, click the View tab and select the Properties check box. 
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-81.png](Getting-Started_images/Getting-Started_img4.png)
+  ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 

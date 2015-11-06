@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner
+title: Range Adorner| DoubleTextBox  | Wpf | Syncfusion
 description: range adorner
 platform: wpf
 control: DoubleTextBox 
@@ -17,9 +17,9 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 
 
 
-Properties
+### Properties
 
-Property Table
+
 
 <table>
 <tr>
@@ -39,10 +39,13 @@ bool </td></tr>
 The EnableRangeAdorner property must be set either in XAML or the code file.
 
 
+{% tabs %}
+{% highlight xml %}  
+EnableRangeAdorner="True"
+{% endhighlight %}
 
-{% highlight xml %}  EnableRangeAdorner="True"{% endhighlight %}
-
-{% highlight C# %}   control.EnableRangeAdorner = true;{% endhighlight %}
-
-
+{% highlight C# %}  
+ control.EnableRangeAdorner = true;
+ {% endhighlight %}
+{% endtabs %}
 

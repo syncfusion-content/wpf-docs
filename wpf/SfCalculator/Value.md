@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Value
+title: Value | SfCalculator | wpf | Syncfusion
 description: value
 platform: wpf
-control: Calculator
+control: SfCalculator
 documentation: ug
 ---
 

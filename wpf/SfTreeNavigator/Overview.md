@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfTreeNavigator | wpf | Syncfusion
 description: overview  
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-ToolTip-for-GroupBar
+title: Setting ToolTip for GroupBar| GroupBar | Wpf | Syncfusion
 description: setting tooltip for groupbar
 platform: wpf
 control: GroupBar
@@ -11,7 +11,7 @@ documentation: ug
 
 ToolTip is one of the important user interactive feature available in GroupBar control. You can set the tooltip for the collapse button and expand button using the properties listed below.
 
-Property table
+### Property table
 
 <table>
 <tr>
@@ -33,10 +33,46 @@ Use the below code snippet to set this property.
 
 
 
+{% tabs %}
+{% highlight xml %}
+<!-- Adding GroupBar -->
+<syncfusion:GroupBar Height="200" CollapseButtonToolTip="Expand"  VisualMode="StackMode" AllowCollapse="True"  ExpandButtonToolTip="Collapse" Width="230" Name="groupBar"> 
+ <!-- Adding GroupBarItem -->  
+ <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">
+ <!-- Adding content for GroupBar item using panel -->   
+ <StackPanel Orientation="Vertical">   
+ <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/> 
+ <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>  
+ <RadioButton Margin="4,2,2,2">Vertical</RadioButton>   
+ <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>  
+ <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>   
+ <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>  
+ </StackPanel>  
+ </syncfusion:GroupBarItem> 
 
-{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" CollapseButtonToolTip="Expand"  VisualMode="StackMode" AllowCollapse="True"  ExpandButtonToolTip="Collapse" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar>{% endhighlight %}
+ <!-- Adding GroupBarItem --> 
+ <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">   
+ <!-- Adding content for GroupBar item using GroupView -->
+ <syncfusion:GroupView Name="groupView" IsListViewMode="True">  
+ <syncfusion:GroupViewItem Text="List View"/>     
+ <syncfusion:GroupViewItem Text="Show ContextMenu"/>    
+ <syncfusion:GroupViewItem Text="Show ToolTip"/>   
 
-{% highlight C# %}//Setting the visual mode as StackModegroupBar.VisualMode = VisualMode.StackMode;  //Setting AllowCollapse propertygroupBar.AllowCollapse = true;//Setting the tooltip for Expand buttongroupBar.ExpandButtonToolTip = "Collapse";//Setting the tooltip for Collapse buttongroupBar.CollapseButtonToolTip = "Expand";{% endhighlight %}
+ </syncfusion:GroupView> 
+ </syncfusion:GroupBarItem>
+ </syncfusion:GroupBar>
+ {% endhighlight %}
 
+{% highlight C# %}
+//Setting the visual mode as StackMode
+groupBar.VisualMode = VisualMode.StackMode;  
+//Setting AllowCollapse property
+groupBar.AllowCollapse = true;
+//Setting the tooltip for Expand button
+groupBar.ExpandButtonToolTip = "Collapse";
+//Setting the tooltip for Collapse button
+groupBar.CollapseButtonToolTip = "Expand";
+{% endhighlight %}
+{% endtabs %}
 
 

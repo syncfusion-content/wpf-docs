@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master-Details-View
+title: Master Details View | SfDataGrid | WPF | Syncfusion
 description: master-detailsview
 platform: wpf
 control: SfDataGrid
@@ -132,8 +132,8 @@ The following code example illustrates how to define the GridViewDefinition.
 
 
 
-_Data Grid with Master Details View_
-
+Data Grid with Master Details View
+{:.caption}
 N> In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View.
 
 The following topics explain different methods available to expand or collapse and events to handle during expanding or collapsing. You can use these methods and events to perform your internal operation like stores details view items source or record.
@@ -411,7 +411,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-
+{% highlight C# %}
 
 
 			public class DTModel1
@@ -440,13 +440,13 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 			} 
 
-
+{% endhighlight %}
 
    ### DataTable 2:
 
 
 
-
+{% highlight C# %}
 
 
 			public class DTModel2
@@ -469,7 +469,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 			} 
 
-
+{% endhighlight %}
 
    N> Both tables have OrderID as common property to make relation.
 
@@ -477,7 +477,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-
+{% highlight C# %}
 
 
 			public class DTRepositiory
@@ -750,13 +750,13 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 			}
 
-
+{% endhighlight %}
 
 7. The highlighted lines in the above code example make the Master-Details View.  Now, set ItemsSource byusing the following code example. 
 
 
 
-
+{% highlight C# %}
 
 
 			public class DTViewModel : INotifyPropertyChanged
@@ -869,13 +869,13 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 			}
 
-
+{% endhighlight %}
 
 8. Bind ItemsSource to the Grid.
 
 
 
-
+{% highlight xml %}
 
 
 
@@ -915,14 +915,14 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-
+{% endhighlight %}
 
 9. You can enable the AutogGenerateRelations. Internally, the SfDataGrid searches the relation from data set and makes the Nested Grid. To disable it, you can specify the relation names in the RelationalColumn. The following code example illustrates about the AutogGenerateRelations.
 
 
 
 
-
+{% highlight xml %}
 
 
 			<Window x:Class="SimpleApplication.MainWindow"
@@ -968,7 +968,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 			</Window>
 
 
-
+{% endhighlight %}
 
 
 10. The following screenshot renders the output.
@@ -979,8 +979,9 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-   _Data Grid with Master-Detail View from DataTable relations_
-   {:.prettyprint}
+   Data Grid with Master-Detail View from DataTable relations
+   {:.caption}
+   
 
 ## Master-Detail View from Collection property
 
@@ -997,7 +998,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 
 
-
+{% highlight C# %}
 
 
 			public class OrderInfo
@@ -1110,14 +1111,14 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 			}
 
-
+{% endhighlight %}
 
    The ProductDetails property is a List of ProductInfo type. Here you can find the class information of the ProductInfo class. You can add the following code example in a newly created class file and save it as ProductInfo.cs file.
 
 
 
 
-
+{% highlight C# %}
     
 			public class ProductInfo
 			{    
@@ -1134,7 +1135,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 			 set { productName = value; }    
 			 }
 			}
-
+{% endhighlight %}
 
    N> Both parent collection and child collection have key property OrderID.
 
@@ -1142,7 +1143,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 
 
-
+{% highlight C# %}
 
 
 			public class OrderInfoRepositiory
@@ -1271,7 +1272,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 			}
 
-   {:.prettyprint}			
+{% endhighlight %}
 
 
 1. Now, open XAML page in your application. Add names space for the SfDataGrid and create simple application with the SfDataGrid.
@@ -1280,7 +1281,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 
 
-
+{% highlight xml %}
 
 
 			<Window x:Class="SimpleApplication.MainWindow"
@@ -1322,7 +1323,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 			</Window>
 
 
-
+{% endhighlight %}
 
 
 4. Execute the application; Grid is loaded with Master Details Grid. Click the first record’s expander to render the following output.
@@ -1331,8 +1332,9 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 
 
-   _Data Grid with Master-Detail View from Collection property_
-   {:.prettyprint}
+   Data Grid with Master-Detail View from Collection property
+   {:.caption}
+   
    
 ## How To
 
@@ -1523,8 +1525,8 @@ The following screenshot renders the output of the above code examples. Both giv
 
 
 
-_Customizing columns Master-Detail view_
-
+Customizing columns Master-Detail view
+{:.caption}
 You can customize the columns by using the AutoGeneratingRelations event (when you are auto generating the relations) also where you can get GridViewDefintion from the AutoGeneratingRelationsArgs. You can wire that event and customize columns within that event. The following code example explains you how to customize the columns.
 
 
@@ -1553,7 +1555,8 @@ The following screenshot displays the output.
 
 
 
-_Customized columns Master-Detail view_
+Customized columns Master-Detail view
+{:.caption}
 
 ### Handle events for Master-Detail View
 
@@ -1767,8 +1770,8 @@ void sfdatagrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.A
 
 
 
-_Master-Details View with set properties_
-
+Master-Details View with set properties
+{:.caption}
 ### Get SelectedItem in DetailsViewGrid
 
 The SfDataGrid has the SelectedDetailsViewGrid property that returns the Selected Details-View Grid when you use GridViewDefinition. You can access the SelectedItem or SelectedItems via the SelectedDetailsViewGrid.SelectedItem property. You can’t access the SelectedItem property via the GridViewDefinition.DataGrid property. 

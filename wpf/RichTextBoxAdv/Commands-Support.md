@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Commands-Support
+title: Commands Support| RichTextBoxAdv | Wpf | Syncfusion
 description: commands support
 platform: wpf
 control: RichTextBoxAdv
@@ -11,11 +11,11 @@ documentation: ug
 
 The RichTextBoxAdv control provides built-in static commands that showcase the features available in RichTextBoxAdv.
 
-## Properties
+### Properties
 
 
 
-Property Table
+
 
 <table>
 <tr>

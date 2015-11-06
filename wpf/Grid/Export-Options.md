@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export-Options
+title: Export Options | GridControl | wpf | Syncfusion
 description: export options
 platform: wpf
 control: Grid Control
@@ -243,6 +243,7 @@ When you are ready to export the entire grid, click Export Whole Grid; the grid 
 ### Export Selected Range
 
 You can convert selected grid content to CSV format by using the following code:
+{%tabs%}
 
 {% highlight c# %}
 
@@ -279,6 +280,7 @@ gc.Model.ExportToCSV(range, "Sample.csv")
 End If
 
 {% endhighlight  %}
+{%endtabs%}
 
 When the code runs, the following output displays.
 

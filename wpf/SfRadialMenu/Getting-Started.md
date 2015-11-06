@@ -16,7 +16,7 @@ Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll)
 The following code sample shows how to create the RadialMenu from code-behind and XAML. 
 
 {%tabs%}
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -29,7 +29,7 @@ The following code sample shows how to create the RadialMenu from code-behind an
 
 <navigation:SfRadialMenuItem Header="Bold"/>
 
-<navigation:RadialMenuItem Header="Cut"/> 
+<navigation:SfRadialMenuItem Header="Cut"/> 
 
 <navigation:SfRadialMenuItem Header="Copy"/> 
 

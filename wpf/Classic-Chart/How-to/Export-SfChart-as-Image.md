@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export-SfChart-as-Image
+title: Export SfChart as Image  | wpf | Syncfusion
 description: export sfchart as image
 platform: wpf
 control: Chart (Classic)
@@ -19,12 +19,7 @@ In order to export the SfChart control as an image, the Save method needs to be 
 The following code examples can be used to export the SfChart as an image:
 {% highlight c# %}
 
-
 chart.Save("my.gif");
-
-
-
- 
 
             SaveFileDialog sfd = new SaveFileDialog();
 

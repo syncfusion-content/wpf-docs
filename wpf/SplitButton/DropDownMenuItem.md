@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DropDownMenuItem
+title: DropDownMenuItem | SplitButton | wpf | Syncfusion
 description: dropdownmenuitem
 platform: wpf
 control: SplitButtonAdv

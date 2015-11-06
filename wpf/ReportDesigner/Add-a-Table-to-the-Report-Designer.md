@@ -15,7 +15,7 @@ You can add tables to the Report Designer and drag the data fields to the table 
 
 
 
-  ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig20.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img1.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img1.png)
 
 
 
@@ -23,7 +23,7 @@ You can add tables to the Report Designer and drag the data fields to the table 
 
 
 
-  ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig21.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img2.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img2.png)
 
 
 
@@ -33,15 +33,15 @@ You can add tables to the Report Designer and drag the data fields to the table 
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-10.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img3.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img3.png)
 
 
 
-Steps to add a column to the table:
+## Steps to add a column to the table:
 
 1.Right click a cell where you want to insert a column. 
 
-  ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig23.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img4.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img4.png)
 
 
 
@@ -49,29 +49,30 @@ Steps to add a column to the table:
 
 2.Click Insert Column, and then click Left to insert the column to the left of the cell or click Right to insert the column to right of the cell.
 
-Note: When a new column is inserted in the table, you can drag a data field to the inserted column.
+  N>  When a new column is inserted in the table, you can drag a data field to the inserted column.
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-12.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img5.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img5.png)
 
 
 
-Steps to Add a Parent Group to theTable:
+## Steps to Add a Parent Group to theTable:
 
-1.Right click a cell where you want to insert a parent group. 
+1.Right click a cell where you want to insert a parent group.
+ 
 2.Click Add Group and then select Parent Group.
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-13.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img6.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img6.png)
 
 
 
-Note: In the given example, all EmployeeIDs are grouped with ManagerIDs. The ManagerID column is shown to the left of the EmployeeID.
+   N> In the given example, all EmployeeIDs are grouped with ManagerIDs. The ManagerID column is shown to the left of the EmployeeID.
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-14.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img7.png)
+   ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img7.png)
 
 
 
@@ -81,7 +82,7 @@ You can apply styles to cells of the table by using the Properties grid or Prope
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-16.png](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img8.png)
+  ![](Add-a-Table-to-the-Report-Designer_images/Add-a-Table-to-the-Report-Designer_img8.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | SfDataGrid | WPF | Syncfusion
 description: localization
 platform: wpf
 control: SfDataGrid
@@ -30,8 +30,8 @@ The following steps illustrate how to implement the Localization support in your
 
 
 
-_Adding default resource file in resource folder_
-
+Adding default resource file in resource folder
+{:.caption}
 * Enter the Name and Value in Resource file. 
 
 
@@ -40,8 +40,8 @@ _Adding default resource file in resource folder_
 
 
 
-_Entering Name and Value in Resource file_
-
+Entering Name and Value in Resource file
+{:.caption}
 ## Set Culture Information in Application:
 
 The CultureInformation is set in the Application before the InitializeComponent() method is called. Now, the Application is set to the German Culture info. The following code example explains the implementation of this,
@@ -77,11 +77,10 @@ The following screenshot displays the output.
 
 
 
-_Culture Information in Application_
-
+Culture Information in Application
+{:.caption}
 Properties:
 
-_Property Table_
 
 <table>
 <tr>

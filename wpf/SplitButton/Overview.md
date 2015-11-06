@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | SplitButton | wpf | Syncfusion
 description: overview
 platform: wpf
 control: SplitButtonAdv
@@ -14,6 +14,7 @@ The SplitButtonAdv control displays a button with splitter, which provides both 
 
 
 ![](Overview_images/Overview_img1.png)
+
 
 
 

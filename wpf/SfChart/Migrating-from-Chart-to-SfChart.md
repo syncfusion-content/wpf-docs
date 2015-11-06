@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrating-from-Chart-to-SfChart
+title: Migrating from Chart to SfChart| SfChart | Wpf | Syncfusion
 description: migrating from chart to sfchart
 platform: wpf
 control: SfChart
@@ -80,6 +80,7 @@ chart.Areas.Add(area);.
 
 Following code example illustrates the initialization of SfChart that is equivalent to the above code example.
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart Header="ChartArea" AreaBackground="Red" AreaBorderBrush="Gray" AreaBorderThickness="5" SideBySideSeriesPlacement="True"  />
@@ -98,6 +99,7 @@ chart.AreaBorderThickness = new Thickness(5);
 chart.SideBySideSeriesPlacement = true;
 
 {% endhighlight %}
+{% endtabs %}
 
 The following table illustrates the API comparison between ChartArea and SfChart.
 
@@ -194,19 +196,19 @@ Gets or sets width for SyncChartAreas splitter</td></tr>
 The Legends are same for both Chart and SfChart except that you can add multiple Legends for the SfChart.
  The Legend property in ChartArea accepts single Legend for whole Chart. In case of SfChart, the Legend property of
  the SfChart is an object that accepts one or more Legends based on your requirement. 
- [For more details](http://docs.syncfusion.com/winrt/sfchart/legend)
+ [For more details](http://help.syncfusion.com/winrt/sfchart/legend)
 
 The following code example illustrates the usage of Legend in Chart and SfChart.
 
 ### Chart
-
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartArea>
 
   <syncfusion:ChartArea.Legend>
 
-                    <syncfusion:ChartLegend syncfusion:Chart.Dock="Floating" Orientation="Vertical"  OffsetX="200" OffsetY="200" ItemTemplate="{StaticResourcelegend}" CheckBoxVisibility="Collapsed"/>
+ <syncfusion:ChartLegend syncfusion:Chart.Dock="Floating" Orientation="Vertical"  OffsetX="200" OffsetY="200" ItemTemplate="{StaticResourcelegend}" CheckBoxVisibility="Collapsed"/>
 
   </syncfusion:ChartArea.Legend>
 
@@ -234,16 +236,18 @@ area.Legend = legend;
 
 chart.Areas.Add(area)
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart>
 
 <syncfusion:SfChart.Legend>
 
-                <syncfusion:ChartLegend  ItemTemplate="{StaticResource legend}"CheckBoxVisibility="Visible" LegendPosition="Outside"  Orientation="Vertical"OffsetY="200" OffsetX="200"   DockPosition="Floating"/>
+<syncfusion:ChartLegend  ItemTemplate="{StaticResource legend}"CheckBoxVisibility="Visible" LegendPosition="Outside"  Orientation="Vertical"OffsetY="200" OffsetX="200"   DockPosition="Floating"/>
 
 </syncfusion:SfChart.Legend>
 
@@ -274,6 +278,7 @@ legend.LegendPosition = LegendPosition.Outside;
 
 chart.Legend = legend;
 {% endhighlight %}
+{% endtabs %}
 
 
 The following table illustrates the API comparison between ChartArea and SfChart.
@@ -530,6 +535,7 @@ Gets or sets the zoom position value.</td></tr>
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <chart:ChartArea>
@@ -538,35 +544,35 @@ Gets or sets the zoom position value.</td></tr>
 
 <chart:ChartAxis  ValueType="DateTime"  IntersectAction="Hide" 
 
-                  IsAutoSetRange="False" DateTimeRange="2010/01/01,2011/01/01" 
+IsAutoSetRange="False" DateTimeRange="2010/01/01,2011/01/01" 
 
-                  SmallTickSize="6" SmallTicksPerInterval="5" 
+SmallTickSize="6" SmallTicksPerInterval="5" 
 
-                  TickLinesPosition="Outside" TickSize="10" 
+TickLinesPosition="Outside" TickSize="10" 
 
-                  LabelsSource="{Binding power}" ContentPath="Content" 
+LabelsSource="{Binding power}" ContentPath="Content" 
 
-                  PositionPath="Position" 
+PositionPath="Position" 
 
-                  LabelsPostfix="{StaticResource postLabel}" 
+LabelsPostfix="{StaticResource postLabel}" 
 
-                  LabelsPrefix="{StaticResource preLabel}" 
+LabelsPrefix="{StaticResource preLabel}" 
 
-                  DesiredIntervalsCount="5"  
+DesiredIntervalsCount="5"  
 
-                  LabelDateTimeFormat="MM:dd:yy" RangePadding="Normal"  
+LabelDateTimeFormat="MM:dd:yy" RangePadding="Normal"  
 
-                  LabelPosition="Outside" Header="X-Axis" 
+LabelPosition="Outside" Header="X-Axis" 
 
-                  EdgeLabelsDrawingMode="Center"   IsInversed="False" 
+EdgeLabelsDrawingMode="Center"   IsInversed="False" 
 
-                  LabelRotateAngle="0" AxisVisibility="Visible" 
+LabelRotateAngle="0" AxisVisibility="Visible" 
 
-                  EnableAutoIntervalOnZooming="False"  ZoomFactor="1" 
+EnableAutoIntervalOnZooming="False"  ZoomFactor="1" 
 
-                  ZoomPosition="1" chart:ChartArea.ShowGridLines="True" 
+ZoomPosition="1" chart:ChartArea.ShowGridLines="True" 
 
-                  />
+/>
 
 </chart:Chart.PrimaryAxis>
 
@@ -641,9 +647,11 @@ primaryAxis.ZoomPosition = 0d;
 area.PrimaryAxis = primaryAxis;
 
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <sfchart:SfChart>
@@ -652,39 +660,39 @@ area.PrimaryAxis = primaryAxis;
 
 <sfchart:DateTimeAxis Header="X-Axis" OpposedPosition="True" 
 
-                      RangePadding="Auto" 
+RangePadding="Auto" 
 
-                      DesiredIntervalsCount="5"  IsInversed="False" 
+DesiredIntervalsCount="5"  IsInversed="False" 
 
-                      LabelFormat="MM/dd/yy" RangePadding="Auto" 
+LabelFormat="MM/dd/yy" RangePadding="Auto" 
 
-                      Interval="1"  Minimum="2010/01/01" Maximum="2011/01/10" 
+Interval="1"  Minimum="2010/01/01" Maximum="2011/01/10" 
 
-                      IntervalType="Years" LabelsPosition="Outside" 
+IntervalType="Years" LabelsPosition="Outside" 
 
-                      LabelsIntersectAction="Hide"  TickLinesPosition="Outside" 
+LabelsIntersectAction="Hide"  TickLinesPosition="Outside" 
 
-                      Visibility="Visible" EnableScrollBar="False" 
+Visibility="Visible" EnableScrollBar="False" 
 
-                      EdgeLabelsDrawingMode="Center" 
+EdgeLabelsDrawingMode="Center" 
 
-                      EnableAutoIntervalOnZooming="True"  
+EnableAutoIntervalOnZooming="True"  
 
-                      ShowTrackBallInfo="True" PlotOffset="20" 
+ShowTrackBallInfo="True" PlotOffset="20" 
 
-                      LabelsSource="{Binding power}" ShowGridline="True" 
+LabelsSource="{Binding power}" ShowGridline="True" 
 
-                      ContentPath="Content" PositionPath="Postion" 
+ContentPath="Content" PositionPath="Postion" 
 
-                      PostfixLabelTemplate="{StaticResource postLabel}" 
+PostfixLabelTemplate="{StaticResource postLabel}" 
 
-                      PrefixLabelTemplate="{StaticResource preLabel}" 
+PrefixLabelTemplate="{StaticResource preLabel}" 
 
-                      SmallTickLinesPosition="Outside" SmallTicksPerInterval="5" 
+SmallTickLinesPosition="Outside" SmallTicksPerInterval="5" 
 
-                      TickLineSize="6" ZoomFactor="1" ZoomPosition="0" 
+TickLineSize="6" ZoomFactor="1" ZoomPosition="0" 
 
-                      />
+/>
 
 <sfchart:SfChart.PrimaryAxis/>
 
@@ -773,23 +781,26 @@ primaryAxis.ZoomPosition = 0d;
 
 chart.PrimaryAxis = primaryAxis;
 {% endhighlight %}
+{% endtabs %}
+
 Following code example illustrates how to customize gridlines.
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <chart:ChartArea.GridLineStroke>
 
-   <Pen Brush="#c6c6c6" >
+<Pen Brush="#c6c6c6" >
 
-       <Pen.DashStyle>
+<Pen.DashStyle>
 
-          <DashStyle Dashes="1,3"/>
+<DashStyle Dashes="1,3"/>
 
-       </Pen.DashStyle>
+</Pen.DashStyle>
 
-   </Pen>
+</Pen>
 
 </chart:ChartArea.GridLineStroke>
 
@@ -807,20 +818,22 @@ pen.Brush = Brushes.Red;
 
 ChartArea.SetGridLineStroke(primaryAxis, pen);
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <sfchart:NumericalAxis.MajorGridLineStyle>
 
-        <Style TargetType="Line">
+<Style TargetType="Line">
 
-        <Setter Property="StrokeDashArray" Value="1,3"></Setter>
+<Setter Property="StrokeDashArray" Value="1,3"></Setter>
 
-        <Setter Property="Stroke" Value="#c6c6c6" />
+<Setter Property="Stroke" Value="#c6c6c6" />
 
-        </Style>
+</Style>
 
 </sfchart:NumericalAxis.MajorGridLineStyle>
 {% endhighlight %}
@@ -835,6 +848,7 @@ lineStyle.Setters.Add(new Setter(Line.StrokeProperty, Brushes.Red));
 
 primaryAxis.MajorGridLineStyle = lineStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ## Series
 
@@ -848,43 +862,43 @@ Like Axis, ChartSeries architecture is also different for Chart and SfChart. Ins
 
 <syncfusion:ChartSeries Type="Line"  ShowToolTip="True" 
 
-                   Interior="Blue" ShowSmartLabels="True"
+Interior="Blue" ShowSmartLabels="True"
 
-                   LegendIcon="Diamond"
+LegendIcon="Diamond"
 
-                   AdornmentIntersectAction="AdjustAroundPoints"
+AdornmentIntersectAction="AdjustAroundPoints"
 
-                   ColorEach="True" Palette="Metro"
+ColorEach="True" Palette="Metro"
 
-                   StrokePalette="Metro" IsRotated="False"
+StrokePalette="Metro" IsRotated="False"
 
-                   IsIndexed="True" IsVisibleOnLegend="True"
+IsIndexed="True" IsVisibleOnLegend="True"
 
-                   IsSortData="False" SortBy="X"
+IsSortData="False" SortBy="X"
 
-                   SortDirection="Ascending"
+SortDirection="Ascending"
 
-                   ShowDataLabels="True"  EnableEffects="True" 
+ShowDataLabels="True"  EnableEffects="True" 
 
-                   IsVisible="True"  StrokeThickness="3"
+IsVisible="True"  StrokeThickness="3"
 
-                   EnableAnimation="True" AnimateOption="Fade"
+EnableAnimation="True" AnimateOption="Fade"
 
-                   AnimateOneByOne="True" ShowEmptyPoints="True" 
+AnimateOneByOne="True" ShowEmptyPoints="True" 
 
-                   EmptyPointInterior="Purple" EmptyPointValue="Average"
+EmptyPointInterior="Purple" EmptyPointValue="Average"
 
-                   EmptyPointStyle="Interior" DataSource="{Binding power}"
+EmptyPointStyle="Interior" DataSource="{Binding power}"
 
-                   BindingPathX="Year" BindingPathsY="Sports"
+BindingPathX="Year" BindingPathsY="Sports"
 
-                   Label="LineSeries" >
+Label="LineSeries" >
 
-    <syncfusion:ChartSeries.YAxis>
+<syncfusion:ChartSeries.YAxis>
 
-        <syncfusion:ChartAxis IsAutoSetRange="False" Range="20,50"/>
+<syncfusion:ChartAxis IsAutoSetRange="False" Range="20,50"/>
 
-    </syncfusion:ChartSeries.YAxis>
+</syncfusion:ChartSeries.YAxis>
 
 </syncfusion:ChartSeries>
 
@@ -940,6 +954,7 @@ area.Series.Add(lineseries);
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart>
@@ -948,33 +963,32 @@ area.Series.Add(lineseries);
 
 <syncfusion:LineSeries ItemsSource="{Binding power}"
 
-                    XBindingPath="Year" YBindingPath="Sports"
+XBindingPath="Year" YBindingPath="Sports"
 
-                    Palette="Metro" AnimationDuration="00:00:03"
+Palette="Metro" AnimationDuration="00:00:03"
 
-                    SortBy="X" SortDirection="Ascending" 
+SortBy="X" SortDirection="Ascending" 
 
-                    EnableSegmentDragging="True" LegendIcon="Diamond"
+EnableSegmentDragging="True" LegendIcon="Diamond"
 
-                    VisibilityOnLegend="Visible"  Label="LineSeries"
+VisibilityOnLegend="Visible"  Label="LineSeries"
 
-                    IsSeriesVisible="True" IsSortData="True"
+IsSeriesVisible="True" IsSortData="True"
 
-                    IsTransposed="True" EnableAnimation="True"
+IsTransposed="True" EnableAnimation="True"
 
-                    ShowTooltip="True" StrokeThickness="3"
+ShowTooltip="True" StrokeThickness="3"
 
-                    ShowEmptyPoints="True" EmptyPointValue="Average"
+ShowEmptyPoints="True" EmptyPointValue="Average"
 
-                    EmptyPointInterior="Purple" EmptyPointStyle="Interior"
+EmptyPointInterior="Purple" EmptyPointStyle="Interior"
 
-                    >
+>
 
-    <syncfusion:LineSeries.YAxis>
+<syncfusion:LineSeries.YAxis>
+<syncfusion:NumericalAxis  Minimum="20" Maximum="50"/>
 
-        <syncfusion:NumericalAxis  Minimum="20" Maximum="50"/>
-
-    </syncfusion:LineSeries.YAxis>
+</syncfusion:LineSeries.YAxis>
 
 </syncfusion:LineSeries>
 
@@ -1031,6 +1045,8 @@ lineseries.SortDirection = Direction.Ascending;
 
 chart.Series.Add(lineseries);
 {% endhighlight %}
+{% endtabs %}
+
 The following table illustrates the API comparison for series,
 
 <table>
@@ -1177,6 +1193,7 @@ The Adornments are same as Chart and you can define the Adornments inside the Se
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartSeries>
@@ -1185,17 +1202,17 @@ The Adornments are same as Chart and you can define the Adornments inside the Se
 
 <syncfusion:ChartAdornmentInfo  SegmentLabelContent="YValue"
 
-                            SegmentShowLine="True"  Visible="True"
+SegmentShowLine="True"  Visible="True"
 
-                            SymbolInterior="Red"
+SymbolInterior="Red"
 
-                            AdornmentsPosition="Top" Symbol="Ellipse"
+AdornmentsPosition="Top" Symbol="Ellipse"
 
-                            SegmentLabelRotation="20" 
+SegmentLabelRotation="20" 
 
-                            SymbolStroke="Red" SymbolHeight="15"
+SymbolStroke="Red" SymbolHeight="15"
 
-                            SymbolWidth="15" />
+SymbolWidth="15" />
 
 <syncfusion:ChartSeries.ChartAdornmentInfo />
 
@@ -1232,9 +1249,11 @@ adornment.AdornmentsPosition = AdornmentsPosition.Top;
 lineseries.AdornmentsInfo = adornment;
 
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:LineSeries >
@@ -1243,23 +1262,21 @@ lineseries.AdornmentsInfo = adornment;
 
 <syncfusion:ChartAdornmentInfo  Symbol="Cross"
 
-                             UseSeriesPalette="True"
+UseSeriesPalette="True"
 
-                             AdornmentsPosition="Top"
+AdornmentsPosition="Top"
 
-                             ShowConnectorLine="True"
+ShowConnectorLine="True"
 
-                             ConnectorHeight="10"
+ConnectorHeight="10"
 
-                             SegmentLabelContent="YValue"   
+SegmentLabelContent="YValue"   
 
-                             ShowLabel="True" SymbolStroke="Red"
+ShowLabel="True" SymbolStroke="Red"
 
-                             SymbolHeight="20" SymbolWidth="20"
+SymbolHeight="20" SymbolWidth="20"
 
-                             SymbolInterior="Red"
-
-                             />
+SymbolInterior="Red"/>
 
 </syncfusion:LineSeries.ChartAdornmentInfo>
 
@@ -1299,6 +1316,8 @@ adornment.ShowConnectorLine = true;
 
 lineseries.AdornmentsInfo = adornment;
 {% endhighlight %}
+{% endtabs %}
+
 The following table illustrates the API comparison for Adornments.
 
 <table>
@@ -1370,15 +1389,14 @@ The InteractiveCursor is represented as ChartCrosshairBehavior and ChartTrackbal
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartArea>
 
 <syncfusion:ChartArea.InteractiveCursors>
-
-                    <syncfusion:InteractiveCursor VerticalLabelVisibility="Visible"HorizontalLabelVisibility="Visible" IsBindWithMouseMove="True"IsBindWithSegment="False" OffsetX="100" OffsetY="100"/>
-
-                </syncfusion:ChartArea.InteractiveCursors>
+<syncfusion:InteractiveCursor VerticalLabelVisibility="Visible"HorizontalLabelVisibility="Visible" IsBindWithMouseMove="True"IsBindWithSegment="False" OffsetX="100" OffsetY="100"/>
+</syncfusion:ChartArea.InteractiveCursors>
 
 </syncfusion:ChartArea>
 {% endhighlight %}
@@ -1406,9 +1424,11 @@ incCursor.OffsetY = 100d;
 
 area.InteractiveCursors.Add(incCursor);
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart>
@@ -1436,6 +1456,7 @@ crosshair.HorizontalAxisLabelAlignment = ChartAlignment.Center;
 
 chart.Behaviors.Add(crosshair);
 {% endhighlight %}
+{% endtabs %}
 
 ## Zooming and Panning
 
@@ -1443,6 +1464,7 @@ The Zooming and Panning are achieved using the ChartZoomPanBehavior in SfChart a
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartArea EnableZoomOnScroll="True" ZoomAllAxes="True"chart:ChartZoomingToolkit.ZoomingToolkitVisibility="Visible"EnableMouseDragZooming="True" /> 
@@ -1460,9 +1482,11 @@ area.EnableZoomOnScroll = true;
 ChartZoomingToolkit.SetZoomingToolkitVisibility(area, Visibility.Visible);
 
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart>
@@ -1498,7 +1522,7 @@ zoom.EnablePinchZooming = false;
 
 chart.Behaviors.Add(zoom);
 {% endhighlight %}
-
+{% endtabs %}
 
 ## StripLines
 
@@ -1506,6 +1530,7 @@ The following code example demonstrates the usage of StripLines in Chart and SfC
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartAxis.StripLines>
@@ -1549,10 +1574,11 @@ stripline.Text = new FormattedText("StripLine", CultureInfo.CurrentCulture, Flow
 
 area.SecondaryAxis.StripLines.Add(stripline);
 {% endhighlight %}
-
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:NumericalAxis.StripLines>
@@ -1603,6 +1629,7 @@ stripline.Label = "StripLine";
 chart.SecondaryAxis.StripLines.Add(stripline);
 
 {% endhighlight %}
+{% endtabs %}
 
 The following table illustrates the API comparison between Chart and SfChart.
 
@@ -1680,23 +1707,24 @@ Following code example illustrates the WatermarkAPI comparison,
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartArea>
 
 <syncfusion:ChartArea.Watermark>
 
-                    <VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center" AlignmentY="Center">
+<VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center" AlignmentY="Center">
 
-                        <VisualBrush.Visual>
+<VisualBrush.Visual>
 
-                            <TextBlock  Text="Chart" FontSize="60"Foreground="Gray">
+<TextBlock  Text="Chart" FontSize="60"Foreground="Gray">
 
-                            </TextBlock>
+</TextBlock>
 
-                        </VisualBrush.Visual>
+</VisualBrush.Visual>
 
-                    </VisualBrush>
+ </VisualBrush>
 
   </syncfusion:ChartArea.Watermark>
 
@@ -1705,7 +1733,6 @@ Following code example illustrates the WatermarkAPI comparison,
 {% endhighlight %}
 
 {% highlight C# %}
-
 ChartArea area = new ChartArea();
 
 area.Watermark = new VisualBrush()
@@ -1731,24 +1758,26 @@ Text = "Chart", Foreground = Brushes.Gray, FontSize = 60d
 };
 
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart>
 
 <syncfusion:SfChart.Watermark>
 
-                <syncfusion:Watermark Canvas.ZIndex="-1" HorizontalAlignment="Center"VerticalAlignment="Center">
+<syncfusion:Watermark Canvas.ZIndex="-1" HorizontalAlignment="Center"VerticalAlignment="Center">
 
-                    <syncfusion:Watermark.Content>
+<syncfusion:Watermark.Content>
 
-                        <TextBlock Text="SfChart" FontSize="60" Foreground="Gray"Opacity="0.5"></TextBlock>
+<TextBlock Text="SfChart" FontSize="60" Foreground="Gray"Opacity="0.5"></TextBlock>
 
-                    </syncfusion:Watermark.Content>
+</syncfusion:Watermark.Content>
 
-                </syncfusion:Watermark>
+</syncfusion:Watermark>
 
 </syncfusion:SfChart.Watermark>
 
@@ -1775,6 +1804,7 @@ waterMark.Content = new TextBlock() { Text = "SfChart", Foreground = Brushes.Gra
 chart.Watermark = waterMark;
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Annotation
 
@@ -1788,11 +1818,12 @@ Chart having following Annotations
 
 * Chart Annotation
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:Chart.AnnotationLabels>
 
-     < syncfusion:ChartAnnotationLabel AnnotationShape="None" Template="{StaticResourcetemplateImage}"  Content="Text Annotation" OffsetX="500" OffsetY="100"IsAnnotationDragDrop="True" />
+< syncfusion:ChartAnnotationLabel AnnotationShape="None" Template="{StaticResourcetemplateImage}"  Content="Text Annotation" OffsetX="500" OffsetY="100"IsAnnotationDragDrop="True" />
 
 </syncfusion:Chart.AnnotationLabels>
 {% endhighlight %}
@@ -1818,16 +1849,19 @@ chartannotation.IsAnnotationDragDrop = true;
 chart.AnnotationLabels.Add(chartannotation);
 
 {% endhighlight %}
+{% endtabs %}
+
 
 * Series Annotation
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartSeries.Annotations>
 
    <syncfusion:AnnotationsCollection >
 
-        <syncfusion:ChartSeriesAnnotation X="40702" Y="468"  AnnotationShape="Diamond"Stroke="Black"   Fill="Orange"/>
+    <syncfusion:ChartSeriesAnnotation X="40702" Y="468"  AnnotationShape="Diamond"Stroke="Black"   Fill="Orange"/>
 
    </syncfusion:AnnotationsCollection>
 
@@ -1859,6 +1893,7 @@ annoCollection.m_annotationsCollection.Add(seriesAnnotation);
 
 columnSeries.Annotations = annoCollection;
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
@@ -1868,6 +1903,7 @@ In SfChart, you can position Annotations in pixel unit or axis. Units are specif
 
 * Image Annotation
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -1905,9 +1941,11 @@ imgAnnotation.Y2 = 560d;
 
 chart.Annotations.Add(imgAnnotation);
 {% endhighlight %}
+{% endtabs %}
 
 * Line Annotation
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -1943,9 +1981,10 @@ lineAnnotation.Y2 = 38d;
 chart.Annotations.Add(lineAnnotation);
 
 {% endhighlight %}
+{% endtabs %}
 
 * Ellipse Annotation 
-
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -1980,10 +2019,10 @@ ellipseAnnotation.Y2 = 42d;
 
 chart.Annotations.Add(ellipseAnnotation);
 {% endhighlight %}
-
+{% endtabs %}
 
 * Rectangle Annotation
-
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -2018,9 +2057,11 @@ rectAnnotation.Y2 = 42d;
 chart.Annotations.Add(rectAnnotation);
 
 {% endhighlight %}
+{% endtabs %}
 
 * Vertical Line Annotation 
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -2050,9 +2091,11 @@ verAnnotation.X1 = 3d;
 chart.Annotations.Add(verAnnotation);
 
 {% endhighlight %}
+{% endtabs %}
 
 * Horizontal Line Annotation  
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -2085,8 +2128,10 @@ horAnnotation.Y1 = 40d;
 
 chart.Annotations.Add(horAnnotation);
 {% endhighlight %}
+{% endtabs %}
 * Text Annotation 
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.Annotations>              
@@ -2124,8 +2169,9 @@ textAnnotation.ShowToolTip = true;
 chart.Annotations.Add(textAnnotation);
 
 {% endhighlight %}
+{% endtabs %}
 
-## Technical Indicators
+### Technical Indicators
 
 The following table illustrates the API comparison for TechnicalIndicators,
 
@@ -2189,27 +2235,28 @@ In Chart, you can set the type of the indicator where as in SfChart, indicator t
 
 ### Chart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:ChartSeries.Indicators>
 
-                        <syncfusion:IndicatorCollection>
+<syncfusion:IndicatorCollection>
 
-                            <syncfusion:IndicatorCollection.Items>
+<syncfusion:IndicatorCollection.Items>
 
-                                  <syncfusion:ChartTechnicalIndicator 
+<syncfusion:ChartTechnicalIndicator 
 
 IndicatorType="BollingerBands"  
 
 chart:ChartBollingerBand.LowerLineColor ="Blue" chart:ChartBollingerBand.UpperLineColor="Red" chart:ChartBollingerBand.SignalLineColor ="Green" chart:ChartBollingerBand.BollingerMovingAverage="50" >
 
-                                 </syncfusion:ChartTechnicalIndicator>
+</syncfusion:ChartTechnicalIndicator>
 
-                               </syncfusion:IndicatorCollection.Items>
+</syncfusion:IndicatorCollection.Items>
 
-                             </syncfusion:IndicatorCollection>
+</syncfusion:IndicatorCollection>
 
-                          </syncfusion:ChartSeries.Indicators>
+</syncfusion:ChartSeries.Indicators>
 
 {% endhighlight %}
 
@@ -2238,16 +2285,18 @@ indiCollection.Items.Add(indicator);
 columnSeries.Indicators = indiCollection;
 
 {% endhighlight %}
+{% endtabs %}
 
 ##SfChart
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:BollingerBandIndicator UpperLineColor="Brown"LowerLineColor="DarkBlue" Period="1" XBindingPath="Year" ItemsSource="{BindingCompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
+ <syncfusion:BollingerBandIndicator UpperLineColor="Brown"LowerLineColor="DarkBlue" Period="1" XBindingPath="Year" ItemsSource="{BindingCompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+ </syncfusion:SfChart.TechnicalIndicators>
 {% endhighlight %}
 
 
@@ -2279,6 +2328,7 @@ indicator.ItemsSource = viewmodel.CompanyDetails;
 
 chart.TechnicalIndicators.Add(indicator);
 {% endhighlight %}
+{% endtabs %}
 
 ## SyncChartAreas
 
@@ -2292,6 +2342,7 @@ The following code example illustrates the API’s for both charts,
 
 ## SyncChartAreas
 
+{% tabs %}
 {% highlight xml %}
 
   <syncfusion:Chart>
@@ -2405,14 +2456,17 @@ areas.Areas.Add(area1);
 areas.Areas.Add(area2);
 
 {% endhighlight %}
+{% endtabs %}
 
 ### SfChart
 
 ##Column Row Definition
+
+{% tabs %}
 {% highlight xml %}
 <syncfusion:SfChart>
 
-            <syncfusion:SfChart.RowDefinitions>
+	<syncfusion:SfChart.RowDefinitions>
 
                 <syncfusion:ChartRowDefinition/>
 
@@ -2504,6 +2558,7 @@ chart.Series.Add(lineseries1);
 chart.Series.Add(lineseries2);
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Exporting and Printing
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Storing-and-Retrieving-Report-as-Stream
+title: Storing and Retrieving Report as Stream| OLAP Client  | Wpf | Syncfusion
 description: storing and retrieving report as stream
 platform: wpf
 control: OLAP Client 
@@ -13,6 +13,7 @@ The OLAP Client allows the user to store the current session as a stream anywher
 
 The following code describes getting the report as stream:
 
+{% tabs %}
 {% highlight C# %}   
 
 
@@ -32,11 +33,12 @@ Stream stream = this.olapClient1.GetReportStream();
 Dim stream As Stream = Me.olapClient1.GetReportStream()
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 The following code will illustrate how to load a stream to OLAP Client: 
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -57,13 +59,14 @@ this.olapClient1.LoadReportStream(reportStream);
 Me.olapClient1.LoadReportStream(reportStream)
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 The following sample code describes the storing of the stream in DataBase and retrieving the report as stream from the Data Base and loading the Stream to OLAP Client.
 
 Storing Report as a Stream to the Data Base:
 
+{% tabs %}
 {% highlight C# %}  
 
  
@@ -151,9 +154,11 @@ End If
 End If
 
 {% endhighlight %}
+{% endtabs %}
 
 Loading Report as a stream to OLAP Client. 
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -248,11 +253,11 @@ con.Close()
 
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 
 Samples which demonstrate this feature is available in the following sample installation location.
 
-<Install Location>\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapClient.WPF\Samples\OLAP Client\
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapClient.WPF\Samples\OLAP Client\
 

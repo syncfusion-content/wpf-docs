@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| SfMaskedEdit | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: SfMaskedEdit
@@ -49,9 +49,10 @@ To create a MaskedEdit control, use the following code.
 
 
 
-   SfMaskedEdit maskededit = new SfMaskedEdit() { Text = "SfMaskedEdit", Width = 150, Height = 50 };
+SfMaskedEdit maskededit = new SfMaskedEdit() { Text = "SfMaskedEdit", Width = 150, Height = 50 };
 
-    this.Content = maskededit;
+this.Content = maskededit;
+
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
@@ -75,7 +76,7 @@ The SfMaskedEdit control can also be created and configured by using the Express
 
 3. Now drag and drop the SfMaskedEdit into the designer. It generates the SfMaskedEdit. Then configure the properties of the SfMaskedEdit control by using the properties area.
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+   ![](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
 

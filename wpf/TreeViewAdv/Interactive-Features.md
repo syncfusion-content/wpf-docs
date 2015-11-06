@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive-Features
+title: Interactive Features | TreeViewAdv | wpf | Syncfusion
 description: interactive features
 platform: wpf
 control: TreeViewAdv
@@ -17,7 +17,7 @@ This section illustrates the following interactive features of TreeViewAdv contr
 
 The TreeviewItem is added to a TreeViewAdv control either by using XAML or Procedural code. The following code example lets you to create and add treeview items to the TreeViewAdv.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -65,6 +65,7 @@ treeViewAdv.Items.Add(treeViewItemAdv);
 this.Content = treeViewAdv;
 
 {% endhighlight %}
+{%endtabs%}
 
 
 N> To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem.
@@ -75,7 +76,7 @@ The TreeViewAdv control supports selecting multiple items by using the CTRL or S
 
 The following code example can be used to set this property.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -126,6 +127,7 @@ The following code example can be used to set this property.
 treeViewAdv.AllowMultiSelect = true;
 
 {% endhighlight %}
+{%endtabs%}
 
 
 
@@ -140,7 +142,7 @@ TreeViewAdv control provides support to select multiple treeview items programma
 Here are the code snippets to select multiple items in the TreeViewAdv control using both XAML and C# code.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -173,16 +175,20 @@ treeView.AddNodeToSelectedItems(items);
 
 {% endhighlight %}
 
-### See Also
+{%endtabs%}
+
+{%seealso%}
 
 Allowing Multi Select in TreeViewAdv
+
+{%endseealso%}
 
 ## Setting Itemsource for a TreeviewAdv
 
 The following code snippet sets a collection used to generate the content of the items control.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -294,6 +300,8 @@ public class CountryList : INotifyPropertyChanged
 
 {% endhighlight %}
 
+{%endtabs%}
+
 
 ![](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
@@ -313,7 +321,7 @@ The following are the two possible states for any item:
 
 The Expanded state is identified by setting the ExpandedImageSource property and the Collapsed state is identified by setting the CollapsedImageSource property as follows.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -372,6 +380,8 @@ treeviewitem2.ExpandedImageSource = new BitmapImage(new Uri("happy.png", UriKind
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
@@ -381,7 +391,7 @@ treeviewitem2.ExpandedImageSource = new BitmapImage(new Uri("happy.png", UriKind
 
 User can also set the height and width of the node images in a TreeViewAdv control. The ImageHeight property sets the height of the image and the ImageWidth property sets the width of the images. The default value of the properties is _NaN_. Here is the code for setting these properties.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -453,7 +463,7 @@ treeViewItemAdv1.ImageWidth = 25;
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
@@ -467,7 +477,7 @@ You can add images to the left and right corner of the header of the TreeViewIte
 * RightImageSource—This is dependency property, which gets or sets RightSource to right image. 
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -537,6 +547,7 @@ treeViewItemAdv1.LeftImageSource = new BitmapImage(new Uri("happy.png", UriKind.
 treeViewItemAdv2.RightImageSource = new BitmapImage(new Uri("star.png", UriKind.Relative));
 
 {% endhighlight %}
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
@@ -551,7 +562,7 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 * None (_default_)
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -606,6 +617,7 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 {% endhighlight %}
 
 
+
 {% highlight C# %}
 
 
@@ -616,6 +628,8 @@ treeViewAdv.Sorting = SortDirection.Ascending;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ### Sorting Field
 
 
@@ -623,7 +637,7 @@ treeViewAdv.Sorting = SortDirection.Ascending;
 Using SortingField property, you can specify a sorting criteria. This is dependency property, which gets or sets the property name being used as the sorting criteria. The default value is _Header_. 
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -688,7 +702,7 @@ treeViewAdv.SortingField = "Header";
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
@@ -697,7 +711,7 @@ treeViewAdv.SortingField = "Header";
 
 You can expand or collapse the TreeViewAdv by enabling or disabling the IsExpanded property. Use the following code to set this property.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -749,6 +763,7 @@ treeViewItemAdv.IsExpanded = true;
 
 {% endhighlight %}
 
+{%endtabs%}
 
 
 ![](Interactive-Features_images/Interactive-Features_img7.jpeg)
@@ -833,7 +848,7 @@ The Expand or Collapse operation in a TreeViewAdv leads to an animated action. T
 The speed of animation that is generated while expanding or collapsing the TreeViewAdv is controlled by using the AnimationSpeed property. The default value of this property is set to _1_. To set this property, use the below code
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -884,6 +899,8 @@ treeViewAdv.AnimationSpeed = 2;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ### Animation Type
 
 The type of animation that is generated while expanding or collapsing the TreeViewAdv is controlled by using the AnimationType property. This property includes the following options.
@@ -894,12 +911,12 @@ The type of animation that is generated while expanding or collapsing the TreeVi
 
 
 
-The default value of this property is set to _Slide_. 
+The default value of this property is set to Slide. 
 
 Use the following code to set this property.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -963,6 +980,8 @@ treeViewAdv.AnimationType = AnimationType.Slide;
 treeViewAdv.AnimationType = AnimationType.None;
 
 {% endhighlight %}
+
+{%endtabs%}
 
 
 ### Animation Settings
@@ -1054,7 +1073,7 @@ The flow direction for the TreeViewAdv is set through the FlowDirection property
 * Left-to-Right
 * Right-to-Left
 
-
+{%tabs%}
 
  {% highlight xml %}
 
@@ -1120,6 +1139,8 @@ treeViewAdv.FlowDirection = FlowDirection.LeftToRight;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
@@ -1129,7 +1150,7 @@ treeViewAdv.FlowDirection = FlowDirection.LeftToRight;
 TreeViewAdv control now provides support to reorder the columns in the TreeViewAdv control by using the AllowsColumnReorder property. Enable this property using the below code.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -1180,13 +1201,15 @@ treeViewAdv.AllowsColumnReorder = true;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 N> This property takes effect only when the MultiColumnEnable property is set to True.
 
-Selecting a Node
+### Selecting a Node
 
 You can show a node to be selected, at runtime, when the TreeViewAdv control is loaded, by setting the IsSelected property of a particular node to _true._ Here is the code snippet to enable this property.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -1251,6 +1274,7 @@ treeViewItemAdv1.IsSelected = true;
 
 {% endhighlight %}
 
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img10.jpeg)
 
@@ -1260,7 +1284,7 @@ treeViewItemAdv1.IsSelected = true;
 TreeView control can be created with multiple columns by setting the MultiColumnEnable property to _true_. This is dependency property, which gets or sets the value defining whether items are in multicolumn mode. The default value is _false_.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -1324,7 +1348,7 @@ treeViewAdv.MultiColumnEnable = true;
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
@@ -1494,7 +1518,7 @@ TreeViewAdv control enables to drag TreeView items from one location to another.
 
 Use the following code to enable this property.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -1548,6 +1572,7 @@ treeViewAdv.AllowDragDrop = true;
 
 {% endhighlight %}
 
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img13.jpeg)
 
@@ -1558,7 +1583,7 @@ treeViewAdv.AllowDragDrop = true;
 
 You can easily edit the tree node items at runtime, by enabling IsEditable property to _true_. At runtime, you can edit a node, by simply clicking the node text.
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -1624,7 +1649,7 @@ treeViewItemAdv1.IsEditable = true;
 
 
 {% endhighlight %}
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img14.jpeg)
 
@@ -1634,7 +1659,7 @@ treeViewItemAdv1.IsEditable = true;
 You can also set a node to be in edit mode when the tree view loads. This is done using the IsInEditMode property. When this property is set to _true_, the particular node will be in edit mode when it loads. 
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -1697,6 +1722,8 @@ treeViewItemAdv1.IsInEditMode = true;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Interactive-Features_images/Interactive-Features_img15.jpeg)
 
 ### Node Editing Event
@@ -1755,7 +1782,7 @@ A new set of properties namely SelectedTreeItem and SelectedTreeItemObject have 
 
 Users can get the SelectedItem using SelectedTreeItem property in order to enable two way binding between SelectedItem property in View and SelectedTreeItem property of TreeViewAdv, without modifying the actual SelectedItem property of TreeViewAdv.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2138,7 +2165,10 @@ Loading Items"/>
 {% endhighlight %}
 
 ![](Interactive-Features_images/Interactive-Features_img17.png)
-Properties
+
+
+
+###Properties
 
 <table>
 <tr>
@@ -2212,6 +2242,8 @@ Double</td></tr>
 </table>
 
 
+{%tabs%}
+
 {% highlight xml %}
 
       <syncfusion:TreeViewAdv x:Name="TreeView"
@@ -2229,6 +2261,8 @@ Double</td></tr>
         TreeView.DraggingContainerOpacity = 0.4;
 
 {% endhighlight %}
+
+{%endtabs%}
 
 
 

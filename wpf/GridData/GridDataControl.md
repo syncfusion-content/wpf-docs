@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GridData Control
+title: GridData Control | GridData (Classic) | wpf | Syncfusion
 description: GridData Control
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # GridData Control

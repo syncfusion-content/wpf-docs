@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set-Visual-Style-for-dynamically-added-Derived-Controls
+title: Set Visual Style for dynamically added Derived Controls| SkinManager | Wpf | Syncfusion
 description: set visual style for dynamically added derived controls
 platform: wpf
 control: SkinManager
@@ -14,18 +14,18 @@ Normally, a control added to an application will dynamically pick up the existin
 The following code snippet explains the scenario where an user control of Button type is exposed here.
 
 
-
+{% tabs %}
 {% highlight xml %}
 
 
 
 <Button x:Class="WpfApplication2.TestButton"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 
-         Height="300" Width="300" xmlns:theme="http://schemas.syncfusion.com/wpf" theme:SkinStorage.VisualStyle="Blend">  
+Height="300" Width="300" xmlns:theme="http://schemas.syncfusion.com/wpf" theme:SkinStorage.VisualStyle="Blend">  
 
 </Button>
 
@@ -39,21 +39,21 @@ The following code snippet explains the scenario where an user control of Button
 
 public partial class TestButton : Button
 
-    {
+{
 
-        public TestButton()
+public TestButton()
 
-        {
+{
 
-            InitializeComponent();
+InitializeComponent();
 
-        }
+}
 
-    }
+}
 
 
 {% endhighlight %}
-
+{% endtabs %}
 
 Styles based on the button style should be defined in the application as follows. You have to merge the corresponding Resource Dictionary when overriding the style in the application.
 
@@ -65,23 +65,23 @@ Styles based on the button style should be defined in the application as follows
 
 <Application.Resources>
 
-        <ResourceDictionary>
+<ResourceDictionary>
 
-            <ResourceDictionary.MergedDictionaries>
+<ResourceDictionary.MergedDictionaries>
 
-                <ResourceDictionary Source="/Syncfusion.Shared.WPF;component/SkinManager/BlendStyle.xaml"/>
+<ResourceDictionary Source="/Syncfusion.Shared.WPF;component/SkinManager/BlendStyle.xaml"/>
 
-            </ResourceDictionary.MergedDictionaries>        
+</ResourceDictionary.MergedDictionaries>        
 
-        <Style TargetType="local:TestButton" BasedOn="{StaticResource BlendButtonStyle}">
+<Style TargetType="local:TestButton" BasedOn="{StaticResource BlendButtonStyle}">
 
-            <Setter Property="Background" Value="GoldenRod"/>
+<Setter Property="Background" Value="GoldenRod"/>
 
-        </Style>
+</Style>
 
-        </ResourceDictionary>
+</ResourceDictionary>
 
-    </Application.Resources>
+</Application.Resources>
 
 
 {% endhighlight %}

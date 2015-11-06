@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources
+title: Resources| SfSchedule | Wpf | Syncfusion
 description: resources
 platform: wpf
 control: SfSchedule
@@ -12,6 +12,8 @@ documentation: ug
 The Schedule control allows you to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. For example, you can create appointments for different doctors.
 
 Appointments will be grouped based on the resource associated with them only when both the Resource and ScheduleResourceTypeCollection properties are set, and also when the Value set for a Resource matches with any types specified in the ScheduleResourceTypeCollection property.
+
+{% tabs %}
 {% highlight html %}
 
 
@@ -58,7 +60,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Resources_images/Resources_img1.jpeg)
 
@@ -128,19 +130,19 @@ After Creating the ResourceTypeCollection add the ResourecType, here we create t
 {% highlight html %}
 
 
-      <schedule:SfSchedule  Resource="Doctors" >
+<schedule:SfSchedule  Resource="Doctors" >
 
-            <schedule:SfSchedule.ScheduleResourceTypeCollection >
+<schedule:SfSchedule.ScheduleResourceTypeCollection >
 
-                <schedule:ResourceType TypeName="Doctors">
+<schedule:ResourceType TypeName="Doctors">
 
-                    . . .
+. . .
 
-                </schedule:ResourceType>
+</schedule:ResourceType>
 
-            </schedule:SfSchedule.ScheduleResourceTypeCollection>
+</schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-        </schedule:SfSchedule>
+</schedule:SfSchedule>
 
 
 {% endhighlight  %}
@@ -152,21 +154,21 @@ The next step is create and assign Resources to ResourceType.
 {% highlight html  %}
 
 
-    <schedule:SfSchedule  Resource="Doctors" >
+<schedule:SfSchedule  Resource="Doctors" >
 
-            <schedule:SfSchedule.ScheduleResourceTypeCollection >
+<schedule:SfSchedule.ScheduleResourceTypeCollection >
 
-                <schedule:ResourceType TypeName="Doctors">
+<schedule:ResourceType TypeName="Doctors">
 
-                    <schedule:Resource   DisplayName="Dr.Jacob John, M.D " ResourceName="Dr.Jacob"/>
+<schedule:Resource   DisplayName="Dr.Jacob John, M.D " ResourceName="Dr.Jacob"/>
 
-                    <schedule:Resource  DisplayName="Dr.Darsy Mascio, M.D" ResourceName="Dr.Darsy"/>
+<schedule:Resource  DisplayName="Dr.Darsy Mascio, M.D" ResourceName="Dr.Darsy"/>
 
-                </schedule:ResourceType>
+</schedule:ResourceType>
 
-            </schedule:SfSchedule.ScheduleResourceTypeCollection>
+</schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-        </schedule:SfSchedule>
+</schedule:SfSchedule>
 
 
 {% endhighlight  %}
@@ -180,19 +182,19 @@ You can add an appointments to group of added resources.
 
 
 
-ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate, EndTime = currentdate.AddHours(ran.Next(0, 2)), Subject = subject[count % subject.Length], Location = "Chennai", AppointmentBackground = brush[m % 3] };
+	ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate, EndTime = currentdate.AddHours(ran.Next(0, 2)), Subject = subject[count % subject.Length], Location = "Chennai", AppointmentBackground = brush[m % 3] };
 
-            app.ResourceCollection.Add(new Resource() { ResourceName ="Dr.Jacob", TypeName = "Doctors" });
+	            app.ResourceCollection.Add(new Resource() { ResourceName ="Dr.Jacob", TypeName = "Doctors" });
 
 
 
-            ScheduleAppointment app1 = new ScheduleAppointment() { StartTime = nextdate, EndTime = nextdate.AddHours(ran.Next(0, 2)), Subject = subject[count % subject.Length], Location = "Chennai", AppointmentBackground = brush[(m + 2) % 3] };
+	            ScheduleAppointment app1 = new ScheduleAppointment() { StartTime = nextdate, EndTime = nextdate.AddHours(ran.Next(0, 2)), Subject = subject[count % subject.Length], Location = "Chennai", AppointmentBackground = brush[(m + 2) % 3] };
 
-            app1.ResourceCollection.Add(new Resource() { ResourceName ="Dr.Darsy", TypeName = "Doctors" });
+	            app1.ResourceCollection.Add(new Resource() { ResourceName ="Dr.Darsy", TypeName = "Doctors" });
 
-            Schedule1.Appointments.Add(app);
+	            Schedule1.Appointments.Add(app);
 
-            Schedule1.Appointments.Add(app1);
+	            Schedule1.Appointments.Add(app1);
 
 
 
@@ -231,7 +233,7 @@ Refer to the following code to add a Resources in the code behind
 
 This feature enables users to view appointments based on their subcategory only in day and week views. Using this feature, the end user can group appointments under various subcategories (resources). 
 
-DayHeaderOrder property:
+### DayHeaderOrder property
 
 DayHeaderOrder property is used to set the order by which resources have to be displayed
 
@@ -246,48 +248,49 @@ SubResourceType</td><td>
 Gets or sets the ResourceType value which is a subresource type of its parent Resource type.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight html %}
 
 
 
 
-        <schedule:SfSchedule x:Name="schedule1" ScheduleType="Week"
+	        <schedule:SfSchedule x:Name="schedule1" ScheduleType="Week"
 
-                             Resource="Hospital" DayHeaderOrder="OrderByDate">
+	                             Resource="Hospital" DayHeaderOrder="OrderByDate">
 
-            <schedule:SfSchedule.ScheduleResourceTypeCollection>
+	            <schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-                <schedule:ResourceType TypeName="Hospital">
+	                <schedule:ResourceType TypeName="Hospital">
 
-                    <schedule:ResourceType.ResourceCollection>
+	                    <schedule:ResourceType.ResourceCollection>
 
-                        <schedule:Resource DisplayName="Apollo Hospital"ResourceName="ApolloHospital"/>
+	                        <schedule:Resource DisplayName="Apollo Hospital"ResourceName="ApolloHospital"/>
 
-                        <schedule:Resource DisplayName="Malar Hospital"ResourceName="MalarHospital"/>
+	                        <schedule:Resource DisplayName="Malar Hospital"ResourceName="MalarHospital"/>
 
-                    </schedule:ResourceType.ResourceCollection>
+	                    </schedule:ResourceType.ResourceCollection>
 
-                    <schedule:ResourceType.SubResourceType>
+	                    <schedule:ResourceType.SubResourceType>
 
-                        <schedule:ResourceType TypeName="Department">
+	                        <schedule:ResourceType TypeName="Department">
 
-                            <schedule:ResourceType.ResourceCollection>
+	                            <schedule:ResourceType.ResourceCollection>
 
-                                <schedule:Resource DisplayName="Eye Department" ResourceName="Eye"/>
+	                                <schedule:Resource DisplayName="Eye Department" ResourceName="Eye"/>
 
-                                <schedule:Resource DisplayName="Heart Department" ResourceName="Heart"/>
+	                                <schedule:Resource DisplayName="Heart Department" ResourceName="Heart"/>
 
-                            </schedule:ResourceType.ResourceCollection>
+	                            </schedule:ResourceType.ResourceCollection>
 
-                        </schedule:ResourceType>
+	                        </schedule:ResourceType>
 
-                    </schedule:ResourceType.SubResourceType>
+	                    </schedule:ResourceType.SubResourceType>
 
-                </schedule:ResourceType>
+	                </schedule:ResourceType>
 
-            </schedule:SfSchedule.ScheduleResourceTypeCollection>
+	            </schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-        </schedule:SfSchedule>
+	        </schedule:SfSchedule>
 
 
 {% endhighlight  %}
@@ -326,7 +329,7 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Resources_images/Resources_img4.png)
 
@@ -357,6 +360,7 @@ Gets or sets a value to specify the number of resources that need to be shown in
 
 In the following code example, “DayViewColumnCount” is “two”, so the Schedule displays two resources in the view. This count is maintained while scrolling to view the other resources.
 
+{% tabs %}
 {% highlight html %}
 
 
@@ -422,6 +426,7 @@ In the following code example, “DayViewColumnCount” is “two”, so the Sch
 
             this.grid.Children.Add(schedule); 
 {% endhighlight  %}
+{% endtabs %}
 
 The following screenshot shows a view with default value of DayViewColumnCount property set to “Zero”.
 

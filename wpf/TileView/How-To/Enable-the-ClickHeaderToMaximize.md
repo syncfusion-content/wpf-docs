@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable-the-ClickHeaderToMaximize
+title: Enable the ClickHeaderToMaximize | TileView | wpf | Syncfusion
 description: enable the clickheadertomaximize
 platform: wpf
 control: TileView Control

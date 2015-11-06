@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D-Charts
+title: 3D Charts| SfChart | Wpf | Syncfusion
 description: 3d charts
 platform: wpf
 control: SfChart
@@ -31,24 +31,26 @@ The following steps explain how to create 3D charts.
 2. Choose Windows > Extensions > Syncfusion controls for WinRT XAML.
 3. Add the following namespace in your XAML page:
   
-       xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
-  
+   ~~~html
    
+     xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
+  
+   ~~~ 
 
 
 4. Initialize the chart represented by the following class, Syncfusion.UI.Xaml.Charts.SfChart3D:
 
 
-
+   ~~~html
 		<Syncfusion:SfChart3D>
 
 		</Syncfusion:SfChart3D>
-
+   ~~~
 
 
 5. Next, declare the primary axis and secondary axis:
 
-
+   ~~~html
 
 		<Syncfusion:SfChart3D>
 
@@ -66,7 +68,7 @@ The following steps explain how to create 3D charts.
 
 		</Syncfusion:SfChart3D >
 		
-   {:.prettyprint}		
+   ~~~	
 
 ### Add Chart Series to Chart
 
@@ -316,6 +318,7 @@ A Boolean property to show or hide the labels</td></tr>
 
 The following code can be used to create a simple doughnut series:
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -329,31 +332,31 @@ The following code can be used to create a simple doughnut series:
 
 
 
-        <Syncfusion:SfChart3D.PrimaryAxis>
+<Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-            <Syncfusion:CategoryAxis3D/>
+<Syncfusion:CategoryAxis3D/>
 
 
 
-        </Syncfusion:SfChart3D.PrimaryAxis>
+</Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-        <Syncfusion:SfChart3D.SecondaryAxis>
+<Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-            <Syncfusion:NumericalAxis3D/>
+<Syncfusion:NumericalAxis3D/>
 
 
 
-        </Syncfusion:SfChart3D.SecondaryAxis>
+</Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-         <Syncfusion:DoughnutSeries3D
+<Syncfusion:DoughnutSeries3D
 
 
 
@@ -369,11 +372,11 @@ YBindingPath="NoOfUsers">
 
 
 
-                </Syncfusion:DoughnutSeries3D>
+</Syncfusion:DoughnutSeries3D>
 
 
 
-    </Syncfusion:SfChart3D >
+</Syncfusion:SfChart3D >
 {% endhighlight %}
 
 {% highlight C# %}
@@ -430,6 +433,8 @@ public class UsersViewModel
 
  }
 {% endhighlight %}
+{% endtabs %}
+
 The following image illustrates the result of the above code sample:
 
 ![](3D-Charts_images/3D-Charts_img2.png)
@@ -440,7 +445,7 @@ The following image illustrates the result of the above code sample:
 
 3D charts provide interactive features such as dynamic rotation, segment selection, and dynamic segment explode for circular series.
 
-Dynamic rotation
+### Dynamic rotation
 
 3D charts allow us to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the EnableRotation property to true.
 
@@ -459,63 +464,64 @@ The following code example illustrates how to set the selection brush for indivi
 
 {% highlight xml %}
 
-  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" 
+	  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" 
 
-                       Height="500" Width="600">
-
-
-
-  <Syncfusion:SfChart3D.PrimaryAxis>
+	Height="500" Width="600">
 
 
 
-       <Syncfusion:CategoryAxis3D/>
+	  <Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-   </Syncfusion:SfChart3D.PrimaryAxis>
+	       <Syncfusion:CategoryAxis3D/>
+
+
+
+	   </Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
 
 
-      <Syncfusion:SfChart3D.SecondaryAxis>
+	      <Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-         <Syncfusion:NumericalAxis3D/>
+	         <Syncfusion:NumericalAxis3D/>
 
 
 
-      </Syncfusion:SfChart3D.SecondaryAxis>
+	      </Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-  <Syncfusion:ColumnSeries3D
+	  <Syncfusion:ColumnSeries3D
 
 
 
-SegmentSelectionBrush="Red"
+	SegmentSelectionBrush="Red"
 
 
 
-                ItemsSource="{Binding UsersList}"
+	                ItemsSource="{Binding UsersList}"
 
 
 
-                XBindingPath="TimeStamp"
+	                XBindingPath="TimeStamp"
 
 
 
-                YBindingPath="NoOfUsers">
+	                YBindingPath="NoOfUsers">
 
 
 
-        </Syncfusion:ColumnSeries3D>
+	        </Syncfusion:ColumnSeries3D>
 
 
 
-    </Syncfusion:SfChart3D >
+	    </Syncfusion:SfChart3D >
+	
 {% endhighlight %}
 The following screenshot illustrates the result of the above code example.
 
@@ -537,19 +543,19 @@ The following code example can be used to set series selection in a SfChart3D.
 
 <chart:ColumnSeries3D   XBindingPath="FruitName"  
 
-                        SeriesSelectionBrush="Blue" 
+SeriesSelectionBrush="Blue" 
 
-                        YBindingPath="People1"
+YBindingPath="People1"
 
-                        ItemsSource="{Binding Fruits}">
+ItemsSource="{Binding Fruits}">
 
 <chart:ColumnSeries3D.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
 
-                              ShowLabel="true"
+ShowLabel="true"
 
-                              HighlightOnSelection="True"/>
+HighlightOnSelection="True"/>
 
 </chart:ColumnSeries3D.AdornmentsInfo>
 
@@ -559,19 +565,19 @@ The following code example can be used to set series selection in a SfChart3D.
 
 <chart:ColumnSeries3D   XBindingPath="FruitName"
 
-                        YBindingPath="People2"
+YBindingPath="People2"
 
-                        SeriesSelectionBrush="Blue"
+SeriesSelectionBrush="Blue"
 
-                        ItemsSource="{Binding Fruits}">
+ItemsSource="{Binding Fruits}">
 
 <chart:ColumnSeries3D.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
 
-                              ShowLabel="true"                                                                        
+ShowLabel="true"                                                                        
 
-                              HighlightOnSelection="True"/>
+HighlightOnSelection="True"/>
 
 </chart:ColumnSeries3D.AdornmentsInfo>
 
@@ -581,6 +587,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
 </chart:SfChart3D >
 {% endhighlight %}
+
 The following screenshot is an example of a SfChart3D with series selection.
 
 ![](3D-Charts_images/3D-Charts_img4.png)
@@ -595,39 +602,39 @@ The following code example illustrates how to enable dynamic explode for circula
 
 {% highlight xml %}
 
-  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
+<Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 
 
 
-        <Syncfusion:SfChart3D.PrimaryAxis>
+<Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-            <Syncfusion:CategoryAxis3D/>
+<Syncfusion:CategoryAxis3D/>
 
 
 
-        </Syncfusion:SfChart3D.PrimaryAxis>
+</Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-        <Syncfusion:SfChart3D.SecondaryAxis>
+<Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-            <Syncfusion:NumericalAxis3D/>
+<Syncfusion:NumericalAxis3D/>
 
 
 
-        </Syncfusion:SfChart3D.SecondaryAxis>
+</Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-        <Syncfusion:PieSeries3D
+<Syncfusion:PieSeries3D
 
 
 
-                       ExplodeOnMouseClick="True"
+ExplodeOnMouseClick="True"
 
 
 
@@ -643,11 +650,11 @@ YBindingPath="NoOfUsers">
 
 
 
-        </Syncfusion:PieSeries3D>
+</Syncfusion:PieSeries3D>
 
 
 
-    </Syncfusion:SfChart3D >
+</Syncfusion:SfChart3D >
 {% endhighlight %}
 The following image illustrates the result of the above code sample:
 

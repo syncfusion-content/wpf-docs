@@ -1,30 +1,30 @@
 ---
 layout: post
-title: Markers
+title: Markers | SfSparkline | wpf | Syncfusion
 description: markers
 platform: wpf
-control: Sparkline
+control: SfSparkline
 documentation: ug
 ---
 
 # Markers
 
 Markers are used to indicate the value point for line and area series, and we can customize with different template.
-{% highlight html %}
 
-  <Syncfusion:SfLineSparkline 
+{% highlight xaml %}
 
-               ItemsSource="{Binding UsersList}" 
+<Syncfusion:SfLineSparkline 
 
-MarkerVisibility="Visible"
+		    ItemsSource="{Binding UsersList}" 
 
-               YBindingPath="NoOfUsers">
+			MarkerVisibility="Visible"
 
-  </Syncfusion:SfLineSparkline >
+		    YBindingPath="NoOfUsers">
+
+</Syncfusion:SfLineSparkline >
+
 {% endhighlight  %}
+
 Following is the snapshot for markers,
 
-![C:/Users/ApoorvahR/Desktop/8.png](Markers_images/Markers_img1.png)
-
-
-
+![](Markers_images/Markers_img1.png)

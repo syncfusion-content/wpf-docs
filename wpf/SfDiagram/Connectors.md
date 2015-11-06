@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Connectors
+title: Connectors | SfDiagram | wpf | Syncfusion
 description: connectors
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Connectors
+# Connectors
 
 Connectors are objects used to create a link between two nodes. A connector is a line that has connection points (Source Point and Target Point) at the ends of the line and stays connected to the objects that you attach it to.
 
 ![](Connectors_images/Connectors_img1.png)
-{:.image }
 
-
-Creating a Connector
+## Creating a Connector
 
 Like nodes, connectors can also be added in two ways:
 
@@ -28,11 +26,11 @@ Adding a Connector at Run Time
 2. Place the Source Point of the connector on the Source Node, and the corresponding node is treated as the source for the new connection.
 3. Finally, drag the Target Point of the connector to the Target Node to create a connection between the Source Node and the Target Node.
 
-Adding a Connector through Code
+### Adding a Connector through Code
 
 The following code illustrates how to create a connection between a Source Node and Target Node through code:
 
-[C#]
+{% highlight c# %}
 
 
 // Creates NodeViewModel-SourceNode
@@ -108,27 +106,27 @@ lines.Add(con);
 
 diagramcontrol.Connectors = lines;
 
-Setting the Connector Style
+{% endhighlight %}
+
+### Setting the Connector Style
 
 ConnectorGeometryStyle property is used to customize the style of the Connectors. The following code example illustrates how to do this:
 
-[XAML]
+{% tabs %}
 
+{% highlight xml %}
 
+<Style TargetType="Path" x:Key="connectorstyle">
 
-&lt;Style TargetType="Path" x:Key="connectorstyle"&gt;
+<Setter Property="Stroke" Value="Red"></Setter>
 
-&lt;Setter Property="Stroke" Value="Red"&gt;&lt;/Setter&gt;
+<Setter Property="StrokeThickness" Value="2"></Setter>
 
-&lt;Setter Property="StrokeThickness" Value="2"&gt;&lt;/Setter&gt;
+</Style>
 
-&lt;/Style&gt;
+{% endhighlight %}
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 // Creates Connection
 
@@ -153,73 +151,78 @@ lines.Add(con);
 
 diagramcontrol.Connectors = lines;
 
-Customizing the Appearance of the Source and Target Points
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Customizing the Appearance of the Source and Target Points
 
 SourceDecorator and TargetDecorator properties provide support to customize the appearance of the Source Point and Target Point of Connectors.The following code example illustrates this:
 
-[C#]   
+{% highlight c# %}   
 
 
 // Creates Connection
 
-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+ObservableCollection < ConnectorViewModel > lines = new ObservableCollection < ConnectorViewModel > ();
 
 ConnectorViewModel con = new ConnectorViewModel()
 
 {
 
-SourceNode = source,
+	SourceNode = source,
 
-TargetNode = target,
+	TargetNode = target,
 
-ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style,  
-// Specifies DecoratorShape
+	ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style,
+	// Specifies DecoratorShape
 
-TargetDecorator = new PathGeometry()
+	TargetDecorator = new PathGeometry()
 
-{
+	{
 
-Figures = new PathFigureCollection()
+		Figures = new PathFigureCollection()
 
-{
+		{
 
-new PathFigure()
+			new PathFigure()
 
-{
+			{
 
-StartPoint = new Point(0, 0),
+				StartPoint = new Point(0, 0),
 
-Segments = new PathSegmentCollection()
+				Segments = new PathSegmentCollection()
 
-{
+				{
 
-new PolyLineSegment()
+					new PolyLineSegment()
 
-{
+					{
 
-Points = new PointCollection()
+						Points = new PointCollection()
 
-{
+						{
 
-new Point(10, 5),
+							new Point(10, 5),
 
-new Point(0, 10),
+							new Point(0, 10),
 
-new Point(0,0)
+							new Point(0, 0)
 
-}
+						}
 
-}
+					}
 
-}
+				}
 
-}
+			}
 
-}
+		}
 
-},              
+	},
 
-};                        
+};
 
 // Adds Connection to SfDiagram
 
@@ -227,59 +230,53 @@ lines.Add(con);
 
 diagramcontrol.Connectors = lines;
 
-Customizing the Appearance of the Decorator Shapes
+{% endhighlight %}
+
+## Customizing the Appearance of the Decorator Shapes
 
 SourceDecoratorStyle and TargetDecoratorStyle shape properties provide support to customize the appearance of the Source and Target Decorator Shapes.
 
 The following code example illustrates how to customize the Decorator Shape:
 
-[XAML]
+{% tabs %}
 
+{% highlight xml %}
 
+<Style x:Key="decoratorstyle1" TargetType="Path">
 
-&lt;Style x:Key="decoratorstyle1" TargetType="Path"&gt;
+<Setter Property="Stroke" Value="Green" />
 
-&lt;Setter Property="Stroke" Value="Green" /&gt;
+<Setter Property="Fill" Value="Yellow" />
 
-&lt;Setter Property="Fill" Value="Yellow" /&gt;
+<Setter Property="StrokeThickness" Value="1" />
 
-&lt;Setter Property="StrokeThickness" Value="1" /&gt;
+<Setter Property="Width" Value="10" />
 
-&lt;Setter Property="Width" Value="10" /&gt;
+<Setter Property="Height" Value="10" />
 
-&lt;Setter Property="Height" Value="10" /&gt;
+<Setter Property="Stretch" Value="Fill" />
 
-&lt;Setter Property="Stretch" Value="Fill" /&gt;
+</Style>
 
-&lt;/Style&gt;
+<Style x:Key="decoratorstyle" TargetType="Path">
 
+<Setter Property="Fill" Value="Black" />
 
+<Setter Property="Stroke" Value="Black" />
 
-[XAML]
+<Setter Property="StrokeThickness" Value="2" />
 
+<Setter Property="Width" Value="10" />
 
+<Setter Property="Height" Value="10" />
 
-&lt;Style x:Key="decoratorstyle" TargetType="Path"&gt;
+<Setter Property="Stretch" Value="Fill" />
 
-&lt;Setter Property="Fill" Value="Black" /&gt;
+</Style>
 
-&lt;Setter Property="Stroke" Value="Black" /&gt;
+{% endhighlight %}
 
-&lt;Setter Property="StrokeThickness" Value="2" /&gt;
-
-&lt;Setter Property="Width" Value="10" /&gt;
-
-&lt;Setter Property="Height" Value="10" /&gt;
-
-&lt;Setter Property="Stretch" Value="Fill" /&gt;
-
-&lt;/Style&gt;
-
-
-
-[C#]
-
-
+{% highlight c# %}
 
 ConnectorViewModel cvm = new ConnectorViewModel()
 
@@ -345,13 +342,13 @@ TargetDecoratorStyle = this.Resources["decoratorstyle"] as Style
 
 (sfdiagram.Connectors as DiagramCollection).Add(cvm);
 
+{% endhighlight %}
 
+{% endtabs %}
 
 ![](Connectors_images/Connectors_img2.png)
-{:.image }
 
-
-Segments
+## Segments
 
 Segments are used to define the path connecting a source point and a target point. It can be a point, node, or connection port. Any number of segments can be added to this collection. When a connector is being rendered, each segment is iterated and the corresponding segments are drawn. When necessary, additional segments are added for the path to meet the specified target.
 
@@ -363,11 +360,11 @@ The following segments are available:
 * QuadraticCurveSegment
 * CubicCurveSegment
 
-ILineSegment
+### ILineSegment
 
 ILineSegment is used to create straight segments by defining the end point of the line segment.
 
-[C#]
+{% highlight c# %}
 
 
 ConnectorViewModel con = new ConnectorViewModel()
@@ -398,21 +395,17 @@ con.Segments = new ObservableCollection<IConnectorSegment>()
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img3.png)
-{:.image }
 
+N> A terminate segment is added to meet the given target point when the given segment is invalid. The terminate segment can be a type that is added previously.
 
-> ![C:/Users/ApoorvahR/Desktop/Note.png](Connectors_images/Connectors_img4.png)
-{:.image }
-_Note: A terminate segment is added to meet the given target point when the given segment is invalid. The terminate segment can be a type that is added previously._ 
-
-ILineSegmentLength
+### ILineSegmentLength
 
 ILineSegmentLength is used to create a straight segment by defining the length and angle of the line segment.
 
-[C#]
+{% highlight c# %}
 
 
 ConnectorViewModel con = new ConnectorViewModel()
@@ -445,19 +438,17 @@ con.Segments = new ObservableCollection<IConnectorSegment>()
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img5.png)
-{:.image }
 
 
-IOrthogonalSegment
+
+### IOrthogonalSegment
 
 IOrthogonalSegment is used to create an orthogonal segment by defining the length and direction of the segment.
 
-[C#]
-
-
+{% highlight c# %}
 
 ConnectorViewModel con = new ConnectorViewModel()
 
@@ -489,19 +480,17 @@ new OrthogonalSegment()
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img6.png)
-{:.image }
 
 
-IQuadraticCurveSegment
+
+### IQuadraticCurveSegment
 
 IQuadraticCurveSegment is used to create a curved segment by defining one control point and the end point of the segment.
 
-[C#]
-
-
+{% highlight c# %}
 
 ConnectorViewModel con = new ConnectorViewModel()
 
@@ -539,19 +528,15 @@ Point1 = new Point(200,50)
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img7.png)
-{:.image }
 
-
-ICubicCurveSegment
+### ICubicCurveSegment
 
 ICubicCurveSegment is used to create a curved segment by defining two control points and the end point of the segment.
 
-[C#]
-
-
+{% highlight c# %}
 
 ConnectorViewModel con = new ConnectorViewModel()
 
@@ -593,25 +578,23 @@ Point2 = new Point(300,150)
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img8.png)
-{:.image }
 
 
-Segment Editing
+
+## Segment Editing
 
 Segment editing provides a way to dynamically edit segments of a line connector through the use of segment start points, end points, and control points.
 
-Connector Constraints
-
-_Table_ _2__: Constraints Table_
+### Connector Constraints
 
 <table>
 <tr>
-<td>
-Constraint</td><td>
-Description</td></tr>
+<th>
+Constraint</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -695,116 +678,100 @@ Enables all behaviors of the control.</td></tr>
 </table>
 End Thumbs Editing
 
-[C#]
-
-
+{% highlight c# %}
 
 line.Constraints = ConnectorConstraints.Default | ConnectorConstraints.EndThumbs;
+
+{% endhighlight %}
 
 End thumbs editing allows only the source point and target point of a line connector to be edited.
 
 ![](Connectors_images/Connectors_img9.png)
-{:.image }
 
 
-Segment Thumbs Editing
 
-[C#]
+### Segment Thumbs Editing
 
-
+{% highlight c# %}
 
 line.Constraints = ConnectorConstraints.Default | ConnectorConstraints.SegmentThumbs;
+
+{% endhighlight %}
 
 Segment thumbs allow each segment of a line connector to be edited.
 
 ![](Connectors_images/Connectors_img10.png)
-{:.image }
 
 
-Orthogonal Segment Editing
+
+### Orthogonal Segment Editing
 
 Orthogonal segments can be edited at runtime by dragging control points, called thumbs. While dragging control points, some segments can be added or removed to maintain perpendicularity. 
 
 Segments can be edited by dragging the segment thumbs. Segments are updated as neighboring segments are adjusted.
 
 ![](Connectors_images/Connectors_img11.jpeg)
-{:.image }
-
 
 While dragging the end thumbs, new segments may be added.
 
-![AddSegments](Connectors_images/Connectors_img12.jpeg)
-{:.image }
-
+![](Connectors_images/Connectors_img12.jpeg)
 
 When one segment overlaps another segment, unwanted segments are deleted.
 
 ![](Connectors_images/Connectors_img13.jpeg)
-{:.image }
-
 
 ![](Connectors_images/Connectors_img14.jpeg)
-{:.image }
 
-
-Line Routing
+## Line Routing
 
 When drawing a connector between two nodes, when any other nodes are in the path of the connector, it is redrawn around the interfering nodes.
 
 ![](Connectors_images/Connectors_img15.png)
-{:.image }
 
-
-Enabling Line Routing
+### Enabling Line Routing
 
 Line routing is disabled by default, but can be enabled in two ways:
 
 Through GraphConstraints
 
-[C#]
-
-
+{% highlight c# %}
 
 SfDiagram diagramControl = new SfDiagram();
 
 diagramControl.Constraints = diagramControl.Constraints |GraphConstraints.Routing;
 
+{% endhighlight %}
 
+### Through ConnectorConstraints
 
-Through ConnectorConstraints
-
-[C#]
+{% highlight c# %}
 
  Connector conn = new Connector();
 
  connector.Constraints = conn.Constraints | ConnectorConstraints.Routing;
 
+{% endhighlight %}
 
+N> When ConnectorConstraints is set to Inherit, GraphConstraints are considered to enable or disable routing. Otherwise, ConnectorConstraints are considered.
 
-> ![](Connectors_images/Connectors_img16.jpeg)
-{:.image }
-_Note: When ConnectorConstraints is set to Inherit, GraphConstraints are considered to enable or disable routing. Otherwise, ConnectorConstraints are considered._
-
-Line Bridging
+## Line Bridging
 
 Line bridging provides a visual bridge at the intersection of two or more line connectors. By default, an arc is used as a line bridge, but this shape can be overridden. 
 
 ![](Connectors_images/Connectors_img17.png)
-{:.image }
 
 
-Line Bridging Direction
+
+### Line Bridging Direction
 
 Direction of the Line Bridge is customized by using BridgeDirection property. This property decides the intersecting segment to show a bridge based path on the preferred direction. The Default value is BridgeDirection.Top.
 
-_Table_ _3__: Property Table_
-
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 BridgeDirection</td><td>
@@ -814,7 +781,7 @@ EnumBridgeDirection.LeftBridgeDirection.RightBridgeDirection.TopBridgeDirection.
 Example 1: Bridge for Horizontal Connector (with BridgeDirection.Top)
 The following code example explains how to enable the Bridging and set Bridge Direction.
 
-[C#]
+{% highlight c# %}
 
 //Initializes Bridging and setting Bridge Direction
 
@@ -822,74 +789,75 @@ diagram.Constraints = diagram.Constraints | GraphConstraints.Bridging;
 
 diagram.BridgeDirection = BridgeDirection.Top;
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img18.png)
-{:.image }
+
 
 
 Example 2: Bridge for Vertical Connector (with BridgeDirection.Left)
 
-[C#]
+{% highlight c# %}
 
 // sets Bridge Direction
 
 diagramControl.BridgeDirection = BridgeDirection.Left;
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img19.png)
-{:.image }
 
 
-Enable Bridging
+
+## Enable Bridging
 
 Line bridging is disabled by default. It can be enabled in two ways:
 
 * Graph Constraints
 * Connector Constraints
 
-Graph Constraints
+## Graph Constraints
 
 Enabling line bridging through graph constraints applies line bridging to all connectors.
 
-[XAML]
+{% tabs %}
 
+{% highlight xaml %}
 
+  <sync:SfDiagram x:Name="diagramcontrol" Constraints="Default, Bridging">
 
-  &lt;sync:SfDiagram x:Name="diagramcontrol" Constraints="Default, Bridging"&gt;
+  </sync:SfDiagram>
 
-  &lt;/sync:SfDiagram&gt;
+{% endhighlight %}
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 //Initializes the Diagram control.
 
 SfDiagram diagramcontrol = new SfDiagram();
 
-
-
 //Enables line bridging.
 
 diagramcontrol.Constraints |= GraphConstraints.Bridging;
 
-Connector Constraints
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Connector Constraints
 
 Enabling line bridging through connector constraints applies line bridging only to corresponding connectors.
 
-[XAML]
+{% tabs %}
 
+{% highlight xaml %}
 
+<sync:SfDiagram x:Name="diagramcontrol">
 
-&lt;sync:SfDiagram x:Name="diagramcontrol"&gt;
+<sync:SfDiagram.Connectors>
 
-&lt;sync:SfDiagram.Connectors&gt;
-
-&lt;sync:DiagramCollection&gt;
+<sync:DiagramCollection>
 
 <sync:Connector SourcePoint="100,200" 
 
@@ -903,23 +871,21 @@ Enabling line bridging through connector constraints applies line bridging only 
 
                 Constraints="Bridging"/>
 
-&lt;/sync:DiagramCollection&gt;
+</sync:DiagramCollection>
 
-&lt;/sync:SfDiagram.Connectors&gt;
+</sync:SfDiagram.Connectors>
 
-&lt;/sync:SfDiagram&gt;  
+</sync:SfDiagram>  
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight c# %}
 
 //Creates lines
 
 ObservableCollection<ConnectorViewModel> lines = new
 
 ObservableCollection<ConnectorViewModel>();
-
-
 
 //Initializes line connectors.
 
@@ -935,8 +901,6 @@ ConnectorViewModel line1 = new ConnectorViewModel()
 
 };
 
-
-
 //Initializes line connectors.
 
 ConnectorViewModel line2 = new ConnectorViewModel()
@@ -951,8 +915,6 @@ ConnectorViewModel line2 = new ConnectorViewModel()
 
 };
 
-
-
 // Adds connection to the SfDiagram.
 
 lines.Add(line1);
@@ -961,19 +923,22 @@ lines.Add(line2);
 
 diagramcontrol.Connectors = lines; 
 
-Inherit
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Inherit
 
 When ConnectorConstraints is set to Inherit, GraphConstraints are considered to enable or disable line bridging. Otherwise, ConnectorConstraints are considered.
 
-Custom Bridging Segment
+## Custom Bridging Segment
 
 Bridge segments can be customized by overriding the connector’s virtual method CreateSegments as shown in the following code example:
 
 
 
-[C#]
-
-
+{% highlight c# %}
 
 public class CustomLine : Connector
 
@@ -1001,27 +966,21 @@ CreateSegments(Point start, Point end, double angle)
 
 }
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img20.png)
-{:.image }
 
-
-Freehand Drawing
+## Freehand Drawing
 
 You can draw freehand lines in the Diagram control. The control then converts the drawing into a series of Bezier curves to smooth the appearance and allowd you to adjust the drawing.
 
 ![FreeHand1](Connectors_images/Connectors_img21.png)
-{:.image }
-
 
 ![FreeHand2](Connectors_images/Connectors_img22.png)
-{:.image }
-
 
 The following code example illustrates how to enable freehand drawing:
 
-[C#]
+{% highlight c# %}
 
 //Enables DrawingTool 
 
@@ -1031,36 +990,32 @@ diagramControl.Tool = diagramControl.Tool | Tool.DrawOnce;
 
 diagramControl.DefaultConnectorType = ConnectorType.PolyCubicBezier;
 
-Runtime Connection Indicator
+{% endhighlight %}
 
-Description
+### Runtime Connection Indicator
+
+#### Description
 
 When a connector is dragged towards a port or node for connection, the node is highlighted with an animated visualization.
 
-Visualization
+## Visualization
 
 ![](Connectors_images/Connectors_img23.png)
-{:.image }
 
-
-![C:/Users/mohanapriya/Desktop/Animation.png](Connectors_images/Connectors_img24.png)
-{:.image }
-
+![](Connectors_images/Connectors_img24.png)
 
 The node or port towards the connector is dragged and highlighted with a red border.The mouse position on the node is indicated by an animated circle.
 
-Customization of Visualization
+## Customization of Visualization
 
 The data template of the connection indicator can be customized by the protected virtual method GetConnectionIndicator.
 
-_Table_ _4__: Property Table_
-
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Arguments</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 SfDiagram.GetConnectionIndicator</td><td>
@@ -1069,20 +1024,16 @@ Returns the DataTemplate of the runtime connection indicator.</td><td>
 </table>
 
 
-Corner Radius 
-
-
+## Corner Radius 
 
 CornerRadius support enables you to create connectors with rounded corners.
 
-_Table_ _5__: Property Table_
-
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 CornerRadius</td><td>
@@ -1091,7 +1042,7 @@ Gets or sets the CornerRadius of the LineConnector. </td><td>
 </table>
 The following code example illustrates how to set corner radius for connectors.
 
-[C#]
+{% highlight c# %}
 
 //Adds corner radius for connector
 
@@ -1103,17 +1054,11 @@ CornerRadius = 10,
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img25.png)
-{:.image }
 
-
-
-
-Connector Padding
-
-
+## Connector Padding
 
 Connector Padding allows you to adjust the space between the connector’s end point and the object that it is connected (Node, Group, or Port).
 
@@ -1123,7 +1068,7 @@ You can adjust the padding distance between source or target end with its connec
 
 The following code example illustrate how to adjust the distance by using padding property.
 
-[C#]
+{% highlight c# %}
 
 //Adds ConnectorPadding for connector
 
@@ -1137,19 +1082,19 @@ TargetPadding = 10,
 
 };
 
-
+{% endhighlight %}
 
 ![](Connectors_images/Connectors_img26.png)
-{:.image }
 
 
-Endpoint adjustment with specific to Nodes
+
+## Endpoint adjustment with specific to Nodes
 
 ConnectorPadding property of a Node is used to specify how much space in pixels is to be left between a Node and all its connected Edges.
 
 The following code example illustrates how to pad Edges connected to a Node.
 
-[C#]
+{% highlight c# %}
 
 //Adds ConnectorPadding for Node
 
@@ -1161,19 +1106,19 @@ ConnectorPadding = 10,
 
 };
 
+{% endhighlight %}
+
+![](Connectors_images/Connectors_img27.png)
 
 
-![C:/Users/labuser/Documents/Images/Nodepadding.png](Connectors_images/Connectors_img27.png)
-{:.image }
 
-
-Endpoint adjustment with specific to Ports
+## Endpoint adjustment with specific to Ports
 
 ConnectorPadding property of a port is used to specify, the amount of space needed in pixels between a port and all its connected edges.
 
 The following code example illustrates how to pad Edges connected to a Port.
 
-[C#]
+{% highlight c# %}
 
 //Adds ConnectorPadding for port
 
@@ -1185,9 +1130,6 @@ ConnectorPadding = 10,
 
 };
 
+{% endhighlight %}
 
-
-![C:/Users/labuser/Documents/Images/Port.png](Connectors_images/Connectors_img28.png)
-{:.image }
-
-
+![](Connectors_images/Connectors_img28.png)

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Real Time Application
+title: Real Time Application | GridData (Classic) | wpf | Syncfusion
 description: Real Time Application
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # Real Time Application
@@ -22,8 +22,6 @@ The following image shows the Essential Grid being used in a portfolio applicati
 
 ![](Getting-Started_images/Getting-Started_img148.jpeg)
 
-
-
 N> For complete code of this example, refer to the following browser sample:
 
-_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Stock Dashboard Demo_
+...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Stock Dashboard Demo

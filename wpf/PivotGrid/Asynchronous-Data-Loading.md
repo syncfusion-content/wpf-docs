@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Asynchronous Data Loading
+title: Asynchronous Data Loading| PivotGrid | Wpf | Syncfusion
 description: Asynchronous Data Loading
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Asynchronous Data Loading
+# Asynchronous Data Loading
 
 The PivotGrid control provides support for loading data in a unique UI thread. That is, the PivotGrid control can perform long running operations asynchronously on a background thread so that users can access other UI controls while the grid is loading. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the Pivot Schema Designer. This can be achieved by setting the LoadInBackground property to true.
 
-Property Table
+### Property Table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 LoadInBackground</td><td>
@@ -25,8 +25,9 @@ This property enables the PivotGrid control to perform loading operations asynch
 </table>
 
 
-#### To enable asynchronous loading
+## To enable asynchronous loading
 
+{% tabs %}
 {% highlight C# %}   
 
 
@@ -48,20 +49,22 @@ This property enables the PivotGrid control to perform loading operations asynch
           Me.pivotGrid1.InternalGrid.LoadInBackground = True 
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![](Features_images/Features_img52.png)
 
 
-
 PivotGrid Control Loading Asynchronously
+{:.caption}
 
 ![](Features_images/Features_img53.png)
 
 
 
 PivotGrid after Loading
+{:.caption}
 
-#### Sample Link
+### Sample Link
 
 To access the UI threading demo:
 

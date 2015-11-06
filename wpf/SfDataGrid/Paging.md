@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging | SfDataGrid | WPF | Syncfusion
 description: paging
 platform: wpf
 control: SfDataGrid
@@ -15,7 +15,7 @@ This section explains you how to use Paging in SfDataGrid and you can see the ty
 
 The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It provides 
 many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager control, you can 
-[click here](http://docs.syncfusion.com/wpf/sfdatapager).
+[click here](http://help.syncfusion.com/wpf/sfdatapager).
 
 There are two different modes in Data Paging as follows,
 
@@ -35,8 +35,6 @@ The following code example illustrates using DataPager with the SfDataGrid contr
 
 
 {% highlight xml %}
-
-
 
 
 
@@ -86,8 +84,8 @@ The following screenshot displays the output.
 
 
 
-_DataPager with the SfDataGrid control_
-
+DataPager with the SfDataGrid control
+{:.caption}
 ## OnDemandPaging:
 
 In normal Paging, data collection is entirely loaded initially to the DataPager. However, SfDataPager allows you to load the data for the current page item dynamically in OnDemandPaging. To enable OnDemandPaging, you can set UseOnDemandPaging to ‘true’ in SfDataPager control.
@@ -107,8 +105,6 @@ The following code example illustrates defining DataPager for OnDemandPaging:
 
 
 {% highlight xml %}
-
-
 
 
 
@@ -185,8 +181,8 @@ The following screenshot displays the output.
 
 
 
-_DataPager for OnDemand Paging_
-
+DataPager for OnDemand Paging
+{:.caption}
 When you use OnDemandPaging,PagedSource loads only the current page data. When you navigate to another page, OnDemandLoading event is fired and loads another set of data and it maintains the previous page data also. When you navigate to previous page again, OnDemandLoading event is not fired and load the previously maintained data to the corresponding page. When you don’t want to maintain the previous page data, you can call PagedCollectionView.ResetCache() in OnDemandLoading event. ResetCache method call resets the cache except current page.
 
 The following code example illustrates how to use ResetCache method,

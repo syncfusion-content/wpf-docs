@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Cell Context Menu
+title: Header Cell Context Menu| PivotGrid | Wpf | Syncfusion
 description: Header Cell Context Menu
 platform: wpf
 control: PivotGrid
@@ -21,19 +21,19 @@ Enabling UI-level expand/collapse operations will allow the end user to expand a
 
 
 
-## Tables for Properties, Methods, and Events
 
-## Properties
 
-Properties Table
+### Properties
+
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 EnableContextMenu</td><td>
@@ -42,18 +42,17 @@ Dependency</td><td>
 Boolean </td></tr>
 </table> 
 
-### Methods
 
-Methods Table
+### Methods Table
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 ExpandRow(string)  </td><td>
@@ -115,15 +114,15 @@ void</td></tr>
 
 ### Events
 
-Event Table
+
 
 <table>
 <tr>
 <th>
- {{ '**Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Arguments**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th></tr>
+Event</th><th>
+Description </th><th>
+Arguments</th><th>
+Type</th></tr>
 <tr>
 <td>
 ExpandCollapse</td><td>
@@ -133,7 +132,7 @@ Event</td></tr>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 A sample is available in the Syncfusion WPF BI dashboard in the following location.
 
@@ -141,12 +140,12 @@ PivotAnalysis > GroupingBar > Context Menu Demo
 
 {InstalledDrive}\Users\ {User}\AppData\ Local \Syncfusion\ EssentialStudio\{Installed Version}\BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar \Context Menu Demo
 
-### Adding to an Application 
+## Adding to an Application 
 
 You can enable the context menu for row/column header cells present in the grid by setting the EnableContextMenu Boolean property of that cell style to true.
 
 The property usage is illustrated in the code given below.
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -172,6 +171,7 @@ Me.PivotGrid1.ColumnHeaderCellStyle.EnableContextMenu = True
 Me.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = True
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img45.png)
 
@@ -182,7 +182,7 @@ Me.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = True
 
 
 To perform the expand/collapse operations programmatically, you can make use of the eight methods respectively as per your requirement. Passing the UniqueText as a parameter you can expand/collapse one or more columns/rows. The method usage is illustrated in the following code sample.
-
+{% tabs %}
 {% highlight C# %}   
 
 
@@ -256,6 +256,6 @@ Me.pivotGrid1.CollapseColumn(New String() {"Canada", "France"}.ToList())
 Me.pivotGrid1.ExpandColumn(New String() {"Canada", "France"}.ToList())
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 

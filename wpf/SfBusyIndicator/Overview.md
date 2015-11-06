@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Busy Indicator | wpf | Syncfusion
 description: overview
 platform: wpf
 control: Busy Indicator
@@ -11,11 +11,10 @@ documentation: ug
 
 The Busy Indicator control includes over 20 built-in animations that can be displayed within your applications.
 
+![](Overview_images/Overview_img1.png)
 
-
-![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)
-
-_Busy Indicator_
+Busy Indicator
+{:.caption}
 
 ## Key Features
 

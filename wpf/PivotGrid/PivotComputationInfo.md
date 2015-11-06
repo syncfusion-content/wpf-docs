@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotComputationInfo
+title: PivotComputationInfo| PivotGrid | Wpf | Syncfusion
 description: pivotcomputationinfo
 platform: wpf
 control: PivotGrid
@@ -12,14 +12,14 @@ documentation: ug
 This class holds the information needed for calculations that appear in a PivotGrid. For each calculation, there is an associated 
 PivotComputationInfo object that is added to the PivotCalculations collection. The properties available in PivotComputationInfo are as follows.
 
-Properties Table
+### Properties Table
 
 <table>
 <tr>
 <th>
-{{ '**Property Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
 Value it Accepts</th><th>
 Reference link</th></tr>
 <tr>
@@ -127,7 +127,7 @@ Through Code Behind
 2. Create new PivotItem using the PivotComputationInfo class in PivotGridControl.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -168,12 +168,14 @@ Me.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo)
 
 End Sub
 {% endhighlight %} 
+{% endtabs %}
 
 
 ## Format String in PivotComputationInfo
 
 The PivotComputationInfo property replaces each format specification in a specified string with the textual equivalent of a corresponding value.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -212,16 +214,17 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { Calcu
 Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Total", .FieldName="Quantity", .SummaryType= SummaryType.Count, .Format="0.00"}
 
 {% endhighlight %} 
+{% endtabs %}
 
 ### Types of format settings
 
-Formats Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Format**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Format</th><th>
+Description</th></tr>
 <tr>
 <td>
 0.00</td><td>

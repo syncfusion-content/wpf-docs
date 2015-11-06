@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CurrentTimeIndicator-Template-Customization
+title: CurrentTimeIndicator Template Customization| SfSchedule | Wpf | Syncfusion
 description: currenttimeindicator template customization
 platform: wpf
 control: SfSchedule
@@ -9,9 +9,10 @@ documentation: ug
 
 # CurrentTimeIndicator Template Customization
 
-## CurrentTimeIndicatorVisibility :
+## CurrentTimeIndicatorVisibility 
 
 The visibility of current time indicator enabled by using the CurrentTimeIndicatorVisibility property of SfSchedule Control.
+{% tabs %}
 {% highlight html %}
 
 
@@ -41,7 +42,7 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img1.png)
 
@@ -53,32 +54,33 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
 
 
 
-## CurrentTimeIndicatorTemplate:
+## CurrentTimeIndicatorTemplate
 
 The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTemplate of SfScheduleControl.
+{% tabs %}
 {% highlight html %}
 
 
 
-      <Grid Background="White" Name="grid">
+<Grid Background="White" Name="grid">
 
-        <Schedule:SfSchedule x:Name="schedule" ScheduleType="Week" CurrentTimeIndicatorVisibility="Visible">
+<Schedule:SfSchedule x:Name="schedule" ScheduleType="Week" CurrentTimeIndicatorVisibility="Visible">
 
-            <Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
+<Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
 
-                <DataTemplate>
+<DataTemplate>
 
-                    <Border Background="DarkGreen" Height="10" Width="100"></Border>
+<Border Background="DarkGreen" Height="10" Width="100"></Border>
 
-                </DataTemplate>
+</DataTemplate>
 
-            </Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
+</Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
 
-        </Schedule:SfSchedule>        
+</Schedule:SfSchedule>        
 
 
 
-    </Grid>
+</Grid>
 
 
 {% endhighlight  %}
@@ -87,18 +89,19 @@ The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTem
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ScheduleType = ScheduleType.Week;
+schedule.ScheduleType = ScheduleType.Week;
 
-            schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
+schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
 
-            schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTimeIndicatorTemplate"];
+schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTimeIndicatorTemplate"];
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img3.png)

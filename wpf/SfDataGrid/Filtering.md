@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering
+title: Filtering | SfDataGrid | WPF | Syncfusion
 description: filtering
 platform: wpf
 control: SfDataGrid
@@ -37,7 +37,7 @@ The following highlighted one is CheckBoxFiltering.
 ![](Features_images/Features_img103.png)
 
 
-### _CheckBox Filtering_
+### CheckBox Filtering
 
 The following screenshot displays you the control structure of TextFilters in Excel-Like filtering. When you set cangenerateuniqueitems to ‘true’, you can get Filter value combobox instead of TextBox.
 
@@ -45,8 +45,8 @@ The following screenshot displays you the control structure of TextFilters in Ex
 
 
 
-_Control structure of Text Filters_
-
+Control structure of Text Filters
+{:.caption}
 ### Enable UI Filtering 
 
 To access UI Filtering, you can enable it. UI Filtering is enabled or disabled by setting the AllowFiltering property that applies in both SfDataGrid and GridColumn. 
@@ -193,8 +193,8 @@ The following image displays a funnel icon in the header of the Grid. On clickin
 
 
 
-_DataGrid with enabled UI Filtering_
-
+DataGrid with enabled UI Filtering
+{:.caption}
 You can achieve it using code behind also. By simply setting AllowFiltering to’ true’.
 
 
@@ -243,8 +243,8 @@ This filter allows you to filter the data by selecting one or more items using c
 
 ![](Features_images/Features_img106.png)
 
-_DataGrid with Filter mode_
-
+DataGrid with Filter mode
+{:.caption}
 It allows you to filter the data based on some conditions as shown in the following screenshot. (AdvancedFilter).
 
 
@@ -253,8 +253,8 @@ It allows you to filter the data based on some conditions as shown in the follow
 
 
 
-_DataGrid with Advanced filter_
-
+DataGrid with Advanced filter
+{:.caption}
 Advanced filter type is automatically detected based on underlying date type .There are three types of Advanced filtering.
 
 1. Text Filters
@@ -344,8 +344,8 @@ By default, AllowBlankFilter is set to ‘True’, so the null values are includ
 
 
 
-_DataGrid with Blank Filter_
-
+DataGrid with Blank Filter
+{:.caption}
 
 
 ### Immediate Filtering
@@ -377,8 +377,8 @@ ImmediateUpdateColumnFilter enables or disables the immediate update of the colu
 
 
 
-_DataGrid with Immediate Filtering_
-
+DataGrid with Immediate Filtering
+{:.caption}
 ### Events
 
 This topic describes you the events that participates in filtering. The SfDataGrid control provides the following events while filtering: 
@@ -464,7 +464,7 @@ These APIs discussed above, changes the appearance for the entire column filters
 
 The GridFilterControl has its own properties for its core functionality as follows
 
-_GridFilterControl property table_
+GridFilterControl property table
 
 <table>
 <tr>
@@ -577,8 +577,8 @@ This code collapses the sorting options in the GridFilterControl as shown in the
 
 
 
-_Sorting options collapsed in GridFilterControl_
-
+Sorting options collapsed in GridFilterControl
+{:.caption}
 GridFilterControl has DBNullString static property that displays some value instead of null; you can assign that value to DBNullString.
 
 ### CanGenerateUniqueItems
@@ -612,8 +612,8 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 
 
-_DataGrid with CanGenerateUniqueItems property_
-
+DataGrid with CanGenerateUniqueItems property
+{:.caption}
 N> You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column.
 
 ## Programmatic Filtering
@@ -629,7 +629,7 @@ Column-level Filtering is achieved by adding filter predicates to the Grid Colum
 
 FilterPredicate has the following properties.
 
-_FilterPredicate Property table_
+FilterPredicate Property table
 
 <table>
 <tr>
@@ -721,8 +721,8 @@ The following screenshot displays the output when the filter is applied:
 
 
 
-_Filtered EmployeeId column_
-
+Filtered EmployeeId column
+{:.caption}
 As an example of multi-column filtering, the following code example illustrates how to filter the data for employees whose titles are equal to Tool Designer or Marketing Manager and whose gender is male. 
 
 
@@ -755,8 +755,8 @@ The following screenshot displays the list of male employees with title as Marke
 ![](Features_images/Features_img113.png)
 
 
-_DataGrid with filtered details of Employees_
-
+DataGrid with filtered details of Employees
+{:.caption}
 ### Clear Filtering
 
 The SfDataGrid control allows you to clear the Filter by clearing the filter predicates. This is achieved by invoking any one of the following methods:
@@ -869,9 +869,9 @@ The following screenshot displays the filtered records that contain the word “
 
 
 
-_DataGrid with filtered records that contain the word “son”_
-
-N> View.Filter is not applied when itemssource is DataTable._
+DataGrid with filtered records that contain the word “son”
+{:.caption}
+N> View.Filter is not applied when itemssource is DataTable.
 
 ## How To
 

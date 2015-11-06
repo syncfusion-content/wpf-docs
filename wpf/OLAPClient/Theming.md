@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theming
+title: Theming| OLAP Client  | Wpf | Syncfusion
 description: theming
 platform: wpf
 control: OLAP Client 
@@ -23,13 +23,13 @@ Theming is the process of applying particular settings to the visual elements of
  * Office 2003
  * Default
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 This feature enables users to develop a single application and apply different looks as necessary. 
 
-## Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ OlapClientVisualStyle    </td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 A demo available in the following location: <InstalledDrive>:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\SkinCustomizationDemo
 
@@ -57,6 +57,7 @@ A demo available in the following location: <InstalledDrive>:\AppData\Local\Sync
 
   The following code samples demonstrate how theming is added to the OlapClient control.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -78,7 +79,7 @@ A demo available in the following location: <InstalledDrive>:\AppData\Local\Sync
        this.olapClient.VisualStyle = OlapClientVisualStyle.Transparent;
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 

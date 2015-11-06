@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GridTree-Control-Events
+title: GridTree Control Events| GridTree | Wpf | Syncfusion
 description: gridtree control events
 platform: wpf
-control: GridTree Control
+control: GridTree
 documentation: ug
 ---
 
@@ -11,13 +11,13 @@ documentation: ug
 
 Here is the list of events exposed in GridTree control. Additionally, you have access to all the GridControl events exposed on the GridTreeControl.InternalGrid.
 
-_GridTree Control Events_
+
 
 <table>
 <tr>
 <th>
-{{ '**GridTree control Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridTree control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ModelLoaded</td><td>

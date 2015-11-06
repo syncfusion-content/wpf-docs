@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| PDF Viewer | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Overview
+# PDFViewer
 
 Introduction to PDF Viewer
 
@@ -25,7 +25,7 @@ You can embed the PDF viewer within the .NET application using this feature. The
 
 This section covers the requirements that are mandatory for using Syncfusion Essential Pdf Viewer. It also lists operating systems and browsers that are compatible with the product.
 
-Prerequisites
+### Prerequisites
 
 <table>
 <tr>
@@ -38,7 +38,7 @@ Visual Studio 2013 (Ultimate, Premium, Professional and Express)Visual Studio 20
 .NET Framework version 4.5.1.NET Framework version 4.5.NET Framework version 4.0.NET Framework version 3.5 with Service Pack 1.NET Framework version 2.0</td></tr>
 </table>
 
-Compatibility
+### Compatibility
 
 <table>
 <tr>
@@ -49,9 +49,9 @@ Operating Systems</th></tr>
 Windows Server 2008 (32 bit and 64 bit)Windows Vista (32 bit and 64 bit)Windows XPWindows 2003Windows 7Windows 8Windows 8.1</td></tr>
 </table>
 
-## Documentation
+### Documentation
 
-Details
+
 
 <table>
 <tr>
@@ -69,11 +69,11 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://docs.syncfusion.com/wpf/pdfviewer>' | markdownify }} (Navigate to the PDF Viewer for WPF User Guide.)> {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+Online{{ '<http://help.syncfusion.com/wpf/pdfviewer>' | markdownify }} (Navigate to the PDF Viewer for WPF User Guide.)> {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://docs.syncfusion.com/wpf>' | markdownify }}cr (Navigate to the Reporting WPF User Guide. Select {{ '_PDF Viewer_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<http://help.syncfusion.com/wpf>' | markdownify }}cr (Navigate to the Reporting WPF User Guide. Select {{ '_PDF Viewer_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

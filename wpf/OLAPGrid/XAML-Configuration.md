@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XAML-Configuration
+title: XAML Configuration| OLAP Grid | Wpf | Syncfusion
 description: xaml configuration
 platform: wpf
 control: OLAP Grid
@@ -13,22 +13,22 @@ XAML configuration is one of the important features of OlapGrid. It helps you to
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 This feature will help you to set the Data source, Report and UI properties in a simple and elegant manner, when you want to perform the entire configuration in XAML.
 
- Property
 
-_Property Table_
+
+### Property Table
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data  Type**' | markdownify }}</th><th>
-{{ '**Reference Link**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data  Type</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -114,15 +114,15 @@ Adding an OLAP report to OLAP Grid control in design time is described in the fo
 
 <syncfusion:OlapGrid x:Name="olapGrid" 
 
-                      HorizontalAlignment="Stretch"
+		  HorizontalAlignment="Stretch"
 
                       ReportName="SalesReport"
 
-                      CurrentCubeName="Adventure Works" 
+            CurrentCubeName="Adventure Works" 
 
-                      SharedDataManagerName="localManager"
+		  SharedDataManagerName="localManager"
 
-                      olapshared:DataSource.DataManagerName="localManager"
+		  olapshared:DataSource.DataManagerName="localManager"
 
 olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
 
@@ -164,7 +164,8 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 ![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
-_OLAP Grid with SalesReport created by XAML code_
+OLAP Grid with SalesReport created by XAML code
+{:.caption}
 
 
 
@@ -179,7 +180,7 @@ To access a XAML Configuration Demo sample:
 
 Or
 
-###Navigate to:
+### Navigate to:
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration Demo 
 

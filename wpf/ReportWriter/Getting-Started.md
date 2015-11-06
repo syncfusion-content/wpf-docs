@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | ReportWriter | WPF | Syncfusion
 description: getting started
 platform: wpf
-control: Report Writer
+control: ReportWriter
 documentation: ug
 ---
 

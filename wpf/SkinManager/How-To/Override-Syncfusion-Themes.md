@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Override-Syncfusion-Themes
+title: Override Syncfusion Themes| SkinManager | Wpf | Syncfusion
 description: override syncfusion themes
 platform: wpf
 control: SkinManager
@@ -22,51 +22,50 @@ The following steps explain how to override the Syncfusion Themes.
 1. Add the corresponding resource dictionary in the sample.
 
 
+   ~~~xaml
 
-{% highlight xml %}
+	<ResourceDictionary>
 
-<ResourceDictionary>
+	<ResourceDictionary.MergedDictionaries>
 
-       <ResourceDictionary.MergedDictionaries>
+	<ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/ShinyRedStyle.xaml"/>
 
-           <ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/ShinyRedStyle.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
 
-       </ResourceDictionary.MergedDictionaries>
-
-</ResourceDictionary>
+	</ResourceDictionary>
 
 
-{% endhighlight %}
+   ~~~
 
 
 2. Define the new style using the BasedOn property. 
 
-The following code snippet overrides the Syncfusion style for the Calendar Control.
+   The following code snippet overrides the Syncfusion style for the Calendar Control.
 
 
 
-{% highlight xml %}
+   ~~~xaml
 
-<Grid>
+		<Grid>
 
-        <Grid.Resources>
+		<Grid.Resources>
 
-            <Style x:Key="CalendarEditStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource ShinyRedCalendarEditStyle}" >
+		<Style x:Key="CalendarEditStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource ShinyRedCalendarEditStyle}" >
 
-                <Setter Property="Foreground" Value="Blue"/>
+		<Setter Property="Foreground" Value="Blue"/>
 
-                <Setter Property="HeaderForeground" Value="Blue"/>
+		<Setter Property="HeaderForeground" Value="Blue"/>
 
-            </Style>
+		</Style>
 
-        </Grid.Resources>
+		</Grid.Resources>
 
-        <syncfusion:CalendarEdit Name="calendar" Style="{StaticResource CalendarEditStyle}"></syncfusion:CalendarEdit>        
+		<syncfusion:CalendarEdit Name="calendar" Style="{StaticResource CalendarEditStyle}"></syncfusion:CalendarEdit>        
 
-</Grid>
+		</Grid>
 
 
-{% endhighlight %}
+   ~~~
 
 
 The output is displayed as shown below.

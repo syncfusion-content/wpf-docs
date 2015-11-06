@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loclization
+title: Loclization| SfSchedule | Wpf | Syncfusion
 description: loclization
 platform: wpf
 control: SfSchedule
@@ -13,7 +13,7 @@ Localization is the process of customizing the user interface based on a culture
 
 Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The SfSchedule control supports localization, and you can create a resource file for any culture to be applied in the schedule.
 
-## Use Cases
+### Use Cases
 
 Localization makes your application multilingual by formatting content according to the culture. This involves configuring the application for specific languages. The SfSchedule control allows you to set custom resources through .resx files. You can simply provide the string values in a resource file for a specific culture and set it in your application. The given string values will be set accordingly in the SfSchedule control. The appointment windows, message boxes, and other alert windows will be displayed with text in the local language (culture). If the application is deployed in Japanese culture, then the SfSchedule control will display its contents in French language.
 {% highlight c# %}

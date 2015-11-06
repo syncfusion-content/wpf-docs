@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-data-with-WCF-Service
+title: Binding data with WCF Service| Hierarchical Navigator | Wpf | Syncfusion
 description: binding data with wcf service 
 platform: wpf
 control: Hierarchical Navigator
@@ -20,75 +20,75 @@ The steps to bind XML data with WCF Services are as follows:
 
 
 
+   ~~~csharp
 
+		[ServiceContract(Namespace = "")]
 
-			[ServiceContract(Namespace = "")]
+		[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 
-			[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+		public class Service1
 
-			public class Service1
+		{
 
-			{
+		[OperationContract]
 
-				[OperationContract]
+		public ObservableCollection<HierarchyItem> CreateXMLDataItems()
 
-				public ObservableCollection<HierarchyItem> CreateXMLDataItems()
+		{
 
-				{
+		ObservableCollection<HierarchyItem> categories = new ObservableCollection<HierarchyItem>();
 
-					ObservableCollection<HierarchyItem> categories = new ObservableCollection<HierarchyItem>();
+		XDocument XMLItemSource = XDocument.Load("YourXMLLocation/HierarchyItems.xml");
 
-					XDocument XMLItemSource = XDocument.Load("YourXMLLocation/HierarchyItems.xml");
+		categories = this.GetCategories(XMLItemSource.Element("categories"));
 
-					categories = this.GetCategories(XMLItemSource.Element("categories"));
+		return categories;
 
-					return categories;
-
-				}
-
-
-
-				private ObservableCollection<HierarchyItem> GetCategories(XElement element)
-
-				{
-
-					var item = from category in element.Elements("category")
-
-							   select category;
+		}
 
 
 
-					var itemsObservableCollection = new ObservableCollection<HierarchyItem>();
+		private ObservableCollection<HierarchyItem> GetCategories(XElement element)
+
+		{
+
+		var item = from category in element.Elements("category")
+
+		select category;
 
 
 
-					foreach (var itm in item)
-
-					{
-
-						var subitm = new HierarchyItem();
-
-						subitm.ContentStr = itm.Attribute("name").Value;
-
-						subitm.HierarchyItems = this.GetCategories(itm);
-
-						itemsObservableCollection.Add(subitm);
-
-					}
+		var itemsObservableCollection = new ObservableCollection<HierarchyItem>();
 
 
 
-					return itemsObservableCollection;
+		foreach (var itm in item)
 
-				}
+		{
 
-			}
+		var subitm = new HierarchyItem();
+
+		subitm.ContentStr = itm.Attribute("name").Value;
+
+		subitm.HierarchyItems = this.GetCategories(itm);
+
+		itemsObservableCollection.Add(subitm);
+
+		}
 
 
+
+		return itemsObservableCollection;
+
+		}
+
+		}
+
+   ~~~
 
 4. Connect WCF Services with the sample application, as shown in the following code snippet:
    
-   ~~~ cs			
+   ~~~ csharp			
 			 namespace 
 			 WCFServicesInHierarchy
 			 {    public partial class MainPage : UserControl    
@@ -116,8 +116,12 @@ The steps to bind XML data with WCF Services are as follows:
 			 {            get;            set;        
 			 }   
 			 }}
+			 
    ~~~
-   {:.prettyprint}			
+  
+   ~~~xaml  
+		
+			
 		   <Window<br>     
 		   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
 		   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"<br>    
@@ -139,4 +143,4 @@ The steps to bind XML data with WCF Services are as follows:
 		   </Window>
 		
 
-   {:.prettyprint}
+   ~~~

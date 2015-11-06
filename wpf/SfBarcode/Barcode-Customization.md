@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Barcode-Customization
+title: Barcode Customization | SfBarcode | wpf | Syncfusion
 description: barcode customization
 platform: wpf
 control: SfBarcode
@@ -10,11 +10,10 @@ documentation: ug
 # Barcode Customization
 
 The color of the barcode can be customized by modifying the DarkBarBrush and LightBarBrush properties of the barcode control. 
+
 {% highlight html %}
 
-
 <sync:SfBarcode x:Name="barcode" Text="82698640929" DarkBarBrush=”Red” LightBarBrush="Blue” Symbology="QRBarcode"/>
-
 
 {% endhighlight  %}
 
@@ -23,14 +22,13 @@ The DarkBarBrush represents the color of the dark bar (Black color usually) and 
 
 ![](Barcode-Customization_images/Barcode-Customization_img1.png)
 
-_Barcode color combinations- Red_
+Barcode color combinations- Red
+{:.caption}
 
 
 ![](Barcode-Customization_images/Barcode-Customization_img2.png)
 
-_Barcode color combinations- Blue_
+Barcode color combinations- Blue
+{:.caption}
 
 N> The DarkBarBrush and LightBarBrush customizations are applicable only for one dimensional barcodes. In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes.
-
-
-

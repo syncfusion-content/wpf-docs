@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing-and-AutoCompletion
+title: Editing and AutoCompletion| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: editing and autocompletion
 platform: wpf
 control: SfMultiColumnDropDownControl
@@ -42,12 +42,13 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 
 <syncfusion:SfMultiColumnDropDownControl AllowAutoComplete="True"
 
-                                         DisplayMember="Name"    
+DisplayMember="Name"    
 
-                                         ItemsSource="{Binding GridItemSource}"
+ItemsSource="{Binding GridItemSource}"
 
-                                         ValueMember="Title" />
+ValueMember="Title" />
 {% endhighlight %}
+
 In the above code example, AutoCompletion is enabled .It gives the matching suggestion from the collection based on the input as illustrated in the following screenshot.
 
 ![](Features_images/Features_img5.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expand-Nested-Properties-in-PropertyGrid
+title: Expand Nested Properties in PropertyGrid | PropertyGrid  | wpf | Syncfusion
 description: expand nested properties in propertygrid
 platform: wpf
 control: PropertyGrid 
@@ -11,15 +11,11 @@ documentation: ug
 
 The PropertyGrid control has support to expand instance properties of a class which has ExpandableObjectConverter as its TypeConverter.
 
-##  Use Case Scenarios
+###  Use Case Scenarios
 
 Using the PropertyExpandMode property, users can choose whether the nested properties of the selected object can be expanded or not. By setting the PropertyExpandMode as NestedMode, the nested properties of the selected object can be expanded, and by setting the PropertyExpandMode as FlatMode, the selected object is shown in flat mode.
 
 ### Tables for Properties
-
-
-
-Property table
 
 <table>
 <tr>
@@ -37,7 +33,7 @@ Enum</td></tr>
 </table>
 
 
-###  Sample Link
+####  Sample Link
 
 1. Select Start>Programs>Syncfusion>Essential Studio xx.x.x.xx>Dashboard.
 2. Select Run Locally Installed Samples in WPF button.
@@ -45,20 +41,24 @@ Enum</td></tr>
 4. Choose the Getting Started samples listed under it to launch. 
 
 
-
 ## Adding Expand Nested Properties in Property Grid to an Application 
 
 In the following code sample the PropertyVisiblityMode is set as NestedMode in both XAML and C#.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PropertyGrid Name="propertyGrid" PropertyExpandMode="NestedMode">            </syncfusion:PropertyGrid>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}propertyGrid.PropertyExpandMode = Syncfusion.Windows.PropertyGrid.PropertyGrid.PropertyExpandModes.NestedMode; {% endhighlight %} </td></tr>
-</table>
+<syncfusion:PropertyGrid Name="propertyGrid" PropertyExpandMode="NestedMode">            
 
+</syncfusion:PropertyGrid>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+propertyGrid.PropertyExpandMode = Syncfusion.Windows.PropertyGrid.PropertyGrid.PropertyExpandModes.NestedMode; 
+
+{% endhighlight %} 
+
+{% endtabs %}

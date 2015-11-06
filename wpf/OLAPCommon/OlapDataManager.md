@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OlapDataManager
+title: OlapDataManager| OLAPCommon  | Wpf | Syncfusion
 description: olapdatamanager
 platform: wpf
 control: OLAPCommon 
@@ -12,7 +12,7 @@ documentation: ug
 OlapDataManager is the most important class in the whole OLAP Base. All the information transfers from the control to OLAP base will happen through this class and this will retain the current state of the base objects. The connection is established in the Data provider of the OLAP Base, but the information required in establishing the connection is given to the data provider through the OlapDataManager. 
 
 
-_Table3: Constructors_
+### Constructors
 
 <table>
 <tr>
@@ -50,6 +50,7 @@ Void</td><td>
 
 The following code snippet describes establishing connection with the server:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -63,9 +64,9 @@ OlapDataManager olapDataManager = New OlapDataManager("DataSource=localhost; Ini
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 
-Or
 
 
 
@@ -73,6 +74,7 @@ Or
 
 The following code snippet describes establishing connection with the server:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -92,11 +94,13 @@ Dim dataProvider As AdomdDataProvider = New AdomdDataProvider("DataSource=localh
 Dim olapDataManager As OlapDataManager = New OlapDataManager(dataProvider) 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Establishing connection with the offline cube
 
 The following code snippet describes establishing connection with the offline cube:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -113,7 +117,7 @@ OlapDataManager olapDataManager = new OlapDataManager(@"Data Source = C:\ Com
 OlapDataManager olapDataManager = New OlapDataManager("Data Source = C:\\ Common\\Data\\OfflineCube\\Adventure_Works_Ext.cub; Provider = MSOLAP;") 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ## Establishing connection with XMLA Server:
@@ -122,7 +126,7 @@ XML for Analysis (XMLA) is a standard that allows the client applications to tra
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 
 
@@ -137,7 +141,7 @@ XMLA provides the most efficient way to access an OLAP database over the Intern
 The following code illustrates how to connect to the Mondrian server:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -164,7 +168,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 [Click here](http://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
 
@@ -174,6 +178,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
  The following code illustrates how to connect to Active Pivot server:
 
+ {% tabs %}
 {% highlight c# %}
 
 
@@ -199,22 +204,14 @@ Dim DataManager As OlapDataManager = New OlapDataManager("Data Source=http://loc
 DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 [Click here](http://quartetfs.com/) for more information on Active Pivot server.
 
-## Properties and Methods
-
-### Properties
-
-### The properties and their descriptions are tabulated below:
 
 
-
-
-
-_Table4: Properties_
+###  Properties
 
 <table>
 <tr>
@@ -313,9 +310,7 @@ OlapReportCollection</td><td>
 
 
 
-
-
-_Table5: Methods_
+### Methods
 
 <table>
 <tr>
@@ -458,7 +453,7 @@ Example: Slicing the Date dimension from months of 2002 to months of 2003 will t
 
 ### Properties
 
-_Table6: Property Table_
+
 
 <table>
 <tr>
@@ -478,20 +473,13 @@ Boolean</td><td>
 </table>
 
 
-
-
-Adding UseWhereClauseForSlicing property to an Application:
-
-Refer to 5.22
-
-
-
 ## Drill Through
 
 This feature enables the user to drill through any value and see the data which formed the value.
 
 The following code snippet illustrates how to drill through using MDX Query in OlapDataManager:
 
+{% tabs %}
 {% highlight c# %}
 
 string query = @"drillthrough Select { [Customer].[Customer Geography].[Country].&[Australia] } on 0, { [Date].[Fiscal].[Fiscal Year].&[2002] } on 1 from [Adventure Works] Where [Internet Sales Amount]";
@@ -513,7 +501,7 @@ olapDataManager.Execute(query)
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 
 

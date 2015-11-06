@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Templates 
+title: Styles and Templates  | SfDataGrid | WPF | Syncfusion
 description: styles and templates 
 platform: wpf
 control: SfDataGrid
@@ -38,8 +38,8 @@ The following screenshot displays the elements present in the DataGrid.
 
 
 
-_Elements of DataGrid Control_
-
+Elements of DataGrid Control
+{:.caption}
 A DataGrid comprises of the following elements:
 
 * GridCell - Displays the data in cell corresponding to the column.
@@ -74,8 +74,8 @@ The section explains you how to edit a SfDataGrid style in ExpressionBlend. To E
 
 
 
-_Object and Timeline Pane_
-
+Object and Timeline Pane
+{:.caption}
 * From the menu bar select Object > EditStyle.
 
 
@@ -84,8 +84,8 @@ _Object and Timeline Pane_
 
 
 
-_Selecting EditStyle from Object in Menu Bar_
-
+Selecting EditStyle from Object in Menu Bar
+{:.caption}
 You can see two options in submenu,
 
 * Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened as follows.
@@ -96,8 +96,8 @@ You can see two options in submenu,
 
 
 
-_Create Style Resources dialog box_
-
+Create Style Resources dialog box
+{:.caption}
 The Create Style Resources dialog prompts you to enter the name or change the name for your style, also you can select the location where your style is defined.
 
 * Create Empty- Creates an empty style for the SfDataGrid. When you select this option, the same Create style Resources dialog is opened. You can enter the name or change the name of style and select the location where your style is defined.
@@ -108,8 +108,8 @@ The Create Style Resources dialog prompts you to enter the name or change the na
 
 
 
-_Creating empty style for SfDataGrid_
-
+Creating empty style for SfDataGrid
+{:.caption}
 Click OK, Expression Blend generates the style of the SfDatagrid control in the Resource section. The properties available for the style are loaded in the ‘Properties’ pane and you can modify its default values. You can also edit the generated XAML in the XAML view or in VisualStudio.
 
 ### Edit DataGrid Elements in Expression Blend
@@ -125,8 +125,8 @@ You can also edit the Datagrid elements in ExpressionBlend. To edit the SfDatagr
 
 
 
-_Object and Timeline Pane_
-
+Object and Timeline Pane
+{:.caption}
 * From menu bar select the Object > Edit Additional Templates.
 
 
@@ -135,8 +135,8 @@ _Object and Timeline Pane_
 
 
 
-_Selecting Edit Additional Styles from Object in Menu Bar_
-
+Selecting Edit Additional Styles from Object in Menu Bar
+{:.caption}
 You can select the available DataGrid element templates that you can modify the style. For example when you select EditCellStyle, you have following two options.
 
 * Edit a Copy _–_Edits a Copy of the default style. When you select this option, a new dialog window is opened.
@@ -147,8 +147,8 @@ You can select the available DataGrid element templates that you can modify the 
 
 
 
-_Create Style Resources dialog box_
-
+Create Style Resources dialog box
+{:.caption}
 The Create Style Resources dialog prompts you to enter the name or change the name for your style. Also you can select the location where your style is defined.
 
 * Create Empty_-_ creates an empty style for the SfDataGrid. When you select this same option, the same Create Style Resources dialog is opened. You can enter the name or change the name of style and select the location where your style is defined.
@@ -159,8 +159,8 @@ The Create Style Resources dialog prompts you to enter the name or change the na
 
 
 
-_Creating empty style for SfDataGrid_
-
+Creating empty style for SfDataGrid
+{:.caption}
 Click OK, Expression Blend generates the style of the GridCell in the Resource section. The properties available for the styles are loaded in the Properties pane and you can modify their default values. You can also edit the generated XAML in the XAML view or in VisualStudio.
 
 You can also edit the style of the following Datagrid elements in Expression Blend.
@@ -202,16 +202,16 @@ This section explains you how to edit a SfDataGrid style in VisualStudioDesingVi
 
 
 
-_Designview in Visual Studio_
-
+Designview in Visual Studio
+{:.caption}
 * Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened.
 
 ![](Features_images/Features_img155.png)
 
 
 
-_Create style Resources dialog box_
-
+Create style Resources dialog box
+{:.caption}
 The Create style Resources dialog prompts you to enter the name or change the name of style. Also you can select the location where your style is defined.
 
 * Create Empty- creates an empty style for the SfDataGrid. When you select this option, the same Create style Resources dialog is opened. You can enter name or change the name of style and select the location where your style is defined.
@@ -221,8 +221,8 @@ The Create style Resources dialog prompts you to enter the name or change the na
 ![](Features_images/Features_img156.png)
 
 
-_Creating empty style for SfDataGrid_
-
+Creating empty style for SfDataGrid
+{:.caption}
 Click OK, Visual Studio generates the style of DataGrid in the Resource section.The style of the DataGrid control is loaded in the XAML.  You can also edit the generated XAML in the XAML view.
 
 ### Edit DataGrid Elements in VisualStudio Desing View
@@ -239,8 +239,8 @@ This section explains you how to edit a SfDataGrid elements style in VisualStudi
 
 
 
-_Selecting EditCellStyle from EditAdditionalTemplates in Designview_
-
+Selecting EditCellStyle from EditAdditionalTemplates in Designview
+{:.caption}
 * Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened.
 
 
@@ -249,8 +249,8 @@ _Selecting EditCellStyle from EditAdditionalTemplates in Designview_
 
 
 
-_Create style Resources dialog box_
-
+Create style Resources dialog box
+{:.caption}
 The Create style Resources dialog prompts you to enter the name or change the name of style.Also you can select the location where your style is defined.
 
 * Create Empty- creates an empty style for the GridCell. When you select this option, the same Create style Resources dialog is opened. You can enter the name or change the name of style and select the location where your style is defined.
@@ -261,8 +261,8 @@ The Create style Resources dialog prompts you to enter the name or change the na
 
 
 
-_Creating empty style for SfDataGrid_
-
+Creating empty style for SfDataGrid
+{:.caption}
 Click OK, Visual Studio generates the style of GridCell in the Resource section.The style of the GridCell is loaded in the XAML  You can also edit the generated XAML in the XAML view.
 
 You can also edit the style of the following DataGrid elements in Visual Studio.
@@ -284,7 +284,7 @@ You can also edit the style of the following DataGrid elements in Visual Studio.
 
 DataGrid control offers the following properties to apply custom styling for cells.
 
-_Styling cells property table_
+Styling cells property table
 
 <table>
 <tr>
@@ -550,7 +550,7 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 
 The DataGrid control offers the following properties for Styling the different type of rows in Grid
 
-_Styling Rows property table_
+Styling Rows property table
 
 <table>
 <tr>
@@ -808,7 +808,6 @@ N> By default, Silverlight does not support StyleSelectors hence DataGrid too._
 
 DataGrid control offers following StyleSelector properties to set the style for cells.
 
-_Cell StyleSelector property table_
 
 <table>
 <tr>
@@ -851,7 +850,6 @@ GridTableSummaryCell</td></tr>
 
 DataGrid also offers following StyleSelector properties for applying styles to rows. 
 
-_Row StyleSelector property table_
 
 <table>
 <tr>
@@ -995,15 +993,15 @@ The following screenshot displays the output.
 ![](Features_images/Features_img160.png)
 
 
-_Customized rows with background_
-
+Customized rows with background
+{:.caption}
 ## Header Template
 
 ### GridColumn.HeaderTemplate
 
 DataGrid provides the extensive support to apply template for column header. By using the following property, you can template the particular column header.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1104,7 +1102,7 @@ N> By default, Silverlight does not support TemplateSelectors hence DataGrid too
 
 DataGrid offers the following DataTemplateSelector property to apply custom templates for cells based on a custom condition.
 
-_DataTemplateSelector property table_
+DataTemplateSelector property table
 
 <table>
 <tr>
@@ -1218,8 +1216,8 @@ The following screenshot displays the output.
 
 ![](Features_images/Features_img161.png)
 
-_Template selector for DataGrid Template column_
-
+Template selector for DataGrid Template column
+{:.caption}
 ###h GridColumn.CellTemplateSelector
 
 By using this property, you can apply custom templates for cells based on a custom condition. The following code example illustrates applying template selector for DataGrid Template column.
@@ -1317,8 +1315,8 @@ The following screenshot displays the output.
 
 
 
-_Template selector for Grid Template column_
-
+Template selector for Grid Template column
+{:.caption}
 ## Conditional Formatting for Cells
 
 DataGrid allows you to format the styles of cells and rows based on certain conditions. This is achieved by defining styling and template properties of DataGrid. To know more about styling and template properties you can refer the following topics:
@@ -1341,7 +1339,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 
 
 
-
+{% highlight c# %}
 
 
 
@@ -1378,7 +1376,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 				}
 
 
-
+{% endhighlight %}
 
 
 2. Create a CellTemplate for “Change” column and apply the above Foreground converter to the TextBlock inside the Template.
@@ -1388,7 +1386,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 
 
 
-
+{% highlight xml %}
 
 
 			</Window.Resources>
@@ -1436,7 +1434,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 			</syncfusion:SfDataGrid>
 
 			
-
+{% endhighlight %}
 
 
    The following screenshot displays the output.
@@ -1447,8 +1445,8 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 
 
 
-   _Conditional formatting to the Cells in Grid_
-   {:.prettyprint}
+   Conditional formatting to the Cells in Grid
+   {:.caption}
    
 ### Applying Conditional Formatting for Rows
 
@@ -1463,7 +1461,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
 
 
-
+{% highlight c# %}
 
 
 
@@ -1499,7 +1497,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
 			}
 
-
+{% endhighlight %}
 
 
 
@@ -1509,7 +1507,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
 
 
-
+{% highlight xml %}
 
 
 			</Window.Resources>
@@ -1532,7 +1530,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
 
 
-
+{% endhighlight %}
 
 
    The following screenshot displays the output.
@@ -1543,11 +1541,11 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
 
 
-   _Conditional formatting to the Rows in Grid_
-
+   Conditional formatting to the Rows in Grid
+   {:.caption}
    N> StyleSelectors & TemplateSelectors are not supported by Silverlight
 
-   {:.prettyprint}
+   
 
 ## Alternating Row Style
 
@@ -1598,5 +1596,5 @@ The following screenshot displays the output.
 ![](Features_images/Features_img165.png)
 
 
-_AlternatingRowStyle in DataGrid_
-
+AlternatingRowStyle in DataGrid
+{:.caption}

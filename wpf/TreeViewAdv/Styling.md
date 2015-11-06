@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling
+title: Styling | TreeViewAdv | wpf | Syncfusion
 description: styling
 platform: wpf
 control: TreeViewAdv

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Auto-Complete
+title: Auto Complete | SfTextBoxExt | wpf | Syncfusion
 description: auto complete
 platform: wpf
-control: TextBoxExt
+control: SfTextBoxExt
 documentation: ug
 ---
 
@@ -22,19 +22,18 @@ The Employee model looks as shown below:
 
 {% highlight c# %}
 
+public class Employee
 
+{
 
-   public class Employee
-
-    {
-
-        public string Name { get; set; }
+	public string Name { get; set; }
 
 
 
-        public string Email { get; set; }
+	public string Email { get; set; }
 
-    }
+}
+	
 {% endhighlight %}
 
 
@@ -43,30 +42,23 @@ Create a collection attribute,
 
 {% highlight c# %}
 
+private List<Employee> employees;
 
+public List<Employee> Employees
 
-     private List<Employee> employees;
+{
 
+ get { return employees; }
 
+ set { employees = value; }
 
-     public List<Employee> Employees
-
-     {
-
-         get { return employees; }
-
-         set { employees = value; }
-
-     }
+}
 
 {% endhighlight %}
 
 Populate the collection with items,
 
-
 {% highlight c# %}
-
-
 
 Employees = new List<Employee>();
 
@@ -75,15 +67,14 @@ Employees.Add(new Employee{Name = "Lucas", Email = "lucas@syncfusion.com"});
 Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
 
 Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+
 {% endhighlight %}
 
 
 Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -92,6 +83,7 @@ Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
                             Width="400"
 
 AutoCompleteSource="{Binding Employees}" />
+
 {% endhighlight %}
 
 
@@ -100,9 +92,7 @@ At this point, the control is populated with the list of employees. But the Empl
 SearchItemPath property specifies the property path by which the filtering has to be done.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -115,11 +105,10 @@ SearchItemPath property specifies the property path by which the filtering has t
                             AutoCompleteMode="Suggest"
 
                             AutoCompleteSource="{Binding Employees}" />
+							
 {% endhighlight %}
 							
-![C:/Users/ApoorvahR/Desktop/4.png](Auto-Complete_images/Auto-Complete_img1.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img1.png)
 
 N> Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
 
@@ -133,10 +122,6 @@ The suggestions can be displayed in several ways. TextBoxExt supports the follow
 4. SuggestAppend
 
 
-
-
-
-
 The default value of AutoCompleteMode is None.
 
 ### Suggest
@@ -144,10 +129,7 @@ The default value of AutoCompleteMode is None.
 The filtered suggestions are displayed in a drop-down list.  Users can pick an item from the list.
 
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -163,12 +145,10 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/5.png](Auto-Complete_images/Auto-Complete_img2.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img2.png)
 
 Filtered suggestions displayed in drop-down list
-
+{:.caption}
 
 
 ### Append
@@ -176,7 +156,7 @@ Filtered suggestions displayed in drop-down list
 The text will be appended to the first matched item in the suggestions collection without opening the drop-down list.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -194,23 +174,20 @@ AutoCompleteMode="Append"
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/6.png](Auto-Complete_images/Auto-Complete_img3.png)
+![](Auto-Complete_images/Auto-Complete_img3.png)
 
 
 
-Append mode
+#### Append mode
 
-Note: By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard.
+N> By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard.
 
 ### SuggestAppend
 
 The text will be appended to the first matched item in the suggestions collection, in addition to opening the drop-down list.
 
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -226,12 +203,10 @@ The text will be appended to the first matched item in the suggestions collectio
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/7.png](Auto-Complete_images/Auto-Complete_img4.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img4.png)
 
 SuggestAppend mode
-
+{:.caption}
 
 
 ### None
@@ -243,7 +218,7 @@ This option neither appends text nor opens the drop-down list of suggestions.
 The AutoCompleteItemTemplate helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -279,12 +254,10 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/8.png](Auto-Complete_images/Auto-Complete_img5.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img5.png)
 
 Drop down list with image
-
+{:.caption}
 
 
 ## Filtering Customization
@@ -317,7 +290,7 @@ The default value is StartsWith.
 The controls returns the entire collection without filtering when the user types text.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -337,20 +310,17 @@ SuggestionMode="None"
 
 {% endhighlight %}
 
- ![C:/Users/ApoorvahR/Desktop/9.png](Auto-Complete_images/Auto-Complete_img6.png)
-
-
+ ![](Auto-Complete_images/Auto-Complete_img6.png)
 
 None case
+{:.caption}
+
 
 ### StartsWith
 
 The control returns all possible matches which start with the text typed by the user.
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -368,19 +338,18 @@ SuggestionMode="StartsWith"
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/10.png](Auto-Complete_images/Auto-Complete_img7.png)
-
+![](Auto-Complete_images/Auto-Complete_img7.png)
 
 
 StartsWith case
-
+{:.caption}
 
 
 ### StartsWithCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user which is culture and case sensitive.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -398,12 +367,13 @@ SuggestionMode="StartsWithCaseSensitive"
 
                             AutoCompleteSource="{Binding Employees}"/>
 {% endhighlight %}
-![C:/Users/ApoorvahR/Desktop/11.png](Auto-Complete_images/Auto-Complete_img8.png)
+
+![](Auto-Complete_images/Auto-Complete_img8.png)
 
 
 
 StartsWithCaseSensitive case
-
+{:.caption}
 
 
 ### StartsWithOrdinal
@@ -411,9 +381,7 @@ StartsWithCaseSensitive case
 The control returns all possible matches which start with the text typed by the user based on OrdinalIgnoreCase.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -431,11 +399,12 @@ The control returns all possible matches which start with the text typed by the 
 
 
 {% endhighlight %}
-![C:/Users/ApoorvahR/Desktop/12.png](Auto-Complete_images/Auto-Complete_img9.png)
+
+![](Auto-Complete_images/Auto-Complete_img9.png)
 
 
 StartsWithOrdinal case
-
+{:.caption}
 
 
 ### StartsWithOrdinalCaseSensitive
@@ -443,9 +412,7 @@ StartsWithOrdinal case
 The control returns all possible matches which start with the text typed by the user by Ordinal which is case sensitive.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -463,12 +430,10 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/13.png](Auto-Complete_images/Auto-Complete_img10.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img10.png)
 
 StartsWithOrdinalCaseSensitive case
-
+{:.caption}
 
 
 
@@ -477,9 +442,7 @@ StartsWithOrdinalCaseSensitive case
 The control return all possible matches which contains the text typed by the user.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -497,21 +460,18 @@ The control return all possible matches which contains the text typed by the use
 
 
 {% endhighlight %}
-![C:/Users/ApoorvahR/Desktop/14.png](Auto-Complete_images/Auto-Complete_img11.png)
 
-
+![](Auto-Complete_images/Auto-Complete_img11.png)
 
 Contains case
-
+{:.caption}
 
 
 ### ContainsCaseSensitive
 
 The control return all possible matches which contains the text typed by the user which is culture and case sensitive.
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -529,11 +489,10 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/15.png](Auto-Complete_images/Auto-Complete_img12.png)
-
+![](Auto-Complete_images/Auto-Complete_img12.png)
 
 ContainsCaseSensitive case
-
+{:.caption}
 
 
 ### ContainsOrdinal
@@ -541,9 +500,7 @@ ContainsCaseSensitive case
 The control return all possible matches which contains the text typed by the user based on OrdinalIgnoreCase.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -561,20 +518,17 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/16.png](Auto-Complete_images/Auto-Complete_img13.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img13.png)
 
 ContainsOrdinal case
-
+{:.caption}
 
 
 ### ContainsOrdinalCaseSensitive
 
 The control return all possible matches which contains the text typed by the user based on Ordinal which is case sensitive.
-{% highlight xml %}
 
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -592,12 +546,10 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/17.png](Auto-Complete_images/Auto-Complete_img14.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img14.png)
 
 ContainsOrdinalCaseSensitive
-
+{:.caption}
 
 
 ### Equals
@@ -605,9 +557,7 @@ ContainsOrdinalCaseSensitive
 The control return all possible matches which equals the text typed by the user.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -625,18 +575,16 @@ The control return all possible matches which equals the text typed by the user.
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/18.png](Auto-Complete_images/Auto-Complete_img15.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img15.png)
 
 Equals case
+{:.caption}
 
 ### EqualsCaseSensitive
 
 The control return all possible matches which equals the text typed by the user which is culture and case sensitive.
-{% highlight xml %}
 
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -654,20 +602,17 @@ The control return all possible matches which equals the text typed by the user 
 
 
 {% endhighlight %}
-![C:/Users/ApoorvahR/Desktop/19.png](Auto-Complete_images/Auto-Complete_img16.png)
 
-
+![](Auto-Complete_images/Auto-Complete_img16.png)
 
 EqualsCaseSensitive case
+{:.caption}
 
 ### EqualsOrdinal
 
 The control return all possible matches which equals the text typed by the user based on OrdinalIgnoreCase.
 
-
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -685,19 +630,17 @@ The control return all possible matches which equals the text typed by the user 
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/20.png](Auto-Complete_images/Auto-Complete_img17.png)
-
+![](Auto-Complete_images/Auto-Complete_img17.png)
 
 EqualsOrdinal case
+{:.caption}
 
 ### EqualsOrdinalCaseSensitive
 
 The control return all possible matches which equals the text typed by the user based on Ordinal which is case sensitive.
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -715,22 +658,19 @@ The control return all possible matches which equals the text typed by the user 
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/21.png](Auto-Complete_images/Auto-Complete_img18.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img18.png)
 
 EqualsOrdinalCaseSensitive case
-
+{:.caption}
 
 
 ### Custom
 
 The control return all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt x:Name="autoComplete" HorizontalAlignment="Center" 
 
@@ -783,19 +723,20 @@ The control return all possible matches based on the Filter property. Filter is 
 
         }
 
-{% endhighlight %}
-
-{% highlight c# %}
+		
+[c#]
 
 autoComplete.Filter = MyFilter;
+
 {% endhighlight %}
 
+{% endtabs %}
 
-![C:/Users/ApoorvahR/Desktop/22.png](Auto-Complete_images/Auto-Complete_img19.png)
 
-
+![](Auto-Complete_images/Auto-Complete_img19.png)
 
 Custom case
+{:.caption}
 
 N> Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
 
@@ -806,10 +747,7 @@ N> Append mode always works only with StartsWith behavior. If the typed text is 
 This option allows the control to filter suggestions by ignoring the case. The default value is false.
 
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -827,21 +765,17 @@ This option allows the control to filter suggestions by ignoring the case. The d
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/23.png](Auto-Complete_images/Auto-Complete_img20.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img20.png)
 
 Ignore Case
-
+{:.caption}
 
 
 ### Minimum Prefix Length
 
 The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -858,19 +792,17 @@ MinimumPrefixCharacters="2"
                             AutoCompleteSource="{Binding Employees}"/>
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/24.png](Auto-Complete_images/Auto-Complete_img21.png)
-
+![](Auto-Complete_images/Auto-Complete_img21.png)
 
 Minimum Prefix Length case
+{:.caption}
 
 ### Popup Delay
 
 PopupDelay specifies the delay after which the suggestion popup should open. 
 
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -902,9 +834,7 @@ The default value is bottom.
 
 The drop-down list will open at top of the control.
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -922,20 +852,17 @@ The drop-down list will open at top of the control.
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/25.png](Auto-Complete_images/Auto-Complete_img22.png)
-
-
+![](Auto-Complete_images/Auto-Complete_img22.png)
 
 Drop down list opening at the top
-
+{:.caption}
 
 
 #### Bottom
 
 The drop-down list will open at bottom of the control.
-{% highlight xml %}
 
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -953,19 +880,18 @@ The drop-down list will open at bottom of the control.
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/26.png](Auto-Complete_images/Auto-Complete_img23.png)
+![](Auto-Complete_images/Auto-Complete_img23.png)
 
 
 Drop down list opening at the bottom
-
+{:.caption}
 
 
 #### None
 
 The drop-down list will not open.
-{% highlight xml %}
 
-
+{% highlight xaml %}
 
 <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -982,9 +908,9 @@ SuggestionBoxPlacement="None"
                             AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
-![C:/Users/ApoorvahR/Desktop/27.png](Auto-Complete_images/Auto-Complete_img24.png)
 
+![](Auto-Complete_images/Auto-Complete_img24.png)
 
 No drop down list
-
+{:.caption}
 

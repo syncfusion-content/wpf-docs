@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Adding-Items-Manually
+title: Adding Items Manually | TabNavigation | wpf | Syncfusion
 description: adding items manually
 platform: wpf
-control: TabNavigationControl
+control: TabNavigation
 documentation: ug
 ---
 
@@ -11,162 +11,138 @@ documentation: ug
 
 Tab Navigation control is based on Items control. Therefore, items can be added through the property Items in Tab Navigation control. Any kind of items can be added into Tab Navigation control, which will be wrapped by the container Tab Navigation Item.
 
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
-  <syncfusion:TabNavigationControl TransitionEffect="Slide" >
+<syncfusion:TabNavigationControl TransitionEffect="Slide" >
 
-            <syncfusion:TabNavigationItem Header="1">
+	<syncfusion:TabNavigationItem Header="1">
 
-                <syncfusion:TabNavigationItem.Content>
+		<syncfusion:TabNavigationItem.Content>
 
-                    <Grid>
+			<Grid>
 
-                        <TextBlock Text="Item 1"/>
+				<TextBlock Text="Item 1"/>
 
-                    </Grid>
+			</Grid>
 
-                </syncfusion:TabNavigationItem.Content>
+		</syncfusion:TabNavigationItem.Content>
 
-            </syncfusion:TabNavigationItem>
+	</syncfusion:TabNavigationItem>
 
-            <syncfusion:TabNavigationItem Header="2">
+	<syncfusion:TabNavigationItem Header="2">
 
-                <syncfusion:TabNavigationItem.Content>
+		<syncfusion:TabNavigationItem.Content>
 
-                    <Grid>
+			<Grid>
 
-                        <TextBlock Text="Item 2"/>
+				<TextBlock Text="Item 2"/>
 
-                    </Grid>
+			</Grid>
 
-                </syncfusion:TabNavigationItem.Content>
+		</syncfusion:TabNavigationItem.Content>
 
-            </syncfusion:TabNavigationItem>
+	</syncfusion:TabNavigationItem>
 
-            <syncfusion:TabNavigationItem Header="3">
+	<syncfusion:TabNavigationItem Header="3">
 
-                <syncfusion:TabNavigationItem.Content>
+		<syncfusion:TabNavigationItem.Content>
 
-                    <Grid>
+			<Grid>
 
-                        <TextBlock Text="Item 3"/>
+				<TextBlock Text="Item 3"/>
 
-                    </Grid>
+			</Grid>
 
-                </syncfusion:TabNavigationItem.Content>
+		</syncfusion:TabNavigationItem.Content>
 
-            </syncfusion:TabNavigationItem>
+	</syncfusion:TabNavigationItem>
 
-            <syncfusion:TabNavigationItem Header="4">
+	<syncfusion:TabNavigationItem Header="4">
 
-                <syncfusion:TabNavigationItem.Content>
+		<syncfusion:TabNavigationItem.Content>
 
-                    <Grid>
+			<Grid>
 
-                        <TextBlock Text="Item 4"/>
+				<TextBlock Text="Item 4"/>
 
-                    </Grid>
+			</Grid>
 
-                </syncfusion:TabNavigationItem.Content>
+		</syncfusion:TabNavigationItem.Content>
 
-            </syncfusion:TabNavigationItem>
+	</syncfusion:TabNavigationItem>
 
+</syncfusion:TabNavigationControl>
 
-
-        </syncfusion:TabNavigationControl>
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 
 TabNavigationControl tabNavControl = new TabNavigationControl();
 
+TabNavigationItem item1 = new TabNavigationItem();
 
+item1.Header = "1";
 
-            TabNavigationItem item1 = new TabNavigationItem();
+item1.Content = "Item 1";
 
-            item1.Header = "1";
+TabNavigationItem item2 = new TabNavigationItem();
 
-            item1.Content = "Item 1";
+item2.Header = "2";
 
+item2.Content = "Item 2";
 
+TabNavigationItem item3 = new TabNavigationItem();
 
-            TabNavigationItem item2 = new TabNavigationItem();
+item3.Header = "3";
 
-            item2.Header = "2";
+item3.Content = "Item 3";
 
-            item2.Content = "Item 2";
+TabNavigationItem item4 = new TabNavigationItem();
 
+item4.Header = "4";
 
+item4.Content = "Item 4";
 
-            TabNavigationItem item3 = new TabNavigationItem();
+tabNavControl.Items.Add(item1);
 
-            item3.Header = "3";
+tabNavControl.Items.Add(item2);
 
-            item3.Content = "Item 3";
+tabNavControl.Items.Add(item3);
 
-
-
-            TabNavigationItem item4 = new TabNavigationItem();
-
-            item4.Header = "4";
-
-            item4.Content = "Item 4";
-
-
-
-            tabNavControl.Items.Add(item1);
-
-            tabNavControl.Items.Add(item2);
-
-            tabNavControl.Items.Add(item3);
-
-            tabNavControl.Items.Add(item4);
+tabNavControl.Items.Add(item4);
 
 {% endhighlight  %}
 
 
 {% highlight vbnet %}
 
+Dim tabNavControl As New TabNavigationControl()
 
-
-    Dim tabNavControl As New TabNavigationControl()
-
-
-
-    Dim item1 As New TabNavigationItem()
+Dim item1 As New TabNavigationItem()
 
 item1.Header = "1"
 
 item1.Content = "Item 1"
 
-
-
-    Dim item2 As New TabNavigationItem()
+Dim item2 As New TabNavigationItem()
 
 item2.Header = "2"
 
 item2.Content = "Item 2"
 
-
-
-    Dim item3 As New TabNavigationItem()
+Dim item3 As New TabNavigationItem()
 
 item3.Header = "3"
 
 item3.Content = "Item 3"
 
-
-
-    Dim item4 As New TabNavigationItem()
+Dim item4 As New TabNavigationItem()
 
 item4.Header = "4"
 
 item4.Content = "Item 4"
-
-
 
 tabNavControl.Items.Add(item1)
 
@@ -175,14 +151,9 @@ tabNavControl.Items.Add(item2)
 tabNavControl.Items.Add(item3)
 
 tabNavControl.Items.Add(item4)
+
 {% endhighlight %}
 
-
-
+{% endtabs %}
 
 ![](Adding-Items-Manually_images/Adding-Items-Manually_img1.png)
-
-
-
-
-

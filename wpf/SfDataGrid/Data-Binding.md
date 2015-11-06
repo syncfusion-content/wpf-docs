@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | SfDataGrid | WPF | Syncfusion
 description: data binding
 platform: wpf
 control: SfDataGrid
@@ -50,7 +50,7 @@ DataGrid has the View property of type ICollectionViewAdv interfacethat implemen
 
 N> DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -165,7 +165,7 @@ OldStartingIndex-It contains the index at which the Action occurred.
 
 The following is the methods that are associated with View which can be used to defer refresh the view.
 
- _Method Table_
+Method Table
 
 <table>
 <tr>
@@ -315,8 +315,6 @@ public class OrderInfo
 
 
 
-
-
 <syncfusion:SfDataGrid AutoGenerateColumns="False"
 
                        ColumnSizer="SizeToHeader"
@@ -349,7 +347,7 @@ Execute the above code to render the following output.
 
 
 
-_DataGrid with Complex Property Binding_
+DataGrid with Complex Property Binding
 
 N> DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode.
 
@@ -456,8 +454,6 @@ The following code example illustrates binding dynamic object data to DataGrid.
 
 
 
-
-
 <Window.DataContext>
 
     <local:TestData />
@@ -484,7 +480,8 @@ The following screenshot displays the output.
 
 
 
- _DataGrid with Dynamic Object Binding_
+DataGrid with Dynamic Object Binding
+{:.caption}
 
 N> Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode.
 
@@ -509,7 +506,8 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 ![](Features_images/Features_img3.png)
 
 
- _Add New Project Wizard_
+Add New Project Wizard
+{:.caption}
 
 ### To Create the Entity Data Model
 
@@ -527,8 +525,8 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
   ![](Features_images/Features_img4.png)  
 
 
-  _Add New Item Wizard_  
-
+Add New Item Wizard
+{:.caption}
 
 
 9.When you click Add button, Entity Data Model Wizard opens.   
@@ -536,8 +534,9 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 11.Then select Next button.  
  
  ![](Features_images/Features_img5.png)  
- _Entity Data Model Wizard_  
-
+ 
+Entity Data Model Wizard
+{:.caption}
 
 
 12.Choose Your Data Connection page appears.     
@@ -549,8 +548,9 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 15.Select Next button to select tables for use.  
  
  ![](Features_images/Features_img6.png)  
- _Choose Your Data Connection Page_  
-
+ 
+ Choose Your Data Connection Page  
+ {:.caption} 
 
 
 16.Choose Your Database Objects and settings page appears.   
@@ -559,8 +559,8 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 19.Now Check Order Details to select that.  
 
  ![](Features_images/Features_img7.png)  
- _Choose Your Database Objects and settings Page_  
-
+ Choose Your Database Objects and settings Page  
+ {:.caption}
 20.Now select Finish. The entity model diagram is displayed, and a “Northwind.edmx” file is added to your web project.  
 
 ### To create the data service
@@ -578,8 +578,8 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 
 
 
-_Add New Item Wizard_
-
+Add New Item Wizard
+{:.caption}
 7.In the Code Editor, locate the first TODO: make changes as shown in the following code example.
 
 
@@ -632,8 +632,8 @@ To create the ClientApplication, you can add a second project, add a service ref
    ![](Features_images/Features_img9.png)  
 
 
-   _Add Service Reference Wizard_  
-
+   Add Service Reference Wizard 
+  {:.caption}
 8.Enable Data Binding to your service.   
 9.On the menu bar, select View, Other Windows, and Data Sources.  
 10.In the Data Sources window, select Add New Data Source button.  
@@ -709,8 +709,8 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
 
 
-_DataGrid with Customer Deatails_
-
+DataGrid with Customer Deatails
+{:.caption}
 #### Save Back to Database
 
 You can save the data back to DataBase. You can validate using RowValidating event and then do changes in DataBase. You can add the following code example in RowValidating event. 
@@ -813,8 +813,8 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
    ![](Features_images/Features_img11.png)
 
 
-   _Add Connection Wizard_
-
+   Add Connection Wizard
+   {:.caption}
 3. Make connection as per your availability. 
 4. Change option to select your data source.
 
@@ -823,8 +823,8 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
    ![](Features_images/Features_img12.png)
 
 
-   _Change Data Source page_
-
+   Change Data Source page
+   {:.caption}
 5. Refresh to select your Server name.
 
 
@@ -833,16 +833,16 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
 
 
 
-   _Modify Connection Page_
-
+   Modify Connection Page
+   {:.caption}
 6. Select your Database name
 
    ![](Features_images/Features_img14.png)
 
 
 
-   _Add Connection Wizard_
-
+   Add Connection Wizard
+   {:.caption}
 7. Now select Test Connection to check whether connection is successful or not.
 8. When Test Connection is successful, you can create itemssource.
 9. The Database is added to your server explorer. 
@@ -852,8 +852,8 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
    ![](Features_images/Features_img15.png)
 
 
-   _Server Explorer_
-
+   Server Explorer
+   {:.caption}
 10. Right-click on Database file, select properties. Copy the connection string.
 
     #### To bind data to Grid
@@ -947,11 +947,9 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
 
 
     ![](Features_images/Features_img16.png)
-
-    {:.prettyprint}
 	
-_Data Grid with Binded Data from ADO.NET_
-
+Data Grid with Binded Data from ADO.NET
+{:.caption}
 #### Save Back to Database
 
 You can save the data back to Database. You can validate using RowValidating event and then do changes in Database. You can add the following code example in RowValidating event. 
@@ -1036,8 +1034,8 @@ This section explains you how to bind data and save back to Database using Entit
    ![](Features_images/Features_img17.png)
 
 
-   _Add New Item Wizard_
-
+   Add New Item Wizard
+   {:.caption}
 5. Configure Database wizard appears. 
 6. Select Generate from database.
 7. Select Next button.
@@ -1047,8 +1045,8 @@ This section explains you how to bind data and save back to Database using Entit
    ![](Features_images/Features_img18.png)
 
 
-   _Entity Data Model Wizard_
-
+   Entity Data Model Wizard
+   {:.caption}
 8. Choose Your Data Connection page appears. 
 9. You can select Northwind sample Database available in the drop-down list. 
 
@@ -1065,24 +1063,24 @@ This section explains you how to bind data and save back to Database using Entit
 
 
 
-    _Choose Your Data Connection Page_
-
+    Choose Your Data Connection Page
+    {:.caption}
 12. Click New Connection.
 
     ![](Features_images/Features_img20.png)
 
 
 
-    _Connection Properties Wizard_
-
+    Connection Properties Wizard
+    {:.caption}
 13. Click Change button to create your database. You can get list of available services.
 
     ![](Features_images/Features_img21.png)
 
-    {:.prettyprint}
+    
 
- _Change Data Source Wizard_
-
+ Change Data Source Wizard
+ {:.caption}
 1. You can use Browse to select your Database. 
 2. Click on Test Connection to make the connection successful.
 
@@ -1092,8 +1090,8 @@ This section explains you how to bind data and save back to Database using Entit
 
 
 
-   _Connection Properties Page_
-
+   Connection Properties Page
+  {:.caption}
 3. Then click Next in the Wizard. Dialogue box that contains add Database file to your current project appears. Click Yes
 4. Choose Your Database Objects and settings page appears. 
 5. Expand Table node.
@@ -1105,14 +1103,14 @@ This section explains you how to bind data and save back to Database using Entit
    ![](Features_images/Features_img23.png)
 
 
-   _Entity Data Model Wizard_
-
+   Entity Data Model Wizard
+   {:.caption}
    Here, Database connection using EntityFramework is completed. EntityBindingFramework.edmx file is added to your application, with your Entity diagram of Order_detail. 
 
    To Create View Model
 
 
-
+{% highlight xml %}
 
 
 
@@ -1152,7 +1150,8 @@ This section explains you how to bind data and save back to Database using Entit
 
 			}
 
-   {:.prettyprint}
+{% endhighlight %}
+   
 
 #### Binding ItemsSource to Grid
 
@@ -1207,8 +1206,8 @@ Add required assemblies to your WPF application to use SfDataGrid.
 
 
 
-_Data Grid with Entity Framework_
-
+Data Grid with Entity Framework
+{:.caption}
 #### Save Back to Database
 
 You can save the data back to Database. You can validate using RowValidating event and then do changes in Database. You can add the following code example in RowValidating event. 
@@ -1283,8 +1282,8 @@ This section explains you how to bind data using Linq to SQL step by step. To us
 ![](Features_images/Features_img25.png)
 
 
-_Add New Item Wizard_
-
+Add New Item Wizard
+{:.caption}
 1. After adding this class to your project, create Northwind.dbml file that opens in a design view. 
 2. Now you can drag the items.
 3. Click Server Explorer.
@@ -1295,8 +1294,8 @@ _Add New Item Wizard_
 
 
 
-_Design View_
-
+Design View
+{:.caption}
 * You can add new Database connection by clicking add icon button in Server explorer.  
 
 
@@ -1305,8 +1304,8 @@ _Design View_
 
 
 
-_Add Connection Wizard_
-
+Add Connection Wizard
+{:.caption}
 * You can change your DataSource.
 
 
@@ -1315,8 +1314,8 @@ _Add Connection Wizard_
 
 
 
-_Change Data Source Page_
-
+Change Data Source Page
+{:.caption}
 * Select your DataSource and Provider. You can refresh the AddConnection wizard to select your server name. 
 
 
@@ -1324,8 +1323,8 @@ _Change Data Source Page_
 ![](Features_images/Features_img29.png)
 
 
-_Add Connection Wizard_
-
+Add Connection Wizard
+{:.caption}
 * Select your Database name.
 
 
@@ -1334,8 +1333,8 @@ _Add Connection Wizard_
 
 
 
-_Add Connection Wizard_
-
+Add Connection Wizard
+{:.caption}
 * Check whether the connection is successfull or not.
 
 
@@ -1344,8 +1343,8 @@ _Add Connection Wizard_
 
 
 
-_Add Connection Wizard with Test connection succeeded pop up_
-
+Add Connection Wizard with Test connection succeeded pop up
+{:.caption}
 * When connection is successful, you can add table to use. 
 * Then you can drag table to work space .dbml from server explorer. Drag Shippers table to design view.
 
@@ -1355,8 +1354,8 @@ _Add Connection Wizard with Test connection succeeded pop up_
 
 
 
-_Server Explorer_
-
+Server Explorer
+{:.caption}
 * After you drop the table to Northwind.dbml you can get a Entity model diagram of that table.
 
 
@@ -1459,9 +1458,8 @@ NorthwindDataContext is from Northwind.Designer.cs file (it is from the file tha
    ![](Features_images/Features_img33.png)
 
 
-   _Data Grid with Data from Linq to SQL_
-
-   {:.prettyprint}
+   Data Grid with Data from Linq to SQL
+   {:.caption}
    
 #### Save Back to Database
 

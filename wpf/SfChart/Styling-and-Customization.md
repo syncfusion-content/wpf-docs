@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling-and-Customization
+title: Styling and Customization| SfChart | Wpf | Syncfusion
 description: styling and customization
 platform: wpf
 control: SfChart
@@ -110,7 +110,7 @@ The following screenshot demonstrates series with CustomPalette.
 
 ###None Palette
 
-This palette sets the transparent color to the series. You can identify the series existence with the help of [legends](http://docs.syncfusion.com/winrt/sfchart/legend) or [adornments](http://docs.syncfusion.com/wpf/sfchart/adornments).
+This palette sets the transparent color to the series. You can identify the series existence with the help of [legends](http://help.syncfusion.com/winrt/sfchart/legend) or [adornments](http://help.syncfusion.com/wpf/sfchart/adornments).
 
 ###Applying predefined Palette for each segment
 
@@ -206,63 +206,63 @@ SfChart provides you with the option to customize the legends depending on the a
 
 <syncfusion:SfChart.Legend>
 
-            <syncfusion:ChartLegend>
+<syncfusion:ChartLegend>
 
 
 
-                <!-- Custom panel for legend items-->
+<!-- Custom panel for legend items-->
 
-                <syncfusion:ChartLegend.ItemsPanel>
+<syncfusion:ChartLegend.ItemsPanel>
 
-                    <ItemsPanelTemplate >
+<ItemsPanelTemplate >
 
-                        <WrapPanel  Width="300"/>
+<WrapPanel  Width="300"/>
 
-                    </ItemsPanelTemplate>
+</ItemsPanelTemplate>
 
-                </syncfusion:ChartLegend.ItemsPanel>
-
-
-
-                <!--Custom template for legend item-->
-
-                <syncfusion:ChartLegend.ItemTemplate>
-
-                    <DataTemplate>
-
-                        <Grid>
-
-                            <Grid.ColumnDefinitions>
-
-                                <ColumnDefinition/>
-
-                                <ColumnDefinition/>
-
-                            </Grid.ColumnDefinitions>
+</syncfusion:ChartLegend.ItemsPanel>
 
 
 
-                            <!--For Legend icon-->
+<!--Custom template for legend item-->
 
-                            <Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"></Ellipse>
+<syncfusion:ChartLegend.ItemTemplate>
+
+<DataTemplate>
+
+<Grid>
+
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition/>
+
+<ColumnDefinition/>
+
+</Grid.ColumnDefinitions>
 
 
 
-                            <!--For Legend label-->
+<!--For Legend icon-->
 
-                            <TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"></TextBlock>
+<Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"></Ellipse>
 
-                        </Grid>
 
-                    </DataTemplate>
 
-                </syncfusion:ChartLegend.ItemTemplate>
+<!--For Legend label-->
 
-            </syncfusion:ChartLegend>
+<TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"></TextBlock>
 
-        </syncfusion:SfChart.Legend>
+</Grid>
 
-    </Grid>
+</DataTemplate>
+
+</syncfusion:ChartLegend.ItemTemplate>
+
+</syncfusion:ChartLegend>
+
+</syncfusion:SfChart.Legend>
+
+</Grid>
 
 {% endhighlight %}
 
@@ -274,17 +274,17 @@ SfChart provides you with the option to customize the legends depending on the a
 
 You can use the CustomTemplate property to customize the series of the SfChart. This support is available for the following series:
 
-* [LineSeries](http://docs.syncfusion.com/wpf/sfchart/series#lineseries)
-* [BubbleSeries](http://docs.syncfusion.com/wpf/sfchart/series#bubbleseries)
-* [ScatterSeries](http://docs.syncfusion.com/wpf/sfchart/series#scatterseries)
-* [ColumnSeries](http://docs.syncfusion.com/wpf/sfchart/series#columnseries)
-* [BarSeries](http://docs.syncfusion.com/wpf/sfchart/series#barseries)
-* [SplineSeries](http://docs.syncfusion.com/wpf/sfchart/series#splineseries)
-* [StepLineSeries](http://docs.syncfusion.com/wpf/sfchart/series#steplineseries)
-* [StackingColumnSeries](http://docs.syncfusion.com/wpf/sfchart/series#stackingcolumnseries)
-* [StackingBarSeries](http://docs.syncfusion.com/wpf/sfchart/series#stackingbarseries)
-* [Stackingcolumn100Series](http://docs.syncfusion.com/wpf/sfchart/series#stackingcolumn100series)
-* [StackingBar100Series](http://docs.syncfusion.com/wpf/sfchart/series#stackingbar100series)
+* [LineSeries](http://help.syncfusion.com/wpf/sfchart/series#lineseries)
+* [BubbleSeries](http://help.syncfusion.com/wpf/sfchart/series#bubbleseries)
+* [ScatterSeries](http://help.syncfusion.com/wpf/sfchart/series#scatterseries)
+* [ColumnSeries](http://help.syncfusion.com/wpf/sfchart/series#columnseries)
+* [BarSeries](http://help.syncfusion.com/wpf/sfchart/series#barseries)
+* [SplineSeries](http://help.syncfusion.com/wpf/sfchart/series#splineseries)
+* [StepLineSeries](http://help.syncfusion.com/wpf/sfchart/series#steplineseries)
+* [StackingColumnSeries](http://help.syncfusion.com/wpf/sfchart/series#stackingcolumnseries)
+* [StackingBarSeries](http://help.syncfusion.com/wpf/sfchart/series#stackingbarseries)
+* [Stackingcolumn100Series](http://help.syncfusion.com/wpf/sfchart/series#stackingcolumn100series)
+* [StackingBar100Series](http://help.syncfusion.com/wpf/sfchart/series#stackingbar100series)
 
 
 
@@ -294,7 +294,7 @@ In this DataTemplate, the respective Segments come as DataContext. For instance,
 
 The following table illustrates the properties available in the corresponding segment class of the series.
 
-Properties in the segment class
+### Properties in the segment class
 
 <table>
 <tr>
@@ -406,59 +406,59 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 
 
-<syncfusion:LineSeries Label="2010" 
+	<syncfusion:LineSeries Label="2010" 
 
-                                ItemsSource="{Binding Demands}"
+	ItemsSource="{Binding Demands}"
 
-                                XBindingPath="Demand"
+	XBindingPath="Demand"
 
-                                YBindingPath="Year2010" ShowTooltip="True"
+	YBindingPath="Year2010" ShowTooltip="True"
 
-                                Palette="None"
+	Palette="None"
 
-                                >
+	>
 
-            <syncfusion:LineSeries.TooltipTemplate>
-
-
-
-                <DataTemplate>
-
-                    <Grid >
+	<syncfusion:LineSeries.TooltipTemplate>
 
 
 
-                        <StackPanel HorizontalAlignment="Right">
+	<DataTemplate>
 
-                            <Grid Background="OrangeRed">
-
-                                <TextBlock Text="{Binding Item.Demand }" Width="85" Height="25" Margin="5"
-
-                                VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
-
-                            </Grid>
-
-                            <Grid Background="MediumSpringGreen">
-
-                                <TextBlock VerticalAlignment="Center" TextAlignment="Center" Margin="5" Text="{Binding YData}" Height="25"
-
-                                 Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
-
-                            </Grid>
-
-                        </StackPanel>
-
-                    </Grid>
-
-                </DataTemplate>
+	<Grid >
 
 
 
-            </syncfusion:LineSeries.TooltipTemplate>
+	<StackPanel HorizontalAlignment="Right">
+
+	<Grid Background="OrangeRed">
+
+	<TextBlock Text="{Binding Item.Demand }" Width="85" Height="25" Margin="5"
+
+	VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
+
+	</Grid>
+
+	<Grid Background="MediumSpringGreen">
+
+	<TextBlock VerticalAlignment="Center" TextAlignment="Center" Margin="5" Text="{Binding YData}" Height="25"
+
+	Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
+
+	</Grid>
+
+	</StackPanel>
+
+	</Grid>
+
+	</DataTemplate>
 
 
 
-        </syncfusion:LineSeries>
+	</syncfusion:LineSeries.TooltipTemplate>
+
+
+
+	</syncfusion:LineSeries>
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Close-Buttons-type
+title: Setting Close Buttons type | TabControlExt | wpf | Syncfusion
 description: setting close buttons type
 platform: wpf
 control: TabControlExt
@@ -23,92 +23,72 @@ The following Close button modes are supported by the TabControlExt.
 
 The following code snippet illustrates how to set the "Both" Close button mode in the TabControlExt control.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <!-- Adding TabcontrolExt with CloseButtonType is Both -->
 
 <syncfusion:TabControlExt Margin="20" Name="tabControlExt" CloseButtonType="Both">
 
-
-
     <!-- Adding TabItemExt -->
 
     <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
-
-
 
     <!-- Adding TabItemExt -->
 
     <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
-
 
 // Creating instance of the TabControlExt control
 
 TabControlExt tabControlExt = new TabControlExt();
 
-
-
 //Creating the instance of StackPanel
 
 StackPanel stackPanel = new StackPanel();
-
-
 
 //Creating instance of the TabItemExt 
 
 TabItemExt tabItemExt1 = new TabItemExt();
 
-
-
 // Setting header of the TabItemExt
 
 tabItemExt1.Header = "TabItemExt1";
-
-
 
 //Adding TabItemExt to TabControlExt
 
 tabControlExt.Items.Add(tabItemExt1);
 
-
-
 //Creating instance of the TabItemExt2 
 
 TabItemExt tabItemExt2 = new TabItemExt();
-
-
 
 // Setting header of the TabItemExt
 
 tabItemExt2.Header = "TabItemExt2";
 
-
-
 //Adding TabItemExt to TabControlExt
 
 tabControlExt.Items.Add(tabItemExt2);           
-
-
 
 //Setting CloseButtonType property as Both
 
 tabControlExt.CloseButtonType = CloseButtonType.Both;
 
-
-
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt); 
+
 {% endhighlight %}
+
+
+{% endtabs %}
 
 
 ![](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg)

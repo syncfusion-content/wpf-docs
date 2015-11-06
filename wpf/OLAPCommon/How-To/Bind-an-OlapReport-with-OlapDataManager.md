@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind-an-OlapReport-with-OlapDataManager
+title: Bind an OlapReport with OlapDataManager| OLAPCommon | Wpf | Syncfusion
 description: bind an olapreport with olapdatamanager
 platform: wpf
 control: OLAPCommon
@@ -11,18 +11,18 @@ documentation: ug
 
 Once the connection is established, you can create and bind the OlapReport to the manger by using any one of the following property and methods:
 
-## Property:
+### Property
 
 1. CurrentReport
 
-## Methods:
+### Methods
 
 1. SetCurrentReport
 2. LoadOlapDataManager
 3. LoadReportDefinitionFile
 4. LoadReportDefinitionFromStream  
 
-## Methods for Silverlight:
+### Methods for Silverlight
 
 1. SetCurrentReport
 2. LoadReportFromStream
@@ -33,7 +33,7 @@ The following code snippet will illustrate the binding of OlapReport using these
 
 ## Sample OlapReport
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -105,4 +105,4 @@ olapReport1.CategoricalElements.Add(measureElementColumn)
 olapReport1.SeriesElements.Add(dimensionElementRow)
 
 {% endhighlight  %}
-
+{% endtabs %}

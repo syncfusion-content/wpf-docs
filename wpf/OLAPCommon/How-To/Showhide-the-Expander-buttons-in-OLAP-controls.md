@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Showhide-the-Expander-buttons-in-OLAP-controls
+title: Showhide the Expander buttons in OLAP controls| OLAPCommon | Wpf | Syncfusion
 description: show/hide the expander buttons in olap controls
 platform: wpf
 control: OLAPCommon
@@ -13,6 +13,7 @@ There is a property in OlapReport called ShowExpanders, which is used to show/hi
 
 To show the Expanders:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -28,16 +29,18 @@ To show the Expanders:
 
 
 
-'''Displaying the Expander button in Controls
+'Displaying the Expander button in Controls
 
 olapReport.ShowExpanders = True 
 
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 To hide the Expanders: 
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -53,7 +56,7 @@ To hide the Expanders:
 
 
 
-'''Displaying the Expander button in Controls
+'Displaying the Expander button in Controls
 
 olapReport.ShowExpanders = false 
 
@@ -61,3 +64,4 @@ olapReport.ShowExpanders = false
 
 
 {% endhighlight  %}
+{% endtabs %}

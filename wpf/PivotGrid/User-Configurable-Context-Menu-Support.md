@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User-Configurable Context Menu Support
+title: User Configurable Context Menu Support| PivotGrid | Wpf | Syncfusion
 description: User-Configurable Context Menu Support
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## User-Configurable Context Menu Support
+# User-Configurable Context Menu Support
 
-### Description
+## Description
 
 This feature provides support to reorder the Context Menu Items displayed on right-clicking the Header cells of the Pivot Row and Column of the PivotGrid control. It enhances user-accessibility to frequently used Context Menu Items by providing a User-Configurable Context Menu. You can reorder Context Menu Items according to your preference and ease.
 
@@ -33,9 +33,10 @@ The default Context Menu lists the following Items:
 
 
 
-_PivotGrid with User-Configurable Context Menu_
+PivotGrid with User-Configurable Context Menu
+{:.caption}
 
-### Enabling the User-Configurable Context Menu
+## Enabling the User-Configurable Context Menu
 
 This User-Configurable Context Menu is available only in the RowPivotsOnly mode. The following code is used to enable the user-configurable context menu:
 
@@ -51,7 +52,7 @@ this.pivotGridControl1.ColumnHeaderCellStyle.EnableContextMenu = true;
 
  {% endhighlight %} 
  
-### Customizing the User-Configurable Context Menu
+## Customizing the User-Configurable Context Menu
 
 This following code illustrates how to reorder the Context Menu Items of the User-Configurable Context Menu in the PivotGrid control
 
@@ -171,7 +172,7 @@ contextMenu.Items.Add(item);
 
 {% endhighlight %} 
 
-#### Sample Link
+### Sample Link
 
 {InstalledDrive}:\Users\{User_Name}\AppData\Local\Syncfusion\EssentialStudio\{VersionNumber{x.x.x.x}\WPF\PivotAnalysis.WPF\Samples\Product Showcase\RowPivotsOnly Demo
 

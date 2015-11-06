@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-a-DataSource-to-the-Report-Designer
+title: Add a DataSource to the Report Designer | ReportDesigner | wpf | Syncfusion
 description: add a datasource to the report designer
 platform: wpf
 control: Report Designer
@@ -15,7 +15,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-   ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig7.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img1.png)
+   ![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img1.png)
 
 
 
@@ -30,7 +30,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 3.Click Build and the Connection Properties dialog opens.
 
 
-   ![C:/Users/radhas/Desktop/IMG1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img3.png)
+   ![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img3.png)
 
 
 
@@ -42,7 +42,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-   ![C:/Users/radhas/Desktop/IMG2.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img4.png)
+   ![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img4.png)
 
 
 
@@ -50,13 +50,13 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-   ![C:/Users/radhas/Desktop/sshot-1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img5.png)
+   ![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img5.png)
 
 
 
 7.Click OK. The DataSource (Adventure) appears in the Report Data panel.
 
-   ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig12.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img6.png)
+   ![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img6.png)
 
 
 

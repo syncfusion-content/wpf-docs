@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag-and-Drop
+title: Drag and Drop| GroupBar | Wpf | Syncfusion
 description: drag and drop
 platform: wpf
 control: GroupBar

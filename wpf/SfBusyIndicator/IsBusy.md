@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IsBusy
+title: IsBusy | Busy Indicator | wpf | Syncfusion
 description: isbusy
 platform: wpf
 control: Busy Indicator
@@ -10,10 +10,10 @@ documentation: ug
 # IsBusy
 
 The IsBusy property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
-{% highlight html %}
 
+{% tabs %}
 
-
+{% highlight xaml %}
 
 <Grid Background="CornflowerBlue">
 
@@ -22,22 +22,18 @@ The IsBusy property in the BusyIndicator control is used to determine whether an
 </Grid>
 
 {% endhighlight %}
+
 {% highlight c# %}
-
-
-
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 
 busyIndicator.IsBusy = true;
 
-
 {% endhighlight %}
 
+{% endtabs %}
 
-![C:/Users/ApoorvahR/Desktop/1.png](IsBusy_images/IsBusy_img1.png)
+![](IsBusy_images/IsBusy_img1.png)
 
-
-_Busy Indicator_
-
-
+Busy Indicator
+{:.caption}

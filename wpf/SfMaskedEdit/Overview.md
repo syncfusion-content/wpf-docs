@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| SfMaskedEdit | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Overview
+# SfMaskedEdit
 
 MaskedEdit is an enhanced TextBox control that restricts input to conform to a specific structure or mask. It uses the Mask property to distinguish between proper and improper inputs. The important features of MaskedEdit are,
 

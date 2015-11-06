@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner-Background
+title: Range Adorner Background| DoubleTextBox  | Wpf | Syncfusion
 description: range adorner background
 platform: wpf
 control: DoubleTextBox 
@@ -17,9 +17,9 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-Properties
+### Properties
 
-Property Table
+
 
 <table>
 <tr>
@@ -39,10 +39,14 @@ Color name</td></tr>
 The RangeAdornerBackground property must be set either in XAML or the code file.
 
 
+{% tabs %}
+{% highlight xml %}  
+RangeAdornerBackground="LightGreen" 
+{% endhighlight %} 
 
-{% highlight xml %}  RangeAdornerBackground="LightGreen" {% endhighlight %} 
-
-{% highlight C# %}  control.RangeAdornerBackground = Brushes.LightGreen; {% endhighlight %} 
-
+{% highlight C# %}  
+control.RangeAdornerBackground = Brushes.LightGreen;
+ {% endhighlight %} 
+{% endtabs %}
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | TreeViewAdv | wpf | Syncfusion
 description: data binding
 platform: wpf
 control: TreeViewAdv
@@ -16,7 +16,7 @@ This section illustrates how to bind a custom object to the TreeViewAdv Control 
 You can bind the custom object to the DataContext property of the control, and their corresponding elements to the children of the TreeViewAdv control. When a DataContext is set to a window or to a TreeViewAdv, it gets inherited to all its logical children. The OnInitialized method is used to get the DataContext. As you use DataContext in the template with DataTriggers, you should set that property to active host tab or null.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -148,7 +148,7 @@ public class TreeViewHeader
 
 {% endhighlight %}
 
-
+{%endtabs%}
 ![](Data-Binding_images/Data-Binding_img1.jpeg)
 
 

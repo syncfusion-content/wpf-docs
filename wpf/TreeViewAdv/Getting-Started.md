@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | TreeViewAdv | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: TreeViewAdv

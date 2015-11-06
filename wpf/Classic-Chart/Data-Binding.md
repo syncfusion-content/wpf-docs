@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | Chart(Classic) | wpf | Syncfusion
 description: Data-Binding
 platform: wpf
 control: Chart (Classic)
@@ -13,9 +13,6 @@ documentation: ug
 Simple IList-based instances can be easily bound to the Chart. The following code example illustrates how to bind IList-based instances as the data source to Chart.
 
 {% highlight c# %}
-
-
-
 
 public IList marks()
 
@@ -53,25 +50,15 @@ The following screenshot illustrates how a Chart Series is associated to the Cha
 
 
 
-See Also
 
-XML Data Source
-
-ObservableCollection Data Source
-
-CollectionViewSource Data Source
-
-LINQ Data Source
-
-Data Binding for Child Level Properties
+### Data Binding for Child Level Properties
 
 ## XML Data Source
 
 Chart provides built-in support to bind XML data created through XmlDataProvider instances. The following code example illustrates this.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <XmlDataProvider x:Key="myXmlData">
 
@@ -110,10 +97,6 @@ Chart provides built-in support to bind XML data created through XmlDataProvider
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 chart1.Areas[0].Series[0].DataSource = xmlDataProvider1;
 
 chart1.Areas[0].Series[0].BindingPathX = "Month";
@@ -122,31 +105,20 @@ chart1.Areas[0].Series[0].BindingPathsY = new string[] { "Sales" };
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img2.jpeg)
 
-
-
-See Also
-
-IList Data Source
-
-ObservableCollection Data Source
-
-CollectionViewSource Data Source
-
-LINQ Data Source
-
-Data Binding for Child Level Properties
 
 ## ObservableCollection Data Source
 
 Essential Chart provides support to bind data to an ObservableCollection or INotifyCollectionChanged collection. Also, the chart automatically gets updated when any changes are made to the data source.
 
 The following code illustrates how to bind an ObservableCollection as data source to Chart.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -157,9 +129,6 @@ The following code illustrates how to bind an ObservableCollection as data sourc
 <sfchart:ChartSeries DataSource="{StaticResource sportinterest}" Type="Column" BindingPathX="SportName" BindingPathsY="Interest"/>
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
 
 
 // Namespace to be included for INotifyPropertyChanged interface.
@@ -328,33 +297,21 @@ Add(new Sport(108, "Tennis", 10));
 
 }  
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates how a Chart Series is associated to the Chart by using ObservableCollection data source.
 
 ![](Chart-Controls_images/Chart-Controls_img3.jpeg)
 
 
 
-See Also
-
-XML Data Source
-
-IList Data Source
-
-CollectionViewSource Data Source
-
-LINQ Data Source
-
-Data Binding for Child Level Properties
-
-LINQ Data Source
-
 ## CollectionViewSource Data Source
 
 You can bind CollectionViewSource as a Chart Series Data Source to Chart. Chart listens to the changes in the source and gets updated automatically. The following code illustrates how to bind CollectionViewSource as data source to Chart.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -387,20 +344,13 @@ BindingPathX="LocationName" BindingPathsY="Sales"/>
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
 // Namespace to be included for INotifyPropertyChanged interface.
 
 using System.ComponentModel;
 
-
-
 // Namespace to be included for ObservableCollection.
 
 using System.Collections.ObjectModel;
-
-
 
 public class Production : INotifyPropertyChanged
 
@@ -422,8 +372,6 @@ public class Production : INotifyPropertyChanged
 
     }
 
-
-
     public Production(double prodid, string locationname, double sales)
 
     {
@@ -436,8 +384,6 @@ public class Production : INotifyPropertyChanged
 
     }
 
-
-
     public override string ToString()
 
     {
@@ -445,8 +391,6 @@ public class Production : INotifyPropertyChanged
         return locationname.ToString();
 
     }
-
-
 
     public double LocationID
 
@@ -466,8 +410,6 @@ public class Production : INotifyPropertyChanged
 
     }
 
-
-
     public string LocationName
 
     {
@@ -485,8 +427,6 @@ public class Production : INotifyPropertyChanged
         }
 
     }
-
-
 
     public double Sales
 
@@ -506,8 +446,6 @@ public class Production : INotifyPropertyChanged
 
     }
 
-
-
     protected void OnPropertyChanged(string info)
 
     {
@@ -525,8 +463,6 @@ public class Production : INotifyPropertyChanged
     }
 
 }
-
-
 
 class SalesinLocation : ObservableCollection<Production>
 
@@ -556,39 +492,24 @@ class SalesinLocation : ObservableCollection<Production>
 
 }
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates how a Chart Series is associated to the Chart by using CollectionViewSource data source.
 
 ![](Chart-Controls_images/Chart-Controls_img4.jpeg)
 
 
-
-See Also
-
-IList Data Source
-
-XML Data Source
-
-ObservableCollection Data Source
-
-IList Data Source
-
-LINQ Data Source
-
-Data Binding for Child Level Properties
-
 ## LINQ Data Source
 
 Chart lets you to directly bind LINQ results as the Data Source for a Chart Series. The following code illustrates how to bind LINQ results as the data source for the Chart Series.
+
+
 {% highlight c# %}
-
-
-
 
 // Namespace to be included for XDocument.
 
 using System.Xml.Linq;
-
-
 
 public partial class Window1 : Window
 
@@ -753,21 +674,6 @@ The following screenshot illustrates how a Chart Series is associated to the Cha
 ![](Chart-Controls_images/Chart-Controls_img5.jpeg)
 
 
-
-See Also
-
-IList Data Source
-
-XML Data Source
-
-ObservableCollection Data Source
-
-IList Data Source
-
-Data Binding for Child Level Properties
-
-CollectionViewSource Data Source
-
 ## Data Binding for Child Level Properties
 
 The child level properties can be bound to the chart series using BindingPathX and BindingPathsY values. BindingPathX and BindingPathsY are the properties that belong to chart series which holds the x-axis and y-axis binding path values.
@@ -775,10 +681,6 @@ The child level properties can be bound to the chart series using BindingPathX a
 The following code example elaborates on the data binding for the child level properties-End and Start, for the Product class. 
 
 {% highlight c# %}
-
-
-
-
 
 public class Product
 
@@ -844,9 +746,6 @@ public class Product
 {% highlight xml %}
 
 
-
-
-
 <syncfusion:ChartSeries Name="series1" Type="Gantt"  Interior="{StaticResource SeriesAInterior}" Label="Allotted Days"  StrokeThickness="0.4"  IsIndexed="False"   BindingPathX=”ID” BindingPathY=”Info.Start,Info.End” />
 {% endhighlight  %}
 
@@ -871,21 +770,14 @@ In Stock market, data gets updated in a timely manner.  Initial data can be bind
 Adding Data Binding to an Application 
 
 You can bind chart data into the DataSource property of ChartSeries control.  The View is generated internally for the user bound data and the chart can render in visual. The BindingPathX and BindingPathsY properties are used to initialize the property name of the binded data. This property values is used as coordinate values for X and Y direction in the ChartAxis control.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries DataSource="{StaticResource data}" BindingPathX="ProductID" BindingPathsY="Price" />
 
-
-
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
-
 
             ProductDetails data = this.Resources["data"] as ProductDetails;
 
@@ -908,8 +800,7 @@ You can bind chart data into the DataSource property of ChartSeries control.  Th
             chart.Areas[0].Series[0].DataModel.View.SortDescriptions.Add(desc);
 
 {% endhighlight  %}
-
-_DataModel Table_
+{% endtabs %}
 
 <table>
 <tr>
@@ -950,11 +841,10 @@ NA</td></tr>
 
 IChartDataPoint interface is a point that contains the information about the data of the chart series, X and Y coordinates of the point, and the segment. The IChartDataPoint interface objects can be initialized internally based on the ChartPoint and the object input by the user.
 
-Properties
+### Properties
 
 The following table lists the properties of the IChartDataPoint interface.
 
-_Propertiesof IchartDataPoint_
 
 <table>
 <tr>
@@ -1009,10 +899,8 @@ Value indicates the Empty Point.</td><td>
 Bool</td></tr>
 </table>
 Following are the code that describes the IChartDataPoint interfaces.
+
 {% highlight c# %}
-
-
-
 
 class CustomPoint : IChartDataPoint
 

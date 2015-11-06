@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drop-Direction
+title: Drop Direction | SplitButton | wpf | Syncfusion
 description: drop direction
 platform: wpf
 control: SplitButtonAdv

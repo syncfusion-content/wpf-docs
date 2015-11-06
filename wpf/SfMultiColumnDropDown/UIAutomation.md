@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UIAutomation
+title: UIAutomation| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: uiautomation
 platform: wpf
 control: SfMultiColumnDropDownControl
@@ -17,7 +17,6 @@ SfMutliColumnDropDownControl supports CodedUITest automation that enables you to
 
 There are three level of support in CodedUITest for SfMultiColumnDropDownControl.
 
-List of levels
 
 <table>
 <tr>
@@ -45,7 +44,7 @@ The following screenshot illustrates the SfMultiColumnDropDownControl properties
 
 Following are the properties for SfMultiColumnDropDownControl.
 
-Property Table
+### Property Table
 
 <table>
 <tr>
@@ -61,7 +60,7 @@ SfMultiColumnDropDownControl</td><td>
 ### Quick Test Professional
 
 
-SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion namespace. To know more about QTP test refer to the [link](http://docs.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
+SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
@@ -71,7 +70,7 @@ The following screenshot illustrates the QTP Test for SfMultiColumnDropDownContr
 
 Following are methods for SfMultiColumnDropDownControl.
 
-Methods Table
+### Methods Table
 
 <table>
 <tr>

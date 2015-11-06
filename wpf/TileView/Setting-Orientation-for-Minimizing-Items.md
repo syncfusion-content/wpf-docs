@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Orientation-for-Minimizing-Items
+title: Setting Orientation for Minimizing Items | TileView | wpf | Syncfusion
 description: setting orientation for minimizing items.
 platform: wpf
 control: TileView Control
@@ -113,11 +113,11 @@ MinimizedItemTemplate / MaximizedItemTemplate Properties Table
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MinimizedItemsOrientation </td><td>
@@ -135,11 +135,11 @@ MinimizedItemsOrientationChanged Table
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Arguments**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Event </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MinimizedItemsOrientationChanged</td><td>

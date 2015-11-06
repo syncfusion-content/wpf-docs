@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Members
+title: Members | ReportViewer | WPF | Syncfusion
 description: members
 platform: wpf
-control: Report Viewer
+control: ReportViewer
 documentation: ug
 ---
 
 # Members
 
-Properties 
+##Properties 
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 <br>ReportPath</td><td>
@@ -128,21 +128,20 @@ Dependency Property</td><td>
 Boolean</td></tr>
 </table>
 
-Methods
+## Methods
 
 <table>
 <tr>
 <th>
-
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 <br>RefreshReport</td><td>
 Causes the local report to be rendered with new data.</td><td>
- -</td><td>
+-</td><td>
 Void</td></tr>
 <tr>
 <td>
@@ -188,17 +187,17 @@ ReportParameter[]</td><td>
 void</td></tr>
 </table>
 
-Events
+## Events
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Event</th><th>
+Description</th></tr>
 <tr>
-<th>
-<br>ViewModeChanged</th><th>
-The event is triggered when the view is changed to normal and print view</th></tr>
+<td>
+<br>ViewModeChanged</td><td>
+The event is triggered when the view is changed to normal and print view</td></tr>
 <tr>
 <td>
 ViewButtonClick</td><td>
@@ -206,7 +205,7 @@ The event is triggered when the view button is clicked</td></tr>
 <tr>
 <td>
 SubreportProcessing</td><td>
-The event is triggered when the report is RDLC and contains with sub report.</th></tr>
+The event is triggered when the report is RDLC and contains with sub report.</td></tr>
 </table>
 
 

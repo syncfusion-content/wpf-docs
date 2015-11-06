@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Subset-Filter
+title: Subset Filter| OLAP Client  | Wpf | Syncfusion
 description: subset filter
 platform: wpf
 control: OLAP Client 
@@ -23,6 +23,7 @@ We can specify the subset filter for both row and column.
 Users can toggle the visibility of SubSetFilters by using this property. This property will accept a Boolean value (true/false) based on 
 this value it sets the visibility of SubSetFilters.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -39,4 +40,4 @@ this.olapClient1.ShowSubsetFilters = false;
 Me.olapClient1.ShowSubsetFilters = False
 
 {% endhighlight %}
-
+{% endtabs %}

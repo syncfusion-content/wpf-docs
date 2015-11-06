@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Freezing-Headers
+title: Freezing Headers| PivotGrid | Wpf | Syncfusion
 description: freezing headers 
 platform: wpf
 control: PivotGrid
@@ -12,6 +12,7 @@ documentation: ug
 
 PivotGrid for WPF provides built-in support for freezing column and row headers. This is achieved by setting the FreezeHeaders property of PivotGrid to True. This feature also enables scrolling through the value cells.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -29,7 +30,7 @@ this.PivotGridControl1.FreezeHeaders = true;
 Me.PivotGridControl1.FreezeHeaders = True 
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Features_images/Features_img1.png)
 

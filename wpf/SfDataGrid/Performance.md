@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance
+title: Performance | SfDataGrid | WPF | Syncfusion
 description: performance
 platform: wpf
 control: SfDataGrid
@@ -200,14 +200,14 @@ The following screenshot displays the AdvancedFiltering with CanGenerateUniqueIt
 
 
 
-_AdvancedFiltering with CanGenerateUniqueItems set to ‘True’._
-
+AdvancedFiltering with CanGenerateUniqueItems set to ‘True’.
+{:.caption}
 The following screenshot displays the AdvancedFiltering with CanGenerateUniqueItems when setto‘False’.
 
 ![](Features_images/Features_img175.png)
 
 
 
-_AdvancedFiltering with CanGenerateUniqueItems set to ‘False’_
-
+AdvancedFiltering with CanGenerateUniqueItems set to ‘False’
+{:.caption}
 The above screenshot does not load the AdvancedFiltering combo box item, so it automatically increases the GridFilterControl performance.

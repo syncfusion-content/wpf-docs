@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Binding
+title: Data Binding | GridData (Classic) | WPF | Syncfusion
 description: Data Binding
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # Data Binding
@@ -70,15 +70,13 @@ Say, your data source is defined in C# class named Order, and it queries the rec
 
 N> The ObjectType attribute of ObjectDataProvider should point to the data source you defined.
 
-{% highlight xml %}
-
-
-
-
+{% highlight xaml %}
 
 <Window.Resources>        
 
-<ObjectDataProvider x:Key="order" ObjectType="{x:Type local:Order}" </Window.Resources>
+    <ObjectDataProvider x:Key="order" ObjectType="{x:Type local:Order}">
+
+</Window.Resources>
 
 <syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource order}" >
 
@@ -86,11 +84,7 @@ N> The ObjectType attribute of ObjectDataProvider should point to the data sourc
 
 N> The following line in the above code references the Object (Order), which returns the data for binding.
 
-{% highlight xml %}
-
-
-
-
+{% highlight xaml %}
 
 <ObjectDataProvider x:Key="order" ObjectType="{x:Type local:Order}"
 
@@ -100,9 +94,6 @@ N> The following line in the above code references the Object (Order), which ret
 
 The Order class returns the data to be bound to the Grid as shown in the following code:
 {% highlight c# %}
-
-
-
 
 public class Order : ObservableCollection<Orders>
 
@@ -138,11 +129,8 @@ The following screenshot shows a GDC which bound with an Object data using the O
 
 ![](Getting-Started_images/Getting-Started_img27.jpeg)
 
-
-
-
-
 The GDC is bound with a data source provided by an object.
+{:.caption}
 
 ## Database Data
 
@@ -153,16 +141,13 @@ Here is an example that illustrates the binding of ADO.NET Data Table with the G
 Code that Sets Up a DataTable
 {% highlight c# %}
 
-
-
-
 public class Data
 
 {
 
-        public static DataTable
+    public static DataTable
 
- GetDataTable()
+    GetDataTable()
 
         {
 
@@ -193,10 +178,7 @@ public class Data
 {% endhighlight  %}
 
 Code to Bind the Above DataTable to GDC.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -216,9 +198,8 @@ Code to Bind the Above DataTable to GDC.
 
 ![](Getting-Started_images/Getting-Started_img28.jpeg)
 
-
-
 The GDC is bound with a data source provided by Data Table.
+{:.caption}
 
 ## Business Objects
 
@@ -242,49 +223,42 @@ Defining Observable Collection
 
 {% highlight c# %}
 
-
-
-
-
 public class Customer : ObservableCollection<Customers>
 
 {        
 
-Northwind northWind;        
+    Northwind northWind;        
 
-public Customer()        
+    public Customer()        
 
-{            
+    {            
 
-string connectionString = string.Format(@"Data Source = {0}", Northwind.sdf");            
+        string connectionString = string.Format(@"Data Source = {0}", Northwind.sdf");            
 
-northWind = new Northwind(connectionString);            
+        northWind = new Northwind(connectionString);            
 
-var customer = northWind.Customers.Skip(0).Take(100).ToList();            
+        var customer = northWind.Customers.Skip(0).Take(100).ToList();            
 
-foreach (var o in customer)            
+        foreach (var o in customer)            
 
-{                
+        {                
 
-this.Add(o);            
+            this.Add(o);            
 
-}        
+        }        
 
-}    
+    }    
 
 }
 
-
 {% endhighlight  %}
 Binding the Above Collection to GDC.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <Window.Resources>        
-
-<ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />
+    
+    <ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />
 
 </Window.Resources>
 
@@ -300,9 +274,8 @@ The following image shows a Grid bound with an Observable collection.
 
 ![](Getting-Started_images/Getting-Started_img29.jpeg)
 
-
-
 The GDC is bound with a data source provided by Observable Collection.
+{:.caption}
 
 ### Collection View Source
 
@@ -311,18 +284,16 @@ The CollectionViewSource[CVS] serves as a wrapper for the custom collections. It
 ### Example
 
 Let us see an example usage of this Collection View Source with our GDC.
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 
 <Window.Resources>        
 
-<ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />        
+    <ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />        
 
-<CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" >        
+    <CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" >        
 
-</CollectionViewSource>    
+    </CollectionViewSource>    
 
 </Window.Resources>
 
@@ -338,35 +309,31 @@ Let us see an example usage of this Collection View Source with our GDC.
 
 {% highlight c# %}
 
-
-
-
-
 public class Customer : ObservableCollection<Customers>    
 
 {        
 
-Northwind northWind;        
+    Northwind northWind;        
 
-public Customer()        
+    public Customer()        
 
-{            
+    {            
 
-string connectionString = string.Format(@"Data Source = {0}", "Northwind.sdf");            
+        string connectionString = string.Format(@"Data Source = {0}", "Northwind.sdf");            
 
-northWind = new Northwind(connectionString);            
+        northWind = new Northwind(connectionString);            
 
-var customer = northWind.Customers.Skip(0).Take(100).ToList();            
+        var customer = northWind.Customers.Skip(0).Take(100).ToList();            
 
-foreach (var o in customer)            
+        foreach (var o in customer)            
 
-{                
+        {                
 
-this.Add(o);            
+            this.Add(o);            
 
-}        
+        }        
 
-}    
+    }    
 
 }
 
@@ -376,11 +343,8 @@ The following image shows the output of the above given code:
 
 ![](Getting-Started_images/Getting-Started_img30.jpeg)
 
-
-
-
-
 The GDC is bound with a data source provided by Collection View Source.
+{:.caption}
 
 ### Entity Collection
 
@@ -388,9 +352,6 @@ GridDataControl confirms that it is an EntityFramework-aware control by providin
 
 To bind your grid to an EF-driven data source, use the below code.
 {% highlight c# %}
-
-
-
 
 string connectionString = string.Format(@"Data Source = {0}", LayoutControl.FindFile("NorthwindGrid.sdf"));            
 
@@ -438,87 +399,75 @@ Following is a simple XAML binding code that specifies a data source for the gri
 
 1. Code behind to Create an Observable Collection
 
+   ~~~ csharp
+
+
+        public class Customer : ObservableCollection<Customers>
+
+        {
+
+                Northwind northWind;
 
 
 
+                public Customer()
 
+                {
 
+                    string connectionString = string.Format(@"Data Source = {0}", LayoutControl.FindFile("Northwind.sdf"));
 
-				public class Customer : ObservableCollection<Customers>
+                    northWind = new Northwind(connectionString);
 
-				{
+                    var customer = northWind.Customers.Skip(0).Take(100).ToList();
 
-						Northwind northWind;
+                    foreach (var o in customer)
 
+                    {
 
+                        this.Add(o);
 
-						public Customer()
+                    }
 
-						{
+                }
 
-							string connectionString = string.Format(@"Data Source = {0}", LayoutControl.FindFile("Northwind.sdf"));
+        }
 
-							northWind = new Northwind(connectionString);
-
-							var customer = northWind.Customers.Skip(0).Take(100).ToList();
-
-							foreach (var o in customer)
-
-							{
-
-								this.Add(o);
-
-							}
-
-						}
-
-				}
-
-
+   ~~~
 
 2. Data Source Definition
 
+   ~~~ xaml
 
+     <Window.Resources>
 
+            <ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />
 
+            <CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" >
 
+            </CollectionViewSource>
 
+     </Window.Resources>
 
-				<Window.Resources>
-
-						<ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />
-
-						<CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" >
-
-						</CollectionViewSource>
-
-				</Window.Resources>
-
-
+   ~~~
 
 3. XAML Binding
 
+   ~~~ xaml
+			
+     <syncfusion:GridDataControl x:Name="grid"  AutoPopulateColumns="True"    AutoPopulateRelations="False" 
 
+            ItemsSource="{Binding Source={StaticResource customerSource}}">
 
+     </syncfusion:GridDataControl>
 
-
-
-
-			<syncfusion:GridDataControl x:Name="grid"  AutoPopulateColumns="True"    AutoPopulateRelations="False" 
-
-													 ItemsSource="{Binding Source={StaticResource customerSource}}">
-
-			</syncfusion:GridDataControl>
-
-   {:.prettyprint}
+   ~~~
  
-   The following image shows the output of the above given code:
+The following image shows the output of the above given code:
 
-   ![](Getting-Started_images/Getting-Started_img32.jpeg)
-
-
+![](Getting-Started_images/Getting-Started_img32.jpeg)
 
 The GDC is bound with data using XAML code.
+{:.caption}
 
 ## Complex Property Binding
 
@@ -531,10 +480,7 @@ Complex Property Binding feature is useful when the user has nested data, i.e.,
 You can bind data columns from multiple data tables which are inter-related to the same grid. The following code example illustrates how to bind 'OrderID' and 'CustomerID' columns from the 'Orders' table, and 'CompanyName' and 'ContactTitle' columns from the 'Customers' table.
 
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.VisibleColumns>
 
@@ -565,10 +511,7 @@ You can bind data columns from multiple data tables which are inter-related to t
 
 
 You can also apply grouping, sorting, filtering, summaries and conditional formats to these complex property bound columns. The following code example illustrates this.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 // Applying Conditional Formats.
 
@@ -623,10 +566,7 @@ You can also apply grouping, sorting, filtering, summaries and conditional forma
 You can keep the grid notified of the underlying data source changes by setting a Boolean property called NotifyPropertyChanges. When it is set to true, the grid continues to listen to the data source changes and gets its field values updated accordingly. For this feature to take effect, the data source should implement the INotifyPropertyChanged interface.
 
 The following code illustrates this property:
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid" AutoPopulateColumns="True" AutoPopulateRelations="False" NotifyPropertyChanges="True">
 
@@ -653,12 +593,7 @@ To validate data errors, follow the steps below:
 
 {% highlight c# %}
 
-
-
-
-
 dataGrid.ShowErrorTooltips = true;
-
 
 {% endhighlight  %}
 
@@ -667,59 +602,55 @@ The following code example illustrates how the GridData control throws an error 
 
 {% highlight c# %}
 
-
-
-
-
 partial class Orders : IDataErrorInfo
 
 {
 
-public string Error
+    public string Error
 
-{
+    {
 
-get
+        get
 
-{ 
+        { 
 
-throw new NotImplementedException();
+            throw new NotImplementedException();
 
-}
+        }
 
-}
+    }
 
 
 
-public string this[string columnName]
+    public string this[string columnName]
 
-{
+    {
 
-get
+        get
 
-{
+        {
 
-var result = string.Empty;
+            var result = string.Empty;
 
-if (columnName == "Freight")
+            if (columnName == "Freight")
 
-{
+            {
 
-if (this.Freight.Value < 10)
+                if (this.Freight.Value < 10)
 
-{
+                {
 
-result = "Freight is very low";
+                    result = "Freight is very low";
 
-}
+                }
 
-}
+            }
 
-return result;
+                return result;
 
-}
+        }
 
-}
+    }
 
 }
 
@@ -770,138 +701,134 @@ Adding CurrentCellValidating Event to an Application
 
 To add the CurrentCellValidating event to an application:
 
-1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application <http://docs.syncfusion.com/wpf/griddata/data-binding>
+1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application <http://help.syncfusion.com/wpf/griddata/data-binding>
 
 2. In the following code example, we have set ProductList as ItemsSource. Hooking the CurrentCellValidating event follows. 
 
+   ~~~ xaml
+
+     <syncfusion:GridDataControl x:Name="dataGrid"                                                       
+
+     AutoPopulateColumns="False"
+
+                           AutoPopulateRelations="False"
+
+                           ItemsSource="{Binding ProductList}"
+
+                           ShowErrorTooltips="True"
+
+                           CurrentCellValidating="dataGrid_CurrentCellValidating"
+
+                           syncfusion:GridTooltipService.ShowTooltips="True"
+
+                           UpdateMode="PropertyChanged"
+
+                           VisualStyle="Metro">
 
 
 
 
-				<syncfusion:GridDataControl x:Name="dataGrid"                                                       
-
-				AutoPopulateColumns="False"
-
-				                       AutoPopulateRelations="False"
-
-				                       ItemsSource="{Binding ProductList}"
-
-				                       ShowErrorTooltips="True"
-
-				                       CurrentCellValidating="dataGrid_CurrentCellValidating"
-
-				                       syncfusion:GridTooltipService.ShowTooltips="True"
-
-				                       UpdateMode="PropertyChanged"
-
-				                       VisualStyle="Metro">
-
-
-
-
-				 this.dataGrid.CurrentCellValidating += new CurrentCellValidatingEventHandler(dataGrid_CurrentCellValidating);
-
-
-
+      this.dataGrid.CurrentCellValidating += new CurrentCellValidatingEventHandler(dataGrid_CurrentCellValidating);
+ 
+   ~~~
+   
 
 
 3. The QueryCellInfo event is used to show the error icon in the cells while loading.
 
+   ~~~ csharp
 
-
-				this.dataGrid.Model.QueryCellInfo += new GridQueryCellInfoEventHandler(Model_QueryCellInfo);
-
-
-
-				void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-
-				{
-
-				   if (e.Cell.RowIndex <= 0 || e.Cell.ColumnIndex <=0)
-
-				      return; 
-
-				   IsValid(e.Style, e.Style.CellValue);
-
-				}
+        this.dataGrid.Model.QueryCellInfo += new GridQueryCellInfoEventHandler(Model_QueryCellInfo);
 
 
 
+        void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+
+        {
+
+           if (e.Cell.RowIndex <= 0 || e.Cell.ColumnIndex <=0)
+
+              return; 
+
+           IsValid(e.Style, e.Style.CellValue);
+
+        }
 
 
-				private bool IsValid(GridStyleInfo style, object CellValue)
-
-				{
-
-				    string column = this.grid.VisibleColumns[style.ColumnIndex].MappingName;
-
-				    bool isInError = false; 
-
-				    style.ErrorInfo.ErrorContentAlignment = ImageContentAlignment.Left;
-
-				    style.ErrorInfo.ErrorType = ErrorType.ErrorMessage; 
-
-				    if (column == "SupplierID")
-
-				    {
-
-				       if (CellValue is DBNull || CellValue == null || (int)CellValue <= 0)
-
-				       {
-
-				         style.ErrorInfo.ErrorMessage = "Supplier ID cannot be null or less than 0.";
-
-				          isInError = true;
-
-				        } 
-
-				     }
-
-				     if (column == "CategoryID")
-
-				     {
-
-				        if (CellValue is DBNull || CellValue == null || (int)CellValue <= 0)
-
-				        {
-
-				           style.ErrorInfo.ErrorMessage = "Category ID cannot be null or 0.";
-
-				           isInError = true;
-
-				        }
-
-				      }
-
-				      return !isInError;
-
-				}  
 
 
+
+        private bool IsValid(GridStyleInfo style, object CellValue)
+
+        {
+
+            string column = this.grid.VisibleColumns[style.ColumnIndex].MappingName;
+
+            bool isInError = false; 
+
+            style.ErrorInfo.ErrorContentAlignment = ImageContentAlignment.Left;
+
+            style.ErrorInfo.ErrorType = ErrorType.ErrorMessage; 
+
+            if (column == "SupplierID")
+
+            {
+
+               if (CellValue is DBNull || CellValue == null || (int)CellValue <= 0)
+
+               {
+
+                 style.ErrorInfo.ErrorMessage = "Supplier ID cannot be null or less than 0.";
+
+                  isInError = true;
+
+                } 
+
+             }
+
+             if (column == "CategoryID")
+
+             {
+
+                if (CellValue is DBNull || CellValue == null || (int)CellValue <= 0)
+
+                {
+
+                   style.ErrorInfo.ErrorMessage = "Category ID cannot be null or 0.";
+
+                   isInError = true;
+
+                }
+
+              }
+
+              return !isInError;
+
+        }  
+
+   ~~~
 
 4. Data validation is performed in the CurrentCellValidating event as shown in the following code example.
 
+   ~~~ csharp
 
+        void grid_CurrentCellValidating(object sender, CurrentCellValidatingEventArgs e)
 
+        {
 
+          /// To validate the new value
 
-				void grid_CurrentCellValidating(object sender, CurrentCellValidatingEventArgs e)
+          if(!this.IsValid(e.Style,e.NewValue))
 
-				{
+             e.Cancel = true;     
 
-				  /// To validate the new value
-
-				  if(!this.IsValid(e.Style,e.NewValue))
-
-				     e.Cancel = true;     
-
-				}
+        }
+        
+   ~~~
 
    Output
 
    ![](Getting-Started_images/Getting-Started_img38.png)
-
-   {:.prettyprint}
 
 ### Row Level Validation
 
@@ -932,193 +859,189 @@ Adding RowValidating Event to an Application
 
 To add the RowValidating event to an application:
 
-1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application: <http://docs.syncfusion.com/wpf/griddata/data-binding>
+1. Add the GridData control to the application. Refer to the following section to add the GridData control to an application: <http://help.syncfusion.com/wpf/griddata/data-binding>
 
    In the following code we have set ProductList as ItemsSource. Hooking the RowValidating event follows.
 
+   ~~~ xaml
 
+        <syncfusion:GridDataControl x:Name="dataGrid"   
+        
+                           AutoPopulateColumns="False"
+        
+                           AutoPopulateRelations="False"
+        
+                           ItemsSource="{Binding ProductList}"
+         
+                           ShowErrorTooltips="True"
+         
+                           RowValidating="dataGrid_RowValidating"
+         
+                           syncfusion:GridTooltipService.ShowTooltips="True"
+          
+                           UpdateMode="PropertyChanged">
 
-			 <syncfusion:GridDataControl x:Name="dataGrid"                                                            AutoPopulateColumns="False"
+   ~~~
 
-			                            AutoPopulateRelations="False"
+   ~~~ csharp
 
-			                            ItemsSource="{Binding ProductList}"
+		this.dataGrid.RowValidating += new GridDataRowValidatingEventHandler(dataGrid_RowValidating);
 
-			                                                            ShowErrorTooltips="True"
-
-			                            RowValidating="dataGrid_RowValidating"
-
-			                            syncfusion:GridTooltipService.ShowTooltips="True"
-
-			                            UpdateMode="PropertyChanged">
-
-
-
-
-
-               this.dataGrid.RowValidating += new GridDataRowValidatingEventHandler(dataGrid_RowValidating);
-
-
+   ~~~
 
 2. The QueryCellInfo event is used to show the error icon in the cells while loading.
 
+   ~~~ csharp
+
+        this.dataGrid.Model.QueryCellInfo += new GridQueryCellInfoEventHandler(Model_QueryCellInfo);
+
+        void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+
+        {
+
+         if (e.Style.RowIndex > 0 && e.Style.RowIndex != errorRowIndex)
+
+         {
+
+          var recordIdx = this.dataGrid.Model.ResolveIndexToRecordPosition(e.Style.RowIndex);
+
+          var record = this.dataGrid.Model.View.Records[recordIdx] as GridDataRecord;
+
+          Products currentRecord = (Products)record.Data;
+
+          if (Validate(e.Style, currentRecord))
+
+          {
+
+             e.Style.ShowTooltip = true;     
+
+           e.Style.Tag = "Some fields in this record are having invalid data";     
+
+             if (e.Style.ColumnIndex > 0)
+
+               e.Style.Background = new SolidColorBrush(GridUtil.GetXamlConvertedValue<Color>("#FFCDD3F1"));
+
+             this.dataGrid.Model[e.Style.RowIndex, 0].ErrorInfo = new GridErrorStyleInfo
+
+             {
+
+              ErrorMessage = "Some fields in this record are having invalid data",  
+
+             };
+
+           }
+
+          }
+
+        }
+
+         public bool Validate(GridStyleInfo style, Products product)
+
+         { 
+
+           bool isInError = false;
+
+           object checkValue1 =  product.UnitPrice;
+
+           if (checkValue1 is DBNull || checkValue1 == null || (double.Parse(checkValue1.ToString()) < 10))
+
+            {
+
+               ErrorMsg = "Unit price cannot be less than 10.";
+
+               isInError = true;
+
+            }
+
+            object checkValue2 =  product.UnitsOnOrder;
+
+            if (checkValue2 is DBNull || checkValue2 == null || (short)checkValue2 > 100)
+
+            {
+
+               ErrorMsg = "Units in order cannot be more than 100.";
+
+               isInError = true;
+
+             }
+
+            object checkValue3 = product.ReorderLevel;
 
 
 
+            if (checkValue3 is DBNull || checkValue3 == null || (short)checkValue3 > 50)
 
-				this.dataGrid.Model.QueryCellInfo += new GridQueryCellInfoEventHandler(Model_QueryCellInfo);
+            {
 
-				void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+              ErrorMsg= "Reorder level cannot cannot be more than 50.";
 
-				{
+              isInError = true;
 
-				 if (e.Style.RowIndex > 0 && e.Style.RowIndex != errorRowIndex)
+             }
 
-				 {
+          return isInError;
 
-				  var recordIdx = this.dataGrid.Model.ResolveIndexToRecordPosition(e.Style.RowIndex);
-
-				  var record = this.dataGrid.Model.View.Records[recordIdx] as GridDataRecord;
-
-				  Products currentRecord = (Products)record.Data;
-
-				  if (Validate(e.Style, currentRecord))
-
-				  {
-
-				     e.Style.ShowTooltip = true;     
-
-				   e.Style.Tag = "Some fields in this record are having invalid data";     
-
-				     if (e.Style.ColumnIndex > 0)
-
-				       e.Style.Background = new SolidColorBrush(GridUtil.GetXamlConvertedValue<Color>("#FFCDD3F1"));
-
-				     this.dataGrid.Model[e.Style.RowIndex, 0].ErrorInfo = new GridErrorStyleInfo
-
-					 {
-
-				      ErrorMessage = "Some fields in this record are having invalid data",  
-
-				     };
-
-				   }
-
-				  }
-
-				}
-
-				 public bool Validate(GridStyleInfo style, Products product)
-
-				 { 
-
-				   bool isInError = false;
-
-				   object checkValue1 =  product.UnitPrice;
-
-				   if (checkValue1 is DBNull || checkValue1 == null || (double.Parse(checkValue1.ToString()) < 10))
-
-				    {
-
-				       ErrorMsg = "Unit price cannot be less than 10.";
-
-				       isInError = true;
-
-				    }
-
-				    object checkValue2 =  product.UnitsOnOrder;
-
-				    if (checkValue2 is DBNull || checkValue2 == null || (short)checkValue2 > 100)
-
-				    {
-
-				       ErrorMsg = "Units in order cannot be more than 100.";
-
-				       isInError = true;
-
-				     }
-
-				    object checkValue3 = product.ReorderLevel;
-
-
-
-				    if (checkValue3 is DBNull || checkValue3 == null || (short)checkValue3 > 50)
-
-				    {
-
-				      ErrorMsg= "Reorder level cannot cannot be more than 50.";
-
-				      isInError = true;
-
-				     }
-
-				  return isInError;
-
-				}
-
-
+        }
+ 
+   ~~~
 
 3. Data validation is performed in the RowValidating event as shown in the following code example.
 
+   ~~~ csharp
 
+        void OnRowValidating(object sender, GridDataRowValidatingEventArgs args)
 
+        {
 
+          if (this.Validate(null, args.Record as Products))
 
-				void OnRowValidating(object sender, GridDataRowValidatingEventArgs args)
+          {
 
-				{
+              this.SetErrorInformation(args.RowIndex, ErrorMessageforRowValidation);
 
-				  if (this.Validate(null, args.Record as Products))
+              //To Change the Background and set the error tooltip.
 
-				  {
+              this.dataGrid.Model.RowStyles[args.RowIndex].Background = new SolidColorBrush(GridUtil.GetXamlConvertedValue<Color>("#FFFFD0D0"));
 
-				      this.SetErrorInformation(args.RowIndex, ErrorMessageforRowValidation);
+              this.dataGrid.Model.RowStyles[args.RowIndex].Tag = ErrorMessageforRowValidation;
 
-				      //To Change the Background and set the error tooltip.
+              this.dataGrid.Model.RowStyles[args.RowIndex].ShowTooltip = true;
 
-				      this.dataGrid.Model.RowStyles[args.RowIndex].Background = new SolidColorBrush(GridUtil.GetXamlConvertedValue<Color>("#FFFFD0D0"));
+              this.Grid.Model.InvalidateCell(GridRangeInfo.Row(args.RowIndex));
 
-				      this.dataGrid.Model.RowStyles[args.RowIndex].Tag = ErrorMessageforRowValidation;
+              errorRowIndex = args.RowIndex;
 
-				      this.dataGrid.Model.RowStyles[args.RowIndex].ShowTooltip = true;
+              args.IsValid = false;
 
-				      this.Grid.Model.InvalidateCell(GridRangeInfo.Row(args.RowIndex));
+          }
 
-				      errorRowIndex = args.RowIndex;
+          else
 
-				      args.IsValid = false;
+          {
 
-				  }
+             errorRowIndex = -1;
 
-				  else
+             ErrorMsg = "";
 
-				  {
+             args.IsValid = true;
 
-				     errorRowIndex = -1;
+            //Need to revert the color once error cleared in the row.
 
-				     ErrorMsg = "";
+             this.dataGrid.Model.RowStyles[args.RowIndex].ShowTooltip = false;
 
-				     args.IsValid = true;
+             this.dataGrid.Model.RowStyles[args.RowIndex].Background = Brushes.Transparent;
 
-				    //Need to revert the color once error cleared in the row.
+             this.dataGrid.Model.InvalidateCell(GridRangeInfo.Row(args.RowIndex));
 
-				     this.dataGrid.Model.RowStyles[args.RowIndex].ShowTooltip = false;
+           }
 
-				     this.dataGrid.Model.RowStyles[args.RowIndex].Background = Brushes.Transparent;
+        }
 
-				     this.dataGrid.Model.InvalidateCell(GridRangeInfo.Row(args.RowIndex));
+   ~~~
 
-				   }
+#### Output
 
-				}
-
-
-
-   Output
-
-   ![C:/Users/Graham/Desktop/Catch/2012 Vol. 3/UG/validation.png](Getting-Started_images/Getting-Started_img39.png)
-
-   {:.prettyprint}
+![](Getting-Started_images/Getting-Started_img39.png)
 
 ## Synchronize Current Selection
 
@@ -1133,10 +1056,7 @@ Technically, this synchronization is achieved through CollectionView, by binding
 Following is the code example that synchronizes GridData control with a ListView control.
 
 ListView Implementation with IsSynchronizedWithCurrentItem Set to True
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource ordersSource}}"
 
@@ -1164,15 +1084,11 @@ ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent" N
 
 </ListView>
 
-
 {% endhighlight %}
-GridData Control Implementation
 
-{% highlight xml %}
+### GridData Control Implementation
 
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowAddNewRow="False" ShowFilters="False" AutoPopulateColumns="False"
 
@@ -1219,28 +1135,29 @@ You can create an unbound column by instantiating the class GridDataUnboundVisib
 N> Sorting and filtering operations does not work with an unbound column unless the column is associated with the item source that is bound.  So, it is good to turn off the filters wherever applicable.
 
 The following example adds an unbound column and displays the record values in the format {Frieght:c} for {ShipCity}. 
-{% highlight xml %}
+{% highlight xaml %}
 
+<syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="True" 
 
+                            AutoPopulateRelations="False"
+                                
+                            ItemsSource="{StaticResource ordersSource}"  
 
+                            ShowFilters="False"                                                                      
 
-<syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="True" AutoPopulateRelations="False" ItemsSource="{StaticResource ordersSource}"  
+                            ShowAddNewRow="False"                                    >                
 
-ShowFilters="False"                                                                      
+    <syncfusion:GridDataControl.VisibleColumns>                    
 
-ShowAddNewRow="False"                                    >                
+        <syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="True" IsIdentity="True" HeaderText="Order ID" />
 
-<syncfusion:GridDataControl.VisibleColumns>                    
+        <syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country"/>
 
-<syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="True" IsIdentity="True" HeaderText="Order ID" />
+        <syncfusion:GridDataVisibleColumn MappingName="ShipCity" HeaderText="Ship City" />
 
-<syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country"/>
+        <syncfusion:GridDataUnboundVisibleColumn HeaderText="UnboundCol1" Format="'{Freight:c} for {ShipCity}'" />                
 
-<syncfusion:GridDataVisibleColumn MappingName="ShipCity" HeaderText="Ship City" />
-
-<syncfusion:GridDataUnboundVisibleColumn HeaderText="UnboundCol1" Format="'{Freight:c} for {ShipCity}'" />                
-
-</syncfusion:GridDataControl.VisibleColumns>            
+    </syncfusion:GridDataControl.VisibleColumns>            
 
 </syncfusion:GridDataControl>
 
@@ -1254,13 +1171,10 @@ The following screenshot shows the output of the above given code:
 
 GDC is added with the unbound column, "UnboundCol1".
 
-Accessing Unbound Column Values
+### Accessing Unbound Column Values
 
 The Grid Table exposes an API named GetUnboundValue that can be used to retrieve the unbound value of a specific unbound cell. Given the record index and the respective Unbound Column object, it returns the unbound field value for the specified record. It is overloaded to accept row and column indices as parameters using which it fetches the corresponding unbound visible column and yields its value as output.
 {% highlight c# %}
-
-
-
 
 //Retrieve the unbound value using record index and the unbound column instance.
 
@@ -1284,10 +1198,7 @@ Unbound columns allow association of related values that are bound to an express
 ### Sorting Operation
 
 Sorting can be done interactively by clicking the header or can be declared by using XAML code as follows.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.SortColumns>
 
@@ -1330,9 +1241,6 @@ Sorting can be done interactively by clicking the header or can be declared by u
 ![](Getting-Started_images/Getting-Started_img44.jpeg)
 
 
-
-
-
 ### Filtering Operation
 
 We have two modes of filtering in the WPF GridData control: Excel-like Filtering and Advanced Filtering. Both these modes are supported by unbound columns.
@@ -1340,10 +1248,7 @@ We have two modes of filtering in the WPF GridData control: Excel-like Filtering
 ### Excel-like Filtering Mode
 
 Excel-like filtering can be enabled in unbound columns by setting AllowFilter property to true.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100" AllowFilter="True" AllowDrag="True" AllowGroup="True">
 
@@ -1361,10 +1266,7 @@ Excel-like filtering can be enabled in unbound columns by setting AllowFilter pr
 ### Advanced Filtering Mode
 
 Advanced Filtering mode can be enabled by adding the following code.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100" AllowFilter="True" AllowDrag="True" AllowGroup="True">
 
@@ -1387,10 +1289,7 @@ Advanced Filtering mode can be enabled by adding the following code.
 ### Grouping Operation
 
 Grouping can be performed interactively or declaratively on the Unbound Columns by using XAML code.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.GroupedColumns>
 
@@ -1409,10 +1308,7 @@ Grouping can be performed interactively or declaratively on the Unbound Columns 
 The default summaries work much the same way as summaries with bound columns. Following is the list of different types of Summary declaration in XAML.
 
 ### Table Summary
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.TableSummaryRows>
 
@@ -1430,14 +1326,10 @@ The default summaries work much the same way as summaries with bound columns. Fo
 
 </syncfusion:GridDataControl.TableSummaryRows>
 
-
 {% endhighlight  %}
 
 ### Caption Summary
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.CaptionSummaryRow>
 
@@ -1457,14 +1349,10 @@ The default summaries work much the same way as summaries with bound columns. Fo
 
 </syncfusion:GridDataControl.CaptionSummaryRow>
 
-
 {% endhighlight  %}
 
 ### Group Summary
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.CaptionSummaryRow>
 
@@ -1497,14 +1385,11 @@ The default summaries work much the same way as summaries with bound columns. Fo
 Summary calculation differs for unbound columns. It has an additional parameter to supply a dynamic lambda delegate for invoking the unbound values at run time.
 {% highlight c# %}
 
-
-
-
 public interface ISummaryExpressionAggregate : ISummaryAggregate
 
 {
 
-Action<IEnumerable, string, Expression<Func<string, object, object>>, PropertyDescriptor> CalculateAggregateExpressionFunc();
+    Action<IEnumerable, string, Expression<Func<string, object, object>>, PropertyDescriptor> CalculateAggregateExpressionFunc();
 
 }
 {% endhighlight  %}
@@ -1517,36 +1402,33 @@ Expression Trees Evaluation for Aggregate Methods
 A return value is required for any LINQ Aggregate method to be implemented. In order to invoke an unbound column through the lambda delegate, you have an internal wrapper lambda that is generic.
 {% highlight c# %}
 
-
-
-
 private static Expression GetInvokeExpressionAggregateFunc<TResult>(ParameterExpression paramExp, string propertyName, Expression<Func<string, object, object>> expressionFunc)
 
 {
 
-// Constructing a wrapper function that would return a generic value.
+    // Constructing a wrapper function that would return a generic value.
 
-Func<Expression<Func<string, object, object>>, string, object, TResult> fun = (func, prop, rec) =>
+    Func<Expression<Func<string, object, object>>, string, object, TResult> fun = (func, prop, rec) =>
 
-{
+    {
 
-var lambda = func.Compile();
+        var lambda = func.Compile();
 
-TResult val = (TResult)lambda.DynamicInvoke(new object[] { prop, rec });
+        TResult val = (TResult)lambda.DynamicInvoke(new object[] { prop, rec });
 
-return val;
+        return val;
 
-};
+    };
 
 
 
-Expression<Func<Expression<Func<string, object, object>>, string, object, TResult>> eIFunc = (func, prop, rec) => fun(func, prop, rec);
+    Expression<Func<Expression<Func<string, object, object>>, string, object, TResult>> eIFunc = (func, prop, rec) => fun(func, prop, rec);
 
-var invokeExp = Expression.Invoke(Expression.Constant(fun), new Expression[] { Expression.Constant(expressionFunc),
+    var invokeExp = Expression.Invoke(Expression.Constant(fun), new Expression[] { Expression.Constant(expressionFunc),
 
-Expression.Constant(propertyName), paramExp });
+    Expression.Constant(propertyName), paramExp });
 
-return invokeExp;
+    return invokeExp;
 
 }
 
@@ -1560,9 +1442,6 @@ GridData control allows you to select the required records and retrieve selected
 
 Following is the code example that iterates through the SelectedItems collections and prints the values of those records that are in selection.
 {% highlight c# %}
-
-
-
 
 Console.WriteLine("Current record key : "+ ((Orders)this.gdc.SelectedItem).OrderID);
 
@@ -1661,10 +1540,7 @@ Specific Dynamic Type Handling
 ### Column Type
 
 Since the collections are dynamic, we need to specify the proper type for the column to work properly in all scenarios. GridDataVisibleColumn provides a DataType property to specify the type for the column.
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
      <syncfusion:GridDataVisibleColumn MappingName="OrderDate" DataType="DateTime" />
 
@@ -1674,8 +1550,12 @@ Since the collections are dynamic, we need to specify the proper type for the co
 
 Relations have to be handled in XAML or C#. The AutoPopulateRelations property does not work on dynamic object types.
 
-{% highlight xml %}
-                     <syncfusion:GridDataControl.Relations>                        <syncfusion:GridDataRelation RelationalColumn="OrderDetails" />                    </syncfusion:GridDataControl.Relations>
+{% highlight xaml %}
+    <syncfusion:GridDataControl.Relations>
+
+        <syncfusion:GridDataRelation RelationalColumn="OrderDetails" />
+
+    </syncfusion:GridDataControl.Relations>
 {% endhighlight  %}
 
 
@@ -1685,21 +1565,24 @@ Essential Grid supports addition of extra rows in the view that does not affect 
 
 You can create an UnboundRow by just setting the UnboundRowCount. It contains a property named Format, which is used to specify a format for the UnboundRow. Given an UnboundRow we can check if this is an UnboundRow or not using IsInUnboundRow(int Rowindex) method in Grid Model.
 
-    this.grid.Model.UnboundRowsCount = 5;
+{% highlight c#%}
 
-    this.grid.UnboundRowPosition = Position.Top;
+this.grid.Model.UnboundRowsCount = 5;
 
+this.grid.UnboundRowPosition = Position.Top;
 
-
-
-
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/unboundrow top.png](Getting-Started_images/Getting-Started_img52.png)
+{% endhighlight %}
 
 
 
 
+![](Getting-Started_images/Getting-Started_img52.png)
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Unboundrow_bottom.png](Getting-Started_images/Getting-Started_img53.png)
+
+
+
+
+![](Getting-Started_images/Getting-Started_img53.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical-Indicators
+title: Technical Indicators| SfChart | Wpf | Syncfusion
 description: technical indicators
 platform: wpf
 control: SfChart
@@ -25,9 +25,9 @@ Create the instance for any technical indicator and add it to the TechnicalIndic
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:AccumulationDistributionIndicator/>
+<syncfusion:AccumulationDistributionIndicator/>
 
-        </syncfusion:SfChart.TechnicalIndicators>       
+</syncfusion:SfChart.TechnicalIndicators>       
 
 
 
@@ -43,9 +43,9 @@ The data necessary for the indicator to do calculations, are given as specified.
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:AccumulationDistributionIndicator High="High" Low="Low" Open="Open" Close="Close"/>
+<syncfusion:AccumulationDistributionIndicator High="High" Low="Low" Open="Open" Close="Close"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
@@ -59,9 +59,9 @@ Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
+<syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 
 
@@ -102,9 +102,9 @@ If you want to apply ATR indicator to a chart, then do the following.
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:AverageTrueRangeIndicator   Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+<syncfusion:AverageTrueRangeIndicator   Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 
 
@@ -148,9 +148,9 @@ If you want to apply SimpleAverageIndicator to a chart, then do the following.
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:SimpleAverageIndicator    SignalLineColor=" DarkBlue "  Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
+<syncfusion:SimpleAverageIndicator    SignalLineColor=" DarkBlue "  Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
@@ -198,11 +198,11 @@ If you want to apply RSITechnicalIndicator to a chart, then do the following.
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:RSITechnicalIndicator   UpperLineColor="Red" LowerLineColor="Green" SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"  >
+<syncfusion:RSITechnicalIndicator   UpperLineColor="Red" LowerLineColor="Green" SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"  >
 
-            </syncfusion:RSITechnicalIndicator>
+</syncfusion:RSITechnicalIndicator>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
@@ -248,9 +248,9 @@ If you want to apply MomentumTechnicalIndicator to a chart, then do the followin
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:MomentumTechnicalIndicator   MomentumLineColor="Red" CenterLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
+<syncfusion:MomentumTechnicalIndicator   MomentumLineColor="Red" CenterLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
@@ -308,9 +308,9 @@ If you want to apply StochasticTechnicalIndicator to a chart, then do the follow
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:StochasticTechnicalIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  KPeriod="7" DPeriod="3" UpperLineColor="Red" LowerLineColor="Red" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StochasticTechnicalIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  KPeriod="7" DPeriod="3" UpperLineColor="Red" LowerLineColor="Red" ItemsSource="{Binding CompanyDetails}"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 
 
@@ -326,7 +326,7 @@ The ExponentialAverageIndicator is similar to SimpleAverageIndicator, except tha
 
 The following APIs are used in ExponentialAverageIndicator.
 
-ExponentialAverageIndicator
+
 
 <table>
 <tr>
@@ -349,9 +349,9 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:ExponentialAverageIndicator   Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+	<syncfusion:ExponentialAverageIndicator   Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+	</syncfusion:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
@@ -365,7 +365,7 @@ The TriangularAverageIndicator is a simple, average indicator, that has been ave
 
 The following APIs are used in TriangularAverageIndicator.
 
-TriangularAverageIndicator
+
 
 <table>
 <tr>
@@ -389,9 +389,9 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:TriangularAverageIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="OrangeRed"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:TriangularAverageIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="OrangeRed"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
@@ -403,7 +403,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 AccumulationDistributionIndicator is used to determine the changes in price and volume. The following APIs are used in AccumulationDistributionIndicator.
 
-AccumulationDistributionIndicator
+
 
 <table>
 <tr>
@@ -426,9 +426,9 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+<syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 
 {% endhighlight %}
@@ -444,7 +444,7 @@ BollingerBandIndicators are volatile bands placed above and below a simple avera
 
 The following APIs are used in BollingerBandIndicator.
 
-BollingerBandIndicator
+
 
 <table>
 <tr>
@@ -476,9 +476,9 @@ Gets or sets the Brush value that represents the color for the Lower Bollinger B
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:BollingerBandIndicator   UpperLineColor="Red" LowerLineColor="Green" Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+<syncfusion:BollingerBandIndicator   UpperLineColor="Red" LowerLineColor="Green" Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        </syncfusion:SfChart.TechnicalIndicators> 
+</syncfusion:SfChart.TechnicalIndicators> 
 
 
 {% endhighlight %}
@@ -494,7 +494,7 @@ MovingAverageConvergenceDivergence (MACD) technical indicator is one of the simp
 
 The following APIs are used in MACDTechnicalIndicator.
 
-MACDTechnicalIndicator
+
 
 <table>
 <tr>
@@ -538,9 +538,9 @@ Gets or sets the Brush value that represents the Divergence Line color.</td></tr
 
 <syncfusion:SfChart.TechnicalIndicators>
 
-            <syncfusion:MACDTechnicalIndicator   Type="Line" ConvergenceLineColor="Green" DivergenceLineColor="Red" Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
+<syncfusion:MACDTechnicalIndicator   Type="Line" ConvergenceLineColor="Green" DivergenceLineColor="Red" Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
 
-        </syncfusion:SfChart.TechnicalIndicators>
+</syncfusion:SfChart.TechnicalIndicators>
 
 
 {% endhighlight %}

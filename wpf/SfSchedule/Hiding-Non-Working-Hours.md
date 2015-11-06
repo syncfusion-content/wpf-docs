@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiding-Non-Working-Hours
+title: Hiding Non Working Hours| SfSchedule | Wpf | Syncfusion
 description: hiding non-working hours
 platform: wpf
 control: SfSchedule
@@ -11,7 +11,7 @@ documentation: ug
 
 To hide non-working hours in the schedule, the ShowNonWorkingHours property in the schedule must be set as false. The working hours specified using the WorkStartHour and WorkEndHour properties are simply shown in the schedule without showing non-working hours.
 
-
+{% tabs %}
 {% highlight html %}
 
 
@@ -44,6 +44,7 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
 
              this.grid.Children.Add(schedule);
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Hiding-Non-Working-Hours_images/Hiding-Non-Working-Hours_img1.png)
 

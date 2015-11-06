@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-Value
+title: Maximum and Minimum Value | DateTimeEdit | wpf | Syncfusion
 description: maximum and minimum value
 platform: wpf
 control: DateTimeEdit
@@ -15,22 +15,36 @@ When the MinDateTime is set, if the new MinDateTime property value is greater th
 
 When the MaxDateTime is set, if the MinDateTime property is greater than the new MaxDateTime property, then the MinDateTime property value is set equal to the MaxDateTime. If the current DateTime (DateTime property) is greater than the new MaxDateTime, then the DateTime property is set equal to the MaxDateTime.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  DateTime="07/05/2010" Pattern="LongDate"  MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/>
 
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/05/2010" Pattern="LongDate"                          MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/>
 {% endhighlight  %}
+
 {% highlight c# %}
 
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);dateTimeEdit.Pattern = DateTimePattern.LongDate;this.LayoutRoot.Children.Add(dateTimeEdit);
+dateTimeEdit.Width = 200;
+
+dateTimeEdit.Height = 25;
+
+dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
+
+dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);
+
+dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);
+
+dateTimeEdit.Pattern = DateTimePattern.LongDate;
+
+this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)
 
-
-
 This Calendar also displays the range of dates between the MinDateTime and MaxDateTime.
-

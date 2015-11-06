@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IsSelected
+title: IsSelected | TileView | wpf | Syncfusion
 description: isselected
 platform: wpf
 control: TileView Control
@@ -23,6 +23,8 @@ IsSelected can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the IsSelected to an application.
 
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -52,21 +54,20 @@ The following code example illustrates how to add the IsSelected to an applicati
       item1.IsSelected = true;
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 ## Properties
 
-_Property Table_
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description</th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 IsSelected</td><td>

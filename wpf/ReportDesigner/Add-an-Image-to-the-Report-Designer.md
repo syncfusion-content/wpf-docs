@@ -15,11 +15,11 @@ You can add an image to the Syncfusion Essential Report Designer by using the fo
 
 
 
-  ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig36.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img1.png)
+  ![](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img1.png)
 
 
 
-Note: You can also insert an image by dragging the image from the Report Data to the Report Designer.
+  N> You can also insert an image by dragging the image from the Report Data to the Report Designer.
 
 
 
@@ -29,7 +29,7 @@ Note: You can also insert an image by dragging the image from the Report Data to
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-23.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img2.png)
+  ![](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img2.png)
 
 
 
@@ -37,11 +37,11 @@ Note: You can also insert an image by dragging the image from the Report Data to
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-24.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img3.png)
+  ![](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img3.png)
 
 
 
-Note: You can also use the following properties to apply the desired settings to the image:
+  N>  You can also use the following properties to apply the desired settings to the image:
 
 * General - To set the ToolTip of the image or image source, select an embedded image and import an image from the local disk.
 * Size - To set the size and padding of the image.
@@ -53,26 +53,25 @@ Note: You can also use the following properties to apply the desired settings to
 
 
 
-  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-25.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img4.png)
+  ![](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img4.png)
 
 
 
-Setting Image Properties by using the Properties Grid
+## Setting Image Properties by using the Properties Grid
 
 1. Click the image. The Properties grid appears at the right of Report Designer. 
+
 2. Apply the required settings to the image by using the Editors in the Properties grid.
 
-
-
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-26.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img5.png)
+   ![](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img5.png)
 
 
 
-###Deleting Image
+### Deleting Image
 
 To delete the image from the Report Designer, right click the image and click Delete.
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-27.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img6.png)
+![](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img6.png)
 
 
 

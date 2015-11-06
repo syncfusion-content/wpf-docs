@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Click-Header-to-Maximize
+title: Click Header to Maximize | TileView | wpf | Syncfusion
 description: click header to maximize
 platform: wpf
 control: TileView Control
@@ -21,6 +21,7 @@ Click Header to Maximize can be added to an application by using either XAML or 
 
 The following code example illustrates how to add the Click Header to Maximize to an application.
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -47,6 +48,8 @@ The following code example illustrates how to add the Click Header to Maximize t
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Properties
 
 _ClickHeaderToMaximize Property Table_
@@ -54,11 +57,11 @@ _ClickHeaderToMaximize Property Table_
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description</th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 ClickHeaderToMaximize</td><td>

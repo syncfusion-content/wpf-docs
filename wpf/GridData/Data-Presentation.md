@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Presentation
+title: Data Presentation | GridData (Classic) | wpf | Syncfusion
 description: Data Presentation
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
 # Data Presentation
@@ -22,8 +22,6 @@ This section illustrates those data presentation techniques in the following top
 * Expression Fields—This topic discusses how to create expression columns that hold calculated values based on other fields in the same record.
 * ToolTips—This topic describes the addition of tooltips for the grid cells.
 
-
-
 ## Grouping
 
 This section elaborates the grouping feature of Essential Grid. By using this feature, you can wrap a set of records that belong to the same category into a separate block, called Group. Grid enables you to group data by one or more columns. When grouping is applied, the records having identical values for the grouped columns are combined together forming a hierarchical structure.
@@ -32,15 +30,11 @@ Each group is identified by its Group Caption Section that can be expanded to br
 
 This section comprises the following:
 
-
-
 ### Creating Groups
 
 Grid groups can be created at design-time as well as run time. They are managed by the GroupedColumns collection which holds one entry for every grouped column. A group can be created programmatically by adding the desired column into this collection. The records are sorted in the ascending (default) or descending order of their Grouped Column values. The GroupedColumns collection can have more than one entry to form Nested Groups.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowAddNewRow="False" ShowFilters="False" AutoPopulateColumns="True"
 
@@ -55,10 +49,8 @@ AutoPopulateRelations="True" ItemsSource="{StaticResource ordersSource}" ShowGro
 </syncfusion:GridDataControl>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 GridDataGroupColumn groupedCol = new GridDataGroupColumn();
 
@@ -71,20 +63,17 @@ dataGridControl.GroupedColumns.Add(groupedCol);
 ![](Getting-Started_images/Getting-Started_img54.jpeg)
 
 
-
-
-
 #### Run Time Grouping
 
 Run time grouping is enabled by displaying the group drop area, a placeholder to store the current groups. Such groups can be created interactively through the drag-and-drop operation. For example, to group data against a particular column, drag the desired column header and drop it into the group drop area.
 
 ![](Getting-Started_images/Getting-Started_img55.jpeg)
 
+{% seealso %}
 
+Nested Groups and Custom Groups
 
-See Also
-
-Nested Groups and Custom Groups 
+{% endseealso %}
 
 ### Nested Groups
 
@@ -92,19 +81,13 @@ When you have the grid data grouped against more than one column, the groups are
 
 MultiColumn (Nested) groups can be easily created by simply adding multiple columns into the GroupedColumns collection. You can also generate multilevel groups by just dragging multiple column headers into the group drop area.
 
-
 {% highlight c# %}
-
-
-
 
 GridDataGroupColumn groupedCol1 = new GridDataGroupColumn();
 
 groupedCol1.ColumnName = "ShipCountry";
 
 dataGrid.GroupedColumns.Add(groupedCol1);
-
-
 
 GridDataGroupColumn groupedCol2 = new GridDataGroupColumn();
 
@@ -116,11 +99,11 @@ dataGrid.GroupedColumns.Add(groupedCol2);
 
 ![](Getting-Started_images/Getting-Started_img56.jpeg)
 
-
-
-See Also
+{% seealso %}
 
 Creating Groups
+
+{% endseealso %}
 
 ### Group Events
 
@@ -151,20 +134,14 @@ GroupCollapsed</td><td>
 This event is raised when a group is collapsed.</td></tr>
 </table>
 
-
 #### GroupExpanding Event
 
 The following code example illustrates how to handle the GroupExpanding event.
 {% highlight c# %}
 
-
-
-
 // Subscribe to the event.
 
 dataGrid.Model.Table.GroupExpanding+=new GroupExpandingEventHandler(Table_GroupExpanding);
-
-
 
 // Handle the event.
 
@@ -181,16 +158,12 @@ args.Cancel = true;
 #### GroupExpanded Event
 
 The following code example illustrates how to handle the GroupExpanded event.
+
 {% highlight c# %}
-
-
-
 
 // Subscribe to the event.
 
 dataGrid.Model.Table.GroupExpanded += new GroupExpandedEventHandler(Table_GroupExpanded);
-
-
 
 // Handle the event.
 
@@ -212,14 +185,9 @@ The following code example illustrates how to handle the GroupCollapsing event.
 
 {% highlight c# %}
 
-
-
-
-
 // Subscribe to the event.
 
 dataGrid.Model.Table.GroupCollapsing+=new GroupCollapsingEventHandler(Table_GroupCollapsing);
-
 
 
 // Handle the event.
@@ -232,21 +200,18 @@ args.Cancel = true;
 
 }
 
+{% endhighlight %}
 
-
-GroupCollapsed Event
+## GroupCollapsed Event
 
 The following code example illustrates how to handle the GroupCollapsed event.
 
 
-
-
+{% highlight xaml %}
 
 // Subscribe to the event.
 
 dataGrid.Model.Table.GroupCollapsed+=new GroupCollapsedEventHandler(Table_GroupCollapsed);
-
-
 
 // Handle the event.
 
@@ -259,7 +224,8 @@ void Table_GroupCollapsed(object sender, GroupCollapsedEventArgs args)
 Console.WriteLine("Expanded: " + dataGrid.Model.Table.GroupModel.GetGroupCaptionText((GridDataGroupItem)args.Group.Item));
 
 }
-{% endhighlight  %}
+
+{% endhighlight %}
 
 ## Sorting
 
@@ -274,15 +240,13 @@ The information about all the sorted columns for a grid is managed by Grid.SortC
 
 You can add, modify and remove any item of this collection to manage the sorted columns of a grid.
 
-Apply Sorting
+### Apply Sorting
 
 There are a couple of ways to apply sorting to the grid data. A simple one is just by clicking the column header by which the grid data needs to be sorted. Once the sorting is applied, the grid shows a sort icon in the respective column headers indicating the direction of sorting.
 
 You can also perform sorting through the code. This requires you to define a number of GridDataSortColumn objects specifying the desired column names and sort directions and then add these objects into TableProperties.SortColumns collection. The following code illustrates this:
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}">
 
@@ -300,31 +264,24 @@ The following screenshot shows a GDC enabled with sorting feature:
 
 ![](Getting-Started_images/Getting-Started_img57.jpeg)
 
-
-
 Sorting feature is now enabled in GridData control.
+{:.caption}
 
 ### Enable/Disable Sorting
 
 It is possible to prevent sorting on specific grid columns or all the columns at once. Grid.AllowSortproperty is set to _true_ by default. Set the Grid.AllowSort property to _false_ to disable sorting on all the columns. To disallow sorting on a particular column, set its visibleColumn.AllowSort property to _false_. The following code illustrates setting these properties:
 
-Disable Sort on All Columns
+#### Disable Sort on All Columns
 
-{% highlight xml %}
-
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ItemsSource="{StaticResource customerSource}" AllowSort="False" />
 
 {% endhighlight  %}
 
 Disable Sort on Single Column (Example-CustomerID)
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}">
 
@@ -335,6 +292,7 @@ Disable Sort on Single Column (Example-CustomerID)
    </syncfusion:GridDataControl.VisibleColumns>
 
 </syncfusion:GridDataControl>
+
 {% endhighlight  %}
 
 ### Multicolumn Sorting
@@ -342,10 +300,8 @@ Disable Sort on Single Column (Example-CustomerID)
 To apply sorting on more than one column at run time, click the desired column headers by pressing the CTRL key. 
 
 Below is the code that sorts the grid by two columns: 
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" AutoPopulateRelations="False" ItemsSource="{StaticResource customerSource}">
 
@@ -368,8 +324,6 @@ The following screenshot shows a multicolumn sorting enabled GDC:
 
 ![](Getting-Started_images/Getting-Started_img58.jpeg)
 
-
-
 Multicolumn sorting feature is now enabled in GridData control.
 
 ### Custom Sorting
@@ -385,8 +339,8 @@ To create a custom comparer to implement the custom sorting logic, you need to d
 The following code examples illustrate how to perform the custom sorting for the names in the Company Name column according to the string length of the names.
 
 To enable the custom sorting, hook the _SortColumnsChanging_ event.
-{% highlight c# %}
 
+{% highlight c# %}
 
 this.dataGrid.Model.Table.SortColumnsChanging += new GridDataSortColumnsChan
 
@@ -394,20 +348,13 @@ gingEventHandler(Table_SortColumnsChanging);
 
 {% endhighlight  %}
 
-
-
 Set the comparer for the column on which the data needs to be sorted using the custom sorting logic. Here, the comparer is assigned to CompanyName.
+
 {% highlight c# %}
-
-
-
 
 //This method is hooked when clicking the header 
 
-
-void Table_SortColumnsChanging(object sender, GridDataSortColumnsChangingEve
-
-ntArgs args)
+void Table_SortColumnsChanging(object sender, GridDataSortColumnsChangingEventArgs args)
 {
     if (args != null)
     {
@@ -427,14 +374,13 @@ ntArgs args)
         }
     }
 }
+
 {% endhighlight  %}
 
 
 Check the direction of the sorting by using the SortDirection property of the ListSortDirection class. The Compare method of the IComparer interface uses two parameters to compare the length of the string.
+
 {% highlight c# %}
-
-
-
 
 public class CustomerInfo : IComparer<Object>, ISortDirection
     {
@@ -446,8 +392,6 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
             int namX;
             int namY;
             //For Normal case
-
-
 
             if (x.GetType() == typeof(Customers))
             {
@@ -474,11 +418,7 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
                 namX = x.ToString().Length;
                 namY = y.ToString().Length;
             }
-            //Object is passed through the Compare method and gets the
-
- SortDirection.
-
-
+            //Object is passed through the Compare method and gets the SortDirection.
             if (namX.CompareTo(namY) > 0)
                 return SortDirection == ListSortDirection.Ascending ? 1 : -1;
             else if (namX.CompareTo(namY) == -1)
@@ -504,15 +444,11 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
         }
     }
 
-
-
 {% endhighlight  %}
 
 The following screenshot displays the Company Name column with the sorted names according to their length.
 
-![D:/Document/CustomSorting/1.jpg](Getting-Started_images/Getting-Started_img59.jpeg)
-
-
+![](Getting-Started_images/Getting-Started_img59.jpeg)
 
 ## Filters
 
@@ -523,8 +459,6 @@ Essential Grid allows you to restrict the display of records using a mechanism c
 * Apply Filters
 * Enable/Disable Filters
 * Filters Collection
-
-
 
 Now, let us see these functionalities one-by-one in detail.
 
@@ -539,22 +473,16 @@ It is possible to turn on and turn off the filters in specific column or in all 
 The following are the code snippets that illustrate this property:
 
 Enable Filter for the Whole Grid
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}" ShowFilters="True" />
 
 {% endhighlight  %}
 
+#### Enable Filter for Single Column
 
-
-Enable Filter for Single Column
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="False" AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}">
 
@@ -569,22 +497,18 @@ Enable Filter for Single Column
    </syncfusion:GridDataControl.VisibleColumns>
 
 </syncfusion:GridDataControl>
+
 {% endhighlight  %}
+
 The following image shows a GridData control with filter feature enabled for "CompanyName" column:
 
 ![](Getting-Started_images/Getting-Started_img60.jpeg)
 
-
-
-
-
 CompanyName in GridData control is now enabled with filtering feature.
 
 Here is an example code that enables filter on all the columns:
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}"
 
@@ -596,43 +520,36 @@ The following image illustrates the columns, filtered against the criteria Conta
 
 ![](Getting-Started_images/Getting-Started_img61.jpeg)
 
-
-
 ### Filters Collection
 
 All the filters for a particular column are managed by VisibleColumn.Filters property. You can apply or  clear any number of filters by adding or removing the appropriate entries from this collection.
 
 The following code illustrates the addition of a filter to the column 'ContactTitle'.
 
-{% highlight xml %}
-
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataVisibleColumn MappingName="ContactTitle" HeaderText="ContactTitle">
 
-                        <syncfusion:GridDataVisibleColumn.Filters>
+<syncfusion:GridDataVisibleColumn.Filters>
 
-                            <syncfusion:GridDataFilterPredicate FilterType="StartsWith" FilterValue="Sales" IsCaseSensitive="False" />
+	<syncfusion:GridDataFilterPredicate FilterType="StartsWith" FilterValue="Sales" IsCaseSensitive="False" />
 
-                        </syncfusion:GridDataVisibleColumn.Filters>
+</syncfusion:GridDataVisibleColumn.Filters>
 
 </<syncfusion:GridDataVisibleColumn>
+
 {% endhighlight  %}
 
 ## Advanced Filtering
 
 This feature provides advanced filtering options for the end-user. It overrides the default filter and displays an advanced filter drop-down that lists the available filter operators for the respective filtering column and provides a text box, where the user is allowed to type the filter string. It exhibits a dynamic filtering mechanism by applying filter as the characters are typed.
 
-APIs Used 
+### APIs Used 
 
 This advanced filter pane comes in following two forms. 
 
 * GridDataTextFilteringPane, which can be used with any column type
 * GridDataInt32SliderFilteringPane, which works only with integer columns
-
-
 
 ### Filter Operators
 
@@ -654,7 +571,6 @@ StartsWithEndsWithContainsEqualsNotEquals</td></tr>
 Int32 /DateTime</td><td>
 LessThanLessThanOrEqualGreaterThanGreaterThanOrEqualEqualNotEqual</td></tr>
 </table>
-
 
 The GridDataTextFilteringPane, which is common to all column types, associate appropriate filter choice list according to the type of the column. When GridDataInt32SliderFilteringPane is used, the filter combo is always loaded with Int32 filter choices.
 
@@ -698,13 +614,11 @@ The filtering panes are optional. It is possible to enable the filtering panes f
 
 To enable this feature, you can simply attach an object of the desired filtering pane to the corresponding visible column. The columns that does not have this specification use the default filtering mechanism. It is obvious that the AllowFilter property of the visible column should be set to true in both the cases.
 
-Example
+#### Example
 
 Let us see some code examples that set up the two kinds of filtering panes. 
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowAddNewRow="False" AutoPopulateColumns="False" AutoPopulateRelations="False"  
 
@@ -728,8 +642,6 @@ ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True">
 
         </syncfusion:GridDataVisibleColumn>
 
-
-
         <!--ShipCountry column using Text Filtering Pane with the Foreground and PredicateType properties set.-->
 
         <syncfusion:GridDataVisibleColumn MappingName="ShipCountry" AllowFilter="True">
@@ -741,8 +653,6 @@ ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True">
             </syncfusion:GridDataVisibleColumn.FilterPane>
 
         </syncfusion:GridDataVisibleColumn>
-
-
 
         <!--ShipCountry column using Text Filtering Pane with the Background and CurrentFilterType properties set.-->
 
@@ -764,13 +674,7 @@ ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True">
 
 ![](Getting-Started_images/Getting-Started_img62.jpeg)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img63.jpeg)
-
-
 
 ## Grid FilterBar
 
@@ -792,53 +696,41 @@ This topic explains the implementation of the FilterBar in an application. The f
 
    Set the FilterBar property to “true” for the GridDataControl object.  The Filter status message can be viewed by enabling the property ShowFilterStatusMessage.  The filtering mode can be set to Immediate or OnEnter by setting the Enum property GridDataFilterBarMode.  The following code snippet explains the implementation of the FilterBar.
 
+   ~~~ csharp
+
+		this.dataGrid.ShowFilterBar = true;
+
+		this.dataGrid.ShowFilterStatusMessage = true;
+
+		this.dataGrid.FilterBarMode = GridDataFilterBarMode.Immediate;
+
+		//this.dataGrid.FilterBarMode = GridDataFilterBarMode.OnEnter;
+
+   ~~~
+
+   ~~~ vbnet
+
+		Me.dataGrid.ShowFilterBar = True
+
+		Me.dataGrid.ShowFilterStatusMessage = True
+
+		Me.dataGrid.FilterBarMode = GridDataFilterBarMode.Immediate
+
+		'Me.dataGrid.FilterBarMode = GridDataFilterBarMode.OnEnter
 
 
-
-
-			this.dataGrid.ShowFilterBar = true;
-
-			this.dataGrid.ShowFilterStatusMessage = true;
-
-			this.dataGrid.FilterBarMode = GridDataFilterBarMode.Immediate;
-
-			//this.dataGrid.FilterBarMode = GridDataFilterBarMode.OnEnter;
-
-
-
-
-
-
-
-
-
-
-				Me.dataGrid.ShowFilterBar = True
-
-				Me.dataGrid.ShowFilterStatusMessage = True
-
-				Me.dataGrid.FilterBarMode = GridDataFilterBarMode.Immediate
-
-				'Me.dataGrid.FilterBarMode = GridDataFilterBarMode.OnEnter
-
-
-
-
+   ~~~
 
 3. Run the application and use the filtering tokens in the FilterBar. The valid tokens are listed in Tokens to filter the value table. The following is a sample output of FilterBar implementation.
 
    ![](Getting-Started_images/Getting-Started_img64.png)
 
 
-
-
-
 4. Clearing the Filter
 
    The Current filter value with the column name is displayed at the bottom of the GridDataControl (just like status bar). It contains the button (red color) called “Clear Filter”, which is used to clear the entire filter and show the default level records. 
 
-   {:.prettyprint}
-   
+  
 ### Tables for Properties, Methods, and Events
 
 ### Properties
@@ -882,7 +774,6 @@ Enum </td><td>
 Immediate</td><td>
 GridDataVisibleColumn</td></tr>
 </table>
-
 
 ### Tokens to Filter the Value
 
@@ -974,7 +865,6 @@ Equals</td><td>
 Boolean</td></tr>
 </table>
 
-
 *values can be entered in any format (not case sensitive)
 
 ### Sample Link
@@ -990,7 +880,9 @@ Dropdown FilterBar feature is similar to Text Box Filter instead of entering the
 To filter items using Dropdown Filter
 
 The Dropdown button is used to filter the required items. We have to set the FilterBarStyle to change the FilterBar cell type.
-{% highlight xml %}
+
+{% highlight xaml %}
+
 <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID">
 
      <syncfusion:GridDataVisibleColumn.ColumnStyle>
@@ -1009,17 +901,13 @@ The Dropdown button is used to filter the required items. We have to set the Fil
 
  </syncfusion:GridDataVisibleColumn>
 
-
 {% endhighlight  %}
+
 ![](Getting-Started_images/Getting-Started_img65.png)
-
-
 
 ### Properties, Methods and Events tables
 
 ### Properties
-
-_Properties_
 
 <table>
 <tr>
@@ -1066,18 +954,13 @@ GridDataFilterBarStyle</td><td>
 NA</td></tr>
 </table>
 
-
 To Edit items in Dropdown list 
 
-![C:/Users/riaj/Desktop/edit.png](Getting-Started_images/Getting-Started_img66.png)
-
-
+![](Getting-Started_images/Getting-Started_img66.png)
 
 The behavior is similar to Auto-complete combo box.
 
 ### Property
-
-_Property_
 
 <table>
 <tr>
@@ -1111,20 +994,15 @@ ItemsSource for the page load on Grid load. In this type sorting, filtering and 
 ItemsSource for the page load while grid load. In this type sorting, filtering and grouping is applicable for the whole collection. Excel-like filtering is not applicable here.
 
 
-
 ### Use Case Scenario
 
 Paging Support is a very useful feature to load large amount of data. We can load millions of records in an efficient way.
 
 ![](Getting-Started_images/Getting-Started_img67.png)
 
-
-
 ### Properties, Methods and Events tables
 
 ### Properties
-
-_Property_
 
 <table>
 <tr>
@@ -1170,9 +1048,8 @@ Dependency</td><td>
 Integer</td><td>
 NA</td></tr>
 </table>
-Events
 
-_Events_
+### Events
 
 <table>
 <tr>
@@ -1196,84 +1073,82 @@ NA </td></tr>
 #### OnDemandPaging
 
 The GridDataControl supports paging on demand by specifying queries in order to get the paged records from a database. The records are displayed only when it is required. This sample retrieves fifty records from a database and displays them. Using this type we can fetch the data from the data source for the current page. The entire data is not needed to be fetched from the datasource. We can get high performance even if there are millions of records.
-{% highlight c# %}
 
+{% highlight xaml %}
 
 <syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/>
 
 {% endhighlight  %}
-{% highlight xml %}
+
+{% highlight c# %}
 
 
-            pager.PageCount = 400;
+pager.PageCount = 400;
 
-            pager.IsPagingOnDemand = true;
+pager.IsPagingOnDemand = true;
 
-            pager.OnDemandDataSourceLoad += new GridDataOnDemandPageLoadingEventHandler(pager_OnDemandDataSourceLoad);
+pager.OnDemandDataSourceLoad += new GridDataOnDemandPageLoadingEventHandler(pager_OnDemandDataSourceLoad);
 
+void pager_OnDemandDataSourceLoad(object sender, GridDataOnDemandPageLoadingEventArgs e)
 
+{
 
+   this.grid.ItemsSource = Get_Data(e.PagedRows, e.PagedRows + e.MaximumRows);
 
-
-        void pager_OnDemandDataSourceLoad(object sender, GridDataOnDemandPageLoadingEventArgs e)
-
-        {
-
-            this.grid.ItemsSource = Get_Data(e.PagedRows, e.PagedRows + e.MaximumRows);
-
-        }
+}
 
 {% endhighlight  %}
 
 #### ViewLevelPaging
 
 ViewLevel Sorting, grouping and filtering is provided. Allows to sort the view element. Sorting, filtering and grouping only for the Current page items. This type supports the Filter bar to filter the items. Advance filtering and Excel-like filtering is not applicable for this type.
-{% highlight c# %}
 
+{% highlight xaml %}
 
 <syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/>
 
 {% endhighlight  %}
-{% highlight xml %}
 
+{% highlight c# %}
 
-                        var item = new NorthwindOrders(1000);
+var item = new NorthwindOrders(1000);
 
-            var itemlist = new PagedCollectionView(item);
+var itemlist = new PagedCollectionView(item);
 
-            pager.Source = itemlist;
+pager.Source = itemlist;
 
-            grid.ItemsSource = itemlist;
+grid.ItemsSource = itemlist;
 
-            grid.EnablePaging = true;
+grid.EnablePaging = true;
 
-            grid.IsViewLevelPaging = true;
+grid.IsViewLevelPaging = true;
+
 {% endhighlight  %}
 
 #### SourceLevelPaging
 
 Sorting, grouping and filtering are provided at the Source level. Allows to sort the view element. Sorting, filtering and grouping only for Whole collection. This type supports the Filter bar to filter the items. Advance filtering and Excel-like filtering is not applicable for this type.
-{% highlight xml %}
 
+{% highlight xaml %}
 
 <syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/>
 
 {% endhighlight  %}
+
 {% highlight c# %}
 
- 
+var item = new NorthwindOrders(1000);
 
-            var item = new NorthwindOrders(1000);
+var itemlist = new PagedCollectionView(item);
 
-            var itemlist = new PagedCollectionView(item);
+pager.Source = itemlist;
 
-            pager.Source = itemlist;
+grid.ItemsSource = itemlist;
 
-            grid.ItemsSource = itemlist;
+grid.EnablePaging = true;
 
-            grid.EnablePaging = true;
+grid.IsViewLevelPaging = false;
 
-            grid.IsViewLevelPaging = false;
 {% endhighlight  %}
 
 ## Details View
@@ -1285,8 +1160,6 @@ Essential Grid provides support to have a separate view for each record displaye
 3. By listening to the events, you can set constraints and block, expand, or collapse the view of a record or row.
 4. Can create a tabbed UI to display the hierarchy information in a compact way.
 
-
-
 ### Use Case Scenarios
 
 The details view can be used to create a compact UI to display a large amount of information. Information is displayed only on an on-demand basis. This separates the detailed information and abstract information, acting as a quick view and explorer for the required information. 
@@ -1294,8 +1167,6 @@ The details view can be used to create a compact UI to display a large amount of
 ### Tables for Properties, Methods, and Events
 
 ### Properties
-
-_Properties_
 
 <table>
 <tr>
@@ -1316,8 +1187,6 @@ DataTemplate </td></tr>
 ### Methods
 
 N> The following methods are available in GridDataControl.Model.Table.
-
-_Methods_
 
 <table>
 <tr>
@@ -1362,8 +1231,6 @@ Void</td></tr>
 
 N> The following events are available in GridDataControl.Model.Table.
 
-_Events_
-
 <table>
 <tr>
 <th>
@@ -1397,7 +1264,7 @@ GridDataValueEventArgs&lt;GridDataRecord&gt;</td><td>
 </td></tr>
 </table>
 
-###  Sample Link
+####  Sample Link
 
 To view samples: 
 
@@ -1409,177 +1276,158 @@ To view samples:
 
 ### Adding Details View to an Application 
 
-
 One can easily add the details view to the GridData control by defining the DetailsViewTemplate and binding it to the corresponding GridData control. In the following procedure we have bound the GridData control with a list of product information and created a details view template and bound it to the GridData control.
 
-1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [Data Binding](http://docs.syncfusion.com/wpf/griddata/data-binding)
+1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding)
 2. Define a data template for the details view. You can bind the data by fetching it through Record.Data (data is the underlying object bound).
 
+   ~~~ xaml
 
+		<DataTemplate x:Key="EditableView">
+		
+			<Border HorizontalAlignment="Left" BorderThickness="0.5" BorderBrush="Gray" CornerRadius="2" ClipToBounds="True">
 
-			  <DataTemplate x:Key="EditableView">
+				<Grid Margin="5" Width="300" HorizontalAlignment="Left">
+				
+				<Grid.ColumnDefinitions>
+				
+					<ColumnDefinition Width="0.5*"/>
+					
+					<ColumnDefinition Width="0.5*"/>
+					
+				</Grid.ColumnDefinitions>
+				
+				<Grid.RowDefinitions>
 
-			            <Border HorizontalAlignment="Left" BorderThickness="0.5" BorderBrush="Gray" CornerRadius="2" ClipToBounds="True">
+					 <RowDefinition Height="Auto"/>                        
 
-			                <Grid Margin="5" Width="300" HorizontalAlignment="Left">
+					<RowDefinition Height="Auto"/>
 
-			                    <Grid.ColumnDefinitions>
+					<RowDefinition Height="Auto"/>
+					                        
+					<RowDefinition Height="Auto"/>
+					                        
+					<RowDefinition Height="Auto"/>
+					                        
+					<RowDefinition Height="Auto"/>
+					                        
+					<RowDefinition Height="Auto"/>
+					                        
+					<RowDefinition Height="Auto"/>
+					                        
+					<RowDefinition Height="Auto"/>
 
-			                        <ColumnDefinition Width="0.5*"/>
+   			   </Grid.RowDefinitions>
+				
+				<Grid>
 
-			                        <ColumnDefinition Width="0.5*"/>
+    		        <Label Content="Supplier Info" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="2" FontSize="13" FontWeight="Bold"/>
+					                    
+					<TextBlock Text="Company" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="1" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.CompanyName}" Margin="0,5,0,0" Grid.Row="1" Grid.Column="1" />
+					                    
+					<TextBlock Text="Contact Person" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="2" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.ContactName}" Margin="0,5,0,0" Grid.Row="2" Grid.Column="1" />
+					                    
+					<TextBlock Text="Title" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="3" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.ContactTitle, Mode=OneTime}" Margin="0,5,0,0" Grid.Row="3" Grid.Column="1" />
+					                    
+					<TextBlock Text="Address" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="4" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.Address}" Margin="0,5,0,0" Grid.Row="4" Grid.Column="1" />
+					                    
+					<TextBlock Text="City" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="5" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.City}" Margin="0,5,0,0" Grid.Row="5" Grid.Column="1" />
 
-			                    </Grid.ColumnDefinitions>
+					<TextBlock Text="Postal Code" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="6" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.PostalCode}" Margin="0,5,0,0" Grid.Row="6" Grid.Column="1" />
+					                    
+					<TextBlock Text="Country" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="7" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.Country}" Margin="0,5,0,0" Grid.Row="7" Grid.Column="1" />
+					                    
+					<TextBlock Text="Phone" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="8" Grid.Column="0" />
+					                    
+					<TextBox Text="{Binding Record.Data.Suppliers.Phone}" Margin="0,5,0,0" Grid.Row="8" Grid.Column="1" />
 
-			                    <Grid.RowDefinitions>
+			 </Grid>
 
-			                        <RowDefinition Height="Auto"/>
+		 </Border>
 
-			                        <RowDefinition Height="Auto"/>
+	 </DataTemplate>
 
-			                        <RowDefinition Height="Auto"/>
-
-			                        <RowDefinition Height="Auto"/>
-
-			                        <RowDefinition Height="Auto"/>
-
-			                        <RowDefinition Height="Auto"/>
-
-			                        <RowDefinition Height="Auto"/>
-
-			                        <RowDefinition Height="Auto"/>
-
-			                        <RowDefinition Height="Auto"/>
-
-			                    </Grid.RowDefinitions>
-
-			                    <Label Content="Supplier Info" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="2" FontSize="13" FontWeight="Bold"/>
-
-			                    <TextBlock Text="Company" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="1" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.CompanyName}" Margin="0,5,0,0" Grid.Row="1" Grid.Column="1" />
-
-			                    <TextBlock Text="Contact Person" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="2" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.ContactName}" Margin="0,5,0,0" Grid.Row="2" Grid.Column="1" />
-
-			                    <TextBlock Text="Title" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="3" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.ContactTitle, Mode=OneTime}" Margin="0,5,0,0" Grid.Row="3" Grid.Column="1" />
-
-			                    <TextBlock Text="Address" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="4" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.Address}" Margin="0,5,0,0" Grid.Row="4" Grid.Column="1" />
-
-			                    <TextBlock Text="City" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="5" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.City}" Margin="0,5,0,0" Grid.Row="5" Grid.Column="1" />
-
-			                    <TextBlock Text="Postal Code" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="6" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.PostalCode}" Margin="0,5,0,0" Grid.Row="6" Grid.Column="1" />
-
-			                    <TextBlock Text="Country" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="7" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.Country}" Margin="0,5,0,0" Grid.Row="7" Grid.Column="1" />
-
-			                    <TextBlock Text="Phone" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="8" Grid.Column="0" />
-
-			                    <TextBox Text="{Binding Record.Data.Suppliers.Phone}" Margin="0,5,0,0" Grid.Row="8" Grid.Column="1" />
-
-			                </Grid>
-
-			            </Border>
-
-			        </DataTemplate>
-
-
-
-
+   ~~~
 
 3. Bind the defined data template to the GridData control.
 
+   ~~~ xaml
 
-
-
-
-			  <syncfusion:GridDataControl x:Name="dataGrid"
-
-			                        Grid.Row="0"
-
-			                        UpdateMode="PropertyChanged"
-
-			                        AutoPopulateColumns="True"
-
-			                        ColumnSizer="AutoOnLoad"
-
-			                        AutoPopulateRelations="False"
-
-			                        ShowGroupDropArea="True"
-
-			                        IsGroupsExpanded="True"
-
-			                        ItemsSource="{Binding ProductList}"
-
-			                        ShowAddNewRow="False"
-
-			                        ShowFilterBar="False"
-
-			                        UnboundRowPosition="Top"
-
-			                        ShowErrorTooltips="True"
-
-			                        DetailsViewTemplate="{StaticResource EditableView}"
-
-			                        VisualStyle="Office14Blue"/>
-
-
-
-
-
+		<syncfusion:GridDataControl x:Name="dataGrid"
 		
+						Grid.Row="0"
+						
+						UpdateMode="PropertyChanged"
+						
+						AutoPopulateColumns="True"
+						
+						ColumnSizer="AutoOnLoad"
+						
+						AutoPopulateRelations="False"
+						
+						ShowGroupDropArea="True"
+						
+						IsGroupsExpanded="True"
+						
+						ItemsSource="{Binding ProductList}"
+						
+						ShowAddNewRow="False"
+						
+						ShowFilterBar="False"
+						
+						UnboundRowPosition="Top"
+						
+						ShowErrorTooltips="True"
+						
+						 DetailsViewTemplate="{StaticResource EditableView}"
+						
+						VisualStyle="Office14Blue"/>
 
-				  /// Initializing ViewModel
+   ~~~
+			  
+   ~~~ csharp
 
-				ViewModel viewModel = new ViewModel();
+		/// Initializing ViewModel
 
+		ViewModel viewModel = new ViewModel();
 
+		/// Initializing GridDataControl
 
-				/// Initializing GridDataControl
+		GridDataControl dataGrid = new GridDataControl();
 
-				GridDataControl dataGrid = new GridDataControl();
+		/// Assigning ItemsSource
 
+		dataGrid.ItemsSource = viewModel.ProductList;
 
+		dataGrid.AutoPopulateColumns = true;
 
-				/// Assigning ItemsSource
+		dataGrid.AutoPopulateRelations = false;
 
-				dataGrid.ItemsSource = viewModel.ProductList;
+		/// Assigning DetailsViewTemplate
 
-				dataGrid.AutoPopulateColumns = true;
+		dataGrid.DetailsViewTemplate = (DataTemplate)this.Resources["EditableView"];
 
-				dataGrid.AutoPopulateRelations = false;
-
-
-
-				/// Assigning DetailsViewTemplate
-
-				dataGrid.DetailsViewTemplate = (DataTemplate)this.Resources["EditableView"];
-
-
-
-
+   ~~~
 
 4. Click on the expander cell in the grid to expand or collapse the details view of that particular record or row.
 
    ![](Getting-Started_images/Getting-Started_img68.png)
 
-
-
-
-
    ![](Getting-Started_images/Getting-Started_img69.png)
-
-   {:.prettyprint}
 
 ## Column Drag and Drop
 
@@ -1588,20 +1436,16 @@ Grid allows you to rearrange the columns by a simple drag-and-drop. Once enabled
 You can turn on this feature at grid level for all the columns, by setting the grid.AllowDragColumns property to true. It is also possible to control dragging at column level. Setting the AllowDrag property of the respective visible columns to true enables column dragging on those columns. This is illustrated in the following code example.
 
 The following code illustrates dragging at grid level:
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid" AllowDragColumns="True" ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True" />
 
 {% endhighlight  %}
 
 The following code illustrates dragging at column level:
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid" AutoPopulateColumns="False"  AutoPopulateRelations="False" ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True" >
 
@@ -1618,26 +1462,23 @@ The following code illustrates dragging at column level:
     </syncfusion:GridDataControl.VisibleColumns>
 
 </syncfusion:GridDataControl>
-{% endhighlight  %}
 
+{% endhighlight  %}
 
 The following screenshot illustrates column level dragging:
 
 ![](Getting-Started_images/Getting-Started_img70.jpeg)
 
-
-
 Column level dragging is enabled in the GridData control.
+{:.caption}
 
 ### Customizing the Drag Indicator
 
 Grid also provides properties that let you modify the color of the drag indicators. 
 
 The following code illustrates changing the color of drag indicator:
+
 {% highlight c# %}
-
-
-
 
 dataGrid.Model.TableProperties.DragIndicatorInnerBrush = Brushes.Orange;
 
@@ -1647,39 +1488,36 @@ dataGrid.Model.TableProperties.DragIndicatorOuterBrush = Brushes.Black;
 
 ![](Getting-Started_images/Getting-Started_img71.jpeg)
 
-
-
 The preceding screenshot shows a GDC with customized drag indicator.
+{:.caption}
 
 ## Column Options
 
 The GridData control provides support to customize the individual columns in the grid by using the Column Options feature. The customization options are wrapped up into a panel that pops up on clicking the ColumnOptions icon in the column header, so that the users can work with them in an interactive manner. With this feature now available, you can toggle the customization options within seconds, without writing much code.
 
 You can enable or disable this feature by using the ShowColumnOptions property of the GridData control.
-{% highlight xml %}
 
+{% tabs %}
 
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowColumnOptions="True" ItemsSource="{StaticResource orderSource}" >
 
 </syncfusion:GridDataControl>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 this.dataGridControl.ShowColumnOptions = true;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following screenshot illustrates how the ColumnOptions icon is displayed for individual columns.
 
 ![](Getting-Started_images/Getting-Started_img72.png)
-
-
 
 ### Customization Options
 
@@ -1734,9 +1572,6 @@ Width</td><td>
 You can select the appropriate width for the respective column by pressing and dragging the slider handle with the mouse and clicking the Apply width settings button.</td></tr>
 </table>
 
-
-
-
 ## Summaries
 
 GridDataControl provides support to add additional rows at the bottom of the grid table. Such rows are fixed and are used to brief information about the grid data, called Summaries. For instance, you can display the record count or maximum value as summary.
@@ -1747,8 +1582,6 @@ The following are the built-in summary types supported by grid. They are otherwi
 * Int32Aggregate
 * DoubleAggregate
 * CustomAggregate (used with custom summaries)
-
-
 
 ### SummaryRows Collection
 
@@ -1774,9 +1607,17 @@ The following steps illustrate how to create a Summary.
 
 These steps have been clearly explained for individual summary types.
 
-See Also
+{% seealso %}
 
-Group Summaries, Table Summaries, Caption Summaries, Custom Summaries
+Group Summaries
+
+Table Summaries
+
+Caption Summaries
+
+Custom Summaries
+
+{% endseealso %}
 
 ###  Summary Types
 
@@ -1786,11 +1627,9 @@ Essential Grid supports the following summary types.
 
 As the name implies, the Group Summary is associated with every grid group. The GridDataControl.SummaryRows manages summaries of this type. It provides support to add multiple summaries, i.e., you can have more than one summary row for every group. These summaries are enabled by setting the ShowGroupSummaries property to _true_.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowGroupDropArea="True" AutoPopulateRelations="False" ShowAddNewRow="False"
 
@@ -1819,11 +1658,8 @@ Format="'{Count:d}'"/>
 </syncfusion:GridDataControl>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
-
 
 this.dataGrid.SummaryRows.Add(new GridDataSummaryRow()
 
@@ -1872,22 +1708,21 @@ this.dataGrid.SummaryRows.Add(new GridDataSummaryRow()
     }
 
 });
+
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img73.jpeg)
 
-
-
-Combining Summary Column Values in the GridDataControl
+### Combining Summary Column Values in the GridDataControl
 
 GridDataControl enables to combine summary values in summary columns and display them in a single summary row.
 
 For example, let us consider you want to combine the summaries from all the summary columns and display them in a single row, instead of displaying them in the individual summary columns. In such a case, you must set the ShowSummaryInRow property to _true_ and provide a proper summary title string specifying the combined summary value. The following code example illustrates this.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl.SummaryRows>
 
@@ -1919,25 +1754,21 @@ For example, let us consider you want to combine the summaries from all the summ
 
 ![](Getting-Started_images/Getting-Started_img74.jpeg)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img75.jpeg)
 
+{% seealso %}
 
+Table Summaries
 
-See Also
+Caption Summaries
 
-Table Summaries, Caption Summaries
+{% endseealso %}
 
 ### Table Summaries
 
 The Table Summary is associated with the whole grid table itself. The GridDataControl.TableSummaryRows collection manages summaries of this type. It provides support to add multiple summaries. These summaries are enabled by setting the ShowTableSummariesproperty to true.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowGroupDropArea="True" AutoPopulateRelations="False" ShowAddNewRow="False"
 
@@ -1966,11 +1797,8 @@ ItemsSource="{StaticResource ordersSource}" ShowTableSummaries="True">
 </syncfusion:GridDataControl>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
-
 
 this.dataGrid.TableSummaryRows.Add(new GridDataSummaryRow()
 
@@ -2024,19 +1852,19 @@ this.dataGrid.TableSummaryRows.Add(new GridDataSummaryRow()
 
 ![](Getting-Started_images/Getting-Started_img76.jpeg)
 
+{% seealso %}
 
+Group Summaries
 
-See Also
+Caption Summaries
 
-Group Summaries, Caption Summaries
+{% endseealso %}
 
 ## Caption Summaries
 
 Grid provides built-in support for caption summaries, where the summary values are displayed in the group caption cells. You can have only one caption summary row for a grid table. The GridDataControl.CaptionSummaryRow property is used to set up a caption summary. The caption summary is enabled by setting the ShowGroupSummaryInCaptionproperty to true.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" ShowGroupDropArea="True" AutoPopulateRelations="False" ShowAddNewRow="False"
 
@@ -2066,10 +1894,8 @@ ItemsSource="{StaticResource ordersSource}" ShowGroupSummaryInCaption="True">
 
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 this.dataGrid.ShowGroupSummaryInCaption = true;
 
@@ -2101,8 +1927,6 @@ this.dataGrid.CaptionSummaryRow = new GridDataSummaryRow()
 
         },
 
-
-
         new GridDataSummaryColumn()
 
         {
@@ -2125,11 +1949,13 @@ this.dataGrid.CaptionSummaryRow = new GridDataSummaryRow()
 
 ![](Getting-Started_images/Getting-Started_img77.jpeg)
 
+{% seealso %}
 
+Group Summaries
 
-See Also
+Table Summaries
 
-Group Summaries, Table Summaries
+{% endseealso %}
 
 ### Custom Summaries
 
@@ -2141,10 +1967,8 @@ The following steps illustrate the functioning of the IGridDataSummaryAggregate 
 2. Then implement the CalculateAggregateFunc interface method and in-place your own logic of calculating the summary value. It returns a System.Action<T1, T2, T3> delegate for the aggregate, where T1 represents the source list of items for which the summary needs to be calculated, T2 specifies the property (summary column) and T3 is the Property Descriptor of the custom aggregate class itself. The CalculateAggregateFunc calculates the summary value using these parameters, and assigns the final summary value to the custom property defined in the first step.
 
 The following code example illustrates the partial implementation of the built-in Int32Aggregate that implements the IGridDataSummaryAggregate. It calculates the Sum value for a specific column.
+
 {% highlight c# %}
-
-
-
 
 class GridDataInt32Aggregate : IGridDataSummaryAggregate
 
@@ -2156,8 +1980,6 @@ public GridDataInt32Aggregate()
 
 }
 
-
-
 public int Sum
 
 {
@@ -2167,8 +1989,6 @@ get;
 set;
 
 }
-
-
 
 public Action<IEnumerable, string, PropertyDescriptor> CalculateAggregateFunc()
 
@@ -2190,209 +2010,192 @@ this.Sum = Convert.ToInt32(items.AsQueryable().Sum(property));
 
 
 {% endhighlight  %}
-Example
+
+#### Example
 
 This example uses the Stock Portfolio Database that has a column named "Change" that shows the rate of change of market value of the stocks. Let us consider, you need to display the Standard Deviation of the values of the "Change" column, industry-wise. This can be achieved by using a group summary as the grid is already grouped by Industry. Since the built-in summaries do not support this type of calculation, you have to create custom summaries and write custom code to calculate the standard deviation values. The following steps illustrate this.
 
 1. Define the custom summary logic to calculate the standard deviation.
 
+   ~~~ csharp
+
+		public class CustomAggregate : IGridDataSummaryAggregate
+
+		{
+
+			public CustomAggregate()
+
+			{
+
+			}
 
 
 
+			public double StdDev
+
+			{
+
+				get;
+
+				set;
+
+			}
 
 
 
-				public class CustomAggregate : IGridDataSummaryAggregate
+			public Action<System.Collections.IEnumerable, string, System.ComponentModel.PropertyDescriptor> CalculateAggregateFunc()
 
-				{
+			{
 
-					public CustomAggregate()
-
-					{
-
-					}
-
-
-
-					public double StdDev
-
-					{
-
-						get;
-
-						set;
-
-					}
-
-
-
-					public Action<System.Collections.IEnumerable, string, System.ComponentModel.PropertyDescriptor> CalculateAggregateFunc()
-
-					{
-
-						return (items, property, pd) =>
-
-						{
-
-							var enumerableItems = items as IEnumerable<Quotes>;
-
-							if (pd.Name == "StdDev")
-
-							{
-
-								this.StdDev = enumerableItems.StdDev<Quotes>(q => q.Change);
-
-							}
-
-						};
-
-					}
-
-
-
-				}
-
-
-
-				public static class LinqExtensions
+				return (items, property, pd) =>
 
 				{
 
-					public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
+					var enumerableItems = items as IEnumerable<Quotes>;
+
+					if (pd.Name == "StdDev")
 
 					{
 
-						double ret = 0;
+						this.StdDev = enumerableItems.StdDev<Quotes>(q => q.Change);
 
-						var count = values.Count();
+					}
 
-						if (count > 0)
+				};
+
+			}
+
+		}
+
+		public static class LinqExtensions
+
+		{
+
+			public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
+
+			{
+
+				double ret = 0;
+
+				var count = values.Count();
+
+				if (count > 0)
+
+				{
+
+					// Compute the Average
+
+					double? avg = values.Average(selector);
+
+
+
+					// Perform the Sum of (value-avg)^2
+
+					double sum = values.Select(selector).Sum(d =>
+
+					{
+
+						if (d.HasValue)
 
 						{
 
-							// Compute the Average
-
-							double? avg = values.Average(selector);
-
-
-
-							// Perform the Sum of (value-avg)^2
-
-							double sum = values.Select(selector).Sum(d =>
-
-							{
-
-								if (d.HasValue)
-
-								{
-
-									return Math.Pow(d.Value - avg.Value, 2);
-
-								}
-
-								return 0.0;
-
-							});
-
-
-
-							// Put it all together
-
-							ret = Math.Sqrt((sum) / (count - 1));
+							return Math.Pow(d.Value - avg.Value, 2);
 
 						}
 
-						return ret;
+						return 0.0;
 
-					}
+					});
+
+
+
+					// Put it all together
+
+					ret = Math.Sqrt((sum) / (count - 1));
 
 				}
 
+				return ret;
+			}
 
+		}
 
+   ~~~
+   
 2. Bind the custom summary instance to the grid summary calculation.
 
+   ~~~ xaml
+
+		<syncfusion:LayoutControl.LeftContent>
+
+			<syncfusion:GridDataControl 
+
+			ItemsSource="{Binding Source={StaticResource Quotes}}" 
+
+			Name="gridDataControl1" 
+
+			ShowGroupSummaries="True"
+
+			ShowGroupSummaryInCaption="False"
+
+			AutoPopulateColumns="True"
+
+			AutoPopulateRelations="False"
+
+			ShowAddNewRow="False"
+
+			AllowEdit="False"
+
+			AllowDelete="False">
 
 
 
+				<syncfusion:GridDataControl.GroupedColumns>
+
+					<syncfusion:GridDataGroupColumn ColumnName="Industry_IndustryID"  />
+
+				</syncfusion:GridDataControl.GroupedColumns>
 
 
 
-			<syncfusion:LayoutControl.LeftContent>
+				<syncfusion:GridDataControl.SummaryRows>
 
-						<syncfusion:GridDataControl 
+					<syncfusion:GridDataSummaryRow Name="StdDev" ShowSummaryInRow="False" Title="'{Name} - {Count} Items'" TitleColumnCount="2">
 
-						ItemsSource="{Binding Source={StaticResource Quotes}}" 
+						<syncfusion:GridDataSummaryRow.SummaryColumns>
 
-						Name="gridDataControl1" 
+							<syncfusion:GridDataSummaryColumn Name="StdDevCol" MappingName="Change" SummaryType="Custom" Format="'StdDev ({StdDev})'" CustomAggregate="{Binding Source={StaticResource stdDevAggregate}}">
 
-						ShowGroupSummaries="True"
+								<syncfusion:GridDataSummaryColumn.ColumnStyle>
 
-						ShowGroupSummaryInCaption="False"
+									<syncfusion:GridDataStyleInfo Background="Pink" HorizontalAlignment="Center" />
 
-						AutoPopulateColumns="True"
+								</syncfusion:GridDataSummaryColumn.ColumnStyle>
 
-						AutoPopulateRelations="False"
+							</syncfusion:GridDataSummaryColumn>
 
-						ShowAddNewRow="False"
+						</syncfusion:GridDataSummaryRow.SummaryColumns>
 
-						AllowEdit="False"
+					</syncfusion:GridDataSummaryRow>
 
-						AllowDelete="False">
+				</syncfusion:GridDataControl.SummaryRows>
 
+		</syncfusion:GridDataControl>
 
-
-							<syncfusion:GridDataControl.GroupedColumns>
-
-								<syncfusion:GridDataGroupColumn ColumnName="Industry_IndustryID"  />
-
-							</syncfusion:GridDataControl.GroupedColumns>
-
-
-
-							<syncfusion:GridDataControl.SummaryRows>
-
-								<syncfusion:GridDataSummaryRow Name="StdDev" ShowSummaryInRow="False" Title="'{Name} - {Count} Items'" TitleColumnCount="2">
-
-									<syncfusion:GridDataSummaryRow.SummaryColumns>
-
-										<syncfusion:GridDataSummaryColumn Name="StdDevCol" MappingName="Change" SummaryType="Custom" Format="'StdDev ({StdDev})'" CustomAggregate="{Binding Source={StaticResource stdDevAggregate}}">
-
-											<syncfusion:GridDataSummaryColumn.ColumnStyle>
-
-												<syncfusion:GridDataStyleInfo Background="Pink" HorizontalAlignment="Center" />
-
-											</syncfusion:GridDataSummaryColumn.ColumnStyle>
-
-										</syncfusion:GridDataSummaryColumn>
-
-									</syncfusion:GridDataSummaryRow.SummaryColumns>
-
-								</syncfusion:GridDataSummaryRow>
-
-							</syncfusion:GridDataControl.SummaryRows>
-
-
-
-					</syncfusion:GridDataControl>
-
-
-
+   ~~~
    ![](Getting-Started_images/Getting-Started_img78.jpeg)
 
-   {:.prettyprint}
-
-See Also
+{% seealso %}
 
 Creating Summaries
+
+{% endseealso %}
 
 ### Summary Style
 
 You can customize the appearance of summary cells by applying the desired formatting settings to the GridDataSummaryColumn.ColumnStyle and GridDataSummaryRow.RowStyle properties. The following code example illustrates this.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataSummaryRow>
 
@@ -2419,11 +2222,8 @@ You can customize the appearance of summary cells by applying the desired format
 </syncfusion:GridDataSummaryRow>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
-
 
 GridDataSummaryColumn summaryCol = new GridDataSummaryColumn();
 
@@ -2432,8 +2232,6 @@ summaryCol.ColumnStyle = new GridDataStyleInfo();
 summaryCol.ColumnStyle.Background = new SolidColorBrush(Colors.LightPink);
 
 summaryCol.ColumnStyle.Foreground = new SolidColorBrush(Colors.MidnightBlue);
-
-
 
 GridDataSummaryRow summaryRow = new GridDataSummaryRow();
 
@@ -2446,8 +2244,6 @@ summaryRow.RowStyle.Background = new SolidColorBrush(Colors.LightGreen);
 {% endhighlight  %}
 
 ![](Getting-Started_images/Getting-Started_img79.jpeg)
-
-
 
 ## Hierarchy
 
@@ -2462,7 +2258,7 @@ where n is a number of records in a table
 
 With the nested tables (one table nested inside another table), each record in the parent table has an ssociated set of records in the child table. Every record in the relation is provided with +/- button called RecordPlusMinus that can be expanded and collapsed to bring the underlying records in the child table for display. The number of tables that can be nested with relations using a GridData control is unlimited.
 
-The Relations Collection
+### The Relations Collection
 
 A relation can be created by defining a GridDataRelation and adding it into the Grid.Relations property. This property is an Observable collection of GridDataRelation objects. It manages the entire relations for a grid. The GridDataRelation instance defines a grid relation in the following properties.
 
@@ -2488,45 +2284,42 @@ Used to set the table properties of the child table.</td></tr>
 </table>
 
 
-Example
+#### Example
 
 The following code snippet illustrates how to create a relational column: 
+
 {% highlight c# %}
-
-
-
 
 //Fetching parent table.
 
 DataSet ds = new DataSet();
 
-            using (SqlCeConnection con = new SqlCeConnection(string.Format(@"Data Source = {0}", LayoutControl.FindFile("Northwind.sdf"))))
+using (SqlCeConnection con = new SqlCeConnection(string.Format(@"Data Source = {0}", LayoutControl.FindFile("Northwind.sdf"))))
 
-            {
+{
 
-                con.Open();
+	con.Open();
 
-                SqlCeDataAdapter sda = new SqlCeDataAdapter("SELECT * FROM Employees", con);
+	SqlCeDataAdapter sda = new SqlCeDataAdapter("SELECT * FROM Employees", con);
 
-                sda.Fill(ds, "Employees");
+	sda.Fill(ds, "Employees");
 
-            }
-
+}
 
 
 //Fetching child table.
 
-            using (SqlCeConnection con1 = new SqlCeConnection(string.Format(@"Data Source = {0}", LayoutControl.FindFile("Northwind.sdf"))))
+	using (SqlCeConnection con1 = new SqlCeConnection(string.Format(@"Data Source = {0}", LayoutControl.FindFile("Northwind.sdf"))))
 
-            {
+	{
 
-                con1.Open();
+		con1.Open();
 
-                SqlCeDataAdapter sda1 = new SqlCeDataAdapter("SELECT * FROM Orders", con1);
+		SqlCeDataAdapter sda1 = new SqlCeDataAdapter("SELECT * FROM Orders", con1);
 
-                sda1.Fill(ds, "Orders");
+		sda1.Fill(ds, "Orders");
 
-            }
+	}
 
 //Adding relation.
 
@@ -2537,10 +2330,7 @@ DataSet ds = new DataSet();
 The following code illustrates binding of the above relation to the grid, and also customizing the child table:
 
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="False" AutoPopulateRelations="False" ItemsSource="{StaticResource orderSource}"> ShowAddNewRow="False">
 
@@ -2566,11 +2356,7 @@ The following code illustrates binding of the above relation to the grid, and al
 
 The following image shows the output of the above given code:
 
-
-
 ![](Getting-Started_images/Getting-Started_img80.jpeg)
-
-
 
 The preceding screenshot shows a GDC bound with a nested table whose child table is set with a customized background. 
 
@@ -2579,10 +2365,8 @@ Auto Generate Relations
 The grid can automatically detect the data relations in a data set for display. By default, a relation is created for each such data relation found in the data set. Hence the data relations defined in a data set are sufficient enough for the grid. 
 
 To auto-generate the relations, set the AutoPopulateRelations property of the GridData control to _true_.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"     AutoPopulateRelations="True" ItemsSource="{StaticResource orderSource}"> ShowAddNewRow="False"/>
 
@@ -2592,15 +2376,13 @@ To auto-generate the relations, set the AutoPopulateRelations property of the Gr
 
 Essential Grid allows you to have additional unbound header rows, called Stacked Header Rows that span across visible grid columns. You can group one or more columns under each stacked header. 
 
-The StackedHeaderRows Collection
+### The StackedHeaderRows Collection
 
 Stacked Header rows for a given grid are gathered under Grid.StackedHeaderRow collection. This collection contains the property definitions that control the behavior and appearance of the Stacked Headers. A StackedHeaderRow collection can be viewed as a set of stacked header rows in which each header row contains a collection of stacked headers, which span across multiple columns. 
 
 Every stacked header row is defined by a GridDataStackedHeaderRow. This class contains a property named Columns that is a collection of GridDataStackedHeaderColumn objects and this collection contains an entry for each stacked header. 
 
 Following are the properties of the GridDataStackedHeaderColumn:
-
-_Property_
 
 <table>
 <tr>
@@ -2626,13 +2408,11 @@ Specifies the collection of visible columns under the stacked header.</td></tr>
 </table>
 
 
-Example
+#### Example
 
 The following code example illustrates the creation of two stacked headers:
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="True" AutoPopulateRelations="False" 
 
@@ -2661,8 +2441,6 @@ The following code example illustrates the creation of two stacked headers:
 Output of the above given code is the following image:
 
 ![](Getting-Started_images/Getting-Started_img81.jpeg)
-
-
 
 The preceding screenshot shows a GridData control with stacked headers.
 
@@ -2771,47 +2549,38 @@ ProductName Contains hai</td></tr>
 
 1. Instantiate a GridDataControl and bind it to a data source.
 
+   ~~~ csharp
 
+		<syncfusion:GridDataControl x:Name="dataGrid" ShowAddNewRow="False" ShowFilters="False" AutoPopulateColumns="False"
 
+		AutoPopulateRelations="False" ItemsSource="{StaticResource productsSource}" ShowGroupDropArea="True">
 
+		</syncfusion:GridDataControl>
 
-
-
-				<syncfusion:GridDataControl x:Name="dataGrid" ShowAddNewRow="False" ShowFilters="False" AutoPopulateColumns="False"
-
-				AutoPopulateRelations="False" ItemsSource="{StaticResource productsSource}" ShowGroupDropArea="True">
-
-				</syncfusion:GridDataControl>
-
-
+   ~~~
 
 2. Add an unbound visible column and set its Expression property to the desired formula expression. The unbound visible column also contains the CaseSensitive property that makes the column names specified in the expression, case sensitive, when set to true. If necessary, you can also customize the expression like any other visible column.
 
+   ~~~ xaml
 
+		<syncfusion:GridDataControl.VisibleColumns>
 
+			<syncfusion:GridDataUnboundVisibleColumn MappingName="100UnitPrice" HeaderText="Price of 100 units" Expression="UnitPrice * 100">
 
+				<syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
 
+					<syncfusion:GridDataColumnStyle Background="PeachPuff"/>
 
+				</syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
 
-				<syncfusion:GridDataControl.VisibleColumns>
+			</syncfusion:GridDataUnboundVisibleColumn>
 
-					<syncfusion:GridDataUnboundVisibleColumn MappingName="100UnitPrice" HeaderText="Price of 100 units" Expression="UnitPrice * 100">
+		</syncfusion:GridDataControl.VisibleColumns>
 
-						<syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
-
-							<syncfusion:GridDataColumnStyle Background="PeachPuff"/>
-
-						</syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
-
-					</syncfusion:GridDataUnboundVisibleColumn>
-
-				</syncfusion:GridDataControl.VisibleColumns>
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img82.jpeg)
 
-   {:.prettyprint}
 
 ### Accessing Expression Values
 
@@ -2821,15 +2590,12 @@ You can use the GetUnboundValue method of Grid Table to access the computed expr
 * GetUnboundValue(RowIndex, ColumnIndex)
 
 The following code example illustrates how to use this method.
+
 {% highlight c# %}
-
-
-
 
 // Retrieve the expression value by using row and column indices.
 
 object value = this.dataGrid.Model.Table.GetUnboundValue(5, 5);
-
 
 {% endhighlight  %}
 
@@ -2841,133 +2607,104 @@ Grid exposes a style property named TooltipTemplateKey that is the name of the t
 
 N> If style.ShowToolip is not set, then the default template associated with the Grid is loaded, and the default template would try to show the style.CellValue in a tooltip.
 
-Example
+#### Example
 
 The example below displays a Chart control in the tooltip host. The grid is bound to the Customers table in which the second column is assigned with a tooltip template that holds a data bound chart for tooltip display. Follow the steps below:
 
 1. Define a Template for ToolTip as shown in the following code:
 
+   ~~~ xaml
 
+		<DataTemplate x:Key="chartTemplate">
 
+			<syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
 
+				<!--Chart Legend declaration-->
 
+				<syncfusion:Chart.Legends>
 
+					<syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/>
 
-				<DataTemplate x:Key="chartTemplate">
+				</syncfusion:Chart.Legends>
 
-					<syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
+				<!--Chart area to present chart segments.-->
 
+				<syncfusion:ChartArea FontWeight="Bold" FontSize="14" >
 
+					<!--X-axis declaration with required property settings.-->
 
-						<!--Chart Legend declaration-->
+					<syncfusion:ChartArea.PrimaryAxis >
 
-						<syncfusion:Chart.Legends>
+						<!--Assigning text for the labels in the Primary Axis with the Product name.-->
 
-							<syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/>
+						<syncfusion:ChartAxis  Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/>
 
-						</syncfusion:Chart.Legends>
+					</syncfusion:ChartArea.PrimaryAxis>
 
+					<!--Y-axis declaration with required property settings.-->
 
+					<syncfusion:ChartArea.SecondaryAxis>
 
-						<!--Chart area to present chart segments.-->
+						<syncfusion:ChartAxis Header="Product"  RangePadding="None" />
 
-						<syncfusion:ChartArea FontWeight="Bold" FontSize="14" >
+					</syncfusion:ChartArea.SecondaryAxis>
 
+					<!-- Binding data to the series from the database.-->
 
+					<syncfusion:ChartSeries Type="Column" Label="Categories List" BindingPathsY="Count"
 
-							<!--X-axis declaration with required property settings.-->
+					Interior="{StaticResource SeriesBInterior}" DataSource="{Binding ItemsSource}" />
 
-							<syncfusion:ChartArea.PrimaryAxis >
+				</syncfusion:ChartArea>
 
+			</syncfusion:Chart>
 
+		</DataTemplate>
 
-								<!--Assigning text for the labels in the Primary Axis with the Product name.-->
-
-								<syncfusion:ChartAxis  Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/>
-
-							</syncfusion:ChartArea.PrimaryAxis>
-
-
-
-							<!--Y-axis declaration with required property settings.-->
-
-							<syncfusion:ChartArea.SecondaryAxis>
-
-								<syncfusion:ChartAxis Header="Product"  RangePadding="None" />
-
-							</syncfusion:ChartArea.SecondaryAxis>
-
-
-
-							<!-- Binding data to the series from the database.-->
-
-							<syncfusion:ChartSeries Type="Column" Label="Categories List" BindingPathsY="Count"
-
-							Interior="{StaticResource SeriesBInterior}" DataSource="{Binding ItemsSource}" />
-
-						</syncfusion:ChartArea>
-
-					</syncfusion:Chart>
-
-				</DataTemplate>
-
-
+   ~~~
 
 2. Associating the above template with the Grid Cell as shown in the following code:
 
+   ~~~ csharp
+
+		var style = model[1, 2];
+
+		// Enable tooltip.
+
+		style.ShowTooltip = true;
+
+		style.CellValue = customer.ContactName;
+
+		var cust = customer.Orders.Select(o => o.OrderDetails.Select(od => od.Products).Select(p => p.Categories)).ToList();
+
+		var finalList = cust.Select(c => new
+
+		{
+
+			Count = c.Count(),
+
+			Categories = c
+
+		}).ToList();
+
+		style.ItemsSource = finalList;
 
 
 
+		// Assign template.
 
+		style.TooltipTemplateKey = "chartTemplate";
 
-			var style = model[1, 2];
-
-
-
-			// Enable tooltip.
-
-			style.ShowTooltip = true;
-
-
-
-			style.CellValue = customer.ContactName;
-
-			var cust = customer.Orders.Select(o => o.OrderDetails.Select(od => od.Products).Select(p => p.Categories)).ToList();
-
-			var finalList = cust.Select(c => new
-
-			{
-
-				Count = c.Count(),
-
-				Categories = c
-
-			}).ToList();
-
-			style.ItemsSource = finalList;
-
-
-
-			// Assign template.
-
-			style.TooltipTemplateKey = "chartTemplate";
-
-
-
-   Here is a sample screenshot.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img83.jpeg)
-
-
-
-   N> For the complete code, refer to the following browser sample.
-
-   _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Tooltips Demo._
-
-   {:.prettyprint}
+   ~~~
    
+Here is a sample screenshot.
+
+![](Getting-Started_images/Getting-Started_img83.jpeg)
+
+N> For the complete code, refer to the following browser sample.
+
+...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Tooltips Demo.
+
 ## Cell Comments
 
 Essential Grid supports the association of individual cells with Cell Comments.
@@ -2979,8 +2716,6 @@ There are two properties that are used to set a Comment for the cells:
 * Comment Property
 * CommentTemplateKey Property
 
-
-
 ### Comment Property
 
 Comment is a string type property. You can set a comment using this property for cells. The default Data Template is displayed with the comment text.
@@ -2988,36 +2723,30 @@ Comment is a string type property. You can set a comment using this property for
 #### Example
 
 The following code example illustrates how to display a comment in the default comment Data Template.
+
+{% tabs %}
+
 {% highlight c# %}
-
-
-
 
 style.Comment = style.Text;
 
-
 {% endhighlight %}
+
 {% highlight vbnet %}
-
-
-
-
 
 style.Comment = style.Text
 
-
-
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img84.jpeg)
-
-
 
 ### CommentTemplateKey Property
 
 Grid exposes a style property named CommentTemplateKey that is the name of the template to be used for generating Comment. You can define this template in XAML and assign its name to the style.CommentTemplateKey property. This ensures that any style content defined in the template can be used to display the comment.
 
-Example
+#### Example
 
 The following code example illustrates how to display a Chart control in the comment host. The grid is bound to the 'Customers' table in which the second column is assigned with a comment template that holds a data bound chart for comment display.
 
@@ -3025,316 +2754,236 @@ The following steps illustrate the same:
 
 1. Define a Template for Comments.
 
+   ~~~ xaml
 
+		<DataTemplate x:Key="chartTemplate">
 
+			<syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
 
+				<!--Chart Legend declaration.-->
 
+				<syncfusion:Chart.Legends>
 
+					<syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/>
 
-			<DataTemplate x:Key="chartTemplate">
+				</syncfusion:Chart.Legends>
 
-				<syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
+				<!--Chart Area to present Chart Segments.-->
 
+				<syncfusion:ChartArea FontWeight="Bold" FontSize="14" >
 
+					<!--X-axis declaration with required property settings.-->
 
-					<!--Chart Legend declaration.-->
+					<syncfusion:ChartArea.PrimaryAxis >
 
-					<syncfusion:Chart.Legends>
+						<!--Assigning text for the labels in the Primary Axis with the product name.-->
 
-						<syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/>
+						<syncfusion:ChartAxis Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/>
 
-					</syncfusion:Chart.Legends>
+					</syncfusion:ChartArea.PrimaryAxis>
 
+					<!--Y-axis declaration with required property settings.-->
 
+					<syncfusion:ChartArea.SecondaryAxis>
 
-					<!--Chart Area to present Chart Segments.-->
+						<syncfusion:ChartAxis Header="Product" RangePadding="None" />
 
-					<syncfusion:ChartArea FontWeight="Bold" FontSize="14" >
+					</syncfusion:ChartArea.SecondaryAxis>
 
+					<!-- Binding data to the series from the database.-->
 
+					<syncfusion:ChartSeries Type="Column" Label="Categories List" BindingPathsY="Count"
 
-						<!--X-axis declaration with required property settings.-->
+					Interior="{StaticResource SeriesBInterior}" DataSource="{Binding ItemsSource}" />
 
-						<syncfusion:ChartArea.PrimaryAxis >
+				</syncfusion:ChartArea>
 
+			</syncfusion:Chart>
 
+		</DataTemplate>
 
-							<!--Assigning text for the labels in the Primary Axis with the product name.-->
+   ~~~
 
-							<syncfusion:ChartAxis Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/>
+2. Associate the above template with the Grid Cell.
 
-						</syncfusion:ChartArea.PrimaryAxis>
+   ~~~ csharp
 
+		var style = model[1, 2];
 
+		style.CellValue = customer.ContactName;
 
-						<!--Y-axis declaration with required property settings.-->
+		var cust = customer.Orders.Select(o => o.OrderDetails.Select(od => od.Products).Select(p => p.Categories)).ToList();
 
-						<syncfusion:ChartArea.SecondaryAxis>
+		var finalList = cust.Select(c => new
 
-							<syncfusion:ChartAxis Header="Product" RangePadding="None" />
+		{
 
-						</syncfusion:ChartArea.SecondaryAxis>
+		Count = c.Count(),
 
+		Categories = c
 
+		}).ToList();
 
-						<!-- Binding data to the series from the database.-->
+		style.ItemsSource = finalList;
 
-						<syncfusion:ChartSeries Type="Column" Label="Categories List" BindingPathsY="Count"
+		// Assign template.
 
-						Interior="{StaticResource SeriesBInterior}" DataSource="{Binding ItemsSource}" />
+		style.CommentTemplateKey = "chartTemplate";
 
-					</syncfusion:ChartArea>
+		Dim style = model(1, 2)
 
-				</syncfusion:Chart>
+		style.CellValue = customer.ContactName
 
-			</DataTemplate>
+		Dim cust = customer.Orders.Select(Function(o) o.OrderDetails.Select(Function(od) od.Products).Select(Function(p) p.Categories)).ToList()
 
+		Dim finalList = cust.Select(Function(c) New With {Key .Count = c.Count(), Key .Categories = c}).ToList()
 
+		style.ItemsSource = finalList
 
-2.  Associate the above template with the Grid Cell.
+		' Assign template.
 
+		style.CommentTemplateKey = "chartTemplate"
 
-
-
-
-
-
-				var style = model[1, 2];
-
-				style.CellValue = customer.ContactName;
-
-				var cust = customer.Orders.Select(o => o.OrderDetails.Select(od => od.Products).Select(p => p.Categories)).ToList();
-
-				var finalList = cust.Select(c => new
-
-				{
-
-				Count = c.Count(),
-
-				Categories = c
-
-				}).ToList();
-
-				style.ItemsSource = finalList;
-
-
-
-				// Assign template.
-
-				style.CommentTemplateKey = "chartTemplate";
-
-
-
-		
-
-
-
-				Dim style = model(1, 2)
-
-				style.CellValue = customer.ContactName
-
-				Dim cust = customer.Orders.Select(Function(o) o.OrderDetails.Select(Function(od) od.Products).Select(Function(p) p.Categories)).ToList()
-
-				Dim finalList = cust.Select(Function(c) New With {Key .Count = c.Count(), Key .Categories = c}).ToList()
-
-				style.ItemsSource = finalList
-
-
-
-				' Assign template.
-
-				style.CommentTemplateKey = "chartTemplate"
-
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img85.jpeg)
-
-   {:.prettyprint}
-
+   
 ### Comment Alignment
 
 By using the CommentAlignment property, you can make the cell comments appear at the top-left, top-right, bottom-left or bottom-right corners.
+
+{% tabs %}
+
 {% highlight c# %}
-
-
-
 
 style.CommentAlignment = CommentAlignment.Bottom - Left;
 
-
-
 {% endhighlight  %}
+
 {% highlight vbnet %}
-
-
-
 
 Style.CommentAlignment = CommentAlignment.Bottom – Left
 
-
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img86.jpeg)
-
-
 
 ## Column Auto Sizing
 
 This feature allows the grid columns to resize themselves automatically to fit the column content. This resize action is performed based on the size of cells, size of header or size of parent control. According to this criterion, the column resize options are defined below in the GridControlLengthUnitType enumeration.
 
-Resize Options
+### Resize Options
 
 1. GridControlLengthUnitType.Auto
 
    In Auto type, column widths of the Grid control/GridData control are adjusted with respect to the cell and header content, i.e., each column's header length and cell content length is taken into account.
 
+   ~~~ csharp
 
+		this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Auto;
 
+   ~~~
 
+   ~~~ vbnet
 
-				this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Auto;
+		Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Auto
 
-
-				Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Auto
-
-
-
-
-
+   ~~~
+   
    ![](Getting-Started_images/Getting-Started_img87.jpeg)
-
-
-
-
 
 2. GridControlLengthUnitType.AutoWithLastColumnFill
 
    In AutoWithLastColumnFill type, column width of Grid Control/GridData Control is adjusted with respect to cell and header content. The last column's width fills the unoccupied space in the parent Framework element. 
 
+   ~~~ csharp
 
+		id.Model.Options.ColumnSizer = GridControlLengthUnitType.AutoWithLastColumnFill;
 
+   ~~~
 
+   ~~~ vbnet
 
+	  Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.AutoWithLastColumnFill
 
-
-				id.Model.Options.ColumnSizer = GridControlLengthUnitType.AutoWithLastColumnFill;
-
-
-
-              Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.AutoWithLastColumnFill
-
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img88.jpeg)
-
-
-
-
 
 3. GridControlLengthUnitType.SizeToCells
 
    In SizeToCells type, column width of Grid Control/GridData Control is adjusted with respect to cell content only.
 
+   ~~~ csharp
 
+		this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToCells;
 
+   ~~~
 
+   ~~~ vbnet
 
+		Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToCells
 
-
-				this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToCells;
-
-
-
-
-				Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToCells
-
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img89.jpeg)
-
-
-
 
 
 4. GridControlLengthUnitType.SizeToHeader
 
    In SizeToHeader type, column widths of Grid Control/GridData Control are adjusted with respect to header content only.
 
+   ~~~ csharp
 
+		this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToHeader;
 
+   ~~~
 
+   ~~~ vbnet
 
+		Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToHeader
 
-				this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToHeader;
-
-
-
-
-
-				Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToHeader
-
-
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img90.jpeg)
-
-
-
 
 
 5. GridControlLengthUnitType.Star
 
    In Star type, column widths are equal and the control and the content occupies total space in the Parent cell. The user need not specify the width for every grid column. They can opt one of these options instead.
 
+   ~~~ csharp
 
+		this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Star;
 
+   ~~~
 
+   ~~~ vbnet
 
+		Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Star
 
-				this.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Star;
-
-
-
-
-				Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Star
-
-
-
-
-
+   ~~~
+   
    ![](Getting-Started_images/Getting-Started_img91.jpeg)
-
-
 
 6. MaxLength
 
    The user can specify the number of rows that should be considered for calculating column widths using MaxLength property. The following code snippet allows the grid to consider only the data of first 12 rows for calculating column widths.
 
+   ~~~ csharp
 
+		grid.Model.Options.MaxLength = 12;
 
+   ~~~
 
+   ~~~ vbnet
 
+		grid.Model.Options.MaxLength = 12
 
-
-				grid.Model.Options.MaxLength = 12;
-
-
-
-
-				grid.Model.Options.MaxLength = 12
-
-
-
-
-
+   ~~~
+   
 ##  Look and Feel
 
 This section discusses different ways of enhancing the grid appearance such as, 
@@ -3346,35 +2995,28 @@ This section discusses different ways of enhancing the grid appearance such as,
 
 ## Row Styles
 
-
 There are two ways to format the grid rows. They are, 
 
 * Using properties 
 * By handling QueryCellInfo event
 
-Using Properties
+### Using Properties
 
 You can change the background of the grid rows by setting a color for the RowBackground property. To override the color of the alternative rows in the same grid use the AlternatingRowBackground property. 
 
 The following code illustrates the properties settings.
+
 {% highlight c# %}
-
-
-
 
 grid.AlternatingRowBackground = new SolidColorBrush(Colors.Orchid);
 
 grid.RowBackground = new SolidColorBrush(Colors.Tan);
 
-
 {% endhighlight  %}
-
 
 The following image corresponds to the output of the above given code:
 
 ![](Getting-Started_images/Getting-Started_img92.jpeg)
-
-
 
 The row styles of the GDC are customized using background properties.
 
@@ -3383,42 +3025,36 @@ The row styles of the GDC are customized using background properties.
 QueryCellInfo event is handled whenever a grid cell needs to be redrawn or repainted. In the GDC, you can use Model.QueryCellInfo event to format the rows by checking the row and column indices on the event arguments. 
 
 The following code illustrates this:
+
 {% highlight c# %}
-
-
-
 
 grid.Model.QueryCellInfo += new GridQueryCellInfoEventHandler(Model_QueryCellInfo);
 
 void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
-        {
+{
 
-            if (e.Cell.RowIndex > 0)
+	if (e.Cell.RowIndex > 0)
 
-            {
+	{
 
-                if (e.Cell.RowIndex % 2 == 0)
+		if (e.Cell.RowIndex % 2 == 0)
 
-                    e.Style.Background = Brushes.BlanchedAlmond;
+			e.Style.Background = Brushes.BlanchedAlmond;
 
-                else
+		else
 
-                    e.Style.Background = Brushes.LightCyan;
+			e.Style.Background = Brushes.LightCyan;
 
-            }
+	}
 
-        }
-
+}
 
 {% endhighlight  %}
+
 The following image corresponds to the output of the above given code:
 
-
-
 ![](Getting-Started_images/Getting-Started_img93.jpeg)
-
-
 
 The row styles of the GDC are customized by handling the QueryCellInfo event.
 
@@ -3471,16 +3107,13 @@ PredicateType</td><td>
 Specifies the PredicateType that is used to combine more than one condition. There are two types-AND, OR.</td></tr>
 </table>
 
-
-Example
+#### Example
 
 Now, let us consider an example for conditional formatting. The first conditional formatter in the following example specifies the filter criteria, “{Frieght} > 200 OR {Frieght} < 500” that applies Yellow background to the cells satisfying this condition. 
 
 The second conditional formatter indicates the criteria–“{ShipCountry} Equals USA OR {ShipCountry} Equals UK”. If this condition is satisfied, then the given style, Crimson background and White foreground is applied only to the corresponding record’s ShipCountry field, instead of being applied to the entire row.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" 
 
@@ -3488,45 +3121,45 @@ AutoPopulateRelations="False" ItemsSource="{StaticResource ordersSource}"
 
 ShowGroupDropArea="True" UpdateMode="PropertyChanged">
 
-            <syncfusion:GridDataControl.ConditionalFormats>
+	<syncfusion:GridDataControl.ConditionalFormats>
 
-                <syncfusion:GridDataConditionalFormat Name="C1">
+		<syncfusion:GridDataConditionalFormat Name="C1">
 
-                    <syncfusion:GridDataConditionalFormat.Style>
+			<syncfusion:GridDataConditionalFormat.Style>
 
-                        <syncfusion:GridDataStyleInfo Background="Yellow" />
+				<syncfusion:GridDataStyleInfo Background="Yellow" />
 
-                    </syncfusion:GridDataConditionalFormat.Style>
+			</syncfusion:GridDataConditionalFormat.Style>
 
-                    <syncfusion:GridDataConditionalFormat.Conditions>
+			<syncfusion:GridDataConditionalFormat.Conditions>
 
-                        <syncfusion:GridDataCondition ColumnName="Freight" ConditionType="GreaterThan" Value="200" PredicateType="Or"/>
+				<syncfusion:GridDataCondition ColumnName="Freight" ConditionType="GreaterThan" Value="200" PredicateType="Or"/>
 
-                        <syncfusion:GridDataCondition ColumnName="Freight" ConditionType="LessThan" Value="500" PredicateType="And"/>
+				<syncfusion:GridDataCondition ColumnName="Freight" ConditionType="LessThan" Value="500" PredicateType="And"/>
 
-                    </syncfusion:GridDataConditionalFormat.Conditions>
+			</syncfusion:GridDataConditionalFormat.Conditions>
 
-                </syncfusion:GridDataConditionalFormat>
+		</syncfusion:GridDataConditionalFormat>
 
-                <syncfusion:GridDataConditionalFormat Name="C2" ApplyStyleToColumn="ShipCountry" >
+		<syncfusion:GridDataConditionalFormat Name="C2" ApplyStyleToColumn="ShipCountry" >
 
-                    <syncfusion:GridDataConditionalFormat.Style>
+			<syncfusion:GridDataConditionalFormat.Style>
 
-                        <syncfusion:GridDataStyleInfo Background="Crimson" Foreground="White"  />
+				<syncfusion:GridDataStyleInfo Background="Crimson" Foreground="White"  />
 
-                    </syncfusion:GridDataConditionalFormat.Style>
+			</syncfusion:GridDataConditionalFormat.Style>
 
-                    <syncfusion:GridDataConditionalFormat.Conditions>
+			<syncfusion:GridDataConditionalFormat.Conditions>
 
-                        <syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="USA" PredicateType="Or"/>
+				<syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="USA" PredicateType="Or"/>
 
-                        <syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="UK" PredicateType="Or"/>
+				<syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="UK" PredicateType="Or"/>
 
-                    </syncfusion:GridDataConditionalFormat.Conditions>
+			</syncfusion:GridDataConditionalFormat.Conditions>
 
-                </syncfusion:GridDataConditionalFormat>
+		</syncfusion:GridDataConditionalFormat>
 
-           </syncfusion:GridDataControl.ConditionalFormats>
+   </syncfusion:GridDataControl.ConditionalFormats>
 
 </syncfusion:GridDataControl>
 
@@ -3536,15 +3169,13 @@ The following image shows the output of the above given code:
 
 ![](Getting-Started_images/Getting-Started_img94.jpeg)
 
-
-
 The preceding screenshot shows a GDC applied with conditional formatting.
 
-## Table Options
+### Table Options
 
 There are numerous options to customize the appearance and behavior of the GridData control. These options are exposed in the following Grid.Model.TableProperties.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -3721,11 +3352,11 @@ VisualStyle</td><td>
 Specifies the skin for the grid.</td></tr>
 </table>
 
-## Font Settings
+### Font Settings
 
 The GridData control lets you to set the grid font properties from the root grid. By setting the font related properties in the root GridDataControl instance, you can change the font settings for entire grid cells at once.
 
-## Skins
+### Skins
 
 GridDataControl implements visual styles that set up a common appearance to all the components in the grid. The term appearance refers not only to the way the grid elements appear but also the manner in which they behave in response to the user interactions like hovering mouse over them, clicking, and so on. Grid has in-built support for the following skins: 
 
@@ -3751,7 +3382,7 @@ GridDataControl implements visual styles that set up a common appearance to all 
 
 Skin provides better look and feel for an application.
 
-### Sample Link
+#### Sample Link
 
 Blend Styling Demo sample in the sample browser is purely customized in XAML through GridDataStyleManager class. To access Blend Styling Demo:
 
@@ -3765,19 +3396,14 @@ Blend Styling Demo sample in the sample browser is purely customized in XAML thr
 
 
 Visual styles can be set for a grid by using the VisualStyle property. The following code illustrates this: 
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="False" AutoPopulateRelations="False"  ItemsSource="{StaticResource ordersSource}" syncfusion:SkinStorage.VisualStyle="Office2007Blue" />
+
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
-
-
 
 SkinStorage.SetVisualStyle(dataGrid2, "Office2007Blue");
 
@@ -3787,108 +3413,49 @@ SkinStorage.SetVisualStyle(dataGrid2, "Office2007Blue");
 
 ![](Getting-Started_images/Getting-Started_img95.png)
 
-
-
 ![](Getting-Started_images/Getting-Started_img96.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img97.png)
 
-
-
 ![](Getting-Started_images/Getting-Started_img98.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img99.png)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img100.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img101.png)
 
-
-
 ![](Getting-Started_images/Getting-Started_img102.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img103.png)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img104.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img105.png)
 
-
-
 ![](Getting-Started_images/Getting-Started_img106.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img107.png)
 
-
-
 ![](Getting-Started_images/Getting-Started_img108.png)
-
-
-
-
 
 ![](Getting-Started_images/Getting-Started_img109.png)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img110.png)
 
-
-
-
-
-![C:/Users/labuser/Desktop/SnapShots/GDC.png](Getting-Started_images/Getting-Started_img111.png)
-
-
+![](Getting-Started_images/Getting-Started_img111.png)
 
 ## Custom Skin
 
 It is possible to define your own visual style for the GridData control. As a first step, you need to define a custom style by deriving from the IGridDataVisualStyle interface, and by defining custom brushes for various grid elements. 
 
 You should direct the grid to use this custom style by specifying Custom option in its VisualStyle property. This can be done by using the following code: 
+
 {% highlight c# %}
-
-
-
 
 this.dataGrid.CustomVisualStyle = new GridDataGlassyGreenStyle();
 
 this.dataGrid.VisualStyle = VisualStyle.Custom;
-
 
 {% endhighlight  %}
 
@@ -3898,12 +3465,9 @@ The following screenshot shows the custom visual style set for the grid using th
 ![](Getting-Started_images/Getting-Started_img112.png)
 
 
-
 Custom Visual Style can be defined for nested tables too. The following code illustrates this: 
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -3941,13 +3505,11 @@ Custom Visual Style can be defined for nested tables too. The following code ill
 
 </syncfusion:GridDataControl>
 
-
 {% endhighlight  %}
+
 ![](Getting-Started_images/Getting-Started_img113.png)
 
-
-
-N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager ](/wpf/griddata/data-presentation#adding-styles-to-an-application)_class through Microsoft Expression Blend.
+N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager](/wpf/griddata/data-presentation#adding-styles-to-an-application)_class through Microsoft Expression Blend.
 
 ### Backward Compatibility
 
@@ -3956,8 +3518,8 @@ There are substantial differences in the implementation of the new Skins in vers
 Breaking Change in 9.2
 
 Previously, AlphaBlend was set in DrawSelectionOptions by default. But currently it is turned off. If you need AlphaBlend color to be applied for selection, we need to set DrawSelectionOptions property in application as mentioned in the following code snippet:
-{% highlight c# %}
 
+{% highlight c# %}
 
 this.grid.DrawSelectionOptions = GridDrawSelectionOptions.AlphaBlend | GridDrawSelectionOptions.ReplaceBackground 
 
@@ -3969,7 +3531,7 @@ this.grid.DrawSelectionOptions = GridDrawSelectionOptions.AlphaBlend | GridDrawS
 
 Essential GridDataControl supports the setting of its styles by XAML and supports editing styles using Microsoft Expression Blend.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature helps in customizing GridDataControl through Microsoft Expression Blend 3 or 4®.
 
@@ -4006,13 +3568,13 @@ GridDataStyleManager properties are organized under the following seven groups, 
 
 
 
-N> Previously, the appearance of the GridDataControl could be customized through the_ [IGridDataVisualStyle ](wpf/griddata/data-presentation#custom-skin)_interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
+N> Previously, the appearance of the GridDataControl could be customized through the [IGridDataVisualStyle](/wpf/griddata/data-presentation#custom-skin) interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
 
-Customizing the Column Appearance
+### Customizing the Column Appearance
 
 In the Column group, all the properties are of _Style_ type. These properties affect the appearance of a whole column. The following table lists each property and its corresponding target _type._
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4054,11 +3616,11 @@ GridDataUpDownEditVisibleColumnControl</td></tr>
 
 
 
-Customizing the Expander Appearance
+### Customizing the Expander Appearance
 
 The Expander group properties are used to customize the Expand and Collapse buttons.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4129,9 +3691,8 @@ Obsolete.</td></tr>
 
 
 The following code example illustrates the properties in the Expander group.
-{% highlight xml %}
 
-
+{% highlight xaml %}
 
 
 <Path x:Key="plusPath" Width="8.666" Height="11.42" HorizontalAlignment="Left"
@@ -4139,7 +3700,6 @@ The following code example illustrates the properties in the Expander group.
 VerticalAlignment="Top" Data="M1.5,4.4500742 C2.3284271,4.4500742 3,5.1216469 3,5.9500742 C3,6.7785015 2.3284271,7.4500742 1.5,7.4500742 C0.67157292,7.4500742 0,6.7785015 0,5.9500742 C0,5.1216469 0.67157292,4.4500742 1.5,4.4500742 z M2.8990631,0.00036717192 C3.0453069,0.005159697 3.1827641,0.056897067 3.284497,0.15714154 L8.5183868,5.3089428 C8.6242905,5.4130292 8.6701775,5.5520487 8.6654148,5.6966238 L8.6658916,5.6966238 C8.6662092,5.7011499 8.6654148,5.7055159 8.6656513,5.710042 C8.6654148,5.714488 8.6662092,5.718854 8.6658916,5.7233 L8.6654148,5.7233 C8.6701775,5.867878 8.6242905,6.0069752 8.5183868,6.1111407 L3.284497,11.262862 C3.0519648,11.491915 2.6327903,11.467778 2.3486581,11.208635 C2.3486581,11.208635 2.2061534,11.101613 1.9369454,10.833023C1.6678151,10.56459 1.7572079,10.396356 1.9367857,10.137055 C2.1164434,9.8779926 4.7354136,6.097723 4.7354136,6.097723 C4.9301553,5.7890387 4.933569,5.630013 4.7354136,5.3222814 C4.7354136,5.3222814 2.1164434,1.5420915 1.9367857,1.2827913 C1.7572079,1.0237284 1.667151,0.85541332 1.9369454,0.58698106 C2.2061534,0.31847125 2.3486581,0.21136875 2.3486581,0.21136881 C2.5084825,0.065645903 2.711035,-0.0057947943 2.8990631,0.00036717192 z" Fill="#FFF5913F"
 
 Stretch="Fill" />
-
 
 
 <Path x:Key="minusPath" Width="8.666" Height="11.42" HorizontalAlignment="Left"
@@ -4155,8 +3715,6 @@ Data="M1.5,4.4500742 C2.3284271,4.4500742 3,5.1216469 3,5.9500742 C3,6.77850
 </Path.RenderTransform>
 
 </Path>
-
-
 
 <syncfusion:GridDataStyleManager>
 
@@ -4192,9 +3750,7 @@ Data="M1.5,4.4500742 C2.3284271,4.4500742 3,5.1216469 3,5.9500742 C3,6.77850
 
 ![](Getting-Started_images/Getting-Started_img118.png)
 
-
-
-#### Customizing the Group Area
+### Customizing the Group Area
 
 Group Area group properties are used to customize the Group Area.
 
@@ -4202,7 +3758,7 @@ Customizing Group Area Appearance through the GridDataStyleManager
 
 The following properties illustrate how to customize the appearance of the Group Area through the GridDataStyleManager.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4241,10 +3797,7 @@ Gets or sets the outer border color for the Drag Drop Indicator.</td></tr>
 The following code example illustrates the properties defined in this group.
 
 
-{% highlight xml %}
-
-
-
+{% highlight xaml %}
 
 <Pen x:Key="GroupCellBorder" Brush="#FFC2C2C2" Thickness="1" />
 
@@ -4279,16 +3832,16 @@ Bottom="{StaticResource GroupCellBorder}"
 </syncfusion:GroupAreaAppearence>
 
 </syncfusion:GridDataStyleManager.GroupAreaAppearence>
+
 {% endhighlight  %}
+
 ![](Getting-Started_images/Getting-Started_img119.png)
 
-
-
-Customizing Group Area Appearance through the GridDataControl
+### Customizing Group Area Appearance through the GridDataControl
 
 The following properties illustrate how to customize the appearance of the Group Area through the GridDataControl.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4316,19 +3869,20 @@ Gets or sets the inner background color for the Drag Indicator.</td></tr>
 DragIndicatorOuterBrush</td><td>
 Gets or sets the outer border color for the Drag Indicator.</td></tr>
 </table>
-The following code example illustrates the properties defined in this group.
-{% highlight xml %}
 
+The following code example illustrates the properties defined in this group.
+
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid" ShowGroupDropArea="True"
 
 GroupDropAreaHeight="50" GroupDropAreaText="Customized Group Area"
 
 DragIndicatorInnerBrush="Gray" DragIndicatorOuterBrush="Brown"/>
+
 {% endhighlight  %}
+
 ![](Getting-Started_images/Getting-Started_img120.png)
-
-
 
 ### Customizing the Header Appearance
 
@@ -4338,7 +3892,7 @@ Customizing Header Appearance through the GridDataStyleManager
 
 The following properties illustrate how to customize the Header appearance through the GridDataStyleManager.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4435,10 +3989,8 @@ FilterButtonAppliedBrush</td><td>
 Gets or sets the background color to be displayed for the Filter icon when the filter is applied.</td></tr>
 </table>
 The following code example illustrates the properties defined in this group.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataStyleManager.HeaderAppearence>
 
@@ -4486,13 +4038,11 @@ Top="{StaticResource ValueCellBorder}" />
 
 ![](Getting-Started_images/Getting-Started_img121.png)
 
-
-
-Customizing Header Appearance through the GridDataControl
+### Customizing Header Appearance through the GridDataControl
 
 The following properties illustrate how to customize the Header appearance through the GridDataControl.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4520,11 +4070,10 @@ Gets or sets the row height of the Header cell.</td></tr>
 HeaderStyle</td><td>
 Gets or sets the style for the Header cell.</td></tr>
 </table>
+
 The following code example illustrates the properties defined in this group.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <!—HeaderTemplate-->
 
@@ -4534,15 +4083,11 @@ The following code example illustrates the properties defined in this group.
 
 </DataTemplate>
 
-
-
 <syncfusion:GridDataControl x:Name="grid" ShowFilters="True" AllowSort="True"
 
 DefaultHeaderRowHeight="50" HeaderCellTemplate="{StaticResource HeaderTemplate}"
 
 HeaderStyle="{StaticResource GridDataHeaderCellControlStyle}"/>
-
-
 
 <!— HeaderStyle in Visible Column  -->
 
@@ -4572,7 +4117,7 @@ Customizing Row Appearance through the GridDataStyleManager
 
 The following properties illustrate how to customize row appearance through the GridDataStyleManager.
 
-_Property_
+### Property
 
 <table>
 <tr>
@@ -4624,11 +4169,10 @@ Gets or sets the background color for the selected cell in a row.</td></tr>
 RowHeaderIconPath</td><td>
 Gets or sets the icon path for the row header.</td></tr>
 </table>
+
 The following code example illustrates the properties defined in this group.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataStyleManager.RowAppearence>
 
@@ -4676,11 +4220,11 @@ FontSize="13.333" />
 
 
 
-Customizing Row Appearance through the GridDataControl
+###Customizing Row Appearance through the GridDataControl
 
 The following properties illustrate how to customize row appearance through the GridDataControl.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -4748,11 +4292,10 @@ Gets or sets the position of the unbound row in Grid.</td></tr>
 AddNewRowPosition</td><td>
 Gets or sets the position of the new row to be added in Grid.</td></tr>
 </table>
+
 The following code example illustrates this.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid" ShowGroupSummaries="True"
 
@@ -4768,7 +4311,6 @@ AlternatingRowBackground="White" AlternatingRowBackground="Wheat"
 
 UnboundRowPosition="Bottom" AddNewRowPosition="Top"/>
 
-
 {% endhighlight %}
 
 ### Customizing the Value Cell Appearance
@@ -4779,7 +4321,7 @@ Customizing the Value Cell Appearance through the GridDataStyleManager
 
 The following properties illustrate how to customize the Value Cell appearance through the GridDataStyleManager.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -4831,11 +4373,10 @@ Gets or sets the background color to be displayed for the row when the pointer i
 HoveringRecordCellForeground</td><td>
 Gets or sets the foreground color to be displayed for the row when the pointer is moved over it.</td></tr>
 </table>
+
 The following code example illustrates the properties defined in this group.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataStyleManager.ValueCellAppearance>
 
@@ -4865,7 +4406,7 @@ The following code example illustrates the properties defined in this group.
 
 <syncfusion:ValueCellAppearance.ValueTextMargins>
 
-<syncfusion:CellMarginsInfo Bottom="2" Left="2" Right="2"                                       Top="2" />
+<syncfusion:CellMarginsInfo Bottom="2" Left="2" Right="2"  Top="2" />
 
 </syncfusion:ValueCellAppearance.ValueTextMargins>
 
@@ -4881,11 +4422,11 @@ The following code example illustrates the properties defined in this group.
 
 
 
-Customizing the Value Cell Appearance through the GridDataControl
+###Customizing the Value Cell Appearance through the GridDataControl
 
 The following properties illustrate how to customize the Value Cell appearance through the GridDataControl.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -4921,11 +4462,10 @@ Gets or sets the border width of the selected row.</td></tr>
 HighlightSelectionForeground</td><td>
 Gets or sets foreground color of the selected row.</td></tr>
 </table>
+
 The following code example illustrates this.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid1" ExcelLikeSelectionFrame="True"
 
@@ -4934,19 +4474,18 @@ AllowEdit="True" HighlightSelectionAlphaBlend="WhiteSmoke"
 HighlightSelectionBackground="BlanchedAlmond" HighlightSelectionBorder="Azure" HighlightSelectionBorderWidth="0.5"
 
 HighlightSelectionForeground="Black"/>
+
 {% endhighlight  %}
 
-Customizing the Nested Grid Appearance
+### Customizing the Nested Grid Appearance
 
 The Nested Grid Group enables to customize the Nested cell borders by modifying the margin, borders, and so on.
 
 N> For Nested grid, Style Manager can be set by the Child Model. By default, Child inherits the styles from Parent.
 
 The following code example illsutrates this.
+
 {% highlight c# %}
-
-
-
 
 void Table_RecordExpanded(object sender, GridDataValueEventArgs<GridDataRecord>e)
 
@@ -4955,10 +4494,12 @@ void Table_RecordExpanded(object sender, GridDataValueEventArgs<GridDataRecor
 e.Value.ChildModels[0].TableProperties.StyleManager = new GridDataStyleManager();
 
 } 
+
 {% endhighlight  %}
+
 The following properties illustrate how to customize the Nested Grid appearance through the GridDataStyleManager.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -4984,10 +4525,8 @@ Gets or sets the border information for the last header column of value cells of
 </table>
 
 The following code example illustrates the properties defined in this group.
-{% highlight xml %}
 
-
-
+{% highlight xaml %}
 
 <Pen x:Key="ValueCellBorder" Brush="#FFD6BE92" Thickness="0.25" />
 
@@ -5059,19 +4598,13 @@ The following code example illustrates the properties defined in this group.
 
 ![](Getting-Started_images/Getting-Started_img125.png)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img126.png)
-
-
 
 ### Editing Additional Template and Styles
 
 Apart from the properties mentioned above, template and style for ScrollViewer, ContextMenu, GridDataHeaderCellControl, GridDataColumnOptionPane can be customized using the following properties. 
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -5103,28 +4636,26 @@ GridDataRowControl</td></tr>
 AlternateRowstyle</td><td>
 GridDataRowControl</td></tr>
 </table>
+
 Step by step instructions for Editing Templates
 
 1. Open the application in Microsoft Expression Blend
+
 2. Right-click on the GridDataControl and from Object menu, select Edit Additional Templates -> Edit $PartName$Style (e.g. HeaderStyle).  
 
    ![](Getting-Started_images/Getting-Started_img127.png)
 
-
-
 3. Blend creates a copy of the Template and opens the XAML. All the “Parts” that make up the selected template can be edited to make the required styling changes.
 
-   {:.prettyprint}
-   
 ### RowStyle and AlternateRowStyle
-
 
 RowStyle and AlternateRowStyle are FrameworkElement Styles specifies the style for alternate rows in GridDataControl. These styles support all the basic properties of controls namely Background, Foreground, FontFamily, FontSize and FontFamily.
 
 #### RowStyle
 
 RowStyle can be set using XAML by overriding the style for GridDataRowControl class. This overrides the styles for each row. RowStyle supports all the basic control styles. The following code example explains the implementation of the RowStyle.
-{% highlight xml %}
+
+{% highlight xaml %}
 
 
 <Style x:Key="RowStyle1" TargetType="{x:Type local:GridDataRowControl}">
@@ -5158,12 +4689,14 @@ RowStyle can be set using XAML by overriding the style for GridDataRowControl cl
 <!--Assigning the style resource to the GridDataControl-->
 
        RowStyle="{StaticResource RowStyle1}"
+
 {% endhighlight  %}
 
 ####  AlternateRowStyle
 
 AlternateRowStyle defines the style for the GridDataRowControl element for alternate rows. If this is defined in XAML then the RowStyle and AlternateRowStyle applies for alternate elements. AlternateRowStyle supports all the basic control styles. The following code example explains the implementation of the AlternateRowStyle.
-{% highlight xml %}
+
+{% highlight xaml %}
 
 
 <Style x:Key="AlternateRowStyle1" TargetType="{x:Type local:GridDataRowControl}">
@@ -5210,8 +4743,6 @@ Command is an input mechanism that provides input handling at a more semantic le
 * CanExecute determines whether the command can execute on the current command target
 * CanExecuteChanged is raised if the command manager that centralizes the commanding operations detects a change in the command source that might invalidate a command that has been raised but not yet executed by the command binding.
 
-
-
 GridDataControl provides Commands for the following events. This helps write the application in pure MVVM model.
 
 * QueryCellInfoCommand
@@ -5222,7 +4753,7 @@ GridDataControl provides Commands for the following events. This helps write the
 
 QueryCellInfoCommand is widely used to allow customization of each and every cell in the required format. QueryCellInfo accepts an argument of type GridQueryCellInfoEventArgs. The GridQuerryCellInfoEventArgs contains the following customization properties. Now you can make use of this 
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -5243,7 +4774,7 @@ Specifies the style for the cell represented by the above Cell property</td></tr
 
 SortColumnChangingCommand allows customizing the sort columns at run time and this command get hooked before the column is sorted. SortColumnsChanging event accepts an argument of type GridDataSortColumnsChangingEventArgs. The GridDataSortColumnsChangingEventArgs contains the following customization properties. Now you can make use of this
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -5264,10 +4795,7 @@ NotifyCollectionChangedAction</td><td>
 Gives the Action that are going to perform in the SortColumns Collection in GridDataControl.</td></tr>
 </table>
 
-
-#### Properties
-
-_Property Table_
+### Properties
 
 <table>
 <tr>
@@ -5308,15 +4836,13 @@ Display a Customized Column Chooser Window
 
 The GridData control’s column chooser enables you to customize the column chooser from the application side. This can be done by passing the Action method as a parameter of the ShowColumnChooser() method.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 If an item source contains 15 columns and the user defines only three visible columns, activating the column chooser shows a window containing the header cells of the remaining columns and also enables the user to add and remove columns from the view by dragging and dropping them.
 
-#### Tables for Properties, Methods, Events, and Commands
+### Tables for Properties, Methods, Events, and Commands
 
-#### roperties
-
-_Property Table_
+### Properties
 
 <table>
 <tr>
@@ -5334,9 +4860,7 @@ boolean</td></tr>
 </table>
 
 
-#### Methods
-
-_Methods Table_
+### Methods
 
 <table>
 <tr>
@@ -5363,9 +4887,7 @@ Void</td></tr>
 </table>
 
 
-#### Commands
-
-_Command Table_
+### Commands
 
 <table>
 <tr>
@@ -5379,7 +4901,7 @@ This command is used to display the column chooser window.</td></tr>
 </table>
 
 
-Sample Link
+#### Sample Link
 
 To view sample:
 
@@ -5393,9 +4915,9 @@ Choose the Export to PDF sample to launch.
 ## Adding Column Chooser to an Application
 
 1. Bind an ItemsSource to GridDataControl. Refer to the following link for more information about binding an ItemsSource to GridDataControl: 
-[Data Binding](http://docs.syncfusion.com/wpf/griddata/data-binding).
+[Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding).
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid"                            
 
@@ -5458,8 +4980,10 @@ Choose the Export to PDF sample to launch.
 Bind a button command to the ColumnChooserCommand command
 
 The following code shows how to show the Column Chooser window using the built-in command of the GridData control.
-{% highlight xml %}
 
+{% tabs %}
+
+{% highlight xaml %}
 
 <Button Name="ColumnChooserBtn"
 
@@ -5469,17 +4993,13 @@ Content="Show Column Chooser" />
 
 {% endhighlight  %}
 
-
-
 This shows the Column Chooser window whenever the user clicks the button.
 
 Displaying Default Column Chooser by Invoking Method
 
 The following code demonstrates how to show the Column Chooser window by hooking the button’s click event.
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <Button Name="ColumnChooserBtn"
 
@@ -5488,29 +5008,31 @@ Content="Show Column Chooser"
 Click="ColumnChooserBtn_Click"/>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
 
 private void ColumnChooserBtn_Click(object sender, RoutedEventArgs e)
 
-        {
+{
 
-            this.gridDataControl.ShowColumnChooser();
+  this.gridDataControl.ShowColumnChooser();
 
-        }
+}
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 
 By using this, the user can get the default Column Chooser without any customization.
 
 Customizing the Column Chooser by Invoking Parameterized Method
 
 The following code shows how to customize the Column Chooser window from the application side. This is achieved by passing a method as a parameter for the ShowColumnChooser method.
-{% highlight xml %}
 
+{% tabs %}
 
-
+{% highlight xaml %}
 
 <Button Name="ColumnChooserBtn"                        
 
@@ -5519,31 +5041,32 @@ Content="Show Column Chooser" 
 Click="ColumnChooserBtn_Click"/>
 
 {% endhighlight  %}
-{% highlight c# %}
 
+{% highlight c# %}
 
 private void ColumnChooserBtn_Click(object sender, RoutedEventArgs e)
 
-        {
+{
 
-            gridDatacontrol.ShowColumnChooser((Chooser) =>
+ gridDatacontrol.ShowColumnChooser((Chooser) =>
 
-            {
+  {
 
-                Chooser.Title = "Customized Column Chooser";
+    Chooser.Title = "Customized Column Chooser";
 
-                Chooser.CanAddHiddenColumns = 
+    Chooser.CanAddHiddenColumns = 
 
-                (gridDatacontrol.DataContext as ViewModel).CanAddHiddenColumns;
+    (gridDatacontrol.DataContext as ViewModel).CanAddHiddenColumns;
 
-            });
+  });
 
-        }
+}
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 
 In the result you can get the column chooser window in your application as shown below.
 
 ![](Getting-Started_images/Getting-Started_img128.png)
-
-

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GridTree-Control-Properties
+title: GridTree Control Properties| GridTree  | Wpf | Syncfusion
 description: gridtree control properties
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 
@@ -11,16 +11,16 @@ documentation: ug
 
 The GridTree control has the following properties that allow you to control much of the behavior available within the control. Here is a list of these properties along with some discussion of each. 
 
-_GridTree Control Property_
+
 
 <table>
 <tr>
 <th>
-{{ '**GridTree control Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type of Property**' | markdownify }}</th><th>
-{{ '**Value It Accepts**' | markdownify }}</th><th>
-{{ '**Property Syntax**' | markdownify }}</th></tr>
+GridTree control Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Value It Accepts</th><th>
+Property Syntax</th></tr>
 <tr>
 <td>
 AllowAutoSizingNodeColumn</td><td>

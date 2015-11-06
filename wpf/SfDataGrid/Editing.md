@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing
+title: Editing | SfDataGrid | WPF | Syncfusion
 description: editing
 platform: wpf
 control: SfDataGrid
@@ -54,8 +54,8 @@ sfdatagrid.AllowEditing = true;
 
 
 
-_DataGrid with AllowEditing set to ‘True’_
-
+DataGrid with AllowEditing set to ‘True’
+{:.caption}
 N> It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
 
 You are also allowed to control the behavior when the current cell is allowed to enter into Edit Mode by using the EditTriggers property. EditTriggers include the following two modes:
@@ -69,7 +69,7 @@ N> You can switch between Edit Mode and View Mode by pressing the F2 key.
 
 The DataGrid control also provides the following properties in Grid Columns to support editing.
 
-_Editing property table_
+Editing property table
 
 <table>
 <tr>
@@ -156,8 +156,8 @@ When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor t
 ![](Features_images/Features_img116.png)
 
 
-_DataGrid with AllowFocus property set to ‘false’_
-
+DataGrid with AllowFocus property set to ‘false’
+{:.caption}
 When you select OrderID column’s cell, it is not selected or edited. Since AllowFocus is set to ‘false’.
 
 ## EditorSelectionBehavior
@@ -201,8 +201,8 @@ The following screenshot illustrates the output.
 
 
 
-_DataGrid with Selection behavior while editing_
-
+DataGrid with Selection behavior while editing
+{:.caption}
 ### Methods
 
 Methods available under Editing are dependent on the current cell. DataGrid offers following public Methods in regard with Editing.
@@ -362,8 +362,8 @@ The following screenshot illustrates the output. The OrderID is View Mode and Cu
 
 
 
-_OrderID in View Mode and CustomerID value in Edit Mode_
-
+OrderID in View Mode and CustomerID value in Edit Mode
+{:.caption}
 You can update the edited values, like Default, PropertyChanged, LostFocus and Explicit. For more information about UpdateSourceTrigger you can [ClickHere](http://msdn.microsoft.com/en-us/library/system.windows.data.updatesourcetrigger(v=vs.110).aspx). In the following code example, whenever the value of CustomerID is changed instantly the underlying collection also changes. Since UpdateTrigger is given as PropertyChanged.
 
 
@@ -824,4 +824,5 @@ You can see that in edit mode the font size is changed compared to display mode 
 
 
 
-_Font size of Editing element changed_
+Font size of Editing element changed
+{:.caption}

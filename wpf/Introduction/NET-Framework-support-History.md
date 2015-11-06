@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NET-Framework-support-History
+title: NET Framework support History| Introduction | Wpf | Syncfusion
 description: .net framework support history
 platform: wpf
 control: Introduction
@@ -13,7 +13,7 @@ documentation: ug
 
 The table represents the .NET framework versions vs Syncfusion version.
 
-_.NET framework versions vs Syncfusion version_
+### .NET framework versions vs Syncfusion version
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Yes</td></tr>
 
 Syncfusion WPF controls are always updated with the Microsoft latest Framework. The following table contains information about controls compatibility with earlier version of .NET Framework
 
-_List of controls compatibility with earlier version of .NET Framework_
+### List of controls compatibility with earlier version of .NET Framework
 
 <table>
 <tr>

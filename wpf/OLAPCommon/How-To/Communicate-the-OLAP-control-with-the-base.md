@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Communicate-the-OLAP-control-with-the-base
+title: Communicate the OLAP control with the base| OLAPCommon | Wpf | Syncfusion
 description: communicate the olap control with the base
 platform: wpf
 control: OLAPCommon

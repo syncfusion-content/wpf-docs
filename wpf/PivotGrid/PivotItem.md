@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotItem
+title: PivotItem| PivotGrid | Wpf | Syncfusion
 description: pivotitem
 platform: wpf
 control: PivotGrid
@@ -12,7 +12,7 @@ documentation: ug
 A pivot item is an item in a PivotTable field. PivotItem provides the information needed to define a pivot item for either a row or column 
 pivot. It consists of the following fields.
 
-Property Table
+### Property Table
 
 <table>
 <tr>
@@ -65,6 +65,7 @@ string</td><td>
 
 PivotItem can be defined in XAML or in code-behind.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -116,12 +117,14 @@ Dim m_PivotItem As PivotItem = New PivotItem() With {.FieldHeader="Product", .Fi
 Me.PivotGridControl1.PivotRows.Add(m_PivotItem)
 
 {% endhighlight %} 
+{% endtabs %}
 
 
 ## Sorting Using PivotItem
 
 By default, PivotGrid will sort data in ascending order. The sorting order can be changed using the Comparer field of PivotItem.
 
+{% tabs %}
 {% highlight C# %}
 
 
@@ -224,5 +227,5 @@ End If
 '   #End Region  
 
 {% endhighlight %} 
-
+{% endtabs %}
 

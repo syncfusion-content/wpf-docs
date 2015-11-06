@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Management
+title: Data Management | Spreadsheet | wpf | Syncfusion
 description: data management
 platform: wpf
 control: Spreadsheet
@@ -16,21 +16,13 @@ Formulas are entries in Excel document that have an equation, which calculates t
 Spreadsheet control supports various built-in functions that make large calculations in large sheets easier.
 
 Spreadsheet control supports all the formulas that are supported by the Grid control. For more details about the 
-supported formula refer to [Grid Control UG](http://docs.syncfusion.com/wpf/grid).
-
-
+supported formula refer to [Grid Control UG](http://help.syncfusion.com/wpf/grid).
 
 ## Data Validation
 
 The Data Validation enables you to dynamically validate the data entered in a cell. You can specify the validation rules in the Data Validation dialog box. Spreadsheet control supports the various validation types for each data type. This also enables you to show the error message for invalid data.
 
-
-
 ![](Data-Management_images/Data-Management_img1.png)
-
-
-
-
 
 ###Data Validation in Spreadsheet control
 
@@ -42,24 +34,16 @@ Essential Spreadsheet control enables you to edit the existing data validation. 
 * Number Validation
 * Date Validation
 
-
-
-
-
-Events
-
-
-
-Event Table
+### Events
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Event</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 CurrentCellValidating  </td><td>
@@ -72,124 +56,74 @@ NA </td></tr>
 
 ### Defining Condition for Validating Cells
 
-You can define the data validation to the Spreadsheet cells using the Data Validation dialog box. You have to specify the validation rule in the Settings tab, tooltip content in the Input Message tab and error message in Error Alert tab. You can open the data validation dialog using the DataValidationCommand_._ 
-
-
+You can define the data validation to the Spreadsheet cells using the Data Validation dialog box. You have to specify the validation rule in the Settings tab, tooltip content in the Input Message tab and error message in Error Alert tab. You can open the data validation dialog using the DataValidationCommand. 
 
 ![](Data-Management_images/Data-Management_img2.png)
 
-
-
-
-
 ![](Data-Management_images/Data-Management_img3.png)
-
-
-
-
 
 ![](Data-Management_images/Data-Management_img4.png)
 
-
-
-
-
 The input message will be displayed as tooltip, when the particular cell is in active state. 
-
-
 
 ![](Data-Management_images/Data-Management_img5.png)
 
-
-
-
-
 The error message will be display only when you enter the value beyond the data validation limit.
 
-
-
 ![](Data-Management_images/Data-Management_img6.png)
-
-
-
 
 
 When you click Ok, the cell value will not be committed and when you click Cancel, it will revert the cell value.
 
 The following code illustrates how to bind the DataValidationCommand to a button:
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path=DataValidationCommand}">
 
-                    </Button>
+</Button>
 
-
-{%endhighlight%}
+{% endhighlight %}
 
 ## Comments 
 
 Comments provide additional information about a cell such as, what the value represents. Spreadsheet control allows you to insert, edit and delete comments in the Excel document.
 
-
-
 ### Insert comment
 
-You can insert comment to the Spreadsheet cells using the New Comment dialog box. You can open the New Comment dialog box using the InsertCommentCommand_._
+You can insert comment to the Spreadsheet cells using the New Comment dialog box. You can open the New Comment dialog box using the InsertCommentCommand.
 
 The following code illustrates how to bind the InsertCommentCommand__to a button: 
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= InsertCommentCommand}">
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![](Data-Management_images/Data-Management_img7.png)
 
-
-
-
-
 ![](Data-Management_images/Data-Management_img8.png)
 
-
-
 N> You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment.
-
-
 
 ### Edit Comment
 
 You can edit the existing comments using the Edit Comment dialog box. You can open the Edit comment dialog using the InsertCommentCommand.
 
-
 ![](Data-Management_images/Data-Management_img9.png)
-
-
-
-
 
 The following code illustrates how to bind the InsertCommentCommand__to a button: 
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= InsertCommentCommand}">
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ### Delete Comment
 
@@ -197,30 +131,21 @@ You can delete the comment in the spreadsheet cells using the DeleteCommentComma
 
 The following code illustrates how to bind the DeleteCommentCommand__to a button: 
 
-{%highlight xml%}
-
-
-
+{% highlight xaml %}
 
 <Button Command="{Binding Path= DeleteCommentCommand}">
 
 </Button>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ## Import and Export from Data Table
 
 Spreadsheet offers some helper methods that enable you to import and export data form ADO.NET data sources very easily. The ImportDataTable and ExportDataTable methods allow you to use one line of code to import data from a Datatable to a SpreadSheet and export data from a SpreadSheet to a DataTable respectively.
 
-
-
 ![](Data-Management_images/Data-Management_img10.png)
 
-
-
-
-
-### Samples Link
+#### Samples Link
 
 The samples for Importing from data table are located at:
 
@@ -228,18 +153,16 @@ The samples for Importing from data table are located at:
 
 Refer to section 2.2 Samples and Location to access the samples location.
 
-
-
 ### Methods
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 ImportFromDataTable </td><td>
@@ -282,26 +205,29 @@ void</td></tr>
 
 The following lines of code are used to import data from DataTable to Spreadsheet control.
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight c# %}
 
 this.spreadsheetControl.ImportFromDataTable(datatable);
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 Me.spreadsheetControl.ImportFromDataTable(datatable)
-{%endhighlight%}
 
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Exporting to a Data Table
 
 Similarly, you can to export the Spreadsheet data to a data table by using the ExportDataTable method of Worksheet. The following code demonstrates this:
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight c# %}
 
 IWorksheet sheet  = this.spreadsheetControl.ExcelProperties.WorkBook.Worksheets[0];
 
@@ -309,10 +235,9 @@ IRange range = sheet.Range["A1:K50"];
 
 DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
+{% highlight vbnet %}
 
 Dim sheet As IWorksheet = Me.spreadsheetControl.ExcelProperties.WorkBook.Worksheets(0)
 
@@ -320,38 +245,29 @@ Dim range As IRange = sheet.Range("A1:K50")
 
 Dim Dt As DataTable = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames)
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Clipboard Support
 
 The Spreadsheet control provides support for clipboard operations. When you copy and paste the cells within the Spreadsheet control, it will paste the cell data and cell style to the Spreadsheet cells and also Spreadsheet also having the support for pasting formula with relative reference. When you copy and paste the cells from Spreadsheet control to other application, it will only copy the cell text.
-
-
 
 ### Use Case Scenarios
 
 1. It is easier and faster to copy the data than to rewrite it every time you need it.
 2. Spreadsheet control support Excel-like relative reference copy and paste operations. It also allows you to do clipboard operations like those available in Excel.
 
-
-
 ### Copy and Paste Options
 
 1. Normal copy paste
 2. Relative reference copy and paste
 
-
-
 #### Normal Copy and Paste
 
 By default, the normal copy and paste option is enabled in the Spreadsheet control. When you copy the cells from Spreadsheet control, it will copy the cell text to the clipboard. Then you can paste the text in other applications. While copying the call text to clipboard spreadsheet will add the tab symbol (“/t”) as a delimiter.
 
-
-
 ![](Data-Management_images/Data-Management_img11.png)
-
-
-
 
 
 ## Relative reference Copy and paste
@@ -360,28 +276,19 @@ If you copy and paste cells within the Spreadsheet control, then the cell styles
 
 If you are pasting the date in the spreadsheet cells, it will show this small pop-up with two options: one for pasting the formula, and one for pasting the value. By default, when you paste the copied formula cell, it will paste the formula in that cell. By using this pop-up, you can change this formula to a value.
 
-
-
 ![](Data-Management_images/Data-Management_img12.png)
 
-
-
-
-
 ![](Data-Management_images/Data-Management_img13.png)
-
-
 
 ### How to Disable the Relative Reference Copy and Paste
 
 By default, this feature is enabled in the Spreadsheet control. You can disable this copy paste feature by using the following code:
 
-{%highlight c#%}
-
+{% highlight c# %}
 
 spreadsheetControl.GridProperties.ActiveSpreadsheetGrid.Model.GridCopyPaste = null;
 
-{%endhighlight%}
+{% endhighlight %}
 
 ### Events
 
@@ -394,13 +301,9 @@ The Spreadsheet control provides the following events for customizing the clipbo
 * ClipboardCut
 * ClipboardPaste
 
-
-
 You can get all grid control objects in the WorkBookLoaded event of the Spreadsheet control. By using these objects, you can handle the grid events.
 
-
-
-#### ClipboardCanCopy
+### ClipboardCanCopy
 
 This event is triggered when some grid data is about to be copied to the clipboard. Inside this event handler, you can check for the data and range of cells that are going to be copied, and cancel the operation if you don’t want to copy the data.
 
@@ -408,16 +311,13 @@ This event is triggered when some grid data is about to be copied to the clipboa
 2. If you don’t want to move the data to the clipboard, you can cancel the operation by setting e.Cancel to true.
 
 
-
-
-
 ### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -433,19 +333,17 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-## ClipboardCanCut
+### ClipboardCanCut
 
 This event is triggered when some grid data is about to be moved to the clipboard. Inside this event handler, you can check for the data and range of cells going to be moved and cancel the operation if you do not want to move the data. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
-
-
 
 ### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -461,7 +359,7 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-## ClipboardCanPaste
+### ClipboardCanPaste
 
 This event is fired when some grid data is about to be pasted from the clipboard. Inside this event handler, you can check for the data and range of cells going to be pasted and cancel the operation if you don’t want to paste the data. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
@@ -470,8 +368,8 @@ This event is fired when some grid data is about to be pasted from the clipboard
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -487,19 +385,17 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-##   ClipboardCopy
+### ClipboardCopy
 
 This event is fired when some grid data is being copied to the clipboard. Inside this event handler, you can check for the data and range of cells being copied and cancel the operation if you don’t want to copy the data. You can also provide custom formatted data for copying to clipboard. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
-
-
 
 ### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -515,21 +411,17 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-## ClipboardCut
+### ClipboardCut
 
 This event is fired when some grid data is being moved to the clipboard. Inside this event handler, you can check for the data and range of cells being moved and cancel the operation if you don’t want to move the data. You can also provide custom formatted data for moving to clipboard. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-
-
 ### Properties
-
-
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -545,19 +437,17 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-## ClipboardPaste
+### ClipboardPaste
 
 This event is fired when some grid data is being pasted from the clipboard. Inside this event handler, you can check for the data and range of cells being pasted and cancel the operation if you don’t want to paste the data. You can also provide custom formatted data for saving into grid cells. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
-
-
 
 ### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -579,8 +469,7 @@ By default, when you copy and paste the formula cell, the Spreadsheet control wi
 
 The following code used to copy and paste only the display text.
 
-{%highlight c#%}
-
+{% highlight c# %}
 
 void spreadsheetControl_WorkBookLoaded(object sender, WorkbookLoadedEventArgs args)
 
@@ -597,8 +486,6 @@ void spreadsheetControl_WorkBookLoaded(object sender, WorkbookLoadedEventArgs
     }
 
 }
-
-
 
 void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
@@ -684,7 +571,4 @@ void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
 }
 
-
-
-
-{%endhighlight%}
+{% endhighlight %}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfTreeNavigator | wpf | Syncfusion
 description: getting started 
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ Assembly : Syncfusion.SfTreeNavigator.WPF (in Syncfusion.SfTreeNavigator.WPF.dll
 
 The following code sample shows how to create the Tree Navigator from code-behind and XAML, 
 
-
+{%tabs%}
 {% highlight xml %}
 
 <navigation:SfTreeNavigator Header="Enterprise Toolkit" >
@@ -61,7 +61,7 @@ sfToolkit.Items.Add(winrt);
 
 sfToolkit.Items.Add(metroStudio);
 {% endhighlight %}
-
+{%endtabs%}
 
 
 

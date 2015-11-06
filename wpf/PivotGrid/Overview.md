@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| PivotGrid | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-# Overview
+# PivotGrid
 
 Essential PivotGrid for WPF is a powerful cell-oriented, extensible grid control. It simulates the pivot table feature of Excel. The PivotGrid, as the name implies, pivots data through a drag-and-drop operation using PivotSchemaDesigner (source shipped as PivotTools.Wpf with PivotGrid samples), to organize the data in a cross-tabulated form. The major advantage with a pivot grid is that you can extract the desired information from a large list within seconds. Along with presenting the data, a pivot grid also enables you to summarize and group data. It finds its main application in the financial domain, where it is used to organize and analyze business data.
 
@@ -39,14 +39,14 @@ on the features and functionalities of the PivotGrid control. It is organized in
 
 The following conventions will help you quickly identify the important sections of information while using the content.
 
-Document conventions table
+
 
 <table>
 <tr>
 <th>
-{{ '**Convention**' | markdownify }}</th><th>
-{{ '**Icon**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>

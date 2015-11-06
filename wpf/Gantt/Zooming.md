@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming
+title: Zooming| Gantt | Wpf | Syncfusion
 description: zooming
 platform: wpf
 control: Gantt
@@ -30,7 +30,7 @@ To add the built-in zooming:
 2. Set the UseOnDemandSchedule API value as _true_. If need set BaseCellMinLength and BaseCellMaxLength, the default value of these APIs are 20 and 40 respectively.
 3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 
-
+{% tabs %}
 {% highlight html %}
 
 
@@ -40,11 +40,11 @@ To add the built-in zooming:
 
 <sync:GanttControl  x:Name="Gantt" 
 
-                    ItemsSource="{Binding GanttItemSource}" 
+ItemsSource="{Binding GanttItemSource}" 
 
-                    UseOnDemandSchedule="True"
+UseOnDemandSchedule="True"
 
-                    ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}"/>
+ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}"/>
 
 
 
@@ -99,6 +99,8 @@ To add the built-in zooming:
 
 
 {% endhighlight  %}
+{% endtabs %}
+
 The following image shows Built-in Zooming in Gantt:
 
 
@@ -107,7 +109,7 @@ The following image shows Built-in Zooming in Gantt:
 
 
 
-## Samples Link
+### Samples Link
 
 To view samples:
 
@@ -137,17 +139,18 @@ To add custom zooming:
 4. Use any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 5. Handle the ZoomChanged event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
 
+{% tabs %}
 {% highlight html %}
 
 
 
 <ComboBox x:Name="ZoomBox" 
 
-          Width="75" 
+Width="75" 
 
-          ItemsSource="{Binding ZoomFactors}" 
+ItemsSource="{Binding ZoomFactors}" 
 
-          SelectedItem="{Binding ZoomFactor}"/>
+SelectedItem="{Binding ZoomFactor}"/>
 
 
 
@@ -382,7 +385,7 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 The following image shows Custom Zooming in Gantt:
 
@@ -392,7 +395,7 @@ The following image shows Custom Zooming in Gantt:
 
 
 
-## Samples Link
+### Samples Link
 
 To view samples:
 
@@ -401,10 +404,11 @@ To view samples:
 3. Select Gantt.
 4. Expand the Interactive Features item in the Sample Browser.
 5. Choose the Custom Zooming to launch the sample.
+
 ## Tables for Zooming Properties and Events
 
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -440,7 +444,7 @@ double</td></tr>
 </table>
 
 
-_Events_
+### Events
 
 <table>
 <tr>

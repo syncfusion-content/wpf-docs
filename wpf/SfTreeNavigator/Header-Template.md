@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Header-Template
+title: Header Template | SfTreeNavigator | wpf | Syncfusion
 description: header template
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 

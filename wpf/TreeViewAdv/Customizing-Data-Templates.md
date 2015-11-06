@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Data-Templates
+title: Customizing Data Templates | TreeViewAdv | wpf | Syncfusion
 description: customizing data templates
 platform: wpf
 control: TreeViewAdv

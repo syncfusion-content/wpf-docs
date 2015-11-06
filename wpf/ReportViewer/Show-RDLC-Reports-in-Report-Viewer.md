@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Show-RDLC-Reports-in-Report-Viewer
+title: Show RDLC Reports in Report Viewer | ReportViewer | WPF | Syncfusion
 description: show rdlc reports in report viewer
 platform: wpf
-control: Report Viewer
+control: ReportViewer
 documentation: ug
 ---
 
@@ -25,15 +25,11 @@ You can show RDLC reports in Report Viewer by using following steps.
    // Add ReportViewer in MainWindow grid
    
    this.grid1.Children.Add(reportViewer1);
-   
    ~~~
-   {:.prettyprint}
-
-
-   _Note: To load the company sales report, you can use following installed sample location._
+  
+   N> To load the company sales report, you can use following installed sample location._
 
    _<InstalledLocation>\Syncfusion\Essential Studio\<Version Number>\ Common\Data\ReportTemplate\Company Sales.rdl_
-
 
 
 2. Set the ProcessingMode as Local to process a local report in Report Viewer.
@@ -44,50 +40,39 @@ You can show RDLC reports in Report Viewer by using following steps.
    
    reportViewer1.ProcessingMode = Syncfusion.Windows.Reports.Viewer.ProcessingMode.Local;
    ~~~
-   {:.prettyprint}
-
-
+  
 3. Set the DataSources to view the report in the Report Viewer.
 
-   ~~~cs
+{% highlight c# %}
+reportViewer1.DataSources.Clear();
 
-   reportViewer1.DataSources.Clear();
+reportViewer1.DataSources.Add(new Syncfusion.Windows.Reports.ReportDataSource { Name = "Sales", Value = new AdventureWorks().GetData() });
+{% endhighlight %}
 
-   reportViewer1.DataSources.Add(new Syncfusion.Windows.Reports.ReportDataSource { Name = "Sales", Value = new AdventureWorks().GetData() });
-
-
-   ~~~
-   {:.pretty-print}
-
-
-   _Note: AdventureWorks().GetData() information can be obtained from following location._ 
+   N> AdventureWorks().GetData() information can be obtained from following location._ 
 
    _<Installed Location>\Syncfusion\Essential Studio\<Version Number>\ Reports\WPF\ReportViewer.WPF\Samples\Product Showcase\Company Sales\CS\DataSource.cs_
 
+4.Use RefreshReport method to render the RDLC report in the Report Viewer.
+   
+{% highlight js %}
+   
+this.Loaded += (sender, arg) =>
+   
+{
+   
+// To Render the Report in ReportViewer.
+   
+reportViewer1.RefreshReport();
+   
+};
+   
+{% endhighlight %}
 
-
-4. Use RefreshReport method to render the RDLC report in the Report Viewer.
-   
-   ~~~js
-   
-   this.Loaded += (sender, arg) =>
-   
-   {
-   
-   // To Render the Report in ReportViewer.
-   
-   reportViewer1.RefreshReport();
-   
-   };
-   
-   ~~~
-   {:.prettyprint}
-
-5. Run the application. The following output displays.
-
+5.Run the application. The following output displays.
 
 
 ![](Show-RDLC-Reports-in-Report-Viewer_images/Show-RDLC-Reports-in-Report-Viewer_img1.png)
 
-
-
+ReportViewer RDLC Sample
+{:.caption} 

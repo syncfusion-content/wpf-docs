@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | CardView | wpf | Syncfusion
 description: overview
 platform: wpf
 control: CardView
@@ -19,6 +19,3 @@ Features of the CardView control are as follows:
 * CanGroup: Allows Grouping between the CardViewItems
 * CanSort: Allows Sorting between the CardViewItems
 * ShowHeader: Shows or hides the CardView Header panel
-
-
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-MDIBounds
+title: Setting MDIBounds| DocumentContainer | Wpf | Syncfusion
 description: setting mdibounds
 platform: wpf
 control: DocumentContainer

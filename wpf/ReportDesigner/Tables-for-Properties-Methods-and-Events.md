@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tables-for-Properties-Methods-and-Events
+title: Tables for Properties Methods and Events | ReportDesigner | wpf | Syncfusion
 description: tables for properties, methods, and events
 platform: wpf
 control: Report Designer
@@ -9,9 +9,8 @@ documentation: ug
 
 # Tables for Properties, Methods, and Events
 
-##Properties
+## Properties
 
-Properties
 
 <table>
 <tr>
@@ -88,14 +87,15 @@ Dependency Property</td><td>
 ReportServerFormsCredential</td></tr>
 </table>
 
+
 ## Methods
 
-Methods
+
 
 <table>
 <tr>
 <th>
-Methods            </th><th>
+Methods </th><th>
 Description </th><th>
 Parameters </th><th>
 Return Type </th></tr>
@@ -103,11 +103,11 @@ Return Type </th></tr>
 <td>
 NewReport</td><td>
 Opens a new blank report. </td><td>
--</td><td>
+- </td><td>
 Void</td></tr>
 <tr>
 <td>
-OpenReport                 </td><td>
+OpenReport </td><td>
 Opens the RDL report from the file location.</td><td>
 ReportPath</td><td>
 Void</td></tr>
@@ -115,19 +115,23 @@ Void</td></tr>
 <td>
 SaveReportDialogue</td><td>
 Saves the report.</td><td>
--</td><td>
+- </td><td>
 Void</td></tr>
 <tr>
 <td>
 SaveAsReportDialogue</td><td>
 Makes a RDL report  to save in the corresponding location.</td><td>
--</td><td>
+- </td><td>
 Void</td></tr>
 </table>
 
+
+
+
+
 ## Events
 
-Events 
+
 
 <table>
 <tr>
