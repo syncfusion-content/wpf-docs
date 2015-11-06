@@ -22,27 +22,27 @@ To apply predefined themes, we need to choose the needed themes from Themes List
 
 The following list of predefined themes are currently provided in theme studio,
 
-•	Metro
+*   Metro
 
-•	Blend
+*   Blend
 
-•	Office2010Blue
+*	Office2010Blue
 
-•	Office2010Black
+*	Office2010Black
 
-•	Office2010Silver
+*	Office2010Silver
 
-•	Office2013White
+*	Office2013White
 
-•	Office2013LightGray
+*	Office2013LightGray
 
-•	Office2013DarkGray
+*	Office2013DarkGray
 
-•	VisualStudio2013
+*	VisualStudio2013
 
-•	Lime
+*	Lime
 
-•	Saffron
+*	Saffron
 
 ![](ThemeStudio_images/ThemeStudio_img2.png)
 
@@ -84,16 +84,16 @@ Color Palette
 {:.caption}
 
 
-•	`Solid Color Palettes`: Provides set of color palettes with 8 variants.
+*	`Solid Color Palettes`: Provides set of color palettes with 8 variants.
 
-•	`Advance Option`: To choose wide range of colors, click Advance button option.
+*	`Advance Option`: To choose wide range of colors, click Advance button option.
 
 ![](ThemeStudio_images/ThemeStudio_img12.png)
 
 Advance Color Picker 
 {:.caption}
 
-•   `Gradient Check Box`: To choose gradient colors, select the “Gradient” check box to display a popup with 24 gradient palettes.
+*   `Gradient Check Box`: To choose gradient colors, select the “Gradient” check box to display a popup with 24 gradient palettes.
 
 ![](ThemeStudio_images/ThemeStudio_img13.png)
 
@@ -108,20 +108,20 @@ To [export](#exporting-custom-theme-from-theme-studio) the customized skin, clic
 
 ### Adding the xaml files to WPF Application
 
-•	Open Visual Studio 20xx and create a WPF project.
+*	Open Visual Studio 20xx and create a WPF project.
 
-•	Add the necessary dlls for the controls used.
+*	Add the necessary dlls for the controls used.
 
 For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` dll and dependency dll `Syncfusion.SfShared.WPF`.
 
-•	The exported xaml file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
+*	The exported xaml file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
 
-•	From the Output folder, browse the `Syncfusion Controls` folder and add the required xaml file to the project.
+*	From the Output folder, browse the `Syncfusion Controls` folder and add the required xaml file to the project.
 
 ![](ThemeStudio_images/ThemeStudio_img14.png)
 
 
-•	Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
+*	Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
 
 {% highlight xml %}
 
@@ -139,7 +139,7 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 {% endhighlight %}
 
-•	Merge the `SfRadialMenu.xaml` in the application resources using `MergedDictionaries`.
+*	Merge the `SfRadialMenu.xaml` in the application resources using `MergedDictionaries`.
 
 {% highlight xml %}
 
@@ -153,7 +153,7 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 {% endhighlight %}
 
-•	Run the sample and the below output will be obtained:
+*	Run the sample and the below output will be obtained:
 
 ![](ThemeStudio_images/ThemeStudio_img15.png)
 
@@ -173,9 +173,9 @@ N> To obtain the customized themes for multiple controls in a single xaml file, 
 
 The color values for customized theme will be saved in `*.wpft` format file. Along with `*.wpft` file, two folders `Framework Controls` and `Syncfusion Controls` are also generated.
 
-•   `Framework Controls`: This folder contains the resource dictionary xaml files of framework controls.
+*   `Framework Controls`: This folder contains the resource dictionary xaml files of framework controls.
 
-•	`Syncfusion Controls`: This folder contains the resource dictionary xaml files of selected syncfusion controls.
+*	`Syncfusion Controls`: This folder contains the resource dictionary xaml files of selected syncfusion controls.
 
 ![](ThemeStudio_images/ThemeStudio_img17.png)
 
