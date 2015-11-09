@@ -1,16 +1,15 @@
 ---
 layout: post
-title: RibbonRadioButton | Ribbon | WPF | Syncfusion
-description: RibbonRadioButton
+title: RibbonRadioButton for Syncfusion's Ribbon control for WPF
+description: RibbonRadioButton for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # RibbonRadioButton
 
-RibbonRadioButton control is used to select options among a group in Ribbon instance. 
+RibbonRadioButton control is used to select a option like normal RadioButton . 
 
-The following code example illustrates how to use RibbonRadioButton control in Ribbon instance.
 
 {% tabs %}
 
@@ -46,7 +45,7 @@ The following code example illustrates how to use RibbonRadioButton control in R
 
 {% endtabs %}
 
-Create instance of RibbonRadioButton and add it to RibbonBar Items.
+Create instance of RibbonRadioButton and add it to RibbonBar through code behind.
 
 {% tabs %}
 

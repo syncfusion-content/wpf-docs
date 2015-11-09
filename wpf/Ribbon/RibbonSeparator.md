@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Ribbon Separator | Ribbon | WPF | Syncfusion
-description: Ribbon Separator	
+title: Ribbon Separator for Syncfusion's Ribbon control for WPF
+description: Ribbon Separator for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # Ribbon Separator	
 
-`RibbonSeperator` used to separate the similar set of Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
+`RibbonSeperator` used to separate the similar set of Ribbon elements in Ribbon. It can seperate RibbonButtons according to their purpose. 
 
-The following code example illustrates how to set RibbonSeperator in Ribbon instance.
 
 {% tabs %}
 
@@ -48,7 +47,7 @@ The following code example illustrates how to set RibbonSeperator in Ribbon inst
 
 {% endtabs %}
 
-RibbonSeperator instance can be added as item to the group of other items
+RibbonSeperator instance can be added as item to the group of other items through code behind.
 
 {% tabs %}
 

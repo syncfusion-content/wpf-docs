@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonTextBox | Ribbon | WPF | Syncfusion
-description: RibbonTextBox
+title: RibbonTextBox for Syncfusion's Ribbon control for WPF
+description: RibbonTextBox for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,7 +10,6 @@ documentation: ug
 
 `RibbonTextBox` control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
 
-The following code example illustrates how to use RibbonTextBox control in Ribbon instance.
 
 {% tabs %}
 
@@ -42,7 +41,7 @@ The following code example illustrates how to use RibbonTextBox control in Ribbo
 
 {% endtabs %}
 
-Create instance of RibbonTextBox and add it to RibbonBar Items.
+Create instance of RibbonTextBox and add it to RibbonBar through code behind.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonStatusBar | Ribbon | WPF | Syncfusion
-description: RibbonStatusBar
+title: RibbonStatusBar for Syncfusion's Ribbon control for WPF
+description: RibbonStatusBar for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,7 +10,6 @@ documentation: ug
 
 `RibbonStatusBar` control is added to RibbonWindow to display the current status of the application or document similar in Microsoft Office.
 
-The following code example illustrates how to use RibbonStatusBar control in RibbonWindow.
 
 {% tabs %}
 
@@ -42,7 +41,7 @@ The following code example illustrates how to use RibbonStatusBar control in Rib
 
 {% endtabs %}
 
-Create instance of StatusBar and assign it to RibbonStatusBar property of RibbonWindow.
+Create instance of StatusBar and assign it to RibbonStatusBar property of RibbonWindow through code behind.
 
 {% tabs %}
 

@@ -1,18 +1,15 @@
 ---
 layout: post
-title: SimpleMenuButton | Ribbon | WPF | Syncfusion
-description: SimpleMenuButton
+title: SimpleMenuButton for Syncfusion's Ribbon control for WPF
+description: SimpleMenuButton for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # SimpleMenuButton
 
-The difference between `SimpleMenuButton` and the other menu button is that it cannot have a sub menu. This control when added outside the ribbon instance will not have the desired appearance.
+The difference between `SimpleMenuButton` and the other menu button is that it cannot have a sub menu. And it can be used with ApplicationMenu. 
 
-SimpleMenuButton can be used with ApplicationMenu. 
-
-The following code example illustrates How to use SimpleMenuButton control in Ribbon instance.
 
 {% tabs %}
 
@@ -46,7 +43,7 @@ The following code example illustrates How to use SimpleMenuButton control in Ri
 
 {% endtabs %}
 
-Create instance of SimpleMenuButton and add it to ApplicationMenu Items.
+Create instance of SimpleMenuButton and add it to ApplicationMenu Items through code behind.
 
 {% tabs %}
 

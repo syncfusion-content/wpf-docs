@@ -44,7 +44,7 @@ The following code example illustrates how to use `RibbonCheckBox` control in Ri
 
 {% endtabs %}
 
-Create instance of RibbonCheckBox and add it to RibbonBar Items.
+Create instance of RibbonCheckBox and add it to RibbonBar through code behind.
 
 {% tabs %}
 
