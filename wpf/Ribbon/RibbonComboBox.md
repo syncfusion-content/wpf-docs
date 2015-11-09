@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonComboBox | Ribbon | WPF | Syncfusion
-description: RibbonComboBox
+title: RibbonComboBox and its items for Syncfusion's Ribbon control for WPF
+description: RibbonComboBox and its items for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,9 +10,10 @@ documentation: ug
 
 RibbonComboBox control is used to display the list of items, as ComboBox.
 
-### Creating control in XAML
+## Add ComboBoxItems
 
-`RibbonComboBox` can added directly to RibbonBar element.
+ComboBoxItems are the items with `Header` property that is used to set header.
+
 
 {% tabs %}
 
@@ -70,9 +71,7 @@ RibbonComboBox control is used to display the list of items, as ComboBox.
 
 {% endtabs %}
 
-### Creating control in code behind			
-
-Create instance for `RibbonComboBox` and add it to RibbonBar Items.
+Create instance for `RibbonComboBox` and add it to RibbonBar Items in Code behind
 
 {% tabs %}
 

@@ -876,7 +876,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 QuickAccessToolbar (QAT) is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. Also it can be placed above or below the ribbon.
 
-T
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -1183,7 +1183,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 ![](GettingStarted_images/GettingStarted_img10.jpeg)
 
 
-## Adding BackStage
+## Add BackStage
 
 BackStage can be added by using `BackStage` property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
 

@@ -1,18 +1,20 @@
 ---
 layout: post
-title: SplitButton | Ribbon | WPF | Syncfusion
-description: SplitButton
+title: SplitButton for Syncfusion's Ribbon control for WPF
+description: SplitButton for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # SplitButton
 
-SplitButton will act as both normal Button as well as DropDownButton. It allow to click the button directly by clicking the upper part of the button and also it display list of items while press the below part of the button.
+SplitButton can perform like both normal Button as well as DropDownButton. It allow to click the button directly by clicking the upper part of the button and also it display list of items while click on the arrow.
 
-## Adding Item to the control
 
-DropDownMeuItem can be added as items to SplitButton.
+## Add DropDownMenuItem
+
+DropDownMenuItem are the items with `Header` property that is used to set header.
+
 
 {% tabs %}
 
@@ -56,7 +58,7 @@ DropDownMeuItem can be added as items to SplitButton.
 
 {% endtabs %}
 
-You can add Items to SplitButton by create instance of `DropDownMenuItem` and add it to SplitButton.
+Create instance of `DropDownMenuItem` and add it to SplitButton in code behind.
 
 {% tabs %}
 
@@ -97,11 +99,10 @@ _RibbonBar2.Items.Add(_splitbutton)
 ![](SplitButton_images/SplitButton_img1.jpeg)
 
 
-## Three types of SizeForm
+## Set various sizes for DropDownButton
 
-SplitButton have three types of size forms. You can set size forms using `SizeForm` Property.
+SplitButton have three types of size forms. You can set size forms using its `SizeForm` Property.
 
-The following code example illustrates different size forms of SplitButton in Ribbon instance.
 
 {% tabs %}
 

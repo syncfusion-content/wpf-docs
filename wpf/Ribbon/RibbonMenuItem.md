@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonMenuItem | Ribbon | WPF | Syncfusion
-description: RibbonMenuItem
+title: RibbonMenuItem for Syncfusion's Ribbon control for WPF
+description: RibbonMenuItem for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,7 +10,6 @@ documentation: ug
 
 `RibbonMenuItem` used as entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 
-The following code example illustrates how to use RibbonMenuItem control in Ribbon instance.
 
 {% tabs %}
 
@@ -34,7 +33,7 @@ The following code example illustrates how to use RibbonMenuItem control in Ribb
 
 {% endtabs %}
 
-Create instance of RibbonMenuItem and add it to RibbonBar Items.
+Create instance of RibbonMenuItem and add it to RibbonBar through code behind.
 
 {% tabs %}
 

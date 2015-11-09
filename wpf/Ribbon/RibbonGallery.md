@@ -1,25 +1,19 @@
 ---
 layout: post
-title: RibbonGallery | Ribbon | WPF | Syncfusion
-description: ribbongallery
+title: RibbonGallery and its items for Syncfusion's Ribbon control for WPF
+description: RibbonGallery and its items for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # RibbonGallery
 
-RibbonGallery provides you rich UI to display the items. 
+RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 
-## Visual Mode
 
-RibbonGallery has two type of visual modes. Visual Mode of RibbonGallery is set by `VisualMode` property
+## Ribbon Mode
 
-* InRibbon mode - It gets displayed as a normal gallery control in the ribbon.
-* DropDown mode - RibbonGallery control is displayed like a DropDown control
-
-The following code example illustrates how to set VisualMode for RibbonGallery control in Ribbon instance.
-
-### Ribbon mode
+To display items as a normal gallery control in the ribbon, set `VisualMode` property as `InRibbon mode`
 
 {% tabs %}
 
@@ -34,7 +28,9 @@ The following code example illustrates how to set VisualMode for RibbonGallery c
 ![](RibbonGallery_images/RibbonGallery_img1.jpeg)
 
 
-### DropDown Mode
+## DropDown Mode
+
+To display items as DropDown in the ribbon, set `VisualMode` property as `DropDown mode`
 
 {% tabs %}
 
@@ -49,11 +45,10 @@ The following code example illustrates how to set VisualMode for RibbonGallery c
 ![](RibbonGallery_images/RibbonGallery_img2.jpeg)
 
 
-## Ribbon Gallery item
+## Ribbon Gallery Item
 
-The following code example illustrates how to add RibbonGalleryItem to RibbonGallery control in Ribbon instance.
+Ribbon control provies `RibbonGalleryItem` that add as items in RibbonGallery.
 
-You can add items in RibbonGallery by using RibbonGalleryItem element inside the RibbonGallery.
 
 {% tabs %}
 
@@ -93,7 +88,7 @@ You can add items in RibbonGallery by using RibbonGalleryItem element inside the
 
 {% endtabs %}
 
-You can add items in RibbonGallery by creating instance of RibbonGalleryItem and add it to RibbonGallery Items.
+Add RibbonGalleryItem in code behind.
 
 {% tabs %}
 
@@ -134,15 +129,14 @@ _ribbonGallery.Items.Add(_ribbonGalleryItem2)
 ![](RibbonGallery_images/RibbonGallery_img3.jpeg)
 
 
-## Ribbon Gallery group
+## Ribbon Gallery Group
 
 Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grouped in the Ribbon Gallery control based on some classifications.
 
-###Gallery filter
+### Gallery Filter
 
-GalleryGroupFilters are used to view parlicular group. FilterIndexes property is used to specify the indexes of the filters.
+`GalleryGroupFilters` are used to view parlicular group. The `FilterIndexes` property is used to specify the indexes of the filters.
 
-The following code example illustrates how to use GalleryGroup and GalleryFilters property of RibbonGallery control in Ribbon instance.
 
 {% tabs %}
 
@@ -219,11 +213,10 @@ The following code example illustrates how to use GalleryGroup and GalleryFilter
 ![](RibbonGallery_images/RibbonGallery_img4.jpeg)
 
 
-## Adding custom menu items
+## Add Custom Menu Items
 
-In the expanded Gallery items (in both the Visual Mode), can add custom menu items to the bottom of the Ribbon Gallery control, using the MenuItem property of RibbonGallery.
+In the expanded Gallery items (in both the Visual Mode), can add custom menu items to the bottom of the Ribbon Gallery control, using the `MenuItem` property of RibbonGallery.
 
-The following code example illustrates how to add custom menu items to RibbonGallery control in Ribbon instance.
 
 {% tabs %}
 
@@ -273,7 +266,7 @@ The following code example illustrates how to add custom menu items to RibbonGal
 
 {% endtabs %}
 
-Custom Menu items of RibbonGallery added by creating instance of RibbonButton and add it to MenuItems property of RibbonGallery. You can use SplitButton or MenuButton instead of RibbonButton.
+Custom Menu items of RibbonGallery added by creating instance of RibbonButton and add it to MenuItems property of RibbonGallery in code behind. SplitButton or MenuButton can also added instead of RibbonButton.
 
 {% tabs %}
 

@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Ribbon TabPanelItem | Ribbon | WPF | Syncfusion
-description: Ribbon TabPanelItem
+title: Ribbon TabPanelItem for Syncfusion's Ribbon control for WPF
+description: Ribbon TabPanelItem for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # Ribbon TabPanelItem
 
-`RibbonTabPannelItem` can set in Ribbon to located below the close button of RibbonWindow.
+`RibbonTabPannelItem` can set in Ribbon to located below the close button of RibbonWindow. Using that we can place desire items like emoticons.
 
-The following code example illustrates how to use RibbonTabPannelItem control in Ribbon instance.
 
 {% tabs %}
 
@@ -40,7 +39,7 @@ The following code example illustrates how to use RibbonTabPannelItem control in
 
 {% endtabs %}
 
-Create instance of RibbonButton and assign it to TabPanelItem property of Ribbon.
+Create instance of RibbonButton and assign it to TabPanelItem property of Ribbon through code behind.
 
 {% tabs %}
 
