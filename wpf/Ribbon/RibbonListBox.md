@@ -1,16 +1,15 @@
 ---
 layout: post
-title: RibbonListBox | Ribbon | WPF | Syncfusion
-description: RibbonListBox
+title: RibbonListBox and its items for Syncfusion's Ribbon control for WPF
+description: RibbonListBox and its items for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # RibbonListBox
 
-`RibbonListBox` control is used to display a list of items in a Ribbon instance. It accepts any type of content as RibbonListBox items.
+`RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items but `ListBoxItem` by default.
 
-The following code example illustrates how to use RibbonListBox control in Ribbon instance.
 
 {% tabs %}
 
@@ -52,7 +51,7 @@ The following code example illustrates how to use RibbonListBox control in Ribbo
 
 {% endtabs %}
 
-Create instance of RibbonListBox and add it to RibbonBar Items.
+Create instance of RibbonListBox and add it to RibbonBar through code behind.
 
 {% tabs %}
 
