@@ -511,18 +511,18 @@ Public Class ImageConverter
 ## Practice with PRISM
 
 
-Ribbon control provides PRISM support. The following steps will help to create sample project in the PRISM.
+Ribbon control provides PRISM support. The following steps explin about creating simple sample project in the PRISM.
 
-	 1. Create new WPF project and add the following references to the solution project.
+1.Create new WPF project and add the following references to the solution project.
 		
-		Microsoft.Practices.Composite.dll
-		Microsoft.Practices.Composite.Presentation.dll
-		Microsoft.Practices.Composite.UnityExtensions.dll
-		Microsoft.Practices.ServiceLocation.dll
-		Microsoft.Praactices.Unity.dll
+   Microsoft.Practices.Composite.dll
+   Microsoft.Practices.Composite.Presentation.dll
+   Microsoft.Practices.Composite.UnityExtensions.dll
+   Microsoft.Practices.ServiceLocation.dll
+   Microsoft.Praactices.Unity.dll
 
-	 2. Rename MainWindow to Shell in the Project	 
-	 3. Add new class called Bootstrapper.cs to initialize the prism application.
+2.Rename MainWindow to Shell in the Project	 
+3.Add new class called Bootstrapper.cs to initialize the prism application.
 	
 {% tabs %}
 	
@@ -548,24 +548,24 @@ Ribbon control provides PRISM support. The following steps will help to create s
 
 {% highlight VB %}
 
-	Friend Class Bootstrapper
-    Inherits UnityBootstrapper
+Friend Class Bootstrapper
+Inherits UnityBootstrapper
 
-    Protected Overrides Function CreateShell() As DependencyObject
-        
-		Dim shell As New Shell()
-        shell.Show()
-        Return shell
-		
-    End Function
+Protected Overrides Function CreateShell() As DependencyObject
+    
+    Dim shell As New Shell()
+    shell.Show()
+    Return shell
+    
+End Function
 
-    Protected Overrides Function GetModuleCatalog() As IModuleCatalog
-        
-		Dim catalog As New ModuleCatalog()
-        catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
-        Return catalog
-		
-    End Function
+Protected Overrides Function GetModuleCatalog() As IModuleCatalog
+    
+    Dim catalog As New ModuleCatalog()
+    catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
+    Return catalog
+    
+End Function
 
 End Class
 
@@ -573,13 +573,13 @@ End Class
 
 {% endtabs %}
 
-	 4. Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
+4.Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 	 
 {% tabs %}
 
 {% highlight C# %}
 
-	public partial class App : Application
+    public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
         {
@@ -609,7 +609,7 @@ End Class
 
 {% endtabs %}
 
-	 5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
+5.Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
 
 		{% tabs %}
 
@@ -650,25 +650,25 @@ End Class
 
 	{% endtabs %}
 
-	 6. Adding Module to the project
+6.Adding Module to the project
 	 
-	 Right click the Solution project, point to “Add” and then click “NewProject”. The new Window called AddNewProject gets open. Select “ClassLibrary” from Visual C# then rename the project with desired name and click Ok. Now a new Module will be created in the Solution Project.
+Right click the Solution project, point to “Add” and then click “NewProject”. The new Window called AddNewProject gets open. Select “ClassLibrary” from Visual C# then rename the project with desired name and click Ok. Now a new Module will be created in the Solution Project.
 
-	 Now add following assemblies to the Module project
+ Now add following assemblies to the Module project
 
-		* PresentationCore.dll
-		* PresentationFramework.dll
-		* WindowsBase.dll
+    * PresentationCore.dll
+    * PresentationFramework.dll
+    * WindowsBase.dll
 
-	Also add following Prism assemblies
+   Also add following Prism assemblies
 
-		* Microsoft.Practices.Composite.dll
-		* Microsoft.Practices.Composite.Presentation.dll
-		* Microsoft.Practices.Composite.UnityExtensions.dll
-		* Microsoft.Practices.ServiceLocation.dll
-		* Microsoft.Praactices.Unity.dll
+    * Microsoft.Practices.Composite.dll
+    * Microsoft.Practices.Composite.Presentation.dll
+    * Microsoft.Practices.Composite.UnityExtensions.dll
+    * Microsoft.Practices.ServiceLocation.dll
+    * Microsoft.Praactices.Unity.dll
 
-	 7. In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
+7.In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 
 {% tabs %}
 
@@ -719,7 +719,7 @@ End Class
 
 {% endtabs %}
 
-	8. Adding Views to the Module
+8.Adding Views to the Module
 
 {% tabs %}
 
@@ -885,9 +885,9 @@ End Class
 
 {% endtabs %}
 
-	9. Add a region to the shell
+9.Add a region to the shell
 
-	After creating View for the Module, register the view as Module using the below code.
+After creating View for the Module, register the view as Module using the below code.
 
 {% tabs %}
 
@@ -933,6 +933,6 @@ End Class
 
 {% endtabs %}
 
-	Now run the project. RibbonTabModule will get added as one of the Module in the Shell. Similarly you can add the any number of Modules based on the complexity of the project.
+Now run the project. RibbonTabModule will get added as one of the Module in the Shell. Similarly you can add the any number of Modules based on the complexity of the project.
 
 ![](PatternsandPractices_images/PatternsandPractices_img2.jpeg)
