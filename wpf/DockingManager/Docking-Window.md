@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docking window | DockingManager | WPF | Syncfusion
+title: Dock Window of Syncfusion's DockingManager control for WPF
 description: Docking Window
 platform: wpf
 control: DockingManager

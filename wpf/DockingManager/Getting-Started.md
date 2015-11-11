@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | DockingManager | WPF | Syncfusion
-description: Getting Started for DockingManager
+title: Getting Started with Syncfusion's DockingManager control for WPF
+description: A quick tour to initial users on Syncfusion's DockingManager control for WPF
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -33,6 +33,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 {% endhighlight %}
 
 * Now add the DockingManager control with a required optimal name by using the included namespace.
+
 {% highlight xml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" />
@@ -46,6 +47,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 DockingManager can accept any control as its children. Here five content controls are added as the children that is displayed with different sides and states of the DockingManager.
 
 {% highlight xml %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager">
 
 <ContentControl x:Name="SolutionExplorer"/>
@@ -72,6 +74,7 @@ DockingManager can accept any control as its children. Here five content control
 DockingManger provides with an attached property `Header` that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
 
 {% highlight xml %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager" >
 
 <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer" />
