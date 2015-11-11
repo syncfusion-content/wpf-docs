@@ -134,6 +134,8 @@ Microsoft.Practices.Unity.dll
 
 Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShell method.
 
+{% tabs %}
+
 {% highlight c# %}
 
 public class BootStrapper : UnityBootstrapper
@@ -168,7 +170,41 @@ App.Current.MainWindow.Show();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class BootStrapper
+	Inherits UnityBootstrapper
+
+Protected Overrides Function CreateShell() As System.Windows.DependencyObject
+
+
+Return New MainWindow()
+
+End Function
+
+Protected Overrides Sub InitializeModules()
+
+
+MyBase.InitializeModules()
+
+App.Current.MainWindow = CType(Me.Shell, Window)
+
+App.Current.MainWindow.Show()
+
+End Sub
+
+End Class 
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 4.Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
+
+{% tabs %}
+
 {% highlight c# %}
 
 public partial class App : Application
@@ -189,11 +225,31 @@ bootstrapper.Run();
 
 }
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+Partial Public Class App
+	Inherits Application
 
 
+Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
 
+
+MyBase.OnStartup(e)
+
+Dim bootstrapper As New Bootstrapper()
+
+bootstrapper.Run()
+
+End Sub
+
+End Class 
 
 {% endhighlight %}
+
+{% endtabs %}
+
 
 5.Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
 {% highlight xml %}
@@ -257,6 +313,7 @@ Also add the following Prism assemblies:
 
 7.In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -275,6 +332,24 @@ moduleCatalog.AddModule(typeof(DockingModule));
 
 
 {% endhighlight %}
+
+
+{% highlight VB %}
+
+Protected Overrides Sub ConfigureModuleCatalog()
+
+
+MyBase.ConfigureModuleCatalog()
+
+Dim moduleCatalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
+
+moduleCatalog.AddModule(GetType(DockingModule))
+
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 8.Adding Views to the Module, shown here is bottomleftmodule, similary the view for the module can be added according to number of modules.
 
@@ -301,6 +376,8 @@ moduleCatalog.AddModule(typeof(DockingModule));
 9.Add a region to the shell.
 
 After creating View for the Module, register the view as Module using the following code example.
+
+{% tabs %}
 
 {% highlight c# %}
 public class DockingModule : IModule
@@ -334,6 +411,38 @@ regionManager.RegisterViewWithRegion("MainRegion", typeof(TopModule));
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Public Class DockingModule
+	Implements IModule
+
+
+Private ReadOnly regionManager As IRegionManager
+
+Public Sub New(ByVal regionManager As IRegionManager)
+
+
+Me.regionManager = regionManager
+
+End Sub
+
+Public Sub Initialize()
+
+
+regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomLeftModule))
+
+regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomRightModule))
+
+regionManager.RegisterViewWithRegion("MainRegion", GetType(TopModule))
+
+End Sub
+
+End Class 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Then when you run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
