@@ -139,7 +139,7 @@ This method has two overloaded methods for customizing the Save state process as
 2. void SaveRibbonState(IsolatedStorageFile isoStorage, string storeFileName)
 
 
-In the first method, there are no parameters. It will save the current state of the Ribbon Control to the default Isolated Storage file, which is built in the source.
+In the first method, there is no parameters. Current state of the Ribbon Control is saved to the default Isolated Storage file, which is built in the source.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ Load state process is also having the similar procedures of save states. We can 
 
 2. void LoadRibbonState(IsolatedStorageFile isoStorage, string storeFileName)
 
-The first method with no arguments will load the Ribbon State from the last saved state in the default Isolated Storage file, which is stored by the SaveRibbonState method.
+The first method with no arguments loads the Ribbon State from the last saved state in the default Isolated Storage file, which is stored by the SaveRibbonState method.
 
 {% tabs %}
 
@@ -235,7 +235,7 @@ End Sub
 
 {% endtabs %}
 
-The second overloaded method will load the Ribbon State from the given file name in the mentioned Isolated Storage file.
+The second overloaded method loads the Ribbon State from the given file name in the mentioned Isolated Storage file.
 
 {% tabs %}
 
@@ -555,7 +555,7 @@ End Sub
 
 ## Reset Ribbon States
 
-To load the Normal (Initial) Ribbon state at runtime call the ResetRibbonState method.This is a parameter less method. This will load the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
+To load the Normal (Initial) Ribbon state at runtime call the ResetRibbonState method.This is a parameter less method. This loads the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
 
 {% tabs %}
 
@@ -591,7 +591,7 @@ To delete the unused saved Isolated Storage files, use the DeleteRibbonState met
 * DeleteRibbonState()
 * DeleteRibbonState(IsolatedStorageFile isoStorage, string deletefileName)
 
-The first overloaded method will delete the default saved file from the default Isolated Storage file location. The following code snippet shows how to delete the default saved file.
+The first overloaded method is used to delete the default saved file from the default Isolated Storage file location. The following code snippet shows how to delete the default saved file.
 
 {% tabs %}
 
