@@ -115,17 +115,22 @@ The float window provides Maximization support for better usability and it is on
 The FloatWindow can be placed at any desired location. To position the FloatWindow at the desired location with the required Rect Bounds, call `SetFloatingWindowRect` method of the DockingManager.
 
 
+{% tabs %}
 
 {% highlight c# %}
 
 DockingManager.SetFloatingWindowRect(Content1,new Rect(200,200,200,200));
 
 
+{% endhighlight %}
 
+{% highlight VB %}
 
+DockingManager.SetFloatingWindowRect(Content1, New Rect(200, 200, 200, 200)) 
 
 {% endhighlight %}
 
+{% endtabs %}
 ![](FloatingWindow_images/FloatingWindow_img5.jpeg)
 
 
