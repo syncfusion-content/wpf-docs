@@ -29,7 +29,7 @@ Here a simple text-reader application is used to demonstrate this approach.
 ### Docking Adapter
 The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <mvvm:dockingadapter itemssource="{Binding Workspaces}" activedocument="{Binding ActiveDocument,Mode=TwoWay}">
 
@@ -67,7 +67,7 @@ Every dock element in the application is a workspace. There are three kinds of w
 
 Since WPF has an implicit template approach, it is easy to apply visuals to the view models. In this application, the data templates are defined in App.xaml with only the DataType attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
 
-{% highlight xml %}
+{% highlight XAML %}
 <application.resources>
 
 <datatemplate datatype="{x:Type local:Document}">
@@ -136,7 +136,7 @@ Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShe
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 public class BootStrapper : UnityBootstrapper
 
@@ -205,7 +205,7 @@ End Class
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 public partial class App : Application
 
@@ -252,7 +252,7 @@ End Class
 
 
 5.Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
-{% highlight xml %}
+{% highlight XAML %}
 
 xmlns:prsm="http://www.codeplex.com/prism"
 
@@ -264,7 +264,7 @@ xmlns:prsm="http://www.codeplex.com/prism"
 
 In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
 
-{% highlight xml %}
+{% highlight XAML %}
 <Window x:Class="DockingManagerPrism.App.MainWindow "
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -315,7 +315,7 @@ Also add the following Prism assemblies:
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 protected override void ConfigureModuleCatalog()
 
@@ -353,7 +353,7 @@ End Sub
 
 8.Adding Views to the Module, shown here is bottomleftmodule, similary the view for the module can be added according to number of modules.
 
-{% highlight xml %}
+{% highlight XAML %}
 <UserControl x:Class="DockingManagerPrism.Modules.BottomLeftModule"
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -379,7 +379,7 @@ After creating View for the Module, register the view as Module using the follow
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 public class DockingModule : IModule
 
 {

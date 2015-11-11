@@ -15,7 +15,7 @@ To change mode for the Document window, set the property `ContainerMode` with it
 
 By default, the document state window is in TDI mode, that display child as tabbed document.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI">        
 
@@ -32,7 +32,7 @@ By default, the document state window is in TDI mode, that display child as tabb
 
 To make the document child window as MDI document, set the `ContainerMode` as `MDI`
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="MDI">        
 
@@ -55,7 +55,7 @@ The state of the MDI Window can be set using the `SetMDIWindowState()` method of
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized);
 
@@ -77,7 +77,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized)
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized);
 
@@ -97,7 +97,7 @@ The state of the MDI window can be detect using the `GetMDIWindowState()` method
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DocumentContainer.GetMDIWindowState(Content1);
 
@@ -117,7 +117,7 @@ Maximized state of the MDI Container can get by `IsInMDIMaximizedState` property
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 (DockingManager1.DocContainer as DocumentContainer).IsInMDIMaximizedState = true;
 
@@ -137,7 +137,7 @@ MDI document window can be able to resize using the navigation arrows. To restri
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 (DockingManager1.DocContainer as DocumentContainer).IsAllowMDIResize = false;
 
@@ -167,7 +167,7 @@ There are five switch modes.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.SwitchMode =SwitchMode.Immediate;
 
@@ -188,7 +188,7 @@ DockingManager1.SwitchMode =SwitchMode.Immediate
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.SwitchMode = SwitchMode.List;
 
@@ -210,7 +210,7 @@ DockingManager1.SwitchMode =SwitchMode.List
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.SwitchMode = SwitchMode.QuickTabs;
 
@@ -232,7 +232,7 @@ DockingManager1.SwitchMode =SwitchMode.QuickTabs
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.SwitchMode = SwitchMode.VistaFlip;
 
@@ -254,7 +254,7 @@ DockingManager1.SwitchMode =SwitchMode.VistaFlip
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.SwitchMode = SwitchMode.VS2005;
 
@@ -307,7 +307,7 @@ End Sub
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 {
@@ -361,7 +361,7 @@ End Sub
 
 To enable or disable closing functionality of the MDI windows, set `CanClose` an attached property of DockingManager with its respective values. By default, its value is `True`
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="MDI"> 
 
@@ -379,7 +379,7 @@ To enable or disable closing functionality of the MDI windows, set `CanClose` an
 
 A document window can be placed at different index position using the `SetTDIIndex()` method of the TDILayoutPanel. 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
 
@@ -414,7 +414,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0)
 
 The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property `IsTDIDragDropEnabled` of DockingManager.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" IsTDIDragDropEnabled="True" >
 
@@ -432,7 +432,7 @@ The TDI document index can be changed by dragging and dropping it like Visual St
 
 Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the document window when two or more documents used in the DockingManager. To collapse the visibility of these menu item, set the property `ShowClose`, `ShowCloseAll` and `ShowCloseAllButThis` as `False`.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <ContentControl syncfusion:DockingManager.Header="Item1"
                 syncfusion:DockingManager.State="Document"
@@ -463,7 +463,7 @@ To create a vertical tab group in the Tabbed document, select the "New Vertical 
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 (DockingManager1.DocContainer as DocumentContainer).CreateVerticalTabGroup(Content1);
 
@@ -483,7 +483,7 @@ To create a horizontal tab group in the Tabbed document, select the "New Horizon
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 (DockingManager1.DocContainer as DocumentContainer).CreateHorizontalTabGroup(Content1);
 
@@ -513,7 +513,7 @@ Vertical and Horizontal Tab Grouping feature can be enabled or disabled using th
  
 To disabling Tab Groups, set TabGroupEnabled as `False`. So it does not display "New Horizontal Tab Group" and "New Vertical Tab Group" context menu items even when ShowHorizontalTabGroupMenuItem is true. Drag and drop support to create new tab group is also restricted.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager TabGroupEnabled="False" />
 
@@ -524,7 +524,7 @@ To disabling Tab Groups, set TabGroupEnabled as `False`. So it does not display 
 
 TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property `IsVs2010DraggingEnabled`. By default, its value is `False`. 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" IsVS2010DraggingEnabled="True">
 
@@ -541,7 +541,7 @@ TDI document of DockingManager can be changed to Float while dragging its TDI he
 
 To enable the functionality of editing the TDI document header when you double click on document header at runtime, set the property `EnableDocumentTabHeaderEdit` of the DockingManager as `True`. By default, its value is `False`.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True">
 
@@ -551,7 +551,7 @@ To enable the functionality of editing the TDI document header when you double c
 
 To hide the TDI document header when a single document child present in a DockingManager set the property `HideTDIHeaderOnSingleChild` as `True`. By default its value is `False`.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" HideTDIHeaderOnSingleChild="True">
 
@@ -570,7 +570,7 @@ In DockingManager, the New button can be added in the Document state windows usi
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DocumentTabControl tab = VisualUtils.FindDescendant(DockingManager1,typeof (DocumentTabControl)) as DocumentTabControl;
 
