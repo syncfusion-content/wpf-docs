@@ -14,6 +14,8 @@ DockingManager provides built-in state persistence functionality to save and loa
 
 To reset the DockingManager state, call `ResetState()` method of DockingManager instance.
 
+{% tabs %}
+
 {% highlight c# %}
 
 DockingManager1.ResetState();
@@ -21,7 +23,19 @@ DockingManager1.ResetState();
 
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+
+DockingManager1.ResetState() 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 To delete the Dockstate of the DockingManager, call `DeleteDockState()` of DockingManager instance
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -29,9 +43,18 @@ DockingManager1.DeleteDockState();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.DeleteDockState()
+
+{% endhighlight %}
+
+{% endtabs %}
 ## Auto Save / Load functionalities
 
 DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the `PersistState` property as `True`. The default value of the `PersistState` property is `False`. It saves the state of the DockingManager in an isolated storage format while WindowClosing. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -39,7 +62,17 @@ DockingManager1.PersistState = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.PersistState = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
 To load the AutoPersiststate of the DockingManager, call the `LoadDockState()` method of the DockingManager in its loaded event.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -49,6 +82,17 @@ void DockingManager1_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub DockingManager1_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	DockingManager1.LoadDockState()
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 # Manipulating Save / Load functionalities
 
@@ -78,6 +122,8 @@ Some of the formats are:
 
 DockingManager allows to save and load the dockstate from isolated storage.  
 
+{% tabs %}
+
 {% highlight c# %}
 
 // Shows the Isolated storage format.
@@ -91,9 +137,26 @@ DockingManager1.ResetState();
 
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+' Shows the Isolated storage format.
+
+DockingManager1.LoadDockState()
+
+DockingManager1.SaveDockState()
+
+DockingManager1.ResetState() 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Save and Load using Xml file 
 
 DockingManager allows to save and load the xml file. It is done using binary formatter and soap formatter. The code example is below:
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -119,9 +182,36 @@ DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\\docking_xml_soap.xm
 {% endhighlight %}
 
 
+
+{% highlight VB %}
+
+'Shows serialization methods using xml file.
+
+Dim formatter As New BinaryFormatter()
+
+DockingManager1.LoadDockState(formatter, StorageFormat.Xml, "\docking_xml.xml")
+
+Dim formatter As New BinaryFormatter()
+
+DockingManager1.SaveDockState(formatter, StorageFormat.Xml, "\docking_xml.xml")
+
+Dim formatter1 As New SoapFormatter()
+
+DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\docking_xml_soap.xml")
+
+Dim formatter1 As New SoapFormatter()
+
+DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\docking_xml_soap.xml")
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Save and Load using Binary
 
 DockingManager allows to load and save the dock state in the binary format file. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -138,9 +228,29 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin")
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+'Shows the load and save dockstate in bindary formatter.
+
+BinaryFormatter format = new BinaryFormatter()
+
+DockingManager1.LoadDockState(format, StorageFormat.Binary, "\docking_bin.bin")
+
+BinaryFormatter format = new BinaryFormatter()
+
+DockingManager1.SaveDockState(format, StorageFormat.Binary, "\docking_bin.bin") 
+ 
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ### Save and Load using Xmlwriter 
 
 DockingManager allows to load and save the dock state using XMLWriter.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -162,3 +272,25 @@ DockingManager.LoadDockState(reader);
 reader.Close();       
 
 {% endhighlight %}
+
+
+{% highlight VB %}
+
+'Shows the SaveDockSte method using xmlwriter.
+
+Dim writer As XmlWriter = XmlWriter.Create("DockStates.xml")
+
+DockingManager.SaveDockState(writer)
+
+writer.Close() XmlReader reader = XmlReader.Create("DockStates.xml")
+'Shows the Loaddockstate method using xmlwriter
+
+DockingManager.LoadDockState(reader)
+
+reader.Close() 
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+
