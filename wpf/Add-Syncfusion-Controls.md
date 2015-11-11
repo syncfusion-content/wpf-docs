@@ -33,7 +33,9 @@ The following steps helps to add a required Essential WPF Control throughÂ XAMLÂ
   
  2.Include an xml namespace for the above assemblies to the Main window.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Window
 
@@ -46,14 +48,19 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
  3.Now, Add the Docking Manager control with a required optimal name, using the included namespace.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" />
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## Through C# / VB
 

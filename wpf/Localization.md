@@ -54,12 +54,30 @@ N> The default resource file for applicable assemblies can be downloaded from th
 
 Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file.
 
-{%highlight c#%}
+{% tabs %}
 
-public MainWindow() 
-{     
-	InitializeComponent();  
-   	System.Threading.Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("fr-FR");   
+{%highlight C#%}
+
+public partial class MainWindow
+{
+public MainWindow() 
+{     
+	InitializeComponent();  
+   	System.Threading.Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("fr-FR");   
 }
+} 
  
 {%endhighlight%}
+
+{% highlight VB %}
+
+Partial Public Class MainWindow
+Public Sub New()
+	InitializeComponent()
+	   System.Threading.Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("fr-FR")
+End Sub
+End Class
+
+{%endhighlight%}
+
+{% endtabs %}
