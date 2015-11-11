@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Syncfusion Controls | WPF | Syncfusion
+title: Steps to add Syncfusion Essential WPF controls
 description: common supports
 platform: wpf
 control: Add Syncfusion Controls

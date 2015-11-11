@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-Hide Window | DockingManager | WPF | Syncfusion
+title: AutoHide Window of Syncfusion's DockingManager control for WPF
 description: Auto-Hide Window
 platform: wpf
 control: DockingManager

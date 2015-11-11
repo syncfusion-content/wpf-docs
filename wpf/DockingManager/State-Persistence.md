@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence | DockingManager | WPF | Syncfusion
+title: Serialization and De-Serialization of Syncfusion's DockingManager control for WPF
 description: State Persistence
 platform: wpf
 control: DockingManager

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Featured Samples | WPF | Syncfusion
+title: Guidance to run the online and offline samples
 description: common supports
 platform: wpf
 control: Featured Samples

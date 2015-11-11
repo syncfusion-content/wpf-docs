@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Windows | DockingManager | WPF | Syncfusion
+title: Dealing with Windows of Syncfusion's DockingManager control for WPF
 description: Dealing with Windows
 platform: wpf
 control: DockingManager
