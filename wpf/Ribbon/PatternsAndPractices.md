@@ -652,7 +652,7 @@ End Class
 
 6.Adding Module to the project
 	 
-Right click the Solution project, point to “Add” and then click “NewProject”. The new Window called AddNewProject gets open. Select “ClassLibrary” from Visual C# then rename the project with desired name and click Ok. Now a new Module will be created in the Solution Project.
+Right click the Solution project, point to “Add” and then click “NewProject”. The new Window called AddNewProject gets open. Select “ClassLibrary” from Visual C# then rename the project with desired name and click Ok. Now a new Module has been created in the Solution Project.
 
  Now add following assemblies to the Module project
 
@@ -933,6 +933,6 @@ After creating View for the Module, register the view as Module using the below 
 
 {% endtabs %}
 
-Now run the project. RibbonTabModule will get added as one of the Module in the Shell. Similarly you can add the any number of Modules based on the complexity of the project.
+Now run the project. RibbonTabModule get added as one of the Module in the Shell. Similarly you can add the any number of Modules based on the complexity of the project.
 
 ![](PatternsandPractices_images/PatternsandPractices_img2.jpeg)

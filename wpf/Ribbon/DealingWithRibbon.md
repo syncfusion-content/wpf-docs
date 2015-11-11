@@ -13,7 +13,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 ## Three types of RibbonState
 
 
-`Normal` – Ribbon control will be in Normal State. This is the default state 
+**Normal** – Ribbon control displays the RibbonTab content and the window content is arranged below the Ribbon. This is the default state
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
 
-`Hide` -Ribbon control will move to the Hidden State
+**Hide** - RibbonTab content gets hidden in this state
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 ![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img2.jpeg)
 
 
-`Adorner` **–**In this state,ribbon will adorned above the content
+**Adorner** – In this state, RibbonTab content adorned above the window content
 
 {% tabs %}
 
@@ -206,12 +206,12 @@ _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
 
 # Grouping RibbonTabs using ContextTabGroups
 
-ContextualTabGroups are used to group the RibbonTabs for easy Navigation. This ContextTabGroups will appear when a user enable their context. 
+ContextualTabGroups are used to group the RibbonTabs for easy Navigation. This ContextTabGroups appear when a user enable their context. 
 
 ## Creating ContextTabGroup 
 
 
-This ContextTabGroup can also be kept hidden and shown while required cases like in Word Document’s TABLETOOLS ContextTabGroups which will get displayed automatically, while selecting the table.  The following code snippet used to create a ContextTabGroup
+This ContextTabGroup can also be kept hidden and shown while required cases like in Word Document’s TABLETOOLS ContextTabGroups which gets displayed automatically, while selecting the table.  The following code snippet used to create a ContextTabGroup
 
 {% tabs %}
  
@@ -362,7 +362,7 @@ End Sub
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img4.jpeg)
 
 
-After the Button is clicked, the ContextTabGroup visibility will change as follows
+After the Button is clicked, the ContextTabGroup visibility changes as follows
 
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img5.jpeg)
 
