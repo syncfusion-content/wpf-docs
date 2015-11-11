@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies | Wpf | Syncfusion
+title: Control Dependencies and Dependency assembly details for Syncfusion Essential WPF controls
 description: Control Dependencies for WPF
 platform: wpf
 control: Control Dependencies
