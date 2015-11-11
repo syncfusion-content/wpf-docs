@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence | Ribbon | WPF | Syncfusion
-description: State Persistence
+title: State Persistence support in Syncfusion Ribbon control
+description: State Persistence support in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

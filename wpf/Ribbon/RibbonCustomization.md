@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ribbon Customization | Ribbon | WPF | Syncfusion 
-description: Customize Ribbon through RibbonContextMenu
+title: Ribbon Customization in Syncfusion Ribbon control
+description: Customize Ribbon through RibbonContextMenu and Customise window
 platform: wpf
 control: Ribbon
 documentation: ug

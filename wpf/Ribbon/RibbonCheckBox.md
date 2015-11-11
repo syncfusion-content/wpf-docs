@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonCheckBox | Ribbon | WPF | Syncfusion
-description: RibbonCheckBox
+title: RibbonCheckBox in Syncfusion Ribbon control
+description: RibbonCheckBox in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

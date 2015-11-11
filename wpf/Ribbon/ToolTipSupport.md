@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UI for ToolTip | Ribbon | WPF | Syncfusion
-description: UI for ToolTip
+title: ToolTip support in Syncfusion Ribbon control
+description: ToolTip support in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
