@@ -12,6 +12,8 @@ documentation: ug
 
 DockingManager allows to host a WindowsForm control as a Docking Child. Here a Windows Forms WebBrowser control added as Child Window
 
+{% tabs %}
+
 {%highlight XAML%}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockFill="True" >
@@ -21,6 +23,8 @@ DockingManager allows to host a WindowsForm control as a Docking Child. Here a W
 </syncfusion:DockingManager> 
 
 {%endhighlight%}
+
+{% endtabs %}
 
 {%highlight C#%}
 
@@ -36,6 +40,8 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 * While interacting the  WindowsForm control with WPF controls, it leads to inaccessibility of WPF controls behind WindowsForm control, since the WindowsForm control is on top. 
 * While floating the WindowsForm control in DockingManager, it is  invisible. For these cases, set `UseInteropCompatibilityMode` property as `True` for the DockingManager. 
 
+{% tabs %}
+
 {%highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockFill="True" UseInteropCompatibilityMode="True">
@@ -45,3 +51,5 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 </syncfusion:DockingManager>
 
 {%endhighlight%}
+
+{% endtabs %}
