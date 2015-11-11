@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System Requirement | WPF | Syncfusion
+title: System requirements needed to use Syncfusion Essential WPF components
 description: common supports
 platform: wpf
 control: System Requirement

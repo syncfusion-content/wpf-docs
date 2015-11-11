@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pattern and Practices | WPF | Syncfusion
+title: Pattern and Practices for Syncfusion Essential WPF controls
 description: common supports
 platform: wpf
 control: Pattern and Practices

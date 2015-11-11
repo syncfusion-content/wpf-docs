@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Creating Ribbon Model Tab | Ribbon | WPF | Syncfusion
-description: Creating Ribbon Model Tab
+title: Creating Ribbon ModalTab in Syncfusion Ribbon control
+description: Creating Ribbon ModalTab in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # Creating Ribbon Model Tab
 
-Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are found in the core tabs. At this point, the core tabs will be disabled.
+Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are found in the core tabs. At this point, the core tab gets be disabled.
 
 ## Use Case Scenarios
 
@@ -95,7 +95,7 @@ End Sub
 
 {% endtabs %}
 
-`CloseModalTabs` method will close the currently opened Modal Tab in Ribbon control. This method should be called in any event of currently displaying Modal Tab element.This is illustrated in the code given below.
+`CloseModalTabs` method is used to close the currently opened Modal Tab in Ribbon control. This method should be called in any event of currently displaying Modal Tab element.This is illustrated in the code given below.
 
 {% tabs %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Templates | Docking Manager | WPF | Syncfusion
+title: Styling and Templates of Syncfusion's DockingManager control for WPF
 description: Styling and Templates
 platform: wpf
 control: DockingManager
@@ -33,148 +33,221 @@ The visual style can be applied for the DockingManager using the property `Visua
 
 * Blend – Set the visual style as Blend for the DockingManager.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Blend");
 
 
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Blend")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
 
 
 * Office2007Blue – Set visual style for DockingManager as Office2007Blue.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2007Blue");
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2007Blue")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img2.jpeg)
 
 
 * Office2007Black – Setting visual style for DockingManager as Office2007Black.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
 
 
 * Office2007Silver – Setting visualstyle for the DockingManager as Office2007Silver.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2007Silver");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2007Silver")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img4.jpeg)
 
 
 * Office2010Blue – Set the visual style for DockingManager as Office2010Blue.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2010Blue");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2010Blue")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img5.jpeg)
 
 
 * Office2010Black – Set visual style for DockingManager as Office2010Black
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2010Black");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2010Black")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img6.jpeg)
 
 
 
-
 * Office2010SSilver – Set visual style as Office2010Silver.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2010Silver");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2010Silver")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img7.jpeg)
 
 
 * VS2010- Setting visual style for the DockingManager as VS2010.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"VS2010");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"VS2010")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img8.jpeg)
 
 
 * Metro – Sett visual style for DockingManager as Metro.
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Metro");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Metro")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img9.jpeg)
 
 
 * Transparent – Setting visual style for DockingManager as Transparent.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Transparent");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Transparent")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img10.jpeg)
 
@@ -186,7 +259,7 @@ DockingManager allows to set style for some of the Docking controls such as Dock
 
 The style of the pin button of the Dock window can customized using the `AwlButtonTemplate` property of DockingManager with the TargetType as `ToggleButton` to have a customized look and feel for the Pin Button. 
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager  x:Name="DockingManager1">
 
 <syncfusion:DockingManager.AwlButtonTemplate>
@@ -237,7 +310,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 The close button for the Docked window can be customized using the `CloseButtonTemplate` and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1">
 
@@ -284,7 +357,7 @@ syncfusion:DockingManager.Header="Child2"/>
 The context menu button appearance in the Dock window header can be customized using `MenuButtonTemplate` property by setting with the Target Type as ToggleButton.
 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1">
 
@@ -337,7 +410,7 @@ The context menu button appearance in the Dock window header can be customized u
 
 The minimize button for the dock window can be customized using the `MinimizeButtonTemplate` by setting with the TargetType as ToggleButton.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" MinimizeButtonEnabled="True" >
 
@@ -384,7 +457,7 @@ The minimize button for the dock window can be customized using the `MinimizeBut
 
 The maximize button for the dock window can be customized using the `MaximizeButtonTemplate` property with the TargetType as ToggleButton.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 
 <syncfusion:DockingManager  x:Name="DockingManager1" MaximizeButtonEnabled="True" MinimizeButtonEnabled="True" >
@@ -432,7 +505,7 @@ The maximize button for the dock window can be customized using the `MaximizeBut
 
 The Restore button for the dock window can be customized using the `RestoreButtonTemplate` property with the TargetType as ToggleButton.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" MaximizeButtonEnabled="True">
 
@@ -486,7 +559,7 @@ The Restore button for the dock window can be customized using the `RestoreButto
 DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its tabitem template can be customized using `TabItemTemplate` with the TargetType as TabItem.
 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Window.Resources>
 
@@ -583,7 +656,7 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 
 The DockedElementTabbedHost can be customized using the `DockedElementTabbedHostStyle` with the TargetType as DockedElementTabbedHost
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Syncfusion:DockingManager.DockedElementTabbedHostStyle>
 
@@ -646,7 +719,7 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 
 The header of the dock window can be customized using the property `DockHeaderStyle` with the TargetType as DockHeaderPresenter.
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True"   >
 
 <syncfusion:DockingManager.DockHeaderStyle>
@@ -677,7 +750,7 @@ The context menu of DockingManager can be customized using the `DockWindowContex
 
 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI" UseNativeFloatWindow="True">
 
@@ -724,7 +797,7 @@ The float window can be customized using its template and style.
 
 Template of FloatWindow can be customized using the `FloatWindowTemplate` with the TargetType as ContentControl.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <Syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI" EnableDocumentTabHeaderEdit="True">
 
@@ -815,7 +888,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as AutoTemplatedContentControl. It gets or sets the style for the floatwindow when it is rendered.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1">
 
@@ -842,7 +915,7 @@ The style for the float window can be applied using the `FloatWindowStyle` prope
 
 The NativeFloatwindow of DockingManager can be customized using the `NativeWindowStyle` property of the DockingManager with the TargetType as NativeFloatWindow.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI" UseNativeFloatWindow="True">
 
@@ -880,7 +953,7 @@ AutoHidden window is constructed by SidePanels and SideTabItems. To customize th
 The template of the SideTabItem of the DockingManager can be customized using the `SideTabItemTemplate` with the TargetType as TabItem.
 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <ControlTemplate x:Key="SideTabItemTemplate" TargetType="{x:Type TabItem}">
 
@@ -930,7 +1003,7 @@ The template of the SideTabItem of the DockingManager can be customized using th
 
 The style for the sideTabItem can be changed using `SideItemStyle` by settings its TargetType as TabItem
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="TDI" >
 
@@ -965,7 +1038,7 @@ The style for the sideTabItem can be changed using `SideItemStyle` by settings i
 
 SidePanel template in AutoHidden window can changed using `SidePanelTemplate` with the TargetType SidePanel.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <ControlTemplate x:Key="SidePanelTemplate" TargetType="{x:Type Syncfusion:SidePanel}" >
 	
@@ -1003,7 +1076,7 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 
 The style for the sidepanel of the DockingManager can be customized using the `SidePanelStyle` property with the TargetType as SidePanel.
 
-{% highlight xml%}
+{% highlight XAML%}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="TDI">
 	
@@ -1037,7 +1110,7 @@ DragProviders are appear while dragging a window. DragProviders are displayed fo
 
 The BottomDragProvider is used to dock the children of the Docking in the bottom side and it’s template can be customized using the `BottomDragProviderTemplate` by setting its TargetType as ContentControl.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
 
@@ -1080,7 +1153,7 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 
 The LeftDragProvider is used to dock the dock window to the left side and it can be customized using the `LeftDragProvider` property that helps to customize the template for the Left DragProvider by setting its Target as ContentControl. The same has been explained below:
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
 
 <syncfusion:DockingManager.LeftDragProvider>
@@ -1122,7 +1195,7 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 
 To dock the DockWindow to the right side, RightDragProvider is used. It can be customized using the `RightDragProviderTemplate` with the TargetType as ContentControl.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
 
@@ -1163,7 +1236,7 @@ To dock the DockWindow to the right side, RightDragProvider is used. It can be c
 
 To dock the DockWindow at top, the TopDragProvider is used. It can be customized using the `TopDragProviderTemplate` with the TargetType as ContentControl.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
 
@@ -1204,7 +1277,7 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 CenterDragProvider is used to dock the children of the DockingManager at the center Position and its template can be customized using the property `CenterDragProvider`.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True">            
 	
@@ -1245,7 +1318,7 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 Document state in DockingManager used the DocumentTabControl and its style can be customized using `DocumentTabControlStyle` with the TargetType as DocumentTabControl.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True">
 
@@ -1278,7 +1351,7 @@ Document state in DockingManager used the DocumentTabControl and its style can b
 
 Each Document TabItem in DockingManager constructed by the TabItemExt and its style can be customized using `DocumentTabItemStyle` with the TargetType as TabItemExt.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True"   >
 
@@ -1310,7 +1383,7 @@ Each Document TabItem in DockingManager constructed by the TabItemExt and its st
 
 The header style for the MDI Document can be changed using the `DocumentMDIHeaderStyle` with the TargetType as DocumentHeader.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" ContainerMode="MDI">
 	
@@ -1358,7 +1431,7 @@ The header style for the MDI Document can be changed using the `DocumentMDIHeade
 
 Tabcontrol inside the Tabbed DockWindow can be customized using `TabControlStyle` with the TargetType TabControl in the DockingManager
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True"   >
 
@@ -1399,7 +1472,7 @@ Tabcontrol inside the Tabbed DockWindow can be customized using `TabControlStyle
 
 The style for the Tabbed children of DockingManager can be customized using the `TabItemStyle` property with the Target Type as TabItem.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True">   
 	

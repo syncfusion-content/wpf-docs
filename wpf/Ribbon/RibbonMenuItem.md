@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonMenuItem for Syncfusion's Ribbon control for WPF
-description: RibbonMenuItem for Syncfusion's Ribbon control for WPF
+title: RibbonMenuItem in Syncfusion Ribbon control
+description: RibbonMenuItem in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -25,7 +25,7 @@ documentation: ug
 
 </syncfusion:RibbonBar>
 
-</syncfusion:RibbonTab>            
+</syncfusion:RibbonTab>
 
 </syncfusion:Ribbon>
 

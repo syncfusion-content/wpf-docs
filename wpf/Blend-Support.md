@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blend Support
+title: Steps to edit Style and Template with Blend for Syncfusion Essential WPF controls
 description: common supports | WPF | Syncfusion
 platform: wpf
 control: Blend Support

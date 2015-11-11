@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tabbed Window | DockingManager | WPF | Syncfusion
+title: Tabbed Window of Syncfusion's DockingManager control for WPF
 description: Tabbed Window
 platform: wpf
 control: DockingManager
@@ -23,7 +23,11 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 
 * Setting DockTabAlignment as `Left`.
-{% highlight xml %}
+
+
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Left">
 
@@ -39,12 +43,17 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 ![](TabbedWindow_images/TabbedWindow_img3.jpeg)
 
 
 * Setting DockTabAlignment as `Right`
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Right">
 
 <ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="Content1"/>  
@@ -57,13 +66,18 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
 ![](TabbedWindow_images/TabbedWindow_img4.jpeg)
 
 
 * Setting DockTabAlignment as `Top`
-{% highlight xml %}
+
+
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Top">
 
@@ -79,6 +93,8 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](TabbedWindow_images/TabbedWindow_img5.jpeg)
 
 
@@ -88,7 +104,9 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 
 `CloseActive` – Used to close the active element of Tabbed window.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseActive">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" />  
@@ -107,9 +125,13 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 
 {% endhighlight %}
 
+{% endtabs %}
+
  `CloseAll` – Used to close all the Tabbed window.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseAll">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"/>  
@@ -125,5 +147,6 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 </syncfusion:DockingManager>
 
 
-
 {% endhighlight %}
+
+{% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linked Manager | DockingManager | WPF | Syncfusion
+title: Linked and Nested functionalities of Syncfusion's DockingManager control for WPF
 description: Linked Manager 
 platform: wpf
 control: DockingManager
@@ -13,7 +13,7 @@ documentation: ug
 The windows from one DockingManager cannot be dragged and dropped to another DockingManager by default. But Linked Manager support allows to drag and drop the windows from one DockingManager to another by setting `TargetDockingManager` list.
 
 Source Docking Manager
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
 
@@ -30,7 +30,7 @@ Source Docking Manager
 
 
 Target Docking Manager
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True">
 
@@ -45,7 +45,9 @@ Target Docking Manager
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 public partial class MainWindow : Window
 {
@@ -70,6 +72,33 @@ public partial class MainWindow : Window
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Partial Public Class MainWindow
+	Inherits Window
+
+	Public Sub New()
+		InitializeComponent()
+
+		count += 1
+
+		Dim MainWindow As New MainWindow1()
+
+		MainWindow.Title = "Docking Manager 1"
+
+		MainWindow.Show()
+
+		Me.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2)
+
+		MainWindow.DockingManager2.AddToTargetManagersList(Me.DockingManager1)
+	End Sub
+End Class 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ![](LinkedManager_images/LinkedManager_img1.jpeg)
 
 
@@ -81,34 +110,67 @@ When only one DockingManager has TargetManagerList, the window drop to TargetMan
 
 Here, the windows from DockingManager1 are only allowed to be dragged and dropped in DockingManager2, 
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Me.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 To drag and drop the window from DockingManager2 to DockingManager1, DockingManager1 must be added to TargetManagerList of DockingManager2.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
 
 MainWindow.DockingManager2.AddToTargetManagersList(this.DockingManager1);
 
 
+{% endhighlight %}
 
+
+{% highlight VB %}
+
+
+Me.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2)
+
+MainWindow.DockingManager2.AddToTargetManagersList(Me.DockingManager1) 
 
 {% endhighlight %}
 
+{% endtabs %}
 ### Removing Target Manager list
 
 To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManagerList()` of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow teh below code snippets:
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 MainWindow.DockingManager2.RemoveFromTargetManagersList(this.DockingManager1);
 
 {% endhighlight %}
+
+
+{% highlight VB %}
+MainWindow.DockingManager2.RemoveFromTargetManagersList(Me.DockingManager1) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ## Nested Docking
 
@@ -118,7 +180,7 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 ### Adding DockingManager as Child in DockingManager
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" syncfusion:DockingManager.Header="Dock1">
 

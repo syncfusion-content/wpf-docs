@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KeyBoard access to all Ribbon items using KeyTip | Ribbon | WPF | Syncfusion
+title: KeyBoard support in Syncfusion Ribbon control
 description: KeyBoard access to all Ribbon items using KeyTip
 platform: wpf
 control: Ribbon
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # KeyBoard access using KeyTip
 
-To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem will get displayed. 
+To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed. 
 
 ## Adding KeyTip to the Ribbon items
 
@@ -61,7 +61,7 @@ syncfusion:Ribbon.KeyTip="CR" />
 
 ## KeyTip for QAT items
 
-KeyTip for the QAT items will get displayed by default by pressing Alt Key.The KeyTip will set  in the order like…1,2,3,4,5,6,7,8,9,09,08,07…….01,0A,0B……etc.
+KeyTip for the QAT items gets displayed by default by pressing Alt Key.The KeyTips are arranged in the order like…1,2,3,4,5,6,7,8,9,09,08,07…….01,0A,0B……etc.
 
 {% tabs %}
 
@@ -158,12 +158,12 @@ The below example illustrates how to access particular Ribbonitem using KeyTip
 
 {% endtabs %}
 
-The below screenshot displays the steps involved to access RibbonComboBox. When Alt key is pressed, KeyTip for the RibbonTab will be displayed. Then choose the desired RibbonTab with the KeyTip
+The below screenshot displays the steps involved to access RibbonComboBox. When Alt key is pressed, KeyTip for the RibbonTab gets displayed. Then choose the desired RibbonTab with the KeyTip
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML11ba0b81.PNG](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img3.jpeg)
 
 
-In the Next Step, all the KeyTips under RibbonTab will get displayed 
+In the Next Step, all the KeyTips under RibbonTab gets displayed 
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML11ba6ab8.PNG](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img4.jpeg)
 
@@ -201,7 +201,7 @@ The backstage feature of the Ribbon control provides KeyTip support to display K
 
 {% endtabs %}
 
-In the below screenshot, “B” is set as KeyTip for the Backstage. So when the user press “B”, it will automatically open the BackStage
+In the below screenshot, “B” is set as KeyTip for the Backstage. So when the user press “B”, it automatically open the BackStage
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML116133ca.PNG](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img6.jpeg)
 

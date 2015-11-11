@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Floating Window | DockingManager | WPF | Syncfusion
+title: Float Window of Syncfusion's DockingManager control for WPF
 description: Floating Window
 platform: wpf
 control: DockingManager
@@ -12,7 +12,9 @@ Floating window is one of the state in the DockingManager. To make children of t
 
 Floating window is like a Popup and it has some limitation in resizing. To avoid this limitation, set the `UseNativeFloatWindow` property of the DockingManager as `True`.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager UseNativeFloatWindow="True">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"/>
@@ -23,6 +25,8 @@ Floating window is like a Popup and it has some limitation in resizing. To avoid
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](FloatingWindow_images/FloatingWindow_img1.jpeg)
 
 
@@ -30,7 +34,9 @@ Floating window is like a Popup and it has some limitation in resizing. To avoid
 
 The float window is rolled up to top using the property `IsRollUpTopProperty`. To enable this functionality set its value as `True`, by default its value is `False`.        
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager IsRollupFloatWindow="True">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"/>
@@ -38,6 +44,8 @@ The float window is rolled up to top using the property `IsRollUpTopProperty`. T
 </syncfusion:DockingManager>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](FloatingWindow_images/FloatingWindow_img2.jpeg)
 
@@ -58,7 +66,10 @@ To make float window behave like a WPF window in multiple monitor, set the prope
 
 The `CanFloat` property helps to enable or disable the floating functionality by setting its value as `True` or `False` respectively. By default its value is `True`, to disable this functionality turn its value to `False`.
 
-{% highlight xml %}
+
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="DockingManager1" >
 
 <ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.CanFloat="True"/>
@@ -71,6 +82,8 @@ The `CanFloat` property helps to enable or disable the floating functionality by
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](FloatingWindow_images/FloatingWindow_img3.jpeg)
 
 
@@ -78,7 +91,9 @@ The `CanFloat` property helps to enable or disable the floating functionality by
 
 The float window changes its state to `Dock` when you double click its header by default. To disable this functionality for the specific child, set `NoDock` property as `True`.       
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1">
 
@@ -91,11 +106,15 @@ The float window changes its state to `Dock` when you double click its header by
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Maximize/Minimize Support
 
 The float window provides Maximization support for better usability and it is only applicable for NativeFloatWindow. To enable the maximizing feature for the Float window, set `CanFloatMaximize` for the specific child as `True`. By default, its value is `False`.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager UseNativeFloatWindow="True">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" 
@@ -107,6 +126,8 @@ The float window provides Maximization support for better usability and it is on
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](FloatingWindow_images/FloatingWindow_img4.jpeg)
 
 
@@ -115,17 +136,22 @@ The float window provides Maximization support for better usability and it is on
 The FloatWindow can be placed at any desired location. To position the FloatWindow at the desired location with the required Rect Bounds, call `SetFloatingWindowRect` method of the DockingManager.
 
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetFloatingWindowRect(Content1,new Rect(200,200,200,200));
 
 
+{% endhighlight %}
 
+{% highlight VB %}
 
+DockingManager.SetFloatingWindowRect(Content1, New Rect(200, 200, 200, 200)) 
 
 {% endhighlight %}
 
+{% endtabs %}
 ![](FloatingWindow_images/FloatingWindow_img5.jpeg)
 
 

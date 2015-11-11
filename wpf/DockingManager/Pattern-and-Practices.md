@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Patterns and Practices | Docking Manager | WPF | Syncfusion
+title: Patterns and Practices of Syncfusion's DockingManager control for WPF
 description: Patterns and Practices
 platform: wpf
 control: DockingManager
@@ -17,10 +17,10 @@ Here a simple text-reader application is used to demonstrate this approach.
 ![](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
 
-1. `DocumentsView`: The pane that lists all the available documents. The tooltip will display the path of the document.
+1. `DocumentsView`: The pane that lists all the available documents and tooltip display the path of the document.
 2. `PropertiesView`: The pane that shows the properties of a document. Our PropertyGrid control is used here.
 3. `DocumentView`: The pane that uses the WPF flow-document reader to display the content of a file.
-4. `CommandView`: The view has two commands: `Open` Document and `Exit`. Executing an Open Document action will open the Open File Dialog. The document that opened will be added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
+4. `CommandView`: The view has two commands: `Open` Document and `Exit`. Executing an Open Document action opens the Open File Dialog. The document that opened, added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
 5. The project structure looks like this:
 
 ![](PatternandPractices_images/PatternandPractices_img2.jpeg)
@@ -29,7 +29,7 @@ Here a simple text-reader application is used to demonstrate this approach.
 ### Docking Adapter
 The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <mvvm:dockingadapter itemssource="{Binding Workspaces}" activedocument="{Binding ActiveDocument,Mode=TwoWay}">
 
@@ -67,7 +67,7 @@ Every dock element in the application is a workspace. There are three kinds of w
 
 Since WPF has an implicit template approach, it is easy to apply visuals to the view models. In this application, the data templates are defined in App.xaml with only the DataType attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
 
-{% highlight xml %}
+{% highlight XAML %}
 <application.resources>
 
 <datatemplate datatype="{x:Type local:Document}">
@@ -134,7 +134,9 @@ Microsoft.Practices.Unity.dll
 
 Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShell method.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 public class BootStrapper : UnityBootstrapper
 
@@ -168,8 +170,42 @@ App.Current.MainWindow.Show();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class BootStrapper
+	Inherits UnityBootstrapper
+
+Protected Overrides Function CreateShell() As System.Windows.DependencyObject
+
+
+Return New MainWindow()
+
+End Function
+
+Protected Overrides Sub InitializeModules()
+
+
+MyBase.InitializeModules()
+
+App.Current.MainWindow = CType(Me.Shell, Window)
+
+App.Current.MainWindow.Show()
+
+End Sub
+
+End Class 
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 4.Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 public partial class App : Application
 
@@ -189,14 +225,34 @@ bootstrapper.Run();
 
 }
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+Partial Public Class App
+	Inherits Application
 
 
+Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
 
+
+MyBase.OnStartup(e)
+
+Dim bootstrapper As New Bootstrapper()
+
+bootstrapper.Run()
+
+End Sub
+
+End Class 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 5.Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
-{% highlight xml %}
+{% highlight XAML %}
 
 xmlns:prsm="http://www.codeplex.com/prism"
 
@@ -208,7 +264,7 @@ xmlns:prsm="http://www.codeplex.com/prism"
 
 In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
 
-{% highlight xml %}
+{% highlight XAML %}
 <Window x:Class="DockingManagerPrism.App.MainWindow "
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -257,8 +313,9 @@ Also add the following Prism assemblies:
 
 7.In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 protected override void ConfigureModuleCatalog()
 
@@ -276,9 +333,27 @@ moduleCatalog.AddModule(typeof(DockingModule));
 
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+Protected Overrides Sub ConfigureModuleCatalog()
+
+
+MyBase.ConfigureModuleCatalog()
+
+Dim moduleCatalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
+
+moduleCatalog.AddModule(GetType(DockingModule))
+
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 8.Adding Views to the Module, shown here is bottomleftmodule, similary the view for the module can be added according to number of modules.
 
-{% highlight xml %}
+{% highlight XAML %}
 <UserControl x:Class="DockingManagerPrism.Modules.BottomLeftModule"
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -302,7 +377,9 @@ moduleCatalog.AddModule(typeof(DockingModule));
 
 After creating View for the Module, register the view as Module using the following code example.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 public class DockingModule : IModule
 
 {
@@ -334,6 +411,38 @@ regionManager.RegisterViewWithRegion("MainRegion", typeof(TopModule));
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Public Class DockingModule
+	Implements IModule
+
+
+Private ReadOnly regionManager As IRegionManager
+
+Public Sub New(ByVal regionManager As IRegionManager)
+
+
+Me.regionManager = regionManager
+
+End Sub
+
+Public Sub Initialize()
+
+
+regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomLeftModule))
+
+regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomRightModule))
+
+regionManager.RegisterViewWithRegion("MainRegion", GetType(TopModule))
+
+End Sub
+
+End Class 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Then when you run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing | WPF | Syncfusion
+title: Getting Started with Coded UI Testing for Syncfusion Essential WPF controls
 description: common supports
 platform: wpf
 control: Testing

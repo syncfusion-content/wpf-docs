@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Touch Support | Ribbon | WPF | Syncfusion
-description: Touch Support
+title: Touch support in Syncfusion Ribbon control
+description: Touch support in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
