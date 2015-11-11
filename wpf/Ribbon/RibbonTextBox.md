@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonTextBox | Ribbon | WPF | Syncfusion
-description: RibbonTextBox
+title: RibbonTextBox for Syncfusion's Ribbon control for WPF
+description: RibbonTextBox for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,11 +10,10 @@ documentation: ug
 
 `RibbonTextBox` control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
 
-The following code example illustrates how to use RibbonTextBox control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -40,17 +39,29 @@ The following code example illustrates how to use RibbonTextBox control in Ribbo
 
 {% endhighlight %}
 
-Create instance of RibbonTextBox and add it to RibbonBar Items.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of RibbonTextBox and add it to RibbonBar through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 RibbonTextBox _ribbonTextBox = new RibbonTextBox(){Text = "RibbonTextBox"};
 
 _ribbonBar2.Items.Add(_ribbonTextBox);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbonTextBox As New RibbonTextBox() With {.Text = "RibbonTextBox"}
+
+_ribbonBar2.Items.Add(_ribbonTextBox)
+
+{% endhighlight %}
+ 
+{% endtabs %}
 
 ![](RibbonTextBox_images/RibbonTextBox_img1.jpeg)
 

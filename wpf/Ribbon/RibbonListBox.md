@@ -1,20 +1,19 @@
 ---
 layout: post
-title: RibbonListBox | Ribbon | WPF | Syncfusion
-description: RibbonListBox
+title: RibbonListBox and its items for Syncfusion's Ribbon control for WPF
+description: RibbonListBox and its items for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # RibbonListBox
 
-`RibbonListBox` control is used to display a list of items in a Ribbon instance. It accepts any type of content as RibbonListBox items.
+`RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items but `ListBoxItem` by default.
 
-The following code example illustrates how to use RibbonListBox control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -48,15 +47,15 @@ The following code example illustrates how to use RibbonListBox control in Ribbo
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
 
-Create instance of RibbonListBox and add it to RibbonBar Items.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of RibbonListBox and add it to RibbonBar through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 RibbonListBox _ribbonListBox = new RibbonListBox();
 
@@ -74,9 +73,29 @@ _ribbonListBox.Items.Add(item3);
 
 _ribbonBar2.Items.Add(_ribbonListBox);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonListBox As New RibbonListBox()
+
+Dim item1 As New ListBoxItem() With {.Content = "Office2003Theme"}
+
+Dim item2 As New ListBoxItem() With {.Content = "Office2007Theme"}
+
+Dim item3 As New ListBoxItem() With {.Content = "Office2010Theme"}
+
+_ribbonListBox.Items.Add(item1)
+
+_ribbonListBox.Items.Add(item2)
+
+_ribbonListBox.Items.Add(item3)
+
+_ribbonBar2.Items.Add(_ribbonListBox)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonListBox_images/RibbonListBox_img1.jpeg)
 

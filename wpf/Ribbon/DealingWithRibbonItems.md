@@ -14,9 +14,10 @@ Button Panel represents a panel control that can display horizontal row of Ribbo
 
 Use the below code to create ButtonPanel in XAML
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon VerticalAlignment="Top" x:Name="_ribbon">  
 
@@ -90,6 +91,8 @@ SmallIcon="Images/Orange.png" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img1.jpeg)
 
 
@@ -99,9 +102,9 @@ SmallIcon="Images/Orange.png" />
 
 To create the ButtonPanel control in Code Behind, use the below code.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 DropDownButton _dropDownButton = new DropDownButton() { Label = "Drop", SizeForm = Syncfusion.Windows.Tools.SizeForm.Small, SmallIcon = new BitmapImage(new Uri("/Resources/Gray.png", UriKind.Relative)) };
 
@@ -116,6 +119,31 @@ _buttonPanel.Items.Add(_splitButton);
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _dropDownButton As New DropDownButton() With {
+	.Label = "Drop",
+	.SizeForm = Syncfusion.Windows.Tools.SizeForm.Small,
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Gray.png", UriKind.Relative))
+}
+
+Dim _splitButton As New SplitButton() With {
+	.Label = "Split",
+	.SizeForm = Syncfusion.Windows.Tools.SizeForm.Small,
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Yellow.png", UriKind.Relative))
+}
+
+Dim _buttonPanel As New ButtonPanel()
+
+_buttonPanel.Items.Add(_dropDownButton)
+
+_buttonPanel.Items.Add(_splitButton)
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img2.jpeg)
 
@@ -134,9 +162,10 @@ Possible values of `SizeForm` are Large, Small and ExtraSmall.
 
 The code to set sizeform for the above controls is illustrated below
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
 
@@ -194,6 +223,8 @@ The code to set sizeform for the above controls is illustrated below
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](ChangingSizeofRibbonitems_images/ChangingSizeofRibbonitems_img1.jpeg)
 
 # Add command to RibbonLauncherButton
@@ -209,9 +240,11 @@ Ribbon instance now provides command support for RibbonBar LauncherButton. It pr
 
 Command for RibbonBar LauncherButton can be set by using `LauncherCommand` attached property. The following code example illustrates this.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
+
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
 
@@ -243,7 +276,7 @@ Command for RibbonBar LauncherButton can be set by using `LauncherCommand` attac
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The font size for the selected text is increased when launcher button is clicked
 
@@ -253,9 +286,11 @@ The font size for the selected text is increased when launcher button is clicked
 
 The HelpButton displays the information about the application.To enable this HelpButton in `Office2013` theme, set `ShowHelpButton` as `True` 
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
+
 
 <syncfusion:RibbonWindow
 
@@ -269,6 +304,8 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img1.jpeg)
 
 
@@ -281,9 +318,10 @@ The TabPanelItem is located at the right corner below the main window close bu
 
 This following code snippet explains how to create and configure TabPanelItem.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon.TabPanelItem>
 
@@ -293,3 +331,4 @@ This following code snippet explains how to create and configure TabPanelItem.
 
 {% endhighlight %}
 
+{% endtabs %}

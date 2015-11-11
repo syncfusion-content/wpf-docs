@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonMenuItem | Ribbon | WPF | Syncfusion
-description: RibbonMenuItem
+title: RibbonMenuItem for Syncfusion's Ribbon control for WPF
+description: RibbonMenuItem for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,11 +10,10 @@ documentation: ug
 
 `RibbonMenuItem` used as entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 
-The following code example illustrates how to use RibbonMenuItem control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -30,23 +29,34 @@ The following code example illustrates how to use RibbonMenuItem control in Ribb
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
 
-Create instance of RibbonMenuItem and add it to RibbonBar Items.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of RibbonMenuItem and add it to RibbonBar through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem(){Header = "NEW", Width = 100};
 
 _ribbonBar1.Items.Add(_ribbonMenuItem);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonMenuItem As New RibbonMenuItem() With {
+	.Header = "NEW",
+	.Width = 100
+}
+
+_ribbonBar1.Items.Add(_ribbonMenuItem)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonMenuItem_images/RibbonMenuItem_img1.jpeg)
 

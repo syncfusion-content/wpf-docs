@@ -1,24 +1,24 @@
 ---
 layout: post
-title: DropDownButton | Ribbon | WPF | Syncfusion
-description: DropDownButton
+title: DropDownButton and its items for Syncfusion's Ribbon control for WPF
+description: DropDownButton and its items for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# DropDownButton
+# RibbonDropDownButton
 
-DropDownButton is a button control which contains a drop arrow. On clicking the DropDownButton, the menu items related to the button gets displayed in PopUp. These menu item can be added using `DropDownMenuItem`
+DropDownButton appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts `DropDownMenuItem` as its children.
 
-## Creating DropDownMenuItem
+## Add DropDownMenuItem
 
-DropDownMenuItem are the items with `Header` property. It can added to `SplitButton` and `DropDownButton`.
+DropDownMenuItem are the items with `Header` property that is used to set header.
 
-The following code example illustrates how to create DropDownMenuItem and add it to DropDownButton in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -48,11 +48,14 @@ The following code example illustrates how to create DropDownMenuItem and add it
 
 {% endhighlight %}
 
-Create instance of `DropDownMenuItems` and add it to `DropDownButton` Items.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of `DropDownMenuItems` and add it to DropDownButton Items in code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
+
 
 DropDownMenuItem _dropDownMenuItem1 = new DropDownMenuItem() {Header="New" };
 
@@ -66,18 +69,34 @@ _dropDownButton.Items.Add(_dropDownMenuItem2);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _dropDownMenuItem1 As New DropDownMenuItem() With {.Header="New"}
+
+Dim _dropDownMenuItem2 As New DropDownMenuItem() With {.Header = "Open"}
+
+_dropDownButton.Items.Add(_dropDownMenuItem1)
+
+_dropDownButton.Items.Add(_dropDownMenuItem2)
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ![](DropDownButton_images/DropDownButton_img1.jpeg)
 
 
-## Adding DropDownMenuItem to DropDownMenuGroup
+## Add DropDownMenuItem to DropDownMenuGroup
 
-In DropDownButton similar items can be grouped together and seperated from other menu items using `DropDownMenuGroup`.
+In DropDownButton, similar items can be grouped together and seperated from other menu items using `DropDownMenuGroup`.
 
-The following code example illustrates how to add drop down MenuItems to `DropDownMenuGroup`
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
+
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -121,11 +140,14 @@ The following code example illustrates how to add drop down MenuItems to `DropDo
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create instance of `DropDownMenuItem` and add it to `DropDownMenuGroup` Items.
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
+
 
 DropDownMenuItem _dropDownMenuItem1 = new DropDownMenuItem() { Header = "New" };
 
@@ -147,18 +169,42 @@ _dropDownMenuGroup2.Items.Add(_dropDownMenuItem4);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+
+Dim _dropDownMenuItem1 As New DropDownMenuItem() With {.Header = "New"}
+
+Dim _dropDownMenuItem2 As New DropDownMenuItem() With {.Header = "Open"}
+
+Dim _DropDownMenuItem3 As New DropDownMenuItem() With {.Header = "Cut"}
+
+Dim _DropDownMenuItem4 As New DropDownMenuItem() With {.Header = "Copy"}
+
+_dropDownMenuGroup1.Items.Add(_dropDownMenuItem1)
+
+_dropDownMenuGroup1.Items.Add(_dropDownMenuItem2)
+
+_dropDownMenuGroup2.Items.Add(_dropDownMenuItem3)
+
+_dropDownMenuGroup2.Items.Add(_dropDownMenuItem4)
+
+
+{% endhighlight %}
+
+
+{% endtabs %}
+
 ![](DropDownButton_images/DropDownButton_img2.jpeg)
 
 
-## Control can be created in three types of size
+## Set various sizes for DropDownButton
 
-DropDownButton have three types of size forms. You can set size forms using `SizeForm` Property.
+DropDownButton have three types of size forms. You can set size forms using its `SizeForm` Property.
 
-The following code example illustrates different size forms of DropDownButton in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:RibbonBar Name="_ribbonBar2">
 
@@ -171,12 +217,14 @@ The following code example illustrates different size forms of DropDownButton in
 </syncfusion:RibbonBar>
 
 
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
+
 
 DropDownButton _dropDownButton1 = new DropDownButton() { Label = "Large", SizeForm = SizeForm.Large };
 
@@ -193,5 +241,33 @@ _ribbonBar2.Items.Add(_dropDownButton3);
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _dropDownButton1 As New DropDownButton() With {
+	.Label = "Large",
+	.SizeForm = SizeForm.Large
+}
+
+Dim _dropDownButton2 As New DropDownButton() With {
+	.Label = "Small",
+	.SizeForm = SizeForm.Small
+}
+
+Dim _dropDownButton3 As New DropDownButton() With {
+	.Label = "ExtraSmall",
+	.SizeForm = SizeForm.ExtraSmall
+}
+
+_ribbonBar2.Items.Add(_dropDownButton1)
+
+_ribbonBar2.Items.Add(_dropDownButton2)
+
+_ribbonBar2.Items.Add(_dropDownButton3)
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](DropDownButton_images/DropDownButton_img3.jpeg)

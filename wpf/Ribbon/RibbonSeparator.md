@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Ribbon Separator | Ribbon | WPF | Syncfusion
-description: Ribbon Separator	
+title: Ribbon Separator for Syncfusion's Ribbon control for WPF
+description: Ribbon Separator for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # Ribbon Separator	
 
-`RibbonSeperator` used to separate the similar set of Ribbon elements in Ribbon instance. It is used in RibbonBar to group out RibbonButtons according to their purpose. 
+`RibbonSeperator` used to separate the similar set of Ribbon elements in Ribbon. It can seperate RibbonButtons according to their purpose. 
 
-The following code example illustrates how to set RibbonSeperator in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -46,11 +45,13 @@ The following code example illustrates how to set RibbonSeperator in Ribbon inst
 
 {% endhighlight %}
 
-RibbonSeperator instance can be added as item to the group of other items
+{% endtabs %}
 
-{% highlight c# %}
+RibbonSeperator instance can be added as item to the group of other items through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 RibbonSeparator _ribbonSeparator = new RibbonSeparator();
 
@@ -81,6 +82,40 @@ _ribbonBar.Items.Add(_ribbonButton5);
 _ribbonBar.Items.Add(_ribbonButton6);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbonSeparator As New RibbonSeparator()
+
+Dim _ribbonButton1 As New RibbonButton() With {.Label = "New"}
+
+Dim _ribbonButton2 As New RibbonButton() With {.Label = "Open"}
+
+Dim _ribbonButton3 As New RibbonButton() With {.Label = "Save"}
+
+Dim _ribbonButton4 As New RibbonButton() With {.Label = "Cut"}
+
+Dim _ribbonButton5 As New RibbonButton() With {.Label = "Copy"}
+
+Dim _ribbonButton6 As New RibbonButton() With {.Label = "Paste"}
+
+_ribbonBar.Items.Add(_ribbonButton1)
+
+_ribbonBar.Items.Add(_ribbonButton2)
+
+_ribbonBar.Items.Add(_ribbonButton3)
+
+_ribbonBar.Items.Add(_ribbonSeparator)
+
+_ribbonBar.Items.Add(_ribbonButton4)
+
+_ribbonBar.Items.Add(_ribbonButton5)
+
+_ribbonBar.Items.Add(_ribbonButton6)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonSeparator_images/RibbonSeparator_img1.jpeg)
 

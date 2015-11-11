@@ -1,20 +1,19 @@
 ---
 layout: post
-title: RibbonRadioButton | Ribbon | WPF | Syncfusion
-description: RibbonRadioButton
+title: RibbonRadioButton for Syncfusion's Ribbon control for WPF
+description: RibbonRadioButton for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # RibbonRadioButton
 
-RibbonRadioButton control is used to select options among a group in Ribbon instance. 
+RibbonRadioButton control is used to select a option like normal RadioButton . 
 
-The following code example illustrates how to use RibbonRadioButton control in Ribbon instance.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -42,15 +41,15 @@ The following code example illustrates how to use RibbonRadioButton control in R
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
 
-Create instance of RibbonRadioButton and add it to RibbonBar Items.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of RibbonRadioButton and add it to RibbonBar through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 RibbonRadioButton _ribbonRadioButton1 = new RibbonRadioButton(){Content = "ReadOnly", IsChecked = true , GroupName = "Group1"};      
 
@@ -60,9 +59,28 @@ _ribbonBar2.Items.Add(_ribbonRadioButton1);
 
 _ribbonBar2.Items.Add(_ribbonRadioButton2);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonRadioButton1 As New RibbonRadioButton() With {
+	.Content = "ReadOnly",
+	.IsChecked = True,
+	.GroupName = "Group1"
+}
+
+Dim _ribbonRadioButton2 As New RibbonRadioButton() With {
+	.Content = "WriteOnly",
+	.GroupName = "Group1"
+}
+
+_ribbonBar2.Items.Add(_ribbonRadioButton1)
+
+_ribbonBar2.Items.Add(_ribbonRadioButton2)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonRadioButton_images/RibbonRadioButton_img1.jpeg)
 

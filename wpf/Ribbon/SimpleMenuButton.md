@@ -1,22 +1,19 @@
 ---
 layout: post
-title: SimpleMenuButton | Ribbon | WPF | Syncfusion
-description: SimpleMenuButton
+title: SimpleMenuButton for Syncfusion's Ribbon control for WPF
+description: SimpleMenuButton for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # SimpleMenuButton
 
-The difference between `SimpleMenuButton` and the other menu button is that it cannot have a sub menu. This control when added outside the ribbon instance will not have the desired appearance.
+The difference between `SimpleMenuButton` and the other menu button is that it cannot have a sub menu. And it can be used with ApplicationMenu. 
 
-SimpleMenuButton can be used with ApplicationMenu. 
 
-The following code example illustrates How to use SimpleMenuButton control in Ribbon instance.
+{% tabs %}
 
-{% highlight xml %}
-
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -44,11 +41,13 @@ The following code example illustrates How to use SimpleMenuButton control in Ri
 
 {% endhighlight %}
 
-Create instance of SimpleMenuButton and add it to ApplicationMenu Items.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of SimpleMenuButton and add it to ApplicationMenu Items through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 SimpleMenuButton _SimpleMenuButton = new SimpleMenuButton() { Label = "File", Width = 100 };
 
@@ -59,6 +58,26 @@ _ApplicationMenu.Items.Add(_SimpleMenuButton);
 _ApplicationMenu.Items.Add(_SimpleMenuButton1);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _SimpleMenuButton As New SimpleMenuButton() With {
+	.Label = "File",
+	.Width = 100
+}
+
+Dim _SimpleMenuButton1 As New SimpleMenuButton() With {
+	.Label = "Open",
+	.Width = 100
+}
+
+_ApplicationMenu.Items.Add(_SimpleMenuButton)
+
+_ApplicationMenu.Items.Add(_SimpleMenuButton1)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](SimpleMenuButton_images/SimpleMenuButton_img1.jpeg)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonStatusBar | Ribbon | WPF | Syncfusion
-description: RibbonStatusBar
+title: RibbonStatusBar for Syncfusion's Ribbon control for WPF
+description: RibbonStatusBar for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,11 +10,10 @@ documentation: ug
 
 `RibbonStatusBar` control is added to RibbonWindow to display the current status of the application or document similar in Microsoft Office.
 
-The following code example illustrates how to use RibbonStatusBar control in RibbonWindow.
 
-{% highlight xml %}
+{% tabs %}
 
-[XAML]
+{% highlight XAML %}
 
 <syncfusion:RibbonWindow.StatusBar>
 
@@ -40,11 +39,13 @@ The following code example illustrates how to use RibbonStatusBar control in Rib
 
 {% endhighlight %}
 
-Create instance of StatusBar and assign it to RibbonStatusBar property of RibbonWindow.
+{% endtabs %}
 
-{% highlight c# %}
+Create instance of StatusBar and assign it to RibbonStatusBar property of RibbonWindow through code behind.
 
-[C#]
+{% tabs %}
+
+{% highlight C# %}
 
 RibbonStatusBar _ribbonStatusBar = new RibbonStatusBar();
 
@@ -63,6 +64,34 @@ _ribbonStatusBar.Items.Add(_wrapPanel);
 _ribbonWindow.StatusBar = _ribbonStatusBar;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbonStatusBar As New RibbonStatusBar()
+
+Dim _wrapPanel As New WrapPanel()
+
+Dim _textBlock1 As New Label() With {
+	.Content = "Ready",
+	.Foreground = Brushes.WhiteSmoke
+}
+
+Dim _textBlock2 As New Label() With {
+	.Content = "Page No 1",
+	.Foreground = Brushes.WhiteSmoke
+}
+
+_wrapPanel.Children.Add(_textBlock1)
+
+_wrapPanel.Children.Add(_textBlock2)
+
+_ribbonStatusBar.Items.Add(_wrapPanel)
+
+_ribbonWindow.StatusBar = _ribbonStatusBar
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonStatusBar_images/RibbonStatusBar_img1.jpeg)
 

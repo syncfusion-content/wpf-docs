@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonComboBox | Ribbon | WPF | Syncfusion
-description: RibbonComboBox
+title: RibbonComboBox and its items for Syncfusion's Ribbon control for WPF
+description: RibbonComboBox and its items for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -10,13 +10,14 @@ documentation: ug
 
 RibbonComboBox control is used to display the list of items, as ComboBox.
 
-### Creating control in XAML
+## Add ComboBoxItems
 
-`RibbonComboBox` can added directly to RibbonBar element.
+ComboBoxItems are the items with `Header` property that is used to set header.
 
-{% highlight xml %}
 
-[XAML]
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
@@ -66,17 +67,15 @@ RibbonComboBox control is used to display the list of items, as ComboBox.
 
 </syncfusion:Ribbon>
 
-
-
 {% endhighlight %}
 
-### Creating control in code behind			
+{% endtabs %}
 
-Create instance for `RibbonComboBox` and add it to RibbonBar Items.
+Create instance for `RibbonComboBox` and add it to RibbonBar Items in Code behind
 
-{% highlight c# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 ButtonPanel _buttonPanel = new ButtonPanel();
 
@@ -114,9 +113,49 @@ _buttonPanel.Children.Add(_ribbonComboBox2);
 
 _ribbonBar2.Items.Add(_buttonPanel);
 
+{% endhighlight %}
 
+{% highlight VB %}
+
+Dim _buttonPanel As New ButtonPanel()
+
+Dim _ribbonComboBox1 As New RibbonComboBox() With {.Width=80}
+
+Dim _ribbonComboBox2 As New RibbonComboBox() With {.Width=50}
+
+Dim comboBoxItem1 As New RibbonComboBoxItem() With {.Content = "Arial"}
+
+Dim comboBoxItem2 As New RibbonComboBoxItem() With {.Content = "Calibri"}
+
+Dim comboBoxItem3 As New RibbonComboBoxItem() With {.Content = "Tahoma"}
+
+Dim comboBoxItem4 As New RibbonComboBoxItem() With {.Content = "11"}
+
+Dim comboBoxItem5 As New RibbonComboBoxItem() With {.Content = "12"}
+
+Dim comboBoxItem6 As New RibbonComboBoxItem() With {.Content = "13"}
+
+_ribbonComboBox.Items.Add(comboBoxItem1)
+
+_ribbonComboBox.Items.Add(comboBoxItem2)
+
+_ribbonComboBox.Items.Add(comboBoxItem3)
+
+_RibbonComboBox1.Items.Add(comboBoxItem4)
+
+_ribbonComboBox1.Items.Add(comboBoxItem5)
+
+_ribbonComboBox1.Items.Add(comboBoxItem6)
+
+_buttonPanel.Children.Add(_ribbonComboBox1)
+
+_buttonPanel.Children.Add(_ribbonComboBox2)
+
+_ribbonBar2.Items.Add(_buttonPanel)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](RibbonComboBox_images/RibbonComboBox_img1.jpeg)
 
