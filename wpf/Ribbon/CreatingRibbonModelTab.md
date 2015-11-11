@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating Ribbon Model Tab | Ribbon | WPF | Syncfusion
-description: Creating Ribbon Model Tab
+title: Creating Ribbon ModalTab in Syncfusion Ribbon control
+description: Creating Ribbon ModalTab in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
