@@ -33,20 +33,30 @@ The visual style can be applied for the DockingManager using the property `Visua
 
 * Blend – Set the visual style as Blend for the DockingManager.
 
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Blend");
 
 
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Blend")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
 
 
 * Office2007Blue – Set visual style for DockingManager as Office2007Blue.
+
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -54,127 +64,190 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Blue");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2007Blue")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](StylingandTemplates_images/StylingandTemplates_img2.jpeg)
 
 
 * Office2007Black – Setting visual style for DockingManager as Office2007Black.
 
+
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
 
 
 * Office2007Silver – Setting visualstyle for the DockingManager as Office2007Silver.
 
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2007Silver");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2007Silver")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img4.jpeg)
 
 
 * Office2010Blue – Set the visual style for DockingManager as Office2010Blue.
 
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2010Blue");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2010Blue")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img5.jpeg)
 
 
 * Office2010Black – Set visual style for DockingManager as Office2010Black
 
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2010Black");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2010Black")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img6.jpeg)
 
 
 
-
 * Office2010SSilver – Set visual style as Office2010Silver.
+
+
+{% tabs %}
 
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Office2010Silver");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Office2010Silver")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img7.jpeg)
 
 
 * VS2010- Setting visual style for the DockingManager as VS2010.
 
+
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"VS2010");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"VS2010")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img8.jpeg)
 
 
 * Metro – Sett visual style for DockingManager as Metro.
 
+
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Metro");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Metro")
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img9.jpeg)
 
 
 * Transparent – Setting visual style for DockingManager as Transparent.
 
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(DockingManager1,"Transparent");
 
-
-
-
-
 {% endhighlight %}
+
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(DockingManager1,"Transparent")
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](StylingandTemplates_images/StylingandTemplates_img10.jpeg)
 
