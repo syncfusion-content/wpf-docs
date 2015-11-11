@@ -13,7 +13,7 @@ documentation: ug
 The windows from one DockingManager cannot be dragged and dropped to another DockingManager by default. But Linked Manager support allows to drag and drop the windows from one DockingManager to another by setting `TargetDockingManager` list.
 
 Source Docking Manager
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
 
@@ -30,7 +30,7 @@ Source Docking Manager
 
 
 Target Docking Manager
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True">
 
@@ -47,7 +47,7 @@ Target Docking Manager
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 public partial class MainWindow : Window
 {
@@ -112,7 +112,7 @@ Here, the windows from DockingManager1 are only allowed to be dragged and droppe
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
 
@@ -131,7 +131,7 @@ To drag and drop the window from DockingManager2 to DockingManager1, DockingMana
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.DockingManager1.AddToTargetManagersList(MainWindow.DockingManager2);
 
@@ -157,7 +157,7 @@ To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManag
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 MainWindow.DockingManager2.RemoveFromTargetManagersList(this.DockingManager1);
 
@@ -180,7 +180,7 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 ### Adding DockingManager as Child in DockingManager
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" syncfusion:DockingManager.Header="Dock1">
 

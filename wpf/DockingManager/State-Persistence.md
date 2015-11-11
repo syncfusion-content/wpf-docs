@@ -16,7 +16,7 @@ To reset the DockingManager state, call `ResetState()` method of DockingManager 
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.ResetState();
 
@@ -37,7 +37,7 @@ To delete the Dockstate of the DockingManager, call `DeleteDockState()` of Docki
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.DeleteDockState();
 
@@ -56,7 +56,7 @@ DockingManager supports AutoSave support, that allows to persist its state autom
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager1.PersistState = true;     
 
@@ -74,7 +74,7 @@ To load the AutoPersiststate of the DockingManager, call the `LoadDockState()` m
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 void DockingManager1_Loaded(object sender, RoutedEventArgs e)
 {
@@ -124,7 +124,7 @@ DockingManager allows to save and load the dockstate from isolated storage.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Shows the Isolated storage format.
 
@@ -158,7 +158,7 @@ DockingManager allows to save and load the xml file. It is done using binary for
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Shows serialization methods using xml file.
 
@@ -213,7 +213,7 @@ DockingManager allows to load and save the dock state in the binary format file.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Shows the load and save dockstate in bindary formatter.
 
@@ -252,7 +252,7 @@ DockingManager allows to load and save the dock state using XMLWriter.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Shows the SaveDockSte method using xmlwriter.
 

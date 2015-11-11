@@ -25,7 +25,7 @@ The five sides that can be docked are
 To dock 4 children of a DockingManager in 4 different sides, then use `SideInDockedMode` property with the required values.
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <ContentControl syncfusion:DockingManager.Header="Docking Left" syncfusion:DockingManager.SideInDockedMode= "Left" />
 
 <ContentControl syncfusion:DockingManager.Header="Docking Top"  syncfusion:DockingManager.SideInDockedMode= "Top"/>
@@ -50,7 +50,7 @@ Docking window can also be docked at any side of the Target Docking Window throu
 Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of DockingManager that targets a single Docking window docked along Left, Top, Right and Tabbed.
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <ContentControl syncfusion:DockingManager.Header="Targeted Window" x:Name="DockingWindow1"/>
 
 <!--Targeted to Docking Window1 on Top Side-->
@@ -96,7 +96,7 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager MaximizeButtonEnabled="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer"/>
@@ -120,7 +120,7 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager MaximizeButtonEnabled="True" MaximizeMode="FullScreen"/>
 
 
@@ -138,7 +138,7 @@ To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `T
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" MinimizeButtonEnabled="True">
 
 <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"/>
@@ -161,7 +161,7 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DockingManager MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.CanMinimize="False" />
@@ -185,7 +185,7 @@ The DockWindow Header can be highlighted when the mouse is hovered on an active 
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" IsEnableHotTracking="True"/>
@@ -204,7 +204,7 @@ The `CanDock` property can help to enable or disable the docking functionality b
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 
 <ContentControl syncfusion:DockingManager.CanDock="False" />
@@ -223,7 +223,7 @@ The `CanDock` property can help to enable or disable the docking functionality b
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <ContentControl syncfusion:DockingManager.Header="Toolbox"/>
 
