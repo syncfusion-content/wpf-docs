@@ -49,7 +49,7 @@ SmallIcon="/Resources/FormatPainter16.png"  />
 
 {% endtabs %}
 
-The below RibbonContextMenu will be generated when the user right click on the ribbon
+The below RibbonContextMenu gets generated when the user right click on the ribbon
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcc26813.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img1.jpeg)
 
@@ -170,12 +170,12 @@ End Sub
 
 {% endtabs %}
 
-The following snapshot will be generated before handling the RibbonContextMenu event
+The following snapshot gets generated before handling the RibbonContextMenu event
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLce6a396.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img4.jpeg)
 
 
-After the event is handled, the output will display as follows
+After the event is handled, the output gets display as follows
 
 ![](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img5.jpeg)
 
