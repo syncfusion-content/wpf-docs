@@ -24,8 +24,8 @@ The following are the steps to localize a control:
 
 To localize WPF controls, the resource file needs to be created as per following steps:
 
-1. Create a folder named Resources in the application.
-2. Open the Add New Item Dialog using Ctrl+Shift+A keys.
+1. Create a folder named "Resources" in the application.
+2. Open the "Add New Item" Dialog using Ctrl+Shift+A keys.
 3. Create a resource file, Resx file, and name it Syncfusion.Tools.Wpf.resx For example, Syncfusion.Tools.Wpf.fr-FR.resx
 
 ![](Localization_images/GettingStarted_img1.jpeg)
@@ -33,17 +33,17 @@ To localize WPF controls, the resource file needs to be created as per following
 
 N> In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
 
-## How to assign UI Culture to the application?
+## How to assign UI Culture to the application
 
-To assign Values in Resource, the resource file needs to be updated according to the following steps.
+To assign "Values" in Resource, the resource file needs to be updated according to the following steps.
 
-1. Open the required file by double clicking it from Solutions Explorer.
-2. Add the key, Name, and its corresponding localized value by editing its field as shown in the following image.
+1.Open the required file by double clicking it from Solutions Explorer.
+2.Add the key, Name, and its corresponding localized value by editing its field as shown in the following image.
 
 ![](Localization_images/GettingStarted_img2.jpeg)
 
 
-3. Similarly add all the keys, Name, needed for the required assembly. For example (Syncfusion.Tools.Wpf.dll). The following screenshot displays the String property names for Tools.WPF controls with French values.
+3.Similarly add all the keys, Name, needed for the required assembly. For example (Syncfusion.Tools.Wpf.dll). The following screenshot displays the String property names for Tools.WPF controls with French values.
 
 ![](Localization_images/GettingStarted_img3.jpeg)
 
@@ -52,7 +52,7 @@ N> The default resource file for applicable assemblies can be downloaded from th
 
 ## Assign a Current UI culture to the application
 
-Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file. The following code illustrates the implementation of culture information settings.
+Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file.
 
 {%highlight c#%}
 
