@@ -18,7 +18,10 @@ There are several ways to add Syncfusion control in to the Visual Studio WPF pro
 1. Syncfusion.Tools.Wpf
 2. Syncfusion.Shared.Wpf
 * Include an xml namespace for the above assemblies to the Main window.
-{% highlight xml %}
+
+{% tabs %}
+
+{% highlight xaml %}
 
 <Window
 
@@ -32,9 +35,13 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Now add the DockingManager control with a required optimal name by using the included namespace.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" />
 
@@ -42,11 +49,15 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Add Children to the Docking Manager 
 
 DockingManager can accept any control as its children. Here five content controls are added as the children that is displayed with different sides and states of the DockingManager.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager">
 
@@ -66,6 +77,8 @@ DockingManager can accept any control as its children. Here five content control
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
@@ -73,7 +86,9 @@ DockingManager can accept any control as its children. Here five content control
 
 DockingManger provides with an attached property `Header` that helps to set the header for a child window. Set the value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values as "Toolbox", “Properties”, ”Output” and ”Start Page”.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" >
 
@@ -93,6 +108,8 @@ DockingManger provides with an attached property `Header` that helps to set the 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
@@ -103,8 +120,9 @@ DockingManager provides an attached property `State` that helps to set the state
 To Auto hide the “ToolBox” window, set its `State` property as `AutoHidden`. Repeat the same procedure with the `State` value as `Float` and `Document` for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
 
 Also enable the Document Container for the Document view by setting the `UseDocumentContainer` property to `True`.
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
 
 <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer" />
@@ -123,6 +141,8 @@ Also enable the Document Container for the Document view by setting the `UseDocu
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
@@ -134,7 +154,9 @@ Set the `SideInDockMode` value as `Right` for “Solution Explorer” window to 
 
 The side property's `Tabbed` option is used to tab a window on another window. The tabbing windows need to be aware of the target window’s name. Set “Output” window’s `TargetNameInDockedMode` as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer"
@@ -156,14 +178,17 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
 ## Save / Load
 
 The `PersistState` feature of the DockingManager helps to save the current layout of the DockingManager automatically, while closing the window. To enable this feature, set `PersistState` property to `True`
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True">
 
@@ -183,15 +208,26 @@ The `PersistState` feature of the DockingManager helps to save the current layou
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The saved state can be reload by calling the `LoadDockState` method, whenever it is required to load the states.
+
+{% tabs %}
 
 {% highlight c# %}
 
 this.SyncDockingManager.LoadDockState();
 
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.SyncDockingManager.LoadDockState() 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Set Visual Styles
 
@@ -202,8 +238,9 @@ DockingManager supports various visual styles by using the `SfSkinManager`. To a
 2. Syncfusion.Thems.VisualStudio2013.Wpf
 
 * Include an xml namespace for the `SfSkinManager` assembly to the MainWindow.
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
 
@@ -225,9 +262,13 @@ Title="MainWindow" Height="350" Width="525" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Now apply the value as `VisualStudio2013` to the Visual Style property of the SfSkinManager for the DockingManager control.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="VisualStudio2013">
 
@@ -252,6 +293,8 @@ Title="MainWindow" Height="350" Width="525" />
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img5.jpeg)
 

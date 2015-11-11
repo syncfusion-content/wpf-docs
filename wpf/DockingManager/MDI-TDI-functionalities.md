@@ -53,11 +53,21 @@ The state of the MDI Window can be set using the `SetMDIWindowState()` method of
 
 ### Setting MDI Windowstate as Minimized
 
+{% tabs %}
+
 {% highlight c# %}
 
 DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img3.jpeg)
 
@@ -65,15 +75,27 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized);
 
 ### Setting MDI Windowstate as Maximized
 
+{% tabs %}
+
 {% highlight c# %}
 
 DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Getting state of the MDI window
 
 The state of the MDI window can be detect using the `GetMDIWindowState()` method of DocumentContainer.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -81,9 +103,19 @@ DocumentContainer.GetMDIWindowState(Content1);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DocumentContainer.GetMDIWindowState(Content1) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Detecting the maximized state of the MDI window
 
 Maximized state of the MDI Container can get by `IsInMDIMaximizedState` property of DocumentContainer. The container can be fetched from the DockingManager using the `DocContainer` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -91,15 +123,33 @@ Maximized state of the MDI Container can get by `IsInMDIMaximizedState` property
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+TryCast(DockingManager1.DocContainer, DocumentContainer).IsInMDIMaximizedState = True 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Resizing MDI
 
 MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property `IsAllowMDIResize` of the `Documentcontainer` that can be get using the `DocContainer` property of the DockingManager. By default, its values is `True`.
+
+{% tabs %}
 
 {% highlight c# %}
 
 (DockingManager1.DocContainer as DocumentContainer).IsAllowMDIResize = false;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+TryCast(DockingManager1.DocContainer, DocumentContainer).IsAllowMDIResize = False 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Different Keyboard Navigation Modes
 
@@ -115,18 +165,28 @@ There are five switch modes.
 
 ### Immediate – Switch the MDI document windows immediately.
 
+{% tabs %}
+
 {% highlight c# %}
 
 DockingManager1.SwitchMode =SwitchMode.Immediate;
 
 {% endhighlight %}
 
+{% highlight VB %}
 
+DockingManager1.SwitchMode =SwitchMode.Immediate 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
 
 
 ### List – Switch the MDI document windows in list format.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -134,12 +194,21 @@ DockingManager1.SwitchMode = SwitchMode.List;
 
 {% endhighlight %}
 
+{% highlight VB %}
 
+DockingManager1.SwitchMode =SwitchMode.List 
+
+{% endhighlight %}
+
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img5.jpeg)
 
 
 ### QuickTabs
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -147,10 +216,21 @@ DockingManager1.SwitchMode = SwitchMode.QuickTabs;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.SwitchMode =SwitchMode.QuickTabs 
+
+{% endhighlight %}
+
+
+{% endtabs %}
+
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img6.jpeg)
 
 
 ### VistaFlip
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -158,17 +238,36 @@ DockingManager1.SwitchMode = SwitchMode.VistaFlip;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.SwitchMode =SwitchMode.VistaFlip 
+
+{% endhighlight %}
+
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img7.jpeg)
 
 
 ### VS2005
 
+{% tabs %}
+
 {% highlight c# %}
 
 DockingManager1.SwitchMode = SwitchMode.VS2005;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+DockingManager1.SwitchMode =SwitchMode.VS2005 
+
+{% endhighlight %}
+
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
 
@@ -180,6 +279,8 @@ DockingManager allows to set the different layout for the MDI windows with the d
 `Horizontal` - Arranges the MDI windows horizontally.
 
 
+{% tabs %}
+
 {%highlight c#%}
 
 void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
@@ -189,10 +290,22 @@ void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 
 {%endhighlight%}
 
+{% highlight VB %}
+
+Private Sub DocumentContainer_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	TryCast(DockingManager1.DocContainer, DocumentContainer).SetLayout(MDILayout.Horizontal)
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img9.jpeg)
 
 
  `Vertical` – Arranges the MDI windows vertically.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -203,10 +316,22 @@ void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 
 {%endhighlight%}
 
+{% highlight VB %}
+
+Private Sub DocumentContainer_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	TryCast(DockingManager1.DocContainer, DocumentContainer).SetLayout(MDILayout.Vertical)
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img10.jpeg)
 
 
 `Cascade` - Arranges the layout in a cascade manner.
+
+{% tabs %}
 
 {%highlight C#%}
 
@@ -216,6 +341,16 @@ void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 }
 
 {%endhighlight%}
+
+{% highlight VB %}
+
+Private Sub DocumentContainer_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	TryCast(DockingManager1.DocContainer, DocumentContainer).SetLayout(MDILayout.Vertical)
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img11.jpeg)
 
@@ -256,11 +391,21 @@ A document window can be placed at different index position using the `SetTDIInd
 
 {% endhighlight %}
 
+{% tabs %}
+
 {% highlight C# %}
 
 TDILayoutPanel.SetTDIIndex(Content1,0);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+TDILayoutPanel.SetTDIIndex(Content1,0) 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
 
@@ -316,21 +461,41 @@ TDI document can be grouped like VisualStudio. It can be grouped by drag and Dro
 
 To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticallTabGroup(UIElement)` of the DocumentContainer.
 
+{% tabs %}
+
 {% highlight c# %}
 
 (DockingManager1.DocContainer as DocumentContainer).CreateVerticalTabGroup(Content1);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+TryCast(DockingManager1.DocContainer, DocumentContainer).CreateVerticalTabGroup(Content1) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Creating Horizontal Tab Group 
 
 To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method `CreateHorizontalTabGroup(UIElement)` of the DocumentContainer.
+
+{% tabs %}
 
 {% highlight c# %}
 
 (DockingManager1.DocContainer as DocumentContainer).CreateHorizontalTabGroup(Content1);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGroup(Content1)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Adding Tab in a Group 
 
@@ -403,6 +568,8 @@ To hide the TDI document header when a single document child present in a Dockin
 
 In DockingManager, the New button can be added in the Document state windows using the `IsNewButtonEnabled` property of the DocumentTabControl. To achieve this, DocumentTabControl must be fetched from the DockingManager.
 
+{% tabs %}
+
 {% highlight c# %}
 
 DocumentTabControl tab = VisualUtils.FindDescendant(DockingManager1,typeof (DocumentTabControl)) as DocumentTabControl;
@@ -415,6 +582,20 @@ if (tab != null)
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim tab As DocumentTabControl = TryCast(VisualUtils.FindDescendant(DockingManager1,GetType(DocumentTabControl)), DocumentTabControl)
+
+If tab IsNot Nothing Then
+   tab.IsNewButtonEnabled = True
+   tab.NewButtonBackground = Brushes.Green
+End If 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
 

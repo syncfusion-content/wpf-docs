@@ -17,10 +17,10 @@ Here a simple text-reader application is used to demonstrate this approach.
 ![](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
 
-1. `DocumentsView`: The pane that lists all the available documents. The tooltip will display the path of the document.
+1. `DocumentsView`: The pane that lists all the available documents and tooltip display the path of the document.
 2. `PropertiesView`: The pane that shows the properties of a document. Our PropertyGrid control is used here.
 3. `DocumentView`: The pane that uses the WPF flow-document reader to display the content of a file.
-4. `CommandView`: The view has two commands: `Open` Document and `Exit`. Executing an Open Document action will open the Open File Dialog. The document that opened will be added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
+4. `CommandView`: The view has two commands: `Open` Document and `Exit`. Executing an Open Document action opens the Open File Dialog. The document that opened, added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
 5. The project structure looks like this:
 
 ![](PatternandPractices_images/PatternandPractices_img2.jpeg)
