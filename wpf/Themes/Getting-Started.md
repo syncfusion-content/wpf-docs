@@ -72,7 +72,9 @@ There are several ways to add the Syncfusion `SfSkinManager` in to Visual Studio
 1. Create a WPF project in Visual Studio and refer to the `SfSkinManager` assembly (Syncfusion.SfSkinManager.Wpf)
 2. Include an xml namespace for the assembly to the Main window.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Window
 
@@ -88,6 +90,8 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Add Themes to the Application
 
 Syncfusion UI controls for WPF supports various visual styles stated above. The corresponding style resources are included with the specific theme assemblies.  To apply Visual Studio style, use “Syncfusion.Themes.VisualStudio2013.Wpf”. Also, refer to the required theme assemblies with the project when needed.
@@ -96,7 +100,9 @@ Syncfusion UI controls for WPF supports various visual styles stated above. The 
 
 By using the `VisualStyle` attached property of the SfSkinManager, you can apply any build in themes to the required control.  Now, apply the value as `VisualStudio2013` to the VisualStyle property of the SfSkinManager for the Docking Manager control.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True"
                            PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="VisualStudio2013">
 
@@ -121,6 +127,8 @@ By using the `VisualStyle` attached property of the SfSkinManager, you can apply
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
@@ -131,7 +139,9 @@ You can switch various build in themes at the runtime by using the `VisualStyle`
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 <Grid>
 
 <Grid.RowDefinitions>
@@ -187,9 +197,11 @@ You can switch various build in themes at the runtime by using the `VisualStyle`
 
 {% endhighlight %}
 
+{% endtabs %}
+
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
@@ -221,7 +233,7 @@ By Default SfSkinManager merges the required resource files from the Theme assem
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 SfSkinManager.ApplyStylesOnApplication = true;
 
@@ -239,7 +251,9 @@ SfSkinManager.ApplyStylesOnApplication = True
 
 To apply the built-in themes to your derived control using SfSkinManager, you have to set the `SetResourceReference` in the custom control. This is required to refer style property of the derived control.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 
 <local:DockingAdv x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
@@ -259,6 +273,8 @@ To apply the built-in themes to your derived control using SfSkinManager, you ha
 </local:DockingAdv>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% tabs %}
 
