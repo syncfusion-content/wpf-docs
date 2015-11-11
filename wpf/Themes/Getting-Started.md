@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes | WPF | Syncfusion
+title: Steps to apply themes for Syncfusion Essential WPF controls
 description: common supports
 platform: wpf
 control: Themes

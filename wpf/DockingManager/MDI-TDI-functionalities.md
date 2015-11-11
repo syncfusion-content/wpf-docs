@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MDI/ TDI functionalities | DockingManager | WPF | Syncfusion
+title: MDI/ TDI functionalities of Syncfusion's DockingManager control for WPF
 description: MDI/ TDI functionalities 
 platform: wpf
 control: DockingManager

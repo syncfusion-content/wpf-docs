@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment | WPF | Syncfusion
+title: Installation and Deployment process for Syncfusion Essential Studio WPF products
 description: common supports
 platform: wpf
 control: Installation and Deployment

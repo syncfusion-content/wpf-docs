@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Patterns and Practices | Docking Manager | WPF | Syncfusion
+title: Patterns and Practices of Syncfusion's DockingManager control for WPF
 description: Patterns and Practices
 platform: wpf
 control: DockingManager

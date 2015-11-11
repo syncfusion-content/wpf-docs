@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion VPAT | WPF | Syncfusion
+title: Section 508 Compliance for Syncfusion Essential Studio WPF products
 description: Section 508 Compliance for WPF
 platform: WPF
 control: Section 508 Compliance

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization | WPF | Syncfusion
+title: Steps to localize the Syncfusion Essential WPF controls
 description: common supports
 platform: wpf
 control: Localization
