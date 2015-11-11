@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Ribbon Items | Ribbon | WPF | Syncfusion
-description: Arranging Ribbon items using ButtonPanel
+title: Dealing with Ribbon Items
+description: This topic deal with arranging Ribbon items, changing size of item, adding LaunchButton to RibbonBar
 platform: wpf
 control: Ribbon
 documentation: ug

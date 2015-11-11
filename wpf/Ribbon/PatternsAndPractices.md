@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Patterns and Practices | Ribbon | WPF | Syncfusion
-description: Patterns and Practices
+title: Patterns and Practices with Syncfusion Ribbon control
+description: MVVM and PRISM support with Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

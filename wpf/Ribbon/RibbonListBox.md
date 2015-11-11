@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonListBox and its items for Syncfusion's Ribbon control for WPF
-description: RibbonListBox and its items for Syncfusion's Ribbon control for WPF
+title: RibbonListBox in Syncfusion Ribbon control
+description: RibbonListBox in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

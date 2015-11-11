@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling and Templates | Ribbon | WPF | Syncfusion
-description: Styling and Templates
+title: Styling and Template for Syncfusion Ribbon control
+description: Styling and Template for Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 # Styling and Templates
 
-The Ribbon control ships with a number of built-in themes such as Office2003, Office2010 Silver, Blue, Black, Blend, Metro and Office2013. 
+The Ribbon control ships with a number of built-in themes such as Office2003, Office2007, Office2010 Silver, Blue, Black, Blend, VS, Transparent, Metro and Office2013. 
 
 ## Visual Styles
 To override the themes to the Ribbon control’s style, add ResourceDictionary in the sample and define new style with the BasedOn property. When the Resource Dictionary is added, all the properties of the base style can be acquired, then override them as desired. The same procedure can be used for overriding the other styles. Here an example is illustrated to set the BackStageColor for the Ribbon by customizing the RibbonStyle using the BasedOn property.

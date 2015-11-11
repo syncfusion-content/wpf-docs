@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DropDownButton and its items for Syncfusion's Ribbon control for WPF
-description: DropDownButton and its items for Syncfusion's Ribbon control for WPF
+title: RibbonDropDownButton in Syncfusion Ribbon control
+description: RibbonDropDownButton in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

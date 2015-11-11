@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonRadioButton for Syncfusion's Ribbon control for WPF
-description: RibbonRadioButton for Syncfusion's Ribbon control for WPF
+title: RibbonRadioButton in Syncfusion Ribbon control
+description: RibbonRadioButton in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

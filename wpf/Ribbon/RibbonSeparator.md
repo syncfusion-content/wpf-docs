@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ribbon Separator for Syncfusion's Ribbon control for WPF
-description: Ribbon Separator for Syncfusion's Ribbon control for WPF
+title: RibbonSeperator in Syncfusion Ribbon control
+description: RibbonSeperator in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

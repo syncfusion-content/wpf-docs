@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing With Ribbon | Ribbon | WPF | Syncfusion
-description: Three types of RibbonState
+title: Dealing with Syncfusion Ribbon control
+description: This topic deal with RibbonState and ContextTabGroup
 platform: wpf
 control: Ribbon
 documentation: ug
