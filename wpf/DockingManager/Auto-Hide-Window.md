@@ -307,19 +307,37 @@ On mouse over the AutoHidden tab, the autohide animation starts. To disable this
 
 To autohide all docked windows in the DockingManager, call `AutoHideAllDockWindow` method of the Docking Manager.
 
+{% tabs %}
+
 {% highlight C# %}
 
-DockingManager. AutoHideAllDockWindow();
-
-
+DockingManager.AutoHideAllDockWindow();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager.AutoHideAllDockWindow();
+
+{% endhighlight %}
+
+{% endtabs %}
+
 To unpin all autohide windows in the DockingManager, call `UnPinAllAutoHide` method of the Docking Manager.
+
+{% tabs %}
 
 {% highlight C# %}
 
 DockingManager.UnPinAllAutoHide();
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+DockingManager.UnPinAllAutoHide();
+
+{% endhighlight %}
+
+{% endtabs %}
 

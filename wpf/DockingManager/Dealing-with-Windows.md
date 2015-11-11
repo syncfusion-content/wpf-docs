@@ -12,6 +12,8 @@ documentation: ug
 
 A particular child window can be activated in DockingManager using its name or reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
 
+{% tabs %}
+
 {% highlight c# %}
 
 DockingManager1.ActiveWindow = Content1;
@@ -21,6 +23,16 @@ DockingManager1.ActivateWindow("Content1");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.ActiveWindow = Content1
+
+DockingManager1.ActivateWindow("Content1") 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img1.jpeg)
 
 
@@ -29,6 +41,8 @@ DockingManager1.ActivateWindow("Content1");
 Any UI element can be added inside the DockingManager as its child windows. The windows is added as Dock windows, since the default value of the state is `Dock`.  The UI element is added in the DockingManager using the `Add` method of the Children property of the DockingManager.
 
 For example, ContentControl is added as a window for DockingManager
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -69,12 +83,52 @@ DockingManager1.Children.Add(content5);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim DockingManager1 As New DockingManager()
+
+Dim content1 As New ContentControl()
+
+DockingManager.SetHeader(content1, "Window1")
+
+Dim content2 As New ContentControl()
+
+DockingManager.SetHeader(content2, "Window2")
+
+Dim content3 As New ContentControl()
+
+DockingManager.SetHeader(content3, "Window3")
+
+Dim content4 As New ContentControl()
+
+DockingManager.SetHeader(content4, "Window4")
+
+Dim content5 As New ContentControl()
+
+DockingManager.SetHeader(content5, "window5")
+
+DockingManager1.Children.Add(content1)
+
+DockingManager1.Children.Add(content2)
+
+DockingManager1.Children.Add(content3)
+
+DockingManager1.Children.Add(content4)
+
+DockingManager1.Children.Add(content5) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img2.jpeg)
 
 
 ### Setting State for Window programmatically
 
 The state for the particular child window can be set programmatically using the `SetState` method of DockingManager.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -83,11 +137,23 @@ DockingManager.SetState(content1, DockState.Float);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager.SetState(content1, DockState.Float) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img3.jpeg)
 
 
 
+
+
 * Setting state as Document – To create document window in the DockingManager, set UseDocumentContainer as True for DockingManager and set its state as Document.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -96,10 +162,21 @@ DockingManager.SetState(content1, DockState.Document);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.UseDocumentContainer = True
+DockingManager.SetState(content1, DockState.Document)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img4.jpeg)
 
 
 * Setting state as AutoHidden
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -107,11 +184,21 @@ DockingManager.SetState(content1, DockState.AutoHidden);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager.SetState(content1, DockState.AutoHidden)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img5.jpeg)
 
 #### Making Window AutoHide programatically
 
 To autohide the window programmatically call `ExecuteAutoHide` method of DockingManager.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -119,12 +206,22 @@ DockingManager1.ExecuteAutoHide(Content1);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager1.ExecuteAutoHide(Content1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img6.jpeg)
 
 
 #### Making Window Float and Document programmatically
 
 The docking window can be made to float and document using the SetState method with its DockState value as `Float` and `Document` respectively
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -140,16 +237,43 @@ DockingManager.SetState(Content1, DockState.Document);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+'to make the content1 float 
+
+DockingManager.SetState(Content1, DockState.Float)
+
+'to make the content1 as Document window
+
+DockingManager.SetState(Content1, DockState.Document)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Hiding Window Programmatically
 
 To hide the window, set `State` property of the DockingManager as `Hidden`.
 
+{% tabs %}
+
 {% highlight c# %}
 
 DockingManager.SetState(Content1, DockState.Hidden);
+
 {% endhighlight %}
 
+{% highlight VB %}
+
+DockingManager.SetState(Content1, DockState.Hidden)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 To hide the window programatically, call the `ExecuteClose` method with argument which refer the window need to be close.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -158,9 +282,20 @@ DockingManager1.ExecuteClose(Content1);
   
 {% endhighlight %}
 
+{% highlight VB %}
+
+'Hide the element that passed as argument
+DockingManager1.ExecuteClose(Content1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Restore Window Programmatically
 
 To restore the closed window in the DockingManager, call `ExecuteRestore` method.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -171,9 +306,22 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float);
 
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+'Restore the passed element with the state value as its argument
+
+DockingManager1.ExecuteRestore(Content1, DockState.Float) 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Removing Window Programmatically
 
 The windows for the Dockingmanager can be added using the Children collection. To remove the windows from the children collection, pass the window element that need to be remove using `Remove()` method of children property in DockingManager.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -198,6 +346,32 @@ dockingmanager.Children.Remove(content2);
 Grid1.Children.Add(dockingmanager);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim dockingmanager As New DockingManager()
+
+Dim content1 As New ContentControl()
+
+DockingManager.SetHeader(content1, "Dockwindow")
+
+Dim content2 As New ContentControl()
+
+DockingManager.SetHeader(content2,"Dockwindow2")
+
+dockingmanager.Children.Add(content1)
+
+dockingmanager.Children.Add(content2)
+
+'The following code describes how to remove the child window programatically using the remove method.
+
+dockingmanager.Children.Remove(content2)
+
+Grid1.Children.Add(dockingmanager) 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Restricting Docking in Float Window
 
