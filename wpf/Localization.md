@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steps to localize the Syncfusion Essential WPF controls
-description: common supports
+description: Learn how to localize the Syncfusion WPF component
 platform: wpf
 control: Localization
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Coded UI Testing for Syncfusion Essential WPF controls
-description: common supports
+description: Learn how to test with CodedUI for Syncfusion Essential WPF controls
 platform: wpf
 control: Testing
 documentation: ug

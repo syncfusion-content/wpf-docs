@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System requirements needed to use Syncfusion Essential WPF components
-description: common supports
+description: Learn what are the system requirements needed to use Syncfusion Essential WPF components
 platform: wpf
 control: System Requirement
 documentation: ug
