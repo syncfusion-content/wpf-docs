@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Patterns and Practices of Syncfusion DockingManager control for WPF
-description: Patterns and Practices
+description: MVVM and PRISM support with DockingManager control
 platform: wpf
 control: DockingManager
 documentation: ug

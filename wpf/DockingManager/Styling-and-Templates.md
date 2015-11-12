@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Templates of Syncfusion DockingManager control for WPF
-description: Styling and Templates
+description: Learn how to customize the windows in DockingManager by editing Style and Template
 platform: wpf
 control: DockingManager
 documentation: ug

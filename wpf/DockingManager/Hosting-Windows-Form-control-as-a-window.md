@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hosting Windows Form control as a child in Syncfusion DockingManager control for WPF
-description: Hosting Windows Form control as a window
+description: Learn how to host Windows Forms control as a child window of DockingManager 
 platform: wpf
 control: DockingManager
 documentation: ug
