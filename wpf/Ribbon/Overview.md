@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Welcome to Syncfusion Ribbon control | Complete guide for Ribbon control
+title: Overview of Syncfusion Ribbon control for WPF
 description: Features overview of Ribbon control for WPF
 platform: wpf
 control: Ribbon

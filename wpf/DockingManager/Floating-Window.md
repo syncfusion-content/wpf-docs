@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Float Window of Syncfusion's DockingManager control for WPF
+title: Float Window of Syncfusion DockingManager control for WPF
 description: Floating Window
 platform: wpf
 control: DockingManager
