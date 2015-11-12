@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion's DockingManager control for WPF
+title: Getting Started with Syncfusion DockingManager control for WPF
 description: A quick tour to initial users on Syncfusion's DockingManager control for WPF
 platform: wpf
 control: DockingManager
