@@ -102,9 +102,13 @@ Dim textBoxExt1 As New Syncfusion.Windows.Controls.Input.SfTextBoxExt()
 {% highlight C# %}
 
 textBoxExt1.Height = 20;
+
 textBoxExt1.Width = 120;
+
 textBoxExt1.Margin = new Thickness(10, 10, 10, 10);
+
 textBoxExt1.VerticalAlignment = VerticalAlignment.Center;
+
 textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center;
 
 {% endhighlight %}
@@ -112,9 +116,13 @@ textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center;
 {% highlight VB %}
 
 textBoxExt1.Height = 20
+
 textBoxExt1.Width = 120
+
 textBoxExt1.Margin = New Thickness(10, 10, 10, 10)
+
 textBoxExt1.VerticalAlignment = VerticalAlignment.Center
+
 textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center
 
 {% endhighlight %}
@@ -136,6 +144,7 @@ this.Content = textBoxExt1;
 {% highlight VB %}
 
 ' Here this denotes parent Window
+
 Me.Content = textBoxExt1 'Here this denotes parent Window
 
 {% endhighlight %}
