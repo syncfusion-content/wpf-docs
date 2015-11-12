@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started for Localization
 
-Localization is the process of making your application multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain. 
+Localization is the process of making application as multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example `en-US` is the culture for English spoken in United States; `en-GB` is the culture for English spoken in Great Britain. 
 
-Syncfusion controls allows you to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx. And by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
+Syncfusion controls allows to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx and by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
 
 The following are the steps to localize a control:
 
@@ -48,11 +48,9 @@ To assign "Values" in Resource, the resource file needs to be updated according 
 ![](Localization_images/GettingStarted_img3.jpeg)
 
 
-N> The default resource file for applicable assemblies can be downloaded from the table provided at the end.
-
 ## Assign a Current UI culture to the application
 
-Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file.
+Mention the culture to be referred while initializing the application, so that application refer to the appropriate value provided in resource file.
 
 {% tabs %}
 
