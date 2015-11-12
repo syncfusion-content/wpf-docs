@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tabbed Window of Syncfusion DockingManager control for WPF
-description: Tabbed Window
+description: Learn how to change the tab alignments and closing behaviour of Tabbed Window
 platform: wpf
 control: DockingManager
 documentation: ug
