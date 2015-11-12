@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Dependencies and Dependency assembly details for Syncfusion Essential WPF controls
-description: Control Dependencies for WPF
+description: Control and it's Dependency assembly details for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Control Dependencies
 documentation: ug

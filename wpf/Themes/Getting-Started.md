@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steps to apply themes for Syncfusion Essential WPF controls
-description: common supports
+description: Learn how to apply the themes for Syncfusion Essential WPF controls
 platform: wpf
 control: Themes
 documentation: ug
