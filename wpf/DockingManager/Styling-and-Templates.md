@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Templates of Syncfusion's DockingManager control for WPF
+title: Styling and Templates of Syncfusion DockingManager control for WPF
 description: Styling and Templates
 platform: wpf
 control: DockingManager

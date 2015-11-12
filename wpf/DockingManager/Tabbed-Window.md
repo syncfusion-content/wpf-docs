@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tabbed Window of Syncfusion's DockingManager control for WPF
+title: Tabbed Window of Syncfusion DockingManager control for WPF
 description: Tabbed Window
 platform: wpf
 control: DockingManager

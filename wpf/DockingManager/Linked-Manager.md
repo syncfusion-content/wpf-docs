@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linked and Nested functionalities of Syncfusion's DockingManager control for WPF
+title: Linked and Nested functionalities of Syncfusion DockingManager control for WPF
 description: Linked Manager 
 platform: wpf
 control: DockingManager
