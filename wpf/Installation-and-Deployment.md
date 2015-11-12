@@ -20,22 +20,22 @@ The following procedure illustrates how to install Essential Studio.
 5. Click Next. The Select the Installation and Samples Folder window opens.
 6. To install it in the displayed default location, click Install.
 7. Select the Run Dashboard check box to launch the Dashboard after installing.
-8. Click Finish. Essential Studio is installed in your system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
+8. Click Finish. Essential Studio is installed in system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
 ## Nuget Installation
 
 
 Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps helps to add the reference of the Syncfusion assemblies in the Project References.
 
-1. Right-click on Project and choose the Manage NuGet Packages.
-2. Select Online. Refer to the following screenshot for more information. 
+1.Right-click on Project and choose the Manage NuGet Packages.
+2.Select Online. Refer to the following screenshot for more information. 
 
 ![](Installation_images/Installation_img1.jpeg)
 
 
-3. Install the required corresponding framework control to use in Visual Studio projects. You can install the dependent assemblies when needed. The framework number at the end of package name like 35, 40, 45, 451 and 46 are added.
-4. Find the installed Syncfusion Packages in the Directory location of the created project (Syncfusion Packages).
-5. You can [configure ](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm)Nuget for the required purpose.
+3.Install the required corresponding framework control to use in Visual Studio projects. Dependent assemblies can be add when it needed. The framework number at the end of package name like 35, 40, 45, 451 and 46 are added.
+4.Find the installed Syncfusion Packages in the Directory location of created project (Syncfusion Packages).
+5.[Configure ](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm)Nuget for the required purpose.
 
 ## Commandline installation
 
@@ -59,7 +59,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## Copy Local
 
-Copying assemblies in local folder is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its `Copy Local` property of the reference to True, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. And this deployment consists of copying the exe, dlls, xmls files to the client machines that are similar to manual copy.
+Copying assemblies in local folder is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its `Copy Local` property of the reference to `True`, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders and this deployment consists of copying the exe, dlls, xmls files to the client machines that are similar to manual copy.
 
 ![](Deployment_images/Deployment_img1.jpeg)
 
@@ -90,7 +90,7 @@ Signing ClickOnce involves two steps,
 #### Signing the manifest
 
 
-Navigate to project properties and select Signing tab. In the tab check “Sign the ClickOnce manifests” and select “Select From File” option and sign the application with the attached .pfx file.
+Navigate to project properties and select "Signing" tab. In the tab check “Sign the ClickOnce manifests” and select “Select From File” option and sign the application with the attached .pfx file.
 
 ![](Deployment_images/Deployment_img4.jpeg)
 
@@ -104,7 +104,7 @@ In the Publish tab, click “Options” and check “Use application manifest fo
 
 #### Publish options dialog box
 
-Before publishing, install the attached certificate in your machine. Follow the below steps for installing certificate in your machine.
+Before publishing, install the attached certificate in machine. Follow the below steps for installing certificate in machine.
 
 1. Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager.
 2. Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the .pfx to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing.

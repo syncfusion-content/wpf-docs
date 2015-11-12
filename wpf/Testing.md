@@ -77,10 +77,6 @@ You can test the application with the generated CUIT method.
 
 1.Add a test method called CodedUITestProject1.
 
-
-
-The following code example explains the test method.
-
 {% tabs %}
 
 {% highlight C# %}

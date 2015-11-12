@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential WPF | WPF | Syncfusion
+title: Overview of Syncfusion Essential Studio WPF products
 description: common supports
 platform: wpf
 control: Overview
