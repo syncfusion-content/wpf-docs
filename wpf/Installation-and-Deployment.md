@@ -49,11 +49,15 @@ Follow the given steps to install through Command Line in Silent mode.
 5. Cancel the wizard.
 6. Open Command Prompt in administrator mode and pass the following arguments for corresponding version.
 
-{% highlight console %}  
+{% tabs %}
+
+{% highlight Console %}  
 
 “Setup file path\SyncfusionEssentialStudio_({{ site.releaseversion }}).exe” Install /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}]
 
 {% endhighlight %} 
+
+{% endtabs %}
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
@@ -116,11 +120,15 @@ The above process signs only deployment manifest. To sign the application execut
 
 Sign the application executable by using the Post-build command and use the signtool.exe as in the following command.
 
-{% highlight console %} 
+{% tabs %}
+
+{% highlight Console %} 
 
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\signtool.exe" sign /f "$(ProjectDir)syncfusion.pfx" /p Coolcomp299 /v "$(ProjectDir)obj\x86\$(ConfigurationName)\SampleName.exe"
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> Now, sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory.
 
