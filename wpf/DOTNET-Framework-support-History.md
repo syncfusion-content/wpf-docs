@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .NET Framework support history for Syncfusion Essential WPF controls
-description: common supports
+description: .NET Framework support history for Syncfusion Essential WPF controls
 platform: wpf
 control: .Net Framework support History
 documentation: ug

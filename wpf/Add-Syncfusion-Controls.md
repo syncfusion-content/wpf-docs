@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steps to add Syncfusion Essential WPF controls
-description: common supports
+description: Learn how to add Syncfusion Essential WPF control to the application
 platform: wpf
 control: Add Syncfusion Controls
 documentation: ug

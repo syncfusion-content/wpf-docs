@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pattern and Practices for Syncfusion Essential WPF controls
-description: common supports
+description: Learn how to use MVVM Commands and Events of Syncfusion Essential WPF controls
 platform: wpf
 control: Pattern and Practices
 documentation: ug
