@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialize and De-Serialize the state of Syncfusion DockingManager control for WPF
-description: State Persistence
+title: State Persistence of Syncfusion DockingManager control for WPF
+description: Learn how to serialize and de-serialize the state of DockingManager child windows
 platform: wpf
 control: DockingManager
 documentation: ug
