@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Complete guide to WPF Theme Studio 
+title: Overview and complete guide to WPF Theme Studio 
 description: Desktop-based, intuitive UI customization tool for easy customization of skins and themes for the Syncfusion control suite
 platform: wpf
 control: Themes
