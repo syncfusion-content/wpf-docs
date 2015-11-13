@@ -511,7 +511,7 @@ Public Class ImageConverter
 ## Practice with PRISM
 
 
-Ribbon control provides PRISM support. The following steps explin about creating simple sample project in the PRISM.
+Ribbon control provides PRISM support. The following steps explain about creating simple sample project in the PRISM.
 
 1.Create new WPF project and add the following references to the solution project.
 		

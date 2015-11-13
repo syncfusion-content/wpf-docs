@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Float Window of Syncfusion's DockingManager control for WPF
-description: Floating Window
+title: Float Window of Syncfusion DockingManager control for WPF
+description: This topic deals with float window features and how to position the float window
 platform: wpf
 control: DockingManager
 documentation: ug

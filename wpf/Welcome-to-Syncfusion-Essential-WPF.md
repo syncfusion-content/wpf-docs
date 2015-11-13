@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential WPF | WPF | Syncfusion
-description: common supports
+title: Overview of Syncfusion Essential Studio WPF products
+description: Guide for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Overview
 documentation: ug

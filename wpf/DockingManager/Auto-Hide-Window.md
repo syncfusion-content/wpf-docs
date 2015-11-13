@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutoHide Window of Syncfusion's DockingManager control for WPF
-description: Auto-Hide Window
+title: AutoHide Window of Syncfusion DockingManager control for WPF
+description: Learn how to customize SidePanel, SideTabItem and change pinning behaviour of AutoHide window
 platform: wpf
 control: DockingManager
 documentation: ug

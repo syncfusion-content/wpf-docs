@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Patterns and Practices of Syncfusion's DockingManager control for WPF
-description: Patterns and Practices
+title: Patterns and Practices of Syncfusion DockingManager control for WPF
+description: MVVM and PRISM support with DockingManager control
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -29,6 +29,8 @@ Here a simple text-reader application is used to demonstrate this approach.
 ### Docking Adapter
 The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
 
+{% tabs %}
+
 {% highlight XAML %}
 
 <mvvm:dockingadapter itemssource="{Binding Workspaces}" activedocument="{Binding ActiveDocument,Mode=TwoWay}">
@@ -39,6 +41,7 @@ The adapter is simply a user control that contains DockingManager as its content
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](PatternandPractices_images/PatternandPractices_img3.jpeg)
 
@@ -66,6 +69,8 @@ Every dock element in the application is a workspace. There are three kinds of w
 #### Data Template
 
 Since WPF has an implicit template approach, it is easy to apply visuals to the view models. In this application, the data templates are defined in App.xaml with only the DataType attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
+
+{% tabs %}
 
 {% highlight XAML %}
 <application.resources>
@@ -105,6 +110,8 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Following this approach, the docking adapter can also be treated as a normal item control and can be used in any MVVM application.
 
@@ -264,6 +271,8 @@ xmlns:prsm="http://www.codeplex.com/prism"
 
 In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
 
+{% tabs %}
+
 {% highlight XAML %}
 <Window x:Class="DockingManagerPrism.App.MainWindow "
 
@@ -292,6 +301,8 @@ Title="MainWindow" Height="350" Width="525">
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 6.Add Module to the project.
 
@@ -353,6 +364,8 @@ End Sub
 
 8.Adding Views to the Module, shown here is bottomleftmodule, similary the view for the module can be added according to number of modules.
 
+{% tabs %}
+
 {% highlight XAML %}
 <UserControl x:Class="DockingManagerPrism.Modules.BottomLeftModule"
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -372,6 +385,8 @@ End Sub
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 9.Add a region to the shell.
 

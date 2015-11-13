@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linked and Nested functionalities of Syncfusion's DockingManager control for WPF
-description: Linked Manager 
+title: Linked and Nested functionalities of Syncfusion DockingManager control for WPF
+description: Learn how to form the Linked Manager and Nested DockingManager
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -13,6 +13,9 @@ documentation: ug
 The windows from one DockingManager cannot be dragged and dropped to another DockingManager by default. But Linked Manager support allows to drag and drop the windows from one DockingManager to another by setting `TargetDockingManager` list.
 
 Source Docking Manager
+
+{% tabs %}
+
 {% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
@@ -28,8 +31,12 @@ Source Docking Manager
 
 {% endhighlight %}
 
+{% endtabs %}
 
 Target Docking Manager
+
+{% tabs %}
+
 {% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager2" UseDocumentContainer="True">
@@ -44,6 +51,8 @@ Target Docking Manager
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% tabs %}
 
@@ -180,6 +189,8 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 ### Adding DockingManager as Child in DockingManager
 
+{% tabs %}
+
 {% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" syncfusion:DockingManager.Header="Dock1">
@@ -205,6 +216,8 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](LinkedManager_images/LinkedManager_img2.jpeg)
 

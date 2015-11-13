@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Windows of Syncfusion's DockingManager control for WPF
-description: Dealing with Windows
+title: Dealing with Windows of Syncfusion DockingManager control for WPF
+description: Learn how to deal with windows of DockingManager progrmmatically and customize the windows
 platform: wpf
 control: DockingManager
 documentation: ug

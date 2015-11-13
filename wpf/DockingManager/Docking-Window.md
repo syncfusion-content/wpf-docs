@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dock Window of Syncfusion's DockingManager control for WPF
-description: Docking Window
+title: Dock Window of Syncfusion DockingManager control for WPF
+description: Learn how to configure DockWindow in different sides and targets and features in DockWindow
 platform: wpf
 control: DockingManager
 documentation: ug
