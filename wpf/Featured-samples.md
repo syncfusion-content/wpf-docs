@@ -25,7 +25,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 ![](Guidetorunthesamples_images/Guidetorunthesamples_img1.jpeg)
 
 
-To execute the locally installed samples, select the corresponding product and click RUN local samples.
+To execute the locally installed samples, select the corresponding product and click "RUN LOCAL SAMPLES".
 
 ## Online Samples
 

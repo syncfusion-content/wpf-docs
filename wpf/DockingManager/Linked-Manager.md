@@ -162,7 +162,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(Me.DockingManager1)
 {% endtabs %}
 ### Removing Target Manager list
 
-To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManagerList()` of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow teh below code snippets:
+To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManagerList()` of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
 
 {% tabs %}
 
