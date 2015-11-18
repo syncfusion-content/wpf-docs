@@ -459,7 +459,7 @@ End Class
 
 {% endtabs %}
 
-Then when you run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
+Then when run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
 ![](PatternandPractices_images/PatternandPractices_img5.jpeg)
 

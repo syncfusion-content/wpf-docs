@@ -53,7 +53,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 ## Add Children to the Docking Manager 
 
-DockingManager can accept any control as its children. Here five content controls are added as the children that is displayed with different sides and states of the DockingManager.
+DockingManager can accept any control as its children. Here five content controls are added as the children of the DockingManager.
 
 {% tabs %}
 
