@@ -89,7 +89,7 @@ The `CanFloat` property helps to enable or disable the floating functionality by
 
 ## Enabling and Disabling the float functionality Operation on Double Click
 
-The float window changes its state to `Dock` when you double click its header by default. To disable this functionality for the specific child, set `NoDock` property as `True`.       
+The float window changes its state to `Dock` when double click its header by default. To disable this functionality for the specific child, set `NoDock` property as `True`.       
 
 {% tabs %}
 

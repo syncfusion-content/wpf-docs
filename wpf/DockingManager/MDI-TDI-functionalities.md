@@ -570,7 +570,7 @@ TDI document of DockingManager can be changed to Float while dragging its TDI he
 
 ## TDI Header Renaming Support
 
-To enable the functionality of editing the TDI document header when you double click on document header at runtime, set the property `EnableDocumentTabHeaderEdit` of the DockingManager as `True`. By default, its value is `False`.
+To enable the functionality of editing the TDI document header when double click on document header at runtime, set the property `EnableDocumentTabHeaderEdit` of the DockingManager as `True`. By default, its value is `False`.
 
 {% tabs %}
 

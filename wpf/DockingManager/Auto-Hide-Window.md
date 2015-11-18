@@ -128,7 +128,7 @@ The SideTabItem can be customized using the attached properties `SideTabItemFore
 
 ## Excel-like Scrollable panel
 
-The `EnableScrollableSidePanel` feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default EnableScrollableSidePanel value is `False`, to enable this feature you can set its value to `True`.
+The `EnableScrollableSidePanel` feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default EnableScrollableSidePanel value is `False`, this feature can be enabled by set its value to `True`.
 
 {% tabs %}
 

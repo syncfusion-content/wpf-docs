@@ -14,7 +14,7 @@ The `DockingManager` control implements an architecture that allows child contro
 ## Features
 
 * DockingManager supports different dock states such as Docking, Floating, AutoHide and Document.
-* Multiple Document Interface (MDI)/Tabbed Document Interface(TDI) windows are available in DockingManager.
+* Multiple Document Interface (MDI) / Tabbed Document Interface(TDI) windows are available in DockingManager.
 * Various window switchers available for navigating between the windows 
 * Built-in ContextMenu support such as TabListContextMenu and TabItem context menu. 
 * DockingManager support all possible ways for dock the elements.
