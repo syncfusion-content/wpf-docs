@@ -38,6 +38,7 @@ N> In case, the Shared dll controls is used in the application, then create an
 To assign "Values" in Resource, the resource file needs to be updated according to the following steps.
 
 1.Open the required file by double clicking it from Solutions Explorer.
+
 2.Add the key, Name, and its corresponding localized value by editing its field as shown in the following image.
 
 ![](Localization_images/GettingStarted_img2.jpeg)

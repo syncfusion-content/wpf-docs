@@ -98,7 +98,7 @@ Syncfusion UI controls for WPF supports various visual styles stated above. The 
 
 ### Apply Visual Style to Controls
 
-By using the `VisualStyle` attached property of the SfSkinManager, you can apply any build in themes to the required control.  Now, apply the value as `VisualStudio2013` to the VisualStyle property of the SfSkinManager for the Docking Manager control.
+Any build in themes can applied to the required control by `VisualStyle` attached property of the SfSkinManager.  Now, apply the value as `VisualStudio2013` to the VisualStyle property of the SfSkinManager for the Docking Manager control.
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ By using the `VisualStyle` attached property of the SfSkinManager, you can apply
 
 ### Apply themes at run time
 
-You can switch various build in themes at the runtime by using the `VisualStyle` property. Here, a ComboBox Control is used to switch various build-in themes that are referred in the assembly references.
+Applied build in themes can be chnaged at the runtime by the `VisualStyle` property. Here, a ComboBox Control is used to switch various build-in themes that are referred in the assembly references.
 
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -249,7 +249,7 @@ SfSkinManager.ApplyStylesOnApplication = True
 
 ## Apply Style to custom controls
 
-To apply the built-in themes to your derived control using SfSkinManager, you have to set the `SetResourceReference` in the custom control. This is required to refer style property of the derived control.
+To apply the built-in themes to derived control using SfSkinManager, set the `SetResourceReference` in the custom control. This is required to refer style property of the derived control.
 
 {% tabs %}
 
