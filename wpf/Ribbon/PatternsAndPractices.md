@@ -10,7 +10,11 @@ documentation: ug
 
 ## Ribbon with MVVM
 
-For better control customization MVVM pattern can be followed. The following code illustrate a simple MVVM pattern with Ribbon control
+For better control customization MVVM pattern can be followed. The following steps illustrate a simple MVVM pattern with Ribbon control
+
+1.Create new WPF project
+
+2.Add `Model` class for each element which need to be included in Ribbon control. In this sample class has been created for RibbonTab, RibbonBar and RibbonItem
 
 ###Model
 
@@ -108,6 +112,8 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+
+3.Create `ViewModel` class where the collection has been declared and the items has been populated to it.
 
 ###ViewModel
 
@@ -263,6 +269,8 @@ End Class
 
 {% endtabs %}
 
+4.In XAML bind the collection to Ribbon control and use ItemContainerStyle to bind the inner level items like RibbonBar and RibbonItems
+
 ####MainWindow.xaml
 
 {% tabs %}
@@ -366,6 +374,8 @@ ItemsSource="{Binding CustomRibbonTabs}" >
 {% endhighlight %}
 
 {% endtabs %}
+
+5.Converter class is used to set `SizeForm` for the Ribbon items and to set images.
 
 ####Converter.cs
 
@@ -504,6 +514,8 @@ Public Class ImageConverter
 {% endhighlight %}
 
 {% endtabs %}
+
+Now the output displays the Ribbon control with the populated items
 
 ![](PatternsandPractices_images/PatternsandPractices_img1.jpeg)
 
