@@ -14,14 +14,15 @@ Tooltip is used to display small information about the specific element while ho
 
 ScreenTip has four properties.
 
-1. `Description` - Specifies the description of the ScreenTip.
-2. `Image` - Specifies the image of the ScreenTip.
-3. `Content` - Specifies the content of the ScreenTip.
-4. `HelpText` - Specifies the HelpText of the ScreenTip.
+1.	Description - Specifies the description of the ScreenTip.
+2.	Image - Specifies the image of the ScreenTip.
+3.	Content - Specifies the content of the ScreenTip.
+4.	HelpText - Specifies the HelpText of the ScreenTip.
+
 
 ## Adding Tooltip for Ribbon items
 
-The following code illustrates how to set Tooltip for the RibbonItems
+Ribbon ToolTip  can be set to each Ribbon items by defining ScreenTip inside the ToolTip.
 
 {% tabs %}
 
@@ -124,7 +125,7 @@ The following code illustrates how to set Tooltip for the RibbonItems
 
 ## Setting the ToolTip for the Upper and Lower Half of the Split Button
 
-The ToolTip property is used to set the tooltip for the upper half of the Split Button, while the `ToggleButtonToolTip` property is used to set the tooltip for the drop-down in the lower half of the split button. Here is the code snippet for setting these properties.
+The ToolTip property is used to set the tooltip for the upper half of the Split Button, while the ToggleButtonToolTip property is used to set the tooltip for the drop-down in the lower half of the split button.
 
 {% tabs %}
 
@@ -168,10 +169,6 @@ The ToolTip property is used to set the tooltip for the upper half of the Spli
 
 Essential Tool WPF is enhanced with HelpText option. Users can add help text in ScreenTip. A line separator separates the Screen tip information from help text.
 
-N> When no HelpText is set the HelpText area and line seperator get automatically hidden
- 
-Insert HelpText in ScreenTip, by using the following code.
-
 {% tabs %}
 
 {% highlight XAML %}
@@ -190,5 +187,6 @@ Insert HelpText in ScreenTip, by using the following code.
 
 {% endtabs %}
 
-
+N> When no HelpText is set to the HelpT ext area and line seperator get automatically hidden
+ 
 
