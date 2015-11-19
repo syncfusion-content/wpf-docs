@@ -12,7 +12,7 @@ To invoke any command using KeyBoard, Ribbon control provides KeyTip support to 
 
 ## Adding KeyTip to the Ribbon items
 
-RibbonControl provides with an attached property called KeyTip that helps to set the KeyTip for the Ribbonitem. It also let to set the KetTip for the RibbonTab,Launcher Button,and for the controls which are needed to add in the Ribbon Instance like RibboButton,SplitButton…etc
+RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also let to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibboButton,SplitButton…etc
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ syncfusion:Ribbon.KeyTip="CR" />
 
 ## KeyTip for QAT items
 
-KeyTip for the QAT items gets displayed by default by pressing Alt Key.The KeyTips are arranged in the order like…1,2,3,4,5,6,7,8,9,09,08,07…….01,0A,0B……etc.
+KeyTip for the QAT items gets displayed by default by pressing Alt Key. The `KeyTips` are arranged in the order like…1,2,3,4,5,6,7,8,9,09,08,07…….01,0A,0B…… etc.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ syncfusion:RibbonCommandManager.SynchronizedItem="Save" SmallIcon="/Resources/Sa
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML11490702.PNG](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img2.jpeg)
 
 
-## How to access particular item in Ribbon using KeyTip?
+## How to access particular item in Ribbon using KeyTip
 
 The below example illustrates how to access particular Ribbonitem using KeyTip
 
@@ -173,7 +173,7 @@ Finally, Press the RibbonComboBox KeyTip to access it
 ![](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img5.jpeg)
 
 
-## How does BackStage can be accessed using KeyTip?
+## How does BackStage can be accessed using KeyTip
 
 The backstage feature of the Ribbon control provides KeyTip support to display KeyTips on pressing the Alt key. It is also possible to set KeyTip for the BackStage elements which includes BackStageCommandButton, BackStageTabItem
 
