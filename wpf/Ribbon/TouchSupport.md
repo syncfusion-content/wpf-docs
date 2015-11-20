@@ -10,7 +10,7 @@ documentation: ug
 
 Ribbon control have touch support and it provides Touch UI which is easy to access the element in Ribbon. 
 
-### How to enable touch in RibbonWindow?
+### How to enable touch in RibbonWindow
 
 To enable touch in the RibbonWindow, set `EnableTouch` property of the SkinStorage as `True`. The following code snippet illustrates this
 

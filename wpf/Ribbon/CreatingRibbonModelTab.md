@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Creating Ribbon Model Tab
 
-Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are found in the core tabs. At this point, the core tab gets be disabled.
+Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are available in the core tabs. At this point, the core tab gets disabled.
 
 ## Use Case Scenarios
 
@@ -22,7 +22,7 @@ Print Preview is a Modal Tab which displays Print Preview related commands
 
 ## Adding Modal Tabs to an Application
 
-To add RibbonTabs as ModalTabs in an application,use `ModalTabCollection` property of the Ribbon. This is illustrated in the code given below.
+To add RibbonTabs as ModalTabs in an application, use `ModalTabCollection` property of the Ribbon. 
 
 {% tabs %}
 
@@ -56,13 +56,11 @@ To add RibbonTabs as ModalTabs in an application,use `ModalTabCollection` proper
 
 
 
-## How to handle Modal Tabs in Ribbon?
+## How to handle Modal Tabs in Ribbon
 
 The `ShowModalTab` and `CloseModalTabs` method handle the visibility of the Modal Tabs in the Ribbon control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
 
-To show specific Modal Tab in ribbon, call `ShowModalTab` method.This can be done from any event of core Ribbon Tab control
-
-This is illustrated in the code given below.
+To show specific Modal Tab in ribbon, call ShowModalTab method. This can be done from any event of core Ribbon Tab control.
 
 {% tabs %}
 

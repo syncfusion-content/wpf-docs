@@ -43,7 +43,7 @@ The Ribbon State Persistence feature helps users to load the state of the Ribbon
 
 ### Persist Ribbon States at application Exit and Load
 
-To persist the Ribbon States at application exit and load, use AutoPersist property. It is also possible to handle the persisting states in Ribbon control by handling the AutoPersist property individually in Ribbon, QAT and Ribbon window. 
+To persist the Ribbon States at application exit and load, use `AutoPersist` property. It is also possible to handle the persisting states in Ribbon control by handling the AutoPersist property individually in Ribbon, QAT and Ribbon window. 
 
 The following code snippet shows how to handle the property in Ribbon elements.
 
@@ -85,12 +85,7 @@ Title="MainWindow" Height="350" Width="525" AutoPersist="True" x:Name="RibbonWin
 
 ## Persist Ribbon States any time while running the application
 
-WPF Ribbon control supports the persistence of its states any time while running the application. Ribbon states can be saved and loaded at any time by using Ribbon methods. 
-
-The methods to save and load the current Ribbon states are:
-
-* SaveRibbonState
-* LoadRibbonState
+WPF Ribbon control supports the persistence of its states any time while running the application. Ribbon states can be saved and loaded at any time by using `SaveRibbonState` and `LoadRibbonState` methods
 
 Before calling the methods, it is important to specify the persisting Ribbon elements in `PersistElements` collection.This collection can be changed at any time. Save and Load states at runtime are fully based on this collection details. The following code snippet shows how to add Ribbon elements that are required to retain its state.
 
@@ -269,7 +264,7 @@ End Sub
 
 ## Save and Load many Ribbon States
 
-Ribbon control states can easily be maintained in the Isolated Storage files. Further, It supports to Save the consecutive or different states of the Ribbon control in different Isolated Storage files and also load any saved state from the Isolated Storage files which is in old state. To save the different states of the Ribbon control at various times, use the below code
+Ribbon control states can easily be maintained in the Isolated Storage files. Further, It supports to Save the consecutive or different states of the Ribbon control in different Isolated Storage files and also load any saved state from the Isolated Storage files which is in old state.
 
 {% tabs %}
 
@@ -337,7 +332,7 @@ End Sub
 
 {% endtabs %}
 
-After saving the different states of the Ribbon Control, load the Ribbon state to any of the old states. The following code snippet explains the implementation.
+After saving the different states of the Ribbon Control, load the Ribbon state to any of the old states
 
 {% tabs %}
 
@@ -555,7 +550,7 @@ End Sub
 
 ## Reset Ribbon States
 
-To load the Normal (Initial) Ribbon state at runtime call the ResetRibbonState method.This is a parameter less method. This loads the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements.
+To load the Normal (Initial) Ribbon state at runtime call the `ResetRibbonState` method. This is a parameter less method. This loads the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while `AutoPersist` is enabled in Ribbon elements.
 
 {% tabs %}
 
@@ -586,12 +581,7 @@ End Sub
 
 ## Delete Ribbon States
 
-To delete the unused saved Isolated Storage files, use the DeleteRibbonState method. This method has two overloads. They are:
-
-* DeleteRibbonState()
-* DeleteRibbonState(IsolatedStorageFile isoStorage, string deletefileName)
-
-The first overloaded method is used to delete the default saved file from the default Isolated Storage file location. The following code snippet shows how to delete the default saved file.
+To delete the unused saved Isolated Storage files, use the DeleteRibbonState method.
 
 {% tabs %}
 
@@ -619,7 +609,7 @@ End Sub
 
 {% endtabs %}
 
-The second overloaded method is used to delete any file from specified Isolated Storage location. The following code snippet shows how to delete any file from the Isolated Storage location.
+Also this method is used to delete any file from specified Isolated Storage location.
 
 {% tabs %}
 
