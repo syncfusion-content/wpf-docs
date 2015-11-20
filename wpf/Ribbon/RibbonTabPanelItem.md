@@ -61,6 +61,6 @@ _ribbon.TabPanelItem = _ribbonButton
  
 {% endtabs %}
 
-![](RibbonTabPanelItem_images/RibbonTabPanelItem_img1.jpeg)
+![](RibbonTabPanelItem_images/RibbonTabPanelItem_img1.jpg)
 
 

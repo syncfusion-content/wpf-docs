@@ -25,7 +25,7 @@ To display items as a normal gallery control in the ribbon, set `VisualMode` pro
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img1.jpeg)
+![](RibbonGallery_images/RibbonGallery_img1.jpg)
 
 
 ## DropDown Mode
@@ -42,7 +42,7 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img2.jpeg)
+![](RibbonGallery_images/RibbonGallery_img2.jpg)
 
 
 ## Ribbon Gallery Item
@@ -126,7 +126,7 @@ _ribbonGallery.Items.Add(_ribbonGalleryItem2)
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img3.jpeg)
+![](RibbonGallery_images/RibbonGallery_img3.jpg)
 
 
 ## Ribbon Gallery Group
@@ -210,7 +210,7 @@ Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grou
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img4.jpeg)
+![](RibbonGallery_images/RibbonGallery_img4.jpg)
 
 
 ## Add Custom Menu Items
@@ -313,5 +313,5 @@ _ribbonGallery.MenuItems.Add(_ribbonButton3)
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img5.jpeg)
+![](RibbonGallery_images/RibbonGallery_img5.jpg)
 

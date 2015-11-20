@@ -85,7 +85,7 @@ _dropDownButton.Items.Add(_dropDownMenuItem2)
 {% endtabs %}
 
 
-![](DropDownButton_images/DropDownButton_img1.jpeg)
+![](DropDownButton_images/DropDownButton_img1.jpg)
 
 
 ## Add DropDownMenuItem to DropDownMenuGroup
@@ -194,7 +194,7 @@ _dropDownMenuGroup2.Items.Add(_dropDownMenuItem4)
 
 {% endtabs %}
 
-![](DropDownButton_images/DropDownButton_img2.jpeg)
+![](DropDownButton_images/DropDownButton_img2.jpg)
 
 
 ## Set various sizes for DropDownButton
@@ -270,4 +270,4 @@ _ribbonBar2.Items.Add(_dropDownButton3)
 
 {% endtabs %}
 
-![](DropDownButton_images/DropDownButton_img3.jpeg)
+![](DropDownButton_images/DropDownButton_img3.jpg)
