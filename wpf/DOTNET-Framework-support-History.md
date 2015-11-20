@@ -334,15 +334,6 @@ Yes</td></tr>
 <tr>
 <td>
 </td><td>
-CheckedListBox</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-</td><td>
 CheckListBox</td><td>
 Yes</td><td>
 Yes</td><td>
