@@ -63,6 +63,6 @@ _ribbonBar2.Items.Add(_ribbonTextBox)
  
 {% endtabs %}
 
-![](RibbonTextBox_images/RibbonTextBox_img1.jpeg)
+![](RibbonTextBox_images/RibbonTextBox_img1.jpg)
 
 

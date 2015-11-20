@@ -96,7 +96,7 @@ _RibbonBar2.Items.Add(_splitbutton)
 
 {% endtabs %}
 
-![](SplitButton_images/SplitButton_img1.jpeg)
+![](SplitButton_images/SplitButton_img1.jpg)
 
 
 ## Set various sizes for DropDownButton
@@ -163,5 +163,5 @@ _ribbonBar2.Items.Add(_splitbutton3)
 
 {% endtabs %}
 
-![](SplitButton_images/SplitButton_img2.jpeg)
+![](SplitButton_images/SplitButton_img2.jpg)
 

@@ -69,6 +69,6 @@ _ribbonBar2.Items.Add(_ribbonCheckBox)
 
 {% endtabs %}
 
-![](RibbonCheckBox_images/RibbonCheckBox_img1.jpeg)
+![](RibbonCheckBox_images/RibbonCheckBox_img1.jpg)
 
 

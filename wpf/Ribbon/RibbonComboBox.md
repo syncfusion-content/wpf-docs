@@ -157,6 +157,6 @@ _ribbonBar2.Items.Add(_buttonPanel)
 
 {% endtabs %}
 
-![](RibbonComboBox_images/RibbonComboBox_img1.jpeg)
+![](RibbonComboBox_images/RibbonComboBox_img1.jpg)
 
 
