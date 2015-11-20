@@ -164,7 +164,7 @@ Syncfusion.Shared.WPF</td><td>
 </td></tr>
 <tr>
 <td>
-CheckedListBox</td><td>
+CheckListBox</td><td>
 Syncfusion.Tools.WPF</td><td>
 Syncfusion.Shared.WPF</td></tr>
 <tr>
