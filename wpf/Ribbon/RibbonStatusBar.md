@@ -93,6 +93,6 @@ _ribbonWindow.StatusBar = _ribbonStatusBar
 
 {% endtabs %}
 
-![](RibbonStatusBar_images/RibbonStatusBar_img1.jpeg)
+![](RibbonStatusBar_images/RibbonStatusBar_img1.jpg)
 
 
