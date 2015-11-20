@@ -142,68 +142,68 @@ Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grou
 
 {% highlight XAML %}
 
-<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">                      
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+ 
+	<syncfusion:RibbonTab Caption="HOME" IsChecked="False"/>
 
-<syncfusion:RibbonTab Caption="HOME" IsChecked="False"/>               
+	<syncfusion:RibbonTab Caption="DESIGN" IsChecked="True">
 
-<syncfusion:RibbonTab IsChecked="False" Caption="DESIGN">
+		<syncfusion:RibbonBar Width="250" Header="RibbonBar">
+			
+			<syncfusion:RibbonGallery Name="_ribbonGallery" Width="230" VisualMode="DropDown" Label="RibbonGallery">
 
-<syncfusion:RibbonBar Width="250" Header="RibbonBar">
+			<syncfusion:RibbonGallery.GalleryFilters>
 
-<syncfusion:RibbonGallery Name="_ribbonGallery" Width="230" VisualMode="DropDown" Label="RibbonGallery" LargeIcon="Word.png" >                        
-
-<syncfusion:RibbonGallery.GalleryFilters>
-
-<syncfusion:RibbonGalleryFilter Label="All"/>
-
-<syncfusion:RibbonGalleryFilter Label="Group 1"/>
-
-<syncfusion:RibbonGalleryFilter Label="Group 2"/>
-
-</syncfusion:RibbonGallery.GalleryFilters>
-
-<syncfusion:RibbonGallery.GalleryGroups>
-
-<syncfusion:RibbonGalleryGroup Name="_ribbonGalleryGroup1" Label="Group 1">
-
-<syncfusion:RibbonGalleryItem Name="_ribbonGalleryItem1" Margin="5">
-
-<Image Source="OrangeLarge.png"/>
-
-</syncfusion:RibbonGalleryItem>
-
-<syncfusion:RibbonGalleryItem Name="_ribbonGalleryItem2" >
-
-<Image Source="BlueLarge.png"/>
-
-</syncfusion:RibbonGalleryItem>                      
-
-</syncfusion:RibbonGalleryGroup>
-
-<syncfusion:RibbonGalleryGroup  Name="_ribbonGalleryGroup2"  Label="Group 2">
-
-<syncfusion:RibbonGalleryItem Name="_RibbonGalleryItem3"  Margin="5">
-
-<Image Source="GreenLarge.png"/>
-
-</syncfusion:RibbonGalleryItem>
-
-<syncfusion:RibbonGalleryItem Name="_RibbonGalleryItem4"  >
-
-<Image Source="PinkLarge.png" />
-
-</syncfusion:RibbonGalleryItem>
-
-</syncfusion:RibbonGalleryGroup>
-
-</syncfusion:RibbonGallery.GalleryGroups>
-
-</syncfusion:RibbonGallery>
-
-</syncfusion:RibbonBar>
-
-</syncfusion:RibbonTab>
-
+			<syncfusion:RibbonGalleryFilter Label="All"/>
+            	
+				<syncfusion:RibbonGalleryFilter Label="Group 1"/>
+                
+				<syncfusion:RibbonGalleryFilter Label="Group 2"/>
+				
+            </syncfusion:RibbonGallery.GalleryFilters>
+						
+            <syncfusion:RibbonGallery.GalleryGroups>
+            
+				<syncfusion:RibbonGalleryGroup Name="_ribbonGalleryGroup1" Label="Group 1" syncfusion:RibbonGallery.FilterIndexes="0, 1">
+                
+					<syncfusion:RibbonGalleryItem Name="_ribbonGalleryItem1" Margin="5">
+                    
+						<Image Source="OrangeLarge.png" Stretch="None" />
+                    
+					</syncfusion:RibbonGalleryItem>
+                    
+					<syncfusion:RibbonGalleryItem Name="_ribbonGalleryItem2" Margin="5" >
+					
+                    	<Image Source="BlueLarge.png" Stretch="None"/>
+						
+                    </syncfusion:RibbonGalleryItem>
+					
+                </syncfusion:RibbonGalleryGroup>
+							
+                <syncfusion:RibbonGalleryGroup  Name="_ribbonGalleryGroup2"  Label="Group 2" syncfusion:RibbonGallery.FilterIndexes="0, 2">
+                	
+					<syncfusion:RibbonGalleryItem Name="_RibbonGalleryItem3"  Margin="5">
+                    	
+						<Image Source="GreenLarge.png" Stretch="None"/>
+                    
+					</syncfusion:RibbonGalleryItem>
+                    
+					<syncfusion:RibbonGalleryItem Name="_RibbonGalleryItem4" Margin="5" >
+                    	
+						<Image Source="PinkLarge.png" Stretch="None" />
+                    
+					</syncfusion:RibbonGalleryItem>
+					
+                </syncfusion:RibbonGalleryGroup>
+							
+            </syncfusion:RibbonGallery.GalleryGroups>
+			
+        	</syncfusion:RibbonGallery>
+					
+        </syncfusion:RibbonBar>
+		
+	</syncfusion:RibbonTab>
+	
 </syncfusion:Ribbon>
 
 {% endhighlight %}
