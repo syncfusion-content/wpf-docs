@@ -1,0 +1,149 @@
+---
+layout: post
+title: Rows and Columns | SfSpreadsheet | WPF | Syncfusion
+description: rows and columns
+platform: wpf
+control: SfSpreadsheet
+documentation: ug
+---
+
+# Rows and Columns
+
+### Insert and Delete
+
+_Inserting_ _Rows_ _and_ _Columns:_
+
+SfSpreadsheet provides support for dynamically inserting rows and columns into a worksheet. 
+
+{% highlight c# %}
+
+    //For Inserting Rows
+
+    spreadsheet.ActiveSheet.InsertRow(2, 3);
+
+    spreadsheet.ActiveGrid.Model.InsertRows(2, 3);
+
+    //For Inserting Cols
+
+    spreadsheet.ActiveSheet.InsertColumn(3, 2);
+
+    spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
+
+
+{% endhighlight %}
+
+_Deleting_ _Rows_ _and_ _Columns:_
+
+SfSpreadsheet provides support for deleting rows and columns from a worksheet,
+
+{% highlight c# %}
+
+    //For Deleting Rows
+
+    spreadsheet.ActiveSheet.DeleteRow(5, 2);
+
+    spreadsheet.ActiveGrid.Model.RemoveRows(5, 2);
+
+    //For Deleting Cols
+
+    spreadsheet.ActiveSheet.DeleteColumn(3, 2);
+
+    spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
+
+
+{% endhighlight %}
+
+### Hide and Unhide
+
+_Hiding_ _Rows_/_columns:_
+
+SfSpreadsheet provides support to hide rows/columns and this can be done by HideRow() and HideColumn() method
+
+{% highlight c# %}
+
+    //For Hiding Rows,
+
+    spreadsheet.ActiveSheet.HideRow(5);
+
+    spreadsheet.ActiveGrid.RowHeights.SetHidden(5, 5, true);
+
+    //For Hiding Cols,
+
+    spreadsheet.ActiveSheet.HideColumn(4);
+
+    spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
+
+
+
+{% endhighlight %}
+
+_Unhiding_ _Rows_/_Columns:_
+
+Unhide the rows/columns in SfSpreadsheet can be done by ShowRow() and ShowColumn() methods.
+
+{% highlight c# %}
+
+    //For Unhiding Rows,
+
+    spreadsheet.ActiveSheet.ShowRow(5, true);
+
+    spreadsheet.ActiveGrid.RowHeights.SetHidden(5, 5, false);
+
+    //For Unhiding Cols,
+
+    spreadsheet.ActiveSheet.ShowColumn(4,true);
+
+    spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, false);
+
+
+
+
+
+{% endhighlight %}
+
+### Row Height and Column Width
+
+SfSpreadsheet provides support to adjust the row height and column width. And also can import the adjusted row height and column width from Excel. SfSpreadsheet provides support to fit the row and column based on its contents.
+
+{% highlight c# %}
+
+    //For setting RowHeight for 4th Row
+
+    spreadsheet.ActiveGrid.SetRowHeight(4, 4, 30);
+
+    spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Row(4), true);
+
+    //For setting ColumnWidth for 5th Column
+
+    spreadsheet.ActiveGrid.SetColumnWidth(5, 5, 22);
+
+    spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
+
+
+
+
+
+{% endhighlight %}
+
+### Freeze Panes
+
+SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet
+
+{% highlight c# %}
+
+    //Freezepanes
+
+    //To Freeze 4 rows and 4 columns
+
+    spreadsheet.Workbook.ActiveSheet.Range[4, 4].FreezePanes();
+
+    spreadsheet.ActiveGrid.FrozenRows = 5;
+
+    spreadsheet.ActiveGrid.FrozenColumns = 5;
+
+
+
+
+
+{% endhighlight %}
+
