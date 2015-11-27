@@ -80,7 +80,7 @@ SfSpreadsheet control can be added into the application either via designer or v
 1. Create new WPF application in Visual Studio.
 2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 _Syncfusion_ _control_ _tab_
@@ -88,7 +88,7 @@ _Syncfusion_ _control_ _tab_
 
 3. Drag **SfSpreadsheet** and drop in the Designer area from the Toolbox
 
-![](GettingStarted_images/GettingStarted_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 _For_ _Spreadsheet_
@@ -113,7 +113,7 @@ _For_ _Ribbon_
 
 
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 ### Adding Control via Coding
 
@@ -182,7 +182,7 @@ To add the SfSpreadsheetRibbon in your application, then use the **RibbonWindow*
 
 __You__ __can__ __get__ __the__ __following__ __output__ __when__ __execute__ __the__ __application__.
 
-![](GettingStarted_images/GettingStarted_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
 ## Creating a new Excel Workbook
@@ -223,7 +223,7 @@ spreadsheet.Open(IWorkbook workbook)
 
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img5.jpeg)
+![](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
 _Opening_ _Excel_ _File_ _in_ _SfSpreadsheet_
