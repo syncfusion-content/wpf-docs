@@ -1,34 +1,46 @@
 ---
 layout: post
-title: SfSpreadsheet Terminology | SfSpreadsheet | WPF | Syncfusion
-description: sfspreadsheet terminology
+title: Working with SfSpreadsheet | SfSpreadsheet | WPF | Syncfusion
+description: working with sfspreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# SfSpreadsheet Terminology
+# Working with SfSpreadsheet
+
+## Working with Worksheet
 
 A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the IWorkbook interface. To access a workbook that is currently loaded in the SpreadsheetControl, “spreadsheet.Workbook” property is used
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 
-<table>
-<tr>
-<td>
-//By Specifying the index as,<br/><br/>spreadsheet.Workbook.Worksheets[0]<br/><br/>//By Specifying the sheet name as,<br/><br/>spreadsheet.Workbook.Worksheets["sheet1"]<br/><br/>//Access the Active worksheet as,<br/><br/>spreadsheet.ActiveSheet<br/><br/><br/><br/></td></tr>
-</table>
+{% highlight c# %}
+
+    //By Specifying the index as,
+      spreadsheet.Workbook.Worksheets[0]
+    //By Specifying the sheet name as,
+      spreadsheet.Workbook.Worksheets["sheet1"]
+    //Access the Active worksheet as,
+      spreadsheet.ActiveSheet
+      
+{% endhighlight %}
+
 For more information regarding working with worksheets, you can refer the following link
 
 [http://help.syncfusion.com/file-formats/xlsio/overview](http://help.syncfusion.com/file-formats/xlsio/overview# "")
 
+## Working with Grid
+
 Each worksheets in the workbook is loaded as SpreadsheetGrid’s in the SfSpreadsheet.
 
-<table>
-<tr>
-<td>
-//Access the Active SpreadsheetGrid as,<br/><br/>spreadsheet.ActiveGrid<br/><br/></td></tr>
-</table>
+{% highlight c# %}
+
+    //Access the Active SpreadsheetGrid as,
+      spreadsheet.ActiveGrid
+
+{% endhighlight %}
+
 When the workbook is loaded in the SfSpreadsheet, the WorkbookLoaded Event is invoked and when the workbook is removed from SfSpreadsheet, the WorkbookUnloaded Event is invoked.
 
 You can also access the each SpreadsheetGrid in the SfSpreadsheet by invoking WorkbookLoaded Event of SfSpreadsheet. 

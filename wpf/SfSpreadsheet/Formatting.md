@@ -9,7 +9,7 @@ documentation: ug
 
 # Formatting
 
-### Cell Styles
+## Cell Styles
 
 Styles and formats defined in an Excel file are automatically imported. Users can also apply these settings to cells during run time. The following are the formatting attributes for the cell.
 
@@ -61,7 +61,7 @@ For more information regarding cell styles and formatting options, please go thr
 
 [http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting](http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting# "")
 
-### Merge Cells
+## Merge Cells
 
 _Merge_
 

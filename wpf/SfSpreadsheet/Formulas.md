@@ -9,7 +9,7 @@ documentation: ug
 
 # Formulas
 
-### Supported Functions
+## Supported Functions
 
 SfSpreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. SfSpreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 

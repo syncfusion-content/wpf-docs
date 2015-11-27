@@ -26,10 +26,13 @@ By default, Selection behavior will be enabled in SfSpreadsheet, but if you want
 
 The Events associated with the Selection behavior are
 
-* SelectionChanging – Occurs when the selection is going to be changed
-* SelectionChanged  - Occurs after the selection is changed
-## Editing
+* SelectionChanging     – Occurs when the selection is going to be changed
+* SelectionChanged      - Occurs after the selection is changed
+* CurrentCellActivating - Occurs when the current cell is going to be activated
+* CurrentCellActivated  - Occurs after the current cell is activated
+* CellClick             - Occurs when you click on the cell
 
+## Editing
 
 The SfSpreadsheet control provides support for Editing, you can modify and commit the cell values in the workbook. The Events associated with the Editing are CurrentCellBeginEdit and CurrentCellEndEdit of SpreadsheetGrid.
 

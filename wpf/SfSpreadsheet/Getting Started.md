@@ -185,7 +185,7 @@ __You__ __can__ __get__ __the__ __following__ __output__ __when__ __execute__ __
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
-### Creating a new Excel Workbook
+## Creating a new Excel Workbook
 
 A new workbook can be created by using a Create method of SfSpreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
 
@@ -196,7 +196,7 @@ A new workbook can be created by using a Create method of SfSpreadsheet. By defa
 
 {% endhighlight %}
 
-### Opening the Existing Excel Workbook
+## Opening the Existing Excel Workbook
 
 The Excel Workbook can be opened in SfSpreadsheet using the Open method in various ways,
 
@@ -228,7 +228,7 @@ spreadsheet.Open(IWorkbook workbook)
 
 _Opening_ _Excel_ _File_ _in_ _SfSpreadsheet_
 
-### Saving the Excel Workbook
+## Saving the Excel Workbook
 
 The Excel workbook can be saved in SfSpreadsheet using **Save** method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location
 

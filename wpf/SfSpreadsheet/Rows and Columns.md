@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows and Columns
 
-### Insert and Delete
+## Insert and Delete
 
 _Inserting_ _Rows_ _and_ _Columns:_
 
@@ -53,7 +53,7 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 
 {% endhighlight %}
 
-### Hide and Unhide
+## Hide and Unhide
 
 _Hiding_ _Rows_/_columns:_
 
@@ -101,7 +101,7 @@ Unhide the rows/columns in SfSpreadsheet can be done by ShowRow() and ShowColumn
 
 {% endhighlight %}
 
-### Row Height and Column Width
+## Row Height and Column Width
 
 SfSpreadsheet provides support to adjust the row height and column width. And also can import the adjusted row height and column width from Excel. SfSpreadsheet provides support to fit the row and column based on its contents.
 
@@ -125,7 +125,7 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 
 {% endhighlight %}
 
-### Freeze Panes
+## Freeze Panes
 
 SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet
 

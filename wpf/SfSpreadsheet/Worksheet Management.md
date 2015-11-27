@@ -9,7 +9,7 @@ documentation: ug
 
 # Worksheet Management
 
-### Insert and Delete
+## Insert and Delete
 
 SfSpreadsheet provides support to insert and delete the worksheets in a workbook.
 
@@ -29,7 +29,7 @@ SfSpreadsheet provides support to insert and delete the worksheets in a workbook
 
 {% endhighlight %}
 
-### Hide and Unhide
+## Hide and Unhide
 
 SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
 
@@ -45,7 +45,7 @@ SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
 
 {% endhighlight %}
 
-### GridLines
+## GridLines
 
 SfSpreadsheet provides support to control the visibility and color of the Gridlines in a worksheet.
 
@@ -69,7 +69,7 @@ SfSpreadsheet provides support to control the visibility and color of the Gridli
 
 {% endhighlight %}
 
-### Headings
+## Headings
 
 SfSpreadsheet provides support to control the visibility of row and column headers in a worksheet
 
@@ -85,7 +85,7 @@ SfSpreadsheet provides support to control the visibility of row and column heade
 
 {% endhighlight %}
 
-### Zooming
+## Zooming
 
 SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The property “AllowZooming” determines whether to allow zooming or not.
 
@@ -103,7 +103,7 @@ The Events associated with the Zooming are
 
 . ZoomFactorChanging
 
-### Protection
+## Protection
 
 _**Workbook**_ _**Protection**_
 
