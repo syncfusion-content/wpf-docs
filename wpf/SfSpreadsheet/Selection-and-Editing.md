@@ -11,7 +11,7 @@ documentation: ug
 
 ## Selection
 
-The SfSpreadsheet control provides support for selection in grid both by mouse and keyboard interactions. It supports Row selection, Column selection and Cell selection.
+The SfSpreadsheet control provides support for selection in grid by using mouse, keyboard and touch interactions.
 
 By default, Selection behavior will be enabled in SfSpreadsheet, but if you want to disable the selection in SfSpreadsheet, then set the “AllowSelection” Property to be false.
 
@@ -26,9 +26,9 @@ By default, Selection behavior will be enabled in SfSpreadsheet, but if you want
 
 The Events associated with the Selection behavior are
 
-* SelectionChanging     – Occurs when the selection is going to be changed
+* SelectionChanging     – Occurs when the selection is going to be changed. This event allows to cancel the selection change.
 * SelectionChanged      - Occurs after the selection is changed
-* CurrentCellActivating - Occurs when the current cell is going to be activated
+* CurrentCellActivating - Occurs when the current cell is going to be activated. This event allow to cancel the current cell activation.
 * CurrentCellActivated  - Occurs after the current cell is activated
 * CellClick             - Occurs when you click on the cell
 
