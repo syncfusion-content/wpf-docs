@@ -11,7 +11,7 @@ documentation: ug
 
 ## Image
 
-SfSpreadsheet provides support to convert a worksheet in to an image of type bitmap or metafile based on the input range of rows and columns with all basic formats preserved, By using the function ConvertToImage(), converts the worksheet into Bitmap image.
+SfSpreadsheet provides support to convert a worksheet in to an image of type bitmap or metafile based on the input range of rows and columns with all basic formats preserved, By using the ConvertToImage() method, worksheet can be converted into an image.
 
 {% highlight c# %}
 
@@ -33,11 +33,11 @@ SfSpreadsheet provides support to convert a worksheet in to an image of type bit
 
 ## Pdf
 
-SfSpreadsheet provides support to export the Excel file to PDF using ExcelToPdfConverter. 
+SfSpreadsheet provides support to export the Excel workbook to PDF using ExcelToPdfConverter. 
 
 For converting the Excel sheet to PDF, “Syncfusion.ExcelToPDFConverter.Base.dll” and “Syncfusion.Pdf.Base.dll” references should be added.
 
-Convert the Excel workbook in SfSpreadsheet as Pdf document using Convert() method of ExcelToPdfConverter which is available under the name space “Syncfusion.ExcelToPdfConverter”
+Export the Excel workbook as Pdf document using Convert() method of ExcelToPdfConverter class which is available under the name space “Syncfusion.ExcelToPdfConverter”
 
 {% highlight c# %}
 
@@ -73,7 +73,7 @@ Convert the Excel workbook in SfSpreadsheet as Pdf document using Convert() meth
 
 ## Html
 
-SfSpreadsheet provides support to convert the excel sheet into HTML page.
+SfSpreadsheet provides support to convert the excel workbook into HTML page.
 
 {% highlight c# %}
 
