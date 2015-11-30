@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with SfSpreadsheet | SfSpreadsheet | WPF | Syncfusion
-description: working with sfspreadsheet
+title: Working with Spreadsheet | SfSpreadsheet | WPF | Syncfusion
+description: working with spreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Working with SfSpreadsheet
+# Working with Spreadsheet
 
 ## Working with Worksheet
 
@@ -32,7 +32,7 @@ For more information regarding working with worksheets, you can refer the follow
 
 ## Working with Grid
 
-Each worksheets in the workbook is loaded as SpreadsheetGrid’s in the SfSpreadsheet.
+Each worksheet in the workbook is loaded into the view as SpreadsheetGrid in the SfSpreadsheet.
 
 {% highlight c# %}
 
