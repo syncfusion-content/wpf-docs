@@ -11,12 +11,12 @@ documentation: ug
 
 SfSpreadsheet provides support to localize all the static text in a Ribbon and all dialogs to any desired language.
 
-SfSpreadsheet allows you to set custom resource using Resx file. You can define your string values in resource file for a specific culture and set the culture in your application. The given string value will be set to the Spreadsheet Grid.
+SfSpreadsheet allows you to set custom resource using Resx file. You can define your string values in resource file for a specific culture and set the culture in your application. The given string value will be set to the Spreadsheet.
 
-The following steps shows how to implement the localization,
+The following steps show how to implement the localization,
 
 * Create folder names as ‘Resources’ in your application, 
-* Create Resx(resource) file and name it as Syncfusion.SfSpreadsheet.WPF.resx. For example, Syncfusion.SfSpreadsheet.WPF.ja.resx.
+* Create Resx(resource) file and name it as Syncfusion.SfSpreadsheet.WPF.[Culture name].resx. For example, Syncfusion.SfSpreadsheet.WPF.ja.resx.
 * Add default Resx (resource) file in the Resource folder named as Syncfusion.SfSpreadsheet.WPF.resx
 
 To set the CultureInformation in the Application before the InitializeComponent() method is called. 
