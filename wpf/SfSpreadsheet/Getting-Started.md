@@ -29,7 +29,7 @@ Contains the classes which holds the properties and functions of scroll viewer a
 <tr>
 <td>
 Syncfusion.SfSpreadsheet.WPF.dll</td><td>
-Contains the classes  that handles all the UI Operations of SfSpreadsheet such as importing of sheets, applying formulas/styles etc.</td></tr>
+Contains the classes that handles all the interactions with XlsIO and UI Operations of SfSpreadsheet such as importing of sheets, applying formulas/styles etc.</td></tr>
 <tr>
 <td>
 Syncfusion.Shared.WPF.dll</td><td>
@@ -41,8 +41,9 @@ Contains the classes which holds the controls like TabcontrolExt, TabItemExt, Ga
 <tr>
 <td>
 Syncfusion.XlsIO.Base.dll</td><td>
-Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula caculations etc.</td></tr>
+Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations etc.</td></tr>
 </table>
+
 Below are the assemblies list that can be added when you want to enable certain features in SfSpreadsheet control. 
 
 <table>
@@ -57,11 +58,11 @@ Contains the classes which is responsible for importing charts and sparklines in
 <tr>
 <td>
 Syncfusion.ExcelChartToImageConverter.WPF.dll</td><td>
-Contains the classes which is responsible for converting charts as image</td></tr>
+Contains the classes which is used for converting Excel charts into WPF charts</td></tr>
 <tr>
 <td>
 Syncfusion.SfChart.WPF.dll</td><td>
-Contains the classes which is responsible for importing charts like Line charts, Pie charts, Sparklines etc.</td></tr>
+Contains the classes which is responsible for charts like Line charts, Pie charts and Sparklines etc.</td></tr>
 <tr>
 <td>
 Syncfusion.ExcelToPDFConverter.Base.dll</td><td>
@@ -71,6 +72,7 @@ Contains the base and fundamental classes which is responsible for converting ex
 Syncfusion.Pdf.Base.dll</td><td>
 Contains the base and fundamental classes for creating PDF.</td></tr>
 </table>
+
 ## Create a Simple Application with SfSpreadsheet
 
 SfSpreadsheet control can be added into the application either via designer or via coding. 
@@ -193,7 +195,6 @@ A new workbook can be created by using a Create method of SfSpreadsheet. By defa
 
     spreadsheet.Create(2);
 
-
 {% endhighlight %}
 
 ## Opening the Existing Excel Workbook
@@ -211,7 +212,7 @@ Using String,
 
 spreadsheet.Open (string file)
 
-Using Workbook,
+Using XlsIO Workbook,
 
 spreadsheet.Open(IWorkbook workbook)
 </td>
