@@ -79,6 +79,6 @@ _ApplicationMenu.Items.Add(_SimpleMenuButton1)
 
 {% endtabs %}
 
-![](SimpleMenuButton_images/SimpleMenuButton_img1.jpeg)
+![](SimpleMenuButton_images/SimpleMenuButton_img1.jpg)
 
 

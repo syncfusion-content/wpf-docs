@@ -82,6 +82,6 @@ _ribbonBar2.Items.Add(_ribbonRadioButton2)
 
 {% endtabs %}
 
-![](RibbonRadioButton_images/RibbonRadioButton_img1.jpeg)
+![](RibbonRadioButton_images/RibbonRadioButton_img1.jpg)
 
 

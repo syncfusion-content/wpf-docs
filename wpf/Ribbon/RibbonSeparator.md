@@ -117,6 +117,6 @@ _ribbonBar.Items.Add(_ribbonButton6)
 
 {% endtabs %}
 
-![](RibbonSeparator_images/RibbonSeparator_img1.jpeg)
+![](RibbonSeparator_images/RibbonSeparator_img1.jpg)
 
 

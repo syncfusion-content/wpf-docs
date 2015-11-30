@@ -190,7 +190,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% endtabs %}
 
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![](GettingStarted_images/GettingStarted_img1.jpg)
 
 
 ## Add RibbonTab
@@ -240,7 +240,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img2.jpeg)
+![](GettingStarted_images/GettingStarted_img2.jpg)
 
 
 ## Add RibbonBar
@@ -301,7 +301,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
+![](GettingStarted_images/GettingStarted_img3.jpg)
 
 
 ## Add RibbonButton
@@ -398,7 +398,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img4.jpeg)
+![](GettingStarted_images/GettingStarted_img4.jpg)
 
 
 ## Add DropDownButton
@@ -491,7 +491,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img5.jpeg)
+![](GettingStarted_images/GettingStarted_img5.jpg)
 
 
 
@@ -730,7 +730,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img7.jpeg)
+![](GettingStarted_images/GettingStarted_img7.jpg)
 
 
 
@@ -1180,7 +1180,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img10.jpeg)
+![](GettingStarted_images/GettingStarted_img10.jpg)
 
 
 ## Add BackStage
@@ -1351,7 +1351,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img11.jpeg)
+![](GettingStarted_images/GettingStarted_img11.jpg)
 
 
 
@@ -1534,7 +1534,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img12.jpeg)
+![](GettingStarted_images/GettingStarted_img12.jpg)
 
 
 ## Add BackStageTabItem
@@ -2108,7 +2108,7 @@ syncfusion:SkinStorage.VisualStyle="Default" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img15.jpeg)
+![](GettingStarted_images/GettingStarted_img15.jpg)
 
 ### Add Application Items to the Application Menu
 

@@ -97,6 +97,6 @@ _ribbonBar2.Items.Add(_ribbonListBox)
 
 {% endtabs %}
 
-![](RibbonListBox_images/RibbonListBox_img1.jpeg)
+![](RibbonListBox_images/RibbonListBox_img1.jpg)
 
 
