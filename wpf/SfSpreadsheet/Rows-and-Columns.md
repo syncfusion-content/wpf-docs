@@ -120,9 +120,6 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
     spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
 
 
-
-
-
 {% endhighlight %}
 
 ## Freeze Panes
@@ -140,9 +137,6 @@ SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet v
     spreadsheet.ActiveGrid.FrozenRows = 5;
 
     spreadsheet.ActiveGrid.FrozenColumns = 5;
-
-
-
 
 
 {% endhighlight %}
