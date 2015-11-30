@@ -11,7 +11,7 @@ documentation: ug
 
 ## Clipboard Operations
 
-SfSpreadsheet provides full support for all the clipboard operations to with all the format settings when copied within a workbook. When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options). 
+SfSpreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook. When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options). 
 
 The following are a list of paste options used while performing paste operation,
 
@@ -43,8 +43,9 @@ To paste only the formats alone without pasting the values.</td></tr>
 <tr>
 <td>
 Value & Source Formatting</td><td>
-To maintain the source range  original format and paste only values</td></tr>
+To maintain the source range original format and paste only values</td></tr>
 </table>
+
 For Cut Operation,
 
 {% highlight c# %}
