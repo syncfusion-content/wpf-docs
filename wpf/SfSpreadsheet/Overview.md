@@ -14,7 +14,9 @@ The SfSpreadsheet is excel inspired control that allows you to create, edit, vie
 SfSpreadsheet includes several advanced features like 
 
 * **Ribbon** – Ribbon integrated with organically enhanced UI experience
+
 * **Editing** **and** **Selection**-Interactive support for editing and cell selection in workbook
+
 * **Formulas** - provides support for 409 most widely used formulas which any business user needs and allows you to add, remove and edit the formulas like in excel
 * **Name** **Manager** – supports the name ranges in the formulas. By using the name ranges, you can specify the name of the cell range, and then you can use it in the formula more easily without hassling of remembering cell locations
 * **Data** **validation** – provides support to ensure the data integrity by enforcing end users to enter valid data into the cells and if entered data does not meet the specified criteria, and error message is displayed
