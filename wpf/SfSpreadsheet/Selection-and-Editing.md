@@ -70,7 +70,7 @@ The order of events when editing and committing a cell value in SfSpreadsheet,
 <tr>
 <td>
 BeginEdit</td><td>
-Occurs when the current cell enters into edit mode</td></tr>
+Occurs when the current cell enters into edit mode. This event allows to cancel entering the edit mode.</td></tr>
 <tr>
 <td>
 CurrentCellValueChanged</td><td>
