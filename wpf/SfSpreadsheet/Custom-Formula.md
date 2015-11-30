@@ -9,9 +9,7 @@ documentation: ug
 
 # Custom Formula
 
-SfSpreadsheet allows you to add custom formulas in its library. You can add the custom formula by invoking WorkbookLoaded Event of SfSpreadsheet, and add the custom formula for each grid.
-
-To add custom formulas in SfSpreadsheet Formula Engine,
+SfSpreadsheet allows you to add custom formulas into its function library. You can add the custom formula into the SfSpreadsheet by using the AddFunction method of FomulaEngine,
 
 {% highlight c# %}
 
