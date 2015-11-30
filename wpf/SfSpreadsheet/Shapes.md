@@ -1,3 +1,12 @@
+---
+layout: post
+title: Conversion | SfSpreadsheet | WPF | Syncfusion
+description: shapes
+platform: wpf
+control: SfSpreadsheet
+documentation: ug
+---
+
 # Shapes
 
 ## Charts
