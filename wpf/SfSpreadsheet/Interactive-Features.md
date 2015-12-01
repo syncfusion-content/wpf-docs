@@ -17,9 +17,9 @@ The following are a list of paste options used while performing paste operation,
 
 <table>
 <tr>
-<td>
-**OPTIONS**</td><td>
-**Description**</td></tr>
+<th>
+Options</th><th>
+Description</th></tr>
 <tr>
 <td>
 Paste</td><td>
