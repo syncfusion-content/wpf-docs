@@ -15,9 +15,9 @@ Below table describes, list of assemblies required to be added in project when t
 
 <table>
 <tr>
-<td>
-**Assembly**</td><td>
-**Description**</td></tr>
+<th>
+Assembly</th><th>
+Description</th></tr>
 <tr>
 <td>
 Syncfusion.SfCellGrid.WPF.dll</td><td>
@@ -47,9 +47,9 @@ Below are the assemblies list that can be added when you want to enable certain 
 
 <table>
 <tr>
-<td>
-**Optional** **Assemblies**</td><td>
-**Description**</td></tr>
+<th>
+Optional Assemblies</th><th>
+Description</th></tr>
 <tr>
 <td>
 Syncfusion.SfSpreadsheetHelper.WPF.dll</td><td>
@@ -71,14 +71,18 @@ Contains the base and fundamental classes which is responsible for converting ex
 Syncfusion.Pdf.Base.dll</td><td>
 Contains the base and fundamental classes for creating PDF.</td></tr>
 </table>
+
+
 ## Create a Simple Application with SfSpreadsheet
 
 SfSpreadsheet control can be added into the application either via designer or via coding. 
 
+
 ### Adding a Control via Designer
 
-1. Create new WPF application in Visual Studio.
-2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
+1.Create new WPF application in Visual Studio.
+
+2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
@@ -86,7 +90,7 @@ SfSpreadsheet control can be added into the application either via designer or v
 _Syncfusion_ _control_ _tab_
 {:.caption}
 
-3. Drag **SfSpreadsheet** and drop in the Designer area from the Toolbox
+3.Drag **SfSpreadsheet** and drop in the Designer area from the Toolbox
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
@@ -99,9 +103,9 @@ _For_ _Spreadsheet_
 
 {% endhighlight %}
 
-5.Ribbon can be added to the application by dragging **SfSpreadsheetRibbon** to the Designer area.
+4.Ribbon can be added to the application by dragging **SfSpreadsheetRibbon** to the Designer area.
 
-6.To make an interaction between Ribbon items and SfSpreadsheet, bind the SfSpreadsheet as DataContext to the SfSpreadsheetRibbon.
+5.To make an interaction between Ribbon items and SfSpreadsheet, bind the SfSpreadsheet as DataContext to the SfSpreadsheetRibbon.
 
 _For_ _Ribbon_
 
@@ -114,6 +118,7 @@ _For_ _Ribbon_
 
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
+
 
 ### Adding Control via Coding
 
@@ -140,7 +145,7 @@ _For_ _Spreadsheet_
 
     mc:Ignorable="d">
 
-    <syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Visible" />
+    <syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Visible"/>
 
     </Window>
 
@@ -200,23 +205,22 @@ A new workbook can be created by using a Create method of SfSpreadsheet. By defa
 
 The Excel Workbook can be opened in SfSpreadsheet using the Open method in various ways,
 
-<table>
-<tr>
-<td>
-Using Stream,
+{% highlight c# %}
+
+    //Using Stream,
  
-spreadsheet.Open (Stream file)
+      spreadsheet.Open (Stream file)
 
-Using String,
+    //Using String,
 
-spreadsheet.Open (string file)
+      spreadsheet.Open (string file)
 
-Using Workbook,
+    //Using Workbook,
 
-spreadsheet.Open(IWorkbook workbook)
-</td>
-</tr>
-</table>
+      spreadsheet.Open(IWorkbook workbook)
+      
+{% endhighlight %}
+
 {% highlight c# %}
 
     spreadsheet.Open (@"..\..\Data\Outline.xlsx");
