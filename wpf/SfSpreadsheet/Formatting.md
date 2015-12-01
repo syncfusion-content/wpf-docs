@@ -26,11 +26,11 @@ For single cell
 
 {% highlight c# %}
 
-    IRange range = spreadsheet.ActiveSheet.Range["A5"];
+     IRange range = spreadsheet.ActiveSheet.Range["A5"];
 
-    range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+     range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
 
-    spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
+     spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ For selected range of cells,
 
 For more information regarding cell styles and formatting options, please go through this link:
 
-[http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting](http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting# "")
+[http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting](http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting)
 
 ## Merge Cells
 
