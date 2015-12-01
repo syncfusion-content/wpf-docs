@@ -64,9 +64,9 @@ The order of events when editing and committing a cell value in SfSpreadsheet,
 
 <table>
 <tr>
-<td>
-**Events**</td><td>
-**Description**</td></tr>
+<th>
+Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 BeginEdit</td><td>
