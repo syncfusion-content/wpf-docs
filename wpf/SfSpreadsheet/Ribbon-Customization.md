@@ -33,7 +33,7 @@ You can create a custom Ribbon tab with user defined meu options in SfSpreadshee
 
     {
 
-      var sfribbon = (sender as FrameworkElement).FindElementOfType<Ribbon>();
+      var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
 
       if (sfribbon != null)
 
