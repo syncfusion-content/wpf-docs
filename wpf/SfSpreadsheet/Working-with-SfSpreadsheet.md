@@ -28,7 +28,7 @@ A workbook consists of one or more worksheets stored within the worksheet coll
 
 For more information regarding working with worksheets, you can refer the following link
 
-[http://help.syncfusion.com/file-formats/xlsio/overview](http://help.syncfusion.com/file-formats/xlsio/overview# "")
+    [http://help.syncfusion.com/file-formats/xlsio/overview](http://help.syncfusion.com/file-formats/xlsio/overview)
 
 ## Working with Grid
 
