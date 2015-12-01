@@ -30,9 +30,9 @@ Following is a list of functions that are supported by SfSpreadsheet
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ABS<br/><br/></td><td>
@@ -346,13 +346,14 @@ Returns the matrix inverse of an array<br/><br/></td></tr>
 MUNIT<br/><br/></td><td>
 Returns the unit matrix for the specified dimension<br/><br/></td></tr>
 </table>
+
 **Statistical** **functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AVG<br/><br/></td><td>
@@ -799,13 +800,14 @@ Returns the Weibull distribution<br/><br/></td></tr>
 ZTEST<br/><br/></td><td>
 Returns the one-tailed probability value of a z-test<br/><br/></td></tr>
 </table>
+
 **Logical** **Functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 AND<br/><br/></td><td>
@@ -835,13 +837,14 @@ Simply returns the logical value TRUE<br/><br/></td></tr>
 NOT<br/><br/></td><td>
 Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
 </table>
+
 **Engineering** **Functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 DEC2BIN<br/><br/></td><td>
@@ -1055,13 +1058,14 @@ Calculates the modified Bessel function Kn(x)<br/><br/></td></tr>
 CONVERT<br/><br/></td><td>
 Converts a number from one measurement system to another<br/><br/></td></tr>
 </table>
+
 **Lookup** **&** **Reference**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 OFFSET<br/><br/></td><td>
@@ -1132,9 +1136,9 @@ Returns the number of sheets in reference<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ISERROR<br/><br/></td><td>
@@ -1220,13 +1224,14 @@ Returns information about the data type of a supplied value<br/><br/></td></tr>
 ISFORMULA<br/><br/></td><td>
 Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE<br/><br/></td></tr>
 </table>
-**Financial** **Functions******
 
-****<table>
+**Financial** **Functions**
+
+<table>
 <tr>
-<td>
-**Name******<br/><br/></td><td>
-**Description******<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 DB<br/><br/></td><td>
@@ -1336,13 +1341,14 @@ Calculates the cumulative principal paid on a loan, between two specified period
 RECEIVED<br/><br/></td><td>
 Calculates the amount received at maturity for a fully invested Security<br/><br/></td></tr>
 </table>
+
 **Date** **and** **Time** **Functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 DATE<br/><br/></td><td>
@@ -1436,13 +1442,14 @@ Returns a date that is a supplied number of working days (excluding weekends & h
 YEARFRAC<br/><br/></td><td>
 Calculates the fraction of the year represented by the number of whole days between two dates<br/><br/></td></tr>
 </table>
-Text Functions
+
+**Text Functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 LEFT<br/><br/></td><td>
@@ -1556,13 +1563,14 @@ Returns the Unicode character that is referenced by the given numeric value<br/>
 UNICODE<br/><br/></td><td>
 Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
 </table>
-Database Functions
+
+**Database Functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 DCOUNT<br/><br/></td><td>
@@ -1604,13 +1612,14 @@ Calculates the variance (based on an entire population) of values in a field of 
 DVAR<br/><br/></td><td>
 Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
 </table>
+
 **Web** **Functions**
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 ENCODEURL<br/><br/></td><td>
