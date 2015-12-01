@@ -57,6 +57,7 @@ SfSpreadsheet includes several advanced features like
 
 * **Localization** - provides support to localize all the static text in a Ribbon and all dialogs to any desired language
 
+
 ## Choose between SfSpreadsheet and Spreadsheet control
 
 WPF suite contains **SfSpreadsheet** and **Spreadsheet** control for viewing and editing the excel files. SfSpreadsheet is an alternate for Spreadsheet control which is marked as classic control. Hence it is recommended to use SfSpreadsheet which provides better performance and rich set features over Spreadsheet control. 
@@ -65,9 +66,9 @@ Below are the features that SfSpreadsheet have over Spreadsheet control,
 
 <table>
 <tr>
-<td>
-**Feature**</td><td>
-**SfSpreadsheet**</td></tr>
+<th>
+Feature</th><th>
+SfSpreadsheet</th></tr>
 <tr>
 <td>
 Scrolling performance</td><td>
@@ -94,6 +95,10 @@ Hyperlinks</td><td>
 Provides support for Hyperlink feature which you can create hyperlink for existing files or web page and email addresses too.</td></tr>
 <tr>
 <td>
+Conditional Formatting</td><td>
+Provides support to define and import the conditional formatting rules such as Data Bars, Icon Sets and Color Scales options which are used to visualize the data.</td></tr>
+<tr>
+<td>
 Data validation</td><td>
 Provides support for validation for cross sheet references and list validation with formula/cell references compared to Spreadsheet control</td></tr>
 </table>
@@ -104,15 +109,15 @@ Below are the properties difference between SfSpreadsheet and Spreadsheet contro
 
 <table>
 <tr>
-<td>
-**SfSpreadsheet**</td><td>
-**Spreadsheet**</td><td>
-**Description**</td></tr>
+<th>
+SfSpreadsheet</th><th>
+Spreadsheet</th><th>
+Description</th></tr>
 <tr>
 <td>
 ActiveGrid</td><td>
 GridProperties->ActiveSpreadsheetGrid</td><td>
-Gets the active SfSpreadsheetGrid</td></tr>
+Gets the active SpreadsheetGrid</td></tr>
 <tr>
 <td>
 IsCustomTabItemContextMenuEnabled</td><td>
