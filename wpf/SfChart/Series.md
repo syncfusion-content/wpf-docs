@@ -1390,7 +1390,7 @@ HistogramSeries is a collection of vertical columns drawn continuously at finite
 
 The following APIs are used in HistogramSeries.
 
-
+HistogramSeries
 
 <table>
 <tr>
@@ -1405,6 +1405,10 @@ Gets or sets double that represent the interval value for HistogramSeries.</td><
 <td>
 ShowNormalDistributionCurve</td><td>
 Gets or sets bool that represents a value whether to display normal distribution curve.</td></tr>
+<tr>
+<td>
+BringToFront</td><td>
+Gets or sets bool that represents a value whether to bring the series in front.</td></tr>
 </table>
 
 
@@ -1413,14 +1417,13 @@ Gets or sets bool that represents a value whether to display normal distribution
 
  <syncfusion:HistogramSeries ShowNormalDistributionCurve="True"
 
-ItemsSource="{Binding power}" HistogramInterval="1"
+                   ItemsSource="{Binding power}" HistogramInterval="1"
 
-XBindingPath="Year" YBindingPath="Sports"/>
+                  XBindingPath="Year" YBindingPath="Sports"/>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-59.png](Series_images/Series_img40.png)
-
+![](Series_images/Series_img40.png)
 
 
 ## ErrorBarSeries
