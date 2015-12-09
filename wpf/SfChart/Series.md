@@ -565,8 +565,11 @@ Gets or sets the segment index value to denote which segment is to be exploded.<
 <td>
 ExplodeRadius</td><td>
 Gets or sets the distance between the actual center point of the chart and the exploded segment start point.</td></tr>
+<tr>
+<td>
+ExplodeOnMouseClick</td><td>
+Gets or sets the bool value to enable the segment to be exploded or not.</td></tr>
 </table>
-
 
 {% highlight xml %}
 
