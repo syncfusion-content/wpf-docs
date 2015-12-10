@@ -9,6 +9,8 @@ documentation: ug
 
 # Formatting
 
+This section explains about the formatting options similar to excel in SfSpreadsheet
+
 ## Cell Styles
 
 Styles and formats defined in an Excel file are automatically imported. Users can also apply these settings to cells during run time. The following are the formatting attributes for the cell.
@@ -57,9 +59,8 @@ For selected range of cells,
 
 {% endhighlight %}
 
-For more information regarding cell styles and formatting options, please go through this link:
-
-[http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting](http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting)
+For more information regarding formatting options, please go through {{ '[XlsIO](http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting)' | markdownify }}
+</br>
 
 ## Merge Cells
 
