@@ -57,6 +57,7 @@ SfSpreadsheet includes several advanced features like
 
 * **Localization** - provides support to localize all the static text in a Ribbon and all dialogs to any desired language
 
+<br/>
 
 ## Choose between SfSpreadsheet and Spreadsheet control
 
