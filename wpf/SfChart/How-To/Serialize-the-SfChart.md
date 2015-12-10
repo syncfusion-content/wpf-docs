@@ -38,19 +38,19 @@ Deserialize the xml file from the given stream and returns the SfChart control o
 
 XAML
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart x:Name=chart>
 
-<chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" YBindingPath="Value" Palette="RedChrome"/>
+	<chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" YBindingPath="Value" Palette="RedChrome"/>
 
 </chart:SfChart>
 
 <StackPanel>
 
-<Button x:Name="Serialize" Content="Serialize" Height="50" Width="100" Margin="10" Click="Serialize_Click"/>
+	<Button x:Name="Serialize" Content="Serialize" Height="50" Width="100" Margin="10" Click="Serialize_Click"/>
 
-<Button x:Name="Deserialize" Content="Deserialize" Height="50" Width="100" Margin="10" Click="Deserialize_Click"/>
+	<Button x:Name="Deserialize" Content="Deserialize" Height="50" Width="100" Margin="10" Click="Deserialize_Click"/>
 
 </StackPanel>
 
