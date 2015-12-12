@@ -11,9 +11,9 @@ documentation: ug
 
 SfSpreadsheet control allows you to print the data in the workbook with the help of Pdf Conversion. To provide the printing support in SfSpreadsheet, you need to convert the workbook into Pdf document using ExcelToPdfConverter.
 
-For Conversion of Excel Workbook in SfSpreadsheet to Pdf document, use Convert () method of ExcelToPdfConverter.
+For Conversion of Excel Workbook in SfSpreadsheet to Pdf document, use [Convert()](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic27.html) method of [ExcelToPdfConverter](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic14.html).
 
-For viewing the Pdf document, you can use PdfViewerControl to load the saved pdf stream.
+For viewing the Pdf document, you can use [PdfViewerControl](http://help.syncfusion.com/wpf/pdfviewer/getting-started) to load the saved pdf stream.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ For viewing the Pdf document, you can use PdfViewerControl to load the saved pdf
 
 {% endhighlight %}
 
-For print preview you can load the pdf stream into viewer and for direct printing use Print() method in PdfViewerControl  which is available under the namespace “Syncfusion.PdfViewer.Wpf”
+For print preview you can load the pdf stream into viewer and for direct printing use [Print()](http://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView~Print.html) method in PdfViewerControl  which is available under the namespace “Syncfusion.PdfViewer.Wpf”
 
 {% highlight c# %}
 

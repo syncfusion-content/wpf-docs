@@ -25,12 +25,12 @@ To group the rows
 
     spreadsheet.ActiveGrid.InvalidateCells();
 
-
 {% endhighlight %}
 
 To group the columns
 
 {% highlight c# %}
+
 
     var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
