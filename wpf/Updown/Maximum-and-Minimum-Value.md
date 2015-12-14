@@ -1,92 +1,88 @@
 ---
 layout: post
-title: Maximum and Minimum Value | UpDownControl | wpf | Syncfusion
-description: maximum and minimum value
+title: Maximum and Minimum Value | UpDown | WPF | Syncfusion
+description: Maximum and Minimum Value of UpDown
 platform: wpf
-control: UpDown Control
+control: UpDown
 documentation: ug
 ---
 
 # Maximum and Minimum Value
 
-The MaxValue is the maximum value that can be set for the UpDown control and MinValue is the minimum value that can be set for the UpDown control.
+`UpDown` control allows to define the Maximum and Minimum value. The `MaxValue` is the maximum value that can be set for the `UpDown` control and `MinValue` is the minimum value that can be set for the `UpDown` control. 
 
-### Use of MaxValue and MinValue
+## MaxValue and MinValue
 
-The MaxValue and MinValue can be set for the UpDown control as shown in the following code example.
+The maximum and minimum value can be set using the `MaxValue` and `MinValue` property for the `UpDown` control as shown in the following code example.
 
+{% tabs %}
 
-{%tabs%}
-{%highlight xml%}
+{% highlight XAML %}
 
-<syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0"/>
-
-{%endhighlight%}
-
-{%highlight c#%}
-
-UpDown upDown = new UpDown();
-
-upDown.MaxValue = 100;
-
-upDown.MinValue = 0;
-
-{%endhighlight%}
-
-{%endtabs%}
-
-### Tables for Properties, and Events
+<syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" Width="100" Height="23"/>
 
 
+{% endhighlight %}
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-MaxValue</td><td>
-Gets or sets the maximum value that can be entered.</td><td>
-DependencyProperty</td><td>
-double</td><td>
-Not applicable.</td></tr>
-<tr>
-<td>
-MinValue</td><td>
-Gets or sets the minimum value that can be entered.</td><td>
-DependencyProperty</td><td>
-double</td><td>
-Not applicable.</td></tr>
-</table>
+{% highlight C# %}
 
-### MaxValue and MinValue Events
+UpDown updown = new UpDown();
+
+updown.Width = 100;
+
+updown.Height = 23;
+
+updown.MaxValue = 100;
+
+updown.MinValue = 0;
+
+Grid1.Children.Add(updown);
+
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Tables for MaxValue and MinValue Properties and Events
 
 <table>
 <tr>
-<th>
-Events</th><th>
-Description</th><th>
-Arguments</th><th>
-Type</th><th>
-Reference links</th></tr>
+<td>
+**Property**<br/><br/></td><td>
+**Description**<br/><br/></td><td>
+**Type**<br/><br/></td><td>
+**Data** **Type**<br/><br/></td></tr>
 <tr>
 <td>
-MaxValueChanged</td><td>
-Occurs when the MaxValue is changed.</td><td>
-DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
-PropertyChangedCallback</td><td>
-Not applicable.</td></tr>
+MaxValue<br/><br/></td><td>
+Gets or sets the maximum value that can be entered.<br/><br/></td><td>
+DependencyProperty<br/><br/></td><td>
+double<br/><br/></td></tr>
 <tr>
 <td>
-MinValueChanged</td><td>
-Occurs when the MinValue is changed.</td><td>
-DependencyObject andDependencyPropertyChangedEventArgs. </td><td>
-PropertyChangedCallback</td><td>
-Not applicable.</td></tr>
+MinValue<br/><br/></td><td>
+Gets or sets the minimum value that can be entered.<br/><br/></td><td>
+DependencyProperty<br/><br/></td><td>
+double<br/><br/></td></tr>
 </table>
-
-
+<table>
+<tr>
+<td>
+**Events**<br/><br/></td><td>
+**Description**<br/><br/></td><td>
+**Arguments**<br/><br/></td><td>
+**Type**<br/><br/></td></tr>
+<tr>
+<td>
+MaxValueChanged<br/><br/></td><td>
+Occurs when the MaxValue is changed.<br/><br/></td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
+PropertyChangedCallback<br/><br/></td></tr>
+<tr>
+<td>
+MinValueChanged<br/><br/></td><td>
+Occurs when the MinValue is changed.<br/><br/></td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
+PropertyChangedCallback<br/><br/></td></tr>
+</table>
