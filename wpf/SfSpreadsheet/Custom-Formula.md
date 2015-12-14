@@ -23,7 +23,7 @@ SfSpreadsheet allows you to add custom formulas into its function library. You c
 
     private void AddCustomFormula(SpreadsheetGrid grid)
     {
-       // Add a formula named SumPos and Find to the Library.
+       // Add a formula named Length and Find to the Library.
        grid.FormulaEngine.AddFunction("Find", new LibraryFunction(FindMethod));
        grid.FormulaEngine.AddFunction("Length",new LibraryFunction(LengthMethod));
     }

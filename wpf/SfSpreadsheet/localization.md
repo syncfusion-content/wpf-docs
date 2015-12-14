@@ -33,6 +33,6 @@ Now, the Application is set to the Japanese Culture info.
 
 The following screenshot shows you the localization in SfSpreadsheet,
 
-![](localization_images/localization_img1.jpeg)
+![](localization_images/localization_img1.jpg)
 
 

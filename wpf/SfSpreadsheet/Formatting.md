@@ -67,7 +67,7 @@ For more information regarding formatting options, please go through [XlsIO](htt
 
 SfSpreadsheet provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
 
-For merging the cells in SfSpreadsheet, you need to add the CoveredCellInfo into CoveredCells collection of SpreadsheetGrid and merge the range using [Merge()](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3452.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic335.html) into [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2567.html) collection of SpreadsheetGrid and merge the range using [Merge](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3452.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% highlight c# %}
 
@@ -85,11 +85,11 @@ For merging the cells in SfSpreadsheet, you need to add the CoveredCellInfo into
 
 {% endhighlight %}
 
-### UnMerge
+### Unmerge
 
 You can also unmerge the merged cells in SfSpreadsheet.
 
-For unmerging the cells in SfSpreadsheet, you need to clear the coveredcell from the SpreadsheetGrid and unmerge the range using [UnMerge ()](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3461.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2567.html) from the SpreadsheetGrid and unmerge the range using [UnMerge](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3461.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% highlight c# %}
 

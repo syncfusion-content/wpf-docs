@@ -15,6 +15,26 @@ documentation: ug
 
 SfSpreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook. When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options). 
 
+You can use the following shortcut keys for Clipboard operations like Excel
+<table>
+<tr>
+<th>
+Operations</th><th>
+Shortcut Keys</th></tr>
+<tr>
+<td>
+Cut</td><td>
+Ctrl + X</td></tr>
+<tr>
+<td>
+Copy</td><td>
+Ctrl + C </td></tr>
+<tr>
+<td>
+Paste</td><td>
+Ctrl + V</td></tr>
+</table>
+
 The following are a list of paste options used while performing paste operation,
 
 <table>
@@ -101,7 +121,24 @@ For [Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6416
 
 ## Undo/Redo
 
-SfSpreadsheet provides support for Undo/Redo functionality like MS Excel. 
+SfSpreadsheet provides support for Undo/Redo functionality like MS Excel.
+
+The shortcut keys used for Undo/Redo Operations
+
+<table>
+<tr>
+<th>
+Operations</th><th>
+Shortcut Keys</th></tr>
+<tr>
+<td>
+Undo</td><td>
+Ctrl + Z</td></tr>
+<tr>
+<td>
+Redo</td><td>
+Ctrl + Y</td></tr>
+</table>
 
 SfSpreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8527.html) class that supports the implementation of undo/ redo operations
 
@@ -169,7 +206,7 @@ Adding the customized menu items in the CellContextMenuOpening Event,
 
 ## Cell Comments
 
-SfSpreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking “CellCommentOpening” Event of SpreadsheetGrid
+SfSpreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking [CellCommentOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2596.html) Event of SpreadsheetGrid
 
 To enable the comment in SfSpreadsheet, set the [ShowComment](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2592.html) property of SpreadsheetGrid to true.
 
