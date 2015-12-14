@@ -64,52 +64,52 @@ Grid1.Children.Add(updown);
 <table>
 <tr>
 <td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+DataType</td></tr>
 <tr>
 <td>
-MaxValidation<br/><br/></td><td>
-Gets or sets the MaxValidation.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-MaxValidation<br/><br/></td></tr>
+MaxValidation</td><td>
+Gets or sets the MaxValidation.</td><td>
+DependencyProperty</td><td>
+MaxValidation</td></tr>
 <tr>
 <td>
-MinValidation<br/><br/></td><td>
-Gets or sets the MinValidation.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-MinValidation<br/><br/></td></tr>
+MinValidation</td><td>
+Gets or sets the MinValidation.</td><td>
+DependencyProperty</td><td>
+MinValidation</td></tr>
 <tr>
 <td>
-MaxValueOnExceedMaxDigit<br/><br/></td><td>
-Gets or sets a value that indicates whether or not to assign MaxValue to the Value property when the value exceeds the MaxValue.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Bool<br/><br/></td></tr>
+MaxValueOnExceedMaxDigit</td><td>
+Gets or sets a value that indicates whether or not to assign MaxValue to the Value property when the value exceeds the MaxValue.</td><td>
+DependencyProperty</td><td>
+Bool</td></tr>
 <tr>
 <td>
-MinValueOnExceedMinDigit<br/><br/></td><td>
-Gets or sets a value that indicates whether or not to assign MinValue to the Value property when the value is lesser than the MinValue.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Bool<br/><br/></td></tr>
+MinValueOnExceedMinDigit</td><td>
+Gets or sets a value that indicates whether or not to assign MinValue to the Value property when the value is lesser than the MinValue.</td><td>
+DependencyProperty</td><td>
+Bool</td></tr>
 </table>
 <table>
 <tr>
 <td>
-**Events**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Arguments**<br/><br/></td><td>
-**Type**<br/><br/></td></tr>
+Events</td><td>
+Description</td><td>
+Arguments</td><td>
+Type</td></tr>
 <tr>
 <td>
-MinValidationChanged<br/><br/></td><td>
-Occurs when the MinValidation is changed.<br/><br/></td><td>
-DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td></tr>
+MinValidationChanged</td><td>
+Occurs when the MinValidation is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td></tr>
 <tr>
 <td>
-MaxValidationChanged<br/><br/></td><td>
-Occurs when the MaxValidation is changed.<br/><br/></td><td>
-DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td></tr>
+MaxValidationChanged</td><td>
+Occurs when the MaxValidation is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td></tr>
 </table>
