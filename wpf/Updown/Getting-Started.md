@@ -1,72 +1,96 @@
 ---
 layout: post
-title: Getting Started | UpDownControl | wpf | Syncfusion
-description: getting started
+title: Getting Started | UpDown | WPF | Syncfusion
+description: Getting Started
 platform: wpf
-control: UpDown Control
+control: UpDown
 documentation: ug
 ---
-
 # Getting Started
 
-## Add UpDown to an Application
+This section explains how to add `UpDown` control to an application and its structure.
 
-The UpDown control can be added to an application by using the following applications.
+## Add UpDown control to an Application
+
+The `UpDown` control can be added to an application by using the following ways.
 
 ### Create the UpDown Control by using XAML
 
-To create an UpDown instance in the Visual Studio, drag the UpDown control from the Toolbox window to the Design View. An instance of the UpDown control is created in the Design View.
+There are several ways to add Syncfusion control in to the Visual Studio WPF project. The following code example illustrates how to add the `UpDown` control to an application through XAML.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+* Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
+* Include an xml namespace for the above assemblies to the Main window.
 
+{% tabs %}
 
+{% highlight XAML %}
 
-The following code example illustrates how to add the UpDown control to an application through XAML.
+<Window x:Class="Application_New.MainWindow"
 
-<syncfusion:UpDown HorizontalAlignment="Left" Height="25" Margin="133,127,0,0" VerticalAlignment="Top" Width="85"/>
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    
 
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-### 1.2.1.2 Create the UpDown Control by using C#
-
-The following code example illustrates how to add the UpDown control to an application through C#.
-
-{%highlight c#%}
+Title="MainWindow" Height="350" Width="525">
 
 
 
-UpDown upDown = new UpDown() { Height = 25, Width = 85 };
+{% endhighlight %}
 
-grid.Children.Add(upDown);
+{% endtabs %}
 
-{%endhighlight%}
+* Now add the `UpDown` control with a required optimal name by using the included namespace
 
-![](Getting-Started_images/Getting-Started_img3.png)
+{% tabs %}
 
-
-
-### 1.2.1.3 Create the UpDown Control by using the Expression Blend
-
-The step-by-step procedure to add the UpDown control to an application through the MicrosoftExpression Blend is as follows:
-
-1. Create a new WPF application in the Microsoft Expression Blend.
-2. Add the following reference to the sample application - Syncfusion.Shared.WPF.dll
-3. On the Window menu, select Assets. This opens the Assets Library dialog box.
-4. In the search box, type UpDown and the search results are displayed as shown.
+{% highlight XAML %}
+<syncfusion:UpDown Name="_upDown" Width="100" Height="23"/>
 
 
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted-images/GettingStarted-img1.jpeg)
+
+
+###  Create the UpDown Control by using C#:
+
+The following code example illustrates how to add the `UpDown` control to an application through C#.
+
+{% tabs %}
+
+{% highlight C# %}
+
+UpDown updown = new UpDown();
+
+updown.Width = 100;
+
+updown.Height = 23;
+
+Grid1.Children.Add(updown);
 
 
 
-5. Drag the UpDown control to the Design View. An instance of the UpDown control is created.
+{% endhighlight %}
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+{% endtabs %}
+
+![](GettingStarted-images/GettingStarted-img2.jpeg)
+
+
+## Structure
 
 
 
+![](GettingStarted-images/GettingStarted-img3.jpeg)
+
+
+The following are the elements of the `UpDown` control:
+
+* **Text** **area** - It is the area where the numeric values are displayed. 
+* **Increment** **button** - It is a repeat button that can be clicked to increment the current value of the `UpDown` control.
+* **Decrement** **button** - It is a repeat button that can be clicked to decrement the current value of the `UpDown` control.

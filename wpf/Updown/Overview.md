@@ -1,87 +1,29 @@
 ---
 layout: post
-title: Overview | UpDownControl | wpf | Syncfusion
+title: Overview | UpDown | WPF | Syncfusion
 description: overview
-platform: wpf
-control: UpDown Control
+platform: WPF
+control: UpDown
 documentation: ug
 ---
 
+
+
 # Overview
 
-The UpDown control displays numeric values. You can select any value on scrolling the values, by using the Increment and Decrement buttons of the UpDown control.
+The `Updown` control displays numeric values. The value can be select by on scrolling the values and by using the Increment and Decrement buttons of the `UpDown` control. It allows to define maximum and minimum values to which the user can increment/decrement the input’s value. Also can specify the change that will be applied to the value upon each increase/decrease.
 
-The features of the UpDown control include:
+## Features
 
-* Null value.
-* Maximum and Minimum value.
-* Maximum and Minimum validation.
-* Culture.
-* Number formatting.
-* Animation speed.
+* `UpDown` control allows to set Null value.
+* It allows to define Maximum and Minimum value.
+* Also can define when the Maximum and Minimum validation should process.
+* Value can be changed by up and down and also by editing the text part.
+* Culture support provides culture based NumberDecimalSeparator in `UpDown`.
+* Number formatting support.
+* Animation speed support.
 * Text alignment.
-* Keyboard and Mouse support.
-
-
-
-### Breaking Changes in the UpDown control from Version 8.3 to Version 8.4
-
-The event handler and event argument for the ValueChanging event is changed in version 8.4. The changes are provided in the following tabulation:
-
-Changes in the UpDown control from Version 8.3 to Version 8.4
-
-<table>
-<tr>
-<th>
-Event Name</th><th>
-Old Type</th><th>
-New Type</th></tr>
-<tr>
-<td rowspan = "2">
-ValueChanging</td><td>
-PropertyChangedCallback</td><td>
-ValueChangingEventHandler</td></tr>
-<tr>
-<td>
-DependencyPropertyChangedEventArgs</td><td>
-ValueChangingEventArgs</td></tr>
-</table>
-
-
-The following properties are no longer used and do not make any change in the UpDown control:
-
-* CursorBackground
-* CursorBorderBrush
-* CursorWidth
-* CursorBorderThickness
-* CursorTemplate
-* CursorVisible
-* CursorPosition
-* SelectionBrush
-* AnimationShift
-
-
-
-![](Overview_images/Overview_img1.png)
-
-
-
-Structure of the UpDown control
-{:.caption}
-
-### Structure
-
-The following are the elements of the UpDown control:
-
-* Text area - It is the area where the numeric values are displayed. You can edit the value of the UpDown control when the AllowEdit property is set to true.
-* Increment button - It is a repeat button that can be clicked to increment the current value of the UpDown control.
-* Decrement button - It is a repeat button that can be clicked to decrement the current value of the UpDown control.
-
-
-
-### Sample Link: To access a sample:
-
-Navigate to Start -> All Programs -> Syncfusion -> Essential Studio -> Dashboard.
-
-Click the WPF drop-down list and then select Run Locally Installed Samples. In the sample browser, expand the Editor Controls TreeView item, and then select Up-DownText Box Demo.
+* Keyboard and Mouse support to change the value.
+* Support for several built-in skins
+* Complete bendability support for customizing appearance.
 
