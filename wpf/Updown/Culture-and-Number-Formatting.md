@@ -85,16 +85,16 @@ Grid1.Children.Add(updown);
 <table>
 <tr>
 <td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+DataType</td></tr>
 <tr>
 <td>
-Culture<br/><br/></td><td>
-Gets or sets the CultureInfo.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-CultureInfo<br/><br/></td></tr>
+Culture</td><td>
+Gets or sets the CultureInfo.</td><td>
+DependencyProperty</td><td>
+CultureInfo</td></tr>
 </table>
 
 ## NumberFormatInfo
@@ -166,28 +166,28 @@ Grid1.Children.Add(updown);
 <table>
 <tr>
 <td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+DataType</td></tr>
 <tr>
 <td>
-NumberFormatInfo<br/><br/></td><td>
-Gets or sets the format of the number.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-NumberFormatInfo<br/><br/></td></tr>
+NumberFormatInfo</td><td>
+Gets or sets the format of the number.</td><td>
+DependencyProperty</td><td>
+NumberFormatInfo</td></tr>
 </table>
 <table>
 <tr>
 <td>
-**Events**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Arguments**<br/><br/></td><td>
-**Type******<br/><br/></td></tr>
+Events</td><td>
+Description</td><td>
+Arguments</td><td>
+Type</td></tr>
 <tr>
 <td>
-NumberFormatInfoChanged<br/><br/></td><td>
-Occurs when the format of the number changes.<br/><br/></td><td>
-DependencyObject and DependencyPropertyChangedEventArgs.<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td></tr>
+NumberFormatInfoChanged</td><td>
+Occurs when the format of the number changes.</td><td>
+DependencyObject and DependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td></tr>
 </table>

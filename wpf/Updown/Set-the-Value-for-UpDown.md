@@ -39,37 +39,38 @@ updown.Value = 10;
 <table>
 <tr>
 <td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+DataType</td></tr>
 <tr>
 <td>
-Value<br/><br/></td><td>
-Gets or sets the value of the UpDown control.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-double?<br/><br/></td></tr>
+Value</td><td>
+Gets or sets the value of the UpDown control.</td><td>
+DependencyProperty</td><td>
+double?</td></tr>
 </table>
 <table>
 <tr>
 <td>
-**Events**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Arguments**<br/><br/></td><td>
-**Type**<br/><br/></td></tr>
+Events</td><td>
+Description</td><td>
+Arguments</td><td>
+Type</td></tr>
 <tr>
 <td>
-ValueChanged<br/><br/></td><td>
-Occurs when the value in the text box changes.<br/><br/></td><td>
-DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td></tr>
+ValueChanged</td><td>
+Occurs when the value in the text box changes.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td></tr>
 <tr>
 <td>
-ValueChanging<br/><br/></td><td>
-Occurs when the value in the text box is about to change.<br/><br/></td><td>
-Object andValueChangingEventArgs.<br/><br/></td><td>
-ValueChangingEventHandler<br/><br/></td></tr>
+ValueChanging</td><td>
+Occurs when the value in the text box is about to change.</td><td>
+Object andValueChangingEventArgs.</td><td>
+ValueChangingEventHandler</td></tr>
 </table>
+
 ## NullValueText
 
 The `NullValueText` feature enables the `UpDown` control to accept `null` values when the `Value` is null.

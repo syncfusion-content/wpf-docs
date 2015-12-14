@@ -49,40 +49,40 @@ Grid1.Children.Add(updown);
 <table>
 <tr>
 <td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+DataType</td></tr>
 <tr>
 <td>
-MaxValue<br/><br/></td><td>
-Gets or sets the maximum value that can be entered.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-double<br/><br/></td></tr>
+MaxValue</td><td>
+Gets or sets the maximum value that can be entered.</td><td>
+DependencyProperty</td><td>
+double</td></tr>
 <tr>
 <td>
-MinValue<br/><br/></td><td>
-Gets or sets the minimum value that can be entered.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-double<br/><br/></td></tr>
+MinValue</td><td>
+Gets or sets the minimum value that can be entered.</td><td>
+DependencyProperty</td><td>
+double</td></tr>
 </table>
 <table>
 <tr>
 <td>
-**Events**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Arguments**<br/><br/></td><td>
-**Type**<br/><br/></td></tr>
+Events</td><td>
+Description</td><td>
+Arguments</td><td>
+Type</td></tr>
 <tr>
 <td>
-MaxValueChanged<br/><br/></td><td>
-Occurs when the MaxValue is changed.<br/><br/></td><td>
-DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td></tr>
+MaxValueChanged</td><td>
+Occurs when the MaxValue is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td></tr>
 <tr>
 <td>
-MinValueChanged<br/><br/></td><td>
-Occurs when the MinValue is changed.<br/><br/></td><td>
-DependencyObject andDependencyPropertyChangedEventArgs.<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td></tr>
+MinValueChanged</td><td>
+Occurs when the MinValue is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td></tr>
 </table>
