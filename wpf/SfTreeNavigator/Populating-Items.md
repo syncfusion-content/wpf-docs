@@ -190,7 +190,7 @@ ItemTemplate property of the Tree Navigator can be used to customize the display
 
             <primitives:HierarchicalDataTemplate ItemsSource="{Binding Models}">
 
-                <DataTemplate>
+              
 
                     <StackPanel Orientation="Horizontal">
 
@@ -202,7 +202,7 @@ VerticalAlignment="Center" Margin="18 0 0 0"/>
 
                     </StackPanel>
 
-                </DataTemplate>
+               
 
                 </primitives:HierarchicalDataTemplate>
 
