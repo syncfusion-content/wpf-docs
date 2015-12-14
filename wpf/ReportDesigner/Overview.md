@@ -16,23 +16,13 @@ The important features of the Essential Report Designer for WPF are:
 * RDL Specification - Supports RDL Specification for the SQL Server 2008 and RDL Specification for the SQL Server 2008 R2 only. List of available report definition formats: https://msdn.microsoft.com/library/dd297486(SQL.100).aspx.
 * Data sources - You can use advanced database servers DataSources in Report Designer (SQL and Oracle).
 * Data sets - You can add data sets to the DataSource.
-* Tablix - Shows summaries and simple [tables](http://help.syncfusion.com/wpf).
-* Textbox - Shows textbox data with expression [support](http://help.syncfusion.com/wpf).
+* Filters - You can select or exclude the data from the dataset using filters.
+* Parameters - You can use the report parameter to specify a criterion for subsetting data.
+* Tablix - Shows summaries and simple tables.
+* Textbox - Shows textbox data with expression support.
 * Report Parameter - Views the report based on the report parameter value.
-* Basic Expression - You can use expression to handle the reports.
-* Customization - Customizes the appearance of the Report Designer.
-
-
-
-![](Overview_images/Overview_img1.png)
-
-
-
-It can be used to design data in a variety of interactive formats and place report items such as data regions, text boxes, images, rectangles, and lines in the report. You can also add groups, expressions, parameters, filters, visibility options, and formatting to the report items.
-
-
-
-![](Overview_images/Overview_img2.png)
+* Built-in Expression - You can use expression to handle the reports.
+* Customization - Customization can be used to design data in a variety of interactive formats and place report items such as data regions, text boxes, images, rectangles, and lines in the report. You can also add groups, expressions, visibility options, and formatting to the report items.
 
 
 
