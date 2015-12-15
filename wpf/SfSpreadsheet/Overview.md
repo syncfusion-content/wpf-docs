@@ -57,6 +57,8 @@ SfSpreadsheet includes several advanced features like
 
 * **Localization** - provides support to localize all the static text in a Ribbon and all dialogs to any desired language
 
+<br/>
+
 ## Choose between SfSpreadsheet and Spreadsheet control
 
 WPF suite contains **SfSpreadsheet** and **Spreadsheet** control for viewing and editing the excel files. SfSpreadsheet is an alternate for Spreadsheet control which is marked as classic control. Hence it is recommended to use SfSpreadsheet which provides better performance and rich set features over Spreadsheet control. 
@@ -65,9 +67,9 @@ Below are the features that SfSpreadsheet have over Spreadsheet control,
 
 <table>
 <tr>
-<td>
-**Feature**</td><td>
-**SfSpreadsheet**</td></tr>
+<th>
+Feature</th><th>
+SfSpreadsheet</th></tr>
 <tr>
 <td>
 Scrolling performance</td><td>
@@ -94,6 +96,10 @@ Hyperlinks</td><td>
 Provides support for Hyperlink feature which you can create hyperlink for existing files or web page and email addresses too.</td></tr>
 <tr>
 <td>
+Conditional Formatting</td><td>
+Provides support to define and import the conditional formatting rules such as Data Bars, Icon Sets and Color Scales options which are used to visualize the data.</td></tr>
+<tr>
+<td>
 Data validation</td><td>
 Provides support for validation for cross sheet references and list validation with formula/cell references compared to Spreadsheet control</td></tr>
 </table>
@@ -104,53 +110,53 @@ Below are the properties difference between SfSpreadsheet and Spreadsheet contro
 
 <table>
 <tr>
-<td>
-**SfSpreadsheet**</td><td>
-**Spreadsheet**</td><td>
-**Description**</td></tr>
+<th>
+SfSpreadsheet</th><th>
+Spreadsheet</th><th>
+Description</th></tr>
 <tr>
 <td>
-ActiveGrid</td><td>
+[ActiveGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6313.html)</td><td>
 GridProperties->ActiveSpreadsheetGrid</td><td>
-Gets the active SfSpreadsheetGrid</td></tr>
+Gets the active SpreadsheetGrid</td></tr>
 <tr>
 <td>
-IsCustomTabItemContextMenuEnabled</td><td>
+[IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6331.html)</td><td>
 TabStyleManager -> IsCustomTabItemContextMenuEnabled</td><td>
 Gets or sets whether Custom ContextMenu is to be Enabled</td></tr>
 <tr>
 <td>
-ShowTabItemContextMenu</td><td>
+[ShowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic23819.html)</td><td>
 TabStyleManager -> ShowTabItemContextMenu</td><td>
 Gets or sets whether TabItemContextMenu is to be displayed</td></tr>
 <tr>
 <td>
-TabItemContextMenu</td><td>
+[TabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6333.html)</td><td>
 TabStyleManager ->TabItemContextMenu</td><td>
 Gets or sets the ContextMenu Items for TabItem</td></tr>
 <tr>
 <td>
-ActiveSheet</td><td>
+[ActiveSheet](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6314.html)</td><td>
 ExcelProperties->Workbook->ActiveSheet</td><td>
 Gets the Current ActiveSheet</td></tr>
 <tr>
 <td>
-Workbook</td><td>
+[Workbook](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6334.html)</td><td>
 ExcelProperties->Workbook</td><td>
 </td></tr>
 <tr>
 <td>
-CurrentCellStyle</td><td>
+[CurrentCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6322.html)</td><td>
 GridProperties->CurrentCellStyle</td><td>
 Gets the Style of the Current Cell</td></tr>
 <tr>
 <td>
-HistoryManager</td><td>
+[HistoryManager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6330.html)</td><td>
 GridProperties.ActiveSpreadsheetGrid.Model.CommandStack</td><td>
 Gets the command stack of the SpreadsheetControl.By default it has been enabled</td></tr>
 <tr>
 <td>
-SheetName</td><td>
+[SheetName](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6487.html)</td><td>
 GridProperties->CurrentSheetName</td><td>
 Gets the tab sheet name</td></tr>
 </table>
