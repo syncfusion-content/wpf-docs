@@ -13,13 +13,13 @@ Ribbon Customization can be done in two ways,
 
 __Using__ __Control__ __Template__:
 
-You can customize the Ribbon items by overriding the template of SfSpreadsheetRibbon. 
+You can customize the Ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6348.html). 
 
 __Using__ __Event__:
 
 You can create a custom Ribbon tab with user defined meu options in SfSpreadsheet. To achieve this customization, invoke the SfSpreadsheetRibbon Loaded Event and create a custom tab with menu options. Add this custom tab to SfSpreadsheet Ribbon.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
 
@@ -28,15 +28,13 @@ You can create a custom Ribbon tab with user defined meu options in SfSpreadshee
 {% highlight c# %}
 
     ribbon.Loaded += ribbon_Loaded;
-
+    RibbonBar CustomRibbonBar;
+    
     void ribbon_Loaded(object sender, RoutedEventArgs e)
-
     {
-
       var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
 
       if (sfribbon != null)
-
        {
 
           RibbonTab rb = new RibbonTab();
@@ -72,9 +70,7 @@ You can create a custom Ribbon tab with user defined meu options in SfSpreadshee
           rb.Items.Add(CustomRibbonBar);
 
           sfribbon.Items.Add(rb);
-
        }
-
     }
 
 {% endhighlight %}
