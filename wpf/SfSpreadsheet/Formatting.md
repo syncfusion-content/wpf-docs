@@ -59,8 +59,6 @@ For selected range of cells,
 
 {% endhighlight %}
 
-For more information regarding formatting options, please go through {{ '[XlsIO](http://help.syncfusion.com/wpf/xlsio/cell-or-range-formatting)' | markdownify }}
-</br>
 
 ## Merge Cells
 
