@@ -28,11 +28,11 @@ For single cell
 
 {% highlight c# %}
 
-     IRange range = spreadsheet.ActiveSheet.Range["A5"];
+    IRange range = spreadsheet.ActiveSheet.Range["A5"];
 
-     range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+    range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
 
-     spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
+    spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 {% endhighlight %}
 
@@ -56,17 +56,18 @@ For selected range of cells,
 
     }
 
-
 {% endhighlight %}
 
+For more information regarding formatting options, please go through [XlsIO](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+<br/>
 
 ## Merge Cells
 
-_Merge_
+### Merge
 
 SfSpreadsheet provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
 
-For merging the cells in SfSpreadsheet, you need to add the CoveredCellInfo into CoveredCells collection of SpreadsheetGrid and merge the range using Merge method of XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic335.html) into [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2567.html) collection of SpreadsheetGrid and merge the range using [Merge](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3452.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% highlight c# %}
 
@@ -84,11 +85,11 @@ For merging the cells in SfSpreadsheet, you need to add the CoveredCellInfo into
 
 {% endhighlight %}
 
-_UnMerge_
+### Unmerge
 
 You can also unmerge the merged cells in SfSpreadsheet.
 
-For unmerging the cells in SfSpreadsheet, you need to clear the coveredcell from the SpreadsheetGrid and unmerge the range using UnMerge () method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2567.html) from the SpreadsheetGrid and unmerge the range using [UnMerge](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3461.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% highlight c# %}
 
