@@ -8,7 +8,8 @@ documentation: ug
 ---
 
 # Worksheet Management
-
+ This section explains about the operations that are performed with the worksheet
+  
 ## Insert and Delete
 
 SfSpreadsheet provides support to insert and delete the worksheets in a workbook.
@@ -28,6 +29,7 @@ SfSpreadsheet provides support to insert and delete the worksheets in a workbook
     spreadsheet.RemoveSheet("Sheet2");
 
 {% endhighlight %}
+<br/>
 
 ## Hide and Unhide
 
@@ -44,6 +46,7 @@ SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
     spreadsheet.UnhideSheet("Sheet 2");
 
 {% endhighlight %}
+<br/>
 
 ## GridLines
 
@@ -68,6 +71,7 @@ SfSpreadsheet provides support to control the visibility and color of the Gridli
     spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
+<br/>
 
 ## Headings
 
@@ -84,28 +88,29 @@ SfSpreadsheet provides support to control the visibility of row and column heade
     spreadsheet.ActiveGrid.ColumnWidths.SetHidden(0, 0, false);
 
 {% endhighlight %}
+<br/>
 
 ## Zooming
 
-SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The property “AllowZooming” determines whether to allow zooming or not.
+SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The property [AllowZooming](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6319.html) determines whether to allow zooming or not.
 
 {% highlight c# %}
 
     //zoomfactor
-
     spreadsheet.SetZoomFactor("Sheet1", 200);
 
 {% endhighlight %}
 
 The Events associated with the Zooming are 
 
-. ZoomFactorChanged
+. [ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6346.html)
 
-. ZoomFactorChanging
+. [ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6347.html)
+<br/>
 
 ## Protection
 
-_**Workbook**_ _**Protection**_
+### Workbook Protection
 
 SfSpreadsheet provides support to protect the structure and windows of a workbook. By protecting the structure, prevent a user from adding or deleting worksheets or from displaying hidden worksheets. By protecting the windows in the workbook, you can control the size of the workbook, etc.
 
@@ -121,7 +126,7 @@ SfSpreadsheet provides support to protect the structure and windows of a workboo
 
 {% endhighlight %}
 
-_**Worksheet**_ _**Protection**_
+### Worksheet Protection
 
 SfSpreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with protection options also.
 
