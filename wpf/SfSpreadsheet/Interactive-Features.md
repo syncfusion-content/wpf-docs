@@ -15,6 +15,26 @@ documentation: ug
 
 SfSpreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook. When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options). 
 
+You can use the following shortcut keys for Clipboard operations like Excel
+<table>
+<tr>
+<th>
+Operations</th><th>
+Shortcut Keys</th></tr>
+<tr>
+<td>
+Cut</td><td>
+Ctrl + X</td></tr>
+<tr>
+<td>
+Copy</td><td>
+Ctrl + C </td></tr>
+<tr>
+<td>
+Paste</td><td>
+Ctrl + V</td></tr>
+</table>
+
 The following are a list of paste options used while performing paste operation,
 
 <table>
@@ -48,7 +68,7 @@ Value & Source Formatting</td><td>
 To maintain the source range original format and paste only values</td></tr>
 </table>
 
-For {{'[Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6411.html)' | markdownify }} Operation,
+For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6411.html) Operation,
 
 {% highlight c# %}
 			
@@ -64,7 +84,7 @@ For {{'[Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic641
 
 {% endhighlight %}
 
-For {{'[Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6405.html)' | markdownify }} Operation,
+For [Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6405.html) Operation,
 
 {% highlight c# %}
 
@@ -80,7 +100,7 @@ For {{'[Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic64
 
 {% endhighlight %}
 
-For {{'[Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6416.html)' | markdownify }} Operation,
+For [Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6416.html) Operation,
 
 {% highlight c# %}
 
@@ -101,11 +121,28 @@ For {{'[Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6
 
 ## Undo/Redo
 
-SfSpreadsheet provides support for Undo/Redo functionality like MS Excel. 
+SfSpreadsheet provides support for Undo/Redo functionality like MS Excel.
 
-SfSpreadsheet has {{'[History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8527.html)' | markdownify }} class that supports the implementation of undo/ redo operations
+The shortcut keys used for Undo/Redo Operations
 
-To invoke Undo/Redo operations, the {{'[Enabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8543.html)' | markdownify }} property of {{'[History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8527.html)' | markdownify }}  needs to be true.  
+<table>
+<tr>
+<th>
+Operations</th><th>
+Shortcut Keys</th></tr>
+<tr>
+<td>
+Undo</td><td>
+Ctrl + Z</td></tr>
+<tr>
+<td>
+Redo</td><td>
+Ctrl + Y</td></tr>
+</table>
+
+SfSpreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8527.html) class that supports the implementation of undo/ redo operations
+
+To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8543.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8527.html) needs to be true.  
 
 {% highlight c# %}
 
@@ -124,7 +161,7 @@ Context menu in SfSpreadsheet is customizable menu which can be used for various
 
 ### TabItem context menu
 
-By default, {{'[AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6318.html)' | markdownify }} property is set to true to enable the TabItemContext Menu in SfSpreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting {{'[IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6331.html)' | markdownify }}  property to be true and you can add your customized menu items in Context_Menu opening Event.
+By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6318.html) property is set to true to enable the TabItemContext Menu in SfSpreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6331.html)  property to be true and you can add your customized menu items in Context_Menu opening Event.
 
 {% highlight c# %}
 
@@ -134,7 +171,7 @@ By default, {{'[AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_file
 
 ### Cell Context menu
 
-By default, {{'[AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6315.html)' | markdownify }} property is set as true to enable the CellContext Menu in Sfspreadsheet. The Event associated with Cell Context menu {{'[CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2597.html)' | markdownify }} Event of SpreadsheetGrid.
+By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6315.html) property is set as true to enable the CellContext Menu in Sfspreadsheet. The Event associated with Cell Context menu [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2597.html) Event of SpreadsheetGrid.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
@@ -165,13 +202,13 @@ Adding the customized menu items in the CellContextMenuOpening Event,
     }
 
 {% endhighlight %}
-</br>
+<br/>
 
 ## Cell Comments
 
-SfSpreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking “CellCommentOpening” Event of SpreadsheetGrid
+SfSpreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking [CellCommentOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2596.html) Event of SpreadsheetGrid
 
-To enable the comment in SfSpreadsheet, use {{'[ShowComment](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2592.html)' | markdownify }} property of SpreadsheetGrid is set to true.
+To enable the comment in SfSpreadsheet, set the [ShowComment](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2592.html) property of SpreadsheetGrid to true.
 
 {% highlight c# %}
 
