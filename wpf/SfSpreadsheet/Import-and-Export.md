@@ -7,9 +7,9 @@ method
 
 {% highlight c# %}
 
-	spreadsheet.ActiveSheet.ImportDataTable(datatable, true, 1, 1);
+spreadsheet.ActiveSheet.ImportDataTable(datatable, true, 1, 1);
 
-	spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
 
@@ -18,11 +18,11 @@ method
 
 {% highlight c# %}
 
-	IWorksheet sheet = spreadsheet.Workbook.Worksheets[0];
+IWorksheet sheet = spreadsheet.Workbook.Worksheets[0];
 
-	IRange range = sheet.Range["A1:K50"];
+IRange range = sheet.Range["A1:K50"];
 
-	DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
+DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
 
 {% endhighlight %}
 
