@@ -17,21 +17,21 @@ For viewing the Pdf document, you can use [PdfViewerControl](http://help.syncfus
 
 {% highlight c# %}
 
-    //Create the pdfviewer for load the document.
+//Create the pdfviewer for load the document.
 
-    PdfViewerControl pdfviewer = new PdfViewerControl();
+ PdfViewerControl pdfviewer = new PdfViewerControl();
 
-    //Create Memory Stream to save pdfdocument
+//Create Memory Stream to save pdfdocument
 
-    MemoryStream pdfstream = new MemoryStream();
+ MemoryStream pdfstream = new MemoryStream();
 
-    ExcelToPdfConverter converter = new ExcelToPdfConverter (spreadsheet.Workbook);  
+ ExcelToPdfConverter converter = new ExcelToPdfConverter (spreadsheet.Workbook);  
 
-    //Intialize the ExcelToPdfConverter Settings
+//Intialize the ExcelToPdfConverter Settings
 
-    ExcelToPdfConverterSettings settings = new ExcelToPdfConverterSettings(); 
+ ExcelToPdfConverterSettings settings = new ExcelToPdfConverterSettings(); 
 	
-	settings.LayoutOptions = LayoutOptions.NoScaling;
+ settings.LayoutOptions = LayoutOptions.NoScaling;
 
 {% endhighlight %}
 
@@ -39,31 +39,31 @@ For print preview you can load the pdf stream into viewer and for direct printin
 
 {% highlight c# %}
 
-    //Intialize the PdfDocument
+//Intialize the PdfDocument
 
-    PdfDocument pdfDoc = new PdfDocument ();
+ PdfDocument pdfDoc = new PdfDocument ();
 
-    //Assign the PdfDocument to the templateDocument property of ExcelToPdfConverterSettings  
+//Assign the PdfDocument to the templateDocument property of ExcelToPdfConverterSettings  
 	
-	settings.TemplateDocument = pdfDoc;
+ settings.TemplateDocument = pdfDoc;
 
-    settings.DisplayGridLines = GridLinesDisplayStyle.Invisible;
+ settings.DisplayGridLines = GridLinesDisplayStyle.Invisible;
 
-    //Convert Excel Document into PDF document
+//Convert Excel Document into PDF document
 
-    pdfDoc = converter.Convert(settings);
+ pdfDoc = converter.Convert(settings);
 
-    //Save the PDF file     
+//Save the PDF file     
 
-    pdfDoc.Save(pdfstream);
+ pdfDoc.Save(pdfstream);
 
-    //Load the document to pdfviewer
+//Load the document to pdfviewer
 
-    pdfviewer.Load(pdfstream);
+ pdfviewer.Load(pdfstream);
 
-    //Print the doc
+//Print the doc
 
-    pdfviewer.Print(true);
+ pdfviewer.Print(true);
 
 {% endhighlight %}
 

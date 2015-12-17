@@ -9,6 +9,7 @@ documentation: ug
 
 # Conversion
 This section explains about the conversion of workbook in SfSpreadsheet into image, pdf and html
+<br/>
 
 ## Image
 
@@ -16,19 +17,19 @@ SfSpreadsheet provides support to convert a worksheet in to an image of type bit
 
 {% highlight c# %}
 
-    IWorksheet sheet = spreadsheet.Workbook.ActiveSheet;
+IWorksheet sheet = spreadsheet.Workbook.ActiveSheet;
 
-    sheet.UsedRangeIncludesFormatting = false;
+sheet.UsedRangeIncludesFormatting = false;
 
-    int lastRow = sheet.UsedRange.LastRow + 1;
+int lastRow = sheet.UsedRange.LastRow + 1;
 
-    int lastColumn = sheet.UsedRange.LastColumn + 1;
+int lastColumn = sheet.UsedRange.LastColumn + 1;
 
-    System.Drawing.Image img = sheet.ConvertToImage(1, 1, lastRow, lastColumn, ImageType.Bitmap, null);
+System.Drawing.Image img = sheet.ConvertToImage(1, 1, lastRow, lastColumn, ImageType.Bitmap, null);
 
-    img.Save("Sample.png", ImageFormat.Png);
+img.Save("Sample.png", ImageFormat.Png);
 
-    System.Diagnostics.Process.Start("Sample.png");
+System.Diagnostics.Process.Start("Sample.png");
 
 {% endhighlight %}
 <br/>
@@ -43,33 +44,33 @@ Export the Excel workbook as Pdf document using [Convert](http://help.syncfusion
 
 {% highlight c# %}
 
-    ExcelToPdfConverter converter = new ExcelToPdfConverter(spreadsheet.Workbook);
+ExcelToPdfConverter converter = new ExcelToPdfConverter(spreadsheet.Workbook);
 
-    //Intialize the PdfDocument
+//Intialize the PdfDocument
 
-    PdfDocument pdfDoc = new PdfDocument();
+PdfDocument pdfDoc = new PdfDocument();
 
-    //Intialize the ExcelToPdfConverter Settings
+//Intialize the ExcelToPdfConverter Settings
 
-    ExcelToPdfConverterSettings settings = new ExcelToPdfConverterSettings();
+ExcelToPdfConverterSettings settings = new ExcelToPdfConverterSettings();
 
-    settings.LayoutOptions = LayoutOptions.NoScaling;
+settings.LayoutOptions = LayoutOptions.NoScaling;
 
-    //Assign the PdfDocument to the templateDocument property of ExcelToPdfConverterSettings
+//Assign the PdfDocument to the templateDocument property of ExcelToPdfConverterSettings
 
-    settings.TemplateDocument = pdfDoc;
+settings.TemplateDocument = pdfDoc;
 
-    settings.DisplayGridLines = GridLinesDisplayStyle.Invisible;
+settings.DisplayGridLines = GridLinesDisplayStyle.Invisible;
 
-    //Convert Excel Document into PDF document
+//Convert Excel Document into PDF document
 
-    pdfDoc = converter.Convert(settings);
+pdfDoc = converter.Convert(settings);
 
-    //Save the PDF file
+//Save the PDF file
 
-    pdfDoc.Save("Sample.pdf");
+pdfDoc.Save("Sample.pdf");
 
-    System.Diagnostics.Process.Start("Sample.pdf");
+System.Diagnostics.Process.Start("Sample.pdf");
 
 {% endhighlight %}
 <br/>
@@ -80,8 +81,8 @@ SfSpreadsheet provides support to convert the excel workbook into HTML page.
 
 {% highlight c# %}
 
-    spreadsheet.Workbook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
+spreadsheet.Workbook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 
-    System.Diagnostics.Process.Start("Sample.html");
+System.Diagnostics.Process.Start("Sample.html");
 
 {% endhighlight %}

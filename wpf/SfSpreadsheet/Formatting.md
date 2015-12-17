@@ -10,6 +10,7 @@ documentation: ug
 # Formatting
 
 This section explains about the formatting options similar to excel in SfSpreadsheet
+<br/>
 
 ## Cell Styles
 
@@ -62,7 +63,7 @@ For more information regarding formatting options, please go through [XlsIO](htt
 <br/>
 
 ## Merge Cells
-
+<br/>
 ### Merge
 
 SfSpreadsheet provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
@@ -84,6 +85,7 @@ For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](ht
     spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
 
 {% endhighlight %}
+<br/>
 
 ### Unmerge
 
