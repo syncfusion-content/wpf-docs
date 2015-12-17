@@ -9,9 +9,10 @@ documentation: ug
 
 # Rows and Columns
 This section explains about the operations related with rows and columns in SfSpreadsheet
+<br/>
 
 ## Insert and Delete
-
+<br/>
 ### Inserting Rows and Columns
 
 SfSpreadsheet provides support for dynamically inserting rows and columns into a worksheet. 
@@ -31,6 +32,7 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
     spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 {% endhighlight %}
+<br/>
 
 ### Deleting Rows and Columns
 
@@ -55,7 +57,7 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 <br/>
 
 ## Hide and Unhide
-
+<br/>
 ### Hiding Rows/Columns
 
 SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic6537.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic6536.html) method
@@ -75,6 +77,7 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by [Hid
     spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
 
 {% endhighlight %}
+<br/>
 
 ### Unhiding Rows/Columns
 

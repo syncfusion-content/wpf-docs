@@ -9,21 +9,27 @@ documentation: ug
 
 # Working with Spreadsheet
  This section explains about accessing the Worksheet, Grid and the events associated with it.
-  
+<br/>
+ 
 ## Working with Worksheet
 
-A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3940.html) interface. To access a workbook that is currently loaded in the SpreadsheetControl, [spreadsheet.Workbook](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6334.html) property is used
+A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3940.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook]((http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6334.html) property of SfSpreadsheet.
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 
 {% highlight c# %}
 
-    //By Specifying the index as,
-      spreadsheet.Workbook.Worksheets[0]
-    //By Specifying the sheet name as,
-      spreadsheet.Workbook.Worksheets["sheet1"]
-    //Access the Active worksheet as,
-      spreadsheet.ActiveSheet
+//By Specifying the index as,
+
+spreadsheet.Workbook.Worksheets[0]
+
+//By Specifying the sheet name as,
+
+spreadsheet.Workbook.Worksheets["sheet1"]
+
+//Access the Active worksheet as,
+
+spreadsheet.ActiveSheet
       
 {% endhighlight %}
 
@@ -36,8 +42,9 @@ Each worksheet in the workbook is loaded into the view as SpreadsheetGrid in the
 
 {% highlight c# %}
 
-    //Access the Active SpreadsheetGrid as,
-      spreadsheet.ActiveGrid
+//Access the Active SpreadsheetGrid as,
+
+spreadsheet.ActiveGrid
 
 {% endhighlight %}
 
@@ -100,4 +107,18 @@ You can hook the events in WorksheetAdded Event and unhook or remove the objects
     }
 
 {% endhighlight %}
+<br/>
 
+## Setting the CellValue at Runtime
+
+In SfSpreadsheet, to update the cell value programmatically, **SetCellValue** method of SpreadsheetGrid should be invoked and then invalidate that cell to update the view.
+
+{% highlight c# %}
+
+var range = spreadsheet.ActiveSheet.Range[2,2];
+
+spreadsheet.ActiveGrid.SetCellValue(range, "cellvalue");
+
+spreadsheet.ActiveGrid.InvalidateCell(2,2);
+
+{% endhighlight %}

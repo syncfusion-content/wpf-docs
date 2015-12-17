@@ -10,6 +10,7 @@ documentation: ug
 # Getting Started
 
 This section helps you to get started with the SfSpreadsheet
+<br/>
 
 ## Assemblies Deployment
 
@@ -125,7 +126,6 @@ _For_ _Ribbon_
 
 Spreadsheet is available in the following namespace “_Syncfusion_._UI_._Xaml_._Spreadsheet_” and it can be created programmatically either by using XAML or C# code. 
 
-
 _For_ _Spreadsheet_
 
 {% tabs %}
@@ -235,6 +235,7 @@ The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.s
 
 Opening Excel File in SfSpreadsheet
    {:.caption}
+
 <br/>
 
 ## Saving the Excel Workbook

@@ -10,7 +10,8 @@ documentation: ug
 # Interactive Features
 
  This section explains about the interactive operations with SfSpreadsheet
-  
+<br/>
+
 ## Clipboard Operations
 
 SfSpreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook. When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options). 
@@ -72,15 +73,15 @@ For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6411.h
 
 {% highlight c# %}
 			
-    //To perform cut operation for selected ranges
+//To perform cut operation for selected ranges
 
-    var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+ var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-    spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
+ spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
 
-    //To perform cut operation
+//To perform cut operation
 
-    spreadsheet.ActiveGrid.CopyPaste.Cut();
+ spreadsheet.ActiveGrid.CopyPaste.Cut();
 
 {% endhighlight %}
 
@@ -88,15 +89,15 @@ For [Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6405.
 
 {% highlight c# %}
 
-    //To perform copy operation for selected ranges
+//To perform copy operation for selected ranges
 
-    var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+ var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-    spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
+ spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
 
-    //To perform Copy operation
+//To perform Copy operation
 
-    spreadsheet.ActiveGrid.CopyPaste.Copy();
+ spreadsheet.ActiveGrid.CopyPaste.Copy();
 
 {% endhighlight %}
 
@@ -104,17 +105,17 @@ For [Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6416
 
 {% highlight c# %}
 
-    //To perform paste operation
+//To perform paste operation
 
-    spreadsheet.ActiveGrid.CopyPaste.Paste();
+spreadsheet.ActiveGrid.CopyPaste.Paste();
 
-    //To perform paste operation with range and Paste Options
+//To perform paste operation with range and Paste Options
 
-    var copyPaste = spreadsheet.ActiveGrid.CopyPaste as SpreadsheetCopyPaste;
+var copyPaste = spreadsheet.ActiveGrid.CopyPaste as SpreadsheetCopyPaste;
 
-    copyPaste.Paste(range);
+copyPaste.Paste(range);
 
-    copyPaste.Paste(range, PasteOptions.Paste);
+copyPaste.Paste(range, PasteOptions.Paste);
 
 {% endhighlight %}
 <br/>
@@ -146,11 +147,11 @@ To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref
 
 {% highlight c# %}
 
-    spreadsheet.HistoryManager.Enabled = true;
+spreadsheet.HistoryManager.Enabled = true;
 
-    spreadsheet.HistoryManager.Undo();
+spreadsheet.HistoryManager.Undo();
 
-    spreadsheet.HistoryManager.Redo();
+spreadsheet.HistoryManager.Redo();
 
 {% endhighlight %}
 <br/>
@@ -158,6 +159,7 @@ To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref
 ## Context menu
 
 Context menu in SfSpreadsheet is customizable menu which can be used for various functionalities
+<br/>
 
 ### TabItem context menu
 
@@ -168,6 +170,7 @@ By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/w
     spreadsheet.IsCustomTabItemContextMenuEnabled = true;
 
 {% endhighlight %}
+<br/>
 
 ### Cell Context menu
 
@@ -220,7 +223,7 @@ To set the comments for particular cell at run time,
 
 {% highlight c# %}
 
-    spreadsheet.ActiveSheet.Range["E5"].AddComment().Text = "Sample Comment";
-	spreadsheet.ActiveGrid.InvalidateCell(5, 5);
+spreadsheet.ActiveSheet.Range["E5"].AddComment().Text = "Sample Comment";
+spreadsheet.ActiveGrid.InvalidateCell(5, 5);
 	
 {% endhighlight %}

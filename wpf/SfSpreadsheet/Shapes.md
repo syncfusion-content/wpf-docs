@@ -9,6 +9,7 @@ documentation: ug
 
 # Shapes
  This section explains how to import charts and sparklines in SfSpreadsheet
+<br/>
 
 ## Charts
 

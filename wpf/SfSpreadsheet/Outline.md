@@ -15,15 +15,15 @@ To group the rows
 
 {% highlight c# %}
 
-    var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-    var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
+var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
-    spreadsheet.ActiveSheet.Range[excelrange].Group(ExcelGroupBy.ByRows);
+spreadsheet.ActiveSheet.Range[excelrange].Group(ExcelGroupBy.ByRows);
 
-    spreadsheet.ActiveGrid.CurrentCell.Refresh();
+spreadsheet.ActiveGrid.CurrentCell.Refresh();
 
-    spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
 
@@ -32,15 +32,15 @@ To group the columns
 {% highlight c# %}
 
 
-    var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-    var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
+var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
-    spreadsheet.ActiveSheet.Range[excelrange].Group(ExcelGroupBy.ByColumns);
+spreadsheet.ActiveSheet.Range[excelrange].Group(ExcelGroupBy.ByColumns);
 
-    spreadsheet.ActiveGrid.CurrentCell.Refresh();
+spreadsheet.ActiveGrid.CurrentCell.Refresh();
 
-    spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
 
