@@ -1,3 +1,12 @@
+---
+layout: post
+title: Serialize the SfChart| SfChart | Wpf | Syncfusion
+description: serialization and deserialization
+platform: wpf
+control: SfChart
+documentation: ug
+---
+
 # Serialization and Deserialization:
 
 SfChart provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize SfChart.
