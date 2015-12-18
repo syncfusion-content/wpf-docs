@@ -13,7 +13,7 @@ The SfDateTimeRangeNavigator helps the user to visualize large data in a simplif
 
 User can also set the Interval which they think suitable for their data, this can be done by using Interval Property as in below code snippet. 
 
-### Property
+## Property
 
 <table>
 <tr>
@@ -24,6 +24,10 @@ Description</th></tr>
 <td>
 Intervals</td><td>
 Used to set the Interval type which need to be displayed in the Navigator</td></tr>
+<tr>
+<td>
+LabelsPosition</td><td>
+Gets or Sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
 {% highlight xaml %}
@@ -123,7 +127,26 @@ YearInterval</td><td>
 
 ## Label Style Customization
 
-Label Style can be customized using the LabelBarStyle property and this can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+LabelBarStyle</td><td>
+Label Style can be customized using the LabelBarStyle property and this can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.</td></tr>
+<tr>
+<td>
+SelectedLabelStyle</td><td>
+Used to define the Label Style for labels in the selected region.</td></tr>
+<tr>
+<td>
+LabelsPosition</td><td>
+Used to position the upper and lower labels inside or outside of the label bar.</td></tr>
+</table>
+
+ 
 
 {% highlight xaml %}
 
@@ -153,3 +176,5 @@ Following is the screenshot of Label HorizontalAlignment set to left.
 
 Label HorizontalAlignment set to left
 {:.caption}
+
+

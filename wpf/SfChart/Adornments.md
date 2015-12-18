@@ -301,7 +301,36 @@ The following code explains how to add connector line to the adornments.
 
 ![](Adornments_images/Adornments_img3.png)
 
+## SmartLabel Alignment
 
+LabelPosition property is used for aligning the labels in adornments. It is an enum property and the default value of this property is default.
+
+<table>
+<tr>
+<th>
+Enum Value</th><th>
+Description</th></tr>
+<tr>
+<td>
+Default</td><td>
+The labels are positioned at the  center position of the series. HorizontalAligment and VerticalAlignment works if it set to the AdornmentInfo.</td></tr>
+<tr>
+<td>
+Auto</td><td>
+The labels are aligned automatically that does not intersect with the series. If the adornment label exceeds the chart area it made them to bring inside the chart area </td></tr>
+<tr>
+<td>
+Inner</td><td>
+The labels are aligned in the inner position of the series.</td></tr>
+<tr>
+<td>
+Outer</td><td>
+The labels are aligned in the outer position of the series.</td></tr>
+<tr>
+<td>
+Center</td><td>
+The labels are aligned at the center position.</td></tr>
+</table>
 
 ## SmartLabel support for CircularSeries
 
@@ -688,8 +717,6 @@ SegmentLabelFormat="# cm">
 </syncfusion:ColumnSeries>    
 
 {% endhighlight %}
-
-
 
 ![](Adornments_images/Adornments_img10.png)
 
