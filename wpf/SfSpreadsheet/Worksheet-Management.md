@@ -9,24 +9,25 @@ documentation: ug
 
 # Worksheet Management
  This section explains about the operations that are performed with the worksheet
-  
+<br/>
+
 ## Insert and Delete
 
 SfSpreadsheet provides support to insert and delete the worksheets in a workbook.
 
 {% highlight c# %}
 
-    //Insert Sheet
+//Insert Sheet
 
-    spreadsheet.AddSheet();
+spreadsheet.AddSheet();
 	
-	//Insert sheet with name
+//Insert sheet with name
 
-    spreadsheet.AddSheet("Sheet4", 3);
+spreadsheet.AddSheet("Sheet4", 3);
 
-    //Delete Sheet
+//Delete Sheet
 
-    spreadsheet.RemoveSheet("Sheet2");
+spreadsheet.RemoveSheet("Sheet2");
 
 {% endhighlight %}
 <br/>
@@ -37,13 +38,13 @@ SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
 
 {% highlight c# %}
 
-    //Hide Sheet
+//Hide Sheet
 
-    spreadsheet.HideSheet("Sheet 2");
+spreadsheet.HideSheet("Sheet 2");
 
-    //Unhide Sheet
+//Unhide Sheet
 
-    spreadsheet.UnhideSheet("Sheet 2");
+spreadsheet.UnhideSheet("Sheet 2");
 
 {% endhighlight %}
 <br/>
@@ -54,21 +55,21 @@ SfSpreadsheet provides support to control the visibility and color of the Gridli
 
 {% highlight c# %}
 
-    //To show GridLines
+//To show GridLines
 
-    spreadsheet.ActiveGrid.ShowGridLines = true;
+spreadsheet.ActiveGrid.ShowGridLines = true;
 
-    spreadsheet.ActiveSheet.IsGridLinesVisible = true;
+spreadsheet.ActiveSheet.IsGridLinesVisible = true;
 
-    spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.ActiveGrid.InvalidateCells();
 
-    //To hide GridLines
+//To hide GridLines
 
-    spreadsheet.ActiveGrid.ShowGridLines = false;
+spreadsheet.ActiveGrid.ShowGridLines = false;
 
-    spreadsheet.ActiveSheet.IsGridLinesVisible = false;
+spreadsheet.ActiveSheet.IsGridLinesVisible = false;
 
-    spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
 <br/>
@@ -79,13 +80,13 @@ SfSpreadsheet provides support to control the visibility of row and column heade
 
 {% highlight c# %}
 
-    //For Header cells visibility
+/For Header cells visibility
 
-    spreadsheet.ActiveSheet.IsRowColumnHeadersVisible = true;
+spreadsheet.ActiveSheet.IsRowColumnHeadersVisible = true;
 
-    spreadsheet.ActiveGrid.RowHeights.SetHidden(0, 0, false);
+spreadsheet.ActiveGrid.RowHeights.SetHidden(0, 0, false);
 
-    spreadsheet.ActiveGrid.ColumnWidths.SetHidden(0, 0, false);
+spreadsheet.ActiveGrid.ColumnWidths.SetHidden(0, 0, false);
 
 {% endhighlight %}
 <br/>
@@ -96,8 +97,9 @@ SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The 
 
 {% highlight c# %}
 
-    //zoomfactor
-    spreadsheet.SetZoomFactor("Sheet1", 200);
+//zoomfactor
+
+spreadsheet.SetZoomFactor("Sheet1", 200);
 
 {% endhighlight %}
 
@@ -109,6 +111,7 @@ The Events associated with the Zooming are
 <br/>
 
 ## Protection
+<br/>
 
 ### Workbook Protection
 
@@ -116,15 +119,16 @@ SfSpreadsheet provides support to protect the structure and windows of a workboo
 
 {% highlight c# %}
 
-    // To Protect the Workbook 
+// To Protect the Workbook 
 
-    spreadsheet.Protect(true, true, "123");
+spreadsheet.Protect(true, true, "123");
 
-    //To Unprotect the Workbook
+//To Unprotect the Workbook
 
-    spreadsheet.Unprotect("123");
+spreadsheet.Unprotect("123");
 
 {% endhighlight %}
+<br/>
 
 ### Worksheet Protection
 
@@ -132,17 +136,17 @@ SfSpreadsheet provides support to protect the worksheet with or without password
 
 {% highlight c# %}
 
-    //Protect the sheet with password
+//Protect the sheet with password
 
-    spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123");
+spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123");
 
-    //Protect the sheet with Protection options
+//Protect the sheet with Protection options
 
-    spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123", ExcelSheetProtection.All);
+spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123", ExcelSheetProtection.All);
 
-    //Unprotect the sheet
+//Unprotect the sheet
 
-    spreadsheet.UnProtectSheet(spreadsheet.ActiveSheet, "123");
+spreadsheet.UnProtectSheet(spreadsheet.ActiveSheet, "123");
 
 {% endhighlight %}
 

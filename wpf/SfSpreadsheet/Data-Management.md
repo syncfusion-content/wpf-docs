@@ -1,3 +1,12 @@
+---
+layout: post
+title: Data Management | SfSpreadsheet | WPF | Syncfusion
+description: data management
+platform: wpf
+control: SfSpreadsheet
+documentation: ug
+---
+
 # Data Management
 
 SfSpreadsheet provides support to import data from a Datatable to a SfSpreadSheet and export data from a SfSpreadSheet to a DataTable respectively.
