@@ -37,7 +37,7 @@ This section demonstrates how to create a surface chart using SfSurfaceChart con
 
 {% highlight xaml %}
 
-xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"</td></tr>
+xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
 
 {% endhighlight %}
 

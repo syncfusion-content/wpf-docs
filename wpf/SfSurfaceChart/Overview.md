@@ -20,5 +20,4 @@ Essential Surface Chart shows a three-dimensional surface that connects a set of
 * Built-in palettes.
 * Supports gradient brushes. 
 * Perspective and Orthographic view.
-* Zooming support. 
 * Contour and wireframe support.

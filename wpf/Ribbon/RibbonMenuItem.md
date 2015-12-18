@@ -58,6 +58,6 @@ _ribbonBar1.Items.Add(_ribbonMenuItem)
 
 {% endtabs %}
 
-![](RibbonMenuItem_images/RibbonMenuItem_img1.jpeg)
+![](RibbonMenuItem_images/RibbonMenuItem_img1.jpg)
 
 
