@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title: Surface Axis | SfSurfaceChart | wpf | Syncfusion
-description: Surface Axis
+title: Surface Area | SfSurfaceChart | wpf | Syncfusion
+description: Surface Area
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
