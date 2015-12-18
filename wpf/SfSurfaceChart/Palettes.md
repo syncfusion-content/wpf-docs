@@ -59,6 +59,12 @@ The custom palette option enables you to define your own color brushes for the
 					
 					<SolidColorBrush Color="Yellow"/>
 												
+					<SolidColorBrush Color="Blue"/>
+												
+					<SolidColorBrush Color="Lime"/>
+					
+					<SolidColorBrush Color="Yellow"/>
+					
 					<SolidColorBrush Color="OrangeRed"/>
 					
 				</Syncfusion:ChartColorModel.CustomBrushes>
