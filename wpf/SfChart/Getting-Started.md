@@ -26,11 +26,11 @@ The following image helps you understand various elements in SfChart, when you u
 
 A chart is composed of various elements such as ChartSeries, ChartLegend, ChartAxis, ChartAdornment, grid lines and headers. 
 
-**Chart Header** - Represents the title of the chart.
-**ChartSeries** - Represents the type of chart to be drawn in the chart area.
-**ChartLegend** - Displays brief information about the ChartSeries plotted in the chart area.
-**ChartAdornment** - Displays information about the data points in ChartSeries.
-**ChartAxis** - Displays a linear scale of values with definite intervals between them.
+* **Chart Header** - Represents the title of the chart.
+* **ChartSeries** - Represents the type of chart to be drawn in the chart area.
+* **ChartLegend** - Displays brief information about the ChartSeries plotted in the chart area.
+* **ChartAdornment** - Displays information about the data points in ChartSeries.
+* **ChartAxis** - Displays a linear scale of values with definite intervals between them.
 
 
 ## Create a simple chart from XAML
@@ -65,6 +65,7 @@ You need to initialize the chart represented by the following class Syncfusion.U
 
 
 </syncfusion:SfChart>
+
 {% endhighlight %}
 
 ###Add SfChart from Toolbox
@@ -247,13 +248,13 @@ Tip: The graph selection depends on user scenario and the nature of the data. Fo
 
 After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
-**ItemsSource**- It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* **ItemsSource**- It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
 
-**XBindingPath**- It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* **XBindingPath**- It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 
-**YBindingPath**- It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* **YBindingPath**- It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 
-**Label**- This property gives names for the series, mapped by the Legend.
+* **Label**- This property gives names for the series, mapped by the Legend.
 
 
 
@@ -631,13 +632,13 @@ N> Syncfusion Chart also supports rendering combination of multiple series.
 
 After you add the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
-**ItemsSource** – It is a collection property, like other collection controls like ListBox, ComboBox, that you can bind your underlying collection to it.
+* **ItemsSource** – It is a collection property, like other collection controls like ListBox, ComboBox, that you can bind your underlying collection to it.
 
-**XBindingPath**– It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* **XBindingPath**– It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 
-**YBindingPath**– It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* **YBindingPath**– It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 
-**Label** – This property gives names for the series, mapped by the Legend.
+* **Label** – This property gives names for the series, mapped by the Legend.
 
 
 
