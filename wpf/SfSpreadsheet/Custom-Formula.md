@@ -20,6 +20,10 @@ SfSpreadsheet allows you to add custom formulas into its function library. You c
     {
         foreach (var grid in args.GridCollection)
           AddCustomFormula(grid); 
+          
+        //Computing the formula at runtime
+          var range = spreadsheetControl.ActiveSheet.Range["B2"];
+          spreadsheetControl.ActiveGrid.SetCellValue(range,"=Find(aaa)");
     }
 
     private void AddCustomFormula(SpreadsheetGrid grid)

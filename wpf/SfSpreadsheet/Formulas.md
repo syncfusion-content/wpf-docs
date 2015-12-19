@@ -384,7 +384,7 @@ CONVERT<br/><br/></td><td>
 Converts a number from one measurement system to another<br/><br/></td></tr>
 </table>
 
-**Financial** **Functions**
+## Financial Functions
 
 <table>
 <tr>
