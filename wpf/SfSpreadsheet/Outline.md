@@ -13,6 +13,7 @@ SfSpreadsheet provides support for outlines like in excel which makes your data 
 
 To group the rows
 
+{% tabs %}
 {% highlight c# %}
 
 var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
@@ -26,11 +27,12 @@ spreadsheet.ActiveGrid.CurrentCell.Refresh();
 spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
+{% endtabs %}
 
 To group the columns
 
+{% tabs %}
 {% highlight c# %}
-
 
 var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
@@ -43,4 +45,5 @@ spreadsheet.ActiveGrid.CurrentCell.Refresh();
 spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
+{% endtabs %}
 

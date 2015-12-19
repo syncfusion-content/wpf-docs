@@ -8,27 +8,703 @@ documentation: ug
 ---
 
 # Formulas
- This Section explains about the functions which are supported in SfSpreadsheet
-<br/>
-
-## Supported Functions
 
 SfSpreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. SfSpreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 
-* Financial Functions
-* Statistical Functions
-* Engineering Functions
-* Information Functions
-* Date and Time Functions
-* Logical Functions
-* Text Functions
-* Look up and Reference Functions
-* Math and Trigonometry Functions
-* Web Functions
-
 Following is a list of functions that are supported by SfSpreadsheet
 
-**Math** **&** **Trigonometry** **functions**
+## Database Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+DCOUNT<br/><br/></td><td>
+Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DCOUNTA<br/><br/></td><td>
+Returns the number of non-blank cells in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DAVERAGE<br/><br/></td><td>
+Calculates the average of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DGET<br/><br/></td><td>
+Returns a single value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DMAX<br/><br/></td><td>
+Returns the maximum value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DMIN<br/><br/></td><td>
+Returns the minimum value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DSTDEVP<br/><br/></td><td>
+Calculates the standard deviation (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DSTEV<br/><br/></td><td>
+Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DVARP<br/><br/></td><td>
+Calculates the variance (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+<tr>
+<td>
+DVAR<br/><br/></td><td>
+Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+</table>
+
+## Date and Time Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+DATE<br/><br/></td><td>
+Returns a date, from a user-supplied year, month and day<br/><br/></td></tr>
+<tr>
+<td>
+DATEVALUE<br/><br/></td><td>
+Converts a text string showing a date, to an integer that represents the date in Excel's date-time code<br/><br/></td></tr>
+<tr>
+<td>
+DAY<br/><br/></td><td>
+Returns the day (of the month) from a user-supplied date<br/><br/></td></tr>
+<tr>
+<td>
+DAYS360<br/><br/></td><td>
+Calculates the number of days between 2 dates, based on a 360-day year (12 x 30 months)<br/><br/></td></tr>
+<tr>
+<td>
+HOUR<br/><br/></td><td>
+Returns the hour part of a user-supplied time<br/><br/></td></tr>
+<tr>
+<td>
+MINUTE<br/><br/></td><td>
+Returns the minute part of a user-supplied time<br/><br/></td></tr>
+<tr>
+<td>
+SECOND<br/><br/></td><td>
+Returns the seconds part of a user-supplied time<br/><br/></td></tr>
+<tr>
+<td>
+MONTH<br/><br/></td><td>
+Returns the month from a user-supplied date<br/><br/></td></tr>
+<tr>
+<td>
+NOW<br/><br/></td><td>
+Returns the current date & time<br/><br/></td></tr>
+<tr>
+<td>
+TIME<br/><br/></td><td>
+Returns a time, from a user-supplied hour, minute and second<br/><br/></td></tr>
+<tr>
+<td>
+TIMEVALUE<br/><br/></td><td>
+Converts a text string showing a time, to a decimal that represents the time in Excel<br/><br/></td></tr>
+<tr>
+<td>
+TODAY<br/><br/></td><td>
+Returns today's date<br/><br/></td></tr>
+<tr>
+<td>
+WEEKDAY<br/><br/></td><td>
+Returns an integer representing the day of the week for a supplied date<br/><br/></td></tr>
+<tr>
+<td>
+YEAR<br/><br/></td><td>
+Returns the year from a user-supplied date<br/><br/></td></tr>
+<tr>
+<td>
+DAYS<br/><br/></td><td>
+Calculates the number of days between 2 dates<br/><br/></td></tr>
+<tr>
+<td>
+EDATE<br/><br/></td><td>
+Returns a date that is the specified number of months before or after an initial supplied start date<br/><br/></td></tr>
+<tr>
+<td>
+EOMONTH<br/><br/></td><td>
+Returns a date that is the last day of the month which is a specified number of months before or after an initial supplied start date<br/><br/></td></tr>
+<tr>
+<td>
+ISOWEEKNUM<br/><br/></td><td>
+Returns the ISO week number of the year for a given date<br/><br/></td></tr>
+<tr>
+<td>
+NETWORKDAYS.INTL<br/><br/></td><td>
+Returns the number of whole networkdays (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
+<tr>
+<td>
+WEEKNUM<br/><br/></td><td>
+Returns an integer representing the week number (from 1 to 53) of the year from a user-supplied date<br/><br/></td></tr>
+<tr>
+<td>
+WORKDAY<br/><br/></td><td>
+Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date<br/><br/></td></tr>
+<tr>
+<td>
+WORKDAY.INTL<br/><br/></td><td>
+Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date, using supplied parameters to specify weekend days<br/><br/></td></tr>
+<tr>
+<td>
+YEARFRAC<br/><br/></td><td>
+Calculates the fraction of the year represented by the number of whole days between two dates<br/><br/></td></tr>
+</table>
+
+## Engineering Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+DEC2BIN<br/><br/></td><td>
+Converts a decimal number to binary<br/><br/></td></tr>
+<tr>
+<td>
+DCE2OCT<br/><br/></td><td>
+Converts a binary number to octal<br/><br/></td></tr>
+<tr>
+<td>
+DEC2HEX<br/><br/></td><td>
+Converts a decimal number to hexadecimal<br/><br/></td></tr>
+<tr>
+<td>
+BIN2DEC<br/><br/></td><td>
+Converts a binary number to hexadecimal<br/><br/></td></tr>
+<tr>
+<td>
+BIN2OCT<br/><br/></td><td>
+Converts a binary number to octal<br/><br/></td></tr>
+<tr>
+<td>
+BIN2HEX<br/><br/></td><td>
+Converts a binary number to hexadecimal<br/><br/></td></tr>
+<tr>
+<td>
+HEX2BIN<br/><br/></td><td>
+Converts a hexadecimal number to binary<br/><br/></td></tr>
+<tr>
+<td>
+HEX2DEC<br/><br/></td><td>
+Converts a hexadecimal number to a decimal<br/><br/></td></tr>
+<tr>
+<td>
+HEX2OCT<br/><br/></td><td>
+Converts a hexadecimal number to octal<br/><br/></td></tr>
+<tr>
+<td>
+OCT2BIN<br/><br/></td><td>
+Converts octal number to binary<br/><br/></td></tr>
+<tr>
+<td>
+OCT2DEC<br/><br/></td><td>
+Converts octal number to a decimal<br/><br/></td></tr>
+<tr>
+<td>
+OCT2HEX<br/><br/></td><td>
+Converts octal number to hexadecimal<br/><br/></td></tr>
+<tr>
+<td>
+IMABS<br/><br/></td><td>
+Returns the absolute value (the modulus) of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMAGINARY<br/><br/></td><td>
+Returns the imaginary coefficient of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMREAL<br/><br/></td><td>
+Returns the real coefficient of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+COMPLEX<br/><br/></td><td>
+Converts user-supplied real and imaginary coefficients into a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMSUM<br/><br/></td><td>
+Calculates the sum of two complex numbers<br/><br/></td></tr>
+<tr>
+<td>
+IMSUB<br/><br/></td><td>
+Subtracts two complex numbers<br/><br/></td></tr>
+<tr>
+<td>
+IMPRODUCT<br/><br/></td><td>
+Returns the product of up to 255 supplied complex numbers<br/><br/></td></tr>
+<tr>
+<td>
+IMDIV<br/><br/></td><td>
+Returns the quotient of two supplied complex numbers<br/><br/></td></tr>
+<tr>
+<td>
+IMCONJUGATE<br/><br/></td><td>
+Returns the complex conjugate of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMSQRT<br/><br/></td><td>
+Returns the square root of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMARGUMENT<br/><br/></td><td>
+Returns the argument Θ (an angle expressed in radians) of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMSIN<br/><br/></td><td>
+Returns the sine of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMCSC<br/><br/></td><td>
+Returns the cosecant of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMCOS<br/><br/></td><td>
+Returns the cosine of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMSEC<br/><br/></td><td>
+Returns the secant of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMTAN<br/><br/></td><td>
+Returns the tangent of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMCOT<br/><br/></td><td>
+Returns the cotangent of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMSINH<br/><br/></td><td>
+Returns the hyperbolic sine of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMCSCH<br/><br/></td><td>
+Returns the hyperbolic cosecant of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMCOSH<br/><br/></td><td>
+Returns the hyperbolic cosine of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMSECH<br/><br/></td><td>
+Returns the hyperbolic secant of a complex number <br/><br/></td></tr>
+<tr>
+<td>
+IMLOG10<br/><br/></td><td>
+Returns the base-10 logarithm of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMLOG2<br/><br/></td><td>
+Returns the base-2 logarithm of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMLN<br/><br/></td><td>
+Returns the natural logarithm of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMEXP<br/><br/></td><td>
+Returns the exponential of a complex number<br/><br/></td></tr>
+<tr>
+<td>
+IMPOWER<br/><br/></td><td>
+Calculates a complex number raised to a supplied power<br/><br/></td></tr>
+<tr>
+<td>
+GESTEP<br/><br/></td><td>
+Tests whether a number is greater than a supplied threshold value<br/><br/></td></tr>
+<tr>
+<td>
+DELTA<br/><br/></td><td>
+Tests whether two supplied numbers are equal<br/><br/></td></tr>
+<tr>
+<td>
+BITAND<br/><br/></td><td>
+Returns a Bitwise 'And' of two numbers<br/><br/></td></tr>
+<tr>
+<td>
+BITOR<br/><br/></td><td>
+Returns a Bitwise 'Or' of two numbers<br/><br/></td></tr>
+<tr>
+<td>
+BITXOR<br/><br/></td><td>
+Returns a Bitwise 'Exclusive Or' of two numbers<br/><br/></td></tr>
+<tr>
+<td>
+BITLSHIFT<br/><br/></td><td>
+Returns a number shifted left by a specified number of bits <br/><br/></td></tr>
+<tr>
+<td>
+BITRSHIFT<br/><br/></td><td>
+Returns a number shifted right by a specified number of bits<br/><br/></td></tr>
+<tr>
+<td>
+ERF<br/><br/></td><td>
+Returns the error function integrated between two supplied limits<br/><br/></td></tr>
+<tr>
+<td>
+ERF.PRECISE<br/><br/></td><td>
+Returns the error function integrated between 0 and a supplied limit<br/><br/></td></tr>
+<tr>
+<td>
+ERFC.PRECISE<br/><br/></td><td>
+Returns the complementary error function integrated between a supplied lower limit and infinity<br/><br/></td></tr>
+<tr>
+<td>
+BESSELI<br/><br/></td><td>
+Calculates the modified Bessel function In(x)<br/><br/></td></tr>
+<tr>
+<td>
+BESSELJ<br/><br/></td><td>
+Calculates the Bessel function Jn(x)<br/><br/></td></tr>
+<tr>
+<td>
+BESSELY<br/><br/></td><td>
+Calculates the modified Bessel function Yn(x)<br/><br/></td></tr>
+<tr>
+<td>
+BESSELK<br/><br/></td><td>
+Calculates the modified Bessel function Kn(x)<br/><br/></td></tr>
+<tr>
+<td>
+CONVERT<br/><br/></td><td>
+Converts a number from one measurement system to another<br/><br/></td></tr>
+</table>
+
+## Financial Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+DB<br/><br/></td><td>
+Calculates the depreciation of an asset for a specified period, using the fixed-declining balance method<br/><br/></td></tr>
+<tr>
+<td>
+DDB<br/><br/></td><td>
+Calculates the depreciation of an asset for a specified period, using the double-declining balance method, or some other user-specified method<br/><br/></td></tr>
+<tr>
+<td>
+FV<br/><br/></td><td>
+Calculates the future value of an investment with periodic constant payments and a constant interest rate<br/><br/></td></tr>
+<tr>
+<td>
+IPMT<br/><br/></td><td>
+Calculates the interest payment for a given period of an investment, with periodic constant payments and a constant interest rate<br/><br/></td></tr>
+<tr>
+<td>
+IRR<br/><br/></td><td>
+Calculates the internal rate of return for a series of cash flows<br/><br/></td></tr>
+<tr>
+<td>
+XIRR<br/><br/></td><td>
+Calculates the internal rate of return for a schedule of cash flows<br/><br/></td></tr>
+<tr>
+<td>
+ISPMT<br/><br/></td><td>
+Returns the interest paid during a specified period of an investment<br/><br/></td></tr>
+<tr>
+<td>
+MIRR<br/><br/></td><td>
+Calculates the internal rate of return for a series of periodic cash flows, considering the cost of the investment and the interest on the reinvestment of cash<br/><br/></td></tr>
+<tr>
+<td>
+NPER<br/><br/></td><td>
+Returns the number of periods for an investment with periodic constant payments and a constant interest rate<br/><br/></td></tr>
+<tr>
+<td>
+NPV<br/><br/></td><td>
+Calculates the net present value of an investment, based on a supplied discount rate, and a series of future payments and income<br/><br/></td></tr>
+<tr>
+<td>
+PMT<br/><br/></td><td>
+Calculates the payments required to reduce a loan, from a supplied present value to a specified future value<br/><br/></td></tr>
+<tr>
+<td>
+PPMT<br/><br/></td><td>
+Calculates the payment on the principal for a given investment, with periodic constant payments and a constant interest rate<br/><br/></td></tr>
+<tr>
+<td>
+PV<br/><br/></td><td>
+Calculates the present value of an investment (ie. the total amount that a series of future payments is worth now)<br/><br/></td></tr>
+<tr>
+<td>
+RATE<br/><br/></td><td>
+Calculates the interest rate required to pay off a specified amount of a loan, or reach a target amount on an investment over a given period<br/><br/></td></tr>
+<tr>
+<td>
+SLN<br/><br/></td><td>
+Returns the straight-line depreciation of an asset for one period<br/><br/></td></tr>
+<tr>
+<td>
+SYD<br/><br/></td><td>
+Returns the sum-of-years' digits depreciation of an asset for a specified period<br/><br/></td></tr>
+<tr>
+<td>
+VDB<br/><br/></td><td>
+Returns the depreciation of an asset for a specified period, (including partial periods), using the double-declining balance method or another user-specified method<br/><br/></td></tr>
+<tr>
+<td>
+DOLLARDE<br/><br/></td><td>
+Converts a dollar price expressed as a fraction, into a dollar price expressed as a decimal<br/><br/></td></tr>
+<tr>
+<td>
+DOLLARFR<br/><br/></td><td>
+Converts a dollar price expressed as a decimal, into a dollar price expressed as a fraction<br/><br/></td></tr>
+<tr>
+<td>
+DURATION<br/><br/></td><td>
+Calculates the Macauley duration of a security with an assumed par value of $100<br/><br/></td></tr>
+<tr>
+<td>
+RRI<br/><br/></td><td>
+Calculates an equivalent interest rate for the growth of an investment<br/><br/></td></tr>
+<tr>
+<td>
+FVSCHEDULE<br/><br/></td><td>
+Calculates the future value of an initial principal, after applying a series of compound interest rates<br/><br/></td></tr>
+<tr>
+<td>
+DISC<br/><br/></td><td>
+Calculates the discount rate for a security<br/><br/></td></tr>
+<tr>
+<td>
+INTRATE<br/><br/></td><td>
+Calculates the interest rate for a fully invested security<br/><br/></td></tr>
+<tr>
+<td>
+CUMIPMT<br/><br/></td><td>
+Calculates the cumulative interest paid between two specified periods<br/><br/></td></tr>
+<tr>
+<td>
+CUMPRINC<br/><br/></td><td>
+Calculates the cumulative principal paid on a loan, between two specified periods<br/><br/></td></tr>
+<tr>
+<td>
+RECEIVED<br/><br/></td><td>
+Calculates the amount received at maturity for a fully invested Security<br/><br/></td></tr>
+</table>
+
+## Information Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+ISERROR<br/><br/></td><td>
+Checks whether the value is an error and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISNUMBER<br/><br/></td><td>
+Checks whether the value is number and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISLOGICAL<br/><br/></td><td>
+Checks whether a value is logical value(TRUE/FALSE) and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISNA<br/><br/></td><td>
+Checks whether a value is #N/A and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISERR<br/><br/></td><td>
+Checks whether the value is an error except #N/A and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISBLANK<br/><br/></td><td>
+Checks whether the reference is to an empty cell and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISTEXT<br/><br/></td><td>
+Checks whether the value is text and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISNONTEXT<br/><br/></td><td>
+Checks whether the value is not text(blank cells are not text) and returns true or false<br/><br/></td></tr>
+<tr>
+<td>
+ISEVEN<br/><br/></td><td>
+Returns true if number is even<br/><br/></td></tr>
+<tr>
+<td>
+CONCATENATE<br/><br/></td><td>
+Joins together two or more text strings<br/><br/></td></tr>
+<tr>
+<td>
+DOLLAR<br/><br/></td><td>
+Converts a number to text using currency format<br/><br/></td></tr>
+<tr>
+<td>
+LEN<br/><br/></td><td>
+Returns the length of a supplied text string<br/><br/></td></tr>
+<tr>
+<td>
+FIXED<br/><br/></td><td>
+Rounds a supplied number to a specified number of decimal places, and then converts this into text<br/><br/></td></tr>
+<tr>
+<td>
+ISODD<br/><br/></td><td>
+Returns true if number is odd<br/><br/></td></tr>
+<tr>
+<td>
+ERROR.TYPE<br/><br/></td><td>
+Tests a supplied value and returns an integer relating to the supplied value's error type<br/><br/></td></tr>
+<tr>
+<td>
+N<br/><br/></td><td>
+Converts a non-number value to a number, a date to a serial number, the logical value TRUE to 1 and all other values to 0<br/><br/></td></tr>
+<tr>
+<td>
+NA<br/><br/></td><td>
+Returns the Excel #N/A error<br/><br/></td></tr>
+<tr>
+<td>
+CELL<br/><br/></td><td>
+Returns information about the contents, formatting or location of a given cell<br/><br/></td></tr>
+<tr>
+<td>
+INFO<br/><br/></td><td>
+Returns information about the the current operating environment<br/><br/></td></tr>
+<tr>
+<td>
+TYPE<br/><br/></td><td>
+Returns information about the data type of a supplied value<br/><br/></td></tr>
+<tr>
+<td>
+ISFORMULA<br/><br/></td><td>
+Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE<br/><br/></td></tr>
+</table>
+
+## Logical Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+AND<br/><br/></td><td>
+Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+<tr>
+<td>
+OR<br/><br/></td><td>
+Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+<tr>
+<td>
+IF<br/><br/></td><td>
+Tests a user-defined condition and returns one result if the condition is TRUE, and another result if the condition is FALSE<br/><br/></td></tr>
+<tr>
+<td>
+IFERROR<br/><br/></td><td>
+Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td></tr>
+<tr>
+<td>
+FALSE<br/><br/></td><td>
+Simply returns the logical value FALSE<br/><br/></td></tr>
+<tr>
+<td>
+TRUE<br/><br/></td><td>
+Simply returns the logical value TRUE<br/><br/></td></tr>
+<tr>
+<td>
+NOT<br/><br/></td><td>
+Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
+</table>
+
+## Lookup & Reference Functions
+
+<table>
+<tr>
+<th>
+Name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+OFFSET<br/><br/></td><td>
+Returns a reference to a range of cells that is a specified number of rows and columns from an initial supplied range<br/><br/></td></tr>
+<tr>
+<td>
+HLOOKUP<br/><br/></td><td>
+Looks up a supplied value in the first row of a table, and returns the corresponding value from another row<br/><br/></td></tr>
+<tr>
+<td>
+VLOOKUP<br/><br/></td><td>
+Looks up a supplied value in the first column of a table, and returns the corresponding value from another column<br/><br/></td></tr>
+<tr>
+<td>
+MATCH<br/><br/></td><td>
+Finds the relative position of a value in a supplied array<br/><br/></td></tr>
+<tr>
+<td>
+COLUMN<br/><br/></td><td>
+Returns the column number of a supplied range, or of the current cell<br/><br/></td></tr>
+<tr>
+<td>
+ROW<br/><br/></td><td>
+Returns the row number of a supplied range, or of the current cell<br/><br/></td></tr>
+<tr>
+<td>
+INDIRECT<br/><br/></td><td>
+Returns a cell or range reference that is represented by a supplied text string<br/><br/></td></tr>
+<tr>
+<td>
+AREAS<br/><br/></td><td>
+Returns the number of areas in a supplied range<br/><br/></td></tr>
+<tr>
+<td>
+COLUMNS<br/><br/></td><td>
+Returns the number of columns in a supplied range<br/><br/></td></tr>
+<tr>
+<td>
+FORMULATEXT<br/><br/></td><td>
+Returns a formula as a string<br/><br/></td></tr>
+<tr>
+<td>
+HYPERLINK<br/><br/></td><td>
+Creates a hyperlink to a document in a supplied location<br/><br/></td></tr>
+<tr>
+<td>
+ROW<br/><br/></td><td>
+Returns the row number of a supplied range, or of the current cell<br/><br/></td></tr>
+<tr>
+<td>
+ROWS<br/><br/></td><td>
+Returns the number of rows in a supplied range<br/><br/></td></tr>
+<tr>
+<td>
+SHEET<br/><br/></td><td>
+Returns the sheet number of the referenced sheet<br/><br/></td></tr>
+<tr>
+<td>
+TRANSPOSE<br/><br/></td><td>
+Performs a transpose transformation on a range of cells (ie. transforms a horizontal range of cells into a vertical range and vice versa)<br/><br/></td></tr>
+<tr>
+<td>
+SHEETS<br/><br/></td><td>
+Returns the number of sheets in reference<br/><br/></td></tr>
+</table>
+
+## Math & Trigonometry functions
 
 <table>
 <tr>
@@ -349,7 +1025,7 @@ MUNIT<br/><br/></td><td>
 Returns the unit matrix for the specified dimension<br/><br/></td></tr>
 </table>
 
-**Statistical** **functions**
+## Statistical functions
 
 <table>
 <tr>
@@ -803,649 +1479,7 @@ ZTEST<br/><br/></td><td>
 Returns the one-tailed probability value of a z-test<br/><br/></td></tr>
 </table>
 
-**Logical** **Functions**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-AND<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
-<tr>
-<td>
-OR<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
-<tr>
-<td>
-IF<br/><br/></td><td>
-Tests a user-defined condition and returns one result if the condition is TRUE, and another result if the condition is FALSE<br/><br/></td></tr>
-<tr>
-<td>
-IFERROR<br/><br/></td><td>
-Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td></tr>
-<tr>
-<td>
-FALSE<br/><br/></td><td>
-Simply returns the logical value FALSE<br/><br/></td></tr>
-<tr>
-<td>
-TRUE<br/><br/></td><td>
-Simply returns the logical value TRUE<br/><br/></td></tr>
-<tr>
-<td>
-NOT<br/><br/></td><td>
-Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
-</table>
-
-**Engineering** **Functions**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-DEC2BIN<br/><br/></td><td>
-Converts a decimal number to binary<br/><br/></td></tr>
-<tr>
-<td>
-DCE2OCT<br/><br/></td><td>
-Converts a binary number to octal<br/><br/></td></tr>
-<tr>
-<td>
-DEC2HEX<br/><br/></td><td>
-Converts a decimal number to hexadecimal<br/><br/></td></tr>
-<tr>
-<td>
-BIN2DEC<br/><br/></td><td>
-Converts a binary number to hexadecimal<br/><br/></td></tr>
-<tr>
-<td>
-BIN2OCT<br/><br/></td><td>
-Converts a binary number to octal<br/><br/></td></tr>
-<tr>
-<td>
-BIN2HEX<br/><br/></td><td>
-Converts a binary number to hexadecimal<br/><br/></td></tr>
-<tr>
-<td>
-HEX2BIN<br/><br/></td><td>
-Converts a hexadecimal number to binary<br/><br/></td></tr>
-<tr>
-<td>
-HEX2DEC<br/><br/></td><td>
-Converts a hexadecimal number to a decimal<br/><br/></td></tr>
-<tr>
-<td>
-HEX2OCT<br/><br/></td><td>
-Converts a hexadecimal number to octal<br/><br/></td></tr>
-<tr>
-<td>
-OCT2BIN<br/><br/></td><td>
-Converts octal number to binary<br/><br/></td></tr>
-<tr>
-<td>
-OCT2DEC<br/><br/></td><td>
-Converts octal number to a decimal<br/><br/></td></tr>
-<tr>
-<td>
-OCT2HEX<br/><br/></td><td>
-Converts octal number to hexadecimal<br/><br/></td></tr>
-<tr>
-<td>
-IMABS<br/><br/></td><td>
-Returns the absolute value (the modulus) of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMAGINARY<br/><br/></td><td>
-Returns the imaginary coefficient of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMREAL<br/><br/></td><td>
-Returns the real coefficient of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-COMPLEX<br/><br/></td><td>
-Converts user-supplied real and imaginary coefficients into a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMSUM<br/><br/></td><td>
-Calculates the sum of two complex numbers<br/><br/></td></tr>
-<tr>
-<td>
-IMSUB<br/><br/></td><td>
-Subtracts two complex numbers<br/><br/></td></tr>
-<tr>
-<td>
-IMPRODUCT<br/><br/></td><td>
-Returns the product of up to 255 supplied complex numbers<br/><br/></td></tr>
-<tr>
-<td>
-IMDIV<br/><br/></td><td>
-Returns the quotient of two supplied complex numbers<br/><br/></td></tr>
-<tr>
-<td>
-IMCONJUGATE<br/><br/></td><td>
-Returns the complex conjugate of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMSQRT<br/><br/></td><td>
-Returns the square root of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMARGUMENT<br/><br/></td><td>
-Returns the argument Θ (an angle expressed in radians) of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMSIN<br/><br/></td><td>
-Returns the sine of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMCSC<br/><br/></td><td>
-Returns the cosecant of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMCOS<br/><br/></td><td>
-Returns the cosine of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMSEC<br/><br/></td><td>
-Returns the secant of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMTAN<br/><br/></td><td>
-Returns the tangent of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMCOT<br/><br/></td><td>
-Returns the cotangent of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMSINH<br/><br/></td><td>
-Returns the hyperbolic sine of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMCSCH<br/><br/></td><td>
-Returns the hyperbolic cosecant of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMCOSH<br/><br/></td><td>
-Returns the hyperbolic cosine of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMSECH<br/><br/></td><td>
-Returns the hyperbolic secant of a complex number <br/><br/></td></tr>
-<tr>
-<td>
-IMLOG10<br/><br/></td><td>
-Returns the base-10 logarithm of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMLOG2<br/><br/></td><td>
-Returns the base-2 logarithm of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMLN<br/><br/></td><td>
-Returns the natural logarithm of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMEXP<br/><br/></td><td>
-Returns the exponential of a complex number<br/><br/></td></tr>
-<tr>
-<td>
-IMPOWER<br/><br/></td><td>
-Calculates a complex number raised to a supplied power<br/><br/></td></tr>
-<tr>
-<td>
-GESTEP<br/><br/></td><td>
-Tests whether a number is greater than a supplied threshold value<br/><br/></td></tr>
-<tr>
-<td>
-DELTA<br/><br/></td><td>
-Tests whether two supplied numbers are equal<br/><br/></td></tr>
-<tr>
-<td>
-BITAND<br/><br/></td><td>
-Returns a Bitwise 'And' of two numbers<br/><br/></td></tr>
-<tr>
-<td>
-BITOR<br/><br/></td><td>
-Returns a Bitwise 'Or' of two numbers<br/><br/></td></tr>
-<tr>
-<td>
-BITXOR<br/><br/></td><td>
-Returns a Bitwise 'Exclusive Or' of two numbers<br/><br/></td></tr>
-<tr>
-<td>
-BITLSHIFT<br/><br/></td><td>
-Returns a number shifted left by a specified number of bits <br/><br/></td></tr>
-<tr>
-<td>
-BITRSHIFT<br/><br/></td><td>
-Returns a number shifted right by a specified number of bits<br/><br/></td></tr>
-<tr>
-<td>
-ERF<br/><br/></td><td>
-Returns the error function integrated between two supplied limits<br/><br/></td></tr>
-<tr>
-<td>
-ERF.PRECISE<br/><br/></td><td>
-Returns the error function integrated between 0 and a supplied limit<br/><br/></td></tr>
-<tr>
-<td>
-ERFC.PRECISE<br/><br/></td><td>
-Returns the complementary error function integrated between a supplied lower limit and infinity<br/><br/></td></tr>
-<tr>
-<td>
-BESSELI<br/><br/></td><td>
-Calculates the modified Bessel function In(x)<br/><br/></td></tr>
-<tr>
-<td>
-BESSELJ<br/><br/></td><td>
-Calculates the Bessel function Jn(x)<br/><br/></td></tr>
-<tr>
-<td>
-BESSELY<br/><br/></td><td>
-Calculates the modified Bessel function Yn(x)<br/><br/></td></tr>
-<tr>
-<td>
-BESSELK<br/><br/></td><td>
-Calculates the modified Bessel function Kn(x)<br/><br/></td></tr>
-<tr>
-<td>
-CONVERT<br/><br/></td><td>
-Converts a number from one measurement system to another<br/><br/></td></tr>
-</table>
-
-**Lookup** **&** **Reference**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-OFFSET<br/><br/></td><td>
-Returns a reference to a range of cells that is a specified number of rows and columns from an initial supplied range<br/><br/></td></tr>
-<tr>
-<td>
-HLOOKUP<br/><br/></td><td>
-Looks up a supplied value in the first row of a table, and returns the corresponding value from another row<br/><br/></td></tr>
-<tr>
-<td>
-VLOOKUP<br/><br/></td><td>
-Looks up a supplied value in the first column of a table, and returns the corresponding value from another column<br/><br/></td></tr>
-<tr>
-<td>
-MATCH<br/><br/></td><td>
-Finds the relative position of a value in a supplied array<br/><br/></td></tr>
-<tr>
-<td>
-COLUMN<br/><br/></td><td>
-Returns the column number of a supplied range, or of the current cell<br/><br/></td></tr>
-<tr>
-<td>
-ROW<br/><br/></td><td>
-Returns the row number of a supplied range, or of the current cell<br/><br/></td></tr>
-<tr>
-<td>
-INDIRECT<br/><br/></td><td>
-Returns a cell or range reference that is represented by a supplied text string<br/><br/></td></tr>
-<tr>
-<td>
-AREAS<br/><br/></td><td>
-Returns the number of areas in a supplied range<br/><br/></td></tr>
-<tr>
-<td>
-COLUMNS<br/><br/></td><td>
-Returns the number of columns in a supplied range<br/><br/></td></tr>
-<tr>
-<td>
-FORMULATEXT<br/><br/></td><td>
-Returns a formula as a string<br/><br/></td></tr>
-<tr>
-<td>
-HYPERLINK<br/><br/></td><td>
-Creates a hyperlink to a document in a supplied location<br/><br/></td></tr>
-<tr>
-<td>
-ROW<br/><br/></td><td>
-Returns the row number of a supplied range, or of the current cell<br/><br/></td></tr>
-<tr>
-<td>
-ROWS<br/><br/></td><td>
-Returns the number of rows in a supplied range<br/><br/></td></tr>
-<tr>
-<td>
-SHEET<br/><br/></td><td>
-Returns the sheet number of the referenced sheet<br/><br/></td></tr>
-<tr>
-<td>
-TRANSPOSE<br/><br/></td><td>
-Performs a transpose transformation on a range of cells (ie. transforms a horizontal range of cells into a vertical range and vice versa)<br/><br/></td></tr>
-<tr>
-<td>
-SHEETS<br/><br/></td><td>
-Returns the number of sheets in reference<br/><br/></td></tr>
-</table>
-
-**Information**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-ISERROR<br/><br/></td><td>
-Checks whether the value is an error and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISNUMBER<br/><br/></td><td>
-Checks whether the value is number and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISLOGICAL<br/><br/></td><td>
-Checks whether a value is logical value(TRUE/FALSE) and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISNA<br/><br/></td><td>
-Checks whether a value is #N/A and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISERR<br/><br/></td><td>
-Checks whether the value is an error except #N/A and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISBLANK<br/><br/></td><td>
-Checks whether the reference is to an empty cell and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISTEXT<br/><br/></td><td>
-Checks whether the value is text and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISNONTEXT<br/><br/></td><td>
-Checks whether the value is not text(blank cells are not text) and returns true or false<br/><br/></td></tr>
-<tr>
-<td>
-ISEVEN<br/><br/></td><td>
-Returns true if number is even<br/><br/></td></tr>
-<tr>
-<td>
-CONCATENATE<br/><br/></td><td>
-Joins together two or more text strings<br/><br/></td></tr>
-<tr>
-<td>
-DOLLAR<br/><br/></td><td>
-Converts a number to text using currency format<br/><br/></td></tr>
-<tr>
-<td>
-LEN<br/><br/></td><td>
-Returns the length of a supplied text string<br/><br/></td></tr>
-<tr>
-<td>
-FIXED<br/><br/></td><td>
-Rounds a supplied number to a specified number of decimal places, and then converts this into text<br/><br/></td></tr>
-<tr>
-<td>
-ISODD<br/><br/></td><td>
-Returns true if number is odd<br/><br/></td></tr>
-<tr>
-<td>
-ERROR.TYPE<br/><br/></td><td>
-Tests a supplied value and returns an integer relating to the supplied value's error type<br/><br/></td></tr>
-<tr>
-<td>
-N<br/><br/></td><td>
-Converts a non-number value to a number, a date to a serial number, the logical value TRUE to 1 and all other values to 0<br/><br/></td></tr>
-<tr>
-<td>
-NA<br/><br/></td><td>
-Returns the Excel #N/A error<br/><br/></td></tr>
-<tr>
-<td>
-CELL<br/><br/></td><td>
-Returns information about the contents, formatting or location of a given cell<br/><br/></td></tr>
-<tr>
-<td>
-INFO<br/><br/></td><td>
-Returns information about the the current operating environment<br/><br/></td></tr>
-<tr>
-<td>
-TYPE<br/><br/></td><td>
-Returns information about the data type of a supplied value<br/><br/></td></tr>
-<tr>
-<td>
-ISFORMULA<br/><br/></td><td>
-Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE<br/><br/></td></tr>
-</table>
-
-**Financial** **Functions**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-DB<br/><br/></td><td>
-Calculates the depreciation of an asset for a specified period, using the fixed-declining balance method<br/><br/></td></tr>
-<tr>
-<td>
-DDB<br/><br/></td><td>
-Calculates the depreciation of an asset for a specified period, using the double-declining balance method, or some other user-specified method<br/><br/></td></tr>
-<tr>
-<td>
-FV<br/><br/></td><td>
-Calculates the future value of an investment with periodic constant payments and a constant interest rate<br/><br/></td></tr>
-<tr>
-<td>
-IPMT<br/><br/></td><td>
-Calculates the interest payment for a given period of an investment, with periodic constant payments and a constant interest rate<br/><br/></td></tr>
-<tr>
-<td>
-IRR<br/><br/></td><td>
-Calculates the internal rate of return for a series of cash flows<br/><br/></td></tr>
-<tr>
-<td>
-XIRR<br/><br/></td><td>
-Calculates the internal rate of return for a schedule of cash flows<br/><br/></td></tr>
-<tr>
-<td>
-ISPMT<br/><br/></td><td>
-Returns the interest paid during a specified period of an investment<br/><br/></td></tr>
-<tr>
-<td>
-MIRR<br/><br/></td><td>
-Calculates the internal rate of return for a series of periodic cash flows, considering the cost of the investment and the interest on the reinvestment of cash<br/><br/></td></tr>
-<tr>
-<td>
-NPER<br/><br/></td><td>
-Returns the number of periods for an investment with periodic constant payments and a constant interest rate<br/><br/></td></tr>
-<tr>
-<td>
-NPV<br/><br/></td><td>
-Calculates the net present value of an investment, based on a supplied discount rate, and a series of future payments and income<br/><br/></td></tr>
-<tr>
-<td>
-PMT<br/><br/></td><td>
-Calculates the payments required to reduce a loan, from a supplied present value to a specified future value<br/><br/></td></tr>
-<tr>
-<td>
-PPMT<br/><br/></td><td>
-Calculates the payment on the principal for a given investment, with periodic constant payments and a constant interest rate<br/><br/></td></tr>
-<tr>
-<td>
-PV<br/><br/></td><td>
-Calculates the present value of an investment (ie. the total amount that a series of future payments is worth now)<br/><br/></td></tr>
-<tr>
-<td>
-RATE<br/><br/></td><td>
-Calculates the interest rate required to pay off a specified amount of a loan, or reach a target amount on an investment over a given period<br/><br/></td></tr>
-<tr>
-<td>
-SLN<br/><br/></td><td>
-Returns the straight-line depreciation of an asset for one period<br/><br/></td></tr>
-<tr>
-<td>
-SYD<br/><br/></td><td>
-Returns the sum-of-years' digits depreciation of an asset for a specified period<br/><br/></td></tr>
-<tr>
-<td>
-VDB<br/><br/></td><td>
-Returns the depreciation of an asset for a specified period, (including partial periods), using the double-declining balance method or another user-specified method<br/><br/></td></tr>
-<tr>
-<td>
-DOLLARDE<br/><br/></td><td>
-Converts a dollar price expressed as a fraction, into a dollar price expressed as a decimal<br/><br/></td></tr>
-<tr>
-<td>
-DOLLARFR<br/><br/></td><td>
-Converts a dollar price expressed as a decimal, into a dollar price expressed as a fraction<br/><br/></td></tr>
-<tr>
-<td>
-DURATION<br/><br/></td><td>
-Calculates the Macauley duration of a security with an assumed par value of $100<br/><br/></td></tr>
-<tr>
-<td>
-RRI<br/><br/></td><td>
-Calculates an equivalent interest rate for the growth of an investment<br/><br/></td></tr>
-<tr>
-<td>
-FVSCHEDULE<br/><br/></td><td>
-Calculates the future value of an initial principal, after applying a series of compound interest rates<br/><br/></td></tr>
-<tr>
-<td>
-DISC<br/><br/></td><td>
-Calculates the discount rate for a security<br/><br/></td></tr>
-<tr>
-<td>
-INTRATE<br/><br/></td><td>
-Calculates the interest rate for a fully invested security<br/><br/></td></tr>
-<tr>
-<td>
-CUMIPMT<br/><br/></td><td>
-Calculates the cumulative interest paid between two specified periods<br/><br/></td></tr>
-<tr>
-<td>
-CUMPRINC<br/><br/></td><td>
-Calculates the cumulative principal paid on a loan, between two specified periods<br/><br/></td></tr>
-<tr>
-<td>
-RECEIVED<br/><br/></td><td>
-Calculates the amount received at maturity for a fully invested Security<br/><br/></td></tr>
-</table>
-
-**Date** **and** **Time** **Functions**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-DATE<br/><br/></td><td>
-Returns a date, from a user-supplied year, month and day<br/><br/></td></tr>
-<tr>
-<td>
-DATEVALUE<br/><br/></td><td>
-Converts a text string showing a date, to an integer that represents the date in Excel's date-time code<br/><br/></td></tr>
-<tr>
-<td>
-DAY<br/><br/></td><td>
-Returns the day (of the month) from a user-supplied date<br/><br/></td></tr>
-<tr>
-<td>
-DAYS360<br/><br/></td><td>
-Calculates the number of days between 2 dates, based on a 360-day year (12 x 30 months)<br/><br/></td></tr>
-<tr>
-<td>
-HOUR<br/><br/></td><td>
-Returns the hour part of a user-supplied time<br/><br/></td></tr>
-<tr>
-<td>
-MINUTE<br/><br/></td><td>
-Returns the minute part of a user-supplied time<br/><br/></td></tr>
-<tr>
-<td>
-SECOND<br/><br/></td><td>
-Returns the seconds part of a user-supplied time<br/><br/></td></tr>
-<tr>
-<td>
-MONTH<br/><br/></td><td>
-Returns the month from a user-supplied date<br/><br/></td></tr>
-<tr>
-<td>
-NOW<br/><br/></td><td>
-Returns the current date & time<br/><br/></td></tr>
-<tr>
-<td>
-TIME<br/><br/></td><td>
-Returns a time, from a user-supplied hour, minute and second<br/><br/></td></tr>
-<tr>
-<td>
-TIMEVALUE<br/><br/></td><td>
-Converts a text string showing a time, to a decimal that represents the time in Excel<br/><br/></td></tr>
-<tr>
-<td>
-TODAY<br/><br/></td><td>
-Returns today's date<br/><br/></td></tr>
-<tr>
-<td>
-WEEKDAY<br/><br/></td><td>
-Returns an integer representing the day of the week for a supplied date<br/><br/></td></tr>
-<tr>
-<td>
-YEAR<br/><br/></td><td>
-Returns the year from a user-supplied date<br/><br/></td></tr>
-<tr>
-<td>
-DAYS<br/><br/></td><td>
-Calculates the number of days between 2 dates<br/><br/></td></tr>
-<tr>
-<td>
-EDATE<br/><br/></td><td>
-Returns a date that is the specified number of months before or after an initial supplied start date<br/><br/></td></tr>
-<tr>
-<td>
-EOMONTH<br/><br/></td><td>
-Returns a date that is the last day of the month which is a specified number of months before or after an initial supplied start date<br/><br/></td></tr>
-<tr>
-<td>
-ISOWEEKNUM<br/><br/></td><td>
-Returns the ISO week number of the year for a given date<br/><br/></td></tr>
-<tr>
-<td>
-NETWORKDAYS.INTL<br/><br/></td><td>
-Returns the number of whole networkdays (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
-<tr>
-<td>
-WEEKNUM<br/><br/></td><td>
-Returns an integer representing the week number (from 1 to 53) of the year from a user-supplied date<br/><br/></td></tr>
-<tr>
-<td>
-WORKDAY<br/><br/></td><td>
-Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date<br/><br/></td></tr>
-<tr>
-<td>
-WORKDAY.INTL<br/><br/></td><td>
-Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date, using supplied parameters to specify weekend days<br/><br/></td></tr>
-<tr>
-<td>
-YEARFRAC<br/><br/></td><td>
-Calculates the fraction of the year represented by the number of whole days between two dates<br/><br/></td></tr>
-</table>
-
-**Text Functions**
+## Text Functions
 
 <table>
 <tr>
@@ -1566,56 +1600,7 @@ UNICODE<br/><br/></td><td>
 Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
 </table>
 
-**Database Functions**
-
-<table>
-<tr>
-<th>
-Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-DCOUNT<br/><br/></td><td>
-Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DCOUNTA<br/><br/></td><td>
-Returns the number of non-blank cells in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DAVERAGE<br/><br/></td><td>
-Calculates the average of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DGET<br/><br/></td><td>
-Returns a single value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DMAX<br/><br/></td><td>
-Returns the maximum value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DMIN<br/><br/></td><td>
-Returns the minimum value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DSTDEVP<br/><br/></td><td>
-Calculates the standard deviation (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DSTEV<br/><br/></td><td>
-Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DVARP<br/><br/></td><td>
-Calculates the variance (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
-<td>
-DVAR<br/><br/></td><td>
-Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-</table>
-
-**Web** **Functions**
+## Web Functions
 
 <table>
 <tr>
