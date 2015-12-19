@@ -19,12 +19,15 @@ __Using__ __Event__:
 
 You can create a custom Ribbon tab with user defined meu options in SfSpreadsheet. To achieve this customization, invoke the SfSpreadsheetRibbon Loaded Event and create a custom tab with menu options. Add this custom tab to SfSpreadsheet Ribbon.
 
+{% tabs %}
 {% highlight xaml %}
 
     <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
 
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
     ribbon.Loaded += ribbon_Loaded;
@@ -74,4 +77,4 @@ You can create a custom Ribbon tab with user defined meu options in SfSpreadshee
     }
 
 {% endhighlight %}
-
+{% endtabs %}

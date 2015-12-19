@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 This section helps you to get started with the SfSpreadsheet
-<br/>
+<br/><br/>
 
 ## Assemblies Deployment
 
@@ -79,7 +79,7 @@ Contains the base and fundamental classes for creating PDF.</td></tr>
 ## Create a Simple Application with SfSpreadsheet
 
 SfSpreadsheet control can be added into the application either via designer or via coding. 
-<br/>
+<br/><br/>
 
 ### Adding a Control via Designer
 
@@ -100,11 +100,13 @@ Syncfusion Control tab
 
 _For_ _Spreadsheet_
 
+{% tabs %}
 {% highlight xaml %}
 
     <syncfusion:SfSpreadsheet x:Name = spreadsheet />
-
+    
 {% endhighlight %}
+{% endtabs %}
 
 4.Ribbon can be added to the application by dragging **SfSpreadsheetRibbon** to the Designer area.
 
@@ -112,14 +114,17 @@ _For_ _Spreadsheet_
 
 _For_ _Ribbon_
 
+{% tabs %}
 {% highlight xaml %}
 
     <syncfusion:SfSpreadsheetRibbon DataContext= "{Binding ElementName=spreadsheet}"  />
                                                                                                              
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
+<br/>
 <br/>
 
 ### Adding Control via Coding
@@ -166,6 +171,7 @@ _For_ _Spreadsheet_
 
 N> To add the SfSpreadsheetRibbon in your application, then use the **RibbonWindow** since the backstage of Ribbon will be opened only when the ribbon is loaded under the **RibbonWindow**
 
+{% tabs %}
 {% highlight xaml %}
 
     <syncfusion:RibbonWindow x:Class="SpreadsheetDemo.MainWindow"
@@ -187,6 +193,7 @@ N> To add the SfSpreadsheetRibbon in your application, then use the **RibbonWind
     </syncfusion:RibbonWindow>
 
 {% endhighlight %}
+{% endtabs %}
 
 _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application_.
 
@@ -197,17 +204,20 @@ _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application
 
 A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6285.html) method of SfSpreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
 
+{% tabs %}
 {% highlight c# %}
 
     spreadsheet.Create(2);
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ## Opening the Existing Excel Workbook
 
 The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6297.html) method in various ways,
 
+{% tabs %}
 {% highlight c# %}
 
      //Using Stream,
@@ -223,12 +233,15 @@ The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.s
       spreadsheet.Open(IWorkbook workbook)
       
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
     spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img5.jpeg)
 
@@ -242,8 +255,10 @@ Opening Excel File in SfSpreadsheet
 
 The Excel workbook can be saved in SfSpreadsheet using [Save](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6307.html) method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. You can also use [SaveAs](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6308.html) method directly to save the existing excel file with modifications.
 
+{% tabs %}
 {% highlight c# %}
 
     spreadsheet.Save();
 
 {% endhighlight %}
+{% endtabs %}

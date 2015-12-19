@@ -23,11 +23,13 @@ To set the CultureInformation in the Application before the InitializeComponent(
 
 Setting of the culture information,
 
+{% tabs %}
 {% highlight c# %}
 
     System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja-JP");
 
 {% endhighlight %}
+{% endtabs %}
 
 Now, the Application is set to the Japanese Culture info. 
 

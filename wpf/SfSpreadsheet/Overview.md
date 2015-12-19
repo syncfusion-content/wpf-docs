@@ -156,7 +156,7 @@ GridProperties.ActiveSpreadsheetGrid.Model.CommandStack</td><td>
 Gets the command stack of the SpreadsheetControl.By default it has been enabled</td></tr>
 <tr>
 <td>
-{{ '[SheetName](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6487.html)' | markdonwify }}</td><td>
+{{ '[SheetName](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6487.html)' | markdownify }}</td><td>
 GridProperties->CurrentSheetName</td><td>
 Gets the tab sheet name</td></tr>
 </table>
