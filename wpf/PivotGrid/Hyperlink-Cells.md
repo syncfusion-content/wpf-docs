@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Hyperlink Cells| PivotGrid | Wpf | Syncfusion
-description: Hyperlink Cells
+title: 1354-Hyperlink Cells
+description:  1.3.5.4 hyperlink cells
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-
 # Hyperlink Cells
 
-The PivotGrid for WPF allows Hyperlinking of cells to retrieve a detailed description about a particular cell. The Hyperlink Cells property of PivotGrid generates a separate event called HyperLinkCellClick for the clicked cell and the HyperLinkCellClickEventArgs will return the clicked PivotCellInfo.
+PivotGrid allows Hyperlinking of cells to retrieve a detailed information about a particular cell. PivotGrid generates a separate event called HyperLinkCellClick for the clicked hyperlink cell with  and the HyperLinkCellClickEventArgs will return the clicked PivotCellInfo.
 
-Hyperlink Cell’s property can be applied to the following cells:
+**Hyperlink Cell** property can be applied individually to the following cells:
 
 * Column Header 
 * Row Header 
@@ -20,127 +19,72 @@ Hyperlink Cell’s property can be applied to the following cells:
 * Summary Cell
 * Value Cell
 
-### Use Case Scenarios
-
-You can Hyperlink cells and can perform some custom operation on a Cell click. While doing so, you can get the complete information of the Cell like its Type, Range etc.
-
-## Enabling Hyperlink Cells
-
-You can enable a cell present in the Grid as a Hyperlink by setting the IsHyperlinkCell property of that cell style to True.
-
-Example: To make a column header cell as a hyperlink, set PivotGrid.ColumnHeaderStyle.IsHyperlinkCell = True.
-
-The property usage is illustrated in the code given below.
-
-{% tabs %}
-{% highlight C# %} 
-
-// Instantiating PivotGridControl.
-
-PivotGridControl PivotGrid1 = new PivotGridControl();
-
-// Adding PivotRows.
-
-PivotGrid1.PivotRows.Add(new PivotItem { FieldHeader = "Product" });
-
-// Adding PivotColumns.
-
-PivotGrid1.PivotColumns.Add(new PivotItem { FieldHeader = "Date" });
-
-// Adding PivotCalculations.
-
-PivotGrid1.PivotCalculations.Add(new PivotComputationInfo { FieldName="Amount" });
-
-
-
-// To Enable Hyperlink for Column Header.
-
-this.PivotGrid1.ColumnHeaderCellStyle.IsHyperlinkCell = true;
-
-// To Enable Hyperlink for Row Header.
-
-this.PivotGrid1.RowHeaderCellStyle.IsHyperlinkCell = true;
-
-// To Enable Hyperlink for Summary Header.
-
-this.PivotGrid1.SummaryHeaderStyle.IsHyperlinkCell = true;
-
-// To Enable Hyperlink for Summary Cell.
-
-this.PivotGrid1.SummaryCellStyle.IsHyperlinkCell = true;
-
-// To Enable Hyperlink for Value Cell.
-
-this.PivotGrid1.ValueCellStyle.IsHyperlinkCell = true;
-
- {% endhighlight %} 
-
-
-{% highlight vbnet %} 
-
-
-' Instantiating PivotGridControl.
-
-Dim PivotGrid1 As PivotGridControl = New PivotGridControl()
-
-' Adding PivotRows.
-
-PivotGrid1.PivotRows.Add(New PivotItem With {.FieldHeader = "Product"})
-
-' Adding PivotColumns.
-
-PivotGrid1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Date"})
-
-' Adding PivotCalculations.
-
-PivotGrid1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName="Amount"})
-
-
-' To Enable Hyperlink for Column Header.
-
-Me.PivotGrid1.ColumnHeaderCellStyle.IsHyperlinkCell = True
-
-' To Enable Hyperlink for Row Header.
-
-Me.PivotGrid1.RowHeaderCellStyle.IsHyperlinkCell = True
-
-' To Enable Hyperlink for Summary Header.
-
-MePivotGrid1.SummaryHeaderStyle.IsHyperlinkCell = True
-
-' To Enable Hyperlink for Summary Cell.
-
-Me. PivotGrid1.SummaryCellStyle.IsHyperlinkCell = True
-
-' To Enable Hyperlink for Value Cell.
-
-Me.PivotGrid1.ValueCellStyle.IsHyperlinkCell = True
-
-{% endhighlight %} 
-{% endtabs %}
-
-
-The below screen shot shows how the Column Header is hyperlinked.
-
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Hyperlink Col.png](Features_images/Features_img7.png)
-
-
-
-The below screen shot shows how the Row Header is hyperlinked.
-
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Hyperlink Row.png](Features_images/Features_img8.png)
-
-
-
-The below screen shot shows how the value in a cell is hyperlinked.
-
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid HyperlinkVal.png](Features_images/Features_img9.png)
-
-
-
-### Sample Link
-
-..\..\ Syncfusion\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Hyperlink Cell Demo
-
-
-
+**Use Case Scenarios**
+
+User could perform some custom operations on a Cell click and able to get the complete information of the cells like its Type, Range etc.
+
+                                                                Property Table
+
+<table>
+<tr>
+<th>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference Link<th></tr>
+<tr>
+<td>
+IsHyperlinkCell</td><td>
+Gets or sets whether the to enable or disable the PivotGrid grid cells as hyperlink cells.</td><td>
+bool</td><td>
+True, False(Default)</td><td>
+-</td></tr>
+<tr>
+</table>
+
+## Defining the property in PivotGrid
+
+It is possible to enable or disable the hyperlink for the cells separately for all Row header, Column header, Summary header and Value cells through **IsHyperlinkCell** property. It can be mentioned in *Code-Behind*.
+
+Please refer the below code snippet.
+
+{% highlight C# %}
+
+public partial class MainWindow: Window {
+    public MainWindow() {
+        InitializeComponent();
+        // Enabling Column Header cells as Hyperlink cell
+        pivotGrid.ColumnHeaderCellStyle.IsHyperlinkCell = true;
+        // Enabling Row Header cells as Hyperlink cell
+        pivotGrid.RowHeaderCellStyle.IsHyperlinkCell = true;
+        // Enabling both Row and Column summary Header cells as Hyperlink cell
+        pivotGrid.SummaryHeaderStyle.IsHyperlinkCell = true;
+        // Enabling both Row and Column summary cells as Hyperlink cell
+        pivotGrid.SummaryCellStyle.IsHyperlinkCell = true;
+        // Enabling Value cells as Hyperlink cell
+        pivotGrid.ValueCellStyle.IsHyperlinkCell = true;
+    }
+}
+
+{% endhighlight %}
+ 
+ ![](Hyperlink Cells Images/PivotGrid shows column header hyperlink.png)
+ 
+ _PivotGrid with Column header hyperlink_
+ 
+ ![](Hyperlink Cells Images/PivotGrid shows row header hyperlink.png)
+ 
+ _PivotGrid with Row header hyperlink_
+ 
+ ![](Hyperlink Cells Images/PivotGrid shows summary cell hyperlink.png)
+ 
+ _PivotGrid with Summary cell hyperlink_
+ 
+ ![](Hyperlink Cells Images/PivotGrid shows summary header hyperlink.png)
+ 
+ _PivotGrid with Summary header hyperlink_
+ 
+ ![](Hyperlink Cells Images/PivotGrid shows value cell hyperlink.png)
+ 
+ _PivotGrid with Value cell hyperlink_
