@@ -15,6 +15,7 @@ This section explains about the conversion of workbook in SfSpreadsheet into ima
 
 SfSpreadsheet provides support to convert a worksheet in to an image of type bitmap or metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](http://help.syncfusion.com/file-formats/xlsio/conversions#convert-worksheet-to-image) method,worksheet can be converted into an image.
 
+{% tabs %}
 {% highlight c# %}
 
 IWorksheet sheet = spreadsheet.Workbook.ActiveSheet;
@@ -32,6 +33,7 @@ img.Save("Sample.png", ImageFormat.Png);
 System.Diagnostics.Process.Start("Sample.png");
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ## Pdf
@@ -42,6 +44,7 @@ For converting the Excel sheet to PDF, “Syncfusion.ExcelToPDFConverter.Base.dl
 
 Export the Excel workbook as Pdf document using [Convert](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic27.html) method of [ExcelToPdfConverter](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic14.html) class which is available under the name space “Syncfusion.ExcelToPdfConverter”
 
+{% tabs %}
 {% highlight c# %}
 
 ExcelToPdfConverter converter = new ExcelToPdfConverter(spreadsheet.Workbook);
@@ -73,12 +76,14 @@ pdfDoc.Save("Sample.pdf");
 System.Diagnostics.Process.Start("Sample.pdf");
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ## Html
 
 SfSpreadsheet provides support to convert the excel workbook into HTML page.
 
+{% tabs %}
 {% highlight c# %}
 
 spreadsheet.Workbook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
@@ -86,3 +91,4 @@ spreadsheet.Workbook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 System.Diagnostics.Process.Start("Sample.html");
 
 {% endhighlight %}
+{% endtabs %}

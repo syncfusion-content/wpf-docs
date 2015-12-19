@@ -11,10 +11,11 @@ documentation: ug
 
  This section explains about the interactive operations with SfSpreadsheet
 <br/>
+<br/>
 
 ## Clipboard Operations
 
-SfSpreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook. When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options). 
+SfSpreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook.  
 
 You can use the following shortcut keys for Clipboard operations like Excel
 <table>
@@ -71,6 +72,7 @@ To maintain the source range original format and paste only values</td></tr>
 
 For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6411.html) Operation,
 
+{% tabs %}
 {% highlight c# %}
 			
 //To perform cut operation for selected ranges
@@ -84,9 +86,11 @@ For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6411.h
  spreadsheet.ActiveGrid.CopyPaste.Cut();
 
 {% endhighlight %}
+{% endtabs %}
 
 For [Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6405.html) Operation,
 
+{% tabs %}
 {% highlight c# %}
 
 //To perform copy operation for selected ranges
@@ -100,9 +104,11 @@ For [Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6405.
  spreadsheet.ActiveGrid.CopyPaste.Copy();
 
 {% endhighlight %}
+{% endtabs %}
 
 For [Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6416.html) Operation,
 
+{% tabs %}
 {% highlight c# %}
 
 //To perform paste operation
@@ -118,6 +124,10 @@ copyPaste.Paste(range);
 copyPaste.Paste(range, PasteOptions.Paste);
 
 {% endhighlight %}
+{% endtabs %}
+
+N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
+
 <br/>
 
 ## Undo/Redo
@@ -145,6 +155,7 @@ SfSpreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/wpf
 
 To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8543.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8527.html) needs to be true.  
 
+{% tabs %}
 {% highlight c# %}
 
 spreadsheet.HistoryManager.Enabled = true;
@@ -154,22 +165,26 @@ spreadsheet.HistoryManager.Undo();
 spreadsheet.HistoryManager.Redo();
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ## Context menu
 
 Context menu in SfSpreadsheet is customizable menu which can be used for various functionalities
 <br/>
+<br/>
 
 ### TabItem context menu
 
 By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6318.html) property is set to true to enable the TabItemContext Menu in SfSpreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6331.html)  property to be true and you can add your customized menu items in Context_Menu opening Event.
 
+{% tabs %}
 {% highlight c# %}
 
     spreadsheet.IsCustomTabItemContextMenuEnabled = true;
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ### Cell Context menu
@@ -178,6 +193,7 @@ By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
+{% tabs %}
 {% highlight c# %}
 
     spreadsheet.ActiveGrid.CellContextMenuOpening += ActiveGrid_CellContextMenuOpening;
@@ -205,6 +221,7 @@ Adding the customized menu items in the CellContextMenuOpening Event,
     }
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ## Cell Comments
@@ -213,17 +230,21 @@ SfSpreadsheet provides support for cell comments like in excel to give the reade
 
 To enable the comment in SfSpreadsheet, set the [ShowComment](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2592.html) property of SpreadsheetGrid to true.
 
+{% tabs %}
 {% highlight c# %}
 
     spreadsheet.ActiveGrid.ShowComment = true;
 
 {% endhighlight %}
+{% endtabs %}
 
 To set the comments for particular cell at run time,
 
+{% tabs %}
 {% highlight c# %}
 
 spreadsheet.ActiveSheet.Range["E5"].AddComment().Text = "Sample Comment";
 spreadsheet.ActiveGrid.InvalidateCell(5, 5);
 	
 {% endhighlight %}
+{% endtabs %}
