@@ -48,19 +48,13 @@ The following code example explains how to set your custom text as Watermark.
 
 <syncfusion:SfChart.Watermark>
 
-
-
 <syncfusion:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
-
-
 
 <syncfusion:Watermark.Content>
 
 <TextBlock Text="Demand Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
 
 </syncfusion:Watermark.Content>
-
-
 
 </syncfusion:Watermark>
 

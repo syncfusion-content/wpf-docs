@@ -76,7 +76,7 @@ The following code example can be added to enable and customize the ToolTip feat
 
 <syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" Label="Company Details" ItemsSource="{Binding CompanyDetails}"
 
-ShowTooltip="True" syncfusion:ChartTooltip.EnableAnimation="True"            syncfusion:ChartTooltip.HorizontalAlignment="Left" syncfusion:ChartTooltip.VerticalAlignment="Bottom"
+ShowTooltip="True" syncfusion:ChartTooltip.EnableAnimation="True"  syncfusion:ChartTooltip.HorizontalAlignment="Left" syncfusion:ChartTooltip.VerticalAlignment="Bottom"
 
 syncfusion:ChartTooltip.TooltipMargin="3" />
 
@@ -329,7 +329,7 @@ Occurs when zoom is reset on DoubleClick or Double Tap, which is used to reset t
 
 Zooming can be carried out in X, Y and XY axis that can be specified by the ZoomMode property. There are two types of zooming that can take place inside a chart area.
 
-Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming property to zoom in on the chart using mouse wheel.
+Zooming the Chart using Mouse - You must enable the EnableMouseWheelZooming property to zoom in on the chart using mouse wheel.
 
 {% highlight xml %}
 
@@ -355,7 +355,7 @@ Also, there are options for selection zooming, when you want to zoom in on a par
 
 {% endhighlight %}
 
-Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property, you can zoom in on the chart area by touching the screen with your fingers.
+Zooming the Chart in Touch monitor - By enabling the EnablePinchZooming property, you can zoom in on the chart area by touching the screen with your fingers.
 
 {% highlight xml %}
 
@@ -377,7 +377,7 @@ Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property,
 
 		{% endhighlight %}
 
-Zooming relative to the cursor- By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
+Zooming relative to the cursor - By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
 
 {% highlight xml %}
 
@@ -396,7 +396,7 @@ ZoomPosition defines the ranges of values that need to be displayed as a result 
 
 For the above scenario, when the ZoomPosition is 0.25 then the VisibleRange is from 25 to 75.
 
-Scrollbar position- The scrollbar is placed in percentage of ZoomPosition in the new range, that is, New Range Delta * ZoomPosition. Thus in this case, the scrollbar gets placed in 37.5 (25 + (50 * 0.25)) and the scrollbar width is set to 25 (since ZoomPosition is 0.25).
+Scrollbar position - The scrollbar is placed in percentage of ZoomPosition in the new range, that is, New Range Delta * ZoomPosition. Thus in this case, the scrollbar gets placed in 37.5 (25 + (50 * 0.25)) and the scrollbar width is set to 25 (since ZoomPosition is 0.25).
 
 The value of ZoomFactor and ZoomPosition must also fall within the value of 0 to 1. These can be set for both the Primary and Secondary Axes.
 
@@ -669,7 +669,7 @@ Use the following code example to set SelectedIndex in a SfChart.
 
 <chart:ColumnSeries Name="column" SelectedIndex="2"    ItemsSource="{Binding CurrencyDetails}" SegmentSelectionBrush="Green"     XBindingPath="CurrencyName" YBindingPath="CurrencyValue">
 
-. . .
+ . . .
 
 </chart:ColumnSeries>
 

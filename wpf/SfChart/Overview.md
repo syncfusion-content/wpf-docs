@@ -23,10 +23,9 @@ SfChart provides a perfect way to visualize data with a high level of user inter
 * Interactive zooming can be done with touch mode enabled that allows you to explore portions of large charts in more detail, with excellent performance.
 * Tracking data points using crosshair and track ball behavior. When you need more information about particular segment in a chart, a little mouseover on the series provides much more information by including tooltip, crosshair and track ball behavior.
 * Supports 10 different types of technical indicators that determine financial, stock or economic trends by analyzing a set of recorded data. 
-* Supported multiple axes that can be stacked and spanned for multiple panes.
+* Supports multiple axes that can be stacked and spanned for multiple panes.
 * SfChart provides support for rendering multiple series at same time, with options to compare and visualize two different chart series, simultaneously.
 * User friendly with customization support. SfChart provides various options for you to customize chart features, axis, labels, legends, series, etc and visualize them accordingly. 
-
 
 
 ##Document Organization & Conventions
@@ -40,6 +39,7 @@ Features- The features of the chart are illustrated with the help of use-case sc
 FAQ- This section contains commonly asked questions related to SfChart.
 
 The following conventions are used in the following user guide to help you identify key points and features.
+
 
 ### Conventions
 
@@ -59,7 +59,7 @@ Represents an example.</td></tr>
 <tr>
 <td>
 Tip</td><td>
-Represents useful hints that help you use SfChart’s features and functionalities.</td></tr>
+Represents useful hints that helps you to use SfChart’s features and functionalities.</td></tr>
 </table>
 
 

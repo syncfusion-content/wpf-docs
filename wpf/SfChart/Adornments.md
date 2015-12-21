@@ -357,7 +357,7 @@ This property enables you to define the connector mode for connector line. It ca
 <tr>
 <td>
 EnableSmartLabels</td><td>
-This property is used to enable or disable the smart labels support.</td></tr>
+Gets or sets the boolean value that  enables or disables the smart labels support.</td></tr>
 <tr>
 <td>
 UseSeriesPalette</td><td>
@@ -532,7 +532,7 @@ Gets or sets the VerticalAlignment value that is used to align the adornment to 
 <tr>
 <td>
 ShowMarker</td><td>
-Gets or sets the value that disables or enables the marker.</td></tr>
+Gets or sets the boolean value that disables or enables the marker.</td></tr>
 <tr>
 <td>
 Symbol</td><td>
