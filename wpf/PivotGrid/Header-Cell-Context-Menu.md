@@ -252,10 +252,10 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
   
-![](Header Cell context menu images/Context menu for Row headers.png)
+![](Header-Cell-context-menu-images/Context menu for Row headers.png)
 
 _Context menu for Row headers_
 
-![](Header Cell context menu images/Context menu for Column headers.png)
+![](Header-Cell-context-menu-images/Context menu for Column headers.png)
 
 _Context menu for Column headers_

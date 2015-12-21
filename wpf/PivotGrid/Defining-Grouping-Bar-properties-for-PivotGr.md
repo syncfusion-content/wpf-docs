@@ -136,7 +136,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping Bar Images/PivotGrid with customized grouping bar.png)
+![](Grouping-Bar-Images/PivotGrid with customized grouping bar.png)
 
 **ItemsBackground**
 
@@ -194,7 +194,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping Bar Images/PivotGrid with customized items background.png)
+![](Grouping-Bar-Images/PivotGrid with customized items background.png)
 
 **AllowFiltering**
 
@@ -254,7 +254,7 @@ public partial class MainWindow: Window {
 
 The following screen shots shows the PivotGrid without the filtering icons.
 
-![](Grouping Bar Images/PivotGrid without filter icons in grouping bar.png)
+![](Grouping-Bar-Images/PivotGrid without filter icons in grouping bar.png)
 
 **AllowSorting**
 
@@ -314,7 +314,7 @@ public partial class MainWindow: Window {
 
 The following screen shots shows the PivotGrid without the sorting icons.
 
-![](Grouping Bar Images/PivotGrid without sorting icons.png)
+![](Grouping-Bar-Images/PivotGrid without sorting icons.png)
 
 
 **AllowRemove**
@@ -375,4 +375,4 @@ public partial class MainWindow: Window {
 
 The following screenshot shows the PivotGrid with remove, filter, sort icons.
 
-![](Grouping Bar Images/PivotGrid shows grouping bar with remove icons.png)
+![](Grouping-Bar-Images/PivotGrid shows grouping bar with remove icons.png)

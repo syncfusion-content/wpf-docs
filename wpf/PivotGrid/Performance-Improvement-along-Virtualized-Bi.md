@@ -160,5 +160,5 @@ Please refer the below code snippets.
 
 {% endhighlight %}
 
-![](Virtualized Binding/PivotGrid loaded with OnDemand index engine.png)
+![](Virtualized-Binding/PivotGrid loaded with OnDemand index engine.png)
 

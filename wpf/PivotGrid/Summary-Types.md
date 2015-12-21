@@ -117,7 +117,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Summary Images/PivotGrid shows summary type Double variance.png)
+![](Summary-Images/PivotGrid shows summary type Double variance.png)
 
 # DisplayIfDiscreteValuesEqual SummaryType in PivotGrid
 
@@ -212,7 +212,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Summary Images/PivotGrid Shows DisplayIfDiscretevaluesequal summary type.png)
+![](Summary-Images/PivotGrid Shows DisplayIfDiscretevaluesequal summary type.png)
 
 
 

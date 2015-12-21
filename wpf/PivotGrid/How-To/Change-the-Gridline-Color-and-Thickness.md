@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 142-Change-the-Gridline-Color-and-Thickness
-description:change the gridline color and thickness?
+description: change the gridline color and thickness?
 platform: wpf
 control: PivotGridControl
 documentation: ug

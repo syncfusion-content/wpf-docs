@@ -85,5 +85,5 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features in RowPivotsOnly/Innermost Computation only in PivotGrid.png)
+![](Features-in-RowPivotsOnly/Innermost Computation only in PivotGrid.png)
 

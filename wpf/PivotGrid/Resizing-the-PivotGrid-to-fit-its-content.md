@@ -107,4 +107,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Resizing image/Resized PivotGrid during collapsed state.png)
+![](Resizing-image/Resized PivotGrid during collapsed state.png)
