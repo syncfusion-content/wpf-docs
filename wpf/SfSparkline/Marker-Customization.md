@@ -9,7 +9,7 @@ documentation: ug
 
 # Marker Customization
 
-We can customizing the markers by initialize the marker template selector class, and we can differentiate the first, last, high, low, negative points.
+We can customize the markers by initializing the marker template selector class, and we can differentiate the first, last, high, low, negative points.
 
 {% highlight xaml %}
 
