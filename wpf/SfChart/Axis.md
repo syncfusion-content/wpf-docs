@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis
 
-ChartAxis is used to locate a data point inside the chart area. Generally, to locate a data point, you require two axes, along each direction, that is, horizontal and vertical, in a chart. The vertical axis, or y-axis, usually represents numerical values .The horizontal axis, or x-axis, represents categorical or numerical or date and time values. ChartAxis supports the following types.
+ChartAxis is used to locate a data point inside the chart area. Generally, to locate a data point two axes are required along vertical& horizontal direction.The vertical axis or y-axis usually represents numerical values .The horizontal axis or x-axis represents categorical or numerical or date and time values. ChartAxis supports the following types.
 
 You can choose any ChartAxis derived types, like DateTimeAxis, NumericalAxis, CategoryAxis, LogarithmicAxis or TimeSpanAxis depending on the value type. DateTimeCategoryAxis is a special type, used to plot date and time values for the given datapoints. 
 
@@ -29,15 +29,15 @@ Definition</th></tr>
 <tr>
 <td>
 Interval</td><td>
-Gets or sets the double that represents the interval between the labels.</td></tr>
+Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
 Minimum</td><td>
-Gets or sets the double that represents the Minimum value for the Axis.</td></tr>
+Gets or sets the double value that represents the Minimum value for the Axis.</td></tr>
 <tr>
 <td>
 Maximum</td><td>
-Gets or sets the double that represents the Maximum value for the Axis.</td></tr>
+Gets or sets the double value that represents the Maximum value for the Axis.</td></tr>
 <tr>
 <td>
 RangePadding</td><td>
@@ -200,7 +200,7 @@ Gets or sets the double value that represents the close working time of a day.</
 <tr>
 <td>
 WorkingDays</td><td>
-Gets or sets the double value that represents the working days of a week.</td></tr>
+Gets or sets the Day (enum) that represents the working days to be included in a week.</td></tr>
 </table>
 
 ###DateTimeIntervalType
@@ -492,7 +492,7 @@ The following screenshot illustrates the SfChart with LogarithmicAxis.
 
 SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
 
-By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties XAxis and YAxis in all the series, except Accumulation Series.
+By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. These are are properties XAxis and YAxis in all the series, except Accumulation Series.
 
 {% highlight xml %}
 
@@ -589,7 +589,7 @@ The following is a screenshot demonstrating y-axis of a chart arranged in Oppose
 
 ## Inversed Axis
 
-This feature is used to reverse chart plotting inverse the axis scaling.
+This feature is used to reverse chart plotting. It inverses the axis scaling.
 
 {% highlight xml %}
 
@@ -720,6 +720,7 @@ When RangePadding for DateTimeAxis is set to Round, the range of the chart axis 
 
 
 ## Positioning axis labels
+
 
 ###Label Placement
 
@@ -1089,6 +1090,7 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 {% endhighlight %}
 
 ## GridLines and TickLines 
+
 
 ###GridLines
 

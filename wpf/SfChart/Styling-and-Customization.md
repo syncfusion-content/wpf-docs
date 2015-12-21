@@ -338,7 +338,7 @@ The X1, Y1, and X2, Y2 are the start and end points of that segment and X3 and Y
 
 Other than the above properties, all the segments have the following properties like a metadata for the datapoint and series.
 
-XData - This property returns the actual Y value of that particular segment.  
+XData - This property returns the actual X value of that particular segment.  
 
 YData - This property returns the actual Y value of that particular segment. 
 
@@ -414,19 +414,14 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 	YBindingPath="Year2010" ShowTooltip="True"
 
-	Palette="None"
-
-	>
+	Palette="None">
+	
 
 	<syncfusion:LineSeries.TooltipTemplate>
 
-
-
-	<DataTemplate>
+	<DataTemplate>	
 
 	<Grid >
-
-
 
 	<StackPanel HorizontalAlignment="Right">
 
@@ -436,7 +431,7 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 	VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
 
-	</Grid>
+	</Grid>	
 
 	<Grid Background="MediumSpringGreen">
 
@@ -444,7 +439,7 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 	Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
 
-	</Grid>
+	</Grid>	
 
 	</StackPanel>
 
@@ -452,11 +447,8 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 	</DataTemplate>
 
-
-
 	</syncfusion:LineSeries.TooltipTemplate>
-
-
+	
 
 	</syncfusion:LineSeries>
 

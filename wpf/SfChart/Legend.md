@@ -45,7 +45,7 @@ Gets or sets the DataTemplate that specifies the UI of the Header.</td></tr>
 <tr>
 <td>
 Orientation</td><td>
-Gets or sets the Orientation that specifies the legend orientation vertically or horizontally.</td></tr>
+Gets or sets the Orientation that specifies the legend orientation either vertically or horizontally.</td></tr>
 <tr>
 <td>
 ItemMargin</td><td>
@@ -123,13 +123,13 @@ The following screenshot illustrates a chart with a simple legend.
 
 
 
-###Each LegendItem contains the following parts:
+Each LegendItem contains the following parts:
 
-####Icon- You can set the icon using the LegendIcon property available in each series. You can customize height and width of an icon symbol using the IconWidth and IconHeight properties available in ChartLegend. You can also show or collapse the icon symbol using the IconVisibility property in ChartLegend.
+* **Icon**- You can set the icon using the LegendIcon property available in each series. You can customize height and width of an icon symbol using the IconWidth and IconHeight properties available in ChartLegend. You can also show or collapse the icon symbol using the IconVisibility property in ChartLegend.
 
-####Label- You can set the label using the Label property available in each series.
+* **Label**- You can set the label using the Label property available in each series.
 
-####CheckBox- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
+* **CheckBox**- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
 
 N> Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point.
 
