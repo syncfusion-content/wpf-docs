@@ -532,7 +532,7 @@ Gets or sets the VerticalAlignment value that is used to align the adornment to 
 <tr>
 <td>
 ShowMarker</td><td>
-Gets or sets the bool value that disables or enables the marker.</td></tr>
+Gets or sets the boolean value that disables or enables the marker.</td></tr>
 <tr>
 <td>
 Symbol</td><td>

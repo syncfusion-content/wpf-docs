@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis
 
-ChartAxis is used to locate a data point inside the chart area. Generally, to locate a data point two axes are required along vertical& horizontal direction.The vertical axis or y-axis usually represents numerical values .The horizontal axis or x-axis represents categorical or numerical or date and time values. ChartAxis supports the following types.
+ChartAxis is used to locate a data point inside the chart area. Generally, to locate a data point two axes are required along vertical and horizontal direction.The vertical axis or y-axis usually represents numerical values .The horizontal axis or x-axis represents categorical or numerical or date and time values. ChartAxis supports the following types.
 
 You can choose any ChartAxis derived types, like DateTimeAxis, NumericalAxis, CategoryAxis, LogarithmicAxis or TimeSpanAxis depending on the value type. DateTimeCategoryAxis is a special type, used to plot date and time values for the given datapoints. 
 
@@ -200,7 +200,7 @@ Gets or sets the double value that represents the close working time of a day.</
 <tr>
 <td>
 WorkingDays</td><td>
-Gets or sets the Day (enum) that represents the working days to be included in a week.</td></tr>
+Gets or sets the Day (enum) value that represents the working days to be included in a week.</td></tr>
 </table>
 
 ###DateTimeIntervalType
@@ -492,7 +492,7 @@ The following screenshot illustrates the SfChart with LogarithmicAxis.
 
 SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
 
-By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. These are are properties XAxis and YAxis in all the series, except Accumulation Series.
+By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. These are two properties XAxis and YAxis in all the series, except Accumulation Series.
 
 {% highlight xml %}
 

@@ -13,9 +13,9 @@ This section helps you get started with the SfChart control.
 
 ##Visual Structure
 
-###Create a simple Chart from XAML
+###Create a simple chart from XAML
 
-###Create a simple Chart from Code Behind 
+###Create a simple chart from Code Behind 
 
 ## Visual Structure
 
@@ -248,13 +248,13 @@ Tip: The graph selection depends on user scenario and the nature of the data. Fo
 
 After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
-* **ItemsSource**- It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* **ItemsSource** - It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
 
-* **XBindingPath**- It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* **XBindingPath** - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 
-* **YBindingPath**- It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* **YBindingPath** - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 
-* **Label**- This property gives names for the series, mapped by the Legend.
+* **Label** - This property gives names for the series, mapped by the Legend.
 
 
 
@@ -634,9 +634,9 @@ After you add the series, you can add ItemSource, XBindingPath and YBindingPath 
 
 * **ItemsSource** – It is a collection property, like other collection controls like ListBox, ComboBox, that you can bind your underlying collection to it.
 
-* **XBindingPath**– It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* **XBindingPath** – It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 
-* **YBindingPath**– It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* **YBindingPath** – It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 
 * **Label** – This property gives names for the series, mapped by the Legend.
 
