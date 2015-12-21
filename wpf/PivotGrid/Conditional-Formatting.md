@@ -1,265 +1,141 @@
 ---
 layout: post
-title: Conditional Formatting | PivotGrid | Wpf | Syncfusion
-description: Conditional Formatting
+title: 13412-Conditional-Formatting
+description: 1.3.4.12 conditional formatting
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-
 # Conditional Formatting
 
-Conditional formatting is the process of applying customized styles to any object based on specified conditions. Conditional Formatting for
-PivotGrid WPF allows you to format Grid cells based on specified conditions. This can be achieved by defining PivotGridDataConditionalFormat 
-for the Grid, which allows you to specify the criteria for filtering the cells and the style to be applied to the filtered cells. After the 
-specifications are defined, the styles are applied only to the cells that fulfil the specified conditions. Conditional Formatting can be 
-specified by using the PivotGridControl.ConditionalFormats property, which is an observable collection of type PivotGridDataConditionalFormat. 
+Conditional formatting is the process of applying customized styles to any object based on specified conditions. Conditional Formatting for PivotGrid WPF allows you to format Grid cells based on specified conditions. This can be achieved by defining **PivotGridDataConditionalFormat** which allows you to specify the criteria for filtering the cells and the style to be applied to the filtered cells. After the specifications are defined, the styles are applied only to the cells that fulfil the specified conditions. 
 
-
-The criteria for filtering the cells are specified by using the PivotGridDataConditionalFormat.Conditions property, which is a collection of PivotGridDataCondition objects. The Style for each ConditionalFormat can be specified by using the PivotGridDataConditionalFormat.CellStyle property, which should be of type PivotGridCellStyle.
-
-### Use Case Scenarios
+**Use Case Scenarios**
 
 Conditional Formatting can be used in Marketing software to help users easily trace the product sales rate for different regions. 
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img10.png)
-
-
-## Adding Conditional Formatting
-
-Conditional Formatting can be added to code behind and XAML, as shown in the following code snippets. 
-
-{% tabs %}
-{% highlight xml %} 
-
-
-  <!--Specifying PivotRows.-->
-
-            <syncfusion:PivotGridControl.PivotRows>
-
-                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
-
-                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
-
-            </syncfusion:PivotGridControl.PivotRows>
-
-            <!--Specifying PivotColumns.-->
-
-            <syncfusion:PivotGridControl.PivotColumns>
-
-                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
-
-                <syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
-
-            </syncfusion:PivotGridControl.PivotColumns>
-
-            <!--Specifying PivotCalculationValues.--> 
-
-            <syncfusion:PivotGridControl.PivotCalculations>
-
-                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
-
-                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
-
-            </syncfusion:PivotGridControl.PivotCalculations>
-
-
-
-	<syncfusion:PivotGrid.ConditionalFormats> 
-
-	<!-- Adding Conditions. -->                       
-
-	<syncfusion:PivotGridDataConditionalFormat Name="C1">
-
-	<!-- Specifying the Cell Style. -->
-
-	<syncfusion:PivotGridDataConditionalFormat.CellStyle>
-
-	<syncfusion:PivotGridCellStyle Background="Green" FontFamily="Calibri" FontSize="12"/>
-
-	</syncfusion:PivotGridDataConditionalFormat.CellStyle>
-
-	<!-- Specifying Conditions. --> 
-
-	<syncfusion:PivotGridDataConditionalFormat.Conditions>
-
-	<syncfusion:PivotGridDataCondition ConditionType="GreaterThan" Value="5000000" MeasureElement="Amount" PredicateType="And"/>
-
-	</syncfusion:PivotGridDataConditionalFormat.Conditions>
-
-	</syncfusion:PivotGridDataConditionalFormat>
-
-	<syncfusion:PivotGridDataConditionalFormat Name="C2">
-
-	<!-- Specifying the Cell Style. -->
-
-	<syncfusion:PivotGridDataConditionalFormat.CellStyle>
-
-	<syncfusion:PivotGridCellStyle Background="Red" FontFamily="Calibri" FontSize="12"/>
-
-	</syncfusion:PivotGridDataConditionalFormat.CellStyle>
-
-	<!-- Specifying Conditions. --> 
-
-	<syncfusion:PivotGridDataConditionalFormat.Conditions>
-
-	<syncfusion:PivotGridDataCondition ConditionType="LessThan" Value="100000
-
-	" MeasureElement="Amount" PredicateType="And"/>
-
-	</syncfusion:PivotGridDataConditionalFormat.Conditions>
-
-	</syncfusion:PivotGridDataConditionalFormat>           
-
-	</syncfusion:PivotGrid.ConditionalFormats>
-
-{% endhighlight %} 
-
-
-
-{% highlight C# %} 
-
-
-// Specifying PivotGridDataConditionalFormat.
-
-PivotGridDataConditionalFormat conditionalFormat1 = new PivotGridDataConditionalFormat();
-
-// Adding Conditions to PivotGridDataConditionalFormat.
-
-conditionalFormat1.Conditions.Add(new PivotGridDataCondition() { 
-
-ConditionType= PivotGridDataConditionType.GreaterThan , 
-
-MeasureElement="Amount",
-
-Value="5000000",
-
-PredicateType = PredicateType.And });
-
-
-
-// Specifying the Cell Style.
-
-conditionalFormat1.CellStyle = new PivotGridCellStyle() { Background= Brushes.Green, FontFamily = new FontFamily("Calibri"), FontSize=12 
-
-};
-
-
-
-
-
-// Specifying PivotGridDataConditionalFormat.
-
-PivotGridDataConditionalFormat conditionalFormat2 = new PivotGridDataConditionalFormat();
-
-// Adding Conditions to PivotGridDataConditionalFormat.
-
-conditionalFormat2.Conditions.Add(new PivotGridDataCondition() { 
-
-ConditionType= PivotGridDataConditionType.LessThan , 
-
-MeasureElement="Amount",
-
-Value="100000",
-
-PredicateType = PredicateType.And });
-
-
-
-// Specifying the Cell Style.
-
-conditionalFormat2.CellStyle = new PivotGridCellStyle() { Background= Brushes.Red, FontFamily = new FontFamily("Calibri"), FontSize=12 
-
-};
-
-
-
-
-
-// Adding Conditions to PivotGrid.
-
-this.PivotGrid1.ConditionalFormats.Add(conditionalFormat1);
-
-this.PivotGrid1.ConditionalFormats.Add(conditionalFormat2);
-
- {% endhighlight %} 
-
-
-
-{% highlight vbnet %}  
-
-
-' Specifying PivotGridDataConditionalFormat.
-
-Dim conditionalFormat1 As PivotGridDataConditionalFormat = New PivotGridDataConditionalFormat()
-
-' Adding Conditions to PivotGridDataConditionalFormat.
-
-conditionalFormat1.Conditions.Add(New PivotGridDataCondition() With {.ConditionType= PivotGridDataConditionType.GreaterThan, .MeasureElement="Amount", .Value="5000000", .PredicateType = PredicateType.And})
-
-
-
-' Specifying the Cell Style.
-
-conditionalFormat1.CellStyle = New PivotGridCellStyle()
-
-Dim TempFontFamily As FontFamily = New FontFamily("Calibri"), FontSize=12
-
-Brushes.Green, FontFamily = New FontFamily("Calibri"), FontSize
-
-Background= Brushes.Green, FontFamily
-
-
-
-' Specifying PivotGridDataConditionalFormat.
-
-Dim conditionalFormat2 As PivotGridDataConditionalFormat = New PivotGridDataConditionalFormat()
-
-' Adding Conditions to PivotGridDataConditionalFormat.
-
-conditionalFormat2.Conditions.Add(New PivotGridDataCondition() With {.ConditionType= PivotGridDataConditionType.GreaterThan, .MeasureElement="Amount", .Value="100000", .PredicateType = PredicateType.And})
-
-
-
-' Specifying the Cell Style.
-
-conditionalFormat2.CellStyle = New PivotGridCellStyle()
-
-Dim TempFontFamily As FontFamily = New FontFamily("Calibri"), FontSize=12
-
-Brushes.Red, FontFamily = New FontFamily("Calibri"), FontSize
-
-Background= Brushes.Red, FontFamily
-
-
-
-
-
-' Adding Conditions to PivotGrid.
-
-Me.PivotGrid1.ConditionalFormats.Add(conditionalFormat1)
-
-Me.PivotGrid1.ConditionalFormats.Add(conditionalFormat2)
-
+## Defining Conditional formats for PivotGrid
+
+Conditional Formatting can be defined by using the **PivotGridControl.ConditionalFormats**, which is an observable collection of type **PivotGridDataConditionalFormat**.The criteria for filtering the cells are specified by using the **PivotGridDataConditionalFormat.Conditions** property, which is a collection of PivotGridDataCondition objects.The Style for each ConditionalFormat can be specified by using the **PivotGridDataConditionalFormat.CellStyle** property, which should be of type PivotGridCellStyle. It can be defined either in *XAML* or in *Code-Behind*. 
+
+If through **XAML**, please refer the below code snippet.
+
+{% highlight xaml %}
+
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
+
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+
+        <syncfusion:PivotGridControl.ConditionalFormats>
+            <!-- Adding Conditions. -->
+            <syncfusion:PivotGridDataConditionalFormat Name="C1">
+                <!-- Specifying the Cell Style. -->
+                <syncfusion:PivotGridDataConditionalFormat.CellStyle>
+                    <syncfusion:PivotGridCellStyle Background="Red" FontFamily="Calibri" FontSize="12" />
+                </syncfusion:PivotGridDataConditionalFormat.CellStyle>
+                <!-- Specifying Conditions. -->
+                <syncfusion:PivotGridDataConditionalFormat.Conditions>
+                    <syncfusion:PivotGridDataCondition ConditionType="GreaterThan" Value="50000000" SummaryElement="Amount" PredicateType="And" />
+                </syncfusion:PivotGridDataConditionalFormat.Conditions>
+            </syncfusion:PivotGridDataConditionalFormat>
+
+            <syncfusion:PivotGridDataConditionalFormat Name="C2">
+                <!-- Specifying the Cell Style. -->
+                <syncfusion:PivotGridDataConditionalFormat.CellStyle>
+                    <syncfusion:PivotGridCellStyle Background="Yellow" FontFamily="Calibri" FontSize="12" />
+                </syncfusion:PivotGridDataConditionalFormat.CellStyle>
+                <!-- Specifying Conditions. -->
+                <syncfusion:PivotGridDataConditionalFormat.Conditions>
+                    <syncfusion:PivotGridDataCondition ConditionType="LessThan" Value="50" SummaryElement="Quantity" PredicateType="And" />
+                </syncfusion:PivotGridDataConditionalFormat.Conditions>
+            </syncfusion:PivotGridDataConditionalFormat>
+        </syncfusion:PivotGridControl.ConditionalFormats>
+
+    </syncfusion:PivotGridControl>
+</Grid>
+    
 {% endhighlight %}
-{% endtabs %}
 
+Else if through **Code-Behind**, please refer the below code snippet.
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img11.png)
+{% highlight C# %}
 
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
+        PivotGridDataConditionalFormat m_PivotGridDataConditionalFormat = new PivotGridDataConditionalFormat();
+        //Adding Conditions
+        m_PivotGridDataConditionalFormat.Conditions.Add(new PivotGridDataCondition() {
+            ConditionType = PivotGridDataConditionType.GreaterThan,
+                SummaryElement = "Amount",
+                Value = "50000000",
+                PredicateType = PredicateType.And
+        });
+        // Specifying the Cell Style.
+        m_PivotGridDataConditionalFormat.CellStyle = new PivotGridCellStyle() {
+            Background = Brushes.Red, FontFamily = new FontFamily("Calibri"), FontSize = 12
+        };
+        PivotGridDataConditionalFormat n_PivotGridDataConditionalFormat = new PivotGridDataConditionalFormat();
+        //Adding Conditions
+        n_PivotGridDataConditionalFormat.Conditions.Add(new PivotGridDataCondition() {
+            ConditionType = PivotGridDataConditionType.GreaterThan,
+                SummaryElement = "Quantity",
+                Value = "50",
+                PredicateType = PredicateType.And
+        });
+        // Specifying the Cell Style.
+        n_PivotGridDataConditionalFormat.CellStyle = new PivotGridCellStyle() {
+            Background = Brushes.Yellow, FontFamily = new FontFamily("Calibri"), FontSize = 12
+        };
+        //Adding Conditional Formats to PivotGrid
+        pivotGrid.ConditionalFormats.Add(m_PivotGridDataConditionalFormat);
+        pivotGrid.ConditionalFormats.Add(n_PivotGridDataConditionalFormat);
+    }
+}
+    
+{% endhighlight %}
 
-### Sample Link
-
-A sample application that illustrates Conditional Formatting is distributed along with the Essential PivotGrid WPF installation and can be found at:
-
-..\Syncfusion\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\ Conditional Formatting Demo.
-
-To access a Conditional Formatting sample:
-
-1. Open the Syncfusion Dashboard. 
-2. Click Business Intelligence.
-3. Click the WPF drop-down list, and then select Explore Samples. 
-4. Navigate to PivotAnalysis.WPF -> Samples -> Appearance -> Conditional Formatting Demo. 
-
+![](Conditional format images/PivotGrid shows conditionally formatted values.png)

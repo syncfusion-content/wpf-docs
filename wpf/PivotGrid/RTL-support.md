@@ -1,78 +1,109 @@
 ---
 layout: post
-title: RTL support| PivotGrid | Wpf | Syncfusion
-description: RTL support
+title: 134271-RTL-Support
+description:       1.3.4.27.1 rtl support
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-# RTL support
+# RTL Support
 
-Right-to-left support has been provided for the PivotGrid control for WPF. Users can now display content from right to left by setting the flow direction option in the control. 
+PivotGrid provides support to display the contents of the grid from Right-to-left. It can be achieved by setting the property **FlowDirection** in the PivotGrid control. 
 
-### Use Case Scenario
+**Use Case Scenario**
 
-Some cultures have a written language that reads from right to left. Controls deployed for such cultures should be rendered from right to left. In these cases, we can utilize RTL support of the OLAP Gauge component. 
+User could display the contents from right to left based on their requirement.
 
-### Properties
-
-
-
+                                                          Property Table
+                                                          
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
 Gets or sets the flow direction for the PivotGrid control.</td><td>
-Normal</td><td>
-enum</td></tr>
-</table> 
+FlowDirection</td><td>
+LeftToRight(default), RightToLeft</td><td>
+-</td></tr>
+</table>
 
-### Adding RTL support for PivotGrid in an Application 
+## Defining the property in PivotGrid
 
-To enable RTL support, the FlowDirection property of the PivotGrid control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
+It can be achieved by setting the **FlowDirection** property of PivotGrid control to RightToLeft. It can be done either in *XAML* or in *Code-Behind*. 
 
-{% highlight xml %} 
+If through **XAML**, please refer the below code snippet.
 
+{% highlight xaml %}
 
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" FlowDirection="RightToLeft" ItemSource="{Binding   Source={StaticResource data}}">
 
-<syncfusion:PivotGridControl FlowDirection="RightToLeft" x:Name="pivotGrid1" ItemSource="{Binding ProductSalesData}" >  
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+    </syncfusion:PivotGridControl>
+</Grid>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-{% highlight C# %}  
+Else if through **Code-Behind**, please refer the below code snippet.
 
+{% highlight C# %}
 
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
-  this.pivotGrid1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+        pivotGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
-{% endhighlight %} 
+    }
+}   
 
-{% highlight vbnet %} 
+{% endhighlight %}
 
-
-
-  Me.pivotGrid1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
-
-{% endhighlight %} 
-
-![](Features_images/Features_img57.jpeg)
-
-
-RTL support for PivotGrid
-{:.caption}
-
-### Sample Link
-
-A sample is available locally in the following location:
-
-SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.WPF\Localization\LocalizationDemo
-
-
-
+![](Localization Images/PivotGrid Shows RTL support.png)

@@ -1,129 +1,94 @@
 ---
 layout: post
-title: Pivot Value Chooser| PivotGrid | Wpf | Syncfusion
-description: Pivot Value Chooser
+title: 1357-Pivot-Value-Chooser
+description:  1.3.5.7 pivot value chooser
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
 # Pivot Value Chooser
 
-The Pivot Value Chooser is used to list all the pivot fields in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a pivot calculation and add it to the pivot grid, drag and drop the grid fields, and rearrange the calculation column in the PivotGrid control at run time.
+**Pivot Value Chooser** is used to list all the PivotFields in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a PivotCalculation and add it to the PivotGrid, drag and drop the grid fields, and rearrange the calculation column in the PivotGrid control at run time.
 
-### Use Case Scenario
+**Use Case Scenario**
 
-This feature enables users to show or hide particular pivot calculations in the pivot grid at run time.
+It enables user to show or hide particular PivotCalculation in the PivotGrid at run time.
 
-![](Features_images/Features_img51.png)
-
-
-
-Pivot Grid with Pivot Value Chooser
-{:.caption}
-
-### Properties
-
-
+                                                         Properties Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description}</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 ShowPivotValueChooser</td><td>
-Hides or shows a computation value column chooser dialog that allows users to hide, show, or reorder the pivot calculations in the pivot grid.</td><td>
-Dependency Property</td><td>
-Boolean</td></tr>
+Hides or shows a computation value column chooser dialog that allows users to hide, show, or reorder the PivotCalculations in the PivotGrid.</td><td>
+bool</td><td>
+True, False(Default)</td><td>
+-</td></tr>
 <tr>
 <td>
 PossiblePivotCalculations</td><td>
 Gets or sets a collection of possible pivot calculations that may appear in the PivotGrid control and lists them in the PivotValueChooser.</td><td>
-Dependency Property</td><td>
-ObservableCollectionOf type PivotComputationInfo</td></tr>
+OservableCollection(PivotComputationInfo)</td><td>
+-</td><td>
+-</td></tr>
 </table>
 
+## Using the Pivot Value Chooser in PivotGrid
 
-### Sample Link
+###Pivot value chooser with possible calculation values
 
-A sample of this feature can be found in the following location:
+**PossiblePivotCalculations** is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the Itemsource of PivotGrid control.
 
-{InstalledDrive}:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\BI\Wpf\PivotAnalysis.Wpf\Samples\Product Showcase\RowPivotsOnly Demo
+After defining PivotGrid control in RowPivotsOnly mode, raise the Loaded event of PivotGrid. Inside the PivotGrid_Loaded() event, set the property **ShowPivotValueChooser** and define a observable collection of PivotComputationInfo to **PossiblePivotCalculations**.
 
-## Showing the Pivot Value Chooser in an Application
+{% highlight C# %}
 
-Users can show or hide the Pivot Value Chooser by setting the ShowPivotValueChooser property to true or false, respectively. The RowPivotsOnly mode must be enabled in the pivot grid for this feature to function.
+public partial class MainWindow: Window {
+    public MainWindow() {
+        InitializeComponent();
+        pivotGrid.Loaded += pivotGrid_Loaded;
+    }
 
-N> PossiblePivotCalculations is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the PivotGrid control’s ItemSource.
+    void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
+        ObservableCollection < PivotComputationInfo > possibleComputations = new ObservableCollection < PivotComputationInfo > () {
+            //Add computation collection.
+        };
+        pivotGrid.PossiblePivotCalculations = possibleComputations;
+        pivotGrid.RowPivotsOnly = true;
+        pivotGrid.ShowPivotValueChooser = true;
+    }
+}
 
-### Showing the Pivot Value Chooser with Possible Pivot Calculations
+{% endhighlight %}
 
-{% tabs %}
-{% highlight C# %}  
+### Showing the Pivot value chooser with all the default values
 
+After defining PivotGrid control in RowPivotsOnly mode, raise the Loaded event of PivotGrid. Inside the PivotGrid_Loaded() event, set the property **ShowPivotValueChooser**.
 
+Please refer the below code snippet.
 
-ObservableCollection<PivotComputationInfo> possibleComputations = new ObservableCollection<PivotComputationInfo>()
+{% highlight C# %}
 
-{
+public partial class MainWindow: Window {
+    public MainWindow() {
+        InitializeComponent();
+        pivotGrid.Loaded += pivotGrid_Loaded;
+    }
 
-//Add computation collection.
+    void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
+        pivotGrid.RowPivotsOnly = true;
+        pivotGrid.ShowPivotValueChooser = true;
+    }
+}
 
-};
+{% endhighlight %}
 
-this.pivotGridControl1.PossiblePivotCalculations = possibleComputations;
-
-this.pivotGridControl1.RowPivotsOnly = true;
-
-this.pivotGridControl1.ShowPivotValueChooser = true;
-
-{% endhighlight %} 
-
-
-
-{% highlight vbnet %} 
-
-
-
-Dim possibleComputations As New ObservableCollection(Of PivotComputationInfo)() From {}
-
-'Add computation collection.
-
-Me.pivotGridControl1.PossiblePivotCalculations = possibleComputations
-
-Me.pivotGridControl1.RowPivotsOnly = True
-
-Me.pivotGridControl1.ShowPivotValueChooser = True
-
-{% endhighlight %} 
-{% endtabs %}
-
-### Showing Pivot Value Chooser without Possible Pivot Calculations
-
-{% tabs %}
-{% highlight C# %}  
-
-
-
-this.pivotGridControl1.RowPivotsOnly = true;
-
-this.pivotGridControl1.ShowPivotValueChooser = true;
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-
-Me.pivotGridControl1.RowPivotsOnly = True
-
-Me.pivotGridControl1.ShowPivotValueChooser = True 
-
-{% endhighlight %} 
-{% endtabs %}
-
-
+![](Features in RowPivotsOnly/PivotGrid shows Value chooser window.png)
