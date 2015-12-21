@@ -79,10 +79,10 @@ Else if through **Code-Behind**, please refer the below code snippet.
 {% endhighlight %}
 
 
-![](PivotSchemaDesigner Images/PivotSchemaDesigner.png)
+![](PivotSchemaDesigner-Images/PivotSchemaDesigner.png)
 
 _PivotSchemaDesigner_
 
-![](PivotSchemaDesigner Images/PivotSchemaDesigner with PivotGrid.png)
+![](PivotSchemaDesigner-Images/PivotSchemaDesigner with PivotGrid.png)
 
 _PivotGrid with PivotSchemaDesigner_

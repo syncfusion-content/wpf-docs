@@ -119,10 +119,10 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 
-![](PivotSchemaDesigner Images/PivotTableFieldList when enabled showsdisplayfields only.png)
+![](PivotSchemaDesigner-Images/PivotTableFieldList when enabled showsdisplayfields only.png)
 
 _PivotSchemaDesigner with ShowDisplayFieldsOnly_
 
-![](PivotSchemaDesigner Images/PivotTableFieldList when disbled showsdisplayfields only.png)
+![](PivotSchemaDesigner-Images/PivotTableFieldList when disbled showsdisplayfields only.png)
 
 _PivotSchemaDesigner without ShowDisplayFieldsOnly_

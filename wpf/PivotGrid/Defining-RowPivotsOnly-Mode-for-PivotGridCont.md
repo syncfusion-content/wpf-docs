@@ -78,5 +78,5 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features in RowPivotsOnly/PivotGrid when RowPivotsOnly mode is enabled.png)
+![](Features-in-RowPivotsOnly/PivotGrid when RowPivotsOnly mode is enabled.png)
 

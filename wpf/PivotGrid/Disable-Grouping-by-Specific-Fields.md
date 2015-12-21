@@ -116,6 +116,6 @@ public partial class MainWindow: Window {
 	
 {% endhighlight %}
 
-![](Grouping Bar Images/Grouping bar with disabled grouping fields.png)
+![](Grouping-Bar-Images/Grouping bar with disabled grouping fields.png)
 
 

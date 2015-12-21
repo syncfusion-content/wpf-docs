@@ -138,4 +138,4 @@ public partial class MainWindow: Window {
     
 {% endhighlight %}
 
-![](Conditional format images/PivotGrid shows conditionally formatted values.png)
+![](Conditional-format-images/PivotGrid shows conditionally formatted values.png)

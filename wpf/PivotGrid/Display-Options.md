@@ -110,29 +110,29 @@ public partial class MainWindow: Window {
 
 It is used to display the calculation values in all the columns of the PivotGrid.
 
-![](Display options Images/PivotComputationinfo using All option.png)
+![](Display-options-Images/PivotComputationinfo using All option.png)
 
 **Summary**
 
 Data actually present in the PivotEngine but displays the calculation values only in the summary columns of the PivotGrid.
 
-![](Display options Images/PivotComputationinfo using summary option.png)
+![](Display-options-Images/PivotComputationinfo using summary option.png)
 
 **Calculations**
 
 Data actually present in the PivotEngine but displays the calculation values only in the calculation columns other than summary and grand total of the PivotGrid.
 
-![](Display options Images/PivotComputationinfo using Calculations option.png)
+![](Display-options-Images/PivotComputationinfo using Calculations option.png)
 
 **GrandTotal**
 
 Data actually present in the PivotEngine but displays the calculation values only in the grand total columns of the PivotGrid.
 
-![](Display options Images/PivotComputationinfo using Grand Totals option.png)
+![](Display-options-Images/PivotComputationinfo using Grand Totals option.png)
 
 **None**
 
 Data actually present in the PivotEngine but hides all the calculation values in all the columns of the PivotGrid.
 
-![](Display options Images/PivotComputationinfo using none option.png)
+![](Display-options-Images/PivotComputationinfo using none option.png)
 

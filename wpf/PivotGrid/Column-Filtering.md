@@ -79,5 +79,5 @@ Please refer the below code snippet.
 
 {% endhighlight %}	
 
-![](Features in RowPivotsOnly/Filtering Enable in RowPivotsOnly.png)
+![](Features-in-RowPivotsOnly/Filtering Enable in RowPivotsOnly.png)
 

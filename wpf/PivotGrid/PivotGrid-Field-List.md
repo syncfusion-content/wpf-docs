@@ -106,5 +106,5 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](PivotGridFieldlist images/PivotGrid Shows Field List.png)
+![](PivotGridFieldlist-images/PivotGrid Shows Field List.png)
 

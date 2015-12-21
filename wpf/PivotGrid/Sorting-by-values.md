@@ -119,7 +119,7 @@ public partial class MainWindow: Window {
 
 **All** is used to enable the sorting on all the value columns of PivotGrid.
 
-![](Sorting Images/Sorted PivotGrid when using All option.png)
+![](Sorting-Images/Sorted PivotGrid when using All option.png)
 
 ###Disable the Sorting
 
@@ -129,19 +129,19 @@ public partial class MainWindow: Window {
 
 **ColumnSorting** enables sorting on all the value columns other than SubTotal and GrandTotal columns of PivotGrid.
 
-![](Sorting Images/Sorted PivotGrid when using Column sorting option.png)
+![](Sorting-Images/Sorted PivotGrid when using Column sorting option.png)
 
 ###Sorting only Total columns
 
 **TotalSorting** enables sorting only on the SubTotal columns or Summary columns of PivotGrid.
 
-![](Sorting Images/Sorted PivotGrid when using Total Sorting.png)
+![](Sorting-Images/Sorted PivotGrid when using Total Sorting.png)
 
 ###Sorting only GrandTotal columns
 
 **GrandTotalSorting** enables sorting only on the GrandTotal columns of PivotGrid.
 
-![](Sorting Images/Sorted PivotGrid when using GrandTotal Sorting option.png)
+![](Sorting-Images/Sorted PivotGrid when using GrandTotal Sorting option.png)
 
 ##Multi-Column Sorting
 

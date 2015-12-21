@@ -211,5 +211,5 @@ public partial class MainWindow: Window {
 To set Custom Summary at **Runtime**, double-click Items from the PivotSchemaDesigner which will pop up the **PivotComputationInformation** dialog box. 
 In that **Summarize Value by** combo box, you can select the predefined custom summaries based on your requirement.
 
-![](RunTime custom summary images/PivotGrid with custom summaries.png)
+![](RunTime-custom-summary-images/PivotGrid with custom summaries.png)
 

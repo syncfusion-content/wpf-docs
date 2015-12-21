@@ -94,7 +94,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Excel Like Filtering images/Excel like Filter Popup.png)
+![](Excel-Like-Filtering-images/Excel like Filter Popup.png)
 
 
 ### Various Features of MultiFunctionalSortFilterPopup
@@ -131,7 +131,7 @@ It is used to filter the PivotGrid based on the PivotItem filter labels. It can 
   * Not between
 
 
-![](Excel Like Filtering images/Label filter window.png)
+![](Excel-Like-Filtering-images/Label filter window.png)
 
 _Label Filter Window for filtering "Alberta" in State_
 
@@ -149,11 +149,11 @@ It is used to filter the PivotGrid based on the PivotItem field values. It can b
   * Not between
   * Top 10
 
-![](Excel Like Filtering images/Value filter window.png)
+![](Excel-Like-Filtering-images/Value filter window.png)
 
 _ValueFilter Window for filtering "Alberta" using its Quantity value "677" in State_
 
 
-![](Excel Like Filtering images/Filtered PivotGrid by using label value.png)
+![](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
 
 _PivotGrid with Label or Value Filter applied_

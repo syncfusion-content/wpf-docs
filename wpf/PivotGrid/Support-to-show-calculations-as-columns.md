@@ -109,10 +109,10 @@ public partial class MainWindow: Window {
 
 We can enable or disable the ShowCalculationsAsColumns property through the ShowCalculationsAsColumns checkbox of PivotSchemaDesigner. Uncheck the ShowCalculationsAsColumns check box in order to view the calculations values in rows.
 
-![](PivotSchemaDesigner Images/Layout section.png)
+![](PivotSchemaDesigner-Images/Layout section.png)
 
 _ShowCalculationsAsColumns checkbox in PivotSchemaDesigner_
 
-![](PivotSchemaDesigner Images/PivotGrid displays the values as rows.png)
+![](PivotSchemaDesigner-Images/PivotGrid displays the values as rows.png)
 
 _ PivotGrid displays the calculation values as rows_

@@ -60,4 +60,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}	
 
-![](Features in RowPivotsOnly/PivotGrid shows Context menu.png)
+![](Features-in-RowPivotsOnly/PivotGrid shows Context menu.png)

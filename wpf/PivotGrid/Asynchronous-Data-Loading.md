@@ -104,10 +104,10 @@ public partial class MainWindow: Window {
 	
 {% endhighlight %}
 
-![](Asynchronous data loading images/UI thread loading.png)
+![](Asynchronous-data-loading-images/UI thread loading.png)
 
 _UI thread loading_
 
-![](Asynchronous data loading images/Asynchronously loaded data.png)
+![](Asynchronous-data-loading-images/Asynchronously loaded data.png)
 
 _Asynchronously loaded data_

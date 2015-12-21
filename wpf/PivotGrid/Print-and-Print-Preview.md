@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 13414-Print-and-Print-Preview
-description:print and print preview
+description: print and print preview
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -145,7 +145,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Print Images/Print preview.png)
+![](Print-Images/Print preview.png)
 
 ## Various Options in PrintPreview Window of PivotGrid
 
@@ -169,4 +169,4 @@ Click the **PageSettings** button in the print preview to change the pages while
 
 Click the **Print** button in the print preview window to print the PivotGrid content.
 
-![](Print Images/Print and Zooming options.png)
+![](Print-Images/Print and Zooming options.png)

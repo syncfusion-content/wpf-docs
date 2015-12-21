@@ -115,19 +115,19 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Selection Images/PivotGrid shows selected cells.png)
+![](Selection-Images/PivotGrid shows selected cells.png)
 
 **To Select a Row**
 
 It is possible to select a whole row in PivotGrid by clicking on the specific row header and we could select multiple rows by clicking on one row header and dragging it through the other row headers as per our requirement.
 
-![](Selection Images/PivotGrid shows selection of multiple rows.png)
+![](Selection-Images/PivotGrid shows selection of multiple rows.png)
 
 **To Select a Column**
 
 It is possible to select a whole column in PivotGrid by clicking on the specific column header and we could select multiple columns by clicking on one column header and dragging it through the other column headers as per our requirement.
 
-![](Selection Images/PivotGrid shows selection of multiple columns.png)
+![](Selection-Images/PivotGrid shows selection of multiple columns.png)
 
 ###AllowSelectionWithHeaders 
 
@@ -201,10 +201,10 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Selection Images/PivotGrid shows selection along with row headers.png)
+![](Selection-Images/PivotGrid shows selection along with row headers.png)
 
 _PivotGrid Cell Selection along with Row Headers_
 
-![](Selection Images/PivotGrid shows selection along with column headers.png)
+![](Selection-Images/PivotGrid shows selection along with column headers.png)
 
 _PivotGrid Cell Selection along with Column Headers_

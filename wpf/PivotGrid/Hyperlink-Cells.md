@@ -69,22 +69,22 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
  
- ![](Hyperlink Cells Images/PivotGrid shows column header hyperlink.png)
+ ![](Hyperlink-Cells-Images/PivotGrid shows column header hyperlink.png)
  
  _PivotGrid with Column header hyperlink_
  
- ![](Hyperlink Cells Images/PivotGrid shows row header hyperlink.png)
+ ![](Hyperlink-Cells-Images/PivotGrid shows row header hyperlink.png)
  
  _PivotGrid with Row header hyperlink_
  
- ![](Hyperlink Cells Images/PivotGrid shows summary cell hyperlink.png)
+ ![](Hyperlink-Cells-Images/PivotGrid shows summary cell hyperlink.png)
  
  _PivotGrid with Summary cell hyperlink_
  
- ![](Hyperlink Cells Images/PivotGrid shows summary header hyperlink.png)
+ ![](Hyperlink-Cells-Images/PivotGrid shows summary header hyperlink.png)
  
  _PivotGrid with Summary header hyperlink_
  
- ![](Hyperlink Cells Images/PivotGrid shows value cell hyperlink.png)
+ ![](Hyperlink-Cells-Images/PivotGrid shows value cell hyperlink.png)
  
  _PivotGrid with Value cell hyperlink_
