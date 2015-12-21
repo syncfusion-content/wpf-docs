@@ -222,7 +222,7 @@ The following code example illustrates how to add Primary (horizontal) and Secon
 {% endhighlight %}
 
 
-![F:/Snaps/sshot-5.png](Getting-Started_images/Getting-Started_img6.png =400x300)
+![F:/Snaps/sshot-5.png](Getting-Started_images/Getting-Started_img6.png )
 
 
 
