@@ -59,7 +59,7 @@ Represents an example.</td></tr>
 <tr>
 <td>
 Tip</td><td>
-Represents useful hints that helps you use SfChart’s features and functionalities.</td></tr>
+Represents useful hints that helps you to use SfChart’s features and functionalities.</td></tr>
 </table>
 
 
