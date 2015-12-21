@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis
 
-ChartAxis is used to locate a data point inside the chart area. Generally, to locate a data point two axes are required along vertical and horizontal direction.The vertical axis or y-axis usually represents numerical values .The horizontal axis or x-axis represents categorical or numerical or date and time values. ChartAxis supports the following types.
+ChartAxis is used to locate a data point inside the chart area. Generally to locate a data point, two axes are required along vertical and horizontal direction. The vertical axis or y-axis usually represents numerical values .The horizontal axis or x-axis represents categorical or numerical or date and time values. ChartAxis supports the following types.
 
 You can choose any ChartAxis derived types, like DateTimeAxis, NumericalAxis, CategoryAxis, LogarithmicAxis or TimeSpanAxis depending on the value type. DateTimeCategoryAxis is a special type, used to plot date and time values for the given datapoints. 
 
