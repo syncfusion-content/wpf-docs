@@ -1302,20 +1302,17 @@ Method </th><th>
 Description </th><th>
 Parameters </th><th>
 Type </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+Return Type </th></tr>
 <tr>
 <td>
 Serialize </td><td>
 Serializes tde Chart control into XAML string.</td><td>
 Public void Serialize()</td><td>
 N/A</td><td>
-string </td><td>
-{{ '[Serialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx)' | markdownify }}</td></tr>
+string </td></tr>
 <tr>
 <td>
 Deserialize</td><td>
-Deserializes tde string tdat is being passed as parameter into Chart object. Returns null if tde string parameter does not represent Chart object.</td><td>
 Public object Deserialize(string)</td><td>
 N/A</td><td>
 object</td><td>
