@@ -815,10 +815,10 @@ SfChart provides support to customize the edge labels of the axis to adjust its 
 
 The following are the customizing options in EdgeLabelDrawingMode.
 
-* Center- Positions the label with tickline as center.
-* Fit- Position the gridline inside based on the edge label size.
-* Hide- Hides the edge labels.
-* Shift- Shifts the edge labels inside to label width.
+* Center - Positions the label with tickline as center.
+* Fit - Position the gridline inside based on the edge label size.
+* Hide - Hides the edge labels.
+* Shift - Shifts the edge labels inside to label width.
 
 
 
