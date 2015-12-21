@@ -22,7 +22,7 @@ We can enable the Sorting through *XAML* or through *Code-behind* using **SortOp
  
 if through **XAML**, Please refer the below code snippet.
 
-{{% highlight xaml %}
+{% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" SortOption="All" ItemSource="{Binding   Source={StaticResource data}}">
@@ -89,19 +89,19 @@ public partial class MainWindow: Window {
 
 * The below screenshot shows the normal PivotGrid.
 
-   ![](Sorting Images/Normal PivotGrid.png)
+   ![](Sorting-Images/Normal PivotGrid.png)
    
 * Then the **Quantity** column has been sorted in the PivotGrid.
 
-   ![](Sorting Images/PivotGrid sorted by single column.png)
+   ![](Sorting-Images/PivotGrid sorted by single column.png)
    
 * Then by pressing the ctrl key , **Amount** column has been sorted. so that the PivotGrid has been sorted by the multiple columns.
 
-   ![](Sorting Images/PivotGrid sorted by multiple columns.png)
+   ![](Sorting-Images/PivotGrid sorted by multiple columns.png)
    
 * Then again by pressing the ctrl key , we could the sort the PivotGrid based on 'N' number of columns.
 
-   ![](Sorting Images/PivotGrid sorted by N columns.png)
+   ![](Sorting-Images/PivotGrid sorted by N columns.png)
 
 ## Multi-Column sorting in Row Pivots Only mode of PivotGrid control
 
@@ -109,7 +109,7 @@ We can enable the Sorting through *XAML* or through *Code-behind* using **SortOp
  
 if through **XAML**, please refer the below code snippet.
 
-{{% highlight xaml %}
+{% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl Name="pivotGrid" SortOption="All" RowPivotsOnly="True">
@@ -150,4 +150,4 @@ public partial class MainWindow: Window {
 
 Similarly, we can apply 'n' number of sorting in RowPivotsOnly mode also by pressing Ctrl key.
 
-![](Features in RowPivotsOnly/Multi column sort in RowPivots.png)
+![](Features-in-RowPivotsOnly/Multi column sort in RowPivots.png)

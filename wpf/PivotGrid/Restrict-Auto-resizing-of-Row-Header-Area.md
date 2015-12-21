@@ -106,5 +106,5 @@ public partial class MainWindow: Window {
     
 {% endhighlight %}
 
-![](Grouping Bar Images/Grouping bar while disabling the auto resiszing feature.png)
+![](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)
 

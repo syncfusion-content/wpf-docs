@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 146-Display-the-Count-of-Records-which-are-Current
-description:Display the count of records which are currently visible in pivot engine?
+description: Display the count of records which are currently visible in pivot engine?
 platform: wpf
 control: PivotGridControl
 documentation: ug

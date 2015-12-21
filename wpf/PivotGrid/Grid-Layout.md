@@ -111,11 +111,11 @@ public partial class MainWindow: Window {
 
 It is used to display the summary data of rows or columns at the end of the value cells. 
 
-![](Grid Layout Images/PivotGrid with normal layout.png)
+![](Grid-Layout-Images/PivotGrid with normal layout.png)
 
 **Top Summary**
 
 It is used to display the summary data of rows or columns at the beginning of the value cells.
 
-![](Grid Layout Images/PivotGrid with top summary layout.png)
+![](Grid-Layout-Images/PivotGrid with top summary layout.png)
 

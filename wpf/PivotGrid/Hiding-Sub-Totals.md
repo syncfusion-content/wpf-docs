@@ -150,7 +150,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Hiding SubTotals images/PivotGrid when sub totals hidden.png)
+![](Hiding-SubTotals-images/PivotGrid when sub totals hidden.png)
 
 ### Hiding only the Row Sub-Totals 
 
@@ -223,7 +223,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Hiding SubTotals images/PivotGrid when row sub totals hidden.png)
+![](Hiding-SubTotals-images/PivotGrid when row sub totals hidden.png)
 
 ### Hiding only the Column Sub-Totals 
 
@@ -296,7 +296,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Hiding SubTotals images/PivotGrid when column sub totals hidden.png)
+![](Hiding-SubTotals-images/PivotGrid when column sub totals hidden.png)
 
 ### Hiding the Sub-Totals for the specific pivot item
 
@@ -367,4 +367,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Hiding SubTotals images/PivotGrid shows the subtotal hidden for specific pivot item.png)
+![](Hiding-SubTotals-images/PivotGrid shows the subtotal hidden for specific pivot item.png)

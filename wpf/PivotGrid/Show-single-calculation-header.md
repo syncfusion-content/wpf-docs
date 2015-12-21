@@ -75,7 +75,7 @@ public partial class MainWindow: Window {
 	 
 {% endhighlight %}
 
-![](Show Single calculation header images/PivotGrid shows single calculation header.png)
+![](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)
 
 
 

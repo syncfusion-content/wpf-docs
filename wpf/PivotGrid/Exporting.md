@@ -91,11 +91,11 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting Images/Export to excel in PivotTable mode.png)
+![](Exporting-Images/Export to excel in PivotTable mode.png)
 
 _Export to excel in PivotTable mode_
 
-![](Exporting Images/Export to excel in Cell mode.png)
+![](Exporting-Images/Export to excel in Cell mode.png)
 
 _Export to excel in Cell mode_
 
@@ -127,7 +127,7 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting Images/Export to word.png)
+![](Exporting-Images/Export to word.png)
 
 ### Export to Pdf
 
@@ -157,7 +157,7 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting Images/Export to pdf.png)
+![](Exporting-Images/Export to pdf.png)
 
 ### Export to CSV
 
@@ -188,4 +188,4 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting Images/Export to csv.png)
+![](Exporting-Images/Export to csv.png)

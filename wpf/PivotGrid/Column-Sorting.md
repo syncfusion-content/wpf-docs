@@ -136,7 +136,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features in RowPivotsOnly/Sorting option enabled in PivotGrid.png)
+![](Features-in-RowPivotsOnly/Sorting option enabled in PivotGrid.png)
 
 ## Multi-Column Sorting
 

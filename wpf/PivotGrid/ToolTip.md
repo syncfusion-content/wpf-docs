@@ -129,7 +129,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](ToolTip Images/PivotGrid Shows ToolTip.png)
+![](ToolTip-Images/PivotGrid Shows ToolTip.png)
 
 ### Adding ToolTip to specific areas in PivotGrid
 
@@ -191,19 +191,19 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](ToolTip Images/PivotGrid shows Tooltip for summary header.png)
+![](ToolTip-Images/PivotGrid shows Tooltip for summary header.png)
 
 _PivotGrid shows tooltip for summary header_
 
-![](ToolTip Images/PivotGrid shows Tooltip for column header.png)
+![](ToolTip-Images/PivotGrid shows Tooltip for column header.png)
 
 _PivotGrid shows tooltip for column header_
 
-![](ToolTip Images/PivotGrid shows Tooltip for row header.png)
+![](ToolTip-Images/PivotGrid shows Tooltip for row header.png)
 
 _PivotGrid shows tooltip for row header_
 
-![](ToolTip Images/PivotGrid shows Tooltip for summary value.png)
+![](ToolTip-Images/PivotGrid shows Tooltip for summary value.png)
 
 _PivotGrid shows tooltip for summary values_
 
@@ -263,5 +263,5 @@ public partial class MainWindow: Window {
 
 Similarly, we can define custom tooltip to specific areas with respect to cell styles individually using **CustomToolTipTemplateKey** property of Row, Column, Summary Header and Value cell styles.
 
-![](ToolTip Images/PivotGrid shows CustomToolTip.png)
+![](ToolTip-Images/PivotGrid shows CustomToolTip.png)
 	

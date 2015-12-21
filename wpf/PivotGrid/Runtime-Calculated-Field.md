@@ -19,18 +19,18 @@ User could add a new calculated field based on their requirement at run time.
 
 To insert a new CalculatedField, open the CalculatedField window using the GroupingBar context menu. Then define a **Name** for the new calculated field. 
 
-![](Calculated Field images/Defining a name to the new calculated field.png)
+![](Calculated-Field-images/Defining a name to the new calculated field.png)
 
 _Defining Name for the Calculated Field_
 
 Note that, the **Formula** can be entered by inserting calculation fields through *Fields* section. For inserting numerical operator you can use formula popup as shown in the below screenshot.
 
-![](Calculated Field images/Formula has been given to the newly created calculated field.png)
+![](Calculated-Field-images/Formula has been given to the newly created calculated field.png)
 
 _Entering Formula for the Calculated Field_
 
 Click **Add** button for adding that calculated field and click **OK** to populate the PivotGrid control.
 
-![](Calculated Field images/PivotGrid shows the newly added calculated field.png)
+![](Calculated-Field-images/PivotGrid shows the newly added calculated field.png)
 
 _PivotGrid with newly added Calculated Field_

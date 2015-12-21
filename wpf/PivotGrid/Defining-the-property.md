@@ -76,7 +76,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Calculation Type images/PivotGrid shows percentageofcolumntotal calculation type.png)
+![](Calculation-Type-images/PivotGrid shows percentageofcolumntotal calculation type.png)
 
 
 

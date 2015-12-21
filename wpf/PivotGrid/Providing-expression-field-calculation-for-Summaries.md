@@ -86,4 +86,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Calculation Type images/PivotGrid shows formula calculation type.png)
+![](Calculation-Type-images/PivotGrid shows formula calculation type.png)

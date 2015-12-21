@@ -106,4 +106,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Localization Images/PivotGrid Shows RTL support.png)
+![](Localization-Images/PivotGrid Shows RTL support.png)

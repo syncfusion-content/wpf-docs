@@ -115,7 +115,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping Bar Images/Grouping bar in row header area alone.png)
+![](Grouping-Bar-Images/Grouping bar in row header area alone.png)
 
 **EnableColumnHeader**
 
@@ -188,5 +188,5 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping Bar Images/Grouping bar in both the row and column header area.png)
+![](Grouping-Bar-Images/Grouping bar in both the row and column header area.png)
 

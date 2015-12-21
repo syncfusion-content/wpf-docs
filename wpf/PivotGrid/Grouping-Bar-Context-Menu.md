@@ -108,4 +108,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping Bar Images/Grouping bar context menu.png)
+![](Grouping-Bar-Images/Grouping bar context menu.png)

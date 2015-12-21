@@ -229,4 +229,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Serialization images/Serialized PivotGrid.png)
+![](Serialization-images/Serialized PivotGrid.png)
