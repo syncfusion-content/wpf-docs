@@ -26,7 +26,7 @@ The following image helps you understand various elements in SfChart, when you u
 
 A chart is composed of various elements such as ChartSeries, ChartLegend, ChartAxis, ChartAdornment, grid lines and headers. 
 
-* **Chart Header** - Represents the title of the chart.
+* **Header** - Represents the title of the chart.
 * **ChartSeries** - Represents the type of chart to be drawn in the chart area.
 * **ChartLegend** - Displays brief information about the ChartSeries plotted in the chart area.
 * **ChartAdornment** - Displays information about the data points in ChartSeries.
