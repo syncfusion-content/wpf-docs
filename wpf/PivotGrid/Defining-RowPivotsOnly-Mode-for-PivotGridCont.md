@@ -39,7 +39,7 @@ The property **RowPivotsOnly** can be mentioned either in *XAML* or in *Code-Beh
 
 If through **XAML**, please refer the below code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl Name="pivotGrid" RowPivotsOnly="True">

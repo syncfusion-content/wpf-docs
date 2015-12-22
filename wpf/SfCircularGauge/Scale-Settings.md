@@ -20,7 +20,7 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -139,7 +139,7 @@ By using the Radius property, the Scales radius can be set as required.
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -302,7 +302,7 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
 #### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

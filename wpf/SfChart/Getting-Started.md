@@ -43,7 +43,7 @@ This session demonstrates how to create a chart using SfChart control from XAML.
 2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
 3. Add the following namespace in your XAML page.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
 
@@ -56,7 +56,7 @@ N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF cont
 
 You need to initialize the chart represented by the following class Syncfusion.UI.Xaml.SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart>
 
@@ -172,7 +172,7 @@ Now you can add the chart elements required for the above scenario to the SfChar
 
 The header of the chart acts as the title of the chart created, to identify its purpose. Here, the header, Demand Comparison of Gold, is added.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" 
 
@@ -196,7 +196,7 @@ Height="300" Width="500">
 
 The following code example illustrates how to add Primary (horizontal) and Secondary (vertical) axes to the SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -252,7 +252,7 @@ After you have added the series, you can add ItemSource, XBindingPath and YBindi
 
 Legends act as indicators for the chart. They carry some metadata about plotting data in the ChartSeries. (For more details)
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Legend>
 
@@ -264,7 +264,7 @@ Legends act as indicators for the chart. They carry some metadata about plotting
 
 Now you have created a Chart demonstrating the studies related to Gold demands in World market. The following code examples are for both XAML and CodeBehind.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demand Comparison of Gold" FontSize="16" Height="300" Width="500">
 

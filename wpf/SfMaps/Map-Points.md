@@ -19,7 +19,7 @@ The default appearance of the MapPoint can be customized by using the MapPointTe
 
 MapPointTemplate is a DataTemplate type, used to customize or override the default template of MapPoints.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -63,7 +63,7 @@ MapPointPopup is a popup, displayed when the point is moved on MapPoint. It show
 
 MapPointPopupTemplate is a DataTemplate used to expose the template for the MapPoint. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

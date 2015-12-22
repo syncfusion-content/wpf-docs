@@ -106,7 +106,7 @@ CalculatedMembers</td><td>
 
 Adding an OLAP report to OLAP Grid control in design time is described in the following code snippet:
 
-  {% highlight xml %}
+  {% highlight xaml %}
 
    
 

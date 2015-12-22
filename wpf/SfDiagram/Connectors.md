@@ -114,7 +114,7 @@ ConnectorGeometryStyle property is used to customize the style of the Connectors
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style TargetType="Path" x:Key="connectorstyle">
 
@@ -240,7 +240,7 @@ The following code example illustrates how to customize the Decorator Shape:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="decoratorstyle1" TargetType="Path">
 

@@ -17,7 +17,7 @@ You can bind the custom object to the DataContext property of the control, and t
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

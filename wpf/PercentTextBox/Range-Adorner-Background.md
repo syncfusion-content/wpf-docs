@@ -35,7 +35,7 @@ Color name</td></tr>
 We have to set the RangeAdornerBackground property either in XAML or the code file.
 
 {% tabs %}
-{% highlight xml %} RangeAdornerBackground="LightGreen"
+{% highlight xaml %} RangeAdornerBackground="LightGreen"
 {% endhighlight %}
 
 {% highlight c# %}control.RangeAdornerBackground = Brushes.LightGreen;

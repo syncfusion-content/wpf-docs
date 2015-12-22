@@ -41,7 +41,7 @@ To enable RTL support, the FlowDirection property of the OLAP Client control nee
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 
 
 

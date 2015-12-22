@@ -24,7 +24,7 @@ New User Interface support can be added to an application by using XAML or with 
 The following code example illustrates how to add the New User Interface support feature to an application through XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

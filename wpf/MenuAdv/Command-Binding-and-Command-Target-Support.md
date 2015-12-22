@@ -22,7 +22,7 @@ MenuAdv helps users handle any command that can be routed outside the boundaries
 To use the Command Binding support in an application users have to create a DelegateCommand class, which is obtained from the ICommand interface in the ViewModel sample class, which can be used to bind the command in the sample WPF application. The Command can be bound to MenuItemAdv by using the Command property and the target element can be bound to MenuItemAdv by using the CommandTarget property, as shown in the following code snippets.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <shared:MenuAdv x:Name="Menu">               

@@ -411,7 +411,7 @@ By default, the selection mode is set to Single mode. You can assign the selecti
 The following code example illustrates how to set a selection mode for DataGrid control.	
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -454,7 +454,7 @@ The following code example shows a DataGrid in row navigation mode.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -527,7 +527,7 @@ The following code example shows a DataGrid in Cell selection.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1566,7 +1566,7 @@ Paste Operation
 By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfDataGrid. The following code example shows how to copy one cell and paste it into all the selected cells by overriding PasteToCell method in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1669,7 +1669,7 @@ By default you can able to copy one row and paste it into another row. The follo
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1765,7 +1765,7 @@ public class CustomCopyPaste  : GridCutCopyPaste
 By default after pasting also SfDataGrid maintains the previously selected records as it is. When you want to select the pasted records after the Paste operation, then you can achieve your requirement by overriding the PasteToRows and PasteToRow methods in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. This code is applicable for SelectionUnit as Row.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1866,7 +1866,7 @@ public class CustomCopyPaste  : GridCutCopyPaste
 By default while pasting, it changes the values of the already existing records based on clipboard content. The following code example shows how to add the copied records as new rows in SfDataGrid by overriding the PasteToRows method in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2066,7 +2066,7 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

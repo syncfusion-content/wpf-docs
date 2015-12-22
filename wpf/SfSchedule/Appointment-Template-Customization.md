@@ -11,7 +11,7 @@ documentation: ug
 
 The default appearance of the Appointment can be customized by using the AppointmentTemplate property. The AppointmentTemplate is a ControlTemplate type, used to customize or override the default template of the Appointments.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <Schedule:SfSchedule>
 

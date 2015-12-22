@@ -16,7 +16,7 @@ This property is used in both TaskBar and TaskBarItems.
 Use the following code snippet to expand or collapse the TaskBar.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -337,7 +337,7 @@ The following steps take you though Cutomization on Validation error template.
 8. Add the following code example within your resources for customizing Error Tooltip template.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -497,7 +497,7 @@ The following steps take you though Cutomization on Validation error template.
 You can change above ControlTemplate codes to change the tooltip style. You can find your GridCell style here.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

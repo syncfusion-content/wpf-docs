@@ -15,7 +15,7 @@ Multiline support can be enabled by using the following code:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:DropDownButtonAdv SizeMode="Large" IsMultiLine="False"/>
 

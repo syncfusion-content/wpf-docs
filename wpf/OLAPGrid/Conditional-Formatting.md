@@ -24,7 +24,7 @@ Conditional Formatting can be used in Marketing scenarios, where you can easily 
 The following code snippets show how to create an OlapGrid and to add Conditional Formats.
 
 {% tabs %}
-  {% highlight xml %}
+  {% highlight xaml %}
 
     
 

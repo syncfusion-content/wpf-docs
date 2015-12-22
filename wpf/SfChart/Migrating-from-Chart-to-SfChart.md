@@ -21,7 +21,7 @@ The following code example illustrates xmlns namespace for Chart. You can includ
 
 ### Chart
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf)
 
@@ -30,7 +30,7 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 ### SfChart
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
@@ -48,7 +48,7 @@ Note: In SfChart, you can split the area into multiple plotting areas using RowD
 
 Following code example illustrates the initialization of Chart with ChartArea,
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart>
 
@@ -81,7 +81,7 @@ chart.Areas.Add(area);.
 Following code example illustrates the initialization of SfChart that is equivalent to the above code example.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart Header="ChartArea" AreaBackground="Red" AreaBorderBrush="Gray" AreaBorderThickness="5" SideBySideSeriesPlacement="True"  />
 {% endhighlight %}
@@ -202,7 +202,7 @@ The following code example illustrates the usage of Legend in Chart and SfChart.
 
 ### Chart
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -241,7 +241,7 @@ chart.Areas.Add(area)
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart>
 
@@ -355,7 +355,7 @@ Gets or sets the visibility for Legend icon symbol.</td></tr>
 
 The class design for Axis is different for both ChartArea and SfChart. In ChartArea, Axis is the instance of ChartAxis type and its type is mentioned in ValueType property as in the following code example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea.PrimaryAxis>
 
@@ -365,7 +365,7 @@ The class design for Axis is different for both ChartArea and SfChart. In ChartA
 {% endhighlight %} 
 In SfChart, Axis can be an instance of NumericalAxis, DateTimeAxis, CategoryAxis, LogarithmicAxis, TimeSpanAxis or DateTimeCategoryAxis. Class name represents the type of data it can plot. For example, NumericalAxis can plot numeric values and DateTimeAxis can plot DateTime values. Following code example illustrates this,
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -536,7 +536,7 @@ Gets or sets the zoom position value.</td></tr>
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:ChartArea>
 
@@ -652,7 +652,7 @@ area.PrimaryAxis = primaryAxis;
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:SfChart>
 
@@ -788,7 +788,7 @@ Following code example illustrates how to customize gridlines.
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:ChartArea.GridLineStroke>
 
@@ -823,7 +823,7 @@ ChartArea.SetGridLineStroke(primaryAxis, pen);
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:NumericalAxis.MajorGridLineStyle>
 
@@ -856,7 +856,7 @@ Like Axis, ChartSeries architecture is also different for Chart and SfChart. Ins
 
 ### Chart
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -955,7 +955,7 @@ area.Series.Add(lineseries);
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart>
 
@@ -1194,7 +1194,7 @@ The Adornments are same as Chart and you can define the Adornments inside the Se
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries>
 
@@ -1254,7 +1254,7 @@ lineseries.AdornmentsInfo = adornment;
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:LineSeries >
 
@@ -1390,7 +1390,7 @@ The InteractiveCursor is represented as ChartCrosshairBehavior and ChartTrackbal
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -1429,7 +1429,7 @@ area.InteractiveCursors.Add(incCursor);
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart>
 
@@ -1465,7 +1465,7 @@ The Zooming and Panning are achieved using the ChartZoomPanBehavior in SfChart a
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea EnableZoomOnScroll="True" ZoomAllAxes="True"chart:ChartZoomingToolkit.ZoomingToolkitVisibility="Visible"EnableMouseDragZooming="True" /> 
 {% endhighlight %}
@@ -1487,7 +1487,7 @@ ChartZoomingToolkit.SetZoomingToolkitVisibility(area, Visibility.Visible);
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart>
 
@@ -1531,7 +1531,7 @@ The following code example demonstrates the usage of StripLines in Chart and SfC
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartAxis.StripLines>
 
@@ -1579,7 +1579,7 @@ area.SecondaryAxis.StripLines.Add(stripline);
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:NumericalAxis.StripLines>
 
@@ -1708,7 +1708,7 @@ Following code example illustrates the WatermarkAPI comparison,
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -1763,7 +1763,7 @@ Text = "Chart", Foreground = Brushes.Gray, FontSize = 60d
 ### SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart>
 
@@ -1819,7 +1819,7 @@ Chart having following Annotations
 * Chart Annotation
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart.AnnotationLabels>
 
@@ -1855,7 +1855,7 @@ chart.AnnotationLabels.Add(chartannotation);
 * Series Annotation
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries.Annotations>
 
@@ -1904,7 +1904,7 @@ In SfChart, you can position Annotations in pixel unit or axis. Units are specif
 * Image Annotation
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -1946,7 +1946,7 @@ chart.Annotations.Add(imgAnnotation);
 * Line Annotation
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -1985,7 +1985,7 @@ chart.Annotations.Add(lineAnnotation);
 
 * Ellipse Annotation 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -2023,7 +2023,7 @@ chart.Annotations.Add(ellipseAnnotation);
 
 * Rectangle Annotation
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -2062,7 +2062,7 @@ chart.Annotations.Add(rectAnnotation);
 * Vertical Line Annotation 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -2096,7 +2096,7 @@ chart.Annotations.Add(verAnnotation);
 * Horizontal Line Annotation  
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -2132,7 +2132,7 @@ chart.Annotations.Add(horAnnotation);
 * Text Annotation 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>              
 
@@ -2236,7 +2236,7 @@ In Chart, you can set the type of the indicator where as in SfChart, indicator t
 ### Chart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries.Indicators>
 
@@ -2290,7 +2290,7 @@ columnSeries.Indicators = indiCollection;
 ##SfChart
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.TechnicalIndicators>
 
@@ -2343,7 +2343,7 @@ The following code example illustrates the API’s for both charts,
 ## SyncChartAreas
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:Chart>
 
@@ -2463,7 +2463,7 @@ areas.Areas.Add(area2);
 ##Column Row Definition
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:SfChart>
 
 	<syncfusion:SfChart.RowDefinitions>
@@ -2616,7 +2616,7 @@ SaveFileDialog sfd = new SaveFileDialog();
 
 ### Chart
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart x:Name="chart"/>
 

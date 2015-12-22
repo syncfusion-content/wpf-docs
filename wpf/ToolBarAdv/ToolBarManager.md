@@ -17,7 +17,7 @@ The following code illustrates how to place the ToolBarAdv at the top:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

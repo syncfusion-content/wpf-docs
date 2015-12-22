@@ -16,7 +16,7 @@ The following code example could be used to make a series as Indexed.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartSeries IsIndexed="True" />
 
@@ -102,7 +102,7 @@ N> The DesiredIntervalsCount will not be taken into account when the interval is
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -187,7 +187,7 @@ The frequency at which the MinimumDateTimeInterval should be rendered. Specified
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart>
@@ -252,7 +252,7 @@ The following code example illustrates how to set the Range Calculation mode for
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -348,7 +348,7 @@ Open the Sample Browser and select the following,
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
   <syncfusion:ChartAxis x:Name="YAxis" IsAutoSetRange="True" RangeCalculationMode="Default" RangePadding="Normal" IsSetDataValueRange="True"/>
 {% endhighlight  %}
 {% highlight c# %}
@@ -373,7 +373,7 @@ The following lines of code can be used to hide the grid lines of an axis.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -422,7 +422,7 @@ Grid lines style can be changed using the ChartArea.GridLineStroke attached prop
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:ChartArea Background="LightGray" GridBackground="White">
@@ -502,7 +502,7 @@ ChartArea.SetGridLineStroke(Chart1.Areas[0].SecondaryAxis, pen1);
 The number of small ticks to be drawn per interval can be controlled using the SmallTicksPerInterval property. The following lines of code can be used to change the number of small ticks to draw per interval.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Window.Resources>
@@ -550,7 +550,7 @@ Chart1.Areas[0].SecondaryAxis.SmallTicksPerInterval = 6;
 The ChartAxis line and tick lines can be customized using the LineStroke and TickLineStroke properties as follows.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -715,7 +715,7 @@ A Brush for the text background.</td></tr>
 ### Code Example
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart>
@@ -855,7 +855,7 @@ Custom Origin Lines can be drawn for the X and Y axis by using the ChartArea.Sho
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartArea GridBackground="White">
 
@@ -952,7 +952,7 @@ gets or sets the length of the axis small tick</td></tr>
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea.PrimaryAxis>
 
@@ -1036,7 +1036,7 @@ You can customize the Label position and TickLines along with the OrginAxis usin
 The following code illustrates this:
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea.SecondaryAxis >
 
@@ -1092,7 +1092,7 @@ Orientation</td><td>
 gets / sets the orientation of the axis.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <syncfusion:ChartArea Name="area">                    
 
@@ -1134,7 +1134,7 @@ Indicates whether the axis should be reversed. When reversed, the axis will rend
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -1185,7 +1185,7 @@ OpposedPosition</td><td>
 Gets / sets a value indicating whether axis should be in opposed position.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ChartArea Name="area">                    
@@ -1213,7 +1213,7 @@ The following image illustrates Chart with Opposed Axis.
 Chart is capable of rendering multiple axes in the same plot. Different series can be plotted against different axes as follows.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart Name="Chart1">
@@ -1272,7 +1272,7 @@ To add axis range selction, set the EnableRangeSelection to True. The following 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
   <syncfusion:ChartArea Name="area" EnableRangeSelection="True" LineStroke="Maroon" SelectionStroke="LightPink" />
@@ -1375,7 +1375,7 @@ Essential Chart WPF is enhanced with minor grid lines and ticks when the axis is
 Add Show Minor Grid Lines, by using the following code. 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
  
 
 <syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10">
@@ -1478,7 +1478,7 @@ NA</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:ChartAxis SmallTicksPerInterval="20" IsLogarithmic="True" >
 
@@ -1510,7 +1510,7 @@ Gets/sets the header alignment. The options included are as follows.FarCenterNea
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea Name="area">
 
@@ -1559,7 +1559,7 @@ Segmented strip lines are created when the vertical and horizontal strip lines i
 The following code examples illustrate the creation of Segmented Strip Line at required locations.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ChartAxis.StripLines>
@@ -1743,7 +1743,7 @@ Essential Chart for WPF enables users to retain the axis position of the primary
 ### Adding Support for Retaining Axis Position 
 
 Set the IsRetainAxisPosition propertyto True to add axesin the order they are added to the chart area. The following code illustrates this.  
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea IsRetainAxisPosition="True">
 {% endhighlight  %}
@@ -1861,7 +1861,7 @@ To access the chart axis improvement demo:
 ### Adding Axis Improvement properties to an Application 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
             <syncfusion:ChartAxis HeaderPosition="Cross"                      LabelHeight="40" LabelWidth="120"                                            LabelsPrefix="{StaticResource yPrefix}"                       LabelsPostfix="{StaticResource yPostfix}"                      LabelHorizontalAlignment="Left" LabelVerticalAlignment="Top"                      EdgeLabelsDrawingMode="Fit">            </syncfusion:ChartAxis>
 {% endhighlight %}
 {% highlight c# %}
@@ -1960,7 +1960,7 @@ The following code example shows how to enable smart axis labels:
 
   Chart1.PrimaryAxis=axis;	
 {% endhighlight  %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2025,7 +2025,7 @@ For placing axis label and series segment in between Ticklines do the following:
 The following code example illustrates the usage of placing axis label and series segment between the Ticklines
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart>

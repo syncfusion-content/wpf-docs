@@ -311,7 +311,7 @@ public class OrderInfo
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -450,7 +450,7 @@ public class TestData : List<dynamic>
 The following code example illustrates binding dynamic object data to DataGrid.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -645,7 +645,7 @@ To create the ClientApplication, you can add a second project, add a service ref
 16.Set as Startup project.   
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1110,7 +1110,7 @@ This section explains you how to bind data and save back to Database using Entit
    To Create View Model
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1158,7 +1158,7 @@ This section explains you how to bind data and save back to Database using Entit
 Add required assemblies to your WPF application to use SfDataGrid.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

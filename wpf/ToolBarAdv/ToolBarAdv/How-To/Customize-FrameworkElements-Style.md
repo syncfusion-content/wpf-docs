@@ -15,7 +15,7 @@ Following code snippet shows the resource dictionary containing FrameworkElement
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

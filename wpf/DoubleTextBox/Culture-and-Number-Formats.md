@@ -15,7 +15,7 @@ DoubleTextBox provides globalization support through the Culture property.
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                  
 Culture="en-US" Value="1234567"/> 
 {% endhighlight %} 
@@ -38,7 +38,7 @@ Culture="en-US" Value="1234567"/>
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"           
 Culture="bs-Latn" Value="1234567"/> 
 {% endhighlight %} 
@@ -69,7 +69,7 @@ You can customize the Number Format either by using the NumberFormat property or
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
  <syncfusion:DoubleTextBox x:Name="doubleTextBox" 
  Height="25" 
  Width="200"             
@@ -99,7 +99,7 @@ NumberDecimalDigits = 4, NumberDecimalSeparator = "*" };
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200"                 
 Value="123456789012345" NumberGroupSeparator="/"                  
 NumberDecimalDigits="4" NumberDecimalSeparator="*"/> 

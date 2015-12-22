@@ -16,7 +16,7 @@ Scale labels associate a numeric value with major scale tick marks. The label s
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -84,7 +84,7 @@ The NumericScaleType property allows you to set the type of label. The following
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -150,7 +150,7 @@ this.Grid.Children.Add(circularGauge);
 ## Number of Fraction Digits
 
 The NoOfFractionalDigits property is used to set the number of fractional digits to be displayed in the scale labels.
-{% highlight xml %}
+{% highlight xaml %}
 
 	<syncfusion:SfCircularGauge >
 
@@ -217,7 +217,7 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 This property allows you to set the postfix values to the scale labels. The label postfixes are visible even if the EnableSmartLabels property is set to false. 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfCircularGauge >
 
@@ -286,7 +286,7 @@ this.Grid.Children.Add(circularGauge);
 This property allows you to set the prefix values for the scale labels. The label prefixes are visible even if the EnableSmartLabels property is set to false.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -362,7 +362,7 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

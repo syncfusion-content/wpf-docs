@@ -14,7 +14,7 @@ documentation: ug
 
 If through **XAML**, please refer the below code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">

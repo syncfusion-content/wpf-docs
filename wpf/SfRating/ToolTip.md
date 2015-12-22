@@ -13,7 +13,7 @@ The tooltip will display the value of the Rating control. The tooltip can be ena
 
 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 <editors:SfRating ItemsCount="5" Value="2" ShowToolTip="True"/>
 

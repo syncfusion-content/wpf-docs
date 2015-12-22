@@ -158,7 +158,7 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
    
 25.Set the ReportPath and the ProcessingMode as local in the Report Viewer.
 
-{% highlight xml %}
+{% highlight xaml %}
 <Window x:Class="WpfApplication15.MainWindow"
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

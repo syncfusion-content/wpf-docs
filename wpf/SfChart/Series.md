@@ -53,7 +53,7 @@ LineSeries displays a set of points connected by a straight line. Line Charts jo
 The following code example explains how to create a simple LineSeries using given data.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -148,7 +148,7 @@ ColumnSeries is rendered by a collection of rectangles of varying heights, align
 
 In ColumnSeries, categories are represented along PrimaryAxis and values are represented along SecondaryAxis. You can also set the ChartColorPalette for the series using the Palette property. ColumnSeries appearance can also be customized using CustomTemplate property.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -186,7 +186,7 @@ In ColumnSeries, categories are represented along PrimaryAxis and values are rep
 
 BarSeries is rendered using a collection of rectangles of varying heights, aligned horizontally. BarSeries is used to represent data that occurs over time and for showing categorical information, since the categories can be displayed horizontally. The categories are represented along PrimaryAxis and values are represented along SecondaryAxis.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:BarSeries Interior="LightBlue"   x:Name="series1"  Stroke="Red" StrokeThickness="3"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -200,7 +200,7 @@ BarSeries is rendered using a collection of rectangles of varying heights, align
 
 AreaSeries is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color. AreaSeries focuses on the magnitude of change over time and can be used to draw attention to the total value across a trend. Values are represented in SecondaryAxis and categories are represented in PrimaryAxis.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -216,7 +216,7 @@ AreaSeries is rendered using a collection of line segments connected to form a c
 
 SplineSeries resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves. The SplineSeries is often used for data modeling, by taking a limited set of known data and approximating the intervene values. In SplineSeries, data is taken as category data and is distributed evenly along x-axis.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
     <syncfusion:SplineSeries    x:Name="series1"  Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
@@ -231,7 +231,7 @@ SplineSeries resembles line series, but the difference between them is that inst
 
 ScatterSeries is a type of mathematical diagram that uses [Cartesian coordinates](http://en.wikipedia.org/wiki/Cartesian_coordinate_system) to display values for two variables for a set of data, with each point being represented by an ellipse.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -270,7 +270,7 @@ Size</td><td>
 Gets or sets the suggested size of the bubble.</td></tr>
 </table>
  
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:BubbleSeries   x:Name="series1"  MinimumRadius="20" MaximumRadius="40" Size="Value"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/> 
 
@@ -284,7 +284,7 @@ Gets or sets the suggested size of the bubble.</td></tr>
 
 SplineAreaSeries connects a series of data points using smooth Bezier line curves, with the underlying areas filled. The Bezier curve takes a set of data points and interpolates the intermediate values. The SplineAreaSeries fills the area between the Bezier curve and axis line.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SplineAreaSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -299,7 +299,7 @@ SplineAreaSeries connects a series of data points using smooth Bezier line curve
 
 StepAreaSeries is similar to AreaSeries but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:StepAreaSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -313,7 +313,7 @@ StepAreaSeries is similar to AreaSeries but it does not use the shortest distanc
 
 StepLineSeries is similar to LineSeries, but it does not use the shortest distance to connect two data points. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series, forming a step-like progression.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:StepLineSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>  
 
@@ -327,7 +327,7 @@ StepLineSeries is similar to LineSeries, but it does not use the shortest distan
 
 The FastLineSeries is a special kind of line series that can render a collection with a huge number of datapoints. A FastLineSeries can be rendered using polyline segment. FastLineSeries boost performance of rendering of LineSeries. FastLineSeries is used in a scenario where a number of points are to be rendered in a short span of time.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:FastLineSeries   x:Name="series1"   StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -358,7 +358,7 @@ Gets or sets the string that is used to group the stacking series.</td></tr>
 
 StackingColumnSeries resembles multiple types of series of the ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. StackingColumnSeries shows the relationship of individual items to the whole and used for more complex comparisons of data.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -408,7 +408,7 @@ StackingColumnSeries resembles multiple types of series of the ColumnSeries. Eac
 
 StackingColumn100Series resembles StackingColumnSeries. StackingColumn100Series displays multiple data series, stacked as columns, and the cumulative portion of each stacked element always comes to a total of 100%. StackingColumn100Series is used when the relationship between the stacked elements are more important than the amounts. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -430,7 +430,7 @@ StackingColumn100Series resembles StackingColumnSeries. StackingColumn100Series 
 
 StackingBarSeries is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple BarSeries. StackingBarSeries is used to show combined values for each category.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:StackingBarSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -448,7 +448,7 @@ StackingBarSeries is a multiple series type of BarSeries. Each BarSeries is then
 
 StackingBar100Series resembles a StackingBarSeries. StackingBar100Series displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. StackingBar100Series is used when the combined values in categories is more important than amounts. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:StackingBar100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -464,7 +464,7 @@ StackingBar100Series resembles a StackingBarSeries. StackingBar100Series display
 
 StackingAreaSeries is representing areas stacked vertically one above the other. StackingAreaSeries is preferred in the form of multiple series type of AreaSeries. When there is only one series, then it is a simple AreaSeries. StackingAreaSeries is used when the fluctuations over a period of time in all series to be are visible at the same time.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:StackingAreaSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
@@ -482,7 +482,7 @@ StackingAreaSeries is representing areas stacked vertically one above the other.
 
 StackingArea100Series is similar to StackingAreaSeries, but this series displays multiple data series as stacked areas, and the cumulative portion of each stacked element always totals 100%. StackingArea100Series displays the trend of the percentage that each value contributes over time or other category data.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -502,7 +502,7 @@ StackingArea100Series is similar to StackingAreaSeries, but this series displays
 
 FastStackingColumnSeries is similar to StackingColumnSeries with y-coordinate values stacked over one another. FastStackingColumnSeries allows data to be visualized as a sum of series parts. FastStackingColumnSeries loads faster and provides better performance. FastStackingColumnSeries is used in real-time charts to visualize more number of points.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -568,7 +568,7 @@ Gets or sets the distance between the actual center point of the chart and the e
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -601,7 +601,7 @@ Gets or sets the distance between the actual center point of the chart and the e
 
 By having custom StartAngle and EndAngle, you can draw pie series in different shapes like semicircular or quarter circular series.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart Name="chart" >
 
@@ -654,7 +654,7 @@ DoughnutCoefficient</td><td>
 Gets or sets the double value that is used to control the DoughnutSeries rendering size.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -687,7 +687,7 @@ Gets or sets the double value that is used to control the DoughnutSeries renderi
 
 By having custom StartAngle and EndAngle, you can draw doughnut series in different shapes like semicircular or quarter circular series.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart Name="chart" >
 
@@ -748,7 +748,7 @@ Represents the mode for the PyramidSeries.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -792,7 +792,7 @@ Represents the mode for the FunnelSeries.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:FunnelSeries  x:Name="series1"   FunnelMode="ValueIsHeight" MinHeight="10"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
@@ -828,7 +828,7 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:RangeColumnSeries x:Name="series1"  Low="Value"   XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
@@ -873,7 +873,7 @@ Gets or sets the brush that represents the interior color for the low value data
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:RangeAreaSeries x:Name="series1"  Low="Value"   LowValueInterior="Blue"  XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
@@ -910,7 +910,7 @@ Gets or sets the ChartSeriesDrawType that describes the series rendering type is
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -951,7 +951,7 @@ Gets or sets the ChartSeriesDrawType that describes the series rendering type as
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:PolarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
@@ -988,7 +988,7 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1037,7 +1037,7 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:HiLoOpenCloseSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
@@ -1090,7 +1090,7 @@ Represents that brush color for the segments that show stock price has gone down
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CandleSeries x:Name="series1" BearFillColor="Green" BullFillColor="Red"   XBindingPath="CompanyName"High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
@@ -1127,7 +1127,7 @@ Gets or sets a collection of Double values that indicates the pattern of dashes 
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1146,7 +1146,7 @@ Gets or sets a collection of Double values that indicates the pattern of dashes 
 
 FastColumnBitmapSeries displays a series of column segments rendered using WritableBitmap. The advantage of FastColumnBitmapSeries renders millions of data points in a fraction of seconds. FastColumnBitmapSeries is used to boost up the performance of the ColumnSeries.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:FastColumnBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
@@ -1181,7 +1181,7 @@ Gets or sets the suggested height of the FastScatterBitmapSeries.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1215,7 +1215,7 @@ Gets or sets the bool that is used to avoid jagged patterns in the line.</td></t
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:FastStepLineBitmapSeries EnableAntiAliasing="True"   ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
@@ -1232,7 +1232,7 @@ Gets or sets the bool that is used to avoid jagged patterns in the line.</td></t
 
 FastBarBitmapSeries displays a series of bar segments rendered using WritableBitmap horizontally. The advantage of FastBarBitmapSeries is that it renders a million data points in a fraction of seconds. FastBarBitmapSeries is used to boost up the performance of the series.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1270,7 +1270,7 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:FastHiLoBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High"  Low="Low" >
@@ -1315,7 +1315,7 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close">
 
@@ -1367,7 +1367,7 @@ Represents that brush color for the segments that shows stock price has gone dow
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1408,7 +1408,7 @@ Gets or sets bool that represents a value whether to display normal distribution
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
  <syncfusion:HistogramSeries ShowNormalDistributionCurve="True"
@@ -1488,7 +1488,7 @@ The following screenshot is an example of a Fixed value type.
 
 ![C:/Users/rachel/Desktop/wpf/sshot-60.png](Series_images/Series_img41.png)
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal"  HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"    VerticalErrorValue="50" HorizontalErrorValue="1" 
@@ -1499,7 +1499,7 @@ The following screenshot is an example of a Fixed value type.
 
 Percentage means the error bar is drawn with the percentage value of the error value to the datapoint.
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <syncfusion:ErrorBarSeries Name="Errorseries" ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal" HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue" VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Both" Type="Percentage" />
 {% endhighlight %}
@@ -1512,7 +1512,7 @@ The following screenshot is an example of Percentage type.
 ### Standard Deviation
 
 Standard Deviation means that each end of the error bar is placed at a distance N times the standard deviation in user scale units from the computed value.
-{% highlight xml %}
+{% highlight xaml %}
  <syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal" HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"   VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Both" Type="StandardDeviation" />
 
 {% endhighlight %}
@@ -1526,7 +1526,7 @@ The following screenshot is an example of Standard Deviation Error Bars.
 ### Standard Errors
 
 Standard Errors mean that the placement of each end of the error bar corresponds to the standard error of the data point.
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal"  HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"    VerticalErrorValue="50" HorizontalErrorValue="1" 
 
 Mode="Both" Type="StandardErrors" >

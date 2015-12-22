@@ -17,7 +17,7 @@ By setting the MajorTickStroke and MinorTickStroke, the stroke of the major tick
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -101,7 +101,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

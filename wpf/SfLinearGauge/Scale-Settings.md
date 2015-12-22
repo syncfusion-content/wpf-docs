@@ -17,7 +17,7 @@ The range of the main scale can be mentioned by Minimum and Maximum of the linea
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

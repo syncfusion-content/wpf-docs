@@ -37,7 +37,7 @@ ChartAreaStyleLegendStyleSeriesStylePrimaryAxisStyleNote: Type - Style</td></tr>
 ### Customizing Chart Style
 
 The styles for a chart area, series, legend, and axis can be customized by using the following code.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:Chart x:Name="Chart1" ChartVisualStyle="ChocolateBlend">
@@ -78,7 +78,7 @@ When the code runs, the following output displays.
 ##Chart Skins
 
 Essential Chart for WPF provides a number of built-in skins that delivers the chart with appealing look and feel with just one property, the VisualStyle property of the class SkinStorage from the Shared.WPF assembly. In addition for the skins getting applied to the window and Window title Bar, the skins will also be applied to all parts of the chart such as Chart Area and Chart Legend.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -262,7 +262,7 @@ This method is called when the user starts animation by using the options specif
 ### Enabling and Customizing Chart Animation
 
 The chart animation can be enabled by setting EnableAnimation property to _true_.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -15,7 +15,7 @@ Following code illustrates how to hide the gripper:
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -17,7 +17,7 @@ SfMultiColumnDropDownControl allows you to filter the item that is bound to the 
 The following code example illustrates how to enable IncrementalFiltering in SfMultiColumnDropDownControl,
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

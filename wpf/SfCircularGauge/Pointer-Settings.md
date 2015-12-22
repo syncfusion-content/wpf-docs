@@ -24,7 +24,7 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -101,7 +101,7 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
@@ -200,7 +200,7 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -277,7 +277,7 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 	<syncfusion:SfCircularGauge x:Name="gauge">
@@ -345,7 +345,7 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -417,7 +417,7 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -491,7 +491,7 @@ The SymbolPointerTemplate is a DataTemplate type, used to customize or override 
 ### Code Example
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

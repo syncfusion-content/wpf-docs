@@ -13,7 +13,7 @@ The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Us
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -84,7 +84,7 @@ The following screen shot shows the TaskBar control with TaskBar Item.
 To add text to the TaskBar Item, use the below code
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

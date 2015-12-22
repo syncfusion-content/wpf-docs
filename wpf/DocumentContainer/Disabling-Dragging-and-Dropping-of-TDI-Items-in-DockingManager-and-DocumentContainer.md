@@ -14,7 +14,7 @@ By default, TDI items in DockingManager and DocumentContainer are can be dragged
 
 
 {% tabs %}
-{% highlight xml %}        
+{% highlight xaml %}        
 <syncfusion:DockingManager Name="dockingmanager1" 
 UseDocumentContainer="True" 
 IsTDIDragDropEnabled="False">          
@@ -35,7 +35,7 @@ This property is also applicable to DocumentContainer, as shown in the following
 
 
 {% tabs %}
-{% highlight xml %}      
+{% highlight xaml %}      
   <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" IsTDIDragDropEnabled="False" >      
   <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>     
   <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/>   

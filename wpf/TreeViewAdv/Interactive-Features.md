@@ -19,7 +19,7 @@ The TreeviewItem is added to a TreeViewAdv control either by using XAML or Proce
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding TreeViewAdv -->
@@ -78,7 +78,7 @@ The following code example can be used to set this property.
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -143,7 +143,7 @@ Here are the code snippets to select multiple items in the TreeViewAdv control u
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -189,7 +189,7 @@ The following code snippet sets a collection used to generate the content of the
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -323,7 +323,7 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding TreeViewAdv With collapse and expand image -->
@@ -393,7 +393,7 @@ User can also set the height and width of the node images in a TreeViewAdv contr
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -478,7 +478,7 @@ You can add images to the left and right corner of the header of the TreeViewIte
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -532,7 +532,7 @@ You can add images to the left and right corner of the header of the TreeViewIte
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -563,7 +563,7 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -638,7 +638,7 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -713,7 +713,7 @@ You can expand or collapse the TreeViewAdv by enabling or disabling the IsExpand
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -776,7 +776,7 @@ The Expand or Collapse operation in a TreeViewAdv leads to an animated action. T
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -849,7 +849,7 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -917,7 +917,7 @@ Use the following code to set this property.
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -990,7 +990,7 @@ You can enable animation, while the tree nodes are expanded and collapsed. This 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1075,7 +1075,7 @@ The flow direction for the TreeViewAdv is set through the FlowDirection property
 
 {%tabs%}
 
- {% highlight xml %}
+ {% highlight xaml %}
 
 
 
@@ -1151,7 +1151,7 @@ TreeViewAdv control now provides support to reorder the columns in the TreeViewA
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1211,7 +1211,7 @@ You can show a node to be selected, at runtime, when the TreeViewAdv control is 
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1285,7 +1285,7 @@ TreeView control can be created with multiple columns by setting the MultiColumn
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1360,7 +1360,7 @@ treeViewAdv.MultiColumnEnable = true;
 You can set headers for individual columns using the Columns property. All the columns are defined in TreeViewColumnCollections.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding TreeViewAdv with Enabling multiple column -->
@@ -1442,7 +1442,7 @@ You can set headers for individual columns using the Columns property. All the c
 
 The width property of TreeViewColumn has changed from a double type to a GridLength type that can be set to the Auto or * values. When the column width is set as Auto, the desired size or minimum size will be set as the width of the column. When the width is set as *, the remaining space that is available in the window will be set as the width of the column. Similarly, the value can be set as 0.3*, 2*,128*, etc. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
   <!-- Adding TreeViewAdv with Enabling multiple column -->
 
@@ -1520,7 +1520,7 @@ Use the following code to enable this property.
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1585,7 +1585,7 @@ You can easily edit the tree node items at runtime, by enabling IsEditable prope
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1660,7 +1660,7 @@ You can also set a node to be in edit mode when the tree view loads. This is don
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1806,7 +1806,7 @@ Use the following code snippet to define the SelectedTreeItem binding in TreeVie
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
                 <sync:TreeViewAdv  ItemsSource="{Binding ItemsCollection}" SelectedTreeItem="{Binding Path=SelectedItem,Mode=TwoWay}" AllowMultiSelect="False" x:Name="tree" Margin="36,12,121,76" >
 
@@ -1844,7 +1844,7 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1870,7 +1870,7 @@ items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Normal;
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2061,7 +2061,7 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
@@ -2140,7 +2140,7 @@ Loading Items"/>
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
@@ -2244,7 +2244,7 @@ Double</td></tr>
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <syncfusion:TreeViewAdv x:Name="TreeView"
 
@@ -2254,7 +2254,7 @@ Double</td></tr>
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
        TreeViewAdv TreeView = new TreeViewAdv();
 

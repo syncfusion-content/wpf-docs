@@ -34,7 +34,7 @@ The following code example illustrates the Vertical Chart feature.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart   Height="500" Width="650">
 

@@ -23,7 +23,7 @@ The rating item will be filled completely based on the value of the Rating contr
 
 In the following example, 1.3 has been set for the value. The rating item has been filled completely for standard precision.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -45,7 +45,7 @@ The rating item will be filled partially based on the value of the Rating contro
 
 In this case, 0.3 has been set for the value. The rating item was filled partially.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -65,7 +65,7 @@ The rating item will be filled exactly based on the value of the Rating control 
 
 In this case, 1.3 has been set for the Value. Rating item was filled to reflect the exact value.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 

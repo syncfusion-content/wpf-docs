@@ -35,7 +35,7 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -83,7 +83,7 @@ this.Grid.Children.Add(circularGauge);
 ## Gauge Header as Text
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -186,7 +186,7 @@ this.Grid.Children.Add(circularGauge);
 ## Gauge Header as UI Element
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -13,7 +13,7 @@ Using the Header property, user can set the header for the Document Container el
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

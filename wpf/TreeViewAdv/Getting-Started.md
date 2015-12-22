@@ -107,7 +107,7 @@ TreeViewAdv can be created in XAML as follows:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TreeViewAdv>
 
@@ -376,7 +376,7 @@ public class ViewModel
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.DataContext>
 
@@ -390,7 +390,7 @@ public class ViewModel
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}">
 
@@ -433,7 +433,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 1.Create the xml file with the following details and name it as Data.xml:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Products>
 
@@ -497,7 +497,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Products"/> 
 
@@ -509,7 +509,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TreeViewAdv	ItemsSource="{Binding Source={StaticResource 			xmlSource}, XPath=Product}" >
 
@@ -618,7 +618,7 @@ The GetEmployees() method given in the above code snippet returns the list of Em
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TreeViewAdv
 
@@ -861,7 +861,7 @@ TreeViewAdv control is created by using either XAML or C# code. Use the below co
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding TreeViewAdv -->

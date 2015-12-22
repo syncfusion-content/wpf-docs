@@ -53,7 +53,7 @@ To access UI Filtering, you can enable it. UI Filtering is enabled or disabled b
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -221,7 +221,7 @@ By default, FilterMode is set to Both.By setting the FilterMode property as Chec
 The following code example shows how to disable the advanced filtering option.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -318,7 +318,7 @@ N> Null and NotNull options are available only when AllowBlankFilter is set to �
 AllowBlankFilters propertyallows you to enable or disable the visibility of null values in the filter element list. Blank text is shown for the null values when it is enabled and the null values are not taken into consideration when it is disabled.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -353,7 +353,7 @@ DataGrid with Blank Filter
 ImmediateUpdateColumnFilter enables or disables the immediate update of the column filters. When selecting or clearing the check box in the filter element list view using CheckboxFilter, the filter is updated immediately. In AdavncedFilter type, the column filters are updated when Filter type combo box or filter value or radio button state is changed. In this case, the OK and Cancel buttons are unavailable and the Select All option is not reflected in the filter updates.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -531,7 +531,7 @@ It is customized using the properties provided in the GridFilterControl. The fol
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -593,7 +593,7 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -895,7 +895,7 @@ You can edit the FilterToggleButton style in blend. You can see Filtered and UnF
 You can add the following code example within Filtered Layer.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -916,7 +916,7 @@ You can add the following code example within Filtered Layer.
 Add the following code example within UnFiltered Layer.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -935,7 +935,7 @@ Add the following code example within UnFiltered Layer.
 Now bind this PathFillColor to PART_FilterToggleButtonIndicator.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -958,7 +958,7 @@ When you apply above style to FilterToggleButton, FilterIcon changes from Defaul
 You can improve the filter pop-up opening time by setting CanGenerateUniqueItems property value to ‘False’. A textbox is loaded instead of AdvancedFilterComboBox that allows you to manually enter text for filtering. This increases GridFilterControl’s loading performance.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -977,7 +977,7 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 By setting the FilterMode property as CheckboxFilter in GridFilterControl style, you can disable the advanced filtering option. This loads the CheckboxFilter only in GridFilterControl.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -1022,7 +1022,7 @@ When you use the Text Filters for the column that has number or date value as un
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

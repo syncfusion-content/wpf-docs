@@ -32,7 +32,7 @@ The SplitButtonAdv control is available in the following assembly:
 The following code explains how to declare a SplitButtonAdv control using XAML:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv Label="Hello World"/>
 
@@ -74,7 +74,7 @@ Use the following code snippet to set the SizeMode to Small:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Small" Label="Hello World"/>
 
@@ -105,7 +105,7 @@ Use the following code snippet to set the SizeMode to Normal:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Normal" Label="Hello World"/>
 
@@ -135,7 +135,7 @@ Use the following code snippet to set the SizeMode to Large:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Large" Label="Hello World"/>
 
@@ -170,7 +170,7 @@ The SmallIcon property can be set as follows:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
 
@@ -198,7 +198,7 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
 
@@ -226,7 +226,7 @@ The LargeIcon property can be set as follows:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
 
@@ -259,7 +259,7 @@ The DropDownMenuGroup acts as a container for SplitButtonAdv, which provides cus
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 

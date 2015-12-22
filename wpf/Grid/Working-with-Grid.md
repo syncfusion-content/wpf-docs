@@ -1011,7 +1011,7 @@ N> You can also provide numeric values for *, where * can be preceded by any dou
 
 The following code illustrates how to set the Width property of GridDataVisibleColumn.
 
-{% highlight xml %}
+{% highlight xaml %}
 Width Value set to Star:
 
 <syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/>

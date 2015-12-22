@@ -17,7 +17,7 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
 
 ### Code Example
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -103,7 +103,7 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -208,7 +208,7 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 ### Code Example
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

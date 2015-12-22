@@ -22,7 +22,7 @@ Using the BalloonTipHeaderVisibility property, user can collapse or show the hea
 The following code snippet is used to set this property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!--BalloonTipHeaderVisibility="Visible" -->
@@ -61,7 +61,7 @@ notifyIcon.BalloonTipHeaderVisibility = Visibility.Collapsed;
 BalloonTipText property is used to set the text that should be displayed in the Notify icon. BalloonTipTitle is used to set the title for NotifyIcon. The following code snippet is used to set these properties.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Virus Scan has been 
@@ -99,7 +99,7 @@ You can display the following five different icons in the NotifyIcon control.
 The following code snippet is used to set this property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- BalloonTipIcon="Warning" -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
@@ -140,7 +140,7 @@ NotifyIcon display time is set by using the property called ShowBalloonTipTime. 
 The following code snippet is used to set these properties.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- For Fade -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
@@ -177,7 +177,7 @@ notifyIcon.HideBalloonTipTime = 1000;
 The position where the NotifyIcon is to be displayed is specified using the property called BalloonTipLocation. To set this property, refer the below code.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipLocation="500,500" BalloonTipText="Custom Notify 
 Icon is Available"BalloonTipTitle="Default NotifyIcon" 
@@ -203,7 +203,7 @@ NotifyIcon can take the following three different shapes.
 The shape for the NotifyIcon is set by using the BalloonTipShape property. The following code snippet is used to change the Shape of the NotifyIcon control.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- Rectangle Shape -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 

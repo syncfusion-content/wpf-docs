@@ -28,7 +28,7 @@ The Appearance of the AutoComplete control can be changed using the VisualStyle 
 The following code example illustrates how different visual styles can be applied to the control.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:AutoComplete Height="25" Width="200" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/>

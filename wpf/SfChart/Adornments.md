@@ -33,7 +33,7 @@ Depending upon the requirement, adornments can be positioned in three ways.
 
 The following code example explains the positioning of adornments in the Chart Segment.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -147,7 +147,7 @@ Gets or sets the DataTemplate value that represents the template for the adornme
 
 The following code explains the customization of adornments.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -241,7 +241,7 @@ Gets or sets the double value that represents the rotation angle for the connect
 
 The following code explains how to add connector line to the adornments.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -339,7 +339,7 @@ Gets or sets the boolean value that represents a value whether to set the series
 
 Segment label is positioned outside the circular chart with an extended connector line. The following code example illustrates how to set SmartLabels for OutsideExtended position with Bezier type connector line.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:PieSeries
 
@@ -375,7 +375,7 @@ EnableSmartLabels="True">
 
 Segment label is positioned outside the circular chart. The following code example shows how to set label position as Outside.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:PieSeries
 
@@ -411,7 +411,7 @@ EnableSmartLabels="True">
 
 Segment label is positioned inside the circular chart. The following code illustrates how to set the smart labels position to Inside.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:PieSeries
 
@@ -449,7 +449,7 @@ This property is used to define the type of connector line that is to be drawn. 
 
 The following code example and screenshot demonstrate the usage of UseSeriesPalette property.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 	<syncfusion:PieSeries
 
@@ -533,7 +533,7 @@ Gets or sets the DataTemplate that represents the custom shape for the symbol.</
 
 The following code illustrates the various customization for adornments.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ColumnSeries Label="2013"
 
@@ -643,7 +643,7 @@ Gets or sets the outer margin of the adornment labels.</td></tr>
 
 The following code example explains the customization of adornments labels.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

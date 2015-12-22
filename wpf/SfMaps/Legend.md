@@ -67,7 +67,7 @@ Layer shape type legends can be different shapes for the legend. The shapes can 
 
 Legends are arranged in matrix format. The number of columns in the arranging matrix can be set by setting the LegendColumnSplit property of the int type. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -135,7 +135,7 @@ Legend for shape layers
 {:.caption}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

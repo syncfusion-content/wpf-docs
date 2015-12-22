@@ -17,7 +17,7 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
  
 
 
@@ -87,7 +87,7 @@ By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set 
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -169,7 +169,7 @@ The range can be placed above or below the scale by choosing the options availab
 2. Below.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

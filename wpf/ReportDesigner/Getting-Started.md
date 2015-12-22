@@ -15,7 +15,7 @@ You can create a simple application through the Visual Studio Designer with the 
 
 1.Create a new WPF application in VS2008 or VS2010, and then add the following XAML code.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -58,7 +58,7 @@ Title="MainWindow" Height="600" Width="1000" Icon="App.ico">
   N> The following code is automatically generated in the XAML window.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

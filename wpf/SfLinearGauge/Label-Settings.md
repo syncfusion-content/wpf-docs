@@ -18,7 +18,7 @@ The foreground of the label is customized by setting the LabelStroke of the line
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -81,7 +81,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 2. Below (Default).
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

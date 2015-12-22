@@ -19,7 +19,7 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -40,7 +40,7 @@ The Foreground of the CurrencyTextBox can be customized based on the Value prope
 N> The NegativeForeground in the CurrencyTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -66,7 +66,7 @@ N> The ZeroColor in the CurrencyTextBox can be enabled by setting the ApplyZeroC
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

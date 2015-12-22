@@ -21,7 +21,7 @@ Color themes can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the Color Theme feature to an application through XAML.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

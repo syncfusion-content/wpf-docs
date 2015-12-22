@@ -44,7 +44,7 @@ If this property is set to true, then when you enter a value greater than the Ma
 N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"      
                        MinValue="-999" MaxValue="999"    
 					   MinValidation="OnKeyPress" MaxValidation="OnLostFocus"    

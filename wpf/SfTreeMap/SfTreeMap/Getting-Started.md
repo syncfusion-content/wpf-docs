@@ -50,7 +50,7 @@ In order to create a TreeMap you can refer to the following assembly and namespa
 In the following code example, the SfTreeMap control is created. 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -173,7 +173,7 @@ public class PopulationViewModel
 After defining the ItemsSource, set the DataContext of the TreeMap as shown here:
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid>
 
