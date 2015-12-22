@@ -1,4 +1,13 @@
-# Group
+---
+layout: post
+title: Group | SfDiagram | wpf | Syncfusion
+description: group
+platform: wpf
+control: SfDiagram
+documentation: ug
+---
+
+## Group
 
 Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Gonnectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
@@ -8,18 +17,49 @@ Add Group
 
 The following code illustrates how to create a Group Node.
 
-<table>
-<tr>
-<td>
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();<br/><br/>NodeViewModel node = new NodeViewModel()<br/><br/>{<br/><br/>UnitWidth = 100,<br/><br/>UnitHeight = 100,<br/><br/>OffsetX = 100,<br/><br/>OffsetY = 100,<br/><br/>Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },<br/><br/>ShapeStyle = this.diagram.Resources["shapestyle"] as Style<br/><br/>};<br/><br/>NodeViewModel node1 = new NodeViewModel()<br/><br/>{<br/><br/>UnitWidth = 100,<br/><br/>UnitHeight = 100,<br/><br/>OffsetX = 200,<br/><br/>OffsetY = 200,<br/><br/>Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },<br/><br/>ShapeStyle = this.diagram.Resources["shapestyle"] as Style<br/><br/>};<br/><br/>ObservableCollection<GroupViewModel> groups = new ObservableCollection<GroupViewModel>();<br/><br/>GroupViewModel group = new GroupViewModel()<br/><br/>{<br/><br/>Nodes = new ObservableCollection<NodeViewModel>()<br/><br/>{<br/><br/>node,<br/><br/>node1<br/><br/>},<br/><br/>};<br/><br/>groups.Add(group);<br/><br/>diagram.Groups = groups;<br/><br/><br/><br/></td></tr>
-</table>
+{% highlight C# %}
+
+ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+NodeViewModel node = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 100,
+	OffsetY = 100,
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+};
+NodeViewModel node1 = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 200,
+	OffsetY = 200,
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+};
+
+ObservableCollection<GroupViewModel> groups = new ObservableCollection<GroupViewModel>();
+GroupViewModel group = new GroupViewModel()
+{
+	Nodes = new ObservableCollection<NodeViewModel>()
+	{
+		node,
+		node1
+	},
+};
+
+groups.Add(group);
+diagram.Groups = groups;
+
+{% endhighlight %}
+
 Group from Stencil
 
 Group Nodes can be predefined and added to stencil. You can drop those Groups into Diagram, when required. 
 
-To explore how to add Groups from stencil, refer to **[Stencil](#_Stencil "")**
+To explore how to add Groups from stencil, refer to **Stencil**
 
 Interaction
 
-You can edit the Group and its children at runtime. For more information about how to interact with a Group, refer to **[Interaction](#_Interaction "")**.
-
+You can edit the Group and its children at runtime. For more information about how to interact with a Group, refer to **Interaction**.

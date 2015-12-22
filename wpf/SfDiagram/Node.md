@@ -1,9 +1,17 @@
-# Node
+---
+layout: post
+title: Node | SfDiagram | wpf | Syncfusion
+description: node
+platform: wpf
+control: SfDiagram
+documentation: ug
+---
+
+## Node
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](Node_images/Node_img1.jpeg)
-
+![](Node_images\Node_img1.png)
 
 Create Node
 
@@ -15,34 +23,67 @@ To create a Node, You have to define the Node object and add that to Nodes colle
 
 [XAML]
 
-<table>
-<tr>
-<td>
-<diagram:SfDiagram x:Name="diagram"><br/><br/><diagram:SfDiagram.Nodes><br/><br/><diagram:DiagramCollection><br/><br/><diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"><br/><br/><diagram:NodeViewModel.Shape><br/><br/><RectangleGeometry Rect="0,0,10,10"/><br/><br/></diagram:NodeViewModel.Shape><br/><br/><diagram:NodeViewModel.ShapeStyle><br/><br/><Style TargetType="Path"><br/><br/><Setter Property="Fill" Value="DarkCyan"></Setter><br/><br/><Setter Property="Stroke" Value="Black"/><br/><br/><Setter Property="StrokeThickness" Value="2"></Setter><br/><br/><Setter Property="Stretch" Value="Fill"></Setter><br/><br/></Style><br/><br/></diagram:NodeViewModel.ShapeStyle><br/><br/></diagram:NodeViewModel><br/><br/></diagram:DiagramCollection><br/><br/></diagram:SfDiagram.Nodes><br/><br/></diagram:SfDiagram><br/><br/><br/><br/></td></tr>
-</table>
+{% highlight xml %}
+
+<diagram:SfDiagram x:Name="diagram">
+    <diagram:SfDiagram.Nodes>
+        <diagram:DiagramCollection>
+            <diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200">
+                <diagram:NodeViewModel.Shape>
+                    <RectangleGeometry Rect="0,0,10,10"/>
+                </diagram:NodeViewModel.Shape>
+                <diagram:NodeViewModel.ShapeStyle>
+                    <Style TargetType="Path">
+                        <Setter Property="Fill" Value="DarkCyan"></Setter>
+                        <Setter Property="Stroke" Value="Black"/>
+                        <Setter Property="StrokeThickness" Value="2"></Setter>
+                        <Setter Property="Stretch" Value="Fill"></Setter>
+                    </Style>
+                </diagram:NodeViewModel.ShapeStyle>
+            </diagram:NodeViewModel>
+        </diagram:DiagramCollection>
+    </diagram:SfDiagram.Nodes>
+</diagram:SfDiagram>
+
+{% endhighlight %}
+
 [C#]
 
-<table>
-<tr>
-<td>
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();<br/><br/>NodeViewModel node = new NodeViewModel()<br/><br/>{<br/><br/>UnitWidth = 100,<br/><br/>UnitHeight = 100,<br/><br/>OffsetX = 200,<br/><br/>OffsetY = 200,<br/><br/><br/><br/>Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },<br/><br/>ShapeStyle = this.diagram.Resources["shapestyle"] as Style<br/><br/>};<br/><br/><br/><br/>nodes.Add(node);<br/><br/>diagram.Nodes = nodes;<br/><br/><br/><br/></td></tr>
-</table>
-![](Node_images/Node_img2.jpeg)
+{% highlight C# %}
 
+ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+
+NodeViewModel node = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 200,
+	OffsetY = 200,
+	
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+};
+            
+nodes.Add(node);
+diagram.Nodes = nodes;
+
+{% endhighlight %}
+
+![](Node_images\Node_img2.png)
 
 Add Node from stencil
 
-Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to **[Stencil](#_Stencil "")**.
+Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to **Stencil**.
 
 Create Node through data source
 
 Nodes can be generated automatically with the information provided through data source.For more information about data source, 
 
-refer to **[Data Source](#_DataSource_Support "")**.
+refer to **Data Source**.
 
 Draw Nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing** **Tool**. For more information about drawing Nodes, refer to **[Draw Nodes](#_Tools "")****.**
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to **Draw Nodes.**
 
 Position
 
@@ -53,37 +94,70 @@ The following table illustrates how pivot relates Offset values with Node bounda
 <table>
 <tr>
 <td>
-Pivot <br/><br/></td><td>
-Offset<br/><br/></td></tr>
+Pivot </td><td>
+Offset</td></tr>
 <tr>
 <td>
-(0,5, 0.5)<br/><br/></td><td>
-OffsetX and OffsetY values are considered as the Node’s center point.<br/><br/></td></tr>
+(0,5, 0.5)</td><td>
+OffsetX and OffsetY values are considered as the Node’s center point.</td></tr>
 <tr>
 <td>
-(0,0)<br/><br/></td><td>
-OffsetX and OffsetY values are considered as the top left corner of Node<br/><br/></td></tr>
+(0,0)</td><td>
+OffsetX and OffsetY values are considered as the top left corner of Node.</td></tr>
 <tr>
 <td>
-(1,1)<br/><br/></td><td>
-OffsetX and OffsetY values are considered as the bottom right corner of the Node.<br/><br/></td></tr>
+(1,1)</td><td>
+OffsetX and OffsetY values are considered as the bottom right corner of the Node.</td></tr>
 </table>
+
 [XAML]
 
-<table>
-<tr>
-<td>
-<diagram:SfDiagram x:Name="diagram"><br/><br/><diagram:SfDiagram.Nodes><br/><br/><diagram:DiagramCollection><br/><br/><diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"<br/><br/>Pivot="0,0"><br/><br/><diagram:NodeViewModel.Shape><br/><br/><RectangleGeometry Rect="0,0,10,10"/><br/><br/></diagram:NodeViewModel.Shape><br/><br/><diagram:NodeViewModel.ShapeStyle><br/><br/><Style TargetType="Path"><br/><br/><Setter Property="Fill" Value="DarkCyan"></Setter><br/><br/><Setter Property="Stroke" Value="Black"/><br/><br/><Setter Property="StrokeThickness" Value="2"></Setter><br/><br/><Setter Property="Stretch" Value="Fill"></Setter><br/><br/></Style><br/><br/></diagram:NodeViewModel.ShapeStyle><br/><br/></diagram:NodeViewModel><br/><br/></diagram:DiagramCollection><br/><br/></diagram:SfDiagram.Nodes><br/><br/></diagram:SfDiagram><br/><br/><br/><br/></td></tr>
-</table>
+{% highlight xml %}
+
+<diagram:SfDiagram x:Name="diagram">
+    <diagram:SfDiagram.Nodes>
+        <diagram:DiagramCollection>
+            <diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
+                                   Pivot="0,0">
+                <diagram:NodeViewModel.Shape>
+                    <RectangleGeometry Rect="0,0,10,10"/>
+                </diagram:NodeViewModel.Shape>
+                <diagram:NodeViewModel.ShapeStyle>
+                    <Style TargetType="Path">
+                        <Setter Property="Fill" Value="DarkCyan"></Setter>
+                        <Setter Property="Stroke" Value="Black"/>
+                        <Setter Property="StrokeThickness" Value="2"></Setter>
+                        <Setter Property="Stretch" Value="Fill"></Setter>
+                    </Style>
+                </diagram:NodeViewModel.ShapeStyle>
+            </diagram:NodeViewModel>
+        </diagram:DiagramCollection>
+    </diagram:SfDiagram.Nodes>
+</diagram:SfDiagram>
+
+{% endhighlight %}
+
 [C#]
 
-<table>
-<tr>
-<td>
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();<br/><br/>NodeViewModel node = new NodeViewModel()<br/><br/>{<br/><br/>UnitWidth = 100,<br/><br/>UnitHeight = 100,<br/><br/>OffsetX = 200,<br/><br/>OffsetY = 200,<br/><br/>Pivot = new Point(0, 0)<br/><br/>};<br/><br/>nodes.Add(node);<br/><br/>diagram.Nodes = nodes;<br/><br/><br/><br/></td></tr>
-</table>
-![](Node_images/Node_img3.jpeg)
+{% highlight C# %}
 
+ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+
+NodeViewModel node = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 200,
+	OffsetY = 200,
+	Pivot = new Point(0, 0)
+};
+
+nodes.Add(node);
+diagram.Nodes = nodes;
+
+{% endhighlight %}
+
+![](Node_images\Node_img3.png)
 
 Appearance
 
@@ -91,26 +165,38 @@ You can customize the appearance of a Node by changing its Style. The following 
 
 [XAML]
 
-<table>
-<tr>
-<td>
-<Style TargetType="Path" x:Key="shapestyle"><br/><br/><Setter Property="Fill" Value="DarkCyan"></Setter><br/><br/><Setter Property="Stroke" Value="Black"/><br/><br/><Setter Property="StrokeDashArray" Value="4,5"></Setter><br/><br/><Setter Property="StrokeThickness" Value="2"></Setter><br/><br/><Setter Property="Stretch" Value="Fill"></Setter>   <br/><br/></Style><br/><br/><br/><br/></td></tr>
-</table>
+{% highlight xml %}
+
+<Style TargetType="Path" x:Key="shapestyle">
+  <Setter Property="Fill" Value="DarkCyan"></Setter>
+  <Setter Property="Stroke" Value="Black"/>
+  <Setter Property="StrokeDashArray" Value="4,5"></Setter>
+  <Setter Property="StrokeThickness" Value="2"></Setter>
+  <Setter Property="Stretch" Value="Fill"></Setter>   
+</Style>
+
+{% endhighlight %}
+
 [C#]
 
-<table>
-<tr>
-<td>
-Style style = new Style(typeof(Path));<br/><br/>style.Setters.Add(new Setter(Path.FillProperty, Brushes.DarkCyan));<br/><br/>style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.Black));<br/><br/>style.Setters.Add(new Setter(Path.StrokeThicknessProperty, 2d));<br/><br/>style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));            style.Setters.Add(new Setter(Path.StretchProperty, Stretch.Fill));<br/><br/>return style;<br/><br/><br/><br/></td></tr>
-</table>
-![](Node_images/Node_img4.jpeg)
+{% highlight C# %}
 
+Style style = new Style(typeof(Path));
+style.Setters.Add(new Setter(Path.FillProperty, Brushes.DarkCyan));
+style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.Black));
+style.Setters.Add(new Setter(Path.StrokeThicknessProperty, 2d));
+style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));            
+style.Setters.Add(new Setter(Path.StretchProperty, Stretch.Fill));
+return style;
+
+{% endhighlight %}
+
+![](Node_images\Node_img4.png)
 
 Interaction
 
-Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to **[Interaction](#_Interaction "")**.
+Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to **Interaction**.
 
 Constraints
 
-The constraints property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to **[Node Constraints](#NodeConstraints "")**.
-
+The constraints property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to **Node Constraints**.
