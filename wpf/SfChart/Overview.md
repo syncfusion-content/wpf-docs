@@ -32,11 +32,11 @@ SfChart provides a perfect way to visualize data with a high level of user inter
 
 This section provides details about the functionalities and features to help you understand and use SfChart better. It is organized into the following sections:
 
-Getting Started- This section helps you get started with SfChart and deploy it in your application.
+Getting Started - This section helps you get started with SfChart and deploy it in your application.
 
-Features- The features of the chart are illustrated with the help of use-case scenarios, code examples and screenshots under this section.
+Features - The features of the chart are illustrated with the help of use-case scenarios, code examples and screenshots under this section.
 
-FAQ- This section contains commonly asked questions related to SfChart.
+FAQ - This section contains commonly asked questions related to SfChart.
 
 The following conventions are used in the following user guide to help you identify key points and features.
 

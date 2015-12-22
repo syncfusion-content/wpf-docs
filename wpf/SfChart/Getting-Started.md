@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started| SfChart | Wpf | Syncfusion
 description: getting started
