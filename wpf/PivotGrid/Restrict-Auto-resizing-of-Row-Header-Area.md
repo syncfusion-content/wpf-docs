@@ -1,99 +1,110 @@
 ---
 layout: post
-title: Restrict Auto resizing of Row Header Area| PivotGrid | Wpf | Syncfusion
-description: Restrict Auto-resizing of Row Header Area
+title: 13433-Restrict-Auto-resizing-of-Row-Header-Area
+description:      1.3.4.3.3 restrict auto-resizing of row header area
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-
 # Restrict Auto-resizing of Row Header Area
 
+PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the ShowFields button located in the DataHeaderArea of the grouping bar is clicked, the PivotComputation List window appears with the PivotCalculation fields. 
 
-The PivotGrid control provides support for restricting the row header items from being stretched when there are too many items in the computation area. When the Computation button (Show List button) located in the DataHeaderArea of the grouping bar is clicked, the Computation List window appears with the computation fields. 
+**Use Case Scenario**
 
-### Use Case Scenarios
+It allows the user to restrict the row header items from being stretched and maintains its size with the fixed one so that users can view most of the data in the viewable area instead of scrolling to view the data.
 
-This feature will restrict the row header items from being stretched and maintains its size with the fixed one so that users can view most of the data in the viewable area instead of scrolling to view the data.
-
-### Properties
-
-
+                                               Property Table
 
 <table>
 <tr>
 <th>
-Property</th><th>
-Description</th><th>
+Property </th><th>
+Description </th><th>
 Type</th><th>
-Data Type</th></tr>
+Value it Accepts</th><th>
+Reference link</th></tr>
 <tr>
 <td>
 AllowRowHeaderAreaAutoSizing</td><td>
-Shows the ComputationButton (Show Field List Button) whose click event opens the Computation List Window with the calculation fields of the PivotGrid and restricts the stretching of row header items in the grouping bar.</td><td>
-Dependency</td><td>
-Boolean </td></tr>
+Gets or sets to restrict the RowHeaders stretching when too many items in the PivotGrid GroupingBar computationArea.</td><td>
+bool</td><td>
+True(Default), False</td><td>
+ -</td></tr>
 </table>
 
+##Defining Row Header auto sizing in PivotGrid
 
-## Enabling Resizing Pivot Grid
+**AllowRowHeaderAreaAutoSizing** is set to false, in order to display the Computation button (Show Fields button) and to restrict the row header items from being stretched when more items are added to the computation area. By default, this property is set to true. It can be defined both in *XAML* and *Code-Behind*. 
 
-Users can enable or disable this feature by using the AllowRowHeaderAreaAutoSizing__property. To show the Computation button (Show Fields button) and to restrict the row header items from being stretched when more items are added to the computation area, set this property to false. To hide the Computation button (Show Fields Button) and to allow the row header items to stretch when more items are added to the computation area, set this property to true. By default the property is set to true.
+If through **XAML**, please refer the below code snippet.
 
-The following code illustrates how to restrict the items from stretching and how to show the Computation List window through Computation button click:
+{% highlight xaml %}
 
-{% tabs %}
-{% highlight C# %} 
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" AllowRowHeaderAreaAutoSizing="False" ItemSource="{Binding   Source={StaticResource data}}">
 
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
 
+    </syncfusion:PivotGridControl>
+</Grid>
 
-this.pivotGrid1.AllowRowHeaderAreaAutoSizing = false;
+{% endhighlight %}
 
- {% endhighlight %} 
+Else if through **Code-Behind**, please refer the below code snippet.
 
-{% highlight vbnet %} 
+{% highlight C# %}
 
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
+        pivotGrid.AllowRowHeaderAreaAutoSizing = false;
+    }
+}
+    
+{% endhighlight %}
 
-Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = False
-
-{% endhighlight %} 
-{% endtabs %}
-
-![C:/Users/maheswarir/Desktop/When property = true in wpf.PNG](Features_images/Features_img21.png)
-
-
-
-The following code illustrates how to allow the items to stretch and how to hide the Computation button:
-
-{% tabs %}
-{% highlight C# %}  
-
-
-
-this.pivotGrid1.AllowRowHeaderAreaAutoSizing = true;
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-
-Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = True 
-
-{% endhighlight %} 
-{% endtabs %}
-
-![C:/Users/maheswarir/Desktop/when false.PNG](Features_images/Features_img22.png)
-
-
-###  Sample Link
-Follow the steps given below to view a sample of this feature. 
-
-1. Select Start > Programs > Syncfusion > Essential Studio x.x.xx > Dashboard
-2. Click Run Samples for WPF under BI edition
-3. Select PivotGrid
-4. Navigate to Product Showcase > PivotGrid Demo
-
+![](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)
 

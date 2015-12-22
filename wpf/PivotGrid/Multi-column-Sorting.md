@@ -1,47 +1,153 @@
 ---
 layout: post
-title: Multi column Sorting| PivotGrid | Wpf | Syncfusion
-description: Multi-column Sorting
+title: 13422-Multi-Column-Sorting
+description:            1.3.4.2.2 multi-column sorting
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-# Multi-column Sorting
+# Multi-Column Sorting
 
-Multi-column sorting behavior is implemented in PivotGrid at normal mode that allows you to sort the grid by one field after the other.
+Multi-Column sorting behavior has been created which allows you to sort the value columns by one field after another field. For exapmle, If a customer have three different fields being rendered in the PivotGrid, then it could be possible to sort like this:
+**OrderBy(field1).ThenBy(field2).ThenBy(field3).**. 
 
-### Use Case Scenario
+It can be used to sort the PivotGrid values based on the other field values in the grid if the corresponding value field contains two or more similar values. It can also be used to sort the ‘N’ number of columns in the pivot grid. A separate index number has been used at the top of each column to maintain the order of the sorted columns while doing the multi-column sorting.
 
-There are three different fields being rendered by the PivotGrid and it can be sorted in any desired manner. For example: OrderBy(Country), OrderBy(State), OrderBy(City). 
+Multi-Column sorting can be applied in both **Normal** and **Row Pivots Only** mode of PivotGrid control.
 
-## Applying multi-column sorting in PivotGrid Control
+##Multi-Column sorting in Normal mode of PivotGrid control
 
-Refer the following screenshots that display the step-by-step implementation of multi-column sorting.
+We can enable the Sorting through *XAML* or through *Code-behind* using **SortOption** property of PivotGrid control.
+ 
+if through **XAML**, Please refer the below code snippet.
 
-![D:/Capture18.PNG](Features_images/Features_img63.png)
+{% highlight xaml %}
 
-Normal PivotGrid without any sorting
-{:.caption}
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" SortOption="All" ItemSource="{Binding   Source={StaticResource data}}">
 
-![D:/Capture19.PNG](Features_images/Features_img64.png)
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+    </syncfusion:PivotGridControl>
+</Grid>
 
- “Quantity” has been sorted in the descending order
- {:.caption}
+{% endhighlight %}
 
-![D:/Capture20.PNG](Features_images/Features_img65.png)
+Else if through **Code-Behind**, please refer the below code snippet.
 
-Multi-columns (Amount and Quantity) has been sorted in the above PivotGrid
- {:.caption}
+{% highlight C# %}
 
-![D:/Capture21.PNG](Features_images/Features_img66.png)
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
- ‘N’ number of column has been sorted in the above PivotGrid
-  {:.caption}
+        pivotGrid.SortOption = PivotSortOption.All;
+    }
+}
+		
+{% endhighlight %}
 
-### Sample Link
+* The below screenshot shows the normal PivotGrid.
 
-{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\PivotAnalysis.Wpf\Samples\Sorting\Sorting Demo
+   ![](Sorting-Images/Normal PivotGrid.png)
+   
+* Then the **Quantity** column has been sorted in the PivotGrid.
 
+   ![](Sorting-Images/PivotGrid sorted by single column.png)
+   
+* Then by pressing the ctrl key , **Amount** column has been sorted. so that the PivotGrid has been sorted by the multiple columns.
 
+   ![](Sorting-Images/PivotGrid sorted by multiple columns.png)
+   
+* Then again by pressing the ctrl key , we could the sort the PivotGrid based on 'N' number of columns.
 
+   ![](Sorting-Images/PivotGrid sorted by N columns.png)
+
+## Multi-Column sorting in Row Pivots Only mode of PivotGrid control
+
+We can enable the Sorting through *XAML* or through *Code-behind* using **SortOption** property of PivotGrid control in RowPivotsOnly mode.
+ 
+if through **XAML**, please refer the below code snippet.
+
+{% highlight xaml %}
+
+<Grid>
+    <syncfusion:PivotGridControl Name="pivotGrid" SortOption="All" RowPivotsOnly="True">
+
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem AllowFilter="False" FieldHeader="PID" FieldMappingName="PID" TotalHeader="Total" />
+            <syncfusion:PivotItem AllowFilter="False" FieldHeader="Location" FieldMappingName="Location" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo FieldHeader="Color" FieldName="Color" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="Class" FieldName="Class" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="PID" FieldName="PID" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="Units" FieldName="Units" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="Retail" FieldName="Retail" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="Cost" FieldName="Cost" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="TestStr" FieldName="TestStr" Format="0.0" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="TestInt" FieldName="TestInt" Format="0.0" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
+            <syncfusion:PivotComputationInfo FieldHeader="TestDouble" FieldName="TestDouble" Format="0.00" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+
+    </syncfusion:PivotGridControl>
+</Grid>
+
+{% endhighlight %}
+
+Else if through **Code-Behind**, please refer the below code snippet.
+
+{% highlight C# %}
+
+public partial class MainWindow: Window {
+    public MainWindow() {
+        InitializeComponent();
+        pivotGrid.SortOption = PivotSortOption.All;
+    }
+}
+		
+{% endhighlight %}
+
+Similarly, we can apply 'n' number of sorting in RowPivotsOnly mode also by pressing Ctrl key.
+
+![](Features-in-RowPivotsOnly/Multi column sort in RowPivots.png)

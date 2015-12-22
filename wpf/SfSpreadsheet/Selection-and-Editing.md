@@ -18,14 +18,16 @@ The SfSpreadsheet control provides support for selection in grid by using mouse,
 
 By default, Selection behavior will be enabled in SfSpreadsheet,but if you want to disable the selection in SfSpreadsheet, then set the [AllowSelection](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2559.html) Property to be false.
 
+{% tabs %}
 {% highlight c# %}
-                  
-    void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
-    {
-      spreadsheet.ActiveGrid.AllowSelection = false;
-    }
+
+void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
+{
+    spreadsheet.ActiveGrid.AllowSelection = false;
+}
 
 {% endhighlight %}
+{% endtabs %}
 
 The Events associated with the Selection behavior are
 
@@ -40,6 +42,7 @@ The Events associated with the Selection behavior are
 
 The SfSpreadsheet control provides support for Editing, you can modify and commit the cell values in the workbook. The Events associated with the Editing are CurrentCellBeginEdit and CurrentCellEndEdit of SpreadsheetGrid.
 
+{% tabs %}
 {% highlight c# %}
              
     void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
@@ -63,6 +66,7 @@ The SfSpreadsheet control provides support for Editing, you can modify and commi
     }
 
 {% endhighlight %}
+{% endtabs %}
 
 The order of events when editing and committing a cell value in SfSpreadsheet,
 

@@ -1,261 +1,261 @@
 ---
 layout: post
-title: Header Cell Context Menu| PivotGrid | Wpf | Syncfusion
-description: Header Cell Context Menu
+title: 13415-Expand and Collapse Operations
+description: header cell context menu
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-# Header Cell Context Menu
+# Expand/Collapse in PivotGrid
 
-## Programmatic and UI level support for expand collapse operation
+Expand/collapse operations can be done at both the UI and programmatic level. 
 
-Expand/collapse operations can be done at both the UI and programmatic level. The context menu will be shown while right-clicking on the expander cell. Its skin will change with respect to the grid’s background color, and it is localizable too. Expand/collapse operations can be handled at the row level and column level individually. The header cell’s UniqueText will be shown as a ToolTip for each context menu item.
+## Header Cell Context Menu for UI Level Expand/Collapse
 
-### Use Case Scenarios
+Header cell context menu will be shown while right-clicking on the expander cell. Expand/collapse operations can be handled through this context menu at the row level and column level individually.
 
-Enabling UI-level expand/collapse operations will allow the end user to expand and collapse the particular cell and entire row or column individually. Programmatically, they can expand/collapse any number of rows or columns.
+**Use Case Scenarios**
 
-![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img44.png)
-
-
+Enabling UI-level expand/collapse operations will allows us to expand and collapse the particular block, entire field,  entire row or column individually. 
 
 
-
-### Properties
-
-
+                                                Property Table
 
 <table>
 <tr>
 <th>
-Property</th><th>
-Description</th><th>
+Property </th><th>
+Description </th><th>
 Type</th><th>
-Data Type</th></tr>
+Value it Accepts</th><th>
+Reference link</th></tr>
 <tr>
 <td>
 EnableContextMenu</td><td>
-Gets or sets the context menu for expander cells (row header and column header cells only) </td><td>
-Dependency</td><td>
-Boolean </td></tr>
-</table> 
+Gets or sets the context menu for expander cells (row header and column header cells only).</td><td>
+bool</td><td>
+False(Default), True</td><td>
+ -</td></tr>
+</table>
+
+###Defining the properties in PivotGrid
+
+**EnableContextMenu** property allows us to enable or disable the context menu for row or column headers alone individually.
+
+After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, set the visiblity of **EnableContextMenu** of each row and column header areas.
+
+Please refer the below code snippet.
+
+{% highlight C# %}
+
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
+        pivotGrid.Loaded += pivotGrid_Loaded;
+    }
+
+    void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
+        pivotGrid.ColumnHeaderCellStyle.EnableContextMenu = true;
+        pivotGrid.RowHeaderCellStyle.EnableContextMenu = true;
+    }
+}
+
+{% endhighlight %}
+
+##Programmatic Level for Expand/Collapse
+
+Programmatically, we can expand/collapse any number of rows or columns. This can be done using the following methods.
 
 
-### Methods Table
+                                                 Methods Table
 
 <table>
 <tr>
 <th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+Method </th><th>
+Description </th><th>
+Parameters </th><th>
+Return Type </th></tr>
 <tr>
 <td>
 ExpandRow(string)  </td><td>
 Expands the group for the given row UniqueText.</td><td>
 string </td><td>
-NA </td><td>
 void </td></tr>
 <tr>
 <td>
-ExpandColumn (string)  </td><td>
+ExpandColumn (string)</td><td>
 Expands the group for the given column UniqueText.</td><td>
 string</td><td>
-NA</td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseRow(string)  </td><td>
+CollapseRow(string)</td><td>
 Collapse the group for the given row UniqueText.</td><td>
 string</td><td>
-NA</td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseColumn (string)  </td><td>
+CollapseColumn (string) </td><td>
 Collapse the group for the given column UniqueText.</td><td>
 string</td><td>
-NA</td><td>
 void</td></tr>
 <tr>
 <td>
-ExpandRow(List[string])  </td><td>
+ExpandRow(List<string>)  </td><td>
 Expands the group for the given list of row UniqueText.</td><td>
-List(string)</td><td>
-NA</td><td>
+List<string></td><td>
 void</td></tr>
 <tr>
 <td>
-ExpandColumn (List[string])  </td><td>
+ExpandColumn (List<string>)  </td><td>
 Expands the group for the given list of column UniqueText.</td><td>
-List(string)</td><td>
-NA</td><td>
+List<string></td><td>
 void</td></tr>
 <tr>
 <td>
-Col
-lapseRow(List[string])  </td><td>
+CollapseRow(List<string>)  </td><td>
 Collapse the group for the given list of row UniqueText.</td><td>
-List(string)</td><td>
-NA</td><td>
+List<string></td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseColumn (List[string])  </td><td>
+CollapseColumn (List<string>)  </td><td>
 Collapse the group for the given list of column UniqueText.</td><td>
-List(string)</td><td>
-NA</td><td>
+List<string></td><td>
 void</td></tr>
-</table> 
-
-### Events
-
-
-
-<table>
-<tr>
-<th>
-Event</th><th>
-Description </th><th>
-Arguments</th><th>
-Type</th></tr>
 <tr>
 <td>
-ExpandCollapse</td><td>
-Provides enabling/disabling option for expand/collapse for a specific group (using UniqueText).</td><td>
-NA </td><td>
-Event</td></tr>
+ExpandAllGroup  </td><td>
+Expands all the group.</td><td>
+-</td><td>
+void</td></tr>
+<tr>
+<td>
+CollapseAllGroup  </td><td>
+Collapses all the group.</td><td>
+-</td><td>
+void</td></tr>
 </table>
 
 
-### Sample Link
+###Defining the methods in PivotGrid
 
-A sample is available in the Syncfusion WPF BI dashboard in the following location.
+For programmatic level expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter we can expand/collapse one or more columns/rows as per our requirement. 
 
-PivotAnalysis > GroupingBar > Context Menu Demo
+After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, use the appropriate methods for expand/collapse operations.
 
-{InstalledDrive}\Users\ {User}\AppData\ Local \Syncfusion\ EssentialStudio\{Installed Version}\BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar \Context Menu Demo
+Please refer the below code snippets.
 
-## Adding to an Application 
+{% highlight C# %}
 
-You can enable the context menu for row/column header cells present in the grid by setting the EnableContextMenu Boolean property of that cell style to true.
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
+        pivotGrid.Loaded += pivotGrid_Loaded;
+    }
 
-The property usage is illustrated in the code given below.
-{% tabs %}
-{% highlight C# %}  
-
-
-// To Enable Context Menu for Column Header.
-
-this.PivotGrid1.ColumnHeaderCellStyle.EnableContextMenu = true;
-
-// To Enable Context Menu for Row Header.
-
-this.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = true;
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-// To Enable Context Menu for Column Header.
-
-Me.PivotGrid1.ColumnHeaderCellStyle.EnableContextMenu = True
-
-// To Enable Context Menu for Row Header.
-
-Me.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = True
-
-{% endhighlight %} 
-{% endtabs %}
-
-![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img45.png)
-
-
-
-![](Features_images/Features_img46.png)
-
-
-
-To perform the expand/collapse operations programmatically, you can make use of the eight methods respectively as per your requirement. Passing the UniqueText as a parameter you can expand/collapse one or more columns/rows. The method usage is illustrated in the following code sample.
-{% tabs %}
-{% highlight C# %}   
-
-
-/// Expands the Bike from row       
-
-this.pivotGrid1.ExpandRow("Bike");
-
-/// Collapses the Bike from row        
-
-this.pivotGrid1.CollapseRow("Bike");        
-
-/// Expands the Canada from column        
-
-this.pivotGrid1.ExpandColumn("Canada");        
-
-/// Collapses the Canada from column        
-
-this.pivotGrid1.CollapseColumn("Canada");        
-
-/// Collapses the given collection of UniqueText string values for row        
-
-this.pivotGrid1.CollapseRow(new List<string> { "Bike", "Car" });        
-
-/// Expands the given collection of UniqueText string values for row        
-
-this.pivotGrid1.ExpandRow(new List<string> { "Bike", "Car" });        
-
-/// Collapses the given collection of UniqueText string values for Column        
-
-this.pivotGrid1.CollapseColumn(new List<string> { "Canada", "France" });        
-
-/// Expands the given collection of UniqueText string values for Column        
-
-this.pivotGrid1.ExpandColumn(new List<string> { "Canada", "France" });
+    void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
+        /// Expands the Bike from row       
+        pivotGrid.ExpandRow("Bike");
+        /// Collapses the Bike from row        
+        pivotGrid.CollapseRow("Bike");
+        /// Expands the Canada from column        
+        pivotGrid.ExpandColumn("Canada");
+        /// Collapses the Canada from column        
+        pivotGrid.CollapseColumn("Canada");
+        /// Collapses the given collection of UniqueText string values for row        
+        pivotGrid.CollapseRow(new List < string > {
+            "Bike",
+            "Car"
+        });
+        /// Expands the given collection of UniqueText string values for row        
+        pivotGrid.ExpandRow(new List < string > {
+            "Bike",
+            "Car"
+        });
+        /// Collapses the given collection of UniqueText string values for Column        
+        pivotGrid.CollapseColumn(new List < string > {
+            "Canada",
+            "France"
+        });
+        /// Expands the given collection of UniqueText string values for Column        
+        pivotGrid.ExpandColumn(new List < string > {
+            "Canada",
+            "France"
+        });
+        /// Expands entire group in both row and column.
+        pivotGrid.ExpandAllGroup();
+        /// Collapse entire group in both row and column.
+        pivotGrid.CollapseAllGroup();
+    }
+}
 
 {% endhighlight %}
+  
+![](Header-Cell-context-menu-images/Context menu for Row headers.png)
 
-{% highlight vbnet %}  
+_Context menu for Row headers_
 
+![](Header-Cell-context-menu-images/Context menu for Column headers.png)
 
-/// Expands the Bike from row       
-
-Me.pivotGrid1.ExpandRow("Bike")
-
-/// Collapses the Bike from row        
-
-Me.pivotGrid1.CollapseRow("Bike")
-
-/// Expands the Canada from column        
-
-Me.pivotGrid1.ExpandColumn("Canada")
-
-/// Collapses the Canada from column        
-
-Me.pivotGrid1.CollapseColumn("Canada")
-
-/// Collapses the given collection of UniqueText string values for row        
-
-Me.pivotGrid1.CollapseRow(New String() {"Bike", "Car"}.ToList())
-
-/// Expands the given collection of UniqueText string values for row        
-
-Me.pivotGrid1.ExpandRow(New String() {"Bike", "Car"}.ToList())
-
-/// Collapses the given collection of UniqueText string values for Column        
-
-Me.pivotGrid1.CollapseColumn(New String() {"Canada", "France"}.ToList())
-
-/// Expands the given collection of UniqueText string values for Column        
-
-Me.pivotGrid1.ExpandColumn(New String() {"Canada", "France"}.ToList())
-
-{% endhighlight %} 
-{% endtabs %}
-
-
+_Context menu for Column headers_

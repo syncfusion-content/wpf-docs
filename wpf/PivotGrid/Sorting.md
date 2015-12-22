@@ -1,120 +1,89 @@
 ---
 layout: post
-title: Sorting | PivotGrid | Wpf | Syncfusion
-description: sorting 
+title: 1342-GroupinBar-Sorting
+description: 1.3.4.2 sorting
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-
 # Sorting
 
-Sorting data enables you to quickly visualize and understand your data better, organize and find the data that you want, and ultimately make more effective decisions. By default, PivotGrid will populate the data in ascending order. Sorting order can be changed using the Comparer field of PivotItem.
+Sorting enables you to quickly visualize and understand your data better, organize, find the data that you want and ultimately make more effective decisions. By default, PivotGrid holds built-in Comparers for all datatypes so that it will populate the data in ascending order according to its datatype. You can also define your own CustomComparer in order to view the data in your respective Sorting order.
 
-{% tabs %}
-{% highlight C# %} 
+## Sorting using Custom Comparer 
+Sorting the data with your own CustomComparer can be achieved by defining your **CustomComparer** and initializing its instance to the **Comparer** of corresponding **PivotItem**
 
+For example, we defined a custom **ReverseOrderComparer** for the PivotItems. Please find the CustomComparer code snippet below.
 
-
-// Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
-
-this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total", Comparer = new ReverseOrderComparer() });
-
-
-
+{% highlight C# %}
+   
 /// <summary>
-
 /// Reverse Order Comparer for Descending sort order
-
 /// </summary>
-
-public class ReverseOrderComparer : IComparer
-
-{
-
-   #region IComparer Members
-
-
-
-   public int Compare(object x, object y)
-
-   {
-
-      if (x == null && y == null)
-
-        return 0;
-
-      else if (y == null)
-
-        return 1;
-
-      else if (x == null)
-
-        return -1;
-
-      else
-
-        return -x.ToString().CompareTo(y.ToString());
-
-   }
-
-
-
-   #endregion  
-
+public class ReverseOrderComparer: IComparer {
+    public int Compare(object x, object y) {
+        if (x == null && y == null)
+            return 0;
+        else if (y == null)
+            return 1;
+        else if (x == null)
+            return -1;
+        else
+            return -x.ToString().CompareTo(y.ToString());
+    }
 }
 
- {% endhighlight %} 
+{% endhighlight %}
 
+In order to apply this comparer to PivotItem, we have created the instance for the **ReverseOrderComparer** and assigned it to the Comparer property of **Product** PivotItem. Please refer the below code snippet.
 
+{% highlight C# %}
 
-{% highlight vbnet %} 
+public MainWindow() {
+    InitializeComponent();
+    this.Loaded += MainWindow_Loaded;
+}
 
+void MainWindow_Loaded(object sender, RoutedEventArgs e) {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    grid1.Children.Add(pivotGrid);
+    PivotItem m_PivotItem = new PivotItem() {
+        FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total", Comparer = new ReverseOrderComparer()
+    };
+    PivotItem m_PivotItem1 = new PivotItem() {
+        FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+    };
+    PivotItem n_PivotItem = new PivotItem() {
+        FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+    };
+    PivotItem n_PivotItem1 = new PivotItem() {
+        FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+    };
+    // Adding PivotItem to PivotRows
+    pivotGrid.PivotRows.Add(m_PivotItem);
+    pivotGrid.PivotRows.Add(m_PivotItem1);
+    // Adding PivotItem to PivotColumns
+    pivotGrid.PivotColumns.Add(n_PivotItem);
+    pivotGrid.PivotColumns.Add(n_PivotItem1);
+    PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+        CalculationName = "Amount", FieldName = "Amount", SummaryType = SummaryType.Count
+    };
+    PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+        CalculationName = "Quanity", FieldName = "Quanity", SummaryType = SummaryType.Count
+    };
+    pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+    pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
+    pivotGrid.ItemSource = ProductSales.GetSalesData();
+}
+  
+{% endhighlight %}
 
+![](Sorting-Images/Not Sorted PivotGrid.png)
 
-' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
+_PivotGrid without ReverseOrderComparer_
 
-Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total", .Comparer = New ReverseOrderComparer()})
+![](Sorting-Images/Sorted PivotGrid.png)
 
+_PivotGrid with ReverseOrderComparer_
 
-
-''' <summary>
-
-''' Reverse Order Comparer for Descending sort order
-
-''' </summary>
-
-public class ReverseOrderComparer : IComparer
-
-'   #Region "IComparer Members"
-
-
-
-   public Integer Compare(Object x, Object y)
-
-If x Is Nothing AndAlso y Is Nothing Then
-
-Return 0
-
-ElseIf y Is Nothing Then
-
-Return 1
-
-ElseIf x Is Nothing Then
-
-Return -1
-
-Else
-
-Return -x.ToString().CompareTo(y.ToString())
-
-End If
-
-
-
-'   #End Region  
-
-{% endhighlight %} 
-
-{% endtabs %}

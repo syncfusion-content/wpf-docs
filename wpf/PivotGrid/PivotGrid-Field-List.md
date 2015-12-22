@@ -1,200 +1,110 @@
 ---
 layout: post
-title: PivotGrid Field List| PivotGrid | Wpf | Syncfusion
-description: PivotGrid Field List
+title: 13419-PivotGrid-Field-List
+description: 1.3.4.19 pivotgrid field list
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-
 # PivotGrid Field List
 
-With the current implementation of ‘Grouping bar, users cannot add or delete items in it. The Delete operation can be easily performed using the context menu, but in case of adding an item there should be a separate window, which should hold the fields present in the Item Source. In order to achieve this, a window called PivotGrid Field List is available in PivotGrid control, which is bound to a collection of PivotItems defined in the PivotFields property of PivotGridControl. 
+With the current implementation of Grouping bar, we cannot able to add the deleted items in PivotGrid. The delete operation can be easily performed in the GroupingBar by using the AllowRemoving feature, but there is no possiblity to add again the deleted items. In order to achive this, we maintain a separate window called **PivotTable Field List** window, which holds the fields which are not present in the PivotGrid but available in the Item Source. We can bound a collection of PivotItems as **PivotFields** which gets included in the Field List window but not present in the PivotGrid. 
 
-### Use Case Scenarios
+**Use Case Scenarios**
 
-This feature will be useful for applications that need to configure PivotGrid at run-time, that is to add/remove items to/from PivotGrid at run-time
+It will be useful for applications that need to configure PivotGrid at run-time. That is, to add/remove items to/from PivotGrid at run-time.
 
-### Adding PivotGrid Field List
-
-PivotGrid Field List (or Dynamic Field List ) can be launched by setting the ShowFieldList property to true or by clicking on the ShowFieldList menu item of Grouping bar context menu. PivotGrid Field List is bound to PivotFilelds property of PivotGridControl, which is a collection of  PivotItems. PivotFields can be added via code-behind and XAML, as shown in the following code snippets. 
-
-{% tabs %}
-{% highlight xml %} 
-
-	<syncfusion:PivotGridControl ShowFieldList="True"
-
-	           <!--Specifying PivotRows-->
-
-	            <syncfusion:PivotGridControl.PivotRows>
-
-	                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
-
-	<syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
-
-	             </syncfusion:PivotGridControl.PivotRows>
-
-	            <!--Specifying PivotColumns-->
-
-	            <syncfusion:PivotGridControl.PivotColumns>
-
-	                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
-
-	            </syncfusion:PivotGridControl.PivotColumns>
-
-	            <!--Specifying PivotCalculationValues--> 
-
-	            <syncfusion:PivotGridControl.PivotCalculations>
-
-	                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
-
-	                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
-
-	            </syncfusion:PivotGridControl.PivotCalculations>
-
-	            <!--Specifying Pivot Fields--> 
-
-	               <syncfusion:PivotGridControl.PivotFields>
-
-	<syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/>
-
-	</syncfusion:PivotGridControl.PivotFields>
-
-	</syncfusion:PivotGridControl>
-
-
-{% endhighlight %} 
-
-
-{% highlight C# %}  
-
-
-  /// Adding Pivot Columns
-
-            this.pivotGrid1.PivotColumns.Add(new PivotItem() { FieldHeader="Country", FieldMappingName="Country",TotalHeader="Total" });
-
-            /// Adding Pivot Rows
-
-            this.pivotGrid1.PivotRows.Add(new PivotItem() { FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total" });
-
-            this.pivotGrid1.PivotRows.Add(new PivotItem() { FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total" });
-
-            /// Adding Pivot Calculations
-
-            this.pivotGrid1.PivotCalculations.Add(new PivotComputationInfo() { FieldName="Amount", SummaryType= SummaryType.DoubleTotalSum, Format="C" });
-
-            this.pivotGrid1.PivotCalculations.Add(new PivotComputationInfo() { FieldName="Quantity", Format="#,###" });
-
-            /// Adding Pivot Fields
-
-            this.pivotGrid1.PivotFields.Add(new PivotItem() { FieldHeader="State", FieldMappingName="State" }); 
-
-            /// Displaying Field List
-
-            this.pivotGrid1.ShowFieldList = true;
-
-
-{% endhighlight %} 
-
-
-{% highlight vbnet %} 
-
-
-            ' Adding Pivot Columns
-
-            Me.pivotGrid1.PivotColumns.Add(New PivotItem() With {.FieldHeader = "Country", .FieldMappingName = "Country", .TotalHeader = "Total"})
-
-            ' Adding Pivot Rows
-
-            Me.pivotGrid1.PivotRows.Add(New PivotItem() With {.FieldHeader = "Product", .FieldMappingName = "Product", .TotalHeader = "Total"})
-
-            Me.pivotGrid1.PivotRows.Add(New PivotItem() With {.FieldHeader = "Date", .FieldMappingName = "Date", .TotalHeader = "Total"})
-
-            ' Adding Pivot Calculations
-
-            Me.pivotGrid1.PivotCalculations.Add(New PivotComputationInfo() With {.FieldName = "Amount", .SummaryType = SummaryType.DoubleTotalSum, .Format = "C"})
-
-            Me.pivotGrid1.PivotCalculations.Add(New PivotComputationInfo() With {.FieldName = "Quantity", .Format = "#,###"})
-
-            ' Adding Pivot Fields
-
-            Me.pivotGrid1.PivotFields.Add(New PivotItem() With {.FieldHeader = "State", .FieldMappingName = "State"})
-
-            ' Displaying Field List
-
-            Me.pivotGrid1.ShowFieldList = True
-
-{% endhighlight %} 
-{% endtabs %}
-
-
-![Description: C:/Users/dwarageshmb/Desktop/2011 Vol 1 Docs/PivotGrid Field List.png](Features_images/Features_img19.png)
-
-
-
-#### Properties
-
-
+                                                      Property Table
 
 <table>
-    <tr>
-        <th>Property</th>
-		<th>Description</th>
-		<th>Type</th>
-		<th>Data Type</th>
-		<th>Reference links</th>
-	</tr>
-	
-    <tr>
-        <td>PivotFields</td>
-		<td>Gets the collection of PivotItems to be displayed in FieldList</td>
-		<td>Normal</td>
-		<td>ObservableCollection</td>
-		<td>NA</td>
-    </tr>
-	
-    <tr>
-        <td>ShowFieldList</td>
-		<td>Gets or sets a value indicating whether to display FieldList</td>
-		<td>Dependency</td>
-		<td>bool</td>
-		<td>NA</td>
-    </tr>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
+<tr>
+<td>
+ShowFieldList</td><td>
+Gets or Sets a value indication whether to show or hide the PivotGridFieldList window.</td><td>
+bool</td><td>
+True(Default), False</td><td>
+ -</td></tr>
 </table>
+                                       
+## PivotTable Field List window in PivotGrid
 
-### GroupingBar Table
+PivotTable Field List (or Dynamic Field List) can be launched by setting the **ShowFieldList** property to true or by clicking on the ShowFieldList menu item of Grouping bar context menu. Field List is bound to PivotFields property of PivotGridControl, which is a collection of PivotItems.This property can either be set through *XAML* or *Code-Behind*.
 
-<table>
-	<tr>
-		<th>Property</th>
-		<th>Description</th>
-		<th>Type</th>
-		<th>Data Type</th>
-		<th>Reference links</th>
-	</tr>
-	<tr>
-		<td>FieldList</td>
-		<td>Gets the field list, which is used to add items into the Grouping Bar</td>
-		<td>Normal</td>
-		<td>Window</td>
-		<td>NA</td>
-	</tr>
-	<tr>
-		<td>FieldListBorderBrush</td>
-		<td>Gets or sets the Border brush for Field List</td>
-		<td>Dependency</td>
-		<td>Brush</td>
-		<td>NA</td>
-	</tr>
-</table>
+If through **XAML**, please refer the below code snippet.
 
-### Sample Link
+{% highlight xaml %}
 
-To access a Conditional Formatting sample
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowFieldList="True" ItemSource="{Binding   Source={StaticResource data}}">
 
-1. Open the Syncfusion Dashboard. 
-2. Click Business Intelligence.
-3. Click the WPF drop-down list, and select Explore Samples. 
-4. Navigate to PivotAnalysis.WPF -> Samples -> Field List -> Field List Demo.
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+
+    </syncfusion:PivotGridControl>
+</Grid>
+
+{% endhighlight %}
+
+Else if through **Code-Behind**, please refer the below code snippet.
+
+{% highlight C# %}
+
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
+
+        pivotGrid.ShowFieldList = true;
+    }
+}
+
+{% endhighlight %}
+
+![](PivotGridFieldlist-images/PivotGrid Shows Field List.png)
 

@@ -19,11 +19,13 @@ To import the charts into SfSpreadsheet, need to create an instance of [GraphicC
 
 Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9263.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
 
+{% tabs %}
 {% highlight c# %}
 
     this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ## Sparklines
@@ -32,9 +34,11 @@ To import the Sparklines into SfSpreadsheet, need to create an instance of [Spar
 
 Add the SparklineCellRenderer into the GraphicCellRenderers collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9264.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
 
+{% tabs %}
 {% highlight c# %}
 
     this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
 
 {% endhighlight %}
+{% endtabs %}
 

@@ -11,6 +11,7 @@ documentation: ug
 
 This section explains about the formatting options similar to excel in SfSpreadsheet
 <br/>
+<br/>
 
 ## Cell Styles
 
@@ -27,18 +28,21 @@ For your reference, for applying background color for the cells in SfSpreadsheet
 
 For single cell
 
+{% tabs %}
 {% highlight c# %}
 
-    IRange range = spreadsheet.ActiveSheet.Range["A5"];
+IRange range = spreadsheet.ActiveSheet.Range["A5"];
 
-    range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
 
-    spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
+spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 {% endhighlight %}
+{% endtabs %}
 
 For selected range of cells,
 
+{% tabs %}
 {% highlight c# %}
 
     var selectedRanges = spreadsheet.ActiveGrid.SelectedRanges;
@@ -58,33 +62,38 @@ For selected range of cells,
     }
 
 {% endhighlight %}
+{% endtabs %}
 
 For more information regarding formatting options, please go through [XlsIO](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+<br/>
 <br/>
 
 ## Merge Cells
 <br/>
+
 ### Merge
 
 SfSpreadsheet provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
 
 For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic335.html) into [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2567.html) collection of SpreadsheetGrid and merge the range using [Merge](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3452.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
+{% tabs %}
 {% highlight c# %}
 
-    var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-    var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
+var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
-    var coverCell = new CoveredCellInfo(gridrange.Top, gridrange.Left, gridrange.Bottom, gridrange.Right);
+var coverCell = new CoveredCellInfo(gridrange.Top, gridrange.Left, gridrange.Bottom, gridrange.Right);
 
-    spreadsheet.ActiveGrid.CoveredCells.Add(coverCell);
+spreadsheet.ActiveGrid.CoveredCells.Add(coverCell);
 
-    spreadsheet.ActiveSheet.Range[excelrange].Merge();
+spreadsheet.ActiveSheet.Range[excelrange].Merge();
 
-    spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
+spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
 
 {% endhighlight %}
+{% endtabs %}
 <br/>
 
 ### Unmerge
@@ -93,17 +102,19 @@ You can also unmerge the merged cells in SfSpreadsheet.
 
 For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic2567.html) from the SpreadsheetGrid and unmerge the range using [UnMerge](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic3461.html) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
+{% tabs %}
 {% highlight c# %}
 
-    var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-    var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
+var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
-    spreadsheet.ActiveGrid.CoveredCells.Clear(gridrange);
+spreadsheet.ActiveGrid.CoveredCells.Clear(gridrange);
 
-    spreadsheet.ActiveSheet.Range[excelrange].UnMerge();
+spreadsheet.ActiveSheet.Range[excelrange].UnMerge();
 
-    spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
+spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
 
 {% endhighlight %}
+{% endtabs %}
 
