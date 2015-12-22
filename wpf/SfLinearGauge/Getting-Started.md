@@ -15,7 +15,7 @@ Refer to the following code example to add a Linear Gauge to your application:
 
 {%tabs%}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -156,7 +156,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 6. Create a namespace reference to the SfLinearGauge control by using the Syncfusion’s global namespace reference, schemas.syncfusion.com or the SfLinearGauge control’s namespace reference  by using the Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfLinearGauge.WPF assembly.
 
-    {%highlight xaml%}
+    {%highlight xml%}
      
 			 xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
 
@@ -171,7 +171,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 7.Add the following code to create a simple SfLinearGauge control.
 
-   {%highlight xaml%}
+   {%highlight xml%}
 
 
 
@@ -229,7 +229,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 
 
-        {%highlight xaml%}
+        {%highlight xml%}
     
 			 using System.Windows;
 

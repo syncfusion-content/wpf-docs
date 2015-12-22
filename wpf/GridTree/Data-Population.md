@@ -71,7 +71,7 @@ The default behavior of the GridTree control is to display all simple, public pr
 
 The following code example illustrates how to set these properties for the GridTreeColumns by using XAML code.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

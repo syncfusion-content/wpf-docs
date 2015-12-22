@@ -24,7 +24,7 @@ ColorMapping is categorized into four different types such as,
 The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -57,7 +57,7 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 The headers of TreeMap level can also be colored using ColorMapping property of TreeMapLevel. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -106,7 +106,7 @@ The headers of TreeMap level can also be colored using ColorMapping property of 
 TreeMap leaf nodes can be colored with the help of Color property specified using UniColorMapping.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
     <Grid Background="Black">
@@ -162,7 +162,7 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 The leaf nodes of TreeMap can be colored based upon the range, such as From and To, and Brush specified using RangeBrush collection of RangeBrushColorMapping.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -215,7 +215,7 @@ The leaf nodes of TreeMap can be colored based upon the range, such as From and 
 The leaf nodes of TreeMap can be colored based upon the Color specified using DesaturationColorMapping. The RangeMinimum and RangeMaximum must be specified to determine the opacity for each leaf node. The opacity of leaf nodes are in the range of From and To mentioned in DesaturationColorMapping.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -259,7 +259,7 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 The leaf nodes are colored by using the brushes mentioned in Colors collection of PaletteColorMapping.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -317,7 +317,7 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 The leaf nodes are colored by using different ColorMappings available in the TreeMap control. Each group can also be colored with different ColorMappings of TreeMapGroupColorMapping. GroupColorMapping is done based on the GroupID property.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

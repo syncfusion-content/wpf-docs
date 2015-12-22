@@ -51,7 +51,7 @@ When you invoke the Serialize method, it exports the current DataGrid control pr
 The following code example illustrates on how to use Serialization and Deserialization in the DataGrid control using SerializationOptions and DeserializationOptions. SerializationOptions and DeserializationOptions are a class used to specify the options for customizing serialization and deserialization respectively. You can achieve this by clicking Serialize button and when the XML file is saved, reconstruct the DataGrid control by clicking the Deserialize button.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -563,7 +563,7 @@ public class SerializationControllerExt : SerializationController
 By default, the columns that exist in the grid when you apply serialization alone are displayed after deserializing the grid. When you want to preserve the columns that currently exist in the grid while applying deserialization, but not in the layout while serialization, customize SerializationController to achieve this. The following code example illustrates how to customize SerializationController.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -751,7 +751,7 @@ By default, the grid columns are serialized during serialization of DataGrid. Bu
 Consider, the grid contains the following columns. Here DatePickerColumn is custom column.	
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -18,7 +18,7 @@ You can add any number of wizard pages to the Wizard control. They are plenty of
 To add a wizard page to the Wizard control, use the below code
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -55,7 +55,7 @@ wizardControl.Items.Add(wizardPage);
 To add two wizard pages to the Wizard control, refer the below code
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -102,7 +102,7 @@ You can select the wizard page from the wizard control by using the SelectedWiza
 To set this property, use the below code.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -163,7 +163,7 @@ You can set the title and description for the wizard page by using the Title and
 Use the following code snippet to set these properties.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -214,7 +214,7 @@ You can set the type of the wizard page by using the PageType property. There ar
 Use the below code snippet to set the PageType as Blank.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -255,7 +255,7 @@ wizardPage.PageType = WizardPageType.Blank;
 Use the following code snippet to set the PageType as Interior.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -289,7 +289,7 @@ wizardPage.PageType = WizardPageType.Interior;
 Use the following code snippet to set the PageType as Exterior.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -346,7 +346,7 @@ You can enable or disable the Back, Cancel, Next and Finish navigation buttons i
 Here is the code snippet.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -397,7 +397,7 @@ To set these properties, refer the below code.
 
 {%tabs%}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -451,7 +451,7 @@ You can set custom text for the Back, Next, Finish, Help and Cancel navigation b
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -565,7 +565,7 @@ You can close the Wizard control window by clicking the Cancel or Finish button 
 To enable these properties, refer the below code
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -634,7 +634,7 @@ Routed Event</td><td>
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

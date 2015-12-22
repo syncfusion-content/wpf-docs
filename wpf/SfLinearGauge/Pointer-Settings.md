@@ -17,7 +17,7 @@ Bar pointer is an accenting line or colored bar that is placed on the Linear Gau
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -85,7 +85,7 @@ In the symbol pointer type, the value is pointed by a symbol on the scale. You c
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -154,7 +154,7 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 3. Cross.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

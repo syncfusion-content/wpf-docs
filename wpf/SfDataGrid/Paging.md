@@ -34,7 +34,7 @@ You can page the data in DataGrid using SfDataPager control. You can refer the f
 The following code example illustrates using DataPager with the SfDataGrid control.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -104,7 +104,7 @@ N> In OnDemand paging, you cannot assign a value for the Source property in SfDa
 The following code example illustrates defining DataPager for OnDemandPaging:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

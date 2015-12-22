@@ -22,7 +22,7 @@ Following code restricts docking at the top:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <shared:ToolBarManager x:Name="toolBarManager" CanDockAtTop="False"
 

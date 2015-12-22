@@ -15,7 +15,7 @@ You can arrange GroupView items in list view mode using the following code.
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <!-- Adding GroupBar that have visual mode is Multiple Expansion -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar"> 
  <!-- Adding GroupBarItem --> 

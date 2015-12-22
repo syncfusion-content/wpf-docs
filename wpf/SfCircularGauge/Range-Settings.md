@@ -18,7 +18,7 @@ Range is a visual element that begins and ends at specified values within a scal
 ### Code Example
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -80,7 +80,7 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 ### Code Example
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -152,7 +152,7 @@ You can bind the range’s stroke to the tick lines and labels within its range 
 ### Code Example
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
@@ -226,7 +226,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 ### Code Example
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

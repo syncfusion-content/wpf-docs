@@ -19,7 +19,7 @@ TaskBar control supports the following types of orientation.
 Use the below code snippet to set the orientation.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

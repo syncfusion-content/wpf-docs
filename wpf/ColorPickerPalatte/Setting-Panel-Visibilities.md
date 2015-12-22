@@ -22,7 +22,7 @@ Setting Panel Visibilities can be added to an application by using XAML or C# co
 The following code example illustrates how to add the Setting Panel Visibilities feature to an application through XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -46,7 +46,7 @@ RecentlyUsedPanelVisibility="Collapsed"/>
 The following code example illustrates how to add the Setting Panel Visibilities feature to an application through C#.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

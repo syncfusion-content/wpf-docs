@@ -36,7 +36,7 @@ ShapeStrokeThickness is a double type property that sets the border thickness of
 These setting works only when “AutoFillColor” is set as false.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -111,7 +111,7 @@ Gets or sets the color values for the given range based on the From and To .</td
 The fill color of a particular bubble fill is determined by its under-bound value and color range. To provide a Tree Map like impact on the map, the data binding should work properly. For example, consider the following color ranges.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -149,7 +149,7 @@ AutoFillColor must be set to false to enable the range color mapping.
 N> The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -207,7 +207,7 @@ ColorPalette is a set of colors that are applied on the shapes. Map contains two
 ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorPalette is the enum property that accepts Metro, CoolBlue and CustomPalette.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -257,7 +257,7 @@ MapColorPalette contains a property named “FillBrush”. This property sets th
 ## Code to set CustomColorPalette:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

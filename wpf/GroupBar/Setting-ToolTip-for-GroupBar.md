@@ -34,7 +34,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" CollapseButtonToolTip="Expand"  VisualMode="StackMode" AllowCollapse="True"  ExpandButtonToolTip="Collapse" Width="230" Name="groupBar"> 
  <!-- Adding GroupBarItem -->  

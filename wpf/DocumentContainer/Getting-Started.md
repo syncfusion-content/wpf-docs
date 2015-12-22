@@ -63,7 +63,7 @@ To create the Document Container programmatically, use the following XAML or C# 
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding Document Container -->
 <syncfusion:DocumentContainer Name="DocContainer"/>
 {% endhighlight %}

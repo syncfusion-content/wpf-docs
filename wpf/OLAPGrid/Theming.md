@@ -58,7 +58,7 @@ A sample demo available in the following link,
 The following code sample demonstrates how to add theming to the OlapGrid control.
 
 {% tabs %}
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 

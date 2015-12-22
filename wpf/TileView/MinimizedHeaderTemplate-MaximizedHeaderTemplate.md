@@ -22,7 +22,7 @@ The MinimizedHeaderTemplate and MaximizedHeaderTemplate can be added to an appli
 The following code example illustrates how to add the MinimizedHeaderTemplate and MaximizedHeaderTemplate to an application through XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

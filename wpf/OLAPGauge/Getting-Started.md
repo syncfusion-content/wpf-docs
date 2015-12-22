@@ -30,7 +30,7 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 5. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
    
    
-   {%highlight xaml%}
+   {%highlight xml%}
   
 
 
@@ -339,7 +339,7 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
 6.Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
    
-   {%highlight xaml%}
+   {%highlight xml%}
  
 
 

@@ -38,7 +38,7 @@ The RangeAdornerBackground property must be set either in XAML or the code file.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
  RangeAdornerBackground="LightGreen"

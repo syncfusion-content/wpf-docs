@@ -15,7 +15,7 @@ The following code snippet explains the scenario where an user control of Button
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -59,7 +59,7 @@ Styles based on the button style should be defined in the application as follows
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

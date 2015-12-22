@@ -23,7 +23,7 @@ The following code example illustrates how to add the Expanded Mode to an applic
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

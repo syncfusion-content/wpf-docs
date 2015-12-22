@@ -19,7 +19,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" DraggingItemInProgress="True" Width="230" Name="groupBar"> 
  <!-- Adding GroupBarItem -->  
@@ -64,7 +64,7 @@ You can customize the cursor type of GroupBar item using the GroupBarItemCursorT
 Use the below code snippet to set this property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" GroupBarItemCursorType="Hand"  Width="230" Name="groupBar"> 
  <!-- Adding GroupBarItem --> 
@@ -107,7 +107,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" ItemContentLength="100" Name="groupBar"> 
  <!-- Adding GroupBarItem -->  
@@ -175,7 +175,7 @@ It is now possible to set the corner radius of GroupBar Items in the GroupBar by
 The following code examples illustrate how to set this property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:GroupBarItem HeaderText="Mailbox" GroupBarItemCornerRadius="20" ShowInGroupBar="True">
 {% endhighlight %}
 

@@ -16,7 +16,7 @@ The PercentTextBox exposes the following events:
 PercentValueChanged – The event occurs when the PercentValue property of the PercentTextBox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox ValueChanged="PercentTextBox_PercentValueChanged"/>
 
 {% endhighlight %}
@@ -53,7 +53,7 @@ You can handle the event as follows:
 TextChanged – The event occurs when the PercentValue property of the PercentTextBox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox TextChanged="PercentTextBox_TextChanged"/>
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ You can handle the event as follows:
 CultureChanged – The event occurs when the Culture property of the PercentTextBox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox CultureChanged="PercentTextBox_CultureChanged"/>
 {% endhighlight %}
 
@@ -124,7 +124,7 @@ You can handle the event as follows:
 MaxValueChanged – The event occurs when the MaxValue property of the PercentTextBox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox MaxValueChanged="PercentTextBox_MaxValueChanged"/>
 {% endhighlight %}
 
@@ -162,7 +162,7 @@ You can handle the event as follows:
 MinValueChanged – The event occurs when the MinValue property of the PercentTextBox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox MinValueChanged="PercentTextBox_MinValueChanged"/>
 {% endhighlight %}
 
@@ -201,7 +201,7 @@ You can handle the event as follows:
 SelectionChanged – The event occurs when the selection in the textbox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox SelectionChanged="PercentTextBox_SelectionChanged"/>
 {% endhighlight %}</td></tr>
 

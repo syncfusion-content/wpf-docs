@@ -36,7 +36,7 @@ Use the following code to set the skin for the Document Container.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding document container -->
 <syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">
   …....  …....</syncfusion:DocumentContainer>

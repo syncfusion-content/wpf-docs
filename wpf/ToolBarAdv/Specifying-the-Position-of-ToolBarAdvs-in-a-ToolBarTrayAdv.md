@@ -14,7 +14,7 @@ You can specify the position the ToolBarAdv in the ToolBarTrayAdv using the Band
 Specify the position the ToolBarAdv in the ToolBarTrayAdv as given in the following code:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

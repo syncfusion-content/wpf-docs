@@ -614,7 +614,7 @@ You have to use the Value property to set the value for the DoubleTextBox.
 N> Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> 
 {% endhighlight %} 
 
@@ -635,7 +635,7 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100" 
 MinValue="-999.99" MaxValue="999.99"/> 
 {% endhighlight %} 
@@ -658,7 +658,7 @@ N> WatermarkText is visible only when the value is null.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
  <syncfusion:DoubleTextBox x:Name="doubleTextBox" 
  Height="25" Width="100"                           
  Value="{x:Null}" MinValue="-999" MaxValue="999"     

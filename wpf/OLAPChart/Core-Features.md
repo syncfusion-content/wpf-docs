@@ -522,7 +522,7 @@ Series can be customized with user defined data templates. The following sample 
 
 The following data template will be used to customize the series:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
   
 
@@ -737,7 +737,7 @@ C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OL
 
 We can use the following code sample for enabling chart animations: 
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
 
 
@@ -984,7 +984,7 @@ N> For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can d
 
 To display the ‘%’ symbol in secondary axis, you need to set the secondary axis label format property. The following code snippet describes the usage of ‘%’ in the secondary axis label:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
   
 
@@ -1005,7 +1005,7 @@ To display the ‘%’ symbol in secondary axis, you need to set the secondary a
 
 To display the currency symbol in the secondary axis, you need to set the secondary axis label format property. The following code snippet describes the usage of currency in the secondary axis label:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -1024,7 +1024,7 @@ To display the currency symbol in the secondary axis, you need to set the second
 
 The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by speicifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -1119,7 +1119,7 @@ The PrimaryAxisLabelPanel visibility can be toggled by setting the PrimaryAxisLa
 
 The following code snippet is used to collapse the PrimaryAxis label:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -1180,7 +1180,7 @@ Chart Legend
 
 The ChartLegend can be added to an OlapChart by adding the ChartLegend of the Essential Chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code snippets explain how to add a legend to an OlapChart:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -1217,7 +1217,7 @@ The ChartLegend can be added to an OlapChart by adding the ChartLegend of the Es
 
 The ChartLegend has a visibility property using which you can show or hide the ChartLegend in an OlapChart. The following code snippets show how you can collapse the visibility of the ChartLegend:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -1265,7 +1265,7 @@ Me.olapChart.Legend.Visibility = System.Windows.Visibility.Collapsed
 
 The visibility of the legend check box can be toggled by using the CheckBoxVisibility property in the ChartLegend. The following code snippet shows how to toggle the visibility of the check box in the legend of an OlapChart:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -1312,7 +1312,7 @@ Me.olapChart.Legend.CheckBoxVisibility = System.Windows.Visibility.Collapsed
 
 The visibility of the legend icon can be toggled by using the IconVisibility property in the ChartLegend. The following code snippet shows how to toggle the visibility of the icons in an OlapChart legend:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -1389,7 +1389,7 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Right)
 
 You can use the RowsCount and ColumnsCount property to create the rows or the columns of an OlapChart legend. The RowsCount and ColumnsCount will internally be used to create a Grid layout control to place the legends. The following code snippet shows how to set the number of rows or columns in an OlapLegend:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -1492,7 +1492,7 @@ The following illustration shows the basic column chart:
 
 The following code snippet shows how to select a simple column chart:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -1552,7 +1552,7 @@ The following illustration shows the stacking column chart:
 
 The following code snippet shows how to select a stacking column chart:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -1613,7 +1613,7 @@ The following illustration shows the stacking column 100 chart:
 
 The following code snippet shows how to select a stacking column 100 chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -1669,7 +1669,7 @@ The following illustration shows the simple bar chart:
 
 The following code snippet shows how to select a bar chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -1723,7 +1723,7 @@ The following illustration shows the simple bar chart:
 
 The following code snippet shows how to select a bar chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -1789,7 +1789,7 @@ The following illustration shows the StackingBar100 chart:
 
 The following code snippet shows how to select a bar chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -1844,7 +1844,7 @@ The following illustration shows the simple Area chart:
 
 The following code snippet shows how to select an Area chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -1908,7 +1908,7 @@ The following illustration shows the StackingArea chart:
 
 The following code snippet shows how to select a StackingArea chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -1965,7 +1965,7 @@ The following illustration shows the Spline area chart:
 
 The following code snippet shows how to select a Spline area chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
    
 
@@ -2019,7 +2019,7 @@ The following illustration shows the Step area chart:
 
 The following code snippet shows how to select a Step area chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -2074,7 +2074,7 @@ The following illustration shows the Line chart:
 
 The following code snippet shows how to select a Line chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -2128,7 +2128,7 @@ The following illustration shows the Spline chart:
 
 The following code snippet shows how to select a Spline chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -2183,7 +2183,7 @@ The following illustration shows the RotatedSpline chart:
 
 The following code snippet shows how to select a RotatedSpline chart.
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -2249,7 +2249,7 @@ The following illustration shows the StepLine chart:
 
 The following code snippet shows how to select a StepLine chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
    
 
@@ -2317,7 +2317,7 @@ The following illustration shows the Scatter chart:
 
 The following code snippet shows how to select a Scatter chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -2372,7 +2372,7 @@ The following illustration shows the Pie chart:
 
 The following code snippet shows how to select a Pie chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
    
 
@@ -3503,7 +3503,7 @@ A demo is available in the following location:
 
 The following code snippets demonstrate how theming is added to the OLAPChart control.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
    
 
@@ -3566,7 +3566,7 @@ Gets or sets the zoom reset button visibility.</td></tr>
 
 The following code snippet illustrates the above settings:
 
- {% highlight xaml %}
+ {% highlight xml %}
 
     
 
@@ -3846,7 +3846,7 @@ enum</td></tr>
 
 To enable RTL support, the FlowDirection property of the OLAP Chart control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
     
 

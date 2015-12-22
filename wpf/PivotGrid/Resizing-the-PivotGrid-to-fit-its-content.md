@@ -41,7 +41,7 @@ The **ResizePivotGridToFit** property can be defined both in *XAML* and *Code-Be
 
 If through **XAML**, please refer the below code snippet.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Grid>
     <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ResizePivotGridToFit="True" ItemSource="{Binding   Source={StaticResource data}}">

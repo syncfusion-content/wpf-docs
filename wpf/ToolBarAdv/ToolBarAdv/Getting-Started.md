@@ -30,7 +30,7 @@ N> Following XAML code will be automatically added in the XAML Viewer. You can a
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
 

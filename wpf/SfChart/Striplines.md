@@ -97,7 +97,7 @@ Represents the stripline for chart axis.</td></tr>
 
 The following example illustrates the Stripline feature of chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -151,7 +151,7 @@ The following example illustrates the Stripline feature of chart.
 
 The following example illustrates the Segmented Stripline feature of chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

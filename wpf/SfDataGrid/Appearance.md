@@ -50,7 +50,7 @@ The following code example illustrates how to use FreezePanes support in SfDataG
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

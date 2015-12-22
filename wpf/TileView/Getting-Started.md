@@ -107,7 +107,7 @@ N> You can customize the appearance of the TileViewControl and its Item using th
 
 The TileViewControl can also be created through XAML. The following code example illustrates this.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TileViewControl Name="tileViewControl1" >
 

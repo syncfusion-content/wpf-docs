@@ -228,7 +228,7 @@ The following are the brushes that can be customized in Metro Theme.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -273,7 +273,7 @@ To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the a
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <ResourceDictionary>
 

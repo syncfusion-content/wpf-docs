@@ -29,7 +29,7 @@ Note: The NegativeForeground in the integer textbox can be enabled by setting th
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -51,7 +51,7 @@ Note: The ZeroColor in the integer textbox can be enabled by setting the ApplyZe
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

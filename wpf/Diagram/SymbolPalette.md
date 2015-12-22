@@ -103,7 +103,7 @@ Symbol Filters</td></tr>
 The SymbolPalette can be displayed by setting the IsSymbolPaletteEnabled property to True. By default, this property is disabled.
 
 The following code can be used to enable the SymbolPalette.
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

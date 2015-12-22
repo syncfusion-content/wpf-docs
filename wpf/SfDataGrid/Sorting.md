@@ -74,7 +74,7 @@ The following code example illustrates this.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -133,7 +133,7 @@ The DataGrid provides you the following Events for the sorting functionality:
 The following code example explains you how to hook those events.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -200,7 +200,7 @@ The following code example illustrates that.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -252,7 +252,7 @@ The following code example illustrates that.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -299,7 +299,7 @@ In the below example, the column is sorted based on string.Length by using custo
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -500,7 +500,7 @@ Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -19,7 +19,7 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

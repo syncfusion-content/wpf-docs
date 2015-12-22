@@ -18,7 +18,7 @@ The StartValue and EndValue properties determine the overall range of the circul
 ### Code Example
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

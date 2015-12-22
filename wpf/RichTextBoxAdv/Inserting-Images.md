@@ -62,7 +62,7 @@ ImageContainerAdv can be used to add an image directly to an application using t
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
  
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            

@@ -132,7 +132,7 @@ this.treeGrid.AllowSort = true;
 
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -171,7 +171,7 @@ this.treeGrid.EnableMultiColumnSorting = true;
 
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -219,7 +219,7 @@ this.treeGrid.EnableTriStateSorting = true;
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -266,7 +266,7 @@ The second action is to populate the GridTreeControl.Columns collection, and to 
 
 The following code example illustrates these settings.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -339,7 +339,7 @@ UpdateMode</td></tr>
 
 The following code snippet explains how to set UpdateMode in XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -826,7 +826,7 @@ After Cell Appearance Applied
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -964,7 +964,7 @@ After Expander Appearance Applied
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1093,7 +1093,7 @@ After Header Appearance Applied
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1257,7 +1257,7 @@ After Row Appearance Applied
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

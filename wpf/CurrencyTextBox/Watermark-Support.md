@@ -12,7 +12,7 @@ documentation: ug
 Watermark is the dummy content displayed in the CurrencyTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="150" Height="25" 
@@ -37,7 +37,7 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -16,7 +16,7 @@ Assembly : Syncfusion.SfTreeNavigator.WPF (in Syncfusion.SfTreeNavigator.WPF.dll
 The following code sample shows how to create the Tree Navigator from code-behind and XAML, 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 <navigation:SfTreeNavigator Header="Enterprise Toolkit" >
 

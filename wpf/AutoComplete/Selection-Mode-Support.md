@@ -44,7 +44,7 @@ Adding Single, Multiple & Extended Selection Support to an Application
 
 The Selectionmode property is used to attain these functionalities by setting its value as Single or Multiple or Extended. By default its value is Single. The following code snippet is used to set the SelectionMode property. 
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/>
 {% endhighlight %}
 {% highlight c# %}

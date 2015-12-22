@@ -16,7 +16,7 @@ You can also set the value for Left, Right, Bottom and Top group margins.
 Use the below code for setting the group margin.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

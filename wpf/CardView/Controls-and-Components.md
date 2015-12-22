@@ -192,7 +192,7 @@ NA</td></tr>
 
 CanEdit property can be added directly to an application using the following code example:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:CardView CanEdit="False">        
 
@@ -238,7 +238,7 @@ NA</td></tr>
 
 ShowHeader property can be added directly to an application using the following code example:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:CardView ShowHeader="False">        
 

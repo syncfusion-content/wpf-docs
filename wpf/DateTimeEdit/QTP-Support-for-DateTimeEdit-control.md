@@ -15,7 +15,7 @@ The QTP tool can recognize the DateTimeEdit control. Hence with the DateTimeEdit
 
 QTP Tool interacts with the control through CustomServerBase extension through the RunInterface. The custom server must be mapped to the control type for the tool to identify the control. A conventional configuration file (*.cfg) will resemble the one shown in the following code snippet. When the configuration file and the dll containing the server type are loaded, QTP will recognize the control and record it.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 

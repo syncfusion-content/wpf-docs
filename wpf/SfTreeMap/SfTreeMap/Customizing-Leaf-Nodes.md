@@ -12,7 +12,7 @@ documentation: ug
 You can customize leaf nodes by assigning data template to LeafTemplate of SfTreeMap. 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

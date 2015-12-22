@@ -134,7 +134,7 @@ Gets or sets the print row height</td><td>
 The following code example shows you how to use Printing feature in SfDataGrid with Print Preview.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -487,7 +487,7 @@ DataGrid allows you to set the Header and Footer in Printable page. You can set 
 The following code example illustrates how to set Header and Footer in PrintablePage.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

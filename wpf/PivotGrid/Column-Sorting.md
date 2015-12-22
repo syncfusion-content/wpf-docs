@@ -56,7 +56,7 @@ The property **AllowSort** can be mentioned either in the *XAML* or in *Code-Beh
 
 If through **XAML**, please refer the below code snippet.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Grid>
     <syncfusion:PivotGridControl Name="pivotGrid" SortOption="True" RowPivotsOnly="True">

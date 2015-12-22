@@ -28,7 +28,7 @@ AllowAutoComplete: This propertyis a Boolean property that represents enables or
 
 As an example of this feature, consider a simple scenario where the SfMultiColumnDropDownControl is bound to an ObservableCollection, with AutoComplete enabled.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

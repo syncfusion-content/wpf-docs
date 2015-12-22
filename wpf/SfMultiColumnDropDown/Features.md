@@ -16,7 +16,7 @@ This section explains the key properties, behaviors, resizing, and keyboard supp
 In order to display the data in the SfMultiColumnDropDown control, bind the data into the control by using ItemsSource property.
 
 The following code example illustrates how bind the itemsSource to the SfMulticolumnDropDownControl in XAML.
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -218,7 +218,7 @@ public class Data:INotifyPropertyChanged
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -342,7 +342,7 @@ AllowAutoComplete: This propertyis a Boolean property that represents enables or
 
 As an example of this feature, consider a simple scenario where the SfMultiColumnDropDownControl is bound to an ObservableCollection, with AutoComplete enabled.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -444,7 +444,7 @@ In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically
 The following code example illustrates how to use TextSelectionOnFocus in SfMultiColumnDropDownControl.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -481,7 +481,7 @@ SfMultiColumnDropDownControl allows you to filter the item that is bound to the 
 The following code example illustrates how to enable IncrementalFiltering in SfMultiColumnDropDownControl,
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -696,7 +696,7 @@ Changes the selected item when the Popup is open.</td></tr>
 SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearance by setting Popup Background, BorderBrush and BorderThickness etc.
 
 The following code example illustrates how to customize the DropDownPopup.
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

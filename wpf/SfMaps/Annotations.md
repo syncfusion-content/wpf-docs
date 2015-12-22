@@ -28,7 +28,7 @@ AnnotationSymbol is a “VisualObject” that shows a note symbolically.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -107,7 +107,7 @@ The default appearance of the annotation can be customized by using the Annotati
 
 AnnotationTemplateis a DataTemplate type, used to customize or override the default template of MapAnnotations.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

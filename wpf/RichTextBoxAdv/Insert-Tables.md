@@ -13,7 +13,7 @@ Table support for the RichTextBoxAdv control has been implemented as in MS Word.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
               
 <syncfusion:TableAdv>                          

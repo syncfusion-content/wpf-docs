@@ -120,7 +120,7 @@ Headers and Footers can be added to the document to be printed.
 * The height of the header and footer can be adjusted using the GridControl properties- PrintHeaderHeight and PrintFooterHeight.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:GridControl x:Name="grid" PrintHeaderHeight="40" PrintFooterHeight="40">
 
     <syncfusion:GridControl.PrintHeaderTemplate>

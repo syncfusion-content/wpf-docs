@@ -31,7 +31,7 @@ MenuAdv helps users to set the Menu items in Horizontal or Vertical orientations
 
 Users can add the Orientation support to MenuAdv used in the application as mentioned in the code snippet below.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -116,7 +116,7 @@ MenuAdv helps users to use Expand Modes to open the submenu of MenuItemAdv added
 
 When the ExpandMode property is set to ExpandOnClick, you can open the submenu of each MenuItemAdv, which is added MenuAdv by clicking it. This type of expand mode is used to open menus in Windows operating system. Similarly, when the ExpandMode property is set to ExpandOnMouseOver, you can open the submenu of each MenuItemAdv, which is added in MenuAdv by moving the mouse pointer over it. Therefore, you need not click to open the submenu. You can achieve this functionality by using the ExpandMode property, as shown in the following code snippet.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

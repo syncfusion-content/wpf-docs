@@ -48,7 +48,7 @@ The following illustration shows the basic column chart:
 
 The following code snippet shows how to select a simple column chart:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -108,7 +108,7 @@ The following illustration shows the stacking column chart:
 
 The following code snippet shows how to select a stacking column chart:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -169,7 +169,7 @@ The following illustration shows the stacking column 100 chart:
 
 The following code snippet shows how to select a stacking column 100 chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -225,7 +225,7 @@ The following illustration shows the simple bar chart:
 
 The following code snippet shows how to select a bar chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -279,7 +279,7 @@ The following illustration shows the simple bar chart:
 
 The following code snippet shows how to select a bar chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -345,7 +345,7 @@ The following illustration shows the StackingBar100 chart:
 
 The following code snippet shows how to select a bar chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -400,7 +400,7 @@ The following illustration shows the simple Area chart:
 
 The following code snippet shows how to select an Area chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -464,7 +464,7 @@ The following illustration shows the StackingArea chart:
 
 The following code snippet shows how to select a StackingArea chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -521,7 +521,7 @@ The following illustration shows the Spline area chart:
 
 The following code snippet shows how to select a Spline area chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
    
 
@@ -575,7 +575,7 @@ The following illustration shows the Step area chart:
 
 The following code snippet shows how to select a Step area chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -630,7 +630,7 @@ The following illustration shows the Line chart:
 
 The following code snippet shows how to select a Line chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -684,7 +684,7 @@ The following illustration shows the Spline chart:
 
 The following code snippet shows how to select a Spline chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -739,7 +739,7 @@ The following illustration shows the RotatedSpline chart:
 
 The following code snippet shows how to select a RotatedSpline chart.
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -805,7 +805,7 @@ The following illustration shows the StepLine chart:
 
 The following code snippet shows how to select a StepLine chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
    
 
@@ -873,7 +873,7 @@ The following illustration shows the Scatter chart:
 
 The following code snippet shows how to select a Scatter chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
     
 
@@ -928,7 +928,7 @@ The following illustration shows the Pie chart:
 
 The following code snippet shows how to select a Pie chart:
 
-	 {% highlight xaml %}
+	 {% highlight xml %}
 
    
 

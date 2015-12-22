@@ -19,7 +19,7 @@ You can create Rich Interface Applications by defining DataTemplate to a Carouse
 
 The following code tells about Data Binding and DataTemplate.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:Carousel x:Name="carousel" Height="400" Width="450"><br>    <syncfusion:Carousel.Path><br>        <Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/><br>    </syncfusion:Carousel.Path><br>    <syncfusion:Carousel.OpacityFractions><br>        <syncfusion:PathFractionCollection><br>            <syncfusion:FractionValue Fraction="0" Value="1"/><br>        </syncfusion:PathFractionCollection><br>    </syncfusion:Carousel.OpacityFractions><br>    <syncfusion:Carousel.ItemTemplate><br>        <DataTemplate><br>            <Border Height="100" Width="100"><br>                <Border.Background><br>                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><br>                        <GradientStop Color="#FF8B8B8B" Offset="0"/><br>                        <GradientStop Color="#FFDADADA" Offset="1"/><br>                        <GradientStop Color="#FFF3F3F3" Offset="0.536"/><br>                    </LinearGradientBrush><br>                </Border.Background><br>                <ContentControl Content="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center"/><br>            </Border><br>        </DataTemplate><br>    </syncfusion:Carousel.ItemTemplate><br></syncfusion:Carousel>

@@ -49,7 +49,7 @@ N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  MinValue="-999"

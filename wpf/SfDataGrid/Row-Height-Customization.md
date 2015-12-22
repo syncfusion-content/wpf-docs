@@ -58,7 +58,7 @@ height is 24d.
 The following is the code example of the QueryRowHeight event.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -165,7 +165,7 @@ You can get the calculated height of rows through the out parameter (rowHeight) 
 The following code example explains how to use the GetAutoRowHeight method in the QueryRowHeight event.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -285,7 +285,7 @@ The height of the row is calculated based on all the column values. With the Gri
 The following code example explains how to use the GridRowSizingOptions. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -421,7 +421,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -457,7 +457,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 			<syncfusion:SfDataGrid x:Name="syncgrid"

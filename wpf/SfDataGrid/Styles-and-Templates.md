@@ -334,7 +334,7 @@ The following code example illustrates applying styles for cells.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -382,7 +382,7 @@ The following code example illustrates this.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -422,7 +422,7 @@ GroupSummary row displays all the summary values in GroupSummaryCells. You can a
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -462,7 +462,7 @@ All the table summary values are displayed in GridTableSummaryCell. DataGrid ena
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -500,7 +500,7 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -600,7 +600,7 @@ The following code example illustrates how to set the row style for DataGrid.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -636,7 +636,7 @@ The following code example illustrates how to set the alternate row style for Da
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -672,7 +672,7 @@ The following code example illustrates applying styles for Group caption row.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -716,7 +716,7 @@ The following code example illustrates styling of Group Summary rows.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -760,7 +760,7 @@ The following code example displays the styling of TableSummaryRow.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -900,7 +900,7 @@ In the following example, you can set the different row background for DataGrid 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -964,7 +964,7 @@ return base.SelectStyle (item, container);
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1020,7 +1020,7 @@ Null</td></tr>
 The following code example illustrates how to use HeaderTemplate in DataGrid Column.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1168,7 +1168,7 @@ class GridCellTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1259,7 +1259,7 @@ return base.SelectTemplate(item, container);
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1386,7 +1386,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 			</Window.Resources>
@@ -1507,7 +1507,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 			</Window.Resources>
@@ -1556,7 +1556,7 @@ DataGrid allows you to set AlternativeRowCount.By default, AlternatingRowStyle i
 The following code example illustrates how to use AlternatingRowStyle in DataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

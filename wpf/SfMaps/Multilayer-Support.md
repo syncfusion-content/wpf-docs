@@ -27,7 +27,7 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
  
 <syncfusion:SfMap >            

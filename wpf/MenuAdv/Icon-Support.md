@@ -19,7 +19,7 @@ MenuAdv helps users to display an image on the left of the control.
 
 The Icon support can be added to an application by using the Icon property of MenuItemAdv, as shown in the following code snippet.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

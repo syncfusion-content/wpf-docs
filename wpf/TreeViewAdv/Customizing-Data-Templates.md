@@ -17,7 +17,7 @@ The user can customize the business object that has to be displayed as TreeViewI
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <HierarchicalDataTemplate ItemsSource="{Binding Models}">
 
@@ -94,7 +94,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 		x:Key="CheckableTemplate">
 
@@ -125,7 +125,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <local:TreeViewAdvItemTemplateSelector x:Key="treeViewItemTemplateSelector"/>
 
@@ -137,7 +137,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" 		ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}">           
 
@@ -160,7 +160,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate x:Key="EditTemplate">
 
@@ -179,7 +179,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 2.Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv EditedItemTemplate="{StaticResource EditTemplate}" ItemsSource="{Binding TreeItems}" >
 
@@ -249,7 +249,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate  x:Key="CheckableEditTemplate">
 
@@ -273,7 +273,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <local:TreeViewAdvEditTemplateSelector x:Key="treeViewAdvEditTemplateSelector"/>
 
@@ -285,7 +285,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv 
 

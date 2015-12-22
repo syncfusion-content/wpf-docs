@@ -50,7 +50,7 @@ Following are the step-by-step instructions to add an AutoComplete control in a 
 	{:.caption}
 
 
-   {%highlight xaml%}
+   {%highlight xml%}
 
 
          xmlns:syncfusion="clr-namespace:
@@ -207,7 +207,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
    
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <local:ProductSource x:Key="Src"/>

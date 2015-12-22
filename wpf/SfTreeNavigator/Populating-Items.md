@@ -141,7 +141,7 @@ public class TreeViewModel
  Bind the Models collection to the ItemsSource property of the Tree Navigator control as follows. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 
@@ -172,7 +172,7 @@ public class TreeViewModel
 ItemTemplate property of the Tree Navigator can be used to customize the display of business objects. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 

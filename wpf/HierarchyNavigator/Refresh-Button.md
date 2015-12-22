@@ -15,7 +15,7 @@ The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to ini
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <locals:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
 {% endhighlight %}
 

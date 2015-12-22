@@ -23,7 +23,7 @@ Styling can be applied to the MenuAdv control. This control supports the followi
 10. Transparent
 
 These styles can be applied to the control using XAML and C#. The following code example shows how to apply Office2007Blue style to the MenuAdv control.
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

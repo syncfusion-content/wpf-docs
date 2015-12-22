@@ -15,7 +15,7 @@ AutoComplete allows you to resize the drop-down list popup using the CanResizePo
 
 You can use CanResizePopup property to attain this functionality by setting the value as True.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" CanResizePopup ="true" />

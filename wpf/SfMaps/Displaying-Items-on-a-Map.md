@@ -19,7 +19,7 @@ ItemsTemplate is a type of DataTemplate that is used to override the default tem
 
 Implement the Model and ViewModel, as mentioned in the Data Binding topic, and include the following code in the XAML page:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

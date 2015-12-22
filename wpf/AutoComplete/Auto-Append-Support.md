@@ -24,7 +24,7 @@ Auto Append
 
 If the IsAutoAppend property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/>

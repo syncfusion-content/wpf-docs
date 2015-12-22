@@ -70,7 +70,7 @@ N> : By default, the ToolTip is disabled. It must be enabled inorder to use it. 
 
 The following code example can be added to enable and customize the ToolTip feature.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -129,7 +129,7 @@ Gets or sets the Style value that represents the style for the horizontal line.<
 
 ChartCrossHairBehavior implements the feature of tracking data points in a chart. It defines the values in the X and Y axes, when the cursor is moved along the chart. Adding crosshairs makes the SfChart more interactive. The following steps show you how to add CrossHairBehavior to the SfChart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -145,7 +145,7 @@ ChartCrossHairBehavior implements the feature of tracking data points in a chart
 
 To display the movement of X and Y values in the axis set the ShowTrackBallInfo property as True.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -176,7 +176,7 @@ ChartTrackBallBehavior enables you to track a data point closer to the touch pos
 
 You can create an instance for ChartTrackBallBehavior and add it to the Behaviors collection. 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -192,7 +192,7 @@ You can create an instance for ChartTrackBallBehavior and add it to the Behavior
 
 To view the movement of TrackBallBehavior in the Axis, set the ShowTrackBallInfo property as True.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -331,7 +331,7 @@ Zooming can be carried out in X, Y and XY axis that can be specified by the Zoom
 
 Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming property to zoom in on the chart using mouse wheel.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -345,7 +345,7 @@ Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming prope
 
 Also, there are options for selection zooming, when you want to zoom in on a particular portion inside the chart area, you can zoom by the mouse wheel movement.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -357,7 +357,7 @@ Also, there are options for selection zooming, when you want to zoom in on a par
 
 Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property, you can zoom in on the chart area by touching the screen with your fingers.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -379,7 +379,7 @@ Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property,
 
 Zooming relative to the cursor- By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -400,7 +400,7 @@ Scrollbar position- The scrollbar is placed in percentage of ZoomPosition in the
 
 The value of ZoomFactor and ZoomPosition must also fall within the value of 0 to 1. These can be set for both the Primary and Secondary Axes.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -426,7 +426,7 @@ The EnableAutoIntervalOnZooming property is used to define whether you need to k
 
 In some scenarios, you may be required to maintain the interval count as a constant, in order to avoid more gridlines. By disabling this property, you can achieve this requirement as follows.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -446,7 +446,7 @@ Here, Interval is defined as 2, to maintain this interval on zooming.
 
 You can view the zoomed data or series by panning the chart. This can be done by clicking and dragging the chart area, either horizontally or vertically. Also, the option to enable and disable the panning after zooming is also provided.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -496,7 +496,7 @@ Gets or sets the toolbar background.</td></tr>
 
 The following code example can be used to display the zooming tool bar in SfChart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfChart>
 
@@ -552,7 +552,7 @@ SfChart supports selection that enables you to select a segment in a series or s
 
 You can use the following code example to add selection to the chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -631,7 +631,7 @@ Gets or sets bool value that enable or disable the segment selection.</td></tr>
 
 This property is used to define the custom brush for the selected segment. You can use the following code example to set SegmentSelectionBrush to the series.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}"
 
@@ -655,7 +655,7 @@ This feature enables you to select the segment programmatically.
 
 Use the following code example to set SelectedIndex in a SfChart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfChart Name="chart" >
 
@@ -710,7 +710,7 @@ Gets or sets the brush value that indicates the highlighting brush for series.</
 
 Use the following code example to set series selection in a SfChart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfChart SeriesSelectedIndex="1">
 
@@ -875,7 +875,7 @@ This feature allows you to drag the data points along y-axis. The following seri
 
 The following code example is used to enable dragging for the ColumnSeries.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!-- Add the Chart control-->
 
@@ -938,7 +938,7 @@ This feature allows you to drag and drop, the whole series along the y-axis. The
 
 The following code example is used to enable LineSeries dragging.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!-- Add the Chart control-->
 
@@ -1028,7 +1028,7 @@ Gets or sets a template for the visible range label view in touch mode.</td></tr
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Grid.Resources>
 
@@ -1074,7 +1074,7 @@ All the series having Selection support, support the Adornment property.
 
 The following example shows the HighlighOnSelection feature for adornment.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart Margin="10" Name="chart">
 

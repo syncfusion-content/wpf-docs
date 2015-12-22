@@ -129,7 +129,7 @@ To create the GroupBar control through code, use the following XAML or C# code.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> 
 {% endhighlight %} 
@@ -202,7 +202,7 @@ gri.DataContext = this;
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> 
 {% endhighlight %} 
 {% highlight C# %}
@@ -234,7 +234,7 @@ Apply the ItemTemplate to GroupBar, by using the following code.
 
 
 
-{% highlight xaml %}       
+{% highlight xml %}       
 
 <sync:GroupBar.ItemTemplate>
 
@@ -264,7 +264,7 @@ The Item Container Style should be declared as follows.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:GroupBar.ItemContainerStyle>
 
@@ -283,7 +283,7 @@ The Item Container Style should be declared as follows.
 Apply Header Template to the Header Template property of the Item, by using the following code.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 <Setter Property="Header" Value="{Binding}"/>
 
                         <Setter Property="HeaderTemplate">
@@ -307,7 +307,7 @@ Apply Header Template to the Header Template property of the Item, by using the 
 Apply Content Template to Content Template property of the item, by using the following code.
 
 
-{% highlight xaml %}
+{% highlight xml %}
  
 
  <Setter Property="Content" Value="{Binding}"/>
@@ -356,7 +356,7 @@ The following code illustrates this.
 
 N>Data Template has been written for North America Statistics data
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate x:Key="North">
 
@@ -376,7 +376,7 @@ N>Data Template has been written for North America Statistics data
 
 N> Data Template has been written for South America Statistics data.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate x:Key="South">
 
@@ -398,7 +398,7 @@ N> Data Template has been written for South America Statistics data.
 
 N> Data Template has been written for Other Statistics data.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate x:Key="Other">
 
@@ -418,7 +418,7 @@ N> Data Template has been written for Other Statistics data.
 
 N> Following is the data template selector logic set by the user.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 /// <summary>
 
@@ -470,7 +470,7 @@ return win.Resources["Other"] as DataTemplate;
 
 N> The ContentTemplate Selector can be applied as follows.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:GroupBar.ItemContainerStyle>
 

@@ -16,7 +16,7 @@ The following code sample shows how to create the DomainUpDown from code-behind 
 
 {%tabs%}
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 

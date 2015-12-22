@@ -56,7 +56,7 @@ The steps to edit the PercentTextBox Template by using Expression Blend are as f
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the PercentTextBox.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
 
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 

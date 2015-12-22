@@ -30,7 +30,7 @@ The following code explains how to add a DropDownButtonAdv control using XAML:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:DropDownButtonAdv Label="Hello World"/>
 
@@ -68,7 +68,7 @@ Use the following code snippet to set the SizeMode to Small:
 
 
 
-{% highlight xaml %} <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/> {% endhighlight %} 
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/> {% endhighlight %} 
 
 {% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small; {% endhighlight %}
 
@@ -85,7 +85,7 @@ The DropDownButtonAdv control retains the default appearance, when the SizeMode 
 Use the following code snippet to set the SizeMode to Normal:
 
 
-{% highlight xaml %} <sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/> {% endhighlight %}
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/> {% endhighlight %}
 
 {% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal; {% endhighlight %}
 
@@ -104,7 +104,7 @@ Use the following code snippet to set the SizeMode to Large:
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/> 
 {% endhighlight %} 
 
@@ -130,7 +130,7 @@ The SmallIcon property can be set as follows:
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/> 
 {% endhighlight %} 
 
@@ -148,7 +148,7 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
  {% endhighlight %} 
 
@@ -168,7 +168,7 @@ The LargeIcon property can be set as follows:
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/> 
 {% endhighlight %} 
 
@@ -193,7 +193,7 @@ Adding DropDownMenuItems to DropDownButtonAdv:
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 <shared:DropDownMenuGroup>      
 <shared:DropDownMenuItem Header="Menu Item 1"/>      

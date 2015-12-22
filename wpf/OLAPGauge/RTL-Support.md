@@ -40,7 +40,7 @@ To enable RTL support, the FlowDirection property of the OLAP Gauge control need
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
    
 

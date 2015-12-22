@@ -16,7 +16,7 @@ The icon of legend item can be set by LegendIconStyle of TreeMapLegend. Custom l
 The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the help of LegendPosition property.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

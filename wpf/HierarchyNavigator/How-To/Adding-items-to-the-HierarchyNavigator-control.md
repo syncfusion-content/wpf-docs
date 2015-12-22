@@ -74,7 +74,7 @@ hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
 Or
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

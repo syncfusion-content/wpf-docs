@@ -17,7 +17,7 @@ If the PercentTextBox is read-only, then no user input or edits are allowed but 
 
 The Corner Radius describes the degree to which corners are rounded. This property has no default value.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
   
 
@@ -40,7 +40,7 @@ The Foreground of the PercentTextBox can be customized based on the Value proper
 
 N> The NegativeForeground in the PercentTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
    
 
@@ -67,7 +67,7 @@ The Foreground of the PercentTextBox can be customized based on the PercentValue
 
 N> The ZeroColor in the PercentTextBox can be enabled by setting the ApplyZeroColor property to true.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
     
 

@@ -39,7 +39,7 @@ enum</td></tr>
 To enable RTL support, the FlowDirection property of the OLAP Grid control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
 
 {% tabs %}
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 

@@ -54,7 +54,7 @@ Boolean</td></tr>
 UIContainerAdv can be used to add a UI element directly to an application by using the following code snippet: 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
     

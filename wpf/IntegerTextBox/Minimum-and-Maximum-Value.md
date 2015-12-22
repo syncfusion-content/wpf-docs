@@ -49,7 +49,7 @@ N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 {%tabs%}
 
-{% highlight xaml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}
 
 {% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;integerTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;integerTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;integerTextBox.MinValueOnExceedMinDigit = true;integerTextBox.MaxValueOnExceedMaxDigit = true;{% endhighlight %}
 

@@ -12,7 +12,7 @@ documentation: ug
 The WeightValuePath ofSfTreeMap is a path to a field on the source object, which serve as the "weight" of the object. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

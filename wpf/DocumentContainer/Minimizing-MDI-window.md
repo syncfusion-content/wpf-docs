@@ -13,7 +13,7 @@ You can minimize the MDI window by setting the CanMDIMinimize property to _true_
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

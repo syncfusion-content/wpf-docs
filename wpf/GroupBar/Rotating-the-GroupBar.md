@@ -16,7 +16,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" RotationAngle="45" Name="groupBar">
 <!-- Adding GroupBarItem -->

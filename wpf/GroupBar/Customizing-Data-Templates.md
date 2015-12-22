@@ -17,7 +17,7 @@ You can customize how a business object is displayed by using ItemTemplate of Gr
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding GroupItems}"  >
 

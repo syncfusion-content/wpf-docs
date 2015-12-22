@@ -17,7 +17,7 @@ Use the below code to set this property.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
  <!-- Adding GroupBar -->
  <syncfusion:GroupBar Height="200" Width="230" ItemHeaderHeight="50" Name="groupBar"> 
  <!-- Adding GroupBarItem --> 
@@ -58,7 +58,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" HeaderHeight="20" Width="230" VisualMode="StackMode" Name="groupBar">
   <!-- Adding GroupBarItem -->  

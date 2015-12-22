@@ -19,7 +19,7 @@ The EnableExtendedScrolling property is used to change the values based on the c
 We have to set the EnableExtendedScrolling property either in XAML or the code file.
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
  EnableExtendedScrolling ="True"
  {% endhighlight %}
 

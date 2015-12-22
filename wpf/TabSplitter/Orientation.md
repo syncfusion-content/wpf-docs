@@ -19,7 +19,7 @@ TabSplitter Items are placed horizontally or vertically by using the Orientation
 Set the orientation using the code given below:
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

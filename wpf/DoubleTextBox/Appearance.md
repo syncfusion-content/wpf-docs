@@ -77,7 +77,7 @@ The steps to edit the DoubleTextBox Template by using Expression Blend are as fo
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the DoubleTextBox.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:DoubleTextBox Height="25" Width="150" 
 
@@ -107,7 +107,7 @@ Now you can replace the existing Template setter and Triggers with your own crea
 
 Here is a simple example to customize the UnFocused state of the DoubleTextBox: 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Trigger Property="IsFocused" Value="False">
 

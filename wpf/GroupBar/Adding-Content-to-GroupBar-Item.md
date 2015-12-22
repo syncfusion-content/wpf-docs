@@ -17,7 +17,7 @@ GroupView control can be added to the GroupBar Item by using XAML or C# code. He
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  
 <!-- Adding GroupBarItem -->  
@@ -58,7 +58,7 @@ groupBar.Items.Add(groupBarItem);
 GroupView Item can be added to a GroupView using XAML or C# code. Here is the code snippet.
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" Name="groupBar">
 <!-- Adding GroupBarItem --> 
@@ -107,7 +107,7 @@ You can add content to the GroupBar Item using a Panel as follows. This is achie
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -48,7 +48,7 @@ Source—Custom
 AutoComplete can be used with different kinds of Data Sources using the Source property. This support can be added 
 to the application as mentioned in the following code example.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" Source="FilePath"/>

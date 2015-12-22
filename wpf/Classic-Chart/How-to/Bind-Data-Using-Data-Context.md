@@ -10,7 +10,7 @@ documentation: ug
 ## Bind Data Using Data Context
 
 When using multiple series' in the Chart, it might be convenient to set the Data Contexts at the Chart or Chart Area levels and refer to that context from the Chart Series.
-{% highlight xaml %}
+{% highlight xml %}
 
 <sfchart:Chart Name="chart1" DataContext="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" >
 

@@ -15,7 +15,7 @@ The following code snippet will help you to set this property.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" IsToolBarEnabled="True" VisualMode="StackMode" Name="groupBar">
 <!-- Adding GroupBarItem -->

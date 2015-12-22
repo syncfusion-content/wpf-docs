@@ -15,7 +15,7 @@ The following example shows a simple binding between the value of the CurrencyTe
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -40,7 +40,7 @@ The following example shows a simple binding between the value of the CurrencyTe
 The Data Context property provides its value to child elements. So you can set the Data Context on a superior layout container and its value is provided to all child elements. This is very useful if you want to build a form that is bound to multiple properties of the same data object. If you don't explicitly define a source of binding, it takes the data context by default.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -64,7 +64,7 @@ The Data Context property provides its value to child elements. So you can set t
 If you want to bind values other than decimal values, then you need to use the Value Converter. The following example shows a simple binding between the value of the CurrencyTextBox and the Textbox text that reflects the typed value:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

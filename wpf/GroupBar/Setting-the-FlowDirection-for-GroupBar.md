@@ -29,7 +29,7 @@ Sets the flow direction for the GroupBar control. The options provided are as fo
 Use the following code snippet to set this property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <!-- Adding GroupBar that has flow direction as left to right -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar" FlowDirection="RightToLeft">
 <!-- Adding GroupBarItem -->

@@ -48,7 +48,7 @@ StartRangeFromZero</td><td>
 Gets or sets the bool that represents a value to enable start the range from zero. </td></tr>
 </table>
  
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -108,7 +108,7 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -222,7 +222,7 @@ For instance, if the Interval is set as 2 and IntervalType is set as Days, the l
 
 The default IntervalType of a DateTimeAxis is Auto. It calculates the type automatically and the interval, accordingly.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -236,7 +236,7 @@ IntervalType="Years" Interval="1" />
 
 The following code example and screenshot are for DateTimeAxis.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -300,7 +300,7 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -372,7 +372,7 @@ Gets or sets the timespan value that represents the maximum value for the Axis. 
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
  <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -442,7 +442,7 @@ Gets or sets the double value that represents the logarithmic base value of the 
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -494,7 +494,7 @@ SfChart provides a way to arrange multiple series inside the same chart area, gi
 
 By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties XAxis and YAxis in all the series, except Accumulation Series.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:ColumnSeries Label="2010" 
@@ -561,7 +561,7 @@ By default, the x-axis is arranged horizontally at the bottom of the chart and t
 
 The following is the code example for setting the OpposedPosition property.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -591,7 +591,7 @@ The following is a screenshot demonstrating y-axis of a chart arranged in Oppose
 
 This feature is used to reverse chart plotting inverse the axis scaling.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -625,7 +625,7 @@ N> You can force the NumericalAxis to start range from zero by enabling StartRan
 
  The following is the code sample for setting the ChartAxis properties:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -732,7 +732,7 @@ There are two types of LabelPlacement:
 
 The following code example and screenshot shows LabelPlacement set to OnTicks.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -750,7 +750,7 @@ FontSize="16"  />
 
 The following code example and screenshot shows LabelPlacement set to BetweenTicks.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -776,7 +776,7 @@ The LabelsPosition property is used to position the axis label either inside or 
 
 The following code example and screenshot illustrate the use of LabelsPosition.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -792,7 +792,7 @@ FontSize="16"  />
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -823,7 +823,7 @@ The following are the customizing options in EdgeLabelDrawingMode.
 
 The following code example and screenshot show EdgeLabelsDrawingMode set to Center.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -839,7 +839,7 @@ The following code example and screenshot show EdgeLabelsDrawingMode set to Cent
 
 The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -855,7 +855,7 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit
 
 The following code example and screenshot shows EdgeLabelDrawingMode set to Hide.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -871,7 +871,7 @@ The following code example and screenshot shows EdgeLabelDrawingMode set to Hide
 
 The following code example and screenshot shows EdgeLabelsDrawingMode set to Shift.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -899,7 +899,7 @@ The following are the options for intersecting action.
 
 The following code example and screenshot shows LabelsIntersectAction set to None.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -917,7 +917,7 @@ FontSize="16"  />
 
 The following code example and screenshot shows LabelsIntersectAction set to Hide.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -935,7 +935,7 @@ FontSize="16"  />
 
 The following code example and screenshot show LabelsIntersectAction set to MultipleRows.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -961,7 +961,7 @@ You can customize the axis label to display its measuring units by adding a pref
 
 The following code example and screenshot demonstrate the usage of PrefixLabelTemplate.
 
-{% highlight xaml %}
+{% highlight xml %}
 
   <DataTemplate x:Key="yPrefix">
 
@@ -983,7 +983,7 @@ The following code example and screenshot demonstrate the usage of PrefixLabelTe
 
 The following code example and screenshot demonstrate the usage of PostfixLabelTemplate.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate x:Key="yPostfix">
 
@@ -1007,7 +1007,7 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 
 SfChart provides the LabelFormat property for defining the custom formatting for the axis labels. This property supports all standard formatting type of numerical and date time values.
 
-{% highlight xaml %}
+{% highlight xml %}
 
  <syncfusion:SfChart.PrimaryAxis>
 
@@ -1051,7 +1051,7 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart Height="250" Width="500">
 
@@ -1096,7 +1096,7 @@ By default, gridlines are automatically added to the ChartAxis in its defined in
 
 The following code example and screenshot show ShowGridLines set to False.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -1118,7 +1118,7 @@ Ticklines are small markers extending from the gridlines, used to indicate the a
 
 The following code example and screenshot illustrate major and small ticklines set to Inside.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -1134,7 +1134,7 @@ The following code example and screenshot illustrate major and small ticklines s
 
 You can customize the appearance of major gridline, minor gridlines and ticklines using the MajorTickLineStyle, MinorTickLineStyle, MajorGridLineStyle and MinorGridLineStyle properties. Also axis lines can be customized using AxisLineStyle as follows.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart>
 

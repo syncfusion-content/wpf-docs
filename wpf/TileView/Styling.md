@@ -32,7 +32,7 @@ These styles can be applied to the control using XAML and C#. The following code
 
 {%tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TileViewControl         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
 {% endhighlight %}

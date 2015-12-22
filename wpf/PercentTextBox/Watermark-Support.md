@@ -11,7 +11,7 @@ documentation: ug
 
 Watermark is the dummy content displayed in the PercentTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
     
 
@@ -38,7 +38,7 @@ WatermarkText automatically collapses when the control is in focus. When the con
 
 You can customize the Visual appearance of the WatermarkText by using the WatermarkTemplate property.
 
- {% highlight xaml %}
+ {% highlight xml %}
 
    
 

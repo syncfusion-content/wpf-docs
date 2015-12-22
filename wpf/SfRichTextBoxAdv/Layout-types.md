@@ -13,7 +13,7 @@ documentation: ug
 ![](Layout-types_images/Layout-types_img1.jpeg)
 
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" LayoutType="Pages" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.WPF" />
 
 
@@ -34,7 +34,7 @@ richTextBoxAdv.LayoutType = LayoutType.Pages;
 ![](Layout-types_images/Layout-types_img2.jpeg)
 
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" LayoutType="Continuous" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.WPF" />
 
 
@@ -55,7 +55,7 @@ richTextBoxAdv.LayoutType = LayoutType.Continuous;
 ![C:/Users/gunasekarant/Desktop/UG_2013Vol4/Block_4.png](Layout-types_images/Layout-types_img3.jpeg)
 
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" LayoutType="Block" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.WPF" />
 
 

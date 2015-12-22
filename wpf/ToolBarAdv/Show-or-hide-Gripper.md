@@ -13,7 +13,7 @@ You can show or hide the gripper in ToolBarAdv using the _GripperVisibility_ pro
 
 Following code illustrates how to hide the gripper:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

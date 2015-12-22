@@ -13,7 +13,7 @@ Chart data can either be sorted or unsorted. You can turn on the Sorting feature
 
 The following code example explains how to perform the Sorting operation in Chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:LineSeries Label="Series1" IsSortData="True" SortBy="X"                 
@@ -36,7 +36,7 @@ XBindingPath="CompanyName"        YBindingPath="CompanyTurnOver"/>
 
 The following code example and screenshot demonstrate Sorting in Ascending order.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

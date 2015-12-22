@@ -47,7 +47,7 @@ Gets or sets a color for highlighting tree map item while drill down.</td></tr>
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

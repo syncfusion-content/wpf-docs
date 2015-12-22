@@ -96,7 +96,7 @@ HyperlinkAdv can be added directly to an application by using the following code
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            

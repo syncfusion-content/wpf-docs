@@ -19,7 +19,7 @@ The following code adds the DropDownOpening event handler to the DropDownButtonA
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <shared:DropDownButtonAdv DropDownOpening="DropDownButtonAdv_DropDownOpening"/>
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ The following code adds the DropDownOpened event handler to the DropDownButtonAd
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <shared:DropDownButtonAdv DropDownOpened="DropDownButtonAdv_DropDownOpened"/> 
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ The following code adds the DropDownClosing event handler to the DropDownButtonA
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <shared:DropDownButtonAdv DropDownClosing="DropDownButtonAdv_DropDownClosing"/>
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ The following code adds the DropDownClosed event handler to the DropDownButtonAd
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <shared:DropDownButtonAdv DropDownClosed="DropDownButtonAdv_DropDownClosed"/> 
 {% endhighlight %} 
 

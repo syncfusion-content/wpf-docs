@@ -413,7 +413,7 @@ public class OrderInfo
 
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid AutoGenerateColumns="False"
 
@@ -539,7 +539,7 @@ public class TestData : List<dynamic>
 The following code example illustrates binding dynamic object data to DataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window.DataContext>
 
@@ -956,7 +956,7 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
 5. The following code example illustrates the binded itemssource for a Grid. You can mention the connection string from Database file properties.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1231,7 +1231,7 @@ public class ViewModel
 Add required assemblies to your WPF application to use SfDataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="EntityBinding.MainWindow"
 
@@ -1591,7 +1591,7 @@ In addition, GridViewDefinition supports the following list of properties in the
 The following code example illustrates how to define the GridViewDefinition.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -1751,7 +1751,7 @@ The DetailsViewCollapsed event handler receives two arguments namely sender that
 You can wire those events from XAML or Code-Behind. For example.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -1801,7 +1801,7 @@ void grid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventA
 It is not preferable to change the value of the public properties like AllowFiltering, AllowSorting, SelectionUnit, AllowDeleting, etc., from this event argument. You can set the value for these properties in the RootDataGrid itself (defined in the GridViewDefinition) as follows.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -2825,7 +2825,7 @@ private void DataGrid_DetailsViewExpanding(object sender, GridDetailsViewExpandi
 }
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -2880,7 +2880,7 @@ private void AddItem(object sender, RoutedEventArgs e)
 
 You can cusomtize columns and other settings for the Master-Details view Grid for a particular level by using the GridViewDefinition.DataGrid property. In the following code example, Columns are customized for the Master-Details view.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -2924,7 +2924,7 @@ The following code example explains how to customize column in code behind.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -2993,7 +2993,7 @@ _Customized columns Master-Detail view_
 
 You can handle events for the actions in the Master-DetailView like in the Parent Grid.You can wire the events by using the GridViewDefinition.DataGrid from XAML or code behind. 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.DetailsViewDefinition>
 
@@ -3059,7 +3059,7 @@ void DataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 Master-Details View Grid has the GridViewDefintion property that has the DataGrid property. You can set properties for the Master-Details view by using the GridViewDefinition.DataGrid property. The following code example explains you how to set properties in Master-Details View by using the XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -3277,7 +3277,7 @@ N> When AutoGenerateColumns property value is set to ‘false’, you can ignore
 
 The following example illustrates this scenario. For data collection use OrderInfoRepositiory.cs, file.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -3421,7 +3421,7 @@ As mentioned in the second case, the DataGrid control enables you to define colu
 The following code example defines manually to create columns using XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -3745,7 +3745,7 @@ False</td></tr>
 The following code example illustrates that how to set CellTemplate in Numeric Column.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridNumericColumn HeaderText="Quantity"
 
@@ -3797,7 +3797,7 @@ The following code example illustrates on how to use the above property.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!-- Need to add this code snippet in Resources
 
@@ -3853,7 +3853,7 @@ CellTemplateSelector provides a way to select DataTemplate based on the data obj
 
 Create required templates with static keys. 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!-- Need to add this code snippet in Resources-->
 
@@ -3979,7 +3979,7 @@ public class TemplateSelector : DataTemplateSelector
 
 DataContextHelper is the helper class that contains Record and value property to get row data and the value that bound to respective column. The following code example explains you on how to apply CellTemplateSelector.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!--In your column you have to defined like this -->
 
@@ -4094,7 +4094,7 @@ The following provides the list of all properties that supports GridTextColumn:
 The following code example creates GridTextColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" />
 
@@ -4115,7 +4115,7 @@ To format the value displayed in the GridColumn, you can use StringFormat Proper
 The following code example shows you how to declare a GridTextColumn in XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -4150,7 +4150,7 @@ _DataGrid with GridTextColumn_
 You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize your value in binding.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 StringFormat='{} {0:dddd}'}"  <!--  To Format Date  -->
 
@@ -4245,7 +4245,7 @@ NumberFormatInfo.CurrentInfo.NumberNegativePattern</td></tr>
 
 The following code example illustrates how to use GridNumericColumn.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridNumericColumn AllowScrollingOnCircle="False"
 
@@ -4388,7 +4388,7 @@ MinValidation.OnKeyPress</td></tr>
 The following code example illustrates how to use GridCurrencyColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridCurrencyColumn AllowScrollingOnCircle="False"
 
@@ -4528,7 +4528,7 @@ PercentEditMode.DoubleMode</td></tr>
 
 The following code example illustrates how to use GridPercentColumn.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridPercentColumn HeaderText="Discount"
 
@@ -4637,7 +4637,7 @@ N> Mask definition is mandatory to use Date separator, Time Separator, Prompt Ch
 The following code example illustrates how to use GridMaskColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridMaskColumn HeaderText="Contact Number"
 
@@ -4727,7 +4727,7 @@ System.TimeSpan.MinValue</td></tr>
 The following code example illustrates how to use GridTimeSpanColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTimeSpanColumn AllowNull="True"
 
@@ -4871,7 +4871,7 @@ N> NullValue is displayed when AllowNullValue is set to ‘true’. NullValue ta
 The following code example illustrates how to use GridDateTimeColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridDateTimeColumn AllowScrollingOnCircle="True"
 
@@ -4971,7 +4971,7 @@ Null</td></tr>
 The following code example displays how to use GridComboBoxColumn.
 
 
-{% highlight xaml %} 
+{% highlight xml %} 
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -5014,7 +5014,7 @@ The following code example shows how to use ItemTemplate in GridComboBoxcolumn.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboBoxItemsSource, Source={StaticResource viewmodel}}" MappingName="ProductName">
 
@@ -5094,7 +5094,7 @@ The following code example shows how to use GridCheckBoxColumn.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -5174,7 +5174,7 @@ Double.PositiveInfinity</td></tr>
 The following code example shows how to use GridImageColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -5239,7 +5239,7 @@ VerticalAlignment.Stretch</td></tr>
 The following code example illustrates how to use GridHyperlinkColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridHyperlinkColumn DisplayBinding="{Binding Path=ProductName}"
 
@@ -5331,7 +5331,7 @@ The following code example shows templating for GridTemplateColumn. Underlying r
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTemplateColumn MappingName="CustomerID">
 
@@ -5385,7 +5385,7 @@ _DataGrid with GridTemplateColumn_
 
 CellTemplateSelector and EditTemplateSelector provide a way to select DataTemplate based on the data object and the data-bound element. The following code example displays how to use TemplateSelector.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <DataTemplate x:Key="cellTemplate">
 
@@ -5477,7 +5477,7 @@ return Application.Current.Resources["femaleEditTemplate"] as DataTemplate;
 }
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 // APPLYING CELLTEMPLATESELECTOR AND EDITTEMPLATESELECTOR
 
@@ -5532,7 +5532,7 @@ The attached property allows the controls loaded in CellTemplate to handle key n
 The following code example explains you about WantsKeyInput.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTemplateColumn HeaderText="ProductName"
 
@@ -5568,7 +5568,7 @@ The attached property allows the controls loaded in CellTemplate to handle mouse
 The following code example explains you about WantsMouseInput.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTemplateColumn HeaderText="ProductName" MappingName="ProductName">
 
@@ -5596,7 +5596,7 @@ The attached property FocusedElement gives the Focus to particular element insid
 
 The following code example shows, how to set the FocusedElement inside DataTemplate
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID">
 
@@ -5645,7 +5645,7 @@ N> Other than the above attached properties supported, you can set focused eleme
 The following XAML code example displays you how to set focus directly to editor.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -5719,7 +5719,7 @@ Now you can make use of Value property that provides value based on MappingName 
 Then your XAML code is as follows. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID">
 
@@ -5828,7 +5828,7 @@ N> It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, b
 The following code example shows how to use unboundcolumns in the DataGrid control.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid AllowEditing="True"
 
@@ -5898,7 +5898,7 @@ GridUnBoundColumnEventArgs object contains the following properties:
 GridUnBoundColumn provides a special property that bounds a value when given Expression columns names are not equal case. The following code example illustrates that.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridUnBoundColumn AllowEditing="True"
 
@@ -6027,7 +6027,7 @@ False</td></tr>
 The following code example illustrates how to use GridMultiColumnDropDownList.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridMultiColumnDropDownList AutoGenerateColumns="False"
 
@@ -6147,7 +6147,7 @@ N> When you resize the columns and the Columns sizer is in ‘Star’ or ‘Auto
 The following code example illustrates you how to set the ColumnSizing option for DataGrid control.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="datagrid"
 
@@ -6412,7 +6412,7 @@ The DataGrid control provides support to hide a particular Column in XAML or C# 
 The following code example shows how to hide the Columns in XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid AutoGenerateColumns="False"
 
@@ -6502,7 +6502,7 @@ The ResizingColumnsEventArgs object has the following properties:
 The following code example illustrates how to cancel the ResizingColumn. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -6769,7 +6769,7 @@ The DataGrid control provides extensive support to freeze the columns in horizon
 
 The following code example illustrates freezing two columns.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="syncgrid"
 
@@ -6824,7 +6824,7 @@ StackedColumn provides the following properties for implementing StackedHeaders.
 The following code example illustrates how to create StackedHeaders.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.StackedHeaderRows>
 
@@ -6869,7 +6869,7 @@ When you have header text that has more length then you need to set it in a mult
 The following code example illustrates this.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTextColumn DisplayBinding="{Binding Path=OrderID}">
 
@@ -7065,7 +7065,7 @@ GridCellHyperLinkRenderer</td></tr>
 SfDataGrid provides support to apply Tooltip for Cell and Headers. You can achieve this by using the properties ToolTipTemplate for Cells and HeaderToolTipTemplate for HeaderCells in GridColumn. The following code example illustrates this.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTextColumn DisplayBinding="{Binding Path=CustomerID}" MappingName="CustomerID">
 
@@ -7176,7 +7176,7 @@ public bool AllowFiltering
 5.The hightlighted lines creates key for binding collection to DataGrid.       
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -7346,7 +7346,7 @@ The following code example shows you how to Bind ComboItems to ComboBoxColumn.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -7409,7 +7409,7 @@ _Binded ComboItems to ComboBoxColumn_
 SfDataGrid has Hyperlink Column that directly loads Hyperlink control as its UIElement. You can directly set style for Hyperlink control with its TargetType as Hyperlink. Then the style is applied to GridHyperlinkColumn. The following code example illustrates how to set style HyperlinkColumn.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -7660,7 +7660,7 @@ Bind command to button inside the DataTemplate.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -7778,7 +7778,7 @@ Consider a real use case scenario, where you have two Data Sources. One Data Sou
 
 The following code example shows the process of building a DataGrid with multiple Data Sources in action.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="syncgrid"
 
@@ -7874,7 +7874,7 @@ class StringToImageConverter : IValueConverter
 
 You can bind converter to GridImageColumn.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -7898,7 +7898,7 @@ DisplayBinding and ValueBinding in GridColumns of SfDataGrid are used in this ca
 
 The following code example illustrates this.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridHyperlinkColumn DisplayBinding="{Binding Path=ProductName}"
 
@@ -9039,7 +9039,7 @@ typeof(string), typeof(DatePickerColumn));
 Finally, add your custom column to SfDataGrid with the following code example in XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -9109,7 +9109,7 @@ Consider, the grid has four columns and you can set the width as 1*,2*,3*,1* res
 The following code example illustrates how to customize star width calculation.
 
 
-{% highlight xaml %} 
+{% highlight xml %} 
 
 <syncfusion:SfDataGrid Name="dataGrid" AllowSorting="True"
 
@@ -9476,7 +9476,7 @@ The following code example illustrates this.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="datagrid"
 
@@ -9522,7 +9522,7 @@ The DataGrid provides you the following Events for the sorting functionality:
 The following code example explains you how to hook those events.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -9579,7 +9579,7 @@ By default DataGrid allows you to sort the column in ascending and descending or
 
 The following code example illustrates that. 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -9626,7 +9626,7 @@ The following code example illustrates that.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
@@ -9668,7 +9668,7 @@ Custom Sorting feature enables you to implement custom sorting criteria. For eac
 
 In the below example, the column is sorted based on string.Length by using custom comparer. The following code example illustrates how to perform the custom sorting for Customer Name column according to the string length of the names.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -9866,7 +9866,7 @@ Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -10032,7 +10032,7 @@ The following code example illustrates how to perform grouping in XAML.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -10177,7 +10177,7 @@ _Sorted Grouped Columns using sorting indicator in GroupDropAreaItem_
 You can freeze the Grouped header. DataGrid provide an interactive support to Freeze the group caption header while scrolling the Grid vertically. Set SfDataGrid_._AllowFrozenGroupHeaders property to ‘true’ in SfDataGrid. The following code example illustrates how to freeze the group caption header. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -10318,7 +10318,7 @@ The following statements describe you the events that participate in Grouping. D
 You can use this event to cancel Expand or Collapse action by setting cancel to ‘true’. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -10460,7 +10460,7 @@ public class GroupDataTimeConverter : IValueConverter
 
 The following code example defines how to set the custom converter for group description.
 
-{% highlight xaml %} 
+{% highlight xml %} 
 
 <Window.Resources>
 
@@ -10512,7 +10512,7 @@ _DataGrid with Custom Grouping_
 You can customize GroupDropArea text by using GroupDropAreaText property. You can add this property to SfDataGrid and provide value in GroupDropArea. The following code example illustrates how to customize GroupDropArea Text.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <Window x:Class="SimpleApplication.MainWindow"
@@ -10663,7 +10663,7 @@ DataGrid provides exclusive support to show column wise summary values. To show 
 The following code example illustrates this.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid AllowFrozenGroupHeaders="True"
 
@@ -10809,7 +10809,7 @@ N> Summary values are displayed based on the GridSummaryColumn.Format value, whe
 When you declare the summaries as default,DataGrid shows the values in the row. The following code example illustrates how to declare the summaries for DataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid AllowFrozenGroupHeaders="True"
 
@@ -10945,7 +10945,7 @@ N> Default value of GridSummaryRow.ShowSummaryInRow is true._
 This section explains you about GroupSummaries and how to display it. The Group Summary is associated with every group in DataGrid control. DataGrid control provides support to add multiple group summaries, i.e., you can have more than one summary row for every group. The following code example illustrates how to set the group summary for DataGrid control.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.GroupSummaryRows>
 
@@ -10986,7 +10986,7 @@ _DataGrid with Group Summary_
 To show the Group Summaries in column basis you can set the GridSummaryRow.ShowSummaryInRow property to ‘false’. The following code example illustrates this.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.GroupSummaryRows>
 
@@ -11034,7 +11034,7 @@ _DataGrid with Group Summaries in column basis_
 This section explains you about TableSummary and how to display it. The TableSummary is associated with the entire Grid table. DataGrid also provides the support to show the multiple table summary rows.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.TableSummaryRows>
 
@@ -11067,7 +11067,7 @@ _Table Summary at the bottom of the Grid_
 TableSummary has another dependency property Position that displays Table Summary values at Top or Bottom position. The following code example illustrates that.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.TableSummaryRows>
 
@@ -11144,7 +11144,7 @@ _Table Summary at the top of the Grid_
 DataGrid provides built-in support for caption summaries, where the summary values are displayed in the group caption summary cells. You can have only one caption summary row for Group. SfDataGrid.CaptionSummaryRow__property customizes the caption summary.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid.CaptionSummaryRow>
 
@@ -11298,7 +11298,7 @@ return ret;
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -11343,7 +11343,7 @@ The DataGrid enables you to customize the GroupCaption text format. By default, 
 The following code example displays only group key and items count in Caption summary row.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="datagrid"
 
@@ -11413,7 +11413,7 @@ _Control structure of Text Filters_
 To access UI Filtering, you can enable it. UI Filtering is enabled or disabled by setting the AllowFiltering property that applies in both SfDataGrid and GridColumn. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="syncgrid"
 
@@ -11574,7 +11574,7 @@ By default, FilterMode is set to Both.By setting the FilterMode property as Chec
 The following code example shows how to disable the advanced filtering option.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Style TargetType="syncfusion:GridFilterControl">
 
@@ -11663,7 +11663,7 @@ N> Null and NotNull options are available only when AllowBlankFilter is set to �
 AllowBlankFilters propertyallows you to enable or disable the visibility of null values in the filter element list. Blank text is shown for the null values when it is enabled and the null values are not taken into consideration when it is disabled.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTextColumn AllowBlankFilters="True"
 
@@ -11684,7 +11684,7 @@ _DataGrid with Blank Filter_
 
 ImmediateUpdateColumnFilter enables or disables the immediate update of the column filters. When selecting or clearing the check box in the filter element list view using CheckboxFilter, the filter is updated immediately. In AdavncedFilter type, the column filters are updated when Filter type combo box or filter value or radio button state is changed. In this case, the OK and Cancel buttons are unavailable and the Select All option is not reflected in the filter updates.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridTextColumn AllowBlankFilters="True"
 
@@ -11848,7 +11848,7 @@ It is customized using the properties provided in the GridFilterControl. The fol
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Style TargetType="syncfusion:GridFilterControl">
 
@@ -11902,7 +11902,7 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Style TargetType="syncfusion:AdvancedFilterControl">
 
@@ -12174,7 +12174,7 @@ You can edit the FilterToggleButton style in blend. You can see Filtered and UnF
 
 You can add the following code example within Filtered Layer.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <ColorAnimation Duration="0:0:0:1"
 
@@ -12191,7 +12191,7 @@ You can add the following code example within Filtered Layer.
 Add the following code example within UnFiltered Layer.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <ColorAnimation Duration="0:0:0:1"
 
@@ -12207,7 +12207,7 @@ Add the following code example within UnFiltered Layer.
 Now bind this PathFillColor to PART_FilterToggleButtonIndicator.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Path.Fill>
 
@@ -12226,7 +12226,7 @@ When you apply above style to FilterToggleButton, FilterIcon changes from Defaul
 You can improve the filter pop-up opening time by setting CanGenerateUniqueItems property value to ‘False’. A textbox is loaded instead of AdvancedFilterComboBox that allows you to manually enter text for filtering. This increases GridFilterControl’s loading performance.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Style TargetType="syncfusion:AdvancedFilterControl">
 
@@ -12242,7 +12242,7 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 By setting the FilterMode property as CheckboxFilter in GridFilterControl style, you can disable the advanced filtering option. This loads the CheckboxFilter only in GridFilterControl.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Style TargetType="syncfusion:GridFilterControl">
 
@@ -12278,7 +12278,7 @@ PredicateType = PredicateType.Or });
 
 When you use the Text Filters for the column that has number or date value as underlying type, you can set FilterBehavior property of the Grid Column as StringTyped. This loads the Text Filters instead of Number or Date Filters.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:GridNumericColumn FilterBehavior="StringTyped" MappingName="CustomerID" />
 
@@ -12358,7 +12358,7 @@ When you set AllowEditing to ‘True’, you can edit the current cell in the Da
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="grid"
 
@@ -12430,7 +12430,7 @@ True</td></tr>
 When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor the selection is allowed for the GridColumn. The cells are not editable in the specified GridColumn, even when SfDataGrid.AllowEditing is set to ‘true’. In following code example AllowFocus is set to ‘false’ for OrderID column.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -12497,7 +12497,7 @@ EditorSelectionBehavior is dependency property that is used to set selection for
 The following code example illustrates the selection behavior while editing. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -12612,7 +12612,7 @@ void sfdatagrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 }
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -12651,7 +12651,7 @@ Other than core properties, methods and events participate in editing.SfDataGrid
 The data that you edit in loaded EditElement is the bound value from the ValueBinding property. The following code example illustrates how to use it.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -12694,7 +12694,7 @@ _OrderID in View Mode and CustomerID value in Edit Mode_
 You can update the edited values, like Default, PropertyChanged, LostFocus and Explicit. For more information about UpdateSourceTrigger you can [ClickHere](http://msdn.microsoft.com/en-us/library/system.windows.data.updatesourcetrigger(v=vs.110).aspx). In the following code example, whenever the value of CustomerID is changed instantly the underlying collection also changes. Since UpdateTrigger is given as PropertyChanged.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -12738,7 +12738,7 @@ It gets arranged according to its sort direction.
 The same way, you can achieve it for Editing with Grouping and Editing with Filtering.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13020,7 +13020,7 @@ In some cases, you may not want a particular cell to enter into Edit mode. To ac
 Consider a example where you do not want the cell (2, 2) to enter into Edit mode. After handling the event, check for the RowColumnIndex and then cancel the event. This is illustrated in the following code example.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13065,7 +13065,7 @@ In this scenario, consider the properties for discount and price from the data s
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13123,7 +13123,7 @@ This topic explains you how to change the FontSize for EditElement. TextBlock is
 You can achieve this by applying style directly to TextBox. By defining corresponding TextBoxstyle inside the SfDataGrid.Resources, you can show the same font while cell is in edit mode. The following code example illustrates this,
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13484,7 +13484,7 @@ The following steps take you though Cutomization on Validation error template.
 8. Add the following code example within your resources for customizing Error Tooltip template.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13644,7 +13644,7 @@ The following steps take you though Cutomization on Validation error template.
 You can change above ControlTemplate codes to change the tooltip style. You can find your GridCell style here.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13854,7 +13854,7 @@ When you need an instant update that happened on DataSource to view, SfDataGrid 
 5. The same way, you can achieve it for Editing with Grouping and Editing with Filtering.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13907,7 +13907,7 @@ AddNewRow enables adding rows to enter new records in the DataGrid control. The 
 The following code example illustrates how to add AddNewRow to an application:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -13983,7 +13983,7 @@ N> NewObject is the read-only property.
 The following code example illustrates how to use AddNewRowInitiating event.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -14021,7 +14021,7 @@ This section explains you how to delete the records, properties and an event tha
 SfDataGrid has built-in support for deleting records. You can delete a selected row by pressing the Delete key when SfDataGrid.AllowDeleting is set to ‘True’. When multiple records are to be removed from the Grid, you can select multiple records from the SfDataGrid and press Delete.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -14160,7 +14160,7 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -14331,7 +14331,7 @@ N> DataGrid adds the new data to the data source only when the data is valid.
 When you start editing in AddNewRow, the DataGrid control creates an instance for a data object. When the data object contains complex properties, they do not initiate with the data object. Therefore, you need to initiate the complex property externally; otherwise the edited value is not committed in the cell. This requirement is achieved by using the AddNewRowInitiating event. The following code example illustrates this:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -14890,7 +14890,7 @@ By default, the selection mode is set to Single mode. You can assign the selecti
 The following code example illustrates how to set a selection mode for DataGrid control.	
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -14933,7 +14933,7 @@ The following code example shows a DataGrid in row navigation mode.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -15006,7 +15006,7 @@ The following code example shows a DataGrid in Cell selection.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16053,7 +16053,7 @@ _Paste Operation_
 By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfDataGrid. The following code example shows how to copy one cell and paste it into all the selected cells by overriding PasteToCell method in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16156,7 +16156,7 @@ By default you can able to copy one row and paste it into another row. The follo
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16252,7 +16252,7 @@ public class CustomCopyPaste  : GridCutCopyPaste
 By default after pasting also SfDataGrid maintains the previously selected records as it is. When you want to select the pasted records after the Paste operation, then you can achieve your requirement by overriding the PasteToRows and PasteToRow methods in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. This code is applicable for SelectionUnit as Row.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16353,7 +16353,7 @@ public class CustomCopyPaste  : GridCutCopyPaste
 By default while pasting, it changes the values of the already existing records based on clipboard content. The following code example shows how to add the copied records as new rows in SfDataGrid by overriding the PasteToRows method in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16554,7 +16554,7 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16677,7 +16677,7 @@ You can page the data in DataGrid using SfDataPager control. You can refer the f
 The following code example illustrates using DataPager with the SfDataGrid control.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16749,7 +16749,7 @@ N> In OnDemand paging, you cannot assign a value for the Source property in SfDa
 The following code example illustrates defining DataPager for OnDemandPaging:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -16935,7 +16935,7 @@ VirtualizingCollectionView GridItemsSource = new VirtualizingCollectionView(enum
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 }
 
 
@@ -16970,7 +16970,7 @@ The following code example illustrates how to assign a GridVirtualizingCollectio
 GridVirtualizingCollectionView GridItemsSource = new GridVirtualizingCollectionView(enumerableDataSource);
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17335,7 +17335,7 @@ class IncrementalLoadingViewModel
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17690,7 +17690,7 @@ The following code example illustrates applying styles for cells.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17738,7 +17738,7 @@ The following code example illustrates this.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17778,7 +17778,7 @@ GroupSummary row displays all the summary values in GroupSummaryCells. You can a
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17818,7 +17818,7 @@ All the table summary values are displayed in GridTableSummaryCell. DataGrid ena
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17856,7 +17856,7 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17956,7 +17956,7 @@ The following code example illustrates how to set the row style for DataGrid.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -17992,7 +17992,7 @@ The following code example illustrates how to set the alternate row style for Da
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18028,7 +18028,7 @@ The following code example illustrates applying styles for Group caption row.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18072,7 +18072,7 @@ The following code example illustrates styling of Group Summary rows.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18116,7 +18116,7 @@ The following code example displays the styling of TableSummaryRow.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18258,7 +18258,7 @@ In the following example, you can set the different row background for DataGrid 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18322,7 +18322,7 @@ return base.SelectStyle (item, container);
 {% endhighlight %}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18378,7 +18378,7 @@ Null</td></tr>
 The following code example illustrates how to use HeaderTemplate in DataGrid Column.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18526,7 +18526,7 @@ class GridCellTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18617,7 +18617,7 @@ return base.SelectTemplate(item, container);
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -18919,7 +18919,7 @@ DataGrid allows you to set AlternativeRowCount.By default, AlternatingRowStyle i
 The following code example illustrates how to use AlternatingRowStyle in DataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19012,7 +19012,7 @@ height is 24d.
 The following is the code example of the QueryRowHeight event.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19118,7 +19118,7 @@ You can get the calculated height of rows through the out parameter (rowHeight) 
 The following code example explains how to use the GetAutoRowHeight method in the QueryRowHeight event.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19238,7 +19238,7 @@ The height of the row is calculated based on all the column values. With the Gri
 The following code example explains how to use the GridRowSizingOptions. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19407,7 +19407,7 @@ N> Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex ()
 The following code example explains how to customize the header rowHeight.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19652,7 +19652,7 @@ The following code example illustrates how to use FreezePanes support in SfDataG
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19855,7 +19855,7 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 N> You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -19945,7 +19945,7 @@ The GridContextMenuOpening event in SfDataGrid is raised when the context menu i
 The following code example illustrates context menu usage with GroupCaptionContextMenu to expand or collapse the group by using command bindings.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -20491,7 +20491,7 @@ RowHeader is a special Column used to indicate the row status like CurrentRow, E
 The following code example displays you how to enable RowHeader in DataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -20525,7 +20525,7 @@ _DataGrid with a RowHeader_
 By default, the RowHeader width value is set to ’45’ (Data Type: double).you can customize the width by setting any desired width as a numeric value to RowHeaderWidth property in SfDataGrid.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -20608,7 +20608,7 @@ The following code example shows you how to edit current row indicator in row he
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -20790,7 +20790,7 @@ You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip pro
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -20858,7 +20858,7 @@ You can customize the default style of the ToolTip to be shown on the GridCell o
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -20905,7 +20905,7 @@ You can customize the default ToolTip by loading the Data Template as its conten
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <!-- Need to add this code in Resources.     Defines the DataTemplate with Key – For GridCellControl-->
@@ -20968,7 +20968,7 @@ The following XAML has two DataTemplates defined to set for the ToolTip.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -21114,7 +21114,7 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -21191,7 +21191,7 @@ When the GridColumn.SetCellBoundToolTip property is set to true, that sets the D
 In the following XAML code, the same DataTemplate is set to all the columns to display CellValue with the help of the GridColumn.SetCellBoundToolTip and GridColumn.ToolTipTemplate.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -21291,7 +21291,7 @@ You can use the GridContextMenuOpening event to change the contextmenu at Execut
 By default, the contextmenu of Grid does not have any instance, and it is initialized with the contextmenu as illustrated in the following code example.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -21416,7 +21416,7 @@ _Menu Items changed at Execute time according to column position_
 You can also display row index in the row header instead of indicating the status of the row. To display the row index, you have to edit the control template of the GridRowHeaderCell, as shown in the following code example.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
  
 
@@ -21516,7 +21516,7 @@ When you invoke the Serialize method, it exports the current DataGrid control pr
 The following code example illustrates on how to use Serialization and Deserialization in the DataGrid control using SerializationOptions and DeserializationOptions. SerializationOptions and DeserializationOptions are a class used to specify the options for customizing serialization and deserialization respectively. You can achieve this by clicking Serialize button and when the XML file is saved, reconstruct the DataGrid control by clicking the Deserialize button.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -22029,7 +22029,7 @@ public class SerializationControllerExt : SerializationController
 By default, the columns that exist in the grid when you apply serialization alone are displayed after deserializing the grid. When you want to preserve the columns that currently exist in the grid while applying deserialization, but not in the layout while serialization, customize SerializationController to achieve this. The following code example illustrates how to customize SerializationController.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -22217,7 +22217,7 @@ By default, the grid columns are serialized during serialization of DataGrid. Bu
 Consider, the grid contains the following columns. Here DatePickerColumn is custom column.	
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -22557,7 +22557,7 @@ Gets or sets the print row height</td><td>
 The following code example shows you how to use Printing feature in SfDataGrid with Print Preview.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -22908,7 +22908,7 @@ DataGrid allows you to set the Header and Footer in Printable page. You can set 
 The following code example illustrates how to set Header and Footer in PrintablePage.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

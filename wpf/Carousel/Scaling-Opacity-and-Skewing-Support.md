@@ -17,7 +17,7 @@ You can enable or disable this feature, using OpacityEnabled, ScalingEnabled, Sk
 
 The following code illustrates the usage of these properties.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:Carousel x:Name="carousel" Height="400" Width="450" ItemsPerPage="5" OpacityEnabled="True" ScalingEnabled="True" SkewAngleXEnabled="False"                     TopItemPosition="0">

@@ -32,7 +32,7 @@ The visual style can be applied in XAML as follows:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>    
 

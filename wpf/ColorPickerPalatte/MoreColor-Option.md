@@ -21,7 +21,7 @@ MoreColor Option can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the MoreColor Option to an Application through XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

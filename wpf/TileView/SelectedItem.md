@@ -20,7 +20,7 @@ This feature will be very useful who you want to get the SelectedItem.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

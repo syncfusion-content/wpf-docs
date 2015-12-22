@@ -93,7 +93,7 @@ CalculatedMembers</td></tr>
 
 Adding an OLAP report to OLAP Gauge control in design time is described in the following code snippet:
 
- {% highlight xaml %}
+ {% highlight xml %}
 
     
 

@@ -15,7 +15,7 @@ CurrencyTextBox provides globalization support through the Culture property.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
@@ -38,7 +38,7 @@ currencyTextBox.Culture = new CultureInfo("en-US");
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"Culture="fr-FR" Value="1234567"/>
@@ -67,7 +67,7 @@ You can customize the Number Format either by using the NumberFormat property or
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  Value="1234567">   
@@ -93,7 +93,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator =
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567"                           
@@ -148,7 +148,7 @@ $ n</td></tr>
 n $</td></tr>
 </table>
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -241,7 +241,7 @@ n- $</td></tr>
 (n $)</td></tr>
 </table>
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

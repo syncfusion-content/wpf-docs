@@ -15,7 +15,7 @@ The following code sample shows how to use the ItemsCount property:
 
 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 <editors:SfRating ItemsCount="5" Value="2"/>
 

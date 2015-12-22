@@ -27,7 +27,7 @@ The following code example illustrates the above property settings.
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -133,7 +133,7 @@ The various built-in visual styles are listed below.
 {%tabs%}
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv with visual style -->
@@ -233,7 +233,7 @@ You can decorate the header text of the TreeView columns using simple property s
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -312,7 +312,7 @@ You can decorate the header text of the TreeView columns using simple property s
 The TreeViewAdv displays root lines, which link the nodes of a tree structure. These TreeViewAdv root lines are displayed or hidden by using the ShowRootLines property of the class TreeViewAdv. To set this property, use the below code
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv With show root lines -->
@@ -380,7 +380,7 @@ The color of the root lines, which connect different nodes in a TreeViewAdv cont
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -455,7 +455,7 @@ The root lines which connect different nodes in a TreeViewAdv control are custom
 
 {%tabs%}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -537,7 +537,7 @@ TreeViewAdv provides support to set the text color of the items that are dragged
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!-- Adding TreeViewAdv with FakeDragIndicator and FakeItem foreground -->
 

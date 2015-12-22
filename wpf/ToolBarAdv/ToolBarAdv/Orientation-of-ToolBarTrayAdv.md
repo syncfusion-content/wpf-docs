@@ -15,7 +15,7 @@ The following code illustrates how to set orientation:
 
 {%tabs%}
 
-{% highlight xaml %}          
+{% highlight xml %}          
 
             <shared:ToolBarTrayAdv Orientation="Vertical" >
 

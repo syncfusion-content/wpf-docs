@@ -22,7 +22,7 @@ The orientation for minimizing items can be added to an application by using eit
 The following code example illustrates how to add the Orientation for Minimizing Items to an application through XAML.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

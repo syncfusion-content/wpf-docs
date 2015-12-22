@@ -23,7 +23,7 @@ The following code example illustrates how to add the CloseButton feature to an 
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -28,7 +28,7 @@ To set the MDI Bounds, use the following code snippet.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

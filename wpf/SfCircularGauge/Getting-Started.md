@@ -14,7 +14,7 @@ documentation: ug
 The following code example explains how to add a Circular Gauge:
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

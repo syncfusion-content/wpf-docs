@@ -74,7 +74,7 @@ The following steps explain how to create 3D charts.
 
 To begin with plotting data choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the scenario of the user and the nature of the data.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Syncfusion:SfChart3D x:Name="Chart">
 
@@ -159,7 +159,7 @@ public class UsersViewModel
 
 Add the above UsersViewModel to the DataContext of the chart, bind the data source to the ItemsSource property of the 3D column series, and then map the data using XBindingPath and YBindingPath properties.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <Page.DataContext>
@@ -319,7 +319,7 @@ A Boolean property to show or hide the labels</td></tr>
 The following code can be used to create a simple doughnut series:
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <Page.DataContext>
@@ -451,7 +451,7 @@ The following image illustrates the result of the above code sample:
 
 The following code example illustrates how to enable the dynamic rotation:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 {% endhighlight %}
@@ -462,7 +462,7 @@ To enable segment selection in a 3D chart, set the SegmentSelectionBrush propert
 
 The following code example illustrates how to set the selection brush for individual series. For data refer to the Series category in 3D charts.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 	  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" 
 
@@ -535,7 +535,7 @@ Series selection support is used to highlight the series programmatically or by 
 
 The following code example can be used to set series selection in a SfChart3D.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfChart3D EnableSeriesSelection="True" SeriesSelectedIndex="0">
 
@@ -600,7 +600,7 @@ This feature allows users to explode a particular segment in a circular series. 
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 

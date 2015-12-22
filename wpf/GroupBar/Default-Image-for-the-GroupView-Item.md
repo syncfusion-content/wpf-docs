@@ -15,7 +15,7 @@ Use the below code snippet to set this property.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

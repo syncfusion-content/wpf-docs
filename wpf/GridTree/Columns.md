@@ -61,7 +61,7 @@ Boolean</td></tr>
 In the GridTree control, you can populate the columns automatically by setting the AutoPopulateColumns property to True.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -124,7 +124,7 @@ Hyperlink</td></tr>
 </table>
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -300,7 +300,7 @@ The Static cell type allows you to only to display the values in the cells and n
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -348,7 +348,7 @@ N> The difference between the Static and TextBlock cell type is that the Static 
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -407,7 +407,7 @@ The TextBox cell type allows you to display the cell values in text boxes. Each 
 The following code snippet explains how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
@@ -463,7 +463,7 @@ The RichText cell types provide more advanced formatting features than the TextB
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -666,7 +666,7 @@ You can get any property value of the current record by passing the appropriate 
 The following example code shows a simple DataTemplate.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -804,7 +804,7 @@ CellRowColumnIndex—contains the RowColumn index of the cell where the combo bo
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -936,7 +936,7 @@ We can change the drop-down list style by using the GridDropDownStyle property. 
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1046,7 +1046,7 @@ Applying true to this property allows you to enter null value.</td></tr>
 The following code shows how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1162,7 +1162,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code snippet explains how to define a CurrencyEdit column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1251,7 +1251,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code demonstrates how to define an IntegerEdit column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1350,7 +1350,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code sample demonstrates how to define a DoubleEdit column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1454,7 +1454,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code sample demonstrates how to define a PercentEdit column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:GridTreeColumn MappingName="Hike">
@@ -1642,7 +1642,7 @@ Year Month</td><td>
 The following code sample demonstrates how to define a column with DateTime Edit cells.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1721,7 +1721,7 @@ When the cell value or mask is set to null then the cell is validated based on t
 The following code sample demonstrates how to define a MaskEdit column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1808,7 +1808,7 @@ Color to differentiate the negative value.</td></tr>
 The following sample demonstrates how to define a column with UpDownEdit cells.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1892,7 +1892,7 @@ Displays the arrow buttons to change the value by mouse.</td></tr>
 The following code sample demonstrates how to define a column with TimeSpanEdit cells.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -1970,7 +1970,7 @@ Sets the margin of the image.</td></tr>
 The following code sample demonstrates how to define a column with Image cells.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -2036,7 +2036,7 @@ ColumnIndex—contains the current mouse click hyperlink cell column index.RowIn
 The following code shows how to define such a column.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -2110,7 +2110,7 @@ It contains the following arguments.ColumnIndex—contains the column index wher
 The following code snippet shows a simple demo of Button cell type.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -2268,7 +2268,7 @@ Some example of Format is given below:
 
 The following code snippet shows a simple usage of Format.
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -2435,7 +2435,7 @@ ProductName Contains </td></tr>
 
 The following code snippet shows a simple way to use expressions.
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

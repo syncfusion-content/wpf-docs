@@ -15,7 +15,7 @@ The **RichTextBoxAdv** provides support for built-in **Mini** **Toolbar** that i
 
 The following code example demonstrates how to disable the built-in mini toolbar in the **RichTextBoxAdv**. 
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" EnableMiniToolBar="False" xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.WPF" />
 
 

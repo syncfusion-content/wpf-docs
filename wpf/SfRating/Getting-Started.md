@@ -15,7 +15,7 @@ documentation: ug
 The following code sample shows how to create the rating from code-behind and XAML:
 
 {%tabs%}
-{%highlight xaml%}
+{%highlight xml%}
 
 
 

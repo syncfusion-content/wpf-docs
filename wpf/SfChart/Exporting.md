@@ -47,7 +47,7 @@ Export the chart image using the stream and its corresponding encoder.</td></tr>
 The following code example illustrates the chart exporting feature.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

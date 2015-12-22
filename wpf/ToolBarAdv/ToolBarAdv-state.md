@@ -14,7 +14,7 @@ ToolBarAdv can be set to docking, floating or hidden state as required.
 Following code illustrates how to set ToolBarAdv to floating state:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -161,7 +161,7 @@ You can change the location of the floating ToolBarAdv using the _FloatingBarLoc
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <shared:ToolBarAdv FloatingBarLocation="50,50"></shared:ToolBarAdv>
 

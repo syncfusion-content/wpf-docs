@@ -12,7 +12,7 @@ documentation: ug
 LeafItemSettings of SfTreeMap is a setting by which we can settings the template for the leafNode.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -51,7 +51,7 @@ N> The specified field must be available in each and every sub class (object) de
 LabelPath of the leaves is WeightValuePath by default and you can change the LabelPath as desired based on the data provided.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -82,7 +82,7 @@ LabelPath of the leaves is WeightValuePath by default and you can change the Lab
 LabelTemplate of LeafitemSettings class provides the template for the labels of the leafNodes.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -129,7 +129,7 @@ LabelTemplate of LeafitemSettings class provides the template for the labels of 
 Gap provides the gap between the leaves at Leaf Level.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -164,7 +164,7 @@ Gap provides the gap between the leaves at Leaf Level.
 BorderBrush provides the border color for the leafNodes and BorderThickness provides the thickness of the BorderBrush.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

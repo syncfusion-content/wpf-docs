@@ -29,7 +29,7 @@ Create a new WPF application in the Visual Studio and follow the steps given.
 
 The following code example shows how to create the SfMaskedEdit from XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

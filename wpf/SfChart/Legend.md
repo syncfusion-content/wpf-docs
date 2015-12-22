@@ -74,7 +74,7 @@ Gets or sets the double value that represents that  legend icon(s) height.</td><
 
 The following code example shows how to create a simple legend. For sample data, refer to the data section in the code example of [Line Series](http://help.syncfusion.com/winrt/sfchart/series#lineseries).
 
-{% highlight xaml %}
+{% highlight xml %}
 
 	 <syncfusion:SfChart x:Name="ColumnChart">
 
@@ -139,7 +139,7 @@ By default, the ChartLegend is positioned at the top of the chart. You can also 
 
 The following code example shows how to create a ChartLegend for a chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.Legend>
 
@@ -157,7 +157,7 @@ The SfChart control supports showing the legend in multiple panels, to view the 
 The following code example shows how to create multiple legends in a single chart. For sample data, please refer to the data section in the code sample of [Line Series.](http://help.syncfusion.com/wpf/sfchart/series#lineseries)
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart Height="500" Width="600" x:Name="LineChart">
 

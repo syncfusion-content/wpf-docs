@@ -17,7 +17,7 @@ When you set AllowEditing to ‘True’, you can edit the current cell in the Da
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -96,7 +96,7 @@ True</td></tr>
 When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor the selection is allowed for the GridColumn. The cells are not editable in the specified GridColumn, even when SfDataGrid.AllowEditing is set to ‘true’. In following code example AllowFocus is set to ‘false’ for OrderID column.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -170,7 +170,7 @@ EditorSelectionBehavior is dependency property that is used to set selection for
 The following code example illustrates the selection behavior while editing. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -285,7 +285,7 @@ void sfdatagrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 }
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -324,7 +324,7 @@ Other than core properties, methods and events participate in editing.SfDataGrid
 The data that you edit in loaded EditElement is the bound value from the ValueBinding property. The following code example illustrates how to use it.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -367,7 +367,7 @@ OrderID in View Mode and CustomerID value in Edit Mode
 You can update the edited values, like Default, PropertyChanged, LostFocus and Explicit. For more information about UpdateSourceTrigger you can [ClickHere](http://msdn.microsoft.com/en-us/library/system.windows.data.updatesourcetrigger(v=vs.110).aspx). In the following code example, whenever the value of CustomerID is changed instantly the underlying collection also changes. Since UpdateTrigger is given as PropertyChanged.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -411,7 +411,7 @@ It gets arranged according to its sort direction.
 The same way, you can achieve it for Editing with Grouping and Editing with Filtering.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -693,7 +693,7 @@ In some cases, you may not want a particular cell to enter into Edit mode. To ac
 Consider a example where you do not want the cell (2, 2) to enter into Edit mode. After handling the event, check for the RowColumnIndex and then cancel the event. This is illustrated in the following code example.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -738,7 +738,7 @@ In this scenario, consider the properties for discount and price from the data s
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -796,7 +796,7 @@ This topic explains you how to change the FontSize for EditElement. TextBlock is
 You can achieve this by applying style directly to TextBox. By defining corresponding TextBoxstyle inside the SfDataGrid.Resources, you can show the same font while cell is in edit mode. The following code example illustrates this,
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

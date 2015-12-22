@@ -15,7 +15,7 @@ The DropDownMenuItem control is the basic MenuItem, which forms the actual item 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -51,7 +51,7 @@ The DropDownMenuItem can be checked by setting the IsCheckable property to true.
 The feature can be enabled by using the property IsCheckable:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 

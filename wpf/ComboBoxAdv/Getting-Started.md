@@ -30,7 +30,7 @@ After adding reference to the above assembly, the control can be added to the ap
 
 To add ComboBoxAdv using XAML, first include the following namespace in the XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -44,7 +44,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 After adding the above namespace, the ComboBoxAdv can be added to the application as shown below:
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -13,7 +13,7 @@ You can maximize the MDI window by setting the CanMDIMaximize property to True. 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

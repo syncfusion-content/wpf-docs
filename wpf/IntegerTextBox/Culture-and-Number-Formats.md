@@ -14,7 +14,7 @@ documentation: ug
 IntegerTextBox provides globalization support through the Culture property. 
 
 {%tabs%}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 
 
 {%tabs%}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"  Culture="bs-Latn" Value="1234567"/>
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ In the first sample culture is set to “en-US” (US Culture) and in the second
 You can customize the Number Format either by using the NumberFormat property or the NumberGroupSeparator and the NumberGroupSizes property.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"   Culture="en-US" Value="123456789012345">  
 <syncfusion:IntegerTextBox.NumberFormat>        
 <numberformat:NumberFormatInfo NumberGroupSeparator="/"/>    
@@ -86,7 +86,7 @@ NumberGroupSeparator = "/"
 
 {%tabs%}
 
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="en-US" Value="123456789012345" NumberGroupSeparator="/"/>
 {% endhighlight %}
 

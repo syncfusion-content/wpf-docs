@@ -16,7 +16,7 @@ You can explicitly update the XAMLText or HTMLText property to view model for co
 The following code example illustrates defining MVVM extension for the XAMLText property of the RichTextBoxAdv control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

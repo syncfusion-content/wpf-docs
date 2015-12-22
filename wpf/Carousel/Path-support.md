@@ -17,7 +17,7 @@ You can set custom path using Path property of Carousel control as shown in the 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

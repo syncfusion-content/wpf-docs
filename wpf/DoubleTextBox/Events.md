@@ -18,7 +18,7 @@ ValueChanged – The event occurs when the Value property of the DoubleTextBox i
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
  <syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/>
  {% endhighlight %} 
 
@@ -53,7 +53,7 @@ TextChanged – The event occurs when the Value property of the DoubleTextBox is
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:DoubleTextBox TextChanged="DoubleTextBox_TextChanged"/> 
 {% endhighlight %} 
 
@@ -87,7 +87,7 @@ CultureChanged – The event occurs when the Culture property of the DoubleTextB
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
  <syncfusion:DoubleTextBox CultureChanged="DoubleTextBox_CultureChanged"/> 
  {% endhighlight %} 
 
@@ -122,7 +122,7 @@ MaxValueChanged – The event occurs when the MaxValue property of the DoubleTex
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
  <syncfusion:DoubleTextBox MaxValueChanged="DoubleTextBox_MaxValueChanged"/>
  {% endhighlight %} 
 
@@ -158,7 +158,7 @@ MinValueChanged – The event occurs when the MinValue property of the DoubleTex
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:DoubleTextBox MinValueChanged="DoubleTextBox_MinValueChanged"/> 
 {% endhighlight %} 
 {% highlight C# %} 
@@ -190,7 +190,7 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xml %} 
 <syncfusion:DoubleTextBox SelectionChanged="DoubleTextBox_SelectionChanged"/> 
 {% endhighlight %} 
 

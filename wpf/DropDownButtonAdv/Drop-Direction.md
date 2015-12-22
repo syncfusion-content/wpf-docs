@@ -26,7 +26,7 @@ The DropDirection property can be set as follows:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="BottomLeft"/>
 {% endhighlight %}
@@ -40,7 +40,7 @@ The DropDirection property can be set as follows:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="BottomRight"/>
 {% endhighlight %}
@@ -54,7 +54,7 @@ The DropDirection property can be set as follows:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="Right"/>
 
@@ -69,7 +69,7 @@ The DropDirection property can be set as follows:
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="Left"/>
 {% endhighlight %}

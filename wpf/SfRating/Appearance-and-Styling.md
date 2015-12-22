@@ -13,7 +13,7 @@ documentation: ug
 
 The RatedFill property fills the rated area with the specified solid color in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -43,7 +43,7 @@ The RatedFill property fills the rated area with the specified solid color in th
 
 The PointerOverFill property fills the mouse over area with the specified solid color in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -75,7 +75,7 @@ The PointerOverFill property fills the mouse over area with the specified solid 
 
 RatedStroke sets the stroke for the rated area with the specified solid color in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -107,7 +107,7 @@ RatedStroke sets the stroke for the rated area with the specified solid color in
 
 RatedStrokeThickness sets the stroke thickness for the rated area with the specified value in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -139,7 +139,7 @@ RatedStrokeThickness sets the stroke thickness for the rated area with the speci
 
 PointerOverStroke sets the stroke for the mouseover area with the specified solid color in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -171,7 +171,7 @@ PointerOverStroke sets the stroke for the mouseover area with the specified soli
 
 PointerOverStrokeThickness sets the stroke thickness for the mouseover area with the specified value in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -203,7 +203,7 @@ PointerOverStrokeThickness sets the stroke thickness for the mouseover area with
 
 The UnratedFill property fills the unrated area with the specified solid color in the RatingControl.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -233,7 +233,7 @@ The UnratedFill property fills the unrated area with the specified solid color i
 
 UnratedStroke sets the stroke for the unrated area with the specified solid color in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -264,7 +264,7 @@ UnratedStroke sets the stroke for the unrated area with the specified solid colo
 
 UnratedStrokeThickness sets the stroke thickness for the unrated area with the specified value in the Rating control.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -300,7 +300,7 @@ N> The above properties are available in RatingItem. To set this property, use t
 
 You can set the Height of each SfRatingItem by using Height property. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 
@@ -328,7 +328,7 @@ You can set the Height of each SfRatingItem by using Height property.
 
 To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 
 

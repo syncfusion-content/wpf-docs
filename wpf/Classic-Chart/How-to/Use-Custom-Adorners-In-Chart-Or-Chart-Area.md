@@ -13,7 +13,7 @@ Custom Adorners can be added to the Chart or ChartArea to add any custom UI elem
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sfchart:Chart Name="Chart1">
 

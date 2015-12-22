@@ -41,7 +41,7 @@ StringMode—AnyChar
 
 The StringMode property will be used to attain this functionality by setting its value as StartChar or IndexBased or AnyChar.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" StringMode="StartChar"/>

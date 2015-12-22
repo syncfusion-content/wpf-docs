@@ -25,7 +25,7 @@ The following are steps to create a BasicHttpBinding:
 
 Include the Basic Http Binding and Service endpoint address in the Web.Config file as given in the   following code:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <!--<Bindings>-->
 

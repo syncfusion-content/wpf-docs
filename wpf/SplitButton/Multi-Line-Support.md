@@ -13,7 +13,7 @@ The label displayed on the button can be a line or two, when the property IsMult
 
 Multiline support can be enabled by using the following code:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Large" IsMultiLine="False"/>
 

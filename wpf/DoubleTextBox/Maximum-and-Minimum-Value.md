@@ -48,7 +48,7 @@ Note: This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 
 
-{% highlight xaml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/> {% endhighlight %} 
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/> {% endhighlight %} 
 
 {% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.MinValue = -999;doubleTextBox.MaxValue = 999;doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;doubleTextBox.MinValueOnExceedMinDigit = true;doubleTextBox.MaxValueOnExceedMaxDigit = true; {% endhighlight %} 
 

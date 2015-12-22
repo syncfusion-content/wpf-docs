@@ -479,7 +479,7 @@ The ItemsSource property gets the source for the list of nodes to be added to th
 
 The following code illustrates this.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

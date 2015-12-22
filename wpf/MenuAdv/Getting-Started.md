@@ -88,7 +88,7 @@ N> You can customize the appearance of the MenuItemAdv using the template-editin
 The MenuAdv control can also be created through XAML. The following code example illustrates this.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

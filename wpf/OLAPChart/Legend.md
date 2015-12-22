@@ -19,7 +19,7 @@ The following topics explain this in detail:
 
 The ChartLegend can be added to an OlapChart by adding the ChartLegend of the Essential Chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code snippets explain how to add a legend to an OlapChart:
 {% tabs %}
-  {% highlight xaml %}
+  {% highlight xml %}
 
    
 
@@ -56,7 +56,7 @@ The ChartLegend can be added to an OlapChart by adding the ChartLegend of the Es
 
 The ChartLegend has a visibility property using which you can show or hide the ChartLegend in an OlapChart. The following code snippets show how you can collapse the visibility of the ChartLegend:
 {% tabs %}
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -104,7 +104,7 @@ Me.olapChart.Legend.Visibility = System.Windows.Visibility.Collapsed
 
 The visibility of the legend check box can be toggled by using the CheckBoxVisibility property in the ChartLegend. The following code snippet shows how to toggle the visibility of the check box in the legend of an OlapChart:
 {% tabs %}
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -151,7 +151,7 @@ Me.olapChart.Legend.CheckBoxVisibility = System.Windows.Visibility.Collapsed
 
 The visibility of the legend icon can be toggled by using the IconVisibility property in the ChartLegend. The following code snippet shows how to toggle the visibility of the icons in an OlapChart legend:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 
@@ -228,7 +228,7 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Right)
 
 You can use the RowsCount and ColumnsCount property to create the rows or the columns of an OlapChart legend. The RowsCount and ColumnsCount will internally be used to create a Grid layout control to place the legends. The following code snippet shows how to set the number of rows or columns in an OlapLegend:
 
-  {% highlight xaml %}
+  {% highlight xml %}
 
     
 

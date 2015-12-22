@@ -34,7 +34,7 @@ For 4.5 and higher Frameworks: Syncfusion.DocIO.Base
 
 The following code example demonstrates how to add the **RichTextBoxAdv** control using XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.WPF" />
 
 

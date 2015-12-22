@@ -26,7 +26,7 @@ string</td><td>
 Gets or sets the field name in the database (.dbf) file.</td></tr>
 </table>
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -52,7 +52,7 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
 The labels can also be customized by modifying the ItemsTemplate of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

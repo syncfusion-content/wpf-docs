@@ -18,7 +18,7 @@ TDIFullScreenMode is the property used to define the full-screen mode for TDI it
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" TDIFullScreenMode="WindowMode" />
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ N> This feature also applicable for the TabControlExt.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:TabControlExt Name="tabcontrol1" FullScreenMode="WindowMode"/>
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ A toolbar can be placed with headers in the header panel of TDI items in Documen
 
 
 {% tabs %}
-{% highlight xaml %}     
+{% highlight xml %}     
    <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" >           
    <syncfusion:DocumentContainer.TDIToolBarTray>         
    <ToolBarTray>                    <ToolBar>            
@@ -80,7 +80,7 @@ This feature is also applicable to TabControlExt, as demonstrated in the followi
 
 
 {% tabs %}
-{% highlight xaml %}     
+{% highlight xml %}     
    <syncfusion:TabControlExt Name="tabcontrol">           
    <syncfusion:TabControlExt.ToolBarTray>             
    <ToolBarTray>                
@@ -108,7 +108,7 @@ SizetoContentInMDI is used to resize an MDI window to its child size. This is an
 
 
 {% tabs %}
-{% highlight xaml %}        
+{% highlight xml %}        
 <syncfusion:DocumentContainer Mode="MDI">   
          <Grid Name="grid1" syncfusion:DocumentContainer.SizetoContentInMDI="True" Width="200"  Height="200" />  
 		 </syncfusion:DocumentContainer>

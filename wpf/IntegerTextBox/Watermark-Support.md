@@ -11,7 +11,7 @@ documentation: ug
 
 Watermark is the dummy content displayed in the IntegerTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -33,7 +33,7 @@ WatermarkText automatically collapses when the control is in focus. On Lost Focu
 
 You can customize the Visual appearance of the Watermark Text by using the WatermarkTemplate property.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

@@ -42,7 +42,7 @@ The following section shows you how to define the various palettes for each seri
 
 Itis the default palette for SfChart, used to apply a set of predefined brushes to the series, in a predefined order. The following code example illustrates how to set the MetroPalette for the chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -58,7 +58,7 @@ The following is the screenshot for the series with multiple palettes.
 
 The Custom Palette option enables you to define your own color brushes for the Palette using ColorModel property as given in the following code example.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -120,7 +120,7 @@ The following section shows you how to define the various palettes for each segm
 
 It is the default palette for series also. This palette applies a set of predefined brushes to the segments of a series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -152,7 +152,7 @@ It applies the same color to all the segments, as shown in the following screens
 
 The Custom Palette option enables you to define your own color brushes for the Palette, using ColorModel as shown in the following code example.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -202,7 +202,7 @@ The Custom Palette option enables you to define your own color brushes for th
 
 SfChart provides you with the option to customize the legends depending on the application’s requirement.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.Legend>
 
@@ -348,7 +348,7 @@ Interior - This property gives the fill brush for that particular segment.
 
 The following code example illustrates the use of CustomTemplate property.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -402,7 +402,7 @@ The following screenshot represents chart scatter series. By default, that serie
 
 SfChart provides the option to define your own template for Tooltip, based on your application’s requirement. The following code example demonstrates the CustomTooltip using the TooltipTemplate property.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

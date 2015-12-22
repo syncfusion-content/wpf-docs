@@ -28,7 +28,7 @@ displayed in the drop-down list, instead all the items will be displayed.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
 {% endhighlight %}

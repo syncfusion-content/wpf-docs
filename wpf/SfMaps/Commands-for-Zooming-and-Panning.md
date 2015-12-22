@@ -22,7 +22,7 @@ The Map control contains the following commands:
 ZoomIn command—zooms in the map.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -47,7 +47,7 @@ ZoomIn command—zooms in the map.
 ZoomOut Command--zooms out the map.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -72,7 +72,7 @@ ZoomOut Command--zooms out the map.
 Pan Command is used to navigate on the Map control. The direction of the navigation is the Command parameter for the Pan Command.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -106,7 +106,7 @@ Pan Command is used to navigate on the Map control. The direction of the navigat
 The ZoomReset command resets the ZoomLevel value of the Map control.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -132,7 +132,7 @@ The ZoomReset command resets the ZoomLevel value of the Map control.
 The PanReset command resets the map at its initial position; it resets the pan values.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

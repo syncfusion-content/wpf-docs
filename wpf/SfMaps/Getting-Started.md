@@ -50,7 +50,7 @@ Namespace: Syncfusion.UI.Xaml.Maps
 You can create the SfMap control programmatically through XAML and C#. In the following code example. 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -129,7 +129,7 @@ Subfolder names
 ShapeFilename.shp
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -158,7 +158,7 @@ By giving the URL path of the file to the URI property, a shapefile is read. Her
 
 ##### Code Sample
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -208,7 +208,7 @@ ShapeValuePath is a string type property used to define the object bound to the 
 The .dbf file that is included in the main shape file, is required to work with data binding. The .dbf file contains the information about the shapes in the main shape file. Each record in the .dbf file is associated with the each shape in the main file. Shapes in the main file and records in the .dbf file are organized in the same sequence. Therefore, the Nth shape in the main file is associated with Nth record in the .dbf file. A record of the .dbf file can contain the name of the shape or population data or some other statistical data of a geographic shape.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -308,7 +308,7 @@ public class Country : INotifyPropertyChanged    {        public string NAME { g
    } 
 {% endhighlight %}
 
- {% highlight xaml %}
+ {% highlight xml %}
 
   
        

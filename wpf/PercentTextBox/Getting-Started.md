@@ -599,7 +599,7 @@ You have to use the PercentValue property to set value for the PercentTextBox.
 N> Do not use the Text property to set the value for the PercentTextBox. Use only the PercentValue property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"    
 PercentValue="100"/>
 {% endhighlight %}
@@ -620,7 +620,7 @@ percentTextBox.PercentValue = 100;
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the PercentTextBox.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25" 
 PercentValue="100" MinValue="-999.99" MaxValue="999.99"/>
 {% endhighlight %}
@@ -641,7 +641,7 @@ You can set the Watermark for the PercentTextBox by using the WatermarkText prop
 N> WatermarkText is visible only when the value is null.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="100"        
     PercentValue="{x:Null}" MinValue="-999" MaxValue="999"       
 	UseNullOption="True"          

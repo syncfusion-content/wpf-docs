@@ -12,7 +12,7 @@ documentation: ug
 SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearance by setting Popup Background, BorderBrush and BorderThickness etc.
 
 The following code example illustrates how to customize the DropDownPopup.
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

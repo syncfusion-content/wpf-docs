@@ -12,7 +12,7 @@ documentation: ug
 The HeaderTemplate property of Tree Navigator can be used to customize the Tree Navigator header. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <navigation:SfTreeNavigator.HeaderTemplate>
 

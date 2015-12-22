@@ -19,7 +19,7 @@ This example shows how to add technical indicators to a Chart Series. To add tec
 
 Create the instance for any technical indicator and add it to the TechnicalIndicators collection. Here for instance, the AccumulationDistributionIndicator is used.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -37,7 +37,7 @@ Create the instance for any technical indicator and add it to the TechnicalIndic
 
 The data necessary for the indicator to do calculations, are given as specified.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -53,7 +53,7 @@ The data necessary for the indicator to do calculations, are given as specified.
 
 Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot and visualize the chart.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -96,7 +96,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 If you want to apply ATR indicator to a chart, then do the following.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -142,7 +142,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 If you want to apply SimpleAverageIndicator to a chart, then do the following.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -194,7 +194,7 @@ Gets or sets the Brush value that represents the Indicator Lower Line Color.</td
 
 If you want to apply RSITechnicalIndicator to a chart, then do the following.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:SfChart.TechnicalIndicators>
 
@@ -242,7 +242,7 @@ Gets or sets the Brush value that represents the Indicator Center Line Color.</t
 
 If you want to apply MomentumTechnicalIndicator to a chart, then do the following.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -302,7 +302,7 @@ Gets or sets the Brush value that represents the lower line color.</td></tr>
 
 If you want to apply StochasticTechnicalIndicator to a chart, then do the following.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -344,7 +344,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:SfChart.TechnicalIndicators>
@@ -383,7 +383,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -421,7 +421,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:SfChart.TechnicalIndicators>
@@ -470,7 +470,7 @@ Gets or sets the Brush value that represents the color for the Lower Bollinger B
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -532,7 +532,7 @@ Gets or sets the Brush value that represents the Divergence Line color.</td></tr
 </table>
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

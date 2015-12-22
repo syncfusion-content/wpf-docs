@@ -1926,7 +1926,7 @@ N/A</td></tr>
 1. The LayoutType should be set to RadialTreeLayout in DiagramModel class.
    
    
-   {%highlight xaml%}
+   {%highlight xml%}
 
 
 
@@ -2316,7 +2316,7 @@ When set to Vertical, the Columncount is automatically calculated based on the n
 
 The Bounds property of the DiagramView class can be used to specify the position of the first node.
 
-{% highlight xaml  %}
+{% highlight xml  %}
 
 
 

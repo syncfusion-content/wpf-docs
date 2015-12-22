@@ -168,7 +168,7 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 N> You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

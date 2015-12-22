@@ -15,7 +15,7 @@ The following code snippet explains how to override the Syncfusion Blend Style f
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

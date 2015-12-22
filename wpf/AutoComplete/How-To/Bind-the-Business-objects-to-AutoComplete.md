@@ -18,7 +18,7 @@ Also when binding the Business objects, the DisplayMemberPath and the SelectedVa
 You can bind the Business objects to the AutoComplete as mentioned below.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <syncfusion:AutoComplete x:Name="AutoCompleteTextBox" Source="Custom” DisplayMemberPath="Name" SelectedValuePath="EmployeeID">   

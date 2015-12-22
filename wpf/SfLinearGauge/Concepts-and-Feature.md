@@ -17,7 +17,7 @@ Labels of the linear scale provide a numeric value to the major ticks that are s
 
 The foreground of the label is customized by setting the LabelStroke of the linear scale. By making use of the LabelSize property, the font size of the labels is personalized. The labels can be positioned away from the ticks by using the LabelOffset property.
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
@@ -72,7 +72,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 1. Above.
 2. Below (Default).
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge>
 
@@ -142,7 +142,7 @@ Multiple pointers are added to the Linear Gauge to point multiple values on the 
 
 Bar pointer is an accenting line or colored bar that is placed on the Linear Gauge to mark the values. Bar pointer’s UI is customized by using the BarPointerStroke and BarPointerStrokeThickness properties.
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge>
 
@@ -202,7 +202,7 @@ The following screenshot illustrates the Linear Gauge with Bar Pointer:
 
 In the symbol pointer type, the value is pointed by a symbol on the scale. You can modify the symbol pointer’s size by changing the SymbolPointerHeight and SymbolPointerWidth properties. The stroke of the symbol pointer is changed by using the SymbolPointerStroke property. The SymbolPointerStyle property is used to select the symbol pointer style.
 
-{% highlight xaml %}
+{% highlight xml %}
 
        <Gauges:SfLinearGauge>
 
@@ -268,7 +268,7 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 3. Cross.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
    <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
@@ -357,7 +357,7 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 
 The stroke of the range is personalized by changing the RangeStroke of the linear range. The appearance of linear range is customized by setting the StartWidth and EndWidth properties. With the help of the RangeOffset property, the linear range can be positioned with respect to the linear scale. By setting the RangeOpacity of the LinearRange, the opacity of the range can be modified.
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge Orientation="Horizontal">
 
@@ -422,7 +422,7 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
 By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set related to the stroke of the specified ranges. Similarly, by setting the BindWithRangeStrokeToTicks, the stroke of the ticks can be set related to the stroke of the specified ranges.
 
-{% highlight xaml %}
+{% highlight xml %}
 
        <Gauges:SfLinearGauge Orientation="Horizontal">
 
@@ -498,7 +498,7 @@ The range can be placed above or below the scale by choosing the options availab
 2. Below.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
        <Gauges:SfLinearGauge>
 
@@ -571,7 +571,7 @@ The MainScale is a linear scale that integrates ticks, labels, and scale bar to 
 
 The range of the main scale can be mentioned by Minimum and Maximum of the linear scale. The width and height of the linear scale is customized by using the ScaleBarLength and ScaleBarSize properties respectively. The border thickness of the linear scale is changed by using the ScaleBarBorderThickness property. The direction of the linear scale is personalized by setting the ScaleDirection property of the linear scale.
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
@@ -675,7 +675,7 @@ Ticks are of two types: major and minor. These ticks are arranged with respect t
 
 By setting the MajorTickStroke and MinorTickStroke, the stroke of the major ticks and minor ticks are personalized. With the help of the MajorTickStrokeThickness and MinorTickStrokeThickness, the stroke thickness of the major and minor ticks is customized. The size of the major ticks and minor ticks can be modified by using the MajorTickSize and MinorTickSize properties.
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
@@ -752,7 +752,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 3. Cross.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
         <Gauges:SfLinearGauge>
 

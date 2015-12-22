@@ -10,7 +10,7 @@ documentation: ug
 # KML Shapes Rendered in SubShapeFileLayer
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

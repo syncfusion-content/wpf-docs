@@ -16,7 +16,7 @@ This section illustrates the following Layout-related feature of TabSplitter con
 The appearance of the TabSplitter control is customized by using the appearance properties available in the control. You can set the color for the MouseOver Background, MouseOver Foreground, Selected Foreground and Selected Background of the TabSplitter control. Here is the code snippet.
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <!-- Adding TabSplitter With Selected Brush -->

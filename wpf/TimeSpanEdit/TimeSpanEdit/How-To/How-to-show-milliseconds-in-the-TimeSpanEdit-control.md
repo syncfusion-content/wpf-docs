@@ -16,7 +16,7 @@ The character z in the format string is used to display milliseconds in the Time
 
 
 {%tabs%}
-{% highlight xaml %}
+{% highlight xml %}
 
 <syncfusion:TimeSpanEdit Value="10.2:25:52" Format=" d 'days' h 'hours' m 'minutes' :s 'sec' z 'msec' "/>
 

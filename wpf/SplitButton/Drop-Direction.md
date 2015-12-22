@@ -27,7 +27,7 @@ The DropDirection property can be set as follows:
 ## To set BottomLeft DropDirection
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:SplitButtonAdv  DropDirection="BottomLeft"/>
 
@@ -40,7 +40,7 @@ The DropDirection property can be set as follows:
 ## To set BottomRight Drop Direction
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <sync:SplitButtonAdv  DropDirection="BottomRight"/>
@@ -53,7 +53,7 @@ The DropDirection property can be set as follows:
 
 ## To set Right Drop Direction
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:SplitButtonAdv  DropDirection="Right"/>
 
@@ -67,7 +67,7 @@ The DropDirection property can be set as follows:
 ## To set Left Drop Direction
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <sync:SplitButtonAdv  DropDirection="Left"/>
 

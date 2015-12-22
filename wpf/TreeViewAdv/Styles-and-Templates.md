@@ -17,7 +17,7 @@ You can customize the style of the Drag Indicator which is used to indicate the 
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -127,7 +127,7 @@ User can customize the header of the treeview item by using HeaderTemplate using
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -198,7 +198,7 @@ User can customize the header of the treeview item by using HeaderTemplate using
 The ExpanderStyle property enables to customize the appearance and style of expansion of the TreeViewAdv during the Expand or Collapse operation. The following code example illustrates how to set this property.
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <Window.Resources>
@@ -323,7 +323,7 @@ You can customize the items under a column header by defining a cell template fo
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
@@ -431,7 +431,7 @@ The following example can be used to set this property.
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 <Grid>
@@ -491,7 +491,7 @@ The following screen shot shows how the TreeViewAdv looks after applying ItemCon
 User can customize the edited item by using the EditedItemTemplate property, which gets or sets the DataTemplate that is used to display each item in edit mode. 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

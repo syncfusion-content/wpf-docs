@@ -22,7 +22,7 @@ The following code example illustrates how to add the Dragging Items to an appli
 
 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 

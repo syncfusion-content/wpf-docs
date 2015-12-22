@@ -14,7 +14,7 @@ A ToolTip can be displayed for each HierarchyNavigator item.
 Setting the ShowToolTip Boolean property to true in the HierarchyNavigator control will enable the ToolTips for all items.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xml %}
 <syncfusion:HierarchyNavigator ShowToolTip="True" x:Name="hierarchyNavigator1" />
 {% endhighlight %}
 

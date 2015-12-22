@@ -35,7 +35,7 @@ ColorPickerPalette can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 
 
