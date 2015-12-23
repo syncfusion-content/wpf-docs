@@ -365,7 +365,7 @@ IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // Reset
 graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.Zoom });
 
-{% endhightlight %}
+{% endhighlight %}
 
 ##Draw Commands
 Draw commands are used to draw connections. They take parameters of type IDrawParameter.
