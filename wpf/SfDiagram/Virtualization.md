@@ -1,13 +1,13 @@
 ---
 layout: post
-title: virtualization
-description: virtualization | SfDiagram | wpf | Syncfusion
+title: Virtualization is a technique to enable faster rendering by loading only object that lies in viewport area of scrollviewer.
+description: how to enable faster rendering in Diagram?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Virtualization
+#Virtualization
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded (remaining objects are loaded only when they come into view).
 

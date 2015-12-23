@@ -1,27 +1,25 @@
 ---
 layout: post
-title: Connector | SfDiagram | wpf | Syncfusion
-description: connector
+title: Draw a line connecting two points, nodes or ports.
+description: How to draw a line to connect points, nodes, or ports?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Connector
+#Connector
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
-![](Connector_images\Connector_img1.png)
+![](Connector_images\Connector_img1.jpeg)
 
-Create Connector
+##Create Connector
 
 Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of segments.
 
-Add Connectors through Connectors collection
+###Add Connectors through Connectors collection
 
-The SourcePoint and TargetPoint properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
-
-[XAML]
+The `SourcePoint` and `TargetPoint` properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
 
 {% highlight xml %}
 
@@ -46,8 +44,6 @@ The SourcePoint and TargetPoint properties of Connector allow you to define the 
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 diagram.DefaultConnectorType = ConnectorType.Line;
@@ -64,25 +60,25 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img2.png)
+![](Connector_images\Connector_img2.jpeg)
 
-Connectors from stencil
+###Connectors from stencil
 
 Connectors can be predefined and added to the stencil. You can drop those Connectors into the Diagram, when required. 
 
-For more information about adding Connectors from stencil, refer to **Stencil**.
+For more information about adding Connectors from stencil, refer to [Stencil](/wpf/sfdiagram/Stencil "Stencil").
 
-Connectors through data source
+###Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to Data Binding.
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
 
-Draw Connectors
+###Draw Connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to **Draw Connectors**.
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
-Connect Nodes
+###Connect Nodes
 
-The SourceNode and TargetNode properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
+The `SourceNode` and `TargetNode` properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
 
 {% highlight C# %}
 
@@ -143,13 +139,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img3.png)
+![](Connector_images\Connector_img3.jpeg)
 
-Connections with Ports
+##Connections with Ports
 
-The SourcePort and TargetPort properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use NodePort and ConnectorPort.
+The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use NodePort and ConnectorPort.
 
-**Using NodePort**
+###Using NodePort
 
 The following code example illustrates how to create ConnectorPort.
 
@@ -272,11 +268,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img4.png)
-
-                         _Using NodePort_
-
-**Using ConnectorPort**
+![](Connector_images\Connector_img4.jpeg)
+                 
+###Using ConnectorPort
 
 The following code example illustrates how to create ConnectorPort.
 
@@ -384,17 +378,15 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img5.png)
+![](Connector_images\Connector_img5.jpeg)
 
-_Using ConnectorPort_
-
-Segments
+##Segments
 
 The path of the Connector is defined with a collection of segments.
 
-Straight
+###Straight
 
-Straight segment allows to create a straight line. To create a straight line, you should specify the segment as StraightSegment and add a straight segment to collection. The following code example illustrates how to create a default straight segment.
+Straight segment allows to create a straight line. To create a straight line, you should specify the segment as `StraightSegment` and add a straight segment to collection. The following code example illustrates how to create a default straight segment.
 
 {% highlight C# %}
 
@@ -417,9 +409,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img6.png)
+![](Connector_images\Connector_img6.jpeg)
 
-The Point property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
+The `Point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
 {% highlight C# %}
 
@@ -443,13 +435,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img7.png)
+![](Connector_images\Connector_img7.jpeg)
 
-Orthogonal
+###Orthogonal
 
 Orthogonal segments are used to create segments that are perpendicular to each other.
 
-Set the segment as OrthogonalSegment to create the default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
+Set the segment as `OrthogonalSegment` to create the default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
 
 {% highlight C# %}
 
@@ -472,7 +464,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img8.png)
+![](Connector_images\Connector_img8.jpeg)
 
 {% highlight C# %}
 
@@ -497,17 +489,17 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img9.png)
+![](Connector_images\Connector_img9.jpeg)
 
-Avoid overlapping
+####Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes. The following images illustrates how orthogonal segments are re-routed.
 
-![](Connector_images\Connector_img10.png)
+![](Connector_images\Connector_img10.jpeg)
 
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img11.png](Connector_images\Connector_img11.png)
+![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img11.jpeg](Connector_images\Connector_img11.jpeg)
 
-CubicCurveSegment
+###CubicCurveSegment
 
 Cubic curve segments are used to create curve segments and the curves are configurable with the control points.
 
@@ -533,9 +525,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img12.png)
+![](Connector_images\Connector_img12.jpeg)
 
-The Point1 and Point2 of cubic curve segment enable you to set the control points. The following code example 
+The `Point1` and `Point2` of cubic curve segment enable you to set the control points. The following code example 
 
 {% highlight C# %}
 
@@ -560,7 +552,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img13.png)
+![](Connector_images\Connector_img13.jpeg)
 
 Complex segments
 
@@ -595,13 +587,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img14.png)
+![](Connector_images\Connector_img14.jpeg)
 
-Decorator
+##Decorator
 
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector. 
 
-The SourceDecoratorStyle and TargetDecoratorStyle properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
+The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
 {% highlight C# %}
 
@@ -678,17 +670,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
+![](Connector_images\Connector_img15.jpeg)
 
-
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img16.png](Connector_images\Connector_img15.png)
-
-
-
-Padding
+##Padding
 
 Padding is used to leave space between the Connector’s end point and the object to where it is connected.
 
-The SourcePadding and TargetPadding properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector. The following code example illustrates how to leave space between the connection end points and source, target Nodes.
+The `SourcePadding` and `TargetPadding` properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector. The following code example illustrates how to leave space between the connection end points and source, target Nodes.
 
 {% highlight C# %}
 
@@ -711,9 +699,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img16.png)
+![](Connector_images\Connector_img16.jpeg)
 
-The ConnectorPadding property of Node defines the space to be left between the Node bounds and its edges. The following code example illustrates how to leave the space between a Node and its connections.
+The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges. The following code example illustrates how to leave the space between a Node and its connections.
 
 [XAML]
 
@@ -787,9 +775,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img17.png)
+![](Connector_images\Connector_img17.jpeg)
 
-The ConnectorPadding property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports its connections.
+The `ConnectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports its connections.
 
 {% highlight C# %}
 
@@ -869,11 +857,11 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img18.png)
+![](Connector_images\Connector_img18.jpeg)
 
-Bridging
+##Bridging
 
-Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the constraints property of Connector or with Diagram constraints. The following code example illustrates how to enable line bridging.
+Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`. The following code example illustrates how to enable line bridging.
 
 {% highlight C# %}
 
@@ -907,11 +895,11 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img19.png)
+![](Connector_images\Connector_img19.jpeg)
 
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img20.png](Connector_images\Connector_img20.png)
+![](Connector_images\Connector_img20.jpeg)
 
-The direction of the bridge can be customized with the property BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
+The direction of the bridge can be customized with the property `BridgeDirection` defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
 The following code example illustrates how to draw the bridge at the bottom direction.
 
@@ -934,9 +922,9 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
 {% endhighlight %}
 
-Corner radius
+##Corner radius
 
-Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with CornerRadius property.
+Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with `CornerRadius` property.
 
 {% highlight C# %}
 
@@ -998,13 +986,13 @@ diagram.Connectors = connectors;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img21.png)
+![](Connector_images\Connector_img21.jpeg)
 
-Appearance
+##Appearance
 
 StrokeThickness, Stroke and style of the LineConnector and Decorators can be customized with a set of defined properties.
 
-Segment Appearance
+###Segment Appearance
 
 The following code example illustrates how to customize the segment appearance.
 
@@ -1038,7 +1026,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-Decorator Appearance
+###Decorator Appearance
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -1065,13 +1053,13 @@ TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img22.png)
+![](Connector_images\Connector_img22.jpeg)
 
-Interaction
+#Interaction
 
-Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to **Connection Editing**.
+Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/wpf/sfdiagram/Interaction#Connection-Editing "Connection Editing").
 
-Constraints
+#Constraints
 
-The Constraints property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to **Connector Constraints**.
+The Constraints property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/Constraints#ConnectorConstraints "Connector Constraints").
 

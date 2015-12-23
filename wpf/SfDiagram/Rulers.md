@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Rulers | SfDiagram | wpf | Syncfusion
-description: rulers
+title: Ruler is used to measure the distance of nodes and connectors from origin of the page. 
+description: how to measure the distance of Nodes and Connectors? 
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Rulers
+#Rulers
 
-The Ruler provides a horizontal and vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
+The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
 
-Adding Rulers to the Diagram
+##Adding Rulers to the Diagram
 
 Use the following code example to add the ruler to the Diagram.
 
@@ -22,11 +22,9 @@ diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical 
 
 {% endhighlight %}
 
-![](Rulers_images\Rulers_img1.png)
+![](Rulers_images\Rulers_img1.jpeg)
 
-_Default ruler_
-
-Customizing the Ruler
+##Customizing the Ruler
 
 By default, ruler segments are arranged based on measurement units.
 
@@ -103,6 +101,5 @@ public class CustomTick : Tick
 
 {% endhighlight %}
 
-![](Rulers_images\Rulers_img2.png)
+![](Rulers_images\Rulers_img2.jpeg)
 
-_Customized ruler segments_

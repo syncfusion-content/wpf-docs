@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Exporting | SfDiagram | wpf | Syncfusion
-description: exporting
+title: Export Diagram content as image files.
+description: How to export the Diagram as image?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Exporting
+#Exporting
 
-Diagram provides support to extent its content as image/svg files
+Diagram provides support to extent its content as image files
 
+![](Exporting_images\Exporting_img1.jpeg)
 
-
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Exporting_images\Exporting_img1.png](Exporting_images\Exporting_img1.png)
-
-Exporting Options
+##Exporting Options
 
 Diagram provides support to export the desired region of the Diagram to desired formats.
 
@@ -24,27 +22,21 @@ Format
 SfDiagram can be exported to be following File formats.
 
 * PNG
-
 * JPEG
-
 * TIFF
-
 * GIF
-
 * BMP
 
 Contents of the Diagram can be exported as raster image files by using Export function. This exporting can be customized by using ExportSettings.
 
-The following code illustrates how to use ExportSettings property of the SfDiagram:
+The following code illustrates how to use `ExportSettings` property of the SfDiagram:
 
 {% highlight C# %}
 
 ExportSettings settings = new ExportSettings()
-
 {
 
   ImageStretch = Stretch.Fill,
-
   ExportMode = ExportMode.PageSettings
 
 };
@@ -53,35 +45,18 @@ diagram.ExportSettings = settings;
 {% endhighlight %}
 
 
-
-
 The following code shows how to export the SfDiagram
-
-
-
+{% highlight C# %}
 _//Method to Export the SfDiagram_
 
 diagram.Export();
+{% endhighlight %}
 
+###Mode
 
-
-
-
-Mode
-
-<table>
-<tr>
-<td>
-ExportMode</td><td>
-Description</td></tr>
-<tr>
-<td>
-PageSettings</td><td>
-The area to be exported is based on PageSettings and how Children are arranged.</td></tr>
-<tr>
-<td>
-Content</td><td>
-Areas occupied by children are exported exactly.</td></tr>
-</table>
+| ExportMode | Description |
+|---|---|
+| PageSettings | The area to be exported is based on PageSettings and how Children are arranged. |
+| Content | Areas occupied by children are exported exactly. |
 
 

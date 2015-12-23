@@ -1,49 +1,28 @@
 ---
 layout: post
-title: DataSource | SfDiagram | wpf | Syncfusion
-description: datasource
+title: Populate Diagram from external data sources.
+description: How to populate the Diagram from the local data?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## DataSource
+#DataSource
 
 SfDiagram is populated with the Node taken from an external hierarchical data source. SfDiagram exposes its specific, data-related properties and allows you to specify the data source fields where the node information is retrieved from.
 
-DataSource Settings
+##DataSource Settings
 
 Two mapping fields are necessary to map a hierarchical datasource with the diagram. Id property is used for unique identification of a record. ParentId property is used to identify the parent object to which a particular object is connected.
 
-<table>
-<tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Value</td></tr>
-<tr>
-<td>
-DataSource </td><td>
-Data source based on the diagram that is to be generated.</td><td>
-Object</td></tr>
-<tr>
-<td>
-ParentId</td><td>
-Specifies the mapping parent id property of the data source items.</td><td>
-String</td></tr>
-<tr>
-<td>
-Id</td><td>
-Specified the mapping unique id property of data source items.</td><td>
-String</td></tr>
-<tr>
-<td>
-Root</td><td>
-Specifies the root element of the data source items.</td><td>
-String</td></tr>
-</table>
+| Properties | Description | Value |
+|---|---|---|
+| DataSource | Data source based on the diagram that is to be generated. | Object |
+| ParentId | Specifies the mapping parent id property of the data source items. | String |
+| Id | Specified the mapping unique id property of data source items. | String |
+| Root | Specifies the root element of the data source items. | String |
 
-DataSource
+##DataSource
 
 The following code example illustrates how to bind data to SfDiagram.
 
@@ -78,9 +57,9 @@ diagram.DataSourceSettings = dataSourceSetttings;
 
 {% endhighlight %}
 
-![](DataSource_images\DataSource_img1.png)
+![](DataSource_images\DataSource_img1.jpeg)
 
-DataSource Root:
+##DataSource Root
 
 During Automatic Layout, Node without parent is treated as Root of the layout. But, now we have provided the option to specify this Root by using the DataSource settings.
 
@@ -93,6 +72,4 @@ diagram.DataSourceSettings.Root = “CEO”;
 
 {% endhighlight %}
 
-![](DataSource_images\DataSource_img2.png)
-
- _DataSource with Root._
+![](DataSource_images\DataSource_img2.jpeg)

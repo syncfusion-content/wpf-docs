@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stencil | SfDiagram | wpf | Syncfusion
-description: stencil
+title: Define and add the frequently used Nodes/Connectors to the Stencil.
+description: How to add Symbol to the Stencil and drag and drop them over the drawing area?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Stencil
+#Stencil
 
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filteres by using the SymbolFilterProvider through delegates.
 
@@ -17,44 +17,23 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 {% endhighlight %}
 
-![](Stencil_images\Stencil_img1.png)
+![](Stencil_images\Stencil_img1.jpeg)
 
 Key Terms Table
 
-<table>
-<tr>
-<td>
-Key Terms</td><td>
-Description</td></tr>
-<tr>
-<td>
-Symbol</td><td>
-To visualize the items in Stencil.</td></tr>
-</table>
-
+| Key Terms | Description |
+|---|---|
+| Symbol | To visualize the items in Stencil. |
 
 Properties Table
 
-<table>
-<tr>
-<td>
-Properties</td><td>
-Description</td></tr>
-<tr>
-<td>
-SymbolGroups</td><td>
-Collection of SymbolGroupProvider To Group the Symbols based on the MappingName Property.</td></tr>
-<tr>
-<td>
-SymbolFilters</td><td>
-Collection of SymbolFilterProvider To filter/Hide the Symbols based on MappingName Property.</td></tr>
-<tr>
-<td>
-SymbolSource</td><td>
-ItemSource for Stencil to populate the SymbolGroups with symbol.</td></tr>
-</table>
+| Properties | Description |
+|---|---|
+| SymbolGroups | Collection of SymbolGroupProvider To Group the Symbols based on the MappingName Property. |
+| SymbolFilters | Collection of SymbolFilterProvider To filter/Hide the Symbols based on MappingName Property. |
+| SymbolSource | ItemSource for Stencil to populate the SymbolGroups with symbol. | 
 
-Symbol
+##Symbol
 
 Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil:
 
@@ -83,11 +62,11 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-Adding the Symbol
+###Adding the Symbol
 
 The following example illustrates how to add the Symbol into a Collection:
 
-1. Create the ISymbol with Symbol and SymbolTemplate properties.
+####Create the ISymbol with Symbol and SymbolTemplate properties.
 
 {% highlight xml %}
 
@@ -96,7 +75,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 {% endhighlight %}
 
-2. Define the SymbolTemplate.
+####Define the SymbolTemplate.
 
 {% highlight xml %}
 
@@ -107,7 +86,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 {% endhighlight %}
 
-3. Add the ISymbol into the Collection.
+####Add the ISymbol into the Collection.
 
 {% highlight C# %}
 
@@ -127,13 +106,13 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 
 {% endhighlight %}
 
-![](Stencil_images\Stencil_img2.png)
+![](Stencil_images\Stencil_img2.jpeg)
 
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
-Add Node, Connector and Group to Stencil
+###Add Node, Connector and Group to Stencil
 
-1. Create a custom class (SymbolItem in this example) that derives ISymbol and implements necessary things.
+####Create a custom class (SymbolItem in this example) that derives ISymbol and implements necessary things.
 
 {% highlight C# %}
 
@@ -158,7 +137,7 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-1. Create a Node ,Connector and Group and to SymbolCollection.
+####Create a Node ,Connector and Group and to SymbolCollection.
 
 {% highlight xml %}
 
@@ -208,7 +187,7 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-2. Add SymbolCollection to SymbolSource of Stencil.
+####Add SymbolCollection to SymbolSource of Stencil.
 
 {% highlight xml %}
 
@@ -230,97 +209,17 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-![](Stencil_images\Stencil_img3.png)
+![](Stencil_images\Stencil_img3.jpeg)
 
-SymbolGroup
-
-SymbolGroup is used group the Symbols in Stencil. The SymbolGroupProvider groups the symbols based on the MappingName property.
-
-The following code example illustrates how to create a stencil.
-
-{% highlight xml %}
-
-<stencil:Stencil x:Name="stencil" SymbolSource="{StaticResource symbolcollection}">
-  <stencil:Stencil.SymbolGroups>
-    <stencil:SymbolGroups>
-      <stencil:SymbolGroupProvider MappingName="GroupName"/>
-    </stencil:SymbolGroups>
-  </stencil:Stencil.SymbolGroups>
-</stencil:Stencil>
-
-{% endhighlight %}
-
-SymbolFilter 
-
-This is used to filter the SymbolGroups in Stencil. SymbolFilterProvider is used for filtering the SymbolGroup by using Delegate. The desired Group can be displayed by using the SelectedFilter property.
-
-The following code example shows how to define the SymbolFilter.
-
-{% highlight xml %}
-
-<stencil:Stencil.SymbolFilters>
-  <stencil:SymbolFilters>
-    <stencil:SymbolFilterProvider>
-    </stencil:SymbolFilterProvider>
-  </stencil:SymbolFilters>
-</stencil:Stencil.SymbolFilters>
-
-{% endhighlight %}
-
-The following code example shows how to define the SelectedFilter.
-
-{% highlight C# %}
-
-stencil.SelectedFilter = new SymbolFilterProvider() { Filter = Filter, Content = "Test" };
-
-{% endhighlight %}
-
-The following code example shows how to use Delegate for SymbolFilter
-
-{% highlight C# %}
-
-private bool Filter(SymbolFilterProvider sender, ISymbol symbol)
-{
-	if((symbol as SymbolItem).GroupName=="Flow Chart")
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
-
-{% endhighlight %}
-
-Symbol
-
-Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in the Stencil.
-
-<table>
-<tr>
-<td>
-Property</td><td>
-Description</td></tr>
-<tr>
-<td>
-Symbol</td><td>
-Symbol accepts any object</td></tr>
-<tr>
-<td>
-SymbolTemplate</td><td>
-DataTemplate to visualize the symbol in Stencil</td></tr>
-</table>
-
-Preview for Drag and Drop
+###Preview for Drag and Drop
 
 SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
 
-Use Case Scenario
+####Use Case Scenario
 
 This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
 
-Enabling preview
+####Enabling preview
 
 To enable preview for the dragged item from Stencil, set the Constraints property of Stencil to ShowPreview. To disable preview, remove ShowPreview from Constraints property. By default, preview for drag and drop is enabled.
 
@@ -338,9 +237,9 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, Stencil is an instance of Stencil.
 
-![](Stencil_images\Stencil_img4.png)
+![](Stencil_images\Stencil_img4.jpeg)
 
-Customization of Preview for Drag and Drop
+####Customization of Preview for Drag and Drop
 
 You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
 
@@ -364,21 +263,13 @@ public class CustomStencil : Stencil
 
 {% endhighlight %}
 
-SymbolGroups
+##SymbolGroups
 
 The SymbolGroupProvider groups the symbols into SymbolGroup based on the MappingName property.
 
-<table>
-<tr>
-<td>
-Name</td><td>
-Description</td></tr>
-<tr>
-<td>
-MappingName</td><td>
-Used to group the symbols by mapping this property to the custom property of Symbols.</td></tr>
-</table>
-
+| Name | Description |
+|---|---|
+| MappingName | Used to group the symbols by mapping this property to the custom property of Symbols. |
 
 The following code example illustrates how to create a SymbolGroup.
 
@@ -394,47 +285,21 @@ The following code example illustrates how to create a SymbolGroup.
 
 {% endhighlight %}
 
-Expand or Collapse SymbolGroup
+###Expand or Collapse SymbolGroup
 
 Expand and Collapse can be performed on SymbolGroup (updating the Visibility of the Symbols) based on the ExpandMode property. It includes the following options. The default option is One.
 
-<table>
-<tr>
-<td>
-S.No</td><td>
-Expand Mode</td><td>
-Description</td></tr>
-<tr>
-<td>
-1.</td><td>
-One </td><td>
-Always one SymbolGroup is in expanded state.</td></tr>
-<tr>
-<td>
-2.</td><td>
-OneOrMore</td><td>
-At least one SymbolGroup is in expanded state.</td></tr>
-<tr>
-<td>
-3.</td><td>
-ZeroOrOne</td><td>
-Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state.</td></tr>
-<tr>
-<td>
-4</td><td>
-ZeroOrMore</td><td>
-Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state.</td></tr>
-<tr>
-<td>
-5.</td><td>
-All</td><td>
-All the SymbolGroup is in expanded state.</td></tr>
-</table>
+| Expand Mode | Description |
+|---|---|
+| One | Always one SymbolGroup is in expanded state. |
+| OneOrMore | At least one SymbolGroup is in expanded state. |
+| ZeroOrOne | Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state. |
+| ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. |
+| All | All the SymbolGroup is in expanded state. |
 
+##SymbolFilters
 
-SymbolFilters
-
-SymboFilterProvider is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
+`SymboFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
 
 The following code example shows how to create and add the SymbolFilter. Based on the return Boolean value of the SymbolFilter delegate, the corresponding item is reoved from Stencil. When a SymbolGroup does not have any Symbols, the corresponding SymbolGroup is also removed.
 
@@ -474,8 +339,8 @@ private bool SymbolFilter(SymbolFilterProvider sender, ISymbol symbol)
 
 {% endhighlight %}
 
-SelectedFilter
+###SelectedFilter
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-![](Stencil_images\Stencil_img5.png)
+![](Stencil_images\Stencil_img5.jpeg)

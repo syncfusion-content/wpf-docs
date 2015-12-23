@@ -1,27 +1,25 @@
 ---
 layout: post
-title: Node | SfDiagram | wpf | Syncfusion
-description: node
+title: Visually represent the geometrical informations, process flow, or entities.
+description: How to visually represent the geometrical information and process flows as nodes?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Node
+#Node
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](Node_images\Node_img1.png)
+![](Node_images\Node_img1.jpeg)
 
-Create Node
+##Create Node
 
 A Node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
 
-Add Node through Nodes collection 
+###Add Node through Nodes collection 
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram. The following code example illustrate how to add the Node to the Diagram.
-
-[XAML]
 
 {% highlight xml %}
 
@@ -47,8 +45,6 @@ To create a Node, You have to define the Node object and add that to Nodes colle
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -69,48 +65,33 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Node_images\Node_img2.png)
+![](Node_images\Node_img2.jpeg)
 
-Add Node from stencil
+###Add Node from stencil
 
-Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to **Stencil**.
+Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to [Stencil](/wpf/sfdiagram/Stencil "Stencil").
 
-Create Node through data source
+###Create Node through data source
 
 Nodes can be generated automatically with the information provided through data source.For more information about data source, 
 
-refer to **Data Source**.
+refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
 
-Draw Nodes
+###Draw Nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to **Draw Nodes.**
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:shapes "Draw Connectors").
 
-Position
+##Position
 
 Position of a Node is controlled by using its OffsetX and OffsetY properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may except this Offset values to represent the distance between page origin and Node’s top left corner instead of center. Pivot property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
 
 The following table illustrates how pivot relates Offset values with Node boundaries.
 
-<table>
-<tr>
-<td>
-Pivot </td><td>
-Offset</td></tr>
-<tr>
-<td>
-(0,5, 0.5)</td><td>
-OffsetX and OffsetY values are considered as the Node’s center point.</td></tr>
-<tr>
-<td>
-(0,0)</td><td>
-OffsetX and OffsetY values are considered as the top left corner of Node.</td></tr>
-<tr>
-<td>
-(1,1)</td><td>
-OffsetX and OffsetY values are considered as the bottom right corner of the Node.</td></tr>
-</table>
-
-[XAML]
+| Pivot | Offset |
+|---|---|
+| (0,5, 0.5) |  OffsetX and OffsetY values are considered as the Node’s center point. |
+| (0,0) | OffsetX and OffsetY values are considered as the top left corner of Node. |
+| (1,1) | OffsetX and OffsetY values are considered as the bottom right corner of the Node. |
 
 {% highlight xml %}
 
@@ -137,8 +118,6 @@ OffsetX and OffsetY values are considered as the bottom right corner of the Node
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -157,13 +136,11 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Node_images\Node_img3.png)
+![](Node_images\Node_img3.jpeg)
 
-Appearance
+##Appearance
 
 You can customize the appearance of a Node by changing its Style. The following code illustrates how to customize the appearance of the shape.
-
-[XAML]
 
 {% highlight xml %}
 
@@ -177,8 +154,6 @@ You can customize the appearance of a Node by changing its Style. The following 
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 Style style = new Style(typeof(Path));
@@ -191,12 +166,12 @@ return style;
 
 {% endhighlight %}
 
-![](Node_images\Node_img4.png)
+![](Node_images\Node_img4.jpeg)
 
-Interaction
+##Interaction
 
-Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to **Interaction**.
+Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to [Interaction](/wpf/sfdiagram/Interaction "Interaction").
 
-Constraints
+##Constraints
 
-The constraints property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to **Node Constraints**.
+The constraints property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#NodeConstraints "Node Constraints").

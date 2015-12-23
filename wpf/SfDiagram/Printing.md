@@ -1,28 +1,26 @@
 ---
 layout: post
-title: Printing | SfDiagram | wpf | Syncfusion
-description: printing
+title: Print Diagram content as image files.
+description: How to Print the Diagram?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-## Printing
+#Printing
 
 This feature enables you to print a copy of the Diagram with Print Preview
 
-Print Preview
+##Print Preview
 
 Print preview is used to preview the SfDiagram control before printing. Print preview scales the entire Diagram into a single page.
 
-![](Printing_images\Printing_img1.png)
+![](Printing_images\Printing_img1.jpeg)
 
-_Print Preview_
+##Customization of Print Preview
 
-Customization of Print Preview
+The SfDiagram control provides support to customize the appearance print preview by using the `PrintStretch` properties of PrintingService.
 
-The SfDiagram control provides support to customize the appearance print preview by using the PrintStretch properties of PrintingService.
-
-Customize the Orientation and Size
+####Customize the Orientation and Size
 
 The following code illustrates how to customize the orientation and size of the print preview.
 
@@ -32,9 +30,7 @@ diagram.PrintingService.PrintPreviewStretch = Stretch.Fill;
 
 {% endhighlight %}
 
-
-
-Customize the Appearance
+##Customize the Appearance
 
 The SfDiagram control provides the PrintPreview Control to customize the page to be printed by overring the ControlTemplate of the PrintPreview Control. The customization is also shown in PrintPreview. This is helpful when a header or footer has been added to the page.
 

@@ -1,25 +1,22 @@
 ---
 layout: post
-title: Automatic Layouts | SfDiagram | wpf | Syncfusion
-description: automatic layouts
+title: Layout nodes and connectors in an organized structure
+description: How to arrange Nodes by using the Automatic Layouts?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Automatic Layouts
+#Automatic Layouts
 
-SfDiagram provides support to specify automatic layouts for nodes. It includes the following layout modes.
+SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
+* Organization Chart
+* Directed Tree Layout
+* Radial Tree
 
-* Organization Layout
+We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initial steps for all the Layout.
 
-* Directed-Tree Layout
-
-* Radial-Tree Layout
-
-We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initali steps for all the Layout.
-
-1. Create Class for Data
+###Create Class for Data
 
 Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
@@ -40,7 +37,7 @@ public class Employees : ObservableCollection<Employee>
 
 {% endhighlight %}
 
-2. Initalize Dats Source Settings
+###Initalize Dats Source Settings
 
 {% highlight xml %}
 
@@ -50,7 +47,7 @@ public class Employees : ObservableCollection<Employee>
         
 {% endhighlight %}
 
-3. Visulaize the Node and Connector
+###Visulaize the Node and Connector
 
 {% highlight xml %}
 
@@ -104,7 +101,7 @@ public class Employees : ObservableCollection<Employee>
 
 {% endhighlight %}
 
-**Organization Layout**  
+##Organization Layout 
 
 An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart. 
 
@@ -148,36 +145,21 @@ Layout="{StaticResource TreeLayout}"/>
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img1.png)
+![](Automatic-Layouts_images\Automatic-Layouts_img1.jpeg)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a Node’s children and the way to arrange (Orientation, Type etc.) them. You can customize the arrangements by overriding this function as explained.
 
-GetLayoutInfo
+##GetLayoutInfo
 
 User can change ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical. The following code example illustrates how to register an event and how to change ChartType and orientation.
 
 **Event Arguments:**
 
-<table>
-<tr>
-<td>
-Event args</td><td>
-Property</td><td>
-Description</td></tr>
-<tr>
-<td rowspan = "3">
-LayoutInfoArgs</td><td>
-Item</td><td>
-Added item when layout is getting updated.<br></td></tr>
-<tr>
-<td>
-Type</td><td>
-Gets or sets the organizational chart type.</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-Gets or sets the organizational chart orientation.</td></tr>
-</table>
+| Event args | Property | Description |
+|---|---|---|
+| LayoutInfoArgs | Item | Added item when layout is getting updated. |
+| | Type | Gets or sets the organizational chart type. |
+| | Orientation | Gets or sets the organizational chart orientation. |
 
 {% highlight C# %}
 
@@ -196,59 +178,23 @@ void diagramcontrol_GetLayoutInfo(object sender, LayoutInfoArgs args)
 
 The following table illustrates the different chart orientations and chart types. 
 
-<table>
-<tr>
-<td>
-Orientation</td><td>
-Type</td><td>
-Description</td><td>
-Example</td></tr>
-<tr>
-<td>
-Horizontal</td><td>
-Left</td><td>
-Arranges the child Nodes horizontally at the left side of parent.</td><td>
-<img src="Automatic-Layouts_images\Automatic-Layouts_img2.png" alt="" width="294pt" height="127pt"</td></tr>
-<tr>
-<td>
-</td><td>
-Right</td><td>
-Arranges the child Nodes horizontally at the right side of parent.</td><td>
-<img src="Automatic-Layouts_images\Automatic-Layouts_img3.png" alt="" width="291pt" height="125pt"</td></tr>
-<tr>
-<td>
-</td><td>
-Center</td><td>
-Arranges the child Nodes horizontally at the Center side of parent.</td><td>
-<img src="Automatic-Layouts_images\Automatic-Layouts_img4.png" alt="" width="297pt" height="125pt"</td></tr>
-<tr>
-<td>
-Vertical</td><td>
-Left</td><td>
-Vertically arranges the children at the left side of parent.</td><td>
-<img src="Automatic-Layouts_images\Automatic-Layouts_img5.png" alt="" width="135pt" height="244pt"</td></tr>
-<tr>
-<td>
-</td><td>
-Right</td><td>
-Vertically arranges the children at the right side of parent.</td><td>
-<img src="Automatic-Layouts_images\Automatic-Layouts_img6.png" alt="" width="124pt" height="236pt"</td></tr>
-<tr>
-<td>
-</td><td>
-Alternate</td><td>
-Vertically arranges the children at both left and right sides of parent.</td><td>
-<img src="Automatic-Layouts_images\Automatic-Layouts_img7.png" alt="" width="182pt" height="183pt"</td></tr>
-</table>
+| Orientation | Type | Description | Example |
+|---|---|---|---|
+| Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img2.jpeg) |
+| | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img3.jpeg) |
+| | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img4.jpeg) |
+| Vertical | Vertically arranges the children at the Left side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img5.jpeg) |
+| | Right | Vertically arranges the children at the Right side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img6.jpeg) |
+| | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img7.jpeg) |
 
 
-**Directed-Tree Layout**
+##Directed-Tree Layout
 
 The Directed-Tree layout mode enables you to arrange the Nodes in a tree like structure. This layout can be applied to any Diagram that comprises a directed tree graph with unique root and child Nodes. This creates the Diagrams easier because the Node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the Nodes based on the layout root.
 
-To create the Directed Tree Layout, Type should be set as LayoutType.Hierarchical.
+To create the Directed Tree Layout, `Type` should be set as `LayoutType.Hierarchical`.
 
-Note: SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
+N> SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
 
 {% highlight xml %}
 
@@ -273,9 +219,9 @@ Layout="{StaticResource TreeLayout}"/>
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img8.png)
+![](Automatic-Layouts_images\Automatic-Layouts_img8.jpeg)
 
-**Radial-Tree Layout**
+##Radial-Tree Layout
 
 The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the layout root.
 
@@ -318,9 +264,9 @@ The Radial-Tree Layout is a specification of the Directed Tree Layout Manager th
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img9.png)
+![](Automatic-Layouts_images\Automatic-Layouts_img9.jpeg)
 
-**Updating the Layout**
+###Updating the Layout
 
 When changes are made to content in the SfDiagram. For example, linking new Nodes or adding new Connectors, the layout had to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram.
 
@@ -331,7 +277,7 @@ SfDiagram diagramcontrol = new SfDiagram();
 
 {% endhighlight %}
 
-**Layout Bounds, Margins, and Alignments**
+###Layout Bounds, Margins, and Alignments
 
 **Description**
 
@@ -359,4 +305,4 @@ diagramcontrol.LayoutManager = new LayoutManager()
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img10.png)
+![](Automatic-Layouts_images\Automatic-Layouts_img10.jpeg)

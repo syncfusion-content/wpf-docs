@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Port | SfDiagram | wpf | Syncfusion
-description: port
+title: Create custom connection points to draw connections with any specific point of Node.
+description: How to draw connections with specific points of Node?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-## Port
+#Port
 
-Essential Diagram for WinRT provides support to define custom ports for making connections.
+Essential Diagram for WPF provides support to define custom ports for making connections.
 
-![](Port_images\Port_img1.png)![](Port_images\Port_img2.png)
+![](Port_images\Port_img1.jpeg)![](Port_images\Port_img2.jpeg)
 
 When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary as shown in the following image.
 
-![](Port_images\Port_img3.png)
+![](Port_images\Port_img3.jpeg)
 
 Port act as the connection points of node and allows to create connections with only specific points as shown in the following image.
 
-![](Port_images\Port_img4.png)![](Port_images\Port_img5.png)
+![](Port_images\Port_img4.jpeg)![](Port_images\Port_img5.jpeg)
 
-Create Port
+##Create Port
 
-Add ports when initializing Nodes
+###Add ports to Nodes
 
-To add a collection port, you need to define the port object and add it to Node’s ports collection. The offset property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports when initializing the Node.
+To add a collection port, you need to define the port object and add it to Node’s ports collection. The `Offset` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports when initializing the Node.
 
 {% highlight C# %}
 
@@ -106,7 +106,7 @@ private NodePort AddPort(double p1, double p2)
 
 {% endhighlight %}
 
-![](Port_images\Port_img6.png)
+![](Port_images\Port_img6.jpeg)
 
 The following code illustrates how to add ports to Connector.
 
@@ -149,13 +149,13 @@ private ConnectorPort AddConnectorPort(double p)
 
 {% endhighlight %}
 
-![](Port_images\Port_img7.png)
+![](Port_images\Port_img7.jpeg)
 
-Connect with ports
+##Connect with ports
 
-Connector’s SourcePort and TargetPort properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to **Connections with Ports**.
+Connector’s SourcePort and TargetPort properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to [Connections with Ports](/wpf/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
 
-Appearance
+##Appearance
 
 You can change the shape of port by using its shape property. The appearance of ports can be customized with a set of style specific properties.
 
@@ -192,8 +192,8 @@ NodePort port = new NodePort()
 
 {% endhighlight %}
 
-![](Port_images\Port_img8.png)
+![](Port_images\Port_img8.jpeg)
 
-Constraints
+##Constraints
 
-The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to **PortConstraints.**
+The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#PortConstraints "Port Constraints").
