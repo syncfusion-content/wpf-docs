@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](Node_imahes/Node_img1.jpeg)
+![](Node_images/Node_img1.jpeg)
 
 ##Create Node
 
@@ -65,7 +65,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Node_imahes/Node_img2.jpeg)
+![](Node_images/Node_img2.jpeg)
 
 ###Add Node from stencil
 
@@ -136,7 +136,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Node_imahes/Node_img3.jpeg)
+![](Node_images/Node_img3.jpeg)
 
 ##Appearance
 
@@ -166,7 +166,7 @@ return style;
 
 {% endhighlight %}
 
-![](Node_imahes/Node_img4.jpeg)
+![](Node_images/Node_img4.jpeg)
 
 ##Interaction
 
@@ -174,4 +174,4 @@ Diagram provides support to drag, resize, or rotate the Node interactively. For 
 
 ##Constraints
 
-The constraints property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#NodeConstraints "Node Constraints").
+The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#NodeConstraints "Node Constraints").

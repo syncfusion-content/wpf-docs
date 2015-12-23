@@ -17,9 +17,9 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
-![](Interaction_imahes/Interaction_img2.jpeg)
+![](Interaction_images/Interaction_img2.jpeg)
 
-![](Interaction_imahes/Interaction_img4.jpeg)
+![](Interaction_images/Interaction_img4.jpeg)
 
 ###Selecting a Group
 
@@ -39,7 +39,7 @@ Clicking and dragging the Diagram area allows to create a rectangular region. Th
 
 Multiple selected elements are visually represented as shown.
 
-![](Interaction_imahes/Interaction_img5.jpeg)
+![](Interaction_images/Interaction_img5.jpeg)
 
 ###Select/Unselect the elements programmatically
 
@@ -64,7 +64,7 @@ node.IsSelected = false;
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping").
 
-![](Interaction_imahes/Interaction_img6.jpeg)
+![](Interaction_images/Interaction_img6.jpeg)
 
 ##Resize
 
@@ -72,7 +72,7 @@ node.IsSelected = false;
 * When one corner of the selector is dragged, opposite corner is in a static position.
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping")..
 
-![](Interaction_imahes/Interaction_img7.jpeg)
+![](Interaction_images/Interaction_img7.jpeg)
 
 ##Rotate
 
@@ -80,7 +80,7 @@ node.IsSelected = false;
 * The Node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position")..
 
-![](Interaction_imahes/Interaction_img8.jpeg)
+![](Interaction_images/Interaction_img8.jpeg)
 
 ##Connection Editing
 
@@ -90,7 +90,7 @@ node.IsSelected = false;
 
 Source and target points of the selected Connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](Interaction_imahes/Interaction_img9.jpeg)
+![](Interaction_images/Interaction_img9.jpeg)
 
 ###Straight segment editing
 
@@ -102,17 +102,17 @@ Source and target points of the selected Connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-![](Interaction_imahes/Interaction_img10.jpeg)
+![](Interaction_images/Interaction_img10.jpeg)
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](Interaction_imahes/Interaction_img11.jpeg)
+![](Interaction_images/Interaction_img11.jpeg)
 
 ###Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](Interaction_imahes/Interaction_img12.jpeg)
+![](Interaction_images/Interaction_img12.jpeg)
 
 ##Drag and Drop Nodes over other elements
 
@@ -217,3 +217,5 @@ The following table illustrates List of Commands with key Gesture.
 | Ctrl + [ | SendBackward | Moves the selected element behind the underlying element. |
 | Ctrl + Shift + ] | BringFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
+
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/Commands#Command-Manager "Command Manager");

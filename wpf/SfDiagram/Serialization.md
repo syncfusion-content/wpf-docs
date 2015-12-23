@@ -66,3 +66,5 @@ sfdiagram.KnownTypes = () => new List<Type>()
 {% endhighlight %}
 
 In the preceding code, NodeContent is unknown type to Serializer. This is similar to IConnector and IGroup.
+
+Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/wpf/sfdiagram/Exporting "Exporting").

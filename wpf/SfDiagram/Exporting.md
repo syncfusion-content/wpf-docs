@@ -11,7 +11,7 @@ documentation: ug
 
 Diagram provides support to extent its content as image files
 
-![](Exporting_imahes/Exporting_img1.jpeg)
+![](Exporting_images/Exporting_img1.jpeg)
 
 ##Exporting Options
 

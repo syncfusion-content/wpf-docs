@@ -22,7 +22,7 @@ Two mapping fields are necessary to map a hierarchical datasource with the diagr
 | Id | Specified the mapping unique id property of data source items. | String |
 | Root | Specifies the root element of the data source items. | String |
 
-##DataSource
+###DataSource
 
 The following code example illustrates how to bind data to SfDiagram.
 
@@ -57,7 +57,7 @@ diagram.DataSourceSettings = dataSourceSetttings;
 
 {% endhighlight %}
 
-![](DataSource_imahes/DataSource_img1.jpeg)
+![](DataSource_images/DataSource_img1.jpeg)
 
 ##DataSource Root
 
@@ -72,4 +72,4 @@ diagram.DataSourceSettings.Root = “CEO”;
 
 {% endhighlight %}
 
-![](DataSource_imahes/DataSource_img2.jpeg)
+![](DataSource_images/DataSource_img2.jpeg)

@@ -17,7 +17,7 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 {% endhighlight %}
 
-![](Stencil_imahes/Stencil_img1.jpeg)
+![](Stencil_images/Stencil_img1.jpeg)
 
 Key Terms Table
 
@@ -106,7 +106,7 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 
 {% endhighlight %}
 
-![](Stencil_imahes/Stencil_img2.jpeg)
+![](Stencil_images/Stencil_img2.jpeg)
 
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
@@ -209,59 +209,7 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-![](Stencil_imahes/Stencil_img3.jpeg)
-
-###Preview for Drag and Drop
-
-SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
-
-####Use Case Scenario
-
-This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
-
-####Enabling preview
-
-To enable preview for the dragged item from Stencil, set the Constraints property of Stencil to ShowPreview. To disable preview, remove ShowPreview from Constraints property. By default, preview for drag and drop is enabled.
-
-The following code example illustrates how to enable preview support.
-
-{% highlight C# %}
-
-//Enables the drag and drop preview.
-stencil.Constraints = stencil.Constraints | StencilConstraints.ShowPreview;
-
-//Disables the drag and drop preview.
-stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
-
-{% endhighlight %}
-
-Here, Stencil is an instance of Stencil.
-
-![](Stencil_imahes/Stencil_img4.jpeg)
-
-####Customization of Preview for Drag and Drop
-
-You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
-
-{% highlight C# %}
-
-public class CustomStencil : Stencil
-{
-	protected override void PrepareDragDropPreview()
-	{
-		this.SymbolPreview = new ContentPresenter()
-		{
-			Content = new Rectangle()
-			{
-				Width = 50,
-				Height = 50,
-				Fill = new SolidColorBrush(Colors.SteelBlue)
-			}
-		};
-	}
-}
-
-{% endhighlight %}
+![](Stencil_images/Stencil_img3.jpeg)
 
 ##SymbolGroups
 
@@ -343,4 +291,56 @@ private bool SymbolFilter(SymbolFilterProvider sender, ISymbol symbol)
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-![](Stencil_imahes/Stencil_img5.jpeg)
+![](Stencil_images/Stencil_img5.jpeg)
+
+## Preview for Drag and Drop
+
+SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
+
+####Use Case Scenario
+
+This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
+
+####Enabling preview
+
+To enable preview for the dragged item from Stencil, set the Constraints property of Stencil to ShowPreview. To disable preview, remove ShowPreview from Constraints property. By default, preview for drag and drop is enabled.
+
+The following code example illustrates how to enable preview support.
+
+{% highlight C# %}
+
+//Enables the drag and drop preview.
+stencil.Constraints = stencil.Constraints | StencilConstraints.ShowPreview;
+
+//Disables the drag and drop preview.
+stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
+
+{% endhighlight %}
+
+Here, Stencil is an instance of Stencil.
+
+![](Stencil_images/Stencil_img4.jpeg)
+
+####Customization of Preview for Drag and Drop
+
+You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
+
+{% highlight C# %}
+
+public class CustomStencil : Stencil
+{
+	protected override void PrepareDragDropPreview()
+	{
+		this.SymbolPreview = new ContentPresenter()
+		{
+			Content = new Rectangle()
+			{
+				Width = 50,
+				Height = 50,
+				Fill = new SolidColorBrush(Colors.SteelBlue)
+			}
+		};
+	}
+}
+
+{% endhighlight %}

@@ -13,7 +13,7 @@ Localization is the process of providing controls in different cultures to help 
 
 ##Customizing Context Menu
 
-![](Localization_imahes/Localization_img1.jpeg)
+![](Localization_images/Localization_img1.jpeg)
 
 The following code illustrates how to provide localization support for Context Menu items.
 
@@ -31,5 +31,5 @@ manager = new System.Resources.ResourceManager("Localization.Resources.Syncfusio
 
 {% endhighlight%}
 
-![](Localization_imahes/Localization_img2.jpeg)
+![](Localization_images/Localization_img2.jpeg)
 

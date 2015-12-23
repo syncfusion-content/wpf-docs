@@ -9,7 +9,7 @@ documentation: ug
 
 #Getting Started
 
-**Creating Simple Diagram:**
+**Creating Simple Diagram**
 
 This section demonstrates how to visualize the Employee details in the Organizational Chart arrangement by using the SfDiagram.
 
@@ -23,7 +23,7 @@ The xmlns name space is added to the MainPage.xaml
 
 ![](Getting-Started_images\Getting-Started_img2.jpeg)
 
-##Initialize the SfDiagram
+###Initialize the SfDiagram
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram to the XAML Page as shown in the following code sample.
 
@@ -47,7 +47,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 {% endhighlight %}
 
-##Initialize Nodes and Connectors
+###Initialize Nodes and Connectors
 
 To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. Connector’s property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
 
@@ -97,7 +97,7 @@ namespace EmployeeDetails
 
 {% endhighlight %}
 
-##Create class to store employee information
+###Create class to store employee information
 
 Now, you have to create a class, Employee with properties to store the employee’s information like name, designation, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
@@ -131,7 +131,7 @@ namespace EmployeeDetails
 
 {% endhighlight %}
 
-##Initialize Data
+###Initialize Data
 
 Create a collection of employees with each employee having an ID in the Epmid and the reporting person’s ID in the Parent ID. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
 
@@ -178,7 +178,7 @@ Create a collection of employees with each employee having an ID in the Epmid an
 
 {% endhighlight %}
 
-##Initialize DataSourceSettings
+###Initialize DataSourceSettings
 
 To populate employee information as Nodes and connectors, configure the DataSourceSettings with the DataSource, ID, and ParentId. The ID property is used as a unique identifier for each Node, and the parent ID represents the parent Node where a Node has to be connected. The following code example illustrates how to define the DataSourceSetting and set it to the Diagram.
 
@@ -219,7 +219,7 @@ To populate employee information as Nodes and connectors, configure the DataSour
 
 {% endhighlight %}
 
-##Visualize Employees
+###Visualize Employees
 
 Now, Diagram is configured to load the employees’ information as a tree of organization chart. Next, give visual appearance for the Node. To visualize the employees’ details in the Node, a Node has to be created for each employee, and then the employee’s details are stored in the Node’s content property. To visualize the employee information, define the appearance as a data template and apply it to the Node’s content template as shown in the following code example.
 
@@ -295,7 +295,7 @@ Now, Diagram is configured to load the employees’ information as a tree of org
 
 {% endhighlight %}
 
-##Initialize Layout
+###Initialize Layout
 
 Employees are initialized, populated in the Diagram, and appearance for employees are defined. Now, place the Nodes and Connector by using the layout manager. The following code example shows how to initialize the LayoutManager, specify the layout as the DirectedTreeLayout and set it to the Diagram.
 
