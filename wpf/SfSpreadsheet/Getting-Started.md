@@ -161,9 +161,9 @@ _For_ _Spreadsheet_
 
 {% highlight c# %}
 
-    SfSpreadsheet spreadsheet = new SfSpreadsheet();
+SfSpreadsheet spreadsheet = new SfSpreadsheet();
 
-    this.grid.Children.Add(spreadsheet);
+this.grid.Children.Add(spreadsheet);
 
 {% endhighlight %}
 
@@ -220,17 +220,17 @@ The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.s
 {% tabs %}
 {% highlight c# %}
 
-     //Using Stream,
- 
-      spreadsheet.Open (Stream file)
+//Using Stream,
 
-    //Using String,
+ spreadsheet.Open (Stream file)
 
-      spreadsheet.Open (string file)
+//Using String,
 
-    //Using Workbook,
+ spreadsheet.Open (string file)
 
-      spreadsheet.Open(IWorkbook workbook)
+//Using Workbook,
+
+ spreadsheet.Open(IWorkbook workbook)
       
 {% endhighlight %}
 {% endtabs %}

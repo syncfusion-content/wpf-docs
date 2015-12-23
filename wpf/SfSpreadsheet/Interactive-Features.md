@@ -196,29 +196,21 @@ Adding the customized menu items in the CellContextMenuOpening Event,
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.ActiveGrid.CellContextMenuOpening += ActiveGrid_CellContextMenuOpening;
+spreadsheet.ActiveGrid.CellContextMenuOpening += ActiveGrid_CellContextMenuOpening;
 
-    void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEventArgs e)
-
-    {
-
-        //Adding Customized Menu item
-
-        MenuItem PasteSpecial = new MenuItem();
-
-        PasteSpecial.Header = "Pastespecial";
-
-        Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
-
-        PasteSpecial.Icon = paste;
-
-        spreadsheet.ActiveGrid.CellContextMenu.Items.Add(PasteSpecial);
-
-        //Remove the existing Context menu
-
-        spreadsheet.ActiveGrid.CellContextMenu.Items.RemoveAt(2);
-
-    }
+void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEventArgs e)
+{
+    //Adding Customized Menu item
+        
+    MenuItem PasteSpecial = new MenuItem();
+    PasteSpecial.Header = "Pastespecial";
+    Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
+    PasteSpecial.Icon = paste;
+    spreadsheet.ActiveGrid.CellContextMenu.Items.Add(PasteSpecial);
+        
+    //Remove the existing Context menu
+    spreadsheet.ActiveGrid.CellContextMenu.Items.RemoveAt(2);
+}
 
 {% endhighlight %}
 {% endtabs %}

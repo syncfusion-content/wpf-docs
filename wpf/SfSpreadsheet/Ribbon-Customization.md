@@ -30,51 +30,34 @@ You can create a custom Ribbon tab with user defined meu options in SfSpreadshee
 {% tabs %}
 {% highlight c# %}
 
-    ribbon.Loaded += ribbon_Loaded;
-    RibbonBar CustomRibbonBar;
+ribbon.Loaded += ribbon_Loaded;
+RibbonBar CustomRibbonBar;
     
-    void ribbon_Loaded(object sender, RoutedEventArgs e)
+void ribbon_Loaded(object sender, RoutedEventArgs e)
+{
+    var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
+
+    if (sfribbon != null)
     {
-      var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
-
-      if (sfribbon != null)
-       {
-
-          RibbonTab rb = new RibbonTab();
-
-          rb.Caption = "OTHER";
-
-          RibbonButton Button1 = new RibbonButton();
-
-          Button1.Label = "PRINT";
-
-          Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
-
-          Button1.Click += Button1_Click;
-
-          RibbonButton Button2 = new RibbonButton();
-
-          Button2.Label = "PRINT PREVIEW";
-
-          Button2.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
-
-          Button2.Click += Button2_Click;
-
-          CustomRibbonBar = new RibbonBar();
-
-          CustomRibbonBar.Header = "Printing Options";
-
-          CustomRibbonBar.Items.Add(Button1);
-
-          CustomRibbonBar.Items.Add(Button2);
-
-          CustomRibbonBar.IsLauncherButtonVisible = false;
-
-          rb.Items.Add(CustomRibbonBar);
-
-          sfribbon.Items.Add(rb);
-       }
+      RibbonTab rb = new RibbonTab();
+      rb.Caption = "OTHER";
+      RibbonButton Button1 = new RibbonButton();
+      Button1.Label = "PRINT";
+      Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
+      Button1.Click += Button1_Click;
+      RibbonButton Button2 = new RibbonButton();
+      Button2.Label = "PRINT PREVIEW";
+      Button2.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
+      Button2.Click += Button2_Click;
+      CustomRibbonBar = new RibbonBar();
+      CustomRibbonBar.Header = "Printing Options";
+      CustomRibbonBar.Items.Add(Button1);
+      CustomRibbonBar.Items.Add(Button2);
+      CustomRibbonBar.IsLauncherButtonVisible = false;
+      rb.Items.Add(CustomRibbonBar);
+      sfribbon.Items.Add(rb);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
