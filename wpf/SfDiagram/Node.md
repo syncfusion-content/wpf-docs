@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](Node_images\Node_img1.jpeg)
+![](Node_imahes/Node_img1.jpeg)
 
 ##Create Node
 
@@ -65,7 +65,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Node_images\Node_img2.jpeg)
+![](Node_imahes/Node_img2.jpeg)
 
 ###Add Node from stencil
 
@@ -136,7 +136,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Node_images\Node_img3.jpeg)
+![](Node_imahes/Node_img3.jpeg)
 
 ##Appearance
 
@@ -166,7 +166,7 @@ return style;
 
 {% endhighlight %}
 
-![](Node_images\Node_img4.jpeg)
+![](Node_imahes/Node_img4.jpeg)
 
 ##Interaction
 

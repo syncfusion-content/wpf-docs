@@ -36,7 +36,7 @@ OverviewConstraints.Zoom |
 
 The following code example explains how to add Overview to an Application
 
-![](Overview-Control_images\Overview-Control_img1.jpeg)
+![](Overview-Control_imahes/Overview-Control_img1.jpeg)
 
 Refer to the Overview Sample from the following link.
 

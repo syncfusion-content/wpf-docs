@@ -57,7 +57,7 @@ diagram.DataSourceSettings = dataSourceSetttings;
 
 {% endhighlight %}
 
-![](DataSource_images\DataSource_img1.jpeg)
+![](DataSource_imahes/DataSource_img1.jpeg)
 
 ##DataSource Root
 
@@ -72,4 +72,4 @@ diagram.DataSourceSettings.Root = “CEO”;
 
 {% endhighlight %}
 
-![](DataSource_images\DataSource_img2.jpeg)
+![](DataSource_imahes/DataSource_img2.jpeg)

@@ -11,7 +11,7 @@ documentation: ug
 
 **Essential Diagram WPF** creates rich Visio like applications. Its framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 
-![](Overview_images\Overview_img1.jpeg)
+![](Overview_imahes/Overview_img1.jpeg)
 
 The list of list features of Diagram control in WinRT is as follows.
 

@@ -69,7 +69,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img1.jpeg)
+![](Annotation_imahes/Annotation_img1.jpeg)
 
 ##Alignment
 
@@ -81,11 +81,11 @@ The Offset property of IAnnotation is used to align the Annotations based on fra
 
 The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
 
-![](Annotation_images\Annotation_img2.jpeg)
+![](Annotation_imahes/Annotation_img2.jpeg)
 
 By using Offset property, without creating the template we can arrange the Annotaion.
 
-![](Annotation_images\Annotation_img3.jpeg)
+![](Annotation_imahes/Annotation_img3.jpeg)
 
 ###Horizontal and Vertical alignments
 
@@ -95,15 +95,15 @@ The following table illustrates all the possible alignments visually with **Offs
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](Annotation_images\Annotation_img4.jpeg) |
-| Center | | ![](Annotation_images\Annotation_img5.jpeg) |
-| Right | | ![](Annotation_images\Annotation_img6.jpeg) |
-| Left | Center | ![]("Annotation_images\Annotation_img7.jpeg) |
-| Center | | ![](Annotation_images\Annotation_img8.jpeg) |
-| Right | | ![](Annotation_images\Annotation_img9.jpeg) |
-| Left | Bottom | ![](Annotation_images\Annotation_img10.jpeg) |
-| Center | | ![](Annotation_images\Annotation_img11.jpeg) |
-| Right | | ![](Annotation_images\Annotation_img12.jpeg) |
+| Left | Top | ![](Annotation_imahes/Annotation_img4.jpeg) |
+| Center | | ![](Annotation_imahes/Annotation_img5.jpeg) |
+| Right | | ![](Annotation_imahes/Annotation_img6.jpeg) |
+| Left | Center | ![]("Annotation_imahes/Annotation_img7.jpeg) |
+| Center | | ![](Annotation_imahes/Annotation_img8.jpeg) |
+| Right | | ![](Annotation_imahes/Annotation_img9.jpeg) |
+| Left | Bottom | ![](Annotation_imahes/Annotation_img10.jpeg) |
+| Center | | ![](Annotation_imahes/Annotation_img11.jpeg) |
+| Right | | ![](Annotation_imahes/Annotation_img12.jpeg) |
 
 The following codes illustrates how to align Annotations.
 
@@ -136,7 +136,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img16.jpeg)
+![](Annotation_imahes/Annotation_img16.jpeg)
 
 ###Margin
 
@@ -172,7 +172,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img17.jpeg)
+![](Annotation_imahes/Annotation_img17.jpeg)
 
 The following code illustrates how to displace Annotation through with the Margin property.
 
@@ -191,7 +191,7 @@ new AnnotationEditorViewModel()
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img18.jpeg)
+![](Annotation_imahes/Annotation_img18.jpeg)
 
 _Annotation Displacement through margin_
 
@@ -225,13 +225,13 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img19.jpeg)
+![](Annotation_imahes/Annotation_img19.jpeg)
 
 | Values | Description | Node | Connector|
 |---|---|---|---|
-| NoWrap | Text will not be wrapped. | ![](Annotation_images\Annotation_img20.jpeg) | ![](Annotation_images\Annotation_img21.jpeg) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images\Annotation_img22.jpeg) | Annotation_images\Annotation_img23.jpeg |
-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images\Annotation_img24.jpeg) | Annotation_images\Annotation_img25.jpeg |
+| NoWrap | Text will not be wrapped. | ![](Annotation_imahes/Annotation_img20.jpeg) | ![](Annotation_imahes/Annotation_img21.jpeg) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_imahes/Annotation_img22.jpeg) | Annotation_imahes/Annotation_img23.jpeg |
+| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_imahes/Annotation_img24.jpeg) | Annotation_imahes/Annotation_img25.jpeg |
 
 ##Appearance 
 
@@ -278,7 +278,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img26.jpeg)
+![](Annotation_imahes/Annotation_img26.jpeg)
 
 The Appearance of the Annotation can also be customized with appearance specific properties. The following code illustrates how to customize background and border of a Annotation.
 
@@ -295,7 +295,7 @@ The Appearance of the Annotation can also be customized with appearance specific
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img27.jpeg)
+![](Annotation_imahes/Annotation_img27.jpeg)
 
 ##Drag
 
@@ -329,7 +329,7 @@ diagram.Nodes = nodes;
 
 
 
-![](Annotation_images\Annotation_img28.jpeg)
+![](Annotation_imahes/Annotation_img28.jpeg)
 
 The following code illustrates how to enable DragAnnotation for Connector.
 
@@ -339,7 +339,7 @@ connector.Constraints = ConnectorConstraints.Default | ConnectorConstraints.Drag
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img29.jpeg)
+![](Annotation_imahes/Annotation_img29.jpeg)
 
 ##Edit
 
@@ -394,7 +394,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img30.jpeg)
+![](Annotation_imahes/Annotation_img30.jpeg)
 
 ##Read Only Annotation
 
@@ -470,4 +470,4 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img31.jpeg)
+![](Annotation_imahes/Annotation_img31.jpeg)

@@ -145,7 +145,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img1.jpeg)
+![](Automatic-Layouts_imahes/Automatic-Layouts_img1.jpeg)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a Node’s children and the way to arrange (Orientation, Type etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -180,12 +180,12 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img2.jpeg) |
-| | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img3.jpeg) |
-| | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img4.jpeg) |
-| Vertical | Vertically arranges the children at the Left side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img5.jpeg) |
-| | Right | Vertically arranges the children at the Right side of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img6.jpeg) |
-| | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_images\Automatic-Layouts_img7.jpeg) |
+| Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![](Automatic-Layouts_imahes/Automatic-Layouts_img2.jpeg) |
+| | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![](Automatic-Layouts_imahes/Automatic-Layouts_img3.jpeg) |
+| | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![](Automatic-Layouts_imahes/Automatic-Layouts_img4.jpeg) |
+| Vertical | Vertically arranges the children at the Left side of Parent. | ![](Automatic-Layouts_imahes/Automatic-Layouts_img5.jpeg) |
+| | Right | Vertically arranges the children at the Right side of Parent. | ![](Automatic-Layouts_imahes/Automatic-Layouts_img6.jpeg) |
+| | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_imahes/Automatic-Layouts_img7.jpeg) |
 
 
 ##Directed-Tree Layout
@@ -219,7 +219,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img8.jpeg)
+![](Automatic-Layouts_imahes/Automatic-Layouts_img8.jpeg)
 
 ##Radial-Tree Layout
 
@@ -264,7 +264,7 @@ The Radial-Tree Layout is a specification of the Directed Tree Layout Manager th
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img9.jpeg)
+![](Automatic-Layouts_imahes/Automatic-Layouts_img9.jpeg)
 
 ###Updating the Layout
 
@@ -305,4 +305,4 @@ diagramcontrol.LayoutManager = new LayoutManager()
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images\Automatic-Layouts_img10.jpeg)
+![](Automatic-Layouts_imahes/Automatic-Layouts_img10.jpeg)

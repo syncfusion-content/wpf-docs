@@ -33,7 +33,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
 
-![](Gridlines_images\Gridlines_img1.jpeg)
+![](Gridlines_imahes/Gridlines_img1.jpeg)
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/wpf/sfdiagram/Constraints#SnapConstraints "SnapConstraints").
 
@@ -57,7 +57,7 @@ diagram.SnapSettings.VerticalGridlines = gridlines;
 
 {% endhighlight %}
 
-![](Gridlines_images\Gridlines_img2.jpeg)
+![](Gridlines_imahes/Gridlines_img2.jpeg)
 
 ###Line Intervals
 
@@ -86,7 +86,7 @@ diagram.SnapSettings.VerticalGridlines = gridlines;
 
 {% endhighlight %}
 
-![](Gridlines_images\Gridlines_img3.jpeg)
+![](Gridlines_imahes/Gridlines_img3.jpeg)
 
 #Snapping
 

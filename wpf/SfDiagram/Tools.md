@@ -58,7 +58,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-![](Tools_images\Tools_img1.jpeg)
+![](Tools_imahes/Tools_img1.jpeg)
 
 The following code example illustrates how to draw a path.
 
@@ -102,7 +102,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-![](Tools_images\Tools_img2.jpeg)
+![](Tools_imahes/Tools_img2.jpeg)
 
 ###Connectors
 
@@ -137,7 +137,7 @@ diagram.Tool = Tool.DrawOnce;
 
 {% endhighlight %}
 
-![](Tools_images\Tools_img3.jpeg)
+![](Tools_imahes/Tools_img3.jpeg)
 
 ###Text
 

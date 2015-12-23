@@ -22,7 +22,7 @@ diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical 
 
 {% endhighlight %}
 
-![](Rulers_images\Rulers_img1.jpeg)
+![](Rulers_imahes/Rulers_img1.jpeg)
 
 ##Customizing the Ruler
 
@@ -101,5 +101,5 @@ public class CustomTick : Tick
 
 {% endhighlight %}
 
-![](Rulers_images\Rulers_img2.jpeg)
+![](Rulers_imahes/Rulers_img2.jpeg)
 

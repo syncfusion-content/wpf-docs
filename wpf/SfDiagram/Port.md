@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for WPF provides support to define custom ports for making connections.
 
-![](Port_images\Port_img1.jpeg)![](Port_images\Port_img2.jpeg)
+![](Port_imahes/Port_img1.jpeg)![](Port_imahes/Port_img2.jpeg)
 
 When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary as shown in the following image.
 
-![](Port_images\Port_img3.jpeg)
+![](Port_imahes/Port_img3.jpeg)
 
 Port act as the connection points of node and allows to create connections with only specific points as shown in the following image.
 
-![](Port_images\Port_img4.jpeg)![](Port_images\Port_img5.jpeg)
+![](Port_imahes/Port_img4.jpeg)![](Port_imahes/Port_img5.jpeg)
 
 ##Create Port
 
@@ -106,7 +106,7 @@ private NodePort AddPort(double p1, double p2)
 
 {% endhighlight %}
 
-![](Port_images\Port_img6.jpeg)
+![](Port_imahes/Port_img6.jpeg)
 
 The following code illustrates how to add ports to Connector.
 
@@ -149,7 +149,7 @@ private ConnectorPort AddConnectorPort(double p)
 
 {% endhighlight %}
 
-![](Port_images\Port_img7.jpeg)
+![](Port_imahes/Port_img7.jpeg)
 
 ##Connect with ports
 
@@ -192,7 +192,7 @@ NodePort port = new NodePort()
 
 {% endhighlight %}
 
-![](Port_images\Port_img8.jpeg)
+![](Port_imahes/Port_img8.jpeg)
 
 ##Constraints
 

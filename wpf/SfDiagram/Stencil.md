@@ -17,7 +17,7 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 {% endhighlight %}
 
-![](Stencil_images\Stencil_img1.jpeg)
+![](Stencil_imahes/Stencil_img1.jpeg)
 
 Key Terms Table
 
@@ -106,7 +106,7 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 
 {% endhighlight %}
 
-![](Stencil_images\Stencil_img2.jpeg)
+![](Stencil_imahes/Stencil_img2.jpeg)
 
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
@@ -209,7 +209,7 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-![](Stencil_images\Stencil_img3.jpeg)
+![](Stencil_imahes/Stencil_img3.jpeg)
 
 ###Preview for Drag and Drop
 
@@ -237,7 +237,7 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, Stencil is an instance of Stencil.
 
-![](Stencil_images\Stencil_img4.jpeg)
+![](Stencil_imahes/Stencil_img4.jpeg)
 
 ####Customization of Preview for Drag and Drop
 
@@ -343,4 +343,4 @@ private bool SymbolFilter(SymbolFilterProvider sender, ISymbol symbol)
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-![](Stencil_images\Stencil_img5.jpeg)
+![](Stencil_imahes/Stencil_img5.jpeg)

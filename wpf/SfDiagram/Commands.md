@@ -54,12 +54,12 @@ graphinfo.Commands.AlignTop.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img1.jpeg)
-![](Commands_images\Commands_img2.jpeg)
-![](Commands_images\Commands_img3.jpeg)
-![](Commands_images\Commands_img4.jpeg)
-![](Commands_images\Commands_img5.jpeg)
-![](Commands_images\Commands_img6.jpeg)
+![](Commands_imahes/Commands_img1.jpeg)
+![](Commands_imahes/Commands_img2.jpeg)
+![](Commands_imahes/Commands_img3.jpeg)
+![](Commands_imahes/Commands_img4.jpeg)
+![](Commands_imahes/Commands_img5.jpeg)
+![](Commands_imahes/Commands_img6.jpeg)
 
 ##Spacing Commands
 
@@ -81,7 +81,7 @@ graphinfo.Commands.SpaceDown.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img7.jpeg)![](Commands_images\Commands_img8.jpeg)
+![](Commands_imahes/Commands_img7.jpeg)![](Commands_imahes/Commands_img8.jpeg)
 
 ##Sizing Commands
 
@@ -109,7 +109,7 @@ graphinfo.Commands.SameWidth.Execute(null);
 
 | Before | After |
 |---|---|
-| ![]("Commands_images\Commands_img9.jpeg) | ![](Commands_images\Commands_img10.jpeg) |
+| ![]("Commands_imahes/Commands_img9.jpeg) | ![](Commands_imahes/Commands_img10.jpeg) |
 
 ##Clipboard Commands
 
@@ -137,13 +137,13 @@ graphinfo.Commands.Paste.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img13.jpeg)
+![](Commands_imahes/Commands_img13.jpeg)
 
 ##Duplicate Command
 
 This command copies the selected objects from the diagram and pastes the copied content into the diagram.                           
 
-![](Commands_images\Commands_img14.jpeg)
+![](Commands_imahes/Commands_img14.jpeg)
 
 ##Grouping Command
 Grouping commands are used to group/ungroup the selected elements on the diagram.
@@ -213,11 +213,11 @@ graphinfo.Commands.Flip.Execute(flipParam);
 
 Without Flip
 
-![](Commands_images\Commands_img15.jpeg)
+![](Commands_imahes/Commands_img15.jpeg)
 
 With Flip
 
-![](Commands_images\Commands_img16.jpeg)![](Commands_images\Commands_img17.jpeg)![](Commands_images\Commands_img18.jpeg)
+![](Commands_imahes/Commands_img16.jpeg)![](Commands_imahes/Commands_img17.jpeg)![](Commands_imahes/Commands_img18.jpeg)
 
 
 ##Z – Order Command
@@ -240,7 +240,7 @@ graphinfo.Commands.BringToFront.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img19.jpeg)
+![](Commands_imahes/Commands_img19.jpeg)
 
 ###SendToBack command
 
@@ -258,7 +258,7 @@ graphinfo.Commands.SendToBack.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img20.jpeg)
+![](Commands_imahes/Commands_img20.jpeg)
 
 ###SendBackward command
 
@@ -276,7 +276,7 @@ graphinfo.Commands.SendBackward.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img21.jpeg)
+![](Commands_imahes/Commands_img21.jpeg)
 
 ###BringForward command
 
@@ -294,7 +294,7 @@ graphinfo.Commands.BringForward.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images\Commands_img22.jpeg)
+![](Commands_imahes/Commands_img22.jpeg)
 
 ###Zoom Commands
 Zoom commands are used to  zoom-in and zoom-out the Diagram view.
