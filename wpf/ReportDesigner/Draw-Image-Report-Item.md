@@ -9,47 +9,41 @@ documentation: ug
 
 # Draw Image Report Item
 
-You can add an image to the Syncfusion Essential Report Designer by using the following steps.
+You can insert image in Report Designer using the following steps.
 
-1. In Report Data, right click the Images, and then click Add image.
+1. Right click on Images in Report Data,then select Add image.
 
    ![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img1.png)
 
-   N> You can also insert an image by dragging the image from the Report Data to the Report Designer.
-
-2. To change properties of the added image, right click the image and select the Image Properties.
+2. Click Insert Tab, select Image from Report Items.
 
    ![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img2.png)
 
-3. In the ImageProperties dialog, select an image you want to add in the Report Designer from the Use this image drop-down ComboBox, and then click Import.
+3. Right click on image and select Image Properties or click on the view report item properties. Then Image Properties wizard opens.
 
    ![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img3.png)
-
-   N>  You can also use the following properties to apply the desired settings to the image:
-
-   * General - To set the ToolTip of the image or image source, select an embedded image and import an image from the local disk.
    
-   * Size - To set the size and padding of the image.
-   
-   * Border - To set the border color and border width of the image.
-
-4. Click OK to update the image with the selected values.
-
    ![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img4.png)
 
-## Setting Image Properties by using the Properties Grid
+4. In Image Properties dialog,select any on the following.
 
-1. Click the image. The Properties grid appears at the right of Report Designer. 
-
-2. Apply the required settings to the image by using the Editors in the Properties grid.
-
+   * General - To set the Name,ToolTip of the image or image source, select an embedded image and import an image from the local disk.
+ 
+   * Size - To set the display size and padding of the image.
+   
+   * Visibility - To set the visibility of the image when the report is initially run.
+   
+   * Actions - To change the hyperlink options.
+   
+   * Border - To set the border color and border width and style of the image.
+   
    ![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img5.png)
+   
+5. Set the desired values, and then click OK to update the values in the Image.
+   
+6. To change the image properties,change the values in the Properties Grid.
 
-### Deleting Image
+7. To Delete the image,Right click on the image and select Delete.
 
-To delete the image from the Report Designer, right click the image and click Delete.
-
-![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img6.png)
-
-
+   ![](Draw-Image-Report-Item_images/Draw-Image-Report-Item_img6.png)
 

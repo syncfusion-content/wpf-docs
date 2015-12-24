@@ -9,68 +9,49 @@ documentation: ug
 
 # Create RDLC Reports through Wizard
 
-The RDLC reports can be created by using the ReportDesigner control and an available list of business objects. The following steps demonstrate how to view an RDLC report in the Report Designer.
+The RDLC reports can be created by using ReportDesigner control and an available list of business objects. The following steps demonstrate how to view RDLC report in the Report Designer.
 
 1. Create a new WPF application in the Visual Studio and add the necessary ReportDesigner references to the application.
 
 2. Set the following properties to design the RDLC report.
 
    ~~~ csharp
-   this.ReportDesignerControl.DesignMode = Syncfusion.Windows.Reports.Designer.DesignMode.RDLC;
-   this.ReportDesignerControl.Assemblies = new List<Assembly>();            
-   this.ReportDesignerControl.Assemblies.Add(Assembly.GetExecutingAssembly());
+
+   this.ReportDesignerControl.EnableMDIDesigner = false;
+   ReportDesignerControl.DesignMode = Syncfusion.Windows.Reports.Designer.DesignMode.RDLC;
+   ReportDesignerControl.Assemblies = new List<Assembly>();
+   ReportDesignerControl.EnableMDIDesigner = true;
+   System.IO.FileInfo info = new System.IO.FileInfo("../../DataSource.dll");
+   //Load datasource from precompiled dlls.. 
+   //If the aseembly not loaded then please unblock the DataSource.dll by selecting its property
+   ReportDesignerControl.Assemblies.Add(Assembly.LoadFile(info.FullName));
+
+   //To load the classes from the executing assembly.
+   ReportDesignerControl.Assemblies.Add(Assembly.GetExecutingAssembly());
+   ReportDesignerControl.OpenReport(new System.IO.FileInfo("../../BusinessData.rdlc").FullName);
+   
    ~~~
 
-3. Here is a code sample of available business objects with their executing assemblies.
-
-   ~~~ csharp
-   public class DataSource
-   {        
-       public List<Device> deviceLists = new List<Device>();     
-       public  List<Device> GetDataSource()
-       {
-           deviceLists.Add(new Device("Fax", "Microsoft Shared Fax Driver"));
-           deviceLists.Add(new Device("Printer", "Brother MFC-7360 Printer"));
-           deviceLists.Add(new Device("Printer", "Microsoft XPS Document Writer"));
-           deviceLists.Add(new Device("Printer", "Send To Microsoft OneNote 2010 Driver"));
-           return deviceLists;
-       }
-   }
-   public class Device
-   {
-       public Device(string _category, string _deviceName)
-       {
-           this.Category = _category;
-           this.DeviceName = _deviceName;
-       }
-       public string DeviceName { get; set; }
-       public string Category { get; set; }
-   }
-   ~~~
-
-4. Right click the Dataset folder to add a data set to the report. 
-
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img1.png)
+3. Add the corresponding RDLC file in the folder.    
+   
+4. Add the DataSource and DataSet to the Report Designer.
 
 5. Select a namespace that contains the business object.
 
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img2.png)
+   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img1.png)
 
 6. Select a business object type to design the report by using fields.
 
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img3.png)
+   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img2.png)
 
-7. Drag and drop the fields from the data set in the necessary report items.
+7. Drag and drop the fields from the data set in the necessary report items. 
 
 8. Click Run to preview the report in the designer. You have to provide a DataSet value to preview the report.
 
-9. Select the collection of business objects by selecitng the necessary method in the provided assembly.
+9. Select the collection of business objects by selecting the necessary method in the provided assembly.
 
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img4.png)
+   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img3.png)
 
 10. The output is displayed as shown in the following figure.
 
-    ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img5.png)
-
-
-
+    ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img4.png)

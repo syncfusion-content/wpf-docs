@@ -7,7 +7,7 @@ control: Report Designer
 documentation: ug
 ---
 
-# Report Designer API 
+# Report Designer API
 
 ## Properties
 

@@ -9,52 +9,81 @@ documentation: ug
 
 # Getting Started
 
-## Creating Report Designer through Designer
+## Creating Report Designer through Visual Studio
 
 You can create a simple application through the Visual Studio Designer with the Syncfusion WPF Report Designer control by using the following steps.
 
-1. Create a new WPF application in VS2008 or VS2010, and then add the following XAML code.
+1. Create new WPF application in Visual Studio.
 
-   ~~~ xml
-   <syncfusion:RibbonWindow 
-   x:Class="Report_Designer_Utility_2008.MainWindow"        
-   xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.WPF"        
-   xmlns:Reporting="clr-namespace:Syncfusion.Windows.Reports.Designer;assembly=Syncfusion.ReportDesigner.WPF"       
-   WindowStartupLocation="CenterScreen" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-   Title="MainWindow" Height="600" Width="1000" Icon="App.ico">    
-   <syncfusion:RibbonWindow.StatusBar>
-       <syncfusion:RibbonStatusBar>           
-       </syncfusion:RibbonStatusBar>
-   </syncfusion:RibbonWindow.StatusBar>    
-   <Grid>
-       <Grid.RowDefinitions>
-   ~~~
+2. Add the ReportDesigner from the Toolbox.
 
-2. Drag the Report Designer control from the Toolbox to the Report Designer window. The Report Designer window is modified.
-
+   Drag and drop the ReportDesigner control from the Toolbox to the XAML Page.
+   
    ![](Getting-Started_images/Getting-Started_img1.png)
+   
+3. Add the following assemblies.
 
-   N> The following code is automatically generated in the XAML window.
-
+   * Syncfusion.Chart.Wpf
+   * Syncfusion.Gauge.Wpf
+   * Syncfusion.Grid.Wpf
+   * Syncfusion.Linq.Base
+   * Syncfusion.PropertyGrid.Wpf
+   * Syncfusion.ReportControls.Wpf
+   * Syncfusion.ReportDesigner.Wpf
+   * Syncfusion.ReportViewer.Wpf
+   * Syncfusion.SfMaps.Wpf
+   * Syncfusion.SfSkinManager.Wpf
+   * Syncfusion.Shared.Wpf
+   * Syncfusion.Tools.Wpf
+   
+4. For creating ReportDesigner using code in Xaml.cs
+   
    ~~~ xml
-   <Reporting:ReportDesigner ApplicationMenuVisibility="Collapsed"                 
-   ToolboxVisibility="Visible"  
-   ReportDataVisibility="Visible"                                       
-   x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
+   <syncfusion:RibbonWindow x:Class="ReportDesignerSampleApplication.MainWindow"
+       xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.WPF"
+       xmlns:Reporting="clr-namespace:Syncfusion.Windows.Reports.Designer;assembly=Syncfusion.ReportDesigner.WPF"
+       WindowStartupLocation="CenterScreen"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	   xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+       Title="MainWindow" Height="600" Width="1000" Icon="App.ico" WindowState="Maximized">  
+	   <Grid>
+           <Reporting:ReportDesigner />
+       </Grid>
+   </syncfusion:RibbonWindow>
    ~~~
+   
+5. Set Visual Style to the Report Designer.
 
-3. Check whether the following highlighted references are added to the References folder.
+   ~~~ csharp
+   SkinStorage.SetVisualStyle(this, "Office2013");
+   ~~~
+   
+6. Run the sample application and you can see the Report Designer as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
-   N>  After building and debugging the application, the appearance of the Report Designer is modified as shown in the following illustration.
+## Load RDL Reports
+
+1. Set RDL Report path.
+
+   ~~~ csharp
+   this.ReportDesignerControl.OpenReport(@"../../../ReportTemplate/Sales Dashboard.rdl");
+   ~~~
+   
+2. Run the sample application and you can see the Report Designer for corresponding RDL report as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img3.png)
+   
+## Load RDLC Reports
 
-4. To view the Properties grid, click the View tab and select the Properties check box. 
+1. Set RDLC Report path.
+
+   ~~~ csharp
+   this.ReportDesignerControl.DesignMode = DesignMode.RDLC;
+   this.ReportDesignerControl.OpenReport(@"../../../ReportTemplate/RDLC/Sales Dashboard.rdlc");
+   ~~~
+   
+2. Run the sample application and you can see the Report Designer for corresponding RDLC report as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-

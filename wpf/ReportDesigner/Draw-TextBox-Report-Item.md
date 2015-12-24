@@ -7,63 +7,53 @@ control: Report Designer
 documentation: ug
 ---
 
-# Draw TextBox  Report Item
+# Draw TextBox Report Item
 
-You can insert a TextBox in the Report Designer and drag report items to the TextBox by using the following steps.
+You can insert TextBox in the Report Designer and drag report items to the TextBox using the following steps.
 
-1. Click Insert tab.
-
-2. Drag the TextBox to the Report Designer panel. A TextBox appears on the Report Designer window.
+1. Click Insert Tab, select TextBox from Report Items.
 
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img1.png)
-
-3. To add the first value of the data field, drag the data field from the Report Data to the added TextBox.
-
+   
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img2.png)
 
-## Apply Styles to the TextBox
-
-To apply styles to the TextBox:
-
-1. Right click the TextBox and select the TextBox properties.
+2. To add value to the TextBox, drag the data field from the DataSets in the Report Data.
 
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img3.png)
 
-2. In the TextBox properties dialog, select any of the following:
-
-   I. General to change the name and value of the TextBox.
-  
-   II. Alignment to set the horizontal alignment, vertical alignment, and padding of the TextBox.
-  
-   III. Font to set the font family, font size, font color, font style, font effects, and line spacing of the TextBox.
-  
-   IV. Fill to set the background color of the TextBox.
-  
-   V. Visibility to set the visibility of the TextBox when the report is initially run.
+3. Click on the View report item properties or Right click on the TextBox. Then TextBox Properties wizard opens.
 
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img4.png)
-
-3. Set the desired values, and then click OK to update the selected values in the TextBox.
-
-4. To set the font color for the text box, click the Font tab and select Expression from the Effects drop-down. It opens the Expression window. 
-
+   
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img5.png)
 
-5. Set the desired values and click OK. 
+4. In the TextBox properties dialog, select any of the following:
 
-   N> When you set a value that starts with the character “=“, then it assigns the default value of that property to the TextBox.
- 
+   * General - To change the name,value and sizing of the TextBox. 
+   
+   * Number - To set the numbers,date formats and expressions.
+   
+   * Alignment - To set the horizontal alignment, vertical alignment, and padding of the TextBox.
+   
+   * Font - To set the font family, font size, font color, font style, font effects, and line spacing of the TextBox.
+   
+   * Border - To set the TextBox border, border width and background color.
+   
+   * Fill - To set the background color of the TextBox.
+   
+   * Visibility - To set the visibility of the TextBox when the report is initially run.
+   
+   * Interactive Sorting - To change the options of the TextBox using sorting.
+
+   * Actions - To change the hyperlink options.
+   
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img6.png)
+   
+5. Set the desired values, and then click OK to update the values in the TextBox.
 
-6. To change the properties by using the Properties Grid, click the TextBox. The Properties Grid appears at the right of the Report Designer. By using this, you can set styles to the TextBox as shown in the following screenshot.
+6. To change the properties by using the Properties Grid, click the TextBox.And change the values in Properties Panel.
+
+7. Select TextBox, Right click and select Delete to delete the textbox.
 
    ![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img7.png)
-
-### Deleting TextBox
-
-To delete the TextBox, right click the TextBox to be deleted, and then select Delete.
-
-![](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img8.png)
-
-
 
