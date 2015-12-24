@@ -9,49 +9,71 @@ documentation: ug
 
 # Draw Table Report Item
 
-You can add tables to the Report Designer and drag the data fields to the table columns. The following steps illustrate how to add a table to the Report Designer. 
+You can add tables to the Report Designer and drag the data fields to the table columns. The following steps illustrate how to add table. 
 
-1. On the Insert tab, click Table.
+## Inserting Table through Insert Table
+
+1. Click on Insert tab, and select Table.
+
+2. Choose Insert Table, then the table will be inserted into the Report Designer with three columns,by default.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img1.png)
 
-2. To insert a table into the Report Designer, click Insert Table. The table with three columns appears in the Report Designer, by default. 
+3. Drag the data fields to the table columns.
+
+4. Select Tablix a click on view report item properties,then Tablix properties wizard will open.
+
+   * General - To set name,row heder,column header,page break options and dataset properties.
+   
+   * Visibility - To change the display options when the report is initiallay run.
+   
+   * Filter - To add or delete the fields.
+   
+   * Sorting - To sort the fields in ascending order or descending order.
+   
+5. We can insert column,insert row,delete rows,insert maps,add groups,insert textbox,insert image,insert line,insert gauge,insert subreport and insert indicator on Right click and select any options. 
+
+6. To add a column in the table, Right click on the  cell where you want to insert a column and select Insert Column and click Right, to insert a column to the existing cell.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img2.png)
 
-3. Drag the data fields to the table columns.
+7. To add a parent group to the table, Right click on the cell where you want to insert a parent group and Click Add Group, then select Parent Group.Then the Tablix wizard will open.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img3.png)
 
-## Steps to add a column to the table:
-
-1. Right click a cell where you want to insert a column. 
+8. Then select the dataset field to group with that cell.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img4.png)
 
-2. Click Insert Column, and then click Left to insert the column to the left of the cell or click Right to insert the column to right of the cell.
+9. The Style for the table can be applied through Properties Window.
 
-   N>  When a new column is inserted in the table, you can drag a data field to the inserted column.
+## Inserting table through Table Wizard
+
+1. Click on Insert tab, and select Table.
+
+2. Choose Table Wizard, in Insert > Table.
+
+   I. Choose an existing dataset in this report,if dataset is already added.
+   
+   II. Choose create a dataset, if datset is not added.Then Create datasource and dataset,and follow the following steps.
+
+3. If dataset is already added select available datasets and click Next.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img5.png)
 
-## Steps to Add a Parent Group to theTable:
-
-1. Right click a cell where you want to insert a parent group.
- 
-2. Click Add Group and then select Parent Group.
+4. Drag to available fields to the corresponding column groups,row groups and values and click Next.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img6.png)
 
-   N> In the given example, all EmployeeIDs are grouped with ManagerIDs. The ManagerID column is shown to the left of the EmployeeID.
+5. Select the Style and Layout of the table and click Finish.
 
    ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img7.png)
 
-## Apply Styles to the Table 
+6. Then the table is displayed on the designer window and its properties can be changed using Property Grid.
 
-You can apply styles to cells of the table by using the Properties grid or Properties dialog. To change the background color of a cell, select a color that you want to apply from the Fill Color drop-down ComboBox.
+   ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img8.png)
+	
+7. The Background color of the cell is changed using the properties grid.
 
-![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img8.png)
-
-
+   ![](Draw-Table-Report-Item_images/Draw-Table-Report-Item_img9.png)
 

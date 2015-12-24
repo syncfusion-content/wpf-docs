@@ -9,35 +9,36 @@ documentation: ug
 
 # Draw Rectangle Report Item
 
-To add a rectangle to the Syncfusion Report Designer, select Rectangle from the Insert tab and drag it to the Report Designer. A rectangle appears on the Report Designer.
+You can insert rectangle in Report Designer using the following steps.
 
-![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img1.png)
+1. Click Insert Tab, select Rectangle from Report Items.
 
-## Applying Styles to the Rectangle
-
-To apply styles to the rectangle:
-
-1. Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
+   ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img1.png)
+   
+2. Select View Report Item properties or Right Click on the Rectangle and select Rectangle Properties.
 
    ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img2.png)
-
-2. Select Style to set the style, color, and width of the rectangle border.
-
-3. To set the background color of the rectangle, select Fill.
-
-4. Click OK.
-
-   N> You can also apply styles to the rectangle through the Properties grid. To open this grid, click the added rectangle.
-
-   The following illustration shows the rectangle styled by the properties grid.
-
+   
    ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img3.png)
 
-### Adding Report Items to the Rectangle
+3. Then Rectangle Properties wizard will open do any of the following.
 
-To add report items such as text boxes, lines, and images, to the rectangle, drag the selected report items to the rectangle.
+   * General - To set the Name for the Rectangle.
 
-![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img4.png)
+   * Visibility - To set the visibility of the Rectangle when the report is initially run. 
 
+   * Fill - To set the background color of the Rectangle.   
+   
+   * Border - To set the Rectangle border, border width and background color.
+   
+   ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img4.png)
+   
+3. Set the desired values, and then click OK to update the values in the Rectangle.
 
+4. To Add the Report Items such as text boxes, lines, and images, to the rectangle,drag the selected report items to the rectangle.
 
+   ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img5.png)
+
+5. To Delete the Rectangle from the Report Designer,Right Click on the icon and select Delete.
+
+   ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img6.png)

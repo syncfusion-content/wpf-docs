@@ -7,131 +7,246 @@ control: Report Designer
 documentation: ug
 ---
 
-# Draw Chart Report item
+# Draw Chart Report Item
 
-You can add a chart to the Syncfusion Report Designer by using the following steps.
+You can add a chart to the Report Designer using the following steps.
 
-1. Add a dataset to the Report Designer.
+Add a data source and dataset to the Report Designer.
 
-2. In the Insert tab, click Chart, and click and drag Insert Chart to the Report Designer.
+## Inserting chart through Insert Chart
+
+1. Click Chart in the Insert Tab,Select Insert Chart in the list and drag it to the Report designer.
 
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img1.png)
 
-3. A chart appears in the Report Designer window.
+2. A Chart properties wizard opens,Click Ok.Then chart will be added with its default properties.
 
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img2.png)
-
-4. To view the value axis, category axis, and series axis panels double click the chart area.
-
-5. Drag a data field to the category axis panel and the value axis panel. After setting the data field, it looks like the following illustration.
-
+   
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img3.png)
 
-## Applying Styles to the Chart
+3. To change the Values of Value Axis,Areacolor and Category Axis,Double Click on the chart.
 
-To apply styles to the chart:
+4. To Add the Report Items such as text boxes, lines, and images and rectangle to the chart,click and drag the selected report items to the chart.
 
-1. Right click the chart and select the Chart Properties from the context menu.
+5. Drag a data field to the category axis panel and the value axis panel.
+
+6. To Apply Styles to the Charts,Right Click on the Chart and select the Chart Properties from the context menu.
 
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img4.png)
 
-2. In the Chart Properties dialog, select any of the following:
+7. In the Chart Properties dialog, select any of the following.
 
-   I. General to change the chart type and ToolTip of the chart.
-   
-   II. Border to change the border style and border width of the chart.
-   
-   III.Fill to set background color of the chart.
-   
-   IV. AreaColor to set color of the chart area color.
+   * General - To change the chart type and ToolTip of the chart.
 
+   * Data - To set the Dataset name and data fields of the corresponding datasets.
+
+   * Appearance - To set the Chart name and border options and background options.
+   
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
+   
+8. Click Ok.Then the values are updated in the Chart.
 
-3. Click OK.
-
-4. To apply legend styles to the chart, right click the chart and choose Legend Properties.
+9. Right click on the chart and select Legend Properties from the context menu.
 
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img6.png)
 
-5. The Legend Properties dialog opens. Select any of the following:
+10. The Legend Properties dialog opens. Select any of the following.
 
-   I. General to change the position, color, or visibility of the legend when the chart is initially run.
-   
-   II . Font to set the font color, font family, font size, and font style of the legend.
+    * General - To change the position, color, name and layout of the legend.
 
-   III. Border to set the border color and border width of the legend.
+    * Font - To set the font color, font family, font size, and font style of the legend.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
+    * Border - To set the border color and border width of the legend.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
+	
+11. Click Ok.Then the values are updated in the Legend.
 
-6. Click OK.
+12. Right click on the chart and select Value Axis Properties from the context menu.
 
-7. To apply styles to the value axis of the chart, right click the chart and choose Value Axis Properties.
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
+    * General - To change the direction, line style, line width and line color of the value axis.
 
-8. The Value Axis Properties dialog opens. Select any of the following:
+    * Label - To set the font family, font size, font angle, font style, font color, and visibility of the value axis label.
 
-   I. General to change the direction, line style, line width, and line color of the value axis.
-   
-   II. Label to set the font family, font size, font angle, font style, font color, and visibility of the value axis label.
-   
-   III . Tick to set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
+    * Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
+	
+13. Click Ok.Then the values are updated in the Value Axis.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
-
-9.  Click OK.
-
-10. To apply category axis styles to the chart, right click the chart and select Category Axis Properties.
+14. Right click on the chart and select Category Axis Properties from the context menu.
 
     ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img10.png)
 
-11. The Category Axis Properties dialog opens. Select any of the following options:
-
-    I. General to change the direction, line style, line width, and line color of the category axis.
+    * General - To change the direction, line style,line width and line color of the category axis.
 	
-	II. Label to set the font family, font size, font angle, font style, font color, and visibility of the category axis label.
+	* Label - To set the font family, font size,font angle, font style, font color, font weight and visibility of the category axis label.
 	
-	III . Tick to set style, width, color, and length of the ticks in the category axis, and set the visibility of the major and minor tick marks.
+	* Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
+	
+15. Click Ok.Then the values are updated in the Category Axis.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
-
-12. Click OK.
-
-13. To apply title styles to the chart, right click the chart and select the Chart Title Properties.
+16. Right click on the chart and select Chart title Properties from the context menu.
 
     ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img12.png)
 
+    * General - To set the chart title options like title, font, color, size, background and style. 
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
+	
+17. Click Ok to update the values for Chart title.
 
-14. In the Chart Title Properties dialog, select General and set title, font family, font size, font color, font style, and background color for the chart as needed.
-
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
-
-15. Click OK.
-
-16. To apply styles to the category axis title, right click the chart and select the Category Axis Title Properties.
+18. Right click on the chart and select Category Axis title Properties from the context menu.
 
     ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img14.png)
 
-17. In the Category Axis Title Properties dialog, select General and set the title, font family, font size, font color, font style, and alignment for the category axis title as needed.
+    * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
-
-18. Click OK.
-
-19. To apply styles to the value axis title, right click the chart and select the Value Axis Title Properties.
+19. Click Ok to update the values for Category Axis title.
+	
+20. Right click on the chart and select Value Axis title Properties from the context menu.	
 
     ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img16.png)
 
-20. In the Value Axis Title Properties dialog, click General and set the title, font family, font size, font color, font style, and alignment for the value axis title.
+    * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
+	
+21. Click Ok to update the values for Category Axis title.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
-
-21. Click OK.
- 
-    N> You can also change the Chart Properties via the Properties grid by clicking the chart. It displays the Properties grid at the right of the Report Designer.
+22. To delete the chart,Right click and select delete.
 
     ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img18.png)
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+	
+## Inserting chart through Chart Wizard
 
-    The following screenshot is a sample output for the pyramid chart type. You can get this by setting the chart type as Pyramid through the Properties grid.
+1. Click on Insert tab, and select Chart.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+2. Choose Chart Wizard, in Insert > Chart.
+
+   I. Choose an existing dataset in this report,if dataset is already added.
+   
+   II. Choose create a dataset, if datset is not added.Then Create datasource and dataset,and follow the following steps.
+   
+3. If dataset is already added select available datasets and click Next.
+
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+
+4. Drag to available fields to the corresponding Series,Categories and values and click Next.
+
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+
+5. Select the Style and Layout of the table and click Finish.
+
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+   
+6. Then the chart will display with the selected fields.
+
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img20.png)
+   
+7. To Apply Styles to the Charts,Right Click on the Chart and select the Chart Properties from the context menu.
+
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img4.png)
+
+8. In the Chart Properties dialog, select any of the following.
+
+   * General - To change the chart type and ToolTip of the chart.
+
+   * Data - To set the Dataset name and data fields of the corresponding datasets.
+
+   * Appearance - To set the Chart name and border options and background options.
+   
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
+   
+9. Click Ok.Then the values are updated in the Chart.
+
+10. Right click on the chart and select Legend Properties from the context menu.
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img6.png)
+
+11. The Legend Properties dialog opens. Select any of the following.
+
+    * General - To change the position, color, name and layout of the legend.
+
+    * Font - To set the font color, font family, font size, and font style of the legend.
+
+    * Border - To set the border color and border width of the legend.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
+	
+12. Click Ok.Then the values are updated in the Legend.
+
+13. Right click on the chart and select Value Axis Properties from the context menu.
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
+
+    * General - To change the direction, line style, line width and line color of the value axis.
+
+    * Label - To set the font family, font size, font angle, font style, font color, and visibility of the value axis label.
+
+    * Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
+	
+14. Click Ok.Then the values are updated in the Value Axis.
+
+15. Right click on the chart and select Category Axis Properties from the context menu.
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img10.png)
+
+    * General - To change the direction, line style,line width and line color of the category axis.
+	
+	* Label - To set the font family, font size,font angle, font style, font color, font weight and visibility of the category axis label.
+	
+	* Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
+	
+16. Click Ok.Then the values are updated in the Category Axis.
+
+17. Right click on the chart and select Chart title Properties from the context menu.
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img12.png)
+
+    * General - To set the chart title options like title, font, color, size, background and style. 
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
+	
+18. Click Ok to update the values for Chart title.
+
+19. Right click on the chart and select Category Axis title Properties from the context menu.
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img14.png)
+
+    * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
+
+20. Click Ok to update the values for Category Axis title.
+	
+21. Right click on the chart and select Value Axis title Properties from the context menu.	
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img16.png)
+
+    * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
+	
+22. Click Ok to update the values for Category Axis title.
+
+23. To delete the chart,Right click and select delete.
+
+    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img18.png)
+	
+	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+
+    
