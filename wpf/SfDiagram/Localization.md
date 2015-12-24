@@ -33,3 +33,5 @@ manager = new System.Resources.ResourceManager("Localization.Resources.Syncfusio
 
 ![](Localization_images/Localization_img2.jpeg)
 
+N> You have to define the textual descriptions of the context menu items for your custom cultures.
+

@@ -25,38 +25,7 @@ Port act as the connection points of node and allows to create connections with 
 
 ###Add ports to Nodes
 
-To add a collection port, you need to define the port object and add it to Node’s ports collection. The `Offset` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports when initializing the Node.
-
-{% highlight C# %}
-
-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
-Node node = new Node()
-{
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 400,
-	OffsetY = 100,
-	Ports = new ObservableCollection<INodePort>()
-	{
-		new NodePort()
-		{
-			Width = 10,
-			Height = 10,
-			NodeOffsetX = 0,
-			NodeOffsetY = 0.5,
-			UnitMode = UnitMode.Fraction,
-			PortVisibility = PortVisibility.Visible,
-			Constraints = PortConstraints.Inherit & ~PortConstraints.InheritPortVisibility
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-
-nodes.Add(node);
-diagram.Nodes = nodes;
-
-{% endhighlight %}
+To add a collection port, you need to define the port object and add it to `Ports` property of Node. The `NodeOffsetX` and `NodeOffsetY` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Node.
 
 The following code illustrates how to add ports to Node.
 
@@ -108,6 +77,11 @@ private NodePort AddPort(double p1, double p2)
 
 ![](Port_images/Port_img6.jpeg)
 
+##ConnectorPort
+
+###Add Port to Connector
+To add a collection port, you need to define the port object and add it to `Ports` property of Connector. The `Length` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Connector.
+
 The following code illustrates how to add ports to Connector.
 
 {% highlight C# %}
@@ -137,7 +111,7 @@ private ConnectorPort AddConnectorPort(double p)
 {
 	ConnectorPort connectorport = new ConnectorPort()
        {
-       	Length = p,
+       		  Length = p,
               UnitMode = UnitMode.Fraction,
               PortVisibility = PortVisibility.Visible,
               Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
@@ -153,7 +127,7 @@ private ConnectorPort AddConnectorPort(double p)
 
 ##Connect with ports
 
-Connector’s SourcePort and TargetPort properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to [Connections with Ports](/wpf/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
+Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to [Connections with Ports](/wpf/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
 
 ##Appearance
 

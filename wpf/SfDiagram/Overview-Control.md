@@ -24,7 +24,7 @@ The following code example explains how to add Overview to an Application.
 
 {% highlight xml %}
 
-<overview:Overview Source="{Binding ElementName=diagramControl}"   Height="300" Margin="0,25,0,0"></overview:Overview>
+<overview:Overview Source="{Binding ElementName=diagramControl}" Height="300" Margin="0,25,0,0"/>
 	
 {% endhighlight %}	
 
@@ -41,6 +41,6 @@ In overview, the view port of the Diagram is highlighted with a red colored rect
 
 | Property | Description | Type | DataType |
 |---|---|---|---|
-| Constraint | Gets or Sets the OverviewConstraints type. | Dependency property | enum OverviewConstraints.None OverviewConstraints.Pan OverviewConstraints.TapFocus OverviewConstraints.DrawFocus OverviewConstraints.Zoom |
+| Constraint | Gets or Sets the OverviewConstraints. | Dependency property | Enum OverviewConstraints  OverviewConstraints.None OverviewConstraints.Pan OverviewConstraints.TapFocus OverviewConstraints.DrawFocus OverviewConstraints.Zoom |
 | FocusBrush | Specifies the color of the viewport area in the preview. | Dependency Property | Brush |
 | UnFocusBrush | Specifies the background of the extended area in the preview. | Dependency Property | Brush |

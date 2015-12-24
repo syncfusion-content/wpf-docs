@@ -10,7 +10,7 @@ documentation: ug
 #Constraints
 
 `Constraints` are used to enable/disable certain behaviors of the diagram, Node and Connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
-[Bitwise Operations](#bitwise-operations).
+To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
 
 ##GraphConstraints
 
@@ -21,42 +21,11 @@ Graph constraints allow to enable or disable the following behaviors.
 * Zoom and Pan
 * Undo Redo
 
-The GraphConstraints property is used to enable or disable all the behaviors or certain behaviors of the SfDiagram control. This property is applicable to the entire SfDiagram control.
-
-| Constraints | Description |
-|---|---|
-| None | Disables all behaviors of the control. |
-| Zoomable |  Enables zooming behavior. |
-| PannableX | Enables panning in the horizontal direction. |
-| PannableY | Enables panning in the vertical direction. |
-| Pannable | Enables panning behavior. | 
-| PanRailsX | Enables panning behavior on the x-axis in SfDiagram (horizontal panning). |
-| PanRailsY | Enables panning actions on the y-axis in SfDiagram (vertical panning). |
-| Undoable | Enables Redo or Undo behavior. |
-| Virtualize | Enables Virtualizing behavior. |
-| Relationship | Enables properties based on Node and Connector realactionships on dragging at run time. |
-| Events | Enables all events of the control. |
-| Bridging | Enables line bridging. |
-| Routing | Enables line routing. |
-| AutoScroll | Enables AutoScroll behavior |
-| PanRails | Enables panning actions on the x-axis (horizontal panning) and y-axis (vertical panning) in SfDiagram. |
-| Selectable | Enables Selecting behavior. |
-| Draggable | Enables Dragging behavior. |
-| Connectable | Enables Connecting behavior. |
-| Drop | Enables Drop behavior. |
-| Resizable | Enables Resizing behavior. |
-| Rotatable | Enable Rotating behavior. |
-| ContextMenu | Enables ContextMenu. |
-| Commands | Enable Commands. |
-| DrawingTool | Enagbles DrawingTool. |
-| PageEditing | Enables PageEditing. |
-| Default | Enables all behaviors of the control. |
-
-The default value for GraphConstraints property is `Default`.
+For more information about GraphConstraints, refer to [GraphConstraints]. 
 
 **Example** 
 
-The following example illustrates how to disable page editing
+The following example illustrates how to disable page editing.
 
 {% highlight C# %}
 
@@ -66,7 +35,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 ##NodeConstraints
 
-NodeConstraints allow to enable or disable the following behaviors of Node
+NodeConstraints allow to enable or disable the following behaviors of Node.
 
 * Selection
 * Deletion
@@ -76,43 +45,7 @@ NodeConstraints allow to enable or disable the following behaviors of Node
 * Connect
 * Annotation Dragging
 
-NodeConstraints property is used to enable or disable certain behaviors of Nodes. This property is applicable only to the Node of the SfDiagram control.
-
-| Constraints | Description |
-|---|---|
-| None | Disables all behaviors of the control. |
-| Selectable | Enables a Node to be selected. |
-| Draggable | Enables the Node to be gragged. |
-| Resizable | Enables a Node to be resized. |
-| Rotatable |Enables a Node to be rotated. |
-| InConnect | Enables connecting to the incoming Connector. |
-| OutConnect | Enables connecting the outgoing Connector. |
-| SnapToHorizontalLines | Enables Nodes to snap to horizontal gridlines. |
-| SnapToVerticalLines | Enables Nodes to snap to vertical gridlines. |
-| SnapAngle | Enables snap while rotating. |
-| SnapToLines | Enables Nodes to snap gridlines. |
-| Connectable | Enables a Node to connect to the Connector. |
-| AllowPan | Enables panning on the Node. |
-| InheritSnapping | Enables to inherit the value of SnapToLines and SnapAngle from the SfDiagram by SnapConstraints in SnapSettings. |
-| InheritSnapToObject | Enables to inherit the value to SnapToObject from the SfDiagram by SnapConstraints in SnapSettings. |
-| InheritPortVisibility | Enables to inherit the value for PortVisibility from the SfDiagram. |
-| Inherit | Enables to inherit all the Snapping, SnapToObject, and PortVisibility from the SfDiagram. |
-| AspectRatio | Enables Node to be Resized in all the direction. |
-| Default | Enables all behaviors of the control. |
-| ResizeNorthEast | Enables or disables resizing Nodes in the north east. |
-| ResizeEast | Enables or disables resizing Nodes in the east. |
-| ResizeSouthEast | Enables or disables resizing Nodes in the south east. |
-| ResizeSouth | Enables or disables resizing Nodes in the south. |
-| ResizeSouthWest | Enables or disables resizing Nodes in the south west. |
-| ResizeWest | Enables or disables resizing Nodes in the west. |
-| ResizeNorthWest | Enables or disables resizing Nodes in the north west. |
-| ResizeNorth | Enables or disables resizing Nodes in the north. |
-| Menu | Enables or disables the Menu. |
-| InheritMenu | Enables to inherit the Menu. |
-| Drag Annotation | Enables or disables Node Annotation to be dragged. |
-
-
-The default value for NodeContraints property is `Default`.
+For more information about NodeConstraints, refer to [NodeConstraints]. 
 
 **Example**
 
@@ -149,38 +82,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Bridging
 * Annotation dragging
 
-| Constraint | Description |
-|---|---|
-| None | Disables a behavior of control. |
-| Selectable | Enables to Connectors to be selected. |
-| SourceDraggable | Enables the source end to be dragged. |
-| TargetDraggable | Enables the target end of a Connector to be dragged. |
-| EndDraggable | Enables both the source and target ends of a Connector to be dragged. |
-| Draggable | Enables to Connectors to be dragged. |
-| EndThumbs | Enables end points on line Connectors for editing, such as source points and target points. |
-| SegmentThumbs | Enables control points and end points of every segment in a line Connector for editing. |
-| Thumbs | Enables both EndThumbs and SegmentThumbs. |
-| Bridging | Enables line bridging. |
-| Routing | Enables line routing. |
-| SnapToHorizontalLines | Enables Connectors to be snapped horizontal gridlines. |
-| SnapToVerticalLines | Enables Connectors to be snapped vertical gridlines. |
-| SnapToLines | Enables Connectors to be snapped to gridlines. |
-| InheritBridging | Enables to inherit the bridging behavior from Node. |
-| InhertiRouting | Enables to inherit the Routing behavior from Node. |
-| InheritSnapping | Enables to inherit the Snapping behavior from Node. |
-| InheritSnapToObject | Enables to inherit the SnapToObject behavior from Node. |
-| InheritSmoothness | Enables to inherit the smoothness behavior from Node. |
-| Menu | Enables or disables the Menu. |
-| InheritMenu | Enables to inherit the Menu. |
-| InheritPortVisibility | Enables to inherit the value for PortVisibility from the SfDiagram. |
-| Inherit | Enables to inherit the connecting behavior from Node. |
-| DragAnnotation | Enables or Disables Annotation to be dragged. |
-| InConnect | Enables or Disables connecting to the incoming Connector. |
-| OutConnect | Enables or Disables connecting the outgoing Connector. |
-| Connectable | Enables or Disables a Node to connect to the Connector. |
-| Default | Enables all behavior of the control. |
-
-
+For more information about ConnectorConstraints, refer to [ConnectorConstraints]. 
 
 **Example**
 
@@ -206,21 +108,7 @@ You can enable or disable certain behaviors of port. They are as follows.
 
 * Connect
 
-PortConstraints property is used to enable or disable certain behaviors of Nodes. This property is applicable only to the Port of the SfDiagram control.
-
-| Constraints | Description |
-|---|---|
-| Connectable | Enables connection with the Connector. |
-| InConnect | Enables connection with the incoming Connector. |
-| OutConnect | Enables connection with the outgoing Connector. |
-| InheritConnectable | Enables to inherit the connecting behavior from Node (incoming or outgoing). |
-| InheritPortVisibility | Enables to inherit the value for PortVisibility from the Node. |
-| Inherit | Enables to inherit both connecting behavior and the value for PortVisibility from the Node. |
-| None | Disables all behaviors of the control. |
-| Default | Enables all constraints. |
-
-
-The default value for PortConstraints property is `Inherit`.
+For more information about PortConstraints, refer to [PortConstraints]. 
 
 Example
 
@@ -256,19 +144,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * Quick Commands
 
-
-| Constraints | Description |
-|---|---|
-| None | Disables the constraints for Selector. |
-| Resizer | Enables or Disables the Resizer. |
-| Rotator | Enables or Disables the Rotator. |
-| TooltipPosition | Enables or Disables the Tooltip information based on the position of the selected Node. |
-| TooltipSize | Enables or Disables the Tooltip information based on the size of the selected Node. |
-| TooltipAngle | Enables or Disables the Tooltip information based on the angle of the selected Node. |
-| Tooltip | Enables or Disables the Tooltip information based on the selected Node. |
-| QuickCommands | Enables or Disables the QuickCommands. |
-| Default | By default, position, size, and angle information are shown in the Tooltip and Quick Commands. |
-
+For more information about SelectorConstraints, refer to [SelectorConstraints].
 
 **Example**
 
@@ -289,19 +165,7 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 * Show to either Horizontal or Vertical Gridlines
 * Show to both Horizontal or vertical gridlines
 
-
-| Constraints | Description |
-|---|---|
-| None | Disable gridlines and disable snapping |
-| HorizontalLines | Display horizontal gridlines. |
-| VerticalLines | Show vertical gridlines. |
-| ShowLines | Show both horizontal and vertical gridlines. |
-| SnapToHorizontalLines | Snap to horizontal gridlines. |
-| SnapToVerticalLines | Snap to vertical gridlines. |
-| Rotation | Enable rotation behavior. |
-| SnapToLines | Enable both horizontal and vertical lines. |
-| All | Show and snap to both horizontal and vertical gridlines. |
-
+For more information about SnapConstraints, refer to [SnapConstraints].
 
 **Example**
 

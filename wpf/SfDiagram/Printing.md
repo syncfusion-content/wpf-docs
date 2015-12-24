@@ -14,7 +14,7 @@ This feature enables you to print a copy of the Diagram with Print Preview
 
 Print preview is used to preview the SfDiagram control before printing. Print preview scales the entire Diagram into a single page.
 
-![](Printing_images/Printing_img1.jpeg)
+![](Printing_images/Printing_img1.png)
 
 ##Customization of Print Preview
 

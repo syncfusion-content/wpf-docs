@@ -57,7 +57,7 @@ diagram.DataSourceSettings = dataSourceSetttings;
 
 {% endhighlight %}
 
-![](DataSource_images/DataSource_img1.jpeg)
+![](DataSource_images/DataSource_img1.png)
 
 ##DataSource Root
 

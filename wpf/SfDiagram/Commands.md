@@ -81,7 +81,9 @@ graphinfo.Commands.SpaceDown.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img7.jpeg)![](Commands_images/Commands_img8.jpeg)
+![](Commands_images/Commands_img7.jpeg)
+
+![](Commands_images/Commands_img8.jpeg)
 
 ##Sizing Commands
 
@@ -109,7 +111,7 @@ graphinfo.Commands.SameWidth.Execute(null);
 
 | Before | After |
 |---|---|
-| ![]("Commands_images/Commands_img9.jpeg) | ![](Commands_images/Commands_img10.jpeg) |
+| ![](Commands_images/Commands_img9.jpeg) | ![](Commands_images/Commands_img10.jpeg)  ![](Commands_images/Commands_img11.jpeg)  ![](Commands_images/Commands_img12.jpeg) |
 
 ##Clipboard Commands
 
@@ -175,8 +177,7 @@ To customize flipping, a parameter of type IFlipParameter has to be passed.
 
 | Property | Description | Value |
 |---|---|---|
-| Flip | Gets or sets whether the object is to be mirrored horizontally, vertically, or both | EnumFlipFlip.HorizontalFlip 
-Flip.VerticalFlipFlip.Flip|
+| Flip | Gets or sets whether the object is to be mirrored horizontally, vertically, or both | Enum Flip <br> Flip.HorizontalFlip <br> Flip.VerticalFlip <br> Flip.Flip |
 
 **Execute Flip Command**
 
@@ -308,14 +309,13 @@ To execute zoom commands, parameters of type IZoomParameter (IZoomManipulationPa
 | ManipulationArgs | Gets or sets the ManipulationDeltaRoutedEventArgs associated with the desired zoom function. | ManipulationDeltaRoutedEventArgs |
 
 **IZoomPositionParameter Property**
+
 | Property | Description | Value |
 |---|---|---|
 | ZoomTo | Gets or sets the zoom level to which the diagram is to be zoomed. | double |
 | ZoomFactor | Gets or sets the percentage of scale value for each ZoomIn or ZoomOut function. | double |
 | FocusPoint | Gets or sets the point of focus while zooming. | Point | 
-| ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | Enum ZoomCommand
-ZoomCommand.ZoomIn
-ZoomCommand.ZoomOut |
+| ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | Enum ZoomCommand <br> ZoomCommand.ZoomIn <br> ZoomCommand.ZoomOut |
 
 
 **IZoomPointerParameter Property**
@@ -323,9 +323,7 @@ ZoomCommand.ZoomOut |
 | Property | Description | Value |
 |---|---|---|
 | PointerArgs | Gets or sets the PointerRoutedEventArgs associated with the desired zoom function. | PointerRoutedEventArgs |
-| ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | EnumZoomCommand
-ZoomCommand.ZoomIn
-ZoomCommand.ZoomOut |
+| ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | Enum ZoomCommand <br> ZoomCommand.ZoomIn <br> ZoomCommand.ZoomOut |
 
 The following code illustrates how to Zoom-in/Zoom-out the diagram.
 {% highlight C# %}
@@ -354,7 +352,7 @@ Reset commands are used to reset horizontal Offset, vertical Offset, and zoom le
 To execute a reset command, a parameter of type IReset has to be passed.
 | Property | Description | Value |
 |---|---|---|
-| Reset | Gets or sets the ZoomPanReset | Enum Reset Reset.Zoom – To reset zoom level to 1,Reset.Pan – To reset Offsets to 0,Reset.ZoomPan | 
+| Reset | Gets or sets the ZoomPanReset | Enum Reset <br> Reset.Zoom – To reset zoom level to 1 <br> Reset.Pan – To reset Offsets to 0,Reset.ZoomPan | 
 
 Execute ResetCommand
 
@@ -425,7 +423,7 @@ FitToPage commands are used to bring the entire Diagram into the view.
 
 | Command |	Description | Value |
 |---|---|---|
-| FitToPage | Gets or sets whether the Diagram is to fit into the view in terms of its width, height, or entirety. | Enum FitToPageFitToPage.FitToPageFitToPage.FitToHeightFitToPage.FitToWidth |
+| FitToPage | Gets or sets whether the Diagram is to fit into the view in terms of its width, height, or entirety. | Enum FitToPage <br> FitToPage.FitToPage <br> FitToPage.FitToHeight <br> FitToPage.FitToWidth |
 | Margin | Gets or sets the margin value from the view to Diagram. | Thickness |
 The following code illustrates how to execute FitToPage command.
 

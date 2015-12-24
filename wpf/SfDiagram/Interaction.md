@@ -70,7 +70,7 @@ node.IsSelected = false;
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping")..
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping").
 
 ![](Interaction_images/Interaction_img7.jpeg)
 
@@ -78,7 +78,7 @@ node.IsSelected = false;
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
 * The Node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position")..
+* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position").
 
 ![](Interaction_images/Interaction_img8.jpeg)
 

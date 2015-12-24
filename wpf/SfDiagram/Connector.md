@@ -907,17 +907,12 @@ The direction of the bridge can be customized with the property `BridgeDirection
 
 The following code example illustrates how to draw the bridge at the bottom direction.
 
-[XAML]
-
 {% highlight xml %}
 
 <diagram:SfDiagram x:Name="diagram" BridgeDirection="Bottom">
 <diagram:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,150" 
                             Constraints="Bridging">
-
 {% endhighlight %}
-
-[C#]
 
 {% highlight C# %}
 
@@ -925,6 +920,8 @@ diagram.BridgeDirection = BridgeDirection.Bottom;
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
 {% endhighlight %}
+
+N> Bezier segments do not support Bridging.
 
 ##Corner radius
 
@@ -1000,8 +997,6 @@ StrokeThickness, Stroke and style of the LineConnector and Decorators can be cus
 
 The following code example illustrates how to customize the segment appearance.
 
-[XAML]
-
 {% highlight xml %}
 
 <Style TargetType="Path" x:Key="connectorstyle">
@@ -1010,10 +1005,7 @@ The following code example illustrates how to customize the segment appearance.
   <Setter Property="StrokeDashArray" Value="2"/>
   <Setter Property="Opacity" Value="0.8"/>
 </Style>
-
 {% endhighlight %}
-
-[C#]
 
 {% highlight C# %}
 

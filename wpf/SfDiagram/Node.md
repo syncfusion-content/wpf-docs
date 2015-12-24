@@ -79,7 +79,7 @@ refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
 
 ###Draw Nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:shapes "Draw Connectors").
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Nodes](/wpf/sfdiagram/Tools#drawing-tools:shapes "Draw Nodes").
 
 ##Position
 
@@ -140,7 +140,7 @@ diagram.Nodes = nodes;
 
 ##Appearance
 
-You can customize the appearance of a Node by changing its Style. The following code illustrates how to customize the appearance of the shape.
+You can customize the appearance of a Node by changing its ShapeStyle. The following code illustrates how to customize the appearance of the shape.
 
 {% highlight xml %}
 

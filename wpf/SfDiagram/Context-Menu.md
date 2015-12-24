@@ -31,7 +31,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.ContextMenu;
 
 ##Customize Context Menu
 
-Apart from the default ContextMenu items, you can define some additional menu items by using Menu property of SfDiagram, Node and Connector. Those additional items have to be defined and added to MenuItems. 
+Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
 
 The following code example illustrates how to add custom context menu items to Menu property of SfDiagram.
 

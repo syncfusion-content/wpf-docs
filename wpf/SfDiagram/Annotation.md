@@ -9,11 +9,12 @@ documentation: ug
 
 #Annotation
 
-Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. You can add Multiple Labels to a Node/Connector.
+Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
+You can add Multiple Labels to a Node/Connector.
 
 ##Create Annotation
 
-You can add an Annotation to a Node/Connector by defining the IAnnotation object and adding that to the Annotation collections of Node/Connector.The Content property of IAnnotation defines the object to be displayed. The following code illustrates how to create an Annotation.
+You can add an Annotation to a Node/Connector by defining the IAnnotation object and adding that to the `Annotations` property  of Node/Connector.The `Content` property of IAnnotation defines the object to be displayed. The following code illustrates how to create an Annotation.
 
 {% highlight C# %}
 
@@ -77,7 +78,7 @@ Annotation can be aligned relative to the Node boundaries. It has Margin, Offset
 
 ###Offset
 
-The Offset property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
+The `Offset` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
 
 The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
 
@@ -98,7 +99,7 @@ The following table illustrates all the possible alignments visually with **Offs
 | Left | Top | ![](Annotation_images/Annotation_img4.jpeg) |
 | Center | | ![](Annotation_images/Annotation_img5.jpeg) |
 | Right | | ![](Annotation_images/Annotation_img6.jpeg) |
-| Left | Center | ![]("Annotation_images/Annotation_img7.jpeg) |
+| Left | Center | ![](Annotation_images/Annotation_img7.jpeg) |
 | Center | | ![](Annotation_images/Annotation_img8.jpeg) |
 | Right | | ![](Annotation_images/Annotation_img9.jpeg) |
 | Left | Bottom | ![](Annotation_images/Annotation_img10.jpeg) |
@@ -140,7 +141,7 @@ diagram.Nodes = nodes;
 
 ###Margin
 
-Margin is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the Margin property. The following code example illustrates how to align an Annotation based on its Offset, horizontalAlignment, VerticalAlignment and Margin values.
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
 
 {% highlight C# %}
 
@@ -193,11 +194,9 @@ new AnnotationEditorViewModel()
 
 ![](Annotation_images/Annotation_img18.jpeg)
 
-_Annotation Displacement through margin_
-
 ##Wrapping
 
-When text overflows Node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped. The following code illustrates how to wrap a Annotation in a Node.
+When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped. The following code illustrates how to wrap a Annotation in a Node.
 
 {% highlight C# %}
 
@@ -230,12 +229,12 @@ diagram.Nodes = nodes;
 | Values | Description | Node | Connector|
 |---|---|---|---|
 | NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img20.jpeg) | ![](Annotation_images/Annotation_img21.jpeg) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | Annotation_images/Annotation_img23.jpeg |
-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/Annotation_img24.jpeg) | Annotation_images/Annotation_img25.jpeg |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | ![](Annotation_images/Annotation_img23.jpeg) |
+| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/Annotation_img24.jpeg) | ![](Annotation_images/Annotation_img25.jpeg) |
 
 ##Appearance 
 
-You can change the appearance by ViewTemplate. The following code illustrate how to customize the appearance of an Annotation.
+You can change the appearance by ViewTemplate. The following code illustrates how to customize the appearance of an Annotation.
 
 [XAML]
 
@@ -299,7 +298,7 @@ The Appearance of the Annotation can also be customized with appearance specific
 
 ##Drag
 
-An Annotation can be displaced from its original position to any preferred location interactively. Dragging is displaced by default. You can enable label dragging with the Constraints property of Node/Connector. The following code illustrates how to enable Annotation **Dragging** for Node.
+An Annotation can be displaced from its original position to any preferred location interactively. Dragging is displaced by default. You can enable Annotation dragging with the Constraints property of Node/Connector. The following code illustrates how to enable Annotation **Dragging** for Node.
 
 {% highlight C# %}
 
