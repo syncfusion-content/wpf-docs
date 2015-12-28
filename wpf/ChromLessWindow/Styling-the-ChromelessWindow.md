@@ -16,7 +16,7 @@ ChromelessWindow allows the end-user to write own templates for the TitleBar. Th
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
@@ -36,7 +36,7 @@ For example, use the following code for a TitleBarTemplate.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <ControlTemplate x:Key="TitleBarTemplateKey" TargetType="{x:Type syncfusion:TitleBar}">
 
@@ -56,7 +56,7 @@ For example, use the following code for a TitleBarTemplate.
 
 {% endtabs %}
 
->__**Note**__**:**__ __**The**__ __**drag**__ __**and**__ __**drop**__ __**feature**__ __**for**__ __**the**__ __**ChromelessWindow**__ __**is**__ __**available**__ __**only**__ __**with**__ __**the**__ __**TitleBar**__**,**__ __**to**__ __**incorporate**__ __**this**__ __**feature**__**,**__ __**include**__ __**a**__ __**TitleBar**__ __**into**__ __**your**__ __**ChromelessWindow**__**.**__ __**Also**__ __**it**__ __**is**__ __**necessary**__ __**to**__ __**specify**__ __**the**__ __**name**__ __**of**__ __**the**__ __**TitleBar**__ __**as**__ __**"**__**PART**____**_**____**TitleBar**__**",**__ __**to**__ __**enable**__ __**the**__ __**drag**__ __**and**__ __**drop**__ __**feature**__**.**
+>Note:The drag and drop feature for the ChromelessWindow is available only with the TitleBar,to incorporate this feature,include a TitleBar into your ChromelessWindow.Also it is necessary to specify the name of the TitleBar as PART_TitleBar",to enable the drag and drop feature.
 
 ![](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
 
@@ -67,7 +67,7 @@ ChromelessWindow enables the user to write their own templates for the Title bu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
@@ -91,7 +91,7 @@ For example, use the following code for a MaximizeButtonTemplate.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <ControlTemplate x:Key="MaxTemplateKey" TargetType="{x:Type syncfusion:TitleButton}">
 
@@ -128,18 +128,18 @@ Similarly, the template for the desired button can be changed by using the corre
 
 ChromelessWindow can be customized by editing the default template. The default style can be downloaded from the following link
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349# "")
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349
 
 This default style need to be included in the App.xaml file of your application and the override this style as you desire.
 
->__**Note**__**:**__ __**All**__ __**the**__ __**templates**__ __**should**__ __**be**__ __**written**__ __**in**__ __**App**____**.**____**xaml**__ __**file**__ __**only**__**.**__
+>Note:All the templates should be written in App.xaml file only.
 
 
 The below example is illustrated to override the ChromelessWindow’s full style 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <ControlTemplate x:Key="TitleBarTemplateKey" TargetType="{x:Type syncfusion:TitleBar}">
 
@@ -204,7 +204,7 @@ Then apply this style to the ChromelessWindow using Template Property
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 

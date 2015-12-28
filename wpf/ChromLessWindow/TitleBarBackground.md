@@ -12,7 +12,7 @@ The **TitleBarBackground** property can help to set the Background for the Title
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -28,6 +28,10 @@ Title="MainWindow" Height="350" Width="525"  TitleBarBackground="Red"   x:Name="
 </syncfusion:ChromelessWindow>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 

@@ -14,7 +14,7 @@ The default value is zero, which implies sharp corners
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -28,6 +28,10 @@ Title="ChromelessWindow" Height="350" Width="525"  CornerRadius="8"  AllowsTrans
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 

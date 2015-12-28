@@ -24,7 +24,7 @@ Syncfusion.Shared.WPF.dll
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 
 <Window x:Class="Chromelesswindow.MainWindow"
@@ -46,7 +46,7 @@ Title="MainWindow" Height="350" Width="525"    xmlns:syncfusion="clr-namespace:S
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
