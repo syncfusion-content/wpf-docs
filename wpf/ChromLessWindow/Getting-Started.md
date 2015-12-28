@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Getting Started
-description: Getting Started
+description: Getting Started
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Getting Started
+# Getting Started
 
 This section explains how to implement the ChromelessWindow control. It describes the following:
 
-## Add ChromelessWindow 
+## Add ChromelessWindow 
 
 The following steps will helps to add ChromelessWindow 
 

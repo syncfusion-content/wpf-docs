@@ -10,7 +10,7 @@ documentation: ug
 
 This section deals with the Styles and Templates supported by ChromelessWindow control.
 
-## Custom Template for the TitleBar
+## Custom Template for the TitleBar
 
 ChromelessWindow allows the end-user to write own templates for the TitleBar. The TitleBar can be customized by using the **TitleBarTemplate** property. The following code snippet illustrates how to set the TitleBarTemplate property.
 
@@ -61,7 +61,7 @@ For example, use the following code for a TitleBarTemplate.
 ![](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
 
 
-## Custom Template for the TitleButton
+## Custom Template for the TitleButton
 
 ChromelessWindow enables the user to write their own templates for the Title button that is used in the TitleBar. **Maximize** **,** **Minimize** **,** **Restore** **and** **Close** Button can be edited with **MaximizeButtonTemplate** **,** **MinimizeButtonTemplate** **,** **RestoreButtonTemplate** **,** **CloseButtonTemplate** property respectively. The below code example is illustrated to change the template of the Maximize Button using **MaximizeButtonTemplate** property
 

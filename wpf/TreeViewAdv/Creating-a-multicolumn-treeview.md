@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Creating a MultiColumnTreeView
+title: Creating a MultiColumnTreeView
 description: Creating a MultiColumnTreeView
 platform: wpf
 control: TreeViewAdv

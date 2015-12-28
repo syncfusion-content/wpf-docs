@@ -30,6 +30,7 @@ Virtualization is processed internally (without IVirtualTree).
 {% tabs %}
 
 {% highlight C# %}
+
 treeViewAdv.IsVirtualizing = true;
 
 treeViewAdv.VirtualizationMode = VirtualizationMode.Normal;
@@ -75,7 +76,10 @@ IVirtualTree interface has to be implemented by the class creating the business 
 
 {% endtabs %}
 
+{% tabs %}
+
 {% highlight C# %}
+
 treeViewAdv.IsVirtualizing = true;
 
 treeViewAdv.VirtualizationMode = VirtualizationMode.Extended;

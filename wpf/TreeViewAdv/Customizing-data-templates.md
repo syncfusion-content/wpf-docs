@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Customizing Data Templates
+title: Customizing Data Templates
 description: Customizing Data Templates
 platform: wpf
 control: TreeViewAdv
