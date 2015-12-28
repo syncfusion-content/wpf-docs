@@ -15,7 +15,7 @@ PivotGrid provides support to improve the scrolling performance of the PivotGrid
 
 User could have the better scrolling performance when loading large set of records.
 
-                                                              Property Table
+Property Table
 
 <table>
 <tr>
@@ -24,7 +24,7 @@ Property Name</th><th>
 Description</th><th>
 Type</th><th>
 Value it Accepts</th><th>
-Reference Link<th></tr>
+Reference Link</th></tr>
 <tr>
 <td>
 EnableDefferedScrolling</td><td>
@@ -32,7 +32,6 @@ Gets or sets a value indicating whether to defer the scrolling until user releas
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ##Defining the property in PivotGrid 

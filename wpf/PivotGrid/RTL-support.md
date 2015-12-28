@@ -15,7 +15,7 @@ PivotGrid provides support to display the contents of the grid from Right-to-lef
 
 User could display the contents from right to left based on their requirement.
 
-                                                          Property Table
+Property Table
                                                           
 <table>
 <tr>

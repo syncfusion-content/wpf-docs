@@ -23,7 +23,7 @@ Skin Customization is the process of applying particular style settings to the v
 * Office 2003
 * Default
 
-                                                              Property Table
+Property Table
 
 <table>
 <tr>
@@ -41,7 +41,6 @@ PivotGridVisualStyle</td><td>
 Default (Default), Metro, Blend, Office2003, Office2007Black, Office2007Blue, Office2007Silver,Office2010Black, Office2010Blue, 
 Office2010Silver, Transparent</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Defining the property in PivotGrid

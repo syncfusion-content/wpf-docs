@@ -11,11 +11,11 @@ documentation: ug
 
 PivotGrid provides support to add expression fields and handles other features similar to normal fields. It is possible to add the new expression field info by using the AllowedFields class in PivotGrid control and we need to make use of the below mentioned property to load the allowed fields in PivotGrid.
 
-** Use Case Scenario **
+**Use Case Scenario**
 
 User could create a new expression fields and can associate with calculation items.
 
-                                                         Property Table
+Property Table
 
 <table>
 <tr>
@@ -32,7 +32,6 @@ Gets or sets a value indicating whether grid control load with default property 
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Defining the property in PivotGrid

@@ -17,7 +17,7 @@ It allows users to sort the value columns in ascending or descending order and i
 * Sort only grand total columns.
 * Disable the sort.
 
-                                                  Properties Table
+Properties Table
 
 <table>
 <tr>
@@ -145,5 +145,5 @@ public partial class MainWindow: Window {
 
 ##Multi-Column Sorting
 
-Multi column sorting behavior has been created which allows you to sort the value columns by one field after another field. Please refer the *Multi-Column Sorting in Normal mode of PivotGrid control* topic for further references.
+Multi column sorting behavior has been created which allows you to sort the value columns by one field after another field. Please refer the [Multi-Column Sorting in Normal mode of PivotGrid control](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-normal-mode-of-pivotgrid-control) topic for further references.
 

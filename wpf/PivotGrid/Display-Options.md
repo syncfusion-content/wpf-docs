@@ -15,7 +15,7 @@ PivotGrid control offers various display options such as **Calculations, Summary
 
 User could view the calculation items either on summary, calculations, grand totals or combinations of these three columns depending on their requirement.
 
-                                                    Property Table
+Property Table
 																	 										 
 <table>
 <tr>

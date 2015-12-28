@@ -15,7 +15,8 @@ Essential PivotGrid for WPF provides in-built support for printing and print pre
 
 Printing option allows you to have a hard copy of the PivotGrid.
 
-                                                      Properties Table
+Properties Table
+
 <table>
 <tr>
 <th>
@@ -40,7 +41,7 @@ True, False(Default)</td><td>
 -</td></tr>
 </table>
 
-                                                           Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -119,7 +120,7 @@ Please refer the below code snippet to know about the Header, Footer Template an
 
 {% endhighlight %}
 
-** Invoking PrintPreview Window in PivotGrid **
+**Invoking PrintPreview Window in PivotGrid**
 
 After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, invoke the method **ShowPrintPreview** to enable the printing behavior.
 

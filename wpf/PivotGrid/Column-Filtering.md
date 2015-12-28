@@ -11,7 +11,7 @@ documentation: ug
 
 Pivot Grid allows you to restrict the display of records by using a mechanism called Filters. A filter enables you to extract a subset of records that meet certain filter criteria. Filters can be applied to one or more columns.
 
-                                                      Property Table
+Property Table
 
 <table>
 <tr>
@@ -28,10 +28,9 @@ Specifies whether the PivotGridControl allows to set a filter on the Calculat
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
-                                                     Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -79,5 +78,5 @@ Please refer the below code snippet.
 
 {% endhighlight %}	
 
-![](Features-in-RowPivotsOnly/Filtering Enable in RowPivotsOnly.png)
+![](Features-in-RowPivotsOnly-images/Filtering Enable in RowPivotsOnly.png)
 

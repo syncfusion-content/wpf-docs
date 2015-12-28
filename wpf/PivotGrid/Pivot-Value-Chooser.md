@@ -15,7 +15,7 @@ documentation: ug
 
 It enables user to show or hide particular PivotCalculation in the PivotGrid at run time.
 
-                                                         Properties Table
+Properties Table
 
 <table>
 <tr>
@@ -91,4 +91,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly/PivotGrid shows Value chooser window.png)
+![](Features-in-RowPivotsOnly-images/PivotGrid shows Value chooser window.png)

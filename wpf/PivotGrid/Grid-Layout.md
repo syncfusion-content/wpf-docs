@@ -15,7 +15,7 @@ PivotGrid provides support for two different types Layout options with respect t
 
 User could view the summary values at start or end of the value cells as per their requirement.
 
-                                              Property Table
+Property Table
 
 <table>
 <tr>

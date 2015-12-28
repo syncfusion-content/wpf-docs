@@ -15,7 +15,7 @@ PivotGrid control allows to prevent the drag and drop of certain PivotItems that
 
 User could restrict the grouping for any specific field in the PivotGrid.
 
-                                                       Properties Table
+Properties Table
 
 <table>
 <tr>

@@ -11,10 +11,10 @@ documentation: ug
 
 PivotGrid provides certain sorting events to keep track of the sorted value fields which could be invoked before and after the sort actions.
 
-* SortBegin - An event that notifies before the sorting action begins and returns the index or position of value fields with its corresponding values in PivotGrid.
-* SortCompleted - An event that notifies after the sort option completed and returns the index or position of the sorted value fields with its corresponding values in PivotGrid.
+* **SortBegin** - An event that notifies before the sorting action begins and returns the index or position of value fields with its corresponding values in PivotGrid.
+* **SortCompleted** - An event that notifies after the sort option completed and returns the index or position of the sorted value fields with its corresponding values in PivotGrid.
 
-** Using the SortBegin and SortCompleted Events **
+**Using the SortBegin and SortCompleted Events**
 
 We could make use of this mentioned events by invoking them whenever we want as per our requirement. Please refer the below guidelines and code snippets.
 

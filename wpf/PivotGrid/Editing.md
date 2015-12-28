@@ -15,7 +15,7 @@ PivotGrid provides support to edit the value and total cells and it can be achie
 
 It will be useful when users would like to edit the values at run time thereby reflecting its update in the total cells.
 
-                                                                      Properties Table
+Properties Table
 
 <table>
 <tr>
