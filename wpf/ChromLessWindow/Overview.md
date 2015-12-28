@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Overview | ChromelessWindow | wpf | Syncfusion
-description: overview
+title: Overview
+description: Overview
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
+# Overview
 
-# Overview
-
-ChromelessWindow is used to create customizable windows for the end user's applications. With these windows, you can have complete control over the entire window. The features offered are re sizing, dragging and moving the window. It implements several other customizable features to present an appealing User Interface to the end-users. You can create custom title bars, status bars, scroll bars and so on. It also supports various built-in skins. The topics in this user guide will walk you through all these features in detail.
+ChromelessWindow is used to create customizable window for the end user’s applications. With these windows, user can have the complete control over the entire window. The features offered includes resizing, dragging and moving the window. It implements several other features to present an appealing User Interface to the end users. It also supports various built in skins and let the user to control its behavior and appearance .The features are described in detail in the further topics
 
