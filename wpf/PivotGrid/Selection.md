@@ -15,7 +15,7 @@ PivotGrid supports excel-like **Cell Selection** where you can select grid value
 
 User could select cells that can be copied to clipboard or notepad and able to perform custom operations on cell selection and also can bind any control based on the selected cell values.
 
-                                                             Property Table
+Property Table
 
 <table>
 <tr>
@@ -24,7 +24,7 @@ Property Name</th><th>
 Description</th><th>
 Type</th><th>
 Value it Accepts</th><th>
-Reference Link<th></tr>
+Reference Link</th></tr>
 <tr>
 <td>
 AllowSelection</td><td>

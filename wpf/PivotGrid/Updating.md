@@ -15,7 +15,7 @@ PivotGrid provides support to update the values in PivotGrid in real time and it
 
 User could push the live data into the PivotGrid based on their requirement and can refreshes the grid whenever they want.
 
-                                                                Properties Table
+Properties Table
 
 <table>
 <tr>

@@ -11,14 +11,14 @@ documentation: ug
 
 PivotGrid that supports the context menu behaviour for Row pivots only mode. The context menu that helps to filter,sort and to hide total values etc. This behaviour is same as in the PivotGrid in normal mode. It provides the following options.
 
-* Allow Filtering - Enable or disable filtering in the selected pivot computation column.
-* Allow Sorting  - Enable or disable sorting in the selected pivot computation column.
-* HideValueColumn - Hides the selected pivot computation column.
-* ClearValueFilters - To clear the filtered changes in all pivot computation columns.
-* ClearValueSorts - To clear sorted values in all pivot computation columns.
-* ShowPivotValueChooser - Launches the Pivot Value Chooser window to add or remove the items in PivotGrid.
+* **Allow Filtering** - Enable or disable filtering in the selected pivot computation column.
+* **Allow Sorting**  - Enable or disable sorting in the selected pivot computation column.
+* **HideValueColumn** - Hides the selected pivot computation column.
+* **ClearValueFilters** - To clear the filtered changes in all pivot computation columns.
+* **ClearValueSorts** - To clear sorted values in all pivot computation columns.
+* **ShowPivotValueChooser** - Launches the Pivot Value Chooser window to add or remove the items in PivotGrid.
 
-                                                 Property Table
+Property Table
 
 <table>
 <tr>
@@ -35,7 +35,6 @@ This property is used to display the context menu for each column when right cli
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Defining the property in RowPivotsOnly mode of PivotGrid 
@@ -60,4 +59,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}	
 
-![](Features-in-RowPivotsOnly/PivotGrid shows Context menu.png)
+![](Features-in-RowPivotsOnly-images/PivotGrid shows Context menu.png)

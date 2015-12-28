@@ -15,7 +15,7 @@ PivotGrid provides support for restricting the row header items from being stret
 
 It allows the user to restrict the row header items from being stretched and maintains its size with the fixed one so that users can view most of the data in the viewable area instead of scrolling to view the data.
 
-                                               Property Table
+Property Table
 
 <table>
 <tr>

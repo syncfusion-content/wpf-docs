@@ -15,7 +15,7 @@ PivotGrid provides support for resizing the grid to fit its content while group 
 
 It provides more space to the user to display the controls sharing its parent control during group collapse operation. 
 
-                                                          Property Table
+Property Table
 
 <table>
 <tr>

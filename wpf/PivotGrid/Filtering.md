@@ -15,7 +15,7 @@ Filtered data displays only a subset of data that meets a criteria that you spec
 
 FilterExpression class used to encapsulates the information needed to define a filter. It contains the following properties.
 
-                                             Properties Table
+Properties Table
 
 <table>
 <tr>

@@ -11,7 +11,7 @@ documentation: ug
 
 PivotGrid control provides the sorting option for the calculation columns in PivotGrid in RowPivotsOnly mode. This can be enabled or disabled using **AllowSort** property of **PivotComputationInfo** in PivotGrid control. 
 
-                                                        Property Table
+Property Table
 
 <table>
 <tr>
@@ -28,10 +28,9 @@ This property is used to enable or disable the sorting option for column pivots.
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
-                                                          Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -136,8 +135,8 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly/Sorting option enabled in PivotGrid.png)
+![](Features-in-RowPivotsOnly-images/Sorting option enabled in PivotGrid.png)
 
 ## Multi-Column Sorting
 
-Multi column sorting behavior has been created which allows you to sort the value columns by one field after another field. Please refer the *Multi-Column Sorting in RowPivotsOnly mode of PivotGrid control* topic for further references.
+Multi column sorting behavior has been created which allows you to sort the value columns by one field after another field. Please refer the [Multi-Column Sorting in RowPivotsOnly mode of PivotGrid control](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-row-pivots-only-mode-of-pivotgrid-control) topic for further references.

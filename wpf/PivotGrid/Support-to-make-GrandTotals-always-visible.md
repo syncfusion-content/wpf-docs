@@ -11,7 +11,7 @@ documentation: ug
 
 PivotGrid provides support to the make the grand totals rows always visible in RowPivotsOnly mode. It can be achieved by using the **GrandTotalRowAlwaysVisible** property of PivotGrid control.
 
-                                                              Property Table
+Property Table
 
 <table>
 <tr>
@@ -28,7 +28,6 @@ Gets or sets a value indicating whether to make the grand totals visible all the
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ##Defining the property in PivotGrid 
