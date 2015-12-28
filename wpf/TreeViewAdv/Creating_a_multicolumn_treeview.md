@@ -1,0 +1,291 @@
+# Creating a MultiColumnTreeView
+
+TreeView control can be created with multiple columns by setting the MultiColumnEnable property to __true__. This is dependency property, which gets or sets the value defining whether items are in multicolumn mode. The default value is __false______
+{% tabs %}
+{% highlight XAML %}
+<!-- Adding TreeViewAdv with Enabling multiple column -->
+
+<syncfusion:TreeViewAdv  Name="treeViewAdv" MultiColumnEnable="True">
+
+<!-- Adding TreeViewItemAdv -->
+
+<syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
+
+<syncfusion:TreeViewItemAdv Header="Single"/>
+
+<syncfusion:TreeViewItemAdv Header="Married"/>
+
+<syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
+
+<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+<syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+<syncfusion:TreeViewItemAdv Header="Polio"/>
+
+<syncfusion:TreeViewItemAdv Header="Measles"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="Country Information">
+
+<syncfusion:TreeViewItemAdv Header="Canada"/>
+
+<syncfusion:TreeViewItemAdv Header="France"/>
+
+<syncfusion:TreeViewItemAdv Header="Germany"/>
+
+<syncfusion:TreeViewItemAdv Header="UK"/>
+
+<syncfusion:TreeViewItemAdv Header="USA"/>
+
+</syncfusion:TreeViewItemAdv>
+
+</syncfusion:TreeViewAdv>
+
+{% endhighlight %}
+{% endtabs %}
+{% tabs %}
+{% highlight C# %}
+//Enable multiple column enable
+
+treeViewAdv.MultiColumnEnable = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+{% endhighlight %}
+{% endtabs %}  
+
+![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img1.jpeg)
+
+
+## Header for MultiColumn
+
+TreeViewAdv allow user to set headers for individual columns using the Columns property. All the columns are defined in TreeViewColumnCollections.
+{% tabs %}
+{% highlight XAML %}
+<!-- Adding TreeViewAdv with Enabling multiple column -->
+
+<syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
+
+<!-- Adding TreeViewItemAdv -->
+
+<syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
+
+<syncfusion:TreeViewItemAdv Header="Single"/>
+
+<syncfusion:TreeViewItemAdv Header="Married"/>
+
+<syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
+
+<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+<syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+<syncfusion:TreeViewItemAdv Header="Polio"/>
+
+<syncfusion:TreeViewItemAdv Header="Measles"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="Country Information">
+
+<syncfusion:TreeViewItemAdv Header="Canada"/>
+
+<syncfusion:TreeViewItemAdv Header="France"/>
+
+<syncfusion:TreeViewItemAdv Header="Germany"/>
+
+<syncfusion:TreeViewItemAdv Header="UK"/>
+
+<syncfusion:TreeViewItemAdv Header="USA"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<!-- Adding header -->
+
+<syncfusion:TreeViewAdv.Columns>
+
+<syncfusion:TreeViewColumnCollection>
+
+<syncfusion:TreeViewColumn Width="150" Header="Status"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+<syncfusion:TreeViewColumn Width="100" Header="Vaccines"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+<syncfusion:TreeViewColumn Width="50" Header="Country"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+</syncfusion:TreeViewColumnCollection>
+
+</syncfusion:TreeViewAdv.Columns>
+
+</syncfusion:TreeViewAdv>
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
+
+
+## Auto-Resize of Columns in Multicolumn TreeView
+
+The width property of TreeViewColumn has changed from a double type to a GridLength type that can be set to the Auto or * values. When the column width is set as Auto, the desired size or minimum size will be set as the width of the column. When the width is set as __,__ __the__ __remaining__ __space__ __that__ __is__ __available__ __in__ __the__ __window__ __will__ __be__ __set__ __as__ __the__ __width__ __of__ __the__ __column____.__ __Similarly____,__ __the__ __value__ __can__ __be__ __set__ __as__ __0____.____3__, 2__,____128__, etc.
+
+{% tabs %}
+{% highlight XAML %}
+<!-- Adding TreeViewAdv with Enabling multiple column -->
+
+<syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
+
+<!-- Adding TreeViewItemAdv -->
+
+<syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="111">
+
+<syncfusion:TreeViewItemAdv Header="211"/>
+
+<syncfusion:TreeViewItemAdv Header="212"/>
+
+<syncfusion:TreeViewItemAdv Header="213"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="Steve">
+
+<syncfusion:TreeViewItemAdv Header="Charles"/>
+
+<syncfusion:TreeViewItemAdv Header="Greg"/>
+
+<syncfusion:TreeViewItemAdv Header="Danielle"/>
+
+<syncfusion:TreeViewItemAdv Header="Ethan"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="President">
+
+<syncfusion:TreeViewItemAdv Header="TeamLead"/>
+
+<syncfusion:TreeViewItemAdv Header="TeamLead"/>
+
+<syncfusion:TreeViewItemAdv Header="ProductLead"/>
+
+<syncfusion:TreeViewItemAdv Header="ProductManager"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<!-- Adding header -->
+
+<syncfusion:TreeViewAdv.Columns>
+
+<syncfusion:TreeViewColumnCollection>
+
+<syncfusion:TreeViewColumn Width="90" Header="ID"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+<syncfusion:TreeViewColumn Width="Auto" Header="FirstName"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+<syncfusion:TreeViewColumn Width="200" Header="Role"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+</syncfusion:TreeViewColumnCollection>
+
+</syncfusion:TreeViewAdv.Columns>
+
+</syncfusion:TreeViewAdv>
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img3.jpeg)
+
+
+## Allowing Reordering Columns
+
+TreeViewAdv control now provides support to reorder the columns in the TreeViewAdv control by using the AllowsColumnReorder property. Enable this property using the below code.
+{% tabs %}
+{% highlight XAML %}
+<!-- Adding TreeViewAdv with Enabling multiple column -->
+
+<syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
+
+<!-- Adding TreeViewItemAdv -->
+
+<syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="111">
+
+<syncfusion:TreeViewItemAdv Header="211"/>
+
+<syncfusion:TreeViewItemAdv Header="212"/>
+
+<syncfusion:TreeViewItemAdv Header="213"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="Steve">
+
+<syncfusion:TreeViewItemAdv Header="Charles"/>
+
+<syncfusion:TreeViewItemAdv Header="Greg"/>
+
+<syncfusion:TreeViewItemAdv Header="Danielle"/>
+
+<syncfusion:TreeViewItemAdv Header="Ethan"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<syncfusion:TreeViewItemAdv Header="President">
+
+<syncfusion:TreeViewItemAdv Header="TeamLead"/>
+
+<syncfusion:TreeViewItemAdv Header="TeamLead"/>
+
+<syncfusion:TreeViewItemAdv Header="ProductLead"/>
+
+<syncfusion:TreeViewItemAdv Header="ProductManager"/>
+
+</syncfusion:TreeViewItemAdv>
+
+<!-- Adding header -->
+
+<syncfusion:TreeViewAdv.Columns>
+
+<syncfusion:TreeViewColumnCollection>
+
+<syncfusion:TreeViewColumn Width="200" Header="ID"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+<syncfusion:TreeViewColumn Width="Auto" Header="FirstName"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+<syncfusion:TreeViewColumn Width="*" Header="Role"
+
+DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
+
+</syncfusion:TreeViewColumnCollection>
+
+</syncfusion:TreeViewAdv.Columns>
+
+</syncfusion:TreeViewAdv>
+
+{% endhighlight %}
+{% endtabs %}
+
