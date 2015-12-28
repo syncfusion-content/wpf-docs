@@ -1,3 +1,11 @@
+---
+layout: post
+title: Sorting TreeviewItemAdv
+description: Sorting TreeviewItemAdv
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Sorting TreeviewItemAdv
 
 TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run time. The Sorting property of the control allows you to specify the direction of sorting. The sorting options are as follows.

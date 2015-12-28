@@ -1,3 +1,11 @@
+---
+layout: post
+title: LoadOnDemand
+description: LoadOnDemand
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # LoadOnDemand
 
 The LoadOnDemand feature enables users to load items dynamically when a particular TreeViewItem is expanded. Hence the items are loaded on demand and reduce the loading time.

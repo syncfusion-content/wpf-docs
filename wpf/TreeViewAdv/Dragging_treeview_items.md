@@ -1,3 +1,11 @@
+---
+layout: post
+title:Dragging TreeView Items
+description: Dragging TreeView Items
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Dragging TreeView Items
 
 TreeViewAdv control enables to drag TreeView items from one location to another. This is done by enabling the AllowDragDrop property.

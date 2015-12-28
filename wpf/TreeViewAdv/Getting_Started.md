@@ -1,3 +1,11 @@
+---
+layout: post
+title: Getting Started
+description: Getting Started
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Getting Started
 
 Getting Started
