@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Dragging TreeView Items
+title: Dragging TreeView Items
 description: Dragging TreeView Items
 platform: wpf
 control: TreeViewAdv

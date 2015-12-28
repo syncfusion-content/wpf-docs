@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Binding SelectedItem of TreeViewAdv in MVVM Pattern
+title: Binding SelectedItem of TreeViewAdv in MVVM Pattern
 description: Binding SelectedItem of TreeViewAdv in MVVM Pattern
 platform: wpf
 control: TreeViewAdv

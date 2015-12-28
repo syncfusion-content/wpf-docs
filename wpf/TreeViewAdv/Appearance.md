@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Appearance
+title: Appearance
 description: Appearance
 platform: wpf
 control: TreeViewAdv

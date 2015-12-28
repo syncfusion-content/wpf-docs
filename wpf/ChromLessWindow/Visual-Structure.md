@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Visual Structure
-description: Visual Structure
+title: Visual Structure
+description: Visual Structure
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Visual Structure
+# Visual Structure
 
 The ChromelessWindow’s visual elements are explained in the below snapshot 
 
