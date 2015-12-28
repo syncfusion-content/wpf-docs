@@ -1,3 +1,11 @@
+---
+layout: post
+title: Images for items in TreeViewAdv
+description: Images for items in TreeViewAdv
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Images for items in TreeViewAdv
 
 ## Node Image

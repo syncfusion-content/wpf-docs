@@ -1,3 +1,11 @@
+---
+layout: post
+title: Styles
+description: Styles
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Styles
 
 This section deals with the following Styles supported by TreeViewAdv control

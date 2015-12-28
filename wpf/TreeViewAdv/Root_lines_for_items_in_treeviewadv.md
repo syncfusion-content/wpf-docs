@@ -1,3 +1,11 @@
+---
+layout: post
+title: Root Lines for Items in TreeViewAdv
+description: Root Lines for Items in TreeViewAdv
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Root Lines for Items in TreeViewAdv
 
 The TreeViewAdv displays root lines, which link the nodes of a tree structure. These TreeViewAdv root lines are displayed or hidden by using the ShowRootLines property of the class TreeViewAdv. To set this property, use the below code

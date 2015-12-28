@@ -1,3 +1,11 @@
+---
+layout: post
+title: Node Editing
+description: Node Editing
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Node Editing
 
 TreeViewAdv allow user to edit/non-edit the tree node items at runtime, by enable/disable IsEditable property. Default value of this property is true. At runtime, you can edit a node, by simply clicking the node text

@@ -1,3 +1,11 @@
+---
+layout: post
+title:Customizing Data Templates
+description: Customizing Data Templates
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Customizing Data Templates
 
 This section explains about customizing the TreeViewItemAdv using DataTemplate
