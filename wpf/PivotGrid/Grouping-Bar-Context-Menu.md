@@ -11,9 +11,9 @@ documentation: ug
 
 The Grouping bar context menu consists of the following menu items:
 
-* Reload Data - Refresh the Grid with the Current Item source
-* Show Field List - Launches the PivotGrid Field List
-* Order – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
+* **Reload Data** - Refresh the Grid with the Current Item source
+* **Show Field List** - Launches the PivotGrid Field List
+* **Order** – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
 
    * Move to Beginning - Moves the current item to the first position
    * Move to Left - Moves the current item one step towards its left
@@ -22,13 +22,13 @@ The Grouping bar context menu consists of the following menu items:
    * Smallest to Largest—Arranges the pivot fields based on the field header from first letter to the last.
    * Largest to Smallest—Arranges the pivot fields based on the field header from last letter to the first.
 		 
-* Calculated field - Used to add a new calculation field at run time.
+* **Calculated field** - Used to add a new calculation field at run time.
 
 **Use Case Scenario**
 
 It is useful for applications related to Stock Market where the data will change from time to time and users can refresh the grid as per their requirement.
 
-                                          Property Table
+Property Table
 
 <table>
 <tr>

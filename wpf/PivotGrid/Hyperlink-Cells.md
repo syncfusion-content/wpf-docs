@@ -23,7 +23,7 @@ PivotGrid allows Hyperlinking of cells to retrieve a detailed information about 
 
 User could perform some custom operations on a Cell click and able to get the complete information of the cells like its Type, Range etc.
 
-                                                                Property Table
+Property Table
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ Property Name</th><th>
 Description</th><th>
 Type</th><th>
 Value it Accepts</th><th>
-Reference Link<th></tr>
+Reference Link</th></tr>
 <tr>
 <td>
 IsHyperlinkCell</td><td>
@@ -40,7 +40,6 @@ Gets or sets whether the to enable or disable the PivotGrid grid cells as hyperl
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Defining the property in PivotGrid

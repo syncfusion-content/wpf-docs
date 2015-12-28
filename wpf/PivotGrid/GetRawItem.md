@@ -15,7 +15,7 @@ GetRawItemFor method is used to obtain the list of raw items for value cell, tot
 
 User can utilize this method when they want to know the raw item from which the Pivot Cell’s value is obtained and also it is possible get the raw items of the summary cells.
 
-                                                         Method Table
+Method Table
 
 <table>
 <tr>
@@ -55,4 +55,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](GetRawItem/PivotGrid shows Raw Item.png)
+![](GetRawItem-images/PivotGrid shows Raw Item.png)

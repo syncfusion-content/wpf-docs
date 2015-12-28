@@ -15,7 +15,7 @@ With the current implementation of Grouping bar, we cannot able to add the delet
 
 It will be useful for applications that need to configure PivotGrid at run-time. That is, to add/remove items to/from PivotGrid at run-time.
 
-                                                      Property Table
+Property Table
 
 <table>
 <tr>

@@ -59,7 +59,7 @@ After executing the above command the satellite assembly will be generated in th
     
 **{Location of Program}\bin\debug\ar-AE(Arabic Culture)\MayAppName.resources.dll**
 
-Note> Make sure that the name of satellite assembly should be in the format *MyAppName.resources.dll* and the name of the *.resx file should be Syncfusion.PivotAnalysis.Wpf.ar-AE.resx* (Arabic). If the name of dll’s differs from your application name Localization will not work.
+N> Make sure that the name of satellite assembly should be in the format *MyAppName.resources.dll* and the name of the *.resx file should be Syncfusion.PivotAnalysis.Wpf.ar-AE.resx* (Arabic). If the name of dll’s differs from your application name Localization will not work.
 
 
 ![](Localization-Images/PivotGrid Shows localization behaviour.png)

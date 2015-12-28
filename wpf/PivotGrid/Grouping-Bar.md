@@ -20,7 +20,7 @@ PivotGrid Grouping Bar allows you to slice and dice the fields between column, r
 
 Grouping bar also allows to perform sorting,filtering and summarize the data as they want at run time.
 
-                                                           Property Table
+Property Table
 
 <table>
 <tr>

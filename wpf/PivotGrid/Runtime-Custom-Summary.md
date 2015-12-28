@@ -15,7 +15,7 @@ PivotGrid enables us to set the Custom Summaries for the PivotItem values at bot
 
 User could create a different summary base to the pivot item values as per their requirement in addition to the default ones.
 
-                                                          Property Table
+Property Table
 
 <table>
 <tr>
@@ -32,7 +32,6 @@ Gets/Sets the Custom SummaryBase collection to set via PivotComputationInfo Dial
 ObservableCollection</td><td>
 -</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Defining Custom Summary to PivotGrid 

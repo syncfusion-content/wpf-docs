@@ -20,7 +20,7 @@ The sub-total hiding feature is used to show or hide sub-totals in PivotGrid.It 
 
 User could make a better view of the data when there are more computational fields with sub totals for each group in PivotGrid.
 
-                                                        Properties Table
+Properties Table
                                                         
 <table>
 <tr>
@@ -60,7 +60,7 @@ True(Default), False</td><td>
 -</td></tr>
 </table>                                                        
 
-                                                           Methods Table
+Methods Table
 
 <table>
 <tr>

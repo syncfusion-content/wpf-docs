@@ -22,7 +22,7 @@ Column, row, summary, and value cells of a grid can be formatted independently b
 
 The following properties of the cell can be customized.
 
-                                                List of Properties which can customize
+List of Properties which can customize
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ public partial class MainWindow: Window {
     
 {% endhighlight %}
 
-![](Styles-and-Templates/PivotGrid shows customized styles.png)
+![](Styles-and-Templates-images/PivotGrid shows customized styles.png)
 
 ## Cell Templates
 
@@ -184,4 +184,4 @@ Please refer the below code snippet.
 
 {% endhighlight %}
 
-![](Styles-and-Templates/PivotGrid shows templated cells.png)
+![](Styles-and-Templates-images/PivotGrid shows templated cells.png)

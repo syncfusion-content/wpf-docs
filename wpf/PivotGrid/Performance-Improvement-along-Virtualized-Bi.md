@@ -15,7 +15,8 @@ It provides high loading performance for a large set of records. This feature al
 
 Users can view the output in a few seconds for a large set of records that has been bound to the PivotGrid.
 
-                                                          Properties Table
+Properties Table
+
 <table>
 <tr>
 <th>
@@ -32,14 +33,12 @@ bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
 <tr>
-<tr>
 <td>
 EnableOnDemandCalculations</td><td>
 Gets or sets whether the calculations are postponed until the value is requested through the Indexer in the PivotEngine.</td><td>
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Adding a Virtualized binding feature in Pivot Grid
@@ -160,5 +159,5 @@ Please refer the below code snippets.
 
 {% endhighlight %}
 
-![](Virtualized-Binding/PivotGrid loaded with OnDemand index engine.png)
+![](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)
 

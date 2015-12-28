@@ -15,7 +15,8 @@ ToolTips can be set to individual cells. The ToolTip information has the cell va
 
 ToolTips can be used to show the data of any cell so that user can get the cell’s full information such as the row and column on which it depends
 
-                                                             Properties Table
+Properties Table
+
 <table>
 <tr>
 <th>
