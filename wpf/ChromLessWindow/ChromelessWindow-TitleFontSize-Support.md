@@ -14,7 +14,7 @@ To set this property, use the below code
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -30,6 +30,10 @@ Title="ChromelessWindow" Height="350" Width="525" TitleFontSize="25" syncfusion:
 </syncfusion:ChromelessWindow>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 

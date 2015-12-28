@@ -26,7 +26,7 @@ In the below code example, metro theme is applied to the ChromelessWindow contro
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -42,6 +42,10 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 
 {% endhighlight %}
 
+{% endtabs %} 
+
+{% tabs %}
+
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(this, "Metro");
@@ -55,9 +59,10 @@ SkinStorage.SetVisualStyle(Me, "Metro")
 {% endhighlight %}
 
 {% endtabs %} 
+
 ![](Set-Visual-Styles_images/Set-Visual-Styles_img1.jpeg)
 
 
 
->__**Note**__**:**__ __**Metro**__ __**theme**__ __**supports**__ __**customization**__ __**of**__ __**Brushes**__ __**and**__ __**fonts**__**.**__ __**For**__ __**example**__ __**to**__ __**change**__ __**the**__ __**Background**__ __**color**__ __**of**__ __**the**__ __**Window**__ __**Icon**__**,**__ __**use**__ __**SetMetroBrush**__ __**method**__ __
+>Note:Metro theme supports customization of Brushes and fonts. For example to change the Background color of the Window Icon ,use SetMetroBrush method
 
