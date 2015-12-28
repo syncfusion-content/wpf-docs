@@ -1,3 +1,11 @@
+---
+layout: post
+title: Visual Structure
+description: Visual Structure
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Visual Structure
 
 TreeViewAdv control displays hierarchical data in a tree structure, and has items that can be expanded and collapsed

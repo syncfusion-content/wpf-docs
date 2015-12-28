@@ -1,3 +1,11 @@
+---
+layout: post
+title: Expand the item
+description: Expand the item
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Expand the item
 
 TreeViewAdv allow user to expand or collapse each item by enabling or disabling the IsExpanded property. Use the following code to set this property.

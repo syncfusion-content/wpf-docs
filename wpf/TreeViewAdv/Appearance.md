@@ -1,3 +1,11 @@
+---
+layout: post
+title:Appearance
+description: Appearance
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Appearance
 
 This section deals with the appearance of TreeViewAdv control and contains the following topics:

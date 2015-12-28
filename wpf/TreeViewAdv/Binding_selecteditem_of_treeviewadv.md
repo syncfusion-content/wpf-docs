@@ -1,3 +1,11 @@
+---
+layout: post
+title:Binding SelectedItem of TreeViewAdv in MVVM Pattern
+description: Binding SelectedItem of TreeViewAdv in MVVM Pattern
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Binding SelectedItem of TreeViewAdv in MVVM Pattern
 
 A new set of properties namely SelectedTreeItem have been defined to bind SelectedItem value for TreeViewAdv in MVVM pattern.

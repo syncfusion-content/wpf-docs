@@ -1,3 +1,11 @@
+---
+layout: post
+title: Populating with Data
+description: Populating with Data
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Populating with Data
 
 This section explains about populating TreeViewAdv with TreeView items using several ways.
@@ -373,5 +381,5 @@ Root.SubItems.Add(SubItem4);
 ![](Populating_with_data_images/Populating_with_data_img2.jpeg)
 
 
-### Binding to WCF
+
 

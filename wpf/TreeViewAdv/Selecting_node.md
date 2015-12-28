@@ -1,3 +1,11 @@
+---
+layout: post
+title: Selecting a Node
+description: Selecting a Node
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # Selecting a Node
 
 TreeViewAdv allow user to select single or multiple node by setting AllowMultiSelect property.

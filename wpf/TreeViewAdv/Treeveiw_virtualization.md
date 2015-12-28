@@ -1,3 +1,11 @@
+---
+layout: post
+title: TreeViewVirtualization
+description: TreeViewVirtualization
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
 # TreeViewVirtualization
 
 The TreeViewVirtualization feature enables users to reduce the loading time of TreeViewItems regardless of the items count.
