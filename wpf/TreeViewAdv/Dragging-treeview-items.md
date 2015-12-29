@@ -15,6 +15,7 @@ Use the following code to enable this property
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" AllowDragDrop="True" >
 
 <syncfusion:TreeViewItemAdv Name="treeviewitem" Header="Marital Status" >
@@ -50,6 +51,7 @@ Use the following code to enable this property
 {% tabs %}
 
 {% highlight C# %}
+
 //set allow drag and drop
 
 treeViewAdv.AllowDragDrop = true;
@@ -72,6 +74,7 @@ The TreeViewAdv control provides support to change the opacity of an element bei
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" AllowDragDrop="True" DraggingContainerOpacity="0.4" >
 
 <syncfusion:TreeViewItemAdv Name="treeviewitem" Header="Marital Status" >
@@ -107,6 +110,7 @@ The TreeViewAdv control provides support to change the opacity of an element bei
 {% tabs %}
 
 {% highlight C# %}
+
 //set DraggingContainerOpacity
 
 treeViewAdv.DraggingContainerOpacity = 0.4;
@@ -121,7 +125,6 @@ treeViewAdv.DraggingContainerOpacity = 0.4;
 
 ![](Dragging_treeview_items_images/Dragging_treeview_items_img2.jpeg)
 
-
 ## Fake Drag Indicator
 
 Fake Drag Indicator to indicate where TreeViewItemAdv may be placed during drag and drop operations. This is achieved by enabling the “IsFakeDragIndicator” property.
@@ -131,6 +134,7 @@ The following code example can be used to set this property
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" IsFakeDragIndicator="True">
 
 <syncfusion:TreeViewItemAdv Name="treeviewitem" Header="Marital Status" >
@@ -166,6 +170,7 @@ The following code example can be used to set this property
 {% tabs %}
 
 {% highlight C# %}
+
 //set FakeDragIndicator is true
 
 treeViewAdv.IsFakeDragIndicator = true;

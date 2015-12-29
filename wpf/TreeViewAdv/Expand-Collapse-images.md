@@ -20,6 +20,7 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv >
 
 <syncfusion:TreeViewItemAdv Header="My Computer" x:Name="item1" CollapsedImageSource="folder.png">
@@ -55,6 +56,7 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 {% tabs %}
 
 {% highlight C# %}
+
 // Set image for collapsed button
 
 item1.CollapsedImageSource = new BitmapImage(new Uri("/folder.png", UriKind.Relative));

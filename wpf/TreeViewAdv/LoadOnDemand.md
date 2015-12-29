@@ -11,13 +11,14 @@ documentation: ug
 The LoadOnDemand feature enables users to load items dynamically when a particular TreeViewItem is expanded. Hence the items are loaded on demand and reduce the loading time.
 
 1. To load items on demand: 
-  * LoadOnDemand event is used to load the sub-items when a particular item is expanded.
-  * LoadingHeader is used to display the text while sub-items are being loaded.
-  * IsLoadOnDemand value has to be set to true if the item is to be loaded on demand.
+  * **LoadOnDemand** event is used to load the sub-items when a particular item is expanded.
+  * **LoadingHeader** is used to display the text while sub-items are being loaded.
+  * **IsLoadOnDemand** value has to be set to true if the item is to be loaded on demand.
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv x:Name="treeViewAdv" LoadOnDemand="treeViewAdv_LoadOnDemand">
 
 <syncfusion:TreeViewItemAdv Header="Root1" IsLoadOnDemand="True" LoadingHeader="Loading....." />
@@ -26,7 +27,6 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 
 </syncfusion:TreeViewAdv>
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -34,6 +34,7 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 {% tabs %}
 
 {% highlight C# %}
+
 public partial class MainWindow : Window
 
 {

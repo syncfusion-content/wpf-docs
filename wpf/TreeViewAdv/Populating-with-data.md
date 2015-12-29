@@ -13,8 +13,8 @@ This section explains about populating TreeViewAdv with TreeView items using sev
 * Through XAML
 * Through Programmatically
 * Through DataBinding
-## Through XAML
 
+## Through XAML
 
 TreeViewAdv can be created in XAML as follows:
 
