@@ -15,6 +15,7 @@ The following code example illustrates how to set this property.
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv"  >
 
 <!-- Able to edit this node becuase IsEditable is true-->
@@ -52,6 +53,7 @@ The following code example illustrates how to set this property.
 {% tabs %}
 
 {% highlight C# %}
+
 //Set IsEditable is false
 
 item2.IsEditable = false;
@@ -64,10 +66,7 @@ item2.IsEditable = false;
 
 {% endtabs %}  
 
-
-
 ![](Node_editing_images/Node_editing_img1.jpeg)
-
 
 ## Setting Node in EditMode
 
@@ -76,6 +75,7 @@ We can also set a node to be in edit mode when the tree view loads. This is done
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv"  >
 
 <syncfusion:TreeViewItemAdv Name="item1" Header="Marital Status" IsInEditMode="True">
@@ -109,6 +109,7 @@ We can also set a node to be in edit mode when the tree view loads. This is done
 {% tabs %}
 
 {% highlight C# %}
+
 //Set edit mode
 
 item1.IsInEditMode = true;
@@ -123,7 +124,6 @@ item1.IsInEditMode = true;
 
 ![](Node_editing_images/Node_editing_img2.jpeg)
 
-
 ## Node Editing Event
 
 The following events are handled when the tree node is in Edit Mode.
@@ -136,6 +136,7 @@ The following events are handled when the tree node is in Edit Mode.
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv"  >
 
 <syncfusion:TreeViewItemAdv Name="treeviewitem" Header="Marital Status" BeforeItemEdit="treeviewitem_BeforeItemEdit" AfterItemEdit="treeviewitem_AfterItemEdit" EditKeyUp="treeviewitem_EditKeyUp" EditKeyDown="treeviewitem_EditKeyDown" >
@@ -162,7 +163,6 @@ The following events are handled when the tree node is in Edit Mode.
 
 </syncfusion:TreeViewAdv>
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -170,6 +170,7 @@ The following events are handled when the tree node is in Edit Mode.
 {% tabs %}
 
 {% highlight C# %}
+
 private void treeviewitem_BeforeItemEdit(object sender, EditModeChangeEventArgs e)
 
 {

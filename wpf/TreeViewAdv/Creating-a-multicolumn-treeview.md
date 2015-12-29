@@ -9,8 +9,11 @@ documentation: ug
 # Creating a MultiColumnTreeView
 
 TreeView control can be created with multiple columns by setting the MultiColumnEnable property to __true__. This is dependency property, which gets or sets the value defining whether items are in multicolumn mode. The default value is __false______
+
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with Enabling multiple column -->
 
 <syncfusion:TreeViewAdv  Name="treeViewAdv" MultiColumnEnable="True">
@@ -56,9 +59,13 @@ TreeView control can be created with multiple columns by setting the MultiColumn
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
+
 {% tabs %}
+
 {% highlight C# %}
+
 //Enable multiple column enable
 
 treeViewAdv.MultiColumnEnable = true;
@@ -66,17 +73,21 @@ treeViewAdv.MultiColumnEnable = true;
 {% endhighlight %}
 
 {% highlight VB %}
+
 {% endhighlight %}
+
 {% endtabs %}  
 
 ![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img1.jpeg)
 
-
 ## Header for MultiColumn
 
 TreeViewAdv allow user to set headers for individual columns using the Columns property. All the columns are defined in TreeViewColumnCollections.
+
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with Enabling multiple column -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
@@ -144,6 +155,7 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
@@ -151,10 +163,12 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 ## Auto-Resize of Columns in Multicolumn TreeView
 
-The width property of TreeViewColumn has changed from a double type to a GridLength type that can be set to the Auto or * values. When the column width is set as Auto, the desired size or minimum size will be set as the width of the column. When the width is set as __,__ __the__ __remaining__ __space__ __that__ __is__ __available__ __in__ __the__ __window__ __will__ __be__ __set__ __as__ __the__ __width__ __of__ __the__ __column____.__ __Similarly____,__ __the__ __value__ __can__ __be__ __set__ __as__ __0____.____3__, 2__,____128__, etc.
+The width property of TreeViewColumn has changed from a double type to a GridLength type that can be set to the Auto or * values. When the column width is set as Auto, the desired size or minimum size will be set as the width of the column. When the width is set as, the remaining space that is available in the window will be set as the width of the column. Similarly, the value can be set as 0.3,2,128, etc.
 
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with Enabling multiple column -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
@@ -220,16 +234,19 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img3.jpeg)
 
-
 ## Allowing Reordering Columns
 
 TreeViewAdv control now provides support to reorder the columns in the TreeViewAdv control by using the AllowsColumnReorder property. Enable this property using the below code.
+
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with Enabling multiple column -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
@@ -295,5 +312,6 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
 

@@ -16,9 +16,12 @@ The user can customize the business object that has to be displayed as TreeViewI
 
 We have generate Business object 
 
-Model class:
+**Model class:**
+
 {% tabs %}
+
 {% highlight C# %}
+
 public class Model : NotificationObject
 
 {
@@ -145,9 +148,12 @@ this.RaisePropertyChanged(() => this.Models);
 
 {% endtabs %}
 
-ViewModel class:
+**ViewModel class:**
+
 {% tabs %}
+
 {% highlight C# %}
+
 public class ViewModel : NotificationObject
 
 {
@@ -255,7 +261,9 @@ _treeitems = value;
 {% endtabs %}
 
 {% tabs %}
+
 {% highlight XAML %}
+
 <Window x:Class="ItemTemplateSample.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -294,12 +302,11 @@ Title="MainWindow" Height="350" Width="525">
 
 </Window>
 
-
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Customizing_data_templates_images/Customizing_data_templates_img1.jpeg)
-
 
 ## Item Template Selector
 
@@ -308,8 +315,11 @@ Different templates can be used for items based on specific constraints using th
 The following example illustrates this:
 
 1.Create the template selector as shown in the following code snippet:
+
 {% tabs %}
+
 {% highlight C# %}
+
 public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 {
@@ -351,6 +361,7 @@ return window.Resources["NormalTemplate"] as DataTemplate;
 2.Define the Data templates in the Window’s resources as follows:
 
 {% tabs %}
+
 {% highlight XAML %}
 <HierarchicalDataTemplate ItemsSource="{Binding Models}" x:Key="CheckableTemplate">
 
@@ -365,6 +376,7 @@ return window.Resources["NormalTemplate"] as DataTemplate;
 </HierarchicalDataTemplate>
 
 {% endhighlight %}
+
 {% endtabs %}
 
 3.Create the instance for the template selector in the Window’s resources as follows:
@@ -406,6 +418,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 {% tabs %}
 
 {% highlight XAML %}
+
 <DataTemplate x:Key="EditTemplate">
 
 <TextBox Text="{Binding Header}" FontStyle="Italic" FontWeight="Bold" />
@@ -421,6 +434,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" EditedItemTemplate="{StaticResource EditTemplate}" >
 
 <syncfusion:TreeViewAdv.ItemTemplate>
@@ -455,6 +469,7 @@ The following example explains how to choose the template at runtime:
 {% tabs %}
 
 {% highlight C# %}
+
 public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 {
@@ -498,6 +513,7 @@ return window.Resources["NormalEditTemplate"] as DataTemplate;
 {% tabs %}
 
 {% highlight XAML %}
+
 <DataTemplate  x:Key="CheckableEditTemplate">
 
 <TextBox Text="{Binding Header}" FontStyle="Italic" FontWeight="Bold" Foreground="Blue"/>
@@ -519,6 +535,7 @@ return window.Resources["NormalEditTemplate"] as DataTemplate;
 {% tabs %}
 
 {% highlight XAML %}
+
 <local:TreeViewAdvEditTemplateSelector x:Key="TreeViewAdvEditTemplateSelector"/>
 
 {% endhighlight %}
@@ -530,6 +547,7 @@ return window.Resources["NormalEditTemplate"] as DataTemplate;
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" EditedItemTemplateSelector="{StaticResource TreeViewAdvEditTemplateSelector}" >
 
 <syncfusion:TreeViewAdv.ItemTemplate>
@@ -560,6 +578,7 @@ User can customize the header of the treeview item by using HeaderTemplate using
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="ItemTemplateSample.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -624,6 +643,7 @@ TreeViewAdv allow user to customize the items under a column header by defining 
 {% tabs %}
 
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with Enabling multiple column -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">

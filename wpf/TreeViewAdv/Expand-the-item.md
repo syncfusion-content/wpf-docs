@@ -13,6 +13,7 @@ TreeViewAdv allow user to expand or collapse each item by enabling or disabling 
 {% tabs %}
 
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with expand the node -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv">
@@ -53,6 +54,7 @@ TreeViewAdv allow user to expand or collapse each item by enabling or disabling 
 {% tabs %}
 
 {% highlight C# %}
+
 // Enable IsExpanded
 
 treeViewItemAdv.IsExpanded = true;
@@ -66,7 +68,6 @@ treeViewItemAdv.IsExpanded = true;
 {% endtabs %}  
 
 ![](Expand_the_item_images/Expand_the_item_img1.jpeg)
-
 
 ## Animation Type
 
@@ -83,6 +84,7 @@ Use the following code to set this property.
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" AnimationType="Fade">
 
 <!-- Adding TreeViewItemAdv -->
@@ -121,6 +123,7 @@ Use the following code to set this property.
 {% tabs %}
 
 {% highlight C# %}
+
 // Set animation type as Fade.
 
 treeViewAdv.AnimationType = AnimationType.Fade;
@@ -148,6 +151,7 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" AnimationSpeed="2">
 
 <!-- Adding TreeViewItemAdv -->
@@ -185,6 +189,7 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 {% tabs %}
 
 {% highlight C# %}
+
 // Set animation speed
 
 treeViewAdv.AnimationSpeed = 2;
@@ -204,6 +209,7 @@ The Expand or Collapse operation in a TreeViewItemAdv leads to an animated actio
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="WpfApplication1.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
