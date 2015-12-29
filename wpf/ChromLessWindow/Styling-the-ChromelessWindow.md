@@ -24,7 +24,9 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="ChromelessWindow" Height="350" Width="525"  TitleBarTemplate="{StaticResource TitleBarTemplateKey}"   syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
+Title="ChromelessWindow" Height="350" Width="525"  TitleBarTemplate="{StaticResource TitleBarTemplateKey}"   syncfusion:SkinStorage.VisualStyle="Metro" 
+
+x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 
 </syncfusion:ChromelessWindow>
 
@@ -75,7 +77,9 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="ChromelessWindow" Height="350" Width="525" MaximizeButtonTemplate="{StaticResource MaxTemplateKey}" syncfusion:SkinStorage.VisualStyle="Metro"    x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+Title="ChromelessWindow" Height="350" Width="525" MaximizeButtonTemplate="{StaticResource MaxTemplateKey}" syncfusion:SkinStorage.VisualStyle="Metro"    
+
+x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 
 <Grid>
 
@@ -128,7 +132,7 @@ Similarly, the template for the desired button can be changed by using the corre
 
 ChromelessWindow can be customized by editing the default template. The default style can be downloaded from the following link
 
-http://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349)
 
 This default style need to be included in the App.xaml file of your application and the override this style as you desire.
 
@@ -157,11 +161,11 @@ The below example is illustrated to override the ChromelessWindow’s full style
 
 <Border Name="OuterBorder" Background="#F1401013" BorderThickness="2" CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}" BorderBrush="#401013">
 
-..
+......
 
-………
+......
 
-……………
+......
 
 <syncfusion:TitleBar Name="PART_TitleBar" Grid.Row="0" Template="{StaticResource TitleBarTemplateKey}" >
 
@@ -175,17 +179,17 @@ The below example is illustrated to override the ChromelessWindow’s full style
 
 </StackPanel>
 
-…………………………..
+......
 
-…………………………………
+......
 
 </Grid>
 
 </syncfusion:TitleBar>
 
-………………..
+......
 
-……………………………….
+......
 
 </Grid>
 
@@ -212,7 +216,9 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="ChromelessWindow" Height="350" Width="525"    Template="{StaticResource ChromelessWindowTemplate}"   syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
+Title="ChromelessWindow" Height="350" Width="525"    Template="{StaticResource ChromelessWindowTemplate}"   syncfusion:SkinStorage.VisualStyle="Metro" 
+
+x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 
 </syncfusion:ChromelessWindow>
 
