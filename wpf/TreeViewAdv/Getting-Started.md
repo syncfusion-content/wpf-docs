@@ -114,7 +114,7 @@ Title="MainWindow" Height="350" Width="525">
 
 ## Set VisualStyle
 
-* Ribbon supports various visual styles by using the SkinStorage. To apply Visual Studio style on the current layout, refer the below code to apply the value Metro to the VisualStyle property of the SkinStorage for the Window
+Ribbon supports various visual styles by using the SkinStorage. To apply Visual Studio style on the current layout, refer the below code to apply the value Metro to the VisualStyle property of the SkinStorage for the Window
 
 {% tabs %}
 
@@ -150,7 +150,6 @@ Title="MainWindow" Height="350" Width="525">
 </Grid>
 
 </Window>
-
 
 {% endhighlight %}
 
@@ -205,6 +204,7 @@ Title="MainWindow" Height="350" Width="525">
 {% tabs %}
 
 {% highlight C# %}
+
 public class TechnologyList : ObservableCollection<string>
 
 {
@@ -226,7 +226,6 @@ this.Add("UniversalWindows");
 }
 
 }
-
 
 {% endhighlight %}
 

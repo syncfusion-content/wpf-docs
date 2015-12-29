@@ -14,13 +14,14 @@ This section deals with the appearance of TreeViewAdv control and contains the f
 
 The TreeViewAdv appearance is customized by using the appearance properties available in the control. You can set the color for the Foreground, Background, Selected Item Foreground, Selected Item Background, MouseOver Foreground and MouseOver Background of TreeViewAdv control.
 
-* ####SelectedBackground: Gets or sets the background color of the selected treeview item
-* ####SelectedForeground: Gets or sets the foreground color of the selected treeview item
-* ####MouseOverForeground: Gets or sets the foreground color of the treeview item over which the mouse pointer moves
-* ####MouseOverBackground: Gets or sets the background color of the treeview item over which the mouse pointer moves
-* ####SelectionUnfocussedBackground: Gets or sets the background color of the selected treeview item when the item loses focus
+* **SelectedBackground:** Gets or sets the background color of the selected treeview item
+* **SelectedForeground:** Gets or sets the foreground color of the selected treeview item
+* **MouseOverForeground:** Gets or sets the foreground color of the treeview item over which the mouse pointer moves
+* **MouseOverBackground:** Gets or sets the background color of the treeview item over which the mouse pointer moves
+* **SelectionUnfocussedBackground:** Gets or sets the background color of the selected treeview item when the item loses focus
 
 The following code example illustrates the above property settings.
+
 {% tabs %} 
 {% highlight XAML %}
 <!-- Adding TreeViewAdv With Brushes -->
@@ -56,9 +57,13 @@ The following code example illustrates the above property settings.
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
-{% endtabs %} 
-{% tabs %}  
+
+{% endtabs %}
+ 
+{% tabs %}
+  
 {% highlight C# %}
+
 // Set MouseOverBackground property
 
 treeViewAdv.MouseOverBackground = Brushes.Aqua;
@@ -80,8 +85,11 @@ treeViewAdv.SelectedForeground = Brushes.Red;
 treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
 
 {% endhighlight %}
+
 {% highlight VB %}
+
 {% endhighlight %}
+
 {% endtabs %}  
 
 ![](Appearance_images/Appearance_img1.jpeg)
@@ -107,8 +115,11 @@ The various built-in visual styles are listed below.
 * VS2010
 * Metro
 * Transparent
+
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with visual style -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" syncfusion:SkinStorage.VisualStyle="Transparent">
@@ -154,88 +165,80 @@ The various built-in visual styles are listed below.
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
 
 {% tabs %}
+
 {% highlight C# %}
+
 //Setting the visaul style as Blend
 
 SkinStorage.SetVisualStyle(treeViewAdv, "Blend");
 
 {% endhighlight %}
+
 {% highlight VB %}
+
 {% endhighlight %}
+
 {% endtabs %}  
 
-Blend theme
+**Blend theme**
 
 ![](Appearance_images/Appearance_img2.jpeg)
 
-
-Office2003 theme
+**Office2003 theme**
 
 ![](Appearance_images/Appearance_img3.jpeg)
 
-
-Office2007Blue theme
+**Office2007Blue theme**
 
 ![](Appearance_images/Appearance_img4.jpeg)
 
-
-Office2007Black theme
+**Office2007Black theme**
 
 ![](Appearance_images/Appearance_img5.jpeg)
 
-
-Office2007Silver theme
+**Office2007Silver theme**
 
 ![](Appearance_images/Appearance_img6.jpeg)
 
-
-Office2010Blue theme
+**Office2010Blue theme**
 
 ![](Appearance_images/Appearance_img7.jpeg)
 
-
-Office2010Black theme
+**Office2010Black theme**
 
 ![](Appearance_images/Appearance_img8.jpeg)
 
-
-Office2010Silver theme
+**Office2010Silver theme**
 
 ![](Appearance_images/Appearance_img9.jpeg)
 
-
-ShinyBlue theme
+**ShinyBlue theme**
 
 ![](Appearance_images/Appearance_img10.jpeg)
 
-
-ShinyRed theme
+**ShinyRed theme**
 
 ![](Appearance_images/Appearance_img11.jpeg)
 
-
-ShinyOrange theme
+**ShinyOrange theme**
 
 ![](Appearance_images/Appearance_img12.jpeg)
 
-
-VS2010 theme
+**VS2010 theme**
 
 ![](Appearance_images/Appearance_img13.jpeg)
 
-
-Metro theme
+**Metro theme**
 
 ![](Appearance_images/Appearance_img14.jpeg)
 
-
-Transparent theme
+**Transparent theme**
 
 ![](Appearance_images/Appearance_img15.jpeg)
-
 
 ## Customizing Root Lines
 

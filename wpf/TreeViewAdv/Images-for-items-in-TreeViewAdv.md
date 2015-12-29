@@ -49,6 +49,7 @@ To add images to the left and right corner of the TreeViewItemAdv by using the L
 {% tabs %}
 
 {% highlight C# %}
+
 //Set image for left
 
 item1.LeftImageSource = new BitmapImage(new Uri("/Folder_Expanded.png", UriKind.RelativeOrAbsolute));
@@ -76,6 +77,7 @@ TreeViewAdv allow user to set the height and width of the TreeViewItemAdv images
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv >
 
 <syncfusion:TreeViewItemAdv x:Name="item1" ImageHeight="25" ImageWidth="25" Header="Windows Explorer" LeftImageSource="Folder_Expanded.png"  >
