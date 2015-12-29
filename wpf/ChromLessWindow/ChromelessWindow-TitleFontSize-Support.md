@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ChromelessWindow TitleFontSize Support
-description: ChromelessWindow TitleFontSize Support
+title: TitleFontSize Support
+description: TitleFontSize Support
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# ChromelessWindow TitleFontSize Support
+# TitleFontSize Support
 
 The FontSize of the ChromelessWindow title can be changed by using **TitleFontSize** property. By default its value is 12, to enable this functionality, change its value as desired
 

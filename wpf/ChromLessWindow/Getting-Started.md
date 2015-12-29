@@ -33,7 +33,9 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="MainWindow" Height="350" Width="525"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+Title="MainWindow" Height="350" Width="525"    
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 
 </Window>
 
@@ -54,7 +56,9 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="MainWindow" Height="350" Width="525"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+Title="MainWindow" Height="350" Width="525"    
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 
 
 </syncfusion:ChromelessWindow>
@@ -88,6 +92,20 @@ InitializeComponent();
 }
 
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Windows.Shared
+
+  Partial Public Class MainWindow
+  
+	  Inherits ChromelessWindow
+
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+  End Class
 
 {% endhighlight %}
 
