@@ -21,6 +21,7 @@ TreeViewAdv can be created in XAML as follows:
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv>
 
 <syncfusion:TreeViewItemAdv Header="Root1">
@@ -60,11 +61,14 @@ Include the following namespace to the using directives list to create TreeViewA
 {% tabs %}
 
 {% highlight C# %}
+
 using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.Windows.Tools.Controls
 
 {% endhighlight %}
 
@@ -75,6 +79,7 @@ You can create the TreeViewAdv as follows:
 {% tabs %}
 
 {% highlight C# %}
+
 TreeViewAdv treeviewAdv = new TreeViewAdv();
 
 TreeViewItemAdv root1 = new TreeViewItemAdv() { Header = "Root1" };
@@ -125,6 +130,52 @@ layout.Children.Add(treeviewAdv);
 
 {% highlight VB %}
 
+Dim treeviewAdv As New TreeViewAdv()
+
+Dim root1 As New TreeViewItemAdv() With {.Header = "Root1"}
+
+Dim subitem11 As New TreeViewItemAdv() With {.Header = "SubItem1"}
+
+Dim subitem12 As New TreeViewItemAdv() With {.Header = "SubItem2"}
+
+Dim subitem13 As New TreeViewItemAdv() With {.Header = "SubItem3"}
+
+Dim subitem14 As New TreeViewItemAdv() With {.Header = "SubItem4"}
+
+root1.Items.Add(subitem11)
+
+root1.Items.Add(subitem12)
+
+root1.Items.Add(subitem13)
+
+root1.Items.Add(subitem14)
+
+Dim root2 As New TreeViewItemAdv() With {.Header = "Root1"}
+
+Dim subitem21 As New TreeViewItemAdv() With {.Header = "SubItem1"}
+
+Dim subitem22 As New TreeViewItemAdv() With {.Header = "SubItem2"}
+
+Dim subitem23 As New TreeViewItemAdv() With {.Header = "SubItem3"}
+
+Dim subitem24 As New TreeViewItemAdv() With {.Header = "SubItem4"}
+
+root2.Items.Add(subitem21)
+
+root2.Items.Add(subitem22)
+
+root2.Items.Add(subitem23)
+
+root2.Items.Add(subitem24)
+
+treeviewAdv.Items.Add(root1)
+
+treeviewAdv.Items.Add(root2)
+
+'TreeViewAdv added the child of grid.
+
+layout.Children.Add(treeviewAdv)
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -142,6 +193,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% tabs %}
 
 {% highlight XAML %}
+
 <Products>
 
 <Product Name="Tools" >
@@ -191,12 +243,12 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window.Resources>
 
 <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Products"/>
 
 </Window.Resources>
-
 
 {% endhighlight %}
 
@@ -207,6 +259,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Product}" >
 
 <syncfusion:TreeViewAdv.ItemTemplate>
@@ -229,7 +282,6 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 ![](Populating_with_data_images/Populating_with_data_img1.jpeg)
 
-
 ### Binding to Object
 
 TreeViewAdv supports object binding. The following example illustrates data binding:
@@ -239,6 +291,7 @@ TreeViewAdv supports object binding. The following example illustrates data bind
 {% tabs %}
 
 {% highlight C# %}
+
 public class Model
 
 {
@@ -263,6 +316,24 @@ public ObservableCollection<Model> SubItems { get; set; }
 
 {% highlight VB %}
 
+Public Class Model
+
+
+Public Sub New()
+
+
+SubItems = New ObservableCollection(Of Model)()
+
+End Sub
+
+Public Property Header() As String
+
+Public Property IsCheckable() As Boolean
+
+Public Property SubItems() As ObservableCollection(Of Model)
+
+End Class
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -272,6 +343,7 @@ public ObservableCollection<Model> SubItems { get; set; }
 {% tabs %}
 
 {% highlight C# %}
+
 public class ViewModel
 
 {
@@ -334,6 +406,60 @@ Root.SubItems.Add(SubItem4);
 
 {% highlight VB %}
 
+Public Class ViewModel
+
+
+Public Sub New()
+
+
+TreeItems = New ObservableCollection(Of Model)()
+
+PopulateData()
+
+End Sub
+
+Public Property TreeItems() As ObservableCollection(Of Model)
+
+Private Sub PopulateData()
+
+
+Dim Root1 As New Model() With {.Header = "Root1"}
+
+PopulateSubItems(Root1)
+
+TreeItems.Add(Root1)
+
+Dim Root2 As New Model() With {.Header = "Root2"}
+
+PopulateSubItems(Root2)
+
+TreeItems.Add(Root2)
+
+End Sub
+
+Private Sub PopulateSubItems(ByVal Root As Model)
+
+
+Dim SubItem1 As New Model() With {.Header = Root.Header & " Item1"}
+
+Dim SubItem2 As New Model() With {.Header = Root.Header & " Item2"}
+
+Dim SubItem3 As New Model() With {.Header = Root.Header & " Item3"}
+
+Dim SubItem4 As New Model() With {.Header = Root.Header & " Item4"}
+
+Root.SubItems.Add(SubItem1)
+
+Root.SubItems.Add(SubItem2)
+
+Root.SubItems.Add(SubItem3)
+
+Root.SubItems.Add(SubItem4)
+
+End Sub
+
+End Class
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -343,6 +469,7 @@ Root.SubItems.Add(SubItem4);
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window.DataContext>
 
 <local:ViewModel />
@@ -358,6 +485,7 @@ Root.SubItems.Add(SubItem4);
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}">
 
 <syncfusion:TreeViewAdv.ItemTemplate>

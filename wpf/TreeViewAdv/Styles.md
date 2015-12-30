@@ -17,6 +17,7 @@ TreeViewAdv allow user to customize the style of the Drag Indicator which is use
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="ItemTemplateSample.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -111,7 +112,6 @@ Title="MainWindow" Height="350" Width="400">
 
 ![](Styles_images/Styles_img1.jpeg)
 
-
 ## Setting Expand Style   	
 
 The ExpanderStyle property enables to customize the appearance and style of expansion of the TreeViewAdv during the Expand or Collapse operation. The following code example illustrates how to set this property.
@@ -119,6 +119,7 @@ The ExpanderStyle property enables to customize the appearance and style of expa
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="ItemTemplateSample.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -239,7 +240,6 @@ Title="MainWindow" Height="350" Width="400">
 
 ![](Styles_images/Styles_img2.jpeg)
 
-
 ##  Setting Item Container Style
 
 To set the style for the item container, use ItemContainerStyle property. This dependency property can be applied to TreeViewAdv, as well as TreeViewItemAdv.
@@ -249,6 +249,7 @@ The following example can be used to set this property.
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window.Resources>
 
 <Style x:Key="TreeViewItemStyle" TargetType="{x:Type syncfusion:TreeViewItemAdv}">

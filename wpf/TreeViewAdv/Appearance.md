@@ -88,6 +88,27 @@ treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
 
 {% highlight VB %}
 
+' Set MouseOverBackground property
+
+treeViewAdv.MouseOverBackground = Brushes.Aqua
+
+' Set MouseOverForeground property
+
+treeViewAdv.MouseOverForeground = Brushes.Magenta
+
+' Set SelectedBackground property
+
+treeViewAdv.SelectedBackground = Brushes.Orange
+
+' Set SelectedForeground property
+
+treeViewAdv.SelectedForeground = Brushes.Red
+
+' Set SelectionUnfocussedBackcolor property
+
+treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold
+
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -180,6 +201,10 @@ SkinStorage.SetVisualStyle(treeViewAdv, "Blend");
 
 {% highlight VB %}
 
+'Setting the visaul style as Blend
+
+SkinStorage.SetVisualStyle(treeViewAdv, "Blend")
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -247,8 +272,11 @@ You can customize the Root lines color and pen of the TreeViewAdv.
 ### Line Color
 
 The color of the root lines, which connect different nodes in a TreeViewAdv control is changed by using the LineBrush property. Use the following code example to set the color of the root lines.
+
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv With show root lines and line brush -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" LineBrush="Red" ShowRootLines="True">
@@ -282,9 +310,13 @@ The color of the root lines, which connect different nodes in a TreeViewAdv cont
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
+
 {% tabs %}
+
 {% highlight C# %}
+
 // Show root lines
 
 treeViewAdv.ShowRootLines = true;
@@ -294,8 +326,19 @@ treeViewAdv.ShowRootLines = true;
 treeViewAdv.LineBrush = Brushes.Red;
 
 {% endhighlight %}
+
 {% highlight VB %}
+
+' Show root lines
+
+treeViewAdv.ShowRootLines = True
+
+' Set line brush
+
+treeViewAdv.LineBrush = Brushes.Red
+
 {% endhighlight %}
+
 {% endtabs %}  
 
 ![](Appearance_images/Appearance_img16.jpeg)
@@ -304,8 +347,11 @@ treeViewAdv.LineBrush = Brushes.Red;
 ### Line Pen
 
 The root lines which connect different nodes in a TreeViewAdv control are customized by using the LinePen property. This property specifies the pen color for a node line. To set the LinePen property, refer the below code
+
 {% tabs %}
+
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv With show root lines and line pen -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="True">
@@ -345,9 +391,13 @@ The root lines which connect different nodes in a TreeViewAdv control are custom
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
+
 {% endtabs %}
+
 {% tabs %}
+
 {% highlight c# %}
+
 // Show root lines
 
 treeViewAdv.ShowRootLines = true;
@@ -357,8 +407,19 @@ treeViewAdv.ShowRootLines = true;
 treeViewAdv.LinePen = new Pen(Brushes.Red, 1);
 
 {% endhighlight %}
+
 {% highlight VB %}
+
+' Show root lines
+
+treeViewAdv.ShowRootLines = True
+
+' Set line Pen
+
+treeViewAdv.LinePen = New Pen(Brushes.Red, 1)
+
 {% endhighlight %}
+
 {% endtabs %}  
 ![](Appearance_images/Appearance_img17.jpeg)
 

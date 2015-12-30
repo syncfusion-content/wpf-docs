@@ -62,6 +62,10 @@ item2.IsEditable = false;
 
 {% highlight VB %}
 
+'Set IsEditable is false
+
+item2.IsEditable = False
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -117,6 +121,10 @@ item1.IsInEditMode = true;
 {% endhighlight %}
 
 {% highlight VB %}
+
+'Set edit mode
+
+item1.IsInEditMode = True
 
 {% endhighlight %}
 
@@ -206,6 +214,34 @@ Debug.WriteLine("Down: " + e.Key);
 {% endhighlight %}
 
 {% highlight VB %}
+
+Private Sub treeviewitem_BeforeItemEdit(ByVal sender As Object, ByVal e As EditModeChangeEventArgs)
+
+
+Debug.WriteLine("BeforeItemEdit: old( " & e.OldValue & "), new( " & e.NewValue & ")")
+
+End Sub
+
+Private Sub treeviewitem_AfterItemEdit(ByVal sender As Object, ByVal e As EditModeChangeEventArgs)
+
+
+Debug.WriteLine("AfterItemEdit: old( " & e.OldValue & "), new( " & e.NewValue & ")")
+
+End Sub
+
+Private Sub treeviewitem_EditKeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
+
+
+Debug.WriteLine("Up: " & e.Key)
+
+End Sub
+
+Private Sub treeviewitem_EditKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+
+
+Debug.WriteLine("Down: " & e.Key)
+
+End Sub
 
 {% endhighlight %}
 

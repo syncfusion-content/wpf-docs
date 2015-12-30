@@ -13,6 +13,7 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 {% tabs %}
 
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv With show root lines -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="False">
@@ -45,7 +46,6 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 
 </syncfusion:TreeViewAdv>
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -53,6 +53,7 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 {% tabs %}
 
 {% highlight C# %}
+
 // Show root lines
 
 treeViewAdv.ShowRootLines = false;
@@ -60,6 +61,10 @@ treeViewAdv.ShowRootLines = false;
 {% endhighlight %}
 
 {% highlight VB %}
+
+' Show root lines
+
+treeViewAdv.ShowRootLines = False
 
 {% endhighlight %}
 
