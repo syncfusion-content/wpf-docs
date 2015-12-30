@@ -77,9 +77,7 @@ List of Properties which gets Serialized
     <tr>
         <td>
             Filters</td>
-        <td>
-            ObservableCollection <FilterExpression>
-        </td>
+        <td>{{ '`ObservableCollection(<FilterExpression>)`' | markdownify }}</td>
     </tr>
     <tr>
         <td>
@@ -96,31 +94,22 @@ List of Properties which gets Serialized
     <tr>
         <td>
             PivotCalculations</td>
-        <td>
-            ObservableCollection <PivotComputationInfo>
-        </td>
+        <td>{{ '`ObservableCollection(<PivotComputationInfo>)`' | markdownify }}</td>
     </tr>
     <tr>
         <td>
             PivotColumns</td>
-        <td>
-            ObservableCollection
-            <PivotItem>
-        </td>
+        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
     </tr>
     <tr>
         <td>
             PivotFields</td>
-        <td>
-            ObservableCollection <PivotItem>
-        </td>
+        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
     </tr>
     <tr>
         <td>
             PivotRows</td>
-        <td>
-            ObservableCollection <PivotItem>
-        </td>
+        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
     </tr>
     <tr>
         <td>
