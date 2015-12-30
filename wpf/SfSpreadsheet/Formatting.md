@@ -45,21 +45,14 @@ For selected range of cells,
 {% tabs %}
 {% highlight c# %}
 
-    var selectedRanges = spreadsheet.ActiveGrid.SelectedRanges;
+var selectedRanges = spreadsheet.ActiveGrid.SelectedRanges;
 
-    foreach (var range in selectedRanges)
-
-    {
-
-      string cell = GridExcelHelper.ConvertGridRangeToExcelRange(range,
-
-      spreadsheet.ActiveGrid);
-
-      spreadsheet.ActiveSheet.Range[cell].CellStyle.ColorIndex = ExcelKnownColors.Blue;
-
-      spreadsheet.ActiveGrid.InvalidateCell(range, true);
-
-    }
+foreach (var range in selectedRanges)
+{
+  string cell = GridExcelHelper.ConvertGridRangeToExcelRange(range, spreadsheet.ActiveGrid);
+  spreadsheet.ActiveSheet.Range[cell].CellStyle.ColorIndex = ExcelKnownColors.Blue;
+  spreadsheet.ActiveGrid.InvalidateCell(range, true);
+}
 
 {% endhighlight %}
 {% endtabs %}

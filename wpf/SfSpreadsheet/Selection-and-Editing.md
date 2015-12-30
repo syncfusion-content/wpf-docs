@@ -44,26 +44,26 @@ The SfSpreadsheet control provides support for Editing, you can modify and commi
 
 {% tabs %}
 {% highlight c# %}
-             
-    void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
-    {
-       foreach (var grid in args.GridCollection)
-        {
-          grid.CurrentCellBeginEdit += grid_CurrentCellBeginEdit;
 
-          grid.CurrentCellEndEdit += grid_CurrentCellEndEdit;
-        }
-    }
+void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
+{
+   foreach (var grid in args.GridCollection)
+   {
+      grid.CurrentCellBeginEdit += grid_CurrentCellBeginEdit;
 
-    void grid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
-    {
-      //Code          
-    }
+      grid.CurrentCellEndEdit += grid_CurrentCellEndEdit;
+   }
+}
+
+void grid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
+{
+    //Code          
+}
 	
-    void grid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
-    {
-      //Code         
-    }
+void grid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
+{
+    //Code         
+}
 
 {% endhighlight %}
 {% endtabs %}

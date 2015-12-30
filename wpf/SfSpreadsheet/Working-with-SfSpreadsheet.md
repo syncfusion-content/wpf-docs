@@ -56,32 +56,48 @@ spreadsheet.ActiveGrid
 
 When the workbook is loaded in the SfSpreadsheet, the [WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6340.html) Event is invoked and when the workbook is removed from SfSpreadsheet, the [WorkbookUnloaded](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6341.html) Event is invoked.
 
-You can also access the each SpreadsheetGrid in the SfSpreadsheet by invoking WorkbookLoaded Event of SfSpreadsheet. 
+You can also access the each SpreadsheetGrid in the SfSpreadsheet either by passing the particular sheet name in the GridCollection or by invoking WorkbookLoaded Event of SfSpreadsheet. 
+
+**By using Sheet Name**
+
+For your reference, setting the row and column count dynamically for the second sheet in the Workbook
 
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
+var sheet = spreadsheetControl.Workbook.Worksheets[1];
+spreadsheet.GridCollection[sheet.Name].RowCount = 50;
+spreadsheet.GridCollection[sheet.Name].ColumnCount = 12;
 
-    spreadsheet.WorkbookUnloaded += spreadsheet_WorkbookUnloaded;
+{% endhighlight %}
+{% endtabs %} 
 
-    void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
-    {
-      //Hook the events here
-         foreach (var grid in args.GridCollection)
-         {
-           grid.QueryRange += grid_QueryRange; 
-         }
-    }
+**By using Event**
 
-    void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
-    {
-      //Unhook the events here
-         foreach (var grid in args.GridCollection)
-         {
-           grid.QueryRange -= grid_QueryRange; 
-         }
-    }
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
+
+spreadsheet.WorkbookUnloaded += spreadsheet_WorkbookUnloaded;
+
+void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
+{
+  //Hook the events here
+   foreach (var grid in args.GridCollection)
+   {
+    grid.QueryRange += grid_QueryRange; 
+   }      
+}
+
+void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
+{
+  //Unhook the events here
+   foreach (var grid in args.GridCollection)
+   {
+    grid.QueryRange -= grid_QueryRange; 
+   }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -95,25 +111,23 @@ You can hook the events in WorksheetAdded Event and unhook or remove the objects
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.WorksheetAdded += spreadsheet_WorksheetAdded;
+spreadsheet.WorksheetAdded += spreadsheet_WorksheetAdded;
 
-    spreadsheet.WorksheetRemoved += spreadsheet_WorksheetRemoved;
+spreadsheet.WorksheetRemoved += spreadsheet_WorksheetRemoved;
 
-    void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
+void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
+{
+   //Unhook the events
+    var grid = spreadsheet.ActiveGrid;
+    grid.CurrentCellActivated -= grid_CurrentCellActivated;
+}
 
-    {
-       //Unhook the events
-       var grid = spreadsheet.ActiveGrid;
-       grid.CurrentCellActivated -= grid_CurrentCellActivated;
-    }
-
-    void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
-
-    {
-       //hook the events
-       var grid = spreadsheet.ActiveGrid;
-       grid.CurrentCellActivated += grid_CurrentCellActivated;
-    }
+void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
+{
+   //hook the events
+    var grid = spreadsheet.ActiveGrid;
+    grid.CurrentCellActivated += grid_CurrentCellActivated;
+}
 
 {% endhighlight %}
 {% endtabs %}
