@@ -24,7 +24,7 @@ Property Name</th><th>
 Description</th><th>
 Type</th><th>
 Value it Accepts</th><th>
-Reference Link<th></tr>
+Reference Link</th></tr>
 <tr>
 <td>
 CustomSummaryBaseCollection (ObservableCollection<(SummaryBase)>)</td><td>
