@@ -1,183 +1,183 @@
 ---
 layout: post
-title: ToolBarAdv-state
-description: toolbaradv state
+title: ToolBarAdv state
+description: Description about ToolBarAdv state for WPF
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
-
 # ToolBarAdv state
 
-ToolBarAdv can be set to docking, floating or hidden state as required.    
+ToolBarAdv provides different states such as Docking, Floating or Hidden. It can be change using the property `ToolBarState` of the ToolBarManager. 
 
-Following code illustrates how to set ToolBarAdv to floating state:
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight xml %}
+<syncfusion:ToolBarManager x:Name="toolBarManager" >
 
+<syncfusion:ToolBarManager.TopToolBarTray>
 
+<syncfusion:ToolBarTrayAdv >
 
-<shared:ToolBarManager x:Name="toolBarManager" >
+<syncfusion:ToolBarAdv ToolBarName="Standard" Band="0">
 
+<Button syncfusion:ToolBarAdv.Label="New Document" syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
+<Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
-            <shared:ToolBarManager.Resources>
+</Button>
 
-                <Style TargetType="Button">
+<Button syncfusion:ToolBarAdv.Label="Open Document" syncfusion:ToolBarAdv.Icon="Images/openHS.png">
 
-                    <Setter Property="Height" Value="20" />
+<Image Source="Images/openHS.png" Width="16" Height="16"/>
 
-                    <Setter Property="Width" Value="20"/>
+</Button>
 
-                </Style>
+<syncfusion:ToolBarAdv Band="1" ToolBarName="Extras" syncfusion:ToolBarManager.ToolBarState="Floating"  FloatingBarLocation="500,300">
 
-                <Style TargetType="ToggleButton">
+<Button syncfusion:ToolBarAdv.Label="Insert Picture" syncfusion:ToolBarAdv.Icon="Images/InsertPictureHS.png">
 
-                    <Setter Property="Height" Value="20"/>
+<Image Source="Images/InsertPictureHS.png" Width="16" Height="16"/>
 
-                    <Setter Property="Width" Value="20"/>
+</Button>
 
-                </Style>
+<Button syncfusion:ToolBarAdv.Label="Insert Hyperlink" syncfusion:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png">
 
+<Image Source="Images/InsertHyperlinkHS.png" Width="16" Height="16"/>
 
+</Button>
 
-            </shared:ToolBarManager.Resources>
+<Button syncfusion:ToolBarAdv.Label="Insert Table" syncfusion:ToolBarAdv.Icon="Images/TableHS.png">
 
-            <shared:ToolBarManager.TopToolBarTray>
+<Image Source="Images/TableHS.png" Width="16" Height="16"/>
 
-                <shared:ToolBarTrayAdv VerticalAlignment="Top">
+</Button>
 
-                    <shared:ToolBarAdv ToolBarName="Standard">
+</syncfusion:ToolBarAdv>
 
-                        <Button shared:ToolBarAdv.Label="New Document" shared:ToolBarAdv.Icon="Images/NewDocumentHS.png">
+</syncfusion:ToolBarAdv>
 
-                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
+</syncfusion:ToolBarTrayAdv>
 
-                        </Button>
+</syncfusion:ToolBarManager.TopToolBarTray>
 
-                        <Button  shared:ToolBarAdv.Label="Open Document" shared:ToolBarAdv.Icon="Images/openHS.png">
+<Grid >
 
-                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
+<Grid.RowDefinitions>
 
-                        </Button>
+<RowDefinition Height="*"/>
 
+<RowDefinition Height="Auto"/>
 
+</Grid.RowDefinitions>
 
-                    <shared:ToolBarAdv Band="1"   ToolBarName="Extras" shared:ToolBarManager.ToolBarState="Floating" FloatingBarLocation="500,300">
+<ScrollViewer >
 
-                        <Button shared:ToolBarAdv.Label="Insert Picture"  shared:ToolBarAdv.Icon="Images/InsertPictureHS.png">
+<Grid Margin="20">
 
-                            <Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/>
+<Border CornerRadius="2" Background="Black" Opacity="0.3" Width="600" Height="700">
 
-                        </Button>
+<Border.Effect>
 
-                        <Button  shared:ToolBarAdv.Label="Insert Hyperlink"  shared:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png">
+<BlurEffect Radius="15"/>
 
-                            <Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/>
+</Border.Effect>
 
-                        </Button>
+</Border>
 
-                        <Button  shared:ToolBarAdv.Label="Insert Table"  shared:ToolBarAdv.Icon="Images/TableHS.png">
+<RichTextBox Width="600" Height="700" Padding="20"></RichTextBox>
 
-                            <Image Source="Images/TableHS.png"  Width="16" Height="16"/>
+</Grid>
 
-                        </Button>
+</ScrollViewer>
 
+</Grid>
 
-
-                   </shared:ToolBarAdv>
-
-                </shared:ToolBarTrayAdv>
-
-
-
-            </shared:ToolBarManager.TopToolBarTray>
-
-
-
-            <Grid  >
-
-                <Grid.RowDefinitions>
-
-                    <RowDefinition Height="*"/>
-
-                    <RowDefinition Height="Auto"/>
-
-                </Grid.RowDefinitions>
-
-                <ScrollViewer >
-
-                    <Grid Margin="20">
-
-                        <Border CornerRadius="2" Background="Black" Opacity="0.3"   Width="600" Height="700">
-
-                            <Border.Effect>
-
-                                <BlurEffect Radius="15"/>
-
-                            </Border.Effect>
-
-                        </Border>
-
-                        <RichTextBox  Width="600" Height="700" Padding="20">
-
-
-
-                        </RichTextBox>
-
-                        </Grid>
-
-                </ScrollViewer>
-
-            </Grid>
-
-        </shared:ToolBarManager>
-
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-ToolBarAdv toolBar = new ToolBarAdv();
-
-            toolBar.FloatingBarLocation = new Point(500, 300);
-
-            ToolBarManager.SetToolBarState(toolBar, ToolBarState.Floating);
+</syncfusion:ToolBarManager>
 
 
 
 {% endhighlight %}
 
-![](ToolBarAdv-state_images/ToolBarAdv-state_img1.png)
+{% highlight c# %}
 
 
+ToolBarAdv toolBar = new ToolBarAdv(); 
 
-ToolBarAdv can be floated only when it is hosted in ToolBarManager. 
+toolBar.FloatingBarLocation = new Point(500, 300); 
 
-## Specifying location for floating ToolBarAdv
+ToolBarManager.SetToolBarState(toolBar, ToolBarState.Floating);
 
-You can change the location of the floating ToolBarAdv using the _FloatingBarLocation_ property. The following code illustrates this:
+Grid1.Children.Add(toolBar);
 
 
-
-{% highlight xml %}
-
-<shared:ToolBarAdv FloatingBarLocation="50,50"></shared:ToolBarAdv>
 
 {% endhighlight %}
 
+{% endtabs %}
+
+![http://help.syncfusion.com/wpf/toolbaradv/ToolBarAdv-state_images/ToolBarAdv-state_img1.png](ToolBarAdv-state_images/ToolBarAdv-state_img1.jpeg)
 
 
-{% highlight C# %}
+ToolBarAdv can be floated only when it is hosted in ToolBarManager.
 
+## Specifying location for floating ToolBarAdv.
+
+The location of the floating ToolBarAdv can be changed using the `FloatingBarLocation` property. The following code illustrates this
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:ToolBarAdv FloatingBarLocation="50,50"/>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
 
 
 ToolBarAdv toolBar = new ToolBarAdv();
 
-            toolBar.FloatingBarLocation = new Point(50, 50);
+toolBar.FloatingBarLocation = new Point(50, 50);
+
 
 
 {% endhighlight %}
 
+{% endtabs%}
 
+## Restrict Docking of ToolBarAdv for a specific position
+
+By default, the ToolBarAdv can be docked to any position. To restrict docking of ToolBarAdv to particular postion, the following properties can be used. Each will restrict docking at corresponding positions in ToolBarManager.
+
+* CanDockAtLeft—restricts docking at the left.
+* CanDockAtTop—restricts docking at the left.
+* CanDockAtRight—restricts docking at the left.
+* CanDockAtBottom—restricts docking at the left.
+
+Following code restricts docking at the top:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:ToolBarManager CanDockAtTop="False"/>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ToolBarManager toolBarManager = new ToolBarManager(); 
+
+toolBarManager.CanDockAtTop = false;
+
+
+
+{% endhighlight %}
+
+{% endtabs%}
