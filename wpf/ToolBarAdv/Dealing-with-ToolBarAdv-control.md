@@ -15,7 +15,7 @@ The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the 
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:ToolBarTrayAdv >
 
@@ -63,7 +63,7 @@ The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 ToolBarTrayAdv tray = new ToolBarTrayAdv();
 
 ToolBarAdv toolBar = new ToolBarAdv();
@@ -134,7 +134,7 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![http://help.syncfusion.com/wpf/toolbaradv/Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_images/Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_img1.png](Dealing-with-ToolBarAdv-control_images/Dealing-with-ToolBarAdv-control_img1.jpeg)
+![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img1.jpeg)
 
 
 ## ToolBarAdv with Overflow items
@@ -147,7 +147,7 @@ ToolBarAdv enables to set the overflow mode for each item.
 * OverflowMode.Never - Specified item will never be moved to the Overflow popup.
 * OverflowMode.AsNeeded - Specified item will be listed in the Overflow popup if required.
 
-![http://help.syncfusion.com/wpf/toolbaradv/ToolBarAdv-with-Overflow-items_images/ToolBarAdv-with-Overflow-items_img1.png](Dealing-with-ToolBarAdv-control_images/Dealing-with-ToolBarAdv-control_img2.jpeg)
+![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
 
 
 ## Show or hide Gripper
@@ -158,14 +158,14 @@ Following code illustrates how to hide the gripper:
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:ToolBarAdv GripperVisibility="Collapsed"/>
 
 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ToolBarAdv toolBar = new ToolBarAdv();
 
@@ -179,7 +179,7 @@ toolBar.GripperVisibility = Visibility.Collapsed;
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control_images/Dealing-with-ToolBarAdv-control_img3.jpeg)
+![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img3.jpeg)
 
 
 ## Orientation of ToolBarTrayAdv
@@ -235,7 +235,7 @@ ToolBarAdv provide two different orientation support such as Horizontal and Vert
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ToolBarTrayAdv tray = new ToolBarTrayAdv();
 
@@ -271,7 +271,7 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![http://help.syncfusion.com/wpf/toolbaradv/Orientation-of-ToolBarTrayAdv_images/Orientation-of-ToolBarTrayAdv_img1.png](Dealing-with-ToolBarAdv-control_images/Dealing-with-ToolBarAdv-control_img4.jpeg)
+![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img4.jpeg)
 
 
 ## Add or Remove buttons
@@ -311,7 +311,7 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 ToolBarTrayAdv tray = new ToolBarTrayAdv();
 
 ToolBarAdv toolBar = new ToolBarAdv();
@@ -356,7 +356,7 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![http://help.syncfusion.com/wpf/toolbaradv/Add-or-Remove-buttons_images/Add-or-Remove-buttons_img1.png](Dealing-with-ToolBarAdv-control_images/Dealing-with-ToolBarAdv-control_img5.jpeg)
+![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
 
 
 ## Hidding the ToolBarItem
@@ -411,6 +411,6 @@ To hide the particular ToolBarItem, the `IsAvailable` an attached property of th
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control_images/Dealing-with-ToolBarAdv-control_img6.jpeg)
+![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img6.jpeg)
 
 

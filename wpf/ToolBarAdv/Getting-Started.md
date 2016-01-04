@@ -24,7 +24,7 @@ The following ways explains how to add ToolBarAdv control using XAML code:
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Window x:Class="Application_New.MainWindow"
 
@@ -45,7 +45,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
 
@@ -59,7 +59,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ToolBarAdv tool = new ToolBarAdv();
 
@@ -79,7 +79,7 @@ tool.Height = 50;
 
 ## Appearance and Structure of the Control
 
-![http://help.syncfusion.com/wpf/toolbaradv/Getting-Started_images/Getting-Started_img2.png](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started-images/Getting-Started-img1.jpeg)
 
 
 * The Overflow button is a toggle button that displays on clicking the Overflow panel.

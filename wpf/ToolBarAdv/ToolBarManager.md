@@ -22,7 +22,7 @@ The following code illustrates how to place the ToolBarAdv at the top:
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:ToolBarManager x:Name="toolBarManager" >
 
 <syncfusion:ToolBarManager.Resources>
@@ -75,7 +75,7 @@ The following code illustrates how to place the ToolBarAdv at the top:
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ToolBarAdv toolBar = new ToolBarAdv();
 
