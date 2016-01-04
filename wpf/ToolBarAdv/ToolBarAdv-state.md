@@ -12,7 +12,7 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:ToolBarManager x:Name="toolBarManager" >
 
@@ -100,7 +100,7 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 ToolBarAdv toolBar = new ToolBarAdv(); 
@@ -117,7 +117,7 @@ Grid1.Children.Add(toolBar);
 
 {% endtabs %}
 
-![http://help.syncfusion.com/wpf/toolbaradv/ToolBarAdv-state_images/ToolBarAdv-state_img1.png](ToolBarAdv-state_images/ToolBarAdv-state_img1.jpeg)
+![](ToolBarAdv-state-images/ToolBarAdv-state-img1.jpeg)
 
 
 ToolBarAdv can be floated only when it is hosted in ToolBarManager.
@@ -128,7 +128,7 @@ The location of the floating ToolBarAdv can be changed using the `FloatingBarLo
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:ToolBarAdv FloatingBarLocation="50,50"/>
 
@@ -136,7 +136,7 @@ The location of the floating ToolBarAdv can be changed using the `FloatingBarLo
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 ToolBarAdv toolBar = new ToolBarAdv();
@@ -162,7 +162,7 @@ Following code restricts docking at the top:
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:ToolBarManager CanDockAtTop="False"/>
 
@@ -170,7 +170,7 @@ Following code restricts docking at the top:
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ToolBarManager toolBarManager = new ToolBarManager(); 
 

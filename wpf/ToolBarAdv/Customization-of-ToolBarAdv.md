@@ -15,7 +15,7 @@ The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle prop
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:ToolBarManager FloatingToolBarStyle="{StaticResource toolstyle}" >
 
 <syncfusion:ToolBarTrayAdv  >
@@ -70,7 +70,7 @@ In ToolBarAdv, style for FrameworkElement will be picked from a ResourceDictiona
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ToolBarAdv toolBar = new ToolBarAdv();
 
@@ -110,7 +110,7 @@ For example, the Blend style applied for the ToolBarAdv control shows in the 
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 <Window x:Class="WpfApplication4.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -175,6 +175,6 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 
 {% endtabs %}
 
-![](Customization-of-ToolBarAdv_images/Customization-of-ToolBarAdv_img1.jpeg)
+![](Customization-of-ToolBarAdv-images/Customization-of-ToolBarAdv-img1.jpeg)
 
 
