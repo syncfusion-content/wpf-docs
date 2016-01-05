@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Advanced Features | DockingManager | WPF | Syncfusion
 description: Advanced features of DockingManager
