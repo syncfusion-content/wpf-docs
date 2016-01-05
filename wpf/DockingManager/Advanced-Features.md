@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Advanced Features | DockingManager | WPF | Syncfusion
 description: Advanced features of DockingManager
@@ -642,7 +642,7 @@ How to Clearing StatePersistance Entries
 
 ## Hosting Windows Form control in DockingManager
 
-Hosting a Windows Form Host in DockingManager is an easy process for which you need to set UseIntropCompaitableMode=true in order to use Winform controls with in DockingManager. The following codes show how to use webbrowser control with in DockingManager.
+Hosting a Windows Form Host in DockingManager is an easy process for which you need to set UseInteropCompatibilityMode=true in order to use Winform controls with in DockingManager. The following codes show how to use webbrowser control with in DockingManager.
 
 {% tabs %}
 
