@@ -62,7 +62,7 @@ gets or sets zooming toolkit visibility</td></tr>
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartArea  sfchart:ChartZoomingToolkit.ZoomInButtonVisibility="Collapsed"
 
@@ -201,7 +201,7 @@ this.Chart1.Areas[0].PrimaryAxis.ZoomPosition = 5;
 
 Zooming using mouse can be disabled for a particular axis by using the EnableZooming property. The following code example illustrates how zooming is disabled only for the Primary axis of the ChartArea while it is enabled for the other axes.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea.PrimaryAxis>
 
@@ -282,7 +282,7 @@ N> Series.IsZoomable is used to enable/disable the zooming of the Axis associate
 When an individual series in the chart is zoomed, the opacity of the series which have not been zoomed can be controlled, so that the series which is zoomed is clearly visible. This can be done by using the InactiveSeriesOpacityOnZoom property of the ChartSeries.
 
 The following lines of code can be used to change the opacity of an inactive series while zooming.
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" InactiveSeriesOpacityOnZoom="0.65" Data="1 1 2 2 3 3 4 4 5 5 6 6"/>
 
@@ -297,7 +297,7 @@ Fractional Values in Axis while Zooming
 On zooming the chart, the ChartAxis Labels appear with fractional values. This can be restricted by using the Axis.IsFractionEnabledOnZoom property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart Name="Chart1" Height="300" Width="400">
 
@@ -340,7 +340,7 @@ Add Zooming and Panning to the chart, by using the following code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
  
  <syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10">
 
@@ -369,7 +369,7 @@ The following topics discuss highlight data points and selecting data points:
 ## ToolTip
 
 ToolTip can be shown on various sections of a chart control such as chart, chart area, chart legend and chart series. Refer to the following code example for creating and assigning the tooltip to the chart.
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- Sets Tooltips for a chart-->
 
@@ -441,7 +441,7 @@ Series.ShowToolTip = true;
 ### Custom ToolTip for a Series
 
 You can set custom tooltips for the chart series. Associate a custom tooltip text with appealing appearance to the chart series using the following code example.
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -556,7 +556,7 @@ The following code illustrates how to exclude the toolbar while printing and sav
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart ShowToolBarOnPrintAndSave="False">
 
@@ -584,7 +584,7 @@ The following code illustrates how to include the toolbar while printing and sav
 {% endtabs %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart ShowToolBarOnPrintAndSave="True">
 
@@ -955,7 +955,7 @@ By setting ContextMenuType to DefaultWithCustom, the menu item is added along wi
 
 The following code illustrates this.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="DefaultWithCustom">                <syncfusion:ChartArea.CustomContextMenuItems>
 
@@ -978,7 +978,7 @@ The following code illustrates this.
 ### Adding Menu Items as a New List
 
 By setting ContextMenuType to Custom, menu items are added as a new list.
-{% highlight xml %}
+{% highlight xaml %}
  
 <syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="Custom">
 
@@ -1167,7 +1167,7 @@ Chart1.Areas[0].AllowSegmentDragDrop = true;
 
 {% endhighlight  %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
         <sync:Chart x:Name="Chart1">
@@ -1302,21 +1302,24 @@ Method </th><th>
 Description </th><th>
 Parameters </th><th>
 Type </th><th>
-Return Type </th></tr>
+Return Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Serialize </td><td>
 Serializes tde Chart control into XAML string.</td><td>
 Public void Serialize()</td><td>
 N/A</td><td>
-string </td></tr>
+string </td><td>
+{{ '`Serialize`' | markdownify }}</td></tr>
 <tr>
 <td>
 Deserialize</td><td>
+Deserializes tde string tdat is being passed as parameter into Chart object. Returns null if tde string parameter does not represent Chart object.</td><td>
 Public object Deserialize(string)</td><td>
 N/A</td><td>
 object</td><td>
-{{ '[Deserialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx)' | markdownify }}</td></tr>
+{{ '`Deserialize`' | markdownify }}</td></tr>
 </table>
 
 ### Sample Link
@@ -1345,8 +1348,7 @@ Adding Serialization to an Application
 The following code example explains the serialization of the Chart control.
 {% highlight csharp %}
 
-       string Serializedstring =  Chart1.Serialize();
-
+string Serializedstring =  Chart1.Serialize();
 
 {% endhighlight  %}
 
@@ -1361,12 +1363,13 @@ _Serialized XAML string representing Essential Chart WPF_
 ### Deserialize Chart control
 
 The following code example explains the deserialization of the Chart control.
-{% highlight csharp %}
 
+{% highlight csharp %}
 Chart DeserializedChartControl = new Chart();
 
 DeserializedChartControl = DeserializedChartControl.Deserialize(Serializedstring) as Chart;
 {% endhighlight  %}
+
 The Chart1 in above code example represents the Chart object, and Serialized string in the above code example needs to be XAML representation of a Chart object. If the string passed as a parameter to this method does not represent the Chart object, then the method returns Null value. 
 
 ## Property Dialog for Chart
@@ -1528,7 +1531,7 @@ By clicking the Properties Tool Item in the Toolbar, the property settings dia
 You can include a custom tab to the property window in your application easily by adding a tab to the PropertyWindowTabs property. The following code example explains adding custom tab to the property window through XAML and in C#.
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1">
 
@@ -1625,7 +1628,7 @@ NA</td></tr>
 To enable AutoScrolling 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
        <syncfusion:ChartArea.PrimaryAxis>
