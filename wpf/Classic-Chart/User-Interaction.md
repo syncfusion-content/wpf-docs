@@ -1311,7 +1311,7 @@ Serializes tde Chart control into XAML string.</td><td>
 Public void Serialize()</td><td>
 N/A</td><td>
 string </td><td>
-{{ '[Serialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx)' | markdownify }}</td></tr>
+{{ '`Serialize`' | markdownify }}</td></tr>
 <tr>
 <td>
 Deserialize</td><td>
@@ -1319,7 +1319,7 @@ Deserializes tde string tdat is being passed as parameter into Chart object. Ret
 Public object Deserialize(string)</td><td>
 N/A</td><td>
 object</td><td>
-{{ '[Deserialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx)' | markdownify }}</td></tr>
+{{ '`Deserialize`' | markdownify }}</td></tr>
 </table>
 
 ### Sample Link
@@ -1348,8 +1348,7 @@ Adding Serialization to an Application
 The following code example explains the serialization of the Chart control.
 {% highlight csharp %}
 
-       string Serializedstring =  Chart1.Serialize();
-
+string Serializedstring =  Chart1.Serialize();
 
 {% endhighlight  %}
 
@@ -1364,12 +1363,13 @@ _Serialized XAML string representing Essential Chart WPF_
 ### Deserialize Chart control
 
 The following code example explains the deserialization of the Chart control.
-{% highlight csharp %}
 
+{% highlight csharp %}
 Chart DeserializedChartControl = new Chart();
 
 DeserializedChartControl = DeserializedChartControl.Deserialize(Serializedstring) as Chart;
 {% endhighlight  %}
+
 The Chart1 in above code example represents the Chart object, and Serialized string in the above code example needs to be XAML representation of a Chart object. If the string passed as a parameter to this method does not represent the Chart object, then the method returns Null value. 
 
 ## Property Dialog for Chart
