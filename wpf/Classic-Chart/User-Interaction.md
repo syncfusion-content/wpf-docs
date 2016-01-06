@@ -282,7 +282,7 @@ N> Series.IsZoomable is used to enable/disable the zooming of the Axis associate
 When an individual series in the chart is zoomed, the opacity of the series which have not been zoomed can be controlled, so that the series which is zoomed is clearly visible. This can be done by using the InactiveSeriesOpacityOnZoom property of the ChartSeries.
 
 The following lines of code can be used to change the opacity of an inactive series while zooming.
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" InactiveSeriesOpacityOnZoom="0.65" Data="1 1 2 2 3 3 4 4 5 5 6 6"/>
 
@@ -297,7 +297,7 @@ Fractional Values in Axis while Zooming
 On zooming the chart, the ChartAxis Labels appear with fractional values. This can be restricted by using the Axis.IsFractionEnabledOnZoom property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart Name="Chart1" Height="300" Width="400">
 
