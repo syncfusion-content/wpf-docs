@@ -9,7 +9,17 @@ documentation: ug
 
 # Overview
 
-Report Writer is a class library that enables the user to render reports defined in Microsoft’s RDL format (2008 or 2008 R2) as PDF, Word, or Excel documents. Using Report Writer, you can convert a report that will have tabular, graphical or free-form reports, which make use of relational, multi-dimensional, XML, and object data sources.
+Report Writer is a class library that enables the user to render reports defined in Microsoft’s RDL format (2008 or 2008 R2) as PDF, Word, Excel or HTML documents. 
 
-The user can export or render reports that contain tabular, graphical, or free-form reports as PDF, Word, or Excel documents.
+## Key Features
+
+* Provides support for various chart types that include Area, Bar, Column, Pie, Funnel, Radar, Line and so on. 
+
+* Provides support for both Matrix and Table 
+
+* Provides support for both single, and multi-level row groupings and column groupings. 
+
+* Provides support for other common controls such as Textbox, Image, Rectangle, Line and both Circular and Linear Gauges. 
+
+* Provides support for report parameter.
 
