@@ -1,23 +1,15 @@
 ---
 layout: post
-title: Saving the RDL Reports as PDF Word and Excel Documents | ReportWriter | WPF | Syncfusion
-description: saving the rdl reports as pdf, word, and excel documents
+title: Report Writer API | ReportWriter | WPF | Syncfusion
+description: report writer api
 platform: wpf
 control: ReportWriter
 documentation: ug
 ---
 
-# Saving the RDL Reports as PDF, Word, and Excel Documents
+# Report Writer API
 
-Essential Report Writer provides support for saving a report as a PDF, Word, or Excel document with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature.
-
-Use Case Scenario
-
-This feature is very useful in exporting the generated report as a PDF, Word, or Excel document.
-
-## Constructors, Properties and Methods Tables
-
-### Constructors
+## Constructors
 
 <table>
 <tr>
@@ -46,8 +38,7 @@ ReportWriter(stream, ReportDataSourceCollection)</td><td>
 Initializes a new instance of the ReportWriter with the stream of the report and data source collection.</td></tr>
 </table>
 
-
-### Properties
+## Properties
 
 <table>
 <tr>
@@ -80,7 +71,7 @@ ReportServerUrl</td><td>
 Gets or sets the report server URL.</td></tr>
 </table>
 
-### Methods
+## Methods
 
 <table>
 <tr>
@@ -90,27 +81,42 @@ Description</th></tr>
 <tr>
 <td>
 GetDataSetNames()</td><td>
-Returns the names of the data set as IList<string>.</td></tr>
+Returns the names of the data set as IList &lt;string&gt;.</td></tr>
 <tr>
 <td>
 GetParameters()</td><td>
 Returns the parameters of the report as ReportParameterInfoCollection.</td></tr>
 <tr>
 <td>
-SetParameters(IEnumberable<ReportParameters>)</td><td>
+SetParameters(IEnumberable&lt;ReportParameters&gt;)</td><td>
 Sets the parameters of the report.</td></tr>
 <tr>
 <td>
 LoadReport(stream)</td><td>
-Loads the report  with the specified stream that contains the RDL contents.</td></tr>
+Loads the report with the specified stream that contains the RDL contents.</td></tr>
 <tr>
 <td>
 Save(string,writertype)</td><td>
-Saves the report as a PDF, Word, or Excel document in the mentioned path.</td></tr>
+Saves the report as a PDF, Word, Excel and Html documents in the mentioned path.</td></tr>
 <tr>
 <td>
 Save(stream)</td><td>
-Saves the report as a PDF, Word, or Excel document in the stream.</td></tr>
+Saves the report as a PDF, Word, Excel and Html documents in the stream.</td></tr>
 </table>
 
+## Events
 
+<table>
+<tr><th>
+Events</th><th>
+Description </th></tr>
+<tr><td>
+ReportError</td><td>
+This event is triggered when Report throws Error.</td></tr>
+<tr><td>
+ExportCompleted</td><td>
+This event is triggered when export is completed.</td></tr>
+<tr><td>
+SubreportProcessing</td><td>
+This event is triggered when the report is RDLC and contains with sub report.</td></tr>
+</table>
