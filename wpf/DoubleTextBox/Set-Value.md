@@ -3,7 +3,7 @@ layout: post
 title: Set the Value for DoubleTextBox
 description: Learn how to set the values in DoubleTextBox control for WPF
 platform: wpf
-control:DoubleTextBox
+control: DoubleTextBox
 documentation: ug
 ---
 
