@@ -3,7 +3,7 @@ layout: post
 title: Overview of Syncfusion ToolBarAdv control for WPF
 description: Features overview of ToolBarAdv control for WPF
 platform: wpf
-control:ToolBarAdv
+control: ToolBarAdv
 documentation: ug
 ---
 # Overview
