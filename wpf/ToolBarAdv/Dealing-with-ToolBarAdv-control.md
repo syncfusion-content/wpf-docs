@@ -291,13 +291,15 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 
 <syncfusion:ToolBarAdv EnableAddRemoveButton="True" >
 
-<Button syncfusion:ToolBarAdv.Label="New Document" syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png">
+<Button syncfusion:ToolBarAdv.Label="New Document"
+        syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
 <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
 </Button>
 
-<Button syncfusion:ToolBarAdv.Label="Open Document" syncfusion:ToolBarAdv.Icon="Images/openHS.png">
+<Button syncfusion:ToolBarAdv.Label="Open Document"
+        syncfusion:ToolBarAdv.Icon="Images/openHS.png">
 
 <Image Source="Images/openHS.png" Width="16" Height="16"/>
 
@@ -385,7 +387,8 @@ To hide the particular ToolBarItem, the `IsAvailable` an attached property of th
 
 <Button>
 
-<Image Source="Images\InsertPictureHS.png" Width="16" Height="16" syncfusion:ToolBarAdv.IsAvailable="False"/>
+<Image Source="Images\InsertPictureHS.png" Width="16"
+       Height="16"syncfusion:ToolBarAdv.IsAvailable="False"/>
 
 </Button>
 
