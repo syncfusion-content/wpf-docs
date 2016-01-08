@@ -1,7 +1,7 @@
 ---
 layout: post
-title:Add gridlines behind nodes and connectors to ease alignments.
-description:How to add gridlines behind Nodes and Connectors?
+title: Add gridlines behind nodes and connectors to ease alignments.
+description: How to add gridlines behind Nodes and Connectors?
 platform: wpf
 control: SfDiagram
 documentation: ug
