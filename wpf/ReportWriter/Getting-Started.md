@@ -92,13 +92,6 @@ The ReportWriter has support to view and save the RDL reports. The following cod
    reportWriter.Save("ProductCatalog.xls", WriterFormat.Excel);
    ~~~
    
-   ~~~ vbnet
-   Dim reportPath As String =  "..\ReportTemplate\Product Catalog.rdl" 
-   Dim reportWriter As ReportWriter =  New ReportWriter(reportPath) 
-   reportWriter.ReportProcessingMode = ProcessingMode.Remote
-   reportWriter.Save("ProductCatalog.xls", WriterFormat.Excel)
-   ~~~
-   
 2. Run the application. The following output displays exported report in Excel format.
 
    ![](Getting-Started_images/Getting-Started_img3.png) 
@@ -114,13 +107,6 @@ The ReportWriter has support to view and save the RDLC reports. The following co
    ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
    reportWriter.ReportProcessingMode = ProcessingMode.Local;
    reportWriter.Save("ProductCatalog.doc", WriterFormat.WORD);
-   ~~~
-   
-   ~~~ vbnet
-   Dim reportPath As String =  "..ReportTemplate\RDLC\ProductCatalog.rdlc" 
-   Dim reportWriter As ReportWriter =  New ReportWriter(reportPath,dataSources) 
-   reportWriter.ReportProcessingMode = ProcessingMode.Local
-   reportWriter.Save("ProductCatalog.doc", WriterFormat.WORD)
    ~~~
    
 2. Set Datasources to the RDLC report assigned in reportpath.
