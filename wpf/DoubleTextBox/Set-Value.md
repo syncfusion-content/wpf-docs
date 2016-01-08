@@ -25,7 +25,7 @@ N> Do not use the Text property to set the value for the DoubleTextBox. Use only
 
 {% endhighlight %}
 
-{% endtabs % }
+{% endtabs %}
 
 {% tabs %}
 
