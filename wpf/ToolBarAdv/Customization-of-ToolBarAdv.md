@@ -66,7 +66,7 @@ The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle prop
 
 ## Customize FrameworkElement’s Style
 
-In ToolBarAdv, style for FrameworkElement will be picked from a ResourceDictionary assigned in the ControlsResourceDictionary property of ToolBarAdv__.__
+In ToolBarAdv, style for FrameworkElement will be picked from a ResourceDictionary assigned in the ControlsResourceDictionary property of ToolBarAdv.
 
 {% tabs %}
 

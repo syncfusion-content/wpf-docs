@@ -22,33 +22,40 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
 
 <syncfusion:ToolBarAdv ToolBarName="Standard" Band="0">
 
-<Button syncfusion:ToolBarAdv.Label="New Document" syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png">
+<Button syncfusion:ToolBarAdv.Label="New Document"
+        syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
 <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
 </Button>
 
-<Button syncfusion:ToolBarAdv.Label="Open Document" syncfusion:ToolBarAdv.Icon="Images/openHS.png">
+<Button syncfusion:ToolBarAdv.Label="Open Document"
+        syncfusion:ToolBarAdv.Icon="Images/openHS.png">
 
 <Image Source="Images/openHS.png" Width="16" Height="16"/>
 
 </Button>
 
-<syncfusion:ToolBarAdv Band="1" ToolBarName="Extras" syncfusion:ToolBarManager.ToolBarState="Floating"  FloatingBarLocation="500,300">
+<syncfusion:ToolBarAdv Band="1" ToolBarName="Extras"
+            syncfusion:ToolBarManager.ToolBarState="Floating"
+			FloatingBarLocation="500,300">
 
-<Button syncfusion:ToolBarAdv.Label="Insert Picture" syncfusion:ToolBarAdv.Icon="Images/InsertPictureHS.png">
+<Button syncfusion:ToolBarAdv.Label="Insert Picture"
+        syncfusion:ToolBarAdv.Icon="Images/InsertPictureHS.png">
 
 <Image Source="Images/InsertPictureHS.png" Width="16" Height="16"/>
 
 </Button>
 
-<Button syncfusion:ToolBarAdv.Label="Insert Hyperlink" syncfusion:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png">
+<Button syncfusion:ToolBarAdv.Label="Insert Hyperlink"
+        syncfusion:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png">
 
 <Image Source="Images/InsertHyperlinkHS.png" Width="16" Height="16"/>
 
 </Button>
 
-<Button syncfusion:ToolBarAdv.Label="Insert Table" syncfusion:ToolBarAdv.Icon="Images/TableHS.png">
+<Button syncfusion:ToolBarAdv.Label="Insert Table"
+        syncfusion:ToolBarAdv.Icon="Images/TableHS.png">
 
 <Image Source="Images/TableHS.png" Width="16" Height="16"/>
 
@@ -76,7 +83,8 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
 
 <Grid Margin="20">
 
-<Border CornerRadius="2" Background="Black" Opacity="0.3" Width="600" Height="700">
+<Border CornerRadius="2" Background="Black"
+        Opacity="0.3" Width="600" Height="700">
 
 <Border.Effect>
 
