@@ -20,12 +20,12 @@ Header cell context menu will be shown while right-clicking on the expander cell
 Enabling UI-level expand/collapse operations will allows us to expand and collapse the particular block, entire field,  entire row or column individually. 
 
 
-                                                Property Table
+Property Table
 
 <table>
 <tr>
 <th>
-Property </th><th>
+Property</th><th>
 Description </th><th>
 Type</th><th>
 Value it Accepts</th><th>
@@ -97,7 +97,7 @@ public partial class MainWindow: Window {
 Programmatically, we can expand/collapse any number of rows or columns. This can be done using the following methods.
 
 
-                                                 Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -108,13 +108,13 @@ Parameters </th><th>
 Return Type </th></tr>
 <tr>
 <td>
-ExpandRow(string)  </td><td>
+ExpandRow(string)</td><td>
 Expands the group for the given row UniqueText.</td><td>
 string </td><td>
 void </td></tr>
 <tr>
 <td>
-ExpandColumn (string)</td><td>
+ExpandColumn(string)</td><td>
 Expands the group for the given column UniqueText.</td><td>
 string</td><td>
 void</td></tr>
@@ -126,50 +126,50 @@ string</td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseColumn (string) </td><td>
+CollapseColumn(string)</td><td>
 Collapse the group for the given column UniqueText.</td><td>
 string</td><td>
 void</td></tr>
 <tr>
 <td>
-ExpandRow(List<string>)  </td><td>
+{{ '`ExpandRow(List<string>)`' | markdownify }}</td><td>
 Expands the group for the given list of row UniqueText.</td><td>
-List<string></td><td>
+{{ '`List<string>`' | markdownify }}</td><td>
 void</td></tr>
 <tr>
 <td>
-ExpandColumn (List<string>)  </td><td>
+{{ '`ExpandColumn(List<string>)`' | markdownify }}</td><td>
 Expands the group for the given list of column UniqueText.</td><td>
-List<string></td><td>
+{{ '`List<string>`' | markdownify }}</td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseRow(List<string>)  </td><td>
+{{ '`CollapseRow(List<string>)`' | markdownify }}</td><td>
 Collapse the group for the given list of row UniqueText.</td><td>
-List<string></td><td>
+{{ '`List<string>`' | markdownify }}</td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseColumn (List<string>)  </td><td>
+{{ '`CollapseColumn(List<string>)`' | markdownify }}</td><td>
 Collapse the group for the given list of column UniqueText.</td><td>
-List<string></td><td>
+{{ '`List<string>`' | markdownify }}</td><td>
 void</td></tr>
 <tr>
 <td>
-ExpandAllGroup  </td><td>
+ExpandAllGroup</td><td>
 Expands all the group.</td><td>
 -</td><td>
 void</td></tr>
 <tr>
 <td>
-CollapseAllGroup  </td><td>
+CollapseAllGroup</td><td>
 Collapses all the group.</td><td>
 -</td><td>
 void</td></tr>
 </table>
 
 
-###Defining the methods in PivotGrid
+### Defining the methods in PivotGrid
 
 For programmatic level expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter we can expand/collapse one or more columns/rows as per our requirement. 
 

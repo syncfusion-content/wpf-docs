@@ -115,4 +115,4 @@ _ShowCalculationsAsColumns checkbox in PivotSchemaDesigner_
 
 ![](PivotSchemaDesigner-Images/PivotGrid displays the values as rows.png)
 
-_ PivotGrid displays the calculation values as rows_
+_PivotGrid displays the calculation values as rows_

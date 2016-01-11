@@ -252,7 +252,7 @@ The `UpDown` control provided following four `TextAlignment` modes as listed bel
 * Justify
 
 
-* TextAlignment - Left
+**TextAlignment - Left**
 
 The `TextAlignment` can set to the `Left` in the `UpDown` control as shown in the following code example
 
@@ -286,7 +286,7 @@ Grid1.Children.Add(updown);
 ![](StylesandTemplates-images/StylesandTemplates-img7.jpeg)
 
 
-* TextAlignment - Right
+**TextAlignment - Right**
 
 The `TextAlignment` can be set to the `Right` in the `UpDown` control as shown in the following code example.
 
@@ -318,7 +318,7 @@ Grid1.Children.Add(updown);
 ![](StylesandTemplates-images/StylesandTemplates-img8.jpeg)
 
 
-* TextAlignment - Center
+**TextAlignment - Center**
 
 The `TextAlignment` can be set to the `Center` in the `UpDown` control as shown in the following code example.
 
@@ -350,7 +350,7 @@ Grid1.Children.Add(updown);
 ![](StylesandTemplates-images/StylesandTemplates-img9.jpeg)
 
 
-* TextAlignment - Justify
+**TextAlignment - Justify**
 
 The `TextAlignment` can be set to `Justify` in the `UpDown` control as shown in the following code example.
 

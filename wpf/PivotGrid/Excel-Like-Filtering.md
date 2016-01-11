@@ -17,7 +17,7 @@ PivotGrid control provides excel-like filtering feature in which the FilterPopup
 
 Users can sort and filter the require data within the PivotGrid for the better analysis and viewing of data.
 
-                                                  Properties Table
+Properties Table
 
 <table>
 <tr>

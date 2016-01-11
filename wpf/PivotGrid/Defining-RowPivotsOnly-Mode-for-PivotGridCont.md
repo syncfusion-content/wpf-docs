@@ -13,7 +13,7 @@ RowPivotsOnly mode supports the PivotGrid to display only with the column values
 
 When displaying the PivotGrid in RowPivotsOnly mode, that shows the row header cells and column header cells as the value cells. And also it supports column filtering, column sorting, etc...
 
-                                                           Property Table
+Property Table
 
 <table>
 <tr>
@@ -30,7 +30,6 @@ This property is used to enable or disable the row pivots only mode for pivot gr
 bool</td><td>
 True, False(Default)</td><td>
 -</td></tr>
-<tr>
 </table>
 
 ## Defining the property in PivotGrid
@@ -78,5 +77,5 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly/PivotGrid when RowPivotsOnly mode is enabled.png)
+![](Features-in-RowPivotsOnly-images/PivotGrid when RowPivotsOnly mode is enabled.png)
 

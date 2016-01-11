@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Overview | TreeViewAdv | wpf | Syncfusion
-description: overview
+title: Overview
+description: Overview
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-
 # Overview
 
 TreeViewAdv control displays hierarchical data in a tree structure, and has items that can be expanded and collapsed. TreeViewAdv includes all essential features as well as certain advanced features that make the control unique and extra-ordinary. Properties of the TreeViewAdv control enable users to achieve desired layouts and outputs by using both XAML and C# code with ease.
 
-## Features
+# Features
 
 * Provides support to add any number of items to the control.
 * Developed using UI Virtualization; enabling enhanced performance.
@@ -27,6 +26,4 @@ TreeViewAdv control displays hierarchical data in a tree structure, and has item
 * Sort TreeViewAdv items at run time.
 * Add images to TreeViewItemAdv to identify expanded or collapsed states.
 * Add images as left and right image sources to the TreeViewItemAdv.
-
-
 

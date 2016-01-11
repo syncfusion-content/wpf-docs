@@ -12,7 +12,7 @@ documentation: ug
 PivotComputation holds the information needed for calculations that appear in a PivotGrid control. For each calculation, there is an associated PivotComputationInfo object that is added to the PivotCalculations collection. 
 
 
-                                                       Properties Table
+Properties Table
 
 <table>
 <tr>
@@ -161,7 +161,7 @@ Please refer the code snippet below.
 
 {% endhighlight%}
 
-## Defining PivotComputationInfo in Code-Behind:
+## Defining PivotComputationInfo in Code-Behind
 
 Include the *Synfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotComputationInfo's for each calculation items. Add the defined PivotComputationInfo's to PivotCalculations collection of PivotGrid control. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with Syncfusion ToolBarAdv control for WPF
+description: A quick tour to initial users on Syncfusion ToolBarAdv control for WPF
 platform: wpf
 control: ToolBarAdv
 documentation: ug
@@ -9,281 +9,265 @@ documentation: ug
 
 # Getting Started
 
+This section explains how to add the ToolBarAdv control to an application and its structure.
+
 ## Adding ToolBarAdv to a WPF Application
 
-Follow the below steps to add ToolBarAdv Control to WPF Application:
+ToolBarAdv can be added to an application in a following way.
 
-1.Create a new WPF project.
-2.ToolBarAdv Control will be listed in the Tool Box.
+### Create the ToolBarAdv Control to an application by using XAML:
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+The following ways explains how to add ToolBarAdv control using XAML code:
 
+* Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
+* Include an xml namespace for the above assemblies to the Main window.
 
+{% tabs %}
 
+{% highlight XAML %}
 
-3.Drag and drop the control to the designer.
+<Window x:Class="Application_New.MainWindow"
 
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-N> Following XAML code will be automatically added in the XAML Viewer. You can also manually add this code instead of dragging the control from ToolBox.
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
+Title="MainWindow" Height="350" Width="525">
 
-
-{% highlight xml %}
-
-<syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
 
 
 {% endhighlight %}
 
+{% endtabs %}
+* Now add the ToolBarAdv control with a required optimal name using the namespace 
 
-4.ToolBarAdv Control is added.
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
+
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Create the ToolBarAdv control to an application by C#:
+
+{% tabs %}
+
+{% highlight C# %}
+
+ToolBarAdv tool = new ToolBarAdv();
+
+tool.Name = "toolBarAdv1";
+
+tool.Width = 100;
+
+tool.Height = 50;
+
+
+
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Appearance and Structure of the Control
 
+![](Getting-Started-images/Getting-Started-img1.jpeg)
 
 
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-* The Overflow Button is the ToggleButton, when you click this OverflowPanel will be displayed.
-* The Gripper is used to drag the ToolBarAdv to change its Band.,You can float and dock the ToolBarAdv by clicking the gripper and dragging the ToolBarAdv, When the ToolBarAdv is hosted in ToolBarManager. 
-
-
-
-
+* The Overflow button is a toggle button that displays on clicking the Overflow panel.
+* The Gripper is used to drag the ToolBarAdv to change its Band. The state of the ToolBarAdv can be changed to float and dock by clicking the gripper and dragging the ToolBarAdv, when the ToolBarAdv is hosted in ToolBarManager.
 
 ## Properties
 
-
-
-Properties of ToolBarAdv
+### Properties of ToolBarAdv
 
 <table>
 <tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+<td>
+Property<br/><br/></td><td>
+Description<br/><br/></td><td>
+Type<br/><br/></td><td>
+Data Type<br/><br/></td></tr>
 <tr>
 <td>
-Band</td><td>
-Gets or sets a value indicating where the ToolBarAdv should be placed in the ToolBarTrayAdv. </td><td>
-Dependency Property</td><td>
-Int</td><td>
-NA</td></tr>
+Band<br/><br/></td><td>
+Gets or sets a value indicating where the ToolBarAdv should be placed in the ToolBarTrayAdv.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Int<br/><br/></td></tr>
 <tr>
 <td>
-BandIndex</td><td>
-Gets or sets the band index number indicating the position of the ToolBarAdv on the band. </td><td>
-Dependency Property</td><td>
-Int</td><td>
-NA</td></tr>
+BandIndex<br/><br/></td><td>
+Gets or sets the band index number indicating the position of the ToolBarAdv on the band.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Int<br/><br/></td></tr>
 <tr>
 <td>
-ToolBarName</td><td>
-Gets or sets the name of the ToolBarAdv.</td><td>
-Dependency Property</td><td>
-String</td><td>
-NA</td></tr>
+ToolBarName<br/><br/></td><td>
+Gets or sets the name of the ToolBarAdv.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+String<br/><br/></td></tr>
 <tr>
 <td>
-GripperVisibility</td><td>
-Gets or sets a value indicating whether gripper can be visible. </td><td>
-Dependency Property</td><td>
-Bool</td><td>
-NA</td></tr>
+GripperVisibility<br/><br/></td><td>
+Gets or sets a value indicating whether gripper can be visible.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Bool<br/><br/></td></tr>
 <tr>
 <td>
-FloatingBarLocation</td><td>
-Gets or sets the location for the floating ToolBarAdv.</td><td>
-Dependency Property</td><td>
-Point</td><td>
-NA</td></tr>
+FloatingBarLocation<br/><br/></td><td>
+Gets or sets the location for the floating ToolBarAdv.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Point<br/><br/></td></tr>
 <tr>
 <td>
-ControlsResourceDictionary</td><td>
-Gets or sets resource dictionary in which ToolBarAdv will look up for framework element’s styles. </td><td>
-Dependency Property</td><td>
-Resource Dictionary</td><td>
-NA</td></tr>
+ControlsResourceDictionary<br/><br/></td><td>
+Gets or sets resource dictionary in which ToolBarAdv will look up for framework element’s styles.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Resource Dictionary<br/><br/></td></tr>
 <tr>
 <td>
-IsOverflowOpen</td><td>
-Gets or sets a value indicating whether overflow popup is open.</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-NA</td></tr>
+IsOverflowOpen<br/><br/></td><td>
+Gets or sets a value indicating whether overflow popup is open.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Bool<br/><br/></td></tr>
 <tr>
 <td>
-ToolBarItemInfoCollection</td><td>
-Gets or sets the items to be displayed in the Add or Remove Buttons popup.</td><td>
-Dependency Property</td><td>
-ObservableCollection<ToolBarIteminfo></td><td>
-NA</td></tr>
+ToolBarItemInfoCollection<br/><br/></td><td>
+Gets or sets the items to be displayed in the Add or Remove Buttons popup.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+ObservableCollection<br/><br/></td></tr>
 <tr>
 <td>
-IsoverflowItem</td><td>
-Gets or sets a value indicating whether an item can be displayed in overflow panel.</td><td>
-Attached Property</td><td>
-Bool</td><td>
-NA</td></tr>
+IsoverflowItem<br/><br/></td><td>
+Gets or sets a value indicating whether an item can be displayed in overflow panel.<br/><br/></td><td>
+Attached Property<br/><br/></td><td>
+Bool<br/><br/></td></tr>
 <tr>
 <td>
-OverflowMode</td><td>
-Gets or sets an overflow mode for a specified item. </td><td>
-Attached Property</td><td>
-OverflowMode</td><td>
-NA</td></tr>
+OverflowMode<br/><br/></td><td>
+Gets or sets an overflow mode for a specified item.<br/><br/></td><td>
+Attached Property<br/><br/></td><td>
+OverflowMode<br/><br/></td></tr>
 <tr>
 <td>
-Icon</td><td>
-Gets or sets an icon for specified item to be displayed in the Add or Remove Buttons menu. </td><td>
-Attached Property</td><td>
-ImageSource</td><td>
-NA</td></tr>
+Icon<br/><br/></td><td>
+Gets or sets an icon for specified item to be displayed in the Add or Remove Buttons menu.<br/><br/></td><td>
+Attached Property<br/><br/></td><td>
+ImageSource<br/><br/></td></tr>
 <tr>
 <td>
-Label</td><td>
-Gets or sets a label for specified item to be displayed in the Add or Remove Buttons menu.</td><td>
-Attached Property</td><td>
-String</td><td>
-NA</td></tr>
+Label<br/><br/></td><td>
+Gets or sets a label for specified item to be displayed in the Add or Remove Buttons menu.<br/><br/></td><td>
+Attached Property<br/><br/></td><td>
+String<br/><br/></td></tr>
 <tr>
 <td>
-IsAvailable</td><td>
-Gets or sets a value indicating whether a specified item should be hidden.</td><td>
-Attached Property</td><td>
- Boolean </td><td>
-NA </td></tr>
+IsAvailable<br/><br/></td><td>
+Gets or sets a value indicating whether a specified item should be hidden.<br/><br/></td><td>
+Attached Property<br/><br/></td><td>
+Boolean<br/><br/></td></tr>
 </table>
-
-
-ToolBarTrayAdv
+### Properties of ToolBarManager
 
 <table>
 <tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+<td>
+Property<br/><br/></td><td>
+Description<br/><br/></td><td>
+Type<br/><br/></td><td>
+Data Type<br/><br/></td></tr>
 <tr>
 <td>
-IsLocked</td><td>
-Gets or Sets a value indicating whether ToolBarTrayAdv is locked.</td><td>
-Dependency property      </td><td>
-bool</td><td>
-NA</td></tr>
+IsLocked<br/><br/></td><td>
+Gets or Sets a value indicating whether ToolBarTrayAdv is locked.<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+bool<br/><br/></td></tr>
 <tr>
 <td>
-Orientation</td><td>
-Gets or Sets the orientation of the ToolBarAdv.</td><td>
-Dependency property      </td><td>
-Orientation</td><td>
-NA</td></tr>
+Orientation<br/><br/></td><td>
+Gets or Sets the orientation of the ToolBarAdv.<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Orientation<br/><br/></td></tr>
 <tr>
 <td>
-ToolBars</td><td>
-Gets or sets toolbars.</td><td>
-Dependency property      </td><td>
-ObservableCollection<ToolBarAdv></td><td>
-NA</td></tr>
-</table>
+ToolBars<br/><br/></td><td>
+Gets or sets toolbars.<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+ObservableCollection<br/><br/></td></tr>
+<tr>
+<td>
+TopToolBarTray<br/><br/></td><td>
+Gets or sets ToolBarTrayAdv which has to be displayed at the Top of ToolBarManager.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+ToolBarTrayAdv<br/><br/></td></tr>
+<tr>
+<td>
+BottomToolBarTray<br/><br/></td><td>
+Gets or sets ToolBarTrayAdv which has to be displayed at the bottom of ToolBarManager.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+ToolBarTrayAdv<br/><br/></td></tr>
+<tr>
+<td>
+LeftToolBarTray<br/><br/></td><td>
+Gets or sets ToolBarTrayAdv which has to be displayed at the left of ToolBarManager.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+ToolBarTrayAdv<br/><br/></td></tr>
+<tr>
+<td>
+RightToolBarTray<br/><br/></td><td>
+Gets or sets ToolBarTrayAdv which has to be displayed at the right of ToolBarManager.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+ToolBarTrayAdv<br/><br/></td></tr>
+<tr>
+<td>
+CanDockAtTop<br/><br/></td><td>
+Gets or sets a value indicating whether toolbar can be docked at the top.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+bool<br/><br/></td></tr>
+<tr>
+<td>
+CanDockAtBottom<br/><br/></td><td>
+Gets or sets a value indicating whether toolbar can be docked at the bottom.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+bool<br/><br/></td><td>
+<tr>
+<td>
+CanDockAtLeft<br/><br/></td><td>
+Gets or sets a value indicating whether toolbar can be docked at the left.br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+bool<br/><br/></td><td>
+<tr>
+<td>
+CanDockAtRight<br/><br/></td><td>
+Gets or sets a value indicating whether toolbar can be docked at the right.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+bool<br/><br/></td><td>
+<tr>
+<td>
+Content<br/><br/></td><td>
+Gets or sets the content of the ToolBarManager.<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+UIElement<br/><br/></td><td>
+<tr>
+<td>
+FloatingToolBarStyle<br/><br/></td><td>
+Gets or sets a style of floating tool bar<br/><br/></td><td>
+Dependency Property<br/><br/></td><td>
+Style<br/><br/></td><td>
+<tr>
+<td>
+ToolBarState<br/><br/></td><td>
+Gets or sets the state of the toolbar.<br/><br/></td><td>
+Attached Property<br/><br/></td><td>
+ToolBarState<br/><br/></td><td>
 
-
-ToolBarManager
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-TopToolBarTray</td><td>
-Gets or sets ToolBarTrayAdv which has to be displayed at the Top of ToolBarManager. </td><td>
-Dependency Property</td><td>
-ToolBarTrayAdv </td><td>
-NA</td></tr>
-<tr>
-<td>
-BottomToolBarTray</td><td>
-Gets or sets ToolBarTrayAdv which has to be displayed at the bottom of ToolBarManager.</td><td>
-Dependency Property</td><td>
-ToolBarTrayAdv </td><td>
-NA</td></tr>
-<tr>
-<td>
-LeftToolBarTray</td><td>
-Gets or sets ToolBarTrayAdv which has to be displayed at the left of ToolBarManager.</td><td>
-Dependency Property</td><td>
-ToolBarTrayAdv </td><td>
-NA</td></tr>
-<tr>
-<td>
-RightToolBarTray</td><td>
-Gets or sets ToolBarTrayAdv which has to be displayed at the right of ToolBarManager.</td><td>
-Dependency Property </td><td>
-ToolBarTrayAdv </td><td>
-NA</td></tr>
-<tr>
-<td>
-CanDockAtTop</td><td>
-Gets or sets a value indicating whether toolbar can be docked at the top.</td><td>
-Dependency Property</td><td>
-bool</td><td>
-NA</td></tr>
-<tr>
-<td>
-CanDockAtBottom</td><td>
-Gets or sets a value indicating whether toolbar can be docked at the bottom.</td><td>
-Dependency Property</td><td>
-bool</td><td>
-NA</td></tr>
-<tr>
-<td>
-CanDockAtLeft</td><td>
-Gets or sets a value indicating whether toolbar can be docked at the left.</td><td>
-Dependency Property</td><td>
-bool</td><td>
-NA</td></tr>
-<tr>
-<td>
-CanDockAtRight</td><td>
-Gets or sets a value indicating whether toolbar can be docked at the right.</td><td>
-Dependency Property</td><td>
-bool</td><td>
-NA</td></tr>
-<tr>
-<td>
-Content</td><td>
-Gets or sets the content of the ToolBarManager.</td><td>
-Dependency Property</td><td>
-UIElement</td><td>
-NA</td></tr>
-<tr>
-<td>
-FloatingToolBarStyle</td><td>
-Gets or sets a style of floating tool bar</td><td>
-Dependency Property</td><td>
-Style</td><td>
-NA</td></tr>
-<tr>
-<td>
-ToolBarState</td><td>
-Gets or sets the state of the toolbar. </td><td>
-Attached Property</td><td>
-ToolBarState</td><td>
-NA</td></tr>
-</table>
 
 

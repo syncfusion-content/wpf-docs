@@ -18,7 +18,7 @@ PivotGrid supports to define the visibility of the Grouping Bar to some specific
 
 User could define the visibility of grouping bar as per their requirement.
 
-                                                         Properties Table
+Properties Table
 
 <table>
 <tr>

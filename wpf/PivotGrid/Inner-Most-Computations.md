@@ -11,11 +11,11 @@ documentation: ug
 
 Pivotgrid provides the support for the columns which are existing in engine to display only the calculation columns other than total and grand total columns.
 
-** Use Case Scenario **
+**Use Case Scenario**
 
 User could view only the calculation columns irrespective of viewing all the columns as per their requirement.
 
-                                                          Property Table 
+Property Table 
 
 <table>
 <tr>
@@ -67,6 +67,8 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
+Else if through **Code-Behind**, please refer the below code snippet.
+
 {% highlight C# %}
 
 public partial class MainWindow: Window {
@@ -85,5 +87,5 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly/Innermost Computation only in PivotGrid.png)
+![](Features-in-RowPivotsOnly-images/Innermost Computation only in PivotGrid.png)
 

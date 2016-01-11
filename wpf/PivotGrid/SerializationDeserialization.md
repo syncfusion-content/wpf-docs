@@ -17,122 +17,169 @@ User could save the current state of PivotGrid in a XML file format and restore 
 
 The following properties of PivotGrid can be serialized.
 
-                                                      List of Properties which gets Serialized
+List of Properties which gets Serialized
 
 <table>
-<tr>
-<th>
-Property Name</th><th>
-Type</th></tr>
-<tr>
-<td>
-AllowResizeColumns</td><td>
-bool</td></tr>
-<tr>
-<td>
-AllowResizeRows</td><td>
-bool</td></tr>
-<tr>
-<td>
-AllowSelection</td><td>
-bool</td></tr>
-<tr>
-<td>
-AllowSelectionWithHeaders</td><td>
-bool</td></tr>
-<tr>
-<td>
-AutoSizeColumnCount</td><td>
-int</td></tr>
-<tr>
-<td>
-AutoSizeOption</td><td>
-GridAutoSizeOption</td></tr>
-<tr>
-<td>
-AutoSizeRowCount</td><td>
-int</td></tr>
-<tr>
-<td>
-DeferLayoutUpdate</td><td>
-bool</td></tr>
-<tr>
-<td>
-Filters</td><td>
-ObservableCollection<FilterExpression></td></tr>
-<tr>
-<td>
-FreezeHeaders</td><td>
-bool</td></tr>
-<tr>
-<td>
-IsDynamicData</td><td>
-bool</td></tr>
-<tr>
-<td>
-PivotCalculations</td><td>
-ObservableCollection<PivotComputationInfo></td></tr>
-<tr>
-<td>
-PivotColumns</td><td>
-ObservableCollection<PivotItem></td></tr>
-<tr>
-<td>
-PivotFields</td><td>
-ObservableCollection<PivotItem></td></tr>
-<tr>
-<td>
-PivotRows</td><td>
-ObservableCollection<PivotItem></td></tr>
-<tr>
-<td>
-ShowCalculationsAsColumns</td><td>
-bool</td></tr>
-<tr>
-<td>
-ShowFieldList</td><td>
-bool</td></tr>
-<tr>
-<td>
-ShowGrandTotals</td><td>
-bool</td></tr>
-<tr>
-<td>
-ShowGroupingBar</td><td>
-bool</td></tr>
-<tr>
-<td>
-GroupingBar.AllowFiltering</td><td>
-bool</td></tr>
-<tr>
-<td>
-GroupingBar.AllowSorting</td><td>
-bool</td></tr>
-<tr>
-<td>
-EnableColumnHeader</td><td>
-bool</td></tr>
-<tr>
-<td>
-EnableRowHeader</td><td>
-bool</td></tr>
-<tr>
-<td>
-AllowMultiFunctionaSortFilter</td><td>
-bool</td></tr>
-<tr>
-<td>
-VisibleRecords</td><td>
-int</td></tr>
+    <tr>
+        <th>
+            Property Name</th>
+        <th>
+            Type</th>
+    </tr>
+    <tr>
+        <td>
+            AllowResizeColumns</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            AllowResizeRows</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            AllowSelection</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            AllowSelectionWithHeaders</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            AutoSizeColumnCount</td>
+        <td>
+            int</td>
+    </tr>
+    <tr>
+        <td>
+            AutoSizeOption</td>
+        <td>
+            GridAutoSizeOption</td>
+    </tr>
+    <tr>
+        <td>
+            AutoSizeRowCount</td>
+        <td>
+            int</td>
+    </tr>
+    <tr>
+        <td>
+            DeferLayoutUpdate</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            Filters</td>
+        <td>{{ '`ObservableCollection(<FilterExpression>)`' | markdownify }}</td>
+    </tr>
+    <tr>
+        <td>
+            FreezeHeaders</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            IsDynamicData</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            PivotCalculations</td>
+        <td>{{ '`ObservableCollection(<PivotComputationInfo>)`' | markdownify }}</td>
+    </tr>
+    <tr>
+        <td>
+            PivotColumns</td>
+        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
+    </tr>
+    <tr>
+        <td>
+            PivotFields</td>
+        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
+    </tr>
+    <tr>
+        <td>
+            PivotRows</td>
+        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
+    </tr>
+    <tr>
+        <td>
+            ShowCalculationsAsColumns</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            ShowFieldList</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            ShowGrandTotals</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            ShowGroupingBar</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            GroupingBar.AllowFiltering</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            GroupingBar.AllowSorting</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            EnableColumnHeader</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            EnableRowHeader</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            AllowMultiFunctionaSortFilter</td>
+        <td>
+            bool</td>
+    </tr>
+    <tr>
+        <td>
+            VisibleRecords</td>
+        <td>
+            int</td>
+    </tr>
 </table>
 
-##Using the Serialization/Deserialization in PivotGrid
+## Using the Serialization/Deserialization in PivotGrid
 
 On Serialization, expand and collapse state of PivotGrid cells are maintained. So while de-serializing, the item source specified for the Grid should be as same as that when used in Serialization. This can be ignored by setting IgnoreExpandCollapseOnSerialization property of PivotGrid control to False.
 
 The following are the methods which has been used in PivotGrid for serialization/deserialization.
 
-                                                          Methods Table
+Methods Table
 
 <table>
 <tr>
@@ -179,7 +226,7 @@ string xmlstring</td><td>
 void</td></tr>
 </table>
 
-###Serialization
+### Serialization
 
 After defining a PivotGrid control, call the Serialize() method in separate event handler. Please refer the below code snippet.
 
@@ -204,7 +251,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-###De-Serialization
+### De-Serialization
 
 After defining a PivotGrid control, call the De-Serialize() method in separate event handler. Please refer the below code snippet.
 

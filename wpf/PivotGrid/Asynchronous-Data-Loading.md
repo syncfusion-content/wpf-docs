@@ -15,7 +15,8 @@ The PivotGrid control provides support for loading data in a unique UI thread. T
 
 It allows the user to access other UI controls when PivotGrid is loading.
 
-                                                      Property Table
+Property Table
+
 <table>
 <tr>
 <th>

@@ -11,24 +11,24 @@ documentation: ug
 
 PivotGrid summarizes the data for various datatypes by using the **SummaryType** enumerator. SummaryType should be defined while defining the PivotCalculation using **PivotComputationInfo** class to specify the type of the summary. It holds the following summary types.
 
-* DoubleTotalSum - Computes the sum of double or integer from PivotValues for corresponding PivotItem
-* DoubleAverage - Computes average of double or integer from PivotValues for corresponding PivotItem.
-* DoubleMaximum - Computes maximum of double or integer from PivotValues for corresponding PivotItem.
-* DoubleMinimum - Computes Minimum of double or integer from PivotValues for corresponding PivotItem.
-* DoubleStandardDeviation - Computes the standard deviation of double or integer from PivotValues for corresponding PivotItem.
-* DoubleVariance - Computes the variance of double or integer from PivotValues
-* Count - Computes count of double or integer from PivotValues for corresponding PivotItem.
-* DecimalTotalSum - Computes the sum of decimal from PivotValues
-* IntTotalSum - Computes the sum of integer from PivotValues for corresponding PivotItem.
-* Custom - Specifies that you are using a custom SummaryBase object to define the calculation.
-* DisplayIfDiscreteValuesEqual - Displays the aggregated value in the Pivot Computation column if all the values are common.
+* **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for corresponding PivotItem
+* **DoubleAverage** - Computes average of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleMaximum** - Computes maximum of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleMinimum** - Computes Minimum of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleStandardDeviation** - Computes the standard deviation of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleVariance** - Computes the variance of double or integer from PivotValues
+* **Count** - Computes count of double or integer from PivotValues for corresponding PivotItem.
+* **DecimalTotalSum** - Computes the sum of decimal from PivotValues
+* **IntTotalSum** - Computes the sum of integer from PivotValues for corresponding PivotItem.
+* **Custom** - Specifies that you are using a custom SummaryBase object to define the calculation.
+* **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
 
 
 **Use Case Scenario**
 
 User could display the calculation values by various summary options as per their requirement.
 
-                                                         Property Table
+Property Table
 
 <table>
 <tr>
@@ -44,8 +44,8 @@ SummaryType</td><td>
 Gets or sets the summary type to the PivotComputationInfo.</td><td>
 SummaryType</td><td>
 DoubleTotalSum, DoubleAverage, DoubleMaximum, DoubleMinimum, DoubleStandardDeviation, 
-DoubleVariance, Count, DecimalTotalSum, IntTotalSum, Custom, DisplayIfDiscreteValues
--</td></tr>
+DoubleVariance, Count, DecimalTotalSum, IntTotalSum, Custom, DisplayIfDiscreteValues</td>
+<td>-</td></tr>
 </table>
 
 ## Defining the property in PivotGrid
@@ -119,12 +119,12 @@ public partial class MainWindow: Window {
 
 ![](Summary-Images/PivotGrid shows summary type Double variance.png)
 
-# DisplayIfDiscreteValuesEqual SummaryType in PivotGrid
+## DisplayIfDiscreteValuesEqual SummaryType in PivotGrid
 
 **DisplayIfDiscreteValuesEqual** is a new summary type that has been added to the **SummaryType** enumerator of the Pivot Grid control. This summary type displays the aggregated value in the Pivot Calculation column if all the values are common, else the default value will be displayed as **'*'**.
 It is also possible to change the default value to any custom string of your choice by using the **PadString** property. 
 
-                                                                    Property Table
+Property Table
 
 <table>
 <tr>
@@ -143,7 +143,7 @@ string</td><td>
 -</td></tr>
 </table>
 
-## Defining DisplayIfDiscreteValuesEqual SummaryType with PadString in PivotGrid 
+### Defining DisplayIfDiscreteValuesEqual SummaryType with PadString in PivotGrid 
 
 Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the **PadString** while defining PviotCalculations in PivotGrid control.
 

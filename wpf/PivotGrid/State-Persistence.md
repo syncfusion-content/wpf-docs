@@ -15,7 +15,7 @@ PivotGrid allows us to maintain the collapsed or expanded state when the corresp
 
 The user can maintain collapsed or expanded states and also save/load these settings dynamically in the PivotGrid control. 
 
-                                                   Property Table
+Property Table
 
 <table>
 <tr>

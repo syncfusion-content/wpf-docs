@@ -15,7 +15,7 @@ It is possible to customize the PivotTable field list in PivotSchemaDesigner and
 
 This feature enables the user to load required set of items in PivotSchemaDesigner.
 
-                                                        Property Table
+Property Table
 
 <table>
 <tr>

@@ -14,31 +14,32 @@ SfSpreadsheet allows you to add custom formulas into its function library. You c
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
+spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
 
-    void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
-    {
-        foreach (var grid in args.GridCollection)
-          AddCustomFormula(grid); 
-          
-        //Computing the formula at runtime
-          var range = spreadsheetControl.ActiveSheet.Range["B2"];
-          spreadsheetControl.ActiveGrid.SetCellValue(range,"=Find(aaa)");
-    }
+void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
+{
+  foreach (var grid in args.GridCollection)
+    AddCustomFormula(grid); 
+  
+  //Computing the formula at runtime
+   var range = spreadsheetControl.ActiveSheet.Range["B2"];
+   spreadsheetControl.ActiveGrid.SetCellValue(range,"=Find(aaa)");
+         
+}  
 
-    private void AddCustomFormula(SpreadsheetGrid grid)
-    {
-       // Add a formula named Find to the Library.
-       grid.FormulaEngine.AddFunction("Find", new LibraryFunction(ComputeLength));      
-    }
+private void AddCustomFormula(SpreadsheetGrid grid)
+{
+  // Add a formula named Find to the Library.
+   grid.FormulaEngine.AddFunction("Find", new FormulaEngine.LibraryFunction(ComputeLength));      
+}    
 
-    //Implementation of formula
+//Implementation of formula
     
-    public string ComputeLength(string range)
-    {
-      //Used to find the length of the string
-       return range.Length.ToString();
-    }
+public string ComputeLength(string range)
+{
+  //Used to calculate the length of the string
+    return range.Length.ToString();
+}   
 
 {% endhighlight %}
 {% endtabs %}
