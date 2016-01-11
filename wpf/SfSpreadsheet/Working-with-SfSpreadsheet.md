@@ -135,7 +135,7 @@ void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
 
 ## Setting the CellValue at Runtime
 
-In SfSpreadsheet, to update the cell value programmatically, **SetCellValue** method of SpreadsheetGrid should be invoked and then invalidate that cell to update the view.
+In SfSpreadsheet, to update the cell value and formula programmatically, **SetCellValue** method of SpreadsheetGrid should be invoked and then invalidate that cell to update the view.
 
 {% tabs %}
 {% highlight c# %}
