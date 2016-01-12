@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conversion | SfSpreadsheet | WPF | Syncfusion
+title: Cell Customization| SfSpreadsheet | WPF | Syncfusion
 description: cell customization
 platform: wpf
 control: SfSpreadsheet
