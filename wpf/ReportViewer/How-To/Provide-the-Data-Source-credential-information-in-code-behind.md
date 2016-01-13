@@ -13,33 +13,18 @@ Use SetDataSourceCredentials to provide the data source credential for the Repor
 
 {% highlight C# %}
 this.reportViewerControl.ReportLoaded += new ReportLoadedEventHandler (reportViewerControl_ReportLoaded);
-
 void reportViewerControl_ReportLoaded(object sender, EventArgs e)
-
 {
-
-var dataSources = this.reportViewerControl.GetDataSources();
-
-List<DataSourceCredentials> credentials=new List<DataSourceCredentials> ();
-
-foreach (var dataSource in dataSources)
-
-{
-
-DataSourceCredentials credential= new DataSourceCredentials ();
-
-credential.Name = dataSource.Name; // Sets the credential based on the data source.
-
-credential.UserId = 'userName';
-
-credential.Password = 'password';
-
-credentials.Add (credential);
-
-}
-
-this.reportViewerControl.SetDataSourceCredentials (credentials);
-
+    var dataSources = this.reportViewerControl.GetDataSources();
+    List<DataSourceCredentials> credentials=new List<DataSourceCredentials> ();
+    foreach (var dataSource in dataSources)
+    {
+        DataSourceCredentials credential= new DataSourceCredentials ();
+        credential.Name = dataSource.Name; // Sets the credential based on the data source.
+        credential.UserId = "userName";
+        credential.Password = "password";
+        credentials.Add (credential);
+    }
+    this.reportViewerControl.SetDataSourceCredentials (credentials);
 }
 {% endhighlight %}
-
