@@ -13,13 +13,8 @@ Use the SetParameters method in the Report Viewer to provide the parameter value
 
 {% highlight C# %}
 this.reportViewerControl.ReportLoaded += new Syncfusion.Windows.Reports.ReportLoadedEventHandler(reportViewerControl_ReportLoaded);
-
 void reportViewerControl_ReportLoaded(object sender, EventArgs e)
-
 {
-
-//this.reportViewerControl.SetParameters
-
- }
+    //this.reportViewerControl.SetParameters
+}
 {% endhighlight %}
-

@@ -72,8 +72,6 @@ area.BorderThickness = new Thickness(5);
 
 area.SideBySideSeriesPlacement = true;
 
-
-
 chart.Areas.Add(area);.
 
 {% endhighlight %}
@@ -570,9 +568,7 @@ LabelRotateAngle="0" AxisVisibility="Visible"
 
 EnableAutoIntervalOnZooming="False"  ZoomFactor="1" 
 
-ZoomPosition="1" chart:ChartArea.ShowGridLines="True" 
-
-/>
+ZoomPosition="1" chart:ChartArea.ShowGridLines="True" />
 
 </chart:Chart.PrimaryAxis>
 
@@ -606,11 +602,7 @@ primaryAxis.IsInversed = false;
 
 primaryAxis.IsAutoSetRange = false;
 
-
-
 primaryAxis.DateTimeRange = new DateTimeRange(new DateTime(2010, 01, 01), new DateTime(2011, 01, 01));
-
-
 
 primaryAxis.DateTimeInterval = new TimeSpan(24, 0, 0);
 
@@ -690,9 +682,7 @@ PrefixLabelTemplate="{StaticResource preLabel}"
 
 SmallTickLinesPosition="Outside" SmallTicksPerInterval="5" 
 
-TickLineSize="6" ZoomFactor="1" ZoomPosition="0" 
-
-/>
+TickLineSize="6" ZoomFactor="1" ZoomPosition="0"/>
 
 <sfchart:SfChart.PrimaryAxis/>
 
@@ -704,8 +694,6 @@ TickLineSize="6" ZoomFactor="1" ZoomPosition="0"
 SfChart chart = new SfChart();
 
 DateTimeAxis primaryAxis = new DateTimeAxis();
-
-
 
 primaryAxis.Interval = 1;
 
@@ -725,8 +713,6 @@ primaryAxis.Visibility = Visibility.Visible;
 
 primaryAxis.EnableScrollBar = false;
 
-
-
 primaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Center;
 
 primaryAxis.RangePadding = DateTimeRangePadding.Auto;
@@ -743,15 +729,11 @@ primaryAxis.OpposedPosition = true;
 
 primaryAxis.SmallTickLineSize = 6d;
 
-
-
 primaryAxis.SmallTickLinesPosition = AxisElementPosition.Outside;
 
 primaryAxis.SmallTicksPerInterval = 5;
 
 primaryAxis.TickLineSize = 10d;
-
-
 
 primaryAxis.TickLinesPosition = AxisElementPosition.Outside;
 
@@ -765,19 +747,13 @@ primaryAxis.ShowGridline= true;
 
 primaryAxis.OpposedPosition = true;
 
-
-
 primaryAxis.Minimum = new DateTime(2011, 1, 1);
 
 primaryAxis.Maximum = new DateTime(2012, 1, 1);
 
-
-
 primaryAxis.ZoomFactor = 1d;
 
 primaryAxis.ZoomPosition = 0d;
-
-
 
 chart.PrimaryAxis = primaryAxis;
 {% endhighlight %}
@@ -946,8 +922,6 @@ lineseries.YAxis = new ChartSeries() { IsAutosetRange = false, Range= new DubleR
 
 lineseries.ShowSmartLabels = true;
 
-
-
 area.Series.Add(lineseries);
 {% endhighlight %}
 
@@ -958,8 +932,6 @@ area.Series.Add(lineseries);
 {% highlight xml %}
 
 <syncfusion:SfChart>
-
-
 
 <syncfusion:LineSeries ItemsSource="{Binding power}"
 
@@ -983,9 +955,8 @@ ShowEmptyPoints="True" EmptyPointValue="Average"
 
 EmptyPointInterior="Purple" EmptyPointStyle="Interior"
 
->
-
 <syncfusion:LineSeries.YAxis>
+
 <syncfusion:NumericalAxis  Minimum="20" Maximum="50"/>
 
 </syncfusion:LineSeries.YAxis>
@@ -1038,10 +1009,6 @@ lineseries.SortBy = SortingAxis.X;
 lineseries.YAxis = new NumericalAxis() { Minimum = 20, Maximum = 50 };
 
 lineseries.SortDirection = Direction.Ascending;
-
-
-
-
 
 chart.Series.Add(lineseries);
 {% endhighlight %}
@@ -1395,7 +1362,9 @@ The InteractiveCursor is represented as ChartCrosshairBehavior and ChartTrackbal
 <syncfusion:ChartArea>
 
 <syncfusion:ChartArea.InteractiveCursors>
+
 <syncfusion:InteractiveCursor VerticalLabelVisibility="Visible"HorizontalLabelVisibility="Visible" IsBindWithMouseMove="True"IsBindWithSegment="False" OffsetX="100" OffsetY="100"/>
+
 </syncfusion:ChartArea.InteractiveCursors>
 
 </syncfusion:ChartArea>
@@ -1419,8 +1388,6 @@ incCursor.IsBindWithSegment = false;
 incCursor.OffsetX = 100d;
 
 incCursor.OffsetY = 100d;
-
-
 
 area.InteractiveCursors.Add(incCursor);
 {% endhighlight %}
@@ -1451,8 +1418,6 @@ ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior();
 crosshair.VerticalAxisLabelAlignment = ChartAlignment.Center;
 
 crosshair.HorizontalAxisLabelAlignment = ChartAlignment.Center;
-
-
 
 chart.Behaviors.Add(crosshair);
 {% endhighlight %}
@@ -1517,8 +1482,6 @@ zoom.ZoomMode = ZoomMode.XY;
 zoom.ZoomRelativeToCursor = false;
 
 zoom.EnablePinchZooming = false;
-
-
 
 chart.Behaviors.Add(zoom);
 {% endhighlight %}
@@ -1623,8 +1586,6 @@ stripline.Width = 5d;
 stripline.Background = Brushes.LightGray;
 
 stripline.Label = "StripLine";
-
-
 
 chart.SecondaryAxis.StripLines.Add(stripline);
 
@@ -1800,7 +1761,6 @@ Canvas.SetZIndex(waterMark, -1);
 waterMark.Content = new TextBlock() { Text = "SfChart", Foreground = Brushes.Gray, Opacity = 0.5, FontSize = 60d };
 
 
-
 chart.Watermark = waterMark;
 
 {% endhighlight %}
@@ -1844,8 +1804,6 @@ chartannotation.OffsetY = 100d;
 
 chartannotation.IsAnnotationDragDrop = true;
 
-
-
 chart.AnnotationLabels.Add(chartannotation);
 
 {% endhighlight %}
@@ -1888,8 +1846,6 @@ seriesAnnotation.Stroke = Brushes.Black;
 seriesAnnotation.Fill = Brushes.Orange;
 
 annoCollection.m_annotationsCollection.Add(seriesAnnotation);
-
-
 
 columnSeries.Annotations = annoCollection;
 {% endhighlight %}
@@ -2015,8 +1971,6 @@ ellipseAnnotation.Y1 = 36d;
 
 ellipseAnnotation.Y2 = 42d;
 
-
-
 chart.Annotations.Add(ellipseAnnotation);
 {% endhighlight %}
 {% endtabs %}
@@ -2051,8 +2005,6 @@ rectAnnotation.X2 = 2d;
 rectAnnotation.Y1 = 36d;
 
 rectAnnotation.Y2 = 42d;
-
-
 
 chart.Annotations.Add(rectAnnotation);
 
@@ -2124,8 +2076,6 @@ horAnnotation.CanDrag = true;
 
 horAnnotation.Y1 = 40d;
 
-
-
 chart.Annotations.Add(horAnnotation);
 {% endhighlight %}
 {% endtabs %}
@@ -2163,8 +2113,6 @@ textAnnotation.HorizontalAlignment = HorizontalAlignment.Left;
 textAnnotation.ToolTipPlacement = ToolTipLabelPlacement.Top;
 
 textAnnotation.ShowToolTip = true;
-
-
 
 chart.Annotations.Add(textAnnotation);
 
@@ -2280,8 +2228,6 @@ ChartBollingerBand.SetBollingerMovingAverage(chart,50);
 
 indiCollection.Items.Add(indicator);
 
-
-
 columnSeries.Indicators = indiCollection;
 
 {% endhighlight %}
@@ -2324,8 +2270,6 @@ indicator.Low = "Low";
 
 indicator.ItemsSource = viewmodel.CompanyDetails;
 
-
-
 chart.TechnicalIndicators.Add(indicator);
 {% endhighlight %}
 {% endtabs %}
@@ -2347,55 +2291,55 @@ The following code example illustrates the API’s for both charts,
 
   <syncfusion:Chart>
 
-                <syncfusion:SyncChartAreas >
+  <syncfusion:SyncChartAreas >
 
-                    <syncfusion:SyncChartAreas.PrimaryAxis>
+  <syncfusion:SyncChartAreas.PrimaryAxis>
 
-                        <syncfusion:ChartAxis  ValueType="DateTime"LabelDateTimeFormat="MM/dd/yy" Header="Date">
+  <syncfusion:ChartAxis  ValueType="DateTime"LabelDateTimeFormat="MM/dd/yy" Header="Date">
 
-                        </syncfusion:ChartAxis>
+  </syncfusion:ChartAxis>
 
-                    </syncfusion:SyncChartAreas.PrimaryAxis>
+  </syncfusion:SyncChartAreas.PrimaryAxis>
 
-                    <syncfusion:SyncChartAreas.Areas>
+  <syncfusion:SyncChartAreas.Areas>
 
-                        <syncfusion:ChartArea x:Name="Area1" >
+  <syncfusion:ChartArea x:Name="Area1" >
 
-                            <syncfusion:ChartArea.SecondaryAxis >
+  <syncfusion:ChartArea.SecondaryAxis >
 
-                                <syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices">
+  <syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices">
 
-                                </syncfusion:ChartAxis>
+  </syncfusion:ChartAxis>
 
-                            </syncfusion:ChartArea.SecondaryAxis>
+  </syncfusion:ChartArea.SecondaryAxis>
 
-                            <syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="Low"  >
+  <syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="Low"  >
 
-                            </syncfusion:ChartSeries>
+  </syncfusion:ChartSeries>
 
-                        </syncfusion:ChartArea>
+  </syncfusion:ChartArea>
 
-                        <syncfusion:ChartArea x:Name="Area2" >
+  <syncfusion:ChartArea x:Name="Area2" >
 
-                            <syncfusion:ChartArea.SecondaryAxis >
+  <syncfusion:ChartArea.SecondaryAxis >
 
-                                <syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices">
+  <syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices">
 
-                                </syncfusion:ChartAxis>
+  </syncfusion:ChartAxis>
 
-                            </syncfusion:ChartArea.SecondaryAxis>
+  </syncfusion:ChartArea.SecondaryAxis>
 
-                            <syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="High" >
+  <syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="High" >
 
-                            </syncfusion:ChartSeries>
+  </syncfusion:ChartSeries>
 
-                        </syncfusion:ChartArea>
+  </syncfusion:ChartArea>
 
-                    </syncfusion:SyncChartAreas.Areas>
+  </syncfusion:SyncChartAreas.Areas>
 
-                </syncfusion:SyncChartAreas>
+  </syncfusion:SyncChartAreas>
 
-            </syncfusion:Chart>
+  </syncfusion:Chart>
 
 
 {% endhighlight %}
@@ -2408,8 +2352,6 @@ The following code example illustrates the API’s for both charts,
 SyncChartAreas areas=new SyncChartAreas();
 
 areas.PrimaryAxis = new ChartAxis();
-
-
 
 ChartArea area1 = new ChartArea();
 
@@ -2425,11 +2367,7 @@ lineSeries1.DataSource = viewmodel.datalist;
 
 lineSeries1.Type = ChartTypes.Line;
 
-
-
 area1.Series.Add(lineSeries1);
-
-
 
 ChartArea area2 = new ChartArea();
 
@@ -2445,11 +2383,7 @@ lineSeries2.DataSource = viewmodel.datalist;
 
 lineSeries2.Type = ChartTypes.Line;
 
-
-
 area2.Series.Add(lineSeries1);
-
-
 
 areas.Areas.Add(area1);
 
@@ -2466,39 +2400,37 @@ areas.Areas.Add(area2);
 {% highlight xml %}
 <syncfusion:SfChart>
 
-	<syncfusion:SfChart.RowDefinitions>
+<syncfusion:SfChart.RowDefinitions>
 
-                <syncfusion:ChartRowDefinition/>
+<syncfusion:ChartRowDefinition/>
 
-                <syncfusion:ChartRowDefinition/>
+<syncfusion:ChartRowDefinition/>
 
-            </syncfusion:SfChart.RowDefinitions>
+</syncfusion:SfChart.RowDefinitions>
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis ShowGridLines="False" FontSize="20"Header="Company Name"/>
+<syncfusion:CategoryAxis ShowGridLines="False" FontSize="20"Header="Company Name"/>
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
+<syncfusion:SfChart.SecondaryAxis>
 
+<syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40"FontSize="20" Header="Gross Revenue (cr.)"/>
 
-            <syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40"FontSize="20" Header="Gross Revenue (cr.)"/>
+<syncfusion:LineSeries  Stroke="Red" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver1" ItemsSource="{BindingCompanyDetails}"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+<syncfusion:LineSeries  Stroke="Green" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver2" ItemsSource="{BindingCompanyDetails}">
 
-            <syncfusion:LineSeries  Stroke="Red" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver1" ItemsSource="{BindingCompanyDetails}"/>
+<syncfusion:LineSeries.YAxis>
 
-            <syncfusion:LineSeries    Stroke="Green" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver2" ItemsSource="{BindingCompanyDetails}">
+<syncfusion:NumericalAxis syncfusion:ChartBase.Row="1"Header="Additional Axis" PlotOffset="30"/>
 
-                <syncfusion:LineSeries.YAxis>
+</syncfusion:LineSeries.YAxis>
 
-                    <syncfusion:NumericalAxis syncfusion:ChartBase.Row="1"Header="Additional Axis" PlotOffset="30"/>
-
-                </syncfusion:LineSeries.YAxis>
-
-            </syncfusion:LineSeries>
+</syncfusion:LineSeries>
 
 </syncfusion:SfChart>
 {% endhighlight %}

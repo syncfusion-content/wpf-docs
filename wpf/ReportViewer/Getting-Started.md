@@ -9,95 +9,209 @@ documentation: ug
 
 # Getting Started
 
-## Create Report Viewer through Designer
+## Creating Report Viewer through Visual Studio
 
-The section illustrates how to add the Report Viewer to the WPF application. It includes the following steps:
+You can create a simple application through the Visual Studio Designer with the Syncfusion WPF Report Viewer control by using the following steps.
 
-1. Create a new WPF application in VS2008 or VS2010.
+1. Create new WPF application in Visual Studio.
 
+2. Add the ReportViewer from the Toolbox.
+
+   Drag and drop the ReportViewer control from the Toolbox to the XAML Page.
+   
    ![](Getting-Started_images/Getting-Started_img1.png)
-
-   Toolbox
-   {:.caption}
-
-
-2. To add the Report Viewer control through designer, drag the Report Viewer control from Toolbox to Report Viewer window. The 
-   Report Viewer window is modified as shown.
+   
+3. To add references, Right-click on References and select Add Reference.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
    
-   Toolbox
-   {:.caption}
+4. Add the following assemblies.
 
-   N> The following code is auto generated in XAML window.
+   * Syncfusion.Chart.Wpf
+   * Syncfusion.Compression.Base
+   * Syncfusion.DocIO.Base
+   * Syncfusion.Gauge.Wpf
+   * Syncfusion.Grid.Wpf
+   * Syncfusion.Linq.Base
+   * Syncfusion.Pdf.Base
+   * Syncfusion.PropertyGrid.Wpf
+   * Syncfusion.ReportControls.Wpf
+   * Syncfusion.ReportDesigner.Wpf
+   * Syncfusion.ReportViewer.Wpf
+   * Syncfusion.SfMaps.Wpf
+   * Syncfusion.SfSkinManager.Wpf
+   * Syncfusion.Shared.Wpf
+   * Syncfusion.Tools.Wpf
+   * Syncfusion.XlsIO.Base
+   
+5. Add the following code for creating ReportViewer using code.
 
-   ~~~xml
-   <Window x:Class="WpfApplication6.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-   Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-   <Grid>
-
-   <syncfusion:ReportViewer Name="reportViewer1" />
-
+   ~~~ xml
+   <sync:ChromelessWindow x:Class="Syncfusion.Samples.ReportView"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   xmlns:sync="http://schemas.syncfusion.com/wpf"
+   xmlns:local="clr-namespace:Syncfusion.Samples.ViewModel"
+   xmlns:localUtil="clr-namespace:Syncfusion.Samples.Util"
+   Title="Product Catalog" WindowStartupLocation="CenterScreen" SnapsToDevicePixels="True" WindowState="Maximized" TitleTextAlignment="Center" ShowIcon="False" UseNativeChrome="True" Icon="App.ico">
+   <Grid Name="gridSkeleton" localUtil:EventAttachUtil.AddWindowLoaded="True">
+       <Border Name="groupBoxReportViewer" BorderThickness="0" >            
+           <Grid>
+               <sync:ReportViewer Name="viewer" /> 
+           </Grid>
+       </Border>
    </Grid>
+   </sync:ChromelessWindow> 
+   ~~~
+   
+6. Set Reportpath and Processingmode to the Report Viewer.
 
-   </Window> 
-
+   ~~~ xml
+   <sync:ReportViewer Name="viewer" ReportPath="..\ReportTemplate\InvoiceTemplate.rdl" ProcessingMode="Remote" />
    ~~~
 
-3. Set the ReportPath to load the report in Report Viewer from a local machine.
+7. Set Visual Style to the Report Viewer.  
 
-   ~~~xml
-   <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    
-   Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    
-   <Grid>
-    
-   <syncfusion:ReportViewer Name="reportViewer1" ReportPath="D:\ReportTemplate\Invoice.rdl"/>
-   
-   </Grid>
-
-   </Window> 
-   
+   ~~~ csharp
+   SkinStorage.SetVisualStyle(this, "Metro");
    ~~~
-  
-
-4. To render the provided report in Report Viewer, call the RefreshReport method in window or parent control loaded event.
    
-   ~~~ js
-   this.Loaded += (sender, arg) =>
-   
-   {
-   
-   // To Render the Report in ReportViewer.
-   
-   this.reportViewer1.RefreshReport();
-   
-   };
-   
-   ~~~
- 
-   
-5. Run the application. The following output displays.
+8. Run the sample application and you can see the Report Viewer as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img3.png)
-
-   ReportViewer sample demo
-   {:.caption}
    
-6. Click export drop-down button in Report Viewer toolbar and select PDF or XPS as needed. The report is exported into PDF or 
-   XPS formats, respectively.
+## Show RDLC Reports
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+1. Assign reportPath and ProcessingMode to Report Viewer.
 
-   PDF and XPS options in Report Viewer
-   {:.caption}
+   ~~~ csharp
+   Syncfusion.Windows.Reports.Viewer.ReportViewer viewer= new Syncfusion.Windows.Reports.Viewer.ReportViewer;
+   viewer.ReportPath=@"../ReportTemplate/RDLC/ProductCatalog.rdlc";
+   viewer.ProcessingMode = ProcessingMode.Local;
+   viewer.RefreshReport();
+   ~~~
    
-The following output is the exported PDF report.
+2. Set Datasource to the RDLC Report.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ~~~ csharp
+   viewer.DataSources.Clear();
+   viewer.DataSources.Add(new ReportDataSource { Name = "ProductCatalog", Value = ProductCatalog.GetData() });
+   ~~~
+   
+3. Assign values for the datasource in RDLC.
 
-Exported PDF Report
-{:.caption}
+   ~~~ csharp
+   #region Product details
+
+   public class ProductCatalog
+   {
+       public string ProdSubCat { get; set; }
+       public string ProdModel { get; set; }
+       public string ProdCat { get; set; }
+       public string Description { get; set; }
+       public string ProdName { get; set; }
+       public string ProductNumber { get; set; }
+       public string Color { get; set; }
+       public string Size { get; set; }
+       public double? Weight { get; set; }
+       public double? StandardCost { get; set; }
+       public string Style { get; set; }
+       public string Class { get; set; }
+       public double? ListPrice { get; set; }
+       public static IList GetData()
+       {
+           List<ProductCatalog> datas = new List<ProductCatalog>();
+           ProductCatalog data = null;
+           data = new ProductCatalog()
+           {
+               ProdSubCat = "Road Frames",
+               ProdModel = "HL Road Frame",
+               ProdCat = "Components",
+               Description = "Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.",
+               ProdName = "HL Road Frame - Black, 58",
+               ProductNumber = "FR-R92B-58",
+               Color = "Black",
+               Size = "58",
+               Weight = 2.24,
+               StandardCost = 1059.3100,
+               Style = "U ",
+               Class = "H ",
+               ListPrice = 1431.5000
+           };
+           datas.Add(data);
+           data = new ProductCatalog()
+           {
+               ProdSubCat = "Road Frames",
+               ProdModel = "HL Road Frame",
+               ProdCat = "Components",
+               Description = "Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.",
+               ProdName = "HL Road Frame - Red, 58",
+               ProductNumber = "FR-R92R-58",
+               Color = "Red",
+               Size = "58",
+               Weight = 2.24,
+               StandardCost = 1059.3100,
+               Style = "U ",
+               Class = "H ",
+               ListPrice = 1431.5000
+           };
+           datas.Add(data);
+           data = new ProductCatalog()
+           {
+               ProdSubCat = "Helmets",
+               ProdModel = "Sport-100",
+               ProdCat = "Accessories",
+               Description = "Universal fit, well-vented, lightweight , snap-on visor.",
+               ProdName = "Sport-100 Helmet, Red",
+               ProductNumber = "HL-U509-R",
+               Color = "Red",
+               Size = "",
+               Weight = null,
+               StandardCost = 13.0863,
+               Style = "",
+               Class = "",
+               ListPrice = 34.9900
+           };
+		   datas.Add(data);
+           return datas;
+       }
+   }
+   #endregion
+   ~~~
+   
+4. Run the application. The following output is displayed.
+
+   ![](Getting-Started_images/Getting-Started_img4.png) 
+
+## Load SSRS Reports
+
+1. To load SSRS reports, initialize Report Viewer control and set the ReportPath, ProcessingMode and ReportingServer URL.
+
+   ~~~ csharp
+   Syncfusion.Windows.Reports.Viewer.ReportViewer viewer = new Syncfusion.Windows.Reports.Viewer.ReportViewer();
+   viewer.ReportPath = @"/SSRSSamples/Territory Sales";
+   viewer.ReportServerUrl = @"http://mvc.syncfusion.com/reportserver";
+   viewer.ProcessingMode = ProcessingMode.Remote;
+   viewer.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
+   ~~~
+   
+2. Add the credential information to the datasource.
+
+   ~~~ csharp
+   List<DataSourceCredentials> crdentials = new List<DataSourceCredentials>();
+
+   foreach (var dataSource in viewer.GetDataSources())
+   {
+       DataSourceCredentials credn = new DataSourceCredentials();
+       credn.Name = dataSource.Name;
+       credn.UserId = "ssrs1";
+       credn.Password = "RDLReport1";
+       crdentials.Add(credn);
+   }
+   viewer.SetDataSourceCredentials(crdentials);
+   viewer.RefreshReport();
+   ~~~
+   
+3. Run the application. The following output displays.
+
+   ![](Getting-Started_images/Getting-Started_img5.png)

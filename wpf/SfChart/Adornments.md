@@ -301,7 +301,36 @@ The following code explains how to add connector line to the adornments.
 
 ![](Adornments_images/Adornments_img3.png)
 
+## SmartLabel Alignment
 
+LabelPosition property is used for aligning the labels in adornments. It is an enum property and the default value of this property is default.
+
+<table>
+<tr>
+<th>
+Enum Value</th><th>
+Description</th></tr>
+<tr>
+<td>
+Default</td><td>
+The labels are positioned at the  center position of the series. HorizontalAligment and VerticalAlignment works if it set to the AdornmentInfo.</td></tr>
+<tr>
+<td>
+Auto</td><td>
+The labels are aligned automatically that does not intersect with the series. If the adornment label exceeds the chart area it made them to bring inside the chart area </td></tr>
+<tr>
+<td>
+Inner</td><td>
+The labels are aligned in the inner position of the series.</td></tr>
+<tr>
+<td>
+Outer</td><td>
+The labels are aligned in the outer position of the series.</td></tr>
+<tr>
+<td>
+Center</td><td>
+The labels are aligned at the center position.</td></tr>
+</table>
 
 ## SmartLabel support for CircularSeries
 
@@ -328,7 +357,7 @@ This property enables you to define the connector mode for connector line. It ca
 <tr>
 <td>
 EnableSmartLabels</td><td>
-This property is used to enable or disable the smart labels support.</td></tr>
+Gets or sets the boolean value that  enables or disables the smart labels support.</td></tr>
 <tr>
 <td>
 UseSeriesPalette</td><td>
@@ -503,7 +532,7 @@ Gets or sets the VerticalAlignment value that is used to align the adornment to 
 <tr>
 <td>
 ShowMarker</td><td>
-Gets or sets the value that disables or enables the marker.</td></tr>
+Gets or sets the boolean value that disables or enables the marker.</td></tr>
 <tr>
 <td>
 Symbol</td><td>
@@ -688,8 +717,6 @@ SegmentLabelFormat="# cm">
 </syncfusion:ColumnSeries>    
 
 {% endhighlight %}
-
-
 
 ![](Adornments_images/Adornments_img10.png)
 

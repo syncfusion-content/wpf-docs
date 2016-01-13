@@ -9,7 +9,7 @@ documentation: ug
 
 # Track ball
 
-This is used to indicate the value point on mouse move and this feature applicable for line and area sparkline.
+This is used to indicate the value point on mouse move and this feature is applicable for line and area sparkline.
 
 {% highlight xaml %}
 

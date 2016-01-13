@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize the marker for specific data point
 
-We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherite the MarkerTemplateSelector class and override the SelectTemplate method.
+We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherit the MarkerTemplateSelector class and override the SelectTemplate method.
 
 {% tabs %}
 

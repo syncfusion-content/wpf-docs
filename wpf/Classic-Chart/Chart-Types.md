@@ -312,12 +312,6 @@ The following code example illustrates the template for the FastSpline chart:
 </DataTemplate>
 {% endhighlight  %}
 
-### Sample Link
-
-A sample for FastSpline is placed in the following location:
-
-[http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast Charts/Fast](http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast%20Charts/) Chart Types Demo
-
 ### Adding FastSpline Chart to an Application 
 
 To add FastSpline chart to an application do the following:
