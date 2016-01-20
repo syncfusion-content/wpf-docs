@@ -202,7 +202,7 @@ _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application
 
 ## Creating a new Excel Workbook
 
-A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6285.html) method of SfSpreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
+A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Create.html) method of SfSpreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
 
 {% tabs %}
 {% highlight c# %}
@@ -215,22 +215,22 @@ A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/
 
 ## Opening the Existing Excel Workbook
 
-The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6297.html) method in various ways,
+The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Open.html) method in various ways,
 
 {% tabs %}
 {% highlight c# %}
 
 //Using Stream,
 
- spreadsheet.Open (Stream file)
+ spreadsheet.Open (Stream file);
 
 //Using String,
 
- spreadsheet.Open (string file)
+ spreadsheet.Open (string file);
 
 //Using Workbook,
 
- spreadsheet.Open(IWorkbook workbook)
+ spreadsheet.Open(IWorkbook workbook);
       
 {% endhighlight %}
 {% endtabs %}
@@ -253,12 +253,34 @@ Opening Excel File in SfSpreadsheet
 
 ## Saving the Excel Workbook
 
-The Excel workbook can be saved in SfSpreadsheet using [Save](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6307.html) method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. You can also use [SaveAs](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6308.html) method directly to save the existing excel file with modifications.
+The Excel workbook can be saved in SfSpreadsheet using [Save](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Save.html) method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. 
 
 {% tabs %}
 {% highlight c# %}
 
     spreadsheet.Save();
 
+{% endhighlight %}
+{% endtabs %}
+
+You can also use [SaveAs](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~SaveAs.html) method directly to save the existing excel file with modifications.
+
+The SaveAs method in SfSpreadsheet can be used in various ways,
+
+{% tabs %}
+{% highlight c# %}
+
+//Using Stream,
+
+ spreadsheet.SaveAs (Stream file);
+
+//Using String,
+
+ spreadsheet.SaveAs (string file);
+
+//For Dialog box,
+
+ spreadsheet.SaveAs();
+      
 {% endhighlight %}
 {% endtabs %}

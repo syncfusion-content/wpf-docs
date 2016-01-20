@@ -65,7 +65,7 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 
 ### Hiding Rows/Columns
 
-SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic6537.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic6536.html) method
+SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +88,7 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by [Hid
 
 ### Unhiding Rows/Columns
 
-Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic6639.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic6634.html) methods.
+Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,6 +131,8 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 {% endhighlight %}
 {% endtabs %}
 <br/>
+
+N> Incase if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
 
 ## Freeze Panes
 

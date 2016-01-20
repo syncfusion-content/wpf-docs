@@ -13,7 +13,7 @@ Ribbon Customization can be done in two ways,
 
 __Using__ __Control__ __Template__:
 
-You can customize the Ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6348.html). 
+You can customize the Ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html). 
 
 __Using__ __Event__:
 
