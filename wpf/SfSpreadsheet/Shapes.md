@@ -15,9 +15,9 @@ documentation: ug
 
 SfSpreadsheet provides support to import charts from excel which are used to represent numeric data in graphical format to make it easier to understand large quantities of data.
 
-To import the charts into SfSpreadsheet, need to create an instance of [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9639.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8157.html) collection. The [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9639.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll “
+To import the charts into SfSpreadsheet, need to create an instance of [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll “
 
-Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9263.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by usi
 {% endhighlight %}
 {% endtabs %}
 
-For adding the Charts in SfSpreadsheet at runtime, use **AddChart** method, also you can resize and reposition the chart.
+For adding the Charts in SfSpreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,9 +58,9 @@ shape.Width = 300;
 
 ## Sparklines
 
-To import the Sparklines into SfSpreadsheet, need to create an instance of [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9649.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic8157.html) collection. The [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9649.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll”
+To import the Sparklines into SfSpreadsheet, need to create an instance of [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll”
 
-Add the SparklineCellRenderer into the GraphicCellRenderers collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/topic9264.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Add the SparklineCellRenderer into the GraphicCellRenderers collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ Add the SparklineCellRenderer into the GraphicCellRenderers collection by using 
 
 ## Image
 
-SfSpreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use **AddImage** method and also you can resize and reposition the image.
+SfSpreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use [AddImage](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddImage.html) method and also you can resize and reposition the image.
 
 {% tabs %}
 {% highlight c# %}
@@ -96,7 +96,7 @@ shape.Width = 200;
 
 ## Text Box
 
-SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the richtext box at run time, use **AddTextBox** method
+SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the richtext box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 
 {% tabs %}
 {% highlight c# %}
