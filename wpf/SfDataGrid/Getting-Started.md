@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfDataGrid | WPF | Syncfusion
-description: getting started
+description: Getting started with SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -9,857 +9,566 @@ documentation: ug
 
 # Getting Started
 
-This Section starts with Assemblies deployment, Subsequent sections that take you through the structure of SfDataGrid and explains how to create Simple application with SfDataGrid, how to apply grouping, sorting and filtering SfDataGrid.
+## Assembly deployment
 
-## Assemblies Deployment
-
-This topic describes assembly that is required in your WPF application when you want to use SfDataGrid.Certain assemblies are deployed in your application, whereas others that offer additional functionality like exporting is deployed optionally based on your requirements. The assemblies that are added is in same version.  
-
- The following is the list of assemblies.
-
-List of Assemblies
+The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
 
 <table>
 <tr>
 <th>
-Demanded Assemblies</th><th>
-Description</th></tr>
+Required assemblies
+</th>
+<th>
+Description
+</th>
+</tr>
 <tr>
 <td>
-Syncfusion.Data.WPF</td><td>
-Covers basic data processing like sorting, grouping, paging and filtering.</td></tr>
+Syncfusion.Data.WPF
+</td>
+<td>
+Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[CollectionViewAdv](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv.html)'| markdownify }} which is responsible for data processing operations handled in SfDataGrid.
+</td>
+</tr>
 <tr>
 <td>
-Syncfusion.SfGrid.WPF</td><td>
-Covers SfDataGrid and other elements included. </td></tr>
+Syncfusion.SfGrid.WPF
+</td>
+<td>
+Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present **Syncfusion.UI.Xaml.Grid** namespace. This namespace also added in below Syncfusion wpf schema.<br/><br/>**http://schemas.syncfusion.com/wpf**
+</td>
+</tr>
 <tr>
 <td>
-Syncfudion.Shared.WPF</td><td>
-Covers editors like CurrencyTextBox, PercentEdit, and DateTimeEdit.</td></tr>
-<tr>
+Syncfudion.Shared.WPF
+</td>
 <td>
-Optional Assemblies</td><td>
-Description</td></tr>
-<tr>
-<td>
-Syncfusion.SfGridConverter.WPF</td><td>
-Covers classes for exporting Grid to excel and Pdf.</td></tr>
-<tr>
-<td>
-Syncfusion.XlsIO.Base.WPF</td><td>
-Syncfusion.SfGridConverter.WPF dll refer to this dll to create and manipulate Excel data.</td></tr>
-<tr>
-<td>
-Syncfusion.Pdf.Base</td><td>
-Syncfusion.SfGridConverter.WPF dll refer to this dll to create and manipulate Pdf.</td></tr>
+Syncfudion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in SfDataGrid. 
+</td>
+</tr>
 </table>
 
-## Control Structure
+In order to use export to excel and export to pdf functionalities of SfDataGrid control, add the reference to following assemblies,
 
-The following screenshot displays you the elements in SfDataGrid.
+<table>
+<tr>
+<th>
+Optional Assemblies
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Syncfusion.SfGridConverter.WPF
+</td>
+<td>
+Syncfusion.SfGridConverter.WPF contains static extension classes for exporting SfDataGrid to excel and Pdf in Syncfusion.UI.Xaml.Grid.Converter namespace.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.XlsIO.Base.WPF
+</td>
+<td>
+Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and manipulating excel files.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Pdf.Base
+</td>
+<td>
+Syncfusion.Pdf.Base contains fundamental and base classes for creating Pdf.
+</td>
+</tr>
+</table>
+
+## Creating simple application with SfDataGrid
+
+In this walk through, you will create WPF application that contains SfDataGrid control. 
+
+1. [Creating project](#creating_the_project)
+2. [Adding control via Designer](#adding_control_via_designer)
+3. [Adding control manually in XAML](#adding_control_manually_in_xaml)
+4. [Adding control manually in C#](#adding_control_manually_in_c#)
+5. [Creating Data Model for application](#creating_data_model_for_application)
+6. [Binding to Data](#binding_to_data)
+7. [Defining Columns](#defining_columns)
+8. [Selection](#selection)
+9. [Sorting, Grouping, and Filtering](#sorting_grouping_and_filtering)
+10. [Editing](#editing)
+
+## Creating the project
+
+Create new WPF Project in Visual Studio to display SfDataGrid with data objects.
+
+## Adding control via Designer
+
+SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+
+![](Getting-Started_images/image1.png)
 
 
+## Adding control manually in XAML
 
-![](Getting-Started_images/Getting-Started_img1.png)
+In order to add control manually in XAML, do the below steps,
 
+1. Add the below required assembly references to the project,
+	* Syncfusion.Data.WPF 
+	* Syncfusion.SfGrid.WPF
+	* Syncfudion.Shared.WPF
+2. Import Syncfusion wpf schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+3. Declare SfDataGrid control in XAML page.
+{% tabs %}
+{% highlight xaml %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:SfDataGrid  x:Name="dataGrid"/>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
 
- Elements of SfDataGrid
- {:.caption}
-## Create a Simple Application with DataGrid
+## Adding control manually in C#
 
-Following steps demonstrate how to create a DataGrid and bind data to it:
+In order to add control manually in C#, do the below steps,
 
-1. Create new WPF application in Visual Studio.
-2. Open the Visual Studio tool box. Navigate to “Syncfusion Controls” tab, and drag the SfDataGrid toolbox item to the Designer window. Now, rename the SfDataGrid to “sfgrid”.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-   Syncfusion Control tab
-   {:.caption}
-   When you drag the SfDataGrid toolbox item to the window, it automatically adds the required references to the current application.
-
-   To add the SfDataGrid using code, you can add the following assemblies to the project.
-
-   * Syncfusion.Data.WPF
-   * Syncfusion.SfGrid.WPF
-   * Syncfusion.Shared.WPF
-3. Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class files and save it as__OrderInfo.cs file.
-
-
-
+1. Add the below required assembly references to the project,
+	* Syncfusion.Data.WPF 
+	* Syncfusion.SfGrid.WPF
+	* Syncfudion.Shared.WPF
+2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid**
+3. Create SfDataGrid control instance and add it to the Page.
+{% tabs %}
 {% highlight c# %}
-
-
-
-			public class OrderInfo
-
-			{
-
-				int orderID;
-
-				string customerId;
-
-				string country;
-
-				string customerName;
-
-				string shippingCity;
-
-
-
-				public int OrderID
-
-				{
-
-					  get {   return orderID;  }
-
-					  set {   orderID = value; }
-
-				}
-
-
-
-				public string CustomerID
-
-				{
-
-					  get {  return customerId; }
-
-					  set {  customerId = value; }
-
-				}
-
-
-
-				public string CustomerName
-
-				{
-
-					  get {  return customerName; }
-
-					  set {  customerName = value;}
-
-				}
-
-
-
-				public string Country
-
-				{
-
-					  get { return country; }
-
-					  set  {  country = value; }
-
-				}
-
-
-
-				public string ShipCity
-
-				{
-
-					 get {  return shippingCity; }
-
-					 set {  shippingCity = value; }
-
-				}
-
-				public OrderInfo(int orderId, string customerName, string country, string     
-
-				customerId,string shipCity)
-
-				{
-
-					 this.OrderID = orderId;
-
-					 this.CustomerName = customerName;
-
-					 this.Country = country;
-
-					 this.CustomerID = customerId;
-
-					 this.ShipCity = shipCity;
-
-				}
-
-			}
-
+using Syncfusion.UI.Xaml.Grid;
+namespace WpfApplication1
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfDataGrid dataGrid = new SfDataGrid();
+            Root_Grid.Children.Add(dataGrid);
+		}
+	}
+}
 {% endhighlight %}
+{% endtabs %}
 
-4. Add the following code example in a newly created class file and save it as__OrderInfoRepositiory.cs file.
+## Creating Data Model for sample application
 
+SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
-
-
-
+1. Create data object class named “OrderInfo” and declare properties as shown below,
+{% tabs %}
 {% highlight c# %}
-
-			public class OrderInfoRepositiory
-
-			{
-
-				ObservableCollection<OrderInfo> orderCollection;
-
-				public ObservableCollection<OrderInfo> OrderInfoCollection
-
-				{
-
-					get { return orderCollection; }
-
-					set { orderCollection = value; }
-
-				}
-
-				public OrderInfoRepositiory()
-
-				{
-
-					orderCollection = new ObservableCollection<OrderInfo>();
-
-					this.GenerateOrders();
-
-				}
-
-				private void GenerateOrders()
-
-				{
-
-					orderCollection.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
-
-					orderCollection.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
-
-					orderCollection.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
-
-					orderCollection.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
-
-					orderCollection.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
-
-					orderCollection.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
-
-					orderCollection.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
-
-					orderCollection.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
-
-					orderCollection.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
-
-					orderCollection.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
-
-				}
-
-			}
-
-{% endhighlight %}
-
-5. You can add Syncfusion schema (http://schemas.syncfusion.com/wpf) or namespace (Syncfusion.UI.XAML.Grid) of SfDataGrid in XAML to create SfDataGrid. Here, your sample name space to set ViewModel as data context to Grid or to Window. 
-
-
-
-
-{% highlight xaml %}
-
-			<Window x:Class="SimpleApplication.MainWindow"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					xmlns:local="clr-namespace:SimpleApplication"
-
-					xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-{% endhighlight %}
-
-
-
-6. You need to set data context for (Window or Grid) or you can set it using Resource also. You can bind data to DataGrid by using the SfDataGrid.ItemsSource__property. When you set it using data context then you should refer the following code example.
-
-
-
-
-{% highlight xaml %}
-
-			<Window.DataContext>
-
-				   <local:OrderInfoRepositiory />
-
-			</Window.DataContext>
-
-{% endhighlight %}
-   You can bind the data using the following code example.
-
-
-{% highlight xaml %}
-
-
-              <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection}" />
-
-
-{% endhighlight %}
-
-
-   To set the data context using Resource, you can refer the following code example.
-
-
-
-
-{% highlight xaml %}
-
-
-
-			<Window.Resources>
-
-				<local:OrderInfoRepositiory x:Key="data" />
-
-			</Window.Resources>
-{% endhighlight %}
-
-   You can bind the data using the following code example.
-
-{% highlight xaml %}
-
-      <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection, Source={StaticResource data}}" />
-
-{% endhighlight %}
-
-
-
-7. By default, the DataGrid automatically creates columns for all fields in a data source.
-8. Execute the application to render the following output.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img3.png)
-
-
-   Data Grid
-   {:.caption}
-
-
-9. You can also define the columns manually by setting the SfDataGrid.AutoGenerateColumns property to ‘false’_,_ and add the GridColumn object to the SfDataGrid.Columns collection. The following code example illustrates this.
-
-
-
-
-
-{% highlight xaml %}
-
-
-			<syncfusion:SfDataGrid AutoGenerateColumns="False"
-
-								   ColumnSizer="Auto"
-
-								   ItemsSource="{Binding OrderInfoCollection}">
-
-				<syncfusion:SfDataGrid.Columns>
-
-					<syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
-
-					<syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
-
-					<syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
-
-					<syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
-
-				</syncfusion:SfDataGrid.Columns>
-
-			</syncfusion:SfDataGrid>
-
-
-{% endhighlight %}
-
-
-10. Execute the application to render the following output.
-
-
-
-    ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-    Data Grid
-    {:.caption}
-
-
-11. SfDataGrid allows you to group its data by dragging a column and drop it in GroupDropArea. To apply grouping with mouse pointer, you can enable ShowGroupDropArea and AllowGrouping.  The following code example illustrates this.
-
-
-    
-{% highlight xaml %}
-
-
-			<syncfusion:SfDataGrid ColumnSizer="Star"
-
-								   AllowGrouping="True"
-
-								   ItemsSource="{Binding OrderInfoCollection,
-
-												 Source={StaticResource data}}"
-
-								   ShowGroupDropArea="True" />
-
-{% endhighlight %}
-
-12. Execute the application and drag Order ID Column and drop it in GroupDropAreaarea. It displays the following output.
-
-
-
-    ![](Getting-Started_images/Getting-Started_img5.png)
-
-
-
-    DataGrid with ShowGroupDropArea and AllowGrouping enabled
-    {:.caption} 
-
-
-13. SfDataGrid allows you to apply sorting on its data by setting AllowSorting to ‘true. Following code example illustrates this.
-
-
-{% highlight xaml %}
-
-
-			<syncfusion:SfDataGrid AllowSorting="True"
-
-								   ColumnSizer="Star"
-
-								   ItemsSource="{Binding OrderInfoCollection,                                  
-
-														 Source={StaticResource data}}" />
-
-{% endhighlight %}
-
-14. Execute the application and click header cell to sort the data and the following output is displayed.
-
-
-
-    ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-    DataGrid with AllowSorting property set to true
-	{:.caption}
-
-
-
-15. SfDataGrid provides support for Excel inspired UI for filtering. You can enable this AllowFiltering property to ‘true’. 
-
-
-
-{% highlight xaml %}
-
-
-			<syncfusion:SfDataGrid AllowFiltering="True"
-
-								   ColumnSizer="Star"
-
-								   ItemsSource="{Binding OrderInfoCollection,
-
-														 Source={StaticResource data}}" />
-
-{% endhighlight %}
-
-16. Execute the application; you can see that Header loaded with filter toggle button. 
-
-
-
-    ![](Getting-Started_images/Getting-Started_img7.png)
-
-
-    DataGrid Header loaded with filter toggle button
-	{:.caption}
-
-
-
-17. When you click filter toggle button, you can get a filter pop-up window as displayed in the following screenshot. Now you can filter the data like in Excel.
-
-
-
-    ![](Getting-Started_images/Getting-Started_img8.png)
-
-
-
-    Filter pop-up window
-	{:.caption}
-    
+public class OrderInfo
+{
+    int orderID;
+    string customerId;
+    string country;
+    string customerName;
+    string shippingCity;
 	
-## Create Master-Details view DataGrid
+    public int OrderID
+    {
+        get {   return orderID;  }
+        set {   orderID = value; }
+    }
 
-Master-Detail view also called as Hierarchical or Nested Grid can be used to display master-details relationship and collection properties in Business model in hierarchical (Tree) structure.  This section explains you simple steps to create Master-Details View DataGrid to display Collection properties present in Business Model.
+    public string CustomerID
+    {
+        get {  return customerId; }
+        set {  customerId = value; }
+    }
 
-1. Create New WPF Project in Visual Studio.
-2. Add required assemblies as mentioned in Getting Started section.
-3. Now, create Data Source. 
-   * Create a business model with Collection property. This value is displayed in seperate Grid under the parent record in Grid. 
-   * In the following code example, OrderInfo business class directly bounds to SfDataGrid ans it has ProductDetails property of type List<ProductInfo>. ProductDetails are not displayed in Grid like other property. You can display ProductDetails property collection in seperate Grid under OrderInfo record in Grid using NestedGrid.
+    public string CustomerName
+    {
+        get {  return customerName; }
+        set {  customerName = value;}
+    }
 
+    public string Country
+    {
+        get { return country; }
+        set  {  country = value; }
+    }
 
+    public string ShipCity
+    {
+        get {  return shippingCity; }
+        set {  shippingCity = value; }
+    }
 
+    public OrderInfo(int orderId, string customerName, string country, string     
+    customerId,string shipCity)
+    {
+        this.OrderID = orderId;
+        this.CustomerName = customerName;
+        this.Country = country;
+        this.CustomerID = customerId;
+        this.ShipCity = shipCity;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface. 
 
+2. Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor. 
+{% highlight c# %}
+public class ViewModel
+{
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; }
+    }
 
-   Add the following code example in a newly created class file and save it as OrderInfo.C#
+    public ViewModel()
+    {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
+    }
 
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+       _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+    }
+}
+{% endhighlight %}
 
+## Binding to Data
+
+To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property to an **IEnumerable** implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object.  
+
+Bind the collection created in previous step to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property in XAML by setting ViewModel as DataContext.
+
+{% tabs %}
+{% highlight xaml %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="WpfApplication1.MainWindow"
+        xmlns:local="clr-namespace:WpfApplication1"
+        Title="MainWindow" Height="350" Width="525">
+		
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+
+    <Grid x:Name="Root_Grid">
+        <syncfusion:SfDataGrid x:Name="dataGrid"  ItemsSource="{Binding Orders}" />
+    </Grid>
+	
+</Window>
+{% endhighlight %}
 
 {% highlight c# %}
-
-
-				public class OrderInfo
-
-				{
-
-					int orderID;
-
-					string customerId;
-
-					string country;
-
-					string customerName;
-
-					string shippingCity;
-
-					List<ProductInfo> productDetails;
-
-
-
-					public int OrderID
-
-					{
-
-						get { return orderID; }
-
-						set { orderID = value; }
-
-					}
-
-
-
-					public string CustomerID
-
-					{
-
-						get { return customerId; }
-
-						set { customerId = value; }
-
-					}
-
-
-
-					public string CustomerName
-
-					{
-
-						get { return customerName; }
-
-						set { customerName = value; }
-
-					}
-
-
-
-					public string Country
-
-					{
-
-						get { return country; }
-
-						set { country = value; }
-
-					}
-
-
-
-					public string ShipCity
-
-					{
-
-						get { return shippingCity; }
-
-						set { shippingCity = value; }
-
-					}
-
-
-
-					public List<ProductInfo> ProductDetails
-
-					{
-
-						get { return productDetails; }
-
-						set { productDetails = value; }
-
-					}
-
-					public OrderInfo(int orderId, string customerName, string country, string
-
-					customerId, string shipCity, List<ProductInfo> productdetails)
-
-					{
-
-						this.OrderID = orderId;
-
-						this.CustomerName = customerName;
-
-						this.Country = country;
-
-						this.CustomerID = customerId;
-
-						this.ShipCity = shipCity;
-
-						this.ProductDetails = productdetails;
-
-					}
-
-				}
-
+ViewModel viewModel = new ViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
 {% endhighlight %}
+{% endtabs %}
 
-   The ProductDetails property is a List of ProductInfo type. Here you can find the class information of ProductInfo class. You can add the following code example in a newly created class file and save it as ProductInfo.cs file
+Now run the application and you can expect the see the below output,
 
-
-
-
-    {% highlight c# %}
-
-			public class ProductInfo
-
-			{
-
-				int orderId;
-
-				string productName;
+![](Getting-Started_images/_Image2.png)
 
 
+## Defining Columns
 
-				public int OrderID
+By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. The following table lists the column types and it’s constraints for auto column generation.
 
-				{
+<table>
+<tr>
+<th>
+Generated Column Type
+</th>
+<th>
+Data Type/Attribute
+</th>
+</tr>
+<tr>
+<td>
+GridTextColumn
+</td>
+<td>
+Property of type String and any other type apart from below specified cases.
+</td>
+</tr>
+<tr>
+<td>
+GridNumericColumn
+</td>
+<td>
+Property of type Int or Double
+</td>
+</tr>
+<tr>
+<td>
+GridCurrencyColumn
+</td>
+<td>
+Property with Currency DataType attribute.<br/><br/>[DataType(DataType.Currency)]
+</td>
+</tr>
+<tr>
+<td>
+GridMaskColumn
+</td>
+<td>
+Property with PhoneNumer DataType attribute.<br/><br/>[DataType(DataType.PhoneNumber)]
+</td>
+</tr>
+<tr>
+<td>
+GridDateTimeColumn
+</td>
+<td>
+Property of type DateTime
+</td>
+</tr>
+<tr>
+<td>
+GridCheckBoxColumn
+</td>
+<td>
+Property of type Bool
+</td>
+</tr>
+</table>
 
-					get { return orderId; }
+When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingColumn_EV.html) event to customize or cancel the columns before they are added to the SfDataGrid. 
 
-					set { orderId = value; }
+You can prevent the automatic column generation by setting [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateColumns.html# "") property to false. When [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateColumns.html# "") property is false, you have to define the columns to be displayed as below,
 
-				}
-
-
-
-				public string ProductName
-
-				{
-
-					get { return productName; }
-
-					set { productName = value; }
-
-				}
-
-			}
-
+{% tabs %}
+{% highlight xml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"  
+                       ItemsSource="{Binding Orders}" 
+                       AutoGenerateColumns="False">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="CustomerID"/>
+        <syncfusion:GridTextColumn MappingName="CustomerName"/>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
-
-4. Now create data to bind to SfDataGrid. Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
-
-
 
 {% highlight c# %}
-
-
-			public class OrderInfoRepositiory
-
-			{
-
-				ObservableCollection<OrderInfo> orderCollection;        
-
-				public ObservableCollection<OrderInfo> OrderInfoCollection
-
-				{
-
-					get { return orderCollection; }
-
-					set { orderCollection = value; }
-
-				}
-
-				public OrderInfoRepositiory()
-
-				{
-
-					orderCollection = new ObservableCollection<OrderInfo>();
-
-					this.GenerateProducts();
-
-					OrderInfoCollection = GenerateOrders();            
-
-				}
-
-				public ObservableCollection<OrderInfo> GenerateOrders()
-
-				{
-
-					ObservableCollection<OrderInfo> orders = new ObservableCollection<OrderInfo>();
-
-
-
-					orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin", getorder(1001)));
-
-					orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F.", getorder(1002)));
-
-					orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F.", getorder(1003)));
-
-					orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London", getorder(1004)));
-
-					orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå", getorder(1005)));
-
-					orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim", getorder(1006)));
-
-					orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg", getorder(1007)));
-
-					orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid", getorder(1008)));
-
-					orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille", getorder(1009)));
-
-					orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen", getorder(1010)));
-
-
-
-					return orders;
-
-				}
-
-				List<ProductInfo> prod = new List<ProductInfo>();
-
-				public void GenerateProducts()
-
-				{
-
-					prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Bike1" });
-
-					prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "Bike1" });
-
-					prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "Bike3" });
-
-					prod.Add(new ProductInfo() { OrderID = 1003, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1003, ProductName = "Bike1" });
-
-					prod.Add(new ProductInfo() { OrderID = 1004, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1004, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "Bike3" });
-
-					prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "Bike4" });
-
-					prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "Bike5" });
-
-					prod.Add(new ProductInfo() { OrderID = 1006, ProductName = "Bike1" });
-
-					prod.Add(new ProductInfo() { OrderID = 1006, ProductName = "Bike2" });
-
-					prod.Add(new ProductInfo() { OrderID = 1007, ProductName = "Bike1" });
-
-					prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "Bike4" });
-
-					prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "Bike6" });
-
-					prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "Bike7" });
-
-				}
-
-				public List<ProductInfo> getorder(int i)
-
-				{
-
-					List<ProductInfo> product = new List<ProductInfo>();
-
-					foreach (var or in prod)
-
-						if (or.OrderID == i)
-
-							product.Add(or);
-
-					return product;
-
-				}
-
-			}
-
+SfDataGrid dataGrid = new SfDataGrid();
+dataGrid.AutoGenerateColumns = false;
+dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID" });
+dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerName" });
 {% endhighlight %}
+{% endtabs %}
 
-5. Now open XAML page in your application. Add names space for SfDataGrid and create simple application with SfDataGrid.
-6. SfDataGrid.DetailsViewDefinition in SfDataGrid creates Master-Detail DataGrid and RelationalColumn property in GridViewDefinition creates ItemsSource for associate ChildGrid from Parent Grid Data. 
-7. Create Details-View Grid as in the following code example. There are some limitations for Details-View Grid that is refered using Master-Details View Section.
+Below are the list of column types provided in SfDataGrid.
 
+<table>
+<tr>
+<th>
+Column Type
+</th>
+<th>
+Comments
+</th>
+</tr>
+<tr>
+<td>
+GridTextColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts textual content in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridNumericColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **DoubleTextBox** controls in its cells which is used to format and display Numeric values.
+</td>
+</tr>
+<tr>
+<td>
+GridCurrencyColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **CurrencyTextBox** controls in its cells which is used to display numeric values with currency format.
+</td>
+</tr>
+<tr>
+<td>
+GridPercentColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **PercentTextBox** controls in its cells which is used to display numeric values with percent format.
+</td>
+</tr>
+<tr>
+<td>
+GridMaskColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **MaskedTextBox** controls in its cells which is used to display textual content by applying Mask. 
+</td>
+</tr>
+<tr>
+<td>
+GridTimeSpanColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **TimeSpanEdit** controls in its cells which is used to display format and display TimeSpan values.
+</td>
+</tr>
+<tr>
+<td>
+GridDateTimeColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **DateTimeEdit** controls in its cells which is used to display and format DateTime values.
+</td>
+</tr>
+<tr>
+<td>
+GridComboBoxColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **ComboBox** controls in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridCheckBoxColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **CheckBox** controls in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridImageColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **Image** controls in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridHyperlinkColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts **Hyperlink** controls in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridTemplateColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts template-specified content in its cells
+</td>
+</tr>
+<tr>
+<td>
+GridUnboundColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts textual or template-specified content which are not actually bound with data object of row.
+</td>
+</tr>
+<tr>
+<td>
+GridMultiColumnDropdownList
+</td>
+<td>
+Represents SfDataGrid column that hosts **SfMultiColumnDropDownControl** in its cells.
+</td>
+</tr>
+</table>
 
+## Selection
 
+By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionMode.html) property to specify whether a user can select single row or cell, or multiple rows or cells.  Set the [SfDataGrid.SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) property to specify whether rows can be selected, or cells can selected.
+
+When SelectionUnit is Row, you can get information about the rows that are selected using [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItems.html) properties. 
+
+When [SfDataGrid.SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) is Cell, you can get information about the cells that are selected by calling [SfDataGrid.GetSelectedCells](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GetSelectedCells.html) method. 
+
+You can handle the selection operations with the help of [SfDataGrid.SelectionChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanging_EV.html) and [SfDataGrid.SelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanged_EV.html) events of SfDataGrid.
+
+## Sorting, Grouping, and Filtering
+
+**Sorting**
+
+By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnDescriptions.html) property as below,
 
 {% highlight xaml %}
-
-			<Window x:Class="SimpleApplication.MainWindow"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					xmlns:local="clr-namespace:SimpleApplication"
-
-					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-					Title="MainWindow"
-
-					Width="525"
-
-					Height="350">
-
-
-
-				<Window.DataContext>
-
-					<local:OrderInfoRepositiory />
-
-				</Window.DataContext>
-
-				<Grid>
-
-					<syncfusion:SfDataGrid AutoGenerateColumns="True"
-
-										   ColumnSizer="Star"
-
-										   ItemsSource="{Binding OrderInfoCollection}">
-
-						<syncfusion:SfDataGrid.DetailsViewDefinition>
-
-							<syncfusion:GridViewDefinition RelationalColumn="ProductDetails" />
-
-						</syncfusion:SfDataGrid.DetailsViewDefinition>
-
-					</syncfusion:SfDataGrid>
-
-				</Grid>
-
-			</Window>
-
+<syncfusion:SfDataGrid x:Name="dataGrid"  
+                       ItemsSource="{Binding Orders}" >
+    <syncfusion:SfDataGrid.SortColumnDescriptions>
+        <syncfusion:SortColumnDescription ColumnName="CustomerName"/>
+    </syncfusion:SfDataGrid.SortColumnDescriptions>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 
-8. Execute the application; Grid is loaded with Master Details Grid. Click the first record’s expander to render the following output.
+____![](Getting-Started_images/_Image3.png)
 
 
+You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html# "") and [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html# "") events. To cancel the default sort, set the Cancel property to true in  [SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html# "") event. 
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+{% highlight c# %}
+this.dataGrid.SortColumnsChanging += dataGrid_SortColumnsChanging;
+
+void dataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
+{
+    if (e.AddedItems[0].ColumnName == "CustomerName")
+    e.Cancel = true;
+}
+{% endhighlight %}
+
+**Grouping**
+
+Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowGroupDropArea.html) property, where you can group by dragging the column header and dropping it in the GroupDropArea over the column headers. You can configure the grouping by setting [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) property as below,
+
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"  
+                       ItemsSource="{Binding Orders}" >
+    <syncfusion:SfDataGrid.GroupColumnDescriptions>
+        <syncfusion:GroupColumnDescription ColumnName="CustomerName"/>
+    </syncfusion:SfDataGrid.GroupColumnDescriptions>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+
+![](Getting-Started_images/_Image4.png)
 
 
+**Filtering** can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to true, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) and [SfDataGrid.FilterChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanged_EV.html) events. 
 
-   Master-Details view DataGrid
-   {:.caption}
+![](Getting-Started_images/_Image5.png)
+
+## Editing
+
+Editing can be enabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html) property to true. Set [SfDataGrid.AllowDeleting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDeleting.html) property to specify whether user can delete rows by pressing delete key. 
+
+Set [SfDataGrid.AddNewRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowPosition.html) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
+
+You can customize the editing operations by handling [SfDataGrid.CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) and [SfDataGrid.CurrentCellEndEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellEndEdit_EV.html) events. 
 
