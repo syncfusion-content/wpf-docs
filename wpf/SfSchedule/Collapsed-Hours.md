@@ -11,7 +11,9 @@ documentation: ug
 
 For a particular Start and End time the selected hours can be hidden by using CollapsedHours property of Schedule.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
     <schedule:SfSchedule Background="White" x:Name="schedule" ScheduleType="Week">
     <schedule:SfSchedule.CollapsedHours>
@@ -29,5 +31,7 @@ For a particular Start and End time the selected hours can be hidden by using Co
     this.grid.Children.Add(schedule);
     
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](CollapsedHours_images/CollapsedHours_img1.jpeg)
