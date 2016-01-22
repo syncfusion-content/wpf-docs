@@ -12,7 +12,7 @@ documentation: ug
 DoubleTextBox accepts null values. To enable the null option you have to set the UseNullOption property to true. You can also set the NullValue property for the DoubleTextBox. When you set the null value to the Value property, by default the value of the NullValue (Default value is null)property will be assigned to the Value property. 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"              
 UseNullOption="True" NullValue="1"/> 
 {% endhighlight %} 
@@ -38,7 +38,7 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" 
 Height="25" Width="150"                             
 UseNullOption="True" NullValue="{x:Null}"/>

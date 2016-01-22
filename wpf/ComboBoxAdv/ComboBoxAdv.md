@@ -165,7 +165,7 @@ NA</td></tr>
 AllowMultiSelect property can be added directly to an application using the following code snippet.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -216,7 +216,7 @@ DefaultText property can be added directly to an application in the following wa
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ComboBoxAdv DefaultText="..Choose Items.."></syncfusion:ComboBoxAdv>
@@ -264,7 +264,7 @@ Delimiter string customization can be added directly to an application using the
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ComboBoxAdv SelectedValueDelimiter="#"></syncfusion:ComboBoxAdv>

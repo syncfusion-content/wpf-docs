@@ -18,7 +18,7 @@ To show headers in TreeMap, you can set the HeaderHeight property of TreeMapLeve
 If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by referring Header object to the datatemplate.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -57,7 +57,7 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -93,7 +93,7 @@ To show labels in TreeMap, ShowLabels of TreeMapLevel should be enabled to True.
 If LabelTemplate is specified for TreeMapLevel, then the label can be bound by referring Label object to the datatemplate.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -133,7 +133,7 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid Background="Black">
 

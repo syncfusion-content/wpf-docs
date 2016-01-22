@@ -27,7 +27,7 @@ The xmlns name space is added to the MainPage.xaml
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram to the XAML Page as shown in the following code sample.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"
@@ -51,7 +51,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. Connector’s property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"
@@ -135,7 +135,7 @@ namespace EmployeeDetails
 
 Create a collection of employees with each employee having an ID in the Epmid and the reporting person’s ID in the Parent ID. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"
@@ -182,7 +182,7 @@ Create a collection of employees with each employee having an ID in the Epmid an
 
 To populate employee information as Nodes and connectors, configure the DataSourceSettings with the DataSource, ID, and ParentId. The ID property is used as a unique identifier for each Node, and the parent ID represents the parent Node where a Node has to be connected. The following code example illustrates how to define the DataSourceSetting and set it to the Diagram.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"
@@ -223,7 +223,7 @@ To populate employee information as Nodes and connectors, configure the DataSour
 
 Now, Diagram is configured to load the employees’ information as a tree of organization chart. Next, give visual appearance for the Node. To visualize the employees’ details in the Node, a Node has to be created for each employee, and then the employee’s details are stored in the Node’s content property. To visualize the employee information, define the appearance as a data template and apply it to the Node’s content template as shown in the following code example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"
@@ -299,7 +299,7 @@ Now, Diagram is configured to load the employees’ information as a tree of org
 
 Employees are initialized, populated in the Diagram, and appearance for employees are defined. Now, place the Nodes and Connector by using the layout manager. The following code example shows how to initialize the LayoutManager, specify the layout as the DirectedTreeLayout and set it to the Diagram.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"
@@ -342,7 +342,7 @@ Employees are initialized, populated in the Diagram, and appearance for employee
 
 The final MainPage.Xaml looks like this.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window
         x:Class="EmployeeDetails.MainWindow"

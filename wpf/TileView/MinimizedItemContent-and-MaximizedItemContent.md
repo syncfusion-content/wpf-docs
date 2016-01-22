@@ -22,7 +22,7 @@ The MinimizedItemContent and MaximizedItemContent can be added to an application
 The following code example illustrates how to add the MinimizedItemContent and MaximizedItemContent to an application through XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -19,7 +19,7 @@ The following code example illustrates how to add the Data Binding to an applica
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

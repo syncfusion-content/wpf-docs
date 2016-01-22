@@ -72,7 +72,7 @@ To customize a Report Viewer, you have to modify the following control parts.
 
 The following code example illustrates a Report Viewer control template.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Style TargetType="local:ReportViewer">
         <Setter Property="Template">

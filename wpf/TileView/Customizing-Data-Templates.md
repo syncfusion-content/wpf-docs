@@ -16,7 +16,7 @@ Data template can be customized for items and headers of the control. This secti
 You can customize how a business object is displayed as Tileview using the ItemTemplate of TileViewControl. The following code example shows the usage of ItemTemplate.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
    <syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 

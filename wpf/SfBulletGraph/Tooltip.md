@@ -37,7 +37,7 @@ The SfBulletGraph tooltip is displayed only when the **ShowToolTip** property is
 
 You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip that is used to view the FeaturedMeasure value .The FeaturedMeasureToolTipTemplate is DataTemplate type by using this property the default appearance of the FeaturedMeasure tooltip can be customized.
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfBulletGraph>
             <syncfusion:SfBulletGraph.FeaturedMeasureToolTipTemplate>
@@ -59,7 +59,7 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip that is
 
 You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip that is used to view the ComparativeMeasure value. The ComparativeMeasureToolTipTemplate is DataTemplate type by using this property the default appearance of the ComparativeMeasure tooltip can be customized.
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <syncfusion:SfBulletGraph>
             <syncfusion:SfBulletGraph.ComparativeMeasureToolTipTemplate>
@@ -80,7 +80,7 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip that
 
 You can display the value of QualitativeRange of SfBulletGraph in ToolTip that is used to view theStart and End value of QualitativeRange. The QualitativeRangeToolTipTemplate is DataTemplate type by using this property the default appearance of the QualitativeRange tooltip can be customized.
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <syncfusion:SfBulletGraph >
             <syncfusion:SfBulletGraph.QualitativeRangeToolTipTemplate>

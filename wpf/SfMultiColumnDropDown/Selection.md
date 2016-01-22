@@ -79,7 +79,7 @@ In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically
 The following code example illustrates how to use TextSelectionOnFocus in SfMultiColumnDropDownControl.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

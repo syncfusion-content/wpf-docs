@@ -137,7 +137,7 @@ The following code illustrates how to change the appearance of port.
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style TargetType="Path" x:Key="shapestyle">
   <Setter Property="Fill" Value="DarkCyan"></Setter>

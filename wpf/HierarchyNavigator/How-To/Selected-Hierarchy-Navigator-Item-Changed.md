@@ -12,7 +12,7 @@ documentation: ug
 Users can handle selected item changed by using the methods Command (ICommand) property or HierarchyNavigatorSelectedItemChanged event in Hierarchy Navigator control.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:HierarchyNavigator HierarchyNavigatorSelectedItemChanged="HierarchyNavigatorSelectedItemChanged" />
 {% endhighlight  %}
 {% highlight c# %}

@@ -14,7 +14,7 @@ Assembly:  Syncfusion.SfHubTile.WPF (in Syncfusion.SfHubTile.WPF.dll)
 
 The following code sample shows how to create the hub tile from code-behind and XAML, which allows the user to set a title, image and header.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -73,7 +73,7 @@ The header will be displayed at the bottom of the hub tile.
 An image will be displayed at the center of the hub tile.
 
 The following code sample shows the usage of the Title, Header and ImageSource properties.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -148,7 +148,7 @@ Secondary content will be animated by fading the tile.
 This control resembles the Music and Video hub tiles in Windows Phone. The content will zoom in and out randomly and show a translation movement in the x- and y- axis randomly. 
 
 The following code sample shows how to create a PulsingTile in code-behind and XAML:
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -196,7 +196,7 @@ The following code sample shows how to create a PulsingTile in code-behind and X
 
 The PulseScale property specifies the range of translation in the x- and y-axis while pulsing the content.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -231,7 +231,7 @@ The PulseScale property specifies the range of translation in the x- and y-axis 
 ## PulseDuration
 
 The PulseDuration property specifies the interval for the translation done in the pulsing tile.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -264,7 +264,7 @@ The PulseDuration property specifies the interval for the translation done in th
 ## RadiusX
 
 The RadiusX property specifies the range of the translation in the pulsing tile along the x-axis.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -300,7 +300,7 @@ The RadiusX property specifies the range of the translation in the pulsing tile 
 
 The RadiusY property specifies the range of the translation in the pulsing tile along y-axis.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -338,7 +338,7 @@ The animation of a hub tile can be frozen.
 
 Hub tiles can be given specific group name. The group name will be used when we need to freeze the entire group of hub tiles.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -403,7 +403,7 @@ HubTileService.UnFreeze("Group1");
 
 Setting the IsFrozen property in a hub tile to true will freeze the animation.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

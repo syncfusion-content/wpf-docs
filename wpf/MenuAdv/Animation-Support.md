@@ -21,7 +21,7 @@ The Animation support can be used by using the PopUpAnimationType property. If t
 
 If the PopUpAnimationType property is set to Fade, the submenu will open with faded animation. If the PopUpAnimationType property is set to Slide, the submenu will open like the slide. If the PopUpAnimationType property is set to Scroll, the submenu popup open with scroll animation. The Animation support can be added to an application, as shown in the following code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

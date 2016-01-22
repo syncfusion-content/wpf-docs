@@ -15,7 +15,7 @@ Setting ScrollBarVisibility property to Visible:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 

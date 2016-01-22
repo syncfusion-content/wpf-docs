@@ -63,7 +63,7 @@ The property **ToolTipEnabled** can be used to achieve this requirement and it c
 
 If through **XAML**, please refer the below code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ToolTipEnabled="True" ItemSource="{Binding   Source={StaticResource data}}">

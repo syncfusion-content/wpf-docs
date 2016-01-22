@@ -27,7 +27,7 @@ This method is used to print the chart by invoking the Charm window listing with
 
 The following code example illustrates the Printing feature.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

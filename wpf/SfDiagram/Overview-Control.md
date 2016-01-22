@@ -22,7 +22,7 @@ N> Supported platform: WPF, WinRT 8.1, Universal, UWP
 
 The following code example explains how to add Overview to an Application.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <overview:Overview Source="{Binding ElementName=diagramControl}" Height="300" Margin="0,25,0,0"/>
 	

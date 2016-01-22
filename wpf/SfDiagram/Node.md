@@ -21,7 +21,7 @@ A Node can be created and added to the Diagram, either programmatically or inter
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram. The following code example illustrate how to add the Node to the Diagram.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <diagram:SfDiagram x:Name="diagram">
     <diagram:SfDiagram.Nodes>
@@ -93,7 +93,7 @@ The following table illustrates how pivot relates Offset values with Node bounda
 | (0,0) | OffsetX and OffsetY values are considered as the top left corner of Node. |
 | (1,1) | OffsetX and OffsetY values are considered as the bottom right corner of the Node. |
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <diagram:SfDiagram x:Name="diagram">
     <diagram:SfDiagram.Nodes>
@@ -142,7 +142,7 @@ diagram.Nodes = nodes;
 
 You can customize the appearance of a Node by changing its ShapeStyle. The following code illustrates how to customize the appearance of the shape.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style TargetType="Path" x:Key="shapestyle">
   <Setter Property="Fill" Value="DarkCyan"></Setter>

@@ -16,7 +16,7 @@ Setting the ShowToolTip Boolean property to true in the HierarchyNavigator contr
 HierarchyNavigator hierarchyNavigatorControl1 = new HierarchyNavigator();
 hierarchyNavigatorControl1.ShowToolTip = true;
 {% endhighlight %}
-{% highlight xml %}
+{% highlight xaml %}
 XAML<syncfusion:HierarchyNavigator Name="hierarchyNavigator1" ShowToolTip="True" />
 {% endhighlight  %}
 {% endtabs %}

@@ -57,7 +57,7 @@ N> When AutoGenerateColumns property value is set to ‘false’, you can ignore
 The following example illustrates this scenario. For data collection use OrderInfoRepositiory.cs, file.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -209,7 +209,7 @@ As mentioned in the second case, the DataGrid control enables you to define colu
 The following code example defines manually to create columns using XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -539,7 +539,7 @@ False</td></tr>
 The following code example illustrates that how to set CellTemplate in Numeric Column.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -598,7 +598,7 @@ The following code example illustrates on how to use the above property.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -670,7 +670,7 @@ Create required templates with static keys.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -809,7 +809,7 @@ public class TemplateSelector : DataTemplateSelector
 
 DataContextHelper is the helper class that contains Record and value property to get row data and the value that bound to respective column. The following code example explains you on how to apply CellTemplateSelector.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -933,7 +933,7 @@ The following provides the list of all properties that supports GridTextColumn:
 The following code example creates GridTextColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" />
@@ -957,7 +957,7 @@ To format the value displayed in the GridColumn, you can use StringFormat Proper
 The following code example shows you how to declare a GridTextColumn in XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -998,7 +998,7 @@ DataGrid with GridTextColumn
 You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize your value in binding.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1095,7 +1095,7 @@ NumberFormatInfo.CurrentInfo.NumberNegativePattern</td></tr>
 
 The following code example illustrates how to use GridNumericColumn.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1245,7 +1245,7 @@ MinValidation.OnKeyPress</td></tr>
 The following code example illustrates how to use GridCurrencyColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1397,7 +1397,7 @@ The following code example illustrates how to use GridPercentColumn.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1512,7 +1512,7 @@ N> Mask definition is mandatory to use Date separator, Time Separator, Prompt Ch
 The following code example illustrates how to use GridMaskColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1610,7 +1610,7 @@ System.TimeSpan.MinValue</td></tr>
 The following code example illustrates how to use GridTimeSpanColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1761,7 +1761,7 @@ N> NullValue is displayed when AllowNullValue is set to ‘true’. NullValue ta
 The following code example illustrates how to use GridDateTimeColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1865,7 +1865,7 @@ Null</td></tr>
 The following code example displays how to use GridComboBoxColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 
@@ -1916,7 +1916,7 @@ The following code example shows how to use ItemTemplate in GridComboBoxcolumn.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2004,7 +2004,7 @@ The following code example shows how to use GridCheckBoxColumn.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2097,7 +2097,7 @@ Double.PositiveInfinity</td></tr>
 The following code example shows how to use GridImageColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2164,7 +2164,7 @@ VerticalAlignment.Stretch</td></tr>
 The following code example illustrates how to use GridHyperlinkColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2269,7 +2269,7 @@ The following code example shows templating for GridTemplateColumn. Underlying r
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2334,7 +2334,7 @@ CellTemplateSelector and EditTemplateSelector provide a way to select DataTempla
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2433,7 +2433,7 @@ return Application.Current.Resources["femaleEditTemplate"] as DataTemplate;
 }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2496,7 +2496,7 @@ The attached property allows the controls loaded in CellTemplate to handle key n
 The following code example explains you about WantsKeyInput.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2533,7 +2533,7 @@ The attached property allows the controls loaded in CellTemplate to handle mouse
 The following code example explains you about WantsMouseInput.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2566,7 +2566,7 @@ The attached property FocusedElement gives the Focus to particular element insid
 The following code example shows, how to set the FocusedElement inside DataTemplate
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2619,7 +2619,7 @@ N> Other than the above attached properties supported, you can set focused eleme
 The following XAML code example displays you how to set focus directly to editor.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2704,7 +2704,7 @@ Now you can make use of Value property that provides value based on MappingName 
 Then your XAML code is as follows. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2816,7 +2816,7 @@ N> It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, b
 The following code example shows how to use unboundcolumns in the DataGrid control.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2893,7 +2893,7 @@ GridUnBoundColumnEventArgs object contains the following properties:
 GridUnBoundColumn provides a special property that bounds a value when given Expression columns names are not equal case. The following code example illustrates that.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3028,7 +3028,7 @@ False</td></tr>
 The following code example illustrates how to use GridMultiColumnDropDownList.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3168,7 +3168,7 @@ N> When you resize the columns and the Columns sizer is in ‘Star’ or ‘Auto
 The following code example illustrates you how to set the ColumnSizing option for DataGrid control.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3451,7 +3451,7 @@ The DataGrid control provides support to hide a particular Column in XAML or C# 
 The following code example shows how to hide the Columns in XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3560,7 +3560,7 @@ The ResizingColumnsEventArgs object has the following properties:
 The following code example illustrates how to cancel the ResizingColumn. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3849,7 +3849,7 @@ The DataGrid control provides extensive support to freeze the columns in horizon
 
 The following code example illustrates freezing two columns.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3917,7 +3917,7 @@ StackedColumn provides the following properties for implementing StackedHeaders.
 The following code example illustrates how to create StackedHeaders.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -3971,7 +3971,7 @@ When you have header text that has more length then you need to set it in a mult
 The following code example illustrates this.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -4182,7 +4182,7 @@ GridCellHyperLinkRenderer</td></tr>
 SfDataGrid provides support to apply Tooltip for Cell and Headers. You can achieve this by using the properties ToolTipTemplate for Cells and HeaderToolTipTemplate for HeaderCells in GridColumn. The following code example illustrates this.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -4301,7 +4301,7 @@ public bool AllowFiltering
 5.The hightlighted lines creates key for binding collection to DataGrid.       
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -4475,7 +4475,7 @@ The following code example shows you how to Bind ComboItems to ComboBoxColumn.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -4543,7 +4543,7 @@ Binded ComboItems to ComboBoxColumn
 SfDataGrid has Hyperlink Column that directly loads Hyperlink control as its UIElement. You can directly set style for Hyperlink control with its TargetType as Hyperlink. Then the style is applied to GridHyperlinkColumn. The following code example illustrates how to set style HyperlinkColumn.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -4802,7 +4802,7 @@ Bind command to button inside the DataTemplate.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -4926,7 +4926,7 @@ The following code example shows the process of building a DataGrid with multipl
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -5044,7 +5044,7 @@ You can bind converter to GridImageColumn.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -5070,7 +5070,7 @@ The following code example illustrates this.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -6257,7 +6257,7 @@ typeof(string), typeof(DatePickerColumn));
 Finally, add your custom column to SfDataGrid with the following code example in XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -6328,7 +6328,7 @@ Consider, the grid has four columns and you can set the width as 1*,2*,3*,1* res
 The following code example illustrates how to customize star width calculation.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
  

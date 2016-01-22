@@ -87,7 +87,7 @@ public ObservableCollection<GoldDemand> Demands { get; set; }       }
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart >
 
@@ -112,7 +112,7 @@ YBindingPath="Year2010">
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /> 
 
@@ -212,7 +212,7 @@ public class ViewModel
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

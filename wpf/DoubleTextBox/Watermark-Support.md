@@ -14,9 +14,9 @@ Watermark is the dummy content displayed in the DoubleTextBox when the value is 
 
 
 {% tabs %}
-{% highlight xml %} XAML {% endhighlight %} 
+{% highlight xaml %} XAML {% endhighlight %} 
 
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} 
+{% highlight xaml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} 
 {% endtabs %}
 
 
@@ -34,7 +34,7 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

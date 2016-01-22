@@ -93,7 +93,7 @@ CalculatedMembers</td></tr>
 
 Adding an OLAP report to OLAP Chart control in design time is described in the following code snippet:
 
- {% highlight xml %}
+ {% highlight xaml %}
 
   
 

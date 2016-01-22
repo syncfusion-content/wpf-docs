@@ -14,7 +14,7 @@ documentation: ug
 PercentTextBox provides globalization support through the Culture property. 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                       
    Culture="en-US" PercentValue="1234567"/>
    {% endhighlight %}
@@ -32,7 +32,7 @@ percentTextBox.Culture = new CultureInfo("en-US");
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"    
                       Culture="bs-Latn" PercentValue="1234567"/>
 					  {% endhighlight %}
@@ -57,7 +57,7 @@ As you have seen in these samples whenever you change the Culture property the P
 You can customize the Number Format either by using the Number Format property or the PercentGroupSeparator, PercentGroupSizes, PercentDecimalDigits, PercentDecimalSeparator, PercentNegativePattern, PercentPositivePattern, and PercentageSymbol properties.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"    
          PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>   
 		 <numberformat:NumberFormatInfo PercentGroupSeparator="/"    
@@ -73,7 +73,7 @@ ercentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFor
 {% endtabs %}
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"   
  PercentValue="1234567"          
  PercentageSymbol="%" PercentDecimalDigits="4"   
@@ -123,7 +123,7 @@ n%</td></tr>
 % n</td></tr>
 </table>
 
- {% highlight xml %}
+ {% highlight xaml %}
 
  
 
@@ -203,7 +203,7 @@ n %-</td></tr>
 n- %</td></tr>
 </table>
 
- {% highlight xml %}
+ {% highlight xaml %}
 
     
 

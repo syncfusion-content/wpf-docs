@@ -563,7 +563,7 @@ Following steps demonstrate how to create a simple application with Essential Pd
 
    3. Once the DataContext has been set, the ItemSource dependency property can be set by using the following code example in XAML.
 
-   {% highlight xml %}
+   {% highlight xaml %}
 
     <Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
 

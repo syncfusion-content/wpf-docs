@@ -81,7 +81,7 @@ The following steps help you to use the SfDataPager in an application:
 
 4.You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
-   {%highlight xml%}
+   {%highlight xaml%}
 
 
 

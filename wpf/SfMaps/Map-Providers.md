@@ -19,7 +19,7 @@ OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view
 
 You can enable this feature by setting the layerType property value as "OSM".
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -56,7 +56,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 ### Aerial View
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -86,7 +86,7 @@ The following screenshot illustrates the Aerial View
 ### Road View
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -116,7 +116,7 @@ The following screenshot illustrates the Road view.
 ### AerialWithLabelView
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -287,7 +287,7 @@ The default appearance of the **SymbolPointer** can be customized by using the S
 
 The SymbolPointerTemplate is a DataTemplate type, used to customize or override the default template of the SymbolPointer.
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <syncfusion:SfCircularGauge x:Name="gauge">
             <syncfusion:SfCircularGauge.Scales >

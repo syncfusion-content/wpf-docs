@@ -13,7 +13,7 @@ documentation: ug
 
 To mask the input, set the MaskType and Mask property as follows:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:SfMaskedEdit MaskType="Simple" Mask="00/00/0000"  HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
@@ -40,7 +40,7 @@ This mask expression allows only numeric inputs in the places of 0.
 Set the Value property as follows:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -67,7 +67,7 @@ maskedEdit.Value=”14/11/2014”;
 ### Set the PromptChar property as follows
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -97,7 +97,7 @@ By default, the prompt character is ‘_’.
 
 ### Set the Watermark property as follows
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
   <syncfusion:SfMaskedEdit  MaskType="Simple" Mask="00/00/0000" Watermark="Mask"  HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>

@@ -44,7 +44,7 @@ The features of TimeLine Control are:
 ## Adding TimeLine Control
 
 The following code illustrates how to add TimeLine control:
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:TimeLineControl Height="100" x:Name="rangeIndicator" Grid.Row="1" DataSource="{Binding}" BindingPathX="X" BindingPathsY="Y"
@@ -166,7 +166,7 @@ NA</td></tr>
 You can specify the starting date and ending date for the TimeLine control by using the StartDate and EndDate attached properties. This is applicable when the ValueType property of PrimayAxis is set to _DateTime_. The following code example illustrates this.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartDate='9/27/2006' sync:TimeLineControl.EndDate='12/7/2007'>
@@ -199,7 +199,7 @@ TimeLineControl.SetEndDate(timelineControl, datalist[40].TimeStamp);
 You can specify the starting value and ending value for the TimeLine control by using the StartValue and EndValue attached properties. This is applicable when the ValueType property of the PrimayAxis is set to Double. The following code example illustrates this.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartValue='0' sync:TimeLineControl.EndValue='20'>
 

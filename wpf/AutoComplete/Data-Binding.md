@@ -15,7 +15,7 @@ Data Binding is the process of establishing a connection between the application
 
 You can use the DisplayMemberPath property to set the value for items that needs to be displayed in the drop-down list. Also you can use the SelectedValuePath property which can be used to set the value of the SelectedValue property. The below code snippet will be used to bind the Data Source to the AutoComplete.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:AutoComplete x:Name="AutoComplete2" Source="Custom” DisplayMemberPath="FirstName" SelectedValuePath="LastName">     

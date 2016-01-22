@@ -10,7 +10,7 @@ documentation: ug
 # Code Snippet
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -17,7 +17,7 @@ Creating multiple panes for the chart improves readability of the series. When t
 
 In SfChart, you can split areas into multiple rows and columns using ChartRowDefinition and ChartColumnDefinition like GridRow and Column Definition. The following code example demonstrates how you can create multiple panes in the chart area.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.RowDefinitions>
 
@@ -125,7 +125,7 @@ Represents the ChartColorModel for entire chart.</td></tr>
 
 The following code example shows the customization of chart with different chart area properties.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -209,7 +209,7 @@ StrokeThickness="2"
 
 It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. It is a Boolean property and its default value is True. When you disable this property, all the series overlap as shown in the following image.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart HorizontalAlignment="Center" SideBySideSeriesPlacement="False" VerticalAlignment="Center" Height="600" Width="700" >
 

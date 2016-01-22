@@ -61,7 +61,7 @@ Follow the steps to add Carousel by using Visual Studio in XAML.
 
 The following code shows how Carousel can be added to an application by using Visual Studio in XAML:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

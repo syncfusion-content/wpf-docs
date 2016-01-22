@@ -14,7 +14,7 @@ You can set the animation speed, which controls the time taken to expand or coll
 Use the following code snippet to set this property.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

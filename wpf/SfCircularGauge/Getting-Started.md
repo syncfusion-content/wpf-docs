@@ -41,7 +41,7 @@ The SfCircularGauge assemblies will be automatically added to the Project after 
 
 Create a namespace reference to the SfCircularGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfCircularGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
     
@@ -92,7 +92,7 @@ The default SfCircularGauge control will be created as shown in the figure below
 
 Create a namespace reference to the SfCircularGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfCircularGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
     
@@ -102,7 +102,7 @@ Create a namespace reference to the SfCircularGauge control using Syncfusion’s
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfCircularGauge/>
     

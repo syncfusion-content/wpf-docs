@@ -12,7 +12,7 @@ documentation: ug
 Custom RoutedUICommands can be bound to the Chart or ChartArea just like any other control and InputBindings such as KeyboardGestures and MouseGestures can be set for those commands. Note that for KeyboardGestures and MouseGestures to work, Chart or ChartArea should be in focus. In the following sample, a custom command is created to change the series type of all the ChartSeries in the ChartArea to ChartType.Bar.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 

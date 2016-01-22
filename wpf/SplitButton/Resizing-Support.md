@@ -13,7 +13,7 @@ The DropDownMenuGroup supports resizing, if the property IsResizable is set to t
 
 Setting IsResizable property to true:
 
-{% highlight xml %}
+{% highlight xaml %}
 
    <shared:SplitButtonAdv Label="Hello World" 
    x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
