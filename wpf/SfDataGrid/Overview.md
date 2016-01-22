@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfDataGrid | WPF | Syncfusion
-description: Overview of SfDataGrid
+title: Overview of SfDataGrid
+description:  Overview | SfDataGrid | WPF | Syncfusion
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -35,9 +35,9 @@ Following are the key features of SfDataGrid control
 
 Syncfusion WPF suite comes up with following different Grid’s namely,
 
-1. GridControl
-2. GridTreeControl
-3. GridDataControl and SfDataGrid
+1. [GridControl](http://www.syncfusion.com/products/wpf/grid-control)
+2. [GridTreeControl](http://www.syncfusion.com/products/wpf/grid-tree-control)
+3. [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](http://www.syncfusion.com/products/wpf/sfdatagrid)
 
 **GridControl**
 
@@ -47,12 +47,12 @@ Syncfusion WPF suite comes up with following different Grid’s namely,
 
 The [GridTreeControl](http://help.syncfusion.com/wpf/gridtree/overview) is designed to display self-referencing lists in a multi column tree structure. The data is loaded on demand so that large lists are quickly displayed. This control can be used when data needs to be displayed in tree structure with columns like in DataGrid. 
 
-**GridDataControl** **and** **SfDataGrid** 
+**GridDataControl and SfDataGrid**
 
-The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and SfDataGrid controls are used to display collection of data in rows and columns. These controls supports the data binding directly. 
+The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](http://www.syncfusion.com/products/wpf/sfdatagrid) controls are used to display collection of data in rows and columns. These controls supports the data binding directly. 
 
-1. SfDataGrid - SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding.
-2. GridDataControl - GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 
+1. **SfDataGrid** - SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding.
+2. **GridDataControl** - GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 
 
 Both SfDataGrid and GridDataControl almost have the same set of features. But SfDataGrid control offers rich set of features over GridDataControl. When you want cell level customization and excel-like features you can use GridDataControl. When you want performance, customization features like styles & template features specific to WPF, you can use SfDataGrid control. Comparatively, the performance of SfDataGrid control is better than the GridDataControl.
 
@@ -62,9 +62,9 @@ You can see the list of some of the specific API difference between GridDataCont
 
 <table>
 <tr>
-<th>**GridDataControl**</th>
-<th>**SfDataGrid**</th>
-<th>**Description**</th>
+<th>GridDataControl</th>
+<th>SfDataGrid</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>AutoPopulateColumns</td>
@@ -192,8 +192,8 @@ Rich set of features in SfDataGrid over GridDataControl
 
 <table>
 <tr>
-<th>**Feature**</th>
-<th>**Description**</th>
+<th>Feature</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>AutoRowHeight</td>
