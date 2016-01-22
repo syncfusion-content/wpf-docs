@@ -21,3 +21,27 @@ The appearance of the DateTimeEdit control can be customized by using the Visual
 * SyncOrange
 * VS2010
 * Transparent
+
+For example, `Blend` style applied for the `DateTimeEdit` control by setting `VisualStyle` property of `SkinStorage` as Blend.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit syncfusion:SkinStorage.VisualStyle="Blend" x:Name="datetimeedit" Width="100" Height="23" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SkinStorage.SetVisualStyle(datetimeedit, "Blend");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](appearance-images/blend.jpeg)
