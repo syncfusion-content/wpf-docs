@@ -25,7 +25,7 @@ You can add one or more Chart Series to a Chart Area to plot points in the Chart
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart>
@@ -91,7 +91,7 @@ Note that the chart plot will automatically update when the bound data sends a c
 
 The following code example illustrates how to bind the Chart control to an XMLDataProvider.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -165,7 +165,7 @@ Chart Series can be customized with various properties. This section discusses t
 
 The interior of the Chart Series can be set by using the Interior property.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -212,7 +212,7 @@ Essential Chart for WPF enables you to show / hide the Chart Series by using the
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart >
 
@@ -249,7 +249,7 @@ Chart Series can be rotated by using the ChartSeries.IsRotated property.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart >
 
@@ -287,7 +287,7 @@ The text displayed in the Chart Legends and the Chart Area context menu can be c
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea>
 
@@ -322,7 +322,7 @@ Chart control supports 34 types of charts, among which 12 types are supported in
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -391,7 +391,7 @@ The following code example illustrates how to set the preceding properties.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -446,7 +446,7 @@ Chart for WPF enables you to apply custom Data Templates to the Chart Series. By
 
 N> Data templates cannot be customized for a single segment in a series. As each series is drawn as a single segment, we cannot customize the individual segments.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -556,7 +556,7 @@ The following code example illustrates how to display adornments in a Chart Seri
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -676,7 +676,7 @@ The following code example illustrates how to apply predefined symbol templates 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <Syncfusion:ChartSeries Type="Column"  DataSource="{StaticResource collection1}" BindingPathX="X" BindingPathsY="Y" IsIndexed="True"         Stroke="Black" StrokeThickness="1.5">
 
@@ -716,7 +716,7 @@ The following code example illustrates how to apply custom symbol templates to c
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -841,7 +841,7 @@ Adding Fastchart Types with Adornments to an Application
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
   <Syncfusion:ChartSeries.AdornmentsInfo>
@@ -874,7 +874,7 @@ series1.AdornmentsInfo.SymbolWidth = 20;
 ## Chart Segment Labels
 
 Labels can be displayed in the chart types such as Pie, Doughnut, Pyramid and Funnel. Chart Segment Labels can be used to display information like x value, y value, percentage, y value of total and datetime. This feature has been implemented based on the ChartAdornmentsInfo class. The following code example illustrates how to add Chart Segment Labels.
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartArea>
 
@@ -903,7 +903,7 @@ Labels can be displayed in the chart types such as Pie, Doughnut, Pyramid and Fu
 Chart supports applying custom templates to the chart segment labels. The following code example illustrates this.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -1060,7 +1060,7 @@ N> To show the segment lines, the SegmentShowLine property must be set to true a
 
 Essential Chart provides support for Empty Points. The data collection that is passed to the chart can have NaN or infinite values that will be considered as Empty Points. You can also hide the empty points by setting the ShowEmptyPoints property to _false_.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ChartSeries Type="Column" Name="series1" EmptyPointInterior="Red" EmptyPointStyle="SymbolAndInterior" Interior="Green" IsIndexed="False" ShowEmptyPoints="True" Stroke="Black"  StrokeThickness="1"/>
@@ -1157,7 +1157,7 @@ NA </td></tr>
 
 You can customize the empty point symbol using the _EmpyPointSymbolTemplate_ property. The following code illustrates this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1223,7 +1223,7 @@ Set the EmptyPointValue property to _Zero_, the default empty point value will b
 The following code illustrates this:
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="series1" EmptyPointValue="Zero"  EmptyPointStyle="Symbol" ShowEmptyPoints="True" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}"
 
@@ -1252,7 +1252,7 @@ The following code illustrates this:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="series1" EmptyPointValue="Average"  EmptyPointStyle="Symbol" ShowEmptyPoints="True" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}"
 
@@ -1334,7 +1334,7 @@ Adding Colorful Chart Series Segments to an Application
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
    <syncfusion:ChartSeries DataSource="{Binding ProductModel}"            ColorEach="True" Palette="Gradient"                      BindingPathX="Months" BindingPathsY="Sales">     </syncfusion:ChartSeries>
 {% endhighlight  %}
 
@@ -1352,7 +1352,7 @@ Adding Colorful Chart Series Segments to an Application
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:ChartSeries DataSource="{Binding ProductModel}"ColorEach="True" Palette="Custom" BindingPathX="Months" BindingPathsY="Sales">    <syncfusion:ChartStyleModel.CustomPalette>        <x:Array Type='Brush'>            <SolidColorBrush Color='Violet"></SolidColorBrush><SolidColorBrush Color='Indigo'></SolidColorBrush><SolidColorBrush Color='Blue'></SolidColorBrush><SolidColorBrush Color='Green'></SolidColorBrush><SolidColorBrush Color='Yellow'></SolidColorBrush><SolidColorBrush Color='Orange'></SolidColorBrush><SolidColorBrush Color='Red'></SolidColorBrush>        </x:Array>    </syncfusion:ChartStyleModel.CustomPalette></syncfusion:ChartSeries>
 {% endhighlight  %}
 
@@ -1377,7 +1377,7 @@ The following code example illustrates this.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Include this in the Window's Resources section.-->
 
@@ -1472,7 +1472,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 Chart for WPF lets you highlight a single data point segment when you move the mouse pointer over the data point segment. The ChartSegment.Highlighted dependency property is used for this purpose. This property is set to _true_ when you move the mouse pointer over a data point segment. Also, you can create custom templates that utilize this dependency property to change the interior of the data point segment when the mouse pointer is moved it.
 
 The following code example illustrates this.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1749,7 +1749,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 Series can be placed side by side or overlapped by using the ChartArea.SideBySideSeriesPlacement property. This is especially used when multiple HiLo type series are used in the Chart. HiLo type series that get stacked and plotted can be separated and placed side by side by using this property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea SideBySideSeriesPlacement="True">
 
@@ -1784,7 +1784,7 @@ AutoDiscard can be used to set range for primary axis in a chart. This property 
 N> The AutosetRange property of the primary axis needs to be set to False, when the AutoDiscard property is set to ExtendRange or ResetRange.
 
 The following code example illustrates the usage of the AutoDiscard property, when set to various enumerations.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ChartArea.PrimaryAxis>
@@ -1825,7 +1825,7 @@ Sets the visibility of Legend Items. It includes the following options.Visible-
 The following code example illustrates how to set this property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="SeriesB" Type="Bar" VisibilityOnLegend="Hidden" BindingPathX="FruitName"
 
@@ -1950,7 +1950,7 @@ The following code example illustrates creation of a circle with orange fill at 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" IsIndexed="False" Name="series1" Label="Series1" Type="Area" Interior="{StaticResource SeriesAInterior}">
 
@@ -2014,7 +2014,7 @@ Add Empty Point to the Chart, by using the following code.
 Set ShowEmptyPoints to True to enable Empty Point.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:ChartSeries Name="series1" ShowEmptyPoints="True" 
 
@@ -2044,7 +2044,7 @@ This enables the users to customize the Fast chat types like FastScatter, FastCo
 Add customization support for FastChart types, by using the following code.
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
  
 
   <syncfusion:ChartSeries Name="series1" Type="FastStackingColumn" 
@@ -2128,7 +2128,7 @@ The following code examples are used to add smart labels to the chart series.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="AdjustAcrossPoints" 
@@ -2166,7 +2166,7 @@ series.ShowSmartLabels = true;
 The following code examples are used to add smart labels to the chart series with intersect action set to Hide.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="Hide" 
 
@@ -2206,7 +2206,7 @@ The following code examples are used to add smart labels to the chart series wit
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="None" 
@@ -2282,7 +2282,7 @@ SignalLineColor</td><td>
 Specifies the color for the signal line of the Accumulation Distribution technical indicator.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2310,7 +2310,7 @@ Specifies the color for the signal line of the Accumulation Distribution technic
 ### Average True Range
 
 Average True Range (ATR) Indicator is a technical analysis volatility indicator. The indicator does not provide an indication of price trend, simply the degree of price volatility. The average true range is an N-day exponential moving average of the true range values.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2357,7 +2357,7 @@ BollingerMovingAverage</td><td>
 Indicates the identification of a trend.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2402,7 +2402,7 @@ ExponentialMovingAverage</td><td>
 Indicates the identification of a trend.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2443,7 +2443,7 @@ Indicates the identification of a trend.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2488,7 +2488,7 @@ Indicates the identification of a trend.</td></tr>
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2536,7 +2536,7 @@ DivergenceLineColor</td><td>
 Specifies the color for the divergence line of the MACD technical indicator.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2576,7 +2576,7 @@ MomentumTimeSpan</td><td>
 Measures the amount that a security's price has changed over a given time span.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2625,7 +2625,7 @@ LowerLineColor</td><td>
 Specifies the color for the lower line of the Stochastic technical indicator.</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>
@@ -2651,7 +2651,7 @@ Specifies the color for the lower line of the Stochastic technical indicator.</
 ### RSI
 
 The Relative Strength Index (RSI) is a well-versed momentum-based oscillator which is used to measure the speed (velocity) as well as the change (magnitude) of directional price movements. Essentially RSI, when graphed, provides a visual mean to monitor both the current, as well as historical, strength and weakness of a particular market.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sync:ChartSeries.Indicators>

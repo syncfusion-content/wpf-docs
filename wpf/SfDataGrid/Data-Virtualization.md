@@ -36,7 +36,7 @@ VirtualizingCollectionView GridItemsSource = new VirtualizingCollectionView(enum
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 }
 
 
@@ -71,7 +71,7 @@ The following code example illustrates how to assign a GridVirtualizingCollectio
 GridVirtualizingCollectionView GridItemsSource = new GridVirtualizingCollectionView(enumerableDataSource);
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -434,7 +434,7 @@ class IncrementalLoadingViewModel
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -43,7 +43,7 @@ Gets or sets the object value that represents the content for the Watermark</td>
 
 The following code example explains how to set your custom text as Watermark.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:SfChart.Watermark>
@@ -72,7 +72,7 @@ The following screenshot illustrates the Watermark with custom text.
 
 You can set images as Watermark for SfChart, using the Content property, since it can hold any kind of object. The following code example illustrates image Watermark.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

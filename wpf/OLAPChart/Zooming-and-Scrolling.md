@@ -50,7 +50,7 @@ Gets or sets the zoom reset button visibility.</td></tr>
 
 The following code snippet illustrates the above settings:
 
- {% highlight xml %}
+ {% highlight xaml %}
 
     
 

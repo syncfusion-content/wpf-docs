@@ -22,7 +22,7 @@ The MinimizedItemTemplate and MaximizedItemTemplate can be added to an applicati
 The following code example illustrates how to add the MinimizedItemTemplate and MaximizedItemTemplate to an application through XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

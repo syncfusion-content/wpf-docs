@@ -63,19 +63,11 @@ SfSpreadsheet provides support to control the visibility and color of the Gridli
 
 //To show GridLines
 
-spreadsheet.ActiveGrid.ShowGridLines = true;
-
-spreadsheet.ActiveSheet.IsGridLinesVisible = true;
-
-spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.SetGridLinesVisibility(true);
 
 //To hide GridLines
 
-spreadsheet.ActiveGrid.ShowGridLines = false;
-
-spreadsheet.ActiveSheet.IsGridLinesVisible = false;
-
-spreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.SetGridLinesVisibility(false);
 
 {% endhighlight %}
 {% endtabs %}
@@ -88,13 +80,9 @@ SfSpreadsheet provides support to control the visibility of row and column heade
 {% tabs %}
 {% highlight c# %}
 
-//For Header cells visibility
+//To hide the Header cells visibility
 
- spreadsheet.ActiveSheet.IsRowColumnHeadersVisible = true;
-
- spreadsheet.ActiveGrid.RowHeights.SetHidden(0, 0, false);
-
- spreadsheet.ActiveGrid.ColumnWidths.SetHidden(0, 0, false);
+spreadsheet.SetRowColumnHeadersVisibility(false);
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,7 +90,7 @@ SfSpreadsheet provides support to control the visibility of row and column heade
 
 ## Zooming
 
-SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The property [AllowZooming](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6319.html) determines whether to allow zooming or not.
+SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The property [AllowZooming](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowZooming.html) determines whether to allow zooming or not.
 
 {% tabs %}
 {% highlight c# %}
@@ -115,9 +103,9 @@ SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The 
 
 The Events associated with the Zooming are 
 
-. [ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6346.html)
+. [ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ZoomFactorChanged_EV.html)
 
-. [ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/topic6347.html)
+. [ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ZoomFactorChanging_EV.html)
 
 <br/>
 <br/>

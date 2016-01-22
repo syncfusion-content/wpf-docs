@@ -16,7 +16,7 @@ By clicking the Navigation pane, the content of the GroupBar Items are displayed
 To enable the AllowCollapse property in GroupBar, use the following code.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar that has allow collapse property to true -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar" AllowCollapse="True" VisualMode="StackMode"> 
    <!-- Adding GroupBarItem -->   
@@ -59,7 +59,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" IsCollapsed="True" AllowCollapse="True" VisualMode="StackMode" Name="groupBar">  
 <!-- Adding GroupBarItem -->  

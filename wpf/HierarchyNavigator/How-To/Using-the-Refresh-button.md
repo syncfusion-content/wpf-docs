@@ -14,7 +14,7 @@ The Refresh button is on the right side of the HierarchyNavigator control. Click
 ![](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
 {% endhighlight %}
 {% highlight c# %}

@@ -57,7 +57,7 @@ Void</td></tr>
 Charts can be printed by using the following code example.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!--Button when clicked executes the Print command-->

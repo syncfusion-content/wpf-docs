@@ -42,7 +42,7 @@ SfSpreadsheet provides support to export the Excel workbook to PDF using ExcelTo
 
 For converting the Excel sheet to PDF, “Syncfusion.ExcelToPDFConverter.Base.dll” and “Syncfusion.Pdf.Base.dll” references should be added.
 
-Export the Excel workbook as Pdf document using [Convert](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic27.html) method of [ExcelToPdfConverter](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/topic14.html) class which is available under the name space “Syncfusion.ExcelToPdfConverter”
+Export the Excel workbook as Pdf document using [Convert](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.ExcelToPDFConverter.Base~Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter~Convert.html) method of [ExcelToPdfConverter](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.ExcelToPDFConverter.Base~Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter.html) class which is available under the name space “Syncfusion.ExcelToPdfConverter”
 
 {% tabs %}
 {% highlight c# %}

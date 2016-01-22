@@ -17,7 +17,7 @@ You can use the Syncfusion Skin Picker Control to switch between the skins. Just
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SkinPicker Height="60"/>
 
@@ -39,7 +39,7 @@ Below is the code snippet to explain how to switch between the skins at run-time
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid Name="grid">        
 

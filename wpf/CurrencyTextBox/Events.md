@@ -17,14 +17,14 @@ ValueChanged – The event occurs when the Value property of the CurrencyTextBox
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox ValueChanged="CurrencyTextBox_ValueChanged"/>
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.ValueChanged+=new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
@@ -54,7 +54,7 @@ TextChanged – The event occurs when the Value property of the CurrencyTextBox 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox TextChanged="CurrencyTextBox_TextChanged"/>
@@ -93,7 +93,7 @@ CultureChanged – The event occurs when the Culture property of the CurrencyTex
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox CultureChanged="CurrencyTextBox_CultureChanged"/>
@@ -130,7 +130,7 @@ MaxValueChanged – The event occurs when the MaxValue property of the CurrencyT
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox MaxValueChanged="CurrencyTextBox_MaxValueChanged"/>
@@ -168,7 +168,7 @@ MinValueChanged – The event occurs when the MinValue property of the CurrencyT
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox MinValueChanged="CurrencyTextBox_MinValueChanged"/>
@@ -207,7 +207,7 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox SelectionChanged="CurrencyTextBox_SelectionChanged"/>

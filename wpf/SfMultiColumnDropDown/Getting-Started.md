@@ -38,7 +38,7 @@ Adding SfMultiColumnDropDown to an Application
 You can either drag the control from Visual Studio or Expression Blend, or add the control to your project by manually creating it. The following code example illustrates how to create the SfMultiColumnDropDown control.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -275,7 +275,7 @@ SfDataGrid allows you to add the SfMultiColumnDropDownControl inside it as colum
 The following code example illustrates how to add SfMultiColumnDropDownControl inside the SfDataGrid.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

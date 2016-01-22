@@ -23,7 +23,7 @@ To set the Quick Tab Mode for the window switchers, use the following code.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding Document Container -->
 <syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">  …....  …....
 </syncfusion:DocumentContainer>

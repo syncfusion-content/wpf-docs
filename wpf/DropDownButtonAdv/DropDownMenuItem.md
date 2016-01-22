@@ -17,7 +17,7 @@ The icon of the DropDownMenuItem can be added as follows:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -55,7 +55,7 @@ The feature can be enabled by using the property IsCheckable:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 

@@ -25,7 +25,7 @@ hierarchyNavigator.ShowNavigationPopupItems(hierarchyitem);
 NavigationPopupOpening occurs when the navigation pop-up window is in the process of opening.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:HierarchyNavigator NavigationPopupOpening="NavigationPopupOpening"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -46,7 +46,7 @@ private void NavigationPopupOpening(object sender, EventArgs e)<br>
 NavigationPopupOpened occurs when the navigation pop-up window is open.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:HierarchyNavigator NavigationPopupOpened="NavigationPopupOpened"/>
 
@@ -66,7 +66,7 @@ private void NavigationPopupOpened(object sender, EventArgs e)<br>
 NavigationPopupClosing occurs when the navigation pop-up window is closing.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ private void NavigationPopupClosing(object sender, EventArgs e)<br>
 NavigationPopupClosed occurs when the navigation pop-up window is closed.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/>
 {% endhighlight  %}
 {% highlight c# %}

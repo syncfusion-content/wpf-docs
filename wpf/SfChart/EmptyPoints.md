@@ -14,7 +14,7 @@ The data collection that is passed to the chart can have NaN, or infinite values
 The following code example shows how to handle empty points in a series using sample data.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfChart>
 

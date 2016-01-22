@@ -421,7 +421,7 @@ Essential Chart for WPF is now enhanced with the ShowTooltip property, which all
 To enable ToolTips for a chart, set the ShowTooltip property to True. The following code illustrates setting the ShowTooltip property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries ShowToolTip="True">
 
@@ -529,7 +529,7 @@ A built-in toolbar is available for the Chart control, which can be made visible
 
 
 The code as follows illustrates how a ToolBar could be added to the Chart control.
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart.ToolBar >
 
@@ -1576,7 +1576,7 @@ Chart1.ChartPropertyWindowClosing += new ChartPropertyWindowCancelEventHandler(C
 
 {% endhighlight  %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1" ChartPropertyWindowOpening="Chart1_ChartPropertyWindowOpening" ChartPropertyWindowClosing="Chart1_ChartPropertyWindowClosing" />

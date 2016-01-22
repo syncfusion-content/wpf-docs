@@ -170,7 +170,7 @@ To set the visual style for the controls, use the code given below.
 
 {%tabs%}
 
- {% highlight xml %}
+ {% highlight xaml %}
 
     
 

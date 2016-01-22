@@ -18,7 +18,7 @@ In this layout the data is visualized in the form of square-like rectangles with
 The following code illustrates how to set a squarified layout in Treemap.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -59,7 +59,7 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="Black">
 
@@ -106,7 +106,7 @@ _Slice-and-dice layout_
 The following code illustrates how to set a slice and dice layout horizontally in TreeMap.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -143,7 +143,7 @@ The following screenshot shows a Slice-and-dice TreeMap in horizontal layout.
 The following code illustrates how to set a slice and dice layout vertically in TreeMap.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -141,7 +141,7 @@ The Angle property is used to get or set the angle for rotating the Annotation.
 
 The following code example and screenshot demonstrate the usage of TextAnnotation in SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>
 
@@ -172,7 +172,7 @@ Gets or sets a value to enable the editing support for annotation.</td></tr>
 
 SfChart provides you with an editing option for the text in any annotations. The following code example and screenshot demonstrate how to edit the text in Annotations.
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <syncfusion:SfChart.Annotations>
 
@@ -226,7 +226,7 @@ Gets or sets the double value that represents the Y2 Coordinate for the ImageAnn
 
 The following code demonstrates how to add ImageAnnotation to chart control.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -294,7 +294,7 @@ RectangleAnnotation
 
 The following code example demonstrates the usage of RectangleAnnotation.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -336,7 +336,7 @@ Gets or sets the LineCap value that represents the cap displayed at the ends of 
 
 The following code demonstrates how to add a LineAnnotation to the chart control.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -358,7 +358,7 @@ The following code demonstrates how to add a LineAnnotation to the chart control
 
 SfChart provides dragging and resizing support for ShapeAnnotations.The following code example and screenshot demonstrate the drag and resize support for a RectangleAnnotation.
 
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:SfChart.Annotations>
 

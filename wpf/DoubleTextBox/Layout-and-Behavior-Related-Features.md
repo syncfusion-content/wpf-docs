@@ -30,7 +30,7 @@ The Foreground of the DoubleTextBox can be customized based on the Value propert
 N> The NegativeForeground in the DoubleTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -51,7 +51,7 @@ The Foreground of the DoubleTextBox can be customized based on the Value propert
 Note: The ZeroColor in the DoubleTextBox can be enabled by setting the ApplyZeroColor property to true.
  
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value ="0"
 

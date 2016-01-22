@@ -38,7 +38,7 @@ Use the following code snippet to set the VisualMode property to _Default_.
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <!-- Adding GroupBar that have visual mode is Default -->
 <syncfusion:GroupBar Height="300" Width="230" VisualMode="Default" Name="groupBar">  
 <!-- Adding GroupBarItem --> 
@@ -64,7 +64,7 @@ In Multiple Expansion mode, more than one item can be expanded as seen in a tree
 Use the following code snippet to set VisualMode property to Multiple Expansion.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
  <!-- Adding GroupBar that have visual mode is Multiple Expansion -->
  <syncfusion:GroupBar Height="300" Width="230" VisualMode="MultipleExpansion" Name="groupBar">  
  <!-- Adding GroupBarItem -->  
@@ -128,7 +128,7 @@ Use the following code snippet to set the VisualMode property to StackMode.
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <!-- Adding GroupBar that have visual mode is StackMode-->
 <syncfusion:GroupBar Height="300" Width="230" VisualMode="StackMode" Name="groupBar"> 
  <!-- Adding GroupBarItem -->  
@@ -207,7 +207,7 @@ These styles can be applied in XAML as follows. The example below styles the Gro
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:GroupBar         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
 
@@ -567,7 +567,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
  <!-- Adding GroupBar -->
  <syncfusion:GroupBar Height="200" DragMarkerBrush="Red" Width="230" Name="groupBar"> 
  <!-- Adding GroupBarItem -->  
@@ -609,7 +609,7 @@ Use the following code snippet for setting a template for the CollapsedButton.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -675,7 +675,7 @@ Use the following code snippet to set these properties.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
  <!-- Adding GroupBar  -->
  <syncfusion:GroupBar Height="300" Width="230" Name="groupBar" CollapseButtonBackground="AliceBlue" CollapseButtonMouseOverBackground="Bisque" AllowCollapse="True"  VisualMode="StackMode"> 
  <!-- Adding GroupBarItem -->  
@@ -727,7 +727,7 @@ Group Bar header can be customized in a required manner. Customized background c
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

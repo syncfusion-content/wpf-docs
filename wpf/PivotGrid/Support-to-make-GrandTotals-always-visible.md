@@ -36,7 +36,7 @@ This property can be defined either in *XAML* or in *Code-Behind*.
 
 If through **XAML**, please refer the below code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl Name="pivotGrid" GrandTotalRowAlwaysVisible="True" RowPivotsOnly="True">

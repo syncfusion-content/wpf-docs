@@ -18,7 +18,7 @@ Use the following code snippet to set GroupBar Orientation to Horizontal.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="300" Width="230" Orientation="Horizontal" Name="groupBar">  
 <!-- Adding GroupBarItem -->  
@@ -96,7 +96,7 @@ You can also change the orientation of the GroupView alone by using the Orientat
 Use the following code snippet to set GroupView Orientation to Horizontal.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar -->
  <syncfusion:GroupBar Height="300" Width="230" Name="groupBar">
  <!-- Adding GroupBarItem -->

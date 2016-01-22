@@ -13,7 +13,7 @@ You can change the background color of the ColorPickerPalette at mouse over, bas
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
   
 <syncfusion:ColorPickerPalette  x:Name="ColorPickerPalette1" MouseOverBackground="Green">       

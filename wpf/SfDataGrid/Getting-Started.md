@@ -260,7 +260,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 			<Window x:Class="SimpleApplication.MainWindow"
 
@@ -281,7 +281,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 			<Window.DataContext>
 
@@ -293,7 +293,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
    You can bind the data using the following code example.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
               <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection}" />
@@ -307,7 +307,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -320,7 +320,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
    You can bind the data using the following code example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection, Source={StaticResource data}}" />
 
@@ -346,7 +346,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 			<syncfusion:SfDataGrid AutoGenerateColumns="False"
@@ -389,7 +389,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
     
-{% highlight xml %}
+{% highlight xaml %}
 
 
 			<syncfusion:SfDataGrid ColumnSizer="Star"
@@ -419,7 +419,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 13. SfDataGrid allows you to apply sorting on its data by setting AllowSorting to ‘true. Following code example illustrates this.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 			<syncfusion:SfDataGrid AllowSorting="True"
@@ -449,7 +449,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 			<syncfusion:SfDataGrid AllowFiltering="True"
@@ -804,7 +804,7 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 			<Window x:Class="SimpleApplication.MainWindow"
 

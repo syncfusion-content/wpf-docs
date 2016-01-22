@@ -18,7 +18,7 @@ TimeSpanEdit without SpinArrowButtons
 
  
 
-{%highlight xml%}
+{%highlight xaml%}
 
 <syncfusion:TimeSpanEdit Value="10.2:25:52" Format=" d 'days' h 'hours'"  Height="40" Margin="42,136,315,136" ShowArrowButtons="False"  />
 

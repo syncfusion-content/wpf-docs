@@ -17,7 +17,7 @@ TabSplitter contains one or more pages that are defined as TabSplitter Items. Us
 
 
 {%tabs%}
-{% highlight xml %} 
+{% highlight xaml %} 
 
  <!-- Adding TabSplitter -->
 
@@ -93,7 +93,7 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -228,7 +228,7 @@ this.Content = tabsplitter;
 You can split the pages in the TabSplitter Item by using the SplitterPage. The following code example illustrates how to add a SplitterPage to the TabSplitter Item.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -362,7 +362,7 @@ this.Content = tabsplitter;
 You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel property. The default value is _false_. To collapse the Bottom Panel, refer to the following code snippet:
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -444,7 +444,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true; 
 You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight property. To set the height of the BottomPanel, refer the following code snippet: 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

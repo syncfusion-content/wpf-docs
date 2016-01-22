@@ -11,7 +11,7 @@ documentation: ug
 
 The ColorValuePath ofSfTreeMap is a path to a field on the source object, which serves as the "color" of the object. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

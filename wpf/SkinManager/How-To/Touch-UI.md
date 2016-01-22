@@ -32,7 +32,7 @@ Touch styles can be applied to a control by setting the EnableTouch property def
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

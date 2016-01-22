@@ -84,7 +84,7 @@ The following code example could be used to customize the Chart Axis Labels.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartArea.PrimaryAxis>
 
@@ -161,7 +161,7 @@ By assigning the LabelsMode property to ChartAxis.CustomLabels, you can add Cust
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:Chart Name="Chart1" >
@@ -297,7 +297,7 @@ The following code example could be used to customize the labels to be rotated w
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartArea.PrimaryAxis>
 
@@ -361,7 +361,7 @@ Chart1.Areas[0].PrimaryAxis.HidePartialLabel = true;
 Chart1.Areas[0].PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 {% endhighlight  %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea.PrimaryAxis>
 
@@ -413,7 +413,7 @@ ItemsPanelTemplate </td><td>
 You can customize the legend panel using the _LegendItemsPanel_ property of ChartLegend. Following code illustrates this:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ChartLegend IconVisibility="Visible" BorderThickness="0" LegendPanel="Custom">                                    <syncfusion:ChartLegend.LegendItemsPanel>                                        <ItemsPanelTemplate>                                            <StackPanel Orientation="Vertical"/>                                        </ItemsPanelTemplate>                                    </syncfusion:ChartLegend.LegendItemsPanel>                                </syncfusion:ChartLegend>

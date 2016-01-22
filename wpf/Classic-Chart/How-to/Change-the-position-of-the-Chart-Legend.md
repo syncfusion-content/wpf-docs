@@ -25,7 +25,7 @@ The following code example illustrates how to dock the Chart Legend in the Chart
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:Chart.Legends>
 

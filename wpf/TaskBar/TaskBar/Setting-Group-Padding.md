@@ -16,7 +16,7 @@ You can also set the value for Left, Right, Bottom and Top group padding.
 To set the group padding, use the below code
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -15,7 +15,7 @@ The following example shows a simple binding between the value of the DoubleText
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -41,7 +41,7 @@ The Data Context property provides its value to child elements. So you can set t
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <StackPanel DataContext="{StaticResource myCustomer}">
@@ -62,7 +62,7 @@ If you want to bind values other than double values, you need to use the Value C
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

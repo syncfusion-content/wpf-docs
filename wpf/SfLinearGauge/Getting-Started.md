@@ -41,7 +41,7 @@ The SfLinearGauge assemblies will be automatically added to the Project after Cl
 
 Create a namespace reference to the SfLinearGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfLinearGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
     (or)
@@ -91,7 +91,7 @@ SfLinearGauge exists in the following assembly and namespace.
 
 Create a namespace reference to the SfLinearGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfLinearGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:Gauges="http://schemas.syncfusion.com/wpf" 
     (or)
@@ -100,7 +100,7 @@ Create a namespace reference to the SfLinearGauge control using Syncfusion’s g
     
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Gauges:SfLinearGauge/>
 

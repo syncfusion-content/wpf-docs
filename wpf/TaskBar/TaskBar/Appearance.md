@@ -49,7 +49,7 @@ To set the visual style for the TaskBar, use the below code.
 
 {%tabs%}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

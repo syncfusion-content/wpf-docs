@@ -229,7 +229,7 @@ Adding Dynamic Predecessors and Resources to an Application
 
 The dynamic editing of predecessor will be automatically included in the Gantt by default. There is no need to provide any additional data for that. The following codes illustrate this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 

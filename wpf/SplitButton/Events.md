@@ -19,7 +19,7 @@ The following code adds the Click event handler to the SplitButtonAdv control:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:SplitButtonAdv Click="SplitButtonAdv_Click"/>
 
@@ -43,7 +43,7 @@ The following code adds the DropDownOpening event handler to the SplitButtonAdv 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:SplitButtonAdv DropDownOpening="SplitButtonAdv_DropDownOpening"/>
 
@@ -68,7 +68,7 @@ The following code adds the DropDownOpened event handler to the SplitButtonAdv c
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:SplitButtonAdv DropDownOpened="SplitButtonAdv_DropDownOpened"/>
 
@@ -92,7 +92,7 @@ The following code adds the DropDownClosing event handler to the SplitButtonAdv 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:SplitButtonAdv DropDownClosing="SplitButtonAdv_DropDownClosing"/>
 
@@ -117,7 +117,7 @@ The following code adds the DropDownClosed event handler to the SplitButtonAdv c
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <shared:SplitButtonAdv DropDownClosed="SplitButtonAdv_DropDownClosed"/>
 

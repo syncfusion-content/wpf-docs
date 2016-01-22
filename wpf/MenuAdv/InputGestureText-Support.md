@@ -19,7 +19,7 @@ MenuAdv helps users to display the shortcut keys along with the MenuItemAdv head
 
 The value assigned by using the InputGestureText property will be displayed in MenuItemAdv along with the Header property value of MenuITemAdv. The InputGestureText support can be added to an application, as shown in the following code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

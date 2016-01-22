@@ -69,7 +69,7 @@ The following set of instructions illustrates the same.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid>
 
@@ -231,7 +231,7 @@ Initial steps before creating the Coded UI Test project:
 
 N> The following code appears.
 
-{% highlight xml %}
+{% highlight xaml %}
 <Application x:Class="WpfApplication3.App"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -250,7 +250,7 @@ N> The following code appears.
 
 3.Change Application to Syncfusion:GridControlTestApplication as follows.
 
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

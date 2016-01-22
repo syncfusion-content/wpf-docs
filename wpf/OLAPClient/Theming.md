@@ -58,7 +58,7 @@ A demo available in the following location: <InstalledDrive>:\AppData\Local\Sync
   The following code samples demonstrate how theming is added to the OlapClient control.
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 
 
 

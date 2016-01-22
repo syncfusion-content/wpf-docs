@@ -26,7 +26,7 @@ The following code example illustrates how to add the IsSelected to an applicati
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800">
 

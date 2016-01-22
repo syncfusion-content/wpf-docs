@@ -13,7 +13,7 @@ Trendlines are used to analyze and display the trends in the data graphically. I
 
 The following code examples illustrate how to add Trendlines to the chart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -27,7 +27,7 @@ The following code examples illustrate how to add Trendlines to the chart.
 
 You can set the Polynomial order for the line. Polynomial order calculates order based equation and the order value falls between 2 and 6.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -76,7 +76,7 @@ Logarithmic Trendline is a best-fit curved line that is used when the rate of ch
 
 Polynomial Trendline is a curved line that is used when data fluctuates.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -105,7 +105,7 @@ These can be enabled by setting the value for the Forward Forecasting and Backwa
 
 The following code example illustrates how to enable Forecasting in Trendlines.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -123,7 +123,7 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
