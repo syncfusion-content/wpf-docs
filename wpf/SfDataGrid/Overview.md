@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfDataGrid
-description:  Overview | SfDataGrid | WPF | Syncfusion
+title: Overview of SfDataGrid for Syncfusion Essential WPF
+description: Overview of SfDataGrid and its feature compared with different Grid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -26,7 +26,7 @@ Following are the key features of SfDataGrid control
 * Master-Detail View – Support to display relational data using hierarchies. 
 * Printing and Exporting – Support to print and also export the data to Excel, Pdf.
 * Styling – Extensive support for customizing styles of cells and rows in SfDataGrid.
-* Stacked Headers - Extensive support to show multiple headers called stacked headers.
+* Stacked Headers – Extensive support to show multiple headers called stacked headers.
 * Unbound rows – Support to display unbound rows.
 * Touch support – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
 
@@ -188,7 +188,7 @@ You can see the list of some of the specific API difference between GridDataCont
 </table>
 You can see the list of rich set of features in SfDataGrid over GridDataControl as follows:
 
-Rich set of features in SfDataGrid over GridDataControl
+Rich set of features in SfDataGrid over GridDataControl.
 
 <table>
 <tr>
