@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfDataGrid for Syncfusion Essential WPF
-description: Overview of SfDataGrid and its feature compared with different Grid.
+title: Overview of SfDataGrid for Syncfusion Essential WPF.
+description: Overview and feature comparison between different Grid with SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -30,7 +30,7 @@ Following are the key features of SfDataGrid control
 * Unbound rows – Support to display unbound rows.
 * Touch support – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
 
-## Choose between different Grid's 
+## **Choose between different Grid's** 
 
 
 Syncfusion WPF suite comes up with following different Grid’s namely,
@@ -215,7 +215,7 @@ SfDataGrid provides support for {{ '[CellTemplate](http://help.syncfusion.com/wp
 IEditableObjectSupport
 </td>
 <td>
-SfDataGrid supports to rollback the changes when you press Esc Key by implementing IEditableObject interface. 
+SfDataGrid supports to rollback the changes when you press <kbd>Esc</kbd> Key by implementing IEditableObject interface. 
 For more information about IEditableObject refer {{ '[IEditableObject](http://help.syncfusion.com/wpf/sfdatagrid/editing)' | markdownify }}.
 </td>
 </tr>

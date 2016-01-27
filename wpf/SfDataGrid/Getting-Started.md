@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 
-## Assembly deployment
+## **Assembly deployment**
 
 The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
 
@@ -87,14 +87,14 @@ Syncfusion.Pdf.Base contains fundamental and base classes for creating Pdf.
 </table>
 
 
-## Creating simple application with SfDataGrid
+## **Creating simple application with SfDataGrid**
 
 In this walk through, you will create WPF application that contains SfDataGrid control. 
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in XAML](#adding-control-manually-in-xaml)
-4. [Adding control manually in C#](#adding-control-manually-in-c#)
+4. [Adding control manually in C#](#adding-control-manually-in-c)
 5. [Creating Data Model for application](#creating-data-model-for-sample-application)
 6. [Binding to Data](#binding-to-data)
 7. [Defining Columns](#defining-columns)
@@ -144,7 +144,7 @@ In order to add control manually in C#, do the below steps,
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
 	* Syncfudion.Shared.WPF
-2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid**
+2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid** .
 3. Create SfDataGrid control instance and add it to the Page.
 
 {% tabs %}
@@ -224,7 +224,8 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-    N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
+
+N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
  
 2.Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
 
@@ -264,9 +265,9 @@ public class ViewModel
 
 ### Binding to Data
 
-To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property to an **IEnumerable** implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object. 
+To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object. 
  
-Bind the collection created in previous step to SfDataGrid.ItemsSource property in XAML by setting ViewModel as DataContext.
+Bind the collection created in previous step to `SfDataGrid.ItemsSource`     property in XAML by setting ViewModel as DataContext.
 
 {% tabs %}
 {% highlight xaml %}
@@ -293,11 +294,11 @@ dataGrid.ItemsSource = viewModel.Orders;
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application and you can expect the see the below output,
+Now, run the application and you can expect the see the below output,
 
 ![](Getting-Started_images/Getting-started_img2.png)
 
-## Defining Columns
+## **Defining Columns**
 By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. The following table lists the column types and it’s constraints for auto column generation.
 
 <table>
@@ -507,17 +508,17 @@ Represents SfDataGrid column that hosts {{'[SfMultiColumnDropDownControl](http:/
 </tr>
 </table>
 
-## Selection
+## **Selection**
 
 By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionMode.html) property to specify whether a user can select single row or cell, or multiple rows or cells.  Set the [SfDataGrid.SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) property to specify whether rows can be selected, or cells can selected.
 
-When SelectionUnit is Row, you can get information about the rows that are selected using [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItems.html) properties. 
+When `SelectionUnit` is `Row`, you can get information about the rows that are selected using [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItems.html) properties. 
 
-When SfDataGrid.SelectionUnit is Cell, you can get information about the cells that are selected by calling [SfDataGrid.GetSelectedCells](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GetSelectedCells.html) method. 
+When `SfDataGrid.SelectionUnit` is `Cell`, you can get information about the cells that are selected by calling [SfDataGrid.GetSelectedCells](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GetSelectedCells.html) method. 
 
 You can handle the selection operations with the help of [SfDataGrid.SelectionChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanging_EV.html) and [SfDataGrid.SelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanged_EV.html) events of SfDataGrid.
 
-## Sorting, Grouping, and Filtering
+## **Sorting, Grouping, and Filtering**
 
 **Sorting**
 
@@ -536,7 +537,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 
 ![](Getting-Started_images/Getting-started_img3.png)
 
-You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) events. To cancel the default sort, set the Cancel property to true in SfDataGrid.SortColumnsChanging event. 
+You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -552,7 +553,7 @@ void dataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArg
 
 **Grouping**
 
-Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowGroupDropArea.html) property, where you can group by dragging the column header and dropping it in the GroupDropArea over the column headers. You can configure the grouping by setting [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) property as below,
+Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowGroupDropArea.html) property, where you can group by dragging the column header and dropping it in the `GroupDropArea` over the column headers. You can configure the grouping by setting [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) property as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -569,14 +570,14 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](http://help.sy
 
 **Filtering**
 
-Filtering can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to true, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) and [SfDataGrid.FilterChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanged_EV.html) events. 
+Filtering can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to `true` , where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) and [SfDataGrid.FilterChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanged_EV.html) events. 
 
 ![](Getting-Started_images/Getting-started_img5.png)
 
 
-## Editing
+## **Editing**
 
-Editing can be enabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html) property to true. Set [SfDataGrid.AllowDeleting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDeleting.html) property to specify whether user can delete rows by pressing delete key. 
+Editing can be enabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html) property to `true` . Set [SfDataGrid.AllowDeleting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDeleting.html) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key. 
 
 Set [SfDataGrid.AddNewRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowPosition.html) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
 
