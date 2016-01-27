@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Getting Started
+# **Getting Started**
 
 
 ## **Assembly deployment**
@@ -102,16 +102,16 @@ In this walk through, you will create WPF application that contains SfDataGrid c
 9. [Sorting, Grouping, and Filtering](#sorting-grouping-and-filtering)
 10. [Editing](#editing)
 
-### Creating the project
+### **Creating the project**
 
 Create new WPF Project in Visual Studio to display SfDataGrid with data objects.
 
-### Adding control via Designer
+### **Adding control via Designer**
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
     ![](Getting-Started_images/Getting-started_img1.png)
 
-### Adding control manually in XAML
+### **Adding control manually in XAML**
 
 In order to add control manually in XAML, do the below steps,
 
@@ -136,7 +136,7 @@ In order to add control manually in XAML, do the below steps,
 {% endhighlight %}
 {% endtabs %}
 
-### Adding control manually in C\#
+### **Adding control manually in C\#**
 
 In order to add control manually in C#, do the below steps,
 
@@ -165,7 +165,7 @@ namespace WpfApplication1
 {% endhighlight %}
 {% endtabs %}
 
-### Creating Data Model for sample application
+### **Creating Data Model for sample application**
 
 SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
@@ -263,7 +263,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Binding to Data
+### **Binding to Data**
 
 To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object. 
  
