@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# SfDataGrid
+# **SfDataGrid**
 
 The SfDataGrid control for WPF is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data. 
 
@@ -30,8 +30,8 @@ Following are the key features of SfDataGrid control
 * Unbound rows – Support to display unbound rows.
 * Touch support – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
 
-## **Choose between different Grid's** 
 
+## **Choose between different Grid's** 
 
 Syncfusion WPF suite comes up with following different Grid’s namely,
 

@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Data Binding
+# **Data Binding**
 
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property.
 
@@ -34,7 +34,7 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 
 * [GridUnboundColumn.Expression](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~Expression.html) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [Datacolumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
 * `AddNewRow` is not support when filtering is enabled.
-* Advanced Filtering does not support `Case Sensitive` filtering.
+* Advanced Filtering does not support Case Sensitive filtering.
 * [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv_members.html) is not supported.
 * Custom sorting is not supported.
 * Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
@@ -44,7 +44,7 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 
 SfDataGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
 
-1. SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
+1. SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - `AllowDataShaping` and `AllowSummaryUpdate`.
 2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
 All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding dynamic data object. If the data operations are not working as expected, set [SfDataGrid.IsDynamicItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~IsDynamicItemsSource.html) property as `true` .
  
@@ -69,7 +69,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 
 **Limitations when binding complex property** 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
+* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
 ## **Binding Indexer properties**
 
@@ -94,7 +94,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
  
 **Limitations when binding indexer property** 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
+* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
 
 ## **Defining source data type**
@@ -115,7 +115,7 @@ For example, when you set [SourceType](http://help.syncfusion.com/cr/cref_files/
 
 ## **Events**
 
-### ItemsSourceChanged
+### **ItemsSourceChanged**
 
 [SfDataGrid.ItemsSourceChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSourceChanged_EV.html) event occurs when the data source is changed by using ItemsSource property.
 This event receives two arguments namely `sender` that handles `SfDataGrid` and [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)as objects.
@@ -201,7 +201,7 @@ N> DataGrid creates different types of views derived from `ICollectionViewAdv` i
 
 The following events are associated with View.
 
-### RecordPropertyChanged
+### **RecordPropertyChanged**
 
 [RecordPropertyChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as object.
 
@@ -209,7 +209,7 @@ The following events are associated with View.
 
 [PropertName](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs.propertyname) – It denotes the PropertyName of the changed value.
 
-### CollectionChanged
+### **CollectionChanged**
 
 [CollectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~CollectionChanged_EV.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as object.
 
@@ -225,7 +225,7 @@ The following events are associated with View.
 
 [OldStartingIndex](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)&rd=true)-It contains the index at which the Action occurred.
 
-### SourceCollectionChanged
+### **SourceCollectionChanged**
 
 [SourceCollectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in SourceCollection for example add or remove the collection. The event receives two arguments namely sender that handles GridQueryableCollectionViewWrapper object and NotifyCollectionChangedEventArgs as object.
 
@@ -275,14 +275,14 @@ Below are the topics,
 **Reference:**
 [https://msdn.microsoft.com/en-us/library/dd465161.aspx](https://msdn.microsoft.com/en-us/library/dd465161.aspx)
 
-### Create the WCF data service 
+### **Create the WCF data service** 
 
 To create the WCF data service, follow the steps mentioned in the below msdn link or the follow below steps,
 [https://msdn.microsoft.com/en-us/library/dd728275.aspx](https://msdn.microsoft.com/en-us/library/dd728275.aspx).
 
 You can skip the below steps and directly add service reference to the client application, if you are having already running service.
  
-### Create an ASP.NET Web Application
+### **Create an ASP.NET Web Application**
 
 To create an ASP.NET Web Application, follow the below steps,
 
@@ -291,7 +291,7 @@ To create an ASP.NET Web Application, follow the below steps,
     
     ![](Data-Binding_images/Data-Binding_img1.png)
 
-### Define data model using ADO.NET Entity Data Model
+### **Define data model using ADO.NET Entity Data Model**
 
 Follow the below steps to define **ADO.NET Entity Data Model** in the web project created in the previous step,
 
@@ -313,7 +313,7 @@ Follow the below steps to define **ADO.NET Entity Data Model** in the web projec
 
 8. Now select **Finish** button to add the entity model for “Northwind.edmx” file to your web project.
 
-### Add the WCF Data Service to web application
+### **Add the WCF Data Service to web application**
 
 To add the WCF Data Service to your web project created in first step,
 
@@ -344,7 +344,7 @@ public class WcfDataService1 : DataService&lt;NORTHWNDEntities&gt;
 
 5.On the menu bar, select Debug->Start without Debugging to execute the service. A browser window opens and the XML schema for the service is displayed. You can also get the localhost address for the service here.
 
-### Creating the WPF Client Application
+### **Creating the WPF Client Application**
 
 To create the WPF client application, add new WPF project in the same solution and name the project as NorthwindEditor. After creating the WPF application, you can add the service created in previous step to your WPF project.
 
@@ -356,7 +356,7 @@ To add service reference to client application,
 
     ![](Data-Binding_images/Data-Binding_img6.png)
 
-### Loading data from WCF service
+### **Loading data from WCF service**
 
 To load the data from WCF service to SfDataGrid,
  
@@ -394,14 +394,16 @@ To load the data from ADO.NET entity framework, you can refer the steps mentione
 **References :**
 
 [https://msdn.microsoft.com/en-us/library/dd465159.aspx](https://msdn.microsoft.com/en-us/library/dd465159)
+
 [https://msdn.microsoft.com/en-us/library/vstudio/ee340709(v=vs.100).aspx](https://msdn.microsoft.com/en-us/library/vstudio/ee340709(v=vs.100))
+
 [https://msdn.microsoft.com/en-US/data/jj206878](https://msdn.microsoft.com/en-US/data/jj206878)
 
-### Creating WPF client Application
+### **Creating WPF client Application**
 
 To load data from entity framework, create a new WPF Application and add the SfDataGrid control to your application.
 
-### Defining Data Model using Entity Framework 4.0
+### **Defining Data Model using Entity Framework 4.0**
 
 To create Data Model using Entity Framework in WPF application created in the previous step,
  
@@ -428,7 +430,7 @@ To create Data Model using Entity Framework in WPF application created in the pr
 
 9. Click **Finish** button to add the **EntityBindingFramework.edmx** file to your application. The **Entity diagram** for the **Order_detail** table is opened.
 
-### Loading data from Entity Framework data service
+### **Loading data from Entity Framework data service**
 
 To access data from the database created in previous step, create a ViewModel class with OrderDetails property and the OrderDetails is initialized by accessing the Order_Details table from the database.
 
@@ -469,7 +471,7 @@ Now, run the application and you can see the following screenshot shows the SfDa
 <br/>
     ![](Data-Binding_images/Data-Binding_img11.png)
 
-### Save back to Database
+### **Save back to Database**
 
 You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html), [SfDataGrid.CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) or [SfDataGrid.CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) events. The below code example will save back the changed value of row to data base.
 
@@ -509,11 +511,11 @@ SfDataGrid control supports to bind data from Linq to SQL .In this walkthrough, 
 
 [https://msdn.microsoft.com/en-us/library/bb386931.aspx](https://msdn.microsoft.com/en-us/library/bb386931)
 
-### Creating WPF Client Application
+### **Creating WPF Client Application**
 
 To add Linq to SQL, create a new WPF application and add the SfDataGrid control in your application.
  
-### Adding data model using Linq to SQL
+### **Adding data model using Linq to SQL**
 
 To create data model using Linq to SQL in WPF project follow the below steps.
 
@@ -545,7 +547,7 @@ To create data model using Linq to SQL in WPF project follow the below steps.
 
 12. Drag **Shippers** table in to design view of **Northwind.dbml**. The **Entity model diagram** for Shippers table is generated once it is dropped in to design view.
  
-### Loading data from Linq to SQL classes 
+### **Loading data from Linq to SQL classes** 
 
 To load the database created in previous step in to SfDataGrid, create a ViewModel class with Shippers property and it is initialized with Shippers table in Northwind database.
 
@@ -572,7 +574,7 @@ public class ViewModel
 
 N> NorthwindDataContext is from `Northwind.Designer.cs` file (it is from the file that is added with Linq to SQL). Shippers are selected table from Database.
 
-### Binding data to SfDataGrid
+### **Binding data to SfDataGrid**
 
 To bind data from Linq to SQL classes, assign the Shippers collection created in the previous step, to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property and set the DataContext as ViewModel.
 
@@ -587,7 +589,7 @@ Now, run the application and you can see the following screenshot shows the SfDa
 <br/>
     ![](Data-Binding_images/Data-Binding_img17.png)
 
-### Save back to Database
+### **Save back to Database**
 
 You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html), [SfDataGrid.CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) or [SfDataGrid.CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) events. 
 
@@ -624,11 +626,11 @@ SfDataGrid control supports to load the data using [ADO.NET](https://msdn.micros
 2. Connecting  database to WPF application
 3. Loading data using ADO.NET
 
-### Creating WPF Application
+### **Creating WPF Application**
 
 To display the data from the ADO.NET data service, create a new WPF Application.
  
-### Connecting WPF application to Databases
+### **Connecting WPF application to Databases**
 
 To connect SQL database to your WPF application, refer the below msdn link or follow the below steps,
 
@@ -652,7 +654,7 @@ To connect SQL database to your WPF application, refer the below msdn link or fo
 
 8. To get connection string for the data base, right-click on your database and then click **properties** option.
 
-### Loading data from ADO.NET 
+### **Loading data from ADO.NET** 
 
 To access the data from data source using ADO.NET, follow the below steps.
 
@@ -689,7 +691,7 @@ Now, run the application and you can see the following screenshot displays the S
 <br/>
     ![](Data-Binding_images/Data-Binding_img21.png)
 
-### Save back to Database
+### **Save back to Database**
 
 You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html), [SfDataGrid.CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) or [SfDataGrid.CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) events. 
 
