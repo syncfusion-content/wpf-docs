@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding support in SfDataGrid.
-description:  Data Binding | SfDataGrid | WPF | Syncfusion
+description: How to bind the data in SfDataGrid with different collection and service provider.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -19,13 +19,117 @@ SfDataGrid control is designed to display the bounded data in a tabular format. 
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), SfDataGrid automatically refresh the UI as ObservableCollection implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged). But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), SfDataGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), SfDataGrid will not refresh the UI automatically.
 
-## View 
+## **Binding with IEnumerable**
 
-DataGrid has the View property of type [ICollectionViewAdv](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv.html) interfacethat implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to ItemsSource property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
+SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
 
-N> DataGrid creates different types of views derived from [ICollectionViewAdv](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv.html) interface based on ItemsSource.
+
+## **Binding with DataTable**
+
+SfDataGrid control supports to bind the [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
+
+Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
+
+* [GridUnboundColumn.Expression](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~Expression.html) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [Datacolumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
+* `AddNewRow` is not support when filtering is enabled.
+* Advanced Filtering does not support `Case Sensitive` filtering.
+* [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv_members.html) is not supported.
+* Custom sorting is not supported.
+* Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
+
+
+## **Binding with dynamic data object**
+
+SfDataGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
+
+1. SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
+2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
+All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding dynamic data object. If the data operations are not working as expected, set [SfDataGrid.IsDynamicItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~IsDynamicItemsSource.html) property as `true` .
+ 
+ 
+## **Binding Complex properties**
+
+SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MappingName.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" />
+        <syncfusion:GridTextColumn MappingName="Customer.CustomerID" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding complex property. If the data operations are not working as expected, set [GridColumn.UseBindingValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~UseBindingValue.html) as `true` to make it work. 
+
+**Limitations when binding complex property** 
+
+* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
+
+## **Binding Indexer properties**
+
+SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MappingName.html). 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Students}" AutoGenerateColumns="False">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="RollNo"/>
+        <syncfusion:GridTextColumn MappingName="Name"/>
+        <syncfusion:GridTextColumn MappingName="Marks[0]"/>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridTextColumn() {MappingName="Marks[0]"});
+{% endhighlight %}
+{% endtabs %}
+
+All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding indexer property. If the data operations are not working as expected, set [GridColumn.UseBindingValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~UseBindingValue.html) as `true` to make it work.
+ 
+**Limitations when binding indexer property** 
+
+* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
+
+
+## **Defining source data type**
+
+Based on type of data item bound to SfDataGrid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SourceType.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" SourceType="{x:Type local:OrderInfo}"/>
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.SourceType = typeof(OrderInfo);
+{% endhighlight %}
+{% endtabs %}
+
+For example, when you set [SourceType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SourceType.html) property, the columns are generated based on members of SourceType regardless of data items actual type. When your `ItemsSource` have different types derived from same type, you can set SourceType as base type for all different types.
+
+
+## **Events**
+
+### ItemsSourceChanged
+
+[SfDataGrid.ItemsSourceChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSourceChanged_EV.html) event occurs when the data source is changed by using ItemsSource property.
+This event receives two arguments namely `sender` that handles `SfDataGrid` and [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)as objects.
+
+The [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)object contains the following properties:
+
+* [OldItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs~OldItemsSource.html) - Gets the value of old data source
+* [NewItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs~NewItemsSource.html) - Get the value of new data source
+
+## **View** 
+
+DataGrid has the View property of type [ICollectionViewAdv](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
+
+N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on ItemsSource.
 
 <table>
 <tr>
@@ -101,7 +205,7 @@ The following events are associated with View.
 
 [RecordPropertyChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as object.
 
-[PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) has below property,
+`PropertyChangedEventArgs` has below property,
 
 [PropertName](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs.propertyname) – It denotes the PropertyName of the changed value.
 
@@ -109,7 +213,7 @@ The following events are associated with View.
 
 [CollectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~CollectionChanged_EV.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as object.
 
-[NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) has below properties,
+`NotifyCollectionChangedEventArgs` has below properties,
 
 [Action](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true) - It conatains the current action. (i.e) Add, Remove, Move, Replace, Reset.
 
@@ -125,7 +229,7 @@ The following events are associated with View.
 
 [SourceCollectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in SourceCollection for example add or remove the collection. The event receives two arguments namely sender that handles GridQueryableCollectionViewWrapper object and NotifyCollectionChangedEventArgs as object.
 
-NotifyCollectionChangedEventArgs has below properties,
+`NotifyCollectionChangedEventArgs` has below properties,
 
 [Action](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true) - It conatains the current action. (i.e) Add, Remove, Move, Replace, Reset.
 
@@ -159,113 +263,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 
 N> View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
 
-
-## Binding with IEnumerable
-
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
-
-
-## Binding with DataTable
-
-SfDataGrid control supports to bind the [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
-
-Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
-
-* [GridUnboundColumn.Expression](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~Expression.html) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [Datacolumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
-* **AddNewRow** is not support when filtering is enabled.
-* Advanced Filtering does not support **Case Sensitive** filtering.
-* [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv_members.html) is not supported.
-* **Custom sorting** is not supported.
-* Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
-
-
-## Binding with dynamic data object
-
-SfDataGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
-
-1. SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
-2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
-All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding dynamic data object. If the data operations are not working as expected, set [SfDataGrid.IsDynamicItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~IsDynamicItemsSource.html) property as true.
- 
- 
-## Binding Complex properties
-
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MappingName.html).
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid AutoGenerateColumns="False" ItemsSource="{Binding Orders}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="OrderID" />
-        <syncfusion:GridTextColumn MappingName="Customer.CustomerID" />
-        <syncfusion:GridTextColumn MappingName="ShipCity" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
-{% endhighlight %}
-{% endtabs %}
-
-All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding complex property. If the data operations are not working as expected, set [GridColumn.UseBindingValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~UseBindingValue.html) as true to make it work. 
-
-**Limitations when binding complex property** 
-
-* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
-
-## Binding Indexer properties
-
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MappingName.html). 
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Students}" AutoGenerateColumns="False">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="RollNo"/>
-        <syncfusion:GridTextColumn MappingName="Name"/>
-        <syncfusion:GridTextColumn MappingName="Marks[0]"/>
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
-{% endhighlight %}
-{% highlight c# %}
-this.dataGrid.Columns.Add(new GridTextColumn() {MappingName="Marks[0]"});
-{% endhighlight %}
-{% endtabs %}
-
-All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding indexer property. If the data operations are not working as expected, set [GridColumn.UseBindingValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~UseBindingValue.html) as true to make it work.
- 
-**Limitations when binding indexer property** 
-
-* SfDataGrid doesn’t support [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) - AllowDataShaping and AllowSummaryUpdate.
-
-
-## Defining source data type
-
-Based on type of data item bound to SfDataGrid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SourceType.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" SourceType="{x:Type local:OrderInfo}"/>
-{% endhighlight %}
-{% highlight c# %}
-dataGrid.SourceType = typeof(OrderInfo);
-{% endhighlight %}
-{% endtabs %}
-
-For example, when you set [SourceType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SourceType.html) property, the columns are generated based on members of SourceType regardless of data items actual type. When your ItemsSource have different types derived from same type, you can set SourceType as base type for all different types.
-
-
-## Events
-
-### ItemsSourceChanged
-
-[SfDataGrid.ItemsSourceChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSourceChanged_EV.html) event occurs when the data source is changed by using ItemsSource property.
-This event receives two arguments namely **sender** that handles SfDataGrid and [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)as objects.
-
-The [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)object contains the following properties:
-
-* [OldItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs~OldItemsSource.html) - Gets the value of old data source
-* [NewItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs~NewItemsSource.html) - Get the value of new data source
-
-
-## Binding data from WCF service
+## **Binding data from WCF service**
 
 In this walkthrough, you will learn about how to create a WCF service and load it to SfDataGrid control. 
 Below are the topics,
@@ -380,10 +378,10 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application and you can see the SfDataGrid control loaded with data from WCF service.
+Now, run the application and you can see the SfDataGrid control loaded with data from WCF service.
  
  
-## Binding data from ADO.NET Entity Framework
+## **Binding data from ADO.NET Entity Framework**
 
 SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.NET_EntityFramework_Demo-1973737092.zip).
 
@@ -396,9 +394,7 @@ To load the data from ADO.NET entity framework, you can refer the steps mentione
 **References :**
 
 [https://msdn.microsoft.com/en-us/library/dd465159.aspx](https://msdn.microsoft.com/en-us/library/dd465159)
-
 [https://msdn.microsoft.com/en-us/library/vstudio/ee340709(v=vs.100).aspx](https://msdn.microsoft.com/en-us/library/vstudio/ee340709(v=vs.100))
-
 [https://msdn.microsoft.com/en-US/data/jj206878](https://msdn.microsoft.com/en-US/data/jj206878)
 
 ### Creating WPF client Application
@@ -421,7 +417,7 @@ To create Data Model using Entity Framework in WPF application created in the pr
 
     ![](Data-Binding_images/Data-Binding_img8.png)
 
-6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/library/s4yys16a.aspx# "").
+6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/library/s4yys16a.aspx).
 
     ![](Data-Binding_images/Data-Binding_img9.png)
 
@@ -468,7 +464,9 @@ To populate the SfDataGrid using Entity Framework, bind the collection created i
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application and you can see the following screenshot shows the SfDataGrid control populated with data from Entity Framework data service. 
+Now, run the application and you can see the following screenshot shows the SfDataGrid control populated with data from Entity Framework data service.
+
+<br/>
     ![](Data-Binding_images/Data-Binding_img11.png)
 
 ### Save back to Database
@@ -496,7 +494,7 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 {% endtabs %}
 
 
-## Binding data from Linq to SQL
+## **Binding data from Linq to SQL**
 
 SfDataGrid control supports to bind data from Linq to SQL .In this walkthrough, you will learn about binding data from Linq to SQL and save back the changes to the Database.
 
@@ -571,7 +569,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-*N> NorthwindDataContext is from Northwind.Designer.cs file (it is from the file that is added with Linq to SQL). Shippers are selected table from Database.*
+
+N> NorthwindDataContext is from `Northwind.Designer.cs` file (it is from the file that is added with Linq to SQL). Shippers are selected table from Database.
 
 ### Binding data to SfDataGrid
 
@@ -583,7 +582,9 @@ this.dataGrid.ItemsSource = (this.dataGrid.DataContext as ViewModel).Shippers;
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application and you can see the following screenshot shows the SfDataGrid control loaded with Shippers data.
+Now, run the application and you can see the following screenshot shows the SfDataGrid control loaded with Shippers data.
+
+<br/>
     ![](Data-Binding_images/Data-Binding_img17.png)
 
 ### Save back to Database
@@ -615,7 +616,7 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 {% endtabs %}
 
 
-## Binding data from ADO.NET
+## **Binding data from ADO.NET**
 
 SfDataGrid control supports to load the data using [ADO.NET](https://msdn.microsoft.com/en-us/library/aa302325.aspx). In this walk-through, you will learn about binding data from ADO.NET service and save back the changes to the database.
 
@@ -683,7 +684,9 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application and you can see the following screenshot displays the SfDataGrid loaded the data using ADO.NET.
+Now, run the application and you can see the following screenshot displays the SfDataGrid loaded the data using ADO.NET.
+
+<br/>
     ![](Data-Binding_images/Data-Binding_img21.png)
 
 ### Save back to Database
@@ -720,7 +723,7 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 {% endtabs %}
 
 
-## Binding data from MS-Access
+## **Binding data from MS-Access**
 
 SfDataGrid control supports to bind data from MS-Access database .In this section, you will learn about how to bind the data from MS-Access database to SfDataGrid. 
 To load the data from MS-Access database,
@@ -750,6 +753,7 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-7.Now run the application and you can see following screenshot shows the SfDataGrid control populated data from MS-Access database.    
+7.Now, run the application and you can see following screenshot shows the SfDataGrid control populated data from MS-Access database.
+<br/>    
     ![](Data-Binding_images/Data-Binding_img22.png)
 
