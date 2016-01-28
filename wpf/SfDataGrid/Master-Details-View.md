@@ -62,7 +62,7 @@ In addition, GridViewDefinition supports the following list of properties in the
 The following code example illustrates how to define the GridViewDefinition.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -234,7 +234,7 @@ The DetailsViewCollapsed event handler receives two arguments namely sender that
 You can wire those events from XAML or Code-Behind. For example.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -301,7 +301,7 @@ void grid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventA
 It is not preferable to change the value of the public properties like AllowFiltering, AllowSorting, SelectionUnit, AllowDeleting, etc., from this event argument. You can set the value for these properties in the RootDataGrid itself (defined in the GridViewDefinition) as follows.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -875,7 +875,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -922,7 +922,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 			<Window x:Class="SimpleApplication.MainWindow"
@@ -1281,7 +1281,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 			<Window x:Class="SimpleApplication.MainWindow"
@@ -1365,7 +1365,7 @@ private void DataGrid_DetailsViewExpanding(object sender, GridDetailsViewExpandi
 }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1426,7 +1426,7 @@ private void AddItem(object sender, RoutedEventArgs e)
 You can cusomtize columns and other settings for the Master-Details view Grid for a particular level by using the GridViewDefinition.DataGrid property. In the following code example, Columns are customized for the Master-Details view.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1474,7 +1474,7 @@ The following code example explains how to customize column in code behind.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1562,7 +1562,7 @@ Customized columns Master-Detail view
 
 You can handle events for the actions in the Master-DetailView like in the Parent Grid.You can wire the events by using the GridViewDefinition.DataGrid from XAML or code behind. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1643,7 +1643,7 @@ void DataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 Master-Details View Grid has the GridViewDefintion property that has the DataGrid property. You can set properties for the Master-Details view by using the GridViewDefinition.DataGrid property. The following code example explains you how to set properties in Master-Details View by using the XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

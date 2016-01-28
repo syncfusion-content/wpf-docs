@@ -24,7 +24,7 @@ To move the thumb of the SfRangeSlider to the tapped position, you have to set t
 
 The following code example and screenshot illustrates the above.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -43,7 +43,7 @@ To move the thumb of the SfRangeSlider based on the SmallChange value, you have 
 
 The following code example and screenshot illustrates the above.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -62,7 +62,7 @@ To move the thumb of the SfRangeSlider based on the LargeChange value, you have 
 
 The following code example and screenshot illustrates the above.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -82,7 +82,7 @@ To fix the thumb movement of the SfRangeSlider, you have to set the MoveToPoint 
 
 The following code example and screenshot illustrates the above.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 

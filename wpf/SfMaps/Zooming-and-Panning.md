@@ -42,7 +42,7 @@ The MaxZoom property is used to set the maximum zoom level of the Map control.
 
 Sample code for setting zooming feature properties:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -105,7 +105,7 @@ Properties related to Panning are:
 
 The EnablePan property enables or disables the panning feature of the map. A “True” value enables the panning feature. A “False” value disables the panning feature of the map.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True">         

@@ -211,7 +211,7 @@ Series can be customized with user defined data templates. The following sample 
 
 The following data template will be used to customize the series:
 
-  {% highlight xml %}
+  {% highlight xaml %}
 
   
 
@@ -430,7 +430,7 @@ C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OL
 
 We can use the following code sample for enabling chart animations: 
 
-  {% highlight xml %}
+  {% highlight xaml %}
 
 
 

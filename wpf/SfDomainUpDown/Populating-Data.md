@@ -121,7 +121,7 @@ N> When the ContentTemplate property of the DomainUpDown control is not set, Ite
 
 ContentTemplate helps the user decorate the content with visual elements. At this point, the control is populated with list of employees, and the Employee model contains two properties: Name and Email. In this example, the control is set to display content based on Name.
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 

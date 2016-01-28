@@ -36,7 +36,7 @@ bool </td></tr>
 We have to set the EnableRangeAdorner property, either in XAML or the code file.
 
 {% tabs %}
-{% highlight xml %} EnableRangeAdorner="True"
+{% highlight xaml %} EnableRangeAdorner="True"
 {% endhighlight %}
 
 

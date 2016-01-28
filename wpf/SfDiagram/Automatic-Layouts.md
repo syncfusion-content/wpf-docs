@@ -40,7 +40,7 @@ public class Employees : ObservableCollection<Employee>
 
 ###Initalize Dats Source Settings
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Initializes the DataSourceSettings -->
         <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="Empid" 
@@ -50,7 +50,7 @@ public class Employees : ObservableCollection<Employee>
 
 ###Visulaize the Node and Connector
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Style for the Node>-->
         <Style TargetType="syncfusion:Node">
@@ -106,7 +106,7 @@ public class Employees : ObservableCollection<Employee>
 
 An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 _//Initializes data source_
 <local:Employees x:Key="Employees">
@@ -197,7 +197,7 @@ To create the Directed Tree Layout, `Type` should be set as `LayoutType.Hierarch
 
 N> SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:Employees x:Key="Employees">
 <local:Employee Empid="0" Role="Project Management"></local:Employee>
@@ -226,7 +226,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the layout root.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:Employees x:Key="Employees">
 	<local:Employee Empid="0" Role="Project Management"></local:Employee>

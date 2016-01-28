@@ -15,7 +15,7 @@ documentation: ug
 
 The `SnapConstraints` property of SnapSettings enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <diagram:SfDiagram x:Name="diagram" Height="400" Width="400">
   <diagram:SfDiagram.SnapSettings>

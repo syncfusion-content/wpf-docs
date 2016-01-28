@@ -17,7 +17,7 @@ Create a GroupBar control in XAML, as seen below.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:GroupBar Name="groupBar1">
 

@@ -57,7 +57,7 @@ A demo is available in the following location:
 
 The following code snippets demonstrate how theming is added to the OLAPChart control.
 
- {% highlight xml %}
+ {% highlight xaml %}
 
    
 

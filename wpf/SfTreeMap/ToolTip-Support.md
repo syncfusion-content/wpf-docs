@@ -12,7 +12,7 @@ documentation: ug
 You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For modifying default appearance of ToolTip, ToolTipTemplate can be specified.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

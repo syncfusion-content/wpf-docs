@@ -20,7 +20,7 @@ The minimizing item size can be added to an application by using either XAML or 
 The following code example illustrates how to add the minimizing item size to an application through XAML.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TileViewControl x:Name="TileView1" Background="White" 
 

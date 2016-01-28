@@ -97,7 +97,7 @@ if set false, then it will be disabled or all calculated members wil
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

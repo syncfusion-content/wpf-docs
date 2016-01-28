@@ -40,7 +40,7 @@ The RangeAdornerBackground property must be set either in XAML or the code file.
 
 
 {% tabs %}
-{% highlight xml %}  
+{% highlight xaml %}  
 RangeAdornerBackground="LightGreen" 
 {% endhighlight %} 
 

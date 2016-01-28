@@ -13,7 +13,7 @@ CurrencyTextBox accepts null values. To enable the null option you have to set t
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" UseNullOption="True" NullValue="100"/>
@@ -39,7 +39,7 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

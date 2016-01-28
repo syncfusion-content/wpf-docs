@@ -131,7 +131,7 @@ public class ViewModel
     }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

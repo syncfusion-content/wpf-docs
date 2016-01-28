@@ -470,7 +470,7 @@ NA</td></tr>
 </table>
 The following code example shows how to configure the range band.
 
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:SparkLine Grid.Row="0" Grid.Column="10" ItemsSource="{Binding Collections}" DataMemberPath="Y" SparkLineType="Line" BandRange="-5,8" IsEnableRangeBand="True" RangeBandInterior="Red"/>
 
 {% endhighlight  %}

@@ -16,7 +16,7 @@ Two types of Navigation mode are supported by Tree Navigator to navigate between
 In this navigation mode, the header of current hierarchy level item can be displayed in the top of the Tree Navigator with the back button. This back button is used to navigate towards the root from the current level. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 
@@ -45,7 +45,7 @@ In this navigation mode, the header of current hierarchy level item can be displ
 In this navigation mode, header of each level from the root to current level stacked one by one in the top of the Tree Navigator.  When click on any of that header will take us to the corresponding level. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 

@@ -11,7 +11,7 @@ documentation: ug
 
 You can set a custom header image for the TaskBarItem. Use the following code snippet to set an image for the header.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

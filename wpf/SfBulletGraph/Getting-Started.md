@@ -41,7 +41,7 @@ The **SfBulletGraph** assemblies will be automatically added to the Project afte
 
 Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.yncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:bulletgraph="http://schemas.syncfusion.com/wpf"
     (or)
@@ -91,7 +91,7 @@ The SfBulletGraph control will be created as shown in the figure below.
 
 Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.yncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:bulletgraph="http://schemas.syncfusion.com/wpf"
     (or)

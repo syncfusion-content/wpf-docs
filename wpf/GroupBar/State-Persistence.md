@@ -103,7 +103,7 @@ Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" SaveOriginalState="True" Name="groupBar"> 
  <!-- Adding GroupBarItem --> 

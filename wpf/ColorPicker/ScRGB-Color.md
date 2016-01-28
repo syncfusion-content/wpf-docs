@@ -11,7 +11,7 @@ documentation: ug
 
 Using the IsScRGBColor property, user can set the value indicating whether this instance is ScRGB color. To enable this property use the following code.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding ColorEdit -->

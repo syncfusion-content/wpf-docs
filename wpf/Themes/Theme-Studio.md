@@ -123,7 +123,7 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 *	Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <syncfusion:SfRadialMenu x:Name="RadialMenu">
             <syncfusion:SfRadialMenuItem Header="Cut">
@@ -141,7 +141,7 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 *	Merge the `SfRadialMenu.xaml` in the application resources using `MergedDictionaries`.
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <Application.Resources> 
     		<ResourceDictionary>

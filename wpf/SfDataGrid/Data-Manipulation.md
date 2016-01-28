@@ -52,7 +52,7 @@ When you need an instant update that happened on DataSource to view, SfDataGrid 
 5. The same way, you can achieve it for Editing with Grouping and Editing with Filtering.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -105,7 +105,7 @@ AddNewRow enables adding rows to enter new records in the DataGrid control. The 
 The following code example illustrates how to add AddNewRow to an application:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -184,7 +184,7 @@ N> NewObject is the read-only property.
 The following code example illustrates how to use AddNewRowInitiating event.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -222,7 +222,7 @@ This section explains you how to delete the records, properties and an event tha
 SfDataGrid has built-in support for deleting records. You can delete a selected row by pressing the Delete key when SfDataGrid.AllowDeleting is set to ‘True’. When multiple records are to be removed from the Grid, you can select multiple records from the SfDataGrid and press Delete.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -360,7 +360,7 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -531,7 +531,7 @@ N> DataGrid adds the new data to the data source only when the data is valid.
 When you start editing in AddNewRow, the DataGrid control creates an instance for a data object. When the data object contains complex properties, they do not initiate with the data object. Therefore, you need to initiate the complex property externally; otherwise the edited value is not committed in the cell. This requirement is achieved by using the AddNewRowInitiating event. The following code example illustrates this:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

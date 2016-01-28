@@ -14,7 +14,7 @@ The width of the TaskBar is customized by using the GroupWidth property. This is
 The following code snippet illustrates how to set the group width.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

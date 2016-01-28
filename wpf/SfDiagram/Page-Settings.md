@@ -23,7 +23,7 @@ You can also customize the appearance of off-page regions with the property Back
 
 The following code illustrates how to customize the page size and the appearance of page and off-page.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <diagram:SfDiagram x:Name="diagram" Background="WhiteSmoke">
   <diagram:SfDiagram.PageSettings>

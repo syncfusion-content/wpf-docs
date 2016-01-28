@@ -21,7 +21,7 @@ Connector can be created by defining the start and end points. The Path to be dr
 
 The `SourcePoint` and `TargetPoint` properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <diagram:SfDiagram.Connectors>
   <diagram:DiagramCollection>
@@ -709,7 +709,7 @@ The `ConnectorPadding` property of Node defines the space to be left between the
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="viewtemplate">
   <TextBlock Text="{Binding Path=Content}" Foreground="White"/>
@@ -907,7 +907,7 @@ The direction of the bridge can be customized with the property `BridgeDirection
 
 The following code example illustrates how to draw the bridge at the bottom direction.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <diagram:SfDiagram x:Name="diagram" BridgeDirection="Bottom">
 <diagram:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,150" 
@@ -997,7 +997,7 @@ StrokeThickness, Stroke and style of the LineConnector and Decorators can be cus
 
 The following code example illustrates how to customize the segment appearance.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style TargetType="Path" x:Key="connectorstyle">
   <Setter Property="Stroke" Value="Green"></Setter>
@@ -1028,7 +1028,7 @@ The following code example illustrates how to customize the appearance of the de
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="decoratorstyle1" TargetType="Path">
   <Setter Property="Fill" Value="Red" />

@@ -109,7 +109,7 @@ The following code example illustrates how to perform grouping in XAML.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -269,7 +269,7 @@ Sorted Grouped Columns using sorting indicator in GroupDropAreaItem
 You can freeze the Grouped header. DataGrid provide an interactive support to Freeze the group caption header while scrolling the Grid vertically. Set SfDataGrid_._AllowFrozenGroupHeaders property to ‘true’ in SfDataGrid. The following code example illustrates how to freeze the group caption header. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -427,7 +427,7 @@ The following statements describe you the events that participate in Grouping. D
 You can use this event to cancel Expand or Collapse action by setting cancel to ‘true’. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -581,7 +581,7 @@ public class GroupDataTimeConverter : IValueConverter
 
 The following code example defines how to set the custom converter for group description.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Window.Resources>
@@ -639,7 +639,7 @@ DataGrid with Custom Grouping
 You can customize GroupDropArea text by using GroupDropAreaText property. You can add this property to SfDataGrid and provide value in GroupDropArea. The following code example illustrates how to customize GroupDropArea Text.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

@@ -119,7 +119,7 @@ The XAML displayed below is used to customize the item-container style.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="HierarchyNavigatorStyle1" TargetType="{x:Type syncfusion:HierarchyNavigator}">
 <Setter Property="BorderBrush" Value="Black"/>

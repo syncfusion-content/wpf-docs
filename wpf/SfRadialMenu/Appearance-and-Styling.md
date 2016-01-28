@@ -14,7 +14,7 @@ documentation: ug
 RadiusX and RadiusY properties in the Radial Menu can be used to define the X and Y axis radius to render the control. 
 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -26,7 +26,7 @@ RadiusX and RadiusY properties in the Radial Menu can be used to define the X an
 
 CenterRimRadiusFactor property can be used to define the radius of the center rim (inner circle). 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -43,7 +43,7 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 RimBackground property used to fill the outer rim (outer circle).
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 {%endhighlight%}
@@ -64,7 +64,7 @@ RadialMenu outer ring flled with color
 
 RimActiveBrush property used to fill the expander rim and this expander rim only visible when the items have sub items.   
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -84,7 +84,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 The RimHoverBrush property can be used to fill the expander rim while the pointer is hovering over it. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 
@@ -103,7 +103,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 RimRadiusFactor property of Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 

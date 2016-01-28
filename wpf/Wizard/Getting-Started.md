@@ -27,7 +27,7 @@ Wizard control is created programmatically by using either XAML or C# code. The 
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

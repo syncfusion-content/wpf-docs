@@ -16,7 +16,7 @@ The IntegerTextBox exposes the following events:
 ValueChanged – The event occurs when the Value property of the IntegerTextBox is changed.
 
 {%tabs%}
-{% highlight xml %} <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>{% endhighlight %}
+{% highlight xaml %} <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>{% endhighlight %}
 
 {% highlight C# %} IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.ValueChanged+=new PropertyChangedCallback(IntegerTextBox_ValueChanged);{% endhighlight %}
 

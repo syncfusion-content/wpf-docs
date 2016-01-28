@@ -34,7 +34,7 @@ Sets the flow direction for the ColorPicker and ColorEdit controls. The options 
 ### Use the following code example to set this property.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- Adding ColorPicker -->
 <syncfusion:ColorPicker FlowDirection="RightToLeft" Name="colorPicker"/>
@@ -80,7 +80,7 @@ Sets the visual style for the ColorPicker and ColorEdit controls. The options pr
 
 To set the visual style for the ColorPicker and ColorEdit controls, use the following code.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding ColorPicker -->
@@ -154,7 +154,7 @@ SkinStorage.SetVisualStyle(colorEdit, "Office2007Blue");
 
 The sliders available for the ColorEdit control are Alpha, Blue, Green and Red. The control provides options to customize the background of these sliders by using the respective background properties, i.e., BackgroundA, BackgroundB, BackgroundG, BackgroundR. These properties can be used to set the background for the Alpha, Blue, Green and Red sliders respectively.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Tools:ColorEdit Name="myColorEditor" BackgroundA="DarkBlue" BackgroundB="Yellow" BackgroundG="Black" BackgroundR="Orange"/>

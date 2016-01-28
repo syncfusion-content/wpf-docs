@@ -11,7 +11,7 @@ documentation: ug
 
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filteres by using the SymbolFilterProvider through delegates.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
@@ -68,7 +68,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 ####Create the ISymbol with Symbol and SymbolTemplate properties.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SymbolItem GroupName="Flow Chart" Symbol="FlowChart_Star" 
                   SymbolTemplate="{StaticResource FlowChart_Star}"/>
@@ -77,7 +77,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 ####Define the SymbolTemplate.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="FlowChart_Star">
   <Path Style="{StaticResource SymbolStyle}" Data="M 9,2 11,7 17,7 12,10 14,15 9,12   
@@ -97,7 +97,7 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SymbolCollection x:Key="symbolcollection">
   <local:SymbolItem GroupName="Flow Chart" Symbol="FlowChart_Star" 
@@ -139,7 +139,7 @@ public class SymbolItem : ISymbol
 
 ####Create a Node ,Connector and Group and to SymbolCollection.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Collection of Symbols-->
 <sync:SymbolCollection>
@@ -189,7 +189,7 @@ public class SymbolItem : ISymbol
 
 ####Add SymbolCollection to SymbolSource of Stencil.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <stencil:Stencil x:Name="stencil" ExpandMode="All">
 	<stencil:Stencil.SymbolSource>
@@ -221,7 +221,7 @@ The SymbolGroupProvider groups the symbols into SymbolGroup based on the Mapping
 
 The following code example illustrates how to create a SymbolGroup.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <stencil:Stencil x:Name="stencil" SymbolSource="{StaticResource symbolcollection}">
   <stencil:Stencil.SymbolGroups>

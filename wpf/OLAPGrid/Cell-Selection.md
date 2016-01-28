@@ -20,7 +20,7 @@ Using Cell Selection, you can select cells that can be copied to clipboard or no
 The following code snippets show how to create an OlapGrid and specify its cell selection.
 
 {% tabs %}
-  {% highlight xml %}
+  {% highlight xaml %}
 
     
 

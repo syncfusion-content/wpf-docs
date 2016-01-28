@@ -28,7 +28,7 @@ InnerRimStrokeThickness property can be used to set the thickness of the Inner R
 
 InnerRimFill property can be used the set the fill color of the Inner Rim. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:SfRadialSlider
 
@@ -66,7 +66,7 @@ OuterRimStrokeThickness property can be used to set the thickness of the Outer R
 
 Background property can be used to fill the Outer Rim.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider
 
@@ -93,7 +93,7 @@ Ticks displayed along the circular path can be customized using the following pr
 Ticks can be customized using the TickTemplate property. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider>
 
@@ -120,7 +120,7 @@ Ticks can be customized using the TickTemplate property.
 ### Tick Radius Factor
 
 TickRadiusFactor property decides the radius of the ticks from the total radius available to render the Radial Slider. 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider  TickRadiusFactor="0.75"  />
 
@@ -137,7 +137,7 @@ TickRadiusFactor property decides the radius of the ticks from the total radius 
 Visibility of ticks can be controlled by TickVisibility property. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider TickVisibility="Collapsed" />
 
@@ -157,7 +157,7 @@ Labels displayed along the circular path in the Radial slider can be customized 
 
 The LabelTemplate property can be used to customize the label object. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider>
 
@@ -186,7 +186,7 @@ The LabelTemplate property can be used to customize the label object.
 LabelRadiusFactor property decides the radius of the labels from the total radius available to render the Radial Slider. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider LabelRadiusFactor="0.7" />
 
@@ -204,7 +204,7 @@ LabelRadiusFactor property decides the radius of the labels from the total radiu
 
 Visibility of ticks can be controlled by LabelVisibility property. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider  LabelVisibility="Collapsed" />
 
@@ -224,7 +224,7 @@ The Pointer that is used for the select the value by dragging in circular track 
 
 The PointerRadiusFactor property decides the radius of the Pointer from the total radius available to render the Radial Slider. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider PointerRadiusFactor="0.5" />
 
@@ -241,7 +241,7 @@ The PointerRadiusFactor property decides the radius of the Pointer from the tota
 Style of the Pointer can be customized using the PointerStyle property. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider>
 
@@ -283,7 +283,7 @@ Style of the Pointer can be customized using the PointerStyle property.
 
 The Preview Pointer that appears when hovering over the Radial Slider can be customized using the PreviewPointerStyle property. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfRadialSlider
 

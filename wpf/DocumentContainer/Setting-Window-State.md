@@ -19,7 +19,7 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Adding Document Container -->

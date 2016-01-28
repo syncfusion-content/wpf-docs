@@ -24,7 +24,7 @@ The following code example illustrates how to add the CloseMode feature to an ap
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

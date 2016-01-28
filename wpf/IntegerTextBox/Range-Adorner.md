@@ -37,7 +37,7 @@ bool </td></tr>
 The EnableRangeAdorner property must be set either in XAML or the code file.
 
 {%tabs%}
-{% highlight xml %} EnableRangeAdorner="True" {% endhighlight %}
+{% highlight xaml %} EnableRangeAdorner="True" {% endhighlight %}
 
 {% highlight C# %} control.EnableRangeAdorner = true;{% endhighlight %} 
 

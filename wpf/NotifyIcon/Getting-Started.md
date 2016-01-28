@@ -28,7 +28,7 @@ Here are some highlights of our Notify Icon control.
 NotifyIcon is created either by using XAML code or with C# code, as follows.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

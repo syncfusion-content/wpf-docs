@@ -48,7 +48,7 @@ What’s produced through this set of steps is quite a bit of XAML which is plac
 
 Now you can edit each part in the template and can create custom look and feel for the control. In the following example, template for CarouselItem is edited to give a reflection effect.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
         <Style TargetType="syncfusion:CarouselItem">

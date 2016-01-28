@@ -63,7 +63,7 @@ To create the TaskBar control through designer, do the following steps:
 TaskBar control is created by using either XAML or C# code. The following lines of code can be used to create a TaskBar control.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

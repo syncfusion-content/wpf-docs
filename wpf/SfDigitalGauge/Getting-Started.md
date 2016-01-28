@@ -41,7 +41,7 @@ The SfDigitalGauge assemblies will be automatically added to the Project after C
 
 Create a namespace reference to the SfDigitalGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfDigitalGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the Syncfusion. **Syncfusion.SfGauge.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:syncfusion =[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf# "")
 
@@ -90,7 +90,7 @@ SfDigitalGauge is existing in the following assembly and namespace.
 
 Create a namespace reference to the SfDigitalGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfDigitalGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the Syncfusion. **Syncfusion.SfGauge.WPF** assembly.
 
-{% highlight xml %}
+{% highlight xaml %}
 
     xmlns:syncfusion =[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf# "")
 

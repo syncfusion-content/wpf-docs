@@ -19,7 +19,7 @@ To draw a shape, You have to activate the drawing tool by using the Tool propert
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style TargetType="Path" x:Key="shapestyle">
   <Setter Property="Fill" Value="#fcbc7c"></Setter>
@@ -64,7 +64,7 @@ The following code example illustrates how to draw a path.
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style TargetType="Path" x:Key="shapestyle">
   <Setter Property="Fill" Value="#fbe172"></Setter>
@@ -110,7 +110,7 @@ To draw Connectors, you have to set the Connector to DrawingTool property. The d
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Style x:Key="decoratorstyle" TargetType="Path">
   <Setter Property="Stroke" Value="Black" />
