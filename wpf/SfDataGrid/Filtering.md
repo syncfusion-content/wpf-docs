@@ -258,13 +258,13 @@ When the DateTime type value is bound to the {{'[GridColumn](http://help.syncfus
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img3.png" alt="" border=3></img>
+<img src="Filtering_images/Filtering_img3.png"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img4.png" alt="" border=3></img>
+<img src="Filtering_images/Filtering_img4.png"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img5.png" alt="" border=3></img>
+<img src="Filtering_images/Filtering_img5.png"/>
 </td>
 </tr>
 <tr>

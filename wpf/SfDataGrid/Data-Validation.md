@@ -436,7 +436,7 @@ You can change the validation error template shape of the GridCell by changing
 
 #### **Change the color of error icon**
 
-You can change the validation error template color of the GridCell by changing the `Fill` property of the path in the PART_InValidCellBorder of GridCell.
+You can change the validation error template color of the GridCell by changing the `Fill` property of the path in the `PART_InValidCellBorder` of GridCell.
 
 {% tabs %}
 {% highlight xaml %}
