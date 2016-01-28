@@ -27,6 +27,9 @@ this.dataGrid.UnBoundRows.Add(new GridUnBoundRow() {Position = UnBoundRowsPositi
 
 ![](Unbound-Rows_images/Unbound-Rows_img1.png)
 
+
+N> [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported with unbound rows.
+
 ## **Positioning unbound rows**
 
 Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnBoundRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow~Position.html) and [GridUnBoundRow.ShowBelowSummary](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow~ShowBelowSummary.html) properties.
@@ -693,13 +696,3 @@ void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArg
 {% endtabs %}
 
 ![](Unbound-Rows_images/Unbound-Rows_img11.png)
-
-## **Limitations**
-
-1. Sorting, Filtering and grouping are not supported with unbound rows.
-2. With refreshing, [QueryUnBoundRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnBoundRow_EV.html) event is fired again.
-3. Unbound rows supported with null items source.
-4. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
-5. Validations not supported with unbound rows.
-6. Unbound rows that are positioned in the header or footer region cannot be edited and selected.
-7. Unbound rows position cannot be changed.
