@@ -39,8 +39,83 @@ dataGrid.Columns["OrderID"].AllowFiltering = true;
 
 N>
 1. [GridColumn.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowFiltering.html) has higher priority than [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property.
-
 2. UI filtering is not supported when using on-demand paging by setting [UseOnDemandPaging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPaging.html) to `true`.
+
+## **Programmatic filtering**
+  
+SfDataGrid allows you to filter the data programmatically in below ways,
+
+* Through View Predicate
+* Through Column Filter
+
+### **View Filtering**
+
+View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling[SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
+
+Here, FilterRecords delegate filters the data based on Country name. FilterRecords delegate is assigned to [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) predicate to filter Country column. After that, [SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method is called to refresh the records. If the record satisfies the filter conditions, true will be returned. Else false is returned.
+ 
+
+{% tabs %}
+{% highlight c# %}
+public bool FilterRecords(object o)
+{
+    string filterText = "Germany";
+    var item = o as OrderInfo;
+    if (item != null)
+    {
+        if (item.Country.Equals(filterText))
+            return true;
+    }
+    return false;
+}
+
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    dataGrid.View.Filter = FilterRecords;
+    dataGrid.View.RefreshFilter();
+}        
+{% endhighlight %}
+{% endtabs %}
+
+
+N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when itemssource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
+
+### **Column Filtering**
+
+Column filtering is achieved by using [GridColumn.FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPredicates.html) property and adding [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) to it.
+ 
+Here, OrderID column is filtered for the data which has OrderID as 1005.
+
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.Equals, FilterValue = "1005" });
+{% endhighlight %}
+{% endtabs %}
+
+**Filter Behavior**
+
+* StringTyped - Records are filtered without considering the type and it takes [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
+* StronglyTyped - Records are filtered by considering the FilterValue underlying type.
+
+N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
+
+### **Clear Filtering**
+
+SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
+
+* [SfDataGrid.ClearFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilters.html) - Clears filters for all the columns programmatically. 
+* [SfDataGrid.ClearFilter(String columnName)](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilter(String).html) - Clears the filter for particular column that has the columnName as `MappingName`.
+* [SfDataGrid.ClearFilter(GridColumn column)](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilter(GridColumn).html) - Clears the filter for particular column alone.
+ 
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.ClearFilters();
+this.dataGrid.ClearFilter("OrderID");
+this.dataGrid.ClearFilter(this.dataGrid.Columns[0]);
+{% endhighlight %}
+{% endtabs %}
+
 
 ## **Built-in UI Views**
 
@@ -49,15 +124,16 @@ SfDataGrid filter UI comprises of two different UIs.
 * **Checkbox Filter UI** - Provides excel like filter interface with list of check box’s.
 
 * **Advanced Filter UI** - Provides advanced filter options to filter the data.
+
 By default, both Checkbox Filter and Advanced Filter are loaded while opening the filter pop-up. You can switch between AdvancedFilter and CheckboxFillter by using AdvancedFilter button in the UI View.
 
-    **SfDataGrid with Checkbox Filter View:**
+**SfDataGrid with Checkbox Filter View:** 
+      
+![](Filtering_images/Filtering_img1.png)
+        
+**SfDataGrid with Advanced Filter View:**
     
-    ![](Filtering_images/Filtering_img1.png)
-    
-    **SfDataGrid with Advanced Filter View:**
-
-    ![](Filtering_images/Filtering_img2.png)
+![](Filtering_images/Filtering_img2.png)
 
 ## **Choose between built-in UI Views**
 
@@ -145,7 +221,7 @@ this.dataGrid.Columns["OrderID"].FilterPopupStyle = null;
 {% endhighlight %}
 {% endtabs %}
 
-Here, advanced filter will be loaded for all the columns in grid except OrderID column since[GridColumn.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupStyle.html) is set as `null` for OrderID column. So both checkbox filter and advanced filter (default style) will be loaded for OrderID column.
+Here, advanced filter will be loaded for all the columns in grid except OrderID column since [GridColumn.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupStyle.html) is set as `null` for OrderID column. So both checkbox filter and advanced filter (default style) will be loaded for OrderID column.
 
 ## **Advanced Filter UI**
 
@@ -177,54 +253,60 @@ When the string value is bounded to the {{'[GridColumn](http://help.syncfusion.c
 When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} then `Number Filters` are loaded in {{'[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
 </td>
 <td>
-When the DateTime type value is bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then `Date Filters` are loaded in {{'[AdvancedFilterControl(http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
+When the DateTime type value is bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then `Date Filters` are loaded in {{'[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
 </td>
 </tr>
 <tr>
 <td>
-![](Filtering_images/Filtering_img3.png)
+<img src="Filtering_images/Filtering_img3.png" alt="" border=3></img>
 </td>
 <td>
-![](Filtering_images/Filtering_img4.png)
+<img src="Filtering_images/Filtering_img4.png" alt="" border=3></img>
 </td>
 <td>
-![](Filtering_images/Filtering_img5.png)
+<img src="Filtering_images/Filtering_img5.png" alt="" border=3></img>
 </td>
 </tr>
 <tr>
 <td>
 <b>Filter menu options</b>
-1. Equals
-2. Does Not Equal
-3. Begins With 
-4. Ends With 
-5. Contains 
-6. Empty 
-7. Not Empty 
-8. Null 
-9. Not Null 
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Begins With</li> 
+<li>Ends With</li> 
+<li>Contains</li> 
+<li>Empty</li> 
+<li>Not Empty</li>
+<li>Null</li> 
+<li>Not Null</li> 
+</ol>
 </td>
 <td>
 <b>Filter menu options</b>
-1. Equals
-2. Does Not Equal
-3. Null
-4. Not Null
-5. Less Than
-6. Less Than or Equal
-7. Greater Than
-8. Greater Than or Equal
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Less Than</li>
+<li>Less Than or Equal</li>
+<li>Greater Than</li>
+<li>Greater Than or Equal</li>
+</ol>
 </td>
 <td>
 <b>Filter menu options</b>
-1. Equals
-2. Does Not Equal
-3. Before
-4. Before Or Equal
-5. After
-6. After Or Equal
-7. Null
-8. Not Null
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Before</li>
+<li>Before Or Equal</li>
+<li>After</li>
+<li>After Or Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+</ol>
 </td>
 </tr>
 </table>
@@ -316,9 +398,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 {% endtabs %}
 
 **Checkbox Filter with AllowBlankFilters as True**
+
 ![](Filtering_images/Filtering_img7.png)
 
 **Advanced Filter with AllowBlankFilters as True**
+
 ![](Filtering_images/Filtering_img8.png)
 
 ## **Instant Filtering**
@@ -337,11 +421,12 @@ dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 
 **Checkbox Filter with ImmediateUpdateColumnFilter is True**
+
 ![](Filtering_images/Filtering_img9.png)
 
 **Advanced Filter with ImmediateUpdateColumnFilter is True**
-![](Filtering_images/Filtering_img10.png)
 
+![](Filtering_images/Filtering_img10.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) is true.
 
@@ -495,6 +580,7 @@ this.dataGrid.Columns["OrderID"].ColumnMemberType = typeof(double?);
 You can achieve this by using [FilterItemsPopulating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulating_EV.html) event also. But in this case, nullable values will not be filtered in advanced filtering. So you need to set [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html).
 
 ### **Customizing Excel like Filter ItemsSource**
+
 When you want to restrict some data from filtering, you need to customize the [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) `ItemsSource` by using [FilterItemsPopulated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulated_EV.html) event. Here,[FilterElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterElement.html) which has ActualValue as 1005 is removed from itemsSource.
 
 {% tabs %}
@@ -524,6 +610,7 @@ If you want to customize the filter predicates, you need to use [FilterChanging]
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.FilterChanging += dataGrid_FilterChanging;
+
 void dataGrid_FilterChanging(object sender, GridFilterEventArgs e)
 {
     if (e.FilterPredicates == null || e.Column.MappingName != "CustomerID" ||         e.FilterPredicates.Count == 0)
@@ -587,53 +674,84 @@ You can change the filter icon style by editing the [FilterToggleButton](http://
             <ControlTemplate TargetType="syncfusion:FilterToggleButton">
                 <Grid SnapsToDevicePixels="True">
                     <VisualStateManager.VisualStateGroups>
+                    
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal" />
                             <VisualState x:Name="MouseOver" />
                             <VisualState x:Name="Pressed" />
                             <VisualState x:Name="Disabled" />
                         </VisualStateGroup>
+                        
                         <VisualStateGroup x:Name="FilterStates">
+                        
                             <VisualState x:Name="Filtered">
                                 <Storyboard>
-                                    <ObjectAnimationUsingKeyFrames                                        Storyboard.TargetName="PART_FilterToggleButtonIndicator" 
-                                        Storyboard.TargetProperty="Data">
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FilterToggleButtonIndicator" 
+                                                                   Storyboard.TargetProperty="Data">
                                         <DiscreteObjectKeyFrame KeyTime="0">
                                             <DiscreteObjectKeyFrame.Value>
-                                                <Geometry>M2.1299944,9.9798575L55.945994,9.9798575 35.197562,34.081179 35.197562,62.672859 23.428433,55.942383 23.428433,33.52121z M1.3001332,0L56.635813,0C57.355887,0,57.935946,0.5891428,57.935946,1.3080959L57.935946,2.8258877C57.935946,3.5448422,57.355887,4.133985,56.635813,4.133985L1.3001332,4.133985C0.58005941,4.133985,-2.3841858E-07,3.5448422,0,2.8258877L0,1.3080959C-2.3841858E-07,0.5891428,0.58005941,0,1.3001332,0z</Geometry>
+                                                <Geometry>M2.1299944,9.9798575L55.945994,9.9798575 35.197562,34.081179 35.197562,
+                                                          62.672859 23.428433,55.942383 23.428433,33.52121z M1.3001332,0L56.635813,
+                                                          0C57.355887,0,57.935946,0.5891428,57.935946,1.3080959L57.935946,
+                                                          2.8258877C57.935946,3.5448422,57.355887,4.133985,56.635813,4.133985L1.3001332,
+                                                          4.133985C0.58005941,4.133985,-2.3841858E-07,3.5448422,0,2.8258877L0,
+                                                          1.3080959C-2.3841858E-07,0.5891428,0.58005941,0,1.3001332,0z
+                                                </Geometry>
                                             </DiscreteObjectKeyFrame.Value>
                                         </DiscreteObjectKeyFrame>
                                     </ObjectAnimationUsingKeyFrames>
-                                    <ColorAnimation Duration="0:0:0:1"                                                       Storyboard.TargetName="PathFillColor"
-Storyboard.TargetProperty="Color"
-To="Red" />
+                                    <ColorAnimation Duration="0:0:0:1"                                                       
+                                                    Storyboard.TargetName="PathFillColor"
+                                                    Storyboard.TargetProperty="Color"
+                                                    To="Red" />
                                 </Storyboard>
                             </VisualState>
+                            
                             <VisualState x:Name="UnFiltered">
                                 <Storyboard>
-                                    <ObjectAnimationUsingKeyFrames 
-                                        Storyboard.TargetName="PART_FilterToggleButtonIndicator" 
-                                        Storyboard.TargetProperty="Data">
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_FilterToggleButtonIndicator" 
+                                                                   Storyboard.TargetProperty="Data">
                                         <DiscreteObjectKeyFrame KeyTime="0">
                                             <DiscreteObjectKeyFrame.Value>
-                                                <Geometry>F1M-2124.61,-1263.65L-2131.54,-1263.72 -2145.51,-1263.84 -2152.41,-1263.9C-2155.99,-1263.93,-2157.48,-1262.16,-2155.7,-1259.96L-2152.05,-1255.43C-2150.28,-1253.23,-2147.38,-1249.62,-2145.61,-1247.42L-2143.25,-1244.5 -2143.25,-1230.24C-2143.25,-1229.23,-2142.43,-1228.42,-2141.42,-1228.42L-2135.64,-1228.42C-2134.63,-1228.42,-2133.81,-1229.23,-2133.81,-1230.24L-2133.81,-1244.78 -2131.7,-1247.3C-2129.89,-1249.47,-2126.93,-1253.02,-2125.12,-1255.18L-2121.39,-1259.65C-2119.57,-1261.82,-2121.02,-1263.62,-2124.61,-1263.65z</Geometry>
+                                                <Geometry>F1M-2124.61,-1263.65L-2131.54,-1263.72 -2145.51,-1263.84 -2152.41,
+                                                          -1263.9C-2155.99,-1263.93,-2157.48,-1262.16,-2155.7,-1259.96L-2152.05,
+                                                          -1255.43C-2150.28,-1253.23,-2147.38,-1249.62,-2145.61,-1247.42L-2143.25,
+                                                          -1244.5 -2143.25,-1230.24C-2143.25,-1229.23,-2142.43,-1228.42,-2141.42,
+                                                          -1228.42L-2135.64,-1228.42C-2134.63,-1228.42,-2133.81,-1229.23,-2133.81,
+                                                          -1230.24L-2133.81,-1244.78 -2131.7,-1247.3C-2129.89,-1249.47,-2126.93,-1253.02,
+                                                          -2125.12,-1255.18L-2121.39,-1259.65C-2119.57,-1261.82,-2121.02,-1263.62,-2124.61,-1263.65z
+                                                </Geometry>
                                             </DiscreteObjectKeyFrame.Value>
                                         </DiscreteObjectKeyFrame>
                                     </ObjectAnimationUsingKeyFrames>
-                                    <ColorAnimation Duration="0:0:0:1"                                                       Storyboard.TargetName="PathFillColor"
-Storyboard.TargetProperty="Color"
-To="Gray" />
+                                    <ColorAnimation Duration="0:0:0:1"                                                       
+                                                    Storyboard.TargetName="PathFillColor"
+                                                    Storyboard.TargetProperty="Color"
+                                                    To="Gray" />
                                 </Storyboard>
                             </VisualState>
+                            
                         </VisualStateGroup>
+                        
                     </VisualStateManager.VisualStateGroups>
+                    
                     <Border Width="{TemplateBinding Width}"
                             Height="{TemplateBinding Height}"
                             Background="{TemplateBinding Background}"
                             SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                            
                         <Path Name="PART_FilterToggleButtonIndicator"
                               Margin="3"
-                              Data="F1M-2124.61,-1263.65L-2131.54,-1263.72 -2145.51,-1263.84 -2152.41,-1263.9C-2155.99,-1263.93,-2157.48,-1262.16,-2155.7,-1259.96L-2152.05,-1255.43C-2150.28,-1253.23,-2147.38,-1249.62,-2145.61,-1247.42L-2143.25,-1244.5 -2143.25,-1230.24C-2143.25,-1229.23,-2142.43,-1228.42,-2141.42,-1228.42L-2135.64,-1228.42C-2134.63,-1228.42,-2133.81,-1229.23,-2133.81,-1230.24L-2133.81,-1244.78 -2131.7,-1247.3C-2129.89,-1249.47,-2126.93,-1253.02,-2125.12,-1255.18L-2121.39,-1259.65C-2119.57,-1261.82,-2121.02,-1263.62,-2124.61,-1263.65z"
+                              Data="F1M-2124.61,-1263.65L-2131.54,-1263.72 -2145.51,-1263.84 -2152.41,
+                                    -1263.9C-2155.99,-1263.93,-2157.48,-1262.16,-2155.7,
+                                    -1259.96L-2152.05,-1255.43C-2150.28,-1253.23,-2147.38,
+                                    -1249.62,-2145.61,-1247.42L-2143.25,-1244.5 -2143.25,
+                                    -1230.24C-2143.25,-1229.23,-2142.43,-1228.42,-2141.42,
+                                    -1228.42L-2135.64,-1228.42C-2134.63,-1228.42,-2133.81,
+                                    -1229.23,-2133.81,-1230.24L-2133.81,-1244.78 -2131.7,
+                                    -1247.3C-2129.89,-1249.47,-2126.93,-1253.02,-2125.12,
+                                    -1255.18L-2121.39,-1259.65C-2119.57,-1261.82,-2121.02,
+                                    -1263.62,-2124.61,-1263.65z"
                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                               Stretch="Fill">
                             <Path.Fill>
@@ -641,6 +759,7 @@ To="Gray" />
                                                  Color="Gray" />
                             </Path.Fill>
                         </Path>
+                        
                     </Border>
                 </Grid>
             </ControlTemplate>
@@ -652,77 +771,3 @@ To="Gray" />
 
 When you apply above style to [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html), FilterIcon changes from Default to Gray and to Red when filtering is applied. When you clear it, it changes from Red to Gray and to default style.
 
-# **Programmatic filtering**
-  
-SfDataGrid allows you to filter the data programmatically in below ways,
-
-* Through View Predicate
-* Through Column Filter
-
-### **View Filtering**
-
-View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling[SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
-
-Here, FilterRecords delegate filters the data based on Country name. FilterRecords delegate is assigned to [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) predicate to filter Country column. After that, [SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method is called to refresh the records. If the record satisfies the filter conditions, true will be returned. Else false is returned.
- 
-
-{% tabs %}
-{% highlight c# %}
-public bool FilterRecords(object o)
-{
-    string filterText = "Germany";
-    var item = o as OrderInfo;
-    if (item != null)
-    {
-        if (item.Country.Equals(filterText))
-            return true;
-    }
-    return false;
-}
-
-private void Button_Click(object sender, RoutedEventArgs e)
-{
-    dataGrid.View.Filter = FilterRecords;
-    dataGrid.View.RefreshFilter();
-}        
-{% endhighlight %}
-{% endtabs %}
-
-
-N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when itemssource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
-
-### **Column Filtering**
-
-Column filtering is achieved by using [GridColumn.FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPredicates.html) property and adding [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) to it.
- 
-Here, OrderID column is filtered for the data which has OrderID as 1005.
-
-
-{% tabs %}
-{% highlight c# %}
-dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.Equals, FilterValue = "1005" });
-{% endhighlight %}
-{% endtabs %}
-
-**Filter Behavior**
-
-* StringTyped - Records are filtered without considering the type and it takes [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
-* StronglyTyped - Records are filtered by considering the FilterValue underlying type.
-
-N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
-
-## **Clear Filtering**
-
-SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
-
-* [SfDataGrid.ClearFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilters.html) - Clears filters for all the columns programmatically. 
-* [SfDataGrid.ClearFilter(String columnName)](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilter(String).html) - Clears the filter for particular column that has the columnName as `MappingName`.
-* [SfDataGrid.ClearFilter(GridColumn column)](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilter(GridColumn).html) - Clears the filter for particular column alone.
- 
-{% tabs %}
-{% highlight c# %}
-this.dataGrid.ClearFilters();
-this.dataGrid.ClearFilter("OrderID");
-this.dataGrid.ClearFilter(this.dataGrid.Columns[0]);
-{% endhighlight %}
-{% endtabs %}
