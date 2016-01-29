@@ -7,40 +7,6 @@ control: SfDataGrid
 documentation: ug
 ---
 
-
-# **UI Filtering**
-
-SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to `true` , where you can open filter UI by clicking the Filter icon in column header and filter the records.  
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
-                       AllowFiltering="True"
-                       AutoGenerateColumns="True"
-                       ItemsSource="{Binding Orders}" />
-{% endhighlight %}
-{% highlight c# %}
-dataGrid.AllowFiltering = true;
-{% endhighlight %}
-{% endtabs %}
-
-You can enable/disable filtering for particular column by setting [GridColumn.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowFiltering.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:GridTextColumn AllowFiltering="True" 
-                           MappingName="OrderID" />
-{% endhighlight %}
-{% highlight c# %}
-dataGrid.Columns["OrderID"].AllowFiltering = true;
-{% endhighlight %}
-{% endtabs %}
-
-
-N>
-1. [GridColumn.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowFiltering.html) has higher priority than [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property.
-2. UI filtering is not supported when using on-demand paging by setting [UseOnDemandPaging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPaging.html) to `true`.
-
 ## **Programmatic filtering**
   
 SfDataGrid allows you to filter the data programmatically in below ways,
@@ -117,7 +83,41 @@ this.dataGrid.ClearFilter(this.dataGrid.Columns[0]);
 {% endtabs %}
 
 
-## **Built-in UI Views**
+## **UI Filtering**
+
+SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to `true` , where you can open filter UI by clicking the Filter icon in column header and filter the records.  
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowFiltering="True"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowFiltering = true;
+{% endhighlight %}
+{% endtabs %}
+
+You can enable/disable filtering for particular column by setting [GridColumn.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowFiltering.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridTextColumn AllowFiltering="True" 
+                           MappingName="OrderID" />
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.Columns["OrderID"].AllowFiltering = true;
+{% endhighlight %}
+{% endtabs %}
+
+
+N>
+1. [GridColumn.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowFiltering.html) has higher priority than [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property.
+2. UI filtering is not supported when using on-demand paging by setting [UseOnDemandPaging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPaging.html) to `true`.
+
+
+Built-in UI Views
 
 SfDataGrid filter UI comprises of two different UIs. 
 
