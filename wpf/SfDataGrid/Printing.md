@@ -453,7 +453,7 @@ private class CustomPrintManager : GridPrintManager
     }
 }
 {% endhighlight %}
-{% tabs %}
+{% endtabs %}
 
 
 {% tabs %}
