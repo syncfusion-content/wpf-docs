@@ -9,7 +9,7 @@ documentation: ug
 
 # **Printing**
 
-SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Print.html) method. It also provides support to display print preview window by calling   [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
+SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Print.html) method. It also provides support to display print preview window by calling   [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -19,7 +19,7 @@ dataGrid.Print();
 
 ## **Print Preview**
 
-SfDataGrid provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
+SfDataGrid provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ dataGrid.ShowPrintPreview();
 
 ## **Print Settings**
 
-SfDataGrid provides various options to customize print preview settings using [SfDataGrid.PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html) property of type [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings.html).
+SfDataGrid provides various options to customize print preview settings using [SfDataGrid.PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html) property of type [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ dataGrid.Print();
 
 ## **Page Settings**
 
-SfDataGrid provides various options to customize page settings using [SfDataGrid.PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html) property of type [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings.html).
+SfDataGrid provides various options to customize page settings using [SfDataGrid.PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html) property of type [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings.html).
 
 ### **Orientation**
 
@@ -237,7 +237,7 @@ dataGrid.ShowPrintPreview();
 When you require better performance and don’t want appearance settings (Background and Foreground) to be exported while printing then you can use this printing option by setting [PrintSettings.AllowPrintByDrawing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~AllowPrintByDrawing.html) property to `true`.
  
  
-N> This is default print mode. For appearance customization of rows and cells while printing, refer printing [customization section](#_Printing_Customization).
+N> This is default print mode. For appearance customization of rows and cells while printing, refer printing [customization section](#printing-customization).
 
  
 ### **Printing using UIElement Rendering**
@@ -589,7 +589,6 @@ dataGrid.ShowPrintPreview();
 
 ![](Printing_images/Printing_img16.png)
 
-N>
 <table>
 <tr>
 <th>
