@@ -32,7 +32,8 @@ To enable the AllowCollapse property in GroupBar, use the following code.
    <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">   
    <!-- Adding content for GroupBar item using GroupView -->      <syncfusion:GroupView>        <syncfusion:GroupViewItem Text="Default"/>        <syncfusion:GroupViewItem Text="Multiple Expansion"/>        <syncfusion:GroupViewItem Text="StackMode"/>      </syncfusion:GroupView>    </syncfusion:GroupBarItem>    <!-- Adding GroupBarItem -->    <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">      <!-- Adding content for GroupBar item using GroupView -->      <syncfusion:GroupView>        <syncfusion:GroupViewItem Text="Save State"/>        <syncfusion:GroupViewItem Text="Load State"/>        <syncfusion:GroupViewItem Text="Reset State"/>      </syncfusion:GroupView>    </syncfusion:GroupBarItem>  </syncfusion:GroupBar>{% endhighlight %}
 
-{% highlight C# %}myGroupBar.AllowCollapse = true;
+{% highlight C# %}
+myGroupBar.AllowCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 

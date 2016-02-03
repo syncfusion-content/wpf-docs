@@ -36,11 +36,13 @@ bool </td></tr>
 We have to set the EnableRangeAdorner property, either in XAML or the code file.
 
 {% tabs %}
-{% highlight xaml %} EnableRangeAdorner="True"
+{% highlight xaml %} 
+EnableRangeAdorner="True"
 {% endhighlight %}
 
 
-{% highlight c# %}control.EnableRangeAdorner = true;
+{% highlight c# %}
+control.EnableRangeAdorner = true;
 {% endhighlight %}
 {% endtabs %}
 
