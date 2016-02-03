@@ -60,7 +60,7 @@ TextChanged – The event occurs when the PercentValue property of the PercentTe
 {% highlight c# %}
  PercentTextBox percentTextBox = new PercentTextBox();
  percentTextBox.TextChanged += new TextChangedEventHandler(PercentTextBox_TextChanged);
- {% endhighlight %}
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -131,8 +131,8 @@ MaxValueChanged – The event occurs when the MaxValue property of the PercentTe
 {% highlight c# %}
 PercentTextBox percentTextBox = new PercentTextBox();
 percentTextBox.MaxValueChanged+=new                  
-   PropertyChangedCallback(PercentTextBox_MaxValueChanged);
-   {% endhighlight %}
+PropertyChangedCallback(PercentTextBox_MaxValueChanged);
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -169,8 +169,8 @@ MinValueChanged – The event occurs when the MinValue property of the PercentTe
 {% highlight c# %}
 PercentTextBox percentTextBox = new PercentTextBox();
 percentTextBox.MinValueChanged+=new                 
-     PropertyChangedCallback(PercentTextBox_MinValueChanged);
-	 {% endhighlight %}
+PropertyChangedCallback(PercentTextBox_MinValueChanged);
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -205,10 +205,11 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <syncfusion:PercentTextBox SelectionChanged="PercentTextBox_SelectionChanged"/>
 {% endhighlight %}</td></tr>
 
-{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();
+{% highlight c# %}
+PercentTextBox percentTextBox = new PercentTextBox();
 percentTextBox.SelectionChanged+=new                      
-   RoutedEventHandler(PercentTextBox_SelectionChanged);
-   {% endhighlight %}
+RoutedEventHandler(PercentTextBox_SelectionChanged);
+{% endhighlight %}
 {% endtabs %}
 
 You can handle the event as follows:
