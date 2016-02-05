@@ -1,213 +1,142 @@
 ---
 layout: post
-title: Performance | SfDataGrid | WPF | Syncfusion
-description: performance
+title: Tips to optimize SfDataGrid's Performance
+description: How to improve the performance of SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Performance
+# **Performance tips**
+
+SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
+ 
+## **Improving loading performance**
+
+### **Data virtualization for loading**
+
+You can load the large amount of data in less time using built-in [Data Virtualization](http://help.syncfusion.com/wpf/sfdatagrid/data-virtualization).
+
+### **Improving loading and scrolling when using conditional styling**
+
+You can style the cell and row conditionally in below three ways,
+
+1. Using converters
+2. Using Data triggers
+3. Using Style selectors
+
+Conditional styling using converter provides better performance compare to Data Trigger approach and Style selector approach. You can refer Styles and template section for more information.
+
+## **Improving performance when doing batch updates**
+
+SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
+
+1. Invoke [SfDataGrid.View.BegingInit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) before update the data.
+2. After that update underlying collection.
+3. Then call [SfDataGrid.View.EndInit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected.
+
+{% tabs %}
+{% highlight c# %}
+//Batch Updates
+//Suspends data manipulation operations in View
+this.dataGrid.View.BeginInit();
+
+// Add, remove and update the underlying collection. 
+
+//Resumes data manipulation operations and refresh the View.
+this.dataGrid.View.EndInit();
+{% endhighlight %}
+{% endtabs %}
+
+## **Adding columns efficiently**
+
+SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance. 
+
+You can improve the performance while adding, removing columns by suspending all the UI updates using [Suspend](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Columns~Suspend.html) and resume the updates after adding columns using [Resume](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Columns~Resume.html) methods. You have to refresh the UI using [RefreshColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers.GridHelper~RefreshColumns.html) method.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Grid.Helpers;
+
+this.dataGrid.Columns.Suspend();
+// Add or Remove More columns
+this.dataGrid.Columns.Resume();
+this.dataGrid.RefreshColumns();
+{% endhighlight %}
+{% endtabs %}
 
 
-This Section explains you the high Performance of WPF application using SfDataGrid control when you load large amount of data. 
+## **Optimizing summary calculation performance**
 
-* Data Virtualization
-* Summary Calculation Optimization
-* Batch Update
-* Filter Popup Performance
+SfDataGrid optimizes the summary calculation when updating the underlying collection. It calculates the summaries optimistically by listening the data updates and using old calculated summary values without doing complete recalculation. 
 
-## Data Virtualization
+Below sections explains how SfDataGrid handles the updates efficiently for different data operations and what you have to do in application for the same.
 
+**Adding Record**
 
-When you have large amount of data in SfDataGrid, it may have a slow performance.For small collection of basic data objects, the memory consumption is not significant; however for large collections, the memory consumption is very significant. To overcome this, you can use the concept of Data Virtualization_._ You can use GridVirtualizingCollectionView to load any number records within few milliseconds in SfDataGrid. 
+SfDataGrid considers only the `added` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
+ 
+**Removing a Record**
 
-Refer the DataVirtualization sections for more information.
+SfDataGrid considers only the `removed` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
 
-## Summary Calculation Optimization
+**Property Change in a record**
 
-Summary Calculation Optimization is a technique that improves the performance of summary calculation in Grid. This technique considers only the data for recalculation instead of all data objects. You can see the performance in summary calculation, when you use large amount of data. In small amount of data objects, you can not see any changes in performance.
+SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanging.aspx) and [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface to your Data Model.
 
-Optimization is achieved under the following scenarios:
+Below code to enable summary calculation optimization by inheriting `INotifyPropertyChanging` and `INotifyPropertyChanged` interface to Data Model.
 
-* Adding a record.
-* Removing record.
-* Property change in a record.
-
-### Adding Record:
-
-When you add a record, instead of recalculating the summary for entire rows, Optimization logic considers only the added item value and the current summary value.
-
-### Removing a Record:
-
-When you remove a record, instead of recalculating the summary for entire rows, Optimization logic considers only the removed item value and the current summary value.
-
-### Property Change in a record:
-
-The value corresponds to the summary from the changed value record. The changed value is aggregated with the current summary value.
-
-To enable Property Change Optimization, Data Model implements the INotifyPropertyChanging and INotifyPropertyChanged interface.
-
-The following code example illustrates how to implement the INotifyPropertyChanging and INotifyPropertyChanged interface:
-
-
-{% highlight C# %}
-
-
-
-public class EmployeeData : INotifyPropertyChanged, INotifyPropertyChanging
-
+{% tabs %}
+{% highlight c# %}
+public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 {
-
-    private int _EmployeeID;
-
-
-
-    public int EmployeeID
-
+    private int orderID;
+    
+    public int OrderID
     {
-
-        get { return this._EmployeeID; }
-
-        set
-
+        get { return orderID; }
+        set 
         {
-
-            this.RaisePropertyChanging("EmployeeID");
-
-            this._EmployeeID = value;
-
-            this.RaisePropertyChanged("EmployeeID");
-
+            this.RaisePropertyChanging("OrderID");
+            orderID = value;
+            this.RaisePropertyChanged("OrderID");
         }
-
     }
-
-   public void RaisePropertyChanged(string propName)
-
+    
+    public void RaisePropertyChanged(string propName)
     {
-
         if (this.PropertyChanged != null)
-
-     this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
     }
-
     public event PropertyChangedEventHandler PropertyChanged;
-
-
-
+    
     public void RaisePropertyChanging(string propName)
-
     {
-
-     if (this.PropertyChanging != null)
-
-      this.PropertyChanging(this, new PropertyChangingEventArgs(propName));
-
+        if (this.PropertyChanging != null)
+            this.PropertyChanging(this, new PropertyChangingEventArgs(propName));
     }
-
     public event PropertyChangingEventHandler PropertyChanging;
-
-}
-
-{% endhighlight %}
-
-
-
-To disable Optimization, you can set EnableSummaryOptimization property in CollectionViewAdv to ‘false’ as shown in the following code example:
-
-
-{% highlight C# %}
-
-
-
-  (dataGrid.View as CollectionViewAdv).EnableSummaryOptimization = false;
-
-{% endhighlight %}
-
-## Batch Update
-
-BatchUpdate allows you to obtain high performance when you are updating more data to View at a time with AllowDataShaping. The public methods such as DataGrid.View.BeginInit () and DataGrid. View.EndInit () are used in batch update. The following code example displays how to use these methods.
-
-
-{% highlight C# %}
-
-
-
-this.datagrid.View.BeginInit();
-
-UpdateRows(noOfUpdates);
-
-this.datagrid.View.EndInit();
-
-
-
-private void UpdateRows(int count)
-
-{
-
-    // Update record properties
-
 }
 {% endhighlight %}
+{% endtabs %}
 
 
-### BeginInit() & EndInit()
+## **Improving UI Filter loading time**
 
-When using AllowDataShaping in the real time data update, the sequential data updation can decrease the performance of Datagrid when more updates come to the Grid. Performing sequential Sorting, Grouping, adding and removing the records slows down the performance. 
+SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
 
-To prevent this, you can wrap all the data updation within BeginInit () and EndInit () methods. BeginInit () method suspends all updates until EndInit () is called. After EndInit () is called, shaping occurs according to the updated items.
+`CanGenerateUniqueItems` property loading `TextBox` to filter instead of `ComboBox` in advanced filter UI View.
 
-## Filter Popup Performance
-
-When you have large amount of data, the filter pop-up opening time becomes slow. It loads all unique items in AdvanceFilterComboBox and it takes time to load the items. To overcome this, you can avoid loading the unique items in AdvancedFilterCombobox.
-
-You can improve the filter pop-up opening time by setting CanGenerateUniqueItems property value to ‘False’.A textbox is loaded instead of AdvancedFilterComboBox that allows you to manually enter text for filtering. This increases GridFilterControl’s loading performance.
-
-N> You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
-
-
+{% tabs %}
 {% highlight xaml %}
+<Window.Resources>    
+    <Style TargetType="syncfusion:GridFilterControl">
+        <Setter Property="FilterMode" Value="AdvancedFilter" />
+    </Style>
 
-
-
-
-
-<Window.Resources>
-
-<Style TargetType="syncfusion:GridFilterControl">
-
-       <Setter Property="FilterMode" Value="AdvancedFilter" />
-
- </Style>
-
- <Style TargetType="syncfusion:AdvancedFilterControl">
-
+    <Style TargetType="syncfusion:AdvancedFilterControl">
         <Setter Property="CanGenerateUniqueItems" Value="False" />
-
- </Style>
-
+    </Style>
 </Window.Resources>
-
 {% endhighlight %}
-
-
-
-The following screenshot displays the AdvancedFiltering with CanGenerateUniqueItems when setto‘True’.
-
-![](Features_images/Features_img174.png)
-
-
-
-AdvancedFiltering with CanGenerateUniqueItems set to ‘True’.
-{:.caption}
-The following screenshot displays the AdvancedFiltering with CanGenerateUniqueItems when setto‘False’.
-
-![](Features_images/Features_img175.png)
-
-
-
-AdvancedFiltering with CanGenerateUniqueItems set to ‘False’
-{:.caption}
-The above screenshot does not load the AdvancedFiltering combo box item, so it automatically increases the GridFilterControl performance.
+{% endtabs %}
