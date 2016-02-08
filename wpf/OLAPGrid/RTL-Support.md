@@ -11,6 +11,23 @@ documentation: ug
 
 Right-to-left support has been provided for the OLAP Grid control for WPF. Users can now display content from right to left by setting the flow direction option in the control. 
 
+### Properties
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
+<tr>
+<td>
+FlowDirection</td><td>
+Gets or sets the flow direction for the OLAP Grid control.</td><td>
+Normal</td><td>
+enum</td></tr>
+</table>
+
 ## Adding RTL support for OLAP Grid in an application 
 
 To enable RTL support, the FlowDirection property of the OLAP Grid control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.

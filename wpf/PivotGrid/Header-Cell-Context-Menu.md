@@ -15,6 +15,26 @@ Expand/collapse operations can be done at both the UI and programmatic level.
 
 Header cell context menu will be shown while right-clicking on the expander cell. Expand/collapse operations can be handled through this context menu at the row level and column level individually.
 
+
+Property Table
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
+<tr>
+<td>
+EnableContextMenu</td><td>
+Gets or sets the context menu for expander cells (row header and column header cells only).</td><td>
+bool</td><td>
+False(Default), True</td><td>
+ -</td></tr>
+</table>
+
 ###Defining the properties in PivotGrid
 
 **EnableContextMenu** property allows us to enable or disable the context menu for row or column headers alone individually.

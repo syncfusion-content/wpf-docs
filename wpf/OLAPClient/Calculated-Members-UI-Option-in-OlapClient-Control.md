@@ -16,6 +16,26 @@ control.
 
 ![](Calculated-Members-UI-Option-in-OlapClient-Control_images/Calculated-Members-UI-Option-in-OlapClient-Control_img1.png)
 
+
+
+### Properties
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
+<tr>
+<td>
+IsCalculatedMembersEnabled</td><td>
+Gets or sets a value indicating whether calculated members are to be enabled</td><td>
+Dependency </td><td>
+Boolean</td></tr>
+</table> 
+
+
 ### Sample Link
 
 1. Open the Syncfusion Dashboard.

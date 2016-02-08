@@ -11,6 +11,26 @@ documentation: ug
 
 PivotGrid provides support for two different types Layout options with respect to Summaries. Thats is , whether to display the summary data of each PivotItem at the top or at the bottom of value cells.
 
+Property Table
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Reference Link</th></tr>
+<tr>
+<td>
+GridLayout</td><td>
+Gets or sets the layout of summary data in Pivot Grid. </td><td>
+GridLayout</td><td>
+Normal(Default),
+TopSummary</td><td>
+-</td></tr>
+</table>
+
 ## Defining the Layout options for the PivotGrid
 
 **GridLayout** property of PivotGrid control can be defined both in *XAML* and *Code-Behind*.

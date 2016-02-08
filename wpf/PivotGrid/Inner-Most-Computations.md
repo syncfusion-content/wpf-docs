@@ -11,6 +11,26 @@ documentation: ug
 
 Pivotgrid provides the support for the columns which are existing in engine to display only the calculation columns other than total and grand total columns.
 
+
+Property Table 
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Reference Link</th></tr>
+<tr>
+<td>
+InnerMostComputationsOnly</td><td>
+This property is used to display the grid with inner most computations only and without displaying the total values.</td><td>
+SummaryDisplayLevel</td><td>
+All (Default), InnerMostOnly</td><td>
+-</td></tr>
+</table>
+
 ## Defining the property in PivotGrid 
 
 The property **InnerMostComputationsOnly** can be mentioned either in *XAML* or in *Code-Behind*. 

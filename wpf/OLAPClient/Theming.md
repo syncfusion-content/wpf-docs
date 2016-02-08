@@ -23,6 +23,25 @@ Theming is the process of applying particular settings to the visual elements of
  * Office 2003
  * Default
 
+
+### Properties
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
+<tr>
+<td>
+VisualStyle </td><td>
+Gets or Sets the VisualStyle of OlapClient control.</td><td>
+Dependency Property</td><td>
+OlapClientVisualStyle    </td></tr>
+</table>
+
+
 ### Sample Link
 
 A demo available in the following location: <InstalledDrive>:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\SkinCustomizationDemo
