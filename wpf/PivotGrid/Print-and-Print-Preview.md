@@ -11,6 +11,62 @@ documentation: ug
 
 Essential PivotGrid for WPF provides in-built support for printing and print preview. This feature provides a print dialog that allows you to preview the output and make any modifications if required before printing.
 
+
+Properties Table
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Reference Link</th></tr>
+<tr>
+<td>
+PrintHeader</td><td>
+Add/Remove the Header in the Print Preview dialog</td><td>
+bool</td><td>
+True, False(Default)</td><td>
+-</td></tr>
+<tr>
+<td>
+PrintFooter</td><td>
+Add/Remove the Footer in the Print Preview dialog</td><td>
+bool</td><td>
+True, False(Default)</td><td>
+-</td></tr>
+</table>
+
+Methods Table
+
+<table>
+<tr>
+<th>
+Method </th><th>
+Description </th><th>
+Parameters </th><th>
+Return Type </th></tr>
+<tr>
+<td>
+ShowPrintPreview</td><td>
+Shows the Print Preview window with empty template and default title</td><td>
+(Window Win)</td><td>
+void</td></tr>
+<tr>
+<td>
+ShowPrintPreview</td><td>
+Shows the Print Preview window with templates for header, footer and default title.</td><td>
+(DataTemplate headerTemplate, DataTemplate footerTemplate, Window win)</td><td>
+void</td></tr>
+<tr>
+<td>
+ShowPrintPreview</td><td>
+Shows the Print Preview window with templates for header, footer and user defined title</td><td>
+(DataTemplate headerTemplate, DataTemplate footerTemplate, string title, Window win)</td><td>
+void</td></tr>
+</table>
+
 ## Using the Print and Print Preview for PivotGrid
 
 It provides printing support for PivotGrid control along with GroupingBar. You can use the method **ShowPrintPreview** to preview the PivotGrid control before printing using the PrintPreview Window. The properties **PrintHeader** and **PrintFooter** helps to add or remove the header and footer information while printing.

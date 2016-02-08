@@ -39,8 +39,6 @@ All the elements are internally maintained as Item.
 
 ### The OlapReport properties and its descriptions are tabulated:
 
-
-
 <table>
 <tr>
 <th>
@@ -588,6 +586,20 @@ olapReport.SeriesElements.SubSetElement = subSetElementRow
 This feature enables you to specify a range for filter elements in the slicer field. You have to specify the start and end value to set the range. Multiple ranges can be added for the filter elements in slicer field. 
 
 
+### Class Table
+
+<table>
+<tr>
+<th>
+Name </th><th>
+Description </th></tr>
+<tr>
+<td>
+SlicerRangeFiltersInfo</td><td>
+Used to filter values from one range to another. Unique name of the member element for start and end value need to be specified. The name of the member element can also be specified for start and end value when custumer builds the unique name*.</td></tr>
+</table>
+
+
 * Name of the member element can be specified only when name is formed with dimension name, hierarchy name and level name.  
 
 
@@ -618,8 +630,6 @@ Name for dimension, hierarchy, level, start value and end value.</td></tr>
 ### Properties
 
 Following table consists of SlicerRangeFiltersInfo class’s property:
-
-
 
 <table>
 <tr>

@@ -24,6 +24,25 @@ The Grouping bar context menu consists of the following menu items:
 		 
 * **Calculated field** - Used to add a new calculation field at run time.
 
+Property Table
+
+<table>
+<tr>
+<th>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
+<tr>
+<td>
+DisableContextMenu</td><td>
+Gets or sets whether to enable/disable the grouping bar context menu.</td><td>
+bool</td><td>
+True, False(Default)</td><td>
+ -</td></tr>
+</table>
+
 ##Defining Grouping bar context menu in PivotGrid
 
 **DisableContextMenu**

@@ -29,8 +29,6 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 
 ### Properties and Methods
 
-
-
 <table>
 <tr>
 <th>

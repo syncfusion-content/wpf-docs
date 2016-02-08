@@ -130,6 +130,36 @@ Export the Grid to PDF</td></tr>
 
 OLAP Client for WPF provides support to export OLAP Grid to CSV file format. 
 
+
+### Methods
+
+
+
+<table>
+<tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+    Type</th><th>
+Return Type</th></tr>
+<tr>
+<td>
+Export(string filename)</td><td>
+Gets the file name to save the file with the specified name.</td><td>
+filename as string</td><td>
+-</td><td>
+void</td></tr>
+<tr>
+<td>
+ExportToCsv(PivotEngine pivotEngine, string filename)</td><td>
+Gets the Pivot Engine and file name for exporting the content to CSV file format with the specified name. </td><td>
+pivotEngine as PivotEngine, filename as string</td><td>
+-</td><td>
+void</td></tr>
+</table>
+
+
 ### Adding CSV Export for OLAP Client in an application
 
 The GridCsvExport class provides support for exporting data from OLAP Grid in OLAP Client to a CSV file format. Add the following dll,
