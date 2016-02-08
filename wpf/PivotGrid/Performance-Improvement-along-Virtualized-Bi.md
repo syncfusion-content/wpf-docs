@@ -11,36 +11,6 @@ documentation: ug
 
 It provides high loading performance for a large set of records. This feature also helps to load the data in PivotGrid on demand by using **Index Engine**.
 
-**Use Case Scenarios**
-
-Users can view the output in a few seconds for a large set of records that has been bound to the PivotGrid.
-
-Properties Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-UseIndexedEngine</td><td>
-Gets or sets whether an optimized algorithm that relies on indexing the raw data should be used to compute the pivot information.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-EnableOnDemandCalculations</td><td>
-Gets or sets whether the calculations are postponed until the value is requested through the Indexer in the PivotEngine.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
-
 ## Adding a Virtualized binding feature in Pivot Grid
 
 After defining the PivotGrid control, set the properties **EnableOnDemandCalculations** and **UseIndexedEngine** of PivotEngine as true. The values for IndexEngine has been get by using ItemObjectLookup() method and time span must be calculated by using Dispatcher.BeginInvoke() method.

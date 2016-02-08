@@ -23,31 +23,6 @@ PivotGrid summarizes the data for various datatypes by using the **SummaryType**
 * **Custom** - Specifies that you are using a custom SummaryBase object to define the calculation.
 * **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
 
-
-**Use Case Scenario**
-
-User could display the calculation values by various summary options as per their requirement.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-SummaryType</td><td>
-Gets or sets the summary type to the PivotComputationInfo.</td><td>
-SummaryType</td><td>
-DoubleTotalSum, DoubleAverage, DoubleMaximum, DoubleMinimum, DoubleStandardDeviation, 
-DoubleVariance, Count, DecimalTotalSum, IntTotalSum, Custom, DisplayIfDiscreteValues</td>
-<td>-</td></tr>
-</table>
-
 ## Defining the property in PivotGrid
 
 **SummaryType** is the property can be set for the corresponding PivotCalculation item through **PivotComputationInfo** class. It can be set either through *XAML* or through *Code-Behind*.

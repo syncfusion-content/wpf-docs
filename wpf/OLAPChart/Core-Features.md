@@ -3469,30 +3469,6 @@ Theming is the process of applying particular settings to the visual elements of
 * Office 2003
 * Default
 
-### Use Case Scenarios
-
-This feature enables users to develop a single application and apply different looks as necessary.
-
- Properties
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-VisualStyle </td><td>
-Gets or sets the VisualStyle of the OLAPChart control. </td><td>
-Dependency Property</td><td>
-OlapChartVisualStyle</td></tr>
-</table>
-
-
 #### Sample Link
 
 A demo is available in the following location:
@@ -3817,30 +3793,6 @@ A sample, which demonstrates the Chart Print feature, is available in the below 
 ## RTL Support
 
 Right-to-left support has been provided for the OLAP Chart control for WPF. Users can now display content starting from right to left by setting the flow direction option in the control. 
-
-### Use Case Scenario
-
-Some cultures have a written language that reads from right to left. Controls deployed for such cultures should be rendered from right to left. In these cases, we can utilize RTL support of the OLAP Chart component. 
-
-## Properties
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }}</th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-FlowDirection</td><td>
-Gets or sets the flow direction for the OLAP Chart control.</td><td>
-Normal</td><td>
-enum</td></tr>
-</table>
-
 
 ### Adding RTL support for OLAP Chart in an Application 
 

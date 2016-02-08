@@ -11,28 +11,6 @@ documentation: ug
 
 PivotGrid enables us to set the Custom Summaries for the PivotItem values at both load time and runtime (using PivotComputationInfo dialog).
 
-**Use Case Scenarios**
-
-User could create a different summary base to the pivot item values as per their requirement in addition to the default ones.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-CustomSummaryBaseCollection (ObservableCollection<(SummaryBase)>)</td><td>
-Gets/Sets the Custom SummaryBase collection to set via PivotComputationInfo Dialog at runtime.</td><td>
-ObservableCollection</td><td>
--</td><td>
--</td></tr>
-</table>
 
 ## Defining Custom Summary to PivotGrid 
 

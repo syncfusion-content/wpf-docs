@@ -19,29 +19,6 @@ PivotGrid allows Hyperlinking of cells to retrieve a detailed information about 
 * Summary Cell
 * Value Cell
 
-**Use Case Scenarios**
-
-User could perform some custom operations on a Cell click and able to get the complete information of the cells like its Type, Range etc.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-IsHyperlinkCell</td><td>
-Gets or sets whether the to enable or disable the PivotGrid grid cells as hyperlink cells.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
-
 ## Defining the property in PivotGrid
 
 It is possible to enable or disable the hyperlink for the cells separately for all Row header, Column header, Summary header and Value cells through **IsHyperlinkCell** property. It can be mentioned in *Code-Behind*.
