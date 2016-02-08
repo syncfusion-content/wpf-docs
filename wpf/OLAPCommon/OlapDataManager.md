@@ -438,6 +438,26 @@ SetCurrentReport</td></tr>
 The UseWhereClauseForSlicing property facilitates the user to decide whether the MDX query parser engine should consider ‘Where’ or ‘Select’ clause for slicing data.
 
 
+### Properties
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
+<tr>
+<td>
+UseWhereClauseForSlicing</td><td>
+Enables the user to decide whether the MDX Query Parser Engine should consider the ‘Where’ or ‘Select’ clause for slicing operation</td><td>
+Server side </td><td>
+Boolean</td><td>
+----</td></tr>
+</table>
+
+
 ## Drill Through
 
 This feature enables the user to drill through any value and see the data which formed the value.

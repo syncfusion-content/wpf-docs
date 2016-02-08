@@ -13,8 +13,6 @@ Drill-through retrieves the underlying table rows that are used to create a spec
 
 ### Property			
 
-
-
 <table>
 <tr>
 <th>

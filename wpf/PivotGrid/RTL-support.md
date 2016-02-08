@@ -12,6 +12,25 @@ documentation: ug
 PivotGrid provides support to display the contents of the grid from Right-to-left. It can be achieved by setting the property **FlowDirection** in the PivotGrid control. 
 
 
+Property Table
+                                                          
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Reference Link</th></tr>
+<tr>
+<td>
+FlowDirection</td><td>
+Gets or sets the flow direction for the PivotGrid control.</td><td>
+FlowDirection</td><td>
+LeftToRight(default), RightToLeft</td><td>
+-</td></tr>
+</table>
+
 ## Defining the property in PivotGrid
 
 It can be achieved by setting the **FlowDirection** property of PivotGrid control to RightToLeft. It can be done either in *XAML* or in *Code-Behind*. 

@@ -11,6 +11,90 @@ documentation: ug
 
 XAML configuration is one of the important features of OlapGrid. It helps you to configure the control entirely using XAML by eliminating the required code in code behind. 
 
+
+### Property Table
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data  Type</th><th>
+Reference Link</th></tr>
+<tr>
+<td>
+DataSource.ConnectionString</td><td>
+Specifies the connection string of the DataManager</td><td>
+Attached Property</td><td>
+String</td><td>
+-</td></tr>
+<tr>
+<td>
+DataSource.ConnectionName</td><td>
+Specifies the connection name which is available in App.Config file of the application</td><td>
+Attached Property</td><td>
+String</td><td>
+-</td></tr>
+<tr>
+<td>
+DataSource.DataManagerName</td><td>
+Specifies the DataManager name</td><td>
+Attached Property</td><td>
+String</td><td>
+-</td></tr>
+<tr>
+<td>
+SharedDataManagerName</td><td>
+Specifies the DataManager name which is available in shared data manager collection</td><td>
+Attached Property</td><td>
+String</td><td>
+-</td></tr>
+<tr>
+<td>
+ReportName</td><td>
+Species the OLAP report name</td><td>
+CLR</td><td>
+String</td><td>
+-</td></tr>
+<tr>
+<td>
+CurrentCubeName</td><td>
+Specifies the current cube name of a OLAP report</td><td>
+CLR</td><td>
+String</td><td>
+-</td></tr>
+<tr>
+<td>
+CategoricalAxis</td><td>
+Specifies the Categorical axis of the OLAP report</td><td>
+Dependency Property</td><td>
+CategoricalAxis</td><td>
+-</td></tr>
+<tr>
+<td>
+SeriesAxis</td><td>
+Specifies the Series axis of the OLAP report</td><td>
+Dependency Property</td><td>
+SeriesAxis</td><td>
+-</td></tr>
+<tr>
+<td>
+SlicerAxis</td><td>
+Specifies the Slicer axis of the OLAP report</td><td>
+Dependency Property</td><td>
+SlicerAxis</td><td>
+-</td></tr>
+<tr>
+<td>
+CalculatedMembers</td><td>
+Specifies the Calculated Members of the OLAP report</td><td>
+Dependency Property</td><td>
+CalculatedMembers</td><td>
+-</td></tr>
+</table>
+
+
 ## Adding report to OLAP Grid
 
 Adding an OLAP report to OLAP Grid control in design time is described in the following code snippet:

@@ -16,6 +16,23 @@ PivotGrid provides an option to export the grid to various formats. It provides 
    * Pdf format
    * CSV format
    
+Methods Table
+
+<table>
+<tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
+<tr>
+<td>
+Export(string filename)</td><td>
+Gets the file name to save the file with the specified name and format.</td><td>
+string filename</td><td>
+void</td></tr>
+</table>
+
 ## Export to Excel
 
 PivotGrid can be exported to an excel document using the Essential XlsIO. It consist of two exporting mode options listed below and it is possible to switch the exporting mode options by using **ExportMode** property.

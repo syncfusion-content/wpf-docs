@@ -11,6 +11,33 @@ documentation: ug
 
 PivotGrid control allows to prevent the drag and drop of certain PivotItems that has been dragged either in PivotSchemaDesigner or in the Grouping Bar.
 
+
+Properties Table
+
+<table>
+<tr>
+<th>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
+<tr>
+<td>
+AllowRunTimeGroupByField</td><td>
+Gets or sets the value to enable/disable grouping for this PivotItem.</td><td>
+bool</td><td>
+True(Default), False</td><td>
+-</td></tr>
+<tr>
+<td>
+ShowDisabledGroupBackground</td><td>
+Enabled/Disabled Background color for the grouping disabled fields.</td><td>
+bool</td><td>
+True, False(Default)</td><td>
+-</td></tr>
+</table>
+
 ##Defining the Properties in PivotGrid
 
 **AllowRunTimeGroupByField**

@@ -15,7 +15,29 @@ documentation: ug
 This feature provides support for the drill up and drill down operations for BI components such as BI Grid, BI Chart, and BI Client in order to view the OLAP data through different levels using an MDX query instead of the OlapReport class. Previously, the drill up and drill down operations were supported by the OlapReport class only.
 
 
+### Properties
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
+<tr>
+<td>
+AllowMdxToReportParse</td><td>
+Gets or sets a value indicating whether to parse the given MDX into the OlapReport class or not. The default value is true.</td><td>
+CLR </td><td>
+Boolean</td><td>
+N/A </td></tr>
+</table>
+
+
 ### Sample Links
+
+
 
 OlapGrid [WPF]
 
