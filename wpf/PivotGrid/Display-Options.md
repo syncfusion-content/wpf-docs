@@ -11,30 +11,6 @@ documentation: ug
 
 PivotGrid control offers various display options such as **Calculations, Summary, Grand Totals, None, All** for the PivotComputaionInfo to display calculation values in certain areas of PivotGrid by using the **DisplayOption** enumerator.
 
-**Use case Scenario**
-
-User could view the calculation items either on summary, calculations, grand totals or combinations of these three columns depending on their requirement.
-
-Property Table
-																	 										 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-DisplayOption</td><td>
-Gets or sets the calculation values to be displayed in PivotGrid.</td><td>
-DisplayOption</td><td>
-All(Default), None, Calculations, Summary, GrandTotals
-TopSummary</td><td>
--</td></tr>
-</table>
-
 ##Defining the Display Option for PivotComputaionInfo in PivotGrid
 
 **DisplayOption** is the property can be set for the corresponding PivotCalculation item through **PivotComputationInfo** class. It can be set either through *XAML* or through *Code-Behind*.

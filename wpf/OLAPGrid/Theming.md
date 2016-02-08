@@ -23,30 +23,6 @@ Theming is the process of applying particular settings to the visual elements of
 * Office 2003
 * Default
 
-## Use Case Scenarios
-
-This feature enables users to develop a single application and apply different looks as necessary. 
-
-###  Properties
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-VisualStyle </td><td>
-Gets or sets the VisualStyle of the OlapGrid control.</td><td>
-Dependency Property</td><td>
-OlapGridVisualStyle</td></tr>
-</table>
-
-
 ## Sample Link
 
 A sample demo available in the following link,

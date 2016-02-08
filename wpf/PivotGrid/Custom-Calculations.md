@@ -28,27 +28,3 @@ documentation: ug
 * **RankSmallestToLargest** - Displays the rank of selected values in a specific field, listing the smallest item in the field as 1, and each larger value will have a higher rank value.
 * **RankLargestToSmallest** - Displays the rank of selected values in a specific field, listing the largest item in the field as 1, and each smaller value will have a higher rank value.
 
-**Use Case Scenario**
-
-User could display the calculation values in different ways as per their requirement.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-CalculationType</td><td>
-Gets or sets the CalculationType enumeration for this PivotComputaationInfo.</td><td>
-CalculationType</td><td>
-NoCalculation (Default), PercentageOfGrandTotal, PercentageOfColumnTotal, PercentageOfRowTotal, PercentageOfParentColumnTotal, PercentageOfParentRowTotal, PercentageOfParentTotal, Index, Formula, PercentageOf, DifferenceFrom, PercentageOfDifferenceFrom, RunningTotalIn, PercentageOfRunningTotalIn, RankSmallestToLargest, RankLargestToSmallest</td><td>
--</td></tr>
-</table>
-
-

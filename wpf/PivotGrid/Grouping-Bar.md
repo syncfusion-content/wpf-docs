@@ -16,30 +16,6 @@ PivotGrid Grouping Bar allows you to slice and dice the fields between column, r
 * ColumnHeader Area - which holds the PivotColumn items of PivotGrid control.
 * RowHeader Area - which holds the PivotRow items of PivotGrid control.
 
-**Use Case Scenario**
-
-Grouping bar also allows to perform sorting,filtering and summarize the data as they want at run time.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-ShowGroupingBar</td><td>
-Gets or sets whether the GroupingBar needs to shown or hidden.</td><td>
-bool</td><td>
-True (Default),
-False</td><td>
--</td></tr>
-</table> 
-
 ## Defining the Grouping Bar in PivotGrid
 
 By default, Grouping-Bar is enabled for PivotGrid control. We could show or hide the Grouping Bar by using the **ShowGroupingBar** property of PivotGrid control. It can be done both in *XAML* or *Code-Behind*.

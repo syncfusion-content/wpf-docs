@@ -11,33 +11,6 @@ documentation: ug
 
 Drill position feature enables the user to drill only the current position of a selected member in the OlapReport. This will exclude the drilled data of the selected member in other positions by using MDX query.
 
-### Use Case Scenarios
-
-This feature is useful when the objective of analysis is to view the drilled data only in current position of selected member.
-
-
-### Properties
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-DrillType</td><td>
-Enables the user to set the drill type of an OlapReport</td><td>
-CLR</td><td>
-Enum</td><td>
--</td></tr>
-</table>
-
-
 ### Sample Link
 
 A sample is available in following locations:

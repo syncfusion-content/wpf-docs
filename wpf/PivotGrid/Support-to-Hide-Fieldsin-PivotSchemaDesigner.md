@@ -11,29 +11,6 @@ documentation: ug
 
 It is possible to customize the PivotTable field list in PivotSchemaDesigner and it allows to hide the unnecessary fields from the PivotTable field list by using the **ShowDisplayFieldsOnly** property.
 
-**Use Case Scenarios**
-
-This feature enables the user to load required set of items in PivotSchemaDesigner.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowDisplayFieldsOnly</td><td>
-Gets or sets the value indicating to show only the fields that are used in PivotGrid.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
-
 ## Defining the property in PivotSchemaDesigner
 
 The **ShowDisplayFieldsOnly** property of PivotSchemaDesigner can be mentioned either in *XAML* or in *Code-Behind*.
