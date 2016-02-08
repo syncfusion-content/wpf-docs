@@ -11,10 +11,6 @@ documentation: ug
 
 To provide calculated field support to summary cells in PivotGrid and to make it behave accordingly, despite any options provided in summaries such as sum, count, max, min, etc…. 
 
-**Use Case Scenario**
-
-User can now provide expression for summary rows also through this support. Using this behaviour we could display the values in summary cells depending upon the formula provided in the respective calculation item.
-
 **Using Expression field calculations in PivotGrid**
 
 It can be achieved by setting the calculation type as **Formula** and specifying the appropriate formula. Please refer the below code snippets and screenshots.

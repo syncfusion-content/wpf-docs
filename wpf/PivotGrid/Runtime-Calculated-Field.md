@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid provides support to insert a new calculated field based on the existing calculated items using **CalculatedField** window. This option is available as a menu item in the GroupingBar context menu. 
 
-**Use Case Scenario**
-
-User could add a new calculated field based on their requirement at run time.
-
 ## Inserting a new CalculatedField in PivotGrid
 
 To insert a new CalculatedField, open the CalculatedField window using the GroupingBar context menu. Then define a **Name** for the new calculated field. 

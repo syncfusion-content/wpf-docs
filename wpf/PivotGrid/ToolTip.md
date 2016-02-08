@@ -11,50 +11,6 @@ documentation: ug
 
 ToolTips can be set to individual cells. The ToolTip information has the cell value and its respective row and column data and it is set in the style’s Tag property.It can be enabled or disabled in a PivotGrid control using a boolean property. A ToolTip’s skin will be set depending upon the theme set for the PivotGrid. Also, users can customize the ToolTip skin at the sample level. ToolTip text can be localized for its “Value”, “Row”, and “Column” text. Users can also set custom text for ToolTips.
 
-**Use Case Scenarios**
-
-ToolTips can be used to show the data of any cell so that user can get the cell’s full information such as the row and column on which it depends
-
-Properties Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-TooltipEnabled</td><td>
-Enable/disable the ToolTip for the PivotGrid control.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-TooltipEnabled</td><td>
-Enable/disable the ToolTip for individual cell styles (ColumnHeaderStyle, RowHeaderStyle, ValueCellStyle, SummaryCellStyle, SummaryHeaderStyle).</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-CustomToolTipTemplateKey</td><td>
-Gets/sets the DataTemplate key for custom ToolTips for the entire PivotGrid control.</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-CustomToolTipTemplateKey</td><td>
-Gets/sets DataTemplate key for custom ToolTip for individual cell styles (ColumnHeaderStyle, RowHeaderStyle, ValueCellStyle, SummaryCellStyle, SummaryHeaderStyle)</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-</table>
-
 ## Defining the ToolTip properties in PivotGrid
 
 ### Adding ToolTip for the entire PivotGrid

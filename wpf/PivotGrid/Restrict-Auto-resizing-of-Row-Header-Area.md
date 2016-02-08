@@ -11,28 +11,6 @@ documentation: ug
 
 PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the ShowFields button located in the DataHeaderArea of the grouping bar is clicked, the PivotComputation List window appears with the PivotCalculation fields. 
 
-**Use Case Scenario**
-
-It allows the user to restrict the row header items from being stretched and maintains its size with the fixed one so that users can view most of the data in the viewable area instead of scrolling to view the data.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-AllowRowHeaderAreaAutoSizing</td><td>
-Gets or sets to restrict the RowHeaders stretching when too many items in the PivotGrid GroupingBar computationArea.</td><td>
-bool</td><td>
-True(Default), False</td><td>
- -</td></tr>
-</table>
 
 ##Defining Row Header auto sizing in PivotGrid
 

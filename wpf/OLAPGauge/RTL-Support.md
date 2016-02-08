@@ -11,29 +11,6 @@ documentation: ug
 
 Right-to-left support has been provided for the OLAP Gauge control for WPF. Users can now display content from right to left by setting the flow direction option in the control. 
 
-## Use Case Scenario
-
-Some cultures have a written language that reads from right to left. Controls deployed for such cultures should be rendered from right to left. In these cases, we can utilize RTL support of the OLAP Gauge component. 
-
-## Properties
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-FlowDirection</td><td>
-Gets or sets the flow direction for the OLAP Gauge control. </td><td>
-Normal</td><td>
-enum</td></tr>
-</table>
-
 # Adding RTL support for OLAP Gauge in an application 
 
 To enable RTL support, the FlowDirection property of the OLAP Gauge control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.

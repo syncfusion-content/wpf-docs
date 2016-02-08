@@ -11,36 +11,6 @@ documentation: ug
 
 PivotGrid provides support to edit the value and total cells and it can be achieved by using **EnableValueEditing** property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted according to the editing. This can be acheived using the **PivotEditingManager** of PivotGrid control.
 
-**Use Case Scenarios**
-
-It will be useful when users would like to edit the values at run time thereby reflecting its update in the total cells.
-
-Properties Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-EnableValueEditing</td><td>
-Gets or sets the value indication whether to enable editing in value cells.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-AllowEditingOfTotalCells</td><td>
-Gets/sets the Boolean value to enable editing in total cells.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
-
 ## Defining the properties in PivotGrid
 
 ### Enable editing for value cells

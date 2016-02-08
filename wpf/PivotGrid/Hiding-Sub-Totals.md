@@ -16,67 +16,6 @@ The sub-total hiding feature is used to show or hide sub-totals in PivotGrid.It 
 * Hiding only the Column Sub-Totals
 * Hiding the Sub-Totals for the specific pivot item
 
-**Use Case Scenarios**
-
-User could make a better view of the data when there are more computational fields with sub totals for each group in PivotGrid.
-
-Properties Table
-                                                        
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowSubTotals</td><td>
-Gets or sets value indicating whether sub total calculations for all row and column should be shown or hidden.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowRowSubTotals</td><td>
-Gets or sets value indicating whether row sub total calculations should be shown or hidden.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowColumnSubTotals</td><td>
-Gets or sets value indicating whether column sub total calculations should be shown or hidden.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowSubTotal</td><td>
-Gets or sets value indicating whether sub total calculations should be shown or hidden for that particular PivotItem.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-</table>                                                        
-
-Methods Table
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th></tr>
-<tr>
-<td>
-SubTotalsRendering</td><td>
-Handles rendering of cells(showing or hiding the cells) by calculating the cell range values in the Pivot Engine based on the ShowSubTotals property value in the control</td><td>
-- </td><td>
-Void </td></tr>
-</table>
-
 ## Defining the properties in PivotGrid
 
 ### Hiding all the Sub-Totals
