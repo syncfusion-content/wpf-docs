@@ -1,565 +1,351 @@
 ---
 layout: post
-title: Sorting | SfDataGrid | WPF | Syncfusion
-description: sorting
+title: Sorting in SfDataGrid
+description: How to sort the data in SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Sorting
 
-This section explains you about Sorting on DataGrid data. Different properties and events that participate in Sorting are discussed in this section.
+# **Sorting**
 
-## Overview
+SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowSorting.html) property to `true`.
 
-DataGrid control allows you to sort the table data against one or more columns. The number of columns by which the data sorted is unlimited. When sorting is applied, the Grid rearranges the data to match with the current sort criteria ascending or descending order.
-
-DataGrid provides following properties for Sorting.
-
-Sorting property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th><th>
-Default Value</th></tr>
-<tr>
-<td>
-SfDataGrid.AllowSorting</td><td>
-Boolean</td><td>
-Enables or disables a value to AllowSorting property indicating whether the DataGrid is resorted by clicking on a column header.</td><td>
-True</td></tr>
-<tr>
-<td>
-SfDataGrid.SortColumnDescriptions</td><td>
-ObservableCollection&lt;SortColumnDescription&gt;</td><td>
-Columns that are added to this collection are allowed to be sorted. </td><td>
-</td></tr>
-<tr>
-<td>
-SfDataGrid.AllowTristateSorting</td><td>
-Boolean</td><td>
-Enables or disables tristate sorting for a Grid. (Ascending, descending and initial data order.)</td><td>
-False</td></tr>
-<tr>
-<td>
-SfDataGrid.ShowSortNumbers</td><td>
-Boolean</td><td>
-You can get the order of sorting in columns header during multi sorting.</td><td>
-False </td></tr>
-<tr>
-<td>
-GridColumn.AllowSorting</td><td>
-Boolean</td><td>
-Enables or disables a value to AllowSorting property indicating whether the GridColumn is resorted by clicking on a column header.</td><td>
-True</td></tr>
-</table>
-
-
-N> When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns.
-
-## Apply Sorting
-
-There is a couple of ways to apply sorting to the DataGrid.
-
-* You can click the column header by which the column is sorted. Once the sorting is applied, the Grid shows a sort icon in the respective column headers indicating the direction of sorting.
-* You can also perform sorting using the code. This requires you to define a number of SortColumnDescription objects to be added to SfDataGrid.SortColumnDescriptions collection. SortColumnDescription object holds following two properties:
-* ColumnName: Name of the sorted column
-* SortDirection: an object of type ListSortDirection defines the soring direction
-
-The following code example illustrates this.
-
-
-
+{% tabs %}
 {% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                               AllowSorting="True"
+                               ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowSorting = true;
+{% endhighlight %}
+{% endtabs %}
 
+In another way, you can enable or disable the sorting for particular column by setting the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowSorting.html) property.
 
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid"
-
-                       AllowSorting="True"
-
-                       ColumnSizer="Auto"
-
-                       ItemsSource="{Binding OrderInfoCollection}">
-
-    <syncfusion:SfDataGrid.SortColumnDescriptions>
-
-        <syncfusion:SortColumnDescription ColumnName="OrderID" SortDirection="Descending" />
-
-    </syncfusion:SfDataGrid.SortColumnDescriptions>
-
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowSorting="False"
+                        AutoGenerateColumns="False"
+                        ItemsSource="{Binding Orders}">
+                        
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn AllowSorting="True" MappingName="OrderID" />
+        <syncfusion:GridTextColumn AllowSorting="False" MappingName="CustomerID" />
+        <syncfusion:GridTextColumn AllowSorting="False" MappingName="CustomerName" />
+        <syncfusion:GridTextColumn AllowSorting="True" MappingName="Country" />
+        <syncfusion:GridTextColumn AllowSorting="True" MappingName="ShipCity" />
+    </syncfusion:SfDataGrid.Columns>
+    
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-
-
-
-{% highlight C# %}
-
-
-
-
-
-sfdatagrid.AllowSorting = true;
-
-
-
-sfdatagrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "OrderID", SortDirection = System.ComponentModel.ListSortDirection.Descending }); 
+{% highlight c# %}
+this.dataGrid.Columns["OrderID"].AllowSorting = true;
+this.dataGrid.Columns["CustomerID"].AllowSorting = false;
 {% endhighlight %}
+{% endtabs %}
+
+N> The [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowSorting.html) takes higher priority than [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowSorting.html) property.
+
+End users can sort the column by clicking column header cell. Once the columns gets sorted, the sort indicator will be displayed on the right side of the column header.
+
+![](Sorting_images/Sorting_img1.png)
 
 
+## **Sort column in double click**
 
+By default, column gets sorted when column header clicked. You can change this behavior to sort the column in double click action by setting [SfDataGrid.SortClickAction](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortClickAction.html) property to `DoubleClick`.
 
-The following screenshot displays the output.
-
-![](Features_images/Features_img80.png)
-
-
-
-Sorted DataGrid
-{:.caption}
-## Events
-
-The DataGrid provides you the following Events for the sorting functionality:
-
-* SfDataGrid.SortColumnChanging: This Event is raised while sorting the column in code or at Execute time that helps to cancel the sorting action. When you sort the column, DataGrid scrolls based on Selected Item. By setting SortColumnChangingEventArgs.CancelScroll property to ‘true’, you can prevent the scrolling while sorting.
-* SfDataGrid.SortColumnChanged: This Event is raised after the column is sorted.
-
-The following code example explains you how to hook those events.
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowSorting="True"
-
-                       AutoGenerateColumns="True"
-
-                       ColumnSizer="Star"
-
-                       ItemsSource="{Binding OrderInfoCollection,
-
-                                                Source={StaticResource data}}"
-
-                       SortColumnsChanged="sfdatagrid_SortColumnsChanged"
-
-                       SortColumnsChanging="sfdatagrid_SortColumnsChanging" />
-
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowSorting="True"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}"
+                        SortClickAction="DoubleClick" />
 {% endhighlight %}
+{% highlight c# %}
+this.dataGrid.SortClickAction = SortClickAction.DoubleClick;
+{% endhighlight %}
+{% endtabs %}
 
 
-{% highlight C# %}
+## **Sorting order**
+
+By default the data is sorted in ascending or descending order when clicking column header. You can rearrange the data to its initial order from descending, when clicking column header by setting [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowTriStateSorting.html) property.
+
+Following are the sequence of sorting orders when clicking column header, 
+
+* Sorts the data in ascending order
+* Sorts the data in descending order 
+* Clears the sorting and records displayed in its initial order
 
 
+## **Multi column sorting**
+
+SfDataGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+
+In the below screen shot, the `OrderID` column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.
+
+![](Sorting_images/Sorting_img2.png)
 
 
+### **Display sort order**
 
-sfdatagrid.SortColumnsChanging += sfdatagrid_SortColumnsChanging;
+It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowSortNumbers.html) property to `true`. 
 
-sfdatagrid.SortColumnsChanged += sfdatagrid_SortColumnsChanged;
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowSorting="True"        
+                        ShowSortNumbers="True"
+                        ItemsSource="{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.ShowSortNumbers = true;
+{% endhighlight %}
+{% endtabs %}
+
+![](Sorting_images/Sorting_img3.png)
 
 
+## **Programmatic sorting**
 
-void sfdatagrid_SortColumnsChanged(object sender, GridSortColumnsChangedEventArgs e)
+You can sort the data programmatically by adding or removing the [SortColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) in [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnDescriptions.html) property.
 
-{            
+N>  [SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) events are not raised when the data sorted programmatically through `SfDataGrid.SortColumnDescriptions`.
 
+
+### **Adding sort columns**
+
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AutoExpandGroups="True"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}"
+                        ShowGroupDropArea="True">
+                        
+    <syncfusion:SfDataGrid.SortColumnDescriptions>
+        <syncfusion:SortColumnDescription ColumnName="OrderID" SortDirection="Ascending" />
+        <syncfusion:SortColumnDescription ColumnName="CustomerName" SortDirection="Descending" />
+    </syncfusion:SfDataGrid.SortColumnDescriptions>
+    
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "OrderID", SortDirection = ListSortDirection.Ascending });
+this.dataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "CustomerName", SortDirection = ListSortDirection.Descending });
+{% endhighlight %}
+{% endtabs %}
+
+
+### **Removing sort columns**
+
+You can unsort the data by removing the corresponding [SortColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) from the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnDescriptions.html) property.
+
+{% tabs %}
+{% highlight c# %}
+var sortColumnDescription = this.dataGrid.SortColumnDescriptions.FirstOrDefault(col => col.ColumnName == "OrderID");
+if (sortColumnDescription!=null)
+{  
+    this.dataGrid.SortColumnDescriptions.Remove(sortColumnDescription);
 }
+{% endhighlight %}
+{% endtabs %}
 
 
+### **Clear sorting**
 
-void sfdatagrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
+You can clear sorting, by clearing the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnDescriptions.html).
 
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.SortColumnDescriptions.Clear();
+{% endhighlight %}
+{% endtabs %}
+
+
+## **Custom sorting**
+
+SfDataGrid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer.html) instance to [SfDataGrid.SortComparers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortComparers.html). 
+
+The [SortComparer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer.html) have the following properties,
+
+[PropertyName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer~PropertyName.html) - Gets or sets the name of the column to apply custom sorting.
+
+[Comparer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer~Comparer.html) - Gets or sets the custom comparer in which you can code to compare the data using custom logic. 
+
+You can implement [ISortDirection](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ISortDirection.html) interface in comparer to get the sort direction. So you can apply different custom logics for ascending and descending. 
+
+Follow the below steps to add custom comparer to sort using custom logic,
+
+**Define custom comparer with custom sort logic**
+
+In the below code snippet, `CustomerName` property is compared based on its string length, instead of default string comparison.  
+
+{% tabs %}
+{% highlight c# %}
+Public class CustomComparer:IComparer<object>,ISortDirection
 {
-
-}
-
-{% endhighlight %}
-
-
-
-##  Tristate Sorting
-
-By default DataGrid allows you to sort the column in ascending and descending order only. SfDataGrid.AllowTristateSorting allows you to sort the column in the following three orders:
-
-* Ascending order
-* Descending order
-* Initial data order
-
-The following code example illustrates that. 
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowSorting="True"
-
-                       AllowTriStateSorting="True"
-
-                       AutoGenerateColumns="True"
-
-                       ColumnSizer="Star"
-
-                       ItemsSource="{Binding OrderInfoCollection,
-
-                                                Source={StaticResource data}}" />
-
-
-{% endhighlight %}
-
-
-## Multi Column Sorting
-
-DataGrid control allows you to sort the multiple columns. To apply sorting for multiple columns, you can click the desired column headers by pressing the CTRL key.
-
-The following screenshot illustrates the MultiColumnSorting in DataGrid.
-
-
-
-![](Features_images/Features_img81.png)
-
-
-
-DataGrid with Multi Column Sorting
-{:.caption}
-
-
-In the above screenshot, “OrderID” column is sorted first in the descending order. After you sort the “_Name of Customer_”, the sorting of column in any direction happens against OrderID column and previous sorting is maintained.amu.
-
-N> When you add columns to SortColumnDescription, SortColumnChanging event is not raised.
-
-## Sort Numbers
-
-SfDataGrid.ShowSortNumbers__property enables the visibility of sorting order of the column at the top right corner of Column HeaderCell.
-
-The following code example illustrates that.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowSorting="True"
-
-                       AutoGenerateColumns="True"
-
-                       ColumnSizer="Star"
-
-                       ItemsSource="{Binding OrderInfoCollection,
-
-                                                Source={StaticResource data}}"
-
-                       ShowSortNumbers="True" />
-
-{% endhighlight %}
-
-The following screenshot illustrates the SortNumbers in DataGrid.
-
-
-
-![](Features_images/Features_img82.png)
-
-
-
-DataGrid with Sorted Numbers
-
- In the above screenshot DataGrid shows the sort order numbers in column header. OrderId column is sorted first in ascending order. Then you can apply multi sort to Name of Customer and ShipCountry column. Now the DataGrid shows sort numbers in column header, based on column sorting order.
-
-## Custom Sorting
-
-Custom Sorting feature enables you to implement custom sorting criteria. For each column, you can apply different sorting criteria.  To perform the custom sorting you have to add SortComparer object to SfDataGrid.SortComparersCollection.
-
-### A SortComparer object__has the following properties:
-
-* PropertyName: Gets or sets the column Mapping Name that applies custom sorting.
-* Comparer: Gets or sets the custom comparer. CustomComparer implements the IComparer and ISortDirection interfaces.
-
-In the below example, the column is sorted based on string.Length by using custom comparer. The following code example illustrates how to perform the custom sorting for Customer Name column according to the string length of the names.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window x:Class="SimpleApplication.MainWindow"
-
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        xmlns:Linq="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF"
-
-        xmlns:local="clr-namespace:SimpleApplication"
-
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-        Title="MainWindow"
-
-        Width="525"
-
-        Height="200">
-
-    <Window.Resources>
-
-        <local:OrderInfoRepositiory x:Key="data" />
-
-        <local:CustomerInfo x:Key="Comparer" />
-
-    </Window.Resources>
-
-    <syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                           AllowSorting="True"
-
-                           AllowTriStateSorting="True"
-
-                           AutoGenerateColumns="True"
-
-                           ColumnSizer="Star"
-
-                           ItemsSource="{Binding OrderInfoCollection,
-
-                                                 Source={StaticResource data}}"
-
-                           ShowGroupDropArea="True"
-
-                           ShowSortNumbers="True">
-
-        <syncfusion:SfDataGrid.SortComparers>
-
-            <Linq:SortComparer Comparer="{StaticResource Comparer}" PropertyName="CustomerName" />
-
-        </syncfusion:SfDataGrid.SortComparers>
-
-    </syncfusion:SfDataGrid>
-
-</Window>
-
-{% endhighlight %}
-
-
-
-The following code example illustrates the Custom Comparer.
-
-
-{% highlight C# %}
-
-  
-
-
-
-public class CustomerInfo : IComparer<Object>, ISortDirection
-
-{
-     public int Compare(object x, object y)
-     {
-          int namX;
-          int namY;
-
-        //For Customers Type data
-
-        if (x.GetType() == typeof(Customers))
-        {
-
-        //Calculating the length of CustomerName if the object type is Customers
-            namX = ((Customers)x).CustomerName.Length;
-            namY = ((Customers)y). CustomerName.Length;
-
+    public int Compare(object x, object y)
+    {
+        int namX;
+        int namY;
+
+        //While data object passed to comparer
+        if (x.GetType() == typeof(OrderInfo))
+        {
+            namX = ((OrderInfo)x).CustomerName.Length;
+            namY = ((OrderInfo)y).CustomerName.Length;
+        }
+        
+        //While sorting groups
+        else if (x.GetType() == typeof(Group))
+        {
+            //Calculating the group key length
+            namX = ((Group)x).Key.ToString().Length;
+            namY = ((Group)y).Key.ToString().Length;
         }
 
-        //For Group type Data                                   
-        else if (x.GetType() == typeof(Group))
-        {
+        else
+        {
+            namX = x.ToString().Length;
+            namY = y.ToString().Length;
+        }
 
-        //Calculating the group key length
-            namX = ((Group)x).Key.ToString().Length;
-            namY = ((Group)y).Key.ToString().Length;
-        }
-        else
-        {
-            namX = x.ToString().Length;
-            namY = y.ToString().Length;
-        }
-
-        // Objects are compared and return the SortDirection
-        if (namX.CompareTo(namY) > 0)
-            return SortDirection == ListSortDirection.Ascending ? 1 : -1;
-        else if (namX.CompareTo(namY) == -1)
-            return SortDirection == ListSortDirection.Ascending ? -1 : 1;
-        else
-            return 0; 
-
-     }
-
-     //Get or Set the SortDirection value
-     private ListSortDirection _SortDirectioon;
-     public ListSortDirection SortDirection
-     {
-     get  {   return _SortDirectioon;  }
-     set  {  _SortDirection = value;    }
-     }
-
-}
-{% endhighlight %}
-
-
-
-
-The following screenshot displays the output.
-
-
-
-![](Features_images/Features_img83.png)
-
-
-DataGrid with Custom Sorting
-{:.caption}
-In the preceding screenshot, Name of Customer column is sorted based on string.Length value.
-
-## Sort groups based on summary
-
-When you group data by any column, the records are grouped by identical values of the particular column. By default, each grouped record sorted by column’s key value as shown in the following screenshot.
-
-
-
-![](Features_images/Features_img84.png)
-
-
-
-Sorting groups based on summary
-{:.caption}
-Now you can sort the grouped records based on key values of the column. You can sort the records based on Caption Summary value that is achieved by using SummaryGroupComparer property in DataGrid.
-
-Following are the steps to create comparer to sort the record based on Caption Summary value of the group,
-
-* Create the Comparer class by implementing two interfaces IComparer<Group> to compare the summary values of two groups and ISortDirection that has the SortDirection property.
-* In compare method, get the summary values of two groups by GetSummaryValue method and return the compared result based on SortDirection property (member of ISortDirection interface).
-
-The following code example illustrates how to create a GroupComparer class that sorts the grouped records based on Count Aggregate.
-
-
-{% highlight C# %}
-
-
-
-public class SummaryGroupComparer : IComparer<Group>, ISortDirection
-
-{
-
-    public ListSortDirection SortDirection { get; set; }
-
-    public int Compare(Group x, Group y)
-
-    {
-
-        int cmp = 0;
-
-        var xgroupSummarry = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-
-        var ygroupSummarry = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-
-        cmp = ((IComparable)xgroupSummarry).CompareTo(ygroupSummarry);
-
-        if (this.SortDirection == ListSortDirection.Descending)
-
-            cmp = -cmp;
-
-        return cmp;
-
+        //returns the comparison result based in SortDirection.
+        if (namX.CompareTo(namY) > 0)
+            return SortDirection == ListSortDirection.Ascending ? 1 : -1;
+            
+        else if (namX.CompareTo(namY) == -1)
+            return SortDirection == ListSortDirection.Ascending ? -1 : 1;
+            
+        else
+            return 0;
     }
 
+    //Get or set the direction of sorting when compared gets called.
+    private ListSortDirection _SortDirection;
+    
+    public ListSortDirection SortDirection
+    {
+        get { return _SortDirection; }
+        set { _SortDirection = value; }
+    }
 }
 {% endhighlight %}
+{% endtabs %}
 
 
-Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid. This is attained by defining the class as a Resource.
+**Adding custom comparer to SfDataGrid**
 
+Custom comparer can be added to [SfDataGrid.SortComparers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortComparers.html) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
 
-
+{% tabs %}
 {% highlight xaml %}
+xmlns:linq="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF"
 
-
-
-<Window.Resources>
-
-    <local:SummaryGroupComparer x:Key="groupComparer" />
-
-</Window.Resources>
-
-<Grid>
-
-    <syncfusion:SfDataGrid x:Name="syncgrid"
-
-                           AutoGenerateColumns="True"
-
-                           ColumnSizer="Star"
-
-                           ItemsSource="{Binding EmployeeDetails}"
-
-                           ShowColumnWhenGrouped="True"
-
-                           ShowGroupDropArea="True"
-
-                           SummaryGroupComparer="{StaticResource groupComparer}">
-
-        <syncfusion:SfDataGrid.CaptionSummaryRow>
-
-            <syncfusion:GridSummaryRow Title="Items Count: {IdCount}" ShowSummaryInRow="True">
-
-                <syncfusion:GridSummaryRow.SummaryColumns>
-
-                    <syncfusion:GridSummaryColumn Name="IdCount"
-
-                                                  Format="'{Count}'"
-
-                                                  MappingName="CustomerID"
-
-                                                  SummaryType="CountAggregate" />
-
-                </syncfusion:GridSummaryRow.SummaryColumns>
-
-            </syncfusion:GridSummaryRow>
-
-        </syncfusion:SfDataGrid.CaptionSummaryRow>
-
-    </syncfusion:SfDataGrid>
-
-</Grid>
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowSorting="True"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.SortComparers>
+        <linq:SortComparer Comparer="{StaticResource Comparer}" PropertyName="CustomerName" />
+    </syncfusion:SfDataGrid.SortComparers>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
+{% highlight c# %}
+this.dataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomComparer(), PropertyName = "CustomerName" });
+{% endhighlight %}
+{% endtabs %}
+
+Sorting `CustomerName` column sorts the data using custom comparer availabe in `SfDataGrid.SortComparers`.
+
+![](Sorting_images/Sorting_img4.png)
 
 
-Now the group rows are automatically sorted by their summary values. You can sort group rows by summary values by clicking the grouped column header.
+## **Sorting the underlying collection** 
+
+SfDataGrid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place. 
+
+If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling [SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
+
+void dataGrid_SortColumnsChanged(object sender, GridSortColumnsChangedEventArgs e)
+{
+    var viewModel = this.DataContext as ViewModel;
+    
+    IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
+    
+    foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
+    {
+        var columnName = sortColumn.PropertyName;
+        
+        if (sortColumn.Direction == ListSortDirection.Ascending)
+            OrderedSource = OrderedSource.OrderBy(source => GetOrderSource(source, columnName));
+
+        else
+            OrderedSource = OrderedSource.OrderByDescending(source => GetOrderSource(source, columnName));
+    }            
+}
+
+private object GetOrderSource(OrderInfo source, string name)
+{
+    var propInfo = source.GetType().GetRuntimeProperty(name);
+    
+    if (propInfo != null)
+    
+        // get the current sort column value
+        return propInfo.GetValue(source);
+        
+    return null;
+}
+{% endhighlight %}
+{% endtabs %}
 
 
+## **Handling events**
 
-![](Features_images/Features_img85.png)
+### **SortColumnChanging event**
+
+[SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html)  event occurs while sorting the columns by clicking column header. 
+[GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnChanging` event.
+
+[Action](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~Action.html) **–** Gets the action triggered this event. 
+
+[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) **–** Setting value to `true`, cancels the triggered action. 
+
+[AddedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~AddedItems.html) **-** Gets the list of new `SortColumnDescription’s` that are added.
+
+[RemovedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~RemovedItems.html) **-** Gets the list of `SortColumnDescription’s` that are removed. 
+
+[CancelScroll](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~CancelScroll.html) **-** Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
+
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) property of `SortColumnChanging` event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.SortColumnsChanging += dataGrid_SortColumnsChanging;
+void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs e)
+{
+    if (e.AddedItems[0].ColumnName == "OrderID")
+    {
+        e.Cancel = true;
+    }  
+}
+{% endhighlight %}
+{% endtabs %}
 
 
+### **SortColumnChanged event**
 
-Sorted groups based on summary
-{:.caption}
-The above screenshot shows the output for sort by summary value example.
+[SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event occurs when the sorting is applied to the column.
+[GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnChanged` event. 
