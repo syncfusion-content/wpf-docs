@@ -17,35 +17,10 @@ It allows users to sort the value columns in ascending or descending order and i
 * Sort only grand total columns.
 * Disable the sort.
 
-Properties Table
+Properties
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-SortDirection</td><td>
-Gets or sets the sort order to ascending or descending. </td><td>
-ListSortDirection</td><td>
-Ascending(Default), Descending</td><td>
--</td></tr>
-<tr>
-<td>
-SortOption</td><td>
-Gets or sets the sorting option as all, none, column sorting, total sorting, or grand total sorting.</td><td>
-PivotSortOption, SortOption</td><td>
-All,
-None,
-ColumnSorting,
-TotalSorting,
-GrandTotalSorting</td><td>
--</td></tr>
-</table>
+* **SortDirection** - Gets or sets the sort order to ascending or descending. 
+* **SortOption** - Gets or sets the sorting option as all, none, column sorting, total sorting, or grand total sorting.
 
 ##Defining the Sorting Option for PivotGrid
 

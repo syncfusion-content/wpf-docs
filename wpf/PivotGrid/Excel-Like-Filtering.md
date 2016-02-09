@@ -14,26 +14,9 @@ documentation: ug
 PivotGrid control provides excel-like filtering feature in which the FilterPopup will have features similar to MS Excel called as **MultiFunctionalSortFilterPopup**. This MultiFunctionalSortFilterPopup contains various features such as sorting and filtering the PivotItem. 
 
 
-Properties Table
+Properties 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-AllowMultiFunctionalSortFilter</td><td>
-Gets or sets whether excel like filtering on Grouping Bar is enabled.</td><td>
-bool</td><td>
-True,
-False(Default)</td><td>
--</td></tr>
-</table>
-
+* **AllowMultiFunctionalSortFilter** - Gets or sets whether excel like filtering on Grouping Bar is enabled.
 
 ##Defining the Excel-like Filtering in PivotGrid
 

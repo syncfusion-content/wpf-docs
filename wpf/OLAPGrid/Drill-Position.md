@@ -14,23 +14,7 @@ Drill position feature enables the user to drill only the current position of a 
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-DrillType</td><td>
-Enables the user to set the drill type of an OlapReport</td><td>
-CLR</td><td>
-Enum</td><td>
--</td></tr>
-</table>
-
+* **DrillType** - Enables the user to set the drill type of an OlapReport
 
 ### Sample Link
 

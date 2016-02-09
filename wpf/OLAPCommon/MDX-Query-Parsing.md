@@ -17,23 +17,7 @@ This feature provides support for the drill up and drill down operations for BI 
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-AllowMdxToReportParse</td><td>
-Gets or sets a value indicating whether to parse the given MDX into the OlapReport class or not. The default value is true.</td><td>
-CLR </td><td>
-Boolean</td><td>
-N/A </td></tr>
-</table>
-
+* **AllowMdxToReportParse** - Gets or sets a value indicating whether to parse the given MDX into the OlapReport class or not. The default value is true.
 
 ### Sample Links
 

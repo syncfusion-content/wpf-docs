@@ -12,24 +12,9 @@ documentation: ug
 It is possible to customize the PivotTable field list in PivotSchemaDesigner and it allows to hide the unnecessary fields from the PivotTable field list by using the **ShowDisplayFieldsOnly** property.
 
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowDisplayFieldsOnly</td><td>
-Gets or sets the value indicating to show only the fields that are used in PivotGrid.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **ShowDisplayFieldsOnly** - Gets or sets the value indicating to show only the fields that are used in PivotGrid.
 
 ## Defining the property in PivotSchemaDesigner
 

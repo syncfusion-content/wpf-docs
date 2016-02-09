@@ -11,24 +11,10 @@ documentation: ug
 
 Pivot Grid allows you to restrict the display of records by using a mechanism called Filters. A filter enables you to extract a subset of records that meet certain filter criteria. Filters can be applied to one or more columns.
 
-Property Table
+Property
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-AllowFilter</td><td>
-Specifies whether the PivotGridControl allows to set a filter on the Calculation column.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **AllowFilter** - Specifies whether the PivotGridControl allows to set a filter on the Calculation column.
+
 
 Methods Table
 

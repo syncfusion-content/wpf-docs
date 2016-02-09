@@ -19,24 +19,10 @@ PivotGrid allows Hyperlinking of cells to retrieve a detailed information about 
 * Summary Cell
 * Value Cell
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-IsHyperlinkCell</td><td>
-Gets or sets whether the to enable or disable the PivotGrid grid cells as hyperlink cells.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **IsHyperlinkCell** - Gets or sets whether the to enable or disable the PivotGrid grid cells as hyperlink cells.
+
 
 ## Defining the property in PivotGrid
 

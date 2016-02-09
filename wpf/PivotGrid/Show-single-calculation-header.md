@@ -11,24 +11,10 @@ documentation: ug
 
 By default, PivotGrid will not show the calculation headers when there is only one PivotCalculation. Now we can able to show the calculation headers even when there is only one PivotCalculation by using **ShowSingleCalculationHeader** property of PivotGrid control.
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowSingleCalculationHeader</td><td>
-Gets or sets whether a calculation header row is visible when there is a single calculation.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **ShowSingleCalculationHeader** - Gets or sets whether a calculation header row is visible when there is a single calculation.
+
 
 ## Defining the property in PivotGrid
 
