@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# **SfDataGrid**
+# SfDataGrid
 
 The SfDataGrid control for WPF is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data. 
 
@@ -31,7 +31,7 @@ Following are the key features of SfDataGrid control
 * Touch support – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
 
 
-## **Choose between different Grid's** 
+## Choose between different Grid's
 
 Syncfusion WPF suite comes up with following different Grid’s namely,
 
@@ -39,15 +39,15 @@ Syncfusion WPF suite comes up with following different Grid’s namely,
 2. [GridTreeControl](http://www.syncfusion.com/products/wpf/grid-tree-control)
 3. [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](http://www.syncfusion.com/products/wpf/sfdatagrid)
 
-**GridControl**
+### GridControl
 
 [GridControl](http://help.syncfusion.com/wpf/grid/overview) is designed based on the cell-oriented architecture that does not make any assumptions about the structure of the data and provides support for Excel-like features. This control can be used when the data is populated in on demand using virtualization or its internal storage. It is not possible to bind the data source directly. 
 
-**GridTreeControl**
+### GridTreeControl
 
 The [GridTreeControl](http://help.syncfusion.com/wpf/gridtree/overview) is designed to display self-referencing lists in a multi column tree structure. The data is loaded on demand so that large lists are quickly displayed. This control can be used when data needs to be displayed in tree structure with columns like in DataGrid. 
 
-**GridDataControl and SfDataGrid**
+### GridDataControl and SfDataGrid
 
 The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](http://www.syncfusion.com/products/wpf/sfdatagrid) controls are used to display collection of data in rows and columns. These controls supports the data binding directly. 
 
