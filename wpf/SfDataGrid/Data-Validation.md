@@ -13,7 +13,7 @@ SfDataGrid allows you to validate the data and display hints in case of validati
  
 ## Built-in validations
 
-Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting[SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) properties.
+Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) properties.
 
  `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
  
