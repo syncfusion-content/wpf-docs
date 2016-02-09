@@ -7,17 +7,17 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# **Performance tips**
+# Performance tips
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
  
-## **Improving loading performance**
+## Improving loading performance
 
-### **Data virtualization for loading**
+### Data virtualization for loading
 
 You can load the large amount of data in less time using built-in [Data Virtualization](http://help.syncfusion.com/wpf/sfdatagrid/data-virtualization).
 
-### **Improving loading and scrolling when using conditional styling**
+### Improving loading and scrolling when using conditional styling
 
 You can style the cell and row conditionally in below three ways,
 
@@ -27,7 +27,7 @@ You can style the cell and row conditionally in below three ways,
 
 Conditional styling using converter provides better performance compare to Data Trigger approach and Style selector approach. You can refer Styles and template section for more information.
 
-## **Improving performance when doing batch updates**
+## Improving performance when doing batch updates
 
 SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
 
@@ -48,7 +48,7 @@ this.dataGrid.View.EndInit();
 {% endhighlight %}
 {% endtabs %}
 
-## **Adding columns efficiently**
+## Adding columns efficiently
 
 SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance. 
 
@@ -66,21 +66,21 @@ this.dataGrid.RefreshColumns();
 {% endtabs %}
 
 
-## **Optimizing summary calculation performance**
+## Optimizing summary calculation performance
 
 SfDataGrid optimizes the summary calculation when updating the underlying collection. It calculates the summaries optimistically by listening the data updates and using old calculated summary values without doing complete recalculation. 
 
 Below sections explains how SfDataGrid handles the updates efficiently for different data operations and what you have to do in application for the same.
 
-**Adding Record**
+### Adding Record
 
 SfDataGrid considers only the `added` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
  
-**Removing a Record**
+### Removing a Record
 
 SfDataGrid considers only the `removed` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
 
-**Property Change in a record**
+### Property Change in a record
 
 SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanging.aspx) and [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface to your Data Model.
 
@@ -121,7 +121,7 @@ public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 {% endtabs %}
 
 
-## **Improving UI Filter loading time**
+## Improving UI Filter loading time
 
 SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
 
