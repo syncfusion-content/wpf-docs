@@ -12,24 +12,10 @@ documentation: ug
 The PivotGrid control provides support for loading data in a unique UI thread. That is, the PivotGrid control can perform long running operations asynchronously on a background thread.It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the Pivot Schema Designer. This can be achieved by setting the **LoadInBackground** property of PivotGrid control.
 
 
-Property Table
+Property
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-LoadInBackground</td><td>
-This property enables the PivotGrid control to perform loading operations asynchronously on a background thread.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **LoadInBackground** - This property enables the PivotGrid control to perform loading operations asynchronously on a background thread.
+
 
 ##Defining the property in PivotGrid
 

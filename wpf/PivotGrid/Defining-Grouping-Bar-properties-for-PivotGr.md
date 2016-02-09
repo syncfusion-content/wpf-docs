@@ -18,65 +18,16 @@ Grouping bar also allows to perform sorting,filtering and summarize the data as 
 
 We cannot able to perform Sorting and Filtering for PivotCalculation items. Similary, we cannot able to perform Sorting for Filter items.
 
-Please refer the below table which illustrates certain properties available in Grouping Bar.
+Please refer the below which illustrates certain properties available in Grouping Bar.
 
-**Properties Table**
+**Properties**
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-Background</td><td>
-Gets or sets the background color of Grouping Bar.</td><td>
-Brush</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-ItemsBackground</td><td>
-Gets or sets the background color of Grouping Bar items.</td><td>
-Brush</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-AllowFiltering</td><td>
-Gets or sets whether the filtering is enabled or not for Grouping Bar.</td><td>
-bool</td><td>
-True(Default),
-False</td><td>
--</td></tr>
-<tr>
-<td>
-AllowSorting</td><td>
-Gets or sets whether the sorting of Grouping Bar is enabled.</td><td>
-bool</td><td>
-True(Default),
-False</td><td>
--</td></tr>
-<tr>
-<td>
-AllowRemove</td><td>
-Gets or sets whether deleting the items are enabled in Grouping Bar</td><td>
-bool</td><td>
-False(Default),
-True</td><td>
--</td></tr>
-<tr>
-<td>
-AllowMultiFunctionalSortFilter</td><td>
-Gets or sets whether excel like filtering on Grouping Bar is enabled.</td><td>
-bool</td><td>
-True,
-False(Default)</td><td>
--</td></tr>
-</table>
+* **Background** - Gets or sets the background color of Grouping Bar.
+* **ItemsBackground** - Gets or sets the background color of Grouping Bar items.
+* **AllowFiltering** - Gets or sets whether the filtering is enabled or not for Grouping Bar.
+* **AllowSorting** - Gets or sets whether the sorting of Grouping Bar is enabled.
+* **AllowRemove** - Gets or sets whether deleting the items are enabled in Grouping Bar
+* **AllowMultiFunctionalSortFilter** - Gets or sets whether excel like filtering on Grouping Bar is enabled.
 
 **Using the properties in PivotGrid:**
 

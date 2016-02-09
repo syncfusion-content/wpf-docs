@@ -24,25 +24,9 @@ PivotGrid summarizes the data for various datatypes by using the **SummaryType**
 * **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
 
 
-Property Table
+Property
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-SummaryType</td><td>
-Gets or sets the summary type to the PivotComputationInfo.</td><td>
-SummaryType</td><td>
-DoubleTotalSum, DoubleAverage, DoubleMaximum, DoubleMinimum, DoubleStandardDeviation, 
-DoubleVariance, Count, DecimalTotalSum, IntTotalSum, Custom, DisplayIfDiscreteValues</td>
-<td>-</td></tr>
-</table>
+* **SummaryType** - Gets or sets the summary type to the PivotComputationInfo.
 
 ## Defining the property in PivotGrid
 
@@ -120,24 +104,10 @@ public partial class MainWindow: Window {
 **DisplayIfDiscreteValuesEqual** is a new summary type that has been added to the **SummaryType** enumerator of the Pivot Grid control. This summary type displays the aggregated value in the Pivot Calculation column if all the values are common, else the default value will be displayed as **'*'**.
 It is also possible to change the default value to any custom string of your choice by using the **PadString** property. 
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-PadString</td><td>
-Gets or sets the PadString for the discrete value in numeric format to display.</td><td>
-string</td><td>
-* (default)</td><td>
--</td></tr>
-</table>
+* **PadString** - Gets or sets the PadString for the discrete value in numeric format to display.
+
 
 ### Defining DisplayIfDiscreteValuesEqual SummaryType with PadString in PivotGrid 
 

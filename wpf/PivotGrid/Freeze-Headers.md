@@ -12,25 +12,10 @@ documentation: ug
 PivotGrid provides built-in support for freezing column and row headers for the better viewing of the value cells. This can be achieved by the **FreezeHeaders** property of PivotGrid control.
 
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-FreezeHeaders</td><td>
-Gets or sets whether the column and row headers needs to freezed or not.</td><td>
-bool</td><td>
-True (Default),
-False</td><td>
--</td></tr>
-</table>
+* **FreezeHeaders** - Gets or sets whether the column and row headers needs to freezed or not.
+
 
 ## Defining the property in PivotGrid
 

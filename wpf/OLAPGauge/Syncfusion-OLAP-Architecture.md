@@ -29,90 +29,18 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 
 ### Properties and Methods
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Value It Accepts</th><th>
-Reference Path</th></tr>
-<tr>
-<td>
-FrameType</td><td>
-Sets the frame type in order to provide effective rim style to the gauge control.</td><td>
-GaugeFrameType</td><td>
-CircularWithInnerLeftGradient, CircularWithDarkOuterFrames, CircularCenterGradient, CircularWithInnerTopGradient, FullCircle and HalfCircle</td><td>
--</td></tr>
-<tr>
-<td>
-ColumnsCount</td><td>
-Specifies the number of gauge controls to be displayed column-wise.</td><td>
-Integer</td><td>
-Integer Value</td><td>
--</td></tr>
-<tr>
-<td>
-RowsCount</td><td>
-Specifies the number of gauge controls to be displayed row-wise.</td><td>
-Integer</td><td>
-Integer Value</td><td>
--</td></tr>
-<tr>
-<td>
-Radius</td><td>
-Specifies the radius of the gauge control. The size of the gauge can be increased or decreased according to the radius value set.  </td><td>
-Integer</td><td>
-Integer Value</td><td>
--</td></tr>
-<tr>
-<td>
-ShowMarkersTooltip</td><td>
-Provides goal information when the mouse pointer is moved over the marker.</td><td>
-Boolean</td><td>
-True or False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowPointersTooltip</td><td>
-Provides value information when the mouse pointer is moved over the pointer.</td><td>
-Boolean</td><td>
-True or False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowGaugeHeaders </td><td>
-Specifies whether or not to display the header text.</td><td>
-Boolean</td><td>
-True or False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowGaugeFactors </td><td>
-Specifies whether or not to display the factor or value text inside the gauge control.</td><td>
-Boolean</td><td>
-True or False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowGaugeLabels</td><td>
-Specifies whether or not to display text inside the gauge control.</td><td>
-Boolean</td><td>
-True or False</td><td>
--</td></tr>
-<tr>
-<td>
-OlapDataManager</td><td>
-Sets the cube mode.It contains the connection proprerty, current report, cube name , cube schema and pivotengine for the rendering of gauge.</td><td>
-OlapDataManager</td><td>
-OlapDataManager</td><td>
--</td></tr>
-</table>
-
+* **FrameType** - Sets the frame type in order to provide effective rim style to the gauge control.
+* **ColumnsCount** - Specifies the number of gauge controls to be displayed column-wise.
+* **RowsCount** - Specifies the number of gauge controls to be displayed row-wise.
+* **Radius** - Specifies the radius of the gauge control. The size of the gauge can be increased or decreased according to the radius value set.
+* **ShowMarkersTooltip** - Provides goal information when the mouse pointer is moved over the marker.
+* **ShowPointersTooltip** - Provides value information when the mouse pointer is moved over the pointer.
+* **ShowGaugeHeaders** - Specifies whether or not to display the header text.
+* **ShowGaugeFactors** - Specifies whether or not to display the factor or value text inside the gauge control.
+* **ShowGaugeLabels** - Specifies whether or not to display text inside the gauge control.
+* **OlapDataManager** - Sets the cube mode.It contains the connection proprerty, current report, cube name , cube schema and pivotengine for the rendering of gauge.
 
 ### Methods
-
-
 
 <table>
 <tr>

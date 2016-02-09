@@ -11,24 +11,10 @@ documentation: ug
 
 PivotGrid control provides the sorting option for the calculation columns in PivotGrid in RowPivotsOnly mode. This can be enabled or disabled using **AllowSort** property of **PivotComputationInfo** in PivotGrid control. 
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-AllowSort</td><td>
-This property is used to enable or disable the sorting option for column pivots.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **AllowSort** - This property is used to enable or disable the sorting option for column pivots.
+
 
 Methods Table
 

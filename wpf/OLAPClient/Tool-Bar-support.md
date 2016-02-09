@@ -351,122 +351,24 @@ It allows you to show/hide the OLAP Client toolbar options in an application.
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-ShowConnectOptionButton</td><td>
-Gets or sets a value indicating whether to show/hide Connection option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowNewReportButton</td><td>
-Gets or sets a value indicating whether to show/hide New Report option. </td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowAddReportButton</td><td>
-Gets or sets a value indicating whether to show/hide Add Report option. </td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowLoadReportButton</td><td>
-Gets or sets a value indicating whether to show/hide Load Report option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowSaveReportButton</td><td>
-Gets or sets a value indicating whether to show/hide Save Report option. </td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowSaveAsReportButton</td><td>
-Gets or sets a value indicating whether to show/hide SaveAs Report option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowRemoveReportButton</td><td>
-Gets or sets a value indicating whether to show/hide Remove Report option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowRenameReportButton</td><td>
-Gets or sets a value indicating whether to show/hide Rename Report option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowToggleButton</td><td>
-Gets or sets a value indicating whether to show/hide Toggle Report option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowExpandersButton</td><td>
-Gets or sets a value indicating whether to show/hide Expanders option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowFilterColumnButton</td><td>
-Gets or sets a value indicating whether to show/hide Filter column option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowFilterRowButton</td><td>
-Gets or sets a value indicating whether to show/hide Filter row option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowSortingColumnButton</td><td>
-Gets or sets a value indicating whether to show/hide Sorting column option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowSortingRowButton</td><td>
-Gets or sets a value indicating whether to show/hide Sorting row option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowReportList</td><td>
-Gets or sets a value indicating whether to show/hide Report List option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-ShowMdxButton</td><td>
-Gets or sets a value indicating whether to show/hide MDX query dialog option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-IsVirtualKpiEnabled</td><td>
-Gets or sets a value indicating whether to show/hide Virtual KPI option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-IsCalculatedMembersEnabled</td><td>
-Gets or sets a value indicating whether to show/hide Calculated Members option.</td><td>
-Dependency</td><td>
-Boolean</td></tr>
-</table>
+* **ShowConnectOptionButton** - Gets or sets a value indicating whether to show/hide Connection option.
+* **ShowNewReportButton** - Gets or sets a value indicating whether to show/hide New Report option.
+* **ShowAddReportButton** - Gets or sets a value indicating whether to show/hide Add Report option. 
+* **ShowLoadReportButton** - Gets or sets a value indicating whether to show/hide Load Report option.
+* **ShowSaveReportButton** - Gets or sets a value indicating whether to show/hide Save Report option. 
+* **ShowSaveAsReportButton** - Gets or sets a value indicating whether to show/hide SaveAs Report option.
+* **ShowRemoveReportButton** - Gets or sets a value indicating whether to show/hide Remove Report option.
+* **ShowRenameReportButton** - Gets or sets a value indicating whether to show/hide Rename Report option.
+* **ShowToggleButton** - Gets or sets a value indicating whether to show/hide Toggle Report option.
+* **ShowExpandersButton** - Gets or sets a value indicating whether to show/hide Expanders option.
+* **ShowFilterColumnButton** - Gets or sets a value indicating whether to show/hide Filter column option.
+* **ShowFilterRowButton** - Gets or sets a value indicating whether to show/hide Filter row option.
+* **ShowSortingColumnButton** - Gets or sets a value indicating whether to show/hide Sorting column option.
+* **ShowSortingRowButton** - Gets or sets a value indicating whether to show/hide Sorting row option.
+* **ShowReportList** - Gets or sets a value indicating whether to show/hide Report List option.
+* **ShowMdxButton** - Gets or sets a value indicating whether to show/hide MDX query dialog option.
+* **IsVirtualKpiEnabled** - Gets or sets a value indicating whether to show/hide Virtual KPI option.
+* **IsCalculatedMembersEnabled** - Gets or sets a value indicating whether to show/hide Calculated Members option.
 
 
 Adding/Removing OLAP Client toolbar options in an application

@@ -76,52 +76,11 @@ Me.OlapGrid1.ShowStyleDialog()
 
 The following properties of Grid cell can be customized, so that the grid appears in a custom style rather than the default one:
 
-
-
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-Background</td><td>
-Gets or sets the Background color of Grid cell.</td><td>
-Brush</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-FontFamily</td><td>
-Gets or sets the Font family of Grid cell.</td><td>
-FontFamily</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-FontSize</td><td>
-Gets or sets the Font size of Grid cell.</td><td>
-int</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-FontWeight</td><td>
-Gets or sets the Font weigh of Grid cell.</td><td>
-FontWeight</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-Foreground</td><td>
-Gets or sets the Foreground color of Grid cell.</td><td>
-Brush</td><td>
--</td><td>
--</td></tr>
-</table>
+* **Background** - Gets or sets the Background color of Grid cell.
+* **FontFamily** - Gets or sets the Font family of Grid cell.
+* **FontSize** - Gets or sets the Font size of Grid cell.
+* **FontWeight** - Gets or sets the Font weigh of Grid cell.
+* **Foreground** - Gets or sets the Foreground color of Grid cell.
 
 
 The Column, Row, Summary and Value cells of Grid can be formatted independently using the following properties:

@@ -12,31 +12,11 @@ documentation: ug
 PivotGrid provides support to update the values in PivotGrid in real time and it can be achieved by using **EnableUpdating** property.While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
 
 
-Properties Table
+Properties 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-EnableUpdating</td><td>
-Gets/sets the Boolean value to enable updating</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-ThrottleUpdateRate</td><td>
-Gets or sets a millisecond value for time between UI refreshes. Zero indicates immediate refreshes of the UI without delays. Throttling the refresh rate can minimize CPU usage. Depending upon your updating rate, values of 300 to 500 milliseconds may give lower CPU usage.</td><td>
-int</td><td>
-0(default)</td><td>
--</td></tr>
-</table>
+* **EnableUpdating** - Gets/sets the Boolean value to enable updating
+* **ThrottleUpdateRate** - Gets or sets a millisecond value for time between UI refreshes. Zero indicates immediate refreshes of the UI without delays. Throttling the refresh rate can minimize CPU usage. Depending upon your updating rate, values of 300 to 500 milliseconds may give lower CPU usage.
+
 
 ## Defining the properties in PivotGrid
 

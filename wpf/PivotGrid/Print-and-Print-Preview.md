@@ -12,31 +12,11 @@ documentation: ug
 Essential PivotGrid for WPF provides in-built support for printing and print preview. This feature provides a print dialog that allows you to preview the output and make any modifications if required before printing.
 
 
-Properties Table
+Properties 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-PrintHeader</td><td>
-Add/Remove the Header in the Print Preview dialog</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-PrintFooter</td><td>
-Add/Remove the Footer in the Print Preview dialog</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **PrintHeader** - Add/Remove the Header in the Print Preview dialog
+* **PrintFooter** - Add/Remove the Footer in the Print Preview dialog
+
 
 Methods Table
 

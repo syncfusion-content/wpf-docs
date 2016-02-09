@@ -11,25 +11,9 @@ documentation: ug
 
 PivotGrid provides support for resizing the grid to fit its content while group expanding and collapsing the groups. The grid will be resized after refreshing the page. 
 
-Property Table
+Property
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-ResizePivotGridToFit</td><td>
-Resizes the PivotGrid according to the content of the grid.</td><td>
-bool</td><td>
-True,
-False(Default)</td><td>
--</td></tr>
-</table>
+* **ResizePivotGridToFit** - Resizes the PivotGrid according to the content of the grid.
 
 ## Defining the property in PivotGrid
 

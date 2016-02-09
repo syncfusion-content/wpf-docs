@@ -14,20 +14,8 @@ the flow direction option in the control.
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-FlowDirection</td><td>
-Gets or sets the flow direction for the OLAP Client control.</td><td>
-Normal</td><td>
-Enum</td></tr>
-</table>
+* **FlowDirection** - Gets or sets the flow direction for the OLAP Client control.
+
 
 ## Adding RTL Support for OLAP Client in an Application 
 

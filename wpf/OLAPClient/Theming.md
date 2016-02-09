@@ -26,20 +26,8 @@ Theming is the process of applying particular settings to the visual elements of
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-VisualStyle </td><td>
-Gets or Sets the VisualStyle of OlapClient control.</td><td>
-Dependency Property</td><td>
-OlapClientVisualStyle    </td></tr>
-</table>
+* **VisualStyle** - Gets or Sets the VisualStyle of OlapClient control.
+
 
 
 ### Sample Link

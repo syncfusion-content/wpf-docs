@@ -14,31 +14,10 @@ PivotGrid supports to define the visibility of the Grouping Bar to some specific
   * Row header area
   * Column header area along with row header area.
 
-Properties Table
+Properties 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-EnableRowHeader</td><td>
-Gets or sets a value indicating whether to enable row header alone in Grouping Bar.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-EnableColumnHeader</td><td>
-Gets or sets a value indicating whether enable column header along with row header alone in Groupin Bar.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **EnableRowHeader** - Gets or sets a value indicating whether to enable row header alone in Grouping Bar.
+* **EnableColumnHeader** - Gets or sets a value indicating whether enable column header along with row header alone in Groupin Bar.
 
 ##Defining the Properties in PivotGrid
 

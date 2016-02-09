@@ -11,24 +11,10 @@ documentation: ug
 
 PivotGrid provides support to improve the scrolling performance of the PivotGrid by updating the data in the grid only when the user releases the thumb on scrolling. It can be achieved by **EnableDefferedScrolling** property of PivotGrid control.
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-EnableDefferedScrolling</td><td>
-Gets or sets a value indicating whether to defer the scrolling until user releases the thumb on scrolling.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **EnableDefferedScrolling** - Gets or sets a value indicating whether to defer the scrolling until user releases the thumb on scrolling.
+
 
 ##Defining the property in PivotGrid 
 

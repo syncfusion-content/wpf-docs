@@ -13,22 +13,7 @@ This feature enables you to display the “All” level type member across the r
 
 ###  Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-ShowLevelTypeAll </td><td>
-Specifies whether members with level type as All has to be displayed.  </td><td>
-Normal </td><td>
-Boolean </td><td>
-NA </td></tr>
-</table>
+* **ShowLevelTypeAll** - Specifies whether members with level type as All has to be displayed.
 
 
 ## Displaying "All" Level Type Member
