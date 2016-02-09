@@ -11,9 +11,6 @@ documentation: ug
 
 Serialization can be implemented for applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of PivotGridControl to an XML file and it can be loaded at any time.
 
-**Use Case Scenarios**
-
-User could save the current state of PivotGrid in a XML file format and restore the same at any time. 
 
 The following properties of PivotGrid can be serialized.
 

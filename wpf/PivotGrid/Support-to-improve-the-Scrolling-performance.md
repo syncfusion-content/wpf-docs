@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid provides support to improve the scrolling performance of the PivotGrid by updating the data in the grid only when the user releases the thumb on scrolling. It can be achieved by **EnableDefferedScrolling** property of PivotGrid control.
 
-**Use Case Scenario**
-
-User could have the better scrolling performance when loading large set of records.
-
 Property Table
 
 <table>

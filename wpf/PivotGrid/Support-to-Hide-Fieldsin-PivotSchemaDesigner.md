@@ -11,9 +11,6 @@ documentation: ug
 
 It is possible to customize the PivotTable field list in PivotSchemaDesigner and it allows to hide the unnecessary fields from the PivotTable field list by using the **ShowDisplayFieldsOnly** property.
 
-**Use Case Scenarios**
-
-This feature enables the user to load required set of items in PivotSchemaDesigner.
 
 Property Table
 

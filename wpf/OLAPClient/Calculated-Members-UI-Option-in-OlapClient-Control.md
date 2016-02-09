@@ -18,16 +18,7 @@ control.
 
 
 
-### Use Case Scenarios
-
-This feature can be used to add one or more measures that will be derived from the existing measure collection.
-
-For example, users can define the discount on a measure called Order Quantity (and its unique name is [Measures].[Order Quantity]), by 
-expressing the calculated measure “[Measures].[Order Quantity] + (0.1 * [Measures].[Order Quantity])”.
-
 ### Properties
-
-
 
 <table>
 <tr>

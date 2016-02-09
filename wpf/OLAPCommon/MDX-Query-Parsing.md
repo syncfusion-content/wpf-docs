@@ -15,16 +15,7 @@ documentation: ug
 This feature provides support for the drill up and drill down operations for BI components such as BI Grid, BI Chart, and BI Client in order to view the OLAP data through different levels using an MDX query instead of the OlapReport class. Previously, the drill up and drill down operations were supported by the OlapReport class only.
 
 
-
-### Use Case Scenarios
-
-This feature is useful when the user wants to perform drill up or drill down operations with the OLAP data using an MDX query instead of the OlapReport class.
-
-
-
 ### Properties
-
-
 
 <table>
 <tr>

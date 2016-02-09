@@ -13,8 +13,6 @@ This feature enables you to display the “All” level type member across the r
 
 ###  Properties
 
-
-
 <table>
 <tr>
 <th>

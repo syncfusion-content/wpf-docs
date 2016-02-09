@@ -13,7 +13,6 @@ Key performance indicators can be virtually defined during run time. This featur
 
 ### Properties
 
-
 <table>
 <tr>
 <th>

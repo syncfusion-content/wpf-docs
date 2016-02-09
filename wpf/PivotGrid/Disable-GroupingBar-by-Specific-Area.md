@@ -14,10 +14,6 @@ PivotGrid supports to define the visibility of the Grouping Bar to some specific
   * Row header area
   * Column header area along with row header area.
 
-**Use Case Scenarios**
-
-User could define the visibility of grouping bar as per their requirement.
-
 Properties Table
 
 <table>

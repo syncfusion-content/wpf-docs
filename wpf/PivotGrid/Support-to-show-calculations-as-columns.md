@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid provides support to show the calculation values in columns or in rows and it can be achieved either by using the property **ShowCalculationsAsColumns** of PivotGrid control or by uncheck/check the **ShowCalculationsAsColumns** check box of PivotSchemaDesigner.
 
-**Use Case Scenarios**
-
-It enables the user display the values in columns or rows as per their requirement.
-
 Property Table
 <table>
 <tr>

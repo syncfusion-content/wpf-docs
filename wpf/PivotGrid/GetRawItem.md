@@ -11,10 +11,6 @@ documentation: ug
 
 GetRawItemFor method is used to obtain the list of raw items for value cell, total cell or grand total cell in PivotGrid. This method has been implemented in the PivotEngine which can be used independently from the PivotGrid. 
 
-**Use Case Scenario**
-
-User can utilize this method when they want to know the raw item from which the Pivot Cell’s value is obtained and also it is possible get the raw items of the summary cells.
-
 Method Table
 
 <table>

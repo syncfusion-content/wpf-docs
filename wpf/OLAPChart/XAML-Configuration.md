@@ -11,9 +11,6 @@ documentation: ug
 
 XAML configuration is an important feature of OlapChart, as it helps the user to configure the control entirely using XAML by eliminating the need code in code behind. 
 
-### Use Case Scenarios
-
-If a user wants to perform an entire configuration in XAML, then this feature will help the user to set the Data source, Report and UI properties in a simple and elegant manner by using XAML.
 
 ### Property
 

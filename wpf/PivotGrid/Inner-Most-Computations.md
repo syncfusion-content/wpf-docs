@@ -11,9 +11,6 @@ documentation: ug
 
 Pivotgrid provides the support for the columns which are existing in engine to display only the calculation columns other than total and grand total columns.
 
-**Use Case Scenario**
-
-User could view only the calculation columns irrespective of viewing all the columns as per their requirement.
 
 Property Table 
 
@@ -33,8 +30,6 @@ SummaryDisplayLevel</td><td>
 All (Default), InnerMostOnly</td><td>
 -</td></tr>
 </table>
-
-
 
 ## Defining the property in PivotGrid 
 

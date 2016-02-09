@@ -11,9 +11,6 @@ documentation: ug
 
 Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control. 
 
-### Use Case Scenarios
-
-Localization helps the user to create an application that targets several cultures.
 
 ![](Localization-Support_images/Localization-Support_img1.png)
 

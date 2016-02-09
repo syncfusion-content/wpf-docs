@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid provides support to add expression fields and handles other features similar to normal fields. It is possible to add the new expression field info by using the AllowedFields class in PivotGrid control and we need to make use of the below mentioned property to load the allowed fields in PivotGrid.
 
-**Use Case Scenario**
-
-User could create a new expression fields and can associate with calculation items.
-
 Property Table
 
 <table>

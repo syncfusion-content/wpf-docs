@@ -11,9 +11,6 @@ documentation: ug
 
 PivotGrid provides support to update the values in PivotGrid in real time and it can be achieved by using **EnableUpdating** property.While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
 
-**Use Case Scenario**
-
-User could push the live data into the PivotGrid based on their requirement and can refreshes the grid whenever they want.
 
 Properties Table
 

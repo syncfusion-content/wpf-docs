@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid enables us to set the Custom Summaries for the PivotItem values at both load time and runtime (using PivotComputationInfo dialog).
 
-**Use Case Scenarios**
-
-User could create a different summary base to the pivot item values as per their requirement in addition to the default ones.
-
 Property Table
 
 <table>

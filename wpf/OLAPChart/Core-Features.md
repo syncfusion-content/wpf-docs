@@ -3469,10 +3469,6 @@ Theming is the process of applying particular settings to the visual elements of
 * Office 2003
 * Default
 
-### Use Case Scenarios
-
-This feature enables users to develop a single application and apply different looks as necessary.
-
  Properties
 
 _Property Table_
@@ -3817,10 +3813,6 @@ A sample, which demonstrates the Chart Print feature, is available in the below 
 ## RTL Support
 
 Right-to-left support has been provided for the OLAP Chart control for WPF. Users can now display content starting from right to left by setting the flow direction option in the control. 
-
-### Use Case Scenario
-
-Some cultures have a written language that reads from right to left. Controls deployed for such cultures should be rendered from right to left. In these cases, we can utilize RTL support of the OLAP Chart component. 
 
 ## Properties
 

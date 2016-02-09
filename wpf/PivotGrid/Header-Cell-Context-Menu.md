@@ -15,10 +15,6 @@ Expand/collapse operations can be done at both the UI and programmatic level.
 
 Header cell context menu will be shown while right-clicking on the expander cell. Expand/collapse operations can be handled through this context menu at the row level and column level individually.
 
-**Use Case Scenarios**
-
-Enabling UI-level expand/collapse operations will allows us to expand and collapse the particular block, entire field,  entire row or column individually. 
-
 
 Property Table
 

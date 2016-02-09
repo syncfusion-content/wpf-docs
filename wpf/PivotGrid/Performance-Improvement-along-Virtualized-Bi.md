@@ -11,9 +11,6 @@ documentation: ug
 
 It provides high loading performance for a large set of records. This feature also helps to load the data in PivotGrid on demand by using **Index Engine**.
 
-**Use Case Scenarios**
-
-Users can view the output in a few seconds for a large set of records that has been bound to the PivotGrid.
 
 Properties Table
 

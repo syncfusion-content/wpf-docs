@@ -11,9 +11,6 @@ documentation: ug
 
 PivotGrid control allows to prevent the drag and drop of certain PivotItems that has been dragged either in PivotSchemaDesigner or in the Grouping Bar.
 
-**Use Case Scenario**
-
-User could restrict the grouping for any specific field in the PivotGrid.
 
 Properties Table
 

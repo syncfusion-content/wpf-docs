@@ -11,13 +11,7 @@ documentation: ug
 
 XAML configuration is one of the important features of OlapGauge, as it helps the user to configure the control entirely using XAML by eliminating the required code in code behind. 
 
-## Use Case Scenarios
-
-If the user wants to perform the entire configuration in XAML , then this feature will help the user to set the Data source, Report and UI properties simply and elegantly using XAML.
-
 ## Properties 
-
-
 
 <table>
 <tr>

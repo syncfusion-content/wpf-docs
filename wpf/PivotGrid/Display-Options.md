@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid control offers various display options such as **Calculations, Summary, Grand Totals, None, All** for the PivotComputaionInfo to display calculation values in certain areas of PivotGrid by using the **DisplayOption** enumerator.
 
-**Use case Scenario**
-
-User could view the calculation items either on summary, calculations, grand totals or combinations of these three columns depending on their requirement.
-
 Property Table
 																	 										 
 <table>

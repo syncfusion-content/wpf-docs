@@ -348,13 +348,8 @@ Export the Grid to PDF</td></tr>
 
 It allows you to show/hide the OLAP Client toolbar options in an application.
 
-### Use Case Scenario 
-
-You can customize the visibility of the toolbar options based on their requirement. 
 
 ### Properties
-
-
 
 <table>
 <tr>

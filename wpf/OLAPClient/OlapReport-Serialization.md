@@ -26,19 +26,8 @@ The following are the appearance settings that a user can save and load during t
 * Header and Value cell settings
 * Appearance
 
-## Use Case Scenarios
-
-The user can maintain the Chart and/or the Grid appearance settings with its OLAP data through an OlapReport.
-
-The following image shows a serialized Chart and Grid appearance settings in an XML format: 
-
-![C:/Users/diana/Desktop/AdditionalInfoSerialization.png](OlapReport-Serialization_images/OlapReport-Serialization_img1.png)
-
-
 
 ### Properties
-
-
 
 <table>
 <tr>

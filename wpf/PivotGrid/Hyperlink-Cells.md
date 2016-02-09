@@ -19,10 +19,6 @@ PivotGrid allows Hyperlinking of cells to retrieve a detailed information about 
 * Summary Cell
 * Value Cell
 
-**Use Case Scenarios**
-
-User could perform some custom operations on a Cell click and able to get the complete information of the cells like its Type, Range etc.
-
 Property Table
 
 <table>

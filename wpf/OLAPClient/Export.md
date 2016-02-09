@@ -130,9 +130,6 @@ Export the Grid to PDF</td></tr>
 
 OLAP Client for WPF provides support to export OLAP Grid to CSV file format. 
 
-### Use Case Scenarios 
-
-You can export the contents of the OLAP Grid in OLAP Client to the CSV file format for future references and analysis purposes.
 
 ### Methods
 

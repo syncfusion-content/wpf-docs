@@ -16,9 +16,6 @@ The sub-total hiding feature is used to show or hide sub-totals in PivotGrid.It 
 * Hiding only the Column Sub-Totals
 * Hiding the Sub-Totals for the specific pivot item
 
-**Use Case Scenarios**
-
-User could make a better view of the data when there are more computational fields with sub totals for each group in PivotGrid.
 
 Properties Table
                                                         

@@ -126,14 +126,6 @@ XML for Analysis (XMLA) is a standard that allows the client applications to tra
 
 
 
-### Use Case Scenarios
-
-
-
-XMLA provides the most efficient way to access an OLAP database over the Internet.
-
-
-
 ## Connecting to Mondrian Server 
 
 
@@ -445,15 +437,8 @@ SetCurrentReport</td></tr>
 
 The UseWhereClauseForSlicing property facilitates the user to decide whether the MDX query parser engine should consider ‘Where’ or ‘Select’ clause for slicing data.
 
-### Use Case Scenarios
-
-While slicing dimensions with a specific range of measures using ‘Select’ clause in MDX query, an exception is thrown. This can be resolved by using the ‘Where’ clause for slicing.
-
-Example: Slicing the Date dimension from months of 2002 to months of 2003 will throw an exception when ‘Select’ clause is used. 
 
 ### Properties
-
-
 
 <table>
 <tr>

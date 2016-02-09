@@ -28,9 +28,6 @@ documentation: ug
 * **RankSmallestToLargest** - Displays the rank of selected values in a specific field, listing the smallest item in the field as 1, and each larger value will have a higher rank value.
 * **RankLargestToSmallest** - Displays the rank of selected values in a specific field, listing the largest item in the field as 1, and each smaller value will have a higher rank value.
 
-**Use Case Scenario**
-
-User could display the calculation values in different ways as per their requirement.
 
 Property Table
 

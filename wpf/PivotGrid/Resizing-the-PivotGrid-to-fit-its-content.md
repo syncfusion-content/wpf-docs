@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid provides support for resizing the grid to fit its content while group expanding and collapsing the groups. The grid will be resized after refreshing the page. 
 
-**Use Case Scenarios**
-
-It provides more space to the user to display the controls sharing its parent control during group collapse operation. 
-
 Property Table
 
 <table>

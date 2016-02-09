@@ -145,9 +145,6 @@ A sample demo is available at the following location:
 
 OLAP Grid for WPF provides support to export itself to CSV file format. 
 
-### Use Case Scenarios 
-
-You can export the contents of the OLAP Grid to the CSV file format for future references and analysis purposes.
 
 ###  Methods
 

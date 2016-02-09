@@ -24,10 +24,6 @@ The Grouping bar context menu consists of the following menu items:
 		 
 * **Calculated field** - Used to add a new calculation field at run time.
 
-**Use Case Scenario**
-
-It is useful for applications related to Stock Market where the data will change from time to time and users can refresh the grid as per their requirement.
-
 Property Table
 
 <table>

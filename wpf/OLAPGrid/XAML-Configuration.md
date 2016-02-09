@@ -12,13 +12,6 @@ documentation: ug
 XAML configuration is one of the important features of OlapGrid. It helps you to configure the control entirely using XAML by eliminating the required code in code behind. 
 
 
-
-### Use Case Scenarios
-
-This feature will help you to set the Data source, Report and UI properties in a simple and elegant manner, when you want to perform the entire configuration in XAML.
-
-
-
 ### Property Table
 
 <table>

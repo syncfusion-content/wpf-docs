@@ -11,9 +11,6 @@ documentation: ug
 
 **Pivot Value Chooser** is used to list all the PivotFields in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a PivotCalculation and add it to the PivotGrid, drag and drop the grid fields, and rearrange the calculation column in the PivotGrid control at run time.
 
-**Use Case Scenario**
-
-It enables user to show or hide particular PivotCalculation in the PivotGrid at run time.
 
 Properties Table
 

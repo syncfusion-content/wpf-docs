@@ -16,10 +16,6 @@ PivotGrid provides an option to export the grid to various formats. It provides 
    * Pdf format
    * CSV format
    
-**Use Case Scenario**
-
-User could export the contents of the PivotGrid to any of the mentioned formats for future archival, references and analysis purposes.
-
 Methods Table
 
 <table>

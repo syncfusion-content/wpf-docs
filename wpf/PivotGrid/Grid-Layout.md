@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid provides support for two different types Layout options with respect to Summaries. Thats is , whether to display the summary data of each PivotItem at the top or at the bottom of value cells.
 
-**Use Case Scenario**
-
-User could view the summary values at start or end of the value cells as per their requirement.
-
 Property Table
 
 <table>

@@ -11,10 +11,6 @@ documentation: ug
 
 PivotGrid supports excel-like **Cell Selection** where you can select grid value cells as like in MS-Excel. It is possible to select the entire row or column and group of cells with or without header cells as per your requirement.
 
-**Use Case Scenarios**
-
-User could select cells that can be copied to clipboard or notepad and able to perform custom operations on cell selection and also can bind any control based on the selected cell values.
-
 Property Table
 
 <table>

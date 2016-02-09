@@ -24,10 +24,6 @@ PivotGrid summarizes the data for various datatypes by using the **SummaryType**
 * **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
 
 
-**Use Case Scenario**
-
-User could display the calculation values by various summary options as per their requirement.
-
 Property Table
 
 <table>

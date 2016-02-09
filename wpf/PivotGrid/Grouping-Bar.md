@@ -16,10 +16,6 @@ PivotGrid Grouping Bar allows you to slice and dice the fields between column, r
 * ColumnHeader Area - which holds the PivotColumn items of PivotGrid control.
 * RowHeader Area - which holds the PivotRow items of PivotGrid control.
 
-**Use Case Scenario**
-
-Grouping bar also allows to perform sorting,filtering and summarize the data as they want at run time.
-
 Property Table
 
 <table>

@@ -11,9 +11,6 @@ documentation: ug
 
 Essential PivotGrid for WPF provides in-built support for printing and print preview. This feature provides a print dialog that allows you to preview the output and make any modifications if required before printing.
 
-**Use Case Scenarios**
-
-Printing option allows you to have a hard copy of the PivotGrid.
 
 Properties Table
 
