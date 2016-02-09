@@ -7,14 +7,14 @@ control: SfDataGrid
 documentation: ug
 ---
 
-## **Programmatic filtering**
+## Programmatic filtering
   
 SfDataGrid allows you to filter the data programmatically in below ways,
 
 * Through View Predicate
 * Through Column Filter
 
-### **View Filtering**
+### View Filtering
 
 View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling[SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
 
@@ -46,7 +46,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when itemssource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
 
-### **Column Filtering**
+### Column Filtering
 
 Column filtering is achieved by using [GridColumn.FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPredicates.html) property and adding [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) to it.
  
@@ -59,14 +59,14 @@ dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterT
 {% endhighlight %}
 {% endtabs %}
 
-**Filter Behavior**
+#### Filter Behavior
 
 * StringTyped - Records are filtered without considering the type and it takes [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
 * StronglyTyped - Records are filtered by considering the FilterValue underlying type.
 
 N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
 
-### **Clear Filtering**
+### Clear Filtering
 
 SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
 
@@ -83,7 +83,7 @@ this.dataGrid.ClearFilter(this.dataGrid.Columns[0]);
 {% endtabs %}
 
 
-## **UI Filtering**
+## UI Filtering
 
 SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to `true` , where you can open filter UI by clicking the Filter icon in column header and filter the records.  
 
@@ -117,7 +117,7 @@ N>
 2. UI filtering is not supported when using on-demand paging by setting [UseOnDemandPaging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPaging.html) to `true`.
 
 
-Built-in UI Views
+### Built-in UI Views
 
 SfDataGrid filter UI comprises of two different UIs. 
 
@@ -127,15 +127,15 @@ SfDataGrid filter UI comprises of two different UIs.
 
 By default, both Checkbox Filter and Advanced Filter are loaded while opening the filter pop-up. You can switch between AdvancedFilter and CheckboxFillter by using AdvancedFilter button in the UI View.
 
-**SfDataGrid with Checkbox Filter View:** 
+SfDataGrid with Checkbox Filter View:
       
 ![](Filtering_images/Filtering_img1.png)
         
-**SfDataGrid with Advanced Filter View:**
+SfDataGrid with Advanced Filter View:
     
 ![](Filtering_images/Filtering_img2.png)
 
-## **Choose between built-in UI Views**
+## Choose between built-in UI Views
 
 SfDataGrid lets you to customize the UI Views displayed for particular column or grid using [FilterMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterMode.html) property in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html). 
 
@@ -145,7 +145,7 @@ Below are the options,
 2. AdvancedFilter – Displays only Advanced filter View.
 3. Both – Displays both filters Views.
 
-### **Changing filter UI View for Grid**
+### Changing filter UI View for Grid
 
 Filter UI view can be changed for all the columns in grid by changing [FilterMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterMode.html) in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) by writing style and assign it to [SfDataGrid.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterPopupStyle.html).
 
@@ -164,7 +164,7 @@ Filter UI view can be changed for all the columns in grid by changing [FilterMod
 {% endhighlight %}
 {% endtabs %}
 
-### **Changing filter UI View for columns**
+### Changing filter UI View for columns
 
 Filter UI view can be changed for the particular column by changing [FilterMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterMode.html) in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) by writing style and assign it to [GridColumn.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupStyle.html).
 
@@ -179,7 +179,7 @@ Filter UI view can be changed for the particular column by changing [FilterMode]
 {% endhighlight %}
 {% endtabs %}
 
-### **Changing filter UI View programmatically**
+### Changing filter UI View programmatically
 
 You can change [FilterMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterMode.html) programmatically by using [FilterItemsPopulating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulating_EV.html) event.
 
@@ -195,7 +195,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 {% endhighlight %}
 {% endtabs %}
 
-### **Setting Default Filter popup style for particular column**
+### Setting Default Filter popup style for particular column
 
 You can skip the [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) styling for particular column from [SfDataGrid.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterPopupStyle.html) by setting [GridColumn.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupStyle.html) to `null`. 
 
@@ -223,7 +223,7 @@ this.dataGrid.Columns["OrderID"].FilterPopupStyle = null;
 
 Here, advanced filter will be loaded for all the columns in grid except OrderID column since [GridColumn.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupStyle.html) is set as `null` for OrderID column. So both checkbox filter and advanced filter (default style) will be loaded for OrderID column.
 
-## **Advanced Filter UI**
+## Advanced Filter UI
 
 Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on Advanced filter type by automatically detecting the underlying date type. 
 
@@ -316,7 +316,7 @@ N>
 1. `Null` and `Not Null` options are available only when [AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) is set to `True`.
 2. If the column is [GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html) or [GridMaskColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMaskColumn.html), then `Text Filters` will be loaded.
 
-### **Changing Advanced Filter type**
+### Changing Advanced Filter type
 
 [FilterBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterBehavior.html) determines the Advanced filter type loaded in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html). By using [FilterBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterBehavior.html), you can change Advanced filter type.
 
@@ -352,13 +352,13 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 {% endhighlight %}
 {% endtabs %}
 
-### **Case Sensitive**
+### Case Sensitive
 
 By default, casing is not considered while filtering. Because, filter predicates will be created with [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) as `false`. If you want to filter the records with `IsCaseSensitive` as `true`, you need to click case sensitive button present in Advanced Filter.
 
 N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, CaseSensitive button will not be available in Filter popup as `DataTable` does not support CaseSensitive filtering.
 
-## **Performance tips**
+## Performance tips
 
 [GridFilterControl’s](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) loading performance can be increased by setting [FilterMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterMode.html) as `AdvancedFilter` and [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) as `False`. Because a textbox is loaded instead of AdvancedFilter ComboBox that allows you to manually enter text for filtering.
 
@@ -384,7 +384,7 @@ N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data
 
 By default, [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) is true. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
-## **Filtering null values**
+## Filtering null values
 
 To filter the null values, you need to set [AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) property as `True`. So `null` values will be included in filter items list.  If you want to exclude the null values from filter items list, you need to set [AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) as `False`.
 
@@ -397,15 +397,15 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-**Checkbox Filter with AllowBlankFilters as True**
+Checkbox Filter with AllowBlankFilters as True
 
 ![](Filtering_images/Filtering_img7.png)
 
-**Advanced Filter with AllowBlankFilters as True**
+Advanced Filter with AllowBlankFilters as True
 
 ![](Filtering_images/Filtering_img8.png)
 
-## **Instant Filtering**
+## Instant Filtering
 
 By default, filters are applied to the columns when OK button is clicked in UI filtering. If you want to update the filters immediately whenever update in filter popup, you need to set [ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) as True.
 
@@ -420,17 +420,17 @@ dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 
-**Checkbox Filter with ImmediateUpdateColumnFilter is True**
+Checkbox Filter with ImmediateUpdateColumnFilter is True
 
 ![](Filtering_images/Filtering_img9.png)
 
-**Advanced Filter with ImmediateUpdateColumnFilter is True**
+Advanced Filter with ImmediateUpdateColumnFilter is True
 
 ![](Filtering_images/Filtering_img10.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) is true.
 
-## **Filtering based on DisplayText**
+## Filtering based on DisplayText
 
 In UI filtering, records are filtered based on actual value by default. If you want to filter the records based on DisplayText, you need to set [ColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnFilter.html) property as DisplayText. 
 
@@ -459,11 +459,11 @@ After filtering, both records having the same OrderDate display value will be di
 
 ![](Filtering_images/Filtering_img14.png)
 
-## **Events** 
+## Events
 
 SfDataGrid provides the following events for filtering.
 
-### **FilterChanging event**
+### FilterChanging event
 
 [FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) event is raised while applying filters to a particular column. You can use this event to change the [FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterEventArgs~FilterPredicates.html), [FilterType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterType.html) and [FilterBehaviour](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterBehavior.html).
 
@@ -477,7 +477,7 @@ void dataGrid_FilterChanging(object sender, GridFilterEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### **FilterChanged event**
+### FilterChanged event
 
 [FilterChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanged_EV.html) event is raised after filter is applied. You can use this event to get filtered records.
 
@@ -491,7 +491,7 @@ void dataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### **FilterItemsPopulating event**
+### FilterItemsPopulating event
 
 [FilterItemsPopulating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulating_EV.html) event is raised while populating the filter list items in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html). You can change GridFilterControl properties by using this event.
 
@@ -506,7 +506,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 {% endhighlight %}
 {% endtabs %}
 
-### **FilterItemsPopulated event**
+### FilterItemsPopulated event
 
 [FilterItemsPopulated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulated_EV.html) event is raised after filter list items are populated. You can change GridFilterControl [ItemSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterItemsPopulatingEventArgs~ItemsSource.html) by using this event.
 
@@ -520,7 +520,7 @@ void dataGrid_FilterItemsPopulated(object sender, GridFilterItemsPopulatedEventA
 {% endhighlight %}
 {% endtabs %}
 
-## **Getting the filtered records**
+## Getting the filtered records
 
 You can get the filtered records from [View](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) in [FilterChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanged_EV.html) event. When filter is applied, the filtered records are available in [View.Records](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Records.html). 
 
@@ -539,9 +539,9 @@ void dataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## **Functionality Customization**
+## Functionality Customization
 
-### **Loading the Text Filters for the column having Number or Date value as underlying type**
+### Loading the Text Filters for the column having Number or Date value as underlying type
 
 If you want to use the Text Filters for the column that has number or date value as underlying type, you need to set [FilterBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterBehavior.html) property of the [GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html) as `StringTyped`. This loads the Text Filters instead of Number or Date Filters.
 
@@ -567,7 +567,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 {% endhighlight %}
 {% endtabs %}
 
-### **Changing AdvancedFilter type while loading dynamic itemssource**
+### Changing AdvancedFilter type while loading dynamic itemssource
   
 By default, TextFilters will be loaded for the columns if itemssource is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx).  If you want to load Number Filters or Date Filters based on column values, you need to use [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html) property.
 
@@ -579,7 +579,7 @@ this.dataGrid.Columns["OrderID"].ColumnMemberType = typeof(double?);
 
 You can achieve this by using [FilterItemsPopulating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulating_EV.html) event also. But in this case, nullable values will not be filtered in advanced filtering. So you need to set [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html).
 
-### **Customizing Excel like Filter ItemsSource**
+### Customizing Excel like Filter ItemsSource
 
 When you want to restrict some data from filtering, you need to customize the [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) `ItemsSource` by using [FilterItemsPopulated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulated_EV.html) event. Here,[FilterElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterElement.html) which has ActualValue as 1005 is removed from itemsSource.
 
@@ -603,7 +603,7 @@ void dataGrid_FilterItemsPopulated(object sender, GridFilterItemsPopulatedEventA
 
 Likewise,[FilterElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterElement.html)  also can be changed.
 
-### **Customizing Filter predicates**
+### Customizing Filter predicates
 
 If you want to customize the filter predicates, you need to use [FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) event. Here, [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) is changed according to some conditions.
 
@@ -621,13 +621,13 @@ void dataGrid_FilterChanging(object sender, GridFilterEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## **Appearance customization**
+## Appearance customization
 
 [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) is derived from `ContentControl` and has its own structure. This structure is customized using the properties [SfDataGrid.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterPopupStyle.html) and [SfDataGrid.FilterPopupTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterPopupTemplate.html) for all the columns in grid. 
 
 When you need to change the appearance of the GridFilterControl for a particular column, [GridColumn.FilterPopupStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupStyle.html)  and [GridColumn.FilterPopupTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPopupTemplate.html) properties are used.
  
-### **Collapsing Sort Options in GridFilterControl**
+### Collapsing Sort Options in GridFilterControl
 
 Sort Options can be collapsed by setting [SortOptionVisibility](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~SortOptionVisibility.html) property in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html).
 
@@ -647,7 +647,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](http://help.sync
 
 ![](Filtering_images/Filtering_img15.png)
 
-### **Customizing Sort Options text**
+### Customizing Sort Options text
 
 Sort Options text can be customized by using [AscendingSortString](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~AscendingSortString.html) and [DescendingSortString](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~DescendingSortString.html) properties in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html).
 
@@ -662,7 +662,7 @@ Sort Options text can be customized by using [AscendingSortString](http://help.s
 {% endhighlight %}
 {% endtabs %}
 
-### **Changing filter icon style after applying filters**
+### Changing filter icon style after applying filters
 
 You can change the filter icon style by editing the [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html) style. In `FilterToggleButton` style, you can see Filtered and UnFiltered VisualStates. In that, you can change `PathFillColor` for FilterToggleButton.
 

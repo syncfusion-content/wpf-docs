@@ -7,11 +7,11 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# **Data Validation**
+# Data Validation
 
 SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
  
-## **Built-in validations**
+## Built-in validations
 
 Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting[SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) properties.
 
@@ -21,11 +21,11 @@ Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annot
 * `GridValidation.InView` - displays error icons and tips alone.
 * `GridValidation.None` - disables build-in validation support.
 
-## **Built-in validation using IDataErrorInfo / INotifyDataErrorInfo**
+## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
 SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)/[INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx).
  
-### **Using IDataErrorInfo**
+### Using IDataErrorInfo
  
 You can validate the data by inheriting the [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) interface in model class.
 
@@ -83,7 +83,7 @@ this.dataGrid.GridValidationMode = GridValidationMode.InView;
 
 ![](Data-Validation_images/Data-Validation_img1.png)
 
-### **INotifyDataErrorInfo**
+### INotifyDataErrorInfo
 
 You can validate the data by inheriting the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) interface in model class.
 
@@ -138,11 +138,11 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 
 ![](Data-Validation_images/Data-Validation_img2.png)
 
-## **Built-in validation using Data Annotation**
+## Built-in validation using Data Annotation
 
 You can validate the data using **data annotation attributes** by setting [SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) property to `InEdit` or `InView`.
 
-**Using different annotations**
+### Using different annotations
 
 The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
 
@@ -201,11 +201,11 @@ public string CustomerID
 {% endhighlight %}
 {% endtabs %}
 
-## **Custom validation through events**
+## Custom validation through events
 
 You can validate the cells and rows using [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) and [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) events. SfDataGrid will not allow user to edit other cell / row if validation failed.
 
-### **Cell Validation**
+### Cell Validation
 
 You can validate the cells using [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event when the cell is edited. `CurrentCellValdiating` event occurs when the edited cells tries to commit the data or lose the focus. 
 
@@ -241,7 +241,7 @@ void dataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-### **Row Validation**
+### Row Validation
 
 You can validate the row using [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus.
  
@@ -278,13 +278,13 @@ void dataGrid_RowValidated(object sender, RowValidatedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## **Error icon and tip customization**
+## Error icon and tip customization
 
-### **Customizing error icon**
+### Customizing error icon
 
 You can customize the error icon by editing `GridCell` style.
 
-#### **Change the shape of error icon**
+#### Change the shape of error icon
 
 You can change the validation error template shape of the GridCell by changing the `Data` property of the path in the `PART_InValidCellBorder` of GridCell.
 
@@ -434,7 +434,7 @@ You can change the validation error template shape of the GridCell by changing
 
 ![](Data-Validation_images/Data-Validation_img3.png)
 
-#### **Change the color of error icon**
+#### Change the color of error icon
 
 You can change the validation error template color of the GridCell by changing the `Fill` property of the path in the `PART_InValidCellBorder` of GridCell.
 
@@ -582,7 +582,7 @@ You can change the validation error template color of the GridCell by changing
 
 ![](Data-Validation_images/Data-Validation_img4.png)
 
-#### **Change the cursor on error icon**
+#### Change the cursor on error icon
 
 You can change the validation error template cursor of the GridCell by changing the `Cursor` property of the path codes in the `PART_InValidCellBorder` of GridCell.
 
@@ -736,11 +736,11 @@ You can change the validation error template cursor of the GridCell by changin
 
 ![](Data-Validation_images/Data-Validation_img5.png)
 
-### **Customizing error tip**
+### Customizing error tip
 
 You can customize the error tip by editing the style of `ValidationToolTipTemplate`. Get the style of `ValidationToolTipTemplate` by editing the GridCell style.
 
-#### **Change the background and foreground color of error tip**
+#### Change the background and foreground color of error tip
 
 You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the TextBlock in `ValidationTolTipTemplate`.
 
@@ -835,11 +835,11 @@ You can change the error tip background color by setting `Background` property o
 
 ![](Data-Validation_images/Data-Validation_img6.png)
 
-### **Showing error details in RowHeader**
+### Showing error details in RowHeader
 
 SfDataGrid support to show the error icon in [GridRowHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.error.aspx) or [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
 
-#### **Using IDataErrorInfo**
+#### Using IDataErrorInfo
 
 You can show the error information in row header by setting [IDataErrorInfo.Error](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.error.aspx). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
 
@@ -861,7 +861,7 @@ public string Error
 
 ![](Data-Validation_images/Data-Validation_img7.png)
 
-#### **Using INotifyDataErrorInfo**
+#### Using INotifyDataErrorInfo
 
 You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
@@ -882,12 +882,12 @@ public bool HasErrors
 
 ![](Data-Validation_images/Data-Validation_img8.png)
 
-## **Validation with Master-Details View**
+## Validation with Master-Details View
 
 Master-Details View allows you to [validate](#_Data_Validation) the bound data is valid or not. 
 You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
-### **Built-in validations**
+### Built-in validations
 
 You can validate the bound data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)/[INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) Attributes by setting [GridValdiationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) property of [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
 
@@ -928,11 +928,11 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ![](Data-Validation_images/Data-Validation_img9.png)
 
-### **Custom validation through events**
+### Custom validation through events
 
 Master-Details View support to validate the cells and rows using [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) and [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) events.
 
-#### **Cell Validation**
+#### Cell Validation
 
 You can validate the cells using [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event of [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when the cell is edited. `CurrentCellValdiating` event occurs when the edited cells tries to commit the data or lose the focus. 
 
@@ -1024,7 +1024,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-#### **Row Validation**
+#### Row Validation
  
 You can validate the row using [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) event of [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when the cell is edited. 
 
@@ -1115,7 +1115,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-## **Validation with Checkbox column**
+## Validation with Checkbox column
 
 SfDataGrid doesn’t support to validate the [GridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html) through validating events. 
 
@@ -1143,7 +1143,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 
 ![](Data-Validation_images/Data-Validation_img10.png)
 
-## **Limitations**
+## Limitations
  
 1. Non editable columns will not support custom validation except [GridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html).
 2. `CurrentCellValidating` event will not triggered for [GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) and [GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html). 
