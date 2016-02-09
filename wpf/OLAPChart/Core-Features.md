@@ -692,40 +692,10 @@ Animations can be added in the OlapChart control. It can be achieved through the
 
 Properties
 
-_Properties Table_
-
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }} </th></tr>
-<tr>
-<td>
-SeriesAnimateOption</td><td>
-Gets or sets animation for each series </td><td>
-Dependency</td><td>
-AnimationOptions</td></tr>
-<tr>
-<td>
-SeriesAnimateOnebyOne</td><td>
-Gets or sets whether each series animate one by one. By default false.</td><td>
-Dependency</td><td>
-bool</td></tr>
-<tr>
-<td>
-EnableSeriesAnimation</td><td>
-Gets or sets whether enable animation for each series.</td><td>
-Dependency</td><td>
-bool</td></tr>
-<tr>
-<td>
-SeriesAnimationDuration</td><td>
-Gets or sets the animation duration for each series.</td><td>
-Dependency</td><td>
-TimeSpan</td></tr>
-</table>
+* **SeriesAnimateOption** - Gets or sets animation for each series 
+* **SeriesAnimateOnebyOne** - Gets or sets whether each series animate one by one. By default false.
+* **EnableSeriesAnimation** - Gets or sets whether enable animation for each series.
+* **SeriesAnimationDuration** - Gets or sets the animation duration for each series.
 
 #### Sample Link
 
@@ -3070,32 +3040,15 @@ A sample, which demonstrates all the appearance properties, is available in the 
 
 The Chart Appearance dialog box of the OLAP Chart provides options to set the Chart Type, Chart Color, Chart Legend Position, and Chart Legend and Legend Check Box Visibility.
 
-The following table lists the properties and methods that are used to customize the Chart Style and Legends programmatically:
+The following lists the properties and methods that are used to customize the Chart Style and Legends programmatically:
 
-_Property table_
+_Properties_
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-ChartType</td><td>
-Sets the chart type for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-ColorModel.Palette</td><td>
-Specifies the chart color for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-Legend.Visibility</td><td>
-Specifies the visibility of the Chart Legend.The options included are as follows:* Visible* Collapsed</td></tr>
-<tr>
-<td>
-<br>Legend.CheckBoxVisibility</td><td>
-Specifies the visibility of the Chart Legend Check Box.The options included are as follows:* Visible* Collapsed</td></tr>
-</table>
+* **ChartType** - Sets the chart type for the OLAP Chart control.
+* **ColorModel.Palette** - Specifies the chart color for the OLAP Chart control.
+* **Legend.Visibility** - Specifies the visibility of the Chart Legend.The options included are as follows:* Visible* Collapsed
+* **Legend.CheckBoxVisibility** - Specifies the visibility of the Chart Legend Check Box.The options included are as follows:* Visible* Collapsed
+
 
 _Methods table_
 
@@ -3109,8 +3062,6 @@ _Methods table_
 ChartDockPanel.SetDock</td><td>
 Specifies the position of the Chart Legend.The options included are as follows:* Right* Left* Top* Bottom* Floating</td></tr>
 </table>
-
-
 
 The following code examples illustrate how to customize the Chart Style and Legends:
 
@@ -3180,32 +3131,15 @@ A sample, which demonstrates all the appearance properties, is available in the 
 
 The Chart Appearance dialog box of the OLAP Chart also provides options to set the Chart Border and the Background Style.
 
-The following table lists the properties that are used to customize the Chart Border and the Background Style programmatically:
+The following lists the properties that are used to customize the Chart Border and the Background Style programmatically:
 
-_Property Table_
+_Properties_
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-BorderThickness</td><td>
-Sets the border thickness for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-BorderBrush</td><td>
-Specifies the border color for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-Background</td><td>
-Specifies the background color for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-GridBackground</td><td>
-Specifies the interior background color for the OLAP Chart control.</td></tr>
-</table>
+* **BorderThickness** - Sets the border thickness for the OLAP Chart control.
+* **BorderBrush** - Specifies the border color for the OLAP Chart control.
+* **Background** - Specifies the background color for the OLAP Chart control.
+* **GridBackground** - Specifies the interior background color for the OLAP Chart control.
+
 The following code examples illustrate how to customize the Chart Border and the Background Style:
 
 
@@ -3315,26 +3249,12 @@ The Appearance dialog box enables you to customize the Labels of the Primary and
 
 OLAP Chart provides support to dynamically change the Font Family, Font Color, and Font Weight for the Labels of the Primary Axis.
 
-_Property Table_
+_Property_
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontFamily</td><td>
-Specifies the font family for the label of the Primary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelForeground</td><td>
-Specifies the font color for the label of the Primary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontWeight</td><td>
-Specifies the font weight for the label of the Primary Axis.</td></tr>
-</table>
+* **PrimaryAxis.LabelFontFamily** - Specifies the font family for the label of the Primary Axis.
+* **PrimaryAxis.LabelForeground** - Specifies the font color for the label of the Primary Axis.
+* **PrimaryAxis.LabelFontWeight** - Specifies the font weight for the label of the Primary Axis.
+
 The following code examples illustrate how to customize the font style of the Primary Axis:
 
 
@@ -3375,27 +3295,11 @@ Me.olapchart1.PrimaryAxis.LabelFontWeight = FontWeights.Bold
 
 OLAP Chart provides support to dynamically change the Font Family, Font Color, and Font Weight for the Labels of the Secondary Axis.
 
-_Property Table_
+_Property_
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontFamily</td><td>
-Specifies the font family for the label of the Secondary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelForeground</td><td>
-Specifies the font color for the label of the Secondary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontWeight</td><td>
-Specifies the font weight for the label of the Secondary Axis.</td></tr>
-</table>
-
+* **PrimaryAxis.LabelFontFamily** - Specifies the font family for the label of the Secondary Axis.
+* **PrimaryAxis.LabelForeground** - Specifies the font color for the label of the Secondary Axis.
+* **PrimaryAxis.LabelFontWeight** - Specifies the font weight for the label of the Secondary Axis.
 
 The following code examples illustrate how to customize the font style of the Secondary Axis:
 
@@ -3471,23 +3375,9 @@ Theming is the process of applying particular settings to the visual elements of
 
  Properties
 
-_Property Table_
+_Property_
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-VisualStyle </td><td>
-Gets or sets the VisualStyle of the OLAPChart control. </td><td>
-Dependency Property</td><td>
-OlapChartVisualStyle</td></tr>
-</table>
-
+* **VisualStyle** - Gets or sets the VisualStyle of the OLAPChart control.
 
 #### Sample Link
 
@@ -3534,31 +3424,12 @@ In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of th
 
 The visibility of the Zooming Toolkit or the individual buttons in the toolkit can be controlled by using the following properties:
 
-_Property Table_
+_Property_
 
-<table>
-<tr>
-<th>
-{{ '**Properties**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-ZoomInButtonVisibility</td><td>
-Gets or sets the zoom in button visibility.</td></tr>
-<tr>
-<td>
-ZoomOutButtonVisibility</td><td>
-Gets or sets the zoom out button visibility.</td></tr>
-<tr>
-<td>
-ZoomCloseButtonVisibility</td><td>
-Gets or sets the zoom close button visibility.</td></tr>
-<tr>
-<td>
-ZoomResetButtonVisibility</td><td>
-Gets or sets the zoom reset button visibility.</td></tr>
-</table>
-
+* **ZoomInButtonVisibility** - Gets or sets the zoom in button visibility.
+* **ZoomOutButtonVisibility** - Gets or sets the zoom out button visibility.
+* **ZoomCloseButtonVisibility** - Gets or sets the zoom close button visibility.
+* **ZoomResetButtonVisibility** - Gets or sets the zoom reset button visibility.
 
 The following code snippet illustrates the above settings:
 
@@ -3816,22 +3687,9 @@ Right-to-left support has been provided for the OLAP Chart control for WPF. User
 
 ## Properties
 
-_Property Table_
+_Property_
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }}</th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-FlowDirection</td><td>
-Gets or sets the flow direction for the OLAP Chart control.</td><td>
-Normal</td><td>
-enum</td></tr>
-</table>
+* **FlowDirection** - Gets or sets the flow direction for the OLAP Chart control.
 
 
 ### Adding RTL support for OLAP Chart in an Application 

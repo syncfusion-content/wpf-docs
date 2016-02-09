@@ -12,31 +12,11 @@ documentation: ug
 It provides high loading performance for a large set of records. This feature also helps to load the data in PivotGrid on demand by using **Index Engine**.
 
 
-Properties Table
+Properties 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-UseIndexedEngine</td><td>
-Gets or sets whether an optimized algorithm that relies on indexing the raw data should be used to compute the pivot information.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-EnableOnDemandCalculations</td><td>
-Gets or sets whether the calculations are postponed until the value is requested through the Indexer in the PivotEngine.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **UseIndexedEngine** - Gets or sets whether an optimized algorithm that relies on indexing the raw data should be used to compute the pivot information.
+* **EnableOnDemandCalculations** - Gets or sets whether the calculations are postponed until the value is requested through the Indexer in the PivotEngine.
+
 
 ## Adding a Virtualized binding feature in Pivot Grid
 

@@ -13,74 +13,19 @@ Key performance indicators can be virtually defined during run time. This featur
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-Name</td><td>
-Gets or sets the name for VirtualKpiElement.</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-KpiValueExpression</td><td>
-Gets or sets the value which indicates the value expression for VirtualKpiElement.</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-KpiGoalExpression</td><td>
-Gets or sets the value which indicates the goal expression for VirtualKpiElement.</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-KpiStatusExpression</td><td>
-Gets or sets the value which indicates the status expression for VirtualKpiElement.</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-KpiTrendExpression</td><td>
-Gets or sets the value which indicates the trend expression for VirtualKpiElement.</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-KpiTrendGraphic</td><td>
-Gets or sets the name of the graphic used to represent the result of the trend expression.</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-KpiStatusGraphic</td><td>
-Gets or sets the name of the graphic used to represent the result of the status expression.</td><td>
-CLR</td><td>
-String</td></tr>
-</table>
+* **Name** - Gets or sets the name for VirtualKpiElement.
+* **KpiValueExpression** - Gets or sets the value which indicates the value expression for VirtualKpiElement.
+* **KpiGoalExpression** - Gets or sets the value which indicates the goal expression for VirtualKpiElement.
+* **KpiStatusExpression** - Gets or sets the value which indicates the status expression for VirtualKpiElement.
+* **KpiTrendExpression** - Gets or sets the value which indicates the trend expression for VirtualKpiElement.
+* **KpiTrendGraphic** - Gets or sets the name of the graphic used to represent the result of the trend expression.
+* **KpiStatusGraphic** - Gets or sets the name of the graphic used to represent the result of the status expression.
 
 
 ### OlapReport Class Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-VirtualKpiElements</td><td>
-Gets or sets the collection of VirtualKpiElement.</td><td>
-CLR</td><td>
-Items</td></tr>
-</table>
+* **VirtualKpiElements** - Gets or sets the collection of VirtualKpiElement.
+
 
 ## Adding Virtual KPI Element to the OlapReport
 

@@ -15,59 +15,15 @@ Filtered data displays only a subset of data that meets a criteria that you spec
 
 FilterExpression class used to encapsulates the information needed to define a filter. It contains the following properties.
 
-Properties Table
+Properties
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-Expression</td><td>
-Gets or sets the well-formed logical expression that defines this FilterExpression.</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-Name</td><td>
-Gets or sets the name of this FilterExpression.</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-DimensionName</td><td>
-Gets or sets the dimension name for filter expression</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-DimensionHeader</td><td>
-Gets or sets the dimension header for filter expression</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-Format</td><td>
-Gets or sets the format of filter expression </td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-Evaluator</td><td>
-Used to evaluate the given value</td><td>
-Delegate</td><td>
--</td><td>
--</td></tr>
-</table>
+* **Expression** - Gets or sets the well-formed logical expression that defines this FilterExpression.
+* **Name** - Gets or sets the name of this FilterExpression.
+* **DimensionName** - Gets or sets the dimension name for filter expression
+* **DimensionHeader** - Gets or sets the dimension header for filter expression
+* **Format** - Gets or sets the format of filter expression
+* **Evaluator** - Used to evaluate the given value
+
 
 ###Defining Filters in XAML
 

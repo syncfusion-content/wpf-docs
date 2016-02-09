@@ -16,25 +16,10 @@ PivotGrid Grouping Bar allows you to slice and dice the fields between column, r
 * ColumnHeader Area - which holds the PivotColumn items of PivotGrid control.
 * RowHeader Area - which holds the PivotRow items of PivotGrid control.
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference link</th></tr>
-<tr>
-<td>
-ShowGroupingBar</td><td>
-Gets or sets whether the GroupingBar needs to shown or hidden.</td><td>
-bool</td><td>
-True (Default),
-False</td><td>
--</td></tr>
-</table> 
+* **ShowGroupingBar** - Gets or sets whether the GroupingBar needs to shown or hidden.
+
 
 ## Defining the Grouping Bar in PivotGrid
 

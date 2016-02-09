@@ -12,31 +12,11 @@ documentation: ug
 **Pivot Value Chooser** is used to list all the PivotFields in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a PivotCalculation and add it to the PivotGrid, drag and drop the grid fields, and rearrange the calculation column in the PivotGrid control at run time.
 
 
-Properties Table
+Properties 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowPivotValueChooser</td><td>
-Hides or shows a computation value column chooser dialog that allows users to hide, show, or reorder the PivotCalculations in the PivotGrid.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-PossiblePivotCalculations</td><td>
-Gets or sets a collection of possible pivot calculations that may appear in the PivotGrid control and lists them in the PivotValueChooser.</td><td>
-OservableCollection(PivotComputationInfo)</td><td>
--</td><td>
--</td></tr>
-</table>
+* **ShowPivotValueChooser** - Hides or shows a computation value column chooser dialog that allows users to hide, show, or reorder the PivotCalculations in the PivotGrid.
+* **PossiblePivotCalculations** - Gets or sets a collection of possible pivot calculations that may appear in the PivotGrid control and lists them in the PivotValueChooser.
+
 
 ## Using the Pivot Value Chooser in PivotGrid
 

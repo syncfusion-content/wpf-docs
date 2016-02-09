@@ -20,21 +20,7 @@ control.
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-IsCalculatedMembersEnabled</td><td>
-Gets or sets a value indicating whether calculated members are to be enabled</td><td>
-Dependency </td><td>
-Boolean</td></tr>
-</table> 
-
+* **IsCalculatedMembersEnabled** - Gets or sets a value indicating whether calculated members are to be enabled
 
 ### Sample Link
 

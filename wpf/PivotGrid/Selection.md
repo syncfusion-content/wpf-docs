@@ -11,31 +11,10 @@ documentation: ug
 
 PivotGrid supports excel-like **Cell Selection** where you can select grid value cells as like in MS-Excel. It is possible to select the entire row or column and group of cells with or without header cells as per your requirement.
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-AllowSelection</td><td>
-Gets or sets whether to enable or disable the selection behaviour for cells.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-<tr>
-<td>
-AllowSelectionWithHeaders</td><td>
-Gets or sets whether to enable or disable the selection behaviour along with headers when selecting the cells</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **AllowSelection** - Gets or sets whether to enable or disable the selection behaviour for cells.
+* **AllowSelectionWithHeaders** - Gets or sets whether to enable or disable the selection behaviour along with headers when selecting the cells
 
 ## Defining the properties in PivotGrid
 

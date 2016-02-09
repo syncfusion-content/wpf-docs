@@ -17,45 +17,13 @@ The sub-total hiding feature is used to show or hide sub-totals in PivotGrid.It 
 * Hiding the Sub-Totals for the specific pivot item
 
 
-Properties Table
-                                                        
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowSubTotals</td><td>
-Gets or sets value indicating whether sub total calculations for all row and column should be shown or hidden.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowRowSubTotals</td><td>
-Gets or sets value indicating whether row sub total calculations should be shown or hidden.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowColumnSubTotals</td><td>
-Gets or sets value indicating whether column sub total calculations should be shown or hidden.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowSubTotal</td><td>
-Gets or sets value indicating whether sub total calculations should be shown or hidden for that particular PivotItem.</td><td>
-bool</td><td>
-True(Default), False</td><td>
--</td></tr>
-</table>                                                        
+Properties 
+           
+* **ShowSubTotals** - Gets or sets value indicating whether sub total calculations for all row and column should be shown or hidden.
+* **ShowRowSubTotals** - Gets or sets value indicating whether row sub total calculations should be shown or hidden.
+* **ShowColumnSubTotals** - Gets or sets value indicating whether column sub total calculations should be shown or hidden.
+* **ShowSubTotal** - Gets or sets value indicating whether sub total calculations should be shown or hidden for that particular PivotItem.
+
 
 Methods Table
 

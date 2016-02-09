@@ -40,24 +40,9 @@ PivotGrid can be exported to an excel document using the Essential XlsIO. It con
 * **Pivot Table** - It is used to export the PivotGrid directly as a pivot table to view in excel.
 * **Cell** - It exports the PivotGrid as an individual cell values.
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ExportMode</td><td>
-Used to set the exporting mode for the PivotGrid.</td><td>
-ExportMode</td><td>
-Cell, PivotTable</td><td>
--</td></tr>
-</table>
+* **ExportMode** - Used to set the exporting mode for the PivotGrid.
 
 **Adding the Export method to PivotGrid**
 

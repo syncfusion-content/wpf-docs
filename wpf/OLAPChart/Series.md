@@ -385,40 +385,10 @@ Animations can be added in the OlapChart control. It can be achieved through the
 
 ### Properties
 
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description</th><th>
-Type</th><th>
-Data Type </th></tr>
-<tr>
-<td>
-SeriesAnimateOption</td><td>
-Gets or sets animation for each series </td><td>
-Dependency</td><td>
-AnimationOptions</td></tr>
-<tr>
-<td>
-SeriesAnimateOnebyOne</td><td>
-Gets or sets whether each series animate one by one. By default false.</td><td>
-Dependency</td><td>
-bool</td></tr>
-<tr>
-<td>
-EnableSeriesAnimation</td><td>
-Gets or sets whether enable animation for each series.</td><td>
-Dependency</td><td>
-bool</td></tr>
-<tr>
-<td>
-SeriesAnimationDuration</td><td>
-Gets or sets the animation duration for each series.</td><td>
-Dependency</td><td>
-TimeSpan</td></tr>
-</table>
+* **SeriesAnimateOption** - Gets or sets animation for each series
+* **SeriesAnimateOnebyOne** - Gets or sets whether each series animate one by one. By default false.
+* **EnableSeriesAnimation** - Gets or sets whether enable animation for each series.
+* **SeriesAnimationDuration** - Gets or sets the animation duration for each series.
 
 #### Sample Link
 

@@ -18,24 +18,10 @@ PivotGrid that supports the context menu behaviour for Row pivots only mode. The
 * **ClearValueSorts** - To clear sorted values in all pivot computation columns.
 * **ShowPivotValueChooser** - Launches the Pivot Value Chooser window to add or remove the items in PivotGrid.
 
-Property Table
+Property 
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Value It Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-EnableContextMenu</td><td>
-This property is used to display the context menu for each column when right clicking the column.</td><td>
-bool</td><td>
-True, False(Default)</td><td>
--</td></tr>
-</table>
+* **EnableContextMenu** - This property is used to display the context menu for each column when right clicking the column.
+
 
 ## Defining the property in RowPivotsOnly mode of PivotGrid 
 
