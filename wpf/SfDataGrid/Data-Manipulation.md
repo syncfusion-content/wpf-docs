@@ -268,23 +268,17 @@ When you start editing in AddNewRow, the SfDataGrid control creates an instanceÂ
 
 N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling `AddNewRowInitiating` event.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AddNewRowPosition="Top"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}" />
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+{% endhighlight %}
+{% highlight c# %}
 this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Data-Manipulation_images/Data-Manipulation_img1.png)
@@ -310,18 +304,16 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 
 SfDataGrid allows you to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs~NewObject.html) property in  [SfDataGrid.AddNewRowInitiating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowInitiating_EV.html) event.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 this.dataGrid.AddNewRowInitiating += dataGrid_AddNewRowInitiating;
 void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
     var data = args.NewObject as OrderInfo;
     data.OrderID = 101;
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
@@ -586,7 +578,9 @@ void FirstLevelNestedGrid_AddNewRowInitiating(object sender, AddNewRowInitiating
 }
 {% endhighlight %}
 {% endtabs %}
+
 For auto-generated relation (when the [AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is set to true), the AddNewRow can be enabled by specifying the position to `AddNewRowPosition` property in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
+
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingRelations+=dataGrid_AutoGeneratingRelations;
@@ -600,9 +594,8 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 In the same way, you can wire [AddNewRowInitiating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowInitiating_EV.html) event in the [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 this.dataGrid.AutoGeneratingRelations+=dataGrid_AutoGeneratingRelations;
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {
@@ -612,9 +605,8 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {
 
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 
 ## Deletion
