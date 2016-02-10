@@ -429,7 +429,7 @@ We can limit the number of series and trendlines to be displayed in legend using
 
 {% endhighlight %}
 
-![](Legend_images/seriesvisible.png)
+![](Legend_images/seriesvisibile.png)
 
 
 ## Legend Orientation
