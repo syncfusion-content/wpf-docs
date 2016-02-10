@@ -22,12 +22,12 @@ You can define the legend using the following code example.
 
 {% endhighlight %}
 
-![](Legend_images/legendoverview.png)
+![](Legend_images/legend_overview.png)
 
 
 Each legend composed of the following parts:
 
-![](Legend_images/legendoverview_1.png)
+![](Legend_images/legend_overview_1.png)
 
 
 ## Legend Icon
