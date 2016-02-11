@@ -652,13 +652,17 @@ Sort Options can be collapsed by setting [SortOptionVisibility](http://help.sync
 Sort Options text can be customized by using [AscendingSortString](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~AscendingSortString.html) and [DescendingSortString](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~DescendingSortString.html) properties in [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html).
 
 {% tabs %}
-{% highlight xaml %}
-<Style TargetType="syncfusion:GridFilterControl" x:Key="columnFilterStyle">
-    <Setter Property="AscendingSortString" Value="Sort Ascending" />
-    <Setter Property="DescendingSortString" Value="Sort Descending" />
-</Style>
+{% highlight c# %}
+this.dataGrid.FilterItemsPopulating += DataGrid_FilterItemsPopulating;
 
-<syncfusion:GridTextColumn FilterPopupStyle="{StaticResource columnFilterStyle}" MappingName="OrderID" />
+void DataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEventArgs e)
+{
+    if(e.Column.MappingName=="CustomerName")
+    {
+        e.FilterControl.AscendingSortString = "Sort Ascending";
+        e.FilterControl.DescendingSortString = "Sort Descending";
+    }           
+}
 {% endhighlight %}
 {% endtabs %}
 
