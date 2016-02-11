@@ -34,7 +34,7 @@ The following screenshot displays the elements present in the DataGrid.
 
 
 
-![](Features_images/Features_img145.jpeg)
+![](Features_images/Features_img145.png)
 
 
 
