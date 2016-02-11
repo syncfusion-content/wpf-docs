@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-#Sorting
+# Sorting
 
 Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
 
@@ -41,6 +41,7 @@ Gets or sets the sorting direction, either *Ascending* or *Descending*
 </td>
 </tr>
 </table>
+
 The following example illustrates a simple chart (without apply sorting):
 
 ![](sorting_chart_images/sorting_1.png)
@@ -50,22 +51,24 @@ Note: This feature is primarily applicable for indexed (non-linear) axis like Ca
 
 For linear axis like NumericalAxis, only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
 
-##SortDirection
+## SortDirection
 
 This defines the direction of sorting either in Ascending or Descending based on x or y value. This can be explained by combined with SortBy property below.
 
-##SortBy
+## SortBy
 
 Sorting can be done with respect to X and Y axis. This is an enum property.
 
 **Sorting** **x** **axis** **in** **ascending** **order**:
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  SortDirection="Ascending"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
+	
+	                     SortDirection="Ascending"
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
 
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -75,11 +78,14 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 **Sorting** **x** **axis** **in** **descending** **order**:
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  SortDirection="Descending"
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
+	 
+	                     SortDirection="Descending"
 
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -89,14 +95,14 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 **Sorting** **y** **axis** **in** **ascending** **order**:
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  SortDirection="Ascending"
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
+	                   
+					     SortDirection="Ascending"
 
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
 
-
-
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 
 {% endhighlight %}
@@ -107,14 +113,14 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 **Sorting** **y** **axis** **in** **descending** **order**:
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  SortDirection="Descending"
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  
+	
+	                     SortDirection="Descending"
 
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
 
-
-
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 
 {% endhighlight %}
@@ -135,15 +141,14 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 **Sorting** **x** **axis** **in** **ascending** **order**
 
 {% highlight xml %}
+
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X" Palette="AutumnBrights"
 
-SortDirection="Ascending"
+                         SortDirection="Ascending"
 
-ItemsSource="{Binding Demands}" 
+                         ItemsSource="{Binding Demands}" 
 
-XBindingPath="Position"  YBindingPath="Year2011"/>
-
-
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -152,13 +157,16 @@ XBindingPath="Position"  YBindingPath="Year2011"/>
 **Sorting** **x** **axis** **in** **descending** **order**
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X" Palette="AutumnBrights"
 
-SortDirection="Descending"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X" 
+	
+	                     Palette="AutumnBrights"
 
-ItemsSource="{Binding Demands}" 
+                         SortDirection="Descending"
 
-XBindingPath="Position"  YBindingPath="Year2011"/>
+                         ItemsSource="{Binding Demands}" 
+
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -167,15 +175,15 @@ XBindingPath="Position"  YBindingPath="Year2011"/>
 **Sorting** **y** **axis** **in** **ascending** **order**
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" Palette="AutumnBrights"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
+	
+	                     Palette="AutumnBrights"
 
-SortDirection="Ascending"
+                         SortDirection="Ascending"
 
-ItemsSource="{Binding Demands}" 
+                         ItemsSource="{Binding Demands}" 
 
-XBindingPath="Position"  YBindingPath="Year2011"/>
-
-
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -184,15 +192,15 @@ XBindingPath="Position"  YBindingPath="Year2011"/>
 **Sorting** **y** **axis** **in** **descending** **order**
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" Palette="AutumnBrights"
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
+	
+	                     Palette="AutumnBrights"
 
-SortDirection="Descending"
+                         SortDirection="Descending"
 
-ItemsSource="{Binding Demands}" 
+                         ItemsSource="{Binding Demands}" 
 
-XBindingPath="Position"  YBindingPath="Year2011"/>
-
-
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
