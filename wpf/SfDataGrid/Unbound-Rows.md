@@ -427,7 +427,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
         uiElement.Text = dataColumn.GridUnBoundRowEventsArgs.Value.ToString();        
     }
 
-    #region Edit Element
+     #region Edit Element
 
     /// <summary>
     /// Initialize the value for edit element.
@@ -435,10 +435,10 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
-
     public override void OnInitializeEditElement(DataColumnBase dataColumn, DatePicker uiElement, object dataContext)
     {
-        uiElement.Text = dataColumn.GridUnBoundRowEventsArgs.Value.ToString();        
+        uiElement.SelectedDate = (DateTime?)dataColumn.GridUnBoundRowEventsArgs.Value;
+        uiElement.Tag = dataColumn;
     }
 
     /// <summary>
@@ -449,7 +449,45 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <param name="dataContext"></param>
     public override void OnUpdateEditBinding(DataColumnBase dataColumn, DatePicker element, object dataContext)
     {
-        element.Text = dataColumn.GridUnBoundRowEventsArgs.Value.ToString();
+        element.SelectedDate = (DateTime?)dataColumn.GridUnBoundRowEventsArgs.Value;             
+        element.Tag = dataColumn;
+    }
+
+    /// <summary>
+    /// Method to wire the Selection Changed Event.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
+    {
+        var dataPicker = sender as DatePicker;
+        dataPicker.SelectedDateChanged += uiElement_SelectedDateChanged;
+    }
+
+    /// <summary>
+    /// Method to un wire the Selection Changed event.
+    /// </summary>
+    /// <param name="uiElement"></param>
+    protected override void OnUnwireEditUIElement(DatePicker uiElement)
+    {
+        base.OnUnwireEditUIElement(uiElement);
+        uiElement.SelectedDateChanged -= uiElement_SelectedDateChanged;
+    }
+
+    /// <summary>
+    /// Method to raise the CurrentCellValueChanegdEvent.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    public void uiElement_SelectedDateChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+    {
+        var datapicker = sender as DatePicker;
+        if (datapicker.Tag is DataColumn)
+        {
+            var dataColumn = datapicker.Tag as DataColumn;
+            dataColumn.GridUnBoundRowEventsArgs.Value = (sender as DatePicker).SelectedDate;
+            DataGrid.RaiseQueryUnBoundRow(dataColumn.GridUnBoundRowEventsArgs.GridUnboundRow, UnBoundActions.CommitData, dataColumn.GridUnBoundRowEventsArgs.Value, dataColumn.GridColumn, dataColumn.GridUnBoundRowEventsArgs.CellType, new Syncfusion.UI.Xaml.ScrollAxis.RowColumnIndex(dataColumn.RowIndex, dataColumn.ColumnIndex));
+        }
     }
     #endregion
 
