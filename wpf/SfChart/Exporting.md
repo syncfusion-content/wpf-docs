@@ -22,17 +22,29 @@ Chart can be exported into image format. The following image formats are support
 
 <table>
 <tr>
-<td>
-**Name** <br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr>
 <tr>
 <td>
-Save(string filename)<br/><br/></td><td>
-Export the chart to selected image file format<br/><br/></td></tr>
+Save(string filename)
+</td>
+<td>
+Export the chart to selected image file format
+</td>
+</tr>
 <tr>
 <td>
-Save(Stream stream, BitmapEncoder  imgEncoder)<br/><br/></td><td>
-Export the chart by using stream and its corresponding encoder.<br/><br/></td></tr>
+Save(Stream stream, BitmapEncoder  imgEncoder)
+</td>
+<td>
+Export the chart by using stream and its corresponding encoder.
+</td>
+</tr>
 </table>
 You can use the following code example to save the chart in button click event.
 
@@ -41,27 +53,27 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 {
 
-SaveFileDialog sfd = new SaveFileDialog();
+  SaveFileDialog sfd = new SaveFileDialog();
 
-sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif   
+  sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif   
 
-(*.gif)|*.gif|PNG(*.png)|*.png|All files (*.*)|*.*";
+  (*.gif)|*.gif|PNG(*.png)|*.png|All files (*.*)|*.*";
 
-if (sfd.ShowDialog() == true)
+  if (sfd.ShowDialog() == true)
 
-{
+  {
 
-using (Stream fs = sfd.OpenFile())
+    using (Stream fs = sfd.OpenFile())
 
-{
+    {
 
-ExportDemoChart.Save(fs, new PngBitmapEncoder());
+       ExportDemoChart.Save(fs, new PngBitmapEncoder());
 
-}
+     }
 
-}
+   }
 
-}
+ }
 
 
 
