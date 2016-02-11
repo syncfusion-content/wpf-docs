@@ -45,8 +45,10 @@ This can be customized using the **LegendIcon** property in any series as in bel
 </chart:ChartLegend>
 
 <chart:SplineSeries XBindingPath="Year" Label="Series 1"
-	                ItemsSource="{Binding List}" YBindingPath="India" 
-					LegendIcon="Diamond" />
+	                  
+                    ItemsSource="{Binding List}" YBindingPath="India"
+                     
+					          LegendIcon="Diamond" />
 
 
 {% endhighlight %}
@@ -128,7 +130,7 @@ The following code example illustrates the customization of legend icon.
 
                         ItemMargin="10">                   
 
-</chart:ChartLegend>
+    </chart:ChartLegend>
 
 </chart:SfChart.Legend>       
 
@@ -170,18 +172,19 @@ We can add custom icon for the legend using **LegendIconTemplate** property in C
 </chart:SfChart.Legend>
 
 <chart:SplineSeries XBindingPath="Year"  Label="Gold" 
-	                ItemsSource="{Binding List}" YBindingPath="India" >
+  
+	                  ItemsSource="{Binding List}" YBindingPath="India" >
 
- <chart:SplineSeries.LegendIconTemplate>
+       <chart:SplineSeries.LegendIconTemplate>
 
-     <DataTemplate>
+           <DataTemplate>
 
-            <Ellipse Height="15" Width="15" Fill="White" 
-			         Stroke="#4a4a4a" StrokeThickness="2"></Ellipse>
-
+                <Ellipse Height="15" Width="15" Fill="White" 
+			                   
+                         Stroke="#4a4a4a" StrokeThickness="2"></Ellipse>
       </DataTemplate>
 
- </chart:SplineSeries.LegendIconTemplate>
+    </chart:SplineSeries.LegendIconTemplate>
 
 </chart:SplineSeries>
 
@@ -205,8 +208,9 @@ This allows us to specify the label for each series which is to be displayed in 
 
 </chart:SfChart.Legend>
 
-<chart:SplineSeries XBindingPath="Year" Label="Spline" 
-	                ItemsSource="{Binding List}" YBindingPath="India"/>
+<chart:SplineSeries XBindingPath="Year" Label="Spline"
+   
+	                  ItemsSource="{Binding List}" YBindingPath="India"/>
 
 {% endhighlight %}
 
@@ -227,10 +231,6 @@ We can enable it by using the **CheckBoxVisibilty** property as in below code ex
         <chart:ChartLegend CheckBoxVisibility="Visible" />
 
 </chart:SfChart.Legend>
-
-
-
-
 
 {% endhighlight %}
 
@@ -351,7 +351,7 @@ The following code example shows how to create multiple legends in a single char
 
                     ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
 					
-					YBindingPath="ItemsCount1" />
+					          YBindingPath="ItemsCount1" />
 
 <chart:SplineSeries Label="Legend2" ItemsSource="{Binding SneakersDetail}"  
 
@@ -388,7 +388,7 @@ Syntax for adding legends to these type of series is same as in below example:
 
 <chart:PieSeries  Palette="Custom" XBindingPath="Category" 
 	
-	              ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+	                ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -479,7 +479,8 @@ You can customize each legend item using ItemTemplate property in ChartLegend as
 
       <TextBlock HorizontalAlignment="Center" FontSize="12"  Grid.Row="1"  
 	       
-	       	    Foreground="Black" FontWeight="SemiBold" Text="{Binding Label}">                                 
+	       	       Foreground="Black" FontWeight="SemiBold" Text="{Binding Label}">                                 
+      
       </TextBlock>
 
     </Grid>
@@ -504,11 +505,11 @@ public class Converter:IValueConverter
 
    if (item.Label == "Gold")
 
-   return new BitmapImage(new Uri(("gold_symb.png"),UriKind.RelativeOrAbsolute));
+     return new BitmapImage(new Uri(("gold_symb.png"),UriKind.RelativeOrAbsolute));
 
    else
 
-   return new BitmapImage(new Uri(("silver_symb.png"), UriKind.RelativeOrAbsolute));
+    return new BitmapImage(new Uri(("silver_symb.png"), UriKind.RelativeOrAbsolute));
 
   }
 
