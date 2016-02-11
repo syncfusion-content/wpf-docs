@@ -32,10 +32,12 @@ SortBy
 </td>
 <td>
 Gets or sets the axis for which sorting to be performed.
+</td>
 </tr>
 <tr>
 <td>
 SortDirection
+</td>
 <td>
 Gets or sets the sorting direction, either *Ascending* or *Descending* 
 </td>
