@@ -97,6 +97,59 @@ timer.Start();
 
 {% highlight VB %}
 
+Partial Public Class MainWindow
+	Inherits Window
+
+
+Public Sub New()
+
+
+InitializeComponent()
+
+timer = New DispatcherTimer()
+
+timer.Interval = New TimeSpan(0, 0, 0, 0, 800)
+
+AddHandler timer.Tick, AddressOf timer_Tick
+
+End Sub
+
+Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
+
+
+If loadingitem IsNot Nothing Then
+
+
+For i As Integer = 0 To 5
+
+
+loadingitem.Items.Add(New TreeViewItemAdv() With {.Header = "Node" & i})
+
+Next i
+
+loadingitem.IsLoadOnDemand = False
+
+timer.Stop()
+
+End If
+
+End Sub
+
+Private timer As DispatcherTimer
+
+Private loadingitem As TreeViewItemAdv
+
+Private Sub treeViewAdv_LoadOnDemand(ByVal sender As Object, ByVal args As LoadonDemandEventArgs)
+
+
+loadingitem = TryCast(args.TreeViewItem, TreeViewItemAdv)
+
+timer.Start()
+
+End Sub
+
+End Class
+
 {% endhighlight %}
 
 {% endtabs %}  

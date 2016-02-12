@@ -12,7 +12,6 @@ TreeViewAdv control displays hierarchical data in a tree structure, and has item
 
 ![](Visual_Structure_images/Visual_Structure_img1.jpeg)
 
-
 The elements of the control are described below:
 
 * **TreeViewItemAdv** Contents

@@ -60,6 +60,10 @@ treeViewAdv.AllowDragDrop = true;
 
 {% highlight VB %}
 
+'set allow drag and drop
+
+treeViewAdv.AllowDragDrop = True
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -118,6 +122,10 @@ treeViewAdv.DraggingContainerOpacity = 0.4;
 {% endhighlight %}
 
 {% highlight VB %}
+
+'set DraggingContainerOpacity
+
+treeViewAdv.DraggingContainerOpacity = 0.4
 
 {% endhighlight %}
 
@@ -178,6 +186,10 @@ treeViewAdv.IsFakeDragIndicator = true;
 {% endhighlight %}
 
 {% highlight VB %}
+
+'set FakeDragIndicator is true
+
+treeViewAdv.IsFakeDragIndicator = True
 
 {% endhighlight %}
 
