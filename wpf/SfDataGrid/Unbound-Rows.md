@@ -454,14 +454,13 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     }
 
     /// <summary>
-    /// Method to wire the Selection Changed Event.
+    /// Method to wire the Selection Changed event
     /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
+    /// <param name="uiElement"></param>
+    protected override void OnWireEditUIElement(DatePicker uiElement)
     {
-        var dataPicker = sender as DatePicker;
-        dataPicker.SelectedDateChanged += uiElement_SelectedDateChanged;
+        base.OnWireEditUIElement(uiElement);
+        uiElement.SelectedDateChanged += uiElement_SelectedDateChanged;
     }
 
     /// <summary>
