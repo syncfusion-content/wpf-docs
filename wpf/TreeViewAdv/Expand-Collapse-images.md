@@ -69,6 +69,14 @@ item2.ExpandedImageSource = new BitmapImage(new Uri("/Folder_Expanded.png", UriK
 
 {% highlight VB %}
 
+' Set image for collapsed button
+
+item1.CollapsedImageSource = New BitmapImage(New Uri("/folder.png", UriKind.Relative))
+
+' Set image for expand button
+
+item2.ExpandedImageSource = New BitmapImage(New Uri("/Folder_Expanded.png", UriKind.Relative))
+
 {% endhighlight %}
 
 {% endtabs %}  

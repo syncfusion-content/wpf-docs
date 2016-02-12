@@ -17,6 +17,7 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending"  >
 
 <!-- Adding TreeViewItemAdv -->
@@ -74,10 +75,13 @@ treeViewAdv.Sorting = SortDirection.Ascending;
 
 {% highlight VB %}
 
+'Sort the item
+
+treeViewAdv.Sorting = SortDirection.Ascending
+
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Sorting Field
 
@@ -86,6 +90,7 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending" SortingField="Header"  >
 
 <!-- Adding TreeViewItemAdv -->
@@ -135,6 +140,7 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 {% tabs %}
 
 {% highlight C# %}
+
 //Sort the item based on criteria
 
 treeViewAdv.SortingField = "Header";
@@ -142,6 +148,10 @@ treeViewAdv.SortingField = "Header";
 {% endhighlight %}
 
 {% highlight VB %}
+
+'Sort the item based on criteria
+
+treeViewAdv.SortingField = "Header"
 
 {% endhighlight %}
 

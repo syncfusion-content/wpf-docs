@@ -8,8 +8,6 @@ documentation: ug
 ---
 # Getting Started
 
-Getting Started
-
 This section explains how to create Tree layout using TreeViewAdv control
 
 ## Add TreeViewAdv
@@ -46,6 +44,7 @@ Title="MainWindow" Height="350" Width="525">
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="WpfApplication1.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -77,6 +76,7 @@ The TreeviewItem is added to a TreeViewAdv control either by using XAML. The fol
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="WpfApplication1.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -107,7 +107,6 @@ Title="MainWindow" Height="350" Width="525">
 
 </Window>
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -119,6 +118,7 @@ Ribbon supports various visual styles by using the SkinStorage. To apply Visual 
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="WpfApplication1.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -157,7 +157,6 @@ Title="MainWindow" Height="350" Width="525">
 
 ![](Getting_Started_images/Getting_Started_img1.jpeg)
 
-
 ## Setting ItemsSource for TreeviewAdv
 
 The following code snippet sets a collection used to generate the Items of the TreeViewAdv control.
@@ -165,6 +164,7 @@ The following code snippet sets a collection used to generate the Items of the T
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="WpfApplication1.MainWindow"
 
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -194,7 +194,6 @@ Title="MainWindow" Height="350" Width="525">
 </Grid>
 
 </Window>
-
 
 {% endhighlight %}
 
@@ -230,6 +229,27 @@ this.Add("UniversalWindows");
 {% endhighlight %}
 
 {% highlight VB %}
+
+Public Class TechnologyList
+	Inherits ObservableCollection(Of String)
+
+
+Public Sub New()
+
+
+Me.Add("WPF")
+
+Me.Add("Winrt")
+
+Me.Add("Silverlight")
+
+Me.Add("WindowPhone")
+
+Me.Add("UniversalWindows")
+
+End Sub
+
+End Class
 
 {% endhighlight %}
 

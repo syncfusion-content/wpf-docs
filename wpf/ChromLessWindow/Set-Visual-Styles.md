@@ -66,5 +66,5 @@ SkinStorage.SetVisualStyle(Me, "Metro")
 
 
 
->Note:Metro theme supports customization of Brushes and fonts. For example to change the Background color of the Window Icon ,use SetMetroBrush method
+N> Metro theme supports customization of Brushes and fonts. For example to change the Background color of the Window Icon ,use SetMetroBrush method
 
