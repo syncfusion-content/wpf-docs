@@ -24,9 +24,11 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="ChromelessWindow" Height="350" Width="525"  TitleBarTemplate="{StaticResource TitleBarTemplateKey}"   syncfusion:SkinStorage.VisualStyle="Metro" 
+Title="ChromelessWindow" Height="350" Width="525" TitleBarTemplate="{StaticResource TitleBarTemplateKey}"   
 
-x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
+syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 
 </syncfusion:ChromelessWindow>
 
@@ -58,7 +60,7 @@ For example, use the following code for a TitleBarTemplate.
 
 {% endtabs %}
 
->Note:The drag and drop feature for the ChromelessWindow is available only with the TitleBar,to incorporate this feature,include a TitleBar into your ChromelessWindow.Also it is necessary to specify the name of the TitleBar as PART_TitleBar",to enable the drag and drop feature.
+N> The drag and drop feature for the ChromelessWindow is available only with the TitleBar,to incorporate this feature,include a TitleBar into your ChromelessWindow.Also it is necessary to specify the name of the TitleBar as PART_TitleBar",to enable the drag and drop feature.
 
 ![](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
 
@@ -77,9 +79,11 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="ChromelessWindow" Height="350" Width="525" MaximizeButtonTemplate="{StaticResource MaxTemplateKey}" syncfusion:SkinStorage.VisualStyle="Metro"    
+Title="ChromelessWindow" Height="350" Width="525" MaximizeButtonTemplate="{StaticResource MaxTemplateKey}" 
 
-x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+syncfusion:SkinStorage.VisualStyle="Metro"    x:Name="_chromelessWindow"    
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 
 <Grid>
 
@@ -99,9 +103,9 @@ For example, use the following code for a MaximizeButtonTemplate.
 
 <ControlTemplate x:Key="MaxTemplateKey" TargetType="{x:Type syncfusion:TitleButton}">
 
-<Border SnapsToDevicePixels="true" x:Name="maxborder" Width="15" Height="15" Background="Coral"   BorderThickness="0"
+<Border SnapsToDevicePixels="true" x:Name="maxborder" Width="15" Height="15" Background="Coral"  
 
-BorderBrush="Transparent">
+BorderThickness="0" BorderBrush="Transparent">
 
 <Grid SnapsToDevicePixels="true" x:Name="grid" HorizontalAlignment="Center" VerticalAlignment="Center" Width="9" Height="8">
 
@@ -136,7 +140,7 @@ ChromelessWindow can be customized by editing the default template. The default 
 
 This default style need to be included in the App.xaml file of your application and the override this style as you desire.
 
->Note:All the templates should be written in App.xaml file only.
+N> All the templates should be written in App.xaml file only.
 
 
 The below example is illustrated to override the ChromelessWindow’s full style 
@@ -216,9 +220,11 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-Title="ChromelessWindow" Height="350" Width="525"    Template="{StaticResource ChromelessWindowTemplate}"   syncfusion:SkinStorage.VisualStyle="Metro" 
+Title="ChromelessWindow" Height="350" Width="525" Template="{StaticResource ChromelessWindowTemplate}"   
 
-x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
+syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 
 </syncfusion:ChromelessWindow>
 
