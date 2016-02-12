@@ -62,6 +62,14 @@ item2.RightImageSource = new BitmapImage(new Uri("/Right tick.png", UriKind.Rela
 
 {% highlight VB %}
 
+'Set image for left
+
+item1.LeftImageSource = New BitmapImage(New Uri("/Folder_Expanded.png", UriKind.RelativeOrAbsolute))
+
+'Set image for right
+
+item2.RightImageSource = New BitmapImage(New Uri("/Right tick.png", UriKind.RelativeOrAbsolute))
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -109,6 +117,7 @@ TreeViewAdv allow user to set the height and width of the TreeViewItemAdv images
 {% tabs %}
 
 {% highlight C# %}
+
 //Set image height
 
 item1.ImageHeight = 25;
@@ -120,6 +129,14 @@ item1.ImageWidth = 25;
 {% endhighlight %}
 
 {% highlight VB %}
+
+'Set image height
+
+item1.ImageHeight = 25
+
+'Set image width
+
+item1.ImageWidth = 25
 
 {% endhighlight %}
 

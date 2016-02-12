@@ -21,6 +21,7 @@ You can show a node to be selected, at runtime, when the TreeViewAdv control is 
 {% tabs %}
 
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with selected -->
 
 <syncfusion:TreeViewAdv Name="treeViewAdv">
@@ -80,12 +81,15 @@ treeViewItemAdv1.IsSelected = true;
 
 {% highlight VB %}
 
+'Set selection
+
+treeViewItemAdv1.IsSelected = True
+
 {% endhighlight %}
 
 {% endtabs %}  
 
 ![](Selecting_node_images/Selecting_node_img1.jpeg)
-
 
 ## Enable to allow Multiple Selection in TreeViewAdv
 
@@ -96,6 +100,7 @@ The following code example can be used to set this property.
 {% tabs %}
 
 {% highlight XAML %}
+
 <!-- Adding TreeViewAdv with multiselection of items  -->
 
 <syncfusion:TreeViewAdv AllowMultiSelect="True" Name="treeViewAdv">
@@ -143,13 +148,15 @@ treeViewAdv.AllowMultiSelect = true;
 
 {% highlight VB %}
 
+' Enable multi select of items
+
+treeViewAdv.AllowMultiSelect = True
+
 {% endhighlight %}
 
 {% endtabs %}  
 
-
 ![](Selecting_node_images/Selecting_node_img2.jpeg)
-
 
 ## Selecting an item through AddNodeToSelectedItems Collection
 
@@ -160,6 +167,7 @@ Here are the code snippets to select multiple items in the TreeViewAdv control u
 {% tabs %}
 
 {% highlight C# %}
+
 foreach (TreeViewItemAdv items in this.treeView.Items)
 
 {
@@ -171,6 +179,13 @@ treeView.AddNodeToSelectedItems(items);
 {% endhighlight %}
 
 {% highlight VB %}
+
+For Each items As TreeViewItemAdv In Me.treeView.Items
+
+
+treeView.AddNodeToSelectedItems(items)
+
+Next items
 
 {% endhighlight %}
 

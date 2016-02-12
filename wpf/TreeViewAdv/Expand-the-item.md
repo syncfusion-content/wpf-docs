@@ -63,6 +63,10 @@ treeViewItemAdv.IsExpanded = true;
 
 {% highlight VB %}
 
+' Enable IsExpanded
+
+treeViewItemAdv.IsExpanded = True
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -115,7 +119,6 @@ Use the following code to set this property.
 
 </syncfusion:TreeViewAdv>
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -139,6 +142,18 @@ treeViewAdv.AnimationType = AnimationType.None;
 {% endhighlight %}
 
 {% highlight VB %}
+
+' Set animation type as Fade.
+
+treeViewAdv.AnimationType = AnimationType.Fade
+
+' Set animation type as Slide.
+
+treeViewAdv.AnimationType = AnimationType.Slide
+
+' Set animation type as None.
+
+treeViewAdv.AnimationType = AnimationType.None
 
 {% endhighlight %}
 
@@ -197,6 +212,10 @@ treeViewAdv.AnimationSpeed = 2;
 {% endhighlight %}
 
 {% highlight VB %}
+
+' Set animation speed
+
+treeViewAdv.AnimationSpeed = 2
 
 {% endhighlight %}
 
@@ -271,6 +290,7 @@ Title="MainWindow" Height="350" Width="525">
 {% tabs %}
 
 {% highlight C# %}
+
 DoubleAnimation expandanimation=new DoubleAnimation(){Duration=new Duration(new TimeSpan(0,0,2))};
 
 treeViewItemAdv.ExpandAnimation = expandanimation;
@@ -278,6 +298,10 @@ treeViewItemAdv.ExpandAnimation = expandanimation;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Dim expandanimation As New DoubleAnimation() With {.Duration = New Duration(New TimeSpan(0,0,2))}
+
+treeViewItemAdv.ExpandAnimation = expandanimation
 
 {% endhighlight %}
 

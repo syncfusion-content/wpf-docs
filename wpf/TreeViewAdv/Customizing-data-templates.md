@@ -144,6 +144,119 @@ this.RaisePropertyChanged(() => this.Models);
 
 {% highlight VB %}
 
+Public Class Model
+	Inherits NotificationObject
+
+
+Public Sub New()
+
+
+Models = New ObservableCollection(Of Model)()
+
+End Sub
+
+'INSTANT VB NOTE: The variable caption was renamed since Visual Basic does not allow variables and other class members to have the same name:
+Private caption_Renamed As String = String.Empty
+
+Public ReadOnly Property Caption() As String
+
+
+[Get]
+
+If True Then
+
+Return caption_Renamed
+
+End If
+
+[Set]
+
+If True Then
+
+caption_Renamed = value
+
+Me.RaisePropertyChanged(Function() Me.Caption)
+
+End If
+
+End Property
+
+Private isChekced As Boolean = False
+
+Public ReadOnly Property IsChecked() As Boolean
+
+
+[Get]
+
+If True Then
+
+Return isChekced
+
+End If
+
+[Set]
+
+If True Then
+
+isChekced = value
+
+Me.RaisePropertyChanged(Function() Me.IsChecked)
+
+End If
+
+End Property
+
+Private isChekable As Boolean = False
+
+Public ReadOnly Property IsCheckable() As Boolean
+
+
+[Get]
+
+If True Then
+
+Return isChekable
+
+End If
+
+[Set]
+
+If True Then
+
+isChekable = value
+
+Me.RaisePropertyChanged(Function() Me.IsCheckable)
+
+End If
+
+End Property
+
+Public ReadOnly Property Models() As ObservableCollection(Of Model)
+
+
+[Get]
+
+If True Then
+
+Return models_Renamed
+.
+
+End If
+
+[Set]
+
+If True Then
+
+models_Renamed = value
+
+Me.RaisePropertyChanged(Function() Me.Models)
+
+End If
+
+End Property
+
+End Class
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -256,6 +369,117 @@ _treeitems = value;
 
 {% highlight VB %}
 
+Public Class ViewModel
+	Inherits NotificationObject
+
+
+Public Sub New()
+
+
+TreeItems = New ObservableCollection(Of Model)()
+
+Dim model1 As New Model() With {.Caption = "WPF"}
+
+Dim model2 As New Model() With {.Caption = "Silverlight"}
+
+Dim model3 As New Model() With {.Caption = "ASP.Net"}
+
+Dim model4 As New Model() With {.Caption = "ASP.Net MVC"}
+
+Dim mainmodel1 As New Model() With {.Caption = "User Interface"}
+
+mainmodel1.Models.Add(model1)
+
+mainmodel1.Models.Add(model2)
+
+mainmodel1.Models.Add(model3)
+
+mainmodel1.Models.Add(model4)
+
+Dim model5 As New Model() With {
+	.Caption = "WPF",
+	.IsCheckable=True
+}
+
+Dim model6 As New Model() With {
+	.Caption = "Silverlight",
+	.IsCheckable = True
+}
+
+Dim model7 As New Model() With {
+	.Caption = "ASP.Net",
+	.IsCheckable = True
+}
+
+Dim model8 As New Model() With {
+	.Caption = "ASP.Net MVC",
+	.IsCheckable = True
+}
+
+Dim mainmodel2 As New Model() With {
+	.Caption = "Business Intelligence",
+	.IsCheckable = True
+}
+
+mainmodel2.Models.Add(model5)
+
+mainmodel2.Models.Add(model6)
+
+mainmodel2.Models.Add(model7)
+
+mainmodel2.Models.Add(model8)
+
+Dim model9 As New Model() With {.Caption = "WPF"}
+
+Dim mode20 As New Model() With {.Caption = "Silverlight"}
+
+Dim mode21 As New Model() With {.Caption = "ASP.Net"}
+
+Dim mainmodel3 As New Model() With {.Caption = "Reporting"}
+
+mainmodel3.Models.Add(model9)
+
+mainmodel3.Models.Add(mode20)
+
+mainmodel3.Models.Add(mode21)
+
+Dim [mod] As New Model() With {.Caption = "Syncfusion Essential Studio"}
+
+[mod].Models.Add(mainmodel1)
+
+[mod].Models.Add(mainmodel2)
+
+[mod].Models.Add(mainmodel3)
+
+TreeItems.Add([mod])
+
+End Sub
+
+Public _treeitems As ObservableCollection(Of Model)
+
+Public ReadOnly Property TreeItems() As ObservableCollection(Of Model)
+
+
+[Get]
+
+If True Then
+
+Return _treeitems
+
+End If
+
+[Set]
+
+If True Then
+
+_treeitems = value
+
+End If
+
+End Property
+
+End Class
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -354,6 +578,32 @@ return window.Resources["NormalTemplate"] as DataTemplate;
 
 {% highlight VB %}
 
+Public Class TreeViewAdvItemTemplateSelector
+	Inherits DataTemplateSelector
+
+
+Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+
+
+Dim window As Window = Application.Current.MainWindow
+
+If DirectCast(item, Model).IsCheckable Then
+
+
+Return TryCast(window.Resources("CheckableTemplate"), DataTemplate)
+
+
+Else
+
+
+Return TryCast(window.Resources("NormalTemplate"), DataTemplate)
+
+End If
+
+End Function
+
+End Class
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -396,6 +646,7 @@ return window.Resources["NormalTemplate"] as DataTemplate;
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}" >
 
 </syncfusion:TreeViewAdv>
@@ -503,6 +754,34 @@ return window.Resources["NormalEditTemplate"] as DataTemplate;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Public Class TreeViewAdvEditTemplateSelector
+	Inherits DataTemplateSelector
+
+
+Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+
+
+Dim window As Window = Application.Current.MainWindow
+
+If DirectCast(item, Model).IsCheckable Then
+
+
+Return TryCast(window.Resources("CheckableEditTemplate"), DataTemplate)
+
+End If
+
+[Else]
+
+If True Then
+
+Return TryCast(window.Resources("NormalEditTemplate"), DataTemplate)
+
+End If
+
+End Function
+
+End Class
 
 {% endhighlight %}
 

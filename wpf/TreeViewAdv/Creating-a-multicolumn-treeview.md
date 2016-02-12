@@ -74,6 +74,10 @@ treeViewAdv.MultiColumnEnable = true;
 
 {% highlight VB %}
 
+'Enable multiple column enable
+
+treeViewAdv.MultiColumnEnable = True
+
 {% endhighlight %}
 
 {% endtabs %}  
