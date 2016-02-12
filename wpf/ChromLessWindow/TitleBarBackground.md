@@ -21,7 +21,9 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 Title="MainWindow" Height="350" Width="525"  TitleBarBackground="Red"   x:Name="_chromelessWindow"  
 
-syncfusion:SkinStorage.VisualStyle="Metro"  xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+syncfusion:SkinStorage.VisualStyle="Metro"  
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 
 <Grid>
 
