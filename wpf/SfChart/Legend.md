@@ -458,7 +458,7 @@ Orientation of the Legend can be vertical or horizontal. By default the [`Orient
 
 **ItemTemplate**
 
-You can customize each legend item using [`ItemTemplate`] property in ChartLegend as in below code snippet:
+You can customize each legend item using `ItemTemplate` property in ChartLegend as in below code snippet:
 
 {% tabs %}
 
@@ -544,7 +544,7 @@ public class ImageConverter:IValueConverter
 **Customizing** **Legend** **Items** **Layout**
 
 When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using 
-[`ItemsPanel`] property as in below code snippet:
+`ItemsPanel` property as in below code snippet:
 
 {% highlight xml %}
 <chart:SfChart.Legend>
