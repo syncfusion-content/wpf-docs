@@ -69,7 +69,7 @@ Description</th>
 </tr>
 <tr>
 <td>
-IconWidth
+[`IconWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconWidth.html)
 </td>
 <td>
 Gets or sets the double value that represents the legend icon(s) width.
@@ -77,7 +77,7 @@ Gets or sets the double value that represents the legend icon(s) width.
 </tr>
 <tr>
 <td>
-IconHeight
+[`IconHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconHeight.html)
 </td>
 <td>
 Gets or sets the double value that represents that legend icon(s) height.
@@ -85,7 +85,7 @@ Gets or sets the double value that represents that legend icon(s) height.
 </tr>
 <tr>
 <td>
-IconVisibility
+[`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html)
 </td>
 <td>
 Gets or sets the Visibility of the legend icon.
@@ -93,7 +93,7 @@ Gets or sets the Visibility of the legend icon.
 </tr>
 <tr>
 <td>
-ItemMargin
+[`ItemMargin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ItemMargin.html)
 </td>
 <td>
 Gets or sets the margin for the legend items.
@@ -101,7 +101,7 @@ Gets or sets the margin for the legend items.
 </tr>
 <tr>
 <td>
-CornerRadius
+[`CornerRadius`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CornerRadius.html)
 </td>
 <td>
 Gets or sets the corner radius of the legend.
@@ -458,7 +458,7 @@ Orientation of the Legend can be vertical or horizontal. By default the [`Orient
 
 **ItemTemplate**
 
-You can customize each legend item using ItemTemplate property in ChartLegend as in below code snippet:
+You can customize each legend item using [`ItemTemplate`] property in ChartLegend as in below code snippet:
 
 {% tabs %}
 
@@ -544,7 +544,7 @@ public class ImageConverter:IValueConverter
 **Customizing** **Legend** **Items** **Layout**
 
 When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using 
-ItemsPanel property as in below code snippet:
+[`ItemsPanel`] property as in below code snippet:
 
 {% highlight xml %}
 <chart:SfChart.Legend>
