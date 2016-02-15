@@ -265,7 +265,7 @@ By default, it will be displayed outside and positioned at top (using [`DockPosi
 
 **Docking**
 
-Legends can be docked left, right, and top or bottom around the chart area using **DockPosition** property. 
+Legends can be docked left, right, and top or bottom around the chart area using [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) property. 
 By default, the ChartLegend is docked at the top of the chart as mentioned earlier.
 
 To display the legend at the bottom, you can set the [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Bottom** as in below code snippet.
