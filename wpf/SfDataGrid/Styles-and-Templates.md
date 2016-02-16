@@ -1,1600 +1,1098 @@
 ---
 layout: post
-title: Styles and Templates  | SfDataGrid | WPF | Syncfusion
-description: styles and templates 
+title: Styles and Templates in SfDataGrid
+description: How to apply styles and templates in SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Styles and Templates 
+# Styles and Templates
 
+The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary and etc.) can be customized using various properties exposed and editing its Style. 
 
-WPF Styling and Templating refer to a suite of features (styles and templates) that allow developers and designers to create visually compelling effects and consistent appearance for their products.
+## Control Structure of SfDataGrid
 
-## Overview
+![](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
-This section elaborates the information about changing the visual appearance of the DataGrid and its elements. In addition, you can edit the structure of DataGrid and its elements using Blend and visual studio that helps you to customize their appearance. This section includes the following topics:
+## Editing Style in Visual Studio Designer
 
-* Visual Elements
-* Blend Style Editing
-* Visual Style Editing
-* Styling Cells
-* Styling Rows
-* Style Selectors
-* Header Template
-* Template Selectors
-* Conditional Formatting for Cells
-* Alternating Row Style
+You can edit the SfDataGrid style in Visual Studio Designer by right clicking it in design View and click **Edit Template**.
 
-## Visual Elements
+![](Styles-and-Templates_images/Styles-and-Templates_img2.png)
 
+By clicking **Edit a Copy**, it will generate default template of SfDataGrid in **XAML view** and you can edit the default style.
 
-The following screenshot displays the elements present in the DataGrid.
+## Editing DataGrid Elements Style in Visual Studio Designer
 
+You can edit the SfDataGrid elements style in Visual Studio Designer by right clicking it in designer view and click **Edit Additional Templates**.
 
+![](Styles-and-Templates_images/Styles-and-Templates_img3.png)
 
-![](Features_images/Features_img145.png)
+You can edit or create new style for the following SfDataGrid elements through **Edit Additional Templates** option,
 
+1. HeaderStyle
+2. HeaderTemplate
+3. CellStyle
+4. RowStyle
+5. GroupDropAreaStyle
+6. CaptionSummaryCellStyle
+7. CaptionSummaryRowStyle
+8. GroupSummaryCellStyle
+9. GroupSummaryRowStyle
+10. TableSummaryCellStyle
+11. TableSummaryRowStyle
+12. UnBoundRowCellStyle
+13. UnBoundRowStyle
+14. FilterPopupStyle
+15. FilterPopupTemplate
+16. DetailsViewDataGridStyle
 
+N> Visual Studio Editing option is available from Visual Studio 2012 and higher versions only.
 
-Elements of DataGrid Control
-{:.caption}
-A DataGrid comprises of the following elements:
+## Writing Style by TargetType
 
-* GridCell - Displays the data in cell corresponding to the column.
-* GridHeaderCellControl - Displays the column name, Sort indication and Filter                                                                                                funnel.
-* GridStackedHeaderCellControl - Displays the Stacked header informations.
-* GridCaptionSummaryCell - Displays the group caption and caption summary value.
-* GridTableSummaryCell - Displays the table summary values.
-* GridGroupSummaryCell - Displays the group summary values.
-* HeaderRowControl - Container for GridHeaderCellControl and GridStackedHeaderCellControl collection.
-* VirtualizingCellsControl - Container for GridCell control Collection
-* TableSummaryRowControl - Container for Collection of GridTableSummaryCell.
-* CaptionSummaryRowControl - Represents the Group Row header. Container for GridCaptionSummarycell.  
-* GroupSummaryRowContro l - Container for collection of GridGroupSummaryCell.
-* GroupDropArea - Shows grouped columns in the DataGrid   control.
-* GroupDropAreaItem - Represents the grouped columns in GroupDropArea.
+The appearance of SfDataGrid and its inner elements can be customized by writing style of TargetType to those control. If the key is not specified, then the style will be applied to all the SfDataGrid in its scope. You can apply specific to SfDataGrid or column or cell using various properties exposed.
+ 
+## Styling Record cell
 
-## Blend Style Editing
+The record cells can be customized by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
 
-
-DataGrid allows you to edit the styles of DataGrid and its elements in Expression blend, as your requirement.
-
-### Edit DataGrid Style in Expression Blend
-
-The section explains you how to edit a SfDataGrid style in ExpressionBlend. To Edit the control style in ExpressionBlend follow the steps,
-
-* Open your application in Expression Blend.
-* In Object and Timeline Pane select SfDataGrid control.
-
-
-
-![objectandtimeline](Features_images/Features_img146.png)
-
-
-
-Object and Timeline Pane
-{:.caption}
-* From the menu bar select Object > EditStyle.
-
-
-
-![EditStyle](Features_images/Features_img147.png)
-
-
-
-Selecting EditStyle from Object in Menu Bar
-{:.caption}
-You can see two options in submenu,
-
-* Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened as follows.
-
-
-
-![createresource1](Features_images/Features_img148.png)
-
-
-
-Create Style Resources dialog box
-{:.caption}
-The Create Style Resources dialog prompts you to enter the name or change the name for your style, also you can select the location where your style is defined.
-
-* Create Empty- Creates an empty style for the SfDataGrid. When you select this option, the same Create style Resources dialog is opened. You can enter the name or change the name of style and select the location where your style is defined.
-
-
-
-![createresource2](Features_images/Features_img149.png)
-
-
-
-Creating empty style for SfDataGrid
-{:.caption}
-Click OK, Expression Blend generates the style of the SfDatagrid control in the Resource section. The properties available for the style are loaded in the ‘Properties’ pane and you can modify its default values. You can also edit the generated XAML in the XAML view or in VisualStudio.
-
-### Edit DataGrid Elements in Expression Blend
-
-You can also edit the Datagrid elements in ExpressionBlend. To edit the SfDatagrid elements in ExpressionBlend follow the steps,
-
-* Open your application in Expression Blend.
-* In Object and Timeline Pane select SfDataGrid control.
-
-
-
-![](Features_images/Features_img150.png)
-
-
-
-Object and Timeline Pane
-{:.caption}
-* From menu bar select the Object > Edit Additional Templates.
-
-
-
-![](Features_images/Features_img151.png)
-
-
-
-Selecting Edit Additional Styles from Object in Menu Bar
-{:.caption}
-You can select the available DataGrid element templates that you can modify the style. For example when you select EditCellStyle, you have following two options.
-
-* Edit a Copy _–_Edits a Copy of the default style. When you select this option, a new dialog window is opened.
-
-
-
-![](Features_images/Features_img152.png)
-
-
-
-Create Style Resources dialog box
-{:.caption}
-The Create Style Resources dialog prompts you to enter the name or change the name for your style. Also you can select the location where your style is defined.
-
-* Create Empty_-_ creates an empty style for the SfDataGrid. When you select this same option, the same Create Style Resources dialog is opened. You can enter the name or change the name of style and select the location where your style is defined.
-
-
-
-![](Features_images/Features_img153.png)
-
-
-
-Creating empty style for SfDataGrid
-{:.caption}
-Click OK, Expression Blend generates the style of the GridCell in the Resource section. The properties available for the styles are loaded in the Properties pane and you can modify their default values. You can also edit the generated XAML in the XAML view or in VisualStudio.
-
-You can also edit the style of the following Datagrid elements in Expression Blend.
-
-* CaptionSummaryCellStyle.
-* CaptionSummaryRowStyel.
-* FilterPopupStyle.
-* FilterPopupTemplate.
-* GroupSummaryCellStyle.
-* GroupSummaryRowStyle.
-* HeaderStyle
-* HeaderTemplate
-* RowStyle
-* TableSummaryCellStyle
-* TableSummaryRowStyle.
-
-## Visual Style Editing
-
-
-DataGrid allows you to edit the styles of DataGrid and its elements in Visual studio as your requirement.
-
-N> Visual Style Editing option is availble in Visual Studio 2012 and higher versions only.
-
-
-
-
-
-### Edit DataGrid in Visual Studio Design View.
-
-This section explains you how to edit a SfDataGrid style in VisualStudioDesingView. To Edit the control style in Visual studio follow the steps.
-
-* Open your application in Visual Studio.
-* Open Designview>>Right-click on the designview. Menu options are displayed.
-* Click EditTemplates, you can see the following two options. 
-
-
-
-![](Features_images/Features_img154.png)
-
-
-
-Designview in Visual Studio
-{:.caption}
-* Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened.
-
-![](Features_images/Features_img155.png)
-
-
-
-Create style Resources dialog box
-{:.caption}
-The Create style Resources dialog prompts you to enter the name or change the name of style. Also you can select the location where your style is defined.
-
-* Create Empty- creates an empty style for the SfDataGrid. When you select this option, the same Create style Resources dialog is opened. You can enter name or change the name of style and select the location where your style is defined.
-
-
-
-![](Features_images/Features_img156.png)
-
-
-Creating empty style for SfDataGrid
-{:.caption}
-Click OK, Visual Studio generates the style of DataGrid in the Resource section.The style of the DataGrid control is loaded in the XAML.  You can also edit the generated XAML in the XAML view.
-
-### Edit DataGrid Elements in VisualStudio Desing View
-
-This section explains you how to edit a SfDataGrid elements style in VisualStudioDesingView. To Edit the DataGrid element style in Visual Studio follow the steps,
-
-* Open your application in Visual Studio.
-* Open Designview>>Right-click on the designview. Menu options are displayed.
-* Click EditAdditionalTemplates>>EditCellStyle, you can have the following two menu options.
-
-
-
-![](Features_images/Features_img157.png)
-
-
-
-Selecting EditCellStyle from EditAdditionalTemplates in Designview
-{:.caption}
-* Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened.
-
-
-
-![](Features_images/Features_img158.png)
-
-
-
-Create style Resources dialog box
-{:.caption}
-The Create style Resources dialog prompts you to enter the name or change the name of style.Also you can select the location where your style is defined.
-
-* Create Empty- creates an empty style for the GridCell. When you select this option, the same Create style Resources dialog is opened. You can enter the name or change the name of style and select the location where your style is defined.
-
-
-
-![](Features_images/Features_img159.png)
-
-
-
-Creating empty style for SfDataGrid
-{:.caption}
-Click OK, Visual Studio generates the style of GridCell in the Resource section.The style of the GridCell is loaded in the XAML  You can also edit the generated XAML in the XAML view.
-
-You can also edit the style of the following DataGrid elements in Visual Studio.
-
-* CaptionSummaryCellStyle.
-* CaptionSummaryRowStyel.
-* FilterPopupStyle.
-* FilterPopupTemplate.
-* GroupSummaryCellStyle.
-* GroupSummaryRowStyle.
-* HeaderStyle
-* HeaderTemplate
-* RowStyle
-* TableSummaryCellStyle
-* TableSummaryRowStyle.
-
-## Styling Cells
-
-
-DataGrid control offers the following properties to apply custom styling for cells.
-
-Styling cells property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Target Element Type</th><th>
-DataContext</th></tr>
-<tr>
-<td>
-SfDataGrid.CellStyle,GridColumn.CellStyle</td><td>
-Applies styles to GridCell</td><td>
-GridCell</td><td>
-Business object</td></tr>
-<tr>
-<td>
-SfDataGrid.CaptionSummaryCellStyle</td><td>
-Applies styles to Group Caption Summary Cell</td><td>
-GridCaptionSummaryCell</td><td>
-Group</td></tr>
-<tr>
-<td>
-SfDataGrid.GroupSummaryCellStyle</td><td>
-Applies styles to Group Summary Cell</td><td>
-GridGroupSummaryCell</td><td>
-SummaryRecordEntry</td></tr>
-<tr>
-<td>
-SfDataGrid.TableSummaryCellStyle</td><td>
-Applies styles to Table Summary Cell</td><td>
-GridTableSummaryCell</td><td>
-SummaryRecordEntry</td></tr>
-<tr>
-<td>
-SfDataGrid.HeaderStyle,GridColumn.HeaderStyle</td><td>
-Applies styles to Column Header</td><td>
-GridHeaderCellControl</td><td>
-Null</td></tr>
-</table>
-
-
-### SfDataGrid.CellStyle
-
-DataGrid displays all the column values in cells. GridCell is base type for all the cells in the Grid.  These cells are styled by creating appropriate style for the cells and setting that to SfDataGrid.CellStyle property.
-
-The following code example illustrates applying styles for cells.
-
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
-<!--  Grid Cell Style  -->
-
 <Window.Resources>
-
-<Style x:Key="customCellStyle"  TargetType="syncfusion:GridCell">
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="BorderThickness" Value="0,0,0,1" />
-
-<Setter Property="Padding" Value="10,0,0,0" />
-
-<Setter Property="FontFamily" Value=" Segoe UI" />
-
-<Setter Property="Foreground" Value="#FF2A2A2A" />
-
-<Setter Property="FontSize" Value="16" />
-
-</Style>
-
+    <Style TargetType="syncfusion:GridCell" x:Key="customCellStyle">
+        <Setter Property="Background" Value="Bisque" />
+    </Style>
 </Window.Resources>
 
-<syncfusion:SfDataGrid  x:Name="datagrid" 
-
-                        ItemsSource="{Binding ItemsSource}"
-
-                        CellStyle="{StaticResource customCellStyle}" />
-
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       CellStyle="{StaticResource customCellStyle}"
+                       ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
+{% endtabs %}
 
+You can also set the `CellStyle` to particular column in below way.
 
-
-N> DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property.
-
-### SfDataGrid.CaptionSummaryCellStyle
-
-Group caption row displays the data i.e. Group caption text and caption summary values in GridCaptionSummaryCell. You can apply custom style for GridCaptionSummaryCell using this property.
-
-The following code example illustrates this.
-
-
-
+{% tabs %}
 {% highlight xaml %}
+<syncfusion:GridTextColumn MappingName="OrderID">
+    <syncfusion:GridTextColumn.CellStyle>
+        <Style TargetType="syncfusion:GridCell">
+            <Setter Property="Background" Value="LightBlue" />
+        </Style>
+    </syncfusion:GridTextColumn.CellStyle>
+</syncfusion:GridTextColumn>
+{% endhighlight %}
+{% endtabs %}
 
+N> `GridColumn.CellStyle` takes higher priority than `SfDataGrid.CellStyle` property.
 
+![](Styles-and-Templates_images/Styles-and-Templates_img4.png)
 
+### Changing Grid line border as dotted line
 
+You can change the gridline border as dotted line by customizing [GridCell.BorderBrush](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Windows.Controls.Control.BorderBrush)&rd=true) property.
 
+{% tabs %}
+{% highlight xaml %}
 <Window.Resources>
-
-<Style x:Key="captionSummaryCellStyle" TargetType="syncfusion:GridCaptionSummaryCell">
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="FontWeight" Value="Normal" />
-
-<Setter Property="Background" Value="Yellow" />
-
-</Style>
-
+    <Style TargetType="syncfusion:GridCell">
+        <Setter Property="BorderBrush">
+            <Setter.Value>
+                <DrawingBrush Viewport="0,0,7,7" ViewportUnits="Absolute" TileMode="Tile">
+                    <DrawingBrush.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="Black">
+                                <GeometryDrawing.Geometry>
+                                    <GeometryGroup>
+                                        <RectangleGeometry Rect="0,0,50,50" />
+                                        <RectangleGeometry Rect="50,50,50,50" />
+                                    </GeometryGroup>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </Window.Resources>
 
-
-
-<syncfusion:SfDataGrid   x:Name="datagrid" 
-
-                           AllowSorting="True"           
-
-                           CaptionSummaryCellStyle="{StaticResource captionSummaryCellStyle}" 
-
-                           ItemsSource="{Binding OrdersDetails}" />
-
-
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ItemsSource="{Binding Orders}">
 {% endhighlight %}
+{% endtabs %}
 
+![](Styles-and-Templates_images/Styles-and-Templates_img5.png)
 
-### SfDataGrid.GroupSummaryCellStyle
+### Changing Grid line color
 
-GroupSummary row displays all the summary values in GroupSummaryCells. You can apply the style for GroupSummaryCell using this property. The following code example illustrates this.
+You can also change the gridline color by setting [GridCell.BorderBrush](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Windows.Controls.Control.BorderBrush)&rd=true) property.
 
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
 <Window.Resources>
-
-<Style x:Key="groupSummaryCellStyle" TargetType="syncfusion:GridGroupSummaryCell">
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="FontWeight" Value="Normal" />
-
-<Setter Property="Background" Value="Bisque" />
-
-</Style>
-
+    <Style TargetType="syncfusion:GridCell">
+        <Setter Property="BorderBrush" Value="Green" />
+    </Style>
 </Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AllowSorting="True"
-
-                         GroupSummaryCellStyle="{StaticResource groupSummaryCellStyle}"
-
-                         ItemsSource="{Binding OrdersDetails}" />
-
 {% endhighlight %}
+{% endtabs %}
 
+## Styling Record row
 
+The record rows can be customized by writing style of TargetType [VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.RowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyle.html) property.
 
-### SfDataGrid.TableSummaryCellStyle
-
-All the table summary values are displayed in GridTableSummaryCell. DataGrid enables you to apply style for GridTableSummaryCell using this property. The following code example illustrates this.
-
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
 <Window.Resources>
-
-<Style x:Key="tableSummaryCellStyle" TargetType="syncfusion:GridTableSummaryCell">
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="FontWeight" Value="Normal" />
-
-<Setter Property="Background" Value="Bisque" />
-
-</Style>
-
+    <Style TargetType="syncfusion:VirtualizingCellsControl" x:Key="customRowStyle">
+        <Setter Property="Background" Value="Bisque"/>
+    </Style>
 </Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" AllowSorting="True"
-
-TableSummaryCellStyle="{StaticResource tableSummaryCellStyle}"
-
-ItemsSource="{Binding OrdersDetails}" />
-
-
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ItemsSource="{Binding Orders}" 
+                       RowStyle="{StaticResource customRowStyle}"/>
 {% endhighlight %}
+{% endtabs %}
 
-
-### SfDataGrid.HeaderStyle
-
-DataGrid displays the column header in GridHeaderCellControl that displays the column header text and shows the sorting icon when you sort the column. By using this property, you can apply style for GridHeaderCellControl. The following code example illustrates this.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>
-
-<Style x:Key="headerCellStyle" TargetType="syncfusion:GridHeaderCellControl">
-
-<Setter Property="Background" Value="Transparent" />
-
-<Setter Property="BorderBrush" Value="#FFCEE7E7" />
-
-<Setter Property="BorderThickness" Value="0,0,1,0" />
-
-<Setter Property="HorizontalContentAlignment" Value="Left" />
-
-<Setter Property="Padding" Value="10,3,3,3" />
-
-<Setter Property="FontFamily" Value="Segoe UI" />
-
-<Setter Property="FontSize" Value="16" />
-
-<Setter Property="Margin" Value="5,0,0,0" />
-
-<Setter Property="Foreground" Value="#FF5E5B5C" />
-
-<Setter Property="FontWeight" Value="SemiBold" />
-
-</Style>
-
-</Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AllowSorting="True"
-
-                         HeaderStyle="{StaticResource headerCellStyle}"
-
-                         ItemsSource="{Binding OrdersDetails}">
-{% endhighlight %}
-
-
-## Styling Rows
-
-The DataGrid control offers the following properties for Styling the different type of rows in Grid
-
-Styling Rows property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Target Element</th><th>
-Data Context</th></tr>
-<tr>
-<td>
-SfDataGrid.RowStyle</td><td>
-Applies styles to Rows.</td><td>
-VirtualizingCellsControl</td><td>
-Business object</td></tr>
-<tr>
-<td>
-SfDataGrid.AlternatingRowStyle</td><td>
-Applies styles for AlternateRow</td><td>
-VirtualizingCellsControl</td><td>
-Business object</td></tr>
-<tr>
-<td>
-SfDataGrid.CaptionSummaryRowStyle</td><td>
-Applies styles to Caption Summary Rows.</td><td>
-CaptionSummaryRowControl</td><td>
-Group </td></tr>
-<tr>
-<td>
-SfDataGrid.GroupSummaryRowStyle</td><td>
-Applies styles to Group Summary Rows.</td><td>
-GroupSummaryRowControl</td><td>
-SummaryRecordEntry</td></tr>
-<tr>
-<td>
-SfDataGrid.TableSummaryRowStyle</td><td>
-Applies styles to Table Summary Rows.</td><td>
-TableSummaryRowControl</td><td>
-SummaryRecordEntry</td></tr>
-</table>
-
-
-### SfDataGrid.RowStyle
-
-All the rows in the DataGrid are of VirtualizingCellsControl type that contains the RowData as data context. SfDataGrid.RowStyle property helps to apply styles for the row.
-
-The following code example illustrates how to set the row style for DataGrid.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>       
-
-<Style x:Key="rowStyle" TargetType="syncfusion:VirtualizingCellsControl">
-
-<Setter Property="Background" Value="Bisque" />
-
-</Style>
-
-<Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         RowStyle="{StaticResource rowStyle}"
-
-                         ItemsSource="{Binding OrdersDetails}" />
-
-
-{% endhighlight %}
-
-
-### SfDataGrid.AlternatingRowStyle
-
-The property helps you to apply style for alternate row in SfDataGrid. It is the type of VirtualizingCellsControl that contains the RowData as data context. SfDataGrid.AlternatingRowStyle property helps to apply styles for the alternate row.
-
-The following code example illustrates how to set the alternate row style for DataGrid.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>       
-
-<Style x:Key="AlternaterowStyle" TargetType="syncfusion:VirtualizingCellsControl">
-
-<Setter Property="Background" Value="Bisque" />
-
-</Style>
-
-<Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AlternatingRowStyle="{StaticResource AlternaterowStyle }"
-
-                         ItemsSource="{Binding OrdersDetails}" />
-
-
-
-{% endhighlight %}
-
-### SfDataGrid.CaptionSummaryRowStyle
-
-This property helps to apply styling for Group caption row (refer the visual elements figure). Group caption row is a type of CaptionSummaryRowControl that inherits from VirtualizingCellsControl containing the Group data as DataContext. 
-
-The following code example illustrates applying styles for Group caption row.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>
-
-<Style x:Key="captionSummaryRowStyle" TargetType="syncfusion:CaptionSummaryRowControl">
-
-<Setter Property="Background" Value="Transparent" />
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="BorderThickness" Value="0" />
-
-<Setter Property="Foreground" Value="#FF2A2A2A" />
-
-</Style>
-
-<Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AllowSorting="True"
-
-                         CaptionSummaryRowStyle="{StaticResource captionSummaryRowStyle}"
-
-                         ItemsSource="{Binding OrdersDetails}">
-
-{% endhighlight %}
-
-
-
-### SfDataGrid.GroupSummaryRowStyle
-
-Group summary is displayed at the bottom of all groups when you add GridSummaryRow object to SfDataGrid.GroupSummaryRows collection. You can apply style to them by editing the GroupSummaryRowControl style.
-
-The following code example illustrates styling of Group Summary rows.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>
-
-<Style x:Key="groupSummaryRowStyle" 
-
-TargetType="syncfusion:GroupSummaryRowControl">
-
-<Setter Property="Background" Value="Transparent" />
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="BorderThickness" Value="0,0,1,1" />
-
-<Setter Property="Foreground" Value="#FF2A2A2A" />
-
-</Style>
-
-<Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AllowSorting="True"
-
-                         GroupSummaryRowStyle="{StaticResource groupSummaryRowStyle}"
-
-                         ItemsSource="{Binding OrdersDetails}">
-
-{% endhighlight %}
-
-### SfDataGrid.TableSummaryRowStyle
-
-DataGrid displays all the Table summary values in TableSummaryRow. By default, table summary row is present at the bottom of DataGrid. TableSummaryRow is of a type TableSummaryRowControl. You can apply styling for TableSummaryRowControl by creating custom style and setting that style to SfDataGrid.TableSummaryRowStyle property.
-
-The following code example displays the styling of TableSummaryRow.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>
-
-<Style x:Key="tableSummaryRowStyle" 
-
-TargetType="syncfusion:TableSummaryRowControl">
-
-<Setter Property="Background" Value="Transparent" />
-
-<Setter Property="BorderBrush" Value="#FF7fd0de" />
-
-<Setter Property="BorderThickness" Value="0,0,1,1" />
-
-<Setter Property="Foreground" Value="#FF2A2A2A" />
-
-</Style>
-
-<Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AllowSorting="True"
-
-                         TableSummaryRowStyle="{StaticResource tableSummaryRowStyle}"
-
-                         ItemsSource="{Binding OrdersDetails}">
-
-{% endhighlight %}
-
-
-
-## Style Selectors
-
-DataGrid provides extensive support for StyleSelectors that helps to apply custom style for cells and rows. To know more about the StyleSelectors you can check the following MSDN link: [http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx).
-
-N> By default, Silverlight does not support StyleSelectors hence DataGrid too._
-
-### Cell Style Selectors
-
-DataGrid control offers following StyleSelector properties to set the style for cells.
-
-
-<table>
-<tr>
-<th rowspan = "2">
-Property</th><th rowspan = "2">
-Description</th><th colspan = "2">
-Parameters</th></tr>
-<tr>
-<td>
-Item</td><td>
-Container</td></tr>
-<tr>
-<td>
-SfDataGrid.CellStyleSelector</td><td>
-Gets or sets a value that applies the style for GridCell based on a custom condition</td><td>
-Corresponding row data.</td><td>
-GridCell</td></tr>
-<tr>
-<td>
-SfDataGrid.CaptionSummaryCellStyleSelector</td><td>
-Gets or sets a value that applies the style for GridCaptionSummaryCell based on a custom condition</td><td>
-Corresponding row data.</td><td>
-GridCaptionSummaryCell</td></tr>
-<tr>
-<td>
-SfDataGrid.GroupSummaryCellStyleSelector</td><td>
-Gets or sets a value that applies the style for GridGroupSummaryCell based on a custom condition</td><td>
-Corresponding row data.</td><td>
-GridGroupSummaryCell</td></tr>
-<tr>
-<td>
-SfDataGrid.TableSummaryCellStyleSelector</td><td>
-Gets or sets a value that applies the style for GridTableSummaryCell based on a custom condition</td><td>
-Corresponding row data.</td><td>
-GridTableSummaryCell</td></tr>
-</table>
-
-
-### Row Style Selectors
-
-DataGrid also offers following StyleSelector properties for applying styles to rows. 
-
-
-<table>
-<tr>
-<th rowspan = "2">
-Property</th><th rowspan = "2">
-Description</th><th colspan = "2">
-Parameters</th></tr>
-<tr>
-<td>
-Item</td><td>
-Container</td></tr>
-<tr>
-<td>
-SfDataGrid.RowStyleSelector</td><td>
-Gets or sets a value that applies the style for VirtualizingCellsControl based on a custom condition</td><td>
-DataRowBase</td><td>
-VirtualizingCellsControl</td></tr>
-<tr>
-<td>
-SfDataGrid.AlternatingRowStyleSelector</td><td>
-Gets or sets a value that applies the style for VirtualizingCellsControl based on a custom condition</td><td>
-DataRowBase</td><td>
-VirtualizingCellsControl</td></tr>
-<tr>
-<td>
-SfDataGrid.CaptionSummaryRowStyleSelector</td><td>
-Gets or sets a value that applies the style for CaptionSummaryRowControl based on a custom condition</td><td>
-DataRowBase</td><td>
-CaptionSummaryRowControl</td></tr>
-<tr>
-<td>
-SfDataGrid.GroupSummaryRowStyleSelector</td><td>
-Gets or sets a value that applies the style for GroupSummaryRowControl based on a custom condition</td><td>
-DataRowBase</td><td>
-GroupSummaryRowControl</td></tr>
-<tr>
-<td>
-SfDataGrid.TableSummaryRowStyleSelector</td><td>
-Gets or sets a value that applies the style for TableSummaryRowControl based on a custom condition</td><td>
-DataRowBase</td><td>
-TableSummaryRowControl</td></tr>
-</table>
-
-
-### Example
-
-In the following example, you can set the different row background for DataGrid by using SfDataGrid.RowStyleSelector property.
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-//Custom Style 
-
-<Application.Resources>
-
-      <Style x:Key="rowStyle1" TargetType="syncfusion:VirtualizingCellsControl">
-
-          <Setter Property="Background" Value="Bisque" />
-
-       </Style>
-
-      <Style x:Key="rowStyle2" TargetType="syncfusion:VirtualizingCellsControl">
-
-          <Setter Property="Background" Value="Aqua" />
-
-      </Style>
-
-</Application.Resources>
-{% endhighlight %}
-
-
-
-{% highlight C# %}
-
-
-
-
-
-// Custom Style Selector.
-
-public class CustomRowStyleSelector : StyleSelector
-
-{
-
-public override Style SelectStyle(object item, DependencyObject container)
-
-{
-
-var row = item as DataRowBase;
-
-// Applying alternating background for rows.
-
-              if (row.RowIndex % 2 != 0)
-
-                return App.Current.Resources["rowStyle1"] as Style;
-
-              else
-
-  return App.Current.Resources["rowStyle2"] as Style;
-
-return base.SelectStyle (item, container);
-
-}
-
-}
-
-{% endhighlight %}
-
-
-{% highlight xaml %}
-
-
-
-
-
-</Window.Resources>
-
-<local:CustomRowStyleSelector x:Key="rowStyleSelector" />
-
-</Window.Resources>
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AllowSorting="True"
-
-                         RowStyleSelector="{StaticResource rowStyleSelector}"
-
-                         ItemsSource="{Binding OrdersDetails}"/>
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the output.
-
-![](Features_images/Features_img160.png)
-
-
-Customized rows with background
-{:.caption}
-## Header Template
-
-### GridColumn.HeaderTemplate
-
-DataGrid provides the extensive support to apply template for column header. By using the following property, you can template the particular column header.
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Data Context</th></tr>
-<tr>
-<td>
-GridColumn.HeaderTemplate</td><td>
-Gets or sets a value that applies template for corresponding column header.</td><td>
-Null</td></tr>
-</table>
-
-
-The following code example illustrates how to use HeaderTemplate in DataGrid Column.
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Window.Resources>
-
-<DataTemplate x:Key="headerTemplate">
-
-<Grid>
-
-<Grid.ColumnDefinitions>
-
-                  <ColumnDefinition Width="Auto" />
-
-                  <ColumnDefinition Width="*" />
-
-</Grid.ColumnDefinitions>
-
-<TextBlock Grid.Column="0" VerticalAlignment="Center"
-
-                  Foreground="White" Text="{Binding}" />
-
-                  <Image Source="/Assets/Icon.jpg" Grid.Column="1" />
-
-</Grid>
-
-</DataTemplate>
-
-</Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AutoGenerateColumns="False"
-
-                         ColumnSizer="Star" 
-
-                         ItemsSource="{Binding GDCSource}">
-
-<syncfusion:SfDataGrid.Columns>
-
-<syncfusion:GridTextColumn MappingName="EmployeeName"
-
-HeaderTemplate="{StaticResource headerTemplate}" />
-
-<syncfusion:GridTextColumn MappingName="EmployeeDesignation" />
-
-<syncfusion:GridTextColumn MappingName="EmployeeAge"  />
-
-<syncfusion:GridTextColumn MappingName="EmployeeGender" />
-
-<syncfusion:GridTextColumn MappingName="EmployeeArea" />
-
-<syncfusion:GridTextColumn MappingName="EmployeeSalary" />
-
-</syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
-
-{% endhighlight %}
-
-
-
-N> DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic.
-
-
-
-## Template Selectors
-
-DataGrid provides extensive support for DataTemplateSelectors that helps to apply custom style for cells and rows, based on a custom condition. To know more about the DataTemplateSelectors, you can check the following MSDN link:
-
-[http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx).
-
-N> By default, Silverlight does not support TemplateSelectors hence DataGrid too.
-
-
-
-DataGrid offers the following DataTemplateSelector property to apply custom templates for cells based on a custom condition.
-
-DataTemplateSelector property table
-
-<table>
-<tr>
-<th rowspan = "2">
-Property</th><th rowspan = "2">
-Description</th><th colspan = "2">
-Parameters</th></tr>
-<tr>
-<td>
-Item</td><td>
-Container</td></tr>
-<tr>
-<td>
-SfDataGrid.CellTemplateSelector</td><td>
-Gets or sets DataTemplateSelectors value that applies custom template for the cells based on a custom condition.It applies for all TemplateColumn.</td><td>
-Corresponding row data</td><td>
-GridCell</td></tr>
-<tr>
-<td>
-GridColumn.CellTemplateSelector</td><td>
-Gets or sets DataTemplateSelectors value that applies custom template for the cells based on a custom condition.It applies for particular column.</td><td>
-Corresponding row data</td><td>
-GridCell</td></tr>
-</table>
-
-
-### SfDataGrid.CellTemplateSelector
-
-By using this property, you can apply custom templates for cells based on a custom condition. It applies for all template column defined in DataGrid. The following code example illustrates applying template selector for DataGrid Template column.
-
-
-{% highlight C# %}
-
-
-
-
-
-class GridCellTemplateSelector : DataTemplateSelector 
-
-{
-
-  public override DataTemplate SelectTemplate(object item, DependencyObject container)
-
-    {
-
-      var data = item as SalesByYear;
-
-      if (data.QS2 ==0)
-
-       return Application.Current.Resources["CellTemplate1"] as DataTemplate;
-
-      else
-
-       return Application.Current.Resources["CellTemplate2"] as DataTemplate;               
-
-    }
-
-}
-{% endhighlight %}
-
-
-
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Application.Resources>
-
-    <DataTemplate x:Key="CellTemplate1">
-
-       <TextBlock Foreground="Blue" Text="{Binding Name}" />
-
-    </DataTemplate>
-
-    <DataTemplate x:Key="CellTemplate2">
-
-        <TextBlock Foreground="Red" Text="{Binding Name}" />
-
-    </DataTemplate>
-
-</Application.Resources>
-
-
-
-</Window.Resources>
-
-<local:GridCellTemplateSelector x:Key="templateselector"/> 
-
-</Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         ItemsSource="{Binding ItemsSource}">
-
-                         CellTemplateSelector="{StaticResource templateselector}"
-
-</syncfusion:SfDataGrid>    
-{% endhighlight %}
-
-
-
-
-The following screenshot displays the output.
-
-![](Features_images/Features_img161.png)
-
-Template selector for DataGrid Template column
-{:.caption}
-###h GridColumn.CellTemplateSelector
-
-By using this property, you can apply custom templates for cells based on a custom condition. The following code example illustrates applying template selector for DataGrid Template column.
-
-
-{% highlight C# %}
-
-
-
-
-
-class GridCellTemplateSelector : DataTemplateSelector
-
-{
-
-public override DataTemplate SelectTemplate(object item, DependencyObject container)
-
-{
-
-var record = item as GridDataControlStylingDemo.ModelData;
-
-if (record != null && record.Gender == "Male")
-
-return Application.Current.Resources["maleCellTemplate"] as DataTemplate;
-
-else if (record != null && record.Gender == "Female")
-
-return Application.Current.Resources["femaleCellTemplate"] as DataTemplate;
-
-else
-
-return base.SelectTemplate(item, container);
-
-}
-
-}
-{% endhighlight %}
-
-
-
-
-{% highlight xaml %}
-
-
-
-
-
-<Application.Resources>
-
-<DataTemplate x:Key="maleCellTemplate">
-
-<Image Source="/Assets/male.jpg" />
-
-</DataTemplate>
-
-<DataTemplate x:Key="femaleCellTemplate">
-
-<Image Source="/Assets/female.jpg" />
-
-</DataTemplate>
-
-</Application.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         ItemsSource="{Binding ItemsSource}">
-
-            <syncfusion:SfDataGrid.Columns>
-
-              <syncfusion:GridTextColumn MappingName="EmployeeId" />
-
-              <syncfusion:GridTextColumn MappingName="EmployeeName" />
-
-              <syncfusion:GridTextColumn MappingName="EmployeeDesignation" />
-
-              <syncfusion:GridTemplateColumn  
-
-                   CellTemplateSelector="{StaticResource cellSelector}"   
-
-                   MappingName="EmployeeGender" />
-
-              </syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>  
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the output.
-
-![](Features_images/Features_img162.png)
-
-
-
-Template selector for Grid Template column
-{:.caption}
-## Conditional Formatting for Cells
-
-DataGrid allows you to format the styles of cells and rows based on certain conditions. This is achieved by defining styling and template properties of DataGrid. To know more about styling and template properties you can refer the following topics:
-
-* Styling Cells
-* Styling Row
-* Style Selectors
-* Template Selectors
-
-### Applying Conditional Formatting to Cells
-
-### Example
-
-In this example you can see how to apply styles, based on conditions for cells in “Change” column using CellTemplate. When the change value is less than zero, then Red color foreground is applied to that cell, else Green color Foreground is applied.
-
-Following steps illustrate how to apply conditional formatting to the Cells in Grid:
-
-1. Create a converter and specify the criteria to apply conditional formatting to the cells.
-
-
-
-
-{% highlight c# %}
-
-
-
-   //Color Converters
-
-				public class ForegroundColorConverter : IValueConverter
-
-				{
-
-				public object Convert(object value, Type targetType, object parameter, string language)
-
-				{
-
-				var data = value as double?;
-
-				if (data != null && data > 0)
-
-				return new SolidColorBrush(Colors.Green);
-
-				else
-
-				return new SolidColorBrush(Colors.Red);
-
-				}
-
-				public object ConvertBack(object value, Type targetType, object parameter, string language)
-
-				{
-
-				throw new NotImplementedException();
-
-				}
-
-				}
-
-
-{% endhighlight %}
-
-
-2. Create a CellTemplate for “Change” column and apply the above Foreground converter to the TextBlock inside the Template.
-
-
-
-
-
-
-{% highlight xaml %}
-
-
-			</Window.Resources>
-
-			<local:ForegroundColorConverter x:Key="changeForegroundConverter"/> 
-
-			</Window.Resources>
-
-
-
-			<syncfusion:SfDataGrid x:Name="datagrid" 
-
-									 AutoGenerateColumns="False" 
-
-									 ItemsSource="{Binding Stocks}">
-
-			<syncfusion:SfDataGrid.Columns>
-
-			<syncfusion:GridTextColumn MappingName="Symbol" />
-
-			<syncfusion:GridTemplateColumn MappingName="Account" />
-
-			<syncfusion:GridTextColumn MappingName="LastTrade" />
-
-			<syncfusion:GridTemplateColumn MappingName="Change">
-
-			<syncfusion:GridTemplateColumn.CellTemplate>
-
-			<DataTemplate>
-
-			<TextBlock x:Name="changeValue" HorizontalAlignment="Center" FontSize="24" FontWeight="Light" Foreground="{Binding Change, Converter={StaticResource changeForegroundConverter}}"                                                                          Text="{Binding Change}" />
-
-			</DataTemplate>
-
-			</syncfusion:GridTemplateColumn.CellTemplate>
-
-			</syncfusion:GridTemplateColumn>
-
-			<syncfusion:GridTextColumn MappingName="PreviousClose" />
-
-			<syncfusion:GridTextColumn MappingName="Open" />
-
-			</syncfusion:SfDataGrid.Columns>
-
-			</syncfusion:SfDataGrid>
-
-			
-{% endhighlight %}
-
-
-   The following screenshot displays the output.
-
-
-
-   ![](Features_images/Features_img163.png)
-
-
-
-   Conditional formatting to the Cells in Grid
-   {:.caption}
-   
-### Applying Conditional Formatting for Rows
-
-### Example
-
-In this example, you can see how to apply style, based on conditions for rows using SfDataGrid.RowStyleSelector. When the “Change” column value is less than zero, then Red color foreground is applied to that Row, else Green color foreground is applied.
-
-Following steps illustrate how to apply conditional formatting to the Rows in Grid:
-
-1. Create a StyleSelector and specify the criteria to apply conditional formatting to the rows.
-
-
-
-
-{% highlight c# %}
-
-
-
-			public class CustomRowStyleSelector : StyleSelector
-
-			{
-
-			public override Style SelectStyle(object item, DependencyObject container)
-
-			{
-
-			var row = item as DataRowBase;
-
-			var data = row.RowData as StockData;
-
-			if (data != null)
-
-			{
-
-			if(data.Change<0)
-
-			return App.Current.Resources["redRowStyle"] as Style;
-
-			else
-
-			return App.Current.Resources["greenRowStyle"] as Style;
-
-			}
-
-			return base.SelectStyle (item, container);
-
-			}
-
-			}
-
-{% endhighlight %}
-
-
-
-2. Assign that custom StyleSelector object to SfDataGrid.RowStyleSelector property. The following code example illustrates this.
-
-
-
-
-
-{% highlight xaml %}
-
-
-			</Window.Resources>
-
-			<local:CustomRowStyleSelector x:Key="rowStyleSelector "/> 
-
-			</Window.Resources>
-
-
-
-			<syncfusion:SfDataGrid x:Name="datagrid" 
-
-									 AutoGenerateColumns="True"
-
-									 ColumnSizer="Star" 
-
-									 RowStyleSelector="{StaticResource rowStyleSelector}"
-
-							ItemsSource="{Binding Stocks}" />
-
-
-
-{% endhighlight %}
-
-
-   The following screenshot displays the output.
-
-
-
-   ![](Features_images/Features_img164.png)
-
-
-
-   Conditional formatting to the Rows in Grid
-   {:.caption}
-   N> StyleSelectors & TemplateSelectors are not supported by Silverlight
-
-   
+![](Styles-and-Templates_images/Styles-and-Templates_img6.png)
 
 ## Alternating Row Style
 
-You can set the Alternative RowStyle in DataGrid by using SfDataGrid.AlternatingRowStyle__property. 
+You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AlternatingRowStyle.html) and [SfDataGrid.RowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyle.html) property. AlternateRowStyle will be applied based on [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AlternationCount.html) property.
 
-DataGrid allows you to set AlternativeRowCount.By default, AlternatingRowStyle is applied for every alternative second row.To change the alternative row count, you can change it by using AlternationCount property.
-
-The following code example illustrates how to use AlternatingRowStyle in DataGrid.
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
-
 <Window.Resources>
+    <Style TargetType="syncfusion:VirtualizingCellsControl" x:Key="alternatingRowStyle">
+        <Setter Property="Background" Value="LightBlue"/>
+    </Style>
 
-<Style x:Key="alternateRowstyle" TargetType="syncfusion:VirtualizingCellsControl">
-
-      <Setter Property="Background" Value="Pink"/>
-
-      <Setter Property="FontStyle" Value="Italic"/>
-
-      <Setter Property="FontWeight" Value="Bold"/>           
-
-</Style>
-
+    <Style TargetType="syncfusion:VirtualizingCellsControl" x:Key="RowStyle">
+        <Setter Property="Background" Value="Bisque"/>
+    </Style>
 </Window.Resources>
 
-
-
-<syncfusion:SfDataGrid Name="grid"
-
-                           AlternationCount="3"
-
-                           AlternatingRowStyle="{StaticResource alternateRowstyle}"  
-
-
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       AlternatingRowStyle="{StaticResource alternatingRowStyle}" 
+                       AlternationCount="3"
+                       RowStyle="{StaticResource RowStyle}"
+                       ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
+{% endtabs %}
 
+![](Styles-and-Templates_images/Styles-and-Templates_img7.png)
 
-The following screenshot displays the output.
+## Selection
 
+The foreground and background for the selected row, cell can be customized by setting [SfDataGrid.RowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html) and [SfDataGrid.SelectionForegroundBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) property.
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       RowSelectionBrush="DarkBlue"  
+                       SelectionForegroundBrush="Bisque"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
 
-![](Features_images/Features_img165.png)
+![](Styles-and-Templates_images/Styles-and-Templates_img8.png)
 
+## Styling Column Header
 
-AlternatingRowStyle in DataGrid
-{:.caption}
+### Styling Header cell
+
+The header cell can be customized by writing style of TargetType [GridHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property and the particular column can be styled by setting [GridColumn.HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~HeaderStyle.html) property.
+
+N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridHeaderCellControl" x:Key="headerStyle">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="DarkBlue"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       HeaderStyle="{StaticResource headerStyle}"
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img9.png)
+
+### Styling DetailsViewDataGrid header
+
+The header style can be applied to [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) alone by setting [HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property to `DetailsViewDataGrid` in both XAML and code behind.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridHeaderCellControl" x:Key="header">
+        <Setter Property="Foreground" Value="DarkBlue"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+			ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="Details">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid"
+                                       HeaderStyle="{StaticResource header}">
+                </syncfusion:SfDataGrid>
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+If [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is true, you can set the header style to DetailsViewDataGrid in [SfDatataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       AutoGenerateRelations="True"                                
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
+
+void dataGrid_AutoGeneratingRelations
+              (object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
+{
+            e.GridViewDefinition.DataGrid.HeaderStyle = (Style)this.Resources["header"];
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Styling Stacked Headers
+
+The appearance of stacked header can be customized by writing style of TargetType [GridStackedHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html).
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridStackedHeaderCellControl">
+        <Setter Property="FontWeight" Value="ExtraBold"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="DarkBlue"/>
+    </Style>
+</Window.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img10.png)
+
+### Setting different styles to StackedHeader
+
+You can apply the different style to stacked header by overriding the [default renderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) of StackedHeader.
+
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+    <Style x:Key="style1" TargetType="syncfusion:GridStackedHeaderCellControl">
+        <Setter Property="Background" Value="LightBlue" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="FontStyle" Value="Italic" />
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style x:Key="style2" TargetType="syncfusion:GridStackedHeaderCellControl">
+        <Setter Property="Background" Value="Bisque" />
+        <Setter Property="FontFamily" Value="Courier New" />
+        <Setter Property="FontStyle" Value="Oblique" />
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+</Application.Resources>
+{% endhighlight %}
+{% highlight c# %}
+//Default GridStackedCellRenderer is removed.
+this.dataGrid.CellRenderers.Remove("StackedHeader");
+//Customized GridStackedCellRenderer is added.
+this.dataGrid.CellRenderers.Add("StackedHeader", new GridCustomStackedRenderer());
+
+public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
+{
+    public GridCustomStackedRenderer()
+    {
+
+    }
+    public override void OnInitializeEditElement(DataColumnBase dataColumn, GridStackedHeaderCellControl uiElement, object dataContext)
+    {
+        if (dataColumn.ColumnIndex == 0)
+            uiElement.Style = App.Current.Resources["style1"] as Style;
+        else if (dataColumn.ColumnIndex == 2) 
+            uiElement.Style = App.Current.Resources["style2"] as Style;            
+        base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img11.png)
+
+## Setting Default Style for one column
+
+You can also skips the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) to null. Likewise, you can skips all the style properties in particular column (example: `HeaderStyle`). 
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridCell" x:Key="customCellStyle">
+        <Setter Property="Background" Value="Bisque" />
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       CellStyle="{StaticResource customCellStyle}"
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" 
+                                   CellStyle="{x:Null}" />        
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns["OrderID"].CellStyle = null;
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img12.png)
+
+## Styling CaptionSummary 
+
+### Styling CaptionSummary cells
+
+The caption summary cells can be customized by writing style of TargetType [GridCaptionSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCaptionSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridCaptionSummaryCell" x:Key="customCaptionSummaryCell">
+       <Setter Property="FontWeight" Value="Bold"/>
+       <Setter Property="Foreground" Value="DarkBlue"/>
+       <Setter Property="FontStyle" Value="Italic"/>
+       <Setter Property="FontSize" Value="14"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       ShowGroupDropArea="True"
+                       CaptionSummaryCellStyle="{StaticResource customCaptionSummaryCell}"
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img13.png)
+
+### Styling CaptionSummary rows
+
+The caption summary rows can be customized by writing style of TargetType [GridCaptionSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:CaptionSummaryRowControl" x:Key="captionSummaryRowStyle">
+        <Setter Property="FontWeight" Value="SemiBold"/>
+       <Setter Property="Background" Value="Bisque"/>
+       <Setter Property="FontStyle" Value="Oblique"/>
+       <Setter Property="FontSize" Value="18"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ShowGroupDropArea="True"
+                       CaptionSummaryRowStyle="{StaticResource captionSummaryRowStyle}"
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img14.png)
+
+## Styling GroupSummary
+
+### Styling GroupSummary cells
+
+The group summary cells can be customized by writing style of TargetType [GridGroupSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridGroupSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridCaptionSummaryCell" x:Key="customCaptionSummaryCell">
+       <Setter Property="FontWeight" Value="SemiBold"/>
+       <Setter Property="Foreground" Value="DarkBlue"/>
+       <Setter Property="FontStyle" Value="Oblique"/>
+       <Setter Property="FontSize" Value="14"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ShowGroupDropArea="True"
+                       GroupSummaryCellStyle="{StaticResource customGroupSummary}"
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img15.png)
+
+### Styling GroupSummary rows
+
+The group summary rows can be customized by writing style of TargetType [GridGroupSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GroupSummaryRowControl" x:Key="customGroupSummaryRowControl">
+        <Setter Property="Background" Value="Bisque"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       GroupSummaryRowStyle="{StaticResource customGroupSummaryRowControl}"
+                       ShowGroupDropArea="True"                                                
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img16.png)
+
+## Styling TableSummary
+
+### Styling TableSummary cells
+
+The table summary cells can be customized by writing style of TargetType [GridTableSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style x:Key="customTableSummary" TargetType="syncfusion:GridTableSummaryCell">
+            <Setter Property="Foreground" Value="DarkBlue" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ItemsSource="{Binding Orders}"
+                       TableSummaryCellStyle="{StaticResource customTableSummary}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img17.png)
+
+### Styling TableSummary rows
+
+The table summary rows can be customized by writing style of TargetType [GridTableSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TableSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:TableSummaryRowControl" x:Key="tableSummaryRowStyle">
+        <Setter Property="Background" Value="Bisque"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"                
+                       ItemsSource="{Binding Orders}" 
+                       TableSummaryRowStyle="{StaticResource tableSummaryRowStyle}"  />
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img18.png)
+
+## Styling UnboundRows
+
+### Styling unbound row cells
+
+The unbound row cells can be customized by writing style of TargetType [GridUnBoundRowCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Style TargetType="syncfusion:GridUnBoundRowCell" x:Key="style">
+    <Setter Property="FontWeight" Value="SemiBold"/>
+</Style>
+
+<syncfusion:SfDataGrid x:Name="sfDataGrid"                                                                                                            
+                       ItemsSource="{Binding YearlySalesDetails}"                            
+                       UnBoundRowCellStyle="{StaticResource style}"/>              
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img19.png)
+
+### Styling unbound row 
+
+The unbound rows can be customized by writing style of TargetType [UnBoundRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Style TargetType="syncfusion:UnBoundRowControl" x:Key="rowStyle">
+    <Setter Property="Foreground" Value="blue"/>
+</Style>
+
+<syncfusion:SfDataGrid x:Name="sfDataGrid"                                                                                                            
+                       ItemsSource="{Binding YearlySalesDetails}" 
+                       UnBoundRowStyle="{StaticResource rowStyle}"/>                      
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img20.png)
+
+## Styling AddNewRow
+
+The appearance of AddNewRow can customized by writing style of TargetType [AddNewRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AddNewRowControl.html).
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:AddNewRowControl">
+        <Setter Property="Foreground" Value="DarkBlue"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       AddNewRowPosition="Top"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img21.png)
+
+## Styling RowHeader
+
+The appearance of header row can be customized by writing style of TargetType [HeaderRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.HeaderRowControl.html).
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:HeaderRowControl">
+        <Setter Property="Background" Value="Bisque"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+</Window.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img22.png)
+
+### Displaying row index in row header cell
+
+The appearance of row header can be customized by writing style of TargetType [RowHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html).
+
+You can also display the row index value in the row header cell by customizing its style.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GridRowHeaderCell">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="syncfusion:GridRowHeaderCell">
+                    <Border x:Name="PART_RowHeaderCellBorder"
+                        Background="Bisque"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <!--RowIndex is displayed here -->
+                            <TextBlock HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding RowIndex,
+                                    RelativeSource={RelativeSource TemplatedParent}}"
+                                    TextAlignment="Center" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</Window.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img23.png)
+
+## Template Selectors
+
+The [DataTemplateSelectors](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellTemplateSelector.html).
+
+Here, custom template applied to TotalPrice and CustomerID columns.
+
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+    <DataTemplate x:Key="CellTemplate1">
+        <TextBlock Foreground="DarkBlue" Text="{Binding Path=Value}" />
+    </DataTemplate>
+    <DataTemplate x:Key="CellTemplate2">
+        <TextBlock Foreground="DarkRed" Text="{Binding Path=Value}" />
+    </DataTemplate>
+</Application.Resources>
+
+<Window.Resources>
+        <local:GridCellTemplateSelector x:Key="templateSelector"/>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ItemsSource="{Binding Orders}" 
+                       CellTemplateSelector="{StaticResource templateSelector}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTemplateColumn MappingName="TotalPrice" 
+                                       SetCellBoundValue="True" />
+        <syncfusion:GridTemplateColumn MappingName="CustomerName" SetCellBoundValue="True"/>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class GridCellTemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var data = (item as DataContextHelper).Record as OrderInfo;
+        //custom logic is checked.
+        if (data.TotalPrice < 1005)
+            return Application.Current.Resources["CellTemplate1"] as DataTemplate;
+        else
+            return Application.Current.Resources["CellTemplate2"] as DataTemplate;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img24.png)
+
+### Changing HeaderTemplates
+
+You can customize the appearance of particular SfDataGrid column header by setting [SfDataGrid.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~HeaderTemplate.html).
+
+{% tabs %}
+{% highlight xaml %}
+<DataTemplate x:Key="headerTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" VerticalAlignment="Center"
+            Foreground="Black" Text="{Binding}" />
+        <Image Source="/Assets/S3.png" Grid.Column="1" />
+    </Grid>
+</DataTemplate>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ItemsSource="{Binding Orders}" 
+                       HeaderTemplate="{StaticResource headerTemplate}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img25.png)
+
+### Loading different editor elements in a same column
+
+The different editor elements can be loaded in a same template column conditionally based on data by setting [GridTemplateColumn.EditTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplateSelector.html).
+ 
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+    <DataTemplate x:Key="DatePicker">
+        <DatePicker/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="textbox">
+        <TextBox/>
+    </DataTemplate>
+</Application.Resources>
+
+<Window.Resources>
+    <local:GridCellEditTemplateSelector x:Key="editSelector"/>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"  
+                       AllowEditing="True"            
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTemplateColumn HeaderText="Employee Name"           
+                                       MappingName="CustomerName" 
+                                       EditTemplateSelector="{StaticResource editSelector}" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+For example, in the below code example TextBox or DatePicker will be loaded based on TotalPrice property of Underlying data.
+
+{% tabs %}
+{% highlight c# %}
+public class GridCellEditTemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if((item as OrderInfo).TotalPrice < 1005)
+            return Application.Current.Resources["textbox"] as DataTemplate;
+        else
+            return Application.Current.Resources["DatePicker"] as DataTemplate;            
+    }        
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Styling DetailsViewDataGrid
+
+The appearance of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) can be customized by writing style of TargetType `DetailsViewDataGrid`. You can set to particular SfDataGrid by setting [SfDataGrid.DetailsViewDataGridStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDataGridStyle.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="{x:Type syncfusion:DetailsViewDataGrid}" x:Key="detailsViewStyle">
+        <Setter Property="Background" Value="Bisque" />
+        <Setter Property="BorderBrush" Value="Blue" />
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       AutoGenerateRelations="True"   
+                       DetailsViewDataGridStyle="{StaticResource detailsViewStyle}"           
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img26.png)
+
+## Styling Filter popup
+
+[Refer here for filter popup styling](http://help.syncfusion.com/wpf/sfdatagrid/filtering#appearance-customization)
+ 
+## Styling Sort icon
+
+The appearance of sort indicator can be customized by editing the style of [GridHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). Once the `GridHeaderCellControl` style is edited, go to PART_SortButtonPresenter.
+
+### Default GridHeaderCellControl style
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SortDirectionToVisibilityConverter x:Key="sortDirectionToVisibilityConverter" />
+<syncfusion:SortDirectionToWidthConverter x:Key="sortDirectionToWidthConverter" />
+<Style TargetType="syncfusion:GridHeaderCellControl">
+    <Setter Property="Background" Value="Red" />
+    <Setter Property="BorderBrush" Value="Gray" />
+    <Setter Property="BorderThickness" Value="0,0,1,1" />
+    <Setter Property="HorizontalContentAlignment" Value="Left" />
+    <Setter Property="Padding" Value="5,3,5,3" />
+    <Setter Property="Foreground" Value="Gray" />
+    <Setter Property="FontSize" Value="14" />
+    <Setter Property="FontWeight" Value="Normal" />
+    <Setter Property="IsTabStop" Value="False" />
+    <Setter Property="syncfusion:VisualContainer.WantsMouseInput" Value="True" />
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="syncfusion:GridHeaderCellControl">
+                <Grid>
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="HiddenColumnsResizingStates">
+                            <VisualState x:Name="PreviousColumnHidden">
+                                <Storyboard>
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="3, 0, 1, 1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+
+                            <VisualState x:Name="HiddenState">
+                                <Storyboard>
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="3, 0, 3, 1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                            <VisualState x:Name="NormalState" />
+
+                            <VisualState x:Name="LastColumnHidden">
+                                <Storyboard>
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="0, 0, 3, 1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                        </VisualStateGroup>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="MouseOver" />
+                            <VisualState x:Name="Normal" />
+                        </VisualStateGroup>
+                        <VisualStateGroup x:Name="BorderStates">
+                            <VisualState x:Name="NormalCell" />
+                            <VisualState x:Name="FrozenColumnCell">
+                                <Storyboard BeginTime="0">
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="0,0,1,1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                            <VisualState x:Name="FooterColumnCell">
+                                <Storyboard BeginTime="0">
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_FooterCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="1,0,1,1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                            <VisualState x:Name="BeforeFooterColumnCell">
+                                <Storyboard BeginTime="0">
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_FooterCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                    <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                      Duration="1"
+                                                                      Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                      Storyboard.TargetProperty="BorderThickness">
+                                        <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,1" />
+                                    </ThicknessAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    <Border x:Name="PART_FooterCellBorder"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}" />
+                    <Border x:Name="PART_HeaderCellBorder"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="True">
+                        <Grid Margin="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="Center"
+                                              Focusable="False" />
+
+                            <Border x:Name="PART_FilterPopUpPresenter" />
+
+                            <Grid x:Name="PART_SortButtonPresenter"
+                                    Grid.Column="1"
+                                    SnapsToDevicePixels="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0" MinWidth="{Binding Path=SortDirection, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource sortDirectionToWidthConverter}}" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Path Width="8.938"
+                                      Height="8.138"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Data="F1M753.644,-13.0589L753.736,-12.9639 753.557,-12.7816 732.137,8.63641 732.137,29.7119 756.445,5.40851 764.094,-2.24384 764.275,-2.42352 771.834,5.1286 796.137,29.4372 796.137,8.36163 774.722,-13.0589 764.181,-23.5967 753.644,-13.0589z"
+                                      Fill="Gray"
+                                      SnapsToDevicePixels="True"
+                                      Stretch="Fill"
+                                      Visibility="{Binding Path=SortDirection,
+                                                  RelativeSource={RelativeSource TemplatedParent},
+                                                  ConverterParameter=Ascending,
+                                                  Converter={StaticResource sortDirectionToVisibilityConverter}}">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <TransformGroup.Children>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup.Children>
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                </Path>
+
+                                <Path Width="8.938"
+                                      Height="8.138"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z"
+                                      Fill="Gray"
+                                      SnapsToDevicePixels="True"
+                                      Stretch="Fill"
+                                      Visibility="{Binding Path=SortDirection,
+                                                  RelativeSource={RelativeSource TemplatedParent},
+                                                  ConverterParameter=Decending,
+                                                  Converter={StaticResource sortDirectionToVisibilityConverter}}">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <TransformGroup.Children>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup.Children>
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                </Path>
+
+                                <TextBlock Grid.Column="1"
+                                           Margin="0,-4,0,0"
+                                           VerticalAlignment="Center"
+                                           FontSize="10"
+                                           Foreground="{TemplateBinding Foreground}"
+                                           SnapsToDevicePixels="True"
+                                           Text="{TemplateBinding SortNumber}"
+                                           Visibility="{TemplateBinding SortNumberVisibility}" />
+
+                            </Grid>
+
+                            <syncfusion:FilterToggleButton x:Name="PART_FilterToggleButton"
+                                                           Grid.Column="2"
+                                                           HorizontalAlignment="Stretch"
+                                                           VerticalAlignment="Stretch"
+                                                           SnapsToDevicePixels="True"
+                                                           Visibility="{TemplateBinding FilterIconVisiblity}" />
+
+                        </Grid>
+                    </Border>
+
+                </Grid>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+{% endhighlight %}
+{% endtabs %}
+
+Totally two paths will be present under the PART_SortButtonPresenter. You can change the appearance of Ascending sort indicator by customizing first path present in this. 
+Here, height and color of the indicator is customized in the below code example.
+
+### Customizing Ascending Sort Indicator
+
+{% tabs %}
+{% highlight xaml %}
+<Path Data="F1M753.644,-13.0589L753.736,-12.9639 753.557,-12.7816 732.137,8.63641 732.137,29.7119 756.445,5.40851 764.094,-2.24384 764.275,-2.42352 771.834,5.1286 796.137,29.4372 796.137,8.36163 774.722,-13.0589 764.181,-23.5967 753.644,-13.0589z" 
+        Fill="DarkBlue" 
+        HorizontalAlignment="Center" 
+        Height="15" 
+        Stretch="Fill" 
+        SnapsToDevicePixels="True"
+        VerticalAlignment="Center"
+        Width="12">
+    <Path.RenderTransform>
+        <TransformGroup>
+            <RotateTransform Angle="0"/>
+            <ScaleTransform ScaleY="1" ScaleX="1"/>
+        </TransformGroup>
+    </Path.RenderTransform>
+    <Path.Visibility>
+        <Binding ConverterParameter="Ascending" Path="SortDirection" RelativeSource="{RelativeSource TemplatedParent}">
+            <Binding.Converter>
+                <syncfusion:SortDirectionToVisibilityConverter/>
+            </Binding.Converter>
+        </Binding>
+    </Path.Visibility>
+</Path>
+{% endhighlight %}
+{% endtabs %}
+
+And also, you can change the appearance of Descending sort indicator by customizing second path present in PART_SortButtonPresenter. For example, in the below code example height and color of the indicator is changed.
+
+![](Styles-and-Templates_images/Styles-and-Templates_img27.png)
+
+### Customizing Descending Sort Indicator
+
+{% tabs %}
+{% highlight xaml %}
+<Path Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z"
+        Fill="DarkGreen" 
+        HorizontalAlignment="Center" 
+        Height="15"
+        Stretch="Fill" 
+        SnapsToDevicePixels="True" 
+        VerticalAlignment="Center" 
+        Width="11">
+    <Path.RenderTransform>
+        <TransformGroup>
+            <RotateTransform Angle="0"/>
+            <ScaleTransform ScaleY="1" ScaleX="1"/>
+        </TransformGroup>
+    </Path.RenderTransform>
+    <Path.Visibility>
+        <Binding ConverterParameter="Decending" Path="SortDirection" RelativeSource="{RelativeSource TemplatedParent}">
+            <Binding.Converter>
+                <syncfusion:SortDirectionToVisibilityConverter/>
+            </Binding.Converter>
+        </Binding>
+    </Path.Visibility>
+</Path>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img28.png)
+
+## Styling GroupDropArea
+
+The appearance of `GroupDropArea` can be customized by writing style of TargetType [GroupDropArea](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupDropArea.html). You can disable the water mark displayed in GroupDropArea by setting [WaterMarkTextVisibility](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupDropArea~WatermarkTextVisibility.html) as Collapsed.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:GroupDropArea">
+        <Setter Property="BorderBrush" Value="Blue"/>
+        <Setter Property="Foreground" Value="DarkBlue"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="WatermarkTextVisibility" Value="Visible"/>
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ShowGroupDropArea="True"
+                       ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img29.png)
+
+## Showing busy indicator before loading records
+
+You can show the indication of data loading with the help of BusyIndicator by setting BusyIndicator.IsBusy as True and you can stop it by setting BusyIndicator.IsBusy as false in the ItemSourceChanged event.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfBusyIndicator Name="sfBusyIndicator"
+                            IsBusy="True"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            AnimationType="Gear"/>
+{% endhighlight %}
+{% highlight c# %}
+SfdataGrid.Loaded += SfdataGrid_Loaded;
+SfdataGrid.ItemsSourceChanged += SfdataGrid_ItemsSourceChanged;
+
+async void SfdataGrid_Loaded(object sender, RoutedEventArgs e)
+{
+    this.SfdataGrid.ItemsSource = await (this.DataContext as ViewModel).GetRecords();
+}
+
+void SfdataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs e)
+{
+    sfBusyIndicator.IsBusy = false;
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img30.png)
+
