@@ -1143,7 +1143,7 @@ You can change the `font setting` for one column width calculation using [GridCo
 
 {% tabs %}
 {% highlight c# %}
-Var gridColumn = this.dataGrid.Columns[0];
+var gridColumn = this.dataGrid.Columns[0];
 GridColumnSizer.SetFontFamily(gridColumn, new FontFamily("TimesNewRoman"));
 GridColumnSizer.SetFontSize(gridColumn, 10.0);
 GridColumnSizer.SetMargin(gridColumn, new Thickness(9, 3, 1, 3));
