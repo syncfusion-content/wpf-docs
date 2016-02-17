@@ -2444,7 +2444,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
             Path = new PropertyPath(comboBoxColumn.MappingName),
             Mode = BindingMode.TwoWay,
             UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
-            Converter = (comboBoxColumn.DisplayBinding as Binding).Converter,
+            Converter = new DisplayConverter(comboBoxColumn),
         };
         element.SetBinding(TextBlock.TextProperty, binding);
     }
@@ -2499,7 +2499,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
             Mode = BindingMode.TwoWay,
             UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
         };
-        element.SetBinding(ComboBoxAdv.SelectedValueProperty, binding);
+        element.SetBinding(ComboBoxAdv.SelectedItemsProperty, binding);
 
         var itemsSourceBinding = new Binding { Path = new PropertyPath("ItemsSource"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
         element.SetBinding(ComboBoxAdv.ItemsSourceProperty, itemsSourceBinding);
@@ -2532,12 +2532,12 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
             case Key.Home:
             case Key.Enter:
             case Key.Escape:
-                return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
+                return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
             case Key.Down:
             case Key.Up:
             case Key.Left:
             case Key.Right:
-                return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
+                return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
         }
         return base.ShouldGridTryToHandleKeyDown(e);
     }
@@ -2565,6 +2565,57 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
             ((ComboBoxAdv)CurrentCellRendererElement).SelectedValue = value;
         else
             throw new Exception("Value cannot be Set for Unloaded Editor");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+Below code, returns the display value from multiple selected items.
+
+{% tabs %}
+{% highlight c# %} 
+public class DisplayConverter : IValueConverter
+{
+    GridColumn cachedColumn;
+    public DisplayConverter()
+    {
+
+    }
+
+    public DisplayConverter(GridColumn column)
+    {
+        cachedColumn = column;
+    }
+
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {        
+        var selectedItems = value as IEnumerable;
+        var displayMemberPath = string.Empty;
+
+        var column = cachedColumn as GridComboBoxColumn;               
+        displayMemberPath = column.DisplayMemberPath;                    
+
+        if (selectedItems == null)
+            return null;
+        
+        string selectedItem = string.Empty;
+         PropertyDescriptorCollection pdc = null;
+         var enumerator = selectedItems.GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            var type = enumerator.Current.GetType();
+
+            pdc = pdc ?? TypeDescriptor.GetProperties(type);
+
+                if (!string.IsNullOrEmpty(displayMemberPath))
+                    selectedItem +=  pdc.GetValue(enumerator.Current, displayMemberPath) + " - ";                    
+            }
+        return selectedItem.Substring(0,selectedItem.Length - 2);
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        return value;
     }
 }
 {% endhighlight %}
