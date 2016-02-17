@@ -585,7 +585,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ### Styling GridColumn
 
-`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](GridColumn.CellStyle) property. For more information, refer [Styling and Template](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
+`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) property. For more information, refer [Styling and Template](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
 
 #### Change the font setting
 
@@ -2792,7 +2792,7 @@ public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can initialize and update the binding for edit element by overriding[OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnInitializeEditElement.html) and [OnUpdateEditBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnUpdateEditBinding.html) methods.
+Similarly, you can initialize and update the binding for edit element by overriding [OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnInitializeEditElement.html) and [OnUpdateEditBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnUpdateEditBinding.html) methods.
 
 {% tabs %}
 {% highlight c# %}
