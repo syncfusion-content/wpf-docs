@@ -59,55 +59,13 @@ This can be customized using the [`LegendIcon`](http://help.syncfusion.com/cr/cr
 
 The following properties are used to customize the legend icons.
 
-<table>
-<tr>
-<th>
-Name
-</th>
-<th>
-Description</th>
-</tr>
-<tr>
-<td>
-[`IconWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconWidth.html)
-</td>
-<td>
-Gets or sets the double value that represents the legend icon(s) width.
-</td>
-</tr>
-<tr>
-<td>
-[`IconHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconHeight.html)
-</td>
-<td>
-Gets or sets the double value that represents that legend icon(s) height.
-</td>
-</tr>
-<tr>
-<td>
-[`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html)
-</td>
-<td>
-Gets or sets the Visibility of the legend icon.
-</td>
-</tr>
-<tr>
-<td>
-[`ItemMargin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ItemMargin.html)
-</td>
-<td>
-Gets or sets the margin for the legend items.
-</td>
-</tr>
-<tr>
-<td>
-[`CornerRadius`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CornerRadius.html)
-</td>
-<td>
-Gets or sets the corner radius of the legend.
-</td>
-</tr>
-</table>
+
+* [`IconWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconWidth.html)-Gets or sets the double value that represents the legend icon(s) width.
+* [`IconHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconHeight.html)-Gets or sets the double value that represents that legend icon(s) height.
+* [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html)-Gets or sets the Visibility of the legend icon.
+* [`ItemMargin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ItemMargin.html)-Gets or sets the margin for the legend items.
+* [`CornerRadius`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CornerRadius.html)-Gets or sets the corner radius of the legend.
+
 The following code example illustrates the customization of legend icon.
 
 {% highlight xml %}
