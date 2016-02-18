@@ -265,7 +265,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~SetCellBoundValue.html#) property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~SetCellBoundValue.html#) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -348,7 +348,7 @@ public class CustomCellTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-In the below code, the custom template selector set to `GridColumn.CellTemplateSelector` and set `SetCellBoundValue` to true.
+In the below code, the custom template selector set to `GridColumn.CellTemplateSelector` and set `SetCellBoundValue` to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -585,7 +585,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ### Styling GridColumn
 
-`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](GridColumn.CellStyle) property. For more information, refer [Styling and Template](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
+`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) property. For more information, refer [Styling and Template](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
 
 #### Change the font setting
 
@@ -780,7 +780,7 @@ GridColumn allows  you to change the alignment of `GridCell` and `GridHeaderCell
 
 ### Auto increment
 
-You can allow end-user to increment or decrement the column value’s when `MouseWheel` or pressing <kbd>up</kbd> and <kbd>down</kbd> arrow keys by setting [AllowScrollingOnCircle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~AllowScrollingOnCircle.html) property to true.
+You can allow end-user to increment or decrement the column value’s when `MouseWheel` or pressing <kbd>up</kbd> and <kbd>down</kbd> arrow keys by setting [AllowScrollingOnCircle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~AllowScrollingOnCircle.html) property to `true`.
 
 ### Null value support
 
@@ -1165,7 +1165,7 @@ The `NullText` and `NullValue` properties won’t work, when the `AllowNullValue
 
 ### Setting date time value range
 
-You can restrict and display the input value with in the range using [MinDateTime](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~MinDateTime.html) and [MaxDateTime](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~MaxDateTime.html) properties.
+You can restrict and display the input value within the range using [MinDateTime](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~MinDateTime.html) and [MaxDateTime](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~MaxDateTime.html) properties.
 
 ### Editing support
  
@@ -1181,7 +1181,7 @@ You can delete using <kbd>backspace</kbd> and <kbd>delete</kbd> keys by setting 
 
 ### Enable clock and calendar
 
-By default, the Calendar displayed in dropdown popup. You can enable both Calendar and Clock control in dropdown popup by setting the [EnableClassicStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~EnableClassicStyle.html) to true. 
+By default, the Calendar displayed in dropdown popup. You can enable both Calendar and Clock control in dropdown popup by setting the [EnableClassicStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~EnableClassicStyle.html) to `true`. 
 
 ![](Column-Types_images/Column-Types_img12.png)
 
@@ -1193,7 +1193,7 @@ You can increment or decrement the selected part of date time value by enabling 
 
 ### Format using Converter
 
-`GridDateTimeColumn`  allows you to set different cultures by setting[ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ValueBinding.html).
+`GridDateTimeColumn`  allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ValueBinding.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1761,7 +1761,7 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 ### Cancel the navigation
 
-You can allow end-user to cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to false. 
+You can allow end-user to cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -2007,7 +2007,7 @@ this.dataGrid.Columns.Add(new GridTimeSpanColumn() { HeaderText = "DeliveryTime"
 
 ### Auto increment
 
-You can allow end-user to increment or decrement the column value’s when `MouseWheel` or pressing <kbd>up</kbd> arrow keys by setting [AllowScrollingOnCircle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~AllowScrollingOnCircle.html) property to true. You can also use ArrowButtons to change the value by setting [ShowArrowButtons](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~ShowArrowButtons.html) to true.
+You can allow end-user to increment or decrement the column value’s when `MouseWheel` or pressing <kbd>up</kbd> arrow keys by setting [AllowScrollingOnCircle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~AllowScrollingOnCircle.html) property to `true`. You can also use ArrowButtons to change the value by setting [ShowArrowButtons](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~ShowArrowButtons.html) to `true`.
 
 ### Null value support
 
@@ -2737,7 +2737,7 @@ protected override DatePicker OnCreateEditUIElement()
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snippet, you can initialize the binding for display element by overriding the [OnInitializeDisplayElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnInitializeDisplayElement.html)method.
+With the below code snippet, you can initialize the binding for display element by overriding the [OnInitializeDisplayElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnInitializeDisplayElement.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -2792,7 +2792,7 @@ public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can initialize and update the binding for edit element by overriding[OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnInitializeEditElement.html) and [OnUpdateEditBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnUpdateEditBinding.html) methods.
+Similarly, you can initialize and update the binding for edit element by overriding [OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnInitializeEditElement.html) and [OnUpdateEditBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~OnUpdateEditBinding.html) methods.
 
 {% tabs %}
 {% highlight c# %}

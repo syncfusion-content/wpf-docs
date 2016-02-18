@@ -138,7 +138,7 @@ Use to display the IEnumerable data using SfMultiColumnDropdownControl.
 
 ## Defining Columns
 
-You can let the SfDataGrid to create columns or you can manually defined columns to de dispayed. Below sections explains both ways, 
+You can let the SfDataGrid to create columns or you can manually define columns to be displayed. Below sections explains both ways, 
 
 1. Automatically generating columns
 2. Manually define columns
@@ -260,7 +260,7 @@ The same columns will be maintained when changing ItemsSource also. So filtering
 Generates the columns based on the properties defined in the underlying data object.
 </td>
 <td>
-Clear all the columns including the columns defained manually and creates new columns based on new ItemsSource.
+Clear all the columns including the columns defined manually and creates new columns based on new ItemsSource.
 </td>
 </tr>
 <tr>
@@ -312,7 +312,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ##### Changing column type
 
-You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in ` AutoGeneratingColumn` event. 
+You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event. 
 
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property. 
 
@@ -800,7 +800,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedHeaderRows.html). You can group one or more columns under each stacked header.
 
-Each [StackedHeaderRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html) contains the [StackedColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedHeaderRow~StackedColumns.html) where each [StackedColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are gropued under the stacked header row. `StackedColumn. HeaderText` returns the text that dispalys in stacked header row.
+Each [StackedHeaderRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html) contains the [StackedColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedHeaderRow~StackedColumns.html) where each [StackedColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are gropued under the stacked header row. `StackedColumn.HeaderText` returns the text that dispalys in stacked header row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -993,7 +993,7 @@ Calculates the width of column based on header and cell contents. So that header
 <code>AutoWithLastColumnFill</code>
 </td>
 <td>
-Applies `GridLengthUnitType.Auto` width to all the columns except last column which is visible and the remaining width from total width of SfDataGird is set to last column.
+Applies <code>GridLengthUnitType.Auto</code> width to all the columns except last column which is visible and the remaining width from total width of SfDataGird is set to last column.
 </td>
 </tr>
 <tr>
@@ -1001,7 +1001,7 @@ Applies `GridLengthUnitType.Auto` width to all the columns except last column wh
 <code>AutoLastColumnFill</code>
 </td>
 <td>
-Applies `GridLengthUnitType.Auto` width to all the columns except last column which is visible and sets the maximum between last column auto spacing width and remaining width to last column.
+Applies <code>GridLengthUnitType.Auto</code> width to all the columns except last column which is visible and sets the maximum between last column auto spacing width and remaining width to last column.
 </td>
 </tr>
 <tr>
