@@ -337,7 +337,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefintion2);
 
 ![](Master-Details-View_images/Master-Details-View_img3.png)
 
-In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) of first level nested grid.
+In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) of first level nested grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1641,7 +1641,7 @@ this.dataGrid.UpdateDataRow(dataGrid.ResolveToRowIndex(data));
 The [DetailsViewLoading](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading_EV.html) event is raised, when the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) is being loaded in to the view (such as scrolling, window size changed and expanding the record using an expander or programmatically).
 
 This event receives two arguments where sender as SfDataGrid and [DetailsViewLoadingAndUnloadingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewLoadingAndUnloadingEventArgs.html) which contains the following member.
-[DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewLoadingAndUnloadingEventArgs~DetailsViewDataGrid.html) **-** Gets the `DetailsViewDataGrid` which is loaded into view. You can set the customized Renderers, SelectionController, ResizingController, GridColumnDragDropController, and GridColumnSizer to this. But it is not preferable to change the value of the public properties like AllowFiltering, AllowSorting, SelectionUnit, AllowDeleting, etc., here.
+[DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewLoadingAndUnloadingEventArgs~DetailsViewDataGrid.html) **-** Gets the `DetailsViewDataGrid` which is loaded into view. You can set the customized Renderers, SelectionController, ResizingController, GridColumnDragDropController, and GridColumnSizer to this. But it is not preferable to change the value of the public properties like AllowFiltering, AllowSorting, SelectionUnit, AllowDeleting, etc., here.
 
 {% tabs %}
 {% highlight c# %}
@@ -1660,7 +1660,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 The [DetailsViewUnLoading](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewUnloading_EV.html) event is raised when the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) is being unloaded from the view. 
 
 This event receives two arguments where sender as SfDataGrid and [DetailsViewLoadingAndUnloadingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewLoadingAndUnloadingEventArgs.html) which contains the following member.
-[DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewLoadingAndUnloadingEventArgs~DetailsViewDataGrid.html) - Gets the `DetailsViewDataGrid` which was unloaded from the view (such as scrolling, window size changed, Sorting, Grouping, Filtering and collapsing the DetailsViewDataGrid using expander or programmatically).
+[DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewLoadingAndUnloadingEventArgs~DetailsViewDataGrid.html) - Gets the `DetailsViewDataGrid` which was unloaded from the view (such as scrolling, window size changed, Sorting, Grouping, Filtering and collapsing the DetailsViewDataGrid using expander or programmatically).
 
 {% tabs %}
 {% highlight c# %}
