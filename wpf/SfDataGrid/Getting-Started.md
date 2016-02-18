@@ -267,7 +267,7 @@ public class ViewModel
 
 To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object. 
  
-Bind the collection created in previous step to `SfDataGrid.ItemsSource`     property in XAML by setting ViewModel as DataContext.
+Bind the collection created in previous step to `SfDataGrid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -299,7 +299,9 @@ Now, run the application and you can expect the see the below output,
 ![](Getting-Started_images/Getting-started_img2.png)
 
 ## Defining Columns
-By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. The following table lists the column types and it’s constraints for auto column generation.
+By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
+
+The following table lists the column types and its constraints for auto column generation.
 
 <table>
 <tr>
@@ -323,7 +325,7 @@ Property of type String and any other type apart from below specified cases.
 GridNumericColumn
 </td>
 <td>
-Property of type Int or Double
+Property of type Int or Double.
 </td>
 </tr>
 <tr>
@@ -331,7 +333,7 @@ Property of type Int or Double
 GridCurrencyColumn
 </td>
 <td>
-Property with Currency DataType attribute.<br/><b>[DataType(DataType.Currency)]</b>
+Property with Currency DataType attribute.<br/><b>[DataType(DataType.Currency)]</b>.
 </td>
 </tr>
 <tr>
@@ -339,7 +341,7 @@ Property with Currency DataType attribute.<br/><b>[DataType(DataType.Currency)]<
 GridMaskColumn
 </td>
 <td>
-Property with PhoneNumer DataType attribute.<br/><b>[DataType(DataType.PhoneNumber)]</b>
+Property with PhoneNumer DataType attribute.<br/><b>[DataType(DataType.PhoneNumber)]</b>.
 </td>
 </tr>
 <tr>
@@ -347,7 +349,7 @@ Property with PhoneNumer DataType attribute.<br/><b>[DataType(DataType.PhoneNumb
 GridDateTimeColumn
 </td>
 <td>
-Property of type DateTime
+Property of type DateTime.
 </td>
 </tr>
 <tr>
@@ -355,7 +357,7 @@ Property of type DateTime
 GridCheckBoxColumn
 </td>
 <td>
-Property of type Bool
+Property of type Bool.
 </td>
 </tr>
 </table>
@@ -383,7 +385,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerName" });
 {% endhighlight %}
 {% endtabs %}
 
-Below are the list of column types provided in SfDataGrid.
+Below is the list of column types provided in SfDataGrid.
 
 <table>
 <tr>

@@ -50,7 +50,7 @@ this.dataGrid.Columns["CustomerID"].AllowSorting = false;
 
 N> The [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowSorting.html) takes higher priority than [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowSorting.html) property.
 
-End users can sort the column by clicking column header cell. Once the columns gets sorted, the sort indicator will be displayed on the right side of the column header.
+End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
 ![](Sorting_images/Sorting_img1.png)
 
@@ -75,7 +75,7 @@ this.dataGrid.SortClickAction = SortClickAction.DoubleClick;
 
 ## Sorting order
 
-By default the data is sorted in ascending or descending order when clicking column header. You can rearrange the data to its initial order from descending, when clicking column header by setting [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowTriStateSorting.html) property.
+By default, the data is sorted in ascending or descending order when clicking column header. You can rearrange the data to its initial order from descending, when clicking column header by setting [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowTriStateSorting.html) property.
 
 Following are the sequence of sorting orders when clicking column header, 
 
@@ -88,7 +88,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 SfDataGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 
-In the below screen shot, the `OrderID` column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.
+In the below screen shot, the OrderID column sorted. Then the CustomerName column is sorted against the OrderID data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of OrderID column is preserved and CustomerName column sorted against OrderID column.
 
 ![](Sorting_images/Sorting_img2.png)
 
@@ -186,7 +186,7 @@ Follow the below steps to add custom comparer to sort using custom logic,
 
 ### Define custom comparer with custom sort logic
 
-In the below code snippet, `CustomerName` property is compared based on its string length, instead of default string comparison.  
+In the below code snippet, CustomerName property is compared based on its string length, instead of default string comparison.  
 
 {% tabs %}
 {% highlight c# %}
@@ -264,14 +264,16 @@ this.dataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomCompar
 {% endhighlight %}
 {% endtabs %}
 
-Sorting `CustomerName` column sorts the data using custom comparer availabe in `SfDataGrid.SortComparers`.
+Sorting CustomerName column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
 
 ![](Sorting_images/Sorting_img4.png)
 
 
 ## Sorting the underlying collection
 
-SfDataGrid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place. 
+SfDataGrid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. 
+
+You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place. 
 
 If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling [SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event.
 
