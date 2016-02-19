@@ -7,13 +7,11 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Customize the appearance of Expanders in a Grid?
+# How to customize the appearance of expanders in PivotGrid?
 
-Grid expanders can be customized with the help of the **ExpanderStyle** property of the PivotGrid control. 
+Define your own style for the expander and assign that style to the `ExpanderStyle` property of the PivotGrid control. 
 
-Define your own style for the Expander and assign that Style to the ExpanderStyle property of PivotGrid control. 
-
-Please refer the below code snippet. Here we defined our own style for Expander and assigned that as ExpanderStyle in PivotGrid control.
+Please refer the below code sample. Here we have defined our own style for expander and assigned it to the `ExpanderStyle` property of the PivotGrid control.
 
 {% highlight xaml %}
 

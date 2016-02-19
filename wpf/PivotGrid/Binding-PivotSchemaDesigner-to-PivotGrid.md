@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 1368-Binding-PivotSchemaDesigner-to-PivotGrid
-description:             1.3.6.8 binding pivotschemadesigner to pivotgrid
+description: 1.3.6.8 binding pivotschemadesigner to pivotgrid
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Binding PivotSchemaDesigner to PivotGrid
 
-PivotSchemaDesigner can be bound to PivotGrid with the help of the **PivotControl** property. After creating a PivotGrid control using PivotGridControl class and binding the data source, PivotRows, PivotColumns and PivotCalculations, add a new PivotSchemaDesigner using PivotSchemaDesigner class and bind the PivotGrid control using the **PivotControl** of PivotSchemaDesigner.
+PivotSchemaDesigner can be bound to the PivotGrid with the help of the `PivotControl` property. After creating a PivotGrid, a new PivotSchemaDesigner is created using the `PivotSchemaDesigner` class and bound to the PivotGrid control using `PivotControl` property of PivotSchemaDesigner. This can be achieved either in *XAML* or in *Code-behind*. 
 
-This can be achieved either in *XAML* or in *Code-Behind*. If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ This can be achieved either in *XAML* or in *Code-Behind*. If through **XAML**, 
     </Grid>
 {% endhighlight %}
   
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -80,9 +80,3 @@ Else if through **Code-Behind**, please refer the below code snippet.
 
 
 ![](PivotSchemaDesigner-Images/PivotSchemaDesigner.png)
-
-_PivotSchemaDesigner_
-
-![](PivotSchemaDesigner-Images/PivotSchemaDesigner with PivotGrid.png)
-
-_PivotGrid with PivotSchemaDesigner_

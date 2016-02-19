@@ -7,13 +7,13 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Display the Count of Records which are Currently Visible in Pivot Engine?
+# How to get the count of records which are currently visible in PivotGrid?
 
-It is possible to get the count of records which are currently visible in PivotGrid by using **VisibleRecords** property.
+It is possible to get the count of records which are currently visible in PivotGrid by using `VisibleRecords` property.
 
-After defining PivotGrid control, raise the Loaded event of PivotGrid. Inside the PivotGrid_Loaded() event, you can get the list of **VisibleRecords** from PivotEngine and store it as a seperate collection.
+After defining the PivotGrid control, raise its loaded event. Inside the `pivotGrid_Loaded` event, you can get the list of `VisibleRecords` from the PivotEngine and store it as a seperate collection.
 
-Please refer the below code snippet. 
+Please refer the below code sample. 
 
 {% highlight C# %}
 
