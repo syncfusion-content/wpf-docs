@@ -432,7 +432,7 @@ N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter upd
 
 ## Filtering based on DisplayText
 
-In UI filtering, records are filtered based on actual value by default. If you want to filter the records based on DisplayText, you need to set [ColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnFilter.html) property as DisplayText. 
+In UI filtering, records are filtered based on actual value by default. If you want to filter the records based on `DisplayText`, you need to set [ColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnFilter.html) property as `DisplayText`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -569,7 +569,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 
 ### Changing AdvancedFilter type while loading dynamic itemssource
   
-By default, TextFilters will be loaded for the columns if itemssource is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx).  If you want to load Number Filters or Date Filters based on column values, you need to use [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html) property.
+By default, `TextFilters` will be loaded for the columns if `ItemsSource` is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx).  If you want to load Number Filters or Date Filters based on column values, you need to use [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -577,11 +577,11 @@ this.dataGrid.Columns["OrderID"].ColumnMemberType = typeof(double?);
 {% endhighlight %}
 {% endtabs %}
 
-You can achieve this by using [FilterItemsPopulating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulating_EV.html) event also. But in this case, nullable values will not be filtered in advanced filtering. So you need to set [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html).
+You can achieve this by using [FilterItemsPopulating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulating_EV.html) event also. But in this case, `Nullable` type values will not be filtered in advanced filtering. So you need to set [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html).
 
 ### Customizing Excel like Filter ItemsSource
 
-When you want to restrict some data from filtering, you need to customize the [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) `ItemsSource` by using [FilterItemsPopulated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulated_EV.html) event. Here,[FilterElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterElement.html) which has ActualValue as 1005 is removed from itemsSource.
+When you want to restrict some data from filtering, you need to customize the [GridFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl.html) `ItemsSource` by using [FilterItemsPopulated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterItemsPopulated_EV.html) event. Here,[FilterElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterElement.html) which has `ActualValue` as 1005 is removed from `itemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -668,7 +668,7 @@ void DataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 
 ### Changing filter icon style after applying filters
 
-You can change the filter icon style by editing the [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html) style. In `FilterToggleButton` style, you can see Filtered and UnFiltered VisualStates. In that, you can change `PathFillColor` for FilterToggleButton.
+You can change the filter icon style by editing the [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html) style. In `FilterToggleButton` style, you can see `Filtered` and `UnFiltered` VisualStates. In that, you can change `PathFillColor` for FilterToggleButton.
 
 {% tabs %}
 {% highlight xaml %}

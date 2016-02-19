@@ -256,8 +256,8 @@ Updated
 
 ### Limitations
 
-* AllowDataShaping and AllowSummaryUpdate is not supported when you are binding with dynamic data objects.
-* Complex and indexer properties doesn’t support LiveDataUpdateMode- AllowDataShaping and AllowSummaryUpdate.
+* `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
+* Complex and indexer properties doesn’t support `LiveDataUpdateMode`- `AllowDataShaping` and `AllowSummaryUpdate`.
 
 
 ## Built-in AddNewRow
@@ -434,7 +434,7 @@ Similarly, you can validate the cells in AddNewRow by using the [CurrentCellVali
 
 ### Customizing AddNewRow text using default resource file
 
-SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer **Editing default culture resource** section.
+SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](http://help.syncfusion.com/wpf/sfdatagrid/localization#editing-default-culture-resource) section.
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. 
 
@@ -579,7 +579,7 @@ void FirstLevelNestedGrid_AddNewRowInitiating(object sender, AddNewRowInitiating
 {% endhighlight %}
 {% endtabs %}
 
-For auto-generated relation (when the [AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is set to true), the AddNewRow can be enabled by specifying the position to `AddNewRowPosition` property in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
+For auto-generated relation (when the [AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is set to `true`), the AddNewRow can be enabled by specifying the position to `AddNewRowPosition` property in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}

@@ -49,7 +49,7 @@ The [GridTreeControl](http://help.syncfusion.com/wpf/gridtree/overview) is desig
 
 ### GridDataControl and SfDataGrid
 
-The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](http://www.syncfusion.com/products/wpf/sfdatagrid) controls are used to display collection of data in rows and columns. These controls supports the data binding directly. 
+The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](http://www.syncfusion.com/products/wpf/sfdatagrid) controls are used to display collection of data in rows and columns. These controls support the data binding directly. 
 
 1. **SfDataGrid** - SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding.
 2. **GridDataControl** - GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 
@@ -215,7 +215,7 @@ SfDataGrid provides support for {{ '[CellTemplate](http://help.syncfusion.com/wp
 IEditableObjectSupport
 </td>
 <td>
-SfDataGrid supports to rollback the changes when you press <kbd>Esc</kbd> Key by implementing IEditableObject interface. 
+SfDataGrid supports to roll back the changes when you press <kbd>Esc</kbd> Key by implementing IEditableObject interface. 
 For more information about IEditableObject refer {{ '[IEditableObject](http://help.syncfusion.com/wpf/sfdatagrid/editing)' | markdownify }}.
 </td>
 </tr>
@@ -245,7 +245,7 @@ Exporting To Excel
 SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported 
 workbook. SfDataGrid Exporting is faster than GridDataControl. It exports the content only to the excel sheet. It 
 takes very less time to export the huge amounts of data. To know more about exporting in SfDataGrid, 
-click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/exporting#export-to-excel)' | markdownify }}.
+click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/export-to-excel)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -253,9 +253,9 @@ click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/exporting#export-to-e
 Exporting To Pdf
 </td>
 <td>
-SfDataGrid control provides support for exporting the data into a pdf file. You can decides what are the contents 
+SfDataGrid control provides support for exporting the data into a pdf file. You can decide what are the contents 
 is need to export in pdf file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to 
-pdf file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/exporting#export-to-pdf)' | markdownify }}.
+pdf file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/export-to-pdf)' | markdownify }}.
 </td>
 </tr>
 <tr>

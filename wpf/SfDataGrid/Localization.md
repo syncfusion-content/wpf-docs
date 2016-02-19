@@ -28,22 +28,22 @@ public MainWindow()
 
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps. 
 
-1. Create new folder and named as **Resources** in your application. 
-2. Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resource1113161640.zip).
+1.Create new folder and named as **Resources** in your application. 
+2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resource1113161640.zip).
 
 ![](Localization_images/Localization_img1.png)
 
-3. Right-click on the Resources folder, select **Add** and then **NewItem**.
-4. In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.WPF.&lt;culture name&gt;.resx**. For example, you have to give name as **Syncfusion.SfGrid.WPF.de.resx** for German culture. 
-5. The culture name that indicates the name of language and country. 
+3.Right-click on the Resources folder, select **Add** and then **NewItem**.
+4.In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.WPF.&lt;culture name&gt;.resx**. For example, you have to give name as **Syncfusion.SfGrid.WPF.de.resx** for German culture. 
+5.The culture name that indicates the name of language and country. 
 
 ![](Localization_images/Localization_img2.png)
 
-6. Now, select `Add` option to add the resource file in **Resources** folder.
+6.Now, select `Add` option to add the resource file in **Resources** folder.
 
 ![](Localization_images/Localization_img3.png)
 
-7. Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.de.resx** file and change its corresponding value to corresponding culture. 
+7.Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.de.resx** file and change its corresponding value to corresponding culture. 
 
 ![](Localization_images/Localization_img4.png)
 
