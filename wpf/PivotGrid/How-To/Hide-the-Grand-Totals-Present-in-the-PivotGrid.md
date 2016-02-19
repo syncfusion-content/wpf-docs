@@ -7,12 +7,12 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Hide the Grand Totals Present in the PivotGrid?
+# How to hide the Grand Total present in the PivotGrid?
 
-It can be achieved by setting the property **ShowGrandTotals** to false.By default, PivotGrid displays Grand Totals for both Column and Row Headers. 
+It can be achieved by setting the property `ShowGrandTotals` to false. By default, PivotGrid displays Grand Total for both column and row headers. 
 It can be mentioned either in *XAML* or in *Code-Behind*.
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -23,7 +23,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else If through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-Behind*, please refer the below code sample.
 
 {% highlight C# %}
 
