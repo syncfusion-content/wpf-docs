@@ -245,7 +245,7 @@ Exporting To Excel
 SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported 
 workbook. SfDataGrid Exporting is faster than GridDataControl. It exports the content only to the excel sheet. It 
 takes very less time to export the huge amounts of data. To know more about exporting in SfDataGrid, 
-click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/exporting#export-to-excel)' | markdownify }}.
+click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/export-to-excel)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Exporting To Pdf
 <td>
 SfDataGrid control provides support for exporting the data into a pdf file. You can decide what are the contents 
 is need to export in pdf file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to 
-pdf file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/exporting#export-to-pdf)' | markdownify }}.
+pdf file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/export-to-pdf)' | markdownify }}.
 </td>
 </tr>
 <tr>
