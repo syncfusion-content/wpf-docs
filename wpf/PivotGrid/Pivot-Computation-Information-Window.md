@@ -7,8 +7,8 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Pivot Computation Information Window
+# Pivot Computation Information Dialog
 
-The Pivot Computation Information window is used to change or edit value formats, summary types,calculation types and the field header.
+The Pivot Computation Information dialog is used to change or edit value formats, summary types, calculation types and the field header.
 
 ![](PivotSchemaDesigner-Images/PivotComputationWindow.png)

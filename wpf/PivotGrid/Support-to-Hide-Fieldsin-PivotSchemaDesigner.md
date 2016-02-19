@@ -7,20 +7,11 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Support to Hide Fields in PivotSchemaDesigner 
+# Hidding Fields in PivotSchemaDesigner 
 
-It is possible to customize the PivotTable field list in PivotSchemaDesigner and it allows to hide the unnecessary fields from the PivotTable field list by using the **ShowDisplayFieldsOnly** property.
+It is possible to hide the unnecessary fields from the PivotTable Field List using `ShowDisplayFieldsOnly` property.
 
-
-Property 
-
-* **ShowDisplayFieldsOnly** - Gets or sets the value indicating to show only the fields that are used in PivotGrid.
-
-## Defining the property in PivotSchemaDesigner
-
-The **ShowDisplayFieldsOnly** property of PivotSchemaDesigner can be mentioned either in *XAML* or in *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 
 {% highlight xaml %}
@@ -53,7 +44,7 @@ If through **XAML**, please refer the below code snippet.
     
 {% endhighlight %}
   
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-Behind*, please refer the below code sample.
 
 {% highlight C# %}
 

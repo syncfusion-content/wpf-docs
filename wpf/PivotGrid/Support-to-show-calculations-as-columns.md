@@ -7,17 +7,13 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Support to show calculations as columns
+# Displaying Calculations
 
-PivotGrid provides support to show the calculation values in columns or in rows and it can be achieved either by using the property **ShowCalculationsAsColumns** of PivotGrid control or by uncheck/check the **ShowCalculationsAsColumns** check box of PivotSchemaDesigner.
+PivotGrid provides support to show the calculation values either in column or in row. It can be achieved either by using the `ShowCalculationsAsColumns` property of PivotGrid control or through simple uncheck/check option in PivotSchemaDesigner.
 
-* **ShowCalculationsAsColumns** - Gets or sets the value whether to display the values as columns.
+## Setting ShowCalculationsAsColumns property through code
 
-## Defining the property in PivotGrid
-
-The **ShowCalculationsAsColumns** property of PivotGrid control can be mentioned either in *XAML* and *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +38,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Snippet**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -87,12 +83,6 @@ public partial class MainWindow: Window {
 
 ## Setting ShowCalculationsAsColumns property through PivotSchemaDesigner
 
-We can enable or disable the ShowCalculationsAsColumns property through the ShowCalculationsAsColumns checkbox of PivotSchemaDesigner. Uncheck the ShowCalculationsAsColumns check box in order to view the calculations values in rows.
+We can enable or disable the `ShowCalculationsAsColumns` property through the "Show Calculations as column" checkbox of PivotSchemaDesigner. In-order to view the calculation values in row, uncheck the "Show Calculations as column" checkbox.
 
 ![](PivotSchemaDesigner-Images/Layout section.png)
-
-_ShowCalculationsAsColumns checkbox in PivotSchemaDesigner_
-
-![](PivotSchemaDesigner-Images/PivotGrid displays the values as rows.png)
-
-_PivotGrid displays the calculation values as rows_

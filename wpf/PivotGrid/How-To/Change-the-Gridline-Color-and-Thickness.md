@@ -7,11 +7,11 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Change the Grid-line Colour and Thickness?
+# How to change the GridLine color and thickness?
 
-GridLine colour can be changed by using the **GridLineStroke** property of PivotGrid and it can be mentioned either in *XAML* or in *Code-Behind*. 
+GridLine color can be changed by using the `GridLineStroke` property of PivotGrid and it can be mentioned either in *XAML* or in *Code-Behind*. 
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -20,7 +20,7 @@ If through **XAML**, please refer the below code snippet.
      
 {% endhighlight %}
 
-Else of through **Code-behind**, please refer the below code snippet.
+Else if through *Code-Behind*, please refer the below code sample.
 
 {% highlight C# %}
 
