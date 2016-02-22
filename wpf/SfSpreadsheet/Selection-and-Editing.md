@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection and Editing | SfSpreadsheet| WPF | Syncfusion
-description: selection and editing
+title: Selection and Editing
+description: Selection and Editing behavior in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

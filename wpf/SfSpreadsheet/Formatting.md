@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting | SfSpreadsheet | WPF | Syncfusion
-description: formatting
+title: Formatting 
+description: How to apply the styles and formats in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

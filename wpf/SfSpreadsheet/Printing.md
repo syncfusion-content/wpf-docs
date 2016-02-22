@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing | SfSpreadsheet | WPF | Syncfusion
-description: printing
+title: Printing
+description: How to print the workbook in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
