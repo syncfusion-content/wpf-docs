@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns | SfSpreadsheet | WPF | Syncfusion
-description: rows and columns
+title: Rows and Columns 
+description: Operations involved with rows and columns in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

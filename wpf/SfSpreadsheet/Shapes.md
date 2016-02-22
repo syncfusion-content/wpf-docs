@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Conversion | SfSpreadsheet | WPF | Syncfusion
-description: shapes
+title: Shapes
+description: How to import charts,sparklines, image and rich textbox in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
 # Shapes
- This section explains how to import charts and sparklines in SfSpreadsheet
+ This section explains how to import charts,sparklines, image and rich textbox in SfSpreadsheet.
 <br/>
 
 ## Charts
@@ -94,7 +94,7 @@ shape.Width = 200;
 {% endtabs %}
 <br/>
 
-## Text Box
+## RichText Box
 
 SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the richtext box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 

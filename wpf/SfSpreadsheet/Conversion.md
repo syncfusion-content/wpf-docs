@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conversion | SfSpreadsheet | WPF | Syncfusion
-description: conversion
+title: Conversion
+description: How to convert the workbook in SfSpreadsheet to image, pdf and html
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

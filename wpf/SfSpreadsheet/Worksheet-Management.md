@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Worksheet Management | SfSpreadsheet | WPF | Syncfusion
-description: worksheet management
+title: Worksheet Management
+description: How to insert, delete and other operations related with worksheet in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
 # Worksheet Management
- This section explains about the operations that are performed with the worksheet
+ This section explains about the operations that are performed with the worksheet.
 <br/>
 <br/>
 

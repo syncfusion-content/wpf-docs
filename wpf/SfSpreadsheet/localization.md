@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | SfSpreadsheet | WPF | Syncfusion
-description: localization
+title: Localization 
+description: How to localize the SfSpreadsheet to any language settings
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

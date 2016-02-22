@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfSpreadsheet | WPF | Syncfusion
-description: overview
+title: Overview 
+description: Overview and the features that are supported in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Management | SfSpreadsheet | WPF | Syncfusion
-description: data management
+title: Data Management
+description: How to import and export the data in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

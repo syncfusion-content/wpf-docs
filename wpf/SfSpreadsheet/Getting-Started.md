@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfSpreadsheet | WPF | Syncfusion
-description: getting started
+title: Getting Started
+description: How to create, open and save the workbook in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
