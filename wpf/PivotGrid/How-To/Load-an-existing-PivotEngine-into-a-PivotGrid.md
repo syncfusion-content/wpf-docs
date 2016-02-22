@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Load an existing PivotEngine into a PivotGrid?
+# How to load an existing PivotEngine into PivotGrid?
 
-After defining the PivotGrid control, set the property **IsExternalEngine** as true. Now create a new PivotEngine using PivotEngine class and assign that to your PivotGrid control's PivotEngine.
+After defining the PivotGrid control, set the property `IsExternalEngine` as true. Now create a new PivotEngine using `PivotEngine` class and assign it to your PivotGrid control's PivotEngine.
 
-Please refer the below code snippet.
+Please refer the below code sample.
 
 {% highlight C# %}
 
@@ -20,12 +20,12 @@ Please refer the below code snippet.
             InitializeComponent();
             PivotGridControl pivotGrid = new PivotGridControl();
             this.grid1.Children.Add(pivotGrid);
-            ///Set IsExternalEngine to true to use the external pivot engine.
+            ///Set IsExternalEngine to true to use the external PivotEngine.
             pivotGrid.IsExternalEngine = true;
-            ///Create a new instance of the pivot engine.
+            ///Create a new instance of the PivotEngine.
             PivotEngine pivotEngine = new PivotEngine();
             
-            ///Assign the new engine to pivot grid control.
+            ///Assign the new engine to PivotGrid control.
             pivotGrid.PivotEngine = pivotEngine;
         }
 

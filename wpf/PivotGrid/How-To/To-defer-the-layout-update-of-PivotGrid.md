@@ -7,11 +7,11 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# To defer the layout update of PivotGrid?
+# How to set defer layout update in PivotGrid?
 
-It can be achieved by setting the property **DeferLayoutUpdate** to true or through the DeferLayoutUpdate checkbox of PivotGrid control. It can be mentioned either in *XAML* and *Code-Behind*. 
+It can be achieved by setting the property `DeferLayoutUpdate` to true via code or through the DeferLayoutUpdate check-box (UI option) inside PivotSchemaDesigner control. 
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -21,7 +21,7 @@ If through **XAML**, please refer the below code snippet.
      
 {% endhighlight %}
 
-Else of through **Code-behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

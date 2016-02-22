@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ribbon Customization | SfSpreadsheet | WPF | Syncfusion
-description: ribbon customization
+title: Ribbon Customization 
+description: How to customize the SfSpreadsheetRibbon
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

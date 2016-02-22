@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Formula | SfSpreadsheet | WPF | Syncfusion
-description: custom formula
+title: Custom Formula 
+description: How to add custom formulas in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

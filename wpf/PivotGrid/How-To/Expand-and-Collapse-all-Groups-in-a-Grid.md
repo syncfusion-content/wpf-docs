@@ -7,36 +7,36 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Expand and Collapse all Groups in a Grid?
+# How to expand and collapse entire group in PivotGrid?
 
-## Expand all the groups in a PivotGrid
+## Expanding entire group in PivotGrid
 
-After defining PivotGrid control, invoke the method **ExpandAllGroup()** to expand all the groups in the PivotGrid control.
+After defining PivotGrid control, invoke the method `ExpandAllGroup()` to expand entire group in the PivotGrid control.
 
-Please refer the below code snippet.
+Please refer the below code sample.
  
 {% highlight C# %}
 
         public MainWindow()
         {
             InitializeComponent();
-            // To Expand all groups in a grid
+            //To expand entire group in PivotGrid
             pivotGrid.ExpandAllGroup();
         }
 {% endhighlight %}
 
-## Collapse all the groups in a PivotGrid
+## Collapsing entire group in PivotGrid
 
-After defining PivotGrid control, invoke the method **CollapseAllGroup()** to collapse all the groups in the PivotGrid control.
+After defining PivotGrid control, invoke the method `CollapseAllGroup()` to collapse entire group in the PivotGrid control.
 
-Please refer the below code snippet.
+Please refer the below code sample.
 
 {% highlight C# %}
 
         public MainWindow()
         {
             InitializeComponent();   
-            // Collapse all group in Grid
+            //To collapse entire group in PivotGrid
             pivotGrid.CollapseAllGroup();
         }
 
