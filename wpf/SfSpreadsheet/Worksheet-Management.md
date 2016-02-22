@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Worksheet Management
-description: How to insert, delete and other operations related with worksheet in SfSpreadsheet
+description: How to perform worksheet related operations(insert, delete, hide, etc.) in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
