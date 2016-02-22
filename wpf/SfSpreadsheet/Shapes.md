@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Shapes
-description: How to import charts,sparklines, image and rich textbox in SfSpreadsheet
+description: How to import charts, sparklines, pictures and textboxes in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
 # Shapes
- This section explains how to import charts,sparklines, image and rich textbox in SfSpreadsheet.
+ This section explains how to charts, sparklines, pictures and textboxes in SfSpreadsheet.
 <br/>
 
 ## Charts
@@ -71,7 +71,7 @@ Add the SparklineCellRenderer into the GraphicCellRenderers collection by using 
 {% endtabs %}
 <br/>
 
-## Image
+## Pictures
 
 SfSpreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use [AddImage](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddImage.html) method and also you can resize and reposition the image.
 
@@ -94,7 +94,7 @@ shape.Width = 200;
 {% endtabs %}
 <br/>
 
-## RichText Box
+## TextBoxes
 
 SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the richtext box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 
