@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formulas | SfSpreadsheet | WPF | Syncfusion
-description: formulas
+title: Formulas 
+description: List of formulas supported by SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

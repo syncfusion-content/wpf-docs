@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Outline | SfSpreadsheet | WPF | Syncfusion
-description: outline
+title: Outline 
+description: How to group/ungroup the rows and columns in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
