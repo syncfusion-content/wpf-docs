@@ -22,23 +22,59 @@ The following procedure illustrates how to install Essential Studio.
 7. Select the Run Dashboard check box to launch the Dashboard after installing.
 8. Click Finish. Essential Studio is installed in system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
-## Nuget Installation
+## Configuring Syncfusion NuGet Packages in Visual Studio 
+
+Syncfusion WPF NuGet packages are available [here](http://nuget.syncfusion.com/package/wpf).
+
+### NuGet Configuration  
+
+The steps to install the Syncfusion WPF NuGet Packages in Visual Studio are as follows,
+
+1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
+
+   ![](Installation_images/NuGetConfig1.jpeg)
+
+2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
+
+   **Name**: Name of the package that listed in Available package sources  
+   **Source**: Syncfusion WPF NuGet Package feed url 
+   [http://nuget.syncfusion.com/wpf](http://nuget.syncfusion.com/wpf)
+    
+   ![](Installation_images/NuGetConfig2.jpeg)
+
+   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
+    
+I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
+
+### NuGet Installation
+
+Syncfusion WPF NuGet can install once configured the package source. The NuGet installation steps as below,
+
+1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | <Package Source Name>`.
+
+   ![](Installation_images/NuGetConfig3.jpeg)
+
+2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
+
+   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
+
+### Updating a NuGet Package
+
+Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update.
+ 
+1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
+
+2. Select the `Updates -> <Syncfusion Package Source>`. Refer to the following screenshot for more information.
+
+   ![](Installation_images/NuGetConfig4.jpeg)
+
+3. If there is a new version of NuGet you will see it in the list of available updates.
+
+4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
+
+   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
 
-Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps helps to add the reference of the Syncfusion assemblies in the Project References.
-
-1.Right-click on Project and choose the Manage NuGet Packages.
-
-2.Select Online. Refer to the following screenshot for more information. 
-
-![](Installation_images/Installation_img1.jpeg)
-
-
-3.Install the required corresponding framework control to use in Visual Studio projects. Dependent assemblies can be add when it needed. The framework number at the end of package name like 35, 40, 45, 451 and 46 are added.
-
-4.Find the installed Syncfusion Packages in the Directory location of created project (Syncfusion Packages).
-
-5.[Configure ](http://help.syncfusion.com/ug/extension/index.html#!Documents/nugetinstallandconfiguration.htm)Nuget for the required purpose.
 
 ## Commandline installation
 
