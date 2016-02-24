@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section covers information on the following topics.
+This section is designed to help you understand and quickly get started with Essential Calculate in your WPF application.
 
 ## Class Diagram
 
@@ -39,9 +39,9 @@ A new WPF application is created.
 
 3. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already [This is done automatically when you install Essential Studio].
 
-4. Now you need to deploy Essential Calculate into this WPF application. Refer WPF topic for detailed information.
+4. Now you need to deploy Essential Calculate into this WPF application. 
 
-For more information refer to the following topic. 
+ 
 
 ## Deploy Essential Calculate in WPF Application
 
