@@ -1626,7 +1626,7 @@ void GroupColumnDescriptions_CollectionChanged(object sender, System.Collections
 
 `GridMultiColumnDropDownList` derived from `GridTextColumnBase` and it displays enumeration as cell contents. It hosts [SfMultiDropDownControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) in editing mode. `GridMultiColumnDropDownList` allows you to define the predefined columns in its drop-down like SfDataGrid.  
 
-You can change the value by selecting the item from drop dwon or you can edit the `SfMultiColumnDropDownControl.Editor`. You can disable the editing by setting [IsTextReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~IsTextReadOnly.html).
+You can change the value by selecting the item from drop down or you can edit the `SfMultiColumnDropDownControl.Editor`. You can disable the editing by setting [IsTextReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~IsTextReadOnly.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1811,11 +1811,11 @@ You can allow end-user to change the foreground color of `GridHyperLinkColumn` b
 
 `GridImageColumn` derived from `GridColumn` and it displays columns data as Image. It hosts `Image` element as `GridCell` content.
 
-### Diplay Image
+### Display Image
 
 #### Using MappinName
 
-You can allow end-user to diplay image directly by setting `GridColumn.MappingName` property.
+You can allow end-user to display image directly by setting `GridColumn.MappingName` property.
 
 {% tabs %}
 {% highlight c# %}
