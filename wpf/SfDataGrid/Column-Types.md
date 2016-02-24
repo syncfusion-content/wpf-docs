@@ -1480,7 +1480,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 
 `GridComboBoxColumn` derived from `GridColumn` and it displays columns data like enumeration as cell contents. It hosts `ComboBox` in editing mode. You can edit the text in the textbox by setting [IsEditable](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~IsEditable.html) property to `true`. 
 
-By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can allow end-user to change display and combo box items (visual presentation objects) value by setting [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~DisplayMemberPath.html). [SelectedValuePath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~SelectedValuePath.html) used to gets or set the value from Selectedtem by `DisplayMemberPath` or `MappingName` proeprties.
+By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can allow end-user to change display and combo box items (visual presentation objects) value by setting [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~DisplayMemberPath.html). [SelectedValuePath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~SelectedValuePath.html) used to gets or set the value from SelectedItem by `DisplayMemberPath` or `MappingName` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1556,7 +1556,7 @@ public class GridCellComboBoxRendererExt:GridCellComboBoxRenderer
 
 ### Customizing GroupCaptionText based on DisplayMemberPath
 
-By default, the `GroupCaptionText` will be displayed based on `MappingName`. You can display the `GroupCaptionText` based on [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~DisplayMemberPath.html) uisng [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~Converter.html) property.
+By default, the `GroupCaptionText` will be displayed based on `MappingName`. You can display the `GroupCaptionText` based on [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~DisplayMemberPath.html) using [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~Converter.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1726,7 +1726,7 @@ public class GridCellMultiColumnDropDownRendererExt : GridCellMultiColumnDropDow
 
 ## GridHyperLinkColumn
 
-`GridHyperLinkColumn` derived from `GridTextColumn` and it displays columns data as `HyperLinkCotrol`. It hosts `TextBlock` element as `GridCell` content.
+`GridHyperLinkColumn` derived from `GridTextColumn` and it displays columns data as `HyperLinkControl`. It hosts `TextBlock` element as `GridCell` content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2388,7 +2388,7 @@ public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
 
 ### Create the renderer of existing column
 
-You can change the renderer of exsiting column by removing the predefined cell type value from [CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602.html).
+You can change the renderer of existing column by removing the predefined cell type value from [CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602.html).
 
 Below code creates the new `GridComboBoxRenderer` with `ComboBoxAdv` as edit element for `GridComboBoxColumn` and replacing created renderer to `CellRenderers`.
 
@@ -2873,7 +2873,7 @@ protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snipept, you can customize the keyboard interactions for the custom column by overriding [ShouldGridTryToHandleKeyDown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~ShouldGridTryToHandleKeyDown.html) method.
+With the below code snippet, you can customize the keyboard interactions for the custom column by overriding [ShouldGridTryToHandleKeyDown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602~ShouldGridTryToHandleKeyDown.html) method.
 
 {% tabs %}
 {% highlight c# %}
