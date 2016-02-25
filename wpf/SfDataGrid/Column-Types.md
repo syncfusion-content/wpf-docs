@@ -1901,7 +1901,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Image", MappingN
 
 ### Customize Image
 
-`GridImageColum` allows you to customzie the image with below properties.
+`GridImageColum` allows you to customize the image with below properties.
 
 * `Width and Height`**-** You can change the height and width of the image using [GridImageColumn.ImageHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridImageColumn~ImageHeight.html) and [GridImageColumn.ImageWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridImageColumn~ImageWidth.html) properties.
 
