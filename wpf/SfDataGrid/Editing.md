@@ -7,822 +7,580 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Editing
+# Editing 
 
-This section explains you about editing on data, events and properties that participates in editing. DataGrid is intended for both displaying and modifying the data from the data source. 
+SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html) property.
 
-## Overview
-
-When you set AllowEditing to ‘True’, you can edit the current cell in the DataGrid. In Edit Mode, you can commit the changes by pressing the Enter or Tab key, or by just clicking outside the current cell.  You can also revert back to its original value by pressing the ESC key.
-
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="grid"
-
+<syncfusion:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
-
-                       AutoGenerateColumns="False"
-
-                       ColumnSizer="Star"
-
-                       ItemsSource="{Binding OrdersListDetails}"
-
-                       NavigationMode="Cell" />
-
-{% endhighlight %}
-
-
-{% highlight C# %}
-
-
-
-
-
-sfdatagrid.AllowEditing = true;
-{% endhighlight %}
-
-
-
-![](Features_images/Features_img115.png)
-
-
-
-DataGrid with AllowEditing set to ‘True’
-{:.caption}
-N> It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
-
-You are also allowed to control the behavior when the current cell is allowed to enter into Edit Mode by using the EditTriggers property. EditTriggers include the following two modes:
-
-* OnTap - When EditTriggers is set as OnTap, the GridCell enters into Edit Mode when you single tap the application.
-* OnDoubleTap - When EditTriggers is set as OnDoubleTap, the GridCell enters into Edit Mode when you double tap the application.
-
-
-
-N> You can switch between Edit Mode and View Mode by pressing the F2 key.
-
-The DataGrid control also provides the following properties in Grid Columns to support editing.
-
-Editing property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</td><td>
-Default Value</td></tr>
-<tr>
-<td>
-SfDataGrid.AllowEditing</td><td>
-Boolean</td><td>
-This property specifies whether the appication is editable or not.</td><td>
-False</td></tr>
-<tr>
-<td>
-SfDataGrid.AllowFocus</td><td>
-Boolean</td><td>
-Gets or sets a value indicating whether the Grid Cell is focusable or not.</td><td>
-True</td></tr>
-</table>
-
-
-When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor the selection is allowed for the GridColumn. The cells are not editable in the specified GridColumn, even when SfDataGrid.AllowEditing is set to ‘true’. In following code example AllowFocus is set to ‘false’ for OrderID column.
-
-
-{% highlight xaml %}
-
-
-
-
-
-
-<Window x:Class="SimpleApplication.MainWindow"
-
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        xmlns:local="clr-namespace:SimpleApplication"
-
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-        Title="MainWindow"
-
-        Width="525"
-
-        Height="350">
-
-    <Window.DataContext>
-
-        <local:OrderInfoRepositiory />
-
-    </Window.DataContext>
-
-    <syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                           AllowEditing="True"
-
-                           AllowFiltering="True"
-
-                           AutoGenerateColumns="True"
-
-                           AutoGenerateColumnsMode="Reset"
-
-                           ColumnSizer="Star"
-
-                           ItemsSource="{Binding OrderInfoCollection}">
-
-        <syncfusion:SfDataGrid.Columns>
-
-            <syncfusion:GridTextColumn AllowFocus="False" MappingName="OrderID" />
-
-        </syncfusion:SfDataGrid.Columns>
-
-    </syncfusion:SfDataGrid>
-
-</Window>
-{% endhighlight %}
-
-
-
-
-![](Features_images/Features_img116.png)
-
-
-DataGrid with AllowFocus property set to ‘false’
-{:.caption}
-When you select OrderID column’s cell, it is not selected or edited. Since AllowFocus is set to ‘false’.
-
-## EditorSelectionBehavior
-
-EditorSelectionBehavior is dependency property that is used to set selection for EditElement. It decides whether to select all content from UIElement or to move cursor to last position. Available values are
-
-* SelectAll (Default)
-* MoveLast.
-
-The following code example illustrates the selection behavior while editing. 
-
-
-{% highlight xaml %}
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowEditing="True"
-
                        AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}" />
+{% endhighlight %}
 
-                       ColumnSizer="Star"
+{% highlight c# %}
+dataGrid.AllowEditing = true;
+{% endhighlight %}
+{% endtabs %}
 
-                       EditorSelectionBehavior="MoveLast"
+You can enable or disable editing for particular column by setting [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowEditing.html) property.
 
-                       ItemsSource="{Binding OrderInfoCollection}"                                        
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridTextColumn AllowEditing="True" MappingName="OrderID" />
+{% endhighlight %}
 
-                       LiveDataUpdateMode="AllowDataShaping" />
+{% highlight c# %}
+dataGrid.Columns["OrderID"].AllowEditing = true;
+{% endhighlight %}
+{% endtabs %}
 
+N> [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowEditing.html) takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html).
+
+![](Editing_images/Editing_img1.jpeg)
+
+
+N> It is mandatory to set the [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NavigationMode.html) to Cell to enable [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) navigation and editing.
+
+### Entering into edit mode
+
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by [EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EditTrigger.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowEditing="True" 
+                       EditTrigger="OnTap"
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 
 
+{% highlight c# %}
+dataGrid.EditTrigger = EditTrigger.OnTap;
+{% endhighlight %}
+{% endtabs %}
 
-The following screenshot illustrates the output.
+### Cursor placement
 
+When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EditorSelectionBehavior.html) property. 
 
+SelectAll – selects the text of edit element loaded inside cell.
 
-![](Features_images/Features_img117.png)
+MoveLast – places the cursor at the last of edit element loaded inside cell.  
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowEditing="True"
+                       EditorSelectionBehavior="SelectAll"
+                       ItemsSource="{Binding Orders}" />
+{% endhighlight %}
 
+{% highlight c# %}
+dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
+{% endhighlight %}
+{% endtabs %}
 
-DataGrid with Selection behavior while editing
-{:.caption}
-### Methods
+## Support for IEditableObject
 
-Methods available under Editing are dependent on the current cell. DataGrid offers following public Methods in regard with Editing.
+SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface. 
 
-* SfDataGrid.SelectionController.BeginEdit: Causes the DataGrid to enter editing mode for the current cell, unless the DataGrid is already in editing mode.
-* SfDataGrid.SelectionController.EndEdit: Causes the DataGrid to exit editing mode.
+The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx). Also when user press <kbd> Esc </kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx). 
 
-### Events
+`IEditableObject` has the following methods to capture editing, 
 
-The edit events exist to support editing process. The following table provides the List of Events in regard to DataGrid for Editing. They occur when the current cell in the DataGrid is about to be edited or is being edited by you.
+[BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) – Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
 
-### CurrentCellActivating Event
+[CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
 
-This event occurs when the current cell is activated in the DataGrid. The CurrentCellActivating event handler receives two arguments, namely sender that handles SfDataGrid and CurrentCellActivatingEventArgs as objects. The CurrentCellActivatingEventArgs object contains the following properties:
+[EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) – Gets called when user move to the next row or press Enter key  to commit changes in underlying data object since last `BeginEdit` call. 
 
-* Cancel: When this property is set to ‘true’, the event is cancelled and the current cell is not activated.
-* CurrentRowColumnIndex: Gets the value of CurrentRowColumnIndex.
-* PreviousRowColumnIndex: Gets the value of PreviousRowColumnIndex.
-* ActivationTrigger: Gets the value of the current cell that is activated.
+In the below code snippet explains the simple implementation of IEditableObject.
 
-### CurrentCellActivated Event
+{% tabs %}
+{% highlight c# %}
 
-This event occurs when the current cell is activated. The event handler receives two arguments, namely sender that handles SfDataGrid and CurrentCellActivatedEventArgs as objects. The CurrentCellActivatedEventArgs object contains the following properties:
-
-* CurrentRowColumnIndex: Gets the value of the CurrentRowColumnIndex.
-* PreviousRowColumnIndex: Gets the value of the PreviousRowColumnIndex.
-* ActivationTrigger: Gets the value of the current cell that is activated.
-
-### CurrentCellBeginEdit Event
-
-This Event occurs when the current cell enters into Edit Mode. The Event Handler receives the two arguments namely sender that handles SfDataGrid and CurrentCellBeginEditEventArgs as objects. The CurrentCellBeginEditEventArgs object contains the following properties:
-
-* Cancel: When set to ‘true’, the event is cancelled and the current cell does not enter into edit mode. 
-* RowColumnIndex: Gets the current row column index of the DataGrid.
-* Column: Gets the Grid Column of the DataGrid.
-
-### CurrentCellEndEdit Event
-
-This event occurs when the current cell exits the Edit Mode. The event handler receives two arguments, namely sender that handles SfDataGrid and CurrentCellEndEditEventArgs as objects. A CurrentCellEndEditEventArgs object contains the following properties:
-
-RowColumnIndex: Gets the value for the current row column index.
-
-### CurrentCellValueChanged Event
-
-This event occurs whenever a value changes in GridColumns that supports editing such as GridTextColumn, GridNumericColumn, GridCurrencyColumn, GridPercentColumn, GridCheckBoxColumn, GridDateTimeColumn, GridTimeSpanColumn, GridMaskColumn, and so on. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellValueChangedEventArgs as objects.
-
-### The CurrentCellValueChangedEventArgs object contains the following property:
-
-RowColumnIndex: Gets the value of the current RowColumnIndex.
-
-### CurrentCellDropDownSelectionChanged Event
-
-This event occurs whenever a selected item is changed in DropDownColumns such as GridMultiColumnDropDownList and GridComboBoxColumn. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellDropDownSelectionChangedEventArgs as objects.
-
-The CurrentCellDropDownSelectionChangedEventArgs object contains the following properties:
-
-* RowColumnIndex: Gets the value of the current RowColumnIndex.
-* SelectedIndex: Gets the selected index from the DropDown control.
-* SelectedItem: Gets the selected item from the DropDown control.
-
-The following code example illustrates about this event.
-
-
-{% highlight C# %}
-
-
-
-
-
-sfdatagrid.CurrentCellBeginEdit += sfdatagrid_CurrentCellBeginEdit;
-
-…
-
-void sfdatagrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
-
+public class Employee : NotificationObject, IEditableObject
 {
+    private string _Name;
+    private int _ContactID;
+    private string _Title;
+    private DateTime _BirthDate;
+    private string _Gender;
+    private double _SickLeaveHours;
+    private double _Salary;
+    
+    protected Dictionary<string, object> BackUp()
+    {
+        var dict = new Dictionary<string, object>();
+        var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+        foreach (var pDescriptor in itemProperties)
+        {
+            if (pDescriptor.CanWrite)
+                dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
+        }
+        return dict;
+    }
 
-    args.Cancel = true;
+    public string Name
+    {
+        get { return this._Name; }
+        set
+        {
+            this._Name = value;
+            this.RaisePropertyChanged("Name");
+        }
 
+    }
+
+    public string Title
+    {
+        get { return this._Title; }
+        set
+        {
+            this._Title = value;
+            this.RaisePropertyChanged("Title");
+        }
+    }
+
+    public int ContactID
+    {
+        get { return this._ContactID; }
+        set
+        {
+            this._ContactID = value;
+            this.RaisePropertyChanged("ContactID");
+        }
+    }
+
+    public DateTime BirthDate
+    {
+        get { return this._BirthDate; }
+        set
+        {
+            this._BirthDate = value;
+            this.RaisePropertyChanged("BirthDate");
+        }
+    }
+
+    public string Gender
+    {
+        get { return this._Gender; }
+        set
+        {
+            this._Gender = value;
+            this.RaisePropertyChanged("Gender");
+        }
+    }
+
+    public double SickLeaveHours
+    {
+        get { return this._SickLeaveHours; }
+        set
+        {
+            this._SickLeaveHours = value;
+            this.RaisePropertyChanged("SickLeaveHours");
+        }
+    }
+
+    public double Salary
+    {
+        get { return this._Salary; }
+        set
+        {
+            this._Salary = value;
+            this.RaisePropertyChanged("Salary");
+        }
+    }
+
+    private int _EmployeeID;
+
+    public int EmployeeID
+    {
+        get { return this._EmployeeID; }
+        set
+        {
+            this._EmployeeID = value;
+            this.RaisePropertyChanged("EmployeeID");
+        }
+    }
+
+    private Dictionary<string, object> storedValues;
+
+    public void BeginEdit()
+    {
+        this.storedValues = this.BackUp();
+    }
+
+    public void CancelEdit()
+    {
+        if (this.storedValues == null)
+            return;
+
+        foreach (var item in this.storedValues)
+        {
+            var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+            var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
+            if (pDesc != null)
+                pDesc.SetValue(this, item.Value);
+        }
+    }
+
+    public void EndEdit()
+    {
+        if (this.storedValues != null)
+        {
+            this.storedValues.Clear();
+            this.storedValues = null;
+        }
+        Debug.WriteLine("End Edit Called");
+    }
 }
-{% endhighlight %}
-
-{% highlight xaml %}
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowEditing="True"
-
-                       AutoGenerateColumns="True"
-
-                       AutoGenerateColumnsMode="Reset"
-
-                       ColumnSizer="Star"
-
-                       CurrentCellBeginEdit="sfdatagrid_CurrentCellBeginEdit"
-
-                       ItemsSource="{Binding OrderInfoCollection}">
-
-    <syncfusion:SfDataGrid.Columns>
-
-        <syncfusion:GridTextColumn AllowFocus="False" MappingName="OrderID" />
-
-    </syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
-{% endhighlight %}
-
-
-Other than core properties, methods and events participate in editing.SfDataGrid has some properties and supports an interface to describe update time, update mode, and row level updating.
-
-* GridColumn.ValueBinding.
-* GridColumn.UpdateTrigger
-* SfDataGrid.LiveDataUpdateMode
-* IEditableObject.
-
-The data that you edit in loaded EditElement is the bound value from the ValueBinding property. The following code example illustrates how to use it.
-
-
-{% highlight xaml %}
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowEditing="True"
-
-                       AutoGenerateColumns="True"
-
-                       AutoGenerateColumnsMode="Reset"
-
-                       ColumnSizer="Star"
-
-                       CurrentCellBeginEdit="sfdatagrid_CurrentCellBeginEdit"
-
-                       ItemsSource="{Binding OrderInfoCollection}">
-
-    <syncfusion:SfDataGrid.Columns>
-
-        <syncfusion:GridTextColumn DisplayBinding="{Binding OrderID}" ValueBinding="{Binding CustomerID}" />
-
-    </syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
-
-{% endhighlight %}
-
-
-
-The following screenshot illustrates the output. The OrderID is View Mode and CustomerID value is in EditMode.
-
-
-![](Features_images/Features_img118.png)
-
-
-
-OrderID in View Mode and CustomerID value in Edit Mode
-{:.caption}
-You can update the edited values, like Default, PropertyChanged, LostFocus and Explicit. For more information about UpdateSourceTrigger you can [ClickHere](http://msdn.microsoft.com/en-us/library/system.windows.data.updatesourcetrigger(v=vs.110).aspx). In the following code example, whenever the value of CustomerID is changed instantly the underlying collection also changes. Since UpdateTrigger is given as PropertyChanged.
-
-
-{% highlight xaml %}
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowEditing="True"
-
-                       AutoGenerateColumns="True"
-
-                       AutoGenerateColumnsMode="Reset"
-
-                       ColumnSizer="Star"
-
-                       CurrentCellBeginEdit="sfdatagrid_CurrentCellBeginEdit"
-
-                       ItemsSource="{Binding OrderInfoCollection}">
-
-    <syncfusion:SfDataGrid.Columns>
-
-        <syncfusion:GridTextColumn ValueBinding="{Binding OrderID}" />
-
-        <syncfusion:GridTextColumn MappingName="CustomerID" UpdateTrigger="PropertyChanged" />
-
-    </syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
-
-
-{% endhighlight %}
-
-
-When you need an instant update that happened on DataSource to view, SfDataGrid provides a property LiveDataUpdateMode. AllowDataShaping is the one of enum value of LiveDataUpdateMode that is used to shape the data after editing. Add this code example and execute it.
-
-1. Execute the code.
-2. Sort any column.
-3. Now edit the value to be sorted.
-
-It gets arranged according to its sort direction.
-
-The same way, you can achieve it for Editing with Grouping and Editing with Filtering.
-
-
-{% highlight xaml %}
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowEditing="True"
-
-                       AutoGenerateColumns="True"
-
-                       ColumnSizer="Star"
-
-                       ItemsSource="{Binding OrderInfoCollection}"                        
-
-                       LiveDataUpdateMode="AllowDataShaping" />
-
-{% endhighlight %}
-
-## IEditableObject support
-
-SfDataGrid supports to revert changes when you press Esc key at row level by implementing IEditableObject interface. The BeginEdit method stores the actual values before start edit. When you press Esc key, CancelEdit is called and it stores the old values to the corresponding filed. EndEdit method is called to commit the values.
-
-For more information about IEditableObject you can [ClickHere](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject(v=vs.110).aspx). The following code example illustrates how to override methods from IEditableObject interface. 
-
-
-{% highlight C# %}
-
-
 
 public class NotificationObject : INotifyPropertyChanged
-
 {
-
     public void RaisePropertyChanged(string propName)
-
     {
-
         if (this.PropertyChanged != null)
-
-            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-
+        this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
 
 }
-
-
-
-public class Employee : NotificationObject, IEditableObject
-
-{    
-
-    private string _Name;   
-
-    private int _ContactID;    
-
-    private int _EmployeeID;
-
-
-
-    protected Dictionary<string, object> BackUp()
-
-    {
-
-        var dict = new Dictionary<string, object>();
-
-        var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
-
-        foreach (var pDescriptor in itemProperties)
-
-        {
-
-            if (pDescriptor.CanWrite)
-
-                dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
-
-        }
-
-        return dict;
-
-    }
-
-
-
-    public string Name
-
-    {
-
-        get { return this._Name; }
-
-        set
-
-        {
-
-            this._Name = value;
-
-            this.RaisePropertyChanged("Name");
-
-        }
-
-    }    
-
-
-
-    public int ContactID
-
-    {
-
-        get { return this._ContactID; }
-
-        set
-
-        {
-
-            this._ContactID = value;
-
-            this.RaisePropertyChanged("ContactID");
-
-        }
-
-    }
-
-
-
-    private int _EmployeeID;
-
-
-
-    public int EmployeeID
-
-    {
-
-        get { return this._EmployeeID; }
-
-        set
-
-        {
-
-            this._EmployeeID = value;
-
-            this.RaisePropertyChanged("EmployeeID");
-
-        }
-
-    }
-
-
-
-    private Dictionary<string, object> storedValues;
-
-    public void BeginEdit()
-
-    {
-
-        this.storedValues = this.BackUp();
-
-    }
-
-
-
-    public void CancelEdit()
-
-    {
-
-        if (this.storedValues == null)
-
-            return;
-
-        foreach (var item in this.storedValues)
-
-        {
-
-            var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
-
-            var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
-
-            if (pDesc != null)
-
-                pDesc.SetValue(this, item.Value);
-
-        }
-
-    }
-
-
-
-    public void EndEdit()
-
-    {
-
-        if (this.storedValues != null)
-
-        {
-
-            this.storedValues.Clear();
-
-            this.storedValues = null;
-
-        }
-
-    }
-
-}
 {% endhighlight %}
+{% endtabs %}
 
-## How To
+## Events
 
-### How to Programmatically Edit the Cell?
+SfDataGrid triggers the following events during editing. 
 
-SfDataGrid allows you to edit the cell programmatically by calling BeginEdit() method. Initially you can set CurrentCell’s row and column index where you can make use of public structure of RowColumnIndex. 
+### CurrentCellBeginEdit Event
 
-Pass that created rowColumnIndex to MoveCurrentCell(RowColumnIndex rowColumnIndex) method. The method moves current cell to passed rowColumnIndex. You can call BeginEdit () method now to edit the cell in CurrentCellManager. 
+[CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event occurs when the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) enter into edit mode. [CurrentCellBeginEditEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-The following code example illustrates that.
+* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is cancelled and the `CurrentCell` does not enter into the edit mode.
+* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row column index of the DataGrid.
+* [Column](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
+{% tabs %}
+{% highlight c# %}
 
-{% highlight C# %}
-
-
-
-sfdatagrid.Loaded += sfdatagrid_Loaded;
-
-…
-
-void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
-
+this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
+void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs args)
 {
-
-    RowColumnIndex rowColumnIndex = new RowColumnIndex();
-
-    rowColumnIndex.ColumnIndex = 2;
-
-    rowColumnIndex.RowIndex = 2;
-
-    sfdatagrid.MoveCurrentCell(rowColumnIndex);
-
-    sfdatagrid.SelectionController.CurrentCellManager.BeginEdit();
-
+    
 }
 
 {% endhighlight %}
+{% endtabs %}
 
+### CurrentCellEndEdit Event
 
+[CurrentCellEndEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellEndEdit_EV.html) event occurs when the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) exits the edit mode. [CurrentCellEndEditEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html) has following members which provides information for `CurrentCellEndEdit` event.
 
-The same way, you can call EndEdit () method to stop edting a cell.
+* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs~RowColumnIndex.html) : Gets the value for the current row column index.
 
+{% tabs %}
+{% highlight c# %}
 
-{% highlight C# %}
-
-
-
-void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
-
+this.dataGrid.CurrentCellEndEdit += dataGrid_CurrentCellEndEdit;
+void dataGrid_CurrentCellEndEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs args)
 {
-
-    RowColumnIndex rowColumnIndex = new RowColumnIndex();
-
-    rowColumnIndex.ColumnIndex = 2;
-
-    rowColumnIndex.RowIndex = 2;
-
-    sfdatagrid.MoveCurrentCell(rowColumnIndex);
-
-    sfdatagrid.SelectionController.CurrentCellManager.EndEdit();
-
+    
 }
 
 {% endhighlight %}
+{% endtabs %}
 
+### CurrentCellValueChanged Event
 
+[CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) event occurs whenever a value changes in GridColumn's that supports editing. [CurrentCellValueChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
 
-Both methods need current cell to starts or ends editing on cell.   
+* [Column](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
+* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs~RowColumnIndex.html) : Gets the value of the current RowColumnIndex.
 
-### Cancel Editing in Cells
+{% tabs %}
+{% highlight c# %}
 
-In some cases, you may not want a particular cell to enter into Edit mode. To achieve this, you have to cancel the CurrentCellBeginEdit event to cancel cell editing.  
+this.dataGrid.CurrentCellValueChanged += dataGrid_CurrentCellValueChanged;
+void dataGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs args)
+{
+    
+}
 
-Consider a example where you do not want the cell (2, 2) to enter into Edit mode. After handling the event, check for the RowColumnIndex and then cancel the event. This is illustrated in the following code example.
+{% endhighlight %}
+{% endtabs %}
 
+N> GridComboBoxColumn and GridMulitColumnDropList, you have to use the CurrentCellDropDownSelectionChanged event.
 
+### CurrentCellDropDownSelectionChanged Event
+
+[CurrentCellDropDownSelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellDropDownSelectionChanged_EV.html) event occurs whenever the `SelectedItem` of `GridMultiColumnDropDownList` and `GridComboBoxColumn` column changed.
+
+[CurrentCellDropDownSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
+
+* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~RowColumnIndex.html) – Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
+* [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedIndex.html) – Gets the index of the corresponding item that were selected from the drop-down control.
+* [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedItem.html) – Gets the data item that were selected from the drop-down control.
+
+{% tabs %}
+{% highlight c# %}
+
+this.dataGrid.CurrentCellDropDownSelectionChanged += dataGrid_CurrentCellDropDownSelectionChanged;
+void dataGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDropDownSelectionChangedEventArgs args)
+{
+    
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Programmatically edit the cell
+
+### BeginEdit
+
+SfDataGrid allows you to edit the cell programmatically by calling the [BeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~BeginEdit.html) method. Initially the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.Loaded += dataGrid_Loaded;
+void dataGrid_Loaded(object sender, RoutedEventArgs e)
+{
+    RowColumnIndex rowColumnIndex = new RowColumnIndex(3, 2);
+    this.dataGrid.MoveCurrentCell(rowColumnIndex);
+    this.dataGrid.SelectionController.CurrentCellManager.BeginEdit();
+}
+{% endhighlight %}
+{% endtabs %}
+
+### EndEdit
+
+You can call the [EndEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~EndEdit.html) method to programmatically end edit. 
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.Loaded += dataGrid_Loaded;        
+void dataGrid_Loaded(object sender, RoutedEventArgs e)
+{
+    RowColumnIndex rowColumnIndex = new RowColumnIndex(3, 2);
+    this.dataGrid.MoveCurrentCell(rowColumnIndex);
+    this.dataGrid.SelectionController.CurrentCellManager.EndEdit();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### CancelEdit
+
+You can use the [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event to cancel the editing operation for the corresponding cell.
+
+{% tabs %}
+{% highlight c# %}
+
+this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
+void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs args)
+{
+    var recordindex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
+    var columnindex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
+    var mappingname = this.dataGrid.Columns[columnindex].MappingName;
+    var record = this.dataGrid.View.Records.GetItemAt(recordindex);
+    var cellvalue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingname);
+    if (args.RowColumnIndex == new RowColumnIndex(3, 2))
+    args.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Mouse and Keyboard operations for UIElement inside Template
+
+You can directly load edit element using GridTemplateColumn.CellTemplate property. In this case, you can provide focus and control (keyboard and mouse) to the UIElement inside CellTemplate in the below ways,
+
+### Providing focus to the control inside the Template
+
+You can focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FousedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property. 
+
+{% tabs %}
 {% highlight xaml %}
 
-
-
-
-
-<syncfusion:SfDataGrid x:Name="syncgrid" AutoGenerateColumns="True"
-
-AllowEditing="True" CurrentCellBeginEdit="syncgrid_CurrentCellBeginEdit"
-
-ItemsSource="{Binding ProductDetails}"/>
-
-{% endhighlight %}
-
-
-{% highlight C# %}
-
-
-
-
-
-void syncgrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
-
-{
-
-//Cancels the editing for the RowColumnIndex (2,2).
-
-if (args.RowColumnIndex == new RowColumnIndex(2,2))
-
-args.Cancel = true;
-
-}
+<syncfusion:GridTemplateColumn HeaderText="Customer ID" 
+                               MappingName="CustomerID" >
+    <syncfusion:GridTemplateColumn.CellTemplate>
+        <DataTemplate>
+            <TextBlock syncfusion:FocusManagerHelper.FocusedElement="True"
+                       FontStyle="Italic"
+                       FontWeight="SemiBold"
+                       Padding="2,0"
+                       Text="{Binding CustomerID}" />
+        </DataTemplate>
+    </syncfusion:GridTemplateColumn.CellTemplate>
+</syncfusion:GridTemplateColumn>
 
 {% endhighlight %}
+{% endtabs %}
 
+### Providing keyboard control to UIElement inside CellTemplate
 
+You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting [FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html) attached property to `GridColumn`. 
 
-### Update Changes made in a DataGrid Column to other Columns
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridTemplateColumn MappingName="ProductId"  
+                               syncfusion:FocusManagerHelper.WantsKeyInput= "True">
+    <syncfusion:GridTemplateColumn.CellTemplate>
+        <DataTemplate>
+            <Grid>
+                <TextBox x:Name="text" Text="{Binding ProductId}"/>
+            </Grid>
+        </DataTemplate>
+    </syncfusion:GridTemplateColumn.CellTemplate>
+</syncfusion:GridTemplateColumn>
 
-The changes made in a cell can also be reflected in other Grid cells. This special-case scenario is handled by using the EndEdit event. In the EndEdit event, the RowColumnIndex of the edited cell is used to compute values for other items in the GridColumns.
+{% endhighlight %}
+{% endtabs %}
 
-In this scenario, consider the properties for discount and price from the data source. Whenever you change the value of the discount in the GridColumn, the price for the item also changes. The following code example shows how to get the record from the CurrentCellIndex and compute the Price property.
+N> Enter and Tab keys are always handled by SfDataGrid only.
 
+### Providing mouse control to UIElement inside template
 
+You can allow `UIElement` loaded inside template to handle mouse interaction in required cases by setting [VisualContainer.WantsMouseInput](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VisualContainer~WantsMouseInputProperty.html) attached property to `GridColumn`.
 
+{% tabs %}
 {% highlight xaml %}
 
-
-
-
-<syncfusion:SfDataGrid x:Name="syncgrid"
-
-                       AllowEditing="True"
-
-                       AutoGenerateColumns="True"
-
-                       CurrentCellEndEdit="syncgrid_CurrentCellEndEdit"
-
-                       ItemsSource="{Binding ProductDetails}" />
-
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="False" 
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTemplateColumn MappingName="ProductName">
+            <syncfusion:GridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                    <ComboBox ItemsSource="{Binding ComboItems, Source={StaticResource viewModel}}" 
+                              syncfusion:VisualContainer.WantsMouseInput="True" />
+                </DataTemplate>
+            </syncfusion:GridTemplateColumn.CellTemplate>
+        </syncfusion:GridTemplateColumn>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 
 {% endhighlight %}
+{% endtabs %}
 
+## How to
 
-{% highlight C# %}
+### Change the foreground of edited cells to keep track of changes
 
+You can change the foreground color of edited cells through the CellStyleSelector.
 
+Please follow the below steps to highlight the edited cells.
 
+1. Add new property `EditedColumns` in data object to maintain edited column `MappingName`.
+2. Add the MappingName of the column to ` EditedColumns`, in CurrentCellValueChanged to keep track of edited columns in data object. 
 
+{% tabs %}
+{% highlight c# %}
 
-void syncgrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
-
+this.dataGrid.CurrentCellValueChanged+=dataGrid_CurrentCellValueChanged;
+private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
 {
-
-var rowIndex = this.syncgrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
-
-var record = (this.syncgrid.View.Records[rowIndex]).Data as ProductInfo;
-
-//Check to see if you are editing the discount column.
-
-if (args.RowColumnIndex.ColumnIndex == 4)
-
-{
-
-//Computes the price from the discount property.
-
-if (record != null)
-
-record.Price = record.Price - record.Discount;
-
-}
-
+    if (!(args.Record as OrderInfo).EditedColumns.Contains(args.Column.MappingName))
+        (args.Record as OrderInfo).EditedColumns.Add(args.Column.MappingName);
+    //updates the current row index
+    this.dataGrid.UpdateDataRow(args.RowColumnIndex.RowIndex);
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-### How to change FontSize for Edit element?
+3. Create a style of TargetType `GridCell` and change the Foreground using CellStyleSelector based on ` EditedColumns` property in data object.
 
-This topic explains you how to change the FontSize for EditElement. TextBlock is loaded in non-edit mode and TextBox is loaded in edit mode as content to the GridCell.
-
-You can achieve this by applying style directly to TextBox. By defining corresponding TextBoxstyle inside the SfDataGrid.Resources, you can show the same font while cell is in edit mode. The following code example illustrates this,
-
-
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
-
-<syncfusion:SfDataGrid.Resources>
-
-    <Style TargetType="TextBox">
-
-        <Setter Property="FontSize" Value="16" />
-
+<Application.Resources>
+    <Style x:Key="cellStyle" TargetType="syncfusion:GridCell">
+        <Setter Property="Foreground" Value="DarkOrange" />
     </Style>
+</Application.Resources>
 
-</syncfusion:SfDataGrid.Resources>
+<Window.Resources>
+    <local:CellStyleSelector x:Key="cellStyleSelector" />
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       CellStyleSelector="{StaticResource cellStyleSelector}"
+                       AllowEditing="True"
+                       ItemsSource="{Binding Path=OrdersDetails}"
+                       ShowRowHeader="True">
+</syncfusion:SfDataGrid>
 {% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+public class CellStyleSelector : StyleSelector
+{
+    public override Style SelectStyle(object item, DependencyObject container)
+    {
+        var gridCell = container as GridCell;
+        if (gridCell.ColumnBase == null || gridCell.ColumnBase.GridColumn == null)
+            base.SelectStyle(item, container);
+            
+        var record = item as OrderInfo;
+        if (record.EditedColumns.Contains(gridCell.ColumnBase.GridColumn.MappingName))        
+            return App.Current.Resources["cellStyle"] as Style;
+            
+        return base.SelectStyle(item, container);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Editing_images/Editing_img2.jpeg)
 
 
+### Allow editing when pressing minus key
 
+SfDataGrid does not allow the cell to get into the edit mode while pressing the <kbd>Minus</kbd>key or any special character. You can overcome this behavior by customizing the SfDataGrid class, and overriding its OnTextInput () method.
 
-You can see that in edit mode the font size is changed compared to display mode UIElement.
+{% tabs %}
+{% highlight c# %}
+public class SfDataGridExt : SfDataGrid
+{
+    public SfDataGridExt()
+    : base()
+    {
+    }
+    
+    protected override void OnTextInput(TextCompositionEventArgs e)
+    {
+        if (!SelectionController.CurrentCellManager.HasCurrentCell)
+        {
+            base.OnTextInput(e);
+            return;
+        }
 
-
-
-![](Features_images/Features_img119.png)
-
-
-
-Font size of Editing element changed
-{:.caption}
+        //Get the Current Row and Column index from the CurrentCellManager
+        var rowColumnIndex = SelectionController.CurrentCellManager.CurrentRowColumnIndex;
+        RowGenerator rowGenerator = this.RowGenerator;
+        //Get the row from the Row index
+        var dataRow = rowGenerator.Items.FirstOrDefault(item => item.RowIndex == rowColumnIndex.RowIndex);
+        //Check whether the datarow is null or not and the type as DataRow
+        if (dataRow != null && dataRow is DataRow)
+        {
+            //Get the column from the VisibleColumn collection based on the column index
+            var dataColumn = dataRow.VisibleColumns.FirstOrDefault(column => column.ColumnIndex == rowColumnIndex.ColumnIndex);
+            //Convert the input text to char type 
+            char text;
+            char.TryParse(e.Text, out text);
+            //Skip if the column is GridTemplateColumn and the column is not already in editing 
+            //Allow Editing only pressed letters digits and Minus sign key 
+            if (dataColumn != null && !(dataColumn.GridColumn is GridTemplateColumn) && !dataColumn.IsEditing && SelectionController.CurrentCellManager.BeginEdit() && (e.Text.Equals("-") || char.IsLetterOrDigit(text)))
+                dataColumn.Renderer.PreviewTextInput(e);
+        }
+        base.OnTextInput(e);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
