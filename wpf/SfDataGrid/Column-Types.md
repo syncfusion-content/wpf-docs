@@ -1366,7 +1366,7 @@ In this case SfDataGrid handles the below key operations and other keys are hand
 
 ### Setting focus to particular element inside Template when cell gets activated or edited
 
-You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting [FocusedManager.FousedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property. You can use this property to start editing the template column value as like normal column when the user gets into edit mode.
+You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting [FocusManagerHelper.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property. You can use this property to start editing the template column value as like normal column when the user gets into edit mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1478,9 +1478,9 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 
 ## GridComboBoxColumn
 
-`GridComboBoxColumn` derived from `GridColumn` and it displays columns data like enumeration as cell contents. It hosts `ComboBox` in editing mode. You can edit the text in the textbox by setting [IsEditable](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~IsEditable.html) property to `true`. 
+`GridComboBoxColumn` derived from `GridColumn` which hosts `ComboBox` as edit element.You can enable editing in ComboBox by setting [IsEditable](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~IsEditable.html) property to `true`.  The data source to ComboBox can be set by using `GridComboBoxColumn.ItemsSource` property.
 
-By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can allow end-user to change display and combo box items (visual presentation objects) value by setting [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~DisplayMemberPath.html). [SelectedValuePath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~SelectedValuePath.html) used to gets or set the value from SelectedItem by `DisplayMemberPath` or `MappingName` properties.
+By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can set [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~DisplayMemberPath.html) which denotes the path to a value on the source object(GridComboBoxColumn.ItemsSource) to serve as visual representation of object. You can set [SelectedValuePath](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~SelectedValuePath.html) which denotes the path to get the SelectedValue from the SelectedItem.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1703,7 +1703,7 @@ You can allow end-user to resize the drop-down popup by showing resizing thumb b
 
 #### Keep popup open on editing
 
-You can allow end-user to open the drop-down popup, when the user start editing on text editor using [AllowImmediatePopup](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowImmediatePopup.html) property to `true` in [OnEditElementLoaded](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellMultiColumnDropDownRenderer~OnEditElementLoaded.html) method by overriding existing renderer.
+You can open the drop-down popup, when the user start editing on text editor using [AllowImmediatePopup](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowImmediatePopup.html) property to `true` in [OnEditElementLoaded](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellMultiColumnDropDownRenderer~OnEditElementLoaded.html) method by overriding existing renderer.
 
 Below code, creates `GridCellMultiColumnDropDownRendererExt` to set `AllowImmediatePopup` property. Replace the default renderer with created renderer in [SfDataGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection.
 
@@ -1761,7 +1761,7 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 ### Cancel the navigation
 
-You can allow end-user to cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
+You can cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1778,11 +1778,11 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 #### Change the alignment
 
-You can allow end-user to change the horizontal alignment of `GridHyperLinkColumn` using [HorizontalAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn~HorizontalAlignment.html) property.
+You can change the horizontal alignment of `GridHyperLinkColumn` using [HorizontalAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn~HorizontalAlignment.html) property.
 
 #### Change the foreground color
 
-You can allow end-user to change the foreground color of `GridHyperLinkColumn` by writing the style with target type `Hyperlink`.
+You can change the foreground color of `GridHyperLinkColumn` by writing the style with target type `Hyperlink`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1811,11 +1811,6 @@ You can allow end-user to change the foreground color of `GridHyperLinkColumn` b
 
 `GridImageColumn` derived from `GridColumn` and it displays columns data as Image. It hosts `Image` element as `GridCell` content.
 
-### Display Image
-
-#### Using MappinName
-
-You can allow end-user to display image directly by setting `GridColumn.MappingName` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1855,9 +1850,9 @@ In the below code `GridImageColumn` defined with `ImageLink` property using `Map
 {% endhighlight %}
 {% endtabs %}
 
-#### Using ValueBinding
+#### Read image from path using ValueBinding
 
-You can also allow end-user to convert the data to image by setting `Converter` in `ValueBinding` definition.
+You can use converter to read image from resource by setting `Converter` in `ValueBinding` definition.
 
 Below code, returns the `Image URI` using `ValueBinding` property.
 
@@ -1901,7 +1896,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Image", MappingN
 
 ### Customize Image
 
-`GridImageColum` allows you to customzie the image with below properties.
+`GridImageColum` allows you to customize the image with below properties.
 
 * `Width and Height`**-** You can change the height and width of the image using [GridImageColumn.ImageHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridImageColumn~ImageHeight.html) and [GridImageColumn.ImageWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridImageColumn~ImageWidth.html) properties.
 
@@ -2714,7 +2709,7 @@ public class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock, DatePi
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snippet, you can allow end-user to create the display and edit element for renderer by overriding [OnCreateDisplayUIElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRendererBase%602~OnCreateDisplayUIElement.html) and [OnCreateEditUIElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRendererBase%602~OnCreateEditUIElement.html) methods.
+With the below code snippet, you can create the display and edit element for renderer by overriding [OnCreateDisplayUIElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRendererBase%602~OnCreateDisplayUIElement.html) and [OnCreateEditUIElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRendererBase%602~OnCreateEditUIElement.html) methods.
 
 {% tabs %}
 {% highlight c# %}
