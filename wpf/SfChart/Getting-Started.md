@@ -49,7 +49,8 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.Sf
 ****### Add SfChart from Toolbox
 
 Drag and drop the SfChart control from the Toolbox to your application.
-![Visual Studio Toolbox](Getting-Started_images/getting_started_img10.jpeg)
+
+![Visual Studio Toolbox](Getting-Started_images/getting-started_img10.png)
 
 Now the Syncfusion.SfChart.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
