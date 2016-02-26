@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing| SfChart | Wpf | Syncfusion
-description: printing
+title: Printing support of the SfChart control.
+description: Printing or exporting to XPS feature of SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,72 +9,81 @@ documentation: ug
 
 # Printing
 
-SfChart supports printing that enables you to print the chart. This support works in Windows 8.1 but not in Windows 8.
+SfChart supports printing that enables you to print the chart. The following method is used to print the chart.
 
+## Print()
 
+This method will invoke a printing dialog window with set of printing options.
 
-<table>
-<tr>
-<th>
-Prototype</th><th>
- Description</th></tr>
-<tr>
-<td>
-Print()</td><td>
-This method is used to print the chart by invoking the Charm window listing with output options.</td></tr>
-</table>
+The following code example demonstrates the printing of chart in button click event:
 
-
-The following code example illustrates the Printing feature.
-{% tabs %}
 {% highlight xaml %}
 
+<chart:SfChart x:Name="ExportDemoChart" >
 
+<chart:SfChart.Watermark>
 
-<syncfusion:SfChart HorizontalAlignment="Right" VerticalAlignment="Top" Height="400" Width="650" Margin="0,50,100,0"
+<chart:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
 
-Palette="Metro" Loaded="ChartOnLoaded"
+<chart:Watermark.Content>
 
->
+<TextBlock Text="Climate Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
 
-<syncfusion:SfChart.PrimaryAxis>
+</chart:Watermark.Content>
 
-<syncfusion:NumericalAxis Interval="2" FontSize="14" />
+</chart:Watermark>
 
-</syncfusion:SfChart.PrimaryAxis>
+</chart:SfChart.Watermark>
 
-<syncfusion:SfChart.SecondaryAxis>
+<chart:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis FontSize="14"/>
+<chart:CategoryAxis  PlotOffset="20" Header="Month" />
 
-</syncfusion:SfChart.SecondaryAxis>
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis Header="Degree ( In Celsius )" 
+
+RangePadding="Round"/>
+
+</chart:SfChart.SecondaryAxis>
+
+<!-- Add Series to the Chart-->
+
+<chart:SplineSeries Label="Sports" ItemsSource="{Binding ClimateData}"         
+
+XBindingPath="Month" YBindingPath="Temperature">
+
+<chart:SplineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" 
+
+ShowLabel="True"/>
+
+</chart:SplineSeries.AdornmentsInfo>
+
+</chart:SplineSeries>
+
+</chart:SfChart>
 
 {% endhighlight %}
 
-
-
 {% highlight C# %}
 
-
-
-private void ChartOnLoaded(object sender, RoutedEventArgs routedEventArgs)
+private void Button_Click_1(object sender, RoutedEventArgs e)
 
 {
 
-var chart = sender as SfChart;
-
-if (chart != null)
-
-chart.Print();
+ExportDemoChart.Print();
 
 }
 
 {% endhighlight %}
-{% endtabs %}
 
-The following screenshot illustrates Printing.
+The following image shows the printing dialog window upon invoking print method.
 
-![C:/Users/rachel/Desktop/snaps/20.png](Printing_images/Printing_img1.png)
+![SfChart Printing Dialog Window](Printing_images/Printing_img1.jpeg)
 
 
 
