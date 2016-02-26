@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started| SfChart | Wpf | Syncfusion
-description: getting started
+title: Getting Started for the SfChart.
+description: Getting start with simple application using SfChart in WPF.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,52 +9,155 @@ documentation: ug
 
 # Getting Started
 
-This section helps you get started with the SfChart control.
+The following section helps you to build your application with SfChart. 
 
-##Visual Structure
+###Steps
 
-###Create a simple chart from XAML
-
-###Create a simple chart from Code Behind 
-
-## Visual Structure
-
-The following image helps you understand various elements in SfChart, when you use it for the first time. 
-
-![C:/Users/ganesan/Desktop/Images/chartvisualstructure_3.png](Getting-Started_images/Getting-Started_img1.png)
-
-
-A chart is composed of various elements such as ChartSeries, ChartLegend, ChartAxis, ChartAdornment, grid lines and headers. 
-
-* **Header** - Represents the title of the chart.
-* **ChartSeries** - Represents the type of chart to be drawn in the chart area.
-* **ChartLegend** - Displays brief information about the ChartSeries plotted in the chart area.
-* **ChartAdornment** - Displays information about the data points in ChartSeries.
-* **ChartAxis** - Displays a linear scale of values with definite intervals between them.
+   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90).
+   * Add the SfChart assembly to your application. 
+   * Initialize chart control.
+   * Adding header to the chart control.
+   * Adding axes to the chart control.
+   * Adding series to the chart control.
+   * Adding legends for the series.
+   
+These steps were explained below for both XAML and code behind.
 
 
 ## Create a simple chart from XAML
 
-
-This session demonstrates how to create a chart using SfChart control from XAML. For that, you must add the SfChart reference to your application.
-
-###Add assembly reference
+****### Adding assembly reference
 
 1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
-3. Add the following namespace in your XAML page.
+2. Choose Windows > Extensions > Syncfusion.SfChart.WPF.
 
+![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/getting_started_img1.jpeg)
+
+N> This window differs for the Visual Basic project.
+
+T> Select the framework version respective to your application. The version can be identified as below:
+XX.X450.0.X – 4.5 Framework
+XX.X451.0.X – 4.5.1 Framework
+XX.X460.0.X – 4.6 Framework
+
+* Add the following namespace in your XAML window.
 {% highlight xaml %}
-
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+{% endhighlight %}
+
+
+****### Add SfChart from Toolbox
+
+Drag and drop the SfChart control from the Toolbox to your application.
+
+![Visual Studio Toolbox](Getting-Started_images/getting-started_img10.png)
+
+Now the Syncfusion.SfChart.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
+
+![Project Solution Window contains SfChart reference](Getting-Started_images/getting_started_img2.jpeg)
+
+
+![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF" in MainWindow](Getting-Started_images/getting_started_img3.jpeg)
+
+
+In this section, the data in the following table is used for demonstration.
+
+### Gold Demand in World market
+
+<table>
+<tr>
+<td>
+**Demand** **for** **Gold******<br/><br/></td><td>
+**2010** **(****In** **Tonnes****)******<br/><br/></td><td>
+**2011** **(****In** **Tonnes****)******<br/><br/></td></tr>
+<tr>
+<td>
+Jewelry<br/><br/></td><td>
+1,998.0<br/><br/></td><td>
+2,361.2<br/><br/></td></tr>
+<tr>
+<td>
+Electronics<br/><br/></td><td>
+1284.0<br/><br/></td><td>
+1328.0<br/><br/></td></tr>
+<tr>
+<td>
+Research<br/><br/></td><td>
+1090.5<br/><br/></td><td>
+1032.0<br/><br/></td></tr>
+<tr>
+<td>
+Investment<br/><br/></td><td>
+1,643.0<br/><br/></td><td>
+1898.0<br/><br/></td></tr>
+<tr>
+<td>
+Bank Purchases<br/><br/></td><td>
+987.0<br/><br/></td><td>
+887.7<br/><br/></td></tr>
+</table>
+
+Before proceeding with the chart, create data model with the above details as follows.
+
+{% highlight c# %}
+    public class GoldDemand
+    {
+        public string Demand { get; set; } 
+        public double Year2010 { get; set; } 
+        public double Year2011 { get; set; }
+    }
+{% endhighlight %}
+
+Create a collection property in MainWindow class as below:
+
+{% highlight c# %}
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        public ObservableCollection<GoldDemand> Demands { get; set; } 
+    }
+{% endhighlight %}
+
+Add the values to this Demands property, with the values illustrated in the above table.
+
+{% highlight c# %}
+
+InitializeComponent();
+
+this.Demands = new ObservableCollection<GoldDemand> 
+{ 
+      new GoldDemand() 
+      { 
+        Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2 }, 
+        new GoldDemand() { Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0 }, 
+        new GoldDemand() { Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0 }, 
+        new GoldDemand() { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 }, 
+        new GoldDemand() { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 }
+      } 
+};
 
 {% endhighlight %}
 
-N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls.You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>
 
 
+### Initialize the chart
 
-###Initialize the Chart 
+{% highlight xaml %}
+<Grid>
+        
+    <syncfusion:SfChart>
+            
+    </syncfusion:SfChart>
+            
+</Grid>
+{% endhighlight %}
+
+
+###Initialize the chart 
 
 You need to initialize the chart represented by the following class Syncfusion.UI.Xaml.SfChart.
 
@@ -68,763 +171,488 @@ You need to initialize the chart represented by the following class Syncfusion.U
 
 {% endhighlight %}
 
-###Add SfChart from Toolbox
+### Add header to chart
 
-Drag and drop the SfChart control from the Toolbox to the required location, where the chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
+The header of the chart acts as the title, to identify its purpose. 
 
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-The Syncfusion WPF reference is added to the application reference and the xmlns namespace is added to MainPage.xaml.
-
-![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-![C:/Users/rachel/Desktop/sshot-33.png](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-The data in the following table is used to plot the chart for the demand for gold in the world market.
-
-Gold Demand in World market
-
-<table>
-<tr>
-<th>
-Demand for Gold</th><th>
-2010 (In Tonnes)</th><th>
-2011 (In Tonnes)</th></tr>
-<tr>
-<td>
-Jewelry </td><td>
-1,998.0</td><td>
-2,361.2</td></tr>
-<tr>
-<td>
-Electronics</td><td>
-1284.0</td><td>
-1328.0</td></tr>
-<tr>
-<td>
-Research </td><td>
-1090.5</td><td>
-1032.0</td></tr>
-<tr>
-<td>
-Investment</td><td>
-1,643.0</td><td>
-1898.0</td></tr>
-<tr>
-<td>
-Bank Purchases</td><td>
-987.0</td><td>
-887.7</td></tr>
-</table>
-
-Before proceeding with the chart, create data model chart with the above details as follows.
-
-{% highlight C# %}
-
-public class GoldDemand
-
-{
-
-public string Demand { get; set; }
-
-public double Year2010 { get; set; }
-
-public double Year2011 { get; set; }
-
-}
-
-{% endhighlight %}
-
-Now, you have a model chart with properties like Demand and Values that can hold values of each item in the collection.
-
-{% highlight C# %}
-
-public ObservableCollection<GoldDemand> Demands { get; set; }
-
-Populate the underlying collection
-{% endhighlight %}
-
-Add the values to the above defined collection property called Demand, with the values illustrated in the above table.
-
-{% highlight C# %}
-
-this.Demands = new ObservableCollection<GoldDemand>
-
-{
-
-new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
-
-new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
-
-new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
-
-new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
-
-};
-{% endhighlight %}
-Now you can add the chart elements required for the above scenario to the SfChart instance created.
-
-
-
-### Add Header to Chart
-
-The header of the chart acts as the title of the chart created, to identify its purpose. Here, the header, Demand Comparison of Gold, is added.
+Here you specify “Demands Comparison” as header as in below code example.
 
 {% highlight xaml %}
 
-<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" 
+    <Grid>
 
-Header="Demand Comparison of Gold" 
+        <syncfusion:SfChart Header="Demands Comparison" Height="300" Width="400">
+                        
+        </syncfusion:SfChart>
 
-Height="300" Width="500">
-
-
-
-</syncfusion:SfChart>
-
+    </Grid>
 
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![SfChart with default axes after initializing.](Getting-Started_images/getting_started_img4.jpeg)
 
 
+### Adding Axes
 
-### Add Axes
-
-The following code example illustrates how to add Primary (horizontal) and Secondary (vertical) axes to the SfChart.
+The following code example illustrates how to add primary (horizontal) and secondary (vertical) axes to the SfChart.
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
-
+    <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
 </syncfusion:SfChart.PrimaryAxis>
-
-
-
+            
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis Header="Values ( In Tonnes)" FontSize="14"/>
-
+    <syncfusion:NumericalAxis Header="Values" FontSize="14"/>
 </syncfusion:SfChart.SecondaryAxis>
-
 
 {% endhighlight %}
 
 
-![F:/Snaps/sshot-5.png](Getting-Started_images/Getting-Started_img6.png )
+![SfChart with defined axes.](Getting-Started_images/getting_started_img5.jpeg)
 
 
-
-N> SfChart supports default axes (primary and secondary axis will be generated automatically), which will create the primary and secondary axis based on the data binded with chart. 
-
+N> SfChart supports default axes, so that these axes (primary and secondary axis) will get generated automatically based upon the data bind to the chart, if You didn’t specify the axes explicitly. 
 
 
-###Add ChartSeries to Chart
+### Adding series 
 
-To begin plotting data, choose from a wide variety of graphical representations available from the chart library such as LineSeries, ColumnSeries. ColumnSeries is created in the following example. Two column series are initialized to represent the years 2010 and 2011 respectively.
+You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
 
-Tip: The graph selection depends on user scenario and the nature of the data. For example, consider a case where you are developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
- 
+You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
 
-<table>
-<tr>
-<th>
-<syncfusion:ColumnSeries Label="2010"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2010"                                />            <syncfusion:ColumnSeries Label="2011"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2011"/></th></tr>
-<tr>
-<td>
-{{ 'Note: Syncfusion Chart also supports rendering combination of multiple series.' | markdownify }}</td></tr>
-</table>
+{% highlight xaml %}
+<syncfusion:ColumnSeries/> 
+<syncfusion:ColumnSeries/>
+{% endhighlight %}
 
-After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
+T> The graph selection depends on user scenario and the nature of the data. For example, consider a case where you are developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
 
-* **ItemsSource** - It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
 
-* **XBindingPath** - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* **ItemsSource** - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* **XBindingPath** - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* **YBindingPath** - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* **Label** - This property gives names for the series, which in turn mapped by the Legend.
 
-* **YBindingPath** - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+{% highlight xaml %}
+<syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
 
-* **Label** - This property gives names for the series, mapped by the Legend.
+<syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" />
+{% endhighlight %}
 
 
+### Add legends to the chart
 
-### Add Legends to Chart
-
-Legends act as indicators for the chart. They carry some metadata about plotting data in the ChartSeries. (For more details)
+The following code example illustrates the syntax to add the [legends](http://help.syncfusion.com/wpf/sfchart/legend) in chart. 
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.Legend>
-
-<syncfusion:ChartLegend Visibility="Visible"/>
-
+    <syncfusion:ChartLegend Visibility="Visible"/>
 </syncfusion:SfChart.Legend>
 
 {% endhighlight %}
 
-Now you have created a Chart demonstrating the studies related to Gold demands in World market. The following code examples are for both XAML and CodeBehind.
+Now you have prepared a Chart demonstrating the studies related to Gold demands in World market. The following code example gives you the complete code for creating a chart.
 
 {% highlight xaml %}
 
-<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demand Comparison of Gold" FontSize="16" Height="300" Width="500">
+<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demands Comparison" FontSize="16" 
+                    Height="300" Width="500">
+            
+    <!--Initialize the horizontal for SfChart-->
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
+    </syncfusion:SfChart.PrimaryAxis>
+            
 
+    <!--Initialize the vertical for SfChart-->
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis Header="Values" FontSize="14"/>
+    </syncfusion:SfChart.SecondaryAxis>
 
+            
+    <!--Adding Legend to the SfChart-->
+    <syncfusion:SfChart.Legend>
+        <syncfusion:ChartLegend Visibility="Visible"/>
+    </syncfusion:SfChart.Legend>
+            
 
-<!--Initialize the Primary Axis for SfChart-->
+    <!--Initialize the series for SfChart-->
+    <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
 
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
-
-</syncfusion:SfChart.PrimaryAxis>
-
-
-
-<!--Initialize the Secondary Axis for SfChart-->
-
-<syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/>
-
-</syncfusion:SfChart.SecondaryAxis>
-
-
-
-<!--Adding Legend to the SfChart-->
-
-<syncfusion:SfChart.Legend>
-
-<syncfusion:ChartLegend Visibility="Visible"/>
-
-</syncfusion:SfChart.Legend>
-
-
-
-<!--Initialize the Chart Series for SfChart-->
-
-<syncfusion:ColumnSeries Label="2010" 
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010"
-
-/>
-
-
-
-<syncfusion:ColumnSeries Label="2011" 
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2011"
-
-/>
-
+    <syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" />
+            
 </syncfusion:SfChart>
 
-			{% endhighlight %}
+{% endhighlight %}
 
 ###Code Behind
 
 {% highlight C# %}
 
-	public sealed partial class MainPage : Page
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
 
-	{
+            this.Demands = new ObservableCollection<GoldDemand> 
+            { 
+                new GoldDemand() 
+                { 
+                    Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2 
+                }, 
+                    new GoldDemand() { Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0 },
+                    new GoldDemand() { Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0 }, 
+                    new GoldDemand() { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 }, 
+                    new GoldDemand() { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 } 
+            };
 
-	public MainPage()
+            this.DataContext = this;
+        }
 
-	{
+        public ObservableCollection<GoldDemand> Demands { get; set; } 
+    }
 
-	this.InitializeComponent();
-
-	this.Demands = new ObservableCollection<GoldDemand>
-
-	{
-
-	new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
-
-	new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
-
-	new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
-
-	new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-	new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
-
-	};
-
-
-
-	DataContext = this;
-
-	}
-
-
-
-	public ObservableCollection<GoldDemand> Demands { get; set; }
-
-	}
-
-
-
-	public class GoldDemand
-
-	{
-
-	public string Demand { get; set; }
-
-	public double Year2010 { get; set; }
-
-	public double Year2011 { get; set; }
-
-	}
+    public class GoldDemand
+    {
+        public string Demand { get; set; } 
+        public double Year2010 { get; set; } 
+        public double Year2011 { get; set; }
+    }
 
 {% endhighlight %}
+    
+The following chart is created as a result of the above codes.
 
-The following Chart is created as a result of the above data and code.
-
-![C:/Users/rachel/Desktop/snaps/1.png](Getting-Started_images/Getting-Started_img7.png) 
+![SfChart with Column series including legend.](Getting-Started_images/getting_started_img6.jpeg)
 
 
 
-## Create a simple chart from code behind 
+## Create a simple chart from code behind (C#/VB)
 
-Some developers prefer code behind as the first approach for development, to create things dynamically. This section helps you create SfChart from code behind.
+Some developers prefer code behind as the first approach for development, to create things dynamically. This section helps you create to SfChart from code behind.
 
-###Add assembly reference
+### Adding assembly reference
 
 1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
-3. Add the following namespace in your C# file, MainPage.xaml.cs.
+2. Choose Windows > Extensions >Syncfusion.SfChart.WPF
+3. Add the following namespace in your C# file, MainWindow.xaml.cs.
 
-
-
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
+{% endhighlight  %}
 
-{% endhighlight %}
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Imports Syncfusion.UI.Xaml.Charts
 
+{% endhighlight  %}
 
-{% endhighlight %}
+****### Initialize the chart
 
- 
+You need to create the instance for the SfChart as below.
 
-N> Adding the extension Syncfusion.SfChart.WPF, will add all the Syncfusion WPF controls. Also you can add the SfChart reference alone from the below location.
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>
-
-The following section demonstrates a simple Chart with the data discussed above, that is SfChart from XAML. A collection property called Demand is created. (For more details). 
-
-
-
-###Initialize the Chart 
-
-You need to initialize the Chart represented by the class Syncfusion.UI.Xaml.SfChart.
-
-{% highlight C# %}
+{% highlight c# %}
 
 SfChart chart = new SfChart();
 
+{% endhighlight  %}
 
-{% endhighlight %}
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim chart As New SfChart()
 
-{% endhighlight %}
+{% endhighlight  %}
 
-###Add Header to the Chart
+### Adding header to the chart
 
-The header acts as the title for the Chart you created, to identify its purpose. 
+The header acts as the title for the Chart you created, to identify its purpose.
 
-{% highlight C# %}
+{% highlight c# %}
 
-chart.Header = "Demand Comparison for Gold";
+chart.Header = "Demands Comparison";
 
+{% endhighlight  %}
 
-{% endhighlight %}
+{% highlight vb %}
 
+chart.Header = "Demands Comparison"
 
-{% highlight vbnet %}
+{% endhighlight  %}
 
-chart.Header = "Demand Comparison for Gold"
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img8.png)
+![SfChart with default axes.](Getting-Started_images/getting_started_img7.jpeg)
 
 
-
-###Add Axes
+### Adding Axes
 
 The following code example illustrates how to add Primary (horizontal) and Secondary (vertical) axes to the SfChart.
 
-{% highlight C# %}
+{% highlight c# %}
 
-//Adding Primary Axis to the chart
+//Adding horizontal axis to the chart 
 
-CategoryAxis primaryCategoryAxis = new CategoryAxis();
+CategoryAxis primaryAxis = new CategoryAxis(); 
 
-primaryCategoryAxis.Header = "Demands";
+primaryAxis.Header = "Demands"; 
 
-
-
-chart.PrimaryAxis = primaryCategoryAxis;
+chart.PrimaryAxis = primaryAxis; 
 
 
+//Adding vertical axis to the chart 
 
-//Adding Secondary Axis to the chart
+NumericalAxis secondaryAxis = new NumericalAxis(); 
 
-NumericalAxis secondaryNumericalAxis = new NumericalAxis();
-
-secondaryNumericalAxis.Header = "Values ( In Tonnes)";
-
-
+secondaryAxis.Header = "Values"; 
 
 chart.SecondaryAxis = secondaryNumericalAxis;
 
-{% endhighlight %}
+{% endhighlight  %}
+
+{% highlight vb %}
+
+'Adding horizontal axis to the chart 
+
+Dim primaryAxis As New CategoryAxis()
+
+primaryAxis.Header = "Demands"
+
+chart.PrimaryAxis = primaryAxis
 
 
+'Adding vertical axis to the chart 
 
-{% highlight vbnet %}
+Dim secondaryAxis As New NumericalAxis()
 
-'Adding Primary Axis to the chart
+secondaryAxis.Header = "Values"
 
-Dim primaryCategoryAxis As New CategoryAxis()
+chart.SecondaryAxis = secondaryAxis
 
-primaryCategoryAxis.Header = "Demands"
+{% endhighlight  %}
 
+![SfChart with defined axes.](Getting-Started_images/getting_started_img8.jpeg)
 
-
-chart.PrimaryAxis = primaryCategoryAxis
-
-
-
-'Adding Secondary Axis to the chart
-
-Dim secondaryNumericalAxis As New NumericalAxis()
-
-secondaryNumericalAxis.Header = "Values ( In Tonnes)"
+N> SfChart supports default axes, so that these axes (primary and secondary axis) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly. 
 
 
+### Adding series
 
-chart.SecondaryAxis = secondaryNumericalAxis
+You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
 
-{% endhighlight %}
+You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
 
-![](Getting-Started_images/Getting-Started_img9.png)
-
-
-
-N> SfChart supports default axes, that is the primary and secondary axis are generated automatically, that create the primary and secondary axis based on the data binded with chart.
-
-
-
-###Add ChartSeries to Chart
-
-To begin plotting data, choose from a wide variety of graphical representations available from the chart library such as LineSeries, ColumnSeries. ColumnSeries is created in the following code example. Two column series are initialized to represent the years 2010 and 2011 respectively.
-
-Tip: The graph selection depends on the user scenario and the nature of the data. For example, consider the case where a user is developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
- 
-{% tabs %}
-{% highlight C# %}
-
-//Intialize the first series (ColumnSeries) for the chart
+{% highlight c# %}
 
 ColumnSeries series1 = new ColumnSeries();
 
-series1.Label = "2010";
+ColumnSeries series2 = new ColumnSeries();
 
-series1.ItemsSource = Demands;
+{% endhighlight  %}
+
+{% highlight vb %}
+
+Dim series1 As New ColumnSeries()
+
+Dim series2 As New ColumnSeries()
+
+{% endhighlight  %}
+
+T> The graph selection depends on the user scenario and the nature of the data. For example, consider the case where a user is developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
+
+After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
+
+* **ItemsSource** - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* **XBindingPath** - It is a string property, used to map properties that need to be bound to the PrimaryAxis (or XAxis). It is like a value member path in ListBox.
+* **YBindingPath** - It is a string property, used to map properties that need to be bound to the SecondaryAxis (Or YAxis). It is like a value member path in ListBox.
+* **Label** - This property gives names for the series, which in turn mapped by the Legend.
+
+{% highlight c# %}
+
+ColumnSeries series1 = new ColumnSeries();
+
+series1.ItemsSource = this.Demands;
 
 series1.XBindingPath = "Demand";
 
 series1.YBindingPath = "Year2010";
 
-
-
-//Intialize the second series (ColumnSeries) for the chart
-
 ColumnSeries series2 = new ColumnSeries();
-
-series2.Label = "2011";
-
-series2.ItemsSource = Demands;
 
 series2.XBindingPath = "Demand";
 
 series2.YBindingPath = "Year2011";
 
-
-
-//Adding Series to the Chart Series Collection
+series2.ItemsSource = this.Demands;
 
 chart.Series.Add(series1);
 
 chart.Series.Add(series2);
 
-{% endhighlight %}
+{% endhighlight  %}
 
-
-
-{% highlight vbnet %}
-
-'Intialize the first series (ColumnSeries) for the chart
+{% highlight vb %}
 
 Dim series1 As New ColumnSeries()
 
-series1.Label = "2010"
-
-series1.ItemsSource = Demands
+series1.ItemsSource = Me.Demands
 
 series1.XBindingPath = "Demand"
 
 series1.YBindingPath = "Year2010"
 
-
-
-'Intialize the second series (ColumnSeries) for the chart
-
 Dim series2 As New ColumnSeries()
-
-series2.Label = "2011"
-
-series2.ItemsSource = Demands
 
 series2.XBindingPath = "Demand"
 
 series2.YBindingPath = "Year2011"
 
-'Adding Series to the Chart Series Collection
+series2.ItemsSource = Me.Demands
 
 chart.Series.Add(series1)
 
 chart.Series.Add(series2)
-{% endhighlight %} 
-{% endtabs %}
 
-N> Syncfusion Chart also supports rendering combination of multiple series.
+{% endhighlight  %}
 
-After you add the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
-
-* **ItemsSource** – It is a collection property, like other collection controls like ListBox, ComboBox, that you can bind your underlying collection to it.
-
-* **XBindingPath** – It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
-
-* **YBindingPath** – It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
-
-* **Label** – This property gives names for the series, mapped by the Legend.
+N> Syncfusion Chart also supports rendering combination of multiple series. Refer this for details.
 
 
+### Adding legends to the chart
 
-###Add Legends to Chart
+The following code examples demonstrates how to add legends to your chart.
 
-Legends are like indicators for the chart, with metadata about data plotting in the ChartSeries. (For more detail)
+{% highlight c# %}
 
-{% tabs %}
-{% highlight C# %}
+ChartLegend legend = new ChartLegend();
 
-//Adding Legends for the chart
+legend.Visibility = System.Windows.Visibility.Visible;
 
-chart.Legend = new ChartLegend() {Visibility = Visibility.Visible};
+chart.Legend = legend; 
 
+{% endhighlight  %}
 
-{% endhighlight %}
+{% highlight vb %}
 
+Dim legend As New ChartLegend()
 
-{% highlight vbnet %}
+legend.Visibility = System.Windows.Visibility.Visible
 
-'Adding Legends for the chart
+chart.Legend = legend
 
-chart.Legend = New ChartLegend() With {.Visibility = Visibility.Visible}
+{% endhighlight  %}
 
+Now you have prepared a Chart demonstrating the studies related to Gold demands in World market. 
 
+The following code example gives you the complete code for creating a chart.
 
-{% endhighlight %}
-{% endtabs %}
-
-Now you have created a chart that demonstrates the studies related to Gold demands in World market. 
-
-{% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfChart chart = new SfChart();
 
-chart.HorizontalAlignment = HorizontalAlignment.Center;
+chart.Header = "Demands Comparison";
 
-chart.VerticalAlignment = VerticalAlignment.Center;
+//Adding horizontal axis to the chart
 
-chart.Header = "Demand Comparison for Gold";
+CategoryAxis primaryCategoryAxis = new CategoryAxis(); 
 
-chart.Height = 300d;
+primaryCategoryAxis.Header = "Demands"; 
 
-chart.Width = 500d;
-
-
-
-//Adding Primary Axis to the chart
-
-CategoryAxis primaryCategoryAxis = new CategoryAxis();
-
-primaryCategoryAxis.Header = "Demands";
+chart.PrimaryAxis = primaryCategoryAxis; 
 
 
+//Adding vertical axis to the chart 
 
-chart.PrimaryAxis = primaryCategoryAxis;
+NumericalAxis secondaryNumericalAxis = new NumericalAxis(); 
 
-
-
-//Adding Secondary Axis to the chart
-
-NumericalAxis secondaryNumericalAxis = new NumericalAxis();
-
-secondaryNumericalAxis.Header = "Values ( In Tonnes)";
-
-
+secondaryNumericalAxis.Header = "Values"; 
 
 chart.SecondaryAxis = secondaryNumericalAxis;
 
 
-
-//Intialize the first series (ColumnSeries) for the chart
-
+//Initialize the two series for SfChart
 ColumnSeries series1 = new ColumnSeries();
 
-series1.Label = "2010";
-
-series1.ItemsSource = Demands;
+series1.ItemsSource = this.Demands;
 
 series1.XBindingPath = "Demand";
 
 series1.YBindingPath = "Year2010";
 
 
-
-//Intialize the second series (ColumnSeries) for the chart
-
 ColumnSeries series2 = new ColumnSeries();
-
-series2.Label = "2011";
-
-series2.ItemsSource = Demands;
 
 series2.XBindingPath = "Demand";
 
 series2.YBindingPath = "Year2011";
 
+series2.ItemsSource = this.Demands;
 
 
 //Adding Series to the Chart Series Collection
-
 chart.Series.Add(series1);
 
 chart.Series.Add(series2);
 
 
-
 //Adding Legends for the chart
+ChartLegend legend = new ChartLegend();
 
-chart.Legend = new ChartLegend() {Visibility = Visibility.Visible};
+legend.Visibility = System.Windows.Visibility.Visible;
 
+chart.Legend = legend;
 
 
 //Setting Chart as a Content for the Grid in Page
-
 this.MainGrid.Children.Add(chart);
-{% endhighlight %}
 
+{% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim chart As New SfChart()
 
-chart.HorizontalAlignment = HorizontalAlignment.Center
+chart.Header = "Demands Comparison"
 
-chart.VerticalAlignment = VerticalAlignment.Center
+'Adding horizontal axis to the chart 
 
-chart.Header = "Demand Comparison for Gold"
+Dim primaryAxis As New CategoryAxis()
 
-chart.Height = 300R
+primaryAxis.Header = "Demands"
 
-chart.Width = 500R
-
-
-
-'Adding Primary Axis to the chart
-
-Dim primaryCategoryAxis As New CategoryAxis()
-
-primaryCategoryAxis.Header = "Demands"
+chart.PrimaryAxis = primaryAxis
 
 
+'Adding vertical axis to the chart  
 
-chart.PrimaryAxis = primaryCategoryAxis
+Dim secondaryAxis As New NumericalAxis()
 
+secondaryAxis.Header = "Values"
 
-
-'Adding Secondary Axis to the chart
-
-Dim secondaryNumericalAxis As New NumericalAxis()
-
-secondaryNumericalAxis.Header = "Values ( In Tonnes)"
+chart.SecondaryAxis = secondaryAxis
 
 
-
-chart.SecondaryAxis = secondaryNumericalAxis
-
-
-
-'Intialize the first series (ColumnSeries) for the chart
-
+'Initialize the two series for SfChart
 Dim series1 As New ColumnSeries()
 
-series1.Label = "2010"
-
-series1.ItemsSource = Demands
+series1.ItemsSource = Me.Demands
 
 series1.XBindingPath = "Demand"
 
 series1.YBindingPath = "Year2010"
 
 
-
-'Intialize the second series (ColumnSeries) for the chart
-
 Dim series2 As New ColumnSeries()
-
-series2.Label = "2011"
-
-series2.ItemsSource = Demands
 
 series2.XBindingPath = "Demand"
 
 series2.YBindingPath = "Year2011"
 
+series2.ItemsSource = Me.Demands
 
 
 'Adding Series to the Chart Series Collection
@@ -834,22 +662,24 @@ chart.Series.Add(series1)
 chart.Series.Add(series2)
 
 
-
 'Adding Legends for the chart
 
-chart.Legend = New ChartLegend() With {.Visibility = Visibility.Visible}
+Dim legend As New ChartLegend()
 
+legend.Visibility = System.Windows.Visibility.Visible
+
+chart.Legend = legend
 
 
 'Setting Chart as a Content for the Grid in Page
 
 Me.MainGrid.Children.Add(chart)
-{% endhighlight %}
-{% endtabs %}
+
+{% endhighlight  %}
 
 The following output is displayed as a result of the above code example.
 
-![C:/Users/rachel/Desktop/snaps/1.png](Getting-Started_images/Getting-Started_img10.png)
+![SfChart with Column series and legend.](Getting-Started_images/getting_started_img9.jpeg)
 
 
 
