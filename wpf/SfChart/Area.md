@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Area| SfChart | Wpf | Syncfusion
-description: area
+title: Chart Area and its properties. 
+description: Guide for plot area properties and behaviors.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,227 +9,371 @@ documentation: ug
 
 # Area
 
-ChartArea represents the entire chart and all its elements. It’s a virtual rectangular area, that includes all the chart elements like axis, legends, series, etc. 
+Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
-## Multiple Panes
+The following are the major properties of chart('SfChart'):
 
-Creating multiple panes for the chart improves readability of the series. When the chart areas are aligned properly, it proves to be a better comparison for the series. They can be aligned the way you visualized it.
+* ['PrimaryAxis'](http://help.syncfusion.com/wpf/sfchart/axis# "") –  Gets or sets the horizontal x axis for the chart.
+* ['SecondaryAxis'](http://help.syncfusion.com/wpf/sfchart/axis# "") –  Gets or sets the vertical y axis for the chart.
+* ['Legend'](http://help.syncfusion.com/wpf/sfchart/legend# "") –  Gets or sets the legend for the chart.
+* ['Series'](http://help.syncfusion.com/wpf/sfchart/series# "") –  Gets or sets the list of series in the chart.
+* ['TechnicalIndicators'](http://help.syncfusion.com/wpf/sfchart/technical-indicators# "") –  Gets or sets the various financial indicators for the chart.
+* ['Behaviors'](http://help.syncfusion.com/wpf/sfchart/interactive-features# "")–  Used to add one more interactive features to the chart.
 
-In SfChart, you can split areas into multiple rows and columns using ChartRowDefinition and ChartColumnDefinition like GridRow and Column Definition. The following code example demonstrates how you can create multiple panes in the chart area.
+**Chart** **Header******
+
+Header property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.RowDefinitions>
+<syncfusion:SfChart  Header="Usage of Metals" />
 
-<syncfusion:ChartRowDefinition/>
-
-<syncfusion:ChartRowDefinition/>
-
-</syncfusion:SfChart.RowDefinitions>
-
-
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis ShowGridLines="False" FontSize="20" Header="Company Name"/>
-
-</syncfusion:SfChart.PrimaryAxis>
-
-
-
-<syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40" FontSize="20" Header="Gross Revenue (cr.)"/>
-
-</syncfusion:SfChart.SecondaryAxis>
-
-
-
-<syncfusion:LineSeries  Stroke="Red" StrokeThickness="3" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
-
-
-
-<syncfusion:LineSeries    Stroke="Green" StrokeThickness="3" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
-
-
-
-<syncfusion:LineSeries.YAxis>
-
-<syncfusion:NumericalAxis syncfusion:ChartBase.Row="1" syncfusion:ChartBase.Column="0" Header="Additional Axis" PlotOffset="30"/>
-
-</syncfusion:LineSeries.YAxis>
-
-</syncfusion:LineSeries>
 {% endhighlight %}
 
+{% highlight C# %}
 
-The following is the output for the multiple panes.
+{% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/1.png](Area_images/Area_img1.png)
-
-
-
-### Chart area customization APIs
-
-The chart area can be customized to enrich your application’s look and feel. SfChart provides APIs to customize chart area, based on your requirements. Chart area includes many elements, and each element can be customized using the API that you can learn from the respective sections of those elements. This section explains about the elements and API for common customization of chart area.
+![](Area_images/Area_img1.jpeg)
 
 
+Header can be positioned left or right side of the chart using ['HorizontalHeaderAlignment'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~HorizontalHeaderAlignment.html# "") property.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-PrimaryAxis</td><td>
-Gets or sets the primary X-Axis for the chart.</td></tr>
-<tr>
-<td>
-SecondaryAxis</td><td>
-Gets or sets the primary Y-Axis for the chart.</td></tr>
-<tr>
-<td>
-AreaBorderBrush</td><td>
-Gets or sets the brush that describes border of chart area excludes Axis, Header and Legend.</td></tr>
-<tr>
-<td>
-AreaBorderThickness     </td><td>
-Gets or sets the thickness for the chart area border excludes Axis, Header and Legend.</td></tr>
-<tr>
-<td>
-AreaBackground</td><td>
-Gets or sets the brush that represents the background color for a chart area excluding Axis, Header and Legend.</td></tr>
-<tr>
-<td>
-SeriesClipRect</td><td>
-Gets the rectangle that represents the bounding value of chart area excluding Axis, Legend and Header.</td></tr>
-<tr>
-<td>
-Palette</td><td>
-Gets or sets the color palette for the chart series. The default palette of SfChart is “Metro”.</td></tr>
-<tr>
-<td>
-SideBySideSeriesPlacement</td><td>
-Represents the series placement for the entire chart with multiple series.</td></tr>
-<tr>
-<td>
-Header</td><td>
-Gets or sets the object that represents the content of a chart header. This property is used to specify any object as Header for chart</td></tr>
-<tr>
-<td>
-ColorModel</td><td>
-Represents the ChartColorModel for entire chart.</td></tr>
-</table>
-
-
-The following code example shows the customization of chart with different chart area properties.
+Also we can add more customization for the header as below: 
 
 {% highlight xaml %}
 
+<chart:SfChart.Header>
 
+<Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
 
-<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Height="600" Width="700" 
+<TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
 
-AreaBackground="Green"
+<TextBlock.Effect>
 
-Palette="Metro">
+<DropShadowEffect Color="Black" 
 
+Opacity="0.5" />
 
+</TextBlock.Effect>
 
-<syncfusion:SfChart.Header>
-
-<Border CornerRadius="5" BorderBrush="AntiqueWhite" BorderThickness="2">
-
-<TextBlock Text="Demand Comparison of Gold" FontSize="20" FontStyle="Italic" FontFamily="Arial"/>
+</TextBlock>
 
 </Border>
 
-</syncfusion:SfChart.Header>
-
-
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
-
-</syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/>
-
-</syncfusion:SfChart.SecondaryAxis>
-
-
-
-<syncfusion:SfChart.Legend>
-
-<syncfusion:ChartLegend Visibility="Visible"/>
-
-</syncfusion:SfChart.Legend>
-
-
-
-<syncfusion:ColumnSeries Label="2011" 
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2011"
-
-/>
-
-
-
-<syncfusion:LineSeries Label="2010"
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010"
-
-StrokeThickness="2"
-
-/>
-
-
-
-</syncfusion:SfChart>
+</chart:SfChart.Header>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/snaps/2.png](Area_images/Area_img2.png)
+{% highlight C# %}
+
+{% endhighlight %}
+
+![](Area_images/Area_img2.jpeg)
 
 
+Note: Here, HorizontalHeaderAlignment is set as ‘Right’.
 
-## SideBySideSeriesPlacement
+**Area** **Customization******
 
-It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. It is a Boolean property and its default value is True. When you disable this property, all the series overlap as shown in the following image.
+SfChart provides the properties like ['AreaBorderBrush'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html# ""), ['AreaBorderThickness'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html# ""), ['AreaBackground'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html# "") and 
+
+Background for customizing the plot area.
+
+The following code examples illustrates the usage of these properties:
 
 {% highlight xaml %}
 
-<syncfusion:SfChart HorizontalAlignment="Center" SideBySideSeriesPlacement="False" VerticalAlignment="Center" Height="600" Width="700" >
+<chart:SfChart Height="250" Width="350" 
 
-<!--Initialize the Chart Series for SfChart-->
+Header="Chart Area Header" 
 
+AreaBackground="Cyan" 
 
+Background="LightGray" 
 
-<syncfusion:ColumnSeries  Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
+AreaBorderBrush="Gray" 
 
-
-
-<syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" SegmentSpacing="0.5" />
+AreaBorderThickness="3" >
 
 {% endhighlight %}
 
-![](Area_images/Area_img3.png)
+{% highlight C# %}
+
+{% endhighlight %}
+
+![](Area_images/Area_img3.jpeg)
+
+
+******Multiple** **Area** ****
+
+You can split plot area into multiple rows and columns using ['ChartRowDefinition'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~RowDefinitions.html# "") and ['ChartColumnDefinition'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ColumnDefinitions.html# "")** like Grid panel’s row and column definition. 
+
+The following code example demonstrates, how you can create multiple panes in the chart area:
+
+{% highlight xaml %}
+
+<chart:SfChart >
+
+<!--Adding row definition to the chart-->
+
+******<****chart****:****SfChart****.****RowDefinitions****>******
+
+******<****chart****:****ChartRowDefinition****/>******
+
+******<****chart****:****ChartRowDefinition****/>******
+
+******</****chart****:****SfChart****.****RowDefinitions****>******
+
+<!--Adding column definition to the chart-->
+
+******<****chart****:****SfChart****.****ColumnDefinitions****>******
+
+******<****chart****:****ChartColumnDefinition****/>******
+
+******<****chart****:****ChartColumnDefinition****/>******
+
+******</****chart****:****SfChart****.****ColumnDefinitions****>******
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis chart:ChartBase.ColumnSpan="2"/>
+
+</chart:SfChart.PrimaryAxis>
 
 
 
-N> Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
+
+</chart:SfChart.SecondaryAxis>
 
 
+
+<chart:ColumnSeries Palette="LightCandy"
+
+ItemsSource="{Binding SneakersDetail}"         
+
+XBindingPath="Brand" 
+
+YBindingPath="ItemsCount1" 
+
+/>
+
+<chart:ColumnSeries Palette="Metro"
+
+ItemsSource="{Binding SneakersDetail}"  
+
+XBindingPath="Brand" 
+
+YBindingPath="ItemsCount" 
+
+>
+
+<chart:ColumnSeries.YAxis>
+
+<chart:NumericalAxis  PlotOffset="10"
+
+chart:SfChart.Row="1" >
+
+</chart:NumericalAxis>
+
+</chart:ColumnSeries.YAxis>
+
+</chart:ColumnSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+{% endhighlight %}
+
+![](Area_images/Area_img4.jpeg)
+
+
+******Column** **Span** **and** **Row** **Span******
+
+These can be used to specify the number of column or rows up to which the axis can extend. Same like Grid’s RowSpan or ColumnSpan property, it is also an attached property.
+
+You can set the row span in chart like the following code example.
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+
+
+<!--Adding row definition to the chart-->
+
+<chart:SfChart.RowDefinitions>
+
+<chart:ChartRowDefinition/>
+
+<chart:ChartRowDefinition/>
+
+</chart:SfChart.RowDefinitions>
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis   **chart****:****ChartBase****.****RowSpan****="****2****"** 
+
+chart:SfChart.Row="0"
+
+TickLinesPosition="Outside">                                                              
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis />
+
+</chart:SfChart.SecondaryAxis>
+
+<chart:ColumnSeries XBindingPath="Brand"
+
+ItemsSource="{Binding SneakersDetail}"  
+
+YBindingPath="ItemsCount1" 
+
+/>
+
+
+
+<chart:LineSeries Interior="CadetBlue" XBindingPath="Brand"
+
+ItemsSource="{Binding SneakersDetail}"   
+
+YBindingPath="ItemsCount">
+
+<chart:LineSeries.YAxis>
+
+<chart:NumericalAxis chart:ChartBase.RowSpan="2">
+
+</chart:NumericalAxis>
+
+</chart:LineSeries.YAxis>              
+
+</chart:LineSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+{% endhighlight %}
+
+![](Area_images/Area_img5.jpeg)
+
+
+**Placing** **Series** **Side****-****By****-****Side******
+
+It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. 
+
+It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
+
+![](Area_images/Area_img6.jpeg)
+
+
+The following code example and image illustrates the placement of series while setting ['SidebySideSeriesPlacement'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html# "") as false.
+
+{% highlight xaml %}
+
+<chart:SfChart x:Name="columnChart" AreaBorderBrush="DarkGray" 
+
+Header="Usage of Metals"  
+
+**SideBySideSeriesPlacement="False"**
+
+AreaBorderThickness="1,1,1,1">
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  Header="Metals"/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis Header="Usage" />                            
+
+</chart:SfChart.SecondaryAxis>
+
+<chart:SfChart.Legend>
+
+<chart:ChartLegend Visibility="Visible" />
+
+</chart:SfChart.Legend>
+
+<chart:ColumnSeries Interior="#bcbcbc"
+
+ItemsSource="{Binding SneakersDetail}" Label="2015"  
+
+XBindingPath="Brand" 
+
+YBindingPath="ItemsCount" />
+
+<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"  
+
+**SegmentSpacing****="****0****.****5****"******
+
+Interior="#4a4a4a"  XBindingPath="Brand" 
+
+Label="2014" YBindingPath="postion"/>            
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+{% endhighlight %}
+
+![](Area_images/Area_img7.jpeg)
+
+
+**N****>**As the series will be placed one over the other(overlapped), to differentiate between the series the **SegmentSpacing** is used.
+
+******Methods******
+
+The following methods available in SfChart for serializing, printing and exporting.
+
+* Chart can be exported to image using ['Save()'](http://help.syncfusion.com/wpf/sfchart/exporting# "") method and ['Print()'](http://help.syncfusion.com/wpf/sfchart/printing# "") method helps to print the chart.
+
+* SfChart also supports [serialization](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Serialize.html# "") and [deserialization](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Deserialize.html# "").
+
+* For performance improvement, we can [hold](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SuspendSeriesNotification.html# "") and [resume](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ResumeSeriesNotification.html# "") the series update on real-time update. 
+
+* ['ValueToPoint()'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ValueToPoint.html# "") and [PointToValue()](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~PointToValue.html# "") methods are used to convert the axis value to the pixel coordinate and pixel coordinates to the axis value respectively.
+
+* Also having ['Clone()'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Clone.html# "") method for creating a shallow copy of the chart, by creating new chart instance.
+
+**************Events******
+
+SfChart provides the following list of events.
+
+* [SelectionChanging](http://help.syncfusion.com/wpf/sfchart/interactive-features#selection "")
+
+* [SelectionChanged](http://help.syncfusion.com/wpf/sfchart/interactive-features#selection "")
+
+* [ZoomChanging](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [ZoomChanged](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [SelectionZoomingStart](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [SelectionZoomingEnd](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [SelectionZoomingDelta](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [PanChanging](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [PanChanged](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
+
+* [ResetZooming](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning "")
 
