@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Area and its properties. 
-description: Guide for plot area properties and behaviors.
+description: Guide for plotting area properties and behaviors.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -34,7 +34,7 @@ Header property is used to define the title for the chart. This allows you to ad
 
 {% endhighlight %}
 
-![](Area_images/Area_img1.jpeg)
+![SfChart with header.](Area_images/Area_img1.jpeg)
 
 
 Header can be positioned left or right side of the chart using ['HorizontalHeaderAlignment'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~HorizontalHeaderAlignment.html# "") property.
@@ -69,16 +69,14 @@ Opacity="0.5" />
 
 {% endhighlight %}
 
-![](Area_images/Area_img2.jpeg)
+![Header customization in SfChart.](Area_images/Area_img2.jpeg)
 
 
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area Customization
 
-SfChart provides the properties like ['AreaBorderBrush'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html# ""), ['AreaBorderThickness'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html# ""), ['AreaBackground'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html# "") and 
-
-Background for customizing the plot area.
+SfChart provides the properties like ['AreaBorderBrush'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html# ""), ['AreaBorderThickness'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html# ""), ['AreaBackground'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html# "") and Background for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
 
@@ -102,7 +100,7 @@ AreaBorderThickness="3" >
 
 {% endhighlight %}
 
-![](Area_images/Area_img3.jpeg)
+![SfChart with customized plot area.](Area_images/Area_img3.jpeg)
 
 
 ## Multiple Area 
@@ -191,7 +189,7 @@ chart:SfChart.Row="1" >
 
 {% endhighlight %}
 
-![](Area_images/Area_img4.jpeg)
+![SfChart with multiple panes.](Area_images/Area_img4.jpeg)
 
 
 ## Column Span and Row Span
@@ -268,7 +266,7 @@ YBindingPath="ItemsCount">
 
 {% endhighlight %}
 
-![](Area_images/Area_img5.jpeg)
+![SfChart with two y axes, one axis spanned to two rows.](Area_images/Area_img5.jpeg)
 
 
 ## Placing Series Side-By-Side
@@ -277,7 +275,7 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
-![](Area_images/Area_img6.jpeg)
+![Column chart type placed side by side.](Area_images/Area_img6.jpeg)
 
 
 The following code example and image illustrates the placement of series while setting ['SidebySideSeriesPlacement'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html# "") as false.
@@ -334,7 +332,7 @@ Label="2014" YBindingPath="postion"/>
 
 {% endhighlight %}
 
-![](Area_images/Area_img7.jpeg)
+![Column chart type place one over another.](Area_images/Area_img7.jpeg)
 
 
 N>As the series will be placed one over the other(overlapped), to differentiate between the series the ['SegmentSpacing'] is used.
@@ -526,9 +524,9 @@ SfChart provides the following list of events.
 
 **See also**
 
-['PointToValue'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~PointToValue.html# "")****
+['PointToValue'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~PointToValue.html# "")
 
-['ValueToPoint'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ValueToPoint.html# "")****
+['ValueToPoint'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ValueToPoint.html# "")
 
 ['Save'](http://help.syncfusion.com/wpf/sfchart/exporting# "")
 
