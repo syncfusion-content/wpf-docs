@@ -381,7 +381,7 @@ YBindingPath="Value"  >
 
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight xml %}
 
 **Serialized Chart**
 

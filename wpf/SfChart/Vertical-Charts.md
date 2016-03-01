@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vertical Charts| SfChart | Wpf | Syncfusion
-description: vertical charts
+title: Vertical Charts feature of SfChart.
+description: Vertical Charts feature of SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
