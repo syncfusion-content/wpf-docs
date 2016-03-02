@@ -424,7 +424,7 @@ The group summary cells can be customized by writing style of TargetType [GridGr
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
-    <Style TargetType="syncfusion:GridCaptionSummaryCell" x:Key="customCaptionSummaryCell">
+    <Style TargetType="syncfusion:GridGroupSummaryCell" x:Key="customGroupSummary">
        <Setter Property="FontWeight" Value="SemiBold"/>
        <Setter Property="Foreground" Value="DarkBlue"/>
        <Setter Property="FontStyle" Value="Oblique"/>
