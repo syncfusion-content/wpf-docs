@@ -1042,7 +1042,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, group summary rows are customized based on `TotalPrice` summary valuewhether it’s positive or negative.
+Here, group summary rows are customized based on `TotalPrice` summary value whether it’s positive or negative.
 
 ![](Conditional-Styling_images/Conditional-Styling_img18.png)
 
