@@ -31,7 +31,7 @@ Conditional styling using converter provides better performance compare to Data 
 
 SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
 
-1. Invoke [SfDataGrid.View.BegingInit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) before update the data.
+1. Invoke [SfDataGrid.View.BeginInit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) before update the data.
 2. After that update underlying collection.
 3. Then call [SfDataGrid.View.EndInit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected.
 

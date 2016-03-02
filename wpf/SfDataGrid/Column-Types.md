@@ -259,7 +259,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 
 ![](Column-Types_images/Column-Types_img2.png)
 
-`CellTemplate` is not support by `GridHyerplinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
+`CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
 #### Reusing same DataTemplate for multiple columns
 
@@ -372,7 +372,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 You can bind properties in ViewModel with the controls in CellTemplate.
  
-Below command defined in ViewModel is bound to `Button` inside CellTempate. Below code, denote the base command.
+Below command defined in ViewModel is bound to `Button` inside CellTemplate. Below code, denote the base command.
 
 {% tabs %}
 {% highlight c# %}
@@ -484,7 +484,7 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 
 ### Data Formatting
 
-`GridColum` supports to format the data using [StringFormat](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.stringformat.aspx) and [Converter](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converter(v=vs.110).aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
+`GridColumn` supports to format the data using [StringFormat](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.stringformat.aspx) and [Converter](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converter(v=vs.110).aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
 #### Format column using StringFormat
 
@@ -842,7 +842,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 ### Data formatting
 
-`GridNumericColum` allows you to format the numeric data with culture-specific information.
+`GridNumericColumn` allows you to format the numeric data with culture-specific information.
 
 * [NumberDecimalDigits](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberDecimalDigits.html)  **-** You can change the [Number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimaldigits.aspx) to be displayed after the decimal point using `NumberDecimalDigits` property. 
 
@@ -1724,9 +1724,9 @@ public class GridCellMultiColumnDropDownRendererExt : GridCellMultiColumnDropDow
 {% endhighlight %}
 {% endtabs %}
 
-## GridHyperLinkColumn
+## GridHyperlinkColumn
 
-`GridHyperLinkColumn` derived from `GridTextColumn` and it displays columns data as `HyperLinkControl`. It hosts `TextBlock` element as `GridCell` content.
+`GridHyperlinkColumn` derived from `GridTextColumn` and it displays columns data as `HyperLinkControl`. It hosts `TextBlock` element as `GridCell` content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1743,9 +1743,9 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country Link
 {% endhighlight %}
 {% endtabs %}
 
-You can allow end-user to navigate the `URI` when the cell value contains valid `URI` address or using [CurrentCellRequestNavigate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellRequestNavigate_EV.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperLinkColumn` is clicked for navigation.
+You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellRequestNavigate_EV.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
 
-[CurrentCellRequestNavigateEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappinName` to navigate. 
+[CurrentCellRequestNavigateEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappingName` to navigate. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1778,11 +1778,11 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 #### Change the alignment
 
-You can change the horizontal alignment of `GridHyperLinkColumn` using [HorizontalAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn~HorizontalAlignment.html) property.
+You can change the horizontal alignment of `GridHyperlinkColumn` using [HorizontalAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn~HorizontalAlignment.html) property.
 
 #### Change the foreground color
 
-You can change the foreground color of `GridHyperLinkColumn` by writing the style with target type `Hyperlink`.
+You can change the foreground color of `GridHyperlinkColumn` by writing the style with target type `Hyperlink`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1896,7 +1896,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Image", MappingN
 
 ### Customize Image
 
-`GridImageColum` allows you to customize the image with below properties.
+`GridImageColumn` allows you to customize the image with below properties.
 
 * `Width and Height`**-** You can change the height and width of the image using [GridImageColumn.ImageHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridImageColumn~ImageHeight.html) and [GridImageColumn.ImageWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridImageColumn~ImageWidth.html) properties.
 
@@ -2044,7 +2044,7 @@ You can create your own column by overriding the [predefined](#_Overriding_exist
 
 For example, the `GridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `GridDateTimeColumn` class.
 
-In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DispalyBinding` (non-edit).
+In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DisplayBinding` (non-edit).
 
 {% tabs %}
 {% highlight c# %}
@@ -2287,7 +2287,7 @@ DateTime
 </tr>
 <tr>
 <td>
-GridHyperLinkColumn
+GridHyperlinkColumn
 </td>
 <td>
 {{'[GridCellHyperLinkRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellHyperlinkRenderer.html)'| markdownify }}
