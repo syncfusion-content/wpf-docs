@@ -68,7 +68,7 @@ You can see the list of some of the specific API difference between GridDataCont
 </tr>
 <tr>
 <td>AutoPopulateColumns</td>
-<td>AutoGenarateColumns</td>
+<td>AutoGenerateColumns</td>
 <td>To Generate the Columns</td></tr>
 <tr>
 <td>AllowEdit</td>
@@ -112,7 +112,7 @@ You can see the list of some of the specific API difference between GridDataCont
 </tr>
 <tr>
 <td>ShowHoveringBackground</td>
-<td>AllowRowHoverHighlilgting</td>
+<td>AllowRowHoverHighlighting</td>
 <td>To show the Hovers for Highlighting rows.</td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ You can see the list of some of the specific API difference between GridDataCont
 </tr>
 <tr>
 <td>HideColumnsWhenGrouped</td>
-<td>ShowColumnswhenGrouped</td>
+<td>ShowColumnsWhenGrouped</td>
 <td>To Show the Columns when grouped.</td>
 </tr>
 <tr>
@@ -207,7 +207,7 @@ by using {{ '[AutoRowHeight](http://help.syncfusion.com/wpf/sfdatagrid/row-heigh
 CellTemplate Support for all columns
 </td>
 <td>
-SfDataGrid provides support for {{ '[CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/columns#celltemplate)' | markdownify }}. It is used to customize columns in display mode that present cells with datatemplate.
+SfDataGrid provides support for {{ '[CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/columns#celltemplate)' | markdownify }}. It is used to customize columns in display mode that present cells with DataTemplate.
 </td>
 </tr>
 <tr>
@@ -264,13 +264,13 @@ FilterPopupPerformance
 </td>
 <td>
 When you have a large amount of data, it takes time to load the Filter popup. Though, you are having lots of data, 
-you can get better performace while loading Filter popup, by setting CanGenerateUniqueItems to False. To know more 
+you can get better performance while loading Filter popup, by setting CanGenerateUniqueItems to False. To know more 
 about FilterPopupPerformance, click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/performance#filter-popup-performance)' | markdownify }}.
 </td>
 </tr>
 <tr>
 <td>
-DataVirtualiazation
+DataVirtualization
 </td>
 <td>
 {{ '[DataVirtualization](http://help.syncfusion.com/wpf/sfdatagrid/data-virtualization)' | markdownify }} is a term that achieves Virtualization 

@@ -41,10 +41,10 @@ Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations o
 </tr>
 <tr>
 <td>
-Syncfudion.Shared.WPF
+Syncfusion.Shared.WPF
 </td>
 <td>
-Syncfudion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in SfDataGrid. 
+Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in SfDataGrid. 
 </td>
 </tr>
 </table>
@@ -118,7 +118,7 @@ In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
-	* Syncfudion.Shared.WPF
+	* Syncfusion.Shared.WPF
 2. Import Syncfusion wpf schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare SfDataGrid control in XAML page.
 
@@ -143,7 +143,7 @@ In order to add control manually in C#, do the below steps,
 1. Add the below required assembly references to the project,
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
-	* Syncfudion.Shared.WPF
+	* Syncfusion.Shared.WPF
 2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid** .
 3. Create SfDataGrid control instance and add it to the Page.
 
@@ -341,7 +341,7 @@ Property with Currency DataType attribute.<br/><b>[DataType(DataType.Currency)]<
 GridMaskColumn
 </td>
 <td>
-Property with PhoneNumer DataType attribute.<br/><b>[DataType(DataType.PhoneNumber)]</b>.
+Property with PhoneNumber DataType attribute.<br/><b>[DataType(DataType.PhoneNumber)]</b>.
 </td>
 </tr>
 <tr>
