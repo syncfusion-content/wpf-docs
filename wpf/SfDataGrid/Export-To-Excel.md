@@ -622,11 +622,11 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [XlsIO documentaion](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
 
 #### Customize the range of cells
 
-You can customize the range of cells after exporting to excel by directly manipualting worksheet.
+You can customize the range of cells after exporting to excel by directly manipulating worksheet.
 
 {% tabs %}
 {% highlight c# %}
