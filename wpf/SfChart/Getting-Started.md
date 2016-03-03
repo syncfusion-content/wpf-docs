@@ -13,7 +13,7 @@ The following section helps you to build your application with SfChart.
 
 ###Steps
 
-   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90).
+   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
    * Add the SfChart assembly to your application. 
    * Initialize chart control.
    * Adding header to the chart control.
@@ -26,7 +26,7 @@ These steps were explained below for both XAML and code behind.
 
 ## Create a simple chart from XAML
 
-****### Adding assembly reference
+### Adding assembly reference
 
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > Syncfusion.SfChart.WPF.
@@ -36,9 +36,14 @@ These steps were explained below for both XAML and code behind.
 N> This window differs for the Visual Basic project.
 
 T> Select the framework version respective to your application. The version can be identified as below:
-XX.X450.0.X – 4.5 Framework
-XX.X451.0.X – 4.5.1 Framework
-XX.X460.0.X – 4.6 Framework
+<table>
+<tr>
+<td>
+XX.X450.0.X<br/><br/></td>  <td>4.5 Framework<br/><br/></td></tr>
+<tr><td>XX.X451.0.X<br/><br/></td>  <td>4.5.1 Framework<br/><br/></td></tr>
+<tr><td>XX.X460.0.X<br/><br/></td>  <td>4.6 Framework<br/><br/></td>
+</tr>
+<table>
 
 * Add the following namespace in your XAML window.
 {% highlight xaml %}
@@ -46,7 +51,8 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.Sf
 {% endhighlight %}
 
 
-****### Add SfChart from Toolbox
+
+### Add SfChart from Toolbox
 
 Drag and drop the SfChart control from the Toolbox to your application.
 
@@ -67,9 +73,9 @@ In this section, the data in the following table is used for demonstration.
 <table>
 <tr>
 <td>
-**Demand** **for** **Gold******<br/><br/></td><td>
-**2010** **(****In** **Tonnes****)******<br/><br/></td><td>
-**2011** **(****In** **Tonnes****)******<br/><br/></td></tr>
+**Demand for Gold**<br/><br/></td><td>
+**2010 (In Tonnes)**<br/><br/></td><td>
+**2011 (In Tonnes)**<br/><br/></td></tr>
 <tr>
 <td>
 Jewelry<br/><br/></td><td>
@@ -99,7 +105,7 @@ Bank Purchases<br/><br/></td><td>
 
 Before proceeding with the chart, create data model with the above details as follows.
 
-{% highlight c# %}
+{% highlight C# %}
     public class GoldDemand
     {
         public string Demand { get; set; } 
@@ -110,7 +116,7 @@ Before proceeding with the chart, create data model with the above details as fo
 
 Create a collection property in MainWindow class as below:
 
-{% highlight c# %}
+{% highlight C# %}
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -124,7 +130,7 @@ Create a collection property in MainWindow class as below:
 
 Add the values to this Demands property, with the values illustrated in the above table.
 
-{% highlight c# %}
+{% highlight C# %}
 
 InitializeComponent();
 
@@ -354,7 +360,7 @@ Imports Syncfusion.UI.Xaml.Charts
 
 {% endhighlight  %}
 
-****### Initialize the chart
+### Initialize the chart
 
 You need to create the instance for the SfChart as below.
 
@@ -524,7 +530,7 @@ N> Syncfusion Chart also supports rendering combination of multiple series. Refe
 
 ### Adding legends to the chart
 
-The following code examples demonstrates how to add legends to your chart.
+The following code examples demonstrates how to add [legends](http://help.syncfusion.com/wpf/sfchart/legend) to your chart.
 
 {% highlight c# %}
 

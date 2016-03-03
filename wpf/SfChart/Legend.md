@@ -10,7 +10,7 @@ documentation: ug
 # Legend
 
 Legend provides metadata which helps for identifying elements in chart like [chart series](http://help.syncfusion.com/wpf/sfchart/series), 
-[technical indicators](http://help.syncfusion.com/wpf/sfchart/technical-indicators) , and [trendlines](http://help.syncfusion.com/wpf/sfchart/trendlines). 
+[technical indicators](http://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](http://help.syncfusion.com/wpf/sfchart/trendlines). 
 You can define the legend using the following code example.
 
 {% highlight xml %}
