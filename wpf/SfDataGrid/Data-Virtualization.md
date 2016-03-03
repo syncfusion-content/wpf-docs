@@ -104,7 +104,7 @@ public class ViewModel
 
 ## Creating Custom VirtualizingCollectionView
 
-SfDataGrid supports to override GridVirtualizingCollectionView and retrieve the data in on-demand by inheriting [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) class. The `GridVirtuazlingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping.
+SfDataGrid supports to override GridVirtualizingCollectionView and retrieve the data in on-demand by inheriting [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) class. The `GridVirtualizingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping.
 
 You can load the data in on-demand by overriding below methods in `GridVirtualizingCollectionView`.
 
@@ -406,7 +406,7 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
 ## Incremental Loading
  
 SfDataGrid supports to load the data incrementally using [ISupportIncrementalLoading](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ISupportIncrementalLoading.html) interface.
-`ISupportIncrementalLoading` interface has[LoadMoreItmes](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on[HasMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
+`ISupportIncrementalLoading` interface has[LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on[HasMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
 
 If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use IncrementalList or create collection derived from ISupportIncrementalLoading and bind it SfDataGrid.ItemsSource.
 
@@ -460,9 +460,9 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Displaying animation when fetching data from services
 
-You can display animations when fetching data from service for [LoadMoreItmes](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
+You can display animations when fetching data from service for [LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
 
-In the below code snippet data fetched from service using `BackgroundWorker` and SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgrondWorker` completes its action.
+In the below code snippet data fetched from service using `BackgroundWorker` and SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
 
 {% tabs %}
 {% highlight xaml %}

@@ -283,7 +283,7 @@ dataGrid.AutoGenerateRelations = true;
 {% endhighlight %}
 {% endtabs %}
 
-When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event to customize or cancel the [GridViewDefintion](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs~GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefintion](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html).
+When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event to customize or cancel the [GridViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs~GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html).
 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
@@ -322,16 +322,16 @@ To define Master-Details View relations, create [GridViewDefinition](http://help
 {% highlight c# %}
 dataGrid.AutoGenerateRelations = false;
 
-var gridViewDefintion1 = new GridViewDefinition();
-gridViewDefintion1.RelationalColumn = "Sales";
-gridViewDefintion1.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid1", AutoGenerateColumns = true };
+var gridViewDefinition1 = new GridViewDefinition();
+gridViewDefinition1.RelationalColumn = "Sales";
+gridViewDefinition1.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid1", AutoGenerateColumns = true };
 
-var gridViewDefintion2 = new GridViewDefinition();
-gridViewDefintion2.RelationalColumn = "Orders";
-gridViewDefintion2.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid2", AutoGenerateColumns = true };
+var gridViewDefinition2 = new GridViewDefinition();
+gridViewDefinition2.RelationalColumn = "Orders";
+gridViewDefinition2.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid2", AutoGenerateColumns = true };
 
-dataGrid.DetailsViewDefinition.Add(gridViewDefintion1);
-dataGrid.DetailsViewDefinition.Add(gridViewDefintion2);
+dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
+dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
@@ -371,19 +371,19 @@ In the same way, you can define relations for first level nested grids by defini
 dataGrid.AutoGenerateRelations = false;
 
 // GridViewDefinition for parent DataGrid
-var gridViewDefintion1 = new GridViewDefinition();
-gridViewDefintion1.RelationalColumn = "Sales";
+var gridViewDefinition1 = new GridViewDefinition();
+gridViewDefinition1.RelationalColumn = "Sales";
 var firstLevelNestedGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
 firstLevelNestedGrid.AutoGenerateRelations = false;
 
 // GridViewDefinition for FirstLevelNestedGrid
-var gridViewDefintion = new GridViewDefinition();
-gridViewDefintion.RelationalColumn = "Products";
-gridViewDefintion.DataGrid = new SfDataGrid() { Name = "SecondLevelNestedGrid", AutoGenerateColumns = true };
-firstLevelNestedGrid.DetailsViewDefinition.Add(gridViewDefintion);
-gridViewDefintion1.DataGrid = firstLevelNestedGrid;
+var gridViewDefinition = new GridViewDefinition();
+gridViewDefinition.RelationalColumn = "Products";
+gridViewDefinition.DataGrid = new SfDataGrid() { Name = "SecondLevelNestedGrid", AutoGenerateColumns = true };
+firstLevelNestedGrid.DetailsViewDefinition.Add(gridViewDefinition);
+gridViewDefinition1.DataGrid = firstLevelNestedGrid;
 
-dataGrid.DetailsViewDefinition.Add(gridViewDefintion1);
+dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
@@ -473,7 +473,7 @@ dataGrid.AutoGenerateRelations = true;
 {% endhighlight %}
 {% endtabs %}
 
-When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event to customize or cancel the [GridViewDefintion](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs~GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefintion](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html).
+When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event to customize or cancel the [GridViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs~GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html).
 
 Here, Master-Details View relation is auto generated based on the `Supplier_Product` relation.
 
@@ -504,10 +504,10 @@ To define Master-Details View relations, create [GridViewDefinition](http://help
 dataGrid.AutoGenerateRelations = false;
 
 // GridViewDefinition for DataGrid
-var gridViewDefintion = new GridViewDefinition();
-gridViewDefintion.RelationalColumn = "Supplier_Product";
-gridViewDefintion.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
-this.dataGrid.DetailsViewDefinition.Add(gridViewDefintion);
+var gridViewDefinition = new GridViewDefinition();
+gridViewDefinition.RelationalColumn = "Supplier_Product";
+gridViewDefinition.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
+this.dataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 {% endhighlight %}
 {% endtabs %}
 
@@ -796,7 +796,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ### Manually defining columns
 
-You can directly define the columns to [ViewDefintion.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when [AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateColumns.html) is `false`. When relation is manually defined, you can define the columns directly to `ViewDefinition.DataGrid` in XAML or C#, by adding desired column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection.
+You can directly define the columns to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when [AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateColumns.html) is `false`. When relation is manually defined, you can define the columns directly to `ViewDefinition.DataGrid` in XAML or C#, by adding desired column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection.
 
 {% tabs %}
 {% highlight xaml %}
