@@ -1116,7 +1116,7 @@ By default, the ColumnSizer calculates column’s width based on fixed `FontSize
 
 #### Changing Sort and Filter Icon width
 
-You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSIzer.SortIconWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnSizer~SortIconWidth.html) and [GridColumnSizer.FilterIconWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnSizer~FilterIconWidth.html) properties.
+You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSizer.SortIconWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnSizer~SortIconWidth.html) and [GridColumnSizer.FilterIconWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnSizer~FilterIconWidth.html) properties.
 
 {% tabs %}
 {% highlight c# %}
