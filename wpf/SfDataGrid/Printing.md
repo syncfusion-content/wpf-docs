@@ -774,7 +774,7 @@ dataGrid.ShowPrintPreview();
 
 Here, OrderID column Font Style and Background are changed.
 
-### Styling Columns when AllowPrintByDrawing disbaled
+### Styling Columns when AllowPrintByDrawing disabled
 
 You can apply column styles based on custom logic by overriding [GetPrintGridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGridCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
 
