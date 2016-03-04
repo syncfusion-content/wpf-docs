@@ -38,7 +38,7 @@ public class Employees : ObservableCollection<Employee>
 
 {% endhighlight %}
 
-###Initalize Dats Source Settings
+###Initialize Data Source Settings
 
 {% highlight xaml %}
 
@@ -48,7 +48,7 @@ public class Employees : ObservableCollection<Employee>
         
 {% endhighlight %}
 
-###Visulaize the Node and Connector
+###Visualize the Node and Connector
 
 {% highlight xaml %}
 
