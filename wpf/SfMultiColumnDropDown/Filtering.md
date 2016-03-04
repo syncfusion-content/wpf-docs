@@ -63,7 +63,7 @@ ItemsSource="{Binding GridItemSource}">
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 
-In above code example Name property is defined as DisplayMember. Therefore, when you start typing on the Editor, it filters the items that are in the Name Colum. The following screenshot displays the output for IncrementalFiltering.
+In above code example Name property is defined as DisplayMember. Therefore, when you start typing on the Editor, it filters the items that are in the Name Column. The following screenshot displays the output for IncrementalFiltering.
 ![](Features_images/Features_img9.png)
 
 

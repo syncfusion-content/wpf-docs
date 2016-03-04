@@ -742,7 +742,7 @@ To load the data from MS-Access database,
 
 1. Create a new WPF project.
 2. Import the MS-Access database file to WPF project.
-3. You can connect the MS Access Database through the `OleDbConnection`.
+3. You can connect the Microsoft Access Database through the `OleDbConnection`.
 4. Create and open the connection.
 5. Use `OleDbDataAdapter` to load the data in to `DataSet`.
 6. Access the Employee table from the DataSet and set the Employee collection as `ItemsSource` of SfDataGrid.
