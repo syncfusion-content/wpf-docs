@@ -20,7 +20,7 @@ This section explains the key Features of SfDataPager.
 ## DataBinding
 
 
-Databinding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
+Data binding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
 
 ### Source and PagedSource
 
@@ -348,7 +348,7 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
 {% endhighlight %}
 
-The following screenshot displays the output for changing the PagSize value during runtime. 
+The following screenshot displays the output for changing the PageSize value during runtime. 
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)
 
@@ -407,7 +407,7 @@ It does not display the AutoEllipsisButton.</td></tr>
 
 N> By Default AutoEllipsisMode is set to None.
 
-The following code example explains how to change the AutoEllipsisbuttontext.
+The following code example explains how to change the AutoEllipsisText.
 
 {% highlight html %}
 
@@ -500,7 +500,7 @@ The following code example explains how to apply the AccentBackground and Accent
 
 {% endhighlight  %}
 
-The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDatapager.
+The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDataPager.
 
 ![B:/Support/2015/Pager.png](Features_images/Features_img10.png)
 
@@ -782,7 +782,7 @@ void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs arg
 SfDataPager supports the following UIAutomation,
 
 * CodedUI
-* Quick Test Proffessional
+* Quick Test Professional
 
 ### CodedUI
 
@@ -842,7 +842,7 @@ SfDataPager</td><td>
 
 ### Quick Test Professional
 
-SfDataPager supports QTP test. You can record the actions perfomed in the control by the corresponding method name with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
+SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 The following screenshot displays the QTP Test for SfDataPager
 
 ![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)

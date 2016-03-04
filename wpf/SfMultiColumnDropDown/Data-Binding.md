@@ -44,7 +44,7 @@ The following screenshot illustrates the output of the above code.
 
 ### Binding Collection in CodeBehind
 
-The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in codebehind.
+The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in code behind.
 
 {% highlight C# %}
  

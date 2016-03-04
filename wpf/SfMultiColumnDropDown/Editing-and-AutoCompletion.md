@@ -24,7 +24,7 @@ You can edit the textbox in the SfMultiColumnDropDownControl. You could make the
 
 SfMultiColumnDropDownControl provides auto completion support. When you type into the editor, the control returns the relative match for the typed text based on the Display Member.
 
-AllowAutoComplete: This propertyis a Boolean property that represents enables or disables provide suggestion text for auto completion.
+AllowAutoComplete: This property is a Boolean property that represents enables or disables provide suggestion text for auto completion.
 
 As an example of this feature, consider a simple scenario where the SfMultiColumnDropDownControl is bound to an ObservableCollection, with AutoComplete enabled.
 

@@ -33,7 +33,7 @@ By handling this event, you can provide an image to be used in the expand cell. 
 <tr>
 <td>
 ExpandStateChanging</td><td>
-This is a cancelable event that is handled just prior to a node being expanded by the user.</td></tr>
+By handling this event , you can cancel the node being expanded by the user.</td></tr>
 <tr>
 <td>
 ExpandStateChanged</td><td>

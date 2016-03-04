@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles and Templates
 
-WPF styling and Templating refer to a suite of features (styles and templates) that allows you to create visually compelling effects and to create consistent appearance for the products.
+WPF styles and templates refer to a suite of features (styles and templates) that allows you to create visually compelling effects and to create consistent appearance for the products.
 
 This section elaborates the information to understand the possible ways, by which you can change the visual appearance of the SfMultiColumnDropDownControl. In addition, you can edit the structure of SfMultiColumnDropDownControl by using Blend and VisualStudio that enables you to customize the appearance. 
 
@@ -18,7 +18,7 @@ This section elaborates the information to understand the possible ways, by whic
 This section explains you how to edit the SfMultiColumnDropDownControl structure in Expression Blend. To edit the Control Template in Expression Blend, refer to the following steps.
 
 1. Open your application in Expression Blend.        
-2. Select the SfMultiColumnDropDowncontrol from the window              
+2. Select the SfMultiColumnDropDownControl from the window              
 
 
 
@@ -55,7 +55,7 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 This section explain you how to edit a SfMultiColumnDropDownControl style in Visual studio Design View. To Edit the control style in Visual Studio, refer to the following steps,
 
 1. Open your application in Visual Studio.
-2. Open Designview > Select SfMultiColumnDropDownControl >Right Click on SfMultiColumnDropDownControl, Menu options is displayed.                                                                                                                                                                
+2. Open Design view > Select SfMultiColumnDropDownControl >Right Click on SfMultiColumnDropDownControl, Menu options is displayed.                                                                                                                                                                
 
 
 

@@ -20,7 +20,7 @@ A bound column displays information from a bound data source, which is specified
 
 ## Unbound Column
 
-An unbound column does not obtain data from the ItemSource or from the RequestTreeItems event. Instead, you can provide data for unbound columns by creating expressions using the GridTreeUnboundColumn.Expression property, or by creating formatsusing the GridTreeUnboundColumn.Format property, or by handling the QueryUnboundColumnValue event.
+An unbound column does not obtain data from the ItemSource or from the RequestTreeItems event. Instead, you can provide data for unbound columns by creating expressions using the GridTreeUnboundColumn.Expression property, or by creating formats using the GridTreeUnboundColumn.Format property, or by handling the QueryUnboundColumnValue event.
 
 N> In Unbound columns, you can have the features that are available in the bound columns such as cell type, sorting, and customization.
 
@@ -85,7 +85,7 @@ When we set this property to true, the properties that are available in underlyi
 
 ### AutoGenerateColumnsInfo
 
-By setting the AutoGenerateColumnsInfo property to _true_, the GridTree control assigns the appropriate cell type for each column automatically. The following common cell types loadd for the corresponding data.
+By setting the AutoGenerateColumnsInfo property to _true_, the GridTree control assigns the appropriate cell type for each column automatically. The following common cell types loaded for the corresponding data.
 
 
 <table>
@@ -572,7 +572,7 @@ PlusMinus—contains a plus/minus symbol. The plus symbol appears when the node 
 
 PlusMinusLine—contains a plus/minus symbol with lines. When the plus symbol is visible then a line is drawn from the parent node to its child node and each child node has the line with its parent node.
 
-Themed—loads the gylph based on the theme applied for the GridTree control. The patch applied in the theme for the glyph loads as a glyph for the all nodes.
+Themed—loads the glyph based on the theme applied for the GridTree control. The patch applied in the theme for the glyph loads as a glyph for the all nodes.
 
 Triangle—loads the triangle symbol for each node that contains the child nodes. The collapsed node’s triangle symbol appears horizontal and the expanded node’s triangle turns vertical.
 
@@ -609,7 +609,7 @@ GridTree ExpanderCell with Image
 
 ### DataTemplate
 
-In the GridTree control, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an exensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTree control.
+In the GridTree control, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an extensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTree control.
 
 The following are the list of properties specific for this cell type.
 
@@ -661,7 +661,7 @@ Record.Data (data will be the underlying object bound).
 
 Example: Record.Data.Suppliers.CompanyName
 
-You can get any property value of the current record by passing the appropriate propertyname.
+You can get any property value of the current record by passing the appropriate property name.
 
 The following example code shows a simple DataTemplate.
 
@@ -797,7 +797,7 @@ Arguments</th></tr>
 <td>
 DropDownSelectionChanged</td><td>
 This event is raised when the SelectedItem of the combo box is changed.</td><td>
-CellRowColumnIndex—contains the RowColumn index of the cell where the combo box’s value gets changed.SelectedItem—this is thecombo box item which is currently selected.</td></tr>
+CellRowColumnIndex—contains the RowColumn index of the cell where the combo box’s value gets changed.SelectedItem—this is the ComboBox item which is currently selected.</td></tr>
 </table>
 
 
@@ -1122,11 +1122,11 @@ CurrencyDecimalSeparator</td><td>
 String to use as decimal separator.</td></tr>
 <tr>
 <td>
-CurrencyNeagtivePattern</td><td>
+CurrencyNegativePattern</td><td>
 Format pattern for negative currency values.</td></tr>
 <tr>
 <td>
-CurrencyPostivePattern</td><td>
+CurrencyPositivePattern</td><td>
 Format pattern for positive currency values.</td></tr>
 <tr>
 <td>
@@ -1710,7 +1710,7 @@ Number of maximum char allowed to entered in the  cell.</td></tr>
 <tr>
 <td>
 MinLength</td><td>
-Numberof minimum char  allowed  to  entered in the cell.</td></tr>
+Number of minimum char  allowed  to  entered in the cell.</td></tr>
 <tr>
 <td>
 StringValidation</td><td>
@@ -1881,7 +1881,7 @@ Allows to set null value.</td></tr>
 <tr>
 <td>
 Format</td><td>
-Specifies the fformat to display the time.</td></tr>
+Specifies the format to display the time.</td></tr>
 <tr>
 <td>
 ShowArrowButtons</td><td>
@@ -1950,7 +1950,7 @@ Image</td><td>
 Sets the image path to display.</td></tr>
 <tr>
 <td>
-ImageContentAllignment</td><td>
+ImageContentAlignment</td><td>
 Sets the alignment of the image (Left or Right).</td></tr>
 <tr>
 <td>
@@ -2220,11 +2220,11 @@ Object</td></tr>
 <th>
 Event Name</th><th>
 Description</th><th>
-Arguements</th></tr>
+Arguments</th></tr>
 <tr>
 <td>
 QueryUnboundCellInfo</td><td>
-This event fires when the style of an unbound column is createpd. Using this event you can modify the styles of the unbound column.</td><td>
+This event fires when the style of an unbound column is created. Using this event you can modify the styles of the unbound column.</td><td>
 (RowColumnIndex Cell, GridTreeUnboundColumn Column, GridStyleInfo Style)</td></tr>
 <tr>
 <td>
@@ -2417,13 +2417,13 @@ Returns {{ '_true,_' | markdownify }} if both the arguments does not have the sa
 StartsWith</td><td>
 StartsWith</td><td>
 Returns {{ '_true,_' | markdownify }} if the value starts with the given string.</td><td>
-ProductName StartsWith Chai</td></tr>
+ProductName StartsWith </td></tr>
 <tr>
 <td>
 EndsWith</td><td>
 EndsWith</td><td>
 Returns {{ '_true,_' | markdownify }} if the value ends with the specified string.</td><td>
-PruductName EndsWith i</td></tr>
+ProductName EndsWith i</td></tr>
 <tr>
 <td>
 Contains</td><td>
