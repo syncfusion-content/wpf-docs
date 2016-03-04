@@ -61,7 +61,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 ## MultiplePage and PageBreaks
 
-When MutiplePage is enabled, size of the page dynamically increases or decreases in multiple of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
+When MultiplePage is enabled, size of the page dynamically increases or decreases in multiple of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
 ![](Page-Settings_images/Page-Settings_img4.jpeg)
 
