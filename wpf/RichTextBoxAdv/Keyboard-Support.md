@@ -18,7 +18,7 @@ RichTextBoxAdv provides some shortcut keys for ease of use. The following table 
 <table>
 <tr>
 <th>
-Hotkeys</th><th>
+Hot keys</th><th>
 Description</th></tr>
 <tr>
 <td>
