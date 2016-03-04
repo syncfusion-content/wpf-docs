@@ -627,7 +627,7 @@ The following screenshot illustrates the grid after deserialization.
 
 DataGrid after Serialization and Deserialization
 {:.caption}
-You can overcome the above scenario by customizing the SerilalizationController and refer to the following code example that illustrates how to preserve the new unbound column during deserialization.
+You can overcome the above scenario by customizing the SerializationController and refer to the following code example that illustrates how to preserve the new unbound column during deserialization.
 
 
 {% highlight C# %}

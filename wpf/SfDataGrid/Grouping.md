@@ -40,7 +40,7 @@ True</td></tr>
 <td>
 SfDataGrid.AllowFrozenGroupHeaders</td><td>
 Boolean</td><td>
-Enable or disable the GroupCaptions whether it is freezed while scrolling the DataGrid vertically.</td><td>
+Enable or disable the GroupCaptions whether it is freeze while scrolling the DataGrid vertically.</td><td>
 False</td></tr>
 <tr>
 <td>
@@ -225,7 +225,7 @@ Ungrouping the column by clicking the close button in GroupDropAreaItem
 {:.caption}
 
 
-* Remove the corresponding GroupColumnDescription entry from SfDataGrid.GroupColoumnDescriptions Collection.
+* Remove the corresponding GroupColumnDescription entry from SfDataGrid.GroupColumnDescriptions Collection.
 
 
 {% highlight C# %}
@@ -360,7 +360,7 @@ The following screenshot displays the output.
 ![](Features_images/Features_img92.png)
 
 
-Freezed group caption header
+Freeze group caption header
 {:.caption}
 The following statements describe you the methods that participate in Expand and Collapse of groups. DataGrid control enables you to expand or collapse the Group by clicking the expander or Group Caption Row. The following methods help to Expand or Collapse the groups in code behind:
 
@@ -420,7 +420,7 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 The following statements describe you the events that participate in Grouping. DataGrid control provides the following events when you expand or collapse the group or when you try to expand particular group these events are called.
 
 * SfDataGrid.GroupExpanding: This event is raised when the group starts to expand that allows you to cancel the expanding action.
-* SfDataGrid.GroupExpnaded: This event is raised when the group is expanded.
+* SfDataGrid.GroupExpanded: This event is raised when the group is expanded.
 * SfDataGrid.GroupCollapsing: This event is raised when the group starts to collapse that allows you to cancel the collapsing action.
 * SfDataGrid.GroupCollapsed: This event is raised when the group is collapsed. 
 
@@ -484,7 +484,7 @@ private void sfdatagrid_GroupExpanding(object sender, GroupChangingEventArgs e)
 
 
 
-N> These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods.
+N> These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGroupsAtLevel () methods.
 
 ## Custom Grouping
 
