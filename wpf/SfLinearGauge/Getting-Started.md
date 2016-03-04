@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to configure the **SfLinearauge** and also explains the steps to add basic elements of **SfLinearauge** through various API’s available within it.
+This section explains you the steps required to configure the **SfLinearGauge** and also explains the steps to add basic elements of **SfLinearGauge** through various API’s available within it.
 
 ## Configuring SfLinearGauge using Syncfusion Reference Manager
 
@@ -25,7 +25,7 @@ Right Click on the Project and select Syncfusion Reference Manager.
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-The Syncfusion Reference Manager Wizard wil be opened as shown in the figure below.
+The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 

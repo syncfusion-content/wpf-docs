@@ -21,7 +21,7 @@ Create a simple WPF application using Visual Studio.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-Righ Click on the Project and select Syncfusion Reference Manager.
+Right Click on the Project and select Syncfusion Reference Manager.
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 

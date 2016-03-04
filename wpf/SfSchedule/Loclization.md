@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Loclization| SfSchedule | Wpf | Syncfusion
-description: loclization
+title: Localization| SfSchedule | Wpf | Syncfusion
+description: Localization
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Loclization
+# Localization
 
 Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data. Culture is a schema which holds all the information about various standards such as language, DateTime information, currency, speed, and other physical metrics. The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr‖ for French (common).
 

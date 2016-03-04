@@ -126,7 +126,7 @@ After this, we need to create a ResourceTypeCollection, to assign the Resource
 
 ## Adding ResourceType to a ResourceTypeCollection
 
-After Creating the ResourceTypeCollection add the ResourecType, here we create the example for ResourceType as Doctors.
+After Creating the ResourceTypeCollection add the ResourceType, here we create the example for ResourceType as Doctors.
 {% highlight html %}
 
 
@@ -229,7 +229,7 @@ Refer to the following code to add a Resources in the code behind
 {% endhighlight %}
 
 
-## Subresource Support
+## SubResource Support
 
 This feature enables users to view appointments based on their subcategory only in day and week views. Using this feature, the end user can group appointments under various subcategories (resources). 
 
@@ -245,7 +245,7 @@ Description</th></tr>
 <tr>
 <td>
 SubResourceType</td><td>
-Gets or sets the ResourceType value which is a subresource type of its parent Resource type.</td></tr>
+Gets or sets the ResourceType value which is a SubResource type of its parent Resource type.</td></tr>
 </table>
 
 {% tabs %}

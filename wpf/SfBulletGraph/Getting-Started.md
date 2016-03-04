@@ -25,7 +25,7 @@ Right Click on the Project and select Syncfusion Reference Manager.
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-The Syncfusion Reference Manager Wizard wil be opened as shown in the figure below.
+The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
@@ -39,7 +39,7 @@ The **SfBulletGraph** assemblies will be automatically added to the Project afte
 
 ![](Getting-Started_images/Getting-Started_img6.jpeg)
 
-Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.yncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
+Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.Syncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
 {% highlight xaml %}
 
@@ -89,7 +89,7 @@ The SfBulletGraph control will be created as shown in the figure below.
 
 **Namespace**: Syncfusion.UI.Xaml.BulletGraph
 
-Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.yncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
+Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.Syncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
 {% highlight xaml %}
 
