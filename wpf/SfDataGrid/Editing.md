@@ -260,7 +260,7 @@ SfDataGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event occurs when the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) enter into edit mode. [CurrentCellBeginEditEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is cancelled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 * [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row column index of the DataGrid.
 * [Column](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
@@ -313,7 +313,7 @@ void dataGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.Grid.Cur
 {% endhighlight %}
 {% endtabs %}
 
-N> GridComboBoxColumn and GridMulitColumnDropList, you have to use the CurrentCellDropDownSelectionChanged event.
+N> GridComboBoxColumn and GridMultiColumnDropList, you have to use the CurrentCellDropDownSelectionChanged event.
 
 ### CurrentCellDropDownSelectionChanged Event
 
@@ -400,7 +400,7 @@ You can directly load edit element using GridTemplateColumn.CellTemplate propert
 
 ### Providing focus to the control inside the Template
 
-You can focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FousedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property. 
+You can focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property. 
 
 {% tabs %}
 {% highlight xaml %}

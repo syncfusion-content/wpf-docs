@@ -13,8 +13,8 @@ PivotGrid supports excel-like **Cell Selection** where you can select grid value
 
 Property 
 
-* **AllowSelection** - Gets or sets whether to enable or disable the selection behaviour for cells.
-* **AllowSelectionWithHeaders** - Gets or sets whether to enable or disable the selection behaviour along with headers when selecting the cells
+* **AllowSelection** - Gets or sets whether to enable or disable the selection behavior for cells.
+* **AllowSelectionWithHeaders** - Gets or sets whether to enable or disable the selection behavior along with headers when selecting the cells
 
 ## Defining the properties in PivotGrid
 
@@ -106,7 +106,7 @@ It is possible to select a whole column in PivotGrid by clicking on the specific
 
 ###AllowSelectionWithHeaders 
 
-The property **AllowSelectionWithHeaders** can be used to achieve the selection behaviour along with headers. It can be acheived through *XAML* or *Code-Behind*.
+The property **AllowSelectionWithHeaders** can be used to achieve the selection behavior along with headers. It can be achieved through *XAML* or *Code-Behind*.
 
 If through **XAML**, please refer the below code snippet.
 

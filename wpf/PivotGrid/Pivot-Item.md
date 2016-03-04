@@ -49,7 +49,7 @@ Please refer the code snippet below.
 
 ## Defining Pivot Item in Code-Behind
 
-Include the *Synfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotItems for each row and column items. Add the defined PivotItems to PivotRows and PivotColumns collection of PivotGrid control. Please refer the below code snippet.
+Include the *Syncfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotItems for each row and column items. Add the defined PivotItems to PivotRows and PivotColumns collection of PivotGrid control. Please refer the below code snippet.
 
 {% highlight C# %}
 

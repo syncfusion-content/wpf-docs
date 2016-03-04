@@ -13,7 +13,7 @@ Paging in OlapGrid provides you support to load and render large amount of data 
 
 OlapPager user control is included and bounded with the same OlapDataManager object of OlapGrid. To enable paging, set EnablePaging property of OlapReport to True.
 
-When you process large CellSet, it is splitted into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by utilizing the GUI options in OlapPager. You can also change the page size at runtime by using PageSetting window.
+When you process large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by utilizing the GUI options in OlapPager. You can also change the page size at runtime by using PageSetting window.
 
 ## Adding OlapPager in Application
 

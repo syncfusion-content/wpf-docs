@@ -47,8 +47,8 @@ All the elements are internally maintained as Item.
 * **Name** - Used to set or get the report name.
 * **SeriesElements** - Contains elements that are said to be in series axis. We can add an element and get the collection of elements that comes under the categorical axis.
 * **ShowEmptyColumnData** - Used to show/hide the empty column in the result set.
-* **ShowemptyRowData** - Used to show/hide the empty row in the result set.
-* **ShowExpanders** - Used to show/hide the expander buttons in the Olap contorls.
+* **ShowEmptyRowData** - Used to show/hide the empty row in the result set.
+* **ShowExpanders** - Used to show/hide the expander buttons in the Olap control.
 * **SliceElements** - Contains the element that are said to be in slicer axis. We can add an element and get the collection of elements that comes under the categorical axis.
 * **TogglePivot** - Used to swap the elements in the column axis and row axis.
 * **Tag** - Holds the backup information of the OLAP Report.
@@ -514,7 +514,7 @@ Description </th></tr>
 <tr>
 <td>
 SlicerRangeFiltersInfo</td><td>
-Used to filter values from one range to another. Unique name of the member element for start and end value need to be specified. The name of the member element can also be specified for start and end value when custumer builds the unique name*.</td></tr>
+Used to filter values from one range to another. Unique name of the member element for start and end value need to be specified. The name of the member element can also be specified for start and end value when customer builds the unique name*.</td></tr>
 </table>
 
 

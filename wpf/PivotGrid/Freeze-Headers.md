@@ -14,7 +14,7 @@ PivotGrid provides built-in support for freezing column and row headers for the 
 
 Property 
 
-* **FreezeHeaders** - Gets or sets whether the column and row headers needs to freezed or not.
+* **FreezeHeaders** - Gets or sets whether the column and row headers needs to freeze or not.
 
 
 ## Defining the property in PivotGrid
@@ -89,9 +89,9 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Freeze-headers-images/PivotGrid with freezed headers.png)
+![](Freeze-headers-images/PivotGrid with freeze headers.png)
 
-_PivotGrid when freezed headers enabled_
+_PivotGrid when freeze headers enabled_
 
 ![](Freeze-headers-images/PivotGrid when freeze headers disabled.png)
 

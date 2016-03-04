@@ -304,7 +304,7 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 
    Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studio\<version number>\precompiledassemblies\<version number>\<framework version>_
 
-5. After adding the above assemblies, the OlapGrid control is automatically added in the Assests. Now, find OlapGrid and drag it to the designer window.
+5. After adding the above assemblies, the OlapGrid control is automatically added in the Assets. Now, find OlapGrid and drag it to the designer window.
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
@@ -594,7 +594,7 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 
    Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studio\<version number>\precompiledassemblies\<version number>\<framework version>_
 
-4. Include the following namespace in code-behind for instantiating OLAP Grid and to manipulate OlpaDataManager and OlapReport.
+4. Include the following namespace in code-behind for instantiating OLAP Grid and to manipulate OlapDataManager and OlapReport.
    1. Syncfusion.Windows.Grid.Olap
    2. Syncfusion.Olap.Manager
    3. Syncfusion.Olap.Reports

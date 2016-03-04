@@ -52,7 +52,7 @@ Please refer the code snippet below.
 
 ## Defining PivotComputationInfo in Code-Behind
 
-Include the *Synfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotComputationInfo's for each calculation items. Add the defined PivotComputationInfo's to PivotCalculations collection of PivotGrid control. 
+Include the *Syncfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotComputationInfo's for each calculation items. Add the defined PivotComputationInfo's to PivotCalculations collection of PivotGrid control. 
 
 Please refer the below code snippet.
 

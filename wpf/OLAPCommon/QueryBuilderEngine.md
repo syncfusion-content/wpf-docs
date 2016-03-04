@@ -64,11 +64,11 @@ By invoking the BuildAxisElements() method, the building query for the column ax
 
 The BuildAxisElements() will build the query for the column element when we pass the column items and it will generate the query for the row elements when the row items is passed as an argument. The BuildAxisElements() method will return a Boolean value which represents whether the KPI element is existing in the given item list or not. Based on that return, the value of the KPI Element axis was fixed.
 
-Up to this the Select section of the query was built and now the From section. The From section will start by invoking the BuildFiltereCondition() method.
+Up to this the Select section of the query was built and now the From section. The From section will start by invoking the BuildFilterCondition() method.
 
-### The Helper method for the BuildFiltereCondition() is given below:
+### The Helper method for the BuildFilterCondition() is given below:
 
-1. BuildFilteredElements() - This method iterates through the elements and appends the parent details and child member details in the query based on the axis either in a row or in a column.
+1. BuildFilterElements() - This method iterates through the elements and appends the parent details and child member details in the query based on the axis either in a row or in a column.
 2. Then it comes to the Where section, by invoking the BuildSlicerElements() method.
 3. Then the BuildSlicerItem is invoked. This method will check whether the given item is Dimension or Measure or KPI or NamedSet or Level and based on this the appropriate query part will appended with the query.
 

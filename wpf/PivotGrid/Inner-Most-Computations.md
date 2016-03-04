@@ -9,7 +9,7 @@ documentation: ug
 
 # Inner Most Computations
 
-Pivotgrid provides the support for the columns which are existing in engine to display only the calculation columns other than total and grand total columns.
+PivotGrid provides the support for the columns which are existing in engine to display only the calculation columns other than total and grand total columns.
 
 
 Property  
