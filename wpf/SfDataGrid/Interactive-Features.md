@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive Features
 
-This section explains you how to use context menu, Column Chooser window and Rowheader in SfDatagrid. You can also see the different types of available API, methods and events for contextmenu, Column Chooser window and for row header.
+This section explains you how to use context menu, Column Chooser window and RowHeader in SfDatagrid. You can also see the different types of available API, methods and events for context menu, Column Chooser window and for row header.
 
 ## Context Menu
 
@@ -1287,7 +1287,7 @@ Different ToolTip with ToolTipTemplateSelector
 
 When you are defining the GridColumn.ToolTipTemplate, do not define the DataTemplate for each column separately when you want to display based on the CellValue or the GridColumn.MappingName, in other words. 
 
-When the GridColumn.SetCellBoundToolTip property is set to true, that sets the DataContextHelper as a content to the ToolTip. The DataContextHelper has the Record and Value properties. By using the DataContextHelper.Record and DataContextHelper.Value, you can define the DataTemplateto display the content based on record/value and you can set this DataTemplate to all the columns in the SfDataGrid.  You have to set the GridColumn.SetCellBoundToolTip also to true for all the columns. 
+When the GridColumn.SetCellBoundToolTip property is set to true, that sets the DataContextHelper as a content to the ToolTip. The DataContextHelper has the Record and Value properties. By using the DataContextHelper.Record and DataContextHelper.Value, you can define the DataTemplate to display the content based on record/value and you can set this DataTemplate to all the columns in the SfDataGrid.  You have to set the GridColumn.SetCellBoundToolTip also to true for all the columns. 
 
 In the following XAML code, the same DataTemplate is set to all the columns to display CellValue with the help of the GridColumn.SetCellBoundToolTip and GridColumn.ToolTipTemplate.
 
@@ -1387,9 +1387,9 @@ In the image, when the mouse hovers on any cell, the tool tip style is the same 
 
 ### How to change the context menu item at Execute time
 
-You can use the GridContextMenuOpening event to change the contextmenu at Execute time. This event argument carries necessary information to work with the contextmenu of Grid.
+You can use the GridContextMenuOpening event to change the context menu at Execute time. This event argument carries necessary information to work with the context menu of Grid.
 
-By default, the contextmenu of Grid does not have any instance, and it is initialized with the contextmenu as illustrated in the following code example.
+By default, the context menu of Grid does not have any instance, and it is initialized with the context menu as illustrated in the following code example.
 
 
 {% highlight xaml %}
@@ -1436,7 +1436,7 @@ ItemsSource="{Binding GDCSource}">
 
 
 
-In the following code example, the Headercontextmenu and Recordcontextmenu are initialized, and also the GridContextMenuOpening event is declared. 
+In the following code example, the HeaderContextMenu and RecordContextMenu are initialized, and also the GridContextMenuOpening event is declared. 
 
 
 {% highlight C# %}

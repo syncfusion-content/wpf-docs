@@ -15,7 +15,7 @@ SfDataGrid has GridIndexResolver static class present in Syncfusion.UI.Xaml.Grid
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 
-Proptotype Table
+Prototype Table
 
 <table>
 <tr>
@@ -29,7 +29,7 @@ Resolves Record index from the RowIndex. When RowIndex does not find any records
 <tr>
 <td>
 ResolveToRowIndex(int recordIndex)</td><td>
-Resolves RowIndex from the recordindex associated with SfDataGrid.View.Records.When record index is lesser than 0 it returns the -1.</td></tr>
+Resolves RowIndex from the record index associated with SfDataGrid.View.Records.When record index is lesser than 0 it returns the -1.</td></tr>
 <tr>
 <td>
 ResolveToRowIndex(object recordItem)</td><td>
@@ -45,7 +45,7 @@ Resolves TableSummaryIndex associated with SfDataGrid.View.Records.TableSummarie
 <tr>
 <td>
 ResolveToGridVisibleColumnIndex(int visibleColumnIndex)</td><td>
-Resolves the GridColumn index from the visiblecolumn index. It excludes the RowHeader and IndentColumn.</td></tr>
+Resolves the GridColumn index from the visible column index. It excludes the RowHeader and IndentColumn.</td></tr>
 <tr>
 <td>
 ResolveStartIndexBasedOnPosition()</td><td>
@@ -65,7 +65,7 @@ Returns the RowIndex of DetailsViewGrid. You can pass the DetailsViewDataGrid as
 <tr>
 <td>
 GetGridDetailsViewRecord(DetailsViewDataGrid detailsViewDataGrid)</td><td>
-Returns the DetailsView record. You can pass the DetailsViewDataGrid.When there is no item it retuns null value.</td></tr>
+Returns the DetailsView record. You can pass the DetailsViewDataGrid.When there is no item it returns null value.</td></tr>
 <tr>
 <td>
 GetTableSummaryCount(TableSummaryRowPosition position)</td><td>
@@ -85,7 +85,7 @@ Decides whether the given row index is AddNewRow index or not.</td></tr>
 <tr>
 <td>
 IsTableSummaryIndex(int rowIndex)</td><td>
-Decides whether the given row index is TableSumamry index or not.</td></tr>
+Decides whether the given row index is TableSummary index or not.</td></tr>
 <tr>
 <td>
 IsHeaderTableSummaryRow(int rowIndex)</td><td>
