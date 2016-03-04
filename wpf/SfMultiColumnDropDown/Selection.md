@@ -71,7 +71,7 @@ This event is raised when the Selection is changed.The SelectionChanged event ha
 
 ## How To
 
-### How to Select the Text When SfMultiColumnDropDowncontrol got Focus?
+### How to Select the Text When SfMultiColumnDropDownControl got Focus?
 
 
 In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically selects the text when SfMultiColumnDropDownControl got focus from one control. 
