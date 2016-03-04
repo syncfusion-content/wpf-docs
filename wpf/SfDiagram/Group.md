@@ -9,7 +9,7 @@ documentation: ug
 
 #Group
 
-Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Gonnectors). Every change made to the Group also affects the children. Child elements can be edited individually.
+Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
 ##Create Group
 
