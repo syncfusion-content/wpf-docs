@@ -9,19 +9,9 @@ documentation: ug
 
 # RTL Support
 
-PivotGrid provides support to display the contents of the grid from Right-to-left. It can be achieved by setting the property **FlowDirection** in the PivotGrid control. 
+PivotGrid provides support to display the contents of the Grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the PivotGrid control to "RightToLeft". 
 
-
-Property
-                                                          
-* **FlowDirection** - Gets or sets the flow direction for the PivotGrid control.
-
-
-## Defining the property in PivotGrid
-
-It can be achieved by setting the **FlowDirection** property of PivotGrid control to RightToLeft. It can be done either in *XAML* or in *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If you want to achieve this through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -45,7 +35,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if you want to achieve this through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
