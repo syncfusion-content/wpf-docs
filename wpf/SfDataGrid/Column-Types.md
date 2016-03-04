@@ -784,13 +784,13 @@ You can allow end-user to increment or decrement the column value’s when `Mous
 
 ### Null value support
 
-GridEditorColumn provides support to retrict or allow null value in columns based on [AllowNullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~AllowNullValue.html) property. Instead of displaying null values, you can display hint text using [NullText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~NullText.html) property or you can set the default value when `null` value encountered using [NullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~NullValue.html) property.
+GridEditorColumn provides support to restrict or allow null value in columns based on [AllowNullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~AllowNullValue.html) property. Instead of displaying null values, you can display hint text using [NullText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~NullText.html) property or you can set the default value when `null` value encountered using [NullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~NullValue.html) property.
 
 The `NullText` and `NullValue` properties won’t work, when the `AllowNullValue` is `false`.
 
 ### Setting input range
 
-You can restrict and display the input value with in the range using [MinValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MinValue.html) and [MaxValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MaxValue.html) properties. You can set the contstraint to validate the maximum value using [MaxValidation](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MaxValidation.html) and minimum value using [MinValidation](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MinValidation.html) properties. Below are the two constraints that specify when to validate.
+You can restrict and display the input value with in the range using [MinValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MinValue.html) and [MaxValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MaxValue.html) properties. You can set the constraint to validate the maximum value using [MaxValidation](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MaxValidation.html) and minimum value using [MinValidation](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEditorColumn~MinValidation.html) properties. Below are the two constraints that specify when to validate.
 
 * `LostFocus`	- Validates input when the focus is lost.
 * `OnKeyPress` - Validates input, when user type the value.
@@ -846,9 +846,9 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 * [NumberDecimalDigits](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberDecimalDigits.html)  **-** You can change the [Number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimaldigits.aspx) to be displayed after the decimal point using `NumberDecimalDigits` property. 
 
-* [NumberDecimalSeperator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberDecimalSeparator.html)  **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimalseparator.aspx) of numeric value .You can use any operator as decimal separator using `NumberDecimalSeperator` property.  
+* [NumberDecimalSeparator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberDecimalSeparator.html)  **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimalseparator.aspx) of numeric value .You can use any operator as decimal separator using `NumberDecimalSeparator` property.  
 
-* [NumberGroupSeperator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberGroupSeparator.html)  **-** By default, the comma (,) [separates group of digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupseparator.aspx) before the decimal point. You can use any operator as group separator using `NumberGroupSeperator` property.
+* [NumberGroupSeparator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberGroupSeparator.html)  **-** By default, the comma (,) [separates group of digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupseparator.aspx) before the decimal point. You can use any operator as group separator using `NumberGroupSeparator` property.
 
 * [NumberGroupSizes](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~NumberGroupSizes.html) **-** You can change the [number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupsizes.aspx) before the decimal point on numeric values using `NumberGroupSizes` property.
 
@@ -894,15 +894,15 @@ this.dataGrid.Columns.Add(new GridCurrencyColumn() { MappingName = "UnitPrice", 
 
 ### Data formatting
 
-`GridCurrencyColum` allows you to format the parsing currency data with culture-specific information.
+`GridCurrencyColumn` allows you to format the parsing currency data with culture-specific information.
 
 * [CurrencySymbol](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencySymbol.html) - By default, the currency symbol will be displayed based on culture. You can change the symbol using `CurrencySymbol` property. 
 
 * [CurrencyDecimalDigits](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyDecimalDigits.html) - You can change the [number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimaldigits.aspx) to be displayed after the decimal point on currency values using `CurrencyDecimalDigits` property. 
 
-* [CurrencyDecimalSeperator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyDecimalSeparator.html) - By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimalseparator.aspx) of currency value .You can use any operator as decimal separator through `CurrencyDecimalSeperator` property. 
+* [CurrencyDecimalSeparator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyDecimalSeparator.html) - By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimalseparator.aspx) of currency value .You can use any operator as decimal separator through `CurrencyDecimalSeparator` property. 
 
-* [CurrencyGroupSeperator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyGroupSeparator.html) - By default, the comma (,) [separates the group](https://msdn.microsoft.com/en-US/library/system.globalization.numberformatinfo.currencygroupseparator(v=vs.110).aspx) of digits before the decimal point on currency value .You can use any operator as group separator through CurrencyGroupSeperator property. 
+* [CurrencyGroupSeparator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyGroupSeparator.html) - By default, the comma (,) [separates the group](https://msdn.microsoft.com/en-US/library/system.globalization.numberformatinfo.currencygroupseparator(v=vs.110).aspx) of digits before the decimal point on currency value .You can use any operator as group separator through CurrencyGroupSeparator property. 
 
 * [CurrencyGroupSizes](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyGroupSizes.html) - You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencygroupsizes.aspx) before the decimal point on currency value using `CurrencyGroupSizes` property. 
 
@@ -933,7 +933,7 @@ this.dataGrid.Columns.Add(new GridCurrencyColumn() { MappingName = "UnitPrice", 
 
 ` GridPercentColumn` derived from `GridEditorColumn` and it displays columns data as percent. It hosts `PercentTextBox` element in editing mode. 
 
-You can diplay data as percent value or double value using [PercentEditMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentEditMode.html) property. `PercentEditMode.PercentMode` returns the value as percentage. `PercentEditMode.DoubleMode` returns the value as numeric.
+You can display data as percent value or double value using [PercentEditMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentEditMode.html) property. `PercentEditMode.PercentMode` returns the value as percentage. `PercentEditMode.DoubleMode` returns the value as numeric.
 
 {% tabs %}
 {% highlight xaml %}
@@ -952,15 +952,15 @@ this.dataGrid.Columns.Add(new GridPercentColumn() { HeaderText = "Discount", Map
 
 ### Data formatting
 
-`GridPercentColum` allows you to format the parsing percent data with culture-specific information.
+`GridPercentColumn` allows you to format the parsing percent data with culture-specific information.
 
 * [PercentSymbol](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentSymbol.html) **-** By default, the percent operator (%) will be loaded with the value. You can change the symbol using `PercentSymbol` property. 
 
 * [PercentDecimalDigits](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentDecimalDigits.html) **-** You can change the [number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimaldigits.aspx) to be displayed after the decimal point on percent value can be specified using `PercentDecimalDigits` property. 
 
-* [PercentDecimalSeperator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentDecimalSeparator.html) **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimalseparator.aspx) of percent value .You can use any operator as decimal separator using `PercentDecimalSeperator` property.
+* [PercentDecimalSeparator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentDecimalSeparator.html) **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimalseparator.aspx) of percent value .You can use any operator as decimal separator using `PercentDecimalSeparator` property.
 
-* [PercentGroupSeperator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentGroupSeparator.html) **-** By default, the comma (,) operator [separates the group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupseparator.aspx) of digits left to the decimal point on currency value .You can use any operator as group separator using `PercentGroupSeperator` property. 
+* [PercentGroupSeparator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentGroupSeparator.html) **-** By default, the comma (,) operator [separates the group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupseparator.aspx) of digits left to the decimal point on currency value .You can use any operator as group separator using `PercentGroupSeparator` property. 
 
 * [PercentGroupSizes](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentGroupSizes.html) **-** You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupsizes.aspx) before the decimal point through `PercentGroupSizes` property. 
 
@@ -1144,7 +1144,7 @@ You can allow end-user to increment or decrement the value when `MouseWheel` or 
 
 ### Null value support
 
-`GridDateTimeColumn` provides support to retrict or allow null value in columns based on [AllowNullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~AllowNullValue.html) property. Instead of displaying null values, you can display hint text using [NullText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~NullText.html) property or you can set the default value using [NullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~NullValue.html) property.
+`GridDateTimeColumn` provides support to restrict or allow null value in columns based on [AllowNullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~AllowNullValue.html) property. Instead of displaying null values, you can display hint text using [NullText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~NullText.html) property or you can set the default value using [NullValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~NullValue.html) property.
 
 The `NullText` and `NullValue` properties won’t work, when the `AllowNullValue` is `false`.
 
@@ -1667,11 +1667,11 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](http://help.syncfusio
 
 ### Auto-complete support
 
-You can allow SfMultiDropDownControl to complete the entered input value automatically by setting the [AllowAutoComplete](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowAutoComplete.html) property to `true`. `AllowAutoComplete` property will autocomplete the input value by comparing it to each item of the underlying data source of `GridMutliColumnDropDownList` and returns the matched value by `DisplayMember`. 
+You can allow SfMultiDropDownControl to complete the entered input value automatically by setting the [AllowAutoComplete](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowAutoComplete.html) property to `true`. `AllowAutoComplete` property will autocomplete the input value by comparing it to each item of the underlying data source of `GridMultiColumnDropDownList` and returns the matched value by `DisplayMember`. 
 
 ### Filtering
 
-You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting [AllowIncrementalFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowIncrementalFiltering.html) property to `true`. `GridMultiCOlumnDropDownList` allows you to filter the items based on case by setting [AllowCasingforFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowCasingforFilter.html) to `true`. This will help users to select from large number of items.
+You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting [AllowIncrementalFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowIncrementalFiltering.html) property to `true`. `GridMultiColumnDropDownList` allows you to filter the items based on case by setting [AllowCasingforFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowCasingforFilter.html) to `true`. This will help users to select from large number of items.
 
 ![](Column-Types_images/Column-Types_img17.png)
 
@@ -1951,9 +1951,9 @@ In the below code snippet, `Mask` applied to format and validate the user input 
 
 ![](Column-Types_images/Column-Types_img20.png)
 
-### Specifying prompt characte
+### Specifying prompt character
 
-By default, an underscore (_) is displayed when the user input is absenct. This can be changed by setting [GridMaskColumn.PromptChar](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMaskColumn~PromptChar.html) property.
+By default, an underscore (_) is displayed when the user input is absent. This can be changed by setting [GridMaskColumn.PromptChar](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMaskColumn~PromptChar.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2006,7 +2006,7 @@ You can allow end-user to increment or decrement the column value’s when `Mous
 
 ### Null value support
 
-`GridTimeSpanColumn` provides support to retrict or allow null value in columns based on [AllowNull](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~AllowNull.html) property. Instead of displaying null values, you can display hint text using [NullText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~NullText.html) property.
+`GridTimeSpanColumn` provides support to restrict or allow null value in columns based on [AllowNull](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~AllowNull.html) property. Instead of displaying null values, you can display hint text using [NullText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn~NullText.html) property.
 
 The `NullText` properties won’t work, when the `AllowNull` is `false`.
 
