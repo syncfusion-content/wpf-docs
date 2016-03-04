@@ -76,7 +76,7 @@ PrimaryAxis</td><td>
 Gets or sets the primary axis.</td></tr>
 <tr>
 <td>
-ShowPrimaryAxisLabelBoder</td><td>
+ShowPrimaryAxisLabelBorder</td><td>
 Gets or sets a value indicating whether the primary axis label border should be visible or not.</td></tr>
 <tr>
 <td>
@@ -115,7 +115,7 @@ DataBind</th><th>
 Binds the data.</th></tr>
 <tr>
 <td>
-ExportintoNewDoc</td><td>
+ExportIntoNewDoc</td><td>
 Exports the chart to a new word document.</td></tr>
 <tr>
 <td>
@@ -131,7 +131,7 @@ OnApplyTemplate</td><td>
 Invoked whenever application code or internal processes call ApplyTemplate().</td></tr>
 <tr>
 <td>
-SetChartApperanceDetails</td><td>
+SetChartAppearanceDetails</td><td>
 Sets the chart appearance settings.</td></tr>
 <tr>
 <td>

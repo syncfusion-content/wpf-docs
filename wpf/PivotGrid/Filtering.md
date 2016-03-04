@@ -27,7 +27,7 @@ Properties
 
 ###Defining Filters in XAML
 
-Create a new FilterExpression under **PivotGridContol.Filters** class. Please refer the code snippet below.
+Create a new FilterExpression under **PivotGridControl.Filters** class. Please refer the code snippet below.
 
 {% highlight xaml %}
 

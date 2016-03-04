@@ -35,7 +35,7 @@ Property
 
 By Default, the context menu is enabled for the all the areas in the Grouping Bar. **DisableContextMenu** property needs to be set individually for each area such as Row, Column, Data header area in Grouping Bar in order to disable its visibility. 
 
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, raise the Loaded event for Grouping Bar. Inside GroupingBar_Loaded() event, set the visiblity of **DisableContextMenu** of each header areas.
+After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, raise the Loaded event for Grouping Bar. Inside GroupingBar_Loaded() event, set the visibility of **DisableContextMenu** of each header areas.
 
 Please refer the below code snippet.
 

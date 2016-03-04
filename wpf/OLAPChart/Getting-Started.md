@@ -334,7 +334,7 @@ You can also create and configure OLAP Chart by using Expression Blend as illust
 
       &lt;SystemDrive/&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\<version/>\precompiledassemblies\<version/>\<Framework/>\
 
-4. After adding the above assemblies, OlapChat control is automatically added in the Assests.
+4. After adding the above assemblies, OlapChat control is automatically added in the Assets.
 5. Now, find the OlapChart and drag it to the designer window. 
 
 

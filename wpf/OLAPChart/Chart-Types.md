@@ -621,7 +621,7 @@ A sample, which demonstrates all the available type of Area charts, can be found
 
 ## How to create a line chart?
 
-Line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forcasting, or in the case of large data points.
+Line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forecasting, or in the case of large data points.
 
 The following illustration shows the Line chart:
 

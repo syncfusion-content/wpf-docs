@@ -25,7 +25,7 @@ Property
 
 **EnableContextMenu** property allows us to enable or disable the context menu for row or column headers alone individually.
 
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, set the visiblity of **EnableContextMenu** of each row and column header areas.
+After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, set the visibility of **EnableContextMenu** of each row and column header areas.
 
 Please refer the below code snippet.
 

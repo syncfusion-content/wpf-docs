@@ -499,7 +499,7 @@ Me.olapchart1.Series(0).StrokeThickness = 4
 
 
 
-N> The behaviour of the series border will vary for different chart types. The following illustration describes them in detail.
+N> The behavior of the series border will vary for different chart types. The following illustration describes them in detail.
 
 The series border is applied for the first series of a Column chart by using the StrokeThickness property. Notice that the first series element is surrounded with the applied border.
 
@@ -688,12 +688,12 @@ End Sub
 
 ### How to enable chart animations
 
-Animations can be added in the OlapChart control. It can be achieved through the following properties: SeriesAnimateOption, SeriesAnimateOnebyOne, EnableSeriesAnimation,and SeriesAnimationDuration for each chart series.
+Animations can be added in the OlapChart control. It can be achieved through the following properties: SeriesAnimateOption, SeriesAnimateOneByOne, EnableSeriesAnimation,and SeriesAnimationDuration for each chart series.
 
 Properties
 
 * **SeriesAnimateOption** - Gets or sets animation for each series 
-* **SeriesAnimateOnebyOne** - Gets or sets whether each series animate one by one. By default false.
+* **SeriesAnimateOneByOne** - Gets or sets whether each series animate one by one. By default false.
 * **EnableSeriesAnimation** - Gets or sets whether enable animation for each series.
 * **SeriesAnimationDuration** - Gets or sets the animation duration for each series.
 
@@ -992,7 +992,7 @@ To display the currency symbol in the secondary axis, you need to set the second
 
 ### How to customize the OlapAxis label font settings?
 
-The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by speicifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
+The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by specifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
 
   {% highlight xaml %}
 
@@ -2035,7 +2035,7 @@ A sample, which demonstrates all the available type of Area charts, can be found
 
 ### How to create a line chart?
 
-Line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forcasting, or in the case of large data points.
+Line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forecasting, or in the case of large data points.
 
 The following illustration shows the Line chart:
 

@@ -16,7 +16,7 @@ Grouping bar also allows to perform sorting,filtering and summarize the data as 
 * A **sort indicator** which identifies the sort order applied to the field's values 
 * A **remove button** which used for removing the corresponding item.
 
-We cannot able to perform Sorting and Filtering for PivotCalculation items. Similary, we cannot able to perform Sorting for Filter items.
+We cannot able to perform Sorting and Filtering for PivotCalculation items. Similarly, we cannot able to perform Sorting for Filter items.
 
 Please refer the below which illustrates certain properties available in Grouping Bar.
 
