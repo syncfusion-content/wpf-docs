@@ -67,7 +67,7 @@ ListType</td></tr>
 <tr>
 <td>
 Inlines</td><td>
-Contains the inlines to be added in the paragraph.</td><td>
+Contains the inline elements to be added in the paragraph.</td><td>
 Dependency Property</td><td>
 InlineCollection</td></tr>
 </table>
