@@ -11,57 +11,26 @@ documentation: ug
 
 Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
 
-**Properties**
+### Enable Sorting
+Ths ['IsSortData'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSortData.html) property used to enable the sorting in series.
 
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-IsSortData
-</td>
-<td>
-Gets or sets the Boolean value indicates whether to sort the data or not.
-</td>
-</tr>
-<tr>
-<td>
-SortBy
-</td>
-<td>
-Gets or sets the axis for which sorting to be performed.
-</td>
-</tr>
-<tr>
-<td>
-SortDirection
-</td>
-<td>
-Gets or sets the sorting direction, either *Ascending* or *Descending* 
-</td>
-</tr>
-</table>
+### Changing sorting direction
+
+The ['SortDirection'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SortDirection.html) property defines the direction of sorting either in Ascending or Descending based on x or y value.
+
+### Changing sorting axis
+
+This ['SortBy'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SortBy.html) property decides whether sorting should be done based on x or y values.
+
 
 The following example illustrates a simple chart (without apply sorting):
 
 ![](sorting_chart_images/sorting_1.png)
 
 
-Note: This feature is primarily applicable for indexed (non-linear) axis like CategoryAxis.
+## Sorting for category(non-linear) axis
 
-For linear axis like NumericalAxis, only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
-
-## SortDirection
-
-This defines the direction of sorting either in Ascending or Descending based on x or y value. This can be explained by combined with SortBy property below.
-
-## SortBy
-
-Sorting can be done with respect to X and Y axis. This is an enum property.
-
-**Sorting** **x** **axis** **in** **ascending** **order**:
+**Sorting x axis in ascending order**:
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
@@ -77,7 +46,7 @@ Sorting can be done with respect to X and Y axis. This is an enum property.
 ![](sorting_chart_images/sorting_2.png)
 
 
-**Sorting** **x** **axis** **in** **descending** **order**:
+**Sorting x axis in descending order**:
 
 {% highlight xml %}
 
@@ -94,7 +63,7 @@ Sorting can be done with respect to X and Y axis. This is an enum property.
 ![](sorting_chart_images/sorting_3.png)
 
 
-**Sorting** **y** **axis** **in** **ascending** **order**:
+**Sorting y axis in ascending order**:
 
 {% highlight xml %}
 
@@ -112,7 +81,7 @@ Sorting can be done with respect to X and Y axis. This is an enum property.
 ![](sorting_chart_images/sorting_4.png)
 
 
-**Sorting** **y** **axis** **in** **descending** **order**:
+**Sorting y axis in descending order**:
 
 {% highlight xml %}
 
@@ -129,6 +98,8 @@ Sorting can be done with respect to X and Y axis. This is an enum property.
 
 ![](sorting_chart_images/sorting_5.png)
 
+N> This feature is primarily applicable for indexed (non-linear) axis like CategoryAxis. For linear axis like NumericalAxis, only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
+
 
 ## Sorting for linear axis
 
@@ -140,7 +111,7 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 ![](sorting_chart_images/linearaxis_nosort.png)
 
-**Sorting** **x** **axis** **in** **ascending** **order**
+**Sorting x axis in ascending order**
 
 {% highlight xml %}
 
@@ -156,7 +127,7 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 ![](sorting_chart_images/linearaxis_sort1.png)
 
-**Sorting** **x** **axis** **in** **descending** **order**
+**Sorting x axis in descending order**
 
 {% highlight xml %}
 
@@ -174,7 +145,7 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 ![](sorting_chart_images/linearaxis_sort2.png)
 
-**Sorting** **y** **axis** **in** **ascending** **order**
+**Sorting y axis in ascending order**
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
@@ -191,7 +162,7 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 ![](sorting_chart_images/linearaxis_sort3.png)
 
-**Sorting** **y** **axis** **in** **descending** **order**
+**Sorting y axis in descending order**
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 

@@ -158,7 +158,7 @@ List of Properties which gets Serialized
     </tr>
     <tr>
         <td>
-            AllowMultiFunctionaSortFilter</td>
+            AllowMultiFunctionalSortFilter</td>
         <td>
             bool</td>
     </tr>
@@ -194,19 +194,19 @@ void</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
-Deserializes the PivotGrid from the saved XML file using the open file dialog</td><td>
+Deserialize the PivotGrid from the saved XML file using the open file dialog</td><td>
 -</td><td>
 void</td></tr>
 <tr>
 <td>
-Serilize(string fileName)</td><td>
+Serialize(string fileName)</td><td>
 Serializes the PivotGrid into XML file format and saves it in the specified location</td><td>
 string fileName</td><td>
 void</td></tr>
 <tr>
 <td>
 Deserialize(string filename)</td><td>
-Deserializes the PivotGrid from the specified XML file</td><td>
+Deserialize the PivotGrid from the specified XML file</td><td>
 string fileName</td><td>
 void</td></tr>
 <tr>
@@ -217,9 +217,9 @@ Serializes some specific properties in PivotGridControl into string format.</td>
 string</td></tr>
 <tr>
 <td>
-Deserialize(string xmlstring)</td><td>
+Deserialize(string XmlString)</td><td>
 De-serializes the XML string format into PivotGridControl.</td><td>
-string xmlstring</td><td>
+string XmlString</td><td>
 void</td></tr>
 </table>
 

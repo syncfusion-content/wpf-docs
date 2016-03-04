@@ -31,7 +31,7 @@ documentation: ug
 
 Property 
 
-* **CalculationType** - Gets or sets the CalculationType enumeration for this PivotComputaationInfo.
+* **CalculationType** - Gets or sets the CalculationType enumeration for this PivotComputationInfo.
 
 
 

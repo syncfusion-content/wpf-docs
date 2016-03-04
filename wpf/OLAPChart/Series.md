@@ -188,7 +188,7 @@ Me.olapchart1.Series(0).StrokeThickness = 4
 
 
 
-N> The behaviour of the series border will vary for different chart types. The following illustration describes them in detail.
+N> The behavior of the series border will vary for different chart types. The following illustration describes them in detail.
 
 The series border is applied for the first series of a Column chart by using the StrokeThickness property. Notice that the first series element is surrounded with the applied border.
 
@@ -381,12 +381,12 @@ End Sub
 
 ### How to enable chart animations
 
-Animations can be added in the OlapChart control. It can be achieved through the following properties: SeriesAnimateOption, SeriesAnimateOnebyOne, EnableSeriesAnimation,and SeriesAnimationDuration for each chart series.
+Animations can be added in the OlapChart control. It can be achieved through the following properties: SeriesAnimateOption, SeriesAnimateOneByOne, EnableSeriesAnimation,and SeriesAnimationDuration for each chart series.
 
 ### Properties
 
 * **SeriesAnimateOption** - Gets or sets animation for each series
-* **SeriesAnimateOnebyOne** - Gets or sets whether each series animate one by one. By default false.
+* **SeriesAnimateOneByOne** - Gets or sets whether each series animate one by one. By default false.
 * **EnableSeriesAnimation** - Gets or sets whether enable animation for each series.
 * **SeriesAnimationDuration** - Gets or sets the animation duration for each series.
 

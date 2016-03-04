@@ -47,7 +47,7 @@ Reference Link</th></tr>
 <td>
 ExecuteCellSet</td><td>
 Four arguments should be given to invoke this method. The arguments are MDX query as string, drill down state of result set as bool, query append info as bool and finally get the OlapReport. This method will generate the CellSet for the given query or OlapReport.</td><td>
-Mdx Query as string, drill down state as bool, Property append status as bool and Current OlapReort of OlapDataManager</td><td>
+MDX Query as string, drill down state as bool, Property append status as bool and Current OlapReport of OlapDataManager</td><td>
 CellSet</td><td>
 -</td></tr>
 <tr>

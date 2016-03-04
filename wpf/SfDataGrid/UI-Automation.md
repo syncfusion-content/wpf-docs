@@ -393,16 +393,16 @@ Click Install to continue with the installation.
 
 ### Configuration:
 
-After installing the Syncfusion Essential Test Studio, you need to ensure that Syncfusion.CNG and SyncfusionTestObjetcs.XML files are located inthe following location. 
+After installing the Syncfusion Essential Test Studio, you need to ensure that Syncfusion.CNG and SyncfusionTestObjects.XML files are located in the following location. 
 
 * C:\Program Files\HP\QuickTestProfessional\dat\Extensibility\WPF\Syncfusion
 * C:\Program Files\HP\QuickTestProfessional\dat\Extensibility\WPF\
 
-Also ensure that Syncfusion.SfGridQTP.WPF.dll is inthe following location.
+Also ensure that Syncfusion.SfGridQTP.WPF.dll is in the following location.
 
 * C:\Program Files\HP\QuickTest Professional\dat\Extensibility\WPF\Syncfusion
 
-When your system does not contain Syncfusion.CNG , SyncfusionTestObjetcs.XML and  Syncfusion.SfGridQTP.WPF.dll  files, you can get it from the following location,
+When your system does not contain Syncfusion.CNG , SyncfusionTestObjects.XML and  Syncfusion.SfGridQTP.WPF.dll  files, you can get it from the following location,
 
 * C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
  
@@ -660,7 +660,7 @@ To Set the CurrentCell.</th><th>
 Void</th></tr>
 <tr>
 <th>
-void GroupColumn(strin columnName);</th><th>
+void GroupColumn(string columnName);</th><th>
 To Group the Column</th><th>
 String columnName</th><th>
 Void</th></tr>

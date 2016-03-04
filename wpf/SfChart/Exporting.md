@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting | SfChart | Wpf | Syncfusion
-description: exporting
+title: Exporting SfChart to an image.
+description: Exporting chart to any standard image formats like JPG, PNG, etc.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,78 +9,56 @@ documentation: ug
 
 # Exporting
 
-Chart can be exported into image format. The following image formats are supported by the SfChart.
+Chart can be exported into image format. The following are the supported image formats:
 
-* .jpeg or .jpg
-* .jpg-XR
-* .gif
-* .png
-* .bmp
-* .tiff
+* JPEG or JPG
+* JPG-XR
+* GIF
+* PNG
+* BMP
+* TIFF
 
-**Methods**
+## Methods
 
-<table>
-<tr>
-<th>
-Name
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-Save(string filename)
-</td>
-<td>
-Export the chart to selected image file format
-</td>
-</tr>
-<tr>
-<td>
-Save(Stream stream, BitmapEncoder  imgEncoder)
-</td>
-<td>
-Export the chart by using stream and its corresponding encoder.
-</td>
-</tr>
-</table>
-You can use the following code example to save the chart in button click event.
+Chart contains the following overloading methods for saving a chart as an image.
 
-{% highlight c# %}
+### Save(string filename)
+
+This method will export chart to the specified location with the given name. By default, i.e., if you didn’t mention any specific location. It will be exported to “../bin/debug” location.
+
+The following code examples illustrates the usage of this method:
+
+{% highlight C# %}
+
 private void Button_Click(object sender, RoutedEventArgs e)
 
 {
 
-  SaveFileDialog sfd = new SaveFileDialog();
-
-  sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif   
-
-  (*.gif)|*.gif|PNG(*.png)|*.png|All files (*.*)|*.*";
-
-  if (sfd.ShowDialog() == true)
-
-  {
-
-    using (Stream fs = sfd.OpenFile())
-
-    {
-
-       ExportDemoChart.Save(fs, new PngBitmapEncoder());
-
-     }
-
-   }
-
- }
+ExportDemoChart.Save("chart_image.png"); //Save in Debug location
 
 
 
+ExportDemoChart.Save("D:\\Pictures\\Test\\chart_image.png"); 
 
+//Save in ‘D:\Picture\Test’ location.
+
+
+
+}
 
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img1.png)
+T> We can change the image formats in above code by changing its extension as .jpg, .tiff, etc.
 
+### Save(Stream stream, BitmapEncoder imgEncoder)
+
+This helps to export the chart to any stream as in below code example.
+
+{% highlight C# %}
+
+FileStream fs = File.Create(@"c:\temp\MyTest.png");
+
+**ExportDemoChart****.****Save****(****fs****,** **new** **PngBitmapEncoder****());**
+
+{% endhighlight %}
 

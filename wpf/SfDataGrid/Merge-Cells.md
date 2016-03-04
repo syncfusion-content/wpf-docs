@@ -14,7 +14,7 @@ SfDataGrid allows you to merge the range of adjacent cells using [QueryCoveredR
 
 `QueryCoveredRange` event occurs when each cell gets arranged and the custom range will be stored for visible rows and columns in [SfDataGrid.CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CoveredCells.html). This event is not fired for the cells that are not visible and also for the cells that are already in SfDataGrid.CoveredCells. When scrolling the merged range will be added for newly added rows & columns through this event and also removed for the rows & columns which are out of view. 
 
-[GridQueryCoveredRangeEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered this event. [GridQueryCoveredRangeEventArgs.OriginalSender](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) returns the DataGrid fired this event for DetailsView. By [GridQueryConveredRangeEventArgs.Range](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs~Range.html) property, the adjacent cells can be merged.
+[GridQueryCoveredRangeEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered this event. [GridQueryCoveredRangeEventArgs.OriginalSender](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) returns the DataGrid fired this event for DetailsView. By [GridQueryCoveredRangeEventArgs.Range](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs~Range.html) property, the adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,7 +40,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 
 ## Merging cells
 
-You can merge the range of cells by setting [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html) (by defining Left, Right, Top & Bottom) to [GridQueryConveredRangeEventArgs.Range](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs~Range.html) and handling the event.
+You can merge the range of cells by setting [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html) (by defining Left, Right, Top & Bottom) to [GridQueryCoveredRangeEventArgs.Range](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridQueryCoveredRangeEventArgs~Range.html) and handling the event.
  
 ### Merging cells horizontally by fixed range
 

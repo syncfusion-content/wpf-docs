@@ -87,7 +87,7 @@ Second part denotes the format. The key word “c” denotes the string format t
 To know more about the string format values, you can refer the following MSDN link: [http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx).
 
 * Name: Defines name of the GridSummaryColumn that helps to denote the GridSummaryColumn in GridSummaryRow with Title.
-* CustomAggregate: Defines the customaggregate class object when the summary type is set as Custom that calculates the custom summaries.
+* CustomAggregate: Defines the custom aggregate class object when the summary type is set as Custom that calculates the custom summaries.
 
 ### Examples
 
@@ -680,9 +680,9 @@ This example uses the Stock Portfolio collection that has a column ‘Change’ 
 
 For example, you can display the Standard Deviation of the values of the ‘Change’ column, industry-wise using a group summary as the Grid is already grouped by the Industry.
 
-Since the built-in summaries do not support this type of calculation, you can create customsummaries and set custom code to calculate the standard deviation values.
+Since the built-in summaries do not support this type of calculation, you can create custom summaries and set custom code to calculate the standard deviation values.
 
-The following code example illustrates how to set the Customaggregate to calculate custom summary.
+The following code example illustrates how to set the Custom aggregate to calculate custom summary.
 
 
 {% highlight C# %}

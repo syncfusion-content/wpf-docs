@@ -54,7 +54,7 @@ Gets or sets the selection behavior in DataGrid control. Different modes are Sin
 <tr>
 <td>
 NavigationMode</td><td>
-NaviagtionMode</td><td>
+NavigationMode</td><td>
 Gets or sets the navigation behavior between rows or cells in DataGrid control. </td></tr>
 <tr>
 <td>
@@ -169,7 +169,7 @@ private void ClearSelection_Click(object sender, RoutedEventArgs e)
 
 * MoveCurrentCell – Moves the current cell to corresponding row column index. This method works only when NavigationMode is set to Cell.
 
-The following code example explains you how to use MoveCurrentCell (RowColumnIndexrowColumnIndex). To use RowColumnIndex structure, add Syncfusion.UI.Xaml.ScrollAxis reference.
+The following code example explains you how to use MoveCurrentCell (RowColumnIndex rowColumnIndex). To use RowColumnIndex structure, add Syncfusion.UI.Xaml.ScrollAxis reference.
 
 
 {% highlight C# %}
@@ -240,7 +240,7 @@ private void SelectRows_Click(object sender, RoutedEventArgs e)
 
 * SelectCell – You can select a specific cell programmatically by using SelectCell method. This method effects only in Cell selection.
 
-The following code example shows how to use SelectCell(object rowData, GridColumn column) mehtod.
+The following code example shows how to use SelectCell(object rowData, GridColumn column) method.
 
 
 {% highlight C# %}
@@ -290,7 +290,7 @@ private void SelectCells_Click(object sender, RoutedEventArgs e)
 
 * UnSelectCell – You can remove the selection from a specific cell programmatically by using UnSelectCell method. This method effects only in Cell selection.
 
-The following code example shows how to use UnSelectCell(object rowData, GridColumn column) mehtod.
+The following code example shows how to use UnSelectCell(object rowData, GridColumn column) method.
 
 
 {% highlight C# %}
@@ -338,7 +338,7 @@ private void UnSelectCells_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-* GetSelectedCells – Returns the collection of GridCellInfo that contains information about the selected cell. This mehtod effects only in Cell selection.
+* GetSelectedCells – Returns the collection of GridCellInfo that contains information about the selected cell. This method effects only in Cell selection.
 
 The following code example shows how to use GetSelectedCells() method.
 
@@ -565,9 +565,9 @@ Selection related operations are handled in Selection Controllers of SfDataGrid 
 
 
 
-Selectiom Operations
+Selection Operations
 {:.caption}
-The GridSelectionController and GridCellSelectionController have been derived from GridBaseSelectionController that contains abstract methods and properties. You can customize the selection behaviors in two different controllers; GridSelectionConroller and GridCellSelectionController.
+The GridSelectionController and GridCellSelectionController have been derived from GridBaseSelectionController that contains abstract methods and properties. You can customize the selection behaviors in two different controllers; GridSelectionController and GridCellSelectionController.
 
 * GridSelectionController – GridSelectionController is responsible for Row selection. The selection related operations are handled by this controller when SfDataGrid.SelectionUnit is set as Row.
 * GridCellSelectionController – GridCellSelectionController is responsible for Cell selection. The selection related operations are handled by this controller when SfDataGrid.SelectionUnit is set as Cell or Any.
@@ -591,11 +591,11 @@ Gets or sets the current cell manager of DataGrid.> {{ '![](Features_images/Feat
 <tr>
 <td>
 SelectedRows</td><td>
-Gets the collection of GridRowInfo that is selected row information in DataGrid control. SelecteRows are maintained only in Row selection.</td></tr>
+Gets the collection of GridRowInfo that is selected row information in DataGrid control. SelectedRows are maintained only in Row selection.</td></tr>
 <tr>
 <td>
 SelectedCells</td><td>
-Gets the collection of GridSelectedCellsInfo that is selected cells information in DataGrid control. SelecteCells are maintained only in Row selection</td></tr>
+Gets the collection of GridSelectedCellsInfo that is selected cells information in DataGrid control. SelectedCells are maintained only in Row selection</td></tr>
 <tr>
 <td>
 IsSuspended</td><td>
@@ -659,7 +659,7 @@ ClearDetailsViewGridSelections</td><td>
 Clears all the selection in specified nested grid.</td></tr>
 <tr>
 <td>
-AutoScrollerValudChanged</td><td>
+AutoScrollerValueChanged</td><td>
 Invoked when AutoScroller scrolls the rows or columns.</td></tr>
 <tr>
 <td>
@@ -746,11 +746,11 @@ Invoked when unhandled KeyDown event occurs in GridCell. This method is implemen
 <tr>
 <td>
 ProcessOnTapped</td><td>
-Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnTap.</td></tr>
+Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnTap.</td></tr>
 <tr>
 <td>
 ProcessOnDoubleTapped</td><td>
-Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnDoubleTap.</td></tr>
+Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnDoubleTap.</td></tr>
 <tr>
 <td>
 AddSelection</td><td>
@@ -790,7 +790,7 @@ The following code example illustrates to override methods and how to handle ope
 
  Example:
 
-The following code example shows how to select a row based on values in specfic column. This can be achieved by   overriding ProcessPointerReleased method in GridSelectionContrller.
+The following code example shows how to select a row based on values in specific column. This can be achieved by   overriding ProcessPointerReleased method in GridSelectionController.
 
 
 {% highlight C# %}
@@ -895,11 +895,11 @@ Invoked when unhandled KeyDown event occurs in GridCell. This method is implemen
 <tr>
 <td>
 ProcessOnTapped</td><td>
-Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnTap.</td></tr>
+Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnTap.</td></tr>
 <tr>
 <td>
 ProcessOnDoubleTapped</td><td>
-Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnDoubleTap.</td></tr>
+Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnDoubleTap.</td></tr>
 <tr>
 <td>
 AddSelection</td><td>
@@ -1167,7 +1167,7 @@ CurrentCellBeginEditEvent</td><td>
 Triggered when the CurrentCell goes to edit mode.</td></tr>
 <tr>
 <td>
-CurrentCellEndEidtEvent</td><td>
+CurrentCellEndEditEvent</td><td>
 Triggered when the CurrentCell goes to normal mode from edit mode.</td></tr>
 </table>
 
@@ -1197,7 +1197,7 @@ Description</th></tr>
 <tr>
 <td>
 Up/Down, Shift+Up/Down</td><td>
-Currentcell or currentrow moves upward or downward.</td></tr>
+CurrentCell or current row moves upward or downward.</td></tr>
 <tr>
 <td>
 CTRL+Up/Down</td><td>
@@ -1225,7 +1225,7 @@ CurrentCell moves to first cell of first row or last cell of last row.</td></tr>
 <tr>
 <td>
 Tab</td><td>
-Currentcell moves to next cell.</td></tr>
+CurrentCell moves to next cell.</td></tr>
 <tr>
 <td>
 Shift+Tab</td><td>
@@ -1247,7 +1247,7 @@ Only in Multiple selection mode to select or unselect specific row or cell.</td>
 
 N> The listed key navigation behaves same as multiple selection. But current cell moves selection, does not move in single selection. In extended mode, all selection modes are like single mode other than Shift+UP/Down selects multiple records and move towards its direction._
 
-You can stop the navigation by cancelling CurrenCellActivating event. The following code example describes that.
+You can stop the navigation by canceling CurrentCellActivating event. The following code example describes that.
 
 
 {% highlight C# %}
@@ -1346,10 +1346,10 @@ This scrolls the Grid to selected index of record.
 
 ### How to change the Foreground of SelectedRow
 
-This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid has an Element named VirtualizingCellsControl. You can edit the style of this element and write style for Foreground. The following steps explain you how to change the Foreground of SelectedRow.
+This topic explains you how to change the Foreground of SelectedRow. SfDataGrid has an Element named VirtualizingCellsControl. You can edit the style of this element and write style for Foreground. The following steps explain you how to change the Foreground of SelectedRow.
 
 * Open your WPF application in Blend for Visual Studio 2013 that is used in SfDataGrid control.
-* Right-click on SfDataGrid. When you don’t find this control in Objects and Timeline__panel, you can GoToAssets and click on SfDatarid, (type in search box that brings to view).
+* Right-click on SfDataGrid. When you don’t find this control in Objects and Timeline__panel, you can GoToAssets and click on SfDataGrid, (type in search box that brings to view).
 * You can find Edit Additional Templates.
 * Click on that, it renders you Edit Row Style, Select it.
 * Save it with some name.

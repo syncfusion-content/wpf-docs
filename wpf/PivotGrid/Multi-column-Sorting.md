@@ -9,7 +9,7 @@ documentation: ug
 
 # Multi-Column Sorting
 
-Multi-Column sorting behavior has been created which allows you to sort the value columns by one field after another field. For exapmle, If a customer have three different fields being rendered in the PivotGrid, then it could be possible to sort like this:
+Multi-Column sorting behavior has been created which allows you to sort the value columns by one field after another field. For example, If a customer have three different fields being rendered in the PivotGrid, then it could be possible to sort like this:
 **OrderBy(field1).ThenBy(field2).ThenBy(field3).**. 
 
 It can be used to sort the PivotGrid values based on the other field values in the grid if the corresponding value field contains two or more similar values. It can also be used to sort the ‘N’ number of columns in the pivot grid. A separate index number has been used at the top of each column to maintain the order of the sorted columns while doing the multi-column sorting.

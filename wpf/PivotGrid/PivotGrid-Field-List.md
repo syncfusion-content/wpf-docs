@@ -9,7 +9,7 @@ documentation: ug
 
 # PivotGrid Field List
 
-With the current implementation of Grouping bar, we cannot able to add the deleted items in PivotGrid. The delete operation can be easily performed in the GroupingBar by using the AllowRemoving feature, but there is no possiblity to add again the deleted items. In order to achive this, we maintain a separate window called **PivotTable Field List** window, which holds the fields which are not present in the PivotGrid but available in the Item Source. We can bound a collection of PivotItems as **PivotFields** which gets included in the Field List window but not present in the PivotGrid. 
+With the current implementation of Grouping bar, we cannot able to add the deleted items in PivotGrid. The delete operation can be easily performed in the GroupingBar by using the AllowRemoving feature, but there is no possibility to add again the deleted items. In order to achieve this, we maintain a separate window called **PivotTable Field List** window, which holds the fields which are not present in the PivotGrid but available in the Item Source. We can bound a collection of PivotItems as **PivotFields** which gets included in the Field List window but not present in the PivotGrid. 
 
 Property 
 

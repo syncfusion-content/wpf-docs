@@ -168,7 +168,7 @@ Sorting Row</td></tr>
 
 ## OLAP Chart Tool Bar
 
-By using the menus in the OLAP ChartToolBar, the user can customise the appearance and style of the chart. And also the user can change the type of the chart.
+By using the menus in the OLAP ChartToolBar, the user can customize the appearance and style of the chart. And also the user can change the type of the chart.
 
 ![](Tool-Bar-support_images/Tool-Bar-support_img17.png)
 
@@ -206,8 +206,8 @@ Show/Hide the legend of the chart</td></tr>
 
 
 </td><td>
-Chart Colour Palette</td><td>
-Displays the list of colour palettes to change the current colour of the chart</td></tr>
+Chart Color Palette</td><td>
+Displays the list of Color palettes to change the current Color of the chart</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img21.png)' | markdownify }}
@@ -261,7 +261,7 @@ Export the current visual of the chart to PDF</td></tr>
 
 ## OLAP Grid Tool Bar
 
-By using the menus in the OLAP Grid Tool Bar, the user can customise the appearance and style of the Grid.
+By using the menus in the OLAP Grid Tool Bar, the user can customize the appearance and style of the Grid.
 
 ![](Tool-Bar-support_images/Tool-Bar-support_img27.png)
 

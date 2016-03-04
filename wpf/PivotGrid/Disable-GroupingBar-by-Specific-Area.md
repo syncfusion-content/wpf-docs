@@ -17,13 +17,13 @@ PivotGrid supports to define the visibility of the Grouping Bar to some specific
 Properties 
 
 * **EnableRowHeader** - Gets or sets a value indicating whether to enable row header alone in Grouping Bar.
-* **EnableColumnHeader** - Gets or sets a value indicating whether enable column header along with row header alone in Groupin Bar.
+* **EnableColumnHeader** - Gets or sets a value indicating whether enable column header along with row header alone in Grouping Bar.
 
 ##Defining the Properties in PivotGrid
 
 **EnableRowHeader**
 
-EnableRowHeader allows to customize the Grouping Bar by making visiblity only in **Row Header Area** but ignoring other areas. It can be defined both in *XAML* and *Code-Behind*.
+EnableRowHeader allows to customize the Grouping Bar by making visibility only in **Row Header Area** but ignoring other areas. It can be defined both in *XAML* and *Code-Behind*.
 
 {% highlight xaml %}
 
@@ -94,7 +94,7 @@ public partial class MainWindow: Window {
 
 **EnableColumnHeader**
 
-EnableColumnHeader allows to customize the Grouping Bar by making visiblity only in **Row and Column Header Areas** but ignoring other areas. It can be defined both in *XAML* and *Code-Behind*. 
+EnableColumnHeader allows to customize the Grouping Bar by making visibility only in **Row and Column Header Areas** but ignoring other areas. It can be defined both in *XAML* and *Code-Behind*. 
 
 If through **XAML**, please refer the below code snippet.
 

@@ -33,7 +33,7 @@ Type</th></tr>
 <tr>
 <td>
 Background</td><td>
-Gets or sets the background colour of a grid cell.</td><td>
+Gets or sets the background color of a grid cell.</td><td>
 Brush</td></tr>
 <tr>
 <td>
@@ -53,7 +53,7 @@ FontWeight</td></tr>
 <tr>
 <td>
 Foreground</td><td>
-Gets or sets the foreground colour of a grid cell.</td><td>
+Gets or sets the foreground color of a grid cell.</td><td>
 Brush</td></tr>
 </table>
 
@@ -105,9 +105,9 @@ The Expander’s in the Grid can also be customized with any UIElement and it sh
 
 ### Defining Cell Templates in PivotGrid
 
-After defining the PivotGrid control, define your own style for Row, Column, Value, Summary cells and assign that style to corresponding propeprty in PivotGrid control. 
+After defining the PivotGrid control, define your own style for Row, Column, Value, Summary cells and assign that style to corresponding property in PivotGrid control. 
 
-Here, we defined our own style for Rowheader Cells by overridding expander icon and cell Textblock. After defining the style we applied that style to **RowHeaderCellStyle** of PivotGrid control.
+Here, we defined our own style for Row header Cells by overriding expander icon and cell TextBlock. After defining the style we applied that style to **RowHeaderCellStyle** of PivotGrid control.
 
 Please refer the below code snippet.
 

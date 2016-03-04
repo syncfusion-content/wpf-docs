@@ -22,7 +22,7 @@ Properties
 
 ###Pivot value chooser with possible calculation values
 
-**PossiblePivotCalculations** is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the Itemsource of PivotGrid control.
+**PossiblePivotCalculations** is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the Item source of PivotGrid control.
 
 After defining PivotGrid control in RowPivotsOnly mode, raise the Loaded event of PivotGrid. Inside the PivotGrid_Loaded() event, set the property **ShowPivotValueChooser** and define a observable collection of PivotComputationInfo to **PossiblePivotCalculations**.
 

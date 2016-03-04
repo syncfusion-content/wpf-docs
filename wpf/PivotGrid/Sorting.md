@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting
 
-Sorting enables you to quickly visualize and understand your data better, organize, find the data that you want and ultimately make more effective decisions. By default, PivotGrid holds built-in Comparers for all datatypes so that it will populate the data in ascending order according to its datatype. You can also define your own CustomComparer in order to view the data in your respective Sorting order.
+Sorting enables you to quickly visualize and understand your data better, organize, find the data that you want and ultimately make more effective decisions. By default, PivotGrid holds built-in Comparers for all data types so that it will populate the data in ascending order according to its data type. You can also define your own CustomComparer in order to view the data in your respective Sorting order.
 
 ## Sorting using Custom Comparer 
 Sorting the data with your own CustomComparer can be achieved by defining your **CustomComparer** and initializing its instance to the **Comparer** of corresponding **PivotItem**

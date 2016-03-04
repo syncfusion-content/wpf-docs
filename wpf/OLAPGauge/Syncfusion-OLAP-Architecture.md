@@ -38,7 +38,7 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 * **ShowGaugeHeaders** - Specifies whether or not to display the header text.
 * **ShowGaugeFactors** - Specifies whether or not to display the factor or value text inside the gauge control.
 * **ShowGaugeLabels** - Specifies whether or not to display text inside the gauge control.
-* **OlapDataManager** - Sets the cube mode.It contains the connection proprerty, current report, cube name , cube schema and pivotengine for the rendering of gauge.
+* **OlapDataManager** - Sets the cube mode.It contains the connection property, current report, cube name , cube schema and PivotEngine for the rendering of gauge.
 
 ### Methods
 

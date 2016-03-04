@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-PivotGrid that supports the context menu behaviour for Row pivots only mode. The context menu that helps to filter,sort and to hide total values etc. This behaviour is same as in the PivotGrid in normal mode. It provides the following options.
+PivotGrid that supports the context menu behavior for Row pivots only mode. The context menu that helps to filter,sort and to hide total values etc. This behavior is same as in the PivotGrid in normal mode. It provides the following options.
 
 * **Allow Filtering** - Enable or disable filtering in the selected pivot computation column.
 * **Allow Sorting**  - Enable or disable sorting in the selected pivot computation column.

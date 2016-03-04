@@ -9,7 +9,7 @@ documentation: ug
 
 # Summary Types
 
-PivotGrid summarizes the data for various datatypes by using the **SummaryType** enumerator. SummaryType should be defined while defining the PivotCalculation using **PivotComputationInfo** class to specify the type of the summary. It holds the following summary types.
+PivotGrid summarizes the data for various data types by using the **SummaryType** enumerator. SummaryType should be defined while defining the PivotCalculation using **PivotComputationInfo** class to specify the type of the summary. It holds the following summary types.
 
 * **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for corresponding PivotItem
 * **DoubleAverage** - Computes average of double or integer from PivotValues for corresponding PivotItem.
@@ -111,7 +111,7 @@ Property
 
 ### Defining DisplayIfDiscreteValuesEqual SummaryType with PadString in PivotGrid 
 
-Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the **PadString** while defining PviotCalculations in PivotGrid control.
+Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the **PadString** while defining PivotCalculations in PivotGrid control.
 
 If setting these properties through **XAML**, please refer the below code snippet.
 
