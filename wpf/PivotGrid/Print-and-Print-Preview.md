@@ -9,53 +9,13 @@ documentation: ug
 
 # Print and Print Preview
 
-Essential PivotGrid for WPF provides in-built support for printing and print preview. This feature provides a print dialog that allows you to preview the output and make any modifications if required before printing.
-
-
-Properties 
-
-* **PrintHeader** - Add/Remove the Header in the Print Preview dialog
-* **PrintFooter** - Add/Remove the Footer in the Print Preview dialog
-
-
-Methods Table
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th></tr>
-<tr>
-<td>
-ShowPrintPreview</td><td>
-Shows the Print Preview window with empty template and default title</td><td>
-(Window Win)</td><td>
-void</td></tr>
-<tr>
-<td>
-ShowPrintPreview</td><td>
-Shows the Print Preview window with templates for header, footer and default title.</td><td>
-(DataTemplate headerTemplate, DataTemplate footerTemplate, Window win)</td><td>
-void</td></tr>
-<tr>
-<td>
-ShowPrintPreview</td><td>
-Shows the Print Preview window with templates for header, footer and user defined title</td><td>
-(DataTemplate headerTemplate, DataTemplate footerTemplate, string title, Window win)</td><td>
-void</td></tr>
-</table>
-
-## Using the Print and Print Preview for PivotGrid
-
-It provides printing support for PivotGrid control along with GroupingBar. You can use the method **ShowPrintPreview** to preview the PivotGrid control before printing using the PrintPreview Window. The properties **PrintHeader** and **PrintFooter** helps to add or remove the header and footer information while printing.
+We provide printing support for PivotGrid control along with GroupingBar. You can use the method `ShowPrintPreview` to preview the PivotGrid control before printing. The properties `PrintHeader` and `PrintFooter` helps to add or remove the header and footer information while printing.
 
 **Defining Header and Footer in XAML**
 
-After defining PivotGrid control, define the DataTemplate for Header and Footer and set the **PrintHeader**, **PrintFooter** properties of PivotGrid control.
+After defining the PivotGrid control, define the DataTemplate for header and footer and set the **PrintHeader** and **PrintFooter** properties of PivotGrid control.
 
-Please refer the below code snippet to know about the Header, Footer Template and setting its properties in PivotGrid control. 
+Please refer the below code sample to know about the header template, footer template and setting its properties in PivotGrid control. 
 
 {% highlight xaml %}
 
@@ -97,9 +57,9 @@ Please refer the below code snippet to know about the Header, Footer Template an
 
 {% endhighlight %}
 
-**Invoking PrintPreview Window in PivotGrid**
+**Invoking Print Preview Window in PivotGrid**
 
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, invoke the method **ShowPrintPreview** to enable the printing behavior.
+After defining the PivotGrid control, raise the loaded event of PivotGrid. Inside the `pivotGrid_Loaded` event, invoke the method `ShowPrintPreview` to enable the printing behavior.
 
 {% highlight C# %}
 
@@ -110,10 +70,10 @@ public partial class MainWindow: Window {
     }
 
     void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
-        //	Shows the Print Preview window with templates for header, footer and with user defined title                               
+        //	Shows the Print Preview window with templates for header, footer and with user defined title.                               
         this.pivotGrid.ShowPrintPreview((DataTemplate) this.Resources["HeaderTemplate"], (DataTemplate) this.Resources["FooterTemplate"], "Printing PivotGrid", this);
 
-        //	Shows the Print Preview window with empty template and default title
+        //	Shows the Print Preview window with empty template and default title.
         this.pivotGrid.ShowPrintPreview(this);
 
         //	Shows the Print Preview window with templates for header, footer and with default title.               
@@ -125,7 +85,7 @@ public partial class MainWindow: Window {
 
 ![](Print-Images/Print preview.png)
 
-## Various Options in PrintPreview Window of PivotGrid
+## Print Preview Options
 
 The Print Preview window provides the following options:  
 
@@ -133,18 +93,16 @@ The Print Preview window provides the following options:
    * Page Settings
    * Print
    
-You can use these options to get a magnified view of the PivotGrid or to change the page setup or to print the PivotGrid control respectively.
-
 **Zooming**
 
-Click on the **Zoom** drop-down button in the print preview window and select the desired percentage to magnify the print preview in PivotGrid. You can choose from various preset zoom level options such as 50%, 100%, 200% or 400%.
+Click on the **Zoom** drop-down button in the Print Preview window and select the desired percentage to magnify the PivotGrid view. You can choose from various preset zoom level options such as 50%, 100%, 200% or 400%.
 
 **Page Settings**
 
-Click the **PageSettings** button in the print preview to change the pages while printing.
+Click the **PageSettings** button in the Print Preview window to change the pages while printing.
 
 **Print** 
 
-Click the **Print** button in the print preview window to print the PivotGrid content.
+Click the **Print** button in the Print Preview window to print the PivotGrid content.
 
 ![](Print-Images/Print and Zooming options.png)
