@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional Formatting
 
-Conditional formatting is the process of applying customized styles to any object based on specified conditions. Conditional Formatting for PivotGrid WPF allows you to format Grid cells based on specified conditions. This can be achieved by defining **PivotGridDataConditionalFormat** which allows you to specify the criteria for filtering the cells and the style to be applied to the filtered cells. After the specifications are defined, the styles are applied only to the cells that fulfil the specified conditions. 
+Conditional formatting is the process of applying customized styles to any object based on specified conditions. Conditional Formatting for PivotGrid WPF allows you to format Grid cells based on specified conditions. This can be achieved by defining **PivotGridDataConditionalFormat** which allows you to specify the criteria for filtering the cells and the style to be applied to the filtered cells. After the specifications are defined, the styles are applied only to the cells that fulfill the specified conditions. 
 
 ## Defining Conditional formats for PivotGrid
 

@@ -80,7 +80,7 @@ The OLAP Silverlight Base Wrapper is a class library, which contains several nam
 
 
 
-Dataflow in Silverlight
+Data flow in Silverlight
 {:.caption}
 
 

@@ -18,7 +18,7 @@ PivotGrid provides certain sorting events to keep track of the sorted value fiel
 
 We could make use of this mentioned events by invoking them whenever we want as per our requirement. Please refer the below guidelines and code snippets.
 
-Create a new PivotGrid, bind the Itemsource and define the PivotItems and PivotComputations. Invoke the **SortBegin** and **SortCompleted** events and then we could save the indexes to a separate list  as illustrated below.
+Create a new PivotGrid, bind the ItemSource and define the PivotItems and PivotComputations. Invoke the **SortBegin** and **SortCompleted** events and then we could save the indexes to a separate list  as illustrated below.
 
 {% highlight C# %}
 

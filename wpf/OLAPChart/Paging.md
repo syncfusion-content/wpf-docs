@@ -17,7 +17,7 @@ When you process large CellSet, it is split into several number of segments and 
 
 ## Adding OlapPager in Application
 
-1. Include the following Syncfusionassembly from the installed location.
+1. Include the following Syncfusion assembly from the installed location.
    1. Syncfusion.OlapShared.Wpf
 
    Assembly Location: &lt;system drive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\

@@ -7,7 +7,7 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Hidding Fields in PivotSchemaDesigner 
+# Hiding Fields in PivotSchemaDesigner 
 
 It is possible to hide the unnecessary fields from the PivotTable Field List using `ShowDisplayFieldsOnly` property.
 

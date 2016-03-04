@@ -84,7 +84,7 @@ The user can perform these exports in two ways:
 1. Through OlapGrid Tool Bar menu
 1. Through APIs
 
-The OlapGridtoolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the 
+The OlapGrid Toolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the 
 grid to the corresponding format.
 
 ![](Export_images/Export_img6.png)

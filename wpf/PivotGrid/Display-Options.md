@@ -9,13 +9,13 @@ documentation: ug
 
 # Display Options
 
-PivotGrid control offers various display options such as **Calculations, Summary, Grand Totals, None, All** for the PivotComputaionInfo to display calculation values in certain areas of PivotGrid by using the **DisplayOption** enumerator.
+PivotGrid control offers various display options such as **Calculations, Summary, Grand Totals, None, All** for the PivotComputationInfo to display calculation values in certain areas of PivotGrid by using the **DisplayOption** enumerator.
 
 Property 
 																	 										 
 * **DisplayOption** - Gets or sets the calculation values to be displayed in PivotGrid.
 
-##Defining the Display Option for PivotComputaionInfo in PivotGrid
+##Defining the Display Option for PivotComputationInfo in PivotGrid
 
 **DisplayOption** is the property can be set for the corresponding PivotCalculation item through **PivotComputationInfo** class. It can be set either through *XAML* or through *Code-Behind*.
 

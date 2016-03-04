@@ -11,11 +11,11 @@ documentation: ug
 
 ##Binding PivotGrid to List
 
-PivotGrid supports binding a list based collection as its Itemsource. Please refer this topic *Binding a data source to PivotGridControl* in order to know about binding a list based collection to the PivotGrid in XAML and Code-Behind.
+PivotGrid supports binding a list based collection as its ItemSource. Please refer this topic *Binding a data source to PivotGridControl* in order to know about binding a list based collection to the PivotGrid in XAML and Code-Behind.
 
 ##Binding PivotGrid to DataTable
 
-PivotGrid supports binding a Dataset from the DataTable as its Itemsource.
+PivotGrid supports binding a Dataset from the DataTable as its ItemSource.
 
 Initially, we need to create a connection to our data base file and store the required data to a Dataset through the SQL queries. Please refer the below code snippet.
 
@@ -38,7 +38,7 @@ public static DataView GetOrderDetails() {
 
 {% endhighlight %}
 
-Then, bind the dataset as Itemsource to the PivotGrid by invoking the appropriate method. It can be done through *XAML* or *Code-behind*. 
+Then, bind the dataset as ItemSource to the PivotGrid by invoking the appropriate method. It can be done through *XAML* or *Code-behind*. 
 
 If through **XAML**, please refer the below code snippet.
 

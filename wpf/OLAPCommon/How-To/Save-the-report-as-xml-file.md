@@ -9,7 +9,7 @@ documentation: ug
 
 # Save the report as xml file
 
-The user can save the current report set of OlapDataManager as an xml file for the future needsby using the SaveReport method.
+The user can save the current report set of OlapDataManager as an xml file for the future needs by using the SaveReport method.
 
 The following code snippet will illustrate the saving of the current report set as an xml file:
 

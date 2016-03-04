@@ -9,7 +9,7 @@ documentation: ug
 
 # Retrieve the MDX Query of a CurrentReport
 
-The MDX query of a current report is used to display data in Grid/Chart control and it can be retrieved by calling the GetMdxQuery() method.
+The MDX query of a current report is used to display data in Grid/Chart control and it can be retrieved by calling the GetMDXQuery() method.
 
 The following code explains how to retrieve MDX Query from the OlapDataManager:
 

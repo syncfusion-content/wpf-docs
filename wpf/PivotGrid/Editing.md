@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing
 
-PivotGrid provides support to edit the value and total cells and it can be achieved by using **EnableValueEditing** property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted according to the editing. This can be acheived using the **PivotEditingManager** of PivotGrid control.
+PivotGrid provides support to edit the value and total cells and it can be achieved by using **EnableValueEditing** property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted according to the editing. This can be achieved using the **PivotEditingManager** of PivotGrid control.
 
 
 Properties 

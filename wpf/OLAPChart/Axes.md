@@ -135,7 +135,7 @@ To display the currency symbol in the secondary axis, you need to set the second
 
 ## How to customize the OlapAxis label font settings?
 
-The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by speicifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
+The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by specifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
 
 {% tabs %}
   {% highlight xaml %}

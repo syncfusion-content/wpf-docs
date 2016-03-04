@@ -75,7 +75,7 @@ olapDataManager.ExecuteCellSet()
 {% endhighlight  %}
 {% endtabs %}
 
-This will accept the MDX query as a string and assign it to the OlapDataManager’d mdxQuery property and invoke the data process.
+This will accept the MDX query as a string and assign it to the OlapDataManager’d MdxQuery property and invoke the data process.
 
 {% tabs %}
 {% highlight c# %}

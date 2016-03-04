@@ -53,7 +53,7 @@ It provides printing support for PivotGrid control along with GroupingBar. You c
 
 **Defining Header and Footer in XAML**
 
-After defining PivotGrid control, define the DataTemplate for Header and Footer and set the **PrintHeader**, **PrintFooter** proerties of PivotGrid control.
+After defining PivotGrid control, define the DataTemplate for Header and Footer and set the **PrintHeader**, **PrintFooter** properties of PivotGrid control.
 
 Please refer the below code snippet to know about the Header, Footer Template and setting its properties in PivotGrid control. 
 

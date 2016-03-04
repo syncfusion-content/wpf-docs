@@ -132,7 +132,7 @@ Only after adding the above assemblies, PivotGrid control will be automatically 
 
 Right-click on the project in the solution explorer and select **Add ->New item**.In the **Add New Item** window, choose option **Class** and provide the name of the class as *ProductSales.cs* and click **OK**.
 
-The Item source for the PivotGrid control will be initialized in this file. Please refer the below code snippet.
+The ItemSource for the PivotGrid control will be initialized in this file. Please refer the below code snippet.
 
 {% highlight C# %}
 
@@ -209,7 +209,7 @@ public class ProductSales {
     
 {% endhighlight %}
 
-Above mentioned GetSalesData method is used to get the collection that needs to be populated in the PivotGrid control.Now we need to bind the collection to the PivotGrid control as its Item Source. It can be done through *XAML* or *Code-behind*. 
+Above mentioned GetSalesData method is used to get the collection that needs to be populated in the PivotGrid control.Now we need to bind the collection to the PivotGrid control as its ItemSource. It can be done through *XAML* or *Code-behind*. 
 
 If you need to initialize the ItemSource through **XAML**, ObjectDataProvider is used. Please refer the following code.
 
