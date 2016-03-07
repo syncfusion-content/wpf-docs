@@ -123,7 +123,7 @@ Reference links </th></tr>
 <tr>
 <td>
 SourceChanged</td><td>
- When the Source property value is changed this event will be triggered.It cannot be cancelled.</td><td>
+ When the Source property value is changed this event will be triggered.It cannot be canceled.</td><td>
 DependencyObject,DependencyPropertyChangedEventArgs</td><td>
 DependencyPropertyChangedCallBack </td><td>
 </td></tr>

@@ -224,7 +224,7 @@ This will populate the Tree Navigator as follows.
 
 
 
-N> HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace
+N> HierarchicalDataTemplate available in Syncfusion.SfShared.WPF assembly under the Syncfusion.Windows.Primitives namespace
 
 
 

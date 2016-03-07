@@ -90,7 +90,7 @@ Grid1.Children.Add(updown);
 
 {% endtabs %}
 
-The following screenshot shows how the borderbrush for the `UpDown` control customized when it get focused.
+The following screenshot shows how the BorderBrush for the `UpDown` control customized when it get focused.
 
 ![](StylesandTemplates-images/StylesandTemplates-img2.jpeg)
 

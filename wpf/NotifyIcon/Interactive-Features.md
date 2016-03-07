@@ -13,7 +13,7 @@ This section illustrates the following interactive features of NotifyIcon contro
 
 ## BalloonTip
 
-This section illustrates the following parts of a BallonTip.
+This section illustrates the following parts of a BalloonTip.
 
 ### Header of BalloonTip
 

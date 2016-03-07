@@ -15,7 +15,7 @@ Minimum allowed value for the IntegerTextBox. If the new MinValue property value
 
 ## MaxValue
 
-Maximum allowed value for the IntegerTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the Maxvalue.
+Maximum allowed value for the IntegerTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the MaxValue.
 
 ## MinValidation
 

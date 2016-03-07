@@ -13,7 +13,7 @@ Ticks are placed along the round track in a uniform manner. The position of tick
 
 ### Tick Frequency
 
-The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximumn values.
+The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values.
 
 
 {% highlight html %}

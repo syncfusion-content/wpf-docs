@@ -148,14 +148,14 @@ Reference links </th></tr>
 <tr>
 <td>
 SelectionChanged</td><td>
-When the value of SelectedItem property is changed this event will be triggered.It cannot be cancelled.</td><td>
+When the value of SelectedItem property is changed this event will be triggered.It cannot be canceled.</td><td>
 Object,SelectionChangedEventArgs</td><td>
 SelectionChangedEventHandler </td><td>
 </td></tr>
 <tr>
 <td>
 TextChanged</td><td>
-When the value of the Text property is changed this event will be triggered.It cannot be cancelled.</td><td>
+When the value of the Text property is changed this event will be triggered.It cannot be canceled.</td><td>
 DependencyObject,DependencyPropertyChangedEventArgs</td><td>
 DependencyPropertyChangedCallBack </td><td>
 </td></tr>

@@ -76,7 +76,7 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 
 
 
-## Commandline installation
+## Command Line installation
 
 
 Follow the given steps to install through Command Line in Silent mode.
@@ -102,7 +102,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## Copy Local
 
-Copying assemblies in local folder is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its `Copy Local` property of the reference to `True`, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders and this deployment consists of copying the exe, dlls, xmls files to the client machines that are similar to manual copy.
+Copying assemblies in local folder is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its `Copy Local` property of the reference to `True`, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders and this deployment consists of copying the exe, dll's, xml's files to the client machines that are similar to manual copy.
 
 ![](Deployment_images/Deployment_img1.jpeg)
 
@@ -111,7 +111,7 @@ Copying assemblies in local folder is supported by the Syncfusion assembly refer
 
 Through Syncfusion installer, Syncfusion assemblies are installed in the GAC of the the developer machines. Also Syncfusion Assembly Manager helps to Add or Remove the Syncfusion assemblies to or from GAC.
 
-## Clickonce Deployment
+## ClickOnce Deployment
 
 While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx#) the deployment for publishing an application with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 

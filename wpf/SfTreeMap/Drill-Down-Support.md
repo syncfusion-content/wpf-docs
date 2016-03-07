@@ -13,7 +13,7 @@ TreeMap enables drill down to expose the hierarchy by clicking on a treemap node
 
 ## Enabling Drill Down
 
-Treemap items can be drilled down by enabling the property EnableDrillDown to ‘_true’_. The hierarchy of treemap levels can be shown by clicking on treemap items. The previous level can be drilled up by clicking on drill down header. DrilldDown header can be customized with the help of DrillDownHeaderTemplate property.
+Treemap items can be drilled down by enabling the property EnableDrillDown to ‘_true’_. The hierarchy of treemap levels can be shown by clicking on treemap items. The previous level can be drilled up by clicking on drill down header. DrillDown header can be customized with the help of DrillDownHeaderTemplate property.
 
 Drill Down Properties
 

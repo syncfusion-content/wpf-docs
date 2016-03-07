@@ -194,9 +194,9 @@ DockingManager.SetState(content1, DockState.AutoHidden)
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img5.jpeg)
 
-#### Making Window AutoHide programatically
+#### Making Window AutoHide programmatically
 
-To autohide the window programmatically call `ExecuteAutoHide` method of DockingManager.
+To auto hide the window programmatically call `ExecuteAutoHide` method of DockingManager.
 
 {% tabs %}
 
@@ -271,7 +271,7 @@ DockingManager.SetState(Content1, DockState.Hidden)
 
 {% endtabs %}
 
-To hide the window programatically, call the `ExecuteClose` method with argument which refer the window need to be close.
+To hide the window programmatically, call the `ExecuteClose` method with argument which refer the window need to be close.
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 ## Removing Window Programmatically
 
-The windows for the Dockingmanager can be added using the Children collection. To remove the windows from the children collection, pass the window element that need to be remove using `Remove()` method of children property in DockingManager.
+The windows for the DockingManager can be added using the Children collection. To remove the windows from the children collection, pass the window element that need to be remove using `Remove()` method of children property in DockingManager.
 
 {% tabs %}
 
@@ -394,9 +394,9 @@ The float window allows to dock another float window inside it by default. This 
 {% endtabs %}
 ## Restricting Docking by Drag Providers
 
-DockingManager allows to dock the children in different sides using the DragProviders. To restrict dockability of the dock children to any particular side, set the property `Dockability` with the required values.
+DockingManager allows to dock the children in different sides using the DragProviders. To restrict dock ability of the dock children to any particular side, set the property `DockAbility` with the required values.
 
-* Setting Dockability as Horizontal – Restrict the children to dock only on Horizontal side by providing the Horizontal Drag providers.
+* Setting DockAbility as Horizontal – Restrict the children to dock only on Horizontal side by providing the Horizontal Drag providers.
 
 {% tabs %}
 
@@ -420,7 +420,7 @@ DockingManager allows to dock the children in different sides using the DragProv
 
 
 
-* Setting Dockability as Vertical  – Restrict the children to dock only on Vertical side by providing the Vertical Drag providers
+* Setting DockAbility as Vertical  – Restrict the children to dock only on Vertical side by providing the Vertical Drag providers
 
 
 {% tabs %}
@@ -446,7 +446,7 @@ DockingManager allows to dock the children in different sides using the DragProv
 
 ## Customizing a window
 
-A Docking window can be customized using the property HeaderBackground, SelectedHeaderBackground, HeaderMouseHoverbackground with the desired brush values respectively.
+A Docking window can be customized using the property HeaderBackground, SelectedHeaderBackground, HeaderMouseHoverBackground with the desired brush values respectively.
 
 
 {% tabs %}
@@ -616,7 +616,7 @@ To restrict resizing width for the Dock windows set the property `CanResizeWidth
 
 ### Height resizing restriction
 
-To restrict resizing the height for the float and dock window respectively, set the property `CanResizeHeightInFloatstate` and `CanResizeHeightInDockedState` as False.
+To restrict resizing the height for the float and dock window respectively, set the property `CanResizeHeightInFloatState` and `CanResizeHeightInDockedState` as False.
 
 {% tabs %}
 
@@ -680,7 +680,7 @@ DockingManager allows to set the desired width and height for the dock windows. 
 
 ### Desire height and width
 
-The desired height and width can be set for the Dock windows through the property `DesiredwidthInDockedMode` and `DesiredHeightInDockedMode`  with the desired values.
+The desired height and width can be set for the Dock windows through the property `DesiredWidthInDockedMode` and `DesiredHeightInDockedMode`  with the desired values.
 
 {% tabs %}
 
@@ -797,7 +797,7 @@ To arrange the dock windows to a whole available space in the DockingManager, se
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img20.jpeg)
 
 
-And when DockFill functionality is enabled, DockingManager changes the Dockwindow to AutoHidden state, if any Document state window is present .
+And when DockFill functionality is enabled, DockingManager changes the DockWindow to AutoHidden state, if any Document state window is present .
 
 {% tabs %}
 
@@ -820,7 +820,7 @@ And when DockFill functionality is enabled, DockingManager changes the Dockwindo
 
 ### Restrict DockWindow to AutoHide while DockFill
 
-To restrict the behavior of changing the Dockwindow to AutoHide when DockFill is True, set the property `DockFillDocumentMode` as Normal.
+To restrict the behavior of changing the DockWindow to AutoHide when DockFill is True, set the property `DockFillDocumentMode` as Normal.
 
 {% tabs %}
 
@@ -876,7 +876,7 @@ DockingManager allows to add  CustomContextMenuItems for Dock and Float windows 
 
 ### Adding CustomContextMenuItems to Document window
 
-The custom context menu items can be added in addition to default contextmenu items for the document window through an attached property `DocumentTabItemContextMenuItems` 
+The custom context menu items can be added in addition to default ContextMenu items for the document window through an attached property `DocumentTabItemContextMenuItems` 
 
 {% tabs %}
 
@@ -908,7 +908,7 @@ The custom context menu items can be added in addition to default contextmenu it
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img24.jpeg)
 
 
-### Customizing ContextmenuItems Visibility
+### Customizing ContextMenuItems Visibility
 
 The default context menu is visible on right-clicking the different state child windows and its visibility can be customized.  
 
@@ -917,7 +917,7 @@ The default context menu items as shown in the following screenshot:
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img25.jpeg)
 
 
-To collapse the default context menu, set the property `CollapseDefaultContextmenu` as True.
+To collapse the default context menu, set the property `CollapseDefaultContextMenu` as True.
 
 {% tabs %}
 

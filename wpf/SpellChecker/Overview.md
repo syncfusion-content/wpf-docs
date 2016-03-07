@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Spell Checking engine allows you to find misspelled words in any control’s text values. Using SpellCheckDialog, we can perform spell checking on any input control and it will also provide sugggestions for the misspelled words.
+Spell Checking engine allows you to find misspelled words in any control’s text values. Using SpellCheckDialog, we can perform spell checking on any input control and it will also provide suggestions for the misspelled words.
 
 ### Use Case Scenarios
 
@@ -21,6 +21,6 @@ Spell Checking engine contains in-built dialog for checking spellings.
 
 ![](Overview_images/Overview_img1.png)
 
-* The Input Text is the text given as input to the Spell Checker to checkthe spellings. The word which is spell-checked will be highlighted in red color.
+* The Input Text is the text given as input to the Spell Checker to check the spellings. The word which is spell-checked will be highlighted in red color.
 
 * The Suggestions List is the list box which will show the suggestions for the currently spell -checked word.

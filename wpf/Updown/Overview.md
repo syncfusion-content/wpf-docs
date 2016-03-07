@@ -25,5 +25,5 @@ The `Updown` control displays numeric values. The value can be select by on scro
 * Text alignment.
 * Keyboard and Mouse support to change the value.
 * Support for several built-in skins
-* Complete bendability support for customizing appearance.
+* Complete blendability support for customizing appearance.
 

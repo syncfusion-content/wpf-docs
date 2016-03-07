@@ -43,7 +43,7 @@ Enum</td></tr>
 
 ## Adding Expand Nested Properties in Property Grid to an Application 
 
-In the following code sample the PropertyVisiblityMode is set as NestedMode in both XAML and C#.
+In the following code sample the PropertyVisibilityMode is set as NestedMode in both XAML and C#.
 
 {% tabs %}
 

@@ -82,7 +82,7 @@ Reference links </th></tr>
 CustomSource</td><td>
 Gets or sets the CustomSource of the AutoComplete.</td><td>
 DependencyProperty</td><td>
-Sytem.Collections.IEnumerable</td><td>
+System.Collections.IEnumerable</td><td>
 </td></tr>
 </table>
 
@@ -101,14 +101,14 @@ Reference links </th></tr>
 <tr>
 <td>
 SelectedValuePathChanged</td><td>
- When the SelectedValuePath property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+ When the SelectedValuePath property value is changed, this event will be triggered.It cannot be canceled.</td><td>
 DependencyObject,DependencyPropertyChangedEventArgs</td><td>
 DependencyPropertyChangedCallBack </td><td>
 </td></tr>
 <tr>
 <td>
 CustomSourceChanged</td><td>
- When the CustomSource property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+ When the CustomSource property value is changed, this event will be triggered.It cannot be canceled.</td><td>
 DependencyObject,DependencyPropertyChangedEventArgs</td><td>
 DependencyPropertyChangedCallBack </td><th>
 </th></tr>

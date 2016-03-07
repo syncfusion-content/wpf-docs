@@ -124,7 +124,7 @@ ButtonAdv controls with Large SizeMode
 
 The image displayed on the control can be set using the following two properties:
 
-* SmallIcon—To set the mage when SizeMode is Normal or Small.
+* SmallIcon—To set the image when SizeMode is Normal or Small.
 * LargeIcon—To set the image when SizeMode is Large.
 
 
@@ -179,7 +179,7 @@ Large Sized ButtonAdv Control with Image
 
 ## Set Icon Width and Height
 
-The Iconsize can be set using the following two properties:
+The Icon size can be set using the following two properties:
 
 * IconWidth
 * IconHeight
