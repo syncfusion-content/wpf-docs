@@ -78,42 +78,42 @@ Return Type </th></tr>
 <tr>
 <td>
 Serialize()</td><td>
-A virtual metdod called to Serialize tde GridControl. It stores tde settings in an xml file named as specified in its parameter.</td><td>
+A virtual method called to Serialize the GridControl. It stores the settings in an xml file named as specified in its parameter.</td><td>
 string  fileName</td><td>
 public</td><td>
 void</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
-A virtual metdod called to Deserialize tde GridControl. It restores tde settings in an xml file named as specified in its parameter.</td><td>
+A virtual method called to Deserialize the GridControl. It restores the settings in an xml file named as specified in its parameter.</td><td>
 string  fileName</td><td>
 public</td><td>
 void</td></tr>
 <tr>
 <td>
 SerializeToStream()</td><td>
-Serializes tde Grid to Stream.</td><td>
+Serializes the Grid to Stream.</td><td>
 TextWriter textWriter</td><td>
 public </td><td>
 void</td></tr>
 <tr>
 <td>
 SerializeAsString()</td><td>
-Serializes tde Grid as String.</td><td>
+Serialize the Grid as String.</td><td>
 NA</td><td>
 public</td><td>
 string </td></tr>
 <tr>
 <td>
 DeserializeFromStream</td><td>
-Deserializes from tde given TextReader.</td><td>
+Deserialize from the given TextReader.</td><td>
 TextReader textReader</td><td>
 public</td><td>
 void</td></tr>
 <tr>
 <td>
 DeserializeFromString</td><td>
-Deserializes from tde given String content.</td><td>
+Deserialize from the given String content.</td><td>
 string content</td><td>
 public</td><td>
 void</td></tr>

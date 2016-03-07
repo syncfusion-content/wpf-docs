@@ -96,7 +96,7 @@ shape.Width = 200;
 
 ## TextBoxes
 
-SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the richtext box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
+SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the rich text box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 
 {% tabs %}
 {% highlight c# %}

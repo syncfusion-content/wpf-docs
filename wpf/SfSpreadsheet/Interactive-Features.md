@@ -189,7 +189,7 @@ By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/w
 
 ### Cell Context menu
 
-By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowCellContextMenu.html) property is set as true to enable the CellContext Menu in Sfspreadsheet. The Event associated with Cell Context menu [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of SpreadsheetGrid.
+By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowCellContextMenu.html) property is set as true to enable the CellContext Menu in SfSpreadsheet. The Event associated with Cell Context menu [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of SpreadsheetGrid.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 

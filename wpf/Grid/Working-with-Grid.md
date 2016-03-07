@@ -1077,7 +1077,7 @@ visibleColumn.Width=new GridDataControlLength(value, GridControlLengthUnitType);
 <tr>
 <td>
 MaxLength</td><td>
-Holds the value for maximum records to be considered while calculating cellcontentsize. Default value is 1000. Set as -1 to consider all values.</td><td>
+Holds the value for maximum records to be considered while calculating cell content size. Default value is 1000. Set as -1 to consider all values.</td><td>
 Normal</td><td>
 int</td><td>
 MaxLength</td></tr>
@@ -1184,7 +1184,7 @@ This topic explains how to implement the Resizing support to an application. The
 2. Resizing is a built-in property and there is no need to set any special property to enable it. But there are options to 
    set the hidden border color and thickness. Set the HiddenBorderBrush property to any color of the brush for the Model object.  The assigned color will be brushed in the border color of the hidden column or row. Set the HiddenBorderThickness property to an int value say 3. 
 
-The following code snippet explains the implementation of the HiddenBorderBrush and HidderBorderThickness properties.
+The following code snippet explains the implementation of the HiddenBorderBrush and HiddenBorderThickness properties.
 
 {% tabs %}
 
@@ -1287,7 +1287,7 @@ Double clicking on it will unhide all the hidden columns in that particular hidd
 
 ![](Working-with-Grid_images/Working-with-Grid_img31.png)
 
-After double clicking the hidden column it unhides all the hidden Columns
+After double clicking the hidden column it unhide all the hidden Columns
 {:.caption}
 
 ### Tables for Properties, Methods, and Events
@@ -1324,24 +1324,24 @@ GridModel</td></tr>
 <table>
 <tr>
 <th>
-Metdod</th><th>
+Method</th><th>
 Description</th><th>
 Parameters</th><th>
-Available inside tde Property</th><th>
+Available inside the Property</th><th>
 Return Type</th></tr>
 <tr>
 <td>
-Setdidden()</td><td>
-Sets tde specified “from” rows to “to” rows as hidden. </td><td>
+Sethidden()</td><td>
+Sets the specified “from” rows to “to” rows as hidden. </td><td>
 int from, int to, bool hide</td><td>
 RowHeights</td><td>
 void</td></tr>
 <tr>
 <td>
-Setdidden()</td><td>
-Sets tde specified “from” rows to “to” rows as hidden. </td><td>
+Sethidden()</td><td>
+Sets the specified “from” rows to “to” rows as hidden. </td><td>
 int from, int to, bool hide</td><td>
-ColumnWidtds</td><td>
+ColumnWidths</td><td>
 void</td></tr>
 </table>
 
@@ -1356,7 +1356,7 @@ Go to Essential Studio WPF Sample Browser  Grid  GridDataControl-Advanced Hidden
 Essential Grid supports undo/redo functionalities similar to those achieved with Microsoft Office-type applications. To handle this functionality, a stack is maintained internally in Essential Grid to save the changes that occur through which the following tasks can be accomplished by the users:
 
 * Control of the stack: when to save or discard changes, and when to rollback changes
-* Create new transactions and control each individual transaction (like cancelling, rollback) without affecting others
+* Create new transactions and control each individual transaction (like canceling, rollback) without affecting others
 
 The undo/redo architecture is extensible, thereby allowing users to derive the base class and add some more functionality to the grid.
 
@@ -1639,37 +1639,37 @@ void</td></tr>
 <tr>
 <td>
 Clear</td><td>
-Clear botd tde undo and redo stacks.</td><td>
+Clear both the undo and redo stacks.</td><td>
 Clear()</td><td>
 void</td></tr>
 <tr>
 <td>
 CommitTrans</td><td>
-Ends a transaction tdat was started witd a previous BeginTrans call.</td><td>
+Ends a transaction that was started with a previous BeginTrans call.</td><td>
 CommitTrans()</td><td>
 void</td></tr>
 <tr>
 <td>
 Push</td><td>
-Pushes a command onto tde undo stack.</td><td>
+Pushes a command onto the undo stack.</td><td>
 Push(SyncfusionCommand cmd)Push(SyncfusionCommand cmd, SyncfusionCommand selectionStateCommand)</td><td>
 void</td></tr>
 <tr>
 <td>
 Redo</td><td>
-Execute tde latest command from tde redo stack.</td><td>
+Execute the latest command from the redo stack.</td><td>
 Redo()</td><td>
 void</td></tr>
 <tr>
 <td>
 Rollback</td><td>
-Rolls back a transaction in progress tdat was started witd a previous BeginTrans call.</td><td>
+Rolls back a transaction in progress that was started with a previous BeginTrans call.</td><td>
 Rollback()</td><td>
 void</td></tr>
 <tr>
 <td>
 Undo</td><td>
-Execute tde latest command from tde undo stack.</td><td>
+Execute the latest command from the undo stack.</td><td>
 Undo()</td><td>
 void</td></tr>
 </table>
@@ -1877,19 +1877,19 @@ Return Type </th></tr>
 <tr>
 <td>
 CreateUIElement</td><td>
-Create tde UI element tdat needs to be loaded inside tde graphic cell.</td><td>
+Create the UI element that needs to be loaded inside the graphic cell.</td><td>
 CreateUIElement(GraphicStyleInfo cellInfo)</td><td>
 Generic</td></tr>
 <tr>
 <td>
 OnArrange</td><td>
-Arrange tde graphic cell in a particular rectangle.</td><td>
+Arrange the graphic cell in a particular rectangle.</td><td>
 OnArrange(UIElement uiElement, Rect rect, GraphicStyleInfo style)</td><td>
 void</td></tr>
 <tr>
 <td>
 OnInitializeContent</td><td>
-Initialize tde properties from style info to tde UI element.</td><td>
+Initialize the properties from style info to the UI element.</td><td>
 OnInitializeContent(T element, GraphicStyleInfo style)</td><td>
 void</td></tr>
 <tr>
@@ -1901,19 +1901,19 @@ bool</td></tr>
 <tr>
 <td>
 UnloadUIElements</td><td>
-When tde control unloads, tdis metdod is executed.</td><td>
+When the control unloads, this method is executed.</td><td>
 UnloadUIElements(int index, T uiElement)</td><td>
 void</td></tr>
 <tr>
 <td>
 UnWireEvents</td><td>
-Unwire tde wired events from tde graphic cell control.</td><td>
+Unwire the wired events from the graphic cell control.</td><td>
 UnWireEvents(T element)</td><td>
 void</td></tr>
 <tr>
 <td>
 WireEvents</td><td>
-Wire tde events in graphic cell.</td><td>
+Wire the events in graphic cell.</td><td>
 WireEvents(T element)</td><td>
 void</td></tr>
 </table>

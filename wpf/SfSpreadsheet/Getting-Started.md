@@ -36,7 +36,7 @@ Contains the classes  that handles all the UI Operations of SfSpreadsheet such a
 <tr>
 <td>
 Syncfusion.Shared.WPF.dll</td><td>
-Contains the classes which holds the controls like Color pickers,Chromless window, ComboBoxAdv, DateTimeEdit etc.</td></tr>
+Contains the classes which holds the controls like Color pickers,Chromeless window, ComboBoxAdv, DateTimeEdit etc.</td></tr>
 <tr>
 <td>
 Syncfusion.Tools.WPF.dll</td><td>
@@ -44,7 +44,7 @@ Contains the classes which holds the controls like TabcontrolExt, TabItemExt, Ga
 <tr>
 <td>
 Syncfusion.XlsIO.Base.dll</td><td>
-Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula caculations etc.</td></tr>
+Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula calculations etc.</td></tr>
 </table>
 Below are the assemblies list that can be added when you want to enable certain features in SfSpreadsheet control. 
 

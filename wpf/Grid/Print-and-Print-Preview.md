@@ -63,7 +63,7 @@ The options in this drop-down allow you select the color for the data to be prin
 
 * Monochrome—Selecting this option allows the user to print the grid data in the shades of a single color or hue.
 * Color—Selecting this option allows the user to print the grid data in the selected color.
-* Grayscale—Selecting this option allows the user to print the grid data in a range of shades of gray without apparent color, the darkest shade being black and the lightest shade being white.
+* Gray scale—Selecting this option allows the user to print the grid data in a range of shades of gray without apparent color, the darkest shade being black and the lightest shade being white.
 * Unknown—This option can be selected in cases where you receive any print configuration settings which does not fall within the other 3 options. The application that is using this configuration will internally set the color option as unknown in such cases.
 
 ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)

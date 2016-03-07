@@ -144,7 +144,7 @@ Returns the ISO week number of the year for a given date<br/><br/></td></tr>
 <tr>
 <td>
 NETWORKDAYS.INTL<br/><br/></td><td>
-Returns the number of whole networkdays (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
+Returns the number of whole network days (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
 <tr>
 <td>
 WEEKNUM<br/><br/></td><td>
@@ -442,7 +442,7 @@ Calculates the payment on the principal for a given investment, with periodic co
 <tr>
 <td>
 PV<br/><br/></td><td>
-Calculates the present value of an investment (ie. the total amount that a series of future payments is worth now)<br/><br/></td></tr>
+Calculates the present value of an investment (i.e. the total amount that a series of future payments is worth now)<br/><br/></td></tr>
 <tr>
 <td>
 RATE<br/><br/></td><td>
@@ -470,7 +470,7 @@ Converts a dollar price expressed as a decimal, into a dollar price expressed as
 <tr>
 <td>
 DURATION<br/><br/></td><td>
-Calculates the Macauley duration of a security with an assumed par value of $100<br/><br/></td></tr>
+Calculates the Macaulay duration of a security with an assumed par value of $100<br/><br/></td></tr>
 <tr>
 <td>
 RRI<br/><br/></td><td>
@@ -697,7 +697,7 @@ Returns the sheet number of the referenced sheet<br/><br/></td></tr>
 <tr>
 <td>
 TRANSPOSE<br/><br/></td><td>
-Performs a transpose transformation on a range of cells (ie. transforms a horizontal range of cells into a vertical range and vice versa)<br/><br/></td></tr>
+Performs a transpose transformation on a range of cells (i.e. transforms a horizontal range of cells into a vertical range and vice versa)<br/><br/></td></tr>
 <tr>
 <td>
 SHEETS<br/><br/></td><td>
@@ -790,7 +790,7 @@ Returns the tangent of a number<br/><br/></td></tr>
 <tr>
 <td>
 ACOT<br/><br/></td><td>
-Returns the arccotangent of a number, in radians in the range 0 to Pi<br/><br/></td></tr>
+Returns the arc cotangent of a number, in radians in the range 0 to Pi<br/><br/></td></tr>
 <tr>
 <td>
 ACOTH<br/><br/></td><td>
@@ -938,7 +938,7 @@ Returns the square root of (number * pi)<br/><br/></td></tr>
 <tr>
 <td>
 ROMAN<br/><br/></td><td>
-Converts an arabic numeral to roman, as text<br/><br/></td></tr>
+Converts an Arabic numeral to Roman, as text<br/><br/></td></tr>
 <tr>
 <td>
 SUMSQ<br/><br/></td><td>
@@ -1079,11 +1079,11 @@ Returns the sample covariance, the average of the products deviation for each da
 <tr>
 <td>
 PERCENTILE.EXC<br/><br/></td><td>
-Returns the kth percentile of the values in a range, where k is in the range 0….1 exclusive<br/><br/></td></tr>
+Returns the Kth percentile of the values in a range, where K is in the range 0….1 exclusive<br/><br/></td></tr>
 <tr>
 <td>
 PERCENTILE.INC<br/><br/></td><td>
-Returns the kth percentile of the values in a range, where k is in the range 0….1 inclusive<br/><br/></td></tr>
+Returns the Kth percentile of the values in a range, where K is in the range 0….1 inclusive<br/><br/></td></tr>
 <tr>
 <td>
 PERCENTRANK.EXC<br/><br/></td><td>
@@ -1320,7 +1320,7 @@ Returns the number of cells (of a supplied range), that satisfy a given criteria
 <tr>
 <td>
 COVAR<br/><br/></td><td>
-Returns population covariance (ie. the average of the products of deviations for each pair within two supplied data sets)<br/><br/></td></tr>
+Returns population covariance (i.e. the average of the products of deviations for each pair within two supplied data sets)<br/><br/></td></tr>
 <tr>
 <td>
 CRITBINOM<br/><br/></td><td>
@@ -1400,7 +1400,7 @@ Returns the Poisson distribution<br/><br/></td></tr>
 <tr>
 <td>
 PROB<br/><br/></td><td>
-Returns the probablity that values in a supplied range are within given limits<br/><br/></td></tr>
+Returns the probability that values in a supplied range are within given limits<br/><br/></td></tr>
 <tr>
 <td>
 QUARTILE<br/><br/></td><td>

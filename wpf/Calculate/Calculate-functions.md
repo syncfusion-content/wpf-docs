@@ -239,10 +239,10 @@ The ACCRINT function returns the accrued interest for a security with periodic i
 
 #### Syntax:
 
-ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis) where:
+ACCRINT(IssueDate,FirstInterestDate,settlementDate,rate,parvalue,frequency,basis) where:
 
 * IssueDate - issue date of security.
-* FirstInterest - first interest date of security.
+* FirstInterestDate - first interest date of security.
 * SettlementDate - date on which the security traded to buyer.
 * rate - yearly coupon rate of the security.
 * parvalue - par value of the security.
@@ -1305,7 +1305,7 @@ NORMDIST
 
 ### NORMINV
 
-Returns theinverse of the normal cumulative distribution for the specified mean and standard deviation.
+Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
 
 #### Syntax: 
 
@@ -1430,7 +1430,7 @@ The GAMMA.DIST function returns either the cumulative distribution or the probab
 
 GAMMA.DIST(x,y,z,cumulative) where:
 
-* x is the value that eveluates the function.
+* x is the value that evaluates the function.
 * y is a distribution parameter.
 * z is a distribution parameter.
 * cumulative is a logical value that indicates which form of the exponential function to provide.

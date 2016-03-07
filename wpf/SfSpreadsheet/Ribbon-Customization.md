@@ -17,7 +17,7 @@ You can customize the Ribbon items by overriding the template of [SfSpreadsheetR
 
 __Using__ __Event__:
 
-You can create a custom Ribbon tab with user defined meu options in SfSpreadsheet. To achieve this customization, invoke the SfSpreadsheetRibbon Loaded Event and create a custom tab with menu options. Add this custom tab to SfSpreadsheet Ribbon.
+You can create a custom Ribbon tab with user defined menu options in SfSpreadsheet. To achieve this customization, invoke the SfSpreadsheetRibbon Loaded Event and create a custom tab with menu options. Add this custom tab to SfSpreadsheet Ribbon.
 
 {% tabs %}
 {% highlight xaml %}

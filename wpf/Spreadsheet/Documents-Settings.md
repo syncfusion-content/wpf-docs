@@ -316,7 +316,7 @@ spreadControl.RemoveSheet("Sheet4");
 
 You can add a worksheet by using the InsertSheetCommand. When you execute this command, it will add a new worksheet at the end of the workbook.
 
-The following code illustrates how to bind the InsertSheetCommandto a button:  
+The following code illustrates how to bind the InsertSheetCommand to a button:  
 
 {% highlight xaml %}
 
@@ -392,7 +392,7 @@ Used to get or set the company name of the Excel</td><td>
 <tr>
 <td>
 Subject</td><td>
-Used to get or setthe subject of the Excel</td><td>
+Used to get or set the subject of the Excel</td><td>
 Dependency</td><td>
 String</td></tr>
 <tr>

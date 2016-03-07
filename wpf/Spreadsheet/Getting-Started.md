@@ -41,7 +41,7 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 4. Customize the properties of SpreadsheetControl using Properties window.
 
-   N> To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code.
+   N> To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet control as a DataContext as shown the following code.
 
    ~~~ xaml
 
