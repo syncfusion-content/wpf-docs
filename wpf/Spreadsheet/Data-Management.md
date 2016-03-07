@@ -47,7 +47,7 @@ Reference links</th></tr>
 <tr>
 <td>
 CurrentCellValidating  </td><td>
-Will be triggered when the cell value is committed. This can be cancelled. Error alert can be customized. </td><td>
+Will be triggered when the cell value is committed. This can be canceled. Error alert can be customized. </td><td>
 void CurrentCellValidating(object sender, CurrentCellValidatingEventArgs e)</td><td>
 Routed </td><td>
 NA </td></tr>
@@ -141,7 +141,7 @@ The following code illustrates how to bind the DeleteCommentCommand__to a button
 
 ## Import and Export from Data Table
 
-Spreadsheet offers some helper methods that enable you to import and export data form ADO.NET data sources very easily. The ImportDataTable and ExportDataTable methods allow you to use one line of code to import data from a Datatable to a SpreadSheet and export data from a SpreadSheet to a DataTable respectively.
+Spreadsheet offers some helper methods that enable you to import and export data form ADO.NET data sources very easily. The ImportDataTable and ExportDataTable methods allow you to use one line of code to import data from a DataTable to a SpreadSheet and export data from a SpreadSheet to a DataTable respectively.
 
 ![](Data-Management_images/Data-Management_img10.png)
 

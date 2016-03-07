@@ -134,7 +134,7 @@ Save As dialog box will open. Save the document at the required location.
 
 ### Using Command
 
-You can save the Excel document using the ExportToExcelCommand. When you execute the ExportToExcelCommand, it will open the SaveAsdialog box. Save the content of the Spreadsheet control as Excel document.
+You can save the Excel document using the ExportToExcelCommand. When you execute the ExportToExcelCommand, it will open the SaveAs dialog box. Save the content of the Spreadsheet control as Excel document.
 
 The following code illustrates how to bind the ExportToExcelCommand to a button: 
 
