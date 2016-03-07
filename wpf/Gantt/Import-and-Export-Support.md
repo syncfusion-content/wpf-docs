@@ -48,14 +48,14 @@ Return Type </th></tr>
 <tr>
 <td>
 ExportToXML()</td><td>
-Responsible for exporting tde GanttControl to MSProject XML File.</td><td>
+Responsible for exporting the GanttControl to MSProject XML File.</td><td>
 -</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
 <td>
 ImportFromXML()</td><td>
-Reponsible for importing tde data from MS Project XML file to GanttControl.</td><td>
+Responsible for importing the data from MS Project XML file to GanttControl.</td><td>
 -</td><td>
 -</td><td>
 bool</td></tr>

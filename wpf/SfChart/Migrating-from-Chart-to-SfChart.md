@@ -166,7 +166,7 @@ Gets or sets Boolean value for showing the chart legends.</td></tr>
 <td>
 SplitterColor</td><td>
 -</td><td>
-Gets or sets colour for SyncChartAreas splitter</td></tr>
+Gets or sets color for SyncChartAreas splitter</td></tr>
 <tr>
 <td>
 SplitterPosition</td><td>
@@ -179,7 +179,7 @@ SplitterStroke</td><td>
 Gets or sets stroke for SyncChartAreas splitter</td></tr>
 <tr>
 <td>
-SplitterVisiblity</td><td>
+SplitterVisibility</td><td>
 -</td><td>
 Gets or sets visibility for SyncChartAreas splitter</td></tr>
 <tr>
@@ -1056,7 +1056,7 @@ Gets or sets enum for animation direction.</td></tr>
 <td>
 ColorEach </td><td>
 Palette</td><td>
-Gets or sets a value that indicates whether to colour each segment differently or not.</td></tr>
+Gets or sets a value that indicates whether to color each segment differently or not.</td></tr>
 <tr>
 <td>
 BindingPathX</td><td>
@@ -1076,12 +1076,12 @@ Gets or sets items source for chart series.</td></tr>
 <td>
 Interior</td><td>
 Interior</td><td>
-Gets or sets interior colour for chart series.</td></tr>
+Gets or sets interior color for chart series.</td></tr>
 <tr>
 <td>
 ShowEmptyPoints</td><td>
 ShowEmptyPoints</td><td>
-Gets or sets a value that indicates whether to show empty points in different style or colour based on EmptyPointValue and EmptyPointValue.</td></tr>
+Gets or sets a value that indicates whether to show empty points in different style or color based on EmptyPointValue and EmptyPointValue.</td></tr>
 <tr>
 <td>
 EmptyPointValue</td><td>
@@ -1134,12 +1134,12 @@ ExplodedAll</td><td>
 Gets or sets a value whether to explode all the segments of pie and doughnut chart</td></tr>
 <tr>
 <td>
-chart:ChartPieType.ExplodedIndexchart: ChartDoughnutType.ExplodedIndex</td><td>
+chart:ChartPieType.ExplodedIndex chart: ChartDoughnutType.ExplodedIndex</td><td>
 ExplodedIndex</td><td>
 Gets or sets the index of the segment to be exploded.</td></tr>
 <tr>
 <td>
-chart:ChartPieType.ExplodeRadiuschart: ChartDoughnutType.ExplodeRadius</td><td>
+chart:ChartPieType.ExplodeRadius chart: ChartDoughnutType.ExplodeRadius</td><td>
 ExplodeRadius</td><td>
 Gets or sets explode radius for all the segment of pie, doughnut chart.</td></tr>
 <tr>
@@ -1307,12 +1307,12 @@ Gets or sets symbol for Adornment.</td></tr>
 <td>
 SymbolInterior</td><td>
 SymbolInterior</td><td>
-Gets or sets colour for Adornment.</td></tr>
+Gets or sets color for Adornment.</td></tr>
 <tr>
 <td>
 SymbolStroke</td><td>
 SymbolStroke</td><td>
-Gets or sets stroke colour for Adornment symbol.</td></tr>
+Gets or sets stroke color for Adornment symbol.</td></tr>
 <tr>
 <td>
 AdornmentsPosition</td><td>
@@ -1342,7 +1342,7 @@ Customizing the Adornment connector line.</td></tr>
 <td>
 </td><td>
 UseSeriesPalette</td><td>
-Gets or sets colour for each connector line</td></tr>
+Gets or sets color for each connector line</td></tr>
 <tr>
 <td>
 SegmentShowLine</td><td>
@@ -1614,7 +1614,7 @@ Gets or sets the width. When IsPixelWidth is ‘true’, then it considers unit 
 <td>
 Interior</td><td>
 Background</td><td>
-Gets or sets colour for strip line background.</td></tr>
+Gets or sets color for strip line background.</td></tr>
 <tr>
 <td>
 Text</td><td>
@@ -2127,7 +2127,7 @@ The following table illustrates the API comparison for TechnicalIndicators,
 <tr>
 <th>
 ChartTechnicalIndicator (Chart)</th><th>
-AccumulationDistribusionIndicator, BollingerBandIndicator… etc.,(SfChart)</th><th>
+AccumulationDistributionIndicator, BollingerBandIndicator… etc.,(SfChart)</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -2278,7 +2278,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 In Chart, you can split chart area into multiple plotting areas that share common axis, crosshair/interactive cursor etc., using SyncChartAreas class.
 
-In SfChart, you can split chart into multiple plotting areas that share common axis, crosshair/interctice cursor and zooming functionalities by defining multiple rows and columns using RowDefinitions and ColumnDefinition properties. It is similar to defining rows and columns in Grid panel.
+In SfChart, you can split chart into multiple plotting areas that share common axis, crosshair/interactive cursor and zooming functionalities by defining multiple rows and columns using RowDefinitions and ColumnDefinition properties. It is similar to defining rows and columns in Grid panel.
 
 The following code example illustrates the API’s for both charts,
 

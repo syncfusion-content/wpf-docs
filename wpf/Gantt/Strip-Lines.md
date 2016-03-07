@@ -13,7 +13,7 @@ Essential Gantt provides support for adding Strip Lines in the Gantt chart regio
 
 ## Strip lines in Essential Gantt support the following features:
 
-* Repeat behavior: Strip lines can be repeatable in the Gantt chart region based on repeat behaviour and repeat interval. The available repeat behaviours are as follows:
+* Repeat behavior: Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval. The available repeat behaviors are as follows:
 * Year
 * Month
 * Week
@@ -212,7 +212,7 @@ Type</th></tr>
 <tr>
 <td>
 StripLineCreated </td><td>
-Whenever a strip line is created, tdis event will be triggered. tde handler of tde event will have tde newly created strip line (StripLineInfo) in tde argument.By handling tdis event, you can customize tde appearance of tde strip line.</td><td>
+Whenever a strip line is created, this event will be triggered. the handler of the event will have the newly created strip line (StripLineInfo) in the argument.By handling this event, you can customize the appearance of the strip line.</td><td>
 StripLineCreated(object sender, StriplineCreatedEventArgs args)</td><td>
 Event </td></tr>
 </table>

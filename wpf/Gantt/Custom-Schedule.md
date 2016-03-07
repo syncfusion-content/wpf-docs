@@ -88,7 +88,7 @@ Type </th></tr>
 <tr>
 <td>
 ScheduleCellCreated </td><td>
-Event will be triggered whenever a schedule cell is created. tde handler of tde event will have tde newly created cell (GanttScheduleCell) in tde argument.By handling tdis event, you can customize tde appearance of tde cell. </td><td>
+Event will be triggered whenever a schedule cell is created. The handler of the event will have the newly created cell (GanttScheduleCell) in the argument.By handling this event, you can customize the appearance of the cell. </td><td>
 ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</td><td>
 Routed Event </td></tr>
 </table>

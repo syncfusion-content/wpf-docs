@@ -178,9 +178,9 @@ This allows us to specify the label for each series which is to be displayed in 
 
 ## Checkbox 
 
-Used to view or collapse the associated series. By default, the CheckboxVisibilty is *Collapsed*. 
+Used to view or collapse the associated series. By default, the CheckboxVisibility is *Collapsed*. 
 
-We can enable it by using the [`CheckBoxVisibilty`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html) property as in below code example:
+We can enable it by using the [`CheckBoxVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html) property as in below code example:
 
 
 {% highlight xml %}
