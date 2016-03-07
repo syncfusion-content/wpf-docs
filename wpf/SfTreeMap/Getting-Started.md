@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-TreeMapsare a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole dataset. The size of each box represents a quantity. TreeMapsalso use color to represent any number of values, but it is often used to categorize the various boxes within the tree map.
+TreeMaps are a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole dataset. The size of each box represents a quantity. TreeMaps also use color to represent any number of values, but it is often used to categorize the various boxes within the tree map.
 
 ## Configuring the SfTreeMap Control
 

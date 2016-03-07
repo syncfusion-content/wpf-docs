@@ -20,11 +20,11 @@ All selected shapes available in the “SelectedMapShapes” of ShapeFileLayer.
 
 ## Single Selection
 
-Single selection allows only one map shape to be selected at a time. You can select the shape by tapping on the shape. Single selection is enabled by the “EnableSelection” property of ShapeFileLayer. When EnableSelectionis set to true, then the map can be selected. When it is set to false, the shapes cannot be selected. When any other shape or the map area is selected, then the shape that is already selected is unselected.
+Single selection allows only one map shape to be selected at a time. You can select the shape by tapping on the shape. Single selection is enabled by the “EnableSelection” property of ShapeFileLayer. When EnableSelection is set to true, then the map can be selected. When it is set to false, the shapes cannot be selected. When any other shape or the map area is selected, then the shape that is already selected is unselected.
 
 ## Multi Selection
 
-Multiple shapes in the map can be selected when “EnableMultiSelection” of ShapeFileLayer is set to true. When EnableMultiSelection is set to true, a cross-hair cursor appears on the map to guide the selection. When you drag on the map, a rectangle appears. The shapes bound that intersect with the rectangle is selected. When EnableMultiSelectionis set to true, the panning does not work through interactions.
+Multiple shapes in the map can be selected when “EnableMultiSelection” of ShapeFileLayer is set to true. When EnableMultiSelection is set to true, a cross-hair cursor appears on the map to guide the selection. When you drag on the map, a rectangle appears. The shapes bound that intersect with the rectangle is selected. When EnableMultiSelection is set to true, the panning does not work through interactions.
 
 {% highlight xaml %}
 

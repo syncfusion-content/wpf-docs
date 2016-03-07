@@ -73,7 +73,7 @@ Gets or sets the border color of the bubble.</td></tr>
 
 ## Adding Bubbles to a Map
 
-To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the AutoFillColor as true and set the Fill property. Create the Model and ViewModel as illustrtaed in the Data Binding topic and add the following code. Also set the MaxSize, MinSize, and ValuePath properties as illustrated in the following code example.
+To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the AutoFillColor as true and set the Fill property. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxSize, MinSize, and ValuePath properties as illustrated in the following code example.
 
 {% highlight xaml %}
 

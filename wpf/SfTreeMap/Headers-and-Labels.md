@@ -15,7 +15,7 @@ To show headers in TreeMap, you can set the HeaderHeight property of TreeMapLeve
 
 ### TreeMap with Flat Collection:
 
-If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by referring Header object to the datatemplate.
+If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by referring Header object to the data template.
 
 
 {% highlight xaml %}
@@ -54,7 +54,7 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 
 ### TreeMap with Hierarchical Collection:
 
-For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the data template where FieldName refers to the field of object specified in the particular treemap level.
 
 
 {% highlight xaml %}
@@ -90,7 +90,7 @@ To show labels in TreeMap, ShowLabels of TreeMapLevel should be enabled to True.
 
 ### TreeMap with Flat Collection:
 
-If LabelTemplate is specified for TreeMapLevel, then the label can be bound by referring Label object to the datatemplate.
+If LabelTemplate is specified for TreeMapLevel, then the label can be bound by referring Label object to the data template.
 
 
 {% highlight xaml %}
@@ -130,7 +130,7 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
 ### TreeMap with Hierarchical Collection:
 
-For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the data template where FieldName refers to the field of object specified in the particular treemap level.
 
 
 {% highlight xaml %}
