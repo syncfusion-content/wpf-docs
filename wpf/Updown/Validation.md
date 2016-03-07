@@ -59,7 +59,7 @@ Grid1.Children.Add(updown);
 
 {% endtabs %}
 
-## Tables for MaxValidation, Minvalidation Properties and Events
+## Tables for MaxValidation, MinValidation Properties and Events
 
 <table>
 <tr>

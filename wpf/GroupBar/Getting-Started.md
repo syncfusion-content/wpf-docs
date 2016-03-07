@@ -107,7 +107,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-5. Once the Collection Editor opens, click Add Another Item to openthe Select Object window. Select the GroupBarItem by typing _GroupBarItem_ in the search box and clicking OK.
+5. Once the Collection Editor opens, click Add Another Item to open the Select Object window. Select the GroupBarItem by typing _GroupBarItem_ in the search box and clicking OK.
 
 
 
@@ -123,7 +123,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 You can also customize the appearance of the GroupBar control and its items by using the template-editing feature available in Expression Blend.
 
-## Creatig the Control Programmatically
+## Creating the Control Programmatically
 
 To create the GroupBar control through code, use the following XAML or C# code.
 
@@ -145,9 +145,9 @@ this.Content = groupBar;
  {% endhighlight %} 
 {% endtabs %}
 
-### Itemssource Support/GroupBar Control
+### ItemsSource Support/GroupBar Control
 
-Items in a GroupBar can also be added by binding a collection of business object through Itemssource property. The following is an example of the business object, which is used for Itemssource binding. 
+Items in a GroupBar can also be added by binding a collection of business object through ItemsSource property. The following is an example of the business object, which is used for ItemsSource binding. 
 
 {% highlight C# %}
 
@@ -195,9 +195,9 @@ gri.DataContext = this;
 {% endhighlight %}
 
 
-### Binding Itemssource Property
+### Binding ItemsSource Property
 
- Set the Itemssource property, by using the following code.
+ Set the ItemsSource property, by using the following code.
 
 
 
@@ -508,13 +508,13 @@ N> The ContentTemplate Selector can be applied as follows.
 
 ### Events associated with GroupBar ContextMenu
 
-When Itemssource is in use, Add Tab, Delete Tab, Rename Tab, etc Commands in Context menu cannot be used. To enable this user can use the following event associated with the context menu.
+When ItemsSource is in use, Add Tab, Delete Tab, Rename Tab, etc Commands in Context menu cannot be used. To enable this user can use the following event associated with the context menu.
 
 ContextMenuItemClick - The Event is called when any of the ContextMenu items clicked. It contains the following property.
 
 MenuItem –Gets the MenuItem. Users can perform the require command in this menu.
 
-Add a new tab when Itemssource in use, by using the following code.
+Add a new tab when ItemsSource in use, by using the following code.
 
 
 

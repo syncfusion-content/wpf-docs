@@ -22,7 +22,7 @@ Description</th></tr>
 <tr>
 <td>
 SetUserDictionary</td><td>
-SetUserDictionary(string dicName),SetUserDictionary(UserDictionary userDic)</td><td>
+SetUserDictionary(string dicname),SetUserDictionary(UserDictionary userdic)</td><td>
 SetUserDictionary is an overloaded method. You can set the UserDictionary by passing the file name of the dictionary to this method or you can pass UserDictionary instance to this method</td></tr>
 <tr>
 <td>
@@ -50,7 +50,7 @@ SpellCheck.SetIncludeUserDiction-aryInSuggestions(true);
 
 To access the sample link:
 
-1. Open the Synfusion Dashboard.
+1. Open the Syncfusion Dashboard.
 2. Select User Interface.
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to Tools -> SpellChecker -> SpellCheckerDemo.

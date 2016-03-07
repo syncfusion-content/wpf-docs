@@ -17,7 +17,7 @@ MenuAdv helps users to bind a collection of business objects to MenuItemAdv and 
 
 ## Adding the Binding and DataTemplate Support to an Application
 
-The data source can be bound to MenuItemAdv by using the ItemsSource property. When binding the DataTemplate or HierarchialDataTemplate to the MenuItemAdv, the Business objects can be bound by using the ItemTemplate property of MenuItemAdv. Binding and DataTemplate support can be added to an application, as shown in the following code snippets.
+The data source can be bound to MenuItemAdv by using the ItemsSource property. When binding the DataTemplate or HierarchicalDataTemplate to the MenuItemAdv, the Business objects can be bound by using the ItemTemplate property of MenuItemAdv. Binding and DataTemplate support can be added to an application, as shown in the following code snippets.
 
 {% tabs %}
 {% highlight xaml %}

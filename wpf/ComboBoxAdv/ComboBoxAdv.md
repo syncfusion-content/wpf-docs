@@ -129,7 +129,7 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 
 ### Multiple Selections
 
-If we want to select more than one item in the ComboBoxAdv, AllowMultiSelect property will be helpful to do this. It allows you to select multiple items in the drop down list. The selected items will be displayed in ascending order as shown in the drop down list. When AllowMutliSelect property is true, the SelectedItems property exposes the items that are selected in the drop down list.
+If we want to select more than one item in the ComboBoxAdv, AllowMultiSelect property will be helpful to do this. It allows you to select multiple items in the drop down list. The selected items will be displayed in ascending order as shown in the drop down list. When AllowMultiSelect property is true, the SelectedItems property exposes the items that are selected in the drop down list.
 
 #### Properties
 

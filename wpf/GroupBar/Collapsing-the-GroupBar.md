@@ -54,7 +54,7 @@ N> AllowCollapse property settings works only for GroupBar in StackMode.
 
 Collapsing the GroupBar in Stack Mode
 
-Collapsing and expanding the GroupBar in stackmode is done by using IsCollapsed property. This dependency property indicates the state of GroupBar, whether collapsed or expanded. By setting this property to _true_, groupbar is collapsed. By setting _false_, groupbar is expanded. 
+Collapsing and expanding the GroupBar in StackMode is done by using IsCollapsed property. This dependency property indicates the state of GroupBar, whether collapsed or expanded. By setting this property to _true_, groupbar is collapsed. By setting _false_, groupbar is expanded. 
 
 Use the below code snippet to set this property.
 

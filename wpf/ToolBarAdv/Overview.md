@@ -12,7 +12,7 @@ ToolBarAdv control is a container for a group of commands or control, which have
 
 ## Features
 
-* Specifying the position of ToolBarAdvs in a ToolBarTrayAdv
+* Specifying the position of ToolBarAdv's in a ToolBarTrayAdv
 * ToolBarAdv with Overflow items
 * Show or hide the Gripper
 * Orientation of ToolBarTrayAdv

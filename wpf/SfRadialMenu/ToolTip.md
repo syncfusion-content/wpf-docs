@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip
 
-Tootip support available for the radial menu items. This will show when mouse over the corresponding item. 
+Tooltip support available for the radial menu items. This will show when mouse over the corresponding item. 
 
 ToolTip Placement
 

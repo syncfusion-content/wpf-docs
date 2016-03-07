@@ -8,14 +8,14 @@ documentation: ug
 ---
 # Auto Hide Window
 
-AutoHide window is one of the state in the DockingManager. To enable Autohidden for DockingManager's children, set its `State` value as `AutoHidden`.
+AutoHide window is one of the state in the DockingManager. To enable Auto hidden for DockingManager's children, set its `State` value as `AutoHidden`.
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img1.jpeg)
 
 
 ## Configuring window in Different Side
 
-AutoHidden window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four autohidden children in four different sides, set `SideInDockedMode` property according to its corresponding values in the DockingManager.
+AutoHidden window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set `SideInDockedMode` property according to its corresponding values in the DockingManager.
 {% tabs %}
 
 {% highlight XAML %}
@@ -39,7 +39,7 @@ AutoHidden window can be placed in four different sides such as Top, Bottom, Lef
 
 
 
-The AutoHidewindow can be placed on a required target window through the `TargetNameInDockedMode` property of the DockingManager. DockingWindow will autohidden in place according to its Parent position, if any target exist. For example: Here "Output" docked at bottom of "SolutionExplorer" which docked at left side. While autohiding Output window, it will autohide at left due to it's TargetWindow side.
+The AutoHideWindow can be placed on a required target window through the `TargetNameInDockedMode` property of the DockingManager. DockingWindow will auto hidden in place according to its Parent position, if any target exist. For example: Here "Output" docked at bottom of "SolutionExplorer" which docked at left side. While auto hiding Output window, it will auto hide at left due to it's TargetWindow side.
 
 {% tabs %}
 
@@ -242,7 +242,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 
 
-`Fade` – AutoHidewindow fades while autohiding
+`Fade` – AutoHideWindow fades while auto hiding
 
 {% tabs %}
 
@@ -259,7 +259,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 {% endtabs %}
 
-`Scale` – AutoHidewindow scale while autohiding
+`Scale` – AutoHideWindow scale while auto hiding
 
 {% tabs %}
 
@@ -277,7 +277,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 {% endtabs %}
 
-`Slide` – AutoHidewindow slides while autohiding.
+`Slide` – AutoHideWindow slides while auto hiding.
 
 {% tabs %}
 
@@ -295,7 +295,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 {% endtabs %}
 
-## Enabling and disabling the Autohide functionality
+## Enabling and disabling the AutoHide functionality
 
 The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through `AutoHideVisibility` property.
 
@@ -317,7 +317,7 @@ The Pin button that performs Auto Hide functionality can be visible by default. 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img9.jpeg)
 
 
-To enable or disable the Autohide functionality for a specific child in the DockingManager, `CanAutoHide` can be used. By default its value is `true`, this functionality can disable by set its value as `false`.
+To enable or disable the AutoHide functionality for a specific child in the DockingManager, `CanAutoHide` can be used. By default its value is `true`, this functionality can disable by set its value as `false`.
 
 {% tabs %}
 
@@ -337,7 +337,7 @@ To enable or disable the Autohide functionality for a specific child in the Dock
 
 ## AutoHide Animation enabled on Mouse Click
 
-On mouse over the AutoHidden tab, the autohide animation starts. To disable this functionality, set the property `IsAnimationEnabledOnMouseOver` as `False` that changes the autohide tab start animation behaviour. By default, its values is `True`.
+On mouse over the AutoHidden tab, the auto hide animation starts. To disable this functionality, set the property `IsAnimationEnabledOnMouseOver` as `False` that changes the auto hide tab start animation behavior. By default, its values is `True`.
 
 
 {% tabs %}
@@ -359,7 +359,7 @@ On mouse over the AutoHidden tab, the autohide animation starts. To disable this
 
 ## Pinning / UnPinning All Window
 
-To autohide all docked windows in the DockingManager, call `AutoHideAllDockWindow` method of the Docking Manager.
+To auto hide all docked windows in the DockingManager, call `AutoHideAllDockWindow` method of the Docking Manager.
 
 {% tabs %}
 
@@ -377,7 +377,7 @@ DockingManager.AutoHideAllDockWindow();
 
 {% endtabs %}
 
-To unpin all autohide windows in the DockingManager, call `UnPinAllAutoHide` method of the Docking Manager.
+To unpin all auto hide windows in the DockingManager, call `UnPinAllAutoHide` method of the Docking Manager.
 
 {% tabs %}
 

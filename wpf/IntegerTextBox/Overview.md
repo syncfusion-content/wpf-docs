@@ -13,7 +13,7 @@ The IntegerTextBox control restricts text box input to only integer values with 
 
 The core features of the IntegerTextBox are as follows:
 
-* Supports upto Int64 datatype.
+* Supports upto Int64 data type.
 * Provides the ability to control the range of input values by using the MinValue and MaxValue properties.
 * Provides different foreground brushes for positive and negative numbers.
 * Provides data binding support.

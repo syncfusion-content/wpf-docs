@@ -41,7 +41,7 @@ The position of the Thumb tooltip in relation to the Thumb can be controlled by 
 2. TopLeft 
 3. None 
 
-### BottmRight  
+### BottomRight  
 
 Tooltip is placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation. 
 

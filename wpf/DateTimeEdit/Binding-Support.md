@@ -11,7 +11,7 @@ documentation: ug
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source to target) or bidirectional (source to target and target to source). You can bind the data to the DateTimeEdit control through the DateTime property.
 
-The following example shows a simple binding between the DateTime property of the DateTimeEditcontrol and another DateTimeEdit control:
+The following example shows a simple binding between the DateTime property of the DateTimeEdit control and another DateTimeEdit control:
 
 
 {% highlight xaml %}

@@ -110,7 +110,7 @@ To [export](#exporting-custom-theme-from-theme-studio) the customized skin, clic
 
 *	Open Visual Studio 20xx and create a WPF project.
 
-*	Add the necessary dlls for the controls used.
+*	Add the necessary dll's for the controls used.
 
 For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` dll and dependency dll `Syncfusion.SfShared.WPF`.
 

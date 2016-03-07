@@ -107,7 +107,7 @@ This event is handled when the 'Close All But This' menu item in the TabItemCont
 
 ### OnCloseAllTabs Event
 
-This event is handled when the 'Close All' menuitem in TabItemContextMenu is clicked.
+This event is handled when the 'Close All' menu item in TabItemContextMenu is clicked.
 
 ### Event
 

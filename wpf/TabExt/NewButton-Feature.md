@@ -9,7 +9,7 @@ documentation: ug
 
 # NewButton Feature
 
-New button feature in TabControlExt is used to display NewTabButton similar to IE7. User can handle the click action of that NewButton to add new tabitems to TabControlExt.
+New button feature in TabControlExt is used to display NewTabButton similar to IE7. User can handle the click action of that NewButton to add new tab items to TabControlExt.
 
 {% tabs %}
 
