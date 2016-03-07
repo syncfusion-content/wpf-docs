@@ -9,7 +9,7 @@ documentation: ug
 
 # Text Formatting Using SpanAdv
 
-As Inline will be the content property of ParagraphAdv, SpanAdv can be added only inside the ParagraphAdv. Every ParagraphAdv can keep _n_ number of inlines inside it. It allows you to display the formatted text using advanced features like font size, font family, strikethrough, and baseline.
+As Inline will be the content property of ParagraphAdv, SpanAdv can be added only inside the ParagraphAdv. Every ParagraphAdv can keep _n_ number of inline elements inside it. It allows you to display the formatted text using advanced features like font size, font family, strikethrough, and baseline.
 
 ### Properties
 

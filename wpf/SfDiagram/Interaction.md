@@ -31,7 +31,7 @@ Multiple elements can be selected with the following ways.
 
 1. Ctrl+Click
 
-During single click, any existing item in the selection list be clearied, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
 2. Selection rectangle / Rubber band selection
 

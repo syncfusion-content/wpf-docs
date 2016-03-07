@@ -133,7 +133,7 @@ namespace EmployeeDetails
 
 ###Initialize Data
 
-Create a collection of employees with each employee having an ID in the Epmid and the reporting person’s ID in the Parent ID. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
+Create a collection of employees with each employee having an ID in the Empid and the reporting person’s ID in the Parent ID. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
 
 {% highlight xaml %}
 

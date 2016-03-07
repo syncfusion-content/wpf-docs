@@ -492,7 +492,7 @@ List of Commands and Key Gesture:
 
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
-| Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.HorizondalScroll} |
+| Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.HorizontalScroll} |
 | Zoom | Control | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.ZoomIn | ZoomCommand.ZoomOut} |
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
@@ -539,7 +539,7 @@ private async void OnSaveCommand(Object obj)
   }
   {% endhighlight %}
 ####Map and user defined command with key gesture:
-//Add new Commands to CommandManager - Cntrl + S -> Save
+//Add new Commands to CommandManager - Ctrl + S -> Save
             
 {% highlight C# %}			
 sfdiagram.CommandManager.Commands.Add

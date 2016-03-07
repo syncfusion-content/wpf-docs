@@ -60,7 +60,7 @@ It does not display the AutoEllipsisButton.</td></tr>
 
 N> By Default AutoEllipsisMode is set to None.
 
-The following code example explains how to change the AutoEllipsisbuttontext.
+The following code example explains how to change the AutoEllipsisText.
 {% highlight html %}
 
 
@@ -152,7 +152,7 @@ The following code example explains how to apply the AccentBackground and Accent
 
 {% endhighlight  %}
 
-The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDatapager.
+The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDataPager.
 
 ![B:/Support/2015/Pager.png](Features_images/Features_img10.png)
 

@@ -84,7 +84,7 @@ The following image shows the relationship between the Annotation position (blac
 
 ![](Annotation_images/Annotation_img2.jpeg)
 
-By using Offset property, without creating the template we can arrange the Annotaion.
+By using Offset property, without creating the template we can arrange the Annotation.
 
 ![](Annotation_images/Annotation_img3.jpeg)
 

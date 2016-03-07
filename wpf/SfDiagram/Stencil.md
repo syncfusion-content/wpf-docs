@@ -9,7 +9,7 @@ documentation: ug
 
 #Stencil
 
-Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filteres by using the SymbolFilterProvider through delegates.
+Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filters by using the SymbolFilterProvider through delegates.
 
 {% highlight xaml %}
 
@@ -247,9 +247,9 @@ Expand and Collapse can be performed on SymbolGroup (updating the Visibility of 
 
 ##SymbolFilters
 
-`SymboFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
+`SymbolFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
 
-The following code example shows how to create and add the SymbolFilter. Based on the return Boolean value of the SymbolFilter delegate, the corresponding item is reoved from Stencil. When a SymbolGroup does not have any Symbols, the corresponding SymbolGroup is also removed.
+The following code example shows how to create and add the SymbolFilter. Based on the return Boolean value of the SymbolFilter delegate, the corresponding item is removed from Stencil. When a SymbolGroup does not have any Symbols, the corresponding SymbolGroup is also removed.
 
 {% highlight C# %}
 

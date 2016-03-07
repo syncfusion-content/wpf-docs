@@ -10,7 +10,7 @@ documentation: ug
 # DataBinding
 
 
-Databinding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
+Data binding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
 
 ## Source and PagedSource
 
@@ -336,7 +336,7 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
 {% endhighlight %}
 
-The following screenshot displays the output for changing the PagSize value during runtime. 
+The following screenshot displays the output for changing the PageSize value during runtime. 
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)
 

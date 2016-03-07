@@ -562,11 +562,11 @@ CurrencyDecimalSeparator</td><td>
 String to use as decimal separator.</td></tr>
 <tr>
 <td>
-CurrencyNeagtivePattern</td><td>
+CurrencyNegativePattern</td><td>
 Format pattern for negative currency values.</td></tr>
 <tr>
 <td>
-CurrencyPostivePattern</td><td>
+CurrencyPositivePattern</td><td>
 Format pattern for positive currency values.</td></tr>
 <tr>
 <td>
@@ -2812,7 +2812,7 @@ ACOSH(number)number must be a real number. </td></tr>
 <tr>
 <td>
 ACOT</td><td>
-Returns the principal value of the arccotangent, or inverse cotangent, of a number.</td><td>
+Returns the principal value of the arc cotangent, or inverse cotangent, of a number.</td><td>
 ACOT(number)number must be a real number.</td></tr>
 <tr>
 <td>
@@ -3660,12 +3660,12 @@ QUARTILE.INC(array,quart)Array: The array or cell range of numeric values for wh
 <td>
 RANK.AVG</td><td>
 Returns the rank of a number in a list of numbers.</td><td>
-RANK.AVG(number,ref,[order])Number: The number whose rank you want to find.Ref: An array of, or a reference to, a list of numbers. Nonnumeric values in Ref are ignored.Order: A number specifying how to rank number.</td></tr>
+RANK.AVG(number,ref,[order])Number: The number whose rank you want to find.Ref: An array of, or a reference to, a list of numbers. Non numeric values in Ref are ignored.Order: A number specifying how to rank number.</td></tr>
 <tr>
 <td>
 RANK.EQ</td><td>
 Returns the rank of a number in a list of numbers.</td><td>
-RANK.EQ(number,ref,[order])Number: The number whose rank you want to find.Ref: An array of, or a reference to, a list of numbers. Nonnumeric values in Ref are ignored.Order: A number specifying how to rank number.</td></tr>
+RANK.EQ(number,ref,[order])Number: The number whose rank you want to find.Ref: An array of, or a reference to, a list of numbers. Non numeric values in Ref are ignored.Order: A number specifying how to rank number.</td></tr>
 <tr>
 <td>
 RANK</td><td>
@@ -4233,7 +4233,7 @@ Returns</td></tr>
 Path of the current directory or folder.</td></tr>
 <tr>
 <td>
-"numfile"</td><td>
+"num file"</td><td>
 Number of active worksheets in the open workbooks.</td></tr>
 <tr>
 <td>
@@ -4241,7 +4241,7 @@ Number of active worksheets in the open workbooks.</td></tr>
 Returns the absolute cell reference of the top and leftmost cell visible in the window.</td></tr>
 <tr>
 <td>
-"osversion"</td><td>
+"os version"</td><td>
 Current operating system version, as text.</td></tr>
 <tr>
 <td>
@@ -5121,7 +5121,7 @@ WEBSERVICE(url)Url: The URL of the web service.</td></tr>
 
 ## Custom Cell Types
 
-Essential Grid allows you to create custom derived controls to use additional cell types. This requires a cellmodel class and a cellrenderer class. The cellmodel class creates the actual cell control while the cellrenderer class handles the UI requirements of the cell control. The custom cell type can be created by  registering the cellmodel to the corresponding grid by naming this cell type. It can be enabled by assigning its name to the style.CellType property.
+Essential Grid allows you to create custom derived controls to use additional cell types. This requires a cell model class and a cell renderer class. The cell model class creates the actual cell control while the cell renderer class handles the UI requirements of the cell control. The custom cell type can be created by  registering the cell model to the corresponding grid by naming this cell type. It can be enabled by assigning its name to the style.CellType property.
 
 In general, the built-in cell types are also constructed only in this way. Every such cell type has its own cell model and renderer classes in the code base. These cell model and renderer classes originate from GridCellModelBase and GridCellRendererBase classes. These two classes define the basic functionality for a cell type.
 
@@ -5133,7 +5133,7 @@ This cell displays customized drop-downs in grid cells. To attach a drop-down to
 
 #### Example
 
-For example, let us create a custom drop-down which lists an image alongside text in each entry and sets the text of the current drop-down selection as the cell value. The cellmodel class just creates the cell type by calling the cellrenderer. The cellrenderer then loads the cell with ImageTextListBoxItem (a custom control having two properties, Image and Text) to show image alongside text. The renderer then overrides the ArrangeUIElement method in order to bind the drop down to the data source, which is a collection of ImageTextListBoxItem and sets its current selection based on current cell value. It triggers the ComboBoxSelectionChanged event to set the new cell value based on the current drop-down selection. 
+For example, let us create a custom drop-down which lists an image alongside text in each entry and sets the text of the current drop-down selection as the cell value. The cell model class just creates the cell type by calling the cell renderer. The cell renderer then loads the cell with ImageTextListBoxItem (a custom control having two properties, Image and Text) to show image alongside text. The renderer then overrides the ArrangeUIElement method in order to bind the drop down to the data source, which is a collection of ImageTextListBoxItem and sets its current selection based on current cell value. It triggers the ComboBoxSelectionChanged event to set the new cell value based on the current drop-down selection. 
 
 #### CellModel class
 
@@ -5576,7 +5576,7 @@ The Rich Text control will allow you to display and edit rich text in grid cells
 
 #### Example
 
-It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cellrenderer must be derived from GridVirtualizingCellRenderer, whose OnIntializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
+It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cell renderer must be derived from GridVirtualizingCellRenderer, whose OnIntializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
 
 #### CellModel class
 

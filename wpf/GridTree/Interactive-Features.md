@@ -208,7 +208,7 @@ The GridTree control also supports the tri-state sorting. There are three states
 * Descending—sorts the records in a decreasing order.
 * No Sorting—it retains the records in their original state.
 
-This sorting can be enabled by using the EnableTriStateSorting property. The no sorting state will occur after the decending state. The following code example illustrates how to enable the tri-state sorting.
+This sorting can be enabled by using the EnableTriStateSorting property. The no sorting state will occur after the descending state. The following code example illustrates how to enable the tri-state sorting.
 
 {% tabs %}
 {% highlight c# %}
@@ -254,7 +254,7 @@ The GridTree control also features the custom sorting. The following additional 
 ## Column Sizing
 
 
-The GridTree control supports autosizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
+The GridTree control supports auto sizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
 
 N> You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled.
 
@@ -262,7 +262,7 @@ You can enable this feature in two ways.
 
 The first is to set the GridTreeControl.PercentSizingBehavior to any value except “None”. 
 
-The second action is to populate the GridTreeControl.Columns collection, and to set the GridTreeColumn.PercentWidth property for each of the columns that have to be autosized as the Grid Tree is sized. 
+The second action is to populate the GridTreeControl.Columns collection, and to set the GridTreeColumn.PercentWidth property for each of the columns that have to be auto sized as the Grid Tree is sized. 
 
 The following code example illustrates these settings.
 
@@ -299,7 +299,7 @@ The PercentSizingBehavior property provides the following options to size the co
 
 * None–No automatic sizing will be done. The displayed column width will either be the default value (gridTreeControl1.DefaultColumnWidth), or the width specified in the GridTreeColumn.Width property. This is the default behavior.
 * SizeUntouchedColumns–This option will autosize the columns which have the PercentWidth property set, as long as the user does not explicitly change the width of this column through the UI. If the user changes the column size, the column width will not be changed as the Grid Tree is sized.
-* NoSizingIfAnyTouched–If the user sets the size of any column through the UI, all autosizing stops and the column size will not be changed as the Grid Tree is sized.
+* NoSizingIfAnyTouched–If the user sets the size of any column through the UI, all auto sizing stops and the column size will not be changed as the Grid Tree is sized.
 * SizeAlwaysPercent–This option will not allow the user to size any column. The columns will always use the percentage sizing to determine their size as the Grid Tree is sized. 
 
 ## Update Mode
@@ -729,7 +729,7 @@ Data Type</th></tr>
 <tr>
 <td>
 StyleManager </td><td>
-Used to Customize the GridTreeControl Apperarance</td><td>
+Used to Customize the GridTreeControl Appearance</td><td>
 Dependency</td><td>
 GridTreeStyleManager</td></tr>
 </table>
@@ -914,7 +914,7 @@ Description}}</th></tr>
 <tr>
 <td>
 ExpanderBackground</td><td>
-Used to change the backgound color of the expander</td></tr>
+Used to change the background color of the expander</td></tr>
 <tr>
 <td>
 ExpanderBorderBrush</td><td>
@@ -1039,7 +1039,7 @@ Description</th></tr>
 <tr>
 <td>
 HeaderBackgroundBrush</td><td>
-Used to change the backgound color of the header</td></tr>
+Used to change the background color of the header</td></tr>
 <tr>
 <td>
 HeaderFont</td><td>
@@ -1207,7 +1207,7 @@ Used to change the current cell selection background color</td></tr>
 <tr>
 <td>
 CurrentCellSelectionForeground</td><td>
-Used to change the curent cell selection foreground color</td></tr>
+Used to change the current cell selection foreground color</td></tr>
 <tr>
 <td>
 HeaderHoverForegroundBrush</td><td>
@@ -1227,7 +1227,7 @@ Used to change the row header background color</td></tr>
 <tr>
 <td>
 RowHeaderForegroundBrush</td><td>
-Used to change the row heaeder foreground color</td></tr>
+Used to change the row header foreground color</td></tr>
 <tr>
 <td>
 RowHoverBackgroundBrush</td><td>
@@ -1235,7 +1235,7 @@ Used to change the hover color of the GridTree control</td></tr>
 <tr>
 <td>
 RowHoverForegroundBrush</td><td>
-Used to change the hover foregrond color of the GridTree control</td></tr>
+Used to change the hover foreground color of the GridTree control</td></tr>
 </table>
 
 
@@ -1359,7 +1359,7 @@ void</th></tr>
 <tr>
 <th>
 Deserialize</th><th>
-This method deserializes the XML file.</th><th>
+This method deserialize the XML file.</th><th>
 (String filename)</th><th>
 Public</th><th>
  void</th></tr>
