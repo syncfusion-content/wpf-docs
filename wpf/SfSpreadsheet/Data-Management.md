@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Management
+title: Data Management in SfSpreadsheet
 description: How to import and export the data in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
@@ -17,7 +17,7 @@ SfSpreadsheet provides support to import data into a SfSpreadSheet and export da
 * Business Objects
 * Array
 
-For your reference, To import the data from a datatable, you can use [ImportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#importing-data-to-worksheets) 
+For your reference, To import the data from a data table, you can use [ImportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#importing-data-to-worksheets) 
 method
 
 {% tabs %}
@@ -30,7 +30,7 @@ spreadsheet.ActiveGrid.InvalidateCells();
 {% endhighlight %}
 {% endtabs %}
 
-To Export the data from a datatable, you can use [ExportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#exporting-from-worksheet-to-data-table)
+To Export the data from a data table, you can use [ExportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#exporting-from-worksheet-to-data-table)
 method
 
 {% tabs %}

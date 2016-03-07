@@ -424,7 +424,7 @@ Used to get or set the index of range of rows being resized.</td></tr>
 <tr>
 <td>
 Reason</td><td>
-Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:* CancelMode–Indicates current operation was cancelled.* DoubleClick–Indicates user double-clicked.* HitTest–Indicates this is a Hit-Test query.* MouseDown–Indicates user pressed mouse down.* MouseMove–Indicates user is moving the mouse.* MouseUp–Indicates user released the mouse.* ResetDefault–Indicates changed row heights will be reset back to default value.* ResetHide–Indicates hidden rows will be made visible.</td></tr>
+Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:* CancelMode–Indicates current operation was canceled.* DoubleClick–Indicates user double-clicked.* HitTest–Indicates this is a Hit-Test query.* MouseDown–Indicates user pressed mouse down.* MouseMove–Indicates user is moving the mouse.* MouseUp–Indicates user released the mouse.* ResetDefault–Indicates changed row heights will be reset back to default value.* ResetHide–Indicates hidden rows will be made visible.</td></tr>
 <tr>
 <td>
 <br>Height</td><td>
@@ -456,7 +456,7 @@ Used to get or set the index of range of columns being resized.</td></tr>
 <tr>
 <td>
 Reason</td><td>
-Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:* CancelMode–Indicates current operation was cancelled.* DoubleClick–Indicates user double-clicked.* HitTest–Indicates this is a Hit-Test query.* MouseDown–Indicates user pressed mouse down.* MouseMove–Indicates user is moving the mouse.* MouseUp–Indicates user released the mouse.* ResetDefault–Indicates changed column widths will be reset back to default value.* ResetHide–Indicates hidden columns will be made visible.<br></td></tr>
+Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:* CancelMode–Indicates current operation was canceled.* DoubleClick–Indicates user double-clicked.* HitTest–Indicates this is a Hit-Test query.* MouseDown–Indicates user pressed mouse down.* MouseMove–Indicates user is moving the mouse.* MouseUp–Indicates user released the mouse.* ResetDefault–Indicates changed column widths will be reset back to default value.* ResetHide–Indicates hidden columns will be made visible.<br></td></tr>
 <tr>
 <td>
 Width</td><td>
@@ -540,7 +540,7 @@ Used to get or set the index of range of rows being resized.</td></tr>
 <tr>
 <td>
 Reason</td><td>
-Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:CancelMode – Indicates current operation was cancelled.DoubleClick – Indicates user double-clicked.HitTest – Indicates this is a Hit-Test query.MouseDown – Indicates user pressed mouse down.MouseMove – Indicates user is moving the mouse.MouseUp – Indicates user released the mouse.ResetDefault – Indicates changed row heights will be reset back to default value.ResetHide – Indicates hidden rows will be made visible.</td></tr>
+Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:CancelMode – Indicates current operation was canceled.DoubleClick – Indicates user double-clicked.HitTest – Indicates this is a Hit-Test query.MouseDown – Indicates user pressed mouse down.MouseMove – Indicates user is moving the mouse.MouseUp – Indicates user released the mouse.ResetDefault – Indicates changed row heights will be reset back to default value.ResetHide – Indicates hidden rows will be made visible.</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -573,7 +573,7 @@ Used to get or set the index of range of columns being resized.</td></tr>
 <tr>
 <td>
 Reason</td><td>
-Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:CancelMode – Indicates current operation was cancelled.DoubleClick – Indicates user double-clicked.HitTest – Indicates this is a Hit-Test query.MouseDown – Indicates user pressed mouse down.MouseMove – Indicates user is moving the mouse.MouseUp – Indicates user released the mouse.ResetDefault – Indicates changed column widths will be reset back to default value.ResetHide – Indicates hidden columns will be made visible.</td></tr>
+Gives a hint about user action and reason for this event.Accepts a value of type GridResizeCellsReason enumeration:CancelMode – Indicates current operation was canceled.DoubleClick – Indicates user double-clicked.HitTest – Indicates this is a Hit-Test query.MouseDown – Indicates user pressed mouse down.MouseMove – Indicates user is moving the mouse.MouseUp – Indicates user released the mouse.ResetDefault – Indicates changed column widths will be reset back to default value.ResetHide – Indicates hidden columns will be made visible.</td></tr>
 <tr>
 <td>
 Width</td><td>

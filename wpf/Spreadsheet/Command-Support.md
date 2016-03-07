@@ -205,7 +205,7 @@ CommandBase</td><td>
 NA</td></tr>
 <tr>
 <td>
-RowColumnHeadersVisiblityCommand </td><td>
+RowColumnHeadersVisibilityCommand </td><td>
 Command to show or hide row and column header. </td><td>
 Dependency Property</td><td>
 CommandBase</td><td>
