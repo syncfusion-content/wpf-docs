@@ -11,7 +11,7 @@ documentation: ug
 
 # Setting VisualStyle for PercentTextBox
 
-The appearance of the ParcentTextBox control can be customized by using the VisualStyle property. The following are the various built-in visual styles for PaercentTextBox control.
+The appearance of the PercentTextBox control can be customized by using the VisualStyle property. The following are the various built-in visual styles for PaercentTextBox control.
 
 * Blend
 * Office2003

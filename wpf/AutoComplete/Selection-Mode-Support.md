@@ -20,7 +20,7 @@ SelectionMode-Single
 
 
 
-When the SelectionMode is set as Multiple, you can select multiple items by using the SeparatorChar property to separate the selected items. By default the SeparatorChar is “;”. This allows you to select multiple items by using the SelectionMode property. Once an item is selected the Separatorchar is to be entered in the text box to select the next item.
+When the SelectionMode is set as Multiple, you can select multiple items by using the SeparatorChar property to separate the selected items. By default the SeparatorChar is “;”. This allows you to select multiple items by using the SelectionMode property. Once an item is selected the SeparatorChar is to be entered in the text box to select the next item.
 
 The following image illustrates the Multiple selection mode.
 
@@ -42,7 +42,7 @@ SelectionMode—Extended
 
 Adding Single, Multiple & Extended Selection Support to an Application 
 
-The Selectionmode property is used to attain these functionalities by setting its value as Single or Multiple or Extended. By default its value is Single. The following code snippet is used to set the SelectionMode property. 
+The SelectionMode property is used to attain these functionalities by setting its value as Single or Multiple or Extended. By default its value is Single. The following code snippet is used to set the SelectionMode property. 
 
 {% highlight xaml %}
 <syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/>
@@ -91,7 +91,7 @@ Reference links </th></tr>
 <tr>
 <td>
 SelectionModeChanged</td><td>
- When the SelectionMode property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+ When the SelectionMode property value is changed, this event will be triggered.It cannot be canceled.</td><td>
 DependencyObject,DependencyPropertyChangedEventArgs</td><td>
 DependencyPropertyChangedCallBack </td><td>
 </td></tr>

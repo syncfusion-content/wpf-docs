@@ -116,7 +116,7 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 
 ### Maximize Docking Window to full screen
 
-`MaximizeMode` helps to change the maximization behaviour of DockingWinodw. Docking Windows occupies entire screen when MaximizeMode set as FullScreen and DockingWindow in the Maximized state.
+`MaximizeMode` helps to change the maximization behavior of DockingWindow. Docking Windows occupies entire screen when MaximizeMode set as FullScreen and DockingWindow in the Maximized state.
 
 {% tabs %}
 

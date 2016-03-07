@@ -638,11 +638,11 @@ DocManager1.LoadDockState();
 
 Refer Also
 
-How to Clearing StatePersistance Entries
+How to Clearing StatePersistence Entries
 
 ## Hosting Windows Form control in DockingManager
 
-Hosting a Windows Form Host in DockingManager is an easy process for which you need to set UseInteropCompatibilityMode=true in order to use Winform controls with in DockingManager. The following codes show how to use webbrowser control with in DockingManager.
+Hosting a Windows Form Host in DockingManager is an easy process for which you need to set UseInteropCompatibilityMode=true in order to use WinForm controls with in DockingManager. The following codes show how to use web browser control with in DockingManager.
 
 {% tabs %}
 
@@ -833,7 +833,7 @@ This feature helps to Maximize/Minimize Docked Windows for better usage of each 
 
 ![](Advanced-Features_images/Advanced-Features_img18.png)
 
-Minimise/Maximize Support
+Minimize/Maximize Support
 {:.caption}
 
 #### Samples Link
@@ -910,7 +910,7 @@ This property will be used to represent the state of the maximized or minimized 
 
 ### Minimize /Maximize Property for Docked Windows:
 
-When the docked window is maximized the DockWindowState property will be set as Maximised. The maximized DockWindow can be restored by clicking on the restore button.
+When the docked window is maximized the DockWindowState property will be set as Maximized. The maximized DockWindow can be restored by clicking on the restore button.
 
 When the docked window is minimized it will go to AutoHidden state and the DockWindowState property will be set as Minimized. The minimized docked window can be restored by clicking on minimized item header.
 
@@ -953,7 +953,7 @@ dockingManager.MinimizeButtonEnabled = true;
 {% endtabs %} 
 
 
-### CanMaximise/CanMinimize Support
+### CanMaximize/CanMinimize Support
 
 If the default value is true, then maximize support is enabled. If the property value is false the maximize button will not be visible. If the property value is true the button will be visible.
 

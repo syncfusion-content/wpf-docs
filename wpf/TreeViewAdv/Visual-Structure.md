@@ -18,5 +18,5 @@ The elements of the control are described below:
 * **Expander** – Used to Expand/Collapse the TreeViewItem
 * **Root** **Line** - This line is used to enhance the visual of the connection between TreeViewItems and its parent.
 * **LeftImage** - Displays the image in front of the TreeViewItem.
-* **RightImage** – Diaplays the image to the right of the TreeViewItemAdv
+* **RightImage** – Displays the image to the right of the TreeViewItemAdv
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with ToolBarAdv control
 
-## Specifying the Position of ToolBarAdvs in a ToolBarTrayAdv
+## Specifying the Position of ToolBarAdv's in a ToolBarTrayAdv
 
 The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the `Band` and the `BandIndex` properties. Band indicates the band in ToolBarTrayAdv, where ToolBarAdv has to be placed. BandIndex indicates the order in which the ToolBarAdv has to be placed within the band.
 

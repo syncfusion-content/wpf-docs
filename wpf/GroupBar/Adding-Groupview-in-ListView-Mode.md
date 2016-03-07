@@ -7,7 +7,7 @@ control: GroupBar
 documentation: ug
 ---
 
-# Adding Groupview in ListView Mode
+# Adding GroupView in ListView Mode
 
 You can arrange GroupView Items in list view mode by using the IsListViewMode property. This property is used to enable or disable the layout of items in a GroupView in the ListView mode.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Spell Checking Options
 
-The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of  email id's and addresses, filenames, htmltags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
+The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of  email id's and addresses, filenames, html tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 
 ### Properties
 
@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 ExcludeEmailAddress</td><td>
-Specifies whether or not to ignore email address during Spell Ceck. Default value is True.</td></tr>
+Specifies whether or not to ignore email address during Spell Check. Default value is True.</td></tr>
 <tr>
 <td>
 ExcludeFilenames</td><td>
@@ -77,7 +77,7 @@ SpellCheck.ExcludeWordsWithNumbers = true;
 
 To access the sample link:
 
-1. Open the Synfusion Dashboard.
+1. Open the Syncfusion Dashboard.
 2. Select User Interface.
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to Tools -> SpellChecker -> SpellCheckerDemo.

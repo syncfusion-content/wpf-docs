@@ -97,7 +97,7 @@ IsScrollingOnCircle</td></tr>
 NegativeForeground</td><td>
 Dependency Property</td><td>
 Brush</td><td>
-Gets or sets the NegativeForground property.</td><td>
+Gets or sets the NegativeForeground property.</td><td>
 Red</td><td>
 NegativeForeground</td></tr>
 <tr>

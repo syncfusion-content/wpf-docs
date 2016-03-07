@@ -146,7 +146,7 @@ Dependency Property<br/><br/></td><td>
 ObservableCollection<br/><br/></td></tr>
 <tr>
 <td>
-IsoverflowItem<br/><br/></td><td>
+IsOverflowItem<br/><br/></td><td>
 Gets or sets a value indicating whether an item can be displayed in overflow panel.<br/><br/></td><td>
 Attached Property<br/><br/></td><td>
 Bool<br/><br/></td></tr>

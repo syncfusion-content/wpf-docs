@@ -572,7 +572,7 @@ DockTabAlignment = "Bottom"
 DockTabAlignment = "Right"
 {:.caption}
 
-### Sidepanel TabItem Customization
+### SidePanel TabItem Customization
 
 ### SidePanel Header Background
 
@@ -660,7 +660,7 @@ TabHeader with foreground
 
 ### Enable/Disable Docking, Floating, AutoHide, Closing
 
-The following description gives you a clear knowledge aboutdocking, float and closing a dockable window.
+The following description gives you a clear knowledge about docking, float and closing a dockable window.
 
 ###	Docking a Dockable Window
 
@@ -1373,12 +1373,12 @@ DockingManager.CollapseDefaultContextMenuItems = true;
 
 ![](Interactive-Features_images/Interactive-Features_img25.jpeg)
 
-Collapse Default Menuitems
+Collapse Default MenuItems
 {:.caption}
 
 ## Context Menu, Context Menu Button Visibility
 
-IsContextMenuButtonVisible property is used to control the visibility of the Context Menu Button, which is available when the Header of Docked Window or Float Window is right-clicked. The display of Context Menu can be disabled by setting IsContextMenuVisibile to False.
+IsContextMenuButtonVisible property is used to control the visibility of the Context Menu Button, which is available when the Header of Docked Window or Float Window is right-clicked. The display of Context Menu can be disabled by setting IsContextMenuVisible to False.
 
 The following code illustrates the same:
 
@@ -1492,7 +1492,7 @@ IsContextMenuButtonVisible=”True” for Individual Child
 
 ### Layout Related Features
 
-### DesierWidth and DesierHeight in Dock/Float Modes
+### DesireWidth and DesireHeight in Dock/Float Modes
 
 Height and width of the docking window in the docked state is set by using properties like DesiredWidthInDockedMode and DesiredHeightInDockedMode respectively.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-TabSplitter is similar to VS 2008 style spilt view of Tabbed Groups.
+TabSplitter is similar to VS 2008 style Split view of Tabbed Groups.
 
 ###Features
 

@@ -655,7 +655,7 @@ End Class
 
 {% endtabs %}
 
-The TreeVewAdv generates as shown in the following screenshot:
+The TreeViewAdv generates as shown in the following screenshot:
 
 ![](Customizing_data_templates_images/Customizing_data_templates_img2.jpeg)
 

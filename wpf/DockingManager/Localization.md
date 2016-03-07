@@ -38,7 +38,7 @@ Sets the string for the ToolTip of Auto Hide button in the DockingManager.</td>
 <tr>
 <td>
 CloseButtonTooltipText</td><td>
-Sets the string for ToolTipof Close button in DockingManager.</td></tr>
+Sets the string for ToolTip of Close button in DockingManager.</td></tr>
 <tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img3.png)'|markdownify}}

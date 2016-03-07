@@ -169,7 +169,7 @@ Minimum allowed value for the DoubleTextBox. If the new `MinValue` property valu
 
 ## Maximum Value
 
-Maximum allowed value for the DoubleTextBox. If the `MinValue` property is greater than the new `MaxValue` property, then the `MinValue` property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the `Value` property is set equal to the Maxvalue.
+Maximum allowed value for the DoubleTextBox. If the `MinValue` property is greater than the new `MaxValue` property, then the `MinValue` property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the `Value` property is set equal to the MaxValue.
 
 ## Setting Minimum and Maximum Value
 
@@ -372,7 +372,7 @@ doubleTextBox.ValueChanged+=doubleTextBox_ValueChanged
 
 {% endtabs %}
 
-The Valuechanged event can be handled as follows:
+The ValueChanged event can be handled as follows:
 
 {% tabs %}
 
@@ -627,7 +627,7 @@ doubleTextBox.MinValueChanged += doubleTextBox_MinValueChanged
 
 {% endtabs %}
 
-To handled the minvaluechanged event, use this follow code below
+To handle the MinValueChanged event, use this follow code below
 
 {% tabs %}
 
