@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# Detect the closing of a DockingManagerchild
+# Detect the closing of a DockingManagerChild
 
 DockStateChanged and CloseButtonClick are the two events, which can be used to detect whether the child is closed. DockStateChanged event is raised whenever a child changes its State. CloseButtonClick event is raised only when close button of the Document child is clicked. The following code describes how to handle the closing of a child using DockStateChanged event.
 
