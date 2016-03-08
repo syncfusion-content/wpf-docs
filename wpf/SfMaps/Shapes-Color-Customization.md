@@ -19,7 +19,7 @@ The important property that makes an impact on shape colors is AutoFillColors. T
 
 ## About ShapeFill, ShapeStroke and ShapeStrokeThickness
 
-The above mentioned properties are available in the ShapesSettingproperty of the ShapeFileLayer. ShapeSettingdefines the basic customization settings of shapes in the map. 
+The above mentioned properties are available in the ShapesSetting property of the ShapeFileLayer. ShapeSetting defines the basic customization settings of shapes in the map. 
 
 ## ShapeFill
 

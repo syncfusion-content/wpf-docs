@@ -49,4 +49,4 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 {% endtabs %}
 
-When the button is clicked width and height of the controls changes dynamically so that the binded FloatWindowWidth and FloatWindowHeight gets reflected dynamically. Similarly we can use FloatWindowSize property to set size of floatwindow dynamically.
+When the button is clicked width and height of the controls changes dynamically so that the binded FloatWindowWidth and FloatWindowHeight gets reflected dynamically. Similarly we can use FloatWindowSize property to set size of float window dynamically.

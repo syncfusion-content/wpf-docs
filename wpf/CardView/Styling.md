@@ -181,5 +181,5 @@ This generates the following CardView control.
 
 ![](Styling_images/Styling_img2.png)
 
-CardView control styled with ItemContainerStyleSelctor
+CardView control styled with ItemContainerStyleSelector
 {:.caption}

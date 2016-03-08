@@ -68,7 +68,7 @@ Grid1.Children.Add(doubleTextBox)
 
 The Number Format can be customize either by using the `NumberFormat` property or the `NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator` properties of DoubleTextBox.
 
-The following code illustrate how to customize the numberformat using NumberFormat property.
+The following code illustrate how to customize the number format using NumberFormat property.
 
 The Namespace used for NumberFormatInfo as follows:
 

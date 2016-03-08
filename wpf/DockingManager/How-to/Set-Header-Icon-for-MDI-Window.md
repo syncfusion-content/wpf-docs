@@ -55,6 +55,6 @@ The Icon property is used to specify the icon for Document children. Consider th
 
 {% endhighlight  %}
 
-In the above code a DrawingImage object is created as a staticresource and assigned to the Icon property of DockingManager. The MDIWindow with the icon on left top corner will be displayed. 
+In the above code a DrawingImage object is created as a static resource and assigned to the Icon property of DockingManager. The MDIWindow with the icon on left top corner will be displayed. 
 
 ![](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)

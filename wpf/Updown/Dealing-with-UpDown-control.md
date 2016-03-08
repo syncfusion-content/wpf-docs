@@ -87,7 +87,7 @@ Grid1.Children.Add(updown);
 
 ## Restrict change of value
 
-To restrict the change of the values in the `UpDown` control by cancelling the `ValueChanging` event as shown in the following code example. 
+To restrict the change of the values in the `UpDown` control by canceling the `ValueChanging` event as shown in the following code example. 
 
 {% tabs %}
 

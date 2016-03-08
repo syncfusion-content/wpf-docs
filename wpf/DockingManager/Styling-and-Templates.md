@@ -14,7 +14,7 @@ The UI for Dock, Float and Document windows of DockingManager can be changed usi
 
 ## Visual Styles
 
-SkinManager provides rich and professional look and feel UI for the Dockwindows. Some of the available visual style are as follows:
+SkinManager provides rich and professional look and feel UI for the Dock windows. Some of the available visual style are as follows:
 
 
 * Blend
@@ -98,7 +98,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black")
 ![](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
 
 
-* Office2007Silver – Setting visualstyle for the DockingManager as Office2007Silver.
+* Office2007Silver – Setting visual style for the DockingManager as Office2007Silver.
 
 {% tabs %}
 
@@ -578,7 +578,7 @@ The Restore button for the dock window can be customized using the `RestoreButto
 
 ### TabItemTemplate
 
-DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its tabitem template can be customized using `TabItemTemplate` with the TargetType as TabItem.
+DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingManager and its tab item template can be customized using `TabItemTemplate` with the TargetType as TabItem.
 
 {% tabs %}
 
@@ -926,7 +926,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 ### FloatWindowStyle
 
-The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as AutoTemplatedContentControl. It gets or sets the style for the floatwindow when it is rendered.
+The style for the float window can be applied using the `FloatWindowStyle` property of the DockingManager by setting its TargetType as AutoTemplatedContentControl. It gets or sets the style for the FloatWindow when it is rendered.
 
 {% tabs %}
 
@@ -957,7 +957,7 @@ The style for the float window can be applied using the `FloatWindowStyle` prope
 
 ### NativeWindowStyle
 
-The NativeFloatwindow of DockingManager can be customized using the `NativeWindowStyle` property of the DockingManager with the TargetType as NativeFloatWindow.
+The NativeFloatWindow of DockingManager can be customized using the `NativeWindowStyle` property of the DockingManager with the TargetType as NativeFloatWindow.
 
 {% tabs %}
 
@@ -1133,7 +1133,7 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 
 ###  SidePanelStyle
 
-The style for the sidepanel of the DockingManager can be customized using the `SidePanelStyle` property with the TargetType as SidePanel.
+The style for the SidePanel of the DockingManager can be customized using the `SidePanelStyle` property with the TargetType as SidePanel.
 
 {% tabs %}
 
@@ -1167,7 +1167,7 @@ The style for the sidepanel of the DockingManager can be customized using the `S
 
 ## Drag Provider Style
 
-DragProviders are appear while dragging a window. DragProviders are displayed for providing options to dock the floatwindow while dragging and this drag provider button templates can be changed by the following templates.
+DragProviders are appear while dragging a window. DragProviders are displayed for providing options to dock the FloatWindow while dragging and this drag provider button templates can be changed by the following templates.
 
 ### BottomDragProvider
 
@@ -1524,7 +1524,7 @@ The header style for the MDI Document can be changed using the `DocumentMDIHeade
 
 ## TabControl style
 
-Tabcontrol inside the Tabbed DockWindow can be customized using `TabControlStyle` with the TargetType TabControl in the DockingManager
+TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle` with the TargetType TabControl in the DockingManager
 
 {% tabs %}
 

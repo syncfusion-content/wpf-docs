@@ -485,7 +485,7 @@ You can sign the application executable by using the Post-build command and use 
 
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\signtool.exe" sign /f "$(ProjectDir)syncfusion.pfx" /p Coolcomp299 /v "$(ProjectDir)obj\x86\$(ConfigurationName)\DataGridSampleBrowser.exe"
 
-N> Now,sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory.
+N> Now,sign the EXE inside obj folder and Syncfusion.pfx file placed inside Project directory.
 
 
 

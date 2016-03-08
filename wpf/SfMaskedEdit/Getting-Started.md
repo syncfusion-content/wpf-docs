@@ -15,7 +15,7 @@ Namespace : Syncfusion.Windows.Controls.Input
 
 Assembly: Syncfusion.SfInput.WPF
 
-Dependentassembly: Syncfusion.SfShared.WPF
+Dependent assembly: Syncfusion.SfShared.WPF
 
 ### Create the SfMaskedEdit control by using XAML
 

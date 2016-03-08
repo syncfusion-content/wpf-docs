@@ -59,7 +59,7 @@ To make the document child window as MDI document, set the `ContainerMode` as `M
 
 The state of the MDI Window can be set using the `SetMDIWindowState()` method of DocumentContainer. 
 
-### Setting MDI Windowstate as Minimized
+### Setting MDI WindowState as Minimized
 
 {% tabs %}
 
@@ -81,7 +81,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized)
 
 
 
-### Setting MDI Windowstate as Maximized
+### Setting MDI WindowState as Maximized
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).IsInMDIMaximizedState =
 
 ## Resizing MDI
 
-MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property `IsAllowMDIResize` of the `Documentcontainer` that can be get using the `DocContainer` property of the DockingManager. By default, its values is `True`.
+MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property `IsAllowMDIResize` of the `DocumentContainer` that can be get using the `DocContainer` property of the DockingManager. By default, its values is `True`.
 
 {% tabs %}
 
@@ -483,7 +483,7 @@ TDI document can be grouped like VisualStudio. It can be grouped by drag and Dro
 
 ### Creating Vertical Tab Group 
 
-To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticallTabGroup(UIElement)` of the DocumentContainer.
+To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticalTabGroup(UIElement)` of the DocumentContainer.
 
 {% tabs %}
 
@@ -523,7 +523,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGrou
 
 ### Adding Tab in a Group 
 
-In TDI document, new tab group can be created by dragging the TabItem into the Document area and click the "New Tab Group" menuitem from context menu item.
+In TDI document, new tab group can be created by dragging the TabItem into the Document area and click the "New Tab Group" menu item from context menu item.
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
 

@@ -96,7 +96,7 @@ bool(false)</td></tr>
 <tr>
 <td>
 CheckIconType</td><td>
-Gets or sets the CeckIconType of MenuItemAdv.</td><td>
+Gets or sets the CheckIconType of MenuItemAdv.</td><td>
 DependencyProperty</td><td>
 CheckIconType(CheckBox)</td></tr>
 <tr>

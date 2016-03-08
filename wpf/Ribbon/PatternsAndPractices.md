@@ -531,7 +531,7 @@ Ribbon control provides PRISM support. The following steps explain about creatin
    * Microsoft.Practices.Composite.Presentation.dll
    * Microsoft.Practices.Composite.UnityExtensions.dll
    * Microsoft.Practices.ServiceLocation.dll
-   * Microsoft.Praactices.Unity.dll
+   * Microsoft.Practices.Unity.dll
 
 2.Rename MainWindow to Shell in the Project
 
@@ -679,7 +679,7 @@ Right click the Solution project, point to “Add” and then click “NewProjec
     * Microsoft.Practices.Composite.Presentation.dll
     * Microsoft.Practices.Composite.UnityExtensions.dll
     * Microsoft.Practices.ServiceLocation.dll
-    * Microsoft.Praactices.Unity.dll
+    * Microsoft.Practices.Unity.dll
 
 7.In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 

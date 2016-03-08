@@ -79,7 +79,7 @@ LabelPath of the leaves is WeightValuePath by default and you can change the Lab
 
 ## LabelTemplate
 
-LabelTemplate of LeafitemSettings class provides the template for the labels of the leafNodes.
+LabelTemplate of LeafItemSettings class provides the template for the labels of the leafNodes.
 
 
 {% highlight xaml %}

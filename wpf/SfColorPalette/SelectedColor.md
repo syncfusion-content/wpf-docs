@@ -9,7 +9,7 @@ documentation: ug
 
 # SelectedColor
 
-Selected color property of the SfColorPallette returns the currently selected color.
+Selected color property of the SfColorPalette returns the currently selected color.
 
 ![](SelectedColor_images/SelectedColor_img1.png)
 

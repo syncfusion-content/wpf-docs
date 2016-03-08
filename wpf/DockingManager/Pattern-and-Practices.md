@@ -10,7 +10,7 @@ documentation: ug
 
 ## MVVM 
 
-This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Itemscontrol, it is not possible to have a traditional `Itemsource` binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the DockingManager.
+This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Items Control, it is not possible to have a traditional `ItemsSource` binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the DockingManager.
 
 Here a simple text-reader application is used to demonstrate this approach.
 
@@ -362,7 +362,7 @@ End Sub
 
 {% endtabs %}
 
-8.Adding Views to the Module, shown here is bottomleftmodule, similary the view for the module can be added according to number of modules.
+8.Adding Views to the Module, shown here is BottomLeftModule, similarly the view for the module can be added according to number of modules.
 
 {% tabs %}
 

@@ -15,7 +15,7 @@ The PropertyGrid control supports several built-in editors, to give a good look 
 
 Using CategoryEditor, you can set the related properties on a custom control. 
 
-In the below example, Text related properties are grouped under one category using CategoryEditor support. You can add any number of CategoryEditors. You must add property names in the Properties collection CategoryEditor. Theproperties can also be shown in a  separate tab using the Category property of CategoryEditor. You have to set the Template to group the related properties, using the EditorTemplate property of CategoryEditor.
+In the below example, Text related properties are grouped under one category using CategoryEditor support. You can add any number of CategoryEditors. You must add property names in the Properties collection CategoryEditor. The properties can also be shown in a  separate tab using the Category property of CategoryEditor. You have to set the Template to group the related properties, using the EditorTemplate property of CategoryEditor.
 
 In the below example, FontWeightButton and FontListBox are the custom controls.
 

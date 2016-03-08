@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance 
 
-The appearance of the CalendarEdit control can be customized by using the VisualStyle property. The following are the various built-in visual styles for CalendarEditcontrol.
+The appearance of the CalendarEdit control can be customized by using the VisualStyle property. The following are the various built-in visual styles for CalendarEdit control.
 
 * Blend
 * Office2003

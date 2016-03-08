@@ -56,7 +56,7 @@ RimBackground property used to fill the outer rim (outer circle).
 
 
 
-RadialMenu outer ring flled with color
+RadialMenu outer ring filled with color
 
 
 
@@ -118,7 +118,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 ## Navigation Button Style
 
-The navigation button displayed in the center of radial menu can be styled using NaviationButtonStyle property. 
+The navigation button displayed in the center of radial menu can be styled using NavigationButtonStyle property. 
 
 {%highlight xaml%}
 

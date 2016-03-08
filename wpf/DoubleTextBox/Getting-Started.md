@@ -119,7 +119,7 @@ Culture<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 CultureInfo<br/><br/></td><td>
 Gets or sets the Culture information associated with the DoubleTextBox.<br/><br/></td><td>
-CultureInfor.CurrentCulture<br/><br/></td></tr>
+CultureInfo.CurrentCulture<br/><br/></td></tr>
 <tr>
 <td>
 EnterToMoveNext<br/><br/></td><td>
@@ -335,7 +335,7 @@ LightGray<br/><br/></td></tr>
 EnableRangeAdorner<br/><br/></td><td>
 Dependency property<br/><br/></td><td>
 Bool<br/><br/></td><td>
-Gets or sets the EnableRaneAdorner property.<br/><br/></td><td>
+Gets or sets the EnableRangeAdorner property.<br/><br/></td><td>
 False.<br/><br/></td></tr>
 <tr>
 <td>
@@ -504,7 +504,7 @@ DependencyPropertyChangedEventArgs<br/><br/></td><td>
 Occurs after the number of decimal digits changed.<br/><br/></td></tr>
 <tr>
 <td>
-NumberDecimalSpearatorChanged<br/><br/></td><td>
+NumberDecimalSeparatorChanged<br/><br/></td><td>
 PropertyChangedCallback<br/><br/></td><td>
 DependencyPropertyChangedEventArgs<br/><br/></td><td>
 Occurs after the decimal separator of the number changed<br/><br/></td></tr>

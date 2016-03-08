@@ -134,7 +134,7 @@ Any build in themes can applied to the required control by `VisualStyle` attache
 
 ### Apply themes at run time
 
-Applied build in themes can be chnaged at the runtime by the `VisualStyle` property. Here, a ComboBox Control is used to switch various build-in themes that are referred in the assembly references.
+Applied build in themes can be changed at the runtime by the `VisualStyle` property. Here, a ComboBox Control is used to switch various build-in themes that are referred in the assembly references.
 
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 

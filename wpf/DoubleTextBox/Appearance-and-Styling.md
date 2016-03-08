@@ -11,7 +11,7 @@ documentation: ug
 
 ## Positive Foreground
 
-DoubleTextBox allows to apply the different brush for the positive values using the `PostiveForeground` property. 
+DoubleTextBox allows to apply the different brush for the positive values using the `PositiveForeground` property. 
 
 {% tabs %}
 

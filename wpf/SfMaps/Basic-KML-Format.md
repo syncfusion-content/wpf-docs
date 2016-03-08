@@ -13,7 +13,7 @@ KML is a file format used for rendering geographical data. It uses a tag-based s
 
 Currently, the SfMaps control supports the following KML elements:
 
-* Placemark
+* Place mark
 * Point
 * LinearRing
 * Polygon

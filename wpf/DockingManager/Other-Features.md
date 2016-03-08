@@ -34,7 +34,7 @@ DockingManager.UseAdornerDragProvider = true;
 {% endtabs %} 
 
 
-Simlarly, Float child can be displayed in two ways.  One is using the popup and another is using the adorner layer. The Adorner Float window is enabled by setting UseAdornerFloatWindow=true.
+Similarly, Float child can be displayed in two ways.  One is using the popup and another is using the adorner layer. The Adorner Float window is enabled by setting UseAdornerFloatWindow=true.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ DockingManager.SetHeader(element, "");
 
 ## AutoHide Animation Start /Stop Events
 
-AutoHideAnimationStart event will raise whenever you click on the AWL autohide button. Similarly AutohideAnimationStop is raised after AutohideAnimationStart indicates that animation is completed. You can use these events to update the relevant information in UI or to do some UI related manipulations.
+AutoHideAnimationStart event will raise whenever you click on the AWL AutoHide button. Similarly AutohideAnimationStop is raised after AutohideAnimationStart indicates that animation is completed. You can use these events to update the relevant information in UI or to do some UI related manipulations.
 
 ## AutoHide Visibility
 
@@ -134,7 +134,7 @@ DockingManager.SetCanAutoHide(grid1, false);
 
 ## Enabling/Disabling Animation on mouse over for auto hide
 
-By default, whenever you move your mouse over the AutoHidden tab, the autohide animation will start. You can disable this behavior by setting the IsAutoHideAnimationOnMouseOver=true so that when you move the mouse over the autohide tab it does not start the Autohide animation.  But it will make you click the autohide tab to start autohide animation.
+By default, whenever you move your mouse over the AutoHidden tab, the auto hide animation will start. You can disable this behavior by setting the IsAutoHideAnimationOnMouseOver=true so that when you move the mouse over the auto hide tab it does not start the AutoHide animation.  But it will make you click the auto hide tab to start auto hide animation.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ DockingManager.IsAnimationEnabledOnMouseOver = true;
 
 ## AutoHide Animation Delay
 
-You can control the animation speed of autohide by using the AnimationDelay property as given below :
+You can control the animation speed of auto hide by using the AnimationDelay property as given below :
 
 {% tabs %}
 
@@ -233,7 +233,7 @@ DockingManager.SetDockAbility(grid1, ability);
 
 ## Get/Set DockedElementTabbed host size
 
-Get/Set HostSize() method has direct control over the size of the DockedElementTabbedHost,  which  acts as a container for the dockingchild in both Dock and Float state. The container for Dock and Float state, which belongs to the given element, can be obtained as follows.
+Get/Set HostSize() method has direct control over the size of the DockedElementTabbedHost,  which  acts as a container for the docking child in both Dock and Float state. The container for Dock and Float state, which belongs to the given element, can be obtained as follows.
 
 
 {% highlight c# %}
@@ -360,7 +360,7 @@ DockingManager.SetMDILayout(MDILayout.Vertical);
 
 ## Rolling the FloatWindow up
 
-IsRollupFloatWindow property is used to enable the Rollup feature of Float window when it is double clicked.
+IsRollupFloatWindow property is used to enable the RollUp feature of Float window when it is double clicked.
 
 {% tabs %}
 
@@ -757,7 +757,7 @@ dockingmanager.Children.Add(grid);
 
 
 
-## Support to manage Maximize Button Visibiliity in Docking Windows
+## Support to manage Maximize Button Visibility in Docking Windows
 
 This support will be useful to decide whether the Maximize button should be disabled or collapsed when the CanMaximize property is set to False.
 
@@ -830,7 +830,7 @@ dockingmanager.Children.Add(grid);
 
 ### UseNativeFloatWindow
 
-The UseNativeFloatWindow property is used to enable or disable the native float window which inherits the window architecture. By disabling this propety, you can use the existing float window.
+The UseNativeFloatWindow property is used to enable or disable the native float window which inherits the window architecture. By disabling this property, you can use the existing float window.
 
 #### Property
 
@@ -885,7 +885,7 @@ By enabling the UseNativeFloatWindow property, you can use the native float wind
 
 ### CanFloatMaximize
 
-The CanFloatmaximize property allows the native float window to get maximized using the Maximize button. By using this property, you can make the Maximize button visible on the title bar of the native floating window.
+The CanFloatMaximize property allows the native float window to get maximized using the Maximize button. By using this property, you can make the Maximize button visible on the title bar of the native floating window.
 
 #### Property
 
@@ -898,7 +898,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-CanFloatmaximize</td><td>
+CanFloatMaximize</td><td>
 Enables or disables maximization of the native float window.</td><td>
 Attached Property</td><td>
 bool</td></tr>

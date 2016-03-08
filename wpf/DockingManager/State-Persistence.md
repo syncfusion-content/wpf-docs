@@ -33,7 +33,7 @@ DockingManager1.ResetState()
 
 {% endtabs %}
 
-To delete the Dockstate of the DockingManager, call `DeleteDockState()` of DockingManager instance
+To delete the DockState of the DockingManager, call `DeleteDockState()` of DockingManager instance
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ DockingManager1.PersistState = True
 
 {% endtabs %}
 
-To load the AutoPersiststate of the DockingManager, call the `LoadDockState()` method of the DockingManager in its loaded event.
+To load the AutoPersist state of the DockingManager, call the `LoadDockState()` method of the DockingManager in its loaded event.
 
 {% tabs %}
 
@@ -104,11 +104,11 @@ DockingManager allows to save a complex layout also. For example, it also saves 
 
 By default, DockingManager cannot de-serialize its Saved Layout properly, when its child collection is modified after DockState is saved. 
 
-Since the DockingManager state persistance feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
+Since the DockingManager state persistence feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 
 ## Various formats to Save / Load states
 
-DockingManager allows to save and load the Dockstates of windows in DockingManager in different format.
+DockingManager allows to save and load the DockStates of windows in DockingManager in different format.
 
 Some of the formats are:
 
@@ -118,9 +118,9 @@ Some of the formats are:
  * XmlWriter
 
 
-### Load and save the Dockstate using Isolated Storage:
+### Load and save the DockState using Isolated Storage:
 
-DockingManager allows to save and load the dockstate from isolated storage.  
+DockingManager allows to save and load the dock state from isolated storage.  
 
 {% tabs %}
 
@@ -246,7 +246,7 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\docking_bin.bin"
 {% endtabs %}
 
 
-### Save and Load using Xmlwriter 
+### Save and Load using XmlWriter 
 
 DockingManager allows to load and save the dock state using XMLWriter.
 

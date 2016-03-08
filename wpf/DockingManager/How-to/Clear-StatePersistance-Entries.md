@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-#  Clear StatePersistance Entries
+#  Clear StatePersistence Entries
 
 In StatePersistence of DockingManager we have five ways to store the state. Similarly, we have ways to clear those entries as given below
 

@@ -403,7 +403,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add DropDownButton
 
-`DropDownButton` appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts `DropDownMenuItem` as its children.  Here, "New" RibbonBar holds a `DropDownButton` with a caption as "New Items" using its `Label` property also hoidling items like "E-mail Message", "Appointment", "Meeting", "Contact" and "Task". It also provides `SizeForm` property for different sizes.
+`DropDownButton` appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts `DropDownMenuItem` as its children.  Here, "New" RibbonBar holds a `DropDownButton` with a caption as "New Items" using its `Label` property also holdling items like "E-mail Message", "Appointment", "Meeting", "Contact" and "Task". It also provides `SizeForm` property for different sizes.
 
 {% tabs %}
 
@@ -497,7 +497,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add SplitButton
 
-SplitButton also appears with a drop arrow. It displays some items while click on it. It accepts `DropDownMenuItem` as its children.  Here, "Delete" RibbonBar holds a `SplitButton` with a caption as "Clean Up" using its `Label` property also hoidling items like "Clean Up Folder", "Clean Up Conversation" and "Clean Up Folder/SubFolder". It also provides `SizeForm` property for different sizes.
+SplitButton also appears with a drop arrow. It displays some items while click on it. It accepts `DropDownMenuItem` as its children.  Here, "Delete" RibbonBar holds a `SplitButton` with a caption as "Clean Up" using its `Label` property also holdling items like "Clean Up Folder", "Clean Up Conversation" and "Clean Up Folder/SubFolder". It also provides `SizeForm` property for different sizes.
 
 
 {% tabs %}
@@ -736,7 +736,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add RibbonComboBox
 
-`RibbonComboBox` is used to display the list of items.It accepts `ComboBoxItems` as its children.  Here, "Find" RibbonBar holds a `RibbonComboBox` with a caption as "Filter Email" using its `Label` property also hoidling items like "Person1@mail.com", "Person1@mail.com" and "Person1@mail.com".
+`RibbonComboBox` is used to display the list of items.It accepts `ComboBoxItems` as its children.  Here, "Find" RibbonBar holds a `RibbonComboBox` with a caption as "Filter Email" using its `Label` property also holdling items like "Person1@mail.com", "Person1@mail.com" and "Person1@mail.com".
 
 {% tabs %}
 
@@ -1739,7 +1739,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add BackStage separator			
 
-BackStageSeperator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by `BackStageSeparator` according to their use.
+BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by `BackStageSeparator` according to their use.
 
 {% tabs %}
 
