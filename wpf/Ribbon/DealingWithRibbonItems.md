@@ -160,7 +160,7 @@ Possible values of `SizeForm` are Large, Small and ExtraSmall.
 * DropDownButton
 * SplitButton
 
-The code to set sizeform for the above controls is illustrated below
+The code to set SizeForm for the above controls is illustrated below
 
 {% tabs %}
 

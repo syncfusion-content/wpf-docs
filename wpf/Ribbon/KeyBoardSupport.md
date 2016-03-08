@@ -12,7 +12,7 @@ To invoke any command using KeyBoard, Ribbon control provides KeyTip support to 
 
 ## Adding KeyTip to the Ribbon items
 
-RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also let to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibboButton,SplitButton…etc
+RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also let to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibbonButton,SplitButton…etc
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ syncfusion:RibbonCommandManager.SynchronizedItem="Save" SmallIcon="/Resources/Sa
 
 ## How to access particular item in Ribbon using KeyTip
 
-The below example illustrates how to access particular Ribbonitem using KeyTip
+The below example illustrates how to access particular Ribbon item using KeyTip
 
 {% tabs %}
 

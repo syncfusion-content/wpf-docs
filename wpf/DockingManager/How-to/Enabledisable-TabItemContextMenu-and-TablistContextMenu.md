@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# Enable/disable TabItemContextMenu and TablistContextMenu
+# Enable/disable TabItemContextMenu and TabListContextMenu
 
-ShowTabItemContextMenu is the property that is used to disable the showing of Context Menu when right-clicked on the document tab. Simlarly, ShowTabListContextMenu is used to disable the showing of Context Menu list when clicked on the tabcontrol menu toggle button. The usages are given below:
+ShowTabItemContextMenu is the property that is used to disable the showing of Context Menu when right-clicked on the document tab. Similarly, ShowTabListContextMenu is used to disable the showing of Context Menu list when clicked on the TabControl menu toggle button. The usages are given below:
 
 {% tabs %}
 

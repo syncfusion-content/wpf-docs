@@ -9,7 +9,7 @@ documentation: ug
 
 # Cancel the ActiveWindow Change
 
-ActiveWindowChanging event is used to cancel the ActiveWindow change. This event will be triggered before the new window is set as activewindow, the usage is shown below.
+ActiveWindowChanging event is used to cancel the ActiveWindow change. This event will be triggered before the new window is set as active window, the usage is shown below.
 
 
 {% tabs %}

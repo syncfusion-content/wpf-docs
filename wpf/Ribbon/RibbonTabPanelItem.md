@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon TabPanelItem
 
-`RibbonTabPannelItem` can set in Ribbon to located below the close button of RibbonWindow. Using that we can place desire items like emoticons.
+`RibbonTabPanelItem` can set in Ribbon to located below the close button of RibbonWindow. Using that we can place desire items like emotions.
 
 
 {% tabs %}

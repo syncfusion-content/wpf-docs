@@ -47,7 +47,7 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 
 ## Ribbon Gallery Item
 
-Ribbon control provies `RibbonGalleryItem` that add as items in RibbonGallery.
+Ribbon control provides `RibbonGalleryItem` that add as items in RibbonGallery.
 
 
 {% tabs %}
@@ -135,7 +135,7 @@ Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grou
 
 ### Gallery Filter
 
-`GalleryGroupFilters` are used to view parlicular group. The `FilterIndexes` property is used to specify the indexes of the filters.
+`GalleryGroupFilters` are used to view particular group. The `FilterIndexes` property is used to specify the indexes of the filters.
 
 
 {% tabs %}
