@@ -302,7 +302,7 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
 
 ## Changing the visibility at run time
 
-ContextTabgroup visibility can also be changed at the runtime. To change the visibility, enable `IsGroupVisible` property of the ContextTabGroup
+ContextTabGroup visibility can also be changed at the runtime. To change the visibility, enable `IsGroupVisible` property of the ContextTabGroup
  
 {% tabs %}
 

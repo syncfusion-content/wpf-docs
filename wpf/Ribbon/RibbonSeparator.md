@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon Separator	
 
-`RibbonSeperator` used to separate the similar set of Ribbon elements in Ribbon. It can seperate RibbonButtons according to their purpose. 
+`RibbonSeparator` used to separate the similar set of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose. 
 
 
 {% tabs %}
@@ -47,7 +47,7 @@ documentation: ug
 
 {% endtabs %}
 
-RibbonSeperator instance can be added as item to the group of other items through code behind.
+RibbonSeparator instance can be added as item to the group of other items through code behind.
 
 {% tabs %}
 
