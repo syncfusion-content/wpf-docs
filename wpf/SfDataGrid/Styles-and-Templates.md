@@ -339,7 +339,7 @@ public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 
 ## Setting Default Style for one column
 
-You can also skips the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) to null. Likewise, you can skips all the style properties in particular column (example: `HeaderStyle`). 
+You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1068,7 +1068,7 @@ The appearance of `GroupDropArea` can be customized by writing style of TargetTy
 
 ## Showing busy indicator before loading records
 
-You can show the indication of data loading with the help of BusyIndicator by setting BusyIndicator.IsBusy as True and you can stop it by setting BusyIndicator.IsBusy as false in the ItemSourceChanged event.
+You can show the indication of data loading with the help of BusyIndicator by setting BusyIndicator.IsBusy as True and you can stop it by setting BusyIndicator.IsBusy as false in the ItemsSourceChanged event.
 
 {% tabs %}
 {% highlight xaml %}
