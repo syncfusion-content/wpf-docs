@@ -9,7 +9,7 @@ documentation: ug
 
 # Highlight Segment
 
-This feature enable to highlight the column segments on mouse move and this is applicable for column and winloss sparkline.
+This feature enable to highlight the column segments on mouse move and this is applicable for column and win-loss sparkline.
 
 {% highlight xaml %}
 

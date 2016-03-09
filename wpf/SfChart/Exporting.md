@@ -11,12 +11,12 @@ documentation: ug
 
 Chart can be exported into image format. The following image formats are supported by the SfChart.
 
-* .jpeg or .jpg
-* .jpg-XR
-* .gif
-* .png
-* .bmp
-* .tiff
+* Jpeg or Jpg
+* Jpg-XR
+* GIF
+* PNG
+* BMP
+* TIFF
 
 **Methods**
 
