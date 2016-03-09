@@ -14,7 +14,7 @@ documentation: ug
 A SfDateTimeRangeNavigator is composed of various elements such as Higher level bar, Lower Level Bar, Content, Resizable Scrollbar.
 
 * Higher Level Bar - Contains timespan format one level Higher than Lower Level Bar DateTime values. E.g.  Higher Level Bar contains year format (yyyy) then the Lower Level Bar contains the Month format (MMM).
-* Lower Level bar – Contains timespan format one lever Lower than Higer Level DateTime Values. E.g.  Lower Level Bar contains Month format (MMM) then the Higher Level Bar contains the year format (yyyy).
+* Lower Level bar – Contains timespan format one lever Lower than Higher Level DateTime Values. E.g.  Lower Level Bar contains Month format (MMM) then the Higher Level Bar contains the year format (yyyy).
 * Content – Can hold any type of UI element inside the Navigator.
 * Resizable Scrollbar – Used to zoom and scroll the content and Label Bars. 
 
@@ -82,7 +82,7 @@ Used to set the ItemsSource for SfDateTimeRangeNavigator</td></tr>
 <tr>
 <td>
 XBindingPath</td><td>
-Represents the DateTime Xvalues</td></tr>
+Represents the DateTime X values</td></tr>
 <tr>
 <td>
 Content</td><td>

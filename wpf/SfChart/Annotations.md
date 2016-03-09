@@ -82,7 +82,7 @@ Selected           </td><td>
 Occurs when annotation is selected.</td></tr>
 <tr>
 <td>
-UnSlected     </td><td>
+UnSelected     </td><td>
 Occurs when annotation is unselected.</td></tr>
 <tr>
 <td>

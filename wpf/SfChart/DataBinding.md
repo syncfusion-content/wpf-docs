@@ -9,7 +9,7 @@ documentation: ug
 
 # DataBinding
 
-SfChart offers Itemsource property to bind various datasource ranges from simple collection property to complex properties.
+SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 
 ###Binding a simple collection to the chart
 

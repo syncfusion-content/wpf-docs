@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-The orientation of the linear gauge can be changed by setting the **Orientation** property of the SfLineraGauge. By default orientation of SfLinearGauge is Horizontal.
+The orientation of the linear gauge can be changed by setting the **Orientation** property of the SfLinearGauge. By default orientation of SfLinearGauge is Horizontal.
 
 {% tabs %}
 {% highlight xaml %}

@@ -110,8 +110,8 @@ ColorBar<br/><br/></td><td>
 Gets or sets color bar for surface chart.  <br/><br/></td></tr>
 <tr>
 <td>
-ApplyGradiantBrush<br/><br/></td><td>
-Gets or sets the bool value that represents a value for applying the radiant brush in surface chart.  <br/><br/></td></tr>
+ApplyGradientBrush<br/><br/></td><td>
+Gets or sets the bool value that represents a value for applying the gradient brush in surface chart.  <br/><br/></td></tr>
 <tr>
 <td>
 EnableZooming<br/><br/></td><td>

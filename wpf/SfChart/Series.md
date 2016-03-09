@@ -245,7 +245,7 @@ ScatterSeries is a type of mathematical diagram that uses [Cartesian coordinates
 
 ## BubbleSeries
 
-BubbleSeries is a visualization technique. It has a set of numeric quantities, represented by closely packed circles, whose areas are proportional to the quantities. The BubbleSeries is often used in software engineering to represent dataflow and also in scientific modeling.
+BubbleSeries is a visualization technique. It has a set of numeric quantities, represented by closely packed circles, whose areas are proportional to the quantities. The BubbleSeries is often used in software engineering to represent data flow and also in scientific modeling.
 
 The following APIs are used in BubbleSeries.
 
@@ -1330,7 +1330,7 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 
 
 
-## FastCandleBitampSeries
+## FastCandleBitmapSeries
 
 FastCandleBitmapSeries renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like CandleSeries. It used in applications with a high performance requirement.
 
