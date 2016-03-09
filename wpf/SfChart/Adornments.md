@@ -108,7 +108,7 @@ SegmentLabelContent</td><td>
 Gets or sets the LabelContent value that represents the content of the Segment Label.</td></tr>
 <tr>
 <td>
-Showlabel</td><td>
+ShowLabel</td><td>
 Gets or sets the bool value that represents a value to enable the Show Label.</td></tr>
 <tr>
 <td>
@@ -313,7 +313,7 @@ Description</th></tr>
 <tr>
 <td>
 Default</td><td>
-The labels are positioned at the  center position of the series. HorizontalAligment and VerticalAlignment works if it set to the AdornmentInfo.</td></tr>
+The labels are positioned at the  center position of the series. HorizontalAlignment and VerticalAlignment works if it set to the AdornmentInfo.</td></tr>
 <tr>
 <td>
 Auto</td><td>
@@ -625,7 +625,7 @@ SegmentLabelContent</td><td>
 Gets or sets the LabelContent value that represents the content of the label.</td></tr>
 <tr>
 <td>
-Showlabel</td><td>
+ShowLabel</td><td>
 Gets or sets the bool value that enable or disable the labels.</td></tr>
 <tr>
 <td>

@@ -34,14 +34,14 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 
 
 * Header— Header represents the table header which contains the field name of the task.
-* Parent Task—Parent task represents the summary of the child tasks. This is an activity which will be further splitted into various child tasks.
-* Child Task—Child task reprents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
+* Parent Task—Parent task represents the summary of the child tasks. This is an activity which will be further split into various child tasks.
+* Child Task—Child task represents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
 
 ### Gantt Chart
 
 
-Gantt Chart is an items control which provides a graphically representation of the task/activitiy that are currently scheduled. Gantt Chart have different componenets to represent the type of Task, Progress of the Task and Relationship between Tasks.
+Gantt Chart is an items control which provides a graphically representation of the task/activity that are currently scheduled. Gantt Chart have different components to represent the type of Task, Progress of the Task and Relationship between Tasks.
 
 
 
@@ -52,13 +52,13 @@ Gantt Chart is an items control which provides a graphically representation of t
 * Node— Node represents an individual or child task.
 * Header Node—HeaderNode represents the parent or summary task of the projects.
 * Milestone—Milestone represents the target to be completed in a day.
-* Progress Indicator—Progress indicator represents the persentage of work completed for the task.
+* Progress Indicator—Progress indicator represents the percentage of work completed for the task.
 * Connector—Connector represents the dependency relationship between the tasks.
 
 ### Gantt Schedule 
 
 
-Gantt Schedule is a medium to measure the progress in the Gantt control. Using this you can track or measrue the progress of the task or activity.
+Gantt Schedule is a medium to measure the progress in the Gantt control. Using this you can track or measure the progress of the task or activity.
 
 
 
@@ -95,7 +95,7 @@ You can create a project management application using Essential Gantt WPF.
 
 You can create Gantt control in two methods. They are:
 
-* Programatically
+* Programmatically
 * Through Designer 
 
 ### Programmatically Creating Gantt Control 

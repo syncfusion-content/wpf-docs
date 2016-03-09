@@ -40,7 +40,7 @@ The following section shows you how to define the various palettes for each seri
 
 ###Metro Palette
 
-Itis the default palette for SfChart, used to apply a set of predefined brushes to the series, in a predefined order. The following code example illustrates how to set the MetroPalette for the chart.
+It is the default palette for SfChart, used to apply a set of predefined brushes to the series, in a predefined order. The following code example illustrates how to set the MetroPalette for the chart.
 
 {% highlight xaml %}
 

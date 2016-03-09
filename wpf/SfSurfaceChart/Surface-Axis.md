@@ -84,7 +84,7 @@ Gets or sets format for surface axis label.<br/><br/></td></tr>
 <tr>
 <td>
 Minimum<br/><br/></td><td>
-Gets or sets the double that represents the manimum value for the axis. <br/><br/></td></tr>
+Gets or sets the double that represents the minimum value for the axis. <br/><br/></td></tr>
 <tr>
 <td>
 Maximum<br/><br/></td><td>
