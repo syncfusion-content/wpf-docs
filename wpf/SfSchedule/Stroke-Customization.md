@@ -57,7 +57,7 @@ DoubleCollection</td><td>
 Used to customize the minor line stroke dash array of the day and time line views.</td></tr>
 <tr>
 <td>
-DayViewVerticaLineStroke</td><td>
+DayViewVerticalLineStroke</td><td>
 Brush</td><td>
 Used to customize the vertical line stroke of the day view.</td></tr>
 <tr>
