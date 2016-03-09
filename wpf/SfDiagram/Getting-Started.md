@@ -21,7 +21,7 @@ Drag and drop the SfDiagram control from the Toolbox to the XAML Page.
 
 The xmlns name space is added to the MainPage.xaml
 
-![](Getting-Started_images\Getting-Started_img2.png)
+![](Getting-Started_images\Getting_Started_img2.png)
 
 ###Initialize the SfDiagram
 
