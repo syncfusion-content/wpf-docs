@@ -15,7 +15,7 @@ You can choose any ChartAxis derived types, like DateTimeAxis, NumericalAxis, Ca
 
 ## NumericAxis
 
-NumericalAxis is used to plot numerical to the chart. You can set NumericalAxis for both PrimaryAxis and SecondaryAxis.
+NumericalAxis is used to plot numerical value to the chart. You can set NumericalAxis for both PrimaryAxis and SecondaryAxis.
 
 The following APIs are used to customize NumericalAxis.
 
