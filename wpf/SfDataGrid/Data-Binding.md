@@ -333,7 +333,7 @@ To add the WCF Data Service to your web project created in first step,
 
 {% tabs %}
 {% highlight c# %}
-public class WcfDataService1 : DataService&lt;NORTHWNDEntities&gt;
+public class WcfDataService1 : DataService<NORTHWNDEntities>
 {
     // This method is called only once to initialize service-wide policies.
     public static void InitializeService(DataServiceConfiguration config)

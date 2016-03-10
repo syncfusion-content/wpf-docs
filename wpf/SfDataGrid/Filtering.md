@@ -16,9 +16,9 @@ SfDataGrid allows you to filter the data programmatically in below ways,
 
 ### View Filtering
 
-View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling[SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
+View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling[SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
 
-Here, FilterRecords delegate filters the data based on Country name. FilterRecords delegate is assigned to [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) predicate to filter Country column. After that, [SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method is called to refresh the records. If the record satisfies the filter conditions, true will be returned. Else false is returned.
+Here, FilterRecords delegate filters the data based on Country name. FilterRecords delegate is assigned to [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) predicate to filter Country column. After that, [SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method is called to refresh the records. If the record satisfies the filter conditions, true will be returned. Else false is returned.
  
 
 {% tabs %}
@@ -44,11 +44,11 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when itemssource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
+N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when itemssource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
 
 ### Column Filtering
 
-Column filtering is achieved by using [GridColumn.FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPredicates.html) property and adding [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) to it.
+Column filtering is achieved by using [GridColumn.FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterPredicates.html) property and adding [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) to it.
  
 Here, OrderID column is filtered for the data which has OrderID as 1005.
 
@@ -64,7 +64,7 @@ dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterT
 * StringTyped - Records are filtered without considering the type and it takes [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
 * StronglyTyped - Records are filtered by considering the FilterValue underlying type.
 
-N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
+N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
 
 ### Clear Filtering
 
