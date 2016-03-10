@@ -585,7 +585,7 @@ Here, caption summary rows are customized based on `TotalPrice` summary value.
 
 In another way, appearance of caption summary row can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyleSelector.html) and you can get the container as `CaptionSummaryRowControl` in StyleSelector.
 
-Here, caption summary rows are customized where [group key](http://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.Group~Key.html) value is negative.
+Here, caption summary rows are customized where [group key](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.Group~Key.html) value is negative.
 
 {% tabs %}
 {% highlight xaml %}
