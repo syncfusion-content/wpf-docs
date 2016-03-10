@@ -17,9 +17,9 @@ Essential Gantt for WPF includes an inbuilt class called TaskDetails, which is i
 
 You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
 
-Binding TaskDetials collection to Gantt Control
+Binding TaskDetails collection to Gantt Control
 
-The following code illustrates how to bind the Task Detials to the Gantt Control:
+The following code illustrates how to bind the Task Details to the Gantt Control:
 
 {% tabs %}
 {% highlight html %}
@@ -124,7 +124,7 @@ To view samples:
 ## External Property Binding
 
 
-Essential Gantt for WPF allow you to bind any type of IEnumerable source to Gantt.You can bind any collection to Gantt using the TaskAttributeMapping class. This will get the mapping name of the requied fields from the underlying source. With this mapping the Gantt will get the required information to render the Chart nodes.
+Essential Gantt for WPF allow you to bind any type of IEnumerable source to Gantt.You can bind any collection to Gantt using the TaskAttributeMapping class. This will get the mapping name of the required fields from the underlying source. With this mapping the Gantt will get the required information to render the Chart nodes.
 
 The following code illustrate how to map the properties using the TaskAttributeMapping class:
 {% tabs %}

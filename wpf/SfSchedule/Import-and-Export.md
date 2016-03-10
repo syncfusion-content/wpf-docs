@@ -27,7 +27,7 @@ Schedule.ExportICS();
 
 When the export function is called, a dialog box opens for selecting the location where the file has to be exported.
 
-The exported .ics file will be saved in specified location. These exported files can then be imported in any other scheduler, such as Microsoft Outlook. Similarly, you can import .ical files from other schedulers.
+The exported .ics file will be saved in specified location. These exported files can then be imported in any other scheduler, such as Microsoft Outlook. Similarly, you can import .ics files from other schedulers.
 
 
 

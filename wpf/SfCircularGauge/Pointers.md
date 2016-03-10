@@ -236,7 +236,7 @@ In a symbol pointer, the value is pointed out by a symbol on the scale. You can 
 
 ### Symbol pointer Customization
 
-One advantage to the symbol pointer is its customizability.You can change the height, width, and appearance of the symbol pointer.
+One advantage to the symbol pointer is, its customization. You can change the height, width, and appearance of the symbol pointer.
 
 Symbol is an **enum** property that provides symbol options for the symbol pointer, which contains several shapes like rectangle, ellipse, and triangle. The SymbolPointerHeight property is used to set the height of the symbol pointer. The value should be given as a double value. The SymbolPointerWidth property is used to set the width of the symbol pointer.
 

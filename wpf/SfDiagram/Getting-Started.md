@@ -17,11 +17,11 @@ This section demonstrates how to visualize the Employee details in the Organizat
 
 Drag and drop the SfDiagram control from the Toolbox to the XAML Page.
 
-![](Getting-Started_images\Getting-Started_img1.png)
+![](Getting-Started_images\Getting_Started_img1.png)
 
 The xmlns name space is added to the MainPage.xaml
 
-![](Getting-Started_images\Getting-Started_img2.png)
+![](Getting-Started_images\Getting_Started_img2.png)
 
 ###Initialize the SfDiagram
 
@@ -447,4 +447,4 @@ The final MainPage.Xaml looks like this.
 
 The Employee data is displayed in the SfDiagram as follows
 
-![](Getting-Started_images\Getting-Started_img3.png)
+![](Getting-Started_images\Getting_Started_img3.jpeg)
