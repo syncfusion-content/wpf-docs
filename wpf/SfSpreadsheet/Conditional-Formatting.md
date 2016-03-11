@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional Formatting 
 
-This section explains about how to apply conditional formatting rules at run time in SfSpreadsheet.
+This section explains about how to apply conditional formatting rules programmatically at run time in SfSpreadsheet.
 
 In SfSpreadsheet, to apply conditional format for a cell or range of cells, add [IConditionalFormat](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormat.html) to that range by using [AddCondition](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormats~AddCondition.html) method.
 
@@ -30,9 +30,9 @@ To format the cells based on cell value, set the conditional format type as **Ce
 
 {% highlight c# %}
 
-var WorkSheet =Sfspreadsheet.Workbook.Worksheets[0];
+var worksheet = spreadsheet.Workbook.Worksheets[0];
 
-IConditionalFormats condition = WorkSheet.Range["A1"].ConditionalFormats;
+IConditionalFormats condition = worksheet.Range["A1:A100"].ConditionalFormats;
 
 IConditionalFormat condition1 = condition.AddCondition();
 
@@ -44,7 +44,7 @@ condition1.FirstFormula = "10";
 
 condition1.BackColor = ExcelKnownColors.Light_orange;
 
-Sfspreadsheet.ActiveGrid.InvalidateCell(1,1);
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
@@ -60,15 +60,21 @@ To apply the conditional format based on data bars, set the conditional format t
 
 {% highlight c# %}
 
-var WorkSheet = Sfspreadsheet.Workbook.Worksheets[0];
+var worksheet = spreadsheet.Workbook.Worksheets[0];
 
-var conditionalFormats =   WorkSheet.Range["D1:K100"].ConditionalFormats;
+var conditionalFormats =   worksheet.Range["B1:B100"].ConditionalFormats;
 
 var conditionalFormat = conditionalFormats.AddCondition();
 
 conditionalFormat.FormatType = ExcelCFType.DataBar;
 
-Sfspreadsheet.ActiveGrid.InvalidateCells();
+conditionalFormat.DataBar.BarColor = Color.FromArgb(255, 214, 0, 123);
+
+conditionalFormat.DataBar.MinPoint.Type = ConditionValueType.LowestValue;
+
+conditionalFormat.DataBar.MaxPoint.Type = ConditionValueType.HighestValue;
+
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 {% endhighlight %}
 
@@ -84,15 +90,21 @@ To apply the conditional format based on color scales, set a conditional format 
 
 {% highlight c# %}
 
-var WorkSheet = Sfspreadsheet.Workbook.Worksheets[0];
+var worksheet = spreadsheet.Workbook.Worksheets[0];
 
-var conditionalFormats = WorkSheet.Range["C1:F50 "].ConditionalFormats;
+var conditionalFormats = worksheet.Range["C2:C100"].ConditionalFormats;
 
 var conditionalFormat = conditionalFormats.AddCondition();
 
 conditionalFormat.FormatType = ExcelCFType.ColorScale;
 
-Sfspreadsheet.ActiveGrid.InvalidateCells();
+conditionalFormat.ColorScale.SetConditionCount(2);
+
+conditionalFormat.ColorScale.Criteria[0].FormatColorRGB = Color.FromArgb(255, 99, 190, 123);
+
+conditionalFormat.ColorScale.Criteria[1].FormatColorRGB = Color.FromArgb(255, 90, 138, 198);
+
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 {% endhighlight %}
 
@@ -107,19 +119,17 @@ To apply the conditional format for Icon sets, set a conditional format type as 
 
 {% highlight c# %}
 
-var WorkSheet = Sfspreadsheet.ActiveSheet;
-
-var conditionalFormats = WorkSheet.Range["D1:D100"].ConditionalFormats;
+vvar worksheet = spreadsheet.Workbook.Worksheets[0];
+           
+var conditionalFormats = worksheet.Range["D2:D100"].ConditionalFormats;
 
 var conditionalFormat = conditionalFormats.AddCondition();
 
 conditionalFormat.FormatType = ExcelCFType.IconSet;
 
-var iconSet = conditionalFormat.IconSet;
+conditionalFormat.IconSet.IconSet = ExcelIconSetType.ThreeSymbols;
 
-iconSet.IconSet = ExcelIconSetType.ThreeSymbols;
-
-Sfspreadsheet.ActiveGrid.InvalidateCells();
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 {% endhighlight %}
 
