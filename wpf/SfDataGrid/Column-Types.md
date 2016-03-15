@@ -2181,7 +2181,7 @@ this.datagrid1.Columns.Add(new GridDateTimeOffsetColumn()
 
 SfDataGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 
-Below table lists the available cell types for unbound row and its renderers.
+Below table lists the available cell types for columns and its renderers.
 
 <table>
 <tr>
