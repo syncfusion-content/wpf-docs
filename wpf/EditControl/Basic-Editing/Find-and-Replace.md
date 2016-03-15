@@ -65,8 +65,7 @@ The following image displays Quick Find Tab
 
 **Look** **in**—you can choose the search area (the whole document or a selection) in this field. 
 
-N>![](Find-and-Replace_images/Find-and-Replace_img3.jpeg)
-Note:Select an area in the document before opening Find and Replace dialog,Selection is automatically selected in this field.This can also be selected in the dropdown box.
+N>![](Find-and-Replace_images/Find-and-Replace_img3.jpeg) Note:Select an area in the document before opening Find and Replace dialog,Selection is automatically selected in this field.This can also be selected in the dropdown box.
 
 The following image displays look in field in Find and Replace Window 
 
