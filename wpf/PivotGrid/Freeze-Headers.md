@@ -9,19 +9,11 @@ documentation: ug
 
 # Freeze Headers
 
-PivotGrid provides built-in support for freezing column and row headers for the better viewing of the value cells. This can be achieved by the **FreezeHeaders** property of PivotGrid control.
+PivotGrid provides built-in support for freezing column and row headers for the better viewing of the value cells.
 
+The `FreezeHeaders` property in PivotGrid control is used to achieve the same. It can be mentioned either in *XAML* or *Code-behind*. 
 
-Property 
-
-* **FreezeHeaders** - Gets or sets whether the column and row headers needs to freeze or not.
-
-
-## Defining the property in PivotGrid
-
-The **FreezeHeaders** property of PivotGrid control can be mentioned either in *XAML* or *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -46,7 +38,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

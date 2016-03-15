@@ -7,19 +7,13 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Resizing the PivotGrid to fit its content
+# Re-size To Fit
 
-PivotGrid provides support for resizing the grid to fit its content while group expanding and collapsing the groups. The grid will be resized after refreshing the page. 
+PivotGrid provides support for re-sizing the Grid to fit its content while expanding and collapsing the groups. The Grid will be resized after refreshing the page. 
 
-Property
+The `ResizePivotGridToFit` property is used for this requirement and it can be defined in both *XAML* and *Code-behind*. 
 
-* **ResizePivotGridToFit** - Resizes the PivotGrid according to the content of the grid.
-
-## Defining the property in PivotGrid
-
-The **ResizePivotGridToFit** property can be defined both in *XAML* and *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -44,7 +38,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through **Code-behind**, please refer the below code sample.
 
 {% highlight C# %}
 

@@ -7,20 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Support to improve the scrolling performance
+# Improved (Deffered) Scrolling
 
-PivotGrid provides support to improve the scrolling performance of the PivotGrid by updating the data in the grid only when the user releases the thumb on scrolling. It can be achieved by **EnableDefferedScrolling** property of PivotGrid control.
+Support has been provided to improve the scrolling performance of PivotGrid by updating the data (in the PivotGrid) only when the user releases the thumb on scrolling. It can be achieved by `EnableDefferedScrolling` property of PivotGrid control.
 
-Property 
-
-* **EnableDefferedScrolling** - Gets or sets a value indicating whether to defer the scrolling until user releases the thumb on scrolling.
-
-
-##Defining the property in PivotGrid 
-
-**EnableDefferedScrolling** property of PivotGrid control can be defined both in *XAML* and *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet. 
+If through *XAML*, please refer the below code sample. 
 
 {% highlight xaml %}
 
@@ -45,7 +36,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer below code snippet.
+Else if through *Code-behind*, please refer below code sample.
 
 {% highlight C# %}
 

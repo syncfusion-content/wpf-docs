@@ -7,23 +7,18 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Disable GroupingBar by Specific Area
+# Disable Grouping Bar by Specific Area
 
 PivotGrid supports to define the visibility of the Grouping Bar to some specific areas as mentioned below.
 
-  * Row header area
-  * Column header area along with row header area.
-
-Properties 
-
-* **EnableRowHeader** - Gets or sets a value indicating whether to enable row header alone in Grouping Bar.
-* **EnableColumnHeader** - Gets or sets a value indicating whether enable column header along with row header alone in Grouping Bar.
-
-##Defining the Properties in PivotGrid
+  * Row Header Area
+  * Column Header Area along with Row Header Area.
 
 **EnableRowHeader**
 
-EnableRowHeader allows to customize the Grouping Bar by making visibility only in **Row Header Area** but ignoring other areas. It can be defined both in *XAML* and *Code-Behind*.
+`EnableRowHeader` allows to customize the Grouping Bar by making it visible only in **Row Header Area** but ignoring other areas.
+
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -46,7 +41,7 @@ EnableRowHeader allows to customize the Grouping Bar by making visibility only i
 
 {% endhighlight %}
 
-Else if through **Code-behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -94,9 +89,9 @@ public partial class MainWindow: Window {
 
 **EnableColumnHeader**
 
-EnableColumnHeader allows to customize the Grouping Bar by making visibility only in **Row and Column Header Areas** but ignoring other areas. It can be defined both in *XAML* and *Code-Behind*. 
+`EnableColumnHeader` allows to customize the Grouping Bar by making it visible only in **Row and Column Header Areas** but ignoring other areas. 
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -119,7 +114,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

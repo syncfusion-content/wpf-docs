@@ -9,22 +9,17 @@ documentation: ug
 
 # Pivot Value Chooser
 
-**Pivot Value Chooser** is used to list all the PivotFields in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a PivotCalculation and add it to the PivotGrid, drag and drop the grid fields, and rearrange the calculation column in the PivotGrid control at run time.
+Pivot Value Chooser is used to list all the PivotFields available in the data source when the PivotGrid is in RowPivotsOnly mode. This window enables user to select a PivotCalculation and add it to the PivotGrid, drag and drop the PivotFields, and re-arrange the calculation column in the PivotGrid control at runtime.
+
+* **ShowPivotValueChooser** - Hides or shows a computation value column chooser dialog that allows users to hide, show, or re-order the PivotCalculations in the PivotGrid.
+* **PossiblePivotCalculations** - Gets or sets a collection of possible PivotCalculations that may appear in the PivotGrid control and lists them in the PivotValueChooser.
 
 
-Properties 
+##Pivot value chooser with possible calculation values
 
-* **ShowPivotValueChooser** - Hides or shows a computation value column chooser dialog that allows users to hide, show, or reorder the PivotCalculations in the PivotGrid.
-* **PossiblePivotCalculations** - Gets or sets a collection of possible pivot calculations that may appear in the PivotGrid control and lists them in the PivotValueChooser.
+`PossiblePivotCalculations` is a collection where user can define which PivotFields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated PivotFields from the ItemSource of PivotGrid control.
 
-
-## Using the Pivot Value Chooser in PivotGrid
-
-###Pivot value chooser with possible calculation values
-
-**PossiblePivotCalculations** is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the Item source of PivotGrid control.
-
-After defining PivotGrid control in RowPivotsOnly mode, raise the Loaded event of PivotGrid. Inside the PivotGrid_Loaded() event, set the property **ShowPivotValueChooser** and define a observable collection of PivotComputationInfo to **PossiblePivotCalculations**.
+After defining PivotGrid control in RowPivotsOnly mode, raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, set the property `ShowPivotValueChooser` to true and define an observable collection of PivotComputationInfo to `PossiblePivotCalculations`.
 
 {% highlight C# %}
 
@@ -46,11 +41,9 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-### Showing the Pivot value chooser with all the default values
+## Pivot value chooser with all the default values
 
-After defining PivotGrid control in RowPivotsOnly mode, raise the Loaded event of PivotGrid. Inside the PivotGrid_Loaded() event, set the property **ShowPivotValueChooser**.
-
-Please refer the below code snippet.
+After defining PivotGrid control in RowPivotsOnly mode, raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, set the property `ShowPivotValueChooser` to true.
 
 {% highlight C# %}
 
