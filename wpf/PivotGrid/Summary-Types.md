@@ -9,30 +9,24 @@ documentation: ug
 
 # Summary Types
 
-PivotGrid summarizes the data for various data types by using the **SummaryType** enumerator. SummaryType should be defined while defining the PivotCalculation using **PivotComputationInfo** class to specify the type of the summary. It holds the following summary types.
+PivotGrid summarizes the data for various data types by using the `SummaryType` enumerator. SummaryType should be defined while defining the PivotCalculation using `PivotComputationInfo` class to specify the type of the summary. It holds the following summary types.
 
 * **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for corresponding PivotItem
 * **DoubleAverage** - Computes average of double or integer from PivotValues for corresponding PivotItem.
 * **DoubleMaximum** - Computes maximum of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleMinimum** - Computes Minimum of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleMinimum** - Computes minimum of double or integer from PivotValues for corresponding PivotItem.
 * **DoubleStandardDeviation** - Computes the standard deviation of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleVariance** - Computes the variance of double or integer from PivotValues
+* **DoubleVariance** - Computes the variance of double or integer from PivotValues for corresponding PivotItem.
 * **Count** - Computes count of double or integer from PivotValues for corresponding PivotItem.
-* **DecimalTotalSum** - Computes the sum of decimal from PivotValues
+* **DecimalTotalSum** - Computes the sum of decimal from PivotValues for corresponding PivotItem.
 * **IntTotalSum** - Computes the sum of integer from PivotValues for corresponding PivotItem.
 * **Custom** - Specifies that you are using a custom SummaryBase object to define the calculation.
 * **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
 
 
-Property
+`SummaryType` property can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
 
-* **SummaryType** - Gets or sets the summary type to the PivotComputationInfo.
-
-## Defining the property in PivotGrid
-
-**SummaryType** is the property can be set for the corresponding PivotCalculation item through **PivotComputationInfo** class. It can be set either through *XAML* or through *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -55,7 +49,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -101,19 +95,12 @@ public partial class MainWindow: Window {
 
 ## DisplayIfDiscreteValuesEqual SummaryType in PivotGrid
 
-**DisplayIfDiscreteValuesEqual** is a new summary type that has been added to the **SummaryType** enumerator of the Pivot Grid control. This summary type displays the aggregated value in the Pivot Calculation column if all the values are common, else the default value will be displayed as **'*'**.
-It is also possible to change the default value to any custom string of your choice by using the **PadString** property. 
+**DisplayIfDiscreteValuesEqual** is a new summary type that has been added to the `SummaryType` enumerator of the PivotGrid control. This summary type displays the aggregated value in the PivotCalculation column if all the values are common, else the default value will be displayed as **'*'**.
+It is also possible to change the default value to any custom string of your choice by using the `PadString` property. 
 
-Property 
+Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the `PadString` while defining PivotCalculations in PivotGrid control.
 
-* **PadString** - Gets or sets the PadString for the discrete value in numeric format to display.
-
-
-### Defining DisplayIfDiscreteValuesEqual SummaryType with PadString in PivotGrid 
-
-Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the **PadString** while defining PivotCalculations in PivotGrid control.
-
-If setting these properties through **XAML**, please refer the below code snippet.
+If setting these properties through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -136,7 +123,7 @@ If setting these properties through **XAML**, please refer the below code snippe
 
 {% endhighlight %}
 
-Else if setting these properties through **Code-Behind**, please refer the below code snippet.
+Else if setting these properties through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

@@ -9,20 +9,14 @@ documentation: ug
 
 # Updating
 
-PivotGrid provides support to update the values in PivotGrid in real time and it can be achieved by using **EnableUpdating** property.While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
+PivotGrid provides support to update the values in PivotGrid in real-time and it can be achieved through the `EnableUpdating` property. While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
 
+* **EnableUpdating** - Gets/sets the boolean value to enable updating.
+* **ThrottleUpdateRate** - Gets/sets a millisecond value for time between UI refreshes. Zero indicates immediate refreshes of the UI without delays. Throttling the refresh rate can minimize CPU usage. Depending upon your updating rate, values of 300 to 500 milliseconds may give lower CPU usage.
 
-Properties 
+The `EnableUpdating` property can be mentioned either in *XAML* or in *Code-Behind*. 
 
-* **EnableUpdating** - Gets/sets the Boolean value to enable updating
-* **ThrottleUpdateRate** - Gets or sets a millisecond value for time between UI refreshes. Zero indicates immediate refreshes of the UI without delays. Throttling the refresh rate can minimize CPU usage. Depending upon your updating rate, values of 300 to 500 milliseconds may give lower CPU usage.
-
-
-## Defining the properties in PivotGrid
-
-The property **EnableUpdating** can be mentioned either in *XAML* or in *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -47,7 +41,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -91,11 +85,11 @@ public partial class MainWindow: Window {
 		
 {% endhighlight %}
 
-While updating the PivotGrid control user can throttle its updating speed which can be set through the **ThrottleUpdateRate** property. It gets the value in milliseconds as the time interval for UI refreshes to take place. Zero indicates immediate refresh of the UI without any delays. Throttling the refresh rate can minimize CPU usage. The default value is zero, but depending upon the user updating rate, values can be given such as 300 to 500 milliseconds and it may achieve lower CPU usage. 
+While updating the PivotGrid control user can throttle its updating speed which can be set through the `ThrottleUpdateRate` property. It gets the value in milliseconds as the time interval for UI refreshes to take place. Zero indicates immediate refresh of the UI without any delays. Throttling the refresh rate can minimize CPU usage. The default value is zero, but depending upon the user updating rate, values can be given such as 300 to 500 milliseconds and it may achieve lower CPU usage. 
 
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, set the **ThrottleUpdateRate** property of PivotGrid control.
+To achieve this, define the PivotGrid control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, set the `ThrottleUpdateRate` property of the PivotGrid control.
 
-Please refer the below code snippet.
+Please refer the below code sample.
 
 {% highlight C# %}
 

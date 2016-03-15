@@ -7,20 +7,13 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Inner Most Computations
+# Display Inner Most Computations
 
-PivotGrid provides the support for the columns which are existing in engine to display only the calculation columns other than total and grand total columns.
+PivotGrid supports to display the Grid with inner most computations alone, without displaying the total values.
 
+The `InnerMostComputationsOnly` property is used for this requirement and it can be mentioned either in *XAML* or *Code-behind*. 
 
-Property  
-
-* **InnerMostComputationsOnly** - This property is used to display the grid with inner most computations only and without displaying the total values.
-
-## Defining the property in PivotGrid 
-
-The property **InnerMostComputationsOnly** can be mentioned either in *XAML* or in *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -47,7 +40,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
