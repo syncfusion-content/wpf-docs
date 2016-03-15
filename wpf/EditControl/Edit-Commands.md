@@ -1,0 +1,50 @@
+---
+layout: post
+title: Deals with Edit Commands of the Edit Control for WPF
+description: Explains about Edit Commands of the Edit Control for WPF
+platform: wpf
+control: Edit Control
+documentation: ug
+---
+
+# Edit Commands
+
+Essential Edit for WPF contains built-in **RoutedUICommands** for all editing and file operations like select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the control by using the **Command** property of the external controls like button, menu item and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
+
+{% highlight xaml %}
+<Menu BorderBrush="LightGray" BorderThickness="0,0,1,2" Grid.ColumnSpan="1">
+
+<MenuItem Header="_File" Background="Transparent" Width="{Binding}" >
+
+<MenuItem Command="{x:Static sfedit:EditCommands.New}" CommandTarget="{Binding ElementName=Edit1}"/>
+
+<MenuItem Command="{x:Static sfedit:EditCommands.Open}" CommandTarget="{Binding ElementName=Edit1}"/>
+
+<MenuItem Command="{x:Static sfedit:EditCommands.Save}" CommandTarget="{Binding ElementName=Edit1}"/>
+
+</MenuItem>
+
+</Menu>
+
+<Border BorderThickness="1" BorderBrush="Gray"  Grid.Row="1" Grid.ColumnSpan="2">
+
+<sfedit:EditControl Name="Edit1" EnableOutlining="False" Background="white" AllowDrop="True" BorderBrush="Black" BorderThickness="0" Margin="0" ShowLineNumber="True"
+
+
+
+Grid.Row="1" >
+
+</sfedit:EditControl>
+
+</Border>
+
+
+
+{% endhighlight %}
+
+
+Following image displays “Open” Edit Command window 
+
+![](Edit-Commands_images/Edit-Commands_img1.jpeg)
+
+
