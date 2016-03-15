@@ -1,0 +1,113 @@
+---
+layout: post
+title: RoutedUICommands of the Edit control for WPF
+description: RoutedUICommands of the Edit control for WPF
+platform: wpf
+control: Edit Control
+documentation: ug
+---
+
+# RoutedUICommands
+
+**EditCommands** **Members**
+
+**EditControl** ships with a variety of **built**-**in** **RoutedUICommands** to perform various editing operations in **EditControl** using Commands. **EditCommands** class in **Edit** **Wpf** **library** contains lot of necessary commands. The following are the list of **RoutedUICommands** available in EditControl.
+
+<table>
+<tr>
+<td>
+RoutedUICommand<br/><br/></td><td>
+Description<br/><br/></td></tr>
+<tr>
+<td>
+Backspace<br/><br/></td><td>
+Performs Backspace key operations.<br/><br/></td></tr>
+<tr>
+<td>
+Collapse All<br/><br/></td><td>
+Collapses all the blocks in the EditControl text.<br/><br/></td></tr>
+<tr>
+<td>
+CommentSelection<br/><br/></td><td>
+Comments selected or individual lines based on the language selected.<br/><br/></td></tr>
+<tr>
+<td>
+Copy<br/><br/></td><td>
+Performs Copying of text.<br/><br/></td></tr>
+<tr>
+<td>
+Cut<br/><br/></td><td>
+Cut the text.<br/><br/></td></tr>
+<tr>
+<td>
+DecreaseIndent<br/><br/></td><td>
+Decreases the indent of individual or selected lines.<br/><br/></td></tr>
+<tr>
+<td>
+Delete<br/><br/></td><td>
+Performs Delete key operation.<br/><br/></td></tr>
+<tr>
+<td>
+ExpandAll<br/><br/></td><td>
+Expands all the blocks in the EditControl text.<br/><br/></td></tr>
+<tr>
+<td>
+Find<br/><br/></td><td>
+Opens the Find and Replace window with Quick Find tab selected.<br/><br/></td></tr>
+<tr>
+<td>
+FindAllReferences<br/><br/></td><td>
+Finds all the occurrences of the text specified.<br/><br/></td></tr>
+<tr>
+<td>
+IncreaseIndent<br/><br/></td><td>
+Increases the indent of individual or selected lines.<br/><br/></td></tr>
+<tr>
+<td>
+New<br/><br/></td><td>
+Resets all the Text in the EditControl.<br/><br/></td></tr>
+<tr>
+<td>
+Open<br/><br/></td><td>
+To Open an existing file. It displays the OpenFileDialog in order  to select the file.<br/><br/></td></tr>
+<tr>
+<td>
+Paste<br/><br/></td><td>
+Paste the text copied to the clipboard.<br/><br/></td></tr>
+<tr>
+<td>
+Redo<br/><br/></td><td>
+Performs Redo operations.<br/><br/></td></tr>
+<tr>
+<td>
+Replace<br/><br/></td><td>
+Replaces the text specified in the Find What field with the Replace with field in Find and Replace window.<br/><br/></td></tr>
+<tr>
+<td>
+Save<br/><br/></td><td>
+Saves the text in the EditControl to a File. It displays the SaveFileDialog in order to enter the name and location to save the file.<br/><br/></td></tr>
+<tr>
+<td>
+Search<br/><br/></td><td>
+Finds the text specified in the last search, without opening the Find and Replace window.<br/><br/></td></tr>
+<tr>
+<td>
+SearchInSelected<br/><br/></td><td>
+Finds the text specified in the last search within the selected text, without opening the Find and Replace window.<br/><br/></td></tr>
+<tr>
+<td>
+SelectAll<br/><br/></td><td>
+Selects All the text in EditControl.  <br/><br/></td></tr>
+<tr>
+<td>
+ShowIntellisense<br/><br/></td><td>
+Displays the IntellisensePopup provided if the IntelliSense items are not empty.<br/><br/></td></tr>
+<tr>
+<td>
+UncommentSelection<br/><br/></td><td>
+Removes the comment Lexem from individual or selected lines.<br/><br/></td></tr>
+<tr>
+<td>
+Undo<br/><br/></td><td>
+Performs undo operations.<br/><br/></td></tr>
+</table>
