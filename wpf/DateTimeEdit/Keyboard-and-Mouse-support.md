@@ -22,6 +22,46 @@ After selecting any part in the DateTime value if you press the Up or Down arrow
 ![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)
 
 
+## Open and Close DropDown through Keyboard
+
+`DateTimeEdit` dropdown Popup can be opened and closed by pressing Enter key. This behavior can be enabled by setting the `AllowEnter` property of DateTimeEdit to true.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit x:Name="datetimeedit" CanEdit="False" AllowEnter="True">
+
+</syncfusion:DateTimeEdit>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+datetimeedit.CanEdit = false;
+
+datetimeedit.AllowEnter = true;
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+datetimeedit.CanEdit = False
+
+datetimeedit.AllowEnter = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Dropdown popup of DateTimeEdit cannot be opened by pressing Enter Key when CanEdit Property set to `True`.
+
 {% seealso %}
 
 Repeat Buttons
@@ -29,3 +69,4 @@ Repeat Buttons
 Setting Date
 
 {% endseealso %}
+
