@@ -2624,10 +2624,10 @@ You can create a new column by deriving [GridColumn](http://help.syncfusion.com/
 
 Below steps to create custom column in SfDataGrid.
 
-* [Creating custom column.](#_Creating_custom_column)
-* [Creating renderer.](#_Creating_renderer)
-* [Adding the custom renderer to SfDataGrid.CellRenderers collection.](#_Adding_the_custom)
-* [Defining custom column.](#_Loading_custom_column)
+* [Creating custom column.](#creating-custom-column)
+* [Creating renderer.](#creating-renderer)
+* [Adding the custom renderer to SfDataGrid.CellRenderers collection.](#adding-the-custom-renderer-to-sfdatagridcellrenderers-collection)
+* [Defining custom column.](#loading-custom-column)
 
 #### Creating custom column
 
