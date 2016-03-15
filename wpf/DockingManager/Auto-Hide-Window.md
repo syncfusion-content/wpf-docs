@@ -334,6 +334,94 @@ To enable or disable the AutoHide functionality for a specific child in the Dock
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img10.jpeg)
 
+## Change AutoHide behaviour like Visual Studio 2013
+
+AutoHide panel open and close behavior can be changed as Visual Studio 2013. SidePanel can be opened by click on SideTabItem and already opened side panel can be closed by again click on the same item.  This behavior of DockingManager can be enabled by setting its `IsVs2013SidePanelEnabled` property to `True` and `IsAnimationEnabledOnMouseOver` property to `False`. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="Docking1"
+                           IsAnimationEnabledOnMouseOver="False"
+						   IsVS2013SidePanelEnable="True" >
+
+<ContentControl syncfusion:DockingManager.Header="Content1"
+                syncfusion:DockingManager.State="AutoHidden"   />
+
+<ContentControl syncfusion:DockingManager.Header="Content2"
+                syncfusion:DockingManager.State="AutoHidden"   />
+
+</syncfusion:DockingManager>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+DockingManager Docking1 = new DockingManager();
+
+Docking1.IsAnimationEnabledOnMouseOver = false;
+
+Docking1.IsVS2013SidePanelEnable = true;
+
+ContentControl _content1 = new ContentControl();
+
+DockingManager.SetHeader(_content1, "Content1");
+
+DockingManager.SetState(_content1, DockState.AutoHidden);
+
+ContentControl _content2 = new ContentControl();
+
+DockingManager.SetHeader(_content2, "Content2");
+
+DockingManager.SetState(_content2, DockState.AutoHidden);
+
+Docking1.Children.Add(_content1);
+
+Docking1.Children.Add(_content2);
+
+Grid1.Children.Add(Docking1); 
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim Docking1 As DockingManager =  New DockingManager() 
+
+Docking1.IsAnimationEnabledOnMouseOver = False
+
+Docking1.IsVS2013SidePanelEnable = True
+
+Dim _content1 As ContentControl =  New ContentControl() 
+
+DockingManager.SetHeader(_content1, "Content1")
+
+DockingManager.SetState(_content1, DockState.AutoHidden)
+
+Dim _content2 As ContentControl =  New ContentControl() 
+
+DockingManager.SetHeader(_content2, "Content2")
+
+DockingManager.SetState(_content2, DockState.AutoHidden)
+
+Docking1.Children.Add(_content1)
+
+Docking1.Children.Add(_content2)
+
+Grid1.Children.Add(Docking1)
+
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## AutoHide Animation enabled on Mouse Click
 
