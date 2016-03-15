@@ -81,8 +81,7 @@ this.TextForeground = Brushes.Black;
 
 Create **Lexem** and **Formats** collection for Custom Language, to enable data binding with **Lexem** and **Format** properties; we have modified the Lexem and Formats property type to **IEnumerable** from **LexemCollection** and **FormatCollection** respectively.
 
-N>![](CustomLanguageSupport_images/CustomLanguageSupport_img1.jpeg)
-Note:In previous versions,Lexem and Formats were added directly to Lexems and Formats properties of EditLanguage class.Now since it is IEnumerable,a custom collection need to be created and apply it to Lexem and Format properties of custom language class,here it is PythonLanguage class.
+N>![](CustomLanguageSupport_images/CustomLanguageSupport_img1.jpeg)Note:In previous versions,Lexem and Formats were added directly to Lexems and Formats properties of EditLanguage class.Now since it is IEnumerable,a custom collection need to be created and apply it to Lexem and Format properties of custom language class,here it is PythonLanguage class.
 
 **Formats** **for** **IronPython**
 
