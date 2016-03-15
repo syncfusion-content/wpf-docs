@@ -9,46 +9,18 @@ documentation: ug
 
 # Hiding Sub-Totals
 
-The sub-total hiding feature is used to show or hide sub-totals in PivotGrid.It provides support to have an abstract view of the data as per our requirement.It provides following levels of hiding.
+The sub-total hiding feature is used to show or hide sub-totals in PivotGrid. It provides support to have an abstract view of the data as per our requirement. It provides following levels of hiding.
 
-* Hiding all the Sub-Totals
-* Hiding only the Row Sub-Totals
-* Hiding only the Column Sub-Totals
-* Hiding the Sub-Totals for the specific pivot item
+* Hiding all the sub-totals
+* Hiding only the Row sub-totals
+* Hiding only the Column sub-totals
+* Hiding the sub-totals for the specific PivotItem
 
+## Hiding all the sub-totals
 
-Properties 
-           
-* **ShowSubTotals** - Gets or sets value indicating whether sub total calculations for all row and column should be shown or hidden.
-* **ShowRowSubTotals** - Gets or sets value indicating whether row sub total calculations should be shown or hidden.
-* **ShowColumnSubTotals** - Gets or sets value indicating whether column sub total calculations should be shown or hidden.
-* **ShowSubTotal** - Gets or sets value indicating whether sub total calculations should be shown or hidden for that particular PivotItem.
+The `ShowSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*. 
 
-
-Methods Table
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th></tr>
-<tr>
-<td>
-SubTotalsRendering</td><td>
-Handles rendering of cells(showing or hiding the cells) by calculating the cell range values in the Pivot Engine based on the ShowSubTotals property value in the control</td><td>
-- </td><td>
-Void </td></tr>
-</table>
-
-## Defining the properties in PivotGrid
-
-### Hiding all the Sub-Totals
-
-The property **ShowSubTotals** can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -72,7 +44,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -117,11 +89,11 @@ public partial class MainWindow: Window {
 
 ![](Hiding-SubTotals-images/PivotGrid when sub totals hidden.png)
 
-### Hiding only the Row Sub-Totals 
+## Hiding only the Row sub-totals 
 
-The property **ShowRowSubTotals** can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*. 
+The `ShowRowSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*. 
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -145,7 +117,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -190,11 +162,11 @@ public partial class MainWindow: Window {
 
 ![](Hiding-SubTotals-images/PivotGrid when row sub totals hidden.png)
 
-### Hiding only the Column Sub-Totals 
+## Hiding only the Column sub-totals 
 
-The property **ShowColumnSubTotals** can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*. 
+The `ShowColumnSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*. 
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -218,7 +190,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -263,11 +235,11 @@ public partial class MainWindow: Window {
 
 ![](Hiding-SubTotals-images/PivotGrid when column sub totals hidden.png)
 
-### Hiding the Sub-Totals for the specific pivot item
+## Hiding the sub-totals for the specific PivotItem
 
-It can be achieved by setting the property **ShowSubTotal** to false for the specific PivotItem and it can be mentioned either in *XAML* or in *Code-Behind*. Note that when **ShowSubTotals** property is set to false and setting this property will do nothing.
+It can be achieved by setting the `ShowSubTotal` property to false for the specific PivotItem and it can be mentioned either in *XAML* or *Code-behind*. Note that when `ShowSubTotals` property is set to false and setting this property will do nothing.
 
-If through **XAML**, please refer the below code snippet.  
+If through *XAML*, please refer the below code sample.  
 
 {% highlight XAML %}
 
@@ -291,7 +263,7 @@ If through **XAML**, please refer the below code snippet.
     
 {% endhighlight %}
  
- Else if through **Code-Behind**, please refer the below code snippet.
+ Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

@@ -9,11 +9,9 @@ documentation: ug
 
 # Conditional Formatting
 
-Conditional formatting is the process of applying customized styles to any object based on specified conditions. Conditional Formatting for PivotGrid WPF allows you to format Grid cells based on specified conditions. This can be achieved by defining **PivotGridDataConditionalFormat** which allows you to specify the criteria for filtering the cells and the style to be applied to the filtered cells. After the specifications are defined, the styles are applied only to the cells that fulfill the specified conditions. 
+Conditional formatting is a process of applying customized styles to any object based on specified conditions.  
 
-## Defining Conditional formats for PivotGrid
-
-Conditional Formatting can be defined by using the **PivotGridControl.ConditionalFormats**, which is an observable collection of type **PivotGridDataConditionalFormat**.The criteria for filtering the cells are specified by using the **PivotGridDataConditionalFormat.Conditions** property, which is a collection of PivotGridDataCondition objects.The Style for each ConditionalFormat can be specified by using the **PivotGridDataConditionalFormat.CellStyle** property, which should be of type PivotGridCellStyle. It can be defined either in *XAML* or in *Code-Behind*. 
+It can be defined by using the `PivotGridControl.ConditionalFormats`, which is an observable collection of type *PivotGridDataConditionalFormat*. The criteria for filtering the cells are specified by using the `PivotGridDataConditionalFormat.Conditions` property, which is a collection of *PivotGridDataCondition* objects.The style for each *ConditionalFormat* can be specified by using the `PivotGridDataConditionalFormat.CellStyle` property, which should be of type *PivotGridCellStyle*. It can be defined either in *XAML* or in *Code-behind*. 
 
 If through **XAML**, please refer the below code snippet.
 
@@ -65,7 +63,7 @@ If through **XAML**, please refer the below code snippet.
     
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through **Code-behind**, please refer the below code snippet.
 
 {% highlight C# %}
 

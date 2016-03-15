@@ -9,22 +9,13 @@ documentation: ug
 
 # Editing
 
-PivotGrid provides support to edit the value and total cells and it can be achieved by using **EnableValueEditing** property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted according to the editing. This can be achieved using the **PivotEditingManager** of PivotGrid control.
+PivotGrid provides support to edit the value and total cells and it can be achieved by using the `EnableValueEditing` property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted accordingly.
 
+## Enable editing for value cells
 
-Properties 
+The `EnableValueEditing` property of PivotGrid control can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-behind*.
 
-* **EnableValueEditing** - Gets or sets the value indication whether to enable editing in value cells.
-* **AllowEditingOfTotalCells** - Gets/sets the Boolean value to enable editing in total cells.
-
-
-## Defining the properties in PivotGrid
-
-### Enable editing for value cells
-
-The **EnableValueEditing** property of PivotGrid control can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -49,7 +40,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -95,11 +86,11 @@ public partial class MainWindow: Window {
 
 ![](Editing-Images/PivotGrid shows edited value cell.png)
 
-### Enable editing for total cells
+## Enable editing for total cells
 
-The **AllowEditingOfTotalCells** property of **PivotEditingManager** can be used to achieve this requirement and it can be mentioned in **Code-Behind**.
+The `AllowEditingOfTotalCells` property of `PivotEditingManager` can be used to achieve this requirement and it can be mentioned in *Code-behind*.
 
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, set the **AllowEditingIfTotalCells** property of PivotGrid control.
+To achieve this, define the PivotGrid control and raise its loaded event. Inside the `PivotGrid_Loaded()` event, set the `AllowEditingIfTotalCells` property of PivotGrid control.
 
 {% highlight C# %}
 
@@ -148,11 +139,11 @@ public partial class MainWindow: Window {
 
 ![](Editing-Images/PivotGrid shows edited total cell.png)
 
-## Adding Custom Editing Manager in PivotGrid
+## Custom Editing Manager
 
-After editing the value, we can further customize the value through **customizing the PivotEditingManager**. A custom editing manager can be used so that you can format the PivotCellInfo in PivotGrid.
+After editing the value, we can further customize the value through custom editing manager. A custom editing manager can be used so that you can format the PivotCellInfo in PivotGrid.
 
-Create a class named as  **CustomEditManager** as illustrated below. Dispose the existing edit manager and set the created custom edit manager to the PivotGrid by using the EditManager. Please refer the below code snippet.
+To do so, create a class named as `CustomEditManager` as illustrated below. Dispose the existing edit manager and set the created custom edit manager to the PivotGrid by using the EditManager. Please refer the below code sample.
 
 {% highlight C# %}
 

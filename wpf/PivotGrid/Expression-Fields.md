@@ -9,18 +9,11 @@ documentation: ug
 
 # Expression Fields
 
-PivotGrid provides support to add expression fields and handles other features similar to normal fields. It is possible to add the new expression field info by using the AllowedFields class in PivotGrid control and we need to make use of the below mentioned property to load the allowed fields in PivotGrid.
+PivotGrid provides support to add expression fields and handles other features similar to normal fields. It is possible to add the new expression field information by using the `AllowedFields` class in PivotGrid control and we need to make use of the below mentioned property to load the allowed fields in PivotGrid.
 
-Property 
+* **LoadWithDefaultPropertyFields** - Gets or sets a value indicating whether PivotGrid control load with default property fields for expression support.
 
-* **LoadWithDefaultPropertyFields** - Gets or sets a value indicating whether grid control load with default property fields for expression support.
-
-
-## Defining the property in PivotGrid
-
-This property can be defined either in *XAML* and *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+This property can be defined either in *XAML* and *Code-behind*. If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -45,7 +38,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -90,9 +83,9 @@ public partial class MainWindow: Window {
 
 ## Creating the Expression Fields
 
-**FieldInfo** class is used to create the expression fields which will be added in the **AllowedFields** collection of PivotGrid control. It can be done either in *XAML* or in *Code-Behind*.
+`FieldInfo` class is used to create the expression fields which will be added in the `AllowedFields` collection of PivotGrid control. It can be done either in *XAML* or in *Code-behind*.
 
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -120,7 +113,7 @@ If through **XAML**, please refer the below code snippet.
         
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through **Code-behind**, please refer the below code sample.
 
 {% highlight C# %}
 

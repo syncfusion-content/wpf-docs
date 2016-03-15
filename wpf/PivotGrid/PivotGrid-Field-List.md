@@ -9,17 +9,11 @@ documentation: ug
 
 # PivotGrid Field List
 
-With the current implementation of Grouping bar, we cannot able to add the deleted items in PivotGrid. The delete operation can be easily performed in the GroupingBar by using the AllowRemoving feature, but there is no possibility to add again the deleted items. In order to achieve this, we maintain a separate window called **PivotTable Field List** window, which holds the fields which are not present in the PivotGrid but available in the Item Source. We can bound a collection of PivotItems as **PivotFields** which gets included in the Field List window but not present in the PivotGrid. 
+With the current implementation of Grouping Bar, we cannot add the deleted items in PivotGrid. The delete operation can be easily performed in the Grouping Bar by using its "AllowRemoving" feature, but there is no possibility to add again the deleted items. In order to achieve this, we maintain a separate window called **PivotTable Field List**, which holds the fields which are not present in the PivotGrid but available in the ItemSource. We can bind a collection of PivotItems as **PivotFields** which gets included in the Field List window but not present in the PivotGrid. 
 
-Property 
+PivotTable Field List (or Dynamic Field List) can be launched by setting the `ShowFieldList` property to "true" or by clicking on the **ShowFieldList** menu item of Grouping Bar context menu. Field List is bound to PivotFields property of PivotGridControl, which is a collection of PivotItems. This property can either be set through *XAML* or *Code-behind*.
 
-* **ShowFieldList** - Gets or Sets a value indication whether to show or hide the PivotGridFieldList window.
-                                       
-## PivotTable Field List window in PivotGrid
-
-PivotTable Field List (or Dynamic Field List) can be launched by setting the **ShowFieldList** property to true or by clicking on the ShowFieldList menu item of Grouping bar context menu. Field List is bound to PivotFields property of PivotGridControl, which is a collection of PivotItems.This property can either be set through *XAML* or *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -44,7 +38,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

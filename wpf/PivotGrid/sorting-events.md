@@ -7,18 +7,16 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Sorting Events
+# Sort Events
 
-PivotGrid provides certain sorting events to keep track of the sorted value fields which could be invoked before and after the sort actions.
+PivotGrid provides certain sort events to keep track of the sorted value fields, which could be invoked before and after the sort operation.
 
 * **SortBegin** - An event that notifies before the sorting action begins and returns the index or position of value fields with its corresponding values in PivotGrid.
 * **SortCompleted** - An event that notifies after the sort option completed and returns the index or position of the sorted value fields with its corresponding values in PivotGrid.
 
-**Using the SortBegin and SortCompleted Events**
+**Using SortBegin and SortCompleted Events**
 
-We could make use of this mentioned events by invoking them whenever we want as per our requirement. Please refer the below guidelines and code snippets.
-
-Create a new PivotGrid, bind the ItemSource and define the PivotItems and PivotComputations. Invoke the **SortBegin** and **SortCompleted** events and then we could save the indexes to a separate list  as illustrated below.
+To do so, create a new PivotGrid, bind the ItemSource and define the PivotItems and PivotComputations. Invoke the `SortBegin` and `SortCompleted` events and then we could save the indexes to a separate list as illustrated below.
 
 {% highlight C# %}
 

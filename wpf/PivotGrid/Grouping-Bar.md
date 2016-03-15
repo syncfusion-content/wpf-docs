@@ -9,23 +9,16 @@ documentation: ug
 
 # Grouping Bar
 
-PivotGrid Grouping Bar allows you to slice and dice the fields between column, row, value and filter. Grouping Bar allows us to add, rearrange, or remove the fields to show data in a PivotGrid exactly the way we want. It consists of the following areas
+Grouping Bar allows you to slice and dice the fields between column, row, value and filter. Grouping Bar allows us to add, re-arrange, or remove the fields to show data in the PivotGrid exactly the way we want. It consists of the following areas:
 
-* FilterHeader Area - which holds the Filter items of PivotGrid control.
-* DataHeader Area - which holds the PivotCalculation items of PivotGrid control.
-* ColumnHeader Area - which holds the PivotColumn items of PivotGrid control.
-* RowHeader Area - which holds the PivotRow items of PivotGrid control.
+* Filter Header Area - which holds the Filter items of PivotGrid control.
+* Data Header Area - which holds the PivotCalculation items of PivotGrid control.
+* Column Header Area - which holds the PivotColumn items of PivotGrid control.
+* Row Header Area - which holds the PivotRow items of PivotGrid control.
 
-Property 
+By default, Grouping Bar is enabled in PivotGrid control. We can show or hide the Grouping Bar by using the `ShowGroupingBar` property of PivotGrid control. It can be done both in *XAML* or *Code-behind*.
 
-* **ShowGroupingBar** - Gets or sets whether the GroupingBar needs to shown or hidden.
-
-
-## Defining the Grouping Bar in PivotGrid
-
-By default, Grouping-Bar is enabled for PivotGrid control. We could show or hide the Grouping Bar by using the **ShowGroupingBar** property of PivotGrid control. It can be done both in *XAML* or *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -43,7 +36,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if, through **Code-Behind**, please refer the below code snippet.
+Else if, through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

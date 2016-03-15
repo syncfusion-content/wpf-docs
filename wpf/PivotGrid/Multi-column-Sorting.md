@@ -9,18 +9,15 @@ documentation: ug
 
 # Multi-Column Sorting
 
-Multi-Column sorting behavior has been created which allows you to sort the value columns by one field after another field. For example, If a customer have three different fields being rendered in the PivotGrid, then it could be possible to sort like this:
-**OrderBy(field1).ThenBy(field2).ThenBy(field3).**. 
+Multiple column sorting allows you to sort the fields one after the other. For example, if a user has three different fields rendered in PivotGrid, then it is possible to sort like: **OrderBy(field1).ThenBy(field2).ThenBy(field3).**. 
 
-It can be used to sort the PivotGrid values based on the other field values in the grid if the corresponding value field contains two or more similar values. It can also be used to sort the ‘N’ number of columns in the pivot grid. A separate index number has been used at the top of each column to maintain the order of the sorted columns while doing the multi-column sorting.
+A separate index number is used at the top of each column to maintain the order of the sorted columns while doing the multi-column sorting. Also multi-column sorting can be applied for both **Normal** and **Row Pivots Only** mode of PivotGrid control.
 
-Multi-Column sorting can be applied in both **Normal** and **Row Pivots Only** mode of PivotGrid control.
+##Multi-Column Sorting in Normal Mode
 
-##Multi-Column sorting in Normal mode of PivotGrid control
-
-We can enable the Sorting through *XAML* or through *Code-behind* using **SortOption** property of PivotGrid control.
+We can enable the sorting through *XAML* or *Code-behind* using `SortOption` property of PivotGrid control.
  
-if through **XAML**, Please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -44,7 +41,7 @@ if through **XAML**, Please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -91,23 +88,23 @@ public partial class MainWindow: Window {
 
    ![](Sorting-Images/Normal PivotGrid.png)
    
-* Then the **Quantity** column has been sorted in the PivotGrid.
+* The **Quantity** column has been sorted in the PivotGrid.
 
    ![](Sorting-Images/PivotGrid sorted by single column.png)
    
-* Then by pressing the ctrl key , **Amount** column has been sorted. so that the PivotGrid has been sorted by the multiple columns.
+* Then by pressing the Ctrl key, **Amount** column has been sorted. Now the PivotGrid has been sorted by multiple columns.
 
    ![](Sorting-Images/PivotGrid sorted by multiple columns.png)
    
-* Then again by pressing the ctrl key , we could the sort the PivotGrid based on 'N' number of columns.
+* Then again by pressing the Ctrl key, we can the sort the PivotGrid for 'n' number of columns.
 
    ![](Sorting-Images/PivotGrid sorted by N columns.png)
 
-## Multi-Column sorting in Row Pivots Only mode of PivotGrid control
+## Multi-Column Sorting in Row Pivots Only Mode
 
-We can enable the Sorting through *XAML* or through *Code-behind* using **SortOption** property of PivotGrid control in RowPivotsOnly mode.
+We can enable sorting through *XAML* or *Code-behind* using `SortOption` property of PivotGrid control in RowPivotsOnly mode.
  
-if through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -135,7 +132,7 @@ if through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -148,6 +145,6 @@ public partial class MainWindow: Window {
 		
 {% endhighlight %}
 
-Similarly, we can apply 'n' number of sorting in RowPivotsOnly mode also by pressing Ctrl key.
+Similarly, we can perform 'n' number of sorting in RowPivotsOnly mode by pressing Ctrl key.
 
 ![](Features-in-RowPivotsOnly/Multi column sort in RowPivots.png)

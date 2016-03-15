@@ -7,26 +7,15 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# ToolTip
+# Tooltip
 
-ToolTips can be set to individual cells. The ToolTip information has the cell value and its respective row and column data and it is set in the style’s Tag property.It can be enabled or disabled in a PivotGrid control using a boolean property. A ToolTip’s skin will be set depending upon the theme set for the PivotGrid. Also, users can customize the ToolTip skin at the sample level. ToolTip text can be localized for its “Value”, “Row”, and “Column” text. Users can also set custom text for ToolTips.
+Tooltip holds the respective cell value and its row and column information. It can be enabled or disabled using the `TooltipEnabled` boolean property. User can customize the tooltip skin at the sample level and also can set custom text.
 
+## Adding Tooltip for entire PivotGrid
 
-Properties 
+The `ToolTipEnabled` property can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*. 
 
-* **TooltipEnabled** - Enable/disable the ToolTip for the PivotGrid control.
-* **TooltipEnabled** - Enable/disable the ToolTip for individual cell styles (ColumnHeaderStyle, RowHeaderStyle, ValueCellStyle, SummaryCellStyle, SummaryHeaderStyle).
-* **CustomToolTipTemplateKey** - Gets/sets the DataTemplate key for custom ToolTips for the entire PivotGrid control.
-* **CustomToolTipTemplateKey** - Gets/sets DataTemplate key for custom ToolTip for individual cell styles (ColumnHeaderStyle, RowHeaderStyle, ValueCellStyle, SummaryCellStyle, SummaryHeaderStyle)
-
-
-## Defining the ToolTip properties in PivotGrid
-
-### Adding ToolTip for the entire PivotGrid
-
-The property **ToolTipEnabled** can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code snippet.
 
 {% highlight xaml %}
 
@@ -52,7 +41,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code snippet.
 
 {% highlight C# %}
 
@@ -97,11 +86,11 @@ public partial class MainWindow: Window {
 
 ![](ToolTip-Images/PivotGrid Shows ToolTip.png)
 
-### Adding ToolTip to specific areas in PivotGrid
+## Adding Tooltip to specific areas in PivotGrid
 
-It can be achieved by setting the appearance of ToolTips with respect to cell styles individually. Each style has its own ToolTipEnabled property.
+This can be achieved by setting the appearance of tooltip with respect to each cell styles individually. Each style has its own `ToolTipEnabled` property.
 
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, set the **ToolTipEnabled** property of each cell styles in PivotGrid control.
+After defining the PivotGrid control, raise the Loaded event of PivotGrid control. Inside the `PivotGrid_Loaded()` event, set the `ToolTipEnabled` property of each cell styles in PivotGrid control.
 
 {% highlight C# %}
     
@@ -173,9 +162,9 @@ _PivotGrid shows tooltip for row header_
 
 _PivotGrid shows tooltip for summary values_
 
-### Adding Custom ToolTip for PivotGrid
+## Adding custom Tooltip for PivotGrid
 
-It can be achieved by using the property **CustomToolTipTemplateKey**. Custom data templates can be set to the PivotGrid control’s ToolTip. To do so, we need to write a data template and bind the style’s Tag property and set the key to the PivotGrid control’s **CustomToolTipTemplateKey** property. 
+Custom data templates can be set to the PivotGrid controls tooltip using the `CustomToolTipTemplateKey` property. To do so, we need to write a data template and bind the style's Tag property and set the key to the PivotGrid controls `CustomToolTipTemplateKey` property.
 
 Please refer the below code snippets.
 
@@ -227,7 +216,7 @@ public partial class MainWindow: Window {
 	
 {% endhighlight %}
 
-Similarly, we can define custom tooltip to specific areas with respect to cell styles individually using **CustomToolTipTemplateKey** property of Row, Column, Summary Header and Value cell styles.
+Similarly, we can define custom tooltip to specific areas with respect to individual cell styles using `CustomToolTipTemplateKey` property of row, column, summary header and value cell styles.
 
 ![](ToolTip-Images/PivotGrid shows CustomToolTip.png)
 	

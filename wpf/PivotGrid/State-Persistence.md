@@ -9,18 +9,9 @@ documentation: ug
 
 # State Persistence
 
-PivotGrid allows us to maintain the collapsed or expanded state when the corresponding schema items changed. This can be achieved using **StatePersistence** property of PivotGrid control.
+PivotGrid allows us to maintain the collapsed or expanded state when the corresponding schema items changed. This can be achieved using the `StatePersistence` property of the PivotGrid control.
 
-Property 
-
-* **StatePersistenceEnabled** - Gets or sets a value indicating whether to maintain/show collapsed cells when pivot schema getting changed
-
-
-##Defining the property in PivotGrid 
-
-StatePersistence property of PivotGrid control can be defined both in *XAML* and *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -45,7 +36,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -94,4 +85,4 @@ _PivotGrid with collapsed "Bike"_
 
 ![](State-Persistence-images/PivotGrid with state persistence enabled 1.png)
 
-_PivotGrid maintained collapsed state of "Bike" after Schema Changed_
+_PivotGrid maintaining collapsed state of "Bike" after Schema change_
