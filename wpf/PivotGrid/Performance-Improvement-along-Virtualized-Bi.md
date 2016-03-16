@@ -7,22 +7,14 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Performance Improvement along Virtualized Binding
+# Virtualized Binding (Performance Improvement)
 
-It provides high loading performance for a large set of records. This feature also helps to load the data in PivotGrid on demand by using **Index Engine**.
-
-
-Properties 
+It provides high loading performance for a large set of records. This feature also helps to load the data in PivotGrid on-demand using the **Index Engine**.
 
 * **UseIndexedEngine** - Gets or sets whether an optimized algorithm that relies on indexing the raw data should be used to compute the pivot information.
 * **EnableOnDemandCalculations** - Gets or sets whether the calculations are postponed until the value is requested through the Indexer in the PivotEngine.
 
-
-## Adding a Virtualized binding feature in Pivot Grid
-
-After defining the PivotGrid control, set the properties **EnableOnDemandCalculations** and **UseIndexedEngine** of PivotEngine as true. The values for IndexEngine has been get by using ItemObjectLookup() method and time span must be calculated by using Dispatcher.BeginInvoke() method.
-
-Please refer the below code snippets.
+To achieve this, after defining the PivotGrid control, set the properties `EnableOnDemandCalculations` and `UseIndexedEngine` of PivotEngine to true. The values for IndexEngine must be got by using `ItemObjectLookup()` method and time span must be calculated by using `Dispatcher.BeginInvoke()` method. Please refer the below code sample.
 
 {% highlight C# %}
 

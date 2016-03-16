@@ -24,8 +24,7 @@ The EditControl  control can be added to an application by using Visual Studio
 
 
 
-N>![http://help.syncfusion.com/ug/wpf/ImagesExt/image210_1.jpg](Getting-Started_images/Getting-Started_img2.jpeg)
-If the Edit control is not listed in the toolbox, add it manually from the Syncfusion.Edit.Wpf assembly.The Syncfusion.Edit .Wpf assembly has to be added also to the project References folder.
+N>![http://help.syncfusion.com/ug/wpf/ImagesExt/image210_1.jpg](Getting-Started_images/Getting-Started_img2.jpeg) If the Edit control is not listed in the toolbox, add it manually from the Syncfusion.Edit.Wpf assembly.The Syncfusion.Edit .Wpf assembly has to be added also to the project References folder.
 
 The EditControl control can be created in XAML as follows.
 

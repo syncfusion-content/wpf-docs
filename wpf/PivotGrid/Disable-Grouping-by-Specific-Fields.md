@@ -9,26 +9,17 @@ documentation: ug
 
 # Disable Grouping by Specific Fields 
 
-PivotGrid control allows to prevent the drag and drop of certain PivotItems that has been dragged either in PivotSchemaDesigner or in the Grouping Bar.
-
-
-Properties 
-
-* **AllowRunTimeGroupByField** - Gets or sets the value to enable/disable grouping for this PivotItem.
-* **ShowDisabledGroupBackground** - Enabled/Disabled Background color for the grouping disabled fields.
-
-
-##Defining the Properties in PivotGrid
+PivotGrid control allows to prevent the drag and drop of certain PivotItems either in PivotSchemaDesigner or Grouping Bar.
 
 **AllowRunTimeGroupByField**
 
-We can able to prevent the grouping (i.e., drag-drop) for specific PivotItem using **AllowRunTimeGroupByField** property of PivotItem. It can be defined both in *XAML* and *Code-Behind*.
+We can able to prevent the grouping (i.e., drag-drop) for specific PivotItem using `AllowRunTimeGroupByField` property of PivotItem. It can be defined both in *XAML* and *Code-behind*.
 
 **ShowDisabledGroupBackground**
 
-We can able to provide enabled or disabled background color for corresponding Grouping Bar item which prevents the grouping using **ShowDisabledGroupBackground** property of PivotItem. It can be defined both in *XAML* and *Code-Behind*.
+We can able to provide enabled or disabled background color for corresponding Grouping Bar item which prevents the grouping using `ShowDisabledGroupBackground` property of PivotItem. It can be defined both in *XAML* and *Code-behind*.
 
-If setting both the properties through **XAML**, please refer the below code snippet.
+If setting both the properties through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -51,7 +42,7 @@ If setting both the properties through **XAML**, please refer the below code sni
 
 {% endhighlight %}
 
-Else if setting both the properties through **Code-Behind**, please refer the below code snippet.
+Else if setting both the properties through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

@@ -7,19 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Support to make the GrandTotalsRows always visible
+#Grand Total Row Visiblity 
 
-PivotGrid provides support to the make the grand totals rows always visible in RowPivotsOnly mode. It can be achieved by using the **GrandTotalRowAlwaysVisible** property of PivotGrid control.
+PivotGrid provides support to make the grand total row always visible in RowPivotsOnly mode. 
 
-Property 
+It can be achieved by using the `GrandTotalRowAlwaysVisible` property of PivotGrid control. This property can be defined either in *XAML* or *Code-behind*. 
 
-* **GrandTotalRowAlwaysVisible** - Gets or sets a value indicating whether to make the grand totals visible all the time.
-
-##Defining the property in PivotGrid 
-
-This property can be defined either in *XAML* or in *Code-Behind*.
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -47,7 +41,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

@@ -11,33 +11,24 @@ documentation: ug
 
 The Grouping bar context menu consists of the following menu items:
 
-* **Reload Data** - Refresh the Grid with the Current Item source
-* **Show Field List** - Launches the PivotGrid Field List
+* **Reload Data** - Refresh the Grid with the current ItemSource.
+* **Show Field List** - Launches the PivotGrid Field List.
 * **Order** – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
 
-   * Move to Beginning - Moves the current item to the first position
-   * Move to Left - Moves the current item one step towards its left
-   * Move to Right - Moves the current item one step towards its right
-   * Move to End - Moves the current item to the last position
+   * Move to Beginning - Moves the current item to the first position.
+   * Move to Left - Moves the current item one step towards its left.
+   * Move to Right - Moves the current item one step towards its right.
+   * Move to End - Moves the current item to the last position.
    * Smallest to Largest—Arranges the pivot fields based on the field header from first letter to the last.
    * Largest to Smallest—Arranges the pivot fields based on the field header from last letter to the first.
 		 
 * **Calculated field** - Used to add a new calculation field at run time.
 
-Property 
+By default, the context menu is enabled in all the areas of the Grouping Bar. `DisableContextMenu` property needs to be set individually for Row, Column and Data Header Area in Grouping Bar in-order to alter its visibility. 
 
-* **DisableContextMenu** - Gets or sets whether to enable/disable the grouping bar context menu.
+After defining the PivotGrid control, raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
 
-
-##Defining Grouping bar context menu in PivotGrid
-
-**DisableContextMenu**
-
-By Default, the context menu is enabled for the all the areas in the Grouping Bar. **DisableContextMenu** property needs to be set individually for each area such as Row, Column, Data header area in Grouping Bar in order to disable its visibility. 
-
-After defining the PivotGrid control, raise the Loaded event for PivotGrid. Inside the PivotGrid_Loaded() event, raise the Loaded event for Grouping Bar. Inside GroupingBar_Loaded() event, set the visibility of **DisableContextMenu** of each header areas.
-
-Please refer the below code snippet.
+Please refer the below code sample.
 
 {% highlight C# %}
 

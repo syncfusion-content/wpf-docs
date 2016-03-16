@@ -7,21 +7,13 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Restrict Auto-resizing of Row Header Area
+# Restrict Row Header Resizing
 
-PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the ShowFields button located in the DataHeaderArea of the grouping bar is clicked, the PivotComputation List window appears with the PivotCalculation fields. 
+PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the *ShowFields* button located in the Data Header Area of the Grouping Bar is clicked, the *PivotComputation List* window appears with the PivotCalculation fields. 
 
+The `AllowRowHeaderAreaAutoSizing` property is set to "false", in-order to display the Computation button (ShowFields button) and to restrict the row header items from being stretched when more items are added to the Computation Area. By default, this property is set to "true". It can be defined both in *XAML* and *Code-behind*. 
 
-Property 
-
-* **AllowRowHeaderAreaAutoSizing** - Gets or sets to restrict the RowHeaders stretching when too many items in the PivotGrid GroupingBar computationArea.
-
-
-##Defining Row Header auto sizing in PivotGrid
-
-**AllowRowHeaderAreaAutoSizing** is set to false, in order to display the Computation button (Show Fields button) and to restrict the row header items from being stretched when more items are added to the computation area. By default, this property is set to true. It can be defined both in *XAML* and *Code-Behind*. 
-
-If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
@@ -46,7 +38,7 @@ If through **XAML**, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through **Code-Behind**, please refer the below code snippet.
+Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 

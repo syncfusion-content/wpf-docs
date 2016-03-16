@@ -7,41 +7,25 @@ control: PivotGridControl
 documentation: ug
 ---
 
-# Column Filtering
+# Filtering
 
-Pivot Grid allows you to restrict the display of records by using a mechanism called Filters. A filter enables you to extract a subset of records that meet certain filter criteria. Filters can be applied to one or more columns.
+PivotGrid allows you to restrict the display of records by using a mechanism called filter. A filter enables you to extract a subset of records that meet certain criteria.
 
 Property
 
 * **AllowFilter** - Specifies whether the PivotGridControl allows to set a filter on the Calculation column.
 
+Method
 
-Methods Table
+* **ApplySavedValueFilter** - When RowPivotsOnly is true, this method filters the values in computation columns using the information passed in the dictionary.
 
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-ApplySavedValueFilter</td><td>
-When RowPivotsOnly is true, this method filters the value computation columns using the information in the passed-in dictionary.</td><td>
-(Dictionary<(string),HashSet<(string)>> exclusions)</td><td>
-void</td></tr>
-</table>
+It is possible to do filtering operations for PivotCalculation during run-time as well as during initial load.
+ 
+To do so, define the PivotGrid control in RowPivotsOnly mode. Add the respective PivotCalculations as per your requirement and set the `AllowFilter` property to "true".
 
-## Defining the property in PivotGrid
+Create the dictionary using `Dictionary` class and add the PivotItems which are to be filtered. Invoke the `ApplySavedValueFilter()` method for applying filters.
 
-It is possible to do the filtering operations for the PivotCalculation items in both run time and creating the filters in the load time itself.
-
-After defining PivotGrid control in RowPivotsOnly mode, add the respective PivotCalculations as per your requirement and set the **AllowFilter** property to true.
-
-Create the Dictionary by using Dictionary class and add the PivotItems which are need to be filtered. Invoke the **ApplySavedValueFilter()** method for applying filters.
-
-Please refer the below code snippet.
+Please refer the below code sample.
 
 {% highlight C# %}
 

@@ -1534,7 +1534,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-in/library/system.windows.controls.combobox.isdropdownopen.aspx) property to `true` in [OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellComboBoxRenderer~OnInitializeEditElement.html) method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-in/library/system.windows.controls.combobox.isdropdownopen.aspx) property to `true` in [OnEditElementLoaded](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellComboBoxRenderer~OnEditElementLoaded.html) method by overriding existing renderer.
 
 Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in [SfDataGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection.
 
@@ -1545,14 +1545,18 @@ this.dataGrid.CellRenderers.Add("ComboBox", new GridCellComboBoxRendererExt());
 
 public class GridCellComboBoxRendererExt:GridCellComboBoxRenderer
 {
-    public override void OnInitializeEditElement(DataColumnBase dataColumn,ComboBox uiElement, object dataContext)
+    protected override void OnEditElementLoaded(object sender, System.Windows.RoutedEventArgs e)
     {
-        base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
-        uiElement.IsDropDownOpen = true;
+        base.OnEditElementLoaded(sender, e);
+        var combobox = sender as ComboBox;
+        combobox.IsDropDownOpen = true;
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+
+N> This is applicable when the [SfDataGrid.EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EditTrigger.html) is set as `OnTap`.
 
 ### Customizing GroupCaptionText based on DisplayMemberPath
 
@@ -2181,7 +2185,7 @@ this.datagrid1.Columns.Add(new GridDateTimeOffsetColumn()
 
 SfDataGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 
-Below table lists the available cell types for unbound row and its renderers.
+Below table lists the available cell types for columns and its renderers.
 
 <table>
 <tr>
@@ -2624,10 +2628,10 @@ You can create a new column by deriving [GridColumn](http://help.syncfusion.com/
 
 Below steps to create custom column in SfDataGrid.
 
-* [Creating custom column.](#_Creating_custom_column)
-* [Creating renderer.](#_Creating_renderer)
-* [Adding the custom renderer to SfDataGrid.CellRenderers collection.](#_Adding_the_custom)
-* [Defining custom column.](#_Loading_custom_column)
+* [Creating custom column.](#creating-custom-column)
+* [Creating renderer.](#creating-renderer)
+* [Adding the custom renderer to SfDataGrid.CellRenderers collection.](#adding-the-custom-renderer-to-sfdatagridcellrenderers-collection)
+* [Defining custom column.](#loading-custom-column)
 
 #### Creating custom column
 

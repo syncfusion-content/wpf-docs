@@ -9,7 +9,7 @@ documentation: ug
 
 # Skin Customization
 
-Skin Customization is the process of applying particular style settings to the visual elements of a product. PivotGrid provides the following skin customization options:
+Skin customization would apply particular style settings to the visual elements of a component. PivotGrid provides the following skin options:
 
 * Office 2010 Blue
 * Office 2010 Black
@@ -23,15 +23,9 @@ Skin Customization is the process of applying particular style settings to the v
 * Office 2003
 * Default
 
-Property
-
-* **VisualStyle** - Gets or Sets the VisualStyle of PivotGrid control.
-
-## Defining the property in PivotGrid
-
-The property **VisualStyle** can be mentioned either in *XAML* or *Code-Behind*.
+The `VisualStyle` property is used to customize the skin. It can be mentioned either in *XAML* or *Code-Behind*.
  
- If through **XAML**, please refer the below code snippet.
+If through *XAML*, please refer the below code snippet.
 
 {% highlight xaml %}
 
@@ -55,6 +49,8 @@ The property **VisualStyle** can be mentioned either in *XAML* or *Code-Behind*.
     </Grid>
 
 {% endhighlight %}
+
+Else if through *Code-behind*, please refer the below code snippet.
 
 {% highlight C# %}
 
