@@ -142,7 +142,7 @@ groupView.Orientation = Orientation.Horizontal;
 
 
 
-Use the following code snippet to set groupview Orientation to Vertical.
+Use the following code snippet to set GroupView Orientation to Vertical.
 
 
 
