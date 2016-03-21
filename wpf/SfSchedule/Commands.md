@@ -80,7 +80,7 @@ ScheduleCommands.PasteCommand.Execute(this.Schedule);
 Using DragAndDropCommand of ScheduleCommands, an appointment can be dragged and dropped from one timeslot to another timeslot. Resizing operation can also be performed using this command.
 {% highlight c# %}
 
-ScheduleCommands.PasteCommand.Execute(this.Schedule);
+ScheduleCommands.DragAndDropCommand.Execute(this.Schedule);
 
 
 {% endhighlight  %}
