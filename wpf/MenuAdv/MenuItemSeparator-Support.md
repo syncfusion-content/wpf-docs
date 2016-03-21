@@ -70,7 +70,7 @@ IsChecked="False"/>
 
 {% endhighlight %}
 
-![](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)' | markdownify }}
+![](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)
 
 
 

@@ -55,13 +55,13 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
    ![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)
 
 
-   _Assemblies added into References_
-
+   Assemblies added into References
+   {:.caption}
 
 
 4. Press F4 or open the Properties Window to customize the control by setting the required properties.
 
-   ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
+   ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -69,7 +69,7 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
 
 ### Properties
 
-_Property table_
+
 
 <table>
 <tr>
