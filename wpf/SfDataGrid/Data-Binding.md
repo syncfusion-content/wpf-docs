@@ -190,17 +190,17 @@ N> DataGrid creates different types of views derived from `ICollectionViewAdv` i
 <tr>
 <td>TableSummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
-<td>Maintains the TableSummaryRows collection information. To know more about TableSummaries {{'[click here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)'|markdownify}} </td>
+<td>Maintains the TableSummaryRows collection information. To know more about TableSummaries {{ '[click here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)' | markdownify }} </td>
 </tr>
 <tr>
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
-<td>Maintains the SummaryRows collection information. To know more about summaries {{'[click here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)'|markdownify}} </td>
+<td>Maintains the SummaryRows collection information. To know more about summaries {{ '[click here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)' | markdownify }} </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
-<td>Maintains the CaptionSummaryRow information.To know more about CaptionSummaries {{'[click here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)'|markdownify}}</td>
+<td>Maintains the CaptionSummaryRow information.To know more about CaptionSummaries {{ '[click here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)' | markdownify }}</td>
 </tr>
 </table>
 
