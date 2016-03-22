@@ -735,7 +735,7 @@ This topic explains the implementation of the FilterBar in an application. The f
 
 ### Properties
 
-_FilterBar Support Table_
+FilterBar Support Table
 
 <table>
 <tr>
@@ -777,7 +777,7 @@ GridDataVisibleColumn</td></tr>
 
 ### Tokens to Filter the Value
 
-_FilterBar Support Table_
+FilterBar Support Table
 
 <table>
 <tr>

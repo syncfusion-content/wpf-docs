@@ -319,7 +319,7 @@ Series are the data points plotted in the rectangular co-ordinate system. In thi
 
 ### Series customization quick reference:
 
-_Chart Types table_
+Chart Types table
 
 <table>
 <tr>
@@ -3050,7 +3050,7 @@ _Properties_
 * **Legend.CheckBoxVisibility** - Specifies the visibility of the Chart Legend Check Box.The options included are as follows:* Visible* Collapsed
 
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
@@ -3550,7 +3550,7 @@ Essential BI OLAP Chart for WPF supports exporting an OLAP Chart into an MS Word
 
 The following methods are used to export an OLAP Chart to an MS Word Document:
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>

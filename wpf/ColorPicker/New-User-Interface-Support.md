@@ -100,7 +100,7 @@ The following code example illustrates how to add the New User Interface support
 
 
 
-_New User Interface Support Property Table_
+New User Interface Support Property Table
 
 <table>
 <tr>

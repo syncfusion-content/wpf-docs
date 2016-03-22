@@ -107,7 +107,7 @@ Gets the rectangle that represents the bounding value of chart area excluding Ax
 <tr>
 <td>
 Palette</td><td>
-Gets or sets the color palette for the chart series. The default palette of SfChart is “Metro”.</td></tr>
+Gets or sets the color palette for the chart series. The default palette of SfChart is 'Metro'.</td></tr>
 <tr>
 <td>
 SideBySideSeriesPlacement</td><td>

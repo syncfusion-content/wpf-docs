@@ -489,7 +489,6 @@ LabelAllignment
 
 You are provided with support for Label Selection and Resizing at runtime. This feature can be enabled by using IsEnableLabelSelection property in DiagramView. By enabling this property you are able to resize, drag and rotate the LabelEditor like Nodes. The default value is “False”.
 
-_Label Resizer_
 
 <table>
 <tr>
@@ -502,7 +501,7 @@ Any other dependencies/ sub-properties associated</th></tr>
 <tr>
 <td>
 IsEnableLabelSelection</td><td>
-Gets or sets a value indicating whether to select the node or not. The default value is “False”.</td><td>
+Gets or sets a value indicating whether to select the node or not. The default value is 'False'.</td><td>
 Dependency property</td><td>
 Boolean (True/False)</td><td>
 No</td></tr>

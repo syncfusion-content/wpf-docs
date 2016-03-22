@@ -126,7 +126,7 @@ Background="White">
 
 ## Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

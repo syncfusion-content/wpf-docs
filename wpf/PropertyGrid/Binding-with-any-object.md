@@ -134,7 +134,7 @@ public class Customer
 
 ### Properties
 
-_SelectedObject Table_
+SelectedObject Table
 
 <table>
 <tr>

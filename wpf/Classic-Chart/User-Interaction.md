@@ -1053,7 +1053,7 @@ N> The AllowSegmentDragDrop property does not work when you apply a custom data 
 
 ### Properties
 
-_Propert Table_
+Propert Table
 
 <table>
 <tr>
@@ -1073,7 +1073,7 @@ NA</td></tr>
 </table>
 Events
 
-_ChartSegmentDragging Table_
+ChartSegmentDragging Table
 
 <table>
 <tr>
@@ -1091,7 +1091,8 @@ ChartSegment </td><td>
 Routed Event </td><td>
 NA</td></tr>
 </table>
-_ChartSegmentDragged Table_
+
+ChartSegmentDragged Table
 
 <table>
 <tr>
@@ -1109,7 +1110,8 @@ ChartSegment </td><td>
 Routed Event </td><td>
 NA</td></tr>
 </table>
-_ChartSegmentDropping Table_
+
+ChartSegmentDropping Table
 
 <table>
 <tr>

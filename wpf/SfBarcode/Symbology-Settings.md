@@ -81,7 +81,7 @@ The encoding of the DataMatrix barcode can be modified using the ‘Encoding’ 
 
 The DataMatrix Barcode settings allow the user to specify the size of the barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
 
-_Data Matrix size Table_
+Data Matrix size Table
 
 <table>
 <tr>
@@ -238,7 +238,7 @@ The QR Barcode uses version from 1 to 40.Version 1 measures 21 modules x 21 modu
 
 The QR Barcode employs error correction to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction, as shown in the table, offering the capability of recovery from the following amounts of damage. By default the Error correction level is Low.
 
-_Error Correction Level Table_
+Error Correction Level Table
 
 <table>
 <tr>
@@ -267,7 +267,7 @@ H</td><td>
 
 There are three modes for the input as defined in the table. Each mode supports the specific set of Input characters. User may select the most suitable input mode. By default the Input mode is Binary Mode.
 
-_Input Mode Table_
+Input Mode Table
 
 <table>
 <tr>
