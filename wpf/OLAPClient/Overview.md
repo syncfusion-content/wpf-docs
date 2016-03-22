@@ -67,7 +67,7 @@ Description</th></tr>
 <tr>
 <td>
 Note</td><td>
-{{'![](Overview_images/Overview_img2.jpeg)'| markdownify }} Note:</td><td>
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }} Note:</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

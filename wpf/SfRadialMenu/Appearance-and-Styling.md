@@ -46,11 +46,11 @@ RimBackground property used to fill the outer rim (outer circle).
 {%highlight xaml%}
 
 
-{%endhighlight%}
+
 
 <navigation:SfRadialMenu IsOpen="True" RimBackground="Green" />
 
-
+{%endhighlight%}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 

@@ -233,10 +233,11 @@ The OLAP Client control can also be created and configured by using the Expressi
    ~~~
 
 9. Add the following namespace in the code behind for manipulating the OlapReport and the OlapDataManager.
+   
    1. Syncfusion.Olap.Manager
 
 
-   ~~~csharp 
+   ~~~ csharp 
 
 		using Syncfusion.Olap.Manager;
 
@@ -276,7 +277,7 @@ The OLAP Client control can also be created and configured by using the Expressi
    ~~~
 
 
-   ~~~vbnet
+   ~~~ vbnet
 
 		Imports Syncfusion.Olap.Manager
 
@@ -353,7 +354,7 @@ The OLAP Client control can also be created and configured by using the Expressi
 
 
 
-   ~~~csharp
+   ~~~ csharp
 
 
 		using Syncfusion.Windows.Client.Olap;
@@ -404,7 +405,7 @@ The OLAP Client control can also be created and configured by using the Expressi
 
    ~~~
 
-   ~~~vbnet
+   ~~~ vbnet
    
 		Imports Syncfusion.Olap.Manager
 

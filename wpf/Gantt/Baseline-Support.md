@@ -136,7 +136,7 @@ The following image shows the BaseLine Table View:
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)
+![](Baseline-Support_images/Baseline-Support_img1.png)
 
 
 BaseLine Table View

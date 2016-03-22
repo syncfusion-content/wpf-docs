@@ -1523,7 +1523,7 @@ The following screenshot illustrates how the ColumnOptions icon is displayed for
 
 The following are the column customization options provided by the GridData control.
 
-_Column Option_
+Column Option
 
 <table>
 <tr>
@@ -1545,7 +1545,7 @@ Selecting this check box, enables you to rearrange columns in the grid by draggi
 <tr>
 <td>
 Allow Group</td><td>
-Selecting this check box, enables you to create groups at run time by dragging column headers onto the Group Drop Area. Note that the "Allow Drag" option must be set to _true_ for this to take effect.To enable "grouping" on all the columns in the grid at once, set the ShowGroupDropArea to _true_'| markdownify }}.</td></tr>
+Selecting this check box, enables you to create groups at run time by dragging column headers onto the Group Drop Area. Note that the "Allow Drag" option must be set to _true_ for this to take effect.To enable "grouping" on all the columns in the grid at once, set the ShowGroupDropArea to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 Allow Resize</td><td>
