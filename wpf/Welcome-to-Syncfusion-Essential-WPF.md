@@ -319,10 +319,6 @@ SkinManager<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-SpellChecker<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
 Wizard<br/><br/></td></tr>
 <tr>
 <td>
