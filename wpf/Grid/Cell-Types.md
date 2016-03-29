@@ -4109,7 +4109,6 @@ OCT2HEX(number, [places])Number: The octal number you want to convert.Places: Th
 
 ### Information functions
 
-_Information functions_
 
 <table>
 <tr>
@@ -4125,47 +4124,47 @@ CELL(info_type, [reference])Info_type: A text value that specifies what type of 
 Returns</td></tr>
 <tr>
 <td>
-“col”</td><td>
+'col'</td><td>
 Column Number of ref.</td></tr>
 <tr>
 <td>
-“color”</td><td>
+'color'</td><td>
 1 for negative values, otherwise 0.</td></tr>
 <tr>
 <td>
-“contents”</td><td>
+'contents'</td><td>
 Value of the upper left cell in ref.</td></tr>
 <tr>
 <td>
-“filename”</td><td>
+'filename'</td><td>
 Full path of the file that contains ref.</td></tr>
 <tr>
 <td>
-“format”</td><td>
+'format'</td><td>
 Text value of the number format specified in the referenced cell.</td></tr>
 <tr>
 <td>
-“paranthesis”</td><td>
+'paranthesis'</td><td>
 1 if the cell is formatted with parentheses for positive or all values; otherwise returns 0.</td></tr>
 <tr>
 <td>
-“prefix”</td><td>
+'prefix'</td><td>
 Label prefix of the cell.</td></tr>
 <tr>
 <td>
-“protect”</td><td>
+'protect'</td><td>
 0 if the cell is not locked, otherwise 1.</td></tr>
 <tr>
 <td>
-“row”</td><td>
+'row'</td><td>
 Row number of the cell in reference.</td></tr>
 <tr>
 <td>
-“type”</td><td>
+'type'</td><td>
 B if the cell is empty.L if the cell contains a label.V if the cell contains a value.</td></tr>
 <tr>
 <td>
-“width”</td><td>
+'width'</td><td>
 Column width of the ref cell.</td></tr>
 </table>
 
@@ -4229,31 +4228,31 @@ INFO(type_text)<table><br><tr><br><td><br>Type_text</td><td>
 Returns</td></tr>
 <tr>
 <td>
-"directory"</td><td>
+'directory'</td><td>
 Path of the current directory or folder.</td></tr>
 <tr>
 <td>
-"num file"</td><td>
+'num file'</td><td>
 Number of active worksheets in the open workbooks.</td></tr>
 <tr>
 <td>
-"origin"</td><td>
+'origin'</td><td>
 Returns the absolute cell reference of the top and leftmost cell visible in the window.</td></tr>
 <tr>
 <td>
-"os version"</td><td>
+'os version'</td><td>
 Current operating system version, as text.</td></tr>
 <tr>
 <td>
-"recalc"</td><td>
-Current recalculation mode; returns "Automatic" or "Manual".</td></tr>
+'recalc'</td><td>
+Current recalculation mode; returns 'Automatic' or 'Manual'.</td></tr>
 <tr>
 <td>
-"release"</td><td>
+'release'</td><td>
 Version of Microsoft Excel, as text.</td></tr>
 <tr>
 <td>
-"system"</td><td>
+'system'</td><td>
 Name of the operating environment:<br>Macintosh = "mac"<br>Windows = "pcdos"</td></tr>
 </table>
 

@@ -13,7 +13,7 @@ documentation: ug
 
 Visual styles are available for the dockable windows, which give the windows a rich and professional look and feel. The visual style for the DockingManager is set using the VisualStyle property. The following are some of the visual styles that can be applied to the Docking Manager.
 
-_Property table_
+Property table
 
 <table>
 <tr>

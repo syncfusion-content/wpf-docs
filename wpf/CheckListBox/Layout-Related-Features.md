@@ -60,7 +60,7 @@ CheckBoxAlignment = "Right"
 
 The flow direction for the CheckListBox control is set through the FlowDirection property.
 
-_Property table_
+Property table
 
 <table>
 <tr>
@@ -120,7 +120,7 @@ FlowDirection = "RightToLeft"
 
 The appearance of the CheckListBox control is customized by applying a suitable style using the VisualStyle property.
 
-_Property table_
+Property table
 
 <table>
 <tr>

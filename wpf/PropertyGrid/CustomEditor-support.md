@@ -101,7 +101,7 @@ public class ColorEditEditor :  ITypeEditor
 
 ### Properties
 
-_CustomEditor Table_
+CustomEditor Table
 
 <table>
 <tr>

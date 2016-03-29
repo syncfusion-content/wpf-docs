@@ -1488,7 +1488,7 @@ lc.DecoratorAdornerStyle = TryCast(Me.Resources("decorator"), Style)
 
 The user can hide the vertex of a line connector by setting the IsVertexVisible property to False. The following code snippet illustrates the same. 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1557,7 +1557,7 @@ lc.IsVertexVisible = False
 
 You can disable the drag operation on the vertex of a line connector by setting the IsVertexMovable property to False. The following code example illustrates the same. 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -1624,7 +1624,7 @@ The vertex drag of a line connector is arrested.
 
 Head and tail decorator shape properties provide an option to add arrows and to customize these arrows. End point decorators can be provided for all types of connectors. There are a number of shapes available for head and tail decorators. 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -2526,7 +2526,7 @@ A connector can be customized using CustomPathStyle. The CustomPathStyle propert
 
 Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -2713,7 +2713,7 @@ Tables for Properties, Methods, and Events
 
 Properties
 
-_PropertyTable_
+PropertyTable
 
 <table>
 <tr>

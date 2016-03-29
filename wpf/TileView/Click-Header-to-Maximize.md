@@ -52,7 +52,7 @@ The following code example illustrates how to add the Click Header to Maximize t
 
 ## Properties
 
-_ClickHeaderToMaximize Property Table_
+ClickHeaderToMaximize Property Table
 
 <table>
 <tr>

@@ -63,7 +63,7 @@ public MainWindow()
 
 ### Properties
 
-_Localization Property Table_
+Localization Property Table
 
 <table>
 <tr>

@@ -63,7 +63,7 @@ In the below example, FontWeightButton and FontListBox are the custom controls.
 
 ### Properties
 
-_CategoryEditor Table_
+CategoryEditor Table
 
 <table>
 <tr>

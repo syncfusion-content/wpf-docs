@@ -311,7 +311,7 @@ Gets or sets X-axis offset value for Legends horizontal placement. </td></tr>
 <td>
 OffsetY</td><td>
 OffsetY</td><td>
-Gets or sets Y-axis offset value for Legends vertical placement. OffsetX and OffsetY are applicable when DockPosition is set as “Floating”.</td></tr>
+Gets or sets Y-axis offset value for Legends vertical placement. OffsetX and OffsetY are applicable when DockPosition is set as 'Floating'.</td></tr>
 <tr>
 <td>
 ItemTemplate</td><td>
@@ -1619,7 +1619,7 @@ Gets or sets color for strip line background.</td></tr>
 <td>
 Text</td><td>
 Label</td><td>
-Gets or sets text for strip line. In Chart Text as a “Formatted Text “and in SfChart label as a “String”.</td></tr>
+Gets or sets text for strip line. In Chart Text as a 'Formatted Text' and in SfChart label as a 'String'.</td></tr>
 <tr>
 <td>
 TextRotationAngle</td><td>

@@ -2564,7 +2564,7 @@ one or more</td></tr>
 </table>
 PyramidType Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -3400,9 +3400,9 @@ one or more</td></tr>
 Number of series</td><td>
 one or more</td></tr>
 </table>
+
 PointAndFigure Customization
 
-_PointAndFigure Customization_
 
 <table>
 <tr>

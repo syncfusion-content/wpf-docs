@@ -36,7 +36,6 @@ documentation: ug
 
 {% endhighlight  %}
 
-
 {% highlight c# %}
 
 
@@ -149,8 +148,6 @@ The following lines of code can be used to customize the side wall's look and fe
 </sfchart:ChartArea>
 
 {% endhighlight  %}
-
-
 {% highlight c# %}
 
 
@@ -191,8 +188,6 @@ Chart 3D supports two types of camera projection views namely perspective and or
 </sfchart:ChartArea>
 
 {% endhighlight  %}
-
-
 {% highlight c# %}
 
 
@@ -276,8 +271,6 @@ Adding 3D Manhattan Bar Chart to an Application
         </sync:Chart>
 
 {% endhighlight  %}
-
-
 {% highlight c# %}
 
 Chart1.Areas[0].IsClustered = true;
@@ -380,8 +373,6 @@ LabelFontWeight="Bold"/>
 
 
 {% endhighlight  %}
-
-
 {% highlight c# %}
 
 
