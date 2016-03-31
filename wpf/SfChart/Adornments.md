@@ -68,7 +68,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/marker_1.png)
+![](Adornments_images/marker_1.png)
 
 
 ### Customization
@@ -105,7 +105,7 @@ Symbol="Ellipse"></syncfusion:ChartAdornmentInfo>
 
 {% endhighlight %}
 
-![](Adornment_images/marker_2.png)
+![](Adornments_images/marker_2.png)
 
 
 **Custom** **Template**
@@ -182,7 +182,7 @@ Figures="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,13.
 
 {% endhighlight %}
 
-![](Adornment_images/custom_template.png)
+![](Adornments_images/custom_template.png)
 
 
 ## Label
@@ -211,7 +211,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/label_1.png)
+![](Adornments_images/label_1.png)
 
 
 ### Defining the Label Content
@@ -242,7 +242,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/label_2.png)
+![](Adornments_images/label_2.png)
 
 
 N>For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
@@ -271,7 +271,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/label_3.png)
+![](Adornments_images/label_3.png)
 
 
 **YofTot**
@@ -297,7 +297,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/label_4.png)
+![](Adornments_images/label_4.png)
 
 
 **DateTime**
@@ -326,7 +326,7 @@ SegmentLabelContent="DateTime" >
 
 {% endhighlight %}
 
-![](Adornment_images/label_5.png)
+![](Adornments_images/label_5.png)
 
 
 N> If you are having DateTimeAxis then the corresponding date time value will be displayed. In case of category or numerical axis the value will be converted to OADate.
@@ -406,7 +406,7 @@ throw new NotImplementedException();
 {% endtabs %}
 
 
-![](Adornment_images/label_5.png)
+![](Adornments_images/label_5.png)
 
 
 **Label** **Rotation**
@@ -425,7 +425,7 @@ throw new NotImplementedException();
 
 {% endhighlight %}
 
-![](Adornment_images/label_rotation.png)
+![](Adornments_images/label_rotation.png)
 
 ### Customization
 
@@ -483,7 +483,7 @@ FontStyle="Italic"
 
 {% endhighlight %}
 
-![](Adornment_images/custom_label.png)
+![](Adornments_images/custom_label.png)
 
 
 ## Applying Series Brush
@@ -504,7 +504,7 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 {% endhighlight %}
 
-![](Adornment_images/series_palette.png)
+![](Adornments_images/series_palette.png)
 
 
 The default appearance of the label can be customized using [`LabelTemplate`] property as in the below code example:
@@ -587,7 +587,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/label_template.png)
+![](Adornments_images/label_template.png)
 
 
 ## Label Format
@@ -596,7 +596,7 @@ YBindingPath="Year2011">
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![](Adornment_images/label_format.png)
+![](Adornments_images/label_format.png)
 
 
 The following code example demonstrates the rounding off the y value to three decimal digits:
@@ -673,7 +673,7 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 {% endhighlight %}
 
-![](Adornment_images/connectorline_2.png)
+![](Adornments_images/connectorline_2.png)
 
 
 ### Connector Type
@@ -682,7 +682,7 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 **Line**
 
-![](Adornment_images/connectorline_3.png)
+![](Adornments_images/connectorline_3.png)
 
 **Bezier**
 
@@ -708,7 +708,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornment_images/connectorline_4.png)
+![](Adornments_images/connectorline_4.png)
 
 
 ## Positioning the Adornments
@@ -737,7 +737,7 @@ ShowMarker="True" Symbol="Ellipse">
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_1.png)
+![](Adornments_images/adornment_pos_1.png)
 
 Also you can define the label alignment using  [`HorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HorizontalAlignment.html# "") and [`VerticalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~VerticalAlignment.html# "") properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
 
@@ -753,7 +753,7 @@ Also you can define the label alignment using  [`HorizontalAlignment`](http://he
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_2.png)
+![](Adornments_images/adornment_pos_2.png)
 
 ### Advanced Positioning
 
@@ -785,7 +785,7 @@ LabelPosition as Center
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_3.png)
+![](Adornments_images/adornment_pos_3.png)
 
 
 LabelPosition as Inner
@@ -802,7 +802,7 @@ LabelPosition as Inner
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_4.png)
+![](Adornments_images/adornment_pos_4.png)
 
 
 LabelPosition as Outer
@@ -819,7 +819,7 @@ LabelPosition as Outer
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_5.png)
+![](Adornments_images/adornment_pos_5.png)
 
 
 **Line** **Series**
@@ -838,7 +838,7 @@ LabelPosition as Auto
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_6.png)
+![](Adornments_images/adornment_pos_6.png)
 
 LabelPosition as Inner
 
@@ -854,7 +854,7 @@ LabelPosition as Inner
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_7.png)
+![](Adornments_images/adornment_pos_7.png)
 
 
 LabelPosition as Outer
@@ -871,7 +871,7 @@ LabelPosition as Outer
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_8.png)
+![](Adornments_images/adornment_pos_8.png)
 
 LabelPosition as Center
 
@@ -887,7 +887,7 @@ LabelPosition as Center
 
 {% endhighlight %}
 
-![](Adornment_images/adornment_pos_9.png)
+![](Adornments_images/adornment_pos_9.png)
 
 
 ## Smart Labels for Accumulation Series
@@ -922,6 +922,6 @@ VerticalAlignment="Center" ShowLabel="True" ShowConnectorLine="True" UseSeriesPa
 
 {% endhighlight %}
 
-![](Adornment_images/smartlabel.png)
+![](Adornments_images/smartlabel.png)
 
 
