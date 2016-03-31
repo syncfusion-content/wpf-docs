@@ -108,7 +108,7 @@ Symbol="Ellipse"></syncfusion:ChartAdornmentInfo>
 ![](Adornments_images/marker_2.png)
 
 
-**Custom** **Template**
+**Custom Template**
 
 You can also provide the template for the symbol using SymbolTemplate property as in the below code snippet.
 
@@ -409,7 +409,7 @@ throw new NotImplementedException();
 ![](Adornments_images/label_5.png)
 
 
-**Label** **Rotation**
+**Label Rotation**
 
 [`LabelRotationAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html# "") property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
@@ -769,7 +769,7 @@ The following are the values for this property:
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 
-**Column** **Series**
+**Column Series**
 
 LabelPosition as Center
 
@@ -822,7 +822,7 @@ LabelPosition as Outer
 ![](Adornments_images/adornment_pos_5.png)
 
 
-**Line** **Series**
+**Line Series**
 
 LabelPosition as Auto
 
