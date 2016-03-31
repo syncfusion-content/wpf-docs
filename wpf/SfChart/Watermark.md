@@ -11,8 +11,7 @@ documentation: ug
 
 SfChart provides watermark support which is used to add text or images to the chart area. The major application of watermark is to define the copyright information of the user it belongs to.
 
-This section is to help you understand how to use the ['Watermark'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~Watermark.html#) in your chart.
-
+This section is to help you understand how to use the [`Watermark`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~Watermark.html# "") in your chart.
 
 ## Adding text watermark
 
@@ -46,12 +45,7 @@ Foreground="Black" >
 
 {% endhighlight %}
 
-{% highlight C# %}
-
-{% endhighlight %}
-
-![SfChart with text as watermark.](Watermark_images/Watermark_img1.jpeg)
-
+![](Watermark_images/Watermark_1.png)
 
 ## Adding image watermark
 
@@ -77,8 +71,6 @@ HorizontalAlignment="Center" >
 
 {% endhighlight %}
 
-{% highlight C# %}
+![](Watermark_images/Watermark_2.png)
 
-{% endhighlight %}
 
-![SfChart with images as watermark.](Watermark_images/Watermark_img2.jpeg)
