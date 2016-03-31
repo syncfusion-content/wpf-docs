@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Error Bars| SfChart | Wpf | Syncfusion
-description: errorbars
+title: Error Bar support for SfChart.
+description: Error Bar support for SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
