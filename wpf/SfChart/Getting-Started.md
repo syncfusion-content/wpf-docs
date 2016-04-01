@@ -11,9 +11,9 @@ documentation: ug
 
 The following section helps you to build your application with SfChart. 
 
-###Steps
+## Steps
 
-   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)
    * Add the SfChart assembly to your application. 
    * Initialize chart control.
    * Adding header to the chart control.
@@ -46,6 +46,7 @@ XX.X450.0.X<br/><br/></td>  <td>4.5 Framework<br/><br/></td></tr>
 <table>
 
 * Add the following namespace in your XAML window.
+
 {% highlight xaml %}
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
 {% endhighlight %}
@@ -56,7 +57,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.Sf
 
 Drag and drop the SfChart control from the Toolbox to your application.
 
-![Visual Studio Toolbox](Getting-Started_images/getting-started_img10.png)
+![Visual Studio Toolbox](Getting-Started_images/Getting-Started_img10.png)
 
 Now the Syncfusion.SfChart.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
@@ -68,39 +69,75 @@ Now the Syncfusion.SfChart.WPF reference is added to the application references 
 
 In this section, the data in the following table is used for demonstration.
 
-### Gold Demand in World market
+**Gold** **Demand** **in** **World** **market**
 
 <table>
 <tr>
-<td>
-**Demand for Gold**<br/><br/></td><td>
-**2010 (In Tonnes)**<br/><br/></td><td>
-**2011 (In Tonnes)**<br/><br/></td></tr>
+<th>
+Demand for Gold
+</th>
+<th>
+2010 (In Tonnes)
+</th>
+<th>
+2011 (In Tonnes)
+</th>
+</tr>
 <tr>
 <td>
-Jewelry<br/><br/></td><td>
-1,998.0<br/><br/></td><td>
-2,361.2<br/><br/></td></tr>
+Jewelry
+</td>
+<td>
+1,998.0
+</td>
+<td>
+2,361.2
+</td>
+</tr>
 <tr>
 <td>
-Electronics<br/><br/></td><td>
-1284.0<br/><br/></td><td>
-1328.0<br/><br/></td></tr>
+Electronics
+</td>
+<td>
+1284.0
+</td>
+<td>
+1328.0
+</td>
+</tr>
 <tr>
 <td>
-Research<br/><br/></td><td>
-1090.5<br/><br/></td><td>
-1032.0<br/><br/></td></tr>
+Research
+</td>
+<td>
+1090.5
+</td>
+<td>
+1032.0
+</td>
+</tr>
 <tr>
 <td>
-Investment<br/><br/></td><td>
-1,643.0<br/><br/></td><td>
-1898.0<br/><br/></td></tr>
+Investment
+</td>
+<td>
+1,643.0
+</td>
+<td>
+1898.0
+</td>
+</tr>
 <tr>
 <td>
-Bank Purchases<br/><br/></td><td>
-987.0<br/><br/></td><td>
-887.7<br/><br/></td></tr>
+Bank Purchases
+</td>
+<td>
+987.0
+</td>
+<td>
+887.7
+</td>
+</tr>
 </table>
 
 Before proceeding with the chart, create data model with the above details as follows.
@@ -163,7 +200,7 @@ this.Demands = new ObservableCollection<GoldDemand>
 {% endhighlight %}
 
 
-###Initialize the chart 
+### Initialize the chart 
 
 You need to initialize the chart represented by the following class Syncfusion.UI.Xaml.SfChart.
 
@@ -196,7 +233,7 @@ Here you specify “Demands Comparison” as header as in below code example.
 {% endhighlight %}
 
 
-![SfChart with default axes after initializing.](Getting-Started_images/getting_started_img4.jpeg)
+![SfChart with default axes after initializing](Getting-Started_images/getting_started_img4.jpeg)
 
 
 ### Adding Axes
@@ -216,7 +253,7 @@ The following code example illustrates how to add primary (horizontal) and secon
 {% endhighlight %}
 
 
-![SfChart with defined axes.](Getting-Started_images/getting_started_img5.jpeg)
+![SfChart with defined axes](Getting-Started_images/getting_started_img5.jpeg)
 
 
 N> SfChart supports default axes, so that these axes (primary and secondary axis) will get generated automatically based upon the data bind to the chart, if You didn’t specify the axes explicitly. 
@@ -237,10 +274,10 @@ T> The graph selection depends on user scenario and the nature of the data. For 
 
 After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
 
-* **ItemsSource** - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
-* **XBindingPath** - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
-* **YBindingPath** - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
-* **Label** - This property gives names for the series, which in turn mapped by the Legend.
+* `ItemsSource` - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* `XBindingPath` - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* `YBindingPath` - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* `Label` - This property gives names for the series, which in turn mapped by the Legend.
 
 {% highlight xaml %}
 <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
@@ -251,7 +288,7 @@ After you have added the series, you need to add ItemSource, XBindingPath and YB
 
 ### Add legends to the chart
 
-The following code example illustrates the syntax to add the [legends](http://help.syncfusion.com/wpf/sfchart/legend) in chart. 
+The following code example illustrates the syntax to add the [`legends`](http://help.syncfusion.com/wpf/sfchart/legend) in chart. 
 
 {% highlight xaml %}
 
@@ -295,7 +332,7 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
 
 {% endhighlight %}
 
-###Code Behind
+### Code Behind
 
 {% highlight C# %}
 
@@ -334,7 +371,7 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
     
 The following chart is created as a result of the above codes.
 
-![SfChart with Column series including legend.](Getting-Started_images/getting_started_img6.jpeg)
+![SfChart with Column series including legend](Getting-Started_images/getting_started_img6.jpeg)
 
 
 
@@ -344,9 +381,9 @@ Some developers prefer code behind as the first approach for development, to cre
 
 ### Adding assembly reference
 
-1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions >Syncfusion.SfChart.WPF
-3. Add the following namespace in your C# file, MainWindow.xaml.cs.
+* Open the Add Reference window from your project.
+* Choose Windows > Extensions >Syncfusion.SfChart.WPF
+* Add the following namespace in your C# file, MainWindow.xaml.cs.
 
 {% highlight c# %}
 
@@ -392,7 +429,7 @@ chart.Header = "Demands Comparison"
 
 {% endhighlight  %}
 
-![SfChart with default axes.](Getting-Started_images/getting_started_img7.jpeg)
+![SfChart with default axes](Getting-Started_images/getting_started_img7.jpeg)
 
 
 ### Adding Axes
@@ -441,7 +478,7 @@ chart.SecondaryAxis = secondaryAxis
 
 {% endhighlight  %}
 
-![SfChart with defined axes.](Getting-Started_images/getting_started_img8.jpeg)
+![SfChart with defined axes](Getting-Started_images/getting_started_img8.jpeg)
 
 N> SfChart supports default axes, so that these axes (primary and secondary axis) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly. 
 
@@ -472,10 +509,10 @@ T> The graph selection depends on the user scenario and the nature of the data. 
 
 After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
 
-* **ItemsSource** - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
-* **XBindingPath** - It is a string property, used to map properties that need to be bound to the PrimaryAxis (or XAxis). It is like a value member path in ListBox.
-* **YBindingPath** - It is a string property, used to map properties that need to be bound to the SecondaryAxis (Or YAxis). It is like a value member path in ListBox.
-* **Label** - This property gives names for the series, which in turn mapped by the Legend.
+* `ItemsSource` - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* `XBindingPath` - It is a string property, used to map properties that need to be bound to the PrimaryAxis (or XAxis). It is like a value member path in ListBox.
+* `YBindingPath` - It is a string property, used to map properties that need to be bound to the SecondaryAxis (Or YAxis). It is like a value member path in ListBox.
+* `Label` - This property gives names for the series, which in turn mapped by the Legend.
 
 {% highlight c# %}
 
@@ -530,7 +567,7 @@ N> Syncfusion Chart also supports rendering combination of multiple series. Refe
 
 ### Adding legends to the chart
 
-The following code examples demonstrates how to add [legends](http://help.syncfusion.com/wpf/sfchart/legend) to your chart.
+The following code examples demonstrates how to add [`legends`](http://help.syncfusion.com/wpf/sfchart/legend) to your chart.
 
 {% highlight c# %}
 
@@ -685,7 +722,7 @@ Me.MainGrid.Children.Add(chart)
 
 The following output is displayed as a result of the above code example.
 
-![SfChart with Column series and legend.](Getting-Started_images/getting_started_img9.jpeg)
+![SfChart with Column series and legend](Getting-Started_images/getting_started_img9.jpeg)
 
 
 
