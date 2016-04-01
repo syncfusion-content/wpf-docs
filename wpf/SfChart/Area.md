@@ -59,7 +59,7 @@ Opacity="0.5" />
 
 </chart:SfChart.Header>
 
-{% endhighlight 
+{% endhighlight %}
 
 ![Header customization in SfChart](Area_images/Area_img2.jpeg)
 
@@ -242,7 +242,7 @@ YBindingPath="ItemsCount">
 
 </chart:SfChart>
 
-{% endhighlight %
+{% endhighlight %}
 
 ![SfChart with two y axes, one axis spanned to two rows](Area_images/Area_img5.jpeg)
 
