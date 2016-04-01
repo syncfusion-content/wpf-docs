@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting | SfChart | Wpf | Syncfusion
-description: Sorting Points in Chart
+title: Sorting support in SfChart.
+description: Sorting support in SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
