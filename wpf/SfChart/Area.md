@@ -13,12 +13,12 @@ Chart area represents the entire chart and all its elements. It’s a virtual re
 
 The following are the major properties of chart(SfChart):
 
-* ['PrimaryAxis'](http://help.syncfusion.com/wpf/sfchart/axis#) –  Gets or sets the horizontal x axis for the chart.
-* ['SecondaryAxis'](http://help.syncfusion.com/wpf/sfchart/axis#) –  Gets or sets the vertical y axis for the chart.
-* ['Legend'](http://help.syncfusion.com/wpf/sfchart/legend#) –  Gets or sets the legend for the chart.
-* ['Series'](http://help.syncfusion.com/wpf/sfchart/series#) –  Gets or sets the list of series in the chart.
-* ['TechnicalIndicators'](http://help.syncfusion.com/wpf/sfchart/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
-* ['Behaviors'](http://help.syncfusion.com/wpf/sfchart/interactive-features#)–  Used to add one more interactive features to the chart.
+* [`PrimaryAxis`](http://help.syncfusion.com/wpf/sfchart/axis#) –  Gets or sets the horizontal x axis for the chart.
+* [`SecondaryAxis`](http://help.syncfusion.com/wpf/sfchart/axis#) –  Gets or sets the vertical y axis for the chart.
+* [`Legend`](http://help.syncfusion.com/wpf/sfchart/legend#) –  Gets or sets the legend for the chart.
+* [`Series`](http://help.syncfusion.com/wpf/sfchart/series#) –  Gets or sets the list of series in the chart.
+* [`TechnicalIndicators`](http://help.syncfusion.com/wpf/sfchart/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
+* [`Behaviors`](http://help.syncfusion.com/wpf/sfchart/interactive-features#)–  Used to add one more interactive features to the chart.
 
 ## Chart Header
 
@@ -30,14 +30,10 @@ Header property is used to define the title for the chart. This allows you to ad
 
 {% endhighlight %}
 
-{% highlight C# %}
-
-{% endhighlight %}
-
 ![SfChart with header.](Area_images/Area_img1.jpeg)
 
 
-Header can be positioned left or right side of the chart using ['HorizontalHeaderAlignment'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~HorizontalHeaderAlignment.html#) property.
+Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~HorizontalHeaderAlignment.html#) property.
 
 Also you can add more customization for the header as below: 
 
@@ -63,20 +59,16 @@ Opacity="0.5" />
 
 </chart:SfChart.Header>
 
-{% endhighlight %}
+{% endhighlight 
 
-{% highlight C# %}
-
-{% endhighlight %}
-
-![Header customization in SfChart.](Area_images/Area_img2.jpeg)
+![Header customization in SfChart](Area_images/Area_img2.jpeg)
 
 
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area Customization
 
-SfChart provides the properties like ['AreaBorderBrush'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html#), ['AreaBorderThickness'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html#), ['AreaBackground'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html#) and Background for customizing the plot area.
+SfChart provides the properties like [`AreaBorderBrush`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html#), [`AreaBorderThickness`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html#), [`AreaBackground`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html#) and Background for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
 
@@ -96,16 +88,12 @@ AreaBorderThickness="3" >
 
 {% endhighlight %}
 
-{% highlight C# %}
-
-{% endhighlight %}
-
-![SfChart with customized plot area.](Area_images/Area_img3.jpeg)
+![SfChart with customized plot area](Area_images/Area_img3.jpeg)
 
 
 ## Multiple Area 
 
-You can split plot area into multiple rows and columns using ['ChartRowDefinition'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~RowDefinitions.html#) and ['ChartColumnDefinition'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ColumnDefinitions.html#) like Grid panel’s row and column definition. 
+You can split plot area into multiple rows and columns using [`ChartRowDefinition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~RowDefinitions.html#) and [`ChartColumnDefinition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ColumnDefinitions.html#) like Grid panel’s row and column definition. 
 
 The following code example demonstrates, how you can create multiple panes in the chart area:
 
@@ -185,11 +173,7 @@ chart:SfChart.Row="1" >
 
 {% endhighlight %}
 
-{% highlight C# %}
-
-{% endhighlight %}
-
-![SfChart with multiple panes.](Area_images/Area_img4.jpeg)
+![SfChart with multiple panes](Area_images/Area_img4.jpeg)
 
 
 ## Column Span and Row Span
@@ -201,8 +185,6 @@ You can set the row span in chart like the following code example.
 {% highlight xaml %}
 
 <chart:SfChart>
-
-
 
 <!--Adding row definition to the chart-->
 
@@ -260,13 +242,9 @@ YBindingPath="ItemsCount">
 
 </chart:SfChart>
 
-{% endhighlight %}
+{% endhighlight %
 
-{% highlight C# %}
-
-{% endhighlight %}
-
-![SfChart with two y axes, one axis spanned to two rows.](Area_images/Area_img5.jpeg)
+![SfChart with two y axes, one axis spanned to two rows](Area_images/Area_img5.jpeg)
 
 
 ## Placing Series Side-By-Side
@@ -275,10 +253,10 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side.](Area_images/Area_img6.jpeg)
+![Column chart type placed side by side](Area_images/Area_img6.jpeg)
 
 
-The following code example and image illustrates the placement of series while setting ['SidebySideSeriesPlacement'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html#) as false.
+The following code example and image illustrates the placement of series while setting [`SidebySideSeriesPlacement`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html#) as false.
 
 {% highlight xaml %}
 
@@ -286,7 +264,7 @@ The following code example and image illustrates the placement of series while s
 
 Header="Usage of Metals"  
 
-**SideBySideSeriesPlacement="False"**
+SideBySideSeriesPlacement="False"
 
 AreaBorderThickness="1,1,1,1">
 
@@ -335,13 +313,13 @@ Label="2014" YBindingPath="postion"/>
 ![Column chart type place one over another.](Area_images/Area_img7.jpeg)
 
 
-N>As the series will be placed one over the other(overlapped), to differentiate between the series the ['SegmentSpacing'] is used.
+N>As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
 
 ## Serialization
 
 SfChart supports serialization and deserialization for save the settings of the chart and reload. 
 
-This can be done using ['Serialize'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Serialize.html#) and ['Deserialize'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Deserialize.html#) methods as in below code example:
+This can be done using [`Serialize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Serialize.html#) and [`Deserialize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Deserialize.html#) methods as in below code example:
 
 {% highlight xaml %}
 
@@ -493,42 +471,42 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 You can hold and resume the series updates in dynamic update scenarios using the below methods.
 
-['SuspendSeriesNotification'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SuspendSeriesNotification.html#)
+[`SuspendSeriesNotification`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SuspendSeriesNotification.html#)
 
-['ResumeSeriesNotification'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ResumeSeriesNotification.html#)
+[`ResumeSeriesNotification`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ResumeSeriesNotification.html#)
 
 
 ## Chart events
 
 SfChart provides the following list of events.
 
-* ['SelectionChanging'](http://help.syncfusion.com/wpf/sfchart/interactive-features#selection)
+* [`SelectionChanging`](http://help.syncfusion.com/wpf/sfchart/interactive-features#selection)
 
-* ['SelectionChanged'](http://help.syncfusion.com/wpf/sfchart/interactive-features#selection)
+* [`SelectionChanged`](http://help.syncfusion.com/wpf/sfchart/interactive-features#selection)
 
-* ['ZoomChanging'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`ZoomChanging`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['ZoomChanged'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`ZoomChanged`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['SelectionZoomingStart'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`SelectionZoomingStart`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['SelectionZoomingEnd'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`SelectionZoomingEnd`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['SelectionZoomingDelta'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`SelectionZoomingDelta`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['PanChanging'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`PanChanging`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['PanChanged'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`PanChanged`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
-* ['ResetZooming'](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
+* [`ResetZooming`](http://help.syncfusion.com/wpf/sfchart/interactive-features#zooming-and-panning)
 
 **See also**
 
-['PointToValue'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~PointToValue.html#)
+[`PointToValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~PointToValue.html#)
 
-['ValueToPoint'](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ValueToPoint.html#)
+[`ValueToPoint`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ValueToPoint.html#)
 
-['Save'](http://help.syncfusion.com/wpf/sfchart/exporting#)
+[`Save`](http://help.syncfusion.com/wpf/sfchart/exporting#)
 
-['Print'](http://help.syncfusion.com/wpf/sfchart/printing#)
+[`Print`](http://help.syncfusion.com/wpf/sfchart/printing#)
 

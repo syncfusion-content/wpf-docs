@@ -17,6 +17,8 @@ This method will invoke a printing dialog window with set of printing options.
 
 The following code example demonstrates the printing of chart in button click event:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfChart x:Name="ExportDemoChart" >
@@ -80,6 +82,8 @@ ExportDemoChart.Print();
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following image shows the printing dialog window upon invoking print method.
 

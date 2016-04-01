@@ -298,6 +298,96 @@ Void</td><td>
 NA</td></tr>
 </table>
 
+## SfChart
+The following functionalities can be tested using QTP.
+
+**Methods**
+
+<table>
+<tr>
+<th>
+Method</th>
+<th>
+Description
+</th>
+<th>
+Parameters
+</th>
+<th>
+Return Type
+</th>
+</tr>
+<tr>
+<td>
+void SelectionChanged(int selectedIndex, int seriesIndex)</td>
+<td>
+To record select the segment /series by using selected index and series index parameter 
+</td>
+<td>
+int selectedIndex, int seriesIndex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void ZoomChanged(double zoomFactor, double zoomPosition, int axisIndex);
+</td>
+<td>
+To set the zoom factor and zoom position to the chart axis in order to zoom-in/ zoom-out chart. 
+</td>
+<td>
+double zoomFactor, double zoomPosition, int axisIndex
+</td>
+<td>
+void
+</tr>
+<tr>
+<td>
+void PanChanged(double zoomPosition, int axisIndex)
+</td>
+<td>
+To set the zoom position to the chart axis in order to pan the chart.
+</td>
+<td>
+double zoomPosition, int axisIndex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void ResetZoom(int axisIndex);
+</td>
+<td>
+To reset the zoom position and zoom factor value to the chart axis. 
+</td>
+<td>
+(int axisIndex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void DraggingAnnotation(double x1, double x2, double y1, double y2, int index)
+</td>
+<td>
+To set the selected annotation position by X1, X2, Y1 and Y2 parameters. 
+</td>
+<td>
+double x1, double x2, double y1, double y2, int index
+</td>
+<td>
+Void
+</td>
+</tr>
+</table>
+
+
 ## Essential SfDataGrid
 
 ### Properties
@@ -407,6 +497,7 @@ To Close the Popup.</td><td>
 NA</td><td>
 void</td></tr>
 </table>
+
 
 ## Essential SfDataPager
 

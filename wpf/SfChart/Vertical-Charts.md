@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~IsTransposed.html# "") and [`OpposedPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html# "") properties.
 
-# OpposedPosition
+## OpposedPosition
 
 Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary axis in opposite direction.
 
@@ -38,7 +38,7 @@ OpposedPosition="True"/>
 ![](Vertical-Charts_images/VerticalCharts_1.png)
 
 
-# IsTransposed
+## IsTransposed
 
 This property used to switch the plotting of the series to vertical.
 
