@@ -34,7 +34,9 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 ![](Localization_images/Localization_img1.png)
 
 3.Right-click on the Resources folder, select **Add** and then **NewItem**.
-4.In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.WPF.&lt;culture name&gt;.resx**. For example, you have to give name as **Syncfusion.SfGrid.WPF.de.resx** for German culture. 
+
+4.In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.WPF.&lt;culture name&gt;.resx**. For example, you have to give name as **Syncfusion.SfGrid.WPF.de.resx** for German culture.
+ 
 5.The culture name that indicates the name of language and country. 
 
 ![](Localization_images/Localization_img2.png)
