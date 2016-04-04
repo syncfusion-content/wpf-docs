@@ -92,7 +92,7 @@ In the below screen shot, the OrderID column sorted. Then the CustomerName colum
 
 ![](Sorting_images/Sorting_img2.png)
 
-
+    
 ### Display sort order
 
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowSortNumbers.html) property to `true`. 
@@ -116,7 +116,7 @@ this.dataGrid.ShowSortNumbers = true;
 
 You can sort the data programmatically by adding or removing the [SortColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) in [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnDescriptions.html) property.
 
-N>  [SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) events are not raised when the data sorted programmatically through `SfDataGrid.SortColumnDescriptions`.
+N>  [SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) events are not raised when the data sorted programmatically through `SfDataGrid.SortColumnDescriptions`.
 
 
 ### Adding sort columns
@@ -275,7 +275,7 @@ SfDataGrid sorts the records in UI and maintains in its internal CollectionView 
 
 You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place. 
 
-If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling [SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event.
+If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -316,10 +316,10 @@ private object GetOrderSource(OrderInfo source, string name)
 
 ## Handling events
 
-### SortColumnChanging event
+### SortColumnsChanging event
 
-[SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html)  event occurs while sorting the columns by clicking column header. 
-[GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnChanging` event.
+[SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html)  event occurs while sorting the columns by clicking column header. 
+[GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnsChanging` event.
 
 [Action](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~Action.html) **–** Gets the action triggered this event. 
 
@@ -331,7 +331,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [CancelScroll](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~CancelScroll.html) **-** Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) property of `SortColumnChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) property of `SortColumnsChanging` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -347,7 +347,7 @@ void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSor
 {% endtabs %}
 
 
-### SortColumnChanged event
+### SortColumnsChanged event
 
-[SfDataGrid.SortColumnChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event occurs when the sorting is applied to the column.
-[GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnChanged` event. 
+[SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event occurs when the sorting is applied to the column.
+[GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnsChanged` event. 
