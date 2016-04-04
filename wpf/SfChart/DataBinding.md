@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 
-###Binding a simple collection to the chart
+### Binding a simple collection to the chart
 
 {% highlight C# %}
 
@@ -107,7 +107,7 @@ YBindingPath="Year2010">
 
 {% endhighlight %}
 
-###Binding complex property to the chart
+### Binding complex property to the chart
 
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
 
@@ -156,7 +156,7 @@ public StadiumDetails StadiumObject { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-###Binding array property to the chart
+### Binding array property to the chart
 
 The SfChart supports array values for the XBindingPath and YBindingPath. XBindingPath and YBindingPath are bound with the property name in the corresponding index value. You can bind the same property with different index values.
 
@@ -210,30 +210,6 @@ public class ViewModel
 
 }
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-
-
-<chart:SfChart>
-
-      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
-
-XBindingPath="Brand[1]" YBindingPath="Count[0]" >
-
-      </chart:ColumnSeries>
-
-</chart:SfChart>
-
-
-{% endhighlight %}
-
-
-{% highlight C# %}
-
-
-
 private void CreateChart()
 
 {
@@ -256,7 +232,26 @@ chart.Series.Add(series);
 
 }
 
+
 {% endhighlight %}
+
+{% highlight xaml %}
+
+
+
+<chart:SfChart>
+
+      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
+
+XBindingPath="Brand[1]" YBindingPath="Count[0]" >
+
+      </chart:ColumnSeries>
+
+</chart:SfChart>
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 

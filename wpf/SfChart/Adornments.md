@@ -187,7 +187,7 @@ Figures="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,13.
 
 ## Label
 
-Label represents the text in the adornments which helps to identify the segment based on it y or x value. You can enable the label by setting [`ShowLabel`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html# "") property as true as in the below code example.
+Label represents the text in the adornments which helps to identify the segment based on it y or x value. You can enable the label by setting [`ShowLabel`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html#) property as true as in the below code example.
 
 {% highlight xaml %}
 
@@ -507,7 +507,7 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 ![](Adornments_images/series_palette.png)
 
 
-The default appearance of the label can be customized using [`LabelTemplate`] property as in the below code example:
+The default appearance of the label can be customized using `LabelTemplate` property as in the below code example:
 
 {% highlight xaml %}
 

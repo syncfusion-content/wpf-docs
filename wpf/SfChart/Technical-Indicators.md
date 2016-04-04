@@ -19,7 +19,7 @@ Technical indicator merely an another type meta series. The following steps illu
 
 Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~TechnicalIndicators.html#) collection. 
 
-Here for instance, the [AccumulationDistributionIndicator](#_Accumulation_Distribution) is added.
+Here for instance, the [AccumulationDistributionIndicator](#accumulationdistributionindicator) is added.
 
 {% highlight xaml %}
 
@@ -127,7 +127,7 @@ High="High" Low="Low" Open="Open" Close="Close" >
 
 The Relative Strength Index(RSI) indicators are having additional two lines other than signal line, which indicate the overbought and oversold region. 
 
-The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~UpperLineColor.html#) property is used to define the color for the line indicating overbought region and the [LowerLineColor](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~LowerLineColor.html#) property is used to define the color for the line indicating oversold region.
+The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~UpperLineColor.html#) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~LowerLineColor.html#) property is used to define the color for the line indicating oversold region.
 
 To define the [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#), you can use the following code example:
 
@@ -181,7 +181,7 @@ High="High" Low="Low" Open="Open" Close="Close"/ >
 
 This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~KPeriod.html#) and [`DPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~DPeriod.html#) property defining the ‘K’ percentage and ‘D’ percentage respectively. . No signal line in this indicator.
 
-The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html# ""), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
+The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
 
 You can define stochastic technical indicator using the following code example:
 
@@ -208,7 +208,7 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 ## Exponential Average
 
-The [`ExponentialAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_Simple_Average) and this can be defined using the following code examples.
+The [`ExponentialAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_simple-average) and this can be defined using the following code examples.
 
 {% highlight xaml %}
 

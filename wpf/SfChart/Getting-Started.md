@@ -13,7 +13,7 @@ The following section helps you to build your application with SfChart.
 
 ## Steps
 
-   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)
+   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90))
    * Add the SfChart assembly to your application. 
    * Initialize chart control.
    * Adding header to the chart control.
@@ -45,7 +45,7 @@ XX.X450.0.X<br/><br/></td>  <td>4.5 Framework<br/><br/></td></tr>
 </tr>
 <table>
 
-* Add the following namespace in your XAML window.
+Add the following namespace in your XAML window.
 
 {% highlight xaml %}
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
@@ -213,6 +213,7 @@ You need to initialize the chart represented by the following class Syncfusion.U
 </syncfusion:SfChart>
 
 {% endhighlight %}
+
 
 ### Add header to chart
 
