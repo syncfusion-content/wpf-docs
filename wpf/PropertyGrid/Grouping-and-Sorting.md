@@ -21,7 +21,7 @@ When you click the GroupButton, then the properties will be displayed by groupin
 
 ### Properties
 
-_Grouping and Sorting Table_
+Grouping and Sorting Table
 
 <table>
 <tr>

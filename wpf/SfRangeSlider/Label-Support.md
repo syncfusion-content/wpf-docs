@@ -11,7 +11,7 @@ documentation: ug
 
 This feature allows you to display labels for custom values given in the CustomLabels collection when the ShowCustomLabels property is set to true. It also displays labels for all of the tick values when ShowValueLabels is set to true.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

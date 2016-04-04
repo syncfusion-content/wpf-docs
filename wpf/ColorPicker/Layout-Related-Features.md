@@ -16,7 +16,7 @@ This section illustrates the Layout-related features of ColorPicker and ColorEdi
 Flow Direction of the ColorPicker and ColorEdit controls is set by using the FlowDirection property.
 
 
-_Properties table_
+Properties table
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ colorPicker.FlowDirection = FlowDirection.RightToLeft;
 
 You can enhance the appearance of the ColorPicker and ColorEdit control, using the VisualStyle property. VisualStyle is an attached property, which gets or sets the value for the visual style. The various built-in visual styles are listed below.
 
- _Properties table_
+Properties table
 
 <table>
 <tr>

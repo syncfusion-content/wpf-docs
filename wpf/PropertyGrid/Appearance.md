@@ -53,7 +53,7 @@ Using LineColor, you can set the background for category heading while grouping.
 
 ### Properties
 
-_Grouping and Sorting Table_
+Grouping and Sorting Table
 
 <table>
 <tr>

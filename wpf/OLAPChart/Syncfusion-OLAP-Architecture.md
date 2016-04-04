@@ -106,7 +106,7 @@ Gets or sets the primary axis label visibility.</td></tr>
 
 #### Public Methods
 
-_Public Methods table_
+Public Methods table
 
 <table>
 <tr>

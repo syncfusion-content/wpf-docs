@@ -107,7 +107,7 @@ The following code example illustrates how to add the minimizing item size to an
 
 
 
-_MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
+MinimizedItemTemplate / MaximizedItemTemplate Properties Table
 
 <table>
 <tr>

@@ -839,7 +839,7 @@ Null</td></tr>
 </table>
 Events
 
-_Events Table_
+Events Table
 
 <table>
 <tr>

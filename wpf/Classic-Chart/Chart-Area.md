@@ -162,7 +162,7 @@ Sub Properties</th></tr>
 Header</td><td>
 Sets the title of the chart.</td><td>
 Dependency  Property</td><td>
-Object/ “Chart Header”</td><td>
+Object/ 'Chart Header'</td><td>
  &lt;syncfusion:Chart Name="chart1" Header="Chart Header"&gt;</td><td>
 Sub Property Name : HeaderAlignment Type: HorizontalAlignment / HorizontalAlignment.Left</td></tr>
 </table>

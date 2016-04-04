@@ -818,7 +818,8 @@ CLR. </td><td>
 ChartDataModel </td><td>
 NA </td></tr>
 </table>
-_ChartDataModel Table_
+
+ChartDataModel Table
 
 <table>
 <tr>
