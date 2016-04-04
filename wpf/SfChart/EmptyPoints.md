@@ -13,8 +13,6 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 {% highlight C# %}
 
-{
-
 Fruits.Add(new Model() { FruitName = "Mango", People = 5 });
 
 Fruits.Add(new Model() { FruitName = "Apple", People = 27 });
@@ -26,8 +24,6 @@ Fruits.Add(new Model() { FruitName = "Grapes", People = 15 });
 Fruits.Add(new Model() { FruitName = "Banana", People = 5 });
 
 Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
-
-}
 
 {% endhighlight %}
 

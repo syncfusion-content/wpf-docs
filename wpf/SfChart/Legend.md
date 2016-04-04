@@ -13,7 +13,7 @@ Legend provides metadata which helps for identifying elements in chart like [cha
 [technical indicators](http://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](http://help.syncfusion.com/wpf/sfchart/trendlines). 
 You can define the legend using the following code example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -37,7 +37,7 @@ Represents the symbol associated with each legend item. By default, the legend i
 
 This can be customized using the [`LegendIcon`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIcon.html) property in any series as in below code snippet:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -68,7 +68,7 @@ The following properties are used to customize the legend icons.
 
 The following code example illustrates the customization of legend icon.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <chart:SfChart.Legend>
@@ -101,7 +101,7 @@ The following code example illustrates the customization of legend icon.
 
 The visibility of the legend icon can be changed by setting [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html) property in ChartLegend. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <chart:SfChart.Legend>
@@ -121,7 +121,7 @@ The visibility of the legend icon can be changed by setting [`IconVisibility`](h
 
 We can add custom icon for the legend using [`LegendIconTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIconTemplate.html) property in ChartSeries as in below example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <chart:SfChart.Legend>
@@ -157,7 +157,7 @@ We can add custom icon for the legend using [`LegendIconTemplate`](http://help.s
 
 This allows us to specify the label for each series which is to be displayed in legend label.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -183,7 +183,7 @@ Used to view or collapse the associated series. By default, the CheckboxVisibili
 We can enable it by using the [`CheckBoxVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html) property as in below code example:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -208,7 +208,7 @@ The series can be collapsed by unchecking the CheckBox as below:
 This allows us to position the legends inside or outside of the chart area (plotting area). 
 By default, it will be displayed outside and positioned at top (using [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html)) of the chart area.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -228,7 +228,7 @@ By default, the ChartLegend is docked at the top of the chart as mentioned earli
 
 To display the legend at the bottom, you can set the [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Bottom** as in below code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 <chart:SfChart.Legend>
 
     <chart:ChartLegend  DockPosition="Bottom"/>
@@ -247,7 +247,7 @@ as **Floating** and provide its relative position using [`OffsetX`](http://help.
 and [`OffsetY`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetY.html) properties. 
 Offset specifies x or y distance from origin.
 
-{% highlight xml %}
+{% highlight xaml %}
 <chart:SfChart.Legend>
 
       <chart:ChartLegend  DockPosition="Floating" OffsetX="30" OffsetY="10"/>
@@ -265,7 +265,7 @@ Chart provides support to add any UIElement as a header for legend items.
 
 You can define the header for legend using the following code example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <chart:SfChart.Legend>
@@ -296,7 +296,7 @@ Chart control supports showing the legend in multiple panels, to view the legend
 
 The following code example shows how to create multiple legends in a single chart.
 
-{% highlight xml %}
+{% highlight xaml %}
 <chart:SfChart.Legend>
 
    <chart:ChartLegendCollection>
@@ -341,7 +341,7 @@ For the series like Pie, Doughnut, Funnel and Pyramid, legends will be generated
 
 The following code snippets explains how the legends displaying for accumulation series.
 
-{% highlight xml %}
+{% highlight xaml %}
 <chart:SfChart.Legend>
 
    <chart:ChartLegend />                                 
@@ -364,7 +364,7 @@ Note: Here Legend ‘Label’ will be the x value of the Pie chart.
 We can limit the number of series and trendlines to be displayed in legend using [`VisibilityOnLegend`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~VisibilityOnLegend.html)
 property as shown in below example.
 
-{% highlight xml %}
+{% highlight xaml %}
 <chart:SfChart.Legend>
 
     <chart:ChartLegend>                  
@@ -399,7 +399,7 @@ property as shown in below example.
 
 Orientation of the Legend can be vertical or horizontal. By default the [`Orientation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~Orientation.html) is *Horizontal*. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -420,7 +420,7 @@ You can customize each legend item using `ItemTemplate` property in ChartLegend 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Resources>
         <local:ImageConverter x:Key="imageConverter"></local:ImageConverter>
@@ -504,7 +504,7 @@ public class ImageConverter:IValueConverter
 When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using 
 `ItemsPanel` property as in below code snippet:
 
-{% highlight xml %}
+{% highlight xaml %}
 <chart:SfChart.Legend>
 
    <chart:ChartLegend>
