@@ -163,6 +163,23 @@ The SfChart supports array values for the XBindingPath and YBindingPath. XBindin
 The following code example demonstrates how to bind the array values for the XBindingPath and YBindingPath.
 
 {% tabs %}
+{% highlight xaml %}
+
+
+
+<chart:SfChart>
+
+      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
+
+XBindingPath="Brand[1]" YBindingPath="Count[0]" >
+
+      </chart:ColumnSeries>
+
+</chart:SfChart>
+
+
+{% endhighlight %}
+
 {% highlight C# %}
 public class Model
 
@@ -235,22 +252,6 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-
-
-<chart:SfChart>
-
-      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
-
-XBindingPath="Brand[1]" YBindingPath="Count[0]" >
-
-      </chart:ColumnSeries>
-
-</chart:SfChart>
-
-
-{% endhighlight %}
 
 {% endtabs %}
 

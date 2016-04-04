@@ -39,11 +39,24 @@ T> Select the framework version respective to your application. The version can 
 <table>
 <tr>
 <td>
-XX.X450.0.X<br/><br/></td>  <td>4.5 Framework<br/><br/></td></tr>
-<tr><td>XX.X451.0.X<br/><br/></td>  <td>4.5.1 Framework<br/><br/></td></tr>
-<tr><td>XX.X460.0.X<br/><br/></td>  <td>4.6 Framework<br/><br/></td>
+XX.X450.0.X
+</td> 
+ <td>4.5 Framework
+ </td>
+ </tr>
+<tr>
+<td>XX.X451.0.X
+</td>
+<td>4.5.1 Framework
+</td>
 </tr>
-<table>
+<tr>
+<td>XX.X460.0.X
+</td>
+<td>4.6 Framework
+</td>
+</tr>
+</table>
 
 Add the following namespace in your XAML window.
 
