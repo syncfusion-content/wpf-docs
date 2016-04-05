@@ -139,8 +139,8 @@ The following code illustrates how to change the appearance of port.
 
 {% highlight xaml %}
 
-<Style TargetType="Path" x:Key="shapestyle">
-  <Setter Property="Fill" Value="DarkCyan"></Setter>
+<Style TargetType="Path" x:Key="portshapestyle">
+  <Setter Property="Fill" Value="Yellow"></Setter>
   <Setter Property="Stroke" Value="Black"></Setter>
   <Setter Property="StrokeThickness" Value="2"></Setter>
   <Setter Property="Stretch" Value="Fill"></Setter>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The SfSpreadsheet is excel inspired control that allows you to create, edit, view and format the Microsoft excel files without excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 409 most widely used formulas which any business user needs. 
+The SfSpreadsheet is an Excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without Excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas.
 
 SfSpreadsheet includes several advanced features like 
 
@@ -17,7 +17,7 @@ SfSpreadsheet includes several advanced features like
 
 * **Editing** **and** **Selection**-Interactive support for editing and cell selection in workbook
 
-* **Formulas** - provides support for 409 most widely used formulas which any business user needs and allows you to add, remove and edit the formulas like in excel
+* **Formulas** - provides support for 400+ most widely used formulas which any business user needs and allows you to add, remove and edit the formulas like in excel
 
 * **Name** **Manager** – supports the name ranges in the formulas. By using the name ranges, you can specify the name of the cell range, and then you can use it in the formula more easily without hassling of remembering cell locations
 

@@ -58,7 +58,7 @@ This helps to export the chart to any stream as in below code example.
 
 FileStream fs = File.Create(@"c:\temp\MyTest.png");
 
-**ExportDemoChart****.****Save****(****fs****,** **new** **PngBitmapEncoder****());**
+ExportDemoChart.Save(fs,new PngBitmapEncoder());
 
 {% endhighlight %}
 

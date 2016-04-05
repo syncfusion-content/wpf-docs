@@ -137,7 +137,7 @@ diagram.Tool = Tool.DrawOnce;
 
 {% endhighlight %}
 
-![](Tools_images/Tools_img3.jpeg)
+![](Tools_images/Tools_img3.jpg)
 
 ###Text
 

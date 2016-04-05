@@ -9,92 +9,124 @@ documentation: ug
 
 # Vertical Charts
 
-SfChart provide support for Vertical Charts. You can use this to change the position of x-axis and y-axis to the CartesianSeries.
+SfChart provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~IsTransposed.html#) and [`OpposedPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html#) properties.
 
-The following APIs are used to change axis positions.
+## OpposedPosition
 
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-IsTransposed</td><td>
-Gets or sets the bool value that represents the position change of a CartesianSeries.</td></tr>
-<tr>
-<td>
-OpposedPosition</td><td>
-Gets or sets the bool value that represents the value to draw axis at the opposite position of chart.</td></tr>
-</table>
-
-
-The following code example illustrates the Vertical Chart feature.
-
-
+Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary axis in opposite direction.
 
 {% highlight xaml %}
 
-<syncfusion:SfChart   Height="500" Width="650">
+<chart:SfChart.PrimaryAxis>
 
-<syncfusion:SfChart.Resources>
+<chart:CategoryAxis   OpposedPosition="True" >
 
-<DataTemplate x:Key="suffix">
+</chart:CategoryAxis>
 
-<TextBlock Text="K"  FontSize="14"/>
+</chart:SfChart.PrimaryAxis>
 
-</DataTemplate>
+<chart:SfChart.SecondaryAxis>
 
-</syncfusion:SfChart.Resources>
+<chart:NumericalAxis Minimum="0" Maximum="40" Interval="10"                                   
 
-<syncfusion:SfChart.ColumnDefinitions>
+OpposedPosition="True"/>
 
-<syncfusion:ChartColumnDefinition />
-
-<syncfusion:ChartColumnDefinition />
-
-</syncfusion:SfChart.ColumnDefinitions>
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis FontSize="14" />
-
-</syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis FontSize="14" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True"/>
-
-</syncfusion:SfChart.SecondaryAxis>
-
-
-
-<syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" 
-
-YBindingPath="CompanyTurnOver" ItemsSource="{Binding }"/>
-
-
-
-<syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding }">
-
-<syncfusion:LineSeries.YAxis>
-
-<syncfusion:NumericalAxis FontSize="14" PlotOffset="30" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True" syncfusion:SfChart.Column="1"/>
-
-</syncfusion:LineSeries.YAxis>
-
-</syncfusion:LineSeries>
-
-
-
-</syncfusion:SfChart>
+</chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
-The following screenshot illustrates Vertical Chart.
+![](Vertical-Charts_images/VerticalCharts_1.png)
 
-![C:/Users/rachel/Desktop/wpf/sshot-82.png](Vertical-Charts_images/Vertical-Charts_img1.png)
 
+## IsTransposed
+
+This property used to switch the plotting of the series to vertical.
+
+{% highlight xaml %}
+
+<chart:LineSeries  IsTransposed="True"
+
+ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
+
+YBindingPath="ItemsCount" >
+
+{% endhighlight %}
+
+![](Vertical-Charts_images/VerticalCharts_2.png)
+
+
+The following example demonstrates the vertical charts.
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+<chart:SfChart.ColumnDefinitions>
+
+<chart:ChartColumnDefinition />
+
+<chart:ChartColumnDefinition/>
+
+</chart:SfChart.ColumnDefinitions>
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  ShowGridLines="False“ >
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis/>
+
+</chart:SfChart.SecondaryAxis>          
+
+<chart:LineSeries   IsTransposed="True"  
+
+ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
+
+YBindingPath="ItemsCount" >
+
+<chart:LineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" 
+
+SymbolHeight="10" SymbolInterior="#7f7f7f" SymbolWidth="10">                        
+
+</chart:ChartAdornmentInfo>                        
+
+</chart:LineSeries.AdornmentsInfo>
+
+</chart:LineSeries>
+
+<chart:LineSeries  Interior="DarkGray" IsTransposed="True"
+
+ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
+
+YBindingPath="postion" >
+
+<chart:LineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo ShowLabel="False" ShowMarker="True" Symbol="Ellipse" SymbolHeight="10" 
+
+SymbolInterior="DarkGray" SymbolWidth="10"></chart:ChartAdornmentInfo>
+
+</chart:LineSeries.AdornmentsInfo>
+
+<chart:LineSeries.YAxis>
+
+<chart:NumericalAxis />
+
+</chart:LineSeries.YAxis>
+
+</chart:LineSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+![](Vertical-Charts_images/VerticalCharts_3.png)
 
 

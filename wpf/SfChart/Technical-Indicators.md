@@ -7,546 +7,335 @@ control: SfChart
 documentation: ug
 ---
 
-# Technical Indicators
+# Technical Indicator
 
-Technical indicators are the base of technical analysis, used to determine the future of financial, stock or economic trends. Indicators serve three broad functions: to alert, to confirm and to predict actions. Future price levels can be predicted easily with the help of given data and it helps when you want to enter or exit a trade and to be able to make a profit.
+Technical indicators are the base of technical analysis, which is used to determine the future market trends. 
 
 ## Adding Technical Indicators to the Chart
 
-This example shows how to add technical indicators to a Chart Series. To add technical indicators to the chart, do the following.
+Technical indicator merely an another type meta series. The following steps illustrates how to add the technical indicators to the chart:
 
-## Adding Indicator
+### Initializing Indicator
 
-Create the instance for any technical indicator and add it to the TechnicalIndicators collection. Here for instance, the AccumulationDistributionIndicator is used.
+Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~TechnicalIndicators.html#) collection. 
+
+Here for instance, the [AccumulationDistributionIndicator](#accumulationdistributionindicator) is added.
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:AccumulationDistributionIndicator>
 
-<syncfusion:SfChart.TechnicalIndicators>
+</chart:AccumulationDistributionIndicator>
 
-<syncfusion:AccumulationDistributionIndicator/>
-
-</syncfusion:SfChart.TechnicalIndicators>       
-
-
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-## Binding the data
+### Binding the Data
 
-The data necessary for the indicator to do calculations, are given as specified.
+Next you need to bind the property path for the open, high, low and close along with x value binding property.
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:AccumulationDistributionIndicator Open="Open" Close="Close" High="High" Low="Low">                    
 
-<syncfusion:SfChart.TechnicalIndicators>
+</chart:AccumulationDistributionIndicator>
 
-<syncfusion:AccumulationDistributionIndicator High="High" Low="Low" Open="Open" Close="Close"/>
-
-</syncfusion:SfChart.TechnicalIndicators>
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-## Specifying the Item Source
-
-Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot and visualize the chart.
+### Specifying the ItemsSource
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:AccumulationDistributionIndicator Open="Open" Close="Close"      High="High" 
 
-<syncfusion:SfChart.TechnicalIndicators>
+Low="Low"  ItemsSource="{Binding StockPriceDetails}" 
 
-<syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
+XBindingPath="Date">                    
 
-</syncfusion:SfChart.TechnicalIndicators>
+</chart:AccumulationDistributionIndicator>
 
-
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img1.png)
+![](Technical-Indicators_images/overview_1.png)
 
 
+The following sections covers all the different types of technical indicators available in SfChart.
 
-## AverageTrueRangeIndicator
+Most of the indicators are having the [`Period`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator~Period.html#) and [`SignalLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator~SignalLineColor.html#) properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
 
-AverageTrueRange (ATR) is a very useful indicator that measures the overall price volatility. 
+## Average True Range
 
-The following APIs are used in AverageTrueRangeIndicator.
-
-AverageTrueRangeIndicator
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-</table>
-
-If you want to apply ATR indicator to a chart, then do the following.
+You can define the [`AverageTrueRangeIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#) using the following code example
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:AverageTrueRangeIndicator ItemsSource="{Binding  ViewModel1}"    
 
-<syncfusion:SfChart.TechnicalIndicators>
+Period="3" XBindingPath="Date" Volume="Volume"
 
-<syncfusion:AverageTrueRangeIndicator   Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+SignalLineColor="Black" High="High" Low="Low"
 
-</syncfusion:SfChart.TechnicalIndicators>
+Open="Open" Close="Close"/ >
 
-
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
 
-
-![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img2.png)
-
+![](Technical-Indicators_images/atr.png)
 
 
-## SimpleAverageIndicator
+## Simple Average 
 
-A SimpleAverageIndicator displays average price of a stock over a specific period of time. 
-
-The following APIs are used in SimpleAverageIndicator.
-
-SimpleAverageIndicator
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-</table>
-
-
-If you want to apply SimpleAverageIndicator to a chart, then do the following.
+The following code example demonstrates the usage of [`SimpleAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html#).
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:SimpleAverageIndicator ItemsSource="{Binding  ViewModel1}"  Period="3"     
 
-<syncfusion:SfChart.TechnicalIndicators>
+SignalLineColor="Black" XBindingPath="Date" 
 
-<syncfusion:SimpleAverageIndicator    SignalLineColor=" DarkBlue "  Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
+Volume="Volume"  
 
-</syncfusion:SfChart.TechnicalIndicators>
+High="High" Low="Low" Open="Open" Close="Close" >
+
+</chart:SimpleAverageIndicator >
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
+![](Technical-Indicators_images/sa.png)
 
 
-![C:/Users/rachel/Desktop/Snapshots/ind2.png](Technical-Indicators_images/Technical-Indicators_img3.png)
+## RSI 
 
+The Relative Strength Index(RSI) indicators are having additional two lines other than signal line, which indicate the overbought and oversold region. 
 
+The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~UpperLineColor.html#) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~LowerLineColor.html#) property is used to define the color for the line indicating oversold region.
 
-## RSITechnicalIndicator
-
-The RelativeStrengthIndex (RSI) is a widely used indicator that indicates overbought (price is too high) and oversold (price is too low) conditions. 
-
-The following APIs are used in RSITechnicalIndicator.
-
-RSITechnicalIndicator
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the color for indicator Line.</td></tr>
-<tr>
-<td>
-UpperLineColor</td><td>
-Gets or sets the Brush value that represents the indicator upper Line Color.</td></tr>
-<tr>
-<td>
-LowerLineColor</td><td>
-Gets or sets the Brush value that represents the Indicator Lower Line Color.</td></tr>
-</table>
-
-
-If you want to apply RSITechnicalIndicator to a chart, then do the following.
+To define the [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#), you can use the following code example:
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.TechnicalIndicators>
+<chart:SfChart.TechnicalIndicators>
 
-<syncfusion:RSITechnicalIndicator   UpperLineColor="Red" LowerLineColor="Green" SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"  >
+<chart:RSITechnicalIndicator 
 
-</syncfusion:RSITechnicalIndicator>
+ItemsSource="{Binding  ViewModel1}"  Period="3"   
 
-</syncfusion:SfChart.TechnicalIndicators>
+SignalLineColor="Black" XBindingPath="Date" Volume="Volume"  
+
+UpperLineColor="Blue" LowerLineColor="Red"                  
+
+High="High" Low="Low" Open="Open" Close="Close"/>
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
+![](Technical-Indicators_images/rsi.png)
 
 
-![C:/Users/rachel/Desktop/Snapshots/ind3.png](Technical-Indicators_images/Technical-Indicators_img4.png)
+## Momentum 
 
+This indicator having two lines momentum line and center line. No signal line in this indicator. You can define momentum technical indicator using the following code example.
 
-
-## MomentumTechnicalIndicator
-
-This indicator compares whether the current closing price is related to the previous closing price or not.
-
-The following APIs are used in MomentumTechnicalIndicator.
-
-MomentumTechnicalIndicator
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-MomentumLineColor</td><td>
-Gets or sets the Brush value that represents the indicator momentum (impulse) Line Color.</td></tr>
-<tr>
-<td>
-CenterLineColor</td><td>
-Gets or sets the Brush value that represents the Indicator Center Line Color.</td></tr>
-</table>
-
-
-If you want to apply MomentumTechnicalIndicator to a chart, then do the following.
+The [`MomentumLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~MomentumLineColor.html#) property and [`CenterLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~CenterLineColor.html#) property are used to define the color for the momentum and center line respectively.
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:MomentumTechnicalIndicator ItemsSource="{Binding  ViewModel1}"     
 
-<syncfusion:SfChart.TechnicalIndicators>
+Period="3" CenterLineColor="red" XBindingPath="Date"        
 
-<syncfusion:MomentumTechnicalIndicator   MomentumLineColor="Red" CenterLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
+Volume="Volume" MomentumLineColor="Black"
 
-</syncfusion:SfChart.TechnicalIndicators>
+High="High" Low="Low" Open="Open" Close="Close"/ >
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
+![](Technical-Indicators_images/momentum.png)
 
 
-![C:/Users/rachel/Desktop/Snapshots/ind4.png](Technical-Indicators_images/Technical-Indicators_img5.png)
+## Stochastic 
 
+This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~KPeriod.html#) and [`DPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~DPeriod.html#) property defining the ‘K’ percentage and ‘D’ percentage respectively. . No signal line in this indicator.
 
+The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
 
-## StochasticTechnicalIndicator
-
-The StochasticTechnicalIndicator is one of the most common indicators used in technical analysis. It is used to measure the range and momentum of price movements. 
-
-The following APIs are used in StochasticTechnicalIndicator.
-
-StochasticTechnicalIndicator
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-<tr>
-<td>
-KPeriod</td><td>
-Gets or sets the Int value that represents the indicator moving to period 5.</td></tr>
-<tr>
-<td>
-DPeriod</td><td>
-Gets or sets the Int value that represents the indicator moving to period 3.</td></tr>
-<tr>
-<td>
-UpperLineColor</td><td>
-Gets or sets the Brush value that represents the upper line color.</td></tr>
-<tr>
-<td>
-LowerLineColor</td><td>
-Gets or sets the Brush value that represents the lower line color.</td></tr>
-</table>
-
-
-If you want to apply StochasticTechnicalIndicator to a chart, then do the following.
+You can define stochastic technical indicator using the following code example:
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:StochasticTechnicalIndicator ItemsSource="{Binding  ViewModel1}" 
 
-<syncfusion:SfChart.TechnicalIndicators>
+Period="3" SignalLineColor="Black" KPeriod="8" DPeriod="5"
 
-<syncfusion:StochasticTechnicalIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  KPeriod="7" DPeriod="3" UpperLineColor="Red" LowerLineColor="Red" ItemsSource="{Binding CompanyDetails}"/>
+XBindingPath="Date" Volume="Volume" UpperLineColor="Blue"
 
-</syncfusion:SfChart.TechnicalIndicators>
+LowerLineColor="Purple" PeriodLineColor="Red"
 
+High="High" Low="Low" Open="Open" Close="Close"/>
 
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/Snapshots/ind5.png](Technical-Indicators_images/Technical-Indicators_img6.png)
+![](Technical-Indicators_images/stochastic.png)
 
 
+## Exponential Average
 
-## ExponentialAverageIndicator
-
-The ExponentialAverageIndicator is similar to SimpleAverageIndicator, except that more weight is given to the latest data. 
-
-The following APIs are used in ExponentialAverageIndicator.
-
-
-
-<table>
-<tr>
-<th>
- Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-</table>
-
+The [`ExponentialAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_simple-average) and this can be defined using the following code examples.
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
-<syncfusion:SfChart.TechnicalIndicators>
+<chart:ExponentialAverageIndicator  ItemsSource="{Binding  ViewModel1}"    
 
-	<syncfusion:ExponentialAverageIndicator   Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+Period="3" XBindingPath="Date" Volume="Volume"
 
-	</syncfusion:SfChart.TechnicalIndicators>
+SignalLineColor="Black" High="High" Low="Low"
+
+Open="Open" Close="Close"/ >
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/Snapshots/ind6.png](Technical-Indicators_images/Technical-Indicators_img7.png)
+![](Technical-Indicators_images/exponential.png)
 
 
+## Triangular Average 
 
-## TriangularAverageIndicator
-
-The TriangularAverageIndicator is a simple, average indicator, that has been averaged again (averaging the average). It shows the mean price over a specified number of previous prices. 
-
-The following APIs are used in TriangularAverageIndicator.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-</table>
-
+The [`TriangularAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html#) can be defined as in the following code example.
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:TriangularAverageIndicator  ItemsSource="{Binding  ViewModel1}"    
 
-<syncfusion:SfChart.TechnicalIndicators>
+Period="3" XBindingPath="Date" Volume="Volume"
 
-<syncfusion:TriangularAverageIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="OrangeRed"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"/>
+SignalLineColor="Black" High="High" Low="Low"
 
-</syncfusion:SfChart.TechnicalIndicators>
+Open="Open" Close="Close"/ >
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/Snapshots/ind7.png](Technical-Indicators_images/Technical-Indicators_img8.png)
+![](Technical-Indicators_images/ta.png)
 
 
+## Accumulation Distribution 
 
-## AccumulationDistributionIndicator
-
-AccumulationDistributionIndicator is used to determine the changes in price and volume. The following APIs are used in AccumulationDistributionIndicator.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-</table>
-
+The following code example help you to add [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html#).
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
-<syncfusion:SfChart.TechnicalIndicators>
+<chart:AccumulationDistributionIndicator 
 
-<syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+ItemsSource="{Binding  ViewModel1}" 
 
-</syncfusion:SfChart.TechnicalIndicators>
+XBindingPath="Date" Volume="Volume"    
 
+SignalLineColor="Black" High="High" Low="Low" 
+
+Open="Open" Close="Close" >                 
+
+</chart:AccumulationDistributionIndicator >
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-
-![C:/Users/rachel/Desktop/Snapshots/ind8.png](Technical-Indicators_images/Technical-Indicators_img9.png)
-
+![](Technical-Indicators_images/accumulation.png)
 
 
-## BollingerBandIndicator
+## Bollinger Band
 
-BollingerBandIndicators are volatile bands placed above and below a simple average. 
+This indicator also having [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~LowerLineColor.html#) and [`SignalLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~SignalLineColor.html#) property for defining the brushes for the indicator lines.
 
-The following APIs are used in BollingerBandIndicator.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the HorizontalAlignment value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-<tr>
-<td>
-UpperLineColor</td><td>
-Gets or sets the Brush value that represents the color for the Upper Bollinger Band.</td></tr>
-<tr>
-<td>
-LowerLineColor</td><td>
-Gets or sets the Brush value that represents the color for the Lower Bollinger Band.</td></tr>
-</table>
-
+You can define the [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#) using the following code example:
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:BollingerBandIndicator 
 
-<syncfusion:SfChart.TechnicalIndicators>
+ItemsSource="{Binding  ViewModel1}" Period="3"  
 
-<syncfusion:BollingerBandIndicator   UpperLineColor="Red" LowerLineColor="Green" Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
+UpperLineColor="Blue" LowerLineColor="Red"
 
-</syncfusion:SfChart.TechnicalIndicators> 
+XBindingPath="Date" Volume="Volume" SignalLineColor="Black" 
 
+High="High" Low="Low" Open="Open" Close="Close"/>
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-
-![C:/Users/rachel/Desktop/Snapshots/ind9.png](Technical-Indicators_images/Technical-Indicators_img10.png)
-
+![](Technical-Indicators_images/bollinger.png)
 
 
-## MACDTechnicalIndicator
+## MACD 
 
-MovingAverageConvergenceDivergence (MACD) technical indicator is one of the simplest and most effective momentum indicators available. 
+This is mostly using indicator having [`ShortPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ShortPeriod.html#) and [`LongPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~LongPeriod.html#) for defining the motion of the indicator.
 
-The following APIs are used in MACDTechnicalIndicator.
+Other than signal line, MACD is having convergence and divergence line. The brushes for these lines can be defined using [`ConvergenceLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ConvergenceLineColor.html#) and [`DivergenceLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~DivergenceLineColor.html#).
 
+Also you can draw line, histogram MACD or both using the [`Type`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~Type.html#) property, which defines the type of MACD to be drawn.
 
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Period</td><td>
-Gets or sets the Int value that represents the indicator moving average period.</td></tr>
-<tr>
-<td>
-SignalLineColor</td><td>
-Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
-<tr>
-<td>
-Type</td><td>
-Gets or sets the MACDType value that represents the Type of the MACD Indicator.</td></tr>
-<tr>
-<td>
-ShortPeriod</td><td>
-Gets or sets the Int value that represents the motion of the indicator as Short Period.</td></tr>
-<tr>
-<td>
-LongPeriod</td><td>
-Gets or sets the Int value that represents the motion of the indicator as long Period.</td></tr>
-<tr>
-<td>
-ConvergenceLineColor</td><td>
-Gets or sets the Brush value that represents the convergence line color.</td></tr>
-<tr>
-<td>
-DivergenceLineColor</td><td>
-Gets or sets the Brush value that represents the Divergence Line color.</td></tr>
-</table>
-
+You can define the [`MACDTechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#) using the following code example:
 
 {% highlight xaml %}
 
+<chart:SfChart.TechnicalIndicators>
 
+<chart:MACDTechnicalIndicator ItemsSource="{Binding  ViewModel1}" 
 
-<syncfusion:SfChart.TechnicalIndicators>
+Type="Line"  ShortPeriod="2" Period="3" LongPeriod="6"
 
-<syncfusion:MACDTechnicalIndicator   Type="Line" ConvergenceLineColor="Green" DivergenceLineColor="Red" Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
+ConvergenceLineColor="Red" DivergenceLineColor="Blue"
 
-</syncfusion:SfChart.TechnicalIndicators>
+XBindingPath="Date" Volume="Volume" SignalLineColor="Black" 
 
+High="High" Low="Low" Open="Open" Close="Close" >
+
+</chart:MACDTechnicalIndicator >
+
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
-
-![C:/Users/rachel/Desktop/Snapshots/ind10.png](Technical-Indicators_images/Technical-Indicators_img11.png)
-
+![](Technical-Indicators_images/macd.png)
 
 

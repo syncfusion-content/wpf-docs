@@ -277,7 +277,7 @@ graphinfo.Commands.SendBackward.Execute(null);
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img21.jpeg)
+![](Commands_images/Commands_img21.jpg)
 
 ###BringForward command
 
