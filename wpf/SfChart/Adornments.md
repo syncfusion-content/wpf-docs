@@ -645,7 +645,7 @@ The following code example shows the customization option for connector line:
 
 {% endhighlight %}
 
-![](Adornment_images/connectorline_1.png)
+![](Adornments_images/connectorline_1.png)
 
 
 ### Connector Height and Rotation

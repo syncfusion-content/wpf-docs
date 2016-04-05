@@ -488,9 +488,9 @@ Palette="Custom">
 
 </chart:FunnelSeries>
 
-![](Series_images/funnelexplode_1.png)
-
 {% endhighlight %}
+
+![](Series_images/funnelexplode_1.png)
 
 **Gap** **Ratio**
 
@@ -512,7 +512,7 @@ GapRatio="0.5" YBindingPath="Percentage" Palette="Custom">
 
 ### Radar
 
-[`RadarSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RadarSeries.html# "") represents a collection of data, displayed by quantitative variables, represented on axes starting from the same point. The relative position and angle of the axes is not uniform. 
+[`RadarSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data, displayed by quantitative variables, represented on axes starting from the same point. The relative position and angle of the axes is not uniform. 
 
 The following code example illustrates the use of radar series:
 
@@ -577,7 +577,7 @@ StrokeThickness="2" />
 {% endhighlight %}
 
 
-![](Series_images/Series_img28.jpeg)
+![](Series_images/isclosed.png)
 
 ### DrawType
 
@@ -621,7 +621,7 @@ StrokeThickness="2" />
 
 ### OHLC
 
-[`HiLoOpenCloseSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html#) displays each data point as a group of horizontal and one vertical line. The values for this series can be bind using [`High`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html#), [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html#), [`Open`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html# "") and [`Close`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html#) property.
+[`HiLoOpenCloseSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html#) displays each data point as a group of horizontal and one vertical line. The values for this series can be bind using [`High`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html#), [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html#), [`Open`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html#) and [`Close`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html#) property.
 
 The following code example shows how to use OHLC series:
 
@@ -663,10 +663,21 @@ Interior="#4A4A4A"/>
 
 
 The APIs present in the Candle series are,
+* [`High`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html)-Gets or sets the string that describes high value in Y-axis.
+* [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html)- Gets or sets the string that describes low value in Y-axis.
+* [`Open`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html)-Gets or sets the string that describes open value in Y-axis.
+* [`Close`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html)- Gets or sets the string that describes close value in Y-axis.
+* [`BearFillColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BearFillColor.html)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
+* [`BullFillColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BullFillColor.html)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
 
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"  High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black" BullFillColor="#BCBCBC"/>
+{% highlight xaml %}
 
-![](Series_images/Series_img33.jpeg)
+<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"   
+                    High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black"
+                    BullFillColor="#BCBCBC"/>
+{% endhighlight %}                  
+
+![](Series_images/candle_1.png)
 
 ### HiLo
 
@@ -936,7 +947,7 @@ ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
-![](Series_images/stackingareaclosed.png)
+![](Series_images/stackingarea_closed.png)
 
 
 ### Grouping Stacked Series
@@ -1036,8 +1047,8 @@ The APIs present in the RangeArea series are,
 
 **Properties**
 
-* HighValueInterior -Gets or sets the brush that represents the interior color for the high value data.
-* LowValueInterior- Gets or sets the brush that represents the interior color for the high value data.
+* [`HighValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~HighValueInterior.html) -Gets or sets the brush that represents the interior color for the high value data.
+* [`LowValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~LowValueInterior.html)- Gets or sets the brush that represents the interior color for the high value data.
 
 {% highlight xaml %}
 
@@ -1243,7 +1254,7 @@ Low="Price"/>
 
 ### Fast OHLC
 
-[`FastHiLoOpenCloseBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html# "") are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
+[`FastHiLoOpenCloseBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html#) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
 
 {% highlight xaml %}
 

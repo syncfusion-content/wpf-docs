@@ -199,20 +199,6 @@ this.Demands = new ObservableCollection<GoldDemand>
 {% endhighlight %}
 
 
-
-### Initialize the chart
-
-{% highlight xaml %}
-<Grid>
-        
-    <syncfusion:SfChart>
-            
-    </syncfusion:SfChart>
-            
-</Grid>
-{% endhighlight %}
-
-
 ### Initialize the chart 
 
 You need to initialize the chart represented by the following class Syncfusion.UI.Xaml.SfChart.
@@ -314,6 +300,8 @@ The following code example illustrates the syntax to add the [`legends`](http://
 
 Now you have prepared a Chart demonstrating the studies related to Gold demands in World market. The following code example gives you the complete code for creating a chart.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demands Comparison" FontSize="16" 
@@ -345,8 +333,6 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
 </syncfusion:SfChart>
 
 {% endhighlight %}
-
-### Code Behind
 
 {% highlight C# %}
 
@@ -383,6 +369,9 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
 
 {% endhighlight %}
     
+{% endtabs %}
+    
+    
 The following chart is created as a result of the above codes.
 
 ![SfChart with Column series including legend](Getting-Started_images/getting_started_img6.jpeg)
@@ -399,6 +388,8 @@ Some developers prefer code behind as the first approach for development, to cre
 * Choose Windows > Extensions >Syncfusion.SfChart.WPF
 * Add the following namespace in your C# file, MainWindow.xaml.cs.
 
+{% tabs %}
+
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Charts;
@@ -411,9 +402,14 @@ Imports Syncfusion.UI.Xaml.Charts
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+
 ### Initialize the chart
 
 You need to create the instance for the SfChart as below.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -427,9 +423,13 @@ Dim chart As New SfChart()
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ### Adding header to the chart
 
 The header acts as the title for the Chart you created, to identify its purpose.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -443,12 +443,16 @@ chart.Header = "Demands Comparison"
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![SfChart with default axes](Getting-Started_images/getting_started_img7.jpeg)
 
 
 ### Adding Axes
 
 The following code example illustrates how to add Primary (horizontal) and Secondary (vertical) axes to the SfChart.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -492,6 +496,8 @@ chart.SecondaryAxis = secondaryAxis
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![SfChart with defined axes](Getting-Started_images/getting_started_img8.jpeg)
 
 N> SfChart supports default axes, so that these axes (primary and secondary axis) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly. 
@@ -502,6 +508,8 @@ N> SfChart supports default axes, so that these axes (primary and secondary axis
 You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
 
 You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -519,6 +527,9 @@ Dim series2 As New ColumnSeries()
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+
 T> The graph selection depends on the user scenario and the nature of the data. For example, consider the case where a user is developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
 
 After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
@@ -527,6 +538,8 @@ After you have added the series, you need to add ItemSource, XBindingPath and YB
 * `XBindingPath` - It is a string property, used to map properties that need to be bound to the PrimaryAxis (or XAxis). It is like a value member path in ListBox.
 * `YBindingPath` - It is a string property, used to map properties that need to be bound to the SecondaryAxis (Or YAxis). It is like a value member path in ListBox.
 * `Label` - This property gives names for the series, which in turn mapped by the Legend.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -576,12 +589,16 @@ chart.Series.Add(series2)
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 N> Syncfusion Chart also supports rendering combination of multiple series. Refer this for details.
 
 
 ### Adding legends to the chart
 
 The following code examples demonstrates how to add [`legends`](http://help.syncfusion.com/wpf/sfchart/legend) to your chart.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -603,9 +620,13 @@ chart.Legend = legend
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 Now you have prepared a Chart demonstrating the studies related to Gold demands in World market. 
 
 The following code example gives you the complete code for creating a chart.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -733,6 +754,8 @@ chart.Legend = legend
 Me.MainGrid.Children.Add(chart)
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
