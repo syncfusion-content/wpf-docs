@@ -77,7 +77,7 @@ This shows when something is increasing or decreasing at a steady rate. This is 
 
 The linear trend line will be calculated using the below formula:
 
-__yValue__ __=__ __Intercept__ __+__ __Slope__ __*__ __xValue__ (__where__ __xValue__ __is__ __X__ __data__).
+yValue = Intercept + Slope * xValue ( where xValue is Xdata).
 
 The following is the code example of this trend line.
 
@@ -110,7 +110,7 @@ This trend line is used when there is a constant increasing or decreasing in val
 
 The linear trend line will be calculated using the below formula:
 
-(__Intercept__ __*__ __Math__.__Exp__ (__Slope__ __*__ __xValue__)__) (__where__ __xValue__ __is__ __X__ __data__).
+(Intercept*Math.Exp(Slope*xValue)) (where xValue is Xdata).
 
 The following code example defines the exponential trendline.
 
@@ -145,7 +145,7 @@ This trend line is used for comparing multiple sets of data that increase at spe
 
 This will be calculates using the following formula:
 
-(__Intercept__ __*__ __Math__.__Pow__ (__xValue__ __,__ __Slope__)) (__Where__ __xValue__ __is__ __X__ __data__).
+(Intercept*Math.Pow(xValue,Slope)) (Where xValue is Xdata).
 
 The following code example explains how to define the power trendline.
 
@@ -177,7 +177,7 @@ This is used when there is a quick change in the data, either increasing or decr
 
 The will be calculated using the below formula:
 
-__Intercept__ __+__ __Slope__ __*__ __Math__.__Log__(__xValue__) (__where__ __xValue__ __is__ __X__ __data__).
+Intercept+Slope * Math.Log(xValue) (where xValue is Xdata).
 
 The following code example illustrates the use of logarithmic trend line.
 
@@ -209,7 +209,7 @@ The polynomial trendline is a curved line that is used when there are more data 
 
 The polynomial trendline is calculated using the below formula:
 
-__PolynomialSlopes__.__Select__( (__ value __,__ __index__) __=>__ __value__*__Math__.__Pow__ (__xValue__,__ __(__double__) __index__)).__Sum__()__ __where__ __xValue__ __is__ __X__ __data__
+PolynomialSlopes.Select( ( value,index)=>value*Math.Pow (xValue,(double)index)).Sum() (where xValue is Xdata)
 
 To define the polynomial trendline, you can use the following code example.
 

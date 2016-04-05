@@ -13,6 +13,29 @@ SfChart offers ItemsSource property to bind various datasource ranges from simpl
 
 ### Binding a simple collection to the chart
 
+{% tabs %}
+
+
+{% highlight xaml %}
+
+<syncfusion:SfChart >
+
+<syncfusion:LineSeries
+
+ItemsSource="{Binding Demands}"
+
+XBindingPath="Demand"
+
+YBindingPath="Year2010">
+
+</syncfusion:LineSeries>
+
+
+
+</syncfusion:SfChart>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 public class GoldDemand
@@ -87,25 +110,9 @@ public ObservableCollection<GoldDemand> Demands { get; set; }       }
 
 {% endhighlight %}
 
-{% highlight xaml %}
 
-<syncfusion:SfChart >
+{% endtabs %}
 
-<syncfusion:LineSeries
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
-</syncfusion:LineSeries>
-
-
-
-</syncfusion:SfChart>
-
-{% endhighlight %}
 
 ### Binding complex property to the chart
 
