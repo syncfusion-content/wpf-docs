@@ -226,7 +226,7 @@ The rendering size of the PieSeries can be controlled using [`PieCoefficient`](h
 
 {% highlight xaml %}
 
-<chart:PieSeries PieCoefficient="0.9" Palette="Custom"
+<chart:PieSeries PieCoefficient="0.9" 
 
 XBindingPath="Category" 
 
@@ -283,9 +283,7 @@ XBindingPath="Utilization"
 
 YBindingPath="ResponseTime"
 
-ItemsSource="{Binding}"
-
-Palette="Custom"/>
+ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
@@ -293,9 +291,7 @@ Palette="Custom"/>
 
 {% highlight xaml %}
 
-<syncfusion:DoughnutSeries Palette="Custom"
-
-StartAngle="180" EndAngle="360" 
+<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
 
 XBindingPath="Utilization"
 
@@ -327,9 +323,7 @@ ExplodeRadius="10"
 
 XBindingPath="Utilization" 
 
-YBindingPath="ResponseTime" 
-
-Palette="Custom"/>
+YBindingPath="ResponseTime" />
 
 {% endhighlight %}
 
@@ -341,7 +335,7 @@ N> We have defined ExplodeRadius as 10, by default its value is zero. So you nee
 
 {% highlight xaml %}
 
-<chart:PieSeries Palette="Custom" ExplodeAll="True"
+<chart:PieSeries  ExplodeAll="True"
 
 ExplodeRadius="15"
 
@@ -363,7 +357,7 @@ PyramidSeries has the form of a triangle with lines dividing it into sections an
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" Palette="Custom" 
+<chart:PyramidSeries XBindingPath="Category" 
 
 ItemsSource="{Binding Tax}"       
 
@@ -381,7 +375,7 @@ The [`PyramidMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfus
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" Palette="Custom"
+<chart:PyramidSeries XBindingPath="Category" 
 
 PyramidMode="Surface"
 
@@ -399,8 +393,6 @@ YBindingPath="Percentage"/>
 {% highlight xaml %}
 
 <chart:PyramidSeries XBindingPath="Category" 
-
-Palette="Custom"
 
 PyramidMode="Linear"
 
@@ -422,7 +414,7 @@ The following code example shows how to use the funnel series:
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"  
 
-YBindingPath="Percentage" Palette="Custom"/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -442,7 +434,7 @@ The FunnelMode defines a rendering mode for the funnel series which define, wher
 
 FunnelMode="ValueIsHeight" 
 
-YBindingPath="Percentage" Palette="Custom"/>
+YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -456,7 +448,7 @@ YBindingPath="Percentage" Palette="Custom"/>
 
 FunnelMode="ValueIsWidth" 
 
-YBindingPath="Percentage" Palette="Custom/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -477,9 +469,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
 
-ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage"     
-
-Palette="Custom">
+ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
 
 </chart:FunnelSeries>
 
@@ -495,7 +485,7 @@ The gap between each segment using [`GapRatio`](http://help.syncfusion.com/cr/cr
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"     
 
-GapRatio="0.5" YBindingPath="Percentage" Palette="Custom">
+GapRatio="0.5" YBindingPath="Percentage">
 
 </chart:FunnelSeries>
 

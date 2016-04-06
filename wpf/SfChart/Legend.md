@@ -347,9 +347,9 @@ The following code snippets explains how the legends displaying for accumulation
 
 </chart:SfChart.Legend>
 
-<chart:PieSeries  Palette="Custom" XBindingPath="Category" 
+<chart:PieSeries  XBindingPath="Category" 
 	
-	                ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+	             ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
