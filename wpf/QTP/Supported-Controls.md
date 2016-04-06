@@ -301,12 +301,13 @@ NA</td></tr>
 ## SfChart
 The following functionalities can be tested using QTP.
 
-**Methods**
+### Methods
 
 <table>
 <tr>
 <th>
-Method</th>
+Method
+</th>
 <th>
 Description
 </th>
@@ -365,7 +366,7 @@ void ResetZoom(int axisIndex);
 To reset the zoom position and zoom factor value to the chart axis. 
 </td>
 <td>
-(int axisIndex
+int axisIndex
 </td>
 <td>
 void

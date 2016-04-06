@@ -45,11 +45,11 @@ This can be customized using the [`LegendIcon`](http://help.syncfusion.com/cr/cr
 
 </chart:ChartLegend>
 
-<chart:SplineSeries XBindingPath="Year" Label="Series 1"
+<chart:SplineSeries XBindingPath="Year" Label="Gold"
 	                  
                     ItemsSource="{Binding List}" YBindingPath="India"
                      
-					          LegendIcon="Diamond" />
+					LegendIcon="Diamond" />
 
 
 {% endhighlight %}
@@ -242,9 +242,8 @@ To display the legend at the bottom, you can set the [`DockPosition`](http://hel
 
 **Floating** **Legends**
 
-To position the legend at any arbitrary location inside chart, we need to set [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html)
-as **Floating** and provide its relative position using [`OffsetX`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetX.html)
-and [`OffsetY`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetY.html) properties. 
+To position the legend at any arbitrary location inside chart, we need to set [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Floating** and provide its relative position using [`OffsetX`(http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetX.html) and [`OffsetY`] (http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetY.html) properties.
+ 
 Offset specifies x or y distance from origin.
 
 {% highlight xaml %}
@@ -348,20 +347,20 @@ The following code snippets explains how the legends displaying for accumulation
 
 </chart:SfChart.Legend>
 
-<chart:PieSeries  Palette="Custom" XBindingPath="Category" 
+<chart:PieSeries  XBindingPath="Category" 
 	
-	                ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+	             ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
 ![](Legend_images/legend_pie.png)
 
 
-Note: Here Legend ‘Label’ will be the x value of the Pie chart.
+N> Here Legend ‘Label’ will be the x value of the Pie chart.
 
 ## Series visibility on legend
 
-We can limit the number of series and trendlines to be displayed in legend using [`VisibilityOnLegend`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~VisibilityOnLegend.html)
+We can limit the number of series and trendlines to be displayed in chart using [`VisibilityOnLegend`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~VisibilityOnLegend.html)
 property as shown in below example.
 
 {% highlight xaml %}
@@ -501,8 +500,7 @@ public class ImageConverter:IValueConverter
 
 **Customizing** **Legend** **Items** **Layout**
 
-When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using 
-`ItemsPanel` property as in below code snippet:
+When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using `ItemsPanel` property as in below code snippet:
 
 {% highlight xaml %}
 <chart:SfChart.Legend>

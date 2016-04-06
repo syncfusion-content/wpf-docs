@@ -341,7 +341,7 @@ Background="#C3C3C3"/>
 
 ### Transparency 
 
-You can set the transparency for the striplines using Opacity property as in the following code snippets.
+You can set the transparency for the striplines using `Opacity` property as in the following code snippets.
 
 {% highlight xaml %}
 

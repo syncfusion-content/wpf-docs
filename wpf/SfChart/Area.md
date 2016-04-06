@@ -68,7 +68,7 @@ N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area Customization
 
-SfChart provides the properties like [`AreaBorderBrush`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html#), [`AreaBorderThickness`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html#), [`AreaBackground`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html#) and Background for customizing the plot area.
+SfChart provides the properties like [`AreaBorderBrush`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html#), [`AreaBorderThickness`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html#), [`AreaBackground`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html#) and `Background` for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
 
@@ -453,7 +453,7 @@ Serialized Chart
 
 ## Clone or copy the chart
 
-More like serialization, you can use Clone method for SfChart control state persistency. This method creates a copy of the chart instance.
+More like serialization, you can use [`Clone`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Clone.html) method for SfChart control state persistency. This method creates a copy of the chart instance.
 
 {% highlight C# %}
 

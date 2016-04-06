@@ -18,7 +18,7 @@ The following APIs are common for the most of the series types:
 * Stroke-Represents the brush for the series outline.
 * StrokeThickness-Represents the thickness of the for the series outline.
 * Interior-Represents the brush to fill the series.
-* Palette-Used to define the set of pre-defined color for the series.
+* Palette-Used to define the set of pre-defined or custom colors for the series.
 
 ## Column and Bar Charts
 
@@ -28,7 +28,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 {% highlight xaml %}
 
-<chart:ColumnSeries Interior="#7F7F7F"ItemsSource="{Binding SneakersDetail}"           
+<chart:ColumnSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"           
 
 XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 
@@ -128,7 +128,7 @@ Interior="#BCBCBC" />
 
 <chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
 
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions 
+ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
 
 YBindingPath="WaitingTime"/>
 
@@ -212,13 +212,11 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 
 {% highlight xaml %}
 
-<chart:PieSeries  Palette="Custom"
+<chart:PieSeries  XBindingPath="Category" 
 
-XBindingPath="Category" 
+                 ItemsSource="{Binding Tax}" 
 
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+                  YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -228,7 +226,7 @@ The rendering size of the PieSeries can be controlled using [`PieCoefficient`](h
 
 {% highlight xaml %}
 
-<chart:PieSeries PieCoefficient="0.9" Palette="Custom"
+<chart:PieSeries PieCoefficient="0.9" 
 
 XBindingPath="Category" 
 
@@ -248,13 +246,11 @@ The DoughnutSeries can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries Palette="Custom"
+<chart:DoughnutSeries XBindingPath="Category"
 
-XBindingPath="Category"
+                      ItemsSource="{Binding Tax}" 
 
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+                      YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -265,13 +261,11 @@ The Doughnut also having coefficient property, [`DoughnutCoefficient`](http://he
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries x:Name="DouughnutSeries" DoughnutCoefficient="0.7"                    
-
-Palette="Custom"
+<chart:DoughnutSeries DoughnutCoefficient="0.7"                    
 
 XBindingPath="Category" ItemsSource="{Binding Tax}" 
 
-Label="Tax" YBindingPath="Percentage" />
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -289,9 +283,7 @@ XBindingPath="Utilization"
 
 YBindingPath="ResponseTime"
 
-ItemsSource="{Binding}"
-
-Palette="Custom"/>
+ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
@@ -299,9 +291,7 @@ Palette="Custom"/>
 
 {% highlight xaml %}
 
-<syncfusion:DoughnutSeries Palette="Custom"
-
-StartAngle="180" EndAngle="360" 
+<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
 
 XBindingPath="Utilization"
 
@@ -320,7 +310,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 * ExplodeAll  - Used to explode all the segments of these series.
 * ExplodeIndex - Used to explode any specific segment.
 * ExplodeRadius- Used to define the explode distance.
-
+* ExplodeOnMouseClick-Used to explode the segment when segment is clicked.
 **Explode** **Index**
 
 {% highlight xaml %}
@@ -333,9 +323,7 @@ ExplodeRadius="10"
 
 XBindingPath="Utilization" 
 
-YBindingPath="ResponseTime" 
-
-Palette="Custom"/>
+YBindingPath="ResponseTime" />
 
 {% endhighlight %}
 
@@ -347,7 +335,7 @@ N> We have defined ExplodeRadius as 10, by default its value is zero. So you nee
 
 {% highlight xaml %}
 
-<chart:PieSeries Palette="Custom" ExplodeAll="True"
+<chart:PieSeries  ExplodeAll="True"
 
 ExplodeRadius="15"
 
@@ -369,7 +357,7 @@ PyramidSeries has the form of a triangle with lines dividing it into sections an
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" Palette="Custom" 
+<chart:PyramidSeries XBindingPath="Category" 
 
 ItemsSource="{Binding Tax}"       
 
@@ -387,7 +375,7 @@ The [`PyramidMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfus
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" Palette="Custom"
+<chart:PyramidSeries XBindingPath="Category" 
 
 PyramidMode="Surface"
 
@@ -405,8 +393,6 @@ YBindingPath="Percentage"/>
 {% highlight xaml %}
 
 <chart:PyramidSeries XBindingPath="Category" 
-
-Palette="Custom"
 
 PyramidMode="Linear"
 
@@ -428,7 +414,7 @@ The following code example shows how to use the funnel series:
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"  
 
-YBindingPath="Percentage" Palette="Custom"/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -448,7 +434,7 @@ The FunnelMode defines a rendering mode for the funnel series which define, wher
 
 FunnelMode="ValueIsHeight" 
 
-YBindingPath="Percentage" Palette="Custom"/>
+YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -462,7 +448,7 @@ YBindingPath="Percentage" Palette="Custom"/>
 
 FunnelMode="ValueIsWidth" 
 
-YBindingPath="Percentage" Palette="Custom/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -475,6 +461,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 * [`ExplodeAll`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html#) - Used to explode all the segments of these series.
 * [`ExplodeIndex`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html#) - Used to explode any specific segment.
 * [`ExplodeOffset`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~ExplodeOffset.html#)- Used to define the explode distance like ExplodeRadius for Pie.
+* [`ExplodeOnMouseClick`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment when segment is clicked.
 
 **Explode** **Offset**
 
@@ -482,9 +469,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
 
-ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage"     
-
-Palette="Custom">
+ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
 
 </chart:FunnelSeries>
 
@@ -500,7 +485,7 @@ The gap between each segment using [`GapRatio`](http://help.syncfusion.com/cr/cr
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"     
 
-GapRatio="0.5" YBindingPath="Percentage" Palette="Custom">
+GapRatio="0.5" YBindingPath="Percentage">
 
 </chart:FunnelSeries>
 
@@ -607,7 +592,7 @@ XBindingPath="Direction" YBindingPath="Tree" />
 
 ItemsSource="{Binding PlantDetails}"  
 
-Lab DrawType="Line" IsClosed="True" 
+DrawType="Line" IsClosed="True" 
 
 XBindingPath="Direction" YBindingPath="Tree" 
 
@@ -1009,15 +994,11 @@ ItemsSource="{Binding AnnualDetails}"/>
 
 {% highlight xaml %}
 
-<chart:RangeColumnSeries EnableAnimation="False" 
-
-ItemsSource="{Binding FinancialDatas}" 
+<chart:RangeColumnSeries ItemsSource="{Binding FinancialDatas}" 
 
 XBindingPath="Time" Interior="#4A4A4A"
 
-High="High" Low="Low" 
-
-Label="Financial Deployment in Each Year" />
+High="High" Low="Low"  />
 
 {% endhighlight %}
 
@@ -1030,7 +1011,7 @@ Label="Financial Deployment in Each Year" />
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries x:Name="RangeAreaSeries" XBindingPath="ProdName" 
+<chart:RangeAreaSeries  XBindingPath="ProdName" 
 
 High="Stock" Low="Price"   
 
@@ -1045,10 +1026,8 @@ ItemsSource="{Binding Products}" />
 
 The APIs present in the RangeArea series are,
 
-**Properties**
-
 * [`HighValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~HighValueInterior.html) -Gets or sets the brush that represents the interior color for the high value data.
-* [`LowValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~LowValueInterior.html)- Gets or sets the brush that represents the interior color for the high value data.
+* [`LowValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~LowValueInterior.html)- Gets or sets the brush that represents the interior color for the low value data.
 
 {% highlight xaml %}
 
@@ -1182,13 +1161,11 @@ YBindingPath="Value" EnableAntiAliasing="True"/>
 
 {% highlight xaml %}
 
-<chart:FastColumnBitmapSeries x:Name="FastColumnSeries" Interior="#7F7F7F"
+<chart:FastColumnBitmapSeries Interior="#7F7F7F"
 
 ItemsSource="{Binding List}" 
 
-XBindingPath="Date" YBindingPath="Price" 
-
-ShowTooltip="True"/>
+XBindingPath="Date" YBindingPath="Price" />
 
 {% endhighlight %}
 
@@ -1240,7 +1217,7 @@ BearFillColor="#4A4A4A"  />
 
 <chart:FastHiLoBitmapSeries StrokeThickness="5" ItemsSource="{Binding List}"          
 
-Interior="#7F7F7F XBindingPath="Date" High="Stock"     
+Interior="#7F7F7F" XBindingPath="Date" High="Stock"     
 
 Low="Price"/>
 

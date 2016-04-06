@@ -216,7 +216,7 @@ You need to initialize the chart represented by the following class Syncfusion.U
 
 ### Add header to chart
 
-The header of the chart acts as the title, to identify its purpose. 
+The header of the chart acts as the title, to identify the purpose of the chart. 
 
 Here you specify “Demands Comparison” as header as in below code example.
 
@@ -261,9 +261,9 @@ N> SfChart supports default axes, so that these axes (primary and secondary axis
 
 ### Adding series 
 
-You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
+You can add any type of series ranges from line, scatter to financial types series. We have chosen column series for demo purpose. 
 
-You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
+You need to initialize two series for representing the years 2010 and 2011 respectively.
 
 {% highlight xaml %}
 <syncfusion:ColumnSeries/> 
@@ -274,7 +274,7 @@ T> The graph selection depends on user scenario and the nature of the data. For 
 
 After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
 
-* `ItemsSource` - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
+* `ItemsSource` - It is a property to hold our data source, you can bind your underlying collection to it.
 * `XBindingPath` - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 * `YBindingPath` - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 * `Label` - This property gives names for the series, which in turn mapped by the Legend.
@@ -293,7 +293,7 @@ The following code example illustrates the syntax to add the [`legends`](http://
 {% highlight xaml %}
 
 <syncfusion:SfChart.Legend>
-    <syncfusion:ChartLegend Visibility="Visible"/>
+    <syncfusion:ChartLegend/>
 </syncfusion:SfChart.Legend>
 
 {% endhighlight %}
@@ -307,13 +307,13 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
 <syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demands Comparison" FontSize="16" 
                     Height="300" Width="500">
             
-    <!--Initialize the horizontal for SfChart-->
+    <!--Initialize the horizontal axis for SfChart-->
     <syncfusion:SfChart.PrimaryAxis>
         <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
     </syncfusion:SfChart.PrimaryAxis>
             
 
-    <!--Initialize the vertical for SfChart-->
+    <!--Initialize the vertical axis for SfChart-->
     <syncfusion:SfChart.SecondaryAxis>
         <syncfusion:NumericalAxis Header="Values" FontSize="14"/>
     </syncfusion:SfChart.SecondaryAxis>
@@ -326,9 +326,11 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
             
 
     <!--Initialize the series for SfChart-->
-    <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
+    <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}" 
+    XBindingPath="Demand" YBindingPath="Year2010" />
 
-    <syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" />
+    <syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" 
+    XBindingPath="Demand" YBindingPath="Year2011" />
             
 </syncfusion:SfChart>
 
@@ -348,10 +350,22 @@ Now you have prepared a Chart demonstrating the studies related to Gold demands 
                 { 
                     Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2 
                 }, 
-                    new GoldDemand() { Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0 },
-                    new GoldDemand() { Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0 }, 
-                    new GoldDemand() { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 }, 
-                    new GoldDemand() { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 } 
+                new GoldDemand() 
+                { 
+                    Demand = "Electronics",Year2010 = 1284.0, Year2011 = 1328.0 
+                },
+                new GoldDemand() 
+                {
+                     Demand = "Research",Year2010 = 1090.5, Year2011 = 1032.0 
+                 }, 
+                 new GoldDemand() 
+                 { 
+                     Demand = "Investment",Year2010 = 1643.0, Year2011 = 1898.0 
+                 }, 
+                 new GoldDemand() 
+                 { 
+                     Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 
+                 } 
             };
 
             this.DataContext = this;
@@ -427,7 +441,7 @@ Dim chart As New SfChart()
 
 ### Adding header to the chart
 
-The header acts as the title for the Chart you created, to identify its purpose.
+The header acts as the title for the Chart you created, to identify the purpose of the chart.
 
 {% tabs %}
 
@@ -471,7 +485,7 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 
 secondaryAxis.Header = "Values"; 
 
-chart.SecondaryAxis = secondaryNumericalAxis;
+chart.SecondaryAxis = secondaryAxis;
 
 {% endhighlight  %}
 
@@ -505,9 +519,9 @@ N> SfChart supports default axes, so that these axes (primary and secondary axis
 
 ### Adding series
 
-You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
+You can add any type of series ranges from line, scatter to financial types series. We have chosen column series for demo purpose. 
 
-You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
+You need to initialize two series for representing the years 2010 and 2011 respectively.
 
 {% tabs %}
 
@@ -591,7 +605,7 @@ chart.Series.Add(series2)
 
 {% endtabs %}
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer this for details.
+N> Syncfusion Chart also supports rendering combination of multiple series. Refer [this](http://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
 
 
 ### Adding legends to the chart
@@ -604,8 +618,6 @@ The following code examples demonstrates how to add [`legends`](http://help.sync
 
 ChartLegend legend = new ChartLegend();
 
-legend.Visibility = System.Windows.Visibility.Visible;
-
 chart.Legend = legend; 
 
 {% endhighlight  %}
@@ -613,8 +625,6 @@ chart.Legend = legend;
 {% highlight vb %}
 
 Dim legend As New ChartLegend()
-
-legend.Visibility = System.Windows.Visibility.Visible
 
 chart.Legend = legend
 

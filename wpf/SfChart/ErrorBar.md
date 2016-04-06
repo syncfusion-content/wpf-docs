@@ -66,7 +66,7 @@ Mode="Horizontal">
 
 ### Vertical
 
-To view vertical error value, you can set the Mode as Horizontal as shown in the below code example.
+To view vertical error value, you can set the Mode as Vertical as shown in the below code example.
 
 {% highlight xaml %}
 
@@ -87,10 +87,10 @@ Mode="Vertical">
 
 SfChart supports the following type of error bar series.
 
-* Fixed, 
-* Percentage, 
-* Standard Deviation,
-* Standard Error.
+* Fixed 
+* Percentage 
+* Standard Deviation
+* Standard Error
 
 N> The default error bar series is Fixed.
 
