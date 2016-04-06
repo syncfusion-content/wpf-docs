@@ -18,7 +18,7 @@ The following APIs are common for the most of the series types:
 * Stroke-Represents the brush for the series outline.
 * StrokeThickness-Represents the thickness of the for the series outline.
 * Interior-Represents the brush to fill the series.
-* Palette-Used to define the set of pre-defined color for the series.
+* Palette-Used to define the set of pre-defined or custom colors for the series.
 
 ## Column and Bar Charts
 
@@ -28,7 +28,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 {% highlight xaml %}
 
-<chart:ColumnSeries Interior="#7F7F7F"ItemsSource="{Binding SneakersDetail}"           
+<chart:ColumnSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"           
 
 XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 
@@ -128,7 +128,7 @@ Interior="#BCBCBC" />
 
 <chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
 
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions 
+ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
 
 YBindingPath="WaitingTime"/>
 
@@ -212,13 +212,11 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 
 {% highlight xaml %}
 
-<chart:PieSeries  Palette="Custom"
+<chart:PieSeries  XBindingPath="Category" 
 
-XBindingPath="Category" 
+                 ItemsSource="{Binding Tax}" 
 
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+                  YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -248,13 +246,11 @@ The DoughnutSeries can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries Palette="Custom"
+<chart:DoughnutSeries XBindingPath="Category"
 
-XBindingPath="Category"
+                      ItemsSource="{Binding Tax}" 
 
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+                      YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -265,13 +261,11 @@ The Doughnut also having coefficient property, [`DoughnutCoefficient`](http://he
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries x:Name="DouughnutSeries" DoughnutCoefficient="0.7"                    
-
-Palette="Custom"
+<chart:DoughnutSeries DoughnutCoefficient="0.7"                    
 
 XBindingPath="Category" ItemsSource="{Binding Tax}" 
 
-Label="Tax" YBindingPath="Percentage" />
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -320,7 +314,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 * ExplodeAll  - Used to explode all the segments of these series.
 * ExplodeIndex - Used to explode any specific segment.
 * ExplodeRadius- Used to define the explode distance.
-
+* ExplodeOnMouseClick-Used to explode the segment when segment is clicked.
 **Explode** **Index**
 
 {% highlight xaml %}
@@ -475,6 +469,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 * [`ExplodeAll`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html#) - Used to explode all the segments of these series.
 * [`ExplodeIndex`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html#) - Used to explode any specific segment.
 * [`ExplodeOffset`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~ExplodeOffset.html#)- Used to define the explode distance like ExplodeRadius for Pie.
+* [`ExplodeOnMouseClick`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment when segment is clicked.
 
 **Explode** **Offset**
 
@@ -607,7 +602,7 @@ XBindingPath="Direction" YBindingPath="Tree" />
 
 ItemsSource="{Binding PlantDetails}"  
 
-Lab DrawType="Line" IsClosed="True" 
+DrawType="Line" IsClosed="True" 
 
 XBindingPath="Direction" YBindingPath="Tree" 
 
@@ -1009,15 +1004,11 @@ ItemsSource="{Binding AnnualDetails}"/>
 
 {% highlight xaml %}
 
-<chart:RangeColumnSeries EnableAnimation="False" 
-
-ItemsSource="{Binding FinancialDatas}" 
+<chart:RangeColumnSeries ItemsSource="{Binding FinancialDatas}" 
 
 XBindingPath="Time" Interior="#4A4A4A"
 
-High="High" Low="Low" 
-
-Label="Financial Deployment in Each Year" />
+High="High" Low="Low"  />
 
 {% endhighlight %}
 
@@ -1030,7 +1021,7 @@ Label="Financial Deployment in Each Year" />
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries x:Name="RangeAreaSeries" XBindingPath="ProdName" 
+<chart:RangeAreaSeries  XBindingPath="ProdName" 
 
 High="Stock" Low="Price"   
 
@@ -1180,13 +1171,11 @@ YBindingPath="Value" EnableAntiAliasing="True"/>
 
 {% highlight xaml %}
 
-<chart:FastColumnBitmapSeries x:Name="FastColumnSeries" Interior="#7F7F7F"
+<chart:FastColumnBitmapSeries Interior="#7F7F7F"
 
 ItemsSource="{Binding List}" 
 
-XBindingPath="Date" YBindingPath="Price" 
-
-ShowTooltip="True"/>
+XBindingPath="Date" YBindingPath="Price" />
 
 {% endhighlight %}
 
@@ -1238,7 +1227,7 @@ BearFillColor="#4A4A4A"  />
 
 <chart:FastHiLoBitmapSeries StrokeThickness="5" ItemsSource="{Binding List}"          
 
-Interior="#7F7F7F XBindingPath="Date" High="Stock"     
+Interior="#7F7F7F" XBindingPath="Date" High="Stock"     
 
 Low="Price"/>
 

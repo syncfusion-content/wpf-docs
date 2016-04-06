@@ -60,7 +60,7 @@ YBindingPath="Year2011">
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo SymbolInterior="Black" Symbol="Diamond"></syncfusion:ChartAdornmentInfo>
+<syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolInterior="Black" Symbol="Diamond"></syncfusion:ChartAdornmentInfo>
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 

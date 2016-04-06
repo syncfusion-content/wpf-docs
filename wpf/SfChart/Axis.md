@@ -1114,7 +1114,7 @@ FontSize="16"  />
 
 
 
-###Ticklines
+### Ticklines
 
 Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
 

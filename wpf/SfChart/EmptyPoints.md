@@ -27,7 +27,7 @@ Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
 
 {% endhighlight %}
 
-By default, this property is false. So the empty points will not be render as in below screenshots:
+By default, ShowEmptyPoints property is false. So the empty points will not be render as in below screenshots:
 
 ![](EmptyPoints_images/emptypoint_1.png)
 
