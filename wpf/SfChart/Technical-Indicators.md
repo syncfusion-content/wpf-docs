@@ -179,7 +179,7 @@ High="High" Low="Low" Open="Open" Close="Close"/ >
 
 ## Stochastic 
 
-This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~KPeriod.html#) and [`DPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~DPeriod.html#) property defining the ‘K’ percentage and ‘D’ percentage respectively. . No signal line in this indicator.
+This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~KPeriod.html#) and [`DPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~DPeriod.html#) property defining the ‘K’ percentage and ‘D’ percentage respectively. No signal line in this indicator.
 
 The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
 

@@ -13,7 +13,7 @@ SfChart provides support for vertical charts. You can plot vertical chart for an
 
 ## OpposedPosition
 
-Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary axis in opposite direction.
+Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary and secondary axes in opposite direction.
 
 {% highlight xaml %}
 
