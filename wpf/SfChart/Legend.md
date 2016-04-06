@@ -357,7 +357,7 @@ The following code snippets explains how the legends displaying for accumulation
 ![](Legend_images/legend_pie.png)
 
 
-Note: Here Legend ‘Label’ will be the x value of the Pie chart.
+N> Here Legend ‘Label’ will be the x value of the Pie chart.
 
 ## Series visibility on legend
 

@@ -80,7 +80,7 @@ Gets or sets the bool that represents a value to enable start the range from ze
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img1.png)
+![](Axis_images/Axis_img1.png)
 
 
 
@@ -148,7 +148,7 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img2.png)
+![](Axis_images/Axis_img2.png)
 
 
 
@@ -274,7 +274,7 @@ The following code example and screenshot are for DateTimeAxis.
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img3.png)
+![](Axis_images/Axis_img3.png)
 
 
 
@@ -340,7 +340,7 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img4.png)
+![](Axis_images/Axis_img4.png)
 
 
 
@@ -484,7 +484,7 @@ N> Logarithmic Axis does not support zero or negative values.
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 
-![C:/Users/rachel/Desktop/wpf/sshot-5.png](Axis_images/Axis_img6.png)
+![](Axis_images/Axis_img6.png)
 
 
 
@@ -549,7 +549,7 @@ StrokeThickness="2"
 
 The following screenshot illustrates SfChart with multiple axes.
 
-![C:/Users/rachel/Desktop/snaps/6.png](Axis_images/Axis_img7.png)
+![](Axis_images/Axis_img7.png)
 
 
 
@@ -583,7 +583,7 @@ The following is the code example for setting the OpposedPosition property.
 
 The following is a screenshot demonstrating y-axis of a chart arranged in OpposedPosition.
 
-![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png)
+![](Axis_images/Axis_img8.png)
 
 
 
@@ -609,7 +609,7 @@ This feature is used to reverse chart plotting. It inverses the axis scaling.
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png)
+![](Axis_images/Axis_img9.png)
 
 
 
@@ -642,7 +642,7 @@ N> You can force the NumericalAxis to start range from zero by enabling StartRan
 </syncfusion:SfChart.SecondaryAxis>
 {% endhighlight %}
 
-###Range Padding
+### Range Padding
 
 The NumericalAxis and DateTimeAxis have a RangePadding property that can be used to add padding to the range of a chart's axes.
 
@@ -657,7 +657,7 @@ The following types are available for NumericalAxis:
 
 By default, the default RangePadding value for PrimaryAxis is Auto and for SecondaryAxis, the default value is Round.
 
-![C:/Users/rachel/Desktop/wpf/sshot-109.png](Axis_images/Axis_img10.png)
+![](Axis_images/Axis_img10.png)
 
 
 
@@ -671,7 +671,7 @@ Normal RangePadding for a NumericalAxis is used mostly for the y-axis to have pa
 
 The following screenshot illustrates a chart’s y-axis with RangePadding set to Normal.
 
-![C:/Users/rachel/Desktop/wpf/sshot-11.png](Axis_images/Axis_img12.png)
+![](Axis_images/Axis_img12.png)
 
 
 
@@ -703,26 +703,26 @@ By default, the RangePadding for a DateTimeAxis is None.
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to None. 
 
-![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img15.png)
+![](Axis_images/Axis_img15.png)
 
 
 
 When RangePadding for DateTimeAxis is set to Additional, the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
-![C:/Users/rachel/Desktop/wpf/sshot-10.png](Axis_images/Axis_img16.png)
+![](Axis_images/Axis_img16.png)
 
 
 
 When RangePadding for DateTimeAxis is set to Round, the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
-![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img17.png)
+![](Axis_images/Axis_img17.png)
 
 
 
 ## Positioning axis labels
 
 
-###Label Placement
+### Label Placement
 
 The CategoryAxis includes the LabelPlacement property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the CategoryAxis is OnTicks.
 
@@ -745,7 +745,7 @@ FontSize="16"  />
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-15.png](Axis_images/Axis_img18.png)
+![](Axis_images/Axis_img18.png)
 
 
 
@@ -767,11 +767,11 @@ FontSize="16"  />
 {% endhighlight %}
 
 
-![C:/Users/rachel/Desktop/wpf/sshot-16.png](Axis_images/Axis_img19.png)
+![](Axis_images/Axis_img19.png)
 
 
 
-###Label Position 
+### Label Position 
 
 The LabelsPosition property is used to position the axis label either inside or outside the chart plotting area.
 
@@ -789,7 +789,7 @@ FontSize="16"  />
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-17.png](Axis_images/Axis_img20.png)
+![](Axis_images/Axis_img20.png)
 
 
 
@@ -805,11 +805,11 @@ FontSize="16"  />
 {% endhighlight %}
 
 
-![C:/Users/rachel/Desktop/wpf/sshot-18.png](Axis_images/Axis_img21.png)
+![](Axis_images/Axis_img21.png)
 
 
 
-###Positioning Edge Labels
+### Positioning Edge Labels
 
 SfChart provides support to customize the edge labels of the axis to adjust its position using the EdgeLabelDrawingMode property. 
 
@@ -834,7 +834,7 @@ The following code example and screenshot show EdgeLabelsDrawingMode set to Cent
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-19.png](Axis_images/Axis_img22.png)
+![](Axis_images/Axis_img22.png)
 
 
 
@@ -850,7 +850,7 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-20.png](Axis_images/Axis_img23.png)
+![](Axis_images/Axis_img23.png)
 
 
 
@@ -866,7 +866,7 @@ The following code example and screenshot shows EdgeLabelDrawingMode set to Hide
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-21.png](Axis_images/Axis_img24.png)
+![](Axis_images/Axis_img24.png)
 
 
 
@@ -882,7 +882,7 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Shi
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-22.png](Axis_images/Axis_img25.png)
+![](Axis_images/Axis_img25.png)
 
 
 
@@ -912,7 +912,7 @@ FontSize="16"  />
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-23.png](Axis_images/Axis_img26.png)
+![](Axis_images/Axis_img26.png)
 
 
 
@@ -952,7 +952,7 @@ FontSize="16"  />
 
 
 
-![C:/Users/rachel/Desktop/wpf/sshot-25.png](Axis_images/Axis_img28.png)
+![](Axis_images/Axis_img28.png)
 
 
 
@@ -978,7 +978,7 @@ The following code example and screenshot demonstrate the usage of PrefixLabelTe
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-26.png](Axis_images/Axis_img29.png)
+![](Axis_images/Axis_img29.png)
 
 
 
@@ -1000,7 +1000,7 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-27.png](Axis_images/Axis_img30.png)
+![](Axis_images/Axis_img30.png)
 
 
 
@@ -1092,7 +1092,7 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 ## GridLines and TickLines 
 
 
-###GridLines
+### GridLines
 
 By default, gridlines are automatically added to the ChartAxis in its defined intervals. SfChart supports customization of gridline. You can control the visibility of the gridlines using the ShowGridLines property. 
 
@@ -1110,7 +1110,7 @@ FontSize="16"  />
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-112.png](Axis_images/Axis_img32.png)
+![](Axis_images/Axis_img32.png)
 
 
 
@@ -1130,7 +1130,7 @@ The following code example and screenshot illustrate major and small ticklines s
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-28.png](Axis_images/Axis_img33.png)
+![](Axis_images/Axis_img33.png)
 
 
 
@@ -1238,7 +1238,7 @@ You can customize the appearance of major gridline, minor gridlines and tickline
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-29.png](Axis_images/Axis_img34.png)
+![](Axis_images/Axis_img34.png)
 
 
 

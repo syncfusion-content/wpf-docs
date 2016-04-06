@@ -261,7 +261,7 @@ N> SfChart supports default axes, so that these axes (primary and secondary axis
 
 ### Adding series 
 
-You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
+You can add any type of series ranges from line, scatter to financial types series. We have chosen column series for demo purpose. 
 
 You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
 
@@ -505,7 +505,7 @@ N> SfChart supports default axes, so that these axes (primary and secondary axis
 
 ### Adding series
 
-You can add any type of series ranges from line, scatter to financial types series. For demo purpose, we have chosen column series for demo purpose. 
+You can add any type of series ranges from line, scatter to financial types series. We have chosen column series for demo purpose. 
 
 You need to initialize two series for representing the years 2010 and 2011 respectively (refer table).
 

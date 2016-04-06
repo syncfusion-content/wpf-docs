@@ -406,7 +406,7 @@ throw new NotImplementedException();
 {% endtabs %}
 
 
-![](Adornments_images/label_5.png)
+![](Adornments_images/labelcontent.png)
 
 
 **Label Rotation**
@@ -599,7 +599,7 @@ In the following image, you can see the decimal position will be rounded off to 
 ![](Adornments_images/label_format.png)
 
 
-The following code example demonstrates the rounding off the y value to three decimal digits:
+The following code example demonstrates the y value having three decimal digits:
 
 
 {% highlight xaml %}
@@ -616,7 +616,7 @@ YBindingPath="Year2011">
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="0.##" AdornmentsPosition="Top">
+<syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="#.000" AdornmentsPosition="Top">
 
 </syncfusion:ChartAdornmentInfo>
 
@@ -635,22 +635,18 @@ The following code example shows the customization option for connector line:
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries.AdornmentsInfo>
+<syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True"  ShowConnectorLine="True" >
-
+<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer"
+                                ShowConnectorLine="True" ConnectorHeight="10" 
+                                ConnectorRotationAngle="90">
 </syncfusion:ChartAdornmentInfo>
 
-</syncfusion:PieSeries.AdornmentsInfo>
+</syncfusion:ColumnSeries.AdornmentsInfo>
 
 {% endhighlight %}
 
 ![](Adornments_images/connectorline_1.png)
-
-
-### Connector Height and Rotation
-
-You can customize the connector line height and also line can be rotated to any specified angle.
 
 ### Connector Line Style
 
