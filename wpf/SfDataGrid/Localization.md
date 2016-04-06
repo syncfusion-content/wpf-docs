@@ -29,7 +29,7 @@ public MainWindow()
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps. 
 
 1.Create new folder and named as **Resources** in your application. 
-2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resource1113161640.zip).
+2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resource-1826981720.zip).
 
 ![](Localization_images/Localization_img1.png)
 
@@ -70,13 +70,13 @@ public MainWindow()
 
 ## Editing default culture resource
 
-You can edit default resource file by adding it to **Resources** folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resource1113161640.zip).
+You can edit default resource file by adding it to **Resources** folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resource-1826981720.zip).
 
 ![](Localization_images/Localization_img6.png)
 
 Now, change the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.resx** file.
 
-![](Localization_images/Localization_img7.png)
+![](Localization_images/Localization_img4.png)
 
 
 ![](Localization_images/Localization_img8.png)
