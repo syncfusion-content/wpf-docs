@@ -298,7 +298,7 @@ Void</td><td>
 NA</td></tr>
 </table>
 
-## Essential SfChart
+## SfChart
 The following functionalities can be tested using QTP.
 
 ### Methods
