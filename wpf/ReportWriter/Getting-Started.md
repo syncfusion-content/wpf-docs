@@ -30,7 +30,7 @@ This section illustrates how to add Report Writer to the WPF application. It inc
    * Syncfusion.ReportControls.Wpf
    * Syncfusion.ReportWriter.Base 
    * Syncfusion.SfMaps.Wpf
-   * Synfusion.Shared.Wpf
+   * Syncfusion.Shared.Wpf
    * Syncfusion.XlsIO.Base
    
 4. Set the following properties to Report Writer.   
