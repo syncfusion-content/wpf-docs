@@ -200,7 +200,7 @@ The following code illustrates how to customize the ViewModel by using Common st
 
 {% endhighlight %}
 
->N  The AutoBind property is depreciated. Instead of AutoBind, please use this View to ViewModel Binding approach.
+N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 
 ##Interaction
 
