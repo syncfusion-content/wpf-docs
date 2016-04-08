@@ -154,7 +154,7 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 ## Momentum 
 
-This indicator having two lines momentum line and center line. No signal line in this indicator. You can define momentum technical indicator using the following code example.
+This indicator is having two lines momentum line and center line. No signal line is in this indicator. You can define momentum technical indicator using the following code example.
 
 The [`MomentumLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~MomentumLineColor.html#) property and [`CenterLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~CenterLineColor.html#) property are used to define the color for the momentum and center line respectively.
 

@@ -13,7 +13,7 @@ The following section helps you to build your application with SfChart.
 
 ## Steps
 
-   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90))
+   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
    * Add the SfChart assembly to your application. 
    * Initialize chart control.
    * Adding header to the chart control.
@@ -21,7 +21,7 @@ The following section helps you to build your application with SfChart.
    * Adding series to the chart control.
    * Adding legends for the series.
    
-These steps were explained below for both XAML and code behind.
+These steps are explained below for both XAML and code behind.
 
 
 ## Create a simple chart from XAML
@@ -218,7 +218,7 @@ You need to initialize the chart represented by the following class Syncfusion.U
 
 The header of the chart acts as the title, to identify the purpose of the chart. 
 
-Here you specify “Demands Comparison” as header as in below code example.
+Here you specify “Demands Comparison” as header in the below code example.
 
 {% highlight xaml %}
 
@@ -275,9 +275,9 @@ T> The graph selection depends on user scenario and the nature of the data. For 
 After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
 
 * `ItemsSource` - It is a property to hold our data source, you can bind your underlying collection to it.
-* `XBindingPath` - It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
-* `YBindingPath` - It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
-* `Label` - This property gives names for the series, which in turn mapped by the Legend.
+* `XBindingPath` - It is a string property, used to map properties that need to be bounded to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+* `YBindingPath` - It is a string property, used to map properties that need to be bounded to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+* `Label` - This property gives names for the series, which in turn mapped to the Legend.
 
 {% highlight xaml %}
 <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
@@ -549,9 +549,9 @@ T> The graph selection depends on the user scenario and the nature of the data. 
 After you have added the series, you need to add ItemSource, XBindingPath and YBindingPath APIs, to populate your data in the chart.
 
 * `ItemsSource` - It is a property to hold our data source, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to it.
-* `XBindingPath` - It is a string property, used to map properties that need to be bound to the PrimaryAxis (or XAxis). It is like a value member path in ListBox.
-* `YBindingPath` - It is a string property, used to map properties that need to be bound to the SecondaryAxis (Or YAxis). It is like a value member path in ListBox.
-* `Label` - This property gives names for the series, which in turn mapped by the Legend.
+* `XBindingPath` - It is a string property, used to map properties that need to be bounded to the PrimaryAxis (or XAxis). It is like a value member path in ListBox.
+* `YBindingPath` - It is a string property, used to map properties that need to be bounded to the SecondaryAxis (Or YAxis). It is like a value member path in ListBox.
+* `Label` - This property gives names for the series, which in turn mapped to the Legend.
 
 {% tabs %}
 

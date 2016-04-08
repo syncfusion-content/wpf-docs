@@ -240,7 +240,7 @@ Fill="LightGray"/>
 
 ## EmptyPoints and Series
 
-The following section illustrating few chart types and its behavior with EmptyPoints.
+The following section illustrates few chart types and its behavior with EmptyPoints.
 
 **ColumnSeries** **with** **EmptyPoint** **as** **Average**
 

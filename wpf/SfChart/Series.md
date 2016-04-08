@@ -16,7 +16,7 @@ The following APIs are common for the most of the series types:
 * XBindingPath-A string property that represents the X values for the series.
 * YBindingPath-A string property that represents the Y values for the series.
 * Stroke-Represents the brush for the series outline.
-* StrokeThickness-Represents the thickness of the for the series outline.
+* StrokeThickness-Represents the thickness of the series outline.
 * Interior-Represents the brush to fill the series.
 * Palette-Used to define the set of pre-defined or custom colors for the series.
 
@@ -305,12 +305,13 @@ ItemsSource="{Binding}"/>
 
 ### Explode Segments
 
-The following properties are used to explode the individual segments in Pie, Doughnut, Funnel and Pyramid.
+The following properties are used to explode the individual segments in Pie and Doughnut.
 
 * ExplodeAll  - Used to explode all the segments of these series.
 * ExplodeIndex - Used to explode any specific segment.
 * ExplodeRadius- Used to define the explode distance.
 * ExplodeOnMouseClick-Used to explode the segment when segment is clicked.
+
 **Explode** **Index**
 
 {% highlight xaml %}
@@ -329,7 +330,7 @@ YBindingPath="ResponseTime" />
 
 ![](Series_images/exploderadius.png)
 
-N> We have defined ExplodeRadius as 10, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
+N> We have defined ExplodeRadius as 30, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
 
 **Explode** **All**
 
@@ -456,7 +457,7 @@ YBindingPath="Percentage" />
 
 ### Explode Segments
 
-The following properties are used to explode the individual segments in Pie, Doughnut, Funnel and Pyramid.
+The following properties are used to explode the individual segments in Funnel and Pyramid.
 
 * [`ExplodeAll`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html#) - Used to explode all the segments of these series.
 * [`ExplodeIndex`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html#) - Used to explode any specific segment.
@@ -688,7 +689,7 @@ High="High" Low="Low" />
 
 ### Stacking Column
 
-[`StackingColumnSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html#) resembles multiple types of series of the ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
+[`StackingColumnSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html#) resembles multiple types of ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
 The following code example illustrates how to use StackingColumnSeries:
 
@@ -745,14 +746,6 @@ XBindingPath="CountryName"
 YBindingPath="SilverMedals"
 
 Interior="#BCBCBC"/>
-
-<chart:StackingColumn100Series Interior="#7F7F7F"
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals"
-
-ItemsSource="{Binding MedalDetails}"/>
 
 {% endhighlight %}
 
@@ -1096,7 +1089,7 @@ YBindingPath="Value"/>
 
 ### Fast Line
 
-The [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. This was rendered using polyline segment. 
+The [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
 
 {% highlight xaml %}
 
@@ -1327,7 +1320,7 @@ Interior="#4A4A4A" />
 
 # Listening Property Changes
 
-You can notify the source the [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html#) and [`YBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html#) properties changes by setting [`ListenPropertyChange`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html#) as true as shown in the below code snippet.
+You can notify the property changes to the source by setting [`ListenPropertyChange`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html#) as true as shown in the below code snippet.
 
 {% highlight xaml %}
 

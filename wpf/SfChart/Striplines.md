@@ -67,7 +67,7 @@ IsPixelWidth="True" Background="#BCBCBC"/>
 
 ## Label 
 
-We can define any text inside the stripline using [`Label`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Label.html#) property. Also SfChart provide various customization options for this label like alignment, templates, etc.
+We can define any text inside the stripline using [`Label`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Label.html#) property. Also SfChart provides various customization options for this label like alignment, templates, etc.
 
 The [`LabelHorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelVerticalAlignment.html#) property can be used for positioning the labels inside the stripline.
 

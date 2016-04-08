@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting
 
-Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
+Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
 
 ### Enable Sorting
 Ths [`IsSortData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSortData.html) property used to enable the sorting in series.
@@ -105,7 +105,7 @@ N> This feature is primarily applicable for indexed (non-linear) axis like Categ
 
 As mentioned above, the sorting for the linear axis is different from CategoryAxis. Here the rendering order of the data point (x or y) will be sorted.
 
-This will be useful especially when we have one or more values added in same data point. Also this rendering order sorting will be captured by applying Palette to each point.
+This will be useful especially when we have one or more values added in same data point. Also this rendering order will be captured by applying Palette to each point.
 
 The following example illustrates a simple chart having AutumnBrights palette (without apply sorting):
 

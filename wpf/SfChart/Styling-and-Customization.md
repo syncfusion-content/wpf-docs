@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling and Customization
 
-SfChart support various customizing and styling options that allows you to enrich the application.
+SfChart supports various customizing and styling options that allows you to enrich the application.
 
 ## Palettes
 
@@ -58,7 +58,7 @@ The following code example defined Palette as BlueChrome.
 
 ### Applying Palette to Segment
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
 {% highlight xaml %}
 
