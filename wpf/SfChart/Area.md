@@ -26,7 +26,7 @@ Header property is used to define the title for the chart. This allows you to ad
 
 {% highlight xaml %}
 
-<syncfusion:SfChart  Header="Usage of Metals" />
+<syncfusion:SfChart  Header="Chart Area Header" />
 
 {% endhighlight %}
 
@@ -317,7 +317,7 @@ N>As the series will be placed one over the other(overlapped), to differentiate 
 
 ## Serialization
 
-SfChart supports serialization and deserialization for save the settings of the chart and reload. 
+SfChart supports serialization and deserialization to save the settings of the chart and reload. 
 
 This can be done using [`Serialize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Serialize.html#) and [`Deserialize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Deserialize.html#) methods as in below code example:
 

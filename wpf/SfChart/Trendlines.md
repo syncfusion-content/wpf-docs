@@ -143,7 +143,7 @@ N> This is not recommended for the data values having zero and negative value.
 
 This trend line is used for comparing multiple sets of data that increase at specific rate. 
 
-This will be calculates using the following formula:
+This will be calculated using the following formula:
 
 (Intercept*Math.Pow(xValue,Slope)) (Where xValue is Xdata).
 
@@ -300,7 +300,7 @@ Type="Polynomial" PolynomialOrder="3" ForwardForecast="5" />
 
 ### Backward Forecast
 
-For determining the future trends (in backward direction). The following code example explains the how to set the value for forward forecast.
+For determining the past trends (in backward direction). The following code example explains the how to set the value for forward forecast.
 
 {% highlight xaml %}
 

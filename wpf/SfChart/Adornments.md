@@ -73,7 +73,7 @@ YBindingPath="Year2011">
 
 ### Customization
 
-SfChart provide support more customization for markers in adornments. 
+SfChart provides support more customization for markers in adornments. 
 
 You can customize the marker size using [`SymbolHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolHeight.html#) and [`SymbolWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolWidth.html#) property. Also the marker fill color and stroke can be customized using [`SymbolInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolInterior.html#) and [`SymbolStroke`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolStroke.html#).
 
@@ -715,7 +715,7 @@ The positioning of adornments inside the series is defined using [`AdornmentPosi
 * Bottom- Positions the Adornment at the bottom edge point of a chart segment.
 * TopandBottom- Positions the Adornment at the center point of a chart segment.
 
-N> This behavior varies based on the type chart series.
+N> This behavior varies based on the chart series type.
 
 The following code example explains the positioning of adornments in the middle of the segment.
 
@@ -818,7 +818,7 @@ LabelPosition as Outer
 ![](Adornments_images/adornment_pos_5.png)
 
 
-**Line Series**
+**Spline Series**
 
 LabelPosition as Auto
 
