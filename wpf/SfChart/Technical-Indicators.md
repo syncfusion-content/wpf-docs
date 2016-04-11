@@ -9,7 +9,7 @@ documentation: ug
 
 # Technical Indicator
 
-Technical indicators are the base of technical analysis, which is used to determine the future market trends. 
+Technical indicators are the base of technical analysis, which are used to determine the future market trends. 
 
 ## Adding Technical Indicators to the Chart
 
@@ -19,7 +19,7 @@ Technical indicator merely an another type meta series. The following steps illu
 
 Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~TechnicalIndicators.html#) collection. 
 
-Here for instance, the [AccumulationDistributionIndicator](#accumulationdistributionindicator) is added.
+Here for instance, the [Accumulation Distribution](#accumulationdistributionindicator) is added.
 
 {% highlight xaml %}
 
@@ -164,7 +164,7 @@ The [`MomentumLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/S
 
 <chart:MomentumTechnicalIndicator ItemsSource="{Binding  ViewModel1}"     
 
-Period="3" CenterLineColor="red" XBindingPath="Date"        
+Period="3" CenterLineColor="Blue" XBindingPath="Date"        
 
 Volume="Volume" MomentumLineColor="Black"
 
@@ -195,7 +195,7 @@ Period="3" SignalLineColor="Black" KPeriod="8" DPeriod="5"
 
 XBindingPath="Date" Volume="Volume" UpperLineColor="Blue"
 
-LowerLineColor="Purple" PeriodLineColor="Red"
+LowerLineColor="LightBlue" PeriodLineColor="Blue"
 
 High="High" Low="Low" Open="Open" Close="Close"/>
 
