@@ -88,7 +88,7 @@ GetParameters()</td><td>
 Returns the parameters of the report as ReportParameterInfoCollection.</td></tr>
 <tr>
 <td>
-SetParameters(IEnumberable&lt;ReportParameters&gt;)</td><td>
+SetParameters(IEnumerable&lt;ReportParameters&gt;)</td><td>
 Sets the parameters of the report.</td></tr>
 <tr>
 <td>
