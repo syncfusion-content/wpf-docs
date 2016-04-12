@@ -25,7 +25,7 @@ You can follow these steps to add a Matrix to the Report Designer.
    
    ![](Draw-Matrix-Report-Item_images/Draw-Matrix-Report-Item_img2.png)
    
-4. Click Next after selecting create a dataset and choose the datasource in the available datasoureces.
+4. Click Next after selecting create a dataset and choose the datasource in the available datasources.
 
    ![](Draw-Matrix-Report-Item_images/Draw-Matrix-Report-Item_img3.png)
 

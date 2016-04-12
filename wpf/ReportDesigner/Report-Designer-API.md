@@ -93,12 +93,12 @@ Opens the RDL report from the file location.</td><td>
 ReportPath</td><td>
 Void</td></tr>
 <tr><td>
-SaveReportDialogue</td><td>
+SaveReportDialog</td><td>
 Saves the report.</td><td>
 - </td><td>
 Void</td></tr>
 <tr><td>
-SaveAsReportDialogue</td><td>
+SaveAsReportDialog</td><td>
 Makes a RDL report  to save in the corresponding location.</td><td>
 - </td><td>
 Void</td></tr>

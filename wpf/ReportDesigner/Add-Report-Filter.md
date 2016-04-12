@@ -27,7 +27,7 @@ You can add report filter to the Report Designer using the following steps.
 
 6. In Expression, type or select the expression for the field to filter.
 
-7. To edit the expression, click the expression (fx) button. 
+7. To edit the expression, click the expression button. 
 
 8. From the drop-down box, select the data type that matches the type of data in the expression.
 
@@ -59,7 +59,7 @@ You can add report filter to the Report Designer using the following steps.
 
 6. In Expression, type or select the expression for the field to filter.
 
-7. To edit the expression, click the expression (fx) button. 
+7. To edit the expression, click the expression button. 
 
 8. From the drop-down box, select the data type that matches the type of data in the expression.
 

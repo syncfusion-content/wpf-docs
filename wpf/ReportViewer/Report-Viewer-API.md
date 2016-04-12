@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Report Viewer API | ReportViewer | WPF | Syncfusion
-description: report viewer api
+title: ReportViewer API | ReportViewer | WPF | Syncfusion
+description: List of Reportviewer API
 platform: wpf
 control: ReportViewer
 documentation: ug
 ---
 
-# Report Viewer API
+# ReportViewer API
 
 ## Properties 
 
@@ -56,7 +56,7 @@ documentation: ug
 </tr>
 <tr>
 <td>ShowPrintButton</td>
-<td>Gets or sets a value that indica tes whether Print button is visible on the toolbar.</td>
+<td>Gets or sets a value that indicates whether Print button is visible on the toolbar.</td>
 <td>Dependency Property</td>
 <td>Boolean</td>
 </tr>
@@ -91,8 +91,8 @@ documentation: ug
 <td>Boolean</td>
 </tr>
 <tr>
-<td>ShowXpsExportButton</td>
-<td>Gets or sets a value that indicates whether the Xps Export Button is Visible</td>
+<td>ShowXPSExportButton</td>
+<td>Gets or sets a value that indicates whether the XPS Export Button is Visible</td>
 <td>Dependency Property</td>
 <td>Boolean</td>
 </tr>
@@ -104,7 +104,7 @@ documentation: ug
 </tr>
 <tr>
 <td>ShowPageNavigationControls</td>
-<td>Get or set a value that indicates whether the page navigationcontrols is visible</td>
+<td>Get or set a value that indicates whether the page navigation controls is visible</td>
 <td>Dependency Property</td>
 <td>Boolean</td>
 </tr>

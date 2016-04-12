@@ -71,7 +71,7 @@ You can add parameter to the Report Designer using the following steps.
 
    * No Default values - Select No default values, if you do not want to provide a default value for the parameter.
 
-   * Specify Values - Select Specify Values to enter a static default value or a set of default values for the parameter. If you select Specify Values, a text box appears in which you type a value or set of values. Click the expression (fx) button to edit the expression
+   * Specify Values - Select Specify Values to enter a static default value or a set of default values for the parameter. If you select Specify Values, a text box appears in which you type a value or set of values. Click the expression button to edit the expression
 
    * Get Values from a query - Select Get Values from a query to retrieve the default value or set of default values from a data source. If you select Get Values from a query, two fields appear in which you define query information.
 

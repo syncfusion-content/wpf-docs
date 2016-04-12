@@ -83,7 +83,7 @@ This section illustrates how to add Report Writer to the WPF application. It inc
 
 The ReportWriter has support to view and save the RDL reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign Reportpath, Processingmode and Export format to Report Writer.
+1. Assign ReportPath, ProcessingMode and Export format to Report Writer.
 
    ~~~ csharp
    string reportPath = @"..\ReportTemplate\Product Catalog.rdl";
@@ -100,7 +100,7 @@ The ReportWriter has support to view and save the RDL reports. The following cod
 
 The ReportWriter has support to view and save the RDLC reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign report path, processingmode and export format to Report Writer.
+1. Assign ReportPath, processingMode and export format to Report Writer.
 
    ~~~ csharp
    string reportPath = @"..ReportTemplate\RDLC\ProductCatalog.rdlc";
@@ -109,7 +109,7 @@ The ReportWriter has support to view and save the RDLC reports. The following co
    reportWriter.Save("ProductCatalog.doc", WriterFormat.WORD);
    ~~~
    
-2. Set Datasources to the RDLC report assigned in reportpath.
+2. Add Data sources to the RDLC report.
 
    ~~~ csharp
    ReportDataSourceCollection dataSources = new ReportDataSourceCollection();

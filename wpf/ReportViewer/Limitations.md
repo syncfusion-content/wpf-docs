@@ -15,9 +15,9 @@ documentation: ug
 
 ## Layout Process
 
-* SyncfusionReport Viewer control has some limitations in Tablix Cell split Layout process in comparison with MS ReportViewer. When table cell width value exceeds the page width, the entire cell moves to the next page in order to display the complete cell items. 
+* Syncfusion ReportViewer control has some limitations in Tablix Cell split Layout process in comparison with MS ReportViewer. When table cell width value exceeds the page width, the entire cell moves to the next page in order to display the complete cell items. 
 
 ## Unsupported expression
 
-* Object function and VB function do not have complete support in Report Viewer.
-* VB Code functions are not supported in Silverlight and WinRT Report Viewer.
+* Object function and VB function do not have complete support in ReportViewer.
+* VB Code functions are not supported in Silverlight and WinRT ReportViewer.

@@ -25,7 +25,7 @@ Add a data source and dataset to the Report Designer.
    
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img3.png)
 
-3. To change the Values of Value Axis,Areacolor and Category Axis,Double Click on the chart.
+3. To change the Values of Value Axis, Area color and Category Axis,Double Click on the chart.
 
 4. To Add the Report Items such as text boxes, lines, and images and rectangle to the chart,click and drag the selected report items to the chart.
 
@@ -135,7 +135,7 @@ Add a data source and dataset to the Report Designer.
 
    I. Choose an existing dataset in this report,if dataset is already added.
    
-   II. Choose create a dataset, if datset is not added.Then Create datasource and dataset,and follow the following steps.
+   II. Choose create a dataset, if dataset is not added.Then Create datasource and dataset,and follow the following steps.
    
 3. If dataset is already added select available datasets and click Next.
 

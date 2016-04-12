@@ -35,7 +35,7 @@ Add a data source and dataset to the Report Designer.
    
    * Action - To change the hyperlinks.
    
-   * MapLayer - To add maplayers to the map.
+   * MapLayer - To add map layers to the map.
    
 4. To add layer to the map right click on the map and select AddLayer, then layer properties wizard will open.
 
@@ -93,7 +93,7 @@ Add a data source and dataset to the Report Designer.
 
    I. Choose an existing dataset in this report,if dataset is already added.
    
-   II. Choose create a dataset, if datset is not added.Then Create datasource and dataset,and follow the following steps.
+   II. Choose create a dataset, if dataset is not added.Then Create datasource and dataset,and follow the following steps.
 
 5. Then specify the match fields for spatial and analytical data in the next window and click Next.
 
@@ -125,7 +125,7 @@ Add a data source and dataset to the Report Designer.
    
    * Action - To change the hyperlinks.
    
-   * MapLayer - To add maplayers to the map.
+   * MapLayer - To add map layers to the map.
    
 10. To add layer to the map right click on the map and select AddLayer,then layer properties wizard will open.
 

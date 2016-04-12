@@ -17,7 +17,7 @@ The important features of the Essential Report Designer for WPF are:
 * Data sources - You can use advanced database servers DataSources in Report Designer (SQL and Oracle).
 * Data sets - You can add data sets to the DataSource.
 * Filters - You can select or exclude the data from the dataset using filters.
-* Parameters - You can use the report parameter to specify a criterion for subsetting data.
+* Parameters - You can use the report parameter to specify a criterion for subset data.
 * Tablix - Shows summaries and simple tables.
 * Textbox - Shows textbox data with expression support.
 * Report Parameter - Views the report based on the report parameter value.
