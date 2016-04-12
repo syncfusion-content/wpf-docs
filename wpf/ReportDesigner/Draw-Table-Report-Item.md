@@ -23,9 +23,9 @@ You can add tables to the Report Designer and drag the data fields to the table 
 
 4. Select Tablix a click on view report item properties,then Tablix properties wizard will open.
 
-   * General - To set name,row heder,column header,page break options and dataset properties.
+   * General - To set name,row header,column header,page break options and dataset properties.
    
-   * Visibility - To change the display options when the report is initiallay run.
+   * Visibility - To change the display options when the report is initially run.
    
    * Filter - To add or delete the fields.
    
@@ -55,7 +55,7 @@ You can add tables to the Report Designer and drag the data fields to the table 
 
    I. Choose an existing dataset in this report,if dataset is already added.
    
-   II. Choose create a dataset, if datset is not added.Then Create datasource and dataset,and follow the following steps.
+   II. Choose create a dataset, if dataset is not added.Then Create datasource and dataset,and follow the following steps.
 
 3. If dataset is already added select available datasets and click Next.
 

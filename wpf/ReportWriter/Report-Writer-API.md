@@ -96,7 +96,7 @@ LoadReport(stream)</td><td>
 Loads the report with the specified stream that contains the RDL contents.</td></tr>
 <tr>
 <td>
-Save(string,writertype)</td><td>
+Save(string,writer type)</td><td>
 Saves the report as a PDF, Word, Excel and Html documents in the mentioned path.</td></tr>
 <tr>
 <td>

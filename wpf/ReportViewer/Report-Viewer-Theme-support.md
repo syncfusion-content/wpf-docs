@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Report Viewer Theme support | ReportViewer | WPF | Syncfusion
-description: report viewer theme support
+title: ReportViewer Theme support | ReportViewer | WPF | Syncfusion
+description: ReportViewer theme support
 platform: wpf
 control: ReportViewer
 documentation: ug
 ---
 
-# Report Viewer Theme support
+# ReportViewer Theme support
 
-Theme support for Report Viewer is provided by modifying the UserControl as a ControlTemplate. You can now modify the Report Viewer in your own style, by writing a customized control template for Report Viewer. 
+Theme support for ReportViewer is provided by modifying the UserControl as a ControlTemplate. You can now modify the ReportViewer in your own style, by writing a customized control template for ReportViewer. 
 
-To customize a Report Viewer, you have to modify the following control parts.
+To customize a ReportViewer, you have to modify the following control parts.
 
 * PART_exportControl
 * PART_comboBoxPageZoom
@@ -22,7 +22,7 @@ To customize a Report Viewer, you have to modify the following control parts.
 * PART_PageBodyBorder
 * PART_PageHeaderBorder
 * PART_scrollViewer
-* PART_scorllDSCredentialBlock
+* PART_scrollDSCredentialBlock
 * PART_groupBoxExpandedExceptionScroll
 * PART_scrollViewerParamBlock
 * PART_canvasContentPage
@@ -36,7 +36,7 @@ To customize a Report Viewer, you have to modify the following control parts.
 * PART_gridException
 * PART_gridLoadingIndicator
 * PART_MainGrid
-* PART_viewerSpliter
+* PART_viewerSplitter
 * PART_PageView
 * PART_sPanel_Head
 * PART_PageViewContainer
@@ -70,7 +70,7 @@ To customize a Report Viewer, you have to modify the following control parts.
 * PART_parameterGridRow
 * PART_viewerContentRow
 
-The following code example illustrates a Report Viewer control template.
+The following code example illustrates a ReportViewer control template.
 
 {% highlight xaml %}
 
@@ -395,7 +395,7 @@ The following code example illustrates a Report Viewer control template.
                             <Image Source="{StaticResource error}" Height="24" Width="24" Margin="5,5,5,5" Grid.ColumnSpan="2" HorizontalAlignment="Left">
                             </Image>
                             <TextBlock Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="23" Margin="10,7,10,0" Width="730">
-                                Report Viewer encountered some issues loading this report. Please click <Hyperlink x:Name="PART_hyperlink">here </Hyperlink>  to see details of the issues.
+                                ReportViewer encountered some issues loading this report. Please click <Hyperlink x:Name="PART_hyperlink">here </Hyperlink>  to see details of the issues.
                             </TextBlock>
                         </Grid>
                         <Grid Grid.Row="1" x:Name="PART_renderArea">

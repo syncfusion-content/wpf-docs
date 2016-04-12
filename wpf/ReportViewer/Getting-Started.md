@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started
 
-## Creating Report Viewer through Visual Studio
+## Creating ReportViewer through Visual Studio
 
-You can create a simple application through the Visual Studio Designer with the Syncfusion WPF Report Viewer control by using the following steps.
+You can create a simple application through the Visual Studio Designer with the Syncfusion WPF ReportViewer control by using the following steps.
 
 1. Create new WPF application in Visual Studio.
 
@@ -44,6 +44,8 @@ You can create a simple application through the Visual Studio Designer with the 
    * Syncfusion.Tools.Wpf
    * Syncfusion.XlsIO.Base
    
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
+   
 5. Add the following code for creating ReportViewer using code.
 
    ~~~ xml
@@ -64,25 +66,25 @@ You can create a simple application through the Visual Studio Designer with the 
    </sync:ChromelessWindow> 
    ~~~
    
-6. Set Reportpath and Processingmode to the Report Viewer.
+6. Set `ReportPath` and `ProcessingMode` to the ReportViewer.
 
    ~~~ xml
    <sync:ReportViewer Name="viewer" ReportPath="..\ReportTemplate\InvoiceTemplate.rdl" ProcessingMode="Remote" />
    ~~~
 
-7. Set Visual Style to the Report Viewer.  
+7. Set Visual Style to the ReportViewer.  
 
    ~~~ csharp
    SkinStorage.SetVisualStyle(this, "Metro");
    ~~~
    
-8. Run the sample application and you can see the Report Viewer as displayed in the following screenshot.
+8. Run the sample application and you can see the ReportViewer as displayed in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img3.png)
    
 ## Show RDLC Reports
 
-1. Assign reportPath and ProcessingMode to Report Viewer.
+1. Assign `ReportPath` and `ProcessingMode` to ReportViewer.
 
    ~~~ csharp
    Syncfusion.Windows.Reports.Viewer.ReportViewer viewer= new Syncfusion.Windows.Reports.Viewer.ReportViewer;
@@ -185,7 +187,7 @@ You can create a simple application through the Visual Studio Designer with the 
 
 ## Load SSRS Reports
 
-1. To load SSRS reports, initialize Report Viewer control and set the ReportPath, ProcessingMode and ReportingServer URL.
+1. To load SSRS reports, initialize ReportViewer control and set the `ReportPath`, `ProcessingMode` and `ReportServerUrl`.
 
    ~~~ csharp
    Syncfusion.Windows.Reports.Viewer.ReportViewer viewer = new Syncfusion.Windows.Reports.Viewer.ReportViewer();
