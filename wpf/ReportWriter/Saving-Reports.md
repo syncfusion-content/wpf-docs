@@ -68,9 +68,9 @@ reportWriter.Save("Sample.doc", WriterFormat.WORD)
 
 ![](Saving-Reports_images/Saving-Reports_img3.png) 
 
-## Saving Report as an Html 
+## Saving Report as an HTML 
 
-The report generated using the Report Designer can be exported as an Html document using the following code example. 
+The report generated using the Report Designer can be exported as an HTML document using the following code example. 
 
 {% tabs %}
 {% highlight C# %}
