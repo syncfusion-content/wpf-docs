@@ -1,46 +1,84 @@
 ---
 layout: post
-title: Grouping Bar Context Menu | PivotGrid | Wpf | Syncfusion
-description: Grouping Bar Context Menu 
+title: 13432-Grouping-Bar-Context-Menu
+description: 1.3.4.3.2 grouping bar context menu
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-
 # Grouping Bar Context Menu
-
 
 The Grouping bar context menu consists of the following menu items:
 
-1. Reload Data - Refresh the Grid with the Current Item source
-2. Show Field List - Launches the PivotGrid Field List
+* **Reload Data** - Refresh the Grid with the current ItemSource.
+* **Show Field List** - Launches the PivotGrid Field List.
+* **Order** – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
 
-The following are the menu items present in the context menu of Grouping bar items:
+   * Move to Beginning - Moves the current item to the first position.
+   * Move to Left - Moves the current item one step towards its left.
+   * Move to Right - Moves the current item one step towards its right.
+   * Move to End - Moves the current item to the last position.
+   * Smallest to Largest—Arranges the pivot fields based on the field header from first letter to the last.
+   * Largest to Smallest—Arranges the pivot fields based on the field header from last letter to the first.
+		 
+* **Calculated field** - Used to add a new calculation field at run time.
 
-1. Reload Data - Refresh the Grid with the Current Item Source
-2. Order – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
-1. Move to Beginning - Moves the current item to the first position
-2. Move to Left - Moves the current item one step towards its left
-3. Move to Right - Moves the current item one step towards its right
-4. Move to End - Moves the current item to the last position
-3. Show Field List - Launches the PivotGrid Field List
+By default, the context menu is enabled in all the areas of the Grouping Bar. `DisableContextMenu` property needs to be set individually for Row, Column and Data Header Area in Grouping Bar in-order to alter its visibility. 
 
-### Use Case Scenarios
+After defining the PivotGrid control, raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
 
-This feature is useful for applications related to Stock Market where the data will change from time to time and users can refresh the grid using the context menu.
+Please refer the below code sample.
 
-### Adding Grouping Bar Context Menu
+{% highlight C# %}
 
-![Description: C:/Syncfusion/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ContextMenu.png](Features_images/Features_img20.png)
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
-### Sample Link
+        pivotGrid.Loaded += pivotGrid_Loaded;
+    }
 
-To access a Conditional Formatting sample:
+    void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
+        pivotGrid.GroupingBar.Loaded += GroupingBar_Loaded;
+    }
 
-1. Open the Syncfusion Dashboard. 
-2. Click Business Intelligence.
-3. Click the WPF drop-down list, and select Explore Samples. 
-4. Navigate to PivotAnalysis.WPF -> Samples -> Grouping Bar -> Context Menu Demo.
+    void GroupingBar_Loaded(object sender, RoutedEventArgs e) {
+        pivotGrid.GroupingBar.ColumnHeaderArea.DisableContextMenu = false;
+        pivotGrid.GroupingBar.RowHeaderArea.DisableContextMenu = true;
+        pivotGrid.GroupingBar.DataHeaderArea.DisableContextMenu = false;
+    }
+}
 
+{% endhighlight %}
 
+![](Grouping-Bar-Images/Grouping bar context menu.png)

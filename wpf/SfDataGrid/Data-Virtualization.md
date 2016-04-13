@@ -1,464 +1,659 @@
 ---
 layout: post
-title: Data Virtualization | SfDataGrid | WPF | Syncfusion
-description: data virtualization
+title: Data Virtualization support in SfDataGrid.
+description: How to use Data Virtualization in SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Virtualization	
+# Data Virtualization
 
-DataVirtualization is a term that achieves Virtualization for the actual data objects that are bound to the DataGrid. For small collection of basic data objects, the memory consumption is not significant; however for large collections, the memory consumption becomes very significant. For these reasons, it is desirable to use some sort of DataVirtualization mechanism to limit the amount of data object that is to be retrieved and instantiated in memory.
-
-## Overview
-
-DataVirtualization support enables you to work with huge data sources. DataGrid control creates records on demand by automatically enabling Data Virtualization when it is bounded to a data source of VirtualizingCollectionView.
-
-## Enabling Virtualization in SfDataGrid
-
-You can assign VirtualizingCollectionView object as ItemsSource for DataGrid to enable Virtualization.
-
-## VirtualizingCollectionView
-
-VirtualizingCollectionView is a type of ICollectionViewAdv that provides the functionality to create records that are needed. It creates the records for the rows that are in View.
-
-The following code example illustrates how to create a VirtualizingCollectionView data source and assign it to DataGrid.
-
-
-{% highlight C# %}
-
-
-
-// Create the VirtualizingCollectionView object with enumerable data source.
-
-VirtualizingCollectionView GridItemsSource = new VirtualizingCollectionView(enumerableDataSource);
-{% endhighlight %}
-
-
-{% highlight xml %}
-}
-
-
-<Window.DataContext>
-
-<local:ViewModel/>
-
-</Window.DataContext>
-
-
-
-<syncfusion:SfDataGrid x:Name="dataGrid" 
-
-                         AutoGenerateColumns="True"
-
-                         ItemsSource="{Binding GridItemSource}"/>
-
-
-{% endhighlight %}
-
-
-To use extensive support of DataGrid like Excel-Like Filtering, Dynamic Object Binding, Unbound Columns, DisplayBinding and ValueBinding in DataVirtualization, you can define a GridVirtualizingCollectionView type of data source.
-
-The following code example illustrates how to assign a GridVirtualizingCollectionView as ItemsSource for DataGrid.
-
-{% highlight C# %}
-
-
-
-//Create the GridVirtualizingCollectionView object with enumerable data source.
-
-GridVirtualizingCollectionView GridItemsSource = new GridVirtualizingCollectionView(enumerableDataSource);
-{% endhighlight %}
-
-{% highlight xml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="dataGrid" 
-
-                         AutoGenerateColumns="True"
-
-                         ItemsSource="{Binding GridItemSource}"/>
-{% endhighlight %}
-
-## Custom Data Virtualization
-
-Custom Data Virtualization is helpful for retrieving data from data sources on demand. DataGrid provides extensive support to achieve Custom Data Virtualization by inheriting the VirtualizingCollectionView class and overriding the virtual methods. To achieve Custom Data Virtualization, you can use a parameterless constructor of VirtualizingCollectionView.
-
-### Virtual Methods of VirtualizingCollectionView
-
-VirtualizingCollectionView contains the following virtual methods to override operations in CustomVirtualizingCollectionView class.
+SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
 <th>
-Virtual Method</th><th>
-Prototype</th><th>
-Description</th></tr>
+Concept
+</th>
+<th>
+Usage
+</th>
+</tr>
 <tr>
 <td>
-GetItemAt</td><td>
-Object GetItemAt(int index)</td><td>
-This method returns the data for the corresponding index.</td></tr>
+VirtualizingCollectionView
+</td>
+<td>
+Use to load large amount of data in less time.
+</td>
+</tr>
 <tr>
 <td>
-GetIndex</td><td>
-Int GetIndex(object item)</td><td>
-This method returns the index of the corresponding data.</td></tr>
+Custom VirtualizingCollectionView
+</td>
+<td>
+Use to load large amount of data in less time and also data can be loaded in on-demand.
+</td>
+</tr>
 <tr>
 <td>
-GetInternalSource</td><td>
-IEnumerable GetInternalSource()</td><td>
-This method returns the Collection of data in view.</td></tr>
+Incremental Loading
+</td>
+<td>
+Use to load subset of data from the services or servers in less time while loading and scrolling. On-demand request also supported.
+</td>
+</tr>
 <tr>
 <td>
-GetViewRecordCount</td><td>
-Int GetViewRecordCount()</td><td>
-This method returns the number of data in view.</td></tr>
+Paging
+</td>
+<td>
+Use to load large amount of data in less time with the help of SfDataPager.
+</td>
+</tr>
 <tr>
 <td>
-GetSourceListForFilteringItems</td><td>
-IEnumerable GetSourceListForFilteringItems()</td><td>
-This method returns the entire data source. > {{ '_Note: This is used while populating items for ExcelLikeFilter pop-up._' | markdownify }}> </td></tr>
-<tr>
+On-demand paging
+</td>
 <td>
-ProcessSort</td><td>
-Void ProcessSort(SortDescriptionCollection sortDescriptions)</td><td>
-This method is called when Sorting is applied.</td></tr>
-<tr>
-<td>
-ApplyFilter</td><td>
-Void ApplyFilter(Predicate&lt;object&gt; RowFilter)</td><td>
-This method is called when filtering is applied.</td></tr>
-<tr>
-<td>
-GetGroupedSource</td><td>
-IEnumerable&lt;GroupResult&gt;  </td><td>
-This method returns the Collection of group result after apply grouping.</td></tr>
+Use to load data in on-demand. You can load data only for current page from server. 
+</td>
+</tr>
 </table>
 
+## VirtualizingCollectionView
+ 
+You can load the large amount of data in less time using [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
 
-N> GetInternalSource and GetViewRecorCount return the value based on filtering.
+In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
 
-The following code example illustrates the Custom Data Virtualization class.
-
-
-{% highlight C# %}
-
-
-
-
-
-public class CustomVirtualizingClass : VirtualizingCollectionView
-
+{% tabs %}
+{% highlight c# %}
+public class ViewModel
 {
+    private GridVirtualizingCollectionView _gridVirtualizingItemsSource;
+    public GridVirtualizingCollectionView GridVirtualizingItemsSource
+    {
+        get { return _gridVirtualizingItemsSource; }
+        set { _gridVirtualizingItemsSource = value; }
+    }
 
-
-
-        IList<CountriesList> sourceCollection;
-
-
-
-        public CustomVirtualizingClass()
-
-            : base()
-
-        {
-
-            sourceCollection = new Countries();
-
-        }
-
-
-
-  /// <summary>
-
-  /// Returns the index of data.
-
-  /// </summary>   
-
-        protected override int GetIndexOf(object item)
-
-        {
-
-            return sourceCollection.IndexOf(item as CountriesList);
-
-        }
-
-
-
-  /// <summary>
-
-  /// Returns the data for corresponding index.
-
-  /// </summary>   
-
-        protected override object GetItemAt(int index)
-
-        {
-
-            return sourceCollection[index];
-
-        }
-
-
-
-  /// <summary>
-
-        /// Returns the total view record count.
-
-  /// </summary>   
-
-        public override int GetViewRecordCount()
-
-        {
-
-            return sourceCollection.Count;
-
-        }
-
-
-
-  /// <summary>
-
-        /// Returns the source collection.
-
-  /// </summary>   
-
-        public override IEnumerable GetInternalSource()
-
-        {
-
-            return sourceCollection;
-
-        }
-
+    public ViewModel()
+    {
+        var _orders = this.GenerateOrders();                        
+        GridVirtualizingItemsSource = new GridVirtualizingCollectionView(_orders);
+    }
 }
-
 {% endhighlight %}
+{% endtabs %}
 
-N> You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class.
-
-You can override the virtual methods in the VirtualizingCollectionView when you perform Sorting, Filtering and Grouping operations by using the Custom Data Virtualization class.
-
-The following code example illustrates the methods that are used to achieve Sorting, Grouping and Filtering in the Custom Data Virtualization class.
-
-
-{% highlight C# %}
-
-
-
-
-
-   /// <summary>
-
-   /// Total SortDescription Collection is the parameter for this method.       
-
-   /// You can sort your source based on the SortDescription collection.
-
-   /// </summary>   
-
-   protected override void ProcessSort(SortDescriptionCollection sortDescription)
-
-   {
-
-       this.sourceCollection = this.sourceCollection.OrderBy(item => item.Country).ToList();
-
-   }
-
-
-
-   /// <summary>
-
-   /// This method returns the collection of Syncfusion.Data.Extensions.GroupResult. 
-
-   /// Hence you have to use Syncfusion.Data.Extensions.QueryableExtenstion.GroupByMany method to   
-
-   /// get the collection of GroupResult.
-
-   /// </summary>   
-
-   protected override IEnumerable<GroupResult> GetGroupedSource(string[] groupBy)
-
-   {
-
-       IQueryable queryable = this.sourceCollection.OfQueryable().AsQueryable();
-
-       var result = queryable.GroupByMany(this.SourceType, (property) => this.GetExpressionFunc(property), groupBy).ToList();
-
-       return result;
-
-   }
-
-   /// <summary>
-
-   /// The following method is called when filtering is applied to the column.
-
-   /// The corresponding filter is passed as the parameter for this method.
-
-   /// By applying the Filter predicate, you can filter your source.
-
-   /// </summary>
-
-   protected override void ApplyFilter(Predicate<object> Filter)
-
-   {
-
-       foreach (var item in sourceCollection)
-
-       {
-
-           if (Filter(item))
-
-           {
-
-             // The filtered data is stored in filteredSource. After filtering is applied, the GetItemAt method is called.
-
-             // You need to pass the Data from filteredSource to display the filtered data.
-
-               this.filteredSource.Add(item);
-
-           }
-
-       }
-
-   }
-
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                       ColumnSizer="Star"
+                       ItemsSource="{Binding GridVirtualizingItemsSource}" />
 {% endhighlight %}
+{% endtabs %}
 
-### Limitations of Data Virtualization
+### Limitations 
 
-DataVirtualization in DataGrid has certain limitations. They are as follows:
+1. Data update using [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
+2. Details view is not supported.
+3. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
 
-* Data reordering does not take place when a property is changed.
-* Data Virtualization does not support Paging.
+## Creating Custom VirtualizingCollectionView
+
+SfDataGrid supports to override GridVirtualizingCollectionView and retrieve the data in on-demand by inheriting [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) class. The `GridVirtualizingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping.
+
+You can load the data in on-demand by overriding below methods in `GridVirtualizingCollectionView`.
+
+<table>
+<tr>
+<th>
+Methods
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+{{'[GetInternalSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetInternalSource.html#"")'| markdownify }}
+</td>
+<td>
+Returns the source.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GetItemAt](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetItemAt.html#"")'| markdownify }}
+</td>
+<td>
+Returns the data object by specified `index` from the collection. If the collection is filtered then returns from filtered source.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GetIndexOf](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetIndexOf.html#"")'| markdownify }}
+</td>
+<td>
+Returns the index by specified data object from the collection. If the collection is filtered then returns from filtered source.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GetViewRecordCount](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetViewRecordCount.html#"")'| markdownify }}
+</td>
+<td>
+Returns the data object count from collection. If the collection is filtered then returns using filtered source count.
+</td>
+</tr>
+</table>
+
+Below code creates the `GridVirtualizingCollectionViewExt` to load the virtualized data collection.
+
+{% tabs %}
+{% highlight c# %}
+public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
+{
+    IList<OrderInfo> sourceCollection;
+    public GridVirtualizingCollectionViewExt()
+        : base()
+    {
+        sourceCollection = new ViewModel().Orders;
+    }
+    
+    /// <summary>
+    /// Gets the index of specified item.
+    /// </summary>
+    /// <param name="item">Specifies the item to get the index</param>
+    /// <returns>Returns the index  of specified item</returns>
+    protected override int GetIndexOf(object item)
+    {
+       return sourceCollection.IndexOf(item as OrderInfo);
+    }
+    
+    /// <summary>
+    /// Returns the specified index item from sourceCollection.
+    /// </summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
+    public override object GetItemAt(int index)
+    {
+        return sourceCollection[index];
+    }
+    
+    /// <summary>
+    /// Gets the records count that are inview.
+    /// </summary>
+    /// <returns>Returns the records count that are inview</returns>
+    public override int GetViewRecordCount()
+    {
+        return sourceCollection.Count();
+    }
+    
+    /// <summary>
+    /// Gets the list of records in view.
+    /// </summary>
+    /// <returns>Returns the list of records in view</returns>
+    public override System.Collections.IEnumerable GetInternalSource()
+    {
+        return sourceCollection;
+    }
+    
+    /// <summary>
+    /// Process the sort on collection based on specified sort description. 
+    /// </summary>
+    /// <param name="sortDescription">Specifies the sort description to sort the collection</param>
+    protected override void ProcessSort(System.ComponentModel.SortDescriptionCollection sortDescription)
+    {
+    }    
+}
+{% endhighlight %}
+{% endtabs %}
+
+Below code, sets the `GridVirtualizingCollectionViewExt` to SfDataGrid.ItemsSource.
+
+{% tabs %}
+{% highlight c# %}
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        this.dataGrid.ItemsSource = new GridVirtualizingCollectionViewExt();            
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Handling Data Management with VirtualizingCollectionView
+
+You can handle `Sorting`, `Filtering` and `Grouping` in custom virtualizing collection view by below methods.
+
+<table>
+<tr>
+<th>
+Methods
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+{{'[GetSourceListForFilteringItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetSourceListForFilteringItems.html#"")'| markdownify }}
+</td>
+<td>
+Returns the whole source to apply filter. Used to populate the items for ExcelLikeFilter pop-up.
+</td>
+</tr>
+<tr>
+<td>
+{{'[ApplyFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~ApplyFilter.html#"")'| markdownify }}
+</td>
+<td>
+Apply filter on source collection based on filter predicates.
+</td>
+</tr>
+<tr>
+<td>
+{{'[ProcessSort](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~ProcessSort.html#"")'| markdownify }}
+</td>
+<td>
+Apply sorting on the source collection based on the sort descriptions. 
+</td>
+</tr>
+<tr>
+<td>
+{{'[GetGroupedSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetGroupedSource.html#"")'| markdownify }}
+</td>
+<td>
+Apply grouping on source collection based on group descriptions and returns the grouped source.
+</td>
+</tr>
+</table>
+
+#### Sorting
+
+You can apply sorting on collection based on custom logic by overriding `ProcessSort` method.
+
+{% tabs %}
+{% highlight c# %}
+public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
+{
+    /// <summary>
+    /// Process the sort on collection based on specified sort description. 
+    /// </summary>
+    /// <param name="sortDescription">Specifies the sort description to sort the collection</param>       
+    protected override void ProcessSort(System.ComponentModel.SortDescriptionCollection sortDescription)
+    {        
+        this.sourceCollection = this.sourceCollection.OrderBy(item => item.Country).ToList();     
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Filtering
+
+You can filter the collection using `ApplyFilter` method. To load items source ExcelLikeFiltering pop-up, you can use `GetSourceListForFilteringItems`
+You need to use the filtered source if the collection has filtered in `GetElementAt`, `GetIndexOf` and `GetViewRecordCount` methods.
+
+{% tabs %}
+{% highlight c# %}
+public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
+{
+    IList<OrderInfo> filteredSource;
+    public GridVirtualizingCollectionViewExt()
+            : base(
+    {
+            sourceCollection = new ViewModel().Orders;
+            filteredSource = new ObservableCollection<OrderInfo>();
+    }
+    
+    /// <summary>
+    /// Gets the SourceCollection to load items source in FilterPop-up control.
+    /// </summary>
+    /// <returns>Returns the SourceCollection</returns>
+    public override System.Collections.IEnumerable GetSourceListForFilteringItems()
+    {
+        return sourceCollection;
+    }
+    
+    /// <summary>
+    /// Applies filter on collection.
+    /// </summary>
+    /// <param name="RowFilter">Specifies the RowFilter to apply filter on collection</param>
+    protected override void ApplyFilter(Predicate<object> RowFilter)
+    {
+        foreach (var item in sourceCollection)
+        {
+            if (FilterRecord(item))
+            {
+                // The filtered data is stored in filteredSource. After filtering is applied- the GetItemAt method is called, you need to pass the Data from filteredSource to display the filtered data.
+                this.filteredSource.Add(item);
+            }
+        }    
+    }
+
+    private void ClearFilter()
+    {
+        this.filteredSource.Clear();
+    }
+    
+    /// <summary>
+    /// Refresh the view while apply and clear the filter
+    /// </summary>
+    public override void RefreshFilter()
+    {
+        var filterPresent = this.FilterPredicates.Any(v => v.FilterPredicates != null && v.FilterPredicates.Count > 0);
+    
+        if (filterPresent)
+        {
+            var source = this.sourceCollection.OfQueryable().AsQueryable();
+            ParameterExpression paramExpression;
+    
+            Expression predicate = this.GetPredicateExpression(source, out paramExpression);
+            if (paramExpression != null && predicate != null)
+            {
+                var lamda = Expression.Lambda(predicate, paramExpression);
+                var delg = lamda.Compile();
+                this.RowFilter = (o) =>
+                {
+                    var result = (bool)delg.DynamicInvoke(o);
+                    return result;
+                };
+            }         
+        }
+        else
+            this.RowFilter = null;   
+    
+        if (this.RowFilter != null)
+            ApplyFilter(null);
+        else
+            ClearFilter();
+    
+        Refresh();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Grouping
+
+You can apply grouping on collection based custom logic and returns the grouped source by overriding `GetGroupedSource` method.
+
+{% tabs %}
+{% highlight c# %}
+public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
+{
+    /// <summary>
+    /// Gets the grouped result by specified group by array.
+    /// </summary>
+    /// <param name="groupBy">Specifies the group by array to get the group result on collection</param>
+    /// <returns></returns>
+    protected override IEnumerable<GroupResult> GetGroupedSource(string[] groupBy)
+    {
+        IQueryable queryable = this.sourceCollection.OfQueryable().AsQueryable();
+        var result = queryable.GroupByMany(this.SourceType, (property) => this.GetExpressionFunc(property), groupBy).ToList();
+        return result;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Incremental Loading
+ 
+SfDataGrid supports to load the data incrementally using [ISupportIncrementalLoading](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ISupportIncrementalLoading.html) interface.
+`ISupportIncrementalLoading` interface has[LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on[HasMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
 
+If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use IncrementalList or create collection derived from ISupportIncrementalLoading and bind it SfDataGrid.ItemsSource.
 
-Incremental Loading allows you to load a subset of data to DataGrid sequentially. It provides support for fast and fluid scrolling and loading a huge set of data. 
+In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
-### Enabling Incremental Loading in SfDataGrid
-
-You can enable IncrementalLoading in DataGrid by creating a data source with ISupportIncrementalLoading interface and assigning it to the ItemsSource property of DataGrid. ISupportIncrementalLoading interface has the following two members:
-
-### LoadMoreItemsAsync Method
-
-This method helps to load data incrementaly to the DataGrid. This method is called to fetch the initial set of data when the DataGrid loads. When you scroll the DataGrid and reach the last record of loaded data, DataGrid requests this method to load the next subset of data.
-
-N> LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’.
-
-### HasMoreItems
-
-This is a boolean property that specifies whether the LoadMoreItemsAsync method is called or not. HasMoreItems is set to ‘false’ when the data source has no more data to load.
-
-Also, you can use the DataFetchSize property of DataGrid to get or set the amount of data to fetch for virtualizing or prefetch operations. The default value of DataFetchSize property is five.
-
-The IncrementalList<T> class implements the ISupportIncrementalLoading interface internally. You can use this class as your data source to perform Incremental Loading with DataGrid.
-
-The following code example illustrates adding the IncrementaList<T> class as ItemsSource to DataGrid.
-
-
-{% highlight C# %}
-
-
-
-
-
-class IncrementalLoadingViewModel 
-
-{
-
-   public IncrementalLoadingViewModel()
-
-   {
-
-       // Create the IncrementalList<T> object with Func to load the items on-demand.
-
-       itemSource = new IncrementalList<Employee>(LoadMoreItems) { MaxItemCount = 1000 };
-
-       this.timer.Interval = new TimeSpan(1);
-
-       this.timer.Tick += timer_Tick;
-
-   }
-
-   private IncrementalList <Employee> itemSource;
-
-   public IncrementalList<Employee> GridItemSource
-
-   {
-
-       get { return itemSource; }
-
-       set
-
-       {
-
-           itemSource = value;
-
-           RaisePropertyChanged("GridItemSource");
-
-       }
-
-   }
-
-   /// <summary>
-
-   /// This method is called when the DataGrid is loaded and scrolled. 
-
-   /// This method has the number of required data as parameter.
-
-   /// </summary>   
-
-   void LoadMoreItems(uint count, int baseIndex)
-
-   {
-
-       // Get the data from the repository.
-
-       var data = this.respository.GetEmployeesDetails_ObservableCollection((int)count);
-
-
-
-      // Load the data to Incremental List through “LoadItems” method.
-
-      this.GridItemSource.LoadItems(data);
-
-   }
-
-}
-{% endhighlight %}
-
-
-{% highlight xml %}
-
-
-
+{% tabs %}
+{% highlight xaml %}
 <Window.DataContext>
-
-<local:ViewModel/>
-
+    <local:ViewModel />
 </Window.DataContext>
 
-
-
-
-
 <syncfusion:SfDataGrid x:Name="dataGrid" 
-
-                         AutoGenerateColumns="True"
-
-                         ItemsSource="{Binding GridItemSource}"/>
-
+                       AllowFiltering="True"
+                       AutoGenerateColumns="True"    
+                       ItemsSource="{Binding IncrementalItemsSource}"/>  
 {% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+Public class ViewModel
+{
+    public ViewModel()
+    {
+        IncrementalItemsSource = new IncrementalList<OrderInfo>(LoadMoreItems) { MaxItemCount = 1000 };
+    }
+
+    private IncrementalList<OrderInfo> _incrementalItemsSource;
+    public IncrementalList<OrderInfo> IncrementalItemsSource
+    {
+        get { return _incrementalItemsSource; }
+        set { _incrementalItemsSource = value; }
+    }
+
+    /// <summary>
+    /// Method to load items which assigned to the action of IncrementalList
+    /// </summary>
+    /// <param name="count"></param>
+    /// <param name="baseIndex"></param>
+    void LoadMoreItems(uint count, int baseIndex)
+    {
+        var _orders = GenerateOrders();
+        var list = _orders.Skip(baseIndex).Take(50).ToList();
+        IncrementalItemsSource.LoadItems(list);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading-519410720.zip).
+
+### Displaying animation when fetching data from services
+
+You can display animations when fetching data from service for [LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
+
+In the below code snippet data fetched from service using `BackgroundWorker` and SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.DataContext>
+    <local:ViewModel />
+</Window.DataContext>
+<Window.Resources>
+    <local:BoolToVisiblityConverter x:Key="converter" />
+</Window.Resources>
+<Grid>
+    <syncfusion:SfDataGrid x:Name="dataGrid" 
+                           AllowFiltering="True"
+                           AutoGenerateColumns="True"    
+                           ItemsSource="{Binding IncrementalItemsSource}"/>  
+    <Border Height="60"
+            VerticalAlignment="Bottom"
+            Background="Black"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Opacity="50"
+            Visibility="{Binding IsBusy,
+                                 Mode=TwoWay,
+                                 Converter={StaticResource converter}}">
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal">
+            <TextBlock Margin="5"
+                       VerticalAlignment="Center"
+                       FontSize="16"
+                       Foreground="White"
+                       Text="Fetching Data..." />
+            <syncfusion:SfBusyIndicator Margin="5"
+                                        VerticalAlignment="Center"
+                                        Foreground="Gray"
+                                        AnimationType="Gear" />
+        </StackPanel>
+    </Border>
+</Grid>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+public class ViewModel : INotifyPropertyChanged
+{
+    NorthwindEntities northwindEntity;
+
+    public ViewModel()
+    {
+        string uri="http://services.odata.org/Northwind/Northwind.svc/";
+        incrementalItemsSource = new IncrementalList<Order>(LoadMoreItems) { MaxItemCount = 1000}; 
+        northwindEntity = new NorthwindEntities(new Uri(uri));
+        IsBusy = false;
+    }
+
+    private bool isBusy;
+    /// <summary>
+    /// Gets or Sets whether to show the busy indicator.
+    /// </summary>
+    public bool IsBusy
+    {
+        get { return isBusy; }
+        set { isBusy = value; RaisePropertyChanged("IsBusy"); }
+    }
+
+    /// <summary>
+    /// Loads the item while SfDataGrid loading and scrolling.
+    /// </summary>
+    /// <param name="count">Specifies the fetch count to load data</param>
+    /// <param name="baseIndex">Specifies the index to load data</param>
+    void LoadMoreItems(uint count, int baseIndex)
+    {
+        BackgroundWorker worker = new BackgroundWorker();
+        worker.DoWork += (o, ae) =>
+        {
+            DataServiceQuery<Order> query = northwindEntity.Orders.Expand("Customer");
+            query = query.Skip<Order>(baseIndex).Take<Order>(50) as DataServiceQuery<Order>;
+            IAsyncResult ar = query.BeginExecute(null, null);
+            var items = query.EndExecute(ar);
+            var list = items.ToList();
+            Application.Current.Dispatcher.Invoke(new Action(() => { IncrementalItemsSource.LoadItems(list); }));
+        };
+
+        worker.RunWorkerCompleted += (o, ae) =>
+        {
+            IsBusy = false; 
+        };
+            
+        IsBusy = true;
+        worker.RunWorkerAsync();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Data-Virtualization_images/Data-Virtualization_img1.png)
+
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
+
+### LoadMore using ISupportIncrementalLoading
+
+You can fetch the data in some user action instead of scrolling using [IncrementalList.LoadItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadItems.html) method.
+
+In the below code, data fetched when you click the `Load Items` button.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext>
+
+<Grid x:Name="Root_Grid">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <syncfusion:SfDataGrid x:Name="dataGrid"                                                                                                                                                                                           
+                           AutoGenerateColumns="True"    
+                           ItemsSource="{Binding IncrementalItemsSource}"/>
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <Button x:Name="loadByButton" Content="Load Items" 
+                            Command="{Binding DataContext.LoadItems , ElementName=dataGrid}"/>
+        </StackPanel>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+public class ViewModel 
+{
+    NorthwindEntities northwindEntity;
+
+    private IncrementalList<Order> _incrementalItemsSource;
+    public IncrementalList<Order> IncrementalItemsSource
+    {
+        get { return _incrementalItemsSource; }
+        set { _incrementalItemsSource = value; }
+    }
+
+    private BaseCommand loadItems;
+    public BaseCommand LoadItems
+    {
+        get
+        {
+            if (loadItems == null)
+
+                loadItems = new BaseCommand(OnLoadItemsClicked, OnCanLoad);
+            return loadItems;
+        }
+    }
+
+    private static bool OnCanLoad(object obj)
+    {
+        return true;
+    }
+
+    private void OnLoadItemsClicked(object obj)
+    {            
+        LoadMoreItems(5, this.IncrementalItemsSource.Count);
+    }
 
 
+    public ViewModel()
+    {
+        string uri="http://services.odata.org/Northwind/Northwind.svc/";
+        _incrementalItemsSource = new IncrementalList<Order>(LoadMoreItems) { MaxItemCount = 50 }; 
+        northwindEntity = new NorthwindEntities(new Uri(uri));
+    }
 
-### Limitations of Incremental Loading
+    /// <summary>
+    /// Method to load items which assigned to the action of IncrementalList
+    /// </summary>
+    /// <param name="count"></param>
+    /// <param name="baseIndex"></param>
+    void LoadMoreItems(uint count, int baseIndex)
+    {                        
+        DataServiceQuery<Order> query = northwindEntity.Orders.Expand("Customer");
+        query = query.Skip<Order>(baseIndex).Take<Order>(50) as DataServiceQuery<Order>;
+        IAsyncResult ar = query.BeginExecute(null, null);
+        var items = query.EndExecute(ar);
+        var list = items.ToList();
+        IncrementalItemsSource.LoadItems(list);            
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-* Sorting, Filtering and Grouping are applied only for loaded data.
-* Summaries are calculated based on loaded data.
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_-_LoadMoreItems-1914949679.zip).
+
+## Paging
+
+SfDataGrid supports to load paged data source using [SfDataPager](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html). You can use the paging in SfDataGrid by go through the [Paging](http://115.249.201.211:9090/wpf/sfdatagrid/paging) section.

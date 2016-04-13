@@ -20,7 +20,7 @@ A bound column displays information from a bound data source, which is specified
 
 ## Unbound Column
 
-An unbound column does not obtain data from the ItemSource or from the RequestTreeItems event. Instead, you can provide data for unbound columns by creating expressions using the GridTreeUnboundColumn.Expression property, or by creating formatsusing the GridTreeUnboundColumn.Format property, or by handling the QueryUnboundColumnValue event.
+An unbound column does not obtain data from the ItemSource or from the RequestTreeItems event. Instead, you can provide data for unbound columns by creating expressions using the GridTreeUnboundColumn.Expression property, or by creating formats using the GridTreeUnboundColumn.Format property, or by handling the QueryUnboundColumnValue event.
 
 N> In Unbound columns, you can have the features that are available in the bound columns such as cell type, sorting, and customization.
 
@@ -61,7 +61,7 @@ Boolean</td></tr>
 In the GridTree control, you can populate the columns automatically by setting the AutoPopulateColumns property to True.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -85,7 +85,7 @@ When we set this property to true, the properties that are available in underlyi
 
 ### AutoGenerateColumnsInfo
 
-By setting the AutoGenerateColumnsInfo property to _true_, the GridTree control assigns the appropriate cell type for each column automatically. The following common cell types loadd for the corresponding data.
+By setting the AutoGenerateColumnsInfo property to _true_, the GridTree control assigns the appropriate cell type for each column automatically. The following common cell types loaded for the corresponding data.
 
 
 <table>
@@ -124,7 +124,7 @@ Hyperlink</td></tr>
 </table>
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -277,7 +277,7 @@ Property enables/disables the data validation tooltip.</td></tr>
 
 
 To know more about the GridStyleInfo and StyleInfo properties please refer the following link.
-<http://help.syncfusion.com/wpf/gridcontrol/appearance#cell-styles>
+<http://help.syncfusion.com/wpf/grid/appearance#cell-styles>
 
 
 ## Cell Types
@@ -300,7 +300,7 @@ The Static cell type allows you to only to display the values in the cells and n
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -348,7 +348,7 @@ N> The difference between the Static and TextBlock cell type is that the Static 
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -407,7 +407,7 @@ The TextBox cell type allows you to display the cell values in text boxes. Each 
 The following code snippet explains how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
@@ -463,7 +463,7 @@ The RichText cell types provide more advanced formatting features than the TextB
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -572,7 +572,7 @@ PlusMinus—contains a plus/minus symbol. The plus symbol appears when the node 
 
 PlusMinusLine—contains a plus/minus symbol with lines. When the plus symbol is visible then a line is drawn from the parent node to its child node and each child node has the line with its parent node.
 
-Themed—loads the gylph based on the theme applied for the GridTree control. The patch applied in the theme for the glyph loads as a glyph for the all nodes.
+Themed—loads the glyph based on the theme applied for the GridTree control. The patch applied in the theme for the glyph loads as a glyph for the all nodes.
 
 Triangle—loads the triangle symbol for each node that contains the child nodes. The collapsed node’s triangle symbol appears horizontal and the expanded node’s triangle turns vertical.
 
@@ -609,7 +609,7 @@ GridTree ExpanderCell with Image
 
 ### DataTemplate
 
-In the GridTree control, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an exensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTree control.
+In the GridTree control, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an extensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTree control.
 
 The following are the list of properties specific for this cell type.
 
@@ -661,12 +661,12 @@ Record.Data (data will be the underlying object bound).
 
 Example: Record.Data.Suppliers.CompanyName
 
-You can get any property value of the current record by passing the appropriate propertyname.
+You can get any property value of the current record by passing the appropriate property name.
 
 The following example code shows a simple DataTemplate.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -797,14 +797,14 @@ Arguments</th></tr>
 <td>
 DropDownSelectionChanged</td><td>
 This event is raised when the SelectedItem of the combo box is changed.</td><td>
-CellRowColumnIndex—contains the RowColumn index of the cell where the combo box’s value gets changed.SelectedItem—this is thecombo box item which is currently selected.</td></tr>
+CellRowColumnIndex—contains the RowColumn index of the cell where the combo box’s value gets changed.SelectedItem—this is the ComboBox item which is currently selected.</td></tr>
 </table>
 
 
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -936,7 +936,7 @@ We can change the drop-down list style by using the GridDropDownStyle property. 
 The following is an example of how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1046,7 +1046,7 @@ Applying true to this property allows you to enter null value.</td></tr>
 The following code shows how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1122,11 +1122,11 @@ CurrencyDecimalSeparator</td><td>
 String to use as decimal separator.</td></tr>
 <tr>
 <td>
-CurrencyNeagtivePattern</td><td>
+CurrencyNegativePattern</td><td>
 Format pattern for negative currency values.</td></tr>
 <tr>
 <td>
-CurrencyPostivePattern</td><td>
+CurrencyPositivePattern</td><td>
 Format pattern for positive currency values.</td></tr>
 <tr>
 <td>
@@ -1162,7 +1162,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code snippet explains how to define a CurrencyEdit column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1251,7 +1251,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code demonstrates how to define an IntegerEdit column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1350,7 +1350,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code sample demonstrates how to define a DoubleEdit column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1454,7 +1454,7 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 The following code sample demonstrates how to define a PercentEdit column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:GridTreeColumn MappingName="Hike">
@@ -1642,7 +1642,7 @@ Year Month</td><td>
 The following code sample demonstrates how to define a column with DateTime Edit cells.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1710,7 +1710,7 @@ Number of maximum char allowed to entered in the  cell.</td></tr>
 <tr>
 <td>
 MinLength</td><td>
-Numberof minimum char  allowed  to  entered in the cell.</td></tr>
+Number of minimum char  allowed  to  entered in the cell.</td></tr>
 <tr>
 <td>
 StringValidation</td><td>
@@ -1721,7 +1721,7 @@ When the cell value or mask is set to null then the cell is validated based on t
 The following code sample demonstrates how to define a MaskEdit column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1808,7 +1808,7 @@ Color to differentiate the negative value.</td></tr>
 The following sample demonstrates how to define a column with UpDownEdit cells.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1881,7 +1881,7 @@ Allows to set null value.</td></tr>
 <tr>
 <td>
 Format</td><td>
-Specifies the fformat to display the time.</td></tr>
+Specifies the format to display the time.</td></tr>
 <tr>
 <td>
 ShowArrowButtons</td><td>
@@ -1892,7 +1892,7 @@ Displays the arrow buttons to change the value by mouse.</td></tr>
 The following code sample demonstrates how to define a column with TimeSpanEdit cells.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1950,7 +1950,7 @@ Image</td><td>
 Sets the image path to display.</td></tr>
 <tr>
 <td>
-ImageContentAllignment</td><td>
+ImageContentAlignment</td><td>
 Sets the alignment of the image (Left or Right).</td></tr>
 <tr>
 <td>
@@ -1970,7 +1970,7 @@ Sets the margin of the image.</td></tr>
 The following code sample demonstrates how to define a column with Image cells.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2036,7 +2036,7 @@ ColumnIndex—contains the current mouse click hyperlink cell column index.RowIn
 The following code shows how to define such a column.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2110,7 +2110,7 @@ It contains the following arguments.ColumnIndex—contains the column index wher
 The following code snippet shows a simple demo of Button cell type.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2220,11 +2220,11 @@ Object</td></tr>
 <th>
 Event Name</th><th>
 Description</th><th>
-Arguements</th></tr>
+Arguments</th></tr>
 <tr>
 <td>
 QueryUnboundCellInfo</td><td>
-This event fires when the style of an unbound column is createpd. Using this event you can modify the styles of the unbound column.</td><td>
+This event fires when the style of an unbound column is created. Using this event you can modify the styles of the unbound column.</td><td>
 (RowColumnIndex Cell, GridTreeUnboundColumn Column, GridStyleInfo Style)</td></tr>
 <tr>
 <td>
@@ -2268,7 +2268,7 @@ Some example of Format is given below:
 
 The following code snippet shows a simple usage of Format.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2417,13 +2417,13 @@ Returns {{ '_true,_' | markdownify }} if both the arguments does not have the sa
 StartsWith</td><td>
 StartsWith</td><td>
 Returns {{ '_true,_' | markdownify }} if the value starts with the given string.</td><td>
-ProductName StartsWith Chai</td></tr>
+ProductName StartsWith </td></tr>
 <tr>
 <td>
 EndsWith</td><td>
 EndsWith</td><td>
 Returns {{ '_true,_' | markdownify }} if the value ends with the specified string.</td><td>
-PruductName EndsWith i</td></tr>
+ProductName EndsWith i</td></tr>
 <tr>
 <td>
 Contains</td><td>
@@ -2435,7 +2435,7 @@ ProductName Contains </td></tr>
 
 The following code snippet shows a simple way to use expressions.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

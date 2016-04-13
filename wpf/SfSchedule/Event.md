@@ -27,7 +27,7 @@ Action – gets the Editor action such as Add or Edit or Delete.
 
 SelectedResource – gets the list of Resources.
 
-Cancel- set this Boolean property to True to cancelling the event.
+Cancel- set this Boolean property to True to canceling the event.
 
 * AppointmentEditorClosed- occurs when the appointment editor is closed. The AppointmentEditorClosed event handler receives two arguments:
 * The sender argument contains the SfSchedule. This argument is of type object, but can be cast to the SfSchedule type.
@@ -61,7 +61,7 @@ SelectedResource – gets the list of Resources.
 
 Cancel- set this Boolean property to True to disable the context menu.
 
-* ContextMenuClosed- occurs when the Context Menu closed. The ContextMenuClosedevent handler receives two arguments:
+* ContextMenuClosed- occurs when the Context Menu closed. The ContextMenuClosedEvent handler receives two arguments:
 * The sender argument contains the SfSchedule. This argument is of type object, but can be cast to the SfSchedule type.
 * A ContextMenuClosedEventArgs is a class. 
 
@@ -73,7 +73,7 @@ Cancel- set this Boolean property to True to disable the context menu.
 
 
 
-* ScheduleClick- occurs when tapping the schedule. The ScheduleClickevent handler receives two arguments:
+* ScheduleClick- occurs when tapping the schedule. The ScheduleClickEvent handler receives two arguments:
 * The sender argument contains the SfSchedule. This argument is of type object, but can be cast to the SfSchedule type.
 * ScheduleClickEventArgs is a class. Via the ScheduleClickEventArgs you can access the following properties:
 

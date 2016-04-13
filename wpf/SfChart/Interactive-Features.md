@@ -66,17 +66,17 @@ VerticalOffset</td><td>
 This is an attached property that gets or sets the tooltip offset position in accordance with the VerticalAlignment property.</td></tr>
 </table> 
 
-N> : By default, the ToolTip is disabled. It must be enabled inorder to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
+N> : By default, the ToolTip is disabled. It must be enabled in order to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
 
 The following code example can be added to enable and customize the ToolTip feature.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
 <syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" Label="Company Details" ItemsSource="{Binding CompanyDetails}"
 
-ShowTooltip="True" syncfusion:ChartTooltip.EnableAnimation="True"            syncfusion:ChartTooltip.HorizontalAlignment="Left" syncfusion:ChartTooltip.VerticalAlignment="Bottom"
+ShowTooltip="True" syncfusion:ChartTooltip.EnableAnimation="True"  syncfusion:ChartTooltip.HorizontalAlignment="Left" syncfusion:ChartTooltip.VerticalAlignment="Bottom"
 
 syncfusion:ChartTooltip.TooltipMargin="3" />
 
@@ -113,7 +113,7 @@ Gets or sets the VerticalAlignment value that represents the alignment of vertic
 <tr>
 <td>
 HorizontalAxisLabelAlignment</td><td>
-Gets or sets the HorizontallAlignment value that represents the alignment of the horizontal axis label.</td></tr>
+Gets or sets the HorizontalAlignment value that represents the alignment of the horizontal axis label.</td></tr>
 <tr>
 <td>
 VerticalLineStyle</td><td>
@@ -129,7 +129,7 @@ Gets or sets the Style value that represents the style for the horizontal line.<
 
 ChartCrossHairBehavior implements the feature of tracking data points in a chart. It defines the values in the X and Y axes, when the cursor is moved along the chart. Adding crosshairs makes the SfChart more interactive. The following steps show you how to add CrossHairBehavior to the SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -145,7 +145,7 @@ ChartCrossHairBehavior implements the feature of tracking data points in a chart
 
 To display the movement of X and Y values in the axis set the ShowTrackBallInfo property as True.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -176,7 +176,7 @@ ChartTrackBallBehavior enables you to track a data point closer to the touch pos
 
 You can create an instance for ChartTrackBallBehavior and add it to the Behaviors collection. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -192,7 +192,7 @@ You can create an instance for ChartTrackBallBehavior and add it to the Behavior
 
 To view the movement of TrackBallBehavior in the Axis, set the ShowTrackBallInfo property as True.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -329,9 +329,9 @@ Occurs when zoom is reset on DoubleClick or Double Tap, which is used to reset t
 
 Zooming can be carried out in X, Y and XY axis that can be specified by the ZoomMode property. There are two types of zooming that can take place inside a chart area.
 
-Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming property to zoom in on the chart using mouse wheel.
+Zooming the Chart using Mouse - You must enable the EnableMouseWheelZooming property to zoom in on the chart using mouse wheel.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -345,7 +345,7 @@ Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming prope
 
 Also, there are options for selection zooming, when you want to zoom in on a particular portion inside the chart area, you can zoom by the mouse wheel movement.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -355,9 +355,9 @@ Also, there are options for selection zooming, when you want to zoom in on a par
 
 {% endhighlight %}
 
-Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property, you can zoom in on the chart area by touching the screen with your fingers.
+Zooming the Chart in Touch monitor - By enabling the EnablePinchZooming property, you can zoom in on the chart area by touching the screen with your fingers.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -377,9 +377,9 @@ Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property,
 
 		{% endhighlight %}
 
-Zooming relative to the cursor- By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
+Zooming relative to the cursor - By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -396,11 +396,11 @@ ZoomPosition defines the ranges of values that need to be displayed as a result 
 
 For the above scenario, when the ZoomPosition is 0.25 then the VisibleRange is from 25 to 75.
 
-Scrollbar position- The scrollbar is placed in percentage of ZoomPosition in the new range, that is, New Range Delta * ZoomPosition. Thus in this case, the scrollbar gets placed in 37.5 (25 + (50 * 0.25)) and the scrollbar width is set to 25 (since ZoomPosition is 0.25).
+Scrollbar position - The scrollbar is placed in percentage of ZoomPosition in the new range, that is, New Range Delta * ZoomPosition. Thus in this case, the scrollbar gets placed in 37.5 (25 + (50 * 0.25)) and the scrollbar width is set to 25 (since ZoomPosition is 0.25).
 
 The value of ZoomFactor and ZoomPosition must also fall within the value of 0 to 1. These can be set for both the Primary and Secondary Axes.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -426,7 +426,7 @@ The EnableAutoIntervalOnZooming property is used to define whether you need to k
 
 In some scenarios, you may be required to maintain the interval count as a constant, in order to avoid more gridlines. By disabling this property, you can achieve this requirement as follows.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -446,7 +446,7 @@ Here, Interval is defined as 2, to maintain this interval on zooming.
 
 You can view the zoomed data or series by panning the chart. This can be done by clicking and dragging the chart area, either horizontally or vertically. Also, the option to enable and disable the panning after zooming is also provided.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -496,7 +496,7 @@ Gets or sets the toolbar background.</td></tr>
 
 The following code example can be used to display the zooming tool bar in SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
 
@@ -552,7 +552,7 @@ SfChart supports selection that enables you to select a segment in a series or s
 
 You can use the following code example to add selection to the chart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
 
@@ -631,7 +631,7 @@ Gets or sets bool value that enable or disable the segment selection.</td></tr>
 
 This property is used to define the custom brush for the selected segment. You can use the following code example to set SegmentSelectionBrush to the series.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ColumnSeries Label="2010" ItemsSource="{Binding Demands}"
 
@@ -655,7 +655,7 @@ This feature enables you to select the segment programmatically.
 
 Use the following code example to set SelectedIndex in a SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart Name="chart" >
 
@@ -669,7 +669,7 @@ Use the following code example to set SelectedIndex in a SfChart.
 
 <chart:ColumnSeries Name="column" SelectedIndex="2"    ItemsSource="{Binding CurrencyDetails}" SegmentSelectionBrush="Green"     XBindingPath="CurrencyName" YBindingPath="CurrencyValue">
 
-. . .
+ . . .
 
 </chart:ColumnSeries>
 
@@ -710,7 +710,7 @@ Gets or sets the brush value that indicates the highlighting brush for series.</
 
 Use the following code example to set series selection in a SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart SeriesSelectedIndex="1">
 
@@ -875,7 +875,7 @@ This feature allows you to drag the data points along y-axis. The following seri
 
 The following code example is used to enable dragging for the ColumnSeries.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- Add the Chart control-->
 
@@ -938,7 +938,7 @@ This feature allows you to drag and drop, the whole series along the y-axis. The
 
 The following code example is used to enable LineSeries dragging.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!-- Add the Chart control-->
 
@@ -1028,7 +1028,7 @@ Gets or sets a template for the visible range label view in touch mode.</td></tr
 </table>
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid.Resources>
 
@@ -1072,9 +1072,9 @@ N> This property works only when you have enabled the selection for the series, 
 
 All the series having Selection support, support the Adornment property.
 
-The following example shows the HighlighOnSelection feature for adornment.
+The following example shows the HighlightOnSelection feature for adornment.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart Margin="10" Name="chart">
 

@@ -11,9 +11,6 @@ documentation: ug
 
 Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control. 
 
-### Use Case Scenarios
-
-Localization helps the user to create an application that targets several cultures.
 
 ![](Localization-Support_images/Localization-Support_img1.png)
 
@@ -162,11 +159,11 @@ OlapClient_CubeDimensionBrowser_HeaderText</td><td>
 MetaTree</td></tr>
 <tr>
 <td>
-OlapClient_CubeSeletor_HeaderText</td><td>
+OlapClient_CubeSelector_HeaderText</td><td>
 Cubes</td></tr>
 <tr>
 <td>
-OlapClient_CubeSeletor_ToolTip</td><td>
+OlapClient_CubeSelector_ToolTip</td><td>
 Cube Selector</td></tr>
 <tr>
 <td>
@@ -323,7 +320,7 @@ OlapChart_Dialog_BorderWidth</td><td>
 Width:</td></tr>
 <tr>
 <td>
-OlapChart_Dialog_CancleButton</td><td>
+OlapChart_Dialog_CancelButton</td><td>
 Cancel</td></tr>
 <tr>
 <td>
@@ -359,7 +356,7 @@ OlapChart_Dialog_LabelVisibility_Header</td><td>
 Label Visibility</td></tr>
 <tr>
 <td>
-OlapChart_Dialog_LegendCheckBoxVisiblity</td><td>
+OlapChart_Dialog_LegendCheckBoxVisibility</td><td>
 Show CheckBox</td></tr>
 <tr>
 <td>
@@ -383,7 +380,7 @@ OlapChart_Dialog_Point_Labels_Tab</td><td>
 Point Labels</td></tr>
 <tr>
 <td>
-OlapChart_Dialog_RectanglAsSymbol</td><td>
+OlapChart_Dialog_RectangleAsSymbol</td><td>
 Rectangle</td></tr>
 <tr>
 <td>
@@ -411,7 +408,7 @@ OlapChart_Dialog_XValueAsLabelContent</td><td>
 X Value</td></tr>
 <tr>
 <td>
-OlapChart_Dialog_Yaxis_Header</td><td>
+OlapChart_Dialog_YAxis_Header</td><td>
 Y Axis</td></tr>
 <tr>
 <td>

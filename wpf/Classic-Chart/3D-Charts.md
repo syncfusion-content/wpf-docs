@@ -15,7 +15,7 @@ documentation: ug
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart Name="chart1">
@@ -124,7 +124,7 @@ The following lines of code can be used to customize the side wall's look and fe
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:ChartArea View3DMode="True">
@@ -175,7 +175,7 @@ chart1.Areas[0].Chart3DSettings.BottomWallBackground = Brushes.AliceBlue;
 Chart 3D supports two types of camera projection views namely perspective and orthographic. Camera projection for the chart can be changed using the CameraProjection property of the Chart3D type, as follows.
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:ChartArea View3DMode="True">
 
@@ -258,7 +258,7 @@ To view samples:
 Adding 3D Manhattan Bar Chart to an Application 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
         <sync:Chart x:Name="Chart1" >
 
@@ -339,7 +339,7 @@ To view the Surface Chart demo from the dashboard:
 The z-axis (or depth axis) for 3-D charts can be enabled using EnableDepthAxis. The following code example illustrates this.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea Name="Area1" EnableDepthAxis="True" View3DMode="True"
 
@@ -358,7 +358,7 @@ this.Area1.EnableDepthAxis = true;
 The attributes of the z-axis (or depth axis) can be set using the DepthAxis property. The following code example illustrates this.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

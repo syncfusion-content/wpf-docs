@@ -38,7 +38,7 @@ Syncfusion.Data.WPF</td><td>
 Covers basic processing on data like sorting, grouping, and filtering.</td></tr>
 <tr>
 <td>
-Syncfudion.Shared.WPF</td><td>
+Syncfusion.Shared.WPF</td><td>
 Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
 </table>
 
@@ -65,7 +65,7 @@ The following screenshot describes the elements of the DataPager control.
 The following steps help you to use the SfDataPager in an application:
 
 1. Create a new WPF application
-2. Open a VisualStudio toolbox. Navigate to SyncfusionControls and drag the SfDataPager to the designew window.
+2. Open a VisualStudio toolbox. Navigate to SyncfusionControls and drag the SfDataPager to the design window.
 
 
 
@@ -81,7 +81,7 @@ The following steps help you to use the SfDataPager in an application:
 
 4.You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
-   {%highlight xml%}
+   {%highlight xaml%}
 
 
 

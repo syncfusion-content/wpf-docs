@@ -9,39 +9,57 @@ documentation: ug
 
 # Trendlines
 
-Trendlines are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. This analysis is also called as regression analysis. Trendlines are commonly used to judge entry and exit investment timing when trading securities. 
+Trendlines are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
 
-The following code examples illustrate how to add Trendlines to the chart.
+The following code examples illustrate how to add trend lines to the chart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
+<syncfusion:ScatterSeries Interior="#4A4A4A" XBindingPath="Year" Label="Series"
 
+ItemsSource="{Binding List}" YBindingPath="India"
 
-<syncfusion:LineSeries.Trendlines >
+ScatterHeight="15" ScatterWidth="15">
 
-<syncfusion:Trendline  IsTrendlineVisible="True"/>
+<syncfusion:ScatterSeries.Trendlines>
 
-</syncfusion:LineSeries.Trendlines>
+<syncfusion:Trendline Label="Trend" />
+
+</syncfusion:ScatterSeries.Trendlines>
+
+</syncfusion:ScatterSeries>
 
 {% endhighlight %}
 
-You can set the Polynomial order for the line. Polynomial order calculates order based equation and the order value falls between 2 and 6.
-
-{% highlight xml %}
+![](Trendlines_images/trendline_1.png)
 
 
+You can get the [`Slope`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Slope.html#) and [`Intercept`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Intercept.html#) of the drawn trend line. 
 
-<syncfusion:LineSeries.Trendlines >
+The visibility of the trend line is defined using [`IsTrendlineVisible`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~IsTrendlineVisible.html#) property as in the following code examples.
 
-    <syncfusion:Trendline IsTrendlineVisible="True"  PolynomialOrder="2" />
+{% highlight xaml %}
 
-</syncfusion:LineSeries.Trendlines>
+<syncfusion:ScatterSeries Interior="#4A4A4A" XBindingPath="Year" Label="Series"
+
+ItemsSource="{Binding List}" YBindingPath="India"
+
+ScatterHeight="15" ScatterWidth="15">
+
+<syncfusion:ScatterSeries.Trendlines>
+
+<syncfusion:Trendline Label="Trend" IsTrendlineVisible="False"/>
+
+</syncfusion:ScatterSeries.Trendlines>
+
+</syncfusion:ScatterSeries>
+
 {% endhighlight %}
-The lines of Trendlines can be customized using properties such as Stroke, StrokeThickness, and StrokeDashedArray.Stroke is used to add color to the line stroke, StrokeThickness is used to specify line thickness and StrokeDashedArray is used to draw dotted lines.
 
-![C:/Users/rachel/Desktop/wpf/sshot-85.png](Trendlines_images/Trendlines_img1.png)
+![](Trendlines_images/trendline_2.png)
 
 
+N> Here we have enabled the [`CheckBoxVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html#) for the Legend. The CheckBox state indicates that trendline is not visible. You can enable trendline dynamically using this checkbox.
 
 ## Types of Trendlines
 
@@ -51,89 +69,286 @@ SfChart supports the following type of Trendlines.
 * Exponential
 * Power
 * Logarithmic
-* Polynomial 
-* Linear
+* Polynomial
 
+### Linear
 
+This shows when something is increasing or decreasing at a steady rate. This is the default trend line to be drawn for the chart.
 
-### Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
+The linear trend line will be calculated using the below formula:
 
-### Exponential
+yValue = Intercept + Slope * xValue ( where xValue is Xdata).
 
-Exponential Trendline is a curved line that is used when data values rise or fall at constantly increasing rates.
+The following is the code example of this trend line.
 
-### Power
+{% highlight xaml %}
 
-Power Trendline is a curved line that is used with sets of data comparing measurements that increase at a specific rate, for example, the acceleration of race car at one second intervals.
+<syncfusion:FatLineSeries XBindingPath="Date"
 
-### Logarithmic
+YBindingPath="Value" 
 
-Logarithmic Trendline is a best-fit curved line that is used when the rate of change in the data increases or decreases quickly and then levels out.
+Interior="#7F7F7F"
 
-### Polynomial
+ItemsSource="{Binding StockPriceDetails}">
 
-Polynomial Trendline is a curved line that is used when data fluctuates.
+<syncfusion:FastLineSeries.Trendlines>
 
-{% highlight xml %}
+<syncfusion:Trendline Stroke="Black" Type="Linear"/>
 
+</syncfusion:FastLineSeries.Trendlines>
 
-
-<syncfusion:LineSeries.Trendlines >
-
-<syncfusion:Trendline IsTrendlineVisible="True" Type="Linear"/>
-
-</syncfusion:LineSeries.Trendlines>
-
+</syncfusion:FastLineSeries>
 
 {% endhighlight %}
 
+![](Trendlines_images/trendline_3.png)
 
-![C:/Users/rachel/Desktop/wpf/sshot-86.png](Trendlines_images/Trendlines_img2.png)
+
+### Exponential
+
+This trend line is used when there is a constant increasing or decreasing in values. This is a curved line.
+
+The linear trend line will be calculated using the below formula:
+
+(Intercept*Math.Exp(Slope*xValue)) (where xValue is Xdata).
+
+The following code example defines the exponential trendline.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date"
+
+YBindingPath="Value" 
+
+Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black" Type="Exponential"/>
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_4.png)
 
 
+N> This is not recommended for the data values having zero and negative value.
+
+### Power
+
+This trend line is used for comparing multiple sets of data that increase at specific rate. 
+
+This will be calculated using the following formula:
+
+(Intercept*Math.Pow(xValue,Slope)) (Where xValue is Xdata).
+
+The following code example explains how to define the power trendline.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date"
+
+YBindingPath="Value" 
+
+Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black" Type="Power"/>
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_5.png)
+
+### Logarithmic
+
+This is used when there is a quick change in the data, either increasing or decreasing and then levels out. 
+
+The will be calculated using the below formula:
+
+Intercept+Slope * Math.Log(xValue) (where xValue is Xdata).
+
+The following code example illustrates the use of logarithmic trend line.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date"
+
+YBindingPath="Value" 
+
+Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black" Type="Logarithmic"/>
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_6.png)
+
+### Polynomial
+
+The polynomial trendline is a curved line that is used when there are more data fluctuations. 
+
+The polynomial trendline is calculated using the below formula:
+
+PolynomialSlopes.Select( ( value,index)=>value*Math.Pow (xValue,(double)index)).Sum() (where xValue is Xdata)
+
+To define the polynomial trendline, you can use the following code example.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date"
+
+YBindingPath="Value" 
+
+Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black" Type="Polynomial"/>
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_7.png)
+
+#### Polynomial Order
+
+You can set the Polynomial order for this trendline. Polynomial order calculates order based on the equation and this value should fall between 2 and 6.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date"
+
+YBindingPath="Value" 
+
+Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black" Type="Polynomial"
+
+PolynomialOrder="5"/>
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_8.png)
 
 ## Forecasting
 
-Forecasting is the prediction of future situations. Trendlines are also used to display trends for the future and the past. Forecasting can be classified into two types as follows.
+Chart supports forecasting for the trendline, which is used to display trends about the future and the past. 
+
+The following two types of forecasting available in SfChart:
 
 * Forward Forecasting
 * Backward Forecasting
 
-These can be enabled by setting the value for the Forward Forecasting and Backward Forecasting properties. The value set for Forward Forecasting is used to determine the distance of moving towards the future and the value set for Backward Forecasting is used to determine the distance of moving backwards.
+### Forward Forecast
 
-The following code example illustrates how to enable Forecasting in Trendlines.
+For determining the future trends (in forward direction). The following code example explains the how to set the value for forward forecast.
 
-{% highlight xml %}
+{% highlight xaml %}
 
+<syncfusion:FastLineSeries XBindingPath="Date" YBindingPath="Value" 
 
+Label="Stock Price"   Interior="#7F7F7F"
 
-<syncfusion:LineSeries.Trendlines >
+ItemsSource="{Binding StockPriceDetails}">
 
-<syncfusion:Trendline ForwardForecast="5" />
+<syncfusion:FastLineSeries.Trendlines>
 
-</syncfusion:LineSeries.Trendlines>
+<syncfusion:Trendline Stroke="Black"
 
-{% endhighlight %}
+Type="Polynomial" PolynomialOrder="3" ForwardForecast="5" />
 
+</syncfusion:FastLineSeries.Trendlines>
 
-
-![C:/Users/rachel/Desktop/wpf/sshot-87.png](Trendlines_images/Trendlines_img3.png)
-
-
-
-{% highlight xml %}
-
-
-
-<syncfusion:LineSeries.Trendlines >
-
-<syncfusion:Trendline BackwardForecast="10" />
-
-</syncfusion:LineSeries.Trendlines>
+</syncfusion:FastLineSeries>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-88.png](Trendlines_images/Trendlines_img4.png)
+![](Trendlines_images/trendline_9.png)
 
+### Backward Forecast
+
+For determining the past trends (in backward direction). The following code example explains the how to set the value for forward forecast.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date" YBindingPath="Value" 
+
+Label="Stock Price"   Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black"
+
+Type="Polynomial" PolynomialOrder="3"  BackwardForecast="5"  />
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_10.png)
+
+
+## Customization 
+
+You can customize the trendline [`Stroke`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Stroke.html#), [`StrokeThickness`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeDashArray.html#) and [`StrokeDashArray`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeThickness.html#) as in below code example.
+
+{% highlight xaml %}
+
+<syncfusion:FastLineSeries XBindingPath="Date" YBindingPath="Value" 
+
+Label="Stock Price"   Interior="#7F7F7F"
+
+ItemsSource="{Binding StockPriceDetails}">
+
+<syncfusion:FastLineSeries.Trendlines>
+
+<syncfusion:Trendline Stroke="Black" Type="Linear"  
+
+StrokeDashArray="4,4" StrokeThickness="2" />
+
+</syncfusion:FastLineSeries.Trendlines>
+
+</syncfusion:FastLineSeries>
+
+{% endhighlight %}
+
+![](Trendlines_images/trendline_11.png)
 
 

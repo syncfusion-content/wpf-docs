@@ -46,7 +46,7 @@ Data Type</th></tr>
 <tr>
 <td>
 CurrentDateLine </td><td>
-Get the user-defined line for the DateTimeindicator.</td><td>
+Get the user-defined line for the DateTime indicator.</td><td>
 Dependency Property</td><td>
 Line</td></tr>
 <tr>

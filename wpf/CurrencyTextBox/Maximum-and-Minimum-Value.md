@@ -15,7 +15,7 @@ Minimum allowed value for the CurrencyTextBox. If the new MinValue property valu
 
 ## MaxValue
 
-Maximum allowed value for the CurrencyTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the Maxvalue.
+Maximum allowed value for the CurrencyTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the MaxValue.
 
 ## MinValidation
 
@@ -49,7 +49,7 @@ N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  MinValue="-999"

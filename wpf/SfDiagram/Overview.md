@@ -1,71 +1,27 @@
 ---
 layout: post
-title: Overview | SfDiagram | wpf | Syncfusion
-description: overview
+title: Explore the features of the Diagram control.
+description: Explore the features of the Diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Overview
+#Overview
 
-Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large Diagram and also to navigate (pan or zoom) to a particular position of the page.
+**Essential Diagram WPF** creates rich Visio like applications. Its framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 
-When you work on a very large Diagram, you may not know the part where you are actually working or navigation from one part to another might be difficult. To navigation, you can zoom out entire Diagram and find where you are. This solution is not suitable when you need some frequent navigation.
+![](Overview_images/Overview_img1.jpeg)
 
-Overview control solves this problem by displaying a preview (overall view) of the entire Diagram. A rectangle indicates viewport of the Diagram. Navigation becomes easy by dragging this rectangle.
+The list of list features of Diagram control in WinRT is as follows.
 
-## Supported platform: WinRT 8.1, Universal
-
-### Use Case Scenarios
-
-You can view the entire content of a Diagram in a preview window. This helps you to navigate to a particular position of the page.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-Constraint</td><td>
-Gets or sets the OverviewConstraints type.</td><td>
-Dependency Property</td><td>
-enum<br>OverviewContraints.None<br>OverviewContraints.Pan<br>OverviewContraints.TapFocus<br>OverviewContraints.DrawFocus<br>OverviewContraints.Zoom</td></tr>
-<tr>
-<td>
-FocusBrush</td><td>
-Specifies the color of the viewport area in the preview.</td><td>
-Dependency Property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-UnFocusBrush</td><td>
-Specifies the background of the extended area in the preview.</td><td>
-Dependency Property</td><td>
-Brush</td></tr>
-</table>
-
-
-### Adding Overview Control to an Application 
-
-The following code example explains how to add Overview to an Application
-
-{% highlight xaml %}
-
-<!--Overview-->
-
-<overview:Overview Source="{Binding ElementName=diagramControl}"   Height="300" Margin="0,25,0,0"></overview:Overview>
-
-{% endhighlight %}
-
-![](Overview_images/Overview_img1.png)
-
-Refer to the Overview Sample from the following link.
-
-#### Sample Link:
-
-Navigation->WPF->Diagram->Overview
+* **Node, Connector, Group, Port:** Element used to compose diagram.
+* **Clipboard Commands:** Performs cut, copy and paste operation.
+* **Undo/Redo:** Performs correction in recent change.
+* **Stencil:** It holds a list of symbols that is dropped over diagram.
+* **Serialization:** Save current state of diagram, and load them back when needed.
+* **Snapping:** Snap the diagram elements towards the nearest element.
+* **Gridlines:** Visual horizontal/vertical lines that helps to align elements on diagram.
+* **Interaction:** Zoom, pan, multiple selections, snapping.
+* **Layouts:** Arranges Nodes in a tree like structure based on relationship on Nodes.
 

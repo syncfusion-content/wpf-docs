@@ -9,12 +9,12 @@ documentation: ug
 
 # MapPopup
 
-MapPopup is a hanging window, displayed when the shape is tapped. It shows additional information from the object bounded with the shape. By default, it takes the property of the bounded object that is referred in the ShapeValuePathand displays its content when the corresponding shape is tapped.
+MapPopup is a hanging window, displayed when the shape is tapped. It shows additional information from the object bounded with the shape. By default, it takes the property of the bounded object that is referred in the ShapeValuePath and displays its content when the corresponding shape is tapped.
 
 MapPopup is displayed only when “MapPopupVisibility” set to true in the shape file layer.
 
 It also customizes the MapPopup template. “MapPopupCustomTemplate” is a DataTemplate type API that is used to expose the custom template for the MapPopup.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

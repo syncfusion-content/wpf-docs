@@ -1,55 +1,182 @@
 ---
 layout: post
-title: Sorting| SfChart | Wpf | Syncfusion
-description: sorting 
+title: Sorting support in SfChart.
+description: Sorting support in SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Sorting 
+# Sorting
 
-Chart data can either be sorted or unsorted. You can turn on the Sorting feature when you want the data to be sorted, in ChartSeries by enabling the IsSortData property. Sorting in a series can be performed in different ways by specifying a sorting axis using the SortBy property and the SortDirection property.
+Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
 
-The following code example explains how to perform the Sorting operation in Chart.
+### Enable Sorting
+Ths [`IsSortData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSortData.html) property used to enable the sorting in series.
+
+### Changing sorting direction
+
+The [`SortDirection`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SortDirection.html) property defines the direction of sorting either in Ascending or Descending based on x or y value.
+
+### Changing sorting axis
+
+This [`SortBy`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SortBy.html) property decides whether sorting should be done based on x or y values.
+
+
+The following example illustrates a simple chart (without apply sorting):
+
+![](sorting_chart_images/sorting_1.png)
+
+
+## Sorting for category(non-linear) axis
+
+**Sorting x axis in ascending order**:
+
+{% highlight xml %}
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
+	
+	                     SortDirection="Ascending"
+
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
+
+{% endhighlight %}
+
+![](sorting_chart_images/sorting_2.png)
+
+
+**Sorting x axis in descending order**:
 
 {% highlight xml %}
 
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
+	 
+	                     SortDirection="Descending"
 
-<syncfusion:LineSeries Label="Series1" IsSortData="True" SortBy="X"                 
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
 
-SortDirection="Descending"  
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
-ItemsSource="{Binding CompanyDetails}" 
+{% endhighlight %}
 
-XBindingPath="CompanyName"        YBindingPath="CompanyTurnOver"/>
+![](sorting_chart_images/sorting_3.png)
 
-</syncfusion:SfChart>
+
+**Sorting y axis in ascending order**:
+
+{% highlight xml %}
+
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
+	                   
+					     SortDirection="Ascending"
+
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 
 {% endhighlight %}
 
-
-![C:/Users/rachel/Desktop/wpf/sshot-64.png](Sorting_images/Sorting_img1.png)
-
+![](sorting_chart_images/sorting_4.png)
 
 
-The following code example and screenshot demonstrate Sorting in Ascending order.
+**Sorting y axis in descending order**:
 
 {% highlight xml %}
 
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  
+	
+	                     SortDirection="Descending"
+
+                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+
+                         XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 
-<syncfusion:LineSeries Label="Series1" IsSortData="True" SortBy="X"                 
-
-SortDirection="Ascending" ItemsSource="{Binding CompanyDetails}" 
-
-XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"/>
-
-</syncfusion:SfChart>
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-65.png](Sorting_images/Sorting_img2.png)
+![](sorting_chart_images/sorting_5.png)
 
+N> This feature is primarily applicable for indexed (non-linear) axis like CategoryAxis. For linear axis like NumericalAxis, only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
+
+
+## Sorting for linear axis
+
+As mentioned above, the sorting for the linear axis is different from CategoryAxis. Here the rendering order of the data point (x or y) will be sorted.
+
+This will be useful especially when we have one or more values added in same data point. Also this rendering order will be captured by applying Palette to each point.
+
+The following example illustrates a simple chart having AutumnBrights palette (without apply sorting):
+
+![](sorting_chart_images/linearaxis_nosort.png)
+
+**Sorting x axis in ascending order**
+
+{% highlight xml %}
+
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X" Palette="AutumnBrights"
+
+                         SortDirection="Ascending"
+
+                         ItemsSource="{Binding Demands}" 
+
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
+
+{% endhighlight %}
+
+![](sorting_chart_images/linearaxis_sort1.png)
+
+**Sorting x axis in descending order**
+
+{% highlight xml %}
+
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X" 
+	
+	                     Palette="AutumnBrights"
+
+                         SortDirection="Descending"
+
+                         ItemsSource="{Binding Demands}" 
+
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
+
+{% endhighlight %}
+
+![](sorting_chart_images/linearaxis_sort2.png)
+
+**Sorting y axis in ascending order**
+
+{% highlight xml %}
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
+	
+	                     Palette="AutumnBrights"
+
+                         SortDirection="Ascending"
+
+                         ItemsSource="{Binding Demands}" 
+
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
+
+{% endhighlight %}
+
+![](sorting_chart_images/linearaxis_sort3.png)
+
+**Sorting y axis in descending order**
+
+{% highlight xml %}
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
+	
+	                     Palette="AutumnBrights"
+
+                         SortDirection="Descending"
+
+                         ItemsSource="{Binding Demands}" 
+
+                         XBindingPath="Position"  YBindingPath="Year2011"/>
+
+{% endhighlight %}
+
+![](sorting_chart_images/linearaxis_sort4.png)
 
 

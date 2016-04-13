@@ -9,7 +9,16 @@ documentation: ug
 
 # Overview
 
-Report Writer is a class library that enables the user to render reports defined in Microsoft’s RDL format (2008 or 2008 R2) as PDF, Word, or Excel documents. Using Report Writer, you can convert a report that will have tabular, graphical or free-form reports, which make use of relational, multi-dimensional, XML, and object data sources.
+Report Writer is a class library that enables the user to render reports defined in Microsoft’s RDL format (2008 or 2008 R2) as PDF, Word, Excel or HTML documents. 
 
-The user can export or render reports that contain tabular, graphical, or free-form reports as PDF, Word, or Excel documents.
+The important features of WPF Report Writer are listed as follows:
+
+* RDL Specification - Supports RDL Specification for the SQL Server 2008 and RDL Specification for the SQL Server 2008 R2 only. List of available report definition formats: [msdn.microsoft.com/library/dd297486(SQL.100)](https://msdn.microsoft.com/library/dd297486(SQL.100).aspx).
+* Data sources - You can use advanced database servers DataSources in Report Writer (SQL and Oracle).
+* Charts - Show all basic types of Charts that are available in Microsoft RDL reports.
+* Tablix - Shows the summaries and simple tables.
+* Gauge - Shows measurement values by using expression values.
+* Textbox - Shows textbox data with expression support.
+* Export - Export report as PDF, Word, Excel and HTML.
+* Report Parameter - Views the report based on the report parameter value.
 

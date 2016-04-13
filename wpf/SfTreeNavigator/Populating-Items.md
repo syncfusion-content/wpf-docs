@@ -141,7 +141,7 @@ public class TreeViewModel
  Bind the Models collection to the ItemsSource property of the Tree Navigator control as follows. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 
@@ -172,7 +172,7 @@ public class TreeViewModel
 ItemTemplate property of the Tree Navigator can be used to customize the display of business objects. 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 
@@ -190,7 +190,7 @@ ItemTemplate property of the Tree Navigator can be used to customize the display
 
             <primitives:HierarchicalDataTemplate ItemsSource="{Binding Models}">
 
-                <DataTemplate>
+              
 
                     <StackPanel Orientation="Horizontal">
 
@@ -202,7 +202,7 @@ VerticalAlignment="Center" Margin="18 0 0 0"/>
 
                     </StackPanel>
 
-                </DataTemplate>
+               
 
                 </primitives:HierarchicalDataTemplate>
 
@@ -224,7 +224,7 @@ This will populate the Tree Navigator as follows.
 
 
 
-N> HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace
+N> HierarchicalDataTemplate available in Syncfusion.SfShared.WPF assembly under the Syncfusion.Windows.Primitives namespace
 
 
 

@@ -19,7 +19,7 @@ Here is how Wikipedia defines [BI](http://en.wikipedia.org/wiki/Business_intelli
 
 It is hard to over emphasize the importance of Business Intelligence (BI) in today's world. It is impossible to make strategic business decisions without analyzing the past business performance. Businesses are increasingly investing heavily in tools and services that let decision makers visually analyze data in myriad ways. 
 
-Several products and solutions have emerged to cater to the Business Intelligence market; Lessons have been learnt, and currently Online Analytical Processing (OLAP) is the de facto standard for persisting and accessing BI data. Applications built using OLAP include sales reports, executive reports, forecasting, and so on.
+Several products and solutions have emerged to cater to the Business Intelligence market; Lessons have been learn, and currently Online Analytical Processing (OLAP) is the de facto standard for persisting and accessing BI data. Applications built using OLAP include sales reports, executive reports, forecasting, and so on.
 
 ## What's new in BI?
 

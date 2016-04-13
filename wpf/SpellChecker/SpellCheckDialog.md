@@ -179,7 +179,7 @@ spellCheck.SpellCheckForEditor(spellEditor);
 
 To access the sample link:
 
-1. Open the Synfusion Dashboard.
+1. Open the Syncfusion Dashboard.
 2. Select User Interface.
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to Tools -> SpellChecker -> SpellCheckerDemo.

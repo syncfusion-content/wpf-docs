@@ -13,7 +13,7 @@ SfDateTimeRangeNavigator provides interactive features such as zooming, panning.
 
 The ZoomPosition and ZoomFactor of the chart axis can be bind with the SfDateTimeRangeNavigator.
 
-### Property
+## Property
 
 <table>
 <tr>
@@ -52,10 +52,14 @@ Used to get the Start value of the Selected range of the Navigator</td></tr>
 <td>
 ViewRangeEnd</td><td>
 Used to get the End value of the Selected range of the Navigator</td></tr>
+<tr>
+<td>
+EnableDeferredUpdate</td><td>
+Used to enable deferred scrolling and panning.</td></tr>
 </table>
 
 
-### Event
+## Event
 
 <table>
 <tr>
@@ -117,3 +121,88 @@ The following is the screenshot of SfDateTimeRangeNavigator after zooming into w
 
 SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data
 {:.caption}
+
+## ThumbStyle Customization
+
+SfDateTimeRangeNavigator provides many properties to customize the elements such as Upper, Lower bar and Left, Right thumb, etc.,
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+LeftThumbStyle</td><td>
+Used to define the style for left thumb of the Navigator</td></tr>
+<tr>
+<td>
+RightThumbStyle</td><td>
+Used to define the style for right thumb of the Navigator</td></tr>
+<tr>
+<td>
+LineStyle</td><td>
+Used to define the style for line in the left or right thumb</td></tr>
+<tr>
+<td>
+SymbolTemplate</td><td>
+Used to define the style for symbol placed in the left or right thumb</td></tr>
+</table>
+
+{% highlight xaml %}
+
+<chart:SfDateTimeRangeNavigator.RightThumbStyle>
+
+    <chart:ThumbStyle>
+    
+        <chart:ThumbStyle.SymbolTemplate>
+        
+            <DataTemplate>
+            
+                <Grid>
+                
+                    <Ellipse Height="40" Width="40"  Fill="Green" Stroke="Black"
+                         VerticalAlignment="Center" StrokeThickness="2">
+                    </Ellipse>
+                    
+                    <Ellipse Height="7" Width="7" Fill="White" VerticalAlignment="Center"/>
+                </Grid>
+                
+            </DataTemplate>
+            
+        </chart:ThumbStyle.SymbolTemplate>
+        
+    </chart:ThumbStyle>
+    
+</chart:SfDateTimeRangeNavigator.RightThumbStyle>
+
+{% endhighlight  %}
+
+The following is the screenshot of SfDateTimeRangeNavigator with customized Right thumb.
+
+![](Interactivity_images/Interactivity_img3.png)
+
+## Higher and Lower bar customization
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+HigherBarGridLineStyle</td><td>
+Used to define the style for upper labels bar gridlines.</td></tr>
+<tr>
+<td>
+LowerBarGridLineStyle</td><td>
+Used to define the style for lower labels bar gridlines.</td></tr>
+<tr>
+<td>
+HigherBarTickLineStyle</td><td>
+Used to define the style for upper labels bar ticklines.</td></tr>
+<tr>
+<td>
+LowerBarTickLineStyle</td><td>
+Used to define the style for lower labels bar ticklines.</td></tr>
+</table>

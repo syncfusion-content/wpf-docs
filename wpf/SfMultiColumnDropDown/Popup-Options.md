@@ -12,7 +12,7 @@ documentation: ug
 SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearance by setting Popup Background, BorderBrush and BorderThickness etc.
 
 The following code example illustrates how to customize the DropDownPopup.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -58,7 +58,7 @@ The following screenshot displays the output for above code example.
 
 SfMultiColumnDropDownControl allows you to resize the DropDownPopup. You can resize the DropDownPopup by using Resize Thumb that shows Right bottom of the DropDownPopup. 
 
-SfMuliColumnDropDownControl exposes the following properties to Resize and Customize the DropDownPopup
+SfMult  iColumnDropDownControl exposes the following properties to Resize and Customize the DropDownPopup
 
 Property Table
 
@@ -170,7 +170,7 @@ This event is raised when the Popup is closed.The PopupClosed event handler rece
 <tr>
 <td>
 PopupClosing</td><td>
-This event is raised before the Popup is closed; the event can be cancelled.The PopupClosing event handler receives two arguments, namely Sender and PopupClosingEventArgs, as objects.The PopupClosingEventArgs object uses the following property to cancel an event:Cancel: When set to true, the event is cancelled and the Popup is not closed.</td></tr>
+This event is raised before the Popup is closed; the event can be canceled.The PopupClosing event handler receives two arguments, namely Sender and PopupClosingEventArgs, as objects.The PopupClosingEventArgs object uses the following property to cancel an event:Cancel: When set to true, the event is canceled and the Popup is not closed.</td></tr>
 <tr>
 <td>
 PopupOpened</td><td>
@@ -178,7 +178,7 @@ This event is raised when the Popup is opened.The PopupOpened event handler rece
 <tr>
 <td>
 PopupOpening</td><td>
-This event is raised before the Popup is opened; the event can be cancelled.The PopupOpening event handler receives two arguments, namely Sender and PopupOpeningEventArgs{{ '_,_'| markdownify }} as objects.The PopupOpeningEventArgs object uses the following property to cancel an event:Cancel: When set to true, the event is cancelled and the Popup is not opened.</td></tr>
+This event is raised before the Popup is opened; the event can be canceled.The PopupOpening event handler receives two arguments, namely Sender and PopupOpeningEventArgs{{ '_,_'| markdownify }} as objects.The PopupOpeningEventArgs object uses the following property to cancel an event:Cancel: When set to true, the event is canceled and the Popup is not opened.</td></tr>
 </table>
 
 ### How To

@@ -69,7 +69,7 @@ Z and y values above are x-y coordinates of the plotIf {{ '_true_' | markdownify
 Here is a code example that adds a few annotations to a chart.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:ChartSeries Name="series1"  Label="Series1" Type="Area" Interior="LightSkyBlue">
@@ -169,7 +169,7 @@ Y offset from the top-left of the control used to determine the y-location of th
 Here is some code example that shows how to add annotations at Chart coordinates and how to customize their look and feel.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:Chart Name="chart1">
@@ -266,7 +266,7 @@ The following code example illustrates the creation of predefined annotation sha
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart.AnnotationsLabel>
 

@@ -35,5 +35,5 @@ dockingmanager.IsTabPreviewEnabled = false;
 
 
 
-The above code disables the TabGroup preview, which is created by dragging and dropping the tabitems.
+The above code disables the TabGroup preview, which is created by dragging and dropping the tab items.
 

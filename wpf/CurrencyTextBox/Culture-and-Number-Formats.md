@@ -15,7 +15,7 @@ CurrencyTextBox provides globalization support through the Culture property.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
@@ -38,7 +38,7 @@ currencyTextBox.Culture = new CultureInfo("en-US");
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"Culture="fr-FR" Value="1234567"/>
@@ -67,7 +67,7 @@ You can customize the Number Format either by using the NumberFormat property or
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  Value="1234567">   
@@ -93,7 +93,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator =
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567"                           
@@ -123,7 +123,7 @@ currencyTextBox.CurrencySymbol = "$";
 
 Gets or sets the format pattern for the positive currency values. In the table displayed below “$” denotes the Currency symbol and n denotes the number.
 
- _CurrencyPositivePattern table_
+CurrencyPositivePattern table
 
 <table>
 <tr>
@@ -148,7 +148,7 @@ $ n</td></tr>
 n $</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -168,7 +168,7 @@ n $</td></tr>
 
 Gets or sets the format pattern for the negative currency values. In the table displayed below “$” denotes the Currency symbol and n denotes the number.
 
-_CurrencyNegativePattern table_
+CurrencyNegativePattern table
 
 <table>
 <tr>
@@ -241,7 +241,7 @@ n- $</td></tr>
 (n $)</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

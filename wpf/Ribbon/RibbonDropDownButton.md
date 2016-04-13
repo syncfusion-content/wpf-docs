@@ -90,7 +90,7 @@ _dropDownButton.Items.Add(_dropDownMenuItem2)
 
 ## Add DropDownMenuItem to DropDownMenuGroup
 
-In DropDownButton, similar items can be grouped together and seperated from other menu items using `DropDownMenuGroup`.
+In DropDownButton, similar items can be grouped together and separated from other menu items using `DropDownMenuGroup`.
 
 
 {% tabs %}

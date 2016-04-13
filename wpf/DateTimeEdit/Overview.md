@@ -38,7 +38,7 @@ DateTimeEdit exposes the following members:
 
 #### Properties
 
-_DateTimeEdit Members table_
+DateTimeEdit Members table
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ NoneDateText</td><td>
 DependencyProperty</td><td>
 String</td><td>
 Gets or sets the NoneDateTextProperty.</td><td>
-“No date is selected”</td><td>
+'No date is selected'</td><td>
 NoneDateText</td></tr>
 <tr>
 <td>
@@ -229,7 +229,7 @@ MaxDateTime</td></tr>
 
 #### Events
 
-_DateTimeEdit members Events table_
+DateTimeEdit members Events table
 
 <table>
 <tr>

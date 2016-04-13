@@ -86,7 +86,7 @@ In the following example, the OLAP Client is loaded with the default report by p
 
    ~~~
 
-6. Now, navigate to the code behind file. In order to bind the OLAP Client control with the Cube data, the OlapDataManager is instantiated first through any one of the methods in the page load event. The OlapDataManager contains the connection details, current report, cube name, cube schema, and pivotengine for rendering the client control. Then it is assigned to the OLAP Client’s OlapDataManager and databinding is done. Initialy, the OLAP Client is loaded with its default report by picking the default Measure and default Dimension.
+6. Now, navigate to the code behind file. In order to bind the OLAP Client control with the Cube data, the OlapDataManager is instantiated first through any one of the methods in the page load event. The OlapDataManager contains the connection details, current report, cube name, cube schema, and PivotEngine for rendering the client control. Then it is assigned to the OLAP Client’s OlapDataManager and data binding is done. Initially, the OLAP Client is loaded with its default report by picking the default Measure and default Dimension.
 
 
    ~~~csharp
@@ -233,10 +233,11 @@ The OLAP Client control can also be created and configured by using the Expressi
    ~~~
 
 9. Add the following namespace in the code behind for manipulating the OlapReport and the OlapDataManager.
+   
    1. Syncfusion.Olap.Manager
 
 
-   ~~~csharp 
+   ~~~ csharp 
 
 		using Syncfusion.Olap.Manager;
 
@@ -276,7 +277,7 @@ The OLAP Client control can also be created and configured by using the Expressi
    ~~~
 
 
-   ~~~vbnet
+   ~~~ vbnet
 
 		Imports Syncfusion.Olap.Manager
 
@@ -345,7 +346,7 @@ The OLAP Client control can also be created and configured by using the Expressi
    12. Syncfusion.OlapTools.WPF
    13. Syncfusion.Tools.WPF
 
-   Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassmblies\<version number>\<Framework version>\
+   Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\<Framework version>\
 
 4. Add the following namespaces in the code-behind for instantiating the OlapClient and manipulating the OlapDataManager.
    1. Syncfusion.Olap.Manager
@@ -353,7 +354,7 @@ The OLAP Client control can also be created and configured by using the Expressi
 
 
 
-   ~~~csharp
+   ~~~ csharp
 
 
 		using Syncfusion.Windows.Client.Olap;
@@ -404,7 +405,7 @@ The OLAP Client control can also be created and configured by using the Expressi
 
    ~~~
 
-   ~~~vbnet
+   ~~~ vbnet
    
 		Imports Syncfusion.Olap.Manager
 

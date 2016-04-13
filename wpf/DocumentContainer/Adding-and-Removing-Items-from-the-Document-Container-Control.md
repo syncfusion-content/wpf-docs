@@ -18,7 +18,7 @@ Document Container allows the user to add new elements to its container(such as 
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:DocumentContainer Name="DocContainer">
 <Button ></Button></syncfusion:DocumentContainer>
 {% endhighlight %}

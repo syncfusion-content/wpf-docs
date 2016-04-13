@@ -23,7 +23,7 @@ The following code example illustrates how to add the CloseButton feature to an 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -126,7 +126,7 @@ Background="White">
 
 ## Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

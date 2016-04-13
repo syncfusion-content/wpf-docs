@@ -11,7 +11,7 @@ documentation: ug
 
 Using the CalendarStyle property, you can enhance the appearance of the CalendarEdit control. This dependency property sets the calendar style for the control. 
 
-_Property table_
+Property table
 
 <table>
 <tr>

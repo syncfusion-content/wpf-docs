@@ -11,89 +11,24 @@ documentation: ug
 
 XAML configuration is an important feature of OlapChart, as it helps the user to configure the control entirely using XAML by eliminating the need code in code behind. 
 
-### Use Case Scenarios
-
-If a user wants to perform an entire configuration in XAML, then this feature will help the user to set the Data source, Report and UI properties in a simple and elegant manner by using XAML.
-
 ### Property
 
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-DataSource.ConnectionString</td><td>
-Specifies the connection string of the data manager</td><td>
-Attached Property</td><td>
-String</td></tr>
-<tr>
-<td>
-DataSource.ConnectionName</td><td>
-Specifies the connection name which is available in App.Config file of the application</td><td>
-Attached Property</td><td>
-String</td></tr>
-<tr>
-<td>
-DataSource.DataManagerName</td><td>
-Specifies the DataManagerName</td><td>
-Attached Property</td><td>
-String</td></tr>
-<tr>
-<td>
-SharedDataManagerName</td><td>
-Specifies the data manager name which is available in shared data manager collection</td><td>
-Attached Property</td><td>
-String</td></tr>
-<tr>
-<td>
-ReportName</td><td>
-Species the OLAP ReportName</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-CurrentCubeName</td><td>
-Specifies the CurrentCube Name of a OLAP report</td><td>
-CLR</td><td>
-String</td></tr>
-<tr>
-<td>
-CategoricalAxis</td><td>
-Specifies the CategoricalAxis of the OLAP report</td><td>
-Dependency Property</td><td>
-CategoricalAxis</td></tr>
-<tr>
-<td>
-SeriesAxis</td><td>
-Specifies the SeriesAxis of the OLAP report</td><td>
-Dependency Property</td><td>
-SeriesAxis</td></tr>
-<tr>
-<td>
-SlicerAxis</td><td>
-Specifies the SlicerAxis of the OLAP report</td><td>
-Dependency Property</td><td>
-SlicerAxis</td></tr>
-<tr>
-<td>
-CalculatedMembers</td><td>
-Specifies the CalculatedMembers of the OLAP report</td><td>
-Dependency Property</td><td>
-CalculatedMembers</td></tr>
-</table>
-
+* **DataSource.ConnectionString** - Specifies the connection string of the data manager
+* **DataSource.ConnectionName** - Specifies the connection name which is available in App.Config file of the application
+* **DataSource.DataManagerName** - Specifies the DataManagerName
+* **SharedDataManagerName** - Specifies the data manager name which is available in shared data manager collection
+* **ReportName** - Species the OLAP ReportName
+* **CurrentCubeName** - Specifies the CurrentCube Name of a OLAP report
+* **CategoricalAxis** - Specifies the CategoricalAxis of the OLAP report</td><td>
+* **SeriesAxis** - Specifies the SeriesAxis of the OLAP report
+* **SlicerAxis** - Specifies the SlicerAxis of the OLAP report
+* **CalculatedMembers** - Specifies the CalculatedMembers of the OLAP report
 
 ## Adding report to OLAP Chart
 
 Adding an OLAP report to OLAP Chart control in design time is described in the following code snippet:
 
- {% highlight xml %}
+ {% highlight xaml %}
 
   
 

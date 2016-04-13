@@ -21,7 +21,7 @@ The layout mode feature allows choosing several layouts in the document. They ar
 
 
 
-2. ContinuousLayout—This layout mode looks like the Web Layout mode in MS Word. Instead of having pages of content, it will have a single page that displays all of the content.
+2. ContinuousLayout—This layout mode looks like the Web Layout mode in Microsoft Word. Instead of having pages of content, it will have a single page that displays all of the content.
 
 
 

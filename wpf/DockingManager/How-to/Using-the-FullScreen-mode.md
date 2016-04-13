@@ -21,7 +21,7 @@ This Mode window will be in full screen and the TabPanel will be hidden, and it 
 
 ### ControlMode:
 
-In this mode, fullscreen will be disabled and only the Tab panel will be hidden and visible only on mouse roll-over.
+In this mode, full screen will be disabled and only the Tab panel will be hidden and visible only on mouse roll-over.
 
 {% tabs %}
 

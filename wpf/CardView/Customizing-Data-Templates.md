@@ -191,7 +191,7 @@ Implementing the above codes generate the following CardView control.
 
 ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
-CardView with EditItemTempate
+CardView with EditItemTemplate
 {:.caption}
 
 N> You can edit the values in the CardView control by double-clicking the CardViewItem.

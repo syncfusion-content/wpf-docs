@@ -99,7 +99,7 @@ IsScrollingOnCircle</td></tr>
 NegativeForeground</td><td>
 Dependency Property</td><td>
 Brush</td><td>
-Gets or sets the NegativeForground property.</td><td>
+Gets or sets the NegativeForeground property.</td><td>
 </td><td>
 NegativeForeground</td></tr>
 <tr>
@@ -516,7 +516,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
 
-   {%highlight xml%}
+   {%highlight xaml%}
 
 
 			<Window x:Class="WpfApp.MainWindow"
@@ -601,7 +601,7 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
 
-    {%highlight xml%}
+    {%highlight xaml%}
 
 
 
@@ -643,7 +643,7 @@ N> Do not use the Text property to set the value for the CurrencyTextBox. Use on
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"/>
@@ -673,7 +673,7 @@ NullValue support
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the CurrencyTextBox.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"   MinValue="-999.99" MaxValue="999.99"/>
@@ -705,7 +705,7 @@ You can set the Watermark for the CurrencyTextBox by using the WatermarkText pro
 
 N> WatermarkText is visible only when the value is null.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="100" Value="{x:Null}" MinValue="-999" MaxValue="999" 

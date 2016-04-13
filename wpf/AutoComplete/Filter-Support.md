@@ -28,7 +28,7 @@ displayed in the drop-down list, instead all the items will be displayed.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
 {% endhighlight %}
@@ -78,7 +78,7 @@ Reference links </th></tr>
 <tr>
 <td>
 IsFilterChanged</td><td>
- When the value of IsFilter is changed, this event will be triggered.It cannot be cancelled.</td><td>
+ When the value of IsFilter is changed, this event will be triggered.It cannot be canceled.</td><td>
 DependencyObject,DependencyPropertyChangedEventArgs</td><td colspan = "2">
 DependencyPropertyChangedCallBack </td><td>
 </td></tr>

@@ -25,44 +25,10 @@ The important properties and methods in AdomdDataProvider class are tabulated be
 
 ###  Properties
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-CatalogName</td><td>
-To get the connected database name</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-ConnectionString</td><td>
-To set or get the connection string</td><td>
-string</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-CurrentCellSet</td><td>
-To get the currently executed CellSet</td><td>
-CellSet</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td>
-GetCubes</td><td>
-To get the information about the cubes in the connected data source</td><td>
-CubeInfoCollection</td><td>
--</td><td>
--</td></tr>
-</table>
-
+* **CatalogName** - To get the connected database name
+* **ConnectionString** - To set or get the connection string
+* **CurrentCellSet** - To get the currently executed CellSet
+* **GetCubes** - To get the information about the cubes in the connected data source
 
 
 ### Methods
@@ -81,7 +47,7 @@ Reference Link</th></tr>
 <td>
 ExecuteCellSet</td><td>
 Four arguments should be given to invoke this method. The arguments are MDX query as string, drill down state of result set as bool, query append info as bool and finally get the OlapReport. This method will generate the CellSet for the given query or OlapReport.</td><td>
-Mdx Query as string, drill down state as bool, Property append status as bool and Current OlapReort of OlapDataManager</td><td>
+MDX Query as string, drill down state as bool, Property append status as bool and Current OlapReport of OlapDataManager</td><td>
 CellSet</td><td>
 -</td></tr>
 <tr>

@@ -58,7 +58,7 @@ The following screenshot illustrates how a Chart Series is associated to the Cha
 Chart provides built-in support to bind XML data created through XmlDataProvider instances. The following code example illustrates this.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <XmlDataProvider x:Key="myXmlData">
 
@@ -118,7 +118,7 @@ Essential Chart provides support to bind data to an ObservableCollection or INot
 The following code illustrates how to bind an ObservableCollection as data source to Chart.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -311,7 +311,7 @@ The following screenshot illustrates how a Chart Series is associated to the Cha
 You can bind CollectionViewSource as a Chart Series Data Source to Chart. Chart listens to the changes in the source and gets updated automatically. The following code illustrates how to bind CollectionViewSource as data source to Chart.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -743,7 +743,7 @@ public class Product
   this.series1.BindingPathsY = new string[] { "Info.Start", "Info.End" };
 
 {% endhighlight  %}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ChartSeries Name="series1" Type="Gantt"  Interior="{StaticResource SeriesAInterior}" Label="Allotted Days"  StrokeThickness="0.4"  IsIndexed="False"   BindingPathX=”ID” BindingPathY=”Info.Start,Info.End” />
@@ -772,7 +772,7 @@ Adding Data Binding to an Application
 You can bind chart data into the DataSource property of ChartSeries control.  The View is generated internally for the user bound data and the chart can render in visual. The BindingPathX and BindingPathsY properties are used to initialize the property name of the binded data. This property values is used as coordinate values for X and Y direction in the ChartAxis control.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries DataSource="{StaticResource data}" BindingPathX="ProductID" BindingPathsY="Price" />
 
@@ -818,7 +818,8 @@ CLR. </td><td>
 ChartDataModel </td><td>
 NA </td></tr>
 </table>
-_ChartDataModel Table_
+
+ChartDataModel Table
 
 <table>
 <tr>

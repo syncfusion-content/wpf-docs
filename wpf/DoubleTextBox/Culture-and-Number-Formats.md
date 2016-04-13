@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Culture and Number Formats| DoubleTextBox  | Wpf | Syncfusion
-description: culture and number formats
+title: Culture and NumberFormat for DoubleTextBox
+description: Culture and NumberFormat for DoubleTextBox control
 platform: wpf
-control: DoubleTextBox 
+control: DoubleTextBox
 documentation: ug
 ---
 
@@ -11,113 +11,235 @@ documentation: ug
 
 ## Culture
 
-DoubleTextBox provides globalization support through the Culture property. 
-
-
-{% tabs %}
-{% highlight xml %} 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                  
-Culture="en-US" Value="1234567"/> 
-{% endhighlight %} 
-
-{% highlight C# %}
- Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
- doubleTextBox.Width = 150;
- doubleTextBox.Height = 25;
- doubleTextBox.Value = 1234567;
- doubleTextBox.Culture = new CultureInfo("en-US");
- {% endhighlight %}
- {% endtabs %}
-
-
-
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
-
-
-
-
+DoubleTextBox provides globalization support through the `Culture` property. The `Culture` property used to format the values based on the respective culture.
 
 {% tabs %}
-{% highlight xml %} 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"           
-Culture="bs-Latn" Value="1234567"/> 
-{% endhighlight %} 
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
+                         Width="150" Culture="en-US" Value="1234567"/>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
- Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
- doubleTextBox.Width = 150;
- doubleTextBox.Height = 25;
- doubleTextBox.Value = 1234567;
- doubleTextBox.Culture = new CultureInfo("bs-Latn");
- {% endhighlight %}
+
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+
+doubleTextBox.Width = 150;
+
+doubleTextBox.Height = 25;
+
+doubleTextBox.Value = 1234567;
+
+doubleTextBox.Culture = new CultureInfo("en-US");
+
+Grid1.Children.Add(doubleTextBox);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
  
- {% endtabs %}
+doubleTextBox.Width = 150
+ 
+doubleTextBox.Height = 25
+ 
+doubleTextBox.Value = 1234567
+ 
+doubleTextBox.Culture = New CultureInfo("en-US")
+ 
+Grid1.Children.Add(doubleTextBox)
 
+{% endhighlight %}
 
+{% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+![](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img1.jpeg)
 
-
-
-
-
-In the first sample culture is set to “en-US” (US Culture) in the second sample culture is set to “bs-Latn” (Latin Culture). The US culture uses “,” as the NumberGroupSeparator and the Latin culture uses “.” as the NumberGroupSeparator. When you change the Culture property the Value is formatted based on the Culture.
 
 ## Number Format
 
-You can customize the Number Format either by using the NumberFormat property or the NumberGroupSeparator, NumberGroupSizes, NumberDecimalDigits, and NumberDecimalSeparator properties.
+The Number Format can be customize either by using the `NumberFormat` property or the `NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator` properties of DoubleTextBox.
+
+The following code illustrate how to customize the number format using NumberFormat property.
+
+The Namespace used for NumberFormatInfo as follows:
 
 
 {% tabs %}
-{% highlight xml %}
- <syncfusion:DoubleTextBox x:Name="doubleTextBox" 
- Height="25" 
- Width="200"             
- Value="123456789012345">  
- <syncfusion:DoubleTextBox.NumberFormat>    
- <numberformat:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4"  
- NumberDecimalSeparator="*"/>    </syncfusion:DoubleTextBox.NumberFormat>
- </syncfusion:DoubleTextBox>
- {% endhighlight %} 
-{% highlight C# %} 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new    
-Syncfusion.Windows.Shared.DoubleTextBox();
+
+{% highlight XAML %}
+
+<Window x:Class="Application_New.MainWindow"
+
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+xmlns:numberformat="clr-namespace:System.Globalization;assembly=mscorlib"
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+Title="MainWindow" Height="350" Width="525">
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+using System.Globalization;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
+                          Width="200" Value="123456789012345">
+
+<syncfusion:DoubleTextBox.NumberFormat>
+
+<numberformat:NumberFormatInfo NumberGroupSeparator="/"
+              NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
+
+</syncfusion:DoubleTextBox.NumberFormat>
+
+</syncfusion:DoubleTextBox>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+
 doubleTextBox.Width = 150;
+
 doubleTextBox.Height = 25;
+
 doubleTextBox.Value = 1234567;
+
 doubleTextBox.NumberFormat = new NumberFormatInfo()
-{ NumberGroupSeparator = "/",                   
-NumberDecimalDigits = 4, NumberDecimalSeparator = "*" };
-{% endhighlight %} 
+
+{
+
+NumberGroupSeparator = "/",
+
+NumberDecimalDigits = 4,
+
+NumberDecimalSeparator = "*"
+
+};
+
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+ 
+doubleTextBox.Width = 150
+ 
+doubleTextBox.Height = 25
+ 
+doubleTextBox.Value = 1234567
+ 
+doubleTextBox.NumberFormat = Function NumberFormatInfo() As Shadows
+ 
+NumberGroupSeparator = "/",
+ 
+NumberDecimalDigits = 4,
+ 
+NumberDecimalSeparator = "*"
+ 
+End Function
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
+![](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
 
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
-
-
-
+The following code illustrate how to set NumerGroupSeparator, NumberDecimalDigits and NumberDecimalSeparator.
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200"                 
-Value="123456789012345" NumberGroupSeparator="/"                  
-NumberDecimalDigits="4" NumberDecimalSeparator="*"/> 
-{% endhighlight %} 
 
-{% highlight C# %} 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-doubleTextBox.Width = 150;
-doubleTextBox.Height = 25;
-doubleTextBox.Value = 1234567;
-doubleTextBox.NumberGroupSeparator = "/";
-doubleTextBox.NumberDecimalSeparator = "*";
-doubleTextBox.NumberDecimalDigits = 4;
- {% endhighlight %} 
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
+                          Width="200" Value="123456789012345"
+                          NumberGroupSeparator="/" NumberDecimalDigits="4"
+                          NumberDecimalSeparator="*"/>
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
+{% tabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+{% highlight C# %}
 
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+
+doubleTextBox.Width = 170;
+
+doubleTextBox.Height = 25;
+
+doubleTextBox.Value = 123456789012345;
+
+doubleTextBox.NumberGroupSeparator = "/";
+
+doubleTextBox.NumberDecimalSeparator = "*";
+
+doubleTextBox.NumberDecimalDigits = 4;
+
+Grid1.Children.Add(doubleTextBox);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+ 
+doubleTextBox.Width = 170
+ 
+doubleTextBox.Height = 25
+ 
+doubleTextBox.Value = 123456789012345
+ 
+doubleTextBox.NumberGroupSeparator = "/"
+ 
+doubleTextBox.NumberDecimalSeparator = "*"
+ 
+doubleTextBox.NumberDecimalDigits = 4
+ 
+Grid1.Children.Add(doubleTextBox)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img3.jpeg)
 
 

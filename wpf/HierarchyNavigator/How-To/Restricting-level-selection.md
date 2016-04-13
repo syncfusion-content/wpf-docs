@@ -17,7 +17,7 @@ Assigning a value for the MaxDrillDown property (integer) in the HierarchyNaviga
 {% highlight c# %}
 HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();hierarchyNavigator.MaxDrillDownLevel = 2;
 {% endhighlight %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:HierarchyNavigator Name="hierarchyNavigator1" MaxDrillDownLevel="2" />
 {% endhighlight %}
 {% endtabs %}

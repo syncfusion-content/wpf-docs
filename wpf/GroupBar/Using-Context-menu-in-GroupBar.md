@@ -28,7 +28,7 @@ Use the following code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar that has context menu -->
 <syncfusion:GroupBar Height="250" Width="230" IsEnabledContextMenu="True" Name="groupBar"> 
  <!-- Adding GroupBarItem -->  

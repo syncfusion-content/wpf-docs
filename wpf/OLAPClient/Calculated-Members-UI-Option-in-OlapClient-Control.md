@@ -18,32 +18,9 @@ control.
 
 
 
-### Use Case Scenarios
-
-This feature can be used to add one or more measures that will be derived from the existing measure collection.
-
-For example, users can define the discount on a measure called Order Quantity (and its unique name is [Measures].[Order Quantity]), by 
-expressing the calculated measure “[Measures].[Order Quantity] + (0.1 * [Measures].[Order Quantity])”.
-
 ### Properties
 
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-IsCalculatedMembersEnabled</td><td>
-Gets or sets a value indicating whether calculated members are to be enabled</td><td>
-Dependency </td><td>
-Boolean</td></tr>
-</table> 
-
+* **IsCalculatedMembersEnabled** - Gets or sets a value indicating whether calculated members are to be enabled
 
 ### Sample Link
 
@@ -97,7 +74,7 @@ if set false, then it will be disabled or all calculated members wil
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

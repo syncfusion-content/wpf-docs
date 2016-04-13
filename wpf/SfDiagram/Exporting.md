@@ -1,78 +1,62 @@
 ---
 layout: post
-title: Exporting | SfDiagram | wpf | Syncfusion
-description: exporting
+title: Export Diagram content as image files.
+description: How to export the Diagram as image?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Exporting
+#Exporting
 
-SfDiagram can be exported to the following File formats:
+Diagram provides support to extent its content as image files
 
-Image File Format
+![](Exporting_images/Exporting_img1.jpeg)
 
-1. Png
-2. Jpeg
-3. Tiff
-4. Gif
-5. Bitmap
+##Exporting Options
+
+Diagram provides support to export the desired region of the Diagram to desired formats.
+
+Format
+
+SfDiagram can be exported to be following File formats.
+
+* PNG
+* JPEG
+* TIFF
+* GIF
+* BMP
 
 Contents of the Diagram can be exported as raster image files by using Export function. This exporting can be customized by using ExportSettings.
 
-The following code illustrates how to use ExportSettings Property of the SfDiagram:
+The following code illustrates how to use `ExportSettings` property of the SfDiagram:
 
-{% highlight c# %}
+{% highlight C# %}
 
-  ExportSettings settings= new ExportSettings() 
+ExportSettings settings = new ExportSettings()
+{
 
-     {
-          //Stretch Option for Exporting the Image
+  ImageStretch = Stretch.Fill,
+  ExportMode = ExportMode.PageSettings
 
-          ImageStretch = Stretch.Uniform,
+};
 
-          //Specifies the Modes for Exporting
-
-          ExportMode = ExportMode.Content
-
-     };
-
-  //Assigns the ExportSettings
-
-  sfdiagram.ExportSettings = settings;
-
+diagram.ExportSettings = settings;
 {% endhighlight %}
 
 
+The following code shows how to export the SfDiagram
+{% highlight C# %}
+_//Method to Export the SfDiagram_
 
-The following code shows how to export the SfDiagram:
-
-{% highlight c# %}
-
- //Method to Export the SfDiagram
-
- sfdiagram.Export();
-
+diagram.Export();
 {% endhighlight %}
 
+###Mode
 
-
-### Export Mode
-
-<table>
-<tr>
-<th>
-ExportMode</th><th>
-Description</th></tr>
-<tr>
-<td>
-PageSettings</td><td>
-The area to be exported is based on PageSettings and how Children are arranged.</td></tr>
-<tr>
-<td>
-Content</td><td>
-Areas occupied by children are exported exactly.</td></tr>
-</table>
+| ExportMode | Description |
+|---|---|
+| PageSettings | The area to be exported is based on PageSettings and how Children are arranged. |
+| Content | Areas occupied by children are exported exactly. |
 
 

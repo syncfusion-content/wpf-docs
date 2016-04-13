@@ -9,7 +9,7 @@ documentation: ug
 
 # Dependency Relationship
 
-Dependency relationship is the relationship between two tasks. These relationship has been caterogrised into four types based on the start and finish date of the task. They are:
+Dependency relationship is the relationship between two tasks. These relationship has been categorised into four types based on the start and finish date of the task. They are:
 
 * FinishToStart 
 * FinishToFinish
@@ -60,7 +60,7 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-Prodecessor</td><td>
+Predecessor</td><td>
 This enables you to set the relationship between the tasks.</td><td>
 Object</td><td>
 Object</td><td>
@@ -68,14 +68,14 @@ NA</td></tr>
 <tr>
 <td>
 GanttTaskRelationship</td><td>
-This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can asign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
+This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can assign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
 Predecessor</td><td>
 Enum</td><td>
 NA</td></tr>
 </table>
 
 
-Specifing the Relationship between Tasks 
+Specifying the Relationship between Tasks 
 
 The following code illustrates how to add the Dependency Relationship between tasks:
 
@@ -229,7 +229,7 @@ Adding Dynamic Predecessors and Resources to an Application
 
 The dynamic editing of predecessor will be automatically included in the Gantt by default. There is no need to provide any additional data for that. The following codes illustrate this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 

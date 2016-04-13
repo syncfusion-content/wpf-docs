@@ -280,7 +280,7 @@ To bind XML data to a HierarchyNavigator control, convert the XML to a collectio
 
 The XML displayed below is used in this example (attached in the sample project named HierarchyItems.xml).
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

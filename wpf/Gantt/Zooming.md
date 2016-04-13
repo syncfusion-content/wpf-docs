@@ -438,7 +438,7 @@ double</td></tr>
 <tr>
 <td>
 ZoomFactor</td><td>
-Zooming takes place based on the ZoomFzctor. The ZoomFactor should be greater than zero.</td><td>
+Zooming takes place based on the ZoomFactor. The ZoomFactor should be greater than zero.</td><td>
 Dependency</td><td>
 double</td></tr>
 </table>
@@ -458,7 +458,7 @@ Type </th></tr>
 ZoomChanged</td><td>
 Event triggers when the zoom factor is changed. This can be handled in application level.</td><td>
 ZoomChangedEventArgs</td><td>
-Simpleevent </td></tr>
+Simple event </td></tr>
 </table>
 
 

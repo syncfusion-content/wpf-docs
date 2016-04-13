@@ -50,7 +50,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 
 Coded UI provides support only in Visual Studio Ultimate and Visual Studio Premium. For more information about the platforms and configurations that are supported by coded UI tests, refer this [link](https://msdn.microsoft.com/en-us/library/dd380742.aspx).
 
-To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](http://www.syncfusion.com/downloads/support/directtrac/115592/Syncfusion.VisualStudion.Extension.WPF-57940060.zip) location.
+To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.VisualStudion.Extension.WPF-1315333566.zip) location.
 
 1. Open the Extension Project and build it.
 2. You can get the Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll from bin folder. 
@@ -393,16 +393,16 @@ Click Install to continue with the installation.
 
 ### Configuration:
 
-After installing the Syncfusion Essential Test Studio, you need to ensure that Syncfusion.CNG and SyncfusionTestObjetcs.XML files are located inthe following location. 
+After installing the Syncfusion Essential Test Studio, you need to ensure that Syncfusion.CNG and SyncfusionTestObjects.XML files are located in the following location. 
 
 * C:\Program Files\HP\QuickTestProfessional\dat\Extensibility\WPF\Syncfusion
 * C:\Program Files\HP\QuickTestProfessional\dat\Extensibility\WPF\
 
-Also ensure that Syncfusion.SfGridQTP.WPF.dll is inthe following location.
+Also ensure that Syncfusion.SfGridQTP.WPF.dll is in the following location.
 
 * C:\Program Files\HP\QuickTest Professional\dat\Extensibility\WPF\Syncfusion
 
-When your system does not contain Syncfusion.CNG , SyncfusionTestObjetcs.XML and  Syncfusion.SfGridQTP.WPF.dll  files, you can get it from the following location,
+When your system does not contain Syncfusion.CNG , SyncfusionTestObjects.XML and  Syncfusion.SfGridQTP.WPF.dll  files, you can get it from the following location,
 
 * C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
  
@@ -660,7 +660,7 @@ To Set the CurrentCell.</th><th>
 Void</th></tr>
 <tr>
 <th>
-void GroupColumn(strin columnName);</th><th>
+void GroupColumn(string columnName);</th><th>
 To Group the Column</th><th>
 String columnName</th><th>
 Void</th></tr>

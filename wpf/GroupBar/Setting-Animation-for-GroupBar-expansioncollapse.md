@@ -17,7 +17,7 @@ Use the following code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar that have animation speed -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar" AnimationSpeed="5" AnimationType="Fade"> 
  <!-- Adding GroupBarItem --> 
@@ -68,7 +68,7 @@ When the GroupBar is collapsed or expanded, it gives an animation effect. There 
 Use the following code snippet to set AnimationType property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar that have AnimationType as Fade -->
 <syncfusion:GroupBar Height="300" Width="230" AnimationType="Fade" Name="groupBar">
   <!-- Adding GroupBarItem --> 

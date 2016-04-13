@@ -9,26 +9,11 @@ documentation: ug
 
 # Drill-Through Support
 
-Drill-through retrieves the underlying table rows that are used to create a specified cell in a cube. 
+Drill-through retrieves that are used to create a specified cell in a cube. 
 
 ### Property			
 
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-DataType</th></tr>
-<tr>
-<td>
-EnableDrillThrough</td><td>
-Gets or sets a value indicating whether to enable/disable drill-through action. </td><td>
-Dependency</td><td>
-Boolean</td></tr>
-</table> 
+* **EnableDrillThrough** - Gets or sets a value indicating whether to enable/disable drill-through action.
 
 ## Adding Drill-through for OLAP Client in an application
 

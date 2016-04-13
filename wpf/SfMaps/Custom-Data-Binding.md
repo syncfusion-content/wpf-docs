@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Data Binding
 
-A map can be bound with custom objects. For custom data binding, a .dbf file is not required. In Data Binding, an object is bound to a shape. In custom data binding, an object is bound to a point based on latitude and longitude values. CustomDataSourceis the API exposed in the custom data source. It is an IEnumerable type API. Each item in the CustomDataSource should have latitude and longitude properties with each mentioned name. Stick to to the following rules for custom data binding:
+A map can be bound with custom objects. For custom data binding, a .dbf file is not required. In Data Binding, an object is bound to a shape. In custom data binding, an object is bound to a point based on latitude and longitude values. CustomDataSource is the API exposed in the custom data source. It is an IEnumerable type API. Each item in the CustomDataSource should have latitude and longitude properties with each mentioned name. Stick to to the following rules for custom data binding:
 
 ## Rule for Specifying the Latitude
 
@@ -19,7 +19,7 @@ Latitude should specify its decimal value along with the first letter of directi
 
 The rule for longitude is similar to that of the latitude, apart from the directional value. Since longitude is related to the East and West directions on a map, the values should end with E or W. For example:34.345E or 56.345W.
 
-To show the custom data on the map, the CustomDataSourceTemplatemust be specified. CustomDataSourceTemplate is a DataTemplate type API used to expose the template for custom data.
+To show the custom data on the map, the CustomDataSourceTemplate must be specified. CustomDataSourceTemplate is a DataTemplate type API used to expose the template for custom data.
 
 {%tabs%}
 {% highlight C# %}
@@ -131,7 +131,7 @@ public class ViewModel
     }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

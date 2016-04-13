@@ -15,7 +15,7 @@ You can place tick marks along the track in a uniform manner and you can also cu
 
 The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200"  Minimum="0"  Maximum="100" TickFrequency="20" Value="40" />
@@ -32,7 +32,7 @@ N> When the SnapsTo property is set to Ticks, the TickFrequency is used to speci
 
 When the SnapsTo property is set to StepValues, the StepFrequency property is used to specify the interval between snap points. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0"  Maximum="100" StepFrequency="20" Value="40"/>
@@ -68,7 +68,7 @@ The default option is Inline.
 
 Tick marks are placed either below the track in horizontal orientation or right of the track in vertical orientation. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200" Minimum="0"   Maximum="100"                                                      
@@ -87,7 +87,7 @@ N> In Vertical Orientation, this option places the ticks to right side.
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation. 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   />
@@ -104,7 +104,7 @@ N> In Vertical Orientation, this option places the ticks to left side.
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.  
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/>
@@ -119,7 +119,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 Ticks are placed inside the track.  
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Inline" Value="40" />
@@ -134,7 +134,7 @@ Ticks are placed inside the track.
 
 No Tick mark appears.  
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="None" Value="40" />

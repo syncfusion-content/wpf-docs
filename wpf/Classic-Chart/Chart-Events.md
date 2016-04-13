@@ -119,7 +119,7 @@ These events can be initialized using the following lines of code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:ChartSeries Data="0 3 1 4 2 5 3 9 6 4 7 3 8 5 9 11" Type="Pie" MouseClick="ChartSeries_MouseClick"

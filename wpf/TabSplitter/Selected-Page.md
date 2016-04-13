@@ -12,7 +12,7 @@ documentation: ug
 You can set the selected page by using the IsSelectedPage property. If this property is set to _true_, the page is selected, else it is not selected.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
  <!-- Adding TabSplitter -->
 

@@ -65,7 +65,7 @@ Cards inside the CardView control can be grouped by the fields available in the 
 
 ### Properties
 
-_Property/Properties Table_
+Property/Properties Table
 
 <table>
 <tr>
@@ -115,7 +115,7 @@ Cards can be sorted inside the CardView Control. It can be achieved by the field
 
 ### Properties
 
-_Property/Properties Table_
+Property/Properties Table
 
 <table>
 <tr>
@@ -161,7 +161,7 @@ More attractive feature in the CardView control is editing. CanEdit property all
 
 ### Properties
 
-_Property/Properties Table_
+Property/Properties Table
 
 <table>
 <tr>
@@ -192,7 +192,7 @@ NA</td></tr>
 
 CanEdit property can be added directly to an application using the following code example:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:CardView CanEdit="False">        
 
@@ -214,7 +214,7 @@ It is the base to showcase the fields when you drop the fields from the list. We
 
 ### Properties
 
-_Property/Properties Table_
+Property/Properties Table
 
 <table>
 <tr>
@@ -238,7 +238,7 @@ NA</td></tr>
 
 ShowHeader property can be added directly to an application using the following code example:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:CardView ShowHeader="False">        
 

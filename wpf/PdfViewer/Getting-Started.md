@@ -224,7 +224,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
-CCITTFaxDeocde (Image)</td><td>
+CCITTFaxDecode (Image)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -438,7 +438,7 @@ Following steps demonstrate how to create a simple application with Essential Pd
    3. Syncfusion.Pdf.Base
    4. Syncfusion.PdfViewer.Wpf
    5. Syncfusion.Shared.Wpf
-4. Add the following highlighted Syncfusion namesspace in XAML to make use of PdfViewerControl. 
+4. Add the following highlighted Syncfusion namespace in XAML to make use of PdfViewerControl. 
 
 
    ~~~xaml
@@ -563,7 +563,7 @@ Following steps demonstrate how to create a simple application with Essential Pd
 
    3. Once the DataContext has been set, the ItemSource dependency property can be set by using the following code example in XAML.
 
-   {% highlight xml %}
+   {% highlight xaml %}
 
     <Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
 
@@ -585,7 +585,7 @@ In addition to the PdfViewerControl, Syncfusion also provides PdfDocumentView co
    Toolbox showing the PdfDocumentView control
 
 2. The PdfDocumentView control has the rendering area where the pages are displayed in a virtualized scroll viewer.
-3. The following XAML code illustrtaes how the PdfDocumentView control is added to the application.
+3. The following XAML code illustrates how the PdfDocumentView control is added to the application.
 
 
 
@@ -597,14 +597,14 @@ In addition to the PdfViewerControl, Syncfusion also provides PdfDocumentView co
    
    Loading a document
 
-   To load a document in the PdfDocumentView control, add a button to your application by dragging the Button control available in the toolbox. Name the button as openBtn. In the click event of the button, add the following C# code.
+   To load a document in the PdfDocumentView control, add a button to your application by dragging the Button control available in the toolbox. Name the button as openButton. In the click event of the button, add the following C# code.
 
 
 
 
    ~~~csharp
    
-        private void openBtn_Click(object sender, RoutedEventArgs e)
+        private void openButton_Click(object sender, RoutedEventArgs e)
 
         {             
 
@@ -664,13 +664,13 @@ Void</td></tr>
 
 ## Page Navigation
 
-In addition to the virtualized page view in a scroll viewer, PdfDocumentView control also provides GoToPage and GoToPageAtIndex methods for page navigation. To add page navigation buttons to your application, add two buttons that helps in navigation for next and previous pages. Name them as gotoNextPageBtn and gotoPrevPageBtn respectively. In the click event of the buttons, add the following code.
+In addition to the virtualized page view in a scroll viewer, PdfDocumentView control also provides GoToPage and GoToPageAtIndex methods for page navigation. To add page navigation buttons to your application, add two buttons that helps in navigation for next and previous pages. Name them as gotoNextPageButton and gotoPrevPageButton respectively. In the click event of the buttons, add the following code.
 
 {% highlight C# %}
 
 
 
-	private void gotoNextPageBtn_Click(object sender, RoutedEventArgs e)
+	private void gotoNextPageButton_Click(object sender, RoutedEventArgs e)
 
 	{
 
@@ -688,7 +688,7 @@ In addition to the virtualized page view in a scroll viewer, PdfDocumentView con
 
 
 
-	private void gotoPrevPageBtn_Click(object sender, RoutedEventArgs e)
+	private void gotoPrevPageButton_Click(object sender, RoutedEventArgs e)
 
 	{
 
@@ -708,15 +708,15 @@ In addition to the virtualized page view in a scroll viewer, PdfDocumentView con
 {% endhighlight %}
 
 
-## Maginifcation Operations
+## Magnification Operations
 
-The PdfDocumentView control also provides various magnification operations through ZoomMode, and ZoomPercentage properties. To add magnifying buttons to the application, add two buttons and name them as fitPageBtn and fitWidthBtn. In the click event of the buttons, add the following C# code.
+The PdfDocumentView control also provides various magnification operations through ZoomMode, and ZoomPercentage properties. To add magnifying buttons to the application, add two buttons and name them as fitPageButton and fitWidthButton. In the click event of the buttons, add the following C# code.
 
 {% highlight C# %}
 
 
 
-private void fitPageBtn_Click(object sender, RoutedEventArgs e)
+private void fitPageButton_Click(object sender, RoutedEventArgs e)
 
 {
 
@@ -728,7 +728,7 @@ documentViewer.ZoomMode = Syncfusion.Windows.PdfViewer.ZoomMode.FitPage;
 
 
 
-private void fitWidthBtn_Click(object sender, RoutedEventArgs e)
+private void fitWidthButton_Click(object sender, RoutedEventArgs e)
 
 {
 
@@ -746,7 +746,7 @@ The PdfDocumentView control also provides the Print APIs, to print the PDF docum
 
 
 
-private void printBtn_Click(object sender, RoutedEventArgs e)
+private void printButton_Click(object sender, RoutedEventArgs e)
 
 {
 

@@ -15,7 +15,7 @@ Data templates can be customized for items of the MenuAdv control. The next sect
 
 You can customize how a business object is displayed as MenuItemAdv using ItemTemplate of MenuAdv. The MenuAdv displays hierarchical data. HierarchicalDataTemplate is used to define the ItemTemplate. The following code example shows the usage of ItemTemplate.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

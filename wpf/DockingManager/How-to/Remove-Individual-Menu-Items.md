@@ -54,4 +54,4 @@ DockingManager.SetShowTabbedMenuItem(grid1, false);
 
 ![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)
 
-Similarly you can use other properties to disable corresponding MeniItems.
+Similarly you can use other properties to disable corresponding MenuItems.

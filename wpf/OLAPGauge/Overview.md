@@ -35,7 +35,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 * Overview - This section gives a brief introduction to our product and its key features.
 * Getting Started - This section guides you on getting started with the BI application, OLAP Gauge control, and so on.
-* Concepts and Features - The features of OLAP Gauge control are illustrated with use case scenarios, code examples and screen shots under this section.
+* Concepts and Features - The features of OLAP Gauge control are illustrated with code examples and screen shots under this section.
 
 ## Document Conventions
 

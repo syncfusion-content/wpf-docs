@@ -1,111 +1,84 @@
 ---
 layout: post
-title: Resizing the PivotGrid to fit its content| PivotGrid | Wpf | Syncfusion
-description: Resizing the PivotGrid to fit its content
+title: 13422-Resizing-the-PivotGrid-to-fit-its-content
+description: 1.3.4.22 resizing the pivotgrid to fit its content
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
-# Resizing the PivotGrid to fit its content
+# Re-size To Fit
 
-PivotGrid provides support for resizing the grid to fit its content while group expanding and collapsing the groups. The grid will be resized after refreshing the page. 
+PivotGrid provides support for re-sizing the Grid to fit its content while expanding and collapsing the groups. The Grid will be resized after refreshing the page. 
 
-### Use Case Scenarios
+The `ResizePivotGridToFit` property is used for this requirement and it can be defined in both *XAML* and *Code-behind*. 
 
-This feature will be useful to provide more space to display the controls sharing its parent control during group collapse operation. 
+If through *XAML*, please refer the below code sample.
 
-### Properties
+{% highlight xaml %}
 
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ResizePivotGridToFit="True" ItemSource="{Binding   Source={StaticResource data}}">
 
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-ResizePivotGridToFit </td><td>
-Resizes the PivotGrid according to the content of the grid. </td><td>
-Dependency</td><td>
-Boolean </td><td>
-NA </td></tr>
-</table>
+    </syncfusion:PivotGridControl>
+</Grid>
 
+{% endhighlight %}
 
-### Enabling Resizing Pivot Grid
+Else if through **Code-behind**, please refer the below code sample.
 
-You can enable or disable this feature using the _ResizePivotGridToFit_ property.  To enable resizing, set this property to true. To disable resizing, set this property to false.  By default this is set to false.
+{% highlight C# %}
 
-The following code illustrates how to enable resizing to fit the content, when you expand or collapse the PivotGrid group:
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
-{% tabs %}
-{% highlight C# %}  
+        pivotGrid.ResizePivotGridToFit = true;
+    }
+}
 
+{% endhighlight %}
 
-
-
-
-this.pivotGrid1.ResizePivotGridToFit = true; 
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-
-
-
-Me.pivotGrid1.ResizePivotGridToFit = True 
-
-{% endhighlight %} 
-{% endtabs %}
-
-![](Features_images/Features_img32.png)
-
-
-
-The following code illustrates how to disable resizing to fit the content, when you expand or collapse the PivotGrid group:
-
-{% tabs %}
-{% highlight C# %}  
-
-
-
-
-this.pivotGrid1.ResizePivotGridToFit = false;
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-
-
-
-Me.pivotGrid1.ResizePivotGridToFit = False
-
-{% endhighlight %} 
-{% endtabs %}
-
-![](Features_images/Features_img33.png)
-
-
-
-### Sample Link
-
-To view samples: 
-
-1.Open Syncfusion Dashboard.
-
-2.Select BI > WPF.
-
-3.Click Run Samples.
-
-4.Navigate to PivotGrid > Product Showcase > Pivot Grid Demo.
-
-
+![](Resizing-image/Resized PivotGrid during collapsed state.png)

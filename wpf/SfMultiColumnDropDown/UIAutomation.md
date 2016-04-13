@@ -13,7 +13,7 @@ SfMultiColumnDropDownControl supports the following UIAutomations,
 
 ### Coded UI
 
-SfMutliColumnDropDownControl supports CodedUITest automation that enables you to create an automation test with SfMultiColumnDropDownControl elements and record the sequence of actions.
+SfMultiColumnDropDownControl supports CodedUITest automation that enables you to create an automation test with SfMultiColumnDropDownControl elements and record the sequence of actions.
 
 There are three level of support in CodedUITest for SfMultiColumnDropDownControl.
 

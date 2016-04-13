@@ -1543,7 +1543,7 @@ FORMULA</th><th>
 RESULT</th></tr>
 <tr>
 <td>
-=T(“SYNCFUSION”)</td><td>
+=T('SYNCFUSION')</td><td>
 SYNCFUSION</td></tr>
 <tr>
 <td>

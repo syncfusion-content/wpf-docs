@@ -14,7 +14,7 @@ documentation: ug
 A SfDateTimeRangeNavigator is composed of various elements such as Higher level bar, Lower Level Bar, Content, Resizable Scrollbar.
 
 * Higher Level Bar - Contains timespan format one level Higher than Lower Level Bar DateTime values. E.g.  Higher Level Bar contains year format (yyyy) then the Lower Level Bar contains the Month format (MMM).
-* Lower Level bar – Contains timespan format one lever Lower than Higer Level DateTime Values. E.g.  Lower Level Bar contains Month format (MMM) then the Higher Level Bar contains the year format (yyyy).
+* Lower Level bar – Contains timespan format one lever Lower than Higher Level DateTime Values. E.g.  Lower Level Bar contains Month format (MMM) then the Higher Level Bar contains the year format (yyyy).
 * Content – Can hold any type of UI element inside the Navigator.
 * Resizable Scrollbar – Used to zoom and scroll the content and Label Bars. 
 
@@ -58,7 +58,7 @@ Since the above step will produce an empty SfDateTimeRangeNavigator without any 
 
 {% highlight xaml %}
 
-<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
+<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding UsersList}" XBindingPath="Date"  >
 
 </Syncfusion:SfDateTimeRangeNavigator >
 
@@ -82,7 +82,7 @@ Used to set the ItemsSource for SfDateTimeRangeNavigator</td></tr>
 <tr>
 <td>
 XBindingPath</td><td>
-Represents the DateTime Xvalues</td></tr>
+Represents the DateTime X values</td></tr>
 <tr>
 <td>
 Content</td><td>
@@ -91,7 +91,7 @@ To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 
 {% highlight xaml %}
 
-<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
+<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding UsersList}" XBindingPath="Date"  >
 
 	<Syncfusion:SfDateTimeRangeNavigator.Content>
 
@@ -111,7 +111,7 @@ To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 
 <Syncfusion:LineSeries 
 
-        ItemsSource="{Binding ItemsSource }" 
+        ItemsSource="{Binding UsersList}" 
 
         XBindingPath="Date”
 
@@ -183,15 +183,15 @@ public class UsersViewModel
 
    UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
 
-            UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
+   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
 
-            UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
+   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
 
-                UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 7000 });
+   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 7000 });
 
-            UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 6000 });
+   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 6000 });
 
-            UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });  }
+   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });  }
 
  public ObservableCollection<ItemsSource> UsersList
 
@@ -217,7 +217,7 @@ N> You can set any IEnumerable collection as an ItemsSource.
 
 SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
 
-rangenavigator.ItemsSource = ItemsSource;
+rangenavigator.ItemsSource = UsersList;
 
 rangenavigator.XBindingPath = "Date";
 
@@ -236,7 +236,7 @@ SfChart chart = new SfChart();
 
 LineSeries series = new LineSeries();
 
-series.ItemsSource = ItemsSource;
+series.ItemsSource = UsersList;
 
 series.XBindingPath = "Date";
 

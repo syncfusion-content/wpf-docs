@@ -16,7 +16,7 @@ By clicking the Navigation pane, the content of the GroupBar Items are displayed
 To enable the AllowCollapse property in GroupBar, use the following code.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar that has allow collapse property to true -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar" AllowCollapse="True" VisualMode="StackMode"> 
    <!-- Adding GroupBarItem -->   
@@ -32,7 +32,8 @@ To enable the AllowCollapse property in GroupBar, use the following code.
    <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">   
    <!-- Adding content for GroupBar item using GroupView -->      <syncfusion:GroupView>        <syncfusion:GroupViewItem Text="Default"/>        <syncfusion:GroupViewItem Text="Multiple Expansion"/>        <syncfusion:GroupViewItem Text="StackMode"/>      </syncfusion:GroupView>    </syncfusion:GroupBarItem>    <!-- Adding GroupBarItem -->    <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">      <!-- Adding content for GroupBar item using GroupView -->      <syncfusion:GroupView>        <syncfusion:GroupViewItem Text="Save State"/>        <syncfusion:GroupViewItem Text="Load State"/>        <syncfusion:GroupViewItem Text="Reset State"/>      </syncfusion:GroupView>    </syncfusion:GroupBarItem>  </syncfusion:GroupBar>{% endhighlight %}
 
-{% highlight C# %}myGroupBar.AllowCollapse = true;
+{% highlight C# %}
+myGroupBar.AllowCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,13 +54,13 @@ N> AllowCollapse property settings works only for GroupBar in StackMode.
 
 Collapsing the GroupBar in Stack Mode
 
-Collapsing and expanding the GroupBar in stackmode is done by using IsCollapsed property. This dependency property indicates the state of GroupBar, whether collapsed or expanded. By setting this property to _true_, groupbar is collapsed. By setting _false_, groupbar is expanded. 
+Collapsing and expanding the GroupBar in StackMode is done by using IsCollapsed property. This dependency property indicates the state of GroupBar, whether collapsed or expanded. By setting this property to _true_, groupbar is collapsed. By setting _false_, groupbar is expanded. 
 
 Use the below code snippet to set this property.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" IsCollapsed="True" AllowCollapse="True" VisualMode="StackMode" Name="groupBar">  
 <!-- Adding GroupBarItem -->  

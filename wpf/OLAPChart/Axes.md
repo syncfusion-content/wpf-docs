@@ -97,7 +97,7 @@ N> For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can d
 
 To display the ‘%’ symbol in secondary axis, you need to set the secondary axis label format property. The following code snippet describes the usage of ‘%’ in the secondary axis label:
 
-  {% highlight xml %}
+  {% highlight xaml %}
 
   
 
@@ -118,7 +118,7 @@ To display the ‘%’ symbol in secondary axis, you need to set the secondary a
 
 To display the currency symbol in the secondary axis, you need to set the secondary axis label format property. The following code snippet describes the usage of currency in the secondary axis label:
 
-  {% highlight xml %}
+  {% highlight xaml %}
 
     
 
@@ -135,10 +135,10 @@ To display the currency symbol in the secondary axis, you need to set the second
 
 ## How to customize the OlapAxis label font settings?
 
-The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by speicifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
+The label font settings of the primary and the secondary axis can easily be applied to an OlapChart by specifying the label font properties, which are available under the PrimaryAxis and the SecondaryAxis of the OlapChart.
 
 {% tabs %}
-  {% highlight xml %}
+  {% highlight xaml %}
 
     
 
@@ -234,7 +234,7 @@ The PrimaryAxisLabelPanel visibility can be toggled by setting the PrimaryAxisLa
 The following code snippet is used to collapse the PrimaryAxis label:
 
 {% tabs %}
-  {% highlight xml %}
+  {% highlight xaml %}
 
    
 

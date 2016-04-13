@@ -7,251 +7,251 @@ control: SfChart
 documentation: ug
 ---
 
-# EmptyPoints
+# Empty Points
 
-The data collection that is passed to the chart can have NaN, or infinite values that are considered as empty points. You can show these empty points by setting the ShowEmptyPoints property to True. The representation of empty points can be modified in multiple ways by specifying the properties EmptyPointStyle, EmptyPointValue, EmptyPointInterior, and EmptyPointSymbolTemplate.
-
-The following code example shows how to handle empty points in a series using sample data.
-
-{% tabs %}
-{% highlight xml %}
-
-     <syncfusion:SfChart>
-
-
-
-            <!-- Assign datacontext object for the Chart-->
-
-            <syncfusion:SfChart.DataContext>
-
-                <local:CategoryDataViewModel/>
-
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <!-- Add Legend to the Chart-->
-
-            <syncfusion:SfChart.Legend>
-
-                <syncfusion:ChartLegend/>
-
-            </syncfusion:SfChart.Legend>
-
-
-
-            <!-- Add Axes to the Chart-->
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis/>
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-<!-- Add ColumnSeries to the Chart-->
-
-            <syncfusion:ColumnSeries Label="Sports" ItemsSource="{Binding EmptyPointDatas}"
-
-                   XBindingPath="Category" YBindingPath="Value"
-
-                   ShowEmptyPoints="True" EmptyPointInterior="Red"
-
-                    EmptyPointStyle="Interior"
-
-                    EmptyPointValue="Average"/>
-
-        </syncfusion:SfChart>
-{% endhighlight %}
-
+The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 
 {% highlight C# %}
 
-public class CategoryDataViewModel
+Fruits.Add(new Model() { FruitName = "Mango", People = 5 });
 
-{
+Fruits.Add(new Model() { FruitName = "Apple", People = 27 });
 
-public CategoryDataViewModel()
+Fruits.Add(new Model() { FruitName = "Orange", People = Double.NaN });
 
-{
+Fruits.Add(new Model() { FruitName = "Grapes", People = 15 });
 
-EmptyPointDatas = new ObservableCollection<CategoryData>();
+Fruits.Add(new Model() { FruitName = "Banana", People = 5 });
 
-EmptyPointDatas.Add(new CategoryData("Baseball", 2, 1));
-
-EmptyPointDatas.Add(new CategoryData("Football", 10, 6));
-
-EmptyPointDatas.Add(new CategoryData("Hockey", double.NaN, double.NaN));
-
-EmptyPointDatas.Add(new CategoryData("Basketball", 22, 18));
-
-EmptyPointDatas.Add(new CategoryData("IceHockey", 21, 18));
-
-EmptyPointDatas.Add(new CategoryData("Volleyball", 16, 12));
-
-EmptyPointDatas.Add(new CategoryData("Cricket", 20, 15));
-
-}
-
-
-
-public ObservableCollection<CategoryData> EmptyPointDatas
-
-{
-
-get;
-
-set;
-
-}
-
-}
-
-public class CategoryData : INotifyPropertyChanged
-
-{
-
-private string category;
-
-private double value;
-
-private double value2;
-
-
-
-public CategoryData(string category, double value, double value2)
-
-{
-
-Category = category; Value = value; Value2 = value2;
-
-}
-
-
-
-public string Category
-
-{
-
-get
-
-{ return category; }
-
-set
-
-{
-
-if (category != value)
-
-{
-
-category = value;
-
-OnPropertyChanged("Category");
-
-}
-
-}
-
-}
-
-
-
-public double Value
-
-{
-
-get
-
-{ return value; }
-
-set
-
-{
-
-if (this.value != value)
-
-{
-
-this.value = value;
-
-OnPropertyChanged("Value");
-
-}
-
-}
-
-}
-
-
-
-public double Value2
-
-{
-
-get
-
-{ return value2; }
-
-set
-
-{
-
-if (value2 != value)
-
-{
-
-value2 = value; OnPropertyChanged("Value2");
-
-}
-
-}
-
-}
-
-
-
-void OnPropertyChanged(string propertyName)
-
-{
-
-if (PropertyChanged != null)
-
-{
-
-PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-
-}
-
-}
-
-
-
-public event PropertyChangedEventHandler PropertyChanged;
-
-}
+Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
 
 {% endhighlight %}
-{% endtabs %}
 
-The following is a screenshot of a ColumnSeries with empty points.
+By default, ShowEmptyPoints property is false. So the empty points will not be render as in below screenshots:
 
-![](EmptyPoints_images/EmptyPoints_img1.png)
-
+![](EmptyPoints_images/emptypoint_1.png)
 
 
-![](EmptyPoints_images/EmptyPoints_img2.png)
+![](EmptyPoints_images/emptypoint_2.png)
 
 
-
-![](EmptyPoints_images/EmptyPoints_img3.png)
-
+![](EmptyPoints_images/emptypoint_3.png)
 
 
+## Display Empty Points
+
+You can show these empty points by setting the [`ShowEmptyPoints`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) property as True. So we need to define the value for this empty points and that can be defined using [`EmptyPointValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) property.
+
+This is an enum property having the following values: 
+
+* Zero- Replace all the empty points with zero (0), this is the default value.
+* Average- Replace all the empty points with average value.
+
+The following code examples shows how to display the empty points:
+
+{% highlight xaml %}
+
+<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+
+ShowEmptyPoints="True"                              
+
+ItemsSource="{Binding Fruits}" >
+
+<chart:LineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
+
+</chart:LineSeries.AdornmentsInfo>
+
+</chart:LineSeries>
+
+{% endhighlight %}
+
+
+![](EmptyPoints_images/emptypoint_4.png)
+
+
+Since the [`EmptyPointValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) as Zero by default, it will draw a line to 0 when we set [`ShowEmptyPoint`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) as True.
+
+The following code example shows the [`EmptyPointValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) as Average:
+
+{% highlight xaml %}
+
+<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+
+ShowEmptyPoints="True"     
+
+EmptyPointValue="Average"
+
+ItemsSource="{Binding Fruits}" >
+
+<chart:LineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
+
+</chart:LineSeries.AdornmentsInfo>
+
+</chart:LineSeries>
+
+{% endhighlight %}
+
+![](EmptyPoints_images/emptypoint_5.png)
+
+
+## Customizing Empty Points
+
+You can customize the empty points using [`EmptyPointStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#) property. The following are the values of EmptyPointStyle:
+
+* Interior- Used to define the custom brush for the empty points.
+* Symbol- Used to add symbols for the empty points.
+* Symbol and Interior- This is similar to Symbol, which includes empty point brush also.
+
+### Interior
+
+This option fills an interior indicating the empty points and this custom brush can be defined using the [`EmptyPointInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#) property.
+
+The following code example illustrates the use of [`EmptyPointStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#) and [`EmptyPointInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#):
+
+{% highlight xaml %}
+
+<chart:ColumnSeries  ItemsSource="{Binding EmptyPointDatas}" Interior="#bcbcbc"
+
+XBindingPath="Category" YBindingPath="Value" 
+
+ShowEmptyPoints="True"/>
+
+{% endhighlight %}
+
+![](EmptyPoints_images/emptypoint_6.png)
+
+
+N> This is the default value for [`EmptyPointStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#). So when you enable empty points using [`ShowEmptyPoints`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) , empty point segment render with this [`EmptyPointInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#).
+
+### Symbol
+
+This option is used to add Symbol for the empty points as in the below code example.
+
+{% highlight xaml %}
+
+<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+
+ShowEmptyPoints="True"     
+
+EmptyPointValue="Average"
+
+EmptyPointStyle="Symbol"
+
+ItemsSource="{Binding Fruits}" >
+
+<chart:LineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
+
+</chart:LineSeries.AdornmentsInfo>
+
+</chart:LineSeries>
+
+{% endhighlight %}
+
+![](EmptyPoints_images/emptypoint_7.png)
+
+
+### Symbol and Interior
+
+This option combines above two options, which draw a symbol with defined [`EmptyPointInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#). The following code example shows the use of this value.
+
+{% highlight xaml %}
+
+<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+
+ShowEmptyPoints="True"     
+
+EmptyPointValue="Average"
+
+EmptyPointStyle="SymbolAndInterior"
+
+EmptyPointInterior="Red"
+
+ItemsSource="{Binding Fruits}" >
+
+<chart:LineSeries.AdornmentsInfo>
+
+<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
+
+</chart:LineSeries.AdornmentsInfo>
+
+</chart:LineSeries>
+
+{% endhighlight %}
+
+![](EmptyPoints_images/emptypoint_8.png)
+
+
+### Custom Symbol
+
+You can add any custom shape for the empty point symbol. The following code example shows how to add your custom shapes:
+
+{% highlight xaml %}
+
+<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+
+ShowEmptyPoints="True"     
+
+EmptyPointValue="Average"
+
+EmptyPointStyle="Symbol"
+
+EmptyPointInterior="Red"
+
+ItemsSource="{Binding Fruits}" >
+
+<chart:LineSeries.EmptyPointSymbolTemplate>
+
+<DataTemplate>
+
+<Canvas>
+
+<Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" >
+
+<Ellipse StrokeDashArray="1,1" Height="50" 
+
+Width="50" Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"
+
+Fill="Transparent"/>
+
+<Ellipse  StrokeDashArray="1,3" Height="35" 
+
+Width="35" Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"
+
+Fill="LightGray"/>
+
+</Grid>
+
+</Canvas>
+
+</DataTemplate>
+
+</chart:LineSeries.EmptyPointSymbolTemplate>
+
+{% endhighlight %}
+
+![](EmptyPoints_images/emptypoint_9.png)
+
+
+## EmptyPoints and Series
+
+The following section illustrates few chart types and its behavior with EmptyPoints.
+
+**ColumnSeries** **with** **EmptyPoint** **as** **Average**
+
+![](EmptyPoints_images/emptypoint_10.png)
+
+
+**SplineSeries** **with** **EmptyPoint** **as** **Average**
+
+![](EmptyPoints_images/emptypoint_11.png)
+
+
+**Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
+
+![](EmptyPoints_images/emptypoint_12.png)

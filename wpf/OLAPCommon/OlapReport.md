@@ -37,105 +37,21 @@ All the elements are internally maintained as Item.
 
 ## Properties and Methods
 
-### The OlapReport properties and its descriptions are tabulated:
+### The OlapReport properties and its descriptions:
 
 
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-CalculatedMembers</td><td>
-Used to set and get the calculated members of the OlapReport.</td><td>
-Items</td><td>
-Items</td><td>
-CalculatedMembers</td></tr>
-<tr>
-<td>
-CategoricalElements</td><td>
-Contains the element that are said to be in categorical axis. We can add an element and get the collection of elements that comes under the categorical axis.</td><td>
-Items</td><td>
-Items</td><td>
--</td></tr>
-<tr>
-<td>
-CurrentCubeName</td><td>
-Used to set or get the current cube name of the Report.</td><td>
-string</td><td>
-String</td><td>
--</td></tr>
-<tr>
-<td>
-FilterElements</td><td>
-Contains elements that are subjected to Filter constraints and a filter expression along the measure on which the filter expression is built.</td><td>
-Items</td><td>
-Items</td><td>
-FilterElements</td></tr>
-<tr>
-<td>
-Name</td><td>
-Used to set or get the report name.</td><td>
-string</td><td>
-String</td><td>
--</td></tr>
-<tr>
-<td>
-SeriesElements</td><td>
-Contains elements that are said to be in series axis. We can add an element and get the collection of elements that comes under the categorical axis.</td><td>
-Items</td><td>
-Items</td><td>
--</td></tr>
-<tr>
-<td>
-ShowEmptyColumnData</td><td>
-Used to show/hide the empty column in the result set.</td><td>
-bool</td><td>
-True/False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowemptyRowData</td><td>
-Used to show/hide the empty row in the result set.</td><td>
-bool</td><td>
-True/False</td><td>
--</td></tr>
-<tr>
-<td>
-ShowExpanders</td><td>
- Used to show/hide the expander buttons in the Olap contorls. </td><td>
-bool</td><td>
-True/False</td><td>
-ShowExpanders</td></tr>
-<tr>
-<td>
-SliceElements</td><td>
-Contains the element that are said to be in slicer axis. We can add an element and get the collection of elements that comes under the categorical axis.</td><td>
-Items</td><td>
-Items</td><td>
--</td></tr>
-<tr>
-<td>
-TogglePivot</td><td>
-Used to swap the elements in the column axis and row axis.</td><td>
-bool</td><td>
-True/False</td><td>
--</td></tr>
-<tr>
-<td>
-Tag</td><td>
-Holds the backup information of the OLAP Report.</td><td>
-CLR. </td><td>
-String </td><td>
-Tag property in OlapReport</td></tr>
-</table>
-
-
+* **CalculatedMembers** - Used to set and get the calculated members of the OlapReport.
+* **CategoricalElements** - Contains the element that are said to be in categorical axis. We can add an element and get the collection of elements that comes under the categorical axis.
+* **CurrentCubeName** - Used to set or get the current cube name of the Report.
+* **FilterElements** - Contains elements that are subjected to Filter constraints and a filter expression along the measure on which the filter expression is built.
+* **Name** - Used to set or get the report name.
+* **SeriesElements** - Contains elements that are said to be in series axis. We can add an element and get the collection of elements that comes under the categorical axis.
+* **ShowEmptyColumnData** - Used to show/hide the empty column in the result set.
+* **ShowEmptyRowData** - Used to show/hide the empty row in the result set.
+* **ShowExpanders** - Used to show/hide the expander buttons in the Olap control.
+* **SliceElements** - Contains the element that are said to be in slicer axis. We can add an element and get the collection of elements that comes under the categorical axis.
+* **TogglePivot** - Used to swap the elements in the column axis and row axis.
+* **Tag** - Holds the backup information of the OLAP Report.
 
 
 ![](OlapReport_images/OlapReport_img1.png)
@@ -587,10 +503,6 @@ olapReport.SeriesElements.SubSetElement = subSetElementRow
 
 This feature enables you to specify a range for filter elements in the slicer field. You have to specify the start and end value to set the range. Multiple ranges can be added for the filter elements in slicer field. 
 
-### Use Case Scenarios
-
-It is not required to enter each member manually. This makes filtering easy.   
-
 
 ### Class Table
 
@@ -602,7 +514,7 @@ Description </th></tr>
 <tr>
 <td>
 SlicerRangeFiltersInfo</td><td>
-Used to filter values from one range to another. Unique name of the member element for start and end value need to be specified. The name of the member element can also be specified for start and end value when custumer builds the unique name*.</td></tr>
+Used to filter values from one range to another. Unique name of the member element for start and end value need to be specified. The name of the member element can also be specified for start and end value when customer builds the unique name*.</td></tr>
 </table>
 
 
@@ -637,53 +549,11 @@ Name for dimension, hierarchy, level, start value and end value.</td></tr>
 
 Following table consists of SlicerRangeFiltersInfo class’s property:
 
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-DimensionName</td><td>
-Specify the dimension name</td><td>
-None</td><td>
-String </td><td>
-NA</td></tr>
-<tr>
-<td>
-HierarchyName</td><td>
-Specify the hierarchy name</td><td>
-None</td><td>
-String </td><td>
-NA</td></tr>
-<tr>
-<td>
-LevelName</td><td>
-Specify the level name</td><td>
-None</td><td>
-String </td><td>
-NA</td></tr>
-<tr>
-<td>
-StartValue</td><td>
-Specify the unique name or name of the member element* </td><td>
-None</td><td>
-String </td><td>
-NA</td></tr>
-<tr>
-<td>
-EndValue</td><td>
-Specify the unique name or name of the member element* </td><td>
-None</td><td>
-String </td><td>
-NA</td></tr>
-</table>
-
+* **DimensionName** - Specify the dimension name
+* **HierarchyName** - Specify the hierarchy name
+* **LevelName** - Specify the level name
+* **StartValue** - Specify the unique name or name of the member element
+* **EndValue** - Specify the unique name or name of the member element
 
 * Name of the member element can be specified only when the name is formed with dimension name, hierarchy name and level name. 
 

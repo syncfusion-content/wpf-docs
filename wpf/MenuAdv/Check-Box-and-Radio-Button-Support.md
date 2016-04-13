@@ -19,7 +19,7 @@ MenuAdv helps users to use MenuItemAdv with the CheckBox or RadioButton support.
 
 If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be grouped based on the value of the GroupName property and end user can select only one item from the group. Similarly, if you set the CheckIcon property to CheckBox, then MenuItemAdv can be checked and unchecked. The Check Box and Radio Button support can be used in an application, as shown in the following the code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -96,7 +96,7 @@ bool(false)</td></tr>
 <tr>
 <td>
 CheckIconType</td><td>
-Gets or sets the CeckIconType of MenuItemAdv.</td><td>
+Gets or sets the CheckIconType of MenuItemAdv.</td><td>
 DependencyProperty</td><td>
 CheckIconType(CheckBox)</td></tr>
 <tr>

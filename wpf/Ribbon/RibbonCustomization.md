@@ -180,7 +180,7 @@ After the event is handled, the output gets display as follows
 ![](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img5.jpg)
 
 
-# Add Items to QuickAccesToolBar (QAT)
+# Add Items to QuickAccessToolBar (QAT)
 
 Quick Access Toolbar is used to group the frequently used commands above or under the Ribbon, and it allows to add or remove commands to it. It is placed next to the ApplicationMenu to provide end users with the easy accessibility.
 
@@ -355,7 +355,7 @@ The “Paste” QATMenuItem has been selected and it is displayed as one of the 
 
 ## Add items to QAT Customize Window
 
-To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particluar tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
+To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
 
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img4.jpg)
 
@@ -388,7 +388,7 @@ QAT can be Customized further by using the following options
 
 1. Add
 
-	In the QAT Customized window, the list of Commands is available. The Commands can be filtered only from the Particluar tab by using `Choose commands from` option. Then, select the commands to be added to the QAT and add the command to Right Pane of the QAT Dialog by clicking `Add` Button. Finally, Click Ok. Now, the selected command gets added in the QAT.
+	In the QAT Customized window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the commands to be added to the QAT and add the command to Right Pane of the QAT Dialog by clicking `Add` Button. Finally, Click Ok. Now, the selected command gets added in the QAT.
 
 	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img1.jpg)
 
@@ -425,7 +425,7 @@ QAT can also support to customize Ribbon Tab and RibbonBar while running. To cus
 
 2. Then, select the `Customize Ribbon` options from the left-side column.
 
-3. You can add `Ribbontab` and `Ribbonbar` by selecting New Tab and New Group Options Respectively.
+3. You can add `RibbonTab` and `RibbonBar` by selecting New Tab and New Group Options Respectively.
 
 	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img8.jpg)
 
@@ -455,7 +455,7 @@ The steps to customize the Ribbon Item are as follows
 
 1. The `Choose commands from` drop-down list is used to filter the commands only from the Particular Tab.
 
-2.  To add the item under the right-side column of a newly added `Ribbonbar` and `Ribbontab`, select the item from left-side column and click the `Add` button.
+2.  To add the item under the right-side column of a newly added `RibbonBar` and `RibbonTab`, select the item from left-side column and click the `Add` button.
 
 	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLba692c1.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img13.jpg)
 
@@ -465,7 +465,7 @@ The steps to customize the Ribbon Item are as follows
 
 4. The order of the RibbonItem within the RibbonBar can be changed by using `Up` and `Down` arrow
 
-5. By using the Rename option,the RibbonIrem can be renamed
+5. By using the Rename option,the RibbonItem can be renamed
 
 	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLbb2d36a.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img15.jpg)
 

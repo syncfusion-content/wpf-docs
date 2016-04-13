@@ -1,62 +1,80 @@
 ---
 layout: post
-title: Path support | Carousel | wpf | Syncfusion
-description: path support
+title: Deals with Path Support provided by Carousel control for WPF
+description: Explains about Path Support provided by Carousel control for WPF
 platform: wpf
 control: Carousel
 documentation: ug
 ---
 
-# Path support
+# Path Support
 
-Carousel panel arrange its children on a path. You can specify any path and it can be created easily using expression blend. You can arrange the items in any path.
+Carousel panel arrange its children on a path. User can specify any path and it can be created easily using expression blend.
 
-## Adding Path support to an Application 
+## Adding Path support to an Application
 
-You can set custom path using Path property of Carousel control as shown in the below example.
+To set the custom path, use **Path** Property of Carousel control as shown in the below code example
 
+{% highlight xaml %}
+<syncfusion:Carousel x:Name="carousel"   
 
+VisualMode="CustomPath"
 
-{% highlight xml %}
+VerticalAlignment="Top"
 
+ItemsPerPage="5"
 
+RadiusX="250" Height="257" Width="558" SelectedIndex="4">
 
-<syncfusion:Carousel x:Name="carousel" Height="400" Width="450">
-    <syncfusion:Carousel.Path>
-        <Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-    </syncfusion:Carousel.Path>
+<syncfusion:Carousel.Path>
+
+<Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+</syncfusion:Carousel.Path>
+
+<syncfusion:Carousel.ItemTemplate>
+
+<DataTemplate>
+
+<Border Height="100" Width="100" Background="LightBlue">
+
+<ContentControl Content="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+</Border>
+
+</DataTemplate>
+
+</syncfusion:Carousel.ItemTemplate>
+
 </syncfusion:Carousel>
+
+
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
 
-![](Path-support_images/Path-support_img1.png)
+{% endhighlight %}
 
-
-
+![](Path-Support_images/Path-Support_img1.jpeg)
 
 
 ## Properties
 
-
-
-
 <table>
 <tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+<td>
+Property<br/><br/></td><td>
+Description<br/><br/></td><td>
+Type<br/><br/></td><td>
+Data Type<br/><br/></td></tr>
 <tr>
 <td>
-Path</td><td>
-Sets the CustomPath for the Carousel control.</td><td>
-DependencyProperty</td><td>
-CustomEditorCollection</td><td>
-</td></tr>
+Path<br/><br/></td><td>
+Sets the CustomPath for the Carousel control<br/><br/></td><td>
+DependencyProperty<br/><br/></td><td>
+CustomEditorCollection<br/><br/></td></tr>
 </table>
-
-

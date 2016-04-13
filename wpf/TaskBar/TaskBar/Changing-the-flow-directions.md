@@ -27,7 +27,7 @@ Sets the flow direction for the TaskBar. The options provided are as follows.Lef
 Here is the code for setting this property.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

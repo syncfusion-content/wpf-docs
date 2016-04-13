@@ -228,7 +228,7 @@ The following are the brushes that can be customized in Metro Theme.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -263,9 +263,9 @@ Metro Customization Demo
 
 ## ResourceDictionary Path for Syncfusion Themes
 
-Resouce Dictionary path for Syncfusion themes are tabulated below:
+Resource Dictionary path for Syncfusion themes are tabulated below:
 
-Replace “< CurrentVsiualStyle>“  with the  required  Visualstyle name 
+Replace “< CurrentVisualStyle>“  with the  required  VisualStyle name 
 
 Ex:
 
@@ -273,7 +273,7 @@ To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the a
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <ResourceDictionary>
 
@@ -349,7 +349,7 @@ ComboBoxAdv</td><td>
 <tr>
 <td>
 ChromelessWindow</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ChromeliessWindow/Themes/<CurrentVisualStyle>.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ChromelessWindow/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 DateTimeEdit</td><td>
@@ -384,7 +384,7 @@ GroupBar</td><td>
 /Syncfusion.Tools.WPF;component/Controls/GroupBar/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
-HierarchyNaviagator</td><td>
+HierarchyNavigator</td><td>
 /Syncfusion.Tools.WPF;component/Controls/HierarchyNavigator/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>

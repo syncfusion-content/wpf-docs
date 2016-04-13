@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Digital Characters | SfDigitalGauge  | wpf | Syncfusion
-description: digital characters
+title: Digital Characters | SfDigitalGauge | Wpf | Syncfusion
+description: Digital Characters 
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
@@ -9,152 +9,116 @@ documentation: ug
 
 # Digital Characters
 
-The Digital Characters in the Digital Gauge can be viewed in different types of segments. The digital characters are set to the Digital Gauge by using the Value property of type string.
+The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the **Value** property of type string.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:SfDigitalGauge Value="GAUGE" />    
+    <syncfusion:SfDigitalGauge Value="GAUGE" />    
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfDigitalGauge digitalgauge = new SfDigitalGauge();
-
-digitalgauge.Value = "GAUGE";
-
-this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    digitalgauge.Value = "GAUGE";
+    this.Grid.Children.Add(digitalgauge);
 
 {% endhighlight %}
-
 {% endtabs %}
 
-### Screenshot:
+![](Digital-Characters_images/Digital-Characters_img1.jpeg)
 
-![](Digital-Characters_images/Digital-Characters_img1.png)
 
 ## 7-Segments
 
-The digital characters set with the value property of the Digital Gauge are displayed by default 7-segments. Rather than using the alphabets, these are mainly used to display numbers. The type of segments can be set by using the CharacterType property.
+The digital characters which are set as the value property of the digital gauge are displayed by default 7-segments. Rather than using the alphabets, these are mainly used to display numbers. The type of segments can be set by the **CharacterType** property.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:SfDigitalGauge Value="12345"  CharacterType="SegmentSeven" />
+    <syncfusion:SfDigitalGauge Value="12345"  CharacterType="SegmentSeven" />
 
 {% endhighlight %}
-
 
 {% highlight c# %}
 
-SfDigitalGauge digitalgauge = new SfDigitalGauge();
-
-digitalgauge.Value = "12345";
-
-digitalgauge.CharacterType = CharacterType.SegmentSeven;
-
-this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    digitalgauge.Value = "12345";
+    digitalgauge.CharacterType = CharacterType.SegmentSeven;
+    this.Grid.Children.Add(digitalgauge);
 
 {% endhighlight %}
-
 {% endtabs %}
 
-### Screenshot:
-
-![](Digital-Characters_images/Digital-Characters_img2.png)
+![](Digital-Characters_images/Digital-Characters_img2.jpeg)
 
 ## 14-Segments
 
-The digital characters set with the value property of the Digital Gauge are displayed by 14 segments. It is used to display both alphabets and numbers. 
+The digital characters which are set as the value property of the digital gauge are displayed by 14 segments. These type of characters are used to display both alphabets and numbers. 
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" />
+    <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    digitalgauge.Value = "SYNCFUSION";
+    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digitalgauge);
 
-digitalgauge.Value = "SYNCFUSION";
-
-digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-
-this.Grid.Children.Add(digitalgauge);
-			
 {% endhighlight %}
-
 {% endtabs %}
 
-
-### Screenshot:
-
-![](Digital-Characters_images/Digital-Characters_img3.png)
+![](Digital-Characters_images/Digital-Characters_img3.jpeg)
 
 ## 16-Segments
 
-The digital characters set with the value property of the digital gauge are displayed by 16 segments. It is used to display both alphabets and numbers. 
+The digital characters which are set as the value property of the digital gauge are displayed by 16 segments. These type of characters are also used to display both alphabets and numbers. 
 
 {% tabs %}
-
 {% highlight xaml %}
 
-  <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentSixteen" /> 
-  
+    <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentSixteen" />
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    digitalgauge.Value = "SYNCFUSION";
+    digitalgauge.CharacterType = CharacterType.SegmentSixteen;
+    this.Grid.Children.Add(digitalgauge);
 
-digitalgauge.Value = "SYNCFUSION";
-
-digitalgauge.CharacterType = CharacterType.SegmentSixteen;
-
-this.Grid.Children.Add(digitalgauge);
-			
 {% endhighlight %}
-
 {% endtabs %}
 
-
-### Screenshot:
-
-![](Digital-Characters_images/Digital-Characters_img4.png)
+![](Digital-Characters_images/Digital-Characters_img4.jpeg)
 
 ## 8*8 Dot Matrix Segments
 
-The digital characters set with the value property of the Digital Gauge are displayed by eight cross eight dot matrix segments. It is used to display special characters along with the alphabets and numbers. 
+The digital characters which are set as the value property of the digital gauge are displayed by eight cross eight dot matrix segments. These type of characters are used to display special characters along with the alphabets and numbers. 
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="EightCrossEightDotMatrix" />
+    <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="EightCrossEightDotMatrix" />
 
 {% endhighlight %}
-
 
 {% highlight c# %}
-  
-SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
-digitalgauge.Value = "SYNCFUSION";
+    SfDigitalGauge digitalgauge = new SfDigitalGauge();
+    digitalgauge.Value = "SYNCFUSION";
+    digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
+    this.Grid.Children.Add(digitalgauge);
 
-digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
-
-this.Grid.Children.Add(digitalgauge);
-			
 {% endhighlight %}
+{% endtabs%}
 
-{% endtabs %}
+![](Digital-Characters_images/Digital-Characters_img5.jpeg)
 
-### Screenshot:
-
-![](Digital-Characters_images/Digital-Characters_img5.png)

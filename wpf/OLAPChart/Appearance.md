@@ -60,32 +60,15 @@ A sample, which demonstrates all the appearance properties, is available in the 
 
 The Chart Appearance dialog box of the OLAP Chart provides options to set the Chart Type, Chart Color, Chart Legend Position, and Chart Legend and Legend Check Box Visibility.
 
-The following table lists the properties and methods that are used to customize the Chart Style and Legends programmatically:
+The following lists the properties and methods that are used to customize the Chart Style and Legends programmatically:
 
-### Property table
+### Properties 
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ChartType</td><td>
-Sets the chart type for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-ColorModel.Palette</td><td>
-Specifies the chart color for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-Legend.Visibility</td><td>
-Specifies the visibility of the Chart Legend.The options included are as follows:* Visible* Collapsed</td></tr>
-<tr>
-<td>
-<br>Legend.CheckBoxVisibility</td><td>
-Specifies the visibility of the Chart Legend Check Box.The options included are as follows:* Visible* Collapsed</td></tr>
-</table>
+* **ChartType** - Sets the chart type for the OLAP Chart control.
+* **ColorModel.Palette** - Specifies the chart color for the OLAP Chart control.
+* **Legend.Visibility** - Specifies the visibility of the Chart Legend.The options included are as follows:* Visible* Collapsed
+* **Legend.CheckBoxVisibility** - Specifies the visibility of the Chart Legend Check Box.The options included are as follows:* Visible* Collapsed
+
 
 ### Methods table
 
@@ -99,8 +82,6 @@ Description</th></tr>
 ChartDockPanel.SetDock</td><td>
 Specifies the position of the Chart Legend.The options included are as follows:* Right* Left* Top* Bottom* Floating</td></tr>
 </table>
-
-
 
 The following code examples illustrate how to customize the Chart Style and Legends:
 
@@ -170,32 +151,15 @@ A sample, which demonstrates all the appearance properties, is available in the 
 
 The Chart Appearance dialog box of the OLAP Chart also provides options to set the Chart Border and the Background Style.
 
-The following table lists the properties that are used to customize the Chart Border and the Background Style programmatically:
+The following lists the properties that are used to customize the Chart Border and the Background Style programmatically:
 
-### Property Table
+### Properties 
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BorderThickness</td><td>
-Sets the border thickness for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-BorderBrush</td><td>
-Specifies the border color for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-Background</td><td>
-Specifies the background color for the OLAP Chart control.</td></tr>
-<tr>
-<td>
-GridBackground</td><td>
-Specifies the interior background color for the OLAP Chart control.</td></tr>
-</table>
+* **BorderThickness** - Sets the border thickness for the OLAP Chart control.
+* **BorderBrush** - Specifies the border color for the OLAP Chart control.
+* **Background** - Specifies the background color for the OLAP Chart control.
+* **GridBackground** - Specifies the interior background color for the OLAP Chart control.
+
 The following code examples illustrate how to customize the Chart Border and the Background Style:
 
 
@@ -305,26 +269,12 @@ The Appearance dialog box enables you to customize the Labels of the Primary and
 
 OLAP Chart provides support to dynamically change the Font Family, Font Color, and Font Weight for the Labels of the Primary Axis.
 
-### Property Table
+### Properties
 
-<table>
-<tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontFamily</td><td>
-Specifies the font family for the label of the Primary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelForeground</td><td>
-Specifies the font color for the label of the Primary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontWeight</td><td>
-Specifies the font weight for the label of the Primary Axis.</td></tr>
-</table>
+* **PrimaryAxis.LabelFontFamily** - Specifies the font family for the label of the Primary Axis.
+* **PrimaryAxis.LabelForeground** - Specifies the font color for the label of the Primary Axis.
+* **PrimaryAxis.LabelFontWeight** - Specifies the font weight for the label of the Primary Axis.
+
 The following code examples illustrate how to customize the font style of the Primary Axis:
 
 
@@ -365,27 +315,11 @@ Me.olapchart1.PrimaryAxis.LabelFontWeight = FontWeights.Bold
 
 OLAP Chart provides support to dynamically change the Font Family, Font Color, and Font Weight for the Labels of the Secondary Axis.
 
-### Property Table
+### Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontFamily</td><td>
-Specifies the font family for the label of the Secondary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelForeground</td><td>
-Specifies the font color for the label of the Secondary Axis.</td></tr>
-<tr>
-<td>
-PrimaryAxis.LabelFontWeight</td><td>
-Specifies the font weight for the label of the Secondary Axis.</td></tr>
-</table>
-
+* **PrimaryAxis.LabelFontFamily** - Specifies the font family for the label of the Secondary Axis.
+* **PrimaryAxis.LabelForeground** - Specifies the font color for the label of the Secondary Axis.
+* **PrimaryAxis.LabelFontWeight** - Specifies the font weight for the label of the Secondary Axis.
 
 The following code examples illustrate how to customize the font style of the Secondary Axis:
 

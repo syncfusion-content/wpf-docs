@@ -209,7 +209,7 @@ To customize the FastLine chart, use the Pen property of ChartFastSeriesPresente
 
 The following code illustrates this: 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="series" Type="FastLine" IsIndexed="True"  Interior="LightBlue" >
 
@@ -296,7 +296,7 @@ Draws the spline when set to paths {{ '_Data_' | markdownify }} property.</td></
 The following code example illustrates the template for the FastSpline chart:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <DataTemplate x:key="{x:Type local:ChartFastSplineSegment}">
@@ -312,12 +312,6 @@ The following code example illustrates the template for the FastSpline chart:
 </DataTemplate>
 {% endhighlight  %}
 
-### Sample Link
-
-A sample for FastSpline is placed in the following location:
-
-[http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast Charts/Fast](http://svn.syncfusion.com/svn/studio/Source/releaseprep/11.1.0.1/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Fast%20Charts/) Chart Types Demo
-
 ### Adding FastSpline Chart to an Application 
 
 To add FastSpline chart to an application do the following:
@@ -331,7 +325,7 @@ To add FastSpline chart to an application do the following:
 ### Code Example
 
 The following code example illustrates the usage of FastSpline charts.
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -1758,7 +1752,7 @@ _..My Documents\Syncfusion\Essential Studio\<Version Number>\WPF\Chart.WPF\Sampl
 The following code example illustrate the usage of Fast Column charts.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Type="FastColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
@@ -2120,7 +2114,7 @@ A sample that demonstrates the StackingArea100 chart type is available in the fo
 
 The StackingArea100 chart type can be added into a chart area through the following code example:
 
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:Chart>
 
@@ -2159,7 +2153,7 @@ One or more</td></tr>
 ### Overriding Data Template for Chart Series
 
 The data template for a 100% stacked area chart can be overridden by changing the default template as shown in the following code example.
-{% highlight xml %}
+{% highlight xaml %}
 [XAML: Default Template]
 
 
@@ -2570,7 +2564,7 @@ one or more</td></tr>
 </table>
 PyramidType Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -2720,7 +2714,7 @@ reference to series-owner</td></tr>
 ### Customizing the Height and Width of the Scatter Chart
 
 You can modify the size of the Scatter chart by using the Height and Width properties of Scatter-Type, as shown in the following code sample:
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="Series1" Type="Scatter" 
 
@@ -2812,7 +2806,7 @@ reference to series-owner</td></tr>
 </table>
 The following code example illustrates the usage of Fast Scatter charts.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Type="FastScatter" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
@@ -2839,7 +2833,7 @@ Customizing the Height and Width of the Fast Scatter Chart
 You can modify the size of the Fast Scatter chart by using the Height and Width properties of FastScatter-Type, as shown in the following code sample:
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="Series1" Type="FastScatter" 
 
@@ -3406,9 +3400,9 @@ one or more</td></tr>
 Number of series</td><td>
 one or more</td></tr>
 </table>
+
 PointAndFigure Customization
 
-_PointAndFigure Customization_
 
 <table>
 <tr>
@@ -4002,7 +3996,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 The following code illustrates the creation of Fast High Low (HiLo) Open Close charts.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Type="HiLoOpenClose" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
@@ -4400,7 +4394,7 @@ Adding Support for IsClosed and DrawType in Radar and Polar Charts to an Applica
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 Polar Chart
 
@@ -4562,7 +4556,7 @@ The following code example illustrates the usage of Fast Stacking Column charts.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Type="FastStackingColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
@@ -4760,7 +4754,7 @@ LowestWeightGradient,  MedianWeightGradient,                          HighestWei
 ### Setting Gradient Brush for a Heat Map Control
 
 The following code is used to set a gradient brush for a heat map control.
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:HeatMapControl Grid.Row="0" x:Name="heatMap" IsGradientBrush="True"  LowestWeightGradient="{StaticResource SeriesBInterior}"  
 
@@ -4832,7 +4826,7 @@ Adding Text Wrapping Behavior in HeatMapItem to an Application
 
 To add the text wrapping support to the HeatMapItem:
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Wrap"/>
 
@@ -4852,7 +4846,7 @@ To shrink the text for the HeatMapItem.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Shrink"/>
 
@@ -4896,7 +4890,7 @@ Adding FastScatter to an Application
 FastScatter and FastColumn Chart types can be added using the property Type in ChartSeries.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 //Add FastScatter chart type to the series.
 
@@ -4918,7 +4912,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastScatter.png](Chart-Controls_images/Chart-Controls_img126.png)
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 //Add FastColumn chart type to the series.
 
@@ -4949,7 +4943,7 @@ Customizing the Height and Width of the Fast Scatter Chart
 You can modify the size of the Fast Scatter chart by using the Height and Width properties of FastScatter-Type, as shown in the following code example:
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Name="Series1" Type="FastScatter" 
 

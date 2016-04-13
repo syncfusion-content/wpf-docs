@@ -58,7 +58,7 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 
 3. Drag the MenuAdv to the designer. This will generate an empty menu bar. 
-4. To add the MenuItemAdvs to the MenuAdv control, select the MenuAdv and go to Properties area.
+4. To add the MenuItemAdv's to the MenuAdv control, select the MenuAdv and go to Properties area.
 5. Click Items (Collection) under Common Properties.
 
 
@@ -88,7 +88,7 @@ N> You can customize the appearance of the MenuItemAdv using the template-editin
 The MenuAdv control can also be created through XAML. The following code example illustrates this.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

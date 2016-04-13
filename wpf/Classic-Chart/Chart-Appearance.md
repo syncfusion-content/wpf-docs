@@ -39,7 +39,7 @@ ChartAreaStyleLegendStyleSeriesStylePrimaryAxisStyleNote: Type - Style</td></tr>
 The styles for a chart area, series, legend, and axis can be customized by using the following code.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sync:Chart x:Name="Chart1" ChartVisualStyle="ChocolateBlend">
 
@@ -84,7 +84,7 @@ When the code runs, the following output displays.
 Essential Chart for WPF provides a number of built-in skins that delivers the chart with appealing look and feel with just one property, the VisualStyle property of the class SkinStorage from the Shared.WPF assembly. In addition for the skins getting applied to the window and Window title Bar, the skins will also be applied to all parts of the chart such as Chart Area and Chart Legend.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart Grid.Column="0"  syncfusion:SkinStorage.VisualStyle="Office2007Blue" >
 
@@ -257,7 +257,7 @@ The chart animation can be enabled by setting EnableAnimation property to _true_
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries Type="Column" EnableEffects="True" Label="Mark" EnableAnimation="{Binding ElementName=enableanimation,
 

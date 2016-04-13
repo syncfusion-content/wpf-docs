@@ -40,7 +40,7 @@ myDateTimeEdit.DateTime = null;
 
 ### Properties
 
-_Edit property table_
+Edit property table
 
 <table>
 <tr>

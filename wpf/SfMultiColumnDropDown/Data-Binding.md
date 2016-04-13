@@ -12,7 +12,7 @@ documentation: ug
 In order to display the data in the SfMultiColumnDropDown control, bind the data into the control by using ItemsSource property.
 
 The following code example illustrates how bind the itemsSource to the SfMulticolumnDropDownControl in XAML.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -44,7 +44,7 @@ The following screenshot illustrates the output of the above code.
 
 ### Binding Collection in CodeBehind
 
-The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in codebehind.
+The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in code behind.
 
 {% highlight C# %}
  
@@ -216,7 +216,7 @@ public class Data:INotifyPropertyChanged
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

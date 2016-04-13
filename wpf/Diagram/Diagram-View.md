@@ -184,7 +184,7 @@ NodeCollection</td><td>
 No</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -545,7 +545,7 @@ Bounds can be specified in two ways,
 * Through Code Behind
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -705,7 +705,7 @@ The DiagramPage can be created for DiagramView in following two ways,
 * Through Code Behind
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2016,7 +2016,7 @@ The horizontal and vertical grid lines can be enabled or disabled using the Show
 The following code can be used to set these properties.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -2145,7 +2145,7 @@ No</td></tr>
 
 The following code can be used to set these properties.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

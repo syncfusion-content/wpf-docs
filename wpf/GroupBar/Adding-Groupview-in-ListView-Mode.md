@@ -7,7 +7,7 @@ control: GroupBar
 documentation: ug
 ---
 
-# Adding Groupview in ListView Mode
+# Adding GroupView in ListView Mode
 
 You can arrange GroupView Items in list view mode by using the IsListViewMode property. This property is used to enable or disable the layout of items in a GroupView in the ListView mode.
 
@@ -15,7 +15,7 @@ You can arrange GroupView items in list view mode using the following code.
 
 
 {% tabs %}
-{% highlight xml %} 
+{% highlight xaml %} 
 <!-- Adding GroupBar that have visual mode is Multiple Expansion -->
 <syncfusion:GroupBar Height="300" Width="230" Name="groupBar"> 
  <!-- Adding GroupBarItem --> 

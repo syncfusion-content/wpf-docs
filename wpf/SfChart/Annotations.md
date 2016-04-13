@@ -63,13 +63,13 @@ Gets or sets the FontStyle that represents the FontStyle for the text of the Ann
 <tr>
 <td>
 FontWeight</td><td>
-Gets or sets the FontWeight the FontWeight for the text of the Annotation.</td></tr>
+Gets or sets the FontWeight that represents the FontWeight for the text of the Annotation.</td></tr>
 </table>
-Events
 
-The following events are supported by Annotation.
 
 ### Annotation Events
+
+The following events are supported by Annotation.
 
 <table>
 <tr>
@@ -82,7 +82,7 @@ Selected           </td><td>
 Occurs when annotation is selected.</td></tr>
 <tr>
 <td>
-UnSlected     </td><td>
+UnSelected     </td><td>
 Occurs when annotation is unselected.</td></tr>
 <tr>
 <td>
@@ -134,13 +134,14 @@ Occurs when the mouse pointer leaves the bounds of the annotation.</td></tr>
 
 TextAnnotations are used to add simple text in specific points over the chart area. You can customize the TextAnnotation using properties like FontFamily, FontSize.
 
+
 ### Rotate the TextAnnotation
 
 The Angle property is used to get or set the angle for rotating the Annotation. 
 
 The following code example and screenshot demonstrate the usage of TextAnnotation in SfChart.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>
 
@@ -154,9 +155,7 @@ The following code example and screenshot demonstrate the usage of TextAnnotatio
 
 
 
-## API
-
-### Text Annotation API
+### Text Annotation 
 
 <table>
 <tr>
@@ -173,7 +172,7 @@ Gets or sets a value to enable the editing support for annotation.</td></tr>
 
 SfChart provides you with an editing option for the text in any annotations. The following code example and screenshot demonstrate how to edit the text in Annotations.
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <syncfusion:SfChart.Annotations>
 
@@ -227,7 +226,7 @@ Gets or sets the double value that represents the Y2 Coordinate for the ImageAnn
 
 The following code demonstrates how to add ImageAnnotation to chart control.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -249,13 +248,13 @@ The following code demonstrates how to add ImageAnnotation to chart control.
 
 ShapeAnnotation allows you to add annotations in the form of shapes such as rectangles, ellipses and lines at the specific area of interest, in the chart area. 
 
-#### EllipseAnnotation- Used to draw a circle or an ellipse over the chart area.
+* **EllipseAnnotation** - Used to draw a circle or an ellipse over the chart area.
 
-#### RectangleAnnotation- Used to draw a rectangle over the chart area.
+* **RectangleAnnotation** - Used to draw a rectangle over the chart area.
 
-#### VerticalLineAnnotation- Used to draw a vertical line across the chart area.
+* **VerticalLineAnnotation** - Used to draw a vertical line across the chart area.
 
-#### HorizontalLineAnnotation- Used to add a horizontal line across the chart area.
+* **HorizontalLineAnnotation** - Used to add a horizontal line across the chart area.
 
 The following APIs are used to customize ShapeAnnotations.
 
@@ -295,7 +294,7 @@ RectangleAnnotation
 
 The following code example demonstrates the usage of RectangleAnnotation.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -337,7 +336,7 @@ Gets or sets the LineCap value that represents the cap displayed at the ends of 
 
 The following code demonstrates how to add a LineAnnotation to the chart control.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -359,7 +358,7 @@ The following code demonstrates how to add a LineAnnotation to the chart control
 
 SfChart provides dragging and resizing support for ShapeAnnotations.The following code example and screenshot demonstrate the drag and resize support for a RectangleAnnotation.
 
-{% highlight xml %}
+{% highlight xaml %}
 
   <syncfusion:SfChart.Annotations>
 

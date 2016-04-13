@@ -55,13 +55,13 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
    ![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)
 
 
-   _Assemblies added into References_
-
+   Assemblies added into References
+   {:.caption}
 
 
 4. Press F4 or open the Properties Window to customize the control by setting the required properties.
 
-   ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
+   ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -69,7 +69,7 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
 
 ### Properties
 
-_Property table_
+
 
 <table>
 <tr>
@@ -123,7 +123,7 @@ True/False</td></tr>
 <tr>
 <td>
 Format</td><td>
-Gets or sets the custom format strings. The word given between single quotes is displayed as it is. But the following tokens are replaced with values in the custom format string. d – replaced with days valueh – replaced with hours valuem – replaced with minutes values – replaced with seconds valuez- replaced with milliseconds valueExample :The following format string : d ‘Days’ h ‘Hours’ m ‘Minutes’Displayed as : 10 Days 20 Hours 30 Minutes</td><td>
+Gets or sets the custom format strings. The word given between single quotes is displayed as it is. But the following tokens are replaced with values in the custom format string. d – replaced with days value h – replaced with hours value m – replaced with minutes values – replaced with seconds value z- replaced with milliseconds valueExample :The following format string : d ‘Days’ h ‘Hours’ m ‘Minutes’Displayed as : 10 Days 20 Hours 30 Minutes</td><td>
 string</td><td>
 Any string</td></tr>
 </table>

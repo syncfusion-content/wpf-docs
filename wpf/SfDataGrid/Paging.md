@@ -34,7 +34,7 @@ You can page the data in DataGrid using SfDataPager control. You can refer the f
 The following code example illustrates using DataPager with the SfDataGrid control.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -104,7 +104,7 @@ N> In OnDemand paging, you cannot assign a value for the Source property in SfDa
 The following code example illustrates defining DataPager for OnDemandPaging:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -212,7 +212,7 @@ DataGrid allows you to export to Excel when Paging is enabled. PagedSource expor
 
 ExportAllPages_:_ Specifies whether the method exports all pages for PagedSource. By default, it exports the first page only.To know more about ExportOptions, you can ClickHere.
 
-The following code example illustrates how to use pageoptions in DataGrid.
+The following code example illustrates how to use page options in DataGrid.
 
 
 {% highlight C# %}
@@ -241,7 +241,7 @@ ExportPageOptions.ExportToDifferentSheets_:_ You can export each page in differe
 
 ExportPageOptions.ExportToSingleSheet_:_ You can export all the pages in single sheet.
 
-The following code example illustratse how to use ExportPageOptions in DataGrid.
+The following code example illustrate how to use ExportPageOptions in DataGrid.
 
 
 {% highlight C# %}

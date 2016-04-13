@@ -15,16 +15,12 @@ The filter criteria are specified by the OlapGridDataConditionalFormat.Condition
 
 The style for each ConditionalFormat can be specified using OlapGridDataConditionalFormat.CellStyle property which should be of type OlapGridCellStyle.
 
-### Use Case Scenarios
-
-Conditional Formatting can be used in Marketing scenarios, where you can easily track the product sales rate of different regions.
-
 ## Adding Conditional Formatting 
 
 The following code snippets show how to create an OlapGrid and to add Conditional Formats.
 
 {% tabs %}
-  {% highlight xml %}
+  {% highlight xaml %}
 
     
 

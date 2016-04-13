@@ -43,7 +43,7 @@ Return Type</th></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>
-Converts htmlstream into DocumentAdv.</td><td>
+Converts HTML stream into DocumentAdv.</td><td>
 (Stream stream)(string htmlstring)</td><td>
 NA</td><td>
 DocumentAdv</td></tr>
@@ -171,7 +171,7 @@ Description</th></tr>
 <td>
 ConvertToDocument</td><td>
 void</td><td>
-1. DocumentAdv documentadv 2. Stream documentStream3. String documentExtension (.doc, .docx)</td><td>
+1. DocumentAdv documentadv 2. Stream documentStream 3. String documentExtension (.doc, .docx)</td><td>
 Converts the DocumentAdv instance to Word document stream.</td></tr>
 </table>
 

@@ -23,7 +23,7 @@ The following code example illustrates how to add the Click Header to Maximize t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800" 
 
@@ -52,7 +52,7 @@ The following code example illustrates how to add the Click Header to Maximize t
 
 ## Properties
 
-_ClickHeaderToMaximize Property Table_
+ClickHeaderToMaximize Property Table
 
 <table>
 <tr>

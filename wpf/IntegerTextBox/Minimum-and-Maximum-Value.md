@@ -15,7 +15,7 @@ Minimum allowed value for the IntegerTextBox. If the new MinValue property value
 
 ## MaxValue
 
-Maximum allowed value for the IntegerTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the Maxvalue.
+Maximum allowed value for the IntegerTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the MaxValue.
 
 ## MinValidation
 
@@ -49,7 +49,7 @@ N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 {%tabs%}
 
-{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}
+{% highlight xaml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}
 
 {% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;integerTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;integerTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;integerTextBox.MinValueOnExceedMinDigit = true;integerTextBox.MaxValueOnExceedMaxDigit = true;{% endhighlight %}
 

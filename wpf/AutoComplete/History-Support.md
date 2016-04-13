@@ -9,7 +9,7 @@ documentation: ug
 
 # History Support
 
-History support in AutoComplete means, reusage of the items which are already used in the AutoComplete textbox. AutoComplete allows you to enable this history support by setting the value of the IsHistory property to True. AutoComplete guides you to select an item from the list of items which are added to the history, by using the drop-down button to open the drop-down list.
+History support in AutoComplete means, reuse of the items which are already used in the AutoComplete textbox. AutoComplete allows you to enable this history support by setting the value of the IsHistory property to True. AutoComplete guides you to select an item from the list of items which are added to the history, by using the drop-down button to open the drop-down list.
 
 ## Using History Support in an Application 
 
@@ -110,7 +110,7 @@ Void</td><td>
 <tr>
 <td>
 AddHistory()</td><td>
-It should be called to add the item to history.It can be called at any time.This method will add an input object to the history list if IsHistoryEnabled property is set as Ture and these items will only be displayed in the History list which can be opened using the drop-down button. </td><td>
+It should be called to add the item to history.It can be called at any time.This method will add an input object to the history list if IsHistoryEnabled property is set as True and these items will only be displayed in the History list which can be opened using the drop-down button. </td><td>
 (Object obj)The input object must be there in the linked Custom Source.</td><td>
 NA.</td><td>
 Void</td><td>

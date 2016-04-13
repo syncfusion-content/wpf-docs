@@ -1,116 +1,172 @@
 ---
 layout: post
-title: Custom Calculations| PivotGrid | Wpf | Syncfusion
-description: Custom Calculations
+title: 13423-Custom-Calculations
+description: 1.3.4.23 custom calculations
 platform: wpf
-control: PivotGrid
+control: PivotGridControl
 documentation: ug
 ---
 
 # Custom Calculations
 
-Custom Calculations can be applied to the value fields through the following built-in calculation functions:
+**CalculationType** is an enumerator defined in the PivotComputationInfo class which is used to specify the type of the calculation. The various calculation types that are used for performing calculations are as follows:
+ 
+* **NoCalculation** - Remove the custom calculations and restore to original values (default value). Display the Pivot values as default value.
+* **PercentageOfGrandTotal** - Displays a value cell as a percentage of grand total of all value cells of PivotEngine.
+* **PercentageOfColumnTotal** - Displays all value cells in each column as a percentage of its corresponding column total. 
+* **PercentageOfRowTotal** - Displays all value cells in each row as a percentage of its corresponding row total.
+* **PercentageOfParentColumnTotal** - Displays a value cell as a percentage of parent column item values.
+* **PercentageOfParentRowTotal** - Displays a value cell as a percentage of parent row item values.
+* **PercentageOfParentTotal** - Displays a value cell as a percentage of Base Field (Parent Row/Column Total).
+* **Index** - Displays a value cell as an index value based on PivotEngine generation.
+* **Formula** - Displays a calculation based on a well formed algebraic expression involving other calculations.
+* **PercentageOf** - Displays values as a percentage of the value of the Base item in the Base field.
+* **DifferenceFrom** - Displays values as the difference from the value of the Base item in the Base field.
+* **PercentageOfDifferenceFrom** - Displays values as the percentage difference from the value of the Base item in the Base field.
+* **RunningTotalIn** - Displays the value for successive items in the Base field as a running total.
+* **PercentageOfRunningTotalIn** - Calculates the value for successive items in the Base field that are displayed as a running total as a percentage.
+* **RankSmallestToLargest** - Displays the rank of selected values in a specific field, listing the smallest item in the field as 1, and each larger value will have a higher rank value.
+* **RankLargestToSmallest** - Displays the rank of selected values in a specific field, listing the largest item in the field as 1, and each smaller value will have a higher rank value.
 
-*Percentage of Grand Total Cell
+`CalculationType` property is used to achieve this requirement. It can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
 
-*Percentage of Column Total Cell
+If through *XAML*, please refer the below code sample.
 
-*Percentage of Row Total Cell
+{% highlight xaml %}
 
-*Percentage of Parent Total Cell 
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
 
-*Percentage of Parent Column Total Cell
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" CalculationType="PercentageOfColumnTotal" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+</Grid>
 
-*Percentage of Parent Row Total Cell and
+{% endhighlight %}
 
-*Index
+Else if through **Code-behind**, please refer the below code sample.
 
-## Use Case Scenarios
+{% highlight C# %}
 
-The user can easily analyze the specific value field based on the different value cells through the custom calculations. For example, the user can view the sales amount for United States in FY 2011 as a percentage of the whole sales at United States by selecting the Percentage of Parent Total option.
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum, CalculationType = CalculationType.PercentageOfColumnTotal
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
+    }
+}
 
-For an instant,
+{% endhighlight %}
 
-The sales amount in Untied States for FY 2011: $40,000,000.00
+![](Calculation-Type-images/PivotGrid shows percentageofcolumntotal calculation type.png)
 
-The sales amount in United States for all years: $120,000,000.00
+## Providing expression field calculation for Summaries
 
-Hence, the sales amount for FY 2011 is 33.33 % of overall year sales (FY 2008 to FY 2011) at United States.
+To provide calculated field support to summary cells in PivotGrid and to make it behave accordingly, despite any options provided in summaries such as sum, count, max, min, etc…. 
 
-### Properties
+It can be achieved by setting the calculation type as "Formula" and by specifying the appropriate formula. Please refer the below code samples and screen-shots.
 
+{% highlight xaml %}
 
+<Grid>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description </th><th>
-Type**' | markdownify }} </th><th>
-Data Type </th><th>
-Reference links</th></tr>
-<tr>
-<td>
-CalculationType</td><td>
-Gets or sets the CalculationType for the PivotComputationInfo object.</td><td>
-CLR</td><td>
-CalculationType</td><td>
-Class Reference link for CalculationTypeIn PivotAnalysis.Base </td></tr>
-<tr>
-<td>
-BaseField</td><td>
-Gets or sets the BaseField for calculations [Applicable only for the PercentageOfParentTotal calculation type].</td><td>
-CLR</td><td>
-string</td><td>
-Class Reference link for BaseField in PivotAnalysis.Base.</td></tr>
-</table>
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="UnitPrice" CalculationType="Formula" Formula="[Amount] / [Quantity]" />
+        </syncfusion:PivotGridControl.PivotCalculations>
+    </syncfusion:PivotGridControl>
+</Grid>
 
+{% endhighlight %}
 
-### Sample Location
+{% highlight C# %}
 
-The sample is available in the following location:
+public partial class MainWindow: Window {
+    PivotGridControl pivotGrid = new PivotGridControl();
+    public MainWindow() {
+        InitializeComponent();
+        grid1.Children.Add(pivotGrid);
+        pivotGrid.ItemSource = ProductSales.GetSalesData();
+        PivotItem m_PivotItem = new PivotItem() {
+            FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total"
+        };
+        PivotItem m_PivotItem1 = new PivotItem() {
+            FieldHeader = "Date", FieldMappingName = "Date", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem = new PivotItem() {
+            FieldHeader = "Country", FieldMappingName = "Country", TotalHeader = "Total"
+        };
+        PivotItem n_PivotItem1 = new PivotItem() {
+            FieldHeader = "State", FieldMappingName = "State", TotalHeader = "Total"
+        };
+        // Adding PivotItem to PivotRows
+        pivotGrid.PivotRows.Add(m_PivotItem);
+        pivotGrid.PivotRows.Add(m_PivotItem1);
+        // Adding PivotItem to PivotColumns
+        pivotGrid.PivotColumns.Add(n_PivotItem);
+        pivotGrid.PivotColumns.Add(n_PivotItem1);
+        PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {
+            CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
+        };
+        PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
+        };
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
-_<SystemDrive>:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Product Showcase\PivotGrid Demo_
+        PivotComputationInfo m_PivotComputationInfo2 = new PivotComputationInfo() {
+            CalculationName = "Total", FieldName = "UnitPrice", CalculationType = CalculationType.Formula, Formula = "[Amount] / [Quantity]"
+        };;
+        pivotGrid.PivotCalculations.Add(m_PivotComputationInfo2);
+    }
+}
 
-## Implementing Custom Calculations 
+{% endhighlight %}
 
-To show the value cell as a percentage of its summary cells, use the following code snippet:
-
-{% tabs %}
-{% highlight xml %} 
-
-
-<syncfusion:PivotGridControl.PivotCalculations>
-
-                    <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" CalculationName="Amount Total" CalculationType="PercentageOfParentTotal" BaseField="Country" />
-
-</syncfusion:PivotGridControl.PivotCalculations>
-
-{% endhighlight %} 
-
-{% highlight C# %}  
-
-
-this.pivotGrid1.PivotCalculations.Add(new Syncfusion.PivotAnalysis.Base.PivotComputationInfo { FieldName = "Amount", Format = "C", CalculationName = "Total Amount", CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, BaseField = "Country" });
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-Me.pivotGrid1.PivotCalculations.Add(New Syncfusion.PivotAnalysis.Base.PivotComputationInfo() With {.FieldName = "Amount", .Format = "C", .CalculationName = "Total Amount", .CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, .BaseField = "Country"})
-
-{% endhighlight %} 
-{% endtabs %}
-
-To change the value cell’s calculation for different view dynamically, do the following procedure through Pivot Schema Designer control:
-
-1. Double-click the respective PivotComputationInfo field at value fields section of the Pivot Schema Designer.
-2. In the Pivot Computation Information window pop-up, change the view by selecting  the ‘Show Value As’ combo box as shown in the below image:
-
-
-
-![](Features_images/Features_img47.png)
-
-
-
+![](Calculation-Type-images/PivotGrid shows formula calculation type.png)

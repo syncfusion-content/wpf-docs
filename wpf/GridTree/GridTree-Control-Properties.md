@@ -108,7 +108,7 @@ treeGrid.Model</td></tr>
 <tr>
 <td>
 ReadOnly</td><td>
-Determines whether the cells in the GridTree control can be edited. This is a GridTree control-wide setting. You can use the LevelStyles[].StyleInfo.ReadOnly to control the editablility for particular levels. Additionally, you can use Columns[].StyleInfo.ReadOnly to control the editability, column-by-column. Finally, you can use the Model.QueryCellInfo event to set ReadOnly properties cell-by-cell in an on-demand manner.</td><td>
+Determines whether the cells in the GridTree control can be edited. This is a GridTree control-wide setting. You can use the LevelStyles[].StyleInfo.ReadOnly to edit the particular levels. Additionally, you can use Columns[].StyleInfo.ReadOnly to control the edit operation, column-by-column. Finally, you can use the Model.QueryCellInfo event to set ReadOnly properties cell-by-cell in an on-demand manner.</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.ReadOnly</td></tr>

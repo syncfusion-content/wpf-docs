@@ -47,11 +47,8 @@ The following screen shot explains sequential diagram for drill/down process:
 
 ![](Handle-Drill-DownUp-Process_images/Handle-Drill-DownUp-Process_img1.png)
 
-
-
-
-
-_Figure12: OLAP base sequential diagram_ 
+OLAP base sequential diagram
+{:.caption}
 
 
 

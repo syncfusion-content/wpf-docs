@@ -14,7 +14,7 @@ Once you add the Chart control, the first thing to do is to add a Chart Area and
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -51,7 +51,7 @@ Essential Chart provides support to add multiple Chart Areas to a Chart to visua
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -104,7 +104,7 @@ Chart1.Areas.Add(area1);
 Chart enables you to add headers to the Chart Area object. Any element can be added as a Chart Area header by using the Header property of the ChartArea class.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart>
@@ -162,7 +162,7 @@ Sub Properties</th></tr>
 Header</td><td>
 Sets the title of the chart.</td><td>
 Dependency  Property</td><td>
-Object/ “Chart Header”</td><td>
+Object/ 'Chart Header'</td><td>
  &lt;syncfusion:Chart Name="chart1" Header="Chart Header"&gt;</td><td>
 Sub Property Name : HeaderAlignment Type: HorizontalAlignment / HorizontalAlignment.Left</td></tr>
 </table>
@@ -173,7 +173,7 @@ Sub Property Name : HeaderAlignment Type: HorizontalAlignment / HorizontalAlignm
 Set the title for a chart by using the following code.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart Name="Chart1" Header="Sales and Month">
 
@@ -199,7 +199,7 @@ chart1.Header = " Sales and Month "
 Users can customize the chart header using a text block, text box, rectangle, or border control.
 
 Customize the chart header by using the following code.
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart Name="Chart1" >
 
@@ -229,7 +229,7 @@ The following code example illustrates how to display the built-in context menu 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:Chart >
 
@@ -276,7 +276,7 @@ Chart1.Areas[0].ContextMenu = contextMenu;
 You can customize the background of the Chart Area to suit the application by specifying custom brushes for the Background property. The following code example illustrates this.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -310,7 +310,7 @@ The GridBackground property of the Chart Area is used to change the color of the
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -368,7 +368,7 @@ orientation property that specifies whether the alternating background should be
 The following code example illustrates how to set the preceding properties.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -458,7 +458,7 @@ To access the chart watermark demo:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
      <syncfusion:ChartArea.Watermark>        <VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center"                                                     AlignmentY="Top">            <VisualBrush.Visual>                <Image Name="img" Source="/WatermarkDemo;component/SyncLogo1.png">                    <Image.LayoutTransform>                        <RotateTransform Angle="-45"/>                    </Image.LayoutTransform>                </Image>            </VisualBrush.Visual>        </VisualBrush>    </syncfusion:ChartArea.Watermark>
 {% endhighlight  %}
 
@@ -477,7 +477,7 @@ To access the chart watermark demo:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
     <syncfusion:ChartArea.Watermark>        <VisualBrush Stretch="None" Opacity="0.8" AlignmentX="Right"                                                     AlignmentY="Bottom">            <VisualBrush.Visual>                <TextBlock Name="txt" Text="Syncfusion" FontSize="64" Foreground="Red"                                      FontFamily="Microsoft Sans Serif">                    <TextBlock.LayoutTransform>                        <RotateTransform Angle="325"/>                    </TextBlock.LayoutTransform>                </TextBlock>            </VisualBrush.Visual>        </VisualBrush>    </syncfusion:ChartArea.Watermark>
 {% endhighlight  %}
 
@@ -502,7 +502,7 @@ ChartGrid is the container that is used by Chart, by default, to host the Chart 
 ![](Chart-Controls_images/Chart-Controls_img18.jpeg)
 
 However, the default settings of the ChartGrid can be customized to display the Chart Areas side by side. The following code example illustrates how this can be done by using the Orientation and AutoRowsCount properties.
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfchart:Chart>
@@ -531,7 +531,7 @@ Also you can plug-in any kind of Panel as the container for the Chart Area. The 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfchart:Chart>
 
@@ -611,7 +611,7 @@ Essential Chart WPF lets you align multiple chart areas by using a single primar
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <sfChart:SyncChartAreas>
@@ -695,7 +695,7 @@ Add Additional Zooming Functionality, by using the following code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfChart:SyncChartAreas IsContextMenuEnabled="True"> 
 {% endhighlight  %}
@@ -750,7 +750,7 @@ N> Set BindingPath to Key to bind the key of the dictionary to BindingPathX or B
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartSeries BindingPathX="Key" BindingPathsY="y" 
 
@@ -777,7 +777,7 @@ Add Lazy Loading Support, by using the following code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
  
 
 <syncfusion:ChartArea EnableLazyLoading="True" IsContextMenuEnabled="True">
@@ -798,7 +798,7 @@ Display 3D Chart, by using the following code:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 //To display the chart type in 3d mode
 
@@ -996,7 +996,7 @@ Add Interactive Cursors, by using the following code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 //sets the interactive cursor
 
@@ -1150,7 +1150,7 @@ Add Splitter for SyncChartArea, by using the following code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
  
 
 <sfChart:SyncChartAreas Name="syncChart" SplitterVisiblity="ShowAlways" 
@@ -1274,7 +1274,7 @@ double</td></tr>
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:ChartArea Name="area" syncfusion:ChartZoomingScrollBar.VerticalBarSmallChange="{Binding ElementName=ver_sma,Path=Value,Mode=TwoWay}" syncfusion:ChartZoomingScrollBar.VerticalBarLargeChange="{Binding ElementName=ver_lar,Path=Value,Mode=TwoWay}" syncfusion:ChartZoomingScrollBar.HorizontalBarLargeChange="{Binding ElementName=hor_lar,Path=Value,Mode=TwoWay}" syncfusion:ChartZoomingScrollBar.HorizontalBarSmallChange="{Binding
 
@@ -1309,7 +1309,7 @@ Add additional zooming functionality by using the following code.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfChart:SyncChartAreas IsContextMenuEnabled="True"> 
 
@@ -1342,7 +1342,7 @@ Essential Chart WPF > User Interaction > Zooming and Scrolling Demo
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <sfChart:SyncChartAreas   Name="syncChart" EnableMouseDragZooming="True">
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Setting VisualStyle for PercentTextBox
 
-The appearance of the ParcentTextBox control can be customized by using the VisualStyle property. The following are the various built-in visual styles for PaercentTextBox control.
+The appearance of the PercentTextBox control can be customized by using the VisualStyle property. The following are the various built-in visual styles for PaercentTextBox control.
 
 * Blend
 * Office2003
@@ -56,7 +56,7 @@ The steps to edit the PercentTextBox Template by using Expression Blend are as f
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the PercentTextBox.
 
- {% highlight xml %}
+ {% highlight xaml %}
 
 
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 

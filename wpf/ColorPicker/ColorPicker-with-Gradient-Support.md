@@ -23,7 +23,7 @@ The following are the key features of the ColorPicker with Gradient support.
 
 This property specifies whether Brush is of type Solid or Gradient. The following code snippets illustrate this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Syncfusion:ColorPicker x:Name="colorPicker"  BrushMode="Solid"   ></  Syncfusion: ColorPicker >
@@ -59,7 +59,7 @@ This property specifies whether switching between Solid and Gradient BrushMode a
 
 The following code examples illustrate this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Syncfusion: ColorPicker x:Name="colorPicker"  EnableSolidToGradientSwitch="true"   ></  Syncfusion: ColorPicker >
@@ -95,7 +95,7 @@ ColorPicker with Gradient tool comes with a Gradient Editor to change the Start 
 
 The following code example illustrate this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Syncfusion:ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="true"   ></  Syncfusion: ColorPicker >
@@ -127,7 +127,7 @@ colorPicker. IsGradientEditorEnabled =  false;
 
 The property specifies whether GradientEditor should be displayed as a Popup or in extended mode.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <Syncfusion:ColorPicker x:Name="colorPicker"    GradientPropertyEditorMode="Popup" ></ Syncfusion: ColorPicker >
@@ -152,7 +152,7 @@ ColorPicker now allows you to restrict the change in Alpha value, thus maintaini
 
 The following code example illustrate this:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <syncfusion:ColorPicker IsAlphaVisible="True"></syncfusion:ColorPicker> 

@@ -149,7 +149,7 @@ Spreadsheet offers some helper methods that enable you to import and export data
 
 The samples for Importing from data table are located at:
 
-### Essential Studio Dashboard > Spreadsheet > Data Management > Import Data Table.
+### Essential Studio Dashboard > Classic > Spreadsheet Control > Data Management > Import Data Table.
 
 Refer to section 2.2 Samples and Location to access the samples location.
 

@@ -311,11 +311,11 @@ Calculate<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-SkinManager<br/><br/></td></tr>
+Grouping<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
-SpellChecker<br/><br/></td></tr>
+SkinManager<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>

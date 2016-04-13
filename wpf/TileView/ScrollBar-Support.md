@@ -20,7 +20,7 @@ ScrollBar support enables you to see all the minimized TileViewItems, if the tot
 The following code example illustrates how to add the ScrollBar to an application.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

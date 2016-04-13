@@ -9,7 +9,7 @@ documentation: ug
 
 # View the PDF stream in viewer
 
-PDF files as stream can be viewed in Essential Pdf Viewer using the overload available in the Load method. Use the following code example to load the PDF streams in viewer:
+PDF files as stream can be viewed in Essential PDF Viewer using the overload available in the Load method. Use the following code example to load the PDF streams in viewer:
 
 {% tabs %}
 {% highlight c# %}

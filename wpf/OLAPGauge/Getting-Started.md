@@ -30,7 +30,7 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 5. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
    
    
-   {%highlight xml%}
+   {%highlight xaml%}
   
 
 
@@ -330,7 +330,7 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
    &lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
-4.After adding the above assemblies, OlapGauge control is automatically added in the Assests.
+4.After adding the above assemblies, OlapGauge control is automatically added in the Assets.
 
 5.Now, find OlapGauge and drag it to the designer window. 
 
@@ -339,7 +339,7 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
 6.Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
    
-   {%highlight xml%}
+   {%highlight xaml%}
  
 
 

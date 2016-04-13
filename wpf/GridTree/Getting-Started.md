@@ -627,7 +627,7 @@ A self-relational collection is a collection of objects in which each object has
    
 
 
-2. Bind ItemsSource of GridTreeControl and assign ChilPropertyName—these can be set in either XAML or code.
+2. Bind ItemsSource of GridTreeControl and assign ChildPropertyName—these can be set in either XAML or code.
 
    Binding in XAML
 

@@ -126,14 +126,6 @@ XML for Analysis (XMLA) is a standard that allows the client applications to tra
 
 
 
-### Use Case Scenarios
-
-
-
-XMLA provides the most efficient way to access an OLAP database over the Internet.
-
-
-
 ## Connecting to Mondrian Server 
 
 
@@ -213,101 +205,18 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 ###  Properties
 
-<table>
-<tr>
-<th>
-Property Name</th><th colspan = "2">
-Description</th><th colspan = "2">
-Type</th><th colspan = "2">
-Value it Accepts</th><th>
-Reference Link</th></tr>
-<tr>
-<td colspan = "2">
-ConnectionString</td><td colspan = "2">
-Used to pass the connection string to establish the connection. The user can also get the connection string using this property.</td><td colspan = "2">
-string</td><td>
-String</td><td>
--</td></tr>
-<tr>
-<td colspan = "2">
-CurrentCellSet</td><td colspan = "2">
-The user can get the CellSet of their input from here.</td><td colspan = "2">
-CellSet</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td colspan = "2">
-CurrentCubeName</td><td colspan = "2">
-Used to set or get the current cube name. When set, the whole data procession will change to the specified cube name.</td><td colspan = "2">
-string</td><td>
-String</td><td>
--</td></tr>
-<tr>
-<td colspan = "2">
-CurrentCubeSchema</td><td colspan = "2">
-The user can get the CubeSchema of the currently connected cube.</td><td colspan = "2">
-CubeSchema</td><td>
--</td><td>
--</td></tr>
-<tr>
-<td colspan = "2">
-CurrentReport</td><td colspan = "2">
-Used to load an OlapReport or get the currently loaded report.</td><td colspan = "2">
-OlapReport</td><td>
-OlapReport</td><td>
-OlapReport</td></tr>
-<tr>
-<td colspan = "2">
-DataProvider</td><td colspan = "2">
-Used to set a data provider and get the existing data provider.</td><td colspan = "2">
-IDataProvider</td><td>
-IDataProvider</td><td>
-DataProvider</td></tr>
-<tr>
-<td colspan = "2">
-IsCurrentReportModified</td><td colspan = "2">
-Used to get or set the modified status of the currently loaded report.</td><td colspan = "2">
-bool</td><td>
-True/False</td><td>
--</td></tr>
-<tr>
-<td colspan = "2">
-MdxQuery</td><td colspan = "2">
-Used to pass the MDX query as input.</td><td colspan = "2">
-string</td><td>
-String</td><td>
-MdxQuery</td></tr>
-<tr>
-<td>
-PivotEngine</td><td colspan = "2">
-Used to get the PivotEngine for the given input.</td><td colspan = "2">
-PivotEngine</td><td colspan = "2">
-PivotEngine</td><td>
--</td></tr>
-<tr>
-<td>
-QuerySpecification</td><td colspan = "2">
-Used to get the MDXQuerySpecification for the given OlapReport.</td><td colspan = "2">
-MDXQuerySpecification</td><td colspan = "2">
--</td><td>
-QuerySpecification</td></tr>
-<tr>
-<td>
-ReportPath</td><td colspan = "2">
-Used to get or set the report path to store the report as an XML file.</td><td colspan = "2">
-string</td><td colspan = "2">
--</td><td>
--</td></tr>
-<tr>
-<td>
-Reports</td><td colspan = "2">
-Contains the report collection of the OlapDataManager.</td><td colspan = "2">
-OlapReportCollection</td><td colspan = "2">
-OlapReportCollection</td><td>
--</td></tr>
-</table>
-
-
+* **ConnectionString** - Used to pass the connection string to establish the connection. The user can also get the connection string using this property.
+* **CurrentCellSet** - The user can get the CellSet of their input from here.
+* **CurrentCubeName** - Used to set or get the current cube name. When set, the whole data procession will change to the specified cube name.
+* **CurrentCubeSchema** - The user can get the CubeSchema of the currently connected cube.
+* **CurrentReport** - Used to load an OlapReport or get the currently loaded report.
+* **DataProvider** - Used to set a data provider and get the existing data provider.
+* **IsCurrentReportModified** - Used to get or set the modified status of the currently loaded report.
+* **MdxQuery** - Used to pass the MDX query as input.
+* **PivotEngine** - Used to get the PivotEngine for the given input.
+* **QuerySpecification** - Used to get the MDXQuerySpecification for the given OlapReport.
+* **ReportPath** - Used to get or set the report path to store the report as an XML file.
+* **Reports** - Contains the report collection of the OlapDataManager.
 
 
 ### Methods
@@ -445,33 +354,10 @@ SetCurrentReport</td></tr>
 
 The UseWhereClauseForSlicing property facilitates the user to decide whether the MDX query parser engine should consider ‘Where’ or ‘Select’ clause for slicing data.
 
-### Use Case Scenarios
-
-While slicing dimensions with a specific range of measures using ‘Select’ clause in MDX query, an exception is thrown. This can be resolved by using the ‘Where’ clause for slicing.
-
-Example: Slicing the Date dimension from months of 2002 to months of 2003 will throw an exception when ‘Select’ clause is used. 
 
 ### Properties
 
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-UseWhereClauseForSlicing</td><td>
-Enables the user to decide whether the MDX Query Parser Engine should consider the ‘Where’ or ‘Select’ clause for slicing operation</td><td>
-Server side </td><td>
-Boolean</td><td>
-----</td></tr>
-</table>
-
+* **UseWhereClauseForSlicing** - Enables the user to decide whether the MDX Query Parser Engine should consider the ‘Where’ or ‘Select’ clause for slicing operation
 
 ## Drill Through
 

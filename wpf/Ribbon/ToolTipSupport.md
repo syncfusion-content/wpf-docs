@@ -187,6 +187,6 @@ Essential Tool WPF is enhanced with HelpText option. Users can add help text in 
 
 {% endtabs %}
 
-N> When no HelpText is set to the HelpT ext area and line seperator get automatically hidden
+N> When no HelpText is set to the HelpText area and line separator get automatically hidden
  
 

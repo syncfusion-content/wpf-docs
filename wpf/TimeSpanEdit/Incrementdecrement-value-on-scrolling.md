@@ -9,5 +9,5 @@ documentation: ug
 
 # Increment/decrement value on scrolling
 
-The values can be incremented or decremented by scrolling using MouseWeel or Up/Down Arrow Keys.
+The values can be incremented or decremented by scrolling using MouseWheel or Up/Down Arrow Keys.
 

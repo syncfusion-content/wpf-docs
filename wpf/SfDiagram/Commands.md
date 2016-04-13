@@ -1,909 +1,562 @@
 ---
 layout: post
-title: Commands | SfDiagram | wpf | Syncfusion
-description: commands
+title: Explore the frequently used inbuilt commands.
+description:  How to explore and use the inbuilt commands?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Commands
+#Commands
 
-There are several commands provided in the SfDiagram control. These commands can be executed from XAML or C# as shown in the following code examples. Some commands require parameters to be executed.
+There are several commands available in the Diagram as follows.
 
-Execute commands without parameters
+* Alignment commands
+* Spacing commands
+* Sizing commands
+* Clipboard commands
+* Duplicate Command
+* Grouping commands
+* Flip Commands
+* Z-order commands
+* Zoom commands
+* Reset Command
+* Draw Commands
+* Nudge commands
+* FitToPage command
+* Undo/Redo command
 
-{% tabs %}
 
-{% highlight c# %}
+##Alignment Commands
 
-IGraphInfo graphInfo = (sfDiagram.Info as IGraphInfo);
+Alignment commands enable you to align the selected objects such as Nodes and Connectors on a page with respect to a reference object.
 
-graphInfo.Commands.Flip.Execute(null);    
+The Alignment commands as follows
+
+| Commands | Description |
+|---|---|---|
+| AlignLeft | The AlignLeft command enables you to align all selected objects along the left corner of the reference object. |
+| AlignRight | The AlignRight command enables you to align all selected objects along the right corner of the reference object. |
+| AlignCenter | The AlignCenter command enables you to center all selected objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object. |
+| AlignTop | The AlignTop command enables you to align all selected objects along the top surface of the reference object. |
+| AlignBottom | The AlignBottom command enables you to align all selected objects along the bottom surface of the reference object. |
+| AlignMiddle | The AlignMiddle command enables you to center all selected objects horizontally. It aligns selected objects to the center with respect to the vertical axis by changing the y-coordinate of the object. |
+
+The following code example illustrates how to align all the selected objects at the left side of selection boundary.
+
+{% highlight C# %}
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+// sets diration as left
+
+graphinfo.Commands.AlignTop.Execute(null);
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-<Button x:Name="Flip" 
-
-		Command="{Binding Path=Info.Commands.Flip, ElementName=sfDiagram}" 
-
-		Content="Flip" />
-		
-{% endhighlight %}
-
-{% endtabs %}
-
-
-Here, the sfDiagram refers to an instance of SfDiagram. 
-
-## Customizing the Object Size
-
-Object size commands enable selected Diagram objects on the page to be resized. The selected objects are resized in proportion to the first object in the selection list.
-
-### SameHeight Command
-
-The SameHeight command enables selected objects to be resized to the same height of the first object in the selection list.
-
-![](Commands_images/Commands_img1.png)
-
-Height Customization
-{:.caption}
-
-### SameWidth Command
-
-The SameWidth command enables the selected objects to be resized to the same width of the first object in the selection list.
-
-![](Commands_images/Commands_img2.png)
-
-Width Customization
-{:.caption}
-
-### SameSize Command
-
-The SameSize command enables selected objects to be resized to the same height and width of the first object in the selection list.
-
-![](Commands_images/Commands_img3.png)
-
-Height and Width Customization
-{:.caption}
-
-## Customizing the Object Position
-
-Object position commands enable you to change the z-index value of the selected objects (nodes and connectors) on the page. These commands provide support to control overlapping objects.
-
-### BringToFront Command
-
-The BringToFront command enables you to move the selected object over other objects by increasing the z-index to its maximum value. 
-
-![](Commands_images/Commands_img4.png)
-
-Order Commands
-{:.caption}
-
-### SendToBack Command
-
-The SendToBack command enables you to move the selected object behind all other objects by setting the z-index to _zero_.  
-
-![](Commands_images/Commands_img5.png)
-
-SendToBack
-{:.caption}
-
-### MoveForward Command
-
-The MoveForward command increases the z-index value of the selected object by 1.
-
-![](Commands_images/Commands_img6.png)
-
-MoveForward
-{:.caption}
-
-### SendBackward Command
-
-The SendBackward command decreases the z-index value of the selected object by 1.
-
-![](Commands_images/Commands_img7.png)
-
-SendBackward
-{:.caption}
-
-## Customizing the Object Alignment
-
-Object alignment commands enable you to align selected objects (nodes and connectors) on a page with respect to a reference object. The first object in the selection is considered the reference object.
-
-### AlignLeft Command
-
-The AlignLeft command enables you to align all selected objects along the left corner of the reference object.
-
-![](Commands_images/Commands_img8.png)
-
-AlignLeft
-{:.caption}
-
-### AlignCenter Command
-
-The AlignCenter command enables you to center all seletced objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object.
-
-![](Commands_images/Commands_img9.png)
-
-AlignCenter
-{:.caption}
-
-### AlignRight Command
-
-The AlignRight command enables you to align all selected objects along the right corner of the reference object.
-
-
-![](Commands_images/Commands_img10.png)
-
-AlignRight
-{:.caption}
-
-### AlignTop Command
-
-The AlignTop command enables you to align all selected objects along the top surface of the reference object.
-
-![](Commands_images/Commands_img11.png)
-
-AlignTop
-{:.caption}
-
-### AlignMiddle Command
-
-The AlignMiddle command enables you to center all selected objects horizontally. It aligns selected objects to the center with respect to the vertical axis by changing the y-coordinate of the object.
-
-![](Commands_images/Commands_img12.png)
-
-AlignMiddle
-{:.caption}
-
-### AlignBottom Command
-
-The AlignBottom command enables you to align all selected objects along the bottom surface of the reference object.
-
-![](Commands_images/Commands_img13.png)
-
-AlignBottom
-{:.caption}
-
-
-## Customizing the Space between Objects
+![](Commands_images/Commands_img1.jpeg)
+![](Commands_images/Commands_img2.jpeg)
+![](Commands_images/Commands_img3.jpeg)
+![](Commands_images/Commands_img4.jpeg)
+![](Commands_images/Commands_img5.jpeg)
+![](Commands_images/Commands_img6.jpeg)
+
+##Spacing Commands
 
 Spacing commands enable you to place selected objects on the page at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 
-### SpaceAcross Command
+The following code example illustrates how to execute the space commands.
 
-The SpaceAcross command spaces selected objects with equal horizontal distance between them.
+{% highlight C# %}
 
-![](Commands_images/Commands_img14.png)
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-SpaceAcross
-{:.caption}
+// Equally spaces the selected nodes horizontally
 
-### SpaceDown Command
+graphinfo.Commands.SpaceAcross.Execute(null);
 
-The SpaceDown command spaces selected objects with equal vertical distance between them.
+// Equally spaces the selected nodes vertically
 
-![](Commands_images/Commands_img15.png)
+graphinfo.Commands.SpaceDown.Execute(null);
 
-SpaceDown
-{:.caption}
+{% endhighlight %}
 
-## Undoing or Redoing Actions
+![](Commands_images/Commands_img7.jpeg)
 
-The Undo command reverses the last editing action performed. For example, some of the basic operations performed on Diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action when no other actions have occurred since the last undo.
+![](Commands_images/Commands_img8.jpeg)
 
-## Nudge Commands
+##Sizing Commands
 
-Commands enable you to move the selected objects on the page toward the top, bottom, left, or right by 1 pixel. 
+Object size commands enable selected Diagram objects on the page to be resized. The selected objects are resized in proportion to the first object in the selection list.
 
-### NudgeUp Command
+The following code example illustrates how to execute the size commands.
 
-The NudgeUp command moves the selected object towards the top by 1 pixel.
+{% highlight C# %}
 
-### NudgeDown Command
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-The NudgeDown command moves the selected object towards the bottom by 1 pixel.
+//Scales the selected items to the size of first selected object
 
-### NudgeRight Command
+graphinfo.Commands.SameSize.Execute(null);
 
-The NudgeRight command moves the selected object towards the right by 1 pixel.
+//Vertically scales the selected items to the height of first selected object
 
-### NudgeLeft Command
+graphinfo.Commands.SameHeight.Execute(null);
 
-The NudgeLeft command moves the selected object towards the left by 1 pixel.
+//Horizontally scales the selected items to the width of first selected object
 
-### Clipboard Commands
+graphinfo.Commands.SameWidth.Execute(null);
+
+{% endhighlight %}
+
+| Before | After |
+|---|---|
+| ![](Commands_images/Commands_img9.jpeg) | ![](Commands_images/Commands_img10.jpeg)  ![](Commands_images/Commands_img11.jpeg)  ![](Commands_images/Commands_img12.jpeg) |
+
+##Clipboard Commands
 
 Clipboard commands are used to perform cut, copy, and paste operations. 
 
 Clipboard commands allow you to cut or copy selected Diagram objects to the Clipboard and paste the valid Clipboard content into the Diagram.
 
-### Cut Command
+The following code illustrates how to execute the clipboard commands.
 
-Cuts the selected objects from the Diagram to the Clipboard. 
+{% highlight C# %}
 
-### Copy Command
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-Copies the selected objects from the Diagram to the Clipboard. 
+//Cuts the selected elements from the Diagram to the Diagram’s clipboard
 
-### Paste Command
+graphinfo.Commands.Cut.Execute(null);
 
-Pastes the valid contents of the Clipboard into the Diagram. 
+//Copies the selected elements from the Diagram to the Diagram’s clipboard.
 
-![](Commands_images/Commands_img16.png)
+graphinfo.Commands.Copy.Execute(null);
 
-Pasting Diagram Objects
-{:.caption}
+//Pastes the Diagram’s clipboard data (nodes/connectors) into the Diagram.
 
-### Duplicate Command
+graphinfo.Commands.Paste.Execute(null);
 
-This command copies the selected objects from the Diagram and pastes the copied content into the Diagram.
-
-![](Commands_images/Commands_img17.png)
-{:.caption}
-
-### Flip Commands
-
-Flip commands are used to mirror a Diagram object’s content.
-
-### Execute Group Command
-
-Group Commands are used to group the nodes.
-
-![](Commands_images/Commands_img18.png)
-
-### Execute UnGroup Command
-
-UnGroup Command are used to ungroup the grouped nodes.
-
-![](Commands_images/Commands_img19.png)
-
-## Parameter
-
-To customize flipping, a parameter of type IFlipParameter has to be passed.
-
-### IFlipParameter Properties
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-Flip</td><td>
-Gets or sets whether the object is to be mirrored horizontally, vertically, or both.</td><td>
-Enum FlipFlip.HorizontalFlipFlip.VerticalFlipFlip.Flip</td></tr>
-</table>
-
-
-### Execute Flip Command
-
-{% highlight c# %}
-
- (sfdiagram.Info as IGraphInfo).Commands.Flip.Execute(null);
-    
 {% endhighlight %}
 
-When the parameter is null, the object is flipped both horizontally and vertically.
+![](Commands_images/Commands_img13.jpeg)
 
-{% highlight c# %}
+##Duplicate Command
 
-IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
+This command copies the selected objects from the diagram and pastes the copied content into the diagram.                           
+
+![](Commands_images/Commands_img14.jpeg)
+
+##Grouping Command
+Grouping commands are used to group/ungroup the selected elements on the diagram.
+
+The following code illustrates how to execute the group commands
+
+{% highlight C# %}
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+//Groups the selected elements.
+
+graphinfo.Commands.Group.Execute(null);
+
+//UnGroups the selected elements.
+
+graphinfo.Commands.UnGroup.Execute(null);
+
+{% endhighlight %}
+
+##Flip Commands
+
+Flip commands are used to mirror a diagram object’s content.
+
+##Parameter
+To customize flipping, a parameter of type IFlipParameter has to be passed.
+
+**IFlipParameter Properties**
+
+| Property | Description | Value |
+|---|---|---|
+| Flip | Gets or sets whether the object is to be mirrored horizontally, vertically, or both | Enum Flip <br> Flip.HorizontalFlip <br> Flip.VerticalFlip <br> Flip.Flip |
+
+**Execute Flip Command**
+
+{% highlight C# %}
+
+// Flip Command
+
+(diagramcontrol.Info as IGraphInfo).Commands.Flip.Execute(null);
+
+{% endhighlight %}
+
+If the parameter is null, the object will be flipped both horizontally and vertically.
+
+{% highlight C# %}
+
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 FlipParameter flipParam = new FlipParameter();
 
- // Horizontal Flip	
+// Horizontal Flip
 
- flipParam.Flip = Flip.HorizontalFlip;
+flipParam.Flip = Flip.HorizontalFlip;
 
- graphInfo.Commands.Flip.Execute(flipParam);
+graphinfo.Commands.Flip.Execute(flipParam);
 
- //Vertical Flip
+// Vertical Flip
 
- flipParam.Flip = Flip.VerticalFlip;
+flipParam.Flip = Flip.VerticalFlip;
 
- graphInfo.Commands.Flip.Execute(flipParam);
-
+graphinfo.Commands.Flip.Execute(flipParam);
 
 {% endhighlight %}
-
-![](Commands_images/Commands_img20.png)
 
 Without Flip
-{:.caption}
 
-<table>
-<tr>
-<td>
-{{ '![](Commands_images/Commands_img21.png)' | markdownify }}
+![](Commands_images/Commands_img15.jpeg)
 
-</td><td>
-{{ '![](Commands_images/Commands_img22.png)'| markdownify }}
+With Flip
 
-</td><td>
-{{ '![](Commands_images/Commands_img23.png)' | markdownify }}
-
-</td></tr>
-<tr>
-<td>
-{{ '_Horizontal Flip_' | markdownify }}</td><td>
-{{ '_Vertical Flip_' | markdownify }}</td><td>
-{{ '_Flip_' | markdownify }}</td></tr>
-</table>
-
-### FitToPage Commands
-
-FitToPage commands are used to bring the entire Diagram into the view.
-
-#### Parameter
-
-To use the FitToPage command, a parameter of type IFitToPageParameter has to be passed.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-FitToPage</td><td>
-Gets or sets whether the Diagram is to fit into the view in terms of its width, height, or entirety.</td><td>
-Enum FitToPageFitToPage.FitToPageFitToPage.FitToHeightFitToPage.FitToWidth</td></tr>
-<tr>
-<td>
-Margin</td><td>
-Gets or sets the margin value from the view to Diagram.</td><td>
-Thickness</td></tr>
-</table>
+![](Commands_images/Commands_img16.jpeg)![](Commands_images/Commands_img17.jpeg)![](Commands_images/Commands_img18.jpeg)
 
 
-Fits the Entire Diagram into the View
+##Z – Order Command
 
+Z – Order commands enable you to visually arrange the selected objects such as Nodes and Connectors on the page.
 
+###BringToFront command
 
-{% highlight c# %}
+The BringToFront command visually brings the selected element to the front over all other overlapped elements. 
 
-IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
+The following code illustrates how to execute BringToFront command.
 
- graphInfo.Commands.FitToPage.Execute(
+{% highlight C# %}
 
-     new FitToPageParameter()
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-     {
+//Brings to front
 
-           Margin = new Thickness(25),
-
-           //To fit the diagram with respect to width/height use FitToWidth or FitToHeight.
-
-           FitToPage = FitToPage.FitToPage
-
-    });
-
-(or)
-
- graphInfo.Commands.FitToPage.Execute(null);
-
+graphinfo.Commands.BringToFront.Execute(null);
 
 {% endhighlight %}
 
+![](Commands_images/Commands_img19.jpeg)
 
-### Zoom Commands
+###SendToBack command
 
-Zoom commands are used to zoom in and out of the Diagram.
+The SendToBack command visually moves the selected elements behind all the other overlapped elements. 
+
+The following code illustrates how to execute the SendToBack command.
+
+{% highlight C# %}
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+// Send To Back
+
+graphinfo.Commands.SendToBack.Execute(null);
+
+{% endhighlight %}
+
+![](Commands_images/Commands_img20.jpeg)
+
+###SendBackward command
+
+The SendBackward command visually moves the selected elements behind the underlying element.
+
+The following code illustrates how to execute the SendBackward command.
+
+{% highlight C# %}
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+// Send To Backward
+
+graphinfo.Commands.SendBackward.Execute(null);
+
+{% endhighlight %}
+
+![](Commands_images/Commands_img21.jpg)
+
+###BringForward command
+
+The BringForward command visually moves the selected element over the nearest overlapping element.
+
+The following code illustrates how to execute the BringForward command.
+
+{% highlight C# %}
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+// Brings To Forward
+
+graphinfo.Commands.BringForward.Execute(null);
+
+{% endhighlight %}
+
+![](Commands_images/Commands_img22.jpeg)
+
+## Zoom Commands
+Zoom commands are used to  zoom-in and zoom-out the Diagram view.
 
 To execute zoom commands, parameters of type IZoomParameter (IZoomManipulationParameter, IZoomPositionParameter, or IZoomPointerParameter) have to be passed.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-ManipulationArgs</td><td>
-Gets or sets the ManipulationDeltaRoutedEventArgs associated with the desired zoom function.</td><td>
-ManipulationDeltaRoutedEventArgs</td></tr>
-</table>
+**IZoomManipulationParameter Properties**
+
+| Property | Description | Value |
+|---|---|---|
+| ManipulationArgs | Gets or sets the ManipulationDeltaRoutedEventArgs associated with the desired zoom function. | ManipulationDeltaRoutedEventArgs |
+
+**IZoomPositionParameter Property**
+
+| Property | Description | Value |
+|---|---|---|
+| ZoomTo | Gets or sets the zoom level to which the diagram is to be zoomed. | double |
+| ZoomFactor | Gets or sets the percentage of scale value for each ZoomIn or ZoomOut function. | double |
+| FocusPoint | Gets or sets the point of focus while zooming. | Point | 
+| ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | Enum ZoomCommand <br> ZoomCommand.ZoomIn <br> ZoomCommand.ZoomOut |
 
 
+**IZoomPointerParameter Property**
+
+| Property | Description | Value |
+|---|---|---|
+| PointerArgs | Gets or sets the PointerRoutedEventArgs associated with the desired zoom function. | PointerRoutedEventArgs |
+| ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | Enum ZoomCommand <br> ZoomCommand.ZoomIn <br> ZoomCommand.ZoomOut |
+
+The following code illustrates how to Zoom-in/Zoom-out the diagram.
+{% highlight C# %}
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+//Zoom to a particular scale.
+
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter() 
+{ 
+	ZoomTo = 2, ZoomCommand = ZoomCommand.ZoomOut 
+});
 
 
-### IZoomPositionParameter Properties
+//Zoom out based on zoom factor.
 
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-ZoomTo</td><td>
-Gets or sets the zoom level where the Diagram is to be zoomed.</td><td>
-double</td></tr>
-<tr>
-<td>
-ZoomFactor</td><td>
-Gets or sets the percentage of scale value for each ZoomIn or ZoomOut function.</td><td>
-double</td></tr>
-<tr>
-<td>
-FocusPoint</td><td>
-Gets or sets the point of focus while zooming.</td><td>
-Point</td></tr>
-<tr>
-<td>
-ZoomCommand</td><td>
-Gets or sets whether zoom in or zoom out has to be performed.</td><td>
-Enum ZoomCommandZoomCommand.ZoomInZoomCommand.ZoomOut</td></tr>
-</table>
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-PointerArgs</td><td>
-Gets or sets the PointerRoutedEventArgs associated with the desired zoom function.</td><td>
-PointerRoutedEventArgs</td></tr>
-<tr>
-<td>
-ZoomCommand</td><td>
-Gets or sets whether zoom in or zoom out has to be performed.</td><td>
-Enum ZoomCommandZoomCommand.ZoomInZoomCommand.ZoomOut</td></tr>
-</table>
-
-
-
-
-### Execute ZoomCommand
-
-{% highlight c# %}
-
- IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
-
- //Zoom to a particular scale.
-
- graphInfo.Commands.Zoom.Execute(
-
-              new ZoomPositionParamenter() { ZoomTo = 2 , ZoomCommand=ZoomCommand.ZoomOut});
-
-
- //Zoom out based on zoom factor.
-
- graphInfo.Commands.Zoom.Execute(
-
-              new ZoomPositionParamenter() 
-
-              { 
-
-                    ZoomFactor = 0.2,                       
-
-                    ZoomCommand=ZoomCommand.ZoomOut
-              });
-
-
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter() 
+{ 
+	ZoomFactor = 2, ZoomCommand = ZoomCommand.ZoomOut 
+});
 
 {% endhighlight %}
 
-
-### Reset Commands
-
-Reset commands are used to reset horizontal offset, vertical offset, and zoom level of the Diagram.
-
+###Reset Commands
+Reset commands are used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram.
 To execute a reset command, a parameter of type IReset has to be passed.
+| Property | Description | Value |
+|---|---|---|
+| Reset | Gets or sets the ZoomPanReset | Enum Reset <br> Reset.Zoom – To reset zoom level to 1 <br> Reset.Pan – To reset Offsets to 0,Reset.ZoomPan | 
 
+Execute ResetCommand
 
+{% highlight C# %}
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-Reset</td><td>
-Gets or sets the reset function</td><td>
-Enum ResetReset.Zoom – To reset zoom level to 1,Reset.Pan – To reset offsets to 0,Reset.ZoomPan</td></tr>
-</table>
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
+// Reset
+graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.Zoom });
 
-### Execute ResetCommand
-
-
-
-{% highlight c# %}
-
-  IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
-
- graphInfo.Commands.Reset.Execute( new ResetParameter() { Reset = Reset.ZoomPan });
- 
 {% endhighlight %}
 
-
-
-
-### Draw Commands
-
+##Draw Commands
 Draw commands are used to draw connections. They take parameters of type IDrawParameter.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-DrawingTool</td><td>
-Gets or sets a tool to draw.</td><td>
-Enum DrawingToolDrawingTool.Connector</td></tr>
-<tr>
-<td>
-Point</td><td>
-Gets or sets the start point for drawing.</td><td>
-Point</td></tr>
-<tr>
-<td>
-Node</td><td>
-Gets or sets the source node of the new connection.</td><td>
-object</td></tr>
-<tr>
-<td>
-Port</td><td>
-Gets or sets the source port of the new connection.</td><td>
-object</td></tr>
-<tr>
-<td>
-PressedEventArgs</td><td>
-Gets or sets the PressedEventArgs.</td><td>
-PointerRoutedEventArgs</td></tr>
-</table>
+| Property | Description | Value |
+|---|---|---|
+| DrawingTool | Gets or sets a tool to draw. | Enum DrawingToolDrawingTool.Connector |
+| Point | Gets or sets the start point for drawing. | Point |
+| Node | Gets or sets the source Node of the new connection. | Object |
+| Port | Gets or sets the source port of the new connection. | Object |
+| PressedEventArgs | Gets or sets the PressedEventArgs. | PointerRoutedEventArgs|
 
-### Execute DrawCommand
-
-
-
-{% highlight c# %}
-
- void button_PointerPressed(object sender, PointerRoutedEventArgs evtArgs)
-
- {
-
-     IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
-
-     Point? sourcePoint = new Point(200, 200);
-
-     graphInfo.Commands.Draw.Execute(
-
-              new DrawParameter(
-
-                       DrawingTool.Connector,
-
-                       evtArgs,
-
-                       sourcePoint, 
-
-                       sourceNode,
-
-                       sourcePort)
-
-              );
-
- }
+Execute DrawCommand
+{% highlight C# %}
+void Button_PointerPressed(object sender, PointerRoutedEventArgs e)
+{
+	IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+	Point SourcePoint = new Point(200,200);
+            
+	graphinfo.Commands.Draw.Execute(
+         new DrawParameter(
+                 DrawingTool.Connector,
+                 e,
+                 SourcePoint,
+                 SourceNode,
+                 SourcePort));
+}
 
 {% endhighlight %}
 
-## Command Manager
+##Undoing and Redoing Actions
 
+The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo. 
+
+##Nudge Command
+
+Nudge commands move the selected elements towards up, down, left or right by 1 pixel.The Nudge Commands as follows.
+
+| Commands | Description |
+|---|---|
+| NudgeUp | The NudgeUp command moves the selected object towards the top by 1 pixel. |
+| NudgeDown | The NudgeDown command moves the selected object towards the bottom by 1 pixel. |
+| NudgeLeft | The NudgeLeft command moves the selected object towards the left by 1 pixel. |
+| NudgeRight | The NudgeRight command moves the selected object towards the right by 1 pixel. | 
+
+The following code illustrates how to execute Nudge command.
+{% highlight C# %}
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+//Nudges up
+
+graphinfo.Commands.MoveUp.Execute(null);
+{% endhighlight %}
+
+##FitToPage Command
+FitToPage commands are used to bring the entire Diagram into the view.
+
+| Command |	Description | Value |
+|---|---|---|
+| FitToPage | Gets or sets whether the Diagram is to fit into the view in terms of its width, height, or entirety. | Enum FitToPage <br> FitToPage.FitToPage <br> FitToPage.FitToHeight <br> FitToPage.FitToWidth |
+| Margin | Gets or sets the margin value from the view to Diagram. | Thickness |
+The following code illustrates how to execute FitToPage command.
+
+{% highlight C# %}
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
+graphinfo.Commands.FitToPage.Execute(
+
+ new FitToPageParameter()
+ {
+	Margin = new Thickness(25),
+
+       //To fit the diagram with respect to width/height use FitToWidth or FitToHeight.
+
+       FitToPage = FitToPage.FitToPage
+
+ });
+
+ (or)
+
+graphinfo.Commands.FitToPage.Execute(null);
+
+{% endhighlight %}
+
+##Command Manager
 Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for inbuilt commands with Key Gesture and Mouse Gesture.
+List of Commands and Key Gesture:
 
+| Command | Key | Key Modifiers |
+|---|---|---|
+| Copy | C | Control |
+| Cut | X| Control |
+| Paste | V | Control |
+| Duplicate | D | Control |
+| Undo | Z | Control |
+| Redo | Y | Control |
+| MoveLeft | | Left |	
+| MoveRight | |	Right |	
+| MoveUp | | Up |	
+| MoveDown | | Down |	
+| Delete | | Delete |	
+| SelectAll | A	| Control |
+| Group| G|	Control |
+| UnGroup | G | Control |
+| SendToBack | [ | Control+Shift |
+| SendBackward | [ | Control |
+| BringToFront | ] | Control+Shift |
+| BringForward | ] | Control |
 
+####List of Commands and Key Gestures with Parameter
 
-List of Commands and Key Gesture: 
+| Command | Key | KeyModifier | Parameter |
+|---|---|---|---|
+| Zoom | - | Control | new ZoomPositionParamenter { ZoomCommand=ZoomCommand.ZoomOut} |
+| Zoom | + | Control | new ZoomPositionParamenter { ZoomCommand = ZoomCommand.ZoomIn } |
+| Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
+| FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
+####List of Commands and Mouse Gesture with Parameter
 
+| Command | Scroll State | Parameter |
+|---|---|---|
+| Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.VerticalScroll} |
 
-<table>
-<tr>
-<th>
-Command</th><th>
-Key</th><th>
-Key Modifiers</th></tr>
-<tr>
-<td>
-Copy</td><td>
-C</td><td>
-Control</td></tr>
-<tr>
-<td>
-Cut</td><td>
-X</td><td>
-Control</td></tr>
-<tr>
-<td>
-Paste</td><td>
-V</td><td>
-Control</td></tr>
-<tr>
-<td>
-Duplicate</td><td>
-D</td><td>
-Control</td></tr>
-<tr>
-<td>
-Undo</td><td>
-Z</td><td>
-Control</td></tr>
-<tr>
-<td>
-Redo</td><td>
-Y</td><td>
-Control</td></tr>
-<tr>
-<td>
-MoveLeft</td><td>
-Left</td><td>
-</td></tr>
-<tr>
-<td>
-MoveUp</td><td>
-Up</td><td>
-</td></tr>
-<tr>
-<td>
-MoveRight</td><td>
-Right</td><td>
-</td></tr>
-<tr>
-<td>
-MoveDown</td><td>
-Down</td><td>
-</td></tr>
-<tr>
-<td>
-Delete</td><td>
-Delete</td><td>
-</td></tr>
-<tr>
-<td>
-SelectAll</td><td>
-A</td><td>
-Control</td></tr>
-<tr>
-<td>
-Group</td><td>
-G</td><td>
-Control</td></tr>
-<tr>
-<td>
-UnGroup</td><td>
-G</td><td>
-Control</td></tr>
-<tr>
-<td>
-SendToBack</td><td>
-[</td><td>
-Control + Shift</td></tr>
-<tr>
-<td>
-SendBackward</td><td>
-[</td><td>
-Control</td></tr>
-<tr>
-<td>
-BringToFront</td><td>
-]</td><td>
-Control + Shift</td></tr>
-<tr>
-<td>
-BringForward</td><td>
-] </td><td>
-Control</td></tr>
-</table>
+####List of Commands and Key and Mouse Gesture with Parameter
 
-
-List of Commands and Key Gestures with Parameter:
-
-
-
-<table>
-<tr>
-<th>
-Command</th><th>
-Key</th><th>
-KeyModifier</th><th>
-Parameter</th></tr>
-<tr>
-<td>
-Zoom</td><td>
--</td><td>
-Control</td><td>
-new ZoomPositionParamenter {   ZoomCommand=ZoomCommand.ZoomOut} </td></tr>
-<tr>
-<td>
-Zoom</td><td>
-+</td><td>
-Control</td><td>
-new ZoomPositionParamenter {   ZoomCommand = ZoomCommand.ZoomIn }</td></tr>
-<tr>
-<td>
-Reset</td><td>
-0</td><td>
-Control</td><td>
-new ResetParameter {   Reset = Diagram.Reset.ZoomPan }</td></tr>
-<tr>
-<td>
-FitToPage</td><td>
-0</td><td>
-Control + Menu</td><td>
-new FitToPageParameter {  FitToPage = Diagram.FitToPage.FitToPage,  Margin = new Thickness(20) }</td></tr>
-</table>
-
-
-List of Commands and Mouse Gesture with Parameter: 
-
-
-
-<table>
-<tr>
-<th>
-Command</th><th>
-Scroll State</th><th>
-Parameter</th></tr>
-<tr>
-<td>
-Vertical Scroll using ‘Zoom’ command</td><td>
-Scroll</td><td>
-new ZoomPointerParamenter {     ZoomCommand = ZoomCommand.VerticalScroll}</td></tr>
-</table>
-
-
-List of Commands and Key and Mouse Gestures with Parameter:
-
-
-
-<table>
-<tr>
-<th>
-Command</th><th>
-KeyModifiers</th><th>
-ScrollState</th><th>
-Parameter</th></tr>
-<tr>
-<td>
-Horizontal Scroll using ‘Zoom’ command</td><td>
-Shift</td><td>
-Scroll</td><td>
-new ZoomPointerParamenter {     ZoomCommand = ZoomCommand.HorizondalScroll}</td></tr>
-<tr>
-<td>
-Zoom</td><td>
-Control</td><td>
-Scroll</td><td>
-new ZoomPointerParamenter { ZoomCommand = ZoomCommand.ZoomIn |   ZoomCommand.ZoomOut}</td></tr>
-</table>
-
+| Command | KeyModifier | Scroll State | Parameter |
+|---|---|---|---|
+| Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.HorizontalScroll} |
+| Zoom | Control | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.ZoomIn | ZoomCommand.ZoomOut} |
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
 
+###Custom command
 
+User defined commands can also be created and mapped with existing gesture by using command manager. The following code example explains how to register mouse key gesture with Parameter to Save Command (Control + S)
 
-### Custom Commands:
+####Create a user defined command: Save command
 
-User defined commands can also be created and mapped with existing gesture by using command manager.The following code example explains how to register mouse key gesture with Parameter to Save Command (Control + S)
-
-
-
-### Creates a user defined command: Save command
-
-
-
-{% highlight c# %} 
-
-//Creates ICommand
+{% highlight C# %}
+//Create ICommand
 
 private ICommand _save;
 
-
-
 public ICommand Save
-
 {
-
-  get { return _save; }
-
-  set { _save = value; }
-
+	get { return _save;}
+	set { _save = value; }
 }
+        
 
-//Initializes Command
+//Initialize Command
 
 Save = new DelegateCommand(OnSaveCommand);
+         
+// Execute Command
 
-
-//Executes Command
-
-private async void OnSaveCommand(object obj)
-
+private async void OnSaveCommand(Object obj)
 {
-
-    var picker = new FileSavePicker();
-
-    // set appropriate file types
-
-    picker.FileTypeChoices.Add(".xaml", new List<string> { ".xaml" });
-
-    picker.DefaultFileExtension = ".xaml";
-
-    object parameter =(obj as IGestureParameter).Parameter;
-
-    picker.SuggestedFileName = parameter.ToString();
-
-    StorageFile file = await picker.PickSaveFileAsync();
-
-    using (var fileStream = await file.OpenStreamForWriteAsync())
-
-      {
-
-          sfdiagram.Save(fileStream);
-
-      }
-}
-
-{% endhighlight %}
-
-Map user defines command with key gesture:
-
-
-
-{% highlight c# %} 
-
-//Adds new Command to CommandManager-Cntrl +S =>Save
-
-sfdiagram.CommandManager.Commands.Add
-
-(
-
-   new GestureCommand()
-
-    {
-
-       Command = Save,
-
-       Gesture = new Gesture
-
+	var picker = new FileSavePicker();
+  
+       // set appropriate file types
+              
+       picker.FileTypeChoices.Add(".xaml", new List<String> {".xaml"});
+       picker.DefaultFileExtension = ".xaml";
+       Object parameter = (obj as IGestureParameter).Parameter;
+       picker.SuggestedFileName = parameter.ToString();
+       StorageFile file = await picker.PickSaveFileAsync();
+       using (var filestream = await file.OpenStreamForWriteAsync())
        {
+		sfdiagram.Save(fileStream);
+       }
+  }
+  {% endhighlight %}
+####Map and user defined command with key gesture:
+//Add new Commands to CommandManager - Ctrl + S -> Save
+            
+{% highlight C# %}			
+sfdiagram.CommandManager.Commands.Add
+(
+	new GestureCommand()
+	{
+		Command = Save,
+		Gesture = new Gesture
+		{
+			KeyModifiers = ModifierKeys.Control,
+			KeyState = KeyStates.Down,
+			Key = Key.S
+		},
 
-          KeyModifiers = VirtualKeyModifiers.Control,
-
-          KeyState = CoreVirtualKeyStates.Down,
-
-          Key = VirtualKey.S
-
-       },
-
-       //Parameter is name of the File(.XAML)
-
-       Parameter = "diagram"
-
-   }
-
+		// Parameter is the name of the file (.xmal)
+		Parameter = "diagram"
+	}
 );
 
 {% endhighlight %}
-

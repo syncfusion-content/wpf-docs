@@ -73,9 +73,9 @@ Gets or sets the border color of the bubble.</td></tr>
 
 ## Adding Bubbles to a Map
 
-To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the AutoFillColor as true and set the Fill property. Create the Model and ViewModel as illustrtaed in the Data Binding topic and add the following code. Also set the MaxSize, MinSize, and ValuePath properties as illustrated in the following code example.
+To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the AutoFillColor as true and set the Fill property. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxSize, MinSize, and ValuePath properties as illustrated in the following code example.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -144,10 +144,10 @@ Gets or sets the type of bubble symbol needed to be used in maps.</td></tr>
 <td>
 CustomTemplate</td><td>
 DataTemplate</td><td>
-Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should be set as “Custom” to show a customized bubble shape._' | markdownify }}</td></tr>
+Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should be set as 'Custom' to show a customized bubble shape._' | markdownify }}</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -252,7 +252,7 @@ Gets or sets the color values for a given range.</td></tr>
 
 The fill color of a particular bubble fill can be determined by its under-bound value and the color range. For example, consider the following color ranges:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -289,7 +289,7 @@ When the under-bound value is under any of the given sorted range or above the s
 
 Create the “Model” and the “ViewModel” as mentioned in the Data Binding topic and add the following code
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

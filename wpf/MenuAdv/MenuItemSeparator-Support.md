@@ -19,7 +19,7 @@ MenuAdv helps users to separate MenuItemAdv’s by using MenuItemSeparator. In t
 
 MenuItemSeparator can be added to an application, as shown in the following code snippet.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -70,7 +70,7 @@ IsChecked="False"/>
 
 {% endhighlight %}
 
-![](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)' | markdownify }}
+![](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)
 
 
 

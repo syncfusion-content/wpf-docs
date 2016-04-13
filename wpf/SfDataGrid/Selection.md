@@ -54,7 +54,7 @@ Gets or sets the selection behavior in DataGrid control. Different modes are Sin
 <tr>
 <td>
 NavigationMode</td><td>
-NaviagtionMode</td><td>
+NavigationMode</td><td>
 Gets or sets the navigation behavior between rows or cells in DataGrid control. </td></tr>
 <tr>
 <td>
@@ -169,7 +169,7 @@ private void ClearSelection_Click(object sender, RoutedEventArgs e)
 
 * MoveCurrentCell – Moves the current cell to corresponding row column index. This method works only when NavigationMode is set to Cell.
 
-The following code example explains you how to use MoveCurrentCell (RowColumnIndexrowColumnIndex). To use RowColumnIndex structure, add Syncfusion.UI.Xaml.ScrollAxis reference.
+The following code example explains you how to use MoveCurrentCell (RowColumnIndex rowColumnIndex). To use RowColumnIndex structure, add Syncfusion.UI.Xaml.ScrollAxis reference.
 
 
 {% highlight C# %}
@@ -240,7 +240,7 @@ private void SelectRows_Click(object sender, RoutedEventArgs e)
 
 * SelectCell – You can select a specific cell programmatically by using SelectCell method. This method effects only in Cell selection.
 
-The following code example shows how to use SelectCell(object rowData, GridColumn column) mehtod.
+The following code example shows how to use SelectCell(object rowData, GridColumn column) method.
 
 
 {% highlight C# %}
@@ -290,7 +290,7 @@ private void SelectCells_Click(object sender, RoutedEventArgs e)
 
 * UnSelectCell – You can remove the selection from a specific cell programmatically by using UnSelectCell method. This method effects only in Cell selection.
 
-The following code example shows how to use UnSelectCell(object rowData, GridColumn column) mehtod.
+The following code example shows how to use UnSelectCell(object rowData, GridColumn column) method.
 
 
 {% highlight C# %}
@@ -338,7 +338,7 @@ private void UnSelectCells_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-* GetSelectedCells – Returns the collection of GridCellInfo that contains information about the selected cell. This mehtod effects only in Cell selection.
+* GetSelectedCells – Returns the collection of GridCellInfo that contains information about the selected cell. This method effects only in Cell selection.
 
 The following code example shows how to use GetSelectedCells() method.
 
@@ -411,7 +411,7 @@ By default, the selection mode is set to Single mode. You can assign the selecti
 The following code example illustrates how to set a selection mode for DataGrid control.	
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -454,7 +454,7 @@ The following code example shows a DataGrid in row navigation mode.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -527,7 +527,7 @@ The following code example shows a DataGrid in Cell selection.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -565,9 +565,9 @@ Selection related operations are handled in Selection Controllers of SfDataGrid 
 
 
 
-Selectiom Operations
+Selection Operations
 {:.caption}
-The GridSelectionController and GridCellSelectionController have been derived from GridBaseSelectionController that contains abstract methods and properties. You can customize the selection behaviors in two different controllers; GridSelectionConroller and GridCellSelectionController.
+The GridSelectionController and GridCellSelectionController have been derived from GridBaseSelectionController that contains abstract methods and properties. You can customize the selection behaviors in two different controllers; GridSelectionController and GridCellSelectionController.
 
 * GridSelectionController – GridSelectionController is responsible for Row selection. The selection related operations are handled by this controller when SfDataGrid.SelectionUnit is set as Row.
 * GridCellSelectionController – GridCellSelectionController is responsible for Cell selection. The selection related operations are handled by this controller when SfDataGrid.SelectionUnit is set as Cell or Any.
@@ -591,11 +591,11 @@ Gets or sets the current cell manager of DataGrid.> {{ '![](Features_images/Feat
 <tr>
 <td>
 SelectedRows</td><td>
-Gets the collection of GridRowInfo that is selected row information in DataGrid control. SelecteRows are maintained only in Row selection.</td></tr>
+Gets the collection of GridRowInfo that is selected row information in DataGrid control. SelectedRows are maintained only in Row selection.</td></tr>
 <tr>
 <td>
 SelectedCells</td><td>
-Gets the collection of GridSelectedCellsInfo that is selected cells information in DataGrid control. SelecteCells are maintained only in Row selection</td></tr>
+Gets the collection of GridSelectedCellsInfo that is selected cells information in DataGrid control. SelectedCells are maintained only in Row selection</td></tr>
 <tr>
 <td>
 IsSuspended</td><td>
@@ -659,7 +659,7 @@ ClearDetailsViewGridSelections</td><td>
 Clears all the selection in specified nested grid.</td></tr>
 <tr>
 <td>
-AutoScrollerValudChanged</td><td>
+AutoScrollerValueChanged</td><td>
 Invoked when AutoScroller scrolls the rows or columns.</td></tr>
 <tr>
 <td>
@@ -746,11 +746,11 @@ Invoked when unhandled KeyDown event occurs in GridCell. This method is implemen
 <tr>
 <td>
 ProcessOnTapped</td><td>
-Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnTap.</td></tr>
+Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnTap.</td></tr>
 <tr>
 <td>
 ProcessOnDoubleTapped</td><td>
-Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnDoubleTap.</td></tr>
+Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnDoubleTap.</td></tr>
 <tr>
 <td>
 AddSelection</td><td>
@@ -790,7 +790,7 @@ The following code example illustrates to override methods and how to handle ope
 
  Example:
 
-The following code example shows how to select a row based on values in specfic column. This can be achieved by   overriding ProcessPointerReleased method in GridSelectionContrller.
+The following code example shows how to select a row based on values in specific column. This can be achieved by   overriding ProcessPointerReleased method in GridSelectionController.
 
 
 {% highlight C# %}
@@ -895,11 +895,11 @@ Invoked when unhandled KeyDown event occurs in GridCell. This method is implemen
 <tr>
 <td>
 ProcessOnTapped</td><td>
-Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnTap.</td></tr>
+Invoked when single click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnTap.</td></tr>
 <tr>
 <td>
 ProcessOnDoubleTapped</td><td>
-Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTriger is set to OnDoubleTap.</td></tr>
+Invoked when double click on a GridCell. It moves the CurrentCell to an edit mode when EditTrigger is set to OnDoubleTap.</td></tr>
 <tr>
 <td>
 AddSelection</td><td>
@@ -1167,7 +1167,7 @@ CurrentCellBeginEditEvent</td><td>
 Triggered when the CurrentCell goes to edit mode.</td></tr>
 <tr>
 <td>
-CurrentCellEndEidtEvent</td><td>
+CurrentCellEndEditEvent</td><td>
 Triggered when the CurrentCell goes to normal mode from edit mode.</td></tr>
 </table>
 
@@ -1197,7 +1197,7 @@ Description</th></tr>
 <tr>
 <td>
 Up/Down, Shift+Up/Down</td><td>
-Currentcell or currentrow moves upward or downward.</td></tr>
+CurrentCell or current row moves upward or downward.</td></tr>
 <tr>
 <td>
 CTRL+Up/Down</td><td>
@@ -1225,7 +1225,7 @@ CurrentCell moves to first cell of first row or last cell of last row.</td></tr>
 <tr>
 <td>
 Tab</td><td>
-Currentcell moves to next cell.</td></tr>
+CurrentCell moves to next cell.</td></tr>
 <tr>
 <td>
 Shift+Tab</td><td>
@@ -1247,7 +1247,7 @@ Only in Multiple selection mode to select or unselect specific row or cell.</td>
 
 N> The listed key navigation behaves same as multiple selection. But current cell moves selection, does not move in single selection. In extended mode, all selection modes are like single mode other than Shift+UP/Down selects multiple records and move towards its direction._
 
-You can stop the navigation by cancelling CurrenCellActivating event. The following code example describes that.
+You can stop the navigation by canceling CurrentCellActivating event. The following code example describes that.
 
 
 {% highlight C# %}
@@ -1263,713 +1263,6 @@ void sfdatagrid_CurrentCellActivating(object sender, CurrentCellActivatingEventA
 }
 {% endhighlight %}
 
-## Clipboard Operations
-
-This section explains to you the Clipboard operations support in SfDataGrid and also explains how you can customize the Clipboard operations by overriding GridCutCopyPaste class. 
-
-### Overview
-
-SfDataGrid supports the clipboard operations such as cut, copy and paste data within the SfDataGrid control and between other applications such as Notepad.
-
-### Copy and Paste Option
-
-In SfDataGrid, by setting the properties GridCopyOption and GridPasteOption,you can define the behavior of cut, copy, and paste. The default value of GridCopyOption is CopyData and GridPasteOption is PasteData.
-
-### GridCopyOption
-
-* None: Disables Copy in SfDataGrid.
-* CopyData: Copy the selected records from the SfDataGrid.
-* CutData: Cut the selected records from the SfDataGrid.
-* IncludeHeaders: Copy the selected records from the SfDataGrid, including corresponding headers when setting it along with CopyData or CutData.
-* IncludeFormat: Copy the selected records from the SfDataGrid along with its format.
-
-#### GridPasteOption
-
-* None: Disables Paste in SfDataGrid.
-* PasteData: Enables the Paste operation from clipboard to SfDataGrid. When an incompatible value is pasted into a cell, the pasting operation is skipped for that particular cell.
-* ExcludeFirstLine: Paste the data from the clipboard onto SfDataGrid without the first line of the clipboard.
-
-The following code example shows how to define the cut, copy and paste behaviors.
-
-
-{% highlight C# %}
-
-
-
-
-
-//Copy or Cut the record with Header and Format
-
-this.sfdatagrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.CopyData | GridCopyOption.IncludeHeaders | GridCopyOption.IncludeFormat;
-
-
-
-
-
-//Paste the data with ExcludeFirstLine
-
-this.sfdatagrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.ExcludeFirstLine;
-
-{% endhighlight %}
-
-
-
-### Events
-
-The SfDataGrid control provides the following events when performing clipboard operations.
-
-### GridCopyContent
-
-This event is triggered when you copy or cut data in SfDataGrid. The GridCopyContentEventArgs object contains the Handled property, and when it is set as True, it indicates that the event is handled and you can change the behavior of the copy or cut based on your requirement.
-
-### GridPasteContent
-
-This event is triggered when pasting data in SfDataGrid. The GridCopyContentEventArgs object contains the Handled property, when it is set to True, it indicates that the event is handled and you can change the behavior of the paste based on your requirement.
-
-### CopyGridCellContent
-
-This event is triggered when the copy operation is being performed for each cell. A GridCopyPasteCellEventArgs object contains the Handled property, and when it is set to True, it indicates that the event is handled and that particular cell is not copied in the clipboard. A GridCopyPasteCellEventArgs object contains the following arguments.
-
-* Column: It contains the corresponding column of particular cell.
-* RowData: It contains the respective row data of particular cell.
-* ClipBoardValue: It contains the respective copied CellValue of particular cell.
-
-### PasteGridCellContent
-
-This event is triggered when the paste operation is performing for each cell. A GridCopyPasteCellEventArgs object contains the Handled property, when it is set to True, it indicates that the event is handled and that particular cell is not pasted in the SfDataGrid. A GridCopyPasteCellEventArgs object contains the following argument.
-
-* Column: It contains the corresponding column of particular cell.
-* RowData: It contains the respective row data of particular cell.
-* ClipBoardValue: It contains the respective copied data for particular cell.
-
- Methods
-
-In SfDataGrid.GridCopyPaste contains the following methods for performing clipboard operations from coding.
-
-
-<table>
-<tr>
-<th>
-Method  Name</th><th>
-Property Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-Cut</td><td>
-Cut()</td><td>
-This method copies the selected records and sets the default value or null or empty. It is called when Ctrl+x is pressed.</td></tr>
-<tr>
-<td>
-Copy</td><td>
-Copy()</td><td>
-This method copies the selected records. It is called when Ctrl+c is pressed.</td></tr>
-<tr>
-<td>
-Paste</td><td>
-Paste()</td><td>
-This method pastes the selected records. It is called when Ctrl+v is pressed.</td></tr>
-<tr>
-<td>
-CopyRowsToClipboard</td><td>
-CopyRowsToClipboard(int startRecordIndex, int endRecordIndex)</td><td>
-This method copies the data from the start record index to end record index.</td></tr>
-</table>
-
-
-The following code example shows how to call the above methods for processing the clipboard operations.
-
-
-{% highlight C# %}
-
-
-
-
-
-this.datagrid.GridCopyPaste.Cut();
-
-this.datagrid.GridCopyPaste.Copy();
-
-this.datagrid.GridCopyPaste.Paste();
-
-{% endhighlight %}
-
-### Overriding GridCutCopyPaste 
-
-You can customize the cut, copy and paste operations in SfDataGrid by overriding the GridCutCopyPaste class that is implemented from the IGridCopyPaste interface. The following methods are properties present in the GridCutCopyPaste class where you can override and customize the copy paste operations. Refer the How To section to see the examples for overriding GridCutCopyPaste class.
-
-The following code example shows how to assign the overriding class to SfDataGrid.GridCopyPaste.
-
-
-{% highlight C# %}
-
-
-
-
-
-this.sfdatagrid.GridCopyPaste = new CustomCopyPaste(sfdatagrid);
-
-{% endhighlight %}
-
-Copy
-
-<table>
-<tr>
-<th>
-Method  Name</th><th>
-Parameters</th><th>
-Description</th></tr>
-<tr>
-<td>
-CopyTextToClipBoard</td><td>
-CopyTextToClipBoard(ObservableCollection&lt;object&gt; records, bool cut)     </td><td>
-Sorts the SelectedRecords in the order it is present in SfDataGrid and invokes the CopyRows method. When you are processing the cut operation, it invokes the ClearCellsByCut method also.</td></tr>
-<tr>
-<td>
-CopyRows</td><td>
-CopyRows(ObservableCollection&lt;object&gt; CopiedRecords, ref StringBuilder text)</td><td>
-Invokes CopyRow method by passing each record in CopiedRecords</td></tr>
-<tr>
-<td>
-CopyRow</td><td>
-CopyRow(object record, ref StringBuilder text)</td><td>
-Invokes the CopyCell method by passing the copied record and each column in SfDataGrid.Columns</td></tr>
-<tr>
-<td>
-CopyTextToClipBoard</td><td>
-CopyTextToClipBoard(GridSelectedCellsCollection selectedCells, bool cut)</td><td>
-Invokes the CopyCells method and when you processing the cut operation, it invokes the ClearCellsByCut method. </td></tr>
-<tr>
-<td>
-CopyCells</td><td>
-CopyCells(GridSelectedCellsCollection selectedCells, StringBuilder text)</td><td>
-​Sorts the selected cells in the order it is present in SfDataGrid and invokes the CopyCellRow by passing SelectedCellInfo.</td></tr>
-<tr>
-<td>
-CopyCellRow</td><td>
-CopyCellRow(GridSelectedCellsInfo cellRow, ref StringBuilder text)</td><td>
-Invokes the CopyCell by passing copied record and Column.</td></tr>
-<tr>
-<td>
-CopyCell</td><td>
-CopyCell(object record, GridColumn column, ref StringBuilder text)</td><td>
-In this method, based on row data and column it gets the corresponding cell value.</td></tr>
-</table>
-
-
-Cut
-
-<table>
-<tr>
-<th>
-Method  Name</th><th>
-Property Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-ClearCellsByCut</td><td>
-ClearCellsByCut(ObservableCollection&lt;object&gt; selectedCells)</td><td>
-Separates the record and columns and invokes CutRowCell method.</td></tr>
-<tr>
-<td>
-CutRowCell</td><td>
-CutRowCell(object rowData, GridColumn column)</td><td>
-Property in rowdata corresponding to column resets it to back to its default value. </td></tr>
-</table>
-
-
-Paste
-
-<table>
-<tr>
-<th>
-Method  Name</th><th>
-Property Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-PasteTextToRow</td><td>
-PasteTextToRow()</td><td>
-Separates the clipboard content into number of rows and invokes PasteToRows method by passing copied clipboard text rows.</td></tr>
-<tr>
-<td>
-PasteToRows</td><td>
-PasteToRows(object copiedRecords)</td><td>
-Gets the selected records and invokes the PasteToRow method by passing clipboard text row and selected record</td></tr>
-<tr>
-<td>
-PasteToRow</td><td>
-PasteToRow(object copiedRecord, object selectedRecords)</td><td>
-Separates the clipboard text rows and invokes the PasteToCell method by passing selected record, column and clipboard text.</td></tr>
-<tr>
-<td>
-PasteTextToCell</td><td>
-PasteTextToCell()</td><td>
-Separates the clipboard content into number of clipboard text rows and invokes PasteToCells methods by passing copied records.</td></tr>
-<tr>
-<td>
-PasteToCells</td><td>
-PasteToCells(object copiedRecords )</td><td>
-Gets the selected records and invokes the PasteToRow method by passing the clipboard text record and selected record</td></tr>
-<tr>
-<td>
-PasteToCell</td><td>
-PasteToCell(object copyValue, GridColumn column, object rowData)</td><td>
-Checks the column type and gets the provider and invokes CommitValue method by passing rowdata, column, provider, copied value.​</td></tr>
-<tr>
-<td>
-CommitValue</td><td>
-CommitValue(object rowData, GridColumn column, IPropertyAccessProvider provider, object changedValue)</td><td>
-Gets the type of paste column from GetPropertyType method, checks that copy text to paste column type by using the CanConvertToType method and set the clipboard text value to selected cell.</td></tr>
-<tr>
-<td>
-GetPropertyType</td><td>
-GetPropertyType(GridColumn column, object rowData)</td><td>
-Gets the type of paste column from GetPropertyType method, check that copy text to paste column type by using the CanConvertToType method and sets the clipboard value to selected cell.</td></tr>
-<tr>
-<td>
-CanConvertToType</td><td>
-CanConvertToType(object value, ref Type type)</td><td>
-Check copied text is compatible for pasting or not.</td></tr>
-</table>
-
-
-The following layout shows the method flow in GridCutCopyPaste andwhere you can override it.
-
-
-
-![](Features_images/Features_img139.png)
-
-
-
-Copy Operation
-{:.caption}
-
-
-![](Features_images/Features_img140.png)
-
-
-
-Cut Operation
-{:.caption}
-
-
-![](Features_images/Features_img141.png)
-
-
-
-Paste Operation
-{:.caption}
-### How to
-
-### How to copy one cell and paste into many cells
-
-By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfDataGrid. The following code example shows how to copy one cell and paste it into all the selected cells by overriding PasteToCell method in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. 
-
-
-{% highlight xml %}
-
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       ItemsSource="{Binding Products}"
-
-                       SelectionUnit="Cell"
-
-                       SelectionMode="Extended"
-
-                       AutoGenerateColumns="True"/>
-{% endhighlight %}
-
-{% highlight C# %}
-
-
-
-
-
-this.sfdatagrid.GridCopyPaste = new CustomCopyPaste(sfdatagrid);
-
-…….
-
-
-
-public class CustomCopyPaste  : GridCutCopyPaste
-
-{
-
-    public CustomCopyPaste(SfDataGrid sfgrid)
-
-        : base(sfgrid)
-
-        {
-
-
-
-        }
-
-
-
-    protected override void PasteToCell(object record, GridColumn column, object rowData)
-
-    {
-
-        var test = Clipboard.GetText();
-
-        string[] clipboardtext = Regex.Split(test, @"\r\n");
-
-        clipboardtext = Regex.Split(clipboardtext[0], @"\t");
-
-        //Get the ClipbordText and check if the clipboard text is more than one cell
-
-        //means call the base.
-
-        if (clipboardtext.Count() > 1)
-
-        {
-
-            base.PasteToCell(record, column, rowData);
-
-            return;
-
-        }
-
-        //Get the selected cells for paste the copied cell 
-
-        var selectedcells = this.dataGrid.GetSelectedCells();
-
-        int selectedcellscount = selectedcells.Count;
-
-        for (int i = 0; i < selectedcellscount; i++)
-
-        {
-
-            record = selectedcells[i].RowData;
-
-            column = selectedcells[i].Column;
-
-            //Call PasteToCell method with paticular record of selectedcells,
-
-            // Column of selected records and rowdata
-
-            base.PasteToCell(record, column, rowData);
-
-        }
-
-    }
-
-}
-{% endhighlight %}
-
-### How to copy one row and paste into many rows
-
-By default you can able to copy one row and paste it into another row. The following code example shows how to copy one row and paste it into all selected rows by overriding the PasteToRow method in the GridCutCopyPaste class. A new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste here. 
-
-
-
-{% highlight xml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       ItemsSource="{Binding Products}"
-
-                       SelectionUnit="Row"
-
-                       SelectionMode="Extended"
-
-                       AutoGenerateColumns="True"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-
-
-
-
-this.sfdatagrid.GridCopyPaste = new CustomCopyPaste(sfdatagrid);
-
-…….
-
-
-
-public class CustomCopyPaste  : GridCutCopyPaste
-
-{
-
-    public CustomCopyPaste(SfDataGrid sfgrid)
-
-        : base(sfgrid)
-
-        {
-
-
-
-        }
-
-
-
-    protected override void PasteToRow(object copiedRecord, object selectedRecords)
-
-    {
-
-        var text = Clipboard.GetText();
-
-        string[] clipboardtext = Regex.Split(text, @"\r\n");
-
-
-
-        //Get the ClipbordText and check if the clipboard text is more than one row
-
-        //means call the base.
-
-        if (clipboardtext.Count() > 1)
-
-        {
-
-            base.PasteToRow(copiedRecord, selectedRecords);
-
-            return;
-
-        }
-
-        var selectedrecord = this.dataGrid.SelectedItems;
-
-        for (int i = 0; i < selectedrecord.Count; i++)
-
-        {
-
-            //Get the Selected records for paste the copied row.
-
-            selectedRecords = selectedrecord[i];
-
-            // Call the PasteToRow methos with copyiedrecord and selectedreocord
-
-            base.PasteToRow(copiedRecord, selectedRecords);
-
-        }
-
-    }
-
-}
-{% endhighlight %}
-
-### How to select the pasted records after pasting
-
-By default after pasting also SfDataGrid maintains the previously selected records as it is. When you want to select the pasted records after the Paste operation, then you can achieve your requirement by overriding the PasteToRows and PasteToRow methods in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. This code is applicable for SelectionUnit as Row.
-
-
-{% highlight xml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       ItemsSource="{Binding Products}"
-
-                       SelectionUnit="Row"
-
-                       SelectionMode="Extended"
-
-                       AutoGenerateColumns="True"/>
-{% endhighlight %}
-
-{% highlight C# %}
-
-
-
-
-
-
-
-this.sfdatagrid.GridCopyPaste = new CustomCopyPaste(sfdatagrid);
-
-…….
-
-
-
-public class CustomCopyPaste  : GridCutCopyPaste
-
-{
-
-    public CustomCopyPaste(SfDataGrid sfgrid)
-
-        : base(sfgrid)
-
-        {
-
-
-
-        }
-
-
-
-public class CustomCopyPaste  : GridCutCopyPaste
-
-{
-
-    public CustomCopyPaste(SfDataGrid sfgrid)
-
-        : base(sfgrid)
-
-        {
-
-
-
-        }
-
-
-
-    //Creating the new list for add the selected records
-
-    public List<object> selecteditem = new List<object>();
-
-    protected override void PasteToRows(object clipboardrows)
-
-    {
-
-        base.PasteToRows(clipboardrows);
-
-
-
-       //Using the SelectionController apply the selection for Pasted records
-
-        this.dataGrid.SelectionController.HandleGridOperations(new GridOperationsHandlerArgs(GridOperation.Paste, selecteditem));
-
-    }
-
-    protected override void PasteToRow(object clipboardcontent, object selectedRecords)
-
-    {
-
-        //Added the selected record to list
-
-        selecteditem.Add(selectedRecords);
-
-        base.PasteToRow(clipboardcontent, selectedRecords);
-
-    }
-
-}
-{% endhighlight %}
-
-### How to add the copied rows as new rows in SfDataGrid while pasting
-
-By default while pasting, it changes the values of the already existing records based on clipboard content. The following code example shows how to add the copied records as new rows in SfDataGrid by overriding the PasteToRows method in GridCutCopyPaste class. Here the new class CustomCopyPaste has been created and assigned to SfDataGrid.GridCopyPaste. 
-
-
-{% highlight xml %}
-
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       ItemsSource="{Binding Products}"
-
-                       SelectionUnit="Row"
-
-                       SelectionMode="Extended"
-
-                       AutoGenerateColumns="True"/>
-{% endhighlight %}
-
-
-{% highlight C# %}
-
-
-
-
-
-
-
-this.sfdatagrid.GridCopyPaste = new CustomCopyPaste(sfdatagrid);
-
-…….
-
-
-
-public class CustomCopyPaste  : GridCutCopyPaste
-
-{
-
-    public CustomCopyPaste(SfDataGrid sfgrid)
-
-        : base(sfgrid)
-
-        {
-
-
-
-        }
-
-
-
-    protected override void PasteToRows(object clipboardrows)
-
-    {
-
-        var copiedRecord = (string[])clipboardrows;
-
-        int copiedrecordscount = copiedRecord.Count();
-
-        //Based on the clipboard count added the new record for paste
-
-        if (copiedrecordscount > 0)
-
-        {
-
-            //Get the viewmodel for adding the record
-
-            var rec = this.dataGrid.DataContext as ViewModel;
-
-            for (int i = 0; i < copiedrecordscount; i++)
-
-            {
-
-                //Create the new instance for Model, for adding the new record
-
-                Product entity = new Product();
-
-
-
-                for (int j = 0; j < this.dataGrid.Columns.Count; j++)
-
-                {
-
-                    var record = copiedRecord[i];
-
-                    string[] recc = Regex.Split(record, @"\t");
-
-                    //Adding the new record by using PasteToCell method by passing the 
-
-                    //created data, particular column, and clipboard value
-
-                    this.PasteToCell(entity, this.dataGrid.Columns[j], recc[j]);
-
-                }
-
-                //Added the pasted record in collection
-
-                rec.Products.Add(entity);
-
-            }
-
-        }
-
-    }
-
-}
-{% endhighlight %}
 
 ## How To
 
@@ -2053,10 +1346,10 @@ This scrolls the Grid to selected index of record.
 
 ### How to change the Foreground of SelectedRow
 
-This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid has an Element named VirtualizingCellsControl. You can edit the style of this element and write style for Foreground. The following steps explain you how to change the Foreground of SelectedRow.
+This topic explains you how to change the Foreground of SelectedRow. SfDataGrid has an Element named VirtualizingCellsControl. You can edit the style of this element and write style for Foreground. The following steps explain you how to change the Foreground of SelectedRow.
 
 * Open your WPF application in Blend for Visual Studio 2013 that is used in SfDataGrid control.
-* Right-click on SfDataGrid. When you don’t find this control in Objects and Timeline__panel, you can GoToAssets and click on SfDatarid, (type in search box that brings to view).
+* Right-click on SfDataGrid. When you don’t find this control in Objects and Timeline__panel, you can GoToAssets and click on SfDataGrid, (type in search box that brings to view).
 * You can find Edit Additional Templates.
 * Click on that, it renders you Edit Row Style, Select it.
 * Save it with some name.
@@ -2066,7 +1359,7 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

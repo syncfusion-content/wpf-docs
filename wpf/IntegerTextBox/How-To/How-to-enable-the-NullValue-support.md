@@ -13,7 +13,7 @@ IntegerTextBox accepts null values. To enable the null option you have to set th
 
 
 {%tabs%}
-{%highlight xml%}
+{%highlight xaml%}
 
  
 
@@ -52,7 +52,7 @@ IntegerTextBox
 
 
 {%tabs%}
-{%highlight xml%}
+{%highlight xaml%}
 
  
 

@@ -17,7 +17,7 @@ Legends are visible only by setting the LegendVisibility property of the Visibil
 
 ## Positioning of Legend 
 
-Map legends can be positioned by setting the LegendPosition property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties availablein ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
+Map legends can be positioned by setting the LegendPosition property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
 
 
 
@@ -67,7 +67,7 @@ Layer shape type legends can be different shapes for the legend. The shapes can 
 
 Legends are arranged in matrix format. The number of columns in the arranging matrix can be set by setting the LegendColumnSplit property of the int type. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -135,7 +135,7 @@ Legend for shape layers
 {:.caption}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

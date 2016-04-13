@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Manipulation | SfDataGrid | WPF | Syncfusion
-description: data manipulation
+title: Data Manipulation in SfDataGrid.
+description: How to manipulate data in SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -9,679 +9,746 @@ documentation: ug
 
 # Data Manipulation
 
-This section explains you about management of data. The operations like insert, delete and modifying data are explained here. SfDataGrid not only displays recordsin tabular view but has an interactive support to manage data also. 
+SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) property.
 
-## Overview
-
-DataGrid control handles data updating with the help of INotifyPropertyChanged interface. By default, DataGrid does not update the sorting order, filtering, grouping and summaries.
-
-* SfDataGrid.LiveDataUpdateMode: This property helps you to define the behavior of DataGrid during data updating.
-
-SfDataGrid.LiveDataUpdateMode: This enum type (LiveDataUpdationMode) property contains the following three modes:
-
-LiveDataUpdationMode property table
-
-<table>
-<tr>
-<th>
-LiveDataUpdationMode</th><th>
-Description</th></tr>
-<tr>
-<td>
-Default</td><td>
-This updates only the corresponding cell value when the property is changed.</td></tr>
-<tr>
-<td>
-AllowSummaryUpdate</td><td>
-This updates the corresponding cell value and summaries when the property is changed.</td></tr>
-<tr>
-<td>
-AllowDataShaping</td><td>
-This updates corresponding cell value and summary. Also it reshapes the data based on sorting, filtering, grouping, summaries when the property is changed.</td></tr>
-</table>
-
-
-The following code example illustrates how to set the LiveDataUpdateMode for DataGrid control.
-
-When you need an instant update that happened on DataSource to view, SfDataGrid provides a property LiveDataUpdateMode. You can use AllowDataShaping in LiveDataUpdateMode that updates instantly while editing. Add this code example and execute the sample.
-
-1. Execute the Sample.
-2. Sort any column.
-3. Now edit the value to be sorted.
-4. It gets arranged according to its sort direction.
-5. The same way, you can achieve it for Editing with Grouping and Editing with Filtering.
-
-
-{% highlight xml %}
-
-
-
-
-<syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                       AllowEditing="True"
-
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
-
-                       ColumnSizer="Star"
-
-                       ItemsSource="{Binding OrderInfoCollection}"                       
-
+                       ItemsSource="{Binding Orders}"
                        LiveDataUpdateMode="AllowDataShaping" />
-
 {% endhighlight %}
-
-
-
-Following screenshot illustrates the difference between AllowDataShaping and Default. When LiveDataUpdateMode is in Default, the value that you edited does not get sorted immediately. The highlighted one is edited cell. 
-
-
-
-![](Features_images/Features_img125.png)
-
-
-
-LiveDataUpdateMode set to Default
-{:.caption}
-When you set LiveDataUpdateMode as AllowDataShapping, it gets updated and arranged in order immediately. 
-
-
-
-![](Features_images/Features_img126.png)
-
-
-LiveDataUpdateMode set as AllowDataShapping
-{:.caption}
-## AddNewRow
-
-This topic provides the description for AddNewRow feature in the DataGrid control that enables you to add new data rows in the DataGrid using the UI.
-
-### Overview 
-
-AddNewRow enables adding rows to enter new records in the DataGrid control. The new row is displayed, above, or below the rows in the DataGrid control. You can specify the AddNewRow position by using DataGrid’sSfDataGrid.AddNewRowPosition property.When using AddNewRow, DataModel has one ParameterlessConstructor (DefaultContructor).
-
-### Adding AddNewRow to the DataGrid control
-
-The following code example illustrates how to add AddNewRow to an application:
-
-
-{% highlight xml %}
-
-
-
-
-   <syncfusion:SfDataGrid x:Name="datagrid"
-
-                          AutoGenerateColumns="True"  
-
-                          AddNewRowPosition="Top"                                 
-
-                          ItemsSource="{Binding Stocks}"/>
-
+{% highlight c# %}
+this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
 {% endhighlight %}
+{% endtabs %}
 
 
+## LiveDataUpdateMode
 
-### User Interface
-
-
-
-![](Features_images/Features_img127.png)
-
-
-Adding AddNewRow to the DataGrid control
-{:.caption}
-The following table describes the property that participates in AddNewRow.
-
-AddNewRow property table
+### LiveDataUpdateMode – Default 
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th></tr>
+<td>
+{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+</td>
+<td>
+{{'**Add**'| markdownify }}
+</td>
+<td>
+{{'**Remove / delete**'| markdownify }}
+</td>
+<td>
+{{'**Property change**'| markdownify }}
+</td>
+</tr>
 <tr>
 <td>
-AddNewRowPosition</td><td>
-This is the Enum property that helps to get or set the AddNewRow position in DataGrid. AddNewRowPositionenum property contains following values:<br>1. Top – Place the AddNewRow at the top of all data rows.<br>2. Bottom – Place the AddNewRow at the bottom of all the data rows.<br> 3. None – This hides the AddNewRow in the DataGrid control.</td>
+{{'**Sorting**'| markdownify }}
+</td>
+<td>
+Record added at last
+</td>
+<td>
+Updated
+</td>
+<td>
+Sort order not updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Grouping**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Groups not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Filtering**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Filter not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Summaries**'| markdownify }}
+</td>
+<td>
+Not updated
+</td>
+<td>
+Not updated
+</td>
+<td>
+Not updated
+</td>
+</tr>
 </table>
 
-</td></tr>
-</table>
 
-N> By default AddNewRowPosition is set as “None”.
-The following table describes you the event that participates in AddNewRow.
-
-AddNewRow Event Table
+### LiveDataUpdateMode – AllowSummaryUpdate
 
 <table>
 <tr>
-<th>
-Event</th><th>
-Parameters</th><th>
-Description</th></tr>
+<td>
+{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+</td>
+<td>
+{{'**Add**'| markdownify }}
+</td>
+<td>
+{{'**Remove / delete**'| markdownify }}
+</td>
+<td>
+{{'**Property change**'| markdownify }}
+</td>
+</tr>
 <tr>
 <td>
-AddNewRowIntiating</td><td>
-NewObject</td><td>
-This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.>  </td></tr>
+{{'**Sorting**'| markdownify }}
+</td>
+<td>
+Record added at last
+</td>
+<td>
+Updated
+</td>
+<td>
+Sort order not updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Grouping**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Groups not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Filtering**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Filter not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Summaries**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
 </table>
 
-N> NewObject is the read-only property.
 
-### Behavior
+### LiveDataUpdateMode – AllowDataShaping
 
-1. New data is added when AddNewRow is no longer in focus and the data is valid.
-2. You can cancel the new row by pressing ESC twice.
-3. By default, new data is added in last. When LiveUpdateMode is set as AllowDataShapping, new data is added based on the sorted data position
+<table>
+<tr>
+<td>
+{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+</td>
+<td>
+{{'**Add**'| markdownify }}
+</td>
+<td>
+{{'**Remove / delete**'| markdownify }}
+</td>
+<td>
+{{'**Property change**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**Sorting**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated 
+</td>
+</tr>
+<tr>
+<td>
+{{'**Grouping**'| markdownify }}
+</td>
+<td>
+Updated 
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Filtering**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Summaries**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+</table>
+
 
 ### Limitations
 
-1. AddNewRow only exists for master grid in the Master-Details view.
+* `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
+* Complex and indexer properties doesn’t support `LiveDataUpdateMode`- `AllowDataShaping` and `AllowSummaryUpdate`.
 
 
+## Built-in AddNewRow
 
-The following code example illustrates how to use AddNewRowInitiating event.
+SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. You can enable the AddNewRow by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowPosition.html) property.
 
+When you start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
-{% highlight xml %}
+N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling `AddNewRowInitiating` event.
 
-
-
-
-AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
-
-{% endhighlight %}
-
-
-{% highlight C# %}
-
-
-
-
-
-sfdatagrid.AddNewRowInitiating += sfdatagrid_AddNewRowInitiating;
-
-…
-
-void sfdatagrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs args)
-
-{
-
-       // Initialze with default value.     
-
-}
-{% endhighlight %}
-
-## Deleting
-
-This section explains you how to delete the records, properties and an event that participates in deleting process. 
-
-###  Overview
-
-SfDataGrid has built-in support for deleting records. You can delete a selected row by pressing the Delete key when SfDataGrid.AllowDeleting is set to ‘True’. When multiple records are to be removed from the Grid, you can select multiple records from the SfDataGrid and press Delete.
-
-
-{% highlight xml %}
-
-
-
-
-
-
-<syncfusion:SfDataGrid AllowDeleting="True"        
-
-                       AutoGenerateColumns="True"
-
-                       ItemsSource="{Binding OrdersListDetails}"/>
-
-{% endhighlight %}
-
-
-
-Deleting rows triggers the following events in SfDataGrid before and after records are removed:
-
-* SfDataGrid.RecordDeleting: Occurs before the records are removed from the collection. This event is cancelled.
-* SfDataGrid.RecordDeleted: Occurs after the records are removed from the collection.
-
-### RecordDeleting Event
-
-This event occurs after you press Delete but before the records are removed from the collection. The RecordDeleting event handler receives two arguments namely sender that handles SfDataGrid and RecordDeletingEventArgs as objects.
-
-The RecordDeletingEventArgs has the following properties:
-
-* Cancel: When the Cancel property is set to ‘true’, the event is cancelled and the records are not removed. 
-* OriginalSender: Gets the original sender from where the event is raised.
-* Items: Gets or sets the items to be removed from the source collection.
-
-### RecordDeleted Event:
-
-This event occurs after the selected rows are removed from the SfDataGrid. The RecordDeleted event handler receives two arguments namely sender that handles the SfDataGrid and RecordDeletedEventArgs as objects.
-
-The RecordDeletedEventArgs has the following properties:
-
-* Items: Gets the records that are removed from the source collection.
-* SelectedIndex: Gets or sets the selected index for the DataGrid control.
-
-The following code example illustrates how to use this event. 
-
-
-{% highlight C# %}
-
-
-
-
-
-sfdatagrid.RecordDeleting += sfdatagrid_RecordDeleting;
-
-…
-
-void sfdatagrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
-
-{
-
-    args.Cancel = true;
-
-}
-
-{% endhighlight %}
-
-
-
-You can delete record using Remove() or RemoveAt (int index) in underlying collection. The following code example illustrates that.
-
-
-{% highlight C# %}
-
-
-
-private void Delete_Click(object sender, RoutedEventArgs e)
-
-{
-
-    (sfdatagrid.DataContext as OrderInfoRepositiory).OrderInfoCollection.Remove(sfdatagrid.CurrentItem as OrderInfo);
-
-        // OR
-
-    (sfdatagrid.DataContext as OrderInfoRepositiory).OrderInfoCollection.RemoveAt(2);
-
-}
-
-{% endhighlight %}
-
-
-
-Current item is currently selected record (that has selection border). When you want to use first method, you can select record and delete operation. 
-
-## How To
-
-### How to change the AddNewRow watermark text
-
-DataGrid control enables you to change the AddNewRowwatermarktext by changing the Localization settings. By changing the AddNewRowText value in the Resource settings, you can change the AddNewRowwatermarktext.
-
-In your WPF application, when you have resource file already (.resx) then you can add AddNewRowText and its value as your requirement and give a comment value. When you do not have it, then create new folder with name of Resources.
-
-1. Now Add > Add New Item. 
-2. Expand General node. 
-3. You can see that Resource file is available. 
-4. Enter__Syncfusion.SfGrid.WPF in name text box.
-5. Choose Add.
-6. Resource file is added to your project in Resources folder.
-7. Add AddNewRowText in resource file.
-
-The following screenshot illustrates this:
-
-
-
-![](Features_images/Features_img128.png)
-
-
-
-Changing AddNewRow watermark text
-{:.caption}
-The following screenshot displays the output.
-
-
-
-![](Features_images/Features_img129.png)
-
-
-
-DataGrid with changed AddNewRow watermark text
-{:.caption}
-
-N> The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
-
-
-
-### How to customize the AddNewRow watermark text wrapper
-
-Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowControl style. The following code example illustrates how to apply a custom background and foreground for the AddNewRowwatermark wrapper:
-
-
-
-{% highlight xml %}
-
-
-
-
-
-<Style TargetType="syncfusion:AddNewRowControl">
-
-    <Setter Property="FontSize" Value="12" />
-
-    <Setter Property="Foreground" Value="White" />
-
-    <Setter Property="Template">
-
-        <Setter.Value>
-
-            <ControlTemplate TargetType="syncfusion:AddNewRowControl">
-
-                <Grid>
-
-                    <VisualStateManager.VisualStateGroups>
-
-                        <VisualStateGroup x:Name="AddNewRowStates">
-
-                            <VisualState x:Name="Normal" />
-
-                            <VisualState x:Name="Edit">
-
-                                <Storyboard>
-
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_AddNewRowTextBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
-
-                                        <DiscreteObjectKeyFrame KeyTime="0">
-
-                                            <DiscreteObjectKeyFrame.Value>                                                <Visibility>Collapsed</Visibility>
-
-                                            </DiscreteObjectKeyFrame.Value>
-
-                                        </DiscreteObjectKeyFrame>
-
-                                    </ObjectAnimationUsingKeyFrames>
-
-                                </Storyboard>
-
-                            </VisualState>
-
-                        </VisualStateGroup>
-
-                    </VisualStateManager.VisualStateGroups>
-
-                    <Rectangle x:Name="PART_CurrentFocusRow"
-
-                               Margin="{TemplateBinding CurrentFocusBorderMargin}"
-
-                               Stroke="DarkGray"
-
-                               StrokeDashArray="2,2"
-
-                               StrokeThickness="1"
-
-                               Visibility="{TemplateBinding CurrentFocusRowVisibility}" />
-
-                    <Border Background="{TemplateBinding RowSelectionBrush}"
-
-                            Clip="{TemplateBinding SelectionBorderClipRect}"
-
-                            Visibility="{TemplateBinding SelectionBorderVisiblity}" />
-
-                    <Border Background="{TemplateBinding Background}"
-
-                            BorderBrush="{TemplateBinding BorderBrush}"
-
-                            BorderThickness="{TemplateBinding BorderThickness}">
-
-                        <ContentPresenter />
-
-                    </Border>
-
-                    <Border x:Name="PART_AddNewRowTextBorder"
-
-                            Background="DeepSkyBlue"
-
-                            BorderBrush="{TemplateBinding BorderBrush}"
-
-                            BorderThickness="0,0,1,1"
-
-                            Clip="{TemplateBinding TextBorderClip}"
-
-                            IsHitTestVisible="False">
-
-                        <ContentPresenter Margin="{TemplateBinding TextMargin}"
-
-                                          HorizontalAlignment="Left"
-
-                                          VerticalAlignment="Center"
-
-                                          Content="{TemplateBinding AddNewRowText}" />
-
-                    </Border>
-
-                </Grid>
-
-            </ControlTemplate>
-
-        </Setter.Value>
-
-    </Setter>
-
-</Style>
-{% endhighlight %}
-
-
-You can add above code example to App.Xaml or in Windows.Resources. The following screenshot illustrate the output.
-
-![](Features_images/Features_img130.png)
-
-
-
-DataGrid with customized AddNewRow watermark text wrapper
-{:.caption}
-### How to validate AddNewRow
-
-SfDataGrid control provides extensive support to use validation with AddNewRow. To validate the data in AddNewRow, you can use the Attributevalidation, Data validation using INotifyDataErrorInfo, or Custom validation using the RowValidating event. The following code example illustrates custom row validation with AddNewRow:
-
-
-{% highlight C# %}
-
-
-
-void OnRowValidating(object sender, RowValidatingEventArgs args)
-
-{
-
-if (dataGrid.IsAddNewIndex(args.RowIndex))
-
-{
-
-var data = args.RowData as OrderInfo;
-
-if (data.Freight > 500)
-
-{
-
-args.IsValid = false;
-
-args.ErrorMessages.Add("Freight", "Freight should not exceed 500.");
-
-}
-
-}
-
-}
-{% endhighlight %}
-
-
-The following screenshot illustrate the output.
-
-
-
-![](Features_images/Features_img131.png)
-
-
-Custom row validation with AddNewRow
-{:.caption}
-N> DataGrid adds the new data to the data source only when the data is valid.
-
-### How to handle AddNewRow for complex properties 
-
-When you start editing in AddNewRow, the DataGrid control creates an instance for a data object. When the data object contains complex properties, they do not initiate with the data object. Therefore, you need to initiate the complex property externally; otherwise the edited value is not committed in the cell. This requirement is achieved by using the AddNewRowInitiating event. The following code example illustrates this:
-
-
-{% highlight xml %}
-
-
-
+{% tabs %}
+{% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
-
-AddNewRowInitiating="OnAddNewRowInitiating"
-
-AddNewRowPosition="Top"
-
-AllowEditing="True"
-
-ItemsSource="{Binding Path=OrdersDetails}">
-
-<syncfusion:SfDataGrid.Columns>
-
-<syncfusion:GridTextColumn MappingName="OrderID" />
-
-<syncfusion:GridTextColumn MappingName="CustomerID" />
-
-<syncfusion:GridTextColumn MappingName="ShippingDate" />
-
-<syncfusion:GridTextColumn MappingName="EmployeeDetails.EmployeeID" />
-
-<syncfusion:GridTextColumn MappingName="ShipCity" />
-
-<syncfusion:GridTextColumn MappingName="ShipCountry" />
-
-<syncfusion:GridTextColumn MappingName="Freight" />
-
-<syncfusion:GridTextColumn MappingName="IsClosed" />
-
-</syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
-
+                       AddNewRowPosition="Top"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
+{% endhighlight %}
+{% endtabs %}
 
 
-{% highlight C# %}
+![](Data-Manipulation_images/Data-Manipulation_img1.png)
+
+You can get the row index of AddNewRow where it placed by using the [GridAddNewRowController.GetAddNewRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~GetAddNewRowIndex.html) method.
+
+{% tabs %}
+{% highlight c# %}
+var addNewRowController=this.dataGrid.GetAddNewRowController();
+
+int addNewRowIndex = addNewRowController.GetAddNewRowIndex();
+{% endhighlight %}
+{% endtabs %}
+You can check whether the specified row index is AddNewRow index,  by using [SfDataGrid.IsAddNewIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~IsAddNewIndex.html) helper method.
+{% tabs %}
+{% highlight c# %}
+bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
+{% endhighlight %}
+{% endtabs %}
 
 
+### Initializing default values for AddNewRow
 
-private void OnAddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
+SfDataGrid allows you to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs~NewObject.html) property in  [SfDataGrid.AddNewRowInitiating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowInitiating_EV.html) event.
 
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.AddNewRowInitiating += dataGrid_AddNewRowInitiating;
+void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
-
-      var data = args.NewObject as OrderInfo;
-
-data.EmployeeDetails = new Employees();
-
+    var data = args.NewObject as OrderInfo;
+    data.OrderID = 101;
 }
 {% endhighlight %}
+{% endtabs %}
 
-### How to Initialize the AddNewRow with Default Values
+![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
-This topic explains you how to initialize the default values. You can achieve this requirement using AddNewRowInitiating event. 
+### Working with complex properties in AddNewRow
 
+SfDataGrid control does not initiate values for complex properties defined in the data object. Hence, you need to initiate the default values for the complex properties externally by using the [SfDataGrid.AddNewRowInitiating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowInitiating_EV.html) event.
 
-{% highlight C# %}
-
-
-
-
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
+                       AutoGenerateColumns="False"
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="OrderID" />
+        <syncfusion:GridTextColumn MappingName="Customer.CustomerID" />
+        <syncfusion:GridTextColumn MappingName="ShipCity" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AddNewRowInitiating += dataGrid_AddNewRowInitiating;
 
 private void SfDataGrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs args)
-
 {
-
     var data = args.NewObject as OrderInfo;
-
-    data.OrderID = 10012;
-
-    data.CustomerID = "JACK";
-
-    data.IsClosed = true;
-
-    data.OrderDate = System.DateTime.Now;
-
-    data.Freight = 12.0;
-
-    data.Discount = 10.0;    
-
-    data.ContactNumber = "043742";
-
-    data.DeliveryDelay = TimeSpan.Zero;    
-
-    data.ProductName = "Mobile";
-
-    data.Quantity = 2;
-
-    data.UnitPrice = 2;
-
+    data.Customer = new Customer();
 }
 {% endhighlight %}
+{% endtabs %}
 
 
+### Programmatically perform AddNewRow operations
+
+You can commit or cancel the new record in AddNewRow by pressing the <kbd>Enter</kbd> and <kbd>Esc</kbd> key respectively. AddNewRow operations can be performed programmatically by using [GridAddNewRowController.CommitAddNew](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~CommitAddNew.html) and [GridAddNewRowController.CancelAddNew](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~CancelAddNew.html) methods at runtime.
+
+#### Cancel AddNewRow
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Grid.Helpers;
+
+//Check whether the data is newly added 
+if (this.dataGrid.View.IsAddingNew)
+{
+    // Which end edit the current cell. By passing false, it revert the entered value.
+    if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
+        this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
+
+    var addNewRowController = this.dataGrid.GetAddNewRowController();
+
+    addNewRowController.CancelAddNew();
+}
+{% endhighlight %}
+{% endtabs %}
 
 
-When you click AddNewRow button, row is loaded with this data.
+#### Commit AddNewRow
 
-### Handle selection after items are removed from the grid
+{% tabs %}
+{% highlight c# %}
+RowColumnIndex rowColumnIndex = new RowColumnIndex();
 
-This article shows how to select a specified row after deleting. By default, when you delete a record from the Grid, the selection maintains the same position it is in. However, this behavior is overridden by handling the RecordDeleted Event. The following code example illustrates this:
+if (this.dataGrid.View.IsAddingNew)
+{
+    if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
+        this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
+
+    rowColumnIndex = this.dataGrid.SelectionController.CurrentCellManager.CurrentRowColumnIndex;
+
+    //Process the commit operation in AddNewRow.
+    var addNewRowController = this.dataGrid.GetAddNewRowController();
+
+    addNewRowController.CommitAddNew();
+
+    //Gets the row index of AddNewRow 
+    rowColumnIndex.RowIndex = addNewRowController.GetAddNewRowIndex();
+
+    this.dataGrid.SelectedItems.Clear();
+
+    //If the AddNewRowPosition is Top need to move the current cell to next row 
+    if (this.dataGrid.AddNewRowPosition == AddNewRowPosition.Top)
+        rowColumnIndex.RowIndex = rowColumnIndex.RowIndex + 1;
+
+    // Which retains the current cell border in the row after canceling AddNewRow as you press ESC key operation.
+    this.dataGrid.MoveCurrentCell(rowColumnIndex);
+}
+{% endhighlight %}
+{% endtabs %}
 
 
-{% highlight C# %}
+### Validating AddNewRow
 
+You can validate the data in AddNewRow like other data rows through [built-in validation](http://help.syncfusion.com/wpf/sfdatagrid/data-validation#built-in-validations) or [custom validation](http://help.syncfusion.com/wpf/sfdatagrid/data-validation#custom-validation-through-events). Here, AddNewRow is validated using [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.  
 
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RowValidating += dataGrid_RowValidating;
 
-sfDataGrid.RecordDeleted += OnRecordDeleted;
+void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
+{
+    if(this.dataGrid.IsAddNewIndex(args.RowIndex))
+    {
+        var data = args.RowData as OrderInfo;
 
-…
+        if (data.OrderID >= 1010)
+        {
+            args.IsValid = false;
+            args.ErrorMessages.Add("OrderID", "OrderID should not exceed 1010.");
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-private void OnRecordDeleted(object sender, RecordDeletedEventArgs args)
+![](Data-Manipulation_images/Data-Manipulation_img3.png)
 
+Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event.
+
+### Customizing AddNewRow text using default resource file
+
+SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](http://help.syncfusion.com/wpf/sfdatagrid/localization#editing-default-culture-resource) section.
+
+To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. 
+
+![](Data-Manipulation_images/Data-Manipulation_img4.png)
+
+![](Data-Manipulation_images/Data-Manipulation_img5.png)
+
+### Customizing AddNewRow text using style
+
+You can customize the watermark text of AddNewRow by editing the style of `AddNewRowControl` and change the content of `PART_AddNewRowTextBorder’s ContentPresenter`.
+
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+    <Style TargetType="syncfusion:AddNewRowControl">
+
+        <Setter Property="Foreground" Value="White" />
+
+        <Setter Property="BorderBrush" Value="Gray" />
+
+        <Setter Property="BorderThickness" Value="0" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="syncfusion:AddNewRowControl">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="AddNewRowStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Edit">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_AddNewRowTextBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+
+                            <VisualStateGroup x:Name="BorderStates">
+                                <VisualState x:Name="NormalRow" />
+
+                                <VisualState x:Name="FooterRow">
+                                    <Storyboard BeginTime="0">
+                                        <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_AddNewRowBorder"
+                                                                          Storyboard.TargetProperty="BorderThickness">
+                                            <EasingThicknessKeyFrame KeyTime="0" Value="0, 1, 0, 0" />
+                                        </ThicknessAnimationUsingKeyFrames>
+                                        <ThicknessAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_AddNewRowBorder"
+                                                                          Storyboard.TargetProperty="Margin">
+                                            <EasingThicknessKeyFrame KeyTime="0" Value="0, -1, 0, 0" />
+                                        </ThicknessAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <Rectangle x:Name="PART_CurrentFocusRow"
+                                   Margin="2,2,0,2"
+                                   HorizontalAlignment="Right"
+                                   Stroke="DarkGray"
+                                   StrokeDashArray="2,2"
+                                   StrokeThickness="1"
+                                   Visibility="{TemplateBinding CurrentFocusRowVisibility}" />
+
+                        <Border Background="{TemplateBinding RowSelectionBrush}"
+                                Clip="{TemplateBinding SelectionBorderClipRect}"
+                                Visibility="{TemplateBinding SelectionBorderVisiblity}" />
+                        <Border x:Name="PART_AddNewRowBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter />
+                        </Border>
+
+                        <Border x:Name="PART_AddNewRowTextBorder"
+                                Background="#FFE5E5E5"
+                                BorderBrush="Transparent"
+                                BorderThickness="0,0,1,1"
+                                Clip="{TemplateBinding TextBorderClip}"
+                                IsHitTestVisible="False">
+                            <ContentPresenter Margin="{TemplateBinding TextMargin}"
+                                              HorizontalAlignment="Left"
+                                              VerticalAlignment="Center"
+                                              Content="Add New Row" />
+                        </Border>
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</Application.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+![](Data-Manipulation_images/Data-Manipulation_img6.png)
+
+### AddNewRow support in Master-Details View
+
+You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position to [SfDataGrid.AddNewRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowPosition.html) property in [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html). 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       AutoGenerateRelations="False"
+                       ItemsSource="{Binding Orders}">
+
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                                       AddNewRowPosition="Top"                                       
+                                       AutoGenerateColumns="True" />
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
+
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+{% endhighlight %}
+{% endtabs %}
+Similarly, you can wire [AddNewRowInitiating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowInitiating_EV.html) event for `ViewDefinition.DataGrid`.
+{% tabs %}
+{% highlight c# %}
+this.FirstLevelNestedGrid.AddNewRowInitiating += FirstLevelNestedGrid_AddNewRowInitiating;
+
+void FirstLevelNestedGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
+{
+            
+}
+{% endhighlight %}
+{% endtabs %}
+
+For auto-generated relation (when the [AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is set to `true`), the AddNewRow can be enabled by specifying the position to `AddNewRowPosition` property in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.AutoGeneratingRelations+=dataGrid_AutoGeneratingRelations;
+
+void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
+{
+    e.GridViewDefinition.DataGrid.AddNewRowPosition = AddNewRowPosition.Top;
+}
+{% endhighlight %}
+{% endtabs %}
+
+In the same way, you can wire [AddNewRowInitiating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowInitiating_EV.html) event in the [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.AutoGeneratingRelations+=dataGrid_AutoGeneratingRelations;
+void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
+{
+    e.GridViewDefinition.DataGrid.AddNewRowInitiating += DataGrid_AddNewRowInitiating;
+}
+void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
 
-     args.SelectedIndex = -1;
-
 }
 {% endhighlight %}
+{% endtabs %}
 
 
-The previous code example resets the selection after every deletion.
+## Deletion
 
-### Remove specific records from the SfDataGrid control when you select multiple records and press the Delete key
+SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfDataGrid.AllowDeleting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDeleting.html) property to `true`.
 
-This section explains you how to remove specific records from SfDataGrid when you select multiple records from the Grid and press Delete.
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowDeleting="True"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AllowDeleting = true;
+{% endhighlight %}
+{% endtabs %}
 
-The RecordDeletingEventArgs argument in the RecordDeleting event holds the Items property that stores the list of records to be deleted from the source collection. By using the Items property, it is easy to revise the items that are removed from the source. The following code example illustrates this: 
+You can delete record directly in underlying collection also using Remove () or RemoveAt (int index). 
+
+{% tabs %}
+{% highlight c# %}
+(dataGrid.DataContext as ViewModel).Orders.Remove(dataGrid.CurrentItem as OrderInfo);
+
+// OR
+
+(dataGrid.DataContext as ViewModel).Orders.RemoveAt(2);
+{% endhighlight %}
+{% endtabs %}
 
 
-{% highlight C# %}
+### Events
 
+#### RecordDeleting 
 
+[RecordDeleting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleting_EV.html) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
 
-sfDataGrid.RecordDeleting += OnRecordDeleting;
+`Cancel` - Gets or sets a value indicating whether the event should be canceled.
 
-…
+`OriginalSender` - Gets the original sender from where the event is raised.
 
-private void OnRecordDeleting(object sender, RecordDeletingEventArgs args)
+`Items` - Gets or sets the items to be removed from the source collection.
 
+You can cancel the delete operation through Cancel property in RecordDeleting event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RecordDeleting += dataGrid_RecordDeleting;
+
+void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 {
-
-    if(args.Items.Count>1)
-
-         args.Items.RemoveRange(1, args.Items.Count-1);
-
+    var item = args.Items[0] as OrderInfo;
+    if (item.OrderID == 1005)
+    {
+        args.Cancel = true;
+    }
 }
 {% endhighlight %}
+{% endtabs %}
 
 
-In the above code example, items are removed from the source. In this case, items are removed from the list of selected items.
+#### RecordDeleted	
+
+[RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event occurs after the record is deleted. The [RecordDeletedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs.html)  of   `RecordDeleted` event contains the following members.
+
+`Items` - Gets the records that were removed from the source collection.
+
+`SelectedIndex` - Gets or sets the selected index for the SfDataGrid control.
+
+### Handling selection after deleting the record from SfDataGrid
+
+You handle the selection after remove the records through [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs~SelectedIndex.html) property of [RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RecordDeleted += dataGrid_RecordDeleted;
+
+void dataGrid_RecordDeleted(object sender, RecordDeletedEventArgs args)
+{
+    args.SelectedIndex =-1;
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deleting cell value in display mode
+
+By default, the cell content can be cleared in edit mode by pressing <kbd>Delete</kbd> or <kbd>Backspace</kbd> key. It is also possible to delete the cell when it’s not in edit mode by handling the <kbd>Delete</kbd> key operation in the [ProcessKeyDown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionController~ProcessKeyDown.html) method of [GridSelectionController](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionController.html) or [GridCellSelectionController](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellSelectionController.html). Based on type of [SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html), override right selection controller.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
+
+public class GridSelectionControllerExt:GridSelectionController
+{
+    public GridSelectionControllerExt(SfDataGrid grid)
+        : base(grid)
+    {
+    }
+
+    protected override void ProcessKeyDown(KeyEventArgs args)
+    {
+        //Customizes the Delete key operation.
+        if (args.Key == Key.Delete)
+        {
+            //Gets the cell value of current column.
+            var record = this.DataGrid.View.Records[this.DataGrid.SelectedIndex].Data;
+
+            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName);
+
+            //Returns the cell value when the current column's cell is not set to null.
+            if (cellVal != null)
+            {
+                var columnName = this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName;
+                PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, columnName);
+            }
+
+        }
+        else
+            base.ProcessKeyDown(args);
+    }       
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+### Conditionally deleting records when pressing Delete key
+
+You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RecordDeleting += dataGrid_RecordDeleting;
+
+void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
+{
+    foreach(var item in args.Items)
+    {
+        if((item as OrderInfo).OrderID==1001)
+        {
+            args.Cancel = true;
+        }
+    }
+}   
+{% endhighlight %}
+{% endtabs %}

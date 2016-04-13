@@ -22,35 +22,16 @@ In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of th
 
 The visibility of the Zooming Toolkit or the individual buttons in the toolkit can be controlled by using the following properties:
 
-_Property Table_
+_Property_
 
-<table>
-<tr>
-<th>
-{{ '**Properties**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-ZoomInButtonVisibility</td><td>
-Gets or sets the zoom in button visibility.</td></tr>
-<tr>
-<td>
-ZoomOutButtonVisibility</td><td>
-Gets or sets the zoom out button visibility.</td></tr>
-<tr>
-<td>
-ZoomCloseButtonVisibility</td><td>
-Gets or sets the zoom close button visibility.</td></tr>
-<tr>
-<td>
-ZoomResetButtonVisibility</td><td>
-Gets or sets the zoom reset button visibility.</td></tr>
-</table>
-
+* **ZoomInButtonVisibility** - Gets or sets the zoom in button visibility.
+* **ZoomOutButtonVisibility** - Gets or sets the zoom out button visibility.
+* **ZoomCloseButtonVisibility** - Gets or sets the zoom close button visibility.
+* **ZoomResetButtonVisibility** - Gets or sets the zoom reset button visibility.
 
 The following code snippet illustrates the above settings:
 
- {% highlight xml %}
+ {% highlight xaml %}
 
     
 

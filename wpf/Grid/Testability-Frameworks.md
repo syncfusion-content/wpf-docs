@@ -69,7 +69,7 @@ The following set of instructions illustrates the same.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid>
 
@@ -190,6 +190,8 @@ Essential Grid WPF now supports automated UI testing with VS 2010 Coded UI techn
 * UITestPropertyProvider
 * UIActionFilter
 
+You can get the Extension Project of Coded UI from [this](http://www.syncfusion.com/downloads/support/directtrac/general/CODEDU~1-2042805459.ZIP) location.
+
 The architectural diagram is as follows:
 
 ![](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg)
@@ -231,7 +233,7 @@ Initial steps before creating the Coded UI Test project:
 
 N> The following code appears.
 
-{% highlight xml %}
+{% highlight xaml %}
 <Application x:Class="WpfApplication3.App"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -250,7 +252,7 @@ N> The following code appears.
 
 3.Change Application to Syncfusion:GridControlTestApplication as follows.
 
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

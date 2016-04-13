@@ -18,7 +18,7 @@ The following code sample illustrates how to create the SfRangeSlider from code-
 {%tabs%}
 
 
-{%highlight xml%}
+{%highlight xaml%}
 
 
 <Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"> 

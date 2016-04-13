@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolBarManager
-description: toolbarmanager
+description: Description about ToolBarManager for WPF
 platform: wpf
 control: ToolBarAdv
 documentation: ug
@@ -9,125 +9,103 @@ documentation: ug
 
 # ToolBarManager
 
-ToolBarManager is a container in which you can place ToolBarTrayAdv in top, bottom, left or right.
+ToolBarManager is a container in which the ToolBarTrayAdv can place in top, bottom, left or right provided with the following properties.
 
-Content of the ToolBarManager will be displayed in the remaining space. 
+* TopToolBarTray
+* BottomToolBarTray
+* LeftToolBarTray
+* RightToolBarTray
+
+And the content of the ToolBarManager will be displayed in the remaining space.
 
 The following code illustrates how to place the ToolBarAdv at the top:
 
+{% tabs %}
 
+{% highlight XAML %}
+<syncfusion:ToolBarManager x:Name="toolBarManager" >
 
-{% highlight xml %}
+<syncfusion:ToolBarManager.Resources>
 
+<Style TargetType="Button">
 
+<Setter Property="Height" Value="20" />
 
-<shared:ToolBarManager x:Name="toolBarManager" > 
+<Setter Property="Width" Value="20"/>
 
-            <shared:ToolBarManager.Resources>
+</Style>
 
-                <Style TargetType="Button">
+<Style TargetType="ToggleButton">
 
-                    <Setter Property="Height" Value="20" />
+<Setter Property="Height" Value="20"/>
 
-                    <Setter Property="Width" Value="20"/>
+<Setter Property="Width" Value="20"/>
 
-                </Style>
+</Style>
 
-                <Style TargetType="ToggleButton">
+</syncfusion:ToolBarManager.Resources>
 
-                    <Setter Property="Height" Value="20"/>
+<syncfusion:ToolBarManager.TopToolBarTray>
 
-                    <Setter Property="Width" Value="20"/>
+<syncfusion:ToolBarTrayAdv >
 
-                </Style>
+<syncfusion:ToolBarAdv ToolBarName="Standard">
 
+<Button>
 
+<Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
-            </shared:ToolBarManager.Resources>
+</Button>
 
-            <shared:ToolBarManager.TopToolBarTray>
+<Button >
 
-                <shared:ToolBarTrayAdv >
+<Image Source="Images/openHS.png" Width="16" Height="16"/>
 
-                    <shared:ToolBarAdv ToolBarName="Standard">
+</Button>
 
-                        <Button>
+</syncfusion:ToolBarAdv>
 
-                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
+</syncfusion:ToolBarTrayAdv>
 
-                        </Button>
+</syncfusion:ToolBarManager.TopToolBarTray>
 
-                        <Button >
+</syncfusion:ToolBarManager>     
 
-                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
-
-                        </Button>
-
-                    </shared:ToolBarAdv>
-
-                </shared:ToolBarTrayAdv>
-
-
-
-            </shared:ToolBarManager.TopToolBarTray>
-
-        </shared:ToolBarManager>
 
 
 {% endhighlight %}
-
 
 {% highlight C# %}
 
-
-
 ToolBarAdv toolBar = new ToolBarAdv();
 
-            Button button = new Button();
+Button button = new Button();
 
-            button.Content = new Image()
+button.Content = new Image() { Source = new BitmapImage() { UriSource = new Uri("Images/NewDocumentHS.png", UriKind.RelativeOrAbsolute) } };
 
-            {
+toolBar.Items.Add(button);
 
-                Source = new BitmapImage()
+button = new Button();
 
-                {
+button.Content = new Image() { Source = new BitmapImage() { UriSource = new Uri("Images/openHS.png", UriKind.RelativeOrAbsolute) } };
 
-                    UriSource = new Uri("Images/NewDocumentHS.png", UriKind.RelativeOrAbsolute)
+toolBar.Items.Add(button);
 
-                }
+ToolBarTrayAdv tray = new ToolBarTrayAdv();
 
-            };
+tray.ToolBars.Add(toolBar);
 
-            toolBar.Items.Add(button);
+ToolBarManager manager = new ToolBarManager();
 
-            button = new Button();
+manager.TopToolBarTray = tray;
 
-            button.Content = new Image()
+Grid1.Children.Add(manager);
 
-            {
 
-                Source = new BitmapImage()
 
-                {
-
-                    UriSource = new Uri("Images/openHS.png", UriKind.RelativeOrAbsolute)
-
-                }
-
-            };
-
-            toolBar.Items.Add(button);
-
-            ToolBarTrayAdv tray = new ToolBarTrayAdv();
-
-            tray.ToolBars.Add(toolBar);
-
-            ToolBarManager manager = new ToolBarManager();
-
-            manager.TopToolBarTray = tray;
 
 
 {% endhighlight %}
 
+{% endtabs %}
 

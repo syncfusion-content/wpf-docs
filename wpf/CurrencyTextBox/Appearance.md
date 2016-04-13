@@ -92,7 +92,7 @@ Now you can replace the existing Template setter and Triggers with your own crea
 Here is a simple example to customize the UnFocused state of the CurrencyTextBox: 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Trigger Property="IsFocused" Value="False">
 

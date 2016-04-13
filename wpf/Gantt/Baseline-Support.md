@@ -42,14 +42,14 @@ Return Type </th></tr>
 <tr>
 <td>
 LoadVarianceTableView</td><td>
-tdis metdod is used to load tde Variance view of tde Gantt.</td><td>
+this method is used to load the Variance view of the Gantt.</td><td>
 LoadVarianceTableView()</td><td>
 N/A</td><td>
 void </td></tr>
 <tr>
 <td>
 LoadDefaultTableView</td><td>
-tdis metdod is used to load tde Default (Editing) view of tde Gantt.</td><td>
+this method is used to load the Default (Editing) view of the Gantt.</td><td>
 LoadDefaultTableView()</td><td>
 N/A</td><td>
 void</td></tr>
@@ -136,7 +136,7 @@ The following image shows the BaseLine Table View:
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)
+![](Baseline-Support_images/Baseline-Support_img1.png)
 
 
 BaseLine Table View
@@ -194,7 +194,7 @@ bool</td></tr>
 
 Adding On-Demand Baseline Column Inclusion to an Application
 
-To add the On-Demand Baseline Column Inclusion to an application you need to enable the AddNewColumn of Gantt Grid, which will have a drop down cell on its head, which intrun will have the baseline columns that can be added dynamically. To enable this feature:
+To add the On-Demand Baseline Column Inclusion to an application you need to enable the AddNewColumn of Gantt Grid, which will have a drop down cell on its head, which in turn will have the baseline columns that can be added dynamically. To enable this feature:
 
 1. To show the Add New Column of Gantt Grid, set the ShowAddNewColumn Property to true in Gantt.
 2. To include the Baseline columns in the Add New Columns drop down cell, provide the corresponding mapping name in TaskAttributeMapping. 
@@ -301,7 +301,7 @@ Return Type </th></tr>
 <tr>
 <td>
 GetProjectStatistics</td><td>
-tdis metdod is used to get tde current statistics information about tde project</td><td>
+this method is used to get the current statistics information about the project</td><td>
 GetProjectStatistics()</td><td>
 N/A</td><td>
 ProjectInfo </td></tr>

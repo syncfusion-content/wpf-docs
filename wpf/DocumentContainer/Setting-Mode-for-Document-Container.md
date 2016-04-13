@@ -19,7 +19,7 @@ To set the Document Container in TDI mode, use the following code snippet.
 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding Document Container -->
 <syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">…....…....
 </syncfusion:DocumentContainer>
@@ -46,7 +46,7 @@ The following is the screen shot of a document container, which is in TDI mode.
 To set the Document Container in MDI mode, use the following code snippet.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Adding Document Container -->
 <syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">  …....  …....
 </syncfusion:DocumentContainer>

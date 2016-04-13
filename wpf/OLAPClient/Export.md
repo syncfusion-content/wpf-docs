@@ -84,7 +84,7 @@ The user can perform these exports in two ways:
 1. Through OlapGrid Tool Bar menu
 1. Through APIs
 
-The OlapGridtoolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the 
+The OlapGrid Toolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the 
 grid to the corresponding format.
 
 ![](Export_images/Export_img6.png)
@@ -130,9 +130,6 @@ Export the Grid to PDF</td></tr>
 
 OLAP Client for WPF provides support to export OLAP Grid to CSV file format. 
 
-### Use Case Scenarios 
-
-You can export the contents of the OLAP Grid in OLAP Client to the CSV file format for future references and analysis purposes.
 
 ### Methods
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles and Templates
 
-WPF styling and Templating is a suite of features (styles and templates) that allow develpers and designers to create visual compelling effects and consistent appearance of the products.
+WPF Styles and Templates is a suite of features (styles and templates) that allow developers and designers to create visual compelling effects and consistent appearance of the products.
 
 This section explains the information to change the visual appearance of the DataPager. In addition, you can edit the structure of the DataPager by using Blend and VisualStudio that helps you to customize their appearances. 
 
@@ -32,7 +32,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-*  Go to the Menubar Choose Object > EditStyle
+*  Go to the Menu bar Choose Object > EditStyle
 
 
 
@@ -63,7 +63,7 @@ When Ok is pressed, the Expression Blend generates the style of the SfDataPager 
 This section explains how to edit the style of SfDataPager in Visual studio Designing View. To Edit the control style in Visual studio, refer to the following steps,
 
 * Open your application in Visual Studio.
-* Open Designview>> Select SfDataPager Control >Right Click on SfDataPagerControl, Menuoptions are displayed.
+* Open Design view>> Select SfDataPager Control >Right Click on SfDataPagerControl, Menu options are displayed.
 
 
 

@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Overview| DoubleTextBox  | Wpf | Syncfusion
-description: overview
+title: Overview of Syncfusion DoubleTextBox control for WPF
+description: Features overview of DoubleTextBox control for WPF
 platform: wpf
-control: DoubleTextBox 
+control: DoubleTextBox
 documentation: ug
 ---
 
-# DoubleTextBox 
+# Overview
 
-The DoubleTextBox control restricts text box input to only double values with support for data binding, Watermark, Null Value, Blendability, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
+The `DoubleTextBox` control restricts text box input to only double values with support for data binding, Watermark, Null Value, Blendability, and Culture support. It provides many customization options to enhance its appearance and to suit an applications.
+
+## Features
 
 The core features of the DoubleTextBox are as follows:
 
@@ -18,10 +20,8 @@ The core features of the DoubleTextBox are as follows:
 * Provides data binding support.
 * Provides built-in Visual Styles and themes.
 * Provides Watermark support.
-* Provides Number Format support. 
+* Provides Number Format support.
 * Provides Blendability support.
 * Provides Null Value support.
 * Provides culture support.
-
-
 

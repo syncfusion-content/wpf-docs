@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive Features
 
-This section explains you how to use context menu, Column Chooser window and Rowheader in SfDatagrid. You can also see the different types of available API, methods and events for contextmenu, Column Chooser window and for row header.
+This section explains you how to use context menu, Column Chooser window and RowHeader in SfDatagrid. You can also see the different types of available API, methods and events for context menu, Column Chooser window and for row header.
 
 ## Context Menu
 
@@ -53,7 +53,7 @@ The GridContextMenuOpening event in SfDataGrid is raised when the context menu i
 The following code example illustrates context menu usage with GroupCaptionContextMenu to expand or collapse the group by using command bindings.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -597,7 +597,7 @@ RowHeader is a special Column used to indicate the row status like CurrentRow, E
 The following code example displays you how to enable RowHeader in DataGrid.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -631,7 +631,7 @@ DataGrid with a RowHeader
 By default, the RowHeader width value is set to ’45’ (Data Type: double).you can customize the width by setting any desired width as a numeric value to RowHeaderWidth property in SfDataGrid.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -714,7 +714,7 @@ The following code example shows you how to edit current row indicator in row he
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -896,7 +896,7 @@ You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip pro
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -964,7 +964,7 @@ You can customize the default style of the ToolTip to be shown on the GridCell o
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1011,7 +1011,7 @@ You can customize the default ToolTip by loading the Data Template as its conten
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 <!-- Need to add this code in Resources.     Defines the DataTemplate with Key – For GridCellControl-->
@@ -1069,7 +1069,7 @@ The following XAML has two DataTemplates defined to set for the ToolTip.
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1215,7 +1215,7 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1287,12 +1287,12 @@ Different ToolTip with ToolTipTemplateSelector
 
 When you are defining the GridColumn.ToolTipTemplate, do not define the DataTemplate for each column separately when you want to display based on the CellValue or the GridColumn.MappingName, in other words. 
 
-When the GridColumn.SetCellBoundToolTip property is set to true, that sets the DataContextHelper as a content to the ToolTip. The DataContextHelper has the Record and Value properties. By using the DataContextHelper.Record and DataContextHelper.Value, you can define the DataTemplateto display the content based on record/value and you can set this DataTemplate to all the columns in the SfDataGrid.  You have to set the GridColumn.SetCellBoundToolTip also to true for all the columns. 
+When the GridColumn.SetCellBoundToolTip property is set to true, that sets the DataContextHelper as a content to the ToolTip. The DataContextHelper has the Record and Value properties. By using the DataContextHelper.Record and DataContextHelper.Value, you can define the DataTemplate to display the content based on record/value and you can set this DataTemplate to all the columns in the SfDataGrid.  You have to set the GridColumn.SetCellBoundToolTip also to true for all the columns. 
 
 In the following XAML code, the same DataTemplate is set to all the columns to display CellValue with the help of the GridColumn.SetCellBoundToolTip and GridColumn.ToolTipTemplate.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1387,12 +1387,12 @@ In the image, when the mouse hovers on any cell, the tool tip style is the same 
 
 ### How to change the context menu item at Execute time
 
-You can use the GridContextMenuOpening event to change the contextmenu at Execute time. This event argument carries necessary information to work with the contextmenu of Grid.
+You can use the GridContextMenuOpening event to change the context menu at Execute time. This event argument carries necessary information to work with the context menu of Grid.
 
-By default, the contextmenu of Grid does not have any instance, and it is initialized with the contextmenu as illustrated in the following code example.
+By default, the context menu of Grid does not have any instance, and it is initialized with the context menu as illustrated in the following code example.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -1436,7 +1436,7 @@ ItemsSource="{Binding GDCSource}">
 
 
 
-In the following code example, the Headercontextmenu and Recordcontextmenu are initialized, and also the GridContextMenuOpening event is declared. 
+In the following code example, the HeaderContextMenu and RecordContextMenu are initialized, and also the GridContextMenuOpening event is declared. 
 
 
 {% highlight C# %}
@@ -1517,7 +1517,7 @@ Menu Items changed at Execute time according to column position
 You can also display row index in the row header instead of indicating the status of the row. To display the row index, you have to edit the control template of the GridRowHeaderCell, as shown in the following code example.
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
  
 

@@ -19,7 +19,7 @@ Use the following code snippet for setting the minimum height for the page heade
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -72,7 +72,7 @@ Wizard Page Type
 Set the background color of the banner for the Wizard control by using the BannerBackground property. The following code snippet is used to set this property.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -125,7 +125,7 @@ N> You can set the banner image either on the interior or exterior wizard page b
 The following code snippet can be used to set the banner image.
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -173,7 +173,7 @@ The following code snippet illustrates setting the minimum width for the banner 
 
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

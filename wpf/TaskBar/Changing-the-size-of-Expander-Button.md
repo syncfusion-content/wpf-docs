@@ -14,7 +14,7 @@ You can change the size of the Expander button in the TaskBar control. This is a
 To set the size of the Expander button, use the below code
 
 {%tabs%}
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
