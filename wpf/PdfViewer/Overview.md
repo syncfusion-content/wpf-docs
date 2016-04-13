@@ -23,7 +23,7 @@ You can embed the PDF viewer within the .NET application using this feature. The
 
 ## Prerequisites and Compatibility
 
-This section covers the requirements that are mandatory for using Syncfusion Essential Pdf Viewer. It also lists operating systems and browsers that are compatible with the product.
+This section covers the requirements that are mandatory for using Syncfusion Essential PDF Viewer. It also lists operating systems and browsers that are compatible with the product.
 
 ### Prerequisites
 
