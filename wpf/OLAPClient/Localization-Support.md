@@ -730,7 +730,7 @@ Now, the supported cultures are included in the project file.
 
 ## Specifying the CurrentUICulture
 
-Now, you need to specify the CurrentUICulture of the application. We can specify the CurrentUICulture either from Application_Startup in App.xmal.cs or from the constructor on the MainPage (If you are specifying the current culture on the main page, then make sure, this is assigned before calling the InitializeComponent method). The following code snippets describe the two variations.
+Now, you need to specify the CurrentUICulture of the application. We can specify the CurrentUICulture either from Application_Startup in App.xaml.cs or from the constructor on the MainPage (If you are specifying the current culture on the main page, then make sure, this is assigned before calling the InitializeComponent method). The following code snippets describe the two variations.
 
 {% tabs %}
 {% highlight C# %} 
