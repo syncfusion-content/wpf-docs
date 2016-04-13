@@ -1129,12 +1129,12 @@ UnitVisibility</td><td>
 Gets or sets legend unit visibility</td></tr>
 <tr>
 <td>
-chart:ChartPieType.ExplodedAll chart: ChartDoughnutType.ExplodedAll</td><td>
+chart:ChartPieType.ExplodedAll  chart:ChartDoughnutType.ExplodedAll</td><td>
 ExplodedAll</td><td>
 Gets or sets a value whether to explode all the segments of pie and doughnut chart</td></tr>
 <tr>
 <td>
-chart:ChartPieType.ExplodedIndex chart: ChartDoughnutType.ExplodedIndex</td><td>
+chart:ChartPieType.ExplodedIndex  chart:ChartDoughnutType.ExplodedIndex</td><td>
 ExplodedIndex</td><td>
 Gets or sets the index of the segment to be exploded.</td></tr>
 <tr>
