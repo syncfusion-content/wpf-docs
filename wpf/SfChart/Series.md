@@ -1282,8 +1282,7 @@ YBindingPath="Value" Interior="#4A4A4A" />
 
 ![](Series_images/faststepline.png)
 
-
-The antialiasing property, [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) is available for FastStepLineBitmapSeries also.
+The anti aliasing mode can be enabled using [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastStepLineBitmapSeries as in below code snippet:
 
 {% highlight xaml %}
 

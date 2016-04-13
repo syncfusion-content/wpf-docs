@@ -453,7 +453,7 @@ Serialized Chart
 
 ## Clone or copy the chart
 
-More like serialization, you can use [`Clone`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Clone.html) method for SfChart control state persistency. This method creates a copy of the chart instance.
+More like serialization, you can use [`Clone`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Clone.html) method for SfChart control state persistence. This method creates a copy of the chart instance.
 
 {% highlight C# %}
 
