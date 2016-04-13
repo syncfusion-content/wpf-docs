@@ -13,9 +13,9 @@ SfChart is a new chart introduced in 11.1 version. SfChart is a very high perfor
 
 ## Adding Reference
 
-Chart DLL Name: Syncfusion.Chart.Wpf.dll
+Chart assembly Name: Syncfusion.Chart.Wpf.dll
 
-SfChart DLL Name: Syncfusion.SfChart.WPF.dll
+SfChart assembly Name: Syncfusion.SfChart.WPF.dll
 
 The following code example illustrates xmlns namespace for Chart. You can include the Syncfusion schema in WPF and both the charts are available in the WPF schema. 
 
@@ -1129,12 +1129,12 @@ UnitVisibility</td><td>
 Gets or sets legend unit visibility</td></tr>
 <tr>
 <td>
-chart:ChartPieType.ExplodedAllchart: ChartDoughnutType.ExplodedAll</td><td>
+chart:ChartPieType.ExplodedAll  chart:ChartDoughnutType.ExplodedAll</td><td>
 ExplodedAll</td><td>
 Gets or sets a value whether to explode all the segments of pie and doughnut chart</td></tr>
 <tr>
 <td>
-chart:ChartPieType.ExplodedIndex chart: ChartDoughnutType.ExplodedIndex</td><td>
+chart:ChartPieType.ExplodedIndex  chart:ChartDoughnutType.ExplodedIndex</td><td>
 ExplodedIndex</td><td>
 Gets or sets the index of the segment to be exploded.</td></tr>
 <tr>

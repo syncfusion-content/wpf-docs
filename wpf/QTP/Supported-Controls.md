@@ -320,7 +320,8 @@ Return Type
 </tr>
 <tr>
 <td>
-void SelectionChanged(int selectedIndex, int seriesIndex)</td>
+void SelectionChanged(int selectedIndex, int seriesIndex)
+</td>
 <td>
 To record select the segment /series by using selected index and series index parameter 
 </td>
@@ -343,6 +344,7 @@ double zoomFactor, double zoomPosition, int axisIndex
 </td>
 <td>
 void
+</td>
 </tr>
 <tr>
 <td>

@@ -12,7 +12,7 @@ documentation: ug
 Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
 
 ### Enable Sorting
-Ths [`IsSortData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSortData.html) property used to enable the sorting in series.
+This [`IsSortData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSortData.html) property used to enable the sorting in series.
 
 ### Changing sorting direction
 

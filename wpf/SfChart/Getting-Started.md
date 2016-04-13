@@ -35,7 +35,7 @@ These steps are explained below for both XAML and code behind.
 
 N> This window differs for the Visual Basic project.
 
-T> Select the framework version respective to your application. The version can be identified as below:
+T> Select the .NET Framework version respective to your application. The version can be identified as below:
 <table>
 <tr>
 <td>

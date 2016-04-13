@@ -21,27 +21,27 @@ Description</th></tr>
 <tr>
 <td>
 Serialize()</td><td>
-Serialize the control and saves as the xml file in the parent folder.</td></tr>
+Serialize the control and saves as the XML file in the parent folder.</td></tr>
 <tr>
 <td>
 Serialize(string filePath)</td><td>
-Serialize the control and saves as the xml file in the given file path.</td></tr>
+Serialize the control and saves as the XML file in the given file path.</td></tr>
 <tr>
 <td>
 Serialize(Stream stream)</td><td>
-Serialize the control and saves as the xml file in the given stream.</td></tr>
+Serialize the control and saves as the XML file in the given stream.</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
-Deserialize the xml file from the parent folder and returns the SfChart control object.</td></tr>
+Deserialize the XML file from the parent folder and returns the SfChart control object.</td></tr>
 <tr>
 <td>
 Deserialize(string filePath)</td><td>
-Deserialize the xml file from the given file path and returns the SfChart control object.</td></tr>
+Deserialize the XML file from the given file path and returns the SfChart control object.</td></tr>
 <tr>
 <td>
 Deserialize(Stream stream)</td><td>
-Deserialize the xml file from the given stream and returns the SfChart control object.</td></tr>
+Deserialize the XML file from the given stream and returns the SfChart control object.</td></tr>
 </table>
 {% tabs %}
 
