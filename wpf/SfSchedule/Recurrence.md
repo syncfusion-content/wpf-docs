@@ -47,13 +47,13 @@ This group properties are used to decide when the recurrence should end.
 
 Provide recurrence start date using “RangeStartDate” property which helps from when to start the recurrence. Set “IsRangeRecurrenceCount” as true and set “IsRangeNoEndDate” & “IsRangeEndDate” properties to false and provide the count for recurring appointment using “RangeRecurrenceCount” property. Or set “IsRangeEndDate” as true and set “IsRangeRecurrenceCount” & “IsRangeNoEndDate” properties to false and provide the “RangeEndDate” to set the when the recurrence should end. Or set “IsRangeNoEndDate” as true and set “IsRangeRecurrenceCount” & “IsRangeEndDate” properties to false to create recurring appointments that never ends.
 
-## RRule
+## RRULE
 
-Assign the generated RRule to the appointment property called “RecurrenceRule” that assign the recurrence properties to the appointment. Or user can directly apply RRule from any ICal file.
+Assign the generated RRULE to the appointment property called “RecurrenceRule” that assign the recurrence properties to the appointment. Or user can directly apply RRULE from any iCal file.
 
 ## RRuleGenerator
 
-RRuleGenerator method is used to create RRule which is available in the ScheduleHelper class of the SfSchedule control. Assign the generated RRule to the appointment property called “RecurrenceRule” that assign the recurrence properties to the appointment. Or user can directly apply RRule from any ICal file.
+RRuleGenerator method is used to create RRULE which is available in the ScheduleHelper class of the SfSchedule control. Assign the generated RRULE to the appointment property called “RecurrenceRule” that assign the recurrence properties to the appointment. Or user can directly apply RRULE from any iCal file.
 
 ## Applying Recurrence to Appointments
 
