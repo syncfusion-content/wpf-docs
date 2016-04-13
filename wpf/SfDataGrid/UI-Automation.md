@@ -9,7 +9,7 @@ documentation: ug
 
 # UI Automation
 
-Microsoft UI Automation is the new accessibility framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides accessibility to most UI elements and it provides the information about UI element to the end user. You can interact with the UI by using automated test scripts. To know more about UI Automation, refer the MSDN page [here](https://msdn.microsoft.com/en-us/library/ms747327(v=vs.110).aspx).
+Microsoft UI Automation is the new accessibility Framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides accessibility to most UI elements and it provides the information about UI element to the end user. You can interact with the UI by using automated test scripts. To know more about UI Automation, refer the MSDN page [here](https://msdn.microsoft.com/en-us/library/ms747327(v=vs.110).aspx).
 
 SfDataGrid supports the following types of UI Automation,
 
@@ -48,7 +48,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 
 ### Requirements and Configuration
 
-Coded UI provides support only in Visual Studio Ultimate and Visual Studio Premium. For more information about the platforms and configurations that are supported by coded UI tests, refer this [link](https://msdn.microsoft.com/en-us/library/dd380742.aspx).
+Coded UI provides support only in Visual Studio Ultimate and Visual Studio Premium. For more information about the platforms and configurations that are supported by Coded UI tests, refer this [link](https://msdn.microsoft.com/en-us/library/dd380742.aspx).
 
 To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.VisualStudion.Extension.WPF-1315333566.zip) location.
 
@@ -280,9 +280,9 @@ AccentBackgroundAccentForegroundAutoEllipsisModeAutoEllipsisTextDisplayModeEnabl
 
 ### How To
 
-### How to Enable CodedUI Test in SfDataGrid
+### How to Enable Coded UI Test in SfDataGrid
 
-To enable CodedUI Test in SfDataGrid, set AutomationPeerHelper.EnableCodedUI__to True. You can use the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace.
+To enable Coded UI Test in SfDataGrid, set AutomationPeerHelper.EnableCodedUI__to True. You can use the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace.
 
 
 {% highlight C# %}
@@ -308,7 +308,7 @@ QTP is an automated testing software designed for testing various software appli
 
 QTP enables you to test standard Windows application, Web Objects, ActiveX controls and Visual Basic applications.
 
-Syncfusion provides Essential QTP that contains custom libraries, that help recognize Syncfusion controls. These custom libraries are built with the help of .Net add-in extensibility.
+Syncfusion provides Essential QTP that contains custom libraries, that help recognize Syncfusion controls. These custom libraries are built with the help of .NET add-in extensibility.
 
 SfDataPager and SfMultiColumnDropDownControl supports QTP Test automation.
 
@@ -406,7 +406,7 @@ When your system does not contain Syncfusion.CNG , SyncfusionTestObjects.XML and
 
 * C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
  
-N> By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations. DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\ DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
+N> By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower Framework version, you need to copy and paste the SfGridQTP.WPF Assembly in preferred locations. Assembly Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\ Assembly Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
 
  
 

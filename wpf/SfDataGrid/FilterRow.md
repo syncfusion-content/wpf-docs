@@ -45,7 +45,7 @@ The each GridFilterRowCell which loads TextBox, DoubleTextBox and DateTimeEdit w
 Editors
 </th>
 <th>
-FilteRowConditions
+FilterRowConditions
 </th>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Equals, NotEquals, GreaterThan, GreaterThanOrEqual, LessThan, LessThanOrEqual, N
 DateTimeEdit
 </td>
 <td>
-Equls, NotEquals, After, AfterOrEqual, Before, BeforeOrEqual, Null, NotNull
+Equals, NotEquals, After, AfterOrEqual, Before, BeforeOrEqual, Null, NotNull
 </td>
 </tr>
 </table>
