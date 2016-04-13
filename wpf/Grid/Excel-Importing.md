@@ -92,7 +92,7 @@ NA</td></tr>
 <tr>
 <td>
 ImportFromExcel</td><td>
-this metdod is used to import the particular sheet from the IWorksheet With the importing event handler.</td><td>
+this method is used to import the particular sheet from the IWorksheet With the importing event handler.</td><td>
 ImportFromExcel(IWorksheet sheet, GridCellImportFromExcelHandler importhandler)</td><td>
 NA</td><td>
 Void</td><td>
@@ -190,7 +190,7 @@ this.gridControl.Model.ImportFromExcel(new MemoryStream(file));
 
 Open the workbook
 
-To import the entire workbook to a GridControl, initially you have to open the workbook by using the XLSIO library as shown in the following code snippet:
+To import the entire workbook to a GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet:
 
 
 {% highlight c# %}
@@ -234,7 +234,7 @@ GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcel(workBook
 
 Open the workbook
 
-To import the entire workbook to a virtual GridControl, initially you have to open the workbook by using the XLSIO library as shown in the following code snippet. 
+To import the entire workbook to a virtual GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet. 
 
 
 {% highlight c# %}

@@ -390,7 +390,7 @@ This cell type serves the same purpose as combo box control. The difference is t
 
 The code snippets below allow the user to construct different List Control Cells and their output. To set up drop-down List cell, set its CellType to “DropDownList”.
 
-Creating Editable Drop-down List Bound to Linq Source with ‘FirstName’ as its Display Member.
+Creating Editable Drop-down List Bound to LINQ Source with ‘FirstName’ as its Display Member.
 
 {% highlight c# %}
 
@@ -439,7 +439,7 @@ Editable Drop-down List Control
 
 An Editable drop-down list is created.
 
-Autocomplete Drop-down List Bound to Linq source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
+Autocomplete Drop-down List Bound to LINQ source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
 
 
 {% highlight c# %}
@@ -488,7 +488,7 @@ The following output is generated using the code above.
 Autocomplete Drop-down List Control
 {:.caption}
 
-Exclusive Drop-down List Bound to Linq Source with FirstName as its DisplayMember.
+Exclusive Drop-down List Bound to LINQ Source with FirstName as its DisplayMember.
 
 
 {% highlight c# %}
@@ -4804,7 +4804,7 @@ HLOOKUP(lookup_value,table_array, row_index_num, [range_lookup])Lookup_value: Th
 <tr>
 <td>
 HYPERLINK</td><td>
-Creates a shortcut or jump that opens a document stored on a network server, an intranet, or the internet.</td><td>
+Creates a shortcut or jump that opens a document stored on a network server, an intranet, or the Internet.</td><td>
 HYPERLINK(link_location, [friendly_name])Link_location: The path and file name to the document to be opened.Friendly_name: The jump text or numeric value that is displayed in the cell.</td></tr>
 <tr>
 <td>

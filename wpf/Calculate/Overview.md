@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential Calculate is a 100% Native .NET library that provides calculation functionality by using the Microsoft .NET framework, so that it can be used in any .NET environment, including C#, VB.NET and managed C++. Essential Calculate is a UI independent class library that lets you add formula calculation support to Window Forms, Web Forms and WPF applications. Essential Calculate does not depend on Microsoft Excel and thus allows you to perform calculations independent of Excel. 
+Essential Calculate is a 100% Native .NET library that provides calculation functionality by using the Microsoft .NET Framework, so that it can be used in any .NET environment, including C#, VB.NET and managed C++. Essential Calculate is a UI independent class library that lets you add formula calculation support to Window Forms, Web Forms and WPF applications. Essential Calculate does not depend on Microsoft Excel and thus allows you to perform calculations independent of Excel. 
 
 The range of calculations include simple algebraic expressions such as (1.2^3-1)/8, to formulas using intrinsic functions like 4 * sqrt(exp(8.4)), to formulas relying on variables that are defined through controls on a form such as cos([textBox1] * pi()/180), to spreadsheet-like formulas such as Sum(A2:B14). Essential Calculate lets you parse and compute such expressions, and includes a library of more than 400 functions. This function library is easily extendable. The data used in the calculations can be from any source, ranging from fixed values to values that are entered through the controls, to data tables and Excel spreadsheets.
 

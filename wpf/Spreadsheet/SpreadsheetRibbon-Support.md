@@ -9,7 +9,7 @@ documentation: ug
 
 # SpreadsheetRibbon Support
 
-Spreadsheet control provides SpreadsheetRibbon support to format the spreadsheet cell and so on. It gives MS Excel like look and feel. You can add SpreadsheetRibbon by drag and drop the SpreadsheetRibbon from Toolbox.
+Spreadsheet control provides SpreadsheetRibbon support to format the spreadsheet cell and so on. It gives Microsoft Excel like look and feel. You can add SpreadsheetRibbon by drag and drop the SpreadsheetRibbon from Toolbox.
 
 ![](SpreadsheetRibbon-Support_images/SpreadsheetRibbon-Support_img1.png)
 

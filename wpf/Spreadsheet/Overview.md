@@ -66,7 +66,7 @@ Spreadsheet control allows you to copy the data or formulas from one or more cel
 
 ### Fill series
 
-Spreadsheet control has the support for fill series as like in Microsoft Excel. By using the fill series feature, you can automatically fill the data based on the pervious cells. This control also features copy series, and fill with/without formatting supports as like in Excel.
+Spreadsheet control has the support for fill series as like in Microsoft Excel. By using the fill series feature, you can automatically fill the data based on the previous cells. This control also features copy series, and fill with/without formatting supports as like in Excel.
 
 ## Formulas
 

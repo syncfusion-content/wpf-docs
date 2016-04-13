@@ -36,7 +36,7 @@ Some real time applications which can use Essential Grid are listed below:
 
 2. Excel-like UI Applications
 
-   Another important application is Excel like UI that simulates MS Excel 2007 and gives an appearance that resembles excel. This application exhibits the following excel characteristics:
+   Another important application is Excel like UI that simulates Microsoft Excel 2007 and gives an appearance that resembles excel. This application exhibits the following excel characteristics:
 
    * Excel like Current Cell
    * Formula Cells
@@ -46,7 +46,7 @@ Some real time applications which can use Essential Grid are listed below:
 
 a. Excel-like Current Cell
 
-You can select a current cell in the Grid, similar to the current cell behavior in MS Excel. This feature can be enabled, by setting GridModelOptions.ExcelLikeCurrentCell property to _true_, as follows:  
+You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel. This feature can be enabled, by setting GridModelOptions.ExcelLikeCurrentCell property to _true_, as follows:  
 
 {% highlight c# %}
 grid.Model.Options.ExcelLikeCurrentCell = true;
