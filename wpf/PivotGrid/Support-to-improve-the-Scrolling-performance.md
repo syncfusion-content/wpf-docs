@@ -7,16 +7,16 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Improved (Deffered) Scrolling
+# Improved (Deferred) Scrolling
 
-Support has been provided to improve the scrolling performance of PivotGrid by updating the data (in the PivotGrid) only when the user releases the thumb on scrolling. It can be achieved by `EnableDefferedScrolling` property of PivotGrid control.
+Support has been provided to improve the scrolling performance of PivotGrid by updating the data (in the PivotGrid) only when the user releases the thumb on scrolling. It can be achieved by `EnableDeferredScrolling` property of PivotGrid control.
 
 If through *XAML*, please refer the below code sample. 
 
 {% highlight xaml %}
 
 <Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" FreezeHeaders="False" VerticalAlignment="Top" VisualStyle="Metro" EnableDefferedScrolling="True" ItemSource="{Binding   Source={StaticResource data}}">
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" FreezeHeaders="False" VerticalAlignment="Top" VisualStyle="Metro" EnableDeferredScrolling="True" ItemSource="{Binding   Source={StaticResource data}}">
 
         <syncfusion:PivotGridControl.PivotRows>
             <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
@@ -73,7 +73,7 @@ public partial class MainWindow: Window {
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
-        pivotGrid.EnableDefferedScrolling = true;
+        pivotGrid.EnableDeferredScrolling = true;
     }
 }
 	 
