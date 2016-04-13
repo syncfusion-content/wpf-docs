@@ -15,7 +15,7 @@ Circular Gauge enables you to see a single numerical value mapped against a rang
 * Circular gauges are used as the speedometer, tachometer, fuel, and temperature gauges in a graphical car dashboard.
 * Used in analog clocks.
 * Used in industries to visualize and monitor pressure and temperature.
-* Used to visualize internet connection speed.
+* Used to visualize Internet connection speed.
 * Used to visualize the server load.
 * Used to visualize memory usage.
 
