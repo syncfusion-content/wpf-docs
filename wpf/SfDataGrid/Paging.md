@@ -99,7 +99,7 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 
 
-N> In OnDemand paging, you cannot assign a value for the Source property in SfDataPager.
+N> In OnDemandPaging, you cannot assign a value for the Source property in SfDataPager.
 
 The following code example illustrates defining DataPager for OnDemandPaging:
 
@@ -181,7 +181,7 @@ The following screenshot displays the output.
 
 
 
-DataPager for OnDemand Paging
+DataPager for OnDemandPaging
 {:.caption}
 When you use OnDemandPaging,PagedSource loads only the current page data. When you navigate to another page, OnDemandLoading event is fired and loads another set of data and it maintains the previous page data also. When you navigate to previous page again, OnDemandLoading event is not fired and load the previously maintained data to the corresponding page. When you don’t want to maintain the previous page data, you can call PagedCollectionView.ResetCache() in OnDemandLoading event. ResetCache method call resets the cache except current page.
 

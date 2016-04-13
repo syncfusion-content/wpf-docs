@@ -427,14 +427,17 @@ private static void ExportingHandler(object sender, GridExcelExportingEventArgs 
       {
           e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.LightPink);
           e.CellStyle.ForeGroundBrush = new SolidColorBrush(Colors.White);
+          e.Handled = true;
       }
       else if (e.CellType == ExportCellType.RecordCell)
       {
           e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.LightSkyBlue);
+          e.Handled = true;
       }
       else if (e.CellType == ExportCellType.GroupCaptionCell)
       {
           e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.Wheat);
+          e.Handled = true;
       }
 }
 {% endhighlight %}
