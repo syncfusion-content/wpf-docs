@@ -23,7 +23,7 @@ User can create Web service using the _BasicHttpBinding_ feature and bind the se
 
 The following are steps to create a BasicHttpBinding: 
 
-Include the Basic Http Binding and Service endpoint address in the Web.Config file as given in the   following code:
+Include the Basic HTTP Binding and Service endpoint address in the Web.Config file as given in the   following code:
 
 {% highlight xaml %}
 
@@ -69,7 +69,7 @@ contract="Syncfusion.OlapSilverlight.Manager.IOlapDataProvider" />
 
 {% endhighlight  %}
 
-## Instantiate the WCF service using Basic Http Binding and End Point Address values:
+## Instantiate the WCF service using Basic HTTP Binding and End Point Address values:
 
 * Declare the _IOlapDataProvider_ for Service instantiation as given in the following code:
 

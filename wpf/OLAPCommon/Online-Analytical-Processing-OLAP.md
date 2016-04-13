@@ -15,7 +15,7 @@ Here is how Wikipedia defines [OLAP](http://en.wikipedia.org/wiki/Online_analyti
 
 ## ADOMD.NET
 
-The Syncfusion OLAP controls use the [ADOMD.NET](http://msdn.microsoft.com/en-us/library/ms123483(v=sql.90).aspx), which is a Microsoft .NET framework provider for retrieving data from OLAP servers in .NET platform. While ADOMD.NET primarily retrieves OLAP data from SQL Server Analysis Services (Microsoft's OLAP Server), it's adherence to industry standards like XML/A allows you to access any OLAP server (SAP, SAS, Hyperion, etc.) through it and hence provides you the ability to visualize using Syncfusion OLAP control, OLAP data from myriads of data sources including Microsoft's SSAS.
+The Syncfusion OLAP controls use the [ADOMD.NET](http://msdn.microsoft.com/en-us/library/ms123483(v=sql.90).aspx), which is a Microsoft .NET Framework provider for retrieving data from OLAP servers in .NET platform. While ADOMD.NET primarily retrieves OLAP data from SQL Server Analysis Services (Microsoft's OLAP Server), it's adherence to industry standards like XML/A allows you to access any OLAP server (SAP, SAS, Hyperion, etc.) through it and hence provides you the ability to visualize using Syncfusion OLAP control, OLAP data from myriads of data sources including Microsoft's SSAS.
 
 ## ADOMD.NET assembly and setup files information
 
@@ -33,7 +33,7 @@ Or
 
 These setup files can be downloaded at [Microsoft download center](http://www.microsoft.com/en-us/download/details.aspx?id=23089).
 
-N>  By default the below setup files will be installed while installing Syncfusion’ Essential studio setup for BI edition:
+N>  By default the below setup files will be installed while installing Syncfusion’ Essential Studio setup for BI edition:
 N> SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
 
 

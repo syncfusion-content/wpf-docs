@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection
 
-PivotGrid provides support to select entire row or column as well as group of cells with or without header cells based on your requirement. It is similar to cell selection in MS Excel.
+PivotGrid provides support to select entire row or column as well as group of cells with or without header cells based on your requirement. It is similar to cell selection in Microsoft Excel.
 
 ## Cell Selection
 

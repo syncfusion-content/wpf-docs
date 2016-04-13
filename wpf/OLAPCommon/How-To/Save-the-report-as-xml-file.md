@@ -7,11 +7,11 @@ control: OLAPCommon
 documentation: ug
 ---
 
-# Save the report as xml file
+# Save the report as XML file
 
-The user can save the current report set of OlapDataManager as an xml file for the future needs by using the SaveReport method.
+The user can save the current report set of OlapDataManager as an XML file for the future needs by using the SaveReport method.
 
-The following code snippet will illustrate the saving of the current report set as an xml file:
+The following code snippet will illustrate the saving of the current report set as an XML file:
 
 {% tabs %}
 {% highlight c# %}
@@ -37,9 +37,9 @@ olapDataManager.SaveReport("C:\SampleReport\RevenueAnalysis.xml")
 
 ## For Silverlight:
 
-You can save the current report of OlapDataManger as an xml file for their future use by serializing the report with XmlSerializer.
+You can save the current report of OlapDataManger as an XML file for their future use by serializing the report with XmlSerializer.
 
-The following code snippet will illustrate the saving of the current report set as an xml file:
+The following code snippet will illustrate the saving of the current report set as an XML file:
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Summary (Runtime)
 
-PivotGrid enables us to set the custom summaries for the PivotItem values at both loadtime and runtime (using PivotComputationInfo dialog).
+PivotGrid enables us to set the custom summaries for the PivotItem values at both load time and runtime (using PivotComputationInfo dialog).
 
 For creating a custom SummaryBase class, add a new class and inherit the abstract class `SummaryBase`. Implement your summary logics by overriding Combine(), CombineSummary(),GetResult(), GetInstance(), Reset() methods. 
 
@@ -77,7 +77,7 @@ public class MyCustomSummaryBase2: SummaryBase {
  
  {% endhighlight %}
 
-## Defining Custom Summary in Loadtime
+## Defining Custom Summary in Load time
 
 We can define our own custom SummaryBase to PivotCalculations in PivotGrid by setting the instance of the custom summary in `Summary` property. And this custom summary can be used only if we set `SummaryType` of that PivotCalculation as "Custom". It can be done through *XAML* or *Code-behind*. 
 

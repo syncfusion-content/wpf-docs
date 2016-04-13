@@ -7,9 +7,9 @@ control: OLAPCommon
 documentation: ug
 ---
 
-# Load xml report file
+# Load XML report file
 
-You can load the xml report set by using the LoadReport method.
+You can load the XML report set by using the LoadReport method.
 
 The following code snippet will illustrate the loading of the report:
 {% tabs %}
@@ -36,7 +36,7 @@ olapDataManager.LoadReport("C:\SampleReport\RevenueAnalysis.xml")
 
 The saved report file can be used with OlapDataManager by serializing it to type OlapReport with XmlSerializer.
 
-The following code snippet will illustrate the loading of a saved xml report file:
+The following code snippet will illustrate the loading of a saved XML report file:
 
 {% tabs %}
 {% highlight c# %}

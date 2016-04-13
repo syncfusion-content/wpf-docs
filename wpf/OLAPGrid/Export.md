@@ -91,7 +91,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 ![Word Export](Export_images/Export_img2.png)
 
 
-## Pdf Export
+## PDF Export
 
 {% tabs %}
   {% highlight c# %}
@@ -177,7 +177,7 @@ void</td></tr>
 
 ## Adding CSV Export for OLAP Grid in an application
 
-The GridCsvExport class provides you support for exporting data from OLAP Grid to a CSV file format. Add the following dll along with the default dll’s in the reference folder: 
+The GridCsvExport class provides you support for exporting data from OLAP Grid to a CSV file format. Add the following dll along with the default assemblies in the reference folder: 
 
 * Syncfusion.OlapGridConverter.Wpf
 

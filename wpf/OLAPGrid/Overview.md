@@ -28,7 +28,7 @@ The important features of OLAP Grid controls are listed below:
 * Drill-Up/Down - Provides Multi-level drill up/down capability for both Column and Row Headers.
 * Layouts - Supports different grid layouts (Normal layout, Excel like layout, Excel like layout with member properties, Normal top summary and no summaries layout). 
 * Conditional Formatting - Conditionally Format Grid Cells
-* Export - You can also export the Grid to MS-Excel and Word formats.
+* Export - You can also export the Grid to Microsoft Excel and Word formats.
 
 ## User Guide Organization
 

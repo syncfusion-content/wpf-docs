@@ -64,7 +64,7 @@ Exports Chart as an Image</td></tr>
 <tr>
 <td>
 OlapClient_ChartToolbar_ExportPdf_ToolTip</td><td>
-Export to Pdf</td></tr>
+Export to PDF</td></tr>
 <tr>
 <td>
 OlapClient_ChartToolbar_ExportWord_ToolTip</td><td>
@@ -132,7 +132,7 @@ Offline Cube</td></tr>
 <tr>
 <td>
 OlapClient_Connect_Dlg_Ok</td><td>
-Ok</td></tr>
+oK</td></tr>
 <tr>
 <td>
 OlapClient_Connect_Dlg_Password</td><td>

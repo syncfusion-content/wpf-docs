@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-#Grand Total Row Visiblity 
+#Grand Total Row Visibility 
 
 PivotGrid provides support to make the grand total row always visible in RowPivotsOnly mode. 
 

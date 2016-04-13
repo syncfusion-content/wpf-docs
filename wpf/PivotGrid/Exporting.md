@@ -20,7 +20,7 @@ PivotGrid provides an option to export its content to various formats. It provid
 
 PivotGrid can be exported to an excel document using Syncfusion XlsIO libraries. It consist of two exporting modes listed below and it is possible to switch the exporting modes using the `ExportMode` property.
 
-* **Pivot Table** - It exports the PivotGrid directly as a PivotTable like in MS Excel.
+* **Pivot Table** - It exports the PivotGrid directly as a PivotTable like in Microsoft Excel.
 * **Cell** - It exports the PivotGrid as an individual cell values.
 
 To export the PivotGrid contents to Excel, add **Syncfusion.PivotGridConverter.Wpf.dll** and **Syncfusion.XlsIO.Base** assemblies to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** in-order to access the `GridExcelExport` class.

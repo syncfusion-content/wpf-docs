@@ -2977,7 +2977,7 @@ The KPI Elements can be defined in the OlapReport in the following way:
 
 ### Definition
 
-Olap Grid controls use ADO-MD, which is Microsoft's data access technology of choice for retrieving data from OLAP servers. While ADO-MD was built primarily to retrieve OLAP data from SQL Server Analysis Services (Microsoft's OLAP Server), ADO MD's adherence to industry standards like XML/A, now allows you to access any OLAP server (SAP, SAS, Hyperion, etc.) through ADO MD. Therefore, it provides you the ability to visualize by using the Syncfusion OLAP control, OLAP data from many of the data sources including Microsoft's SSAS.
+OLAP Grid controls use ADO-MD, which is Microsoft's data access technology of choice for retrieving data from OLAP servers. While ADO-MD was built primarily to retrieve OLAP data from SQL Server Analysis Services (Microsoft's OLAP Server), ADO MD's adherence to industry standards like XML/A, now allows you to access any OLAP server (SAP, SAS, Hyperion, etc.) through ADO MD. Therefore, it provides you the ability to visualize by using the Syncfusion OLAP control, OLAP data from many of the data sources including Microsoft's SSAS.
 
 ### Binding to OLAP Data
 
@@ -3546,9 +3546,9 @@ A sample, which demonstrates this feature, is available in the following sample 
 
 ### Exporting to Word Document
 
-Essential BI OLAP Chart for WPF supports exporting an OLAP Chart into an MS Word Document. It can also be exported into a Template Word Document file at a position specified by a marker.
+Essential BI OLAP Chart for WPF supports exporting an OLAP Chart into an Microsoft Word Document. It can also be exported into a Template Word Document file at a position specified by a marker.
 
-The following methods are used to export an OLAP Chart to an MS Word Document:
+The following methods are used to export an OLAP Chart to an Microsoft Word Document:
 
 Methods Table
 
@@ -3578,7 +3578,7 @@ Exports a chart into an existing instance of a Word Document in the default mark
 ExportIntoTemplateDoc(WordDocument document, string Marker)</td><td>
 Exports a chart into an existing instance of a Word Document in the marker string location. It takes the document instance and the marker string as the parameters.</td></tr>
 </table>
-The following code examples illustrate how to export an OLAP Chart to an MS Word Document:
+The following code examples illustrate how to export an OLAP Chart to an Microsoft Word Document:
 
 
  {% highlight c# %}

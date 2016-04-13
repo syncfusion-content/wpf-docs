@@ -45,7 +45,7 @@ The following sequential diagram shows the workflow of OlapBase when user gives 
 
 
 
-Olap Base sequential diagram
+OLAP Base sequential diagram
 {:.caption}
 
 

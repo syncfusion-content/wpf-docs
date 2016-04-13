@@ -21,7 +21,7 @@ The important features of OLAP Chart controls are as follows:
 * Provides multi-level drill down support – Enables you to visualize a multi-level data in the chart. You can drill down/up the hierarchies natively.
 * Provides KPI support – Allows you to visualize the KPI Status, Trend, Goal, and value in different chart types.
 * Enables you to customize the area, axis, series, legends, and chart types easily.
-* Provides exporting support – Allows you to export the OlapChart into various formats such as Pdf, Excel, Word, and Image formats.
+* Provides exporting support – Allows you to export the OlapChart into various formats such as PDF, Excel, Word, and Image formats.
 * Provides printing support – Allows you to customize and print either in color mode or in black and white.
 * Provides zooming and scrolling support – Allows you to zoom and scroll across the chart.
 * Provides ToolTip support – Allows you to visualize the data point related values in a form of ToolTip.

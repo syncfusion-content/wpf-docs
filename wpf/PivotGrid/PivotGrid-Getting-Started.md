@@ -229,7 +229,7 @@ If you need to initialize the ItemSource through **XAML**, ObjectDataProvider is
      
 {% endhighlight %}
 
- Else, if you need to initialize the Itemsource through **Code-Behind**, please refer the below code snippet.
+ Else, if you need to initialize the Item source through **Code-Behind**, please refer the below code snippet.
 
 {% highlight C# %}
 

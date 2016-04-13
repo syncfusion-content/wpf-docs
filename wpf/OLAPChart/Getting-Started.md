@@ -934,7 +934,7 @@ The following steps explain how to create a report during design-time
 
 
 5. From the Data Source Properties wizard select the connection type. 
-6. When you want to connect to SSAS, select Use server name and data base to connect to a server. Specify the necessary information to connect to the server
+6. When you want to connect to SSAS, select Use server name and database to connect to a server. Specify the necessary information to connect to the server
 7. When you want to connect to an Offline cube, select Use a connection string to connect to a server. Enter your connection string path.
 
 
