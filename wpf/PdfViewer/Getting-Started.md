@@ -381,7 +381,7 @@ No</td></tr>
 
 **Supports only URI annotation.
 
-***Supported in 4.0 and higher framework.
+***Supported in 4.0 and higher Framework.
 
 ## Appearance and Structure of the Control
 

@@ -471,7 +471,7 @@ Dim img() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 
 #### Exporting PDFs as Vector Images
 
-Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a metafile.
+Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
 {% highlight c# %}
 
