@@ -25,7 +25,7 @@ Reference Links</th></tr>
 Save()</td><td>
 Null</td><td>
 Void</td><td>
-Displays the Save Dialogue Box to save the DiagramPage into XAML file.</td><td>
+Displays the Save Dialog Box to save the DiagramPage into XAML file.</td><td>
 Save Diagram Page</td></tr>
 <tr>
 <td>
@@ -46,7 +46,7 @@ Save Diagram Page</td></tr>
 Load()</td><td>
 Null</td><td>
 Void</td><td>
-Displays the Load Dialogue Box to load the DiagramPage from selected XAML file.</td><td>
+Displays the Load Dialog Box to load the DiagramPage from selected XAML file.</td><td>
 Load Diagram Page</td></tr>
 <tr>
 <td>
@@ -294,7 +294,7 @@ Assigning the Current UI Culture to the Application
 
 By default, the current culture is set to “en-US”. You can check the current culture from “System.Threading.Thread.CurrentThread.CurrentUICulture”. CurrentUICulture can be changed, as shown in the following code snippets. 
 
-In the following example, CurrentUICulture is set before IntializeComponent in the StartUp page (MainPage.xaml.cs).
+In the following example, CurrentUICulture is set before InitializeComponent in the StartUp page (MainPage.xaml.cs).
 {% highlight c# %}
 
 

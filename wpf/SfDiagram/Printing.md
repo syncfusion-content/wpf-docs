@@ -32,7 +32,7 @@ diagram.PrintingService.PrintPreviewStretch = Stretch.Fill;
 
 ##Customize the Appearance
 
-The SfDiagram control provides the PrintPreview Control to customize the page to be printed by overring the ControlTemplate of the PrintPreview Control. The customization is also shown in PrintPreview. This is helpful when a header or footer has been added to the page.
+The SfDiagram control provides the PrintPreview Control to customize the page to be printed by overriding the ControlTemplate of the PrintPreview Control. The customization is also shown in PrintPreview. This is helpful when a header or footer has been added to the page.
 
 For more details about the customization of PrintPreviewControl, refer to the Print and Export sample from our dashboard samples.
 

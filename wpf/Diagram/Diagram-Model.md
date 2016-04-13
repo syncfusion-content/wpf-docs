@@ -437,7 +437,7 @@ diagramModel.Connections.Clear()
 
 ## Bind Data to Diagram Control
 
-DiagramModel supports binding with business objects. Nodes will be created and added into the modeldepending upon the business object and template provided. 
+DiagramModel supports binding with business objects. Nodes will be created and added into the model depending upon the business object and template provided. 
 
 
 

@@ -93,7 +93,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 ### Creating a Diagram
 
 
-Essential Diagram WPF can be used to create a rich Visio-like application. This framework provides many utility controls to help you easily put an application together. End users can get started in minutes using this diagram control. 
+Essential Diagram WPF can be used to create a rich Visio-like application. This Framework provides many utility controls to help you easily put an application together. End users can get started in minutes using this diagram control. 
 
 Following is a basic step to create DiagramControl and initialize the necessary properties. Details about individual parts are explained later in this documentation.
 
@@ -920,7 +920,7 @@ TreeOrientation.LeftRightTreeOrientation.RightLeftTreeOrientation.TopBottomTreeO
 EnableCycleDetection</td><td>
 Gets or sets a value indicating whether Cycle detection is enabled or not.</td><td>
 DependencyProperty</td><td>
-Booleantrue/ false</td></tr>
+Boolean true/ false</td></tr>
 <tr>
 <td>
 TableExpandMode</td><td>
@@ -1870,7 +1870,7 @@ Cyclic path in Hierarchical-Tree Layout: Refer Concepts and Features -> Diagram 
 
 #### Radial – Tree Layout
 
-The Radial-TreeLayoutis a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout. The Radial-Tree layout will position the nodes based on the layout root.
+The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout. The Radial-Tree layout will position the nodes based on the layout root.
 
 The Bounds property of the DiagramView class can be used to specify the position of the root node, based on which the entire tree gets generated.
 
@@ -2274,7 +2274,7 @@ int</td></tr>
 <tr>
 <td>
 EnableLayoutWithVariedSizes</td><td>
-Gets or sets a value indicating whether to enable the varied size algorithm. In case the Model consists of the nodes of different sizes, this property can be set to true. This will align the differently sized nodes with respect to the centre.</td><td>
+Gets or sets a value indicating whether to enable the varied size algorithm. In case the Model consists of the nodes of different sizes, this property can be set to true. This will align the differently sized nodes with respect to the center.</td><td>
 DependencyProperty</td><td>
 Boolean (true/ false)</td></tr>
 <tr>
@@ -2308,11 +2308,11 @@ The Layout Manager lets you orient the table in two directions, Horizontal and V
 
 Horizontal: 
 
-When set to Horizontal, the Rowcount is automatically calculated based on the number of nodes. The ColumnCount must be specified and the nodes will be arranged in the specified number of columns. When the maximum column count is reached, it starts placing the nodes in a new row.
+When set to Horizontal, the RowCount is automatically calculated based on the number of nodes. The ColumnCount must be specified and the nodes will be arranged in the specified number of columns. When the maximum column count is reached, it starts placing the nodes in a new row.
 
 Vertical: 
 
-When set to Vertical, the Columncount is automatically calculated based on the number of nodes. The RowCount must be specified and the nodes will be arranged in the specified number of rows. When the maximum row count is reached, it starts placing the nodes in a new column.
+When set to Vertical, the ColumnCount is automatically calculated based on the number of nodes. The RowCount must be specified and the nodes will be arranged in the specified number of rows. When the maximum row count is reached, it starts placing the nodes in a new column.
 
 The Bounds property of the DiagramView class can be used to specify the position of the first node.
 

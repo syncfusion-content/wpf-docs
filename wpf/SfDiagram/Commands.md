@@ -449,7 +449,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 {% endhighlight %}
 
 ##Command Manager
-Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for inbuilt commands with Key Gesture and Mouse Gesture.
+Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for built-in commands with Key Gesture and Mouse Gesture.
 List of Commands and Key Gesture:
 
 | Command | Key | Key Modifiers |
