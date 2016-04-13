@@ -283,7 +283,7 @@ Reference:
 
 ### Create the WCF data service 
 
-To create the WCF data service, follow the steps mentioned in the below msdn link or the follow below steps,
+To create the WCF data service, follow the steps mentioned in the below MSDN link or the follow below steps,
 
 [https://msdn.microsoft.com/en-us/library/dd728275.aspx](https://msdn.microsoft.com/en-us/library/dd728275.aspx).
 
@@ -392,7 +392,7 @@ Now, run the application and you can see the SfDataGrid control loaded with data
 
 SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.NET_EntityFramework_Demo-1973737092.zip).
 
-To load the data from ADO.NET entity framework, you can refer the steps mentioned in below follow the below steps,
+To load the data from ADO.NET Entity Framework, you can refer the steps mentioned in below follow the below steps,
 
 1. Creating WPF client Application.
 2. Defining Data Model using Entity Framework 4.0
@@ -408,7 +408,7 @@ References :
 
 ### Creating WPF client Application
 
-To load data from entity framework, create a new WPF Application and add the SfDataGrid control to your application.
+To load data from Entity Framework, create a new WPF Application and add the SfDataGrid control to your application.
 
 ### Defining Data Model using Entity Framework 4.0
 
@@ -482,7 +482,7 @@ Now, run the application and you can see the following screenshot shows the SfDa
 
 You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html), [SfDataGrid.CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) or [SfDataGrid.CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) events. 
 
-The below code example will save back the changed value of row to data base.
+The below code example will save back the changed value of row to data  base.
 
 {% tabs %}
 {% highlight c# %}
@@ -505,13 +505,13 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 {% endtabs %}
 
 
-## Binding data from Linq to SQL
+## Binding data from LINQ to SQL
 
-SfDataGrid control supports to bind data from Linq to SQL .In this walkthrough, you will learn about binding data from Linq to SQL and save back the changes to the Database.
+SfDataGrid control supports to bind data from LINQ to SQL .In this walkthrough, you will learn about binding data from LINQ to SQL and save back the changes to the Database.
 
 1. Creating WPF Application
-2. Adding data model using Linq to SQL classes 
-3. Loading data from Linq to SQL classes 
+2. Adding data model using LINQ to SQL classes 
+3. Loading data from LINQ to SQL classes 
 4. Binding data to SfDataGrid
 
 References :
@@ -522,11 +522,11 @@ References :
 
 ### Creating WPF Client Application
 
-To add Linq to SQL, create a new WPF application and add the SfDataGrid control in your application.
+To add LINQ to SQL, create a new WPF application and add the SfDataGrid control in your application.
  
-### Adding data model using Linq to SQL
+### Adding data model using LINQ to SQL
 
-To create data model using Linq to SQL in WPF project follow the below steps.
+To create data model using LINQ to SQL in WPF project follow the below steps.
 
 1. Right-click on your WPF project, select **Add** option and then click **New Item**.
 2. The **Add New Item** wizard appears, select **LINQ to SQL Classes** from the **Visual C**#.
@@ -545,18 +545,18 @@ To create data model using Linq to SQL in WPF project follow the below steps.
 
 7. Click **Change** to open the **Change Data Source** dialog box and select the type of data source that you have owned. 
 8. In the **Server name** option, click the **Refresh** button to select the server from the drop down list.
-9. Enable **select or enter a database name** radio button to select data base from the drop down list under the **Connect to a database** option.
+9. Enable **select or enter a database name** radio button to select database from the drop down list under the **Connect to a database** option.
 
     ![](Data-Binding_images/Data-Binding_img15.png)
 
-10. Click **Test Connection** to check whether the connection with your data base is succeeded or not.
-11. Once the connection is succeeded, click **OK** button to add data base in your server explorer.
+10. Click **Test Connection** to check whether the connection with your database is succeeded or not.
+11. Once the connection is succeeded, click **OK** button to add database in your server explorer.
 
     ![](Data-Binding_images/Data-Binding_img16.png)
 
 12. Drag **Shippers** table in to design view of **Northwind.dbml**. The **Entity model diagram** for Shippers table is generated once it is dropped in to design view.
  
-### Loading data from Linq to SQL classes 
+### Loading data from LINQ to SQL classes 
 
 To load the database created in previous step in to SfDataGrid, create a ViewModel class with Shippers property and it is initialized with Shippers table in Northwind database.
 
@@ -581,11 +581,11 @@ public class ViewModel
 {% endtabs %}
 
 
-N> NorthwindDataContext is from `Northwind.Designer.cs` file (it is from the file that is added with Linq to SQL). Shippers are selected table from Database.
+N> NorthwindDataContext is from `Northwind.Designer.cs` file (it is from the file that is added with LINQ to SQL). Shippers are selected table from Database.
 
 ### Binding data to SfDataGrid
 
-To bind data from Linq to SQL classes, assign the Shippers collection created in the previous step, to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property and set the `DataContext` as ViewModel.
+To bind data from LINQ to SQL classes, assign the Shippers collection created in the previous step, to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property and set the `DataContext` as ViewModel.
 
 {% tabs %}
 {% highlight c# %}
@@ -602,7 +602,7 @@ Now, run the application and you can see the following screenshot shows the SfDa
 
 You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html), [SfDataGrid.CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) or [SfDataGrid.CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) events. 
 
-The below code example will save back the changed value of row to data base.
+The below code example will save back the changed value of row to database.
 
 {% tabs %}
 {% highlight c# %}
@@ -641,7 +641,7 @@ To display the data from the ADO.NET data service, create a new WPF Application
  
 ### Connecting WPF application to Databases
 
-To connect SQL database to your WPF application, refer the below msdn link or follow the below steps,
+To connect SQL database to your WPF application, refer the below MSDN link or follow the below steps,
 
 [https://msdn.microsoft.com/en-us/library/s4yys16a.aspx](https://msdn.microsoft.com/en-us/library/s4yys16a.aspx)
 
@@ -655,13 +655,13 @@ To connect SQL database to your WPF application, refer the below msdn link or fo
     ![](Data-Binding_images/Data-Binding_img19.png)
 
 4. In the **Server name** option, click the **Refresh** button to select the server from the drop down list.
-5. Enable **select or enter a database name** radio button to select your data base from the drop down list under the **Connect to a database** option.
-6. Click **Test Connection** to check whether the data base connection is succeeded or not.
-7. Once the connection is succeeded, click **OK** button to add data base in your server explorer.
+5. Enable **select or enter a database name** radio button to select your database from the drop down list under the **Connect to a database** option.
+6. Click **Test Connection** to check whether the database connection is succeeded or not.
+7. Once the connection is succeeded, click **OK** button to add database in your server explorer.
 
     ![](Data-Binding_images/Data-Binding_img20.png)
 
-8. To get connection string for the data base, right-click on your database and then click **properties** option.
+8. To get connection string for the database, right-click on your database and then click **properties** option.
 
 ### Loading data from ADO.NET
 
@@ -704,8 +704,8 @@ Now, run the application and you can see the following screenshot displays the S
 
 You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html), [SfDataGrid.CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) or [SfDataGrid.CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValueChanged_EV.html) events. 
 
-The below code example will save back the changed value of row to data base.
-You can refer the below msdn link for more information.
+The below code example will save back the changed value of row to database.
+You can refer the below MSDN link for more information.
 
 [https://msdn.microsoft.com/en-us/library/33y2221y.aspx](https://msdn.microsoft.com/en-us/library/33y2221y)
 
@@ -734,14 +734,14 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 {% endtabs %}
 
 
-## Binding data from MS-Access
+## Binding data from Microsoft Access
 
-SfDataGrid control supports to bind data from MS-Access database .In this section, you will learn about how to bind the data from MS-Access database to SfDataGrid. 
+SfDataGrid control supports to bind data from Microsoft Access database .In this section, you will learn about how to bind the data from Microsoft Access database to SfDataGrid. 
 
-To load the data from MS-Access database,
+To load the data from Microsoft Access database,
 
 1. Create a new WPF project.
-2. Import the MS-Access database file to WPF project.
+2. Import the Microsoft Access database file to WPF project.
 3. You can connect the Microsoft Access Database through the `OleDbConnection`.
 4. Create and open the connection.
 5. Use `OleDbDataAdapter` to load the data in to `DataSet`.
@@ -765,7 +765,7 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-7.Now, run the application and you can see following screenshot shows the SfDataGrid control populated data from MS-Access database.
+7.Now, run the application and you can see following screenshot shows the SfDataGrid control populated data from Microsoft Access database.
 <br/>    
     ![](Data-Binding_images/Data-Binding_img22.png)
 

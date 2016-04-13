@@ -24,7 +24,7 @@ Following are the key features of SfDataGrid control
 * Validation – Support to validate the data on errors.
 * Data virtualization – Support for different modes of data virtualization such as paging, incremental loading.
 * Master-Detail View – Support to display relational data using hierarchies. 
-* Printing and Exporting – Support to print and also export the data to Excel, Pdf.
+* Printing and Exporting – Support to print and also export the data to Excel, PDF.
 * Styling – Extensive support for customizing styles of cells and rows in SfDataGrid.
 * Stacked Headers – Extensive support to show multiple headers called stacked headers.
 * Unbound rows – Support to display unbound rows.
@@ -250,12 +250,12 @@ click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/export-to-excel)' | m
 </tr>
 <tr>
 <td>
-Exporting To Pdf
+Exporting To PDF
 </td>
 <td>
-SfDataGrid control provides support for exporting the data into a pdf file. You can decide what are the contents 
-is need to export in pdf file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to 
-pdf file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/export-to-pdf)' | markdownify }}.
+SfDataGrid control provides support for exporting the data into a PDF file. You can decide what are the contents 
+is need to export in PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to 
+PDF file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/export-to-pdf)' | markdownify }}.
 </td>
 </tr>
 <tr>

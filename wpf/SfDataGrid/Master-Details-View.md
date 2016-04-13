@@ -515,7 +515,7 @@ this.dataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 
 ## Populating Master-Details view through events
 
-You can load `ItemsSource` for [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) asynchronously by handling [SfDataGrid.DetailsViewExpanding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewExpanding_EV.html). You can set itemssource in on-demand when expanding record through [GridDetailsViewExpandingEventArgs.DetailsViewItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewExpandingEventArgs~DetailsViewItemsSource.html) property in the [SfDataGrid.DetailsViewExpanding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewExpanding_EV.html) event handler. 
+You can load `ItemsSource` for [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) asynchronously by handling [SfDataGrid.DetailsViewExpanding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewExpanding_EV.html). You can set ItemsSource in on-demand when expanding record through [GridDetailsViewExpandingEventArgs.DetailsViewItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewExpandingEventArgs~DetailsViewItemsSource.html) property in the [SfDataGrid.DetailsViewExpanding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewExpanding_EV.html) event handler. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -615,7 +615,7 @@ async void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.
 {% endtabs %}
 
 
-The declaration of `await` with `GetItemSource` method hold the further process of adding the `DetailsViewItemsSource` until the items are assigned to the `itemssource`. Here the timer is invoked with 2 seconds delay in asynchronous `Schedule` method call in `GetItemSource` method while adding the DetailsViewDataGrid items.
+The declaration of `await` with `GetItemSource` method hold the further process of adding the `DetailsViewItemsSource` until the items are assigned to the `ItemsSource`. Here the timer is invoked with 2 seconds delay in asynchronous `Schedule` method call in `GetItemSource` method while adding the DetailsViewDataGrid items.
 
 The `DetailsViewExpanding` method runs synchronously until it reaches its first await expression. After await is reached, it is suspended until the awaited task is complete.
 

@@ -672,7 +672,7 @@ CustomSummaries feature enables you to implement your own aggregate functions. Y
  The following steps illustrate the functions of the ISummaryAggregate interface:
 
 1. Initially you can define a custom property to get and set the summary value.
-2. Then you can implement the CalculateAggregateFunc interface method and inside a function, you can write your own logic of calculating the summary value. It returns a System.Action<T1, T2, T3> delegate for the aggregate, where T1 represents the source list of items where the summary is calculated, T2 specifies the property (summary column) and T3 is the Property Descriptor of the custom aggregate class itself. The CalculateAggregateFunc calculates the summary value using these parameters, and assigns the final summary value to the Custom property defined in the first step.
+2. Then you can implement the `CalculateAggregateFunc` interface method and inside a function, you can write your own logic of calculating the summary value. It returns a System.Action<T1, T2, T3> delegate for the aggregate, where T1 represents the source list of items where the summary is calculated, T2 specifies the property (summary column) and T3 is the Property Descriptor of the custom aggregate class itself. The `CalculateAggregateFunc` calculates the summary value using these parameters, and assigns the final summary value to the Custom property defined in the first step.
 
 #### Example
 
