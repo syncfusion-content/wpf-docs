@@ -76,7 +76,7 @@ GetHeaderIndex()</td><td>
 Returns the header row index.</td></tr>
 <tr>
 <td>
-IsInDetailsViewIndex(int rowIdx)</td><td>
+IsInDetailsViewIndex(int rowIndex)</td><td>
 Decides whether the given row index is DetailsView index or not.</td></tr>
 <tr>
 <td>

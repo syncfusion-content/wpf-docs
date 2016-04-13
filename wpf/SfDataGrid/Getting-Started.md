@@ -36,7 +36,7 @@ Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[Colle
 Syncfusion.SfGrid.WPF
 </td>
 <td>
-Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present <b>Syncfusion.UI.Xaml.Grid</b> namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion wpf schema. 
+Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present <b>Syncfusion.UI.Xaml.Grid</b> namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion WPF schema. 
 </td>
 </tr>
 <tr>
@@ -49,7 +49,7 @@ Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, 
 </tr>
 </table>
 
-In order to use export to excel and export to pdf functionalities of SfDataGrid control, add the reference to following assemblies,
+In order to use export to excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Description
 Syncfusion.SfGridConverter.WPF
 </td>
 <td>
-Syncfusion.SfGridConverter.WPF contains static extension classes for exporting SfDataGrid to excel and Pdf in Syncfusion.UI.Xaml.Grid.Converter namespace.
+Syncfusion.SfGridConverter.WPF contains static extension classes for exporting SfDataGrid to excel and PDF in Syncfusion.UI.Xaml.Grid.Converter namespace.
 </td>
 </tr>
 <tr>
@@ -81,7 +81,7 @@ Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and
 Syncfusion.Pdf.Base
 </td>
 <td>
-Syncfusion.Pdf.Base contains fundamental and base classes for creating Pdf.
+Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.
 </td>
 </tr>
 </table>
@@ -119,7 +119,7 @@ In order to add control manually in XAML, do the below steps,
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
 	* Syncfusion.Shared.WPF
-2. Import Syncfusion wpf schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare SfDataGrid control in XAML page.
 
 {% tabs %}
