@@ -19,7 +19,7 @@ Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annot
  
 * `GridValidation.InEdit` - display error icon & tips and also doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
 * `GridValidation.InView` - displays error icons and tips alone.
-* `GridValidation.None` - disables build-in validation support.
+* `GridValidation.None` - disables built-in validation support.
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
@@ -742,7 +742,7 @@ You can customize the error tip by editing the style of `ValidationToolTipTempla
 
 #### Change the background and foreground color of error tip
 
-You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the TextBlock in `ValidationTolTipTemplate`.
+You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the TextBlock in `ValidationToolTipTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -911,7 +911,7 @@ You can validate the bound data based on [IDataErrorInfo](https://msdn.microsoft
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
+When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridViewDefinition.DataGrid` in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -1008,7 +1008,7 @@ private void FirstLevelNestedGrid_CurrentCellValidated(object sender, CurrentCel
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, you can wire the `CurrentCellValidating` and `CurrentCellValidated` events for `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
+When the relation is auto-generated, you can wire the `CurrentCellValidating` and `CurrentCellValidated` events for `AutoGeneratingRelations.GridViewDefinition.DataGrid` in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -1099,7 +1099,7 @@ private void FirstLevelNestedGrid_RowValidated(object sender, RowValidatedEventA
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, you can wire the `RowValidating` and `RowValidated` events for `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
+When the relation is auto-generated, you can wire the `RowValidating` and `RowValidated` events for `AutoGeneratingRelations.GridViewDefinition.DataGrid` in [AutoGeneratingRelations](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
