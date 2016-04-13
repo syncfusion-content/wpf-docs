@@ -162,7 +162,7 @@ void</td></tr>
 
 ### Adding CSV Export for OLAP Client in an application
 
-The GridCsvExport class provides support for exporting data from OLAP Grid in OLAP Client to a CSV file format. Add the following dll,
+The GridCsvExport class provides support for exporting data from OLAP Grid in OLAP Client to a CSV file format. Add the following assembly,
 along with the default dll’s in the reference folder: 
 
 * Syncfusion.OlapGridConverter.Wpf

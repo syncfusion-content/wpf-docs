@@ -146,7 +146,7 @@ The following sequential diagram is matching when user gives input as MDX query:
 
 
 
-Olap base sequential diagram
+OLAP base sequential diagram
 {:.caption}
 
 

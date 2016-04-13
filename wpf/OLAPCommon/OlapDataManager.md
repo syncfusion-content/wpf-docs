@@ -267,7 +267,7 @@ string</td><td>
 <tr>
 <td>
 GetReport</td><td>
-This method will return the OlapReport collection by giving the Xml report file name as an input.</td><td>
+This method will return the OlapReport collection by giving the XML report file name as an input.</td><td>
 string</td><td>
 OlapReportCollection</td><td>
 -</td></tr>
@@ -337,7 +337,7 @@ RenameReport</td></tr>
 <tr>
 <td>
 SaveReport</td><td>
-Used to get the file name and store the current report collection along the current state of the OlapDataManager as an Xml file.</td><td>
+Used to get the file name and store the current report collection along the current state of the OlapDataManager as an XML file.</td><td>
 string</td><td>
 Void</td><td>
 SaveReport</td></tr>

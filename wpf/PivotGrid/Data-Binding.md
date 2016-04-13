@@ -11,13 +11,13 @@ documentation: ug
 
 ##Binding PivotGrid to List
 
-PivotGrid allows binding a list based collection as its ItemSource. Please refer this topic Binding a data source to PivotGridContro to know more.
+PivotGrid allows binding a list based collection as its ItemSource. Please refer this topic Binding a data source to PivotGridControl to know more.
 
 ##Binding PivotGrid to DataTable
 
 PivotGrid allows binding a DataSet from the DataTable as its ItemSource.
 
-To do so, initially we need to create a connection to our data base. Then we need to retrieve and store the required data to a DataSet through SQL queries. Please refer the below code sample.
+To do so, initially we need to create a connection to our database. Then we need to retrieve and store the required data to a DataSet through SQL queries. Please refer the below code sample.
 
 {% highlight C# %}
 

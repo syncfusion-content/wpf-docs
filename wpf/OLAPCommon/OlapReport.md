@@ -23,7 +23,7 @@ OlapReport is an object that contains information about the cube element that ha
 * Subset Element
 * Summary Element
 
-These elements are to get the cube element information from the user. You can create an instance of this element and add the required information about the element to pick that specific element from the data base for processing.
+These elements are to get the cube element information from the user. You can create an instance of this element and add the required information about the element to pick that specific element from the database for processing.
 
 These elements come under the following four elements group, which are based on the axis position and filtering constraints.
 
@@ -48,7 +48,7 @@ All the elements are internally maintained as Item.
 * **SeriesElements** - Contains elements that are said to be in series axis. We can add an element and get the collection of elements that comes under the categorical axis.
 * **ShowEmptyColumnData** - Used to show/hide the empty column in the result set.
 * **ShowEmptyRowData** - Used to show/hide the empty row in the result set.
-* **ShowExpanders** - Used to show/hide the expander buttons in the Olap control.
+* **ShowExpanders** - Used to show/hide the expander buttons in the OLAP control.
 * **SliceElements** - Contains the element that are said to be in slicer axis. We can add an element and get the collection of elements that comes under the categorical axis.
 * **TogglePivot** - Used to swap the elements in the column axis and row axis.
 * **Tag** - Holds the backup information of the OLAP Report.

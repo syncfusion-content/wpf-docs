@@ -139,7 +139,7 @@ Collapses all the group.</td><td>
 void</td></tr>
 </table>
 
-For programmatical expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter, we can expand/collapse one or more columns/rows as per our requirement. 
+For programmatically expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter, we can expand/collapse one or more columns/rows as per our requirement. 
 
 To do so, define the PivotGrid control and raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, use the appropriate methods for expand/collapse operations.
 

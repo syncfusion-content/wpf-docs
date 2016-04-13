@@ -34,7 +34,7 @@ the data source using OLAP Client and store it for later use. It also previews t
 
 The Important features of OLAP Client controls are listed below.
 
-Slice and Dice  - You can slice and dice the Cube Data Base. 
+Slice and Dice  - You can slice and dice the Cube Database. 
 
 Saving the current session - You can save your current session in an XML file or in a Stream for future use and reload it whenever needed. 
 
@@ -42,7 +42,7 @@ Pivot Toggling - You can easily toggle the pivot if required by the click of but
 
 Filter and Sorting - You can specify filters and sorting criteria by using the dialog boxes provided. 
 
-Export support - You can also export the OlapGrid and OlapChart to MS-Excel and other supported image formats.  
+Export support - You can also export the OlapGrid and OlapChart to Microsoft Excel and other supported image formats.  
 
 ## User Guide Organization
 

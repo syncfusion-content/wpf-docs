@@ -13,7 +13,7 @@ documentation: ug
 
 This section describes how to configure an OLAP Client component in an application. You can also learn how to pass the required data to the OLAP Client and to customize its various options according to your requirement.
 
-In the following example, the OLAP Client is loaded with the default report by picking the default Measure and Dimension. In the Adventure Works Cube, default Measure is the Reseller Sales Amount and Dimension is the Date.
+In the following example, the OLAP Client is loaded with the default report by picking the default Measure and Dimension. In the AdventureWorks Cube, default Measure is the Reseller Sales Amount and Dimension is the Date.
 
 ### Through Visual Studio
 

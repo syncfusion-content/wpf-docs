@@ -11,7 +11,7 @@ documentation: ug
 
 
 
-You can bind the OlapReport as xml file to OlapDataManager using the LoadReportDefinitionFile method. This contains two steps as follows:
+You can bind the OlapReport as XML file to OlapDataManager using the LoadReportDefinitionFile method. This contains two steps as follows:
 
 1. Loading the report definition file and
 2. Loading a specific report in that file by giving its name
