@@ -368,7 +368,7 @@ CopyPasteOption property defines the list of clipboard operations supported by t
 * CutText–Moves only the text from grid to clipboard
 * CutCell–Moves the text and the style information from grid to clipboard
 * ExcludeCurrentCell–Skips current cell while doing clipboard operations
-* XmlCopyPaste – Copy the cell value along with basic styles in  Xml format and supported to paste in Microsoft Excel. This also supports to copy the Formula value from the Grid Control and Paste in Microsoft Excel
+* XmlCopyPaste – Copy the cell value along with basic styles in  XML format and supported to paste in Microsoft Excel. This also supports to copy the Formula value from the Grid Control and Paste in Microsoft Excel
 
 ### Example
 
@@ -1331,14 +1331,14 @@ Available inside the Property</th><th>
 Return Type</th></tr>
 <tr>
 <td>
-Sethidden()</td><td>
+SetHidden()</td><td>
 Sets the specified “from” rows to “to” rows as hidden. </td><td>
 int from, int to, bool hide</td><td>
 RowHeights</td><td>
 void</td></tr>
 <tr>
 <td>
-Sethidden()</td><td>
+SetHidden()</td><td>
 Sets the specified “from” rows to “to” rows as hidden. </td><td>
 int from, int to, bool hide</td><td>
 ColumnWidths</td><td>

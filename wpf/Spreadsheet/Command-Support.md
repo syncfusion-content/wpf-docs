@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Support
 
-The Spreadsheet control provides the build in commands to show case the features available in Spreadsheet. It can be executed in the Spreadsheet whenever it is bound to Command Property. 
+The Spreadsheet control provides the built-in commands to show case the features available in Spreadsheet. It can be executed in the Spreadsheet whenever it is bound to Command Property. 
 
 ### Commands Table
 

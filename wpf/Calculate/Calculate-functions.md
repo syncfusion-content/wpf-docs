@@ -319,7 +319,7 @@ DCOUNT
 
 ### DCOUNTA
 
-The DCOUNTA function counts the number of nonblank cells in a column of a list that matches the given conditions.
+The DCOUNTA function counts the number of non-blank cells in a column of a list that matches the given conditions.
 
 #### Syntax:
 
@@ -3363,16 +3363,16 @@ The FILTERXML function retrieves specific data from the XML content by using the
 
 #### Syntax:
 
-FILTERXML(xml, xpath) where:
+FILTERXML(XML, xpath) where:
 
-* xml is a string in valid XML format.
+* XML is a string in valid XML format.
 * xpath is a string in standard XPath format.
 
 
 
 #### Remarks:
 
-&#35;VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
+&#35;VALUE! - occurs if XML is not valid or  if XML contains a namespace with a prefix that is not valid.
 
 #### Example:
 
@@ -3387,13 +3387,13 @@ WEBSERVICE function retrieves data from a web service on the Internet.
 
 #### Syntax:
 
-WEBSERVICE(url) where:
+WEBSERVICE(URL) where:
 
-* url is the url of the web service.
+* URL is the URL of the web service.
 
 #### Remarks:
 
-&#35;VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+&#35;VALUE! - occurs if URL is unable to return the data, if URL result in a string that is not valid and if URL is a string that contains more than the 2048 characters.
 
 #### Example:
 

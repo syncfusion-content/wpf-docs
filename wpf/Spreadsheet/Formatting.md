@@ -103,7 +103,7 @@ Return Type</th></tr>
 <tr>
 <td>
 SetCenterAcrossSelection()</td><td>
-This method sets the Center Across Selection on the selected cells. It should be explicitly called to set Centre Across Selection.</td><td>
+This method sets the Center Across Selection on the selected cells. It should be explicitly called to set Center Across Selection.</td><td>
 setCenterAcrossSelection() </td><td>
 null</td><td>
 void </td></tr>

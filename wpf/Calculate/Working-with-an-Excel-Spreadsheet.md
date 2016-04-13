@@ -9,13 +9,13 @@ documentation: ug
 
 # Working with an Excel Spreadsheet
 
-You can use the Microsoft Excel to design spreadsheets that can be used on systems where MS Excel is not installed. This can be done by using a combination of Essential XlsIO and Essential Calculate, where the former can be used to read and write the spreadsheet and later to actually do the computation as values in the spreadsheet are modified. 
+You can use the Microsoft Excel to design spreadsheets that can be used on systems where Microsoft Excel is not installed. This can be done by using a combination of Essential XlsIO and Essential Calculate, where the former can be used to read and write the spreadsheet and later to actually do the computation as values in the spreadsheet are modified. 
 
 ## Example
 
 To illustrate this process, consider a sample project, Essential Studio\xx.x.x.xx\WPF\Calculation.Wpf\Samples\2.0\XlsFileUsingExcelRW. 
 
-N> This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
+N> This requires you to have Essential XlsIO installed in addition to Essential Calculate. Microsoft Excel is not required.
 
 
 The spreadsheet you are using is a car insurance calculator. It uses Names to manage variable values and has the following four sheets.
@@ -73,7 +73,7 @@ For more detailed information on these classes, check out the class reference.
 
 ## Using Essential XlsIO
 
-Essential XIsIO gives you an Excel-like Automation-type support without having MS Excel installed on the host system. This means that you can use this library to read and write an XLS file and hold its contents in memory. 
+Essential XIsIO gives you an Excel-like Automation-type support without having Microsoft Excel installed on the host system. This means that you can use this library to read and write an XLS file and hold its contents in memory. 
 
 Limitation-You cannot perform actual computations on the contents of the XLS file. Essential Calculate adds this ability. 
 

@@ -73,7 +73,7 @@ The error message will be display only when you enter the value beyond the data 
 ![](Data-Management_images/Data-Management_img6.png)
 
 
-When you click Ok, the cell value will not be committed and when you click Cancel, it will revert the cell value.
+When you click OK, the cell value will not be committed and when you click Cancel, it will revert the cell value.
 
 The following code illustrates how to bind the DataValidationCommand to a button:
 

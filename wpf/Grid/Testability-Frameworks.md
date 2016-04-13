@@ -151,7 +151,7 @@ private static AutomationElement GetGridAut(out AutomatedApplication app)
 }
 {% endhighlight  %}
 
-N> We have added minimal set of Linq-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With Linq-To-UIAutomation library, only First method is supported now.
+N> We have added minimal set of LINQ-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With LINQ-To-UIAutomation library, only First method is supported now.
 
 The Grid Automation element is obtained.
 
@@ -184,7 +184,7 @@ if (item != null)
 
 ## VS 2010 Coded UI Testing
 
-Essential Grid WPF now supports automated UI testing with VS 2010 Coded UI technology. The Grid Test plugin blends in with the automated UI Testing framework in VS 2010 by implementing the following classes:
+Essential Grid WPF now supports automated UI testing with VS 2010 Coded UI technology. The Grid Test plugin blends in with the automated UI Testing Framework in VS 2010 by implementing the following classes:
 
 * UITechnologyManager
 * UITestPropertyProvider

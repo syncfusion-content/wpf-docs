@@ -20,7 +20,7 @@ In order to customize the cell, please follow the below steps
 
 **Create** **a** **DataTemplate**:
 
-Create a custom DataTemplate (For ex: Button Template) in the Mainwindow.xaml file,
+Create a custom DataTemplate (For ex: Button Template) in the Main window.xaml file,
 
 {% highlight xaml %}
 

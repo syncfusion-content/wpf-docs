@@ -98,7 +98,7 @@ Property settings for individual/groups of cells are stored in a GridStyleInfo p
 
 Essential Grid for WPF holds two different style caches that depend upon how the cell style is being used:
 
-Volatile style-cache-Is maintained for styles populated through calls made to the QueryCellInfo (the virtual grid event that provides the cell values to the grid on demand) event. This volatile style-cache uses weak references to interact with the .NET Framework's Garbage collection to ensure optimal memory use. These styles remain cached as long as they are not garbage collected by the framework.
+Volatile style-cache-Is maintained for styles populated through calls made to the QueryCellInfo (the virtual grid event that provides the cell values to the grid on demand) event. This volatile style-cache uses weak references to interact with the .NET Framework's Garbage collection to ensure optimal memory use. These styles remain cached as long as they are not garbage collected by the Framework.
 
 Render style-cache-Is maintained for styles needed to draw the grid and are disposed of as soon as the cell scrolls out of view.
 The combination of these two caches makes Essential Grid for WPF highly efficient. This section elaborates on important style properties.

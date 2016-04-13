@@ -390,7 +390,7 @@ This cell type serves the same purpose as combo box control. The difference is t
 
 The code snippets below allow the user to construct different List Control Cells and their output. To set up drop-down List cell, set its CellType to “DropDownList”.
 
-Creating Editable Drop-down List Bound to Linq Source with ‘FirstName’ as its Display Member.
+Creating Editable Drop-down List Bound to LINQ Source with ‘FirstName’ as its Display Member.
 
 {% highlight c# %}
 
@@ -439,7 +439,7 @@ Editable Drop-down List Control
 
 An Editable drop-down list is created.
 
-Autocomplete Drop-down List Bound to Linq source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
+Autocomplete Drop-down List Bound to LINQ source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
 
 
 {% highlight c# %}
@@ -488,7 +488,7 @@ The following output is generated using the code above.
 Autocomplete Drop-down List Control
 {:.caption}
 
-Exclusive Drop-down List Bound to Linq Source with FirstName as its DisplayMember.
+Exclusive Drop-down List Bound to LINQ Source with FirstName as its DisplayMember.
 
 
 {% highlight c# %}
@@ -2495,7 +2495,7 @@ Public Function MyLibraryFormulaName(ByVal args As String) As String
 
 Here MyLibraryFormulaName must be a name that has not been already used in the Function Library and must include only letters and digits. If you want to replace an existing formula with a formula of the same name, first remove the existing formula before adding the new formula. Use the GridFormulaEngine.RemoveFunction method to remove a formula. 
 
-Then, write an implementation for your method. Here we use code to implement a function that will sum only positive numbers that are passed in as either a range like A1:A5 and/or a list such as A1, A4, A10. The code uses the FormulaEngine helper method to extract these values from the cells. The GetCellsFromArgs method will return an array of cells from a range such as A1:A5, and GetValueFromArg method will take cells such as A3 and return a value such as 123.3. 
+Then, write an implementation for your method. Here we use code to implement a function that will sum only positive numbers that are passed in as either a range like A1:A5 and/or a list such as A1, A4, A10. The code uses the FormulaEngine helper method to extract these values from the cells. The GetCellsFromArgs method will return an array of cells from a range such as A1:A5, and GetValueFromArgs method will take cells such as A3 and return a value such as 123.3. 
 
 {% highlight c# %}
 
@@ -4240,7 +4240,7 @@ Number of active worksheets in the open workbooks.</td></tr>
 Returns the absolute cell reference of the top and leftmost cell visible in the window.</td></tr>
 <tr>
 <td>
-'os version'</td><td>
+'OS version'</td><td>
 Current operating system version, as text.</td></tr>
 <tr>
 <td>
@@ -4804,7 +4804,7 @@ HLOOKUP(lookup_value,table_array, row_index_num, [range_lookup])Lookup_value: Th
 <tr>
 <td>
 HYPERLINK</td><td>
-Creates a shortcut or jump that opens a document stored on a network server, an intranet, or the internet.</td><td>
+Creates a shortcut or jump that opens a document stored on a network server, an intranet, or the Internet.</td><td>
 HYPERLINK(link_location, [friendly_name])Link_location: The path and file name to the document to be opened.Friendly_name: The jump text or numeric value that is displayed in the cell.</td></tr>
 <tr>
 <td>
@@ -5575,7 +5575,7 @@ The Rich Text control will allow you to display and edit rich text in grid cells
 
 #### Example
 
-It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cell renderer must be derived from GridVirtualizingCellRenderer, whose OnIntializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
+It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cell renderer must be derived from GridVirtualizingCellRenderer, whose OnInitializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
 
 #### CellModel class
 

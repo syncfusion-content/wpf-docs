@@ -132,7 +132,7 @@ N> When the content is copied from external source, SfSpreadsheet does not suppo
 
 ## Undo/Redo
 
-SfSpreadsheet provides support for Undo/Redo functionality like MS Excel.
+SfSpreadsheet provides support for Undo/Redo functionality like Microsoft Excel.
 
 The shortcut keys used for Undo/Redo Operations
 
