@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Import and Export| RichTextBoxAdv | Wpf | Syncfusion
 description:  import and export
@@ -66,13 +66,13 @@ The HTML import/export feature has the following limitations:
 
 
 
-##  Doc Import/Export and Docx Import/Export
+##  DOC Import/Export and DOCX Import/Export
 
-This feature allows you to open and save the Word Doc and Docx format (.doc, .docx) documents, and to view, edit, and print the contents by using the RichTextBoxAdv control.
+This feature allows you to open and save the Word DOC and DOCX format (.doc, .docx) documents, and to view, edit, and print the contents by using the RichTextBoxAdv control.
 
 The following assembly references are required to use this feature and its namespace.
 
-### WPF 3.5 and 4.0 framework:
+### WPF 3.5 and 4.0 Framework:
 
 * Assembly: Syncfusion.RichTextDocIOParser.Wpf
 * Dependent Assemblies: Syncfusion.Compression.Base, Syncfusion.Core, Syncfusion.DocIO.ClientProfile, Syncfusion.RichTextBoxAdv.Wpf, and Syncfusion.Shared.Wpf
@@ -80,9 +80,9 @@ The following assembly references are required to use this feature and its names
 
 
 
-### WPF 4.5 and 4.5.1 framework:
+### WPF 4.5 and 4.5.1 Framework:
 
-* Assembly: Syncfusion.RichTextDocIOParser. Wpf
+* Assembly: Syncfusion.RichTextDocIOParser.Wpf
 * Dependent Assemblies: Syncfusion.Compression.Base, Syncfusion.Core, Syncfusion.DocIO.Base, Syncfusion.RichTextBoxAdv.Wpf, and Syncfusion.Shared.Wpf
 * Namespace: Syncfusion.Windows.Tools.Controls
 
@@ -96,7 +96,7 @@ The following assembly references are required to use this feature and its names
 
 
 
-### Doc and Docx Import
+### DOC and DOCX Import
 
 You can convert the Word document stream to RichTextBoxAdv document by invoking the ConvertToDocumentAdv method from the extension class DocxImporting. 
 

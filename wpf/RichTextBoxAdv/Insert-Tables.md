@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Insert Tables| RichTextBoxAdv | Wpf | Syncfusion
 description: insert tables
@@ -9,7 +9,7 @@ documentation: ug
 
 # Insert Tables
 
-Table support for the RichTextBoxAdv control has been implemented as in MS Word. This is used to insert tables with user-defined rows and columns, and it also allows the user to insert multiple tables for every cell.
+Table support for the RichTextBoxAdv control has been implemented as in Microsoft Word. This is used to insert tables with user-defined rows and columns, and it also allows the user to insert multiple tables for every cell.
 
 
 {% tabs %}
