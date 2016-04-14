@@ -7,7 +7,7 @@ control: ReportWriter
 documentation: ug
 ---
 
-# Report Writer API
+# ReportWriter API
 
 ## Constructors
 
@@ -60,15 +60,15 @@ Gets or sets the processing mode (either local or remote).</td></tr>
 <tr>
 <td>
 ReportServerCredential</td><td>
-Gets or sets the report server credential.</td></tr>
+Gets or sets the Report Server credential.</td></tr>
 <tr>
 <td>
 ReportServerFormsCredential</td><td>
-Gets or sets the report server form credential. This is used to export SQL Azure RDL reports.</td></tr>
+Gets or sets the Report Server form credential. This is used to export SQL Azure RDL reports.</td></tr>
 <tr>
 <td>
 ReportServerUrl</td><td>
-Gets or sets the report server URL.</td></tr>
+Gets or sets the ReportServerURL.</td></tr>
 </table>
 
 ## Methods
@@ -97,11 +97,11 @@ Loads the report with the specified stream that contains the RDL contents.</td><
 <tr>
 <td>
 Save(string,writer type)</td><td>
-Saves the report as a PDF, Word, Excel and Html documents in the mentioned path.</td></tr>
+Saves the report as a PDF, Word, Excel and HTML documents in the mentioned path.</td></tr>
 <tr>
 <td>
 Save(stream)</td><td>
-Saves the report as a PDF, Word, Excel and Html documents in the stream.</td></tr>
+Saves the report as a PDF, Word, Excel and HTML documents in the stream.</td></tr>
 </table>
 
 ## Events
@@ -118,5 +118,5 @@ ExportCompleted</td><td>
 This event is triggered when export is completed.</td></tr>
 <tr><td>
 SubreportProcessing</td><td>
-This event is triggered when the report is RDLC and contains with sub report.</td></tr>
+This event is triggered when the report is RDLC and contains with subreport.</td></tr>
 </table>

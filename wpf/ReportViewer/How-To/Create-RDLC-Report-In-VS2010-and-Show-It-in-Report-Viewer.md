@@ -11,7 +11,7 @@ documentation: ug
 
 This section covers the steps to create RDLC report in VS2010 and shows the created RDLC report in the Report viewer.
 
-1. Create a new WPF application with .Net Framework 4. The Solution Explorer dialog opens.
+1. Create a new WPF application with .NET Framework 4. The Solution Explorer dialog opens.
    
 2. To add a new RDLC report in the WPF application, right-click on the newly added WPF application in the Solution Explorer.
 

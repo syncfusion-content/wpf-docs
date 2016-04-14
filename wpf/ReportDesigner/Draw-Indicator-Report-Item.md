@@ -15,11 +15,11 @@ You can add a Indicator to the Report Designer using the following steps.
 
    ![](Draw-Indicator-Report-Item_images/Draw-Indicator-Report-Item_img1.png)
 
-2. A Gauge Panel properties wizard opens, Click Ok.Then indicator will be added with its default properties.
+2. A Gauge Panel properties wizard opens, Click OK.Then indicator will be added with its default properties.
 
    ![](Draw-Indicator-Report-Item_images/Draw-Indicator-Report-Item_img2.png)
 
-3. To Add the Report Items such as text boxes, lines, and images and rectangle to the indicator, click and drag the selected report items to the databar.
+3. To Add the Report Items such as text boxes, lines, and images and rectangle to the indicator, click and drag the selected report items to the DataBar.
 
    ![](Draw-Indicator-Report-Item_images/Draw-Indicator-Report-Item_img3.png)
 
@@ -37,7 +37,7 @@ You can add a Indicator to the Report Designer using the following steps.
    
    * Action - To change hyperlink options.
 
-6. Click Ok. Then the values are updated in the indicator.
+6. Click OK. Then the values are updated in the indicator.
 
 7. Select properties like add indicator, edit indicator, remove indicator, add label and change indicator type.
 
@@ -59,7 +59,7 @@ You can add a Indicator to the Report Designer using the following steps.
    
    * Border - To change border color, style and width options.
 
-10. Click Ok. Then the values are updated in the gauge panel.
+10. Click OK. Then the values are updated in the gauge panel.
 
 11. To change indicator type, Select indicator and right click and select Change Indicator Type or select Change Indicator Type in the Layout Tab.
 
@@ -69,7 +69,7 @@ You can add a Indicator to the Report Designer using the following steps.
 
     ![](Draw-Indicator-Report-Item_images/Draw-Indicator-Report-Item_img10.png)
 
-13. Click Ok. Then the values are updated in the indicator type.
+13. Click OK. Then the values are updated in the indicator type.
 
 14. To Add label to the indicator, right click the indicator and select Add Label.
 
