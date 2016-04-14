@@ -140,3 +140,58 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 {% endhighlight %}
 
 ![](Exporting-Images/Export to csv.png)
+
+## Threshold Limitations
+
+The following table represents the number of rows and columns to be taken in account while exporting the PivotGrid control without affecting its performance.
+
+<table>
+    <tr>
+        <th>
+            Functionality</th>
+        <th>
+            Row Count</th>
+        <th> 
+            Column Count</th>
+    </tr>
+    <tr>
+        <td>
+            Exporting PivotGrid contents to Excel document in Cell mode</td>
+        <td>
+            300</td>
+        <td>
+            70</td>
+    </tr>
+    <tr>
+        <td>
+            Exporting PivotGrid contents to Excel document in PivotTable mode</td>
+        <td>
+            No threshold limit</td>
+        <td>
+            No threshold limit</td>
+    </tr>
+    <tr>
+        <td>
+            Exporting PivotGrid contents to Word document</td>
+        <td>
+            1800</td>
+        <td>
+            70</td>
+    </tr>
+    <tr>
+        <td>
+            Exporting PivotGrid contents to PDF document</td>
+        <td>
+            800</td>
+        <td>
+            70</td>
+    </tr>
+    <tr>
+        <td>
+            Exporting PivotGrid contents to CSV document</td>
+        <td>
+            No threshold limit</td>
+        <td>
+            No threshold limit</td>
+    </tr>
+</table>
