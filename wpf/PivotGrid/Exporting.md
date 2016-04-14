@@ -15,6 +15,7 @@ PivotGrid provides an option to export its content to various formats. It provid
    * Word format
    * PDF format
    * CSV format
+   * Threshold Limitations
    
 ## Export to Excel
 
