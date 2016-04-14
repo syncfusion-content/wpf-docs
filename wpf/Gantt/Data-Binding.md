@@ -11,7 +11,7 @@ documentation: ug
 
 ## TaskDetails Binding
 
-Essential Gantt for WPF includes an inbuilt class called TaskDetails, which is inherited from the IGanttTask interface. A collection of the TaskDetails can be bounded as an ItemsSource for the GanttControl.
+Essential Gantt for WPF includes an built-in class called TaskDetails, which is inherited from the IGanttTask interface. A collection of the TaskDetails can be bounded as an ItemsSource for the GanttControl.
 
 ### Use Case Scenarios
 
