@@ -94,15 +94,15 @@ Main file (.shp)
 
 Index file (.shx)
 
-dBASE file (.dbf)
+dBase file (.dbf)
 
-All files must adhere to the 8.3 naming conventions. The Main file, Index file, and dBASE file must have the same prefix, i.e., they must have the same file name. This naming convention allows you to identify specific geographical information.
+All files must adhere to the 8.3 naming conventions. The Main file, Index file, and dBase file must have the same prefix, i.e., they must have the same file name. This naming convention allows you to identify specific geographical information.
 
 The main file (.shp) contains a fixed-length file header followed by the variable-length records. Each variable-length record is made up of a fixed-length record header followed by the variable-length record contents.  
 
 The index file (.shx) contains a 100-byte header followed by 8-byte, fixed-length records.
 
-The dBASE file (.dbf) contains any desired feature attributes or attributes keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windows™ and DOS.  Any set of fields can be present in the table.
+The dBase file (.dbf) contains any desired feature attributes or attributes keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windows™ and DOS.  Any set of fields can be present in the table.
 
 For more information about the 8.3 naming convention, shape files and their descriptions, visit the following link:
 

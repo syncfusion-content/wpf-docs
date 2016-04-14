@@ -199,7 +199,7 @@ N> The shape’s under-bound object value must have numeric property and should 
 
 ## ColorPalette
 
-ColorPalette is a set of colors that are applied on the shapes. Map contains two build in color palettes. They are: 
+ColorPalette is a set of colors that are applied on the shapes. Map contains two built-in color palettes. They are: 
 
 1. Metro 
 2. CoolBlue 
@@ -248,7 +248,7 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 
 ## About CustomColorPalette
 
-Besides the build in the color palettes, the custom colors can be defined for the color palette. The custom colors are defined in the “CustomColors” in “ShapeSetting.” CustomColors is the collection property that accepts the “MapColorPalette.” To apply the custom colors, “ColorPalette” must be set to “CustomPalette” and CustomColors should be defined.
+Besides the built-in the color palettes, the custom colors can be defined for the color palette. The custom colors are defined in the “CustomColors” in “ShapeSetting.” CustomColors is the collection property that accepts the “MapColorPalette.” To apply the custom colors, “ColorPalette” must be set to “CustomPalette” and CustomColors should be defined.
 
 ## About MapColorPalette
 
