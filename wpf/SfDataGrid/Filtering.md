@@ -44,7 +44,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when itemssource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
+N> [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) is not supported when ItemsSource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
 
 ### Column Filtering
 
@@ -465,7 +465,7 @@ SfDataGrid provides the following events for filtering.
 
 ### FilterChanging event
 
-[FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) event is raised while applying filters to a particular column. You can use this event to change the [FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterEventArgs~FilterPredicates.html), [FilterType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterType.html) and [FilterBehaviour](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterBehavior.html).
+[FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) event is raised while applying filters to a particular column. You can use this event to change the [FilterPredicates](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterEventArgs~FilterPredicates.html), [FilterType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterType.html) and [FilterBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterBehavior.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -567,7 +567,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 {% endhighlight %}
 {% endtabs %}
 
-### Changing AdvancedFilter type while loading dynamic itemssource
+### Changing AdvancedFilter type while loading dynamic ItemsSource
   
 By default, `TextFilters` will be loaded for the columns if `ItemsSource` is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx).  If you want to load Number Filters or Date Filters based on column values, you need to use [ColumnMemberType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnMemberType.html) property.
 

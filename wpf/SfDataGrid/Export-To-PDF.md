@@ -548,7 +548,7 @@ document.Save("Sample.pdf");
 
 ![](Export-To-PDF_images/Export-To-PDF_img9.png)
 
-By default, only expanded DetailsViewDataGrids only will be exported to Pdf document. If you want to export all the DetailsViewDataGrids, you need to set [ExportAllDetails](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllDetails.html) as `true`.
+By default, only expanded DetailsViewDataGrids only will be exported to PDF document. If you want to export all the DetailsViewDataGrids, you need to set [ExportAllDetails](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllDetails.html) as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -562,7 +562,7 @@ document.Save("Sample.pdf");
 
 ![](Export-To-PDF_images/Export-To-PDF_img10.png)
 
-Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported Pdf document.
+Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
 You can customize its exporting operation by using [ChildGridExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ChildGridExportingEventHandler.html).
 
@@ -613,7 +613,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 
 ![](Export-To-PDF_images/Export-To-PDF_img12.png)
 
-Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to Pdf.
+Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
 
 ### Customizing DetailsViewDataGrid cells
 
