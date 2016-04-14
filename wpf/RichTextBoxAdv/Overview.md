@@ -39,7 +39,7 @@ RichTextBoxAdv is a control for formatting text, such as aligning and indenting 
 
 This control helps users with rich text formatting such as bold, italic, highlighting, aligning, indenting paragraphs, and so on. It can also be used in forums, blogs, and so on.
 
-1. It can be used like MS Word in rich content applications.
+1. It can be used like Microsoft Word in rich content applications.
 2. It can be used as an HTML editor control as it has the HTML export feature.
 3. The built-in commands help to create customized toolbar applications.
 

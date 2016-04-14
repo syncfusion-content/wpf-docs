@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu Support
 
-RichTextBoxAdv supports a context menu similar to MS Word. It supports the following list of features in its context menu:
+RichTextBoxAdv supports a context menu similar to Microsoft Word. It supports the following list of features in its context menu:
 
 1. Cut
 2. Copy
