@@ -100,7 +100,7 @@ The ReportWriter has support to view and save the RDL reports. The following cod
 
 The ReportWriter has support to view and save the RDLC reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign `reportPath`, `ProcessingMode` and `ExportFormat` to ReportWriter.
+1. Assign `ReportPath`, `ProcessingMode` and `ExportFormat` to ReportWriter.
 
    ~~~ csharp
    string reportPath = @"..ReportTemplate\RDLC\ProductCatalog.rdlc";
