@@ -37,7 +37,7 @@ You can add report filter to the Report Designer using the following steps.
 
     ![](Add-Report-Filter_images/Add-Report-Filter_img2.png)
 
-11. Click Ok.
+11. Click OK.
 
 ## Add Report Filter in Tablix, List or Matrix
 

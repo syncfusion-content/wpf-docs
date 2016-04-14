@@ -9,11 +9,11 @@ documentation: ug
 
 # Saving Reports
 
-Essential Report Writer provides support for saving a report as a PDF, Word, Excel and Html documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
+Essential ReportWriter provides support for saving a report as a PDF, Word, Excel and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
 
 ## Saving Report as PDF 
 
-The report generated using the Report Designer can be exported as a PDF document using the following code.
+The report generated using the ReportDesigner can be exported as a PDF document using the following code.
 
 {% tabs %}
 {% highlight C# %}
@@ -32,7 +32,7 @@ reportWriter.Save("Sample.pdf", WriterFormat.PDF)
 
 ## Saving Report as Excel 
 
-The report generated using the Report Designer can be exported as an Excel document using the following code example. 
+The report generated using the ReportDesigner can be exported as an Excel document using the following code example. 
 
 {% tabs %}
 {% highlight C# %}
@@ -51,7 +51,7 @@ reportWriter.Save("Sample.xls", WriterFormat.Excel)
 
 ## Saving Report as Word 
 
-The report generated using the Report Designer can also be exported as a Word document using the following code example.
+The report generated using the ReportDesigner can also be exported as a Word document using the following code example.
 
 {% tabs %}
 {% highlight C# %}
@@ -70,7 +70,7 @@ reportWriter.Save("Sample.doc", WriterFormat.WORD)
 
 ## Saving Report as an HTML 
 
-The report generated using the Report Designer can be exported as an HTML document using the following code example. 
+The report generated using the ReportDesigner can be exported as an HTML document using the following code example. 
 
 {% tabs %}
 {% highlight C# %}

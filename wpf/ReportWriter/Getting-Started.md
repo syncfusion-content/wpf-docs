@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create ReportWriter
 
-This section illustrates how to add Report Writer to the WPF application. It includes the following steps.
+This section illustrates how to add ReportWriter to the WPF application. It includes the following steps.
 
 1. Create a new WPF application in Visual Studio.
 
@@ -33,7 +33,7 @@ This section illustrates how to add Report Writer to the WPF application. It inc
    * Syncfusion.Shared.Wpf
    * Syncfusion.XlsIO.Base
    
-4. Set the following properties to Report Writer.   
+4. Set the following properties to ReportWriter.   
 
    * reportPath - sets the local file system path of the report.
    
@@ -41,7 +41,7 @@ This section illustrates how to add Report Writer to the WPF application. It inc
    
    * Export format - Set Export format as PDF, Excel, Word or HTML.
    
-5. Add the following code to Report Writer.
+5. Add the following code to ReportWriter.
 
    ~~~ csharp
    string fileName = null;
@@ -83,7 +83,7 @@ This section illustrates how to add Report Writer to the WPF application. It inc
 
 The ReportWriter has support to view and save the RDL reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign ReportPath, ProcessingMode and Export format to Report Writer.
+1. Assign `reportPath`, `ProcessingMode` and `ExportFormat` to ReportWriter.
 
    ~~~ csharp
    string reportPath = @"..\ReportTemplate\Product Catalog.rdl";
@@ -100,7 +100,7 @@ The ReportWriter has support to view and save the RDL reports. The following cod
 
 The ReportWriter has support to view and save the RDLC reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign ReportPath, processingMode and export format to Report Writer.
+1. Assign `reportPath`, `ProcessingMode` and `ExportFormat` to ReportWriter.
 
    ~~~ csharp
    string reportPath = @"..ReportTemplate\RDLC\ProductCatalog.rdlc";
@@ -109,7 +109,7 @@ The ReportWriter has support to view and save the RDLC reports. The following co
    reportWriter.Save("ProductCatalog.doc", WriterFormat.WORD);
    ~~~
    
-2. Add Data sources to the RDLC report.
+2. Add Datasource to the RDLC report.
 
    ~~~ csharp
    ReportDataSourceCollection dataSources = new ReportDataSourceCollection();

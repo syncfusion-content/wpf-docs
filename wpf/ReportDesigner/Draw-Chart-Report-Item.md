@@ -19,7 +19,7 @@ Add a data source and dataset to the Report Designer.
 
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img1.png)
 
-2. A Chart properties wizard opens,Click Ok.Then chart will be added with its default properties.
+2. A Chart properties wizard opens,Click OK.Then chart will be added with its default properties.
 
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img2.png)
    
@@ -45,7 +45,7 @@ Add a data source and dataset to the Report Designer.
    
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
    
-8. Click Ok.Then the values are updated in the Chart.
+8. Click OK.Then the values are updated in the Chart.
 
 9. Right click on the chart and select Legend Properties from the context menu.
 
@@ -61,7 +61,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
 	
-11. Click Ok.Then the values are updated in the Legend.
+11. Click OK.Then the values are updated in the Legend.
 
 12. Right click on the chart and select Value Axis Properties from the context menu.
 
@@ -75,7 +75,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
 	
-13. Click Ok.Then the values are updated in the Value Axis.
+13. Click OK.Then the values are updated in the Value Axis.
 
 14. Right click on the chart and select Category Axis Properties from the context menu.
 
@@ -89,7 +89,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
 	
-15. Click Ok.Then the values are updated in the Category Axis.
+15. Click OK.Then the values are updated in the Category Axis.
 
 16. Right click on the chart and select Chart title Properties from the context menu.
 
@@ -99,7 +99,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
 	
-17. Click Ok to update the values for Chart title.
+17. Click OK to update the values for Chart title.
 
 18. Right click on the chart and select Category Axis title Properties from the context menu.
 
@@ -109,7 +109,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
 
-19. Click Ok to update the values for Category Axis title.
+19. Click OK to update the values for Category Axis title.
 	
 20. Right click on the chart and select Value Axis title Properties from the context menu.	
 
@@ -119,7 +119,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
 	
-21. Click Ok to update the values for Category Axis title.
+21. Click OK to update the values for Category Axis title.
 
 22. To delete the chart,Right click and select delete.
 
@@ -167,7 +167,7 @@ Add a data source and dataset to the Report Designer.
    
    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
    
-9. Click Ok.Then the values are updated in the Chart.
+9. Click OK.Then the values are updated in the Chart.
 
 10. Right click on the chart and select Legend Properties from the context menu.
 
@@ -183,7 +183,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
 	
-12. Click Ok.Then the values are updated in the Legend.
+12. Click OK.Then the values are updated in the Legend.
 
 13. Right click on the chart and select Value Axis Properties from the context menu.
 
@@ -197,7 +197,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
 	
-14. Click Ok.Then the values are updated in the Value Axis.
+14. Click OK.Then the values are updated in the Value Axis.
 
 15. Right click on the chart and select Category Axis Properties from the context menu.
 
@@ -211,7 +211,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
 	
-16. Click Ok.Then the values are updated in the Category Axis.
+16. Click OK.Then the values are updated in the Category Axis.
 
 17. Right click on the chart and select Chart title Properties from the context menu.
 
@@ -221,7 +221,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
 	
-18. Click Ok to update the values for Chart title.
+18. Click OK to update the values for Chart title.
 
 19. Right click on the chart and select Category Axis title Properties from the context menu.
 
@@ -231,7 +231,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
 
-20. Click Ok to update the values for Category Axis title.
+20. Click OK to update the values for Category Axis title.
 	
 21. Right click on the chart and select Value Axis title Properties from the context menu.	
 
@@ -241,7 +241,7 @@ Add a data source and dataset to the Report Designer.
 	
 	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
 	
-22. Click Ok to update the values for Category Axis title.
+22. Click OK to update the values for Category Axis title.
 
 23. To delete the chart,Right click and select delete.
 

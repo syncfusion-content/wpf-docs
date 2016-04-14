@@ -64,7 +64,7 @@ Dependency Property</td><td>
 DesignMode</td></tr>
 <tr><td>
 ReportServerCredential</td><td>
-Gets or sets credential access to the report server.</td><td>
+Gets or sets credential access to the Report Server.</td><td>
 Dependency Property</td><td>
 ICredentials</td></tr>
 <tr><td>

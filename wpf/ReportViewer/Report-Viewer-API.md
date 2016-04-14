@@ -44,7 +44,7 @@ documentation: ug
 </tr>
 <tr>
 <td>ReportServerUrl</td>
-<td>Gets or sets the ReportServerUrl of the report server</td>
+<td>Gets or sets the ReportServerUrl of the Report Server</td>
 <td>Dependency Property</td>
 <td>String</td>
 </tr>
@@ -86,7 +86,7 @@ documentation: ug
 </tr>
 <tr>
 <td>ShowPdfExportButton</td>
-<td>Gets or sets a value that indicates whether the Pdf button is visible</td>
+<td>Gets or sets a value that indicates whether the PDF button is visible</td>
 <td>Dependency Property</td>
 <td>Boolean</td>
 </tr>
@@ -110,7 +110,7 @@ documentation: ug
 </tr>
 <tr>
 <td>ReportServerCredential</td>
-<td>Credential access to Report server</td>
+<td>Credential access to Report Server</td>
 <td>Dependency Property</td>
 <td>ICredentials</td>
 </tr>

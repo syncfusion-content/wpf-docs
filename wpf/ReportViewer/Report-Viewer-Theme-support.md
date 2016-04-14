@@ -53,9 +53,9 @@ To customize a ReportViewer, you have to modify the following control parts.
 * PART_buttonPrintLayout
 * PART_buttonPageSetup
 * PART_buttonRefresh
-* PART_btnViewReport
+* PART_buttonViewReport
 * PART_buttonFind
-* PART_btnback
+* PART_buttonback
 * PART_toggleShowDetails
 * PART_textBoxTotalPages
 * PART_labelOf
@@ -66,7 +66,7 @@ To customize a ReportViewer, you have to modify the following control parts.
 * PART_gridExceptionRow
 * PART_loadingIndicatorRow
 * PART_toolBarGridRow
-* PART_dsCredentialRow
+* PART_CredentialRow
 * PART_parameterGridRow
 * PART_viewerContentRow
 

@@ -41,7 +41,7 @@ You can add parameter to the Report Designer using the following steps.
    
    * Hidden - To hide the parameter so that it does not display on the toolbar. 
    
-   * Internal - To hide the parameter and protect it from being modified on the report server after the report is published. 
+   * Internal - To hide the parameter and protect it from being modified on the Report Server after the report is published. 
 
 5. In Report Parameter Properties, select any of the following in Available Values tab. 
 
