@@ -9,7 +9,7 @@ documentation: ug
 
 # Dependency Relationship
 
-Dependency relationship is the relationship between two tasks. These relationship has been categorised into four types based on the start and finish date of the task. They are:
+Dependency relationship is the relationship between two tasks. These relationship has been categorized into four types based on the start and finish date of the task. They are:
 
 * FinishToStart 
 * FinishToFinish

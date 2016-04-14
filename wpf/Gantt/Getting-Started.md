@@ -126,7 +126,7 @@ You can add Gantt control to the application using the following code:
 {% endhighlight  %}
 
 
-When the code runs, an empty gantt with in-built TaskDetails collection will be displayed.
+When the code runs, an empty Gantt with in-built TaskDetails collection will be displayed.
 
 Binding Data to GanttControl
 
