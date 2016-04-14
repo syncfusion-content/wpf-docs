@@ -313,7 +313,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ## Export to HTML
 
-You can save exported workbook as Html by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
+You can save exported workbook as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ It is also possible to save worksheet as HTML by using [SaveAsHtml](http://help.
 
 ## Export to Mail
 
-You can export SfDataGrid to mail by converting it into Excel and save exported worksheet as Html. Then exported Html contents is embedded in mail body.
+You can export SfDataGrid to mail by converting it into Excel and save exported worksheet as HTML. Then exported HTML contents is embedded in mail body.
 
 {% tabs %}
 {% highlight c# %}
