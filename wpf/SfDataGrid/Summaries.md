@@ -105,16 +105,20 @@ Refer [Formatting Summary](#formatting-summary) section to know more about how t
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
-
+                       
     <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} “ 
-                                        ShowSummaryInRow="True">
+        <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} for {ProductCount} products " ShowSummaryInRow="True">
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                              Format="'{Sum:c}'"
-                                              MappingName="UnitPrice"
-                                              SummaryType="DoubleAggregate" />
-
+                                                Format="'{Sum:c}'"
+                                                MappingName="UnitPrice"
+                                                SummaryType="DoubleAggregate" />
+    
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                                Format="'{Count:d}'"
+                                                MappingName="ProductName"
+                                                SummaryType="CountAggregate" />
+    
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridTableSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>
