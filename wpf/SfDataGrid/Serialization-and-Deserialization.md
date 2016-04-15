@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization and Deserialization | SfDataGrid | WPF | Syncfusion
-description: serialization and deserialization
+title: Serialization and Deserialization in SfDataGrid.
+description:  Serialization and Deserialization in SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -9,957 +9,571 @@ documentation: ug
 
 # Serialization and Deserialization
 
-The DataGrid control supports Serialization and Deserialization. The entire Grid setting can be serialized and deserialized at execute time. This section explains on how to serialize and deserialize DataGrid and how to customize serialization and deserialization process by using SerializationController. By customizing SerializationController, you can serialize and deserialize derived DataGrid and also customize column. 
+SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
+ 
+## Serialization 
+You can serialize the SfDataGrid by using [SfDataGrid.Serialize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Serialize(Stream).html) method which exports the current DataGrid control properties to an XML file.
 
-## Overview
-
-The DataGrid control includes following methods for Serialization and Deserialization.
-
-Methods Table
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Overload</th><th>
-Description</th></tr>
-<tr>
-<td>
-Serialize</td><td>
-Serialize(Stream stream)</td><td>
-Serialize the datagrid and exports the DataGrid properties to given XML file.</td></tr>
-<tr>
-<td>
-Serialize</td><td>
-Serialize(Stream stream, SerializationOptions options)</td><td>
-Serialize the datagrid and exports the DataGrid properties to given XML file based on the SerializationOptions </td></tr>
-<tr>
-<td>
-Deserialize</td><td>
-Deserialize(Stream stream)</td><td>
-Reconstructs the DataGrid with the objects that are stored in the given XML file.</td></tr>
-<tr>
-<td>
-Deserialize</td><td>
-Deserialize(Stream stream, DeserializationOptions options)</td><td>
-Reconstructs the DataGrid with the objects that are stored in the given XML file based on the DeserializationOptions </td></tr>
-</table>
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{           
+    dataGrid.Serialize(file);
+}    
+{% endhighlight %}
+{% endtabs %}
 
 
-When you invoke the Serialize method, it exports the current DataGrid control properties to an XML file and the Deserialize method reconstructs the DataGrid control with the objects that are stored in the XML file.
+### Serialize as Stream
 
-The following code example illustrates on how to use Serialization and Deserialization in the DataGrid control using SerializationOptions and DeserializationOptions. SerializationOptions and DeserializationOptions are a class used to specify the options for customizing serialization and deserialization respectively. You can achieve this by clicking Serialize button and when the XML file is saved, reconstruct the DataGrid control by clicking the Deserialize button.
+You can store the SfDataGrid settings as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Serialize(Stream).html) method by passing the stream.
+
+{% tabs %}
+{% highlight c# %}
+FileStream stream = new FileStream("DataGrid", FileMode.Create);
+this.dataGrid.Serialize(stream);
+{% endhighlight %}
+{% endtabs %}
 
 
+## Serialization options 
+
+SfDataGrid serialization  operation can be customized by passing [SerializationOptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions.html) instance as an argument to [Serialize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Serialize(Stream,SerializationOptions).html) method.
+
+
+### Serialize sorting
+
+By default, SfDataGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [SerializationOptions.SerializeSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeSorting.html) to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeSorting = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Serialize grouping
+
+By default, SfDataGrid allows you to serialize the grouping operation. You can disable the grouping  serialization by setting the [SerializationOptions.SerializeGrouping](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeGrouping.html) to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeGrouping = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Serialize filtering
+
+By default, SfDataGrid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the [SerializationOptions.SerializeFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeFiltering.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeFiltering = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Serialize columns
+
+By default, SfDataGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [SerializationOptions.SerializeColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeColumns.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeColumns = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Serialize summaries
+ 
+By default, SfDataGrid allows you to serialize the caption summary, group summary and table summary settings in SfDataGrid. 
+
+You can disable the summaries serialization by setting [SerializationOptions.SerializeCaptionSummary](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeCaptionSummary.html) , [SerializationOptions.SerializeGroupSummaries](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeGroupSummaries.html) , [SerializationOptions.SerializeTableSummaries](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeTableSummaries.html) properties to `false`
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeCaptionSummary = false;
+    options.SerializeGroupSummaries = false;
+    options.SerializeTableSummaries = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Serialize stacked headers
+
+By default, SfDataGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [SerializationOptions.SerializeStackedHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeStackedHeaders.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeStackHeaders = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+### Serialize Details View
+
+By default, SfDataGrid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the [SerializationOptions.SerializeDetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeDetailsViewDefinition.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeDetailsViewDefinition = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Serialize unbound rows
+
+By default, SfDataGrid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the [SerializationOptions.SerializeUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationOptions~SerializeUnBoundRows.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Create("DataGrid.xml"))
+{
+    SerializationOptions options = new SerializationOptions();
+    options.SerializeUnBoundRows = false;
+    dataGrid.Serialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Deserialization
+
+You can deserialize the SfDataGrid setting by using [SfDataGrid.Deserialize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Deserialize(Stream).html) method which reconstructs the SfDataGrid based on the setting in the stored XML file.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    dataGrid.Deserialize(file);
+}    
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize from Stream
+
+You can deserialize the SfDataGrid settings from [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Deserialize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Deserialize(Stream).html) method.
+
+{% tabs %}
+{% highlight c# %}
+FileStream fileStream = new FileStream("DataGrid", FileMode.Open);
+this.dataGrid.Deserialize(fileStream);
+{% endhighlight %}
+{% endtabs %}
+
+## Deserialization options
+ 
+Deserialization operation can be customized by passing [DeserializationOptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions.html) instance as an argument to [Deserialize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Deserialize(Stream,DeserializationOptions).html) method.
+
+### Deserialize sorting
+
+By default, SfDataGrid allows you to deserialize the sorting operation. You can disable the sorting  deserialization by setting the [DeserializationOptions.DeserializeSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeSorting.html) to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeSorting = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize grouping
+
+By default, SfDataGrid allows you to deserialize the grouping operation. You can disable the grouping deserialization by setting the [DeserializationOptions.DeserializeGrouping](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeGrouping.html) to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeGrouping = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize filtering
+
+By default, SfDataGrid allows you to deserialize the filtering. you can disable the filtering deserialization by setting [DeserializationOptions.DeserializeFiltering](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeFiltering.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeFiltering = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize columns
+
+By default, SfDataGrid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the [DeserializationOptions.DeserializeColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeColumns.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeColumns = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize summaries
+ 
+By default, SfDataGrid allows you to deserialize the group summary, caption summary and table summary settings. 
+
+You can disable the summaries deserialization by setting [DeserializationOptions.DeserializeCaptionSummary](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeCaptionSummary.html) , [DeserializationOptions.DeserializeGroupSummaries](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeGroupSummaries.html) , [DeserializationOptions.DeserializeTableSummaries](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeTableSummaries.html) properties to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeCaptionSummary = false ;
+    options.DeserializeGroupSummaries = false ;
+    options.DeserializeTableSummaries = false ;
+    dataGrid.Deserialize(file, options);
+}    
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize stacked headers
+
+By default, SfDataGrid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the [DeserializationOptions.DeserializeStackedHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeStackedHeaders.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeStackedHeaders = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize Details View
+
+By default, SfDataGrid allows you to deserialize the DetailsViewDefinition. You can disable the DetailsViewDefinition deserialization by setting the [DeserializationOptions.DeserializeDetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeDetailsViewDefinition.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeDetailsViewDefinition = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Deserialize unbound rows
+
+By default, SfDataGrid allows you to deserialize the unbound rows settings. You can disable the unbound rows deserialization by setting the [DeserializationOptions.DeserializeUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DeserializationOptions~DeserializeUnBoundRows.html) to `false`.
+
+{% tabs %}
+{% highlight c# %}
+using (var file = File.Open("DataGrid.xml", FileMode.Open))
+{
+    DeserializationOptions options = new DeserializationOptions();
+    options.DeserializeUnBoundRows = false ;
+    dataGrid.Deserialize(file, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Customizing Serialization and Deserialization Operations
+
+SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController.html) class and override the necessary virtual methods.
+
+### Serialize custom column 
+
+By default, the unknown(custom) column types are serialized as `GridTextColumn` type. If you want to serialize the custom column, you have to add custom column type into predefined types. 
+
+In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](http://help.syncfusion.com/wpf/sfdatagrid/column-types#custom-column-support).
+
+{% tabs %}
+{% highlight c# %}
+public class DatePickerColumn : GridColumn
+{        
+    public DatePickerColumn()
+    {
+        SetCellType("DatePicker");
+    }
+
+    public static readonly DependencyProperty DateMappingNameProperty = DependencyProperty.Register("DateMappingName",
+typeof(string), typeof(DatePickerColumn));
+
+    public string DateMappingName
+    {
+        get { return (string)GetValue(DateMappingNameProperty); }
+        set { SetValue(DateMappingNameProperty, value); }
+    }
+
+    protected override Freezable CreateInstanceCore()
+    {
+        return new DatePickerColumn();
+    }
+
+    protected override void SetDisplayBindingConverter()
+    {
+        (this.DisplayBinding as Binding).Converter = new CustomConverter();      
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+In the below code snippet, the DatePickerColumn is defined in SfDataGrid.
+
+{% tabs %}
 {% highlight xaml %}
-
-
-
-<Window.DataContext>
-
-<local:ViewModel/>
-
-</Window.DataContext>
-
-<syncfusion:SfDataGrid x:Name="sfGrid" 
-
-                         AllowDraggingColumns="True"
-
-                         ColumnSizer="Star" 
-
-                         NavigationMode="Row"
-
-                         ItemsSource="{Binding EmployeeDetails}"
-
-                         ShowGroupDropArea="True">
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                        AutoGenerateColumns="False"
+                        ItemsSource="{Binding Orders}">
 
     <syncfusion:SfDataGrid.Columns>
-
-        <syncfusion:GridTextColumn MappingName="EmployeeID" />
-
-        <syncfusion:GridTextColumn HeaderText="Employee Name" 
-
-        MappingName="Name" />
-
-        <syncfusion:GridTextColumn MappingName="Gender" />
-
-        <syncfusion:GridTextColumn HeaderText="Designation"
-
-        MappingName="Title" MinimumWidth="240" />
-
-        <syncfusion:GridTextColumn HeaderText="Marital Status" 
-
-        MappingName="MaritalStatus" />
-
+        <local:DatePickerColumn HeaderText="OrderDate" MappingName="OrderDate" />
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
-
-<StackPanel>
-
-    <StackPanel>
-
-        <TextBlock Margin="5" Text="Serialize the DataGrid" />
-
-        <Button Width="150" x:Name="serializebtn" Margin="5"
-
-        Click="OnSerializeDataGrid" Content="Serialize" />
-
-    </StackPanel>
-
-    <StackPanel>
-
-        <TextBlock Margin="5" Text="Deserialize the DataGrid" />
-
-        <Button Width="150" x:Name="deserializebtn" Margin="5"
-
-        Click="OnDeserializeDataGrid" Content="Deserialize" />
-
-    </StackPanel>
-
-</StackPanel>
 {% endhighlight %}
-
-{% highlight C# %}
-
+{% endtabs %}
 
 
-Private void OnSerializeDataGrid(object sender, RoutedEventArgs args)
+To serialize the above DatePickerColumn, follow the below steps.
+ 
+1. Create a class derived from [SerializableGridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) and define the custom column properties in `SerializableCustomGridColumn` class.
 
+{% tabs %}
+{% highlight c# %}
+[DataContract(Name="SerializableCustomGridColumn")]
+public class SerializableCustomGridColumn : SerializableGridColumn
 {
+    [DataMember]
+    public string DateMappingName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
 
-    var dataGrid = args.Source as SfDataGrid;
+2.Create a new class named as SerializationControllerExt by overriding [SerializationController](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
 
-    if (dataGrid == null) return;
+{% tabs %}
+{% highlight c# %}
+dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
-    try
+public class SerializationControllerExt : SerializationController
+{
+    public SerializationControllerExt(SfDataGrid dataGrid)
+        : base(dataGrid)
+    {
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-    {
+3.You can get the custom column property settings for serialization by overriding the [GetSerializableGridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~GetSerializableDataGrid.html) virtual method.
 
-       using (var file = File.Create("DataGrid.xml"))
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : SerializationController
+{
+        public SerializationControllerExt(SfDataGrid dataGrid)
+            : base(dataGrid)
+        {
+        }
 
-       {
+    protected override SerializableGridColumn GetSerializableGridColumn(GridColumn column)
+    {
+        if (column.MappingName == "OrderDate")
+        {
+            return new SerializableCustomGridColumn();
+        }
+        return base.GetSerializableGridColumn(column);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-           SerializationOptions options = new SerializationOptions();
+4.Store the custom column property settings during serialization by overriding the [StoreGridColumnProperties](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~StoreGridColumnProperties.html) virtual method.
+ 
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : SerializationController
+{
+        public SerializationControllerExt(SfDataGrid dataGrid)
+            : base(dataGrid)
+        {
+        }
+        protected override void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)
+    {
+        base.StoreGridColumnProperties(column, serializableColumn);
+        if (column is DatePickerColumn)
+            (serializableColumn as SerializableCustomGridColumn).DateMappingName = (column as DatePickerColumn).DateMappingName;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-           options.SerializeSorting = false;
+5.Add the custom column in to known column types by overriding the [KnownTypes](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~KnownTypes.html) virtual method.
 
-           dataGrid.Serialize(file, options);
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : SerializationController
+{
+        public SerializationControllerExt(SfDataGrid dataGrid)
+            : base(dataGrid)
+        {
+        }
 
-       }
+    public override Type[] KnownTypes()
+    {
+        var types = base.KnownTypes();
+        var list = types.Cast<Type>().ToList();
+        list.Add(typeof(SerializableCustomGridColumn));
+        return list.ToArray();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-    }
+6.During deserialization, you can get the custom column settings from [SerializableGridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~GetGridColumn.html) virtual method.
+ 
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : SerializationController
+{
+        public SerializationControllerExt(SfDataGrid dataGrid)
+            : base(dataGrid)
+        {
+        }
 
-     catch (Exception)
+        protected override GridColumn GetGridColumn(SerializableGridColumn serializableColumn)
+        {
+            if (serializableColumn is SerializableCustomGridColumn)
+                return new DatePickerColumn();
+            return base.GetGridColumn(serializableColumn);
+        }
+}
+{% endhighlight %}
+{% endtabs %}
 
-     {                
+7.Now restore the custom column settings from SerializableGridColumn by overriding the [RestoreColumnProperties](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~RestoreColumnProperties.html) virtual method.
 
-     }
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : SerializationController
+{
+    public SerializationControllerExt(SfDataGrid dataGrid)
+        : base(dataGrid)
+    {
+    }
+
+    protected override void RestoreColumnProperties(SerializableGridColumn serializableColumn, GridColumn column)
+    {
+        base.RestoreColumnProperties(serializableColumn, column);
+        
+        if (column is DatePickerColumn)
+            (column as DatePickerColumn).DateMappingName = (serializableColumn as SerializableCustomGridColumn).DateMappingName;
+    }
 
 }
-
-private async void OnDeserializeDataGrid(object sender, RoutedEventArgs args)
-
-{
-
-    var dataGrid = args.Source as SfDataGrid;
-
-    if (dataGrid == null) return;
-
-    try
-
-    {
-
-       using (var file = File.Open("DataGrid.xml", FileMode.Open))
-
-       {
-
-          DeserializationOptions options = new DeserializationOptions();
-
-          options.DeserializeSorting = false;
-
-          dataGrid.Deserialize(file, options);
-
-       }
-
-    }
-
-    catch (Exception)
-
-    {
-
-    }
-
-}
-
 {% endhighlight %}
+{% endtabs %}
 
-The following screenshot displays the output.
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
 
+### Serializing template column content
 
+By default, you cannot serialize the template content in SfDataGrid. This is the default behavior during  Serialization and Deserialization operation.
 
-![](Features_images/Features_img196.png)
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+    <DataTemplate x:Key="TemplateColumn">
+        <Button Content="{Binding SupplierID}" />
+    </DataTemplate>
+</Application.Resources>
 
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="False"
+                       ItemsSource="{Binding Orders}">
 
+    <syncfusion:SfDataGrid.Columns>
 
-DataGrid with Serialization and Deserialization
-{:.caption}
-### SerializationOptions and DeserializationOptions
+        <syncfusion:GridTemplateColumn CellTemplate="{StaticResource cellTemplate}"
+                                       HeaderText="Order ID"
+                                       MappingName="OrderID"
+                                       SetCellBoundValue="True" />        
+    </syncfusion:SfDataGrid.Columns>
 
-To customize the serialization and deserialization process, you can use SerializationOptions and DeserializationOptions respectively. Following are the list of properties provided by these classes.
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
 
-### SerializationOptions
+If you want to serialize and deserialize  the template content , you have to reconstruct  the same template during deserialization in  [RestoreColumnProperties](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~RestoreColumnProperties.html) method.
 
-Property Table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th><th>
-Default Value</th></tr>
-<tr>
-<td>
-SerializeSorting</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize datagrid’s SortColumnDescriptions</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeGrouping</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize datagrid’s GroupColumnDescriptions</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeGroupSummaries</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize GroupSummaryRows</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeCaptionSummary</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize CaptionSummaryRow</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeTableSummaries</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize TableSummaryRows</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeFiltering</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize columns FilterPredicates</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeColumns</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize grid Columns</td><td>
-True</td></tr>
-<tr>
-<td>
-SerializeStackedHeaders</td><td>
-Boolean</td><td>
-Gets or sets the value that determines whether the method serialize StackedHeaderRows</td><td>
-True</td></tr>
-</table>
-
-DeserializationOptions
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th><th>
-Default Value</th></tr>
-<tr>
-<td>
-DeserializeSorting</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize datagrid’s SortColumnDescriptions</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeGrouping</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize datagrid’s GroupColumnDescriptions</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeGroupSummaries</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize GroupSummaryRows</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeCaptionSummary</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize CaptionSummaryRow</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeTableSummaries</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize TableSummaryRows</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeFiltering</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize columns FilterPredicates</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeColumns</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize grid Columns</td><td>
-True</td></tr>
-<tr>
-<td>
-DeserializeStackedHeaders</td><td>
-Boolean</td><td>
-Gets or sets a value that determines whether the method deserialize StackedHeaderRows</td><td>
-True </td></tr>
-</table>
-
-## Overriding SerializationController
-
-SerializationController is a public class that handles serialization and deserialization operations in SfDataGrid. DataContractSerializer is used in SerializationController to perform serialization and deserialization.By overriding SerializationController, you can customize serialization and deserialization operations. SerializationController copies the SfDataGrid and its inner class properties to SerializableDataGrid (This class is serialized only using DataContractSerializer). Similarly SerializableDataGrid, GridColumn properties that are to be serialized is copied into SerializableGridColumn. Also GroupColumnDescriptions, SortColumnDescriptions, StackedHeaders and etc., is copied to its corresponding serializable classes.
-
-SerializationController contains the following methods to perform serialization and deserialization operations.
-
-Methods table
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description</th></tr>
-<tr>
-<td>
-public virtual void Serialize(Stream stream, SerializationOptions serializeOptions)</td><td>
-Method used to serialize the SfDataGrid and exports its properties to given XML file.This method is useful while serializing derived data grid.</td></tr>
-<tr>
-<td>
-protected virtual SerializableDataGrid StoreGridSettings(SerializationOptions serializeOptions)</td><td>
-Called during serialization process to copy grid properties, sorting, filtering, grouping, etc.to SerializableDataGrid from SfDataGrid</td></tr>
-<tr>
-<td>
-protected virtual void StoreGridProperties(SerializableDataGrid serializableDataGrid)</td><td>
-Called during serialization process to copy grid properties to SerializableDataGrid.</td></tr>
-<tr>
-<td>
-protected virtual SerializableDataGrid GetSerializableDataGrid()</td><td>
-Called to get SfDataGrid instance while serializing grid. It is useful while serializing custom data grid. If you need to serialize the custom datagrid properties, you should add these properties to custom SerializableDataGrid class.</td></tr>
-<tr>
-<td>
-protected virtual SerializableGridColumn GetSerializableGridColumn(GridColumn column)</td><td>
-Called to get serializable grid column instance while serializing grid. It is useful while serializing custom column.</td></tr>
-<tr>
-<td>
-protected virtual SerializableFilterSettings StoreFilterPredicates(SfDataGrid dataGrid)</td><td>
-Called during serialization process to copy filter predicates to SerializableFilterSettings</td></tr>
-<tr>
-<td>
-protected virtual void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)</td><td>
-Called during serialization process to copy grid column properties to SerializableGridColumn</td></tr>
-<tr>
-<td>
-protected virtual SerializableColumns StoreGridColumns(SfDataGrid dataGrid)</td><td>
-Called during serialization process to copy grid columns to SerializableColumns</td></tr>
-<tr>
-<td>
-protected virtual SerializableStackedHeaderRow StoreGridStackedHeaderRow(StackedHeaderRow stackedHeaderRow)</td><td>
-Called during serialization process to copy grid stacked header row to SerializableStackedHeaderRow.</td></tr>
-<tr>
-<td>
-protected virtual SerializableGridSummaryRow StoreGridSummaryRow(GridSummaryRow gridSummaryRow)</td><td>
-Called during serialization process to copy grid summary row from SfDataGrid to SerializableGridSummaryRow</td></tr>
-<tr>
-<td>
-protected virtual SerializableGroupColumnDescriptions StoreGroupColumnDescriptions(SfDataGrid dataGrid)</td><td>
-Called during serialization process to copy group column descriptions from SfDataGrid to SerializableGroupColumnDescriptions</td></tr>
-<tr>
-<td>
-protected virtual SerializableSortColumnDescriptions StoreSortColumnDescriptions(SfDataGrid dataGrid)</td><td>
-Called during serialization process to copy sort column descriptions to SerializableSortColumnDescriptions.</td></tr>
-<tr>
-<td>
-public virtual void Deserialize(Stream stream, DeserializationOptions deserializeOptions)</td><td>
-Method used to deserialize the SfDataGrid. It reconstructs the DataGrid with the objects that are stored in the given XML file.This method is useful while deserializing derived data grid.</td></tr>
-<tr>
-<td>
-protected virtual void ReloadGrid(SerializableDataGrid dataGrid, DeserializationOptions deserializationOptions)</td><td>
-Called during deserialization process to restore grid properties from SerializableDataGrid  and reload the grid</td></tr>
-<tr>
-<td>
-protected virtual void UnWireSerializablePropertyEvents()</td><td>
-Called during serialization process to unwire SortColumnDescriptions, GroupColumnDescriptions collection changed, etc. event</td></tr>
-<tr>
-<td>
-protected virtual void RestoreGridSettings(SerializableDataGrid serializableDataGrid, SfDataGrid dataGrid, DeserializationOptions options)</td><td>
-Called during deserialization process to restore grid properties, sorting, filtering, grouping, etc. from SerializableDataGrid</td></tr>
-<tr>
-<td>
-protected virtual void RestoreGridProperties(SerializableDataGrid serializableDataGrid)</td><td>
-Called during deserialization process to copy grid properties from SerializableDataGrid</td></tr>
-<tr>
-<td>
-protected virtual void RestoreGridColumns(SerializableDataGrid serializableDataGrid)</td><td>
-Called during deserialization process to copy grid columns from SerializableDataGrid</td></tr>
-<tr>
-<td>
-protected virtual GridColumn GetGridColumn(SerializableGridColumn serializableColumn)</td><td>
-Called to get GridColumn instance while deserializing grid. It is useful while deserializing custom column. The returned grid column is added to datagrid columns collection while deserializing.</td></tr>
-<tr>
-<td>
-protected virtual void RestoreColumnProperties(SerializableGridColumn serializableColumn, GridColumn column)</td><td>
-Called during deserialization process to copy grid column properties from SerializableGridColumn</td></tr>
-<tr>
-<td>
-protected virtual void RestoreFilterPredicates(SerializableDataGrid serializableDataGrid)</td><td>
-Called during deserialization process to copy filter predicates from SerializableDataGrid</td></tr>
-<tr>
-<td>
-protected virtual StackedHeaderRow RestoreGridStackedHeaderRow(SerializableStackedHeaderRow serializableStackedHeaderRow)</td><td>
-Called during deserialization process to restore grid stacked header row from SerializableStackedHeaderRow</td></tr>
-<tr>
-<td>
-protected virtual GridSummaryRow RestoreGridSummaryRow(SerializableGridSummaryRow serializableGridSummaryRow)</td><td>
-Called during deserialization process to restore grid summary row from SerializableGridSummaryRow</td></tr>
-<tr>
-<td>
-protected virtual void RestoreGroupColumnDescriptions(SerializableDataGrid serializableDataGrid)</td><td>
-Called during deserialization process to restore group column descriptions from SerializableDataGrid</td></tr>
-<tr>
-<td>
-protected virtual void RestoreSortColumnDescriptions(SerializableDataGrid serializableDataGrid)</td><td>
-Called during deserialization process to restore sort column descriptions from SerializableDataGrid</td></tr>
-<tr>
-<td>
-protected virtual void WireSerializablePropertyEvents()</td><td>
-Called during Deserialization process to wire SortColumnDescriptions, GroupColumnDescriptions collection changed, etc. event</td></tr>
-<tr>
-<td>
-public virtual Type[] KnownTypes()</td><td>
-Called during serialization and deserialization operations. It is useful while using custom columns. If you want to serialize the columns, its types should be returned as a list</td></tr>
-<tr>
-<td>
-public virtual void Dispose()</td><td>
-Method used to dispose SerializationController</td></tr>
-</table>
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th><th>
-Default Value</th></tr>
-<tr>
-<td>
-Datagrid</td><td>
-SfDataGrid</td><td>
-Gets the SfDataGrid instance to copy properties from/to SerializableDataGrid</td><td>
-Null</td></tr>
-</table>
-
-The following code example illustrates to override methods and how to handle operations in SerializationController. SerializationControllerExt class is derived from SerializationController and you can assign this to existing SerializationController. SerializationControllerExt overrides existing one.
-
-
-{% highlight C# %}
-
-
-
-// Assign custom serialization controller to datagrid SerializationController
+{% tabs %}
+{% highlight c# %}
 
 this.dataGrid.SerializationController = new SerializationControllerExt(this.dataGrid);
 
-
-
-
-
-/// <summary>
-
-/// SerializationControllerExt class is the custom SerializationController
-
-/// </summary>
-
-
-
 public class SerializationControllerExt : SerializationController
-
-{ 
-
-   public SerializationControllerExt(SfDataGrid grid)
-
-            : base(grid)
-
-   {
-
-   }
-
-
-
-        /// <summary>
-
-        /// Store grid settings - properties, columns,   sortdescriptions,groupdescriptions, stacked headers, filter predicates, summaries
-
-        /// </summary>
-
-        /// <param name="serializeOptions">options for serializing grid</param>
-
-        /// <returns>SerializableDataGrid</returns>
-
-    protected override SerializableDataGrid StoreGridSettings(SerializationOptions         serializeOptions)
-
-        {
-
-            return base.StoreGridSettings(serializeOptions);
-
-        }
-
-
-
-        /// <summary>
-
-        /// Restore grid properties,columns,sortdescriptons,groupdescriptions,filter predicates,stacked headers,summaries
-
-        /// </summary>
-
-        /// <param name="serializableDataGrid">serializableDataGrid instance</param>
-
-        /// <param name="dataGrid">SfDataGrid</param>
-
-        /// <param name="options">DeserializationOptions</param>
-
-
-
-        protected override void RestoreGridSettings(SerializableDataGrid  serializableDataGrid, SfDataGrid dataGrid, DeserializationOptions options)
-
-        {
-
-            base.RestoreGridSettings(serializableDataGrid, dataGrid, options);
-
-        }
-
-    }
-{% endhighlight %}
-
-## How To
-
-### How to retain new columns when you deserialize SfDataGrid?
-
-By default, the columns that exist in the grid when you apply serialization alone are displayed after deserializing the grid. When you want to preserve the columns that currently exist in the grid while applying deserialization, but not in the layout while serialization, customize SerializationController to achieve this. The following code example illustrates how to customize SerializationController.
-
-
-{% highlight xaml %}
-
-
-
-<syncfusion:SfDataGrid Name="dataGrid"     Grid.Column="0"
-
-                                           AllowDraggingColumns="True"
-
-                                           AllowFiltering="True"
-
-                                           AutoGenerateColumns="False"
-
-                                           ColumnSizer="Star"
-
-                                           ItemsSource="{Binding ProductInfo}"
-
-                                           NavigationMode="Row"
-
-                                           ShowGroupDropArea="True">
-
-
-
-                        <syncfusion:SfDataGrid.Columns>
-
-                            <syncfusion:GridTextColumn HeaderText="Product ID"   MappingName="ProductID" />
-
-                            <syncfusion:GridTextColumn HeaderText="Product Name" MappingName="ProductName" />
-
-                            <syncfusion:GridTextColumn HeaderText="Quantity Per Unit" MappingName="QuantityPerUnit" />
-
-                            <syncfusion:GridTextColumn HeaderText="Price"
-
-                                                       MappingName="UnitPrice"
-
-                                                       TextAlignment="Right" />
-
-                            <syncfusion:GridTextColumn HeaderText="Units In Stock" MappingName="UnitsInStock" />
-
-                        </syncfusion:SfDataGrid.Columns>
-
-{% endhighlight %}
-
-After serialization, when new column is added to grid, it is not displayed during deserialization. 
-
-
-{% highlight C# %}
-
-
-
-// To add new unbound column at run time
-
-dataGrid.Columns.Add(new GridUnBoundColumn() { MappingName = "UnboundColumn", Expression = "2 * UnitPrice" });
-{% endhighlight %}
-
-The following screenshot illustrates the grid after deserialization.
-
-
-
-![](Features_images/Features_img197.png)
-
-
-
-DataGrid after Serialization and Deserialization
-{:.caption}
-You can overcome the above scenario by customizing the SerializationController and refer to the following code example that illustrates how to preserve the new unbound column during deserialization.
-
-
-{% highlight C# %}
-
-
-
-// Assigning custom serialization controller to datagrid SerializationController
-
-dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
-
-
-
-    /// <summary>
-
-    /// SerializationControllerExt class is the custom SerializationController
-
-    /// </summary>
-
-    public class SerializationControllerExt : SerializationController
-
+{
+    public SerializationControllerExt(SfDataGrid grid)
+        : base(grid)
     {
 
-        public SerializationControllerExt(SfDataGrid dataGrid)
-
-            : base(dataGrid)
-
-        {
-
-
-
-        }
-
-        /// <summary>
-
-        /// Restore grid columns from serializableDataGrid
-
-        /// </summary>
-
-        /// <param name="serializableDataGrid"></param>
-
-
-
-        protected override void RestoreGridColumns(SerializableDataGrid serializableDataGrid)
-
-        {
-
-            foreach (var serializableColumn in serializableDataGrid.Columns)
-
-            {
-
-                var column = GetGridColumn(serializableColumn);
-
-                RestoreColumnProperties(serializableColumn, column);
-
-                if (!this.Datagrid.Columns.Any(x =>  x.MappingName.Equals(column.MappingName)))
-
-                    this.Datagrid.Columns.Add(column);
-
-            }
-
-        }
-
     }
-{% endhighlight %}
-
-
-The following screenshot illustrates the output image after deserializing grid using custom serialization controller.
-
-![](Features_images/Features_img198.png)
-
-
-DataGrid after Serialization and Deserialization using custom serialization controller
-{:.caption}
-### How to serialize custom column in SfDataGrid
-
-By default, the grid columns are serialized during serialization of DataGrid. But when custom column is added in grid, it is not serialized. Since DataContractSerializer is used the custom column type has to be identified to serialize and deserialize the custom column. To serialize the custom column, you can override SerializationController. Refer to the following code example.
-
-
-{% highlight C# %}
-
-
-
-  public class DatePickerColumn : GridColumn
-
+        
+    protected override void RestoreColumnProperties(SerializableGridColumn serializableColumn, GridColumn column)
     {
-
-        public static readonly DependencyProperty DateMappingNameProperty = DependencyProperty.Register("DateMappingName",
-
-    typeof(string), typeof(DatePickerColumn));
-
-        public DatePickerColumn()
-
+        base.RestoreColumnProperties(serializableColumn, column);
+        if (column is GridTemplateColumn)
         {
-
-            SetCellType("DatePickerRenderer");
-
-        }
-
-        public string DateMappingName
-
-        {
-
-            get { return (string)GetValue(DateMappingNameProperty); }
-
-            set { SetValue(DateMappingNameProperty, value); }
-
-        }
-
-        protected override Freezable CreateInstanceCore()
-
-        {
-
-            return new DatePickerColumn();
-
-        }
-
-    }
-
-{% endhighlight %}
-
-Consider, the grid contains the following columns. Here DatePickerColumn is custom column.	
-
-
-{% highlight xaml %}
-
-
-
-<Syncfusion:SfDataGrid x:Name="_dataGrid"
-
-                               AutoGenerateColumns="False"
-
-                               ColumnSizer="Star"                              
-
-                               ItemsSource="{Binding Path=DataItems}>
-
-            <Syncfusion:SfDataGrid.Columns>
-
-
-
-                <Syncfusion:GridTextColumn AllowEditing="True" MappingName="ItemNumber"/>
-
-                <demo:DatePickerColumn AllowEditing="True"
-
-                                       DateMappingName="Date"
-
-                                       HeaderText="DatePickerColumn"
-
-                                       MappingName="Date" />
-
-            </Syncfusion:SfDataGrid.Columns>
-
-</Syncfusion:SfDataGrid>
-{% endhighlight %}
-
-
-During grid serialization, when you want to copy DatePickerColumn properties, you can create the SerializableCustomGridColumn (derived from SerializableGridColumn) class containing the properties as follows.
-
-
-{% highlight C# %}
-
-
-
-[DataContract(Name="SerializableCustomGridColumn")]
-
-public class SerializableCustomGridColumn : SerializableGridColumn
-
-{
-
-    [DataMember]
-
-    public string DateMappingName { get; set; }
-
-}
-
-{% endhighlight %}
-
-The following code illustrates how to override SerializationController to serialize custom column.
-
-
-{% highlight C# %}
-
-
-
-// Assigning custom serialization controller to datagrid SerializationController
-
-dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
-
-
-
-   /// <summary>
-
-   /// SerializationControllerExt class is the custom SerializationController
-
-   /// </summary>
-
-public class SerializationControllerExt : SerializationController
-
-{
-
-        public SerializationControllerExt(SfDataGrid dataGrid)
-
-            : base(dataGrid)
-
-        {
-
-        }
-
-       /// <summary>
-
-        /// Get grid column instance for deserialization
-
-        /// </summary>
-
-        /// <param name="serializableColumn">serializableColumn</param>
-
-        /// <returns>GridColumn</returns>
-
-        protected override GridColumn GetGridColumn(SerializableGridColumn serializableColumn)
-
-        {
-
-            if (serializableColumn is SerializableCustomGridColumn)
-
-                return new DatePickerColumn();
-
-            return base.GetGridColumn(serializableColumn);
-
-        }
-
-
-
-        /// <summary>
-
-        /// Get serializable grid column instance
-
-        /// </summary>
-
-        /// <param name="column">grid column</param>
-
-        /// <returns>SerializableGridColumn</returns>
-
-
-
-        protected override SerializableGridColumn GetSerializableGridColumn(GridColumn column)
-
-        {
-
-            if (column.MappingName == "Date")
-
+            if (column.MappingName == "OrderID")
             {
-
-                return new SerializableCustomGridColumn();
-
+                column.CellTemplate = App.Current.Resources["TemplateColumn"] as DataTemplate;
             }
-
-            return base.GetSerializableGridColumn(column);
-
         }
-
-
-
-
-
-        /// <summary>
-
-        /// Store Grid Column Properties to serializable grid column
-
-        /// </summary>
-
-        /// <param name="column">grid column</param>
-
-        /// <param name="serializableColumn">serializableColumn</param>
-
-
-
-        protected override void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)
-
-        {
-
-            base.StoreGridColumnProperties(column, serializableColumn);
-
-            if (column is DatePickerColumn)
-
-                (serializableColumn as SerializableCustomGridColumn).DateMappingName = (column as DatePickerColumn).DateMappingName;
-
-        }
-
-
-
-        /// <summary>
-
-        /// Restore grid column properties from SerializableGridColumn
-
-        /// </summary>
-
-        /// <param name="serializableColumn">serializableColumn</param>
-
-        /// <param name="column">grid column</param>
-
-        protected override void RestoreColumnProperties(SerializableGridColumn serializableColumn, GridColumn column)
-
-        {
-
-            base.RestoreColumnProperties(serializableColumn, column);
-
-            if (column is DatePickerColumn)
-
-                (column as DatePickerColumn).DateMappingName = (serializableColumn as SerializableCustomGridColumn).DateMappingName;
-
-        }
-
-        /// <summary>
-
-        /// Get known types of serializable columns for serialization and deserialization
-
-        /// </summary>
-
-        /// <returns></returns>
-
-        public override Type[] KnownTypes()
-
-        {
-
-            var types = base.KnownTypes();
-
-            var list = types.Cast<Type>().ToList();
-
-            list.Add(typeof(SerializableCustomGridColumn));
-
-            return list.ToArray();
-
-        }
-
+    }
 }
 {% endhighlight %}
+{% endtabs %}
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
