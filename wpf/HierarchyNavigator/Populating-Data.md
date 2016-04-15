@@ -286,7 +286,7 @@ The XML displayed below is used in this example (attached in the sample project 
 
 <categories>
 
-  <category name="Synfusion">
+  <category name="Syncfusion">
 
     <category name="User Interface">
 
