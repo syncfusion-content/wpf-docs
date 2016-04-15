@@ -104,14 +104,14 @@ Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 ConnectionHeadPort</td><td>
-Gets or sets the head port of the connection.While dpecifying the CoonectionHeadPort, the node containing the port should be specified as the HeadNode of the connection.Default value is Null.</td><td>
+Gets or sets the head port of the connection.While specifying the ConnectionHeadPort, the node containing the port should be specified as the HeadNode of the connection.Default value is Null.</td><td>
 Dependency property</td><td>
 ConnectionPort</td><td>
 No</td></tr>
 <tr>
 <td>
 ConnectionTailPort</td><td>
-Gets or sets the head port of the connection.While dpecifying the CoonectionTailPort, the node containing the port should be specified as the TailNode of the connection.Default value is Null.</td><td>
+Gets or sets the head port of the connection.While specifying the ConnectionTailPort, the node containing the port should be specified as the TailNode of the connection.Default value is Null.</td><td>
 Dependency property</td><td>
 ConnectionPort</td><td>
 No</td></tr>
@@ -474,7 +474,7 @@ The connection port will always be hidden, when PortVisibility property of the N
 
 ### AlwaysVisible
 
-ConnectionPort will be visible always, when PortVisiblity property of the Node is set to AlwaysVisible.
+ConnectionPort will be visible always, when PortVisibility property of the Node is set to AlwaysVisible.
 
 I> Changes: For versions 10.2 and later, the type of PortVisibility property of nodes has been changed from ‘Visibility’ to ’PortVisibility‘ Enum.
 

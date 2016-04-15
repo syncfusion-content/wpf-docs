@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential Diagram WPF is an extensible and high-performance diagramming framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
+Essential Diagram WPF is an extensible and high-performance diagramming Framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
 
 N> A node graph is a structure consisting of nodes connected to each other by lines referred to as edges.
 
@@ -68,7 +68,7 @@ _Swim Lane Diagram_
 
 
 
-* Essential Diagram WPF allows you to create a Data Flow Diagram, A data-flow diagram (DFD) is a graphical representation of the "flow" of data through an information system. DFDs can also be used for the visualization of data processing.
+* Essential Diagram WPF allows you to create a Data Flow Diagram, A data-flow diagram (DFD) is a graphical representation of the "flow" of data through an information system. DFD's can also be used for the visualization of data processing.
 
 
 
@@ -139,7 +139,7 @@ Only Straight and Orthogonal Connector type supports line bridging.
 * Automatic Layout Management - Essential Diagram WPF provides the ability to set automatic layout for the nodes. Several layout types have been provided. They are:
 * DirectedTree Layout - The DirectedTree layout arranges nodes in a tree-like structure. This layout can be applied to any diagram that is composed of a directed tree graph with unique root and child nodes.
 * HierarchicalTree Layout - The HierarchicalTree layout also arranges nodes in a tree-like structure; however, unlike the directed tree layout, the nodes in hierarchical layout may have multiple parents hence avoiding the need to specify the root.
-* RadialTree Layout - The Radial-TreeLayoutis a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The RadialTreeLayoutManager arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy.
+* RadialTree Layout - The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The RadialTreeLayoutManager arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy.
 * Table Layout - The Table layout arranges the nodes in a tabular structure based on specified intervals between them. The layout depends upon the number of nodes in each row and column specified. The nodes are assigned rows and columns based on the order in which they are added to the model and based on the maximum nodes allowed in that row and column. 
 * Serialization - The Diagram Page can be saved in XAML format for future use. The user can then load the saved page into the current view and start editing the page.
 * Event Mechanisms - Several events have been provided for nodes and connections.

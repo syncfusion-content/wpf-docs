@@ -247,7 +247,7 @@ CollectionExt</td><td>
 No</td></tr>
 <tr>
 <td>
-OutNeighbours</td><td>
+OutNeighbors</td><td>
 Gets the collection of adjacent nodes connected to this node by an outgoing edge (i.e., all nodes "pointed" to by this one)</td><td>
 CLR property</td><td>
 CollectionExt</td><td>
@@ -268,7 +268,7 @@ CollectionExt</td><td>
 No</td></tr>
 <tr>
 <td>
-InNeighbours</td><td>
+InNeighbors</td><td>
 Gets the collection of all adjacent nodes connected to this node by an incoming edge (i.e., all nodes that "point" to this one).</td><td>
 CLR property</td><td>
 CollectionExt</td><td>
@@ -282,7 +282,7 @@ CollectionExt</td><td>
 No</td></tr>
 <tr>
 <td>
-Neighbours</td><td>
+Neighbors</td><td>
 Gets an iterator over all nodes connected to this node.</td><td>
 CLR property</td><td>
 CollectionExt</td><td>
@@ -1268,7 +1268,7 @@ nodeobject.AllowRotate = False
 
 
 {% endhighlight   %}
-Rotation through Codebehind
+Rotation through Code behind
 
 Rotate angle property enables the rotation of the selected object with a specified angle. It enables the support to rotate all the selected Nodes.
 
@@ -2233,7 +2233,7 @@ Node can be selected at run time just by clicking on the node.
 
 
 
-Node before selecion
+Node before selection
 {:.caption}
 
 
@@ -2242,7 +2242,7 @@ Node before selecion
 
 
 
-Node after selecion
+Node after selection
 {:.caption}
 
 
@@ -2490,10 +2490,10 @@ Properties
 Property</th><th>
 Description</th><th>
 Type</th><th>
-Datatype</th></tr>
+Data type</th></tr>
 <tr>
 <td>
-DirectionBehaviourEnabled</td><td>
+DirectionBehaviorEnabled</td><td>
 Sets or gets the DirectionBehaviorEnabled value.</td><td>
 Dependency property</td><td>
 Boolean</td></tr>
@@ -2520,11 +2520,11 @@ Enum</td></tr>
 
 ### Adding Customization of Node in an Application
 
-#### DirectionBehaviourEnabled
+#### DirectionBehaviorEnabled
 
 The DirectionBehaviorEnabled property restricts the node movement to only one direction at a time.
 
-If the DirectionBehaviourEnabled property is set to ‘True’, the node is dragged only one direction; in which the node is initially dragged.
+If the DirectionBehaviorEnabled property is set to ‘True’, the node is dragged only one direction; in which the node is initially dragged.
 
 If the node is once dragged in X-direction, then the node can move only in X-direction for a while. Likewise, if the node is once dragged in Y-direction then the node can be moved only in Y-direction for a while.
 
@@ -2536,7 +2536,7 @@ Hence, the direction is decided at the beginning of each drag.  By default, this
 
 DiagramView View1 = new DiagramView();
 
-View1.DirectionBehaviourEnabled = true; 
+View1.DirectionBehaviorEnabled = true; 
 
 {% endhighlight   %}
 {% highlight vbnet  %}
@@ -2545,7 +2545,7 @@ View1.DirectionBehaviourEnabled = true;
 
 Dim view As New DiagramView ()
 
-View1.DirectionBehaviourEnabled = True
+View1.DirectionBehaviorEnabled = True
 
 
 {% endhighlight  %}
@@ -2557,7 +2557,7 @@ This property can be disabled by setting it to ‘false’.
 
 DiagramView View1 = new DiagramView();
 
-View1.DirectionBehaviourEnabled = false; 
+View1.DirectionBehaviorEnabled = false; 
 
 {% endhighlight   %}
 {% highlight vbnet  %}
@@ -2566,7 +2566,7 @@ View1.DirectionBehaviourEnabled = false;
 
 Dim view As New DiagramView ()
 
-View1.DirectionBehaviourEnabled = False
+View1.DirectionBehaviorEnabled = False
 {% endhighlight   %}
 
 ### TranslateRailsMode
@@ -3227,7 +3227,7 @@ No</td></tr>
 ParentNode</td><td>
 Gets or sets the parent of the node.</td><td>
 CLR property</td><td>
-Ishape</td><td>
+IShape</td><td>
 No</td></tr>
 <tr>
 <td>

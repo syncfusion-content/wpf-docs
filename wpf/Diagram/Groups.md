@@ -722,7 +722,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
    Selecting a Group
    {:.caption}
 
-2. Invoke the Ungroup command. This ungroups the nodes.
+2. Invoke the Ungroup command. This ungroup the nodes.
 
    As soon as the group is ungrouped, the selection rectangle disappears indicating that the group has been ungrouped.
 

@@ -416,7 +416,7 @@ Palette with Groups and Filters removed
 
 ### Symbol Groups
 
-A SymbolPalettegroup is a collection of SymbolPalette items. It is used to group the items in the SymbolPalette control based on classifications provided. The SymbolPalette group can be added to the SymbolPalette using the SymbolGroups property.  The filter index for the new groups should always start from 6 as the first five indices are predefined for the existing groups.
+A SymbolPaletteGroup is a collection of SymbolPalette items. It is used to group the items in the SymbolPalette control based on classifications provided. The SymbolPalette group can be added to the SymbolPalette using the SymbolGroups property.  The filter index for the new groups should always start from 6 as the first five indices are predefined for the existing groups.
 
 Use the following code to add a group to SymbolPalette:
 {% highlight c# %}
@@ -687,7 +687,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
    * Outline
    * Dash array
    * Shadow
-   * Softedges
+   * Soft edges
    * Glow visual effect
 
    The node label can also be customized.
@@ -747,7 +747,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
    
 ### SymbolPalette Item
 
-SymbolPaletteitems are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
+SymbolPaletteItems are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
 
 The Name property of the SymbolPaletteItem can be used to refer to the custom item being added in the NodeDrop event. The name of the SymbolPaletteItem becomes the name of the node.
 
@@ -852,11 +852,11 @@ Essential Diagram provides an add-on for creating SymbolPaletteItem’s content.
 
 To enable this you need to add the Syncfusion.Diagram.SymbolExporter.dll in the Extension folder.
 
-When Micorsoft Expression Blend is installed before installing Essential Studio, the exporter assembly will automatically be placed in the Extensions folder. 
+When Microsoft Expression Blend is installed before installing Essential Studio, the exporter assembly will automatically be placed in the Extensions folder. 
 
-When Microsoft Expression Blend is installed after installing Essential Studio, then you need to run the SyncfusionExpressionBlendAddin exe, to place assembly in the correct location.
+When Microsoft Expression Blend is installed after installing Essential Studio, then you need to run the SyncfusionExpressionBlendAddins EXE, to place assembly in the correct location.
 
-The SyncfusionExpressionBlendAddin exe is available in the following location:
+The SyncfusionExpressionBlendAddins EXE is available in the following location:
 
 [$Essential Studio]\[$Current Version]\Utilities\Diagram\WPF
 
@@ -935,7 +935,7 @@ To Create SymbolPaletteItem Content
     Save Dialog Box
 	{:.caption}
 
-16. The selected part will be exported as the SymbolPalleteItem content.
+16. The selected part will be exported as the SymbolPaletteItem content.
 
     The exported file can be imported in SymbolPalette. To import symbols from XAML file, refer to the SymbolPaletteSerialization. 
     
@@ -1560,13 +1560,13 @@ TryCast(customs.SymbolGroups(0), SymbolPaletteGroup).Items.Add(custom)
 {% endhighlight  %}
 When you drag and drop the custom SymbolPaletteItem, the content that is assigned in the CloneContent method is applied to the content of the dropped item.
 
-Thereby, the performance of dragging the SymbolpaletteItem is improved by 40%. If the default base method is returned in the CloneContent method, the default content is dragged and dropped.
+Thereby, the performance of dragging the SymbolPaletteItem is improved by 40%. If the default base method is returned in the CloneContent method, the default content is dragged and dropped.
 
 ## SymbolPalette Serialization
 
 Serialization is the process of saving and retrieving the SymbolPalette groups and items. Essential DiagramWPF supports saving the SymbolPalette as an XAML file. This load and save feature allows you to save the SymbolPalette for future use. You can continue working on their page by loading the appropriate XAML file.
 
-SymbolPaletteSerialization feature provides an option to save and load the SymbolPalette, SymbolPalette groups, elements and items in diagram control. So any item can be customised and imported onto the SymbolPalette.
+SymbolPaletteSerialization feature provides an option to save and load the SymbolPalette, SymbolPalette groups, elements and items in diagram control. So any item can be customized and imported onto the SymbolPalette.
 
 * User can easily Save/Load the SymbolPalette
 *  User can Save/Load the SymbolPaletteGroup
@@ -1588,42 +1588,42 @@ Reference links </th></tr>
 <tr>
 <td>
 SaveSymbolPalette</td><td>
-Displays the save dialog box to save the entire SymbolPallete(including all SymbolPalette groups) into XAML file.</td><td>
+Displays the save dialog box to save the entire SymbolPalette(including all SymbolPalette groups) into XAML file.</td><td>
 NA </td><td>
 Void</td><td>
 NA </td></tr>
 <tr>
 <td>
 LoadSymbolPalette</td><td>
-The existing SymbolPallete groups will be cleared and new groups will be added from selected Xaml file.</td><td>
+The existing SymbolPalette groups will be cleared and new groups will be added from selected XAML file.</td><td>
 NA </td><td>
 Void</td><td>
 NA </td></tr>
 <tr>
 <td>
 SaveSymbolPaletteGroup</td><td>
-Saves the Symbol Palette Group into Xaml file using the given  SymbolPaletteGroup parameter. </td><td>
+Saves the Symbol Palette Group into XAML file using the given  SymbolPaletteGroup parameter. </td><td>
 SymbolPaletteGroup </td><td>
 Void</td><td>
 NA </td></tr>
 <tr>
 <td>
 LoadSymbolPaletteGroup</td><td>
-Displays the Load Dialogue Box to load the Symbol Palette Group from the selected Xaml file.</td><td>
+Displays the Load Dialog Box to load the Symbol Palette Group from the selected XAML file.</td><td>
 NA </td><td>
 Void</td><td>
 NA </td></tr>
 <tr>
 <td>
 SaveSymbolPaletteItem</td><td>
-Saves the Symbol Palette Item into Xaml file using the given SymbolPaletteItem parameter.</td><td>
+Saves the Symbol Palette Item into XAML file using the given SymbolPaletteItem parameter.</td><td>
 SymbolPaletteItem </td><td>
 Void</td><td>
 NA </td></tr>
 <tr>
 <td>
 LoadSymbolPaletteItem</td><td>
-Loads the SymbolPalette Item from the Xaml file. The Items are loaded in any given Symbol Palette Group using the SymbolPaletteGroup parameter. </td><td>
+Loads the SymbolPalette Item from the XAML file. The Items are loaded in any given Symbol Palette Group using the SymbolPaletteGroup parameter. </td><td>
 SymbolPaletteGroup </td><td>
 Void</td><td>
 NA </td></tr>

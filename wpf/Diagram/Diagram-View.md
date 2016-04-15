@@ -24,14 +24,14 @@ Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsZoomEnabled</td><td>
-Gets or sets a value indicating whether zoom is enabled or not.Default valueis True.</td><td>
+Gets or sets a value indicating whether zoom is enabled or not.Default value is True.</td><td>
 Dependency property</td><td>
 Boolean(True/False)</td><td>
 No</td></tr>
 <tr>
 <td>
 IsPanEnabled</td><td>
-Gets or sets a value indicating whether pan is enabled or not.Default valueis False.</td><td>
+Gets or sets a value indicating whether pan is enabled or not.Default value is False.</td><td>
 Dependency property</td><td>
 Boolean(True/False)</td><td>
 No</td></tr>
@@ -275,7 +275,7 @@ The drawing area has many properties that can be used to customize a view.
 ## Create Rulers
 
 
-Rulers display the coordinates of elements on the diagram page. Negative label values get displayed on the ruler in case the page is panned to the right side. On Zooming, the ruler values get adjusted accordingly, to match with the current Zoom level. At any point, the ruler value always indicates the exact coordinates of the page and its elements. So when the page is zoomed, the interval values get halved or doubled depending upon the zoom level. By default, labels of the major lines in rulers will represent the pixel values using a label when there is a change in DigaramPage’s MeasurementUnit. The ruler and the Label will be updated so that the label indicates the respective unit values.
+Rulers display the coordinates of elements on the diagram page. Negative label values get displayed on the ruler in case the page is panned to the right side. On Zooming, the ruler values get adjusted accordingly, to match with the current Zoom level. At any point, the ruler value always indicates the exact coordinates of the page and its elements. So when the page is zoomed, the interval values get halved or doubled depending upon the zoom level. By default, labels of the major lines in rulers will represent the pixel values using a label when there is a change in Diagram Page’s MeasurementUnit. The ruler and the Label will be updated so that the label indicates the respective unit values.
 
 Panning, Zooming, MeasurementUnits are explained in later part of this documentation.
 
@@ -884,7 +884,7 @@ diagramView.IsPageEditable = True
 
 ## Clear the Selection List on Right-Click
 
-By default, the selection list can be cleared by right-clicking on the diagram page. This clearing can be enabled or disabled using the ClearSelectionOnRightClick property.
+By default, the selection list can be cleared by right-clicking on the diagram page. This clearing can be enabled or disabled using the `ClearSelectionOnRightClick` property.
 
 Properties
 
@@ -1339,7 +1339,7 @@ Features Demo
 
 Virtualization is the process of loading the diagram page elements that are available in the visible area of the diagram control, i.e page elements that lie within the viewport of the ScrollViewer will be in loaded state and the rest will not be loaded until they come into view.
 
-This feature gives optimizable performance while loading and dragging items to diagram control when many Nodes and LineConnectors are added in the diagram page. 
+This feature gives optimizes performance while loading and dragging items to diagram control when many Nodes and LineConnectors are added in the diagram page. 
 
 ### Use Case Scenarios
 

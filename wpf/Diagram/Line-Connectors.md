@@ -85,7 +85,7 @@ No</td></tr>
 <tr>
 <td>
 ConnectorType</td><td>
-Gets or sets the connector type to be used. Three values namely Othogonal, Straight and Bezier can be specified. Default Value: ConnectorType.Orthogonal</td><td>
+Gets or sets the connector type to be used. Three values namely Orthogonal, Straight and Bezier can be specified. Default Value: ConnectorType.Orthogonal</td><td>
 Dependency property</td><td>
 ConnectorType.OrthogonalConnectorType.BezierConnectorType.Straight</td><td>
 No</td></tr>
@@ -218,14 +218,14 @@ No</td></tr>
 <tr>
 <td>
 FirstSegmentLength</td><td>
-Gets or sets the FirstSegmentLength of the Orthogonal Lineconnector </td><td>
+Gets or sets the FirstSegmentLength of the Orthogonal LineConnector </td><td>
 Dependency Property</td><td>
 double</td><td>
 No</td></tr>
 <tr>
 <td>
 LastSegmentLength</td><td>
-Gets or sets FirstSegmentLength of the Orthogonal Lineconnector</td><td>
+Gets or sets FirstSegmentLength of the Orthogonal LineConnector</td><td>
 Dependency Property </td><td>
 double</td><td>
 No</td></tr>
@@ -591,7 +591,7 @@ N> If a node is not hit while making a connection, then no connector gets added.
 
 The connector's path geometry is dynamically created based on the start and end points and the connector type.
 
-It is also possible to drag-and-drop line connectors from the SymbolPalette. Three shapes of the line connectors have been added in a group named “Connectors”. The desired line can be dragged onto the page. Initially, the headnode and the tail node will be null. The steps to be followed to add a line connector from SymbolPalette are as follows:
+It is also possible to drag-and-drop line connectors from the SymbolPalette. Three shapes of the line connectors have been added in a group named “Connectors”. The desired line can be dragged onto the page. Initially, the head node and the tail node will be null. The steps to be followed to add a line connector from SymbolPalette are as follows:
 
 1. Drag the desired line connector onto the page.
 
@@ -968,12 +968,12 @@ NA </td></tr>
 
 Customizing Arc Line Connector type
 
-Use the ArcHeight and the ArcDirection__property__of ConnectorBase to customize the hieght and direction of the Arc. 
+Use the ArcHeight and the ArcDirection__property__of ConnectorBase to customize the height and direction of the Arc. 
 
 * ArcHeight – Gets or Sets the height of the Arc.
 * ArcDirection – Gets or Sets the direction of the Arc
 
-Following code illustrates how to customize the hieght and direction of the Arc:
+Following code illustrates how to customize the height and direction of the Arc:
 
 {% highlight c#  %}
 
@@ -1646,7 +1646,7 @@ No</td></tr>
 TailDecoratorShape</td><td>
 Gets or sets the head decorator shape of the connection.Four values namely None, Arrow , Diamond and Circle can be specified.Default value: TailDecoratorShape.Arrow</td><td>
 CLR property</td><td>
-* DecoratorShape.None* DecoratorShape.Arrow* DecoratorShape.Diamond* DecoratorShape.Circle* DecoratorShape.Custom stom<br></td><td>
+* DecoratorShape.None* DecoratorShape.Arrow* DecoratorShape.Diamond* DecoratorShape.Circle* DecoratorShape.Custom<br></td><td>
 No</td></tr>
 <tr>
 <td>
@@ -1665,14 +1665,14 @@ No</td></tr>
 <tr>
 <td>
 CustomHeadDecoratorStyle</td><td>
-Provides option for Custom Head Decorator Style for Lineconnector</td><td>
+Provides option for Custom Head Decorator Style for LineConnector</td><td>
 Style</td><td>
 Dependency Property</td><td>
 No</td></tr>
 <tr>
 <td>
 CustomTailDecoratorStyle</td><td>
-Provides option for Custom Tail Decorator Style for Lineconnector</td><td>
+Provides option for Custom Tail Decorator Style for LineConnector</td><td>
 Style</td><td>
 Dependency Property</td><td>
 No</td></tr>
@@ -2090,21 +2090,21 @@ No</td></tr>
 <tr>
 <td>
 DecoratorOffset</td><td>
-Gets or sets DecoratorOffset for the SegementDecarator</td><td>
+Gets or sets DecoratorOffset for the SegmentDecorator</td><td>
 Property</td><td>
 Double</td><td>
  No</td></tr>
 <tr>
 <td>
 DecoratorShape</td><td>
-Gets or sets DecoratorShape for the SegementDecarator</td><td>
+Gets or sets DecoratorShape for the SegmentDecorator</td><td>
 Property</td><td>
 DecoratorShape</td><td>
 No</td></tr>
 <tr>
 <td>
 CustomDecoratorStyle</td><td>
-Gets or sets CustomDecoratorStylefor the SegementDecarator</td><td>
+Gets or sets CustomDecoratorStyle for the SegmentDecorator</td><td>
 Property</td><td>
 Style</td><td>
 No</td></tr>
@@ -2726,7 +2726,7 @@ Reference links</th></tr>
 <tr>
 <td>
 FirstSegmentOrientation</td><td>
-Gets or sets a value to orient the FirstSegement.Default Value is Auto</td><td>
+Gets or sets a value to orient the FirstSegment.Default Value is Auto</td><td>
 Dependency property</td><td>
 SegmentOrientation.AutoSegmentOrientation.HorizontalSegmentOrientation.Vertical<br></td><td>
 NA</td></tr>
@@ -2833,7 +2833,7 @@ Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsLabelEditable</td><td>
-Gets or sets a value indicating whether line’s label that can be edited or not. Default valueis True.</td><td>
+Gets or sets a value indicating whether line’s label that can be edited or not. Default value is True.</td><td>
 Dependency property</td><td>
 Boolean (true/ false)</td><td>
 No</td></tr>
@@ -3329,7 +3329,7 @@ When the values are given the position of the label will be exactly at the point
 
 Set the LabelAngle for LineConnector
 
-The labels rotate when values are given for the lable angle.
+The labels rotate when values are given for the label angle.
 {% highlight c#  %}
 
 
@@ -3990,7 +3990,7 @@ Property
 Property</th><th>
 Description </th><th>
 Type</th><th>
-Datatype</th><th>
+Data type</th><th>
 Reference links </th></tr>
 <tr>
 <td>
@@ -4076,7 +4076,7 @@ Property
 Property</th><th>
 Description </th><th>
 Type</th><th>
-Datatype</th><th>
+Data type</th><th>
 Reference links </th></tr>
 <tr>
 <td>

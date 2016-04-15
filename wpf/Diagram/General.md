@@ -35,7 +35,7 @@ Click and drag the desired node for moving nodes from one position to another.. 
 To move the connector, follow these steps.
 
 * Click on the connector to be moved.
-* An adorner will be displayed on the head and the tail decorators which indicatesthe selection of the connector.
+* An adorner will be displayed on the head and the tail decorators which indicates the selection of the connector.
 * Now click and drag the desired decorator shape and drop it on the node to which you want to connect.
 
 
@@ -79,7 +79,7 @@ Brush</td><td>
 No</td></tr>
 <tr>
 <td>
-LabelBakground</td><td>
+LabelBackground</td><td>
 Gets or sets the background of the label. Default value is White.</td><td>
 Dependency property</td><td>
 Brush</td><td>
@@ -136,7 +136,7 @@ No</td></tr>
 </table>
 
 
-The following code exampleillustrates the implementation of the properties mentioned in the table above.
+The following code example illustrates the implementation of the properties mentioned in the table above.
 {% highlight c# %}
 
 

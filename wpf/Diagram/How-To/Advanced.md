@@ -13,7 +13,7 @@ documentation: ug
 
 This section answers the following questions that are in an advanced level, meant for experts.
 
-## Animate the Dodes in the Diagram
+## Animate the Nodes in the Diagram
 
 You can perform many kinds of animations on nodes by using the double animation. Rotation and Translation are some of the basic operations performed on the nodes. You can use double animation to perform these operations on the node in a specific pattern.
 
@@ -163,7 +163,7 @@ rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation)
 
 ## Print DiagramPage in Uniform Print Mode Using Framework Print Dialog
 
-DiagramPage can also be printed using Framework PrintDialog instead of using syncfusion DiagramControlPrintPreview Dialog, as shown in the following code example.
+DiagramPage can also be printed using Framework PrintDialog instead of using Syncfusion DiagramControlPrintPreview Dialog, as shown in the following code example.
 
 {% highlight c# %}
 
@@ -447,14 +447,14 @@ Accepted Value</th><th>
 Any other dependencies/ sub-properties associated</th></tr>
 <tr>
 <td>
-LabelHorizontalTextAllignment</td><td>
+LabelHorizontalTextAlignment</td><td>
 Specifies the Horizontal Text alignment of the Label. </td><td>
 Dependency property</td><td>
 HorizontalAlignment.CenterHorizontalAlignment.LeftHorizontalAlignment.RightHorizontalAlignment.Stretch;</td><td>
 No</td></tr>
 <tr>
 <td>
-LabelVerticalTextAllignment</td><td>
+LabelVerticalTextAlignment</td><td>
 Specifies the Vertical Text alignment of the Label.</td><td>
 Dependency property</td><td>
 VerticalAlignment.Center;VerticalAlignment.Top;VerticalAlignment.Bottom;VerticalAlignment.Stretch;</td><td>
@@ -462,7 +462,7 @@ No</td></tr>
 </table>
 
 
-The following code snippet depicts the behavior of LabelHorizontalTextAllignment and LabelVerticalTextAllignment.
+The following code snippet depicts the behavior of LabelHorizontalTextAlignment and LabelVerticalTextAlignment.
 {% highlight c# %}
 
 
@@ -482,7 +482,7 @@ node.LabelVerticalTextAlignment = VerticalAlignment.Top;
 
 
 
-LabelAllignment
+LabelAlignment
 {:.caption}
 
 ##  Label Resizer
@@ -530,7 +530,7 @@ node.Label = "LabelEditor";
 
 
 
-LableEditor for Node
+LabelEditor for Node
 {:.caption}
 
 The following code example is used to enable LabelEditor for Connectors.
