@@ -525,8 +525,8 @@ By default, you cannot serialize the template content in SfDataGrid. This is the
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-    <DataTemplate x:Key="TemplateColumn">
-        <Button Content="{Binding SupplierID}" />
+    <DataTemplate x:Key="cellTemplate">
+        <Button Content="{Binding Value}" />
     </DataTemplate>
 </Application.Resources>
 
@@ -568,7 +568,7 @@ public class SerializationControllerExt : SerializationController
         {
             if (column.MappingName == "OrderID")
             {
-                column.CellTemplate = App.Current.Resources["TemplateColumn"] as DataTemplate;
+                column.CellTemplate = App.Current.Resources["cellTemplate"] as DataTemplate;
             }
         }
     }
