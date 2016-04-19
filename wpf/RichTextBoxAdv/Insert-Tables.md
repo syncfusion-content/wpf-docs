@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Insert Tables| RichTextBoxAdv | Wpf | Syncfusion
 description: insert tables
