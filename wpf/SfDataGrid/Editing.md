@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | SfDataGrid | WPF | Syncfusion
-description: editing
+title: Editing support in SfDataGrid
+description: How to edit the data in each cell of SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
