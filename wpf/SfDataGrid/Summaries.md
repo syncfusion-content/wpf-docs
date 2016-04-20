@@ -712,7 +712,7 @@ You can calculate the summary values based on custom logic using [GridSummaryCol
 
 ### Implementing custom aggregate
 
-1. Create custom aggregate class by deriving from [ISummaryAggregate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ISummaryAggregate.html") interface.
+1. Create custom aggregate class by deriving from [ISummaryAggregate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ISummaryAggregate.html) interface.
 
 2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
  
