@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential SfHeatMap for WPF.
-description: Getting started walk through to create tabular data values as gradient colors instead of numbers. Low and high values are different colors with different gradients.
+description: Getting started walk through to create heatmap and mapping data source and colors.  
 platform: wpf
 control: SfHeatMap
 documentation: ug
@@ -70,7 +70,7 @@ public class Products : ObservableCollection<Product>
 
 Populate product information in a collection
 
-{% highlight c# %}
+{% highlight xaml %}
 
 <local:Products x:Key="productsData">
     <local:Product ProductName="Alice Mutton" Y2007="3" Y2008="4" Y2009="3" Y2010="4" Y2011="10" 
@@ -105,7 +105,7 @@ Populate product information in a collection
 
 Now data is ready, next we need to configure data source and map rows and columns to visualize.
 
- 1. Prepare ItemsMapping add it in resource.
+* Prepare ItemsMapping add it in resource.
 
 {% highlight xaml %}
 
@@ -129,7 +129,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 {% endhighlight %}
 
- 2. Set items source and mapping
+* Set items source and mapping
 
 {% highlight xaml %}
 
@@ -139,7 +139,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 {% endhighlight %}
 
- 3. This will show a grid with data as in following image.
+* This will show a grid with data as in following image.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
@@ -147,7 +147,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 Next we can configure color range for these values using color mapping
 
- 1. Configure items mapping based on items source.
+* Configure items mapping based on items source.
 
 {% highlight xaml %}
 
@@ -158,7 +158,7 @@ Next we can configure color range for these values using color mapping
 
 {% endhighlight %}
 
- 2. Set ColorMapping
+* Set ColorMapping
 
 {% highlight xaml %}
 
@@ -168,7 +168,7 @@ Next we can configure color range for these values using color mapping
 
 {% endhighlight %}
 
- 3. This will show the grid data with color based on the range given.
+* This will show the grid data with color based on the range given.
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
