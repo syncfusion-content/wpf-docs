@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export Chart as Image  | wpf | Syncfusion
-description: export chart as image
+title: Exporting Chart as image.
+description: Export chart as image
 platform: wpf
 control: Chart (Classic)
 documentation: ug
