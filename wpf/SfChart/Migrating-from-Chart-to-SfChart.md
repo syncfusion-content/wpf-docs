@@ -13,9 +13,9 @@ SfChart is a new chart introduced in 11.1 version. SfChart is a very high perfor
 
 ## Adding Reference
 
-Chart assembly Name: Syncfusion.Chart.Wpf.dll
+Chart assembly Name: Syncfusion.Chart.Wpf assembly
 
-SfChart assembly Name: Syncfusion.SfChart.WPF.dll
+SfChart assembly Name: Syncfusion.SfChart.WPF assembly
 
 The following code example illustrates xmlns namespace for Chart. You can include the Syncfusion schema in WPF and both the charts are available in the WPF schema. 
 
