@@ -8,7 +8,7 @@ keywords: getting started
 ---
 # Getting Started
 
-SfRichTextBoxAdv is a control that allows you to view and edit rich text contents including table, text, images and hyperlinks. This section describes how to get started with SfRichTextBoxAdv control.
+This section describes how to get started with SfRichTextBoxAdv control.
 ## Assembly Reference
 
 You can find SfRichTextBoxAdv control from the following assembly under the namespace Syncfusion.Windows.Controls.RichTextBoxAdv
