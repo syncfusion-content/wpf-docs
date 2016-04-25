@@ -230,7 +230,7 @@ diagram.Nodes = nodes;
 |---|---|---|---|
 | NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img20.jpeg) | ![](Annotation_images/Annotation_img21.jpeg) |
 | Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | ![](Annotation_images/Annotation_img23.jpeg) |
-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img24.jpeg) | ![](Annotation_images/annotation_img25.jpeg) |
+| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img24.png) | ![](Annotation_images/annotation_img25.png) |
 
 ##Appearance 
 
@@ -277,7 +277,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/annotation_img26.jpeg)
+![](Annotation_images/annotation_img26.png)
 
 The Appearance of the Annotation can also be customized with appearance specific properties. The following code illustrates how to customize background and border of a Annotation.
 
@@ -294,7 +294,7 @@ The Appearance of the Annotation can also be customized with appearance specific
 
 {% endhighlight %}
 
-![](Annotation_images/annotation_img27.jpeg)
+![](Annotation_images/annotation_img27.png)
 
 ##Drag
 
@@ -328,7 +328,7 @@ diagram.Nodes = nodes;
 
 
 
-![](Annotation_images/annotation_img28.jpeg)
+![](Annotation_images/annotation_img28.png)
 
 The following code illustrates how to enable DragAnnotation for Connector.
 
@@ -338,7 +338,7 @@ connector.Constraints = ConnectorConstraints.Default | ConnectorConstraints.Drag
 
 {% endhighlight %}
 
-![](Annotation_images/annotation_img29.jpeg)
+![](Annotation_images/annotation_img29.png)
 
 ##Edit
 
@@ -393,7 +393,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/annotation_img30.jpeg)
+![](Annotation_images/annotation_img30.png)
 
 ##Read Only Annotation
 
@@ -469,4 +469,4 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/annotation_img31.jpeg)
+![](Annotation_images/annotation_img31.png)
