@@ -18,11 +18,11 @@ Autoscroll feature automatically scrolls the Diagram whenever the Node or Connec
 
 ##Autoscroll border
 
-The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the `AutoScrollBorder` property of PageSettings. The following code example illustrates how to set Autoscroll border.
+The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the `AutoScrollBorder` property of ScrollSettings. The following code example illustrates how to set Autoscroll border.
 
 {% highlight C# %}
 
-diagram.PageSettings.AutoScrollBorder = new Thickness(150, 15, 15, 15);
+diagram.ScrollSettings.AutoScrollBorder = new Thickness(150, 15, 15, 15);
 
 {% endhighlight %}
 
@@ -40,17 +40,17 @@ The following code example illustrates how to specify the scroll limit.
 
 {% highlight C# %}
 
-diagram.PageSettings.ScrollLimit = ScrollLimit.Infinity;
+diagram.ScrollSettings.ScrollLimit = ScrollLimit.Infinity;
 
 {% endhighlight %}
 
 ##Scrollable Area
 
-You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of PageSettings. To restrict scrolling beyond any custom region, you have to set the `ScrollLimit` as “limited”. The following code example illustrated how to customize scrollable area.
+You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region, you have to set the `ScrollLimit` as “limited”. The following code example illustrated how to customize scrollable area.
 
 {% highlight C# %}
 
-diagram.PageSettings.ScrollLimit = ScrollLimit.Limited;
-diagram.PageSettings.ScrollableArea = new Rect(0, 0, 500, 500);
+diagram.ScrollSettings.ScrollLimit = ScrollLimit.Limited;
+diagram.ScrollSettings.ScrollableArea = new Rect(0, 0, 500, 500);
 
 {% endhighlight %}
