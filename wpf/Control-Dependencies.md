@@ -39,6 +39,13 @@ Syncfusion.Spreadsheet.WPF</td><td>
 Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF<br/><br/>Syncfusion.XlsIO.Base</td></tr>
 <tr>
 <td>
+SfRichTextBoxAdv</td><td>
+Syncfusion.SfRichTextBoxAdv.WPF</td><td>
+For 3.5 and 4.0 Frameworks<br/>Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.DocIO.ClientProfile<br/>Syncfusion.Shared.WPF<br/><br/>
+For 4.5 and Higher Frameworks<br/>Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.DocIO.Base<br/>Syncfusion.Shared.WPF</td></tr>
+<tr>
+<tr>
+<td>
 PropertyGrid</td><td>
 Syncfusion.PropertyGrid.WPF</td><td>
 Syncfusion.Tools.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
