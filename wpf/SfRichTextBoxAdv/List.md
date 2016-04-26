@@ -9,6 +9,7 @@ keywords: list
 # List
 
 The SfRichTextBoxAdv supports both the single-level and multilevel lists similar to the Microsoft Word. Lists are used to organize data as step-by-step instructions in documents for easy understanding of key points.
+
 ## Single Level List
 
 Single level means that all the items in the list have the same hierarchy and indentation. It can be a numbered or a bulleted list.
@@ -28,14 +29,77 @@ The following screenshot shows multilevel list.
 
 Each list in the document can contain reference to any one of the abstract lists in the document. Both abstract list and list should be defined a unique Id. List should refer the abstract list with the abstract list’s Id. List format for a paragraph should refer to the list with the list’s Id.
 The following code example demonstrates how to define a single level numbered list for a document and how it is applied to a paragraph.
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-<RichTextBoxAdv:DocumentAdv><br/><RichTextBoxAdv:DocumentAdv.AbstractLists><br/><RichTextBoxAdv:AbstractListAdv AbstractListId="1"><br/><RichTextBoxAdv:AbstractListAdv.Levels><br/><RichTextBoxAdv:ListLevelAdv ListLevelPattern="LowLetter" NumberFormat="%1." StartAt="1" FollowCharacter="Tab" RestartLevel="0"><br/><RichTextBoxAdv:ListLevelAdv.ParagraphFormat><br/><RichTextBoxAdv:ParagraphFormat LeftIndent="48" FirstLineIndent="24"/><br/></RichTextBoxAdv:ListLevelAdv.ParagraphFormat><br/></RichTextBoxAdv:ListLevelAdv><br/></RichTextBoxAdv:AbstractListAdv.Levels><br/></RichTextBoxAdv:AbstractListAdv><br/></RichTextBoxAdv:DocumentAdv.AbstractLists><br/><RichTextBoxAdv:DocumentAdv.Lists><br/><RichTextBoxAdv:ListAdv AbstractListId="1" ListId="1"><br/></RichTextBoxAdv:ListAdv><br/></RichTextBoxAdv:DocumentAdv.Lists><br/><RichTextBoxAdv:SectionAdv><br/><RichTextBoxAdv:ParagraphAdv><br/><RichTextBoxAdv:ParagraphAdv.ParagraphFormat><br/><RichTextBoxAdv:ParagraphFormat><br/><RichTextBoxAdv:ParagraphFormat.ListFormat><br/><RichTextBoxAdv:ListFormat ListId="1" ListLevelNumber="0"/><br/></RichTextBoxAdv:ParagraphFormat.ListFormat><br/></RichTextBoxAdv:ParagraphFormat><br/></RichTextBoxAdv:ParagraphAdv.ParagraphFormat><br/><RichTextBoxAdv:SpanAdv>List Item 1</RichTextBoxAdv:SpanAdv><br/></RichTextBoxAdv:ParagraphAdv><br/></RichTextBoxAdv:SectionAdv><br/></RichTextBoxAdv:DocumentAdv><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-// Initializes a new abstract list instance.<br/>AbstractListAdv abstractListAdv = new AbstractListAdv(null);<br/>abstractListAdv.AbstractListId = 1;<br/>// Defines new ListLevel instance.<br/>ListLevelAdv listLevel = new ListLevelAdv(abstractListAdv);<br/>listLevel.ParagraphFormat.LeftIndent = 48d;<br/>listLevel.ParagraphFormat.FirstLineIndent = 24d;<br/>listLevel.FollowCharacter = FollowCharacterType.Tab;<br/>listLevel.ListLevelPattern = ListLevelPattern.LowLetter;<br/>listLevel.NumberFormat = "%1.";<br/>listLevel.RestartLevel = 0;<br/>listLevel.StartAt = 1;<br/>// Adds list level to abstract list.<br/>abstractListAdv.Levels.Add(listLevel);<br/>// Adds abstract list to the document.<br/>richTextBoxAdv.Document.AbstractLists.Add(abstractListAdv);<br/>// Creates a new list instance.<br/>ListAdv listAdv = new ListAdv(null);<br/>listAdv.ListId = 1;<br/>// Sets the abstract list Id for this list.<br/>listAdv.AbstractListId = 1;<br/>// Adds list to the document.<br/>richTextBoxAdv.Document.Lists.Add(listAdv);<br/>// Defines the list format for the paragraph.<br/>paragraphAdv.ParagraphFormat.ListFormat.ListId = 1;<br/>paragraphAdv.ParagraphFormat.ListFormat.ListLevelNumber = 0;<br/></td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:DocumentAdv>
+    <RichTextBoxAdv:DocumentAdv.AbstractLists>
+        <RichTextBoxAdv:AbstractListAdv AbstractListId="1">
+            <RichTextBoxAdv:AbstractListAdv.Levels>
+                <RichTextBoxAdv:ListLevelAdv ListLevelPattern="LowLetter" NumberFormat="%1." StartAt="1" FollowCharacter="Tab" RestartLevel="0">
+                    <RichTextBoxAdv:ListLevelAdv.ParagraphFormat>
+                        <RichTextBoxAdv:ParagraphFormat LeftIndent="48" FirstLineIndent="24"/>
+                    </RichTextBoxAdv:ListLevelAdv.ParagraphFormat>
+                </RichTextBoxAdv:ListLevelAdv>
+            </RichTextBoxAdv:AbstractListAdv.Levels>
+        </RichTextBoxAdv:AbstractListAdv>
+    </RichTextBoxAdv:DocumentAdv.AbstractLists>
+    <RichTextBoxAdv:DocumentAdv.Lists>
+        <RichTextBoxAdv:ListAdv AbstractListId="1" ListId="1">
+        </RichTextBoxAdv:ListAdv>
+    </RichTextBoxAdv:DocumentAdv.Lists>
+    <RichTextBoxAdv:SectionAdv>
+        <RichTextBoxAdv:ParagraphAdv>
+            <RichTextBoxAdv:ParagraphAdv.ParagraphFormat>
+                <RichTextBoxAdv:ParagraphFormat>
+                    <RichTextBoxAdv:ParagraphFormat.ListFormat>
+                        <RichTextBoxAdv:ListFormat ListId="1" ListLevelNumber="0"/>
+                    </RichTextBoxAdv:ParagraphFormat.ListFormat>
+                </RichTextBoxAdv:ParagraphFormat>
+            </RichTextBoxAdv:ParagraphAdv.ParagraphFormat>
+            <RichTextBoxAdv:SpanAdv>List Item 1</RichTextBoxAdv:SpanAdv>
+        </RichTextBoxAdv:ParagraphAdv>
+    </RichTextBoxAdv:SectionAdv>
+</RichTextBoxAdv:DocumentAdv>
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Initializes a new abstract list instance.
+AbstractListAdv abstractListAdv = new AbstractListAdv(null);
+abstractListAdv.AbstractListId = 1;
+
+// Defines new ListLevel instance.
+ListLevelAdv listLevel = new ListLevelAdv(abstractListAdv);
+listLevel.ParagraphFormat.LeftIndent = 48d;
+listLevel.ParagraphFormat.FirstLineIndent = 24d;
+listLevel.FollowCharacter = FollowCharacterType.Tab;
+listLevel.ListLevelPattern = ListLevelPattern.LowLetter;
+listLevel.NumberFormat = "%1.";
+listLevel.RestartLevel = 0;
+listLevel.StartAt = 1;
+
+// Adds list level to abstract list.
+abstractListAdv.Levels.Add(listLevel);
+
+// Adds abstract list to the document.
+richTextBoxAdv.Document.AbstractLists.Add(abstractListAdv);
+
+// Creates a new list instance.
+ListAdv listAdv = new ListAdv(null);
+listAdv.ListId = 1;
+// Sets the abstract list Id for this list.
+listAdv.AbstractListId = 1;
+
+// Adds list to the document.
+richTextBoxAdv.Document.Lists.Add(listAdv);
+
+// Defines the list format for the paragraph.
+paragraphAdv.ParagraphFormat.ListFormat.ListId = 1;
+paragraphAdv.ParagraphFormat.ListFormat.ListLevelNumber = 0;
+
+{% endhighlight %}
+
+{% endtabs %}
 The following code example demonstrates how to define number format for numbered list in the SfRichTextBoxAdv control.
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +114,10 @@ listLevel.ListLevelPattern = ListLevelPattern.UpRoman;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 You can define bulleted list by setting list level pattern as Bullet. You can define various bullets by defining the bullet character. The following code sample demonstrates how to define dot, square and arrow bullets in the SfRichTextBoxAdv control.
+{% tabs %}
 {% highlight c# %}
 // Defines Bulleted List.
 listLevel.ListLevelPattern = ListLevelPattern.Bullet;
@@ -68,32 +135,72 @@ listLevel.CharacterFormat.FontFamily = new FontFamily("Symbol");
 {% endhighlight %}
 
 {% endtabs %}
+
 ## Level overrides
 
 The list levels for a list are defined in the abstract list to which it refers to. Additionally you can define level overrides for any list level. The SfRichTextBoxAdv supports two types of level overrides.
+
 1. Start at override – Only start value for the list is overridden and other properties are referred to list level defined in abstract list.
 
 2. Level override – The list level is completely overridden.
 
 
 The following code example demonstrates how to override the start at value for an existing list level in the SfRichTextBoxAdv control.
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-<RichTextBoxAdv:ListAdv AbstractListId="1" ListId="1"><br/><RichTextBoxAdv:ListAdv.LevelOverrides><br/><RichTextBoxAdv:LevelOverrideAdv StartAt="2" LevelNumber="0"/><br/></RichTextBoxAdv:ListAdv.LevelOverrides><br/></RichTextBoxAdv:ListAdv><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-// Adds StartAtOverride for the list at first level.<br/>// LevelNumber ranges from 0 to 8.<br/>LevelOverrideAdv levelOverride = new LevelOverrideAdv(listAdv);<br/>levelOverride.LevelNumber = 0;<br/>levelOverride.StartAt = 2;<br/>listAdv.LevelOverrides.Add(levelOverride);<br/></td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:ListAdv AbstractListId="1" ListId="1">
+    <RichTextBoxAdv:ListAdv.LevelOverrides>
+        <RichTextBoxAdv:LevelOverrideAdv StartAt="2" LevelNumber="0"/>
+    </RichTextBoxAdv:ListAdv.LevelOverrides>
+</RichTextBoxAdv:ListAdv>
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Adds StartAtOverride for the list at first level.
+// LevelNumber ranges from 0 to 8.
+LevelOverrideAdv levelOverride = new LevelOverrideAdv(listAdv);
+levelOverride.LevelNumber = 0;
+levelOverride.StartAt = 2;
+listAdv.LevelOverrides.Add(levelOverride);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following code example demonstrates how to add level override for any existing list level in the SfRichTextBoxAdv control.
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-<RichTextBoxAdv:ListAdv AbstractListId="1" ListId="1"><br/><RichTextBoxAdv:ListAdv.LevelOverrides><br/><!-- Overrides fourth list level--><br/><RichTextBoxAdv:LevelOverrideAdv LevelNumber="3"><br/><RichTextBoxAdv:LevelOverrideAdv.OverrideListLevel><br/><RichTextBoxAdv:ListLevelAdv ListLevelPattern="UpRoman" StartAt="3" NumberFormat="%1)"/><br/></RichTextBoxAdv:LevelOverrideAdv.OverrideListLevel><br/></RichTextBoxAdv:LevelOverrideAdv><br/></RichTextBoxAdv:ListAdv.LevelOverrides><br/></RichTextBoxAdv:ListAdv><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-// Adds ListLevel override for the list at fourth level.<br/>// LevelNumber ranges from 0 to 8.<br/>LevelOverrideAdv levelOverride = new LevelOverrideAdv(listAdv);<br/>levelOverride.LevelNumber = 3;<br/>levelOverride.OverrideListLevel = new ListLevelAdv(levelOverride);<br/>levelOverride.OverrideListLevel.ListLevelPattern = ListLevelPattern.UpRoman;<br/>levelOverride.OverrideListLevel.NumberFormat = "%1)";<br/>levelOverride.OverrideListLevel.StartAt = 3;<br/>listAdv.LevelOverrides.Add(levelOverride);<br/></td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:ListAdv AbstractListId="1" ListId="1">
+<RichTextBoxAdv:ListAdv.LevelOverrides>
+    <!-- Overrides fourth list level-->
+        <RichTextBoxAdv:LevelOverrideAdv LevelNumber="3">
+            <RichTextBoxAdv:LevelOverrideAdv.OverrideListLevel>
+                <RichTextBoxAdv:ListLevelAdv ListLevelPattern="UpRoman" StartAt="3" NumberFormat="%1)"/>
+            </RichTextBoxAdv:LevelOverrideAdv.OverrideListLevel>
+        </RichTextBoxAdv:LevelOverrideAdv>
+    </RichTextBoxAdv:ListAdv.LevelOverrides>
+</RichTextBoxAdv:ListAdv>
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Adds ListLevel override for the list at fourth level.
+// LevelNumber ranges from 0 to 8.
+LevelOverrideAdv levelOverride = new LevelOverrideAdv(listAdv);
+levelOverride.LevelNumber = 3;
+levelOverride.OverrideListLevel = new ListLevelAdv(levelOverride);
+levelOverride.OverrideListLevel.ListLevelPattern = ListLevelPattern.UpRoman;
+levelOverride.OverrideListLevel.NumberFormat = "%1)";
+levelOverride.OverrideListLevel.StartAt = 3;
+listAdv.LevelOverrides.Add(levelOverride);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Editing list
 
 You can retrieve the list applied for the current selection. By doing so, you can edit the list according to your requirement. After editing the list, you need to set it for the current selection in order to make the changes effective.
@@ -106,7 +213,10 @@ ListAdv listAdv = richTextBoxAdv.Selection.ParagraphFormat.GetList();
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following code example demonstrates how to apply a list for the selection content in the SfRichTextBoxAdv control. When the selection content has a list, then it gets modified with that list. Otherwise the list is added to the document and applied to the selection content.
+{% tabs %}
 {% highlight c# %}
 // Applies list for the Selection content.
 richTextBoxAdv.Selection.ParagraphFormat.SetList(listAdv);

@@ -9,6 +9,7 @@ keywords: commands
 # Commands
 
 Commands are a way to handle user interface (UI) actions. They are a loosely coupled way to bind the UI to the logic that performs the action. The SfRichTextBoxAdv supports commands for mostly used operations which are classified below.
+
 * Character Formatting – Bold, Italic, Underline, Strike through, Baseline alignment, Font family, Font size, Font color and Highlight color.
 
 * Paragraph Formatting – Left indent, Right indent, First line indent, Text alignment, Before spacing, After spacing, Line spacing, Line spacing type, Increase indent, Decrease indent and Change list type.
@@ -32,7 +33,7 @@ Commands are a way to handle user interface (UI) actions. They are a loosely cou
 
 The following code example demonstrates how to bind commands for applying character format.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Binds button to the BoldCommand -->
 <Button Content="Bold" Command="RichTextBoxAdv:SfRichTextBoxAdv.BoldCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"/>
 <!-- Binds button to the ItalicCommand -->

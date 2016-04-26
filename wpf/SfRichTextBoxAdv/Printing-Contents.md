@@ -18,24 +18,32 @@ richTextBoxAdv.PrintDocument();
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The SfRichTextBoxAdv also supports event to notify whenever the printing operation is completed. The following code example demonstrates how to handle for the print completed event.
+{% tabs %}
 {% highlight c# %}
 // Hooks the print completed event.
 richTextBoxAdv.PrintCompleted += RichTextBoxAdv_PrintCompleted;
+
 // Called whenever the print completed event is fired.
 private void RichTextBoxAdv_PrintCompleted(object obj, PrintCompletedEventArgs args)
 {
-// Handle your code here.
+    // Handle your code here.
 }
+
 // Unhooks the print completed event.
 richTextBoxAdv.PrintCompleted -= RichTextBoxAdv_PrintCompleted;
 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## UI Command for printing
 
 The following code example demonstrates how to bind UI Command to invoke printing in SfRichTextBoxAdv.
+{% tabs %}
 {% highlight c# %}
 <!-- Binds button to the PrintDocumentCommand -->
 <Button Content="Print" Command="RichTextBoxAdv:SfRichTextBoxAdv.PrintDocumentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
@@ -44,4 +52,5 @@ The following code example demonstrates how to bind UI Command to invoke printin
 {% endhighlight %}
 
 {% endtabs %}
+
 N> In order to invoke printing, the standard keyboard shortcut CTRL + P can also be used.

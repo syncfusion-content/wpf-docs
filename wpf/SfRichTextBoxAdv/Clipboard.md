@@ -9,6 +9,7 @@ keywords: clipboard
 # Clipboard
 
 The SfRichTextBoxAdv takes advantage of the clipboard support and allows you to copy or paste contents to and from the clipboard in the following formats.
+
 * Rich text format.
 
 * Text.
@@ -20,7 +21,7 @@ The SfRichTextBoxAdv takes advantage of the clipboard support and allows you to 
 
 The following code example demonstrates how to bind commands for accessing clipboard operations.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Binds button to the CutCommand -->
 <Button Content="Cut" Command="RichTextBoxAdv:SfRichTextBoxAdv.CutCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 <!-- Binds button to the CopyCommand -->

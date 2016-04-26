@@ -11,13 +11,14 @@ keywords: image
 The SfRichTextBoxAdv allows you to insert images of various formats such as bitmap images (.bmp), JPEG (.jpg, .jpeg), PNG (.png) except Metafile images.
 The following code example illustrates how to insert picture into the SfRichTextBoxAdv document through UI Command.
 {% tabs %}
-{% highlight c# %}
+{% highlight xaml %}
 <Button Content="Insert Picture" Command="RichTextBoxAdv:SfRichTextBoxAdv.InsertPictureCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 
 
 {% endhighlight %}
 
 {% endtabs %}
+
 ## Image Resizer
 
 The SfRichTextBoxAdv also supports built-in image resizer to resize the images present in the document to your wish. The image resizer accepts both touch and mouse interactions.

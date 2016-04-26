@@ -15,51 +15,61 @@ The following sample code demonstrates how to import contents from a file into S
 // Imports the document.
 void ImportDocument ()
 {
-// Initializes the open file dialog.
-OpenFileDialog openFileDialog = new OpenFileDialog()
-{
-Filter = "All supported files (*.docx,*.doc,*.htm,*.html,*.rtf,*.txt,*.xaml)|*.docx;*.doc;*.htm;*.html;*.rtf;*.txt;*.xaml|Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml",
-FilterIndex = 1,
-Multiselect = false
-};
-if ((bool)openFileDialog.ShowDialog())
-{
-// Loads the file into RichTextBoxAdv.
-richTextBoxAdv.Load(openFileDialog.FileName);
-// Sets the File name as Document Title.
-richTextBoxAdv.DocumentTitle = openFileDialog.FileName.Remove(openFileDialog.FileName.LastIndexOf("."));
+    // Initializes the open file dialog.
+    OpenFileDialog openFileDialog = new OpenFileDialog()
+    {
+        Filter = "All supported files (*.docx,*.doc,*.htm,*.html,*.rtf,*.txt,*.xaml)|*.docx;*.doc;*.htm;*.html;*.rtf;*.txt;*.xaml|Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml",
+        FilterIndex = 1,
+        Multiselect = false
+    };
+
+    if ((bool)openFileDialog.ShowDialog())
+    {
+        // Loads the file into RichTextBoxAdv.
+        richTextBoxAdv.Load(openFileDialog.FileName);
+        // Sets the File name as Document Title.
+        richTextBoxAdv.DocumentTitle = openFileDialog.FileName.Remove(openFileDialog.FileName.LastIndexOf("."));
+    }
 }
-}
+
 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following code example demonstrates how to export SfRichTextBoxAdv contents into a file.
+{% tabs %}
 {% highlight c# %}
 // Exports the document.
 void ExportDocument ()
 {    
-// Initializes the file save picker.
-SaveFileDialog saveFileDialog = new SaveFileDialog()
-{
-Filter = "Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml",
-FilterIndex = 1
-};
-if ((bool)saveFileDialog.ShowDialog())
-{
-// Saves the document content into a file.
-richTextBoxAdv.Save(saveFileDialog.FileName);
+    // Initializes the file save picker.
+    SaveFileDialog saveFileDialog = new SaveFileDialog()
+    {
+        Filter = "Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml",
+        FilterIndex = 1
+    };
+    if ((bool)saveFileDialog.ShowDialog())
+    {
+        // Saves the document content into a file.
+        richTextBoxAdv.Save(saveFileDialog.FileName);
+    }
 }
-}
+
 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 N> When the SfRichTextBoxAdv control encounters an unsupported element, it does not render the element, instead, it continues to the next supported element and render it. Examples of unsupported elements are AutoShapes, watermarks, charts, SmartArt, WordArt, equations, document structure tags, styles, wrapping styles, fields other than hyperlinks, absolutely positioned tables, and absolutely positioned images.
+
 ## UI Commands for importing/exporting documents
 
 The following code example demonstrates how to bind commands for performing importing and exporting documents.
-{% highlight xml %}
+{% tabs %}
+{% highlight xaml %}
 <!-- Binds button to the OpenDocumentCommand -->
 <Button Content="Open" Command="RichTextBoxAdv:SfRichTextBoxAdv.OpenDocumentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 <!-- Binds button to the SaveDocumentCommand -->
@@ -69,4 +79,5 @@ The following code example demonstrates how to bind commands for performing impo
 {% endhighlight %}
 
 {% endtabs %}
+
 N> In order to perform import/export documents, the standard keyboard shortcuts such as CTRL + O, CTRL + S can also be used.
