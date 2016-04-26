@@ -28,7 +28,10 @@ The following code example demonstrates how to define layout type of SfRichTextB
 {% endhighlight %}
 
 {% highlight c# %}
-// Defines the layout type as Pages.<br/>richTextBoxAdv.LayoutType = LayoutType.Pages;
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+// Defines the layout type as Pages
+richTextBoxAdv.LayoutType = LayoutType.Pages;
 
 {% endhighlight %}
 
@@ -47,7 +50,10 @@ The following code example demonstrates how to define layout type of SfRichTextB
 {% endhighlight %}
 
 {% highlight c# %}
-// Defines the layout type as Continuous.<br/>richTextBoxAdv.LayoutType = LayoutType.Continuous;
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+// Defines the layout type as Continuous.
+richTextBoxAdv.LayoutType = LayoutType.Continuous;
 
 {% endhighlight %}
 
@@ -66,7 +72,10 @@ The following code example demonstrates how to define layout type of SfRichTextB
 {% endhighlight %}
 
 {% highlight c# %}
-// Defines the layout type as Block.<br/>richTextBoxAdv.LayoutType = LayoutType.Block
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+// Defines the layout type as Block.
+richTextBoxAdv.LayoutType = LayoutType.Block
 
 {% endhighlight %}
 

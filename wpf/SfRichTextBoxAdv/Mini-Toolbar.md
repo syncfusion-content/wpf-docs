@@ -20,7 +20,11 @@ In SfRichTextBoxAdv, the built-in mini toolbar is enabled by default. It is poss
 
 {% endhighlight %}
 {% highlight c# %}
-//Disables the built-in mini tool bar in SfRichTextBoxAdv.<br/>richTextBoxAdv.EnableMiniToolBar = false;
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+
+//Disables the built-in mini tool bar in SfRichTextBoxAdv.
+richTextBoxAdv.EnableMiniToolBar = false;
 
 {% endhighlight %}
 

@@ -764,7 +764,7 @@ In the control template, you are allowed to reorder the template parts and to ad
 You can define custom style for the SfRichTextBoxAdv control either by creating empty style and set it up on your own or by copying the default style and modifying it. 
 The following example demonstrates how to customize the style for SfRichTextBoxAdv control.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <RichTextBoxAdv:SfRichTextBoxAdvResourceWrapper x:Key="SfRichTextBoxAdvResourceWrapper"/>
 <SolidColorBrush x:Key="RichTextBoxAdvBackgroundBrush" Color="#000000"/>
 <SolidColorBrush x:Key="TextSelectionBrush" Color="#FF808080"/>
