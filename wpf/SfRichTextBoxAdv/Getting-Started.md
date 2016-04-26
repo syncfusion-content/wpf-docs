@@ -41,7 +41,8 @@ You can either drag the SfRichTextBoxAdv control from the toolbox window to the 
 
 {% endhighlight %}
 {% highlight c# %}
-// Initializes a new instance of RichTextBoxAdv.<br/>SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 
 {% endhighlight %}
 

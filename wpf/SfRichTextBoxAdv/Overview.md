@@ -14,6 +14,7 @@ The SfRichTextBoxAdv control allows you to view, edit and print rich text conten
 ## Features
 
 The SfRichTextBoxAdv control supports basic features for editing rich text contents such as
+
 * Viewing and editing rich text, images, tables and comments.
 
 * Importing and exporting word documents (.doc, .docx), rich text format documents (.rtf), HTML documents (.htm, .html), XAML documents (.xaml) and text documents (.txt).
