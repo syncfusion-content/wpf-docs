@@ -9,6 +9,7 @@ keywords: dialogs
 # Dialogs
 
 The SfRichTextBoxAdv provides support for the following built-in dialogs similar to Microsoft Word application.
+
 * Font Dialog
 
 * Paragraph Dialog
@@ -28,7 +29,7 @@ The SfRichTextBoxAdv provides support for the following built-in dialogs similar
 
 The following code example demonstrates how to show the built-in dialogs in SfRichTextBoxAdv through command binding.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Binds button to the ShowFontDialogCommand -->
 <Button Content="Font" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowFontDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 <!-- Binds button to the ShowParagraphDialogCommand -->

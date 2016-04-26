@@ -14,11 +14,14 @@ The SfRichTextBoxAdv supports built-in mini toolbar to provide rich text formatt
 ## Enable/Disable Mini Toolbar
 
 In SfRichTextBoxAdv, the built-in mini toolbar is enabled by default. It is possible to enable/disable the built-in mini toolbar. The following code example demonstrates how to disable the built-in mini toolbar in SfRichTextBoxAdv.
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" EnableMiniToolBar="False" xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf" /><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-//Disables the built-in mini tool bar in SfRichTextBoxAdv.<br/>richTextBoxAdv.EnableMiniToolBar = false;<br/></td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" EnableMiniToolBar="False" xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf" />
+
+{% endhighlight %}
+{% highlight c# %}
+//Disables the built-in mini tool bar in SfRichTextBoxAdv.<br/>richTextBoxAdv.EnableMiniToolBar = false;
+
+{% endhighlight %}
+
+{% endtabs %}

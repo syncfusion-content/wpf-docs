@@ -12,9 +12,11 @@ A Comment is a note or annotation that an author or reviewer can add to the docu
 ![](Comment_images/Comment_img1.jpeg)
 
 N> Currently, the SfRichTextBoxAdv shows review pane only with Pages layout type.
+
 ## UI Commands for accessing comment
 
 The following operations can be performed through command binding in SfRichTextBoxAdv control:
+
 * Insert a new comment.
 
 * Delete an existing comment or delete all the existing comments.
@@ -28,7 +30,7 @@ The following operations can be performed through command binding in SfRichTextB
 
 The following code example demonstrates how to bind commands for accessing comment in SfRichTextBoxAdv document.
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <!-- Binds button to the ShowCommentsCommand -->
 <Button Content="Show Comments" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowCommentsCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 <!-- Binds button to the NewCommentCommand -->
@@ -45,31 +47,41 @@ The following code example demonstrates how to bind commands for accessing comme
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Customizing comment visual style
 
 The SfRichTextBoxAdv provides event support to notify whenever a comment is added to the document. With the help of it, you can customize the visual style for the comment. You can also set the author and initial of the comment.
 The following code example demonstrates how to customize comment visual style using event.
+{% tabs %}
 {% highlight c# %}
 // Hooks the CommentAdding event of RichTextBoxAdv.
 richTextBoxAdv.CommentAdding += RichTextBoxAdv_CommentAdding;
+
 // Unhooks the CommentAdding event of RichTextBoxAdv.
 richTextBoxAdv.CommentAdding -= RichTextBoxAdv_CommentAdding;
+
 // Handles the CommentAdding event of the richTextBoxAdv control.
 private void RichTextBoxAdv_CommentAdding(object obj, CommentAddingEventArgs args)
 {
-if (!isFileLoading)
-{
-//Defines the author and initial for the comment.
-args.Comment.Author = "Peter";
-args.Comment.Initial = "Franken";
+    if (!isFileLoading)
+    {
+        //Defines the author and initial for the comment.
+        args.Comment.Author = "Peter";
+        args.Comment.Initial = "Franken";
+    }
+
+    // Defines the background brush for the comment.
+    args.VisualStyle.BackgroundBrush = new SolidColorBrush(Color.FromArgb(0xff, 0xff, 0xa8, 0xa8));
+
+    // Defines the border brush for the comment.
+    args.VisualStyle.BorderBrush = new SolidColorBrush(Color.FromArgb(0xff, 0xFF, 0x01, 0x01));
+
+    // Defines the highlight color for the commented content.
+    args.VisualStyle.HighlightColor = Color.FromArgb(0xff, 0xFf, 0xa8, 0x8);
+
 }
-// Defines the background brush for the comment.
-args.VisualStyle.BackgroundBrush = new SolidColorBrush(Color.FromArgb(0xff, 0xff, 0xa8, 0xa8));
-// Defines the border brush for the comment.
-args.VisualStyle.BorderBrush = new SolidColorBrush(Color.FromArgb(0xff, 0xFF, 0x01, 0x01));
-// Defines the highlight color for the commented content.
-args.VisualStyle.HighlightColor = Color.FromArgb(0xff, 0xFf, 0xa8, 0x8);
-}
+
 
 
 {% endhighlight %}

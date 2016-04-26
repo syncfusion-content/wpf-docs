@@ -18,6 +18,9 @@ SectionAdv sectionAdv = richTextBoxAdv.Document.Sections[0];
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 // Gets the first block from the section, which is a paragraph.
 ParagraphAdv paragraphAdv = sectionAdv.Blocks[0] as ParagraphAdv;
@@ -28,6 +31,10 @@ TextPosition startPosition = richTextBoxAdv.Document.GetTextPosition(paragraphAd
 
 {% endhighlight %}
 
+
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 // Gets the third block of a section, which is table.
 TableAdv tableAdv = sectionAdv.Blocks[2] as TableAdv;
@@ -38,7 +45,11 @@ TextPosition position = richTextBoxAdv.Document.GetTextPosition(paragraphAdv, 12
 
 {% endhighlight %}
 
+
+{% endtabs %}
+
 The following sample code demonstrates how to retrieve text position from document using hierarchical index.
+{% tabs %}
 {% highlight c# %}
 /*
 The hierarchical index should be given as "section-index;block-index;offset-in-paragraph"
@@ -59,7 +70,10 @@ TextPosition position = richTextBoxAdv.Document.GetTextPosition("0;0;24");
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following sample code demonstrates how to move selection start and selection end both at a specific text position.
+{% tabs %}
 {% highlight c# %}
 // Makes an empty selection at the specific text position.
 richTextBoxAdv.Selection.Select(position, position);
@@ -67,7 +81,10 @@ richTextBoxAdv.Selection.Select(position, position);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following sample code demonstrates how to select a portion of document.
+{% tabs %}
 {% highlight c# %}
 // Retrieves the position of the first paragraph start.
 TextPosition startPosition = richTextBoxAdv.Document.GetTextPosition("0;0;0");
@@ -79,6 +96,9 @@ richTextBoxAdv.Selection.Select(startPosition, endPosition);
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 // Selects the text positions in reverse direction.
 richTextBoxAdv.Selection.Select(endPosition, startPosition);
@@ -86,10 +106,14 @@ richTextBoxAdv.Selection.Select(endPosition, startPosition);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 N> You can select a text position within a comment with another text position within the same comment only. It is not possible to select a text position within comment with a text position that exists outside of that comment.
+
 ## Multi Selection
 
 The SfRichTextBoxAdv also supports selecting different portions of the document at a time. The following code example demonstrates how to perform multi selection in SfRichTextBoxAdv.
+{% tabs %}
 {% highlight c# %}
 // Retrieves the position of the first paragraph start.
 TextPosition startPosition1 = richTextBoxAdv.Document.GetTextPosition("0;0;0");
@@ -106,6 +130,8 @@ richTextBoxAdv.Selection.SelectionRanges.Add(startPosition2, endPosition2);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Apply Formatting for selection
 
 The SfRichTextBoxAdv supports the following format properties that can be applied for selection contents.
@@ -113,6 +139,7 @@ Character Format-bold, italic, font size, font family, font color, highlight col
 Paragraph Format-before and after spacing, first line, left and right indenting, text justification, line spacing, and multilevel list.
 Selection Format-page size and page margin.
 The following sample code demonstrates how to apply subscript format for the selected content.
+{% tabs %}
 {% highlight c# %}
 // Applies subscript format for the selected text contents.
 richTextBoxAdv.Selection.CharacterFormat.BaselineAlignment = Syncfusion.Windows.Controls.RichTextBoxAdv.BaselineAlignment.Subscript;
@@ -120,7 +147,10 @@ richTextBoxAdv.Selection.CharacterFormat.BaselineAlignment = Syncfusion.Windows.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following sample code demonstrates how to apply after spacing for the selected paragraphs.
+{% tabs %}
 {% highlight c# %}
 // Applies after spacing for the selected paragraphs.
 richTextBoxAdv.Selection.ParagraphFormat.AfterSpacing = 24;
@@ -128,7 +158,10 @@ richTextBoxAdv.Selection.ParagraphFormat.AfterSpacing = 24;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following sample code demonstrates how to apply page margin for the selected sections.
+{% tabs %}
 {% highlight c# %}
 // Applies page margin for the selected sections.
 richTextBoxAdv.Selection.SectionFormat.PageMargin = new Thickness(96, 48, 96, 48);
@@ -137,27 +170,49 @@ richTextBoxAdv.Selection.SectionFormat.PageMargin = new Thickness(96, 48, 96, 48
 {% endhighlight %}
 
 {% endtabs %}
+
 ## Binding Selection format properties
 
 The SfRichTextBoxAdv provides support to bind the rich-text format options of selection content. 
 The following code sample demonstrates how to bind the bold format option of SfRichTextBoxAdv.
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-<!-- Binds the toggle button to Selection bold character format --><br/><ToggleButton x:Name="toggleButton" Content="Bold" IsChecked="{Binding Path=Selection.CharacterFormat.Bold, Mode=TwoWay, ElementName=richTextBoxAdv}" /><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-// Initializes the new binding for toggle bold.<br/>Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPath("Selection.CharacterFormat.Bold"), Mode = BindingMode.TwoWay };<br/>// Binds the IsChecked property to Selection.CharacterFormat.Bold property of RichTextBoxAdv.<br/>toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);<br/></td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
+<!-- Binds the toggle button to Selection bold character format -->
+<ToggleButton x:Name="toggleButton" Content="Bold" IsChecked="{Binding Path=Selection.CharacterFormat.Bold, Mode=TwoWay, ElementName=richTextBoxAdv}" />
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Initializes the new binding for toggle bold.
+Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPath("Selection.CharacterFormat.Bold"), Mode = BindingMode.TwoWay };
+
+// Binds the IsChecked property to Selection.CharacterFormat.Bold property of RichTextBoxAdv.
+toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following code sample demonstrates how to bind the bold format option of SfRichTextBoxAdv.
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-<!—Binds IsChecked property of toggle button to Selection text alignment paragraph format --><br/><ToggleButton x:Name="toggleButton" Content="Left" IsChecked="{Binding ElementName=richTextBoxAdv,Path=Selection.ParagraphFormat.TextAlignment,Converter={StaticResource LeftAlignmentToggleConverter}}"/><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-//Initializes the new binding for toggle text alignment property as left.<br/>Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPath("Selection.ParagraphFormat.TextAlignment"), Mode = BindingMode.TwoWay, Converter = new LeftAlignmentToggleConverter() };<br/>//Binds the IsChecked property to Selection.ParagraphFormat.TextAlignment property of RichTextBoxAdv.<br/>toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);<br/></td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
+<!—Binds IsChecked property of toggle button to Selection text alignment paragraph format -->
+<ToggleButton x:Name="toggleButton" Content="Left" IsChecked="{Binding ElementName=richTextBoxAdv,Path=Selection.ParagraphFormat.TextAlignment,Converter={StaticResource LeftAlignmentToggleConverter}}"/>
+
+
+{% endhighlight %}
+{% highlight c# %}
+//Initializes the new binding for toggle text alignment property as left.
+Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPath("Selection.ParagraphFormat.TextAlignment"), Mode = BindingMode.TwoWay, Converter = new LeftAlignmentToggleConverter() };
+
+//Binds the IsChecked property to Selection.ParagraphFormat.TextAlignment property of RichTextBoxAdv.
+toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Keyboard shortcuts to perform selection
 
 The following keyboard shortcuts are supported by SfRichTextBoxAdv for navigation and selection.
