@@ -283,7 +283,7 @@ In the below code snippet, summary is defined for `UnitPrice` and `ProductName` 
 this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {
     ShowSummaryInRow = false,    
-    SummaryColumns = new ObservableCollection&lt;ISummaryColumn&gt;()
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
     {
         new GridSummaryColumn()
         { 
@@ -726,21 +726,21 @@ public class CustomAggregate:ISummaryAggregate
     {
     }
     public double StdDev { get; set; }
-    public Action&lt;System.Collections.IEnumerable, string, System.ComponentModel.PropertyDescriptor&gt; CalculateAggregateFunc()
+    public Action<System.Collections.IEnumerable, string, System.ComponentModel.PropertyDescriptor> CalculateAggregateFunc()
     {
         return (items, property, pd) =>
         {
-            var enumerableItems = items as IEnumerable&lt;OrderInfo&gt;;
+            var enumerableItems = items as IEnumerable<OrderInfo>;
             if (pd.Name == "StdDev")
             {
-                this.StdDev = enumerableItems.StdDev&lt;OrderInfo&gt;(q => q.Quantity);
+                this.StdDev = enumerableItems.StdDev<OrderInfo>(q => q.Quantity);
             }
         };
     }
 }
 public static class LinqExtensions
 {
-    public static double StdDev&lt;T&gt;(this IEnumerable&lt;T&gt; values, Func&lt;T, double?&gt; selector)
+    public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
     {
         double ret = 0;
         var count = values.Count();
@@ -795,7 +795,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
     ShowSummaryInRow = true,
     Position=TableSummaryRowPosition.Top,
     Title = "Standard Deviation: {Discount}",
-    SummaryColumns = new ObservableCollection&lt;ISummaryColumn&gt;()
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
     {
         new GridSummaryColumn()
         { 
