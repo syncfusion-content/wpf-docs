@@ -89,7 +89,7 @@ richTextBoxAdv.Document = document;
 ## UI Commands for accessing table
 
 The following code example illustrates how to bind the Button UI Command for inserting a table.
-% tabs %}
+{% tabs %}
 {% highlight xaml %}
 <!-- Inserts the table with default size of one row and two columns -->
 <Button Content="Insert Table" Command="RichTextBoxAdv:SfRichTextBoxAdv.InsertTableCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
