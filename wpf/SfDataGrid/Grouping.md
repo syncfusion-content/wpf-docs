@@ -286,8 +286,7 @@ SfDataGrid allows you to customize the appearance and height of GroupDropArea by
 {% highlight xaml %}
 <Window.Resources>
     <Style TargetType="syncfusion:GroupDropArea">
-        <Setter Property="Height" Value="80" />
-        <Setter Property="FontSize" Value="150" />
+        <Setter Property="Height" Value="80" />        
         <Setter Property="Foreground" Value="Red" />
         <Setter Property="Background" Value="Pink" />
     </Style>
