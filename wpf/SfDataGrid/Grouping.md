@@ -286,8 +286,7 @@ SfDataGrid allows you to customize the appearance and height of GroupDropArea by
 {% highlight xaml %}
 <Window.Resources>
     <Style TargetType="syncfusion:GroupDropArea">
-        <Setter Property="Height" Value="80" />
-        <Setter Property="FontSize" Value="150" />
+        <Setter Property="Height" Value="80" />        
         <Setter Property="Foreground" Value="Red" />
         <Setter Property="Background" Value="Pink" />
     </Style>
@@ -393,7 +392,7 @@ Now , assign the GroupDateTimeConverter into [GroupColumnDescription.Converter](
 
 ![](Grouping_images/Grouping_img8.png)
 
-You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied. You can download sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGroupingDemo242832829.zip).
+You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied. You can download sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGroupingDemo541349132.zip).
 
  
 ## Sorting CaptionSummaryRows by Aggregate
