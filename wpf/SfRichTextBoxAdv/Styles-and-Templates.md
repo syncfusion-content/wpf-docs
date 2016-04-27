@@ -757,7 +757,7 @@ The following XAML shows the default style and template for the SfRichTextBoxAdv
 
 {% endtabs %}
 
-In the control template, you are allowed to reorder the template parts and to add your own elements. However, when changing the control template you should be careful to include all required parts. Usually required parts are marked with Name attribute. Omission of required parts may impact some of the functionality. 
+N> In the control template, you are allowed to reorder the template parts and to add your own elements. However, when changing the control template you should be careful to include all required parts. Usually required parts are marked with Name attribute. Omission of required parts may impact some of the functionality. 
 
 ## Styling the SfRichTextBoxAdv
 

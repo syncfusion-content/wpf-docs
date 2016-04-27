@@ -9,6 +9,7 @@ keywords: mvvm
 # MVVM
 
 The SfRichTextBoxAdv control can be used with Model-View-View Model (MVVM) pattern. This section will demonstrate how to use the SfRichTextBoxAdv control with MVVM pattern.
+
 ## Creating a View Model
 
 The following code example demonstrates how to implement a view model class that contains properties to preserve the description about some of the animals and the animal that is selected for discussion. Whenever the animal chosen for discussion is changed, previously chosen animal description is updated to the data base and newly chosen animal description is updated to the text property.
