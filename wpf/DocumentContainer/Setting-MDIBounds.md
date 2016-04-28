@@ -15,7 +15,7 @@ The general syntax of the MDI bound property is given below.
 
 
 
-syncfusion:DocumentContainer.MDIBounds="a,b,c,d"
+Syncfusion:DocumentContainer.MDIBounds="a,b,c,d"
 
 
 
@@ -36,7 +36,7 @@ To set the MDI Bounds, use the following code snippet.
 
 <syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI">
 
-<FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIBounds="0,0,200,300">
+<FlowDocumentScrollViewer Syncfusion:DocumentContainer.MDIBounds="0,0,200,300">
 
 </FlowDocumentScrollViewer>
 

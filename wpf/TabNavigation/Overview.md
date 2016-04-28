@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Tab Navigation is a new control for displaying the contents of the control with transition effects. Tab navigation control facilitates the display of pages/items (with transition effects) like an Ad rotator in web applications, thereby enhancing the UI’s look and feel. It supports only .NET framework version 4.0. 
+Tab Navigation is a new control for displaying the contents of the control with transition effects. Tab navigation control facilitates the display of pages/items (with transition effects) like an Ad rotator in web applications, thereby enhancing the UI’s look and feel. It supports only .NET Framework version 4.0. 
 
 The following are the key features of this control:
 

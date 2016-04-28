@@ -123,7 +123,7 @@ True/False</td></tr>
 <tr>
 <td>
 Format</td><td>
-Gets or sets the custom format strings. The word given between single quotes is displayed as it is. But the following tokens are replaced with values in the custom format string. d – replaced with days value h – replaced with hours value m – replaced with minutes values – replaced with seconds value z- replaced with milliseconds valueExample :The following format string : d ‘Days’ h ‘Hours’ m ‘Minutes’Displayed as : 10 Days 20 Hours 30 Minutes</td><td>
+Gets or sets the custom format strings. The word given between single quotes is displayed as it is. But the following tokens are replaced with values in the custom format string. d – replaced with days value , h – replaced with hours value , m – replaced with minutes value, s – replaced with seconds value , z- replaced with milliseconds valueExample :The following format string : d ‘Days’ h ‘Hours’ m ‘Minutes’Displayed as : 10 Days 20 Hours 30 Minutes</td><td>
 string</td><td>
 Any string</td></tr>
 </table>

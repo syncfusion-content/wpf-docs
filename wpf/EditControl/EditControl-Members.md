@@ -29,7 +29,7 @@ Gets or sets a boolean property to allow or restrict the usage of TAB key in Edi
 <tr>
 <td>
 AssemblyReferences<br/><br/></td><td>
-IEnumberable(uri)<br/><br/></td><td>
+IEnumerable(uri)<br/><br/></td><td>
 Gets or sets a collection of type Uri, this property enables you to specify the path of assemblies from EditControl and it should fetch Intellisense items automatically.<br/><br/></td></tr>
 <tr>
 <td>
@@ -95,7 +95,7 @@ Gets or sets a Style to be applied to IntelliSense listbox.<br/><br/></td></tr>
 <td>
 IntellisenseCustomItemsSource<br/><br/></td><td>
 IEnumerable<br/><br/></td><td>
-Gets or sets a collection of business object inherited from IntellisenseItem to be dispalyed in the IntellisenseBox.<br/><br/></td></tr>
+Gets or sets a collection of business object inherited from IntellisenseItem to be displayed in the IntellisenseBox.<br/><br/></td></tr>
 <tr>
 <td>
 IntellisenseItemTemplate<br/><br/></td><td>

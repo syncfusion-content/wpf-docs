@@ -9,7 +9,7 @@ documentation: ug
 
 ## File Support
 
-Essential Edit WPF facilitates users to create, open, modify and save text files and programming language files. EditControl provides built-in support for a variety of text based file formats such as txt, cs, vb, sql, xaml and xml. It also enables to specify custom file types in the custom language configurations.
+Essential Edit WPF facilitates users to create, open, modify and save text files and programming language files. EditControl provides built-in support for a variety of text based file formats such as txt, cs, VB, SQL, XAML and XML. It also enables to specify custom file types in the custom language configurations.
 
 **Open** **a** **file**
 

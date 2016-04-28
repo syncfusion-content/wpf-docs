@@ -22,7 +22,7 @@ Section 1194.21 Software applications and operating systems.<br/><br/></td><td>
 Please refer to the Subpart B.<br/><br/></td></tr>
 <tr>
 <td>
-Section 1194.22 Web-based intranet and internet information and applications.<br/><br/></td><td>
+Section 1194.22 Web-based Intranet and Internet information and applications.<br/><br/></td><td>
 Not Applicable.<br/><br/></td></tr>
 <tr>
 <td>

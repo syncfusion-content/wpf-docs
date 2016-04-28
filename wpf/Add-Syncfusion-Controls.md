@@ -37,7 +37,7 @@ The following steps helps to add a required Essential WPF Control throughÂ XAMLÂ
 * Syncfusion.SfInput.WPF.dll
 * Syncfusion.SfShared.WPF.dll
 
-2.Include an xml namespace for the above assemblies to the Main window.
+2.Include an XML namespace for the above assemblies to the Main window.
 
 {% tabs %}
 

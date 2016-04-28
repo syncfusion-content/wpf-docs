@@ -205,7 +205,7 @@ Syncfusion.Core</td></tr>
 <td>
 RichTextBoxAdv</td><td>
 RichTextBoxAdv.WPF</td><td>
-WPF 3.5 and 4.0 framework: Syncfusion.Compression.Base Syncfusion.Core Syncfusion.DocIO.ClientProfile Syncfusion.RichTextDocIOParser.Wpf Syncfusion.RichTextRibbon.WPFSyncfusion.Shared.WpfSyncfusion.Tools.WPF WPF 4.5 and 4.5.1 framework: Syncfusion.Compression.Base Syncfusion.Core Syncfusion.DocIO.Base Syncfusion.RichTextDocIOParser.Wpf Syncfusion.RichTextRibbon.WPFSyncfusion.Shared.Wpf Syncfusion.Tools.WPF</td></tr>
+WPF 3.5 and 4.0 Framework: Syncfusion.Compression.Base Syncfusion.Core Syncfusion.DocIO.ClientProfile Syncfusion.RichTextDocIOParser.Wpf Syncfusion.RichTextRibbon.WPFSyncfusion.Shared.WpfSyncfusion.Tools.WPF WPF 4.5 and 4.5.1 Framework: Syncfusion.Compression.Base Syncfusion.Core Syncfusion.DocIO.Base Syncfusion.RichTextDocIOParser.Wpf Syncfusion.RichTextRibbon.WPFSyncfusion.Shared.Wpf Syncfusion.Tools.WPF</td></tr>
 <tr>
 <td>
 SfCalculator</td><td>
@@ -477,7 +477,7 @@ N>
 N>1. _Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager._
 N>2. _Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing._
 
-### Signing exe
+### Signing EXE
 
 The above process signs only deployment manifest. To sign the application executable, refer to the following steps.
 

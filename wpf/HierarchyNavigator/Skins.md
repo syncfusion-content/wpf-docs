@@ -15,7 +15,7 @@ Hierarchy Navigator supports different skins such as Windows 7, Office2010Blue, 
 
 The Windows 7 theme is applied to the HierarchyNavigator control by default.
 
-Add the following DLLs to apply the corresponding theme for Hierarchy Navigator control. SkinStorage class is used to apply a different visual style for a control, which is available in Syncfusion.Shared.WPF project.
+Add the following assemblies to apply the corresponding theme for Hierarchy Navigator control. SkinStorage class is used to apply a different visual style for a control, which is available in Syncfusion.Shared.WPF project.
 
 1. Create HierarchyNavigator instance either in XAML or code behind, as shown below.
 

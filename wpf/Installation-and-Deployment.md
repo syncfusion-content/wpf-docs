@@ -37,7 +37,7 @@ The steps to install the Syncfusion WPF NuGet Packages in Visual Studio are as f
 2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
    **Name**: Name of the package that listed in Available package sources  
-   **Source**: Syncfusion WPF NuGet Package feed url 
+   **Source**: Syncfusion WPF NuGet Package feed URL 
    [http://nuget.syncfusion.com/wpf](http://nuget.syncfusion.com/wpf)
     
    ![](Installation_images/NuGetConfig2.jpeg)
@@ -102,7 +102,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## Copy Local
 
-Copying assemblies in local folder is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its `Copy Local` property of the reference to `True`, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders and this deployment consists of copying the exe, dll's, xml's files to the client machines that are similar to manual copy.
+Copying assemblies in local folder is supported by the Syncfusion assembly reference in the Solution Explorer. It can be achieved by setting its `Copy Local` property of the reference to `True`, so that Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders and this deployment consists of copying the executable, dll's, xml's files to the client machines that are similar to manual copy.
 
 ![](Deployment_images/Deployment_img1.jpeg)
 
@@ -152,7 +152,7 @@ Before publishing, install the attached certificate in machine. Follow the below
 1. Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager.
 2. Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the .pfx to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing.
 
-### Signing exe
+### Signing EXE
 
 
 The above process signs only deployment manifest. To sign the application executable, refer to the following steps.
@@ -169,7 +169,7 @@ Sign the application executable by using the Post-build command and use the sign
 
 {% endtabs %}
 
-N> Now, sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory.
+N> Now, sign the EXE inside obj folder and Syncfusion.pfx file placed inside Project directory.
 
 
 ## Installed Location
