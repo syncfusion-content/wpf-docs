@@ -20,7 +20,7 @@ The following steps will helps to add ChromelessWindow
 Syncfusion.Shared.WPF.dll
 
 
-2) Include an xml namespace for the above assemblies to the Main window.
+2) Include an XML  namespace for the above assemblies to the Main window.
 
 {% tabs %}
 
