@@ -173,7 +173,7 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 
 ## Freezing caption rows when scrolling 
 
-You can freeze the group caption of the group in view until its records scrolled out of the view by setting the [SfDataGrid.AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) property to `true`.
+You can freeze the group caption of the group in view until its records scrolled out of the view by setting the [SfDataGrid.AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) property to `true`.
  
 {% tabs %}
 {% highlight xaml %}
@@ -232,7 +232,7 @@ this.dataGrid.CollapseAllGroup();
 
 #### Expand or Collapse the Group based on its level
 
-You can expand or collapse the group based on its level by using [SfDataGrid.ExpandGroupsAtLevel](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExpandGroupsAtLevel.html) and [SfDataGrid.CollapseGroupsAtLevel](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CollapseGroupsAtLevel.html) methods.
+You can expand or collapse the group based on its level by using [SfDataGrid.ExpandGroupsAtLevel](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExpandGroupsAtLevel.html) and [SfDataGrid.CollapseGroupsAtLevel](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CollapseGroupsAtLevel.html) methods.
 
 
 {% tabs %}
@@ -262,7 +262,7 @@ this.dataGrid.CollapseGroup(group);
 
 ### GroupDropArea Text
 
-You can change the GroupDropArea’ s text can by setting [SfDataGrid.GroupDropAreaText](http://help.syncfusion.com/cr/cref_files/wpf/sfgrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropAreaText.html) property.
+You can change the GroupDropArea’ s text can by setting [SfDataGrid.GroupDropAreaText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropAreaText.html) property.
 
 {% tabs %}
 {% highlight xaml %}
