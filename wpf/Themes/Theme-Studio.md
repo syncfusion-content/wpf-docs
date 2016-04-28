@@ -102,21 +102,21 @@ Gradient Palette
 
 N> Gradient Support has been provided only for Background color properties residing in Default, Header, Hover and Active categories.
 
-## Applying generated resource xaml in application
+## Applying generated resource XAML in application
 
-To [export](#exporting-custom-theme-from-theme-studio) the customized skin, click the `Export` button. The exported custom skin contains resource dictionary xaml files of Syncfusion controls and Framework Controls.
+To [export](#exporting-custom-theme-from-theme-studio) the customized skin, click the `Export` button. The exported custom skin contains resource dictionary XAML files of Syncfusion controls and Framework Controls.
 
-### Adding the xaml files to WPF Application
+### Adding the XAML files to WPF Application
 
 *	Open Visual Studio 20xx and create a WPF project.
 
 *	Add the necessary dll's for the controls used.
 
-For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` dll and dependency dll `Syncfusion.SfShared.WPF`.
+For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` assembly and dependency assembly `Syncfusion.SfShared.WPF`.
 
-*	The exported xaml file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
+*	The exported XAML file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
 
-*	From the Output folder, browse the `Syncfusion Controls` folder and add the required xaml file to the project.
+*	From the Output folder, browse the `Syncfusion Controls` folder and add the required XAML file to the project.
 
 ![](ThemeStudio_images/ThemeStudio_img14.png)
 
@@ -169,13 +169,13 @@ Click the `Export` button once selected the desired controls and provide a name 
 ![](ThemeStudio_images/ThemeStudio_img16.png)
 
 
-N> To obtain the customized themes for multiple controls in a single xaml file, check the `Merge and Export` option before clicking `Export` button.
+N> To obtain the customized themes for multiple controls in a single XAML file, check the `Merge and Export` option before clicking `Export` button.
 
 The color values for customized theme will be saved in `*.wpft` format file. Along with `*.wpft` file, two folders `Framework Controls` and `Syncfusion Controls` are also generated.
 
-*   `Framework Controls`: This folder contains the resource dictionary xaml files of framework controls.
+*   `Framework Controls`: This folder contains the resource dictionary XAML files of Framework controls.
 
-*	`Syncfusion Controls`: This folder contains the resource dictionary xaml files of selected syncfusion controls.
+*	`Syncfusion Controls`: This folder contains the resource dictionary XAML files of selected Syncfusion controls.
 
 ![](ThemeStudio_images/ThemeStudio_img17.png)
 

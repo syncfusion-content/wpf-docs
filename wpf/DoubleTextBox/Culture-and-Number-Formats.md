@@ -180,7 +180,7 @@ End Function
 ![](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
 
 
-The following code illustrate how to set NumerGroupSeparator, NumberDecimalDigits and NumberDecimalSeparator.
+The following code illustrate how to set NumberGroupSeparator, NumberDecimalDigits and NumberDecimalSeparator.
 
 {% tabs %}
 

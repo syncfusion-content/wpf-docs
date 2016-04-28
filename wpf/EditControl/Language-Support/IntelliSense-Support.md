@@ -655,7 +655,7 @@ Contains current Cursor Index where the event is triggered.<br/><br/></td></tr>
 <tr>
 <td>
 ItemsSource<br/><br/></td><td>
-Contains the ItemsSource to be applied to the IntelliSense, it can also be changed if there are any Custom Filterations to be done in the event.<br/><br/></td></tr>
+Contains the ItemsSource to be applied to the IntelliSense, it can also be changed if there are any Custom Filtrations to be done in the event.<br/><br/></td></tr>
 <tr>
 <td>
 LineIndex<br/><br/></td><td>

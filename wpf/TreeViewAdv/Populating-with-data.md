@@ -188,7 +188,7 @@ DataBinding is a powerful mechanism to auto-update data between the business mod
 
 XML file can also be used as ItemsSource for the TreeViewAdv. The following example illustrates this:
 
-1. Create the xml file with the following details and name it as Data.xml:
+1. Create the XML file with the following details and name it as Data.xml:
 
 {% tabs %}
 

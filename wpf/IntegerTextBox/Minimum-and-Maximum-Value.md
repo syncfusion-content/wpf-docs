@@ -75,7 +75,7 @@ MinValidation is set to OnKeyPress, so you cannot enter a value less than the Mi
 
 {%seealso%}
 
-Nullvalue support
+NullValue support
 
 Culture and NumberFormats
 

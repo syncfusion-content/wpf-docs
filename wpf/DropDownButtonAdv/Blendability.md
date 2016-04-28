@@ -24,7 +24,7 @@ To modify the button control:
 
 
 
-* The Create Style Resource window will appear as shown below. Click Ok to create a new style for Button Control.
+* The Create Style Resource window will appear as shown below. Click OK to create a new style for Button Control.
 
 
 

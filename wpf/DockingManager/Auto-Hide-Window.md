@@ -334,7 +334,7 @@ To enable or disable the AutoHide functionality for a specific child in the Dock
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img10.jpeg)
 
-## Change AutoHide behaviour like Visual Studio 2013
+## Change AutoHide behavior like Visual Studio 2013
 
 AutoHide panel open and close behavior can be changed as Visual Studio 2013. SidePanel can be opened by click on SideTabItem and already opened side panel can be closed by again click on the same item.  This behavior of DockingManager can be enabled by setting its `IsVs2013SidePanelEnabled` property to `True` and `IsAnimationEnabledOnMouseOver` property to `False`. 
 

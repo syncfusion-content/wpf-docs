@@ -29,7 +29,7 @@ To execute the locally installed samples, select the corresponding product and c
 
 ## Online Samples
 
-To execute the online [samples](http://silverlight.syncfusion.com/samples/WPF/Samples.html) click “ONLINE SAMPLES” that navigates to Click Once download. 
+To execute the online [samples](http://silverlight.syncfusion.com/samples/WPF/Samples.html) click “ONLINE SAMPLES” that navigates to ClickOnce download. 
 
 ## Offline samples
 
