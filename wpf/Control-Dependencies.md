@@ -9,7 +9,7 @@ documentation: ug
 
 # Control Dependencies
 
-The following table illustrates the Control’s assembly and its dependencies.
+The following table illustrates the Control's assembly and its dependencies.
 
 <table>
 <tr>
@@ -21,7 +21,7 @@ Dependencies</th></tr>
 <td>
 SfDataGrid </td><td>
 Syncfusion.SfGrid.WPF</td><td>
-Syncfusion.Data.WPF<br/><br/>Syncfusion.Shared.WPF </td></tr>
+Syncfusion.Data.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
 <tr>
 <td>
 SfDataPager</td><td>
@@ -427,7 +427,7 @@ Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Share
 
 ## SfSkinManager Dependencies
 
-The following table illustrates the SfSkinManager theme’s assembly and dependencies:
+The following table illustrates the SfSkinManager theme's assembly and dependencies:
 
 <table>
 <tr>
