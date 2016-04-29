@@ -113,7 +113,7 @@ The **NoOfFractionalDigits** property is used to set the number of fractional di
             this.Grid.Children.Add(circularGauge);
             
 {% endhighlight %}
-{% endtabs%}
+{% endtabs %}
 
 ![](Labels_images/Labels_img3.png)
 
