@@ -320,7 +320,7 @@ Specifies the line number of block’s end. <br/><br/></td></tr>
 <tr>
 <td>
 IsExpanded<br/><br/></td><td>
-Specifies the state of the LineItem. This property displays “ –“ symbol for true value and “+” symbol for false value.<br/><br/></td></tr>
+Specifies the state of the LineItem. This property displays  '–' symbol for true value and '+' symbol for false value.<br/><br/></td></tr>
 <tr>
 <td>
 LineStartBlock<br/><br/></td><td>

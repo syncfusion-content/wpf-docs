@@ -277,7 +277,7 @@ Symbol is an **enum** property that provides symbol options for the symbol point
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
-{% endtabs%}
+{% endtabs %}
 
 ![](Pointers_images/Pointers_img6.png)
 
