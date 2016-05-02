@@ -66,7 +66,7 @@ VerticalOffset</td><td>
 This is an attached property that gets or sets the tooltip offset position in accordance with the VerticalAlignment property.</td></tr>
 </table> 
 
-N> : By default, the ToolTip is disabled. It must be enabled in order to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
+N> By default, the ToolTip is disabled. It must be enabled in order to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
 
 The following code example can be added to enable and customize the ToolTip feature.
 

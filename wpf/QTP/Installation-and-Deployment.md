@@ -84,7 +84,7 @@ The executable files for the samples are available in the following location:
 
 ### {Installed location of the product}\ WPF\QTPSamples\bin
 
-N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location._
+N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location.
 
 ### Source Code Location
 

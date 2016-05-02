@@ -473,9 +473,11 @@ Publish options dialog box
 {:caption}
 
 N> Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
+
 N>
-N>1. _Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager._
-N>2. _Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing._
+ 
+ 1. Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager.
+ 2. Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing.
 
 ### Signing EXE
 

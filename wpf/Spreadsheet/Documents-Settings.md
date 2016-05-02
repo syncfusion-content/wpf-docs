@@ -35,7 +35,7 @@ The following code illustrates how to bind the ProtectWorkbookCommand__to a butt
 
 {% endhighlight %}
 
-N> The ProtectWorkbookCommand will open the Unprotect Workbook dialog box if the workbook is already protected._
+N> The ProtectWorkbookCommand will open the Unprotect Workbook dialog box if the workbook is already protected.
 
 ### Unprotect workbook
 

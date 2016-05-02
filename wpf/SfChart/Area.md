@@ -313,7 +313,7 @@ Label="2014" YBindingPath="postion"/>
 ![Column chart type place one over another.](Area_images/Area_img7.jpeg)
 
 
-N>As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
+N> As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
 
 ## Serialization
 

@@ -36,7 +36,7 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowEditing.html) takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html).
+N> takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html).
 
 ![](Editing_images/Editing_img1.png)
 

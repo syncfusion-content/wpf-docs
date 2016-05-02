@@ -108,7 +108,7 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
 
    ![](Getting-Started_images/Getting-Started_img10.png)
 
-   N> The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True._
+   N> The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True.
 
    ![](Getting-Started_images/Getting-Started_img11.png)
 
