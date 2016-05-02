@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging support in SfDataGrid.
-description: How to use the SfDataPager in SfDataGrid.
+description: How to use the SfDataPager with SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
