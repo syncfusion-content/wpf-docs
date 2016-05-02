@@ -9,253 +9,537 @@ documentation: ug
 
 # Paging
 
-This section explains you how to use Paging in SfDataGrid and you can see the types of Paging and available properties and methods in Paging.
+SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/wpf/sfdatapager) control user guide for more information.
 
-## Overview:
+## Getting started
 
-The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It provides 
-many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager control, you can 
-[click here](http://help.syncfusion.com/wpf/sfdatapager).
+Follow the below steps to bind SfDataGrid with SfDataPager.
+ 
+1. Create IEnumerable collection that you want to bind and set it to `SfDataPager.Source` property.
 
-There are two different modes in Data Paging as follows,
+2. Set [SfDataPager.PageSize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html) property to specify the number of records to be displayed per page.
 
-NormalPaging:__NormalPaging loads the entire data collection to the DataPager.
-
-OnDemandPaging:__OnDemandPaging loads the data to current page dynamically in DataPager.
-
-## Normal Paging:
-
-You can page the data in DataGrid using SfDataPager control. You can refer the following steps to enable Paging in DataGrid control.
-
-* Create a new DataPager and bind the data collection to the Source property in SfDataPager.
-* You can set the PageSize property. DataPager splits the data into separate pages depending on the PageSize value.
-* Bind the PagedSource property of the DataPager to the ItemsSource property of DataGrid.
-
-The following code example illustrates using DataPager with the SfDataGrid control.
+3. Bind [SfDataPager.PagedSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PagedSource.html) to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. So whenever the page is changed, `PagedSource` will be update based on current page.
 
 
+
+{% tabs %}
 {% highlight xaml %}
-
-
-
-<Window.DataContext>
-
-<local:ViewModel/>
-
-</Window.DataContext>
-
 <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
 
-<Grid.RowDefinitions>
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                Grid.Row="0"
+	ItemsSource="{Binding ElementName=dataPager,Path=PagedSource}"/>
+    <syncfusion:SfDataPager x:Name="dataPager"
+                Grid.Row="1"
+                PageSize="5"
+                Source="{Binding Orders}"/>
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+public class ViewModel
+{
+    private ObservableCollection<OrderInfo> _orders;
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set { _orders = value; }
+    }
 
-<RowDefinition Height=”*” />
+    public ViewModel()
+    {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
+    }
 
-<RowDefinition Height=”Auto” />
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+    }
+}
 
-</Grid.RowDefinitions>
+public class OrderInfo
+{
+    int orderID;
+    string customerId;
+    string country;
+    string customerName;
+    string shippingCity;
 
-<sfgrid:SfDataGrid AutoGenerateColumns=”True” 
+    public int OrderID
+    {
+          get {   return orderID;  }
+          set {   orderID = value; }
+    }
 
-                   ColumnSizer=”Star”
+    public string CustomerID
+    {
+          get {  return customerId; }
+          set {  customerId = value; }
+    }
 
-                   ItemsSource=”{Binding ElementName=sfDataPager, Path=PagedSource}”/>
+    public string CustomerName
+    {
+          get {  return customerName; }
+          set {  customerName = value;}
+    }
 
-<datapager:SfDataPager x:Name=”sfDataPager” 
+    public string Country
+    {
+          get { return country; }
+          set  {  country = value; }
+    }
 
-                         Grid.Row=”1” 
+    public string ShipCity
+    {
+         get {  return shippingCity; }
+         set {  shippingCity = value; }
+    }
+    public OrderInfo(int orderId, string customerName, string country, string     
+    customerId,string shipCity)
+    {
+         this.OrderID = orderId;
+         this.CustomerName = customerName;
+         this.Country = country;
+         this.CustomerID = customerId;
+         this.ShipCity = shipCity;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-                         AccentBackground=”DodgerBlue” 
+![](Paging_images/Paging_img1.png)
 
-                         NumericButtonCount=”10” 
+#### Limitations
 
-                         PageSize=”15”
+1. SfDataPager doesn’t accepts `DataTable` as Source. 
+2. `AddNewRow` is not supported in SfDataGrid.
+3. `FilterRow` is not supported in SfDataGrid.
 
-                               Source=”{Binding OrdersDetails}” />
+
+## Load data in on-demand
+
+SfDataPager allows you to load data for current page alone using `OnDemandPaging` instead of loading data for all pages.
+
+Follow the below steps to load the `ItemsSource` for page in on-demand,
+
+1. Set [SfDataPager.UseOnDemandPaging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPaging.html) as `true`.
+ 
+2. Set [SfDataPager.PageCount](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html) based on total number of records and [SfDataPager.PageSize](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html) property.
+
+3. Use [OnDemandLoading](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~OnDemandLoading_EV.html) event to load the `ItemsSource` for current page using [LoadDynamicItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~LoadDynamicItems.html) method.
+
+[OnDemandLoading](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~OnDemandLoading_EV.html) event is raised when SfDataPager moves to another page and you can load the `ItemsSource` for corresponding page through `OnDemandLoading` event. 
+
+[OnDemandLoadingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members,
+
+1. `StartIndex` - returns the start index based on `PageIndex` (Number of previous pages * PageSize).
+
+2. `PageSize` - denotes the number of records to be displayed in the page.
+
+N> Do not assign `SfDataPager.Source` property while using `OnDemandPaging`.
+
+
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                                               Grid.Row="0"
+                                               ItemsSource="{Binding ElementName=dataPager,Path=PagedSource}"/>
+    <syncfusion:SfDataPager x:Name="dataPager" 
+                                                  PageCount="3"
+                                                  PageSize="10"     
+                                                  UseOnDemandPaging="True"
+                                                  Grid.Row="1"/>
 
 </Grid>
-
 {% endhighlight %}
+{% highlight c# %}
+private ObservableCollection<OrderInfo> source;
+
+public MainWindow()
+{
+    InitializeComponent();
+    dataPager.OnDemandLoading += dataPager_OnDemandLoading;
+}
+
+private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs args)
+{
+    source = (this.DataContext as ViewModel).Orders;
+    dataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
+}
+{% endhighlight %}
+{% endtabs %}
 
 
+### Resetting cache
 
-The following screenshot displays the output. 
-
-![](Features_images/Features_img143.png)
-
-
-
-DataPager with the SfDataGrid control
-{:.caption}
-## OnDemandPaging:
-
-In normal Paging, data collection is entirely loaded initially to the DataPager. However, SfDataPager allows you to load the data for the current page item dynamically in OnDemandPaging. To enable OnDemandPaging, you can set UseOnDemandPaging to ‘true’ in SfDataPager control.
-
-To load current page item dynamically you can hook OnDemandLoading event. In the OnDemandLoading event, use the LoadDynamicItems method to load the data for the corresponding page in DataPager.
-
-The OnDemandLoading event is triggered when the pager moves to the corresponding page. The OnDemandLoading event contains the following event arguments:
-
-* StartIndex: Corresponding page start index.
-* PageSize: Number of items to be loaded for that page.
-
-
-
-N> In OnDemandPaging, you cannot assign a value for the Source property in SfDataPager.
-
-The following code example illustrates defining DataPager for OnDemandPaging:
-
-
+While navigating between the pages, records are loaded through ‘OnDemandLoading’ event and the records of navigated pages will be maintained in cache. If you navigate to already navigated page, the records are loaded from cache instead of loading from ‘OnDemandLoading’ event. You can clear the cache by using [PageCollectionView.ResetCache](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.PagedCollectionView~ResetCache.html) method. Once this method is invoked, the ‘OnDemandLoading’ event will be raised while navigating multiple times to the same page.
+{% tabs %}
 {% highlight xaml %}
+<syncfusion:SfDataPager x:Name="dataPager" 
+                                             PageCount="3"
+                                             PageSize="10"     
+                                             UseOnDemandPaging="True"
+                                            Grid.Row="1"/>
+{% endhighlight %}
+{% highlight c# %}
+ObservableCollection<OrderInfo> source;
+
+public MainWindow()
+{
+    InitializeComponent();
+    dataPager.OnDemandLoading += dataPager_OnDemandLoading;
+    source = (this.DataContext as ViewModel).Orders;
+}
+
+private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs args)
+{
+    dataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
+    //resetting cache for all pages.
+  (dataPager.PagedSource as PagedCollectionView).ResetCache();
+}
+{% endhighlight %}
+{% endtabs %}
 
 
-
-<Window.DataContext>
-
-<local:ViewModel/>
-
-</Window.DataContext>
+You can also clear the cache to particular page by specifying the `PageIndex` in [PageCollectionView.ResetCacheForPage](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.PagedCollectionView~ResetCacheForPage.html) method.
 
 
+{% tabs %}
+{% highlight c# %}
+(dataPager.PagedSource as PagedCollectionView).ResetCacheForPage(this.dataPager.PageIndex);
+{% endhighlight %}
+{% endtabs %}
 
+
+### Loading data from database in on-demand
+You can read the data from database in on-demand (here, records are retrieved from `Northwind` data provider) in ‘OnDemandLoading’ event handler.
+
+
+{% tabs %}
+{% highlight xaml %}
 <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                                               Grid.Row="0"
+                                               AutoGenerateColumns="False"
+                                               ItemsSource="{Binding Path=PagedSource,
+                                                    ElementName=dataPager}">
+        <syncfusion:SfDataGrid.Columns>
+            <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Left" />
+            <syncfusion:GridTextColumn MappingName="CustomerID" />
+            <syncfusion:GridTextColumn MappingName="EmployeeID" TextAlignment="Right" />
+            <syncfusion:GridTextColumn HeaderText="Ship Name" MappingName="ShipName" />
+            <syncfusion:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />
+            <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
+            <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
+        </syncfusion:SfDataGrid.Columns>
+    </syncfusion:SfDataGrid>
+    <syncfusion:SfDataPager x:Name="dataPager"
+                                                 Grid.Row="1"                                                 
+                                                 PageCount="5"
+                                                 PageSize="10"
+                                                 UseOnDemandPaging="True" />
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainWindow : Window
+{
+    Northwind northWind;
+    public MainWindow()
+    {
+        InitializeComponent();
+        dataPager.OnDemandLoading += dataPager_OnDemandLoading;
+        string connectionString = string.Format(@"Data Source = {0}", ("Northwind.sdf"));
+       //northwind dataprovider connectivity.
+        northWind = new Northwind(connectionString);
+    }
 
+    private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs args)
+    {                      
+        dataPager.LoadDynamicItems(args.StartIndex, northWind.Orders.Skip(args.StartIndex).Take(args.PageSize).ToList());
+    }
+{% endhighlight %}
+{% endtabs %}
+
+
+### Changing PageCount at run time while filtering
+You can change the [SfDataPager.PageCount](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html) at runtime based on the records count in ‘OnDemandPaging’. 
+Here, PageCount are modified by filtering the records in run time.
+
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="250" />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-
             <RowDefinition Height="*" />
-
             <RowDefinition Height="Auto" />
-
         </Grid.RowDefinitions>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+        <StackPanel Grid.Column="1">
+            <TextBlock Width="250"
+                       Margin="10"
+                       FontSize="14"
+                       Foreground="DarkBlue"
+                       Text="Enter value to filter the ShipName column (Filter by contains)"
+                       TextWrapping="Wrap" />
+            <TextBox Name="fitlerTextBox"
+                     Width="150"
+                     Margin="10" />
+            <Button Width="100"
+                    Margin="10"
+                    Click="FilterBtn_Click"
+                    Content="Filter" />
+        </StackPanel>
+        <syncfusion:SfDataGrid x:Name="dataGrid"
+                               Grid.Row="0"
+                               AllowEditing="True"
+                               AutoGenerateColumns="False"
+                               ItemsSource="{Binding Path=PagedSource,
+                                                     ElementName=dataPager}">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn HeaderText="Ship Name" MappingName="ShipName" />
+                <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Left" />
+                <syncfusion:GridTextColumn MappingName="CustomerID" />
+                <syncfusion:GridTextColumn MappingName="EmployeeID" TextAlignment="Right" />
+                <syncfusion:GridTextColumn HeaderText="Ship Address" MappingName="ShipAddress" />
+                <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
+                <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+        <syncfusion:SfDataPager x:Name="dataPager"
+                                Grid.Row="1"
+                                PageCount="5"
+                                PageSize="10"
+                                UseOnDemandPaging="True" />
+    </Grid>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainWindow : Window
+{
+    List<Orders> source = new List<Orders>();
+    Northwind northWind;
+    public MainWindow()
+    {
+        InitializeComponent();
+        dataPager.OnDemandLoading += dataPager_OnDemandLoading;
+        string connectionString = string.Format(@"Data Source = {0}", ("Northwind.sdf"));
+       //northwind dataprovider connectivity.
+        northWind = new Northwind(connectionString);      
+source = northWind.Orders.ToList(); 
+    }
 
-                         AllowResizingColumns="True"
+    private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs args)
+    {        
+        dataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
+    }
 
-                         ColumnSizer="Star"
+private List<Orders> ApplyFilter(Northwind NorthwindSource)
+{
+   //records are filtered based on ShipName column
+    return NorthwindSource.Orders.Where(item => item.ShipName.Contains(fitlerTextBox.Text)).ToList();
+}
 
-                         ItemsSource="{Binding                       Path=PagedSource,ElementName=sfDataPager}">
+private void FilterBtn_Click(object sender, RoutedEventArgs e)
+{
+    source = ApplyFilter(northWind);
+   //page count resets based on filtered records.
+    if (source.Count() < dataPager.PageSize)
+        this.dataPager.PageCount = 1;
+    else
+    {
+        var count = source.Count() / dataPager.PageSize;
+        if (source.Count() % dataPager.PageSize == 0)
+            this.dataPager.PageCount = count;
+        else
+            this.dataPager.PageCount = count + 1;
+    }
+    this.dataPager.MoveToPage(0);
+}
+{% endhighlight %}
+{% endtabs %}
 
 
+Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
+![](Paging_images/Paging_img2.png)
 
-<datapager:SfDataPager x:Name="sfDataPager"
+You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
 
-                         AccentBackground="DodgerBlue"
+### Sorting complete collection
 
-                         NumericButtonCount="10"
+You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) event.
+In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
-                         PageCount="50"
 
-                         PageSize="18"
+{% tabs %}
+{% highlight xaml %}
+<Window.DataContext>
+    <local:ViewModel />
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
 
-                         UseOnDemandPaging="True" />
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                                               Grid.Row="0"
+                                               ItemsSource="{Binding ElementName=dataPager,Path=PagedSource}"/>
+    <syncfusion:SfDataPager x:Name="dataPager" 
+                                                  PageCount="4"
+                                               PageSize="10"     
+                                               UseOnDemandPaging="True"                                              
+                                               Grid.Row="1"/>
 
 </Grid>
-
-
 {% endhighlight %}
+{% highlight c# %}
+using Syncfusion.Data.Extensions;
+List<OrderInfo> source;
 
+public MainWindow()
+{
+    InitializeComponent();
+    source = new List<OrderInfo>();
+    dataPager.OnDemandLoading += dataPager_OnDemandLoading;
+    source = (this.DataContext as ViewModel).Orders;
+    this.dataGrid.SortColumnsChanging += DataGrid_SortColumnsChanging;
+}
 
-The following code example illustrates how to load data for the DataPager control dynamically.
+private void DataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
+{
+    (dataPager.PagedSource as PagedCollectionView).ResetCache();
+    (dataPager.PagedSource as PagedCollectionView).ResetCacheForPage(dataPager.PageIndex);
+    if (e.Action == NotifyCollectionChangedAction.Add || e.Action == NotifyCollectionChangedAction.Replace)
+    {
+        var sortDesc = e.AddedItems[0];
+        if (sortDesc.SortDirection == ListSortDirection.Ascending)
+        {
+        //records are sorted in ascending order.
+            source = source.OfQueryable().AsQueryable().OrderBy(sortDesc.ColumnName).Cast<OrderInfo>().ToList();
+        }
+        else
+        {
+        //records are sorted descending order.
+            source =
+                source.OfQueryable()
+                        .AsQueryable()
+                        .OrderByDescending(sortDesc.ColumnName)
+                        .Cast<OrderInfo>()
+                        .ToList();
+        }
+        this.dataPager.MoveToPage(dataPager.PageIndex);
+    }
 
-
-{% highlight C# %}
-
-
-
-
-
-private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
-
-{         sfDataPager.LoadDynamicItems(args.StartIndex,source.Skip(args.StartIndex).Take(args.PageSize));
-
+private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs args)
+{
+    dataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
 }
 {% endhighlight %}
+{% endtabs %}
 
 
+![](Paging_images/Paging_img3.png)
+
+### Loading ItemsSource for page using async and await
+
+When you fetch the data from external server, it takes some time to load the data. In this case, you can delay the loading in `SfDataPager.OnDemandLoading` event using `async` and `await`. 
+Here `dataPager_OnDemandLoading` event is defined with `async` keyword to load the data by time delay. GetEmployeesDetailsListAync method is invoked in `dataPager_OnDemandLoading` with await keyword which holds the execution until returning the data. 
 
 
-The following screenshot displays the output.
+{% tabs %}
+{% highlight c# %}
+private EmployeeInfoRespository repository;
 
-
-
-![](Features_images/Features_img144.png)
-
-
-
-DataPager for OnDemandPaging
-{:.caption}
-When you use OnDemandPaging,PagedSource loads only the current page data. When you navigate to another page, OnDemandLoading event is fired and loads another set of data and it maintains the previous page data also. When you navigate to previous page again, OnDemandLoading event is not fired and load the previously maintained data to the corresponding page. When you don’t want to maintain the previous page data, you can call PagedCollectionView.ResetCache() in OnDemandLoading event. ResetCache method call resets the cache except current page.
-
-The following code example illustrates how to use ResetCache method,
-
-
-{% highlight C# %}
-
-
-
-
-
-private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
-
-{         sfDataPager.LoadDynamicItems(args.StartIndex,source.Skip(args.StartIndex).Take(args.PageSize));
-
-(sfDataPager.PagedSource as PagedCollectionView).ResetCache();
-
+public MainWindow()
+{
+    InitializeComponent();
+    repository = new EmployeeInfoRespository();
 }
-{% endhighlight %}
 
+//async method which return data with some delay
+public async Task<List<Employees>> GetEmployeesDetailsListAync(int startindex, int pagesize)
+{
+    var employees = new List<Employees>();
+    //wait the method Execution to 2000 milliseconds
+    System.Threading.Thread.Sleep(2000);
+    for (int i = startindex; i < (startindex + pagesize); i++)
+    {
+        //Get the Data's to SfDataPager from ViewModel class
+        employees.Add(repository.GetEmployees(i,pagesize));
+    }
+    return employees;
+}
 
-## How to
-
-### Export All Pages to Excel
-
-DataGrid allows you to export to Excel when Paging is enabled. PagedSource exports only the first page by default. By setting ExcelExportOptions.ExportAllPages to true, you can export all pages to Excel.
-
-ExportAllPages_:_ Specifies whether the method exports all pages for PagedSource. By default, it exports the first page only.To know more about ExportOptions, you can ClickHere.
-
-The following code example illustrates how to use page options in DataGrid.
-
-
-{% highlight C# %}
-
-
-
- //Setting the Exporting Options by craeting a instance for ExcelExportingOptions.
-
-ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
-
-exportingOptions.ExportAllPages = true;            
-
-//following code exports datagrid to excel and returns Excel Engine.
-
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, exportingOptions);
+//Delegate handler marked as async to use await inside
+private async void dataPager_OnDemandLoading(object sender, OnDemandLoadingEventArgs args)
+{
+    var source = await GetEmployeesDetailsListAync(args.StartIndex, args.PageSize);
+    //Data's loaded to SfDataPager dynamically     
+     dataPager.LoadDynamicItems(args.StartIndex, source.Take(args.PageSize));
+    //Resets the previously loaded page data's. It’s optional         
+    (dataPager.PagedSource as PagedCollectionView).ResetCache();
+}
 
 {% endhighlight %}
+{% endtabs %}
 
 
+`GetEmployees` method in EmployeeInfoRepository returns the record to SfDataPager.
+{% tabs %}
+{% highlight c# %}
+public class EmployeeInfoRespository
+{
+    public EmployeeInfoRespository()
+    {
+    }
 
-### Export Pages to Different sheets
+    public List<Employees> GetEmployees(int startindex, int pagesize)
+    {
+        int j = 0;
+        var employees = new List<Employees>();
+        for (int i = startindex; i < (startindex + pagesize); i++)
+        {
+            Employees employee = GetEmployee(employees);
+            employees.Add(employee);
+        }
+        return employees;
+    }
 
-Datagrid allows you to export PagedSource to different sheets or to single sheet by using ExportPageOptions with two different modes as follows,
-
-ExportPageOptions.ExportToDifferentSheets_:_ You can export each page in different sheets.
-
-ExportPageOptions.ExportToSingleSheet_:_ You can export all the pages in single sheet.
-
-The following code example illustrate how to use ExportPageOptions in DataGrid.
-
-
-{% highlight C# %}
-
-
-
- //Setting the Exporting Options by craeting a instance for ExcelExportingOptions.
-
-ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
-
-exportingOptions.ExportPageOptions = ExportPageOptions.ExportToDifferentSheets;
-
-//following code exports datagrid to excel and returns Excel Engine.
-
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, exportingOptions);
+  }
 {% endhighlight %}
+{% endtabs %}
 
+
+### Limitations
+1. UI Filtering is not supported. You can code in application level to filter the data.
+2. Data processing operations (Sorting, Grouping) are done only in the current page. 
+3. Deleting is not supported. You can code to delete row in application level. 
+4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
