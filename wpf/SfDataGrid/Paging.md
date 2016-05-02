@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging | SfDataGrid | WPF | Syncfusion
-description: paging
+title: Paging support in SfDataGrid.
+description: How to use the SfDataPager in SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
