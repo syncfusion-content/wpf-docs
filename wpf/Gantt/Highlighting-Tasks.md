@@ -63,6 +63,7 @@ HighlightedItems="{Binding HighlightedTasks}">
 </sync:GanttControl>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 

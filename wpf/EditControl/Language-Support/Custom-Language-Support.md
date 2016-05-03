@@ -26,7 +26,7 @@ Each of these classes has basic level of implementations to let the users define
 * Allows the developer to choose the base class considering the complexity and type of language that developer is planning to create. 
 * Provides much more flexibility to developers than before in writing their custom logics in syntax coloring and outlining.
 
-Supports **databinding** of **Lexem** and formats by implementing their custom business classes with **ILexem** and **IFormat** **Interfaces**.
+Supports **DataBinding** of **Lexem** and formats by implementing their custom business classes with **ILexem** and **IFormat** **Interfaces**.
 
 **Customization** **of** **features**
 
@@ -320,7 +320,7 @@ Specifies the line number of block’s end. <br/><br/></td></tr>
 <tr>
 <td>
 IsExpanded<br/><br/></td><td>
-Specifies the state of the LineItem. This property displays “ –“ symbol for true value and “+” symbol for false value.<br/><br/></td></tr>
+Specifies the state of the LineItem. This property displays  '–' symbol for true value and '+' symbol for false value.<br/><br/></td></tr>
 <tr>
 <td>
 LineStartBlock<br/><br/></td><td>

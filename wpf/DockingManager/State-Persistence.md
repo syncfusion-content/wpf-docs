@@ -152,9 +152,9 @@ DockingManager1.ResetState()
 
 {% endtabs %}
 
-### Save and Load using Xml file 
+### Save and Load using XML file 
 
-DockingManager allows to save and load the xml file. It is done using binary formatter and soap formatter. The code example is below:
+DockingManager allows to save and load the XML file. It is done using binary formatter and soap formatter. The code example is below:
 
 {% tabs %}
 

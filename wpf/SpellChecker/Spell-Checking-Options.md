@@ -9,7 +9,7 @@ documentation: ug
 
 # Spell Checking Options
 
-The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of  email id's and addresses, filenames, html tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
+The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of  email id's and addresses, filenames, HTML tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 
 ### Properties
 
@@ -33,7 +33,7 @@ Specifies whether or not to ignore html tags during Spell Check. Default value i
 <tr>
 <td>
 ExcludeInternetAddress</td><td>
-Specifies whether or not to ignore internet address during Spell Check. Default value is True.</td></tr>
+Specifies whether or not to ignore Internet address during Spell Check. Default value is True.</td></tr>
 <tr>
 <td>
 ExcludeWordsInMixedCase</td><td>

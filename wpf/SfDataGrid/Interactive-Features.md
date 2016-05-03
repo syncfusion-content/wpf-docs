@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Support to Interact with SfDataGrid.
-description: interactive features
+title: Interactive feature of SfDataGrid.
+description: Interactive feature of SfDataGrid | SfDataGrid | ContextMenu | ToolTip | Column chooser | Drag and Drop
 platform: wpf
 control: SfDataGrid
 documentation: ug

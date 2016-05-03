@@ -720,7 +720,7 @@ Reference links </th></tr>
 <tr>
 <td>
 AddToTargetManagersList </td><td>
- Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is, dockingmgr - docking manager to be added to the target list.</td><td>
+ Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is, dockingmgr - DockingManager to be added to the target list.</td><td>
  (DockingManager dockingmanager)</td><td>
 NA</td><td>
 void </td><td>

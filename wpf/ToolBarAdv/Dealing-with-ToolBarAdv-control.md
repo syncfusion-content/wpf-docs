@@ -361,7 +361,7 @@ Grid1.Children.Add(tray);
 ![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
 
 
-## Hidding the ToolBarItem
+## Hiding the ToolBarItem
 
 To hide the particular ToolBarItem, the `IsAvailable` an attached property of the ToolBarAdv need to set as False. By default its value is True.
 

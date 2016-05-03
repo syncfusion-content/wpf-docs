@@ -586,7 +586,7 @@ End Class
 
 {% endtabs %}
 
-4.Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
+4.Override OnStartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 	 
 {% tabs %}
 

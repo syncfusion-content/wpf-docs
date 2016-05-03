@@ -17,7 +17,7 @@ There are several ways to add Syncfusion control in to the Visual Studio WPF pro
 * Create a WPF project in Visual Studio and refer to the following assemblies.
 1. Syncfusion.Tools.Wpf
 2. Syncfusion.Shared.Wpf
-* Include an xml namespace for the above assemblies to the Main window.
+* Include an XML namespace for the above assemblies to the Main window.
 
 {% tabs %}
 
@@ -237,7 +237,7 @@ DockingManager supports various visual styles by using the `SfSkinManager`. To a
 1. Syncfusion.SfSkinManager.Wpf
 2. Syncfusion.Thems.VisualStudio2013.Wpf
 
-* Include an xml namespace for the `SfSkinManager` assembly to the MainWindow.
+* Include an XML namespace for the `SfSkinManager` assembly to the MainWindow.
 {% tabs %}
 
 {% highlight XAML %}

@@ -19,7 +19,7 @@ The `UpDown` control can be added to an application by using the following ways.
 There are several ways to add Syncfusion control in to the Visual Studio WPF project. The following code example illustrates how to add the `UpDown` control to an application through XAML.
 
 * Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
-* Include an xml namespace for the above assemblies to the Main window.
+* Include an XML namespace for the above assemblies to the Main window.
 
 {% tabs %}
 

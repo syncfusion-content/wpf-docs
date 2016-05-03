@@ -87,7 +87,7 @@ The digital gauge also performs skew transformation for the digital characters. 
     this.Grid.Children.Add(digitalgauge);
 
 {% endhighlight %}
-{% endtabs%}
+{% endtabs %}
 
 ![](Transformation-of-Characters_images/Transformation-of-Characters_img3.jpeg)
 

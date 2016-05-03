@@ -11,9 +11,9 @@ documentation: ug
 
 ## Version Compatibility
 
-The table represents the .NET framework versions vs Syncfusion version.
+The table represents the .NET Framework versions vs Syncfusion version.
 
-### .NET framework versions vs Syncfusion version
+### .NET Framework versions vs Syncfusion version
 
 <table>
 <tr>

@@ -20,7 +20,7 @@ This section explains how to add the `DoubleTextBox` control to an application a
 The following ways explains how to add DoubleTextBox control using XAML code:
 
 * Create a WPF project in Visual Studio and refer `Syncfusion.Shared.Wpf` assembly to the project.    
-* Include an xml namespace for the above assemblies to the Main window. 
+* Include an XML namespace for the above assemblies to the Main window. 
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ Title="MainWindow" Height="350" Width="525">
 
 ### Create the DoubleTextBox control to an application by C#:
 
-The following code illustrate how to add DoubleTextBox control to an application by c#.
+The following code illustrate how to add DoubleTextBox control to an application by C#.
 
 {% tabs %}
 
