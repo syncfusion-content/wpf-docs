@@ -201,7 +201,7 @@ Syncfusion.Shared.WPF</td><td>
 <td>
 RichTextBoxAdv</td><td>
 RichTextBoxAdv.WPF</td><td>
-WPF 3.5 and 4.0 Framework:<br/><br/> Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.ClientProfile<br/><br/>Syncfusion.RichTextDocIOParser.Wpf<br/><br/>Syncfusion.RichTextRibbon.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF <br/><br/><br/><br/>WPF 4.5 ,4.5.1 and 4.6 Framework: <br/><br/> Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.Base<br/><br/>Syncfusion.RichTextDocIOParser.Wpf<br/><br/>Syncfusion.RichTextRibbon.WPF<br/><br/>Syncfusion.Shared.Wpf<br/><br/>Syncfusion.Tools.WPF</td></tr>
+Syncfusion.Shared.WPF</td></tr>
 <tr>
 <td>
 SfCalculator</td><td>
