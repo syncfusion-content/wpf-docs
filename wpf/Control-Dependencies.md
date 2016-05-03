@@ -200,8 +200,18 @@ Syncfusion.Shared.WPF</td><td>
 <tr>
 <td>
 RichTextBoxAdv</td><td>
-RichTextBoxAdv.WPF</td><td>
+Syncfusion.RichTextBoxAdv.WPF</td><td>
 Syncfusion.Shared.WPF</td></tr>
+<tr>
+<td>
+RichTextDocIOParser</td><td>
+Syncfusion.RichTextDocIOParser.WPF</td><td>
+Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.RichTextBoxAdv.Wpf<br/>Syncfusion.Shared.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
+<tr>
+<td>
+RichTextRibbon</td><td>
+Syncfusion.RichTextRibbon.WPF</td><td>
+Syncfusion.RichTextBoxAdv.Wpf<br/>Syncfusion.Shared.WPF<br/>Syncfusion.Tools.WPF<br/></td></tr>
 <tr>
 <td>
 SfCalculator</td><td>
