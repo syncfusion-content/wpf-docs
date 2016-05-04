@@ -187,7 +187,7 @@ End Class
 {% endtabs %}
 
 To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a SelectionChanged command using `ICommand`. 
-The `TabControlExtSelectionChangedCommand` command is available in Syncfusion.Tools.MVVM.WPF dll. And it requires Syncfusion.Shared.MVVM.WPF dll as dependency assembly.  
+The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.Tools.MVVM.WPF` assembly. And it requires `Syncfusion.Shared.MVVM.WPF` as dependency assembly.  
 
 {% tabs %}
 
