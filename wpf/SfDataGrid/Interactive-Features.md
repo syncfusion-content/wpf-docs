@@ -147,7 +147,7 @@ this.dataGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Delete" });
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img1.png)
+![](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -213,7 +213,7 @@ this.dataGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "BestFit" })
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img2.png)
+![](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
@@ -273,7 +273,7 @@ this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuItem() { Header = "Clea
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img3.png)
+![](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GroupDropAreaContextMenuInfo`. 
@@ -337,7 +337,7 @@ this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuItem() { Header = "Clea
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img4.png)
+![](Interactive-Features_images/InteractiveFeatures_img4.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
@@ -393,7 +393,7 @@ this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuItem() { Header = "Colla
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img5.png)
+![](Interactive-Features_images/InteractiveFeatures_img5.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -447,7 +447,7 @@ this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuItem() { Header = "Clear
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img6.png)
+![](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -510,7 +510,7 @@ this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuItem() { Header = "Sum" 
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img7.png)
+![](Interactive-Features_images/InteractiveFeatures_img7.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -610,7 +610,7 @@ void dataGrid_GridContextMenuOpening(object sender, GridContextMenuEventArgs e)
 {% endhighlight %}
 {% endtabs %}
        
-![](InteractiveFeatures_images/InteractiveFeatures_img8.png)
+![](Interactive-Features_images/InteractiveFeatures_img8.png)
 
 
 #### Changing background to the ContextMenu
@@ -635,7 +635,7 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img9.png)
+![](Interactive-Features_images/InteractiveFeatures_img9.png)
 
 
 ## ColumnChooser
@@ -664,7 +664,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img10.png)
+![](Interactive-Features_images/InteractiveFeatures_img10.png)
 
 ### Custom ColumnChooser
 
@@ -838,7 +838,7 @@ viewModel.ShowColumnChooser = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img12.png)
+![](Interactive-Features_images/InteractiveFeatures_img12.png)
 
 
 ### Appreance Customization
@@ -865,7 +865,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img12.png)
+![](Interactive-Features_images/InteractiveFeatures_img12.png)
 
 
 ## RowHeader
@@ -888,7 +888,7 @@ dataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img13.png)
+![](Interactive-Features_images/InteractiveFeatures_img13.png)
 
 
 You can change the default width of the RowHeader by using [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowHeaderWidth.html) property.
@@ -938,7 +938,7 @@ You can display the corresponding rowindex in each RowHeader, by customizing the
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img14.png)
+![](Interactive-Features_images/InteractiveFeatures_img14.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
@@ -992,7 +992,7 @@ You can change the CurrentRowIndicator in the RowHeader by customizing the contr
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img15.png)
+![](Interactive-Features_images/InteractiveFeatures_img15.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
@@ -1039,7 +1039,7 @@ public class CustomConverter:IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img16.png)
+![](Interactive-Features_images/InteractiveFeatures_img16.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
@@ -1086,7 +1086,7 @@ this.dataGrid.Columns["OrderID"].ShowToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img17.png)
+![](Interactive-Features_images/InteractiveFeatures_img17.png)
 
 
 N> [GridColumn.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ShowToolTip.html) takes higher priority than [SfDataGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowToolTip.html).
@@ -1109,7 +1109,7 @@ this.dataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img18.png)
+![](Interactive-Features_images/InteractiveFeatures_img18.png)
 
 
 ### ToolTip Customization
@@ -1134,7 +1134,7 @@ You can change the appearance of the ToolTip by customizing the style with Targe
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img19.png)
+![](Interactive-Features_images/InteractiveFeatures_img19.png)
 
 
 You can customize the template of ToolTip by using the [GridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ToolTipTemplate.html) and [GridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ToolTipTemplateSelector.html) properties. 
@@ -1161,7 +1161,7 @@ You can customize the appearance of the ToolTip for particular column by setting
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img20.png)
+![](Interactive-Features_images/InteractiveFeatures_img20.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSample-904850425.zip). 
@@ -1249,12 +1249,12 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the DefaultTemplate which is applied through ToolTipTemplateSelector.
 
-![](InteractiveFeatures_images/InteractiveFeatures_img21.png)
+![](Interactive-Features_images/InteractiveFeatures_img21.png)
 
 
 The below image refers the AlternateTemplate which is applied through ToolTipTemplateSelector.
 
-![](InteractiveFeatures_images/InteractiveFeatures_img22.png)
+![](Interactive-Features_images/InteractiveFeatures_img22.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IEnumerableBinding_Demo-1708191985.zip).
 
