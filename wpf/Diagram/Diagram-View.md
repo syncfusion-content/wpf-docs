@@ -4564,7 +4564,7 @@ Bezier Line – After Drawing
 Bezier Line(Line Connector)
 {:.caption}
 
-N>* The drawn shape will be converted into a Node. * The drawn line will be converted into a LineConnector. * You can continually draw the selected shape. * Lines cannot be drawn continually.
+N> * The drawn shape will be converted into a Node. * The drawn line will be converted into a LineConnector. * You can continually draw the selected shape. * Lines cannot be drawn continually.
 
 Steps for drawing a Polygon and Polyline Drawing:
 

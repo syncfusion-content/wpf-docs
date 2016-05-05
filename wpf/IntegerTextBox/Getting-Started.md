@@ -504,7 +504,7 @@ The steps to create an IntegerTextBox by using Visual Studio in XAML are as foll
 
    
    
-N>* If you do not set any value to the IntegerTextBox then the default value will be as follows: * If the UseNullOption is set to true then, * Value of the NullValue property will be the default value. * Otherwise * Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+N> * If you do not set any value to the IntegerTextBox then the default value will be as follows: * If the UseNullOption is set to true then, * Value of the NullValue property will be the default value. * Otherwise * Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 {%seealso%}
 

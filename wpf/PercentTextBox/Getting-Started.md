@@ -477,7 +477,7 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-N>If you do not set any PercentValue to the PercentTextBox then the default value will be as follows: If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+N> If you do not set any PercentValue to the PercentTextBox then the default value will be as follows: If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 
 ## Creating a PercentTextBox by using XAML

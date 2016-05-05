@@ -354,7 +354,7 @@ Template can be applied according to the logic set by the user using Template Se
 
 The following code illustrates this.
 
-N>Data Template has been written for North America Statistics data
+N> Data Template has been written for North America Statistics data
 
 {% highlight xaml %}
 

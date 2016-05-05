@@ -245,7 +245,7 @@ YBindingPath="Year2011">
 ![](Adornments_images/label_2.png)
 
 
-N>For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
+N> For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
 
 **Percentage**
 

@@ -42,7 +42,7 @@ LeafItemSettings of SfTreeMap is a setting by which we can settings the template
 
 
 
-N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
+N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
 
 
