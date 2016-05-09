@@ -138,7 +138,7 @@ String that names the public property from the data source object to be used as 
 
 Before we proceed further the following note provides more information on the drop-down styles:
 
-N>* Editable-Editable combo boxes combine an editable text field and provide users the additional option of typing an item that might or might not be on the list. The item to be typed in the text field need not be case-sensitive. * _Autocomplete-Autocomplete combo boxes predict a word or phrase that the user wants to type in the associated text box without the user actually typing it completely. * Exclusive-This is a non-editable combo box where user is allowed to select only the options available from the drop-down list.
+N> * Editable-Editable combo boxes combine an editable text field and provide users the additional option of typing an item that might or might not be on the list. The item to be typed in the text field need not be case-sensitive. * _Autocomplete-Autocomplete combo boxes predict a word or phrase that the user wants to type in the associated text box without the user actually typing it completely. * Exclusive-This is a non-editable combo box where user is allowed to select only the options available from the drop-down list.
 
 Combo-boxes can be added to the Grid in two different ways as follows:
 
@@ -230,7 +230,7 @@ The following output is generated using the code above.
 
 
 Autocomplete Combo box using  ChoiceList
-{;.caption}
+{:.caption}
 
 An Autocomplete Combo Box in a Grid is created
 
@@ -304,7 +304,7 @@ The following output is generated using the code above.
 
 
 Editable Combo box using ItemsSource
-{;.caption}
+{:.caption}
 
 An editable Combo Box in a Grid is created.
 

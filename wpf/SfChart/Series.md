@@ -1333,5 +1333,5 @@ XBindingPath="ID" YBindingPath="Coal">
 
 {% endhighlight %}
 
-N>By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
+N> By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
 

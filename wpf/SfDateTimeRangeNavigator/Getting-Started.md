@@ -255,4 +255,4 @@ The following output is displayed as a result of the above code example.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-N>The SelectedData property of SfDateTimeRangeNavigator returns the collection that represents the data between selected ranges in the Navigator.
+N> The SelectedData property of SfDateTimeRangeNavigator returns the collection that represents the data between selected ranges in the Navigator.

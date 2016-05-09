@@ -388,7 +388,7 @@ QAT can be Customized further by using the following options
 
 1. Add
 
-	In the QAT Customized window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the commands to be added to the QAT and add the command to Right Pane of the QAT Dialog by clicking `Add` Button. Finally, Click Ok. Now, the selected command gets added in the QAT.
+	In the QAT Customized window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the commands to be added to the QAT and add the command to Right Pane of the QAT Dialog by clicking `Add` Button. Finally, Click OK. Now, the selected command gets added in the QAT.
 
 	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img1.jpg)
 

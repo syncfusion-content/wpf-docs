@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | SfDataGrid | WPF | Syncfusion
-description: editing
+title: Editing support in SfDataGrid
+description: How to edit the data in each cell of SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -36,7 +36,7 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowEditing.html) takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html).
+N> takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html).
 
 ![](Editing_images/Editing_img1.png)
 

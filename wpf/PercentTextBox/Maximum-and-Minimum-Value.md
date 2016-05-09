@@ -35,7 +35,7 @@ You can validate the MaxValue in two ways:
 
 If this property is set to true, then when you enter a value less than the MinValue then it will automatically assign the MinValue to the PercentValue property. Otherwise it will not allow the key press.
 
-N> This will be enabled only when the MinValidation is set to OnKeyPress._
+N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
 ## MaxValueOnExceedMaxDigit
 

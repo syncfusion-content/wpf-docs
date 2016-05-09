@@ -27,7 +27,7 @@ Here a simple text-reader application is used to demonstrate this approach.
 
 
 ### Docking Adapter
-The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
+The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding Framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ Microsoft.Practices.Unity.dll
 
 3.Add new class called Bootstrapper.cs to initialize the prism application.
 
-Here Mainwindow is treated as shell, so returing the mainwindow in the CreateShell method.
+Here MainWindow is treated as shell, so returning the MainWindow in the CreateShell method.
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ End Class
 {% endtabs %}
 
 
-4.Override Onstartup method in the App.xaml.cs to execute Bootstrapper when the application starts
+4.Override OnStartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 
 {% tabs %}
 

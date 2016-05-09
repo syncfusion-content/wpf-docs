@@ -10,7 +10,7 @@ documentation: ug
 
 ## Getting Started with MVVM
 
-Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with build-in commands. 
+Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with built-in commands. 
 
 This section explains how to perform TabControlExt’s `selectionChanged` event, by create a ViewModel and define a Model collection that is used to bind with the TabControl’s `ItemSource` property.
 
@@ -187,7 +187,7 @@ End Class
 {% endtabs %}
 
 To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a SelectionChanged command using `ICommand`. 
-
+The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.Tools.MVVM.WPF` assembly. And it requires `Syncfusion.Shared.MVVM.WPF` as dependency assembly.  
 
 {% tabs %}
 

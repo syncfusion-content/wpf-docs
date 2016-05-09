@@ -402,7 +402,7 @@ End Sub
 
 ## Persisting Ribbon States by XML Writer
 
-The WPF Ribbon control supports state persistence in the xml file created by the user. The ribbon states can be saved and loaded in the xml file by overloading the following methods:
+The WPF Ribbon control supports state persistence in the XML file created by the user. The ribbon states can be saved and loaded in the XML file by overloading the following methods:
 
 * SaveRibbonState(XmlWriter xmlWriter)
 * LoadRibbonState(XmlReader xmlReader)

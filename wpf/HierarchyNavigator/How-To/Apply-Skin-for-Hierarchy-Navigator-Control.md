@@ -9,7 +9,7 @@ documentation: ug
 
 ## Apply Skin for Hierarchy Navigator Control
 
-Add the following DLLs to apply corresponding theme for the Hierarchy Navigator control. SkinStorage class is used to apply different visual style for a control, which is available in Syncfusion.Shared.WPF project.
+Add the following assemblies to apply corresponding theme for the Hierarchy Navigator control. SkinStorage class is used to apply different visual style for a control, which is available in Syncfusion.Shared.WPF project.
 
 1. Create a HierarchyNavigator instance either in XAML or code behind.
 

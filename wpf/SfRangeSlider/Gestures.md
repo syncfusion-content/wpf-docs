@@ -29,7 +29,7 @@ Thumb moves down and updates the corresponding value.
 
 Thumb moves up and updates the corresponding value.   
 
-N> When the SnapsTo property is set to Ticks then the Thumb snaps to next tick based on the navigation key pressed._  
+N> When the SnapsTo property is set to Ticks then the Thumb snaps to next tick based on the navigation key pressed.  
 
 ### Mouse  
 

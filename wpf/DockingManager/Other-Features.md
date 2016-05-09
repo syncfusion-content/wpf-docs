@@ -102,11 +102,11 @@ DockingManager.SetHeader(element, "");
 
 ## AutoHide Animation Start /Stop Events
 
-AutoHideAnimationStart event will raise whenever you click on the AWL AutoHide button. Similarly AutohideAnimationStop is raised after AutohideAnimationStart indicates that animation is completed. You can use these events to update the relevant information in UI or to do some UI related manipulations.
+AutoHideAnimationStart event will raise whenever you click on the AWL AutoHide button. Similarly AutoHideAnimationStop is raised after AutoHideAnimationStart indicates that animation is completed. You can use these events to update the relevant information in UI or to do some UI related manipulations.
 
 ## AutoHide Visibility
 
-CanAutoHide property is used to enable and disable the Autohidden state of children. When CanAutoHide=False, the AWL AutoHidden button will be hidden.
+CanAutoHide property is used to enable and disable the AutoHidden state of children. When CanAutoHide=False, the AWL AutoHidden button will be hidden.
 
 
 {% tabs %}

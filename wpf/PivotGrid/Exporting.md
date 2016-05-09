@@ -50,11 +50,13 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 ![](Exporting-Images/Export to excel in PivotTable mode.png)
 
-_Excel Export in PivotTable Mode_
+Excel Export in PivotTable Mode
+{:.caption}
 
 ![](Exporting-Images/Export to excel in Cell mode.png)
 
-_Excel Export in Cell Mode_
+Excel Export in Cell Mode
+{:.caption}
 
 ## Export to Word
 

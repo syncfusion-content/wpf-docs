@@ -20,7 +20,7 @@ The feature enables you to set own styles for the control.
 The following are the step-by-step procedure to edit the TileViewControl in Microsoft Expression Blend.
 
 1. Open a new WPF Project in Microsoft Expression Blend.
-2. Include the required dll to the application.
+2. Include the required assembly to the application.
 3. From the Toolbox and Controls sections, drag and drop the TileViewControl into the application.
 4. Once the TileViewControl is drag and dropped, the window will look as shown below.
 
@@ -47,7 +47,7 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-7. After clicking the “Edit a Copy” a new window, “Create Style Resource” will appear as shown below which asks for the Name of the Style. Give the style name and press ok.
+7. After clicking the “Edit a Copy” a new window, “Create Style Resource” will appear as shown below which asks for the Name of the Style. Give the style name and press OK.
 
 
 

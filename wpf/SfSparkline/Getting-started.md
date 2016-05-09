@@ -117,7 +117,7 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 
 {% endhighlight  %}
 
-N>if we do not map the XBindingPath means sparkline data positioned as indexed.
+N> if we do not map the XBindingPath means sparkline data positioned as indexed.
 
 The following illustrates the result of the above code sample,
 

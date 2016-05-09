@@ -26,7 +26,7 @@ Each of these classes has basic level of implementations to let the users define
 * Allows the developer to choose the base class considering the complexity and type of language that developer is planning to create. 
 * Provides much more flexibility to developers than before in writing their custom logics in syntax coloring and outlining.
 
-Supports **databinding** of **Lexem** and formats by implementing their custom business classes with **ILexem** and **IFormat** **Interfaces**.
+Supports **DataBinding** of **Lexem** and formats by implementing their custom business classes with **ILexem** and **IFormat** **Interfaces**.
 
 **Customization** **of** **features**
 
@@ -81,13 +81,13 @@ this.TextForeground = Brushes.Black;
 
 Create **Lexem** and **Formats** collection for Custom Language, to enable data binding with **Lexem** and **Format** properties; we have modified the Lexem and Formats property type to **IEnumerable** from **LexemCollection** and **FormatCollection** respectively.
 
-N>![](CustomLanguageSupport_images/CustomLanguageSupport_img1.jpeg)Note:In previous versions,Lexem and Formats were added directly to Lexems and Formats properties of EditLanguage class.Now since it is IEnumerable,a custom collection need to be created and apply it to Lexem and Format properties of custom language class,here it is PythonLanguage class.
+N> In previous versions,Lexem and Formats were added directly to Lexems and Formats properties of EditLanguage class.Now since it is IEnumerable,a custom collection need to be created and apply it to Lexem and Format properties of custom language class,here it is PythonLanguage class.
 
 **Formats** **for** **IronPython**
 
 Create a collection of **IFormat** implemented classes to apply in **Formats** property of custom language, by using the following code. 
 
-N>![](CustomLanguageSupport_images/CustomLanguageSupport_img2.jpeg)Note:EditControl uses this collection to fetch the color to be applied to the tokens.
+N> EditControl uses this collection to fetch the color to be applied to the tokens.
 
 {% highlight xaml %}
 
@@ -113,7 +113,7 @@ N>![](CustomLanguageSupport_images/CustomLanguageSupport_img2.jpeg)Note:EditCont
 
 Create a collection of **ILexem** implemented class, by using the following code. 
 
-N>![](CustomLanguageSupport_images/CustomLanguageSupport_img3.jpeg)Note:This collection will be applied to Lexem property of the custom language.EditControl uses the Lexem property to retrieve all keywords,comments,literals,preprocessors etc.
+N> This collection will be applied to Lexem property of the custom language.EditControl uses the Lexem property to retrieve all keywords,comments,literals,preprocessors etc.
 
 {% highlight xaml %}
 <syncfusion:LexemCollection x:Key="pythonLanguageLexems">
@@ -320,7 +320,7 @@ Specifies the line number of block’s end. <br/><br/></td></tr>
 <tr>
 <td>
 IsExpanded<br/><br/></td><td>
-Specifies the state of the LineItem. This property displays “ –“ symbol for true value and “+” symbol for false value.<br/><br/></td></tr>
+Specifies the state of the LineItem. This property displays  '–' symbol for true value and '+' symbol for false value.<br/><br/></td></tr>
 <tr>
 <td>
 LineStartBlock<br/><br/></td><td>
@@ -735,4 +735,4 @@ The following screenshot displays IronPython Demo Window
 ![](CustomLanguageSupport_images/CustomLanguageSupport_img4.jpeg)
 
 
-N>![](CustomLanguageSupport_images/CustomLanguageSupport_img5.jpeg)Note:Refer to IronPython Demo in the Essential Studio WPF SampleBrowser to view its functionality or debug the application.
+N> Refer to IronPython Demo in the Essential Studio WPF SampleBrowser to view its functionality or debug the application.

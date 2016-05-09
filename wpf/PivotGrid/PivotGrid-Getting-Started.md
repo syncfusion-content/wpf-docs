@@ -30,7 +30,7 @@ Next you need to add the following dependency assemblies into your WPF Applicati
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
   
-N>You can also get the assemblies by browsing to the Default Assembly Location 
+N> You can also get the assemblies by browsing to the Default Assembly Location 
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
  
 Then define the PivotGrid control in MainWindow.xaml as shown in the below code sample.
@@ -62,7 +62,7 @@ Next you need to add the following dependency assemblies into your WPF Applicati
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
   
-N>You can also get the assemblies by browsing to the Default Assembly Location
+N> You can also get the assemblies by browsing to the Default Assembly Location
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
  
 Then, add a Grid container in MainWindow.xaml which will hold the PivotGrid control created and added from code-behind lately. 
@@ -120,7 +120,7 @@ Select the **Projects** tab available in the top-left corner of the Blend IDE, r
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
     
-N>You can also get the assemblies by browsing to the Default Assembly Location
+N> You can also get the assemblies by browsing to the Default Assembly Location
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
  
 Only after adding the above assemblies, PivotGrid control will be automatically added under **Assets** tab. Now choose the **Assets** tab, drag and drop the PivotGridControl from Toolbox to designer section.

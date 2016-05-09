@@ -20,7 +20,7 @@ ToolBarAdv can be added to an application in a following way.
 The following ways explains how to add ToolBarAdv control using XAML code:
 
 * Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
-* Include an xml namespace for the above assemblies to the Main window.
+* Include an XML namespace for the above assemblies to the Main window.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ Point<br/><br/></td></tr>
 <tr>
 <td>
 ControlsResourceDictionary<br/><br/></td><td>
-Gets or sets resource dictionary in which ToolBarAdv will look up for framework element’s styles.<br/><br/></td><td>
+Gets or sets resource dictionary in which ToolBarAdv will look up for Framework element’s styles.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Resource Dictionary<br/><br/></td></tr>
 <tr>
@@ -241,7 +241,7 @@ bool<br/><br/></td><td>
 <tr>
 <td>
 CanDockAtLeft<br/><br/></td><td>
-Gets or sets a value indicating whether toolbar can be docked at the left.br/><br/></td><td>
+Gets or sets a value indicating whether toolbar can be docked at the left.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 bool<br/><br/></td><td>
 <tr>

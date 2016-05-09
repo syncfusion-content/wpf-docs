@@ -32,7 +32,7 @@ This provides the facility to modify the characters on the selected item to be a
 
 In **Auto** **mode**, **EditControl** generates the **IntelliSense** list box items similar to **Visual** **Studio** based on the current language configurations **(Lexem).** **IntelliSense** also displays **Types**, **Properties**, **Events** and **Methods** from pre-built assemblies specified using **AssemblyReferences** property of **EditControl** class. 
 
-N>![](IntelliSense-Support_images/IntelliSense-Support_img1.jpeg)Note:Auto IntelliSense mode is currently supported for C# and Visual Basic languages and will be extended to other markup languages supported by EditControl in forthcoming releases.
+N> Auto IntelliSense mode is currently supported for C# and Visual Basic languages and will be extended to other markup languages supported by EditControl in forthcoming releases.
 
 **Adding** **EditControl** **to** **the** **application**
 
@@ -94,7 +94,7 @@ uriList.Add(new Uri(fileDialog.FileName));
 
 {% endhighlight %}
 
-N>![](IntelliSense-Support_images/IntelliSense-Support_img2.jpeg)Note:Having an INotifyCollectionChanged implemented collection as AssemblyReferences will update the IntelliSense items automatically when an assembly reference is added at runtime.
+N> Having an INotifyCollectionChanged implemented collection as AssemblyReferences will update the IntelliSense items automatically when an assembly reference is added at runtime.
 
 The following image displays the Intellisense Demo Window
 
@@ -655,7 +655,7 @@ Contains current Cursor Index where the event is triggered.<br/><br/></td></tr>
 <tr>
 <td>
 ItemsSource<br/><br/></td><td>
-Contains the ItemsSource to be applied to the IntelliSense, it can also be changed if there are any Custom Filterations to be done in the event.<br/><br/></td></tr>
+Contains the ItemsSource to be applied to the IntelliSense, it can also be changed if there are any Custom Filtrations to be done in the event.<br/><br/></td></tr>
 <tr>
 <td>
 LineIndex<br/><br/></td><td>

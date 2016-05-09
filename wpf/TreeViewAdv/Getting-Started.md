@@ -17,7 +17,7 @@ There are several ways to add Syncfusion control in to Visual Studio WPF project
 * Create a WPF project in Visual Studio and refer the following assemblies.
       1. Syncfusion.Tools.Wpf
       2. Syncfusion.Shared.Wpf
-* Include an xml namespace for the above assemblies to the Main window.
+* Include an XML namespace for the above assemblies to the Main window.
 
 {% tabs %}
 

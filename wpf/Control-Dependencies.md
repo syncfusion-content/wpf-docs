@@ -9,7 +9,7 @@ documentation: ug
 
 # Control Dependencies
 
-The following table illustrates the Control’s assembly and its dependencies.
+The following table illustrates the Control's assembly and its dependencies.
 
 <table>
 <tr>
@@ -21,7 +21,7 @@ Dependencies</th></tr>
 <td>
 SfDataGrid </td><td>
 Syncfusion.SfGrid.WPF</td><td>
-Syncfusion.Data.WPF<br/><br/>Syncfusion.Shared.WPF </td></tr>
+Syncfusion.Data.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
 <tr>
 <td>
 SfDataPager</td><td>
@@ -37,6 +37,16 @@ Syncfusion.GridCommon.Wpf<br/><br/>Syncfusion.Linq.Base</td></tr>
 Spreadsheet</td><td>
 Syncfusion.Spreadsheet.WPF</td><td>
 Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF<br/><br/>Syncfusion.XlsIO.Base</td></tr>
+<tr>
+<td>
+SfRichTextBoxAdv</td><td>
+Syncfusion.SfRichTextBoxAdv.WPF</td><td>
+Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.Shared.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
+<tr>
+<td>
+SfRichTextRibbon</td><td>
+Syncfusion.SfRichTextRibbon.WPF</td><td>
+Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.SfRichTextBoxAdv.Wpf<br/>Syncfusion.Shared.WPF<br/>Syncfusion.Tools.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
 <tr>
 <td>
 PropertyGrid</td><td>
@@ -200,8 +210,18 @@ Syncfusion.Shared.WPF</td><td>
 <tr>
 <td>
 RichTextBoxAdv</td><td>
-RichTextBoxAdv.WPF</td><td>
-WPF 3.5 and 4.0 framework:<br/><br/> Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.ClientProfile<br/><br/>Syncfusion.RichTextDocIOParser.Wpf<br/><br/>Syncfusion.RichTextRibbon.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF <br/><br/><br/><br/>WPF 4.5 ,4.5.1 and 4.6 framework: <br/><br/> Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.Base<br/><br/>Syncfusion.RichTextDocIOParser.Wpf<br/><br/>Syncfusion.RichTextRibbon.WPF<br/><br/>Syncfusion.Shared.Wpf<br/><br/>Syncfusion.Tools.WPF</td></tr>
+Syncfusion.RichTextBoxAdv.WPF</td><td>
+Syncfusion.Shared.WPF</td></tr>
+<tr>
+<td>
+RichTextDocIOParser</td><td>
+Syncfusion.RichTextDocIOParser.WPF</td><td>
+Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.RichTextBoxAdv.Wpf<br/>Syncfusion.Shared.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
+<tr>
+<td>
+RichTextRibbon</td><td>
+Syncfusion.RichTextRibbon.WPF</td><td>
+Syncfusion.RichTextBoxAdv.Wpf<br/>Syncfusion.Shared.WPF<br/>Syncfusion.Tools.WPF<br/></td></tr>
 <tr>
 <td>
 SfCalculator</td><td>
@@ -427,7 +447,7 @@ Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Share
 
 ## SfSkinManager Dependencies
 
-The following table illustrates the SfSkinManager theme’s assembly and dependencies:
+The following table illustrates the SfSkinManager theme's assembly and dependencies:
 
 <table>
 <tr>

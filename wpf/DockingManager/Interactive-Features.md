@@ -159,7 +159,7 @@ How to Activate Particular Window
 
 Under this section you will find all the possible customization options available for the Float window.
 
-_FloatWindow Customization properties table_
+FloatWindow Customization properties table
 
 <table>
 <tr>
