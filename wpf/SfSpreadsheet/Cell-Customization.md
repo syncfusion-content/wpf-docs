@@ -38,7 +38,7 @@ Create a custom DataTemplate (For ex: Button Template) in the Main window.xaml f
 
 Create an extension class SpreadsheetColumnExt by overriding the [SpreadsheetColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetColumn.html) Class which holds all the operations related with cells.
 
-Now override the function [OnUpdateColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetColumn~OnUpdateColumn.html) which updates the column properties (cell types, renderer, cell element, etc.) and get the data template which is used for displaying in the particular cell.
+Now override the function `OnUpdateColumn` which updates the column properties (cell types, renderer, cell element, etc.) and get the data template which is used for displaying in the particular cell.
 
 {% highlight c# %}
 
@@ -81,7 +81,7 @@ protected override void OnUpdateColumn(out FrameworkElement oldElement)
 
 Create a SpreadsheetTemplateCellRenderer class by overriding the [SpreadsheetVirtualizingCellRendererBase](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.CellRenderer.SpreadsheetVirtualizingCellRendererBase%602.html) class to display the defined custom renderer element.
 
-For initializing the display element, set the content template in [OnInitializeDisplayElement](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.CellRenderer.SpreadsheetVirtualizingCellRendererBase%602~OnInitializeDisplayElement.html) method and for editing, set the content template in [OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.CellRenderer.SpreadsheetVirtualizingCellRendererBase%602~OnInitializeEditElement.html) method otherwise it will load the default display and edit element in the cells
+For initializing the display element, set the content template in `OnInitializeDisplayElement` method and for editing, set the content template in `OnInitializeEditElement` method otherwise it will load the default display and edit element in the cells
 
 {% highlight c# %}
 
