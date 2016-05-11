@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection behavior in SfSpreadsheet | SfSpreadsheet| WPF | Syncfusion
+title: Selection behavior in SfSpreadsheet
 description: selection behavior of SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
