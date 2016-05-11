@@ -9,13 +9,13 @@ documentation: ug
 
 # Overview
 
-The SfSpreadsheet is excel inspired control that allows you to create, edit, view and format the Microsoft excel files without excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas which any business user needs. 
+The SfSpreadsheet is excel inspired control that allows you to create, edit, view and format the Microsoft excel files without excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas. 
 
 ## Key Features
 
 * **Ribbon** – Ribbon integrated with organically enhanced UI experience.
 
-* **Editing** **and** **Selection**- Interactive support for editing and cell selection in a workbook.
+* **Editing** **and** **Selection**- Interactive support for editing and cell selection in workbook.
 
 * **Formulas** - Provides support for 400+ most widely used formulas which any business user needs and allows you to add, remove and edit the formulas like in excel.
 
@@ -25,9 +25,9 @@ The SfSpreadsheet is excel inspired control that allows you to create, edit, vie
 
 * **Floating** **Cells**- Provides support for floating cell mode that is when the text exceeds the length of the cell, it will float the text to the adjacent cell.
 
-* **Merge** **Cells** - Merge two or more adjacent cells into a single cell and display the contents of one cell in the merged .
+* **Merge** **Cells** - Merge two or more adjacent cells into a single cell and display the contents of one cell in the merged cell.
 
-* **Conditional** **Formatting**- Provides support for excel compatible conditional formatting and allows you to apply formats to a cell or range of cells depending on the value of cells or formula that meet specific criteria. Also provides support to define and import the conditional formatting.  rules such as Data Bars, Icon Sets and Color Scales options which are used to visualize the data
+* **Conditional** **Formatting**- Provides support for excel compatible conditional formatting and allows you to apply formats to a cell or range of cells depending on the value of cells or formula that meet specific criteria. Also provides support to define and import the conditional formatting.  rules such as Data Bars, Icon Sets and Color Scales options which are used to visualize the data.
 
 * **Cell** **Comments**- Supports comments that provide additional information about a cell such as what the value represents. And it would be useful if you want the end users to understand the data in the cells more deeply.
 
@@ -85,7 +85,7 @@ Supports undo/redo functionalities similar to those achieved with Microsoft Offi
 <tr>
 <td>
 Formula calculation</td><td>
-Provides support for 409 most widely used formulas and uses Multi-threading concept So, the calculation speed is also high compared to Spreadsheet control.</td></tr>
+Provides support for 400+ most widely used formulas and uses Multi-threading concept So, the calculation speed is also high compared to Spreadsheet control.</td></tr>
 <tr>
 <td>
 Floating Cells</td><td>

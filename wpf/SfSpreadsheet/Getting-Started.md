@@ -33,7 +33,7 @@ Contains the classes  that handles all the UI Operations of SfSpreadsheet such a
 <tr>
 <td>
 Syncfusion.Shared.WPF.dll</td><td>
-Contains the classes which holds the controls like Color pickers,Chromless window, ComboBoxAdv, DateTimeEdit etc.</td></tr>
+Contains the classes which holds the controls like Color pickers,Chromeless window, ComboBoxAdv, DateTimeEdit etc.</td></tr>
 <tr>
 <td>
 Syncfusion.Tools.WPF.dll</td><td>
@@ -41,7 +41,7 @@ Contains the classes which holds the controls like TabcontrolExt, TabItemExt, Ga
 <tr>
 <td>
 Syncfusion.XlsIO.Base.dll</td><td>
-Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula caculations etc.</td></tr>
+Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula calculations etc.</td></tr>
 </table>
 
 Below are the assemblies list that can be added when you want to enable certain features in SfSpreadsheet control. 
@@ -54,11 +54,11 @@ Description</th></tr>
 <tr>
 <td>
 Syncfusion.SfSpreadsheetHelper.WPF.dll</td><td>
-Contains the classes which is responsible for importing charts and sparklines into SfSpreadsheet</td></tr>
+Contains the classes which is responsible for importing charts and sparklines into SfSpreadsheet.</td></tr>
 <tr>
 <td>
 Syncfusion.ExcelChartToImageConverter.WPF.dll</td><td>
-Contains the classes which is responsible for converting charts as image</td></tr>
+Contains the classes which is responsible for converting charts as image.</td></tr>
 <tr>
 <td>
 Syncfusion.SfChart.WPF.dll</td><td>
@@ -66,7 +66,7 @@ Contains the classes which is responsible for importing charts like Line charts,
 <tr>
 <td>
 Syncfusion.ExcelToPDFConverter.Base.dll</td><td>
-Contains the base and fundamental classes which is responsible for converting excel to pdf.</td></tr>
+Contains the base and fundamental classes which is responsible for converting excel to PDF.</td></tr>
 <tr>
 <td>
 Syncfusion.Pdf.Base.dll</td><td>
