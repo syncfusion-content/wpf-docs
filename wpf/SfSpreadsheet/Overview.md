@@ -57,7 +57,7 @@ The SfSpreadsheet is excel inspired control that allows you to create, edit, vie
 
 * **Localization** - Provides support to localize all the static text in a Ribbon and all dialogs to any desired language.
 
-* ** Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma demlimited) respectively.
+* **Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma demlimited) respectively.
 
 ## Choose between SfSpreadsheet and Spreadsheet control
 

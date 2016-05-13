@@ -192,7 +192,7 @@ _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application
 
 ## Creating a new Excel Workbook
 
-A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Create.html) method of SfSpreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
+A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Create.html) method with specified number of worksheets. By default, a workbook will be created with single worksheet.
 
 {% tabs %}
 {% highlight c# %}
