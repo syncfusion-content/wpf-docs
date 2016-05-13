@@ -36,6 +36,8 @@ spreadsheet.ActiveSheet
 
 For more information regarding working with worksheets, you can refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/overview) link
 
+N> Users can access the `ActiveGrid` and `ActiveSheet` property only after the `WorkbookLoaded` Event of `SfSpreadsheet` is triggered
+
 ## Accessing the Grid
 
 Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) in  `SfSpreadsheet`.
