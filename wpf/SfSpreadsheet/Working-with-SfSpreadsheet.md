@@ -36,7 +36,7 @@ spreadsheet.ActiveSheet
 
 For more information regarding working with worksheets, you can refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/overview) link
 
-N> Users can access the `ActiveGrid` and `ActiveSheet` property only after the `WorkbookLoaded` Event of `SfSpreadsheet` is triggered
+N> `ActiveGrid` and `ActiveSheet` property can be accessed only after the `WorkbookLoaded` Event of `SfSpreadsheet` is triggered
 
 ## Accessing the Grid
 
