@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting 
+title: Conditional Formatting in SfSpreadsheet
 description: How to apply conditional formatting rules at run time in SfSpreadsheet.
 platform: wpf
 control: SfSpreadsheet
@@ -22,7 +22,6 @@ IConditionalFormats condition = worksheet.Range["A1"].ConditionalFormats;
 IConditionalFormat condition1 = condition.AddCondition();
 
 {% endhighlight %}
-<br/><br/>
 
 ## Highlight Cell Rules
 
@@ -45,6 +44,28 @@ condition1.Operator = ExcelComparisonOperator.Greater;
 condition1.FirstFormula = "10";
 
 condition1.BackColor = ExcelKnownColors.Light_orange;
+
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
+
+{% endhighlight %}
+
+### Based on Formula or Cell References
+
+To format the cells based on cell value, define the conditional format type as **CellValue** and other formatting options such as formula, operator, background color etc., to the specified cell or range. Finally, invalidate the cells to refresh the view.
+
+{% highlight c# %}
+
+var worksheet = spreadsheet.Workbook.Worksheets[0];
+
+IConditionalFormats condition = worksheet.Range["A1:A100"].ConditionalFormats;
+
+IConditionalFormat condition1 = condition.AddCondition();
+
+condition1.FormatType = ExcelCFType.Formula;
+
+condition1.FirstFormula = "=(B1+B2)>50";
+
+condition1.BackColor = ExcelKnownColors.Brown;
 
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
@@ -96,11 +117,9 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
-
 Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img1.jpeg)
-
 
 ## Data Bars
 
@@ -129,8 +148,6 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img2.jpeg)
-
-
 
 ## Color Scales
 

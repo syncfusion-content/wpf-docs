@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows and Columns 
+title: Rows and Columns Operations in SfSpreadsheet
 description: Operations involved with rows and columns in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
@@ -9,12 +9,8 @@ documentation: ug
 
 # Rows and Columns
 This section explains about the operations related with rows and columns in SfSpreadsheet
-<br/>
 
-## Insert and Delete
-<br/>
-
-### Inserting Rows and Columns
+## Insert Rows and Columns
 
 SfSpreadsheet provides support for dynamically inserting rows and columns into a worksheet. 
 
@@ -35,9 +31,8 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
-### Deleting Rows and Columns
+## Delete Rows and Columns
 
 SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 
@@ -58,12 +53,8 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
-## Hide and Unhide
-<br/>
-
-### Hiding Rows/Columns
+## Hide Rows and Columns
 
 SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
 
@@ -84,9 +75,8 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by [Hid
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
-### Unhiding Rows/Columns
+## Unhide Rows and Columns
 
 Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
 
@@ -107,7 +97,6 @@ Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](http://help.sy
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Row Height and Column Width
 
@@ -130,13 +119,12 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 N> In case if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
 
-## Freeze Panes
+## Freeze Rows and Columns
 
-SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet
+SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,3 +142,22 @@ SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet v
 {% endhighlight %}
 {% endtabs %}
 
+## Unfreeze Rows and Columns
+
+SfSpreadsheet provides support to unfreeze the freezed panes in the worksheet of SfSpreadsheet.
+
+{% tabs %}
+{% highlight c# %}
+
+//Unfreezepanes
+
+//To Unfreeze 4 rows and 4 columns
+
+ spreadsheet.Workbook.ActiveSheet.RemovePanes();;
+
+ spreadsheet.ActiveGrid.FrozenRows = 1;
+
+ spreadsheet.ActiveGrid.FrozenColumns = 1;
+
+{% endhighlight %}
+{% endtabs %}

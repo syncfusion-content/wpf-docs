@@ -1,15 +1,69 @@
 ---
 layout: post
-title: Formulas 
+title: Formulas in SfSpreadsheet
 description: List of formulas supported by SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Formulas
+## Formulas
 
 SfSpreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. SfSpreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
+
+## Adding Formula into cell
+
+To add formulas into a cell programmatically, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
+
+{% tabs %}
+{% highlight c# %}
+
+var range = spreadsheet.ActiveSheet.Range["A2"];
+
+spreadsheet.ActiveGrid.SetCellValue(range, "=SUM(B1:B2)");
+
+spreadsheet.ActiveGrid.InvalidateCell(2,1);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Named Ranges
+
+Named Ranges are the defined names that represents a cell, range of cells, formula, or constant value or table. Each name have a scope of either to a specific worksheet or to the entire workbook.
+
+### Define named ranges at runtime
+
+SfSpreadsheet allows the user to define/add the named ranges at runtime by using [AddNamedRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AddNamedRange.html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.AddNamedRange("SampleName", "A3:B3", "Sheet1");
+
+{% endhighlight %}
+{% endtabs %}
+
+### Edit or remove named ranges at runtime
+
+SfSpreadsheet allows the user to edit the named ranges at runtime by [EditNamedRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~EditNamedRange.html) method and remove the named ranges at runtime by [DeleteNamedRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~DeleteNamedRange.html) method
+
+{% tabs %}
+{% highlight c# %}
+
+//To Edit the named ranges,
+
+IName name = spreadsheet.Workbook.Names["Sample"];
+spreadsheet.EditNamedRange("Test", "A3:B3", name);
+
+//To remove the named ranges,
+
+IName name = spreadsheet.Workbook.Names["Sample"];
+spreadsheet.DeleteNamedRange(name);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Supported functions
 
 Following is a list of functions that are supported by SfSpreadsheet
 
