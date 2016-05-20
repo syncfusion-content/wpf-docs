@@ -241,15 +241,12 @@ The following code demonstrates the different ways of refreshing the view,
 //Invalidates the mentioned cell in the grid,
 spreadsheet.ActiveGrid.InvalidateCell(3, 3);
 
-//Invalidates the range and resets the styleinfo,
+//Invalidates the range ,
 var range = GridRangeInfo.Cells(5, 4, 6, 7);
-spreadsheet.ActiveGrid.InvalidateCell(range,true);
+spreadsheet.ActiveGrid.InvalidateCell(range);
 
 //Invalidates all the cells in the grid,
 spreadsheet.ActiveGrid.InvalidateCells();
-
-//Invalidates all the cells and resets the styleinfo in the grid
-spreadsheet.ActiveGrid.InvalidateCells(true);
 
 //Invalidates the measurement state(layout) of grid,
 spreadsheet.ActiveGrid.InvalidateVisual();

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formulas 
+title: Formulas in SfSpreadsheet
 description: List of formulas supported by SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
@@ -11,9 +11,63 @@ documentation: ug
 
 SfSpreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. SfSpreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 
+## Adding Formula into cell
+
+To add formulas into a cell programmatically, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
+
+{% tabs %}
+{% highlight c# %}
+
+var range = spreadsheet.ActiveSheet.Range["A2"];
+
+spreadsheet.ActiveGrid.SetCellValue(range, "=SUM(B1:B2)");
+
+spreadsheet.ActiveGrid.InvalidateCell(2,1);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Named Ranges
+
+Named Ranges are the defined names that represents a cell, range of cells, formula, or constant value or table. Each name have a scope of either to a specific worksheet or to the entire workbook.
+
+### Define named ranges at runtime
+
+SfSpreadsheet allows the user to define/add the named ranges at runtime by using [AddNamedRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AddNamedRange.html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.AddNamedRange("SampleName", "A3:B3", "Sheet1");
+
+{% endhighlight %}
+{% endtabs %}
+
+### Edit or remove named ranges at runtime
+
+SfSpreadsheet allows the user to edit the named ranges at runtime by [EditNamedRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~EditNamedRange.html) method and remove the named ranges at runtime by [DeleteNamedRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~DeleteNamedRange.html) method
+
+{% tabs %}
+{% highlight c# %}
+
+//To Edit the named ranges,
+
+IName name = spreadsheet.Workbook.Names["Sample"];
+spreadsheet.EditNamedRange("Test", "A3:B3", name);
+
+//To remove the named ranges,
+
+IName name = spreadsheet.Workbook.Names["Sample"];
+spreadsheet.DeleteNamedRange(name);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Supported functions
+
 Following is a list of functions that are supported by SfSpreadsheet
 
-## Database Functions
+### Database Functions
 
 <table>
 <tr>
@@ -62,7 +116,7 @@ DVAR<br/><br/></td><td>
 Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
 </table>
 
-## Date and Time Functions
+### Date and Time Functions
 
 <table>
 <tr>
@@ -163,7 +217,7 @@ YEARFRAC<br/><br/></td><td>
 Calculates the fraction of the year represented by the number of whole days between two dates<br/><br/></td></tr>
 </table>
 
-## Engineering Functions
+### Engineering Functions
 
 <table>
 <tr>
@@ -384,7 +438,7 @@ CONVERT<br/><br/></td><td>
 Converts a number from one measurement system to another<br/><br/></td></tr>
 </table>
 
-## Financial Functions
+### Financial Functions
 
 <table>
 <tr>
@@ -501,7 +555,7 @@ RECEIVED<br/><br/></td><td>
 Calculates the amount received at maturity for a fully invested Security<br/><br/></td></tr>
 </table>
 
-## Information Functions
+### Information Functions
 
 <table>
 <tr>
@@ -594,7 +648,7 @@ ISFORMULA<br/><br/></td><td>
 Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE<br/><br/></td></tr>
 </table>
 
-## Logical Functions
+### Logical Functions
 
 <table>
 <tr>
@@ -631,7 +685,7 @@ NOT<br/><br/></td><td>
 Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
 </table>
 
-## Lookup & Reference Functions
+### Lookup & Reference Functions
 
 <table>
 <tr>
@@ -704,7 +758,7 @@ SHEETS<br/><br/></td><td>
 Returns the number of sheets in reference<br/><br/></td></tr>
 </table>
 
-## Math & Trigonometry functions
+### Math & Trigonometry functions
 
 <table>
 <tr>
@@ -1025,7 +1079,7 @@ MUNIT<br/><br/></td><td>
 Returns the unit matrix for the specified dimension<br/><br/></td></tr>
 </table>
 
-## Statistical functions
+### Statistical functions
 
 <table>
 <tr>
@@ -1224,7 +1278,6 @@ Returns the specified quartile of a set of supplied numbers, based on percentile
 <td>
 QUARTILE.INC<br/><br/></td><td>
 Returns the specified quartile of a set of supplied numbers, based on percentile value 0 - 1 (inclusive)<br/><br/></td></tr>
-
 <tr>
 <td>
 AVEDEV<br/><br/></td><td>
@@ -1479,7 +1532,7 @@ ZTEST<br/><br/></td><td>
 Returns the one-tailed probability value of a z-test<br/><br/></td></tr>
 </table>
 
-## Text Functions
+### Text Functions
 
 <table>
 <tr>
@@ -1600,7 +1653,7 @@ UNICODE<br/><br/></td><td>
 Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
 </table>
 
-## Web Functions
+### Web Functions
 
 <table>
 <tr>
