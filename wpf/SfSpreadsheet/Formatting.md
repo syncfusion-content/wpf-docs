@@ -57,7 +57,7 @@ foreach (var range in selectedRanges)
 {% endhighlight %}
 {% endtabs %}
 
-## Font Settings
+## Font
 
 SfSpreadsheet allows the user to apply the font settings such as font color, font name ,font size etc., for a particular cell or a range of cells.
 
@@ -87,7 +87,7 @@ range.CellStyle.Font.Strikethrough = true;
 
 //Setting the UnderLine Types,
 
-range.CellStyle.Font.Underline = ExcelUnderline.Double;
+range.CellStyle.Font.Underline = ExcelUnderline.Single;
 
 //Setting the Font Color,
 
@@ -331,3 +331,22 @@ spreadsheet.ActiveGrid.InvalidateCells();
 For more information regarding formatting options, please go through [XlsIO](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
 
 N> Users need to [refresh the view](http://help.syncfusion.com/wpf/sfspreadsheet/working-with-sfspreadsheet#refreshing-the-view) after the formatting is applied on the XlsIO range to update the styles in `SpreadsheetGrid`.
+
+## Clear formatting
+
+SfSpreadsheet provides support to clear the contents of a cell along with its formatting or by specifying the required clear options using [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+
+{% tabs %}
+{% highlight c# %}
+
+//To clear the contents along with its formatting in the range,   
+       
+spreadsheet.Workbook.Worksheets[0].Range[4, 5].Clear(true);
+
+//To clear the range with specified ExcelClearOptions,
+           
+spreadsheet.Workbook.Worksheets[0].Range[4, 5].Clear(ExcelClearOptions.ClearConditionalFormats);
+
+{% endhighlight %}
+{% endtabs %}
+

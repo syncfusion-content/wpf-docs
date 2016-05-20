@@ -120,7 +120,7 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 {% endhighlight %}
 {% endtabs %}
 
-N> In case if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
+N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
 
 ## Freeze Rows and Columns
 
@@ -153,7 +153,7 @@ SfSpreadsheet provides support to unfreeze the freezed panes in the worksheet of
 
 //To Unfreeze 4 rows and 4 columns
 
- spreadsheet.Workbook.ActiveSheet.RemovePanes();;
+ spreadsheet.Workbook.ActiveSheet.RemovePanes();
 
  spreadsheet.ActiveGrid.FrozenRows = 1;
 

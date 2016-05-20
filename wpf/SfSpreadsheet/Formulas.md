@@ -67,7 +67,7 @@ spreadsheet.DeleteNamedRange(name);
 
 Following is a list of functions that are supported by SfSpreadsheet
 
-## Database Functions
+### Database Functions
 
 <table>
 <tr>
@@ -116,7 +116,7 @@ DVAR<br/><br/></td><td>
 Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
 </table>
 
-## Date and Time Functions
+### Date and Time Functions
 
 <table>
 <tr>
@@ -217,7 +217,7 @@ YEARFRAC<br/><br/></td><td>
 Calculates the fraction of the year represented by the number of whole days between two dates<br/><br/></td></tr>
 </table>
 
-## Engineering Functions
+### Engineering Functions
 
 <table>
 <tr>
@@ -438,7 +438,7 @@ CONVERT<br/><br/></td><td>
 Converts a number from one measurement system to another<br/><br/></td></tr>
 </table>
 
-## Financial Functions
+### Financial Functions
 
 <table>
 <tr>
@@ -555,7 +555,7 @@ RECEIVED<br/><br/></td><td>
 Calculates the amount received at maturity for a fully invested Security<br/><br/></td></tr>
 </table>
 
-## Information Functions
+### Information Functions
 
 <table>
 <tr>
@@ -648,7 +648,7 @@ ISFORMULA<br/><br/></td><td>
 Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE<br/><br/></td></tr>
 </table>
 
-## Logical Functions
+### Logical Functions
 
 <table>
 <tr>
@@ -685,7 +685,7 @@ NOT<br/><br/></td><td>
 Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
 </table>
 
-## Lookup & Reference Functions
+### Lookup & Reference Functions
 
 <table>
 <tr>
@@ -758,7 +758,7 @@ SHEETS<br/><br/></td><td>
 Returns the number of sheets in reference<br/><br/></td></tr>
 </table>
 
-## Math & Trigonometry functions
+### Math & Trigonometry functions
 
 <table>
 <tr>
@@ -1079,7 +1079,7 @@ MUNIT<br/><br/></td><td>
 Returns the unit matrix for the specified dimension<br/><br/></td></tr>
 </table>
 
-## Statistical functions
+### Statistical functions
 
 <table>
 <tr>
@@ -1278,7 +1278,6 @@ Returns the specified quartile of a set of supplied numbers, based on percentile
 <td>
 QUARTILE.INC<br/><br/></td><td>
 Returns the specified quartile of a set of supplied numbers, based on percentile value 0 - 1 (inclusive)<br/><br/></td></tr>
-
 <tr>
 <td>
 AVEDEV<br/><br/></td><td>
@@ -1533,7 +1532,7 @@ ZTEST<br/><br/></td><td>
 Returns the one-tailed probability value of a z-test<br/><br/></td></tr>
 </table>
 
-## Text Functions
+### Text Functions
 
 <table>
 <tr>
@@ -1654,7 +1653,7 @@ UNICODE<br/><br/></td><td>
 Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
 </table>
 
-## Web Functions
+### Web Functions
 
 <table>
 <tr>
