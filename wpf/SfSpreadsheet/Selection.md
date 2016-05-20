@@ -144,6 +144,14 @@ Gets or sets the thickness of selection border.</td></tr>
 <td>
 {{ '[AllowSelection](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~AllowSelection.html) ' | markdownify }}</td><td>
  Gets or Sets the value whether to allow the selection in the ActiveGrid or not.</td></tr>
+<tr>
+<td>
+{{ '[ShowTouchIndicator](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SelectionController~ShowTouchIndicator.html) ' | markdownify }}</td><td>
+ Determines whether the touch indicator will be shown or not.</td></tr>
+<tr>
+<td>
+{{ '[TouchHitTestPrecision](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SelectionController~TouchHitTestPrecision.html) ' | markdownify }}</td><td>
+Gets or sets the distance of touch precision point from touch indicator.</td></tr>
  </table>
  
 Below table lists the properties associated with [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~CurrentCell.html) of `SpreadsheetGrid`,
