@@ -141,7 +141,7 @@ Invoke the [QueryRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadshe
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
-   var grid = spreadsheetControl.ActiveGrid;
+   var grid = spreadsheet.ActiveGrid;
    grid.CreateGridColumn = CreateSpreadsheetColumnExt;
    var renderer = new SpreadsheetTemplateCellRenderer();
    grid.CellRenderers.Add("DataTemplate", renderer);

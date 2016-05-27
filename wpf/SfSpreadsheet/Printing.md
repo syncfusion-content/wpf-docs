@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing
+title: Printing in SfSpreadsheet
 description: How to print the workbook in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
