@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Formula 
+title: Custom Formula in SfSpreadsheet
 description: How to add custom formulas in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet

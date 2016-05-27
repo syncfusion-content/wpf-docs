@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Customization
+title: Cell Customization in SfSpreadsheet
 description: How to customize a cell in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet

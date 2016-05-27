@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon Customization 
+title: Ribbon Customization in SfSpreadsheet
 description: How to customize the SfSpreadsheetRibbon
 platform: wpf
 control: SfSpreadsheet

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes
+title: Shapes in SfSpreadsheet
 description: How to import charts, sparklines, pictures and textboxes in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
@@ -9,7 +9,6 @@ documentation: ug
 
 # Shapes
  This section explains how to charts, sparklines, pictures and textboxes in SfSpreadsheet.
-<br/>
 
 ## Charts
 
@@ -17,7 +16,7 @@ SfSpreadsheet provides support to import charts from excel which are used to rep
 
 To import the charts into SfSpreadsheet, need to create an instance of [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll “
 
-Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Add the `GraphicChartCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,6 +25,8 @@ Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by usi
 
 {% endhighlight %}
 {% endtabs %}
+
+### Adding the Charts at Runtime
 
 For adding the Charts in SfSpreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
 
@@ -54,13 +55,12 @@ shape.Height = 300;
 shape.Width = 300;
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Sparklines
 
 To import the Sparklines into SfSpreadsheet, need to create an instance of [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll”
 
-Add the SparklineCellRenderer into the GraphicCellRenderers collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Add the `SparklineCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,7 +69,6 @@ Add the SparklineCellRenderer into the GraphicCellRenderers collection by using 
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Pictures
 
@@ -92,11 +91,10 @@ shape.Width = 200;
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## TextBoxes
 
-SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the rich text box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
+SfSpreadsheet provides support to import RichText Box in `SpreadsheetGrid` and to add the rich text box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -109,5 +107,34 @@ var textBox = spreadsheet.AddTextBox(spreadsheet.ActiveSheet, new RowColumnIndex
 textBox.Left = 200;
 textBox.Top = 200;
          
+{% endhighlight %}
+{% endtabs %}
+
+## Accessing the selected Shapes
+
+SfSpreadsheet allows the user to access the selected shapes and modify the properties associated with it in `SpreadsheetGrid`.
+
+{% tabs %}
+{% highlight c# %}
+
+var selectedshape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
+for(int i = 0; i < selectedshape.Count ; i++)
+{
+    if(ExcelShapeType.Chart == selectedshape[i].ShapeType)
+    {
+        var chart = selectedshape[i] as IChart;
+        chart.ChartArea.Fill.FillType = ExcelFillType.Gradient;
+        chart.ChartArea.Fill.ForeColor = Color.Blue;
+    }
+    else if(ExcelShapeType.Picture == selectedshape[i].ShapeType)
+    {
+        var picture = selectedshape[i] as ShapeImpl;
+        picture.Height = 100;
+        picture.Width = 100;
+    }
+}
+spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicObjects();
+spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
+
 {% endhighlight %}
 {% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conversion
+title: Conversion in SfSpreadsheet
 description: How to convert the workbook in SfSpreadsheet to image, pdf and html
 platform: wpf
 control: SfSpreadsheet
@@ -9,9 +9,8 @@ documentation: ug
 
 # Conversion
 This section explains about the conversion of workbook in SfSpreadsheet into image, PDF and HTML
-<br/>
 
-## Image
+## Convert to Image
 
 SfSpreadsheet provides support to convert a worksheet in to an image of type Bitmap or Metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](http://help.syncfusion.com/file-formats/xlsio/conversions#convert-worksheet-to-image) method,worksheet can be converted into an image.
 
@@ -34,9 +33,8 @@ System.Diagnostics.Process.Start("Sample.png");
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
-## PDF
+## Convert to PDF
 
 SfSpreadsheet provides support to export the Excel workbook to PDF using ExcelToPdfConverter. 
 
@@ -77,9 +75,8 @@ System.Diagnostics.Process.Start("Sample.pdf");
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
-## HTML
+## Convert to HTML
 
 SfSpreadsheet provides support to convert the excel workbook into HTML page.
 
