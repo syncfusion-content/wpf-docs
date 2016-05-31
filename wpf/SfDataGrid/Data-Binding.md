@@ -390,7 +390,7 @@ Now, run the application and you can see the SfDataGrid control loaded with data
  
 ## Binding data from ADO.NET Entity Framework
 
-SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.NET_EntityFramework_Demo-1973737092.zip).
+SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
 
 To load the data from ADO.NET Entity Framework, you can refer the steps mentioned in below follow the below steps,
 
@@ -486,12 +486,17 @@ The below code example will save back the changed value of row to data  base.
 
 {% tabs %}
 {% highlight c# %}
-this.dataGrid.RowValidated += dataGrid_RowValidated;
+NORTHWNDEntities northWind;
+public MainWindow()
+{
+    InitializeComponent();
+    northWind = new NORTHWNDEntities();
+    this.dataGrid.RowValidated += dataGrid_RowValidated;
+}
 
 void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEventArgs args)
 {
     Order_Detail newRecord = args.RowData as Order_Detail;
-    NORTHWNDEntities northWind = new NORTHWNDEntities();
     Order_Detail order = northWind.Order_Details.First(i => i.OrderID == newRecord.OrderID);
     order.OrderID = newRecord.OrderID;
     order.ProductID = newRecord.ProductID;
