@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Features 
+title: Interactive Features in SfSpreadsheet
 description: How to use the clipboard operations, undo/redo and other functionalities in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
@@ -10,8 +10,6 @@ documentation: ug
 # Interactive Features
 
  This section explains about the interactive operations with SfSpreadsheet
-<br/>
-<br/>
 
 ## Clipboard Operations
 
@@ -70,6 +68,8 @@ Value & Source Formatting</td><td>
 To maintain the source range original format and paste only values</td></tr>
 </table>
 
+N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
+
 For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste~Cut.html) Operation,
 
 {% tabs %}
@@ -126,9 +126,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endhighlight %}
 {% endtabs %}
 
-N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
-
-<br/>
+T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.PasteOptions.html) while pasting in SfSpreadsheet, by using [DefaultPasteOption](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste~DefaultPasteOption.html) property.
 
 ## Undo/Redo
 
@@ -166,15 +164,12 @@ spreadsheet.HistoryManager.Redo();
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ## Context menu
 
 Context menu in SfSpreadsheet is customizable menu which can be used for various functionalities
-<br/>
-<br/>
 
-### TabItem context menu
+### TabItem Context menu
 
 By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowTabItemContextMenu.html) property is set to true to enable the TabItemContext Menu in SfSpreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items in Context_Menu opening Event.
 
@@ -185,7 +180,6 @@ By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/w
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 ### Cell Context menu
 
@@ -214,7 +208,7 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Cell Comments
 
