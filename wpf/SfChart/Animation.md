@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation| SfChart | Wpf | Syncfusion
-description: animation
+description: Animation support for SfChart
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-SfChartAnimation allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the EnableAnimation property as True and defining the corresponding animation speed with AnimationDuration property.
+SfChart allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the EnableAnimation property as True and defining the corresponding animation speed with AnimationDuration property.
 
 The following types of series support Animation.
 
@@ -26,39 +26,35 @@ The following types of series support Animation.
 * Stacking area
 * Pie
 
-
-
 The following APIs are used to customize the Animation.
 
-### Customization API for Animation
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></th>
-<tr>
-<td>
-EnableAnimation</td><td>
-Gets or sets the bool value that represents a value to enable the animation for series.</td></tr>
-<tr>
-<td>
-AnimationDuration</td><td>
-Gets or sets the TimeSpan value that represents the animation speed for the chart.</td></tr>
-</table>
+* [`EnableAnimation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EnableAnimation.html)-Represents a boolean value to enable the animation for series.
+* [`AnimationDuration`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~AnimationDuration.html)-Represents a TimeSpan value which sets animation speed for the chart.
 
 
 The following example shows the Animation feature for chart series.
 
 {% highlight xaml %}
 
-
-
 <syncfusion:SfChart>
 
-<syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro" XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
+<syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:03" 
+
+XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
 
 </syncfusion:SfChart>
 
 {% endhighlight %}
 
+**Column** **Series **
+
+![](Animation_images/column.gif)
+
+**SplineArea** **Series**
+
+![](Animation_images/spline.gif)
+
+**Scatter** **Series**
+
+![](Animation_images/scatter.gif)

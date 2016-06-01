@@ -50,7 +50,7 @@ ExportDemoChart.Save("D:\\Pictures\\Test\\chart_image.png");
 
 T> We can change the image formats in above code by changing its extension as .jpg, .tiff, etc.
 
-### Save(Stream stream, BitmapEncoder imgEncoder)
+### Save(Stream stream, BitmapEncoder imgEncoderID)
 
 This helps to export the chart to any stream as in below code example.
 
