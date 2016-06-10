@@ -1,11 +1,11 @@
----
-layout: post
-title: Supported-Barcode-types
-description: supported barcode types
-platform: js
-control: Barcode
-documentation: ug
----
+----
+-layout: post
+-title: Barcode Symbols | SfBarcode | wpf | Syncfusion
+-description: barcode symbols
+-platform: wpf
+-control: SfBarcode
+-documentation: ug
+----
 
 # Supported Barcode types
 
