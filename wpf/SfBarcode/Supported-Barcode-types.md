@@ -1,7 +1,7 @@
 ----
 -layout: post
--title: Barcode Symbols | SfBarcode | wpf | Syncfusion
--description: barcode symbols
+-title: Supported-Barcode-types | SfBarcode | wpf | Syncfusion
+-description: Supported Barcode types
 -platform: wpf
 -control: SfBarcode
 -documentation: ug
