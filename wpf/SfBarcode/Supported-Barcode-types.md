@@ -1,11 +1,11 @@
-----
--layout: post
--title: Supported-Barcode-types | SfBarcode | wpf | Syncfusion
--description: Supported Barcode types
--platform: wpf
--control: SfBarcode
--documentation: ug
-----
+---
+layout: post
+title: Supported-Barcode-types | SfBarcode | wpf | Syncfusion
+description: Supported Barcode types
+platform: wpf
+control: SfBarcode
+documentation: ug
+---
 
 # Supported Barcode types
 
