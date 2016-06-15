@@ -24,7 +24,7 @@ Setting of the culture information,
    
 public MainWindow()
 {
-    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja-JP");
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
 
     InitializeComponent();
 }
@@ -39,9 +39,9 @@ Now, the Application is set to the Japanese Culture info.
 The following steps show how to implement the localization in SfSpreadsheet,
 
 * Create folder name as ‘Resources’ in your application.
-* Add default [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.WPF-2036707012) (resource) file of `SfSpreadsheet` in the 'Resources' folder named as Syncfusion.SfSpreadsheet.WPF.resx
+* Add default English("en-US") [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.WPF-2036707012) (resource) file of `SfSpreadsheet` in the 'Resources' folder named as Syncfusion.SfSpreadsheet.WPF.resx
 * Create Resx(resource) file and name it as Syncfusion.SfSpreadsheet.WPF.[Culture name].resx. For example, Syncfusion.SfSpreadsheet.WPF.ja.resx for japanese culture.
-  For your reference, Japanese [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.WPF.ja-1692529812) file
+  For your reference, Japanese("ja-JP") [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.WPF.ja-1692529812) file
 
 ![](localization_images/Loc_Image1.JPG)
 
