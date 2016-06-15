@@ -151,7 +151,17 @@ Ctrl + Y</td></tr>
 
 SfSpreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
 
-To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager~Enabled.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) needs to be true.  
+By default, Undo/Redo operations in SfSpreadsheet is enabled. To disable the Undo/Redo operations, set the [Enabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager~Enabled.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) to be false.  
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.HistoryManager.Enabled = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+To programmatically, invoke the Undo/Redo operations,
 
 {% tabs %}
 {% highlight c# %}
@@ -171,19 +181,64 @@ Context menu in SfSpreadsheet is customizable menu which can be used for various
 
 ### TabItem Context menu
 
-By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowTabItemContextMenu.html) property is set to true to enable the TabItemContext Menu in SfSpreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items in Context_Menu opening Event.
+TabItem Context menu opens when the user right-click on the sheet tab and contains the menus related to worksheet operations.
+
+By default, TabItem Context menu is enabled in SfSpreadsheet. To disable the TabItem context menu, set the [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowTabItemContextMenu.html) property to false. 
 
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.IsCustomTabItemContextMenuEnabled = true;
+spreadsheet.AllowTabItemContextMenu = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.IsCustomTabItemContextMenuEnabled = true;
+spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
+
+//Custom TabItem ContextMenus
+
+ public ContextMenu CustomTabItemContextMenu()
+ {
+    var contextMenu = new ContextMenu();
+    var Insertrowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
+    var Insertrow = new MenuItem() { Header = "InsertRow" };           
+    Insertrow.Icon = Insertrowicon;
+    Insertrow.Click += Insertrow_Click;
+
+    var Deleterowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
+    var Deleterow = new MenuItem() { Header = "DeleteRow"};
+    Deleterow.Icon = Deleterowicon;
+    Deleterow.Click += Deleterow_Click;
+    
+    contextMenu.Items.Add(Insertrow);
+    contextMenu.Items.Add(Deleterow);
+    return contextMenu;
+ }
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Cell Context menu
 
-By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowCellContextMenu.html) property is set as true to enable the CellContext Menu in SfSpreadsheet. The Event associated with Cell Context menu [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of SpreadsheetGrid.
+Cell Context menu opens when the user right-click on a worksheet cell or selection of cells in SfSpreadsheet.
+
+By default, Cell Context menu is enabled in SfSpreadsheet. To disable the Cell Context menu, set the [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowCellContextMenu.html)  property as false.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.AllowCellContextMenu = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+Users can also customize the Cell Context menu of SfSpreadsheet by using [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of `SpreadsheetGrid`.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
@@ -209,6 +264,7 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 {% endhighlight %}
 {% endtabs %}
 
+T> Custom Cell Context menu can also by added by assigning the customized menu items to the [CellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenu.html) property of `SpreadsheetGrid`. For your reference, [CustomContextMenu](https://www.syncfusion.com/kb/6499/how-to-create-a-customized-cell-context-menu-of-sfspreadsheet)
 
 ## Cell Comments
 
