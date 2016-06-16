@@ -9,9 +9,31 @@ documentation: ug
 
 #Getting Started
 
+The following section helps you to build your application with SfDiagram. 
+
+## Steps
+
+   * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+   * Add the SfDiagram assembly to your application. 
+   * Initialize SfDiagram control.
+   * Initialize Nodes and Connectors.
+   * Create class to store employee information.
+   * Initialize Data.   
+   * Initialize DataSourceSettings.
+   * Data Binding.
+   * Visualize Employees.
+   * Initialize Layout.
+   
 **Creating Simple Diagram**
 
 This section demonstrates how to visualize the Employee details in the Organizational Chart arrangement by using the SfDiagram.
+
+##Adding assembly reference
+    
+    1. Open the Add reference window from your project.
+    2. Choose Windows > Extensions > Syncfusion.SfDiagram.WPF.
+
+![](Getting-Started_images\Getting_Started_img.png)
 
 ##Add the SfDigram from the Toolbox
 
@@ -29,22 +51,11 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 {% highlight xaml %}
 
-<Window
-        x:Class="EmployeeDetails.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:EmployeeDetails">
-
-    <Grid Background="White">
-    
-        <syncfusion:SfDiagram x:Name="diagram">
-            
-        </syncfusion:SfDiagram>
-        
-    </Grid>
-
-</Window>
+<Grid Background="White">
+    <!--Initializes the SfDiagram-->  
+    <syncfusion:SfDiagram x:Name="diagram">
+    </syncfusion:SfDiagram>
+</Grid>
 
 {% endhighlight %}
 
@@ -54,48 +65,14 @@ To initialize the Nodes and Connectors properties of the SfDiagram, Nodes proper
 
 {% highlight xaml %}
 
-<Window
-        x:Class="EmployeeDetails.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:EmployeeDetails">
-
-    <Grid Background="White">
-        <syncfusion:SfDiagram x:Name="diagram">
-            <syncfusion:SfDiagram.Nodes>
-                <syncfusion:NodeCollection/>
-            </syncfusion:SfDiagram.Nodes>
-            <syncfusion:SfDiagram.Connectors>
-                <syncfusion:ConnectorCollection/>
-            </syncfusion:SfDiagram.Connectors>
-        </syncfusion:SfDiagram>
-    </Grid>
-
-</Window>
-
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-namespace EmployeeDetails
-{ 
-    public partial class MainPage : Page
-    {
-        public MainWindow()
-        {
-            this.InitializeComponent();
-        }
-    }
-    
-    // Employee Collection.
-
-    public class Employees : ObservableCollection<Employee>
-    {
-
-    }
-}
+<!--Initializes the NodeCollection-->
+<syncfusion:SfDiagram.Nodes>
+	<syncfusion:NodeCollection/>
+</syncfusion:SfDiagram.Nodes>
+<!--Initializes the ConnectorCollection-->
+<syncfusion:SfDiagram.Connectors>
+	<syncfusion:ConnectorCollection/>
+</syncfusion:SfDiagram.Connectors>
 
 {% endhighlight %}
 
@@ -105,30 +82,19 @@ Now, you have to create a class, Employee with properties to store the employee�
 
 {% highlight C# %}
 
-namespace EmployeeDetails
+//Employee Business Object
+public class Employee
 {
-	public partial class MainPage : Page
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-		}
-	}
+    public string ParentId { get; set; }
+    public string Name { get; set; }
+    public string Designation { get; set; }
+    public int EmpId { get; set; }
+}
 
-    //Employee Business Object
-	public class Employee
-	{
-		public string ParentId { get; set; }
-		public string Name { get; set; }
-		public string Designation { get; set; }
-		public int Empid { get; set; }
-	}
+//Employee Collection
+public class Employees : ObservableCollection<Employee>
+{
 
-    //Employee Collection
-	public class Employees : ObservableCollection<Employee>
-	{
-
-	}
 }
 
 {% endhighlight %}
@@ -139,43 +105,16 @@ Create a collection of employees with each employee having an ID in the Emp id a
 
 {% highlight xaml %}
 
-<Window
-        x:Class="EmployeeDetails.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:EmployeeDetails">
-
-    <Window.Resources>
-
-        <!-- Initializes the employee colletion-->
-
-        <local:Employees x:Key="Employees">
-
-            <local:Employee Name="Elizabeth" Empid="1" ParentId="" Designation="CEO"/>
-            <local:Employee Name="Christina" Empid="2" ParentId="1" Designation="Manager"/>
-            <local:Employee Name="Yang" Empid="3" ParentId="1" Designation="Manager"/>
-            <local:Employee Name="Yoshi" Empid="4" ParentId="2" Designation="TeamLead"/>
-            <local:Employee Name="Philip" Empid="5" ParentId="2" Designation="TeamLead"/>
-            <local:Employee Name="Roland" Empid="6" ParentId="3" Designation="TeamLead"/>
-            <local:Employee Name="Yuonne" Empid="7" ParentId="3" Designation="TeamLead"/>
-
-        </local:Employees>
-
-    </Window.Resources>
-
-    <Grid Background="White">
-        <syncfusion:SfDiagram x:Name="diagram">
-            <syncfusion:SfDiagram.Nodes>
-                <syncfusion:NodeCollection/>
-            </syncfusion:SfDiagram.Nodes>
-            <syncfusion:SfDiagram.Connectors>
-                <syncfusion:ConnectorCollection/>
-            </syncfusion:SfDiagram.Connectors>
-        </syncfusion:SfDiagram>
-    </Grid>
-
-</Window>
+<!-- Initializes the employee colletion-->
+<local:Employees x:Key="Employees">
+    <local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
+    <local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="TeamLead"/>
+    <local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
+    <local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
+</local:Employees>
 
 {% endhighlight %}
 
@@ -185,38 +124,16 @@ To populate employee information as Nodes and connectors, configure the DataSour
 
 {% highlight xaml %}
 
-<Window
-        x:Class="EmployeeDetails.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:EmployeeDetails">
-
-    <Window.Resources>
-
-        <!--Initializes the DataSourceSettings -->
-
-        <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"							    
-                                       Id="Empid">
-        </syncfusion:DataSourceSettings>
-
-    </Window.Resources>
-
-    <Grid Background="White">
-        <syncfusion:SfDiagram x:Name="diagram"
-	                          DataSourceSettings="{StaticResource DataSourceSettings}">
-            <syncfusion:SfDiagram.Nodes>
-                <syncfusion:NodeCollection/>
-            </syncfusion:SfDiagram.Nodes>
-            <syncfusion:SfDiagram.Connectors>
-                <syncfusion:ConnectorCollection/>
-            </syncfusion:SfDiagram.Connectors>
-        </syncfusion:SfDiagram>
-    </Grid>
-
-</Window>
+<!--Initializes the DataSourceSettings-->
+<syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"							    
+                               Id="EmpId">
+</syncfusion:DataSourceSettings>
 
 {% endhighlight %}
+
+###Data Binding
+
+In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 ###Visualize Employees
 
@@ -224,91 +141,40 @@ Now, Diagram is configured to load the employees’ information as a tree of org
 
 {% highlight xaml %}
 
-<Window
-        x:Class="EmployeeDetails.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:EmployeeDetails">
-
-    <Window.Resources>
-
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-
-            <!-- Initializes the employee colletion-->
-
-            <local:Employees x:Key="Employees">
-
-                <local:Employee Name="Elizabeth" Empid="1" ParentId="" Designation="CEO"/>
-                <local:Employee Name="Christina" Empid="2" ParentId="1" Designation="Manager"/>
-                <local:Employee Name="Yang" Empid="3" ParentId="1" Designation="Manager"/>
-                <local:Employee Name="Yoshi" Empid="4" ParentId="2" Designation="TeamLead"/>
-                <local:Employee Name="Philip" Empid="5" ParentId="2" Designation="TeamLead"/>
-                <local:Employee Name="Roland" Empid="6" ParentId="3" Designation="TeamLead"/>
-                <local:Employee Name="Yuonne" Empid="7" ParentId="3" Designation="TeamLead"/>
-
-            </local:Employees>
-
-            <!--Initializes the DataSourceSettings -->
-
-            <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"							    
-                                           Id="Empid" DataSource="{StaticResource Employees}">
-            </syncfusion:DataSourceSettings>
-
-            <!--Style for the Node>-->
-
-            <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-
-                <Setter Property="UnitWidth" Value="80" />
-                <Setter Property="UnitHeight" Value="40" />
-                <Setter Property="FontSize" Value="15"></Setter>
-                <Setter Property="Foreground" Value="Black"></Setter>
-                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
-                <Setter Property="ContentTemplate">
-                    <Setter.Value>
-                        <DataTemplate>
-                            <Border Background="#008b8b" 
-                                CornerRadius="5">
-                                <TextBlock Text="{Binding Name}" Foreground="White"
-                                           HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-                            </Border>
-                        </DataTemplate>
-                    </Setter.Value>
-                </Setter>
-
-            </Style>
-            <!--Style for the Connector>-->
-
-            <Style TargetType="syncfusion:Connector">
-                <Setter Property="ConnectorGeometryStyle">
-                    <Setter.Value>
-                        <Style TargetType="Path">
-                            <Setter Property="Stroke" Value="Black" />
-                            <Setter Property="StrokeThickness" Value="1" />
-                        </Style>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-        </ResourceDictionary>
-    </Window.Resources>
-
-    <Grid Background="White">
-        <syncfusion:SfDiagram x:Name="diagram"
-	                          DataSourceSettings="{StaticResource DataSourceSettings}">
-            <syncfusion:SfDiagram.Nodes>
-                <syncfusion:NodeCollection/>
-            </syncfusion:SfDiagram.Nodes>
-            <syncfusion:SfDiagram.Connectors>
-                <syncfusion:ConnectorCollection/>
-            </syncfusion:SfDiagram.Connectors>
-        </syncfusion:SfDiagram>
-    </Grid>
-
-</Window>
+<Window.Resources>
+	<ResourceDictionary>
+		<!--Style for the Node>-->
+		<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+			        <Setter Property="UnitWidth" Value="80" />
+	            	<Setter Property="UnitHeight" Value="40" />
+		            <Setter Property="FontSize" Value="15"></Setter>
+	       		    <Setter Property="Foreground" Value="Black"></Setter>
+	                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+        	        <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+                	<Setter Property="ContentTemplate">
+                		<Setter.Value>
+                        		<DataTemplate>
+                            			<Border Background="#008b8b" CornerRadius="5">
+	                                		<TextBlock Text="{Binding Name}" Foreground="White"
+                                           		   	   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	                            		</Border>
+	                        	</DataTemplate>
+				       </Setter.Value>
+                   </Setter>
+		</Style>
+		<!--Style for the Connector>-->
+		<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle }">
+        		<Setter Property="ConnectorGeometryStyle">
+                		<Setter.Value>
+                        		<Style TargetType="Path">
+                            			<Setter Property="Stroke" Value="Black" />
+                            			<Setter Property="StrokeThickness" Value="1" />
+	                        	</Style>
+                        </Setter.Value>
+               </Setter>
+		</Style>
+	</ResourceDictionary>
+</<Window.Resources>
 
 {% endhighlight %}
 
@@ -318,41 +184,19 @@ Employees are initialized, populated in the Diagram, and appearance for employee
 
 {% highlight xaml %}
 
-<Window
-        x:Class="EmployeeDetails.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:EmployeeDetails">
+<!--Initializes the Layout-->
+<syncfusion:DirectedTreeLayout x:Key="TreeLayout" HorizontalSpacing="80" 
+		                       VerticalSpacing="50" SpaceBetweenSubTrees="20" 
+		                       Orientation="TopToBottom"/>
+<syncfusion:LayoutManager x:Key="LayoutManager"  
+                          Layout="{StaticResource TreeLayout}"/>
 
-    <Window.Resources>
-
-        <!--Initializes the Layout-->
-
-        <syncfusion:DirectedTreeLayout x:Key="TreeLayout" 
-		                               HorizontalSpacing="80" 
-		                               VerticalSpacing="50" 
-		                               SpaceBetweenSubTrees="20" 
-		                               Orientation="TopToBottom"/>
-
-        <syncfusion:LayoutManager x:Key="LayoutManager"  
-		                          Layout="{StaticResource TreeLayout}"/>
-
-    </Window.Resources>
-
-    <Grid Background="White">
-        <syncfusion:SfDiagram x:Name="diagram"
-	                          LayoutManager="{StaticResource LayoutManager}">
-            <syncfusion:SfDiagram.Nodes>
-                <syncfusion:NodeCollection/>
-            </syncfusion:SfDiagram.Nodes>
-            <syncfusion:SfDiagram.Connectors>
-                <syncfusion:ConnectorCollection/>
-            </syncfusion:SfDiagram.Connectors>
+<Grid Background="White">
+    <!--Initialize the SfDiagram-->
+	<syncfusion:SfDiagram x:Name="diagram"
+	                      LayoutManager="{StaticResource LayoutManager}">
         </syncfusion:SfDiagram>
-    </Grid>
-
-</Window>
+</Grid>
 
 {% endhighlight %}
 
@@ -378,20 +222,20 @@ The final MainPage.Xaml looks like this.
 
             <local:Employees x:Key="Employees">
 
-                <local:Employee Name="Elizabeth" Empid="1" ParentId="" Designation="CEO"/>
-                <local:Employee Name="Christina" Empid="2" ParentId="1" Designation="Manager"/>
-                <local:Employee Name="Yang" Empid="3" ParentId="1" Designation="Manager"/>
-                <local:Employee Name="Yoshi" Empid="4" ParentId="2" Designation="TeamLead"/>
-                <local:Employee Name="Philip" Empid="5" ParentId="2" Designation="TeamLead"/>
-                <local:Employee Name="Roland" Empid="6" ParentId="3" Designation="TeamLead"/>
-                <local:Employee Name="Yuonne" Empid="7" ParentId="3" Designation="TeamLead"/>
+                <local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
+                <local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
+                <local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
+                <local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="TeamLead"/>
+                <local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
+                <local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
+                <local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
 
             </local:Employees>
 
             <!--Initializes the DataSourceSettings -->
 
             <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"							    
-                                           Id="Empid" DataSource="{StaticResource Employees}">
+                                           Id="EmpId" DataSource="{StaticResource Employees}">
             </syncfusion:DataSourceSettings>
 
             <!--Style for the Node>-->
@@ -444,12 +288,15 @@ The final MainPage.Xaml looks like this.
     </Window.Resources>
 
     <Grid Background="White">
+        <!--Initializes the SfDiagram-->
         <syncfusion:SfDiagram x:Name="diagram"
 	                          DataSourceSettings="{StaticResource DataSourceSettings}"
 	                          LayoutManager="{StaticResource LayoutManager}">
+            <!--Initializes the NodeCollection-->                              
             <syncfusion:SfDiagram.Nodes>
                 <syncfusion:NodeCollection/>
             </syncfusion:SfDiagram.Nodes>
+            <!--Initializes the ConnectorCollection-->
             <syncfusion:SfDiagram.Connectors>
                 <syncfusion:ConnectorCollection/>
             </syncfusion:SfDiagram.Connectors>
