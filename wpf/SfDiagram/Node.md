@@ -168,9 +168,9 @@ return style;
 
 ![](Node_images/Node_img4.jpeg)
 
-##Binding Style
+##Data Binding
 
-In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Binding Style](/wpf/sfdiagram/Binding-Style).
+In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 

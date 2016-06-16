@@ -20,7 +20,7 @@ The following section helps you to build your application with SfDiagram.
    * Create class to store employee information.
    * Initialize Data.   
    * Initialize DataSourceSettings.
-   * Binding Style.
+   * Data Binding.
    * Visualize Employees.
    * Initialize Layout.
    
@@ -129,9 +129,9 @@ To populate employee information as Nodes and connectors, configure the DataSour
 
 {% endhighlight %}
 
-###Binding Style
+###Data Binding
 
-In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Binding Style](/wpf/sfdiagram/Binding-Style).
+In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 ###Visualize Employees
 

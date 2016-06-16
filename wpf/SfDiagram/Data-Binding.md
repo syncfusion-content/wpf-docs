@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Binding Style for Syncfusion Essential Diagram for WPF.
-description: Binding Style for properties of ViewModel are bind to View. 
+title: Data Binding for Syncfusion Essential Diagram for WPF.
+description: Data Binding for properties of ViewModel are bind to View. 
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-#Binding Style
-
+#Data Binding
 By default, View will be generated for each ViewModel and Properties of ViewModel (NodeViewModel) are bind to View (Node). We have changed this Default Behavior (ViewModel to View binding will not work).
 
 The following code illustrates how to achieve View to View Model binding by using “BindingStyle.xaml”

@@ -21,9 +21,9 @@ Port act as the connection points of node and allows to create connections with 
 
 ![](Port_images/Port_img4.jpeg)![](Port_images/Port_img5.jpeg)
 
-###Binding Style
+###Data Binding
 
-In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Binding Style](/wpf/sfdiagram/Binding-Style).
+In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 ##Node Port
 
