@@ -168,37 +168,9 @@ return style;
 
 ![](Node_images/Node_img4.jpeg)
 
-## View to ViewModel Binding
+##Binding Style
 
-By default, View will be generated for each ViewModel and Properties of ViewModel (NodeViewModel) are bind to View (Node). We have changed this Default Behavior (ViewModel to View binding will not work).In order to achieve ViewModel to View binding, we have provided the Default Style for View in “BindingStyle.xaml”.
- 
-The following code illustrates how to achieve View to View Model binding by using “BindingStyle.xaml”. 
-
-{% highlight xaml %}
- <!--For View to ViewModel binding-->
- <ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
- </ResourceDictionary.MergedDictionaries>
-
-{% endhighlight %}
-
-The following code illustrates how to customize the ViewModel by using Common style for View.
-
-{% highlight xaml %}
-<!--For View to ViewModel binding-->
-<ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
-</ResourceDictionary.MergedDictionaries>
-            
-<!--To apply Style for NodeViewModel,ConnectorViewModel-->
-<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-   <!--Common code for NodeViewModel-->
-</Style>
-<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
-    <!--Common code for ConnectorViewModel-->
-</Style>
-
-{% endhighlight %}
+In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Binding Style](/wpf/sfdiagram/Binding-Style).
 
 N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 
