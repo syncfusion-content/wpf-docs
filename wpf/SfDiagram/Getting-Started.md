@@ -51,7 +51,8 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 {% highlight xaml %}
 
-<Grid Background="White">  
+<Grid Background="White">
+    <!--Initializes the SfDiagram-->  
     <syncfusion:SfDiagram x:Name="diagram">
     </syncfusion:SfDiagram>
 </Grid>
@@ -64,9 +65,11 @@ To initialize the Nodes and Connectors properties of the SfDiagram, Nodes proper
 
 {% highlight xaml %}
 
+<!--Initializes the NodeCollection-->
 <syncfusion:SfDiagram.Nodes>
 	<syncfusion:NodeCollection/>
 </syncfusion:SfDiagram.Nodes>
+<!--Initializes the ConnectorCollection-->
 <syncfusion:SfDiagram.Connectors>
 	<syncfusion:ConnectorCollection/>
 </syncfusion:SfDiagram.Connectors>
@@ -122,7 +125,6 @@ To populate employee information as Nodes and connectors, configure the DataSour
 {% highlight xaml %}
 
 <!--Initializes the DataSourceSettings-->
-
 <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"							    
                                Id="EmpId">
 </syncfusion:DataSourceSettings>
@@ -183,7 +185,6 @@ Employees are initialized, populated in the Diagram, and appearance for employee
 {% highlight xaml %}
 
 <!--Initializes the Layout-->
-
 <syncfusion:DirectedTreeLayout x:Key="TreeLayout" HorizontalSpacing="80" 
 		                       VerticalSpacing="50" SpaceBetweenSubTrees="20" 
 		                       Orientation="TopToBottom"/>
@@ -191,6 +192,7 @@ Employees are initialized, populated in the Diagram, and appearance for employee
                           Layout="{StaticResource TreeLayout}"/>
 
 <Grid Background="White">
+    <!--Initialize the SfDiagram-->
 	<syncfusion:SfDiagram x:Name="diagram"
 	                      LayoutManager="{StaticResource LayoutManager}">
         </syncfusion:SfDiagram>
@@ -286,12 +288,15 @@ The final MainPage.Xaml looks like this.
     </Window.Resources>
 
     <Grid Background="White">
+        <!--Initializes the SfDiagram-->
         <syncfusion:SfDiagram x:Name="diagram"
 	                          DataSourceSettings="{StaticResource DataSourceSettings}"
 	                          LayoutManager="{StaticResource LayoutManager}">
+            <!--Initializes the NodeCollection-->                              
             <syncfusion:SfDiagram.Nodes>
                 <syncfusion:NodeCollection/>
             </syncfusion:SfDiagram.Nodes>
+            <!--Initializes the ConnectorCollection-->
             <syncfusion:SfDiagram.Connectors>
                 <syncfusion:ConnectorCollection/>
             </syncfusion:SfDiagram.Connectors>

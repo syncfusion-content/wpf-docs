@@ -91,14 +91,19 @@ public class PortCollection : ObservableCollection<IPort>
 
 {% highlight xaml %}
 
+<!--Initializes the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+	<!--Initializes the NodeCollection-->
 	<syncfusion:SfDiagram.Nodes>
 		<syncfusion:NodeCollection>
+		    <!--Initializes the Node-->
         	<syncfusion:NodeViewModel x:Name="node" OffsetX="100" 
 				                      OffsetY="100" UnitHeight="100"
-									  UnitWidth="100">                                    
+									  UnitWidth="100">	
+				<!--Initializes the PortCollection-->					  						                                   
 				<syncfusion:NodeViewModel.Ports>
 					<local:PortCollection>
+					    <!--Initializes the NodePort-->
 						<syncfusion:NodePortViewModel x:Name="port" UnitWidth="10"
                                                       UnitHeight="10" NodeOffsetX="0.5"
                                                       NodeOffsetY="0.5">
@@ -172,12 +177,17 @@ public class PortCollection : ObservableCollection<IPort>
 
 {% highlight xaml %}
 
+<!--Initializes the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible" DefaultConnectorType="Line">
+	<!--Initializes the ConnectorCollection-->
 	<syncfusion:SfDiagram.Connectors>
     	<syncfusion:ConnectorCollection>
+		    <!--Initializes the Connector-->
         	<syncfusion:ConnectorViewModel x:Name="connector" SourcePoint="100,100" TargetPoint="300,300">
+				<!--Initializes the PortCollection-->
 				<syncfusion:ConnectorViewModel.Ports>
                 	<local:PortCollection>
+					    <!--Initializes the ConnectorPort-->
                     	<syncfusion:ConnectorPortViewModel x:Name="port" UnitWidth="7"
                                                            UnitHeight="7" 
                                                            Length="0.5">
@@ -230,13 +240,18 @@ The following code illustrates how to change the appearance of port.
 
 {% highlight xaml %}
 
+<!--Initializes the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+	<!--Initializes the NodeCollection-->
 	<syncfusion:SfDiagram.Nodes>
 		<syncfusion:NodeCollection>
+				<!--Initializes the Node-->
               	<syncfusion:NodeViewModel x:Name="node" OffsetX="100" OffsetY="100" 	
-				  		                  UnitHeight="100" UnitWidth="100">                                    
+				  		                  UnitHeight="100" UnitWidth="100">  
+				    <!--Initializes the NodePortCollection-->                                  
 					<syncfusion:NodeViewModel.Ports>
 						<local:PortCollection>
+						    <!--Initializes the NodePort-->
 							<syncfusion:NodePortViewModel x:Name="port" UnitWidth="7"
                                                       	  UnitHeight="7"
                                                           NodeOffsetX="1"
