@@ -43,17 +43,53 @@ You can customize the appearance of the gridlines by using a set of predefined p
 
 {% highlight C# %}
 
-Style blue =new Style(typeof(Path));
-blue.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Blue)));
-blue.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 2 })); 
-
-Gridlines gridlines = new Gridlines()
+public class Gridlinestyle : List<Style>
 {
-	Strokes = new List<Style>() { blue }
-};
 
-diagram.SnapSettings.HorizontalGridlines = gridlines;
-diagram.SnapSettings.VerticalGridlines = gridlines;
+}
+	
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Style for HorizontalGridlines-->
+<local:Gridlinestyle x:Key="Hgridline">
+	<Style TargetType="Path">
+    	<Setter Property="Stroke" Value="Blue" ></Setter>
+        <Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+<!--Style for VerticalGridlines-->
+<local:Gridlinestyle x:Key="Vgridline">
+	<Style TargetType="Path">
+		<Setter Property="Stroke" Value="Blue" ></Setter>
+    	<Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagramcontrol">
+	<syncfusion:SfDiagram.SnapSettings>
+    	<syncfusion:SnapSettings SnapConstraints="ShowLines">
+        	<!--Initialize HorizontalGridlines-->
+              	<syncfusion:SnapSettings.HorizontalGridlines>
+                	<syncfusion:Gridlines Strokes="{StaticResource Hgridline}">
+                	</syncfusion:Gridlines>
+				</syncfusion:SnapSettings.HorizontalGridlines>
+                 
+			<!--Initialize VerticalGridlines-->
+            <syncfusion:SnapSettings.VerticalGridlines>
+            	<syncfusion:Gridlines Strokes="{StaticResource Vgridline}">
+                </syncfusion:Gridlines>
+            </syncfusion:SnapSettings.VerticalGridlines>
+		</syncfusion:SnapSettings>
+   </syncfusion:SfDiagram.SnapSettings>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -67,22 +103,72 @@ The following code example illustrates how to customize the thickness of lines a
 
 {% highlight C# %}
 
-diagram.Width = 400;
-diagram.Height = 400;
-diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
-
-Style blue =new Style(typeof(Path));
-blue.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Blue)));
-blue.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 2 })); 
-
-Gridlines gridlines = new Gridlines()
+public class Gridlinestyle : List<Style>
 {
-	Strokes = new List<Style>() { blue },
-	LinesInterval = new List<double>() { 1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15 }
-};
 
-diagram.SnapSettings.HorizontalGridlines = gridlines;
-diagram.SnapSettings.VerticalGridlines = gridlines;
+}
+
+public class Intervals : List<double>
+{
+
+}
+	
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initializes the double collection-->
+<local:Intervals x:Key="Intervals">
+	<sys:Double>1.25</sys:Double>
+    <sys:Double>14</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+ </local:Intervals>
+
+<!--Style for HorizontalGridlines-->
+<local:Gridlinestyle x:Key="Hgridline">
+	<Style TargetType="Path">
+    	<Setter Property="Stroke" Value="Blue" ></Setter>
+        <Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+<!--Style for VerticalGridlines-->
+<local:Gridlinestyle x:Key="Vgridline">
+	<Style TargetType="Path">
+		<Setter Property="Stroke" Value="Blue" ></Setter>
+    	<Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagramcontrol">
+	<syncfusion:SfDiagram.SnapSettings>
+    	<syncfusion:SnapSettings SnapConstraints="ShowLines">
+        	<!--Initialize HorizontalGridlines-->
+              	<syncfusion:SnapSettings.HorizontalGridlines>
+                	<syncfusion:Gridlines Strokes="{StaticResource Hgridline}" LinesInterval="{StaticResource Intervals}">
+                	</syncfusion:Gridlines>
+				</syncfusion:SnapSettings.HorizontalGridlines>
+                 
+			<!--Initialize VerticalGridlines-->
+            <syncfusion:SnapSettings.VerticalGridlines>
+            	<syncfusion:Gridlines Strokes="{StaticResource Vgridline}" LinesInterval="{StaticResource Intervals}">
+                </syncfusion:Gridlines>
+            </syncfusion:SnapSettings.VerticalGridlines>
+		</syncfusion:SnapSettings>
+   </syncfusion:SfDiagram.SnapSettings>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
