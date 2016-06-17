@@ -713,7 +713,7 @@ The positioning of adornments inside the series is defined using [`AdornmentPosi
 
 * `Top`- Positions the Adornment at the top edge point of a chart segment.
 * `Bottom`- Positions the Adornment at the bottom edge point of a chart segment.
-* `TopandBottom`- Positions the Adornment at the center point of a chart segment.
+* `TopAndBottom`- Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
