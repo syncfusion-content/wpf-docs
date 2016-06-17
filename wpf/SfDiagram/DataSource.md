@@ -50,7 +50,7 @@ The following code example illustrates how to bind data to SfDiagram.
          
 <!--Initializes the SfDiagram-->          
 <syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}"                           
-                      DataSourceSettings="{StaticResource DataSourceSettings}" Grid.Column="0">
+                      DataSourceSettings="{StaticResource DataSourceSettings}">
     <!--Initializes the NodeCollection-->                  
     <syncfusion:SfDiagram.Nodes>
         <syncfusion:NodeCollection/>
