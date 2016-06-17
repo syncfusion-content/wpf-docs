@@ -17,7 +17,9 @@ The `SnapConstraints` property of SnapSettings enables you to show/hide the grid
 
 {% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram" Height="400" Width="400">
+<!--Initialize SfDiagram-->
+<diagram:SfDiagram x:Name="diagram" Height="400" Width="400"> 
+  <!--Initialize SnapSettings-->		
   <diagram:SfDiagram.SnapSettings>
     <diagram:SnapSettings SnapConstraints="ShowLines"/>
   </diagram:SfDiagram.SnapSettings>
@@ -29,6 +31,7 @@ The `SnapConstraints` property of SnapSettings enables you to show/hide the grid
 
 diagram.Width = 400;
 diagram.Height = 400;
+//Shows both Horizontal and Vertical Gridlines
 diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
@@ -43,6 +46,7 @@ You can customize the appearance of the gridlines by using a set of predefined p
 
 {% highlight C# %}
 
+//Creates style collection
 public class Gridlinestyle : List<Style>
 {
 
@@ -103,11 +107,13 @@ The following code example illustrates how to customize the thickness of lines a
 
 {% highlight C# %}
 
+//Creates style collection
 public class Gridlinestyle : List<Style>
 {
 
 }
 
+//Creates double collection
 public class Intervals : List<double>
 {
 
@@ -184,6 +190,7 @@ Snapping to gridlines can be enabled/disabled with the SnapConstraints property 
 
 {% highlight C# %}
 
+//Enables snapping to both the horizontal and vertical lines.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 {% endhighlight %}
@@ -202,6 +209,7 @@ The following code illustrates how to enable/disable the smart guide.
 
 {% highlight C# %}
 
+//Enable or Disable the SnapConstraints and SnapToObject
 diagram.SnapSettings.SnapConstraints = SnapConstraints.All;
 
 diagram.SnapSettings.SnapToObject = SnapToObject.None;
