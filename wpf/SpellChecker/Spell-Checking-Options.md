@@ -29,7 +29,7 @@ Specifies whether or not to ignore file names during Spell Check. Default value 
 <tr>
 <td>
 ExcludeHtmlTags</td><td>
-Specifies whether or not to ignore html tags during Spell Check. Default value is True.</td></tr>
+Specifies whether or not to ignore HTML tags during Spell Check. Default value is True.</td></tr>
 <tr>
 <td>
 ExcludeInternetAddress</td><td>

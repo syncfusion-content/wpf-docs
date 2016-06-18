@@ -13,7 +13,7 @@ History support in AutoComplete means, reuse of the items which are already used
 
 ## Using History Support in an Application 
 
-Items can be added to the history using the AddToHistory(String str) and AddToHistory(Object obj) methods, only if that items are present in the data source used with the AutoComplete. Also it supports to save the history while closing the application and to load the history while opening the application using the SaveHistory() and LoadHistory() methods. 
+Items can be added to the history using the AddToHistory(String string) and AddToHistory(Object obj) methods, only if that items are present in the data source used with the AutoComplete. Also it supports to save the history while closing the application and to load the history while opening the application using the SaveHistory() and LoadHistory() methods. 
 
 The following mentioned code example can be used to attain these functionalities.
 {% highlight c# %}
@@ -103,7 +103,7 @@ Reference links </th></tr>
 <td>
 AddHistory()</td><td>
 It should be called to add an item to the history.It can be called at any time.This method will add an input string to the history list if IsHistoryEnabled property is set as True and these items will only be displayed in the History list which can be opened using the drop-down button. </td><td>
-(String str)The input string must be there in the linked Custom Source.</td><td>
+(String string)The input string must be there in the linked Custom Source.</td><td>
 NA.</td><td>
 Void</td><td>
 </td></tr>
