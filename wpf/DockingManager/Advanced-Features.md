@@ -720,16 +720,16 @@ Reference links </th></tr>
 <tr>
 <td>
 AddToTargetManagersList </td><td>
- Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is, dockingmgr - DockingManager to be added to the target list.</td><td>
- (DockingManager dockingmanager)</td><td>
+ Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is, docking - DockingManager to be added to the target list.</td><td>
+ (DockingManager docking)</td><td>
 NA</td><td>
 void </td><td>
 http://help.syncfusion.com/windowsforms/tools</td></tr>
 <tr>
 <td>
 RemoveFromTargetManagersList</td><td>
-Removes the DockingManager from the Target Providers List, belonging to the current manager. The parameter is,{{'_dockingmgr_'| markdownify }} - docking manager to be removed from the target list.</td><td>
-(DockingManager dockingmanager)</td><td>
+Removes the DockingManager from the Target Providers List, belonging to the current manager. The parameter is,{{'_docking_'| markdownify }} - docking manager to be removed from the target list.</td><td>
+(DockingManager docking)</td><td>
 NA</td><td>
 void </td><td>
 http://help.syncfusion.com/windowsforms/tools</td></tr>
