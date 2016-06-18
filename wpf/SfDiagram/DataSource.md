@@ -26,34 +26,40 @@ Two mapping fields are necessary to map a hierarchical datasource with the diagr
 
 The following code example illustrates how to bind data to SfDiagram.
 
-{% highlight C# %}
+{% highlight xaml %}
 
-diagram.Nodes = new ObservableCollection<Node>();
-diagram.Connectors = new ObservableCollection<Connector>();
-DataSourceSettings dataSourceSetttings = new DataSourceSettings();
+<!-- Initializes the employee colletion-->
+<local:Employees x:Key="employees">
+    <local:Employee Name="Steve" EmpId="1" ParentId="" Designation="CEO"/>
+    <local:Employee Name="Kevin" EmpId="2" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="John" EmpId="3" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Raj" EmpId="4" ParentId="2" Designation="Team Lead"/>
+    <local:Employee Name="Will" EmpId="5" ParentId="2" Designation="S/w Developer"/>
+    <local:Employee Name="Sarah" EmpId="6" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Mike" EmpId="7" ParentId="3" Designation="Testing Engineer"/>
+</local:Employees>
+
+<!--Initializes the DataSourceSettings -->
+<syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}"
+                               ParentId="ParentId" Id="EmpId" Root="1"/>
+               
+<!--Initializes the Layout-->                
+<syncfusion:DirectedTreeLayout x:Key="treeLayout" HorizontalSpacing="80" VerticalSpacing="50" 
+                               SpaceBetweenSubTrees="20" Orientation="TopToBottom"/>
+<syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}"/>                               
          
-dataSourceSetttings.ParentId = "ParentId";
-dataSourceSetttings.Id = "EmpId";
-dataSourceSetttings.Root = "1";
-
-ObservableCollection<Employee> employee = new ObservableCollection<Employee>();
-            employee.Add(new Employee() { Name = "Steve", EmpId = 1, ParentId = "",
-                                          Designation = "CEO" });
-            employee.Add(new Employee() { Name = "Kevin", EmpId = 2, ParentId = "1", 
-                                          Designation = "Manager" });
-            employee.Add(new Employee() { Name = "John", EmpId = 3, ParentId = "1", 
-                                          Designation = "Manager" });
-            employee.Add(new Employee() { Name = "Raj", EmpId = 4, ParentId = "2", 
-                                          Designation = "Team Lead" });
-            employee.Add(new Employee() { Name = "Will", EmpId = 5, ParentId = "2", 
-                                          Designation = "S/w Developer" });
-            employee.Add(new Employee() { Name = "Sarah", EmpId = 6, ParentId = "3", 
-                                          Designation = "TeamLead" });
-            employee.Add(new Employee() { Name = "Mike", EmpId = 7, ParentId = "3",
-                                          Designation = "Testing Engineer" });
-          
-dataSourceSetttings.DataSource = employee;
-diagram.DataSourceSettings = dataSourceSetttings;
+<!--Initializes the SfDiagram-->          
+<syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}"                           
+                      DataSourceSettings="{StaticResource DataSourceSettings}">
+    <!--Initializes the NodeCollection-->                  
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection/>
+    </syncfusion:SfDiagram.Nodes>
+    <!--Initializes the ConnectorCollection-->
+    <syncfusion:SfDiagram.Connectors>
+        <syncfusion:ConnectorCollection/>
+    </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
