@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The SfSpreadsheet is excel inspired control that allows you to create, edit, view and format the Microsoft excel files without excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas. 
+The SfSpreadsheet is excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas. 
 
 ## Key Features
 
@@ -57,7 +57,7 @@ The SfSpreadsheet is excel inspired control that allows you to create, edit, vie
 
 * **Localization** - Provides support to localize all the static text in a Ribbon and all dialogs to any desired language.
 
-* **Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma demlimited) respectively.
+* **Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma delimited) respectively.
 
 ## Choose between SfSpreadsheet and Spreadsheet control
 

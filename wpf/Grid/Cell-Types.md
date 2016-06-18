@@ -4144,7 +4144,7 @@ Full path of the file that contains ref.</td></tr>
 Text value of the number format specified in the referenced cell.</td></tr>
 <tr>
 <td>
-'paranthesis'</td><td>
+'parenthesis'</td><td>
 1 if the cell is formatted with parentheses for positive or all values; otherwise returns 0.</td></tr>
 <tr>
 <td>

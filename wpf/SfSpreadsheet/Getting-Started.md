@@ -37,7 +37,7 @@ Contains the classes which holds the controls like Color pickers,Chromeless wind
 <tr>
 <td>
 Syncfusion.Tools.WPF.dll</td><td>
-Contains the classes which holds the controls like TabcontrolExt, TabItemExt, Gallery, GroupBar, TabSplitter etc which are used in SfSpreadsheet</td></tr>
+Contains the classes which holds the controls like TabControlExt, TabItemExt, Gallery, GroupBar, TabSplitter etc which are used in SfSpreadsheet</td></tr>
 <tr>
 <td>
 Syncfusion.XlsIO.Base.dll</td><td>

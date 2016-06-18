@@ -70,7 +70,7 @@ logical1, logical2, ... are multiple conditions you want to test for True or Fal
 ## ASIN
 
 
-Returns theinverse sine of a number. Inverse sine is also referred to as arcsine. The arcsine is the angle whose sine is the given number. The returned angle is given in radians in the range from -pi/2 to +pi/2.
+Returns the inverse sine of a number. Inverse sine is also referred to as arcsine. The arcsine is the angle whose sine is the given number. The returned angle is given in radians in the range from -pi/2 to +pi/2.
 
 ### Syntax
 
@@ -389,7 +389,7 @@ Choose(index, valuearray)
 
 where,
 
-* index is to specify the index from where you want to retrive the value.
+* index is to specify the index from where you want to retrieve the value.
 * valuearray is the array of value from where you want to take the value.
 
 ## Column
@@ -859,7 +859,7 @@ where,
 ## EVEN
 
 
-Returns the numberrounded upto thenearest even integer.
+Returns the numberrounded upto the nearest even integer.
 
 ### Syntax
 
@@ -956,7 +956,7 @@ False(stringvalue)
 
 where:
 
-* stringvalue is toprovide an empty string.
+* stringvalue is to provide an empty string.
 ## FDIST
 
 
@@ -1151,7 +1151,7 @@ This is optional. The FV function assumes Type value as 0, when this parameter i
 
 ##  GAMMADIST
 
-Returns thegamma distribution. 
+Returns the gamma distribution. 
 
 ### Syntax
 
@@ -1918,7 +1918,7 @@ Notes:
 
 * The Match function does not distinguish between uppercase and lowercase when searching.
 * When the Match function does not find a match, it returns #N/A error.
-* match_type is optional.  The Match Function assumes match_type as 1 when the parametter is omitted.
+* match_type is optional.  The Match Function assumes match_type as 1 when the parameter is omitted.
 * When the match_type parameter is 0 and a text value, then you can use wildcards in the value parameter.
 
 Where, 
@@ -2024,7 +2024,7 @@ Remarks
 ## MINUTE
 
 
-Returns theminutes of a time value. The minute is given as an integer, ranging from 0 to 59.
+Returns the minutes of a time value. The minute is given as an integer, ranging from 0 to 59.
 
 ### Syntax
 
@@ -2448,7 +2448,7 @@ where,
 ## PI
 
 
-Returns the number 3.14159265358979, themathematical constant pi, accurate to 15 digits.
+Returns the number 3.14159265358979, the mathematical constant pi, accurate to 15 digits.
 
 ### Syntax
 
@@ -3551,7 +3551,7 @@ True(stringvalue)
 
 where,
 
-* stringvalue is toprovide an empty string.
+* stringvalue is to provide an empty string.
 
 ## TRUNC
 
