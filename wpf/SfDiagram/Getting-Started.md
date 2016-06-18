@@ -35,7 +35,7 @@ This section demonstrates how to visualize the Employee details in the Organizat
 
 ![](Getting-Started_images\Getting_Started_img.png)
 
-##Add the SfDigram from the Toolbox
+##Add SfDiagram from Toolbox
 
 Drag and drop the SfDiagram control from the Toolbox to the XAML Page.
 
@@ -45,7 +45,7 @@ The xmlns name space is added to the MainPage.xaml
 
 ![](Getting-Started_images\Getting_Started_img2.png)
 
-###Initialize the SfDiagram
+###Initialize the diagram
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram to the XAML Page as shown in the following code sample.
 
@@ -59,7 +59,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 {% endhighlight %}
 
-###Initialize Nodes and Connectors
+###Initialize nodes and connectors
 
 To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. Connector’s property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
 
