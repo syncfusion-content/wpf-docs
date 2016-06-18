@@ -144,7 +144,7 @@ SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet v
 
 ## Unfreeze Rows and Columns
 
-SfSpreadsheet provides support to unfreeze the freezed panes in the worksheet of SfSpreadsheet.
+SfSpreadsheet provides support to unfreeze the freeze panes in the worksheet of SfSpreadsheet.
 
 {% tabs %}
 {% highlight c# %}

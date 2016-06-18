@@ -69,7 +69,7 @@ CalcEngine.Parse method does the following:
 * Checks whether it is a valid formula that CalcEngine can understand 
 * Returns a string that represents a parsed version of the formula that can be more readily computed. 
 
-The parsed formula is a Reverse Polish Notation expression using tokens to compactly represent the entered formula. The parsing recognizes and replaces NamedRanges with their corresponding value. The parsing also recognizes library functions and tokenises them as well.
+The parsed formula is a Reverse Polish Notation expression using tokens to compactly represent the entered formula. The parsing recognizes and replaces NamedRanges with their corresponding value. The parsing also recognizes library functions and tokenizes them as well.
 
 ## Calculating
 
