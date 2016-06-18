@@ -15,8 +15,8 @@ The following section helps you to build your application with SfDiagram.
 
    * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
    * Add the SfDiagram assembly to your application. 
-   * Initialize SfDiagram control.
-   * Initialize Nodes and Connectors.
+   * Initialize the diagram.
+   * Initialize nodes and connectors.
    * Create class to store employee information.
    * Initialize Data.   
    * Initialize DataSourceSettings.
@@ -47,7 +47,7 @@ The xmlns name space is added to the MainPage.xaml
 
 ###Initialize the diagram
 
-The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram to the XAML Page as shown in the following code sample.
+The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram to the XAML Page as shown in the following code example.
 
 {% highlight xaml %}
 
@@ -133,7 +133,7 @@ To populate employee information as Nodes and connectors, configure the DataSour
 
 ###Data Binding
 
-In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
+We have provided the Default binding Style support to bind the ViewModel proerties  to View by using “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 ###Visualize Employees
 
@@ -145,33 +145,32 @@ Now, Diagram is configured to load the employees’ information as a tree of org
 	<ResourceDictionary>
 		<!--Style for the Node>-->
 		<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-			        <Setter Property="UnitWidth" Value="80" />
-	            	<Setter Property="UnitHeight" Value="40" />
-		            <Setter Property="FontSize" Value="15"></Setter>
-	       		    <Setter Property="Foreground" Value="Black"></Setter>
-	                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-        	        <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
-                	<Setter Property="ContentTemplate">
-                		<Setter.Value>
-                        		<DataTemplate>
-                            			<Border Background="#008b8b" CornerRadius="5">
-	                                		<TextBlock Text="{Binding Name}" Foreground="White"
-                                           		   	   HorizontalAlignment="Center" VerticalAlignment="Center"/>
-	                            		</Border>
-	                        	</DataTemplate>
-				       </Setter.Value>
-                   </Setter>
+            <Setter Property="UnitWidth" Value="80" />
+	        <Setter Property="UnitHeight" Value="40" />
+		    <Setter Property="FontSize" Value="15"></Setter>
+	       	<Setter Property="Foreground" Value="Black"></Setter>
+	        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+        	<Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+            <Setter Property="ContentTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Border Background="#008b8b" CornerRadius="5">
+	                   <TextBlock Text="{Binding Name}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	                </Border>
+	            </DataTemplate>
+            </Setter.Value>
+            </Setter>
 		</Style>
 		<!--Style for the Connector>-->
 		<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle }">
-        		<Setter Property="ConnectorGeometryStyle">
-                		<Setter.Value>
-                        		<Style TargetType="Path">
-                            			<Setter Property="Stroke" Value="Black" />
-                            			<Setter Property="StrokeThickness" Value="1" />
-	                        	</Style>
-                        </Setter.Value>
-               </Setter>
+            <Setter Property="ConnectorGeometryStyle">
+             	<Setter.Value>
+                    <Style TargetType="Path">
+                        <Setter Property="Stroke" Value="Black" />
+                        <Setter Property="StrokeThickness" Value="1" />
+	                </Style>
+                </Setter.Value>
+             </Setter>
 		</Style>
 	</ResourceDictionary>
 </<Window.Resources>
@@ -193,9 +192,8 @@ Employees are initialized, populated in the Diagram, and appearance for employee
 
 <Grid Background="White">
     <!--Initialize the SfDiagram-->
-	<syncfusion:SfDiagram x:Name="diagram"
-	                      LayoutManager="{StaticResource LayoutManager}">
-        </syncfusion:SfDiagram>
+	<syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource LayoutManager}">
+    </syncfusion:SfDiagram>
 </Grid>
 
 {% endhighlight %}
@@ -212,16 +210,13 @@ The final MainPage.Xaml looks like this.
         xmlns:local="clr-namespace:EmployeeDetails">
 
     <Window.Resources>
-
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <!-- Initializes the employee colletion-->
-
             <local:Employees x:Key="Employees">
-
                 <local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
                 <local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
                 <local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
@@ -229,7 +224,6 @@ The final MainPage.Xaml looks like this.
                 <local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
                 <local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
                 <local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
-
             </local:Employees>
 
             <!--Initializes the DataSourceSettings -->
@@ -241,7 +235,6 @@ The final MainPage.Xaml looks like this.
             <!--Style for the Node>-->
 
             <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-
                 <Setter Property="UnitWidth" Value="80" />
                 <Setter Property="UnitHeight" Value="40" />
                 <Setter Property="FontSize" Value="15"></Setter>
@@ -253,8 +246,7 @@ The final MainPage.Xaml looks like this.
                         <DataTemplate>
                             <Border Background="#008b8b" 
                                 CornerRadius="5">
-                                <TextBlock Text="{Binding Name}" Foreground="White"
-                                           HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Name}" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
                             </Border>
                         </DataTemplate>
                     </Setter.Value>
@@ -275,21 +267,19 @@ The final MainPage.Xaml looks like this.
             </Style>
 
             <!--Initializes the Layout-->
-
             <syncfusion:DirectedTreeLayout x:Key="TreeLayout" 
 		                                   HorizontalSpacing="80" 
 		                                   VerticalSpacing="50" 
 		                                   SpaceBetweenSubTrees="20" 
 		                                   Orientation="TopToBottom"/>
 
-            <syncfusion:LayoutManager x:Key="LayoutManager"  
-		                              Layout="{StaticResource TreeLayout}"/>
+            <syncfusion:LayoutManager x:Key="LayoutManager" Layout="{StaticResource TreeLayout}"/>
         </ResourceDictionary>
     </Window.Resources>
 
     <Grid Background="White">
         <!--Initializes the SfDiagram-->
-        <syncfusion:SfDiagram x:Name="diagram"
+        <syncfusion:SfDiagram x:Name="diagram"  
 	                          DataSourceSettings="{StaticResource DataSourceSettings}"
 	                          LayoutManager="{StaticResource LayoutManager}">
             <!--Initializes the NodeCollection-->                              
