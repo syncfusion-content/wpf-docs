@@ -979,7 +979,7 @@ The [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/wpf/sfdatag
 
 [ActivationTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~ActivationTrigger.html) – Returns the reason for moving the current cell.
 
-[CurrentRowColumnnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~CurrentRowColumnIndex.html) – [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.RowColumnIndex.html) of the cell where the current cell need to move.
+[CurrentRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~CurrentRowColumnIndex.html) – [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.RowColumnIndex.html) of the cell where the current cell need to move.
 
 [PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~PreviousRowColumnIndex.html) – `RowColumnIndex` of the cell from where the current cell was move.
 
@@ -1028,7 +1028,7 @@ The [CurrentCellActivated](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagr
 
 [ActivationTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~ActivationTrigger.html) – Returns the reason of the current cell movement.
 
-[CurrentRowColumnnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~CurrentRowColumnIndex.html) – `RowColumnIndex` of the cell where the current cell was moved.
+[CurrentRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~CurrentRowColumnIndex.html) – `RowColumnIndex` of the cell where the current cell was moved.
 
 [PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~PreviousRowColumnIndex.html) – `RowColumnIndex` of the cell from where the current cell has been moved.
 
@@ -1078,7 +1078,7 @@ void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the selection process within this event by setting [GridSelectionChangingEentArgs.Cancel](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanging_EV.html) property as true.
+You can cancel the selection process within this event by setting [GridSelectionChangingEventArgs.Cancel](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanging_EV.html) property as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1124,7 +1124,7 @@ void dataGrid_SelectionChanged(object sender, GridSelectionChangedEventArgs e)
 
 ### Changing Selection Background and Foreground
 
-You can change the selection background and foreground using [RowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html), [GroupRowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupRowSelectionBrush.html) and [SelectionForeGroudBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) properties. The `RowSelectionBrush` is only applied to the rows other than summary rows and the [GroupRowSelectionRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupRowSelectionBrush.html) is applied for caption summary and group summary rows.
+You can change the selection background and foreground using [RowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html), [GroupRowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupRowSelectionBrush.html) and [SelectionForeGroundBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) properties. The `RowSelectionBrush` is only applied to the rows other than summary rows and the [GroupRowSelectionRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupRowSelectionBrush.html) is applied for caption summary and group summary rows.
 
 {% tabs %}
 {% highlight xaml %}

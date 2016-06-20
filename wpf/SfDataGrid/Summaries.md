@@ -541,7 +541,7 @@ In the below sections formatting is explained using TableSummary. In the same wa
 
 In the below code snippet `Format` property is defined to display sum of `UnitPrice` by specifying the function name inside curly braces.
   
-N> `DoubleAggreate` is used as SummaryType which has Count, Max, Min, Average and Sum functions.
+N> `DoubleAggregate` is used as SummaryType which has Count, Max, Min, Average and Sum functions.
 
 {% tabs %}
 {% highlight xaml %}

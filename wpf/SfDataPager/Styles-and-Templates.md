@@ -53,7 +53,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 The Create style Resources dialog prompts you to enter the name or change the name of your style, as well as to choose the location for the style.
 
-When Ok is pressed, the Expression Blend generates the style of the SfDataPager control in the Resource section. You can edit the generated XAML in the XAML view or in VisualStudio
+When OK is pressed, the Expression Blend generates the style of the SfDataPager control in the Resource section. You can edit the generated XAML in the XAML view or in VisualStudio
 
 * Create Empty- create an empty style for the SfDataPager. When you select this option, the Create style Resources dialog is opened. You can enter the name or change the name of style and choose the location for the style.
 
@@ -84,7 +84,7 @@ This section explains how to edit the style of SfDataPager in Visual Studio Desi
 
 The Create style Resources dialog prompts you to enter the name or change the name for your style, as well as to choose the location for the style.
 
-When Ok is pressed, Visual Studio generate the style of SfDataPager in the Resource section.The control style of the SfDataPager control is loaded in the XAML . You can edit the generated XAML in the XAML view.
+When OK is pressed, Visual Studio generate the style of SfDataPager in the Resource section.The control style of the SfDataPager control is loaded in the XAML . You can edit the generated XAML in the XAML view.
 
 * Create Empty- create an empty style for the SfDataPager. When you select this option, the Create style Resources dialog opens. You can enter the name or change the name of style and choose the location where your style is defined.
 
