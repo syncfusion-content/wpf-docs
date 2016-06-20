@@ -67,14 +67,14 @@ N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location
 
 ###Coded UI Project Creation
 
-Run VS in Administrator mode
+Run Visual Studio in administrator mode
 
 Create a new Coded UI Test Project as shown in the following screenshot.
 
 ![](CodedUI_images/CodedUI_img1.jpeg)
 
 
-After you create a project Generate for Coded UI Test popup window was opened, here select ‘Record actions, edit UI map or add assertions’ and click OK.
+After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
 ![](CodedUI_images/CodedUI_img2.jpeg)
 
@@ -88,8 +88,6 @@ You can also open the CodedUITestBuilder from existing Coded UI project by right
 
 ![](CodedUI_images/CodedUI_img4.jpeg)
 
-
-##Test your application
 
 ###Record  and Generate code
 
