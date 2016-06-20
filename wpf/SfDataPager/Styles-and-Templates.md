@@ -60,7 +60,7 @@ When Ok is pressed, the Expression Blend generates the style of the SfDataPager 
 ## Edit Appearance in Visual Studio
 
 
-This section explains how to edit the style of SfDataPager in Visual studio Designing View. To Edit the control style in Visual studio, refer to the following steps,
+This section explains how to edit the style of SfDataPager in Visual Studio Designing View. To Edit the control style in Visual Studio, refer to the following steps,
 
 * Open your application in Visual Studio.
 * Open Design view>> Select SfDataPager Control >Right Click on SfDataPagerControl, Menu options are displayed.
