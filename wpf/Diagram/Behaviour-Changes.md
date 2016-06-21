@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Behaviour Changes
+# Behavior Changes
 
 The following are the changes made from version 10.1.0.44: 
 

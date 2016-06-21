@@ -712,7 +712,7 @@ Here diagramModel is an instance of DiagramModel.
 
 ## Identify the Shapes Dropped on the Page from the Palette
 
-The SymbolPaletteItemName property can be used to identify the item dropped on the page in the NodeDrop event. This is particularly useful when you have to identify the item which is dropped and performs an operation on the node before it is added to the View. The Name property of the SymbolPaletteItem can be set while adding the item to the palette and then by using SymbolPaletteItemName property in the eventargs of NodeDrop.A reference to the corresponding SymbolPaletteItem can be obtained.
+The SymbolPaletteItemName property can be used to identify the item dropped on the page in the NodeDrop event. This is particularly useful when you have to identify the item which is dropped and performs an operation on the node before it is added to the View. The Name property of the SymbolPaletteItem can be set while adding the item to the palette and then by using SymbolPaletteItemName property in the event args of NodeDrop.A reference to the corresponding SymbolPaletteItem can be obtained.
 {% highlight c# %}
 
 
