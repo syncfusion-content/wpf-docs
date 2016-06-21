@@ -254,7 +254,7 @@ Export the current visual of the chart to Word</td></tr>
 
 
 </td><td>
-Export to Pdf</td><td>
+Export to PDF</td><td>
 Export the current visual of the chart to PDF</td></tr>
 </table>
 
@@ -339,7 +339,7 @@ Export the Grid to Word</td></tr>
 
 
 </td><td>
-Export to Pdf</td><td>
+Export to PDF</td><td>
 Export the Grid to PDF</td></tr>
 </table> 
 
