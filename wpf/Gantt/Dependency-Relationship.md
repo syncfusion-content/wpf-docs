@@ -185,6 +185,39 @@ You can add/remove/update the predecessors and resources of tasks at run time. I
 
 You can edit the predecessor information from the GanttGrid. For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both GanttGrid and GanttChart.
 
+# Predecessor Validation
+
+There are two predecessor validation modes in Gantt Control. 
+
+ * Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
+ * Manual - Successor nodes need to adjust manually with respect to predecessor.
+
+### Properties
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
+<tr>
+<td>
+ValidationMode</td><td>
+This contains two modes.* Manual* Auto.Default value is Manual.</td><td>
+DependencyProperty</td><td>
+NA</td></tr>
+</table>
+
+The following image shows the Predecessor in Manual Mode:
+
+![](Dependency-Relationship_images/Predecessors ManualMode.png)
+
+The following image shows the Predecessor in Auto Mode:
+
+![](Dependency-Relationship_images/Predecessors AutoMode.png)
+
 ### Editing Predecessors
 
 While creating a new predecessor in Grid, it should be in the following format:
