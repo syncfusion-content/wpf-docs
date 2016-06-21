@@ -189,8 +189,8 @@ You can edit the predecessor information from the GanttGrid. For resource, you c
 
 There are two predecessor validation modes in Gantt Control. 
 
-*	Auto - The successor nodes are positioned based on its predecessor nodes.
-*	Manual - There is no any predecessor validations are applied
+ * Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
+ * Manual – Successor nodes need to adjust manually with respect to predecessor.
 
 ### Properties
 

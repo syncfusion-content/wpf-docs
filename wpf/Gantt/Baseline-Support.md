@@ -147,8 +147,8 @@ BaseLine Table View
 ## Baseline Chart View
 
 In Gantt chart, baseline start and end values are graphically visualized.
-•	Line shape represents the header node and node.
-•	Diamond shape represents the milestone.
+ * Line shape represents the header node and node.
+ * Diamond shape represents the milestone.
 
 ### Properties
 
