@@ -436,7 +436,7 @@ This event is raised when the Selection is changed.The SelectionChanged event ha
 
 ### How To
 
-#### How to Select the Text When SfMultiColumnDropDowncontrol got Focus?
+#### How to Select the Text When SfMultiColumnDropDownControl got Focus?
 
 
 In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically selects the text when SfMultiColumnDropDownControl got focus from one control. 
@@ -868,7 +868,7 @@ This event is raised before the Popup is opened; the event can be canceled.The P
 
 #### How to keep DropDownPopup StaysOpen always?
 
-You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by using the StaysOpen property. In Loaded event, you can get the “PART_Popup”template from the SfMultiColumnDropDownControl and set the StaysOpen property to true.
+You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by using the StaysOpen property. In Loaded event, you can get the “PART_Popup” template from the SfMultiColumnDropDownControl and set the StaysOpen property to true.
 
 The following code example illustrates how to set StaysOpen property for DropDownPopup.
 {% highlight C# %}

@@ -841,7 +841,7 @@ viewModel.ShowColumnChooser = false;
 ![](Interactive-Features_images/InteractiveFeatures_img12.png)
 
 
-### Appreance Customization
+### Appearance Customization
 
 You can change the default appearance of the column chooser window by customizing the style of ColumnChooser. You can directly change the Title and WaterMarkText like the below code example.
 
@@ -910,7 +910,7 @@ dataGrid.RowHeaderWidth = 50;
 
 #### Display the RowIndex to the RowHeaderCell
 
-You can display the corresponding rowindex in each RowHeader, by customizing the ControlTemplate of GridRowHeaderCell. You have to bind the RowIndex property to TextBlock.Text like the below code example.
+You can display the corresponding row index in each RowHeader, by customizing the ControlTemplate of GridRowHeaderCell. You have to bind the RowIndex property to TextBlock.Text like the below code example.
 
 {% tabs %}
 {% highlight xaml %}
