@@ -1,116 +1,69 @@
 ---
 layout: post
-title: Data Source| OLAP Grid | Wpf | Syncfusion
+title: Data Source| OlapGrid | Wpf | Syncfusion
 description: data source
 platform: wpf
-control: OLAP Grid
+control: OlapGrid
 documentation: ug
 ---
 
-# Data Source
+# Data Binding
 
-## Binding to OLAP Data
+##Binding OlapGrid to Offline Cube
 
-OlapData can be bound to OlapGrid with the help of OlapDataManager. OlapDataManager requires OlapReport which contains Dimension and Measure elements. 
+To connect an OLAP Cube available in local machine, set the physical path of the Cube set in the connection string. The following code sample illustrates the same.
 
-Refer here for OLAP Data binding
+{% highlight c# %}
 
+    string connectionString = @"DataSource = system drive:\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
 
-## XAML Configuration
+{% endhighlight %}
 
-XAML configuration is one of the important features of OlapGrid. It helps you to configure the control entirely using XAML by eliminating the required code in code behind. 
+##Binding OlapGrid to Cube in local SQL Server
 
+To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
 
-### Property
+{% highlight c# %}
 
-* **DataSource.ConnectionString** - Specifies the connection string of the DataManager
-* **DataSource.ConnectionName** - Specifies the connection name which is available in App.Config file of the application
-* **DataSource.DataManagerName** - Specifies the DataManager name
-* **SharedDataManagerName** - Specifies the DataManager name which is available in shared data manager collection
-* **ReportName** - Species the OLAP report name
-* **CurrentCubeName** - Specifies the current cube name of a OLAP report
-* **CategoricalAxis** - Specifies the Categorical axis of the OLAP report
-* **SeriesAxis** - Specifies the Series axis of the OLAP report
-* **SlicerAxis** - Specifies the Slicer axis of the OLAP report
-* **CalculatedMembers** - Specifies the Calculated Members of the OLAP report
+    string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
 
+{% endhighlight %}
 
-## Adding report to OLAP Grid
+##Binding OlapGrid to Cube in online SQL Server
 
-Adding an OLAP report to OLAP Grid control in design time is described in the following code snippet:
+To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
 
-{% highlight xaml %}
+{% highlight c# %}
 
-    
+    string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
 
-<syncfusion:OlapGrid x:Name="olapGrid" 
+{% endhighlight %}
 
-				  HorizontalAlignment="Stretch"
+##Binding OlapGrid to Cube in online Mondrian Server
 
-                      ReportName="SalesReport"
+To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
 
-	              CurrentCubeName="Adventure Works" 
+{% highlight c# %}
 
-				  SharedDataManagerName="localManager"
+    string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
 
-				  olapshared:DataSource.DataManagerName="localManager"
+{% endhighlight %}
 
-olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
+##Binding OlapGrid to Cube in online ActivePivot Server
 
+To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
 
+{% highlight c# %}
 
-<!- Adding Elements to Categorical Axis -->
+    string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
-<syncfusion:OlapGrid.CategoricalAxis>
-
-                    <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />   <!- Multiple Members where specified by comma separate -->                 
-
-                    <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
-
-</syncfusion:OlapGrid.CategoricalAxis>
-
-
-
-<!- Adding Elements to Series Axis -->
-
-<syncfusion:OlapGrid.SeriesAxis>
-
-                    <syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" />
-
-                    <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
-
-</syncfusion:OlapGrid.SeriesAxis>
-
-
-
-</syncfusion:OlapGrid>
-
- {% endhighlight %}
-
-
-
-
-
-
-
-![](Data-Source_images/Data-Source_img1.png)
-
-
-OLAP Grid with SalesReport created by XAML code
-{:.caption}
-
-### Sample Link
-
-To access a XAML Configuration Demo sample:
-
-1. Open the Syncfusion Dashboard
-2. Select Business Intelligence
-3. Click the WPF drop-down list and select Explore Samples
-4. Navigate to OlapGrid.WPF -> Samples -> Defining Reports -> XAML Configuration Demo
-
-Or
-
-### Navigate to:
-
-..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration Demo 
+{% endhighlight %}
+ 
 

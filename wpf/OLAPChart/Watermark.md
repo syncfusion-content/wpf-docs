@@ -1,19 +1,27 @@
 ---
 layout: post
-title: Watermark| OLAP Chart | Wpf | Syncfusion
+title: Watermark| OlapChart | Wpf | Syncfusion
 description: Watermark
 platform: wpf
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
-## Watermark
+# Watermark
 
-OLAP Chart for WPF supports the watermark feature, which can be used to show text, image, or both as a watermark inside the chart area. There are many customization options available for the watermarked content. The content can be aligned both horizontally and vertically. Its Font style can be changed. The interior of the content can be customized and the opacity can also be varied.
+OlapChart for WPF supports watermark feature, which can be used to show text, image, or both as a watermark inside the Chart area. 
 
-![](Core-Features_images/Core-Features_img42.png)
+There are many customization options available for the watermarked content. The content can be aligned both horizontally and vertically. It's font style can be changed. The interior of the content can be customized and the opacity can also be varied.
 
+The following screen shot shows the text as a watermark:
 
-A sample, which demonstrates all the watermark features, is available in the following installation location:
+![](Watermark_images/Watermark_img1.png)
 
-..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance\Watermark Demo
+The following screen shot shows the image as a watermark:
+
+![](Watermark_images/Watermark_img2.png)
+
+A sample demo is available at the following link:
+
+[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Appearance\Watermark Demo
+

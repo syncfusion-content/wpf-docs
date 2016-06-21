@@ -1,42 +1,52 @@
 ---
 layout: post
-title: ToolTip| OLAP Chart | Wpf | Syncfusion
-description: ToolTip
+title: Tooltip| OlapChart | Wpf | Syncfusion
+description: Tooltip
 platform: wpf
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
-# ToolTip
+# Tooltip
 
-The OLAP Chart for WPF provides series information (Measure, Primary x-axis and y-axis values, and series name) through Series ToolTips, when the mouse pointer is moved over chart points.
+OlapChart provides the series information (such as measure, primary x-axis and y-axis values, and series name) through series tooltip, when the mouse pointer is moved over Chart points.
 
-## How to enable or disable a chart tool tip?
+The following code sample shows how to disable the series tooltip using the **ShowToolTip** property.
 
-The tooltip in an OlapChart can be enabled or disabled by setting the ShowToolTip property.
+{% tabs %}
 
-The following code snippet shows how to disable the series tooltip:
-
-
- {% highlight c# %}
+{% highlight c# %}
  
-    
+	this.olapchart1.Series[0].ShowToolTip = false;
 
+{% endhighlight %}
 
-
-this.olapchart1.Series[0].ShowToolTip = false;
-
- {% endhighlight %}
-
-
-
-
- {% highlight vbnet %}
+{% highlight vbnet %}
   
-   
+	Me.olapchart1.Series(0).ShowToolTip = False
 
+{% endhighlight %}
 
+{% endtabs %}
+  
+![](Tooltip_images/Tooltip_img1.png)
+  
+The following code sample shows how to enable the series tooltip using the **ShowToolTip** property.
 
-Me.olapchart1.Series(0).ShowToolTip = False
+{% tabs %}
 
- {% endhighlight %}
+{% highlight c# %}
+ 
+	this.olapchart1.Series[0].ShowToolTip = true;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+  
+	Me.olapchart1.Series(0).ShowToolTip = True
+
+{% endhighlight %}
+
+{% endtabs %}
+  
+![](Tooltip_images/Tooltip_img2.png)

@@ -1,57 +1,45 @@
 ---
 layout: post
-title: Freeze Headers| OLAP Grid | Wpf | Syncfusion
+title: Freeze Headers| OlapGrid | Wpf | Syncfusion
 description: freeze headers
 platform: wpf
-control: OLAP Grid
+control: OlapGrid
 documentation: ug
 ---
 
 # Freeze Headers
 
-OlapGrid for WPF provides built-in support to freeze the Column and Row Headers. This is achieved by setting the FreezeHeaders property of OlapGrid to true. This feature also enables scrolling through the value cells.
+OlapGrid provides built-in support to freeze the column and row headers. This is achieved by setting the **"FreezeHeaders"** property of OlapGrid to **"true"**.
 
 {% tabs %}
-  {% highlight c# %}
+  
+{% highlight xaml %}
 
-    
+    <syncfusion:OlapGrid  FreezeHeaders="True"> 
+    </syncfusion:OlapGrid>
 
+{% endhighlight %}
 
+{% highlight c# %}
 
-// To Freeze Grid Headers
+    // To freeze OlapGrid Headers
+    this.OlapGrid1.FreezeHeaders = true;
 
-this.OlapGrid1.FreezeHeaders = true;
+{% endhighlight %}
 
-    {% endhighlight %}
+{% highlight vbnet %}
 
+    ' To freeze OlapGrid Headers
+    Me.OlapGrid1.FreezeHeaders = True
 
-
-
-
-  {% highlight vbnet %}
-
-    
-
-
-
-' To Freeze Grid Headers
-
-Me.OlapGrid1.FreezeHeaders = True
-
-    {% endhighlight %}
-
+{% endhighlight %}
 
 {% endtabs %}
 
-
-
-
 ![](Freeze-Headers_images/Freeze-Headers_img1.png)
-
-
-### Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header Demo
+[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header
+
 

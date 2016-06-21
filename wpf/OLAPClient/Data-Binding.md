@@ -1,80 +1,145 @@
 ---
 layout: post
-title: Data Binding| OLAP Client  | Wpf | Syncfusion
+title: Data Binding| OlapClient  | Wpf | Syncfusion
 description: data binding
 platform: wpf
-control: OLAP Client 
+control: OlapClient 
 documentation: ug
 ---
 
 # Data Binding
 
-You can bind the OLAP Client control to the Server or Offline Cube. To do so, you have to create an OlapDataManager and initialize it 
-by passing a valid connection string.
+## Binding OlapClient to Offline Cube
 
-## Binding OLAP Client to the Server
-
-The following code example illustrates the binding of the OLAP Client control to a server.
+To connect an OLAP Cube available in local machine, set the physical path of the Cube set in the connection string. The following code example illustrates the same.
 
 {% tabs %}
-{% highlight C# %}  
 
+{% highlight c# %}  
 
+    string connectionString = @"Datasource = systemdrive:\OfflineCube\Adventure_Works_Ext.cub; Provider= msolap;";
+    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+    this.olapClient1.OlapDataManager = olapDataManager;
+    this.olapClient1.DataBind();
 
-OlapDataManager olapDataManager = new OlapDataManager("Data  source=localhost; Initial Catalog=Adventure Works DW");
+{% endhighlight %}
 
-this.olapClient1.OlapDataManager = olapDataManager;
+{% highlight vbnet %} 
 
-this.olapClient1.DataBind();
+    Dim connectionString As String = @"Datasource = systemdrive:\OfflineCube\Adventure_Works_Ext.cub; Provider= msolap;"
+    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+    Me.olapClient1.OlapDataManager = olapDataManager
+    Me.olapClient1.DataBind()
 
+{% endhighlight %}
+
+{% endtabs %}
+
+## Binding OlapClient to Cube in local SQL Server
+
+To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight c# %}  
+
+    string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW";
+    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+    this.olapClient1.OlapDataManager = olapDataManager;
+    this.olapClient1.DataBind();
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-
-
-
-Dim olapDataManager As OlapDataManager = New OlapDataManager("Data source=localhost; Initial Catalog=Adventure Works DW")
-
-Me.olapClient1.OlapDataManager = olapDataManager
-
-Me.olapClient1.DataBind()
+    Dim connectionString As String = "Datasource = localhost; Initial Catalog=Adventure Works DW"
+    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+    Me.olapClient1.OlapDataManager = olapDataManager
+    Me.olapClient1.DataBind()
 
 {% endhighlight %}
+
 {% endtabs %}
 
-## Binding OLAP Client to the Offline Cube
+## Binding OlapClient to Cube in online SQL Server
 
-The following code example illustrates how to bind the OLAP Client control to an offline cube.
+To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% tabs %}
+
 {% highlight C# %}  
 
+    string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+    this.olapClient1.OlapDataManager = olapDataManager;
+    this.olapClient1.DataBind();
 
-
-
-OlapDataManager olapDataManager = new OlapDataManager("Datasource=AdventureWorks.cub; Provider=msolap;");
-
-this.olapClient1.OlapDataManager = olapDataManager;
-
-this.olapClient1.DataBind();
-
-{% endhighlight %}
+{% endhighlight %} 
 
 {% highlight vbnet %} 
 
-
-
-
-
-Dim olapDataManager As OlapDataManager = New OlapDataManager("Datasource=AdventureWorks.cub; Provider=msolap;")
-
-Me.olapClient1.OlapDataManager = olapDataManager
-
-Me.olapClient1.DataBind()
+    Dim connectionString As String = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
+    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+    Me.olapClient1.OlapDataManager = olapDataManager
+    Me.olapClient1.DataBind()
 
 {% endhighlight %}
+
 {% endtabs %}
 
+## Binding OlapClient to Cube in online Mondrian Server
+
+To connect an OLAP Cube available in Mondrian Server through XML/A, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight c# %}  
+
+    string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
+    this.olapClient1.OlapDataManager = olapDataManager;
+    this.olapClient1.DataBind();
+
+{% endhighlight %} 
+
+{% highlight vbnet %} 
+
+    Dim connectionString As String = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"
+    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
+    Me.olapClient1.OlapDataManager = olapDataManager
+    Me.olapClient1.DataBind()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Binding OlapClient to Cube in online ActivePivot Server
+
+To connect an OLAP Cube available in ActivePivot Server through XML/A, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight c# %}  
+
+    string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
+    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
+    this.olapClient1.OlapDataManager = olapDataManager;
+    this.olapClient1.DataBind();
+
+{% endhighlight %} 
+
+{% highlight vbnet %} 
+
+    Dim connectionString As String = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
+    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
+    Me.olapClient1.OlapDataManager = olapDataManager
+    Me.olapClient1.DataBind()
+
+{% endhighlight %}
+
+{% endtabs %}
 

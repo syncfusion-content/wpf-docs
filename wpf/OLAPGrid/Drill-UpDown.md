@@ -1,54 +1,32 @@
 ---
 layout: post
-title: Drill UpDown| OLAP Grid | Wpf | Syncfusion
+title: Drill UpDown| OlapGrid | Wpf | Syncfusion
 description: drill-up/down
 platform: wpf
-control: OLAP Grid
+control: OlapGrid
 documentation: ug
 ---
 
-# Drill-Up/Down
+# Drill Up/Down
 
-This is the basic feature of OlapGrid through which the amount of information can be limited. It allows you to drill down to access the detailed level of data, or roll up to see the summarized data using the expander’s present in the grid. The expander here refers to the plus/minus sign present in the grid followed by a member.
-
-![](Drill-UpDown_images/Drill-UpDown_img1.png)
-
-Drilldown to view data in detail
-{:.caption}
-
-![](Drill-UpDown_images/Drill-UpDown_img2.png)
-
-Collapse to view the summarized data
-{:.caption}
-
-The expanders can be made hidden by setting the ShowExpanders property of OlapReport to false.
+This is the basic feature of OlapGrid through which the amount of information can be limited. It allows you to drill down to access the detailed level of data, or drill up to see the summarized data using the expanders present in the Grid. The expander here refers to the plus/minus or arrow sign present in the Grid prior to a member. The expanders can be made hidden by setting the **"ShowExpander"** property of OlapReport to **"false"**.
 
 {% tabs %}
-  {% highlight c# %}
+  
+{% highlight c# %}
 
-    
+    // Hiding Expanders
+    this.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = false;
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-// Hide Expanders
+    ' Hiding Expanders
+    Me.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = False
 
-this.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = false;
+{% endhighlight %}
 
-    {% endhighlight %}
-
-
-
-  {% highlight vbnet %}
-
-    
-
-
-
-' Hide Expanders
-
-Me.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = False
-
-    {% endhighlight %}
 {% endtabs %}
 
 

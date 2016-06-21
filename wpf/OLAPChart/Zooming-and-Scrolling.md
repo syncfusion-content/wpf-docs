@@ -1,26 +1,21 @@
 ---
 layout: post
-title: Zooming and Scrolling| OLAP Chart | Wpf | Syncfusion
+title: Zooming and Scrolling| OlapChart | Wpf | Syncfusion
 description: Zooming and Scrolling
 platform: wpf
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
 # Zooming and Scrolling
 
-OLAP Chart for WPF allows you to zoom into a narrower range within the OLAP Chart. 
+OlapChart for WPF allows you to zoom into a narrower range within the OlapChart. 
 
-## Zoom by using the Zooming Toolkit
+In the zooming mode, a zooming toolkit is displayed at the top-left corner of the OlapChart. Using the buttons in the zooming toolkit, ChartSeries can be zoomed in, out, reset, or closed.
 
-In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of the OLAP Chart. Using the buttons in the Zooming toolkit, ChartSeries can be zoomed in, out, reset, or closed.
+![](Zooming-and-scrolling_images/Zooming-and-scrolling_img1.png)
 
-![](Core-Features_images/Core-Features_img43.png)
-
-
-## Display/Hide Buttons in the Zooming Toolkit
-
-The visibility of the Zooming Toolkit or the individual buttons in the toolkit can be controlled by using the following properties:
+The visibility of the zooming toolkit or the individual buttons in the toolkit can be controlled by using the following properties:
 
 _Property_
 
@@ -29,87 +24,45 @@ _Property_
 * **ZoomCloseButtonVisibility** - Gets or sets the zoom close button visibility.
 * **ZoomResetButtonVisibility** - Gets or sets the zoom reset button visibility.
 
-The following code snippet illustrates the above settings:
+The following code sample illustrates the above settings:
 
- {% highlight xaml %}
+{% tabs %}
 
-    
+{% highlight xaml %}
 
+      <syncfusion:OlapChart Name="olapChart" 
+       syncfusion:ChartZoomingToolkit.ZoomInButtonVisibility="{Binding IsChecked, 
+            ElementName=cbxZoomIn, Converter={StaticResource boolToVisibilityConverter}}"
+      syncfusion:ChartZoomingToolkit.ZoomOutButtonVisibility="{Binding IsChecked, 
+            ElementName=cbxZoomOut, Converter={StaticResource boolToVisibilityConverter }}"
+      syncfusion:ChartZoomingToolkit.ZoomCloseButtonVisibility="{Binding IsChecked, 
+            ElementName=cbxZoomClose, Converter={StaticResource boolToVisibilityConverter }}"
+      syncfusion:ChartZoomingToolkit.ZoomResetButtonVisibility="{Binding IsChecked, 
+            ElementName=cbxZoomReset, Converter={StaticResource boolToVisibilityConverter }}">
+      </syncfusion:OlapChart>
 
+{% endhighlight %}
 
-    <syncfusion:OlapChart Name="olapChart" 
-
-
-
- syncfusion:ChartZoomingToolkit.ZoomInButtonVisibility="{Binding IsChecked, 
-
- ElementName=cbxZoomIn, 
-
- Converter={StaticResource boolToVisibilityConverter}}"
-
-
- syncfusion:ChartZoomingToolkit.ZoomOutButtonVisibility="{Binding IsChecked, 
-
- ElementName=cbxZoomOut, 
-
- Converter={StaticResource boolToVisibilityConverter }}"
-
-
- syncfusion:ChartZoomingToolkit.ZoomCloseButtonVisibility="{Binding IsChecked, 
-
- ElementName=cbxZoomClose, 
-
- Converter={StaticResource boolToVisibilityConverter }}"
-
-
- syncfusion:ChartZoomingToolkit.ZoomResetButtonVisibility="{Binding IsChecked, 
-
- ElementName=cbxZoomReset, 
-
- Converter={StaticResource boolToVisibilityConverter }}">
-
-
-
-</syncfusion:OlapChart>
-
-
-
- {% endhighlight %}
-
-
-
- {% highlight c# %}
+{% highlight c# %}
  
-   
+    ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart, Visibility.Collapsed);
+    ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart, Visibility.Hidden);
+    ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart, Visibility.Collapsed);
+    ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible);
 
+{% endhighlight %}
 
-
-ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart, Visibility.Collapsed);
-ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart, Visibility.Hidden);
-ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart, Visibility.Collapsed);
-ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible);
-
-
- {% endhighlight %}
-
-
-
-
- {% highlight vbnet %}
+{% highlight vbnet %}
   
-   
+    ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart, Visibility.Collapsed)
+    ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart, Visibility.Hidden)
+    ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart, Visibility.Collapsed)
+    ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible)
 
+{% endhighlight %}
 
+{% endtabs %}
 
+A sample demo is available at the following link:
 
-ChartZoomingToolkit.SetZoomInButtonVisibility(olapChart, Visibility.Collapsed)
-ChartZoomingToolkit.SetZoomOutButtonVisibility(olapChart, Visibility.Hidden)
-ChartZoomingToolkit.SetZoomResetButtonVisibility(olapChart, Visibility.Collapsed)
-ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible)
-
- {% endhighlight %}
-
-
-A sample, which demonstrates the zooming feature, is available in the following sample installation location:
-
-..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Zooming and Scrolling\Zooming and Scrolling Demo
+[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Zooming and Scrolling\Zooming and Scrolling Demo
