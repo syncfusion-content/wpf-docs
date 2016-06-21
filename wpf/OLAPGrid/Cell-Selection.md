@@ -1,113 +1,90 @@
 ---
 layout: post
-title: Cell Selection| OLAP Grid | Wpf | Syncfusion
+title: Cell Selection| OlapGrid | Wpf | Syncfusion
 description: cell selection
 platform: wpf
-control: OLAP Grid
+control: OlapGrid
 documentation: ug
 ---
 
 # Cell Selection
 
-OlapGrid for WPF supports excel like cell selection where you can select grid value cells as like in Microsoft Excel. On cell selection, an event called OlapGridSelectionChanged will be triggered and the OlapGridSelectionChangedEventArgs will return an IEnumerable collection of column, row and value of the corresponding selected cell. The EventArgs will also return the cell range and the selection reason like mouse down, mouse move, mouse up etc.
+OlapGrid supports excel like cell selection where you can select Grid value cells like in Microsoft Excel. This can be achieved by setting the **"AllowSelection"** property of OlapGrid to true.
 
-## Adding Cell Selection 
-
-The following code snippets show how to create an OlapGrid and specify its cell selection.
+On cell selection, an event named **"SelectionChanged"** will be triggered and the **"OlapGridSelectionChangedEventArgs"** will return an IEnumerable collection of column, row and value of the corresponding selected cell. The event argument will also return the cell range and the selection reason like mouse down, mouse move, mouse up etc.  
+ 
+The following code sample shows how to enable cell selection.
 
 {% tabs %}
-  {% highlight xaml %}
+  
+{% highlight xaml %}
 
+    <!--Adding OlapGrid and enabling cell selection-->
+    <syncfusion:OlapGrid AllowSelection="True" SelectionChanged="olapGrid1_SelectionChanged"> 
+    </syncfusion:OlapGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public MainWindow()
+    {
+        InitializeComponent();
+            
+        //OlapGrid Instantiation
+        OlapGrid olapGrid1 = new OlapGrid();
+        //OlapGrid added to an parent Grid present in the Main Window
+        this.gridContainer.Children.Add(olapGrid1);
+        //Connection string is passed to OlapDataManager as an argument
+        OlapDataManager olapDataManager = new OlapDataManager("Enter a valid connection string");
+        //Set current report for OlapDataManager.
+        olapDataManager.SetCurrentReport(CreateOlapReport());
+        //Specifying OlapDataManager to Grid.
+        olapGrid1.OlapDataManager = olapDataManager;
+        //Enable Cell Selection
+        olapGrid1.AllowSelection = true;
+        olapGrid1.SelectionChanged += olapGrid1_SelectionChanged;
+        olapGrid1.DataBind();      
+    }
+
+    private void olapGrid1_SelectionChanged(object sender, OlapGridSelectionChangedEventArgs e)
+    {
+        //Enter your code
+    }
+ 
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+    Public Sub New()
+       InitializeComponent()
+       
+       Dim OlapGrid1 As OlapGrid = New OlapGrid()
+       ' OlapGrid added to an parent Grid present in the Main Window
+       Me.gridContainer.Children.Add(olapGrid1);
+       ' Instantiating OlapDataManager. 
+       Dim olapDataManager As OlapDataManager = New OlapDataManager("Enter a valid connection string")
+       ' Set current report for OlapDataManager.
+       olapDataManager.SetCurrentReport(olapReport())
+       ' Specifying OlapDataManager to Grid.
+       Me.OlapGrid1.OlapDataManager = OlapDataManager
+       ' Enable Cell Selection.
+       Me.OlapGrid1.AllowSelection = True
+       Me.OlapGrid1.SelectionChanged += OlapGrid1_SelectionChanged;
+       Me.OlapGrid1.DataBind()
+    End Sub
     
+    Private Sub OlapGrid1_SelectionChanged(ByVal sender As Object, ByVal e As Syncfusion.Windows.Grid.Olap.OlapGridSelectionChangedEventArgs)
+        'Enter your code here
+    End Sub
 
-<!--Adding OlapGrid and Enabling Cell Selection-->
-
-<syncfusion:OlapGrid AllowSelection="True"> 
-
-</syncfusion:OlapGrid>
-
-    {% endhighlight %}
-
-
-
-
-
-  {% highlight c# %}
-
-    
-
-OlapGrid OlapGrid1 = new OlapGrid();
-
-// Instantiating OlapDataManager.
-
-OlapDataManager olapDataManager = new OlapDataManager();
-
-// Set current report for OlapDataManager.
-
-olapDataManager.SetCurrentReport(olapReport());
-
-// Specifying OlapDataManager to Grid.
-
-this.OlapGrid1.OlapDataManager = OlapDataManager;
-
-// Enable Cell Selection.
-
-this.OlapGrid1.AllowSelection = true;
-
-// Data binding.
-
-this.OlapGrid1.DataBind();
-
-    {% endhighlight %}
-
-
-
-
-
-  {% highlight vbnet %}
-
-    
-
-
-
-Dim OlapGrid1 As OlapGrid = New OlapGrid()
-
-' Instantiating OlapDataManager. 
-
-Dim olapDataManager As OlapDataManager = New OlapDataManager()
-
-' Set current report for OlapDataManager.
-
-olapDataManager.SetCurrentReport(olapReport())
-
-' Specifying OlapDataManager to Grid.
-
-Me.OlapGrid1.OlapDataManager = OlapDataManager
-
-' Enable Cell Selection.
-
-Me.OlapGrid1.AllowSelection = True
-
-' Data binding.
-
-Me.OlapGrid1.DataBind()
-
-    {% endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
+![](Cell-Selection_images/Cell-Selection_img1.png)
 
+A sample demo is available at the following link:  
 
-
-
-The screenshot below illustrates the Cell Selection.
-
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)
-
-
-### Sample Link
-
-A sample application that illustrates Cell Selection Chart is distributed along with the Essential OLAP Grid WPF installation and can be found at:  
-
-..\..\ Syncfusion\BI\WPF\OlapGrid.WPF\Samples\Appearance\Cell Selection Demo
+[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Selection\Cell Selection
 
