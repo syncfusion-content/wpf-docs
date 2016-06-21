@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Coded UI| SfChart | Wpf | Syncfusion
-description: coded ui
+title: Coded UI support for SfChart.
+description: Coded UI support for SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
