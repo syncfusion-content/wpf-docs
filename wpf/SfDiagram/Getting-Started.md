@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Diagram for WPF.
-description: Getting started walk through to create your Organizational Chart Diagram.
+description: Getting started walk through to create your first Flow Diagram and Organizational Chart Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -67,13 +67,13 @@ To initialize the Nodes and Connectors properties of the SfDiagram, Nodes proper
 
 ###Default Binding Style
 
-We have exposed the ViewModel of Node and Connector. We have provided the Default Binding Style support, in order to Bind the properties of ViewModel to View.
+We have provided the Default Binding Style support, in order to Bind the properties of ViewModel to View.
 For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 ##Flow Diagram
 
-###Merge BasicShapes ResourceDictionary
-We have provided support for the BasicShapes as ResourceDictionary. So, Merge the BasicShapes ResourceDictionary to the Application.
+###BasicShapes
+We have provided support for the BasicShapes for Diagram as ResourceDictionary. So, Merge the BasicShapes ResourceDictionary to the Application.
 {% highlight xaml %}
 <ResourceDictionary.MergedDictionaries>               
    <!--Shapes as StaticResource-->
@@ -97,11 +97,11 @@ Let us create and add a NodeViewModel with specific position, Size, Annotation a
   <syncfusion:NodeViewModel>
 {% endhighlight %}
            
->N Annotations property is an Collection, which indicates that more than one Annotation can be added to a Node.
+N> Annotations property is an Collection, which indicates that more than one Annotation can be added to a Node.
 
 Added node will be displayed in diagram as shown below.
                            
-![](Getting-Started_images\Getting_Started_flowDiagram_img1.jpeg)
+![](Getting-Started_images\Getting_Started_flowDiagram_img1.jpg)
 
 ###Connect nodes
     * Create another NodeViewModel with another set of data.
@@ -130,8 +130,8 @@ Added node will be displayed in diagram as shown below.
    <syncfusion:ConnectorViewModel SourceNodeID="node1" TargetNodeID="node2"/>
    {% endhighlight %}
     * Connector connects the two nodes as shown below.
-    
- ![](Getting-Started_images\Getting_Started_flowDiagram_img2.jpeg)
+
+ ![](Getting-Started_images\Getting_Started_flowDiagram_img2.jpg)
  
 ###Common Style for nodes and Connectors
 Default values for all Nodes and Connectors can be set using Common Style for Node and Connector. For example if all Nodes have same apperance, we can move such properties into Commom Style.
@@ -239,7 +239,7 @@ Similarly we can add required Nodes and Connectors to form a complete flow diagr
  {% endhighlight %}
 
 Final flow chart will looks as shown below.
- ![](Getting-Started_images\Getting_Started_flowDiagram_img3.jpeg)
+ ![](Getting-Started_images\Getting_Started_flowDiagram_img3.jpg)
 
 ##Automatic organization chart
 In ‘Flow Diagram’ section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
