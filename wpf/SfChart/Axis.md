@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Axis and its types. 
