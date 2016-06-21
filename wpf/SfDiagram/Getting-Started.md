@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Diagram for WPF.
-description: Getting started walk through to create your Organizational Chart Diagram.
+description: Getting started walk through to create your first Flow Diagram and Organizational Chart Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -11,16 +11,11 @@ documentation: ug
 
 Getting started with your Essential WPF Diagram is easy. You can start by creating a simple Flow Diagram.
 
-## Initialize the SfDiagram
+## Creating Simple Diagram
 
    * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
    * Add SfDiagram assembly to your application. 
    * Initialize the diagram.
-  
-   
-**Creating Simple Diagram**
-
-This section demonstrates how to visualize the Employee details in the Organizational Chart arrangement by using the SfDiagram.
 
 ###Adding assembly reference   
  
@@ -39,7 +34,7 @@ The xmlns name space is added to the MainPage.xaml
 
 ![](Getting-Started_images\Getting_Started_img2.png)
 
-##Initialize the diagram
+###Initialize the diagram
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram to the XAML Page as shown in the following code example.
 
@@ -72,59 +67,61 @@ To initialize the Nodes and Connectors properties of the SfDiagram, Nodes proper
 
 ###Default Binding Style
 
-We have exposed the ViewModel of Node and Connector. We have provided the Default Binding Style support, in order to Bind the properties of ViewModel to View.
+We have provided the Default Binding Style support, in order to Bind the properties of ViewModel to View.
 For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 ##Flow Diagram
 
-###Merge BasicShapes ResourceDictionary
-We have provided support for the BasicShapes as ResourceDictionary. So, Merge the BasicShapes ResourceDictionary to the Application.
+###BasicShapes
+We have provided support for the BasicShapes for Diagram as ResourceDictionary. So, Merge the BasicShapes ResourceDictionary to the Application.
+{% highlight xaml %}
 <ResourceDictionary.MergedDictionaries>               
    <!--Shapes as StaticResource-->
    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
 </ResourceDictionary.MergedDictionaries>
+{% endhighlight %}
 
 ###Create and add Node
 Let us create and add a NodeViewModel with specific position, Size, Annotation and Shape.
 {% highlight xaml %}
    <!--Create a NodeViewModel with Specific customization option-->
-   <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
-   <!--Initialize Annotation-->
-   <syncfusion:NodeViewModel.Annotations>
-   <!--Collection of Annotation-->
-   <local:Annotations>
-  <!--Create a AnnotationEditorViewModel with Content-->
-   <syncfusion:AnnotationEditorViewModel Content="Start"/>
-   </local:Annotations>
-   </syncfusion:NodeViewModel.Annotations>
+  <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
+    <!--Initialize Annotation-->
+        <syncfusion:NodeViewModel.Annotations>
+            <!--Collection of Annotation-->
+            <local:Annotations>
+                    <!--Create a AnnotationEditorViewModel with Content-->
+                 <syncfusion:AnnotationEditorViewModel Content="Start"/>
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
   <syncfusion:NodeViewModel>
 {% endhighlight %}
            
->N Annotations property is an Collection, which indicates that more than one Annotation can be added to a Node.
+N> Annotations property is an Collection, which indicates that more than one Annotation can be added to a Node.
 
 Added node will be displayed in diagram as shown below.
-
-![](Getting-Started_images\Getting_Started_flowDiagram_img1.jpeg)
+                           
+![](Getting-Started_images\Getting_Started_flowDiagram_img1.jpg)
 
 ###Connect nodes
     * Create another NodeViewModel with another set of data.
     {% highlight xaml %}
    <!--Start-->
    <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
-   <syncfusion:NodeViewModel.Annotations>
-   <local:Annotations>
-   <syncfusion:AnnotationEditorViewModel Content="Start"/>
-   </local:Annotations>
-   </syncfusion:NodeViewModel.Annotations>
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="Start"/>
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
    </syncfusion:NodeViewModel>
 
    <!--Read the Number-->
    <syncfusion:NodeViewModel ID="Read" OffsetX="300" UnitWidth="70" UnitHeight="35" OffsetY="120" Shape="{StaticResource Rectangle}">
-   <syncfusion:NodeViewModel.Annotations>
-   <local:Annotations>
-   <syncfusion:AnnotationEditorViewModel Content="Get Number"/>
-   </local:Annotations>
-   </syncfusion:NodeViewModel.Annotations>
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="Get Number"/>
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
    </syncfusion:NodeViewModel>  
    {% endhighlight %}
     * Connect these two nodes by adding a ConnectorViewModel into Connectors collection with reference to SourceNodeID and TargetNodeID.
@@ -133,34 +130,34 @@ Added node will be displayed in diagram as shown below.
    <syncfusion:ConnectorViewModel SourceNodeID="node1" TargetNodeID="node2"/>
    {% endhighlight %}
     * Connector connects the two nodes as shown below.
-    
- ![](Getting-Started_images\Getting_Started_flowDiagram_img2.jpeg)
+
+ ![](Getting-Started_images\Getting_Started_flowDiagram_img2.jpg)
  
 ###Common Style for nodes and Connectors
 Default values for all Nodes and Connectors can be set using Common Style for Node and Connector. For example if all Nodes have same apperance, we can move such properties into Commom Style.
  {% highlight xaml %}
 <!--Common Style for ConnectorViewModel-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-<Setter Property="ShapeStyle">
-<Setter.Value>
-<Style TargetType="Path">
-<Setter Property="Fill" Value="White"></Setter>
-<Setter Property="Stroke" Value="Black"></Setter>
-<Setter Property="Stretch" Value="Fill"></Setter>
-</Style>
-</Setter.Value>
-</Setter>
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="White"></Setter>
+                <Setter Property="Stroke" Value="Black"></Setter>
+                <Setter Property="Stretch" Value="Fill"></Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
 </Style>
 
 <!--Common Style for ConnectorViewModel-->
 <Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
-<Setter Property="ConnectorGeometryStyle">
-<Setter.Value>
-<Style TargetType="Path">
-<Setter Property="Stroke" Value="Black"></Setter>
-</Style>
-</Setter.Value>
-</Setter>
+    <Setter Property="ConnectorGeometryStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="Black"></Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
 </Style>
  {% endhighlight %}
                     
@@ -170,78 +167,79 @@ Similarly we can add required Nodes and Connectors to form a complete flow diagr
 
 {% highlight xaml %}                
 <syncfusion:NodeCollection>
-<syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
-<syncfusion:NodeViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="Start"/>
-</local:Annotations>
-</syncfusion:NodeViewModel.Annotations>
-</syncfusion:NodeViewModel>
+    <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="Start"/>
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
+    </syncfusion:NodeViewModel>
 
-<syncfusion:NodeViewModel ID="Read" OffsetX="300" UnitWidth="70" UnitHeight="35" OffsetY="120" Shape="{StaticResource Rectangle}">
-<syncfusion:NodeViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="Get Number"/>
-</local:Annotations>
-</syncfusion:NodeViewModel.Annotations>
-</syncfusion:NodeViewModel>
+    <syncfusion:NodeViewModel ID="Read" OffsetX="300" UnitWidth="70" UnitHeight="35" OffsetY="120" Shape="{StaticResource Rectangle}">
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="Get Number"/>
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
+    </syncfusion:NodeViewModel>
 
-<syncfusion:NodeViewModel ID="Condition" UnitWidth="75" UnitHeight="45" OffsetX="300" OffsetY="210" Shape="{StaticResource Diamond}">
-<syncfusion:NodeViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="X%2==0 ?" />
-</local:Annotations>
-</syncfusion:NodeViewModel.Annotations>
-</syncfusion:NodeViewModel>
+    <syncfusion:NodeViewModel ID="Condition" UnitWidth="75" UnitHeight="45" OffsetX="300" OffsetY="210" Shape="{StaticResource Diamond}">
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="X%2==0 ?" />
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
+    </syncfusion:NodeViewModel>
 
-<syncfusion:NodeViewModel ID="Even" UnitWidth="70" UnitHeight="35" OffsetX="200" OffsetY="310" Shape="{StaticResource PredefinedProcess}">
-<syncfusion:NodeViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="Even" />
-</local:Annotations>
-</syncfusion:NodeViewModel.Annotations>
-</syncfusion:NodeViewModel>
-<syncfusion:NodeViewModel ID="Odd" UnitWidth="70" UnitHeight="35" OffsetX="400" OffsetY="310" Shape="{StaticResource PredefinedProcess}">
-<syncfusion:NodeViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="Odd" />
-</local:Annotations>
-</syncfusion:NodeViewModel.Annotations>
-</syncfusion:NodeViewModel>
+    <syncfusion:NodeViewModel ID="Even" UnitWidth="70" UnitHeight="35" OffsetX="200" OffsetY="310" Shape="{StaticResource PredefinedProcess}">
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="Even" />
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
+    </syncfusion:NodeViewModel>
+    
+    <syncfusion:NodeViewModel ID="Odd" UnitWidth="70" UnitHeight="35" OffsetX="400" OffsetY="310" Shape="{StaticResource PredefinedProcess}">
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                 <syncfusion:AnnotationEditorViewModel Content="Odd" />
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
+    </syncfusion:NodeViewModel>
 
-<syncfusion:NodeViewModel ID="End" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="410" Shape="{StaticResource Ellipse}">
-<syncfusion:NodeViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="End"/>
-</local:Annotations>
-</syncfusion:NodeViewModel.Annotations>
-</syncfusion:NodeViewModel>
+    <syncfusion:NodeViewModel ID="End" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="410" Shape="{StaticResource Ellipse}">
+        <syncfusion:NodeViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="End"/>
+            </local:Annotations>
+        </syncfusion:NodeViewModel.Annotations>
+    </syncfusion:NodeViewModel>
 </syncfusion:NodeCollection>
 
 <syncfusion:ConnectorCollection>
-<syncfusion:ConnectorViewModel SourceNodeID="Start" TargetNodeID="Read"/>
-<syncfusion:ConnectorViewModel SourceNodeID="Read" TargetNodeID="Condition"/>
-<syncfusion:ConnectorViewModel SourceNodeID="Condition" TargetNodeID="Even">
-<syncfusion:ConnectorViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="Yes"></syncfusion:AnnotationEditorViewModel>
-</local:Annotations>
-</syncfusion:ConnectorViewModel.Annotations>
-</syncfusion:ConnectorViewModel>
-<syncfusion:ConnectorViewModel SourceNodeID="Condition" TargetNodeID="Odd">
-<syncfusion:ConnectorViewModel.Annotations>
-<local:Annotations>
-<syncfusion:AnnotationEditorViewModel Content="No"></syncfusion:AnnotationEditorViewModel>
-</local:Annotations>
-</syncfusion:ConnectorViewModel.Annotations>
-</syncfusion:ConnectorViewModel>
-<syncfusion:ConnectorViewModel SourceNodeID="Even" TargetNodeID="End"/>
-<syncfusion:ConnectorViewModel SourceNodeID="Odd" TargetNodeID="End"/>
+    <syncfusion:ConnectorViewModel SourceNodeID="Start" TargetNodeID="Read"/>
+    <syncfusion:ConnectorViewModel SourceNodeID="Read" TargetNodeID="Condition"/>
+    <syncfusion:ConnectorViewModel SourceNodeID="Condition" TargetNodeID="Even">
+        <syncfusion:ConnectorViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="Yes"></syncfusion:AnnotationEditorViewModel>
+            </local:Annotations>
+        </syncfusion:ConnectorViewModel.Annotations>
+    </syncfusion:ConnectorViewModel>
+    <syncfusion:ConnectorViewModel SourceNodeID="Condition" TargetNodeID="Odd">
+        <syncfusion:ConnectorViewModel.Annotations>
+            <local:Annotations>
+                <syncfusion:AnnotationEditorViewModel Content="No"></syncfusion:AnnotationEditorViewModel>
+            </local:Annotations>
+        </syncfusion:ConnectorViewModel.Annotations>
+    </syncfusion:ConnectorViewModel>
+    <syncfusion:ConnectorViewModel SourceNodeID="Even" TargetNodeID="End"/>
+    <syncfusion:ConnectorViewModel SourceNodeID="Odd" TargetNodeID="End"/>
 </syncfusion:ConnectorCollection>
  {% endhighlight %}
 
 Final flow chart will looks as shown below.
- ![](Getting-Started_images\Getting_Started_flowDiagram_img3.jpeg)
+ ![](Getting-Started_images\Getting_Started_flowDiagram_img3.jpg)
 
 ##Automatic organization chart
 In ‘Flow Diagram’ section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
@@ -314,39 +312,35 @@ The following code examples indicate how to define the default appearance of Nod
 
 {% highlight xaml %}
 
-<Window.Resources>
-<ResourceDictionary>
 <!--Style for the Node>-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-<Setter Property="UnitWidth" Value="80" />
-<Setter Property="UnitHeight" Value="40" />
-<Setter Property="FontSize" Value="15"></Setter>
-<Setter Property="Foreground" Value="Black"></Setter>
-<Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-<Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
-<Setter Property="ContentTemplate">
-<Setter.Value>
-<DataTemplate>
-<Border Background="#008b8b" CornerRadius="5">
-<TextBlock Text="{Binding Name}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-</Border>
-</DataTemplate>
-</Setter.Value>
-</Setter>
+    <Setter Property="UnitWidth" Value="80" />
+    <Setter Property="UnitHeight" Value="40" />
+    <Setter Property="FontSize" Value="15"></Setter>
+    <Setter Property="Foreground" Value="Black"></Setter>
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+    <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+    <Setter Property="ContentTemplate">
+        <Setter.Value>
+            <DataTemplate>
+                <Border Background="#008b8b" CornerRadius="5">
+                    <TextBlock Text="{Binding Name}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </DataTemplate>
+        </Setter.Value>
+    </Setter>
 </Style>
 <!--Style for the Connector>-->
 <Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle }">
-<Setter Property="ConnectorGeometryStyle">
-<Setter.Value>
-<Style TargetType="Path">
-<Setter Property="Stroke" Value="Black" />
-<Setter Property="StrokeThickness" Value="1" />
+    <Setter Property="ConnectorGeometryStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="Black" />
+                <Setter Property="StrokeThickness" Value="1" />
+            </Style>
+        </Setter.Value>
+    </Setter>
 </Style>
-</Setter.Value>
-</Setter>
-</Style>
-</ResourceDictionary>
-</<Window.Resources>
 
 {% endhighlight %}
 
@@ -383,20 +377,19 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 xmlns:local="clr-namespace:EmployeeDetails">
 
 <Window.Resources>
-<ResourceDictionary>
-<ResourceDictionary.MergedDictionaries>
-<ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
-</ResourceDictionary.MergedDictionaries>
-
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
+        </ResourceDictionary.MergedDictionaries>
 <!-- Initializes the employee colletion-->
 <local:Employees x:Key="Employees">
-<local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
-<local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
-<local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
-<local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="TeamLead"/>
-<local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
-<local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
-<local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
+    <local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="TeamLead"/>
+    <local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
+    <local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
 </local:Employees>
 
 <!--Initializes the DataSourceSettings -->
@@ -408,62 +401,56 @@ Id="EmpId" DataSource="{StaticResource Employees}">
 <!--Style for the Node>-->
 
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-<Setter Property="UnitWidth" Value="80" />
-<Setter Property="UnitHeight" Value="40" />
-<Setter Property="FontSize" Value="15"></Setter>
-<Setter Property="Foreground" Value="Black"></Setter>
-<Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-<Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
-<Setter Property="ContentTemplate">
-<Setter.Value>
-<DataTemplate>
-<Border Background="#008b8b"
-CornerRadius="5">
-<TextBlock Text="{Binding Name}" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-</Border>
-</DataTemplate>
-</Setter.Value>
-</Setter>
-
+    <Setter Property="UnitWidth" Value="80" />
+    <Setter Property="UnitHeight" Value="40" />
+    <Setter Property="FontSize" Value="15"></Setter>
+    <Setter Property="Foreground" Value="Black"></Setter>
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+    <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+    <Setter Property="ContentTemplate">
+        <Setter.Value>
+            <DataTemplate>
+                <Border Background="#008b8b" CornerRadius="5">
+                    <TextBlock Text="{Binding Name}" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+                </Border>
+            </DataTemplate>
+        </Setter.Value>
+     </Setter>
 </Style>
 <!--Style for the Connector>-->
 
 <Style TargetType="syncfusion:Connector">
-<Setter Property="ConnectorGeometryStyle">
-<Setter.Value>
-<Style TargetType="Path">
-<Setter Property="Stroke" Value="Black" />
-<Setter Property="StrokeThickness" Value="1" />
-</Style>
-</Setter.Value>
-</Setter>
+    <Setter Property="ConnectorGeometryStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="Black" />
+                <Setter Property="StrokeThickness" Value="1" />
+            </Style>
+        </Setter.Value>
+    </Setter>
 </Style>
 
 <!--Initializes the Layout-->
-<syncfusion:DirectedTreeLayout x:Key="TreeLayout"
-HorizontalSpacing="80"
-VerticalSpacing="50"
-SpaceBetweenSubTrees="20"
-Orientation="TopToBottom"/>
+<syncfusion:DirectedTreeLayout x:Key="TreeLayout" HorizontalSpacing="80" VerticalSpacing="50"
+                               SpaceBetweenSubTrees="20" Orientation="TopToBottom"/>
 
 <syncfusion:LayoutManager x:Key="LayoutManager" Layout="{StaticResource TreeLayout}"/>
-</ResourceDictionary>
+    </ResourceDictionary>
 </Window.Resources>
 
 <Grid Background="White">
 <!--Initializes the SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram"
-DataSourceSettings="{StaticResource DataSourceSettings}"
-LayoutManager="{StaticResource LayoutManager}">
-<!--Initializes the NodeCollection-->
-<syncfusion:SfDiagram.Nodes>
-<syncfusion:NodeCollection/>
-</syncfusion:SfDiagram.Nodes>
-<!--Initializes the ConnectorCollection-->
-<syncfusion:SfDiagram.Connectors>
-<syncfusion:ConnectorCollection/>
-</syncfusion:SfDiagram.Connectors>
-</syncfusion:SfDiagram>
+    <syncfusion:SfDiagram x:Name="diagram" DataSourceSettings="{StaticResource DataSourceSettings}"
+        LayoutManager="{StaticResource LayoutManager}">
+        <!--Initializes the NodeCollection-->
+            <syncfusion:SfDiagram.Nodes>
+                <syncfusion:NodeCollection/>
+            </syncfusion:SfDiagram.Nodes>
+        <!--Initializes the ConnectorCollection-->
+            <syncfusion:SfDiagram.Connectors>
+                <syncfusion:ConnectorCollection/>
+            </syncfusion:SfDiagram.Connectors>
+    </syncfusion:SfDiagram>
 </Grid>
 
 </Window>
