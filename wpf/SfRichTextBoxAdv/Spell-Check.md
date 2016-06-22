@@ -86,4 +86,4 @@ The following code example demonstrates how to enable spell checking based on la
 {% endhighlight %}
 
 {% endtabs %}
-N> In order to enable spell checking functionality based on particular language, language pack for .Net framework should be preinstalled in the machine.
+N> In order to enable spell checking functionality based on particular language, language pack for .NET Framework should be installed in the machine.
