@@ -35,7 +35,7 @@ For viewing the PDF document, you can use [PdfViewerControl](http://help.syncfus
 
 {% endhighlight %}
 
-For print preview you can load the pdf stream into viewer and for direct printing use `Print` method in PdfViewerControl  which is available under the namespace “Syncfusion.PdfViewer.Wpf”
+For print preview you can load the PDF stream into viewer and for direct printing use `Print` method in PdfViewerControl  which is available under the namespace “Syncfusion.PdfViewer.Wpf”
 
 {% highlight c# %}
 

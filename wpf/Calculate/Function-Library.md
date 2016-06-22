@@ -1607,7 +1607,7 @@ FORMULA</th><th>
 RESULT</th></tr>
 <tr>
 <td>
-=IFNA(“#N/A”,”Incorrect”)</td><td>
+=IFNA(“#N/A” , ”Incorrect”)</td><td>
 Incorrect</td></tr>
 <tr>
 <td>

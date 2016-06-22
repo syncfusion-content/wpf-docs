@@ -13,7 +13,7 @@ This section explains how to create the SfDatePicker control
 
 ## Adding SfDatePicker control
 
-Create a Wpf project in Visual Studio and refer to the following assemblies.
+Create a WPF project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfInput.WPF
 
