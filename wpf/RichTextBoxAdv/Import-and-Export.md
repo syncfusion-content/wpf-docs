@@ -127,11 +127,11 @@ Converts the Word document stream to DocumentAdv instance.</td></tr>
 
 RichTextBoxAdv richTextBoxAdv = new RichTextBoxAdv();
 
-//Loads the Doc format document in RichTextBoxAdv control from document stream.
+//Loads the DOC format document in RichTextBoxAdv control from document stream.
 
 richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".doc");
 
-//Loads the Docx format document in RichTextBoxAdv control from document stream.
+//Loads the DOCX format document in RichTextBoxAdv control from document stream.
 
 richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".docx");
 
@@ -144,17 +144,17 @@ richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".d
 
 Dim richTextBoxAdv As New RichTextBoxAdv()
 
-'Loads the Doc format document in RichTextBoxAdv control from document stream.
+'Loads the DOC format document in RichTextBoxAdv control from document stream.
 
 richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".doc")
 
-'Loads the Docx format document in RichTextBoxAdv control from document stream.
+'Loads the DOCX format document in RichTextBoxAdv control from document stream.
 
 richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".docx")
 {% endhighlight %}
 {% endtabs %}
 
-### Doc and Docx Export
+### DOC and DOCX Export
 
 You can convert the RichTextBoxAdv document to Word document stream by invoking the ConvertToDocument method from the extension class DocxExporting. 
 
@@ -182,11 +182,11 @@ Converts the DocumentAdv instance to Word document stream.</td></tr>
 
 
 
-//Saves the RichTextBoxAdv document to Word Doc format document stream.
+//Saves the RichTextBoxAdv document to Word DOC format document stream.
 
 DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".doc");
 
-//Saves the RichTextBoxAdv document to Word Docx format document stream.
+//Saves the RichTextBoxAdv document to Word DOCX format document stream.
 
 DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx");
 
@@ -197,11 +197,11 @@ DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx"
 
 
 
-'Saves the RichTextBoxAdv document to Word Doc format document stream.
+'Saves the RichTextBoxAdv document to Word DOC format document stream.
 
 DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".doc")
 
-'Saves the RichTextBoxAdv document to Word Docx format document stream.
+'Saves the RichTextBoxAdv document to Word DOCX format document stream.
 
 DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx")
 {% endhighlight %}

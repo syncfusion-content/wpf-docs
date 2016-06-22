@@ -8,7 +8,7 @@ keywords: hyperlink
 ---
 # Hyperlink
 
-The SfRichTextBoxAdv supports hyperlink field similar to the Microsoft Word. You can link part of the document content to internet or file location, mail address or any text.
+The SfRichTextBoxAdv supports hyperlink field similar to the Microsoft Word. You can link part of the document content to Internet or file location, mail address or any text.
 The following code example illustrates how to insert a hyperlink field.
 {% tabs %}
 {% highlight xaml %}

@@ -12,7 +12,7 @@ The SfRichTextBoxAdv control can be used with Model-View-View Model (MVVM) patte
 
 ## Creating a View Model
 
-The following code example demonstrates how to implement a view model class that contains properties to preserve the description about some of the animals and the animal that is selected for discussion. Whenever the animal chosen for discussion is changed, previously chosen animal description is updated to the data base and newly chosen animal description is updated to the text property.
+The following code example demonstrates how to implement a view model class that contains properties to preserve the description about some of the animals and the animal that is selected for discussion. Whenever the animal chosen for discussion is changed, previously chosen animal description is updated to the database and newly chosen animal description is updated to the text property.
 {% tabs %}
 {% highlight c# %}
 /// <summary>
