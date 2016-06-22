@@ -15,8 +15,8 @@ The following steps helps to add `SfSpellChecker`.
 
 1 . Create a WPF project in Visual Studio and include following assemblies.
 
-* Syncfusion.SpellChecker.Base.dll 
-* Syncfusion.SfSpellChecker.WPF.dll
+* Syncfusion.SpellChecker.Base
+* Syncfusion.SfSpellChecker.WPF
 
 2 . Create an instance of `SfSpellChecker` using “Syncfusion.Windows.Controls” namespace.
 
@@ -184,7 +184,7 @@ throw new NotImplementedException();
 
 {% endtabs %}
  
-5 . In the Click event of the button call SpellCheck method to TextBox.
+5 . In Click event of button call SpellCheck method to TextBox.
 
 {% tabs %}
 

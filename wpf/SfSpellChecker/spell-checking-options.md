@@ -11,7 +11,7 @@ documentation: ug
 
 The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of email id’s and addresses, HTML tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 
-## Properties
+## Ignore Spell Check
 
 <table>
 <tr>
@@ -72,9 +72,9 @@ SpellChecker.IgnoreHtmlTags = true;
 {% endtabs %}
 
 
-## Getting Suggestions for Wrong Word
+## Getting Suggestions for Error Word
 
-`SfSpellChecker` provides support to get suggestion list by passing the wrong word in the below methods.
+`SfSpellChecker` provides support to get suggestion list by passing the error word in the below methods.
 
 * GetSuggestions
 * GetPhoneticWords

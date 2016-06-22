@@ -9,9 +9,9 @@ documentation: ug
 
 # Context Menu Suggestion
 
-`SfSpellChecker` offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from listed suggestions.
+`SfSpellChecker` offers Microsoft Office application like context menu suggestions and helps to correct spell errors by choosing correct option from listed suggestions.
 
-The following steps helps to add context menu support in the TextBox control through code.
+The following steps helps to add context menu suggestion in the TextBox control.
 
 1 . Create a WPF project in Visual Studio.
 
