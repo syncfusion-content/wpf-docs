@@ -91,7 +91,7 @@ this.dataGrid.SearchHelper.FindNext("TextBox.Text ");
 ![](Search_images/Search_img4.png)
 
 
-## Move CurrentCell when FindNext and FindPrevieous
+## Move CurrentCell when FindNext and FindPrevious
 
 You can move the current cell along with FindNext and FindPrevious operation using [MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~MoveCurrentCell.html) method in selection controller. 
 
@@ -241,7 +241,7 @@ public class ComboBoxColumnExt : GridComboBoxColumn
 {% endhighlight %}
 {% endtabs %}
 
-You can change the display element of each column by creating new renderer for the particular column and assign to corresponding celltype in SfDataGrid.CellRenderers.
+You can change the display element of each column by creating new renderer for the particular column and assign to corresponding cell type in SfDataGrid.CellRenderers.
 
 {% tabs %}
 {% highlight c# %}
