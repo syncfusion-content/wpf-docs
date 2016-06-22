@@ -91,7 +91,7 @@ The Protect sheet options are
 
 * DeletingColumns     - Allows the users to delete columns on the protected worksheet.
 
-* Objects             - Allows the users to edit the objects such as Graphic cells like charts,richtextbox, etc.
+* Objects             - Allows the users to edit the objects such as Graphic cells like charts,rich textbox, etc.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ Occurs when the workbook is to be created in SfSpreadsheet.</td></tr>
 <tr>
 <td>
 {{ '[WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorkbookLoaded_EV.html) ' | markdownify }}</td><td>
-Occur when the workbook is loadeded in SfSpreadsheet.</td></tr>
+Occur when the workbook is loaded in SfSpreadsheet.</td></tr>
 <tr>
 <td>
 {{ '[WorksheetAdding](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorksheetAdding_EV.html) ' | markdownify }}

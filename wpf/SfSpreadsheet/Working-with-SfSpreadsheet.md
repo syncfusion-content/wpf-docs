@@ -120,7 +120,7 @@ void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
 
 N> SfSpreadsheet supports virtual mode, which lets you dynamically provide data to the grid by handling an event, [QueryRange](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~QueryRange_EV.html), for example. In virtual mode, data will be dynamically loaded into the SpreadsheetGrid on demand or when users need to view the data.
 
-## Setting the ActiveSheet programatically
+## Setting the ActiveSheet programmatically
 
 SfSpreadsheet allows you to set the [ActiveSheet](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ActiveSheet.html) programmatically by specifying the sheet name in the `SetActiveSheet` method of `SfSpreadsheet`.
 
@@ -205,9 +205,9 @@ spreadsheet.ActiveGrid.InvalidateCell(2,2);
 
 ## Clearing the value or formatting from a cell
 
-SfSpreadsheet allows you to delete the contents of a cell or delete the contents along with its formattings(comments,Conditional formats,..) also.
+SfSpreadsheet allows you to delete the contents of a cell or delete the contents along with its formatting(comments,Conditional formats,..) also.
 
-The following code illustrates the differnt way of deleting the value from a cell,
+The following code illustrates the different way of deleting the value from a cell,
 
 {% tabs %}
 {% highlight c# %}

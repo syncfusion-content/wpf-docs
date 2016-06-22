@@ -144,7 +144,7 @@ Dim dc As New DiagramControl()
 
 {% endhighlight %}
 
-This shows a window with empty diagramcontrol.
+This shows a window with empty diagram control.
 
 
 

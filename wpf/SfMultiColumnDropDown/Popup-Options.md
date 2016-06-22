@@ -58,7 +58,7 @@ The following screenshot displays the output for above code example.
 
 SfMultiColumnDropDownControl allows you to resize the DropDownPopup. You can resize the DropDownPopup by using Resize Thumb that shows Right bottom of the DropDownPopup. 
 
-SfMult  iColumnDropDownControl exposes the following properties to Resize and Customize the DropDownPopup
+SfMultiColumnDropDownControl exposes the following properties to Resize and Customize the DropDownPopup
 
 Property Table
 
@@ -185,7 +185,7 @@ This event is raised before the Popup is opened; the event can be canceled.The P
 
 #### How to keep DropDownPopup StaysOpen always?
 
-You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by using the StaysOpen property. In Loaded event, you can get the “PART_Popup”template from the SfMultiColumnDropDownControl and set the StaysOpen property to true.
+You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by using the StaysOpen property. In Loaded event, you can get the “PART_Popup” template from the SfMultiColumnDropDownControl and set the StaysOpen property to true.
 
 The following code example illustrates how to set StaysOpen property for DropDownPopup.
 {% highlight C# %}

@@ -29,7 +29,7 @@ Gets or sets a boolean property to allow or restrict the usage of TAB key in Edi
 <tr>
 <td>
 AssemblyReferences<br/><br/></td><td>
-IEnumerable(uri)<br/><br/></td><td>
+IEnumerable(Uri)<br/><br/></td><td>
 Gets or sets a collection of type Uri, this property enables you to specify the path of assemblies from EditControl and it should fetch Intellisense items automatically.<br/><br/></td></tr>
 <tr>
 <td>

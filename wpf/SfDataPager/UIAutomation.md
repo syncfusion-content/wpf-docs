@@ -11,10 +11,10 @@ documentation: ug
 
 SfDataPager supports the following UIAutomation,
 
-* CodedUI
+* Coded UI
 * Quick Test Professional
 
-## CodedUI
+## Coded UI
 
 
 SfDataPager supports CodedUITest automation that helps you to create an automation test with SfDataPager elements and record the sequence of actions.
@@ -73,7 +73,7 @@ SfDataPager</td><td>
 ## Quick Test Professional
 
 SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name 
-with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
+with Syncfusion namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 
 The following screenshot displays the QTP Test for SfDataPager
 

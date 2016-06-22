@@ -78,14 +78,14 @@ Return Type </th></tr>
 <tr>
 <td>
 Serialize()</td><td>
-A virtual method called to Serialize the GridControl. It stores the settings in an xml file named as specified in its parameter.</td><td>
+A virtual method called to Serialize the GridControl. It stores the settings in an XML file named as specified in its parameter.</td><td>
 string  fileName</td><td>
 public</td><td>
 void</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
-A virtual method called to Deserialize the GridControl. It restores the settings in an xml file named as specified in its parameter.</td><td>
+A virtual method called to Deserialize the GridControl. It restores the settings in an XML file named as specified in its parameter.</td><td>
 string  fileName</td><td>
 public</td><td>
 void</td></tr>
