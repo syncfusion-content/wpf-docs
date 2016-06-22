@@ -21,7 +21,7 @@ Once the WPF application is created, goto View menu and select Toolbox option. N
 
 Add a **Name** to the OlapGrid component for accessing it through code-behind as shown in the following code sample.
 
-{% highlight XAML %}
+{% highlight xaml %}
 
     <Window x:Class="WpfApplication.MainWindow1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -32,7 +32,7 @@ Add a **Name** to the OlapGrid component for accessing it through code-behind as
            </Grid>
     </Window>
 
-{% endhighlight%}
+{% endhighlight %}
 
 Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
    * Syncfusion.Olap.Manager
@@ -41,7 +41,7 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
    
 {% tabs %}
    
-{% highlight c#%}
+{% highlight c# %}
  
     using Syncfusion.Olap.Manager;
     using Syncfusion.Olap.Reports;
@@ -142,7 +142,7 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
 	End Function
     End Class
 
-{% endhighlight%}
+{% endhighlight %}
    
 {% endtabs %}
 
@@ -169,7 +169,7 @@ On adding the above assemblies, the OlapGrid control will be added under the **A
 
 Add a **Name** to the OlapGrid component for accessing it through code-behind as shown in the following code sample.
 
-{%highlight XAML%}
+{% highlight xaml %}
 
     <Window
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -192,7 +192,7 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
 
 {% tabs %}
    
-{%highlight C#%}
+{% highlight C# %}
    
     using Syncfusion.Olap.Manager;
     using Syncfusion.Olap.Reports;
@@ -243,9 +243,9 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
        }
     }
 				        
-{%endhighlight%}
+{% endhighlight %}
     
-{%highlight vbnet%}
+{% highlight vbnet %}
  
     Imports Syncfusion.Olap.Manager
     Imports Syncfusion.Olap.Reports
@@ -293,7 +293,7 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
     End Function
     End Class
 
-{%endhighlight%}
+{% endhighlight %}
   
 {% endtabs %}
     
@@ -322,7 +322,7 @@ Include the following namespace in code-behind for using OlapGrid ,OlapDataManag
 
 {% tabs %}
 
-{% highlight C#%}
+{% highlight C# %}
 
     using Syncfusion.Windows.Grid.Olap;
     using Syncfusion.Olap.Manager;
@@ -379,9 +379,9 @@ Include the following namespace in code-behind for using OlapGrid ,OlapDataManag
          }
      }
 
-{% end highlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 
     Imports Syncfusion.Windows.Grid.Olap
     Imports Syncfusion.Olap.Manager
@@ -432,7 +432,7 @@ Include the following namespace in code-behind for using OlapGrid ,OlapDataManag
     End Function
     End Class
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 

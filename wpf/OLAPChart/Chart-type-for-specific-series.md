@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Type : For Specific Series| OlapChart | Wpf | Syncfusion
+title: Chart Type-For Specific Series| OlapChart | Wpf | Syncfusion
 description: Chart type for specific series
 platform: wpf
 control: OlapChart
