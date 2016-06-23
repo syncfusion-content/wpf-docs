@@ -16,8 +16,8 @@ The Spell Checking engine can also be customized to ignore certain text or words
 <table>
 <tr>
 <td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+Property<br/><br/></td><td>
+Description<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreEmailAddress<br/><br/></td><td>
