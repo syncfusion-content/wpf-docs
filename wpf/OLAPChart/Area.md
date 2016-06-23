@@ -31,7 +31,7 @@ In general, ChartSeries contains the ChartArea instance, which can be used to cu
 
     Me.olapchart1.Series(0).Area.Header = "Simple Report"
 	
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
    

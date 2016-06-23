@@ -145,9 +145,9 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
 
 {% endtabs %}
 
-   ![](Paging_images/Paging_img1.png)
+![](Paging_images/Paging_img1.png)
 
-   ![](Paging_images/Paging_img2.png)
+![](Paging_images/Paging_img2.png)
 
 A sample demo is available at the following link:
 

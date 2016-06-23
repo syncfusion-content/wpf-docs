@@ -38,7 +38,6 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
    * Syncfusion.Olap.Manager
    * Syncfusion.Olap.Reports
    
-   
 {% tabs %}
    
 {% highlight c# %}
