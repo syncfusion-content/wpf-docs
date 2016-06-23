@@ -11,9 +11,9 @@ documentation: ug
 
 OlapGrid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level. In-order to display member properties along with the dimension member, OlapReport requires member properties to be defined in the concerned dimension element. Also, the OlapGrid layout should be set to **"ExcelLikeLayoutWithMemberProperties"**.
 
-{%tabs%}
+{% tabs %}
  
-{% highlight c#%}
+{% highlight c# %}
      
     private OlapReport ReportWithMemberProperties()
     {
@@ -40,7 +40,9 @@ OlapGrid allows binding of members along with their properties. Member propertie
         return olapReport;
     }
    
-{%highlight vbnet%}
+{% endhighlight %}
+
+{% highlight vbnet %}
     
     
     ''' <summary>
@@ -71,11 +73,9 @@ OlapGrid allows binding of members along with their properties. Member propertie
         Return olapReport
     End Function
 
-{%end highlight%}
- 
-{%endhighlight%}
+{% endhighlight %}
 
-{%endtabs%}
+{% endtabs %}
 
 ![](Member-Properties_images/Member-Properties_img1.png)
 

@@ -89,7 +89,7 @@ The following are the different types of Indicators:
 
 {% endhighlight %}
  
-{% endtabs%}
+{% endtabs %}
 
 ![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png)
 

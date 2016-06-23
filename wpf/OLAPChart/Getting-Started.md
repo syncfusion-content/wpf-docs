@@ -97,9 +97,9 @@ Include the following namespaces in the code-behind for using OlapReport and Ola
 		}
 	}  
 	
-   {% endhighlight %} 
+{% endhighlight %} 
 
-   {% highlight vbnet %}
+{% highlight vbnet %}
 	
 	Imports Syncfusion.Olap.Manager
 	Imports Syncfusion.Olap.Reports
@@ -255,9 +255,9 @@ Include the following namespace in the code-behind for using OlapReport and Olap
 		}
 	}
 
-   {% endhighlight %}
+{% endhighlight %}
    
-   {% highlight vbnet %}   
+{% highlight vbnet %}   
 	
 	Imports Syncfusion.Olap.Manager
 	Imports Syncfusion.Olap.Reports
@@ -401,9 +401,9 @@ Include the following namespaces in code-behind for using OlapChart, OlapReport 
 		}
 	}
 					
-  {% endhighlight %}
+{% endhighlight %}
    
-  {% highlight vbnet %}    
+{% highlight vbnet %}    
 
 	Imports Syncfusion.Olap.Manager
 	Imports Syncfusion.Olap.Reports         

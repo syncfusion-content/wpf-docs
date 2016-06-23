@@ -47,7 +47,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
     using Syncfusion.Olap.Manager;
 	using Syncfusion.Olap.Reports;
