@@ -142,7 +142,7 @@ throw new NotImplementedException();
 
 3 . Initiate `PerformSpellCheckUsingContextMenu` method by passing `IEditorProperties` interface argument.
 
-{ %tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
