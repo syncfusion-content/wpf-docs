@@ -116,7 +116,7 @@ The value cell text alignment can be changed using the following property of Ola
 
 {% endtabs %}
 
-![](Grid-Styling_images/Grid-Styling_img2.png)
+![](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
 
 A sample demo is available at the following link:
 

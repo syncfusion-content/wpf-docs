@@ -416,9 +416,10 @@ Include the following namespaces in code-behind for using OlapGauge, OlapReport 
         _olapDataManager = New OlapDataManager(_connectionString)
         ' A default OlapReport is set to OlapDataManager
         _olapDataManager.SetCurrentReport(CreateOlapReport())
-        ' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
+        ' Finally OlapGauge gets the information from the OlapDataManager
+        Me.olapGauge.OlapDataManager = _olapDataManager
         Me.olapGauge.DataBind()
-        ' OlapClient added to the Main Window Grid region.
+        ' OlapGauge added to the Main Window Grid region.
         grid.Children.Add(olapGauge)
     End Sub
 
