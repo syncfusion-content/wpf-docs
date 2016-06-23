@@ -146,7 +146,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
         End Namespace
 				
 
-{% end highlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
