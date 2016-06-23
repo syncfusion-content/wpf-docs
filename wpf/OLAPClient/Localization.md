@@ -21,7 +21,7 @@ Please refer the below code sample.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
     public MainWindow()
     {
@@ -54,7 +54,7 @@ RTL support for OlapClient is used to display the content from right to left by 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
     this.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
   

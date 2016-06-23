@@ -40,7 +40,7 @@ Include the following namespace in the code-behind for using OlapDataManger in t
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
     using Syncfusion.Olap.Manager;
 		
@@ -130,7 +130,7 @@ Include the following namespace in the code-behind for using OlapDataManger in t
 
 {% tabs %}
  
-{% highlight C# %}  
+{% highlight c# %}  
 
     using Syncfusion.Olap.Manager;
 		
@@ -205,7 +205,7 @@ Include the following namespaces in code-behind for using OlapClient and OlapDat
 
 {% tabs %} 
 
-{% highlight C# %}
+{% highlight c# %}
 
 	using Syncfusion.Windows.Client.Olap;
 	using Syncfusion.Olap.Manager;

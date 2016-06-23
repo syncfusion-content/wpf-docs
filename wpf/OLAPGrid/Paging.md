@@ -22,7 +22,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
 
 **ENABLE PAGING THROUGH XAML**
 
-{% highlight XAML%}
+{% highlight xaml %}
 			
     <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -44,9 +44,11 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
           </Grid>
     </Window>
 				
-{%endhighlight %}
+{% endhighlight %}
 
 **ENABLE PAGING THROUGH REPORT:**
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -96,9 +98,9 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
         }
     }
 
-{%endhighlight%}
+{% endhighlight %}
 
-{% highlight vbnet%}  
+{% highlight vbnet %}  
 
 		Imports Syncfusion.Olap.Manager
         Imports Syncfusion.Olap.Reports
@@ -144,7 +146,9 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
         End Namespace
 				
 
-{%end highlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Paging_images/Paging_img1.png)
 

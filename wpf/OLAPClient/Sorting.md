@@ -40,7 +40,7 @@ User can toggle the visibility of the Filter and Sort buttons in the OlapClient 
 
 {% tabs %} 
 
-{% highlight C# %}  
+{% highlight c# %}  
 
     this.olapClient1.ShowFilterSortButtons = false;
 

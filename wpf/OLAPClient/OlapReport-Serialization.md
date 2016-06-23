@@ -33,7 +33,7 @@ The following code sample illustrates to load the report which is in stream type
 
 {% tabs %}
 
-{% highlight C# %}  
+{% highlight c# %}  
 
     this.olapClient1.LoadReportStream(reportStream);
 
@@ -105,7 +105,7 @@ The following code sample describes
 
 {% tabs %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
     string reportname ="RevenueReport";
     Stream reportStream = null;

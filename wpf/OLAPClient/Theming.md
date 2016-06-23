@@ -33,7 +33,7 @@ The **VisualStyle** property allows the user to set the visual style of the Olap
 
 {% endhighlight %}
 
-{% highlight C# %}  
+{% highlight c# %}  
 
        this.olapClient.VisualStyle = OlapClientVisualStyle.Transparent;
 
