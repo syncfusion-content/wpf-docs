@@ -127,7 +127,7 @@ Returns the source.
 </tr>
 <tr>
 <td>
-{{'[GetItemAt](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetItemAt.html#"")'| markdownify }}
+{{'[GetItemAt](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~GetItemAt.html#"")'| markdownify }}
 </td>
 <td>
 Returns the data object by specified `index` from the collection. If the collection is filtered then returns from filtered source.
@@ -243,7 +243,7 @@ Description
 </tr>
 <tr>
 <td>
-{{'[GetSourceListForFilteringItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetSourceListForFilteringItems.html#"")'| markdownify }}
+{{'[GetSourceList](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView~GetSourceList.html#"")'| markdownify }}
 </td>
 <td>
 Returns the whole source to apply filter. Used to populate the items for ExcelLikeFilter pop-up.
