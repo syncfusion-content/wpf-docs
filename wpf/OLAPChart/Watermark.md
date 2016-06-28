@@ -23,5 +23,5 @@ The following screen shot shows the image as a watermark:
 
 A sample demo is available at the following link:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Appearance\Watermark Demo
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Appearance\Watermark Demo
 

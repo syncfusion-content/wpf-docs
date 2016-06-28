@@ -27,15 +27,15 @@ Normal Layout is the default layout of OlapGrid in which the summary cells are p
   
 {% highlight c# %}
 
-    /// Grid Layout will be Normal
-    this.OlapGrid1.Layout = GridLayout.Normal; 
+/// Grid Layout will be Normal
+this.OlapGrid1.Layout = GridLayout.Normal; 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Grid Layout will be Normal
-    Me.OlapGrid1.Layout = GridLayout.Normal
+' Grid Layout will be Normal
+Me.OlapGrid1.Layout = GridLayout.Normal
 
 {% endhighlight %}
 
@@ -51,15 +51,15 @@ In the Excel-like layout, the summary cells are positioned at the bottom alone a
   
 {% highlight c# %}
 
-    /// Excel-like Grid Layout
-    this.OlapGrid1.Layout = GridLayout.ExceLikeLayout; 
+/// Excel-like Grid Layout
+this.OlapGrid1.Layout = GridLayout.ExceLikeLayout; 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Excel-like Grid Layout
-    Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
+' Excel-like Grid Layout
+Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
 
 {% endhighlight %}
 
@@ -77,15 +77,15 @@ N> This layout is applicable only for member having properties defined in OLAP C
   
 {% highlight c# %}
 
-    /// Excel-like Grid Layout with Member Properties 
-    this.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties;
+/// Excel-like Grid Layout with Member Properties 
+this.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Excel-like Grid Layout with Member Properties
-    Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
+' Excel-like Grid Layout with Member Properties
+Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
 
 {% endhighlight %}
 
@@ -101,15 +101,15 @@ In Normal Top Summary layout, the summary cells are positioned at the top of eac
   
 {% highlight c# %}
 
-    /// Grid Layout will be Normal with summary positioned at the top
-    this.OlapGrid1.Layout = GridLayout.NormalTopSummary; 
+/// Grid Layout will be Normal with summary positioned at the top
+this.OlapGrid1.Layout = GridLayout.NormalTopSummary; 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Grid Layout will be Normal with summary positioned at the top
-    Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
+' Grid Layout will be Normal with summary positioned at the top
+Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
 {% endhighlight %}
 
@@ -125,15 +125,15 @@ In No Summaries layout, the summary cells are hidden and the child member appear
   
 {% highlight c# %}
 
-    /// Grid Layout without Summaries
-    this.OlapGrid1.Layout = GridLayout.NoSummaries; 
+/// Grid Layout without Summaries
+this.OlapGrid1.Layout = GridLayout.NoSummaries; 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Grid Layout without Summaries
-    Me.OlapGrid1.Layout = GridLayout.NoSummaries
+' Grid Layout without Summaries
+Me.OlapGrid1.Layout = GridLayout.NoSummaries
 
 {% endhighlight %}
 
@@ -143,4 +143,4 @@ In No Summaries layout, the summary cells are hidden and the child member appear
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Grid Layout
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Grid Layout

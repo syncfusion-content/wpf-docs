@@ -38,15 +38,15 @@ The following code sample will launch the OlapGrid style dialog:
   
 {% highlight c# %}
 
-    // To display style dialog
-    this.OlapGrid1.ShowStyleDialog();
+// To display style dialog
+this.OlapGrid1.ShowStyleDialog();
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' To display style dialog
-    Me.OlapGrid1.ShowStyleDialog()
+' To display style dialog
+Me.OlapGrid1.ShowStyleDialog()
 
 {% endhighlight %}
 
@@ -74,23 +74,23 @@ The column, row, summary and value cells of OlapGrid can be formatted independen
   
 {% highlight c# %}
 
-    // Specifying the background color for column header
-    this.OlapGrid1.ColumnHeaderStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
-    // Specifying the background color for row header
-    this.OlapGrid1.RowHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
-    // Specifying the background color for summary cell
-    this.OlapGrid1.SummaryColumnStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
+// Specifying the background color for column header
+this.OlapGrid1.ColumnHeaderStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
+// Specifying the background color for row header
+this.OlapGrid1.RowHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
+// Specifying the background color for summary cell
+this.OlapGrid1.SummaryColumnStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Specifying the background color for column header
-    Me.OlapGrid1.ColumnHeaderStyle.Background = New SolidColorBrush(Color.FromRgb(175, 209, 255))
-    ' Specifying the background color for row header
-    Me.OlapGrid1.RowHeaderCellStyle.Background = New SolidColorBrush(Color.FromRgb(175, 209, 255))
-    ' Specifying the background color for summary cell
-    Me.OlapGrid1.SummaryColumnStyle.Background = New SolidColorBrush(Color.FromRgb(206, 225, 248))
+' Specifying the background color for column header
+Me.OlapGrid1.ColumnHeaderStyle.Background = New SolidColorBrush(Color.FromRgb(175, 209, 255))
+' Specifying the background color for row header
+Me.OlapGrid1.RowHeaderCellStyle.Background = New SolidColorBrush(Color.FromRgb(175, 209, 255))
+' Specifying the background color for summary cell
+Me.OlapGrid1.SummaryColumnStyle.Background = New SolidColorBrush(Color.FromRgb(206, 225, 248))
 
 {% endhighlight %}
 
@@ -102,15 +102,15 @@ The value cell text alignment can be changed using the following property of Ola
 
 {% highlight c# %}
 
-    // Specifying the value cell text alignment
-    this.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center;
+// Specifying the value cell text alignment
+this.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Specifying the value cell text alignment
-    Me.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center
+' Specifying the value cell text alignment
+Me.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center
 
 {% endhighlight %}
 
@@ -120,5 +120,5 @@ The value cell text alignment can be changed using the following property of Ola
 
 A sample demo is available at the following link:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid
 

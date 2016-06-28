@@ -24,76 +24,75 @@ It is possible to enable or disable the hyperlink options separately for all row
 
 {% highlight c# %}
 
-    public MainWindow()
-    {
-        InitializeComponent();
+public MainWindow()
+{
+    InitializeComponent();
             
-        //OlapGrid Instantiation
-        OlapGrid olapGrid1 = new OlapGrid();
-        //OlapGrid added to an parent Grid present in the Main Window
-        this.gridContainer.Children.Add(olapGrid1);
-        //Connection string is passed to OlapDataManager as an argument
-        OlapDataManager olapDataManager = new OlapDataManager("Enter a valid connection string");
-        //Set current report for OlapDataManager.
-        olapDataManager.SetCurrentReport(CreateOlapReport());
-        //Specifying OlapDataManager to Grid.
-        olapGrid1.OlapDataManager = olapDataManager;
+    //OlapGrid Instantiation
+    OlapGrid olapGrid1 = new OlapGrid();
+    //OlapGrid added to an parent Grid present in the Main Window
+    this.gridContainer.Children.Add(olapGrid1);
+    //Connection string is passed to OlapDataManager as an argument
+    OlapDataManager olapDataManager = new OlapDataManager("Enter a valid connection string");
+    //Set current report for OlapDataManager.
+    olapDataManager.SetCurrentReport(CreateOlapReport());
+    //Specifying OlapDataManager to Grid.
+    olapGrid1.OlapDataManager = olapDataManager;
         
-        // To enable hyperlink for Column Header
-        this.OlapGrid1.ColumnHeaderStyle.IsHyperlinkCell = true;
-        // To enable hyperlink for Row Header
-        this.OlapGrid1.RowHeaderStyle.IsHyperlinkCell = true;
-        // To enable hyperlink for Value Cell
-        this.OlapGrid1.ValueCellStyle.IsHyperlinkCell = true;
-        // To enable hyperlink for Summary Column
-        this.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = true;
-        // To enable hyperlink for Summary Row
-        this.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = true;
+    // To enable hyperlink for Column Header
+    this.OlapGrid1.ColumnHeaderStyle.IsHyperlinkCell = true;
+    // To enable hyperlink for Row Header
+    this.OlapGrid1.RowHeaderStyle.IsHyperlinkCell = true;
+    // To enable hyperlink for Value Cell
+    this.OlapGrid1.ValueCellStyle.IsHyperlinkCell = true;
+    // To enable hyperlink for Summary Column
+    this.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = true;
+    // To enable hyperlink for Summary Row
+    this.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = true;
         
-        // Tag hyperlink cell click event
-        this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHandler(OlapGrid1_LinkClick);
-        olapGrid1.DataBind();      
-    }
-    private void OlapGrid1_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs e)
-    {
-        string uniqueName = e.PivotCellDescriptor.UniqueName;   
-    }  
+    // Tag hyperlink cell click event
+    this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHandler(OlapGrid1_LinkClick);
+    olapGrid1.DataBind();      
+}
+private void OlapGrid1_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs e)
+{
+    string uniqueName = e.PivotCellDescriptor.UniqueName;   
+}  
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Public Sub New()
-       InitializeComponent()
+Public Sub New()
+    InitializeComponent()
        
-       Dim OlapGrid1 As OlapGrid = New OlapGrid()
-       ' OlapGrid added to an parent Grid present in the Main Window
-       Me.gridContainer.Children.Add(olapGrid1);
-       ' Instantiating OlapDataManager. 
-       Dim olapDataManager As OlapDataManager = New OlapDataManager("Enter a valid connection string")
-       ' Set current report for OlapDataManager.
-       olapDataManager.SetCurrentReport(olapReport())
-       ' Specifying OlapDataManager to Grid.
-       ' To enable hyperlink for Column Header
-       Me.OlapGrid1.ColumnHeaderStyle.IsHyperlinkCell = True
-       ' To enable hyperlink for Row Header
-       Me.OlapGrid1.RowHeaderStyle.IsHyperlinkCell = True
-       ' To enable hyperlink for Value Cell
-       Me.OlapGrid1.ValueCellsStyle.IsHyperlinkCell = True
-       ' To enable hyperlink for Summary Column
-       Me.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = True
-       ' To enable hyperlink for Summary Row
-       Me.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = True
+    Dim OlapGrid1 As OlapGrid = New OlapGrid()
+    ' OlapGrid added to an parent Grid present in the Main Window
+    Me.gridContainer.Children.Add(olapGrid1);
+    ' Instantiating OlapDataManager. 
+    Dim olapDataManager As OlapDataManager = New OlapDataManager("Enter a valid connection string")
+    ' Set current report for OlapDataManager.
+    olapDataManager.SetCurrentReport(olapReport())
+    ' Specifying OlapDataManager to Grid.
+    ' To enable hyperlink for Column Header
+    Me.OlapGrid1.ColumnHeaderStyle.IsHyperlinkCell = True
+    ' To enable hyperlink for Row Header
+    Me.OlapGrid1.RowHeaderStyle.IsHyperlinkCell = True
+    ' To enable hyperlink for Value Cell
+    Me.OlapGrid1.ValueCellsStyle.IsHyperlinkCell = True
+    ' To enable hyperlink for Summary Column
+    Me.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = True
+    ' To enable hyperlink for Summary Row
+    Me.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = True
     
-       ' Tag hyperlink cell click event
-       Me.OlapGrid1.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHandler(OlapGrid1_LinkClick);
-       Me.OlapGrid1.DataBind()
-    End Sub
+    ' Tag hyperlink cell click event
+    Me.OlapGrid1.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHandler(OlapGrid1_LinkClick);
+    Me.OlapGrid1.DataBind()
+End Sub
     
-    Private Sub OlapGrid1_LinkClick(ByVal sender As Object, ByVal e As Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs)
-        Dim uniqueName As String = e.PivotCellDescriptor.UniqueName
-    End Sub
-   
+Private Sub OlapGrid1_LinkClick(ByVal sender As Object, ByVal e As Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs)
+    Dim uniqueName As String = e.PivotCellDescriptor.UniqueName
+End Sub
 
 {% endhighlight %}
 
@@ -107,5 +106,5 @@ It is possible to enable or disable the hyperlink options separately for all row
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Hyperlink Cell 
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Hyperlink Cell 
 

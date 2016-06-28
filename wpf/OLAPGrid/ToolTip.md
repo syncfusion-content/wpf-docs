@@ -19,15 +19,15 @@ OlapGrid provides drill down information through the header cell tooltip for hie
   
 {% highlight c# %}
 
-    // Enabling Header Cell Tooltip
-    this.OlapGrid1.ShowHeaderCellsToolTip = true;
+// Enabling Header Cell Tooltip
+this.OlapGrid1.ShowHeaderCellsToolTip = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Enabling Header Cell Tooltip
-    Me.OlapGrid1.ShowHeaderCellsToolTip = True
+' Enabling Header Cell Tooltip
+Me.OlapGrid1.ShowHeaderCellsToolTip = True
 
 {% endhighlight %}
 
@@ -43,15 +43,15 @@ OlapGrid provides cell information (Measure, Column Header, Row Header and Value
   
 {% highlight c# %}
 
-    // Enabling Value Cell Tooltip
-    this.OlapGrid1.ShowValueCellToolTip = true;
+// Enabling Value Cell Tooltip
+this.OlapGrid1.ShowValueCellToolTip = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Enabling Value Cell Tooltip
-    Me.OlapGrid1.ShowValueCellToolTip = True
+' Enabling Value Cell Tooltip
+Me.OlapGrid1.ShowValueCellToolTip = True
 
 {% endhighlight %}
 

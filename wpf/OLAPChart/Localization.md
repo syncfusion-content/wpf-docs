@@ -50,14 +50,14 @@ Now, you need to specify the CurrentUICulture of the application. We can specify
 
 {% highlight c# %}
  
-    public MainWindow()
-	{
-		 //Set the current thread culture to load the localization resource file.    
-		 System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
-		 InitializeComponent();
-		 if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE") 
-			 this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
-    }
+public MainWindow()
+{
+	//Set the current thread culture to load the localization resource file. 
+	System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
+	InitializeComponent();
+	if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE")
+		this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+}
 
 {% endhighlight %}
 
@@ -69,19 +69,19 @@ RTL support for OlapChart is used to display the content from right to left by s
 
 {% highlight xaml %}
 	
-	<syncfusion:OlapChart x:Name="olapChart" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" olapshared:DataSource.DataManagerName="localManager" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}" />
+<syncfusion:OlapChart x:Name="olapChart" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" olapshared:DataSource.DataManagerName="localManager" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-	this.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+this.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-	Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
+Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
 
 {% endhighlight %}
 
@@ -91,7 +91,7 @@ RTL support for OlapChart is used to display the content from right to left by s
   
 A sample demo is available at the following link:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Localization
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Localization
 
 
 
