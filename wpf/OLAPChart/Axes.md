@@ -25,13 +25,13 @@ The following code sample describes how to disable the horizontal grid lines:
 
 {% highlight c# %}
 
-    this.olapChart.Series[0].Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProperty, false);
+this.olapChart.Series[0].Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProperty, false);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Me.olapChart.Series(0).Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProperty, False)
+Me.olapChart.Series(0).Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProperty, False)
 
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ The following code sample describes how to disable the horizontal grid lines:
 
 N> For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the horizontal grid lines by using the **ShowGridLinesProperty** of the primary axis.
 
-In general, for column type charts, the vertical grid line belongs to the primary axis. To disable the vertical grid lines for these types of charts, you need to use the **ShowGridLines** property of the primary axis.
+In general, for column type charts, the vertical grid line belongs to the primary axis. To disable the vertical grid lines for these types of charts, you need to use the **ShowGridLinesProperty** of the primary axis.
 
 The following illustration describes how the chart will look after the *vertical grid lines are disabled*:
 
@@ -51,19 +51,19 @@ The following code sample describes how to disable the horizontal grid lines:
 
 {% highlight c# %}
 
-    this.olapChart.Series[0].Area.PrimaryAxis.SetValue(ChartArea.ShowGridLinesProperty, false);
+this.olapChart.Series[0].Area.PrimaryAxis.SetValue(ChartArea.ShowGridLinesProperty, false);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Me.olapChart.Series(0).Area.PrimaryAxis.SetValue(ChartArea.ShowGridLinesProperty, False)
+Me.olapChart.Series(0).Area.PrimaryAxis.SetValue(ChartArea.ShowGridLinesProperty, False)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the vertical grid lines by using the ShowGridLinesProperty of the secondary axis.
+N> For bar type charts such as Bar, Stacking bar and Stacking100 Bar you can disable the vertical grid lines by using the ShowGridLinesProperty of the secondary axis.
 
 ## Format Settings
 
@@ -71,9 +71,9 @@ To display the ‘%’ symbol in secondary axis, you need to set the secondary a
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart.SecondaryAxis>
-          <syncfusion:ChartAxis LabelFormat="00.00%" />
-     </syncfusion:OlapChart.SecondaryAxis>
+<syncfusion:OlapChart.SecondaryAxis>
+     <syncfusion:ChartAxis LabelFormat="00.00%" />
+</syncfusion:OlapChart.SecondaryAxis>
 
 {% endhighlight %}
 
@@ -83,9 +83,9 @@ To display the currency symbol in the secondary axis, you need to set the second
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart.SecondaryAxis>
-          <syncfusion:ChartAxis LabelFormat="C" />
-    </syncfusion:OlapChart.SecondaryAxis>
+<syncfusion:OlapChart.SecondaryAxis>
+     <syncfusion:ChartAxis LabelFormat="C" />
+</syncfusion:OlapChart.SecondaryAxis>
 
 {% endhighlight %}
 
@@ -99,46 +99,46 @@ The label font settings of the primary and the secondary axis can easily be appl
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart.PrimaryAxis>
-    <syncfusion:ChartAxis LabelFormat="C"
-          LabelFontFamily="Arial" 
-          LabelFontSize="14" 
-          LabelFontWeight="ExtraBold" 
-          LabelForeground="DarkGray"  />
-    </syncfusion:OlapChart.PrimaryAxis>
-    <syncfusion:OlapChart.SecondaryAxis>
-    <syncfusion:ChartAxis LabelFormat="C"
-          LabelFontFamily="Arial" 
-          LabelFontSize="14" 
-          LabelFontWeight="ExtraBold" 
-          LabelForeground="DarkGray"  />
-    </syncfusion:OlapChart.SecondaryAxis>
+<syncfusion:OlapChart.PrimaryAxis>
+<syncfusion:ChartAxis LabelFormat="C"
+      LabelFontFamily="Arial" 
+      LabelFontSize="14" 
+      LabelFontWeight="ExtraBold" 
+      LabelForeground="DarkGray"  />
+</syncfusion:OlapChart.PrimaryAxis>
+<syncfusion:OlapChart.SecondaryAxis>
+<syncfusion:ChartAxis LabelFormat="C"
+      LabelFontFamily="Arial" 
+      LabelFontSize="14" 
+      LabelFontWeight="ExtraBold" 
+      LabelForeground="DarkGray"  />
+</syncfusion:OlapChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    this.olapChart.PrimaryAxis.LabelForeground = Brushes.DarkGray;
-    this.olapChart.PrimaryAxis.LabelFontFamily = new FontFamily("Arial");
-    this.olapChart.PrimaryAxis.LabelFontSize = 14d;
-    this.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.ExtraBold;
-    this.olapChart.SecondaryAxis.LabelForeground = Brushes.DarkGray;
-    this.olapChart.SecondaryAxis.LabelFontFamily = new FontFamily("Arial");
-    this.olapChart.SecondaryAxis.LabelFontSize = 14d;
-    this.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.ExtraBold;
+this.olapChart.PrimaryAxis.LabelForeground = Brushes.DarkGray;
+this.olapChart.PrimaryAxis.LabelFontFamily = new FontFamily("Arial");
+this.olapChart.PrimaryAxis.LabelFontSize = 14d;
+this.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.ExtraBold;
+this.olapChart.SecondaryAxis.LabelForeground = Brushes.DarkGray;
+this.olapChart.SecondaryAxis.LabelFontFamily = new FontFamily("Arial");
+this.olapChart.SecondaryAxis.LabelFontSize = 14d;
+this.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.ExtraBold;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Me.olapChart.PrimaryAxis.LabelForeground = Brushes.DarkGray
-    Me.olapChart.PrimaryAxis.LabelFontFamily = New FontFamily("Arial")
-    Me.olapChart.PrimaryAxis.LabelFontSize = 14R
-    Me.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.ExtraBold
-    Me.olapChart.SecondaryAxis.LabelForeground = Brushes.DarkGray
-    Me.olapChart.SecondaryAxis.LabelFontFamily = New FontFamily("Arial")
-    Me.olapChart.SecondaryAxis.LabelFontSize = 14R
-    Me.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.ExtraBold
+Me.olapChart.PrimaryAxis.LabelForeground = Brushes.DarkGray
+Me.olapChart.PrimaryAxis.LabelFontFamily = New FontFamily("Arial")
+Me.olapChart.PrimaryAxis.LabelFontSize = 14R
+Me.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.ExtraBold
+Me.olapChart.SecondaryAxis.LabelForeground = Brushes.DarkGray
+Me.olapChart.SecondaryAxis.LabelFontFamily = New FontFamily("Arial")
+Me.olapChart.SecondaryAxis.LabelFontSize = 14R
+Me.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.ExtraBold
 
 {% endhighlight %}
 
@@ -152,19 +152,19 @@ The primary axis label panel visibility can be toggled by setting the **PrimaryA
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" PrimaryAxisLabelVisibility="Collapsed" />
+<syncfusion:OlapChart Name="olapChart" PrimaryAxisLabelVisibility="Collapsed" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    this.olapchart1.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed;
+this.olapChart.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Me.olapchart1.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed
+Me.olapChart.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed
 
 {% endhighlight %}
 

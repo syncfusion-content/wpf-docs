@@ -23,13 +23,13 @@ In general, ChartSeries contains the ChartArea instance, which can be used to cu
 
 {% highlight c# %}
 
-    this.olapchart1.Series[0].Area.Header = "Simple Report";
+this.olapchart1.Series[0].Area.Header = "Simple Report";
 	
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Me.olapchart1.Series(0).Area.Header = "Simple Report"
+Me.olapchart1.Series(0).Area.Header = "Simple Report"
 	
 {% endhighlight %}
 
@@ -62,13 +62,13 @@ OlapArea allows you to customize the border properties. The following code sampl
 
 {% highlight c# %}
  
-    this.olapchart1.Series[0].Area.BorderBrush = Brushes.Black;
+this.olapChart.Series[0].Area.BorderBrush = Brushes.Black;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
  
-    Me.olapchart1.Series(0).Area.BorderBrush = Brushes.Black
+Me.olapChart.Series(0).Area.BorderBrush = Brushes.Black
 
 {% endhighlight %}
 
@@ -80,13 +80,13 @@ OlapArea allows you to customize the border properties. The following code sampl
 
 {% highlight c# %}
  
-    this.olapchart1.Series[0].Area.BorderThickness = new Thickness(2);
+this.olapChart.Series[0].Area.BorderThickness = new Thickness(2);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
  
-    Me.olapchart1.Series(0).Area.BorderThickness = New Thickness(2)
+Me.olapChart.Series(0).Area.BorderThickness = New Thickness(2)
 
 {% endhighlight %}
 
@@ -98,13 +98,13 @@ OlapArea allows you to customize the border properties. The following code sampl
 
 {% highlight c# %}
  
-    this.olapchart1.Series[0].Area.CornerRadius = new CornerRadius(5);
+this.olapChart.Series[0].Area.CornerRadius = new CornerRadius(5);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapchart1.Series(0).Area.CornerRadius = New CornerRadius(5)
+Me.olapChart.Series(0).Area.CornerRadius = New CornerRadius(5)
 
 {% endhighlight %}
 
@@ -116,13 +116,13 @@ OlapArea allows you to customize the border properties. The following code sampl
 
 {% highlight c# %}
 
-    this.olapchart1.Series[0].Area.Background = Brushes.SkyBlue;
+this.olapChart.Series[0].Area.Background = Brushes.SkyBlue;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapchart1.Series(0).Area.Background = Brushes.SkyBlue
+Me.olapChart.Series(0).Area.Background = Brushes.SkyBlue
 
 {% endhighlight %}
 
@@ -134,13 +134,13 @@ OlapArea allows you to customize the border properties. The following code sampl
 
 {% highlight c# %}
  
-    this.olapchart1.Series[0].Area.GridBackground = Brushes.LightBlue;
+this.olapChart.Series[0].Area.GridBackground = Brushes.LightBlue;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapchart1.Series(0).Area.GridBackground = Brushes.LightBlue
+Me.olapChart.Series(0).Area.GridBackground = Brushes.LightBlue
 
 {% endhighlight %}
 
@@ -152,13 +152,13 @@ OlapArea allows you to customize the border properties. The following code sampl
 
 {% highlight c# %}
  
-    this.olapchart1.Series[0].Area.FontStyle = FontStyles.Italic;
+this.olapChart.Series[0].Area.FontStyle = FontStyles.Italic;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapchart1.Series(0).Area.FontStyle = FontStyles.Italic
+Me.olapChart.Series(0).Area.FontStyle = FontStyles.Italic
 
 {% endhighlight %}
  

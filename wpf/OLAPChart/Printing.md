@@ -17,4 +17,4 @@ The following image illustrates printing a cropped image:
 
 A sample demo is available at the following link:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Printing\Printing Chart Demo
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Printing\Printing Chart Demo

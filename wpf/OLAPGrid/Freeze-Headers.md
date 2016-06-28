@@ -15,22 +15,22 @@ OlapGrid provides built-in support to freeze the column and row headers. This is
   
 {% highlight xaml %}
 
-    <syncfusion:OlapGrid  FreezeHeaders="True"> 
-    </syncfusion:OlapGrid>
+<syncfusion:OlapGrid  FreezeHeaders="True"> 
+</syncfusion:OlapGrid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    // To freeze OlapGrid Headers
-    this.OlapGrid1.FreezeHeaders = true;
+// To freeze OlapGrid Headers
+this.OlapGrid1.FreezeHeaders = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' To freeze OlapGrid Headers
-    Me.OlapGrid1.FreezeHeaders = True
+' To freeze OlapGrid Headers
+Me.OlapGrid1.FreezeHeaders = True
 
 {% endhighlight %}
 
@@ -40,6 +40,6 @@ OlapGrid provides built-in support to freeze the column and row headers. This is
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header
+{system drive:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header
 
 

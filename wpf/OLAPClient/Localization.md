@@ -23,24 +23,24 @@ Please refer the below code sample.
 
 {% highlight c# %}
 
-    public MainWindow()
-    {
-        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
-        InitializeComponent();
-    }
+public MainWindow()
+{
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
+    InitializeComponent();
+}
     
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Public Sub New()
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("ar-AE")
-        InitializeCompenent()
-    End Sub
+Public Sub New()
+    System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("ar-AE")
+    InitializeCompenent()
+End Sub
     
- {% endhighlight %}
+{% endhighlight %}
  
- {% endtabs %}
+{% endtabs %}
  
 ## RTL Support
 
@@ -50,19 +50,19 @@ RTL support for OlapClient is used to display the content from right to left by 
 
 {% highlight xaml %} 
 
-    <syncfusion:OlapClient x:Name="olapClient1" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" OlapDataManager="{Binding ClientDataManager}" />
+<syncfusion:OlapClient x:Name="olapClient1" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" OlapDataManager="{Binding ClientDataManager}" />
 
 {% endhighlight %}
 
 {% highlight c# %} 
 
-    this.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+this.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
   
 {% endhighlight %}
 
 {% highlight vbnet %} 
 
-    Me.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+Me.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endhighlight %}
 
@@ -72,5 +72,5 @@ RTL support for OlapClient is used to display the content from right to left by 
 
 A sample demo is available at the following link:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapClient.WPF\Samples\Localization\Localization
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapClient.WPF\Samples\Localization\Localization
 

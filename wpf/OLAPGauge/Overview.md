@@ -18,7 +18,7 @@ OlapGauge control for WPF is ideal for highlighting business critical Key Perfor
 * **Customization:** Support to customize the layout while rendering multiple OlapGauge controls and it's size by using radius property.
 * **Frame Types:** Various built-in frame types provide a rich appearance of OlapGauge control.
 * **Filtering:** It supports multiple OlapGauge elements in single application and also filters the data dynamically.
-* **Themes:** Supports different themes like Office 2007 Blue, Office 2007 Black, Office 2007 Silver, and so on, to customize the appearance of the OlapGauge.
+* **Themes:** Supports different themes like Office 2007 Blue, Office 2007 Black, Office 2007 Silver and so on to customize the appearance of the OlapGauge.
 * **Visiblity:** Support to show or hide OlapGauge headers, factors and labels.
 
 
