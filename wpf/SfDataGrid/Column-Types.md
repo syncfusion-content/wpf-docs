@@ -188,7 +188,7 @@ Use to display the IEnumerable data using {{'[SfMultiColumnDropdownControl](http
 
 ### Mapping column to particular property
 
-Column can be bound to a property in data object using [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MappingName.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~DisplayBinding.html) and [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ValueBinding.html).
+Column can be bound to a property in data object using [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html).
  
 When you set `MappingName`, `DisplayBinding` and `ValueBinding` are created based on `MappingName`, if these properties are not defined explicitly. 
 
@@ -219,7 +219,7 @@ By default, Columns handling the data operations (sorting and grouping) based on
 
 ### CellTemplate in GridColumn
 
-You can load any WPF control in the display mode for all columns by setting [GridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type.
+You can load any WPF control in the display mode for all columns by setting [GridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type.
 
 Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://msdn.microsoft.com/en-in/library/system.windows.datatrigger.aspx).
 
@@ -265,7 +265,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~SetCellBoundValue.html#) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundValue.html#) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -300,7 +300,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/sys
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellTemplateSelector.html) property.
+`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html) property.
 
 For example, two different templates loaded alternatively in `OrderID` column. 
 
@@ -585,7 +585,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ### Styling GridColumn
 
-`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) property. For more information, refer [Styling and Template](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
+`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property. For more information, refer [Styling and Template](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates) section.
 
 #### Change the font setting
 
@@ -631,7 +631,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 #### Styles based on custom logic
 
-You can apply the styles to columns based on certain condition using [GridColumn.CellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyleSelector.html) property.
+You can apply the styles to columns based on certain condition using [GridColumn.CellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyleSelector.html) property.
 
 Below code creates two different styles by TargetType `GridCell`.
 
@@ -711,27 +711,27 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 #### Hide Column
 
-You can hide or unhide the particular column programmatically by setting [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~IsHidden.html) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](#_Resizing_Columns) section.
+You can hide or unhide the particular column programmatically by setting [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsHidden.html) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](#_Resizing_Columns) section.
 
 #### Disable column
 
-You can disable column by setting [GridColumn.AllowFocus](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowFocus.html) property. Therefore, that column can’t be selected or edited.
+You can disable column by setting [GridColumn.AllowFocus](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowFocus.html) property. Therefore, that column can’t be selected or edited.
 
 ### Width, alignment and padding settings
 
 #### Width
 
-The width of `GridColumn` can be changed by setting [Width](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~Width.html) property. Column width set based on [GridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MinimumWidth.html) and [GridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MaximumWidth.html) properties.
+The width of `GridColumn` can be changed by setting [Width](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~Width.html) property. Column width set based on [GridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MinimumWidth.html) and [GridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MaximumWidth.html) properties.
 
 N> If the `GridColumn.Width` is defined explicitly takes priority than `GridColumn.ColumnSizer`.
 
 #### Padding
 
-GridColumn allows you to the change the padding of cell content by setting [Padding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~Padding.html) property.
+GridColumn allows you to the change the padding of cell content by setting [Padding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~Padding.html) property.
 
 #### Alignment
 
-GridColumn allows  you to change the alignment of `GridCell` and `GridHeaderCell` content using [TextAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~TextAlignment.html), [VerticalAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~VerticalAlignment.html) and [HorizontalHeaderContentAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~HorizontalHeaderContentAlignment.html) properties.
+GridColumn allows  you to change the alignment of `GridCell` and `GridHeaderCell` content using [TextAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~TextAlignment.html), [VerticalAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~VerticalAlignment.html) and [HorizontalHeaderContentAlignment](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HorizontalHeaderContentAlignment.html) properties.
 
 ## GridTextColumnBase
 
@@ -1193,7 +1193,7 @@ You can increment or decrement the selected part of date time value by enabling 
 
 ### Format using Converter
 
-`GridDateTimeColumn`  allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ValueBinding.html).
+`GridDateTimeColumn`  allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1264,7 +1264,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 
 ## GridTemplateColumn
 
-`GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any WPF control in the display mode for all columns by setting [CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellTemplate.html) and [EditTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplate.html)   properties.
+`GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any WPF control in the display mode for all columns by setting [CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) and [EditTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplate.html)   properties.
 
 Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://msdn.microsoft.com/en-in/library/system.windows.datatrigger.aspx).
 
@@ -1399,7 +1399,7 @@ You can allow logical focus to specific UIElement loaded inside `EditTemplate` o
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~SetCellBoundValue.html) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundValue.html) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -1556,7 +1556,7 @@ public class GridCellComboBoxRendererExt:GridCellComboBoxRenderer
 {% endtabs %}
 
 
-N> This is applicable when the [SfDataGrid.EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EditTrigger.html) is set as `OnTap`.
+N> This is applicable when the [SfDataGrid.EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditTrigger.html) is set as `OnTap`.
 
 ### Customizing GroupCaptionText based on DisplayMemberPath
 
