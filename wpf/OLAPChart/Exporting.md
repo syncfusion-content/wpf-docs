@@ -49,29 +49,29 @@ The following code sample illustrate how to export an OlapChart to an Microsoft 
 
 {% highlight c# %}
  
-    // Export the OlapChart into a new Word Document.
-    OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
-    olapChartWordExport.ExportintoNewDoc(@"..\..\OutputDocument\Document.doc");
-    // Export the OlapChart into a new Word Document file in the default marker string location.
-    OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
-    olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc");
-    // Export the OlapChart into an existing Word Document file in the given marker string location.
-    OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
-    olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc", "MarkerString1");
+// Export the OlapChart into a new Word Document.
+OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
+olapChartWordExport.ExportintoNewDoc(@"..\..\OutputDocument\Document.doc");
+// Export the OlapChart into a new Word Document file in the default marker string location.
+OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
+olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc");
+// Export the OlapChart into an existing Word Document file in the given marker string location.
+OlapChartWordExport olapChartWordExport = new OlapChartWordExport(this.olapChart);
+olapChartWordExport.ExportIntoTemplateDoc(@"..\..\OutputDocument\Document.doc", "MarkerString1");
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    ' Export the OlapChart into a new Word Document.
-    Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
-    olapChartWordExport.ExportintoNewDoc("..\..\OutputDocument\Document.doc")
-    ' Export the OlapChart into a new Word Document file in the default marker string location.
-    Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
-    olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc")
-    ' Export the OlapChart into an existing Word Document file in the given marker string location.
-    Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
-    olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc", "MarkerString1")
+' Export the OlapChart into a new Word Document.
+Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
+olapChartWordExport.ExportintoNewDoc("..\..\OutputDocument\Document.doc")
+' Export the OlapChart into a new Word Document file in the default marker string location.
+Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
+olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc")
+' Export the OlapChart into an existing Word Document file in the given marker string location.
+Dim olapChartWordExport As New olapChartWordExport(Me.olapChart)
+olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc", "MarkerString1")
 
 {% endhighlight %}
 
@@ -89,15 +89,15 @@ The following code sample illustrates how to set this method:
 
 {% highlight c# %}
  
-     OlapChartPdfExport chartPdfExport = new OlapChartPdfExport(this.olapChart);
-     chartPdfExport.ExportIntoNewPdf(@"..\..\TemplateDocument\PdfDocument.pdf");
+OlapChartPdfExport chartPdfExport = new OlapChartPdfExport(this.olapChart);
+chartPdfExport.ExportIntoNewPdf(@"..\..\TemplateDocument\PdfDocument.pdf");
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim chartPdfExport As New OlapChartPdfExport(Me.olapChart)
-    chartPdfExport.ExportIntoNewPdf("..\..\TemplateDocument\PdfDocument.pdf")
+Dim chartPdfExport As New OlapChartPdfExport(Me.olapChart)
+chartPdfExport.ExportIntoNewPdf("..\..\TemplateDocument\PdfDocument.pdf")
 
 {% endhighlight %}
 
@@ -107,5 +107,5 @@ The following code sample illustrates how to set this method:
 
 A sample demo is available at the following link:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Exporting\Exporting Chart Demo
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Exporting\Exporting Chart Demo
 

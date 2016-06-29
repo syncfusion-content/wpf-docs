@@ -15,13 +15,13 @@ Drill position allows the user to drill only the current position of a selected 
 
 {% highlight c# %}
 
-    olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition;
+olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition
+olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ Drill position allows the user to drill only the current position of a selected 
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Data Relation\Drill Types
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Data Relation\Drill Types
 
 
 

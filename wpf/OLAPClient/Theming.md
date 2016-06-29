@@ -29,13 +29,13 @@ The **VisualStyle** property allows the user to set the visual style of the Olap
 
 {% highlight xaml %} 
 
-      <syncfusion:OlapClient  x:Name="olapClient" VisualStyle="Transparent"/>
+<syncfusion:OlapClient  x:Name="olapClient" VisualStyle="Transparent"/>
 
 {% endhighlight %}
 
 {% highlight c# %}  
 
-       this.olapClient.VisualStyle = OlapClientVisualStyle.Transparent;
+this.olapClient.VisualStyle = OlapClientVisualStyle.Transparent;
 
 {% endhighlight %}
 

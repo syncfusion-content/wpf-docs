@@ -17,15 +17,15 @@ OlapGauge provides support to display multiple gauges in a structured layout. Yo
 
 {% highlight c# %}
  
-    this.olapGauge.ColumnsCount = 2;
-    this.olapGauge.RowsCount = 2;
+this.olapGauge.ColumnsCount = 2;
+this.olapGauge.RowsCount = 2;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapGauge.ColumnsCount = 2
-    Me.olapGauge.RowsCount = 2
+Me.olapGauge.ColumnsCount = 2
+Me.olapGauge.RowsCount = 2
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ OlapGauge provides support to display multiple gauges in a structured layout. Yo
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 
 ## KPI
 
@@ -45,7 +45,7 @@ OlapGauge provides support to display Key Performance Indicators (KPIs) from the
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 
 ## Show/Hide Gauge Header, Factor and Labels
 
@@ -55,17 +55,17 @@ OlapGauge provides support to customize the header, which displays the measure a
 
 {% highlight c# %}
  
-    this.olapGauge1.ShowGaugeHeaders = false;
-    this.olapGauge1.ShowGaugeFactors = false;
-    this.olapGauge1.ShowGaugeLabels = false;
+this.olapGauge1.ShowGaugeHeaders = false;
+this.olapGauge1.ShowGaugeFactors = false;
+this.olapGauge1.ShowGaugeLabels = false;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapGauge1.ShowGaugeHeaders = False
-    Me.olapGauge1.ShowGaugeFactors = False
-    Me.olapGauge1.ShowGaugeLabels = False
+Me.olapGauge1.ShowGaugeHeaders = False
+Me.olapGauge1.ShowGaugeFactors = False
+Me.olapGauge1.ShowGaugeLabels = False
 
 {% endhighlight %}
 
@@ -77,5 +77,5 @@ The following screen shot shows the output.
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 

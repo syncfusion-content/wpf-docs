@@ -50,7 +50,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 
 Coded UI provides support only in Visual Studio Ultimate and Visual Studio Premium. For more information about the platforms and configurations that are supported by Coded UI tests, refer this [link](https://msdn.microsoft.com/en-us/library/dd380742.aspx).
 
-To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.VisualStudion.Extension.WPF-1315333566.zip) location.
+To test SfDataGrid with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project of SfDataGrid from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.VisualStudion.Extension.WPF803910139.zip) location.
 
 1. Open the Extension Project and build it.
 2. You can get the Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll from bin folder. 

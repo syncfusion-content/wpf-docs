@@ -15,15 +15,15 @@ This is the basic feature of OlapGrid through which the amount of information ca
   
 {% highlight c# %}
 
-    // Hiding Expanders
-    this.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = false;
+// Hiding Expanders
+this.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = false;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ' Hiding Expanders
-    Me.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = False
+' Hiding Expanders
+Me.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 {% endhighlight %}
 
