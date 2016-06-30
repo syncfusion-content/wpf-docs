@@ -30,8 +30,8 @@ N> You can also get the assemblies by browsing to the Default Assembly Location:
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
         x:Class="SampleApplication.MainWindow"
-	    Title="MainWindow" Height="350" Width="525">
-	    <Grid>
+        Title="MainWindow" Height="350" Width="525">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
@@ -40,7 +40,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location:
                 <syncfusion:OlapGrid  Name="olapGrid" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapGrid>
             </GroupBox>
             <GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
-                 <pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
+                <pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
             </GroupBox>
         </Grid>
 </Window>
@@ -71,14 +71,14 @@ namespace SampleApplication
             _olapDataManager.SetCurrentReport(SimpleDimensions());
             //Finally OlapGrid control gets the data from the created OlapDataManager
             this.olapGrid.OlapDataManager = _olapDataManager;
-			this.olapPager.OlapDataManager= _olapDataManager;
-			this.olapGrid.DataBind();
-		}
+            this.olapPager.OlapDataManager= _olapDataManager;
+            this.olapGrid.DataBind();
+        }
             
         private OlapReport SimpleDimensions()
         {
             OlapReport olapReport = new OlapReport();
-			olapReport.CurrentCubeName = "Adventure Works";
+            olapReport.CurrentCubeName = "Adventure Works";
             olapReport.EnablePaging = true;
             olapReport.PagerOptions.CategorialPageSize = 10;
             olapReport.PagerOptions.SeriesPageSize = 10;
@@ -120,10 +120,10 @@ Namespace SampleApplication
             'Finally OlapGrid control gets the data from the created OlapDataManager
             Me.olapGrid.OlapDataManager = _olapDataManager
             Me.olapPager.OlapDataManager= _olapDataManager
-	        Me.olapGrid.DataBind()
+            Me.olapGrid.DataBind()
         End Sub
 
-		Private Function SimpleDimensions() As OlapReport
+        Private Function SimpleDimensions() As OlapReport
             Dim olapReport As New OlapReport()
             olapReport.CurrentCubeName = "Adventure Works"
             olapReport.EnablePaging = True
@@ -154,7 +154,7 @@ End Namespace
 
 ![](Paging_images/Paging_img2.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{user name}\AppData\Local\Syncfusion\EssentialStudio\\{version number}\WPF\OlapGrid.WPF\Paging
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Paging
 

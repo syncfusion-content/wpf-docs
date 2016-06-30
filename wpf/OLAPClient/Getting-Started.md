@@ -24,13 +24,13 @@ Add a **Name** to the OlapClient component for accessing it through code-behind 
 {% highlight xaml %}
 
 <Window
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication5.MainWindow"
-		Title="MainWindow" Height="350" Width="525">
-	<Grid>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication5.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
         <syncfusion:OlapClient Name="olapClient1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="600" Width="700"/>
-	</Grid>
+    </Grid>
 </Window>
 		
 {% endhighlight %}
@@ -49,15 +49,15 @@ namespace WpfApplication
 {
     public partial class MainWindow : SampleWindow
     {
-		public MainWindow()
-		{
-			InitializeComponent();
-			string connectionString = "Enter a valid connection string";
-			//Connection string is passed to the OlapDataManager as an argument.
-		    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-		    // OlapClient gets information from the OlapDataManager.
-		    this.olapClient1.OlapDataManager = olapDataManager;
-		    this.olapClient1.DataBind();
+        public MainWindow()
+        {
+            InitializeComponent();
+            string connectionString = "Enter a valid connection string";
+            //Connection string is passed to the OlapDataManager as an argument.
+            OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+            // OlapClient gets information from the OlapDataManager.
+            this.olapClient1.OlapDataManager = olapDataManager;
+            this.olapClient1.DataBind();
         }
     }
 }
@@ -70,16 +70,16 @@ Imports Syncfusion.Olap.Manager
 
 Namespace WpfApplication
     Partial Public Class MainWindow
-    	Inherits SampleWindow
-    	Public Sub New()
-	    	InitializeComponent()
-	    	Dim connectionString as String = "Enter a valid connection string"
-	    	'Connection string is passed to the OlapDataManager as an argument.
-	    	Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-	    	'OlapClient gets information from the OlapDataManager.
-	    	Me.olapClient1.OlapDataManager = olapDataManager
-	    	Me.olapClient1.DataBind()
-		End Sub
+        Inherits SampleWindow
+        Public Sub New()
+            InitializeComponent()
+            Dim connectionString as String = "Enter a valid connection string"
+            'Connection string is passed to the OlapDataManager as an argument.
+            Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+            'OlapClient gets information from the OlapDataManager.
+            Me.olapClient1.OlapDataManager = olapDataManager
+            Me.olapClient1.DataBind()
+        End Sub
     End Class
 End Namespace
     
@@ -107,7 +107,7 @@ Select the **Project** tab available in the left corner of the Blend IDE, right 
 * Syncfusion.OlapShared.Wpf
 * Syncfusion.OlapTools.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 On adding the above assemblies, the OlapClient control will be added under the **Assets** tab automatically. Now choose the **Assets** tab, drag and drop the OlapClient to the designer.
 
@@ -118,11 +118,11 @@ Add a **Name** to the OlapClient component for accessing it through code-behind 
 {% highlight xaml %}
 
 <Window 
-	x:Class="WpfApplication.MainWindow"
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Client.Olap;assembly=Syncfusion.OlapClient.WPF"
-	Width="900" Height="630" >
+    x:Class="WpfApplication.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Client.Olap;assembly=Syncfusion.OlapClient.WPF"
+    Width="900" Height="630" >
     <Grid>
         <syncfusion:OlapClient Name="olapClient1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
@@ -142,19 +142,19 @@ using Syncfusion.Olap.Manager;
 		
 namespace WpfApplication
 {
-	public partial class MainWindow : SampleWindow
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			String connectionString = "Enter a valid connection string";
-			//Connection string is passed to the OlapDataManager as an argument.
-		    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-		    // The OlapClient gets the information from the OlapDataManager.
-		    this.olapClient1.OlapDataManager = olapDataManager;
-		    this.olapClient1.DataBind();
+    public partial class MainWindow : SampleWindow
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            String connectionString = "Enter a valid connection string";
+            //Connection string is passed to the OlapDataManager as an argument.
+            OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+            // The OlapClient gets the information from the OlapDataManager.
+            this.olapClient1.OlapDataManager = olapDataManager;
+            this.olapClient1.DataBind();
         }
-	}
+    }
 } 
 
 {% endhighlight %}
@@ -165,17 +165,17 @@ Imports Syncfusion.Olap.Manager
 
 Namespace WpfApplication
     Partial Public Class MainWindow
-		Inherits SampleWindow
-		Public Sub New()
-	   		InitializeComponent()
-	   		Dim connectionString as String = "Enter a valid connection string"
-	   		'Connection string is passed to the OlapDataManager as an argument.
-	   		Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-	   		'The OlapClient gets the information from the OlapDataManager.
-	   		Me.olapClient1.OlapDataManager = olapDataManager
-	   		Me.olapClient1.DataBind()
-		End Sub
-	End Class
+        Inherits SampleWindow
+        Public Sub New()
+            InitializeComponent()
+            Dim connectionString as String = "Enter a valid connection string"
+            'Connection string is passed to the OlapDataManager as an argument.
+            Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+            'The OlapClient gets the information from the OlapDataManager.
+            Me.olapClient1.OlapDataManager = olapDataManager
+            Me.olapClient1.DataBind()
+        End Sub
+    End Class
 End Namespace
 
 {% endhighlight %}
@@ -206,7 +206,7 @@ To add the dependency assemblies within the application, right-click on **Refere
 * Syncfusion.OlapTools.WPF
 * Syncfusion.Tools.WPF
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;{framework version&gt;\
 
 Include the following namespaces in code-behind for using OlapClient and OlapDataManger in the application.
 
@@ -222,22 +222,22 @@ using Syncfusion.Olap.Manager;
 
 namespace WpfApplication
 {
-	public partial class MainWindow : SampleWindow
-	{
-		public MainWindow()
-		{
-			//OlapClient instantiation.
-			OlapClient olapClient1 = new OlapClient();
-			String connectionString = "Enter a valid connection string";
-			//Connection string is passed to the OlapDataManager as an argument.
-			OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-			// OlapClient gets information from the OlapDataManager.
-			olapClient1.OlapDataManager = olapDataManager;
-			olapClient1.DataBind();
-			//OlapClient added to the Main Window Grid region.
-			grid.Children.Add(olapClient1);
-		}
-	}
+    public partial class MainWindow : SampleWindow
+    {
+        public MainWindow()
+        {
+            //OlapClient instantiation.
+            OlapClient olapClient1 = new OlapClient();
+            String connectionString = "Enter a valid connection string";
+            //Connection string is passed to the OlapDataManager as an argument.
+            OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+            // OlapClient gets information from the OlapDataManager.
+            olapClient1.OlapDataManager = olapDataManager;
+            olapClient1.DataBind();
+            //OlapClient added to the Main Window Grid region.
+            grid.Children.Add(olapClient1);
+        }
+    }
 }
 				
 {% endhighlight %}
@@ -247,22 +247,22 @@ namespace WpfApplication
 Imports Syncfusion.Olap.Manager
 Imports Syncfusion.Windows.Client.Olap;
 Namespace WpfApplication
-	Partial Public Class MainWindow
-		Inherits SampleWindow
-		Public Sub New()
-	   		InitializeComponent()
-	   		'OlapClient instantiation.
-	   		Dim olapClient1 As OlapClient =  New OlapClient()
-	   		Dim connectionString as String = "Enter a valid connection string"
-	   		'Connection string is passed to the OlapDataManager as an argument.
-	   		Dim olapDataManager As OlapDataManager =  New OlapDataManager (connectionString)
-	   		'OlapClient gets information from the OlapDataManager.
-	   		olapClient1.OlapDataManager = olapDataManager
-	   		olapClient1.DataBind()
-	   		'OlapClient added to the Main Window Grid region.
-	   		grid.Children.Add(olapClient1)
-		End Sub
-	End Class
+    Partial Public Class MainWindow
+        Inherits SampleWindow
+        Public Sub New()
+            InitializeComponent()
+            'OlapClient instantiation.
+            Dim olapClient1 As OlapClient =  New OlapClient()
+            Dim connectionString as String = "Enter a valid connection string"
+            'Connection string is passed to the OlapDataManager as an argument.
+            Dim olapDataManager As OlapDataManager =  New OlapDataManager (connectionString)
+            'OlapClient gets information from the OlapDataManager.
+            olapClient1.OlapDataManager = olapDataManager
+            olapClient1.DataBind()
+            'OlapClient added to the Main Window Grid region.
+            grid.Children.Add(olapClient1)
+        End Sub
+    End Class
 End Namespace 
 	
 {% endhighlight %}

@@ -101,7 +101,11 @@ True</td></tr>
 
 {{ '![](OlapClient-Elements_images/OlapClient-Elements_img7.png)' | markdownify }}
 
+<br/>
+
 {{ '![](OlapClient-Elements_images/OlapClient-Elements_img8.png)' | markdownify }}
+
+<br/>
 
 {{ '![](OlapClient-Elements_images/OlapClient-Elements_img9.png)' | markdownify }}
 

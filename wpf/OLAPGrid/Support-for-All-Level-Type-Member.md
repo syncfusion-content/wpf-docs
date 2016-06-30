@@ -33,4 +33,4 @@ OlapDataManager DataManager = New OlapDataManager() { ShowLevelTypeAll = True }
 
 A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code

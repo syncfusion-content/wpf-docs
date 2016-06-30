@@ -24,13 +24,13 @@ Add a **Name** to the OlapChart component for accessing it through code-behind a
 {% highlight xaml %}
   
 <Window
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
-	Title="MainWindow" Height="350" Width="525">
-	<Grid>
-		<syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
-	</Grid>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
+    </Grid>
 </Window>
 	
 {% endhighlight %}
@@ -171,7 +171,7 @@ Select the **Project** tab available in the left corner of the Blend IDE. Right 
 * Syncfusion.OlapShared.WPF
 
 N> You can also get the assemblies by browsing to the Default Assembly Location:
-{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 On adding the above assemblies, the OlapChart control will be added under the **Assets** tab automatically. Now choose the **Assets** tab, drag and drop the OlapChart to the designer.
 
@@ -182,13 +182,13 @@ Add a **Name** to the OlapChart component for accessing it through code-behind a
 {% highlight xaml %}
 
 <Window
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
-	Title="MainWindow" Height="350" Width="525">
-	<Grid>
-		<syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
-	</Grid>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
+    </Grid>
 </Window>
 
 {% endhighlight %}  
@@ -332,7 +332,7 @@ To add the dependency assemblies within the application, right click on **Refere
 * Syncfusion.Tools.WPF
 
 N> You can also get the assemblies by browsing to the Default Assembly Location
-{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 Include the following namespaces in code-behind for using OlapChart, OlapReport and OlapDataManger in the application.
 

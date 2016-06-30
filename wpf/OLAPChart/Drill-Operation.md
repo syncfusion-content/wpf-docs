@@ -19,9 +19,9 @@ While binding hierarchical dimensions (for example, the time dimension could inc
 
 ![](Drill-operation_images/Drill-operation_img1.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Creating Reports\Reports In Code
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Creating Reports\Reports In Code
 
 ## Drill Position
 
@@ -43,9 +43,9 @@ dataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
  
 ## Show/Hide Expanders
  
