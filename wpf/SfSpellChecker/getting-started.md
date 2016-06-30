@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-Spellchecking operation can be done on Text editor controls through `SfSpellChecker` in WPF application by implementing `IEditorProperties` interface.
+Spell checking operation can be done on Text editor controls through `SfSpellChecker` in WPF application by implementing `IEditorProperties` interface.
 
 The following steps helps to add `SfSpellChecker`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Coded UI Testing for Syncfusion Essential WPF controls
-description: Learn how to test with CodedUI for Syncfusion Essential WPF controls
+description: Learn how to test with Coded UI for Syncfusion Essential WPF controls
 platform: wpf
 control: Testing
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 CUIT contains the coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
 
-CodedUI test project does not appear on Visual Studio, if Visual Studio Enterprise edition not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
+Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
 
 ![](CodedUI_images/CodedUI_img1.jpeg)
 
@@ -113,7 +113,7 @@ End Sub
 
 ## Supported controls
 
-The following controls are featured in CodedUI Testing Support:
+The following controls are featured in Coded UI Testing Support:
 
 <table>
 <tr>
