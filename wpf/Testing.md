@@ -113,7 +113,7 @@ End Sub
 
 ## Supported controls
 
-The following controls are featured in CodedUI Testing Support:
+The following controls are featured in Coded UI Testing Support:
 
 <table>
 <tr>
