@@ -71,10 +71,10 @@ Private Function LoadBasicKPI() As OlapReport
     ' Specifying the KPI Element name and configuring its Indicators
     kpiElement.Elements.Add(New KpiElement() With { _
         Key .Name = "Internet Revenue", _
-	    Key .ShowKPIGoal = True, _
-	    Key .ShowKPIStatus = True, _
-	    Key .ShowKPIValue = True, _
-	    Key .ShowKPITrend = True _
+        Key .ShowKPIGoal = True, _
+        Key .ShowKPIStatus = True, _
+        Key .ShowKPIValue = True, _
+        Key .ShowKPITrend = True _
     })
     Dim dimensionElementRow As New DimensionElement()
     ' Specifying the Name for Row Dimension Element

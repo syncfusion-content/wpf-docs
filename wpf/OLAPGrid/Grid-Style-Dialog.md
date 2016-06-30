@@ -118,7 +118,7 @@ Me.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center
 
 ![](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid
 

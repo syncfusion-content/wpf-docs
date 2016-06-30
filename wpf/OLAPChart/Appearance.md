@@ -227,6 +227,6 @@ Me.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.Bold
 
 ![](Appearance_images/Appearance_img4.png)
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Appearance\Appearance
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Appearance\Appearance

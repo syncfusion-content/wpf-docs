@@ -40,7 +40,7 @@ Now, right-click the Resources folder to create a new resource file in the Visua
 
 Select "Resources File" from the list. Then name the resource file: Syncfusion.OlapGrid.WPF.ar-AE.resx and click Add.
 
-N> The resource file name should strictly be in the format "Syncfusion.OlapGrid.WPF.<<Culture Code>>.resx".
+N> The resource file name should strictly be in the format "Syncfusion.OlapGrid.WPF.&lt;Culture Code&gt;.resx".
    
 Copy and paste the translated locale to the resource file created in the earlier step.
 
@@ -52,11 +52,11 @@ Now, you need to specify the CurrentUICulture of the application. We can specify
  
 public MainWindow()
 {
-	//Set the current thread culture to load the localization resource file.    
-	System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
-	InitializeComponent();
-	if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE") 
-		this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+    //Set the current thread culture to load the localization resource file.    
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
+    InitializeComponent();
+    if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE") 
+        this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 }
 
 {% endhighlight %}
@@ -91,4 +91,4 @@ Me.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 A sample is locally available in the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Localization\Localization
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Localization\Localization

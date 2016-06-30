@@ -53,7 +53,7 @@ Run the application and the following output will be generated.
 
 ![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration 
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration 
 

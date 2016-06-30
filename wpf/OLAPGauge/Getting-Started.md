@@ -172,7 +172,7 @@ Select the **Project** tab available in the left corner of the Blend IDE. Right-
    * Syncfusion.OlapShared.WPF
    * Syncfusion.Shared.WPF
    
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\ {version number} \precompiledassemblies\ {version number} \ {framework version} \
+N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 On adding the above assemblies, the OlapGauge control will be added under the **Assets** tab automatically. Now choose the **Assets** tab, drag and drop the OlapGauge to the designer.
 
@@ -331,7 +331,7 @@ To add the dependency assemblies within the application, right-Click on **Refere
    * Syncfusion.OlapShared.WPF
    * Syncfusion.Shared.WPF
    
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\ {version number} \precompiledassemblies\ {version number} \ {framework version}\
+N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 Include the following namespaces in code-behind for using OlapGauge, OlapReport and OlapDataManger in the application.
 
@@ -398,7 +398,7 @@ namespace SampleApplication
             olapReport.SeriesElements.Add(dimensionElementRow);
             return olapReport;
         }
-	}
+    }
 } 
 	
 {% endhighlight %}

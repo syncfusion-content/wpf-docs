@@ -19,30 +19,30 @@ Include the following Syncfusion assembly from the installed location in-order t
 
 * Syncfusion.OlapShared.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+N> You can also get the assemblies by browsing to the Default Assembly Location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 **ENABLE PAGING THROUGH XAML**
 
 {% highlight xaml %}    
 
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-	xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
-	x:Class="SampleApplication.MainWindow"
-	Title="MainWindow" Height="350" Width="525">
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
-		<GroupBox  Header="OlapChart" Grid.Row="0">
-			<syncfusion:OlapChart  Name="olapChart" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapChart>
-		</GroupBox>
-		<GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
-			<pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
-		</GroupBox>
-	</Grid>
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
+    x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox  Header="OlapChart" Grid.Row="0">
+            <syncfusion:OlapChart  Name="olapChart" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapChart>
+            </GroupBox>
+        <GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
+            <pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
+        </GroupBox>
+    </Grid>
 </Window>
 
 {% endhighlight %}
@@ -150,7 +150,7 @@ End Namespace
 
 ![](Paging_images/Paging_img2.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Paging
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Paging
 

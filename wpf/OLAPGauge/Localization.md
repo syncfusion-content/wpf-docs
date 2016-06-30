@@ -64,5 +64,5 @@ Me.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 A sample is available locally in the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Localization\Localization Demo\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Localization\Localization Demo\
 
