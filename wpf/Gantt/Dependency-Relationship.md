@@ -185,12 +185,12 @@ You can add/remove/update the predecessors and resources of tasks at run time. I
 
 You can edit the predecessor information from the GanttGrid. For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both GanttGrid and GanttChart.
 
-# Predecessor Validation
+## Predecessor Validation
 
 There are two predecessor validation modes in Gantt Control. 
 
- * Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
- * Manual - Successor nodes need to adjust manually with respect to predecessor.
+* Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
+* Manual - Successor nodes need to adjust manually with respect to predecessor.
 
 ### Properties
 
@@ -205,8 +205,12 @@ Reference links</th></tr>
 <tr>
 <td>
 ValidationMode</td><td>
-This contains two modes.* Manual* Auto.Default value is Manual.</td><td>
+This contains two modes.<ul><li>
+Manual,</li><li>
+Auto.</li></ul>
+Default value is Manual.</td><td>
 DependencyProperty</td><td>
+Enum</td><td>
 NA</td></tr>
 </table>
 
