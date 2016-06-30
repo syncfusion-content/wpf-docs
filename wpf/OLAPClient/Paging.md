@@ -19,25 +19,26 @@ Include the following Syncfusion assembly from the installed location in-order t
 
 * Syncfusion.OlapShared.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\ {framework version}\
+N> You can also get the assemblies by browsing to the Default Assembly Location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 **ENABLE PAGING THROUGH XAML**
 
 {% highlight xaml %}
 
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        x:Class="SampleApplication.MainWindow"
-        Title="MainWindow" Height="350" Width="525">
+<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
     <Grid>
-	    <Grid.RowDefinitions>
+        <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <GroupBox  Header="OlapClient" Grid.Row="0">
-        	 <syncfusion:OlapClient  Name="olapClient" EnablePaging="True"  Background="Transparent" SeriesStrokeThickness="0">         
-         	 </syncfusion:OlapClient>
+            <syncfusion:OlapClient  Name="olapClient" EnablePaging="True"  Background="Transparent" SeriesStrokeThickness="0">
+            </syncfusion:OlapClient>
         </GroupBox>
     </Grid>
 </Window>
@@ -155,8 +156,8 @@ OlapPager in OlapClient control
 Page Setting Window
 {:.caption}
    
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapClient.WPF\Samples\Paging\Paging
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Paging\Paging
 
 

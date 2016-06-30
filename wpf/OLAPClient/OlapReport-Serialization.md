@@ -84,17 +84,17 @@ if (stream!= null)
   
 Dim stream As Stream = Me.olapClient1.GetReportStream()
 If stream IsNot Nothing Then
-   reportStream = TryCast(stream, MemoryStream)
-   Me.saveReport = New ReportNameWindow(Me.reportNames)
-   If saveReport.ShowDialog() = True Then
-      Dim repotName As String = "SalesReport”
-      con.Open()
-      Dim cmd1 As SqlCeCommand = New SqlCeCommand("insert into ReportsTable Values(@ReportName,@Report)", con)
-      cmd1.Parameters.Add("@ReportName", repotName)
-      cmd1.Parameters.Add("@Report", reportStream.ToArray())
-      cmd1.ExecuteNonQuery()
-      con.Close()
-   End If
+    reportStream = TryCast(stream, MemoryStream)
+    Me.saveReport = New ReportNameWindow(Me.reportNames)
+    If saveReport.ShowDialog() = True Then
+        Dim repotName As String = "SalesReport"
+        con.Open()
+        Dim cmd1 As SqlCeCommand = New SqlCeCommand("insert into ReportsTable Values(@ReportName,@Report)", con)
+        cmd1.Parameters.Add("@ReportName", repotName)
+        cmd1.Parameters.Add("@Report", reportStream.ToArray())
+        cmd1.ExecuteNonQuery()
+        con.Close()
+    End If
 End If
 
 {% endhighlight %}
@@ -129,7 +129,7 @@ con.Close();
 
 {% highlight vbnet %} 
 
-Dim reportname As String = ="RevenueReport"                    
+Dim reportname As String ="RevenueReport"                    
 Dim reportStream As Stream = Nothing
 con.Open()
 Dim da As SqlCeDataAdapter = New SqlCeDataAdapter("Select * from ReportsTable", con)
@@ -137,8 +137,8 @@ Dim dSet As DataSet = New DataSet()
 da.Fill(dSet)
 Dim table As DataTable = dSet.Tables(0)
 For Each row As DataRow In table.Rows
-  If (TryCast(row.ItemArray(0), String)).Equals(reportname) Then
-     reportStream = New MemoryStream(TryCast(row.ItemArray(1), Byte()))
+    If (TryCast(row.ItemArray(0), String)).Equals(reportname) Then
+        reportStream = New MemoryStream(TryCast(row.ItemArray(1), Byte()))
 Exit For
 End If
 Next row
@@ -149,6 +149,6 @@ con.Close()
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapClient.WPF\Samples\Serialization\Report Serialization
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Serialization\Report Serialization

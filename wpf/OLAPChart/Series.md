@@ -160,9 +160,9 @@ Next i
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
 
 ## Event
 
@@ -253,9 +253,9 @@ The following illustration shows the Chart Animations:
 
 ![](Series_images/Series_img6.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
 
 ## Pie Chart Customization
 
@@ -302,6 +302,6 @@ The following illustration shows the customization:
 
 ![](Series_images/Series_img7.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo

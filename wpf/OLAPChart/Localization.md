@@ -40,7 +40,7 @@ Now, right-click the Resources folder to create a new resource file in the Visua
 
 Select "Resources File" from the list. Then name the resource file: Syncfusion.OlapChart.WPF.ar-AE.resx and click Add.
 
-N> The resource file name should strictly be in the format "Syncfusion.OlapChart.WPF.<<Culture Code>>.resx".
+N> The resource file name should strictly be in the format "Syncfusion.OlapChart.WPF.&lt;Culture Code&gt;.resx".
    
 Copy and paste the translated locale to the resource file created in the earlier step.
 
@@ -52,11 +52,11 @@ Now, you need to specify the CurrentUICulture of the application. We can specify
  
 public MainWindow()
 {
-	//Set the current thread culture to load the localization resource file. 
-	System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
-	InitializeComponent();
-	if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE")
-		this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+    //Set the current thread culture to load the localization resource file. 
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
+    InitializeComponent();
+    if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE")
+        this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 }
 
 {% endhighlight %}
@@ -89,9 +89,9 @@ Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
   
 ![](Localization_images/Localization_img3.png)
   
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Localization
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Localization
 
 
 

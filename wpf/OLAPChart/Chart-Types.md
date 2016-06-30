@@ -62,9 +62,9 @@ olapChart.ChartType = ChartTypes.Column
 
 {% endtabs %}
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ## Stacking Column Chart
 
@@ -98,9 +98,9 @@ olapChart.ChartType = ChartTypes.StackingColumn
 
 {% endtabs %}
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ## Stacking Column 100 Chart
 
@@ -134,9 +134,9 @@ olapChart.ChartType = ChartTypes.StackingColumn100
 
 {% endtabs %}
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ## Bar Chart
 
@@ -170,9 +170,9 @@ olapChart.ChartType = ChartTypes.Bar
 
 {% endtabs %}
 
-A sample demo is available at the following link: 
+A sample demo is available at the following location: 
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ## Stacking Bar Chart
 
@@ -206,9 +206,9 @@ olapChart.ChartType = ChartTypes.StackingBar
 
 {% endtabs %}
 
-A sample demo is available at the following link: 
+A sample demo is available at the following location: 
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ## Stacking Bar 100 Chart
 
@@ -242,9 +242,9 @@ olapChart.ChartType = ChartTypes.StackingBar100
 
 {% endtabs %}
 
-A sample demo is available at the following link: 
+A sample demo is available at the following location: 
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ## Area Chart
 
@@ -278,9 +278,9 @@ olapChart.ChartType = ChartTypes.Area
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Stacking Area Chart
 
@@ -314,9 +314,9 @@ olapChart.ChartType = ChartTypes.StackingArea
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Spline Area Chart
 
@@ -350,9 +350,9 @@ olapChart.ChartType = ChartTypes.SplineArea
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Step Area Chart
 
@@ -386,9 +386,9 @@ olapChart.ChartType = ChartTypes.StepArea
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Line Chart
 
@@ -422,9 +422,9 @@ olapChart.ChartType = ChartTypes.Line
 
 {% endtabs %}
  
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Spline Chart
 
@@ -458,9 +458,9 @@ olapChart.ChartType = ChartTypes.Spline
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Rotated Spline Chart
 
@@ -494,9 +494,9 @@ olapChart.ChartType = ChartTypes.RotatedSpline
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Step Line Chart
 
@@ -530,9 +530,9 @@ olapChart.ChartType = ChartTypes.StepLine
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Scatter Chart
 
@@ -566,9 +566,9 @@ olapChart.ChartType = ChartTypes.Scatter
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
 
 ## Pie Chart
 
@@ -604,6 +604,6 @@ olapChart.ChartType = ChartTypes.Pie
 
 N> Pie Chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Pie Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Pie Chart Demo
