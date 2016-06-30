@@ -17,15 +17,15 @@ OlapGauge provides support to adjust its radius and it can be achieved by assign
 
 {% highlight c# %}
  
-    this.olapGauge1.Radius = 100;
-    this.olapGauge1.DataBind();
+this.olapGauge.Radius = 100;
+this.olapGauge.DataBind();
 
 {% endhighlight %}
 
 {% highlight vbnet %}
  
-    Me.olapGauge1.Radius = 100
-    Me.olapGauge1.DataBind()
+Me.olapGauge.Radius = 100
+Me.olapGauge.DataBind()
 
 {% endhighlight %}
 
@@ -35,11 +35,12 @@ OlapGauge provides support to adjust its radius and it can be achieved by assign
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Appearance\Customization\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Appearance\Customization\
 
 ## Built-In Frame Types
 
-OlapGauge supports built-in frame types to provide effective rim styles. The **"FrameType"** property is used to set the frame type for the OlapGauge. The following are the frame types supported by OlapGauge. 
+OlapGauge supports built-in frame types to provide effective rim styles. The **"FrameType"** property is used to set the frame type for the OlapGauge. The following are the frame types supported by OlapGauge.
+
 * CircularCenterGradient
 * CircularWithDarkOuterFrames
 * FullCircle 
@@ -51,13 +52,13 @@ The following code sample illustrates setting frame types for OlapGauge.
 
 {% highlight c# %}
  
-    this.olapGauge1.FrameType = GaugeFrameType.CircularWithInnerLeftGradient;
+this.olapGauge.FrameType = GaugeFrameType.CircularWithInnerLeftGradient;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapGauge1.FrameType = GaugeFrameType.CircularWithInnerLeftGradient
+Me.olapGauge.FrameType = GaugeFrameType.CircularWithInnerLeftGradient
 
 {% endhighlight %}
 
@@ -75,7 +76,7 @@ The following screen shots illustrate the various frame types.
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Appearance\Customization\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Appearance\Customization\
 
 ## Skins
 
@@ -117,22 +118,22 @@ In order to apply skins, **SkinStorage.VisualStyle** property is used. To set th
 
 {% highlight xaml %}
 
-    <!--To set Metro visual style for OlapGauge-->
-    <gauge:OlapGauge Name="olapGauge1" Radius="120" sfshared:SkinStorage.VisualStyle="Metro"/>
+<!--To set Metro visual style for OlapGauge-->
+<gauge:OlapGauge Name="olapGauge1" Radius="120" sfshared:SkinStorage.VisualStyle="Metro"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    //To set Metro visual style for OlapGauge
-    SfSkinManager.SetVisualStyle(olapGauge1, Syncfusion.SfSkinManager.VisualStyles.Metro);
+//To set Metro visual style for OlapGauge
+SfSkinManager.SetVisualStyle(olapGauge1, Syncfusion.SfSkinManager.VisualStyles.Metro);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    'To set Metro visual style for OlapGauge
-    SfSkinManager.SetVisualStyle(olapGauge1, Syncfusion.SfSkinManager.VisualStyles.Metro);
+'To set Metro visual style for OlapGauge
+SfSkinManager.SetVisualStyle(olapGauge1, Syncfusion.SfSkinManager.VisualStyles.Metro);
 
 {% endhighlight %}
  
@@ -144,5 +145,5 @@ The following output is obtained.
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Appearance\Visual Styles\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Appearance\Visual Styles\
 

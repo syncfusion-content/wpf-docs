@@ -16,33 +16,34 @@ OlapPager (User Control) is included and bound with the OlapDataManager object o
 When you process large CellSet, it is splitted into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by using the UI options in OlapPager. You can also change the page size and other pager settings at run-time by using **PageSetting** window.
 
 Include the following Syncfusion assembly from the installed location in-order to add the OlapPager (User Control) with OlapChart.
+
 * Syncfusion.OlapShared.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+N> You can also get the assemblies by browsing to the Default Assembly Location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
 **ENABLE PAGING THROUGH XAML**
 
 {% highlight xaml %}    
 
-	<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-		xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
-		x:Class="SampleApplication.MainWindow"
-		Title="MainWindow" Height="350" Width="525">
-		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
-			<GroupBox  Header="OlapChart" Grid.Row="0">
-				<syncfusion:OlapChart  Name="olapChart" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapChart>
-			</GroupBox>
-			<GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
-				<pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
-			</GroupBox>
-		</Grid>
-	</Window>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
+    x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox  Header="OlapChart" Grid.Row="0">
+            <syncfusion:OlapChart  Name="olapChart" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapChart>
+            </GroupBox>
+        <GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
+            <pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
+        </GroupBox>
+    </Grid>
+</Window>
 
 {% endhighlight %}
  
@@ -52,59 +53,59 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
 
 {% highlight c# %}
 
-	using Syncfusion.Olap.Manager;
-	using Syncfusion.Olap.Reports;
-	namespace SampleApplication
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+namespace SampleApplication
+{
+	public partial class MainWindow : SampleWindow
 	{
-		public partial class MainWindow : SampleWindow
-		{
-			private string _connectionString;
-			private OlapDataManager _olapDataManager;
-			public MainWindow()
-			{  
-				InitializeComponent();
-				_connectionString = "Enter a valid connection string";
-				//Created connection string is passed to OlapDataManager as argument
-				_olapDataManager = new OlapDataManager(_connectionString);
-				//Created OlapReport is set as a current report to OlapDataManager
-				_olapDataManager.SetCurrentReport(SimpleDimensions());
-				//Finally OlapChart control gets the data from the created OlapDataManager
-				this.olapChart.OlapDataManager = _olapDataManager;
-				this.olapChart.DataBind();
-			}
-			private OlapReport SimpleDimensions()
-			{
-				OlapReport olapReport = new OlapReport();
-				olapReport.CurrentCubeName = "Adventure Works";
-				olapReport.EnablePaging = true;
-				olapReport.PagerOptions.CategorialPageSize = 10;
-				olapReport.PagerOptions.SeriesPageSize = 10;
-				DimensionElement dimensionElement = new DimensionElement() { Name = "Customer", HierarchyName = "Customer" };
-				dimensionElement.AddLevel("Customer Geography", "Country");
-				olapReport.CategoricalElements.Add(dimensionElement);
-				MeasureElements measureElements = new MeasureElements();
-				measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
-				olapReport.SeriesElements.Add(measureElements);
-				dimensionElement = new DimensionElement() { Name = "Geography", HierarchyName = "Geography" };
-				dimensionElement.AddLevel("Geography", "Country");
-				olapReport.CategoricalElements.Add(dimensionElement);
-				dimensionElement = new DimensionElement() { Name = "Date" };
-				dimensionElement.AddLevel("Fiscal", "Fiscal Year");
-				olapReport.SeriesElements.Add(dimensionElement);
-				return olapReport;
-			}
+		private string _connectionString;
+		private OlapDataManager _olapDataManager;
+		public MainWindow()
+		{  
+			InitializeComponent();
+			_connectionString = "Enter a valid connection string";
+			//Created connection string is passed to OlapDataManager as argument
+			_olapDataManager = new OlapDataManager(_connectionString);
+			//Created OlapReport is set as a current report to OlapDataManager
+			_olapDataManager.SetCurrentReport(SimpleDimensions());
+			//Finally OlapChart control gets the data from the created OlapDataManager
+			this.olapChart.OlapDataManager = _olapDataManager;
+			this.olapChart.DataBind();
 		}
-	}   
+		private OlapReport SimpleDimensions()
+		{
+			OlapReport olapReport = new OlapReport();
+			olapReport.CurrentCubeName = "Adventure Works";
+			olapReport.EnablePaging = true;
+			olapReport.PagerOptions.CategorialPageSize = 10;
+			olapReport.PagerOptions.SeriesPageSize = 10;
+			DimensionElement dimensionElement = new DimensionElement() { Name = "Customer", HierarchyName = "Customer" };
+			dimensionElement.AddLevel("Customer Geography", "Country");
+			olapReport.CategoricalElements.Add(dimensionElement);
+			MeasureElements measureElements = new MeasureElements();
+			measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+			olapReport.SeriesElements.Add(measureElements);
+			dimensionElement = new DimensionElement() { Name = "Geography", HierarchyName = "Geography" };
+			dimensionElement.AddLevel("Geography", "Country");
+			olapReport.CategoricalElements.Add(dimensionElement);
+			dimensionElement = new DimensionElement() { Name = "Date" };
+			dimensionElement.AddLevel("Fiscal", "Fiscal Year");
+			olapReport.SeriesElements.Add(dimensionElement);
+			return olapReport;
+		}
+	}
+}   
 			
 {% endhighlight %}
  
 {% highlight vbnet %}
    
-	Imports Syncfusion.Olap.Manager
-	Imports Syncfusion.Olap.Reports
-	Namespace SampleApplication
+Imports Syncfusion.Olap.Manager
+Imports Syncfusion.Olap.Reports
+Namespace SampleApplication
 	Partial Public Class MainWindow
-				Inherits SampleWindow
+		Inherits SampleWindow
 		Private _connectionString As String
 		Private _olapDataManager As OlapDataManager
 		Public Sub New()
@@ -139,7 +140,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
 			Return olapReport
 		End Function
 	End Class
-	End Namespace
+End Namespace
 
 {% endhighlight %}
 
@@ -149,7 +150,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location 
 
 ![](Paging_images/Paging_img2.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Paging
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Paging
 

@@ -17,26 +17,26 @@ The following code sample explains you on how to enable the drill-through option
 
 {% highlight C# %} 
 
-    this.olapClient1.DisplayMode = Syncfusion.Windows.Client.Olap.DisplayModes.GridOnly;
-    this.olapClient1.OlapGrid.ValueCellStyle.IsHyperlinkCell = true;
-    this.olapClient1.OlapGrid.EnableDrillThrough = true;
-    this.olapClient1.OlapGrid.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid_LinkClick);
-    void OlapGrid_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs e)
-    {
-        DataTable DrillThroughData = e.DrillThroughData;
-    }
+this.olapClient1.DisplayMode = Syncfusion.Windows.Client.Olap.DisplayModes.GridOnly;
+this.olapClient1.OlapGrid.ValueCellStyle.IsHyperlinkCell = true;
+this.olapClient1.OlapGrid.EnableDrillThrough = true;
+this.olapClient1.OlapGrid.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid_LinkClick);
+void OlapGrid_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs e)
+{
+    DataTable DrillThroughData = e.DrillThroughData;
+}
 
 {% endhighlight %}
  
 {% highlight vbnet %} 
 
-    Me.olapClient1.DisplayMode = Syncfusion.Windows.Client.Olap.DisplayModes.GridOnly
-    Me.olapClient1.OlapGrid.ValueCellStyle.IsHyperlinkCell = True
-    Me.olapClient1.OlapGrid.EnableDrillThrough = True
-    Me.olapClient1.OlapGrid.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid_LinkClick)
-    Private Sub OlapGrid_LinkClick(sender As Object, e As Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs)
-        Dim DrillThroughData As DataTable = e.DrillThroughData
-    End Sub
+Me.olapClient1.DisplayMode = Syncfusion.Windows.Client.Olap.DisplayModes.GridOnly
+Me.olapClient1.OlapGrid.ValueCellStyle.IsHyperlinkCell = True
+Me.olapClient1.OlapGrid.EnableDrillThrough = True
+Me.olapClient1.OlapGrid.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid_LinkClick)
+Private Sub OlapGrid_LinkClick(sender As Object, e As Syncfusion.Windows.Grid.Olap.LinkLabelEventArgs)
+    Dim DrillThroughData As DataTable = e.DrillThroughData
+End Sub
 
 {% endhighlight %}
 
@@ -57,7 +57,7 @@ Attribute Hierarchy Selector
 Grid with drill-through information
 {:.caption}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapClient.WPF\Samples\Product Showcase\Drill Through
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Product Showcase\Drill Through
 

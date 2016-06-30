@@ -17,13 +17,13 @@ The following code sample shows how to disable the series tooltip using the **Sh
 
 {% highlight c# %}
  
-	this.olapchart1.Series[0].ShowToolTip = false;
+this.olapChart.Series[0].ShowToolTip = false;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-	Me.olapchart1.Series(0).ShowToolTip = False
+Me.olapChart.Series(0).ShowToolTip = False
 
 {% endhighlight %}
 
@@ -37,13 +37,13 @@ The following code sample shows how to enable the series tooltip using the **Sho
 
 {% highlight c# %}
  
-	this.olapchart1.Series[0].ShowToolTip = true;
+this.olapChart.Series[0].ShowToolTip = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-	Me.olapchart1.Series(0).ShowToolTip = True
+Me.olapChart.Series(0).ShowToolTip = True
 
 {% endhighlight %}
 

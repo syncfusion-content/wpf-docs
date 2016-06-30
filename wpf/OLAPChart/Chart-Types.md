@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Types
 
-OlapChart supports 16 different types of Chart as follows:
+OlapChart supports 16 different types of Charts as follows:
 
 * Column
 * StackingColumn
@@ -42,29 +42,29 @@ The following code sample shows how to select a simple Column chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="Column" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Column" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Column;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Column;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Column
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Column
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ## Stacking Column Chart
 
@@ -78,29 +78,29 @@ The following code sample shows how to select a Stacking Column chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StackingColumn" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StackingColumn" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-     OlapChart olapChart = new OlapChart();
-     olapChart.ChartType = ChartTypes.StackingColumn;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StackingColumn;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StackingColumn
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StackingColumn
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ## Stacking Column 100 Chart
 
@@ -114,29 +114,29 @@ The following code sample shows how to select a Stacking Column 100 chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StackingColumn100" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StackingColumn100" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.StackingColumn100;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StackingColumn100;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StackingColumn100
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StackingColumn100
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:  
+A sample demo is available at the following location:  
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ## Bar Chart
 
@@ -150,29 +150,29 @@ The following code sample shows how to select a Bar chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="Bar" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Bar" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Bar;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Bar;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Bar
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Bar
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link: 
+A sample demo is available at the following location: 
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ## Stacking Bar Chart
 
@@ -186,29 +186,29 @@ The following code sample shows how to select a Stacking Bar chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StackingBar" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StackingBar" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.StackingBar;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StackingBar;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StackingBar
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StackingBar
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link: 
+A sample demo is available at the following location: 
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ## Stacking Bar 100 Chart
 
@@ -222,29 +222,29 @@ The following code sample shows how to select a Stacking Bar 100 chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StackingBar100" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StackingBar100" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.StackingBar100;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StackingBar100;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StackingBar100
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StackingBar100
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link: 
+A sample demo is available at the following location: 
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ## Area Chart
 
@@ -258,29 +258,29 @@ The following code sample shows how to select an Area chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="Area" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Area" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Area;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Area;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Area
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Area
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Stacking Area Chart
 
@@ -294,29 +294,29 @@ The following code sample shows how to select a Stacking Area chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StackingArea" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StackingArea" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.StackingArea;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StackingArea;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StackingArea
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StackingArea
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Spline Area Chart
 
@@ -330,29 +330,29 @@ The following code sample shows how to select a Spline Area chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="SplineArea" />
+<syncfusion:OlapChart Name="olapChart" ChartType="SplineArea" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.SplineArea;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.SplineArea;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.SplineArea
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.SplineArea
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Step Area Chart
 
@@ -366,29 +366,29 @@ The following code sample shows how to select a Step Area chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StepArea" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StepArea" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.StepArea;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StepArea;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StepArea
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StepArea
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ## Line Chart
 
@@ -402,29 +402,29 @@ The following code sample shows how to select a Line chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="Line" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Line" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Line;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Line;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Line
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Line
 
 {% endhighlight %}
 
 {% endtabs %}
  
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Spline Chart
 
@@ -438,29 +438,29 @@ The following code sample shows how to select a Spline chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="Spline" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Spline" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Spline;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Spline;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Spline
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Spline
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Rotated Spline Chart
 
@@ -474,29 +474,29 @@ The following code sample shows how to select a Rotated Spline chart.
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="RotatedSpline" />
+<syncfusion:OlapChart Name="olapChart" ChartType="RotatedSpline" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.RotatedSpline;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.RotatedSpline;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.RotatedSpline
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.RotatedSpline
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Step Line Chart
 
@@ -510,29 +510,29 @@ The following code sample shows how to select a Step Line chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="StepLine" />
+<syncfusion:OlapChart Name="olapChart" ChartType="StepLine" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.StepLine;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.StepLine;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.StepLine
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.StepLine
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ## Scatter Chart
 
@@ -546,29 +546,29 @@ The following code sample shows how to select a Scatter chart:
 
 {% highlight xaml %}
 
-    <syncfusion:OlapChart Name="olapchart1" ChartType="Scatter" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Scatter" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Scatter;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Scatter;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
-  
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Scatter
+
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Scatter
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
 
 ## Pie Chart
 
@@ -582,21 +582,21 @@ The following code sample shows how to select a Pie chart:
 
 {% highlight xaml %}
 
-	<syncfusion:OlapChart Name="olapchart1" ChartType="Pie" />
+<syncfusion:OlapChart Name="olapChart" ChartType="Pie" />
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    OlapChart olapChart = new OlapChart();
-    olapChart.ChartType = ChartTypes.Pie;
+OlapChart olapChart = new OlapChart();
+olapChart.ChartType = ChartTypes.Pie;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Dim olapChart As OlapChart = New OlapChart()
-    olapChart.ChartType = ChartTypes.Pie
+Dim olapChart As OlapChart = New OlapChart()
+olapChart.ChartType = ChartTypes.Pie
 
 {% endhighlight %}
 
@@ -604,6 +604,6 @@ The following code sample shows how to select a Pie chart:
 
 N> Pie Chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Chart Types\Pie Chart Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Pie Chart Demo

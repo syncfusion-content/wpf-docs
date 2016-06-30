@@ -22,70 +22,70 @@ The following are the different types of Indicators:
  
 {% highlight c# %}
      
-    /// <summary>
-    /// OlapReport with KPI Elements
-    /// </summary>
-    /// <returns></returns>
-    private OlapReport LoadBasicKPI()
+/// <summary>
+/// OlapReport with KPI Elements
+/// </summary>
+/// <returns></returns>
+private OlapReport LoadBasicKPI()
+{
+    OlapReport olapReport = new OlapReport();
+    // Selecting the Cube
+    olapReport.CurrentCubeName = "Adventure Works";
+    KpiElements kpiElement = new KpiElements();
+    // Specifying the KPI Element name and configuring its Indicators
+    kpiElement.Elements.Add(new KpiElement
     {
-       OlapReport olapReport = new OlapReport();
-       // Selecting the Cube
-       olapReport.CurrentCubeName = "Adventure Works";
-       KpiElements kpiElement = new KpiElements();
-       // Specifying the KPI Element name and configuring its Indicators
-       kpiElement.Elements.Add(new KpiElement
-       {
-           Name = "Internet Revenue",
-           ShowKPIGoal = true,
-           ShowKPIStatus = true,
-           ShowKPIValue = true,
-           ShowKPITrend = true
-       });
-       DimensionElement dimensionElementRow = new DimensionElement();
-       // Specifying the Name for Row Dimension Element
-       dimensionElementRow.Name = "Date";
-       // Specifying the Level element
-       dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
-       // Adding Row Elements
-       olapReport.SeriesElements.Add(dimensionElementRow);
-       // Adding Column Elements
-       olapReport.CategoricalElements.Add(kpiElement);
-       return olapReport;
-     }
+        Name = "Internet Revenue",
+        ShowKPIGoal = true,
+        ShowKPIStatus = true,
+        ShowKPIValue = true,
+        ShowKPITrend = true
+    });
+    DimensionElement dimensionElementRow = new DimensionElement();
+    // Specifying the Name for Row Dimension Element
+    dimensionElementRow.Name = "Date";
+    // Specifying the Level element
+    dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+    // Adding Row Elements
+    olapReport.SeriesElements.Add(dimensionElementRow);
+    // Adding Column Elements
+    olapReport.CategoricalElements.Add(kpiElement);
+    return olapReport;
+}
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    ''' <summary>
-    ''' OlapReport with KPI Elements
-    ''' </summary>
-    ''' <returns></returns>
-    Private Function LoadBasicKPI() As OlapReport
-       Dim olapReport As New OlapReport()
-       ' Selecting the Cube
-       olapReport.CurrentCubeName = "Adventure Works"
-       Dim kpiElement As New KpiElements()
-       ' Specifying the KPI Element name and configuring its Indicators
-       kpiElement.Elements.Add(New KpiElement()
-       {
-           Name = "Internet Revenue",
-           ShowKPIGoal = true,
-           ShowKPIStatus = true,
-           ShowKPIValue = true,
-           ShowKPITrend = true
-       })
-       Dim dimensionElementRow As New DimensionElement()
-       ' Specifying the Name for Row Dimension Element
-       dimensionElementRow.Name = "Date"
-       ' Specifying the Level element
-       dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
-       ' Adding Row Elements
-       olapReport.SeriesElements.Add(dimensionElementRow)
-       ' Adding Column Elements
-       olapReport.CategoricalElements.Add(kpiElement)
-       Return olapReport
-    End Function
+''' <summary>
+''' OlapReport with KPI Elements
+''' </summary>
+''' <returns></returns>
+Private Function LoadBasicKPI() As OlapReport
+    Dim olapReport As New OlapReport()
+    ' Selecting the Cube
+    olapReport.CurrentCubeName = "Adventure Works"
+    Dim kpiElement As New KpiElements()
+    ' Specifying the KPI Element name and configuring its Indicators
+    kpiElement.Elements.Add(New KpiElement()
+    {
+        Name = "Internet Revenue",
+        ShowKPIGoal = true,
+        ShowKPIStatus = true,
+        ShowKPIValue = true,
+        ShowKPITrend = true
+    })
+    Dim dimensionElementRow As New DimensionElement()
+    ' Specifying the Name for Row Dimension Element
+    dimensionElementRow.Name = "Date"
+    ' Specifying the Level element
+    dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+    ' Adding Row Elements
+    olapReport.SeriesElements.Add(dimensionElementRow)
+    ' Adding Column Elements
+    olapReport.CategoricalElements.Add(kpiElement)
+    Return olapReport
+End Function
 
 {% endhighlight %}
  
@@ -95,5 +95,5 @@ The following are the different types of Indicators:
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name} \AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Product Showcase\KPI
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Product Showcase\KPI
 

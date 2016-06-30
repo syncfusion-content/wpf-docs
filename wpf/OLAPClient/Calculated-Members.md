@@ -19,27 +19,27 @@ This feature allows users to define Measures and Members as they wish using Calc
 
 {% highlight xaml %}
 
-    <CheckBox Name="chk_CalcMember  ToolTip="Enable/Disable Calculated Members" Content="Enable Calculated Members" 
-              IsChecked="{Binding ElementName=olapClient1, Path=IsCalculatedMembersEnabled}"/>
+<CheckBox Name="chk_CalcMember  ToolTip="Enable/Disable Calculated Members" Content="Enable Calculated Members" 
+          IsChecked="{Binding ElementName=olapClient1, Path=IsCalculatedMembersEnabled}"/>
 
 {% endhighlight %}
 
 {% highlight C# %}  
 
-    this.olapClient1.IsCalculatedMembersEnabled = true; 
+this.olapClient1.IsCalculatedMembersEnabled = true; 
 
 {% endhighlight %} 
 
 {% highlight vbnet %}
 
-    Me.olapClient1.IsCalculatedMembersEnabled = True 
+Me.olapClient1.IsCalculatedMembersEnabled = True 
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapClient.WPF\Samples\Product Showcase\CalculatedMembers
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Product Showcase\CalculatedMembers
 
 

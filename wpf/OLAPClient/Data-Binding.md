@@ -17,19 +17,19 @@ To connect an OLAP Cube available in local machine, set the physical path of the
 
 {% highlight c# %}  
 
-    string connectionString = @"Datasource = systemdrive:\OfflineCube\Adventure_Works_Ext.cub; Provider= msolap;";
-    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-    this.olapClient1.OlapDataManager = olapDataManager;
-    this.olapClient1.DataBind();
+string connectionString = @"Datasource = systemdrive:\OfflineCube\Adventure_Works_Ext.cub; Provider= msolap;";
+OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+this.olapClient1.OlapDataManager = olapDataManager;
+this.olapClient1.DataBind();
 
 {% endhighlight %}
 
 {% highlight vbnet %} 
 
-    Dim connectionString As String = @"Datasource = systemdrive:\OfflineCube\Adventure_Works_Ext.cub; Provider= msolap;"
-    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-    Me.olapClient1.OlapDataManager = olapDataManager
-    Me.olapClient1.DataBind()
+Dim connectionString As String = @"Datasource = systemdrive:\OfflineCube\Adventure_Works_Ext.cub; Provider= msolap;"
+Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+Me.olapClient1.OlapDataManager = olapDataManager
+Me.olapClient1.DataBind()
 
 {% endhighlight %}
 
@@ -43,19 +43,19 @@ To connect an OLAP Cube available in SQL Server Analysis Service in local machin
 
 {% highlight c# %}  
 
-    string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW";
-    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-    this.olapClient1.OlapDataManager = olapDataManager;
-    this.olapClient1.DataBind();
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW";
+OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+this.olapClient1.OlapDataManager = olapDataManager;
+this.olapClient1.DataBind();
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-    Dim connectionString As String = "Datasource = localhost; Initial Catalog=Adventure Works DW"
-    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-    Me.olapClient1.OlapDataManager = olapDataManager
-    Me.olapClient1.DataBind()
+Dim connectionString As String = "Datasource = localhost; Initial Catalog=Adventure Works DW"
+Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+Me.olapClient1.OlapDataManager = olapDataManager
+Me.olapClient1.DataBind()
 
 {% endhighlight %}
 
@@ -69,19 +69,19 @@ To connect an OLAP Cube available in SQL Server Analysis Service in online serve
 
 {% highlight C# %}  
 
-    string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-    this.olapClient1.OlapDataManager = olapDataManager;
-    this.olapClient1.DataBind();
+string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+this.olapClient1.OlapDataManager = olapDataManager;
+this.olapClient1.DataBind();
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-    Dim connectionString As String = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
-    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-    Me.olapClient1.OlapDataManager = olapDataManager
-    Me.olapClient1.DataBind()
+Dim connectionString As String = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
+Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+Me.olapClient1.OlapDataManager = olapDataManager
+Me.olapClient1.DataBind()
 
 {% endhighlight %}
 
@@ -95,21 +95,21 @@ To connect an OLAP Cube available in Mondrian Server through XML/A, set the host
 
 {% highlight c# %}  
 
-    string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
-    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
-    this.olapClient1.OlapDataManager = olapDataManager;
-    this.olapClient1.DataBind();
+string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
+this.olapClient1.OlapDataManager = olapDataManager;
+this.olapClient1.DataBind();
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-    Dim connectionString As String = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"
-    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
-    Me.olapClient1.OlapDataManager = olapDataManager
-    Me.olapClient1.DataBind()
+Dim connectionString As String = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;"
+Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
+Me.olapClient1.OlapDataManager = olapDataManager
+Me.olapClient1.DataBind()
 
 {% endhighlight %}
 
@@ -123,21 +123,21 @@ To connect an OLAP Cube available in ActivePivot Server through XML/A, set the h
 
 {% highlight c# %}  
 
-    string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
-    OlapDataManager olapDataManager = new OlapDataManager(connectionString);
-    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
-    this.olapClient1.OlapDataManager = olapDataManager;
-    this.olapClient1.DataBind();
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
+OlapDataManager olapDataManager = new OlapDataManager(connectionString);
+olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
+this.olapClient1.OlapDataManager = olapDataManager;
+this.olapClient1.DataBind();
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-    Dim connectionString As String = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
-    Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
-    olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
-    Me.olapClient1.OlapDataManager = olapDataManager
-    Me.olapClient1.DataBind()
+Dim connectionString As String = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
+Dim olapDataManager As OlapDataManager = New OlapDataManager(connectionString)
+olapDataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;
+Me.olapClient1.OlapDataManager = olapDataManager
+Me.olapClient1.DataBind()
 
 {% endhighlight %}
 

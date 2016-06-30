@@ -21,16 +21,16 @@ Please refer the below code sample
 
 {% highlight C# %}
 
-    public MainWindow()
+public MainWindow()
+{
+    //Set the current thread culture to load the localization resource file.    
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
+    InitializeComponent();
+    if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE") 
     {
-        //Set the current thread culture to load the localization resource file.    
-        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar-AE");
-        InitializeComponent();
-        if (System.Globalization.CultureInfo.CurrentUICulture.ToString() == "ar-AE") 
-        {
-            this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
-        }
+        this.FlowDirection = System.Windows.FlowDirection.RightToLeft;
     }
+}
 
 {% endhighlight %}
 
@@ -42,19 +42,19 @@ RTL support for OlapGauge is used to display the content from right to left by s
 
 {% highlight xaml %}
 
-    <syncfusion:OlapGauge x:Name="olapGauge" FlowDirection="RightToLeft" Grid.Column="0" HorizontalAlignment="Stretch" ReportName="SalesReport" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}">
+<syncfusion:OlapGauge x:Name="olapGauge" FlowDirection="RightToLeft" Grid.Column="0" HorizontalAlignment="Stretch" ReportName="SalesReport" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}">
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-    this.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+this.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+Me.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endhighlight %}
 
@@ -64,5 +64,5 @@ RTL support for OlapGauge is used to display the content from right to left by s
 
 A sample is available locally in the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Localization\Localization Demo\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Localization\Localization Demo\
 

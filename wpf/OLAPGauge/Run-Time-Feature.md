@@ -17,13 +17,13 @@ OlapGauge for WPF provides value information when the mouse pointer is moved ove
 
 {% highlight c# %}
  
-    this.olapGauge1.ShowPointersTooltip = true;
+this.olapGauge1.ShowPointersTooltip = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapGauge1.ShowPointersTooltip = True
+Me.olapGauge1.ShowPointersTooltip = True
 
 {% endhighlight %}
 
@@ -39,13 +39,13 @@ OlapGauge for WPF provides goal information when the mouse pointer is moved over
 
 {% highlight c# %}
  
-    this.olapGauge1.ShowMarkersTooltip = true;
+this.olapGauge1.ShowMarkersTooltip = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-    Me.olapGauge1.ShowMarkersTooltip = True
+Me.olapGauge1.ShowMarkersTooltip = True
 
 {% endhighlight %}
 
@@ -55,5 +55,5 @@ OlapGauge for WPF provides goal information when the mouse pointer is moved over
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 

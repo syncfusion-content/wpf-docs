@@ -57,13 +57,13 @@ User can toggle the visibility of the Filter and Sort buttons in the OlapClient 
 
 {% highlight c# %}  
 
-    this.olapClient1.ShowFilterSortButtons = false;
+this.olapClient1.ShowFilterSortButtons = false;
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-    Me.olapClient1.ShowFilterSortButtons = False
+Me.olapClient1.ShowFilterSortButtons = False
 
 {% endhighlight %}
  

@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming
 
-Theming is the process of applying particular settings to the visual elements of a control. This feature provides the following theming options:
+Theming is the process of applying particular settings to the visual elements of a control. This feature provides the following themes options:
 
 *	Default
 *	Blend
@@ -28,21 +28,21 @@ The **"VisualStyle"** property allows you to set the theme for the OlapGrid cont
   
 {% highlight xaml %}
 
-    <syncfusion:OlapGrid  x:Name="olapGrid" VisualStyle="Transparent"/>
+<syncfusion:OlapGrid  x:Name="olapGrid" VisualStyle="Transparent"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    this.olapGrid.VisualStyle = OlapGridVisualStyle.Transparent;
+this.olapGrid.VisualStyle = OlapGridVisualStyle.Transparent;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo available in the following link.
+A sample demo available in the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Appearance\Visual Styles
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Appearance\Visual Styles
 
 
 

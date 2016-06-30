@@ -17,13 +17,13 @@ To display the “All” level type member, set the _ShowLevelTypeAll_ property 
   
 {% highlight c# %}
 
-    OlapDataManager DataManager = new OlapDataManager() { ShowLevelTypeAll = true};
+OlapDataManager DataManager = new OlapDataManager() { ShowLevelTypeAll = true};
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-    OlapDataManager DataManager = New OlapDataManager() { ShowLevelTypeAll = True }
+OlapDataManager DataManager = New OlapDataManager() { ShowLevelTypeAll = True }
 
 {% endhighlight %}
 
@@ -33,4 +33,4 @@ To display the “All” level type member, set the _ShowLevelTypeAll_ property 
 
 A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code

@@ -29,18 +29,18 @@ The **VisualStyle** property allows the user to set the visual style of the Olap
 
 {% highlight xaml %}
 
-      <syncfusion:OlapChart  x:Name="olapChart" VisualStyle="Transparent"/> 
+<syncfusion:OlapChart  x:Name="olapChart" VisualStyle="Transparent"/> 
 
 {% endhighlight %}
 
 {% highlight c# %}
  
-      this.olapChart.VisualStyle = OlapChartVisualStyle.Transparent;
+this.olapChart.VisualStyle = OlapChartVisualStyle.Transparent;
 
 {% endhighlight %}
  
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Appearance\Visual Styles demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Appearance\Visual Styles demo

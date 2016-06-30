@@ -14,7 +14,7 @@ OlapChart control is a lightweight control that allows you to efficiently visual
 ## Key Features
 
 * **Multi-level Drill Up/Down** – Enables you to visualize a multi-level data in the chart. You can drill up/down the hierarchies natively.
-* **KPI** – Allows you to visualize the KPI Status, Trend, Goal, and value in different chart types.
+* **KPI** – Allows you to visualize the KPI Status, Trend, Goal, and Value in different chart types.
 * **Appearance** - Enables you to customize the area, axis, series, legends, and chart types easily.
 * **Zooming and Scrolling** – Allows you to zoom and scroll across the chart.
 * **Tooltip** – Allows you to visualize the data point related values in a form of Tooltip.

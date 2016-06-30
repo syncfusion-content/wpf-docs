@@ -19,9 +19,9 @@ While binding hierarchical dimensions (for example, the time dimension could inc
 
 ![](Drill-operation_images/Drill-operation_img1.png)
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Creating Reports\Reports In Code
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Creating Reports\Reports In Code
 
 ## Drill Position
 
@@ -31,21 +31,21 @@ Drill position allows the user to drill only the current position of a selected 
 
 {% highlight c# %}
 
-	dataManager.CurrentReport.DrillType = DrillType.DrillPosition;
+dataManager.CurrentReport.DrillType = DrillType.DrillPosition;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-	dataManager.CurrentReport.DrillType = DrillType.DrillPosition
+dataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 {% endhighlight %}
 
 {% endtabs %}
 
-A sample demo is available at the following link:
+A sample demo is available at the following location:
 
-[system drive]:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
  
 ## Show/Hide Expanders
  
@@ -55,13 +55,13 @@ The visibility of the expanders in the OlapChart can be toggled by using the **S
 
 {% highlight c# %}
  
-	this.olapchart1.OlapDataManager.CurrentReport.ShowExpanders = false;
+this.olapchart1.OlapDataManager.CurrentReport.ShowExpanders = false;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
   
-	Me.olapchart1.OlapDataManager.CurrentReport.ShowExpanders = False
+Me.olapchart1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 {% endhighlight %}
 
