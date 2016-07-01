@@ -55,7 +55,7 @@ To customize a ReportViewer, you have to modify the following control parts.
 * PART_buttonRefresh
 * PART_buttonViewReport
 * PART_buttonFind
-* PART_buttonback
+* PART_buttonBack
 * PART_toggleShowDetails
 * PART_textBoxTotalPages
 * PART_labelOf
