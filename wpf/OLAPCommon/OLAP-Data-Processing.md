@@ -17,7 +17,7 @@ To process the OLAP data:
 
 1. Get the input to establish a connection to the specified data source. The connection information can be given as a connection string that contains information about the data source. 
 
-   Example connection string: “DataSource = localhost; Initial Catalog = Adventure Works DW”;
+   Example connection string: “DataSource = localhost; Initial Catalog = AdventureWorksDW”;
 
 2. Connect to a server or an off-line cube as a data source.
 3. Once the connection is established, provide input for data processing. You can give two types of inputs to process the OLAP data. They are:
