@@ -11,9 +11,9 @@ documentation: ug
 
 Paging in OlapChart provides you the support to load and render large amount of data without any performance constraint.  
 
-OlapPager (User Control) is included and bound with the OlapDataManager object of the respective OlapPager (User Cotrol) is included and bound with the OlapDataManager object of the respective OlapChart. To enable paging, set the **"EnablePaging"** property to true.
+OlapPager (User Control) is included and bound with the OlapDataManager object of the respective OlapPager (User Control) is included and bound with the OlapDataManager object of the respective OlapChart. To enable paging, set the **"EnablePaging"** property to true.
 
-When you process large CellSet, it is splitted into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by using the UI options in OlapPager. You can also change the page size and other pager settings at run-time by using **PageSetting** window.
+When you process large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by using the UI options in OlapPager. You can also change the page size and other pager settings at run-time by using **PageSetting** window.
 
 Include the following Syncfusion assembly from the installed location in-order to add the OlapPager (User Control) with OlapChart.
 

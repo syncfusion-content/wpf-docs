@@ -13,7 +13,7 @@ OlapClient control for WPF provides support to browse multidimensional data that
 
 ## Key Features
 
-* **Slice and Dice**: You can slice and dice the cube data base.
+* **Slice and Dice**: You can slice and dice the cube database.
 * **Saving the current session**: You can save your current session in an XML file or as a stream for future use and reload it whenever needed.
 * **Filtering and Sorting**: You can specify filters and sorting criteria by using the UI options provided.
 * **Chart**: A Chart is a graphical representation of data, in which "the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or slices in a pie chart".
