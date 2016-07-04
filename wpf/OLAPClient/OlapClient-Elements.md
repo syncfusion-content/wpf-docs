@@ -85,7 +85,7 @@ True</td></tr>
 {{ '![](OlapClient-Elements_images/OlapClient-Elements_img5.png)' | markdownify }}
 
 </td><td>
-User Defined Heirarchy</td><td>
+User Defined Hierarchy</td><td>
 Hierarchy</td><td>
 True</td></tr>
 <tr>
@@ -93,7 +93,7 @@ True</td></tr>
 {{ '![](OlapClient-Elements_images/OlapClient-Elements_img6.png)' | markdownify }}
 
 </td><td>
-Attribute Heirarchy</td><td>
+Attribute Hierarchy</td><td>
 Hierarchy</td><td>
 True</td></tr>
 <tr>
@@ -210,7 +210,7 @@ New Report option helps the user to clear the existing report collection and to 
 
 ![](OlapClient-Elements_images/OlapClient-Elements_img21.png)
 
-By giving the required name and clicking OK, the report collection gets loaded with only one empty report with entered name. On clicking Cancel button, report creation gets cancelled.
+By giving the required name and clicking OK, the report collection gets loaded with only one empty report with entered name. On clicking Cancel button, report creation gets canceled.
 
 ### Add Report
 
@@ -220,7 +220,7 @@ Add Report option lets the user to add a report to the existing report collectio
 
 ![](OlapClient-Elements_images/OlapClient-Elements_img23.png)
 
-On clicking OK button after giving appropriate name in the respective column, a report with the entered name is added to the collection. On clicking Cancel button, report creation gets cancelled.
+On clicking OK button after giving appropriate name in the respective column, a report with the entered name is added to the collection. On clicking Cancel button, report creation gets canceled.
 
 ### Remove Report
 
@@ -236,7 +236,7 @@ Rename Report option lets the user to rename the current/active report. On click
 
 ![](OlapClient-Elements_images/OlapClient-Elements_img26.png)
 
-After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets cancelled.
+After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets canceled.
 
 ### Save Report
 
@@ -246,7 +246,7 @@ Save Report option saves the report in local system. On clicking the Save Report
 
 ![](OlapClient-Elements_images/OlapClient-Elements_img28.png)
 
-After providing appropriate name and clicking **Save**, the report will get saved in selected sysem location. Clicking Cancel button, withdraws the saving operation.
+After providing appropriate name and clicking **Save**, the report will get saved in selected system location. Clicking Cancel button, withdraws the saving operation.
 
 ### Load Report
 
