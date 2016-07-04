@@ -37,7 +37,7 @@ Me.OlapGrid1.ShowHeaderCellsToolTip = True
 
 ## Value Cell Tooltip
 
-OlapGrid provides cell information (Measure, Column Header, Row Header and Value Cell) when the mouse pointer is hovered on the value vells. It can be enabled using the following property of OlapGrid.
+OlapGrid provides cell information (Measure, Column Header, Row Header and Value Cell) when the mouse pointer is hovered on the value cells. It can be enabled using the following property of OlapGrid.
 
 {% tabs %}
   
