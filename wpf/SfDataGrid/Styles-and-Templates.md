@@ -56,7 +56,7 @@ The appearance of SfDataGrid and its inner elements can be customized by writing
  
 ## Styling Record cell
 
-The record cells can be customized by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
+The record cells can be customized by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -204,7 +204,7 @@ The foreground and background for the selected row, cell can be customized by se
 
 ### Styling Header cell
 
-The header cell can be customized by writing style of TargetType [GridHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property and the particular column can be styled by setting [GridColumn.HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~HeaderStyle.html) property.
+The header cell can be customized by writing style of TargetType [GridHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property and the particular column can be styled by setting [GridColumn.HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) property.
 
 N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` property.
 
@@ -339,7 +339,7 @@ public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 
 ## Setting Default Style for one column
 
-You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
+You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -620,7 +620,7 @@ You can also display the row index value in the row header cell by customizing i
 
 ## Template Selectors
 
-The [DataTemplateSelectors](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellTemplateSelector.html).
+The [DataTemplateSelectors](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html).
 
 Here, custom template applied to TotalPrice and CustomerID columns.
 
@@ -669,7 +669,7 @@ public class GridCellTemplateSelector : DataTemplateSelector
 
 ### Changing HeaderTemplates
 
-You can customize the appearance of particular SfDataGrid column header by setting [SfDataGrid.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~HeaderTemplate.html).
+You can customize the appearance of particular SfDataGrid column header by setting [SfDataGrid.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html).
 
 {% tabs %}
 {% highlight xaml %}
