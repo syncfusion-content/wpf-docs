@@ -4592,7 +4592,7 @@ DOLLARFR(decimal_dollar, fraction)Decimal_dollar: A decimal number.Fraction: The
 <td>
 DURATION</td><td>
 Returns the Macaulay duration for an assumed par value of $100.</td><td>
-DURATION(settlement, maturity, coupon, yld, frequency, [basis])Settlement: The security settlement date is the date after the issue date when the security is traded to the buyer.Maturity: The maturity date is the date when the security expires.Coupon: The security's annual coupon rate.Yld: The security's annual yield.Frequency: The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.Basis: The type of day count basis to use. (Optional)<table><br><tr><br><td><br>Basis</td><td>
+DURATION(settlement, maturity, coupon, yield, frequency, [basis])Settlement: The security settlement date is the date after the issue date when the security is traded to the buyer.Maturity: The maturity date is the date when the security expires.Coupon: The security's annual coupon rate.Yield: The security's annual yield.Frequency: The number of coupon payments per year. For annual payments, frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.Basis: The type of day count basis to use. (Optional)<table><br><tr><br><td><br>Basis</td><td>
 Day count basis</td></tr>
 <tr>
 <td>
