@@ -461,13 +461,13 @@ Returns a value that you can use to construct a confidence interval about a popu
 
 ### Syntax
 
-CONFIDENCE(alpha, standard_dev,size)
+CONFIDENCE(alpha, standardDeviation,size)
 
 where:
 
 alpha is the significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.
 
-standard_dev is the population standard deviation for the data range and is assumed to be known.
+standardDeviation is the population standard deviation for the data range and is assumed to be known.
 
 size is the sample size.
 
@@ -475,7 +475,7 @@ size is the sample size.
 
 * All arguments must be non-numeric. 
 * Alpha must be > 0 and < 1. 
-* Standard_dev must be > 0. 
+* standardDeviation must be > 0. 
 * Size must be >= 1.
 
 
@@ -1829,11 +1829,11 @@ Stats  : A logical value specifying whether to return additional regression stat
 
 ## LOGINV
 
-Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standard_dev. If p = LOGNORMDIST(x,...), then LOGINV(p,...) = x.
+Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standardDeviation. If p = LOGNORMDIST(x,...), then LOGINV(p,...) = x.
 
 ### Syntax
 
-LOGINV(probability, mean, standard_dev)
+LOGINV(probability, mean, standardDeviation)
 
 where:
 
@@ -1841,12 +1841,12 @@ probability is the probability associated with the lognormal distribution.
 
 mean is the mean of ln(x).
 
-standard_dev is the standard deviation of ln(x).
+standardDeviation is the standard deviation of ln(x).
 
 ### Remarks
 
 * Probability must be >= 0 and < 1. 
-* Standard_dev must be positive. 
+* standardDeviation must be positive. 
 * The inverse of the lognormal distribution function is:
 
 
@@ -1857,11 +1857,11 @@ standard_dev is the standard deviation of ln(x).
 
 ## LOGNORMDIST
 
-Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standard_dev.
+Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standardDeviation.
 
 ### Syntax
 
-LOGNORMDIST(x, mean, standard_dev)
+LOGNORMDIST(x, mean, standardDeviation)
 
 where:
 
@@ -1869,11 +1869,11 @@ x is the value where the function can be evaluated.
 
 mean is the mean of ln(x).
 
-standard_dev is the standard deviation of ln(x).
+standardDeviation is the standard deviation of ln(x).
 
 ### Remarks
 
-* Both x and standard_dev must be positive. 
+* Both x and standardDeviation must be positive. 
 * The equation for the lognormal cumulative distribution function is: 
 
 
@@ -2162,7 +2162,7 @@ Returns the normal distribution for the specified mean and standard deviation.
 
 ### Syntax
 
-NORMDIST(x, mean, standard_dev, cumulative)
+NORMDIST(x, mean, standardDeviation, cumulative)
 
 where:
 
@@ -2170,13 +2170,13 @@ x is the value for which, you want the distribution.
 
 mean is the arithmetic mean of the distribution.
 
-standard_dev is the standard deviation of the distribution.
+standardDeviation is the standard deviation of the distribution.
 
 cumulative is a logical value that determines the form of the function. If cumulative is True, NORMDIST returns the cumulative distribution function; if False, it returns the probability mass function.
 
 ### Remarks
 
-* Standard_dev must be > 0. 
+* standardDeviation must be > 0. 
 * The equation for the normal density function (cumulative = False) is: 
 
 
@@ -2195,7 +2195,7 @@ Returns the inverse of the normal cumulative distribution for the specified mean
 
 ### Syntax
 
-NORMINV(probability, mean, standard_dev)
+NORMINV(probability, mean, standardDeviation)
 
 where:
 
@@ -2203,16 +2203,16 @@ probability is a probability corresponding to the normal distribution.
 
 mean is the arithmetic mean of the distribution.
 
-standard_dev is the standard deviation of the distribution.
+standardDeviation is the standard deviation of the distribution.
 
 ### Remarks
 
 * Probability must be >= 0 and <= 1. 
-* standard_dev must be > 0. 
+* standardDeviation must be > 0. 
 
 
 
-Given a value for probability, NORMINV seeks value x such that NORMDIST(x, mean, standard_dev, True) = probability. NORMINV uses an iterative search technique.
+Given a value for probability, NORMINV seeks value x such that NORMDIST(x, mean, standardDeviation, True) = probability. NORMINV uses an iterative search technique.
 
 ## NormsDist
 
@@ -3027,11 +3027,11 @@ number is the number for which you want the square root.
 ## STANDARDIZE
 
 
-Returns a normalized value from a distribution characterized by mean and standard_dev.
+Returns a normalized value from a distribution characterized by mean and standardDeviation.
 
 ### Syntax
 
-STANDARDIZE(x, mean, standard_dev)
+STANDARDIZE(x, mean, standardDeviation)
 
 where:
 
@@ -3039,11 +3039,11 @@ x is the value that you want to normalize.
 
 mean is the arithmetic mean of the distribution.
 
-standard_dev is the standard deviation of the distribution.
+standardDeviation is the standard deviation of the distribution.
 
 ### Remarks
 
-* standard_dev must be > 0. 
+* standardDeviation must be > 0. 
 * The equation for the normalized value is:
 
 
@@ -3629,11 +3629,11 @@ The VarP function returns population variance of the listed values.
 
 ### Syntax:
 
-VarP(listofvalues)
+VarP(list)
 
 where,
 
-* listofvalues provides the range or values that contain the population.
+* list provides the range or values that contain the population.
 
 ## VARPA
 
