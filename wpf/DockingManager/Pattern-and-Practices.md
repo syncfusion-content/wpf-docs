@@ -121,7 +121,7 @@ Following this approach, the docking adapter can also be treated as a normal ite
 
 ## Practice with PRISM
 
-The following steps helps to create sample project in the PRISM.
+The following steps helps to create sample project in the PRISM 5.0.
 
 1.Create a New WPF project and add the following references to the solution project.
 
@@ -462,5 +462,343 @@ End Class
 Then when run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
 ![](PatternandPractices_images/PatternandPractices_img5.jpeg)
+
+## Configuring DockingManager with Prism 6.1
+
+`Prism` is a practice of building loosely coupled applications in WPF. It is intended to provide flexibility for testing and maintaining applications that are maintained in long term.
+
+### PRISM 6.1
+
+Essential WPF controls are flexible with all the `Prism` versions. This section explains about creating a simple application using `DockingManager` in `PRISM 6.1` pattern. 
+
+### Setting up WPF application
+
+1.Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MinWindows.xaml.cs as Shell.xaml.cs.
+  
+2.Rename the class name MainWindow as Shell in all the occurrences. 
+ 
+3.Add reference to the following assemblies
+
+* Prism
+* Prism.WPF
+* Prism.Unity.WPF
+* Microsoft.Practices.ServiceLocation
+* Microsoft.Practices.Unity
+* Microsoft.Practices.Unity.Configuration
+* Microsoft.Practices.Unity.RegistrationByConvention
+
+4.In the Shell.xaml file, add the namespace definition for Prism Library as given below:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window x:Class="DockingManagerPrism.App.MainWindow "
+
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+xmlns:prism="http://prismlibrary.com/"
+
+Title="MainWindow" Height="350" Width="525">
+
+</Window>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+5.Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `DockingManager` control.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager prism:RegionManager.RegionName="MainRegion" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
+
+### Setting up the Bootstrapper
+
+1.Create and add a class file for the Bootstrapper to the project.
+ 
+2.Add the following using statements to the class that are referred by Bootstrapper.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using System.Windows;
+
+using Microsoft.Practices.Unity;
+
+using Prism.Unity;
+
+using Prism.Modularity;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3.Create a class Bootstrapper and inherit it from UnityBootstrapper.
+
+4.Override the methods CreateShell, InitializeShell and ConfigureModuleCatalog as given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override DependencyObject CreateShell()
+
+{
+
+return Container.Resolve<Shell>();
+
+}
+
+protected override void InitializeShell()
+
+{
+
+Application.Current.MainWindow.Show();
+
+}
+
+protected override void ConfigureModuleCatalog()
+
+{
+
+ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
+
+// Need to add the module catalogs here
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+5.Remove the StartUpUri in App.xaml file and override the OnStartUp method in App.xaml.cs file. In that instantiate the Bootstrapper and run it as given below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void OnStartup(StartupEventArgs e)
+
+{
+
+base.OnStartup(e);
+
+Bootstrapper bootstrapper = new Bootstrapper();
+
+bootstrapper.Run();
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding modules to the project
+
+1.Create as many ClassLibrary projects for the modules. Here three class libraries are created for three modules.
+
+2.Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<UserControl x:Class="Program.ProgramView"
+
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+mc:Ignorable="d"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+syncfusion:DockingManager.Header="Program.cs"
+
+syncfusion:DockingManager.State="Document"
+
+d:DesignHeight="300" d:DesignWidth="200">
+
+<Grid>
+
+<StackPanel Orientation="Vertical">
+
+<TextBlock Text="using System;"/>
+
+<TextBlock Text="using System.Windows;"/>
+
+<TextBlock Text="using System.Windows.Controls;"/>
+
+<TextBlock Text="using System.Windows.Data;"/>
+
+<TextBlock Text="using System.Text;"/>
+
+<TextBlock Text=""/>
+
+<TextBlock Text="namespace Program"/>
+
+<TextBlock Text=" {"/>
+
+<TextBlock Text="     public class MyProgram"/>
+
+<TextBlock Text=" {"/>
+
+<TextBlock Text=""/>
+
+<TextBlock Text=" }"/>
+
+<TextBlock Text="}"/>
+
+</StackPanel>
+
+</Grid>
+
+</UserControl>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3.Create a class file implementing IModule interface in all the module projects. Using Initialize method add the created view to the regions of region name set for DockingManager (“MainRegion”).
+
+4.Add all the modules as reference projects in main application. Add all modules to catalog in Bootstrapper.cs as given below
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void ConfigureModuleCatalog()
+
+{
+
+ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
+
+catalog.AddModule(typeof(SolutionExplorer.SolutionExplorerModule));
+
+catalog.AddModule(typeof(Toolbox.ToolboxModule));
+
+catalog.AddModule(typeof(Program.ProgramModule));
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Create RegionAdapter for DockingManager
+
+So far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
+
+Create a Class library project for defining the region adapter and the class should inherit from RegionAdapterBase class. In that override the methods, Adapt and CreateRegion. In adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
+
+{
+
+public DockingManagerRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory)
+
+: base(regionBehaviorFactory)
+
+{
+
+}
+
+protected override void Adapt(IRegion region, DockingManager regionTarget)
+
+{
+
+region.Views.CollectionChanged += delegate
+
+{
+
+foreach (var child in region.Views.Cast<UserControl>())
+
+{
+
+if (!regionTarget.Children.Contains(child))
+
+{
+
+regionTarget.BeginInit();
+
+regionTarget.Children.Add(child);
+
+regionTarget.EndInit();
+
+}
+
+}
+
+};
+
+}
+
+protected override IRegion CreateRegion()
+
+{
+
+return new AllActiveRegion();
+
+}
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Configure the region adapter mappings
+
+Add reference to RegionAdapter project from the main application. Region adapter mapping have to be performed in Bootstrapper class. Override the method ConfigureRegionAdapterMappings and set the mapping as given below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override Prism.Regions.RegionAdapterMappings ConfigureRegionAdapterMappings()
+
+{
+
+RegionAdapterMappings regionAdapterMappings = base.ConfigureRegionAdapterMappings();
+
+if (regionAdapterMappings != null)
+
+{
+
+regionAdapterMappings.RegisterMapping(typeof(DockingManager), Container.Resolve<DockingManagerRegionAdapter.DockingManagerRegionAdapter>());
+
+}
+
+return regionAdapterMappings;
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The final output of application is given below:
+
+![](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
 
