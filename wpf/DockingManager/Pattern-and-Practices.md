@@ -473,7 +473,7 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 
 ### Setting up WPF application
 
-1.Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MinWindow.xaml.cs as Shell.xaml.cs.
+1.Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MainWindow.xaml.cs as Shell.xaml.cs.
   
 2.Rename the class name MainWindow as Shell in all the occurrences. 
  
