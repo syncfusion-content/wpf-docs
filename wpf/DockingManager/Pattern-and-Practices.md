@@ -473,7 +473,7 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 
 ### Setting up WPF application
 
-1.Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MinWindows.xaml.cs as Shell.xaml.cs.
+1.Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MinWindow.xaml.cs as Shell.xaml.cs.
   
 2.Rename the class name MainWindow as Shell in all the occurrences. 
  
@@ -555,6 +555,10 @@ using Prism.Modularity;
 
 {% highlight C# %}
 
+public class Bootstrapper: UnityBootstrapper 
+
+{
+
 protected override DependencyObject CreateShell()
 
 {
@@ -578,6 +582,8 @@ protected override void ConfigureModuleCatalog()
 ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
 
 // Need to add the module catalogs here
+
+}
 
 }
 
@@ -675,9 +681,41 @@ d:DesignHeight="300" d:DesignWidth="200">
 
 {% endtabs %}
 
-3.Create a class file implementing IModule interface in all the module projects. Using Initialize method add the created view to the regions of region name set for DockingManager (“MainRegion”).
+3.Create a class implementing IModule interface for all the modules in their project. Using Initialize method register the view to the region using region name(“MainRegion”).
 
-4.Add all the modules as reference projects in main application. Add all modules to catalog in Bootstrapper.cs as given below
+{% tabs %}
+
+{% highlight C# %}
+
+public class ProgramModule : IModule
+
+{
+
+private readonly IRegionManager regionManager;
+
+public ProgramModule(IRegionManager regionManager)
+
+{
+
+this.regionManager = regionManager;
+
+}
+
+public void Initialize()
+
+{
+
+regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgamView));
+
+}
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+4.Add all the modules as reference projects in main application. Add all modules module to catalog in Bootstrapper.cs as given below
 
 {% tabs %}
 
@@ -705,7 +743,7 @@ catalog.AddModule(typeof(Program.ProgramModule));
 
 So far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
 
-Create a Class library project for defining the region adapter and the class should inherit from RegionAdapterBase class. In that override the methods, Adapt and CreateRegion. In adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+Create a ClassLibrary project for defining the region adapter and the class should inherit from RegionAdapterBase class. In that override the methods, Adapt and CreateRegion. In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
 
 {% tabs %}
 
