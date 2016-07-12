@@ -151,7 +151,7 @@ Sample Output
 
 ## Color Scales
 
-To apply the conditional format based on color scales, define the conditional format type as a **ColorScale** and specify the other properties associated with ColorScale such as condtion count,color criteria etc.,to the specified cell or range. Finally,invalidate that cells to update the view.
+To apply the conditional format based on color scales, define the conditional format type as a **ColorScale** and specify the other properties associated with ColorScale such as condition count,color criteria etc.,to the specified cell or range. Finally,invalidate that cells to update the view.
 
 {% highlight c# %}
 

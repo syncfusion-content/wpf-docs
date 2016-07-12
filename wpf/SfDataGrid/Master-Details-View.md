@@ -1088,7 +1088,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 {% endhighlight %}
 {% endtabs %}
 
-When the column is resized in parent DataGrid column, then the new [Width](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~Width.html) is set to corresponding column of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) based on the [ColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~ColumnIndex.html) argument in [ResizingColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ResizingColumns_EV.html) event.
+When the column is resized in parent DataGrid column, then the new [Width](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~Width.html) is set to corresponding column of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) based on the [ColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~ColumnIndex.html) argument in [ResizingColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ResizingColumns_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1251,7 +1251,7 @@ var detailsViewDataGrid = this.dataGrid.GetDataGrid();
 
 ### Getting the SelectedItem, SelectedItems and SelectedIndex of DetailsViewDataGrid
 
-You can access the selected record or records and selected record index of `DetailsViewDataGrid` by using [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItem.html), [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItems.html) and [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedIndex.html) properties directly.
+You can access the selected record or records and selected record index of `DetailsViewDataGrid` by using [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html), [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) and [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) properties directly.
 
 {% tabs %}
 {% highlight c# %}
@@ -1262,7 +1262,7 @@ var selectedItems = detailsViewDataGrid.SelectedItems;
 {% endhighlight %}
 {% endtabs %}
 
-You can access DetailsViewDataGrid’s [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItem.html), [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItems.html) and [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedIndex.html) properties by using parent dataGrid’s `SelectedDetailsViewGrid` property also.
+You can access DetailsViewDataGrid’s [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html), [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) and [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) properties by using parent dataGrid’s `SelectedDetailsViewGrid` property also.
 
 {% tabs %}
 {% highlight c# %}
@@ -1326,7 +1326,7 @@ In [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid
 
 #### Selecting records
 
-You can select the particular record by using [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItem.html) property.
+You can select the particular record by using [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1341,7 +1341,7 @@ void dataGrid_DetailsViewLoading (object sender, DetailsViewLoadingAndUnloadingE
 
 Here, the record in first row is selected in `DetailsViewDataGrid`.
 
-You can also select the particular record by using [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedIndex.html) property.
+You can also select the particular record by using [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1355,7 +1355,7 @@ void dataGrid_DetailsViewLoading (object sender, DetailsViewLoadingAndUnloadingE
 
 Here, the record in first position is selected in `DetailsViewDataGrid`.
 
-You can select multiple records by using [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectedItems.html) property.
+You can select multiple records by using [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) property.
 
 You can refer [here](#handling-events-for-detailsviewdatagrid) to know about handling events for `DetailsViewDataGrid`.
 

@@ -60,7 +60,7 @@ this.dataGrid.Columns["CustomerID"].AllowGrouping = true;
 {% endtabs %}
 
 
-N> takes higher priority than [SfDataGrid.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowGrouping.html).
+N> [GridColumn.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowGroupingProperty.html) takes higher priority than [SfDataGrid.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowGrouping.html).
 
 ![](Grouping_images/Grouping_img1.png)
 
