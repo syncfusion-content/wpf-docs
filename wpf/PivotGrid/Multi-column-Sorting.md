@@ -147,4 +147,4 @@ public partial class MainWindow: Window {
 
 Similarly, we can perform 'n' number of sorting in RowPivotsOnly mode by pressing Ctrl key.
 
-![](Features-in-RowPivotsOnly/Multi column sort in RowPivots.png)
+![](Features-in-RowPivotsOnly-images/Multi column sort in RowPivots.png)
