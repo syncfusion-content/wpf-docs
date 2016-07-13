@@ -51,7 +51,7 @@ You can add a DataBar to the Report Designer using the following steps.
 
 9. Then the DataBar will converted into the chart.
 
-   ![](Draw-DataBar-Report-Item_imagesDraw-DataBar-Report-Item_img11.png)
+   ![](Draw-DataBar-Report-Item_images/Draw-DataBar-Report-Item_img11.png)
 
 10. To delete the DataBar, right click and select delete.
 
