@@ -339,7 +339,7 @@ public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 
 ## Setting Default Style for one column
 
-You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
+You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -620,7 +620,7 @@ You can also display the row index value in the row header cell by customizing i
 
 ## Template Selectors
 
-The [DataTemplateSelectors](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html).
+The [DataTemplateSelectors](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html).
 
 Here, custom template applied to TotalPrice and CustomerID columns.
 
