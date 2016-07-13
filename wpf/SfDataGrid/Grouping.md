@@ -77,7 +77,7 @@ Each CaptionSummaryRow carries information about a particular group like group n
 
 SfDataGrid allows you to group the data programmatically by adding or removing [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) collection.
 
-For example, if you want to group the OrderID column programmatically, define its [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~MappingName.html) to [ColumnName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~ColumnName.html) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
+For example, if you want to group the OrderID column programmatically, define its [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) to [ColumnName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~ColumnName.html) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
 
 
 {% tabs %}
