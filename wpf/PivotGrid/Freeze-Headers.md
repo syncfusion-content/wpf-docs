@@ -81,7 +81,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Freeze-headers-images/PivotGrid with freeze headers.png)
+![](Freeze-headers-images/PivotGrid with freezed headers.png)
 
 _PivotGrid when freeze headers enabled_
 
