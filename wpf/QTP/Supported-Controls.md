@@ -94,8 +94,7 @@ int col, int count</td><td>
 void</td></tr>
 <tr>
 <td>
-voi
-d InsertRows(int row, int count)</td><td>
+void InsertRows(int row, int count)</td><td>
 Inserts the row by using Count and Target parameters.</td><td>
 int row, int count</td><td>
 void</td></tr>
@@ -439,7 +438,7 @@ To Set the CurrentCell.</th><th>
 void</th></tr>
 <tr>
 <td>
-void GroupColumn(strin columnName);</td><td>
+void GroupColumn(string columnName);</td><td>
 To Group the Column.</td><td>
 String columnName</td><td>
 void</td></tr>

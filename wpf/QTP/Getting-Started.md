@@ -120,8 +120,8 @@ To create a new test
 
    N>
 
-   * Whenever the user performs any action involving the Syncfusion control used in the application, the Syncfusion.cfg file maps the control to the corresponding DLL.
-   * Finally, the DLL renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed. 
+   * Whenever the user performs any action involving the Syncfusion control used in the application, the Syncfusion.cfg file maps the control to the corresponding assembly.
+   * Finally, the assembly renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed. 
    * these method names are then recorded and displayed in the screen behind the running application, as illustrated in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img12.png)
@@ -171,7 +171,7 @@ The editing of a test can be done either in the Keyword view or in the Expert vi
 
 This view is especially provided for the experts in VB Script. In the Expert view, the VB scripts are generated while recording. You can also manually write scripts to the existing scripts in this view. So, this view can be used as a tool for managing the testing process in a more controlled manner. You can add scripts to trigger events manually. 
 
-The following screenshot illustartes adding a script line to the Expert View pane.
+The following screenshot illustrates adding a script line to the Expert View pane.
 
 ![](Getting-Started_images/Getting-Started_img15.png)
 
