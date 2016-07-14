@@ -56,7 +56,7 @@ The appearance of SfDataGrid and its inner elements can be customized by writing
  
 ## Styling Record cell
 
-The record cells can be customized by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
+The record cells can be customized by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -339,7 +339,7 @@ public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 
 ## Setting Default Style for one column
 
-You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
+You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) to null. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`). 
 
 {% tabs %}
 {% highlight xaml %}
