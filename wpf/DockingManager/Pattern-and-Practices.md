@@ -715,7 +715,7 @@ regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgamView));
 
 {% endtabs %}
 
-4.Add all the modules as reference projects in main application. Add all modules module to catalog in Bootstrapper.cs as given below
+4.Add all the modules as reference projects in main application. Add all modules to module catalog in Bootstrapper.cs as given below
 
 {% tabs %}
 
