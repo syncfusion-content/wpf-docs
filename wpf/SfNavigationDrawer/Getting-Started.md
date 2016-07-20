@@ -63,13 +63,11 @@ XX.X460.0.X
 
 Add the following namespace in your XAML window.
 
-{% tabs %}
 {% highlight xml %}
       
       xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 {% endhighlight %}
-{% endtabs %}
 
 ## Add SfNavigationDrawer from Toolbox
 
@@ -88,17 +86,13 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 
 You need to initialize the NavigationDrawer represented by the following class Syncfusion.UI.Xaml.NavigationDrawer.
 
-{% tabs %}
 {% highlight xml %}
         
-        <syncfusion:SfNavigationDrawer>
-        
-        
-        
-        </syncfusion:SfNavigationDrawer> 
+			<syncfusion:SfNavigationDrawer>
+			
+			</syncfusion:SfNavigationDrawer> 
 
 {% endhighlight %}
-{% endtabs %}
 
 ## Adding contentview to the NavigationDrawer
 
