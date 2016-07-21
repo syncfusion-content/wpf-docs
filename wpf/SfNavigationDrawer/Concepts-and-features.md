@@ -142,6 +142,7 @@ Gets or sets the threshold value from the edges for easy panning from the edges.
 	drawer.TouchThreshold = 25d;
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Animation Duration
 
@@ -158,6 +159,7 @@ Gets or sets the TimeSpan value, by which the DrawerContent can be brought to vi
 	drawer.AnimationDuration = 100;
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Position
 
