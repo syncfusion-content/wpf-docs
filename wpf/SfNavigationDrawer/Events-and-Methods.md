@@ -16,7 +16,7 @@ The below two events are implemented in Transition.
 
 ## Opened
 
-Opened event will be raised when the drawercontentview is opened in NavigationDrawer.
+Opened event will be raised when the DrawerContentView is opened in NavigationDrawer.
 
  
   {% highlight c# %}
@@ -27,7 +27,7 @@ Opened event will be raised when the drawercontentview is opened in NavigationDr
 
 ## Closed
 
-Closed event will be raised when the drawercontentview is closed in NavigationDrawer.
+Closed event will be raised when the DrawerContentView is closed in NavigationDrawer.
 
 
 {% highlight c# %}
