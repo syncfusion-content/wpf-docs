@@ -11,19 +11,19 @@ documentation: ug
 
 The following section helps you to build your application with SfNavigationDrawer.
 
-##Steps
+## Steps
 
 * Create new WPF project using Visual Studio.
 * Add the SfNavigationDrawer assembly to your application.
-* Initialize Navigationdrawer control.
-* Adding contentview to the navigationdrawer control.
-* Adding drawerview to the navigationdrawer control.
+* Initialize NavigationDrawer control.
+* Adding content view to the NavigationDrawer control.
+* Adding drawer view to the NavigationDrawer control.
 
 These steps were explained below for XAML.
 
-##Create a simple Navigationdrawer from XAML
+## Create a simple NavigationDrawer from XAML
 
-###Adding assembly reference
+### Adding assembly reference
 
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > Syncfusion.SfNavigationDrawer.WPF.
@@ -69,6 +69,7 @@ Add the following namespace in your XAML window.
 
 {% endhighlight %}
 
+
 ## Add SfNavigationDrawer from Toolbox
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
@@ -94,7 +95,7 @@ You need to initialize the NavigationDrawer represented by the following class S
 
 {% endhighlight %}
 
-## Adding contentview to the NavigationDrawer
+## Adding content view to the NavigationDrawer
 
 {% highlight xml %}
 
@@ -113,7 +114,7 @@ You need to initialize the NavigationDrawer represented by the following class S
 
 {% endhighlight %}
 
-## Adding drawerview to the NavigationDrawer
+## Adding drawer view to the NavigationDrawer
 
 The DrawerView is a panel that is the hidden content, brought to the view by manipulations like panning or swiping through the edges. The DrawerView has three sections namely:
 
@@ -152,5 +153,6 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img5.png)                       
+![](Getting-Started_images/Getting-Started_img5.png)    
+                   
 
