@@ -11,7 +11,7 @@ documentation: ug
 
 The following section helps you to build your application with SfNavigationDrawer.
 
-##Steps
+## Steps
 
 * Create new WPF project using Visual Studio.
 * Add the SfNavigationDrawer assembly to your application.
@@ -21,9 +21,9 @@ The following section helps you to build your application with SfNavigationDrawe
 
 These steps were explained below for XAML.
 
-##Create a simple Navigationdrawer from XAML
+## Create a simple Navigationdrawer from XAML
 
-###Adding assembly reference
+### Adding assembly reference
 
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > Syncfusion.SfNavigationDrawer.WPF.
@@ -68,6 +68,7 @@ Add the following namespace in your XAML window.
       xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 {% endhighlight %}
+
 
 ## Add SfNavigationDrawer from Toolbox
 
@@ -152,5 +153,6 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img5.png)                       
+![](Getting-Started_images/Getting-Started_img5.png)    
+                   
 
