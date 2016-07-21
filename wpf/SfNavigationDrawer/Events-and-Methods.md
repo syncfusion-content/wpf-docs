@@ -7,14 +7,14 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-#Events
+# Events
 
 The below two events are implemented in Transition.
 
 * Opened
 * Closed
 
-##Opened
+## Opened
 
 Opened event will be raised when the drawercontentview is opened in NavigationDrawer.
 
@@ -25,7 +25,7 @@ Opened event will be raised when the drawercontentview is opened in NavigationDr
         
    {% endhighlight %}
 
-##Closed
+## Closed
 
 Closed event will be raised when the drawercontentview is closed in NavigationDrawer.
 
@@ -36,9 +36,9 @@ Closed event will be raised when the drawercontentview is closed in NavigationDr
 	
 {% endhighlight %}
 
-#Methods
+# Methods
 
-##Toggle Drawer
+## Toggle Drawer
 
 Represents the opening and closing of the navigation drawer
 
