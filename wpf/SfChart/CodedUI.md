@@ -36,7 +36,7 @@ CUIT generates code from recorded session. Create specialized class to access Cu
 
 Coded UI provides support only in,
 
-* Visual studio Premium
+* Visual Studio Premium
 * Visual Studio Enterprise
 * Visual Studio Ultimate
 

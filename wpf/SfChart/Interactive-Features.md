@@ -178,7 +178,7 @@ N> The tooltip by default will be displayed for 1000 milliseconds.
 
 **Show** **Delay**
 
-ToolTip also has support for delay the time to display by setting [`SetIntialShowDelay`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html#) property in milliseconds.
+ToolTip also has support for delay the time to display by setting [`SetInitialShowDelay`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html#) property in milliseconds.
 
 The following code example demonstrates the tooltip will be delayed for 1 second at the before display.
 
@@ -281,7 +281,7 @@ The Trackball is composed of the following parts.
 
 ### Vertical Line
 
-The vertical line in the trackball is visible when you initialize the TrackBallBevior.If you want to collapse the visibility of the trackball line then you have to set ShowLine to false.
+The vertical line in the trackball is visible when you initialize the TrackBallBehavior.If you want to collapse the visibility of the trackball line then you have to set ShowLine to false.
 
 The following code snippet illustrates the collapsing the visibility of trackball line.
 
@@ -1217,7 +1217,7 @@ The following code snippet demonstrates hand cursor in segment selection.
 
 ### Adornment Selection:
 
-SfChart provides selection for adornments by definnig [`HighlightOnSelection`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HighlightOnSelection.html#) property which allows you to select the segment or series with the corresponding adornments.
+SfChart provides selection for adornments by defining [`HighlightOnSelection`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HighlightOnSelection.html#) property which allows you to select the segment or series with the corresponding adornments.
 
 **HighlightOnSelection**
 
@@ -1486,7 +1486,7 @@ Cross hair is composed of the following parts.
 
 If you add [`ChartCrossHairBehavior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html#) to chart you can see horizontal and vertical lines.The horizontal and vertical lines can be customized using [`HorizontalLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior~HorizontalLineStyle.html#) and [`VerticalLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior~VerticalLineStyle.html#) properties.
 
-**HorizontaLineStyle**
+**HorizontalLineStyle**
 
 The following code snippet demonstrates the line style for horizontal line in cross hair.
 

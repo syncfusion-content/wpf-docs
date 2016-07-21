@@ -607,14 +607,14 @@ The following are the customizing options in [`EdgeLabelsDrawingMode`](http://he
 
 **EdgeLabelsVisibilityMode**
 
-The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) property. By default the default option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibiltyMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) while zooming.
+The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) property. By default the default option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) while zooming.
 
 ![](Axis_images/Axis_img23.jpeg)
 
 
 **Always** **Visible**
 
-AlwaysVisible option in [`EdgeLabelsVisibiltyMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is used to view the edge labels even while performing zooming.
+AlwaysVisible option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is used to view the edge labels even while performing zooming.
 
 The following code example and image demonstrates the AlwaysVisible option while zooming.
 
@@ -1164,7 +1164,7 @@ In [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfus
 
 **Customizing** **the** **Range**
 
-[`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Minimum.html#) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Maximum.html#) properties behvaior is same as in NumericalAxis instead of setting numerical value, you have to set date time values.
+[`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Minimum.html#) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Maximum.html#) properties behavior is same as in NumericalAxis instead of setting numerical value, you have to set date time values.
 
 {% highlight xaml %}
 
