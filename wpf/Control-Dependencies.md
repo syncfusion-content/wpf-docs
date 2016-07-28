@@ -229,6 +229,11 @@ Syncfusion.SfInput.WPF</td><td>
 Syncfusion.SfShared.WPF</td></tr>
 <tr>
 <td>
+SfSpellChecker</td><td>
+Syncfusion.SfSpellChecker.WPF</td><td>
+Syncfusion.SpellChecker.Base</td></tr>
+<tr>
+<td>
 SfDomainUpDown</td><td>
 Syncfusion.SfInput.WPF</td><td>
 Syncfusion.SfShared.WPF</td></tr>
