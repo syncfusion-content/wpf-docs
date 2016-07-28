@@ -37,7 +37,6 @@ this.dataGrid.AllowGrouping = true;
 {% endhighlight %}
 {% endtabs %}
 
-
 You can enable or disable grouping on particular column by setting the [GridColumn.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowGroupingProperty.html) property.
 
 
@@ -394,7 +393,35 @@ Now , assign the GroupDateTimeConverter into [GroupColumnDescription.Converter](
 
 You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied. You can download sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGroupingDemo541349132.zip).
 
- 
+### Sorting Inner Records 
+
+In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~SortGroupRecords.html)
+sorted based on the column name described in [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid.GroupColumnDescriptions>
+    <syncfusion:GroupColumnDescription ColumnName="SickLeaveHours"
+                                    Converter="{StaticResource customGrouping}"
+                                    SortGroupRecords="True" />
+</syncfusion:SfDataGrid.GroupColumnDescriptions>
+{% endhighlight %}
+{% highlight c# %}
+GroupColumnDescription groupColumnDesc = new GroupColumnDescription()
+        {
+            ColumnName = "SickLeaveHours",
+            Converter = new CustomGroupingConverter(),
+            SortGroupRecords = true
+        };
+sfDataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
+{% endhighlight %}
+{% endtabs %}
+
+In the below screenshot customgrouping is applied based on SickLeaveHours column and the inner records in each group are sorted based on SickLeaveHours value.
+
+
+![](Grouping_images/Grouping_img10.png)
+
 ## Sorting CaptionSummaryRows by Aggregate
 
 

@@ -22,7 +22,7 @@ Usage
 </tr>
 <tr>
 <td>
-VirtualizingCollectionView
+Data Virtualization
 </td>
 <td>
 Use to load large amount of data in less time.
@@ -62,9 +62,25 @@ Use to load data in on-demand. You can load data only for current page from serv
 </tr>
 </table>
 
+## Data Virtualization
+
+You can load large amount of data in less time by setting [SfDataGrid.EnableDataVirtualization](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EnableDataVirtualization.html) property to true. This property virtualize the data for all type of collection in SfDataGrid.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding EmployeeDetails}"
+                       EnableDataVirtualization="True">
+{% endhighlight %}
+{% highlight c# %}
+this.datagrid.EnableDataVirtualization = true;
+{% endhighlight %}
+{% endtabs %}
+
 ## VirtualizingCollectionView
  
-You can load the large amount of data in less time using [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
+You can load the large amount of data in less time in another way using [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
 
 In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
 
