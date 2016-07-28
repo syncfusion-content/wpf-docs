@@ -420,7 +420,7 @@ sfDataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
 In the below screenshot customgrouping is applied based on SickLeaveHours column and the inner records in each group are sorted based on SickLeaveHours value.
 
 
-![](Grouping_images/Grouping_img9.png)
+![](Grouping_images/Grouping_img10.png)
 
 ## Sorting CaptionSummaryRows by Aggregate
 
