@@ -264,7 +264,7 @@ sfmultiColumn.ItemsSource = viewmodel.Orders;
 
 [DisplayMember](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~DisplayMember.html) denotes the path to a value on the data object for visual presentation of the selected object in editor and [ValueMember](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ValueMember.html) denotes the path to a value on the data object for [SelectedValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedValue.html). 
 
-Refer [here](#Data-Binding) to know more about the `DisplayMember` and `ValueMember`.
+Refer [here](http://help.syncfusion.com/wpf/sfmulticolumndropdown/data-binding) to know more about the `DisplayMember` and `ValueMember`.
 
 ## Defining Columns
 
