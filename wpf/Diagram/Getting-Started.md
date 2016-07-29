@@ -119,11 +119,11 @@ DiagramControl can be created in two ways,
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
 
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
+xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
 <Grid Name="diagramgrid">
 
-<sfdiagram:DiagramControl></sfdiagram:DiagramControl>
+<Diagram:DiagramControl></Diagram:DiagramControl>
 
 </Grid>
 
@@ -166,13 +166,13 @@ SymbolPalette can be enabled in two ways,
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
 
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
+xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
 <Grid Name="diagramgrid">
 
-<sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
+<Diagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-</sfdiagram:DiagramControl>
+</Diagram:DiagramControl>
 
 </Grid>
 
@@ -218,19 +218,19 @@ DiagramModel can be created and assigned to DiagramControl’s View Property usi
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
 
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
+xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
     <Grid Name="diagramgrid">
 
-        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
+        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-           <sfdiagram:DiagramControl.Model>
+           <Diagram:DiagramControl.Model>
 
-                <sfdiagram:DiagramModel></sfdiagram:DiagramModel>
+                <Diagram:DiagramModel></Diagram:DiagramModel>
 
-            </sfdiagram:DiagramControl.Model>
+            </Diagram:DiagramControl.Model>
 
-        </sfdiagram:DiagramControl>
+        </Diagram:DiagramControl>
 
     </Grid>
 
@@ -289,27 +289,27 @@ DiagramView can be created and assigned to DiagramControl’s View Property usin
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
 
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
+xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
     <Grid Name="diagramgrid">
 
-        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
+        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            <sfdiagram:DiagramControl.Model>
+            <Diagram:DiagramControl.Model>
 
-                <sfdiagram:DiagramModel></sfdiagram:DiagramModel>
+                <Diagram:DiagramModel></Diagram:DiagramModel>
 
-            </sfdiagram:DiagramControl.Model>
+            </Diagram:DiagramControl.Model>
 
 
 
-            <sfdiagram:DiagramControl.View>
+            <Diagram:DiagramControl.View>
 
-                <sfdiagram:DiagramView ></sfdiagram:DiagramView>
+                <Diagram:DiagramView ></Diagram:DiagramView>
 
-            </sfdiagram:DiagramControl.View>
+            </Diagram:DiagramControl.View>
 
-        </sfdiagram:DiagramControl>
+        </Diagram:DiagramControl>
 
     </Grid>
 
@@ -428,27 +428,27 @@ The following code shows how the Model property can be applied to the Diagram co
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="420" Width="600"
 
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
+xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
     <Grid Name="diagramgrid">
 
-        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
+        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            <sfdiagram:DiagramControl.Model>
+            <Diagram:DiagramControl.Model>
 
-                <sfdiagram:DiagramModel x:Name="diagramModel">
+                <Diagram:DiagramModel x:Name="diagramModel">
 
-                </sfdiagram:DiagramModel>
+                </Diagram:DiagramModel>
 
-            </sfdiagram:DiagramControl.Model>
+            </Diagram:DiagramControl.Model>
 
-            <sfdiagram:DiagramControl.View>
+            <Diagram:DiagramControl.View>
 
-                <sfdiagram:DiagramView></sfdiagram:DiagramView>
+                <Diagram:DiagramView></Diagram:DiagramView>
 
-            </sfdiagram:DiagramControl.View>
+            </Diagram:DiagramControl.View>
 
-        </sfdiagram:DiagramControl>
+        <Diagram:DiagramControl>
 
     </Grid>
 
@@ -524,19 +524,19 @@ The following code illustrates adding a Diagram View to the Diagram control.
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
 
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
+xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
     <Grid Name="diagramgrid">
 
-        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
+        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            <sfdiagram:DiagramControl.View>
+            <Diagram:DiagramControl.View>
 
-                <sfdiagram:DiagramView ></sfdiagram:DiagramView>
+                <Diagram:DiagramView ></Diagram:DiagramView>
 
-            </sfdiagram:DiagramControl.View>
+            </Diagram:DiagramControl.View>
 
-        </sfdiagram:DiagramControl>
+        </Diagram:DiagramControl>
 
     </Grid>
 
@@ -1071,7 +1071,7 @@ The following code shows how the automatic layout can be generated.
 
 				Title="Radial Tree Layout Demo" WindowState="Normal"
 
-				WindowStartupLocation="CenterScreen" Name="mainwindow"
+				WindowStartupLocation="CenterScreen" Name="MainWindow"
 
 				xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
 
@@ -1123,7 +1123,7 @@ The following code shows how the automatic layout can be generated.
 
 
 
-			Style s = (Style)this.Resources["{x:Type sfdiagram:Node}"];
+			Style s = (Style)this.Resources["{x:Type Diagram:Node}"];
 
 
 
@@ -1231,7 +1231,7 @@ The following code shows how the automatic layout can be generated.
 
 
 
-				Private s As Style = CType(Me.Resources("{x:Type sfdiagram:Node}"), Style)
+				Private s As Style = CType(Me.Resources("{x:Type Diagram:Node}"), Style)
 
 
 
@@ -1462,7 +1462,7 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 					Title="Radial Tree Layout Demo" WindowState="Normal"
 
-					WindowStartupLocation="CenterScreen" Name="mainwindow"
+					WindowStartupLocation="CenterScreen" Name="MainWindow"
 
 					xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
 
