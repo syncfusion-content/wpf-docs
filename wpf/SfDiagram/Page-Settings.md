@@ -55,7 +55,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
 
-![](Page-Settings_images/Page-Settings_img2.jpeg)
+![](Page-Settings_images/Page_Settings_img2.jpeg)
 
 ![](Page-Settings_images/Page-Settings_img3.jpeg)
 
