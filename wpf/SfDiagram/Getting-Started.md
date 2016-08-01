@@ -134,7 +134,7 @@ Added node will be displayed in diagram as shown below.
  ![](Getting-Started_images\Getting_Started_flowDiagram_img2.jpg)
  
 ###Common Style for nodes and Connectors
-Default values for all Nodes and Connectors can be set using Common Style for Node and Connector. For example if all Nodes have same apperance, we can move such properties into Commom Style.
+Default values for all Nodes and Connectors can be set using Common Style for Node and Connector. For example if all Nodes have same appearance, we can move such properties into Common Style.
  {% highlight xaml %}
 <!--Common Style for ConnectorViewModel-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
