@@ -146,7 +146,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images/Automatic_Layouts_img1.jpeg)
+![](Automatic-Layouts_images/Automatic-Layouts_img1.jpeg)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a Node’s children and the way to arrange (Orientation, Type etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -265,7 +265,7 @@ The Radial-Tree Layout is a specification of the Directed Tree Layout Manager th
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_img9.jpeg)
+![](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
 
 ###Updating the Layout
 
@@ -306,4 +306,4 @@ diagramcontrol.LayoutManager = new LayoutManager()
 
 {% endhighlight %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_img10.jpeg)
+![](Automatic-Layouts_images/Automatic-Layouts_img10.jpg)
