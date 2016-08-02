@@ -105,7 +105,7 @@ Header row is present in top of the SfDataGrid which has column headers in it. C
 
 ![](Rows_images/Rows_img7.png)
 
-You can change the header row height by setting [SfDataGrid.HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderRowHeight.html) property.
+You can change the header row height by setting [SfDataGrid.HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
 
 ### Hiding Header row
 
