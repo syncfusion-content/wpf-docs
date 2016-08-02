@@ -1504,7 +1504,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ### Hiding header row of Master-Details View
 
-You can hide the header row of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by setting [HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderRowHeight.html) property.
+You can hide the header row of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by setting [HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
 
 {% tabs %}
 {% highlight xaml %}
