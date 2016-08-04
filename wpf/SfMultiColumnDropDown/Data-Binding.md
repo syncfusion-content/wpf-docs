@@ -1,262 +1,99 @@
 ---
 layout: post
-title: Data Binding| SfMultiColumnDropDownControl | Wpf | Syncfusion
-description: data binding
+title: Data Binding support in SfMultiColumnDropDownControl.
+description: How to bind the data in SfMultiColumnDropDownControl.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
-In order to display the data in the SfMultiColumnDropDown control, bind the data into the control by using ItemsSource property.
-
-The following code example illustrates how bind the itemsSource to the SfMulticolumnDropDownControl in XAML.
-{% highlight xaml %}
-
-
-
-
-<Window.DataContext>
-
-<local:Viewmodel/>
-
-</Window.DataContext>
-
-
-
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
-
-ItemsSource="{Binding EmpDetails}"
-
-DisplayMember="Name"
-
-ValueMember="Designation"                                             
-
->
-										   {% endhighlight %}
-
-The following screenshot illustrates the output of the above code.
-
-![](Features_images/Features_img1.png)
-
-
-
-### Binding Collection in CodeBehind
-
-The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in code behind.
-
-{% highlight C# %}
- 
-
-public MainWindow()
-
-{
-
-  InitializeComponent();  
-
- sfmulticolumn.ItemsSource = new ObservableCollection<Data>
-
-{
-
-new Data(){Name="Stephen", Designation="Softwareengineer"},City="Washington",Country="USA"
-
-
-
-new Data(){Name="Michael", Designation= "AccountsManager"}, City="Parris",Country="France"
-
-
-
-new Data(){Name="Mike", Designation= "Senior AccountsManager "}, City="Rom",Country="Italy"
-
-
-
-new Data(){Name="Maxwell", Designation= "WebDesigner"}, City="CapeTown",Country="SouthAfrica"
-
-};    
-
- sfmulticolumn.DisplayMember="Name";
-
- sfmulticolumn.ValueMember="Designation";
-
-}
-{% endhighlight %}
-
-
-The following screenshot illustrates the output for SfMultiColumnDropDownControl.
-
-![](Features_images/Features_img2.png)
-
-
-
-### Complex Property Binding
-
-SfMultiColumnDropDownControl allows you to bind the Complex property to its column. For example, Data class contains “customerDetails” as Customer class type. It also contains Name and Designation property. The column for the complex property is defined in the format of “Property.Member”.
-
-The following code example illustrate how to bind Complex property in SfMultiColumnDropDownControl,
+You can populate the drop down list for SfMultiColumnDropDownControl by setting [ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ItemsSource.html) property.
+[DisplayMember](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~DisplayMember.html) denotes the path to a value on the data object for visual presentation of the Textbox and [ValueMember](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ValueMember.html) denotes the path to a value on the data object to get the [SelectedValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedValue.html). 
 
 {% tabs %}
-{% highlight C# %}
-
-
-
-public class Data:INotifyPropertyChanged
-
-    {
-
-       public string name;
-
-       public string designation;
-
-       public string city;
-
-       public string country;
-
-       Customer customer = new Customer();
-
-       public event PropertyChangedEventHandler PropertyChanged;
-
-
-
-       public Customer customerDetails
-
-       {
-
-           get { return customer; }
-
-           set { customer = value; }
-
-
-
-       }
-
-
-
-       public string Name
-
-       {
-
-           get { return name; }
-
-           set { name = value; RaisePropertyChanged("Name"); 
-
-           }
-
-       }
-
-       public string Designation
-
-       {
-
-           get { return designation; }
-
-           set { designation = value;RaisePropertyChanged("Designation"); 
-
-           }
-
-       }
-
-        public string City
-
-        {
-
-            get { return city; }
-
-            set { city = value; RaisePropertyChanged("City"); }
-
-        }
-
-
-
-        public string Country
-
-        {
-
-            get { return country; }
-
-            set { country = value; RaisePropertyChanged("Country"); }
-
-        }
-
-
-
-        protected virtual void RaisePropertyChanged(string propertyName)
-
-        {
-
-            var handler = PropertyChanged;
-
-            if (handler != null)
-
-                handler(this, new PropertyChangedEventArgs(propertyName));
-
-        }
-
-
-
-     public Data(string _name,string _designation,string _city,string _country)
-
-       {
-
-           this.Name = _name;
-
-           this.customerDetails.Name = _name;
-
-           this.customerDetails.Designation = _designation;
-
-           this.City = _city;
-
-           this.Country = _country;
-
-       }
-
-
-
-    }
+{% highlight xml %}
+<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+                                         Width=”175”
+                                         Height=”30”
+                                         Grid.Row="0"
+                                         SelectedIndex=”0”
+                                         DisplayMember=”Title”
+                                         ValueMember=”OrderID”
+                                         ItemsSource=”{Binding Orders}” />
+        <StackPanel Grid.Row="1" Margin="100,0,0,0">
+    <TextBlock FontSize="16" Text="SelectedItem (Display Member) " />
+    <TextBlock FontSize="22"
+               FontWeight="Bold"
+               Text="{Binding ElementName= sfmultiColumn,
+                              Mode=TwoWay,
+                              Path=SelectedItem.Title}" />
+    <TextBlock FontSize="16" Text="SelectedValue (Value Member) " />
+    <TextBlock FontSize="22"
+               FontWeight="Bold"
+               Text="{Binding ElementName= sfmultiColumn,
+                              Mode=TwoWay,
+                              Path=SelectedValue}" />
+</StackPanel>
+</Grid>
 {% endhighlight %}
+{% endtabs %}
 
 
-{% highlight xaml %}
+Here, `DisplayMember` is `Title` hence the Title property in underlying data object is displayed in the textbox and the `ValueMember` is `OrderID` hence the OrderID property in underlying data object is considered as the `SelectedValue`.
 
+![](Data-Binding_images/Data-Binding_img1.png)
 
+## Binding with complex and indexer properties
 
+SfMultiColumnDropDownControl provides support to display complex and indexer properties in its columns and also you can set complex and indexer properties as path to `DisplayMember` and `ValueMember` properties.
 
-	<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
+Binding with complex properties
 
-	   SelectedIndex="1"
-
-	   AutoGenerateColumns="False"
-
-	   ItemsSource="{Binding EmpDetails}"
-
-	   DisplayMember="Name"
-
-	   ValueMember="City"                                                                                           
-
-			 >
-
-	<syncfusion:SfMultiColumnDropDownControl.Columns>
-
-	<syncfusion:Columns>
-
-	<syncfusion:GridTextColumn MappingName="Name" />
-
-	<syncfusion:GridTextColumn MappingName="customerDetails.Designation" />
-
-	<syncfusion:GridTextColumn MappingName="City" />
-
-	<syncfusion:GridTextColumn MappingName="Country" />
-
-	</syncfusion:Columns>
-
-	</syncfusion:SfMultiColumnDropDownControl.Columns>
-
+{% tabs %}
+{% highlight xml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+                                         Width=”175”
+                                         Height=”30”
+                                         SelectedIndex=”0”
+                                         AutoGenerateColumns=”false”
+                                         DisplayMember=”ProductDetails.ProductID”
+                                         ValueMember=”ProductDetails.ProductID”
+                                         ItemsSource=”{Binding Orders}”>
+    <syncfusion:SfMultiColumnDropDownControl.Columns>
+        <syncfusion:GridTextColumn MappingName=”OrderID” />
+        <syncfusion:GridTextColumn MappingName=”ProductDetails.ProductID” />
+        <syncfusion:GridTextColumn MappingName=”CustomerID” />
+        <syncfusion:GridTextColumn MappingName=”Country” />
+    </syncfusion:SfMultiColumnDropDownControl.Columns>
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% endtabs %}
-The following screenshot illustrates the output for Complex property binding in SfMultiColumnDropDownControl.
 
-![](Features_images/Features_img3.png)
+Binding with indexer properties
 
-
-
+{% tabs %}
+{% highlight xml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+                                         Width=”175”
+                                         Height=”30”
+                                         SelectedIndex=”0”
+                                         AutoGenerateColumns=”false”
+                                         DisplayMember=”Country[0]”
+                                         ValueMember=”Country[0]”
+                                         ItemsSource=”{Binding Orders}”>
+    <syncfusion:SfMultiColumnDropDownControl.Columns>
+        <syncfusion:GridTextColumn MappingName=”OrderID” />
+        <syncfusion:GridTextColumn MappingName=”ProductID” />
+        <syncfusion:GridTextColumn MappingName=”CustomerID” />
+        <syncfusion:GridTextColumn MappingName=”Country[0]” />
+    </syncfusion:SfMultiColumnDropDownControl.Columns>
+</syncfusion:SfMultiColumnDropDownControl>
+{% endhighlight %}
+{% endtabs %}

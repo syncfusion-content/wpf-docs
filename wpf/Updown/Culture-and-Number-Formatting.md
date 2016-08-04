@@ -123,11 +123,11 @@ The `NumberFormatInfo` can be set for the `UpDown` control as shown in the follo
 ![](CultureandNumberFormatting-images/CultureandNumberFormatting-img3.jpeg)
 
 
-## GroupSeperatorEnabled
+## GroupSeparatorEnabled
 
-`GroupSeperatorEnabled` feature helps to add the separator for the groups in the value of the `UpDown` control. By default its value is `false`.
+`GroupSeparatorEnabled` feature helps to add the separator for the groups in the value of the `UpDown` control. By default its value is `false`.
 
-The following code example explains to set the `GroupSeperatorEnabled` for the `UpDown` control:
+The following code example explains to set the `GroupSeparatorEnabled` for the `UpDown` control:
 
 {% tabs %}
 

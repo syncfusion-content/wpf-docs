@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theming| OLAP Chart | Wpf | Syncfusion
+title: Theming| OlapChart | Wpf | Syncfusion
 description: Theming
 platform: wpf
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
@@ -23,35 +23,24 @@ Theming is the process of applying particular settings to the visual elements of
 * Office 2003
 * Default
 
-###  Properties
+The **VisualStyle** property allows the user to set the visual style of the OlapChart control. The following code sample demonstrate how theming is added to the OlapChart control.
 
-* **VisualStyle** - Gets or sets the VisualStyle of the OLAPChart control. 
+{% tabs %}
 
-### Sample Link
+{% highlight xaml %}
 
-A demo is available in the following location:
+<syncfusion:OlapChart  x:Name="olapChart" VisualStyle="Transparent"/> 
 
-&lt;InstalledDrive&gt;:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapChart.WPF\Samples\Appearance\Skin Customization Demo
+{% endhighlight %}
 
-### Adding Theming to an Application 
-
-The following code snippets demonstrate how theming is added to the OLAPChart control.
-
- {% highlight xaml %}
-
-   
-
-      <syncfusion:OlapChart  x:Name="olapChart" VisualStyle="Transparent"/> 
-
- {% endhighlight %}
-
-
-
- {% highlight c# %}
+{% highlight c# %}
  
-   
+this.olapChart.VisualStyle = OlapChartVisualStyle.Transparent;
 
+{% endhighlight %}
+ 
+{% endtabs %}
 
-       this.olapChart.VisualStyle = OlapChartVisualStyle.Transparent;
+A sample demo is available at the following location:
 
- {% endhighlight %}
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Appearance\Visual Styles demo

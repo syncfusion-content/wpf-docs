@@ -17,7 +17,9 @@ The `SnapConstraints` property of SnapSettings enables you to show/hide the grid
 
 {% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram" Height="400" Width="400">
+<!--Initialize SfDiagram-->
+<diagram:SfDiagram x:Name="diagram"> 
+  <!--Initialize SnapSettings-->		
   <diagram:SfDiagram.SnapSettings>
     <diagram:SnapSettings SnapConstraints="ShowLines"/>
   </diagram:SfDiagram.SnapSettings>
@@ -27,8 +29,7 @@ The `SnapConstraints` property of SnapSettings enables you to show/hide the grid
 
 {% highlight C# %}
 
-diagram.Width = 400;
-diagram.Height = 400;
+//Shows both Horizontal and Vertical Gridlines
 diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
@@ -43,17 +44,54 @@ You can customize the appearance of the gridlines by using a set of predefined p
 
 {% highlight C# %}
 
-Style blue =new Style(typeof(Path));
-blue.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Blue)));
-blue.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 2 })); 
-
-Gridlines gridlines = new Gridlines()
+//Creates collection for the style.
+public class Gridlinestyle : List<Style>
 {
-	Strokes = new List<Style>() { blue }
-};
 
-diagram.SnapSettings.HorizontalGridlines = gridlines;
-diagram.SnapSettings.VerticalGridlines = gridlines;
+}
+	
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Style for HorizontalGridlines-->
+<local:Gridlinestyle x:Key="Horizontalgridline">
+	<Style TargetType="Path">
+    	<Setter Property="Stroke" Value="Blue" ></Setter>
+        <Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+<!--Style for VerticalGridlines-->
+<local:Gridlinestyle x:Key="Verticalgridline">
+	<Style TargetType="Path">
+		<Setter Property="Stroke" Value="Blue" ></Setter>
+    	<Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagramcontrol">
+	<syncfusion:SfDiagram.SnapSettings>
+    	<syncfusion:SnapSettings SnapConstraints="ShowLines">
+        	<!--Initialize HorizontalGridlines-->
+              	<syncfusion:SnapSettings.HorizontalGridlines>
+                	<syncfusion:Gridlines Strokes="{StaticResource Horizontalgridline}">
+                	</syncfusion:Gridlines>
+				</syncfusion:SnapSettings.HorizontalGridlines>
+                 
+			<!--Initialize VerticalGridlines-->
+            <syncfusion:SnapSettings.VerticalGridlines>
+            	<syncfusion:Gridlines Strokes="{StaticResource Verticalgridline}">
+                </syncfusion:Gridlines>
+            </syncfusion:SnapSettings.VerticalGridlines>
+		</syncfusion:SnapSettings>
+   </syncfusion:SfDiagram.SnapSettings>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -67,22 +105,74 @@ The following code example illustrates how to customize the thickness of lines a
 
 {% highlight C# %}
 
-diagram.Width = 400;
-diagram.Height = 400;
-diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
-
-Style blue =new Style(typeof(Path));
-blue.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Blue)));
-blue.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 2 })); 
-
-Gridlines gridlines = new Gridlines()
+//Creates collection for the style.
+public class Gridlinestyle : List<Style>
 {
-	Strokes = new List<Style>() { blue },
-	LinesInterval = new List<double>() { 1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15 }
-};
 
-diagram.SnapSettings.HorizontalGridlines = gridlines;
-diagram.SnapSettings.VerticalGridlines = gridlines;
+}
+
+//Creates collection for the double values.
+public class Intervals : List<double>
+{
+
+}
+	
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initializes the double collection-->
+<local:Intervals x:Key="Intervals">
+	<sys:Double>1.25</sys:Double>
+    <sys:Double>14</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+    <sys:Double>0.25</sys:Double>
+    <sys:Double>15</sys:Double>
+ </local:Intervals>
+
+<!--Style for HorizontalGridlines-->
+<local:Gridlinestyle x:Key="Horizontalgridline">
+	<Style TargetType="Path">
+    	<Setter Property="Stroke" Value="Blue" ></Setter>
+        <Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+<!--Style for VerticalGridlines-->
+<local:Gridlinestyle x:Key="Verticalgridline">
+	<Style TargetType="Path">
+		<Setter Property="Stroke" Value="Blue" ></Setter>
+    	<Setter Property="StrokeDashArray" Value="2"></Setter>
+	</Style>
+</local:Gridlinestyle>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagramcontrol">
+	<syncfusion:SfDiagram.SnapSettings>
+    	<syncfusion:SnapSettings SnapConstraints="ShowLines">
+        	<!--Initialize HorizontalGridlines-->
+              	<syncfusion:SnapSettings.HorizontalGridlines>
+                	<syncfusion:Gridlines Strokes="{StaticResource Horizontalgridline}" LinesInterval="{StaticResource Intervals}">
+                	</syncfusion:Gridlines>
+				</syncfusion:SnapSettings.HorizontalGridlines>
+                 
+			<!--Initialize VerticalGridlines-->
+            <syncfusion:SnapSettings.VerticalGridlines>
+            	<syncfusion:Gridlines Strokes="{StaticResource Verticalgridline}" LinesInterval="{StaticResource Intervals}">
+                </syncfusion:Gridlines>
+            </syncfusion:SnapSettings.VerticalGridlines>
+		</syncfusion:SnapSettings>
+   </syncfusion:SfDiagram.SnapSettings>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -98,6 +188,7 @@ Snapping to gridlines can be enabled/disabled with the SnapConstraints property 
 
 {% highlight C# %}
 
+//Enables snapping to both the horizontal and vertical lines.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 {% endhighlight %}
@@ -116,8 +207,10 @@ The following code illustrates how to enable/disable the smart guide.
 
 {% highlight C# %}
 
+//Enables or disables the default behaviors of the Snapping in SfDiagram.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.All;
 
+//Disables the default behaviors snapping Nodes/Connectors to objects.
 diagram.SnapSettings.SnapToObject = SnapToObject.None;
 
 {% endhighlight %}

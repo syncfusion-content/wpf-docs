@@ -94,7 +94,7 @@ Description</th></tr>
 <td>
 PageIndexChanging</td><td>
  OldPageIndex  NewPageIndex Cancel</td><td>
-Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel{{ '__' | markdownify }}to true.</td></tr>
+Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel {{ '__' | markdownify }} to true.</td></tr>
 <tr>
 <td>
 PageIndexChanged</td><td>
@@ -165,11 +165,11 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 In an OnDemandLoading event, you can use the LoadDynamicItems method to load the data for the corresponding page.
 
-N> In OnDemand paging, you cannot assign a value for the Source property.
+N> In OnDemandPaging, you cannot assign a value for the Source property.
 
 
 
-The following steps help you to achieve an onDemand loading with the SfDataPager control.
+The following steps help you to achieve an OnDemandLoading with the SfDataPager control.
 
 1. Set the UseOnDemandPaging property to true.
 2. Set the PageCount value for the SfDataPager control.
@@ -781,10 +781,10 @@ void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs arg
 
 SfDataPager supports the following UIAutomation,
 
-* CodedUI
+* Coded UI
 * Quick Test Professional
 
-### CodedUI
+### Coded UI
 
 
 SfDataPager supports CodedUITest automation that helps you to create an automation test with SfDataPager elements and record the sequence of actions.
@@ -842,7 +842,7 @@ SfDataPager</td><td>
 
 ### Quick Test Professional
 
-SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
+SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name with Syncfusion namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 The following screenshot displays the QTP Test for SfDataPager
 
 ![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)

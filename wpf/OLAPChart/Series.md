@@ -1,377 +1,205 @@
 ---
 layout: post
-title: Series| OLAP Chart | Wpf | Syncfusion
+title: Series| OlapChart | Wpf | Syncfusion
 description: Series
 platform: wpf
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
+
 # Series
 
-Series are the data points plotted in the rectangular co-ordinate system. In this section the following topics will be discussed:
+Series are the data points plotted in the rectangular co-ordinate system.
 
-## Series customization quick reference
+## Point Label
 
+Point label provides information about the data point. Data point can be added to a series by using the following code sample:
 
+{% tabs %}
 
-<table>
-<tr>
-<th>
-Chart Type</th><th>
-Series Stroke</th><th>
-Series Stroke Thickness</th><th>
-Series Interior</th></tr>
-<tr>
-<td>
-{{ 'Column/Bar/Area' | markdownify }}</td><td>
-Affects the border color of the series.</td><td>
-Affects the border thickness of the series.</td><td>
-Affects the series color.</td></tr>
-<tr>
-<td>
-{{ 'Line/Spline' | markdownify }}</td><td>
-No effect</td><td>
-Affects the thickness of the particular line (series).</td><td>
-Affects the color of the particular line (series).</td></tr>
-<tr>
-<td>
-{{ 'Pie' | markdownify }}</td><td>
-Affects the border color of the series.</td><td>
-Affects the border thickness of the series.</td><td>
-No effect</td></tr>
-</table>
+{% highlight c# %}
 
-
-
-## How to display a point label in an OlapChart?
-
-Point label provides information about the data point. Data point can be added to a series by using the following code snippet:
-  {% highlight c# %}
-
-   
-
-
-
-for(int i=0; i< this.olapchart1.Series.Count; i++)
-{
-    //// Setting the visibility of adornment.
-    this.olapchart1.Series[i].AdornmentsInfo.Visible = true;
-
-    //// Setting horizontal alignment
-    this.olapchart1.Series[i].AdornmentsInfo.SegmentHorizontalAlignment = 
-
-System.Windows.HorizontalAlignment.Right;
-
-    //// Makes the segment out from the series.
-    this.olapchart1.Series[i].AdornmentsInfo.SegmentIsOut = true;
-
-    this.olapchart1.Series[i].AdornmentsInfo.SegmentLabelContent = 
-
-LabelContent.LabelContentPath;
-
-
-    this.olapchart1.Series[i].AdornmentsInfo.SegmentLabelFontSize = 12;
-    this.olapchart1.Series[i].AdornmentsInfo.SegmentLabelRotation = 325;
+for(int i=0; i< this.olapChart.Series.Count; i++)
+{ 
+    //// Setting the visibility of adornment.
+    this.olapChart.Series[i].AdornmentsInfo.Visible = true;
+    //// Setting horizontal alignment
+    this.olapChart.Series[i].AdornmentsInfo.SegmentHorizontalAlignment = System.Windows.HorizontalAlignment.Right;
+    //// Makes the segment out from the series.
+    this.olapChart.Series[i].AdornmentsInfo.SegmentIsOut = true;
+    this.olapChart.Series[i].AdornmentsInfo.LabelContentPath = "DataPoint.Y";
+    this.olapChart.Series[i].AdornmentsInfo.SegmentLabelFontSize = 12;
+    this.olapChart.Series[i].AdornmentsInfo.SegmentLabelRotation = 325;
 }
 
-    {% endhighlight %}
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-
-
-  {% highlight vbnet %}
-
-    
-
-
-
-For i As Integer = 0 To Me.olapchart1.Series.Count - 1
-
-' Setting the visibility of adornment.
-
-Me.olapchart1.Series(i).AdornmentsInfo.Visible = True
-
-
-
-' Setting horizontal alignment
-
-Me.olapchart1.Series(i).AdornmentsInfo.SegmentHorizontalAlignment = System.Windows.HorizontalAlignment.Right
-
-
-
-' Makes the segment out from the series.
-
-Me.olapchart1.Series(i).AdornmentsInfo.SegmentIsOut = True
-
-
-
-Me.olapchart1.Series(i).AdornmentsInfo.SegmentLabelContent = LabelContent.LabelContentPath
-
-Me.olapchart1.Series(i).AdornmentsInfo.SegmentLabelFontSize = 12
-
-Me.olapchart1.Series(i).AdornmentsInfo.SegmentLabelRotation = 325
-
+For i As Integer = 0 To Me.olapChart.Series.Count - 1
+    ' Setting the visibility of adornment.
+    Me.olapChart.Series(i).AdornmentsInfo.Visible = True
+    ' Setting horizontal alignment
+    Me.olapChart.Series(i).AdornmentsInfo.SegmentHorizontalAlignment = System.Windows.HorizontalAlignment.Right
+    ' Makes the segment out from the series.
+    Me.olapChart.Series(i).AdornmentsInfo.SegmentIsOut = True
+    Me.olapChart.Series(i).AdornmentsInfo.LabelContentPath = "DataPoint.Y"
+    Me.olapChart.Series(i).AdornmentsInfo.SegmentLabelFontSize = 12
+    Me.olapChart.Series(i).AdornmentsInfo.SegmentLabelRotation = 325
 Next i
 
-    {% endhighlight %}
+{% endhighlight %}
 
+{% endtabs %}
 
+The following screen-shot shows an OlapChart with Point Labels enabled:
 
+![](Series_images/Series_img1.png)
 
+## Color Customization
 
-The following figure shows an OlapChart with PointLabels enabled:
+You can set a custom color for each series in the OlapChart. To apply different colors to different series iterate through the series and apply the custom brush to the series.
 
-![](Core-Features_images/Core-Features_img4.png)
+{% tabs %}
 
+{% highlight c# %}
 
+this.olapChart.Series[0].Interior = Brushes.Orange;
 
-## How to customize the chart series color?
+{% endhighlight %}
 
-You can set a custom color for each series in the OlapChart. The following code snippet explains this. To apply different colors to different series iterate through the series and apply the custom brush to the series.
+{% highlight vbnet %}
 
-  {% highlight c# %}
+Me.olapChart.Series(0).Interior = Brushes.Orange
 
-   
+{% endhighlight %}
 
+{% endtabs %}
 
+## Border Customization
 
-       this.olapChart1.Series[0].Interior = Brushes.Orange;
+You can customize the thickness of the series border of an OlapChart by using the following code sample:
 
-    {% endhighlight %}
+{% tabs %}
 
-
-
-
-  {% highlight vbnet %}
-
+{% highlight c# %}
     
+this.olapchart.Series[0].Stroke = Brushes.Black;
+this.olapChart.Series[0].StrokeThickness = 4;
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-      Me.olapChart1.Series(0).Interior = Brushes.Orange
+Me.olapChart.Series(0).Stroke = Brushes.Black
+Me.olapChart.Series(0).StrokeThickness = 4
 
-    {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-
-## How to customize the series border properties?
-
-You can customize the thickness of the series border of an OlapChart by using the following code snippet:
-
-  {% highlight c# %}
-
-  
-
-
-
-       this.olapchart1.Series[0].Stroke = Brushes.Black;
-       this.olapchart1.Series[0].StrokeThickness = 4;
-
-    {% endhighlight %}
-
-
-
-
-  {% highlight vbnet %}
-
-   
-
-
-
-Me.olapchart1.Series(0).Stroke = Brushes.Black
-
-Me.olapchart1.Series(0).StrokeThickness = 4
-
-    {% endhighlight %}
-
-
+{% endtabs %}
 
 N> The behavior of the series border will vary for different chart types. The following illustration describes them in detail.
 
-The series border is applied for the first series of a Column chart by using the StrokeThickness property. Notice that the first series element is surrounded with the applied border.
+The series border is applied for the first series of a Column chart by using the **StrokeThickness** property. Notice that the first series element is surrounded with the applied border.
 
-![](Core-Features_images/Core-Features_img5.png)
+![](Series_images/Series_img2.png)
 
+Notice the variation. The same series border property is applied for a series in the Line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
 
-Notice the variation. The same series border property is applied for a series in the line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
+![](Series_images/Series_img3.png)
 
-![](Core-Features_images/Core-Features_img6.png)
+Since, you know that the Pie chart renders everything in a single series each block in the Pie chart known as segments will have the border applied on them. This is described in the following illustration:
 
+![](Series_images/Series_img4.png)
 
-Since, you know that the pie chart renders everything in a single series each block in the pie chart known as segments will have the border applied on them. This is described in the following illustration:
+## Custom Data Templates
 
-![](Core-Features_images/Core-Features_img7.png)
-
-
-## How to customize the series with custom data templates?
-
-Series can be customized with user defined data templates. The following sample usage describes how to apply a data template to the series in an OlapChart.
+Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to the series in an OlapChart.
 
 The following data template will be used to customize the series:
 
-  {% highlight xaml %}
+{% tabs %}
 
-  
-
-
+{% highlight xaml %}
 
 <DataTemplate x:Key="ColumnTemplate">
-                <Canvas Name="myCanvas">
-                    <Grid Name="OuterGrid" 
-
-Canvas.Left="{Binding X}" 
-
-Width="{Binding Width}" 
-
-Height="{Binding ElementName=myCanvas, 
-
-Path=ActualHeight}" >
-                        <Border Name="ColumnRect"                           VerticalAlignment="Bottom"                           Width="{Binding Width}" Height="{Binding Height}"                          CornerRadius="8,8,0,0" Background="{Binding Interior}">
-                        </Border>
-                    </Grid>
-                </Canvas>
+  <Canvas Name="myCanvas">
+     <Grid Name="OuterGrid" Canvas.Left="{Binding X}" Width="{Binding Width}" 
+           Height="{Binding ElementName=myCanvas, Path=ActualHeight}" >
+           <Border Name="ColumnRect" VerticalAlignment="Bottom"   Width="{Binding Width}" Height="{Binding Height}" 
+               CornerRadius="8,8,0,0" Background="{Binding Interior}">
+           </Border>
+     </Grid>
+  </Canvas>
 </DataTemplate>
 
-    {% endhighlight %}
+{% endhighlight %}
 
+{% highlight c# %}
 
+for (int i = 0; i < this.olapchart1.Series.Count; i++)
+{
+    //Apply Series Template to display the series cylindrical style.
+    this.olapchart1.Series[i].Template = this.Resources["ColumnTemplate"] as DataTemplate;
+    //Apply Series Interior to display the series in different colors.
+    this.olapchart1.Series[i].Interior = App.Current.Resources["SeriesInterior" + i] as LinearGradientBrush;
+}
 
+{% endhighlight %}
 
+{% highlight vbnet %}
 
+For i As Integer = 0 To Me.olapchart1.Series.Count - 1
+    'Apply Series Template to display the series cylindrical style
+    Me.olapchart1.Series(i).Template = TryCast(Me.Resources("ColumnTemplate"), DataTemplate)
+    'Apply Series Interior to display the series in different colors.
+    Me.olapchart1.Series(i).Interior = TryCast(App.Current.Resources("SeriesInterior" & i), LinearGradientBrush)
+Next i
 
-
-
-The following code snippet explains how to use a data template for a series:
-
-{% tabs %}
-  {% highlight c# %}
-
-   
-
-
-
-       for (int i = 0; i < this.olapchart1.Series.Count; i++)
-       {
-           //Apply Series Template to display the series cylindrical style
-           this.olapchart1.Series[i].Template = 
-
-this.Resources["ColumnTemplate"] as DataTemplate;
-
-
-           // Apply Series Interior to display the series in different colors.
-           this.olapchart1.Series[i].Interior = 
-
-App.Current.Resources["SeriesInterior" + i] as LinearGradientBrush;
-       }
-
-    {% endhighlight %}
-
-
-
-
-  {% highlight vbnet %}
-
-    
-
-
-
-       For i As Integer = 0 To Me.olapchart1.Series.Count - 1
-
-           'Apply Series Template to display the series cylindrical style
-
-Me.olapchart1.Series(i).Template = TryCast(Me.Resources("ColumnTemplate"), DataTemplate)
-
-
-
-           ' Apply Series Interior to display the series in different colors.
-
-           Me.olapchart1.Series(i).Interior = TryCast(App.Current.Resources("SeriesInterior" & i), LinearGradientBrush)
-
-
-
-       Next i
-
-    {% endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
+A sample demo is available at the following location:
 
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
 
-A sample, which demonstrates all the series customization, can be found in the following installation location:
+## Event
 
-..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
+**ChartMouseEventArgs** are the arguments returned when the mouse events are triggered by the ChartSeries. **ChartMouseEventArgs** return the segment on which the mouse events are triggered along with the default mouse event args. This event args can be used to perform customization of a segment when a mouse event is encountered. The segment returns different values that can be used to perform calculations or operations.
 
-## How to customize series thickness for line?
-
-Series thickness in a line chart is the StrokeThickness. 
-
-See the topic How to customize the series border properties, for more information.
-
-## How to handle ChartMouseEventArgs
-
-ChartMouseEventArgs are the arguments returned when the mouse events are triggered by the ChartSeries. ChartMouseEventArgs return the segment on which the mouse events are triggered along with the default mouse event args. This event args can be used to perform customization of a segment when a mouse event is encountered. The segment returns different values that can be used to perform calculations or operations.
-
-The following code snippet demonstrates how the ChartMouseEventArgs can be used to retrieve information on the ChartSeries segment:
+The following code sample demonstrates how the **ChartMouseEventArgs** can be used to retrieve information on the ChartSeries segment:
 
 {% tabs %}
-  {% highlight c# %}
 
-   
+{% highlight c# %}
 
-//// Event tagging
-
+//// Event Tagging
 this.olapchart1.Series[0].MouseClick += new ChartMouseEventHandler(series_MouseClick);
-
-
-
 //// Mouse click event for a series.
 void series_MouseClick(object sender, ChartMouseEventArgs e)
 {
-    ChartPoint point = (ChartPoint)e.Segment.CorrespondingPoints[0].DataPoint;
-    MessageBox.Show("X = " + point.X.ToString() + "\n" + "Y = " + point.Y.ToString());
+    ChartPoint point = (ChartPoint)e.Segment.CorrespondingPoints[0].DataPoint;
+    MessageBox.Show("X = " + point.X.ToString() + "\n" + "Y = " + point.Y.ToString());
 }
 
-    {% endhighlight %}
+{% endhighlight %}
 
+{% highlight vbnet %}
 
-
-
-
-  {% highlight vbnet %}
-
-   
-
-
-
-' Event tagging
-
+' Event Tagging
 AddHandler olapchart1.Series(0).MouseClick, AddressOf series_MouseClick
-
-
-
-
-
 ' Mouse click event for a series.
-
 Private Sub series_MouseClick(ByVal sender As Object, ByVal e As ChartMouseEventArgs)
-
-Dim point As ChartPoint = CType(e.Segment.CorrespondingPoints(0).DataPoint, ChartPoint)
-
-MessageBox.Show("X = " & point.X.ToString() & Constants.vbLf & "Y = " & point.Y.ToString())
-
+    Dim point As ChartPoint = CType(e.Segment.CorrespondingPoints(0).DataPoint, ChartPoint)
+    MessageBox.Show("X = " & point.X.ToString() & Constants.vbLf & "Y = " & point.Y.ToString())
 End Sub
 
-    {% endhighlight %}
+{% endhighlight %}
+
 {% endtabs %}
 
-
-
-
-
-![](Core-Features_images/Core-Features_img8.png)
-
+![](Series_images/Series_img5.png)
 
 {% seealso %}
 
@@ -379,178 +207,101 @@ End Sub
 
 {% endseealso %}
 
-### How to enable chart animations
+## Chart Animation
 
-Animations can be added in the OlapChart control. It can be achieved through the following properties: SeriesAnimateOption, SeriesAnimateOneByOne, EnableSeriesAnimation,and SeriesAnimationDuration for each chart series.
-
-### Properties
+Animations can be added in the OlapChart control. It can be achieved through the following properties:
 
 * **SeriesAnimateOption** - Gets or sets animation for each series
 * **SeriesAnimateOneByOne** - Gets or sets whether each series animate one by one. By default false.
 * **EnableSeriesAnimation** - Gets or sets whether enable animation for each series.
 * **SeriesAnimationDuration** - Gets or sets the animation duration for each series.
 
-#### Sample Link
+We can use the following code sample for enabling Chart animations: 
 
-The samples can be found in the following location:
+{% tabs %}
 
-C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
+{% highlight xaml %}
 
-### Adding Chart Animation Support to an Application 
+<syn:OlapChart ChartType="{Binding OlapChartType}" Name="olapChart"   
+    OlapDataManager="{Binding DataManager}" Grid.Row="1"  
+    Background="Transparent" ColorPalette="Metro"      
+    SeriesAnimateOption="Bottom"  
+    SeriesAnimateOneByOne="true"        
+    EnableSeriesAnimation="true"
+    SeriesAnimationDuration="00:00:3" />
 
-We can use the following code sample for enabling chart animations: 
+{% endhighlight %}
 
-  {% highlight xaml %}
-
-
-
-  <syn:OlapChart ChartType="{Binding OlapChartType}" Name="olapChart1"   
-
-            OlapDataManager="{Binding DataManager}" Grid.Row="1"  
-
-            Background="Transparent" ColorPalette="Metro"      
-
-            SeriesAnimateOption="Bottom"  
-
-            SeriesAnimateOneByOne="true"        
-
-            EnableSeriesAnimation="true"
-
-            SeriesAnimationDuration="00:00:3" />
-
-    {% endhighlight %}
-
-
-
-			  {% highlight c# %}
-
-   
+{% highlight c# %}
 
 // To set the Series Animate Option to Bottom in OlapChart.
-
-this.olapChart1.SeriesAnimateOption = Syncfusion.Windows.Chart.AnimationOptions.Bottom;
-
-
-
+this.olapChart.SeriesAnimateOption = Syncfusion.Windows.Chart.AnimationOptions.Bottom;
 // To enable the Series Animate OneByOne in OlapChart.
-
-this.olapChart1.SeriesAnimateOneByOne = true;
-
-
-
+this.olapChart.SeriesAnimateOneByOne = true;
 // To disable Series Animate OneByOne in OlapChart.
-
-this.olapChart1.SeriesAnimateOneByOne = false;
-
-
-
+this.olapChart.SeriesAnimateOneByOne = false;
 // To disable Series Animation in OlapChart.
-
-this.olapChart1.EnableSeriesAnimation = false;
-
-
-
+this.olapChart.EnableSeriesAnimation = false;
 // To set the Series Animation Duration in OlapChart.
+this.olapChart.SeriesAnimationDuration = new TimeSpan(1);
 
-this.olapChart1.SeriesAnimationDuration = new TimeSpan(1);
+{% endhighlight %}
 
-    {% endhighlight %}
+{% endtabs %}
 
+The following illustration shows the Chart Animations:
 
+![](Series_images/Series_img6.png)
 
+A sample demo is available at the following location:
 
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
 
-## How to customize pie chart series
+## Pie Chart Customization
 
-We can set the explode index, explode radius, and enable or disable the series effects for the each series in a pie chart.
-
-#### Sample Link
-
-The installed samples can be found here:
-
-C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo
-
-## Adding Pie Chart features to an Application 
+We can set the explode index, explode radius, and enable or disable the series effects for the each series in a Pie chart.
 
 The following code sample demonstrates the customization each series of the Pie chart.
 
-  {% highlight c# %}
-
-    
-
-
+{% highlight c# %}
 
 foreach (ChartSeries series in this. olapchart.Series)
-
 {
-
-//To enable the chart to explode we have pass the ChartSeries and true as parameter to SetExplodedAll method
-
-ChartPieType.SetExplodedAll(series, true);
-
+    //To enable the chart to explode we have pass the ChartSeries and true as parameter to SetExplodedAll method
+    ChartPieType.SetExplodedAll(series, true);
 }
-
-
-
 foreach (ChartSeries series in this. olapchart.Series)
-
 {
-
-//To enable the chart to explode we have pass the ChartSeries and false as parameter to                      disable the SetExplodedAll method
-
-ChartPieType.SetExplodedAll(series, false);
-
+    //To enable the chart to explode we have pass the ChartSeries and false as parameter to disable the SetExplodedAll method
+    ChartPieType.SetExplodedAll(series, false);
 }
-
-
-
 foreach (ChartSeries series in this.olapchart.Series)
-
 {
-
-//To enable the effects in Pie chart
-
-series.EnableEffects = true;
-
+    //To enable the effects in Pie chart
+        series.EnableEffects = true;
 }
-
-
-
-
-
 foreach (ChartSeries series in this. olapchart.Series)
-
 {
-
-//To disable the effects in Pie chart
-
-series.EnableEffects = false;
-
+    //To disable the effects in Pie chart
+    series.EnableEffects = false;
 }
-
-
-
 foreach (ChartSeries series in this. olapchart.Series)
-
 {
-
-// to set the explore index value we have to pass the ChartSeries and the index value of which part of the Chart to explode
-
-ChartPieType.SetExplodedIndex(series, 2);
-
+    //To set the explore index value we have to pass the ChartSeries and the index value of which part of the Chart to explode
+    ChartPieType.SetExplodedIndex(series, 2);
 }
-
-
-
 foreach (ChartSeries series in this. olapchart.Series)
-
 {
-
-// to set the radius of the exploded chart we have to pass the ChartSeries and the radius which is n double value
-
-ChartPieType.SetExplodeRadius(series, 8.0);
-
+    //To set the radius of the exploded chart we have to pass the ChartSeries and the radius which is n double value
+    ChartPieType.SetExplodeRadius(series, 8.0);
 }
+    
+{% endhighlight %}
+  
+The following illustration shows the customization:
 
+![](Series_images/Series_img7.png)
 
-    {% endhighlight %}
+A sample demo is available at the following location:
+
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo

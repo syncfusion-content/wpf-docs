@@ -1138,9 +1138,9 @@ N> To dynamically change the position of the node, specify the offset values and
 
 
 
-nodeobj.OffsetX = 100;
+node.OffsetX = 100;
 
-nodeobj.OffsetY = 100;
+node.OffsetY = 100;
 
 DiagramPage page = new DiagramPage();
 
@@ -1155,9 +1155,9 @@ page.InvalidateMeasure();
 
 
 
-nodeobj.OffsetX = 100
+node.OffsetX = 100
 
-nodeobj.OffsetY = 100
+node.OffsetY = 100
 
 Dim page As New DiagramPage()
 
@@ -1167,7 +1167,7 @@ page.InvalidateMeasure()
 
 {% endhighlight  %}
 
-In the above code, nodeobj refers to the instance of the node whose position is to be changed.
+In the above code, node refers to the instance of the node whose position is to be changed.
 
 AllowMove
 

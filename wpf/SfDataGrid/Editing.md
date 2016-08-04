@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing 
 
-SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html) property.
+SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,7 +24,7 @@ dataGrid.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can enable or disable editing for particular column by setting [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowEditing.html) property.
+You can enable or disable editing for particular column by setting [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,16 +36,16 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowEditing.html).
+N> [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html).
 
-![](Editing_images/Editing_img1.png)
+![](Editing_images/Editing_img1.jpeg)
 
 
-N> It is mandatory to set the [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NavigationMode.html) to Cell to enable [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) navigation and editing.
+N> It is mandatory to set the [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) to Cell to enable [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) navigation and editing.
 
 ### Entering into edit mode
 
-You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by [EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EditTrigger.html) property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by [EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditTrigger.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,7 +63,7 @@ dataGrid.EditTrigger = EditTrigger.OnTap;
 
 ### Cursor placement
 
-When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EditorSelectionBehavior.html) property. 
+When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditorSelectionBehavior.html) property. 
 
 SelectAll – selects the text of edit element loaded inside cell.
 

@@ -9,15 +9,7 @@ documentation: ug
 
 # Calendar Customization
 
-This feature allows you to set your own schedule for the entire project. Using this feature you can customize the calendar as per the organization’s requirement. Currently Essential Gantt provides  the following properties of the schedule to customize the calendar:
-
-* Week Begins On—Gets or sets the starting day of a week in the Schedule
-* Fiscal Year Begin On—Gets or sets the starting month of a Fiscal Year
-* Is FY Numbering Enabled—Gets or sets the FY Numbering to true or false in the Schedule
-* Default Start Time—Gets or sets the task starting time of the day.
-* Default End Time—Gets or sets the task ending time of the day.
-
-Currently Default Start Time and Default End Time will reflect only in the Chart Background Panel. 
+This feature allows you to set your own schedule for the entire project. Using this feature you can customize the calendar as per the organization’s requirement. 
 
 ## Use Case Scenarios
 
@@ -72,7 +64,37 @@ Gets or sets the task ending time in a day. This is based on the {{ '_GanttTime_
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
+<tr>
+<td>
+Weekends</td><td>
+Gets or sets the weekend days. Default value is Saturday, Sunday.</td><td>
+Dependency Property</td><td>
+Days</td><td>
+N/A</td></tr>
+<tr>
+<td>
+ShowWeekends</td><td>
+Enables or disables the weekend days in schedule. Default value is true.</td><td>
+Dependency Property</td><td>
+bool</td><td>
+N/A</td></tr>
+<tr>
+<td>
+ExcludeWeekends</td><td>
+Excludes or includes the weekend days in duration calculation. Default value is false.</td><td>
+Dependency Property</td><td>
+bool</td><td>
+N/A</td></tr>
+<tr>
+<td>
+ShowNonWorkingHoursBackground</td><td>
+Enables or disables the background for weekend days. Default value is true.</td><td>
+Dependency Property</td><td>
+bool</td><td>
+N/A</td></tr>
 </table>
+
+N> Currently DefaultStartTime and DefaultEndTime will reflect only in the Chart Background Panel.
 
 
 ## Adding Calendar Customization to an Application 
@@ -87,7 +109,15 @@ The following code illustrates adding Calendar Customization to an Application:
 
 
 
-<sync:GanttControl Grid.Row="1"  x:Name="Gantt">
+<!--Gantt Control Calendar Customization and Weekends Customization Info-->
+<sync:GanttControl x:Name="Gantt" Grid.Row="1" WeekBeginsOn="Friday"    
+                   Weekends="Wednesday,Thursday"
+                   ItemsSource="{Binding TaskCollection}"                             
+                   FiscalYearBeginsOn="June"
+                   IsFYNumberingEndbled="True" DefaultEndTime="16:00:00" 
+                   ShowWeekends="True" ExcludeWeekends="True"   
+                   DefaultStartTime="10:00:00"  
+                   ShowNonWorkingHoursBackground="True">  
 
 <sync:GanttControl.TaskAttributeMapping>
 
@@ -121,32 +151,41 @@ PredecessorMapping="Predecessor">
 
 
 
+//To set WeekBeginsOn
+Gantt.WeekBeginsOn = DayOfWeek.Friday;
 
-// To Set Week BeginsOn 
+//To set IsFYNumberingEnbled
+Gantt.IsFYNumberingEndbled = true;
 
- Gantt.WeekBeginsOn = DayOfWeek.Wednesday;
+//To set FiscalYearBeginsOn
+Gantt.FiscalYearBeginsOn = Month.June;
 
-// To Set Fiscal Year starting Month
+//To set DefaultStartTime
+Gantt.DefaultStartTime = new TimeSpan(10,0,0);
 
- Gantt.FiscalYearBeginsOn = Month.July;
+//To set DefaultEndTime
+Gantt.DefaultEndTime = new TimeSpan(16, 0, 0);
+
+//To set Weekends
+Gantt.Weekends = Days.Wednesday | Days.Thursday;
+
+//To set ShowWeekends
+Gantt.ShowWeekends = true;
+
+//To set ExcludeWeekends
+Gantt.ExcludeWeekends = true;
+
+//To set ShowNonWorkingHoursbackground
+Gantt.ShowNonWorkingHoursBackground = true;
 
 // To Set FY Numbering
-
- Gantt.IsFYNumberingEndbled = true;
-
-// To Set Default Start Time
-
- Gantt.DefaultStartTime = new GanttTime() { Hour = 10};
-
-// To Set Default End Time
-
-Gantt.DefaultEndTime = new GanttTime() { Hour = 6};
+Gantt.IsFYNumberingEndbled = true;
 
 
 {% endhighlight %}
 {% endtabs %}
 
-The following image shows Customized Calender:
+The following image shows Customized Calender and Weekends:
 
 
 

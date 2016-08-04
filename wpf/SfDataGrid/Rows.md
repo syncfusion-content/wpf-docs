@@ -21,7 +21,7 @@ This section explains about various row types in SfDataGrid.
 
 ## Row Header
 
-RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowRowHeader.html) property.
+RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowRowHeader.html) property.
 
 
 {% tabs %}
@@ -38,7 +38,7 @@ dataGrid.ShowRowHeader = true;
 
 ![](Rows_images/Rows_img1.png)
 
-You can change the width of row header by setting [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowHeaderWidth.html) property.
+You can change the width of row header by setting [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeaderWidth.html) property.
 
 ### Row indicators and its description
 
@@ -105,7 +105,7 @@ Header row is present in top of the SfDataGrid which has column headers in it. C
 
 ![](Rows_images/Rows_img7.png)
 
-You can change the header row height by setting [SfDataGrid.HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderRowHeight.html) property.
+You can change the header row height by setting [SfDataGrid.HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
 
 ### Hiding Header row
 

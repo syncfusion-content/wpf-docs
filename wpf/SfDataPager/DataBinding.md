@@ -84,7 +84,7 @@ Description</th></tr>
 <td>
 PageIndexChanging</td><td>
  OldPageIndex  NewPageIndex Cancel</td><td>
-Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel{{ '__' | markdownify }}to true.</td></tr>
+Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel {{ '__' | markdownify }} to true.</td></tr>
 <tr>
 <td>
 PageIndexChanged</td><td>
@@ -146,7 +146,7 @@ The following screenshot displays the output for ListView binded with PagedColle
 
 In normal paging, the entire data collection is initially loaded into the SfDataPager control. However, the SfDataPager control allows you to load the data for the current page dynamically. To enable on demand paging, set UseOnDemandPaging to true.__
 
-On DemandPaging can be achieved by using the OnDemandLoading event and LoadDynamicItems method.
+OnDemandPaging can be achieved by using the OnDemandLoading event and LoadDynamicItems method.
 
 The OnDemandLoading event is triggered when the pager moves to the corresponding page. The OnDemandLoading event contains the following event arguments,
 
@@ -155,11 +155,11 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 In an OnDemandLoading event, you can use the LoadDynamicItems method to load the data for the corresponding page.
 
-N> In OnDemand paging, you cannot assign a value for the Source property.
+N> In OnDemandPaging, you cannot assign a value for the Source property.
 
 
 
-The following steps help you to achieve an onDemand loading with the SfDataPager control.
+The following steps help you to achieve an OnDemandLoading with the SfDataPager control.
 
 1. Set the UseOnDemandPaging property to true.
 2. Set the PageCount value for the SfDataPager control.

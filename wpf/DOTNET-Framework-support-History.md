@@ -658,6 +658,15 @@ Yes</td></tr>
 <tr>
 <td>
 </td><td>
+SfSpellChecker</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td></tr>
+<tr>
+<td>
+</td><td>
 SpellChecker</td><td>
 Yes</td><td>
 Yes</td><td>

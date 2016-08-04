@@ -115,8 +115,8 @@ Return Type</th></tr>
 <td>
 SortTree</td><td>
 Used to sort a particular column.</td><td>
-Overloads: 1) (string colName, ListSortDirection dir) 2) (string colName, ListSortDirection dir, bool clearSort) </td><td>
-ColName—name of the column to be sorted.dir—describes the direction of the sort (ascending or descending).clearSort—checks whether any existing sort should be clear before the new sort is applied.</td><td>
+Overloads: 1) (string colName, ListSortDirection direction) 2) (string colName, ListSortDirection direction, bool clearSort) </td><td>
+ColName—name of the column to be sorted.direction—describes the direction of the sort (ascending or descending).clearSort—checks whether any existing sort should be clear before the new sort is applied.</td><td>
 Void</td></tr>
 </table>
 
@@ -1353,7 +1353,7 @@ String</th></tr>
 <th>
 SerializeToStream</th><th>
 This method serializes properties as a stream.</th><th>
-(TextWriter textwriter)</th><th>
+(TextWriter textWriter)</th><th>
 Public</th><th>
 void</th></tr>
 <tr>
@@ -1374,7 +1374,7 @@ void</th></tr>
 <th>
 DeserializeFromStream</th><th>
 This method is used to deserialize the property from the stream.</th><th>
-TextReader(textreader)</th><th>
+TextReader(textReader)</th><th>
 Public</th><th>
 void</th></tr>
 </table>

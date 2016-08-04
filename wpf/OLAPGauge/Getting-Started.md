@@ -1,911 +1,469 @@
 ---
 layout: post
-title: Getting Started | OLAPGauge | wpf | Syncfusion
+title: Getting Started | OlapGauge | wpf | Syncfusion
 description: getting started
 platform: wpf
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
 # Getting Started
 
-## Configuring OLAP Gauge control
+This section covers the information required to create a simple OlapGauge bound to OLAP data source.
 
-This section explains on how to configure an OLAP Gauge component in an application. You can also learn how to pass the required data to OLAP Gauge and to customize its various options according to your requirements.
+## Through Visual Studio
 
-### Through Visual Studio
+Open the Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-1. Open Visual Studio IDE and from the File menu, select New  Project.
-2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application.
-3. Then type a name for the application and click OK. Here, name of the application is “SampleApplication”.
+Once the WPF application is created, go to View menu and select Toolbox option. Now the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OlapGauge under **Syncfusion BI WPF** tag. It will automatically add the required assemblies into the application.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
-
-4. From the Visual Studio Toolbox, drag and drop the OlapGauge under Syncfusion BI WPF tag. It automatically add the required assemblies.
-
-   ![](Getting-Started_images/Getting-Started_img2.png)
-
-
-5. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
+Add a **Name** to the OlapGauge component for accessing it through code-behind as shown in the following code sample.
    
-   
-   {%highlight xaml%}
+{% highlight Xaml %}
   
-
-
-
-			<Window
-
-				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-				xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
-
-				Title="MainWindow" Height="350" Width="525">
-
-			<Grid>
-
-				<syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-
-			</Grid>
-
-			</Window>
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+         <syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
 	
-      {%endhighlight%}
-
-    
-
-
-
-
-
-6.Include the following namespaces in the code-behind for handling OlapReport and OlapDataManger.
-  I. Syncfusion.Olap.Reports
-  II. Syncfusion.Olap.Manager
-
-      {%highlight c#%}
-
-
-				using Syncfusion.Olap.Manager;
-
-				using Syncfusion.Olap.Reports;
-
-				namespace SampleApplication
-
-			   {
-
-				public partial class MainWindow : SampleWindow
-
-				{
-
-					private string _connectionString;
-
-					private OlapDataManager _olapDataManager;
-
-
-
-					public MainWindow()
-
-					{  
-
-						InitializeComponent();
-
-						_connectionString = " Enter a valid connection string ";
-
-						//Connection string is passed to OlapDataManager as an argument
-
-						_olapDataManager = new OlapDataManager(_connectionString);
-
-						//A default OlapReport is set to OlapDataManager
-
-						_olapDataManager.SetCurrentReport(CreateOlapReport());
-
-						// Finally OlapGauge gets the information from the OlapDataManager
-
-						this.olapGauge.OlapDataManager = _olapDataManager;
-
-						this.olapGauge.DataBind();
-
-					}
-
-
-
-					/// <summary>
-
-					/// Defining OlapReport with Dimension and Measure
-
-					/// </summary>
-
-					private OlapReport CreateOlapReport()
-
-					{
-
-						OlapReport olapReport = new OlapReport();
-
-						// Setting the Cube name
-
-						olapReport.CurrentCubeName = "Adventure Works";
-
-
-
-						DimensionElement dimensionElementColumn = new DimensionElement();
-
-						// Specifying the name of the Dimension
-
-						dimensionElementColumn.Name = "Customer";
-
-						// Specifying the Hierarchy and Level name
-
-						dimensionElementColumn.AddLevel("Customer Geography", "Country");
-
-
-
-						MeasureElements measureElementColumn = new MeasureElements();
-
-						//Specifying the Measure name
-
-						measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
-
-
-
-						DimensionElement dimensionElementRow = new DimensionElement();
-
-						// Specifying the name of the Dimension
-
-						dimensionElementRow.Name = "Date";
-
-						// Specifying the Hierarchy and Level name
-
-						dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
-
-
-
-						///Adding Dimension in column axis
-
-						olapReport.CategoricalElements.Add(dimensionElementColumn);
-
-						///Adding Measure in column axis
-
-						olapReport.CategoricalElements.Add(measureElementColumn);
-
-						///Adding Dimension in row axis
-
-						olapReport.SeriesElements.Add(dimensionElementRow);
-
-
-
-						return olapReport;
-
-					}
-
-				}
-
-				}
+{% endhighlight %}
+
+Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
+
+   * Syncfusion.Olap.Reports
+   * Syncfusion.Olap.Manager
+
+{% tabs %}
+
+{% highlight c# %}
+
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+
+namespace SampleApplication
+{
+    public partial class MainWindow : SampleWindow
+    {
+        private string _connectionString;
+        private OlapDataManager _olapDataManager;
+        public MainWindow()
+        {  
+            InitializeComponent();
+            _connectionString = " Enter a valid connection string ";
+            //Connection string is passed to OlapDataManager as an argument
+            _olapDataManager = new OlapDataManager(_connectionString);
+            //A default OlapReport is set to OlapDataManager
+            _olapDataManager.SetCurrentReport(CreateOlapReport());
+            // Finally OlapGauge gets the information from the OlapDataManager
+            this.olapGauge.OlapDataManager = _olapDataManager;
+            this.olapGauge.DataBind();
+        }
+             
+        /// <summary>
+        /// Defining OlapReport with Dimension and Measure
+        /// </summary>
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport olapReport = new OlapReport();
+            // Setting the Cube name
+            olapReport.CurrentCubeName = "Adventure Works";
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            // Specifying the name of the Dimension
+            dimensionElementColumn.Name = "Customer";
+            // Specifying the Hierarchy and Level name
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+            MeasureElements measureElementColumn = new MeasureElements();
+            //Specifying the Measure name
+            measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+            DimensionElement dimensionElementRow = new DimensionElement();
+            // Specifying the name of the Dimension
+            dimensionElementRow.Name = "Date";
+            // Specifying the Hierarchy and Level name
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+            ///Adding Dimension in column axis
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+            ///Adding Measure in column axis
+            olapReport.CategoricalElements.Add(measureElementColumn);
+            ///Adding Dimension in row axis
+            olapReport.SeriesElements.Add(dimensionElementRow);
+            return olapReport;
+        }
+    }
+}
 	
-  
+{% endhighlight %}
 
-				Imports Syncfusion.Olap.Manager
+{% highlight vbnet %}
 
-				Imports Syncfusion.Olap.Reports
-
-				Namespace SampleApplication
-
-				Partial Public Class MainWindow Inherits SampleWindow
-
-				Private _connectionString As String
-
-				Private _olapDataManager As OlapDataManager
-
-
-
-				Public Sub New()
-
-				InitializeComponent()
-
-				_connectionString = "Enter a valid connection string"
-
-				' Connection string is passed to OlapDataManager as an argument
-
-				_olapDataManager = New OlapDataManager(_connectionString)
-
-				' A default OlapReport is set to OlapDataManager
-
-				_olapDataManager.SetCurrentReport(CreateOlapReport())
-
-					' Finally OlapGauge gets the information from the OlapDataManager 
-
-				Me.olapGauge.OlapDataManager = _olapDataManager
-
-				Me.olapGauge.DataBind()
-
-				  End Sub
-
-
-
-				  ''' <summary>
-
-				  ''' Defining OlapReport with Dimension and Measure
-
-				  ''' </summary>
-
-				  Private Function CreateOlapReport() As OlapReport
-
-			            Dim olapReport As OlapReport = New OlapReport()
-
-			            ' Setting the Cube name
-
-			            olapReport.CurrentCubeName = "Adventure Works"
-
-
-
-			            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
-
-			            ' Specifying the name of the Dimension
-
-			            dimensionElementColumn.Name = "Customer"
-
-			            ' Specifying the Hierarchy and Level name
-
-			            dimensionElementColumn.AddLevel("Customer Geography", "Country")
-
-
-
-			            Dim measureElementColumn As MeasureElements = New MeasureElements()
-
-			            ' Specifying the Measure name
-
-			            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
-
-
-
-			            Dim dimensionElementRow As DimensionElement = New DimensionElement()
-
-			            ' Specifying the name of the Dimension
-
-			            dimensionElementRow.Name = "Date"
-
-			            ' Specifying the Hierarchy and Level name
-
-			            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
-
-
-
-			            ''' Adding Dimension in column axis
-
-			            olapReport.CategoricalElements.Add(dimensionElementColumn)
-
-			            ''' Adding Measure in column axis
-
-			            olapReport.CategoricalElements.Add(measureElementColumn)
-
-			            ''' Adding Dimension in row axis
-
-			            olapReport.SeriesElements.Add(dimensionElementRow)
-
-
-
-			            Return olapReport
-
-				  End Function
-
-				  End Class
-
-				  End Namespace
+Imports Syncfusion.Olap.Manager
+Imports Syncfusion.Olap.Reports
+Namespace SampleApplication
+    Partial Public Class MainWindow Inherits SampleWindow
+        Private _connectionString As String
+        Private _olapDataManager As OlapDataManager
+        Public Sub New()
+            InitializeComponent()
+            _connectionString = "Enter a valid connection string"
+            ' Connection string is passed to OlapDataManager as an argument
+            _olapDataManager = New OlapDataManager(_connectionString)
+            ' A default OlapReport is set to OlapDataManager
+            _olapDataManager.SetCurrentReport(CreateOlapReport())
+            ' Finally OlapGauge gets the information from the OlapDataManager 
+            Me.olapGauge.OlapDataManager = _olapDataManager
+            Me.olapGauge.DataBind()
+        End Sub
+    
+	    ''' <summary>
+        ''' Defining OlapReport with Dimension and Measure
+        ''' </summary>
+        Private Function CreateOlapReport() As OlapReport
+            Dim olapReport As OlapReport = New OlapReport()
+            ' Setting the Cube name
+            olapReport.CurrentCubeName = "Adventure Works"
+            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+            ' Specifying the name of the Dimension
+            dimensionElementColumn.Name = "Customer"
+            ' Specifying the Hierarchy and Level name
+            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+            Dim measureElementColumn As MeasureElements = New MeasureElements()
+            ' Specifying the Measure name
+            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+            ' Specifying the name of the Dimension
+            dimensionElementRow.Name = "Date"
+            ' Specifying the Hierarchy and Level name
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+            ''' Adding Dimension in column axis
+            olapReport.CategoricalElements.Add(dimensionElementColumn)
+            ''' Adding Measure in column axis
+            olapReport.CategoricalElements.Add(measureElementColumn)
+            ''' Adding Dimension in row axis
+            olapReport.SeriesElements.Add(dimensionElementRow)
+            Return olapReport
+        End Function
+    End Class
+End Namespace
 	
-       {%endhighlight%}
+{% endhighlight %}
 
+{% endtabs %}
+
+Run the application and the following output will be generated.                                                    
+
+![](Getting-Started_images/Getting-Started_img2.png)
+   
+## Through Expression Blend
+
+Open the Blend for Visual Studio and navigate to File > New project > WPF > WPF Application to create a new WPF application.
+
+Select the **Project** tab available in the left corner of the Blend IDE. Right-click on **References** and select **Add Reference**. Now browse and add the following assemblies to the project.
+
+   * Syncfusion.Gauge.WPF
+   * Syncfusion.Core
+   * Syncfusion.Olap.Base
+   * Syncfusion.OlapGauge.WPF
+   * Syncfusion.OlapShared.WPF
+   * Syncfusion.Shared.WPF
+   
+N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
+
+On adding the above assemblies, the OlapGauge control will be added under the **Assets** tab automatically. Now choose the **Assets** tab, drag and drop the OlapGauge to the designer.
+
+![](Getting-Started_images/Getting-Started_img3.png)
+
+Add a **Name** to the OlapGauge component for accessing it through code-behind as shown in the following code sample.
+   
+{% highlight xaml %}
+ 
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
+				
+{% endhighlight %}
+
+Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
+
+   * Syncfusion.Olap.Reports
+   * Syncfusion.Olap.Manager
+
+{% tabs %}
+
+{% highlight c# %}
+
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+
+namespace SampleApplication
+{
+    public partial class MainWindow : SampleWindow
+    {
+        private string _connectionString;
+        private OlapDataManager _olapDataManager;
+        public MainWindow()
+        {  
+            InitializeComponent();
+            _connectionString = " Enter a valid connection string ";
+            //Connection string is passed to OlapDataManager as an argument
+            _olapDataManager = new OlapDataManager(_connectionString);
+            //A default OlapReport is set to OlapDataManager
+            _olapDataManager.SetCurrentReport(CreateOlapReport());
+            // Finally OlapGauge gets the information from the OlapDataManager
+            this.olapGauge.OlapDataManager = _olapDataManager;
+            this.olapGauge.DataBind();
+        }
+             
+        /// <summary>
+        /// Defining OlapReport with Dimension and Measure
+        /// </summary>
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport olapReport = new OlapReport();
+            // Setting the Cube name
+            olapReport.CurrentCubeName = "Adventure Works";
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            // Specifying the name of the Dimension
+            dimensionElementColumn.Name = "Customer";
+            // Specifying the Hierarchy and Level name
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+            MeasureElements measureElementColumn = new MeasureElements();
+            //Specifying the Measure name
+            measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+            DimensionElement dimensionElementRow = new DimensionElement();
+            // Specifying the name of the Dimension
+            dimensionElementRow.Name = "Date";
+            // Specifying the Hierarchy and Level name
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+            ///Adding Dimension in column axis
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+            ///Adding Measure in column axis
+            olapReport.CategoricalElements.Add(measureElementColumn);
+            ///Adding Dimension in row axis
+            olapReport.SeriesElements.Add(dimensionElementRow);
+            return olapReport;
+        }
+    }
+}
+	
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Imports Syncfusion.Olap.Manager
+Imports Syncfusion.Olap.Reports
+Namespace SampleApplication
+    Partial Public Class MainWindow Inherits SampleWindow
+        Private _connectionString As String
+        Private _olapDataManager As OlapDataManager
+        Public Sub New()
+            InitializeComponent()
+            _connectionString = "Enter a valid connection string"
+            ' Connection string is passed to OlapDataManager as an argument
+            _olapDataManager = New OlapDataManager(_connectionString)
+            ' A default OlapReport is set to OlapDataManager
+            _olapDataManager.SetCurrentReport(CreateOlapReport())
+            ' Finally OlapGauge gets the information from the OlapDataManager 
+            Me.olapGauge.OlapDataManager = _olapDataManager
+            Me.olapGauge.DataBind()
+        End Sub
     
+    	''' <summary>
+        ''' Defining OlapReport with Dimension and Measure
+        ''' </summary>
+        Private Function CreateOlapReport() As OlapReport
+            Dim olapReport As OlapReport = New OlapReport()
+            ' Setting the Cube name
+            olapReport.CurrentCubeName = "Adventure Works"
+            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+            ' Specifying the name of the Dimension
+            dimensionElementColumn.Name = "Customer"
+            ' Specifying the Hierarchy and Level name
+            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+            Dim measureElementColumn As MeasureElements = New MeasureElements()
+            ' Specifying the Measure name
+            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+            ' Specifying the name of the Dimension
+            dimensionElementRow.Name = "Date"
+            ' Specifying the Hierarchy and Level name
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+            ''' Adding Dimension in column axis
+            olapReport.CategoricalElements.Add(dimensionElementColumn)
+            ''' Adding Measure in column axis
+            olapReport.CategoricalElements.Add(measureElementColumn)
+            ''' Adding Dimension in row axis
+            olapReport.SeriesElements.Add(dimensionElementRow)
+            Return olapReport
+        End Function
+    End Class
+End Namespace
+	
+{% endhighlight %}
 
+{% endtabs %}
 
+Run the application and the following output will be generated.
 
+![](Getting-Started_images/Getting-Started_img4.png)
 
+## Through Code-Behind
 
-7.Run the application                                                    
+Open the Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+To add the dependency assemblies within the application, right-Click on **References** and select **Add Reference**. Then add the following Syncfusion assemblies manually to the project from the installed location.
 
+   * Syncfusion.Gauge.WPF
+   * Syncfusion.Core
+   * Syncfusion.Olap.Base
+   * Syncfusion.OlapGauge.WPF
+   * Syncfusion.OlapShared.WPF
+   * Syncfusion.Shared.WPF
    
-# Through Expression Blend
+N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
-OLAP Gauge control can also be created and configured by using Expression Blend as follows.
+Include the following namespaces in code-behind for using OlapGauge, OlapReport and OlapDataManger in the application.
 
-1. Open Blend for Visual Studio and from the File menu, select New  Project. Enter a valid project name and click OK.
+   * Syncfusion.Olap.Reports
+   * Syncfusion.Olap.Manager
+   * Syncfusion.Windows.Gauge.Olap
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-2. Select Project tab in the application window. 
-
-   ![](Getting-Started_images/Getting-Started_img5.png)
-
-
-3. Right-click on References and select Add Reference, then add the following assemblies into the project from installed location.
-   I. Syncfusion.Olap.Base
-   II. Syncfusion.OlapGauge.WPF
-
-
-   Assemblies Location:
-
-   &lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
-
-4.After adding the above assemblies, OlapGauge control is automatically added in the Assets.
-
-5.Now, find OlapGauge and drag it to the designer window. 
-
-   ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-6.Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
-   
-   {%highlight xaml%}
+{% tabs %}
  
+{% highlight c# %}
 
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+using Syncfusion.Windows.Gauge.Olap;
 
-				<Window
+namespace SampleApplication
+{
+    public partial class MainWindow : SampleWindow
+    {
+        private string _connectionString;
+        private OlapDataManager _olapDataManager;
+        public MainWindow()
+        {  
+            InitializeComponent();
+            OlapGauge olapGauge = new OlapGauge();
+            _connectionString = " Enter a valid connection string ";
+            //Connection string is passed to OlapDataManager as an argument
+            _olapDataManager = new OlapDataManager(_connectionString);
+            //A default OlapReport is set to OlapDataManager
+            _olapDataManager.SetCurrentReport(CreateOlapReport());
+            // Finally OlapGauge gets the information from the OlapDataManager
+            this.olapGauge.OlapDataManager = _olapDataManager;
+            this.olapGauge.DataBind();
+            //OlapGauge added to the Main Window Grid region.
+            grid.Children.Add(olapGauge);
+        }
+             
+        /// <summary>
+        /// Defining OlapReport with Dimension and Measure
+        /// </summary>
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport olapReport = new OlapReport();
+            // Setting the Cube name
+            olapReport.CurrentCubeName = "Adventure Works";
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            // Specifying the name of the Dimension
+            dimensionElementColumn.Name = "Customer";
+            // Specifying the Hierarchy and Level name
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+            MeasureElements measureElementColumn = new MeasureElements();
+            //Specifying the Measure name
+            measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+            DimensionElement dimensionElementRow = new DimensionElement();
+            // Specifying the name of the Dimension
+            dimensionElementRow.Name = "Date";
+            // Specifying the Hierarchy and Level name
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+            ///Adding Dimension in column axis
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+            ///Adding Measure in column axis
+            olapReport.CategoricalElements.Add(measureElementColumn);
+            ///Adding Dimension in row axis
+            olapReport.SeriesElements.Add(dimensionElementRow);
+            return olapReport;
+        }
+    }
+} 
+	
+{% endhighlight %}
 
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
-
-					Title="MainWindow" Height="350" Width="525">
-
-				<Grid>
-
-					<syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-
-				</Grid>
-
-				</Window>
+{% highlight vbnet %}
 				
-
-
-    {%endhighlight%}
-
-
-
-
-
-7.Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
-  I. Syncfusion.Olap.Reports
-  II. Syncfusion.Olap.Manager
-
-       {%highlight c#%}
-
-				using Syncfusion.Olap.Manager;
-
-				using Syncfusion.Olap.Reports;
-
-				namespace SampleApplication
-
-				{
-
-				public partial class MainWindow : SampleWindow
-
-				{
-
-					private string _connectionString;
-
-					private OlapDataManager _olapDataManager;
-
-
-
-					public MainWindow()
-
-					{  
-
-						InitializeComponent();
-
-						_connectionString = " Enter a valid connection string ";
-
-						//Connection string is passed to OlapDataManager as an argument
-
-						_olapDataManager = new OlapDataManager(_connectionString);
-
-						//A default OlapReport is set to OlapDataManager
-
-						_olapDataManager.SetCurrentReport(CreateOlapReport());
-
-						// Finally OlapGauge gets the information from the OlapDataManager
-
-						this.olapGauge.OlapDataManager = _olapDataManager;
-
-						this.olapGauge.DataBind();
-
-					}
-
-
-
-					/// <summary>
-
-					/// Defining OlapReport with Dimension and Measure
-
-					/// </summary>
-
-					private OlapReport CreateOlapReport()
-
-					{
-
-						OlapReport olapReport = new OlapReport();
-
-						// Setting the Cube name
-
-						olapReport.CurrentCubeName = "Adventure Works";
-
-
-
-						DimensionElement dimensionElementColumn = new DimensionElement();
-
-						// Specifying the name of the Dimension
-
-						dimensionElementColumn.Name = "Customer";
-
-						// Specifying the Hierarchy and Level name
-
-						dimensionElementColumn.AddLevel("Customer Geography", "Country");
-
-
-
-						MeasureElements measureElementColumn = new MeasureElements();
-
-						//Specifying the Measure name
-
-						measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
-
-
-
-						DimensionElement dimensionElementRow = new DimensionElement();
-
-						// Specifying the name of the Dimension
-
-						dimensionElementRow.Name = "Date";
-
-						// Specifying the Hierarchy and Level name
-
-						dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
-
-
-
-						///Adding Dimension in column axis
-
-						olapReport.CategoricalElements.Add(dimensionElementColumn);
-
-						///Adding Measure in column axis
-
-						olapReport.CategoricalElements.Add(measureElementColumn);
-
-						///Adding Dimension in row axis
-
-						olapReport.SeriesElements.Add(dimensionElementRow);
-
-
-
-						return olapReport;
-
-					}
-
-				}
-
-				}
+Imports Syncfusion.Olap.Manager
+Imports Syncfusion.Olap.Reports
+Imports Syncfusion.Windows.Gauge.Olap
+Namespace SampleApplication
+    Partial Public Class MainWindowInherits SampleWindow
+        Private _connectionString As String
+        Private _olapDataManager As OlapDataManager
+        Public Sub New()
+            InitializeComponent()
+            Dim olapGauge As New OlapGauge()
+            _connectionString = "Enter a valid connection string"
+            ' Connection string is passed to OlapDataManager as an argument
+            _olapDataManager = New OlapDataManager(_connectionString)
+            ' A default OlapReport is set to OlapDataManager
+            _olapDataManager.SetCurrentReport(CreateOlapReport())
+            ' Finally OlapGauge gets the information from the OlapDataManager
+            Me.olapGauge.OlapDataManager = _olapDataManager
+            Me.olapGauge.DataBind()
+            ' OlapGauge added to the Main Window Grid region.
+            grid.Children.Add(olapGauge)
+        End Sub
+
+        ''' <summary>
+        ''' Defining OlapReport with Dimension and Measure
+        ''' </summary>
+        Private Function CreateOlapReport() As OlapReport
+            Dim olapReport As OlapReport = New OlapReport()
+            ' Setting the Cube name
+            olapReport.CurrentCubeName = "Adventure Works"
+            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+            ' Specifying the name of the Dimension
+            dimensionElementColumn.Name = "Customer"
+            ' Specifying the Hierarchy and Level name
+            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+            Dim measureElementColumn As MeasureElements = New MeasureElements()
+            ' Specifying the Measure name
+            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+            ' Specifying the name of the Dimension
+            dimensionElementRow.Name = "Date"
+            ' Specifying the Hierarchy and Level name
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+            ''' Adding Dimension in column axis
+            olapReport.CategoricalElements.Add(dimensionElementColumn)
+            ''' Adding Measure in column axis
+            olapReport.CategoricalElements.Add(measureElementColumn)
+            ''' Adding Dimension in row axis
+            olapReport.SeriesElements.Add(dimensionElementRow)
+            Return olapReport
+        End Function
+    End Class
+End Namespace
 				
+{% endhighlight %}
 
-
-    
-
-  
-
-
-				Imports Syncfusion.Olap.Manager
-
-				Imports Syncfusion.Olap.Reports
-
-				Namespace SampleApplication
-
-				Partial Public Class MainWindow Inherits SampleWindow
-
-				Private _connectionString As String
-
-				Private _olapDataManager As OlapDataManager
-
-
-
-				Public Sub New()
-
-				InitializeComponent()
-
-				_connectionString = "Enter a valid connection string"
-
-				' Connection string is passed to OlapDataManager as an argument
-
-				_olapDataManager = New OlapDataManager(_connectionString)
-
-				' A default OlapReport is set to OlapDataManager
-
-				_olapDataManager.SetCurrentReport(CreateOlapReport())
-
-				' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
-
-				Me.olapGauge.DataBind()
-
-				End Sub
-
-
-
-				  ''' <summary>
-
-				  ''' Defining OlapReport with Dimension and Measure
-
-				  ''' </summary>
-
-				  Private Function CreateOlapReport() As OlapReport
-
-			            Dim olapReport As OlapReport = New OlapReport()
-
-			            ' Setting the Cube name
-
-			            olapReport.CurrentCubeName = "Adventure Works"
-
-
-
-			            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
-
-			            ' Specifying the name of the Dimension
-
-			            dimensionElementColumn.Name = "Customer"
-
-			            ' Specifying the Hierarchy and Level name
-
-			            dimensionElementColumn.AddLevel("Customer Geography", "Country")
-
-
-
-			            Dim measureElementColumn As MeasureElements = New MeasureElements()
-
-			            ' Specifying the Measure name
-
-			            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
-
-
-
-			            Dim dimensionElementRow As DimensionElement = New DimensionElement()
-
-			            ' Specifying the name of the Dimension
-
-			            dimensionElementRow.Name = "Date"
-
-			            ' Specifying the Hierarchy and Level name
-
-			            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
-
-
-
-			            ''' Adding Dimension in column axis
-
-			            olapReport.CategoricalElements.Add(dimensionElementColumn)
-
-			            ''' Adding Measure in column axis
-
-			            olapReport.CategoricalElements.Add(measureElementColumn)
-
-			            ''' Adding Dimension in row axis
-
-			            olapReport.SeriesElements.Add(dimensionElementRow)
-
-
-
-			            Return olapReport
-
-				  End Function
-
-				  End Class
-
-				  End Namespace
-				
+{% endtabs %}
  
+Run the application and the following output will be generated.                                     
 
-    {%endhighlight%}
-
-
-
-
-
-8.Run the application
-
-
-
-  ![](Getting-Started_images/Getting-Started_img7.png)
-
-   
-# Through Code-Behind
-
-1. Open Visual Studio IDE and from the File menu, select New  Project.
-2. In the New Project Dialog box, click the tree node Windows under Visual C# and select WPF Application. 
-3. Type a name for the application and click OK. Here, name of the application is “SampleApplication”.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img8.png)
-
-
-   ![](Getting-Started_images/Getting-Started_img9.png)
-
-
-4. Right-Click on References and select Add Reference, then add the following Syncfusion assemblies manually to the project from installed location.
-   1. Syncfusion.Gauge.WPF
-   2. Syncfusion.Core
-   3. Syncfusion.Olap.Base
-   4. Syncfusion.OlapGauge.WPF
-   5. Syncfusion.OlapShared.WPF
-   6. Syncfusion.Shared.WPF
-
-   ## Assemblies Location
-
-   &lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
-
-5. Include the following namespaces in code-behind for using OlapGauge, OlapReport and OlapDataManger in the program.
-   I. Syncfusion.Olap.Reports
-   II. Syncfusion.Olap.Manager
-   III. Syncfusion.Windows.Gauge.Olap
-
-  
-         {%highlight c#%}
-
-				using Syncfusion.Olap.Manager;
-
-				using Syncfusion.Olap.Reports;
-
-				using Syncfusion.Windows.Gauge.Olap;
-
-
-
-				namespace SampleApplication
-
-				{
-
-				public partial class MainWindow : SampleWindow
-
-				{
-
-					private string _connectionString;
-
-					private OlapDataManager _olapDataManager;
-
-
-
-					public MainWindow()
-
-					{  
-
-						InitializeComponent();
-
-						OlapGauge olapGauge = new OlapGauge();
-
-						_connectionString = " Enter a valid connection string ";
-
-						//Connection string is passed to OlapDataManager as an argument
-
-						_olapDataManager = new OlapDataManager(_connectionString);
-
-						//A default OlapReport is set to OlapDataManager
-
-						_olapDataManager.SetCurrentReport(CreateOlapReport());
-
-						// Finally OlapGauge gets the information from the OlapDataManager
-
-						this.olapGauge.OlapDataManager = _olapDataManager;
-
-						this.olapGauge.DataBind();
-
-						this.AddChild(olapGauge);
-
-					}
-
-
-
-					/// <summary>
-
-					/// Defining OlapReport with Dimension and Measure
-
-					/// </summary>
-
-					private OlapReport CreateOlapReport()
-
-					{
-
-						OlapReport olapReport = new OlapReport();
-
-						// Setting the Cube name
-
-						olapReport.CurrentCubeName = "Adventure Works";
-
-
-
-						DimensionElement dimensionElementColumn = new DimensionElement();
-
-						// Specifying the name of the Dimension
-
-						dimensionElementColumn.Name = "Customer";
-
-						// Specifying the Hierarchy and Level name
-
-						dimensionElementColumn.AddLevel("Customer Geography", "Country");
-
-
-
-						MeasureElements measureElementColumn = new MeasureElements();
-
-						//Specifying the Measure name
-
-						measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
-
-
-
-						DimensionElement dimensionElementRow = new DimensionElement();
-
-						// Specifying the name of the Dimension
-
-						dimensionElementRow.Name = "Date";
-
-						// Specifying the Hierarchy and Level name
-
-						dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
-
-
-
-						///Adding Dimension in column axis
-
-						olapReport.CategoricalElements.Add(dimensionElementColumn);
-
-						///Adding Measure in column axis
-
-						olapReport.CategoricalElements.Add(measureElementColumn);
-
-						///Adding Dimension in row axis
-
-						olapReport.SeriesElements.Add(dimensionElementRow);
-
-
-
-						return olapReport;
-
-					}
-
-				}
-
-				} 
-				
-
-
-          
-
- 
-				Imports Syncfusion.Olap.Manager
-
-				Imports Syncfusion.Olap.Reports
-
-				Imports Syncfusion.Windows.Gauge.Olap
-
-
-
-				Namespace SampleApplication
-
-				Partial Public Class MainWindowInherits SampleWindow
-
-				Private _connectionString As String
-
-				Private _olapDataManager As OlapDataManager
-
-
-
-				Public Sub New()
-
-				InitializeComponent()
-
-				Dim olapGauge As New OlapGauge()
-
-				_connectionString = "Enter a valid connection string"
-
-				' Connection string is passed to OlapDataManager as an argument
-
-				_olapDataManager = New OlapDataManager(_connectionString)
-
-				' A default OlapReport is set to OlapDataManager
-
-				_olapDataManager.SetCurrentReport(CreateOlapReport())
-
-				' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
-
-				Me.olapGauge.DataBind()
-
-				Me.AddChild(olapGauge)
-
-				End Sub
-
-
-
-				  ''' <summary>
-
-				  ''' Defining OlapReport with Dimension and Measure
-
-				  ''' </summary>
-
-				  Private Function CreateOlapReport() As OlapReport
-
-			            Dim olapReport As OlapReport = New OlapReport()
-
-			            ' Setting the Cube name
-
-			            olapReport.CurrentCubeName = "Adventure Works"
-
-
-
-			            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
-
-			            ' Specifying the name of the Dimension
-
-			            dimensionElementColumn.Name = "Customer"
-
-			            ' Specifying the Hierarchy and Level name
-
-			            dimensionElementColumn.AddLevel("Customer Geography", "Country")
-
-
-
-			            Dim measureElementColumn As MeasureElements = New MeasureElements()
-
-			            ' Specifying the Measure name
-
-			            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
-
-
-
-			            Dim dimensionElementRow As DimensionElement = New DimensionElement()
-
-			            ' Specifying the name of the Dimension
-
-			            dimensionElementRow.Name = "Date"
-
-			            ' Specifying the Hierarchy and Level name
-
-			            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
-
-
-
-			            ''' Adding Dimension in column axis
-
-			            olapReport.CategoricalElements.Add(dimensionElementColumn)
-
-			            ''' Adding Measure in column axis
-
-			            olapReport.CategoricalElements.Add(measureElementColumn)
-
-			            ''' Adding Dimension in row axis
-
-			            olapReport.SeriesElements.Add(dimensionElementRow)
-
-
-
-			            Return olapReport
-
-				   End Function
-
-				   End Class
-
-				   End Namespace
-				
-
-
-     {%endhighlight%}
-
-
-
-
-
-6.Run the application.                                      
-
-   ![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img5.png)
 
    

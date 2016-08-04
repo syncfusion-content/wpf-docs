@@ -252,7 +252,7 @@ You can set the background, foreground and font for a particular column by this 
 <tr>
 <td>
 FlowDirection</td><td>
-You can set the flow direction of the cell value by using this property either by LefttoRight or RighttoLeft.</td></tr>
+You can set the flow direction of the cell value by using this property either by left-to-right or right-to-left.</td></tr>
 <tr>
 <td>
 MaxLength</td><td>

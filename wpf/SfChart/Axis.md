@@ -1,1244 +1,1672 @@
 ---
 layout: post
-title: Axis| SfChart | Wpf | Syncfusion
-description: axis
+title: Axis and its types. 
+description: Axis behavior and its types.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
+
 # Axis
 
-ChartAxis is used to locate a data point inside the chart area. Generally to locate a data point, two axes are required along vertical and horizontal direction. The vertical axis or y-axis usually represents numerical values .The horizontal axis or x-axis represents categorical or numerical or date and time values. ChartAxis supports the following types.
+[`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Generally, to locate a data point two axes are required along vertical and horizontal direction. The vertical axis or y-axis usually represents numerical values. The horizontal axis or x-axis represents categorical or numerical or date and time values. 
 
-You can choose any ChartAxis derived types, like DateTimeAxis, NumericalAxis, CategoryAxis, LogarithmicAxis or TimeSpanAxis depending on the value type. DateTimeCategoryAxis is a special type, used to plot date and time values for the given datapoints. 
+The following are the API’s in ChartAxis
 
-## NumericAxis
+* [`ArrangeRect`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ArrangeRect.html#) – Represents the bounds of chart axis size. 
+* [`VisibleRange`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleRange.html#) – Represent the axis start and end values.
+* [`VisibleLabels`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleLabels.html#) – Represents the axis label collection which are visible in axis.
 
-NumericalAxis is used to plot numerical value to the chart. You can set NumericalAxis for both PrimaryAxis and SecondaryAxis.
+The following topics explains in detail about the axis and its parts
 
-The following APIs are used to customize NumericalAxis.
+## Header
 
-### Properties
+In [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) you can define any object as header using [`Header`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~Header.html#) property. The following code example demonstrates the defining header in primary and secondary axis. 
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Interval</td><td>
-Gets or sets the double value that represents the interval between the labels.</td></tr>
-<tr>
-<td>
-Minimum</td><td>
-Gets or sets the double value that represents the Minimum value for the Axis.</td></tr>
-<tr>
-<td>
-Maximum</td><td>
-Gets or sets the double value that represents the Maximum value for the Axis.</td></tr>
-<tr>
-<td>
-RangePadding</td><td>
-Gets or sets the NumericalPadding that specifies how to render the segments in chart area.</td></tr>
-<tr>
-<td>
-StartRangeFromZero</td><td>
-Gets or sets the bool that represents a value to enable start the range from zero. </td></tr>
-</table>
- 
 {% highlight xaml %}
-
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
-
-<syncfusion:SfChart.DataContext>
-
-<local:ViewModel/>
-
-</syncfusion:SfChart.DataContext>
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis   Header="Company Name"/>
+<syncfusion:CategoryAxis Header="Metals"/>
 
 </syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis Interval="100" Minimum="0" Maximum="1000" RangePadding="Round"   Header="Gross Revenue "/>
+<syncfusion:NumericalAxis Header="Values(In Tonnes)"/>
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
 
-
-
-<syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-</syncfusion:ColumnSeries>
-
-</syncfusion:SfChart>
-
 {% endhighlight %}
 
-![](Axis_images/Axis_img1.png)
+![](Axis_images/Axis_img1.jpeg)
 
 
+**Header** **Customization**
 
-## CategoryAxis
-
-CategoryAxis is an index based axis that plots values based on the index of the data point collection. The points are equally spaced here.
-
-The following APIs are used in CategoryAxis.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Interval</td><td>
-Gets or sets the double value that represents the interval between the labels.</td></tr>
-<tr>
-<td>
-LabelPlacement</td><td>
-Gets or sets the LabelPlacement that represents the position of the label in the axis.</td></tr>
-</table>
-
+Default appearance of the header can be customized using [`HeaderTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderTemplate.html#) property. The following code snippet demonstrates the header customization.
 
 {% highlight xaml %}
 
-
-
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
-
-<syncfusion:SfChart.DataContext>
-
-<local:ViewModel/>
-
-</syncfusion:SfChart.DataContext>
-
-
-
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis   Header="Company Name"/>
+<syncfusion:CategoryAxis>
+
+<syncfusion:CategoryAxis.HeaderTemplate>
+
+<DataTemplate>
+
+<Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
+
+<TextBlock Text="Demands" FontSize="12" FontStyle="Italic" FontWeight="Bold" Margin="3"/>
+
+</Border>
+
+</DataTemplate>
+
+</syncfusion:CategoryAxis.HeaderTemplate>
+
+</syncfusion:CategoryAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
-
-
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis Interval="10" Minimum="200" Maximum="400" RangePadding="Round"   Header="Gross Revenue "/>
+<syncfusion:NumericalAxis Header="Values(In Tonnes)”/>
+
+<syncfusion:NumericalAxis.HeaderTemplate>
+
+<DataTemplate>
+
+<Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
+
+<TextBlock Text="Demands" FontSize="12" FontStyle="Italic" FontWeight="Bold" Margin="3"/>
+
+</Border>
+
+</DataTemplate>
+
+</syncfusion:NumericalAxis.HeaderTemplate>
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
 
-
-
-<syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-</syncfusion:ColumnSeries>
-
-
-
-</syncfusion:SfChart>
-
 {% endhighlight %}
 
-![](Axis_images/Axis_img2.png)
+![](Axis_images/Axis_img2.jpeg)
 
 
+**HeaderStyle**
 
-## DateTimeAxis
-
-DateTimeAxis is used to plot DateTime values. The DateTimeAxis is widely used to make financial charts in places like the Stock Market, where index plotting is done everyday.
-
-The following APIs are used for customizing DateTimeAxis.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Minimum</td><td>
-Gets or sets the DateTime value that represents a minimum value of the Axis.</td></tr>
-<tr>
-<td>
-Maximum</td><td>
-Gets or sets the DateTime value that represents a maximum value of the Axis.</td></tr>
-<tr>
-<td>
-RangePadding</td><td>
-Gets or sets the DateTimeRangePadding value that specifies segment arrangement in the chart area.</td></tr>
-<tr>
-<td>
-Interval</td><td>
-Gets or sets the double value as the interval between labels.</td></tr>
-<tr>
-<td>
-IntervalType</td><td>
-Gets or sets the DateTimeIntervalType. It represents the type of the interval. This property is used to define the type of interval to be displayed and considered for plotting the series.</td></tr>
-<tr>
-<td>
-EnableBusinessHours</td><td>
-Gets or sets the bool value that represents a value to enable business hours.</td></tr>
-<tr>
-<td>
-OpenTime</td><td>
-Gets or sets the double value that represents the open working time of a day.</td></tr>
-<tr>
-<td>
-CloseTime</td><td>
-Gets or sets the double value that represents the close working time of a day.</td></tr>
-<tr>
-<td>
-WorkingDays</td><td>
-Gets or sets the Day (enum) value that represents the working days to be included in a week.</td></tr>
-</table>
-
-###DateTimeIntervalType
-
-The DateTime interval corresponds to the type specified in the IntervalType property.
-
-For instance, if the Interval is set as 2 and IntervalType is set as Days, the labels are plotted for every two days. The following are the values for IntervalType property:
-
-* Auto
-* Days
-* Hours
-* Milliseconds
-* Minutes 
-* Months
-* Seconds
-* Years
-
-
-
-The default IntervalType of a DateTimeAxis is Auto. It calculates the type automatically and the interval, accordingly.
+[`HeaderStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderStyle.html#) property is used to provide style for the axis header. The following code example explains header style customization.
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis Name="Primary" 
+<syncfusion:CategoryAxis Header="Metals" >
 
-IntervalType="Years" Interval="1" />
+<syncfusion:CategoryAxis.HeaderStyle>
 
-</syncfusion:SfChart.PrimaryAxis>
+<syncfusion:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black"> 
 
-{% endhighlight %}
+</syncfusion:LabelStyle>
 
-The following code example and screenshot are for DateTimeAxis.
+</syncfusion:CategoryAxis.HeaderStyle>
 
-{% highlight xaml %}
-
-
-
-  <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
-
-            <syncfusion:SfChart.DataContext>
-
-                <local:ViewModel/>
-
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:DateTimeAxis Interval="1" LabelFormat="yyyy" IntervalType="Years”/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis />
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"  ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:LineSeries>
-
-        </syncfusion:SfChart>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img3.png)
-
-
-
-## DateTimeCategoryAxis
-
-DateTimeCategoryAxis is a special type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to CategoryAxis, thereby removing space for missing dates. Intervals and range for the axis are calculated similar to DateTimeAxis. There are no visual gaps between points, even when the difference between two points is more than a year.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Interval</td><td>
-Gets or sets the double value that represents the interval between the labels.</td></tr>
-<tr>
-<td>
-IntervalType</td><td>
-Gets or sets the DateTimeIntervalType that represents the type of the interval.</td></tr>
-</table>
-
-
-{% highlight xaml %}
-
-
-
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
-
-<syncfusion:SfChart.DataContext>
-
-<local:ViewModel/>
-
-</syncfusion:SfChart.DataContext>
-
-
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeCategoryAxis Interval="1" LabelFormat="yyyy" IntervalType="Years"  Header="Company Name"/>
+</syncfusion:CategoryAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
-
-
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
+<syncfusion:NumericalAxis Header="Values(In Tonnes)"/>
+
+<syncfusion:NumericalAxis.HeaderStyle>
+
+<syncfusion:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black"> 
+
+</syncfusion:LabelStyle>
+
+</syncfusion:NumericalAxis.HeaderStyle>
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
 
-
-
-<syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-</syncfusion:LineSeries>
-
-
-
-</syncfusion:SfChart>
-
 {% endhighlight %}
 
-![](Axis_images/Axis_img4.png)
+![](Axis_images/Axis_img3.jpeg)
+
+## Axis Labels
+
+Labels will be generated by the range and the values binded to [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html#) or [`YBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html#) properties.
 
 
 
-## TimeSpanAxis
+**Positioning** **the** **Labels**
 
-TimeSpanAxis is used to plot the time span values in the PrimaryAxis. TimeSpanAxis has the advantage of plotting data with milliseconds difference. The limitation of TimeSpanAxis is that it can only accept timespan values (hh:mm:ss) and datetime values are not accepted.
+The [`LabelsPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsPosition.html#) property is used to position the axis label either inside or outside the chart plotting area. By default, LabelsPosition is outside.
 
-The following APIs are used in TimeSpanAxis.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Interval</td><td>
-Gets or sets the double value that represents the interval between the labels.</td></tr>
-<tr>
-<td>
-Minimum</td><td>
-Gets or sets the timespan value that represents the minimum value for the Axis.</td></tr>
-<tr>
-<td>
-Maximum</td><td>
-Gets or sets the timespan value that represents the maximum value for the Axis. </td></tr>
-</table>
-
+**Inside**
 
 {% highlight xaml %}
-
- <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
-
-            <syncfusion:SfChart.DataContext>
-
-                <local:ViewModel/>
-
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:TimeSpanAxis Interval="00:00:01" Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"  ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:LineSeries>
-
-        </syncfusion:SfChart>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img5.png)
-
-
-
-## LogarithmicAxis
-
-LogarithmicAxis is used to plot the logarithmic scale for the chart. In order to plot the logarithmic scale, you must specify the base value using LogarithmicBase Property.
-
-The following APIs are used to customize the LogarithmicAxis.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-Interval</td><td>
-Gets or sets the double value that represents the interval between the labels</td></tr>
-<tr>
-<td>
-Minimum</td><td>
-Gets or sets the double value that represents the minimum value for the Axis.</td></tr>
-<tr>
-<td>
-Maximum</td><td>
-Gets or sets the double value that represents the maximum value of the Axis. </td></tr>
-<tr>
-<td>
-LogarithmicBase</td><td>
-Gets or sets the double value that represents the logarithmic base value of the Axis.</td></tr>
-</table>
-
-
-{% highlight xaml %}
-
-
-
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
-
-<syncfusion:SfChart.DataContext>
-
-<local:ViewModel/>
-
-</syncfusion:SfChart.DataContext>
-
-
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis   Header="Company Name"/>
+<syncfusion:NumericalAxis  LabelsPosition="Inside">
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![](Axis_images/Axis_img4.jpeg)
+
+
+**LabelRotationAngle**
+
+[`LabelRotationAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html#) property allows you to define the angle for the label content. The following code example illustrates the [`LabelRotationAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html#).
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  LabelRotationAngle="90" >
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img5.jpeg)
+
+**Custom** **Labels**
+
+SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html#) and [`Position`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html#) property .You can define the labels using [`CustomLabels`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~CustomLabels.html#) property as in the below code snippet.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis >
+
+<syncfusion:CategoryAxis.CustomLabels>
+
+<syncfusion:ChartAxisLabel Position="0" LabelContent="0-1"/>
+
+<syncfusion:ChartAxisLabel Position="1" LabelContent="1-2"/>
+
+<syncfusion:ChartAxisLabel Position="2" LabelContent="2-3"/>
+
+<syncfusion:ChartAxisLabel Position="3" LabelContent="3-4"/>
+
+<syncfusion:ChartAxisLabel Position="4" LabelContent="4-5"/>
+
+<syncfusion:ChartAxisLabel Position="5" LabelContent="5-5"/>
+
+</syncfusion:CategoryAxis.CustomLabels>
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img6.jpeg)
+
+
+You can also directly bind the collection of labels to the [`LabelsSource`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsSource.html#) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
+
+{% highlight C# %}
+
+public List<LabelItem> Labels { get; set; }
+
+Labels = new List<LabelItem>
+
+{
+
+new LabelItem() {Position=0, Content = "0-1"},
+
+new LabelItem() {Position=1, Content = "1-2"},
+
+new LabelItem() {Position=2, Content = "2-3"},
+
+new LabelItem() {Position=3, Content = "3-4"},
+
+new LabelItem() {Position=4, Content = "4-5"},
+
+new LabelItem() {Position=5, Content = "5-6"},
+
+new LabelItem() {Position=6, Content = "6-7"},
+
+new LabelItem() {Position=7, Content = "7-8"},
+
+};
+
+public class LabelItem
+
+{
+
+public string Content { get; set; }
+
+public int Position { get; set; }
+
+}
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis LabelsSource="{Binding Labels}" ContentPath="Content" PositionPath="Position">
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img7.jpeg)
+
+
+**Label** **Formatting**
+
+Axis labels can be formatting by predefined formatting types based on the axis types.
+
+**DateTimeAxis**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis LabelFormat="MMM/dd" FontSize="12" >
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img8.jpeg)
+
+
+**TimeSpanAxis**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:TimeSpanAxis LabelFormat="g" ></syncfusion:TimeSpanAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img9.jpeg)
+
+
+**NumericalAxis**
+
+{% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:LogarithmicAxis LogarithmicBase="10"   Header="Gross Revenue (cr.)"/>
+<syncfusion:NumericalAxis LabelFormat="0.00" />
 
 </syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-</syncfusion:LineSeries>
-
-
-
-</syncfusion:SfChart>
-
 {% endhighlight %}
 
-N> Logarithmic Axis does not support zero or negative values.
-
-The following screenshot illustrates the SfChart with LogarithmicAxis.
-
-![](Axis_images/Axis_img6.png)
+![](Axis_images/Axis_img10.jpeg)
 
 
+**Adding** **Units** **to** **Labels**
 
-## Multiple Axes
+To display the measuring units, it can be added as a prefix or suffix to the axis labels. This can be achieved using the [`PrefixLabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~PrefixLabelTemplate.html#) and [`PostfixLabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~PostfixLabelTemplate.html#) properties.
 
-SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
-
-By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. These are two properties XAxis and YAxis in all the series, except Accumulation Series.
+**PrefixLabelTemplate**
 
 {% highlight xaml %}
-
-
-<syncfusion:ColumnSeries Label="2010" 
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010"
-
-Interior="Green"
-
-
-
-<syncfusion:ColumnSeries.XAxis>
-
-<syncfusion:NumericalAxis Header="Additional X Axis"/>
-
-</syncfusion:ColumnSeries.XAxis>
-
-
-
-<syncfusion:ColumnSeries.YAxis>
-
-<syncfusion:NumericalAxis Header="Additional Y Axis"/>
-
-</syncfusion:ColumnSeries.YAxis>
-
-
-
-</syncfusion:ColumnSeries>
-
-
-
-<syncfusion:LineSeries Label="2011" 
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2011"
-
-Interior="Black"
-
-StrokeThickness="2"
-
-/>
-
-
-{% endhighlight %}
-
-
-The following screenshot illustrates SfChart with multiple axes.
-
-![](Axis_images/Axis_img7.png)
-
-
-
-N> The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis.
-
-### Axis Positioning
-
-By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
-
-The following is the code example for setting the OpposedPosition property.
-
-{% highlight xaml %}
-
-
-
-<syncfusion:ColumnSeries.XAxis>
-
-<syncfusion:NumericalAxis Header="Additional X Axis" OpposedPosition="True"/>
-
-</syncfusion:ColumnSeries.XAxis>
-
-
-
-<syncfusion:ColumnSeries.YAxis>
-
-<syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/>
-
-</syncfusion:ColumnSeries.YAxis>
-		
-		{% endhighlight %}
-
-The following is a screenshot demonstrating y-axis of a chart arranged in OpposedPosition.
-
-![](Axis_images/Axis_img8.png)
-
-
-
-## Inversed Axis
-
-This feature is used to reverse chart plotting. It inverses the axis scaling.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis   FontSize="16" IsInversed="True" OpposedPosition="True" />
-
-            </ syncfusion:SfChart.PrimaryAxis>
-
-
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis FontSize="16" Minimum="0" Maximum="2000" Interval=”200” IsInversed="True" OpposedPosition="True" />
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img9.png)
-
-
-
-## Axis range and Interval
-
-ChartAxis calculates the range and intervals automatically based on the values of series data points. You can also explicitly specify the range and interval using the Minimum, Maximum and Interval properties. 
-
-Tip: You cannot specify range for CategoryAxis instead you can use ZoomFactor and ZoomPosition.
-
-
-
-N> You can force the NumericalAxis to start range from zero by enabling StartRangeFromZero. The following is the code example for setting the ChartAxis properties.
-
- The following is the code sample for setting the ChartAxis properties:
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis FontSize="14"/>
-
-</syncfusion:SfChart.PrimaryAxis>
-
-
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis FontSize="14"/>
+<syncfusion:NumericalAxis FontSize="10">
+
+<syncfusion:NumericalAxis.PrefixLabelTemplate>
+
+<DataTemplate>
+
+<TextBlock FontSize="10" VerticalAlignment="Center" Text="$"/>
+
+</DataTemplate>
+
+</syncfusion:NumericalAxis.PrefixLabelTemplate>
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
+
 {% endhighlight %}
 
-### Range Padding
-
-The NumericalAxis and DateTimeAxis have a RangePadding property that can be used to add padding to the range of a chart's axes.
-
-### NumericalAxis RangePadding
-
-The following types are available for NumericalAxis: 
-
-* Additional
-* None
-* Normal
-* Round
-
-By default, the default RangePadding value for PrimaryAxis is Auto and for SecondaryAxis, the default value is Round.
-
-![](Axis_images/Axis_img10.png)
+![](Axis_images/Axis_img11.jpeg)
 
 
+**PostfixLabelTemplate**
 
-The following screenshot demonstrates RangePadding as None, where no padding is applied for the axis.
+{% highlight xaml %}
 
-![](Axis_images/Axis_img11.png)
+<syncfusion:SfChart.SecondaryAxis>
 
+<syncfusion:NumericalAxis >
 
+<syncfusion:NumericalAxis.PostfixLabelTemplate>
 
-Normal RangePadding for a NumericalAxis is used mostly for the y-axis to have padding based on the Range calculation.
+<DataTemplate>
 
-The following screenshot illustrates a chart’s y-axis with RangePadding set to Normal.
+<TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
 
-![](Axis_images/Axis_img12.png)
+</DataTemplate>
 
+</syncfusion:NumericalAxis.PostfixLabelTemplate>
 
+</syncfusion:NumericalAxis>
 
-Round RangePadding for a NumericalAxis rounds the range of the chart axis to the nearest possible value.
+</syncfusion:SfChart.SecondaryAxis>
 
-The following screenshot demonstrates a chart’s x-axis with RangePadding set to Round.
+{% endhighlight %}
 
-![](Axis_images/Axis_img13.png)
-
-
-
-If RangePadding for NumericalAxis is set to Additional, the interval of the axis is added as padding.
-
-The following screenshot demonstrates a chart’s x-axis with RangePadding set to Additional.
-
-![](Axis_images/Axis_img14.png)
+![](Axis_images/Axis_img12.jpeg)
 
 
+**LabelTemplate**
 
-###DateTimeAxis RangePadding
-
-The RangePadding types available in the DateTimeAxis are: 
-
-* Additional
-* None
-* Round
-
-By default, the RangePadding for a DateTimeAxis is None.
-
-The following screenshot demonstrates a chart’s x-axis with RangePadding set to None. 
-
-![](Axis_images/Axis_img15.png)
-
-
-
-When RangePadding for DateTimeAxis is set to Additional, the DateTime interval of the axis is added as padding, as shown in the following screenshot.
-
-![](Axis_images/Axis_img16.png)
-
-
-
-When RangePadding for DateTimeAxis is set to Round, the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
-
-![](Axis_images/Axis_img17.png)
-
-
-
-## Positioning axis labels
-
-
-### Label Placement
-
-The CategoryAxis includes the LabelPlacement property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the CategoryAxis is OnTicks.
-
-There are two types of LabelPlacement:
-
-* BetweenTicks
-* OnTicks
-
-The following code example and screenshot shows LabelPlacement set to OnTicks.
+[`LabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html#) property allows you to define the appearance for the axis labels .the following code example illustrates the [`LabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html#) property.
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis LabelPlacement="OnTicks" 
+<syncfusion:CategoryAxis>
 
-FontSize="16"  />
+<syncfusion:CategoryAxis.LabelTemplate>
 
-</syncfusion:SfChart.PrimaryAxis>
+<DataTemplate >
 
-{% endhighlight %}
+<Border Background="Gray" CornerRadius="5" >
 
-![](Axis_images/Axis_img18.png)
+<TextBlock Text="{Binding LabelContent}" Foreground="White"
 
+FontStyle="Normal" FontSize="10" FontWeight="Bold"
 
+Margin="3">
 
-The following code example and screenshot shows LabelPlacement set to BetweenTicks.
+</TextBlock>
 
-{% highlight xaml %}
+<Border.Effect>
 
+<DropShadowEffect ShadowDepth="6" Direction="315" Color="LightGray" Opacity="0.25"
 
+BlurRadius="0.8" />
 
-<syncfusion:SfChart.PrimaryAxis>
+</Border.Effect>
 
-<syncfusion:CategoryAxis LabelPlacement="BetweenTicks" 
+</Border>
 
-FontSize="16"  />
+</DataTemplate>
 
-</syncfusion:SfChart.PrimaryAxis>
+</syncfusion:CategoryAxis.LabelTemplate>
 
-
-{% endhighlight %}
-
-
-![](Axis_images/Axis_img19.png)
-
-
-
-### Label Position 
-
-The LabelsPosition property is used to position the axis label either inside or outside the chart plotting area.
-
-The following code example and screenshot illustrate the use of LabelsPosition.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis  LabelsPosition="Inside" 
-
-FontSize="16"  />
+</syncfusion:CategoryAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img20.png)
+![](Axis_images/Axis_img13.jpeg)
 
 
+**LabelExtent**
+
+This property allows us to set the distance between the axis header and the axis using [`LabelExtent`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelExtent.html#) property.The following code snippet defines the [`LabelExtent`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelExtent.html#) property.
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis  LabelsPosition="Outside" 
+<syncfusion:CategoryAxis Header="Demand" LabelExtent="50" >
 
-	   FontSize="16"  />
-
-</syncfusion:SfChart.PrimaryAxis>
-{% endhighlight %}
-
-
-![](Axis_images/Axis_img21.png)
-
-
-
-### Positioning Edge Labels
-
-SfChart provides support to customize the edge labels of the axis to adjust its position using the EdgeLabelDrawingMode property. 
-
-The following are the customizing options in EdgeLabelDrawingMode.
-
-* Center - Positions the label with tickline as center.
-* Fit - Position the gridline inside based on the edge label size.
-* Hide - Hides the edge labels.
-* Shift - Shifts the edge labels inside to label width.
-
-
-
-The following code example and screenshot show EdgeLabelsDrawingMode set to Center.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Center" FontSize="16"  />
-
-</syncfusion:SfChart.PrimaryAxis>
+</syncfusion:CategoryAxis>
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img22.png)
+![](Axis_images/Axis_img14.jpeg)
 
 
+**Smart** **Axis** **Labels**
 
-The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Fit" FontSize="16"  />
-
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img23.png)
-
-
-
-The following code example and screenshot shows EdgeLabelDrawingMode set to Hide.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Hide" FontSize="16"  />
-
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img24.png)
-
-
-
-The following code example and screenshot shows EdgeLabelsDrawingMode set to Shift.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Shift" FontSize="16"  />
-
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img25.png)
-
-
-
-## Smart Labels
-
-When a number of axis labels exist, they may overlap with each other. SfChart provides features to handle the overlapping labels using the LabelsIntersectAction property.
+When there are more number of axis labels, they may overlap with each other. SfChart provides support to handle the overlapping labels using the [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html#) property. By default the [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html#) value is Hide.
 
 The following are the options for intersecting action.
 
 * None
 * Hide
 * MultipleRows
+* Rotate
 
+**None**
 
-
-The following code example and screenshot shows LabelsIntersectAction set to None.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis   LabelsIntersectAction="None"  
-
-FontSize="16"  />
-
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img26.png)
-
-
-
-The following code example and screenshot shows LabelsIntersectAction set to Hide.
+None option is used to display all the label even if it intersects. The following code snippet demonstrates the LabelsIntersectAction as None option.
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis   LabelsIntersectAction="Hide"  
-
-FontSize="16"  />
+<syncfusion:CategoryAxis LabelsIntersectAction="None"/>
 
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/wpf/sshot-24.png](Axis_images/Axis_img27.png)
+![](Axis_images/Axis_img15.jpeg)
 
 
+**Hide**
 
-The following code example and screenshot show LabelsIntersectAction set to MultipleRows.
+Hide option is used to hide the labels if it intersects .You can define the hide as shown in the below code snippet.
 
 {% highlight xaml %}
-
-
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis   LabelsIntersectAction="MultipleRows"  
-
-FontSize="16"  />
+<syncfusion:DateTimeAxis  LabelsIntersectAction="Hide"/>
 
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
+![](Axis_images/Axis_img16.jpeg)
 
 
-![](Axis_images/Axis_img28.png)
+**MultipleRows**
 
-
-
-## Add units to labels
-
-You can customize the axis label to display its measuring units by adding a prefix or a suffix. This feature can be achieved using the PrefixLabelTemplate and PostfixLabelTemplate properties.
-
-The following code example and screenshot demonstrate the usage of PrefixLabelTemplate.
+This option is used to move the labels to next row if it intersects .The following code demonstrates the MultipleRows option in [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html#).
 
 {% highlight xaml %}
 
-  <DataTemplate x:Key="yPrefix">
+<syncfusion:SfChart.PrimaryAxis>
 
-     <TextBlock FontSize="15" VerticalAlignment="Center" Text="$"/>
+<syncfusion:DateTimeAxis  LabelsIntersectAction="MultipleRows">
 
-  </DataTemplate>
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img17.jpeg)
+
+
+**Auto**
+
+This option in [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html#) property is used to rotate the labels if it intersects .The following code snippet and image demonstrates the rotate option in [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html#) property.
+
+{% highlight xml %}
+
+<syncfusion:CategoryAxis LabelsIntersectAction="Auto">
+
+</syncfusion:CategoryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img18.jpeg)
+
+
+**EdgeLabelsDrawingMode**
+
+SfChart provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#) property. [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#) property default value is center.
+
+The following are the customizing options in [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#).
+
+* Center- Positions the label with tick line as center.
+* Fit- Position the gridline inside based on the edge label size.
+* Hide- Hides the edge labels.
+* Shift- Shifts the edge labels to the left or right so that it comes inside the chart area.
+
+**Center**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Center" >
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img19.jpeg)
+
+**Shift**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Shift" ></syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img20.jpeg)
+
+
+**Hide**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Hide">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img21.jpeg)
+
+
+**Fit**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Fit">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img22.jpeg)
+
+
+**EdgeLabelsVisibilityMode**
+
+The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) property. By default the default option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) while zooming.
+
+![](Axis_images/Axis_img23.jpeg)
+
+
+**Always** **Visible**
+
+AlwaysVisible option in [`EdgeLabelsVisibilityMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is used to view the edge labels even while performing zooming.
+
+The following code example and image demonstrates the AlwaysVisible option while zooming.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis EdgeLabelsVisibilityMode="AlwaysVisible" 
+
+EnableScrollBar="True">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img24.jpeg)
+
+
+**Visible**
+
+Visible option is used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state)
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis EdgeLabelsVisibilityMode="Visible" EnableScrollBar="True" >
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img25.jpeg)
+
+
+## Grid lines
+
+By default, gridlines are automatically added to the [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) in its defined intervals. SfChart supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html#) property.
+
+The following code example illustrates the [`ShowGridLines`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html#) property as false in the primary axis.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  ShowGridLines="False"  >
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img26.jpeg)
+
+
+Style can also be applied to Major and Minor Gridlines using [`MajorGridLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~MajorGridLineStyle.html#) and [`MinorGridLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~MinorGridLineStyle.html#) properties.
+
+**MajorGridLineStyle**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  ShowGridLines="True" >
+
+<syncfusion:NumericalAxis.MajorGridLineStyle>
+
+<Style TargetType="Line"  >
+
+<Setter Property="StrokeThickness" Value="2"/>
+
+<Setter Property="Stroke" Value="Black"/>
+
+<Setter Property="StrokeDashArray" Value="3,3"/>
+
+</Style>
+
+</syncfusion:NumericalAxis.MajorGridLineStyle>
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img27.jpeg)
+
+
+**MinorGridLineStyle**
+
+Minor gridlines will be added automatically when the small tick lines is defined inside the chart area.
+
+{% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
 
-       <syncfusion:NumericalAxis FontSize="16" Minimum="0" Maximum="1000" PrefixLabelTemplate="{StaticResource yPrefix}" />
+<syncfusion:NumericalAxis SmallTicksPerInterval="3">
+
+<syncfusion:NumericalAxis.MinorGridLineStyle>
+
+<Style TargetType="Line"  >
+
+<Setter Property="StrokeThickness" Value="1"/>
+
+<Setter Property="Stroke" Value="DarkGray"/>
+
+<Setter Property="StrokeDashArray" Value="3,3"/>
+
+</Style>
+
+</syncfusion:NumericalAxis.MinorGridLineStyle>
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img29.png)
+![](Axis_images/Axis_img28.jpeg)
 
 
+## Tick lines
 
-The following code example and screenshot demonstrate the usage of PostfixLabelTemplate.
+Tick line are the small lines which is drawn on the axis line representing the axis labels .Tick lines will be drawn outside of the axis by default. 
 
-{% highlight xaml %}
+**TickLineSize**
 
-<DataTemplate x:Key="yPostfix">
-
-<TextBlock FontSize="8" VerticalAlignment="Top" Text="0"/>
-
-</DataTemplate>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis FontSize="16" Minimum="0" Maximum="100" PostfixLabelTemplate="{StaticResource yPostfix}" />
-
-</chart:SfChart.SecondaryAxis>
-
-{% endhighlight %}
-
-![](Axis_images/Axis_img30.png)
-
-
-
-## Formatting axis labels
-
-SfChart provides the LabelFormat property for defining the custom formatting for the axis labels. This property supports all standard formatting type of numerical and date time values.
+Tick lines thickness can be customized using [`TickLineSize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~TickLineSize.html#) property as shown in the below code snippet.
 
 {% highlight xaml %}
 
- <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:DateTimeAxis LabelFormat="hh:mm tt" IntervalType="Hours" Interval="1" Header="Computer sales" />
+<syncfusion:NumericalAxis  TickLineSize="10" ></syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![](Axis_images/Axis_img29.jpeg)
+
+
+**Positioning** **the** **Major** **Tick** **Lines**
+
+Tick lines can be positioned inside or outside of the chart area using [`TickLinesPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~TickLinesPosition.html#) property. By default the tick lines will positioned outside of the chart area. The following code example demonstrates the positioning tick lines inside chart area.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis TickLinesPosition="Inside">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img30.jpeg)
+
+
+**Customization**
+
+Style can be applied to major tick lines using [`MajorTickLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~MajorTickLineStyle.html#) property .The following code snippet demonstrates the styling of major tick lines.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis TickLineSize="10">
+
+<syncfusion:NumericalAxis.MajorTickLineStyle>
+
+<Style TargetType="Line"  >
+
+<Setter Property="StrokeThickness" Value="1"/>
+
+<Setter Property="Stroke" Value="Black"/>
+
+<Setter Property="StrokeDashArray" Value="3,3"/>
+
+</Style>
+
+</syncfusion:NumericalAxis.MajorTickLineStyle>
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img31.jpeg)
+
+
+**MinorTickLines**
+
+Minor tick lines can be added by defining [`SmallTicksPerInterval`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTicksPerInterval.html#) property. This property will add the tick lines  to every interval.
+
+The following code example demonstrates the small ticks set for every interval.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis Interval="1" SmallTicksPerInterval="4" >
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img32.jpeg)
+
+
+**Positioning** **the** **minor** **tick** **lines**
+
+Minor tick lines can be positioned inside or outside using [`SmallTickLinesPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTickLinesPosition.html#) property. By default the minor tick lines will be positioned outside.
+
+The following code example demonstrates the positioning of minor tick lines inside the chart area.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis SmallTicksPerInterval="2" SmallTickLinesPosition="Inside">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img33.jpeg)
+
+
+**Customization** **of** **Minor** **Ticklines**
+
+The thickness of the minor tick lines can be customized using [`SmallTickLineSize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTickLineSize.html#) property as shown in the below code snippet.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis Interval="1" SmallTicksPerInterval="3" SmallTickLineSize="10">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img34.jpeg)
+
+Styling customization of minor tick lines can be defined using [`MinorTickLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~MinorTickLineStyle.html#) property. The following code example and image demonstrates the style for minor tick lines.
+
+{% highlight xaml %}
+
+<syncfusion:NumericalAxis FontSize="12"  Interval="1" SmallTicksPerInterval="3" TickLineSize="10" SmallTickLineSize="5">
+
+<syncfusion:NumericalAxis.MinorTickLineStyle>
+
+<Style TargetType="Line"  >
+
+<Setter Property="StrokeThickness" Value="0.5"/>
+
+<Setter Property="Stroke" Value="Black"/>
+
+</Style>
+
+</syncfusion:NumericalAxis.MinorTickLineStyle>
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img35.jpeg)
+
+
+N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
+
+## AxisLine
+
+SfChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineStyle.html#) property as shown in the below code snippet.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  Interval="1" >
+
+<syncfusion:NumericalAxis.AxisLineStyle>
+
+<Style TargetType="Line"  >
+
+<Setter Property="StrokeThickness" Value="2"/>
+
+<Setter Property="Stroke" Value="Red"/>
+
+<Setter Property="StrokeDashArray" Value="2,2"/>
+
+</Style>
+
+</syncfusion:NumericalAxis.AxisLineStyle>
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img36.jpeg)
+
+
+**Applying** **Padding** **to** **the** **Axis** **line**
+
+The padding to the axis line is defined using [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html#) property. The following code example demonstrates the setting [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html#) for x axis.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis AxisLineOffset="20" >
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img37.jpeg)
+
+
+## Origin Customization
+
+SfChart allows you to customize the origin.By default the axis will be rendered having (0,0) as origin in x and y axes.
+
+**ShowAxisNextToOrigin**
+
+[`ShowAxisNextToOrigin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowAxisNextToOrigin.html#) property is used to move the axis line to the origin value in [`Origin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html#) property based on the x or y axes. .The following code example demonstrates shifting the axis in the origin value in numerical axis.
+
+{% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis Header="Quantity Sold" LabelFormat="##.00"/>
+<syncfusion:NumericalAxis Origin="3" ShowAxisNextToOrigin="True">
+
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img31.png)
+![](Axis_images/Axis_img38.jpeg)
 
 
+**Positioning** **the** **Header** 
 
-## Styling Header and Labels
+The following image demonstrates the default positioning of header when the axis is moved inside based on the origin value.
 
-SfChart provides support to customize the axis header and label. The following APIs are used to customize the header and label.
+![](Axis_images/Axis_img39.jpeg)
 
-### HeaderStyle and LabelStyle
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Definition</th></tr>
-<tr>
-<td>
-HeaderStyle</td><td>
-Gets or sets the style for the axis header. The header’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
-<tr>
-<td>
-LabelStyle</td><td>
-Gets or sets the style for the axis labels. The label’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
-</table>
+If you want to position the header outside of the chart area then you can set the Far option in [`HeaderPosition`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderPosition.html#) property.
 
+The following code example demonstrates the positioning of the header outside even when the axis is moved inside.
 
 {% highlight xaml %}
 
-<syncfusion:SfChart Height="250" Width="500">
+<syncfusion:SfChart.SecondaryAxis>
 
-            < syncfusion:SfChart.PrimaryAxis>
+<syncfusion:NumericalAxis HeaderPosition="Far"
 
-                < syncfusion:CategoryAxis  Header="City">
+Origin="3" ShowAxisNextToOrigin="True" Header="Value(In Tonnes)" >
 
-                    < syncfusion:CategoryAxis.LabelStyle>
+</syncfusion:NumericalAxis>
 
-                        < syncfusion:LabelStyle FontSize="10" FontFamily="Arial" Foreground="Green" ></syncfusion:LabelStyle>
+</syncfusion:SfChart.SecondaryAxis>
 
-                    </syncfusion:CategoryAxis.LabelStyle>
-
-                </syncfusion:CategoryAxis>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis x:Name="axis" Header="Year" >
-
-                    <syncfusion:NumericalAxis.LabelStyle >
-
-                        <syncfusion:LabelStyle FontSize="10" Foreground="Green" FontFamily="Arial" ></syncfusion:LabelStyle>
-
-                    </syncfusion:NumericalAxis.LabelStyle>
-
-                </syncfusion:NumericalAxis>
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-            <syncfusion:LineSeries XBindingPath="City" YBindingPath="Year1950" ItemsSource="{Binding PopulationPercent}"></syncfusion:LineSeries>
-
-        </syncfusion:SfChart>
 {% endhighlight %}
 
-## GridLines and TickLines 
+![](Axis_images/Axis_img40.jpeg)
 
 
-### GridLines
+**Adding** **Origin** **line**
 
-By default, gridlines are automatically added to the ChartAxis in its defined intervals. SfChart supports customization of gridline. You can control the visibility of the gridlines using the ShowGridLines property. 
+The origin line can be added to chart area by setting the [`ShowOrigin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowOrigin.html#) property to true .The following code example demonstrates the displaying origin line at (3,0) position value as set in [`Origin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html#) property.
 
-The following code example and screenshot show ShowGridLines set to False.
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Origin="3" ShowOrigin="True">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img41.jpeg)
+
+
+## Types of Axis
+
+[`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) supports the following types.
+
+* NumericalAxis
+* CategoryAxis
+* DateTimeAxis
+* DateTimeCategoryAxis
+* TimeSpanAxis
+* LogarithmicAxis
+
+You can choose any type of [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#), like [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#), [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#), [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html#), [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#) or [`TimeSpanAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html#) depending on the value type. [`DateTimeCategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html#) is a special type, used to plot date and time values for the given data points.
+
+### NumericalAxis
+
+[`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is used to plot numerical values to the chart. [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) can be defined for both [`PrimaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html#) and [`SecondaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html#). The following code snippet shows how to define the [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#).
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis ShowGridLines="False" 
+<syncfusion:NumericalAxis  >
 
-FontSize="16"  />
+</syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
 
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis >
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
 {% endhighlight %}
 
-![](Axis_images/Axis_img32.png)
+![](Axis_images/Axis_img42.jpeg)
 
 
+**Customizing** **the** **NumericalAxis** **Range**
 
-### Ticklines
+[`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Maximum.html#) property used for setting the maximum value for the axis range and [`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Minimum.html#) property is used for setting the minimum value for the axis range.
 
-Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
+{% highlight xaml %}
 
-The following code example and screenshot illustrate major and small ticklines set to Inside.
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Maximum="2750" Minimum="250" Interval="250">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img43.jpeg)
+
+
+N> If  minimum or maximum value is set, the other value is calculated by default internally.
+
+**StartRangeFromZero**
+
+[`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) will calculate the range based on the data points binded to the axis. To start the range from zero have to define the [`StartRangeFromZero`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~StartRangeFromZero.html#) property to True. The following code example demonstrates the NumericalAxis range starting from zero.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis StartRangeFromZero="True">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img44.jpeg)
+
+
+N> By default, Range is calculated between the minimum and maximum value of the data points.
+
+### CategoryAxis
+
+[`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html#) is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here. The following code example initializes the [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html#).
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:NumericalAxis LabelsPosition="Inside" TickLineSize="10" SmallTickLineSize="5" TickLinesPosition="Inside" SmallTickLinesPosition="Inside" SmallTicksPerInterval="2"  FontSize="16"  />
+<syncfusion:CategoryAxis >
+
+</syncfusion:CategoryAxis>
 
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img33.png)
+![](Axis_images/Axis_img45.jpeg)
 
 
+**LabelPlacement**
 
-You can customize the appearance of major gridline, minor gridlines and ticklines using the MajorTickLineStyle, MinorTickLineStyle, MajorGridLineStyle and MinorGridLineStyle properties. Also axis lines can be customized using AxisLineStyle as follows.
+In [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html#), labels is placed based on tick lines using [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html#) property. By default the labels is placed OnTicks. The following code example demonstrates placing the label between ticks in [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html#)
 
 {% highlight xaml %}
 
-<syncfusion:SfChart>
+<syncfusion:SfChart.PrimaryAxis>
 
-   <syncfusion:SfChart.Resources>
+<syncfusion:CategoryAxis LabelPlacement="BetweenTicks">
 
-                <Style x:Key="majorTickLineStyle" TargetType="Line">
+</syncfusion:CategoryAxis>
 
-                    <Setter Property="Stroke" Value="Red"/>
-
-                    <Setter Property="StrokeThickness" Value="1"/>
-
-                </Style>
-
-                <Style x:Key="minorTickLineStyle" TargetType="Line">
-
-                    <Setter Property="Stroke" Value="Green"/>
-
-                    <Setter Property="StrokeThickness" Value="1"/>
-
-                </Style>
-
-                <Style x:Key="axisLineStyle" TargetType="Line">
-
-                    <Setter Property="Stroke" Value="OrangeRed"/>
-
-                    <Setter Property="StrokeThickness" Value="1"/>
-
-                </Style>
-
-                <Style x:Key="majorGridLineStyle" TargetType="Line">
-
-                <Setter Property="Stroke" Value="Gray"/>
-
-                <Setter Property="StrokeThickness" Value="1"/>
-
-                    <Setter Property="StrokeDashArray" Value="4,2"/>
-
-                 </Style>
-
-                <Style x:Key="minorGridLineStyle" TargetType="Line">
-
-                    <Setter Property="Stroke" Value="Gray"/>
-
-                    <Setter Property="StrokeThickness" Value="1"/>
-
-                    <Setter Property="StrokeDashArray" Value="1,2"/>
-
-                </Style>
-
-  </syncfusion:SfChart.Resources>
-
-
-
-  <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:DateTimeAxis  MajorGridLineStyle="{StaticResource majorGridLineStyle }"
-
-                    MinorGridLineStyle="{StaticResource minorGridLineStyle}"
-
-                    MajorTickLineStyle="{StaticResource majorTickLineStyle}"
-
-                    MinorTickLineStyle="{StaticResource minorTickLineStyle}"
-
-                    AxisLineStyle="{StaticResource axisLineStyle}"       
-
-                    SmallTicksPerInterval="1" TickLineSize="10"
-
-                    SmallTickLineSize="6" LabelFormat="yyyy"
-
-                   />
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis MajorTickLineStyle="{StaticResource majorTickLineStyle}"
-
-                      MajorGridLineStyle="{StaticResource majorGridLineStyle }"
-
-                      MinorGridLineStyle="{StaticResource minorGridLineStyle}"
-
-                      MinorTickLineStyle="{StaticResource minorTickLineStyle}"
-
-                      AxisLineStyle="{StaticResource axisLineStyle}"       
-
-                      SmallTicksPerInterval="1" TickLineSize="10"
-
-                      SmallTickLineSize="5" HorizontalAlignment="Right"  
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:FastLineBitmapSeries   XBindingPath="Date" YBindingPath="Value" >
-
-            </syncfusion:FastLineBitmapSeries>
-
-        </syncfusion:SfChart>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img34.png)
+![](Axis_images/Axis_img46.jpeg)
 
 
+### DateTimeAxis
 
+[`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is used to plot DateTime values. The [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  LabelFormat="MMM-dd"></syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img47.jpeg)
+
+
+**Customizing** **the** **Range**
+
+[`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Minimum.html#) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Maximum.html#) properties behavior is same as in NumericalAxis instead of setting numerical value, you have to set date time values.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  Minimum="2015/01/10" Maximum="2015/07/01" LabelFormat="MMM-dd" 
+
+IntervalType="Months" Interval="1">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img48.jpeg)
+
+
+**Business** **Hours** **Range** **Calculation**
+
+SfChart provides support to plot only the business hours in DateTimeAxis.This support is enabled by setting [`EnableBusinessHours`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~EnableBusinessHours.html#) property to true.
+
+The following properties are used for business hour range calculation
+
+* [`OpenTime`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~OpenTime.html#)- Represents the open working time of a day.
+* [`CloseTime`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~CloseTime.html#)- Represents the close working time of a day.
+* [`WorkingDays`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~WorkingDays.html#)- Represents the working days of a week.
+
+The following code snippet demonstrates the business hours support in DateTimeAxis
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis EnableBusinessHours="True" OpenTime="9" 
+
+CloseTime="24" WorkingDays="Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Sunday">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img49.jpeg)
+
+
+### DateTimeCategoryAxis
+
+[`DateTimeCategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html#) is a special type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to [`CategoryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html#), thereby removing space for missing dates. Intervals and range for the axis are calculated similar to [DateTimeAxis](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#). There are no visual gaps between points, even when the difference between two points is more than a year.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeCategoryAxis LabelFormat="MMM-dd" >
+
+</syncfusion:DateTimeCategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img50.jpeg)
+
+
+### TimeSpan Axis
+
+[`TimeSpanAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html#) is used to plot the time span values in the [`PrimaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html#). [`TimeSpanAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html#) has the advantage of plotting data with milliseconds difference. The limitation of [`TimeSpanAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html#) is that it can only accept timespan values (hh:mm:ss) and date time values are not accepted.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:TimeSpanAxis >
+
+</syncfusion:TimeSpanAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img51.jpeg)
+
+
+**Customizing** **the** **Range**
+
+The following code snippet demonstrates the [`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Minimum.html#) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Maximum.html#) properties for [`TimeSpanAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html#).
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:TimeSpanAxis Minimum="00:00:00" Maximum="00:10:00">
+
+</syncfusion:TimeSpanAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img52.jpeg)
+
+
+### LogarithmicAxis
+
+[`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#) is used to plot the logarithmic scale for the chart. The Logarithmic values will be plotted based on the logarithmic base value as 10.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:LogarithmicAxis />
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img53.jpeg)
+
+
+**Logarithmic** **Base**
+
+You can also change the base for logarithmic values. By default the logarithmic values is calculated the base from 10.The following code example demonstrates the logarithmic values in y axis calculated from base 2.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:LogarithmicAxis LogarithmicBase="2">
+
+</syncfusion:LogarithmicAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img54.jpeg)
+
+
+**Customizing** **the** **Range**
+
+The following code snippet demonstrates the range customization of [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#) based on [`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Minimum.html#) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Maximum.html#) properties.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:LogarithmicAxis Minimum="100" Maximum="7000" >
+
+</syncfusion:LogarithmicAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img55.jpeg)
+
+
+## Customizing the Intervals
+
+[`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) calculates the range and intervals automatically based on the data points. The axis range and interval can be defined using the [`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Minimum.html#), [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Maximum.html#) and [`Interval`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html#) properties.
+
+**NumericalAxis**
+
+The following code snippet demonstrates the interval customization in NumericalAxis.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Interval="250">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img56.jpeg)
+
+
+**CategoryAxis**
+
+The following code snippet demonstrates the interval customization in CategoryAxis.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis Interval="2">
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img57.jpeg)
+
+**DateTimeAxis**
+
+The DateTimeAxis interval value corresponds to the type specified in the [`IntervalType`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property.
+
+For instance, if the Interval is set as 2 and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) is set as Days, the labels are plotted for every two days. The following are the options for [`IntervalType`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property
+
+Auto
+* Days
+* Hours
+* Milliseconds
+* Minutes
+* Months
+* Seconds
+* Years
+
+The default [`IntervalType`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) of a [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis_members.html#) is Auto. It calculates the type automatically and the interval, accordingly.
+
+The following code snippet demonstrates the DateTimeAxis having one month interval.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  Interval="1"  IntervalType="Months" LabelFormat="MMM-dd"></syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img58.jpeg)
+
+
+**DesiredIntervalsCount**
+
+[`DesiredIntervalsCount`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~DesiredIntervalsCount.html#) property is used to specify the count of the axis labels between the first and last label. The following sample code defines the [`DesiredIntervalsCount`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~DesiredIntervalsCount.html#) property.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis DesiredIntervalsCount="7">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img59.jpeg)
+
+
+**Maximum** **Labels**
+
+[`MaximumLabels`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~MaximumLabels.html#) property defines the count of the axis labels in the 100 pixels.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis  MaximumLabels="2">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010">
+
+<syncfusion:ColumnSeries.YAxis>
+
+<syncfusion:NumericalAxis MaximumLabels="2" >
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:ColumnSeries.YAxis>
+
+</syncfusion:ColumnSeries>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img60.jpeg)
+
+
+## Apply Padding to the Range
+
+The [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) and [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) have a [`RangePadding`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html#) property that can be used to add padding to the range of a chart’s axes.
+
+### DateTimeRangePadding
+
+By default the date time range padding is auto.
+
+![](Axis_images/Axis_img61.jpeg)
+
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="Additional">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img62.jpeg)
+
+
+**Round**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="Round">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img63.jpeg)
+
+
+**None**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="None">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>****
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img64.jpeg)
+
+
+### NumericalRangePadding
+
+The following types are available for [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis.html#):
+
+* Additional
+* None
+* Normal
+* Round
+* Auto
+
+By default, the default [`RangePadding`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html#) value for [`PrimaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html#) is Auto and for [`SecondaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html#), the default value is Round.
+
+![](Axis_images/Axis_img65.jpeg)
+
+
+**Normal**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="Normal">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img66.jpeg)
+
+
+**Additional**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="Additional">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img67.jpeg)
+
+
+**None**
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="None">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img68.jpeg)
+
+
+##  Applying Padding to the Axis
+
+[`PlotOffset`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~PlotOffset.html#) property is used to provide padding to the axis. The following code snippet demonstrates the padding applied to both x and y axes.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  PlotOffset="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis PlotOffset="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img69.jpeg)
+
+
+## Auto Interval Calculation on Zooming
+
+[`EnableAutoIntervalOnZooming`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EnableAutoIntervalOnZooming.html#) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
+
+![](Axis_images/Axis_img70.jpeg)
+
+
+If you set [`EnableAutoIntervalOnZooming`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EnableAutoIntervalOnZooming.html#) as False, the intervals will be calculated on the interval based on the axis while zooming.
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  EnableScrollBar="True" Interval="1"
+
+EnableAutoIntervalOnZooming="False">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img71.jpeg)
+
+
+## Multiple Axes
+
+SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis. These axes can be arranged in a stacking order or in a side by side pattern.
+
+By default, all the series are plotted based on primary and secondary axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~XAxis.html#) and [`YAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~YAxis.html#) in all the series type which is used to provide Multiple axes support, except [`AccumulationSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#).
+
+{% highlight xaml %}
+
+<syncfusion:ColumnSeries ItemsSource="{Binding Demands}"
+
+XBindingPath="Demand"  YBindingPath="Year2011">
+
+</syncfusion:ColumnSeries>
+
+<syncfusion:LineSeries  ItemsSource="{Binding Demands}"
+
+XBindingPath="Date"  YBindingPath="Year2011">
+
+<syncfusion:LineSeries.XAxis>
+
+<syncfusion:DateTimeAxis />
+
+</syncfusion:LineSeries.XAxis>
+
+<syncfusion:LineSeries.YAxis>
+
+<syncfusion:NumericalAxis/>
+
+</syncfusion:LineSeries.YAxis>
+
+</syncfusion:LineSeries>
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img72.jpeg)
+
+
+In the above image, the LineSeries is plotted based on additional X & Y axis and ColumnSeries (or remaining series) is plotted against the primary and secondary axis.
+
+## Events
+
+* [`ActualRangeChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html#)   - Occurs at the when the range is changed in the axis.
+* [`LabelCreated`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels is created.
+* [`AxisBoundChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html#)- Occurs when the bounds of the axis changed.

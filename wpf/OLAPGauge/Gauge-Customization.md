@@ -1,177 +1,81 @@
 ---
 layout: post
-title: Gauge Customization | OLAPGauge | wpf | Syncfusion
+title: Gauge Customization | OlapGauge | wpf | Syncfusion
 description: gauge customization
 platform: wpf
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
 # Gauge Customization
 
-## How to customize the layout of multiple gauge controls?
+## Layout Customization
 
-The OLAP Gauge control provides support to display multiple gauges in a structured layout. You can customize the layout by using the ColumnsCount and RowsCount properties. These properties are used to specify the number of columns and rows for displaying controls.
+OlapGauge provides support to display multiple gauges in a structured layout. You can customize the layout by using the **"ColumnsCount"** and **"RowsCount"** properties. These properties are used to specify the number of columns and rows for displaying the control.
 
+{% tabs %}
 
-{%tabs%}
 {% highlight c# %}
  
-    
-
-
-
 this.olapGauge.ColumnsCount = 2;
-
 this.olapGauge.RowsCount = 2;
 
- {% endhighlight %}
+{% endhighlight %}
 
-
-
-
- {% highlight vbnet %}
+{% highlight vbnet %}
   
-    
-
-
-
 Me.olapGauge.ColumnsCount = 2
-
 Me.olapGauge.RowsCount = 2
 
- {% endhighlight %}
-{%endtabs%}
+{% endhighlight %}
 
-
-
-
-
-
-
+{% endtabs %}
 
 ![](Gauge-Customization_images/Gauge-Customization_img1.png)
 
-
-## Sample Location
-
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 
-## How to represent KPI values in OLAP Gauge?
+## KPI
 
-The OLAP Gauge control provides support to display Key Performance Indicators (KPIs) from the OLAP cube. KPIs are displayed with Trend and Status visualizations (Traffic Light, Road Signs and Standard Arrow types are supported).
-
-You can easily view the KPI Value and KPI Goal with the help of _Pointers_ and _Markers_, and the KPI status and KPI trend values through user friendly images in OLAP Gauge WPF.  Each gauge represents a member against one KPI combination.
+OlapGauge provides support to display Key Performance Indicators (KPIs) from the OLAP Cube. You can easily view the KPI Value and KPI Goal with the help of _Pointers_ and _Markers_, and the KPI Status and KPI Trend values through user friendly images (Traffic Light, Road Signs and Standard Arrow) in OlapGauge WPF. Each Gauge represents a member against one KPI combination.
 
 ![](Gauge-Customization_images/Gauge-Customization_img2.png)
 
-
-## Sample Location
-
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 
-## How to show as well as hide gauge header, gauge factor and gauge labels? 
+## Show/Hide Gauge Header, Factor and Labels
 
-The OLAP Gauge control provides support to customize the header, which displays the measure and KPI name. The ShowGaugeHeader property allows you to show or hide the gauge header. If the property is set to true it displays the gauge header.If it is false, then it hides the gauge header. Similarly ShowGaugeFactors and ShowGaugeLabels properties are used for showing and hiding the gauge factors and labels. The following is the code snippet. 
+OlapGauge provides support to customize the header, which displays the measure and KPI name. The **"ShowGaugeHeader"** property allows you to show or hide the Gauge header. If the property is set to true, it displays the Gauge header. If it is set to false, then it hides the Gauge header. Similarly **"ShowGaugeFactors"** and **"ShowGaugeLabels"** properties are used for showing and hiding the Gauge factors and labels. The following is the code sample. 
 
-
-{%tabs%}
-{% highlight c# %}
- 
-    
-
-
-
-this.olapGauge1.ShowGaugeHeaders = true;
-
-this.olapGauge1.ShowGaugeFactors = true;
-
-this.olapGauge1.ShowGaugeLabels = true;
-
- {% endhighlight %}
-
-
-
-
- {% highlight vbnet %}
-  
-   
-
-
-
-Me.olapGauge1.ShowGaugeHeaders = True
-
-Me.olapGauge1.ShowGaugeFactors = True
-
-Me.olapGauge1.ShowGaugeLabels = True
-
- {% endhighlight %}
-
-
-
-
-{%endtabs%}
-
-
-
-
-The following screen shot shows the output:
-
-![](Gauge-Customization_images/Gauge-Customization_img3.png)
-
-{%tabs%}
+{% tabs %}
 
 {% highlight c# %}
  
-    
-
-
-
 this.olapGauge1.ShowGaugeHeaders = false;
-
 this.olapGauge1.ShowGaugeFactors = false;
-
 this.olapGauge1.ShowGaugeLabels = false;
 
- {% endhighlight %}
+{% endhighlight %}
 
-
-
-
- {% highlight vbnet %}
+{% highlight vbnet %}
   
-    
-
-
-
 Me.olapGauge1.ShowGaugeHeaders = False
-
 Me.olapGauge1.ShowGaugeFactors = False
-
 Me.olapGauge1.ShowGaugeLabels = False
 
- {% endhighlight %}
+{% endhighlight %}
 
+{% endtabs %}
 
-
-{%endtabs%}
-
-
-
-
-
-The following screen shot shows the output:
+The following screen shot shows the output.
 
 ![](Gauge-Customization_images/Gauge-Customization_img4.png)
 
-
-## Sample Location
-
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
 

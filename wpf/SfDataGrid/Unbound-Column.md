@@ -317,7 +317,7 @@ var updateValue = this.dataGrid.GetUnBoundCellValue(dataGrid.Columns[5], this.da
 
 ## Styling unbound column
 
-You can customize the style of unbound column by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html) or setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellStyle.html) property.
+You can customize the style of unbound column by writing style of TargetType [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html) or setting [GridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property.
 
 In the below code snippet, Foreground of the cells in GridUnBoundColumn changed based on its content.
 
@@ -447,4 +447,4 @@ You can change the renderer of unbound column by removing the predefined cell ty
 
 ## Templating unbound column
 
-You can load any WPF control in the display mode for `GridUnBoundColumn` by setting [GridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. You can refer the[CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](http://help.syncfusion.com/wpf/sfdatagrid/column-types#gridtemplatecolumn) for more information.
+You can load any WPF control in the display mode for `GridUnBoundColumn` by setting [GridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. You can refer the[CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](http://help.syncfusion.com/wpf/sfdatagrid/column-types#gridtemplatecolumn) for more information.

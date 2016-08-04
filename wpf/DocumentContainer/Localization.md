@@ -20,7 +20,14 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td colspan = "5">
-MDIRestoreMDIMoveMDIResizeMDIFloatingMDIDockableMDIDocumentMDIMinimizeMDIMaximizeMDIClose</td><td>
+MDIRestore,
+MDIMove,
+MDIResize,
+MDIFloating,
+MDIDockable,
+MDIDocument,
+MDIMinimize,
+MDIMaximizeMDIClose</td><td>
 Sets the string for the context menu item in DocumentContainer.</td></tr>
 <tr>
 <td colspan = "6">
@@ -64,7 +71,14 @@ Sets the string for the Tab context menu item in DockingManager and DocumentCont
 {{ '_NewTabGroup(en-US)                                NewTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
-TabCloseCloseAllButThisTabCloseAllFloatingDocumentDockableNewHorizontalTabGroupNewVerticalTabGroup</td><td colspan = "5">
+TabClose,
+CloseAllButThis,
+TabCloseAll,
+Floating,
+Document,
+Dockable,
+NewHorizontalTabGroup,
+NewVerticalTabGroup</td><td colspan = "5">
 Sets the string for the menu item in DocumentContainer and DockingManager.</td></tr>
 <tr>
 <td colspan = "6">

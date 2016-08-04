@@ -77,7 +77,9 @@ The following codes illustrate this:
 
 ItemsSource="{Binding GanttItemSource}"  
 
-ToolTipTemplate="{StaticResource toolTipTemplate}">          
+ToolTipTemplate="{StaticResource toolTipTemplate}"
+
+ShowBaseline="True">          
 
 <gantt:GanttControl.TaskAttributeMapping>
 
@@ -141,6 +143,66 @@ The following image shows the BaseLine Table View:
 
 BaseLine Table View
 {:.caption}
+
+## Baseline Chart View
+
+In Gantt chart, baseline start and end values are graphically visualized.
+
+* Line shape represents the header node and node.
+* Diamond shape represents the milestone.
+
+### Properties
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
+<tr>
+<td>
+ShowBaseline</td><td>
+Controls the view of baseline in the Gantt Chart. Default value is false</td><td>
+DependencyProperty</td><td>
+bool</td><td>
+NA</td></tr>
+</table>
+
+## Baseline Customization
+
+Able to customize the baseline color and thickness by using following properties.
+
+### Properties
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
+<tr>
+<td>
+BaselineColor</td><td>
+Used to customize the baseline color. Default value is Orange</td><td>
+DependencyProperty</td><td>
+Brush</td><td>
+NA</td></tr>
+<tr>
+<td>
+BaselineStrokeThickness</td><td>
+Used to customize the baseline thickness. Default value is 3d</td><td>
+DependencyProperty</td><td>
+bool</td><td>
+NA</td></tr>
+</table>
+
+The following image shows the BaseLine Chart View:
+
+![](Baseline-Support_images/Baseline-Chart_img4.png)
 
 ## Samples
 
