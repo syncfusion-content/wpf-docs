@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection| SfMultiColumnDropDownControl | Wpf | Syncfusion
-description: selection
+title: Selection in SfMultiColumnDropDownControl.
+description: How to handle the Selection in SfMultiColumnDropDownControl.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -9,101 +9,27 @@ documentation: ug
 
 # Selection
 
-SfMultiColumnControl allows you to select the item from the DropDownGrid. SfMultiColumnDropDownControl exposes the following properties for Selection.
+You can get the selected item in the SfDataGrid by using [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedItem.html) property and the selected index by using [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedIndex.html) property. 
 
-* SelectedIndex - This property represents the currently selected index from the Collection. By default it is set to -1.
-* SelectedItem – This property represents the currently selected item. By default, it is set to null.
-* SelectedValue – This property represents the currently selected value from the SelectedItem based on the DisplayMember value .By default it is set to null.
+By using[SelectedValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedValue.html) property, you can get the selected value from the selected item based on the `ValueMember` property.
 
-The following code example illustrates how to set SelectedIndex in SfMultiColumnDropDownControl.
+Its recommend to use the `SelectedItem` and `SelectedValue` instead of using `SelectedIndex` to get the selected value.
+ 
+## Events
 
-{% highlight C# %}
+You can handle the selection operations in SfMultiColumnDropDownControl by using [SelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectionChanged_EV.html) event.
 
+### SelectionChanged
 
+‘SelectionChanged’ event is fired when select the item in SfDataGrid. You can use this event to get the SelectedItem, SelectedValue.[SelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs.html) provides data for ‘SelectionChanged’ event.
 
+{% tabs %}
+{% highlight c# %}
+sfmultiColumn.SelectionChanged += sfmultiColumn _SelectionChanged;
 
-
-<Window.DataContext>
-
-  <local:Viewmodel/>
-
-</Window.DataContext>
-
-
-
-
-
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
-
-SelectedIndex="3"
-
-ValueMember="Designation"                                                   
-
-DisplayMember="Name" 
-
-ItemsSource="{Binding GridItemSource}">
-
-
-
-</syncfusion:SfMultiColumnDropDownControl>
+void sfmultiColumn _SelectionChanged(object sender, Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs args)
+{
+     var selectedValue = (sender as SfMultiColumnDropDownControl).SelectedValue;
+}
 {% endhighlight %}
-
-The following screenshot illustrates the output of the above code.
-
-![](Features_images/Features_img7.png)
-
-
-
-### Event
-
-
-
-<table>
-<tr>
-<th>
-EventName</th><th>
-Description</th></tr>
-<tr>
-<td>
-SelectionChanged</td><td>
-This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{ '_,_' | markdownify }} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
-</table>
-
-## How To
-
-### How to Select the Text When SfMultiColumnDropDownControl got Focus?
-
-
-In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically selects the text when SfMultiColumnDropDownControl got focus from one control. 
-
-The following code example illustrates how to use TextSelectionOnFocus in SfMultiColumnDropDownControl.
-
-
-{% highlight xaml %}
-
-
-
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnControl"                                          
-
-AutoGenerateColumns="True"
-
-DisplayMember="Title"
-
-ItemsSource="{Binding MoviesLists}"
-
-SelectedIndex="3"  
-
-TextSelectionOnFocus="True"  
-
-ValueMember="Cast">
-
-</syncfusion:SfMultiColumnDropDownControl>
-
-{% endhighlight %}
-
-The following screenshot displays the SfMultiDropDownControl when setting TextSelectionOnFocus to true.
-
-![](Features_images/Features_img8.png)
-
-
-
+{% endtabs %}

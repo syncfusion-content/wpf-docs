@@ -56,7 +56,7 @@ Gets or sets colors to bubble shape. </td></tr>
 <tr>
 <td>
 ColorMapping</td><td>
-ObservableCollection;&ltRangeColorMapping;&gt</td><td>
+ObservableCollection;&lt;RangeColorMapping&gt;</td><td>
 Gets or sets the tree map colors.</td></tr>
 <tr>
 <td>

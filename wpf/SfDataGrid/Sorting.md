@@ -10,7 +10,7 @@ documentation: ug
 
 # Sorting
 
-SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowSorting.html) property to `true`.
+SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowSorting.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -23,7 +23,7 @@ dataGrid.AllowSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
-In another way, you can enable or disable the sorting for particular column by setting the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowSorting.html) property.
+In another way, you can enable or disable the sorting for particular column by setting the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowSorting.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,7 +48,7 @@ this.dataGrid.Columns["CustomerID"].AllowSorting = false;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowSorting.html) takes higher priority than [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowSorting.html) property.
+N> The [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowSorting.html) takes higher priority than [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowSorting.html) property.
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
@@ -57,7 +57,7 @@ End users can sort the column by clicking column header cell. Once the columns g
 
 ## Sort column in double click
 
-By default, column gets sorted when column header clicked. You can change this behavior to sort the column in double click action by setting [SfDataGrid.SortClickAction](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortClickAction.html) property to `DoubleClick`.
+By default, column gets sorted when column header clicked. You can change this behavior to sort the column in double click action by setting [SfDataGrid.SortClickAction](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SortClickAction.html) property to `DoubleClick`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,7 +75,7 @@ this.dataGrid.SortClickAction = SortClickAction.DoubleClick;
 
 ## Sorting order
 
-By default, the data is sorted in ascending or descending order when clicking column header. You can rearrange the data to its initial order from descending, when clicking column header by setting [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowTriStateSorting.html) property.
+By default, the data is sorted in ascending or descending order when clicking column header. You can rearrange the data to its initial order from descending, when clicking column header by setting [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowTriStateSorting.html) property.
 
 Following are the sequence of sorting orders when clicking column header, 
 
@@ -95,7 +95,7 @@ In the below screen shot, the OrderID column sorted. Then the CustomerName colum
     
 ### Display sort order
 
-It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowSortNumbers.html) property to `true`. 
+It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowSortNumbers.html) property to `true`. 
 
 {% tabs %}
 {% highlight xaml %}

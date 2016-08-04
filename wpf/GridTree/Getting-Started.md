@@ -97,7 +97,7 @@ Please follow the steps below to add the GridTree control through a designer suc
 
 
 
-4. Once GridTreeControl has been dragged to the designer window, the control will be added to the designer and its dependent DLLs will be added to the project.
+4. Once GridTreeControl has been dragged to the designer window, the control will be added to the designer and its dependent assemblies will be added to the project.
 
 
 

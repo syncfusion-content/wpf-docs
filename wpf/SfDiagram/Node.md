@@ -13,6 +13,24 @@ Nodes are graphical objects used to visually represent the geometrical informati
 
 ![](Node_images/Node_img1.jpeg)
 
+##Basic Shapes
+
+The Basic shapes are common shapes that are used to represent the geometrical information visually. The Shape property of Node can be set with any one of the in-built Basic Shapes.
+
+The following code example illustrates how to create a basic shapes.
+
+{% highlight xaml %}
+
+<!--Initialize Shapes-->
+<ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+ 
+ <!--Add Node-->
+<syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100" 
+                          Shape="{StaticResource Rectangle}"
+                          ShapeStyle="{StaticResource shapestyle}"/>
+
+{% endhighlight %}
+
 ##Create Node
 
 A Node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
@@ -23,43 +41,61 @@ To create a Node, You have to define the Node object and add that to Nodes colle
 
 {% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram">
-    <diagram:SfDiagram.Nodes>
-        <diagram:DiagramCollection>
-            <diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200">
-                <diagram:NodeViewModel.Shape>
-                    <RectangleGeometry Rect="0,0,10,10"/>
-                </diagram:NodeViewModel.Shape>
-                <diagram:NodeViewModel.ShapeStyle>
-                    <Style TargetType="Path">
-                        <Setter Property="Fill" Value="DarkCyan"></Setter>
-                        <Setter Property="Stroke" Value="Black"/>
-                        <Setter Property="StrokeThickness" Value="2"></Setter>
-                        <Setter Property="Stretch" Value="Fill"></Setter>
-                    </Style>
-                </diagram:NodeViewModel.ShapeStyle>
-            </diagram:NodeViewModel>
-        </diagram:DiagramCollection>
-    </diagram:SfDiagram.Nodes>
-</diagram:SfDiagram>
+<!--Style for Node-->
+<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="DarkCyan"/>
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+                <Setter Property="Stretch" Value="Fill"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram  x:Name="diagram">
+    <!--Initialize NodeCollection-->
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection>
+            <!--Initialize Node-->
+            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200">
+            </syncfusion:NodeViewModel>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
+//Create Node
 NodeViewModel node = new NodeViewModel()
 {
+    //Sets the size
 	UnitWidth = 100,
 	UnitHeight = 100,
+    
+    //Sets the position
 	OffsetX = 200,
 	OffsetY = 200,
 	
+    //Customizes the appearance
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
-            
+         
+//Adds the Node to the SfDiagram            
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -95,42 +131,61 @@ The following table illustrates how pivot relates Offset values with Node bounda
 
 {% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram">
-    <diagram:SfDiagram.Nodes>
-        <diagram:DiagramCollection>
-            <diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
-                                   Pivot="0,0">
-                <diagram:NodeViewModel.Shape>
-                    <RectangleGeometry Rect="0,0,10,10"/>
-                </diagram:NodeViewModel.Shape>
-                <diagram:NodeViewModel.ShapeStyle>
-                    <Style TargetType="Path">
-                        <Setter Property="Fill" Value="DarkCyan"></Setter>
-                        <Setter Property="Stroke" Value="Black"/>
-                        <Setter Property="StrokeThickness" Value="2"></Setter>
-                        <Setter Property="Stretch" Value="Fill"></Setter>
-                    </Style>
-                </diagram:NodeViewModel.ShapeStyle>
-            </diagram:NodeViewModel>
-        </diagram:DiagramCollection>
-    </diagram:SfDiagram.Nodes>
-</diagram:SfDiagram>
+<!--Style for Node-->
+<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="DarkCyan"/>
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+                <Setter Property="Stretch" Value="Fill"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram  x:Name="diagram">
+    <!--Initialize NodeCollection-->
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection>
+            <!--Initialize Node-->
+            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
+                                      Pivot="0,0">
+            </syncfusion:NodeViewModel>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
+//Create Node
 NodeViewModel node = new NodeViewModel()
 {
+    //Sets the size
 	UnitWidth = 100,
 	UnitHeight = 100,
+    
+    //Sets the position
 	OffsetX = 200,
 	OffsetY = 200,
+    
+    //Sets pivot point
 	Pivot = new Point(0, 0)
 };
 
+//Adds the Node to the SfDiagram 
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -168,37 +223,9 @@ return style;
 
 ![](Node_images/Node_img4.jpeg)
 
-## View to ViewModel Binding
+##Data Binding
 
-By default, View will be generated for each ViewModel and Properties of ViewModel (NodeViewModel) are bind to View (Node). We have changed this Default Behavior (ViewModel to View binding will not work).In order to achieve ViewModel to View binding, we have provided the Default Style for View in “BindingStyle.xaml”.
- 
-The following code illustrates how to achieve View to View Model binding by using “BindingStyle.xaml”. 
-
-{% highlight xaml %}
- <!--For View to ViewModel binding-->
- <ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
- </ResourceDictionary.MergedDictionaries>
-
-{% endhighlight %}
-
-The following code illustrates how to customize the ViewModel by using Common style for View.
-
-{% highlight xaml %}
-<!--For View to ViewModel binding-->
-<ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
-</ResourceDictionary.MergedDictionaries>
-            
-<!--To apply Style for NodeViewModel,ConnectorViewModel-->
-<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-   <!--Common code for NodeViewModel-->
-</Style>
-<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
-    <!--Common code for ConnectorViewModel-->
-</Style>
-
-{% endhighlight %}
+In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 

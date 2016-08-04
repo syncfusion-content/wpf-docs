@@ -160,8 +160,6 @@ Add a data source and dataset to the Report Designer.
 16. To delete the map, right click and select delete.
 
     ![](Draw-Map-Report-Item_images/Draw-Map-Report-Item_img26.png)
-	
-	![](Draw-Map-Report-Item_images/Draw-Map-Report-Item_img27.png)
    
 
    

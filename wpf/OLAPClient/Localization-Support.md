@@ -132,7 +132,7 @@ Offline Cube</td></tr>
 <tr>
 <td>
 OlapClient_Connect_Dlg_Ok</td><td>
-oK</td></tr>
+OK</td></tr>
 <tr>
 <td>
 OlapClient_Connect_Dlg_Password</td><td>
@@ -176,7 +176,7 @@ Export to Excel</td></tr>
 <tr>
 <td>
 OlapClient_GridToolbar_ExportPdf_ToolTip</td><td>
-Export to Pdf</td></tr>
+Export to PDF</td></tr>
 <tr>
 <td>
 OlapClient_GridToolbar_ExportWord_ToolTip</td><td>
@@ -373,7 +373,7 @@ Show Legend</td></tr>
 <tr>
 <td>
 OlapChart_Dialog_OkButton</td><td>
-Ok</td></tr>
+OK</td></tr>
 <tr>
 <td>
 OlapChart_Dialog_Point_Labels_Tab</td><td>
@@ -478,7 +478,7 @@ Header Style</td></tr>
 <tr>
 <td>
 OlapGrid_Dialog_Ok</td><td>
-Ok</td></tr>
+OK</td></tr>
 <tr>
 <td>
 OlapGrid_Dialog_RowHeader</td><td>
@@ -616,7 +616,7 @@ Cancel</td></tr>
 <tr>
 <td>
 OlapTools_Editor_Ok</td><td>
-Ok</td></tr>
+OK</td></tr>
 <tr>
 <td>
 OlapTools_Editor_SplitButton_Delete_ToolTip</td><td>

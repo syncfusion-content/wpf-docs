@@ -256,7 +256,7 @@ It is a Boolean property and its default value is true so the segment will be pl
 ![Column chart type placed side by side](Area_images/Area_img6.jpeg)
 
 
-The following code example and image illustrates the placement of series while setting [`SidebySideSeriesPlacement`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html#) as false.
+The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html#) as false.
 
 {% highlight xaml %}
 

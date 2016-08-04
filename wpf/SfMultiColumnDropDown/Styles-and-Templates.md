@@ -52,7 +52,7 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 ## Edit Appearance in VisualStudio
 
-This section explain you how to edit a SfMultiColumnDropDownControl style in Visual studio Design View. To Edit the control style in Visual Studio, refer to the following steps,
+This section explain you how to edit a SfMultiColumnDropDownControl style in Visual Studio Design View. To Edit the control style in Visual Studio, refer to the following steps,
 
 1. Open your application in Visual Studio.
 2. Open Design view > Select SfMultiColumnDropDownControl >Right Click on SfMultiColumnDropDownControl, Menu options is displayed.                                                                                                                                                                

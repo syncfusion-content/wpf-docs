@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Key Performance Indicator KPI| OLAP Grid | Wpf | Syncfusion
+title: Key Performance Indicator KPI| OlapGrid | Wpf | Syncfusion
 description: key performance indicator (kpi)
 platform: wpf
-control: OLAP Grid
+control: OlapGrid
 documentation: ug
 ---
 
 # Key Performance Indicator (KPI)
 
-## Definition
-
-KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of Multidimensional Expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPI's calculations.
-
-## KPI Indicators
+KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
 
 The following are the different types of Indicators:
 
@@ -22,14 +18,82 @@ The following are the different types of Indicators:
 * KPI Trend
 * KPI Value
 
-Click here for Sample KPI Report.
+{% tabs %}
+ 
+{% highlight c# %}
+     
+/// <summary>
+/// OlapReport with KPI Elements
+/// </summary>
+/// <returns></returns>
+private OlapReport LoadBasicKPI()
+{
+    OlapReport olapReport = new OlapReport();
+    // Selecting the Cube
+    olapReport.CurrentCubeName = "Adventure Works";
+    KpiElements kpiElement = new KpiElements();
+    // Specifying the KPI Element name and configuring its Indicators
+    kpiElement.Elements.Add(new KpiElement
+    {
+        Name = "Internet Revenue",
+        ShowKPIGoal = true,
+        ShowKPIStatus = true,
+        ShowKPIValue = true,
+        ShowKPITrend = true
+    });
+    DimensionElement dimensionElementRow = new DimensionElement();
+    // Specifying the Name for Row Dimension Element
+    dimensionElementRow.Name = "Date";
+    // Specifying the Level element
+    dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+    // Adding Row Elements
+    olapReport.SeriesElements.Add(dimensionElementRow);
+    // Adding Column Elements
+    olapReport.CategoricalElements.Add(kpiElement);
+    return olapReport;
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+''' <summary>
+''' OlapReport with KPI Elements
+''' </summary>
+''' <returns></returns>
+Private Function LoadBasicKPI() As OlapReport
+    Dim olapReport As New OlapReport()
+    ' Selecting the Cube
+    olapReport.CurrentCubeName = "Adventure Works"
+    Dim kpiElement As New KpiElements()
+    ' Specifying the KPI Element name and configuring its Indicators
+    kpiElement.Elements.Add(New KpiElement()
+    {
+        Name = "Internet Revenue",
+        ShowKPIGoal = true,
+        ShowKPIStatus = true,
+        ShowKPIValue = true,
+        ShowKPITrend = true
+    })
+    Dim dimensionElementRow As New DimensionElement()
+    ' Specifying the Name for Row Dimension Element
+    dimensionElementRow.Name = "Date"
+    ' Specifying the Level element
+    dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+    ' Adding Row Elements
+    olapReport.SeriesElements.Add(dimensionElementRow)
+    ' Adding Column Elements
+    olapReport.CategoricalElements.Add(kpiElement)
+    Return olapReport
+End Function
+
+{% endhighlight %}
+ 
+{% endtabs %}
 
 ![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png)
 
-
-## Sample Location
-
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Application Scenario\KPI Demo
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Product Showcase\KPI
 

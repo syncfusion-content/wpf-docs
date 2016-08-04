@@ -11,6 +11,23 @@ documentation: ug
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
  
+## Improving scrolling performance
+
+You can improve the scrolling performance in SfDataGrid by setting [SfDataGrid.ScrollMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ScrollMode.html) property to “Async”.
+This property enables the SfDataGrid to scroll the rows asynchronously with fade in animation.
+ 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding EmployeeDetails}"
+                       ScrollMode="Async">
+{% endhighlight %}
+{% highlight c# %}  
+this.sfDataGrid.ScrollMode = ScrollMode.Async;
+{% endhighlight %}
+{% endtabs %}  
+                               
 ## Improving loading performance
 
 ### Data virtualization for loading
