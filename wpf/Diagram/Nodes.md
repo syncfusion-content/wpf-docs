@@ -219,7 +219,7 @@ Double</td><td>
 No</td></tr>
 <tr>
 <td>
-IsLabelDragable </td><td>
+IsLabelDraggable </td><td>
 Gets or sets the Label of Node is Dragging or Not.</td><td>
 Dependency  property </td><td>
 bool(true/false)</td><td>
@@ -1984,7 +1984,7 @@ MultilineLabel for Node
 
 Custom Label Support for Node
 
-This feature enables you to customize the Label Position of the Nodes. The IsLabelDragable and LabelDisplacement property is used to customize the Label position of the node. LabelDisplacement property depends on LabelHorizontalAlignment and LabelVerticalAlignment.
+This feature enables you to customize the Label Position of the Nodes. The IsLabelDraggable and LabelDisplacement property is used to customize the Label position of the node. LabelDisplacement property depends on LabelHorizontalAlignment and LabelVerticalAlignment.
 
 
 <table>
@@ -1997,7 +1997,7 @@ Value It Accepts</th><th>
 Default Values</th></tr>
 <tr>
 <td>
-IsLabelDragable </td><td>
+IsLabelDraggable </td><td>
 Gets or sets the Label of the Node to be  Dragged or Not.</td><td>
 Dependency  property </td><td>
 bool(true/false)</td><td>
@@ -2036,7 +2036,7 @@ The Label can be dragged from the Node at runtime, if this property is set to tr
 
 
 
-       (node as Node).IsLabelDragable = true;
+       (node as Node).IsLabelDraggable = true;
 
 {% endhighlight   %}
 
