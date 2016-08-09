@@ -1,3 +1,12 @@
+---
+layout: post
+title: Data Binding 
+description: Learn how to configure the DockingManager child through ItemsSource 
+platform: wpf
+control: DockingManager
+documentation: ug
+---
+
 # Data Binding
 
 Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> Target or Target -> Source) or bidirectional (Source &lt;-&gt; target). 
