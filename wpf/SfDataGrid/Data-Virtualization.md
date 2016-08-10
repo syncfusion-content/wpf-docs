@@ -64,7 +64,7 @@ Use to load data in on-demand. You can load data only for current page from serv
 
 ## Data Virtualization
 
-You can load large amount of data in less time by setting [SfDataGrid.EnableDataVirtualization](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EnableDataVirtualization.html) property to true. This property virtualize the data for all type of collection in SfDataGrid.
+You can load large amount of data in less time by setting [SfDataGrid.EnableDataVirtualization](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EnableDataVirtualization.html) property to true.
 
 {% tabs %}
 {% highlight xaml %}
