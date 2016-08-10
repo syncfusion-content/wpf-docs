@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Filter Row 
-SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterRowPosition.html# "")SfDataGrid.FilterRowPosition property.
+SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -35,6 +35,7 @@ bool isFilterRowIndex = this.dataGrid.IsFilterRowIndex(1);
 {% endhighlight %}
 {% endtabs %}
 **Note:**The above helper methods are available in [Syncfusion.UI.Xaml.Grid.Helpers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers_namespace.html) namespace
+
 ## Built-in Editors
 By default, FilterRow loads the editors based on underlying property type to filter the data easily. You can change the default editors by using [GridColumn.FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html) property.
 {% tabs %}
@@ -150,6 +151,7 @@ Used for filtering the DateTime values.
 </td>
 </tr>
 </table>
+
 ## Filter options
 Based on the editor type, FilterRowCell displays the filter conditions in dropdown where you can easily switch between the conditions to filter the data. You can disable filter options by setting [GridColumn.FilterRowOptionsVisibility](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowOptionsVisibility.html) property.
 
@@ -163,7 +165,7 @@ Based on the editor type, FilterRowCell displays the filter conditions in dropdo
 this.dataGrid.Columns[0].FilterRowOptionsVisibility = System.Windows.Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
-![](FilterRow_images/FilterRow_img3.png)
+![](FilterRow_images/FilterRow_img4.png)
 
 Below are the filter conditions supported by different filter row editors in SfDataGrid.
 <table>
@@ -208,39 +210,43 @@ If we need the ComboBox and MultiSelectComboBox we have to set the {{'[FilterRow
 <tr>
 <td>
 The default filter condition is Equals, the below filter conditions are available in numeric filter.
-1. Equals
-2. Does Not Equal 
-3. Null 
-4. Not Null 
-5. Less Than
-6. Less Than or Equal 
-7. Greater Than
-8. Greater Than or Equal
-
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li> 
+<li>Null</li> 
+<li>Not Null</li> 
+<li>Less Than</li>
+<li>Less Than or Equal</li>
+<li>Greater Than</li>
+<li>Greater Than or Equal</li>
+</ol>
 </td>
 <td>
 The default filter condition is Begins With, the below filter conditions are available in text filter.
-1. Equals
-2. Does Not Equal 
-3. Null 
-4. Not Null 
-5. Begins With
-6. Ends With
-7. Contains 
-8. Empty
-9. Not Empty 
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li> 
+<li>Null</li> 
+<li>Not Null</li> 
+<li>Begins With</li>
+<li>Ends With</li>
+<li>Contains</li>
+<li>Empty</li>
+<li>Not Empty</li> 
+</ol>
 </td>
 <td>
 The default filter condition is Equals, the below filter conditions are available in date time filter.
-1. Equals
-2. Does Not Equal 
-3. Null 
-4. Not Null 
-5. Before 
-6. Before or Equal
-7. After 
-8. After or Equal
-
+<ol>
+<li>Equals</li>
+<li>Does Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Before</li>
+<li>Before or Equal</li>
+<li>After</li>
+<li>After or Equal</li>
+</ol>
 </td>
 <td>
 Always equals filter condition will be applied for filtering the CheckBox value.
@@ -261,7 +267,7 @@ You can change the default FilterRow condition for a corresponding column by usi
 this.dataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqual;
 {% endhighlight %}
 {% endtabs %}
-![](FilterRow_images/FilterRow_img4.png)
+![](FilterRow_images/FilterRow_img3.png)
 
 ## Filtering null values
 You can enable or disable filtering of null values by setting [GridColumn.AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) property. The default value is `true`.
@@ -326,6 +332,7 @@ You can collapse the FilterOption button using `FilterOptionVisibilty` property.
 {% endhighlight %}
 {% endtabs %}
 ## Styling
+
 ### FilterRow style
 You can customize the style of filter row by writing style of TargetType [FilterRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html).
 {% tabs %}
@@ -403,8 +410,7 @@ public class CustomRowGenerator : RowGenerator
         return base.GetGridCell<GridCell>();
     }
 }
-{% endhighlight %}
-{% highlight c# %}
+
 public MainWindow()
 {
     InitializeComponent();
@@ -479,6 +485,7 @@ public class CustomRowGenerator : RowGenerator
 ![](FilterRow_images/FilterRow_img10.png)
 
 ## Customizing FilterRow Editors
+
 ### Customizing the FilterRow Renderer 
 SfDataGrid allows you to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. You can also create new renderers instead of overriding the existing renderer. 
 You can customize the default TextBox editor behavior by overriding `GridFilterRowTextBoxRenderer` class and add the custom renderer to [FilterRowCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterRowCellRenderers.html).
@@ -492,8 +499,7 @@ public class GridFilterRowTextBoxRendererExt : GridFilterRowTextBoxRenderer
 
         }
     }
-{% endhighlight %}
-{% highlight c# %}
+    
 public MainWindow()
 {
     InitializeComponent();
@@ -751,8 +757,7 @@ public class StringToNumericConverter : IValueConverter
         throw new NotImplementedException();
     }
 }
-{% endhighlight %}
-{% highlight c# %}
+
 //Remove the existing renderer
 if (dataGrid.FilterRowCellRenderers.ContainsKey("Numeric"))
     dataGrid.FilterRowCellRenderers.Remove("Numeric");
