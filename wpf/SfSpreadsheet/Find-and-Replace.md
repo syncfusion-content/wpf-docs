@@ -41,23 +41,21 @@ Searches the every occurrence of specific data based on the criteria that you ar
 //Search the entire workbook
 var list = spreadsheet.SearchManager.FindAll(spreadsheet.Workbook, "sample", SearchBy.ByRows, ExcelFindType.Text, false, true);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content ranges,
 
 foreach (var cell in list)
-{
-  cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-  spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+{  
+  spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
 }
 
 //Search the particular worksheet
 var list = spreadsheet.SearchManager.FindAll(spreadsheet.Workbook.Worksheets[0], "sample", SearchBy.ByRows, ExcelFindType.Text, false, true);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content ranges,
 
 foreach (var cell in list)
 {
-  cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-  spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+  spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
 }
 
 {% endhighlight %}
@@ -74,19 +72,17 @@ Searches the next cell that matches those criterias and returns an immediate mat
 
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
 
-// Highlight the matched cell content in grey,
+// To select the matched cell content range,
 
-cell.CellStyle.ColorIndex = ExcelKnownColors.Grey;
-spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
 
 //Search the formula in particular worksheet in row wise,
 
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook.Worksheets[0], "sum", SearchBy.ByRows, ExcelFindType.Text, false, false);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content range,
 
-cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,12 +98,11 @@ Searches and returns the `IRange` list which have conditional formatting within 
 
 var list = spreadsheet.SearchManager.FindConditionalFormatting(spreadsheet.Workbook.Worksheets[0]);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content ranges,
 
 foreach (var cell in list)
 {
-  cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-  spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+  spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
 }
 
 {% endhighlight %}
@@ -124,12 +119,11 @@ Searches and returns the `IRange` list which have constants within the specified
 
 var list = spreadsheet.SearchManager.FindConstants(spreadsheet.Workbook.Worksheets[0]);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content ranges,
 
 foreach (var cell in list)
 {
-  cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-  spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+   spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));         
 }
 
 {% endhighlight %}
@@ -146,13 +140,16 @@ Searches and returns the `IRange` list which have formulas within the specified 
 
 var list = spreadsheet.SearchManager.FindFormulas(spreadsheet.Workbook.Worksheets[0]);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content ranges,
 
 foreach (var cell in list)
 {
-  cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-  spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+   spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
 }
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ### Find DataValidation
 
@@ -165,13 +162,15 @@ Searches and returns the `IRange` list which have data validation within the spe
 
 var list = spreadsheet.SearchManager.FindDataValidation(spreadsheet.Workbook.Worksheets[0]);
 
-// Highlight the matched cell content in blue,
+// To select the matched cell content ranges,
 
 foreach (var cell in list)
 {
-  cell.CellStyle.ColorIndex = ExcelKnownColors.Blue;
-  spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(cell.Row, cell.Column));          
+   spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));        
 }
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Replace
 
