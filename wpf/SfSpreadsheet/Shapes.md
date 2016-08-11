@@ -138,3 +138,28 @@ spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
 
 {% endhighlight %}
 {% endtabs %}
+
+## Select a Shape Programmatically
+
+Users can select a shape programmatically by using [AddSelectedShapes](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~AddSelectedShapes.html) method of [GraphicModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel.html) class.
+
+{% tabs %}
+{% highlight c# %}
+
+var shape = spreadsheet.ActiveSheet.Shapes[2] as ShapeImpl;          
+spreadsheet.ActiveGrid.GraphicModel.AddSelectedShapes(shape);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Clear a Selection
+
+Users can clear the selection from the shapes and move the selection to the grid using [ClearSelection](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~ClearSelection.html) method of `GraphicModel` class.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.ActiveGrid.GraphicModel.ClearSelection();
+
+{% endhighlight %}
+{% endtabs %}

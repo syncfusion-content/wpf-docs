@@ -11,13 +11,17 @@ documentation: ug
 
 Ribbon Customization can be done in two ways,
 
-__Using__ __Control__ __Template__:
+## Using Control Template:
 
-You can customize the Ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html). 
+User can customize the ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html).
 
-__Using__ __Event__:
+## Using Event:
 
-You can create a custom Ribbon tab with user defined menu options in SfSpreadsheet. To achieve this customization, invoke the SfSpreadsheetRibbon Loaded Event and create a custom tab with menu options. Add this custom tab to SfSpreadsheet Ribbon.
+By invoking SfSpreadsheetRibbon Loaded Event, User can add/delete the ribbon menu items.
+
+### Adding a Ribbon Item
+
+To create a custom Ribbon tab with user defined menu options in SfSpreadsheet, 
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,3 +65,36 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+### Removing a Ribbon Item
+
+To remove the ribbon menu items in the SfSpreadsheetRibbon,
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+ribbon.Loaded += ribbon_Loaded;
+    
+void ribbon_Loaded(object sender, RoutedEventArgs e)
+{
+    var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
+
+    if (sfribbon != null)
+    {
+      var item = sfribbon.Items[2];
+      sfribbon.Items.Remove(item);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
