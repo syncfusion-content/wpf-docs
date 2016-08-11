@@ -349,6 +349,12 @@ You can customize the style of filter row by writing style of TargetType [Filte
 ### FilterRowCell style
 You can customize the style of filter row cell by writing style of TargetType [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html).
 {% tabs %}
+{% highlight xaml %}
+<local:FilterRowCellStyleConverter x:Key="filterRowCellStyleConverter"/>
+<Style TargetType="syncfusion:GridFilterRowCell">
+    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource filterRowCellStyleConverter}}"/>
+</Style>
+{% endhighlight %}
 {% highlight c# %}
 public class FilterRowCellStyleConverter : IValueConverter
 {
@@ -369,12 +375,6 @@ public class FilterRowCellStyleConverter : IValueConverter
         return value;
     }
 }
-{% endhighlight %}
-{% highlight xaml %}
-<local:FilterRowCellStyleConverter x:Key="filterRowCellStyleConverter"/>
-<Style TargetType="syncfusion:GridFilterRowCell">
-    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource filterRowCellStyleConverter}}"/>
-</Style>
 {% endhighlight %}
 {% endtabs %}
 ![](FilterRow_images/FilterRow_img9.png)
@@ -490,6 +490,10 @@ public class CustomRowGenerator : RowGenerator
 SfDataGrid allows you to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. You can also create new renderers instead of overriding the existing renderer. 
 You can customize the default TextBox editor behavior by overriding `GridFilterRowTextBoxRenderer` class and add the custom renderer to [FilterRowCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterRowCellRenderers.html).
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:GridTextColumn MappingName="CustomerName"
+                                                     FilterRowEditorType="TextBoxExt"/>
+{% endhighlight %}
 {% highlight c# %}
 public class GridFilterRowTextBoxRendererExt : GridFilterRowTextBoxRenderer
     {
@@ -506,14 +510,16 @@ public MainWindow()
     this.dataGrid.FilterRowCellRenderers.Add("TextBoxExt", new GridFilterRowTextBoxRendererExt());
 }
 {% endhighlight %}
-{% highlight xaml %}
-<syncfusion:GridTextColumn MappingName="CustomerName"
-                                                     FilterRowEditorType="TextBoxExt"/>
-{% endhighlight %}
 {% endtabs %}
 ### Filter based on numeric interval by using the MultiSelectComboBox filter
 By default you can filter the multiple data in the column by using MultiSelectComboBox filter editor type, the below code shows how to filter the data based on range of numeri values by overriding the [ProcessMultipleFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~ProcessMultipleFilters.html) method in [GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html) class.
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:GridNumericColumn MappingName="OrderID" 
+                              FilterRowOptionsVisibility="Collapsed"
+                              NumberDecimalDigits="0"
+                              FilterRowEditorType="ComboBoxExt"/>
+{% endhighlight %}
 {% highlight c# %}
 this.dataGrid.FilterRowCellRenderers.Add("ComboBoxExt", new GridFilterRowComboBoxRendererExt());
 
@@ -724,13 +730,6 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
             }
         }
     }
-{% endhighlight %}
-
-{% highlight xaml %}
-<syncfusion:GridNumericColumn MappingName="OrderID" 
-                              FilterRowOptionsVisibility="Collapsed"
-                              NumberDecimalDigits="0"
-                              FilterRowEditorType="ComboBoxExt"/>
 {% endhighlight %}
 {% endtabs %}
 ![](FilterRow_images/FilterRow_img11.png)
