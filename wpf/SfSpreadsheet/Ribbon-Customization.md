@@ -15,7 +15,7 @@ Ribbon Customization can be done in two ways,
 
 User can customize the ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html).
 
-## Using Events
+## Using Event
 
 By invoking SfSpreadsheetRibbon Loaded Event, User can add/delete the ribbon menu items.
 
