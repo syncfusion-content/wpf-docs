@@ -111,6 +111,7 @@ SfRichTextBoxAdv.InsertTableCommand.Execute(new int[] { 2, 3 }, richTextBoxAdv);
 
 {% endtabs %}
 
+
 The following code example illustrates how to bind the Button UI Command for inserting rows and columns.
 {% tabs %}
 {% highlight xaml %}
@@ -120,6 +121,61 @@ The following code example illustrates how to bind the Button UI Command for ins
 <!-- Inserts one column to the right of current column -->
 <!-- Command parameter can be either Left or Right -->
 <Button Content="Insert Column" Command="RichTextBoxAdv:SfRichTextBoxAdv.InsertColumnCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Right"/>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example illustrates how to bind the Button UI Command for selecting cell, row, column and table.
+{% tabs %}
+{% highlight xml %}
+<!--Selects the Cell--> 
+<Button Content="Select Cell" Command="RichTextBoxAdv:SfRichTextBoxAdv.SelectCellCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<!--Selects the Column-->
+<Button Content="Select Column" Command="RichTextBoxAdv:SfRichTextBoxAdv.SelectColumnCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<!--Selects the Row-->
+<Button Content="Select Row" Command="RichTextBoxAdv:SfRichTextBoxAdv.SelectRowCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<!--Selects the Table-->
+<Button Content="Select Table" Command="RichTextBoxAdv:SfRichTextBoxAdv.SelectTableCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example illustrates how to bind the Button UI Command for merging selected cells.
+{% tabs %}
+{% highlight xaml %}
+<!-- Merges the selected cells -->
+<Button Content="Merge Cells" Command="RichTextBoxAdv:SfRichTextBoxAdv.MergeSelectedCellsCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example illustrates how to bind the Button UI Command to change content alignment of the selected cells.
+{% tabs %}
+{% highlight xaml %}
+<!--Change cell content alignment with command parameter as comma separated(vertical alignment and text alignment)-->
+<Button Content="Cell Content Alignment" Command="RichTextBoxAdv:SfRichTextBoxAdv.CellContentAlignmentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Top,Left" />
+
+<!--or-->
+
+<!--Change cell content alignment with command parameter single sting (vertical alignment and text alignment)-->
+<Button Content="Cell Content Alignment" Command="RichTextBoxAdv:SfRichTextBoxAdv.CellContentAlignmentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"  CommandParameter="CenterRight"/>
+
+<!--or-->
+
+<!--Change cell content alignment with command parameter as string array(vertical alignment and text alignment string order respectively)-->
+<Button Content="Cell Content Alignment" Command="RichTextBoxAdv:SfRichTextBoxAdv.CellContentAlignmentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}">
+    <Button.CommandParameter>
+        <x:Array Type="sys:String" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+            <sys:String>Bottom</sys:String>
+            <sys:String>Left</sys:String>
+        </x:Array>
+    </Button.CommandParameter>
+</Button>
 
 
 {% endhighlight %}
@@ -141,13 +197,4 @@ The following code example illustrates how to Button UI Command for deleting a r
 
 {% endtabs %}
 
-The following code example illustrates how to bind the Button UI Command for merging selected cells.
-{% tabs %}
-{% highlight xaml %}
-<!-- Merges the selected cells -->
-<Button Content="Merge Cells" Command="RichTextBoxAdv:SfRichTextBoxAdv.MergeSelectedCellsCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 
-
-{% endhighlight %}
-
-{% endtabs %}
