@@ -22,7 +22,7 @@ Commands are a way to handle user interface (UI) actions. They are a loosely cou
 
 * Comments – New comment, Delete comment, Delete all comments, Previous comment, Next comment and Show comments.
 
-* Table – Insert table, Insert row, Insert column, Delete table, Delete row, Delete column and Merge selected cells.
+* Table – Insert table, Insert row, Insert column, Delete table, Delete row, Delete column and Merge selected cells, Select cell, Select column, Select row, Select table and Align cell content.
 
 * UI options – Show hyperlink dialog, Show options pane and Layout type.
 
