@@ -59,11 +59,41 @@ SfSpreadsheet allows the user to add and clear the selection in the Active `Spre
 {% tabs %}
 {% highlight c# %}
 
-//To Add the Selection for the given range,
+//To Add the Selection for range,
 spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cells(4,6,5,8));
+
+//To Add the Selection for particular row,
+spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Row(4));
+
+//To Add the Selection for mulitple rows,
+spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Rows(4,9));
+
+//To Add the Selection for particular column,
+spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Col(5));
+
+//To Add the Selection for multiple columns,
+spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cols(5,10));
 
 //To Clear the Selection,
 spreadsheet.ActiveGrid.SelectionController.ClearSelection();
+
+{% endhighlight %}
+{% endtabs %}
+
+## Move Current Cell
+
+SfSpreadsheet allows the user to move the current cell to the mentioned cell in `SpreadsheetGrid`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Moves current cell to the mentioned row and column index of cell,
+spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(5, 5);
+
+For moving the current cell to a different sheet,
+
+spreadsheet.SetActiveSheet("Sheet2");
+spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(6, 5);
 
 {% endhighlight %}
 {% endtabs %}

@@ -161,3 +161,42 @@ SfSpreadsheet provides support to unfreeze the freeze panes in the worksheet of 
 
 {% endhighlight %}
 {% endtabs %}
+
+## Auto Fit Rows and Columns
+
+SfSpreadsheet provides support to fit the rows or columns based on its content at run time.
+
+You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutoFitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
+
+{% tabs %}
+{% highlight c# %}
+
+//To autofit a single column,
+
+spreadsheet.ActiveSheet.AutofitColumn(2);
+spreadsheet.ActiveGrid.SetColumnWidth(2,2,spreadsheet.ActiveSheet.GetColumnWidthInPixels(2)); 
+
+//To autofit multiple columns,
+
+spreadsheet.ActiveSheet["A1:D100"].AutofitColumns();
+for(int i = 1; i <= 4 ; i++)
+{
+   spreadsheet.ActiveGrid.SetColumnWidth(i,i,spreadsheet.ActiveSheet.GetColumnWidthInPixels(i));
+}
+
+//To autofit a single row,
+
+spreadsheet.ActiveSheet.AutofitRow(3);
+spreadsheet.ActiveGrid.SetRowHeight(3,3,spreadsheet.ActiveSheet.GetRowHeightInPixels(3)); 
+
+//To autofit multiple rows,
+
+spreadsheet.ActiveSheet["B1:B5"].AutofitRows();
+for(int i = 1; i <= 5 ; i++)
+{
+   spreadsheet.ActiveGrid.SetRowHeight(i,i,spreadsheet.ActiveSheet.GetRowHeightInPixels(i));
+}
+
+{% endhighlight %}
+{% endtabs %}
+
