@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Localization in SfRichTextBoxAdv
+title: Localization
 description: How to localize the SfRichTextBoxAdv to any language settings
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
+keywords: localization
 ---
 # Localization
 
@@ -41,13 +42,13 @@ End Class
 
 ## Adding Resource file
 
-1. Create a folder with name ‘Resources’ in your application.
-2. Add default English(“en-US”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579) (resource) file of SfRichTextBoxAdv and SfRichTextRibbon in the ‘Resources’ folder named as Syncfusion.SfRichTextBoxAdv.WPF.resx and Syncfusion.SfRichTextRibbon.WPF.resx respectively
-3. Create Resx (resource) files and named as Syncfusion.SfRichTextBoxAdv.WPF. [Culture name].resx and Syncfusion.SfRichTextRibbon.WPF. [Culture name].resx. For example, Syncfusion.SfRichTextBoxAdv.WPF.fr.resx and Syncfusion.SfRichTextRibbon.WPF.fr.resx for French culture. For your reference, French(“fr-FR”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile-912008822) file.
+* Create a folder with name ‘Resources’ in your application.
+* Add default English(“en-US”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579) (resource) file of SfRichTextBoxAdv and SfRichTextRibbon in the ‘Resources’ folder named as Syncfusion.SfRichTextBoxAdv.WPF.resx and Syncfusion.SfRichTextRibbon.WPF.resx respectively
+* Create Resx (resource) files and named as Syncfusion.SfRichTextBoxAdv.WPF. [Culture name].resx and Syncfusion.SfRichTextRibbon.WPF. [Culture name].resx. For example, Syncfusion.SfRichTextBoxAdv.WPF.fr.resx and Syncfusion.SfRichTextRibbon.WPF.fr.resx for French culture. For your reference, French(“fr-FR”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile-912008822) file.
 
 ![](Localization_images/Localization_img1.jpeg)
 
-4. Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfRichTextBoxAdv.WPF.fr.resx and Syncfusion.SfRichTextRibbon.WPF.fr.resx file.
+* Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfRichTextBoxAdv.WPF.fr.resx and Syncfusion.SfRichTextRibbon.WPF.fr.resx file.
 
 ![](Localization_images/Localization_img2.jpeg)
 
