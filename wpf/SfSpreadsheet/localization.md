@@ -55,7 +55,7 @@ The following screenshot shows you the localization in SfSpreadsheet,
 
 ![](localization_images/localization_img1.jpg)
 
-## Modifying the Localized strings in Resource file
+## Modifying the localized strings in Resource file
 
 Users can modify the default localized strings in Resource file by adding the default [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.WPF-2036707012) (resource) file of `SfSpreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.SfSpreadsheet.WPF.resx.
 

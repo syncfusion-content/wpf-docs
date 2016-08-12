@@ -162,7 +162,7 @@ SfSpreadsheet provides support to unfreeze the freeze panes in the worksheet of 
 {% endhighlight %}
 {% endtabs %}
 
-## Autofit Rows and Columns
+## Auto Fit Rows and Columns
 
 SfSpreadsheet provides support to fit the rows or columns based on its content at run time.
 
@@ -173,7 +173,7 @@ You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.co
 
 //To autofit a single column,
 
-spreadsheet.ActiveSheet["B1:B100"].AutofitColumns();
+spreadsheet.ActiveSheet.AutofitColumn(2);
 spreadsheet.ActiveGrid.SetColumnWidth(2,2,spreadsheet.ActiveSheet.GetColumnWidthInPixels(2)); 
 
 //To autofit multiple columns,
@@ -186,7 +186,7 @@ for(int i = 1; i <= 4 ; i++)
 
 //To autofit a single row,
 
-spreadsheet.ActiveSheet["A3:G3"].AutofitRows();
+spreadsheet.ActiveSheet.AutofitRow(3);
 spreadsheet.ActiveGrid.SetRowHeight(3,3,spreadsheet.ActiveSheet.GetRowHeightInPixels(3)); 
 
 //To autofit multiple rows,
