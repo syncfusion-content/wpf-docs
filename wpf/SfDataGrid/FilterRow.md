@@ -200,7 +200,7 @@ When DateTime type is bounded to the {{'[GridColumn](http://help.syncfusion.com/
 
 </td>
 <td>
-When Boolen type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then ChekBoxEditor is loaded in FilterRowCell
+When Boolean type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then CheckBoxEditor is loaded in FilterRowCell
 </td>
 <td>
 If we need the ComboBox and MultiSelectComboBox we have to set the {{'[FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html)'| markdownify }}.
@@ -324,7 +324,7 @@ void dataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs 
 }
 {% endhighlight %}
 {% endtabs %}
-You can collapse the FilterOption button using `FilterOptionVisibilty` property.
+You can collapse the FilterOption button using `FilterRowOptionsVisibility` property.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridNumericColumn MappingName="OrderID" 
@@ -512,7 +512,7 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 ### Filter based on numeric interval by using the MultiSelectComboBox filter
-By default you can filter the multiple data in the column by using MultiSelectComboBox filter editor type, the below code shows how to filter the data based on range of numeri values by overriding the [ProcessMultipleFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~ProcessMultipleFilters.html) method in [GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html) class.
+By default you can filter the multiple data in the column by using MultiSelectComboBox filter editor type, the below code shows how to filter the data based on range of numeric values by overriding the [ProcessMultipleFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~ProcessMultipleFilters.html) method in [GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html) class.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridNumericColumn MappingName="OrderID" 
