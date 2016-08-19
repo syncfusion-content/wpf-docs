@@ -28,7 +28,7 @@ This section will guide you to deploy Essential Grouping in a WPF applications.
 2. In order to do that, go to the References folder in the Solution Explorer. Select all the Syncfusion assemblies, right-click and go to Properties. Change the Copy Local property of the Syncfusion assemblies to true and compile the project.
 3. Check whether the licenses.licx file listed in the project has its Build Action property to be Embedded Resource.
 4. Now you may see that the Syncfusion assemblies referenced in the project are copied to the output directory along with the application executable (bin/debug/).
-5. Deploy the application executable along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application exe in the target machine.
+5. Deploy the application executable along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application executable in the target machine.
  
 Assemblies needed for deployment
 
