@@ -20,7 +20,10 @@ The user can create Rich Interface Applications by defining DataTemplate to a Ca
 
 The following code tells about Data Binding and DataTemplate.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight Xaml %}
+
 <syncfusion:Carousel x:Name="carousel" Height="400" Width="500">
 
 <syncfusion:Carousel.OpacityFractions>
@@ -49,16 +52,36 @@ The following code tells about Data Binding and DataTemplate.
 
 </syncfusion:Carousel>
 
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.ItemsSource = New ObservableCollection(Of String)() From { _
+	"Item1", _
+	"Item2", _
+	"Item3", _
+	"Item4", _
+	"Item5", _
+	"Item6", _
+	"Item7", _
+	"Item8", _
+	"Item9" _
+}
 
 {% endhighlight %}
+
+{% endtabs %}
+
 
 ![](Data-Binding_images/Data-Binding_img1.jpeg)
 

@@ -15,7 +15,10 @@ To get or set the number of items to be displayed in the Carousel control, use *
 
 In the below sample, ItemsPerPage is set as **5**. Hence, while running the sample, only 5 items will be displayed in the path.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight Xaml %}
+
 <syncfusion:Carousel x:Name="carousel" VisualMode="CustomPath"  Height="257" Width="558" ItemsPerPage="5">
 
 <syncfusion:Carousel.OpacityFractions>
@@ -45,15 +48,36 @@ In the below sample, ItemsPerPage is set as **5**. Hence, while running the sam
 </syncfusion:Carousel>
 
 
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+carousel.ItemsSource = New ObservableCollection(Of String)() From { _
+	"Item1", _
+	"Item2", _
+	"Item3", _
+	"Item4", _
+	"Item5", _
+	"Item6", _
+	"Item7", _
+	"Item8", _
+	"Item9" _
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ItemsPerPage-Support_images/ItemsPerPage-Support_img1.jpeg)
 
