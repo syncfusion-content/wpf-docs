@@ -27,7 +27,10 @@ Double<br/><br/></td></tr>
 </table>
 In the below example, TopItemPosition is set to 0.0. So the SelectedItem will be displayed at the beginning of the Path.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight Xaml %}
+
 <syncfusion:Carousel x:Name="carousel" SelectedIndex="3"  VerticalAlignment="Top" VisualMode="CustomPath" Height="257" Width="558"  ItemsPerPage="5" OpacityEnabled="True" ScalingEnabled="True" SkewAngleXEnabled="False"
 
 TopItemPosition="0" >
@@ -85,12 +88,34 @@ Value represents the Opacity of Carousel item in a particular point-->
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+carousel.ItemsSource = New ObservableCollection(Of String)() From { _
+	"Item1", _
+	"Item2", _
+	"Item3", _
+	"Item4", _
+	"Item5", _
+	"Item6", _
+	"Item7", _
+	"Item8", _
+	"Item9" _
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ChangeSelectedItemPosition_images/ChangeSelectedItemPosition_img1.jpeg)
 
