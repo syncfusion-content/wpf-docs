@@ -52,7 +52,7 @@ End Class
 
 ![](Localization_images/Localization_img2.jpeg)
 
-Note: If you have not used SfRichTextRibbon in your application, you can skip Syncfusion.SfRichTextRibbon.WPF. [Culture name].resx file mentioned above.
+N> If you have not used SfRichTextRibbon in your application, you can skip Syncfusion.SfRichTextRibbon.WPF.[Culture name].resx file mentioned above.
 
 The following screenshot shows the localization in SfRichTextBoxAdv and SfRichTextRibbon
 
