@@ -24,7 +24,7 @@ To modify the button control:
 
 
 
-* The Create Style Resource window will appear as shown below. Click OK to create a new style for Button Control.
+* Then Create Style Resource window will appear as shown below. Click OK to create a new style for Button Control.
 
 
 
@@ -34,7 +34,7 @@ To modify the button control:
 
 
 
-* All the resources will be displayed on the resources pane on the right side of design area. These resources can be edited to create a new Style.
+* All the resources will be displayed on the Xaml file of the application. These resources can be edited to create a new Style.
 
 
 
