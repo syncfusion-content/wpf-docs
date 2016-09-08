@@ -8,20 +8,28 @@ documentation: ug
 ---
 
 # Shapes
- This section explains how to charts, sparklines, pictures and textboxes in SfSpreadsheet.
+ This section explains how to import charts, sparklines, pictures and textboxes in SfSpreadsheet.
 
 ## Charts
 
 SfSpreadsheet provides support to import charts from excel which are used to represent numeric data in graphical format to make it easier to understand large quantities of data.
 
-To import the charts into SfSpreadsheet, need to create an instance of [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll “
+For importing charts in SfSpreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SfSpreadsheetHelper.WPF.dll**
 
-Add the `GraphicChartCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Create an instance of Syncfusion.UI.Xaml.SpreadsheetHelper.[GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection by using the helper method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`. 
 
 {% tabs %}
 {% highlight c# %}
 
-    this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+public MainWindow()
+{
+  InitializeComponent();
+  
+  //For importing charts,
+  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -58,14 +66,22 @@ shape.Width = 300;
 
 ## Sparklines
 
-To import the Sparklines into SfSpreadsheet, need to create an instance of [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) is available under the this assembly “Syncfusion.SfSpreadsheetHelper.WPF.dll”
+For importing sparklines in SfSpreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SfSpreadsheetHelper.WPF.dll**
 
-Add the `SparklineCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Create an instance of Syncfusion.UI.Xaml.SpreadsheetHelper.[SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheethelper/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into the Spreadsheet by using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`.
 
 {% tabs %}
 {% highlight c# %}
 
-    this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+public MainWindow()
+{
+  InitializeComponent();
+      
+  //For importing sparklines,
+  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+}
 
 {% endhighlight %}
 {% endtabs %}
