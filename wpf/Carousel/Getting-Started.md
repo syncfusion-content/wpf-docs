@@ -36,7 +36,10 @@ Follow the below steps to add Carousel by using Visual Studio in XAML.
 
 The below code shows how Carousel can be added to an application by using Visual Studio in XAML
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight Xaml %}
+
 <syncfusion:Carousel x:Name="carousel" Height="400" Width="450">        
 
 <syncfusion:CarouselItem>
@@ -155,6 +158,8 @@ The below code shows how Carousel can be added to an application by using Visual
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
@@ -162,7 +167,9 @@ The below code shows how Carousel can be added to an application by using Visual
 
 The below code shows how the Carousel control can be added to an application in C#
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 Carousel carousel = new Carousel();
 carousel.Items.Add(new CarouselItem(){Content="1"});
@@ -173,4 +180,29 @@ carousel.Items.Add(new CarouselItem(){Content="5"});
 this.LayoutRoot.Children.Add(carousel);
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim carousel As New Carousel()
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "1" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "2" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "3" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "4" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "5" _
+})
+Me.LayoutRoot.Children.Add(carousel)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 

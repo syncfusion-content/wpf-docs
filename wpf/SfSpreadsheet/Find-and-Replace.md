@@ -17,7 +17,7 @@ Searches for specific data such as particular number or text according to specif
 
 * [FindAll](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindAll.html)
 * [FindNext](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindNext.html)
-* [FindCondtionalFormatting](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindConditionalFormatting.html)
+* [FindConditionalFormatting](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindConditionalFormatting.html)
 * [FindConstants](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindConstants.html)
 * [FindFormulas](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindFormulas.html)
 * [FindDataValidation](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~FindDataValidation.html)
@@ -87,7 +87,7 @@ spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);
 {% endhighlight %}
 {% endtabs %}
 
-### Find CondtionalFormatting
+### Find Conditional Formatting
 
 Searches and returns the `IRange` list which have conditional formatting within the specified worksheet.
 
@@ -151,7 +151,7 @@ foreach (var cell in list)
 {% endtabs %}
 
 
-### Find DataValidation
+### Find Data Validation
 
 Searches and returns the `IRange` list which have data validation within the specified worksheet.
 

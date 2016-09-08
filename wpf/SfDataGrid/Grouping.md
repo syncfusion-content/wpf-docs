@@ -417,7 +417,7 @@ sfDataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
 {% endhighlight %}
 {% endtabs %}
 
-In the below screenshot customgrouping is applied based on SickLeaveHours column and the inner records in each group are sorted based on SickLeaveHours value.
+In the below screenshot custom grouping is applied based on SickLeaveHours column and the inner records in each group are sorted based on SickLeaveHours value.
 
 
 ![](Grouping_images/Grouping_img10.png)

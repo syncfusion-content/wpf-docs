@@ -1073,7 +1073,7 @@ The following code shows how the automatic layout can be generated.
 
 				WindowStartupLocation="CenterScreen" Name="MainWindow"
 
-				xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
+				xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 				FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
@@ -1464,7 +1464,7 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 					WindowStartupLocation="CenterScreen" Name="MainWindow"
 
-					xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 					FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
@@ -1943,7 +1943,7 @@ N/A</td></tr>
 
 				WindowStartupLocation="CenterScreen" Name="mainwindow"
 
-				xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
+				xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 				FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
@@ -2332,7 +2332,7 @@ The Bounds property of the DiagramView class can be used to specify the position
 
     WindowStartupLocation="CenterScreen" Name="mainwindow"
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
     FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 

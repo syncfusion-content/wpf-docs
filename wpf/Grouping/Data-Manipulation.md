@@ -651,7 +651,7 @@ Console.ReadLine()
 We used a simplest overload in the previous section for sorting the data. The TableDescriptor.SortedColumns.Add method has three overloads as shown below:
 
 * Add(string propertyName) 
-* Add(string propertyName, ListSortDirection dir) 
+* Add(string propertyName, ListSortDirection direction) 
 * Add(SortColumnDescriptor sdc)
 
 The following code snippets illustrate the syntax for these overloads:
@@ -661,7 +661,7 @@ The following code snippets illustrate the syntax for these overloads:
 
 public int Add(string propertyName);
 
-public int Add(string propertyName, ListSortDirection dir);
+public int Add(string propertyName, ListSortDirection direction);
 
 public int Add(SortColumnDescriptor sdc); 
 

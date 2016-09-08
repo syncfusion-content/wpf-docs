@@ -143,7 +143,79 @@ This section discusses about how to use the SfRichTextBoxAdv control as a standa
 
 </Window>
 
+{% endhighlight %}
+
+{% endtabs %}
+
+## Creating Document editor with Ribbon
+
+This section discusses about how to create document editor with ribbon similar to Microsoft Word. The SfRichTextRibbon is a Ribbon control customized to work with SfRichTextBoxAdv control, which gives you the look and feel of Microsoft Word.
+You can find the SfRichTextRibbon control from the following assembly under the namespace Syncfusion.Windows.Controls.RichTextBoxAdv
+
+* Syncfusion.SfRichTextRibbon.WPF
+
+The following assembly reference are additionally required to deploy SfRichTextRibbon control along with aforementioned assemblies.
+
+* Syncfusion.Tools.WPF
+
+
+### Adding the Control via Designer
+
+1.Create new WPF application in Visual Studio
+
+2.Use the Syncfusion RibbonWindow instead of Window
+
+![](Getting-Started_images/Getting-Started_img2.jpeg)
+
+3.Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
+
+![](Getting-Started_images/Getting-Started_img3.jpeg)
+
+4.Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
+
+![](Getting-Started_images/Getting-Started_img4.jpeg)
+
+5.To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfRichTextRibbon x:Name="richTextRibbon SnapsToDevicePixels="True" DataContext="{Binding ElementName=richTextBoxAdv}" /> 
 
 {% endhighlight %}
 
 {% endtabs %}
+
+
+### Adding Control via code.
+
+You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by using XAML
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:RibbonWindow x:Class="DocumentEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocumentEditor"
+        mc:Ignorable="d"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="MainWindow" Height="350" Width="525" Syncfusion:SkinStorage.VisualStyle="Office2013">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Syncfusion:SfRichTextRibbon x:Name="richTextRibbon" SnapsToDevicePixels="True"/>
+        <Syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" Background="#F1F1F1" Grid.Row="1"></Syncfusion:SfRichTextBoxAdv>
+    </Grid>
+</Syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Prefer using `SfRichTextRibbon` within `RibbonWindow` in your application, since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
+
+Finally, you can get the following output similar to Microsoft Word on executing the application
+![](Getting-Started_images/Getting-Started_img5.jpeg)
