@@ -134,7 +134,111 @@ public class ViewModel : INotifyPropertyChanged
 
 
 {% endhighlight %}
+{% highlight VB %}
+''' <summary>
+''' Represents the view model class.
+''' </summary>
+Public Class ViewModel
+	Implements INotifyPropertyChanged
+	#Region "Field"
+	Private m_animal As String
+	Private m_text As String
+	Private m_animals As Dictionary(Of String, String) = Nothing
+	Private skipUpdating As Boolean = False
+	#End Region
 
+	#Region "Properties"
+	''' <summary>
+	''' Gets or sets the animal.
+	''' </summary>
+	''' <value>
+	''' The document title.
+	''' </value>
+	Public Property Animal() As String
+		Get
+			Return m_animal
+		End Get
+		Set
+			m_animal = value
+			NotifyPropertyChanged("Animal")
+		End Set
+	End Property
+	''' <summary>
+	''' Gets the animals.
+	''' </summary>
+	''' <value>
+	''' The animals.
+	''' </value>
+	Public ReadOnly Property Animals() As ICollection(Of String)
+		Get
+			Return m_animals.Keys
+		End Get
+	End Property
+	''' <summary>
+	''' Gets or sets the Text.
+	''' </summary>
+	''' <value>
+	''' The document.
+	''' </value>
+	Public Property Text() As String
+		Get
+			Return m_text
+		End Get
+		Set
+			m_text = value
+			NotifyPropertyChanged("Text")
+		End Set
+	End Property
+	#End Region
+
+	#Region "Event"
+	Public Event PropertyChanged As PropertyChangedEventHandler
+	#End Region
+
+	#Region "Constructor"
+	''' <summary>
+	''' Initializes a new instance of the <see cref="ViewModel"/> class.
+	''' </summary>
+	Public Sub New()
+		Initialize()
+	End Sub
+	#End Region
+
+	#Region "Implementation"
+	''' <summary>
+	''' Handles initialization.
+	''' </summary>
+	Private Sub Initialize()
+		m_animals = New Dictionary(Of String, String)()
+
+		m_animals.Add("Tiger", "The tiger is the largest cat species, reaching a total body length of up to 3.38 m over curves and exceptionally weighing up to 388.7 kg in the wild.")
+		m_animals.Add("Lion", "The lion (Panthera leo) is one of the five big cats in the genus Panthera and a member of the family Felidae.")
+		m_animals.Add("Panda", "The giant panda, also known as panda bear or simply panda, is a bear native to south central China. It is easily recognized by the large, distinctive black patches around its eyes, over the ears, and across its round body.")
+		m_animals.Add("Beer", "Bears are mammals of the family Ursidae. Bears are classified as caniforms, or doglike carnivorans, with the pinnipeds being their closest living relatives.")
+		m_animals.Add("Deer", "Deer are the ruminant mammals forming the family Cervidae. Species in the family include the white-tailed deer, mule deer, elk, moose, red deer, reindeer, fallow deer, roe deer, pudú and chital.")
+
+		Animal = "Lion"
+	End Sub
+	''' <summary>
+	''' Notifies the property changed.
+	''' </summary>
+	''' <param name="propertyName">Name of the property.</param>
+	Private Sub NotifyPropertyChanged(propertyName As String)
+		RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		' Updates the text when the animal changes (reflects the view).
+		If propertyName = "Animal" Then
+			skipUpdating = True
+			Text = m_animals(m_animal)
+			skipUpdating = False
+		End If
+		' Updates the document content, when changes done in view.
+		If propertyName = "Text" AndAlso Not skipUpdating Then
+			m_animals(Animal) = Text
+		End If
+	End Sub
+	#End Region
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 ## Implementing extension class for SfRichTextBoxAdv
@@ -260,7 +364,114 @@ public class SfRichTextBoxAdvExtension : SfRichTextBoxAdv
 
 
 {% endhighlight %}
+{% highlight VB %}
+''' <summary>
+''' Represents the extension class for SfRichTextBoxAdv.
+''' </summary>
+Public Class SfRichTextBoxAdvExtension
+	Inherits SfRichTextBoxAdv
+	#Region "Fields"
+	Private skipUpdating As Boolean = False
+	#End Region
 
+	#Region "Properties"
+	''' <summary>
+	''' Gets or Sets the text.
+	''' </summary>
+	Public Property Text() As String
+		Get
+			Return DirectCast(GetValue(TextProperty), String)
+		End Get
+		Set
+			SetValue(TextProperty, value)
+		End Set
+	End Property
+	#End Region
+	
+	#Region "Constructor"
+''' <summary>
+''' Initializes the instance of SfRichTextBoxAdvExtension class.
+''' </summary>
+Public Sub New()
+	' Wires the ContentChanged event.
+	Me.ContentChanged += RicTextBoxAdv_ContentChanged
+End Sub
+#End Region
+
+#Region "Static Dependency Properties"
+''' <summary>
+''' Using as a backing store for Text dependency property to enable styling, animation etc.
+''' </summary>
+Public Shared ReadOnly TextProperty As DependencyProperty = DependencyProperty.Register("Text", GetType(String), GetType(SfRichTextBoxAdvExtension), New PropertyMetadata(String.Empty, New PropertyChangedCallback(OnTextChanged)))
+#End Region
+
+#Region "Static Events"
+''' <summary>
+''' Called when text changed.
+''' </summary>
+''' <param name="obj"></param>
+''' <param name="e"></param>
+Private Shared Sub OnTextChanged(obj As DependencyObject, e As DependencyPropertyChangedEventArgs)
+	Dim richTextBox As SfRichTextBoxAdvExtension = DirectCast(obj, SfRichTextBoxAdvExtension)
+	'Update the document with the Text.
+	richTextBox.UpdateDocument(DirectCast(e.NewValue, String))
+End Sub
+#End Region
+
+#Region "Events"
+''' <summary>
+''' Called when content changes in SfRichTextBoxAdv.
+''' </summary>
+''' <param name="obj"></param>
+''' <param name="args"></param>
+Private Sub RicTextBoxAdv_ContentChanged(obj As Object, args As ContentChangedEventArgs)
+	If Me.Document IsNot Nothing Then
+		' To skip internal updation of document on setting Text property.
+		skipUpdating = True
+		Dim stream As Stream = New MemoryStream()
+		' Saves the document's text into a Stream.
+		Me.Save(stream, FormatType.Txt)
+		stream.Position = 0
+		' Reads the text from the stream.
+		Using reader As New StreamReader(stream)
+			Me.Text = reader.ReadToEnd()
+		End Using
+		skipUpdating = False
+	End If
+End Sub
+#End Region
+
+#Region "Implementation"
+''' <summary>
+''' Updates the document.
+''' </summary>
+''' <param name="text"></param>
+Private Sub UpdateDocument(text As String)
+	' If text property is set internally means, skip updating the document.
+	If Not skipUpdating AndAlso Not String.IsNullOrEmpty(text) Then
+		Dim stream As Stream = New MemoryStream()
+		' Convert the text to byte array.
+		Dim bytes As Byte() = Encoding.UTF8.GetBytes(text)
+		' Writes the byte array to stream.
+		stream.Write(bytes, 0, bytes.Length)
+		stream.Position = 0
+		'Load the stream.
+		Load(stream, FormatType.Txt)
+	End If
+End Sub
+''' <summary>
+''' Disposes the instance.
+''' </summary>
+Public Shadows Sub Dispose()
+	Me.ContentChanged -= RicTextBoxAdv_ContentChanged
+	ClearValue(TextProperty)
+	MyBase.Dispose()
+End Sub
+#End Region
+End Class
+
+
+{% endhighlight %}
 {% endtabs %}
 
 ## Creating XAML View

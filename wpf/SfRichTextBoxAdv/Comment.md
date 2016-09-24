@@ -85,7 +85,34 @@ private void RichTextBoxAdv_CommentAdding(object obj, CommentAddingEventArgs arg
 
 
 {% endhighlight %}
+{% highlight VB %}
+// Hooks the CommentAdding event of RichTextBoxAdv.
+richTextBoxAdv.CommentAdding += RichTextBoxAdv_CommentAdding;
 
+// Unhooks the CommentAdding event of RichTextBoxAdv.
+richTextBoxAdv.CommentAdding -= RichTextBoxAdv_CommentAdding;
+
+' Handles the CommentAdding event of the richTextBoxAdv control.
+Private Sub RichTextBoxAdv_CommentAdding(obj As Object, args As CommentAddingEventArgs)
+	If Not isFileLoading Then
+		'Defines the author and initial for the comment.
+		args.Comment.Author = "Peter"
+		args.Comment.Initial = "Franken"
+	End If
+
+	' Defines the background brush for the comment.
+	args.VisualStyle.BackgroundBrush = New SolidColorBrush(Color.FromArgb(&Hff, &Hff, &Ha8, &Ha8))
+
+	' Defines the border brush for the comment.
+	args.VisualStyle.BorderBrush = New SolidColorBrush(Color.FromArgb(&Hff, &Hff, &H1, &H1))
+
+	' Defines the highlight color for the commented content.
+	args.VisualStyle.HighlightColor = Color.FromArgb(&Hff, &Hff, &Ha8, &H8)
+
+End Sub
+
+
+{% endhighlight %}
 {% endtabs %}
 ![](Comment_images/Comment_img2.jpeg)
 

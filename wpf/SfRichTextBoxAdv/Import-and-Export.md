@@ -35,7 +35,26 @@ void ImportDocument ()
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Imports the document.
+Private Sub ImportDocument()
+	' Initializes the open file dialog.
+	Dim openFileDialog As New OpenFileDialog() With { _
+		Key .Filter = "All supported files (*.docx,*.doc,*.htm,*.html,*.rtf,*.txt,*.xaml)|*.docx;*.doc;*.htm;*.html;*.rtf;*.txt;*.xaml|Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml", _
+		Key .FilterIndex = 1, _
+		Key .Multiselect = False _
+	}
 
+	If CBool(openFileDialog.ShowDialog()) Then
+		' Loads the file into RichTextBoxAdv.
+		richTextBoxAdv.Load(openFileDialog.FileName)
+		' Sets the File name as Document Title.
+		richTextBoxAdv.DocumentTitle = openFileDialog.FileName.Remove(openFileDialog.FileName.LastIndexOf("."))
+	End If
+End Sub
+
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code example demonstrates how to export SfRichTextBoxAdv contents into a file.
@@ -60,7 +79,22 @@ void ExportDocument ()
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Exports the document.
+Private Sub ExportDocument()
+	' Initializes the file save picker.
+	Dim saveFileDialog As New SaveFileDialog() With { _
+		Key .Filter = "Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml", _
+		Key .FilterIndex = 1 _
+	}
+	If CBool(saveFileDialog.ShowDialog()) Then
+		' Saves the document content into a file.
+		richTextBoxAdv.Save(saveFileDialog.FileName)
+	End If
+End Sub
 
+
+{% endhighlight %}
 {% endtabs %}
 
 N> When the SfRichTextBoxAdv control encounters an unsupported element, it does not render the element, instead, it continues to the next supported element and render it. Examples of unsupported elements are AutoShapes, watermarks, charts, SmartArt, WordArt, equations, document structure tags, styles, wrapping styles, fields other than hyperlinks, absolutely positioned tables, and absolutely positioned images.

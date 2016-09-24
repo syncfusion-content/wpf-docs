@@ -98,6 +98,42 @@ paragraphAdv.ParagraphFormat.ListFormat.ListId = 1;
 paragraphAdv.ParagraphFormat.ListFormat.ListLevelNumber = 0;
 
 {% endhighlight %}
+{% highlight VB %}
+' Initializes a new abstract list instance.
+Dim abstractListAdv As New AbstractListAdv(Nothing)
+abstractListAdv.AbstractListId = 1
+
+' Defines new ListLevel instance.
+Dim listLevel As New ListLevelAdv(abstractListAdv)
+listLevel.ParagraphFormat.LeftIndent = 48.0
+listLevel.ParagraphFormat.FirstLineIndent = 24.0
+listLevel.FollowCharacter = FollowCharacterType.Tab
+listLevel.ListLevelPattern = ListLevelPattern.LowLetter
+listLevel.NumberFormat = "%1."
+listLevel.RestartLevel = 0
+listLevel.StartAt = 1
+
+' Adds list level to abstract list.
+abstractListAdv.Levels.Add(listLevel)
+
+' Adds abstract list to the document.
+richTextBoxAdv.Document.AbstractLists.Add(abstractListAdv)
+
+' Creates a new list instance.
+Dim listAdv As New ListAdv(Nothing)
+listAdv.ListId = 1
+' Sets the abstract list Id for this list.
+listAdv.AbstractListId = 1
+
+' Adds list to the document.
+richTextBoxAdv.Document.Lists.Add(listAdv)
+
+' Defines the list format for the paragraph.
+paragraphAdv.ParagraphFormat.ListFormat.ListId = 1
+paragraphAdv.ParagraphFormat.ListFormat.ListLevelNumber = 0
+
+
+{% endhighlight %}
 
 {% endtabs %}
 The following code example demonstrates how to define number format for numbered list in the SfRichTextBoxAdv control.
@@ -113,7 +149,18 @@ listLevel.ListLevelPattern = ListLevelPattern.UpRoman;
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Defines the number format for the list level.
+' Note
+'* The percent sign (%) followed by any number from 1 through 9 represents the number style from the respective list level. 
+'* For example, if you wanted the format for the first level to be "Article I." "Article II," and so on, the string for the NumberFormat property would be "Article %1." and the ListLevelPattern property would be set to ListLevelPattern.UpRoman.
+'
 
+listLevel.NumberFormat = "Article %1."
+listLevel.ListLevelPattern = ListLevelPattern.UpRoman
+
+
+{% endhighlight %}
 {% endtabs %}
 
 You can define bulleted list by setting list level pattern as Bullet. You can define various bullets by defining the bullet character. The following code sample demonstrates how to define dot, square and arrow bullets in the SfRichTextBoxAdv control.
@@ -133,7 +180,21 @@ listLevel.CharacterFormat.FontFamily = new FontFamily("Symbol");
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Defines Bulleted List.
+listLevel.ListLevelPattern = ListLevelPattern.Bullet
+' Defining Dot Bullet
+listLevel.NumberFormat = "\uf0b7"
+listLevel.CharacterFormat.FontFamily = New FontFamily("Symbol")
+' Defines Square bullet.
+listLevel.NumberFormat = "\uf0a7"
+listLevel.CharacterFormat.FontFamily = New FontFamily("Wingdings")
+' Defines Arrow Bullet.
+listLevel.NumberFormat = "\u27a4"
+listLevel.CharacterFormat.FontFamily = New FontFamily("Symbol")
 
+
+{% endhighlight %}
 {% endtabs %}
 
 ## Level overrides
@@ -166,7 +227,16 @@ listAdv.LevelOverrides.Add(levelOverride);
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Adds StartAtOverride for the list at first level.
+' LevelNumber ranges from 0 to 8.
+Dim levelOverride As New LevelOverrideAdv(listAdv)
+levelOverride.LevelNumber = 0
+levelOverride.StartAt = 2
+listAdv.LevelOverrides.Add(levelOverride)
 
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code example demonstrates how to add level override for any existing list level in the SfRichTextBoxAdv control.
@@ -198,7 +268,19 @@ listAdv.LevelOverrides.Add(levelOverride);
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Adds ListLevel override for the list at fourth level.
+' LevelNumber ranges from 0 to 8.
+Dim levelOverride As New LevelOverrideAdv(listAdv)
+levelOverride.LevelNumber = 3
+levelOverride.OverrideListLevel = New ListLevelAdv(levelOverride)
+levelOverride.OverrideListLevel.ListLevelPattern = ListLevelPattern.UpRoman
+levelOverride.OverrideListLevel.NumberFormat = "%1)"
+levelOverride.OverrideListLevel.StartAt = 3
+listAdv.LevelOverrides.Add(levelOverride)
 
+
+{% endhighlight %}
 {% endtabs %}
 
 ## Editing list
@@ -212,7 +294,12 @@ ListAdv listAdv = richTextBoxAdv.Selection.ParagraphFormat.GetList();
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Gets the current list for the selection content.
+Dim listAdv As ListAdv = richTextBoxAdv.Selection.ParagraphFormat.GetList()
 
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code example demonstrates how to apply a list for the selection content in the SfRichTextBoxAdv control. When the selection content has a list, then it gets modified with that list. Otherwise the list is added to the document and applied to the selection content.
@@ -224,5 +311,11 @@ richTextBoxAdv.Selection.ParagraphFormat.ListLevelNumber = 0;
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Applies list for the Selection content.
+richTextBoxAdv.Selection.ParagraphFormat.SetList(listAdv)
+richTextBoxAdv.Selection.ParagraphFormat.ListLevelNumber = 0
 
+
+{% endhighlight %}
 {% endtabs %}

@@ -83,7 +83,49 @@ richTextBoxAdv.Document = document;
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Initializes a document.
+Dim document As New DocumentAdv()
 
+' Initialize a section.
+Dim section As New SectionAdv()
+
+' Initialize a table.
+Dim tableAdv As New TableAdv()
+
+' Initialize a row.
+Dim tableRowAdv As New TableRowAdv()
+
+' Initialize a table cell.
+Dim tableCellAdv As New TableCellAdv()
+tableCellAdv.CellFormat.CellWidth = 240
+
+' Initializes a paragraph.
+Dim paragraphAdv As New ParagraphAdv()
+Dim spanAdv As New SpanAdv()
+spanAdv.Text = "Cell 1"
+paragraphAdv.Inlines.Add(spanAdv)
+
+tableCellAdv.Blocks.Add(paragraphAdv)
+' Initialize and add any number of blocks to the cell here.
+
+tableRowAdv.Cells.Add(tableCellAdv)
+' Initialize and add any number of cells to the row here.
+
+tableAdv.Rows.Add(tableRowAdv)
+' Initialize and add any number of rows to the table here.
+
+section.Blocks.Add(tableAdv)
+' Initialize and add any number of blocks to the section here.
+
+document.Sections.Add(section)
+' Initialize and add any number of sections to the document here.
+
+' Assign the documen to the RichTextBoxAdv instance.
+richTextBoxAdv.Document = document
+
+
+{% endhighlight %}
 {% endtabs %}
 
 ## UI Commands for accessing table
@@ -108,7 +150,15 @@ SfRichTextBoxAdv.InsertTableCommand.Execute(new int[] { 2, 3 }, richTextBoxAdv);
 
 
 {% endhighlight %}
+{% highlight VB %}
+' InsertTableCommand accepting string parameter.
+SfRichTextBoxAdv.InsertTableCommand.Execute("2,3", richTextBoxAdv)
 
+' InsertTableCommand accepting int[] with row, column size as parameter
+SfRichTextBoxAdv.InsertTableCommand.Execute(New Integer() {2, 3}, richTextBoxAdv)
+
+
+{% endhighlight %}
 {% endtabs %}
 
 
