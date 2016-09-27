@@ -146,7 +146,7 @@ Public Partial Class FontWindow
 	Public Sub New(rte As SfRichTextBoxAdv)
 		InitializeComponent()
 		fontDialog.DataContext = rte
-		Me.Loaded += FontWindow_Loaded
+		AddHandler this.Loaded,AddressOf FontWindow_Loaded
 	End Sub
 ''' <summary>
 ''' Called when the font window is loaded.
@@ -158,11 +158,11 @@ Private Sub FontWindow_Loaded(sender As Object, e As RoutedEventArgs)
 	Dim font As FontDialog = TryCast(VisualUtils.FindDescendant(TryCast(sender, FontWindow), GetType(FontDialog)), FontDialog)
 	Dim cancelButton As Button = TryCast(font.Template.FindName("PART_CancelButton", TryCast(font, FrameworkElement)), Button)
 	If cancelButton IsNot Nothing Then
-		cancelButton.Click += CancelButton_Click
+		AddHandler cancelButton.Click,AddressOf CancelButton_Click 
 	End If
 	Dim applybutton As Button = TryCast(font.Template.FindName("PART_ApplyFontFormatButton", TryCast(font, FrameworkElement)), Button)
 	If applybutton IsNot Nothing Then
-		applybutton.Click += Applybutton_Click
+		Addhandler applybutton.Click,AddressOf Applybutton_Click
 	End If
 End Sub
 
@@ -257,7 +257,7 @@ Public Partial Class MainWindow
 	Public Sub New()
 		InitializeComponent()
 		fontWindow = New FontWindow(richTextBoxAdv)
-		Me.Unloaded += MainWindow_Unloaded
+		AddHandler this.Unloaded,AddressOf MainWindow_Unloaded
 	End Sub
 	Private Sub MainWindow_Unloaded(sender As Object, e As RoutedEventArgs)
 	fontWindow.Close()

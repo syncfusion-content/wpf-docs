@@ -110,7 +110,7 @@ richTextBoxAdv.RequestNavigate -= RichTextBoxAdv_RequestNavigate;
 {% endhighlight %}
 {% highlight VB %}
 ' Hooks the event handler for RequestNavigate event.
-richTextBoxAdv.RequestNavigate += RichTextBoxAdv_RequestNavigate
+AddHandler richTextBoxAdv.RequestNavigate,AddressOf RichTextBoxAdv_RequestNavigate
 
 ''' <summary>
 ''' Handles the RequestNavigate event of the richTextBoxAdv control.
@@ -126,7 +126,7 @@ Private Sub RichTextBoxAdv_RequestNavigate(obj As Object, args As Syncfusion.Win
 End Sub
 
 ' Unhooks the event handler for RequestNavigate event.
-richTextBoxAdv.RequestNavigate -= RichTextBoxAdv_RequestNavigate
+RemoveHandler richTextBoxAdv.RequestNavigate,AddressOf RichTextBoxAdv_RequestNavigate
 
 
 {% endhighlight %}

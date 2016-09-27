@@ -86,11 +86,11 @@ private void RichTextBoxAdv_CommentAdding(object obj, CommentAddingEventArgs arg
 
 {% endhighlight %}
 {% highlight VB %}
-// Hooks the CommentAdding event of RichTextBoxAdv.
-richTextBoxAdv.CommentAdding += RichTextBoxAdv_CommentAdding;
+' Hooks the CommentAdding event of RichTextBoxAdv.
+AddHandler richTextBoxAdv.CommentAdding,AddressOf RichTextBoxAdv_CommentAdding
 
-// Unhooks the CommentAdding event of RichTextBoxAdv.
-richTextBoxAdv.CommentAdding -= RichTextBoxAdv_CommentAdding;
+' Unhooks the CommentAdding event of RichTextBoxAdv.
+RemoveHandler richTextBoxAdv.CommentAdding,AddressOf RichTextBoxAdv_CommentAdding
 
 ' Handles the CommentAdding event of the richTextBoxAdv control.
 Private Sub RichTextBoxAdv_CommentAdding(obj As Object, args As CommentAddingEventArgs)

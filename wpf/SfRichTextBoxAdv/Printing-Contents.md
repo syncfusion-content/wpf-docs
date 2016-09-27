@@ -44,7 +44,7 @@ richTextBoxAdv.PrintCompleted -= RichTextBoxAdv_PrintCompleted;
 {% endhighlight %}
 {% highlight VB %}
 ' Hooks the print completed event.
-richTextBoxAdv.PrintCompleted += RichTextBoxAdv_PrintCompleted
+AddHandler richTextBoxAdv.PrintCompleted,AddressOf RichTextBoxAdv_PrintCompleted
 
 ' Called whenever the print completed event is fired.
 Private Sub RichTextBoxAdv_PrintCompleted(obj As Object, args As PrintCompletedEventArgs)
@@ -52,7 +52,7 @@ Private Sub RichTextBoxAdv_PrintCompleted(obj As Object, args As PrintCompletedE
 End Sub
 
 ' Unhooks the print completed event.
-richTextBoxAdv.PrintCompleted -= RichTextBoxAdv_PrintCompleted
+RemoveHandler richTextBoxAdv.PrintCompleted,AddressOf RichTextBoxAdv_PrintCompleted
 {% endhighlight %}
 {% endtabs %}
 
