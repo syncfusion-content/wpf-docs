@@ -13,7 +13,7 @@ SfDataGrid allows you to validate the data and display hints in case of validati
  
 ## Built-in validations
 
-Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) properties.
+Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) properties.
 
  `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
  
@@ -67,7 +67,7 @@ public class OrderInfo : IDataErrorInfo
 {% endhighlight %}
 {% endtabs %}
 
-Enable built-in validation support by setting [SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) property to `InEdit` or `InView`.
+Enable built-in validation support by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property to `InEdit` or `InView`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ public class OrderInfo : INotifyDataErrorInfo
 {% endhighlight %}
 {% endtabs %}
 
-Enable built-in validation support by setting [SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) property to `InEdit` or `InView`.
+Enable built-in validation support by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property to `InEdit` or `InView`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -140,7 +140,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 
 ## Built-in validation using Data Annotation
 
-You can validate the data using **data annotation attributes** by setting [SfDataGrid.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridValidationMode.html) or [GridColumn.GridValidationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GridValidationMode.html) property to `InEdit` or `InView`.
+You can validate the data using **data annotation attributes** by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property to `InEdit` or `InView`.
 
 ### Using different annotations
 
