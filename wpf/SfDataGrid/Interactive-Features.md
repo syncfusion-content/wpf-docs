@@ -120,7 +120,7 @@ You can set different context menu for SfDataGrid based on rows.
 
 #### ContextMenu for Records
 
-You can set the context menu for the data rows by using [SfDataGrid.RecordContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordContextMenu.html) property. 
+You can set the context menu for the data rows by using [SfDataGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -181,7 +181,7 @@ private static void OnCopyClicked(object obj)
 
 #### ContextMenu for Header
 
-You can set the context menu for the header by using [SfDataGrid.HeaderContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderContextMenu.html) property. 
+You can set the context menu for the header by using [SfDataGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property. 
 {% tabs %}
 {% highlight xaml %}
 
