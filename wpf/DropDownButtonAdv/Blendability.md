@@ -34,7 +34,7 @@ To modify the button control:
 
 
 
-* All the resources will be displayed on the Xaml file of the application. These resources can be edited to create a new Style.
+* All the resources will be displayed on the XAML file of the application. These resources can be edited to create a new Style.
 
 
 
