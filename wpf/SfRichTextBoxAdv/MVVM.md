@@ -394,7 +394,7 @@ Public Class SfRichTextBoxAdvExtension
 ''' </summary>
 Public Sub New()
 	' Wires the ContentChanged event.
-	AddHandler this.ContentChanged,AddressOf RicTextBoxAdv_ContentChanged
+	AddHandler this.ContentChanged, AddressOf RicTextBoxAdv_ContentChanged
 End Sub
 #End Region
 
@@ -463,7 +463,7 @@ End Sub
 ''' Disposes the instance.
 ''' </summary>
 Public Shadows Sub Dispose()
-	RemoveHandler this.ContentChanged,AddressOf RicTextBoxAdv_ContentChanged
+	RemoveHandler this.ContentChanged, AddressOf RicTextBoxAdv_ContentChanged
 	ClearValue(TextProperty)
 	MyBase.Dispose()
 End Sub
