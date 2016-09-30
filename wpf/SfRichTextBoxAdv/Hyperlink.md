@@ -47,7 +47,27 @@ paragraphAdv.Inlines.Add(new FieldEndAdv());
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Appends the field start.
+paragraphAdv.Inlines.Add(New FieldBeginAdv())
+' Appends the field code.
+Dim fieldCode As New SpanAdv()
+Dim url As String = "www.syncfusion.com"
+fieldCode.Text = (Convert.ToString(" HYPERLINK """) & url) + """ "
+paragraphAdv.Inlines.Add(fieldCode)
+' Appends the field separator
+paragraphAdv.Inlines.Add(New FieldSeparatorAdv())
+' Appends the field result.
+Dim fieldResult As New SpanAdv()
+fieldResult.Text = "Syncfusion"
+fieldResult.CharacterFormat.Underline = Underline.[Single]
+fieldResult.CharacterFormat.FontColor = Color.FromArgb(&Hff, &H5, &H63, &Hc1)
+paragraphAdv.Inlines.Add(fieldResult)
+' Appends the field end.
+paragraphAdv.Inlines.Add(New FieldEndAdv())
 
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code example illustrates how to insert hyperlink field into SfRichTextBoxAdv Document through UI command.
@@ -88,5 +108,26 @@ richTextBoxAdv.RequestNavigate -= RichTextBoxAdv_RequestNavigate;
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Hooks the event handler for RequestNavigate event.
+AddHandler richTextBoxAdv.RequestNavigate, AddressOf RichTextBoxAdv_RequestNavigate
 
+''' <summary>
+''' Handles the RequestNavigate event of the richTextBoxAdv control.
+''' </summary>
+''' <param name="obj">The source of the event.</param>
+''' <param name="args">The <see cref="RequestNavigateEventArgs"/> instance containing the event data.</param>
+Private Sub RichTextBoxAdv_RequestNavigate(obj As Object, args As Syncfusion.Windows.Controls.RichTextBoxAdv.RequestNavigateEventArgs)
+	If args.Hyperlink.LinkType = HyperlinkType.Webpage OrElse args.Hyperlink.LinkType = HyperlinkType.Email Then
+		Process.Start(New ProcessStartInfo(New Uri(args.Hyperlink.NavigationLink).AbsoluteUri))
+	ElseIf args.Hyperlink.LinkType = HyperlinkType.File AndAlso File.Exists(args.Hyperlink.NavigationLink) Then
+		Process.Start(args.Hyperlink.NavigationLink)
+	End If
+End Sub
+
+' Unhooks the event handler for RequestNavigate event.
+RemoveHandler richTextBoxAdv.RequestNavigate, AddressOf RichTextBoxAdv_RequestNavigate
+
+
+{% endhighlight %}
 {% endtabs %}

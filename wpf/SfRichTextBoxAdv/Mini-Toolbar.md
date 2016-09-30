@@ -27,5 +27,13 @@ SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 richTextBoxAdv.EnableMiniToolBar = false;
 
 {% endhighlight %}
+{% highlight VB %}
+' Initializes a new instance of RichTextBoxAdv.
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
 
+'Disables the built-in mini tool bar in SfRichTextBoxAdv.
+richTextBoxAdv.EnableMiniToolBar = False
+
+
+{% endhighlight %}
 {% endtabs %}

@@ -17,8 +17,15 @@ SectionAdv sectionAdv = richTextBoxAdv.Document.Sections[0];
 
 
 {% endhighlight %}
+{% highlight VB %}
+'Gets the first section of the document
+Dim sectionAdv As SectionAdv = richTextBoxAdv.Document.Sections(0)
+
+
+{% endhighlight %}
 
 {% endtabs %}
+
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +37,15 @@ TextPosition startPosition = richTextBoxAdv.Document.GetTextPosition(paragraphAd
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Gets the first block from the section, which is a paragraph.
+Dim paragraphAdv As ParagraphAdv = TryCast(sectionAdv.Blocks(0), ParagraphAdv)
+' Gets the text position of the specified paragraph at offset 24. 
+' TextPosition is returned as null, if no such paragraph or offset exists in the document.
+Dim startPosition As TextPosition = richTextBoxAdv.Document.GetTextPosition(paragraphAdv, 24)
 
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -44,7 +59,15 @@ TextPosition position = richTextBoxAdv.Document.GetTextPosition(paragraphAdv, 12
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Gets the third block of a section, which is table.
+Dim tableAdv As TableAdv = TryCast(sectionAdv.Blocks(2), TableAdv)
+' Gets the third block from second row second cell of the table, which is paragraph.
+Dim paragraphAdv As ParagraphAdv = TryCast(tableAdv.Rows(1).Cells(1).Blocks(2), ParagraphAdv)
+Dim position As TextPosition = richTextBoxAdv.Document.GetTextPosition(paragraphAdv, 12)
 
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -69,6 +92,26 @@ TextPosition position = richTextBoxAdv.Document.GetTextPosition("0;0;24");
 
 
 {% endhighlight %}
+{% highlight VB %}
+'
+'The hierarchical index should be given as "section-index;block-index;offset-in-paragraph"
+'If block in the index is paragraph, then next value is considered as offset and position is retrieved.
+'For example "0;0;1" gets text position of Paragraph (first block of first section) at the offset=1.
+'If block in the index is table, then next value is considered as row index and following value as cell index.
+'The value after cell is again a block index. Then the same process continues.
+'"table-index;row-index;cell-index;block-index;"
+'For example "0;2;1;1;0;21" gets text position of Paragraph at first block of second cell of second row of table (at third block of first section) at the offset=21.
+'If offset value is followed by "C" which stands for comment, then the comment is retrieved which is followed by block index in comment. Then the process of retrieving paragraph from block index continues.
+'paragraph-index;offset-in-paragraph;C;block-index;offset-in-paragraph
+'For example "0;3;16;C;2;6", gets text position of Paragraph at third block of comment (present at offset = 16 in paragraph at third block of first section) at the offset=6.
+'
+
+' Gets the text position from the document based on hierarchical index.
+Dim position As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;0;24")
+' Here text position returned should be first section's first block (which is paragraph) and offset=24. 
+
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -77,6 +120,12 @@ The following sample code demonstrates how to move selection start and selection
 {% highlight c# %}
 // Makes an empty selection at the specific text position.
 richTextBoxAdv.Selection.Select(position, position);
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Makes an empty selection at the specific text position.
+richTextBoxAdv.Selection.[Select](position, position)
 
 
 {% endhighlight %}
@@ -95,13 +144,28 @@ richTextBoxAdv.Selection.Select(startPosition, endPosition);
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Retrieves the position of the first paragraph start.
+Dim startPosition As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;0;0")
+' Retrieves the position of the first paragraph at offset=20.
+Dim endPosition As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;0;20")
+' Selects the text positions in forward direction.
+richTextBoxAdv.Selection.[Select](startPosition, endPosition)
 
+
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
 // Selects the text positions in reverse direction.
 richTextBoxAdv.Selection.Select(endPosition, startPosition);
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Selects the text positions in reverse direction.
+richTextBoxAdv.Selection.[Select](endPosition, startPosition)
 
 
 {% endhighlight %}
@@ -129,6 +193,21 @@ richTextBoxAdv.Selection.SelectionRanges.Add(startPosition2, endPosition2);
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Retrieves the position of the first paragraph start.
+Dim startPosition1 As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;0;0")
+' Retrieves the position of the first paragraph at offset=20.
+Dim endPosition1 As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;0;20")
+' Retrieves the position of the third paragraph start.
+Dim startPosition2 As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;2;0")
+' Retrieves the position of the third paragraph at offset=20.
+Dim endPosition2 As TextPosition = richTextBoxAdv.Document.GetTextPosition("0;2;20")
+' Selects the first paragraph and third paragraph at a time, leaving second paragraph.
+richTextBoxAdv.Selection.SelectionRanges.Add(startPosition1, endPosition1)
+richTextBoxAdv.Selection.SelectionRanges.Add(startPosition2, endPosition2)
+
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -146,7 +225,12 @@ richTextBoxAdv.Selection.CharacterFormat.BaselineAlignment = Syncfusion.Windows.
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Applies subscript format for the selected text contents.
+richTextBoxAdv.Selection.CharacterFormat.BaselineAlignment = Syncfusion.Windows.Controls.RichTextBoxAdv.BaselineAlignment.Subscript
 
+
+{% endhighlight %}
 {% endtabs %}
 
 The following sample code demonstrates how to apply after spacing for the selected paragraphs.
@@ -154,6 +238,12 @@ The following sample code demonstrates how to apply after spacing for the select
 {% highlight c# %}
 // Applies after spacing for the selected paragraphs.
 richTextBoxAdv.Selection.ParagraphFormat.AfterSpacing = 24;
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Applies after spacing for the selected paragraphs.
+richTextBoxAdv.Selection.ParagraphFormat.AfterSpacing = 24
 
 
 {% endhighlight %}
@@ -165,6 +255,12 @@ The following sample code demonstrates how to apply page margin for the selected
 {% highlight c# %}
 // Applies page margin for the selected sections.
 richTextBoxAdv.Selection.SectionFormat.PageMargin = new Thickness(96, 48, 96, 48);
+
+
+{% endhighlight %}
+{% highlight VB %}
+ Applies page margin for the selected sections.
+richTextBoxAdv.Selection.SectionFormat.PageMargin = New Thickness(96, 48, 96, 48)
 
 
 {% endhighlight %}
@@ -190,6 +286,19 @@ Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPa
 toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);
 
 {% endhighlight %}
+{% highlight VB %}
+' Initializes the new binding for toggle bold.
+Dim binding As New Binding() With { _
+	Key .Source = richTextBoxAdv, _
+	Key .Path = New PropertyPath("Selection.CharacterFormat.Bold"), _
+	Key .Mode = BindingMode.TwoWay _
+}
+
+' Binds the IsChecked property to Selection.CharacterFormat.Bold property of RichTextBoxAdv.
+toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding)
+
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -207,6 +316,20 @@ Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPa
 
 //Binds the IsChecked property to Selection.ParagraphFormat.TextAlignment property of RichTextBoxAdv.
 toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);
+
+
+{% endhighlight %}
+{% highlight VB %}
+'Initializes the new binding for toggle text alignment property as left.
+Dim binding As New Binding() With { _
+	Key .Source = richTextBoxAdv, _
+	Key .Path = New PropertyPath("Selection.ParagraphFormat.TextAlignment"), _
+	Key .Mode = BindingMode.TwoWay, _
+	Key .Converter = New LeftAlignmentToggleConverter() _
+}
+
+'Binds the IsChecked property to Selection.ParagraphFormat.TextAlignment property of RichTextBoxAdv.
+toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding)
 
 
 {% endhighlight %}

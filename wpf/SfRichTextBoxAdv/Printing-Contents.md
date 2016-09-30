@@ -17,7 +17,12 @@ richTextBoxAdv.PrintDocument();
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Displays the Print Dialog to perform printing of document content as pages.
+richTextBoxAdv.PrintDocument()
 
+
+{% endhighlight %}
 {% endtabs %}
 
 The SfRichTextBoxAdv also supports event to notify whenever the printing operation is completed. The following code example demonstrates how to handle for the print completed event.
@@ -37,14 +42,25 @@ richTextBoxAdv.PrintCompleted -= RichTextBoxAdv_PrintCompleted;
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Hooks the print completed event.
+AddHandler richTextBoxAdv.PrintCompleted, AddressOf RichTextBoxAdv_PrintCompleted
 
+' Called whenever the print completed event is fired.
+Private Sub RichTextBoxAdv_PrintCompleted(obj As Object, args As PrintCompletedEventArgs)
+	' Handle your code here.
+End Sub
+
+' Unhooks the print completed event.
+RemoveHandler richTextBoxAdv.PrintCompleted, AddressOf RichTextBoxAdv_PrintCompleted
+{% endhighlight %}
 {% endtabs %}
 
 ## UI Command for printing
 
 The following code example demonstrates how to bind UI Command to invoke printing in SfRichTextBoxAdv.
 {% tabs %}
-{% highlight c# %}
+{% highlight XAML %}
 <!-- Binds button to the PrintDocumentCommand -->
 <Button Content="Print" Command="RichTextBoxAdv:SfRichTextBoxAdv.PrintDocumentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 

@@ -44,6 +44,21 @@ richTextBoxAdv.SpellChecker.IgnoreURIs = true;
 
 
 {% endhighlight %}
+{% highlight VB %}
+' Enables spell checker in RichTextBoxAdv.
+richTextBoxAdv.SpellChecker.IsEnabled = True
+
+' Ignores alpha numeric words while spell check.
+richTextBoxAdv.SpellChecker.IgnoreAlphaNumericWords = True
+
+' Ignores upper case words while spell check.
+richTextBoxAdv.SpellChecker.IgnoreUppercaseWords = True
+
+' Ignores URIs while spell check.
+richTextBoxAdv.SpellChecker.IgnoreURIs = True
+
+
+{% endhighlight %}
 
 {% endtabs %}
 

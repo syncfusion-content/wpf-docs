@@ -140,6 +140,54 @@ public partial class FontWindow : Window
         }
     }
 {% endhighlight %}
+{% highlight VB %}
+Public Partial Class FontWindow
+	Inherits Window
+	Public Sub New(rte As SfRichTextBoxAdv)
+		InitializeComponent()
+		fontDialog.DataContext = rte
+		AddHandler this.Loaded, AddressOf FontWindow_Loaded
+	End Sub
+''' <summary>
+''' Called when the font window is loaded.
+''' </summary>
+''' <param name="sender"></param>
+''' <param name="e"></param>
+Private Sub FontWindow_Loaded(sender As Object, e As RoutedEventArgs)
+	'Hooks the event for cancel button of font dialog.
+	Dim font As FontDialog = TryCast(VisualUtils.FindDescendant(TryCast(sender, FontWindow), GetType(FontDialog)), FontDialog)
+	Dim cancelButton As Button = TryCast(font.Template.FindName("PART_CancelButton", TryCast(font, FrameworkElement)), Button)
+	If cancelButton IsNot Nothing Then
+		AddHandler cancelButton.Click, AddressOf CancelButton_Click 
+	End If
+	Dim applybutton As Button = TryCast(font.Template.FindName("PART_ApplyFontFormatButton", TryCast(font, FrameworkElement)), Button)
+	If applybutton IsNot Nothing Then
+		Addhandler applybutton.Click, AddressOf Applybutton_Click
+	End If
+End Sub
+
+Private Sub Applybutton_Click(sender As Object, e As RoutedEventArgs)
+	Me.Hide()
+	'Hides the window.
+End Sub
+
+Protected Overrides Sub OnClosing(e As CancelEventArgs)
+	'Hiding the window on close button.
+	MyBase.OnClosing(e)
+	Hide()
+	e.Cancel = True
+End Sub
+''' <summary>
+''' Called when the cancel button is clicked.
+''' </summary>
+''' <param name="sender"></param>
+''' <param name="e"></param>
+Private Sub CancelButton_Click(sender As Object, e As RoutedEventArgs)
+	Me.Hide()
+	'hides the window.
+End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 N> After creating custom dialog window, you have to set the SfRichTextBoxAdv instance as DataContext of the dialog.
@@ -193,5 +241,35 @@ public partial class MainWindow : RibbonWindow
     }
     
 {% endhighlight %}
+{% highlight VB %}
+Public Partial Class MainWindow
+	Inherits RibbonWindow
+	Public Property fontWindow() As FontWindow
+		Get
+			Return m_fontWindow
+		End Get
+		Set
+			m_fontWindow = Value
+		End Set
+	End Property
+	Private m_fontWindow As FontWindow
 
+	Public Sub New()
+		InitializeComponent()
+		fontWindow = New FontWindow(richTextBoxAdv)
+		AddHandler this.Unloaded, AddressOf MainWindow_Unloaded
+	End Sub
+	Private Sub MainWindow_Unloaded(sender As Object, e As RoutedEventArgs)
+	fontWindow.Close()
+	'closing the font window.
+End Sub
+
+Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+	fontWindow.Show()
+	'showing the font window.
+End Sub
+End Class
+
+
+{% endhighlight %}
 {% endtabs %}

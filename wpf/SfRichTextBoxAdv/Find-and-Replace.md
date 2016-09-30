@@ -21,6 +21,17 @@ richTextBoxAdv.Selection.Select(textSearchResult.Start, textSearchResult.End);
 // Applies Bold formatting for the current selection.
 richTextBoxAdv.Selection.CharacterFormat.Bold = true;
 
+{% endhighlight %}
+{% highlight VB %}
+' Finds the first occurrence of specified text that matches case in RichTextBoxAdv document from current selection.
+Dim textSearchResult As TextSearchResult = richTextBoxAdv.Find("Panda", FindOptions.CaseSensitive)
+
+' Selects the text search result.
+richTextBoxAdv.Selection.[Select](textSearchResult.Start, textSearchResult.[End])
+
+' Applies Bold formatting for the current selection.
+richTextBoxAdv.Selection.CharacterFormat.Bold = True
+
 
 {% endhighlight %}
 
@@ -48,6 +59,24 @@ if (textSearchResults != null)
     richTextBoxAdv.Selection.CharacterFormat.HighlightColor = HighlightColor.Yellow;
 }
 
+{% endhighlight %}
+{% highlight VB %}
+' Finds all the words that starts with ‘S’ in RichTextBoxAdv document.
+Dim textSearchResults As TextSearchResults = richTextBoxAdv.FindAll(New Regex("\bS\S*"), FindOptions.None)
+
+' If any text search results found.
+If textSearchResults IsNot Nothing Then
+	For j As Integer = 0 To textSearchResults.Count - 1
+
+		Dim textSearchResult As TextSearchResult = textSearchResults(j)
+
+		' Adds the search result text positions to the selection.
+		richTextBoxAdv.Selection.SelectionRanges.Add(textSearchResult.Start, textSearchResult.[End])
+	Next
+
+	' Apply highlight color for the selection.
+	richTextBoxAdv.Selection.CharacterFormat.HighlightColor = HighlightColor.Yellow
+End If
 
 
 {% endhighlight %}
@@ -67,6 +96,15 @@ TextSearchResult textSearchResult = richTextBoxAdv.Find("colour", FindOptions.Wh
 if (textSearchResult != null)
     textSearchResult.Replace("color");
 
+{% endhighlight %}
+{% highlight VB %}
+' Finds the text "colour" that matches whole word in the document.
+Dim textSearchResult As TextSearchResult = richTextBoxAdv.Find("colour", FindOptions.WholeWord)
+
+' If any text search result found, replace it with the text "color".
+If textSearchResult IsNot Nothing Then
+	textSearchResult.Replace("color")
+End If
 
 
 {% endhighlight %}
@@ -83,6 +121,15 @@ TextSearchResults textSearchResults = richTextBoxAdv.FindAll("analyse", FindOpti
 if(textSearchResults != null)
     textSearchResults.ReplaceAll("analyze");
 
+{% endhighlight %}
+{% highlight VB %}
+' Finds the text "analyse" that matches whole word in the document.
+Dim textSearchResults As TextSearchResults = richTextBoxAdv.FindAll("analyse", FindOptions.WholeWord)
+
+' If any text search results found, replace all occurrences with the text "analyze".
+If textSearchResults IsNot Nothing Then
+	textSearchResults.ReplaceAll("analyze")
+End If
 
 
 {% endhighlight %}
