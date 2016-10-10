@@ -91,7 +91,7 @@ The following code example demonstrates how to define layout type of SfRichTextB
 // Initializes a new instance of RichTextBoxAdv.
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 // Defines the layout type as Block.
-richTextBoxAdv.LayoutType = LayoutType.Block
+richTextBoxAdv.LayoutType = LayoutType.Block;
 
 {% endhighlight %}
 {% highlight VB %}
