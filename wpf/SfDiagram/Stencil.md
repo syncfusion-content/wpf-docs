@@ -37,28 +37,34 @@ Properties Table
 
 Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil:
 
-Symbol and SymbolTemplate
+####Symbol and SymbolTemplate
 
 {% highlight C# %}
 
 public class SymbolItem : ISymbol
 {
-	public object Symbol { get; set; }
+	//Symbol-Any Object
+    public object Symbol { get; set; }
 
-	public object Key { get; set; }
+    //Custom property for grouping.
+    public object GroupName { get; set; }
 
-	public DataTemplate SymbolTemplate { get; set; }
+	//Data template to visualize the object.
+    public DataTemplate SymbolTemplate { get; set; }
 
-	public ISymbol Clone()
-	{
-		return new SymbolItem()
-		{
-			Symbol = this.Symbol,
-			SymbolTemplate = this.SymbolTemplate,
+    //For cloning the symbol from the given object and data template.
+    public ISymbol Clone()
+    {
+    	return new SymbolItem()
+        {
+        	Symbol = this.Symbol,
+			SymbolTemplate = this.SymbolTemplate
 		};
 	}
-	public object GroupName { get; set; }
+
+    public object Key { get; set; }
 }
+
 
 {% endhighlight %}
 
@@ -66,23 +72,23 @@ public class SymbolItem : ISymbol
 
 The following example illustrates how to add the Symbol into a Collection:
 
-####Create the ISymbol with Symbol and SymbolTemplate properties.
-
-{% highlight xaml %}
-
-<local:SymbolItem GroupName="Flow Chart" Symbol="FlowChart_Star" 
-                  SymbolTemplate="{StaticResource FlowChart_Star}"/>
-
-{% endhighlight %}
-
 ####Define the SymbolTemplate.
 
 {% highlight xaml %}
 
-<DataTemplate x:Key="FlowChart_Star">
-  <Path Style="{StaticResource SymbolStyle}" Data="M 9,2 11,7 17,7 12,10 14,15 9,12   
-        4,15 6,10 1,7 7,7 Z" Stretch="Fill"/>
+<DataTemplate x:Key="Star">
+	<Path Stretch="Fill" Data="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"
+          Stroke="Black" StrokeThickness="1" />
 </DataTemplate>
+
+{% endhighlight %}
+
+####Create the ISymbol with Symbol and SymbolTemplate properties.
+
+{% highlight xaml %}
+
+<local:FloorPlanSymbolItem GroupName="Flow Chart" Symbol="Star"
+                           SymbolTemplate="{StaticResource Star}"/>
 
 {% endhighlight %}
 
@@ -90,6 +96,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 {% highlight C# %}
 
+// SymbolSource to Stencil
 public class SymbolCollection : ObservableCollection<ISymbol>
 {
 
@@ -100,8 +107,9 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 {% highlight xaml %}
 
 <local:SymbolCollection x:Key="symbolcollection">
-  <local:SymbolItem GroupName="Flow Chart" Symbol="FlowChart_Star" 
-                    SymbolTemplate="{StaticResource FlowChart_Star}"/>
+	<!--Adding Symbol into a collection-->
+	<local:FloorPlanSymbolItem GroupName="Flow Chart" Symbol="Star"
+                               SymbolTemplate="{StaticResource Star}"/>
 </local:SymbolCollection>
 
 {% endhighlight %}
@@ -112,78 +120,40 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 
 ###Add Node, Connector and Group to Stencil
 
-####Create a custom class (SymbolItem in this example) that derives ISymbol and implements necessary things.
-
-{% highlight C# %}
-
-public class SymbolItem : ISymbol
-{
-	public object Symbol { get; set; }
-
-	public object GroupName { get; set; }
-
-	public DataTemplate SymbolTemplate { get; set; }
-	public ISymbol Clone()
-	{
-		return new SymbolItem()
-		{
-			Symbol = this.Symbol,
-			SymbolTemplate = this.SymbolTemplate
-		};
-	}
-
-	public object Key { get; set; }
-}
-
-{% endhighlight %}
-
 ####Create a Node ,Connector and Group and to SymbolCollection.
 
 {% highlight xaml %}
 
 <!--Collection of Symbols-->
-<sync:SymbolCollection>
-<!--ISymbol-->
-	<local:SymbolItem GroupName="Nodes">
-		<local:SymbolItem.Symbol>
-		<!--NodeViewModel-->
-		<sync:NodeViewModel UnitHeight="50" UnitWidth="50" OffsetX="200" OffsetY="200" ShapeStyle="{StaticResource nodestyle}">
-			<sync:NodeViewModel.Shape>
-				<RectangleGeometry Rect="10,10,10,10"></RectangleGeometry>
-			</sync:NodeViewModel.Shape>
-		</sync:NodeViewModel>
-		</local:SymbolItem.Symbol>
-	</local:SymbolItem>
-	<local:SymbolItem GroupName="Connectors">
-		<local:SymbolItem.Symbol>
-		<!--ConnectorViewModel-->
-		<sync:ConnectorViewModel ConnectorGeometryStyle="{StaticResource connectorstyle}" SourcePoint="100,100" TargetPoint="200,200"/>
-		</local:SymbolItem.Symbol>
-	</local:SymbolItem>
-	<local:SymbolItem GroupName="Groups">
-	<local:SymbolItem.Symbol>
-		<!--GroupViewModel-->
-		<sync:GroupViewModel>
-		<!--GroupViewModel.Nodes-->
-		<sync:GroupViewModel.Nodes>
-			<sync:NodeCollection>
-				<sync:NodeViewModel UnitHeight="50" UnitWidth="50" OffsetX="300" OffsetY="300" ShapeStyle="{StaticResource nodestyle}">
-				<sync:NodeViewModel.Shape>
-					<EllipseGeometry RadiusX="10" RadiusY="10"/>
-				</sync:NodeViewModel.Shape>
-				</sync:NodeViewModel>
-			</sync:NodeCollection>
-		</sync:GroupViewModel.Nodes>
-		<!--GroupViewModel.Connectors-->
-		<sync:GroupViewModel.Connectors>
-			<sync:ConnectorCollection>
-				<sync:ConnectorViewModel ConnectorGeometryStyle="{StaticResource connectorstyle}" SourcePoint="100,100" TargetPoint="200,200"/>
-			</sync:ConnectorCollection>
-		</sync:GroupViewModel.Connectors>
-		</sync:GroupViewModel>
-	</local:SymbolItem.Symbol>
-	</local:SymbolItem>
-</sync:SymbolCollection>
+<local:SymbolCollection x:Key="symbolcollection">
+	<!--Creates the NodeViewModel-->
+	<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
+			                  Shape="{StaticResource Rectangle}" Key="Nodes"/>
+            
+	<!--Creates the ConnectorViewModel-->
+   	<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200"
+                                   Key="Connectors"/>
+            
+	<!--Creates the GroupViewModel-->
+   	<syncfusion:GroupViewModel Key="Groups">
+		<!--Creates the Groupable Nodes-->
+        <syncfusion:GroupViewModel.Nodes>
+			<syncfusion:NodeCollection>
+            	<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
+                            			  Shape="{StaticResource Ellipse}">
+				</syncfusion:NodeViewModel>
+			</syncfusion:NodeCollection>
+		</syncfusion:GroupViewModel.Nodes>
+                
+		<!--Creates the Groupable Connectors-->
+        <syncfusion:GroupViewModel.Connectors>
+        	<syncfusion:ConnectorCollection>
+            	<syncfusion:ConnectorViewModel SourcePoint="0,0"  
+                                               TargetPoint="100,100"/>
+			</syncfusion:ConnectorCollection>
+		</syncfusion:GroupViewModel.Connectors>
+	</syncfusion:GroupViewModel>
+</local:SymbolCollection>
 
 {% endhighlight %}
 
@@ -193,23 +163,14 @@ public class SymbolItem : ISymbol
 
 <stencil:Stencil x:Name="stencil" ExpandMode="All">
 	<stencil:Stencil.SymbolSource>
-		<!--Collection of Symbols-->
-		<sync:SymbolCollection>
-			<!—from Step2-->
-		</sync:SymbolCollection>
+    	<!--Collection of Symbols-->
+        <local:SymbolCollection>
+        	<!--From step2, Create a Node, Connector and Group to SymbolCollection.-->
+      	</local:SymbolCollection>
 	</stencil:Stencil.SymbolSource>
-	<!--SymbolGroup-->
-	<stencil:Stencil.SymbolGroups>
-		<stencil:SymbolGroups>
-			<!--To Map Symbols based on GroupName-->
-			<stencil:SymbolGroupProvider MappingName="GroupName"/>
-		</stencil:SymbolGroups>
-	</stencil:Stencil.SymbolGroups>
 </stencil:Stencil>
 
 {% endhighlight %}
-
-![](Stencil_images/Stencil_img3.jpeg)
 
 ##SymbolGroups
 
@@ -223,27 +184,32 @@ The following code example illustrates how to create a SymbolGroup.
 
 {% highlight xaml %}
 
-<stencil:Stencil x:Name="stencil" SymbolSource="{StaticResource symbolcollection}">
-  <stencil:Stencil.SymbolGroups>
-    <stencil:SymbolGroups>
-      <stencil:SymbolGroupProvider MappingName="GroupName"/>
-    </stencil:SymbolGroups>
-  </stencil:Stencil.SymbolGroups>
+<stencil:Stencil x:Name="stencil" ExpandMode="All" 
+		         SymbolSource="{StaticResource symbolcollection}">
+	<!--SymbolGroup-->
+    <stencil:Stencil.SymbolGroups>
+    	<stencil:SymbolGroups>
+        	<!--To Map Symbols based on GroupName-->
+			<stencil:SymbolGroupProvider MappingName="Key"/>
+		</stencil:SymbolGroups>
+	</stencil:Stencil.SymbolGroups>
 </stencil:Stencil>
 
 {% endhighlight %}
+
+![](Stencil_images/Stencil_img3.jpeg)
 
 ###Expand or Collapse SymbolGroup
 
 Expand and Collapse can be performed on SymbolGroup (updating the Visibility of the Symbols) based on the ExpandMode property. It includes the following options. The default option is One.
 
-| Expand Mode | Description |
-|---|---|
-| One | Always one SymbolGroup is in expanded state. |
-| OneOrMore | At least one SymbolGroup is in expanded state. |
-| ZeroOrOne | Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state. |
-| ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. |
-| All | All the SymbolGroup is in expanded state. |
+| Expand Mode | Description | Images |
+|---|---|---|
+| One | Always one SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img4.jpeg) |
+| OneOrMore | At least one SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img5.jpeg) | ![](Stencil_images/Stencil_img6.jpeg) |
+| ZeroOrOne | Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img7.jpeg) | ![](Stencil_images/Stencil_img8.jpeg) |
+| ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img9.jpeg) | ![](Stencil_images/Stencil_img10.jpeg) |
+| All | All the SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img11.jpeg) |
 
 ##SymbolFilters
 
@@ -253,45 +219,48 @@ The following code example shows how to create and add the SymbolFilter. Based o
 
 {% highlight C# %}
 
-private void CreateFilters()
-{
-	stencil.SymbolFilters = new SymbolFilters();
-	SymbolFilterProvider allFilter = new SymbolFilterProvider
-	{
-		Content = "All",
-		Filter = SymbolFilter
-	};
-	SymbolFilterProvider kitchenFilter = new SymbolFilterProvider
-	{
-		Content = "Kitchen",
-		Filter = SymbolFilter
-	};
-	stencil.SymbolFilters.Add(addFilter);
-	stencil.SymbolFilters.Add(kitchenFilter);
-}
+stencil.SymbolFilters = new SymbolFilters();
 
+//Creates the SymbolFilterProvider
+SymbolFilterProvider allFilter = new SymbolFilterProvider
+{
+	Content = "All",
+    Filter = SymbolFilter
+};
+
+SymbolFilterProvider kitchenFilter = new SymbolFilterProvider
+{
+	Content = "Kitchen",
+    Filter = SymbolFilter
+};
+
+//Add the SymbolFilterprovider to SymbolFilters collection
+stencil.SymbolFilters.Add(allFilter);
+stencil.SymbolFilters.Add(kitchenFilter);
 
 // sender: used to get the selected SymbolFilters
-private bool SymbolFilter(SymbolFilterProvider sender, ISymbol symbol)
+private bool SymbolFilter(SymbolFilterProvider sender, object symbol)
 {
 	if (sender.Content.ToString() == "All")
-	{
-		return true;
+    {
+    	return true;
 	}
-	if ((symbol as SymbolItem).GroupName == sender.Content.ToString())
-	{
-		return true;
-	}
+    if ((symbol as SymbolItem).GroupName == sender.Content.ToString())
+    {
+    	return true;
+    }
 	return false;
 }
 
 {% endhighlight %}
 
+![](Stencil_images/Stencil_img12.jpeg)
+
 ###SelectedFilter
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-![](Stencil_images/Stencil_img5.jpeg)
+![](Stencil_images/Stencil_img13.jpeg)
 
 ## Preview for Drag and Drop
 
@@ -319,7 +288,13 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, Stencil is an instance of Stencil.
 
-![](Stencil_images/Stencil_img4.jpeg)
+####Preview of the dragging Symbol
+
+![](Stencil_images/Stencil_img14.jpeg)
+
+####Dragged Symbol
+
+![](Stencil_images/Stencil_img15.jpeg)
 
 ####Customization of Preview for Drag and Drop
 
@@ -329,13 +304,14 @@ You can customize the preview content by overriding the PrepareDragDropPreview m
 
 public class CustomStencil : Stencil
 {
-	protected override void PrepareDragDropPreview()
-	{
+	//Virtual method to customize the preview of dragging the symbol from Stencil.
+    protected override void PrepareDragDropPreview()
+    {
 		this.SymbolPreview = new ContentPresenter()
-		{
-			Content = new Rectangle()
-			{
-				Width = 50,
+        {
+        	Content = new Rectangle()
+            {
+            	Width = 50,
 				Height = 50,
 				Fill = new SolidColorBrush(Colors.SteelBlue)
 			}
@@ -344,3 +320,5 @@ public class CustomStencil : Stencil
 }
 
 {% endhighlight %}
+
+![](Stencil_images/Stencil_img16.jpeg)
