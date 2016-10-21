@@ -259,7 +259,7 @@ richTextBoxAdv.Selection.SectionFormat.PageMargin = new Thickness(96, 48, 96, 48
 
 {% endhighlight %}
 {% highlight VB %}
- Applies page margin for the selected sections.
+' Applies page margin for the selected sections.
 richTextBoxAdv.Selection.SectionFormat.PageMargin = New Thickness(96, 48, 96, 48)
 
 
