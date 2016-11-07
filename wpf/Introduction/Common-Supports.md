@@ -154,67 +154,67 @@ Resource file (.resx)</th></tr>
 <tr>
 <td>
 Syncfusion.Tools.wpf.dll</td><td>
-{{ '[Syncfusion.Tools.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/197843/Syncfusion.Tools.Wpf.resx)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Tools.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Tools.Wpf-1056696086.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Shared.wpf.dll</td><td>
-{{ '[Syncfusion.Shared.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/197842/Syncfusion.Shared.Wpf.resx)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Shared.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Wpf-27502575.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportViewer.wpf.dll.</td><td>
-{{ '[Syncfusion.ReportViewer.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.ReportViewer.Wpf.resx?version=1&modificationDate=1429777829642&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.ReportViewer.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportViewer.Wpf-968258381.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportDesigner.wpf.dll</td><td>
-{{ '[Syncfusion.ReportDesigner.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.ReportDesigner.Wpf.resx?version=1&modificationDate=1429778208537&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.ReportDesigner.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportDesigner.Wpf-1942587845.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfSchedule.WPF.dll</td><td>
-{{ '[Syncfusion.Schedule.WPF.resx](https://syncfusion.atlassian.net/secure/attachment/198894/Syncfusion.Schedule.WPF.resx)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Schedule.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Schedule.WPF-2114011865.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Diagram.wpf.dll</td><td>
-{{ '[Syncfusion.Diagram.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/198885/Syncfusion.Diagram.Wpf.resx)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Diagram.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Diagram.Wpf399807340.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapChart.WPF.dll</td><td>
-{{ '[Syncfusion.OlapChart.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapChart.WPF.resx?version=1&modificationDate=1429782554725&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapChart.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapChart.WPF1658884162.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGrid.WPF.dll</td><td>
-{{ '[Syncfusion.OlapGrid.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapGrid.WPF.resx?version=1&modificationDate=1429782601212&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapGrid.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGrid.WPF2142660258.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapClient.WPF.dll</td><td>
-{{ '[Syncfusion.OlapClient.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapClient.WPF.resx?version=1&modificationDate=1429782644966&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapClient.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapClient.WPF1717995959.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGauge.WPF.dll</td><td>
-{{ '[Syncfusion.OlapGauge.wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapGauge.wpf.resx?version=1&modificationDate=1429782671861&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapGauge.wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGauge.wpf2074147713.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapShared.WPF.dll</td><td>
-{{ '[Syncfusion.OlapShared.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapShared.WPF.resx?version=1&modificationDate=1429782739175&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapShared.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapShared.WPF1945924551.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapTools.WPF.dll</td><td>
-{{ '[Syncfusion.OlapTools.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapTools.WPF.resx?version=1&modificationDate=1429782790451&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapTools.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapTools.WPF1987370456.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.PivotAnalysis.WPF.dll</td><td>
-{{ '[Syncfusion.PivotAnalysis.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.PivotAnalysis.Wpf.resx?version=1&modificationDate=1429782815969&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.PivotAnalysis.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PivotAnalysis.Wpf-1995417678.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfGrid.WPF.dll</td><td>
-{{ '[Syncfusion.SfGrid.WPF.resx](https://syncfusion.atlassian.net/secure/attachment/198980/Syncfusion.SfGrid.WPF.resx)' | markdownify }}</td></tr>
+{{ '[Syncfusion.SfGrid.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-2055371759.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Spreadsheet.Wpf.dll</td><td>
-{{ '[Syncfusion.Speradsheet.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.Speradsheet.Wpf.resx?version=1&modificationDate=1429786635340&api=v2)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Speradsheet.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Speradsheet.Wpf-1712328665.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Grid.WPF.dll</td><td>
-{{ '[Syncfusion.Grid.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/199075/Syncfusion.Grid.Wpf.resx)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Grid.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Grid.Wpf1812217710.zip)' | markdownify }}</td></tr>
 </table>
 
 
