@@ -1,4 +1,4 @@
----
+ï»¿---
 layout: post
 title: Steps to localize the Syncfusion Essential WPF controls
 description: Learn how to localize the Syncfusion WPF component
@@ -31,7 +31,7 @@ To localize WPF controls, the resource file needs to be created as per following
 ![](Localization_images/GettingStarted_img1.jpeg)
 
 
-N> In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
+N> In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
 
 ## How to assign UI Culture to the application
 
