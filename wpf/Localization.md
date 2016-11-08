@@ -31,7 +31,7 @@ To localize WPF controls, the resource file needs to be created as per following
 ![](Localization_images/GettingStarted_img1.jpeg)
 
 
-N> In case, the SharedÂ dllÂ controls is used in the application, then create another resource file in nameÂ Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
+N> In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
 
 ## How to assign UI Culture to the application
 
@@ -62,7 +62,7 @@ public partial class MainWindow
 public MainWindow() 
 {     
 	InitializeComponent();  
-   	System.Threading.Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("fr-FR");   
+   	System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");   
 }
 } 
  
@@ -73,7 +73,7 @@ public MainWindow()
 Partial Public Class MainWindow
 Public Sub New()
 	InitializeComponent()
-	   System.Threading.Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("fr-FR")
+	   System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR")
 End Sub
 End Class
 
