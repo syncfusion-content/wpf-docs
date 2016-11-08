@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Steps to localize the Syncfusion Essential WPF controls
 description: Learn how to localize the Syncfusion WPF component
