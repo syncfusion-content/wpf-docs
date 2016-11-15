@@ -317,6 +317,59 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 {% endtabs %}
 
+## Detect the closing of a DockingManager child
+
+`WindowClosing` and `CloseButtonClick` are the two events, which can be used to get notification when the child windows are being closed. 
+
+### Dock Window Closing
+
+`WindowClosing` event raised whenever a child in `Float`, `Dock` and `AutoHidden` windows are closing. 
+
+### Document Window Closing
+ 
+`CloseButtonClick` event raised only when close button of the `Document` child clicked. The following code describes how to handle the closing of all the children in `DockingManager`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="dockingManager" CloseButtonClick="dockingManager_CloseButtonClick"
+                                                   WindowClosing="dockingManager_WindowClosing">
+
+<ContentControl syncfusion:DockingManager.Header="Left"
+                syncfusion:DockingManager.SideInDockedMode="Left"
+                syncfusion:DockingManager.State="AutoHidden" />            
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void dockingManager_CloseButtonClick(object sender, CloseButtonEventArgs e)
+
+{
+
+// For windows in Document state
+
+}
+
+private void dockingManager_WindowClosing(object sender, WindowClosingEventArgs e)
+
+{
+
+// For windows in Float, Dock and AutoHidden state
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Removing Window Programmatically
 
 The windows for the DockingManager can be added using the Children collection. To remove the windows from the children collection, pass the window element that need to be remove using `Remove()` method of children property in DockingManager.
