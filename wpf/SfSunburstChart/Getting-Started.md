@@ -379,94 +379,93 @@ N> Add namespace of ViewModel class in your XAML page if you prefer to set DataC
 {% endhighlight %}
 
 {% highlight C# %}
-    ViewModel viewModel = new ViewModel();
-    this.DataContext = viewModel;
+ViewModel viewModel = new ViewModel();
+this.DataContext = viewModel;
 {% endhighlight %}
     
 {% endtabs %}
 
 ## Populate Sunburst chart with data
 
-Now, bind the Data property of the above ViewModel to the **SfSunburstChart.ItemsSource** property. 
-Add **SunburstHierarchicalLevel** to **SfSunburstChart.Levels** property. Each hierarchy level is formed based on the property specified in **GroupMemberPath** property, and each arc segment size is calculated using **ValueMemberPath**.
+Now, bind the Data property of the above ViewModel to the `ItemsSource` property. 
+Add `SunburstHierarchicalLevel` to `Levels` property. Each hierarchy level is formed based on the property specified in `GroupMemberPath` property, and each arc segment size is calculated using `ValueMemberPath`.
 
 {% tabs %}
 
 {% highlight xaml %}
-    <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount">
-          <sunburst:SfSunburstChart.Levels>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-          </sunburst:SfSunburstChart.Levels>
-    </sunburst:SfSunburstChart
+<sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount">
+    <sunburst:SfSunburstChart.Levels>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
+</sunburst:SfSunburstChart>
 {% endhighlight %}
 
 {% highlight C# %}
-    SfSunburstChart sunburst = new SfSunburstChart();
-    sunburst.ValueMemberPath = "EmployeesCount";
-    var binding = new Binding() {Source = viewModel, Path = new PropertyPath("Data")};
-    BindingOperations.SetBinding(sunburst, SfSunburstChart.ItemsSourceProperty, binding);
-    sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "Country"});
-    sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobDescription"});
-    sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobGroup"});
-    sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"});
+SfSunburstChart sunburst = new SfSunburstChart();
+sunburst.ValueMemberPath = "EmployeesCount";
+sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "Country"});
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobDescription"});
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobGroup"});
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"});
 {% endhighlight %}
     
 {% endtabs %}
 
 ## Add header 
 
-You can add header to Sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using **Header** property as shown below.
+You can add header to Sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using `Header` property as shown below.
 
 {% tabs %}
 
 {% highlight xaml %}
-    <sunburst:SfSunburstChart Header="Employees Count" FontSize="22" />
+<sunburst:SfSunburstChart Header="Employees Count" FontSize="22" />
 {% endhighlight %}
 
 {% highlight C# %}
-    sunburst.Header = "Emplyees Count";
-    sunburst.FontSize = 22d;
+sunburst.Header = "Emplyees Count";
+sunburst.FontSize = 22d;
 {% endhighlight %}
     
 {% endtabs %}
 
 ## Add legend
 
-You can enable legend using **SfSunburstChart.Legend** property as shown below,
+You can enable legend using `Legend` property as shown below,
 
 {% tabs %}
 
 {% highlight xaml %}
-    <sunburst:SfSunburstChart.Legend>
-       <sunburst:SunburstLegend DockPosition="Left"/>
-    </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend DockPosition="Left"/>
+</sunburst:SfSunburstChart.Legend>
 {% endhighlight %}
 
 {% highlight C# %}
-    SunburstLegend legend = new SunburstLegend();
-    legend.DockPosition= ChartDock.Left;
+SunburstLegend legend = new SunburstLegend();
+legend.DockPosition= ChartDock.Left;
 {% endhighlight %}
     
 {% endtabs %}
 
 ## Add data labels
 
-You can add data labels to improve the readability of the Sunburst chart. This can be achieved using **SfSunburstChart.DataLabelInfo** property as shown below,
+You can add data labels to improve the readability of the Sunburst chart. This can be achieved using `DataLabelInfo` property as shown below,
 
 {% tabs %}
 
 {% highlight xaml %}
-    <sunburst:SfSunburstChart.DataLabelInfo>
-          <sunburst:SunburstDataLabelInfo />
-    </sunburst:SfSunburstChart.DataLabelInfo>
+<sunburst:SfSunburstChart.DataLabelInfo>
+    <sunburst:SunburstDataLabelInfo />
+</sunburst:SfSunburstChart.DataLabelInfo>
 {% endhighlight %}
 
 {% highlight C# %}
-    SunburstDataLabelInfo dataLabel= new SunburstDataLabelInfo();
-    sunburst.DataLabelInfo = dataLabel;
+SunburstDataLabelInfo dataLabel= new SunburstDataLabelInfo();
+sunburst.DataLabelInfo = dataLabel;
 {% endhighlight %}
     
 {% endtabs %}
