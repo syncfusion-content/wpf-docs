@@ -546,8 +546,17 @@ If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using 
 {% tabs %}
 {% highlight c# %}
 
-int recordIndex = 20, index = 0;
+int recordIndex = 20;
 datagrid.ExpandDetailsViewAt(recordIndex);
+int index = 0;
+foreach (var def in this.dataGrid.DetailsViewDefinition)
+{
+    if (def.RelationalColumn == "ProductDetails")
+    {
+        index = this.dataGrid.DetailsViewDefinition.IndexOf(def);
+        index = parentRowIndex + index + 1;
+    }
+}
 //Get the Details view based upon the recordIndex and Column name
 SfDataGrid detailsViewDataGrid = datagrid.GetDetailsViewGrid(recordIndex, "OrderDetails");
 //Get the DetailsViewManager using Reflection
@@ -565,7 +574,7 @@ if (detailsViewDataGrid == null)
 ![](Selection_images/Selection_img10.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DetailsviewGridintoView1554190836.zip).
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSample1099992369.zip).
 
 ### Programmatically select the records in DetailsViewDataGrid which is not in view
 
@@ -576,8 +585,9 @@ You can expand the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_file
 {% tabs %}
 {% highlight c# %}
 
-//  find DetailsViewDataRow index based on relational column
-int index = 0, parentRowIndex = 25;
+//Find DetailsViewDataRow index based on relational column
+int index = 0;
+int parentRowIndex = 25;
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
     if (def.RelationalColumn == "ProductDetails")
@@ -592,7 +602,7 @@ DetailsViewManager detailsViewManager = propertyInfo.GetValue(dataGrid) as Detai
 var rowcolumnIndex = new RowColumnIndex(index, 1);
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
-//if the DetailsViewDataGrid is not already expanded, call BringIntoView method
+//If the DetailsViewDataGrid is not in view, call the BringIntoView method.
 if (detailsViewDataGrid == null)
 {
     detailsViewManager.BringIntoView(index);
@@ -600,7 +610,7 @@ if (detailsViewDataGrid == null)
 }
 else
 {
-    // if the DetailsViewDataGrid is already expanded, bring that into view
+    //If the DetailsViewDataGrid is already expanded, bring that into view
     dataGrid.ScrollInView(rowcolumnIndex);
 }
 
@@ -1086,10 +1096,10 @@ You can cancel the selection process within this event by setting [GridSelection
 {% tabs %}
 {% highlight c# %}
 
-private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+private void Datagrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {
-    var rowColumnIndex = this.dataGrid.SelectionController.CurrentCellManager.CurrentRowColumnIndex;
-    if (rowColumnIndex.RowIndex == 3)
+    var unBounRow = e.AddedItems.Where(rowInfo => (rowInfo as GridRowInfo).IsUnBoundRow).ToList();
+    if (unBounRow.Count() > 0)
         e.Cancel = true;
 }
 
