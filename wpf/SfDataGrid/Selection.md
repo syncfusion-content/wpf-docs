@@ -546,7 +546,7 @@ If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using 
 {% tabs %}
 {% highlight c# %}
 
-int recordIndex = 20;
+int recordIndex = 20, index = 0;
 datagrid.ExpandDetailsViewAt(recordIndex);
 //Get the Details view based upon the recordIndex and Column name
 SfDataGrid detailsViewDataGrid = datagrid.GetDetailsViewGrid(recordIndex, "OrderDetails");
@@ -577,7 +577,7 @@ You can expand the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_file
 {% highlight c# %}
 
 //  find DetailsViewDataRow index based on relational column
-int index = 0;
+int index = 0, parentRowIndex = 25;
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
     if (def.RelationalColumn == "ProductDetails")
@@ -586,6 +586,9 @@ foreach (var def in this.dataGrid.DetailsViewDefinition)
         index = parentRowIndex + index + 1;
     }
 }
+//Get the DetailsViewManager using Reflection
+var propertyInfo = dataGrid.GetType().GetField("DetailsViewManager", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+DetailsViewManager detailsViewManager = propertyInfo.GetValue(dataGrid) as DetailsViewManager;
 var rowcolumnIndex = new RowColumnIndex(index, 1);
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
@@ -1083,11 +1086,11 @@ You can cancel the selection process within this event by setting [GridSelection
 {% tabs %}
 {% highlight c# %}
 
-void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {
-    var unBounRow = e.AddedItems.Where(rowInfo => (rowInfo as GridRowInfo).IsUnBoundRow).ToList();
-    if(unBounRow.Count() > 0)
-    unBounRow.All(row => e.AddedItems.Remove(row));
+    var rowColumnIndex = this.dataGrid.SelectionController.CurrentCellManager.CurrentRowColumnIndex;
+    if (rowColumnIndex.RowIndex == 3)
+        e.Cancel = true;
 }
 
 {% endhighlight %}
@@ -1596,14 +1599,12 @@ While grouping any column, by default the first CaptionSummaryRow will be select
 {% tabs %}
 {% highlight c# %}
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid dataGrid)
-        :base(dataGrid)
-    {     
-    }
-
-    protected override void ProcessOnGroupChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs args)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
+    {
+    }       
+    protected override void ProcessOnGroupChanged(GridGroupingEventArgs args)
     {
         base.ProcessOnGroupChanged(args);
         var removedItems = new List<object>();

@@ -678,7 +678,7 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 ### Handling selection after deleting the record from SfDataGrid
 
-You handle the selection after remove the records through [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs~SelectedIndex.html) property of [RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event.
+You can handle the selection after remove the records through [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs~SelectedIndex.html) property of [RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -686,7 +686,7 @@ this.dataGrid.RecordDeleted += dataGrid_RecordDeleted;
 
 void dataGrid_RecordDeleted(object sender, RecordDeletedEventArgs args)
 {
-    args.SelectedIndex =-1;
+    args.SelectedIndex = -1;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -699,34 +699,28 @@ By default, the cell content can be cleared in edit mode by pressing <kbd>Delete
 {% highlight c# %}
 this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid grid)
-        : base(grid)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
-
     protected override void ProcessKeyDown(KeyEventArgs args)
     {
-        //Customizes the Delete key operation.
         if (args.Key == Key.Delete)
         {
             //Gets the cell value of current column.
-            var record = this.DataGrid.View.Records[this.DataGrid.SelectedIndex].Data;
-
-            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName);
+            var record = this.DataGrid.CurrentItem;            
+            var currentRowColumnIndex = this.CurrentCellManager.CurrentCell.ColumnIndex - this.DataGrid.GroupColumnDescriptions.Count;
+            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, this.DataGrid.Columns[currentRowColumnIndex].MappingName);
 
             //Returns the cell value when the current column's cell is not set to null.
             if (cellVal != null)
             {
-                var columnName = this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName;
+                var columnName = this.DataGrid.Columns[currentRowColumnIndex].MappingName;
                 PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, columnName);
             }
-
         }
-        else
-            base.ProcessKeyDown(args);
-    }       
+    }
 }
 {% endhighlight %}
 {% endtabs %}
