@@ -40,12 +40,29 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 {% highlight xaml %}
 
-<Grid Background="White">
+<Grid>
     <!--Initializes the SfDiagram-->  
     <syncfusion:SfDiagram x:Name="diagram">
     </syncfusion:SfDiagram>
 </Grid>
 
+{% endhighlight %}
+
+
+#Initialize PageSettings
+
+Page settings enable to customize the appearance of the Diagram page.
+
+{% highlight xaml %}
+<Grid>
+    <!--Initializes the SfDiagram-->  
+    <syncfusion:SfDiagram x:Name="diagram">
+        <!--customize default page settings-->
+        <syncfusion:SfDiagram.PageSettings>
+            <syncfusion:PageSettings PageBorderBrush="Transparent" PageBackground="White"></syncfusion:PageSettings>
+        </syncfusion:SfDiagram.PageSettings>
+    </syncfusion:SfDiagram>
+</Grid>
 {% endhighlight %}
 
 ###Initialize nodes and connectors
@@ -81,80 +98,106 @@ We have provided support for the BasicShapes for Diagram as ResourceDictionary. 
 </ResourceDictionary.MergedDictionaries>
 {% endhighlight %}
 
+###Create Custom Annotation Collection
+
+To create annotation collection of the node and connector. Annotation properties assigned with the annotationcollection, that is, ObservableCollection of the IAnnotation.
+
+{% highlight xaml %}
+
+//create Annotation Collection
+public class AnnotationCollection : ObservableCollection<IAnnotation>
+{
+
+}
+{% endhighlight %}
+
 ###Create and add Node
 Let us create and add a NodeViewModel with specific position, Size, Annotation and Shape.
 {% highlight xaml %}
-   <!--Create a NodeViewModel with Specific customization option-->
-  <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
-    <!--Initialize Annotation-->
-        <syncfusion:NodeViewModel.Annotations>
-            <!--Collection of Annotation-->
-            <local:Annotations>
-                    <!--Create a AnnotationEditorViewModel with Content-->
-                 <syncfusion:AnnotationEditorViewModel Content="Start"/>
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-  <syncfusion:NodeViewModel>
+
+<!--Create a NodeViewModel with Specific customization option-->
+<syncfusion:NodeViewModel ID="Begin" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}">
+    <syncfusion:NodeViewModel.Annotations>
+        <!--Initialize Annotation Collection-->
+        <local:AnnotationCollection>
+            <syncfusion:AnnotationEditorViewModel Content="Begin"/>
+        </local:AnnotationCollection>
+    </syncfusion:NodeViewModel.Annotations>
+</syncfusion:NodeViewModel>
+
 {% endhighlight %}
            
 N> Annotations property is an Collection, which indicates that more than one Annotation can be added to a Node.
 
 Added node will be displayed in diagram as shown below.
                            
-![](Getting-Started_images\Getting_Started_flowDiagram_img1.jpg)
+![](Getting-Started_images\Getting_Started_Image2.jpg)
 
 ###Connect nodes
     * Create another NodeViewModel with another set of data.
     {% highlight xaml %}
-   <!--Start-->
-   <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="Start"/>
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-   </syncfusion:NodeViewModel>
-
-   <!--Read the Number-->
-   <syncfusion:NodeViewModel ID="Read" OffsetX="300" UnitWidth="70" UnitHeight="35" OffsetY="120" Shape="{StaticResource Rectangle}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="Get Number"/>
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-   </syncfusion:NodeViewModel>  
+<!--Begin-->
+<syncfusion:NodeViewModel ID="Begin" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}">
+    <syncfusion:NodeViewModel.Annotations>
+        <!--Initialize Annotation Collection-->
+        <local:AnnotationCollection>
+            <syncfusion:AnnotationEditorViewModel Content="Begin"/>
+        </local:AnnotationCollection>
+    </syncfusion:NodeViewModel.Annotations>
+</syncfusion:NodeViewModel>
+<!--Input the number-->
+<syncfusion:NodeViewModel ID="Input" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="140" Shape="{StaticResource Data}">
+    <syncfusion:NodeViewModel.Annotations>
+        <!--Initialize Annotation Collection-->
+        <local:AnnotationCollection>
+            <syncfusion:AnnotationEditorViewModel Content="Input : n"/>
+        </local:AnnotationCollection>
+    </syncfusion:NodeViewModel.Annotations>
+</syncfusion:NodeViewModel>
    {% endhighlight %}
     * Connect these two nodes by adding a ConnectorViewModel into Connectors collection with reference to SourceNodeID and TargetNodeID.
    {% highlight xaml %}
-   <!--Create a ConnectorViewModel-->
-   <syncfusion:ConnectorViewModel SourceNodeID="node1" TargetNodeID="node2"/>
+   <!--Create a connection from Begin to Inputn-->
+   <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Inputn"/>
    {% endhighlight %}
     * Connector connects the two nodes as shown below.
 
- ![](Getting-Started_images\Getting_Started_flowDiagram_img2.jpg)
+ ![](Getting-Started_images\Getting_Started_Image1.jpg)
  
 ###Common Style for nodes and Connectors
 Default values for all Nodes and Connectors can be set using Common Style for Node and Connector. For example if all Nodes have same appearance, we can move such properties into Common Style.
  {% highlight xaml %}
-<!--Common Style for ConnectorViewModel-->
+<!--Binding Node Style-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
     <Setter Property="ShapeStyle">
         <Setter.Value>
             <Style TargetType="Path">
-                <Setter Property="Fill" Value="White"></Setter>
-                <Setter Property="Stroke" Value="Black"></Setter>
-                <Setter Property="Stretch" Value="Fill"></Setter>
+                <Setter Property="Fill" Value="White"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Stroke" Value="Black"/>
             </Style>
         </Setter.Value>
     </Setter>
 </Style>
-
-<!--Common Style for ConnectorViewModel-->
+            
+<!--Binding connector style-->
 <Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
+    <Setter Property="TargetDecoratorStyle" >
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Fill" Value="Black"/>
+                <Setter Property="Height" Value="10"/>
+                <Setter Property="Width" Value="10"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
     <Setter Property="ConnectorGeometryStyle">
         <Setter.Value>
             <Style TargetType="Path">
-                <Setter Property="Stroke" Value="Black"></Setter>
+                <Setter Property="Stroke" Value="Black" />
+                <Setter Property="StrokeThickness" Value="1" />
             </Style>
         </Setter.Value>
     </Setter>
@@ -165,81 +208,105 @@ Default values for all Nodes and Connectors can be set using Common Style for No
 
 Similarly we can add required Nodes and Connectors to form a complete flow diagram.          
 
-{% highlight xaml %}                
-<syncfusion:NodeCollection>
-    <syncfusion:NodeViewModel ID="Start" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="50" Shape="{StaticResource Ellipse}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="Start"/>
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-    </syncfusion:NodeViewModel>
+{% highlight xaml %}  
+<syncfusion:SfDiagram.Nodes>
+    <!--Initializes the NodeCollection-->              
+    <syncfusion:NodeCollection>
+        <!--Begin-->
+        <syncfusion:NodeViewModel ID="Begin" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}">
+            <syncfusion:NodeViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="Begin"/>
+                </local:AnnotationCollection>
+            </syncfusion:NodeViewModel.Annotations>
+        </syncfusion:NodeViewModel>
+        <!--Input the number-->
+        <syncfusion:NodeViewModel ID="Input" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="140" Shape="{StaticResource Data}">
+            <syncfusion:NodeViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="Input : n"/>
+                </local:AnnotationCollection>
+            </syncfusion:NodeViewModel.Annotations>
+        </syncfusion:NodeViewModel>
+        <!--check the condition-->
+        <syncfusion:NodeViewModel ID="condition" UnitHeight="80" UnitWidth="120" OffsetX="300" OffsetY="230"
+                                         Shape="{StaticResource Decision}">
+            <syncfusion:NodeViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="if(n % 2 == 0)"/>
+                </local:AnnotationCollection>
+            </syncfusion:NodeViewModel.Annotations>
+        </syncfusion:NodeViewModel>
+        <!--dispaly odd-->
+        <syncfusion:NodeViewModel ID="odd" UnitHeight="50" UnitWidth="120" OffsetX="190" OffsetY="350"
+                                         Shape="{StaticResource PredefinedProcess}">
+            <syncfusion:NodeViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="n is odd"/>
+                </local:AnnotationCollection>
+            </syncfusion:NodeViewModel.Annotations>
+        </syncfusion:NodeViewModel>
+        <!--display even-->
+        <syncfusion:NodeViewModel ID="even" UnitHeight="50" UnitWidth="120" OffsetX="410" OffsetY="350"
+                                         Shape="{StaticResource PredefinedProcess}">
+            <syncfusion:NodeViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="n is even"/>
+                </local:AnnotationCollection>
+            </syncfusion:NodeViewModel.Annotations>
+        </syncfusion:NodeViewModel>
+        <!--End-->
+        <syncfusion:NodeViewModel ID="end" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="450" Shape="{StaticResource Ellipse}">
+            <syncfusion:NodeViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="End"/>
+                </local:AnnotationCollection>
+            </syncfusion:NodeViewModel.Annotations>
+        </syncfusion:NodeViewModel>
+    </syncfusion:NodeCollection>
+</syncfusion:SfDiagram.Nodes>
 
-    <syncfusion:NodeViewModel ID="Read" OffsetX="300" UnitWidth="70" UnitHeight="35" OffsetY="120" Shape="{StaticResource Rectangle}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="Get Number"/>
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-    </syncfusion:NodeViewModel>
-
-    <syncfusion:NodeViewModel ID="Condition" UnitWidth="75" UnitHeight="45" OffsetX="300" OffsetY="210" Shape="{StaticResource Diamond}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="X%2==0 ?" />
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-    </syncfusion:NodeViewModel>
-
-    <syncfusion:NodeViewModel ID="Even" UnitWidth="70" UnitHeight="35" OffsetX="200" OffsetY="310" Shape="{StaticResource PredefinedProcess}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="Even" />
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-    </syncfusion:NodeViewModel>
-    
-    <syncfusion:NodeViewModel ID="Odd" UnitWidth="70" UnitHeight="35" OffsetX="400" OffsetY="310" Shape="{StaticResource PredefinedProcess}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                 <syncfusion:AnnotationEditorViewModel Content="Odd" />
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-    </syncfusion:NodeViewModel>
-
-    <syncfusion:NodeViewModel ID="End" UnitWidth="70" UnitHeight="35" OffsetX="300" OffsetY="410" Shape="{StaticResource Ellipse}">
-        <syncfusion:NodeViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="End"/>
-            </local:Annotations>
-        </syncfusion:NodeViewModel.Annotations>
-    </syncfusion:NodeViewModel>
-</syncfusion:NodeCollection>
-
-<syncfusion:ConnectorCollection>
-    <syncfusion:ConnectorViewModel SourceNodeID="Start" TargetNodeID="Read"/>
-    <syncfusion:ConnectorViewModel SourceNodeID="Read" TargetNodeID="Condition"/>
-    <syncfusion:ConnectorViewModel SourceNodeID="Condition" TargetNodeID="Even">
-        <syncfusion:ConnectorViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="Yes"></syncfusion:AnnotationEditorViewModel>
-            </local:Annotations>
-        </syncfusion:ConnectorViewModel.Annotations>
-    </syncfusion:ConnectorViewModel>
-    <syncfusion:ConnectorViewModel SourceNodeID="Condition" TargetNodeID="Odd">
-        <syncfusion:ConnectorViewModel.Annotations>
-            <local:Annotations>
-                <syncfusion:AnnotationEditorViewModel Content="No"></syncfusion:AnnotationEditorViewModel>
-            </local:Annotations>
-        </syncfusion:ConnectorViewModel.Annotations>
-    </syncfusion:ConnectorViewModel>
-    <syncfusion:ConnectorViewModel SourceNodeID="Even" TargetNodeID="End"/>
-    <syncfusion:ConnectorViewModel SourceNodeID="Odd" TargetNodeID="End"/>
-</syncfusion:ConnectorCollection>
+<syncfusion:SfDiagram.Connectors>
+    <!--Initializes the ConnectorCollection-->
+    <syncfusion:ConnectorCollection>
+        <!--create a connection from begin to Inputn-->
+        <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Input"/>
+        <!--create a connection from Inputn to condition-->
+        <syncfusion:ConnectorViewModel SourceNodeID="Input" TargetNodeID="condition"/>
+        <!--create a connection from condition to even-->
+        <syncfusion:ConnectorViewModel SourceNodeID="condition" TargetNodeID="even">
+            <syncfusion:ConnectorViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="Yes"/>
+                </local:AnnotationCollection>
+            </syncfusion:ConnectorViewModel.Annotations>
+        </syncfusion:ConnectorViewModel>
+        <!--create a connection from condition to odd-->
+        <syncfusion:ConnectorViewModel SourceNodeID="condition" TargetNodeID="odd">
+            <syncfusion:ConnectorViewModel.Annotations>
+                <!--Initialize Annotation Collection-->
+                <local:AnnotationCollection>
+                    <syncfusion:AnnotationEditorViewModel Content="No"/>
+                </local:AnnotationCollection>
+            </syncfusion:ConnectorViewModel.Annotations>
+        </syncfusion:ConnectorViewModel>
+        <!--create a connection from odd to end-->
+        <syncfusion:ConnectorViewModel SourceNodeID="odd" TargetNodeID="end"/>
+        <!--create a connection from even to end-->
+        <syncfusion:ConnectorViewModel SourceNodeID="even" TargetNodeID="end"/>
+    </syncfusion:ConnectorCollection>
+</syncfusion:SfDiagram.Connectors>
  {% endhighlight %}
 
 Final flow chart will looks as shown below.
- ![](Getting-Started_images\Getting_Started_flowDiagram_img3.jpg)
+ ![](Getting-Started_images\Getting_Started.jpg)
 
 ##Automatic organization chart
 In ‘Flow Diagram’ section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
