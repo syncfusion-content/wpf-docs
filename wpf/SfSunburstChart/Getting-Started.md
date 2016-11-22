@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfSunburstChart | wpf | Syncfusion
-description: getting started
+title: Getting Started for SfSunburstChart
+description: This section explains the steps required to populate the sunburst chart with data, add data labels, legends and header.
 platform: wpf
 control: SfSunburstChart
 documentation: ug
@@ -19,29 +19,6 @@ This section explains you the steps required to populate the sunburst chart with
 ![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/gettingstarted1.png)
 
 N> This window differs for the Visual Basic project.
-
-T> Select the .NET Framework version respective to your application. The version can be identified as below:
-<table>
-<tr>
-<td>
-XX.X450.0.X
-</td> 
- <td>4.5 Framework
- </td>
- </tr>
-<tr>
-<td>XX.X451.0.X
-</td>
-<td>4.5.1 Framework
-</td>
-</tr>
-<tr>
-<td>XX.X460.0.X
-</td>
-<td>4.6 Framework
-</td>
-</tr>
-</table>
 
 ## Adding SfSunburstChart from Toolbox
 
@@ -342,22 +319,82 @@ Next, create a view model class and initialize a list of Model objects as shown 
         public ObservableCollection<Model> Data { get; set; }
         public ViewModel()
         {
-            Data = new ObservableCollection<Model>();
-            Data.Add(new Model { Country = "America", JobDescription = "Sales", EmployeesCount = 70 });
-            Data.Add(new Model { Country = "America", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 35 });
-            Data.Add(new Model { Country = "America", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 105 });
-            Data.Add(new Model { Country = "America", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 40 });
-            Data.Add(new Model { Country = "America", JobDescription = "Management", EmployeesCount = 40 });
-            Data.Add(new Model { Country = "America", JobDescription = "Accounts", EmployeesCount = 60 });
-            Data.Add(new Model { Country = "India", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 25 });
-            Data.Add(new Model { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 155 });
-            Data.Add(new Model { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 60 });
-            Data.Add(new Model { Country = "Germany", JobDescription = "Sales", JobGroup = "Executive", EmployeesCount = 30 });
-            Data.Add(new Model { Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 });
-            Data.Add(new Model { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 100 });
-            Data.Add(new Model { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 30 });
-            Data.Add(new Model { Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60 });
-            Data.Add(new Model { Country = "UK", JobDescription = "Marketing", EmployeesCount = 40 });
+            Data = new ObservableCollection<Model>
+            {
+                new Model
+                {
+                    Country = "America", JobDescription = "Sales",
+                    EmployeesCount = 70
+                },
+                new Model
+                {
+                    Country = "America", JobDescription = "Technical",
+                    JobGroup = "Testers", EmployeesCount = 35
+                },
+                new Model
+                {
+                    Country = "America", JobDescription = "Technical",
+                    JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 105
+                },
+                new Model
+                {
+                    Country = "America", JobDescription = "Technical",
+                    JobGroup = "Developers", JobRole = "Web", EmployeesCount = 40
+                },
+                new Model
+                {
+                    Country = "America", JobDescription = "Management",
+                    EmployeesCount = 40
+                },
+                new Model
+                {
+                    Country = "America", JobDescription = "Accounts",
+                    EmployeesCount = 60
+                },
+                new Model
+                {
+                    Country = "India", JobDescription = "Technical",
+                    JobGroup = "Testers", EmployeesCount = 25
+                },
+                new Model
+                {
+                    Country = "India", JobDescription = "Technical", JobGroup = "Developers",
+                    JobRole = "Windows", EmployeesCount = 155
+                },
+                new Model
+                {
+                    Country = "India", JobDescription = "Technical", JobGroup = "Developers",
+                    JobRole = "Web", EmployeesCount = 60
+                },
+                new Model
+                {
+                    Country = "Germany", JobDescription = "Sales", JobGroup = "Executive",
+                    EmployeesCount = 30
+                },
+                new Model
+                {
+                    Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst",
+                    EmployeesCount = 40
+                },
+                new Model
+                {
+                    Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
+                    JobRole = "Windows", EmployeesCount = 100
+                },
+                new Model
+                {
+                    Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
+                    JobRole = "Web", EmployeesCount = 30
+                },
+                new Model
+                {
+                    Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60
+                },
+                new Model
+                {
+                    Country = "UK", JobDescription = "Marketing", EmployeesCount = 40
+                }
+            };
         }
     }
 {% endhighlight %}
@@ -379,8 +416,7 @@ N> Add namespace of ViewModel class in your XAML page if you prefer to set DataC
 {% endhighlight %}
 
 {% highlight C# %}
-ViewModel viewModel = new ViewModel();
-this.DataContext = viewModel;
+this.DataContext = new ViewModel();
 {% endhighlight %}
     
 {% endtabs %}
