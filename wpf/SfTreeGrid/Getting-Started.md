@@ -841,7 +841,7 @@ Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfus
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `HyperLink` controlsin its cells.
+Represents SfTreeGrid column that hosts `HyperLink` controls in its cells.
 </td>
 </tr>
 <tr>
