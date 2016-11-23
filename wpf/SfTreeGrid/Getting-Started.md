@@ -784,7 +784,7 @@ Represents SfTreeGrid column that hosts textual content in its cells.
 {{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/doubletextbox/overview)'| markdownify }} controls in its cells which is used to format and display Numeric values.
+Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/doubletextbox/overview)'| markdownify }} control in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -792,7 +792,7 @@ Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusi
 {{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimeedit/overview)'| markdownify }} controls in its cells which is used to display and format DateTime values.
+Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimeedit/overview)'| markdownify }} control in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -800,7 +800,7 @@ Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusio
 {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `ComboBox`controls in its cells.
+Represents SfTreeGrid column that hosts `ComboBox`control in its cells.
 </td>
 </tr>
 <tr>
@@ -808,7 +808,7 @@ Represents SfTreeGrid column that hosts `ComboBox`controls in its cells.
 {{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `CheckBox` controls in its cells.
+Represents SfTreeGrid column that hosts `CheckBox` control in its cells.
 </td>
 </tr>
 <tr>
@@ -816,7 +816,7 @@ Represents SfTreeGrid column that hosts `CheckBox` controls in its cells.
 {{'[TreeGridMaskColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridMaskColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `MaskedTextBox` controls in its cells which is used to display textual content by applying Mask.
+Represents SfTreeGrid column that hosts `MaskedTextBox` control in its cells which is used to display textual content by applying Mask.
 </td>
 </tr>
 <tr>
@@ -825,7 +825,7 @@ Represents SfTreeGrid column that hosts `MaskedTextBox` controls in its cells w
 </td>
 <td>
 Represents SfTreeGrid column that hosts 
-{{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currencytextbox/overview)'| markdownify }} controls in its cells which is used to display numeric values with currency format.
+{{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currencytextbox/overview)'| markdownify }} control in its cells which is used to display numeric values with currency format.
 </td>
 </tr>
 <tr>
@@ -833,7 +833,7 @@ Represents SfTreeGrid column that hosts
 {{'[TreeGridPercentColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percenttextbox/overview)'| markdownify }} controls in its cells which is used to display numeric values with percent format.
+Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percenttextbox/overview)'| markdownify }} control in its cells which is used to display numeric values with percent format.
 </td>
 </tr>
 <tr>
@@ -841,7 +841,7 @@ Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfus
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `HyperLink` controls in its cells.
+Represents SfTreeGrid column that hosts `HyperLink` control in its cells.
 </td>
 </tr>
 <tr>
