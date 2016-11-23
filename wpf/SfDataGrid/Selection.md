@@ -547,8 +547,9 @@ If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using 
 {% highlight c# %}
 
 int recordIndex = 20;
-datagrid.ExpandDetailsViewAt(recordIndex);
 int index = 0;
+int parentRowIndex = 25;
+datagrid.ExpandDetailsViewAt(recordIndex);
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
     if (def.RelationalColumn == "ProductDetails")
@@ -602,7 +603,7 @@ DetailsViewManager detailsViewManager = propertyInfo.GetValue(dataGrid) as Detai
 var rowcolumnIndex = new RowColumnIndex(index, 1);
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
-//If the DetailsViewDataGrid is not in view, call the BringIntoView method.
+//If the DetailsViewDataGrid is not in view, then you can call the BringIntoView method.
 if (detailsViewDataGrid == null)
 {
     detailsViewManager.BringIntoView(index);
