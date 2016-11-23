@@ -49,7 +49,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 {% endhighlight %}
 
 
-#Initialize PageSettings
+###Initialize PageSettings
 
 Page settings enable to customize the appearance of the Diagram page.
 
@@ -158,7 +158,7 @@ Added node will be displayed in diagram as shown below.
     * Connect these two nodes by adding a ConnectorViewModel into Connectors collection with reference to SourceNodeID and TargetNodeID.
    {% highlight xaml %}
    <!--Create a connection from Begin to Inputn-->
-   <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Inputn"/>
+   <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Input"/>
    {% endhighlight %}
     * Connector connects the two nodes as shown below.
 
