@@ -100,7 +100,7 @@ We have provided support for the BasicShapes for Diagram as ResourceDictionary. 
 
 ###Create Custom Annotation Collection
 
-To create annotation collection of the node and connector. Annotation properties assigned with the annotationcollection, that is, ObservableCollection of the IAnnotation.
+To create annotation collection of the node and connector. Annotation properties assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
 
 {% highlight xaml %}
 
