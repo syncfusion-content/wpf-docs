@@ -71,18 +71,35 @@ CalcEngine.Parse method does the following:
 
 The parsed formula is a Reverse Polish Notation expression using tokens to compactly represent the entered formula. The parsing recognizes and replaces NamedRanges with their corresponding value. The parsing also recognizes library functions and tokenizes them as well.
 
-## Calculating
+## Computing Formula
 
-This section discusses the Calculate function available for the CalcEngine.
+The parsed formulas in [CalcEngine](https://help.syncfusion.com/cr/cref_files/wpf/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) will be calculated through [ComputedValue](https://help.syncfusion.com/cr/cref_files/wpf/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ComputedValue.html) method. It accepts a parsed formula and uses a stack oriented calculation technique to convert the parsed formula into the value that it represents. The value returned is a string holding the computed quantity.
 
-CalcEngine.Calculate is the method that actually performs calculations. It does the following: 
+Similarly, parsing and computing will be done through [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/wpf/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method. This will be using internal parsing and no parsed string will be returned.
 
-* It accepts a parsed formula 
-* Uses a stack oriented calculation technique to convert the parsed formula into the value that it represents. 
+For Example:
+
+create a new class (e.g. CalcData) derived from [ICalcData](https://help.syncfusion.com/cr/cref_files/wpf/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface and implement the interface like below code example.[SetValueRowCol](https://help.syncfusion.com/cr/cref_files/wpf/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcSheet~SetValueRowCol.html) and [GetValueRowCol](https://help.syncfusion.com/cr/cref_files/wpf/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcSheet~GetValueRowCol.html) method can be used to set and get the value to/from the variable. 
 
 
 
-N> The value returned is a string holding the computed quantity.
+<table>
+<tr>
+<td>
+public class CalcData : ICalcData <br/><br/>{ <br/><br/>public event ValueChangedEventHandler ValueChanged; <br/><br/><br/><br/>Dictionary<string, object> values = new Dictionary<string, object>(); <br/><br/>public object GetValueRowCol(int row, int col) <br/><br/>{ <br/><br/>object value = null; <br/><br/>var key = RangeInfo.GetAlphaLabel(col) + row; <br/><br/>this.values.TryGetValue(key, out value); <br/><br/>return value; <br/><br/>} <br/><br/><br/><br/>public void SetValueRowCol(object value, int row, int col) <br/><br/>{ <br/><br/>var key = RangeInfo.GetAlphaLabel(col) + row; <br/><br/>if (!values.ContainsKey(key)) <br/><br/>values.Add(key, value); <br/><br/>else if (values.ContainsKey(key) && values[key] != value) <br/><br/>values[key] = value; <br/><br/>} <br/><br/><br/><br/>public void WireParentObject(){} <br/><br/><br/><br/>private void OnValueChanged(int row, int col, string value) <br/><br/>{ <br/><br/>if (ValueChanged != null) <br/><br/>ValueChanged(this, new ValueChangedEventArgs(row, col, value)); <br/><br/>} <br/><br/>} <br/><br/><br/><br/></td></tr>
+</table>
+
+
+And then initialize the `CalcEngine` to parse and compute the formula. Also, reset the value of variables at runtime and get the updated result by computing the parsed formula like below code example. 
+
+
+
+<table>
+<tr>
+<td>
+calcData = new CalcData(); <br/><br/>engine = new CalcEngine(calcData); <br/><br/><br/><br/>//Set value 100 to variable "A1" <br/><br/>calcData.SetValueRowCol(100, 1, 1); <br/><br/><br/><br/>//Set value 200 to variable "B1" <br/><br/>calcData.SetValueRowCol(200, 1, 2); <br/><br/><br/><br/>var parsedFormula = engine.ParseFormula("=A1+B1"); <br/><br/><br/><br/>//output is 300 <br/><br/>var r = engine.ComputeFormula(parsedFormula); <br/><br/><br/><br/>//Reset the value of variable "A1" to 10. <br/><br/>calcData.SetValueRowCol(10, 1, 1); <br/><br/><br/><br/>//output is 210 <br/><br/>var r1 = engine.ComputeFormula(parsedFormula); <br/><br/><br/><br/><br/><br/></td></tr>
+</table>
+
 
 ## How Things Work
 
