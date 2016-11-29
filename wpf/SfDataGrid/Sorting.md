@@ -229,9 +229,15 @@ Public class CustomComparer:IComparer<object>,ISortDirection
             return 0;
     }
 
-    //Get or set the direction of sorting when compared gets called.
+    
     private ListSortDirection _SortDirection;
     
+    /// <summary>
+    /// Gets or sets the property that denotes the sort direction.
+    /// </summary>
+    /// <remarks>
+    /// SortDirection gets updated only when sorting the groups. For other cases, SortDirection is always ascending.
+    /// </remarks>
     public ListSortDirection SortDirection
     {
         get { return _SortDirection; }
