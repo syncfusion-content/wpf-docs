@@ -358,7 +358,7 @@ using Syncfusion.UI.Xaml.Grid.Helpers;
 //Check whether the data is newly added 
 if (this.dataGrid.View.IsAddingNew)
 {
-    // Which end edit the current cell. By passing false, it revert the entered value.
+    //Which end edit the current cell. By passing false, it revert the entered value.
     if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
         this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
 
@@ -397,7 +397,7 @@ if (this.dataGrid.View.IsAddingNew)
     if (this.dataGrid.AddNewRowPosition == AddNewRowPosition.Top)
         rowColumnIndex.RowIndex = rowColumnIndex.RowIndex + 1;
 
-    // Which retains the current cell border in the row after canceling AddNewRow as you press ESC key operation.
+    //Which retains the current cell border in the row after canceling AddNewRow as you press ESC key operation.
     this.dataGrid.MoveCurrentCell(rowColumnIndex);
 }
 {% endhighlight %}
@@ -678,7 +678,7 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 ### Handling selection after deleting the record from SfDataGrid
 
-You handle the selection after remove the records through [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs~SelectedIndex.html) property of [RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event.
+You can handle the selection after remove the records through [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs~SelectedIndex.html) property of [RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -686,7 +686,7 @@ this.dataGrid.RecordDeleted += dataGrid_RecordDeleted;
 
 void dataGrid_RecordDeleted(object sender, RecordDeletedEventArgs args)
 {
-    args.SelectedIndex =-1;
+    args.SelectedIndex = -1;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -699,34 +699,32 @@ By default, the cell content can be cleared in edit mode by pressing <kbd>Delete
 {% highlight c# %}
 this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid grid)
-        : base(grid)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
-
     protected override void ProcessKeyDown(KeyEventArgs args)
     {
         //Customizes the Delete key operation.
         if (args.Key == Key.Delete)
         {
             //Gets the cell value of current column.
-            var record = this.DataGrid.View.Records[this.DataGrid.SelectedIndex].Data;
-
-            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName);
+            var record = this.DataGrid.CurrentItem;
+            var currentColumnIndex = this.CurrentCellManager.CurrentCell.ColumnIndex;
+            var columnIndex = this.DataGrid.ResolveToGridVisibleColumnIndex(currentColumnIndex);
+            var mappingName = this.DataGrid.Columns[columnIndex].MappingName;
+            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
             //Returns the cell value when the current column's cell is not set to null.
             if (cellVal != null)
             {
-                var columnName = this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName;
-                PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, columnName);
+                PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, mappingName);
             }
-
         }
         else
             base.ProcessKeyDown(args);
-    }       
+    }
 }
 {% endhighlight %}
 {% endtabs %}

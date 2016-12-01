@@ -49,7 +49,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 {% endhighlight %}
 
 
-#Initialize PageSettings
+###Initialize PageSettings
 
 Page settings enable to customize the appearance of the Diagram page.
 
@@ -100,7 +100,7 @@ We have provided support for the BasicShapes for Diagram as ResourceDictionary. 
 
 ###Create Custom Annotation Collection
 
-To create annotation collection of the node and connector. Annotation properties assigned with the annotationcollection, that is, ObservableCollection of the IAnnotation.
+To create annotation collection of the node and connector. Annotation properties assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
 
 {% highlight xaml %}
 
@@ -158,7 +158,7 @@ Added node will be displayed in diagram as shown below.
     * Connect these two nodes by adding a ConnectorViewModel into Connectors collection with reference to SourceNodeID and TargetNodeID.
    {% highlight xaml %}
    <!--Create a connection from Begin to Inputn-->
-   <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Inputn"/>
+   <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Input"/>
    {% endhighlight %}
     * Connector connects the two nodes as shown below.
 

@@ -49,6 +49,55 @@ The float window is rolled up to top using the property `IsRollUpTopProperty`. T
 
 ![](FloatingWindow_images/FloatingWindow_img2.jpeg)
 
+## Displaying Float Windows in Taskbar
+
+Taskbar displays the icon of running applications for the purpose of switching between applications. Similarly `DockingManager` allows to display `NativeFloatWindow` in taskbar. It can be set using `ShowFloatWindowInTaskbar` property for all the `NativeFloatWindow` in `DockingManager` and default is false. Only `NativeFloatWindow` icon can be displayed in taskbar so it is necessary to set `UseNativeFloatWindow` to true. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+
+<syncfusion:DockingManager ShowFloatWindowInTaskbar="True" UseNativeFloatWindow="True">
+
+<ContentControl syncfusion:DockingManager.Header="Toolbox"
+                syncfusion:DockingManager.State="Float"
+                Content="No items to display in toolbox"/>
+                
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer"
+                syncfusion:DockingManager.State="Float"
+                Content="Loading failed"/>
+                
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Show or Hide the Taskbar support for Selective Windows
+
+To enable or disable the taskbar support for particular window, use the attached property `ShowInTaskbar` of `DockingManager` and the default is true. It is necessary to set `ShowFloatWindowInTaskbar` property of `DockingManager` to true for displaying even a single `NativeFloatWindow` in taskbar.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+
+<syncfusion:DockingManager ShowFloatWindowInTaskbar="True" UseNativeFloatWindow="True">
+
+<ContentControl syncfusion:DockingManager.Header="Toolbox" syncfusion:DockingManager.State="Float"
+                syncfusion:DockingManager.ShowInTaskbar="False"
+                Content="No items to display in toolbox"/>
+
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer"
+                syncfusion:DockingManager.State="Float"
+                Content="Loading failed"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Multiple Monitor functionalities
 
