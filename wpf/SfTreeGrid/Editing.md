@@ -77,9 +77,9 @@ You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicki
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassEditorSelectionBehaviorTopic.html) property.
 
-SelectAll – selects the text of edit element loaded inside cell.
+SelectAll Ö selects the text of edit element loaded inside cell.
 
-MoveLast – places the cursor at the last of edit element loaded inside cell.  
+MoveLast Ö places the cursor at the last of edit element loaded inside cell.  
 
 {% tabs %}
 {% highlight xaml %}
