@@ -152,16 +152,17 @@ You can use `DisplayBinding` property to format the column in display, by settin
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-                        AllowEditing="True"                        
-                        AutoExpandMode="RootNodesExpanded"
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"                        
-                        ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AllowEditing="True"                        
+					AutoExpandMode="RootNodesExpanded"
+					AutoGenerateColumns="False"
+					ChildPropertyName="Children"                        
+					ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -180,38 +181,38 @@ In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar`
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AllowEditing="True"
-							AllowSorting="True"
-							AutoExpandMode="RootNodesExpanded"
-							AutoGenerateColumns="False"
-							ChildPropertyName="Children"
-							ColumnSizer="Star"
-							ItemsSource="{Binding EmployeeDetails}"
-							LiveNodeUpdateMode="AllowDataShaping">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridCurrencyColumn MappingName="Salary" >
-				<syncfusion:TreeGridCurrencyColumn.CellTemplate>
-					<DataTemplate>
-						<Grid>
-							<ProgressBar x:Name="progressBar"
-												Background="Transparent"
-												BorderThickness="0"
-												Maximum="200000"
-												Minimum="0"
-												Visibility="Visible"
-												Value="{Binding Salary}" />
-							<TextBlock HorizontalAlignment="Right"
-											VerticalAlignment="Center"
-											Text="{Binding Salary,
-															Converter={StaticResource CurrencyConverter}}"
-											TextAlignment="Center" />
-						</Grid>
-					</DataTemplate>
-				</syncfusion:TreeGridCurrencyColumn.CellTemplate>
-			</syncfusion:TreeGridCurrencyColumn>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AllowEditing="True"
+						AllowSorting="True"
+						AutoExpandMode="RootNodesExpanded"
+						AutoGenerateColumns="False"
+						ChildPropertyName="Children"
+						ColumnSizer="Star"
+						ItemsSource="{Binding EmployeeDetails}"
+						LiveNodeUpdateMode="AllowDataShaping">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridCurrencyColumn MappingName="Salary" >
+			<syncfusion:TreeGridCurrencyColumn.CellTemplate>
+				<DataTemplate>
+					<Grid>
+						<ProgressBar x:Name="progressBar"
+											Background="Transparent"
+											BorderThickness="0"
+											Maximum="200000"
+											Minimum="0"
+											Visibility="Visible"
+											Value="{Binding Salary}" />
+						<TextBlock HorizontalAlignment="Right"
+										VerticalAlignment="Center"
+										Text="{Binding Salary,
+														Converter={StaticResource CurrencyConverter}}"
+										TextAlignment="Center" />
+					</Grid>
+				</DataTemplate>
+			</syncfusion:TreeGridCurrencyColumn.CellTemplate>
+		</syncfusion:TreeGridCurrencyColumn>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -233,30 +234,30 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% tabs %}
 {% highlight xaml %}
 
-	<DataTemplate   x:Key="cellTemplate">
-		<TextBlock  Foreground="Red"
-				Margin="3,0,0,0"
-				Text="{Binding Path=Value}"/>
-	</DataTemplate>
+<DataTemplate   x:Key="cellTemplate">
+	<TextBlock  Foreground="Red"
+			Margin="3,0,0,0"
+			Text="{Binding Path=Value}"/>
+</DataTemplate>
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-						AutoExpandMode="RootNodesExpanded"
-						AutoGenerateColumns="False"
-						ChildPropertyName="Children"
-						ColumnSizer="Star"
-						ItemsSource="{Binding EmployeeDetails}">
-					<syncfusion:SfTreeGrid.Columns>
-						<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" 
-													   SetCellBoundValue="True"
-													   CellTemplate="{StaticResource cellTemplate}"/>
-						<syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-						<syncfusion:TreeGridNumericColumn HeaderText="Person ID" MappingName="Id"  NumberDecimalDigits="0"
-														  SetCellBoundValue="True"
-														  CellTemplate="{StaticResource cellTemplate}"/>
-						<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
-						<syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="IsAvailable" />
-					</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AutoExpandMode="RootNodesExpanded"
+					AutoGenerateColumns="False"
+					ChildPropertyName="Children"
+					ColumnSizer="Star"
+					ItemsSource="{Binding EmployeeDetails}">
+				<syncfusion:SfTreeGrid.Columns>
+					<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" 
+												   SetCellBoundValue="True"
+												   CellTemplate="{StaticResource cellTemplate}"/>
+					<syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+					<syncfusion:TreeGridNumericColumn HeaderText="Person ID" MappingName="Id"  NumberDecimalDigits="0"
+													  SetCellBoundValue="True"
+													  CellTemplate="{StaticResource cellTemplate}"/>
+					<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
+					<syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="IsAvailable" />
+				</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -272,21 +273,21 @@ For example, two different templates loaded alternatively in `Salary` column.
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>			
-		<local:CustomCellTemplateSelector x:Key="cellTemplateSelector"/>
-		<DataTemplate   x:Key="DefaultTemplate">
-			<TextBlock  Background="Wheat"
-					Foreground="Red"
-					Text="{Binding Path=Id}"
-					TextAlignment="Center" />
-		</DataTemplate>
-		<DataTemplate   x:Key="AlternateTemplate">
-			<TextBlock  Background="Beige"
-					Foreground="Green"
-					Text="{Binding Path=Id}"
-					TextAlignment="Center" />
-		</DataTemplate>
-	</Window.Resources>
+<Window.Resources>			
+	<local:CustomCellTemplateSelector x:Key="cellTemplateSelector"/>
+	<DataTemplate   x:Key="DefaultTemplate">
+		<TextBlock  Background="Wheat"
+				Foreground="Red"
+				Text="{Binding Path=Id}"
+				TextAlignment="Center" />
+	</DataTemplate>
+	<DataTemplate   x:Key="AlternateTemplate">
+		<TextBlock  Background="Beige"
+				Foreground="Green"
+				Text="{Binding Path=Id}"
+				TextAlignment="Center" />
+	</DataTemplate>
+</Window.Resources>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -296,20 +297,20 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on Salary
 {% tabs %}
 {% highlight c# %}
 
-	public class CustomCellTemplateSelector : DataTemplateSelector
+public class CustomCellTemplateSelector : DataTemplateSelector
+{
+	public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
 	{
-		public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-		{
-			if (item == null)
-				return null;
+		if (item == null)
+			return null;
 
-			var data = item as Employee;            
-			if (data.Id % 2 == 0)
-				return Application.Current.MainWindow.FindResource("AlternateTemplate") as DataTemplate;
-			else
-				return Application.Current.MainWindow.FindResource("DefaultTemplate") as DataTemplate;
-		}
+		var data = item as Employee;            
+		if (data.Id % 2 == 0)
+			return Application.Current.MainWindow.FindResource("AlternateTemplate") as DataTemplate;
+		else
+			return Application.Current.MainWindow.FindResource("DefaultTemplate") as DataTemplate;
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -319,17 +320,17 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-						AutoExpandMode="RootNodesExpanded"
-						AutoGenerateColumns="False"
-						ChildPropertyName="Children"
-						ColumnSizer="Star"
-						ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>						
-			<syncfusion:TreeGridTextColumn HeaderText="Person ID" MappingName="Id"  
-										   CellTemplateSelector="{StaticResource cellTemplateSelector}"/>						
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>      
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AutoExpandMode="RootNodesExpanded"
+					AutoGenerateColumns="False"
+					ChildPropertyName="Children"
+					ColumnSizer="Star"
+					ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>						
+		<syncfusion:TreeGridTextColumn HeaderText="Person ID" MappingName="Id"  
+									   CellTemplateSelector="{StaticResource cellTemplateSelector}"/>						
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>      
 	
 {% endhighlight %}
 {% endtabs %}
@@ -347,55 +348,55 @@ Below command defined in ViewModel is bound to `Button` inside `CellTemplate`. B
 {% tabs %}
 {% highlight c# %}
 
-	public class BaseCommand : ICommand
+public class BaseCommand : ICommand
+{
+	#region Fields
+
+	readonly Action<object> _execute;
+
+	readonly Predicate<object> _canExecute;
+
+	public event EventHandler CanExecuteChanged;
+
+	#endregion
+
+	#region Constructors
+	
+	/// <summary>
+	/// Creates a new command that always execute.
+	/// </summary>
+	/// <param name="execute">The execution logic.</param>
+	public BaseCommand(Action<object> execute)
+
+		: this(execute, null)
 	{
-		#region Fields
-
-		readonly Action<object> _execute;
-
-		readonly Predicate<object> _canExecute;
-
-		public event EventHandler CanExecuteChanged;
-
-		#endregion
-
-		#region Constructors
-		
-		/// <summary>
-		/// Creates a new command that always execute.
-		/// </summary>
-		/// <param name="execute">The execution logic.</param>
-		public BaseCommand(Action<object> execute)
-
-			: this(execute, null)
-		{
-		}
-
-		/// <summary>
-		/// Creates a new command.
-		/// </summary>
-		/// <param name="execute">The execution logic.</param>
-		/// <param name="canExecute">The execution status logic.</param>
-		public BaseCommand(Action<object> execute, Predicate<object> canExecute)
-		{
-			if (execute == null)
-				throw new ArgumentNullException("execute");
-			_execute = execute;
-			_canExecute = canExecute;
-		}
-
-		#endregion        
-
-		bool ICommand.CanExecute(object parameter)
-		{
-			return _canExecute == null ? true : _canExecute(parameter);
-		}
-
-		void ICommand.Execute(object parameter)
-		{
-			_execute(parameter);
-		}                
 	}
+
+	/// <summary>
+	/// Creates a new command.
+	/// </summary>
+	/// <param name="execute">The execution logic.</param>
+	/// <param name="canExecute">The execution status logic.</param>
+	public BaseCommand(Action<object> execute, Predicate<object> canExecute)
+	{
+		if (execute == null)
+			throw new ArgumentNullException("execute");
+		_execute = execute;
+		_canExecute = canExecute;
+	}
+
+	#endregion        
+
+	bool ICommand.CanExecute(object parameter)
+	{
+		return _canExecute == null ? true : _canExecute(parameter);
+	}
+
+	void ICommand.Execute(object parameter)
+	{
+		_execute(parameter);
+	}                
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -405,27 +406,27 @@ Below code, defines the command for `Button` in `ViewModel`.
 {% tabs %}
 {% highlight c# %}
 
-	public class ViewModel
-	{    
-		private BaseCommand deleteRecord;
-		public BaseCommand DeleteRecord
+public class ViewModel
+{    
+	private BaseCommand deleteRecord;
+	public BaseCommand DeleteRecord
+	{
+		get
 		{
-			get
-			{
-				if (deleteRecord == null)
-					deleteRecord = new BaseCommand(OnDeleteRecordClicked, OnCanDelete);
-				return deleteRecord;
-			}
+			if (deleteRecord == null)
+				deleteRecord = new BaseCommand(OnDeleteRecordClicked, OnCanDelete);
+			return deleteRecord;
 		}
-		private static bool OnCanDelete(object obj)
-		{
-			return true;
-		}
-		private void OnDeleteRecordClicked(object obj)
-		{
-			//TODO ACTION.
-		}
-	}	
+	}
+	private static bool OnCanDelete(object obj)
+	{
+		return true;
+	}
+	private void OnDeleteRecordClicked(object obj)
+	{
+		//TODO ACTION.
+	}
+}	
 	
 {% endhighlight %}
 {% endtabs %}
@@ -435,32 +436,32 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoExpandMode="AllNodesExpanded"
-							ChildPropertyName="ReportsTo"
-							ItemsSource="{Binding Employees}"
-							ParentPropertyName="ID">
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoExpandMode="AllNodesExpanded"
+						ChildPropertyName="ReportsTo"
+						ItemsSource="{Binding Employees}"
+						ParentPropertyName="ID">
 
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn HeaderText="ID" MappingName="ID">
-				<syncfusion:TreeGridTextColumn.CellTemplate>
-					<DataTemplate>
-						<Button Command="{Binding DeleteRecord,
-											Source={StaticResource viewModel}}"
-								CommandParameter="{Binding}" 
-								HorizontalAlignment="Stretch" 
-								VerticalAlignment="Stretch"
-								Content="Delete" />
-									   <!--or-->
-						 <Button Command="{Binding DataContext.DeleteRecord,
-												  ElementName=treeGrid}"
-										 CommandParameter="{Binding}"
-										 Content="Delete" />
-					</DataTemplate>
-				</syncfusion:TreeGridTextColumn.CellTemplate>
-			</syncfusion:TreeGridTextColumn>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn HeaderText="ID" MappingName="ID">
+			<syncfusion:TreeGridTextColumn.CellTemplate>
+				<DataTemplate>
+					<Button Command="{Binding DeleteRecord,
+										Source={StaticResource viewModel}}"
+							CommandParameter="{Binding}" 
+							HorizontalAlignment="Stretch" 
+							VerticalAlignment="Stretch"
+							Content="Delete" />
+								   <!--or-->
+					 <Button Command="{Binding DataContext.DeleteRecord,
+											  ElementName=treeGrid}"
+									 CommandParameter="{Binding}"
+									 Content="Delete" />
+				</DataTemplate>
+			</syncfusion:TreeGridTextColumn.CellTemplate>
+		</syncfusion:TreeGridTextColumn>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -477,16 +478,16 @@ You can apply format for the column using [StringFormat](https://msdn.microsoft.
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-                        AllowEditing="True"                        
-                        AutoExpandMode="RootNodesExpanded"
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"                        
-                        ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AllowEditing="True"                        
+					AutoExpandMode="RootNodesExpanded"
+					AutoGenerateColumns="False"
+					ChildPropertyName="Children"                        
+					ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -496,18 +497,18 @@ When column is auto-generated, you can set the 'StringFormat' by handling 'AutoG
 {% tabs %}
 {% highlight c# %}
 
-	void treeGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
+void treeGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
+{
+	if (e.Column.MappingName == "Salary")
 	{
-		if (e.Column.MappingName == "Salary")
+		if (e.Column is TreeGridNumericColumn)
 		{
-			if (e.Column is TreeGridNumericColumn)
-			{
-				e.Column = new TreeGridTextColumn() { MappingName = "Salary", HeaderText = "Salary" };
-			}
-			e.Column.DisplayBinding = new Binding() { Path = new PropertyPath(e.Column.MappingName), StringFormat = "{0:C}" };
-			e.Column.ValueBinding = new Binding() { Path = new PropertyPath(e.Column.MappingName),StringFormat="{0:C}" };
+			e.Column = new TreeGridTextColumn() { MappingName = "Salary", HeaderText = "Salary" };
 		}
+		e.Column.DisplayBinding = new Binding() { Path = new PropertyPath(e.Column.MappingName), StringFormat = "{0:C}" };
+		e.Column.ValueBinding = new Binding() { Path = new PropertyPath(e.Column.MappingName),StringFormat="{0:C}" };
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -519,21 +520,21 @@ You can format the column using `Converter` property by defining `DisplayBinding
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<local:CurrencyFormatConverter x:Key="CurrencyConverter" />
-	</Window.Resources>
+<Window.Resources>
+	<local:CurrencyFormatConverter x:Key="CurrencyConverter" />
+</Window.Resources>
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-						AutoExpandMode="RootNodesExpanded"
-						AutoGenerateColumns="False"
-						ChildPropertyName="Children"
-						ColumnSizer="Star"
-						ItemsSource="{Binding EmployeeDetails}">
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AutoExpandMode="RootNodesExpanded"
+					AutoGenerateColumns="False"
+					ChildPropertyName="Children"
+					ColumnSizer="Star"
+					ItemsSource="{Binding EmployeeDetails}">
 
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridNumericColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, Converter={StaticResource CurrencyConverter}}"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridNumericColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, Converter={StaticResource CurrencyConverter}}"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -541,18 +542,18 @@ You can format the column using `Converter` property by defining `DisplayBinding
 {% tabs%}
 {% highlight c# %}
 
-	public class CurrencyFormatConverter : IValueConverter
+public class CurrencyFormatConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, string language)
 	{
-		public object Convert(object value, Type targetType, object parameter, string language)
-		{
-			return string.Format("{0:C2}", value);
-		}
-
-		public object ConvertBack(object value, Type targetType, object parameter, string language)
-		{
-			return value;
-		}
+		return string.Format("{0:C2}", value);
 	}
+
+	public object ConvertBack(object value, Type targetType, object parameter, string language)
+	{
+		return value;
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -562,19 +563,19 @@ When column is auto-generated, you can set the `Converter` by handling [AutoGene
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "Salary")
 	{
-		if (e.Column.MappingName == "Salary")
+		if (e.Column is TreeGridNumericColumn)
 		{
-			if (e.Column is TreeGridNumericColumn)
-			{
-				e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
-			}
-			e.Column.DisplayBinding = new Binding() { Path = new PropertyPath(e.Column.MappingName), Converter = new CurrencyFormatConverter() };
+			e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
 		}
+		e.Column.DisplayBinding = new Binding() { Path = new PropertyPath(e.Column.MappingName), Converter = new CurrencyFormatConverter() };
 	}
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -621,15 +622,15 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "FirstName")
 	{
-		if (e.Column.MappingName == "FirstName")
-		{
-			 e.Column.CellStyle=this.Resources["cellStyle"] as Style;
-		}
+		 e.Column.CellStyle=this.Resources["cellStyle"] as Style;
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -645,14 +646,14 @@ Below code creates two different styles by TargetType `TreeGridCell`.
 {% tabs %}
 {% highlight xaml %}
 
-	<Application.Resources>
-		<Style x:Key="cellStyle1" TargetType="syncfusion:TreeGridCell">
-			<Setter Property="Background" Value="Bisque" />
-		</Style>
-		<Style x:Key="cellStyle2" TargetType="syncfusion:TreeGridCell">
-			<Setter Property="Background" Value="Aqua" />
-		</Style>
-	</Application.Resources>
+<Application.Resources>
+	<Style x:Key="cellStyle1" TargetType="syncfusion:TreeGridCell">
+		<Setter Property="Background" Value="Bisque" />
+	</Style>
+	<Style x:Key="cellStyle2" TargetType="syncfusion:TreeGridCell">
+		<Setter Property="Background" Value="Aqua" />
+	</Style>
+</Application.Resources>
 
 {% endhighlight %}
 {% endtabs %}
@@ -662,29 +663,29 @@ In the below code, returns the style based on `ID` value. Using `Container` you 
 {% tabs %}
 {% highlight c# %}
 
-	public class CustomCellStyleSelector : StyleSelector
+public class CustomCellStyleSelector : StyleSelector
+{
+	protected override Style SelectStyleCore(object item, DependencyObject container)
 	{
-		protected override Style SelectStyleCore(object item, DependencyObject container)
+		var treeGridCell = container as TreeGridCell;
+
+		var mappingName = treeGridCell.ColumnBase.TreeGridColumn.MappingName;
+
+		var record = treeGridCell.DataContext;
+
+		var cellValue = record.GetType().GetProperty(mappingName).GetValue(record);
+
+		if (mappingName.Equals("ID"))
 		{
-			var treeGridCell = container as TreeGridCell;
+			if (Convert.ToInt16(cellValue)%3==0)
+				return App.Current.Resources["cellStyle1"] as Style;
 
-			var mappingName = treeGridCell.ColumnBase.TreeGridColumn.MappingName;
-
-			var record = treeGridCell.DataContext;
-
-			var cellValue = record.GetType().GetProperty(mappingName).GetValue(record);
-
-			if (mappingName.Equals("ID"))
-			{
-				if (Convert.ToInt16(cellValue)%3==0)
-					return App.Current.Resources["cellStyle1"] as Style;
-
-				else
-					return App.Current.Resources["cellStyle2"] as Style;
-			}
-			return base.SelectStyle(item, container);
+			else
+				return App.Current.Resources["cellStyle2"] as Style;
 		}
+		return base.SelectStyle(item, container);
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -694,20 +695,21 @@ Below code, set the customized style selector to `TreeGridColumn.CellStyleSelect
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<local:CustomCellStyleSelector x:Key="cellStyleSelector>
-	</Window.Resources>
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoExpandMode="AllNodesExpanded"
-							AutoGenerateColumns="True"
-							ChildPropertyName="ReportsTo"
-							ItemsSource="{Binding Employees}"
-							ParentPropertyName="ID">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn MappingName="ID" 
-										   CellStyleSelector="{StaticResource cellStyleSelector}" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<Window.Resources>
+	<local:CustomCellStyleSelector x:Key="cellStyleSelector>
+</Window.Resources>
+
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoExpandMode="AllNodesExpanded"
+						AutoGenerateColumns="True"
+						ChildPropertyName="ReportsTo"
+						ItemsSource="{Binding Employees}"
+						ParentPropertyName="ID">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn MappingName="ID" 
+									   CellStyleSelector="{StaticResource cellStyleSelector}" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -717,15 +719,15 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "ID")
 	{
-		if (e.Column.MappingName == "ID")
-		{
-			e.Column.CellStyleSelector = new CustomCellStyleSelector();
-		}
+		e.Column.CellStyleSelector = new CustomCellStyleSelector();
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -783,18 +785,18 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-						AutoExpandMode="RootNodesExpanded"                    
-						ChildPropertyName="Children"                  
-						ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>			
-			<syncfusion:TreeGridTextColumn HeaderText="First Name" 
-											MappingName="FirstName"
-											TextDecorations="StrikeThrough"
-											TextTrimming="WordEllipsis"
-											TextWrapping="Wrap"/> 
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AutoExpandMode="RootNodesExpanded"                    
+					ChildPropertyName="Children"                  
+					ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>			
+		<syncfusion:TreeGridTextColumn HeaderText="First Name" 
+										MappingName="FirstName"
+										TextDecorations="StrikeThrough"
+										TextTrimming="WordEllipsis"
+										TextWrapping="Wrap"/> 
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -808,18 +810,18 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"   
-					AutoGenerateColumns="False"
-					ChildPropertyName="ReportsTo"
-					ItemsSource="{Binding Employees}"
-					ParentPropertyName="ID">
+<syncfusion:SfTreeGrid Name="treeGrid"   
+				AutoGenerateColumns="False"
+				ChildPropertyName="ReportsTo"
+				ItemsSource="{Binding Employees}"
+				ParentPropertyName="ID">
 
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn HeaderText="First Name" 
-										   MappingName="FirstName"  
-										  />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn HeaderText="First Name" 
+									   MappingName="FirstName"  
+									  />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 
@@ -837,21 +839,21 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% tabs %}
 {% highlight xaml %}
 	
-	<syncfusion:SfTreeGrid Name="treeGrid"   
-						   AutoGenerateColumns="False"
-						   ChildPropertyName="ReportsTo"
-						   ItemsSource="{Binding Employees}"
-						   ParentPropertyName="ID">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridNumericColumn MappingName="Salary" />
-		</syncfusion:SfTreeGrid.Columns>	
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"   
+					   AutoGenerateColumns="False"
+					   ChildPropertyName="ReportsTo"
+					   ItemsSource="{Binding Employees}"
+					   ParentPropertyName="ID">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridNumericColumn MappingName="Salary" />
+	</syncfusion:SfTreeGrid.Columns>	
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-  this.treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" });
+this.treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" });
   
 {% endhighlight %}
 {% endtabs %}
@@ -877,18 +879,18 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-					AutoExpandMode="RootNodesExpanded"                    
-					ChildPropertyName="Children"                  
-					ItemsSource="{Binding EmployeeDetails}">
-	<syncfusion:SfTreeGrid.Columns>        
-		<syncfusion:TreeGridNumericColumn MappingName="Salary" 
-										  NumberDecimalDigits="2"
-										  NumberDecimalSeparator="."
-										  NumberGroupSeparator=","
-										  NumberGroupSizes="3"/>        
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+				AutoExpandMode="RootNodesExpanded"                    
+				ChildPropertyName="Children"                  
+				ItemsSource="{Binding EmployeeDetails}">
+<syncfusion:SfTreeGrid.Columns>        
+	<syncfusion:TreeGridNumericColumn MappingName="Salary" 
+									  NumberDecimalDigits="2"
+									  NumberDecimalSeparator="."
+									  NumberGroupSeparator=","
+									  NumberGroupSizes="3"/>        
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -902,14 +904,14 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-					AutoExpandMode="RootNodesExpanded"                    
-					ChildPropertyName="Children"                  
-					ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>        
-			<syncfusion:TreeGridCurrencyColumn MappingName="Salary" HeaderText = "Salary" />        
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>  
+<syncfusion:SfTreeGrid Name="treeGrid"
+				AutoExpandMode="RootNodesExpanded"                    
+				ChildPropertyName="Children"                  
+				ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>        
+		<syncfusion:TreeGridCurrencyColumn MappingName="Salary" HeaderText = "Salary" />        
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>  
 
 {% endhighlight %}
 
@@ -939,20 +941,20 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-					AutoExpandMode="RootNodesExpanded"                    
-					ChildPropertyName="Children"                  
-					ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>        
-			<syncfusion:TreeGridCurrencyColumn MappingName="Salary" 
-								   CurrencyDecimalDigits="2"
-								   CurrencyDecimalSeparator="."
-								   CurrencyGroupSeparator=","
-								   CurrencyGroupSizes="3"
-								   CurrencyPositivePattern="1"
-								   CurrencySymbol="$"/>       
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+				AutoExpandMode="RootNodesExpanded"                    
+				ChildPropertyName="Children"                  
+				ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>        
+		<syncfusion:TreeGridCurrencyColumn MappingName="Salary" 
+							   CurrencyDecimalDigits="2"
+							   CurrencyDecimalSeparator="."
+							   CurrencyGroupSeparator=","
+							   CurrencyGroupSizes="3"
+							   CurrencyPositivePattern="1"
+							   CurrencySymbol="$"/>       
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -968,15 +970,15 @@ You can display data as percent value or double value using [PercentEditMode](ht
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridPercentColumn MappingName="Hike" HeaderText = "Hike"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridPercentColumn MappingName="Hike" HeaderText = "Hike"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 
@@ -1006,21 +1008,21 @@ You can display data as percent value or double value using [PercentEditMode](ht
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridPercentColumn MappingName="Hike" 
-								  PercentDecimalDigits="2"
-								  PercentDecimalSeparator="."
-								  PercentEditMode="PercentMode"
-								  PercentGroupSeparator=","
-								  PercentGroupSizes="2"
-								  PercentPositivePattern="0"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>  
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridPercentColumn MappingName="Hike" 
+							  PercentDecimalDigits="2"
+							  PercentDecimalSeparator="."
+							  PercentEditMode="PercentMode"
+							  PercentGroupSeparator=","
+							  PercentGroupSizes="2"
+							  PercentPositivePattern="0"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>  
  
 {% endhighlight %}
 {% endtabs %}
@@ -1034,15 +1036,15 @@ You can display data as percent value or double value using [PercentEditMode](ht
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"                               
-							ChildPropertyName="ReportsTo"
-							ItemsSource="{Binding Employees}"
-							ParentPropertyName="ID">
+<syncfusion:SfTreeGrid Name="treeGrid"                               
+						ChildPropertyName="ReportsTo"
+						ItemsSource="{Binding Employees}"
+						ParentPropertyName="ID">
 
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridDateTimeColumn MappingName="DOB" HeaderText="Employee DOB"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridDateTimeColumn MappingName="DOB" HeaderText="Employee DOB"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 
@@ -1090,18 +1092,18 @@ When the predefined `Pattern` does not meet your requirement, you can set the cu
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							ColumnSizer="Star"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>        
-			<syncfusion:TreeGridDateTimeColumn MappingName="DOB" HeaderText="Date of Birth" 
-												CustomPattern="dd-mm-yyyy hh:mm:ss"
-												Pattern="CustomPattern" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						ColumnSizer="Star"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>        
+		<syncfusion:TreeGridDateTimeColumn MappingName="DOB" HeaderText="Date of Birth" 
+											CustomPattern="dd-mm-yyyy hh:mm:ss"
+											Pattern="CustomPattern" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -1111,21 +1113,21 @@ You can also change the format of standard date time pattern such as short patte
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							ColumnSizer="Star"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>        
-			<syncfusion:TreeGridDateTimeColumn MappingName="DOB" HeaderText="Date of Birth"                                             
-                                            Pattern="LongDate">
-                    <syncfusion:TreeGridDateTimeColumn.DateTimeFormat>
-                        <global:DateTimeFormatInfo LongDatePattern="dd-MM-yyyy hh:mm:ss" />
-                    </syncfusion:TreeGridDateTimeColumn.DateTimeFormat>
-            </syncfusion:TreeGridDateTimeColumn>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						ColumnSizer="Star"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>        
+		<syncfusion:TreeGridDateTimeColumn MappingName="DOB" HeaderText="Date of Birth"                                             
+										Pattern="LongDate">
+				<syncfusion:TreeGridDateTimeColumn.DateTimeFormat>
+					<global:DateTimeFormatInfo LongDatePattern="dd-MM-yyyy hh:mm:ss" />
+				</syncfusion:TreeGridDateTimeColumn.DateTimeFormat>
+		</syncfusion:TreeGridDateTimeColumn>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -1141,10 +1143,11 @@ You can allow end-user to increment or decrement the value when 'MouseWheel' or 
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:TreeGridDateTimeColumn HeaderText="Employee DOB"
-                                   MappingName="DOB" 
-                                   AllowNullValue="True" 
-                                   NullValue="17/11/2016" />
+<syncfusion:TreeGridDateTimeColumn HeaderText="Employee DOB"
+							   MappingName="DOB" 
+							   AllowNullValue="True" 
+							   NullValue="17/11/2016" />
+							   
 {% endhighlight %}
 {% endtabs %}
 
@@ -1179,19 +1182,19 @@ You can increment or decrement the selected part of date time value by enabling 
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>        
-			<syncfusion:TreeGridDateTimeColumn HeaderText="Date of Birth"                                             
-                                        DisplayBinding="{Binding Path=DOB,
-                                        ConverterCulture=fr-FR,
-                                        Converter={StaticResource converter}}"
-                                        ValueBinding="{Binding  Path=DOB,
-                                        ConverterCulture=fr-FR}" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>        
+		<syncfusion:TreeGridDateTimeColumn HeaderText="Date of Birth"                                             
+									DisplayBinding="{Binding Path=DOB,
+									ConverterCulture=fr-FR,
+									Converter={StaticResource converter}}"
+									ValueBinding="{Binding  Path=DOB,
+									ConverterCulture=fr-FR}" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1203,18 +1206,18 @@ Below code, returns the culture-specified date time value instead of default pat
 {% tabs %}
 {% highlight c# %}
 
-	public class CultureFormatConverter : IValueConverter
+public class CultureFormatConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
-		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			return value;
-		}
-
-		public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			throw new NotImplementedException();
-		}
+		return value;
 	}
+
+	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		throw new NotImplementedException();
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1226,20 +1229,20 @@ Below code, returns the culture-specified date time value instead of default pat
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							ChildPropertyName="ReportsTo"
-							ItemsSource="{Binding Employees}"
-							ParentPropertyName="ID">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridCheckBoxColumn MappingName="AvailabilityStatus"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						ChildPropertyName="ReportsTo"
+						ItemsSource="{Binding Employees}"
+						ParentPropertyName="ID">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridCheckBoxColumn MappingName="AvailabilityStatus"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	treeGrid.Columns.Add(new TreeGridCheckBoxColumn() { MappingName = "AvailabilityStatus", HeaderText = "Available Status"	});
+treeGrid.Columns.Add(new TreeGridCheckBoxColumn() { MappingName = "AvailabilityStatus", HeaderText = "Available Status"	});
 	
 {% endhighlight %}
 
@@ -1287,26 +1290,26 @@ Using `CellTemplate`, you can format data or conditionally change the properties
 
 {% highlight c# %}
 
-	DataTemplate cellTemplate = new DataTemplate();
+DataTemplate cellTemplate = new DataTemplate();
 
-	FrameworkElementFactory frameworkElement1 = new FrameworkElementFactory(typeof(TextBlock));
-	Binding displaybinding = new Binding() { Path = new PropertyPath("FirstName") };
+FrameworkElementFactory frameworkElement1 = new FrameworkElementFactory(typeof(TextBlock));
+Binding displaybinding = new Binding() { Path = new PropertyPath("FirstName") };
 
-	frameworkElement1.SetValue(TextBlock.TextProperty, displaybinding);
+frameworkElement1.SetValue(TextBlock.TextProperty, displaybinding);
 
-	cellTemplate.VisualTree = frameworkElement1;
+cellTemplate.VisualTree = frameworkElement1;
 
-	//EditTemplate creation.
-	DataTemplate editTemplate = new DataTemplate();
+//EditTemplate creation.
+DataTemplate editTemplate = new DataTemplate();
 
-	FrameworkElementFactory frameworkElement2 = new FrameworkElementFactory(typeof(TextBox));
-	Binding editbinding = new Binding() { Path = new PropertyPath("FirstName"), Mode = BindingMode.TwoWay };
+FrameworkElementFactory frameworkElement2 = new FrameworkElementFactory(typeof(TextBox));
+Binding editbinding = new Binding() { Path = new PropertyPath("FirstName"), Mode = BindingMode.TwoWay };
 
-	frameworkElement2.SetValue(TextBox.TextProperty, editbinding);
+frameworkElement2.SetValue(TextBox.TextProperty, editbinding);
 
-	editTemplate.VisualTree = frameworkElement2;
+editTemplate.VisualTree = frameworkElement2;
 
-	this.treeGrid.Columns.Add(new TreeGridTemplateColumn() { HeaderText = "First Name", MappingName = "FirstName", CellTemplate = cellTemplate, EditTemplate = editTemplate, SetCellBoundValue = false });
+this.treeGrid.Columns.Add(new TreeGridTemplateColumn() { HeaderText = "First Name", MappingName = "FirstName", CellTemplate = cellTemplate, EditTemplate = editTemplate, SetCellBoundValue = false });
 
 {% endhighlight %}
 {% endtabs %}
@@ -1318,13 +1321,13 @@ You can allow `UIElement` loaded inside `CellTemplate` or `EditTemplate` to hand
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:TreeGridTemplateColumn MappingName="City">
-		<syncfusion:TreeGridTemplateColumn.CellTemplate>
-			<DataTemplate>
-				<ComboBox ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}" syncfusion:VisualContainer.WantsMouseInput="True" />
-			</DataTemplate>
-		</syncfusion:TreeGridTemplateColumn.CellTemplate>
-	</syncfusion:TreeGridTemplateColumn>
+<syncfusion:TreeGridTemplateColumn MappingName="City">
+	<syncfusion:TreeGridTemplateColumn.CellTemplate>
+		<DataTemplate>
+			<ComboBox ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}" syncfusion:VisualContainer.WantsMouseInput="True" />
+		</DataTemplate>
+	</syncfusion:TreeGridTemplateColumn.CellTemplate>
+</syncfusion:TreeGridTemplateColumn>
 				
 {% endhighlight %}
 {% endtabs %}				
@@ -1343,15 +1346,15 @@ In this case SfTreeGrid handles the below key operations and other keys are hand
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:TreeGridTemplateColumn MappingName="FirstName" 
-										syncfusion:FocusManagerHelper.WantsKeyInput="True" 
-										HeaderText="First Name">
-		<syncfusion:TreeGridTemplateColumn.CellTemplate>
-			<DataTemplate>
-				<TextBlock Text="{Binding FirstName}"/>
-			</DataTemplate>
-		</syncfusion:TreeGridTemplateColumn.CellTemplate>                
-	</syncfusion:TreeGridTemplateColumn>
+<syncfusion:TreeGridTemplateColumn MappingName="FirstName" 
+									syncfusion:FocusManagerHelper.WantsKeyInput="True" 
+									HeaderText="First Name">
+	<syncfusion:TreeGridTemplateColumn.CellTemplate>
+		<DataTemplate>
+			<TextBlock Text="{Binding FirstName}"/>
+		</DataTemplate>
+	</syncfusion:TreeGridTemplateColumn.CellTemplate>                
+</syncfusion:TreeGridTemplateColumn>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1388,6 +1391,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
         </syncfusion:TreeGridTemplateColumn>
     </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1433,6 +1437,7 @@ N> EditTemplate support available only for TreeGridTemplateColumn.
         </syncfusion:TreeGridTemplateColumn>
     </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1445,73 +1450,73 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on ID? va
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<local:CustomCellTemplateSelector x:Key="cellTemplateSelector"/>
-		<local:CustomEditTemplateSelector x:Key="editTemplateSelector"/>
+<Window.Resources>
+	<local:CustomCellTemplateSelector x:Key="cellTemplateSelector"/>
+	<local:CustomEditTemplateSelector x:Key="editTemplateSelector"/>
 
-		<DataTemplate x:Key="DefaultCellTemplate">
-			<TextBlock VerticalAlignment="Center"
-				Foreground="Red"
-				Text="{Binding Path=Id}"
-				TextAlignment="Center" />
-		</DataTemplate>
+	<DataTemplate x:Key="DefaultCellTemplate">
+		<TextBlock VerticalAlignment="Center"
+			Foreground="Red"
+			Text="{Binding Path=Id}"
+			TextAlignment="Center" />
+	</DataTemplate>
 
-		<DataTemplate x:Key="AlternateCellTemplate">
-			<TextBlock VerticalAlignment="Center"
-				Foreground="Green"
-				Text="{Binding Path=Id}"
-				TextAlignment="Center" />
-		</DataTemplate>
+	<DataTemplate x:Key="AlternateCellTemplate">
+		<TextBlock VerticalAlignment="Center"
+			Foreground="Green"
+			Text="{Binding Path=Id}"
+			TextAlignment="Center" />
+	</DataTemplate>
 
-		<DataTemplate x:Key="DefaultEditTemplate">
-			<TextBox Height="45"
-				VerticalAlignment="Center"
-				Foreground="Red"
-				Text="{Binding Path=Id}"
-				TextAlignment="Center" />
-		</DataTemplate>
+	<DataTemplate x:Key="DefaultEditTemplate">
+		<TextBox Height="45"
+			VerticalAlignment="Center"
+			Foreground="Red"
+			Text="{Binding Path=Id}"
+			TextAlignment="Center" />
+	</DataTemplate>
 
-		<DataTemplate x:Key="AlternateEditTemplate">
-			<TextBox Height="45"
-				VerticalAlignment="Center"
-				Foreground="Green"
-				Text="{Binding Path=Id}"
-				TextAlignment="Center" />
-		</DataTemplate>
+	<DataTemplate x:Key="AlternateEditTemplate">
+		<TextBox Height="45"
+			VerticalAlignment="Center"
+			Foreground="Green"
+			Text="{Binding Path=Id}"
+			TextAlignment="Center" />
+	</DataTemplate>
 
-	</Window.Resources>
+</Window.Resources>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-	public class CustomEditTemplateSelector : DataTemplateSelector
+public class CustomEditTemplateSelector : DataTemplateSelector
+{
+	public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
 	{
-		public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-		{
-			if (item == null)
-				return null;
+		if (item == null)
+			return null;
 
-			var data = item as Employee;
-			if (data.Id % 2 == 0)
-				return App.Current.Resources["AlternateEditTemplate"] as DataTemplate;
-			else
-				return App.Current.Resources["DefaultEditTemplate"] as DataTemplate;
-		}
+		var data = item as Employee;
+		if (data.Id % 2 == 0)
+			return App.Current.Resources["AlternateEditTemplate"] as DataTemplate;
+		else
+			return App.Current.Resources["DefaultEditTemplate"] as DataTemplate;
 	}
-	public class CustomCellTemplateSelector : DataTemplateSelector
+}
+public class CustomCellTemplateSelector : DataTemplateSelector
+{
+	public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
 	{
-		public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-		{
-			if (item == null)
-				return null;
+		if (item == null)
+			return null;
 
-			var data = item as Employee;
-			if (data.Id % 2 == 0)
-				return Application.Current.MainWindow.FindResource("AlternateCellTemplate") as DataTemplate;
-			else
-				return Application.Current.MainWindow.FindResource("DefaultCellTemplate") as DataTemplate;
-		}
+		var data = item as Employee;
+		if (data.Id % 2 == 0)
+			return Application.Current.MainWindow.FindResource("AlternateCellTemplate") as DataTemplate;
+		else
+			return Application.Current.MainWindow.FindResource("DefaultCellTemplate") as DataTemplate;
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -1521,19 +1526,19 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							ColumnSizer="Star"
-						   AllowEditing="True"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>                
-			<syncfusion:TreeGridTemplateColumn MappingName="Id"
-								   CellTemplateSelector="{StaticResource cellTemplateSelector}"    
-								   EditTemplateSelector="{StaticResource editTemplateSelector}"/>
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						ColumnSizer="Star"
+					   AllowEditing="True"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>                
+		<syncfusion:TreeGridTemplateColumn MappingName="Id"
+							   CellTemplateSelector="{StaticResource cellTemplateSelector}"    
+							   EditTemplateSelector="{StaticResource editTemplateSelector}"/>
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1550,20 +1555,20 @@ By default, `TreeGridComboBoxColumn` displays the value using `MappingName` prop
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid x:Name="treeGrid"                              
-							AutoGenerateColumns="False"
-							ChildPropertyName="Children"                             
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridComboBoxColumn ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}" 
-												MappingName="City" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid x:Name="treeGrid"                              
+						AutoGenerateColumns="False"
+						ChildPropertyName="Children"                             
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridComboBoxColumn ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}" 
+											MappingName="City" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-	treeGrid.Columns.Add(new TreeGridComboBoxColumn() {	MappingName = "City", ItemsSource = viewModel.CityCollection });
+treeGrid.Columns.Add(new TreeGridComboBoxColumn() {	MappingName = "City", ItemsSource = viewModel.CityCollection });
 
 {% endhighlight %}
 {% endtabs %}
@@ -1587,17 +1592,17 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<Style TargetType="ComboBox">
-			<Setter Property="ItemsPanel">
-				<Setter.Value>
-					<ItemsPanelTemplate>
-						<VirtualizingStackPanel />
-					</ItemsPanelTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</Window.Resources>
+<Window.Resources>
+	<Style TargetType="ComboBox">
+		<Setter Property="ItemsPanel">
+			<Setter.Value>
+				<ItemsPanelTemplate>
+					<VirtualizingStackPanel />
+				</ItemsPanelTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</Window.Resources>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1610,18 +1615,18 @@ Below code, creates `TreeGridCellComboBoxRendererExt` to set `IsDropDownOpen` pr
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.CellRenderers.Remove("ComboBox");
-	treeGrid.CellRenderers.Add("ComboBox", new TreeGridCellComboBoxRendererExt());
+treeGrid.CellRenderers.Remove("ComboBox");
+treeGrid.CellRenderers.Add("ComboBox", new TreeGridCellComboBoxRendererExt());
 
-	public class TreeGridCellComboBoxRendererExt : TreeGridCellComboBoxRenderer
+public class TreeGridCellComboBoxRendererExt : TreeGridCellComboBoxRenderer
+{
+	protected override void OnEditElementLoaded(object sender, System.Windows.RoutedEventArgs e)
 	{
-		protected override void OnEditElementLoaded(object sender, System.Windows.RoutedEventArgs e)
-		{
-			base.OnEditElementLoaded(sender, e);
-			var combobox = sender as ComboBox;
-			combobox.IsDropDownOpen = true;
-		}
+		base.OnEditElementLoaded(sender, e);
+		var combobox = sender as ComboBox;
+		combobox.IsDropDownOpen = true;
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -1635,21 +1640,21 @@ N> This is applicable when `SfTreeGrid.EditTrigger` is `OnTap`
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid x:Name="treeGrid"
-							AutoExpandMode="RootNodesExpanded"
-							AllowEditing="True"
-							AutoGenerateColumns="False"
-							ChildPropertyName="Children"
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridHyperlinkColumn HeaderText="City" MappingName="CityDescription" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid x:Name="treeGrid"
+						AutoExpandMode="RootNodesExpanded"
+						AllowEditing="True"
+						AutoGenerateColumns="False"
+						ChildPropertyName="Children"
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridHyperlinkColumn HeaderText="City" MappingName="CityDescription" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.Columns.Add(new TreeGridHyperlinkColumn() { MappingName = "CityDescription",  HeaderText ="City" });
+this.treeGrid.Columns.Add(new TreeGridHyperlinkColumn() { MappingName = "CityDescription",  HeaderText ="City" });
 
 {% endhighlight %}
 {% endtabs %}
@@ -1663,13 +1668,13 @@ You can allow end-user to navigate the `Uri` when the cell value contains valid 
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CurrentCellRequestNavigate += TreeGrid_CurrentCellRequestNavigate;  
-								 
-	private async void TreeGrid_CurrentCellRequestNavigate(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs args)
-	{
-		var URI = string.Format("https://en.wikipedia.org/wiki/" + args.NavigateText);
-		Windows.System.Launcher.LaunchUriAsync(new Uri(URI));
-	}
+this.treeGrid.CurrentCellRequestNavigate += TreeGrid_CurrentCellRequestNavigate;  
+							 
+private async void TreeGrid_CurrentCellRequestNavigate(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs args)
+{
+	var URI = string.Format("https://en.wikipedia.org/wiki/" + args.NavigateText);
+	Windows.System.Launcher.LaunchUriAsync(new Uri(URI));
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -1681,12 +1686,12 @@ You can cancel the navigation when clicking hyperlink by setting [CurrentCellReq
 {% tabs %}
 {% highlight c# %}
 	
-	this.treeGrid.CurrentCellRequestNavigate += TreeGrid_CurrentCellRequestNavigate;  
-								 
-	private async void TreeGrid_CurrentCellRequestNavigate(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs args)
-	{
-		   args.Handled = true;
-	}
+this.treeGrid.CurrentCellRequestNavigate += TreeGrid_CurrentCellRequestNavigate;  
+							 
+private async void TreeGrid_CurrentCellRequestNavigate(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs args)
+{
+	   args.Handled = true;
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1704,25 +1709,25 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								AutoGenerateColumns="False"								                                  
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridHyperlinkColumn HeaderText="City" MappingName="CityDescription">
-				<syncfusion:TreeGridHyperlinkColumn.CellStyle>
-					<Style>
-						<Style.Resources>
-							<Style TargetType="Hyperlink">
-								<Setter Property="Foreground" Value="Green" />
-							</Style>
-						</Style.Resources>
-					</Style>
-				</syncfusion:TreeGridHyperlinkColumn.CellStyle>
-			</syncfusion:TreeGridHyperlinkColumn>			
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>	
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AutoGenerateColumns="False"								                                  
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridHyperlinkColumn HeaderText="City" MappingName="CityDescription">
+			<syncfusion:TreeGridHyperlinkColumn.CellStyle>
+				<Style>
+					<Style.Resources>
+						<Style TargetType="Hyperlink">
+							<Setter Property="Foreground" Value="Green" />
+						</Style>
+					</Style.Resources>
+				</Style>
+			</syncfusion:TreeGridHyperlinkColumn.CellStyle>
+		</syncfusion:TreeGridHyperlinkColumn>			
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>	
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1742,23 +1747,23 @@ In the below code snippet, `Mask` applied to format and validate the user input 
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								AutoGenerateColumns="False"								                                  
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridMaskColumn HeaderText="Contact Number"
-                                                       MappingName="ContactNumber"
-                                                       Mask="(99)-9999"
-                                                       TextAlignment="Left" />			
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AutoGenerateColumns="False"								                                  
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridMaskColumn HeaderText="Contact Number"
+												   MappingName="ContactNumber"
+												   Mask="(99)-9999"
+												   TextAlignment="Left" />			
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.Columns.Add(new TreeGridMaskColumn() { HeaderText = "Contact Number", MappingName = "ContactNumber", Mask = "(99)999" });
+this.treeGrid.Columns.Add(new TreeGridMaskColumn() { HeaderText = "Contact Number", MappingName = "ContactNumber", Mask = "(99)999" });
 
 {% endhighlight %}
 {% endtabs %}
@@ -1772,17 +1777,17 @@ In the below code snippet, `Mask` applied to format and validate the user input 
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								AutoGenerateColumns="False"								                                  
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridMaskColumn HeaderText="Contact Number"
-                                                       MappingName="ContactNumber"
-                                                       Mask="####.00" />			
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>	
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AutoGenerateColumns="False"								                                  
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridMaskColumn HeaderText="Contact Number"
+												   MappingName="ContactNumber"
+												   Mask="####.00" />			
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>	
 
 {% endhighlight %}
 {% endtabs %}
@@ -1796,18 +1801,18 @@ By default, an underscore (_) is displayed when the user input is absent. This c
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								AutoGenerateColumns="False"								                                  
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridMaskColumn HeaderText="Contact Number"
-                                                       MappingName="ContactNumber"
-                                                       Mask="#######"
-                                                       PromptChar="^" />			
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AutoGenerateColumns="False"								                                  
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridMaskColumn HeaderText="Contact Number"
+												   MappingName="ContactNumber"
+												   Mask="#######"
+												   PromptChar="^" />			
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -1838,92 +1843,92 @@ In the below code snippet, converter created to format the DateTimeOffSet value 
 {% tabs %}
 {% highlight c# %}
 
-	public class DateTimeOffsetFormatConverter : IValueConverter
+public class DateTimeOffsetFormatConverter : IValueConverter
+{
+	private TreeGridDateTimeOffsetColumn cachedColumn;
+	public DateTimeOffsetFormatConverter(TreeGridDateTimeOffsetColumn column)
 	{
-		private TreeGridDateTimeOffsetColumn cachedColumn;
-		public DateTimeOffsetFormatConverter(TreeGridDateTimeOffsetColumn column)
+		cachedColumn = column;
+	}
+	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		value = ((DateTime)value);
+		var column = cachedColumn as TreeGridDateTimeColumn;
+		if (value == null || DBNull.Value == value)
 		{
-			cachedColumn = column;
-		}
-		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			value = ((DateTime)value);
-			var column = cachedColumn as TreeGridDateTimeColumn;
-			if (value == null || DBNull.Value == value)
-			{
-				if (column.AllowNullValue && column.MaxDateTime != System.DateTime.MaxValue && column.NullText == string.Empty)
-					return column.MaxDateTime;
-				if (column.AllowNullValue && column.NullValue != null)
-					return column.NullValue;
-				else if (column.AllowNullValue && column.NullText != string.Empty)
-					return column.NullText;
-				if (column.MaxDateTime != System.DateTime.MaxValue)
-					return column.MaxDateTime;
-			}
-
-			DateTime _columnValue;
-			_columnValue = (DateTime)value;
-
-			if (_columnValue < column.MinDateTime)
-				_columnValue = column.MinDateTime;
-			if (_columnValue > column.MaxDateTime)
-				_columnValue = column.MaxDateTime;
-
-			return DateTimeFormatString(_columnValue, column);
+			if (column.AllowNullValue && column.MaxDateTime != System.DateTime.MaxValue && column.NullText == string.Empty)
+				return column.MaxDateTime;
+			if (column.AllowNullValue && column.NullValue != null)
+				return column.NullValue;
+			else if (column.AllowNullValue && column.NullText != string.Empty)
+				return column.NullText;
+			if (column.MaxDateTime != System.DateTime.MaxValue)
+				return column.MaxDateTime;
 		}
 
-		private string DateTimeFormatString(DateTime columnValue, TreeGridDateTimeColumn column)
-		{
-			switch (column.Pattern)
-			{
-				case DateTimePattern.ShortDate:
-					return columnValue.ToString("d", column.DateTimeFormat);
-				case DateTimePattern.LongDate:
-					return columnValue.ToString("D", column.DateTimeFormat);
-				case DateTimePattern.LongTime:
-					return columnValue.ToString("T", column.DateTimeFormat);
-				case DateTimePattern.ShortTime:
-					return columnValue.ToString("t", column.DateTimeFormat);
-				case DateTimePattern.FullDateTime:
-					return columnValue.ToString("F", column.DateTimeFormat);
-				case DateTimePattern.RFC1123:
-					return columnValue.ToString("R", column.DateTimeFormat);
-				case DateTimePattern.SortableDateTime:
-					return columnValue.ToString("s", column.DateTimeFormat);
-				case DateTimePattern.UniversalSortableDateTime:
-					return columnValue.ToString("u", column.DateTimeFormat);
-				case DateTimePattern.YearMonth:
-					return columnValue.ToString("Y", column.DateTimeFormat);
-				case DateTimePattern.MonthDay:
-					return columnValue.ToString("M", column.DateTimeFormat);
-				case DateTimePattern.CustomPattern:
-					return columnValue.ToString(column.CustomPattern, column.DateTimeFormat);
-				default:
-					return columnValue.ToString("MMMM", column.DateTimeFormat);
-			}
-		}
-		public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			throw new NotImplementedException();
-		}
+		DateTime _columnValue;
+		_columnValue = (DateTime)value;
+
+		if (_columnValue < column.MinDateTime)
+			_columnValue = column.MinDateTime;
+		if (_columnValue > column.MaxDateTime)
+			_columnValue = column.MaxDateTime;
+
+		return DateTimeFormatString(_columnValue, column);
 	}
 
-	public class DateTimeOffsetToDateTimeConverter : IValueConverter
+	private string DateTimeFormatString(DateTime columnValue, TreeGridDateTimeColumn column)
 	{
-		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+		switch (column.Pattern)
 		{
-			if (value == null)
-				return null;
-			return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
-		}
-
-		public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			if (value == null)
-				return null;
-			return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
+			case DateTimePattern.ShortDate:
+				return columnValue.ToString("d", column.DateTimeFormat);
+			case DateTimePattern.LongDate:
+				return columnValue.ToString("D", column.DateTimeFormat);
+			case DateTimePattern.LongTime:
+				return columnValue.ToString("T", column.DateTimeFormat);
+			case DateTimePattern.ShortTime:
+				return columnValue.ToString("t", column.DateTimeFormat);
+			case DateTimePattern.FullDateTime:
+				return columnValue.ToString("F", column.DateTimeFormat);
+			case DateTimePattern.RFC1123:
+				return columnValue.ToString("R", column.DateTimeFormat);
+			case DateTimePattern.SortableDateTime:
+				return columnValue.ToString("s", column.DateTimeFormat);
+			case DateTimePattern.UniversalSortableDateTime:
+				return columnValue.ToString("u", column.DateTimeFormat);
+			case DateTimePattern.YearMonth:
+				return columnValue.ToString("Y", column.DateTimeFormat);
+			case DateTimePattern.MonthDay:
+				return columnValue.ToString("M", column.DateTimeFormat);
+			case DateTimePattern.CustomPattern:
+				return columnValue.ToString(column.CustomPattern, column.DateTimeFormat);
+			default:
+				return columnValue.ToString("MMMM", column.DateTimeFormat);
 		}
 	}
+	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		throw new NotImplementedException();
+	}
+}
+
+public class DateTimeOffsetToDateTimeConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		if (value == null)
+			return null;
+		return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
+	}
+
+	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		if (value == null)
+			return null;
+		return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1933,17 +1938,17 @@ In the below code snippet, `TreeGridDateTimeOffsetColumn` column created from `T
 {% tabs %}
 {% highlight c# %}
 
-	public class TreeGridDateTimeOffsetColumn : TreeGridDateTimeColumn
+public class TreeGridDateTimeOffsetColumn : TreeGridDateTimeColumn
+{
+	protected override void SetDisplayBindingConverter()
 	{
-		protected override void SetDisplayBindingConverter()
-		{
-			if ((DisplayBinding as Binding).Converter == null)
-				(DisplayBinding as Binding).Converter = new DateTimeOffsetFormatConverter(this);
+		if ((DisplayBinding as Binding).Converter == null)
+			(DisplayBinding as Binding).Converter = new DateTimeOffsetFormatConverter(this);
 
-			if ((ValueBinding as Binding).Converter == null)
-				(ValueBinding as Binding).Converter = new DateTimeOffsetToDateTimeConverter();
-		}
+		if ((ValueBinding as Binding).Converter == null)
+			(ValueBinding as Binding).Converter = new DateTimeOffsetToDateTimeConverter();
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -1953,14 +1958,14 @@ In the below code snippet, created `TreeGridDateTimeOffsetColumn` added to [SfTr
 {% tabs %}
 {% highlight xaml %}
 
-	<local:TreeGridDateTimeOffsetColumn HeaderText="Employee DOB" 
-                                    MappingName="DOB"
-                                    Pattern="FullDateTime" />
-									
+<local:TreeGridDateTimeOffsetColumn HeaderText="Employee DOB" 
+								MappingName="DOB"
+								Pattern="FullDateTime" />
+								
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.Columns.Add(new TreeGridDateTimeOffsetColumn() { MappingName = "DOB",  Pattern = DateTimePattern.FullDateTime });
+this.treeGrid.Columns.Add(new TreeGridDateTimeOffsetColumn() { MappingName = "DOB",  Pattern = DateTimePattern.FullDateTime });
 
 {% endhighlight %}
 {% endtabs %}
@@ -2098,27 +2103,27 @@ Below code, creates the `TreeGridCellTextBoxRendererExt` to change the fore grou
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CellRenderers.Remove("TextBox");
-	this.treeGrid.CellRenderers.Add("TextBox",new TreeGridCellTextBoxRendererExt());
+this.treeGrid.CellRenderers.Remove("TextBox");
+this.treeGrid.CellRenderers.Add("TextBox",new TreeGridCellTextBoxRendererExt());
 
-	public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
+public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
+{
+	public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 	{
-		public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
-		{
-			base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
+		base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
 
-			if (dataColumn.TreeGridColumn.MappingName.Equals("FirstName"))
-				uiElement.Foreground = new SolidColorBrush(Colors.Blue);
-		}
-
-		public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
-		{
-			base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
-
-			if (dataColumn.TreeGridColumn.MappingName.Equals("FirstName"))
-				uiElement.Foreground = new SolidColorBrush(Colors.Blue);
-		}
+		if (dataColumn.TreeGridColumn.MappingName.Equals("FirstName"))
+			uiElement.Foreground = new SolidColorBrush(Colors.Blue);
 	}
+
+	public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
+	{
+		base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
+
+		if (dataColumn.TreeGridColumn.MappingName.Equals("FirstName"))
+			uiElement.Foreground = new SolidColorBrush(Colors.Blue);
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -2135,184 +2140,184 @@ Below code creates the new `TreeGridComboBoxRenderer` with `ComboBoxAdv` as edit
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CellRenderers.Remove("ComboBox");
-	this.treeGrid.CellRenderers.Add("ComboBox", new TreeGridComboBoxRendererExt());
+this.treeGrid.CellRenderers.Remove("ComboBox");
+this.treeGrid.CellRenderers.Add("ComboBox", new TreeGridComboBoxRendererExt());
 
-	public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<ContentControl, ComboBoxAdv>
+public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<ContentControl, ComboBoxAdv>
+{
+	public TreeGridComboBoxRendererExt()
 	{
-		public TreeGridComboBoxRendererExt()
-		{
-		}
-
-		/// <summary>
-		/// Create new display element.
-		/// </summary>
-		/// <returns></returns>
-
-		protected override ContentControl OnCreateDisplayUIElement()
-		{
-			return new ContentControl();
-		}
-
-		/// <summary>
-		/// Create new edit element.
-		/// </summary>
-		/// <returns></returns>
-		protected override ComboBoxAdv OnCreateEditUIElement()
-		{
-			return new ComboBoxAdv();
-		}
-
-		/// <summary>
-		/// Initialize binding for display element.
-		/// </summary>
-		/// <param name="dataColumn"></param>
-		/// <param name="uiElement"></param>
-		/// <param name="dataContext"></param>
-		public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, ContentControl uiElement, object dataContext)
-		{
-			SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
-		}
-
-		/// <summary>
-		/// custom binding for display element.
-		/// </summary>
-		/// <param name="element"></param>
-		/// <param name="column"></param>
-		/// <param name="dataContext"></param>
-		private static void SetDisplayBinding(ContentControl element, TreeGridColumn column, object dataContext)
-		{
-			var comboBoxColumn = (TreeGridComboBoxColumn)column;
-			var binding = new Binding
-			{
-				Path = new PropertyPath(comboBoxColumn.MappingName),
-				Mode = BindingMode.TwoWay,
-				UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
-				Converter = (comboBoxColumn.DisplayBinding as Binding).Converter,
-			};
-			element.SetBinding(ContentControl.ContentProperty, binding);
-		}
-
-		/// <summary>
-		/// Update binding for display element.
-		/// </summary>
-		/// <param name="dataColumn"></param>
-		/// <param name="uiElement"></param>
-		/// <param name="dataContext"></param>
-		public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, ContentControl uiElement, object dataContext)
-		{
-			SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
-		}
-
-		/// <summary>
-		/// Initialize binding for edit element.
-		/// </summary>
-		/// <param name="dataColumn"></param>
-		/// <param name="uiElement"></param>
-		/// <param name="dataContext"></param>
-		public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, ComboBoxAdv uiElement, object dataContext)
-		{
-			SetEditBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
-		}
-
-		/// <summary>
-		/// Update binding for edit element.
-		/// </summary>
-		/// <param name="dataColumn"></param>
-		/// <param name="uiElement"></param>
-		/// <param name="dataContext"></param>
-		public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, ComboBoxAdv element, object dataContext)
-		{
-			SetEditBinding(element, dataColumn.TreeGridColumn, dataContext);
-		}
-
-		/// <summary>
-		/// custom binding for display element.
-		/// </summary>
-		/// <param name="element"></param>
-		/// <param name="column"></param>
-		/// <param name="dataContext"></param>
-		private static void SetEditBinding(ComboBoxAdv element, TreeGridColumn column, object dataContext)
-		{
-			var comboboxColumn = (TreeGridComboBoxColumn)column;
-			var binding = new Binding
-			{
-				Source = dataContext,
-				Path = new PropertyPath(comboboxColumn.MappingName),
-				Mode = BindingMode.TwoWay,
-				UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
-			};
-			element.SetBinding(ComboBoxAdv.SelectedValueProperty, binding);
-
-			var itemsSourceBinding = new Binding { Path = new PropertyPath("ItemsSource"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
-			element.SetBinding(ComboBoxAdv.ItemsSourceProperty, itemsSourceBinding);
-
-			var displayMemberBinding = new Binding { Path = new PropertyPath("DisplayMemberPath"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
-			element.SetBinding(ComboBoxAdv.DisplayMemberPathProperty, displayMemberBinding);
-
-			var selectedValuePathBinding = new Binding { Path = new PropertyPath("SelectedValuePath"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
-			element.SetBinding(ComboBoxAdv.SelectedValuePathProperty, selectedValuePathBinding);
-
-			var itemTemplateBinding = new Binding { Path = new PropertyPath("ItemTemplate"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
-			element.SetBinding(ComboBoxAdv.ItemTemplateProperty, itemTemplateBinding);
-
-		}
-
-		/// <summary>
-		/// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
-		/// the key event from being handled by the visual UIElement for this renderer. 
-		/// </summary>
-		/// <param name="e">A <see cref="KeyRoutedEventArgs" /> object.</param>
-		/// <returns>
-		/// True if the parent grid should be allowed to handle keys; false otherwise.
-		/// </returns>  
-		protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
-		{
-			if (!HasCurrentCellState || !IsInEditing)
-				return true;
-
-			switch (e.Key)
-			{
-				case Key.End:
-				case Key.Home:
-				case Key.Enter:
-				case Key.Escape:
-					return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
-				case Key.Down:
-				case Key.Up:
-				case Key.Left:
-				case Key.Right:
-					return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
-			}
-			return base.ShouldGridTryToHandleKeyDown(e);
-		}
-
-		/// <summary>
-		/// Gets the control value.
-		/// </summary>
-		public override object GetControlValue()
-		{
-			if (!HasCurrentCellState)
-				return base.GetControlValue();
-
-			return CurrentCellRendererElement.GetValue(IsInEditing ? ComboBoxAdv.SelectedValueProperty : ContentControl.ContentProperty);
-		}
-
-		/// <summary>
-		/// Set the control value.
-		/// </summary>
-		/// <param name="value">The value.</param>
-		public override void SetControlValue(object value)
-		{
-			if (!HasCurrentCellState)
-				return;
-
-			if (IsInEditing)
-				((ComboBoxAdv)CurrentCellRendererElement).SelectedValue = value;
-			else
-				throw new Exception("Value cannot be Set for Unloaded Editor");
-		}
 	}
+
+	/// <summary>
+	/// Create new display element.
+	/// </summary>
+	/// <returns></returns>
+
+	protected override ContentControl OnCreateDisplayUIElement()
+	{
+		return new ContentControl();
+	}
+
+	/// <summary>
+	/// Create new edit element.
+	/// </summary>
+	/// <returns></returns>
+	protected override ComboBoxAdv OnCreateEditUIElement()
+	{
+		return new ComboBoxAdv();
+	}
+
+	/// <summary>
+	/// Initialize binding for display element.
+	/// </summary>
+	/// <param name="dataColumn"></param>
+	/// <param name="uiElement"></param>
+	/// <param name="dataContext"></param>
+	public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, ContentControl uiElement, object dataContext)
+	{
+		SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
+	}
+
+	/// <summary>
+	/// custom binding for display element.
+	/// </summary>
+	/// <param name="element"></param>
+	/// <param name="column"></param>
+	/// <param name="dataContext"></param>
+	private static void SetDisplayBinding(ContentControl element, TreeGridColumn column, object dataContext)
+	{
+		var comboBoxColumn = (TreeGridComboBoxColumn)column;
+		var binding = new Binding
+		{
+			Path = new PropertyPath(comboBoxColumn.MappingName),
+			Mode = BindingMode.TwoWay,
+			UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
+			Converter = (comboBoxColumn.DisplayBinding as Binding).Converter,
+		};
+		element.SetBinding(ContentControl.ContentProperty, binding);
+	}
+
+	/// <summary>
+	/// Update binding for display element.
+	/// </summary>
+	/// <param name="dataColumn"></param>
+	/// <param name="uiElement"></param>
+	/// <param name="dataContext"></param>
+	public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, ContentControl uiElement, object dataContext)
+	{
+		SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
+	}
+
+	/// <summary>
+	/// Initialize binding for edit element.
+	/// </summary>
+	/// <param name="dataColumn"></param>
+	/// <param name="uiElement"></param>
+	/// <param name="dataContext"></param>
+	public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, ComboBoxAdv uiElement, object dataContext)
+	{
+		SetEditBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
+	}
+
+	/// <summary>
+	/// Update binding for edit element.
+	/// </summary>
+	/// <param name="dataColumn"></param>
+	/// <param name="uiElement"></param>
+	/// <param name="dataContext"></param>
+	public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, ComboBoxAdv element, object dataContext)
+	{
+		SetEditBinding(element, dataColumn.TreeGridColumn, dataContext);
+	}
+
+	/// <summary>
+	/// custom binding for display element.
+	/// </summary>
+	/// <param name="element"></param>
+	/// <param name="column"></param>
+	/// <param name="dataContext"></param>
+	private static void SetEditBinding(ComboBoxAdv element, TreeGridColumn column, object dataContext)
+	{
+		var comboboxColumn = (TreeGridComboBoxColumn)column;
+		var binding = new Binding
+		{
+			Source = dataContext,
+			Path = new PropertyPath(comboboxColumn.MappingName),
+			Mode = BindingMode.TwoWay,
+			UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
+		};
+		element.SetBinding(ComboBoxAdv.SelectedValueProperty, binding);
+
+		var itemsSourceBinding = new Binding { Path = new PropertyPath("ItemsSource"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
+		element.SetBinding(ComboBoxAdv.ItemsSourceProperty, itemsSourceBinding);
+
+		var displayMemberBinding = new Binding { Path = new PropertyPath("DisplayMemberPath"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
+		element.SetBinding(ComboBoxAdv.DisplayMemberPathProperty, displayMemberBinding);
+
+		var selectedValuePathBinding = new Binding { Path = new PropertyPath("SelectedValuePath"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
+		element.SetBinding(ComboBoxAdv.SelectedValuePathProperty, selectedValuePathBinding);
+
+		var itemTemplateBinding = new Binding { Path = new PropertyPath("ItemTemplate"), Mode = BindingMode.TwoWay, Source = comboboxColumn };
+		element.SetBinding(ComboBoxAdv.ItemTemplateProperty, itemTemplateBinding);
+
+	}
+
+	/// <summary>
+	/// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
+	/// the key event from being handled by the visual UIElement for this renderer. 
+	/// </summary>
+	/// <param name="e">A <see cref="KeyRoutedEventArgs" /> object.</param>
+	/// <returns>
+	/// True if the parent grid should be allowed to handle keys; false otherwise.
+	/// </returns>  
+	protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
+	{
+		if (!HasCurrentCellState || !IsInEditing)
+			return true;
+
+		switch (e.Key)
+		{
+			case Key.End:
+			case Key.Home:
+			case Key.Enter:
+			case Key.Escape:
+				return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
+			case Key.Down:
+			case Key.Up:
+			case Key.Left:
+			case Key.Right:
+				return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
+		}
+		return base.ShouldGridTryToHandleKeyDown(e);
+	}
+
+	/// <summary>
+	/// Gets the control value.
+	/// </summary>
+	public override object GetControlValue()
+	{
+		if (!HasCurrentCellState)
+			return base.GetControlValue();
+
+		return CurrentCellRendererElement.GetValue(IsInEditing ? ComboBoxAdv.SelectedValueProperty : ContentControl.ContentProperty);
+	}
+
+	/// <summary>
+	/// Set the control value.
+	/// </summary>
+	/// <param name="value">The value.</param>
+	public override void SetControlValue(object value)
+	{
+		if (!HasCurrentCellState)
+			return;
+
+		if (IsInEditing)
+			((ComboBoxAdv)CurrentCellRendererElement).SelectedValue = value;
+		else
+			throw new Exception("Value cannot be Set for Unloaded Editor");
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -2339,28 +2344,28 @@ Below code creates the converter to format the date time value.
 {% tabs %}
 {% highlight c# %}
 
-	public class CustomConverter : IValueConverter
+public class CustomConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
-		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			if (string.IsNullOrEmpty(value.ToString()))
-				return null;
-			return new ConvertToDateTimeClass().ConvertToDateTime(value);
-		}
-		public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-		{
-			return new ConvertToDateTimeClass().ConvertToDateTime(value);
-		}
+		if (string.IsNullOrEmpty(value.ToString()))
+			return null;
+		return new ConvertToDateTimeClass().ConvertToDateTime(value);
 	}
-	public class ConvertToDateTimeClass
+	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
-		public string ConvertToDateTime(object value)
-		{
-			DateTime date = Convert.ToDateTime(value);
+		return new ConvertToDateTimeClass().ConvertToDateTime(value);
+	}
+}
+public class ConvertToDateTimeClass
+{
+	public string ConvertToDateTime(object value)
+	{
+		DateTime date = Convert.ToDateTime(value);
 
-			return date.Year + "/" + date.Month + "/" + date.Day;
-		}
+		return date.Year + "/" + date.Month + "/" + date.Day;
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2370,23 +2375,23 @@ In the below code, new column created with converter using `SetDisplayBindingCon
 {% tabs %}
 {% highlight c# %}
 
-	public class DatePickerColumn : TreeGridColumn
-    {
-        public DatePickerColumn()
-        {
-            SetCellType("DatePickerRenderer");
-        }
+public class DatePickerColumn : TreeGridColumn
+{
+	public DatePickerColumn()
+	{
+		SetCellType("DatePickerRenderer");
+	}
 
-        protected override void SetDisplayBindingConverter()
-        {
-            (this.DisplayBinding as Binding).Converter = new CustomConverter();
-        }
+	protected override void SetDisplayBindingConverter()
+	{
+		(this.DisplayBinding as Binding).Converter = new CustomConverter();
+	}
 
-        protected override Freezable CreateInstanceCore()
-        {
-            return new DatePickerColumn();
-        }
-    }
+	protected override Freezable CreateInstanceCore()
+	{
+		return new DatePickerColumn();
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2400,18 +2405,18 @@ In the below code snippet, display and edit `UIElement` defined via `TreeGridVir
 {% tabs %}
 {% highlight c# %}
 
-	/// <summary>
-	/// CustomRenderer Creation
-	/// </summary>
-	/// <param name="TextBlock">Display Control</param>
-	/// <param name="DatePicker">Edit Control</param>
-	public class DatePickerRenderer : TreeGridVirtualizingCellRenderer<TextBlock, DatePicker>
+/// <summary>
+/// CustomRenderer Creation
+/// </summary>
+/// <param name="TextBlock">Display Control</param>
+/// <param name="DatePicker">Edit Control</param>
+public class DatePickerRenderer : TreeGridVirtualizingCellRenderer<TextBlock, DatePicker>
+{
+	public DatePickerRenderer()
 	{
-		public DatePickerRenderer()
-		{
 
-		}
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2421,22 +2426,22 @@ With the below code snippet, you can create the display and edit element for ren
 {% tabs %}
 {% highlight c# %}
 
-	/// <summary>
-	/// Create new display element.
-	/// </summary>
-	/// <returns></returns>
-	protected override TextBlock OnCreateDisplayUIElement()
-	{
-		return new TextBlock();
-	}
-	/// <summary>
-	/// Create new edit element.
-	/// </summary>
-	/// <returns></returns>
-	protected override DatePicker OnCreateEditUIElement()
-	{
-		return new DatePicker();
-	}
+/// <summary>
+/// Create new display element.
+/// </summary>
+/// <returns></returns>
+protected override TextBlock OnCreateDisplayUIElement()
+{
+	return new TextBlock();
+}
+/// <summary>
+/// Create new edit element.
+/// </summary>
+/// <returns></returns>
+protected override DatePicker OnCreateEditUIElement()
+{
+	return new DatePicker();
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2446,36 +2451,36 @@ With the below code snippet, you can initialize the binding for display element 
 {% tabs %}
 {% highlight c# %}
 
-    /// <summary>
-    /// Initialize binding for display element.
-    /// </summary>
-    /// <param name="dataColumn"></param>
-    /// <param name="uiElement"></param>
-    /// <param name="dataContext"></param>
-    public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
-    {
-        base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
-        SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
-    }
+/// <summary>
+/// Initialize binding for display element.
+/// </summary>
+/// <param name="dataColumn"></param>
+/// <param name="uiElement"></param>
+/// <param name="dataContext"></param>
+public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
+{
+	base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
+	SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
+}
 
-    /// <summary>
-    /// custom binding for display element.
-    /// </summary>
-    /// <param name="element"></param>
-    /// <param name="column"></param>
-    /// <param name="dataContext"></param>
-    private static void SetDisplayBinding(TextBlock element, TreeGridColumn column, object dataContext)
-    {
-        var customColumn = (DatePickerColumn)column;
-        var binding = new Binding
-        {
-            Path = new PropertyPath(customColumn.MappingName),
-            Mode = BindingMode.TwoWay,
-            UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
-            Converter = (column.DisplayBinding as Binding).Converter,
-        };
-        element.SetBinding(TextBlock.TextProperty, binding);
-    }
+/// <summary>
+/// custom binding for display element.
+/// </summary>
+/// <param name="element"></param>
+/// <param name="column"></param>
+/// <param name="dataContext"></param>
+private static void SetDisplayBinding(TextBlock element, TreeGridColumn column, object dataContext)
+{
+	var customColumn = (DatePickerColumn)column;
+	var binding = new Binding
+	{
+		Path = new PropertyPath(customColumn.MappingName),
+		Mode = BindingMode.TwoWay,
+		UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
+		Converter = (column.DisplayBinding as Binding).Converter,
+	};
+	element.SetBinding(TextBlock.TextProperty, binding);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2485,17 +2490,17 @@ With the below code snippet, updates the binding while UI interaction by overrid
 {% tabs %}
 {% highlight c# %}
 
-	/// <summary>
-    /// Update binding for display element.
-    /// </summary>
-    /// <param name="dataColumn"></param>
-    /// <param name="uiElement"></param>
-    /// <param name="dataContext"></param>
-    public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
-    {
-        base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
-        SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
-    }
+/// <summary>
+/// Update binding for display element.
+/// </summary>
+/// <param name="dataColumn"></param>
+/// <param name="uiElement"></param>
+/// <param name="dataContext"></param>
+public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
+{
+	base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
+	SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2505,49 +2510,49 @@ Similarly, you can initialize and update the binding for edit element by overrid
 {% tabs %}
 {% highlight c# %}
 
-    /// <summary>
-    /// Initialize binding for edit element.
-    /// </summary>
-    /// <param name="dataColumn"></param>
-    /// <param name="uiElement"></param>
-    /// <param name="dataContext"></param>
-    public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, DatePicker uiElement, object dataContext)
-    {
-        base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
-        SetEditBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
-    }
+/// <summary>
+/// Initialize binding for edit element.
+/// </summary>
+/// <param name="dataColumn"></param>
+/// <param name="uiElement"></param>
+/// <param name="dataContext"></param>
+public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, DatePicker uiElement, object dataContext)
+{
+	base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
+	SetEditBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
+}
 
-    /// <summary>
-    /// Update binding for edit element.
-    /// </summary>
-    /// <param name="dataColumn"></param>
-    /// <param name="uiElement"></param>
-    /// <param name="dataContext"></param>
-    public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, DatePicker element, object dataContext)
-    {
-        base.OnUpdateEditBinding(dataColumn, element, dataContext);
-        SetEditBinding(element, dataColumn.TreeGridColumn, dataContext);
-    }
+/// <summary>
+/// Update binding for edit element.
+/// </summary>
+/// <param name="dataColumn"></param>
+/// <param name="uiElement"></param>
+/// <param name="dataContext"></param>
+public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, DatePicker element, object dataContext)
+{
+	base.OnUpdateEditBinding(dataColumn, element, dataContext);
+	SetEditBinding(element, dataColumn.TreeGridColumn, dataContext);
+}
 
-    /// <summary>
-    /// custom binding for display element.
-    /// </summary>
-    /// <param name="element"></param>
-    /// <param name="column"></param>
-    /// <param name="dataContext"></param>
-    private static void SetEditBinding(DatePicker element, TreeGridColumn column, object dataContext)
-    {
-        var customColumn = (DatePickerColumn)column;
-        var binding = new Binding
-        {
-            Source = dataContext,
-            Path = new PropertyPath(customColumn.MappingName),
-            Mode = BindingMode.TwoWay,
-            UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
-        };
+/// <summary>
+/// custom binding for display element.
+/// </summary>
+/// <param name="element"></param>
+/// <param name="column"></param>
+/// <param name="dataContext"></param>
+private static void SetEditBinding(DatePicker element, TreeGridColumn column, object dataContext)
+{
+	var customColumn = (DatePickerColumn)column;
+	var binding = new Binding
+	{
+		Source = dataContext,
+		Path = new PropertyPath(customColumn.MappingName),
+		Mode = BindingMode.TwoWay,
+		UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
+	};
 
-        element.SetBinding(DatePicker.TextProperty, binding);
-    }
+	element.SetBinding(DatePicker.TextProperty, binding);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2557,29 +2562,29 @@ You can customize the editor control while loading by overriding [OnEditElementL
 {% tabs %}
 {% highlight c# %}
 
-    /// <summary>
-    /// Handling operations on edit mode UIElement.
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
-    {
-        var datePicker = (sender as DatePicker);
-        datePicker.Focus();
+/// <summary>
+/// Handling operations on edit mode UIElement.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
+{
+	var datePicker = (sender as DatePicker);
+	datePicker.Focus();
 
-        DatePickerTextBox datePickerTextBox =
-            (DatePickerTextBox)GridUtil.FindDescendantChildByType(datePicker, typeof(DatePickerTextBox));
+	DatePickerTextBox datePickerTextBox =
+		(DatePickerTextBox)GridUtil.FindDescendantChildByType(datePicker, typeof(DatePickerTextBox));
 
-        if (this.TreeGrid.EditorSelectionBehavior == Syncfusion.UI.Xaml.Grid.EditorSelectionBehavior.SelectAll)
-        {
-            datePickerTextBox.SelectAll();
-        }
-        else
-        {
-            datePickerTextBox.Select(datePickerTextBox.SelectedText.Length, 0);
-        }
-        PreviewInputText = null;
-    }
+	if (this.TreeGrid.EditorSelectionBehavior == Syncfusion.UI.Xaml.Grid.EditorSelectionBehavior.SelectAll)
+	{
+		datePickerTextBox.SelectAll();
+	}
+	else
+	{
+		datePickerTextBox.Select(datePickerTextBox.SelectedText.Length, 0);
+	}
+	PreviewInputText = null;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2589,39 +2594,39 @@ With the below code snippet, you can customize the keyboard interactions for the
 {% tabs %}
 {% highlight c# %}
 
-    /// <summary>
-    /// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
-    /// the key event from being handled by the visual UIElement for this renderer. 
-    /// </summary>
-    /// <param name="e">A <see cref="KeyEventArgs" /> object.</param>
-    /// <returns>
-    /// True if the parent grid should be allowed to handle keys; false otherwise.
-    /// </returns>
-    protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
-    {
-        if (!HasCurrentCellState || !IsInEditing)
-            return true;
+/// <summary>
+/// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
+/// the key event from being handled by the visual UIElement for this renderer. 
+/// </summary>
+/// <param name="e">A <see cref="KeyEventArgs" /> object.</param>
+/// <returns>
+/// True if the parent grid should be allowed to handle keys; false otherwise.
+/// </returns>
+protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
+{
+	if (!HasCurrentCellState || !IsInEditing)
+		return true;
 
-        DatePickerTextBox datePickerTextBox =
-            (DatePickerTextBox)
-                GridUtil.FindDescendantChildByType(CurrentCellRendererElement as DatePicker,
-                    typeof(DatePickerTextBox));
+	DatePickerTextBox datePickerTextBox =
+		(DatePickerTextBox)
+			GridUtil.FindDescendantChildByType(CurrentCellRendererElement as DatePicker,
+				typeof(DatePickerTextBox));
 
-        switch (e.Key)
-        {
-            case Key.End:
-            case Key.Home:
-            case Key.Enter:
-            case Key.Escape:
-                return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
-            case Key.Down:
-            case Key.Up:
-            case Key.Left:
-            case Key.Right:
-                return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
-        }
-        return base.ShouldGridTryToHandleKeyDown(e);
-    }
+	switch (e.Key)
+	{
+		case Key.End:
+		case Key.Home:
+		case Key.Enter:
+		case Key.Escape:
+			return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
+		case Key.Down:
+		case Key.Up:
+		case Key.Left:
+		case Key.Right:
+			return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
+	}
+	return base.ShouldGridTryToHandleKeyDown(e);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2631,31 +2636,31 @@ You can handle the cell value for the custom renderer by overriding [GetControlV
 {% tabs %}
 {% highlight c# %}
 
-    /// <summary>
-    /// Gets the control value.
-    /// </summary>
-    public override object GetControlValue()
-    {
-        if (!HasCurrentCellState)
-            return base.GetControlValue();
+/// <summary>
+/// Gets the control value.
+/// </summary>
+public override object GetControlValue()
+{
+	if (!HasCurrentCellState)
+		return base.GetControlValue();
 
-        return CurrentCellRendererElement.GetValue(IsInEditing ? DatePicker.TextProperty : TextBlock.TextProperty);
-    }
+	return CurrentCellRendererElement.GetValue(IsInEditing ? DatePicker.TextProperty : TextBlock.TextProperty);
+}
 
-    /// <summary>
-    /// Set the control value.
-    /// </summary>
-    /// <param name="value">The value.</param>
-    public override void SetControlValue(object value)
-    {
-        if (!HasCurrentCellState)
-            return;
+/// <summary>
+/// Set the control value.
+/// </summary>
+/// <param name="value">The value.</param>
+public override void SetControlValue(object value)
+{
+	if (!HasCurrentCellState)
+		return;
 
-        if (IsInEditing)
-            ((TextBox)CurrentCellRendererElement).Text = value.ToString();
-        else
-            throw new Exception("Value cannot be Set for Unloaded Editor");
-    }
+	if (IsInEditing)
+		((TextBox)CurrentCellRendererElement).Text = value.ToString();
+	else
+		throw new Exception("Value cannot be Set for Unloaded Editor");
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2667,7 +2672,7 @@ By below code, you can add the previous created custom renderer to [SfTreeGrid.C
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CellRenderers.Add("DatePickerRenderer", new DatePickerRenderer());
+this.treeGrid.CellRenderers.Add("DatePickerRenderer", new DatePickerRenderer());
 
 {% endhighlight %}
 {% endtabs %}
@@ -2679,20 +2684,20 @@ By below code, you can define the custom column in SfTreeGrid.
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							    AllowEditing="True"
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>			
-			<local:DatePickerColumn MappingName="DOB"/>			
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AllowEditing="True"
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>			
+		<local:DatePickerColumn MappingName="DOB"/>			
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.Columns.Add(new DatePickerColumn() { AllowEditing = true, MappingName = "DOB" });
+this.treeGrid.Columns.Add(new DatePickerColumn() { AllowEditing = true, MappingName = "DOB" });
 
 {% endhighlight %}
 
@@ -2719,47 +2724,47 @@ You can restrict the length of user input in both display and edit element using
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<local:MaxLengthConverter x:Key="maxLengthConverter"/>
-	</Window.Resources>
+<Window.Resources>
+	<local:MaxLengthConverter x:Key="maxLengthConverter"/>
+</Window.Resources>
 
-	<syncfusion:SfTreeGrid x:Name="treeGrid"
-					AutoExpandMode="RootNodesExpanded"
-					AllowEditing="True"
-					AutoGenerateColumns="False"
-					ChildPropertyName="Children"
-					ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn HeaderText="First Name" 
-											MappingName="FirstName"
-											DisplayBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" 
-											ValueBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid x:Name="treeGrid"
+				AutoExpandMode="RootNodesExpanded"
+				AllowEditing="True"
+				AutoGenerateColumns="False"
+				ChildPropertyName="Children"
+				ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn HeaderText="First Name" 
+										MappingName="FirstName"
+										DisplayBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" 
+										ValueBinding="{Binding FirstName,Converter={StaticResource maxLengthConverter}}" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-	public class MaxLengthConverter : IValueConverter
+public class MaxLengthConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, string language)
 	{
-		public object Convert(object value, Type targetType, object parameter, string language)
-		{
-			// Define maxlength for column
-			int maxLength = 5;
-			// Get the ColumnValue
-			var columnValue = System.Convert.ToString(value);
-			if (columnValue.Length < maxLength)
-				return columnValue;
-			else
-				return columnValue.Substring(0, maxLength);
+		// Define maxlength for column
+		int maxLength = 5;
+		// Get the ColumnValue
+		var columnValue = System.Convert.ToString(value);
+		if (columnValue.Length < maxLength)
+			return columnValue;
+		else
+			return columnValue.Substring(0, maxLength);
 
-		}
-
-		public object ConvertBack(object value, Type targetType, object parameter, string language)
-		{
-			return value;
-		}
 	}
+
+	public object ConvertBack(object value, Type targetType, object parameter, string language)
+	{
+		return value;
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -2772,22 +2777,22 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<Style TargetType="TextBox">
-			<Setter Property="MaxLength" Value="7" />
-		</Style>
-	</Window.Resources>
+<Window.Resources>
+	<Style TargetType="TextBox">
+		<Setter Property="MaxLength" Value="7" />
+	</Style>
+</Window.Resources>
 
-	<syncfusion:SfTreeGrid x:Name="treeGrid"
-			AutoExpandMode="RootNodesExpanded"
-			AllowEditing="True"
-			AutoGenerateColumns="False"
-			ChildPropertyName="Children"
-			ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid x:Name="treeGrid"
+		AutoExpandMode="RootNodesExpanded"
+		AllowEditing="True"
+		AutoGenerateColumns="False"
+		ChildPropertyName="Children"
+		ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -2800,24 +2805,24 @@ Below code, overrides the `OnInitializeEditElement` method of the corresponding 
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CellRenderers.Remove("TextBox");
-	this.treeGrid.CellRenderers.Add("TextBox", new TreeGridCellTextBoxRendererExt());
+this.treeGrid.CellRenderers.Remove("TextBox");
+this.treeGrid.CellRenderers.Add("TextBox", new TreeGridCellTextBoxRendererExt());
 
-	public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
+public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
+{
+	public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, TextBox uiElement, object dataContext)
 	{
-		public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, TextBox uiElement, object dataContext)
+		if (dataColumn.TreeGridColumn != null && dataColumn.TreeGridColumn.MappingName == "FirstName")
 		{
-			if (dataColumn.TreeGridColumn != null && dataColumn.TreeGridColumn.MappingName == "FirstName")
-			{
-				uiElement.MaxLength = 7;
-			}
-			else
-			{
-				uiElement.MaxLength = 0;
-			}
-			base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
+			uiElement.MaxLength = 7;
 		}
+		else
+		{
+			uiElement.MaxLength = 0;
+		}
+		base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}

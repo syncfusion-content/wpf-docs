@@ -14,10 +14,10 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid x:Name="treeGrid"
-							AllowEditing="True"
-							AutoGenerateColumns="True"
-							ItemsSource="{Binding EmployeeDetails}" />
+<syncfusion:SfTreeGrid x:Name="treeGrid"
+						AllowEditing="True"
+						AutoGenerateColumns="True"
+						ItemsSource="{Binding EmployeeDetails}" />
 							
 {% endhighlight %}
 {% highlight c# %}
@@ -32,14 +32,14 @@ You can enable or disable editing for particular column by setting [TreeGridColu
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:TreeGridTextColumn AllowEditing="True"
-                                HeaderText="First Name"
-                                MappingName="FirstName" />
-								
+<syncfusion:TreeGridTextColumn AllowEditing="True"
+							HeaderText="First Name"
+							MappingName="FirstName" />
+							
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.Columns["FirstName"].AllowEditing = true;
+this.treeGrid.Columns["FirstName"].AllowEditing = true;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -57,18 +57,18 @@ You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicki
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-                        EditTrigger="OnTap"
-                        AllowEditing="True"
-                        AutoExpandMode="RootNodesExpanded"                             
-                        ChildPropertyName="ReportsTo"
-                        ItemsSource="{Binding EmployeeInfo}"
-                        ParentPropertyName="ID"/>
-						
+<syncfusion:SfTreeGrid Name="treeGrid"
+					EditTrigger="OnTap"
+					AllowEditing="True"
+					AutoExpandMode="RootNodesExpanded"                             
+					ChildPropertyName="ReportsTo"
+					ItemsSource="{Binding EmployeeInfo}"
+					ParentPropertyName="ID"/>
+					
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.EditTrigger = EditTrigger.OnTap;
+this.treeGrid.EditTrigger = EditTrigger.OnTap;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -84,19 +84,19 @@ MoveLast ֠places the cursor at the last of edit element loaded inside cell.
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-                        AllowEditing="True"
-                        EditorSelectionBehavior="SelectAll"
-                        AutoExpandMode="RootNodesExpanded"
-                        ChildPropertyName="ReportsTo"
-                        EditTrigger="OnTap"
-                        ParentPropertyName="ID"
-                        ItemsSource="{Binding EmployeeInfo}" />
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AllowEditing="True"
+					EditorSelectionBehavior="SelectAll"
+					AutoExpandMode="RootNodesExpanded"
+					ChildPropertyName="ReportsTo"
+					EditTrigger="OnTap"
+					ParentPropertyName="ID"
+					ItemsSource="{Binding EmployeeInfo}" />
 						
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
+this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -120,155 +120,155 @@ In the below code snippet explains the simple implementation of IEditableObject.
 {% tabs %}
 {% highlight c# %}
 
-	public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
-	{      
-		int _id;
-		/// <summary>
-		/// Gets or sets the ID.
-		/// </summary>
-		/// <value>The ID.</value>
-		public int ID
+public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
+{      
+	int _id;
+	/// <summary>
+	/// Gets or sets the ID.
+	/// </summary>
+	/// <value>The ID.</value>
+	public int ID
+	{
+		get
 		{
-			get
-			{
-				return _id;
-			}
-			set
-			{
-				_id = value;
-				RaisePropertyChanged("ID");
-			}
+			return _id;
 		}
-
-		string _firstName;
-		/// <summary>
-		/// Gets or sets the first name.
-		/// </summary>
-		/// <value>The first name.</value>   
-		public string FirstName
+		set
 		{
-			get { return _firstName; }
-			set
-			{
-				_firstName = value;
-				RaisePropertyChanged("FirstName");
-			}
-		}
-
-		string _lastName;
-		/// <summary>
-		/// Gets or sets the last name.
-		/// </summary>
-		/// <value>The last name.</value>
-		public string LastName
-		{
-			get { return _lastName; }
-			set
-			{
-				_lastName = value;
-				RaisePropertyChanged("LastName");
-			}
-		}
-
-		private string _title;
-		/// <summary>
-		/// Gets or sets the title.
-		/// </summary>
-		/// <value>The title.</value>
-		public string Title
-		{
-			get
-			{
-				return _title;
-			}
-			set
-			{
-				_title = value;
-				RaisePropertyChanged("Title");
-			}
-		}
-
-		double? _salary;
-		/// <summary>
-		/// Gets or sets the salary.
-		/// </summary>
-		/// <value>The salary.</value>
-		public double? Salary
-		{
-			get
-			{
-				return _salary;
-			}
-			set
-			{
-				_salary = value;
-				RaisePropertyChanged("Salary");
-			}
-		}
-
-		int _reportsTo;
-		/// <summary>
-		/// Gets or sets the reports to.
-		/// </summary>
-		/// <value>The reports to.</value>
-		public int ReportsTo
-		{
-			get
-			{
-				return _reportsTo;
-			}
-			set
-			{
-				_reportsTo = value;
-				RaisePropertyChanged("ReportsTo");
-			}
-		}
-		  
-		protected Dictionary<string, object> BackUp()
-		{
-			var dict = new Dictionary<string, object>();
-			var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
-			foreach (var pDescriptor in itemProperties)
-			{
-				if (pDescriptor.CanWrite)
-					dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
-			}
-			return dict;
-		}
-
-		private Dictionary<string, object> storedValues;
-		public void BeginEdit()
-		{
-			this.storedValues = this.BackUp();
-		}
-		public void CancelEdit()
-		{
-			if (this.storedValues == null)
-				return;
-			foreach (var item in this.storedValues)
-			{
-				var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
-				var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
-				if (pDesc != null)
-					pDesc.SetValue(this, item.Value);
-			}
-		}
-		public void EndEdit()
-		{           
-			if (this.storedValues != null)
-			{
-				this.storedValues.Clear();
-				this.storedValues = null;
-			}
-		}
-
-		public event PropertyChangedEventHandler PropertyChanged;
-		public void RaisePropertyChanged(string propname)
-		{
-			if (PropertyChanged != null)
-				PropertyChanged(this, new PropertyChangedEventArgs(propname));
+			_id = value;
+			RaisePropertyChanged("ID");
 		}
 	}
+
+	string _firstName;
+	/// <summary>
+	/// Gets or sets the first name.
+	/// </summary>
+	/// <value>The first name.</value>   
+	public string FirstName
+	{
+		get { return _firstName; }
+		set
+		{
+			_firstName = value;
+			RaisePropertyChanged("FirstName");
+		}
+	}
+
+	string _lastName;
+	/// <summary>
+	/// Gets or sets the last name.
+	/// </summary>
+	/// <value>The last name.</value>
+	public string LastName
+	{
+		get { return _lastName; }
+		set
+		{
+			_lastName = value;
+			RaisePropertyChanged("LastName");
+		}
+	}
+
+	private string _title;
+	/// <summary>
+	/// Gets or sets the title.
+	/// </summary>
+	/// <value>The title.</value>
+	public string Title
+	{
+		get
+		{
+			return _title;
+		}
+		set
+		{
+			_title = value;
+			RaisePropertyChanged("Title");
+		}
+	}
+
+	double? _salary;
+	/// <summary>
+	/// Gets or sets the salary.
+	/// </summary>
+	/// <value>The salary.</value>
+	public double? Salary
+	{
+		get
+		{
+			return _salary;
+		}
+		set
+		{
+			_salary = value;
+			RaisePropertyChanged("Salary");
+		}
+	}
+
+	int _reportsTo;
+	/// <summary>
+	/// Gets or sets the reports to.
+	/// </summary>
+	/// <value>The reports to.</value>
+	public int ReportsTo
+	{
+		get
+		{
+			return _reportsTo;
+		}
+		set
+		{
+			_reportsTo = value;
+			RaisePropertyChanged("ReportsTo");
+		}
+	}
+	  
+	protected Dictionary<string, object> BackUp()
+	{
+		var dict = new Dictionary<string, object>();
+		var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+		foreach (var pDescriptor in itemProperties)
+		{
+			if (pDescriptor.CanWrite)
+				dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
+		}
+		return dict;
+	}
+
+	private Dictionary<string, object> storedValues;
+	public void BeginEdit()
+	{
+		this.storedValues = this.BackUp();
+	}
+	public void CancelEdit()
+	{
+		if (this.storedValues == null)
+			return;
+		foreach (var item in this.storedValues)
+		{
+			var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+			var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
+			if (pDesc != null)
+				pDesc.SetValue(this, item.Value);
+		}
+	}
+	public void EndEdit()
+	{           
+		if (this.storedValues != null)
+		{
+			this.storedValues.Clear();
+			this.storedValues = null;
+		}
+	}
+
+	public event PropertyChangedEventHandler PropertyChanged;
+	public void RaisePropertyChanged(string propname)
+	{
+		if (PropertyChanged != null)
+			PropertyChanged(this, new PropertyChangedEventArgs(propname));
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -281,7 +281,7 @@ SfTreeGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellBeginEdit_EV.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~CurrentCell.html) enter into edit mode. [TreeCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-*  [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row column index of the TreeGrid.
 
@@ -290,12 +290,12 @@ SfTreeGrid triggers the following events during editing.
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;
+this.treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;
 
-	void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEventArgs args)
-	{
-			   
-	}
+void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEventArgs args)
+{
+		   
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -310,12 +310,12 @@ SfTreeGrid triggers the following events during editing.
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CurrentCellEndEdit += TreeGrid_CurrentCellEndEdit;
+this.treeGrid.CurrentCellEndEdit += TreeGrid_CurrentCellEndEdit;
 
-	void TreeGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
-	{
-		
-	}
+void TreeGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
+{
+	
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -331,12 +331,12 @@ SfTreeGrid triggers the following events during editing.
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CurrentCellValueChanged += TreeGrid_CurrentCellValueChanged;
+this.treeGrid.CurrentCellValueChanged += TreeGrid_CurrentCellValueChanged;
 
-	void TreeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueChangedEventArgs args)
-	{
-		
-	}
+void TreeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueChangedEventArgs args)
+{
+	
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -355,12 +355,12 @@ N> For TreeGridComboBoxColumn, you have to use the 'CurrentCellDropDownSelection
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CurrentCellDropDownSelectionChanged += TreeGrid_CurrentCellDropDownSelectionChanged;
+this.treeGrid.CurrentCellDropDownSelectionChanged += TreeGrid_CurrentCellDropDownSelectionChanged;
 
-	void TreeGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDropDownSelectionChangedEventArgs args)
-	{
-				
-	}
+void TreeGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDropDownSelectionChangedEventArgs args)
+{
+			
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -374,14 +374,14 @@ SfTreeGrid allows you to edit the cell programmatically by calling the [BeginEdi
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.Loaded += TreeGrid_Loaded;
+this.treeGrid.Loaded += TreeGrid_Loaded;
 
-	void TreeGrid_Loaded(object sender, RoutedEventArgs e)
-	{            
-		RowColumnIndex rowColumnIndex = new RowColumnIndex(2, 3);
-		treeGrid.SelectionController.MoveCurrentCell(rowColumnIndex);
-		treeGrid.SelectionController.CurrentCellManager.BeginEdit();
-	}
+void TreeGrid_Loaded(object sender, RoutedEventArgs e)
+{            
+	RowColumnIndex rowColumnIndex = new RowColumnIndex(2, 3);
+	treeGrid.SelectionController.MoveCurrentCell(rowColumnIndex);
+	treeGrid.SelectionController.CurrentCellManager.BeginEdit();
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -393,14 +393,14 @@ You can call the [EndEdit](https://help.syncfusion.com/cr/cref_files/wpf/sfdatag
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.Loaded += TreeGrid_Loaded;
- 
-	void TreeGrid_Loaded(object sender, RoutedEventArgs e)
-	{            
-		RowColumnIndex rowColumnIndex = new RowColumnIndex(2, 3);
-		treeGrid.SelectionController.MoveCurrentCell(rowColumnIndex);
-		treeGrid.SelectionController.CurrentCellManager.EndEdit();
-	}
+this.treeGrid.Loaded += TreeGrid_Loaded;
+
+void TreeGrid_Loaded(object sender, RoutedEventArgs e)
+{            
+	RowColumnIndex rowColumnIndex = new RowColumnIndex(2, 3);
+	treeGrid.SelectionController.MoveCurrentCell(rowColumnIndex);
+	treeGrid.SelectionController.CurrentCellManager.EndEdit();
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -412,15 +412,15 @@ You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;
-	
-	void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEventArgs args)
-	{
-		var mappingName = treeGrid.Columns[args.RowColumnIndex.ColumnIndex].MappingName;
-		var node = treeGrid.View.GetNodeAt(args.RowColumnIndex.RowIndex);
-		if (args.RowColumnIndex == new RowColumnIndex(2, 2))
-			args.Cancel = true;
-	}
+this.treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;
+
+void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEventArgs args)
+{
+	var mappingName = treeGrid.Columns[args.RowColumnIndex.ColumnIndex].MappingName;
+	var node = treeGrid.View.GetNodeAt(args.RowColumnIndex.RowIndex);
+	if (args.RowColumnIndex == new RowColumnIndex(2, 2))
+		args.Cancel = true;
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -436,27 +436,27 @@ You can focus to the particular `UIElement` loaded inside template when cell get
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							ColumnSizer="Star" 
-							AllowEditing="True"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>                        
-			<syncfusion:TreeGridTemplateColumn HeaderText="First Name" MappingName="FirstName" >
-				<syncfusion:TreeGridTemplateColumn.CellTemplate>
-					<DataTemplate>
-						<TextBlock syncfusion:FocusManagerHelper.FocusedElement="True"
-									FontStyle="Italic"
-									FontWeight="SemiBold"
-									Padding="2,0"
-									Text="{Binding FirstName}" />
-					</DataTemplate>
-				</syncfusion:TreeGridTemplateColumn.CellTemplate>
-			</syncfusion:TreeGridTemplateColumn>                
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						ColumnSizer="Star" 
+						AllowEditing="True"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>                        
+		<syncfusion:TreeGridTemplateColumn HeaderText="First Name" MappingName="FirstName" >
+			<syncfusion:TreeGridTemplateColumn.CellTemplate>
+				<DataTemplate>
+					<TextBlock syncfusion:FocusManagerHelper.FocusedElement="True"
+								FontStyle="Italic"
+								FontWeight="SemiBold"
+								Padding="2,0"
+								Text="{Binding FirstName}" />
+				</DataTemplate>
+			</syncfusion:TreeGridTemplateColumn.CellTemplate>
+		</syncfusion:TreeGridTemplateColumn>                
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -470,25 +470,25 @@ You can allow UIElement loaded inside CellTemplate to handle keyboard interactio
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								AutoGenerateColumns="False"
-								AllowEditing="True"
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>                        
-			<syncfusion:TreeGridTemplateColumn HeaderText="First Name" MappingName="FirstName"
-												syncfusion:FocusManagerHelper.WantsKeyInput= "True">
-				<syncfusion:TreeGridTemplateColumn.CellTemplate>
-					<DataTemplate>
-						<Grid>
-							<TextBox x:Name="text" Text="{Binding FirstName}"/>
-						</Grid>
-					</DataTemplate>
-				</syncfusion:TreeGridTemplateColumn.CellTemplate>
-			</syncfusion:TreeGridTemplateColumn>                
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AutoGenerateColumns="False"
+							AllowEditing="True"
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>                        
+		<syncfusion:TreeGridTemplateColumn HeaderText="First Name" MappingName="FirstName"
+											syncfusion:FocusManagerHelper.WantsKeyInput= "True">
+			<syncfusion:TreeGridTemplateColumn.CellTemplate>
+				<DataTemplate>
+					<Grid>
+						<TextBox x:Name="text" Text="{Binding FirstName}"/>
+					</Grid>
+				</DataTemplate>
+			</syncfusion:TreeGridTemplateColumn.CellTemplate>
+		</syncfusion:TreeGridTemplateColumn>                
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -505,23 +505,23 @@ You can allow `UIElement` loaded inside template to handle mouse interaction in 
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								AutoGenerateColumns="False"
-								AllowEditing="True"
-								AutoExpandMode="RootNodesExpanded"                    
-								ChildPropertyName="Children"                  
-								ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>                        
-			<syncfusion:TreeGridTemplateColumn HeaderText="City" MappingName="City" >
-				<syncfusion:TreeGridTemplateColumn.CellTemplate>
-					<DataTemplate>
-						<ComboBox ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}"                                                           
-												syncfusion:VisualContainer.WantsMouseInput="True"/>
-					</DataTemplate>
-				</syncfusion:TreeGridTemplateColumn.CellTemplate>
-			</syncfusion:TreeGridTemplateColumn>                
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+							AutoGenerateColumns="False"
+							AllowEditing="True"
+							AutoExpandMode="RootNodesExpanded"                    
+							ChildPropertyName="Children"                  
+							ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>                        
+		<syncfusion:TreeGridTemplateColumn HeaderText="City" MappingName="City" >
+			<syncfusion:TreeGridTemplateColumn.CellTemplate>
+				<DataTemplate>
+					<ComboBox ItemsSource="{Binding CityCollection, Source={StaticResource viewModel}}"                                                           
+											syncfusion:VisualContainer.WantsMouseInput="True"/>
+				</DataTemplate>
+			</syncfusion:TreeGridTemplateColumn.CellTemplate>
+		</syncfusion:TreeGridTemplateColumn>                
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% endtabs %}
