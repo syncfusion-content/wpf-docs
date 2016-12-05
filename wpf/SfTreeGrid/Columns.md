@@ -245,12 +245,12 @@ You can customize or cancel the generated column by handling [AutoGeneratingColu
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
-	{
-				
-	}
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+			
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -266,13 +266,13 @@ In the below code, column generation for `ReportsTo` property is canceled by set
 {% tabs %}
 {% highlight csharp %}
 
-	treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
-	{
-		if (e.Column.MappingName == "ReportsTo")
-			e.Cancel = true;
-	}
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "ReportsTo")
+		e.Cancel = true;
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -285,16 +285,16 @@ In the below code, column type for `Salary` property is changed to `TreeGridText
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "Salary")
 	{
-		if (e.Column.MappingName == "Salary")
-		{
-			if (e.Column is TreeGridNumericColumn)
-				e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
-		}
+		if (e.Column is TreeGridNumericColumn)
+			e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -306,20 +306,20 @@ You can change the column properties in `AutoGeneratingColumn` event handler.
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "Salary")
 	{
-		if (e.Column.MappingName == "Salary")
-		{
-			e.Column.AllowEditing = false;
-			e.Column.AllowSorting = false;
-			e.Column.AllowFocus = true;
-			e.Column.AllowResizing = false;
-			e.Column.ColumnSizer = TreeColumnSizer.Star;
-			e.Column.AllowDragging = true;
-		}
+		e.Column.AllowEditing = false;
+		e.Column.AllowSorting = false;
+		e.Column.AllowFocus = true;
+		e.Column.AllowResizing = false;
+		e.Column.ColumnSizer = TreeColumnSizer.Star;
+		e.Column.AllowDragging = true;
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -331,25 +331,25 @@ You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.Resources>
-		<DataTemplate x:Key="headerTemplate">
-			<TextBlock FontSize="10"
-					Text="This is the first name of the employee"
-					TextWrapping="Wrap" />
-		</DataTemplate>
-	</Window.Resources>
+<Window.Resources>
+	<DataTemplate x:Key="headerTemplate">
+		<TextBlock FontSize="10"
+				Text="This is the first name of the employee"
+				TextWrapping="Wrap" />
+	</DataTemplate>
+</Window.Resources>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-	treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
-	private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+	if (e.Column.MappingName == "FirstName")
 	{
-		if (e.Column.MappingName == "FirstName")
-		{
-			e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
-		}
+		e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -370,19 +370,19 @@ You can skip the column generation using `AutoGenerateField` property or set the
 {% tabs %}
 {% highlight c# %}
 
-	[Display(AutoGenerateField = false, Description = "Title field is not generated in UI")]
-	public string Title
+[Display(AutoGenerateField = false, Description = "Title field is not generated in UI")]
+public string Title
+{
+	get
 	{
-		get
-		{
-			return _title;
-		}
-		set
-		{
-			_title = value;
-			RaisePropertyChanged("Title");
-		}
+		return _title;
 	}
+	set
+	{
+		_title = value;
+		RaisePropertyChanged("Title");
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -394,19 +394,19 @@ You can change the value of the property using `Editable` attribute.
 {% tabs %}
 {% highlight c# %}
 
-	[Editable(true)]
-	public string FirstName
+[Editable(true)]
+public string FirstName
+{
+	get
 	{
-		get
-		{
-			return _firstName;
-		}
-		set
-		{
-			_firstName = value;
-			RaisePropertyChanged("FirstName");
-		}
+		return _firstName;
 	}
+	set
+	{
+		_firstName = value;
+		RaisePropertyChanged("FirstName");
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -418,19 +418,19 @@ You can customize header text of column using `Display.Name` property.
 {% tabs %}
 {% highlight c# %}
 
-	[Display(Name ="FirstName of the employee",Description ="First Name is necessary for identification")]
-	public string FirstName
+[Display(Name ="FirstName of the employee",Description ="First Name is necessary for identification")]
+public string FirstName
+{
+	get
 	{
-		get
-		{
-			return _firstName;
-		}
-		set
-		{
-			_firstName = value;
-			RaisePropertyChanged("FirstName");
-		}
+		return _firstName;
 	}
+	set
+	{
+		_firstName = value;
+		RaisePropertyChanged("FirstName");
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -442,26 +442,26 @@ You can change the columns order using `DisplayAttribute.Order` property.
 {% tabs %}
 {% highlight c# %}
 
-	[Display(Order = 0)]
-	public string FirstName
+[Display(Order = 0)]
+public string FirstName
+{
+	get { return _firstName; }
+	set
 	{
-		get { return _firstName; }
-		set
-		{
-			_firstName = value;
-			RaisePropertyChanged("FirstName");
-		}
-	} 
-	[Display(Order = -1)]
-	public string LastName
-	{
-		get { return _lastName; }
-		set
-		{
-			_lastName = value;
-			RaisePropertyChanged("LastName");
-		}
+		_firstName = value;
+		RaisePropertyChanged("FirstName");
 	}
+} 
+[Display(Order = -1)]
+public string LastName
+{
+	get { return _lastName; }
+	set
+	{
+		_lastName = value;
+		RaisePropertyChanged("LastName");
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -477,19 +477,19 @@ You can customize the data format using `DataTypeAttribute.DataType` property.
 {% tabs %}
 {% highlight c# %}
 
-	[DataType(DataType.Currency)]
-	public double? Salary
+[DataType(DataType.Currency)]
+public double? Salary
+{
+	get
 	{
-		get
-		{
-			return _salary;
-		}
-		set
-		{
-			_salary = value;
-			RaisePropertyChanged("Salary");
-		}
+		return _salary;
 	}
+	set
+	{
+		_salary = value;
+		RaisePropertyChanged("Salary");
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -501,31 +501,31 @@ SfTreeGrid control allows you to define the columns manually by adding desired c
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AutoGenerateColumns="False"
-							ChildPropertyName="ReportsTo"
-							ItemsSource="{Binding EmployeeInfo}"
-							ParentPropertyName="ID"
-							SelfRelationRootValue="-1">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
-			<syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-			<syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
-			<syncfusion:TreeGridTextColumn MappingName="Title" />
-			<syncfusion:TreeGridNumericColumn MappingName="Salary" />
-			<syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AutoGenerateColumns="False"
+						ChildPropertyName="ReportsTo"
+						ItemsSource="{Binding EmployeeInfo}"
+						ParentPropertyName="ID"
+						SelfRelationRootValue="-1">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+		<syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+		<syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+		<syncfusion:TreeGridTextColumn MappingName="Title" />
+		<syncfusion:TreeGridNumericColumn MappingName="Salary" />
+		<syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "LastName", HeaderText = "Last Name" });
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ID", HeaderText = "Employee ID" });
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "Title" });
-	treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" });
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ReportsTo", HeaderText = "Reports To" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "LastName", HeaderText = "Last Name" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ID", HeaderText = "Employee ID" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "Title" });
+treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ReportsTo", HeaderText = "Reports To" });
 	
 {% endhighlight %}
 {% endtabs %}
@@ -543,7 +543,7 @@ You can add column at runtime by adding instance of column to `SfTreeGrid.Column
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
 	
 {% endhighlight %}
 {% endtabs %}
@@ -555,9 +555,9 @@ You can access the column through its column index or [TreeGridColumn.MappingNam
 {% tabs %}
 {% highlight c# %}
 
-	TreeGridColumn column = treeGrid.Columns[1];
-	//OR
-	TreeGridColumn column = treeGrid.Columns["FirstName"];
+TreeGridColumn column = treeGrid.Columns[1];
+//OR
+TreeGridColumn column = treeGrid.Columns["FirstName"];
 	
 {% endhighlight %}
 {% endtabs %}
@@ -568,7 +568,7 @@ You can remove all the columns by clearing the `SfTreeGrid.Columns` property.
 
 {% tabs %}
 {% highlight c# %}
-	this.treeGrid.Columns.Clear();
+this.treeGrid.Columns.Clear();
 {% endhighlight %}
 {% endtabs %}
 
@@ -577,9 +577,9 @@ You can remove a column using Remove and RemoveAt methods.
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.Columns.Remove(column);
-	//OR
-   treeGrid.Columns.RemoveAt(1);
+treeGrid.Columns.Remove(column);
+//OR
+treeGrid.Columns.RemoveAt(1);
 	
 {% endhighlight %}
 {% endtabs %}
@@ -593,13 +593,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-					AllowResizingColumns="True"
-					AutoGenerateColumns="False"
-					ChildPropertyName="ReportsTo"
-					ItemsSource="{Binding EmployeeInfo}"
-					ParentPropertyName="ID"
-					SelfRelationRootValue="-1"/>
+<syncfusion:SfTreeGrid Name="treeGrid"
+				AllowResizingColumns="True"
+				AutoGenerateColumns="False"
+				ChildPropertyName="ReportsTo"
+				ItemsSource="{Binding EmployeeInfo}"
+				ParentPropertyName="ID"
+				SelfRelationRootValue="-1"/>
 				
 {% endhighlight %}
 {% endtabs %}
@@ -622,13 +622,13 @@ You can cancel resizing of particular column by setting [TreeGridColumn.AllowRes
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.ResizingColumns += TreeGrid_ResizingColumns;
+treeGrid.ResizingColumns += TreeGrid_ResizingColumns;
 
-	private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
-	{
-		if (e.ColumnIndex == 1)
-			e.Cancel = true;
-	}
+private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+	if (e.ColumnIndex == 1)
+		e.Cancel = true;
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -640,14 +640,14 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AllowDraggingColumns="True"
-							AutoGenerateColumns="False"
-							ChildPropertyName="ReportsTo"
-							ItemsSource="{Binding EmployeeInfo}"
-							ParentPropertyName="ID"
-							SelfRelationRootValue="-1"/>
-							
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AllowDraggingColumns="True"
+						AutoGenerateColumns="False"
+						ChildPropertyName="ReportsTo"
+						ItemsSource="{Binding EmployeeInfo}"
+						ParentPropertyName="ID"
+						SelfRelationRootValue="-1"/>
+						
 {% endhighlight %}
 {% endtabs %}
 
@@ -657,10 +657,10 @@ You can enable or disable dragging on particular column using [TreeGridColumn.Al
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:TreeGridTextColumn AllowDragging="True"
-									HeaderText="First Name"
-									MappingName="FirstName" />
-									
+<syncfusion:TreeGridTextColumn AllowDragging="True"
+								HeaderText="First Name"
+								MappingName="FirstName" />
+								
 {% endhighlight %}
 {% endtabs %}
 
@@ -679,16 +679,16 @@ You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDrag
 {% tabs %}
 {% highlight c# %}
 
-	treeGrid.ColumnDragging += TreeGrid_ColumnDragging;
+treeGrid.ColumnDragging += TreeGrid_ColumnDragging;
 
-	private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventArgs e)
+private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventArgs e)
+{
+	var column = treeGrid.Columns[e.From];
+	if(column.MappingName=="FirstName" && e.Reason==QueryColumnDraggingReason.Dropping)
 	{
-		var column = treeGrid.Columns[e.From];
-		if(column.MappingName=="FirstName" && e.Reason==QueryColumnDraggingReason.Dropping)
-		{
-			e.Cancel = true;
-		}
+		e.Cancel = true;
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -700,15 +700,15 @@ SfTreeGrid provides MVVM support for binding `TreeGridColumn` properties with Vi
 {% tabs %}
 {% highlight c# %}
 
-	public class ViewModel
+public class ViewModel
+{
+	private bool _allowEditing =true;
+	public bool AllowEditing
 	{
-		private bool _allowEditing =true;
-		public bool AllowEditing
-		{
-			get { return _ allowEditing; }
-			set { _ allowEditing = value; }
-		}
+		get { return _ allowEditing; }
+		set { _ allowEditing = value; }
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -717,20 +717,20 @@ Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. Allo
 {% tabs %}
 {% highlight xaml %}
 
-	<Window.DataContext>
-		<local:ViewModel/>
-	</Window.DataContext>
+<Window.DataContext>
+	<local:ViewModel/>
+</Window.DataContext>
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AllowEditing="False"
-							AutoExpandMode="AllNodesExpanded"
-							AutoGenerateColumns="False"
-							ChildPropertyName="ReportsTo"
-							ParentPropertyName="ID">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AllowEditing="False"
+						AutoExpandMode="AllNodesExpanded"
+						AutoGenerateColumns="False"
+						ChildPropertyName="ReportsTo"
+						ParentPropertyName="ID">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}

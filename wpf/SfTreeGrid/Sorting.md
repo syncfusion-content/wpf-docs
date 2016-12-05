@@ -15,11 +15,11 @@ SfTreeGrid allows you to sort the data against one or more columns either in asc
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfTreeGrid Name="treeGrid"
-							AllowSorting="True"                             
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AllowSorting="True"                             
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
 {% endhighlight %}
 {% highlight c# %}
 
@@ -33,19 +33,19 @@ In another way, you can enable or disable the sorting for particular column by s
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-								   AllowSorting="False"
-								   AutoGenerateColumns="False"
-								   AutoExpandMode="RootNodesExpanded"                    
-								   ChildPropertyName="Children"                  
-								   ItemsSource="{Binding EmployeeDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn AllowSorting="True" MappingName="FirstName" />
-			<syncfusion:TreeGridTextColumn AllowSorting="False" MappingName="LastName" />
-			<syncfusion:TreeGridTextColumn  MappingName="Id" />
-			<syncfusion:TreeGridNumericColumn MappingName="Salary" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+							   AllowSorting="False"
+							   AutoGenerateColumns="False"
+							   AutoExpandMode="RootNodesExpanded"                    
+							   ChildPropertyName="Children"                  
+							   ItemsSource="{Binding EmployeeDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn AllowSorting="True" MappingName="FirstName" />
+		<syncfusion:TreeGridTextColumn AllowSorting="False" MappingName="LastName" />
+		<syncfusion:TreeGridTextColumn  MappingName="Id" />
+		<syncfusion:TreeGridNumericColumn MappingName="Salary" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% highlight c# %}
@@ -69,18 +69,18 @@ By default, column gets sorted when column header clicked. You can change this b
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AllowSorting="True"
-							SortClickAction="DoubleClick"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AllowSorting="True"
+						SortClickAction="DoubleClick"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
 							   
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.AllowSorting = true;
-	this.treeGrid.SortClickAction = SortClickAction.DoubleClick;
+this.treeGrid.AllowSorting = true;
+this.treeGrid.SortClickAction = SortClickAction.DoubleClick;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -109,17 +109,17 @@ It is also possible to display sorted order of columns in header by setting [SfT
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-						AllowSorting="True"
-						ShowSortNumbers="True"
-						AutoExpandMode="RootNodesExpanded"                    
-						ChildPropertyName="Children"                  
-						ItemsSource="{Binding EmployeeDetails}">
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AllowSorting="True"
+					ShowSortNumbers="True"
+					AutoExpandMode="RootNodesExpanded"                    
+					ChildPropertyName="Children"                  
+					ItemsSource="{Binding EmployeeDetails}">
 						
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.ShowSortNumbers = true;
+this.treeGrid.ShowSortNumbers = true;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -137,22 +137,22 @@ N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/cref_files/wpf
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-							AllowSorting="True"
-							AutoExpandMode="RootNodesExpanded"                    
-							ChildPropertyName="Children"                  
-							ItemsSource="{Binding EmployeeDetails}">
-				<syncfusion:SfTreeGrid.SortColumnDescriptions>
-					<sync:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
-					<sync:SortColumnDescription ColumnName="Id" SortDirection="Descending"/>
-				</syncfusion:SfTreeGrid.SortColumnDescriptions>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+						AllowSorting="True"
+						AutoExpandMode="RootNodesExpanded"                    
+						ChildPropertyName="Children"                  
+						ItemsSource="{Binding EmployeeDetails}">
+			<syncfusion:SfTreeGrid.SortColumnDescriptions>
+				<sync:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
+				<sync:SortColumnDescription ColumnName="Id" SortDirection="Descending"/>
+			</syncfusion:SfTreeGrid.SortColumnDescriptions>
+</syncfusion:SfTreeGrid>
 
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "FirstName",SortDirection=ListSortDirection.Ascending });
-	this.treeGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "Id", SortDirection = ListSortDirection.Descending });
+this.treeGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "FirstName",SortDirection=ListSortDirection.Ascending });
+this.treeGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "Id", SortDirection = ListSortDirection.Descending });
 	
 {% endhighlight %}
 {% endtabs %}
@@ -164,9 +164,9 @@ You can unsort the data by removing the corresponding `SortColumnDescription` fr
 {% tabs %}
 {% highlight c# %}
 
-	var sortColumnDescription = this.treeGrid.SortColumnDescriptions.FirstOrDefault(col => col.ColumnName == "FirstName");
-	if (sortColumnDescription != null)
-			  this.treeGrid.SortColumnDescriptions.Remove(sortColumnDescription);
+var sortColumnDescription = this.treeGrid.SortColumnDescriptions.FirstOrDefault(col => col.ColumnName == "FirstName");
+if (sortColumnDescription != null)
+		  this.treeGrid.SortColumnDescriptions.Remove(sortColumnDescription);
 			  
 {% endhighlight %}
 {% endtabs %}
@@ -178,7 +178,7 @@ You can clear sorting, by clearing the [SfTreeGrid.SortColumnDescriptions](http:
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.SortColumnDescriptions.Clear();
+this.treeGrid.SortColumnDescriptions.Clear();
 	
 {% endhighlight %}
 {% endtabs %}
@@ -205,42 +205,42 @@ In the below code snippet, `FirstName` property is compared based on its string 
 {% tabs %}
 {% highlight c# %}
 
-	public class CustomSortComparer : IComparer<object>, ISortDirection
-    {
-        public int Compare(object x, object y)
-        {
-            var item1 = x as EmployeeInfo;
-            var item2 = y as EmployeeInfo;
-            var value1 = item1.FirstName;
-            var value2 = item2.FirstName;
-            int c = 0;
-            if (value1 != null && value2 == null)
-            {
-                c = 1;
-            }
-            else if (value1 == null && value2 != null)
-            {
-                c = -1;
-            }
-            else if (value1 != null && value2 != null)
-            {
-                c = value1.Length.CompareTo(value2.Length);
-            }
+public class CustomSortComparer : IComparer<object>, ISortDirection
+{
+	public int Compare(object x, object y)
+	{
+		var item1 = x as EmployeeInfo;
+		var item2 = y as EmployeeInfo;
+		var value1 = item1.FirstName;
+		var value2 = item2.FirstName;
+		int c = 0;
+		if (value1 != null && value2 == null)
+		{
+			c = 1;
+		}
+		else if (value1 == null && value2 != null)
+		{
+			c = -1;
+		}
+		else if (value1 != null && value2 != null)
+		{
+			c = value1.Length.CompareTo(value2.Length);
+		}
 
-            if (SortDirection == ListSortDirection.Descending)
-                c = -c;
+		if (SortDirection == ListSortDirection.Descending)
+			c = -c;
 
-            return c;
-        }
+		return c;
+	}
 
-        //Get or Set the SortDirection value
-        private ListSortDirection _SortDirection;
-        public ListSortDirection SortDirection
-        {
-            get { return _SortDirection; }
-            set { _SortDirection = value; }
-        }
-    }
+	//Get or Set the SortDirection value
+	private ListSortDirection _SortDirection;
+	public ListSortDirection SortDirection
+	{
+		get { return _SortDirection; }
+		set { _SortDirection = value; }
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -252,16 +252,16 @@ Custom comparer can be added to [SfTreeGrid.SortComparers](https://help.syncfusi
 {% tabs %}
 {% highlight xaml %}
 	
-	xmlns:data="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF"
-	
-	<syncfusion:SfTreeGrid.SortComparers>
-        <data:SortComparer Comparer="{StaticResource sortComparer}"  PropertyName="FirstName" />
-    </syncfusion:SfTreeGrid.SortComparers>
+xmlns:data="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF"
+
+<syncfusion:SfTreeGrid.SortComparers>
+	<data:SortComparer Comparer="{StaticResource sortComparer}"  PropertyName="FirstName" />
+</syncfusion:SfTreeGrid.SortComparers>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortComparer(), PropertyName = "FirstName" });	
+this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortComparer(), PropertyName = "FirstName" });	
 	
 {% endhighlight %}
 {% endtabs %}
@@ -291,15 +291,15 @@ You can prevent sorting for the particular column through [GridSortColumnsChangi
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.SortColumnsChanging += TreeGrid_SortColumnsChanging;
-	
-	private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
+this.treeGrid.SortColumnsChanging += TreeGrid_SortColumnsChanging;
+
+private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
+{
+	if (e.AddedItems[0].ColumnName == "FirstName")
 	{
-		if (e.AddedItems[0].ColumnName == "FirstName")
-		{
-			e.Cancel = true;
-		}
+		e.Cancel = true;
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
