@@ -87,14 +87,14 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-						AutoExpandMode="RootNodesExpanded"
-						AutoGenerateColumns="True"
-						ChildPropertyName="Children"
-						ColumnSizer="Star"
-						ExpanderColumn="FirstName"
-						ItemsSource="{Binding PersonDetails}">
-						
+<syncfusion:SfTreeGrid Name="treeGrid"
+					AutoExpandMode="RootNodesExpanded"
+					AutoGenerateColumns="True"
+					ChildPropertyName="Children"
+					ColumnSizer="Star"
+					ExpanderColumn="FirstName"
+					ItemsSource="{Binding PersonDetails}">
+					
 {% endhighlight %}
 {% endtabs %}
 
@@ -114,11 +114,11 @@ For example, you can refresh all the column&#39;s width based on the cell conten
 {% tabs %}
 {% highlight c# %}
 
-	var viewModel = this.treeGrid.DataContext as ViewModel;
-	viewModel.PersonDetails.Add(new PersonInfo("Smith", "Anders","Red", new DateTime(2008, 10, 26), null));
+var viewModel = this.treeGrid.DataContext as ViewModel;
+viewModel.PersonDetails.Add(new PersonInfo("Smith", "Anders","Red", new DateTime(2008, 10, 26), null));
 
-	this.treeGrid.TreeGridColumnSizer.ResetAutoCalculationforAllColumns();
-	this.treeGrid.TreeGridColumnSizer.Refresh();   
+this.treeGrid.TreeGridColumnSizer.ResetAutoCalculationforAllColumns();
+this.treeGrid.TreeGridColumnSizer.Refresh();   
 	
 {% endhighlight %}
 {% endtabs %}
@@ -130,12 +130,12 @@ When the width of the column is explicitly defined or column is resized, then co
 {% tabs %}
 {% highlight c# %}
 
-	foreach (var column in treeGrid.Columns)
-	{
-		if (!double.IsNaN(column.Width))
-			column.Width = double.NaN;
-	}
-	this.treeGrid.TreeGridColumnSizer.Refresh();   
+foreach (var column in treeGrid.Columns)
+{
+	if (!double.IsNaN(column.Width))
+		column.Width = double.NaN;
+}
+this.treeGrid.TreeGridColumnSizer.Refresh();   
 	
 {% endhighlight %}
 {% endtabs %}
@@ -147,26 +147,26 @@ SfTreeGrid process column sizing operations in [TreeGridColumnSizer](http://help
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
+this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
-	public class TreeGridColumnSizerExt:TreeGridColumnSizer
+public class TreeGridColumnSizerExt:TreeGridColumnSizer
+{
+	public TreeGridColumnSizerExt(SfTreeGrid treeGrid)
+		:base(treeGrid)
 	{
-		public TreeGridColumnSizerExt(SfTreeGrid treeGrid)
-			:base(treeGrid)
-		{
 
-		}        
-		// Calculate Width for column when ColumnSizer is SizeToCells.        
-		protected override double CalculateCellWidth(TreeGridColumn column)
-		{
-			return base.CalculateCellWidth(column);
-		}
-		//Calculate Width for the column when ColumnSizer is SizeToHeader
-		protected override double CalculateHeaderWidth(TreeGridColumn column)
-		{
-			return base.CalculateHeaderWidth(column);
-		}
+	}        
+	// Calculate Width for column when ColumnSizer is SizeToCells.        
+	protected override double CalculateCellWidth(TreeGridColumn column)
+	{
+		return base.CalculateCellWidth(column);
 	}
+	//Calculate Width for the column when ColumnSizer is SizeToHeader
+	protected override double CalculateHeaderWidth(TreeGridColumn column)
+	{
+		return base.CalculateHeaderWidth(column);
+	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -182,7 +182,7 @@ You can change the filter icon and sort icon widths for column width calculation
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.TreeGridColumnSizer.SortIconWidth = 20;
+this.treeGrid.TreeGridColumnSizer.SortIconWidth = 20;
 	
 {% endhighlight %}
 {% endtabs %}
@@ -194,9 +194,9 @@ You can change the `font settings` for column width calculation by setting [Tree
 {% tabs %}
 {% highlight c# %}
 
-	this.treeGrid.TreeGridColumnSizer.FontSize = 10.0;
-	this.treeGrid.TreeGridColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
-	this.treeGrid.TreeGridColumnSizer.Margin = new Thickness(9, 3, 1, 3);
+this.treeGrid.TreeGridColumnSizer.FontSize = 10.0;
+this.treeGrid.TreeGridColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
+this.treeGrid.TreeGridColumnSizer.Margin = new Thickness(9, 3, 1, 3);
 	
 {% endhighlight %}
 {% endtabs %}
@@ -210,20 +210,20 @@ For example, you can calculate the column width, with specified ratios instead o
 {% tabs %}
 {% highlight c# %}
 
-	public static class StarRatio
+public static class StarRatio
+{
+	public static int GetColumnRatio(DependencyObject obj)
 	{
-		public static int GetColumnRatio(DependencyObject obj)
-		{
-			return (int)obj.GetValue(ColumnRatioProperty);
-		}
-
-		public static void SetColumnRatio(DependencyObject obj, int value)
-		{
-			obj.SetValue(ColumnRatioProperty, value);
-		}
-
-		public static readonly DependencyProperty ColumnRatioProperty = DependencyProperty.RegisterAttached("ColumnRatio", typeof(int), typeof(StarRatio), new PropertyMetadata(1, null));
+		return (int)obj.GetValue(ColumnRatioProperty);
 	}
+
+	public static void SetColumnRatio(DependencyObject obj, int value)
+	{
+		obj.SetValue(ColumnRatioProperty, value);
+	}
+
+	public static readonly DependencyProperty ColumnRatioProperty = DependencyProperty.RegisterAttached("ColumnRatio", typeof(int), typeof(StarRatio), new PropertyMetadata(1, null));
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -233,65 +233,65 @@ Below code to define the star width calculation based on the `ColumnRatio`.
 {% tabs %}
 {% highlight c# %}
 
-	//Assign the customized TreeGridColumnSizerExt to SfTreeGrid.TreeGridColumnSizer
-	this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
+//Assign the customized TreeGridColumnSizerExt to SfTreeGrid.TreeGridColumnSizer
+this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
-	public class TreeGridColumnSizerExt : TreeGridColumnSizer
+public class TreeGridColumnSizerExt : TreeGridColumnSizer
+{
+	public TreeGridColumnSizerExt(SfTreeGrid treeGrid) : base(treeGrid)
 	{
-		public TreeGridColumnSizerExt(SfTreeGrid treeGrid) : base(treeGrid)
+	}
+	protected override void SetStarWidth(double remainingColumnWidth, IEnumerable<TreeGridColumn> remainingColumns)
+	{           
+		var removedColumn = new List<TreeGridColumn>();
+		var columns = remainingColumns.ToList();
+		var totalRemainingStarValue = remainingColumnWidth;
+		double removedWidth = 0;
+		bool isremoved;
+
+		while (columns.Count > 0)
 		{
-		}
-		protected override void SetStarWidth(double remainingColumnWidth, IEnumerable<TreeGridColumn> remainingColumns)
-		{           
-			var removedColumn = new List<TreeGridColumn>();
-			var columns = remainingColumns.ToList();
-			var totalRemainingStarValue = remainingColumnWidth;
-			double removedWidth = 0;
-			bool isremoved;
+			isremoved = false;
+			removedWidth = 0;
+			var columnsCount = 0;
 
-			while (columns.Count > 0)
+			columns.ForEach((col) =>
 			{
-				isremoved = false;
-				removedWidth = 0;
-				var columnsCount = 0;
+				columnsCount += StarRatio.GetColumnRatio(col);
+			});
 
-				columns.ForEach((col) =>
+			double starWidth = Math.Floor((totalRemainingStarValue / columnsCount));
+			var column = columns.First();
+			starWidth *= StarRatio.GetColumnRatio(column);
+			double computedWidth = SetColumnWidth(column, starWidth);
+
+			if (starWidth != computedWidth && starWidth > 0)
+			{
+				isremoved = true;
+				columns.Remove(column);
+				foreach (var remColumn in removedColumn)
 				{
-					columnsCount += StarRatio.GetColumnRatio(col);
-				});
-
-				double starWidth = Math.Floor((totalRemainingStarValue / columnsCount));
-				var column = columns.First();
-				starWidth *= StarRatio.GetColumnRatio(column);
-				double computedWidth = SetColumnWidth(column, starWidth);
-
-				if (starWidth != computedWidth && starWidth > 0)
-				{
-					isremoved = true;
-					columns.Remove(column);
-					foreach (var remColumn in removedColumn)
+					if (!columns.Contains(remColumn))
 					{
-						if (!columns.Contains(remColumn))
-						{
-							removedWidth += remColumn.ActualWidth;
-							columns.Add(remColumn);
-						}
+						removedWidth += remColumn.ActualWidth;
+						columns.Add(remColumn);
 					}
-					removedColumn.Clear();
-					totalRemainingStarValue += removedWidth;
 				}
+				removedColumn.Clear();
+				totalRemainingStarValue += removedWidth;
+			}
 
-				totalRemainingStarValue = totalRemainingStarValue - computedWidth;
+			totalRemainingStarValue = totalRemainingStarValue - computedWidth;
 
-				if (!isremoved)
-				{
-					columns.Remove(column);
-					if (!removedColumn.Contains(column))
-						removedColumn.Add(column);
-				}
+			if (!isremoved)
+			{
+				columns.Remove(column);
+				if (!removedColumn.Contains(column))
+					removedColumn.Add(column);
 			}
 		}
 	}
+}
 	
 {% endhighlight %}
 {% endtabs %}
@@ -301,28 +301,28 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfTreeGrid Name="treeGrid"
-				AutoExpandMode="RootNodesExpanded"
-				AutoGenerateColumns="False"
-				ChildPropertyName="Children"
-				ColumnSizer="Star"
-				ExpanderColumn="FirstName"
-				ItemsSource="{Binding PersonDetails}">
-		<syncfusion:SfTreeGrid.Columns>
-			<syncfusion:TreeGridTextColumn HeaderText="Person Id" 
-												MappingName="Id" 
-												TextAlignment="Left" 
-												local:StarRatio.ColumnRatio="1" />
-			<syncfusion:TreeGridTextColumn HeaderText="First Name" 
-												MappingName="FirstName" 
-												local:StarRatio.ColumnRatio="2" />
-			<syncfusion:TreeGridTextColumn HeaderText="Last Name" 
-												MappingName="LastName" 
-												local:StarRatio.ColumnRatio="3"/>
-			<syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="LikesCake" />
-			<syncfusion:TreeGridCurrencyColumn MappingName="Salary" />
-		</syncfusion:SfTreeGrid.Columns>
-	</syncfusion:SfTreeGrid>
+<syncfusion:SfTreeGrid Name="treeGrid"
+			AutoExpandMode="RootNodesExpanded"
+			AutoGenerateColumns="False"
+			ChildPropertyName="Children"
+			ColumnSizer="Star"
+			ExpanderColumn="FirstName"
+			ItemsSource="{Binding PersonDetails}">
+	<syncfusion:SfTreeGrid.Columns>
+		<syncfusion:TreeGridTextColumn HeaderText="Person Id" 
+											MappingName="Id" 
+											TextAlignment="Left" 
+											local:StarRatio.ColumnRatio="1" />
+		<syncfusion:TreeGridTextColumn HeaderText="First Name" 
+											MappingName="FirstName" 
+											local:StarRatio.ColumnRatio="2" />
+		<syncfusion:TreeGridTextColumn HeaderText="Last Name" 
+											MappingName="LastName" 
+											local:StarRatio.ColumnRatio="3"/>
+		<syncfusion:TreeGridCheckBoxColumn HeaderText="Availability" MappingName="LikesCake" />
+		<syncfusion:TreeGridCurrencyColumn MappingName="Salary" />
+	</syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 	
 {% endhighlight %}
 {% endtabs %}
@@ -339,36 +339,36 @@ Below code creates `CustomColumnSizer` to change the width of `TreeGridComboboxC
 
 {% highlight c# %}
 
-	this.TreeGrid.TreeGridColumnSizer = new CustomColumnSizer(this.treeGrid);
+this.TreeGrid.TreeGridColumnSizer = new CustomColumnSizer(this.treeGrid);
 
-	public class CustomColumnSizer : TreeGridColumnSizer
+public class CustomColumnSizer : TreeGridColumnSizer
+{
+	public CustomColumnSizer(SfTreeGrid treeGrid)
+		: base(treeGrid)
 	{
-		public CustomColumnSizer(SfTreeGrid treeGrid)
-			: base(treeGrid)
-		{
-		}
-
-		protected override double CalculateCellWidth(TreeGridColumn column)
-		{
-			if (column is TreeGridComboBoxColumn)
-			{
-				double colWidth = double.MaxValue;
-				var source = (column as TreeGridComboBoxColumn).ItemsSource;
-				string maximumComboItemsText = string.Empty;
-				var clientSize = new Size(colWidth, TreeGrid.RowHeight);
-				foreach (var comboItems in source)
-				{
-					string comboItemText = (string)comboItems;
-					if (maximumComboItemsText.Length < comboItemText.Length)
-						maximumComboItemsText = comboItemText;
-				}
-				var measureSize = MeasureText(clientSize, maximumComboItemsText, column, null, Syncfusion.UI.Xaml.Grid.GridQueryBounds.Width);
-				return measureSize.Width + SystemParameters.ScrollWidth;
-			}
-			else
-				return base.CalculateCellWidth(column);
-		}
 	}
+
+	protected override double CalculateCellWidth(TreeGridColumn column)
+	{
+		if (column is TreeGridComboBoxColumn)
+		{
+			double colWidth = double.MaxValue;
+			var source = (column as TreeGridComboBoxColumn).ItemsSource;
+			string maximumComboItemsText = string.Empty;
+			var clientSize = new Size(colWidth, TreeGrid.RowHeight);
+			foreach (var comboItems in source)
+			{
+				string comboItemText = (string)comboItems;
+				if (maximumComboItemsText.Length < comboItemText.Length)
+					maximumComboItemsText = comboItemText;
+			}
+			var measureSize = MeasureText(clientSize, maximumComboItemsText, column, null, Syncfusion.UI.Xaml.Grid.GridQueryBounds.Width);
+			return measureSize.Width + SystemParameters.ScrollWidth;
+		}
+		else
+			return base.CalculateCellWidth(column);
+	}
+}
 
 {% endhighlight %}
 
