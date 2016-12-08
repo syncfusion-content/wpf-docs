@@ -131,6 +131,54 @@ IsOpen="True" />
 
 {%endhighlight%}
 
+## MenuBackgroundColor
+
+Each `SfRadialMenuItem` can be set a different background color using `MenuBackgroundColor` property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<navigation:SfRadialMenu IsOpen="True">
+
+<navigation:SfRadialMenuItem Header="Bold" MenuBackgroundColor="Pink">
+
+<navigation:SfRadialMenuItem/>
+
+</navigation:SfRadialMenuItem>
+
+<navigation:SfRadialMenuItem Header="Copy" MenuBackgroundColor="PaleTurquoise">
+
+<navigation:SfRadialMenuItem/>
+
+</navigation:SfRadialMenuItem>
+
+<navigation:SfRadialMenuItem Header="Undo" MenuBackgroundColor="Pink">
+
+<navigation:SfRadialMenuItem/>
+
+</navigation:SfRadialMenuItem>
+
+<navigation:SfRadialMenuItem Header="Font Size" MenuBackgroundColor="PaleTurquoise">
+
+<navigation:SfRadialMenuItem/>
+
+</navigation:SfRadialMenuItem>
+
+<navigation:SfRadialMenuItem Header="Color" MenuBackgroundColor="Lavender">
+
+<navigation:SfRadialMenuItem/>
+
+</navigation:SfRadialMenuItem>
+
+</navigation:SfRadialMenu>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](menu-item-customization-images/menubackground.png)
+
 ## MenuMouseOverBackgroundColor
 
 Each SfRadialMenuItem can be set with a different background color on mouse over by using the MenuMouseOverBackgroundColor property. Before that, the ShowMouseOverStyle property should be set to true.

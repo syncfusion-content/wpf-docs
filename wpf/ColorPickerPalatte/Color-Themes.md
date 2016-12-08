@@ -99,4 +99,108 @@ To view samples:
 4. Choose any one of the samples listed under it to launch. 
 
 
+## Creating Custom ColorPalette
+
+`ColorPickerPalette` control can be entirely customized with a custom collection of colors. The following properties must be set for creating custom color palette. 
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Data Type</th></tr>
+<tr>
+<td>
+CustomColorsCollection </td><td>
+Gets or sets a collection of CustomColors to be displayed in custom tab</td><td>
+ObservableCollection<CustomColor></td></tr>
+<tr>
+<td>
+IsCustomTabVisible</td><td>
+Gets or Sets the visibility of Custom tab</td><td>
+Visibility</td></tr>
+<tr>
+<td>
+SetCustomColors</td><td>
+Gets or Sets the value indicating whether custom colors are enabled or not</td><td>
+Boolean</td></tr>
+<tr>
+<td>
+CustomHeaderVisibility</td><td>
+Gets or Sets the visibility of Custom tab header</td><td>Visibility</td></tr>
+<tr>
+<td>
+CustomHeaderText</td><td>
+Gets or Sets the header text in Custom tab</td><td>
+string</td></tr>
+</table>
+
+### CustomColor
+
+`CustomColor` has the properties `Color` and `ColorName`. `Color` property indicates the color value and `ColorName` is the tooltip shown on mouse hover.
+
+N> `CustomColor` class is available in `Syncfusion.Windows.Tools.Controls` namespace.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:ColorPickerPalette ThemePanelVisibility="Collapsed" StandardPanelVisibility="Collapsed"
+                               RecentlyUsedPanelVisibility="Collapsed" MoreColorOptionVisibility="Collapsed"
+							   AutomaticColorVisibility="Collapsed" IsCustomTabVisible="Visible"
+							   SetCustomColors="True" CustomHeaderVisibility="Visible"
+							   CustomHeaderText="Custom Colors">
+							   
+<syncfusion:ColorPickerPalette.CustomColorsCollection>
+
+      <syncfusion:CustomColor Color="SlateBlue" ColorName="Custom SlateBlue"/>
+      ...
+      <syncfusion:CustomColor Color="Navy" ColorName="Custom Navy"/> 
+	         
+</syncfusion:ColorPickerPalette.CustomColorsCollection>
+
+</syncfusion:ColorPickerPalette>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+
+colorPickerPalette.ThemePanelVisibility= Visibility.Collapsed;
+
+colorPickerPalette.StandardPanelVisibility= Visibility.Collapsed;
+
+colorPickerPalette.RecentlyUsedPanelVisibility= Visibility.Collapsed;
+
+colorPickerPalette.MoreColorOptionVisibility= Visibility.Collapsed;
+
+colorPickerPalette.AutomaticColorVisibility= Visibility.Collapsed;
+
+colorPickerPalette.IsCustomTabVisible= Visibility.Visible;
+
+colorPickerPalette.SetCustomColors= true;
+
+colorPickerPalette.CustomHeaderVisibility= Visibility.Visible;
+
+colorPickerPalette.CustomHeaderText="Custom Colors";
+
+ObservableCollection<CustomColor> customColors = new ObservableCollection<CustomColor>();
+
+customColors.Add(new CustomColor() { Color = Colors.SlateBlue, ColorName = "Custom SlateBlue" });
+
+// Add requred custom colors
+
+customColors.Add(new CustomColor() { Color = Colors.Navy, ColorName = "Custom Navy" });
+
+colorPalette.CustomColorsCollection = customColors;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot shows the custom ColorPalette,
+
+![](custom-colors-images/customcolor.png)
+
 
