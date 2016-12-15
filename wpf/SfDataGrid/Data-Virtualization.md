@@ -654,6 +654,11 @@ public class ViewModel
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_-_LoadMoreItems-1914949679.zip).
 
+### Limitations
+
+1. Deleting is not supported. You can code to delete row in application level.
+2. Summary is calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
+
 ## Paging
 
 SfDataGrid supports to load paged data source using [SfDataPager](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html). You can use the paging in SfDataGrid by go through the [Paging](http://115.249.201.211:9090/wpf/sfdatagrid/paging) section.
