@@ -87,7 +87,7 @@ treeGrid.CheckBoxMappingName = "IsSelected";
 
 ### Disable Recursive Checking when data object property changed
 
-By default, recursive checking will be applied, whenever node’s `IsChecked` property gets changed. You can disable the recursive checking on property value change (which is mapped with `CheckBoxMappingName’) by setting [SfTreeGrid.RecursiveCheckingMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassRecursiveCheckingModeTopic.html) as `OnCheck`.
+By default, recursive checking will be applied, whenever node’s `IsChecked` property gets changed. You can disable the recursive checking on property value change (which is mapped with `CheckBoxMappingName`) by setting [SfTreeGrid.RecursiveCheckingMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassRecursiveCheckingModeTopic.html) as `OnCheck`.
 
 {% tabs %}
 {% highlight xaml %}
