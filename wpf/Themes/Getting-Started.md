@@ -59,6 +59,26 @@ Syncfusion.Themes.Offie2010Blue.Wpf.dll<br/><br/></td></tr>
 <td>
 Office2010Silver<br/><br/></td><td>
 Syncfusion.Themes.Office2010Silver.Wpf.dll<br/><br/></td></tr>
+<tr>
+<td>
+Office365<br/><br/></td><td>
+Syncfusion.Themes.Offcie365.Wpf.dll<br/><br/></td></tr>
+<tr>
+<td>
+Office2016Colorful<br/><br/></td><td>
+Syncfusion.Themes.Office2016Colorful.Wpf.dll<br/><br/></td></tr>
+<tr>
+<td>
+Office2016White<br/><br/></td><td>
+Syncfusion.Themes.Office2016White.Wpf.dll<br/><br/></td></tr>
+<tr>
+<td>
+Office2016DarkGray<br/><br/></td><td>
+Syncfusion.Themes.Office2016DarkGray.Wpf.dll<br/><br/></td></tr>
+<tr>
+<td>
+VisualStudio2015<br/><br/></td><td>
+Syncfusion.Themes.VisualStudio2015.Wpf.dll<br/><br/></td></tr>
 </table>
 
 ## Getting Started
