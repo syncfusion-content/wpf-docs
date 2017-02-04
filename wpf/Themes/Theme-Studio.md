@@ -44,6 +44,16 @@ The following list of predefined themes are currently provided in theme studio,
 
 *	Saffron
 
+*   Office365
+
+*   Office2016Colorful
+
+*   Office2016White
+
+*   Office2016DarkGray
+
+*   VisualStudio2015
+
 ![](ThemeStudio_images/ThemeStudio_img2.png)
 
 
