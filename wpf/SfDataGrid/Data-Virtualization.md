@@ -30,14 +30,6 @@ Use to load large amount of data in less time.
 </tr>
 <tr>
 <td>
-Custom VirtualizingCollectionView
-</td>
-<td>
-Use to load large amount of data in less time and also data can be loaded in on-demand.
-</td>
-</tr>
-<tr>
-<td>
 Incremental Loading
 </td>
 <td>
