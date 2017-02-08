@@ -111,13 +111,13 @@ this.Content = calendarEdit;
 
 ## Week Number
 
-Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set IsShowWeekNumbers property to true as follows.
+Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set ShowWeekNumbers property to true as follows.
 
 {% tabs %}
 {% highlight xaml %}
 
 <!-- Adding calendar with week numbers -->
-<syncfusion:CalendarEdit Name="calendarEdit" IsShowWeekNumbers="True"/>
+<syncfusion:CalendarEdit Name="calendarEdit" ShowWeekNumbers="True"/>
 
 {% endhighlight %}
 
@@ -127,7 +127,7 @@ Enhance the usability of the CalendarEdit control, by showing week numbers near 
 CalendarEdit calendarEdit = new CalendarEdit();
 
 //Show week numbers
-calendarEdit.IsShowWeekNumbers = true;
+calendarEdit.ShowWeekNumbers = true;
 
 //Adding CalendarEdit as window content
 this.Content = calendarEdit;
