@@ -143,24 +143,21 @@ this.Content = calendarEdit;
 
 ## Week Numbers Grid
 
-It is now possible to edit weekly date in CalendarEdit control. This is achieved by using the IsShowWeekNumbersGrid property.
+It is now possible to edit weekly date in CalendarEdit control. This is achieved by Setting the VisualMode to WeekNumbers as follows.
 
 The following code example illustrates this.
 
 {% tabs %}
 {% highlight xaml %}
 <!--Calendar Edit-->
-<syncfusion:CalendarEdit Name="calendar"  IsShowWeekNumbersGrid="{Binding ElementName = cbShowWeekNumbersGrid, Path=IsChecked, Mode=TwoWay}/>
-<CheckBox Name="cbShowWeekNumbersGrid" IsChecked="False" IsEnabled="False">Show Week Numbers Grid</CheckBox>
+<syncfusion:CalendarEdit Name="calendar"  VisualMode="WeekNumbers"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-//Binding IsShowWeekNumbersGrid property to CheckBox
-Binding b = new Binding();
-b.Source = calendar;b.Mode = BindingMode.TwoWay;b.Path = new PropertyPath("IsShowWeekNumbersGrid");
-BindingOperations.SetBinding(cbShowWeekNumbersGrid, CheckBox.IsCheckedProperty, b);
+//Setting VisualMode in C#
+calendar.VisualMode = VisualMode.Syncfusion.Windows.Shared.CalendarVisualMode.WeekNumbers;
 
 {% endhighlight %}
 {% endtabs %}

@@ -41,9 +41,9 @@ To set this property, use the following code:
 
 Abbreviating Month Names
 
-By default, the MonthNames are displayed in an expanded form in the CalendarEdit control. They can also be displayed in an abbreviated form by setting IsMonthNamesAbbreviated property to _true_. This dependency property indicates whether the name of month is abbreviated or expanded. It returns a Boolean value.
+By default, the MonthNames are displayed in an expanded form in the CalendarEdit control. They can also be displayed in an abbreviated form by setting ShowAbbreviatedMonthNames property to _true_. This dependency property indicates whether the name of month is abbreviated or expanded. It returns a Boolean value.
 
-To set the IsMonthNamesAbbreviated property, use the following code.
+To set the ShowAbbreviatedMonthNames property, use the following code.
 
 {% tabs %}
 {% highlight xaml %}
