@@ -13,7 +13,7 @@ This section provides information about how to abbreviate day and month names. I
 
 Abbreviating Day Names
 
-By default, the day names are displayed in an abbreviated form in the CalendarEdit control. They can also be displayed in an expanded form by setting IsDayNameAbbreviated property to false. This indicates whether the name of day is abbreviated or expanded. It returns the Boolean value. 
+By default, the day names are displayed in an abbreviated form in the CalendarEdit control. They can also be displayed in an expanded form by setting ShowAbbreviatedDayNames property to false. This indicates whether the name of day is abbreviated or expanded. It returns the Boolean value. 
 
 To set this property, use the following code:
 
@@ -21,7 +21,7 @@ To set this property, use the following code:
 {% highlight xaml %}
 
 <!-- Adding calendar with day name expanded-->
-<syncfusion:CalendarEdit Name="calendarEdit" Width="400" IsDayNamesAbbreviated="False"/>
+<syncfusion:CalendarEdit Name="calendarEdit" Width="400" ShowAbbreviatedDayNames="False"/>
 
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ To set this property, use the following code:
 
 {% highlight c# %}
 //Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Disable the DayNameAbbreviatedcalendarEdit.IsDayNamesAbbreviated = false; 
+//Disable the DayNameAbbreviatedcalendarEdit.ShowAbbreviatedDayNames = false; 
 //Adding CalendarEdit as window contentthis.Content = calendarEdit;
 
 {% endhighlight %}
@@ -49,7 +49,7 @@ To set the IsMonthNamesAbbreviated property, use the following code.
 {% highlight xaml %}
 
 <!-- Adding calendar with month name been abbreviated -->
-<syncfusion:CalendarEdit Name="calendarEdit" IsMonthNameAbbreviated="True"/>
+<syncfusion:CalendarEdit Name="calendarEdit" ShowAbbreviatedMonthNames="True"/>
 
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ To set the IsMonthNamesAbbreviated property, use the following code.
 CalendarEdit calendarEdit = new CalendarEdit();
 
 //Disable the DayNameAbbreviated
-calendarEdit.IsMonthNameAbbreviated = true;
+calendarEdit.ShowAbbreviatedMonthNames = true;
 
 //Adding CalendarEdit as window content
 this.Content = calendarEdit;

@@ -47,14 +47,14 @@ this.Content = calendarEdit;
 
 ### Selecting Year at Run Time
 
-By setting the IsAllowYearSelection property to _true_, you can edit the year at run time. This is dependency property indicates whether the year can be edited at run time. It returns the Boolean value that indicates the state of this property.
+By setting the AllowYearEditing property to _true_, you can edit the year at run time. This is dependency property indicates whether the year can be edited at run time. It returns the Boolean value that indicates the state of this property.
 
-To set the IsAllowYearSelection property, use the following code.
+To set the AllowYearEditing property, use the following code.
 
 {% tabs %}
 {% highlight xaml %}
-<!-- Setting IsAllowYearSelection property-->
-<syncfusion:CalendarEdit Name="calendarEdit" IsAllowYearSelection="True"/>
+<!-- Setting AllowYearEditing property-->
+<syncfusion:CalendarEdit Name="calendarEdit" AllowYearEditing="True"/>
 
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ To set the IsAllowYearSelection property, use the following code.
 CalendarEdit calendarEdit = new CalendarEdit();
 
 //Allow selection of year
-calendarEdit.IsAllowYearSelection = true;
+calendarEdit.AllowYearEditing = true;
 
 //Adding CalendarEdit as window conten
 tthis.Content = calendarEdit;

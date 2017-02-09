@@ -55,6 +55,37 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 {% endhighlight %}
 
+## MapPointIcon
+
+MapPointIcon is used for Customizing points shapes.It can be customized by following shapes
+
+* Rectangle
+
+* Circle
+
+* Square
+
+* Diamond
+
+* Star
+
+{% highlight xaml %}
+
+    <syncfusion:SfMap x:Name="maps">
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer Background="White" Uri="MapPoints.ShapeFiles.states.shp">
+                    <syncfusion:ShapeFileLayer.SubShapeFileLayers>
+                        <syncfusion:SubShapeFileLayer MapPointMargin="20" MapPointIcon="Diamond" Uri="MapPoints.ShapeFiles.landslide.shp">
+                        </syncfusion:SubShapeFileLayer>
+                    </syncfusion:ShapeFileLayer.SubShapeFileLayers>
+                </syncfusion:ShapeFileLayer>
+          </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
+
+{% endhighlight %}
+
+![](Map-Points_images/Map-Points_img2.png)
+
 ## MapPointPopup
 
 MapPointPopup is a popup, displayed when the point is moved on MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
