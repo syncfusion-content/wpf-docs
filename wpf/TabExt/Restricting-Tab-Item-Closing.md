@@ -17,33 +17,27 @@ The following code illustrates the same.
 
 {% highlight xaml %}
 
-<syncfusion:TabControlExt  OnCloseButtonClick="OnCloseButtonClick" >
+  <syncfusion:TabControlExt OnCloseButtonClick="TabControlExt_OnCloseButtonClick">
 
-<Grid syncfusion:TabControlExt.Header="Tab1" />
-
-    <Grid syncfusion:TabControlExt.Header="Tab2" />
-
-        <Grid syncfusion:TabControlExt.Header="Tab3" />
-
+            <syncfusion:TabItemExt Header="Tab1"/>
+            
+            <syncfusion:TabItemExt Header="Tab2"/>
+            
+            <syncfusion:TabItemExt Header="Tab3"/>
+            
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void SelectedItemChangedEvent(object sender, CloseTabEventArgs e)
+ private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e)
+ 
+ {
 
-{
-
-    if(e.TargetTabItem.Header.ToString()=="Tab2")
-
-    {
-
-        e.Cancel=true;
-
-    }      
-
-}
+            if (e.TargetTabItem.Header.ToString() == "Tab1")
+                e.Cancel = true;
+ }
 
 {% endhighlight %}
 
