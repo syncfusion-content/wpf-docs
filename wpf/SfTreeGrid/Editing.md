@@ -27,7 +27,7 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
 {% endhighlight %}
 {% endtabs %}
 
-You can enable or disable editing for particular column by setting [TreeGridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowEditingTopic.html) property.
+You can enable or disable editing for particular column by setting [TreeGridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,7 +52,7 @@ N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navig
 
 ### Entering into edit mode
 
-You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassEditTriggerTopic.html) property.
+You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditTrigger.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,7 +75,7 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 
 ### Cursor placement
 
-When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassEditorSelectionBehaviorTopic.html) property.
+When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditorSelectionBehavior.html) property.
 
 SelectAll ֠selects the text of edit element loaded inside cell.
 
@@ -346,11 +346,11 @@ N> For TreeGridComboBoxColumn, you have to use the 'CurrentCellDropDownSelection
 ### CurrentCellDropDownSelectionChanged Event
 
 [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellDropDownSelectionChanged_EV.html) event occurs whenever the `SelectedItem` of `TreeGridComboBoxColumn` column changed.
-[CurrentCellDropDownSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassTopic.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
+[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
 
-* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassRowColumnIndexTopic.html)  - Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
-* [SelectedIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassSelectedIndexTopic.html) - Gets the index of the corresponding item that were selected from the drop-down control.
-* [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassSelectedItemTopic.html) - Gets the data item that were selected from the drop-down control.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~RowColumnIndex.html)  - Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
+* [SelectedIndex](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedIndex.html) - Gets the index of the corresponding item that were selected from the drop-down control.
+* [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedItem.html) - Gets the data item that were selected from the drop-down control.
 
 {% tabs %}
 {% highlight c# %}

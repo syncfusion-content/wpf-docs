@@ -550,7 +550,7 @@ treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", Heade
 
 ### Accessing column
 
-You can access the column through its column index or [TreeGridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMappingNameTopic.html) from the SfTreeGrid.Columns collection.
+You can access the column through its column index or [TreeGridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) from the SfTreeGrid.Columns collection.
 
 {% tabs %}
 {% highlight c# %}

@@ -143,7 +143,7 @@ TreeGridColumn is an abstract class provides base functionalities for all the co
 
 ### Mapping column to particular property
 
-Column can be bound to a property in data object using [TreeGridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMappingNameTopic.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [TreeGridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassDisplayBindingTopic.html) and [TreeGridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html). 
+Column can be bound to a property in data object using [TreeGridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [TreeGridColumn.DisplayBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [TreeGridColumn.ValueBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html). 
 
 When you set `MappingName`, `DisplayBinding` and `ValueBinding` are created based on `MappingName`, if these properties are not defined explicitly. 
 
@@ -174,7 +174,7 @@ By default, Columns handling the data operations (sorting) based on 'MappingName
 
 ### CellTemplate in TreeGridColumn
 
-You can load any WPF control in the display mode for all columns by setting [TreeGridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) property. In edit mode, corresponding editor will be loaded based on column type. 
+You can load any WPF control in the display mode for all columns by setting [TreeGridColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. 
 
 In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar` and `TextBlock`. When you start editing `DoubleTextBox` will be loaded as Editor.
 
@@ -226,7 +226,7 @@ In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar`
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassSetCellBoundValueTopic.html)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundValue.html)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -266,7 +266,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateSelectorTopic.html) property.  
+`TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html) property.  
 
 For example, two different templates loaded alternatively in `Salary` column. 
 
@@ -558,7 +558,7 @@ public class CurrencyFormatConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-When column is auto-generated, you can set the `Converter` by handling [AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAutoGeneratingColumnTopic.html) event
+When column is auto-generated, you can set the `Converter` by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AutoGeneratingColumn_EV.html) event
 
 {% tabs %}
 {% highlight c# %}
@@ -584,7 +584,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 ### Styling TreeGridColumn
 
-`TreeGridColumn` support to customize the style of particular column using [TreeGridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellStyleTopic.html) property.
+`TreeGridColumn` support to customize the style of particular column using [TreeGridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property.
  
 #### Change the font setting
 
@@ -738,17 +738,17 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 #### Hide Column
 
-You can hide or unhide the particular column programmatically by setting [TreeGridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassIsHiddenTopic.html) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](https://help.syncfusion.com/wpf/sftreegrid/column-types) section.
+You can hide or unhide the particular column programmatically by setting [TreeGridColumn.IsHidden](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsHidden.html) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](https://help.syncfusion.com/wpf/sftreegrid/columns#resizing-columns) section.
 
 #### Disable column
 
-You can disable column by setting [TreeGridColumn.AllowFocus](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowFocusTopic.html) property. Therefore, that column can? be selected or edited. 
+You can disable column by setting [TreeGridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowFocus.html) property. Therefore, that column can? be selected or edited. 
 
 ### Width, alignment and padding settings
 
 #### Width
 
-The width of `TreeGridColumn` can be changed by setting `Width` property. Column width set based on [TreeGridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMinimumWidthTopic.html) and [TreeGridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMaximumWidthTopic.html) properties.
+The width of `TreeGridColumn` can be changed by setting `Width` property. Column width set based on [TreeGridColumn.MinimumWidth](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MinimumWidth.html) and [TreeGridColumn.MaximumWidth](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MaximumWidth.html) properties.
 
 N> If the `TreeGridColumn.Width` is defined explicitly takes priority than `TreeGridColumn.ColumnSizer`.
 
@@ -1177,7 +1177,7 @@ You can increment or decrement the selected part of date time value by enabling 
 
 ### Format using Converter
 
-`TreeGridDateTimeColumn` allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html).
+`TreeGridDateTimeColumn` allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1548,7 +1548,7 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 
 ## TreeGridComboBoxColumn
 
-[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) derived from `TreeGridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using `[TreeGridComboBoxColumn.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassItemsSourceTopic.html) property.
+[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) derived from `TreeGridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using `[TreeGridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn~ItemsSource.html) property.
 
 By default, `TreeGridComboBoxColumn` displays the value using `MappingName` property. You can set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn~DisplayMemberPath.html) which denotes the path to a value on the source object (TreeGridComboBoxColumn.ItemsSource) to serve as the visual representation of object. You can set the [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn~SelectedValuePath.html) which denotes the path to get the SelectedValue from the SelectedItem. 
 
@@ -1573,7 +1573,7 @@ treeGrid.Columns.Add(new TreeGridComboBoxColumn() {	MappingName = "City", ItemsS
 {% endhighlight %}
 {% endtabs %}
 
-SfTreeGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellDropDownSelectionChanged_EV.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassTopic.html) of [CurrentCellDropDownSelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellDropDownSelectionChangedTopic.html) event provides the information about the changed cell value. 
+SfTreeGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellDropDownSelectionChanged_EV.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellDropDownSelectionChangedTopic.html) event provides the information about the changed cell value. 
 
 `SelectedIndex` property returns the index of selected item.
 
@@ -1661,9 +1661,9 @@ this.treeGrid.Columns.Add(new TreeGridHyperlinkColumn() { MappingName = "CityDes
 
 ![](ColumnTypes_images/ColumnTypes_img28.png)
 
-You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellRequestNavigateTopic.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `TreeGridHyperLinkColumn` is clicked for navigation.  
+You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellRequestNavigate_EV.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `TreeGridHyperLinkColumn` is clicked for navigation.  
 
-[CurrentCellRequestNavigateEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellRequestNavigate_EV.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. [CurrentCellRequestNavigateEventArgs.NavigateText](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassNavigateTextTopic.html) returns the value using `ValueBinding` or `MappingName` to navigate. 
+[CurrentCellRequestNavigateEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellRequestNavigate_EV.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. [CurrentCellRequestNavigateEventArgs.NavigateText](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~NavigateText.html) returns the value using `ValueBinding` or `MappingName` to navigate. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1681,7 +1681,7 @@ private async void TreeGrid_CurrentCellRequestNavigate(object sender, Syncfusion
 
 ### Cancel the navigation
 
-You can cancel the navigation when clicking hyperlink by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassHandledTopic.html) to `false`. 
+You can cancel the navigation when clicking hyperlink by setting [CurrentCellRequestNavigateEventArgs.Handled](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1834,7 +1834,7 @@ SfTreeGrid allows you to create your own column by overriding predefined column 
 
 ### Creating column from existing column
 
-You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/sftreegrid/column-types) column types in SfTreeGrid.
+You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/sftreegrid/column-type) column types in SfTreeGrid.
 
 For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
 
@@ -2711,7 +2711,7 @@ this.treeGrid.Columns.Add(new DatePickerColumn() { AllowEditing = true, MappingN
 
 You can restrict the range of input using `MaxLength` property on `TreeGridColumn` in below ways.
 
-* Using Converter property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassDisplayBindingTopic.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html) 
+* Using Converter property in [DisplayBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html) 
 
 * Using control style 
 
@@ -2800,7 +2800,7 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
 #### Overriding existing cell types
 
 You can set the `MaxLength` property to the edit element of the particular column by overriding existing cell types. 
-Below code, overrides the `OnInitializeEditElement` method of the corresponding renderer and set the `MaxLength` to the UIElement and add the renderer to [STreeGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCellRenderersTopic.html) collection.
+Below code, overrides the `OnInitializeEditElement` method of the corresponding renderer and set the `MaxLength` to the UIElement and add the renderer to [STreeGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellRenderers.html) collection.
 
 {% tabs %}
 {% highlight c# %}
