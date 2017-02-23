@@ -1573,7 +1573,7 @@ treeGrid.Columns.Add(new TreeGridComboBoxColumn() {	MappingName = "City", ItemsS
 {% endhighlight %}
 {% endtabs %}
 
-SfTreeGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellDropDownSelectionChanged_EV.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellDropDownSelectionChangedTopic.html) event provides the information about the changed cell value. 
+SfTreeGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellDropDownSelectionChanged_EV.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellDropDownSelectionChanged_EV.html) event provides the information about the changed cell value. 
 
 `SelectedIndex` property returns the index of selected item.
 
@@ -2711,7 +2711,7 @@ this.treeGrid.Columns.Add(new DatePickerColumn() { AllowEditing = true, MappingN
 
 You can restrict the range of input using `MaxLength` property on `TreeGridColumn` in below ways.
 
-* Using Converter property in [DisplayBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html) 
+* Using Converter property in [DisplayBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html) 
 
 * Using control style 
 
