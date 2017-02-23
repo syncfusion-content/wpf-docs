@@ -17,7 +17,7 @@ The following code illustrates the same.
 
 {% highlight xaml %}
 
-<syncfusion:TabControlExt OnCloseButtonClick="TabControlExt_OnCloseButtonClick">
+  <syncfusion:TabControlExt OnCloseButtonClick="TabControlExt_OnCloseButtonClick">
 
             <syncfusion:TabItemExt Header="Tab1"/>
             
@@ -31,13 +31,12 @@ The following code illustrates the same.
 
 {% highlight c# %}
 
-private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e)
+ private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e)
+ 
+ {
 
-{
-            
-        if (e.TargetTabItem.Header.ToString() == "Tab1")
-           e.Cancel = true;
-
+            if (e.TargetTabItem.Header.ToString() == "Tab1")
+                e.Cancel = true;
  }
 
 {% endhighlight %}
