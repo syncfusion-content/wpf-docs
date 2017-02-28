@@ -66,7 +66,7 @@ sunburstChart.AnimationType = AnimationType.FadeIn;
 
 {% endtabs %}
 
-![](Animation_images/Animation_img1.jpeg)
+![](Animation_images/Animation_img1.gif)
 
 ### Rotation
 
@@ -92,5 +92,5 @@ sunburstChart.AnimationType = AnimationType.Rotation;
 
 {% endtabs %}
 
-![](Animation_images/Animation_img2.jpeg)
+![](Animation_images/Animation_img2.gif)
 
