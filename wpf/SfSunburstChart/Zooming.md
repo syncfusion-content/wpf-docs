@@ -38,7 +38,7 @@ chart.Behaviors.Add(zoom);
 
 N> You can enable or disable the zooming by using EnableZooming property. By default, EnableZooming property value is True.
 
-![](Zooming_images/Zooming_img1.jpeg)
+![](Zooming_images/Zooming_img1.gif)
 
 
 ## Zooming Toolbar
