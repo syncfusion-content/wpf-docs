@@ -2557,7 +2557,7 @@ private static void SetEditBinding(DatePicker element, TreeGridColumn column, ob
 {% endhighlight %}
 {% endtabs %}
 
-You can customize the editor control while loading by overriding [OnEditElementLoaded](You can customize the editor control while loading by overriding OnEditElementLoaded method.) method.
+You can customize the editor control while loading by overriding [OnEditElementLoaded](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridVirtualizingCellRendererBase%602~OnEditElementLoaded.html) method.
 
 {% tabs %}
 {% highlight c# %}
