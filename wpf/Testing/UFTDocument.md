@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Coded UI Testing for Syncfusion Essential WPF controls
-description: Learn how to test with Coded UI for Syncfusion Essential WPF controls
+title: Getting Started with QTP/UFT Testing for Syncfusion Essential WPF controls
+description: Learn how to test with QTP/UFT for Syncfusion Essential WPF controls
 platform: wpf
 control: Testing
 documentation: ug
