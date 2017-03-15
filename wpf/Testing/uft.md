@@ -58,7 +58,7 @@ Microsoft Windows 10
 </table>
 
 ## Installation
-The following procedure illustrates how to install Essential Test Studio:
+You can download the QTP Essential Test Studio and install using the below steps,
 
 1.Double-click the Syncfusion Essential Test Studio Setup file.
 
@@ -123,6 +123,7 @@ C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
 ### Configuring add-in based on your application framework version
 
 By Default, Syncfusion QTP or UFT add-in configured based on the higher Framework version installed in your machine. if you have developed your application is lower framework version, you to configure the right version assemblies as below,
+
 1. Copy the custom add-in assemblies of Syncfusion from the below installed location based on the framework version of application you are trying to automate,
 C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\ &lt;Version&gt;
 
@@ -173,9 +174,11 @@ N>
 The Record and run only option is selected by default.
 
 8.Select the following checkbox to ensure that only the applications opened by QuickTest and added applications are tested.
+
       1. Applications opened by Quick Test
       2. Applications opened via the Desktop (by the Window shell)
       3. Applications specified below
+      
 9.To add an application for testing, click the + button in the Application details.
 
 N>
@@ -256,8 +259,9 @@ N>
 The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
 
 ## Supported Controls
+The following controls are supported for UFT/QTP tesing 
 
-### SfDataGrid
+## SfDataGrid
 <table>
 <tr>
 <td>
@@ -426,7 +430,7 @@ Int
 
 ![](uft_images/uft_img23.png)
 
-### SfMulticolumnDropDownControl
+## SfMulticolumnDropDownControl
 <table>
 <tr>
 <td>
@@ -500,7 +504,7 @@ Void
 
 ![](uft_images/uft_img24.png)
 
-### SfDataPager
+## SfDataPager
 <table>
 <tr>
 <td>
@@ -540,7 +544,7 @@ Void
 
 ![](uft_images/uft_img25.png)
 
-### GridDataControl
+## GridDataControl
 <table>
 <tr>
 <td>
@@ -1175,7 +1179,7 @@ Void
 
 ![](uft_images/uft_img26.png)
 
-### GridTreeControl
+## GridTreeControl
 <table>
 <tr>
 <td>
@@ -1267,7 +1271,7 @@ Void
 
 ![](uft_images/uft_img27.png)
 
-### Grid Control
+## Grid Control
 <table>
 <tr>
 <td>
@@ -1693,7 +1697,7 @@ Int
 </tr>
 </table>
 
-### Chart
+## Chart
 <table>
 <tr>
 <td>
@@ -1897,7 +1901,7 @@ NA
 </tr>
 </table>
 
-### SfChart
+## SfChart
 <table>
 <tr>
 <td>
@@ -1985,7 +1989,7 @@ Void
 </tr>
 </table>
 
-### PivotGrid
+## PivotGrid
 <table>
 <tr>
 <td>
