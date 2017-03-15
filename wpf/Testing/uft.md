@@ -8,7 +8,9 @@ documentation: ug
 ---
 # UFT support (QTP)
 UFT is an automated testing software designed for testing various software applications and environments. Syncfusion provides QTP add-in that contains custom libraries, that help UFT or QTP to recognize Syncfusion controls. These custom libraries are built with the help of .NET add-in extensibility.
+
 ## Prerequisites and Compatibility
+
 ### Prerequisites
 The prerequisites are tabulated in the following table.
 <table>
@@ -38,6 +40,7 @@ Essential Studio (User Interface edition – WPF) of the same version as the Ess
 </td>
 </tr>
 </table>
+
 ### Compatibility
 <table>
 <tr>
@@ -53,47 +56,47 @@ Microsoft Windows 10
 </td>
 </tr>
 </table>
+
 ## Installation
 The following procedure illustrates how to install Essential Test Studio:
-Double-click the Syncfusion Essential Test Studio Setup file.
+
+1.Double-click the Syncfusion Essential Test Studio Setup file.
 
 N>
 Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
 ![](uft_images/uft_img1.png)
 
-*Setup - Essential QuickTest Professional Welcome screen*
-Click Next. The User Information dialog box opens.
+2.Click Next. The User Information dialog box opens.
 
 ![](uft_images/uft_img2.png)
 
-*User Information screen*
-Enter the User Name, Organization and Unlock Key in the corresponding text boxes provided.
-Click Next.
+3.Enter the User Name, Organization and Unlock Key in the corresponding text boxes provided.
+4.Click Next.
 
 N>
 The unlock key is validated.
-Select the installation folder dialog box opens.
+
+5.Select the installation folder dialog box opens.
 
 ![](uft_images/uft_img3.png)
 
-*Select the installation folder*
-To install in the default location, click Next.
+6.To install in the default location, click Next.
 
 N>
 You can also browse to choose a location by clicking Browse.
-Installation type dialog box opens.
+
+7.Installation type dialog box opens.
 
 ![](uft_images/uft_img4.png)
 
-*Installation type*
-Choose from the options listed. For example, to install the complete setup, click Complete.
-Click Next. The Ready to Install dialog box opens.
+8.Choose from the options listed. For example, to install the complete setup, click Complete.
+9.Click Next. The Ready to Install dialog box opens.
 
 ![](uft_images/uft_img5.png)
 
-*Ready to install screen*
-Click Install to continue with the installation.
+10.Click Install to continue with the installation.
+
 ## Enabling add-on support in UFT
 You have to installed WPF Add-in while installing UFT by choosing below option.
 
@@ -115,7 +118,6 @@ C:\Program Files\HP\QuickTest Professional\dat\Extensibility\WPF\Syncfusion
 
 3. When your system does not contain **Syncfusion.CNG , SyncfusionTestObjects.XML and**
 **Syncfusion.SfGridQTP.WPF.dll**files in the above mentioned location, you have to copy the files from the below location based on the framework version of the application you are trying to automate,
-
 C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
 
 ### Configuring add-in based on your application framework version
@@ -128,135 +130,133 @@ C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\ &lt;Version&gt;
 C:\ProgramFiles\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion\
 
 ## Create, Record and Run the tests
-### Creating a new Test
-1. Open QTP by double-clicking the QuickTest Professional icon.
 
-       N>
-       The QuickTest Professional – Add-in Manager window is displayed.
-2. Select the WPF check box under the Add-in header. This ensures that WPF add-in is installed. Also, you need to check the Syncfusion add-in to detect the Syncfusion Controls. When it is not selected, you cannot access the Syncfusion controls.
+### Creating a new Test
+1.Open QTP by double-clicking the QuickTest Professional icon.
+
+N>
+The QuickTest Professional – Add-in Manager window is displayed.
+
+2.Select the WPF check box under the Add-in header. This ensures that WPF add-in is installed. Also, you need to check the Syncfusion add-in to detect the Syncfusion Controls. When it is not selected, you cannot access the Syncfusion controls.
 
 ![](uft_images/uft_img7.png)
 
-              QuickTest Professional - Add-In Manager
-3. Click OK.
+3.Click OK.
 
 N>
-       The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
+The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
 ![](uft_images/uft_img8.png)
 
-*Quick Test Professional – [Start Page]*
-4. Click the New Test icon in the Start Page.
+4.Click the New Test icon in the Start Page.
 
 ![](uft_images/uft_img9.png)
 
-*Quick Test Professional – [Start Page] showing New Test icon*
-5. A new test is created. You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
-6. Click Record in the toolbar to start the recording.
+5.A new test is created. You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
+6.Click Record in the toolbar to start the recording.
 
 ![](uft_images/uft_img10.png)
 
-*Quick Test Professional – [Test] Window showing Record tool*
 N>
-              Record and Run Settings dialog box opens.
+Record and Run Settings dialog box opens.
 
 ![](uft_images/uft_img11.png)
 
-*Record and Run Settings-Web tab*
-7. Select the Windows Application tab.
+7.Select the Windows Application tab.
 
 N>
-          The content under the tab is displayed.
+The content under the tab is displayed.
 
 ![](uft_images/uft_img12.png)
 
-*Record and Run Settings-Windows Applications*
-
 N>
-            The Record and run only option is selected by default.
-8. Select the following checkbox to ensure that only the applications opened by QuickTest and added applications are tested.
+The Record and run only option is selected by default.
+
+8.Select the following checkbox to ensure that only the applications opened by QuickTest and added applications are tested.
       1. Applications opened by Quick Test
       2. Applications opened via the Desktop (by the Window shell)
       3. Applications specified below
-9. To add an application for testing, click the + button in the Application details.
+9.To add an application for testing, click the + button in the Application details.
 
 N>
-      The Application Details dialog box opens.
+The Application Details dialog box opens.
 
 ![](uft_images/uft_img13.png)
 
-*Application Details*
-10. For Application field, browse and select the path of the application that has to be tested by clicking ![](uft_images/uft_img14.png)
+10.For Application field, browse and select the path of the application that has to be tested by clicking ![](uft_images/uft_img14.png)
 button.
-11. For working folder field, browse and select the path of the working folder by clicking ![](uft_images/uft_img15.png)
+11.For working folder field, browse and select the path of the working folder by clicking ![](uft_images/uft_img15.png)
 button.
-12. Select the Launch application check box, to launch the application immediately after clicking OK.
-13. Select Include descendant processes check box, to include all the processes that are descendant to the current process.
+12.Select the Launch application check box, to launch the application immediately after clicking OK.
+13.Select Include descendant processes check box, to include all the processes that are descendant to the current process.
 
 N>
-        Both Launch application and Include descendant processes check boxes are selected by default
-14. Click OK.
+Both Launch application and Include descendant processes check boxes are selected by default
+
+14.Click OK.
 
 N>
-        The path of the application and working folder are displayed in the Application details frame as     shown in the following screenshot.
+The path of the application and working folder are displayed in the Application details frame as     shown in the following screenshot.
 
 ![](uft_images/uft_img16.png)
 
-*Record and Run Settings with application location.*
-15. Click OK.
+15.Click OK.
 
 N>
 The recording starts. The application in the given path is opened as shown in the following screenshot.
 
 ![](uft_images/uft_img17.png)
 
-*Application using SfDataGrid Recording*
 ### Running a Test
 On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test:
-1. Click Run in the toolbar. The Run dialog box opens. The Results Location tab is selected by default.
+
+1.Click Run in the toolbar. The Run dialog box opens. The Results Location tab is selected by default.
 
 ![](uft_images/uft_img18.png)
 
-*Run dialog*
 ### Editing a Test
 The editing of a test can be done either in the Keyword view or in the Expert view. You can switch between these views by selecting the required tab at the bottom left of the QTP screen.
+
 ### Editing in Expert View
 This view is especially provided for the experts in VB Script. In the Expert view, the VB scripts are generated while recording. You can also manually write scripts to the existing scripts in this view. So, this view can be used as a tool for managing the testing process in a more controlled manner. You can add scripts to trigger events manually.
+
 The following image shows adding a script line to the Expert View pane.
 
 ![](uft_images/uft_img19.png)
 
-*Edit in Expert view*
 ### Editing in Keyboard View
 The keyword view is meant for people with no expertise in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown in the following screenshot:
 
 ![](uft_images/uft_img20.png)
 
-*Edit in Keyword view*
 ### Saving a Test
 Saving a test is as simple as saving any other document or picture. To save a test:
+
 1.Click the Save button in the toolbar. The Save Test dialog box opens.
 
 ![](uft_images/uft_img21.png)
 
-*Save Test Dialog*
 2.Select the location, to save the file from the Look in drop-down list. 
 3.Type the name of the file to be saved in the File name text box. 
 4.Click Save. 
 5.The test is saved.
+
 ### Running a Saved Test
-he tests that have been saved can be replayed later. For running such tests:
-Click Open on the toolbar. N> The Open Test dialog box opens with a list of saved tests.
+The tests that have been saved can be replayed later. For running such tests:
+1.Click Open on the toolbar.
+
+N> The Open Test dialog box opens with a list of saved tests.
 
 ![](uft_images/uft_img22.png)
 
-*Open Test dialog*
-1.Select the required test. 
-2.Click Open.
+2.Select the required test. 
+3.Click Open.
 
 N>
 The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
+
 ## Supported Controls
+
 ### SfDataGrid
 <table>
 <tr>
@@ -426,7 +426,6 @@ Int
 
 ![](uft_images/uft_img23.png)
 
-*SfDataGrid QTP Test*
 ### SfMulticolumnDropDownControl
 <table>
 <tr>
@@ -501,7 +500,6 @@ Void
 
 ![](uft_images/uft_img24.png)
 
-*SfMultiColumnDropDownControl QTP Test*
 ### SfDataPager
 <table>
 <tr>
@@ -542,7 +540,6 @@ Void
 
 ![](uft_images/uft_img25.png)
 
-*SfDataPager QTP Test*
 ### GridDataControl
 <table>
 <tr>
@@ -1178,7 +1175,6 @@ Void
 
 ![](uft_images/uft_img26.png)
 
-*GridDataControl QTP Test*
 ### GridTreeControl
 <table>
 <tr>
@@ -1271,7 +1267,6 @@ Void
 
 ![](uft_images/uft_img27.png)
 
-*GridTreeControl QTP Test*
 ### Grid Control
 <table>
 <tr>
