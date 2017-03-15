@@ -539,6 +539,77 @@ void dataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Show image in CheckBoxFilterControl instead of image path
+
+By default, in SfDataGrid image path is shown inside the CheckBoxFilterControl instead of image but you can show the image in CheckBoxFilterControl by setting [CheckBoxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CheckboxFilterControl~ItemTemplate.html)  as like below. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridTextColumn AllowEditing="False" HeaderText="Country" MappingName="ImageLink">
+                    <syncfusion:GridTextColumn.FilterPopupStyle>
+                        <Style TargetType="syncfusion:GridFilterControl">
+                            <Setter Property="CheckboxFilterStyle">
+                                <Setter.Value>
+                                    <Style TargetType="syncfusion:CheckboxFilterControl">
+                                        <Setter Property="Background" Value="Red"/>
+                                        <Setter Property="ItemTemplate">
+                                            <Setter.Value>
+                                                <DataTemplate>
+                                                    <CheckBox Margin="4"
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
+            Focusable="False"
+            Content="{Binding}"          
+            FontWeight="{Binding FontWeight,RelativeSource={RelativeSource Self}}"
+            Foreground="{Binding Foreground,RelativeSource={RelativeSource Self}}"
+            IsChecked="{Binding IsSelected,
+                                Mode=TwoWay}">
+                                                        <CheckBox.ContentTemplate>
+                                                            <DataTemplate>
+                                                                <Image Source="{Binding Path=ActualValue, Converter={StaticResource stringToImageConverter}}"
+                                                                       HorizontalAlignment="Left"
+                                                                       Height="25"/>
+                                                            </DataTemplate>
+                                                        </CheckBox.ContentTemplate>
+                                                    </CheckBox>
+                                                </DataTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </syncfusion:GridTextColumn.FilterPopupStyle>
+                    <syncfusion:GridTextColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Image Source="{Binding Path=ImageLink,Converter={StaticResource stringToImageConverter}}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:GridTextColumn.CellTemplate>
+</syncfusion:GridTextColumn>
+{% endhighlight %}
+{% highlight c# %}
+public class StringToImageConverter : IValueConverter
+{     
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        string imagename = value as string;
+        return new BitmapImage(new Uri(string.Format(@"..\..\Images\{0}", imagename), UriKind.Relative));
+    }
+        
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img16.png)
+
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
+
 ## Functionality Customization
 
 ### Loading the Text Filters for the column having Number or Date value as underlying type
@@ -665,6 +736,24 @@ void DataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 }
 {% endhighlight %}
 {% endtabs %}
+
+### Customize the FilterPopup size using GridFilterControl style
+
+You can customize the FilterPopup size using [FilterPopupHeight](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterPopupHeight.html) property by writing style of TargetType as GridFilterControl.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+        <Style TargetType="Syncfusion:GridFilterControl">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="FilterPopupHeight" Value="632"/>
+        </Style>
+</Window.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img17.png)
 
 ### Changing filter icon style after applying filters
 
