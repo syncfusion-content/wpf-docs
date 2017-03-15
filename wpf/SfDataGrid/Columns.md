@@ -146,6 +146,7 @@ You can let the SfDataGrid to create columns or you can manually define columns 
 ### Automatically generating columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html). Default value is `true`. 
+For custom data type you should enable the [AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsForCustomType.html) property as `true`. Default value is `false`.
 
 Columns are generated based on type of property. For example, [GridNumericColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, `GridTextColumn` will be added. 
 
@@ -1046,6 +1047,30 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 ![](Columns_images/Columns_img9.png)
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
+
+### Set Remaining width for a column when ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill 
+
+In SfDataGrid while setting SfDataGrid.ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill remaining width is applied to last column but you can apply the remaining width to specific column by using [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnSizer.html) property as like below.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name="datagrid"                                      
+                       ColumnSizer="AutoWithLastColumnFill"
+                       ItemsSource="{Binding OrderInfoCollection }">
+            <Syncfusion:SfDataGrid.Columns>
+                <Syncfusion:GridTextColumn MappingName="OrderID" HeaderText="OrderID" ColumnSizer="AutoLastColumnFill"/>
+                <Syncfusion:GridTextColumn MappingName="CustomerID" HeaderText="CustomerID" />
+                <Syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="CustomerName"/>
+                <Syncfusion:GridTextColumn MappingName="Country" HeaderText="Country"/>
+                <Syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="ShipCity"/>
+            </Syncfusion:SfDataGrid.Columns>
+</Syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.datagrid.ColumnSizer = GridLengthUnitType.AutoLastColumnFill;
+this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastColumnFill;
+{% endhighlight %}
+{% endtabs %}
 
 ### Refreshing ColumnSizer at runtime
 

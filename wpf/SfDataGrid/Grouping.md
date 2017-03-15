@@ -256,6 +256,22 @@ this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
 
+## Customize IndentColumn width 
+
+You can customize the width of IndentColumn in SfDataGrid by using [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~IndentColumnWidth.html) property as like below.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name="datagrid"                                      
+                       AllowGrouping="True"
+                       IndentColumnWidth="50"
+                       ShowGroupDropArea="True"
+                       ItemsSource="{Binding OrderInfoCollection }">
+{% endhighlight %}
+{% highlight c# %}
+this.datagrid.IndentColumnWidth = 50;
+{% endhighlight %}
+{% endtabs %}
 
 ## GroupDropArea customization
 
