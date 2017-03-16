@@ -774,3 +774,52 @@ public class GridFilterRowNumericRendererExt : GridFilterRowNumericRenderer
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Customizing GridFilterRowMultiSelectRenderer renderer 
+
+By default, in SfDataGrid ComboBox is loaded while enter into editmode in FilterRow but you can customize the GridFilterRowMultiSelectRenderer for display the combobox while FilterRow loading itself.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:GridTextColumn MappingName="OrderID" HeaderText="OrderID" FilterRowEditorType="MultiSelectComboBox"/>
+{% endhighlight %}
+{% highlight c# %}
+sfgrid.FilterRowCellRenderers.Remove("MultiSelectComboBox");
+sfgrid.FilterRowCellRenderers.Add("MultiSelectComboBox", new GridMultiSelectComboBoxRendererExt());
+public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRenderer
+{
+    public GridMultiSelectComboBoxRendererExt():base()
+    {
+        SupportsRenderOptimization = false;
+        IsEditable = false;
+    }
+    protected override void OnWireEditUIElement(Syncfusion.Windows.Tools.Controls.ComboBoxAdv uiElement)
+    {
+        base.OnWireEditUIElement(uiElement);
+        uiElement.PreviewMouseDown += uiElement_PreviewMouseDown;
+    }
+
+    void uiElement_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+    {
+        if (this.HasCurrentCellState && this.CurrentCellRendererElement == sender)
+            return;
+        else
+        {
+            var position = e.GetPosition(DataGrid.GetVisualContainer());
+            var rowcolindex = DataGrid.GetVisualContainer().PointToCellRowColumnIndex(position, false);
+            DataGrid.SelectionController.MoveCurrentCell(rowcolindex, true);
+        }
+    }
+
+    protected override void OnUnwireEditUIElement(Syncfusion.Windows.Tools.Controls.ComboBoxAdv uiElement)
+    {
+        base.OnUnwireEditUIElement(uiElement);
+        uiElement.PreviewMouseDown -= uiElement_PreviewMouseDown;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](FilterRow_images/FilterRow_img12)
+
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
