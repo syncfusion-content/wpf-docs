@@ -820,6 +820,6 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_img12)
+![](FilterRow_images/FilterRow_img12.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
