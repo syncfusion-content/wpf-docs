@@ -7,7 +7,7 @@ control: Testing
 documentation: ug
 ---
 # Overview
-UFT(formerly known as HP QuickTestProfessional(QTP)) is an automated testing software designed for testing various software applications and environments. Syncfusion provides QTP add-in that contains custom libraries, that help UFT or QTP to recognize Syncfusion controls. These custom libraries are built with the help of .NET add-in extensibility.
+UFT (formerly known as HP Quick Test Professional - QTP) is an automated testing software designed for testing various software applications and environments. Syncfusion provides QTP add-in that contains custom libraries, that help UFT or QTP to recognize Syncfusion controls. These custom libraries are built with the help of .NET add-in extensibility.
 
 ## Prerequisites and Compatibility
 
