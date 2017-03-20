@@ -58,23 +58,23 @@ The following example displays the MessageBox before the PageChanging,
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:ViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
-                           Grid.Row="0"
-                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-                               NumericButtonCount="10"
-                               Grid.Row="1"
-                               PageSize="16" 
-                               PageIndexChanging="sfDataPager_PageIndexChanging"
-                               Source="{Binding OrdersDetails}" />
-    </Grid>
+    <local:ViewModel/>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                       Grid.Row="0"
+                       ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+                           NumericButtonCount="10"
+                           Grid.Row="1"
+                           PageSize="16" 
+                           PageIndexChanging="sfDataPager_PageIndexChanging"
+                           Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% highlight c# %}
 private void sfDataPager_PageIndexChanging(object sender, Syncfusion.UI.Xaml.Controls.DataPager.PageIndexChangingEventArgs e)
