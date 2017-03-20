@@ -61,52 +61,34 @@ It does not display the AutoEllipsisButton.</td></tr>
 N> By Default AutoEllipsisMode is set to None.
 
 The following code example explains how to change the AutoEllipsisText.
-{% highlight html %}
 
-
+{% tabs %}
+{% highlight xaml %}
 <Window.DataContext>
-
-<local:ViewModel/>
-
-</Window.DataContext>
-
-<Grid>
-
+    <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
         <Grid.RowDefinitions>
-
             <RowDefinition Height="*" />
-
             <RowDefinition Height="Auto" />
-
         </Grid.RowDefinitions>
-
-<sfgrid:SfDataGrid AutoGenerateColumns="True" 
-
-                   ItemsSource="{Binding ElementName=sfDataPager,
-
-                   Path=PagedSource}"/>
-
-<datapager:SfDataPager x:Name="sfDataPager" 
-
-                         AutoEllipsisMode="After"
-
-                         NumericButtonCount="10"
-
-                         AutoEllipsisText="...etc" 
-
-                         PageSize="16" 
-
-                         Source="{Binding OrdersDetails}" />
-
-<Grid>
-
+        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                           Grid.Row="0"
+                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+        <datapager:SfDataPager x:Name="sfDataPager"
+                               Grid.Row="1"
+                               AutoEllipsisMode="After"
+                               NumericButtonCount="10"
+                               AutoEllipsisText="...etc" 
+                               PageSize="16" 
+                               Source="{Binding OrdersDetails}" />
+    </Grid>
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output for AutoEllipsisText changed as …etc.
 
 ![B:/Support/2015/April/24/Image/DataPager/figure9.png](Features_images/Features_img9.png)
-
-
 
 ## AccentBrush
 
@@ -117,101 +99,71 @@ AccentBrush properties are used to decorate the SfDataPager control with a solid
 * NumericButtonStyle – Property that is applied to the Style of Numeric Button. This is the Style type property. By default, it set to Null.
 
 
-
-
-
 The following code example explains how to apply the AccentBackground and AccentForeground properties for the SfDataPager control.
 
-
-{% highlight html %}
-
-
+{% tabs %}
+{% highlight xaml %}
 <Window.DataContext>
-
-  <local:Viewmodel/>
-
-</Window.DataContext>
-
-<sfgrid:SfDataGrid AutoGenerateColumns="True" 
-
-                   ItemsSource="{Binding ElementName=sfDataPager,
-
-                   Path=PagedSource}"/>
-
-<datapager:SfDataPager x:Name="sfDataPager"
-
-                         AccentBackground="#FF8CBF26"
-
-                         AccentForeground="White" 
-
-                         NumericButtonCount="10"      
-
-                         PageSize="16"
-
-                         Source="{Binding OrdersDetails}" />
-
-{% endhighlight  %}
+        <local:Viewmodel/>
+    </Window.DataContext>
+    <Grid>
+        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                           ItemsSource="{Binding ElementName=sfDataPager,Path =PagedSource}"/>
+        <datapager:SfDataPager x:Name="sfDataPager"
+                               AccentBackground="#FF8CBF26"
+                               AccentForeground="White" 
+                               NumericButtonCount="10"      
+                               PageSize="16"
+                               Source="{Binding OrdersDetails}"/>
+    </Grid>
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDataPager.
 
 ![B:/Support/2015/Pager.png](Features_images/Features_img10.png)
 
 
-
-
-
 The following code example explains how to use NumericButtonStyle in SfDataPager.
 
-
-{% highlight html %}
-
-
+{% tabs %}
+{% highlight xaml %}
 <Window.DataContext>
-
-  <local:Viewmodel/>
-
-</Window.DataContext>
-
-<Window.Resources>
-
-<Style TargetType="datapager:NumericButton">
-
-      <Setter Property="BorderBrush" Value="Blue"/>
-
-      <Setter Property="BorderThickness" Value="2"/>
-
-</Style>
-
-</Window.Resources>
-
-<sfgrid:SfDataGrid AutoGenerateColumns="True" 
-
-                   ItemsSource="{Binding ElementName=sfDataPager,
-
-        Path=PagedSource}"/>
-
-<datapager:SfDataPager x:Name="sfDataPager" 
-
-                         AutoEllipsisMode="Both"
-
-                         AccentBackground="DodgerBlue"  
-
-                         NumericButtonCount="10" PageCount="16
-
-                         Source="{Binding OrdersDetails}" />
-
-{% endhighlight  %}
+        <local:Viewmodel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <Style TargetType="datapager:NumericButton">
+            <Setter Property="BorderBrush" Value="Blue"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                           Grid.Row="0"
+                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+        <datapager:SfDataPager x:Name="sfDataPager"
+                               PageCount="16"
+                               Grid.Row="1"
+                               AutoEllipsisMode="Both"
+                               AccentBackground="DodgerBlue"  
+                               NumericButtonCount="10" 
+                               Source="{Binding OrdersDetails}"/>
+    </Grid>
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output of NumericButtonStyle.
 
 ![B:/Support/2015/April/24/Image/DataPager/figure11.png](Features_images/Features_img11.png)
 
 
-
 ## Display Modes
 
 The SfDataPager control allows you to choose the elements that are visible in the control. This can be achieved by using the DisplayMode property.The following table explains the PageDisplayMode enum values.
-
 
 
 <table>
