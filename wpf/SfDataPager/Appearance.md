@@ -66,23 +66,23 @@ The following code example explains how to change the AutoEllipsisText.
 {% highlight xaml %}
 <Window.DataContext>
     <local:ViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
-                           Grid.Row="0"
-                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager"
-                               Grid.Row="1"
-                               AutoEllipsisMode="After"
-                               NumericButtonCount="10"
-                               AutoEllipsisText="...etc" 
-                               PageSize="16" 
-                               Source="{Binding OrdersDetails}" />
-    </Grid>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                       Grid.Row="0"
+                       ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager"
+                           Grid.Row="1"
+                           AutoEllipsisMode="After"
+                           NumericButtonCount="10"
+                           AutoEllipsisText="...etc" 
+                           PageSize="16" 
+                           Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,18 +104,18 @@ The following code example explains how to apply the AccentBackground and Accent
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:Viewmodel/>
-    </Window.DataContext>
-    <Grid>
-        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
-                           ItemsSource="{Binding ElementName=sfDataPager,Path =PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager"
-                               AccentBackground="#FF8CBF26"
-                               AccentForeground="White" 
-                               NumericButtonCount="10"      
-                               PageSize="16"
-                               Source="{Binding OrdersDetails}"/>
-    </Grid>
+    <local:Viewmodel/>
+</Window.DataContext>
+<Grid>
+    <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                       ItemsSource="{Binding ElementName=sfDataPager,Path =PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager"
+                           AccentBackground="#FF8CBF26"
+                           AccentForeground="White" 
+                           NumericButtonCount="10"      
+                           PageSize="16"
+                           Source="{Binding OrdersDetails}"/>
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,30 +129,30 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:Viewmodel/>
-    </Window.DataContext>
-    <Window.Resources>
-        <Style TargetType="datapager:NumericButton">
-            <Setter Property="BorderBrush" Value="Blue"/>
-            <Setter Property="BorderThickness" Value="2"/>
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
-        </Grid.RowDefinitions>
-        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
-                           Grid.Row="0"
-                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager"
-                               PageCount="16"
-                               Grid.Row="1"
-                               AutoEllipsisMode="Both"
-                               AccentBackground="DodgerBlue"  
-                               NumericButtonCount="10" 
-                               Source="{Binding OrdersDetails}"/>
-    </Grid>
+    <local:Viewmodel/>
+</Window.DataContext>
+<Window.Resources>
+    <Style TargetType="datapager:NumericButton">
+        <Setter Property="BorderBrush" Value="Blue"/>
+        <Setter Property="BorderThickness" Value="2"/>
+    </Style>
+</Window.Resources>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+    </Grid.RowDefinitions>
+    <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                       Grid.Row="0"
+                       ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager"
+                           PageCount="16"
+                           Grid.Row="1"
+                           AutoEllipsisMode="Both"
+                           AccentBackground="DodgerBlue"  
+                           NumericButtonCount="10" 
+                           Source="{Binding OrdersDetails}"/>
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
