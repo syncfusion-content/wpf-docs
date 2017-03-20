@@ -118,14 +118,14 @@ C:\Program Files\HP\QuickTest Professional\dat\Extensibility\WPF\Syncfusion
 
 3. When your system does not contain **Syncfusion.CNG , SyncfusionTestObjects.XML and**
 **Syncfusion.SfGridQTP.WPF.dll**files in the above mentioned location, you have to copy the files from the below location based on the framework version of the application you are trying to automate,
-C:\Program Files\Syncfusion\Essential QTP\15.1.0.37\WPF\bin\
+C:\Program Files\Syncfusion\Essential QTP\{{ site.releaseversion }}\WPF\bin\
 
 ### Configuring add-in based on your application framework version
 
 By Default, Syncfusion QTP or UFT add-in configured based on the higher Framework version installed in your machine. if you have developed your application is lower framework version, you to configure the right version assemblies as below,
 
 1. Copy the custom add-in assemblies of Syncfusion from the below installed location based on the framework version of application you are trying to automate,
-C:\Program Files\Syncfusion\Essential QTP\15.1.0.37\WPF\bin\ &lt;Version&gt;
+C:\Program Files\Syncfusion\Essential QTP\{{ site.releaseversion }}\WPF\bin\ &lt;Version&gt;
 
 2. Paste the copied assemblies to below location, 
 C:\ProgramFiles\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion\
