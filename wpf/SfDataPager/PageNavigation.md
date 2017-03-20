@@ -55,68 +55,35 @@ When you are working with Paging, you may be in Edit mode or in CurrentPage. In 
 
 The following example displays the MessageBox before the PageChanging,
 
-{%tabs%}
-
-{% highlight html %}
-
-
-
+{% tabs %}
+{% highlight xaml %}
 <Window.DataContext>
-
-<local:ViewModel/>
-
-</Window.DataContext>
-
-<Grid>
-
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
         <Grid.RowDefinitions>
-
             <RowDefinition Height="*" />
-
             <RowDefinition Height="Auto" />
-
         </Grid.RowDefinitions>
-
-<sfgrid:SfDataGrid AutoGenerateColumns="True" 
-
-                   ItemsSource="{Binding ElementName=sfDataPager,
-
-                   Path=PagedSource}"/>
-
-<datapager:SfDataPager x:Name="sfDataPager" 
-
-                         NumericButtonCount="10"
-
-                         PageSize="16" 
-
-                         PageIndexChanging="sfDataPager_PageIndexChanging"
-
-                         Source="{Binding OrdersDetails}" />
-
-<Grid>
-
-
-{% endhighlight  %}
-{% highlight c# %}
-
-
-void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs args)
-
-  {       
-
-     MessageBoxResult result = MessageBox.Show("Do you want to change the page?", "Confirm", MessageBoxButton.YesNo);
-
-         if (result == MessageBoxResult.No)
-
-         {
-
-           args.Cancel = true;
-
-         }
-
-  }
-
-
+        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                           Grid.Row="0"
+                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+        <datapager:SfDataPager x:Name="sfDataPager" 
+                               NumericButtonCount="10"
+                               Grid.Row="1"
+                               PageSize="16" 
+                               PageIndexChanging="sfDataPager_PageIndexChanging"
+                               Source="{Binding OrdersDetails}" />
+    </Grid>
 {% endhighlight %}
-
-{%endtabs%}
+{% highlight c# %}
+private void sfDataPager_PageIndexChanging(object sender, Syncfusion.UI.Xaml.Controls.DataPager.PageIndexChangingEventArgs e)
+{
+    MessageBoxResult result = MessageBox.Show("Do you want to change the page?", "Confirm", MessageBoxButton.YesNo);
+    if (result == MessageBoxResult.No)
+    {
+        e.Cancel = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
