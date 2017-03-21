@@ -72,33 +72,33 @@ Following are the step-by-step instructions to add an AutoComplete control in a 
 
    {%highlight c#%}
 
-       AutoComplete AutoComplete1 = new AutoComplete();
+      AutoComplete AutoComplete1 = new AutoComplete();
 
-       List<String> ProductSource = new List<String>();
+      List<String> productSource = new List<String>();
 
-      customSource.Add("WPF");
+      productSource.Add("WPF");
 
-      customSource.Add("Chart");
+      productSource.Add("Chart");
 
-      customSource.Add("GridView");
+      productSource.Add("GridView");
 
-      customSource.Add("WF");
+      productSource.Add("WF");
 
-      customSource.Add("Xlsio");
+      productSource.Add("Xlsio");
 
-      customSource.Add("Business Intelligence");
+      productSource.Add("Business Intelligence");
 
-      customSource.Add("Tools");
+      productSource.Add("Tools");
 
-      customSource.Add("Silverlight");
+      productSource.Add("Silverlight");
 
-      customSource.Add("Schedule");
+      productSource.Add("Schedule");
 
-      customSource.Add("Mvc");
+      productSource.Add("Mvc");
 
-      customSource.Add("Pdf");
+      productSource.Add("Pdf");
 
-      this.AutoComplete1.CustomSource = ProductSource;
+      this.AutoComplete1.CustomSource = productSource;
 
    {%endhighlight%}
    
@@ -139,9 +139,9 @@ Following are the steps to create the AutoComplete by using VisualStudio in XAML
 
 
 
-         <local:ProductSource x:Key="Src"/>
+         <local:productSource x:Key="Src"/>
 
-          <syncfusion:AutoComplete x:Name="AutoComplete1" Source="Custom” CustomSource="{StaticResource Src}"/>
+         <syncfusion:AutoComplete x:Name="AutoComplete1" Source="Custom” CustomSource="{StaticResource Src}"/>
    ~~~
    {:.prettyprint}
     ![](Getting-Started_images/Getting-Started_img8.png)
@@ -210,7 +210,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 {% highlight xaml %}
 
 
-<local:ProductSource x:Key="Src"/>
+<local:productSource x:Key="Src"/>
 <syncfusion:AutoComplete x:Name="AutoComplete1" Source="Custom” CustomSource="{StaticResource Src}"/>
 {% endhighlight %}
 
@@ -218,13 +218,28 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 
 
-List<String> ProductSource = new List<String>();
-customSource.Add("Diagram");customSource.Add("Gauge");
-customSource.Add("GridView");customSource.Add("Chart");
-customSource.Add("Business Intelligence");
-customSource.Add("Schedule");customSource.Add("Grid");
-customSource.Add("DocIo");customSource.Add("XlsIo");
-customSource.Add("Pdf");
+List<String> productSource = new List<String>();
+
+productSource.Add("Diagram");
+
+productSource.Add("Gauge");
+
+productSource.Add("GridView");
+
+productSource.Add("Chart");
+
+productSource.Add("Business Intelligence");
+
+productSource.Add("Schedule");
+
+productSource.Add("Grid");
+
+productSource.Add("DocIo");
+
+productSource.Add("XlsIo");
+
+productSource.Add("Pdf");
+
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img14.png)
