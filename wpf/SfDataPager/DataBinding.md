@@ -21,21 +21,21 @@ The following code example explains how to use the Source and PagedSource proper
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:Viewmodel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <sfGrid:SfDataGrid AutoGenerateColumns="True" 
-                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-                               Grid.Row="1"
-                               NumericButtonCount="10"
-                               PageSize="16" 
-                               Source="{Binding OrdersDetails}" />
-    </Grid>
+    <local:Viewmodel/>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <sfGrid:SfDataGrid AutoGenerateColumns="True" 
+                       ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+                           Grid.Row="1"
+                           NumericButtonCount="10"
+                           PageSize="16" 
+                           Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,40 +76,40 @@ The following code explains how to use Source and PagedSource property in ListBo
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:ViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <ListBox ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Data.OrderID}" Grid.Column="0"/>
-                        <TextBlock Text="{Binding Data.CustomerName}" Grid.Column="1"/>
-                        <TextBlock Text="{Binding Data.Country}" Grid.Column="2"/>
-                        <TextBlock Text="{Binding Data.CustomerID}" Grid.Column="3"/>
-                        <TextBlock Text="{Binding Data.ShipCity}" Grid.Column="4"/>
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-                               Grid.Row="1"
-                               NumericButtonCount="10"
-                               PageSize="10" 
-                               Source="{Binding OrdersDetails}" />
-    </Grid>
+    <local:ViewModel/>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <ListBox ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Data.OrderID}" Grid.Column="0"/>
+                    <TextBlock Text="{Binding Data.CustomerName}" Grid.Column="1"/>
+                    <TextBlock Text="{Binding Data.Country}" Grid.Column="2"/>
+                    <TextBlock Text="{Binding Data.CustomerID}" Grid.Column="3"/>
+                    <TextBlock Text="{Binding Data.ShipCity}" Grid.Column="4"/>
+                </Grid>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+                           Grid.Row="1"
+                           NumericButtonCount="10"
+                           PageSize="10" 
+                           Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,23 +140,23 @@ The following steps help you to achieve an OnDemandLoading with the SfDataPager 
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:ViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <syncfusion:SfDataGrid x:Name="dataGrid"
-                         AllowResizingColumns="True"
-                         ColumnSizer="Star"
-                         ItemsSource="{Binding Path=PagedSource,ElementName=sfDataPager}"/>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-                         OnDemandLoading="OnDemandDataLoading" 
-                         PageCount="50"
-                         PageSize="16" 
-                         UseOnDemandPaging="True" />
-    </Grid>
+    <local:ViewModel/>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                           AllowResizingColumns="True"
+                           ColumnSizer="Star"
+                           ItemsSource="{Binding Path=PagedSource,ElementName=sfDataPager}"/>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+                           OnDemandLoading="OnDemandDataLoading" 
+                           PageCount="50"
+                           PageSize="16" 
+                           UseOnDemandPaging="True" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -185,18 +185,18 @@ The following code example explains how to use PageSize property in SfDataPager.
 {% tabs %}
 {% highlight xaml %}
 <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <syncfusion:SfDataGrid AutoGenerateColumns="True" 
-                               ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-							   Grid.Row="1"
-							   NumericButtonCount="10"
-							   PageSize="10" 
-							   Source="{Binding OrdersDetails}" />
-    </Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <syncfusion:SfDataGrid AutoGenerateColumns="True" 
+                           ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+						   Grid.Row="1"
+						   NumericButtonCount="10"
+						   PageSize="10" 
+						   Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -213,29 +213,29 @@ In general, the size of the page is defined in the PageSize property. In some ca
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:ViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="1" Grid.Row="1" Height="20" Margin="3,0" Orientation="Horizontal">
-            <ComboBox Name="combobox"  SelectedIndex="0" ItemsSource="{Binding ComboBoxitem}" />
-        </StackPanel>
-        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
-                           ItemsSource="{Binding ElementName=sfDataPager,Path =PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-                               AccentBackground="DodgerBlue"
-                               NumericButtonCount="10"
-                               Grid.Row="1"
-                               PageSize="{Binding Path =SelectedValue,ElementName=combobox}"
-                               Source="{Binding OrdersDetails}" />
-    </Grid>
+    <local:ViewModel/>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+    <StackPanel Grid.Column="1" Grid.Row="1" Height="20" Margin="3,0" Orientation="Horizontal">
+        <ComboBox Name="combobox"  SelectedIndex="0" ItemsSource="{Binding ComboBoxitem}" />
+    </StackPanel>
+    <sfgrid:SfDataGrid AutoGenerateColumns="True" 
+                       ItemsSource="{Binding ElementName=sfDataPager,Path =PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+                           AccentBackground="DodgerBlue"
+                           NumericButtonCount="10"
+                           Grid.Row="1"
+                           PageSize="{Binding Path =SelectedValue,ElementName=combobox}"
+                           Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 

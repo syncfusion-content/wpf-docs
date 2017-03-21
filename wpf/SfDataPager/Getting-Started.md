@@ -189,16 +189,16 @@ public class ViewModel
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:ViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-							   Grid.Row="1"
-							   AccentBackground="DodgerBlue"
-							   NumericButtonCount="5"
-							   PageSize="5" 
-							   Source="{Binding OrderInfoCollection}" />
-    </Grid>
+    <local:ViewModel/>
+</Window.DataContext>
+<Grid>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+						   Grid.Row="1"
+						   AccentBackground="DodgerBlue"
+						   NumericButtonCount="5"
+						   PageSize="5" 
+						   Source="{Binding OrderInfoCollection}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -207,21 +207,21 @@ public class ViewModel
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-        <local:Viewmodel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <sfGrid:SfDataGrid AutoGenerateColumns="True" 
-						   ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
-        <datapager:SfDataPager x:Name="sfDataPager" 
-							   Grid.Row="1"
-							   NumericButtonCount="10"
-							   PageSize="10" 
-							   Source="{Binding OrdersDetails}" />
-    </Grid>
+    <local:Viewmodel/>
+</Window.DataContext>
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <sfGrid:SfDataGrid AutoGenerateColumns="True" 
+					   ItemsSource="{Binding ElementName=sfDataPager,Path=PagedSource}"/>
+    <datapager:SfDataPager x:Name="sfDataPager" 
+						   Grid.Row="1"
+						   NumericButtonCount="10"
+						   PageSize="10" 
+						   Source="{Binding OrdersDetails}" />
+</Grid>
 {% endhighlight %}
 {% endtabs %}
 
