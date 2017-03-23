@@ -73,7 +73,7 @@ PDF viewer printer settings allows scaling PDF pages to shrink or enlarge while 
 
 ### Actual Size
 
-Actual size is the default value of print size option in printer settings,. This prints the loaded PDF document without any scaling factors. The pages that do not fit on the paper will be cropped. The following code example illustrates how to print the document in Actual Size.
+Actual size is the default value of print size option in printer settings. This prints the loaded PDF document without any scaling factors. The pages that do not fit on the paper will be cropped. The following code example illustrates how to print the document in Actual Size.
 
 {% tabs %}
 {% highlight c# %}
