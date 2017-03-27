@@ -96,7 +96,7 @@ dataGrid.Print();
 ### Print with StackedHeaders
 
 SfDataGrid provides support to print the StackedHeaders by setting the [PrintSettings.CanPrintStackedHeaders](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~CanPrintStackedHeaders.html) as ‘true’.
-C#
+
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.PrintSettings.CanPrintStackedHeaders = true;
