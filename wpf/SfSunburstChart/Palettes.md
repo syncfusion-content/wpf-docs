@@ -2,7 +2,7 @@
 
 layout: post
 title: Palettes of Sunburst.
-description:This section explains how to change the appearance of the SunburstChart.
+description: This section explains how to change the appearance of the SunburstChart.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
