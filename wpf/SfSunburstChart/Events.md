@@ -2,7 +2,7 @@
 
 layout: post
 title: Events of Sunburst.
-description:This section explains about the events used in the SunburstChart.
+description: This section explains about the events used in the SunburstChart.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
