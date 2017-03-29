@@ -2,7 +2,7 @@
 
 layout: post
 title: Legend of Sunburst.
-description:It is used to dispaly the information about the segment.
+description: It is used to dispaly the information about the segment.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
