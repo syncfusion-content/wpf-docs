@@ -1761,10 +1761,10 @@ ItemsSource for DetailsViewDataGrid is populated from the DataContext of parent 
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
                        ItemsSource="{Binding Source}"                              
-                       LiveDataUpdateMode="AllowChildViewUpdate">
+                       LiveDataUpdateMode="AllowChildViewUpdate,AllowDataShaping">
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowChildViewUpdate;
+this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowChildViewUpdate | LiveDataUpdateMode.AllowDataShaping;
 {% endhighlight %}
 {% endtabs %}
 
