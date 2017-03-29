@@ -148,7 +148,7 @@ You can calculate the Caption and Group summary on-demand by setting [SfDataGrid
                        ItemsSource="{Binding OrderInfoCollection }">
 {% endhighlight %}
 {% highlight c# %}
-this.sfDataGrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary;
+this.datagrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary | CalculationMode.OnDemandGroupSummary;
 {% endhighlight %}
 {% endtabs %}
 
