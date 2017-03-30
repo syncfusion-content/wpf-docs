@@ -113,6 +113,54 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endtabs %}
 
+## Set Icon for RibbonWindow
+
+* Icon of the RibbonWindow can be set using the property named `Office2010Icon`. Please refer to the below code.
+
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow
+  
+    x:Class="WPFRibbon.MainWindow"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+   
+    xmlns:local="clr-namespace:WPFRibbon"
+   
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+    xmlns:sfSkinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    
+    Title="MainWindow"
+    
+    Office2010Icon="Assets/New Microsoft.png"
+   
+    sfSkinManager:SfSkinManager.VisualStyle="Office2016White"
+    
+    mc:Ignorable="d">
+
+<Grid>
+
+<syncfusion:Ribbon x:Name="_ribbon"/>
+
+</Grid>
+
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted_images/GettingStarted_img18.jpg)
 
 ## Set Visual Styles
 
@@ -306,11 +354,14 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add RibbonButton
 
-`RibbonButton` provides functionalities like normal Button. It can place inside the RibbonBar. Here, "New" RibbonBar holds a `RibbonButton` with a caption as "New Email" using its `Label` property. It also provides `SizeForm` Property for different sizes.
+`RibbonButton` provides functionalities like normal Button. It can place inside the RibbonBar. Here, "New" RibbonBar holds a `RibbonButton` with a caption as "New Email" using its `Label` property.It also provides `SizeForm` property for different sizes. 
+
+If the value of `SizeForm` is large,then image of 16 * 16 size has been expanded to 32 * 32 automatically. Similarly,image of 32 * 32 has been compressed to     16 * 16 if `SizeForm` is ExtraSmall.    
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">                    
 
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
@@ -400,6 +451,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![](GettingStarted_images/GettingStarted_img4.jpg)
 
+N> Image of any size has been used for `RibbonButton` and also it supports image of all formats.
 
 ## Add DropDownButton
 
