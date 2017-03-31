@@ -2,7 +2,7 @@
 
 layout: post
 title: Selection behavior of Sunburst.
-description:This section explains the selection behavior of the SunburstChart.
+description: This section explains the selection behavior of the SunburstChart.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug

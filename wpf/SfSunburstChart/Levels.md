@@ -2,7 +2,7 @@
 
 layout: post
 title: Levels of Sunburst.
-description:This section explains the hierarchical level of the SunburstChart.
+description: This section explains the hierarchical level of the SunburstChart.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
