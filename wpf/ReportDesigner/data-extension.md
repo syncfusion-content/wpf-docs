@@ -1,3 +1,12 @@
+---
+layout: post
+title: Data Extension | ReportDesigner | wpf | Syncfusion
+description: data extension
+platform: wpf
+control: Report Designer
+documentation: ug
+---
+
 ## Data Source Extension
 
 Data source extension is to provide the additional data source supports using ADO.NET providers which is not available in built-in of Report Designer.
