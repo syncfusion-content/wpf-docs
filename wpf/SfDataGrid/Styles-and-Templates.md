@@ -551,9 +551,9 @@ The appearance of AddNewRow can customized by writing style of TargetType [AddNe
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
-    <Style TargetType="syncfusion:AddNewRowControl">
-        <Setter Property="Foreground" Value="DarkBlue"/>
-        <Setter Property="FontWeight" Value="Bold"/>
+    <Style  TargetType="Syncfusion:AddNewRowControl">
+        <Setter Property="AddNewRowText" Value="Enter value to add new row"/>
+        <Setter Property="FontWeight" Value="Bold"/>        
     </Style>
 </Window.Resources>
 
