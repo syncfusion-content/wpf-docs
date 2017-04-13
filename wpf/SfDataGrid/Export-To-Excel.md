@@ -230,22 +230,6 @@ if (sfd.ShowDialog() == true)
 {% endhighlight %}
 {% endtabs %}
 
-### Save as CSV
-
-You can save exported workbook as CSV by using `SaveAs` method.
-
-{% tabs %}
-{% highlight c# %}
-var options = new ExcelExportingOptions();
-options.ExcelVersion = ExcelVersion.Excel2013;
-var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-var workBook = excelEngine.Excel.Workbooks[0];
-workBook.SaveAs("Sample.csv", ",");
-{% endhighlight %}
-{% endtabs %}
-
-Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
-
 ## Opening exported excel without saving
 
 You can open the exported workbook without saving by using [SfSpreadsheet](http://help.syncfusion.com/wpf/sfspreadsheet) control.
@@ -392,6 +376,22 @@ var workBook = excelEngine.Excel.Workbooks[0];
 workBook.SaveAsXml("Sample.xml", ExcelXmlSaveType.MSExcel);
 {% endhighlight %}
 {% endtabs %}
+
+## Export to CSV
+
+You can save exported workbook as CSV by using `SaveAs` method.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+options.ExcelVersion = ExcelVersion.Excel2013;
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+var workBook = excelEngine.Excel.Workbooks[0];
+workBook.SaveAs("Sample.csv", ",");
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
 
 ## Row Height and Column Width customization 
 
