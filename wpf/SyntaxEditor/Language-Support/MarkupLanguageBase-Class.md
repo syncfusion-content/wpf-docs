@@ -3,7 +3,7 @@ layout: post
 title: MarkupLanguageBase Class of the Edit Control for WPF
 description: MarkupLanguageBase Class of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Read Only options of the Edit Control for WPF
 description: Read Only options of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 
