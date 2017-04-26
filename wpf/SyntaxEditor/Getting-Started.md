@@ -3,7 +3,7 @@ layout: post
 title: Getting Started documentation of the Edit control for WPF
 description: Getting Started documentation of the Edit control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

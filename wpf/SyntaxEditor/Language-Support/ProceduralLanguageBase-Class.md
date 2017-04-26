@@ -3,7 +3,7 @@ layout: post
 title: ProceduralLanguageBase Class of the Edit Control for WPF
 description: ProceduralLanguageBase Class of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

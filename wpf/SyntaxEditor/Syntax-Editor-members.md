@@ -3,7 +3,7 @@ layout: post
 title: Deals with edit control members of the Edit Control for WPF
 description: Explains about edit control members of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

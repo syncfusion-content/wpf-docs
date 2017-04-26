@@ -3,7 +3,7 @@ layout: post
 title: Supported languages of the Edit Control for WPF
 description: Supported languages Class of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

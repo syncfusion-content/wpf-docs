@@ -3,7 +3,7 @@ layout: post
 title: Find and Replace support of the Edit Control for WPF
 description: Find and Replace support of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

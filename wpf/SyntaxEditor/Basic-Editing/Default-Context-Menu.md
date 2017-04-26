@@ -3,7 +3,7 @@ layout: post
 title: Default ContextMenu of the Edit Control for WPF
 description: Default ContextMenu of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 
