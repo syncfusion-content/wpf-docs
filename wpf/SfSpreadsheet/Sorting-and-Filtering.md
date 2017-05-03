@@ -9,11 +9,11 @@ documentation: ug
 
 # Sorting and Filtering
 
-This section explains about filtering operations in the SfSpreadsheet
+This section explains about sorting and filtering functionalities in the SfSpreadsheet.
 
 ## Filtering
 
-By default, Filtering support will be enabled in the SfSpreadsheet, but if you want to disable the Filtering in SfSpreadsheet, set the __**AllowFiltering**__ property to be **false** in the Spreadsheet Loaded event.  
+By default, Filtering support will be enabled in the SfSpreadsheet, but if you want to disable the Filtering in SfSpreadsheet, set the `AllowFiltering` property to be false in the Spreadsheet Loaded event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -27,11 +27,11 @@ void spreadsheet_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-## Programmatic Sorting and Filtering feature
+## Programmatic Sorting and Filtering
 
 ### Sorting 
 
-Programmatic [sorting](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting "") can perform in spreadsheet based on cell values by using XlsIO’s **WorkbookLoaded** Event.
+Programmatic sorting can perform while importing and loading the workbook in to spreadsheet by using the spreadsheet’s `WorkbookLoaded` Event.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 ### Filtering 
 
-Programmatic Auto [Filtering](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering "") can able to perform in Spreadsheet by using XlsIO’s **WorkbookLoaded** Event.
+Programmatic Auto Filtering can perform while importing and loading the workbook in to spreadsheet by using the spreadsheet’s `WorkbookLoaded` Event.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,23 +71,24 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
+For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting "") UG documentation.
+
 ## Unsupported Features
 
-1. SfSpreadsheet does not have support for **Table** **Filtering**.
-2. SfSpreadsheet does not have support for **Multi** **Column** **Sorting**.
-3. SfSpreadsheet does not have support for **Advanced** **Filtering**.
+Currently SfSpreadsheet does not have support for following features.
+
+* Advanced filtering
+* Table filtering
+* Multi-column sorting
 
 ## Limitations
 
 ### Sorting
 
-1. Sort Ascending and Sort Descending label only displayed in the filter popup for the seamless performance while opening the filter popup in the spreadsheet.
-
-2. Sort Ascending or Sort Descending is not determined in the filter popup from the imported excel sheet as Excel. Because XlsIO not maintained the sorted order of the column.
-
-3. FilterToggleButton state not changed to Sort Ascending or Sort Descending when perform programmatic sorting using XlsIO.
+* Sort Ascending and Sort Descending label only displayed in the spreadsheet filter popup instead of display the Sort Smallest to Largest, Sort Largest to Smallest label for numeric values, Sort A to Z, Sort Z to A label for string values, Sort Oldest to Newest, Sort Newest to Oldest label for date values. Because maintaining the seamless performance while opening the filter popup in the spreadsheet.
+* Sort Ascending or Sort Descending order is not checked in the filter popup while importing the excel sheet as excel. Because XlsIO does not maintain the sorted order of the columns.
 
 ### Filtering
 
-    Auto filtered columns in the entire sheet has been cleared even if cleared the filter from any single column of the imported excel sheet. Because when import the sheet last Auto Filtered column could not maintained in the XlsIO. Hence, right most Auto Filtered column considered as last Auto filtered column in the spreadsheet.
-
+* Auto Filtered columns in the entire sheet has been cleared even if cleared the filter from any single column of the imported excel sheet. Because XlsIO does not maintain Auto Filter applied order.
+* While importing the excel sheets, right most filtered column considered as a last Auto Filtered column. Hence checked and unchecked items only displayed for the column. Because XlsIO does not maintain the Auto Filter applied order.
