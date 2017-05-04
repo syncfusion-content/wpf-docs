@@ -3,7 +3,7 @@ layout: post
 title: Deals with Expand-Collapse support Provided by Edit Control
 description: Deals with Expand-Collapse support Provided by Edit Control
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

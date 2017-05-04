@@ -203,4 +203,41 @@ DockingManager.SetFloatingWindowRect(Content1, New Rect(200, 200, 200, 200))
 {% endtabs %}
 ![](FloatingWindow_images/FloatingWindow_img5.jpeg)
 
+## Snapping Float window
 
+Float window can be snapped with the edge of another float window and moving all together in `DockingManager`. To enable snapping window feature for the Float window, set `AllowSnap` for the specific child as `True` and set `EnableSnappingFloatWindow` as `True` in `DockingManager`. By default, its value is `False`
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager  EnableSnappingFloatWindow="True">
+  <ContentControl x:Name="Dock1" syncfusion:DockingManager.Header="Dock1"
+                                 syncfusion:DockingManager.AllowSnap="True"/>
+  <ContentControl x:Name="Dock2" syncfusion:DockingManager.Header="Dock2"
+                                 syncfusion:DockingManager.AllowSnap="True"/>
+  <ContentControl x:Name="Dock3" syncfusion:DockingManager.Header="Dock3"
+                                 syncfusion:DockingManager.AllowSnap="True"/>
+  <ContentControl x:Name="Dock4" syncfusion:DockingManager.Header="Dock4"
+                                 syncfusion:DockingManager.AllowSnap="True"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![](FloatingWindow_images/FloatingWindow_img6.jpeg)
+
+We can get the snapped windows collection for specific float child using `GetSnappedWindows` method.
+
+{% tabs %}
+
+{% highlight C# %}
+
+DockingManager.GetSnappedWindows(Dock1); 
+
+{% endhighlight %}
+
+{% endtabs %}

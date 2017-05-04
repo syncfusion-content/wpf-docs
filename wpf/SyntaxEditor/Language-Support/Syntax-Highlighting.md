@@ -3,7 +3,7 @@ layout: post
 title: Syntax Highlighting of the Edit Control for WPF
 description: Syntax Highlighting of the Edit Control for WPF
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 

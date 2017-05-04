@@ -3,7 +3,7 @@ layout: post
 title: Deals with how to drag and drop selected text in the Edit control
 description: Deals with how to drag and drop selected text in the Edit control
 platform: wpf
-control: Edit Control
+control: Syntax Editor
 documentation: ug
 ---
 
