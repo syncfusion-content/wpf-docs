@@ -85,10 +85,10 @@ Currently SfSpreadsheet does not have support for following features.
 
 ### Sorting
 
-* Sort Ascending and Sort Descending label only displayed in the spreadsheet filter popup instead of display the Sort Smallest to Largest, Sort Largest to Smallest label for numeric values, Sort A to Z, Sort Z to A label for string values, Sort Oldest to Newest, Sort Newest to Oldest label for date values. Because maintaining the seamless performance while opening the filter popup in the spreadsheet.
-* Sort Ascending or Sort Descending order is not checked in the filter popup while importing the excel sheet as excel. Because XlsIO does not maintain the sorted order of the columns.
+* In Microsoft Excel, sorting label should be varied in filter popup based on the type of values in a column (For e.g, "Sort Smallest to Largest" for numeric values, "Sort A to Z" for string values, etc.). But in Spreadsheet, sort label should not be varied based on values due to improve the loading performance of filter popup.
+* Sort Ascending or Sort Descending label is not checked in the filter popup, if the column is sorted in Microsoft Excel. Because currently XlsIO do not have support to fetch the sorted order while importing the workbook.
 
 ### Filtering
 
-* Auto Filtered columns in the entire sheet has been cleared even if cleared the filter from any single column of the imported excel sheet. Because XlsIO does not maintain Auto Filter applied order.
-* While importing the excel sheets, right most filtered column considered as a last Auto Filtered column. Hence checked and unchecked items only displayed for the column. Because XlsIO does not maintain the Auto Filter applied order.
+* If the filter applied in Microsoft Excel, then the filter will be cleared from all columns while clearing the filter from any one column Because unable to fetch the filtering order.
+* While importing the workbook, checked and unchecked items are only displayed in the right most filtered column. Because unable to fetch the filtering order.
