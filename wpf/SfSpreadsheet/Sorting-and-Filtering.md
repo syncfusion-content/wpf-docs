@@ -13,25 +13,29 @@ This section explains about sorting and filtering functionalities in the SfSprea
 
 ## Filtering
 
-By default, Filtering support will be enabled in the SfSpreadsheet, but if you want to disable the Filtering in SfSpreadsheet, set the `AllowFiltering` property to be false in the Spreadsheet Loaded event.  
+By default, Filtering support will be enabled in the SfSpreadsheet, but if you want to disable the Filtering in SfSpreadsheet, set the `AllowFiltering` property of the `SfSpreadsheet` to be false.
 
 {% tabs %}
-{% highlight c# %}
 
-void spreadsheet_Loaded(object sender, RoutedEventArgs e)
-{
-    spreadsheet.AllowFiltering = false;
-}
+{% highlight xaml %}
+
+    <syncfusion:SfSpreadsheet x:Name="spreadsheet" AllowFiltering="False"/>
 
 {% endhighlight %}
-{% endtabs %}
 
+{% highlight c# %}
+
+spreadsheet.AllowFiltering = false;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Programmatic Sorting and Filtering
 
 ### Sorting 
 
-Programmatic sorting can perform while importing and loading the workbook in to spreadsheet by using the spreadsheet’s `WorkbookLoaded` Event.
+Programmatically sort the data while importing the workbook by using XlsIO in the `WorkbookLoaded` event of SfSpreadsheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +57,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 ### Filtering 
 
-Programmatic Auto Filtering can perform while importing and loading the workbook in to spreadsheet by using the spreadsheet’s `WorkbookLoaded` Event.
+Programmatically filter the data while importing the workbook by using XlsIO in the `WorkbookLoaded` event of SfSpreadsheet.
 
 {% tabs %}
 {% highlight c# %}
