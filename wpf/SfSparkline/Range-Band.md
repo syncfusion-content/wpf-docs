@@ -11,6 +11,8 @@ documentation: ug
 
 Range band feature used to highlight the particular mentioned range along Y axis.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfLineSparkline 
@@ -26,6 +28,27 @@ Range band feature used to highlight the particular mentioned range along Y axis
 </Syncfusion:SfLineSparkline >
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+	ItemsSource = new SparkViewModel().UsersList,
+
+	YBindingPath = "NoOfUsers",
+
+	BandRangeStart = 2000,
+
+	BandRangeEnd = -1000,
+
+	RangeBandBrush = new SolidColorBrush(Colors.Green)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the snapshot for range band,
 

@@ -30,11 +30,23 @@ Some of the predefined palettes include:
 
 Using the above palette you can apply a set of predefined brushes to surface chart as shown in the following code example. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfSurfaceChart Palette="Metro" />
 	
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfSurfaceChart chart = new SfSurfaceChart();
+
+chart.Palette = ChartColorPalette.Metro;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](surface_chart_images/surface_chart_img12.jpeg)
 
@@ -42,6 +54,8 @@ Using the above palette you can apply a set of predefined brushes to surface cha
 ### Applying Custom Brushes
 
 The custom palette option enables you to define your own color brushes for the Palette using ColorModel property as given in the following code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -76,5 +90,33 @@ The custom palette option enables you to define your own color brushes for the
 <chart:SfSurfaceChart />
 	
 {% endhighlight %}
+
+{% highlight c# %}
+
+ChartColorModel colorModel = new ChartColorModel();
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Blue));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Lime));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Yellow));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Blue));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Lime));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Yellow));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.OrangeRed));
+
+SfSurfaceChart chart = new SfSurfaceChart();
+
+chart.Palette = ChartColorPalette.Custom;
+
+chart.ColorModel = colorModel;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](surface_chart_images/surface_chart_img13.jpeg)

@@ -11,6 +11,8 @@ documentation: ug
 
 Markers are used to indicate the value point for line and area series, and we can customize with different template.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfLineSparkline 
@@ -24,6 +26,23 @@ Markers are used to indicate the value point for line and area series, and we ca
 </Syncfusion:SfLineSparkline >
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+	ItemsSource = new SparkViewModel().UsersList,
+
+	YBindingPath = "NoOfUsers",
+
+	MarkerVisibility = Visibility.Visible
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the snapshot for markers,
 

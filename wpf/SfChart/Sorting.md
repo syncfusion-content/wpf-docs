@@ -32,6 +32,8 @@ The following example illustrates a simple chart (without apply sorting):
 
 **Sorting x axis in ascending order**:
 
+{% tabs %}
+
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
 	
@@ -43,10 +45,39 @@ The following example illustrates a simple chart (without apply sorting):
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.X,
+
+    SortDirection = Direction.Ascending,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeri
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](sorting_chart_images/sorting_2.png)
 
 
 **Sorting x axis in descending order**:
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -60,10 +91,39 @@ The following example illustrates a simple chart (without apply sorting):
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.X,
+
+    SortDirection = Direction.Descending,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeri
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](sorting_chart_images/sorting_3.png)
 
 
 **Sorting y axis in ascending order**:
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -78,10 +138,39 @@ The following example illustrates a simple chart (without apply sorting):
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.Y,
+
+    SortDirection = Direction.Ascending,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeri
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](sorting_chart_images/sorting_4.png)
 
 
 **Sorting y axis in descending order**:
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -95,6 +184,33 @@ The following example illustrates a simple chart (without apply sorting):
 
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.X,
+
+    SortDirection = Direction.Descending,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeri
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](sorting_chart_images/sorting_5.png)
 
@@ -113,6 +229,8 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 **Sorting x axis in ascending order**
 
+{% tabs %}
+
 {% highlight xml %}
 
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X" Palette="AutumnBrights"
@@ -125,9 +243,40 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.X,
+
+    SortDirection = Direction.Ascending,
+
+    Palette = ChartColorPalette.AutumnBrights,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Position",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](sorting_chart_images/linearaxis_sort1.png)
 
 **Sorting x axis in descending order**
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -143,9 +292,40 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.X,
+
+    SortDirection = Direction.Descending,
+
+    Palette = ChartColorPalette.AutumnBrights,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Position",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](sorting_chart_images/linearaxis_sort2.png)
 
 **Sorting y axis in ascending order**
+
+{% tabs %}
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
@@ -160,9 +340,40 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.Y,
+
+    SortDirection = Direction.Ascending,
+
+    Palette = ChartColorPalette.AutumnBrights,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Position",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](sorting_chart_images/linearaxis_sort3.png)
 
 **Sorting y axis in descending order**
+
+{% tabs %}
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
@@ -176,6 +387,35 @@ The following example illustrates a simple chart having AutumnBrights palette (w
                          XBindingPath="Position"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    IsSortData = true,
+
+    SortBy = SortingAxis.Y,
+
+    SortDirection = Direction.Descending,
+
+    Palette = ChartColorPalette.AutumnBrights,
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Position",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(columnSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](sorting_chart_images/linearaxis_sort4.png)
 
