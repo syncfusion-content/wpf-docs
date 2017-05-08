@@ -31,44 +31,68 @@ The following steps explain how to create 3D charts.
 2. Choose Windows > Extensions > Syncfusion controls for WinRT XAML.
 3. Add the following namespace in your XAML page:
   
-   ~~~html
-   
-     xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
-  
-   ~~~ 
+{% highlight xaml %}
 
+ xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
+
+{% endhighlight %}
 
 4. Initialize the chart represented by the following class, Syncfusion.UI.Xaml.Charts.SfChart3D:
 
+{% tabs %}
 
-   ~~~html
-		<Syncfusion:SfChart3D>
+{% highlight xaml %}
 
-		</Syncfusion:SfChart3D>
-   ~~~
+<Syncfusion:SfChart3D>
+
+</Syncfusion:SfChart3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart3D chart3D = new SfChart3D();
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 5. Next, declare the primary axis and secondary axis:
 
-   ~~~html
+{% tabs %}
 
-		<Syncfusion:SfChart3D>
+{% highlight xaml %}
 
-		 <Syncfusion:SfChart3D.PrimaryAxis>
+<Syncfusion:SfChart3D>
 
-		       <Syncfusion:CategoryAxis3D/>
+	<Syncfusion:SfChart3D.PrimaryAxis>
 
-		  </Syncfusion:SfChart3D.PrimaryAxis>
+		  <Syncfusion:CategoryAxis3D/>
 
-		  <Syncfusion:SfChart3D.SecondaryAxis>
+	</Syncfusion:SfChart3D.PrimaryAxis>
 
-		       < Syncfusion:NumericalAxis3D/>
+	<Syncfusion:SfChart3D.SecondaryAxis>
 
-		  </Syncfusion:SfChart3D.SecondaryAxis>
+		  <Syncfusion:NumericalAxis3D/>
 
-		</Syncfusion:SfChart3D >
-		
-   ~~~	
+	</Syncfusion:SfChart3D.SecondaryAxis>
+
+</Syncfusion:SfChart3D >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart3D chart3D = new SfChart3D();
+
+chart3D.PrimaryAxis = new CategoryAxis3D();
+
+chart3D.SecondaryAxis = new NumericalAxis3D();
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Add Chart Series to Chart
 

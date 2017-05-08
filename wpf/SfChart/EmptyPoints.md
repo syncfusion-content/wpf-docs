@@ -49,6 +49,8 @@ This is an enum property having the following values:
 
 The following code examples shows how to display the empty points:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
@@ -67,6 +69,39 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](EmptyPoints_images/emptypoint_4.png)
 
@@ -74,6 +109,8 @@ ItemsSource="{Binding Fruits}" >
 Since the [`EmptyPointValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) as Zero by default, it will draw a line to 0 when we set [`ShowEmptyPoint`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) as True.
 
 The following code example shows the [`EmptyPointValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) as Average:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -95,6 +132,42 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_5.png)
 
 
@@ -112,6 +185,8 @@ This option fills an interior indicating the empty points and this custom brush 
 
 The following code example illustrates the use of [`EmptyPointStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#) and [`EmptyPointInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#):
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:ColumnSeries  ItemsSource="{Binding EmptyPointDatas}" Interior="#bcbcbc"
@@ -122,6 +197,29 @@ ShowEmptyPoints="True"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().EmptyPointDatas,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Value",
+
+    ShowEmptyPoints = true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_6.png)
 
 
@@ -130,6 +228,8 @@ N> This is the default value for [`EmptyPointStyle`](http://help.syncfusion.com/
 ### Symbol
 
 This option is used to add Symbol for the empty points as in the below code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -153,12 +253,52 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    EmptyPointStyle = EmptyPointStyle.Symbol,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_7.png)
 
 
 ### Symbol and Interior
 
 This option combines above two options, which draw a symbol with defined [`EmptyPointInterior`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#). The following code example shows the use of this value.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -184,6 +324,46 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    EmptyPointStyle = EmptyPointStyle.SymbolAndInterior,
+
+    EmptyPointInterior = new SolidColorBrush(Colors.Red),
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_8.png)
 
 
@@ -191,49 +371,84 @@ ItemsSource="{Binding Fruits}" >
 
 You can add any custom shape for the empty point symbol. The following code example shows how to add your custom shapes:
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+ <syncfusion:SfChart x:Name="chart">
 
-ShowEmptyPoints="True"     
+    <syncfusion:SfChart.Resources>
 
-EmptyPointValue="Average"
+        <DataTemplate x:Key="symbolTemplate">
 
-EmptyPointStyle="Symbol"
+            <Canvas>
 
-EmptyPointInterior="Red"
+                        <Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" >
 
-ItemsSource="{Binding Fruits}" >
+                            <Ellipse StrokeDashArray="1,1" Height="50" 
+                                     
+                                     Width="50" Stroke="Gray" StrokeThickness="2" 
+                                     
+                                     Margin="-15,-15,0,0" Fill="Transparent"/>
 
-<chart:LineSeries.EmptyPointSymbolTemplate>
+                            <Ellipse  StrokeDashArray="1,3" Height="35" Width="35"
+                                      
+                                      Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"
+                                      
+                                      Fill="LightGray"/>
 
-<DataTemplate>
+                        </Grid>
 
-<Canvas>
+             </Canvas>
 
-<Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" >
+        </DataTemplate>
 
-<Ellipse StrokeDashArray="1,1" Height="50" 
+     </syncfusion:SfChart.Resources>
 
-Width="50" Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"
+    <syncfusion:LineSeries XBindingPath="XValue" Interior="#BCBCBC" 
+                                   
+                           YBindingPath="YValue" ShowEmptyPoints="True"    
+                                   
+                           EmptyPointValue="Average" EmptyPointStyle="Symbol"
+                                   
+                           EmptyPointInterior="Red" ItemsSource="{Binding Data}"
+                                   
+                           EmptyPointSymbolTemplate="{StaticResource symbolTemplate}"/>
 
-Fill="Transparent"/>
-
-<Ellipse  StrokeDashArray="1,3" Height="35" 
-
-Width="35" Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"
-
-Fill="LightGray"/>
-
-</Grid>
-
-</Canvas>
-
-</DataTemplate>
-
-</chart:LineSeries.EmptyPointSymbolTemplate>
+</syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    EmptyPointStyle = EmptyPointStyle.Symbol,
+
+    EmptyPointInterior =new SolidColorBrush(Colors.Red),
+
+    EmptyPointSymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](EmptyPoints_images/emptypoint_9.png)
 

@@ -74,13 +74,21 @@ ValueChanged(Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar changed</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfChart x:Name="financialChart">            
 
   <chart:SfChart.PrimaryAxis>
 
-         <chart:CategoryAxis Name="axis1" ZoomPosition="{Binding ElementName=RangeNavigator, Path=ZoomPosition, Mode=TwoWay}" ZoomFactor="{Binding ElementName=RangeNavigator, Path=ZoomFactor, Mode=TwoWay}" Header="Date" LabelFormat="MMM/dd"  LabelTemplate="{StaticResource labelTemplate}" />                
+         <chart:CategoryAxis Name="axis1" ZoomPosition="{Binding ElementName=RangeNavigator, Path=ZoomPosition, Mode=TwoWay}" 
+         
+                             ZoomFactor="{Binding ElementName=RangeNavigator, Path=ZoomFactor, Mode=TwoWay}"
+
+                             Header="Date" LabelFormat="MMM/dd" 
+
+                             LabelTemplate="{StaticResource labelTemplate}" />                
 
   </chart:SfChart.PrimaryAxis>            
 
@@ -100,14 +108,82 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 
 	<chart:SfDateTimeRangeNavigator.Content>                   
 
-		<chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" >                    </chart:SfLineSparkline>                
+		<chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" > 
+
+        </chart:SfLineSparkline>                
 
 	</chart:SfDateTimeRangeNavigator.Content>            
 
 </chart:SfDateTimeRangeNavigator>
 
-
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    VerticalAlignment = VerticalAlignment.Top
+
+};
+
+SfLineSparkline sparkine = new SfLineSparkline()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    YBindingPath = "High"
+
+};
+
+rangeNavigator.Content = sparkine;
+
+Grid.SetColumn(rangeNavigator, 1);
+
+SfChart chart = new SfChart();
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    PlotOffset = 25,
+
+    Header = "Date",
+
+    LabelFormat = "MMM/dd",
+
+    ZoomPosition = rangeNavigator.ZoomPosition,
+
+    ZoomFactor = rangeNavigator.ZoomFactor
+
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+CandleSeries candleSeries=new CandleSeries ()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    High ="High", Low = "Low",
+
+    Open ="Open", Close ="Close",
+
+    XBindingPath ="Date",
+
+    Label ="CandleSeries"
+
+};
+
+chart.Series.Add(candleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following is the screenshot of SfDateTimeRangeNavigator selecting one Quarter of data.
 
 ![](Interactivity_images/Interactivity_img1.png)
@@ -149,34 +225,65 @@ SymbolTemplate</td><td>
 Used to define the style for symbol placed in the left or right thumb</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.RightThumbStyle>
+<syncfusion:SfDateTimeRangeNavigator x:Name="navigator">
 
-    <chart:ThumbStyle>
-    
-        <chart:ThumbStyle.SymbolTemplate>
-        
-            <DataTemplate>
-            
-                <Grid>
-                
-                    <Ellipse Height="40" Width="40"  Fill="Green" Stroke="Black"
-                         VerticalAlignment="Center" StrokeThickness="2">
-                    </Ellipse>
-                    
-                    <Ellipse Height="7" Width="7" Fill="White" VerticalAlignment="Center"/>
-                </Grid>
-                
-            </DataTemplate>
-            
-        </chart:ThumbStyle.SymbolTemplate>
-        
-    </chart:ThumbStyle>
-    
-</chart:SfDateTimeRangeNavigator.RightThumbStyle>
+    <syncfusion:SfRangeNavigator.Resources>
+
+        <DataTemplate x:Key="symbolTemplate">
+
+            <Grid>
+
+                <Ellipse Height="40" Width="40"  Fill="Green" Stroke="Black"
+                                 
+                                 VerticalAlignment="Center" StrokeThickness="2"/>
+
+                <Ellipse Height="7" Width="7" Fill="White" 
+
+                         VerticalAlignment="Center"/>
+                        
+            </Grid>
+
+        </DataTemplate>
+
+    </syncfusion:SfRangeNavigator.Resources>
+
+    <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+
+        <syncfusion:ThumbStyle SymbolTemplate="{StaticResource symbolTemplate}"/>
+
+    </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+
+</syncfusion:SfDateTimeRangeNavigator>
+
+{% highlight c# %}
 
 {% endhighlight  %}
+
+ThumbStyle thumbStyle = new ThumbStyle()
+{
+
+    SymbolTemplate = grid.Resources["symbolTemplate"] as DataTemplate
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    RightThumbStyle = thumbStyle
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following is the screenshot of SfDateTimeRangeNavigator with customized Right thumb.
 

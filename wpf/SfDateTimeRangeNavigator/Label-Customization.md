@@ -30,6 +30,8 @@ LabelsPosition</td><td>
 Gets or Sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" >
@@ -69,6 +71,46 @@ Gets or Sets string collection to set the label format for the navigator labels.
 </syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.PrimaryAxis = new CategoryAxis() { Visibility = Visibility.Collapsed };
+
+chart.SecondaryAxis = new NumericalAxis() { Visibility = Visibility.Collapsed };
+
+FastLineBitmapSeries candleSeries = new FastLineBitmapSeries()
+{
+
+	ItemsSource = new ViewModel().Power,
+
+	XBindingPath = "Date",
+
+	YBindingPath = "Value"
+
+};
+
+chart.Series.Add(candleSeries);
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+	ItemsSource = new ViewModel().Power,
+
+	XBindingPath = "Date"
+
+};
+
+rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Quarter });
+
+rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Month });
+
+rangeNavigator.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the screenshot of showing only Quarter and Month intervals in the Navigator
 
@@ -146,29 +188,60 @@ LabelsPosition</td><td>
 Used to position the upper and lower labels inside or outside of the label bar.</td></tr>
 </table>
 
- 
+ {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+<syncfusion:SfDateTimeRangeNavigator x:Name="navigator">
 
-	<chart:LabelBarStyle Background="Red" LabelHorizontalAlignment="Left">
+    syncfusion:SfRangeNavigator.Resources>
 
-		<chart:LabelBarStyle.LabelStyle>
+        <Style TargetType="TextBlock" x:Key="labelStyle">
 
-			<Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="10"/>
 
-				<Setter Property="FontSize" Value="10"/>
+        </Style>
+                
+    </syncfusion:SfRangeNavigator.Resources>
 
-			</Style>
+    <syncfusion:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
-		</chart:LabelBarStyle.LabelStyle>
+            <syncfusion:LabelBarStyle Background="Red" 
+                                          
+                                      LabelHorizontalAlignment="Left"  
+                                          
+                                      SelectedLabelStyle="{StaticResource labelStyle}"/>
 
-	</chart:LabelBarStyle>
+    </syncfusion:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
-</chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+</syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+LabelBarStyle barStyle = new LabelBarStyle()
+{
+
+	LabelHorizontalAlignment = HorizontalAlignment.Left,
+
+	Background = new SolidColorBrush(Colors.Red),
+
+	SelectedLabelStyle = grid.Resources["labelStyle"] as Style
+
+};
+
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+	HigherLevelBarStyle = barStyle
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the screenshot of Label HorizontalAlignment set to left.
 

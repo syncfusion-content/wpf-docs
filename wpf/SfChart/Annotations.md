@@ -21,7 +21,10 @@ The following annotations are supported in SfChart
 
 You can create an instance for any type of Annotation and add it to [`Annotations`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AnnotationCollection.html#) collection. Here for instance, the EllipseAnnotation is added.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <syncfusion:SfChart.Annotations>
 
 <syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
@@ -34,9 +37,26 @@ X2="3.6" Y2="1680" >
 
 </syncfusion:SfChart.Annotations>
 
+{% endhighlight %}
 
+{% highlight c# %}
+
+EllipseAnnotation annotation = new EllipseAnnotation()
+{
+
+    X1= 2.5, Y1 = 1500,
+
+    X2 = 3.6, Y2 = 1680,
+
+    Text = "Ellipse Annotation"
+
+};
+
+chart.Annotations.Add(annotation);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img1.jpeg)
 
@@ -56,6 +76,8 @@ To position based on the pixel values you have to set the CoordinateUnit as Pixe
 **Adding** **Annotation** **for** **MultipleAxes**
 
 You can also add annotation for a particular axis when there is multiple axes using [`XAxisName`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~XAxisName.html#) and [`YAxisName`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~YAxisName.html#) properties as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -149,12 +171,135 @@ syncfusion:ChartBase.Row="1"></syncfusion:NumericalAxis>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.PrimaryAxis = new CategoryAxis();
+
+chart.SecondaryAxis = new NumericalAxis();
+
+ChartBase.SetRow(chart.SecondaryAxis, 0);
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+
+    X1 = -0.5, Y1 = 500,
+
+    X2 = 3.5,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    StrokeThickness = 2,
+
+    LineCap = LineCap.Arrow,
+
+    CanDrag = true,
+
+    CanResize = true,
+
+    YAxisName = "FirstYAxis"
+
+};
+
+RectangleAnnotation annotation1 = new RectangleAnnotation()
+{
+
+    X1 = 0.6,Y1 = 1500,
+
+    X2 = 2.2,Y2=1800,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush(Colors.LightGray),
+
+    StrokeThickness = 2,
+
+    Opacity = 0.5,
+
+    CanDrag = true,
+
+    CanResize = true,
+
+    YAxisName = "SecondYAxis"
+
+};
+
+chart.Annotations.Add(annotation);
+
+chart.Annotations.Add(annotation1);
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+
+};
+
+ScatterSeries scatterSeries = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2010",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+
+};
+
+NumericalAxis axis = new NumericalAxis()
+{
+
+    Minimum = 0,
+
+    Maximum = 2000,
+
+    Interval = 500,
+
+    ShowGridLines = false,
+
+    TickLineSize = 5,
+
+    LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate,
+
+    MajorTickLineStyle = chart.Resources["lineStyle1"] as Style,
+
+    AxisLineStyle = chart.Resources["lineStyle2"] as Style
+
+};
+
+ChartBase.SetRow(axis, 1);
+
+scatterSeries.YAxis = axis;
+
+chart.Series.Add(columnSeries);
+
+chart.Series.Add(scatterSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img2.jpeg)
 
 
 ## Aligning the Annotation
 
 You can align the annotation horizontally and vertically using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -184,6 +329,35 @@ Opacity="0.5">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+RectangleAnnotation annotation = new RectangleAnnotation()
+{
+
+    X1 = 0.6, Y1 = 1500,
+
+    X2 = 2.2, Y2 = 1800,
+
+    HorizontalAlignment = HorizontalAlignment.Left,
+
+    VerticalAlignment = VerticalAlignment.Top,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush(Colors.LightGray),
+
+    Opacity = 0.5
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 In the following image you can see the rectangle annotation aligned to the top left of the chart area.
 
 ![](Annotation_images/Annotation_img3.jpeg)
@@ -196,6 +370,8 @@ In the following image you can see the rectangle annotation aligned to the top l
 ### Rotate the Text Annotation
 
 The [`Angle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation~Angle.html#) property is used to get or set the angle for rotating the Annotation. The following code example demonstrate the rotation feature for [`TextAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation.html#).
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -225,7 +401,34 @@ X1="3.5" Y1="500" >
 
 {% highlight C# %}
 
+SfChart chart = new SfChart();
+
+TextAnnotation annotation = new TextAnnotation()
+{
+
+    Text = "Annotation",
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    HorizontalAlignment = HorizontalAlignment.Stretch,
+
+    VerticalAlignment = VerticalAlignment.Stretch,
+
+    FontWeight = FontWeights.Bold,
+
+    Foreground = new SolidColorBrush(Colors.Black),
+
+    Angle = 90,
+
+    X1 = 3.5,Y1 = 500
+
+};
+
+chart.Annotations.Add(annotation);
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img4.jpeg)
 
@@ -235,6 +438,8 @@ X1="3.5" Y1="500" >
 SfChart provides you with an editing option for the text in any annotations. When text annotation is enabled editing, if we click the text annotation it switches to edit mode which provide easy way of customizing the text at run time.You can enable the editing mode in TextAnnotation using [`EnableEditing`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableEditing.html#) property.
 
 The following code example and screenshot demonstrate [`TextAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation.html#) while editing the text.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -263,6 +468,39 @@ X1="3.5" Y1="500" >
 </syncfusion:SfChart.Annotations>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+TextAnnotation annotation = new TextAnnotation()
+{
+
+    EnableEditing = true,
+    
+    Text = "Annotation",
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    HorizontalAlignment = HorizontalAlignment.Stretch,
+
+    VerticalAlignment = VerticalAlignment.Stretch,
+
+    FontWeight = FontWeights.Bold,
+
+    Foreground = new SolidColorBrush(Colors.Black),
+
+    Angle = 90,
+
+    X1 = 3.5,Y1 = 500
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img5.jpeg)
 
@@ -294,6 +532,8 @@ The following API’s are commonly used in all ShapeAnnotation:
 
 [`LineAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) by default will be visible. You can also collapse the visibility of the line annotation using [`ShowLine`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~ShowLine.html#) property.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:SfChart.Annotations>
@@ -322,12 +562,56 @@ X1="1.5" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+
+    ShowLine = false ,
+
+    StrokeThickness = 1,
+
+    FontWeight = FontWeights.Bold,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush(Colors.LightGray),
+
+    X1 = -0.5,Y1 = 1500,
+
+    X2= 3.5
+
+};
+
+VerticalLineAnnotation annotation1 = new VerticalLineAnnotation()
+{
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    StrokeThickness = 1,
+
+    X1 = 1.5
+
+};
+
+chart.Annotations.Add(annotation);
+
+chart.Annotations.Add(annotation1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img6.jpeg)
 
 
 **Displaying** **Axis** **Labels** **for** **LineAnnotation**
 
 [`VerticalLineAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#) and [`HorizontalLineAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) also displays the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~ShowAxisLabel.html#) property to true as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -361,6 +645,52 @@ X1="1.5" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+    
+    ShowLine = false ,
+
+    StrokeThickness = 1,
+
+    FontWeight = FontWeights.Bold,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush(Colors.LightGray),
+
+    X1 = -0.5,Y1 = 1500,
+
+    X2= 3.5,
+
+    ShowAxisLabel = true 
+
+};
+
+VerticalLineAnnotation annotation1 = new VerticalLineAnnotation()
+{
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    StrokeThickness = 1,
+
+    X1 = 1.5,
+
+    ShowAxisLabel = true 
+
+};
+
+chart.Annotations.Add(annotation);
+
+chart.Annotations.Add(annotation1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img7.jpeg)
 
 
@@ -368,49 +698,82 @@ X1="1.5" >
 
 You can also customize the default appearance of the axis label using [`AxisLabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~AxisLabelTemplate.html#) property as in the below code snippet.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>
+<syncfusion:SfChart x:Name="chart">
 
-<syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
+    <syncfusion:SfChart.Resources>
 
-Stroke="DarkGray"
+          <DataTemplate x:Key="labelTemplate">
 
-StrokeThickness="1"                                                     
+                    <Border BorderBrush="DarkGray" 
+                                    
+                            BorderThickness="1" CornerRadius="5" 
+                                    
+                            Background="LightGray">
 
-ShowAxisLabel="True"                                                                                                       
+                        <TextBlock Foreground="Black" 
+                                           
+                                   FontSize="11"
+                                           
+                                   Text="{Binding}"/>
 
-Y1="1500" >  
+                    </Border>
 
-<syncfusion:HorizontalLineAnnotation.AxisLabelTemplate>
+         </DataTemplate>
 
-<DataTemplate>
+    </syncfusion:SfChart.Resources>
 
-<Border BorderBrush="DarkGray" 
+  <syncfusion:SfChart.Annotations>
 
-BorderThickness="1" CornerRadius="5" 
+         <syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
+                                                     
+                                              Y1="1500" 
+                                                     
+                                              Stroke="DarkGray"
+                                                     
+                                              StrokeThickness="1"  
+                                                     
+                                              ShowAxisLabel="True"                                                                                                     
+                                                    
+                                              AxisLabelTemplate="{StaticResource labelTemplate}">
 
-Background="LightGray">
+        </syncfusion:HorizontalLineAnnotation>
 
-<TextBlock Foreground="Black" 
+  </syncfusion:SfChart.Annotations>
 
-FontSize="11"
-
-Text="{Binding}">                                    
-
-</TextBlock>
-
-</Border>
-
-</DataTemplate>
-
-</syncfusion:HorizontalLineAnnotation.AxisLabelTemplate>
-
-</syncfusion:HorizontalLineAnnotation>
-
-</syncfusion:SfChart.Annotations>
+</syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+
+    StrokeThickness = 1,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    X1 = -0.5,Y1 = 1500,
+
+    X2= 3.5,
+
+    ShowAxisLabel = true,
+
+    AxisLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img8.jpeg)
 
@@ -424,6 +787,8 @@ To display single headed arrow you can modify the line annotation by setting [`L
 ### Adding Text in ShapeAnnotation
 
 For all the annotations like Text, Shape, Image and Line, you can display the text for the annotation using Text property as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -441,6 +806,33 @@ X2="3.6" Y2="1680" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+EllipseAnnotation annotation = new EllipseAnnotation()
+{
+
+    StrokeThickness = 1,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    X1 = 2.5,Y1 = 1500,
+
+    X2= 3.6, Y2 = 1680,
+
+    Text = "Annotation",
+
+    Fill =new SolidColorBrush(Colors.LightBlue)
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img10.jpeg)
 
 
@@ -449,6 +841,8 @@ X2="3.6" Y2="1680" >
 The text alignment can be changed using [`HorizontalTextAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~HorizontalTextAlignment.html#) and [`VerticalTextAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~VerticalTextAlignment.html#) properties. 
 
 **EllipseAnnotation**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -470,10 +864,43 @@ X2="3.6" Y2="1680" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+EllipseAnnotation annotation = new EllipseAnnotation()
+{
+
+    StrokeThickness = 1,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    X1 = 2.5,Y1 = 1500,
+
+    X2= 3.6, Y2 = 1680,
+
+    Text = "Annotation",
+
+    Fill = new SolidColorBrush(Colors.LightBlue),
+
+    HorizontalTextAlignment = HorizontalAlignment.Center,
+
+    VerticalTextAlignment = VerticalAlignment.Center
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img11.jpeg)
 
 
 **Line** **Annotation**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -499,10 +926,41 @@ Y1="1500" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+
+    StrokeThickness = 1,
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    X1 = 2,Y1 = 1500,
+
+    X2= 3.5,
+
+    Text = "Line Annotation",
+
+    HorizontalTextAlignment = HorizontalAlignment.Center,
+
+    VerticalTextAlignment = VerticalAlignment.Bottom
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img12.jpeg)
 
 
 **Image** **Annotation**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -524,6 +982,31 @@ X1="2.5" Y1="1200" X2="3.6" Y2="1700" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ImageAnnotation annotation = new ImageAnnotation()
+{
+
+    Text = "Annotation",
+
+    HorizontalTextAlignment = HorizontalAlignment.Center,
+
+    VerticalTextAlignment = VerticalAlignment.Top,
+
+    X1 = 2.5, Y1 = 1200, X2 = 3.6, Y2 = "1700",
+
+    ImageSource = new BitmapImage(new Uri(@"demands.png", UriKind.RelativeOrAbsolute))
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img13.jpeg)
 
 N> [`HorizontalTextAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~HorizontalTextAlignment.html#) and [`VerticalTextAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~VerticalTextAlignment.html#) properties are not applicable for [`TextAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation.html#).
@@ -540,6 +1023,8 @@ SfChart allows customization of shape annotation using the following properties.
 * [`StrokeEndLineCap`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeEndLineCap.html#)- Represents the end line cap of the annotation stroke.
 * [`StrokeLineJoin`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeLineJoin.html#) - Represents the line join of the annotation outline.
 * [`StrokeMiterLimit`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeMiterLimit.html#) - Represents the limit on the ratio of the miter length to half of the annotation shape.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -575,6 +1060,45 @@ Y1="1500" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+
+    X1 = -0.5, X2 = 3.5,Y1 = 150,
+
+    StrokeThickness = 3,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Text = "Annotation",
+
+    Fill =new SolidColorBrush(Colors.LightGray),
+
+    HorizontalTextAlignment = HorizontalAlignment.Center,
+
+    VerticalTextAlignment = VerticalAlignment.Bottom,
+
+    StrokeDashArray = new DoubleCollection() { 1,1},
+
+    StrokeStartLineCap = PenLineCap.Square,
+
+    StrokeEndLineCap = PenLineCap.Square,
+
+    StrokeDashOffset = 1.5,
+
+    StrokeDashCap = PenLineCap.Round
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img14.jpeg)
 
 
@@ -588,6 +1112,8 @@ The following API’s are used in ImageAnnotation
 * [`ImageSource`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~ImageSource.html#)  - Represents the source from where the image must be added.
 * [`X2`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~X2.html#)- Represents the X2 Coordinate of the Annotation.****
 * [`Y2`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~Y2.html#)- Represents the Y2 Coordinate of the Annotation.****
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -625,10 +1151,80 @@ X1="0" Y1="1350" X2="1" Y2="1600" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ImageAnnotation annotation1 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@apple.png",UriKind.RelativeOrAbsolute)),
+
+    X1 = 3, Y1 = 1200, X2 = 4, Y2 = 1450
+
+};
+
+ImageAnnotation annotation2 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@Fruit-Banana-01.png", UriKind.RelativeOrAbsolute)),
+
+    X1 = 2, Y1 = 1000, X2 = 3, Y2 = 1400
+
+};
+
+ImageAnnotation annotation3 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@Fruit-Grapes.png", UriKind.RelativeOrAbsolute)),
+
+    X1 = 1, Y1 = 1350, X2 = 2, Y2 = 1750,
+
+    HorizontalAlignment = HorizontalAlignment.Center,
+
+    VerticalAlignment = VerticalAlignment.Center
+
+};
+
+ImageAnnotation annotation4 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@Fruit-Strawberry.png")),
+
+    X1 = 0, Y1 = 1350, X2 = 1, Y2 = 1600,
+
+    HorizontalAlignment = HorizontalAlignment.Center,
+
+    VerticalAlignment = VerticalAlignment.Center
+
+};
+
+chart.Annotations.Add(annotation1);
+
+chart.Annotations.Add(annotation2);
+
+chart.Annotations.Add(annotation3);
+
+chart.Annotations.Add(annotation4);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img15.jpeg)
 
 
 **Rotating** **the** **image** **in** **ImageAnnotation**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -672,6 +1268,82 @@ X1="0" Y1="1350" X2="0.5" Y2="1650" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ImageAnnotation annotation1 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@apple.png",UriKind.RelativeOrAbsolute)),
+
+    X1 = 3, Y1 = 1200, X2 = 4, Y2 = 1450,
+
+    Angle = -90
+    
+};
+
+ImageAnnotation annotation2 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@Fruit-Banana-01.png", UriKind.RelativeOrAbsolute)),
+
+    X1 = 2, Y1 = 1000, X2 = 3, Y2 = 1400,
+
+    Angle = -90
+
+};
+
+ImageAnnotation annotation3 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@Fruit-Grapes.png", UriKind.RelativeOrAbsolute)),
+
+    X1 = 1, Y1 = 1350, X2 = 2, Y2 = 1750,
+
+    HorizontalAlignment = HorizontalAlignment.Center,
+
+    VerticalAlignment = VerticalAlignment.Center,
+
+    Angle = -90
+
+};
+
+ImageAnnotation annotation4 = new ImageAnnotation()
+{
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ImageSource = new BitmapImage(new Uri("@Fruit-Strawberry.png")),
+
+    X1 = 0, Y1 = 1350, X2 = 1, Y2 = 1600,
+
+    HorizontalAlignment = HorizontalAlignment.Center,
+
+    VerticalAlignment = VerticalAlignment.Center,
+
+    Angle = -90
+
+};
+
+chart.Annotations.Add(annotation1);
+
+chart.Annotations.Add(annotation2);
+
+chart.Annotations.Add(annotation3);
+
+chart.Annotations.Add(annotation4);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img16.jpeg)
 
 
@@ -682,6 +1354,8 @@ X1="0" Y1="1350" X2="0.5" Y2="1650" >
 SfChart provides support to view the tooltip when mouse hovered on the annotation. To view to tooltip you have to enable the [`ShowToolTip`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~ShowToolTip.html#) property. By default for tooltip there is no content, you have to set the content for the tooltip in [`ToolTipContent`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~ToolTipContent.html#) property.
 
 The following code example demonstrates the default tooltip.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -701,12 +1375,39 @@ X2="3.6" Y2="1680">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+EllipseAnnotation annotation=new EllipseAnnotation ()
+{
+
+    X1 = 2.5, Y1 = 1500, X2 = 3.6, Y2 = 1680,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    ShowToolTip = true ,
+
+    ToolTipContent = "Annotation"
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img17.jpeg)
 
 
 **Position** **the** **Tooltip**
 
 Tooltip can be placed top, bottom, left or right side of the cursor using [`ToolTipPlacement`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~ToolTipPlacement.html#) property. The tooltip by default will be placed in Right. The following code example demonstrates the tooltip placed at the bottom.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -728,6 +1429,33 @@ X2="3.6" Y2="1680" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+EllipseAnnotation annotation=new EllipseAnnotation ()
+{
+
+    X1 = 2.5, Y1 = 1500, X2 = 3.6, Y2 = 1680,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    ShowToolTip = true ,
+
+    ToolTipContent = "Annotation",
+
+    ToolTipPlacement = ToolTipLabelPlacement.Bottom
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img18.jpeg)
 
 
@@ -735,43 +1463,74 @@ X2="3.6" Y2="1680" >
 
 The default appearance of the Tooltip can be changed using [`TooltipTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~ToolTipTemplate.html#) property as in the below code snippet.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>
+ <syncfusion:SfChart x:Name="chart">
 
-<syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
+     <syncfusion:SfChart.Resources>
 
-Stroke="DarkGray"                                                
+                <DataTemplate x:Key="tooltipTemplate">
 
-Fill="LightGray" ShowToolTip="True"                                                                                            
+                    <Border CornerRadius="5" BorderBrush="DarkGray" 
+                            
+                            BorderThickness="1">
 
-X2="3.6" Y2="1680">
+                        <TextBlock FontSize="11" Text="Annotation" 
+                                   
+                                   Foreground="Black"/>
 
-<syncfusion:EllipseAnnotation.ToolTipTemplate>
+                    </Border>
 
-<DataTemplate>
+                </DataTemplate>
 
-<Border CornerRadius="5" BorderBrush="DarkGray" 
+     </syncfusion:SfChart.Resources>
 
-BorderThickness="1">
+     <syncfusion:SfChart.Annotations>
 
-<TextBlock FontSize="11" Text="Annotation" 
+          <syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
+                                               
+                                         Stroke="DarkGray"                                                
+                                               
+                                         Fill="LightGray" ShowToolTip="True"                                                                                            
+                                               
+                                         X2="3.6" Y2="1680"
+                                         
+                                         ToolTipTemplate="{StaticResource tooltipTemplate}">
 
-Foreground="Black">                                    
+          </syncfusion:EllipseAnnotation>
 
-</TextBlock>
+    </syncfusion:SfChart.Annotations>
 
-</Border>
-
-</DataTemplate>
-
-</syncfusion:EllipseAnnotation.ToolTipTemplate>
-
-</syncfusion:EllipseAnnotation>
-
-</syncfusion:SfChart.Annotations>
+</syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+EllipseAnnotation annotation=new EllipseAnnotation ()
+{
+
+    X1 = 2.5, Y1 = 1500, X2 = 3.6, Y2 = 1680,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    ShowToolTip = true ,
+
+    ToolTipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img19.jpeg)
 
@@ -790,6 +1549,8 @@ The following API’s are used for dragging and resizing the annotation
 **Dragging** **the** **Annotation**
 
 The following code example demonstrates the dragging the rectangle annotation.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -813,10 +1574,37 @@ Opacity="0.5">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+RectangleAnnotation annotation=new RectangleAnnotation()
+{
+
+    X1 = 0.6, Y1 = 1500, X2 = 2.2, Y2 = 1800,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    CanDrag = true,
+
+    Opacity = 0.5
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img20.jpeg)
 
 
 You can set the [`DraggingMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~DraggingMode.html#) as Horizontal which will limit the annotation to be dragged only by horizontally as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -842,12 +1630,41 @@ Opacity="0.5">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+RectangleAnnotation annotation=new RectangleAnnotation()
+{
+
+    X1 = 0.6, Y1 = 1500, X2 = 2.2, Y2 = 1800,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    CanDrag = true,
+
+    Opacity = 0.5,
+
+    DraggingMode = AxisMode.Horizontal
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img21.jpeg)
 
 
 **Resizing** **the** **Annotation**
 
 You can resize the annotation by enabling [`CanResize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~CanResize.html#) property to True as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -875,9 +1692,36 @@ Opacity="0.5">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+RectangleAnnotation annotation = new RectangleAnnotation()
+{
+
+    X1 = 0.6, Y1 = 1500, X2 = 2.2, Y2 = 1800,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    CanResize = true,
+
+    Opacity = 0.5,
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img22.jpeg)
 
 [`ResizingMode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation~ResizingMode.html#) allows you to limit the resizing to a particular direction may be horizontal, vertical or both direction. The following code example demonstrates the resizing of annotation along vertical direction.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -907,12 +1751,41 @@ Opacity="0.5">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+RectangleAnnotation annotation = new RectangleAnnotation()
+{
+
+    X1 = 0.6, Y1 = 1500, X2 = 2.2, Y2 = 1800,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    CanResize = true,
+
+    Opacity = 0.5,
+
+    ResizingMode = AxisMode.Vertical
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img23.jpeg)
 
 
 ## Annotation Clipping
 
 SfChart allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableClipping.html#) property to True as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -934,6 +1807,31 @@ X1="4" Y1="1200" X2="7" Y2="1700" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ImageAnnotation annotation=new ImageAnnotation()
+{
+        
+    X1 = 4, Y1 = 1200, X2 = 7, Y2 = 1700,
+
+    HorizontalAlignment = HorizontalAlignment.Center,
+
+    VerticalAlignment = VerticalAlignment.Top,
+
+    EnableClipping = true,
+
+    ImageSource = new BitmapImage(new Uri("@Image/Graduate.png",UriKind.RelativeOrAbsolute))
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following screenshot explains that even when x value is provided out of bounds the image annotation is placed inside the chart area.
 
 ![](Annotation_images/Annotation_img24.jpeg)
@@ -950,6 +1848,8 @@ The text in annotation can be customized using the following API’s
 * [`Foreground`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html#)– Represents the brush value of the annotation text color. 
 
 The following code example demonstrates the customization of annotation text.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -975,43 +1875,105 @@ X2="3.6" Y2="1680">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+EllipseAnnotation annotation = new EllipseAnnotation()
+{
+
+    X1 = 2.5, Y1 = 1500, X2 = 3.6, Y2 = 1680,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush (Colors.LightGray),
+
+    Foreground = new SolidColorBrush(Colors.LightGray),
+
+    ShowToolTip = true,
+
+    Text ="Annotaion",
+
+    FontSize = 12,
+
+    FontWeight = FontWeights.Bold,
+
+    FontStyle = FontStyles.Italic
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img25.jpeg)
 
 Text can also be customized by setting [`ContentTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~ContentTemplate.html#) property as in the below code snippet.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>           
+<syncfusion:SfChart x:Name="chart">
 
-<syncfusion:TextAnnotation  CoordinateUnit="Pixel"                                           
+    <syncfusion:SfChart.Resources>
 
-X1="266" Y1="4" >
+         <DataTemplate x:Key="contentTemplate">
 
-<syncfusion:TextAnnotation.ContentTemplate>
+                    <Border Height="20" Width="80" BorderBrush="Black"
+                            
+                            CornerRadius="2" Background="LightGray" >
 
-<DataTemplate>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                   
+                                   FontFamily="Calibri (Body)" FontSize="12" 
+                                   
+                                   FontWeight="SemiBold" Foreground="Black" 
+                                   
+                                   Text="Gold Demand" FontStyle="Italic"/>
 
-<Border Height="20" Width="80" BorderBrush="Black" CornerRadius="2" Background="LightGray" >
+                    </Border>
 
-<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+          </DataTemplate>
 
-FontFamily="Calibri (Body)"
+    </syncfusion:SfChart.Resources>
 
-FontWeight="SemiBold" Foreground="Black" FontSize="12" 
+    <syncfusion:SfChart.Annotations>
 
-Text="Gold Demand" FontStyle="Italic"></TextBlock>
+                <syncfusion:TextAnnotation  CoordinateUnit="Pixel"                                           
+                                            
+                                            X1="266" Y1="4"
+                                            
+                                            ContentTemplate="{StaticResource contentTemplate}"/>
 
-</Border>
+    </syncfusion:SfChart.Annotations>
 
-</DataTemplate>
-
-</syncfusion:TextAnnotation.ContentTemplate>
-
-</syncfusion:TextAnnotation>
-
-</syncfusion:SfChart.Annotations>
+</syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+TextAnnotation annotation = new TextAnnotation()
+{
+
+    X1 = 266, Y1 = 4,
+
+    CoordinateUnit = CoordinateUnit.Axis,
+
+    ContentTemplate = chart.Resources["contentTemplate"] as DataTemplate
+
+};
+
+chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img26.jpeg)
 
