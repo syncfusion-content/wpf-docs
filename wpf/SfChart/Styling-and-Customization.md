@@ -36,16 +36,28 @@ N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap ser
 
 Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfChart Height="250" Width="350" Palette="Metro"  >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.Palette = ChartColorPalette.Metro;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_1.png)
 
 
 The following code example defined Palette as BlueChrome.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -53,12 +65,22 @@ The following code example defined Palette as BlueChrome.
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.Palette = ChartColorPalette.BlueChrome;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_2.png)
 
 
 ### Applying Palette to Segment
 
 Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -68,9 +90,33 @@ XBindingPath="Category" ItemsSource="{Binding Tax}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+DoughnutSeries series = new DoughnutSeries()
+
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    Palette = ChartColorPalette.Metro
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_3.png)
 
 The following code example defined Palette as **AutumnBrights**.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -80,6 +126,28 @@ XBindingPath="Category" ItemsSource="{Binding Tax}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+DoughnutSeries series = new DoughnutSeries()
+
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    Palette = ChartColorPalette.AutumnBrights
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_4.png)
 
 
@@ -88,6 +156,8 @@ N> Metro palette is the default palette for both Series and Segment.
 ## Custom Palette
 
 SfChart provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ColorModel.html#) as shown in the following code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -115,10 +185,41 @@ XBindingPath="Category" ItemsSource="{Binding Tax}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ChartColorModel colorModel = new ChartColorModel();
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Cyan));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
+
+DoughnutSeries series = new DoughnutSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    Palette = ChartColorPalette.Custom,
+
+    ColorModel = colorModel
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_5.png)
 
 
 You can define the custom palette for series as in the below code example:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -146,6 +247,24 @@ You can define the custom palette for series as in the below code example:
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.Palette = ChartColorPalette.Custom;
+
+ChartColorModel colorModel = new ChartColorModel();
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.BlueViolet));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.PeachPuff));
+
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Purple));
+
+chart.ColorModel = colorModel;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_6.png)
 
 
@@ -154,6 +273,8 @@ You can define the custom palette for series as in the below code example:
 SfChart provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
 
 The following code example demonstrates applying the palette color to the legend icon interior.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -219,6 +340,21 @@ Text="{Binding Label}"></TextBlock>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+
+   DockPosition = ChartDock.Left,
+
+   ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_7.png)
 
 
@@ -227,6 +363,8 @@ If you are having more number of items in the legend, you can override the Items
 ## Customize ToolTip
 
 SfChart provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html#) property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -318,6 +456,33 @@ Foreground="Black" FontSize="10"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+BarSeries series = new BarSeries()
+{
+
+    ItemsSource = new ViewModel().CategoricalDatas,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Value",
+
+    Palette = ChartColorPalette.FloraHues,
+
+    ShowTooltip = true,
+
+    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate
+
+};
+
+ChartTooltip.SetShowDuration(series, 5000);
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Styling-and-Customization_images/palette_8.png)
 
 
@@ -346,51 +511,86 @@ The respective segment of each series will be your DataTemplate context, which c
 
 The following code example illustrates the use of [`CustomTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property:
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
+ <syncfusion:SfChart x:Name="chart">
 
-XBindingPath="Year" YBindingPath="Count" 
+     <syncfusion:SfChart.Resources>
 
-ItemsSource="{Binding}">
+            <local:ScatterInteriorConverter x:Key="scatterInteriorConverter"/>
 
-<chart:ScatterSeries.CustomTemplate>
+            <local:ScatterAngleConverter x:Key="scatterAngleConverter"/>
 
-<DataTemplate>
+            <DataTemplate x:Key="seriesTemplate">
 
-<Canvas>
+                <Canvas>
 
-<Path Fill="{Binding Converter={StaticResource ScatterInteriorConverter}}"
+                    <Path Fill="{Binding Converter={StaticResource scatterInteriorConverter}}"
+                              
+                          Stretch="Fill" Height="{Binding ScatterHeight}"
+                              
+                          Width="{Binding ScatterWidth}" RenderTransformOrigin="0.5,0.5"
+                              
+                          Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+                              
+                          Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
+                              
+                              0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
 
-Stretch="Fill"  
+                          <Path.RenderTransform>
 
-Height="{Binding ScatterHeight}" Width="{Binding ScatterWidth}" 
+                                <RotateTransform Angle="{Binding Converter={StaticResource scatterAngleConverter}}"/>
 
-RenderTransformOrigin="0.5,0.5"
+                          </Path.RenderTransform>
 
-Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+                        </Path>
 
-Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
+                    </Canvas>
 
-0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
+                </DataTemplate>
 
-<Path.RenderTransform>
+    </syncfusion:SfChart.Resources>
 
-<RotateTransform Angle="{Binding Converter={StaticResource ScatterAngleConverter}}"/>
+    <syncfusion:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
+                                       
+                                XBindingPath="Year" YBindingPath="Count" 
+                                       
+                                ItemsSource="{Binding Data}"
+                                
+                                CustomTemplate="{StaticResource seriesTemplate}"/>
 
-</Path.RenderTransform>
-
-</Path>
-
-</Canvas>
-
-</DataTemplate>
-
-</chart:ScatterSeries.CustomTemplate>                
-
-</chart:ScatterSeries>
+</syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Count",
+
+    ScatterHeight = 20,
+
+    ScatterWidth = 20,
+
+    Interior = new SolidColorBrush(Colors.DarkGray),
+
+    CustomTemplate = chart.Resources["seriesTemplate"] as DataTemplate
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Styling-and-Customization_images/palette_9.png)
 

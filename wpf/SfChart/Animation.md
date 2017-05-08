@@ -35,6 +35,8 @@ The following APIs are used to customize the Animation.
 
 The following example shows the Animation feature for chart series.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:SfChart>
@@ -47,7 +49,30 @@ XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
-**Column** **Series **
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+        ItemsSource = new ViewModel().Data,
+
+        XBindingPath = "Category",
+
+        YBindingPath = "Count",
+
+        EnableAnimation = true,
+
+        AnimationDuration = new TimeSpan(00, 00, 03)
+
+};
+
+chart.Series.Add(columnSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Column** **Series**
 
 ![](Animation_images/column.gif)
 

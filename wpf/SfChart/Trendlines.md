@@ -13,6 +13,8 @@ Trendlines are used to analyze and display the trends in the data graphically. I
 
 The following code examples illustrate how to add trend lines to the chart.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:ScatterSeries Interior="#4A4A4A" XBindingPath="Year" Label="Series"
@@ -31,12 +33,49 @@ ScatterHeight="15" ScatterWidth="15">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ScatterSeries scatterSeries = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "India",
+
+    ScatterHeight = 15,
+
+    ScatterWidth = 15,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
+
+    Label = "Series"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label ="Trend"
+
+};
+scatterSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(scatterSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_1.png)
 
 
 You can get the [`Slope`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Slope.html#) and [`Intercept`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Intercept.html#) of the drawn trend line. 
 
 The visibility of the trend line is defined using [`IsTrendlineVisible`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~IsTrendlineVisible.html#) property as in the following code examples.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -55,6 +94,44 @@ ScatterHeight="15" ScatterWidth="15">
 </syncfusion:ScatterSeries>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries scatterSeries = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "India",
+
+    ScatterHeight = 15,
+
+    ScatterWidth = 15,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
+
+    Label = "Series"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label ="Trend",
+
+    IsTrendlineVisible = true
+
+};
+
+scatterSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(scatterSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Trendlines_images/trendline_2.png)
 
@@ -81,6 +158,8 @@ yValue = Intercept + Slope * xValue ( where xValue is underlying x value).
 
 The following is the code example of this trend line.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:FatLineSeries XBindingPath="Date"
@@ -101,6 +180,42 @@ ItemsSource="{Binding StockPriceDetails}">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Linear
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastS
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_3.png)
 
 
@@ -113,6 +228,8 @@ The linear trend line will be calculated using the below formula:
 (Intercept*Math.Exp(Slope*xValue)) (where xValue is underlying x value).
 
 The following code example defines the exponential trendline.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -134,6 +251,42 @@ ItemsSource="{Binding StockPriceDetails}">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Exponential
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastS
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_4.png)
 
 
@@ -148,6 +301,8 @@ This will be calculated using the following formula:
 (Intercept*Math.Pow(xValue,Slope)) (Where xValue is underlying x value).
 
 The following code example explains how to define the power trendline.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -169,6 +324,42 @@ ItemsSource="{Binding StockPriceDetails}">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Power
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastS
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_5.png)
 
 ### Logarithmic
@@ -180,6 +371,8 @@ The will be calculated using the below formula:
 Intercept+Slope * Math.Log(xValue) (where xValue is underlying x value).
 
 The following code example illustrates the use of logarithmic trend line.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -201,6 +394,42 @@ ItemsSource="{Binding StockPriceDetails}">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Logarithmic
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastS
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_6.png)
 
 ### Polynomial
@@ -212,6 +441,8 @@ The polynomial trendline is calculated using the below formula:
 PolynomialSlopes.Select( ( value,index)=>value*Math.Pow (xValue,(double)index)).Sum() (where xValue is underlying x value)
 
 To define the polynomial trendline, you can use the following code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -233,11 +464,49 @@ ItemsSource="{Binding StockPriceDetails}">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Polynomial
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastS
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_7.png)
 
 #### Polynomial Order
 
 You can set the Polynomial order for this trendline. Polynomial order calculates order based on the equation and this value should fall between 2 and 6.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -261,6 +530,44 @@ PolynomialOrder="5"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Polynomial,
+
+    PolynomialOrder = 5
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_8.png)
 
 ## Forecasting
@@ -275,6 +582,8 @@ The following two types of forecasting available in SfChart:
 ### Forward Forecast
 
 For determining the future trends (in forward direction). The following code example explains the how to set the value for forward forecast.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -296,11 +605,53 @@ Type="Polynomial" PolynomialOrder="3" ForwardForecast="5" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Polynomial,
+
+    PolynomialOrder = 3,
+
+    ForwardForecast = 5
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_9.png)
 
 ### Backward Forecast
 
 For determining the past trends (in backward direction). The following code example explains the how to set the value for forward forecast.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -322,12 +673,54 @@ Type="Polynomial" PolynomialOrder="3"  BackwardForecast="5"  />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke =new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Polynomial,
+
+    PolynomialOrder = 3,
+
+    BackwardForecast = 5
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Trendlines_images/trendline_10.png)
 
 
 ## Customization 
 
 You can customize the trendline [`Stroke`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Stroke.html#), [`StrokeThickness`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeDashArray.html#) and [`StrokeDashArray`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeThickness.html#) as in below code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -348,6 +741,46 @@ StrokeDashArray="4,4" StrokeThickness="2" />
 </syncfusion:FastLineSeries>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+FastLineSeries fastSeries = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+    Label = "Stock Price"
+
+};
+
+Trendline trendline = new Trendline()
+{
+
+    Label = "Trend",
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    Type = TrendlineType.Linear,
+
+    StrokeThickness = 2,
+
+    StrokeDashArray = new DoubleCollection() { 4, 4 }
+
+};
+
+fastSeries.Trendlines.Add(trendline);
+
+chart.Series.Add(fastSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Trendlines_images/trendline_11.png)
 

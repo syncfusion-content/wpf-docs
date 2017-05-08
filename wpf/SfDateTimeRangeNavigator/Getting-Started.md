@@ -43,6 +43,8 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 ### Initialize the SfDateTimeRangeNavigator
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfDateTimeRangeNavigator>
@@ -51,10 +53,19 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 {% endhighlight  %}
 
+{% highlight c# %}
+
+ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Setting ItemsSource for SfDateTimeRangeNavigator
 
 Since the above step will produce an empty SfDateTimeRangeNavigator without any labels, we need to set the ItemsSource and XBindingPath for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -63,6 +74,21 @@ Since the above step will produce an empty SfDateTimeRangeNavigator without any 
 </Syncfusion:SfDateTimeRangeNavigator >
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+        ItemsSource = new ViewModel().UsersList,
+
+        XBindingPath ="Date"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Adding Content
 
@@ -88,6 +114,8 @@ Represents the DateTime X values</td></tr>
 Content</td><td>
 To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -126,6 +154,42 @@ To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 </Syncfusion:SfDateTimeRangeNavigator >
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.PrimaryAxis = new DateTimeAxis();
+
+chart.SecondaryAxis = new NumericalAxis();
+
+LineSeries series = new LineSeries()
+{
+
+        ItemsSource = new ViewModel().UsersList,
+
+        XBindingPath = "Date",
+
+        YBindingPath = "NoOfUsers"
+
+};
+
+chart.Series.Add(series);
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+        ItemsSource = new ViewModel().StockPriceDetails,
+
+        XBindingPath ="Date"
+
+};
+
+rangeNavigator.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following illustrates the result of the above code sample:
 

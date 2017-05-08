@@ -15,6 +15,8 @@ SfChart provides support for vertical charts. You can plot vertical chart for an
 
 Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary and secondary axes in opposite direction.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
@@ -35,12 +37,39 @@ OpposedPosition="True"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+     OpposedPosition = true
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+     Minimum = 0,
+
+     Maximum = 40,
+
+     Interval = 10,
+
+     OpposedPosition = true
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Vertical-Charts_images/VerticalCharts_1.png)
 
 
 ## IsTransposed
 
 This property used to switch the plotting of the series to vertical.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -52,10 +81,31 @@ YBindingPath="ItemsCount" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+     IsTransposed = true,
+
+     ItemsSource = new ViewModel().SneakersDetail,
+
+     XBindingPath = "Brand",
+
+     YBindingPath = "ItemsCount"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Vertical-Charts_images/VerticalCharts_2.png)
 
 
 The following example demonstrates the vertical charts.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -126,6 +176,105 @@ SymbolInterior="DarkGray" SymbolWidth="10"></chart:ChartAdornmentInfo>
 </chart:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+
+chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    ShowGridLines = true
+
+};
+
+NumericalAxis axis = new NumericalAxis();
+
+chart.SecondaryAxis = axis;
+
+ChartBase.SetColumn(axis, 1);
+
+LineSeries series1 = new LineSeries()
+{
+
+    IsTransposed = true,
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount"
+
+};
+
+ChartAdornmentInfo adornmentInfo1 = new ChartAdornmentInfo()
+{
+
+    ShowMarker = true,
+
+    Symbol = ChartSymbol.Ellipse,
+
+    SymbolHeight = 10,
+
+    SymbolWidth = 10,
+
+    SymbolInterior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+
+};
+
+LineSeries series2 = new LineSeries()
+{
+
+    IsTransposed = true,
+
+    Interior = new SolidColorBrush(Colors.DarkGray),
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "position",
+
+    YAxis = new NumericalAxis()
+
+};
+
+ChartAdornmentInfo adornmentInfo2 = new ChartAdornmentInfo()
+{
+
+    ShowLabel = false,
+
+    ShowMarker = true,
+
+    Symbol = ChartSymbol.Ellipse,
+
+    SymbolHeight = 10,
+
+    SymbolWidth = 10,
+
+    SymbolInterior = new SolidColorBrush(Colors.DarkGray),
+
+};
+
+series1.AdornmentsInfo = adornmentInfo1;
+
+series2.AdornmentsInfo = adornmentInfo2;
+
+ChartBase.SetColumn(series1, 0);
+
+ChartBase.SetColumn(series2, 1);
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Vertical-Charts_images/VerticalCharts_3.png)
 

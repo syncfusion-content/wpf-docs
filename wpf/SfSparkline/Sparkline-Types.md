@@ -13,6 +13,8 @@ documentation: ug
 
 Line sparkline rendered using polyline and the following code is used to create line sparkline,
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Grid.DataContext>
@@ -27,6 +29,21 @@ Line sparkline rendered using polyline and the following code is used to create 
 
 {% endhighlight  %}
 
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+	ItemsSource = new SparkViewModel().UsersList,
+
+	YBindingPath = "NoOfUsers"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following illustrates the result of the above code sample,
 
 ![](Sparkline-Types_images/Sparkline-Types_img1.png)
@@ -36,6 +53,8 @@ The following illustrates the result of the above code sample,
 
 Column sparkline used to visualize the raw data as a rectangle and following code is used to create column sparkline,
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
@@ -43,6 +62,21 @@ Column sparkline used to visualize the raw data as a rectangle and following cod
 </Syncfusion:SfColumnSparkline>
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfColumnSparkline sparkline = new SfColumnSparkline()
+{
+
+	ItemsSource = new SparkViewModel().UsersList,
+
+	YBindingPath = "NoOfUsers"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the snapshot for Column Sparkline,
 
@@ -52,6 +86,8 @@ Following is the snapshot for Column Sparkline,
 
 Following code is used to create area sparkline and all the line sparkline features are applicable for area sparkline,
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfAreaSparkline ItemsSource="{Binding UsersList}"  YBindingPath="NoOfUsers">
@@ -59,6 +95,21 @@ Following code is used to create area sparkline and all the line sparkline featu
 </Syncfusion:SfAreaSparkline >
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfAreaSparkline sparkline = new SfAreaSparkline()
+{
+
+	ItemsSource = new SparkViewModel().UsersList,
+
+	YBindingPath = "NoOfUsers"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the snapshot for area sparkline,
 
@@ -85,6 +136,15 @@ WinLoss sparkline render as a column segment and it show the positive, negative 
 {% endhighlight %}
 
 {% highlight c# %}
+
+SfWinLossSparkline sparkline = new SfWinLossSparkline()
+{
+
+	ItemsSource = new SparkViewModel().Match,
+
+	YBindingPath = "Result"
+
+};
 
 public class MatchDetailsModel
 
