@@ -100,7 +100,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 
 
 
-// Export OlapGrid Data to Pdf
+// Export OlapGrid Data to PDF
 
 this.OlapGrid1.ExportToPdf("fileName");
 
@@ -116,7 +116,7 @@ this.OlapGrid1.ExportToPdf("fileName");
 
 
 
-' Export OlapGrid Data to Pdf 
+' Export OlapGrid Data to PDF
 
 Me.OlapGrid1.ExportToPdf("fileName")
 
