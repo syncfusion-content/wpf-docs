@@ -21,7 +21,10 @@ The following annotations are supported in SfChart
 
 You can create an instance for any type of Annotation and add it to [`Annotations`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AnnotationCollection.html#) collection. Here for instance, the EllipseAnnotation is added.
 
+{% tabs %}
+
 {% highlight xml %}
+
 <syncfusion:SfChart.Annotations>
 
 <syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
@@ -34,9 +37,26 @@ X2="3.6" Y2="1680" >
 
 </syncfusion:SfChart.Annotations>
 
+{% endhighlight %}
 
+{% highlight c# %}
+
+EllipseAnnotation annotation=new EllipseAnnotation()
+{
+
+    X1 = 2.5, Y1 = 1500,
+
+    X2 = 3.6, Y2 = 1680,
+
+    Text = "Ellipse Annotation"
+
+};
+
+chart.Annotations.Add(annotation);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img1.jpeg)
 
@@ -56,6 +76,8 @@ To position based on the pixel values you have to set the CoordinateUnit as Pixe
 **Adding** **Annotation** **for** **MultipleAxes**
 
 You can also add annotation for a particular axis when there is multiple axes using [`XAxisName`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~XAxisName.html#) and [`YAxisName`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~YAxisName.html#) properties as in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -148,6 +170,127 @@ syncfusion:ChartBase.Row="1"></syncfusion:NumericalAxis>
 </syncfusion:ScatterSeries>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.PrimaryAxis = new CategoryAxis();
+
+chart.SecondaryAxis = new NumericalAxis();
+
+ChartBase.SetRow(chart.SecondaryAxis, 0);
+
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+
+    X1 = -0.5, Y1 = 500,
+
+    X2 = 3.5,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    StrokeThickness = 2,
+
+    LineCap = LineCap.Arrow,
+
+    CanDrag = true,
+
+    CanResize = true,
+
+    YAxisName = "FirstYAxis"
+
+};
+
+RectangleAnnotation annotation1 = new RectangleAnnotation()
+{
+
+    X1 = 0.6,Y1 = 1500,
+
+    X2 = 2.2,Y2=1800,
+
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+
+    Fill = new SolidColorBrush(Colors.LightGray),
+
+    StrokeThickness = 2,
+
+    Opacity = 0.5,
+
+    CanDrag = true,
+
+    CanResize = true,
+
+    YAxisName = "SecondYAxis"
+
+};
+
+chart.Annotations.Add(annotation);
+
+chart.Annotations.Add(annotation1);
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+
+};
+
+ScatterSeries scatterSeries = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2010",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+
+};
+
+NumericalAxis axis = new NumericalAxis()
+{
+
+    Minimum = 0,
+
+    Maximum = 2000,
+
+    Interval = 500,
+
+    ShowGridLines = false,
+
+    TickLineSize = 5,
+
+    LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate,
+
+    MajorTickLineStyle = chart.Resources["lineStyle1"] as Style,
+
+    AxisLineStyle = chart.Resources["lineStyle2"] as Style
+
+};
+
+ChartBase.SetRow(axis, 1);
+
+scatterSeries.YAxis = axis;
+
+chart.Series.Add(columnSeries);
+
+chart.Series.Add(scatterSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img2.jpeg)
 

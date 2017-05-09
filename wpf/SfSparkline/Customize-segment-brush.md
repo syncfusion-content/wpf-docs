@@ -11,6 +11,8 @@ documentation: ug
 
 We can able to customize the first, last, negative, high and low point brushes as like markers in area and line sparkline.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
@@ -24,6 +26,34 @@ We can able to customize the first, last, negative, high and low point brushes a
         </Syncfusion:SfColumnSparkline>
 		
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfColumnSparkline sparkline = new SfColumnSparkline()
+{
+
+    ItemsSource = new SparkViewModel().UsersList,
+
+    YBindingPath = "NoOfUsers"
+
+};
+
+SegmentTemplateSelector selector = new SegmentTemplateSelector()
+{
+
+    FirstPointBrush = new SolidColorBrush(Colors.Yellow),
+
+    LastPointBrush = new SolidColorBrush(Colors.Yellow),
+
+    HighPointBrush = new SolidColorBrush(Colors.Red)
+
+};
+
+sparkline.SegmentTemplateSelector = selector;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following is the snapshot for customize segment,
 

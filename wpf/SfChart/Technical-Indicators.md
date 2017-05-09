@@ -21,6 +21,8 @@ Create the instance for any technical indicator and add it to the [`TechnicalInd
 
 Here for instance, the [Accumulation Distribution](#accumulationdistributionindicator) is added.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfChart.TechnicalIndicators>
@@ -33,9 +35,21 @@ Here for instance, the [Accumulation Distribution](#accumulationdistributionindi
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator();
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Binding the Data
 
 Next you need to bind the property path for the open, high, low and close along with x value binding property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -49,7 +63,26 @@ Next you need to bind the property path for the open, high, low and close along 
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator()
+{
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low"
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Specifying the ItemsSource
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -67,6 +100,27 @@ XBindingPath="Date">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low"
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/overview_1.png)
 
 
@@ -77,6 +131,8 @@ Most of the indicators are having the [`Period`](http://help.syncfusion.com/cr/c
 ## Average True Range
 
 You can define the [`AverageTrueRangeIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#) using the following code example
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -94,6 +150,30 @@ Open="Open" Close="Close"/ >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AverageTrueRangeIndicator indicator = new AverageTrueRangeIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Technical-Indicators_images/atr.png)
 
@@ -101,6 +181,8 @@ Open="Open" Close="Close"/ >
 ## Simple Average 
 
 The following code example demonstrates the usage of [`SimpleAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html#).
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -120,6 +202,31 @@ High="High" Low="Low" Open="Open" Close="Close" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SimpleAverageIndicator indicator = new SimpleAverageIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/sa.png)
 
 
@@ -130,6 +237,8 @@ The Relative Strength Index(RSI) indicators are having additional two lines othe
 The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~UpperLineColor.html#) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~LowerLineColor.html#) property is used to define the color for the line indicating oversold region.
 
 To define the [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#), you can use the following code example:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -149,6 +258,35 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+RSITechnicalIndicator indicator = new RSITechnicalIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black),
+
+    UpperLineColor = new SolidColorBrush(Colors.Blue),
+
+    LowerLineColor = new SolidColorBrush(Colors.Red)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/rsi.png)
 
 
@@ -157,6 +295,8 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 This indicator is having two lines momentum line and center line. No signal line is in this indicator. You can define momentum technical indicator using the following code example.
 
 The [`MomentumLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~MomentumLineColor.html#) property and [`CenterLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~CenterLineColor.html#) property are used to define the color for the momentum and center line respectively.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -174,6 +314,33 @@ High="High" Low="Low" Open="Open" Close="Close"/ >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+MomentumTechnicalIndicator indicator = new MomentumTechnicalIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    MomentumLineColor = new SolidColorBrush(Colors.Black),
+
+    CenterLineColor = new SolidColorBrush(Colors.Red)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/momentum.png)
 
 
@@ -184,6 +351,8 @@ This indicator is used to measure the range and momentum of price movements. It 
 The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
 
 You can define stochastic technical indicator using the following code example:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -203,12 +372,45 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StochasticTechnicalIndicator indicator = new StochasticTechnicalIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date", Volume = "Volume",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Period = 3,KPeriod = 8,DPeriod = 5,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black),
+
+    PeriodLineColor = new SolidColorBrush(Colors.Red),
+
+    UpperLineColor = new SolidColorBrush(Colors.Blue),
+
+    LowerLineColor = new SolidColorBrush(Colors.Purple)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/stochastic.png)
 
 
 ## Exponential Average
 
 The [`ExponentialAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_simple-average) and this can be defined using the following code examples.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -226,12 +428,39 @@ Open="Open" Close="Close"/ >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ExponentialAverageIndicator indicator = new ExponentialAverageIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/exponential.png)
 
 
 ## Triangular Average 
 
 The [`TriangularAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html#) can be defined as in the following code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -249,12 +478,39 @@ Open="Open" Close="Close"/ >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+TriangularAverageIndicator indicator = new TriangularAverageIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/ta.png)
 
 
 ## Accumulation Distribution 
 
 The following code example help you to add [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html#).
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -276,6 +532,31 @@ Open="Open" Close="Close" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/accumulation.png)
 
 
@@ -284,6 +565,8 @@ Open="Open" Close="Close" >
 This indicator also having [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~LowerLineColor.html#) and [`SignalLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~SignalLineColor.html#) property for defining the brushes for the indicator lines.
 
 You can define the [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#) using the following code example:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -303,6 +586,35 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+BollingerBandIndicator indicator = new BollingerBandIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Volume ="Volume", Period = 3,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black),
+
+    UpperLineColor = new SolidColorBrush(Colors.Blue),
+
+    LowerLineColor = new SolidColorBrush(Colors.Red)
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Technical-Indicators_images/bollinger.png)
 
 
@@ -315,6 +627,8 @@ Other than signal line, MACD is having convergence and divergence line. The brus
 Also you can draw line, histogram MACD or both using the [`Type`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~Type.html#) property, which defines the type of MACD to be drawn.
 
 You can define the [`MACDTechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#) using the following code example:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -335,6 +649,37 @@ High="High" Low="Low" Open="Open" Close="Close" >
 </chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+MACDTechnicalIndicator indicator = new MACDTechnicalIndicator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date", Volume = "Volume",
+
+    Open = "Open", Close = "Close",
+
+    High = "High", Low = "Low",
+
+    Period = 3, ShortPeriod = 2, LongPeriod = 6,
+
+    Type = MACDType.Line ,
+
+    SignalLineColor = new SolidColorBrush(Colors.Black),
+
+    ConvergenceLineColor = new SolidColorBrush(Colors.Red),
+
+    DivergenceLineColor = new SolidColorBrush(Colors.Blue),
+
+};
+
+chart.TechnicalIndicators.Add(indicator);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Technical-Indicators_images/macd.png)
 
