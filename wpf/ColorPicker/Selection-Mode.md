@@ -24,7 +24,7 @@ To set the ColorSelection Mode as "HSV" for ColorEdit control, use the below cod
 //Creating an instance of color edit
 ColorEdit colorEdit = new ColorEdit();
 
-//Setting selection mode as HSVcolorEdit.
+//Setting selection mode as HSV ColorEdit.
 VisualizationStyle = ColorSelectionMode.HSV;    
 
 //Adding control to the window

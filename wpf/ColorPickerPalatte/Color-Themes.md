@@ -189,7 +189,7 @@ ObservableCollection<CustomColor> customColors = new ObservableCollection<Custom
 
 customColors.Add(new CustomColor() { Color = Colors.SlateBlue, ColorName = "Custom SlateBlue" });
 
-// Add requred custom colors
+// Add required custom colors
 
 customColors.Add(new CustomColor() { Color = Colors.Navy, ColorName = "Custom Navy" });
 

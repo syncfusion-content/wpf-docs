@@ -82,7 +82,7 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 
 
 
-    ComboBoxAdv comboBoxAdv = new ComboBoxAdv { AllowMultiSelect = true, 	SelectedValueDelimiter = " - ", DefaultText = " Choose Itmes ", 	ItemsSource = Countries, DisplayMemberPath="Name", 	SelectedValuePath="Code" };
+    ComboBoxAdv comboBoxAdv = new ComboBoxAdv { AllowMultiSelect = true, 	SelectedValueDelimiter = " - ", DefaultText = " Choose Items ", 	ItemsSource = Countries, DisplayMemberPath="Name", 	SelectedValuePath="Code" };
 
 {% endhighlight %}
 
