@@ -35,7 +35,7 @@ public MainWindow()
 
 Public Sub New()
     System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("ar-AE")
-    InitializeCompenent()
+    InitializeComponent()
 End Sub
     
 {% endhighlight %}
