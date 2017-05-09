@@ -21,6 +21,7 @@ Following steps explain how to create sparkline,
 * If using VS 2010 choose .Net>Syncfusion.SfChart.WPF.dll
 * Add the following namespace in your XAML page:
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -28,9 +29,19 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 {% endhighlight  %}
 
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Charts;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Initialize the sparkline
 
 You need to initialize the sparkline represented by the following class Syncfusion.UI.Xaml.Charts.SfChart,
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -39,6 +50,14 @@ You need to initialize the sparkline represented by the following class Syncfusi
 </Syncfusion:SfLineSparkline>
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Create a Sample Data Source
 
@@ -99,6 +118,8 @@ N> Syncfusion sparkline also supports items source as collection of double value
 
 We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath and XBindingPath.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Grid.DataContext>
@@ -116,6 +137,21 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 </Syncfusion:SfLineSparkline >
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+  ItemsSource = new SparkViewModel().UsersList,
+
+  YBindingPath = "NoOfUsers"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> if we do not map the XBindingPath means sparkline data positioned as indexed.
 

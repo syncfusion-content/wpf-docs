@@ -31,12 +31,26 @@ YBindingPath="Year2010">
 </syncfusion:LineSeries>
 
 
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
+
+SfChart chart = new SfChart();
+
+LineSeries lineSeries = new LineSeries()
+{
+
+      ItemsSource = new ViewModel().Demands,
+
+      XBindingPath = "Demand",
+
+      YBindingPath = "Year2010",
+
+};
+
+chart.Series.Add(lineSeries);
 
 public class GoldDemand
 
@@ -53,8 +67,6 @@ public double Year2010 { get; set; }
 public double Year2011 { get; set; }
 
 }
-
-
 
 public sealed partial class MainPage : Page
 
@@ -100,16 +112,15 @@ new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
 
 };
 
-
-
 DataContext = this;
 
 }
 
-public ObservableCollection<GoldDemand> Demands { get; set; }       }
+public ObservableCollection<GoldDemand> Demands { get; set; } 
+
+}
 
 {% endhighlight %}
-
 
 {% endtabs %}
 
@@ -119,6 +130,7 @@ public ObservableCollection<GoldDemand> Demands { get; set; }       }
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /> 
@@ -126,6 +138,23 @@ The complex property binding feature enables you to access nested object referen
 {% endhighlight %}
 
 {% highlight C# %}
+
+StadiumDetails stadiumDetails = new StadiumDetails();
+
+LineSeries series = new LineSeries()
+{
+
+      ItemsSource = new ViewModel().DataWithMulData,
+
+      XBindingPath = "stadiumDetails.CupDetailsObj.CupName",
+
+      YBindingPath = "stadiumDetails.NumSeats",
+
+      Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
 
 public class StadiumDetails
 
@@ -140,8 +169,6 @@ public int Price { get; set; }
 public CupDetails CupDetailsObj { get; set; }
 
 }
-
-
 
 public class CupDetails
 
@@ -160,7 +187,9 @@ public string Name { get; set; }
 public StadiumDetails StadiumObject { get; set; }
 
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Binding array property to the chart
@@ -170,15 +199,14 @@ The SfChart supports array values for the XBindingPath and YBindingPath. XBindin
 The following code example demonstrates how to bind the array values for the XBindingPath and YBindingPath.
 
 {% tabs %}
+
 {% highlight xaml %}
-
-
 
 <chart:SfChart>
 
       <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
 
-XBindingPath="Brand[1]" YBindingPath="Count[0]" >
+                          XBindingPath="Brand[1]" YBindingPath="Count[0]" >
 
       </chart:ColumnSeries>
 
@@ -188,6 +216,7 @@ XBindingPath="Brand[1]" YBindingPath="Count[0]" >
 {% endhighlight %}
 
 {% highlight C# %}
+
 public class Model
 
 {
@@ -246,11 +275,11 @@ private void CreateChart()
 
    series.ItemsSource = view.Brands;
 
-series.XBindingPath = "Brand[1]";
+   series.XBindingPath = "Brand[1]";
 
    series.YBindingPath = "Count[0]";
 
-chart.Series.Add(series);
+   chart.Series.Add(series);
 
    grid.Children.Add(chart);
 

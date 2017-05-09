@@ -17,6 +17,8 @@ The [`HorizontalErrorValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchar
 
 The following code examples illustrates how to create error bar series:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:ScatterSeries ScatterWidth="20" ScatterHeight="20"  Label="Coal" 
@@ -37,6 +39,51 @@ VerticalErrorValue="50" HorizontalErrorValue="1" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    ScatterWidth = 20,
+
+    ScatterHeight = 20,
+
+    Label ="Coal",
+
+    ListenPropertyChange=true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 1,
+
+    VerticalErrorValue = 50
+
+};
+
+chart.Series.Add(series);
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ErrorBar_images/ErrorBar_1.png)
 
@@ -48,6 +95,8 @@ This [`Mode`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.Sf
 ### Horizontal
 
 To view horizontal error value, you can set the Mode as Horizontal as shown in the below code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -61,12 +110,39 @@ Mode="Horizontal">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 1,
+
+    VerticalErrorValue = 50,
+
+    Mode = ErrorBarMode.Horizontal
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_2.png)
 
 
 ### Vertical
 
 To view vertical error value, you can set the Mode as Vertical as shown in the below code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -79,6 +155,31 @@ VerticalErrorValue="50" HorizontalErrorValue="1"
 Mode="Vertical">
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 1,
+
+    VerticalErrorValue = 50,
+
+    Mode = ErrorBarMode.Vertical
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ErrorBar_images/ErrorBar_3.png)
 
@@ -96,6 +197,8 @@ N> The default error bar series is Fixed.
 
 ### Fixed
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:ErrorBarSeries Name="Errorseries"  
@@ -112,9 +215,38 @@ Mode="Both" Type="Fixed">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.Fixed
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_4.png)
 
 ### Percentage
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -132,11 +264,40 @@ Mode="Both" Type="Percentage">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.Percentage
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](ErrorBar_images/ErrorBar_5.png)
 
 
 ### Standard Deviation
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -154,9 +315,38 @@ Mode="Both" Type="StandardDeviation"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.StandardDeviation
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_6.png)
 
 ### Standard Errors
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -174,12 +364,41 @@ Mode="Both" Type="StandardErrors"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.StandardErrors
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_7.png)
 
 
 ### Custom
 
 If the Type is Custom, you have to bind [`HorizontalErrorPathValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalErrorPath.html#) and [`VerticalErrorPathValue`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalErrorPath.html#) as shown in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -199,6 +418,33 @@ Mode="Both" Type="Custom"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.Custom
+
+};
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_8.png)
 
 
@@ -209,6 +455,8 @@ SfChart provides customization properties for the error bar lines as in the foll
 ### Line Style
 
 You can define the LineStyle for the error bar lines using [`HorizontalLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalLineStyle.html#) and [`VerticalLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalLineStyle.html#) properties as in the below code examples.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -222,8 +470,24 @@ You can define the LineStyle for the error bar lines using [`HorizontalLineStyle
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+errorBarSeries.HorizontalLineStyle = new LineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_9.png)
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -237,12 +501,29 @@ You can define the LineStyle for the error bar lines using [`HorizontalLineStyle
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+errorBarSeries.VerticalLineStyle = new LineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_10.png)
 
 
 ### Line Cap Style
 
 ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalCapLineStyle.html#) and [`VerticalCapLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalCapLineStyle.html#) as in the below code examples.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -256,8 +537,26 @@ LineWidth="10"></chart:CapLineStyle>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+errorBarSeries.HorizontalCapLineStyle = new CapLineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2,
+
+    LineWidth = 10
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](ErrorBar_images/ErrorBar_11.png)
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -270,5 +569,22 @@ LineWidth="15"></chart:CapLineStyle>
 </chart:ErrorBarSeries.VerticalCapLineStyle>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+errorBarSeries.VerticalCapLineStyle = new CapLineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 3,
+
+    LineWidth = 15
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ErrorBar_images/ErrorBar_12.png)
