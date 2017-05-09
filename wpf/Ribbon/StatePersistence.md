@@ -57,7 +57,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonStatePersistance.MainWindow"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonStatePersistence.MainWindow"
 
 Title="MainWindow" Height="350" Width="525" AutoPersist="True" x:Name="RibbonWindow" WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterScreen" WindowState="Normal" syncfusion:SkinStorage.VisualStyle="Office2013" Loaded="RibbonWindow_Loaded">
 

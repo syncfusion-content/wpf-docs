@@ -141,7 +141,7 @@ End Class
         void PopulateRibbonHomeBars(CustomRibbonTab Tab)
         {
             CustomRibbonBar Bar1 = new CustomRibbonBar() { BarHeader = "Clipboard" };
-            PopuplateRibbonNewItems(Bar1);
+            PopulateRibbonNewItems(Bar1);
 
             CustomRibbonBar Bar2 = new CustomRibbonBar() { BarHeader = "Editing" };
             PopuplateRibbonEditingItems(Bar2);
@@ -150,7 +150,7 @@ End Class
             Tab.CustomRibbonBars.Add(Bar2);
         }
 
-        void PopuplateRibbonNewItems(CustomRibbonBar Bar)
+        void PopulateRibbonNewItems(CustomRibbonBar Bar)
         {
             CustomRibbonItem Item1 = new CustomRibbonItem() { ItemHeader = "Paste", IsLarge = true, Image = "Paste32.png" };
             CustomRibbonItem Item2 = new CustomRibbonItem() { ItemHeader = "Cut", Image = "Cut16.png" };
@@ -163,7 +163,7 @@ End Class
             Bar.CustomRibbonItems.Add(Item4);
         }
 
-        private void PopuplateRibbonEditingItems(CustomRibbonBar Bar)
+        private void PopulateRibbonEditingItems(CustomRibbonBar Bar)
         {
             CustomRibbonItem Item1 = new CustomRibbonItem() { ItemHeader = "Hyperlink", IsLarge = true, Image = "hyperlink32.png" };
             CustomRibbonItem Item2 = new CustomRibbonItem() { ItemHeader = "Replace", IsLarge = true, Image = "replace_32.png" };
@@ -203,17 +203,17 @@ End Class
     Private Sub PopulateRibbonHomeBars(ByVal Tab As CustomRibbonTab)
 
         Dim Bar1 As New CustomRibbonBar() With {.BarHeader = "Clipboard"}
-        PopuplateRibbonNewItems(Bar1)
+        PopulateRibbonNewItems(Bar1)
 
         Dim Bar2 As New CustomRibbonBar() With {.BarHeader = "Editing"}
-        PopuplateRibbonEditingItems(Bar2)
+        PopulateRibbonEditingItems(Bar2)
 
         Tab.CustomRibbonBars.Add(Bar1)
         Tab.CustomRibbonBars.Add(Bar2)
 
     End Sub
 
-    Private Sub PopuplateRibbonNewItems(ByVal Bar As CustomRibbonBar)
+    Private Sub PopulateRibbonNewItems(ByVal Bar As CustomRibbonBar)
 
         Dim Item1 As New CustomRibbonItem() With {
             .ItemHeader = "Paste",
@@ -240,7 +240,7 @@ End Class
 
     End Sub
 
-    Private Sub PopuplateRibbonEditingItems(ByVal Bar As CustomRibbonBar)
+    Private Sub PopulateRibbonEditingItems(ByVal Bar As CustomRibbonBar)
 
         Dim Item1 As New CustomRibbonItem() With {
             .ItemHeader = "Hyperlink",
