@@ -32,9 +32,38 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
 {% endhighlight %}
 {% endtabs %}
 
+###Events
+
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are trigerred while inserting the rows and columns. 
+
+* [RowsInserted](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~RowsInserted_EV.html)
+* [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
+
+{% tabs %}
+{% highlight c# %}
+
+//To notify when rows are inserted
+
+ spreadsheet.ActiveGrid.Model.RowsInserted += Model_RowsInserted;
+
+ void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
+
+//To notify when Columns are inserted
+
+ spreadsheet.ActiveGrid.Model.ColumnsInserted += Model_ColumnsInserted;
+
+ void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Delete Rows and Columns
 
-SfSpreadsheet provides support for deleting rows and columns from a worksheet,
+SfSpreadsheet provides support for deleting rows and columns from a worksheet. 
 
 {% tabs %}
 {% highlight c# %}
@@ -50,6 +79,35 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
  spreadsheet.ActiveSheet.DeleteColumn(3, 2);
 
  spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
+
+{% endhighlight %}
+{% endtabs %}
+
+###Events
+
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are trigerred while deleting the rows and columns. 
+
+* [RowsRemoved](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
+* [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
+
+{% tabs %}
+{% highlight c# %}
+
+//To notify when rows are deleted
+
+ spreadsheet.ActiveGrid.Model.RowsRemoved += Model_RowsRemoved;
+
+ void Model_RowsRemoved(object sender, GridRangeRemovedEventArgs e)
+ {
+ }
+
+//To notify when columns are deleted
+
+ spreadsheet.ActiveGrid.Model.ColumnsRemoved += Model_ColumnsRemoved;
+
+ void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
 
 {% endhighlight %}
 {% endtabs %}
@@ -199,4 +257,3 @@ for(int i = 1; i <= 5 ; i++)
 
 {% endhighlight %}
 {% endtabs %}
-
