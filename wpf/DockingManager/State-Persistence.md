@@ -160,7 +160,7 @@ DockingManager allows to save and load the XML file. It is done using binary for
 
 {% highlight C# %}
 
-//Shows serialization methods using xml file.
+//Shows serialization methods using XML file.
 
 BinaryFormatter formatter =  new BinaryFormatter();
 
@@ -185,7 +185,7 @@ DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\\docking_xml_soap.xm
 
 {% highlight VB %}
 
-'Shows serialization methods using xml file.
+'Shows serialization methods using XML file.
 
 Dim formatter As New BinaryFormatter()
 
@@ -215,7 +215,7 @@ DockingManager allows to load and save the dock state in the binary format file.
 
 {% highlight C# %}
 
-//Shows the load and save dockstate in bindary formatter.
+//Shows the load and save dock state in binary formatter.
 
 BinaryFormatter format = new BinaryFormatter();
 
@@ -230,7 +230,7 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin")
 
 {% highlight VB %}
 
-'Shows the load and save dockstate in bindary formatter.
+'Shows the load and save dock state in binary formatter.
 
 BinaryFormatter format = new BinaryFormatter()
 
@@ -248,13 +248,13 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\docking_bin.bin"
 
 ### Save and Load using XmlWriter 
 
-DockingManager allows to load and save the dock state using XMLWriter.
+DockingManager allows to load and save the DockState using XMLWriter.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Shows the SaveDockSte method using xmlwriter.
+//Shows the SaveDockState method using XmlWriter.
 
 XmlWriter writer = XmlWriter.Create("DockStates.xml");          
 
@@ -263,7 +263,7 @@ DockingManager.SaveDockState(writer);
 writer.Close()
 
 
-//Shows the Loaddockstate method using xmlwriter
+//Shows the LoadDockState method using XmlWriter
 
 XmlReader reader = XmlReader.Create("DockStates.xml");
 
@@ -276,14 +276,14 @@ reader.Close();
 
 {% highlight VB %}
 
-'Shows the SaveDockSte method using xmlwriter.
+'Shows the SaveDockState method using XmlWriter.
 
 Dim writer As XmlWriter = XmlWriter.Create("DockStates.xml")
 
 DockingManager.SaveDockState(writer)
 
 writer.Close() XmlReader reader = XmlReader.Create("DockStates.xml")
-'Shows the Loaddockstate method using xmlwriter
+'Shows the LoadDockState method using XmlWriter
 
 DockingManager.LoadDockState(reader)
 

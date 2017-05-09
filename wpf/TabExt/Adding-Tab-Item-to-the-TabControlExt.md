@@ -174,7 +174,7 @@ TextBlock textblock2 = new TextBlock();
 
 
 
-// Setting text for textblock
+// Setting text for text block
 
 textblock2.Text = "This is TabItemExt2";
 

@@ -77,7 +77,7 @@ The ActiveWindowChanged event is raised whenever the ActiveWindow property of Do
 
 {% highlight c# %}
 
-//Changing the ActiveWindow Header based on activewindow change
+//Changing the ActiveWindow Header based on active window change
 
 private void DockingManager_ActiveWindowChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {     

@@ -77,7 +77,7 @@ TabControlExt tabControlExt = new TabControlExt();
 
 StackPanel stackPanel = new StackPanel();          
 
-//Adding control to the stackpanel
+//Adding control to the stack panel
 
 stackPanel.Children.Add(tabControlExt); 
 
