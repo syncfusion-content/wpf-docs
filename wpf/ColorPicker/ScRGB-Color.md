@@ -24,7 +24,7 @@ Using the IsScRGBColor property, user can set the value indicating whether this 
 //Creating an instance of color edit
 ColorEdit colorEdit = new ColorEdit();
 
-//Setting ScRGBColorcolorEdit.
+//Setting ScRGBColorEdit.
 IsScRGBColor = true;
 
 //Adding control to the window

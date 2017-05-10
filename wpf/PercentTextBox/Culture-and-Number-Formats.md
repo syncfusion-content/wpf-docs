@@ -68,7 +68,7 @@ You can customize the Number Format either by using the Number Format property o
 {% highlight C# %}
 PercentTextBox percentTextBox = new PercentTextBox();
 percentTextBox.Width = 150;percentTextBox.Height = 25;p
-ercentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};
+percentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};
 {% endhighlight %}
 {% endtabs %}
 

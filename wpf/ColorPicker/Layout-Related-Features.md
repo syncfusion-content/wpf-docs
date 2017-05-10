@@ -46,7 +46,7 @@ Sets the flow direction for the ColorPicker and ColorEdit controls. The options 
 {% highlight C# %}
 
 
-// Setting flow direction as right to left for ColorEditcolorEdit.
+// Setting flow direction as right to left for ColorEdit.
 FlowDirection = FlowDirection.RightToLeft;
 
 // Setting flow direction as right to left for ColorPicker

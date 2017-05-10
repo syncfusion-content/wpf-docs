@@ -575,7 +575,7 @@ private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropert
 
 {      
 
-// Insert code to do some operations when the Maxvalue property is changed 
+// Insert code to do some operations when the MaxValue property is changed 
 
 }
 
@@ -585,7 +585,7 @@ private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropert
 
 Private  Sub DoubleTextBox_MaxValueChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)      
  
-' Insert code to do some operations when the Maxvalue property is changed 
+' Insert code to do some operations when the MaxValue property is changed 
  
 End Sub
 
