@@ -35,7 +35,7 @@ DocumentContainer DocContainer = new DocumentContainer();
 //Set mode as MDIDocContainer.
 Mode = DocumentContainerMode.MDI;
 //Set switch modeDocContainer.SwitchMode = SwitchMode.QuickTabs;  ….......….......
-//Adding control to the windowthis.
+//Adding control to the window this.
 Content = DocContainer;
 {% endhighlight %}
 {% endtabs %}
