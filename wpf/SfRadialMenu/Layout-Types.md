@@ -37,7 +37,7 @@ VisibleSegmentsCount property is used to specify the number of segments availabl
 {%highlight c#%}
 SfRadialMenu radialMenu = new SfRadialMenu();
 radialMenu.LayoutType = LayoutType.Custom;
- radialMenu.VisibleSeggmentsCount = 7; 
+ radialMenu.VisibleSegmentsCount = 7; 
 {%endhighlight%}
 
 {%endtabs%}
@@ -63,7 +63,7 @@ SegmentIndex property is used to specify the index of the SfRadialMenuItem in ci
 
 SfRadialMenu radialMenu = new SfRadialMenu();
 radialMenu.LayoutType = LayoutType.Custom; 
-radialMenu.VisibleSeggmentsCount = 7; 
+radialMenu.VisibleSegmentsCount = 7; 
 SfRadialMenuItem item2 = new SfRadialMenuItem() { Header = "Item 2", SegmentIndex = 1 };               
 SfRadialMenuItem item5 = new SfRadialMenuItem() { Header   ="Item 5", SegmentIndex = 4 };
 SfRadialMenuItem item1 = new SfRadialMenuItem() { Header = "Item 1", SegmentIndex = 0 };

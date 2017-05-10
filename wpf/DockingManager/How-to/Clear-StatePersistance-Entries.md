@@ -17,7 +17,7 @@ In StatePersistence of DockingManager we have five ways to store the state. Simi
 
 DockingManager.DeleteDockState();
 
-//Deletes the persistance file in Isolatedstorage location.
+//Deletes the persistence file in IsolatedStorage location.
 
 DockingManager.DeleteInternalIsolatedStorage();
 

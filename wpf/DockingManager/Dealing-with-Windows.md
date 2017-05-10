@@ -392,7 +392,7 @@ dockingmanager.Children.Add(content1);
 
 dockingmanager.Children.Add(content2);
 
-//The following code describes how to remove the child window programatically using the remove method.
+//The following code describes how to remove the child window programmatically using the remove method.
 
 dockingmanager.Children.Remove(content2);
 
@@ -416,7 +416,7 @@ dockingmanager.Children.Add(content1)
 
 dockingmanager.Children.Add(content2)
 
-'The following code describes how to remove the child window programatically using the remove method.
+'The following code describes how to remove the child window programmatically using the remove method.
 
 dockingmanager.Children.Remove(content2)
 

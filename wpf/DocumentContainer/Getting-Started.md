@@ -71,7 +71,7 @@ To create the Document Container programmatically, use the following XAML or C# 
 {% highlight C# %}
 //Creating instance of document container
 DocumentContainer DocContainer = new DocumentContainer();
-//Adding control to the windowthis.
+//Adding control to the window this.
 Content = DocContainer;
 {% endhighlight %}
 {% endtabs %}

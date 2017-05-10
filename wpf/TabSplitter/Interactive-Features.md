@@ -189,7 +189,7 @@ tabSplitterItem1.TopPanelItems.Add(splitterPage1);
 
 
 
-// Creating an instance splitterpage
+// Creating an instance SplitterPage
 
 SplitterPage splitterPage2 = new SplitterPage();
 
@@ -309,7 +309,7 @@ tabSplitterItem1.Header = "Window1.xml";
 
 
 
-// Creating an instance splitterpage
+// Creating an instance SplitterPage
 
 SplitterPage splitterPage1 = new SplitterPage();
 
@@ -323,7 +323,7 @@ tabSplitterItem1.TopPanelItems.Add(splitterPage1);
 
 
 
-// Creating an instance splitterpage
+// Creating an instance SplitterPage
 
 SplitterPage splitterPage2 = new SplitterPage();
 
