@@ -82,13 +82,13 @@ SfChart chart = new SfChart();
 Border border = new Border()
 {
 
-BorderThickness = new Thickness(0.5, 0.5, 0.5, 0.5),
+BorderThickness = new Thickness(0.5),
 
 BorderBrush = new SolidColorBrush(Colors.Black),
 
-Margin = new Thickness(10, 10, 10, 10),
+Margin = new Thickness(10),
 
-CornerRadius = new CornerRadius(5, 5, 5, 5)
+CornerRadius = new CornerRadius(5)
 
 };
 
@@ -97,7 +97,7 @@ TextBlock textBlock = new TextBlock()
 
 Text = "Chart Area Header",
 
-Margin = new Thickness(5, 5, 5, 5),
+Margin = new Thickness(5),
 
 FontSize = 14
 
@@ -161,7 +161,7 @@ chart.Background = new SolidColorBrush(Colors.LightGray);
 
 chart.AreaBorderBrush = new SolidColorBrush(Colors.Gray);
 
-chart.AreaBorderThickness = new Thickness(3, 3, 3, 3);
+chart.AreaBorderThickness = new Thickness(3);
 
 {% endhighlight %}
 
@@ -217,16 +217,13 @@ The following code example demonstrates, how you can create multiple panes in th
 </chart:SfChart.SecondaryAxis>
 
 
-
 <chart:ColumnSeries Palette="LightCandy"
 
 ItemsSource="{Binding SneakersDetail}"         
 
 XBindingPath="Brand" 
 
-YBindingPath="ItemsCount1" 
-
-/>
+YBindingPath="ItemsCount1" />
 
 <chart:ColumnSeries Palette="Metro"
 
@@ -234,9 +231,7 @@ ItemsSource="{Binding SneakersDetail}"
 
 XBindingPath="Brand" 
 
-YBindingPath="ItemsCount" 
-
->
+YBindingPath="ItemsCount" >
 
 <chart:ColumnSeries.YAxis>
 
@@ -537,7 +532,7 @@ chart.AreaBorderBrush = new SolidColorBrush(Colors.DarkGray);
 
 chart.SideBySideSeriesPlacement = false;
 
-chart.AreaBorderThickness = new Thickness(1, 1, 1, 1);
+chart.AreaBorderThickness = new Thickness(1);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
@@ -649,9 +644,6 @@ YBindingPath="Value"  >
 
 </chart:SfChart>
 
-{% endhighlight %}
-
-{% highlight xaml %}
 
 Serialized Chart
 
