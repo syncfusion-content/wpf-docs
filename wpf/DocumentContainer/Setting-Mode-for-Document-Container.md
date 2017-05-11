@@ -28,7 +28,7 @@ To set the Document Container in TDI mode, use the following code snippet.
 {% highlight C# %}
 //Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();
 //Set mode as TDIDocContainer.Mode = DocumentContainerMode.TDI;….......….......
-//Adding control to windowthis.Content = DocContainer;
+//Adding control to window this. Content = DocContainer;
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,7 +57,7 @@ To set the Document Container in MDI mode, use the following code snippet.
 DocumentContainer DocContainer = new DocumentContainer();
 //Set mode as MDIDocContainer.
 Mode = DocumentContainerMode.MDI;….......….......
-//Adding control to windowthis.
+//Adding control to window this.
 Content = DocContainer;
 {% endhighlight %}
 

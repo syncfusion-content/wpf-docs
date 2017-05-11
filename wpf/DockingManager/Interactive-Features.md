@@ -83,7 +83,7 @@ if (DockingManager1.ActiveWindow != null)
 
 {
 
-    //Setting the Frameworkelement object with the Docking Manager's active window
+    //Setting the FrameworkElement object with the Docking Manager's active window
 
     FrameworkElement ffelement = DockingManager1.ActiveWindow;
 
@@ -105,7 +105,7 @@ You can also iterate through all the child elements of the DockingManager contro
 {% highlight c# %}
 
 
-// Handles the Click event of the dockingactivewindow control.
+// Handles the Click event of the DockingActiveWindow control.
 
         private void dockingactivewindow_Click(object sender, RoutedEventArgs e)
 

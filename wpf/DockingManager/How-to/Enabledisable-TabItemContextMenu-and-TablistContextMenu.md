@@ -27,11 +27,11 @@ ShowTabItemContextMenu is the property that is used to disable the showing of Co
 
 {% highlight c# %}
 
-//Disables the tabitem context menu.
+//Disables the TabItem context menu.
 
 DockingManager.ShowTabItemContextMenu = false;
 
-//Disables the tablist context menu.
+//Disables the TabList context menu.
 
 DockingManager.ShowTabListContextMenu = false;
 

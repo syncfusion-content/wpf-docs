@@ -658,7 +658,7 @@ Hosting a Windows Form Host in DockingManager is an easy process for which you n
 
 {% highlight c# %}
 
-//Navigating the webbrowser control defined in xaml to the given url.
+//Navigating the WebBrowser control defined in XAML to the given url.
 
 web1.Navigate(new Uri("http://syncfusion.com"));
 
@@ -928,7 +928,7 @@ When the docked window is minimized it will go to AutoHidden state and the DockW
 		
 		<ListBoxItem Margin="2,2,2,2">Ribbon DataBinding Demo</ListBoxItem> 
 		
-		<ListBoxItem Margin="2,2,2,2">Ribbon State Persistance</ListBoxItem> 
+		<ListBoxItem Margin="2,2,2,2">Ribbon State Persistence</ListBoxItem> 
 		
 		<ListBoxItem Margin="2,2,2,2">ContextTabGroup Demo</ListBoxItem>  
 		
@@ -1122,9 +1122,9 @@ The Scroll support helps to provide a clear view of the AutoHidden items without
 						   
 		<ListBoxItem Margin="2,2,2,2">TabControlExt IE7 Demo</ListBoxItem> 
 						   
-		<ListBoxItem Margin="2,2,2,2">PRISM 4 (Mef Boostrapper)</ListBoxItem>  
+		<ListBoxItem Margin="2,2,2,2">PRISM 4 (Mef Bootstrapper)</ListBoxItem>  
 						  
-		<ListBoxItem Margin="2,2,2,2">PRISM 4 (Unity Boostrapper)</ListBoxItem>  
+		<ListBoxItem Margin="2,2,2,2">PRISM 4 (Unity Bootstrapper)</ListBoxItem>  
 				  
 	</ListBox> 
 				   
@@ -1138,7 +1138,7 @@ The Scroll support helps to provide a clear view of the AutoHidden items without
 						 
 		<ListBoxItem Margin="2,2,2,2">AutoHide Demo</ListBoxItem>  
 						  
-		<ListBoxItem Margin="2,2,2,2">State Persistance Demo</ListBoxItem> 
+		<ListBoxItem Margin="2,2,2,2">State Persistence Demo</ListBoxItem> 
 						   
 		<ListBoxItem Margin="2,2,2,2">Custom Docking Demo</ListBoxItem>
 							
