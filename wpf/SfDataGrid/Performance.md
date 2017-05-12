@@ -47,16 +47,14 @@ Conditional styling using converter provides better performance compare to Data 
 ### Improving loading and scrolling performance using LightWeightTemplate
 
 You can improve the loading and scrolling performance in SfDataGrid by setting [SfDataGrid.UseDrawing](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UseDrawing.html) property as ‘Default’. When using this property, the grid cell content and its borders are drawn instead of loading `UIElement` and hence it reduces the VisualTree of SfDataGrid to improve the scrolling and loading performance. 
-XAML
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="datagrid"  
+<Syncfusion:SfDataGrid x:Name="dataGrid"  
                        UseDrawing="Default"
                        ItemsSource="{Binding OrderInfoCollection }">
 {% endhighlight %}
-C#
 {% highlight c# %}
-this.datagrid.UseDrawing = UseDrawing.Default;
+this.dataGrid.UseDrawing = UseDrawing.Default;
 {% endhighlight %}
 {% endtabs %}
 
