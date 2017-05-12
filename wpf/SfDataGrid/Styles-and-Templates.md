@@ -15,6 +15,320 @@ The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header,
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
+## Customizing Default Containers
+SfDataGrid arrange the cell and row content using cell and row container’s. Below screenshot shows the VisualTree of SfDataGrid where HeaderCell loaded into the HeaderCellControl and data cells loaded into the VirtualizingCellsControl container. VirtualizingCellsControl container consist of GridCell to load the cell content.
+
+![](Styles-and-Templates_images/Styles-and-Templates_img31.png)
+
+[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and set it [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Thus, it is possible to customize the row and cell containers by customizing the RowGeneration which cannot be done with styling and conditional styling customization options.
+
+### Row containers
+Below table shows the different types of grid rows and its container.
+<table>
+<tr>
+<td>
+{{'**RowType**'| markdownify }}
+</td>
+<td>
+{{'**Container**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+DataRow
+</td>
+<td>
+VirtualizingCellsControl
+</td>
+</tr>
+<tr>
+<td>
+UnboundRow
+</td>
+<td>
+UnBoundRowControl
+</td>
+</tr>
+<tr>
+<td>
+FilterRow
+</td>
+<td>
+FilterRowControl
+</td>
+</tr>
+<tr>
+<td>
+DetailsViewDataRow
+</td>
+<td>
+DetailsViewRowControl
+</td>
+</tr>
+<tr>
+<td>
+TableSummaryRow
+</td>
+<td>
+TableSummaryRowControl
+</td>
+</tr>
+<tr>
+<td>
+HeaderRow
+</td>
+<td>
+HeaderRowControl
+</td>
+</tr>
+<tr>
+<td>
+AddNewRow
+</td>
+<td>
+AddNewRowControl
+</td>
+</tr>
+<tr>
+<td>
+CaptionSummaryRow
+</td>
+<td>
+CaptionSummaryRowControl
+</td>
+</tr>
+<tr>
+<td>
+GroupSummaryRow
+</td>
+<td>
+GroupSummaryRowControl
+</td>
+</tr>
+<tr>
+<td>
+StackedHeaderRow
+</td>
+<td>
+GridStackedHeaderCellControl
+</td>
+</tr>
+</table>
+
+### Animating the data row when property changes
+
+You can customize the [DataRow](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DataRow.html) operations by overriding the `DataRow` class. You have to override the GetDataRow method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `DataRow`.
+Similarly, you can able to customize:
+1. [GridUnboundRow](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html)
+2. [FilterRow](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html)
+3. [SpannedDataRow](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SpannedDataRow.html)
+
+The below code example shows how to animate the `DataRow` when the row data is changed.
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
+
+public class CustomDataRow : DataRow
+{
+    public CustomDataRow()
+        : base()
+    {                  
+    }
+     
+    protected Storyboard sb = null;
+    protected override void OnRowDataChanged()
+    {
+        base.OnRowDataChanged();
+        if (this.WholeRowElement != null)
+        {
+            DoubleAnimation animation = new DoubleAnimation
+            {
+                From = 0,
+                To = 1,
+                Duration = new Duration(TimeSpan.FromMilliseconds(2000)),
+                AutoReverse = true,
+                FillBehavior = FillBehavior.Stop
+            };
+
+            Storyboard.SetTarget(animation, this.WholeRowElement);
+            Storyboard.SetTargetProperty(animation, new PropertyPath(Path.OpacityProperty));
+            sb = new Storyboard();
+            sb.Children.Add(animation);
+            sb.Begin();
+        }        
+    }             
+}
+
+public class CustomRowGenerator : RowGenerator
+{
+    public CustomRowGenerator(SfDataGrid dataGrid)
+        : base(dataGrid)
+    { }
+
+    protected override GridDataRow GetDataRow<T>(RowType type)
+    {
+        //Set the customized DataRow.
+        if (typeof(T) == typeof(DataRow))
+            return new CustomDataRow();
+        return base.GetDataRow<T>(type);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/wpf-953049514).
+![](Styles-and-Templates_images/Styles-and-Templates_img32.png)
+
+The below code example shows how to change the background color of the `VirtualizingCellsControl` when the value has been changed for a particular cell. This can be done by hooking the `DataContextChanged` and `PropertyChanged` event.
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
+
+public class CustomVirtualizingCellsControl : VirtualizingCellsControl
+{
+    public CustomVirtualizingCellsControl()
+        : base()
+    {
+        this.DataContextChanged += CustomVirtualizingCellsControl_DataContextChanged;
+    }
+
+    private void CustomVirtualizingCellsControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+    {
+        var newValue = e.NewValue as INotifyPropertyChanged;
+        newValue.PropertyChanged += NewValue_PropertyChanged;
+    }      
+    private void NewValue_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == "CustomerID")
+            this.Background = new SolidColorBrush(Colors.Pink);
+    }
+}
+
+public class CustomRowGenerator : RowGenerator
+{
+    public CustomRowGenerator(SfDataGrid dataGrid)
+        : base(dataGrid)
+    { }
+
+    protected override VirtualizingCellsControl GetVirtualizingCellsControl<T>()
+    {
+        //Set the customized VirtualizingCellsControl
+        if (typeof(T) == typeof(VirtualizingCellsControl))
+            return new CustomVirtualizingCellsControl();
+        return base.GetVirtualizingCellsControl<T>();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VirtualizingControl-1405123935.zip).
+
+### Cell containers
+Below table shows the different types of cells and its container.
+<table>
+<tr>
+<td>
+{{'**CellType**'| markdownify }}
+</td>
+<td>
+{{'**Container**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+GridCell
+</td>
+<td>
+OrientedCellsPanel
+</td>
+</tr>
+<tr>
+<td>
+GridUnBoundRowCell
+</td>
+<td>
+OrientedCellsPanel
+</td>
+</tr>
+<tr>
+<td>
+GridFilterRowCell
+</td>
+<td>
+OrientedCellsPanel
+</td>
+</tr>
+</table>
+
+### Animating the data cell when property changes
+
+You can customize the [GridCell](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html) behavior by overriding the `GridCell` class. You have to override the GetGridCell method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridCell`.
+Similarly, you can able to customize:
+1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
+2. [GridFilterRowCell](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
+The below code example shows how to animate the cell based on the changes occur in another cell using the `DataContextChanged` and `PropertyChanged` events.
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
+
+public class CustomGridCell : GridCell
+{       
+    public CustomGridCell() : base()
+    {
+        this.DataContextChanged += CustomGridCell_DataContextChanged;            
+    }
+     
+    private void CustomGridCell_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+    {
+        var newData = e.NewValue as INotifyPropertyChanged;
+        newData.PropertyChanged += Data_PropertyChanged;
+    }
+    protected Storyboard sb = null;
+    private void Data_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == "CustomerID")
+        {
+            DoubleAnimation animation = new DoubleAnimation
+            {
+                From = 0,
+                To = 1,
+                Duration = new Duration(TimeSpan.FromMilliseconds(2000)),
+                AutoReverse = false,
+                FillBehavior = FillBehavior.HoldEnd
+            };
+
+            Storyboard.SetTarget(animation, this);
+            Storyboard.SetTargetProperty(animation, new PropertyPath(Path.OpacityProperty));
+            sb = new Storyboard();
+            sb.Children.Add(animation);
+            sb.Begin();
+        }
+    }
+
+    protected override void Dispose(bool isDisposing)
+    {
+        this.DataContextChanged -= CustomGridCell_DataContextChanged;
+        base.Dispose(isDisposing);
+    }
+}
+
+public class CustomRowGenerator : RowGenerator
+{
+    public CustomRowGenerator(SfDataGrid dataGrid)
+        : base(dataGrid)
+    {
+    }
+
+    protected override GridCell GetGridCell<T>()
+    {
+        return new CustomGridCell();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gridcell-1615427562).
+
 ## Editing Style in Visual Studio Designer
 
 You can edit the SfDataGrid style in Visual Studio Designer by right clicking it in design View and click **Edit Template**.
