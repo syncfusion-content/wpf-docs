@@ -1079,15 +1079,15 @@ You can show the indication of data loading with the help of BusyIndicator by se
                             AnimationType="Gear"/>
 {% endhighlight %}
 {% highlight c# %}
-SfdataGrid.Loaded += SfdataGrid_Loaded;
-SfdataGrid.ItemsSourceChanged += SfdataGrid_ItemsSourceChanged;
+sfDataGrid.Loaded += sfDataGrid_Loaded;
+sfDataGrid.ItemsSourceChanged += sfDataGrid_ItemsSourceChanged;
 
-async void SfdataGrid_Loaded(object sender, RoutedEventArgs e)
+async void sfDataGrid_Loaded(object sender, RoutedEventArgs e)
 {
-    this.SfdataGrid.ItemsSource = await (this.DataContext as ViewModel).GetRecords();
+    this.sfDataGrid.ItemsSource = await (this.DataContext as ViewModel).GetRecords();
 }
 
-void SfdataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs e)
+void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs e)
 {
     sfBusyIndicator.IsBusy = false;
 }

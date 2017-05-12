@@ -363,11 +363,11 @@ You can customize the cell styles based on `CellType` by using [ExportingEventHa
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-options.ExportingEventHandler = GridPdfExportingEventhandler;
+options.ExportingEventHandler = GridPdfExportingEventHandler;
 var document = dataGrid.ExportToPdf(options);
 document.Save("Sample.pdf");
 
-void GridPdfExportingEventhandler(object sender, GridPdfExportingEventArgs e)
+void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {
     if (e.CellType == ExportCellType.HeaderCell)
         e.CellStyle.BackgroundBrush = PdfBrushes.LightSteelBlue;
@@ -388,11 +388,11 @@ By default, some fonts (such as Unicode font) are not supported in PDF. In
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-options.ExportingEventHandler = GridPdfExportingEventhandler;
+options.ExportingEventHandler = GridPdfExportingEventHandler;
 var document = dataGrid.ExportToPdf(options);
 document.Save("Sample.pdf");
 
-void GridPdfExportingEventhandler(object sender, GridPdfExportingEventArgs e)
+void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {    
     if (e.CellType != ExportCellType.RecordCell)
         return;
@@ -455,10 +455,10 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         return;
     if ((e.NodeEntry as OrderInfo).Country == "Mexico")
     {
-        var cellstyle = new PdfGridCellStyle();
-        cellstyle.BackgroundBrush = PdfBrushes.LightPink;             
-        cellstyle.Borders.All = new PdfPen(PdfBrushes.DarkGray, 0.2f);
-        e.PdfGridCell.Style = cellstyle;
+        var cellStyle = new PdfGridCellStyle();
+        cellStyle.BackgroundBrush = PdfBrushes.LightPink;             
+        cellStyle.Borders.All = new PdfPen(PdfBrushes.DarkGray, 0.2f);
+        e.PdfGridCell.Style = cellStyle;
     }
 }
 {% endhighlight %}
@@ -519,7 +519,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         else
             image = System.Drawing.Image.FromFile(@"..\..\Images\False.png");
 
-        //Create the PDFimage for the specified image and assigned to BackgroundImage of the PdfGridCellStyle
+        //Create the PdfImage for the specified image and assigned to BackgroundImage of the PdfGridCellStyle
         style.BackgroundImage = PdfImage.FromImage(image);
         e.PdfGridCell.ImagePosition = PdfGridImagePosition.Fit;
         e.PdfGridCell.Style = style;
@@ -633,10 +633,10 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         return;
     if (e.ColumnName == "OrderID")
     {
-        var cellstyle = new PdfGridCellStyle();
-        cellstyle.BackgroundBrush = PdfBrushes.Wheat;
-        cellstyle.Borders.All = new PdfPen(PdfBrushes.DarkGray, 0.2f);
-        e.PdfGridCell.Style = cellstyle;
+        var cellStyle = new PdfGridCellStyle();
+        cellStyle.BackgroundBrush = PdfBrushes.Wheat;
+        cellStyle.Borders.All = new PdfPen(PdfBrushes.DarkGray, 0.2f);
+        e.PdfGridCell.Style = cellStyle;
     }
 }
 {% endhighlight %}

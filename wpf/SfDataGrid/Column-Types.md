@@ -1309,9 +1309,9 @@ Using `CellTemplate`, you can format data or conditionally change the properties
 DataTemplate cellTemplate = new DataTemplate();
 
 FrameworkElementFactory frameworkElement1 = new FrameworkElementFactory(typeof(TextBlock));
-Binding displaybinding = new Binding() { Path = new PropertyPath("CustomerID") };
+Binding displayBinding = new Binding() { Path = new PropertyPath("CustomerID") };
 
-frameworkElement1.SetValue(TextBlock.TextProperty, displaybinding);
+frameworkElement1.SetValue(TextBlock.TextProperty, displayBinding);
                                   
 cellTemplate.VisualTree = frameworkElement1;
             
@@ -1319,9 +1319,9 @@ cellTemplate.VisualTree = frameworkElement1;
 DataTemplate editTemplate = new DataTemplate();
 
 FrameworkElementFactory frameworkElement2 = new FrameworkElementFactory(typeof(TextBox));
-Binding editbinding = new Binding() { Path = new PropertyPath("CustomerID"), Mode = BindingMode.TwoWay };
+Binding editBinding = new Binding() { Path = new PropertyPath("CustomerID"), Mode = BindingMode.TwoWay };
 
-frameworkElement2.SetValue(TextBox.TextProperty, editbinding);     
+frameworkElement2.SetValue(TextBox.TextProperty, editBinding);     
 
 editTemplate.VisualTree = frameworkElement2;
 
@@ -1880,8 +1880,8 @@ public class StringToImageConverter:IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
-        string imagename = value as string+".jpg";
-        return new BitmapImage(new Uri(string.Format(@"..\..\Images\{0}", imagename), UriKind.Relative));
+        string imageName = value as string+".jpg";
+        return new BitmapImage(new Uri(string.Format(@"..\..\Images\{0}", imageName), UriKind.Relative));
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -3027,12 +3027,12 @@ public class MaxLengthConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
-        int maxlength = 5;            
+        int maxLength = 5;            
         var columnValue = System.Convert.ToString(value);
-        if (columnValue.Length < maxlength)
+        if (columnValue.Length < maxLength)
             return columnValue;
         else
-            return columnValue.Substring(0, maxlength);
+            return columnValue.Substring(0, maxLength);
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

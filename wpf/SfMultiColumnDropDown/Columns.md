@@ -24,8 +24,8 @@ You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-
 SfMultiColumnDropDownControl control allows you to define the columns manually by adding desired column to the [SfMultiColumnDropDownControl.Columns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~Columns.html) collection.
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmultiColumn"
+{% highlight xaml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
                                          Width="175"
                                          Height="30"
                                          AutoGenerateColumns="false"
@@ -41,11 +41,11 @@ SfMultiColumnDropDownControl control allows you to define the columns manually b
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% highlight c# %}
-SfMultiColumnDropDownControl sfmultiColumn = new SfMultiColumnDropDownControl();
-sfmultiColumn.AutoGenerateColumns = false;
-sfmultiColumn.Columns.Add(new GridCurrencyColumn() { MappingName = “OrderID” });
-sfmultiColumn.Columns.Add(new GridTextColumn() { MappingName = “CustomerID” });
-sfmultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
+SfMultiColumnDropDownControl sfMultiColumn = new SfMultiColumnDropDownControl();
+sfMultiColumn.AutoGenerateColumns = false;
+sfMultiColumn.Columns.Add(new GridCurrencyColumn() { MappingName = “OrderID” });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “CustomerID” });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,7 +59,7 @@ In the below code, `GridLengthUnitType.Star` is sets as `GridColumnSizer` for eq
 You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#column-sizing) to know more about the column sizing.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
                                          Width="175"
                                          Height="25"                                            

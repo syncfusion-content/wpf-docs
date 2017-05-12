@@ -13,13 +13,13 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
 [DisplayMember](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~DisplayMember.html) denotes the path to a value on the data object for visual presentation of the Textbox and [ValueMember](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ValueMember.html) denotes the path to a value on the data object to get the [SelectedValue](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedValue.html). 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="400" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+    <Grid.RowDefinitions>
+        <RowDefinition Height="400" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
                                          Width=”175”
                                          Height=”30”
                                          Grid.Row="0"
@@ -27,17 +27,17 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
                                          DisplayMember=”Title”
                                          ValueMember=”OrderID”
                                          ItemsSource=”{Binding Orders}” />
-        <StackPanel Grid.Row="1" Margin="100,0,0,0">
+<StackPanel Grid.Row="1" Margin="100,0,0,0">
     <TextBlock FontSize="16" Text="SelectedItem (Display Member) " />
     <TextBlock FontSize="22"
                FontWeight="Bold"
-               Text="{Binding ElementName= sfmultiColumn,
+               Text="{Binding ElementName= ”sfMultiColumn”,
                               Mode=TwoWay,
                               Path=SelectedItem.Title}" />
     <TextBlock FontSize="16" Text="SelectedValue (Value Member) " />
     <TextBlock FontSize="22"
                FontWeight="Bold"
-               Text="{Binding ElementName= sfmultiColumn,
+               Text="{Binding ElementName= ”sfMultiColumn”,
                               Mode=TwoWay,
                               Path=SelectedValue}" />
 </StackPanel>
@@ -57,8 +57,8 @@ SfMultiColumnDropDownControl provides support to display complex and indexer pro
 Binding with complex properties
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+{% highlight xaml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
                                          Width=”175”
                                          Height=”30”
                                          SelectedIndex=”0”
@@ -79,8 +79,8 @@ Binding with complex properties
 Binding with indexer properties
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+{% highlight xaml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
                                          Width=”175”
                                          Height=”30”
                                          SelectedIndex=”0”
