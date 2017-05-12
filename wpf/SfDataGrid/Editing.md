@@ -408,7 +408,7 @@ CellTapped event occurs when the user clicks or touches the `Cell` in SfDataGrid
 <Syncfusion:SfDataGrid x:Name="dataGrid" 
                                CellTapped="datagrid_CellTapped"                         
                                ItemsSource="{Binding OrderInfoCollection }">
-        </Syncfusion:SfDataGrid>
+</Syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.CellTapped += Datagrid_CellTapped;    
@@ -434,7 +434,7 @@ CellDoubleTapped event occurs when the user double clicks or double taps the `Gr
 <Syncfusion:SfDataGrid x:Name="dataGrid" 
                                CellDoubleTapped="datagrid_CellDoubleTapped"                     
                                ItemsSource="{Binding OrderInfoCollection }">
-        </Syncfusion:SfDataGrid>
+</Syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.CellDoubleTapped += Datagrid_CellDoubleTapped;  
