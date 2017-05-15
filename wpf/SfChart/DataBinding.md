@@ -56,15 +56,15 @@ public class GoldDemand
 
 {
 
-public string Demand { get; set; }
+      public string Demand { get; set; }
 
 
 
-public double Year2010 { get; set; }
+      public double Year2010 { get; set; }
 
 
 
-public double Year2011 { get; set; }
+      public double Year2011 { get; set; }
 
 }
 
@@ -76,43 +76,43 @@ public MainPage()
 
 {
 
-this.InitializeComponent();
+      this.InitializeComponent();
 
-this.Demands = new ObservableCollection<GoldDemand>
+      this.Demands = new ObservableCollection<GoldDemand>
 
-{
+      {
 
-new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
+      new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
 
-new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+      new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
 
-new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+      new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
 
-new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+      new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
 
-new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
-
-
-
-new GoldDemand() {Demand = "Others", Year2010 = 1090.5, Year2011 = 1032.0},
-
-new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
+      new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
 
 
 
-new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+      new GoldDemand() {Demand = "Others", Year2010 = 1090.5, Year2011 = 1032.0},
 
-new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+      new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
 
-new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+      new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
 
-new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
 
-};
 
-DataContext = this;
+      new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+
+      new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+
+      new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+
+      new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
+
+      };
+
+      DataContext = this;
 
 }
 
@@ -160,13 +160,13 @@ public class StadiumDetails
 
 {
 
-public string PlaceName { get; set; }
+      public string PlaceName { get; set; }
 
-public int NumSeats { get; set; }
+      public int NumSeats { get; set; }
 
-public int Price { get; set; }
+      public int Price { get; set; }
 
-public CupDetails CupDetailsObj { get; set; }
+      public CupDetails CupDetailsObj { get; set; }
 
 }
 
@@ -174,7 +174,7 @@ public class CupDetails
 
 {
 
-public string CupName { get; set; }
+      public string CupName { get; set; }
 
 }
 
@@ -182,9 +182,9 @@ public class DataPointWithMulData
 
 {
 
-public string Name { get; set; }
+      public string Name { get; set; }
 
-public StadiumDetails StadiumObject { get; set; }
+      public StadiumDetails StadiumObject { get; set; }
 
 }
 
@@ -221,9 +221,9 @@ public class Model
 
 {
 
-public string[] Brand { get; set; }
+      public string[] Brand { get; set; }
 
-public double[] Count { get; set; }
+      public double[] Count { get; set; }
 
 }
 

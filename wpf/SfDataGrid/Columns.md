@@ -767,12 +767,12 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {    
     if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
-        var frozencolindex = this.dataGrid.FrozenColumnCount + this.dataGrid.ResolveToStartColumnIndex();
+        var frozenColIndex = this.dataGrid.FrozenColumnCount + this.dataGrid.ResolveToStartColumnIndex();
 
-        if (e.From < frozencolindex && e.To > frozencolindex - 1)
+        if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
             e.Cancel = true;
        
-        if (e.From > frozencolindex && e.To < frozencolindex ||(e.From == frozencolindex && e.To < frozencolindex))
+        if (e.From > frozenColIndex && e.To < frozenColIndex ||(e.From == frozenColIndex && e.To < frozenColIndex))
             e.Cancel = true;
     }
 }
@@ -894,8 +894,8 @@ You can add the child columns in particular stacked header directly.
 
 {% tabs %}
 {% highlight c# %}
-var childcolumn = this.dataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns;
-            this.dataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns = childcolumn + "," + "OrderDate" + "," + "Discount";
+var childColumn = this.dataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns;
+            this.dataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns = childColumn + "," + "OrderDate" + "," + "Discount";
 {% endhighlight %}
 {% endtabs %}
 
@@ -929,14 +929,14 @@ You can change the height of StackedHeaderRows by using [VisualContainer.RowHeig
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
 
-var visualcontainer = dataGrid.GetVisualContainer();            
+var visualContainer = dataGrid.GetVisualContainer();            
 int count = dataGrid.StackedHeaderRows.Count;
 
 for (int i = 0; i < count; i++)
 {               
-    visualcontainer.RowHeights[i] = 50;
+    visualContainer.RowHeights[i] = 50;
 }            
-visualcontainer.InvalidateMeasure();
+visualContainer.InvalidateMeasure();
 {% endhighlight %}
 {% endtabs %}
 
@@ -1188,9 +1188,9 @@ public class ColumnSizerExt : GridColumnSizer
     {
     }
 
-    protected override FormattedText GetFormattedText(GridColumn column, object record, string displaytext)
+    protected override FormattedText GetFormattedText(GridColumn column, object record, string displayText)
     {
-        var formattedText = base.GetFormattedText(column, record, displaytext);
+        var formattedText = base.GetFormattedText(column, record, displayText);
         if (column.MappingName.Equals("OrderID"))
         {            
             formattedText.SetFontFamily(new FontFamily("TimesNewRoman"));
@@ -1249,11 +1249,11 @@ public class GridColumnSizerExt : GridColumnSizer
         var columns = remainingColumns.ToList();
         var totalRemainingStarValue = remainingColumnWidth;
         double removedWidth = 0;
-        bool isremoved;
+        bool isRemoved;
 
         while (columns.Count > 0)
         {
-            isremoved = false;
+            isRemoved = false;
             removedWidth = 0;
             var columnsCount = 0;
 
@@ -1269,7 +1269,7 @@ public class GridColumnSizerExt : GridColumnSizer
 
             if (starWidth != computedWidth && starWidth > 0)
             {
-                isremoved = true;
+                isRemoved = true;
                 columns.Remove(column);
                 foreach (var remColumn in removedColumn)
                 {
@@ -1285,7 +1285,7 @@ public class GridColumnSizerExt : GridColumnSizer
 
             totalRemainingStarValue = totalRemainingStarValue - computedWidth;
 
-            if (!isremoved)
+            if (!isRemoved)
             {
                 columns.Remove(column);
                 if (!removedColumn.Contains(column))

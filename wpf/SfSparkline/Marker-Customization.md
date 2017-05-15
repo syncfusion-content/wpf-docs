@@ -46,7 +46,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 	MarkerVisibility = Visibility.Visible,
 
-	Padding = new Thickness(20, 20, 20, 20)
+	Padding = new Thickness(20)
 
 };
 
@@ -148,7 +148,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 	BorderBrush = new SolidColorBrush(Colors.DarkGray),
 
-	BorderThickness = new Thickness (1,1,1,1)
+	BorderThickness = new Thickness (1)
 
 };
 

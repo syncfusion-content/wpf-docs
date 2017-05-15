@@ -372,11 +372,11 @@ You can also directly bind the collection of labels to the [`LabelsSource`](http
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-ContentPath ="Content",
+    ContentPath ="Content",
 
-PositionPath = "Position",
+    PositionPath = "Position",
 
-LabelsSource = Labels
+    LabelsSource = Labels
 
 };
 
@@ -387,21 +387,21 @@ Labels = new List<LabelItem>
 
 {
 
-new LabelItem() {Position=0, Content = "0-1"},
+    new LabelItem() {Position=0, Content = "0-1"},
 
-new LabelItem() {Position=1, Content = "1-2"},
+    new LabelItem() {Position=1, Content = "1-2"},
 
-new LabelItem() {Position=2, Content = "2-3"},
+    new LabelItem() {Position=2, Content = "2-3"},
 
-new LabelItem() {Position=3, Content = "3-4"},
+    new LabelItem() {Position=3, Content = "3-4"},
 
-new LabelItem() {Position=4, Content = "4-5"},
+    new LabelItem() {Position=4, Content = "4-5"},
 
-new LabelItem() {Position=5, Content = "5-6"},
+    new LabelItem() {Position=5, Content = "5-6"},
 
-new LabelItem() {Position=6, Content = "6-7"},
+    new LabelItem() {Position=6, Content = "6-7"},
 
-new LabelItem() {Position=7, Content = "7-8"},
+    new LabelItem() {Position=7, Content = "7-8"},
 
 };
 
@@ -409,9 +409,9 @@ public class LabelItem
 
 {
 
-public string Content { get; set; }
+    public string Content { get; set; }
 
-public int Position { get; set; }
+    public int Position { get; set; }
 
 }
 
@@ -479,7 +479,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 chart.PrimaryAxis = new TimeSpanAxis()
 {
 
-LabelFormat = "g",
+    LabelFormat = "g",
 
 };
 
@@ -509,7 +509,7 @@ LabelFormat = "g",
 chart.PrimaryAxis = new NumericalAxis()
 {
 
-LabelFormat = "0.00",
+    LabelFormat = "0.00",
 
 };
 
@@ -1930,7 +1930,7 @@ chart.PrimaryAxis = new CategoryAxis()
 chart.PrimaryAxis = new DateTimeAxis()
 {
 
-LabelFormat = "MMM-dd"
+    LabelFormat = "MMM-dd"
 
 };
 
@@ -2018,14 +2018,14 @@ CloseTime="24" WorkingDays="Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,Sund
 chart.PrimaryAxis = new DateTimeAxis()
 {
 
-EnableBusinessHours = true,
+    EnableBusinessHours = true,
 
-OpenTime = 9,
+    OpenTime = 9,
 
-CloseTime = 24,
+    CloseTime = 24,
 
-WorkingDays = Day.Friday | Day.Saturday | Day.Sunday |
-              Day.Monday | Day.Tuesday| Day.Wednesday| Day.Sunday
+    WorkingDays = Day.Friday | Day.Saturday | Day.Sunday |
+                Day.Monday | Day.Tuesday| Day.Wednesday| Day.Sunday
 
 };
 
@@ -2059,7 +2059,7 @@ WorkingDays = Day.Friday | Day.Saturday | Day.Sunday |
 chart.PrimaryAxis = new DateTimeCategoryAxis()
 {
 
-LabelFormat = "MMM-dd"
+    LabelFormat = "MMM-dd"
 
 };
 
@@ -2259,7 +2259,7 @@ The following code snippet demonstrates the interval customization in NumericalA
 chart.SecondaryAxis = new NumericalAxis()
 {
 
-Interval = 250
+    Interval = 250
 
 };
 
@@ -2293,7 +2293,7 @@ The following code snippet demonstrates the interval customization in CategoryAx
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-Interval = 2
+    Interval = 2
 
 };
 
@@ -2377,7 +2377,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 chart.SecondaryAxis = new NumericalAxis()
 {
 
-DesiredIntervalsCount = 7
+    DesiredIntervalsCount = 7
 
 };
 
