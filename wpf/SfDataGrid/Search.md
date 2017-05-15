@@ -312,7 +312,7 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
     public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         var column = dataColumn.GridColumn;
-        var gridcolumn = column as GridComboBoxColumn;
+        var gridColumn = column as GridComboBoxColumn;
         uiElement.SetBinding(TextBlock.TextProperty, column.DisplayBinding);
         var textAlignment = new Binding { Path = new PropertyPath("TextAlignment"), Mode = BindingMode.OneWay, Source = column, Converter = new TextAlignmentToHorizontalAlignmentConverter() };
         uiElement.SetBinding(Control.HorizontalAlignmentProperty, textAlignment);

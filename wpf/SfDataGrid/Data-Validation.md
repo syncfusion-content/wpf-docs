@@ -222,7 +222,7 @@ void dataGrid_CurrentCellValidating(object sender, CurrentCellValidatingEventArg
     if (args.NewValue.ToString().Equals("1004"))
     {
         args.IsValid = false;
-        args.ErrorMessage = "OrdrerID 1004 cannot be passed";
+        args.ErrorMessage = "OrderID 1004 cannot be passed";
     }
 }
 {% endhighlight %}
@@ -752,7 +752,7 @@ You can change the error tip background color by setting `Background` property o
 		  Opacity="0"
 		  RenderTransformOrigin="0,0">
         <Grid.RenderTransform>
-            <TranslateTransform x:Name="xform" X="-25" />
+            <TranslateTransform x:Name="xForm" X="-25" />
         </Grid.RenderTransform>
         <VisualStateManager.VisualStateGroups>
         
@@ -765,7 +765,7 @@ You can change the error tip background color by setting `Background` property o
                     <VisualTransition GeneratedDuration="0:0:0.2" To="Open">
                         <Storyboard>
                             <DoubleAnimation Duration="0:0:0.2"
-								             Storyboard.TargetName="xform"
+								             Storyboard.TargetName="xForm"
 								             Storyboard.TargetProperty="X"
 								             To="0">
                                 <DoubleAnimation.EasingFunction>
@@ -792,7 +792,7 @@ You can change the error tip background color by setting `Background` property o
                 <VisualState x:Name="Open">
                     <Storyboard>
                         <DoubleAnimation Duration="0"
-							             Storyboard.TargetName="xform"
+							             Storyboard.TargetName="xForm"
 							             Storyboard.TargetProperty="X"
 							             To="0" />
                         <DoubleAnimation Duration="0"
@@ -967,7 +967,7 @@ private void FirstLevelNestedGrid_CurrentCellValidating(object sender, CurrentCe
     if(args.NewValue.ToString().Equals("Bike2"))
     {
         args.IsValid = false;
-        args.ErrorMessage = "Order ID 1002 not ordererd Bike2";
+        args.ErrorMessage = "Order ID 1002 not Ordered Bike2";
     }
 }
 {% endhighlight %}
@@ -1060,7 +1060,7 @@ private void FirstLevelNestedGrid_RowValidating(object sender, RowValidatingEven
     if (data.ToString().Equals("Bike1"))
     {
         args.IsValid = false;
-        args.ErrorMessages.Add("ProductName", "Product Bike 1 cannot be orderer for OrderID 1002");
+        args.ErrorMessages.Add("ProductName", "Product Bike 1 cannot be order for OrderID 1002");
     }
 }
 {% endhighlight %}

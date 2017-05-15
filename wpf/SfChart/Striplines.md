@@ -42,9 +42,9 @@ NumericalAxis axis = new NumericalAxis();
 ChartStripLine stripline = new ChartStripLine()
 {
 
-Start = 20, Width = 10,
+    Start = 20, Width = 10,
 
-Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
 };
 
@@ -94,11 +94,11 @@ NumericalAxis axis = new NumericalAxis();
 ChartStripLine stripline = new ChartStripLine()
 {
 
-Start = 20, Width = 10,
+    Start = 20, Width = 10,
 
-IsPixelWidth = true,
+    IsPixelWidth = true,
 
-Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
 };
 
@@ -154,15 +154,15 @@ NumericalAxis axis = new NumericalAxis();
 ChartStripLine stripline = new ChartStripLine()
 {
 
-Start = 20, Width = 10,
+    Start = 20, Width = 10,
 
-Label = "Stock Price",
+    Label = "Stock Price",
 
-LabelHorizontalAlignment = HorizontalAlignment.Center,
+    LabelHorizontalAlignment = HorizontalAlignment.Center,
 
-LabelVerticalAlignment = VerticalAlignment.Top,
+    LabelVerticalAlignment = VerticalAlignment.Top,
 
-Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
 };
 
@@ -214,13 +214,13 @@ NumericalAxis axis = new NumericalAxis();
 ChartStripLine stripline = new ChartStripLine()
 {
 
-Start = 20, Width = 10,
+    Start = 20, Width = 10,
 
-Label = "Stock Price",
+    Label = "Stock Price",
 
-LabelAngle = -45,
+    LabelAngle = -45,
 
-Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
 };
 
@@ -443,13 +443,13 @@ ChartStripLine stripline1 = new ChartStripLine()
 
 {
 
-RepeatEvery = 20,
+    RepeatEvery = 20,
 
-RepeatUntil = 50,
+    RepeatUntil = 50,
 
-Start = 0, Width = 10,
+    Start = 0, Width = 10,
 
-Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
+    Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
 
 };
 
@@ -457,13 +457,13 @@ ChartStripLine stripline2 = new ChartStripLine()
 
 {
 
-RepeatEvery = 20,
+    RepeatEvery = 20,
 
-RepeatUntil = 50,
+    RepeatUntil = 50,
 
-Start = 10, Width = 10,
+    Start = 10, Width = 10,
 
-Background = new SolidColorBrush(Color.FromRgb(0xA3, 0xA3, 0xA3))
+    Background = new SolidColorBrush(Color.FromRgb(0xA3, 0xA3, 0xA3))
 
 };
 
@@ -650,7 +650,7 @@ ChartStripLine stripline = new ChartStripLine()
 
     Start = 20, Width = 15,
 
-    BorderThickness = new Thickness(2, 2, 2, 2),
+    BorderThickness = new Thickness(2),
 
     BorderBrush = new SolidColorBrush(Colors.Black),
 

@@ -35,7 +35,7 @@ public class BaseCommand : ICommand
     #region Fields
     readonly Action<object> _execute;
     readonly Predicate<object> _canExecute;
-    #endregion // Fields
+    #endregion
 
     #region Constructors
     /// <summary>
@@ -59,7 +59,7 @@ public class BaseCommand : ICommand
         _execute = execute;
         _canExecute = canExecute;
     }
-    #endregion // Constructors
+    #endregion
     
     #region ICommand Members
     public bool CanExecute(object parameter)
@@ -78,7 +78,7 @@ public class BaseCommand : ICommand
         _execute(parameter);
     }
     
-    #endregion // ICommand Members
+    #endregion
 }
 
 public class EmployeeInfoViewModel : INotifyPropertyChanged
@@ -537,10 +537,10 @@ private static void OnTotalSummaryCountClicked(object obj)
         var record = (obj as GridRecordContextMenuInfo).Record as SummaryRecordEntry;
         if (record != null)
         {
-            var summaryrow = new GridSummaryRow() { Name = "totalgroupsummaryrow", Title = "{totalSummary}", ShowSummaryInRow = true };
-            summaryrow.SummaryColumns.Add(new GridSummaryColumn() { Name = "totalSummary", MappingName = "EmployeeId", SummaryType = SummaryType.CountAggregate, Format = "Total Employee Count : {Count}" });
+            var summaryRow = new GridSummaryRow() { Name = "totalGroupSummaryRow", Title = "{totalSummary}", ShowSummaryInRow = true };
+            summaryRow.SummaryColumns.Add(new GridSummaryColumn() { Name = "totalSummary", MappingName = "EmployeeId", SummaryType = SummaryType.CountAggregate, Format = "Total Employee Count : {Count}" });
             grid.TableSummaryRows.Clear();
-            grid.TableSummaryRows.Add(summaryrow);
+            grid.TableSummaryRows.Add(summaryRow);
         }
     }
 }
@@ -1287,21 +1287,21 @@ public class GridSelectionControllerExt : GridSelectionController
         set { _isDragging = value; }
     }
 
-    public VisualContainer visualcontainer = null;
+    public VisualContainer visualContainer = null;
 
     #endregion
 
-    #region ctor
+    #region ctr
 
-    public GridSelectionControllerExt(SfDataGrid sfdatagrid)
-        : base(sfdatagrid)
+    public GridSelectionControllerExt(SfDataGrid sfDataGrid)
+        : base(sfDataGrid)
     {
         this.DataGrid.Loaded += DataGrid_Loaded;
     }
 
     void DataGrid_Loaded(object sender, RoutedEventArgs e)
     {
-        visualcontainer = this.DataGrid.GetVisualContainer();
+        visualContainer = this.DataGrid.GetVisualContainer();
         this.DataGrid.AutoScroller = new AutoScrollerExt();
         UpdateAutoScroller();
     }
@@ -1326,7 +1326,7 @@ public class GridSelectionControllerExt : GridSelectionController
             InitializePopupControl();
 
             // Get the exact position where this mouse pointer is pressed
-            var p = args.GetPosition(this.visualcontainer);                
+            var p = args.GetPosition(this.visualContainer);                
 
             var gridRect = this.GetControlRect(this.DataGrid);
             // Set the Horizontal and Vertical offset for popup screen
@@ -1366,7 +1366,7 @@ public class GridSelectionControllerExt : GridSelectionController
         if (!IsDragging || this.popup == null || !(sender is DraggablePopupContentControl))
             return;
         this.draggablePopupContentControl.CaptureMouse();
-        var p = e.GetPosition(this.visualcontainer);            
+        var p = e.GetPosition(this.visualContainer);            
 
         if (!IsPointInsideSfDataGrid(p))
         {
@@ -1396,8 +1396,8 @@ public class GridSelectionControllerExt : GridSelectionController
 
     void UpdateAutoScroller()
     {
-        this.DataGrid.AutoScroller.VisualContainer = this.visualcontainer;
-        this.DataGrid.AutoScroller.AutoScrollBounds = this.visualcontainer.GetClipRect(ScrollAxisRegion.Header, ScrollAxisRegion.Footer);
+        this.DataGrid.AutoScroller.VisualContainer = this.visualContainer;
+        this.DataGrid.AutoScroller.AutoScrollBounds = this.visualContainer.GetClipRect(ScrollAxisRegion.Header, ScrollAxisRegion.Footer);
         this.DataGrid.AutoScroller.IntervalTime = new TimeSpan(0, 0, 0, 0, 40);
         this.DataGrid.AutoScroller.InsideScrollMargin = new Size(0, 0);
     }
@@ -1422,15 +1422,15 @@ public class GridSelectionControllerExt : GridSelectionController
 
         //Set the placement target for popup ,UpArrowIndicator and DownArrowIndicator
         popup.Placement = PlacementMode.Relative;
-        popup.PlacementTarget = this.visualcontainer;
+        popup.PlacementTarget = this.visualContainer;
         popup.AllowsTransparency = true;
 
         upArrowIndicator.Placement = PlacementMode.Relative;
-        upArrowIndicator.PlacementTarget = this.visualcontainer;
+        upArrowIndicator.PlacementTarget = this.visualContainer;
         upArrowIndicator.AllowsTransparency = true;
 
         downArrowIndicator.Placement = PlacementMode.Relative;
-        downArrowIndicator.PlacementTarget = this.visualcontainer;
+        downArrowIndicator.PlacementTarget = this.visualContainer;
         downArrowIndicator.AllowsTransparency = true;
 
         popup.Child = draggablePopupContentControl;
@@ -1443,7 +1443,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
     private void ShowDragIndication(Rect gridRect, Point mousePoint)
     {
-        var currentRowColumnIndex = visualcontainer.PointToCellRowColumnIndex(Mouse.GetPosition(visualcontainer));
+        var currentRowColumnIndex = visualContainer.PointToCellRowColumnIndex(Mouse.GetPosition(visualContainer));
 
         if (currentRowColumnIndex.IsEmpty || currentRowColumnIndex.RowIndex < this.DataGrid.ResolveStartIndexBasedOnPosition())
             return;
@@ -1453,17 +1453,17 @@ public class GridSelectionControllerExt : GridSelectionController
             return;
 
         var rowGenerator = this.DataGrid.GetRowGenerator();
-        var nodeentry = DataGrid.GetNodeEntry(currentRowColumnIndex.RowIndex);
+        var nodeEntry = DataGrid.GetNodeEntry(currentRowColumnIndex.RowIndex);
 
-        if (!nodeentry.IsRecords)
+        if (!nodeEntry.IsRecords)
             return;
-        var recordUnderMouse = nodeentry as RecordEntry;
+        var recordUnderMouse = nodeEntry as RecordEntry;
         var dataRow = rowGenerator.Items.FirstOrDefault(row => (row.RowType != RowType.HeaderRow && (row.RowData as Orders) == recordUnderMouse.Data as Orders)) as DataRowBase;
-        //Get the whole row element  for DataRow
-        var wholeRowELement = dataRow.GetType().GetField("WholeRowElement", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(dataRow) as VirtualizingCellsControl;
+        //Get the WholeRowElement for DataRow
+        var wholeRowElement = dataRow.GetType().GetField("WholeRowElement", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(dataRow) as VirtualizingCellsControl;
         //Get the mouse point position on the VirtualizingCellsControl
-        var mousePointOnVirtualizingCellsControl = Mouse.GetPosition(wholeRowELement);
-        //Set the Horizontal and Vertical Offset for UpAprrowIndicator and DownArrowIndicator
+        var mousePointOnVirtualizingCellsControl = Mouse.GetPosition(wholeRowElement);
+        //Set the Horizontal and Vertical Offset for UpArrowIndicator and DownArrowIndicator
         upArrowIndicator.HorizontalOffset = DataGrid.RowHeaderWidth;
         downArrowIndicator.HorizontalOffset = DataGrid.RowHeaderWidth;
 
@@ -1487,8 +1487,8 @@ public class GridSelectionControllerExt : GridSelectionController
 
     private void DragAndDropWhenGroup(MouseButtonEventArgs e)
     {
-        var point = e.GetPosition(visualcontainer);
-        var rowColumnIndex = visualcontainer.PointToCellRowColumnIndex(point);
+        var point = e.GetPosition(visualContainer);
+        var rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
         bool isSameGroup = false;
 
         if (!_isDragging)
@@ -1528,15 +1528,15 @@ public class GridSelectionControllerExt : GridSelectionController
 
     private void DragAndDropWithRecord(MouseButtonEventArgs e)
     {            
-        var point = e.GetPosition(visualcontainer);
+        var point = e.GetPosition(visualContainer);
         var upArrowPoint = new Point(upArrowIndicator.HorizontalOffset, upArrowIndicator.VerticalOffset- 22 );
         var downArrowPoint = new Point(downArrowIndicator.HorizontalOffset, downArrowIndicator.VerticalOffset + 22);            
-        var rowColumnIndex = visualcontainer.PointToCellRowColumnIndex(point);
+        var rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
         var currentRowIndex = DataGrid.ResolveToRowIndex(_draggingRecordEntry);
 
         point = rowColumnIndex.RowIndex >  currentRowIndex ? upArrowPoint : downArrowPoint;
         
-        rowColumnIndex = visualcontainer.PointToCellRowColumnIndex(point);
+        rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
         if (!_isDragging)
             return;
         if (!(this.DataGrid is DetailsViewDataGrid))
@@ -1548,21 +1548,21 @@ public class GridSelectionControllerExt : GridSelectionController
                 var index = DataGrid.ResolveToRecordIndex(rowColumnIndex.RowIndex);
                 if (index != -1)
                 {
-                    var dragrecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
+                    var dragRecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
                     // Remove the Selected Row Data from Source
-                    vm.OrderDetails.Remove(dragrecord);
+                    vm.OrderDetails.Remove(dragRecord);
                     // Add the removed Selected Row Data to Source based on RecordIndex
-                    vm.OrderDetails.Insert(index, dragrecord);
+                    vm.OrderDetails.Insert(index, dragRecord);
                     // Selected Item is reset with new data
                     DataGrid.SelectedItem = vm.OrderDetails[index];
                 }
                 else
                 {
-                    var dragrecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
+                    var dragRecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
                     // Remove the Selected Row Data from Dragging SfDataGrid 
-                    vm.OrderDetails.Remove(dragrecord);
+                    vm.OrderDetails.Remove(dragRecord);
                     // Insert the Selected row data to specified index position of dropping SfDataGrid
-                    vm.OrderDetails.Insert(index + 1, dragrecord);
+                    vm.OrderDetails.Insert(index + 1, dragRecord);
                     // Selected Item is reset with new dropped row data
                     DataGrid.SelectedItem = (_draggingRecordEntry as RecordEntry).Data;
                     this.MoveCurrentCell(new RowColumnIndex(rowColumnIndex.RowIndex + 1, 1));
@@ -1581,10 +1581,10 @@ public class GridSelectionControllerExt : GridSelectionController
 
     internal Rect GetControlRect(FrameworkElement control)
     {
-        var locationfromWindow = control.TranslatePoint(new Point(0, 0), control);
-        var locationfromScreen = locationfromWindow;
-        return new Rect((locationfromScreen.X - locationfromWindow.X),
-                            (locationfromScreen.Y - locationfromWindow.Y),
+        var locationFromWindow = control.TranslatePoint(new Point(0, 0), control);
+        var locationFromScreen = locationFromWindow;
+        return new Rect((locationFromScreen.X - locationFromWindow.X),
+                            (locationFromScreen.Y - locationFromWindow.Y),
                             control.ActualWidth, control.ActualHeight);
     }
 

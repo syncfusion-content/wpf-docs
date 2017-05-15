@@ -179,7 +179,7 @@ N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellSty
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-         <local:SelectorClass x:Key="styleselector"/>
+         <local:SelectorClass x:Key="styleSelector"/>
     <Style x:Key="CellStyle1" TargetType="syncfusion:GridCell">
         <Setter Property="Foreground" Value="Red" />
     </Style>
@@ -189,7 +189,7 @@ N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellSty
 </Application.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
-        ItemsSource="{Binding Orders}" CellStyleSelector="{StaticResource styleselector}"/>
+        ItemsSource="{Binding Orders}" CellStyleSelector="{StaticResource styleSelector}"/>
 {% endhighlight %}
 {% highlight c# %}
 public class SelectorClass : StyleSelector
@@ -596,12 +596,12 @@ Here, caption summary rows are customized where [group key](http://help.syncfusi
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>    
+    <local:SelectorClass x:Key="styleSelector"/>    
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" 
                        ShowGroupDropArea="True"
-                       CaptionSummaryRowStyleSelector="{StaticResource styleselector}"
+                       CaptionSummaryRowStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.CaptionSummaryRow>
         <syncfusion:GridSummaryRow Title="Total Price : {price}" ShowSummaryInRow="True">
@@ -662,11 +662,11 @@ The appearance of caption summary row can be conditionally customized based on [
 </Application.Resources>
 
 <Window.Resources>
-    <local:CustomCaptionSummaryRowStyleSelector x:Key="styleselector" />
+    <local:CustomCaptionSummaryRowStyleSelector x:Key="styleSelector" />
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
-                       CaptionSummaryRowStyleSelector="{StaticResource styleselector}"
+                       CaptionSummaryRowStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
 {% endhighlight %}
@@ -677,7 +677,7 @@ public class CustomCaptionSummaryRowStyleSelector : StyleSelector
     {
         var dataRow = item as DataRowBase;
         var level = dataRow.Level;
-        //based on group levels, style applied to captionsummaryrow
+        //based on group levels, style applied to CaptionSummaryRow
         if (level == 1)
             return App.Current.Resources["rowStyle1"] as Style;
         else if (level == 2)
@@ -782,12 +782,12 @@ Here, group summary cells are customized based on summary values whether it’s 
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>        
+    <local:SelectorClass x:Key="styleSelector"/>        
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        ShowGroupDropArea="True"
-                       GroupSummaryCellStyleSelector="{StaticResource styleselector}"
+                       GroupSummaryCellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}">
             <syncfusion:SfDataGrid.GroupSummaryRows>
                 <syncfusion:GridSummaryRow ShowSummaryInRow="False">
@@ -853,12 +853,12 @@ Here, group summary cells are customized based on `TotalPrice` summary column.
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>        
+    <local:SelectorClass x:Key="styleSelector"/>        
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        ShowGroupDropArea="True"
-                       GroupSummaryCellStyleSelector="{StaticResource styleselector}"
+                       GroupSummaryCellStyleSelector="{StaticResource styleSelector}"
                        ItemsSource="{Binding Orders}">
             <syncfusion:SfDataGrid.GroupSummaryRows>
                 <syncfusion:GridSummaryRow ShowSummaryInRow="False">
@@ -992,11 +992,11 @@ The appearance of group summary row can be customized conditionally based on sum
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>    
+    <local:SelectorClass x:Key="styleSelector"/>    
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
-                       GroupSummaryRowStyleSelector="{StaticResource styleselector}"
+                       GroupSummaryRowStyleSelector="{StaticResource styleSelector}"
                        ShowGroupDropArea="True"
                        ItemsSource="{Binding Orders}">
             <syncfusion:SfDataGrid.GroupSummaryRows>
@@ -1140,13 +1140,13 @@ The appearance of table summary cell can be customized conditionally based on su
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>        
+    <local:SelectorClass x:Key="styleSelector"/>        
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"    
                        ShowRowHeader="True"            
                        ItemsSource="{Binding Orders}"
-                       TableSummaryCellStyleSelector="{StaticResource styleselector}">
+                       TableSummaryCellStyleSelector="{StaticResource styleSelector}">
            <syncfusion:SfDataGrid.TableSummaryRows>
                 <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
                     <syncfusion:GridTableSummaryRow.SummaryColumns>
@@ -1216,13 +1216,13 @@ Here, table summary cells are customized based on `TotalPrice` summary column.
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>        
+    <local:SelectorClass x:Key="styleSelector"/>        
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"    
                        ShowRowHeader="True"            
                        ItemsSource="{Binding Orders}"
-                       TableSummaryCellStyleSelector="{StaticResource styleselector}">
+                       TableSummaryCellStyleSelector="{StaticResource styleSelector}">
            <syncfusion:SfDataGrid.TableSummaryRows>
                 <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
                     <syncfusion:GridTableSummaryRow.SummaryColumns>
@@ -1333,13 +1333,13 @@ The appearance of table summary row can be customized conditionally based on sum
 </Application.Resources>
 
 <Window.Resources>
-    <local:SelectorClass x:Key="styleselector"/>    
+    <local:SelectorClass x:Key="styleSelector"/>    
 </Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"             
                        ShowRowHeader="True"   
                        ItemsSource="{Binding Orders}" 
-                       TableSummaryRowStyleSelector="{StaticResource styleselector}" >
+                       TableSummaryRowStyleSelector="{StaticResource styleSelector}" >
             <syncfusion:SfDataGrid.TableSummaryRows>
                 <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
                     <syncfusion:GridTableSummaryRow.SummaryColumns>

@@ -149,7 +149,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
         e.Range = range;
         e.Handled = true;
     }
-    //If the calculated range is already exist in CoveredCells then You can get that the range using SfDataGrid.GetConflictRange (CoveredCellInfo coverdCellInfo) extension method.
+    //If the calculated range is already exist in CoveredCells then You can get that the range using SfDataGrid.GetConflictRange (CoveredCellInfo coveredCellInfo) extension method.
 }
 
 /// <summary>
@@ -213,8 +213,8 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
         // set right index
         if (rightColumn != null)
         {
-            var rightColumIndex = this.dataGrid.ResolveToScrollColumnIndex(this.dataGrid.Columns.IndexOf(rightColumn));
-            range = new CoveredCellInfo(range.Left, rightColumIndex, range.Top, range.Bottom);
+            var rightColumnIndex = this.dataGrid.ResolveToScrollColumnIndex(this.dataGrid.Columns.IndexOf(rightColumn));
+            range = new CoveredCellInfo(range.Left, rightColumnIndex, range.Top, range.Bottom);
         }
         return range;
     }

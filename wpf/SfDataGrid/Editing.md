@@ -382,11 +382,11 @@ You can use the [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/
 this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
 void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs args)
 {
-    var recordindex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
-    var columnindex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
-    var mappingname = this.dataGrid.Columns[columnindex].MappingName;
-    var record = this.dataGrid.View.Records.GetItemAt(recordindex);
-    var cellvalue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingname);
+    var recordIndex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
+    var columnIndex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
+    var mappingName = this.dataGrid.Columns[columnIndex].MappingName;
+    var record = this.dataGrid.View.Records.GetItemAt(recordIndex);
+    var cellValue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
     if (args.RowColumnIndex == new RowColumnIndex(3, 2))
     args.Cancel = true;
 }
@@ -566,7 +566,7 @@ public class SfDataGridExt : SfDataGrid
         RowGenerator rowGenerator = this.RowGenerator;
         //Get the row from the Row index
         var dataRow = rowGenerator.Items.FirstOrDefault(item => item.RowIndex == rowColumnIndex.RowIndex);
-        //Check whether the datarow is null or not and the type as DataRow
+        //Check whether the dataRow is null or not and the type as DataRow
         if (dataRow != null && dataRow is DataRow)
         {
             //Get the column from the VisibleColumn collection based on the column index

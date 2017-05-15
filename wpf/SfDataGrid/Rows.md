@@ -305,14 +305,14 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
         if (e.Reason == QueryColumnDraggingReason.Dropping)
         {
             //used to get frozen column index from the  frozen column count
-            var frozencolindex = dataGrid.FrozenColumnCount +
+            var frozenColIndex = dataGrid.FrozenColumnCount +
                                               this.dataGrid.ResolveToStartColumnIndex();
             //cancels dragging from frozen column to non-frozen column
-            if (e.From < frozencolindex && e.To > frozencolindex - 1)
+            if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
                 e.Cancel = true;
             // cancels dragging from non-frozen column to frozen column
-            if (e.From > frozencolindex && e.To < frozencolindex ||
-                 (e.From == frozencolindex && e.To < frozencolindex))
+            if (e.From > frozenColIndex && e.To < frozenColIndex ||
+                 (e.From == frozenColIndex && e.To < frozenColIndex))
                 e.Cancel = true;
         }
     }

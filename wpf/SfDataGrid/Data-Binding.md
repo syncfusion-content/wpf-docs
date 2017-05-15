@@ -338,10 +338,10 @@ public class WcfDataService1 : DataService<NORTHWNDEntities>
     // This method is called only once to initialize service-wide policies.
     public static void InitializeService(DataServiceConfiguration config)
     {
-        // TODO: set rules to indicate which entity sets and service operations are visible, updatable, etc.
+        // TODO: set rules to indicate which entity sets and service operations are visible, Updatable , etc.
         // Examples:
         config.SetEntitySetAccessRule("*", EntitySetRights.AllRead);
-        // config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
+        // config.SetEntitySetAccessRule("MyEntitySet", EntitySetRights.AllRead);
         // config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
         //config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
     }
@@ -445,11 +445,11 @@ To access data from the database created in previous step, create a ViewModel cl
 {% highlight c# %}
 public class ViewModel
 {
-    private List<Order_Detail> orderdetails;
+    private List<Order_Detail> orderDetails;
     public List<Order_Detail> OrderDetails
     {
-        get { return orderdetails; }
-        set { orderdetails = value; }
+        get { return orderDetails; }
+        set { orderDetails = value; }
     }
 
     public ViewModel()

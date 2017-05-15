@@ -113,7 +113,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
 
-    BorderThickness = new Thickness(1, 1, 1, 1),
+    BorderThickness = new Thickness(1),
 
     LineStyle = this.Resources["lineStyle1"] as Style,
 

@@ -34,11 +34,11 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 {
 
-ExportDemoChart.Save("chart_image.png"); //Save in Debug location
+    ExportDemoChart.Save("chart_image.png"); //Save in Debug location
 
-ExportDemoChart.Save("D:\\Pictures\\Test\\chart_image.png"); 
+    ExportDemoChart.Save("D:\\Pictures\\Test\\chart_image.png"); 
 
-//Save in ‘D:\Picture\Test’ location.
+    //Save in ‘D:\Picture\Test’ location.
 
 }
 

@@ -89,7 +89,7 @@ In order to add control manually in XAML, do the below steps,
 3. Declare `SfMultiColumnDropDownControl` in XAML page.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <Window
         xmlns=”http://schemas.microsoft.com/winfx/2006/xaml/presentation”
         xmlns:x=”http://schemas.microsoft.com/winfx/2006/xaml”
@@ -124,8 +124,8 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
-            SfMultiColumnDropDownControl sfmultiColumn = new SfMultiColumnDropDownControl();
-            Root_Grid.Children.Add(sfmultiColumn);
+            SfMultiColumnDropDownControl sfMultiColumn = new SfMultiColumnDropDownControl();
+            Root_Grid.Children.Add(sfMultiColumn);
         }
     }
 }
@@ -232,7 +232,7 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
 Bind the collection created in previous step to `ItemsSource` property by setting ViewModel as DataContext.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <Window
         xmlns=”http://schemas.microsoft.com/winfx/2006/xaml/presentation”
         xmlns:x=”http://schemas.microsoft.com/winfx/2006/xaml”
@@ -244,7 +244,7 @@ Bind the collection created in previous step to `ItemsSource` property by settin
         <local:ViewModel/>
     </Window.DataContext>
     <Grid x:Name=”Root_Grid”>
-        <syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn” 
+        <syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn” 
                                                  ItemsSource=”{Binding Orders}” 
                                                  DisplayMember=”OrderID” 
                                                  Width=”175”
@@ -254,8 +254,8 @@ Bind the collection created in previous step to `ItemsSource` property by settin
 </Window>
 {% endhighlight %}
 {% highlight c# %}
-ViewModel viewmodel = new ViewModel();
-sfmultiColumn.ItemsSource = viewmodel.Orders;
+ViewModel viewModel = new ViewModel();
+sfMultiColumn.ItemsSource = viewModel.Orders;
 {% endhighlight %}
 {% endtabs %}
 ![](Getting-Started_images/Getting-Started_img3.png)
@@ -271,8 +271,8 @@ Refer [here](http://help.syncfusion.com/wpf/sfmulticolumndropdown/data-binding) 
 By default, the SfMultiColumnDropDownControl generates the columns automatically based on [ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ItemsSource.html) property. You can prevent the automatic column generation by setting[AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AutoGenerateColumns.html) property to `false`. When `AutoGenerateColumns` property is false, you have to define the columns to be displayed as below,
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
+{% highlight xaml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
                                          Width=”175”
                                          Height=”30”
                                          SelectedIndex=”0”
@@ -287,11 +287,11 @@ By default, the SfMultiColumnDropDownControl generates the columns automatically
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% highlight c# %}
-SfMultiColumnDropDownControl sfmultiColumn = new SfMultiColumnDropDownControl();
-sfmultiColumn.AutoGenerateColumns = false;
-sfmultiColumn.Columns.Add(new GridTextColumn() { MappingName = “OrderID” });
-sfmultiColumn.Columns.Add(new GridTextColumn() { MappingName = “CustomerID” });
-sfmultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
+SfMultiColumnDropDownControl sfMultiColumn = new SfMultiColumnDropDownControl();
+sfMultiColumn.AutoGenerateColumns = false;
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “OrderID” });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “CustomerID” });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 {% endhighlight %}
 {% endtabs %}
 
