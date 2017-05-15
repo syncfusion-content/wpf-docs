@@ -843,9 +843,9 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
     Background = new SolidColorBrush(Colors.DarkGray),
 
-    BorderThickness = new Thickness(1, 1, 1, 1),
+    BorderThickness = new Thickness(1),
 
-    Margin = new Thickness(1, 1, 1, 1),
+    Margin = new Thickness(1),
 
     FontStyle = FontStyles.Italic,
 
@@ -1428,9 +1428,9 @@ ColumnSeries series = new ColumnSeries();
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
 
-ShowLabel = true,
+    ShowLabel = true,
 
-LabelPosition = AdornmentsLabelPosition.Center
+    LabelPosition = AdornmentsLabelPosition.Center
 
 };
 
@@ -1466,9 +1466,9 @@ ColumnSeries series = new ColumnSeries();
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
 
-ShowLabel = true,
+    ShowLabel = true,
 
-LabelPosition = AdornmentsLabelPosition.Inner
+    LabelPosition = AdornmentsLabelPosition.Inner
 
 };
 

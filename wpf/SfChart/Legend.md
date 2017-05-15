@@ -156,11 +156,11 @@ chart.Legend = new ChartLegend()
 
     IconVisibility = Visibility.Visible,
 
-    CornerRadius = new CornerRadius(5, 5, 5, 5),
+    CornerRadius = new CornerRadius(5),
 
-    ItemMargin = new Thickness(10, 10, 10, 10),
+    ItemMargin = new Thickness(10),
 
-    BorderThickness = new Thickness(1, 1, 1, 1),
+    BorderThickness = new Thickness(1),
 
     BorderBrush = new SolidColorBrush(Colors.Black)
 
@@ -514,7 +514,7 @@ TextBlock textBlock = new TextBlock()
 
     VerticalAlignment = VerticalAlignment.Center,
 
-    Margin = new Thickness(15, 15, 15, 15)
+    Margin = new Thickness(15)
 
 };
 
@@ -613,15 +613,15 @@ SfChart.SetColumn(axis, 1);
 SplineSeries splineSeries = new SplineSeries()
 {
 
-Label = "Legend1",
+    Label = "Legend1",
 
-ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().SneakersDetail,
 
-XBindingPath = "Brand",
+    XBindingPath = "Brand",
 
-YBindingPath = "ItemsCount",
+    YBindingPath = "ItemsCount",
 
-XAxis = axis
+    XAxis = axis
 
 };
 

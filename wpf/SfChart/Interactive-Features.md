@@ -266,7 +266,7 @@ ColumnSeries series1 = new ColumnSeries()
 
 };
 
-ChartTooltip.SetTooltipMargin(series1, new Thickness(25, 25, 25, 25));
+ChartTooltip.SetTooltipMargin(series1, new Thickness(25));
 
 ColumnSeries series2 = new ColumnSeries()
 {
@@ -285,7 +285,7 @@ ColumnSeries series2 = new ColumnSeries()
 
 };
 
-ChartTooltip.SetTooltipMargin(series2, new Thickness(25, 25, 25, 25));
+ChartTooltip.SetTooltipMargin(series2, new Thickness(25));
 
 chart.Series.Add(series1);
 
@@ -1277,19 +1277,19 @@ YBindingPath="Year2010">
 ColumnSeries series = new ColumnSeries()
 {
 
-ItemsSource = new ViewModel().Demands,
+    ItemsSource = new ViewModel().Demands,
 
-XBindingPath = "Demand",
+    XBindingPath = "Demand",
 
-YBindingPath = "Year2010",
+    YBindingPath = "Year2010",
 
-EnableSegmentDragging = true,
+    EnableSegmentDragging = true,
 
-EnableDragTooltip = true,
+    EnableDragTooltip = true,
 
-Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
 
-Label = "2010"
+    Label = "2010"
 
 };
 
@@ -2122,7 +2122,7 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 
     ToolBarItemWidth = 15,
 
-    ToolBarItemMargin = new Thickness(10, 10, 10, 10),
+    ToolBarItemMargin = new Thickness(10),
 
     ToolBarItems = ZoomToolBarItems.All
 
