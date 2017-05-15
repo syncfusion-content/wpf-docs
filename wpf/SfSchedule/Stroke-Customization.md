@@ -83,7 +83,7 @@ Used to customize the line stroke of month view.</td></tr>
 
                                MinorTickLabelStroke="Green"
 
-                               DayViewVerticaLineStroke="Blue"
+                               DayViewVerticalLineStroke="Blue"
 
                                MonthViewLineStroke="Orange"
 
@@ -114,7 +114,7 @@ Used to customize the line stroke of month view.</td></tr>
 
             schedule.MinorTickLabelStroke = new SolidColorBrush(Colors.Green);
 
-            schedule.DayViewVerticaLineStroke = new SolidColorBrush(Colors.Blue);
+            schedule.DayViewVerticalLineStroke = new SolidColorBrush(Colors.Blue);
 
             schedule.MonthViewLineStroke = new SolidColorBrush(Colors.Orange); 
 
