@@ -1145,7 +1145,8 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 
 ## Validation with LightWeightTemplate
 
-By default, validation is not support while enable the `UseDrawing` property as draw the cell content. However, SfDataGrid provides an option to achieve the validation by adding the validation template. 
+By default, validation is not supported while enabling the `UseDrawing` property since the cell content were drawn instead of loading the UIElement. However, SfDataGrid provides an option to achieve the validation by adding the validation template. 
+
 Please refer the below code example for further details about achieving Validation when using `UseDrawing` property.
 {% tabs %}
 {% highlight xaml %}
@@ -1333,6 +1334,7 @@ Please refer the below code example for further details about achieving Validati
     </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
+
 You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF1707875331). 
 
 ## Limitations
