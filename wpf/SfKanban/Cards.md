@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kanban Cards | SfKanban | wpf | Syncfusion
-description: Kanban Cards
+description: This section describes how the card can be customized using CardTemplate. It contains how to set the IndicatorColorPalette to Kanban. 
 platform: wpf
 control: SfKanban
 documentation: ug
@@ -87,32 +87,80 @@ You can replace the entire card template with your own design using [`SfKanban.C
 <kanban:SfKanban.CardTemplate>
     
     <DataTemplate>
-        
-        <StackPanel Margin="0,10,0,10" Orientation="Vertical"
-                    Background="Gray" Padding="10,10,10,10">
-
-            <StackPanel Orientation="Horizontal">
-
-                <TextBlock Text="{Binding Path=Title}" Foreground="Silver"/>
-
-            </StackPanel>
-
-            <StackPanel  Orientation="Horizontal">
-
-                <TextBlock Text="{Binding Description}" Width="150"
-                       FontSize="14" Foreground="Silver" TextWrapping="WrapWholeWords"/>
-                
-                <Image Source="{Binding ImageURL}" Margin="30,0,0,10"
-                       Height="50" Width="50"/>
-
-            </StackPanel>
-
-        </StackPanel>
-        
-    </DataTemplate>
     
-</kanban:SfKanban.CardTemplate>
+        <Border BorderBrush="Black"
+    
+                BorderThickness="0.75"
+    
+                CornerRadius="10"
+    
+                Background="AliceBlue"
+    
+                Margin="0,5,0,5">
+    
+            <Grid Margin="10,5,5,10">
+    
+                <Grid.ColumnDefinitions>
+    
+                    <ColumnDefinition Width="7*" />
+    
+                    <ColumnDefinition Width="3*" />
+                
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                
+                    <RowDefinition Height="Auto" />
+                
+                    <RowDefinition Height="Auto" />
+                
+                </Grid.RowDefinitions>
+                
+                <TextBlock Text="{Binding Path=Title}"
+                
+                           FontWeight="Bold"
+                
+                           FontSize="16" />
+                
+                <TextBlock Grid.Row="1"
+                
+                           FontSize="14"
+                
+                           HorizontalAlignment="Left"
+                
+                           Text="{Binding Description}"
+                
+                           TextWrapping="WrapWholeWords" />
+                
+                <Border Grid.Row="1"
+                
+                        Grid.Column="1"
+                
+                        Height="50"
+                
+                        CornerRadius="50"
+                
+                        Width="50"
+                
+                        BorderBrush="Silver"
+                
+                        BorderThickness=".75">
+                
+                    <Border.Background>
+                
+                        <ImageBrush ImageSource="{Binding ImageURL}" />
+                
+                    </Border.Background>
+                
+                </Border>
+            
+            </Grid>
+        
+        </Border>
 
+    </DataTemplate>
+
+</kanban:SfKanban.CardTemplate>
 
 {% endhighlight %}
 
