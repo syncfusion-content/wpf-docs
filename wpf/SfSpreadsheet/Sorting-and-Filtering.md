@@ -77,7 +77,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting) UG documentation.
 
-N> If the user has applied sorting and filtering at runtime, then they should [referes the view](https://help.syncfusion.com/wpf/sfspreadsheet/working-with-sfspreadsheet#refreshing-the-view) to update the modifications in `SpreadsheetGrid`. But this is not updated in the spreadsheet filter popup UI. 
+N> If sorting or filtering has been applied programmatically at runtime, then [refresh the view](https://help.syncfusion.com/wpf/sfspreadsheet/working-with-sfspreadsheet#refreshing-the-view) to update it in `SpreadsheetGrid`. But this changes will not be updated in Filter popup even after refreshing the view. 
 
 ## Unsupported Features
 
