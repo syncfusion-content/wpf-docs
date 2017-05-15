@@ -65,8 +65,8 @@ Recurrence can be applied by using RRuleGenerator method.
      SchApp.Subject = "Team Meeting";          
 	 SchApp.Notes = "Daily Recurrence";         
 	 SchApp.Location = "Meeting Hall 1";        
-	 SchApp.StartTime = currentdate;    
-	 SchApp.EndTime = currentdate.AddHours(4);    
+	 SchApp.StartTime = currentDate;    
+	 SchApp.EndTime = currentDate.AddHours(4);    
 	 SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));            // Setting Recurrence Properties          
 	 RecurrenceProperties RecProp = new RecurrenceProperties();      
 	 RecProp.RecurrenceType = RecurrenceType.Daily;      
@@ -76,7 +76,7 @@ Recurrence can be applied by using RRuleGenerator method.
 	 RecProp.IsRangeNoEndDate = false;       
      RecProp.IsRangeEndDate = false;       
      RecProp.RangeRecurrenceCount = 100;            
-	 // Generating RRule using ScheduleHelper           
+	 // Generating RRULE using ScheduleHelper           
 	 SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);            SchApp.IsRecursive = true;     
 	 AppCollection.Add(SchApp);   
 	 Schedule.Appointments = AppCollection;
