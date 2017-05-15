@@ -519,8 +519,8 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         else
             image = System.Drawing.Image.FromFile(@"..\..\Images\False.png");
 
-        //Create the PdfImage for the specified image and assigned to BackgroundImage of the PdfGridCellStyle
-        style.BackgroundImage = PdfImage.FromImage(image);
+        //Create the PDFImage for the specified image and assigned to BackgroundImage of the PdfGridCellStyle
+        style.BackgroundImage = PDFImage.FromImage(image);
         e.PdfGridCell.ImagePosition = PdfGridImagePosition.Fit;
         e.PdfGridCell.Style = style;
         //customize the Border color of PdfGridCell
