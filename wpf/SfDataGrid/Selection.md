@@ -461,15 +461,15 @@ You can select data objects while loading DetailsViewDataGrid using [DetailsView
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid Name="datagrid" 
-                       DetailsViewLoading="datagrid_DetailsViewLoading" >
+<syncfusion:SfDataGrid Name="dataGrid" 
+                       DetailsViewLoading="dataGrid_DetailsViewLoading" >
 </syncfusion:SfDataGrid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.datagrid.DetailsViewLoading += datagrid_DetailsViewLoading;
+this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
     var record = e.DetailsViewDataGrid.GetRecordAtRowIndex(e.DetailsViewDataGrid.GetFirstDataRowIndex());
@@ -533,10 +533,10 @@ You can expand the `DetailsViewDataGrid` programmatically by calling `ExpandDeta
 {% highlight c# %}
 
 int parentRowIndex = 2;
-var recordIndex = this.datagrid.ResolveToRecordIndex(parentRowIndex);
-var record = this.datagrid.View.Records[recordIndex];
+var recordIndex = this.dataGrid.ResolveToRecordIndex(parentRowIndex);
+var record = this.dataGrid.View.Records[recordIndex];
 if (!record.IsExpanded)
-    this.datagrid.ExpandDetailsViewAt(recordIndex);
+    this.dataGrid.ExpandDetailsViewAt(recordIndex);
 
 {% endhighlight %}
 {% endtabs %}

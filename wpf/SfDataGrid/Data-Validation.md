@@ -967,7 +967,7 @@ private void FirstLevelNestedGrid_CurrentCellValidating(object sender, CurrentCe
     if(args.NewValue.ToString().Equals("Bike2"))
     {
         args.IsValid = false;
-        args.ErrorMessage = "Order ID 1002 not Ordered Bike2";
+        args.ErrorMessage = "Order ID 1002 not ordered Bike2";
     }
 }
 {% endhighlight %}
