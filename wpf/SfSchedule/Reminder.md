@@ -41,7 +41,7 @@ Schedule reminds you the particular appointment in the specified time by setting
 
 	StartTime = currentDate.Date.AddDays(1).AddHours(10),
 
-	EndTime = currectDate.Date.AddDays(1).AddHours(16),
+	EndTime = currentDate.Date.AddDays(1).AddHours(16),
 
 	AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
 
