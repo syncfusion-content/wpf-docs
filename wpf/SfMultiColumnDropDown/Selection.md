@@ -25,9 +25,9 @@ You can handle the selection operations in SfMultiColumnDropDownControl by using
 
 {% tabs %}
 {% highlight c# %}
-sfmultiColumn.SelectionChanged += sfmultiColumn _SelectionChanged;
+sfMultiColumn.SelectionChanged += sfMultiColumn _SelectionChanged;
 
-void sfmultiColumn _SelectionChanged(object sender, Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs args)
+void sfMultiColumn _SelectionChanged(object sender, Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs args)
 {
      var selectedValue = (sender as SfMultiColumnDropDownControl).SelectedValue;
 }

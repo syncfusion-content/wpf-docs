@@ -274,7 +274,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         dataPager.OnDemandLoading += dataPager_OnDemandLoading;
         string connectionString = string.Format(@"Data Source = {0}", ("Northwind.sdf"));
-       //northwind dataprovider connectivity.
+       //northWind dataProvider connectivity.
         northWind = new Northwind(connectionString);
     }
 
@@ -485,15 +485,15 @@ public MainWindow()
 }
 
 //async method which return data with some delay
-public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startindex, int pagesize)
+public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startIndex, int pageSize)
 {
     var employees = new List<Employees>();
     //wait the method Execution to 2000 milliseconds
     System.Threading.Thread.Sleep(2000);
-    for (int i = startindex; i < (startindex + pagesize); i++)
+    for (int i = startIndex; i < (startIndex + pageSize); i++)
     {
         //Get the Data's to SfDataPager from ViewModel class
-        employees.Add(repository.GetEmployees(i,pagesize));
+        employees.Add(repository.GetEmployees(i,pageSize));
     }
     return employees;
 }
@@ -521,11 +521,11 @@ public class EmployeeInfoRespository
     {
     }
 
-    public List<Employees> GetEmployees(int startindex, int pagesize)
+    public List<Employees> GetEmployees(int startIndex, int pageSize)
     {
         int j = 0;
         var employees = new List<Employees>();
-        for (int i = startindex; i < (startindex + pagesize); i++)
+        for (int i = startIndex; i < (startIndex + pageSize); i++)
         {
             Employees employee = GetEmployee(employees);
             employees.Add(employee);

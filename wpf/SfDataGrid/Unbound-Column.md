@@ -292,7 +292,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 {
     if(e.UnBoundAction == UnBoundActions.CommitData)
     {
-        var edittedValue = e.Value;
+        var editedValue = e.Value;
     }
 }
 {% endhighlight %}
@@ -422,18 +422,18 @@ public class GridUnBoundCellTextBoxRendererExt : GridUnBoundCellTextBoxRenderer
 {
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
-         object cellvalue = null;
+        object cellValue = null;
         if (dataContext != null)
-            cellvalue = DataGrid.GetUnBoundCellValue(dataColumn.GridColumn, dataContext);
-        uiElement.Text = cellvalue == null ? string.Empty : cellvalue.ToString(); ;
+            cellValue = DataGrid.GetUnBoundCellValue(dataColumn.GridColumn, dataContext);
+        uiElement.Text = cellValue == null ? string.Empty : cellValue.ToString(); ;
         uiElement.Foreground = new SolidColorBrush(Colors.Blue);
     }
     public override void OnInitializeEditElement(DataColumnBase dataColumn, TextBox uiElement, object dataContext)
     {                
-        object cellvalue = null;
+        object cellValue = null;
         if (dataContext != null)
-            cellvalue = DataGrid.GetUnBoundCellValue(dataColumn.GridColumn, dataContext);
-        uiElement.Text = cellvalue == null ? string.Empty : cellvalue.ToString();        
+            cellValue = DataGrid.GetUnBoundCellValue(dataColumn.GridColumn, dataContext);
+        uiElement.Text = cellValue == null ? string.Empty : cellValue.ToString();        
     }
 }
 {% endhighlight %}

@@ -61,7 +61,7 @@ By default, SfDataGrid try to read the resource file from executing assembly and
 public MainWindow()
 {
     System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");            
-    Syncfusion.UI.Xaml.Grid.GridResourceWrapper.SetResources("Assembly_name", "namespeace_name");
+    Syncfusion.UI.Xaml.Grid.GridResourceWrapper.SetResources("Assembly_name", "namespace_name");
     InitializeComponent();
 }
 {% endhighlight %}

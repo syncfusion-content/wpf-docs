@@ -11,8 +11,8 @@ documentation: ug
 SfMultiColumnDropDownControl allows you to customize the Popup appearance by setting [PopupBackground](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupBackground.html), [PopupBorderBrush](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupBorderBrush.html), [PopupDropDownGridBackground](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupDropDownGridBackground.html) and [PopupBorderThickness](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupBorderThickness.html) properties.
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmultiColumn"
+{% highlight xaml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
                                          Width="175"
                                          Height="30"                                                     
                                          DisplayMember="CustomerName"
@@ -36,8 +36,8 @@ SfMultiColumnDropDownControl allows you to customize the Popup appearance by set
 You can change the drop down grid background by setting [PopupDropDownGridBackground](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupDropDownGridBackground.html).
 
 {% tabs %}
-{% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmultiColumn"
+{% highlight xaml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
                                          Width="175"
                                          Height="30"
                                          DisplayMember="CustomerName"
@@ -77,9 +77,9 @@ You can keep the popup in SfMultiColumnDropDownControl as always open by using `
 
 {% tabs %}
 {% highlight c# %}
-sfmultiColumn.Loaded += (o, e) =>
+sfMultiColumn.Loaded += (o, e) =>
 {
-       var popup = sfmultiColumn.Template.FindName("PART_Popup", sfmultiColumn) as Popup;
+       var popup = sfMultiColumn.Template.FindName("PART_Popup", sfMultiColumn) as Popup;
        popup.StaysOpen = true;
 };
 {% endhighlight %}
@@ -95,9 +95,9 @@ SfMultiColumnDropDownControl provides the following events for popup customizati
 
 {% tabs %}
 {% highlight c# %}
-sfmultiColumn.PopupClosing += sfmultiColumn_PopupClosing;
+sfMultiColumn.PopupClosing += sfMultiColumn_PopupClosing;
 
-void sfmultiColumn_PopupClosing(object sender, PopupClosingEventArgs args)
+void sfMultiColumn_PopupClosing(object sender, PopupClosingEventArgs args)
 {
             
 }
@@ -110,9 +110,9 @@ void sfmultiColumn_PopupClosing(object sender, PopupClosingEventArgs args)
 
 {% tabs %}
 {% highlight c# %}
-sfmultiColumn.PopupClosed += sfmultiColumn_PopupClosed;
+sfMultiColumn.PopupClosed += sfMultiColumn_PopupClosed;
 
-void sfmultiColumn_PopupClosed(object sender, PopupClosedEventArgs args)
+void sfMultiColumn_PopupClosed(object sender, PopupClosedEventArgs args)
 {
             
 }
@@ -125,9 +125,9 @@ void sfmultiColumn_PopupClosed(object sender, PopupClosedEventArgs args)
 
 {% tabs %}
 {% highlight c# %}
-sfmultiColumn.PopupOpening += sfmultiColumn_PopupOpening;
+sfMultiColumn.PopupOpening += sfMultiColumn_PopupOpening;
 
-void sfmultiColumn_PopupOpening(object sender, PopupOpeningEventArgs args)
+void sfMultiColumn_PopupOpening(object sender, PopupOpeningEventArgs args)
 {
             
 }
@@ -140,9 +140,9 @@ void sfmultiColumn_PopupOpening(object sender, PopupOpeningEventArgs args)
 
 {% tabs %}
 {% highlight c# %}
-sfmultiColumn.PopupOpened += sfmultiColumn_PopupOpened;
+sfMultiColumn.PopupOpened += sfMultiColumn_PopupOpened;
 
-void sfmultiColumn_PopupOpened(object sender, PopupOpenedEventArgs args)
+void sfMultiColumn_PopupOpened(object sender, PopupOpenedEventArgs args)
 {
             
 }

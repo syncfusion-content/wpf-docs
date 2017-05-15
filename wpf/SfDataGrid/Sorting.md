@@ -194,35 +194,35 @@ Public class CustomComparer:IComparer<object>,ISortDirection
 {
     public int Compare(object x, object y)
     {
-        int namX;
-        int namY;
+        int nameX;
+        int nameY;
 
         //While data object passed to comparer
         if (x.GetType() == typeof(OrderInfo))
         {
-            namX = ((OrderInfo)x).CustomerName.Length;
-            namY = ((OrderInfo)y).CustomerName.Length;
+            nameX = ((OrderInfo)x).CustomerName.Length;
+            nameY = ((OrderInfo)y).CustomerName.Length;
         }
         
         //While sorting groups
         else if (x.GetType() == typeof(Group))
         {
             //Calculating the group key length
-            namX = ((Group)x).Key.ToString().Length;
-            namY = ((Group)y).Key.ToString().Length;
+            nameX = ((Group)x).Key.ToString().Length;
+            nameY = ((Group)y).Key.ToString().Length;
         }
 
         else
         {
-            namX = x.ToString().Length;
-            namY = y.ToString().Length;
+            nameX = x.ToString().Length;
+            nameY = y.ToString().Length;
         }
 
         //returns the comparison result based in SortDirection.
-        if (namX.CompareTo(namY) > 0)
+        if (nameX.CompareTo(nameY) > 0)
             return SortDirection == ListSortDirection.Ascending ? 1 : -1;
             
-        else if (namX.CompareTo(namY) == -1)
+        else if (nameX.CompareTo(nameY) == -1)
             return SortDirection == ListSortDirection.Ascending ? -1 : 1;
             
         else

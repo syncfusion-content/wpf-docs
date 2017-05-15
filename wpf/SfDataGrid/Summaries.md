@@ -770,7 +770,7 @@ public static class LinqExtensions
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
-    <local:CustomAggregate x:Key="customaggregate" />
+    <local:CustomAggregate x:Key="customAggregate" />
 </Window.Resources>
 
 <syncfusion:SfDataGrid.TableSummaryRows>
@@ -781,7 +781,7 @@ public static class LinqExtensions
         <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn   Name="Discount"
-                                            CustomAggregate="{StaticResource customaggregate}"
+                                            CustomAggregate="{StaticResource customAggregate}"
                                             Format="'{StdDev:##.##}'"
                                             MappingName="Discount"
                                             SummaryType="Custom" />
@@ -882,7 +882,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 {
     public override void OnUpdateEditBinding(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, Syncfusion.UI.Xaml.Grid.GridTableSummaryCell element, object dataContext)
     {
-        //Check whether the datacontext is SummaryRecordEntry
+        //Check whether the dataContext is SummaryRecordEntry
         var record = dataContext as SummaryRecordEntry;
         if (!(dataContext is SummaryRecordEntry))
             return;
@@ -891,12 +891,12 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
         {
             if (!summaryColumn.MappingName.Contains(dataColumn.GridColumn.MappingName))
                 continue;
-            string summarytext = string.Empty;
+            string summaryText = string.Empty;
             if (record.SummaryRow.ShowSummaryInRow)
-                summarytext = SummaryCreator.GetSummaryDisplayTextForRow(record, this.DataGrid.View);
+                summaryText = SummaryCreator.GetSummaryDisplayTextForRow(record, this.DataGrid.View);
             else
-                summarytext = SummaryCreator.GetSummaryDisplayText(record, dataColumn.GridColumn.MappingName, this.DataGrid.View);
-            if (!string.IsNullOrEmpty(summarytext))
+                summaryText = SummaryCreator.GetSummaryDisplayText(record, dataColumn.GridColumn.MappingName, this.DataGrid.View);
+            if (!string.IsNullOrEmpty(summaryText))
             {
                 //Create new number format and apply it to summary columns 
                 NumberFormatInfo format = new NumberFormatInfo();
@@ -904,7 +904,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
                 format.NumberDecimalSeparator = "*";
                 format.NumberGroupSeparator = ",";
                 //Number format is applied to summary columns                    
-                element.Content = Convert.ToDouble(double.Parse(summarytext, NumberStyles.Currency)).ToString("N", format);
+                element.Content = Convert.ToDouble(double.Parse(summaryText, NumberStyles.Currency)).ToString("N", format);
             }
         }
     }
@@ -941,7 +941,7 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
             {
                 if (this.DataGrid.View.GroupDescriptions.Count < groupRecord.Level)
                     return;
-                //Set the captionsummarycell text as customized.
+                //Set the CaptionSummaryCell text as customized.
                 element.Content = GetCustomizedCaptionText(groupedColumn.HeaderText, groupRecord.Key, groupRecord.ItemsCount);
             }
             else if (this.DataGrid.CaptionSummaryRow.ShowSummaryInRow)

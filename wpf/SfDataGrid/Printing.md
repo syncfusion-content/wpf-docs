@@ -380,22 +380,22 @@ SfDataGrid allows you to set different Row height for specific rows while printi
 
 {% tabs %}
 {% highlight c# %}
-private class CustomPrintManager : GridPrintManager
+public class CustomPrintManager : GridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
     }
-    
-    protected override double GetRowHeight(object record, int rowindex)
+    protected override double GetRowHeight(object record, int rowIndex, RowType rowtype)
     {
-        if (rowindex != -1 && !(record is Group))
-        
-            if (rowindex % 2 != 0)
+        if (rowIndex != -1 && !(record is Group))
+
+            if (rowIndex % 2 != 0)
+
                 return 50.0;
-                
-        return base.GetRowHeight(record, rowindex);
-    }
+
+        return base.GetRowHeight(record, rowIndex, rowtype);
+    }        
 }
 {% endhighlight %}
 {% endtabs %}
@@ -418,24 +418,22 @@ Here, unbound row is excluded while printing. Likewise, you can hide any row bas
 
 {% tabs %}
 {% highlight c# %}
-private class CustomPrintManager : GridPrintManager
+public class CustomPrintManager : GridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
     }
-
-    protected override double GetRowHeight(object record, int rowindex)
+    protected override double GetRowHeight(object record, int rowIndex, RowType rowtype)
     {
         if (record is GridUnBoundRow)
             return 0;
-            
-        return base.GetRowHeight(record, rowindex);
-    }
- }
+
+        return base.GetRowHeight(record, rowIndex, rowtype);
+    }        
+}
 {% endhighlight %}
 {% endtabs %}
-
 
 {% tabs %}
 {% highlight c# %}
