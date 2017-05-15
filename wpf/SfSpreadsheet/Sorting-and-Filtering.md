@@ -48,7 +48,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
     spreadsheet.Workbook.ActiveSheet.AutoFilters.FilterRange = filterRange;
     IDataSort sorter = spreadsheet.Workbook.CreateDataSorter();
     sorter.SortRange = spreadsheet.ActiveSheet.Range["A1:D9"];
-    SortField sortField = sorter.SortFields.Add(1, SortOn.Values, OrderBy.Ascending);
+    ISortField sortField = sorter.SortFields.Add(1, SortOn.Values, OrderBy.Ascending);
     sorter.Sort();
 }
 
@@ -68,14 +68,16 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
     IRange filterRange = spreadsheet.Workbook.ActiveSheet.Range["A1:D9"];
     spreadsheet.Workbook.ActiveSheet.AutoFilters.FilterRange = filterRange;
-    IAutoFilter filter = spreadsheetControl.Workbook.ActiveSheet.AutoFilters[0];
+    IAutoFilter filter = spreadsheet.Workbook.ActiveSheet.AutoFilters[0];
     filter.AddTextFilter("1");
 } 
 
 {% endhighlight %}
 {% endtabs %}
 
-For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting "") UG documentation.
+For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting) UG documentation.
+
+N> If sorting or filtering has been applied programmatically at runtime, then [refresh the view](https://help.syncfusion.com/wpf/sfspreadsheet/working-with-sfspreadsheet#refreshing-the-view) to update it in `SpreadsheetGrid`. But this changes will not be updated in Filter popup even after refreshing the view. 
 
 ## Unsupported Features
 
