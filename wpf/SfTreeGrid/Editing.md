@@ -447,7 +447,7 @@ You can focus to the particular `UIElement` loaded inside template when cell get
 		<syncfusion:TreeGridTemplateColumn HeaderText="First Name" MappingName="FirstName" >
 			<syncfusion:TreeGridTemplateColumn.CellTemplate>
 				<DataTemplate>
-					<TextBlock syncfusion:FocusManagerHelper.FocusedElement="True"
+					<TextBlock Syncfusion:FocusManagerHelper.FocusedElement="True"
 								FontStyle="Italic"
 								FontWeight="SemiBold"
 								Padding="2,0"

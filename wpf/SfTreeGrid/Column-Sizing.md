@@ -43,14 +43,14 @@ Calculates the width of column based on header and cell contents. So that header
 <code>FillColumn</code>
 </td>
 <td>
-While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and last column fills the remaining space of grid. And possible to set any column to fill the reamining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `FillColumn` for that particular column.
+While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and last column fills the remaining space of grid. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `FillColumn` for that particular column.
 </td>
 </tr>
 <tr>
 <td>
 <code>AutoFillColumn</code>
 </td>
-While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the reamining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
+While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
 <td>
 </td>
 </tr>

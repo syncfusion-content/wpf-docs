@@ -205,7 +205,7 @@ You can validate the cells and rows using [CurrentCellValidating](https://help.s
 
 ### Cell Validation
 
-You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellValidating_EV.html) event when the cell is edited. `CurrentCellValdiating` event occurs when the edited cell tries to commit the data or lose the focus.
+You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellValidating_EV.html) event when the cell is edited. `CurrentCellValidating` event occurs when the edited cell tries to commit the data or lose the focus.
 
 [TreeGridCurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValidatingEventArgs.html) provides information to `CurrentCellValidating` event for validating the cell.  
 `TreeGridCurrentCellValidatingEventArgs.NewValue` returns the edited value and you can set the validation status using `TreeGridCurrentCellValidatingEventArgs.IsValid` property.
@@ -219,7 +219,7 @@ void treeGrid_CurrentCellValidating(object sender, TreeGridCurrentCellValidating
     if (e.NewValue.ToString().Equals("1004"))
     {
         e.IsValid = false;
-        e.ErrorMessage = "OrdrerID 1004 is invalid";
+        e.ErrorMessage = "OrderID 1004 is invalid";
     }
 }
 {% endhighlight %}
@@ -242,7 +242,7 @@ void treeGrid_CurrentCellValidated(object sender, TreeGridCurrentCellValidatedEv
 
 You can validate the row using [RowValidating](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowValidating_EV.html) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus.
 
-[TreeGridRowValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowValidatingEventArgs.html) provides information to `RowValidtaing` event for validating row. 
+[TreeGridRowValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowValidatingEventArgs.html) provides information to `RowValidating` event for validating row. 
 `TreeGridRowValidatingEventArgs.RowData` returns the edited value and you can set the validation status using `TreeGridRowValidatingEventArgs.IsValid` property.
 
 {% tabs %}
@@ -564,7 +564,7 @@ You can customize the error tip by editing the style of `ValidationToolTipTempla
 
 #### Change the background and foreground color of error tip
 
-You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`.The error tip foreground color can be changed by setting `Foreground` property of the TextBlock in 'ValidationTolTipTemplate'.
+You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`.The error tip foreground color can be changed by setting `Foreground` property of the TextBlock in 'ValidationToolTipTemplate'.
 
 {% tabs %}
 {% highlight xaml %}
@@ -698,7 +698,7 @@ public bool HasErrors
 
 ## Validation with CheckBox column
 
-SfTreeGrid doesn’t support to validate the [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) through validating events. You can validate the check box column value by setting `TreeGridValidationHelper.IsCurrentCellValidated` and `TreeGridValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValdiated](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper~SetCurrentRowValidated.html) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper~SetCurrentCellValidated.html) methods from [TreeGridValidationHelper](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html).
+SfTreeGrid doesn’t support to validate the [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) through validating events. You can validate the check box column value by setting `TreeGridValidationHelper.IsCurrentCellValidated` and `TreeGridValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper~SetCurrentRowValidated.html) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper~SetCurrentCellValidated.html) methods from [TreeGridValidationHelper](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html).
 
 {% tabs %}
 {% highlight c# %}

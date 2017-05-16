@@ -1280,7 +1280,7 @@ Using `CellTemplate`, you can format data or conditionally change the properties
             <syncfusion:TreeGridTemplateColumn.EditTemplate>
                 <DataTemplate>
                     <TextBox Text="{Binding FirstName}"
-                                syncfusion:FocusManagerHelper.FocusedElement="True"/>
+                                Syncfusion:FocusManagerHelper.FocusedElement="True"/>
                 </DataTemplate>
             </syncfusion:TreeGridTemplateColumn.EditTemplate>
         </syncfusion:TreeGridTemplateColumn>
@@ -2749,7 +2749,7 @@ public class MaxLengthConverter : IValueConverter
 {
 	public object Convert(object value, Type targetType, object parameter, string language)
 	{
-		// Define maxlength for column
+		// Define max length for column.
 		int maxLength = 5;
 		// Get the ColumnValue
 		var columnValue = System.Convert.ToString(value);
