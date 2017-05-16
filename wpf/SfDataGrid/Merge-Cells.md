@@ -149,7 +149,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
         e.Range = range;
         e.Handled = true;
     }
-    //If the calculated range is already exist in CoveredCells then You can get that the range using SfDataGrid.GetConflictRange (CoveredCellInfo coveredCellInfo) extension method.
+    //If the calculated range is already exist in CoveredCells, you can get the range using SfDataGrid.GetConflictRange (CoveredCellInfo coveredCellInfo) extension method.
 }
 
 /// <summary>

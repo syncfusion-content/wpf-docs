@@ -1685,13 +1685,13 @@ You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderCo
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="datagrid"                               
+<Syncfusion:SfDataGrid x:Name="dataGrid"                               
                        ExpanderColumnWidth="50"
                        AutoGenerateRelations="True"
                        ItemsSource="{Binding OrderInfoCollection }">
 {% endhighlight %}
 {% highlight c# %}
-this.datagrid.ExpanderColumnWidth = 50;
+this.dataGrid.ExpanderColumnWidth = 50;
 {% endhighlight %}
 {% endtabs %}
 

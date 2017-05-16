@@ -601,7 +601,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         }
 
         /// <summary>
-        /// Check whether the column having a FilterPredicates or not
+        /// Check whether the column having a FilterPredicate or not
         /// </summary>
         /// <param name="filterPredicate">FilterPredicates for a column</param>
         /// <param name="filterValue">FilterValue for a column</param>
