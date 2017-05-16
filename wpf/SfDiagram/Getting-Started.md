@@ -369,13 +369,12 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
         </Style>
      </Setter.Value>
    </Setter>
- </Style>    
-      
+ </Style>        
 {% endhighlight %} 
 
 Now output will be,
 
- ![](Getting-Started_images\Getting_Started_flowDiagram_img2.PNG)
+![](Getting-Started_images\Getting_Started_flowDiagram_img2.PNG)
  
 ####Connectors for Flow diagram
 
@@ -398,7 +397,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
                 TargetNodeID = "End",
             };
 {% endhighlight %} 
-
+{% tabs %}
 Now output will be looks like,
 
 ![](Getting-Started_images\ug_Getting_Started_flowDiagram.PNG)
