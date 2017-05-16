@@ -36,7 +36,7 @@ new KanbanModel()
 
     Tags = new string[] { "Deployment" },
 
-    ImageURL = new Uri("/images/icon.jpg")
+    ImageURL = new Uri("/images/icon.jpg", UriKind.RelativeOrAbsolute )
 };
 
 
