@@ -9,27 +9,13 @@ documentation: ug
 
 #Node
 
-Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
+Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities
 
 ![](Node_images/Node_img1.jpeg)
 
-##Basic Shapes
+##Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. The Shape property of Node can be set with any one of the in-built Basic Shapes.
-
-The following code example illustrates how to create a basic shapes.
-
-{% highlight xaml %}
-
-<!--Initialize Shapes-->
-<ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
- 
- <!--Add Node-->
-<syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100" 
-                          Shape="{StaticResource Rectangle}"
-                          ShapeStyle="{StaticResource shapestyle}"/>
-
-{% endhighlight %}
+We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to  [Shapes](/wpf/sfdiagram/Shapes). 
 
 ##Create Node
 
@@ -37,71 +23,8 @@ A Node can be created and added to the Diagram, either programmatically or inter
 
 ###Add Node through Nodes collection 
 
-To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram. The following code example illustrate how to add the Node to the Diagram.
-
-{% highlight xaml %}
-
-<!--Style for Node-->
-<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
-    <Setter Property="ShapeStyle">
-        <Setter.Value>
-            <Style TargetType="Path">
-                <Setter Property="Fill" Value="DarkCyan"/>
-                <Setter Property="Stroke" Value="Black"/>
-                <Setter Property="StrokeThickness" Value="2"/>
-                <Setter Property="Stretch" Value="Fill"/>
-            </Style>
-        </Setter.Value>
-    </Setter>
-</Style>
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-<!--Initialize SfDiagram-->
-<syncfusion:SfDiagram  x:Name="diagram">
-    <!--Initialize NodeCollection-->
-    <syncfusion:SfDiagram.Nodes>
-        <syncfusion:NodeCollection>
-            <!--Initialize Node-->
-            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200">
-            </syncfusion:NodeViewModel>
-        </syncfusion:NodeCollection>
-    </syncfusion:SfDiagram.Nodes>
-</syncfusion:SfDiagram>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Creates the Node collection
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-
-//Create Node
-NodeViewModel node = new NodeViewModel()
-{
-    //Sets the size
-	UnitWidth = 100,
-	UnitHeight = 100,
-    
-    //Sets the position
-	OffsetX = 200,
-	OffsetY = 200,
-	
-    //Customizes the appearance
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-         
-//Adds the Node to the SfDiagram            
-nodes.Add(node);
-diagram.Nodes = nodes;
-
-{% endhighlight %}
-
-![](Node_images/Node_img2.jpeg)
+To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram.
+For more, refer to  [Add Nodes](/wpf/sfdiagram/Getting-Started#simple Application:Add Nodes "Add Nodes"). 
 
 ###Add Node from stencil
 
@@ -117,7 +40,7 @@ refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
 
 Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Nodes](/wpf/sfdiagram/Tools#drawing-tools:shapes "Draw Nodes").
 
-##Position
+##Posotion
 
 Position of a Node is controlled by using its OffsetX and OffsetY properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may except this Offset values to represent the distance between page origin and Node’s top left corner instead of center. Pivot property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
 
@@ -129,8 +52,8 @@ The following table illustrates how pivot relates Offset values with Node bounda
 | (0,0) | OffsetX and OffsetY values are considered as the top left corner of Node. |
 | (1,1) | OffsetX and OffsetY values are considered as the bottom right corner of the Node. |
 
+{% tabs %}
 {% highlight xaml %}
-
 <!--Style for Node-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
     <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
@@ -145,11 +68,8 @@ The following table illustrates how pivot relates Offset values with Node bounda
         </Setter.Value>
     </Setter>
 </Style>
-
 {% endhighlight %}
-
 {% highlight xaml %}
-
 <!--Initialize SfDiagram-->
 <syncfusion:SfDiagram  x:Name="diagram">
     <!--Initialize NodeCollection-->
@@ -162,34 +82,25 @@ The following table illustrates how pivot relates Offset values with Node bounda
         </syncfusion:NodeCollection>
     </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
-
 {% endhighlight %}
-
 {% highlight C# %}
-
 //Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-
 //Create Node
 NodeViewModel node = new NodeViewModel()
 {
     //Sets the size
-	UnitWidth = 100,
-	UnitHeight = 100,
-    
+	UnitWidth = 100,UnitHeight = 100,   
     //Sets the position
-	OffsetX = 200,
-	OffsetY = 200,
-    
+	OffsetX = 200,OffsetY = 200,
     //Sets pivot point
 	Pivot = new Point(0, 0)
 };
-
 //Adds the Node to the SfDiagram 
 nodes.Add(node);
 diagram.Nodes = nodes;
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](Node_images/Node_img3.jpeg)
 
@@ -197,8 +108,8 @@ diagram.Nodes = nodes;
 
 You can customize the appearance of a Node by changing its ShapeStyle. The following code illustrates how to customize the appearance of the shape.
 
+{% tabs %}
 {% highlight xaml %}
-
 <Style TargetType="Path" x:Key="shapestyle">
   <Setter Property="Fill" Value="DarkCyan"></Setter>
   <Setter Property="Stroke" Value="Black"/>
@@ -206,11 +117,8 @@ You can customize the appearance of a Node by changing its ShapeStyle. The follo
   <Setter Property="StrokeThickness" Value="2"></Setter>
   <Setter Property="Stretch" Value="Fill"></Setter>   
 </Style>
-
 {% endhighlight %}
-
 {% highlight C# %}
-
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.FillProperty, Brushes.DarkCyan));
 style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.Black));
@@ -218,14 +126,14 @@ style.Setters.Add(new Setter(Path.StrokeThicknessProperty, 2d));
 style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));            
 style.Setters.Add(new Setter(Path.StretchProperty, Stretch.Fill));
 return style;
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](Node_images/Node_img4.jpeg)
 
 ##Data Binding
 
-In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
+In order to achieve Properties of ViewModel are bind to View, we have provided the default style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 
