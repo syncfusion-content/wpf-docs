@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-##Shapes
+## Shapes
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
@@ -21,7 +21,7 @@ The following code example illustrates how to merge shapes into diagram.
 {% endhighlight %}
 
 
-###Basic Shapes
+### Basic Shapes
 
 The following code example illustrates how to assign Shape property of the Node.
 
