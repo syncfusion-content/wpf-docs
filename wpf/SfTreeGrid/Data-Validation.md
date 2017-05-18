@@ -574,7 +574,7 @@ You can change the error tip background color by setting `Background` property o
                       Opacity="0"
                       RenderTransformOrigin="0,0">
                     <Grid.RenderTransform>
-                        <TranslateTransform x:Name="xform" X="-25" />
+                        <TranslateTransform x:Name="transform" X="-25" />
                     </Grid.RenderTransform>
 
                     <Border Margin="4,4,-4,-4"
@@ -606,7 +606,7 @@ You can change the error tip background color by setting `Background` property o
                                 <VisualTransition GeneratedDuration="0:0:0.2" To="Open">
                                     <Storyboard>
                                         <DoubleAnimation Duration="0:0:0.2"
-                                                         Storyboard.TargetName="xform"
+                                                         Storyboard.TargetName="transform"
                                                          Storyboard.TargetProperty="X"
                                                          To="0">
                                             <DoubleAnimation.EasingFunction>
@@ -631,7 +631,7 @@ You can change the error tip background color by setting `Background` property o
                             <VisualState x:Name="Open">
                                 <Storyboard>
                                     <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="xform"
+                                                     Storyboard.TargetName="transform"
                                                      Storyboard.TargetProperty="X"
                                                      To="0" />
                                     <DoubleAnimation Duration="0"

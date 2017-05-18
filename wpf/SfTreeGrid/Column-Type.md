@@ -1293,9 +1293,9 @@ Using `CellTemplate`, you can format data or conditionally change the properties
 DataTemplate cellTemplate = new DataTemplate();
 
 FrameworkElementFactory frameworkElement1 = new FrameworkElementFactory(typeof(TextBlock));
-Binding displaybinding = new Binding() { Path = new PropertyPath("FirstName") };
+Binding displayBinding = new Binding() { Path = new PropertyPath("FirstName") };
 
-frameworkElement1.SetValue(TextBlock.TextProperty, displaybinding);
+frameworkElement1.SetValue(TextBlock.TextProperty, displayBinding);
 
 cellTemplate.VisualTree = frameworkElement1;
 
@@ -1303,9 +1303,9 @@ cellTemplate.VisualTree = frameworkElement1;
 DataTemplate editTemplate = new DataTemplate();
 
 FrameworkElementFactory frameworkElement2 = new FrameworkElementFactory(typeof(TextBox));
-Binding editbinding = new Binding() { Path = new PropertyPath("FirstName"), Mode = BindingMode.TwoWay };
+Binding editBinding = new Binding() { Path = new PropertyPath("FirstName"), Mode = BindingMode.TwoWay };
 
-frameworkElement2.SetValue(TextBox.TextProperty, editbinding);
+frameworkElement2.SetValue(TextBox.TextProperty, editBinding);
 
 editTemplate.VisualTree = frameworkElement2;
 

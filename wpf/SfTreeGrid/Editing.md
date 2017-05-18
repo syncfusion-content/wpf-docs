@@ -226,14 +226,14 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	  
 	protected Dictionary<string, object> BackUp()
 	{
-		var dict = new Dictionary<string, object>();
+		var dictionary = new Dictionary<string, object>();
 		var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
 		foreach (var pDescriptor in itemProperties)
 		{
 			if (pDescriptor.CanWrite)
-				dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
+				dictionary.Add(pDescriptor.Name, pDescriptor.GetValue(this));
 		}
-		return dict;
+		return dictionary;
 	}
 
 	private Dictionary<string, object> storedValues;
@@ -263,10 +263,10 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	}
 
 	public event PropertyChangedEventHandler PropertyChanged;
-	public void RaisePropertyChanged(string propname)
+	public void RaisePropertyChanged(string propertyName)
 	{
 		if (PropertyChanged != null)
-			PropertyChanged(this, new PropertyChangedEventArgs(propname));
+			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	}
 }
 	

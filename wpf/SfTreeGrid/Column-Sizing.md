@@ -247,11 +247,11 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 		var columns = remainingColumns.ToList();
 		var totalRemainingStarValue = remainingColumnWidth;
 		double removedWidth = 0;
-		bool isremoved;
+		bool isRemoved;
 
 		while (columns.Count > 0)
 		{
-			isremoved = false;
+			isRemoved = false;
 			removedWidth = 0;
 			var columnsCount = 0;
 
@@ -267,7 +267,7 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 
 			if (starWidth != computedWidth && starWidth > 0)
 			{
-				isremoved = true;
+				isRemoved = true;
 				columns.Remove(column);
 				foreach (var remColumn in removedColumn)
 				{
@@ -283,7 +283,7 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 
 			totalRemainingStarValue = totalRemainingStarValue - computedWidth;
 
-			if (!isremoved)
+			if (!isRemoved)
 			{
 				columns.Remove(column);
 				if (!removedColumn.Contains(column))
