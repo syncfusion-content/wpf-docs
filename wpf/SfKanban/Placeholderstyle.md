@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Placeholder style | SfKanban | wpf | Syncfusion
+title:  Placeholderstyle | SfKanban | wpf | Syncfusion
 description: The following section describes how to customize the place holders of Kanban card while drgging.
 platform: wpf
 control: SfKanban
