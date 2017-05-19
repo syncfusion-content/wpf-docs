@@ -7,9 +7,9 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Getting Started
+# Getting Started
 
-##About Diagram
+## About Diagram
 
 Let us create flow diagram and automatic layout with SfDiagram.
  
@@ -21,18 +21,18 @@ Let us create flow diagram and automatic layout with SfDiagram.
 
 ![](Getting-Started_images\Getting_Started_img3.PNG)
 
-###WPF Application
+### WPF Application
 
 * Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90).
 
-###Assembly Reference
+### Assembly Reference
 
 1. Open the Add reference window from your project.
 2. Choose Windows > Extensions > Syncfusion.SfDiagram.WPF.
 
 ![](Getting-Started_images\Getting_Started_img.png)
 
-####Add SfDiagram from Toolbox
+#### Add SfDiagram from Toolbox
 
 Drag and drop the SfDiagram control from the Toolbox to the XAML window.
 
@@ -42,7 +42,7 @@ The xmlns name space is added to the MainWindow.xaml
 
 ![](Getting-Started_images\Getting_Started_img2.png)
 
-###Initialize the Diagram
+### Initialize the Diagram
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
 
@@ -57,7 +57,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 {% endhighlight %} 
 {% endtabs %}
 
-####Initialize Nodes and Connectors
+#### Initialize Nodes and Connectors
 
 To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
 
@@ -71,7 +71,7 @@ To initialize the Nodes and Connectors properties of the SfDiagram, Nodes proper
 <syncfusion:SfDiagram.Connectors>
 	<syncfusion:ConnectorCollection/>
 </syncfusion:SfDiagram.Connectors>
- {% endhighlight %}
+{% endhighlight %}
 {% highlight c# %}
 //Initialize with Collection of NodeViewModel
 diagram.Nodes = new NodeCollection();
@@ -80,24 +80,24 @@ diagram.Connectors = new ConnectorCollection();
 {% endhighlight %}       
 {% endtabs %}
 
-####DataBinding
+#### DataBinding
 
 We have provided the default binding style support, in order to bind the properties of ViewModel to View.
 For more information, refer to  [Data-Binding](/wpf/sfdiagram/Data-Binding).
 
-##Simple Application
+## Simple Application
 
 Let us create simple flow diagram in ViewModel, By applying binding style as mentioned in DataBinding.For more details about DataBinding, refer to  [Data-Binding](/wpf/sfdiagram/Data-Binding).
 
-###Basic Shapes
+### Basic Shapes
 
 * We have provided set of basic shapes for Diagram as ResourceDictionary. For more information, refer to  [Shapes](/wpf/sfdiagram/Shapes). 
 
-###Add Nodes
+### Add Nodes
 
 * Let us create and add a NodeViewModel with height, width, shape, shape style,specific position, size and Annotation.
 
-####Creating a Node
+#### Creating a Node
 
 Creating NodeViewModel with Specified Height and Width.
 
@@ -115,7 +115,7 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-####Adding specific position to Node
+#### Adding specific position to Node
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,7 +133,7 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-####Adding Shape to Node
+#### Adding Shape to Node
 
 {% tabs %}
 {% highlight xaml %}  
@@ -153,7 +153,7 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-####Adding Shape Style to the Node
+#### Adding Shape Style to the Node
 
 {% tabs %}
 {% highlight xaml %} 
@@ -191,7 +191,7 @@ NodeViewModel Begin = new NodeViewModel()
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
-####Adding Annotation to node
+#### Adding Annotation to node
    
 * To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
 
@@ -248,7 +248,7 @@ Now Node will be looks like,
  
 ![](Getting-Started_images\Getting_Started_flowDiagram_img1.PNG)
  
-###Nodes for Flow Diagram
+### Nodes for Flow Diagram
 
 * We can add multiple Nodes with different shapes into diagram as NodeViewModel.
 
@@ -324,11 +324,11 @@ public MainWindow()
 
 ![](Getting-Started_images\nodes.PNG)
 
-###Add Connectors
+### Add Connectors
 
 * Connector is to make connection or link between two Nodes, Ports and Points.
 
-####Create Connector With Source Node and Target Node 
+#### Create Connector With Source Node and Target Node 
 
 * Here, we have used `SourceNodeID` and `TargetNodeID` property of the Connector.These properties wil be assigned with `ID` property of the Node.
 
@@ -345,7 +345,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-####Adding Connector geometry style
+#### Adding Connector geometry style
 
 {% highlight xaml %}
 <!--Customized connector style--> 
@@ -376,7 +376,7 @@ Now output will be,
 
 ![](Getting-Started_images\Getting_Started_flowDiagram_img2.PNG)
  
-####Connectors for Flow diagram
+#### Connectors for Flow diagram
 
 Now we can connect all nodes using ConnectorViewModel.
 
@@ -402,7 +402,7 @@ Now output will be looks like,
 
 ![](Getting-Started_images\ug_Getting_Started_flowDiagram.PNG)
     
-###Complete Diagram
+### Complete Diagram
 
 Now we can integrate all NodeViewModel and corresponding ConnectorViewModel to Diagram. Final XMAL code will be,
 
@@ -506,15 +506,15 @@ Final output diagram will be,
 
 ![](Getting-Started_images\ug_Getting_Started_flowDiagram.PNG)
 
-##Automatic Layout
+## Automatic Layout
 
 Now let us see how to create and position to diagram automatically.
 
-###Initialize diagram
+### Initialize diagram
 
 Initializing diagram is already discussed above > [Initialize the diagram](/wpf/sfdiagram/Getting-Started#Initialize the diagram) section.
 
-###Business object (Employee information)
+### Business object (Employee information)
 
 * Now, you have to create a class, Employee with properties to store the employee’s information like name, designation, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
@@ -533,7 +533,8 @@ public class Employees : ObservableCollection<Employee>
 
 }
 {% endhighlight %}
-###Initialize Data
+
+### Initialize Data
 
 Define Employee Information as a Collection. The following code example shows an employee array whose,
 * Name is used as a unique identifier and
@@ -553,7 +554,7 @@ Define Employee Information as a Collection. The following code example shows an
 </local:Employees>
 {% endhighlight %}
 
-###Map data source
+### Map data source
 
 You can configure this “Employee Information” with Diagram, so that the Node and Connector are automatically generated using mapping properties. 
 The following code examples show how DataSourceSetting is used to map id and parent with property name identifiers for employee information.
@@ -565,7 +566,7 @@ The following code examples show how DataSourceSetting is used to map id and par
 </syncfusion:DataSourceSettings>
 {% endhighlight %}
 
-###Visualize Employees
+### Visualize Employees
 
 The following code examples indicate how to define the default appearance of NodeViewModel and ConnectorViewModel using default BindingStyle. The ContentTemplate of the Node is used to update each node based on employee data.
 
@@ -599,7 +600,7 @@ The following code examples indicate how to define the default appearance of Nod
 </Style>
 {% endhighlight %}
 
-###Apply org chart layout
+### Apply org chart layout
 
 Next you need to arrange Nodes in an organizational chart structure, and to do this you can apply layout as shown in following code example. You can see that spacing and orientation are defined, that can also be customized based on the needs.
 

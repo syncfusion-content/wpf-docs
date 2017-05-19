@@ -7,40 +7,40 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Node
+# Node
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities
 
 ![](Node_images/Node_img1.jpeg)
 
-##Shapes
+## Shapes
 
 We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to  [Shapes](/wpf/sfdiagram/Shapes). 
 
-##Create Node
+## Create Node
 
 A Node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
 
-###Add Node through Nodes collection 
+### Add Node through Nodes collection 
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram.
 For more, refer to  [Add Nodes](/wpf/sfdiagram/Getting-Started#simple Application:Add Nodes "Add Nodes"). 
 
-###Add Node from stencil
+### Add Node from stencil
 
 Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to [Stencil](/wpf/sfdiagram/Stencil "Stencil").
 
-###Create Node through data source
+### Create Node through data source
 
 Nodes can be generated automatically with the information provided through data source.For more information about data source, 
 
 refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
 
-###Draw Nodes
+### Draw Nodes
 
 Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Nodes](/wpf/sfdiagram/Tools#drawing-tools:shapes "Draw Nodes").
 
-##Position
+## Position
 
 Position of a Node is controlled by using its OffsetX and OffsetY properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may except this Offset values to represent the distance between page origin and Node’s top left corner instead of center. Pivot property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
 
@@ -104,7 +104,7 @@ diagram.Nodes = nodes;
 
 ![](Node_images/Node_img3.jpeg)
 
-##Appearance
+## Appearance
 
 You can customize the appearance of a Node by changing its ShapeStyle. The following code illustrates how to customize the appearance of the shape.
 
@@ -131,16 +131,16 @@ return style;
 
 ![](Node_images/Node_img4.jpeg)
 
-##Data Binding
+## Data Binding
 
 In order to achieve Properties of ViewModel are bind to View, we have provided the default style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
 N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 
-##Interaction
+## Interaction
 
 Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to [Interaction](/wpf/sfdiagram/Interaction "Interaction").
 
-##Constraints
+## Constraints
 
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#NodeConstraints "Node Constraints").
