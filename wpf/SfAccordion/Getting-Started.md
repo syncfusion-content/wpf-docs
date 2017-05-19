@@ -29,7 +29,7 @@ Create a WPF Application project in Visual Studio and refer to the following ass
 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    xmlns:layout="using:Syncfusion.Windows.Controls.Layout">
+    xmlns:layout="http://schemas.syncfusion.com/wpf">
 
 {% endhighlight %}
 
