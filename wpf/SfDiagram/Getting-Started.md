@@ -397,7 +397,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
                 TargetNodeID = "End",
             };
 {% endhighlight %} 
-{% tabs %}
+{% endtabs %}
 Now output will be looks like,
 
 ![](Getting-Started_images\ug_Getting_Started_flowDiagram.PNG)
