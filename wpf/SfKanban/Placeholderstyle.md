@@ -19,12 +19,12 @@ documentation: ug
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Foreground.html)           - This property is used to change the text color of the placeholder.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
-* [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedBackground.html) 	- This property is used to change the background color of the selected placeholder.
-* [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStroke.html) 		- This property is used to change the border color of the selected placeholder.
-* [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStrokeThickness.html) 	- This property is used to change the border width of the selected placeholder.
-* [`SelectedStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStrokeDashArray.html)     - This property is used to change the dashes of the selected placeholder.
-* [`SelectedFontSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedFontSize.html)            - This is used to change the font size of the text in selected placeholder.
-* [`SelectedForeground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedForeground.html)           - This property is used to change the color of the text in selected placeholder.
++ [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedBackground.html) 	- This property is used to change the background color of the selected placeholder.
++ [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStroke.html) 		- This property is used to change the border color of the selected placeholder.
++ [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStrokeThickness.html) 	- This property is used to change the border width of the selected placeholder.
++ [`SelectedStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStrokeDashArray.html)     - This property is used to change the dashes of the selected placeholder.
++ [`SelectedFontSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedFontSize.html)            - This is used to change the font size of the text in selected placeholder.
++ [`SelectedForeground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedForeground.html)           - This property is used to change the color of the text in selected placeholder.
 The following code example describes the above behavior.
 
 {% tabs %}
