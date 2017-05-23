@@ -624,9 +624,9 @@ In addition to the PdfViewerControl, Syncfusion also provides PdfDocumentView co
 
             {
 
-                PdfLoadedDocument ldoc = new PdfLoadedDocument(dialog.FileName);
+                PdfLoadedDocument loadedDocument = new PdfLoadedDocument(dialog.FileName);
 
-                documentViewer.Load(ldoc);
+                documentViewer.Load(loadedDocument);
 
             }
 
