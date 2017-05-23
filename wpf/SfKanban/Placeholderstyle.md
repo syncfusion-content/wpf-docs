@@ -19,6 +19,7 @@ documentation: ug
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Foreground.html)           - This property is used to change the text color of the placeholder.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
+
 * [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedBackground.html) 	- This property is used to change the background color of the selected placeholder.
 * [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStroke.html) 		- This property is used to change the border color of the selected placeholder.
 * [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~SelectedStrokeThickness.html) 	- This property is used to change the border width of the selected placeholder.
