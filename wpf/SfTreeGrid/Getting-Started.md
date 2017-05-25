@@ -654,10 +654,10 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
     }
     else
     {
-        EmployeeInfo emp = args.ParentItem as EmployeeInfo;
-        if (emp != null)
+        EmployeeInfo employee = args.ParentItem as EmployeeInfo;
+        if (employee != null)
         {
-            args.ChildItems = viewModel.GetEmployees().Where(x => x.ReportsTo == emp.ID);
+            args.ChildItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);
         }
     }
 }
