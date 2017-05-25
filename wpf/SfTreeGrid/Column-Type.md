@@ -1280,7 +1280,7 @@ Using `CellTemplate`, you can format data or conditionally change the properties
             <syncfusion:TreeGridTemplateColumn.EditTemplate>
                 <DataTemplate>
                     <TextBox Text="{Binding FirstName}"
-                                syncfusion:FocusManagerHelper.FocusedElement="True"/>
+                                Syncfusion:FocusManagerHelper.FocusedElement="True"/>
                 </DataTemplate>
             </syncfusion:TreeGridTemplateColumn.EditTemplate>
         </syncfusion:TreeGridTemplateColumn>
@@ -1293,9 +1293,9 @@ Using `CellTemplate`, you can format data or conditionally change the properties
 DataTemplate cellTemplate = new DataTemplate();
 
 FrameworkElementFactory frameworkElement1 = new FrameworkElementFactory(typeof(TextBlock));
-Binding displaybinding = new Binding() { Path = new PropertyPath("FirstName") };
+Binding displayBinding = new Binding() { Path = new PropertyPath("FirstName") };
 
-frameworkElement1.SetValue(TextBlock.TextProperty, displaybinding);
+frameworkElement1.SetValue(TextBlock.TextProperty, displayBinding);
 
 cellTemplate.VisualTree = frameworkElement1;
 
@@ -1303,9 +1303,9 @@ cellTemplate.VisualTree = frameworkElement1;
 DataTemplate editTemplate = new DataTemplate();
 
 FrameworkElementFactory frameworkElement2 = new FrameworkElementFactory(typeof(TextBox));
-Binding editbinding = new Binding() { Path = new PropertyPath("FirstName"), Mode = BindingMode.TwoWay };
+Binding editBinding = new Binding() { Path = new PropertyPath("FirstName"), Mode = BindingMode.TwoWay };
 
-frameworkElement2.SetValue(TextBox.TextProperty, editbinding);
+frameworkElement2.SetValue(TextBox.TextProperty, editBinding);
 
 editTemplate.VisualTree = frameworkElement2;
 
@@ -2749,7 +2749,7 @@ public class MaxLengthConverter : IValueConverter
 {
 	public object Convert(object value, Type targetType, object parameter, string language)
 	{
-		// Define maxlength for column
+		// Define max length for column.
 		int maxLength = 5;
 		// Get the ColumnValue
 		var columnValue = System.Convert.ToString(value);

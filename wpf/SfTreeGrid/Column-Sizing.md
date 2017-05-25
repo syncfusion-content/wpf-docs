@@ -43,14 +43,14 @@ Calculates the width of column based on header and cell contents. So that header
 <code>FillColumn</code>
 </td>
 <td>
-While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and last column fills the remaining space of grid. And possible to set any column to fill the reamining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `FillColumn` for that particular column.
+While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and last column fills the remaining space of grid. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `FillColumn` for that particular column.
 </td>
 </tr>
 <tr>
 <td>
 <code>AutoFillColumn</code>
 </td>
-While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the reamining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
+While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
 <td>
 </td>
 </tr>
@@ -247,11 +247,11 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 		var columns = remainingColumns.ToList();
 		var totalRemainingStarValue = remainingColumnWidth;
 		double removedWidth = 0;
-		bool isremoved;
+		bool isRemoved;
 
 		while (columns.Count > 0)
 		{
-			isremoved = false;
+			isRemoved = false;
 			removedWidth = 0;
 			var columnsCount = 0;
 
@@ -267,7 +267,7 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 
 			if (starWidth != computedWidth && starWidth > 0)
 			{
-				isremoved = true;
+				isRemoved = true;
 				columns.Remove(column);
 				foreach (var remColumn in removedColumn)
 				{
@@ -283,7 +283,7 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 
 			totalRemainingStarValue = totalRemainingStarValue - computedWidth;
 
-			if (!isremoved)
+			if (!isRemoved)
 			{
 				columns.Remove(column);
 				if (!removedColumn.Contains(column))
