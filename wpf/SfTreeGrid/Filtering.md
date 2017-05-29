@@ -1,3 +1,12 @@
+---
+layout: post
+title: Filtering support in SfTreeGrid.
+description: How to filter the nodes programmatically in SfTreeGrid .
+platform: wpf
+control: SfTreeGrid
+documentation: ug
+---
+
 # Filtering
 
 ## Overview
