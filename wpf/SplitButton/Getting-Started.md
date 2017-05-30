@@ -240,7 +240,7 @@ button.Label = "Hello World";
 
 button.SizeMode = SizeMode.Large;
 
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+button.LargeIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
 
