@@ -110,7 +110,7 @@ Person.InLineItems.Add(new Item() { Start =0, End=2, Name = "Market Analysis", P
 
 Person.InLineItems.Add(new Item() { Start =2, End=4, Name = "Competitor Analysis", Progress = 20d });
 
-Person.InLineItems.Add(new Item() { Start = 3, End = 6,Name = "Desing Spec" });
+Person.InLineItems.Add(new Item() { Start = 3, End = 6,Name = "Design Spec" });
 
 teams[0].SubItems.Add(Person);
 
@@ -195,7 +195,7 @@ teams.Add(new Item() { Name = "RDU Team" });
 Item Person = new Item() { Name = "Robert" };
 Person.InLineItems.Add(new Item(){ StartDate = new DateTime(2012, 01, 07), FinishDate = new DateTime(2012, 01, 11), Name = "Market Analysis", Progress = 50d });
 Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 11), FinishDate = new DateTime(2012, 01, 15), Name = "Competitor Analysis", Progress = 20d });
-Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 13), FinishDate = new DateTime(2012, 01, 19), Name = "Desing Spec" });
+Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 13), FinishDate = new DateTime(2012, 01, 19), Name = "Design Spec" });
 teams[0].SubItems.Add(Person);
 Person = new Item() { Name = "Michael" };
 Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 18), FinishDate = new DateTime(2012, 01, 19), Name = "Basic Requirement Analysis", Progress = 40 });
