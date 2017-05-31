@@ -178,7 +178,7 @@ Gantt.ExcludeWeekends = true;
 //To set ShowNonWorkingHoursBackground
 Gantt.ShowNonWorkingHoursBackground = true;
 
-// To Set IsFYNumberingEndbled
+// To Set FY Numbering
 Gantt.IsFYNumberingEndbled = true;
 
 
