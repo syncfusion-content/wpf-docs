@@ -322,7 +322,7 @@ this.Gantt.CustomScheduleSource = this.GetCustomScheduleSource();
 
 
 
-// Hooks the Schedulecell created event to customize the schedule cell appearance.
+// Hooks the schedule cell created event to customize the schedule cell appearance.
 
 this.Gantt.ScheduleCellCreated+=new GanttControl.ScheduleCellCreatedEventHandler 
 
