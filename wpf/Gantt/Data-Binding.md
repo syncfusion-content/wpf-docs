@@ -68,7 +68,7 @@ FinishDate = new DateTime(2011, 1, 5), 
 Progress = 20d });
 task[0].Child.Add(new TaskDetails { TaskId = 3, 
 
-TaskName = "Justify Project Office via business model", 
+TaskName = "Justify project office via business model", 
 
 StartDate = new DateTime(2011, 1, 6), 
 
@@ -235,7 +235,7 @@ EndDate = new DateTime(2011, 1, 5), 
 Progress = 20d });
 task[0].ChildTask.Add(new Task { Id = 3, 
 
-Name = "Justify Project Office via business model", 
+Name = "Justify project office via business model", 
 
 StartDate = new DateTime(2011, 1, 6), 
 
