@@ -154,7 +154,7 @@ PredecessorMapping="Predecessor">
 //To set WeekBeginsOn
 Gantt.WeekBeginsOn = DayOfWeek.Friday;
 
-//To set IsFYNumberingEndbled
+//To set FY Numbering
 Gantt.IsFYNumberingEndbled = true;
 
 //To set FiscalYearBeginsOn
