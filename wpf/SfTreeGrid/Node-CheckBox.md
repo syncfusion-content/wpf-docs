@@ -45,7 +45,7 @@ treeGrid.AllowTriStateChecking = true;
 
 ## Recursive Checking
 
-SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecuriveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecuriveCheckingTopic.html) property as `true`.
+SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecursiveCheckingTopic.html) property as `true`.
 
 * A tree node will be checked only if all its child nodes are checked.
 * A tree node will be unchecked if all its child nodes are unchecked. 
@@ -54,19 +54,19 @@ SfTreeGrid provides support for recursive checking where the checked state of pa
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                       EnableRecuriveChecking="True"
+                       EnableRecursiveChecking="True"
                        ChildPropertyName="Children"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
 {% endhighlight %}
 {% highlight c# %}
-treeGrid.EnableRecuriveChecking = true;
+treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
 ![](Node-CheckBox_images/Node-CheckBox_img2.png)
 
-N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAllowTriStateCheckingTopic.html) is `false` if [SfTreeGrid.EnableRecuriveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecuriveCheckingTopic.html) is `true`, CheckBox can be in indeterminate state.
+N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAllowTriStateCheckingTopic.html) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecursiveCheckingTopic.html) is `true`, CheckBox can be in indeterminate state.
 
 ## Saving and loading Node CheckBox state from the property in data object
 
@@ -92,7 +92,7 @@ By default, recursive checking will be applied, whenever node’s `IsChecked` pr
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                       EnableRecuriveChecking="True"
+                       EnableRecursiveChecking="True"
                        ChildPropertyName="Children"
                        RecursiveCheckingMode="OnCheck"
                        ItemsSource="{Binding PersonDetails}"
@@ -130,7 +130,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Syncfusion.SfGrid.WPF;component/Control/Themes/Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <local:BoolToVisiblityConverter x:Key="boolToVisiblityConverter" />
+            <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter" />
             <Style TargetType="syncfusion:TreeGridExpanderCell">
                 <Setter Property="Background" Value="Transparent" />
                 <Setter Property="BorderThickness" Value="0,0,1,1" />
@@ -163,7 +163,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
                                                                                           Mode=TwoWay}"
                                                                      Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
                                                                                           Path=HasChildNodes,
-                                                                                          Converter={StaticResource boolToVisiblityConverter},
+                                                                                          Converter={StaticResource boolToVisibilityConverter},
                                                                                           Mode=TwoWay}" />
 
                                         <CheckBox Name="PART_SelectCheckBox"
@@ -173,7 +173,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
                                                   MinWidth="16"
                                                   Margin="3,0,0,0"
                                                   VerticalAlignment="Center"
-                                                  syncfusion:VisualContainer.WantsMouseInput="True"
+                                                  Syncfusion:VisualContainer.WantsMouseInput="True"
                                                   IsEnabled="{Binding RelativeSource={RelativeSource TemplatedParent},
                                                                       Path=IsCheckBoxEnabled,
                                                                       Mode=TwoWay,
@@ -181,7 +181,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
                                                   IsThreeState="True"
                                                   Visibility="{Binding Path=HasChildNodes,
                                                                        RelativeSource={RelativeSource TemplatedParent},
-                                                                       Converter={StaticResource boolToVisiblityConverter},
+                                                                       Converter={StaticResource boolToVisibilityConverter},
                                                                        Mode=TwoWay}" />
                                         <Grid Grid.Column="2"
                                               Margin="3,0,0,0"
@@ -252,7 +252,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
 </Window.Resources>
 {% endhighlight %}
 {% highlight c# %}
-public class BoolToVisiblityConverter : IValueConverter
+public class BoolToVisibilityConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
@@ -375,7 +375,7 @@ treeNode.SetCheckedState(true);
 {% endhighlight %}
 {% endtabs %}
 
-If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecuriveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecuriveCheckingTopic.html) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeNodeClassSetCheckedStateTopic.html) method.
+If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecursiveCheckingTopic.html) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeNodeClassSetCheckedStateTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}

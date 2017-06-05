@@ -98,7 +98,7 @@ if (saveFileDialog.ShowDialog() == true)
 {% highlight vbnet %}
 
 Dim saveFileDialog As SaveFileDialog()
-saveFileDialog.FileName = "OlapCahrt Report"
+saveFileDialog.FileName = "OlapChart Report"
 saveFileDialog.AddExtension = True
 saveFileDialog.DefaultExt = "doc"
 saveFileDialog.Filter = "Word (.doc)|*.doc"
@@ -135,7 +135,7 @@ if (saveFileDialog.ShowDialog() == true)
 {% highlight vbnet %}
 
 Dim saveFileDialog As SaveFileDialog()
-saveFileDialog.FileName = "OlapCahrt Report"
+saveFileDialog.FileName = "OlapChart Report"
 saveFileDialog.AddExtension = True
 saveFileDialog.DefaultExt = "pdf"
 saveFileDialog.Filter = "PDF (.pdf)|*.pdf"
@@ -186,7 +186,7 @@ if (saveFileDialog.ShowDialog() == true)
 
 Dim c_imageFilesFilter As String = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|GIF(*.gif)|*.gif|TIFF(*.tiff)|*.tiff|PNG(*.png)|*.png|WDP(*.wdp)|*.wdp|All files (*.*)|*.*"
 Dim saveFileDialog As SaveFileDialog()
-saveFileDialog.FileName = "OlapCahrt Report"
+saveFileDialog.FileName = "OlapChart Report"
 saveFileDialog.Filter = c_imageFilesFilter;
 If saveFileDialog.ShowDialog() = True Then
     Dim extension As String = New FileInfo(fileName).Extension.ToLower(CultureInfo.InvariantCulture);

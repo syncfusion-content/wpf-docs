@@ -51,7 +51,7 @@ public partial class MainWindow: Window {
     }
 
     void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
-        // To define some PivotCalculatios 
+        // To define some PivotCalculations 
         // Setting the property value to InnerMost to all the defined PivotCalculations
         for (int i = 0; i < pivotGrid.PivotCalculations.Count; i++)
             pivotGrid.PivotCalculations[i].InnerMostComputationsOnly = Syncfusion.PivotAnalysis.Base.SummaryDisplayLevel.InnerMostOnly;

@@ -8,9 +8,9 @@ documentation: ug
 
 ---
 
-#Data Binding
+# Data Binding
 
-Any objects can be added as Node/Connector/Group for the diagram. But to have better access to diagram, some interfaces have to be implemented by the such objects. Such interfaces are already implemented as a set of ViewModel classes. There classes will just implement properties, they don’t have any logic. 
+Any objects can be added as Node/Connector/Annotation/Group for the diagram. But to have better access to diagram, some interfaces have to be implemented by the such objects. Such interfaces are already implemented as a set of ViewModel classes. There classes will just implement properties, they don’t have any logic. 
 By default, View will be generated for each ViewModel and Properties of ViewModel (NodeViewModel) are bind to View (Node). We have changed this Default Behavior (ViewModel to View binding will not work).
 
 
