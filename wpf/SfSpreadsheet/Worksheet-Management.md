@@ -63,6 +63,21 @@ SfSpreadsheet provides support to rename a worksheet in the workbook by using [R
 {% endhighlight %}
 {% endtabs %}
 
+### Rename a sheet programmatically
+
+SfSpreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RenameSheet(String,String).html) method.
+
+{% tabs %}
+	
+{% highlight c# %}
+
+//To Rename a sheet programmatically
+spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Protection
 
 ### Protecting a worksheet

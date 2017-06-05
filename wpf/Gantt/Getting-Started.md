@@ -183,7 +183,7 @@ task[0].Child.Add(new TaskDetails { TaskId = 2, 
                     Progress = 20d });
 task[0].Child.Add(new TaskDetails { TaskId = 3, 
 
-                    TaskName = "Justify Project Offfice via business model", 
+                    TaskName = "Justify project office via business model", 
 
                     StartDate = new DateTime(2011, 1, 6), 
 
