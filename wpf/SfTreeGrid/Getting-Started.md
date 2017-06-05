@@ -74,10 +74,10 @@ Syncfusion.SfGridConverter.WPF contains static extension classes for exporting S
 </tr>
 <tr>
 <td>
-Syncfusion.XlsIO.Base.WPF
+Syncfusion.XlsIO.Base
 </td>
 <td>
-Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and manipulating excel files.
+Syncfusion.XlsIO.Base contains fundamental and base classes for creating and manipulating excel files.
 </td>
 </tr>
 <tr>
