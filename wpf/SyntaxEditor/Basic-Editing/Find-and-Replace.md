@@ -150,9 +150,177 @@ The following image shows Quick Replace Tab in Find and Replace Window
 ![](Find-and-Replace_images/Find-and-Replace_img13.jpeg)
 
 
+
 1. Quick Replace tab is similar to that of Quick Find except for **Replace** **With** field.
 2. Replace with – Enter the alternative text to be replaced in this field.
 3. Quick replace supports two functionalities
 * **Replace**—Replaces the immediate occurrence of text specified in **Find** **what** with text specified in Replace with field.
 * **Replaces**—Replaces all the occurrences of the text specified in **Find** **what** with the text specified in the Replace with field. 
+
+**GoToLine** **Support**
+
+EditControl supports **GoToLine** functionality helps to reach out the line by programmatically or at run time using KeyBoard ShortKey as inspired from the Microsoft Visual Studio Editor. The **GoToLine** method is used to position the mouse pointer on any specified line. It not only positions the pointer on the appropriate line, but it also scrolls the concerned line as per the user requirement. Some of the common usage of this method associated with the purpose such as:
+
+<table>
+<tr>
+<th>
+Edit Control Method</th>
+<th>
+Description</th></tr>
+<tr>
+<td>
+GoToLine(Int LineNumber)</td><td>
+This function helps to scroll to a particular line, based on user input/requirement</td></tr>
+<tr>
+<td>
+ShowGoToLine()</td>
+<td>
+This function helps to show the GoToLine Window programmatically and current cursor line index will be displayed in it.
+</td></tr>
+<tr>
+<td>
+ShowGoToLine(int LineNumber)   
+</td><td>
+This function helps to show the GoToLine Window programmatically with the given line number included. </td></tr>
+</table>
+
+**GoToLine method**
+ 
+{% tabs %}
+{% highlight C# %}
+//Places the Cursor at the given line number
+editcontrol.GoToLine(1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+‘Places the Cursor at the given line number
+editcontrol.GoToLine(100)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**ShowGoToLine:**
+
+The GoToLine Window is invoked using the method **ShowGoToLine** method. The KeyBoard Shortcut key is **Ctrl+G**.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Method used to invoke the GoToLine Dialog Box
+editcontrol.ShowGoToLine();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+‘Method used to invoke the GoToLine Dialog Box
+editcontrol.ShowGoToLine()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following output shows the GoToLine Dialog Window
+
+![](Find-and-Replace_images/Find-and-Replace_img14.jpg)
+
+**ShowGoToLine With LineNumber.**
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Method used to invoke the GoToLine Window with user given line number
+editcontrol.ShowGoToLine(1000);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+‘Method used to invoke the GoToLine Window with user given line number
+editcontrol.ShowGoToLine(1000)
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Find-and-Replace_images/Find-and-Replace_img15.jpg)
+
+**Localization Support:**
+
+EditControl also provides the Localization support for the **GoToLine** functionality. This allows to configure the content of the GoToLine window in the multi-lingual according to the cultures. 
+
+As explained in the [Localization](https://help.syncfusion.com/wpf/localization) section, you can localize the content of the EditControl using the same steps.
+
+
+The key text associated with the GoToLine Dialog Window can be localized as follows:
+<table>
+<tr>
+<th>
+Localization Text</th>
+<th>
+Description</th></tr>
+<tr>
+<td>
+OkButtonText</td><td>
+Helps to localize the Ok Button Text.</td></tr>
+<tr>
+<td>
+GoToLineHeaderText</td>
+<td>
+Helps to localize the GoToLine Dialog Window Header Text.   
+</td></tr>
+<tr>
+<td>
+LineNumberText 
+</td><td>
+Helps to Localize the Line Number Text </td></tr>
+<tr>
+<td>
+CancelButtonText
+</td><td>
+Helps to localize the Cancel Button Text.    
+</td></tr>
+</table>
+
+![](Find-and-Replace_images/Find-and-Replace_img16.jpg)
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+public MainWindow()
+{
+//used to assign the culture
+System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+InitializeComponent();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Sub New()
+used to assign the culture
+System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("fr-FR")
+InitializeComponent()
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following output shows the GoToLine Window localized in French culture.
+
+
+![](Find-and-Replace_images/Find-and-Replace_img17.jpg)
+
+
+
 
