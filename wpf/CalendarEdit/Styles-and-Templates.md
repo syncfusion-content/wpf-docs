@@ -258,7 +258,7 @@ This property helps to hold the Special Dates collection, which can be customize
 
 {% tabs %}
 
-{% highlight XML%}
+{% highlight xaml %}
 
 <syncfusion:CalendarEdit Grid.RowSpan="3" x:Name="calendar"
 Grid.ColumnSpan="3" ShowWeekNumbers="True"
@@ -343,7 +343,11 @@ End Function
 
 {% endhighlight %}
 
-{% highlight XAML  %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight xaml %}
 
  <!--Code used to set the different DataTemplate to customize the particular day-->
 
