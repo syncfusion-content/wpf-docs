@@ -343,9 +343,6 @@ End Function
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight xaml %}
 
@@ -425,7 +422,7 @@ End Function
             <!--</Border>-->
         </DataTemplate>
 
-{% endhighlight}
+{% endhighlight %}
 
 {% endtabs %}
 
