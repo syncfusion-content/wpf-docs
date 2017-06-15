@@ -69,10 +69,10 @@ The parsed formula is a Reverse Polish Notation expression using tokens to compa
 All the operands will be indexed into a stack and we need to pop out for calculation. It can be functions, references, operators or constants.
 The parsing will be done from left to right and the order for parsing of operators is as follows,
 
-1. E+ E- //handles exponential notation like 1.2e-1 or 1.2e+1 to 1.2e1
+1. E+ E- (handles exponential notation like 1.2e-1 or 1.2e+1 to 1.2e1)
 2. ^ 
-3. * /
-4. + -
+3. / *
+4. +(plus), -(minus)
 5. < > = <= >= <>
 6. & 
 
