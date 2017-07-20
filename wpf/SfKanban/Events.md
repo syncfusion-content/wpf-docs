@@ -29,7 +29,7 @@ This event is triggered when you start to drag a card. The argument contains the
 
 ## DragEnd  
 
-This event is triggered when whenever dragging is cancelled. The argument contains the following information.
+This event is triggered when whenever dragging is canceled. The argument contains the following information.
 
 * [`IsCancel`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~IsCancel.html)			- Used to cancel the drag action.
 * [`SelectedCard`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCard.html)			- Used to get the underlying model of the card.
