@@ -35,7 +35,7 @@ Syncfusion NuGet Package feed links are configured in Visual Studio in the follo
 
 #### Syncfusion NuGet Package Manager
 
-The following steps help you configure Syncfusion NuGet Packages with a URL.
+The steps to configure the Syncfusion WPF NuGet Packages in Visual Studio are as follows,
 
 1. **Syncfusion NuGet Manager** is allows you to **add** the Syncfusion NuGet sources (for available platforms) to NuGet Package Manager. Download the [Syncfusion NuGet Manager](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionNugetManager-1610952973.zip) utility.
 2. Extract zip file and run the SyncfusionNuGetManager.exe
@@ -52,7 +52,7 @@ The following steps help you configure Syncfusion NuGet Packages with a URL.
 
 #### NuGet Package Manager settings
 
-The steps to install the Syncfusion WPF NuGet Packages in Visual Studio are as follows,
+The steps to configure the Syncfusion WPF NuGet Packages in Visual Studio are as follows,
 
 1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
 
