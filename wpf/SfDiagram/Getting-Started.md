@@ -285,11 +285,11 @@ public MainWindow()
             InitializeComponent();
             ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
             //Begin Node
-            NodeViewModel Begin = Addnode(300, 60, 120, 40, "Begin", "Ellipse");
+            NodeViewModel Begin = AddNode(300, 60, 120, 40, "Begin", "Ellipse");
             //Process Node
-            NodeViewModel Process = Addnode(300, 140, 120, 60, "Process", "Process");
+            NodeViewModel Process = AddNode(300, 140, 120, 60, "Process", "Process");
             //End Node
-            NodeViewModel End = Addnode(300, 225, 40, 40, "End", "Ellipse");
+            NodeViewModel End = AddNode(300, 225, 40, 40, "End", "Ellipse");
             //Adding Nodes to diagram
             nodes.Add(Begin);
             nodes.Add(Process);
@@ -297,7 +297,7 @@ public MainWindow()
             diagram.Nodes = nodes;
         }
         //Method for creating Node
-        public NodeViewModel Addnode(string id, double offsetX, double offsetY, double width, double height, string text, string shape)
+        public NodeViewModel AddNode(string id, double offsetX, double offsetY, double width, double height, string text, string shape)
         {
 
             NodeViewModel node = new NodeViewModel();
@@ -330,7 +330,7 @@ public MainWindow()
 
 #### Create Connector With Source Node and Target Node 
 
- Here, we have used `SourceNodeID` and `TargetNodeID` property of the Connector.These properties wil be assigned with `ID` property of the Node.
+ Here, we have used `SourceNodeID` and `TargetNodeID` property of the Connector.These properties will be assigned with `ID` property of the Node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -459,9 +459,9 @@ public MainWindow()
         {
             InitializeComponent();
             ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-            NodeViewModel Begin = Addnode("Begin", 300, 60, 120, 40, "Begin", "Ellipse") ;
-            NodeViewModel Process = Addnode("Process", 300, 140, 120, 60, "Process", "Process");
-            NodeViewModel End = Addnode("End", 300, 225, 40, 40, "End", "Ellipse");
+            NodeViewModel Begin = AddNode("Begin", 300, 60, 120, 40, "Begin", "Ellipse") ;
+            NodeViewModel Process = AddNode("Process", 300, 140, 120, 60, "Process", "Process");
+            NodeViewModel End = AddNode("End", 300, 225, 40, 40, "End", "Ellipse");
             nodes.Add(Begin);
             nodes.Add(Process);
             nodes.Add(End);
@@ -481,7 +481,7 @@ public MainWindow()
             lines.Add(connector2);
             diagram.Connectors = lines;
         }
-        public NodeViewModel Addnode(string id, double offsetX, double offsetY, double width, double height, string text, string shape)
+        public NodeViewModel AddNode(string id, double offsetX, double offsetY, double width, double height, string text, string shape)
         {
             NodeViewModel node = new NodeViewModel();
             node.ID = id;
