@@ -315,7 +315,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
         CalculationName = "Amount", FieldName = "Amount", SummaryType = SummaryType.Count
     };
     PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
-        CalculationName = "Quanity", FieldName = "Quanity", SummaryType = SummaryType.Count
+        CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
     };
     pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
     pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
