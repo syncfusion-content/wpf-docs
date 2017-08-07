@@ -26,8 +26,8 @@ Please refer the below code sample.
         }
         void pivotGrid_Loaded(object sender, RoutedEventArgs e)
         {
-            List<object> visbleRecords = pivotGrid.PivotEngine.VisibleRecords;
-            int _count = visbleRecords.Count;
+            List<object> VisibleRecords = pivotGrid.PivotEngine.VisibleRecords;
+            int _count = VisibleRecords.Count;
         }
 
     }

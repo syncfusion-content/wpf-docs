@@ -47,7 +47,7 @@ public partial class MainWindow: Window {
             CalculationName = "Amount", FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum
         };
         PivotComputationInfo m_PivotComputationInfo1 = new PivotComputationInfo() {
-            CalculationName = "Quanity", FieldName = "Quanity", SummaryType = SummaryType.Count
+            CalculationName = "Quantity", FieldName = "Quantity", SummaryType = SummaryType.Count
         };
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo);
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
