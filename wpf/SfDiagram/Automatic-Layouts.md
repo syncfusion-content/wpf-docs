@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Automatic Layout
+# Automatic Layout
 
 SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
@@ -17,7 +17,7 @@ SfDiagram provides support to auto-arrange the nodes in the Diagram area that is
 
 We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initial steps for all the Layout.
 
-###Create Class for Data
+### Create Class for Data
 
 Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
@@ -38,7 +38,7 @@ public class Employees : ObservableCollection<Employee>
 
 {% endhighlight %}
 
-###Initialize Data Source Settings
+### Initialize Data Source Settings
 
 {% highlight xaml %}
 
@@ -48,7 +48,7 @@ public class Employees : ObservableCollection<Employee>
         
 {% endhighlight %}
 
-###Visualize the Node and Connector
+### Visualize the Node and Connector
 
 {% highlight xaml %}
 
@@ -102,7 +102,7 @@ public class Employees : ObservableCollection<Employee>
 
 {% endhighlight %}
 
-##Organization Layout 
+## Organization Layout 
 
 An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart. 
 
@@ -150,7 +150,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a Node’s children and the way to arrange (Orientation, Type etc.) them. You can customize the arrangements by overriding this function as explained.
 
-##GetLayoutInfo
+## GetLayoutInfo
 
 User can change ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical. The following code example illustrates how to register an event and how to change ChartType and orientation.
 
@@ -189,7 +189,7 @@ The following table illustrates the different chart orientations and chart types
 | | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
 
 
-##Directed-Tree Layout
+## Directed-Tree Layout
 
 The Directed-Tree layout mode enables you to arrange the Nodes in a tree like structure. This layout can be applied to any Diagram that comprises a directed tree graph with unique root and child Nodes. This creates the Diagrams easier because the Node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the Nodes based on the layout root.
 
@@ -222,7 +222,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img8.jpg)
 
-##Radial-Tree Layout
+## Radial-Tree Layout
 
 The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the layout root.
 
@@ -267,7 +267,7 @@ The Radial-Tree Layout is a specification of the Directed Tree Layout Manager th
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
 
-###Updating the Layout
+### Updating the Layout
 
 When changes are made to content in the SfDiagram. For example, linking new Nodes or adding new Connectors, the layout had to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram.
 
@@ -278,7 +278,7 @@ SfDiagram diagramcontrol = new SfDiagram();
 
 {% endhighlight %}
 
-###Layout Bounds, Margins, and Alignments
+### Layout Bounds, Margins, and Alignments
 
 **Description**
 

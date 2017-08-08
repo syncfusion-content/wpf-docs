@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#AutoScroll
+# AutoScroll
 
 Autoscroll feature automatically scrolls the Diagram whenever the Node or Connector is moved beyond the boundary of the diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram.
 
@@ -16,7 +16,7 @@ Autoscroll feature automatically scrolls the Diagram whenever the Node or Connec
 * Rubber band selection
 * Label dragging
 
-##Autoscroll border
+## Autoscroll border
 
 The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the `AutoScrollBorder` property of ScrollSettings. The following code example illustrates how to set Autoscroll border.
 
@@ -26,7 +26,7 @@ diagram.ScrollSettings.AutoScrollBorder = new Thickness(150, 15, 15, 15);
 
 {% endhighlight %}
 
-##Scroll limit
+## Scroll limit
 
 The scroll limit allows you to define the scrollable region of the Diagram. It includes the following options.
 
@@ -44,7 +44,7 @@ diagram.ScrollSettings.ScrollLimit = ScrollLimit.Infinity;
 
 {% endhighlight %}
 
-##Scrollable Area
+## Scrollable Area
 
 You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region, you have to set the `ScrollLimit` as “limited”. The following code example illustrated how to customize scrollable area.
 

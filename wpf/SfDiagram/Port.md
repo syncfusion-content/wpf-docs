@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Port
+# Port
 
 Essential Diagram for WPF provides support to define ports for making connections.
 
@@ -21,13 +21,13 @@ Port act as the connection points of node and allows to create connections with 
 
 ![](Port_images/Port_img4.jpeg)![](Port_images/Port_img5.jpeg)
 
-###Data Binding
+### Data Binding
 
 In order to achieve Properties of ViewModel are bind to View, we have provided the Default Style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
 
-##Node Port
+## Node Port
 
-###Add ports to Nodes
+### Add ports to Nodes
 
 To add a collection port, you need to define the port object and add it to `Ports` property of Node. The `NodeOffsetX` and `NodeOffsetY` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Node.
 
@@ -119,9 +119,9 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img6.jpeg)
 
-##ConnectorPort
+## ConnectorPort
 
-###Add Port to Connector
+### Add Port to Connector
 To add a collection port, you need to define the port object and add it to `Ports` property of Connector. The `Length` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Connector.
 
 The following code illustrates how to add ports to Connector.
@@ -203,11 +203,11 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img7.jpeg)
 
-##Connect with ports
+## Connect with ports
 
 Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to [Connections with Ports](/wpf/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
 
-##Appearance
+## Appearance
 
 You can change the shape of port by using its shape property. The appearance of ports can be customized with a set of style specific properties.
 
@@ -268,6 +268,6 @@ The following code illustrates how to change the appearance of port.
 
 ![](Port_images/Port_img8.jpeg)
 
-##Constraints
+## Constraints
 
 The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#PortConstraints "Port Constraints").

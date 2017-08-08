@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Commands
+# Commands
 
 There are several commands available in the Diagram as follows.
 
@@ -27,7 +27,7 @@ There are several commands available in the Diagram as follows.
 * Undo/Redo command
 
 
-##Alignment Commands
+## Alignment Commands
 
 Alignment commands enable you to align the selected objects such as Nodes and Connectors on a page with respect to a reference object.
 
@@ -61,7 +61,7 @@ graphinfo.Commands.AlignTop.Execute(null);
 ![](Commands_images/Commands_img5.jpeg)
 ![](Commands_images/Commands_img6.jpeg)
 
-##Spacing Commands
+## Spacing Commands
 
 Spacing commands enable you to place selected objects on the page at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 
@@ -85,7 +85,7 @@ graphinfo.Commands.SpaceDown.Execute(null);
 
 ![](Commands_images/Commands_img8.jpeg)
 
-##Sizing Commands
+## Sizing Commands
 
 Object size commands enable selected Diagram objects on the page to be resized. The selected objects are resized in proportion to the first object in the selection list.
 
@@ -113,7 +113,7 @@ graphinfo.Commands.SameWidth.Execute(null);
 |---|---|
 | ![](Commands_images/Commands_img9.jpeg) | ![](Commands_images/Commands_img10.jpeg)  ![](Commands_images/Commands_img11.jpeg)  ![](Commands_images/Commands_img12.jpeg) |
 
-##Clipboard Commands
+## Clipboard Commands
 
 Clipboard commands are used to perform cut, copy, and paste operations. 
 
@@ -141,13 +141,13 @@ graphinfo.Commands.Paste.Execute(null);
 
 ![](Commands_images/Commands_img13.jpeg)
 
-##Duplicate Command
+## Duplicate Command
 
 This command copies the selected objects from the diagram and pastes the copied content into the diagram.                           
 
 ![](Commands_images/Commands_img14.jpeg)
 
-##Grouping Command
+## Grouping Command
 Grouping commands are used to group/ungroup the selected elements on the diagram.
 
 The following code illustrates how to execute the group commands
@@ -166,11 +166,11 @@ graphinfo.Commands.UnGroup.Execute(null);
 
 {% endhighlight %}
 
-##Flip Commands
+## Flip Commands
 
 Flip commands are used to mirror a diagram object’s content.
 
-##Parameter
+## Parameter
 To customize flipping, a parameter of type IFlipParameter has to be passed.
 
 **IFlipParameter Properties**
@@ -221,11 +221,11 @@ With Flip
 ![](Commands_images/Commands_img16.jpeg)![](Commands_images/Commands_img17.jpeg)![](Commands_images/Commands_img18.jpeg)
 
 
-##Z – Order Command
+## Z – Order Command
 
 Z – Order commands enable you to visually arrange the selected objects such as Nodes and Connectors on the page.
 
-###BringToFront command
+### BringToFront command
 
 The BringToFront command visually brings the selected element to the front over all other overlapped elements. 
 
@@ -243,7 +243,7 @@ graphinfo.Commands.BringToFront.Execute(null);
 
 ![](Commands_images/Commands_img19.jpeg)
 
-###SendToBack command
+### SendToBack command
 
 The SendToBack command visually moves the selected elements behind all the other overlapped elements. 
 
@@ -261,7 +261,7 @@ graphinfo.Commands.SendToBack.Execute(null);
 
 ![](Commands_images/Commands_img20.jpeg)
 
-###SendBackward command
+### SendBackward command
 
 The SendBackward command visually moves the selected elements behind the underlying element.
 
@@ -279,7 +279,7 @@ graphinfo.Commands.SendBackward.Execute(null);
 
 ![](Commands_images/Commands_img21.jpg)
 
-###BringForward command
+### BringForward command
 
 The BringForward command visually moves the selected element over the nearest overlapping element.
 
@@ -347,7 +347,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter()
 
 {% endhighlight %}
 
-###Reset Commands
+### Reset Commands
 Reset commands are used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram.
 To execute a reset command, a parameter of type IReset has to be passed.
 | Property | Description | Value |
@@ -365,7 +365,7 @@ graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.Zoom });
 
 {% endhighlight %}
 
-##Draw Commands
+## Draw Commands
 Draw commands are used to draw connections. They take parameters of type IDrawParameter.
 
 | Property | Description | Value |
@@ -394,11 +394,11 @@ void Button_PointerPressed(object sender, PointerRoutedEventArgs e)
 
 {% endhighlight %}
 
-##Undoing and Redoing Actions
+## Undoing and Redoing Actions
 
 The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo. 
 
-##Nudge Command
+## Nudge Command
 
 Nudge commands move the selected elements towards up, down, left or right by 1 pixel.The Nudge Commands as follows.
 
@@ -418,7 +418,7 @@ IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.MoveUp.Execute(null);
 {% endhighlight %}
 
-##FitToPage Command
+## FitToPage Command
 FitToPage commands are used to bring the entire Diagram into the view.
 
 | Command |	Description | Value |
@@ -448,7 +448,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 {% endhighlight %}
 
-##Command Manager
+## Command Manager
 Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for built-in commands with Key Gesture and Mouse Gesture.
 List of Commands and Key Gesture:
 
@@ -473,7 +473,7 @@ List of Commands and Key Gesture:
 | BringToFront | ] | Control+Shift |
 | BringForward | ] | Control |
 
-####List of Commands and Key Gestures with Parameter
+#### List of Commands and Key Gestures with Parameter
 
 | Command | Key | KeyModifier | Parameter |
 |---|---|---|---|
@@ -482,13 +482,13 @@ List of Commands and Key Gesture:
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
 | FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
-####List of Commands and Mouse Gesture with Parameter
+#### List of Commands and Mouse Gesture with Parameter
 
 | Command | Scroll State | Parameter |
 |---|---|---|
 | Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.VerticalScroll} |
 
-####List of Commands and Key and Mouse Gesture with Parameter
+#### List of Commands and Key and Mouse Gesture with Parameter
 
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
@@ -497,11 +497,11 @@ List of Commands and Key Gesture:
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
 
-###Custom command
+### Custom command
 
 User defined commands can also be created and mapped with existing gesture by using command manager. The following code example explains how to register mouse key gesture with Parameter to Save Command (Control + S)
 
-####Create a user defined command: Save command
+#### Create a user defined command: Save command
 
 {% highlight C# %}
 //Create ICommand
@@ -538,7 +538,7 @@ private async void OnSaveCommand(Object obj)
        }
   }
   {% endhighlight %}
-####Map and user defined command with key gesture:
+#### Map and user defined command with key gesture:
 //Add new Commands to CommandManager - Ctrl + S -> Save
             
 {% highlight C# %}			

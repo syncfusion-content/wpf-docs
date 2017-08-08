@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Stencil
+# Stencil
 
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filters by using the SymbolFilterProvider through delegates.
 
@@ -33,11 +33,11 @@ Properties Table
 | SymbolFilters | Collection of SymbolFilterProvider To filter/Hide the Symbols based on MappingName Property. |
 | SymbolSource | ItemSource for Stencil to populate the SymbolGroups with symbol. | 
 
-##Symbol
+## Symbol
 
 Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil:
 
-####Symbol and SymbolTemplate
+#### Symbol and SymbolTemplate
 
 {% highlight C# %}
 
@@ -68,11 +68,11 @@ public class SymbolItem : ISymbol
 
 {% endhighlight %}
 
-###Adding the Symbol
+### Adding the Symbol
 
 The following example illustrates how to add the Symbol into a Collection:
 
-####Define the SymbolTemplate.
+#### Define the SymbolTemplate.
 
 {% highlight xaml %}
 
@@ -83,7 +83,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 {% endhighlight %}
 
-####Create the ISymbol with Symbol and SymbolTemplate properties.
+#### Create the ISymbol with Symbol and SymbolTemplate properties.
 
 {% highlight xaml %}
 
@@ -92,7 +92,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 {% endhighlight %}
 
-####Add the ISymbol into the Collection.
+#### Add the ISymbol into the Collection.
 
 {% highlight C# %}
 
@@ -118,9 +118,9 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
-###Add Node, Connector and Group to Stencil
+### Add Node, Connector and Group to Stencil
 
-####Create a Node ,Connector and Group and to SymbolCollection.
+#### Create a Node ,Connector and Group and to SymbolCollection.
 
 {% highlight xaml %}
 
@@ -157,7 +157,7 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 
 {% endhighlight %}
 
-####Add SymbolCollection to SymbolSource of Stencil.
+#### Add SymbolCollection to SymbolSource of Stencil.
 
 {% highlight xaml %}
 
@@ -172,7 +172,7 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 
 {% endhighlight %}
 
-##SymbolGroups
+## SymbolGroups
 
 The SymbolGroupProvider groups the symbols into SymbolGroup based on the MappingName property.
 
@@ -199,7 +199,7 @@ The following code example illustrates how to create a SymbolGroup.
 
 ![](Stencil_images/Stencil_img3.jpeg)
 
-###Expand or Collapse SymbolGroup
+### Expand or Collapse SymbolGroup
 
 Expand and Collapse can be performed on SymbolGroup (updating the Visibility of the Symbols) based on the ExpandMode property. It includes the following options. The default option is One.
 
@@ -211,7 +211,7 @@ Expand and Collapse can be performed on SymbolGroup (updating the Visibility of 
 | ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img9.jpeg) | ![](Stencil_images/Stencil_img10.jpeg) |
 | All | All the SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img11.jpeg) |
 
-##SymbolFilters
+## SymbolFilters
 
 `SymbolFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
 
@@ -256,7 +256,7 @@ private bool SymbolFilter(SymbolFilterProvider sender, object symbol)
 
 ![](Stencil_images/Stencil_img12.jpeg)
 
-###SelectedFilter
+### SelectedFilter
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
@@ -266,7 +266,7 @@ There can be multiple SymbolFilters, but only one filter can be selected at a ti
 
 SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
 
-####Use Case Scenario
+#### Use Case Scenario
 
 This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
 
@@ -288,15 +288,15 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, Stencil is an instance of Stencil.
 
-####Preview of the dragging Symbol
+#### Preview of the dragging Symbol
 
 ![](Stencil_images/Stencil_img14.jpeg)
 
-####Dragged Symbol
+#### Dragged Symbol
 
 ![](Stencil_images/Stencil_img15.jpeg)
 
-####Customization of Preview for Drag and Drop
+#### Customization of Preview for Drag and Drop
 
 You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
 
