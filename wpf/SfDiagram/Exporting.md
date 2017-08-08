@@ -7,13 +7,13 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Exporting
+# Exporting
 
 Diagram provides support to extent its content as image files
 
 ![](Exporting_images/Exporting_img1.jpeg)
 
-##Exporting Options
+## Exporting Options
 
 Diagram provides support to export the desired region of the Diagram to desired formats.
 
@@ -52,7 +52,7 @@ _//Method to Export the SfDiagram_
 diagram.Export();
 {% endhighlight %}
 
-###Mode
+### Mode
 
 | ExportMode | Description |
 |---|---|

@@ -7,13 +7,13 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Interaction
+# Interaction
 
-##Selection
+## Selection
 
 Selector provides a visual representation of selected elements. It behaves like a container and enables you to update the size, position, and rotation angle of the selected elements through interaction and programmatically. Single or multiple elements can be selected at a time.
 
-###Single Selection
+### Single Selection
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
@@ -21,11 +21,11 @@ An element can be selected by clicking that element. During single click, all pr
 
 ![](Interaction_images/Interaction_img4.jpeg)
 
-###Selecting a Group
+### Selecting a Group
 
 When a child element of any Group is clicked, its contained Group is selected instead of the child element. With consecutive clicks on the selected element, selection is changed from top to bottom in the hierarchy of parent Group to its children.
 
-###Multiple Selection
+### Multiple Selection
 
 Multiple elements can be selected with the following ways.
 
@@ -41,7 +41,7 @@ Multiple selected elements are visually represented as shown.
 
 ![](Interaction_images/Interaction_img5.jpeg)
 
-###Select/Unselect the elements programmatically
+### Select/Unselect the elements programmatically
 
 The IsSelected Property is used to select/unselect the elements at runtime.
 
@@ -59,14 +59,14 @@ node.IsSelected = false;
 
 {% endhighlight %}
 
-##Drag
+## Drag
 
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping").
 
 ![](Interaction_images/Interaction_img6.jpeg)
 
-##Resize
+## Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
@@ -74,7 +74,7 @@ node.IsSelected = false;
 
 ![](Interaction_images/Interaction_img7.jpeg)
 
-##Rotate
+## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
 * The Node is rotated with reference to the static pivot point.
@@ -82,23 +82,23 @@ node.IsSelected = false;
 
 ![](Interaction_images/Interaction_img8.jpeg)
 
-##Connection Editing
+## Connection Editing
 
 * Each segment of a selected Connector is editable with some specific handles/thumbs.
 
-###End point handles
+### End point handles
 
 Source and target points of the selected Connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
 ![](Interaction_images/Interaction_img9.jpeg)
 
-###Straight segment editing
+### Straight segment editing
 
 * End point of each straight segment is represented by a thumb that enables to edit the segment.
 * Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
 * Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
 
-###Orthogonal thumbs
+### Orthogonal thumbs
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
@@ -108,13 +108,13 @@ Source and target points of the selected Connectors are represented with two han
 
 ![](Interaction_images/Interaction_img11.jpeg)
 
-###Bezier thumbs
+### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
 ![](Interaction_images/Interaction_img12.jpeg)
 
-##Drag and Drop Nodes over other elements
+## Drag and Drop Nodes over other elements
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the constraints property. The following code illustrates how to enable **dropping**.
 
@@ -182,13 +182,13 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 {% endhighlight %}
 
-##Zoom pan
+## Zoom pan
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
 * Diagram can be zoomed in or out by using Ctrl + mouse wheel.
 
-##Keyboard
+## Keyboard
 
 Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 

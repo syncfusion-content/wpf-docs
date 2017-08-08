@@ -7,13 +7,13 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Group
+# Group
 
 Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
-##Create Group
+## Create Group
 
-###Add Group
+### Add Group
 
 The following code illustrates how to create a Group Node.
 
@@ -54,12 +54,12 @@ diagram.Groups = groups;
 
 {% endhighlight %}
 
-###Group from Stencil
+### Group from Stencil
 
 Group Nodes can be predefined and added to stencil. You can drop those Groups into Diagram, when required. 
 
 To explore how to add Groups from stencil, refer to [Stencil](/wpf/sfdiagram/Stencil "Stencil").
 
-##Interaction
+## Interaction
 
 You can edit the Group and its children at runtime. For more information about how to interact with a Group, refer to [Interaction](/wpf/sfdiagram/Interaction "Interaction").
