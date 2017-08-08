@@ -526,7 +526,7 @@ public class Employee
     public string ParentId { get; set; }
     public string Name { get; set; }
     public string Designation { get; set; }
-    public int EmpId { get; set; }
+    public int EmployeeId { get; set; }
 }
 //Employee Collection
 public class Employees : ObservableCollection<Employee>  
@@ -543,13 +543,13 @@ Define Employee Information as a Collection. The following code example shows an
 {% highlight xaml %}
 <!-- Initializes the employee colletion-->
 <local:Employees x:Key="Employees">
-   <local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
-   <local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
-   <local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
-   <local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="TeamLead"/>
-   <local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
-   <local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
-   <local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
+   <local:Employee Name="Elizabeth" EmployeeId="1" ParentId="" Designation="CEO"/>
+   <local:Employee Name="Christina" EmployeeId="2" ParentId="1" Designation="Manager"/>
+   <local:Employee Name="Yang" EmployeeId="3" ParentId="1" Designation="Manager"/>
+   <local:Employee Name="Yoshi" EmployeeId="4" ParentId="2" Designation="TeamLead"/>
+   <local:Employee Name="Philip" EmployeeId="5" ParentId="2" Designation="TeamLead"/>
+   <local:Employee Name="Roland" EmployeeId="6" ParentId="3" Designation="TeamLead"/>
+   <local:Employee Name="Yuonne" EmployeeId="7" ParentId="3" Designation="TeamLead"/>
 </local:Employees>
 {% endhighlight %}
 
@@ -561,7 +561,7 @@ The following code examples show how DataSourceSetting is used to map id and par
 {% highlight xaml %}
 <!--Initializes the DataSourceSettings-->
 <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"							    
-                               Id="EmpId">
+                               Id="EmployeeId">
 </syncfusion:DataSourceSettings>
 {% endhighlight %}
 
@@ -633,17 +633,17 @@ xmlns:local="clr-namespace:EmployeeDetails">
         </ResourceDictionary.MergedDictionaries>
 <!-- Initializes the employee colletion-->
 <local:Employees x:Key="Employees">
-    <local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/>
-    <local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/>
-    <local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/>
-    <local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="TeamLead"/>
-    <local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="TeamLead"/>
-    <local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/>
-    <local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Elizabeth" EmployeeId="1" ParentId="" Designation="CEO"/>
+    <local:Employee Name="Christina" EmployeeId="2" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Yang" EmployeeId="3" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Yoshi" EmployeeId="4" ParentId="2" Designation="TeamLead"/>
+    <local:Employee Name="Philip" EmployeeId="5" ParentId="2" Designation="TeamLead"/>
+    <local:Employee Name="Roland" EmployeeId="6" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Yuonne" EmployeeId="7" ParentId="3" Designation="TeamLead"/>
 </local:Employees>
 <!--Initializes the DataSourceSettings -->
 <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="ParentId"
-Id="EmpId" DataSource="{StaticResource Employees}">
+Id="EmployeeId" DataSource="{StaticResource Employees}">
 </syncfusion:DataSourceSettings>
 <!--Style for the Node>-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
