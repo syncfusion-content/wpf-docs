@@ -136,6 +136,43 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
+## AnnotationConstraints
+AnnotationConstraints allow to enable or disable the following behaviors of Annotation.
+
+* Selection
+* Drag
+* Resize
+* Rotate
+
+**Example**
+the following code illustrates how to enable annotation dragging.
+
+{% highlight C# %}
+
+            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
+            NodeViewModel nvm = new NodeViewModel()
+            {
+                OffsetX = 200,
+                OffsetY = 200,
+                UnitWidth = 100,
+                UnitHeight = 50,
+                //Initialize and Add annotation to NodeViewModel
+                Annotations = new ObservableCollection<IAnnotation>()
+                    {
+                        //Create a AnnotationEditorViewModel
+                        new AnnotationEditorViewModel()
+                        {
+                            Content = "Annotation",
+                            //Assign Constraint to Select and Drag.
+                            Constraints =AnnotationConstraints.Selectable |AnnotationConstraints.Draggable,                            
+                        }          
+                    }
+            };
+            //Add NodeViewModel to Nodes Collection
+            (Diagram.Nodes as NodeCollection).Add(nvm);
+
+{% endhighlight %} 
+
 ## SelectorConstraints
 
 Selector visually represents the selected elements with certain editable thumbs. The visually of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows.
