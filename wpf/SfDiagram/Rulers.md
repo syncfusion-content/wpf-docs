@@ -7,11 +7,11 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Rulers
+# Rulers
 
 The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
 
-##Adding Rulers to the Diagram
+## Adding Rulers to the Diagram
 
 Use the following code example to add the ruler to the Diagram.
 
@@ -24,7 +24,7 @@ diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical 
 
 ![](Rulers_images/Rulers_img1.jpeg)
 
-##Customizing the Ruler
+## Customizing the Ruler
 
 By default, ruler segments are arranged based on measurement units.
 
