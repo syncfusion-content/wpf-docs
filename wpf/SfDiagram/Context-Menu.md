@@ -7,11 +7,11 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Context Menu
+# Context Menu
 
 In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-build ContextMenu items and allows to define custom menu items.
 
-##Default Context Menu
+## Default Context Menu
 
 The `ContentMenu` Constraint helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands. 
 
@@ -29,7 +29,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.ContextMenu;
 
 {% endhighlight %}
 
-##Customize Context Menu
+## Customize Context Menu
 
 Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
 
@@ -48,7 +48,7 @@ Diagram.Menu.MenuItems.Add(menu);
 
 ![](Context-Menu_images/Context-Menu_img2.jpg)
 
-###Menu for Node and Connector
+### Menu for Node and Connector
 
 The default value of Menu property for Node and Connector is null.
 
@@ -85,7 +85,7 @@ private void menu_ClickedEvent(object sender, MenuItemClickedEventArgs args)
 
 {% endhighlight %}
 
-##Context Menu Events
+## Context Menu Events
 
 You would be notified with events when you click the menu items. The following code example illustrates how to define those events.
 
