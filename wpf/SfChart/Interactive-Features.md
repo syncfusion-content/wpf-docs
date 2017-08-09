@@ -1208,7 +1208,7 @@ SfChart has a feature that allows you to edit an entire series or a single data 
 
 Segment Dragging defines the dragging a particular point or segment based on the series type. The segment dragging can be enabled using [`EnableSegmentDragging`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~EnableSegmentDragging.html#) property as true.
 
-**LineSeries**
+**Line Series**
 
 {% tabs %}
 
@@ -1251,10 +1251,10 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img19.jpeg)
+![](Interactive-Features_images/Interactive-Features_img19.jpg)
 
 
-**ColumnSeries**
+**Column Series**
 
 {% tabs %}
 
@@ -1299,7 +1299,57 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img20.jpeg)
+![](Interactive-Features_images/Interactive-Features_img20.jpg)
+
+**Scatter Series**
+
+This series supports dragging in both the x and y co-ordinates. The dragging co-ordinates can be set by using the enum propery 'DragDirection'.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:ScatterSeries ItemsSource="{Binding Data}" XBindingPath="Index" YBindingPath="Value"     
+                                      
+Interior="#777777"
+
+EnableSegmentDragging="True"
+
+DragDirection="XY" >
+
+ </syncfusion:ScatterSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+            
+{
+                
+ItemsSource = new ViewModel().Data,
+                
+XBindingPath = "Index",
+                
+YBindingPath = "Value",
+                
+Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
+                
+EnableSegmentDragging = true,
+
+DragDirection = DragType.XY
+            
+};
+
+chart.Series.Add(series)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Interactive-Features_images/Interactive-Features_img55.jpg)
+
+N> By default the DragDirection of the scatter series is XY.
 
 ### Series Dragging
 
@@ -1404,7 +1454,7 @@ chart.Series.Add(series);
 ![](Interactive-Features_images/Interactive-Features_img22.jpeg)
 
 
-**DragTooltipTemplate**
+**Drag Tooltip Template**
 
 [`DragTooltipTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragTooltipTemplate.html#)  property allows you to customize the default appearance of the tooltip while dragging.
 
@@ -1479,8 +1529,67 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img23.jpeg)
+![](Interactive-Features_images/Interactive-Features_img23.jpg)
 
+**Drag Tooltip Style**
+
+The dragging tooltip can be customized by using the 'DragTooltipStyle' property of the series.
+
+The following are the API’s in *'ChartDragTooltipStyle'.
+
+'FontFamily' – Gets or sets the font family for dragging tooltip text.
+
+'FontSize' – Gets or sets the font size for dragging tooltip text.
+
+'FontStyle' – Gets or sets the font style for dragging tooltip text.
+
+'Foreground' – Gets or sets the brush for dragging tooltip text.
+
+'Background' – Gets or sets the background brush for dragging tooltip.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:LineSeries.DragTooltipStyle>
+                    
+<syncfusion:ChartDragTooltipStyle FontFamily="Calibri" 
+                                  
+FontSize="14" 
+                                                     
+FontStyle="Italic"
+                                                      
+Background="DarkGray" 
+                                                      
+Foreground="Black" />
+
+</syncfusion:LineSeries.DragTooltipStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+series.DragTooltipStyle = new ChartDragTooltipStyle()
+            
+{
+                
+    FontFamily = new FontFamily("Calibri"),
+                
+    FontSize = 14,
+                
+    FontStyle = FontStyles.Italic,
+                
+    Background = new SolidColorBrush(Colors.DarkGray),
+                
+    Foreground = new SolidColorBrush(Colors.Black)
+            
+};
+
+![](Interactive-Features_images/Interactive-Features_img56.jpg)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 **Rounding** **Off** **the** **Dragged** **Value**
 
