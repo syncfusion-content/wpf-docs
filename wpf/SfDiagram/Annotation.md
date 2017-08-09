@@ -357,21 +357,21 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 
 {% highlight C# %}
 
-            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
+            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding".
             NodeViewModel nvm = new NodeViewModel()
             {
                 OffsetX = 200,
                 OffsetY = 200,
                 UnitWidth = 100,
                 UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel
+                //Initialize and Add annotation to NodeViewModel.
                 Annotations = new ObservableCollection<IAnnotation>()
                     {
-                        //Create a AnnotationEditorViewModel
+                        //Create a AnnotationEditorViewModel.
                         new AnnotationEditorViewModel()
                         {
                             Content = "Annotation",
-                            //Assign Constraint to Select, Drag, Resize and Rotate Annotation
+                            //Assign Constraint to Select, Drag, Resize and Rotate Annotation.
                             Constraints = AnnotationConstraints.Default
                         }          
                     }
@@ -393,14 +393,14 @@ Automatic annotation orientation based on Parent(Node/Connector) or Page directi
                 OffsetY = 200,
                 UnitWidth = 100,
                 UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel
+                //Initialize and Add annotation to NodeViewModel.
                 Annotations = new ObservableCollection<IAnnotation>()
                     {
                         //Create a AnnotationEditorViewModel
                         new AnnotationEditorViewModel()
                         {
                             Content = "Annotation",
-                            //Assign Constraint to Selec, Drag and Rotate Annotation
+                            //Assign Constraint to Select, Drag and Rotate Annotation.
                             Constraints = AnnotationConstraints.Default,
                            //This is stop the rotation of Annotation along with its Parent.
                             RotationReference=RotationReference.Page
