@@ -363,6 +363,48 @@ The series can be collapsed by unchecking the CheckBox as below:
 ![](Legend_images/chkbox_2.png)
 
 
+## ToggleSeriesVisibility 
+
+`ToggleSeriesVisibility` is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its legend item. By default, `ToggleSeriesVisibility` property is *False*.
+
+We can enable the `ToggleSeriesVisibility` property as in below code example:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.Legend>
+
+        <chart:ChartLegend ToggleSeriesVisibility="True" />
+
+</chart:SfChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+
+    ToggleSeriesVisibility = true
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+The [`series`](https://help.syncfusion.com/wpf/sfchart/series) can be collapsed, by clicking on the respective legend item,
+
+![](Legend_images/Toggling_1.png)
+
+
+We can also view the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its disabled legend item,
+
+![](Legend_images/Toggling_2.png)
+
+
 ## Positioning the Legend
 
 **Legend** **Position**

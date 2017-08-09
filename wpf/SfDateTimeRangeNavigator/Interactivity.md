@@ -56,6 +56,10 @@ Used to get the End value of the Selected range of the Navigator</td></tr>
 <td>
 EnableDeferredUpdate</td><td>
 Used to enable deferred scrolling and panning.</td></tr>
+<tr>
+<td>
+DeferredUpdateDelay</td><td>
+Gets or sets the delay value, when EnableDeferredUpdate is enabled.</td></tr>
 </table>
 
 

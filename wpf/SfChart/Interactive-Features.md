@@ -975,6 +975,49 @@ chart.PrimaryAxis = new NumericalAxis()
 
 When the trackball is hovered over you can view the label is also displayed over the series in addition the axis label.
 
+**ShowTrackballInfo**
+
+`ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:SfChart >
+            <syncfusion:SplineSeries Interior="#4a4a4a"/>    
+            <syncfusion:SplineSeries Interior="#7f7f7f" ShowTrackballInfo="False"/>
+            <syncfusion:SplineSeries Interior="#bcbcbc"/>
+ </syncfusion:SfChart>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+  SplineSeries series1 = new SplineSeries()
+  {
+      Interior = new SolidColorBrush(Color.FromArgb(0, 0x4a, 0x4a, 0x4a))
+  };
+  chart.Series.Add(series1);
+  SplineSeries series2 = new SplineSeries()
+  {
+      Interior = new SolidColorBrush(Color.FromArgb(0, 0x7f, 0x7f, 0x7f)),
+      ShowTrackballInfo = false
+  };
+  chart.Series.Add(series2);
+  SplineSeries series3 = new SplineSeries()
+  {
+      Interior = new SolidColorBrush(Color.FromArgb(0, 0xbc, 0xbc, 0xbc))
+  };
+  chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Interactive-Features_images/ShowTrackball.png)
+
+
+
 **Alignment** **of** **Series** **Label**
 
 The trackball label displayed over the series can be aligned using [`LabelHorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelVerticalAlignment.html#) properties. By default the series label will be horizontally aligned to the left and vertically to the top.
@@ -1198,6 +1241,14 @@ chart.Behaviors.Add(behavior);
 {% endtabs %}
 
 ![](Interactive-Features_images/Interactive-Features_img18.jpeg)
+
+
+### Events
+
+The following events are available in ChartTrackBallBehavior,
+
+* `PositionChanging` - Occurs when [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) position changing from current mouse position to new mouse position.
+* `PositionChanged` - Occurs when [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) position changed from current mouse position to new mouse position.
 
 
 ## Visual Data Editing
@@ -1629,6 +1680,18 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
+
+### Events
+
+Series with visual data editing has support for following events,
+
+* [`DragStart`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragStart_EV.html#)- Occurs when segment/series drag started. 
+* [`DragDelta`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragDelta_EV.html#)- Occurs when segment/series dragging.
+* [`DragEnd`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragEnd_EV.html#)- Occurs when segment/series drag end. 
+* [`PreviewDragEnd`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~PreviewDragEnd_EV.html#)- Occurs before drag end triggered. 
+* [`SegmentEnter`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~SegmentEnter_EV.html#)- Occurs when mouse enters in segment. 
+
+
 ## Zoom and Pan
 
 SfChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
@@ -1662,6 +1725,7 @@ chart.Behaviors.Add(zooming);
 {% endhighlight %}
 
 {% endtabs %}
+
 
 ### Zooming the ChartArea
 
@@ -2250,6 +2314,19 @@ chart.Behaviors.Add(zooming);
 {% endhighlight %}
 
 {% endtabs %}
+
+
+### Events
+
+The following events are available in SfChart for ChartZoomPanBehavior,
+
+* [`ZoomChanging`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanging_EV.html#)- Occurs when zoom started in chart area.
+* [`ZoomChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanged_EV.html#)- Occurs when zooming done in chart area.
+* [`SelectionZoomingStart`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingStart_EV.html#)- Occurs when selection zooming started. 
+* [`SelectionZoomingDelta`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingDelta_EV.html#)- Occurs when selection zooming.
+* [`SelectionZoomingEnd`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingEnd_EV.html#)- Occurs when selection zooming end. 
+* [`ResetZooming`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html#)- Occurs when zooming get reset in chart area.
+
 
 ## Selection:
 
@@ -2849,6 +2926,14 @@ chart.Series.Add(series2);
 ![](Interactive-Features_images/Interactive-Features_img40.jpeg)
 
 
+### Events
+
+The following events are available in SfChart for ChartSelectionBehavior,
+
+* [`SelectionChanging`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanging_EV.html#)- Occurs when selection changing in chart area.
+* [`SelectionChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanged_EV.html#)- Occurs when selection changed in chart area. 
+
+
 ## Resizable Scrollbar
 
 The resizable scrollbar is a type of scrollbar that can be resized within the track area by adjusting the scrolling thumbs. In the SfChart, a resizable scrollbar is used for zooming and panning across different chart segments.
@@ -3439,18 +3524,8 @@ chart.Behaviors.Add(behavior);
 ![](Interactive-Features_images/Interactive-Features_img54.jpeg)
 
 
-## Events
 
-* [`DragStart`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragStart_EV.html#)- Occurs when segment/series drag started. 
-* [`DragDelta`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragDelta_EV.html#)- Occurs when segment/series dragging.
-* [`DragEnd`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragEnd_EV.html#)- Occurs when segment/series drag end. 
-* [`PreviewDragEnd`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~PreviewDragEnd_EV.html#)- Occurs before drag end triggered. 
-* [`SegmentEnter`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~SegmentEnter_EV.html#)- Occurs when mouse enters in segment. 
-* [`ZoomChanging`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanging_EV.html#)- Occurs when zoom started in chart area.
-* [`ZoomChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanged_EV.html#)- Occurs when zooming done in chart area.
-* [`SelectionZoomingStart`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingStart_EV.html#)- Occurs when selection zooming started. 
-* [`SelectionZoomingDelta`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingDelta_EV.html#)- Occurs when selection zooming.
-* [`SelectionZoomingEnd`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingEnd_EV.html#)- Occurs when selection zooming end. 
-* [`ResetZooming`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html#)- Occurs when zooming get reset in chart area.
-* [`SelectionChanging`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanging_EV.html#)- Occurs when selection changing in chart area.
-* [`SelectionChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanged_EV.html#)- Occurs when selection changed in chart area. 
+
+
+
+ 
