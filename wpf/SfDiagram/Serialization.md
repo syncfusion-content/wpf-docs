@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Serialization
+# Serialization
 
 Serialization is the process of saving and loading the Essential Diagram for state persistence of the SfDiagram.
 
@@ -31,13 +31,13 @@ sfdiagram.Load(str);
 
 {% endhighlight %}
 
-##Serialization of Nodes
+## Serialization of Nodes
 
 The properties in INode interface and Known types are serializable.
 
 For example, the following steps illustrate how to serialize the Custom Property:
 
-###All serializable [DataMember] custom fields or custom properties in a [DataContract] type must be set to public, and read or write.
+### All serializable [DataMember] custom fields or custom properties in a [DataContract] type must be set to public, and read or write.
 
 {% highlight C# %}
 
@@ -53,7 +53,7 @@ public class NodeContent : INotifyPropertyChanged
 
 {% endhighlight %}
 
-###Known types must be specified in code for the custom class.
+### Known types must be specified in code for the custom class.
 
 {% highlight C# %}
 

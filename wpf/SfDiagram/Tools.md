@@ -7,13 +7,13 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Tools
+# Tools
 
-##Drawing Tools
+## Drawing Tools
 
 Drawing tool allow you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page.
 
-###Shapes
+### Shapes
 
 To draw a shape, You have to activate the drawing tool by using the Tool property and you need to set the event for GetDrawType. The following code illustrates how to draw a rectangle at run time.
 
@@ -104,7 +104,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 ![](Tools_images/Tools_img2.jpeg)
 
-###Connectors
+### Connectors
 
 To draw Connectors, you have to set the Connector to DrawingTool property. The drawing tool can be activated by using the Tool property as shown. The following code example illustrates how to draw a straight line Connector.
 
@@ -139,7 +139,7 @@ diagram.Tool = Tool.DrawOnce;
 
 ![](Tools_images/Tools_img3.jpg)
 
-###Text
+### Text
 
 Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
 
@@ -161,7 +161,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-##Tool Selection
+## Tool Selection
 
 There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
 

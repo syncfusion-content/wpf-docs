@@ -7,11 +7,11 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Gridlines
+# Gridlines
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
-##Customize the gridlines visibility
+## Customize the gridlines visibility
 
 The `SnapConstraints` property of SnapSettings enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
@@ -38,7 +38,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/wpf/sfdiagram/Constraints#SnapConstraints "SnapConstraints").
 
-##Appearance
+## Appearance
 
 You can customize the appearance of the gridlines by using a set of predefined properties. The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
@@ -97,7 +97,7 @@ public class Gridlinestyle : List<Style>
 
 ![](Gridlines_images/Gridlines_img2.jpeg)
 
-###Line Intervals
+### Line Intervals
 
 Thickness and the space between gridlines can be customized by using `LineInterval` property. In the lineInterval collections, values at the odd places are referred as the thickness of lines and the values at the even places are referred as the space between gridlines.
 
@@ -178,9 +178,9 @@ public class Intervals : List<double>
 
 ![](Gridlines_images/Gridlines_img3.jpeg)
 
-#Snapping
+# Snapping
 
-##Snap To Lines
+## Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
@@ -195,7 +195,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 To enable/disable snapping to horizontal/vertical lines, refer to **SnapConstraints**
 
-##Snap To Objects
+## Snap To Objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
 

@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Overview
+# Overview
 
 **Essential Diagram WPF** creates rich Visio like applications. Its Framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 
