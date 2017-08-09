@@ -1303,19 +1303,17 @@ chart.Series.Add(series)
 
 **Scatter Series**
 
-This series supports dragging in both the x and y co-ordinates. The dragging co-ordinates can be set by using the enum propery 'DragDirection'.
+This series supports dragging in both the x and y co-ordinates. The dragging co-ordinates can be set by using the enum propery `DragDirection`.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<syncfusion:ScatterSeries ItemsSource="{Binding Data}" XBindingPath="Index" YBindingPath="Value"     
-                                      
-Interior="#777777"
+<syncfusion:ScatterSeries ItemsSource="{Binding Data}" XBindingPath="Index" 
 
-EnableSegmentDragging="True"
+                          YBindingPath="Value"  Interior="#777777"
 
-DragDirection="XY" >
+                          EnableSegmentDragging="True" DragDirection="XY" >
 
  </syncfusion:ScatterSeries>
 
@@ -1470,11 +1468,15 @@ chart.Series.Add(series);
 
             <Border CornerRadius="4" BorderBrush="Black"
                             
-                    BorderThickness="1" Background="CadetBlue">
+                    BorderThickness="1" Background="CadetBlue" 
+                    
+                    Margin="0,0,0,15">
 
                 <TextBlock  FontSize="12" Text="{Binding NewValue}" 
                                     
-                            Width="35" Foreground="White"></TextBlock>
+                            Width="35" Foreground="White" Margin="2">
+                
+                </TextBlock>
 
             </Border>
 
@@ -1533,19 +1535,19 @@ chart.Series.Add(series);
 
 **Drag Tooltip Style**
 
-The dragging tooltip can be customized by using the 'DragTooltipStyle' property of the series.
+The dragging tooltip can be customized by using the `DragTooltipStyle` property of the series.
 
-The following are the API’s in *'ChartDragTooltipStyle'.
+The following are the API’s in `ChartDragTooltipStyle`.
 
-'FontFamily' – Gets or sets the font family for dragging tooltip text.
+`FontFamily` – Gets or sets the font family for dragging tooltip text.
 
-'FontSize' – Gets or sets the font size for dragging tooltip text.
+`FontSize` – Gets or sets the font size for dragging tooltip text.
 
-'FontStyle' – Gets or sets the font style for dragging tooltip text.
+`FontStyle` – Gets or sets the font style for dragging tooltip text.
 
-'Foreground' – Gets or sets the brush for dragging tooltip text.
+`Foreground` – Gets or sets the brush for dragging tooltip text.
 
-'Background' – Gets or sets the background brush for dragging tooltip.
+`Background` – Gets or sets the background brush for dragging tooltip.
 
 {% tabs %}
 
@@ -1553,15 +1555,11 @@ The following are the API’s in *'ChartDragTooltipStyle'.
 
 <syncfusion:LineSeries.DragTooltipStyle>
                     
-<syncfusion:ChartDragTooltipStyle FontFamily="Calibri" 
-                                  
-FontSize="14" 
+<syncfusion:ChartDragTooltipStyle FontFamily="Calibri" FontSize="14" 
                                                      
-FontStyle="Italic"
+                                  FontStyle="Italic" Background="DarkGray" 
                                                       
-Background="DarkGray" 
-                                                      
-Foreground="Black" />
+                                  Foreground="Black" />
 
 </syncfusion:LineSeries.DragTooltipStyle>
 
@@ -1585,11 +1583,11 @@ series.DragTooltipStyle = new ChartDragTooltipStyle()
             
 };
 
-![](Interactive-Features_images/Interactive-Features_img56.jpg)
-
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Interactive-Features_images/Interactive-Features_img56.jpg)
 
 **Rounding** **Off** **the** **Dragged** **Value**
 
