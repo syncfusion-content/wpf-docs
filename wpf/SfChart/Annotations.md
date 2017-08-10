@@ -1892,7 +1892,7 @@ EllipseAnnotation annotation = new EllipseAnnotation()
 
     ShowToolTip = true,
 
-    Text ="Annotaion",
+    Text ="Annotation",
 
     FontSize = 12,
 
