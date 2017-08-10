@@ -41,7 +41,7 @@ To achieve this, after defining the PivotGrid control, set the properties `Enabl
            ScrollViewer _scrollViewer = e.OriginalSource as ScrollViewer;
             pivotGrid.Dispatcher.BeginInvoke(DispatcherPriority.SystemIdle, new Action(() =>
                 {
-                    if (!pivotGrid.IgnoreRefesh)
+                    if (!pivotGrid.IgnoreRefresh)
                     {
                         if ((_scrollViewer.Content as TextBlock) != null)
                             && (__scrollViewer.Content as TextBlock).Text = string.Empty);
