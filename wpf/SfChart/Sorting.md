@@ -66,7 +66,7 @@ ColumnSeries columnSeries = new ColumnSeries()
 
 };
 
-chart.Series.Add(columnSeri
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
@@ -112,7 +112,7 @@ ColumnSeries columnSeries = new ColumnSeries()
 
 };
 
-chart.Series.Add(columnSeri
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
@@ -159,7 +159,7 @@ ColumnSeries columnSeries = new ColumnSeries()
 
 };
 
-chart.Series.Add(columnSeri
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
@@ -206,7 +206,7 @@ ColumnSeries columnSeries = new ColumnSeries()
 
 };
 
-chart.Series.Add(columnSeri
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 

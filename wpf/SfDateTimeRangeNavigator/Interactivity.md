@@ -56,6 +56,10 @@ Used to get the End value of the Selected range of the Navigator</td></tr>
 <td>
 EnableDeferredUpdate</td><td>
 Used to enable deferred scrolling and panning.</td></tr>
+<tr>
+<td>
+DeferredUpdateDelay</td><td>
+Gets or sets the delay value, when EnableDeferredUpdate is enabled.</td></tr>
 </table>
 
 
@@ -131,7 +135,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 };
 
-SfLineSparkline sparkine = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline()
 {
 
     ItemsSource = new ViewModel().StockPriceDetails,
@@ -140,7 +144,7 @@ SfLineSparkline sparkine = new SfLineSparkline()
 
 };
 
-rangeNavigator.Content = sparkine;
+rangeNavigator.Content = sparkline;
 
 Grid.SetColumn(rangeNavigator, 1);
 
