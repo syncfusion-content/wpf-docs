@@ -27,6 +27,7 @@ documentation: ug
 * **PercentageOfRunningTotalIn** - Calculates the value for successive items in the Base field that are displayed as a running total as a percentage.
 * **RankSmallestToLargest** - Displays the rank of selected values in a specific field, listing the smallest item in the field as 1, and each larger value will have a higher rank value.
 * **RankLargestToSmallest** - Displays the rank of selected values in a specific field, listing the largest item in the field as 1, and each smaller value will have a higher rank value.
+* **Distinct** - Displays the subtotals based on the distinct values of BaseItem defined for calculation item.
 
 `CalculationType` property is used to achieve this requirement. It can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
 
