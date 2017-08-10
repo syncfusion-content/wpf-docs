@@ -431,7 +431,53 @@ The following API’s are commonly used in all ShapeAnnotation:
 
 * [`CanResize`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~CanResize.html#)  - A Boolean value that represent to resize the Annotation.
 
+
 ### Customization options for LineAnnotation
+
+
+**GrabExtent** 
+
+`GrabExtent` property of [`LineAnnotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) allows user to extent the hit visible area, while performing dragging and resizing. We need to set the desired pixel value for GrabExtent property and it can be set as shown in the below code example:
+
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.Annotations>
+ 
+<syncfusion:LineAnnotation X1="0" X2="3" Y1="1500" Y2="1500"     
+                               GrabExtent="10" 
+                               Stroke="DarkGray" CanDrag="True"   
+                               CanResize="True"/>
+     
+</syncfusion:SfChart.Annotations>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+LineAnnotation annotation = new LineAnnotation()
+            {
+                X1 = 0,
+                X2 = 3,
+                Y1 = 1500,
+                Y2 = 1500,
+                CanDrag = true,
+                Stroke = new SolidColorBrush(Colors.DarkGray),
+                CanResize = true,
+                GrabExtent = 10
+            };
+            
+chart.Annotations.Add(annotation);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Annotation_images/GrabExtent.png)
+
 
 **Toggling** **LineAnnotation** **Visibility**
 
