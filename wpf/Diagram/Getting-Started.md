@@ -2623,7 +2623,7 @@ The following code illustrates how to generate the BowTie layout:
 
 
 
-					Node n5 = AddNode("n5", "Theft\nof\nInformation", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
+					Node n5 = AddNode("n5", "Theft\n of\nInformation", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
 
 					Node n6 = AddNode("n6", "Firewall", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle);
 
@@ -2681,7 +2681,7 @@ The following code illustrates how to generate the BowTie layout:
 
 					Node n4 = AddNode("n4", "Recovery", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle);
 
-					Node n5 = AddNode("n5", "Restitution\nto\nCustomer", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
+					Node n5 = AddNode("n5", "Restitution\n to\nCustomer", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
 
 					Node n6 = AddNode("n6", "Cost to Bank", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
 
