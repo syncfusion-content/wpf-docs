@@ -135,7 +135,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 };
 
-SfLineSparkline sparkine = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline()
 {
 
     ItemsSource = new ViewModel().StockPriceDetails,
@@ -144,7 +144,7 @@ SfLineSparkline sparkine = new SfLineSparkline()
 
 };
 
-rangeNavigator.Content = sparkine;
+rangeNavigator.Content = sparkline;
 
 Grid.SetColumn(rangeNavigator, 1);
 
