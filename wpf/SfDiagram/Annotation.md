@@ -358,7 +358,7 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 {% highlight C# %}
 
             //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding".
-            NodeViewModel nvm = new NodeViewModel()
+            NodeViewModel node = new NodeViewModel()
             {
                 OffsetX = 200,
                 OffsetY = 200,
@@ -377,7 +377,7 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
                     }
             };
             //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(nvm);
+            (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 
@@ -387,7 +387,7 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
 {% highlight C# %}
 //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
-            NodeViewModel nvm = new NodeViewModel()
+            NodeViewModel node = new NodeViewModel()
             {
                 OffsetX = 200,
                 OffsetY = 200,
@@ -408,7 +408,7 @@ Automatic annotation orientation based on Parent(Node/Connector) or Page directi
                     }
             };
             //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(nvm);
+            (Diagram.Nodes as NodeCollection).Add(node);
 {% endhighlight %}
 
 The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).
