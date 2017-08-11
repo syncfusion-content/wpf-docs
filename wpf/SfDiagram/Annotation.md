@@ -357,27 +357,27 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 
 {% highlight C# %}
 
-            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
-            NodeViewModel nvm = new NodeViewModel()
+            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding".
+            NodeViewModel node = new NodeViewModel()
             {
                 OffsetX = 200,
                 OffsetY = 200,
                 UnitWidth = 100,
                 UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel
+                //Initialize and Add annotation to NodeViewModel.
                 Annotations = new ObservableCollection<IAnnotation>()
                     {
-                        //Create a AnnotationEditorViewModel
+                        //Create a AnnotationEditorViewModel.
                         new AnnotationEditorViewModel()
                         {
                             Content = "Annotation",
-                            //Assign Constraint to Select, Drag, Resize and Rotate Annotation
+                            //Assign Constraint to Select, Drag, Resize and Rotate Annotation.
                             Constraints = AnnotationConstraints.Default
                         }          
                     }
             };
             //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(nvm);
+            (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 
@@ -387,20 +387,20 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
 {% highlight C# %}
 //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
-            NodeViewModel nvm = new NodeViewModel()
+            NodeViewModel node = new NodeViewModel()
             {
                 OffsetX = 200,
                 OffsetY = 200,
                 UnitWidth = 100,
                 UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel
+                //Initialize and Add annotation to NodeViewModel.
                 Annotations = new ObservableCollection<IAnnotation>()
                     {
                         //Create a AnnotationEditorViewModel
                         new AnnotationEditorViewModel()
                         {
                             Content = "Annotation",
-                            //Assign Constraint to Selec, Drag and Rotate Annotation
+                            //Assign Constraint to Select, Drag and Rotate Annotation.
                             Constraints = AnnotationConstraints.Default,
                            //This is stop the rotation of Annotation along with its Parent.
                             RotationReference=RotationReference.Page
@@ -408,7 +408,7 @@ Automatic annotation orientation based on Parent(Node/Connector) or Page directi
                     }
             };
             //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(nvm);
+            (Diagram.Nodes as NodeCollection).Add(node);
 {% endhighlight %}
 
 The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).

@@ -918,7 +918,7 @@ lineseries.SortBy = SortingAxis.X;
 
 lineseries.SortDirection = Direction.Ascending;
 
-lineseries.YAxis = new ChartSeries() { IsAutosetRange = false, Range= new DubleRange(20,50) };
+lineseries.YAxis = new ChartSeries() { IsAutosetRange = false, Range = new DoubleRange(20,50) };
 
 lineseries.ShowSmartLabels = true;
 

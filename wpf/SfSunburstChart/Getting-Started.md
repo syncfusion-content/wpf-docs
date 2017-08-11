@@ -462,7 +462,7 @@ You can add header to Sunburst chart to provide quick information to the user ab
 {% endhighlight %}
 
 {% highlight C# %}
-sunburst.Header = "Emplyees Count";
+sunburst.Header = "Employees Count";
 sunburst.FontSize = 22d;
 {% endhighlight %}
     

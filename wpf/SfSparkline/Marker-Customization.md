@@ -77,7 +77,7 @@ Following is the snapshot above code,
 
 **Marker Template**
 
-You can customize default appearence of the marker symbol by using the MarkerTemplate property in the sparkline.
+You can customize default appearance of the marker symbol by using the MarkerTemplate property in the sparkline.
 
 The following code shows how to apply the template for the Marker.
 

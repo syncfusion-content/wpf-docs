@@ -150,7 +150,7 @@ the following code illustrates how to enable annotation dragging.
 {% highlight C# %}
 
             //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
-            NodeViewModel nvm = new NodeViewModel()
+            NodeViewModel node = new NodeViewModel()
             {
                 OffsetX = 200,
                 OffsetY = 200,
@@ -169,7 +169,7 @@ the following code illustrates how to enable annotation dragging.
                     }
             };
             //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(nvm);
+            (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %} 
 

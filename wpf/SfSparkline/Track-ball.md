@@ -50,7 +50,7 @@ Following is the snapshot for track ball,
 
 **Customizing TrackBall**
 
-You can customize the default appearence of the Trackball style by using the TrackballStyle property. 
+You can customize the default appearance of the Trackball style by using the TrackballStyle property. 
 
 The following code shows how to apply the style for the Trackball line.
 

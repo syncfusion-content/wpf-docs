@@ -1788,7 +1788,7 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 LineConnector l1 = new LineConnector();
 
-l1.ConnecorType = ConnectorType.Bezier;
+l1.ConnectorType = ConnectorType.Bezier;
 
 l1.HeadDecoratorShape = DecoratorShape.Custom;
 
@@ -1867,7 +1867,7 @@ diagramModel.Connections.Add(l1)
 
 LineConnector l1 = new LineConnector();
 
-l1.ConnecorType = ConnectorType.Orthogonal;
+l1.ConnectorType = ConnectorType.Orthogonal;
 
 l1.HeadDecoratorShape = DecoratorShape.Custom;
 
@@ -2595,7 +2595,7 @@ Appearance of the LineConnector can be customized by applying style for the Cust
 
 LineConnector l1 = new LineConnector();
 
-l1.ConnecorType = ConnectorType.Bezier;
+l1.ConnectorType = ConnectorType.Bezier;
 
 l1.HeadDecoratorShape = DecoratorShape.Custom;
 
@@ -2959,7 +2959,7 @@ l1.HeadNode = n1;
 
 l1.TailNode = n2;
 
-l1.ConnecorType = ConnectorType.Bezier;
+l1.ConnectorType = ConnectorType.Bezier;
 
 l1.Label = "Connect";
 
@@ -2977,7 +2977,7 @@ l1.HeadNode = n1
 
 l1.TailNode = n2
 
-l1.ConnecorType = ConnectorType.Bezier
+l1.ConnectorType = ConnectorType.Bezier
 
 l1.Label = "Connect"
 
