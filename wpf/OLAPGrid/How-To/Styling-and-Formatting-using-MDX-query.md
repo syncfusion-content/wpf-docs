@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Formatting using MDX query
+title: Styling and formatting using MDX query
 description: How to apply styling and formatting to grid cells using MDX query
 platform: wpf
 control: OlapGrid
