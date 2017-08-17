@@ -74,7 +74,7 @@ for (int i = 0; i < 5000; i++)
 {
     for (int j = 0; j < 5000; j++)
     {
-        calcData.SetValueRowCol(randm.Next(5) + 1,i,j);
+        calcData.SetValueRowCol(random.Next(5) + 1,i,j);
     }
 }
 

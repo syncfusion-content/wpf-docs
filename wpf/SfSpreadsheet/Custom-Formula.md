@@ -23,7 +23,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
   
   //Computing the formula at runtime
    var range = spreadsheet.ActiveSheet.Range["B2"];
-   spreadsheet.ActiveGrid.SetCellValue(range,"=Find(aaa)");
+   spreadsheet.ActiveGrid.SetCellValue(range,"=Find(sample)");
          
 }  
 

@@ -17,17 +17,17 @@ For viewing the PDF document, you can use [PdfViewerControl](http://help.syncfus
 
 {% highlight c# %}
 
-//Create the pdfviewer for load the document.
+//Create the pdf viewer for load the document.
 
- PdfViewerControl pdfviewer = new PdfViewerControl();
+ PdfViewerControl pdfViewer = new PdfViewerControl();
 
-//Create Memory Stream to save pdfdocument
+//Create Memory Stream to save pdf document
 
- MemoryStream pdfstream = new MemoryStream();
+ MemoryStream pdfStream = new MemoryStream();
 
  ExcelToPdfConverter converter = new ExcelToPdfConverter (spreadsheet.Workbook);  
 
-//Intialize the ExcelToPdfConverter Settings
+//Initialize the ExcelToPdfConverter Settings
 
  ExcelToPdfConverterSettings settings = new ExcelToPdfConverterSettings(); 
 	
@@ -39,7 +39,7 @@ For print preview you can load the PDF stream into viewer and for direct printin
 
 {% highlight c# %}
 
-//Intialize the PdfDocument
+//Initialize the PdfDocument
 
  PdfDocument pdfDoc = new PdfDocument ();
 
@@ -55,15 +55,15 @@ For print preview you can load the PDF stream into viewer and for direct printin
 
 //Save the PDF file     
 
- pdfDoc.Save(pdfstream);
+ pdfDoc.Save(pdfStream);
 
-//Load the document to pdfviewer
+//Load the document to pdf viewer
 
- pdfviewer.Load(pdfstream);
+ pdfViewer.Load(pdfStream);
 
 //Print the doc
 
- pdfviewer.Print(true);
+ pdfViewer.Print(true);
 
 {% endhighlight %}
 

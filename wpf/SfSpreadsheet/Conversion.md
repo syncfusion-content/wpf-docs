@@ -25,9 +25,9 @@ int lastRow = sheet.UsedRange.LastRow + 1;
 
 int lastColumn = sheet.UsedRange.LastColumn + 1;
 
-System.Drawing.Image img = sheet.ConvertToImage(1, 1, lastRow, lastColumn, ImageType.Bitmap, null);
+System.Drawing.Image image = sheet.ConvertToImage(1, 1, lastRow, lastColumn, ImageType.Bitmap, null);
 
-img.Save("Sample.png", ImageFormat.Png);
+image.Save("Sample.png", ImageFormat.Png);
 
 System.Diagnostics.Process.Start("Sample.png");
 
@@ -47,11 +47,11 @@ Export the Excel workbook as PDF document using [Convert](http://help.syncfusion
 
 ExcelToPdfConverter converter = new ExcelToPdfConverter(spreadsheet.Workbook);
 
-//Intialize the PdfDocument
+//Initialize the PdfDocument
 
 PdfDocument pdfDoc = new PdfDocument();
 
-//Intialize the ExcelToPdfConverter Settings
+//Initialize the ExcelToPdfConverter Settings
 
 ExcelToPdfConverterSettings settings = new ExcelToPdfConverterSettings();
 
