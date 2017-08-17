@@ -875,7 +875,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 ### ParsingMode support 
 
-GridNumericColumn process int, double and decimal data types. By default, it treats all values as double internally and return the same. When you are binding dynamic property, we need to maintain the type which can be achieved by setting [GridNumeriColumn.ParsingMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~ParsingMode.html) property.
+GridNumericColumn process int, double and decimal data types. By default, it treats all values as double internally and return the same. When you are binding dynamic property, we need to maintain the type which can be achieved by setting [GridNumericColumn.ParsingMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~ParsingMode.html) property.
 For example, you have dynamic object with property OrderID type int. When you edit the OrderID using GridNumericColumn, its type will be changed as double. To avoid this, you must set ParsingMode property based on the type of property you are binding to GridNumericColumn or you need to use ValueBinding converter change type according to your underlying property type.
 
 {% tabs %}
