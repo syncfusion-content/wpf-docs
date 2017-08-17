@@ -102,10 +102,10 @@ public class ViewModel : INotifyPropertyChanged
         animals = new Dictionary<string, string>();
 
         animals.Add("Tiger", "The tiger is the largest cat species, reaching a total body length of up to 3.38 m over curves and exceptionally weighing up to 388.7 kg in the wild.");
-        animals.Add("Lion", "The lion (Panthera leo) is one of the five big cats in the genus Panthera and a member of the family Felidae.");
+        animals.Add("Lion", "The lion is one of the strongest animal. It is also known as the king of jungles.");
         animals.Add("Panda", "The giant panda, also known as panda bear or simply panda, is a bear native to south central China. It is easily recognized by the large, distinctive black patches around its eyes, over the ears, and across its round body.");
-        animals.Add("Beer", "Bears are mammals of the family Ursidae. Bears are classified as caniforms, or doglike carnivorans, with the pinnipeds being their closest living relatives.");
-        animals.Add("Deer", "Deer are the ruminant mammals forming the family Cervidae. Species in the family include the white-tailed deer, mule deer, elk, moose, red deer, reindeer, fallow deer, roe deer and chital.");
+        animals.Add("Beer", "Bears are mammals and are classified as dog like carnivorous.");
+        animals.Add("Deer", "Deer are the ruminant mammals. Species in the family include the white-tailed deer, mule deer, elk, moose, red deer, reindeer, fallow deer, roe deer.");
 
         Animal = "Lion";
     }
@@ -211,11 +211,11 @@ Public Class ViewModel
 	Private Sub Initialize()
 		m_animals = New Dictionary(Of String, String)()
 
-		m_animals.Add("Tiger", "The tiger is the largest cat species, reaching a total body length of up to 3.38 m over curves and exceptionally weighing up to 388.7 kg in the wild.")
-		m_animals.Add("Lion", "The lion (Panthera leo) is one of the five big cats in the genus Panthera and a member of the family Felidae.")
-		m_animals.Add("Panda", "The giant panda, also known as panda bear or simply panda, is a bear native to south central China. It is easily recognized by the large, distinctive black patches around its eyes, over the ears, and across its round body.")
-		m_animals.Add("Beer", "Bears are mammals of the family Ursidae. Bears are classified as caniforms, or doglike carnivorans, with the pinnipeds being their closest living relatives.")
-		m_animals.Add("Deer", "Deer are the ruminant mammals forming the family Cervidae. Species in the family include the white-tailed deer, mule deer, elk, moose, red deer, reindeer, fallow deer, roe deer and chital.")
+	    m_animals.Add("Tiger", "The tiger is the largest cat species, reaching a total body length of up to 3.38 m over curves and exceptionally weighing up to 388.7 kg in the wild.");
+        m_animals.Add("Lion", "The lion is one of the strongest animal. It is also known as the king of jungles.");
+        m_animals.Add("Panda", "The giant panda, also known as panda bear or simply panda, is a bear native to south central China. It is easily recognized by the large, distinctive black patches around its eyes, over the ears, and across its round body.");
+        m_animals.Add("Beer", "Bears are mammals and are classified as dog like carnivorous.");
+        m_animals.Add("Deer", "Deer are the ruminant mammals. Species in the family include the white-tailed deer, mule deer, elk, moose, red deer, reindeer, fallow deer, roe deer.");
 
 		Animal = "Lion"
 	End Sub
