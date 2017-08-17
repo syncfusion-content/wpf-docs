@@ -397,7 +397,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
     if (e.CellType != ExportCellType.RecordCell)
         return;
     //creates a new font from the font file.                
-    var font = new PdfTrueTypeFont(@"..\..\Resources\segoeuil.ttf", 9f, PdfFontStyle.Regular);
+    var font = new PdfTrueTypeFont(@"..\..\Resources\segoeui.ttf", 9f, PdfFontStyle.Regular);
     e.CellStyle.Font = font;
 }
 {% endhighlight %}
