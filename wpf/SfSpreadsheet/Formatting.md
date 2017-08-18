@@ -65,7 +65,7 @@ SfSpreadsheet allows the user to apply the font settings such as font color, fon
 {% highlight c# %}
 
 IRange range = spreadsheet.Workbook.Worksheets[0].Range["A1:B5"];
-var gridrange = GridExcelHelper.ConvertExcelRangeToGridRange(range);
+var gridRange = GridExcelHelper.ConvertExcelRangeToGridRange(range);
 
 //Setting the Font Family Name,
 
@@ -95,7 +95,7 @@ range.CellStyle.Font.Color = ExcelKnownColors.Blue;
 
 //Invalidating the range, to update in view,
 
-spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
+spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
 {% endtabs %}
@@ -116,11 +116,11 @@ spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 //For a range of cells,
 
-IRange excelrange = spreadsheet.Workbook.Worksheets[0].Range["C3:D8"];
-excelrange.BorderAround(ExcelLineStyle.Double, ExcelKnownColors.Green);
-excelrange.BorderInside(ExcelLineStyle.Dotted, ExcelKnownColors.Tan);
-var gridrange = GridExcelHelper.ConvertExcelRangeToGridRange(excelrange);
-spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
+IRange excelRange = spreadsheet.Workbook.Worksheets[0].Range["C3:D8"];
+excelRange.BorderAround(ExcelLineStyle.Double, ExcelKnownColors.Green);
+excelRange.BorderInside(ExcelLineStyle.Dotted, ExcelKnownColors.Tan);
+var gridRange = GridExcelHelper.ConvertExcelRangeToGridRange(excelRange);
+spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
 {% endtabs %}
@@ -187,17 +187,17 @@ For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](ht
 {% tabs %}
 {% highlight c# %}
 
-var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+var gridRange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
+var excelRange = gridRange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
-var coverCell = new CoveredCellInfo(gridrange.Top, gridrange.Left, gridrange.Bottom, gridrange.Right);
+var coverCell = new CoveredCellInfo(gridRange.Top, gridRange.Left, gridRange.Bottom, gridRange.Right);
 
 spreadsheet.ActiveGrid.CoveredCells.Add(coverCell);
 
-spreadsheet.ActiveSheet.Range[excelrange].Merge();
+spreadsheet.ActiveSheet.Range[excelRange].Merge();
 
-spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
+spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
 {% endtabs %}
@@ -211,15 +211,15 @@ For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](h
 {% tabs %}
 {% highlight c# %}
 
-var gridrange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+var gridRange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
 
-var excelrange = gridrange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
+var excelRange = gridRange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
-spreadsheet.ActiveGrid.CoveredCells.Clear(gridrange);
+spreadsheet.ActiveGrid.CoveredCells.Clear(gridRange);
 
-spreadsheet.ActiveSheet.Range[excelrange].UnMerge();
+spreadsheet.ActiveSheet.Range[excelRange].UnMerge();
 
-spreadsheet.ActiveGrid.InvalidateCell(gridrange, true);
+spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
 {% endtabs %}

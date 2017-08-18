@@ -315,7 +315,7 @@ Determines the angle of rotation of the text</td></tr>
 
 			this.grid.Model[7, 5].HorizontalAlignment = HorizontalAlignment.Center;
 
-			this.grid.Model[7, 5].CellValue = "Font style is Itlaic";
+			this.grid.Model[7, 5].CellValue = "Font style is Italic";
 
 
 

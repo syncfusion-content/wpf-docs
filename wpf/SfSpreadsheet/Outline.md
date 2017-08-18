@@ -22,13 +22,13 @@ To [Group](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion
 
 //Group rows,
 
-var gridrange = GridRangeInfo.Rows(4,8);
-spreadsheet.Group(spreadsheet.ActiveSheet, gridrange, ExcelGroupBy.ByRows);
+var gridRange = GridRangeInfo.Rows(4,8);
+spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByRows);
 
 //Group columns,
 
-var gridrange = GridRangeInfo.Cols(4,8);
-spreadsheet.Group(spreadsheet.ActiveSheet, range, ExcelGroupBy.ByColumns);
+var gridRange = GridRangeInfo.Cols(4,8);
+spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 {% endhighlight %}
 {% endtabs %}
@@ -43,13 +43,13 @@ To [Ungroup](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusi
 {% highlight c# %}
 //Ungroup rows,
 
-var gridrange = GridRangeInfo.Rows(4,8);
-spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridrange, ExcelGroupBy.ByRows);
+var gridRange = GridRangeInfo.Rows(4,8);
+spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByRows);
 
 //Ungroup columns,
 
-var gridrange = GridRangeInfo.Cols(4,8);
-spreadsheet.UnGroup(spreadsheet.ActiveSheet, range, ExcelGroupBy.ByColumns);
+var gridRange = GridRangeInfo.Cols(4,8);
+spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 {% endhighlight %}
 {% endtabs %}

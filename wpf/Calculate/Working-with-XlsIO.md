@@ -157,7 +157,7 @@ If the Calculate.Base and XlsIO.Base references are added in the same applicatio
 there is no need to add Calculate.Base reference explicitly. The calculate references get reflected in the XlsIO.Base permanently.  
 
 But if you want both the references in your project, you can use `extern alias` to differentiate the namespaces.
-For your reference, please find the msdn [link](https://blogs.msdn.microsoft.com/ansonh/2006/09/27/extern-alias-walkthrough/) regarding
+For your reference, please find the MSDN [link](https://blogs.msdn.microsoft.com/ansonh/2006/09/27/extern-alias-walkthrough/) regarding
 `extern alias`.
 
 ## Table Formulas
