@@ -18,7 +18,7 @@ A property which holds the collection of library functions in Essential Calculat
 
 ## Add Custom Function
 
-Adding a custom function to the Formula Library in Essential Calculate is a twostep process. The first step is to write a method that actually does the calculation work for your
+Adding a custom function to the Formula Library in Essential Calculate is a two step process. The first step is to write a method that actually does the calculation work for your
 custom function. The second step is to register this method with the [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html). So, when the `CalcEngine` object is a member of an application, the additional
 function methods can be added to the application and then these methods should be registered with the `CalcEngine` object after the object is created.
 

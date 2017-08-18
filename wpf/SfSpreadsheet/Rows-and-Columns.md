@@ -34,7 +34,7 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are trigerred while inserting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
 
 * [RowsInserted](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~RowsInserted_EV.html)
 * [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
@@ -85,7 +85,7 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet.
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are trigerred while deleting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
 
 * [RowsRemoved](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
 * [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
@@ -187,7 +187,7 @@ SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet v
 {% tabs %}
 {% highlight c# %}
 
-//Freezepanes
+//Freeze panes
 
 //To Freeze 4 rows and 4 columns
 
@@ -207,7 +207,7 @@ SfSpreadsheet provides support to unfreeze the freeze panes in the worksheet of 
 {% tabs %}
 {% highlight c# %}
 
-//Unfreezepanes
+//Unfreeze panes
 
 //To Unfreeze 4 rows and 4 columns
 

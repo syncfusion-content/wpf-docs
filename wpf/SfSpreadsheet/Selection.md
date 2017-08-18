@@ -45,7 +45,7 @@ SfSpreadsheet allows the user to access the selected ranges of the `SpreadsheetG
 {% tabs %}
 {% highlight c# %}
 
-var rangelist = spreadsheet.ActiveGrid.SelectedRanges;
+var rangeList = spreadsheet.ActiveGrid.SelectedRanges;
 
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +65,7 @@ spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cells(4,6,
 //To Add the Selection for particular row,
 spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Row(4));
 
-//To Add the Selection for mulitple rows,
+//To Add the Selection for multiple rows,
 spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Rows(4,9));
 
 //To Add the Selection for particular column,
@@ -105,7 +105,7 @@ SfSpreadsheet allows the user to convert the `GridRangeInfo` into the equivalent
 {% tabs %}
 {% highlight c# %}
 
-var excelrange = GridExcelHelper.ConvertGridRangeToExcelRange(GridRangeInfo.Cell(4, 5), spreadsheet.ActiveGrid);
+var excelRange = GridExcelHelper.ConvertGridRangeToExcelRange(GridRangeInfo.Cell(4, 5), spreadsheet.ActiveGrid);
 
 {% endhighlight %}
 {% endtabs %}

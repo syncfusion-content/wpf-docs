@@ -26,7 +26,7 @@ method
 {% tabs %}
 {% highlight c# %}
 
-spreadsheet.ActiveSheet.ImportDataTable(datatable, true, 1, 1);
+spreadsheet.ActiveSheet.ImportDataTable(data_table, true, 1, 1);
 
 spreadsheet.ActiveGrid.InvalidateCells();
 
@@ -47,7 +47,7 @@ IWorksheet sheet = spreadsheet.Workbook.Worksheets[0];
 
 IRange range = sheet.Range["A1:K50"];
 
-DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
+DataTable data_table = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
 
 {% endhighlight %}
 {% endtabs %}
