@@ -206,18 +206,18 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
  public ContextMenu CustomTabItemContextMenu()
  {
     var contextMenu = new ContextMenu();
-    var Insertrowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
-    var Insertrow = new MenuItem() { Header = "InsertRow" };           
-    Insertrow.Icon = Insertrowicon;
-    Insertrow.Click += Insertrow_Click;
+    var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
+    var insertRow = new MenuItem() { Header = "InsertRow" };           
+    insertRow.Icon = insertRowIcon;
+    insertRow.Click += insertRow_Click;
 
-    var Deleterowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
-    var Deleterow = new MenuItem() { Header = "DeleteRow"};
-    Deleterow.Icon = Deleterowicon;
-    Deleterow.Click += Deleterow_Click;
+    var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
+    var deleteRow = new MenuItem() { Header = "DeleteRow"};
+    deleteRow.Icon = deleteRowIcon;
+    deleteRow.Click += deleteRow_Click;
     
-    contextMenu.Items.Add(Insertrow);
-    contextMenu.Items.Add(Deleterow);
+    contextMenu.Items.Add(insertRow);
+    contextMenu.Items.Add(deleteRow);
     return contextMenu;
  }
 

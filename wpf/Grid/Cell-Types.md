@@ -1104,7 +1104,7 @@ The following output is generated using the code above.
 Integer Edit
 {:.caption}
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo
+N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Integer Edit Cell Demo
 
 ### Mask Edit Cells
 

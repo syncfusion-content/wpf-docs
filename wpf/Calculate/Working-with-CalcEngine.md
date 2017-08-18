@@ -9,8 +9,8 @@ documentation: ug
 
 # Working with CalcEngine 
 
-[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) encapsulates the code required to parse and compute the formulas. It manages several library functions, hashtables for Essential Calculate.  
-All the datas in `CalcEngine` is assumed to be part of a rectangular array reference through cell coordinates.
+[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) encapsulates the code required to parse and compute the formulas. It manages several library functions, hash tables for Essential Calculate.  
+All the data's in `CalcEngine` is assumed to be part of a rectangular array reference through cell coordinates.
 
 ## Computation using CalcEngine
 
@@ -53,17 +53,17 @@ computations.
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase cq = new CalcQuickBase();
+CalcQuickBase calcQuick = new CalcQuickBase();
 
 //Computing Expressions,
 
 string formula = "(5+25) *2";
-string result = cq.Engine.ParseAndComputeFormula(formula);
+string result = calcQuick.Engine.ParseAndComputeFormula(formula);
 
 //Computing In-Built formulas,
 
 string formula = “SUM (4,5,6)”;
-string result = cq.Engine.ParseAndComputeFormula(formula);
+string result = calcQuick.Engine.ParseAndComputeFormula(formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,7 +117,7 @@ Associates the function name with its method.</td></tr>
 
 ### ExcelLikeComputations
 
-To return the result of formula computations of Essential Calculate like MS Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ExcelLikeComputations.html) is set to true.
+To return the result of formula computations of Essential Calculate like Microsoft Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ExcelLikeComputations.html) is set to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ for (int i = 0; i < 5; i++)
 {
     for (int j = 0; j < 5; j++)
     {
-        calcData.SetValueRowCol(randm.Next(5) + 1,i,j);
+        calcData.SetValueRowCol(random.Next(5) + 1,i,j);
     }
 }
 
@@ -241,7 +241,7 @@ A bool property that gets or sets whether a changed value should trigger depende
 
 ### MaximumRecursiveCalls
 
-Specifies the maximum number of recursive calls that can be used to compute a cellvalue.This property comes into play when you have a calculated formula cell that depends on
+Specifies the maximum number of recursive calls that can be used to compute a cell value.This property comes into play when you have a calculated formula cell that depends on
 another calculated formula that depends on another calculated formula and so on. If the depends on another formula exceeds [MaximumRecursiveCalls](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html), you will see a too complex message displayed in the cell. The default value is 100, but you can set it higher or lower depending upon your expected needs. The purpose of the limit is to avoid a circular 
 reference locking up your application.
 
@@ -290,7 +290,7 @@ CalcEngine.ParseDateTimeSeparator = '-';
 
 ### RethrowLibraryComputationExceptions
 
-Gets or sets whether the `CalcEngine` rethrows any exception raised during the computation of a library function. The default value is false.
+Gets or sets whether the `CalcEngine` rethrow any exception raised during the computation of a library function. The default value is false.
 
 ### SupportLogicalOperators
 
@@ -594,7 +594,7 @@ calcData.SetValueRowCol("=SUM(B1,B2,B3)", 1, 4);
 
 CalcEngine engine = new CalcEngine(calcData);
 
-//Add the formula in formulainfo hashtable,
+//Add the formula in formula info hashtable,
 engine.FormulaInfoTable.Add("D1", new FormulaInfo{FormulaText = "=SUM(B1,B2,B3)"});
 
 //compute the formula,

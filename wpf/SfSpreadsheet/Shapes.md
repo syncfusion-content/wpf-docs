@@ -43,14 +43,14 @@ For adding the Charts in SfSpreadsheet at runtime, use [AddChart](http://help.sy
 
 var chart = spreadsheet.AddChart(spreadsheet.ActiveSheet);
 
-object[] Yvalues = new object[] { 200, 100, 100 };
-object[] Xvalues = new object[] { "Total Income", "Expenses", "Profit" };
+object[] Y_values = new object[] { 200, 100, 100 };
+object[] X_values = new object[] { "Total Income", "Expenses", "Profit" };
 
 IChartSerie series = chart.Series.Add(ExcelChartType.Pie);
 
 // Enters the X and Y values directly
-series.EnteredDirectlyValues = Yvalues;
-series.EnteredDirectlyCategoryLabels = Xvalues;
+series.EnteredDirectlyValues = Y_values;
+series.EnteredDirectlyCategoryLabels = X_values;
 
 var shape = chart as ShapeImpl;
 
@@ -133,18 +133,18 @@ SfSpreadsheet allows the user to access the selected shapes and modify the prope
 {% tabs %}
 {% highlight c# %}
 
-var selectedshape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
-for(int i = 0; i < selectedshape.Count ; i++)
+var selectedShape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
+for(int i = 0; i < selectedShape.Count ; i++)
 {
-    if(ExcelShapeType.Chart == selectedshape[i].ShapeType)
+    if(ExcelShapeType.Chart == selectedShape[i].ShapeType)
     {
-        var chart = selectedshape[i] as IChart;
+        var chart = selectedShape[i] as IChart;
         chart.ChartArea.Fill.FillType = ExcelFillType.Gradient;
         chart.ChartArea.Fill.ForeColor = Color.Blue;
     }
-    else if(ExcelShapeType.Picture == selectedshape[i].ShapeType)
+    else if(ExcelShapeType.Picture == selectedShape[i].ShapeType)
     {
-        var picture = selectedshape[i] as ShapeImpl;
+        var picture = selectedShape[i] as ShapeImpl;
         picture.Height = 100;
         picture.Width = 100;
     }
