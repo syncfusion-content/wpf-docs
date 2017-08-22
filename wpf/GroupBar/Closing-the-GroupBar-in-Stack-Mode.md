@@ -37,7 +37,7 @@ Use the below code snippet to set this property.
   <syncfusion:GroupViewItem Text="Show ContextMenu"/>   
   <syncfusion:GroupViewItem Text="Show ToolTip"/>   
   </syncfusion:GroupView>  
-  
+
   </syncfusion:GroupBarItem>
   </syncfusion:GroupBar>
   {% endhighlight %}
@@ -51,3 +51,44 @@ groupBar.IsCloseButtonEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
+# Maximum number of Visible Items in OverFlowPanel
+
+User can customize the maximum number of Visible Items to be displayed in the Stack Mode OverflowPanel, using the property StackVisibleItemsCount. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:GroupBar Name="GroupBar" Height="340" VerticalAlignment="Center"
+HorizontalAlignment="Center" VisualMode="StackMode" IsToolBarEnabled="True" StackVisibleItemsCount="2">
+<syncfusion:GroupBarItem x:Name="groupitem1" HeaderText="Mail" HeaderImageSource="Images/mail.png"    >
+<Border >
+<TextBlock Text="GroupBarItem1" />
+</Border>
+</syncfusion:GroupBarItem>
+<syncfusion:GroupBarItem HeaderText="Inbox" HeaderImageSource="Images/inbox.png" >
+<Border >
+<TextBlock Text="GroupBarItem2" />
+</Border>
+</syncfusion:GroupBarItem>
+<syncfusion:GroupBarItem HeaderText="Notes" HeaderImageSource="Images/Notes.png"  >
+<Border >
+<TextBlock Text="GroupBarItem3" />
+</Border>
+</syncfusion:GroupBarItem>
+<syncfusion:GroupBarItem HeaderText="Sent" HeaderImageSource="Images/sent.png" >
+<Border >
+<TextBlock Text="GroupBarItem4" />
+</Border>
+</syncfusion:GroupBarItem>
+</syncfusion:GroupBar>
+
+{% endhighlight %}
+
+{% highlight C# %}
+GroupBar.StackVisibleItemsCount = 2;
+{% endhighlight %}
+{% endtabs %}
+
+![](GroupBar_StackMode_images/Maximumnumberofvisibleitems.png)
+
+Note: This property is applicable for SfSkinManager Office2016 themes. 
