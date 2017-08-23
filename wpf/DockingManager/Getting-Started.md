@@ -235,7 +235,7 @@ DockingManager supports various visual styles by using the `SfSkinManager`. To a
 
 * Refer the following assemblies with the project
 1. Syncfusion.SfSkinManager.Wpf
-2. Syncfusion.Thems.VisualStudio2013.Wpf
+2. Syncfusion.Themes.VisualStudio2013.Wpf
 
 * Include an XML namespace for the `SfSkinManager` assembly to the MainWindow.
 {% tabs %}
