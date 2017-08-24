@@ -38,12 +38,12 @@ ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
 {
-    var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
+    var ribbon1 = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
 
-    if (sfribbon != null)
+    if (ribbon1 != null)
     {
-      RibbonTab rb = new RibbonTab();
-      rb.Caption = "OTHER";
+      RibbonTab ribbonTab = new RibbonTab();
+      ribbonTab.Caption = "OTHER";
       RibbonButton Button1 = new RibbonButton();
       Button1.Label = "PRINT";
       Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
@@ -57,8 +57,8 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
       customRibbonBar.Items.Add(Button1);
       customRibbonBar.Items.Add(Button2);
       customRibbonBar.IsLauncherButtonVisible = false;
-      rb.Items.Add(customRibbonBar);
-      sfribbon.Items.Add(rb);
+      ribbonTab.Items.Add(customRibbonBar);
+      ribbon1.Items.Add(ribbonTab);
     }
 }
 
@@ -84,18 +84,18 @@ ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
 {
-    var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
+    var ribbon1 = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
     
     // To add the ribbon button in View tab,
     
-    if (sfribbon != null)
+    if (ribbon1 != null)
     {
-      var rb = sfribbon.Items[2] as RibbonTab;
+      var ribbonTab = ribbon1.Items[2] as RibbonTab;
       RibbonButton Button1 = new RibbonButton();
       Button1.Label = "PRINT";
       Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
       Button1.Click += Button1_Click;
-      rb.Items.Add(Button1);
+      ribbonTab.Items.Add(Button1);
     }
 }
 
@@ -121,13 +121,13 @@ ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
 {
-    var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
+    var ribbon1 = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
     
     //To remove the Data tab from the ribbon,
-    if (sfribbon != null)
+    if (ribbon1 != null)
     {
-      var item = sfribbon.Items[1];
-      sfribbon.Items.Remove(item);
+      var item = ribbon1.Items[1];
+      ribbon1.Items.Remove(item);
     }
 }
 
@@ -154,14 +154,14 @@ ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
 {
-    var sfribbon = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
+    var ribbon1 = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
     
     // To remove the Freeze panes menu group in View tab,
     
-    if (sfribbon != null)
+    if (ribbon1 != null)
     {
-      var rb = sfribbon.Items[2] as RibbonTab;
-      rb.Items.Remove(rb.Items[1]);
+      var ribbonTab = ribbon1.Items[2] as RibbonTab;
+      ribbonTab.Items.Remove(ribbonTab.Items[1]);
     }
 }
 
