@@ -106,7 +106,7 @@ public class OrderInfo : INotifyDataErrorInfo
         if (!propertyName.Equals("ShipCity"))
             return null;
 
-        if (this.ShipCity.Contains("México D.F."))
+        if (this.ShipCity.Contains("Mexico D.F."))
             errors.Add("Delivery not available for the city " + this.ShipCity);
 
         return errors;
@@ -872,7 +872,7 @@ public bool HasErrors
 {
     get
     {
-        if (this.ShipCity.Contains("México D.F."))
+        if (this.ShipCity.Contains("Mexico D.F."))
             return true;
         return false;
     }

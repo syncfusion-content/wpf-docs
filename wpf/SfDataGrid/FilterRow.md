@@ -777,7 +777,7 @@ public class GridFilterRowNumericRendererExt : GridFilterRowNumericRenderer
 
 ## Customizing GridFilterRowMultiSelectRenderer renderer 
 
-By default, in SfDataGrid ComboBox is loaded while enter into editmode in FilterRow but you can customize the GridFilterRowMultiSelectRenderer for display the combobox while FilterRow loading itself.
+By default, in SfDataGrid ComboBox is loaded while enter into edit mode in FilterRow but you can customize the GridFilterRowMultiSelectRenderer for display the combobox while FilterRow loading itself.
 
 {% tabs %}
 {% highlight xaml %}
@@ -806,8 +806,8 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
         else
         {
             var position = e.GetPosition(DataGrid.GetVisualContainer());
-            var rowcolindex = DataGrid.GetVisualContainer().PointToCellRowColumnIndex(position, false);
-            DataGrid.SelectionController.MoveCurrentCell(rowcolindex, true);
+            var rowColumnIndex = DataGrid.GetVisualContainer().PointToCellRowColumnIndex(position, false);
+            DataGrid.SelectionController.MoveCurrentCell(rowColumnIndex, true);
         }
     }
 

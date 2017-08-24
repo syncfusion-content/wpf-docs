@@ -210,7 +210,7 @@ public class ViewModel
     {
         var employees = new ObservableCollection<Employee>();
         employees.Add(new Employee() { EmployeeID = 1, OrderID = 1001, City = "Berlin", Orders = GetOrders(1001), Sales = GetSales(1001) });
-        employees.Add(new Employee() { EmployeeID = 2, OrderID = 1002, City = "México D.F.", Orders = GetOrders(1002), Sales = GetSales(1002) });
+        employees.Add(new Employee() { EmployeeID = 2, OrderID = 1002, City = "Mexico D.F.", Orders = GetOrders(1002), Sales = GetSales(1002) });
         employees.Add(new Employee() { EmployeeID = 3, OrderID = 1003, City = "London", Orders = GetOrders(1002), Sales = GetSales(1003) });
         employees.Add(new Employee() { EmployeeID = 4, OrderID = 1004, City = "BERGS", Orders = GetOrders(1002), Sales = GetSales(1004) });
         employees.Add(new Employee() { EmployeeID = 5, OrderID = 1005, City = "Mannheim", Orders = GetOrders(1002), Sales = GetSales(1005) });
@@ -592,13 +592,13 @@ private async Task<ObservableCollection<ProductInfo>> GetItemSource()
      return products;
 }
 
-public async Task<bool> Schedule(Action _onCompleteion, int durationMS)
+public async Task<bool> Schedule(Action _onCompletion, int durationMS)
 { 
     DispatcherTimer timer = new DispatcherTimer();
     timer.Interval = TimeSpan.FromMilliseconds(durationMS);
     //Task that causes time delay
     timer.Tick += timer_Tick;            
-    _onCompleteion();
+    _onCompletion();
     timer.Stop();
     return true;
 }
@@ -1233,15 +1233,15 @@ private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
     var columnIndex = grid.HelperResolveToGridVisibleColumnIndex(scrollColumnIndex);
     if (columnIndex < 0)
         return;
-    var parentStartColumnnIndex = grid.HelperResolveToStartColumnIndex();
+    var parentStartColumnIndex = grid.HelperResolveToStartColumnIndex();
     var indentColumnsWidth = 0;
     foreach (var definition in grid.DetailsViewDefinition)
     {
         var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
-        var startColumnnIndex = detailsViewDataGrid.HelperResolveToStartColumnIndex();
-        indentColumnsWidth = startColumnnIndex * 24;
+        var startColumnIndex = detailsViewDataGrid.HelperResolveToStartColumnIndex();
+        indentColumnsWidth = startColumnIndex * 24;
         var tempWidth = width - indentColumnsWidth < 0 ? 0 : width - indentColumnsWidth;
-        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnnIndex ? tempWidth : width;
+        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnIndex ? tempWidth : width;
         // If DetailsViewDataGrid has DetailsViewDefinition(nested levels), recursively set width upto all levels
         if (detailsViewDataGrid.DetailsViewDefinition != null && detailsViewDataGrid.DetailsViewDefinition.Any())
             SetWidth(detailsViewDataGrid, detailsViewDataGrid.HelperResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns[columnIndex].Width);
@@ -1753,7 +1753,7 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
 
-ItemsSource for DetailsViewDataGrid is populated from the DataContext of parent row based on [ViewDefinition.RelationlColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html). DetailsViewDataGrid doesn’t update its ItemsSource at runtime based on the property change, which is mapped the DetailsViewDataGrid ItemsSource. You can update the ItemsSouce on the property change by setting [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) as `AllowChildViewUpdate`. 
+ItemsSource for DetailsViewDataGrid is populated from the DataContext of parent row based on [ViewDefinition.RelationalColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html). DetailsViewDataGrid doesn’t update its ItemsSource at runtime based on the property change, which is mapped the DetailsViewDataGrid ItemsSource. You can update the ItemsSource on the property change by setting [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) as `AllowChildViewUpdate`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1778,7 +1778,7 @@ For example, if you try to add the new record in `ProductDetails` collection in 
 
 {% tabs %}
 {% highlight c# %}
-var dataContext = DataContext as OrderInfoRepositiory;
+var dataContext = DataContext as OrderInfoRepository;
 var data = dataContext.Orders.Where(item => item.OrderID == 1009).FirstOrDefault();
 var newItem = new List<ProductInfo>();
 newItem.Add(new ProductInfo() { OrderID = 1009, ProductName = "Bike" });
