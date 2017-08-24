@@ -229,12 +229,12 @@ You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.co
 {% tabs %}
 {% highlight c# %}
 
-//To autofit a single column,
+//To AutoFit a single column,
 
 spreadsheet.ActiveSheet.AutofitColumn(2);
 spreadsheet.ActiveGrid.SetColumnWidth(2,2,spreadsheet.ActiveSheet.GetColumnWidthInPixels(2)); 
 
-//To autofit multiple columns,
+//To AutoFit multiple columns,
 
 spreadsheet.ActiveSheet["A1:D100"].AutofitColumns();
 for(int i = 1; i <= 4 ; i++)
@@ -242,12 +242,12 @@ for(int i = 1; i <= 4 ; i++)
    spreadsheet.ActiveGrid.SetColumnWidth(i,i,spreadsheet.ActiveSheet.GetColumnWidthInPixels(i));
 }
 
-//To autofit a single row,
+//To AutoFit a single row,
 
 spreadsheet.ActiveSheet.AutofitRow(3);
 spreadsheet.ActiveGrid.SetRowHeight(3,3,spreadsheet.ActiveSheet.GetRowHeightInPixels(3)); 
 
-//To autofit multiple rows,
+//To AutoFit multiple rows,
 
 spreadsheet.ActiveSheet["B1:B5"].AutofitRows();
 for(int i = 1; i <= 5 ; i++)
