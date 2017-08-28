@@ -1354,7 +1354,7 @@ chart.Series.Add(series)
 
 **Scatter Series**
 
-This series supports dragging in both the x and y co-ordinates. The dragging co-ordinates can be set by using the enum propery `DragDirection`.
+This series supports dragging in both the x and y co-ordinates. The dragging co-ordinates can be set by using the enum property `DragDirection`.
 
 {% tabs %}
 
