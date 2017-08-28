@@ -206,12 +206,12 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
  public ContextMenu CustomTabItemContextMenu()
  {
     var contextMenu = new ContextMenu();
-    var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
+    var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertRow.png", UriKind.Relative)) };
     var insertRow = new MenuItem() { Header = "InsertRow" };           
     insertRow.Icon = insertRowIcon;
     insertRow.Click += insertRow_Click;
 
-    var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
+    var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleteRow.png", UriKind.Relative)) };
     var deleteRow = new MenuItem() { Header = "DeleteRow"};
     deleteRow.Icon = deleteRowIcon;
     deleteRow.Click += deleteRow_Click;
