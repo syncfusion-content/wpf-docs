@@ -500,9 +500,9 @@ public class SortGroupComparers : IComparer<Group>, ISortDirection
     {
 
         int cmp = 0;
-        var xgroupSummarry = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-        var ygroupSummarry = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-        cmp = ((IComparable)xgroupSummarry).CompareTo(ygroupSummarry);
+        var xgroupSummary = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
+        var ygroupSummary = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
+        cmp = ((IComparable)xgroupSummary).CompareTo(ygroupSummary);
         if (this.SortDirection == ListSortDirection.Descending)
             cmp = -cmp;
         return cmp;
