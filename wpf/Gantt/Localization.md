@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization| Gantt | Wpf | Syncfusion
-description: How to localize the Gantt control?
+description: The following section describes how to localize the Gantt control.
 platform: wpf
 control: Gantt
 documentation: ug
