@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flow Direction| Gantt | Wpf | Syncfusion
-description: The following section describes how to display the contents of Gantt from right-to-left or left-to-right.
+description: The following section describes the flow direction support in Gantt Control.
 platform: wpf
 control: Gantt
 documentation: ug
