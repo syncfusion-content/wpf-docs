@@ -7,9 +7,9 @@ control: Gantt
 documentation: ug
 ---
 
-# Flow Direction Support
+# Flow Direction
 
-Gantt provides support to display the contents of the Gantt from right-to-left or left-to-right. It can be achieved by setting the `FlowDirection` property of the Gantt control to "RightToLeft" or "LeftToRight". The following code sample explains how to set this property.
+Gantt provides support to display the contents of the Gantt from right-to-left or left-to-right. It can be achieved by setting the `FlowDirection` property value as “RightToLeft” or “LeftToRight” in the Gantt control. The following code sample explains how to set this property.
 
 {% tabs %}
 
@@ -21,7 +21,7 @@ Gantt provides support to display the contents of the Gantt from right-to-left o
 
 {% highlight c# %}
  
-this.gantt.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+this.Gantt.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endhighlight %}
 
