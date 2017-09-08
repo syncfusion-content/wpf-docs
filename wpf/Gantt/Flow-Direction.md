@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flow Direction| Gantt | Wpf | Syncfusion
-description: The following section describes the flow direction support in Gantt Control.
+description: The following section describes the flow direction support in Gantt control.
 platform: wpf
 control: Gantt
 documentation: ug
