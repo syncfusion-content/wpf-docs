@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cards | SfKanban | wpf | Syncfusion
-description: This section describes how the card can be customized using CardTemplate and how to set the IndicatorColorPalette to Kanban. 
+description: This section describes about cards and it's customization. 
 platform: wpf
 control: SfKanban
 documentation: ug
