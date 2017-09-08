@@ -39,7 +39,7 @@ To localize the GanttControl based on `CurrentUICulture` using resource files, f
 
 4.In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.Gantt.WPF.&lt;culture name&gt;.resx**. 
 
-\t For example, you have to give name as **Syncfusion.Gantt.WPF.fr.resx** for French culture.
+`<text>`For example, you have to give name as **Syncfusion.Gantt.WPF.fr.resx** for French culture.
  
 5.The culture name that indicates the name of language and country. 
 
