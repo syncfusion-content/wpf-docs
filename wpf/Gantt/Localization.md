@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization| Gantt | Wpf | Syncfusion
-description: localization
+description: The following section describes the localization in Gantt control.
 platform: wpf
 control: Gantt
 documentation: ug
