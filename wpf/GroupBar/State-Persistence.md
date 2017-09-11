@@ -33,7 +33,7 @@ myGroupBar.SaveBarState();
 
 myGroupBar.LoadBarState();
 
-resgisterEvents(myGroupBar);
+registerEvents(myGroupBar);
 
 
 
@@ -41,7 +41,7 @@ resgisterEvents(myGroupBar);
 
 myGroupBar.ResetBarState();
 
-resgisterEvents(myGroupBar);
+registerEvents(myGroupBar);
 {% endhighlight %}
 
 
