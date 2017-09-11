@@ -169,7 +169,7 @@ Ribbon supports various visual styles by using the `SfSkinManager`. To apply Vis
 * Refer the following assemblies with the project
 
 1. Syncfusion.SfSkinManager.Wpf
-2. Syncfusion.Thems.Office2013White.Wpf
+2. Syncfusion.Themes.Office2013White.Wpf
 
 * Include an XML namespace for the SfSkinManager assembly to the MainWindow.
 

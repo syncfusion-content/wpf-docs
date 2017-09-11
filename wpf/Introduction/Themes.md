@@ -46,7 +46,7 @@ The following code example explains how to set the VisualStyle property in XAML.
 
    ~~~xaml
    
-         xmlns:yncfusion=”http://schemas.syncfusion.com/wpf”
+         xmlns:syncfusion=”http://schemas.syncfusion.com/wpf”
 		 
    ~~~
 
@@ -203,7 +203,7 @@ You can customize the following brushes in Metro Theme.
 
 <Syncfusion:ChromelessWindow x:Class=”WpfApplication18.MainWindow”       
 
-Title=”Window1” Height=”350” Width=”525” xmlns:yncfusion=”http://schemas.syncfusion.com/wpf” yncfusion:SkinStorage.VisualStyle=”Metro” yncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
+Title=”Window1” Height=”350” Width=”525” xmlns:yncfusion=”http://schemas.syncfusion.com/wpf” yncfusion:SkinStorage.VisualStyle=”Metro” syncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
 
 </Syncfusion:ChromelessWindow>
 

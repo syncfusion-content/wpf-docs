@@ -104,7 +104,7 @@ You have to installed WPF Add-in while installing UFT by choosing below option.
 
 UFT - WPF Add-in installation
 
-## Configuring add-in assemblies for different .Net framework version
+## Configuring add-in assemblies for different .NET framework version
 
 You need to configure Syncfusion add-in assemblies based on the framework version of the application that you are trying to automate. 
 For example, below are the steps to configure the custom add-in assemblies of syncfusion for SfDataGrid.
@@ -259,7 +259,7 @@ N>
 The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
 
 ## Supported Controls
-The following controls are supported for UFT/QTP tesing 
+The following controls are supported for UFT/QTP testing 
 
 ## SfDataGrid
 <table>
@@ -291,7 +291,7 @@ To Set the CurrentCell.
 int row, int col
 </td>
 <td>
-Passing current row and column index to  the SetCurentCell method
+Passing current row and column index to  the SetCurrentCell method
 </td>
 <td>
 Void
@@ -973,7 +973,7 @@ Void
 </tr>
 <tr>
 <td>
-Void MoveCurentCellTo(int rowIndex, int columnIndex)
+Void MoveCurrentCellTo(int rowIndex, int columnIndex)
 </td>
 <td>
 To move the current cell to particular row and column index.
@@ -990,7 +990,7 @@ Void
 </tr>
 <tr>
 <td>
-Void MoveCurentCellTo(int rowIndex)
+Void MoveCurrentCellTo(int rowIndex)
 </td>
 <td>
 To move the current cell to particular row index.
@@ -1494,7 +1494,7 @@ Resizes the row by using row parameter.
 int fromRow, int to, int height
 </td>
 <td>
-voi
+void
 </td>
 </tr>
 <tr>
@@ -1639,7 +1639,7 @@ string
 </tr>
 <tr>
 <td>
-string GetFromattedText(int row, int col)
+string GetFormattedText(int row, int col)
 </td>
 <td>
 Gets the formatted text as string value based on Row and Column parameters.
