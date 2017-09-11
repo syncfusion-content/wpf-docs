@@ -193,7 +193,7 @@ The various built-in visual styles are listed below.
 
 {% highlight C# %}
 
-//Setting the visaul style as Blend
+//Setting the visual style as Blend
 
 SkinStorage.SetVisualStyle(treeViewAdv, "Blend");
 
@@ -201,7 +201,7 @@ SkinStorage.SetVisualStyle(treeViewAdv, "Blend");
 
 {% highlight VB %}
 
-'Setting the visaul style as Blend
+'Setting the visual style as Blend
 
 SkinStorage.SetVisualStyle(treeViewAdv, "Blend")
 

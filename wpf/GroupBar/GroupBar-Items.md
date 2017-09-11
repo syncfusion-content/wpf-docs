@@ -188,7 +188,7 @@ GroupBarItem groupBarItem = new GroupBarItem();
 groupBarItem.HeaderText = "Mailbox";
 // Setting Corner Radius For GroupBar Item.
 groupBarItem.GroupBarItemCornerRadius = new CornerRadius(20d);
-// Setting ShowInGroupBar propety for GroupBar Item.
+// Setting ShowInGroupBar property for GroupBar Item.
 groupBarItem.ShowInGroupBar = true;
 // Adding GroupBar Item to GroupBar.
 groupBar.Items.Add(groupBarItem);
