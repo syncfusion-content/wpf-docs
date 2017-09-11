@@ -60,7 +60,7 @@ this.RaisePropertyChanged(() => this.Caption);
 
 }
 
-private bool isChekced = false;
+private bool isChecked = false;
 
 public bool IsChecked
 
@@ -70,7 +70,7 @@ Get
 
 {
 
-return isChekced;
+return isChecked;
 
 }
 
@@ -78,7 +78,7 @@ Set
 
 {
 
-isChekced = value;
+isChecked = value;
 
 this.RaisePropertyChanged(() => this.IsChecked);
 
@@ -86,7 +86,7 @@ this.RaisePropertyChanged(() => this.IsChecked);
 
 }
 
-private bool isChekable = false;
+private bool isCheckable = false;
 
 public bool IsCheckable
 
@@ -96,7 +96,7 @@ Get
 
 {
 
-return isChekable;
+return isCheckable;
 
 }
 
@@ -104,7 +104,7 @@ Set
 
 {
 
-isChekable = value;
+isCheckable = value;
 
 this.RaisePropertyChanged(() => this.IsCheckable);
 
@@ -181,7 +181,7 @@ End If
 
 End Property
 
-Private isChekced As Boolean = False
+Private isChecked As Boolean = False
 
 Public ReadOnly Property IsChecked() As Boolean
 
@@ -190,7 +190,7 @@ Public ReadOnly Property IsChecked() As Boolean
 
 If True Then
 
-Return isChekced
+Return isChecked
 
 End If
 
@@ -198,7 +198,7 @@ End If
 
 If True Then
 
-isChekced = value
+isChecked = value
 
 Me.RaisePropertyChanged(Function() Me.IsChecked)
 
@@ -206,7 +206,7 @@ End If
 
 End Property
 
-Private isChekable As Boolean = False
+Private isCheckable As Boolean = False
 
 Public ReadOnly Property IsCheckable() As Boolean
 
@@ -215,7 +215,7 @@ Public ReadOnly Property IsCheckable() As Boolean
 
 If True Then
 
-Return isChekable
+Return isCheckable
 
 End If
 
@@ -223,7 +223,7 @@ End If
 
 If True Then
 
-isChekable = value
+isCheckable = value
 
 Me.RaisePropertyChanged(Function() Me.IsCheckable)
 

@@ -65,8 +65,8 @@ CalendarEdit calendarEdit = new CalendarEdit();
 //Allow selection of year
 calendarEdit.AllowYearEditing = true;
 
-//Adding CalendarEdit as window conten
-tthis.Content = calendarEdit;
+//Adding CalendarEdit as window content
+this.Content = calendarEdit;
 
 {% endhighlight %}
 {% endtabs %}
