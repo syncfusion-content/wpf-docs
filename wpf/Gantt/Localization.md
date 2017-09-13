@@ -53,4 +53,4 @@ For example, you have to give name as **Syncfusion.Gantt.WPF.fr.resx** for Frenc
 
 ![](Localization_images/FinalOutput.png)
 
-You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt577797023.zip)
+You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)
