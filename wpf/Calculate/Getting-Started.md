@@ -191,6 +191,8 @@ The simplest way to use Essential Calculate is through an instance of its [CalcQ
 
 For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/wpf/calculate/working-with-calcquick)
 
+N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWPFSample-588369147)
+
 ### ICalcData
 
 To use Essential Calculate support, we need to derive the class from [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface which allows the [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) class to communicate with arbitrary data sources.
@@ -198,6 +200,8 @@ To add calculation support to classes that represent data in a row/column format
 of `ICalcData` interface is used to get and set the values of the variables at runtime for computation. `CalcEngine` listens to the `ValueChanged` event of `ICalcData` interface to tracks the dependencies and compute the formulas.
 
 For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/wpf/calculate/working-with-icalcdata)
+
+N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWPFSample-358727461)
 
 ## Cross Sheet Reference
 
