@@ -203,7 +203,7 @@ You can customize the following brushes in Metro Theme.
 
 <Syncfusion:ChromelessWindow x:Class=”WpfApplication18.MainWindow”       
 
-Title=”Window1” Height=”350” Width=”525” xmlns:yncfusion=”http://schemas.syncfusion.com/wpf” yncfusion:SkinStorage.VisualStyle=”Metro” syncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
+Title=”Window1” Height=”350” Width=”525” xmlns:Syncfusion=”http://schemas.syncfusion.com/wpf” syncfusion:SkinStorage.VisualStyle=”Metro” syncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
 
 </Syncfusion:ChromelessWindow>
 
