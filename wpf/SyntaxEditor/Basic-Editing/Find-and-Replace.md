@@ -268,7 +268,7 @@ Description</th></tr>
 <tr>
 <td>
 OkButtonText</td><td>
-Helps to localize the Ok Button Text.</td></tr>
+Helps to localize the OK Button Text.</td></tr>
 <tr>
 <td>
 GoToLineHeaderText</td>
