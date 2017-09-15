@@ -51,7 +51,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 
 ![](Localization_images/Localization_img5.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization-1668364974.zip)
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization2100709493.zip)
 
 ## Localize when the resource file present in different assembly or different namespace?
 
