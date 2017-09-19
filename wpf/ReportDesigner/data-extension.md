@@ -13,7 +13,7 @@ Data source extension is to provide the additional data source supports using AD
 
 ## Why we to have built Data Source extension?
 
-We are providing the build in data source supports only for the .NET Libraries that built-in of .NET Framework. If the database assemblies do not come with .NET Framework then you have built the Data Source extension for additional data sources such as MySQL, SSAS, Firebird, OData, PervasiveSQL, PostgreSQL etc.
+We are providing the built-in data source supports only for the .NET Libraries that built-in of .NET Framework. If the database assemblies do not come with .NET Framework then you have built the Data Source extension for additional data sources such as MySQL, SSAS, Firebird, OData, PervasiveSQL, PostgreSQL etc.
 
 ## Do we need to create Data extension if we have a ODBC driver for unavailable data source such as MySQL, OData?
 
