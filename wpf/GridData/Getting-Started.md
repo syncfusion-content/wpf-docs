@@ -189,21 +189,7 @@ The Grid control is a cell-based control, so to populate it, RowCount and Column
 
 ### Add the GridData Control to a WPF Application
 
-This section shows you how to add a GridData control to a WPF application and how to bind data from a database and an IEnumerable Collection to the GridData control. The GridData control can be added to an application through a designer, or it can be added programmatically.
-
-#### Adding the GridData Control through a Designer 
-
-Please follow the steps below to add the GridData control through a designer such as Visual Studio.
-
-1. Create a new WPF application.
-2. Open the designer window.
-3. Drag GridDataControl from the Toolbox and drop it in the designer window.
-
-   ![](Getting-Started_images/Getting-Started_img11.png)
-
-4. Once you’ve dragged GridDataControl to the designer from the Toolbox, it is added to the designer, and its dependent DLLs are added to the project.
-
-   ![](Getting-Started_images/Getting-Started_img12.png)
+This section shows you how to add a GridData control to a WPF application and how to bind data from a database and an IEnumerable Collection to the GridData control. The GridData control can be added to an application through programmatically.
 
 ### Programmatically Adding the GridData Control:
 
@@ -516,21 +502,7 @@ When the application runs, the following output is generated.
 
 ### Add the GridTree Control to a WPF Application
 
-This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application either through a designer or programmatically.
-
-### Adding GridTreeControl through a Designer
-
-Please follow the steps below to add the GridTree control through a designer such as Visual Studio.
-
-1. Create a new WPF application.
-2. Open the designer window.
-3. Drag GridTreeControl from the Toolbox and drop it in the designer window.
-
-   ![](Getting-Started_images/Getting-Started_img16.png)
-   
-4. Once GridTreeControl has been dragged to the designer window, the control is added to the designer and its dependent DLLs are added to the project.
-
-   ![](Getting-Started_images/Getting-Started_img17.png)
+This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application through programmatically.
 
 ### Programmatically Adding GridTree Control
 
