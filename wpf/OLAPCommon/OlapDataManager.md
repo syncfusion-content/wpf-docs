@@ -203,6 +203,43 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 
 
+## Connecting to SAP Business Warehouse Server 
+
+ The following code illustrates how to connect to SAP Business Warehouse server:
+
+ {% tabs %}
+{% highlight c# %}
+
+
+
+// Connecting to SAP BW Server
+
+OlapDataManager DataManager = new OlapDataManager(@"Data Source= http://sapdomain:50000/sap/bw/xml/soap/xmla; Initial Catalog=$INFOCUBE; User ID=username; Password=password;");
+
+DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.SAPBW;
+
+{% endhighlight  %}
+
+
+
+{% highlight vbnet %}
+
+
+
+' Connecting to SAP BW Server 
+
+Dim DataManager As OlapDataManager = New OlapDataManager("Data Source= http://sapdomain:50000/sap/bw/xml/soap/xmla; Initial Catalog=$INFOCUBE; User ID=username; Password=password;")
+
+DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.SAPBW
+
+{% endhighlight  %}
+{% endtabs %}
+
+
+[Click here](https://www.sap.com/index.html) for more information on SAP BW server.
+
+
+
 ###  Properties
 
 * **ConnectionString** - Used to pass the connection string to establish the connection. The user can also get the connection string using this property.
