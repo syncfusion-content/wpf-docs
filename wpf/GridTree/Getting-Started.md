@@ -81,27 +81,7 @@ This section serves as a guide on how to deploy EssentialGrid in an application.
 
 ## Adding the GridTree Control to a WPF Application
 
-This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application either through a designer or programmatically.
-
-### Adding GridTreeControl through a Designer
-
-Please follow the steps below to add the GridTree control through a designer such as Visual Studio.
-
-1. Create a new WPF application.
-2. Open the designer window.
-3. Drag GridTreeControl from the Toolbox and drop it in the designer window.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-4. Once GridTreeControl has been dragged to the designer window, the control will be added to the designer and its dependent assemblies will be added to the project.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img7.png)
+This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application through programmatically.
 
 ### Programmatically Adding GridTree Control
 
