@@ -12,7 +12,7 @@ documentation: ug
 
 ## Accessing the Worksheet
 
-A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Workbook.html) property of SfSpreadsheet.
+A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Workbook.html) property of SfSpreadsheet.
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 

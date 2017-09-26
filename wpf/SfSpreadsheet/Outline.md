@@ -56,7 +56,7 @@ spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 ## Collapse or Expand Group
 
-Groups can be Expanded by [ExpandGroup](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
+Groups can be Expanded by [ExpandGroup](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
 
 {% tabs %}
 {% highlight c# %}
