@@ -114,7 +114,7 @@ Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files
 
 ## Hide Rows and Columns
 
-SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
+SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -136,7 +136,7 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by [Hid
 
 ## Unhide Rows and Columns
 
-Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
+Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -224,7 +224,7 @@ SfSpreadsheet provides support to unfreeze the freeze panes in the worksheet of 
 
 SfSpreadsheet provides support to fit the rows or columns based on its content at run time.
 
-You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/wpf/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutoFitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
+You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
