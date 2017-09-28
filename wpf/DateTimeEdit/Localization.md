@@ -38,7 +38,7 @@ Sets the string for the Clock Text in DateTimeEdit</td></tr>
 <td colspan = "1">
 {{'![](Localization_images/Localization_img3.png)'|markdownify}}
 
-{{ '_AccessClockText(en-US}}_' | markdownify }}
+{{ '_AccessClockText(en-US)_' | markdownify }}
 </td>
 <td>
 {{'![](Localization_images/Localization_img4.png)'|markdownify}}
