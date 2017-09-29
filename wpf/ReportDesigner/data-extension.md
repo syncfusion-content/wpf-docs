@@ -13,7 +13,7 @@ Data source extension is to provide the additional data source supports using AD
 
 ## Why we to have built Data Source extension?
 
-We are providing the build in data source supports only for the .NET Libraries that build in of .NET Framework. If the database assemblies do not come with .NET Framework then you have built the Data Source extension for additional data sources such as MySQL, SSAS, Firebird, OData, PervasiveSQL, PostgreSQL etc.
+We are providing the built-in data source supports only for the .NET Libraries that built-in of .NET Framework. If the database assemblies do not come with .NET Framework then you have built the Data Source extension for additional data sources such as MySQL, SSAS, Firebird, OData, PervasiveSQL, PostgreSQL etc.
 
 ## Do we need to create Data extension if we have a ODBC driver for unavailable data source such as MySQL, OData?
 
@@ -27,7 +27,7 @@ This article explains you how to create PostgreSQL Data Source extension with Re
 
 We should add Syncfusion.ReportControls.WPF reference with application to provide the Extension support for PostgreSQL data source. And refer the data source ADO.Net library that we are going to provide the support. For this, add the PostgreSQL reference with application to provide thee Date Extension support.
 
-Note: If you are going to create separate library for the DataExtension then you have added Sycnfusion.ReportControls.WPF and PostgreSQL references with your class library.
+Note: If you are going to create separate library for the DataExtension then you have added Syncfusion.ReportControls.WPF and PostgreSQL references with your class library.
 
 ## Implementing Data Extension
 IDataExtension interface need to be implemented with your Data Extension class to provide the extension support and IDataExtension members will be invoked from Report Designer.

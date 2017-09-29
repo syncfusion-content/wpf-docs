@@ -194,7 +194,7 @@ The following image illustrates the change in thickness of the selected ink anno
 
 ### Editing color of the annotation
 
-The color of the selected ink annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the ink annotation.
+The color of the selected ink annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the ink annotation.
 
 The following image illustrates how to change the color of the ink annotation included.
 

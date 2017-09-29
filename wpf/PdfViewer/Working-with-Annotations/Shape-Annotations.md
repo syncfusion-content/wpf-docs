@@ -203,7 +203,7 @@ The following image illustrates the change in thickness of the selected line ann
 
 ### Editing color of the annotation
 
-The color of the selected line annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the line annotation.
+The color of the selected line annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the line annotation.
 
 The following image illustrates how to change the color of the line annotation included.
 
@@ -427,7 +427,7 @@ The following image illustrates the change in thickness of the selected rectangl
 
 ### Editing color of the annotation
 
-The color of the selected rectangle annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the rectangle annotation.
+The color of the selected rectangle annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the rectangle annotation.
 
 The following image illustrates how to change the color of the rectangle annotation included.
 
@@ -654,7 +654,7 @@ The following image illustrates the change in thickness of the selected circle a
 
 ### Editing color of the annotation
 
-The color of the selected circle annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the circle annotation.
+The color of the selected circle annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the circle annotation.
 
 The following image illustrates how to change the color of the circle annotation included.
 

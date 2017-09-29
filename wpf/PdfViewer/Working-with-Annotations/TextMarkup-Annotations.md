@@ -162,7 +162,7 @@ The color and opacity of the highlight annotation can be edited using Appearance
 
 ### Editing color of the annotation
 
-The color of the selected highlight annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the highlight annotation.
+The color of the selected highlight annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the highlight annotation.
 
 The following image illustrates how to change the color of the highlight annotation included.
 
@@ -348,7 +348,7 @@ The color and opacity of the underline annotation can be edited using Appearance
 
 ### Editing color of the annotation
 
-The color of the selected underline annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the underline annotation.
+The color of the selected underline annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the underline annotation.
 
 The following image illustrates how to change the color of the underline annotation included.
 
@@ -536,7 +536,7 @@ The color and opacity of the strikethrough annotation can be edited using Appear
 
 ### Editing color of the annotation
 
-The color of the selected strikethrough annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking ok will apply the color to the strikethrough annotation.
+The color of the selected strikethrough annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the strikethrough annotation.
 
 The following image illustrates how to change the color of the strikethrough annotation included.
 
