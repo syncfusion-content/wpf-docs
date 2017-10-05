@@ -22,18 +22,23 @@ This read only property is used to check whether the validation succeeds or not.
 
 {% highlight xaml %}
 
-<sf:SfMaskedEdit  Name="sfMasked" MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" ValidationMode="LostFocus" Width="255" Height="46"  LostFocus="sfMasked_LostFocus"/>
+<syncfusion:SfMaskedEdit x:Name="sfMaskedEdit" MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" ValidationMode="LostFocus" LostFocus="sfMaskedEdit_LostFocus"/>
 
 {% endhighlight %}
 
 
 {% highlight C# %}
 
-private void sfMasked_LostFocus(object sender, RoutedEventArgs e)
+private void sfMaskedEdit_LostFocus(object sender, RoutedEventArgs e)
+
 {
-    if (sfMasked.HasError)
+      
+    if (sfMaskedEdit.HasError)
+
     {
+
         MessageBox.Show("Please enter the correct date");
+
     }
 }
 
