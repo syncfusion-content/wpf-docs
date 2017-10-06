@@ -18,5 +18,32 @@ When the ValidationMode is KeyPress, the validation is raised for each key press
 
 ## HasError
 
-This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else set to false.  
+This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else set to false. The following code example shows the usage of HasError property.
+
+{% highlight xaml %}
+
+<syncfusion:SfMaskedEdit x:Name="sfMaskedEdit" MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" ValidationMode="LostFocus" LostFocus="sfMaskedEdit_LostFocus"/>
+
+{% endhighlight %}
+
+
+{% highlight C# %}
+
+private void sfMaskedEdit_LostFocus(object sender, RoutedEventArgs e)
+
+{
+      
+    if (sfMaskedEdit.HasError)
+
+    {
+
+        MessageBox.Show("Please enter the correct date");
+
+    }
+}
+
+{% endhighlight %}
+
+
+
 
