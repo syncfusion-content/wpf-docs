@@ -112,9 +112,9 @@ Accepts the input for zero or more times.</td></tr>
 
 ## RegEx
 
-Very complex regular expressions come under this category. It accepts input of variable length and allows to use OR expressions.  For example: E-mail_._
+Very complex regular expressions come under this category. It accepts input of variable length and allows to use OR expressions.  
 
-### ReEx Mask elements
+### RegEx Mask elements
 
 <table>
 <tr>
@@ -130,5 +130,13 @@ Accepts any one input that matches.</td></tr>
 (a|b)+</td><td>
 Accepts the matching input one or more times.</td></tr>
 </table>
+
+For example: The following code example shows the validation for E-mail using Regex Elements.
+
+{% highlight xaml %}
+
+<syncfusion:SfMaskedEdit x:Name="sfMaskedEdit" MaskType="RegEx" Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}" Value="someone@example.com" />
+
+{% endhighlight %}
 
 
