@@ -81,7 +81,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 ##RimInactiveBrush
 
-`RimInactiveBrush` property used to fill the expander rim item background when the corresponding menuitem doesn’t have sub items.
+`RimInactiveBrush` property used to fill the expander rim item background when the corresponding menu item doesn’t have sub items.
 
 {%highlight xaml%}
 
