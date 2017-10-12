@@ -123,6 +123,10 @@ Supported Controls<br/><br/></th>
 Level<br/><br/></th></tr>
 <tr>
 <td>
+AutoComplete<br/><br/></td><td>
+3 Level<br/><br/></td></tr>
+<tr>
+<td>
 CellGrid<br/><br/></td><td>
 3 Level<br/><br/></td></tr>
 <tr>
@@ -131,11 +135,31 @@ DataGrid<br/><br/></td><td>
 3 Level<br/><br/></td></tr>
 <tr>
 <td>
-TreeGrid<br/><br/></td><td>
+DockingManager<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 <tr>
 <td>
-GridDataControl<br/><br/></td><td>
+DocumentContainer<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+GridData<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+GridControl<br/><br/></td><td>
+3 Level<br/><br/></td></tr>
+<tr>
+<td>
+GridTree<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+PivotGrid<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+PropertyGrid<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 <tr>
 <td>
@@ -143,7 +167,31 @@ Ribbon<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 <tr>
 <td>
-DockingManager<br/><br/></td><td>
+SfCalculator<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+SfChart<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+SfDataGrid<br/><br/></td><td>
+3 Level<br/><br/></td></tr>
+<tr>
+<td>
+SfDataPager<br/><br/></td><td>
+3 Level<br/><br/></td></tr>
+<tr>
+<td>
+SfMultiColumnDropDown<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+TabControlExt<br/><br/></td><td>
+2 Level<br/><br/></td></tr>
+<tr>
+<td>
+TileView<br/><br/></td><td>
 2 Level<br/><br/></td></tr>
 </table>
 
