@@ -48,11 +48,12 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 
 
 
-    <syncfusion:ComboBoxAdv x:Name="comboBoxAdv1" AllowMultiSelect="True" 		DefaultText="Choose Items" ItemsSource="{Binding Countries}"                                	DisplayMemberPath="Name"  SelectedValuePath="Code"
+    <syncfusion:ComboBoxAdv x:Name="comboBoxAdv1" DefaultText="Choose Items" ItemsSource="{Binding Countries}"                                	DisplayMemberPath="Name"  SelectedValuePath="Code"
 
       SelectedValueDelimiter=" - ">
 
     </syncfusion:ComboBoxAdv>
+
 {% endhighlight %}
 
 
@@ -82,9 +83,23 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 
 
 
-    ComboBoxAdv comboBoxAdv = new ComboBoxAdv { AllowMultiSelect = true, 	SelectedValueDelimiter = " - ", DefaultText = " Choose Items ", 	ItemsSource = Countries, DisplayMemberPath="Name", 	SelectedValuePath="Code" };
+    ComboBoxAdv comboBoxAdv = new ComboBoxAdv {SelectedValueDelimiter = " - ", DefaultText = " Choose Items ", ItemsSource = Countries, DisplayMemberPath="Name", 	SelectedValuePath="Code" };
 
 {% endhighlight %}
 
+
+## Use Case Scenarios
+
+If multiple choices are allowed for the user, then the ComboBoxAdv is useful to display those multiple choices. Instead of displaying all the choices initially,the choices displayed with in the drop-down whenever the user click on the ComboBoxAdv control.
+
+## Default Selection Behavior
+
+By default, `AllowMultiSelect` property of ComboboxAdv is false. Therefore, it allows users to select only one item from drop-down. In default selection, previous selection has been cleared when new item is selected.
+
+The following screenshot displays the default selection behavior of ComboBoxAdv.
+
+
+
+![](ComboBoxAdv_images/ComboBoxAdv_img1.png)
 
 
