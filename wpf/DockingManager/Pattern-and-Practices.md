@@ -119,6 +119,29 @@ Following this approach, the docking adapter can also be treated as a normal ite
 
 [http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip)
 
+## DockingManager with MVVMLight using DockingAdapter
+
+This section explains how to create MVVMLight sample with DockingManager. Since DockingManager is not an Items Control, it is not possible to have a traditional ItemsSource binding to a collection of objects in the view model. It can be achieved using DockingAdapter from the above MVVM sample creation section.
+
+The following steps explains how to create sample project with MVVMLight templates.
+
+1.Download MVVMLight toolkit and install it to avail the predefined MVVMLight templates for all platforms MMVMLight extension can be install from Tools and Extension.
+
+2.Create a new WPF project and select MVVMLight WPF template.
+
+![](PatternandPractices_images/Patterns-and-Practices-img1.png)
+
+3.Template for MVVMLight sample will be created with required assemblies, Simple IOC container and ViewModelLocator
+
+![](PatternandPractices_images/Patterns-and-Practices-img2.png)
+
+4.Attach DockingAdapter project to the DockingManagerMVVMLight project from MVVM sample. Create necessary ViewModels and Views with perfect naming conventions. Once the ItemsSource has been set to DockingAdapter children will be populate.
+
+DockingManager MVVMLight sample has been created following the above steps and it can be downloaded from below link,
+
+#### Sample Link:
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip)
+
 ## Practice with PRISM
 
 The following steps helps to create sample project in the PRISM 5.0.
