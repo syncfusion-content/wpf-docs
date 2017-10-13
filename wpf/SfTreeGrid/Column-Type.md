@@ -1334,7 +1334,7 @@ You can allow `UIElement` loaded inside `CellTemplate` or `EditTemplate` to hand
 
 ### Keyboard interaction for UIElement loaded inside CellTemplate
 
-You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `[FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridFocusManagerHelperClassWantsKeyInputPropertyTopic.html "")` attached property to `TreeGridColumn`. You can use this when loading edit element in CellTemplate. 
+You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `[FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html "")` attached property to `TreeGridColumn`. You can use this when loading edit element in CellTemplate. 
 
 In this case SfTreeGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
 
@@ -1361,7 +1361,7 @@ In this case SfTreeGrid handles the below key operations and other keys are hand
 
 ### Setting focus to particular element inside Template when cell gets activated or edited
 
-You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting `[FocusManagerHelper.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/frlrfSyncfusionUIXamlGridFocusManagerHelperClassFocusedElementPropertyTopic.html# "")` attached property. 
+You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting `[FocusManagerHelper.FocusedElement](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html# "")` attached property. 
 
 You can use this property to start editing the template column value as like normal column when the user gets into edit mode.
 
