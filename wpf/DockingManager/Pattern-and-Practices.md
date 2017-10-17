@@ -119,7 +119,7 @@ Following this approach, the docking adapter can also be treated as a normal ite
 
 [http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip)
 
-## DockingManager with MVVMLight using DockingAdapter
+## MVVMLight
 
 This section explains how to create MVVMLight sample with DockingManager. Since DockingManager is not an Items Control, it is not possible to have a traditional ItemsSource binding to a collection of objects in the view model. It can be achieved using DockingAdapter from the above MVVM sample creation section.
 
