@@ -17,57 +17,58 @@ In the below code, a DropDownButtonAdv named Change View has been created whose 
 
 {% highlight C# %}
 
-class ChangeView_model
+class Model
 
 {
 
- private string changeview_name;
+  private string name;
 
- public string ChangeView_name
-
- {
-
-  get
+  public string Name
 
   {
 
-    return changeview_name;
+    get
+
+    {
+
+      return name;
+
+    }
+
+    set
+
+    {
+
+      name = value;
+
+    }
 
   }
 
-  set
+  private string image;
 
+  public string Image
+ 
   {
 
-   changeview_name = value;
+    get
 
-  }
+    {
 
- }
+      return image;
 
- private string changeview_image;
+    }
 
- public string ChangeView_image
+    set
 
- { 
+    {
 
-   get
+      image = value;
 
-   {
-
-    return changeview_image;
-
-   }
-
-   set
-
-   {
-
-    changeview_image = value;
-
-   }
+    }
 
  }
+
 
 }
 
@@ -77,49 +78,55 @@ class ChangeView_model
 
 {% highlight C# %}
 
-class ChangeView_list
+class ViewModel
 
 {
 
- private List<ChangeView_model> dropdown_items;
+  private List<Model> dropDownItems;
 
- public List<ChangeView_model> Dropdown_items
+  public List<Model> DropDownItems
 
- {
+  {
 
-   get
+    get
 
-   {  
+    {
 
-    return dropdown_items;
+      return dropDownItems;
 
-   }
+    }
 
-   set
+    set
 
-   {
+    {
 
-    dropdown_items = value;
+      dropDownItems = value;
 
-   }
+    }
+
+  }
+
+  public ViewModel()
+
+  {
+
+    DropDownItems = new List<Model>();
+
+    DropDownItems.Add(new Model() {Name = "Compact",
+
+    Image = "Images/Single.png"});
+
+    DropDownItems.Add(new Model() { Name = "Single",  
+
+    Image= "Images/Compact.png"});
+
+    DropDownItems.Add(new Model() { Name = "Preview", 
+
+    Image= "Images/Preview.png"});
+
+  }
 
  }
-
- public ChangeView_list()
-
- {
-
-  Dropdown_items = new List<ChangeView_model>();
-
-  Dropdown_items.Add(new ChangeView_model() { ChangeView_name = "Compact",ChangeView_image ="Single.png"});
-
-  Dropdown_items.Add(new ChangeView_model() { ChangeView_name = "Single",ChangeView_image="Compact.png"});
-
-  Dropdown_items.Add(new ChangeView_model() { ChangeView_name = "Preview",ChangeView_image="Preview.png" });
-
- }
-
-}
 
 {% endhighlight %}
 
@@ -127,19 +134,19 @@ class ChangeView_list
 
 {% highlight xaml %}
 
-<syncfusion:DropDownButtonAdv Label="Change View" x:Name="DropDownButton_ChangeView" SizeMode="Large" LargeIcon="images.png" >
+<syncfusion:DropDownButtonAdv Label="Change View" SizeMode="Large" LargeIcon="Images/images.png" >
 
-<syncfusion:DropDownMenuGroup ItemsSource="{Binding Dropdown_items}">
+<syncfusion:DropDownMenuGroup ItemsSource="{Binding DropDownItems}">
 
 <syncfusion:DropDownMenuGroup.ItemTemplate>
 
 <DataTemplate>
 
-<syncfusion:DropDownMenuItem Header="{Binding ChangeView_name}">
+<syncfusion:DropDownMenuItem Header="{Binding Name}">
 
 <syncfusion:DropDownMenuItem.Icon>
 
-<Image Source="{Binding ChangeView_image}"></Image>
+<Image Source="{Binding Image}"/>
 
 </syncfusion:DropDownMenuItem.Icon>
 
@@ -151,26 +158,26 @@ class ChangeView_list
 
 </syncfusion:DropDownMenuGroup>
 
-</syncfusion:DropDownButtonAdv>
+</syncfusion:DropDownButtonAdv> 
 
 {% endhighlight %}
 
 
 {% highlight C# %}
 
-public partial class MainWindow: Window
+public partial class MainWindow:Window
 
 {
 
-  public MainWindow()
+   public MainWindow()
 
-  {
+   {
 
-    InitializeComponent();
+     InitializeComponent();
 
-    this.DataContext = new ChangeView_list();
+     this.DataContext = new ViewModel();
 
-  }
+   }
 
 }
 
