@@ -33,29 +33,29 @@ ComboBoxItems are the items with `Header` property that is used to set header.
 
 <syncfusion:RibbonBar Name="_ribbonBar2" Width="150" Header="RibbonBar2">     
 
-<ButtonPanel>
+<syncfusion:ButtonPanel>
 
-<syncfusion:RibbonComboBox SelectedItem="Arial" Width="80">
+     <syncfusion:RibbonComboBox SelectedItem="Arial" Width="80">
 
-<ComboBoxItem>Arial</ComboBoxItem>
+         <syncfusion:RibbonComboBoxItem>Arial</syncfusion:RibbonComboBoxItem>
 
-<ComboBoxItem>Tahoma</ComboBoxItem>
+         <syncfusion:RibbonComboBoxItem>Tahoma</syncfusion:RibbonComboBoxItem>
 
-<ComboBoxItem>Calibri</ComboBoxItem>
+         <syncfusion:RibbonComboBoxItem>Calibri</syncfusion:RibbonComboBoxItem>
 
-</syncfusion:RibbonComboBox>
+     </syncfusion:RibbonComboBox>
 
-<syncfusion:RibbonComboBox SelectedItem="12" Width="50">
+     <syncfusion:RibbonComboBox SelectedItem="12" Width="50">
 
-<ComboBoxItem>11</ComboBoxItem>
+          <syncfusion:RibbonComboBoxItem>11</syncfusion:RibbonComboBoxItem>
 
-<ComboBoxItem>12</ComboBoxItem>
+          <syncfusion:RibbonComboBoxItem>12</syncfusion:RibbonComboBoxItem>
 
-<ComboBoxItem>13</ComboBoxItem>
+          <syncfusion:RibbonComboBoxItem>13</syncfusion:RibbonComboBoxItem>
 
-</syncfusion:RibbonComboBox>
+     </syncfusion:RibbonComboBox>
 
-</ButtonPanel>
+</syncfusion:ButtonPanel>
 
 </syncfusion:RibbonBar>         
 
