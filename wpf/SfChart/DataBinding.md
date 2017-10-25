@@ -291,5 +291,5 @@ private void CreateChart()
 
 {% endtabs %}
 
-### Listening Biniding Property Changes
-When underlying data object implements INotifyPropertyChanged, you need to enable the ListenPropertyChange property of the series, to make the chart listen to the property changes of your data object.
+### Updating Binding path properties
+When enabling [`ListerPropertyChange`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html#) property to the series, you need to implements INotifyPropertyChanged to the underlying data object , to make the chart listen to the property changes of your data object.
