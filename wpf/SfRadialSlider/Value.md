@@ -9,7 +9,7 @@ documentation: ug
 
 # Value
 
-Gets or sets the value of the Radial Slider. (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)). 
+Gets or sets the value of the Radial Slider.
 
 
 {% highlight html %}
