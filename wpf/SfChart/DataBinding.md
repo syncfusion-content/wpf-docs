@@ -291,4 +291,5 @@ private void CreateChart()
 
 {% endtabs %}
 
-
+### Listening Biniding Property Changes
+When underlying data object implements INotifyPropertyChanged, you need to enable the ListenPropertyChange property of the series, to make the chart listen to the property changes of your data object.
