@@ -10,7 +10,7 @@ documentation: ug
 
 # Minimum
 
-Gets or sets the minimum possible value. (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)). 
+Gets or sets the minimum possible value.
 
 
 {% highlight html %}
