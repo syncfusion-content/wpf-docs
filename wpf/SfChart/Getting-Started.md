@@ -181,21 +181,33 @@ Create a collection property in MainWindow class as below:
 Add the values to this Demands property, with the values illustrated in the above table.
 
 {% highlight C# %}
+ 
+ InitializeComponent();
 
-InitializeComponent();
-
-this.Demands = new ObservableCollection<GoldDemand> 
-{ 
-      new GoldDemand() 
-      { 
-        Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2 }, 
-        new GoldDemand() { Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0 }, 
-        new GoldDemand() { Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0 }, 
-        new GoldDemand() { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 }, 
-        new GoldDemand() { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 }
-      } 
-};
-
+ this.Demands = new ObservableCollection<GoldDemand> 
+ {    
+     new GoldDemand() 
+     { 
+         Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2 
+     }, 
+     new GoldDemand() 
+     { 
+         Demand = "Electronics",Year2010 = 1284.0, Year2011 = 1328.0 
+     },
+     new GoldDemand() 
+     {
+         Demand = "Research",Year2010 = 1090.5, Year2011 = 1032.0 
+     }, 
+     new GoldDemand() 
+     { 
+         Demand = "Investment",Year2010 = 1643.0, Year2011 = 1898.0 
+     }, 
+     new GoldDemand() 
+     { 
+         Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 
+     } 
+ };  
+      
 {% endhighlight %}
 
 
@@ -224,7 +236,7 @@ Here you specify “Demands Comparison” as header in the below code example.
 
     <Grid>
 
-        <syncfusion:SfChart Header="Demands Comparison" Height="300" Width="400">
+        <syncfusion:SfChart Header="Demands Comparison" Height="300" Width="500">
                         
         </syncfusion:SfChart>
 
