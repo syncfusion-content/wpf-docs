@@ -291,4 +291,54 @@ private void CreateChart()
 
 {% endtabs %}
 
+### Listening Property Changes
+
+You can notify the [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html#) and [`YBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XYDataSeries~YBindingPath.html#) properties changes by setting [`ListenPropertyChange`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html#) as true as shown in the below code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ScatterSeries ScatterWidth="20" ScatterHeight="20"  Label="Coal" ListenPropertyChange="True"
+
+ItemsSource="{Binding EnergyProductions}" Interior="#BCBCBC"
+
+XBindingPath="ID" YBindingPath="Coal">
+
+</chart:ScatterSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    ScatterWidth = 20,
+
+    ScatterHeight = 20,
+
+    Label ="Coal",
+
+    ListenPropertyChange=true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Also, When enabling this property to the series you need to implements INotifyPropertyChanged to the underlying data object to make the chart listen to the property changes of your data object.
+
+N> By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
 
