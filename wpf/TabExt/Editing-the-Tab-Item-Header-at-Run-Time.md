@@ -37,12 +37,12 @@ You can edit the header of the Tab Item at run time by enabling the EnableLabelE
 
 {% seealso %}
 
-Editing the Tab Item Header at Run Time
+[Editing the Tab Item Header at Run Time] (https://help.syncfusion.com/wpf/tabext/editing-the-tab-item-header-at-run-time)
 
-Tab Item Header Image
+[Tab Item Header Image] (https://help.syncfusion.com/wpf/tabext/tab-item-header#header-image)
 
-Tab Item Header Image Alignment
+[Tab Item Header Image Alignment] (https://help.syncfusion.com/wpf/tabext/tab-item-header#image-alignment) 
 
-Context Menu for the Tab Item
+[Context Menu for the Tab Item] (https://help.syncfusion.com/wpf/tabext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item)
 
 {% endseealso %}
