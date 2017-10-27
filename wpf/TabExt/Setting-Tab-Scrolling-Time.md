@@ -97,9 +97,9 @@ stackPanel.Children.Add(tabControlExt);
 
 {% seealso %}
 
-Tab Scroll Style
+[Tab Scroll Style] (https://help.syncfusion.com/wpf/tabext/setting-scroll-style)
 
-Tab Scroll Button
+[Tab Scroll Button] (https://help.syncfusion.com/wpf/tabext/setting-tab-scroll-button)
 
 {% endseealso %}
 

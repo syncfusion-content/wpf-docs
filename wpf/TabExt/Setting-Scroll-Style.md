@@ -146,9 +146,9 @@ In the above example, the Tab Item Size Mode is set to "ShrinkToFit" when the Ta
 
 {% seealso %}
 
-Tab Scrolling Time
+[Tab Scrolling Time] (https://help.syncfusion.com/wpf/tabext/setting-tab-scrolling-time)
 
-Tab Scroll Button
+[Tab Scroll Button] (https://help.syncfusion.com/wpf/tabext/setting-tab-scroll-button)
 
 {% endseealso %}
 
