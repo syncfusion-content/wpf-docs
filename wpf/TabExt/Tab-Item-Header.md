@@ -91,13 +91,13 @@ stackPanel.Children.Add(tabControlExt);
 
 {% seealso %}
 
-[Editing the Tab Item Header at Run Time] (https://help.syncfusion.com/wpf/tabext/editing-the-tab-item-header-at-run-time)
+[Editing the Tab Item Header at Run Time](https://help.syncfusion.com/wpf/tabext/editing-the-tab-item-header-at-run-time)
 
-[Tab Item Header Image] (https://help.syncfusion.com/wpf/tabext/tab-item-header#header-image)
+[Tab Item Header Image](https://help.syncfusion.com/wpf/tabext/tab-item-header#header-image)
 
-[Tab Item Header Image Alignment] (https://help.syncfusion.com/wpf/tabext/tab-item-header#image-alignment) 
+[Tab Item Header Image Alignment](https://help.syncfusion.com/wpf/tabext/tab-item-header#image-alignment) 
 
-[Context Menu for the Tab Item] (https://help.syncfusion.com/wpf/tabext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item)
+[Context Menu for the Tab Item](https://help.syncfusion.com/wpf/tabext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item)
 
 
 {% endseealso %}
@@ -232,13 +232,13 @@ In the above example, when the ImageAlignment property is set to LeftOfText, the
 
 {% seealso %}
 
-[Editing the Tab Item Header at Run Time] (https://help.syncfusion.com/wpf/tabext/editing-the-tab-item-header-at-run-time)
+[Editing the Tab Item Header at Run Time](https://help.syncfusion.com/wpf/tabext/editing-the-tab-item-header-at-run-time)
 
-[Tab Item Header Image] (https://help.syncfusion.com/wpf/tabext/tab-item-header#header-image)
+[Tab Item Header Image](https://help.syncfusion.com/wpf/tabext/tab-item-header#header-image)
 
-[Tab Item Header Image Alignment] (https://help.syncfusion.com/wpf/tabext/tab-item-header#image-alignment) 
+[Tab Item Header Image Alignment](https://help.syncfusion.com/wpf/tabext/tab-item-header#image-alignment) 
 
-[Context Menu for the Tab Item] (https://help.syncfusion.com/wpf/tabext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item)
+[Context Menu for the Tab Item](https://help.syncfusion.com/wpf/tabext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item)
 
 
 {% endseealso %}

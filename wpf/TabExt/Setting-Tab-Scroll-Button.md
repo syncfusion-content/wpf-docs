@@ -101,9 +101,9 @@ stackPanel.Children.Add(tabControlExt);
 
 {% seealso %}
 
-[Tab Scroll Style] (https://help.syncfusion.com/wpf/tabext/setting-scroll-style)
+[Tab Scroll Style](https://help.syncfusion.com/wpf/tabext/setting-scroll-style)
 
-[Tab Scrolling Time] (https://help.syncfusion.com/wpf/tabext/setting-tab-scrolling-time)
+[Tab Scrolling Time](https://help.syncfusion.com/wpf/tabext/setting-tab-scrolling-time)
 
 {% endseealso %}
 
