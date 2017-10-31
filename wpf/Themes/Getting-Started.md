@@ -325,4 +325,33 @@ End Class
 
 {% endtabs %}
 
+## Clearing instance while using themes in application
 
+SfSkinManager will hold some instance to use it further while applying theme. But this can be cleared using the function named “Dispose(object)” which needs to be hooked in the place where you need to clear the theme applied from SfSkinManager as like below code. Here “object” refers to the element which instance needs to be cleared.
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+private void Window_Closed(object sender, EventArgs e) 
+{ 
+   SfSkinManager.Dispose(this); 
+} 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+
+Private Sub Window_Closed(sender As Object, e As EventArgs)
+	
+    SfSkinManager.Dispose(Me)
+
+End Sub
+
+
+{% endhighlight %}
+
+{% endtabs %}
