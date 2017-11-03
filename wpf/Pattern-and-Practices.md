@@ -12,6 +12,34 @@ documentation: ug
 
 Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with built-in commands. 
 
+DataContext property specifies the default source for Data Binding in MVVM pattern.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+     <Window.DataContext>
+        <local:ViewModel/>
+     </Window.DataContext> 
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            this.DataContext = new ViewModel();
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
 This section explains how to perform TabControlExt’s `selectionChanged` event, by create a ViewModel and define a Model collection that is used to bind with the TabControl’s `ItemSource` property.
 
 
