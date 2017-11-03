@@ -47,9 +47,9 @@ This section explains how to perform TabControlExt’s `selectionChanged` event,
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">
+<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">
 
-<syncfusion:TabControlExt.ItemTemplate>
+<Syncfusion:TabControlExt.ItemTemplate>
 
 <DataTemplate>
 
@@ -57,9 +57,9 @@ This section explains how to perform TabControlExt’s `selectionChanged` event,
 
 </DataTemplate>
 
-</syncfusion:TabControlExt.ItemTemplate>
+</Syncfusion:TabControlExt.ItemTemplate>
 
-</syncfusion:TabControlExt>
+</Syncfusion:TabControlExt>
 
 {% endhighlight %}
 
@@ -221,10 +221,10 @@ The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.T
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
-                          syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
+<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
+                          Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
 
-<syncfusion:TabControlExt.ItemTemplate>
+<Syncfusion:TabControlExt.ItemTemplate>
 
 <DataTemplate>
 
@@ -232,9 +232,9 @@ The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.T
 
 </DataTemplate>
 
-</syncfusion:TabControlExt.ItemTemplate>
+</Syncfusion:TabControlExt.ItemTemplate>
 
-</syncfusion:TabControlExt>
+</Syncfusion:TabControlExt>
 
 {% endhighlight %}
 
@@ -308,9 +308,9 @@ The following section covers usage of commands in code-behind with the help of V
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
-            syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
-			syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
+<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
+            Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
+			Syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
 
 {% endhighlight %}
 
@@ -349,9 +349,9 @@ Any property can bind with the `CommandParameter` to pass it as command in ViewM
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
-            syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
-			syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,
+<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
+            Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
+			Syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,
 			RelativeSource={RelativeSource Self}}">
 
 
