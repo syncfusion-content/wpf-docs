@@ -279,9 +279,9 @@ Add the values to this TraceData property, with the values illustrated in the ab
 {% endhighlight %}
 
 
-### Initialize the chart 
+### Initialize the smith chart 
 
-You need to initialize the chart represented by the following class Syncfusion.UI.Xaml.SfSmithChart.
+You need to initialize the smith chart represented by the following class Syncfusion.UI.Xaml.SfSmithChart.
 
 {% highlight xaml %}
 
@@ -296,7 +296,7 @@ You need to initialize the chart represented by the following class Syncfusion.U
 
 ### Add header to smith chart
 
-The header of the smith chart acts as the title, to identify the purpose of the chart. 
+The header of the smith chart acts as the title, to identify the purpose of the smith chart. 
 
 Here you specify “Impedance Transmission” as header in the below code example.
 
@@ -357,9 +357,9 @@ After you have added the series, you need to add ItemSource, ResistancePath and 
 {% endhighlight %}
 
 
-### Add legends to the chart
+### Add legends to the smith chart
 
-The following code example illustrates the syntax to add the [`legends`]() in chart. 
+The following code example illustrates the syntax to add the [`legends`]() in smith chart. 
 
 {% highlight xaml %}
 
@@ -370,7 +370,9 @@ The following code example illustrates the syntax to add the [`legends`]() in ch
 
 {% endhighlight %}
 
-Now you have prepared a SmithChart demonstrating the studies related to Transmission Line of Impedance. The following code example gives you the complete code for creating a chart.
+Now you have prepared a SmithChart demonstrating the studies related to Transmission Line of Impedance. 
+
+The following code example gives you the complete code for creating a smith chart.
 
 {% tabs %}
 
@@ -440,7 +442,7 @@ Now you have prepared a SmithChart demonstrating the studies related to Transmis
 {% endtabs %}
     
     
-The following chart is created as a result of the above codes.
+The following smith chart is created as a result of the above codes.
 
 ![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
@@ -501,9 +503,9 @@ SfSmithChart chart = new SfSmithChart();
 
 ![SmithChart with default axes](Getting-Started_images/Getting-Started_img5.png)
 
-### Adding header to the chart
+### Adding header to the smith chart
 
-The header acts as the title for the SmithChart you created, to identify the purpose of the chart.
+The header acts as the title for the SmithChart you created, to identify the purpose of the smith chart.
 
 {% highlight c# %}
 
@@ -518,12 +520,12 @@ The following code example illustrates how to customize the resistance (Horizont
 
 {% highlight c# %}
 
-    //Customizing horizontal(Resistance) axis to the chart 
+    //Customizing horizontal(Resistance) axis to the smith chart 
     chart.HorizontalAxis = new HorizontalAxis();
     chart.HorizontalAxis.FontSize = 11;
 	chart.HorizontalAxis.FontFamily = new FontFamily("Segoe UI");
 
-    //Customizing radial(Reactance) axis to the chart 
+    //Customizing radial(Reactance) axis to the smith chart 
     chart.RadialAxis = new RadialAxis();
     chart.RadialAxis.FontSize = 11;
 	chart.RadialAxis.FontFamily = new FontFamily("Segoe UI");
@@ -577,9 +579,9 @@ The following code examples demonstrates how to add [`legends`]() to your smith 
 
 {% endhighlight  %}
 
-Now you have prepared a Chart demonstrating the studies related to Gold demands in World market. 
+Now you have prepared a SmithChart demonstrating the studies related to Transmission Line of Impedance. 
 
-The following code example gives you the complete code for creating a chart.
+The following code example gives you the complete code for creating a smith chart.
 
 {% highlight c# %}
 
@@ -587,12 +589,12 @@ The following code example gives you the complete code for creating a chart.
 
         chart.Header = "Impedance Transmission";
         
-        //Customizing horizontal(Resistance) axis to the chart 
+        //Customizing horizontal(Resistance) axis to the smith chart 
         chart.HorizontalAxis = new HorizontalAxis();
         chart.HorizontalAxis.FontSize = 11;
         chart.HorizontalAxis.FontFamily = new FontFamily("Segoe UI");
 
-        //Customizing radial(Reactance) axis to the chart 
+        //Customizing radial(Reactance) axis to the smith chart 
         chart.RadialAxis = new RadialAxis();
         chart.RadialAxis.FontSize = 11;
         chart.RadialAxis.FontFamily = new FontFamily("Segoe UI");
@@ -640,7 +642,7 @@ The following code illustrates how to change the rendering type of smith chart f
 {% highlight xaml %}
 
      chart.Header = "Admittance Transmission";
-	 //Change the impedance chart to admittance Chart
+	 //Change the impedance chart to admittance chart
      chart.RenderingType = RenderingType.Admittance;
 
 {% endhighlight %}
