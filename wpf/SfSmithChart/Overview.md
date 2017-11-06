@@ -17,7 +17,7 @@ SfSmithChart provides a perfect way to visualize data with a high level of user 
 
 ## Key features
 
-* SfSmithChart supports line type [series](http://help.syncfusion.com/wpf/sfsmithchart/series).
+* SfSmithChart supports line type [series]().
 * Capable of rendering large amount of data within the few milliseconds (ms). 
 * Allows you to map data from the specified path, by achieving [data binding]() concept.
 * When you need more information about particular segment in a chart, a little mouse over on the series provides much more information by including [tooltip]() behavior.

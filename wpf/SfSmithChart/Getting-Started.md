@@ -32,8 +32,6 @@ These steps are explained below for both XAML and code behind.
 
 ![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/Getting-Started_img1.png)
 
-N> This window differs for the Visual Basic project.
-
 T> Select the .NET Framework version respective to your application. The version can be identified as below:
 <table>
 <tr>
@@ -76,7 +74,7 @@ Now the Syncfusion.SfSmithChart.WPF reference is added to the application refere
 ![Project Solution Window contains SfSmithChart reference](Getting-Started_images/Getting-Started_img3.png)
 
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfSmithChart.WPF" in MainWindow](Getting-Started_images/Getting-Started_img4.png)
+![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusion.SfSmithChart.WPF" in MainWindow](Getting-Started_images/Getting-Started_img4.png)
 
 
 In this section, the data in the following table is used for demonstration.
