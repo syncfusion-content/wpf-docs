@@ -445,34 +445,6 @@ The following smith chart is created as a result of the above codes.
 ![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
 
-## RenderingType
-
-SfSmithChart plotting the transmission line in two different way using RenderingType property. That two types are given below here.
-
-### Impedance
-
-In impedance smith chart, normalized resistance circles and normalized reactance curves are drawn from right to left.  Axis label ranges are start from left to right.
-
-### Admittance
-
-In Admittance smith chart, normalized resistance circles and normalized reactance curves are drawn from left to right.  Axis label ranges are start from right to left.
-
-Impedance is the default rendering type of SmithChart.
-
-The following code illustrates how to change the rendering type of smith chart from impedance to admittance.
-
-{% highlight xaml %}
-
-     <syncfusion:SfSmithChart RenderingType="Admittance">
-	    <!--Initialize series, legend and axis here-->
-     </syncfusion:SfSmithChart>
-
-{% endhighlight %}
-
-The following smith chart is created as a result of the above codes.
-
-![Admittance SmithChart](Getting-Started_images/Getting-Started_img8.png)
-
 ## Create a simple smith chart from code behind (C#)
 
 Some developers prefer code behind as the first approach for development, to create things dynamically. This section helps you create to SfSmithChart from code behind.
@@ -620,34 +592,6 @@ The following code example gives you the complete code for creating a smith char
 The following output is displayed as a result of the above code example.
 
 ![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
-
-## RenderingType
-
-SfSmithChart plotting the transmission line in two different way using RenderingType property. That two types are given below here.
-
-### Impedance
-
-In impedance smith chart, normalized resistance circles and normalized reactance curves are drawn from right to left.  Axis label ranges are start from left to right.
-
-### Admittance
-
-In Admittance smith chart, normalized resistance circles and normalized reactance curves are drawn from left to right.  Axis label ranges are start from right to left.
-
-Impedance is the default rendering type of SmithChart.
-
-The following code illustrates how to change the rendering type of smith chart from impedance to admittance.
-
-{% highlight xaml %}
-
-     chart.Header = "Admittance Transmission";
-	 //Change the impedance chart to admittance chart
-     chart.RenderingType = RenderingType.Admittance;
-
-{% endhighlight %}
-
-The following smith chart is created as a result of the above codes.
-
-![Admittance SmithChart](Getting-Started_images/Getting-Started_img8.png)
 
 
 
