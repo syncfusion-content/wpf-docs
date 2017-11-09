@@ -1070,6 +1070,99 @@ chart.PrimaryAxis = new NumericalAxis()
 ![](Axis_images/Axis_img25.jpeg)
 
 
+**Axis Label Border**
+
+[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis#axis-labels) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`] property of axis and it can be set as shown in the below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis ShowLabelBorder="True"/>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+</syncfusion:NumericalAxis ShowLabelBorder="True"  />       
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+            
+{
+     ShowLabelBorder = true,                
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+    ShowLabelBorder = true
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label1.png)
+
+The border color and width can be customized with [`LabelBorderBrush`] and [`LabelBorderWidth`] properties of chart axis and it can be set as shown in the below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis LabelBorderWidth="3" ShowLabelBorder="True" LabelBorderBrush="Red"/>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+</syncfusion:NumericalAxis ShowLabelBorder="True"  LabelBorderWidth="3" LabelBorderBrush="Red"/>       
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+            
+{
+    ShowLabelBorder = true,  
+
+    LabelBorderWidth = 3,
+
+    LabelBorderBrush = new SolidColorBrush(Colors.Red)
+           
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+       ShowLabelBorder = true,
+
+       LabelBorderWidth = 3,
+
+       LabelBorderBrush = new SolidColorBrush(Colors.Red),
+               
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label2.png)
+
+
 ## Grid lines
 
 By default, gridlines are automatically added to the [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) in its defined intervals. SfChart supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html#) property.
@@ -2845,8 +2938,1484 @@ chart.Series.Add(series2);
 
 ![](Axis_images/Axis_img72.jpeg)
 
-
 In the above image, the LineSeries is plotted based on additional X & Y axis and ColumnSeries (or remaining series) is plotted against the primary and secondary axis.
+
+
+##Multi-level Labels
+
+[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`] property. These labels are placed based on the provided [`Start`] and [`End`] range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5" Text="Quarter 1" />
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+     ShowLabelBorder = true,
+            
+};
+            
+ChartMultiLevelLabel label = new ChartMultiLevelLabel()
+           
+{
+ 
+       Start = -0.5,
+
+       End = 2.5,
+
+       Text = "Quarter 1"
+
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label3.png)
+
+**Regarding** **Start** **and** **End** **Property**
+
+[`Start`] and [`End`] properties of [`ChartMultiLevelLabel`] are type of objects, we can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table,
+
+<table>
+<tr>
+<th>S.No</th>
+<th>Axis Type</th>
+<th>Start/End value</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>1</td>
+<td>CategoryAxis</td>
+<td>Index-Based</td>
+<td>Start=0(zeroth index position) End = 1(first index position)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DateTimeCategoryAxis</td>
+<td>Index-Based</td>
+<td>Start = 0(zeroth index position) End = 1(first index position)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>NumericalAxis</td>
+<td>Value-Based</td>
+<td>Start= 5( Value) End= 10( Value)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>LogarthimicAxis</td>
+<td>Value-Based</td>
+<td>Start= 10(Value) End= 1000(Value)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>DateTimeAxis</td>
+<td>Value-Based</td>
+<td>Start = "2017/01/01" End="2017/01/02"</td>
+</tr>
+<tr>
+<td>6</td>
+<td>TimeSpanAxis</td>
+<td>Value-Based</td>
+<td>Start = "00:00:01" End="00:00:05"</td>
+</tr>
+</table>
+
+
+**Customizing** **multi-level** **labels**
+
+**Border** **Customization**
+
+[`ChartMultiLevelLabel's`] border width and color can be customized with [`LabelBorderWidth`] and [`LabelBorderBrush`] properties of chart axis.It can be set as shown in the below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  LabelBorderBrush="Red" LabelBorderWidth="3"  ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5" Text="Quarter 1"  />
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+    LabelBorderWidth = 3,
+
+    ShowLabelBorder = true,
+
+    LabelBorderBrush = new SolidColorBrush(Colors.Red),
+            
+};
+            
+ChartMultiLevelLabel label = new ChartMultiLevelLabel()
+           
+{
+ 
+       Start = -0.5,
+
+       End = 2.5,
+
+       Text = "Quarter 1",
+
+       BorderWidth = 4
+
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label4.png)
+
+
+**Border** **Type**
+
+[`Chart Axis`]((https://help.syncfusion.com/wpf/sfchart/axis)) provides support to various types of border for [`ChartMultiLevelLabels`] and it can be applied by using its [`MultiLevelLabelsBorderType`] property.The default [`MultiLevelLabelsBorderType`] is [`Rectangle`]. The another supported border types are [`Brace`],[`None`] and [`WithoutTopAndBottomBorder`].
+
+**Rectangle**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1" />
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"/>
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"/>
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4"/>
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis  ShowLabelBorder="True">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low"/>
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium"/>
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High"/>
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+     ShowLabelBorder = true,          
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1",
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+      ShowLabelBorder = true,
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low"
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label5.png)
+
+
+**Brace**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis MultiLevelLabelsBorderType="Brace" ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1"  />
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"  />
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"  />
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4" />
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis MultiLevelLabelsBorderType="Brace" ShowLabelBorder="True">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low" />
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium"/>
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High" />
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+   ShowLabelBorder = true,
+  
+   MultiLevelLabelsBorderType = BorderType.Brace
+            
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1",
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2",
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3",
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4",
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+   ShowLabelBorder = true,
+
+   MultiLevelLabelsBorderType = BorderType.Brace
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low",
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium",
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High",
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label6.png)
+
+**None**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis  MultiLevelLabelsBorderType="None" ShowLabelBorder="True">
+
+<chart:CategoryAxis>
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1" />
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2" />
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3" />
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4" />
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis MultiLevelLabelsBorderType="None" ShowLabelBorder="True">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low" />
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium" />
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High" />
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+    ShowLabelBorder = true,          
+
+    MultiLevelLabelsBorderType = BorderType.None
+            
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3"
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+    
+    ShowLabelBorder = true,          
+
+    MultiLevelLabelsBorderType = BorderType.None
+
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low"
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label7.png)
+
+**WithoutTopAndBottomBorder**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis   ShowLabelBorder="True" MultiLevelLabelsBorderType="WithoutTopAndBottomBorder">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1"/>
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2" />
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3" />
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4" />
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis  ShowLabelBorder="True" MultiLevelLabelsBorderType="WithoutTopAndBottomBorder">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low" />
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium"/>
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High"/>
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+   ShowLabelBorder = true,
+
+   MultiLevelLabelsBorderType = BorderType.WithoutTopAndBottomBorder
+            
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1",
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2",
+           
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3",
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4",
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+    
+    ShowLabelBorder = true,
+
+   MultiLevelLabelsBorderType = BorderType.WithoutTopAndBottomBorder
+
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low",
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium",
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High",
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label8.png)
+
+
+**Text** **Customization**
+
+[`ChartMultiLevelLabel's`] text can be customized with its [`FontSize`], [`FontFamily`] and [`Foreground`] property and it is shown in below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="11.5" FontFamily="Algerian" Foreground="Blue" FontSize="14" Text="Year - 2016"/>
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+      ShowLabelBorder = true,            
+};
+            
+ChartMultiLevelLabel label = new ChartMultiLevelLabel()
+           
+{
+ 
+    Start = -0.5,
+                
+    End = 11.5,
+                
+    Text = "Year - 2016",
+                
+    Foreground = new SolidColorBrush(Colors.Blue),
+                
+    FontSize = 14,
+                
+    FontFamily = new FontFamily("Algerian")
+
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label9.png)
+
+
+**Label** **Alignment**
+
+The text of [`ChartMultiLevelLabel`] can be aligned with its [`LabelAlignment`] property. The default value of [`LabelAlignment`] property is Center.
+
+**Center**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1" />
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"/>
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"/>
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4"/>
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis ShowLabelBorder="True">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low"/>
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium"/>
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High"/>
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+     ShowLabelBorder = true,                       
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1",
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4"
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+      ShowLabelBorder = true,            
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low"
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label13.png)
+
+
+**Near**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1"   LabelAlignment="Near" />
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"  LabelAlignment="Near"/>
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"  LabelAlignment="Near"/>
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4"  LabelAlignment="Near"/>
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis ShowLabelBorder="True">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low"  LabelAlignment="Near"/>
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium"  LabelAlignment="Near"/>
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High"  LabelAlignment="Near"/>
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+    ShowLabelBorder = true,                       
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1",
+    
+     LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2",
+
+    LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3",
+
+    LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4",
+
+     LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{   
+    ShowLabelBorder = true,            
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low",
+
+     LabelAlignment = LabelAlignment.Near
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium",
+
+    LabelAlignment = LabelAlignment.Near
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High",
+
+     LabelAlignment = LabelAlignment.Near
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label10.png)
+
+
+**Far**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  ShowLabelBorder="True">
+
+<chart:CategoryAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="-0.5" End="2.5"  Text="Quarter 1"   LabelAlignment="Far" />
+
+<chart:ChartMultiLevelLabel Start="2.5" End="5.5" Text="Quarter 2"  LabelAlignment="Far"/>
+
+<chart:ChartMultiLevelLabel Start="5.5" End="8.5" Text="Quarter 3"  LabelAlignment="Far"/>
+
+<chart:ChartMultiLevelLabel Start="8.5" End="11.5" Text="Quarter 4"  LabelAlignment="Far"/>
+
+</chart:CategoryAxis.MultiLevelLabels>
+
+</chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis  ShowLabelBorder="True">
+                    
+<chart:NumericalAxis.MultiLevelLabels>
+                    
+<chart:ChartMultiLevelLabel Start="32" End="36"  Text="Low"  LabelAlignment="Far"/>
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium"  LabelAlignment="Far"/>
+
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High" LabelAlignment="Far"/>
+                    
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis =  new CategoryAxis()
+            
+{
+      ShowLabelBorder = true,          
+};
+
+ChartMultiLevelLabel label1 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = -0.5,
+
+     End = 2.5,
+
+     Text = "Quarter 1",
+    
+     LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label1);
+
+ChartMultiLevelLabel label2 = new ChartMultiLevelLabel()
+           
+{
+    
+    Start = 2.5,
+                
+    End = 5.5,
+                
+    Text = "Quarter 2",
+
+    LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label2);
+
+ChartMultiLevelLabel label3 = new ChartMultiLevelLabel()
+
+{
+     
+    Start = 5.5,
+                
+    End = 8.5,
+                
+    Text = "Quarter 3",
+
+    LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label3);
+
+ChartMultiLevelLabel label4 = new ChartMultiLevelLabel()
+
+{
+     Start = 8.5,
+               
+     End = 11.5,
+                
+     Text = "Quarter 4",
+
+     LabelAlignment = LabelAlignment.Near
+            
+};
+
+chart.PrimaryAxis.MultiLevelLabels.Add(label4);
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+      ShowLabelBorder = true,          
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+     Start = 32,
+                
+     End = 36,
+     
+     Text = "Low",
+
+     LabelAlignment = LabelAlignment.Near
+            
+};
+            
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+            
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+    Start = 36,
+                
+    End = 42,
+    
+    Text = "Medium",
+
+    LabelAlignment = LabelAlignment.Near
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+     Start = 42,
+     
+     End = 48,
+    
+     Text = "High",
+
+     LabelAlignment = LabelAlignment.Near
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label11.png)
+
+The text of [`ChartMultiLavelLabel`] text will automatically trim, when the text width exceeds the width of [`ChartMultiLevelLabel`] and it is shown below,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis ShowLabelBorder="True">
+
+<chart:NumericalAxis.MultiLevelLabels>
+
+<chart:ChartMultiLevelLabel Start="32" End="36" Text="Low Temperature"/>
+
+<chart:ChartMultiLevelLabel Start="36" End="42" Text="Medium Temperature"/>
+                        
+<chart:ChartMultiLevelLabel Start="42" End="48" Text="High Temperature"/>
+
+</chart:NumericalAxis.MultiLevelLabels>
+
+</chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis()
+            
+{
+     ShowLabelBorder = true,          
+};
+
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
+            
+{
+                
+        Start = 32,
+        
+        End = 36,
+        
+        Text = "Low Temperature"
+};
+
+chart.SecondaryAxis.MultiLevelLabels.Add(label5);
+
+ChartMultiLevelLabel label6 = new ChartMultiLevelLabel()
+
+{
+        Start = 36,
+                
+        End = 42,
+        
+        Text = "Medium Temperature"
+            
+};
+    
+chart.SecondaryAxis.MultiLevelLabels.Add(label6);
+
+ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
+
+{
+                
+       Start = 42,
+               
+       End = 48,
+       
+       Text = "High Temperature"
+ 
+ };
+
+ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/label12.png)
+
 
 ## Events
 
