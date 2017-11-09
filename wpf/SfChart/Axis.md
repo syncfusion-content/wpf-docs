@@ -1072,7 +1072,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Axis Label Border**
 
-[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis#axis-labels) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`] property of axis and it can be set as shown in the below code snippet,
+[`ChartAxis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`] property of axis and it can be set as shown in the below code snippet,
 
 {% tabs %}
 
