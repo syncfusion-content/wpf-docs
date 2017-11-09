@@ -3025,7 +3025,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 </tr>
 <tr>
 <td>4</td>
-<td>LogarthimicAxis</td>
+<td>LogarithmicAxis</td>
 <td>Value-Based</td>
 <td>Start= 10(Value) End= 1000(Value)</td>
 </tr>
