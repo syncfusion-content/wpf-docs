@@ -238,7 +238,6 @@ Create a collection property in MainWindow class as below:
     {
         public MainWindow()
         {
-		    this.DataContext = this;
             InitializeComponent();
         }
 
@@ -484,7 +483,7 @@ chart.Header = "Impedance Transmission";
 {% endhighlight  %}
 
 
-### Adding Axes
+### Customizing Axes
 
 The following code example illustrates how to customize the resistance (Horizontal) and reactance (Radial) axis to the SfSmithChart.
 
@@ -515,9 +514,6 @@ You need to initialize the series for representing the **Transmission Data**.
 LineSeries series = new LineSeries();
 
 {% endhighlight  %}
-
-
-T> The graph selection depends on the user scenario and the nature of the data. For example, consider the case where a user is developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
 
 After you have added the series, you need to add ItemSource, ResistancePath and ReactancePath APIs, to populate your data in the smith chart.
 
