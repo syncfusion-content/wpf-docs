@@ -13,12 +13,12 @@ This section explains the steps required to build the application with SfSmithCh
 
 ## Steps
 
-* Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
-* Add the SfSmithChart assembly to your application. 
-* Initialize smith chart control.
-* Add header to the smith chart control.
-* Add series to the smith chart control.
-* Add legends for the series.
+1. Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+2. Add the SfSmithChart assembly to your application. 
+3. Initialize smith chart control.
+4. Add header to the smith chart control.
+5. Add series to the smith chart control.
+6. Add legends for the series.
    
 These steps are explained below in both XAML and code behind.
 
@@ -451,9 +451,9 @@ Some developers prefer code behind as the first approach for development to crea
 
 ### Adding assembly reference
 
-* Open the Add Reference window in your project.
-* Choose Windows > Extensions >Syncfusion.SfSmithChart.WPF
-* Add the following namespace in your C# file, MainWindow.xaml.cs.
+1. Open the Add Reference window in your project.
+2. Choose Windows > Extensions >Syncfusion.SfSmithChart.WPF
+3. Add the following namespace in your C# file, MainWindow.xaml.cs.
 
 
 {% highlight c# %}
