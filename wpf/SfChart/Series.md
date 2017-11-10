@@ -1221,6 +1221,7 @@ The Radar and Polar charts having the following properties in common:
 
 * [`IsClosed`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~IsClosed.html#)
 * [`DrawType`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~DrawType.html# )
+* `PolarAngle`
 
 ### IsClosed
 
@@ -1366,6 +1367,198 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![](Series_images/drawtype_line.png)
+
+###PolarAngle
+
+[`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achievied by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported value of `PolarAngle`.Both the primary and secondary axes can be rotated individualy based on its `PolarAngle` value.
+
+**Rotate0**
+
+The below snippet explains how the axes of series has been rotated when `PolarAngle` value is `Rotate0`,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  PolarAngle="Rotate0"/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis PolarAngle="Rotate0"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ chart.PrimaryAxis = new CategoryAxis()
+
+ {
+
+    PolarAngle = ChartPolarAngle.Rotate0
+
+ };
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+
+    PolarAngle = ChartPolarAngle.Rotate0
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/Rotate0.png)
+
+
+**Rotate90**
+
+The below snippet explains how the axes of series has been rotated when `PolarAngle` value is `Rotate90`,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  PolarAngle="Rotate90"/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis PolarAngle="Rotate90"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ chart.PrimaryAxis = new CategoryAxis()
+
+ {
+
+    PolarAngle = ChartPolarAngle.Rotate90
+
+ };
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+
+    PolarAngle = ChartPolarAngle.Rotate90
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/Rotate90.png)
+
+
+**Rotate180**
+
+The below snippet explains how the axes of series has been rotated when `PolarAngle` value is `Rotate180`,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  PolarAngle="Rotate180"/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis PolarAngle="Rotate180"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ chart.PrimaryAxis = new CategoryAxis()
+
+ {
+
+    PolarAngle = ChartPolarAngle.Rotate180
+
+ };
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+
+    PolarAngle = ChartPolarAngle.Rotate180
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/Rotate180.png)
+
+
+**Rotate270**
+
+The below snippet explains how the axes of series has been rotated, when `PolarAngle` value is `Rotate270`,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+<chart:CategoryAxis  PolarAngle="Rotate270"/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis PolarAngle="Rotate270"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ chart.PrimaryAxis = new CategoryAxis()
+
+ {
+
+    PolarAngle = ChartPolarAngle.Rotate270
+
+ };
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+
+    PolarAngle = ChartPolarAngle.Rotate270
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/Rotate270.png)
+
 
 ## Financial Charts
 
