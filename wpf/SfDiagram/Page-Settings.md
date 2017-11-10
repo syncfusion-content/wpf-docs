@@ -73,3 +73,44 @@ diagram.PageSettings.ShowPageBreaks = true;
 diagram.PageSettings.MultiplePage = true;
 
 {% endhighlight %}
+
+## Origin customization of Page
+
+By default, Origin of the Page will be (0,0). Now, We have provided virtual and public methods to customize the Origin of the Page based on Pixels and PageSize (`PageWidth` and `PageHeight`).
+Let us explain the API for this customization.
+
+We have provided `AdjustPageOrigin` virtual method in PageSettings class and It's Info have `Trim` and `Truncate` methods for customization.
+
+<table>
+  <tr>
+<td>
+Trim()
+</td>
+<td>
+This method will be customized the Origin in Pixel.
+</td>
+</tr>
+<tr>
+<td>
+Truncate()
+</td>
+<td>
+This method will be customized the Origin based the Size of the Page. 
+</td>
+</tr>
+  </table>
+
+{% highlight C# %}
+
+//Need to create a custom class which should be derived from PageSetting class.
+public class PageCustomClass : PageSettings
+    {
+        public override void AdjustPageOrigin()
+        {
+            Info.Trim();
+        }
+    }
+    
+{% endhighlight %}
+
+>N This customization will play role in reducing the number of pages in printing.
