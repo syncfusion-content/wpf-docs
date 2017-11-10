@@ -69,6 +69,28 @@ engine.AddFunction("CheckMin", new LibraryFunction(CustomMin));
 {% endhighlight %}
 {% endtabs %}
 
+### Compute the Custom Function
+
+To compute the custom formula, you need to pass the registered custom formula in `PareAndComputeFormula` method of `CalcEngine`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Set value 100 to variable "A1"
+calcData.SetValueRowCol(100, 1, 1);
+
+//Set value 200 to variable "B1"
+calcData.SetValueRowCol(200, 1, 2);
+
+//Set value 300 to variable "C1"
+calcData.SetValueRowCol(300, 1, 2);
+
+//compute the registered method using CalcEngine.
+var r = engine.ParseAndComputeFormula("=CustomMin(A1,B1,C1)");
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Remove Custom Function
 
 To remove a single function from the Function Library, use [RemoveFunction](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RemoveFunction.html) method of `CalcEngine`, passing a formula name as the string that references this function and to remove all functions, you can clear the hash table that holds them by using the `Clear` method of `LibraryFunction`.
