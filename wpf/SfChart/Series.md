@@ -1370,7 +1370,7 @@ chart.Series.Add(series);
 
 ###PolarAngle
 
-[`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achievied by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported value of `PolarAngle`.Both the primary and secondary axes can be rotated individualy based on its `PolarAngle` value.
+[`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported value of `PolarAngle`.Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
 
 **Rotate0**
 
