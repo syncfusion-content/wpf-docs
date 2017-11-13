@@ -9,7 +9,7 @@ documentation: ug
 
 # Maximum 
 
-Gets or sets the maximum possible value of the range. (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)). 
+Gets or sets the maximum possible value of the range.
 
 {%highlight xaml%}
 

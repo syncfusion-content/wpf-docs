@@ -106,6 +106,10 @@ By default, DockingManager cannot de-serialize its Saved Layout properly, when i
 
 Since the DockingManager state persistence feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 
+### Notification for load DockState
+
+When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of `LoadDockState` method. When the child count is same and then DockingManager checks the Name of the child in the collection, if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, false value will be returned by the `LoadDockState` method of DockingManager.
+
 ## Various formats to Save / Load states
 
 DockingManager allows to save and load the DockStates of windows in DockingManager in different format.

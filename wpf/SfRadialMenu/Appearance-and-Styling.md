@@ -79,6 +79,30 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
+##RimInactiveBrush
+
+`RimInactiveBrush` property used to fill the expander rim item background when the corresponding menu item doesn’t have sub items.
+
+{%highlight xaml%}
+
+      <syncfusion:SfRadialMenu >
+            <syncfusion:SfRadialMenuItem Header="Item 1" RimActiveBrush="SlateBlue" RimInactiveBrush="Red"/>
+            <syncfusion:SfRadialMenuItem Header="Item 2" RimActiveBrush="Green">
+                <syncfusion:SfRadialMenuItem Header="Item 21" />
+            </syncfusion:SfRadialMenuItem>
+            <syncfusion:SfRadialMenuItem Header="Item 3" RimActiveBrush="Yellow">
+                <syncfusion:SfRadialMenuItem Header="Item 31"/>
+            </syncfusion:SfRadialMenuItem>
+            <syncfusion:SfRadialMenuItem Header="Item 4" RimActiveBrush="Orange">
+                <syncfusion:SfRadialMenuItem Header="Item 41"/>
+            </syncfusion:SfRadialMenuItem >
+            <syncfusion:SfRadialMenuItem   Header="Item 5" IsExpanderVisible="False" RimActiveBrush="Black" RimInactiveBrush="GreenYellow" />
+        </syncfusion:SfRadialMenu>
+
+
+{%endhighlight%}
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 ## RimHoverBrush
 
@@ -97,7 +121,33 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
+## IsExpanderVisible
 
+Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `IsExpanderVisible` property of `SfRadialMenuItem`. By default, `IsExpanderVisible` value is True.
+
+{%highlight xaml%}
+
+      <syncfusion:SfRadialMenu >
+        <syncfusion:SfRadialMenuItem Header="Item 1" RimActiveBrush="SlateBlue">      
+          <syncfusion:SfRadialMenuItem Header="Item 21"/>
+            </syncfusion:SfRadialMenuItem>
+            <syncfusion:SfRadialMenuItem Header="Item 2" RimActiveBrush="Green"  >
+                <syncfusion:SfRadialMenuItem Header="Item 21" />
+            </syncfusion:SfRadialMenuItem>
+            <syncfusion:SfRadialMenuItem Header="Item 3" RimActiveBrush="Yellow">
+                <syncfusion:SfRadialMenuItem Header="Item 31"/>
+            </syncfusion:SfRadialMenuItem>
+            <syncfusion:SfRadialMenuItem Header="Item 4" RimActiveBrush="Orange">
+                <syncfusion:SfRadialMenuItem Header="Item 41"/>
+            </syncfusion:SfRadialMenuItem >
+            <syncfusion:SfRadialMenuItem   Header="Item 5" IsExpanderVisible="False" RimActiveBrush="Black" >
+                <syncfusion:SfRadialMenuItem Header="Item 41"/>
+            </syncfusion:SfRadialMenuItem>
+        </syncfusion:SfRadialMenu>
+
+{%endhighlight%}
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 ## RimRadiusFactor
 
