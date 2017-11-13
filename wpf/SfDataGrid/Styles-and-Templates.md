@@ -1410,3 +1410,309 @@ void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArg
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img30.png)
 
+## Setting Visual Styles of SfDataGrid
+
+The appearance of the SfDataGrid control is customized by using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) property of `SfSkinManager`. Refer the following built in themes and its available assemblies.
+
+<table>
+<tr>
+<td>
+{{'**Style**'| markdownify }}
+</td>
+<td>
+{{'**Assemblies**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Metro
+</td>
+<td>
+Syncfusion.Themes.Metro.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Lime
+</td>
+<td>
+Syncfusion.Themes.Lime.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Saffron
+</td>
+<td>
+Syncfusion.Themes.Saffron.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Blend
+</td>
+<td>
+Syncfusion.Themes.Blend.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2013White
+</td>
+<td>
+Syncfusion.Themes.Office2013White.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2013LightGray
+</td>
+<td>
+Syncfusion.Themes.Office2013LightGray.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2013DarkGray
+</td>
+<td>
+Syncfusion.Themes.Office2013DarkGray.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+VisualStudio2013
+</td>
+<td>
+Syncfusion.Themes.VisualStudio2013.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2010Black
+</td>
+<td>
+Syncfusion.Themes.Office2010Black.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2010Blue
+</td>
+<td>
+Syncfusion.Themes.Office2010Blue.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2010Silver
+</td>
+<td>
+Syncfusion.Themes.Office2010Silver.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office365
+</td>
+<td>
+Syncfusion.Themes.Office365.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2016Colorful
+</td>
+<td>
+Syncfusion.Themes.Office2016Colorful.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2016White
+</td>
+<td>
+Syncfusion.Themes.Office2016White.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+Office2016DarkGray
+</td>
+<td>
+Syncfusion.Themes.Office2016DarkGray.Wpf.dll
+</td>
+</tr>
+<tr>
+<td>
+VisualStudio2015
+</td>
+<td>
+Syncfusion.Themes.VisualStudio2015.Wpf.dll
+</td>
+</tr>
+</table>
+
+### Apply Visual Style to SfDataGrid
+
+Any built-in themes can applied to the SfDataGrid by setting VisualStyle attached property of the SfSkinManager. In the below code example shows how to apply the theme for SfDatagrid control
+
+{% tabs %}
+{% highlight xaml %}
+
+	<syncfusion:SfDataGrid x:Name="dataGrid"
+							AddNewRowPosition="Top"
+							AllowFiltering="True"
+							sfSkin:SfSkinManager.VisualStyle="Office2016Colorful"
+							ItemsSource="{Binding OrdersDetails}"
+							NavigationMode="Cell"
+							ShowGroupDropArea="True"
+							HideEmptyGridViewDefinition="True"
+							ShowRowHeader="True" />
+						
+{% endhighlight %}
+{% highlight c# %}
+
+	SfSkinManager.SetVisualStyle(dataGrid, VisualStyles.Office2016Colorful);	
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img35.png)
+
+### Apply themes at run time
+
+To apply the built-in themes can be changed at runtime by VisualStyle property. Here, a ComboBox control is used to switch various built-in themes that are referred in the assembly references. 
+
+![](Styles-and-Templates_images/Styles-and-Templates_img33.png)
+
+{% tabs %}
+{% highlight xaml %}
+
+	<syncfusion:SfDataGrid x:Name="dataGrid"
+							AddNewRowPosition="Top"
+							AllowFiltering="True"
+							sfSkin:SfSkinManager.VisualStyle="Office2016Colorful"
+							ItemsSource="{Binding OrdersDetails}"
+							NavigationMode="Cell"
+							ShowGroupDropArea="True"
+							HideEmptyGridViewDefinition="True"
+							ShowRowHeader="True" />
+							
+	<StackPanel Margin="5">
+		<TextBlock Margin="5" FontSize="12" FontWeight="Bold" Text="Visual Styles:" />
+							
+		<ComboBox x:Name="StylesComboBox" ItemsSource="{Binding Path=ComboBoxItemsSource}" FocusVisualStyle="{x:Null}" 
+					SelectedIndex="1" Height="30" VerticalContentAlignment="Center" Margin="5">
+			<interactivity:Interaction.Triggers>
+				<interactivity:EventTrigger EventName="SelectionChanged">
+					<local:VisualThemesTriggerAction TargetName="dataGrid" />
+				</interactivity:EventTrigger>
+			</interactivity:Interaction.Triggers>
+		</ComboBox>
+	</StackPanel>
+
+{% endhighlight %}
+{% highlight c# %}
+
+	public class VisualThemesTriggerAction : TargetedTriggerAction<ComboBox>
+	{
+		SfDataGrid grid = (Application.Current.MainWindow as VisualStylesDemo.MainWindow).dataGrid;
+
+		/// <summary>
+		/// Invokes the specified parameter.
+		/// </summary>
+		/// <param name="parameter">The parameter.</param>
+		protected override void Invoke(object parameter)
+		{
+			var cb = this.AssociatedObject as ComboBox;
+			// Apply Visual Style based on the selected theme
+			switch (cb.SelectedItem.ToString())
+			{
+				case "Metro":
+					SfSkinManager.SetVisualStyle(grid, VisualStyles.Metro);
+					break;           
+				case "Office2016Colorful":
+					SfSkinManager.SetVisualStyle(grid, VisualStyles.Office2016Colorful);
+					break;
+				case "VisualStudio2015":
+					SfSkinManager.SetVisualStyle(grid, VisualStyles.VisualStudio2015);
+					break;
+				default:
+					SfSkinManager.SetVisualStyle(grid, VisualStyles.Default);
+					break;
+			}
+		}
+	}
+
+{% endhighlight %}
+{% endtabs %}
+
+## ThemeStudio 
+
+### Apply themes in Theme Studio
+To apply predefined themes, we need to choose the needed themes from Themes List. Its available in drop down near Personalize Heading. Refer to the following link, to apply the theme in [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#applying-predefined-themes-in-theme-studio) for Syncfusion controls.
+
+### Applying the custom theme in SfDataGrid application
+To apply the custom theme for SfDataGrid control, you need to generate the resource dictionary xaml file from the ThemeStudio. Refer to the following link, to generate the resource dictionary file and then apply the [custom theme](https://help.syncfusion.com/wpf/themes/theme-studio#applying-generated-resource-xaml-in-application) to SfDataGrid control. 
+
+#### Adding the XAML files to WPF Application
+
+<ul>
+<li> Open Visual Studio 20xx and create a WPF project. </li>
+
+<li> Add the necessary dll’s for the controls used. For example, add SfDataGrid control to the application. The SfDataGrid control requires Syncfusion.SfGrid.WPF, Syncfusion.Data.WPF and Syncfusion.Shared.WPF assembly in the application. </li>
+
+<li> The exported XAML file of controls can be obtained from the Output folder as described in the export topic. </li>
+
+<li> From the Output folder, browse the Syncfusion Controls folder and add the required XAML file to the project. </li>
+
+![](Styles-and-Templates_images/Styles-and-Templates_img37.png)
+
+<li> Now, initialize the SfDataGrid control in the MainWindow.xaml as below: </li>
+
+{% tabs %}
+{% highlight xaml %}
+
+	<syncfusion:SfDataGrid x:Name="dataGrid"
+							AddNewRowPosition="Top"
+							AllowFiltering="True"
+							ItemsSource="{Binding OrdersDetails}"
+							NavigationMode="Cell"
+							ShowGroupDropArea="True"
+							HideEmptyGridViewDefinition="True"
+							ShowRowHeader="True" />
+							
+							
+{% endhighlight %}
+{% endtabs %}
+
+<li> Merge the SfDataGrid.xaml in the application resources using MergedDictionaries.</li>
+
+{% tabs %}
+{% highlight xaml %}
+
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="..\VisualStudioDemos\CS\SfDataGrid.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+
+{% endhighlight %}
+{% endtabs %}
+
+<li> Run the sample and the below output will be obtained: </li>
+
+![](Styles-and-Templates_images/Styles-and-Templates_img36.png)
+
+</ul>
+
+### Importing and Exporting the custom theme in Theme Studio
+
+#### Import the custom theme
+To import custom theme in ThemeStudio, click Import button for choosing *.wpft file containing customized skin color values. After importing, we can visualize the loaded custom skin color applied to controls. Refer to the following link to [import the custom theme](https://help.syncfusion.com/wpf/themes/theme-studio#importing-custom-theme-to-theme-studio)
+
+#### Export the custom theme
+To export the custom theme in ThemeStudio, click Export button to display a popup containing option to select the controls to be exported. Refer to the following link to [export the custom theme](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-custom-theme-from-theme-studio).
