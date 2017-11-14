@@ -21,10 +21,16 @@ The following types of series support Animation.
 * Bubble
 * Spline
 * Spline area
+* Step line
+* Step area
+* Range column
+* Range area
+* Histogram
 * Stacking column
 * Stacking bar
 * Stacking area
 * Pie
+* Polar/Radar
 
 The following APIs are used to customize the Animation.
 
