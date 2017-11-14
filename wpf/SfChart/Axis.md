@@ -2941,7 +2941,7 @@ chart.Series.Add(series2);
 In the above image, the LineSeries is plotted based on additional X & Y axis and ColumnSeries (or remaining series) is plotted against the primary and secondary axis.
 
 
-##Multi-level Labels
+## Multi-level Labels
 
 [`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`] property. These labels are placed based on the provided [`Start`] and [`End`] range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
 
