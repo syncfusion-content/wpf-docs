@@ -182,7 +182,113 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 {% endhighlight %}
 
-## Zoom pan
+## Automatic Port creation
+
+We have provided support to create a Port at the intersection point on Node or Connector at runtime. This can be achieved by using the combination of SetTool and ObjectDrawnEvent.
+
+## Enable Drawing in SetTool
+
+This SetTool method will be invoked when Mouse/Pointer is over on Diagramming Element. In this method, We can make decision to start drawing of the Connector.
+
+Please refer to the code example as below
+
+{% highlight xaml %}
+
+//Override the SetTool method
+protected override void SetTool(SetToolArgs args)
+{
+    if (args.Source is INode || args.Source is IConnector)
+    {
+    	args.Action = ActiveTool.Draw;
+    }
+    else
+    {
+    	base.SetTool(args);
+    }
+}
+
+{% endhighlight %}
+
+## Set Port for intersection
+
+The `ObjectDrawn` event will be invoked while drawing the objects. We have provided two properties in the argument of this event to set Source and Target Port of the Connector.
+
+Please refer to the code example as below
+
+{% highlight xaml %}
+
+//Hook the ObjectDrawn Event
+(diagram.Info as IGraphInfo).ObjectDrawn += MainWindow_ObjectDrawn;
+
+private void MainWindow_ObjectDrawn(object sender, ObjectDrawnEventArgs args)
+{
+    //SourcePort should be set on Started state
+    if (args.State == DragState.Started)
+    {
+    	if (args.Item is IConnector)
+        {
+        	IConnector connector = args.Item as IConnector;
+        	if (connector.SourceNode != null)
+        	{
+            	if ((connector.SourceNode as NodeViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.SourceNode as NodeViewModel).Ports = new ObservableCollection<IPort>();
+
+				//Set the TargetPort as NodePort to the Node
+                args.SourcePort = new NodePortViewModel();
+			}
+            if (connector.SourceConnector != null)
+            {
+            	if ((connector.SourceConnector as ConnectorViewModel).Ports == null)
+            		//Initialize the Port collection
+                	(connector.SourceConnector as ConnectorViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as ConnectorPort to the Connector
+                args.SourcePort = new ConnectorPortViewModel();
+         	}
+		}
+	}
+
+	//TargetPort should be set on Started state
+    if (args.State == DragState.Completed)
+    {
+    	if (args.Item is IConnector)
+        {
+        	IConnector connector = args.Item as IConnector;
+            if (connector.TargetNode != null)
+            {
+            	if ((connector.TargetNode as NodeViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.TargetNode as NodeViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as NodePort to the Node
+                args.TargetPort = new NodePortViewModel();
+			}
+            if (connector.TargetConnector != null)
+            {
+          		if ((connector.TargetConnector as ConnectorViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.TargetConnector as ConnectorViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as ConnectorPort to the Connector
+                args.TargetPort = new ConnectorPortViewModel();
+        	}
+		}
+	}
+}
+
+{% endhighlight %}
+
+##ConnectionIndicator animation for Node
+
+![](Interaction_images/Interaction_img13.jpeg)
+
+##ConnectionIndicator animation for Connector
+
+![](Interaction_images/Interaction_img14.jpeg)
+
+##ConnectorPort to NodePort Connection
+
+![](Interaction_images/Interaction_img15.jpeg)
+
+## Zoom pan 
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
