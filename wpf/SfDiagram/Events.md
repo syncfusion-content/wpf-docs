@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Mouse/Pointer Events
+# Mouse/Pointer Events
 
 The Mouse events occurs due to user interacting with Pointing device. 
 
@@ -22,7 +22,7 @@ Following table describes the mouse related Events in Diagram and Diagramming el
 
 Following table describes the details of the event arguments
 
-### MouseDownEventArgs
+## MouseDownEventArgs
 
 | Property | Type | Description |
 |---|---|---|
@@ -30,7 +30,7 @@ Following table describes the details of the event arguments
 | OriginalSource | Object | OriginalSource returns the Parent of the Item, which item is pressed by mouse point. <br> Diagram, Node, Connector, Port does not has OriginalSource. <br> Annotation has the OriginalSource (i.e Node/Connector) |
 | MouseEventArgs | PointerPressedArgs | PointerPressedArgs has following properties. (This is Framework related arguments) <br> ButtonState <br> ChangedButton <br> ClickCount |
 	
-### MouseUpEventArgs 
+## MouseUpEventArgs 
 
 | Property | Type | Description |
 |---|---|---|
@@ -38,14 +38,14 @@ Following table describes the details of the event arguments
 | OriginalSource | Object | OriginalSource returns the Parent of the Item, which item is released by mouse point. <br> Diagram, Node, Connector, Port does not has OriginalSource. <br> Annotation has the OriginalSource (i.e Node/Connector) |
 | MouseEventArgs | PointerPressedArgs | PointerPressedArgs has following properties. (This is Framework related arguments) <br> ButtonState <br> ChangedButton <br> ClickCount |
 
-### ItemTappedEventArgs
+## ItemTappedEventArgs
 
 | Property | Type | Description |
 |---|---|---|
 | Item | Object | Item returns Diagram or Diagramming elements (Node, Connector, Port, Annotation) which item is tapped by mouse point. |
 | OriginalSource | Object | OriginalSource returns the Parent of the Item, which item is tapped by mouse point. <br> Diagram, Node, Connector, Port does not has OriginalSource. <br> Annotation has the OriginalSource (i.e Node/Connector) |
 
-### ItemDoubleTappedEventArgs
+## ItemDoubleTappedEventArgs
 
 | Property | Type | Description |
 |---|---|---|

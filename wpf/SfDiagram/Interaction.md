@@ -186,7 +186,7 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 We have provided support to create a Port at the intersection point on Node or Connector at runtime. This can be achieved by using the combination of SetTool and ObjectDrawnEvent.
 
-## Enable Drawing in SetTool
+### Enable Drawing in SetTool
 
 This SetTool method will be invoked when Mouse/Pointer is over on Diagramming Element. In this method, We can make decision to start drawing of the Connector.
 
@@ -209,7 +209,7 @@ protected override void SetTool(SetToolArgs args)
 
 {% endhighlight %}
 
-## Set Port for intersection
+### Set Port for intersection
 
 The `ObjectDrawn` event will be invoked while drawing the objects. We have provided two properties in the argument of this event to set Source and Target Port of the Connector.
 
@@ -276,15 +276,15 @@ private void MainWindow_ObjectDrawn(object sender, ObjectDrawnEventArgs args)
 
 {% endhighlight %}
 
-##ConnectionIndicator animation for Node
+ConnectionIndicator animation for Node
 
 ![](Interaction_images/Interaction_img13.jpeg)
 
-##ConnectionIndicator animation for Connector
+ConnectionIndicator animation for Connector
 
 ![](Interaction_images/Interaction_img14.jpeg)
 
-##ConnectorPort to NodePort Connection
+ConnectorPort to NodePort Connection
 
 ![](Interaction_images/Interaction_img15.jpeg)
 
