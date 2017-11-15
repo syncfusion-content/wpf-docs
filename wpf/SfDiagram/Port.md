@@ -119,6 +119,25 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img6.jpeg)
 
+## Connection to Boundary with Port
+
+By default, Port will make connection to specific Point on Node. Now, We have provided `Dynamic` constraint for `NodePort` to establish the connection at a relative point on Node’s boundary and direction of the Connector is dependent with that Port.
+
+We can enable the `Dynamic` constraint in PortConstraints to achieve this behaviour.
+
+Following code illustrates how to enable the `Dynamic` constraint to the NodePort.
+
+{% highlight xaml %}
+
+//Enable the Dynamic constraints to the Port
+port.Constraints |= PortConstraints.Dynamic;
+
+{% endhighlight %}
+
+To know more about bitwise operators, refer to [Bitwise Operations](/wpf/sfdiagram/Constraints#bitwise-operations).
+
+![](Port_images/Port_img9.jpeg)
+
 ## ConnectorPort
 
 ### Add Port to Connector
