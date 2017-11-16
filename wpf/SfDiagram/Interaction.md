@@ -363,12 +363,12 @@ The following code illustrates how to override ValidateConnection
 public class CustomDiagram : SfDiagram
 {
      /// <summary>
-    /// override the validateconnection
+    /// Override the validate connection
     /// </summary>
     /// <param name="args">Gets args value</param>
     protected override void ValidateConnection(ConnectionParameter args)
     {
-        // set the tagetnode and targetport
+        // set the taget node and target port
         if (args.TargetPort == null && args.TargetNode != null)
         {
             if (args.TargetNode is NodeViewModel)
