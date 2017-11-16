@@ -205,7 +205,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 ## Dock Port
 
-DockPort is different from standard ports like NodePort and ConnectorPort, as it allows you to create connection at any point within specfic intervals as shown in the following image.
+DockPort is different from standard ports like NodePort and ConnectorPort, as it allows you to create connection at any point within specific intervals as shown in the following image.
 
 ![](Port_images/Port_img9.jpeg)
 

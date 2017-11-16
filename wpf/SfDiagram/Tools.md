@@ -139,7 +139,7 @@ diagram.Tool = Tool.DrawOnce;
 
 ![](Tools_images/Tools_img3.jpg)
 
-Diagram allows you to estabish connection with Node/Port as soon as you click on the Node/Port.
+Diagram allows you to establish connection with Node/Port as soon as you click on the Node/Port.
 
 ### Text
 
