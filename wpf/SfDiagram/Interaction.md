@@ -325,3 +325,218 @@ The following table illustrates List of Commands with key Gesture.
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/Commands#Command-Manager "Command Manager");
+
+## QuickCommand
+
+QuickCommands are used to execute the commonly or frequently used commands around the Nodes, Connectors and Groups. There are 3 default QuickCommands for Nodes and Groups to execute Draw, Delete and Duplicate commands.
+
+### Create QuickCommand
+
+QuickCommand can be created and added in Commands collection programmatically. It can be set for either Node or Connector or both. 
+
+**Add QuickCommand through Commands collection**
+
+To create a QuickCommand, you have to define the QuickCommand object and add that to Commands collection of the SelectoViewModel.
+
+The following code example illustrates how to create and add a Quick Command in Commands Collection.
+
+{% highlight xml %}
+<!--Style for QuickCommand-->
+
+<Style TargetType="Path" x:Key="QuickCommandstyle">
+
+<Setter Property="Fill" Value="#4D4D4D"/>
+
+<Setter Property="StrokeThickness" Value="1"/>
+
+<Setter Property="Stretch" Value="Fill"></Setter>
+
+</Style>
+
+{% endhighlight %}
+
+{% highlight c# %}
+QuickCommandViewModel quick = new QuickCommandViewModel();
+
+// To define the Icon Shape
+
+quick.Content = "F1M11.8,11.1L11.1,11.8L8,8.7L4.9,11.8L4.2,11.1L7.3,8L4.2,4.93L4.93,4.22L8,7.3L11.1,4.22L11.8,4.93L8.8,8z";
+
+// To define the Background Shape
+
+quick.Shape = "F1M23.467,11.733C23.467,18.213 18.214,23.466 11.734,23.466 5.253,23.466 0,18.213 0,11.733 0,5.253 5.253,0 11.734,0 18.214,0 23.467,5.253 23.467,11.733";
+
+// To define the Background style
+
+quick.ShapeStyle = this.Resources["QuickCommandstyle"] as Style;
+
+// Adding new QuickCommand object in Commands collection
+
+(Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection
+{
+
+quick
+
+};
+
+{% endhighlight %}
+
+![](Interaction_images/QuickCommand_img1.jpeg)
+
+
+### Appearance
+
+Appearance of the QuickCommand can be modified by Shape, ShapeStyle, Content and ContentTemplate.
+
+The following table illustrates the defination of the Shape,ShapeStyle,Content and ContentTemplate.
+
+| Property | Description |
+|---|---|
+| Shape | To define the shape of the background area by set any path data. |
+| ShapeStyle | To define the style for the background area by set the Style with TargetType of Path. |
+| Content | To define the Icon shape by set any path Data. |
+| ContentTemplate |To define the Icon shape by set any DataTemplate. |
+
+![](Interaction_images/QuickCommand_img2.jpg)
+
+The below code example illustrates, how to use customize the appearance of the QuickCommand. 
+
+{% highlight xml %}
+<!--Style for QuickCommand-->
+
+<Style TargetType="Path" x:Key="CustomQuickCommandstyle">
+
+<Setter Property="Fill" Value="Indigo"></Setter>
+
+<Setter Property="Stroke" Value="LightCoral"></Setter>
+
+<Setter Property="StrokeThickness" Value="2"></Setter>
+
+<Setter Property="Stretch" Value="Fill"></Setter>
+
+</Style>
+
+<!--ContentTemplate for QuickCommand-->
+
+<DataTemplate x:Key="Template">
+
+<Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="18" Height="18" Source="{Binding Path=Content,RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+
+</DataTemplate>
+
+{% endhighlight %}
+
+{% highlight c# %}
+QuickCommandViewModel Quick = new QuickCommandViewModel();
+
+// To define the Icon Shape
+
+Quick.Content = "./Image/Icon_Delete.png";
+
+Quick.OffsetX = 0;
+
+Quick.OffsetY = 0.5;
+
+// To define the Icon Template
+
+Quick.ContentTemplate = this.Resources["Template"] as DataTemplate;
+
+Quick.Margin = new Thickness( -25,0, 0, 0);
+
+// To define the Background Shape
+
+Quick.Shape = "M0.5,0.5L25.5,0.5L25.5,25.557L0.5,25.557z";
+
+Quick.Command = (Diagram.Info as IGraphInfo).Commands.Zoom;
+
+ZoomPositionParamenter parameter = new ZoomPositionParamenter()
+ {
+  ZoomCommand = ZoomCommand.ZoomIn
+ };
+Quick.CommandParameter = parameter;
+
+// To define the Background style
+
+Quick.ShapeStyle = this.Resources["CustomQuickCommandstyle"] as Style;
+
+// Adding new QuickCommand object in Commands collection
+
+(Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection
+
+{
+
+Quick
+
+};
+
+{% endhighlight %}
+
+![](Interaction_images/QuickCommand_img3.jpg)
+
+N>To define the host of the QuickCommand either Node or Connector or both. By default, the VisibilityMode as Node. The following code example illustrates to represent the VisibilityMode.
+
+{% highlight c# %}
+// Set QuickCommand Visibility for Node
+quick.VisibilityMode = VisibilityMode.Node;
+
+// Set QuickCommand Visibility for Connector
+quick.VisibilityMode = VisibilityMode.Connector;
+{% endhighlight %}
+
+### Alignment
+
+QuickCommand can be aligned relative to boundaries of the Node or segments of the Connector. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
+**Offset**
+
+The `OffsetX` and `OffsetY` property of QuickCommand is used to align the QuickCommand based on fractions. 0 represents Top / Left corner, 1 represents Bottom / Right corner, and 0.5 represents half of Width / Height.
+
+### Horizontal and Vertical alignments
+
+The `HorizontalAlignment` property of QuickCommand is used to set how the QuickCommand is horizontally aligned at the QuickCommand position and its can determined from the fraction values. The `VerticalAlignment` property is used to set how QuickCommand is vertically aligned at the QuickCommand position.
+
+The following table illustrates all the possible alignments visually with `Offset (0, 0)`.
+
+
+| Horizontal Alignment | Vertical Alignment | Output with OffsetX and OffsetY as (0,0)|
+|---|---|---|
+| Left | Top | ![](Interaction_images/QuickCommand_img4.jpeg) |
+| Center | | ![](Interaction_images/QuickCommand_img5.jpeg) |
+| Right | | ![](Interaction_images/QuickCommand_img6.jpeg) |
+| Left | Center | ![](Interaction_images/QuickCommand_img7.jpeg) |
+| Center | | ![](Interaction_images/QuickCommand_img8.jpeg) |
+| Right | | ![](Interaction_images/QuickCommand_img9.jpeg) |
+| Left | Bottom | ![](Interaction_images/QuickCommand_img10.jpeg) |
+| Center | | ![](Interaction_images/QuickCommand_img11.jpeg) |
+| Right | | ![](Interaction_images/QuickCommand_img12.jpeg) |
+
+
+### Margin
+
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the QuickCommand with the `Margin` property. The following code example illustrates how to align a QuickCommand based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
+
+{% highlight c# %}
+quick.Margin=new Thickness(0,70,0,0);
+
+HorizontalAlignment = HorizontalAlignment.Left;
+
+VerticalAlignment = VerticalAlignment.Top;
+
+{% endhighlight %}
+
+![](Interaction_images/QuickCommand_img13.jpeg)
+
+### QuickCommand Interaction 
+### Command
+
+Command is used to execute the certain action. By default, diagram have several commands. For more information about Commands, refer to [Commands] (/wpf/sfdiagram/commands).
+
+### DragCommand
+
+We can define the Commands which are needed to be executed while dragging the QuickCommand. This DragCommand will be executed when click on QuickCommand and move the mouse while keeping the mouse button pressed State. 
+
+Example: Duplicate, Draw  
+
+### CommandParameter
+
+A parameter can be passed through the "CommandParameter" property. CommandParameter is effective only for the parameter required Commands. ( Example: ZoomIn and ZoomOut)
