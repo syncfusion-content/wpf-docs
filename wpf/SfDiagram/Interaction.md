@@ -397,7 +397,7 @@ The following table illustrates the defination of the Shape,ShapeStyle,Content a
 | Content | To define the Icon shape by set any path Data. |
 | ContentTemplate |To define the Icon shape by set any DataTemplate. |
 
-![](Interaction_images/QuickCommand_img2.jpeg)
+![](Interaction_images/QuickCommand_img2.jpg)
 
 The below code example illustrates, how to use customize the appearence of the QuickCommand. 
 
@@ -467,7 +467,7 @@ Quick
 
 {% endhighlight %}
 
-![](Interaction_images/QuickCommand_img3.jpeg)
+![](Interaction_images/QuickCommand_img3.jpg)
 
 N>To define the host of the QuickCommand either Node or Connector or both. By default, the VisibilityMode as Node. The following code example illustrates to represent the VisibilityMode.
 
