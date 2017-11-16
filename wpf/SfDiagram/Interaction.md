@@ -368,7 +368,7 @@ public class CustomDiagram : SfDiagram
     /// <param name="args">Gets args value</param>
     protected override void ValidateConnection(ConnectionParameter args)
     {
-        // set the taget node and target port
+        // set the target node and target port
         if (args.TargetPort == null && args.TargetNode != null)
         {
             if (args.TargetNode is NodeViewModel)
