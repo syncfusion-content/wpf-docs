@@ -2021,7 +2021,7 @@ By default, the `ComparisonMode` value is none.
 
 **Comparing the open values**
 
-While setting the [`ComparsionMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Open`, the open value of current segment will be compared to open value of previous segment.
+While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Open`, the open value of current segment will be compared to open value of previous segment.
 
 {% tabs %}
 
@@ -2049,7 +2049,7 @@ In the above screenshot, the second segment’s Open value is greater than the f
 
 **Comparing the close values**
 
-While setting the [`ComparsionMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Close`, the close value of current segment will be compared to the close value of previous segment.
+While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Close`, the close value of current segment will be compared to the close value of previous segment.
 
 {% tabs %}
 
@@ -2077,7 +2077,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 **Comparing the high values**
 
-While setting the [`ComparsionMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `High`, the high value of current segment will be compared to the high value of previous segment.
+While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `High`, the high value of current segment will be compared to the high value of previous segment.
 
 {% tabs %}
 
@@ -2105,7 +2105,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
  **Comparing the low values**
 
- While setting the [`ComparsionMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Low`, the low value of current segment will be compared to the low value of previous segment.
+ While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Low`, the low value of current segment will be compared to the low value of previous segment.
 
  {% tabs %}
 
