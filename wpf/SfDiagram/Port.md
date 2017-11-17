@@ -203,9 +203,104 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img7.jpeg)
 
+## Dock Port
+
+DockPort is different from standard ports like NodePort and ConnectorPort, as it allows you to create connection at any point within specific intervals as shown in the following image.
+
+![](Port_images/Port_img9.jpeg)
+
+To add a collection port, you need to define the port object and add it to `Ports` property of Node. The `SourcePoint` and `TargetPoint` properties of DockPort allow you to define its end points. The following code illustrates how to add DockPort to the Node.
+
+The following code illustrates how to add ports to Node.
+
+[XAML]
+
+{% highlight xaml %}
+
+<!--Style for Node-->
+<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="DarkCyan"></Setter>
+                <Setter Property="StrokeThickness" Value="0"></Setter>
+                <Setter Property="Stretch" Value="Fill"></Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
+    <Setter Property="Shape">
+        <Setter.Value>
+            <RectangleGeometry Rect="0,0,10,10"/>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+<!--Style for DockPort-->
+<Style TargetType="syncfusion:DockPort" BasedOn="{StaticResource DockPortBindingStyle}">
+    <Setter Property="ConnectorGeometryStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="Black"></Setter>
+                <Setter Property="StrokeThickness" Value="5"></Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+[C#]
+
+{% highlight C# %}
+
+//Create port collection
+public class PortCollection : ObservableCollection<IPort>
+{
+
+}
+
+{% endhighlight %}
+
+[XAML]
+
+{% highlight xaml %}
+
+<!--Initializes the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+	<!--Initializes the NodeCollection-->
+	<syncfusion:SfDiagram.Nodes>
+		<syncfusion:NodeCollection>
+		    <!--Initializes the Node-->
+        	<syncfusion:NodeViewModel x:Name="node" OffsetX="100" 
+				                      OffsetY="100" UnitHeight="100"
+									  UnitWidth="100">	
+				<!--Initializes the PortCollection-->					  						                                   
+                <syncfusion:NodeViewModel.Ports>
+                    <local:PortCollection>
+                        <!--Initializes the NodePort-->
+                        <syncfusion:DockPortViewModel x:Name="port" SourcePoint="0,1" TargetPoint="1,1">
+						    <!--Initializes the PortCollection-->					  						                                   
+                            <syncfusion:DockPortViewModel.Ports>
+                                <local:PortCollection>
+								</local:PortCollection>
+					        </syncfusion:DockPortViewModel.Ports>
+                        </syncfusion:DockPortViewModel>
+                    </local:PortCollection>
+                </syncfusion:NodeViewModel.Ports>
+        	</syncfusion:NodeViewModel>
+       	</syncfusion:NodeCollection>
+	</syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+![](Port_images/Port_img10.jpeg)
+
 ## Connect with ports
 
 Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to [Connections with Ports](/wpf/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
+
+DockPort doesn't allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
 ## Appearance
 
@@ -267,6 +362,28 @@ The following code illustrates how to change the appearance of port.
 {% endhighlight %}
 
 ![](Port_images/Port_img8.jpeg)
+
+The appearance of DockPort can be customized using `ConnectorGeometryStyle` property.
+
+[XAML]
+
+{% highlight xaml %}
+
+<!--Style for DockPort-->
+<Style TargetType="syncfusion:DockPort" BasedOn="{StaticResource DockPortBindingStyle}">
+    <Setter Property="ConnectorGeometryStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="DarkOrange"></Setter>
+                <Setter Property="StrokeThickness" Value="5"></Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+![](Port_images/Port_img11.jpeg)
 
 ## Constraints
 
