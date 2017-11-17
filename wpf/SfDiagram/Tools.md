@@ -139,6 +139,8 @@ diagram.Tool = Tool.DrawOnce;
 
 ![](Tools_images/Tools_img3.jpg)
 
+Diagram allows you to establish connection with Node/Port as soon as you click on the Node/Port.
+
 ### Text
 
 Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.

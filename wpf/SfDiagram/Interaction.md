@@ -182,7 +182,113 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 {% endhighlight %}
 
-## Zoom pan
+## Automatic Port creation
+
+We have provided support to create a Port at the intersection point on Node or Connector at runtime. This can be achieved by using the combination of SetTool and ObjectDrawnEvent.
+
+## Enable Drawing in SetTool
+
+This SetTool method will be invoked when Mouse/Pointer is over on Diagramming Element. In this method, We can make decision to start drawing of the Connector.
+
+Please refer to the code example as below
+
+{% highlight xaml %}
+
+//Override the SetTool method
+protected override void SetTool(SetToolArgs args)
+{
+    if (args.Source is INode || args.Source is IConnector)
+    {
+    	args.Action = ActiveTool.Draw;
+    }
+    else
+    {
+    	base.SetTool(args);
+    }
+}
+
+{% endhighlight %}
+
+## Set Port for intersection
+
+The `ObjectDrawn` event will be invoked while drawing the objects. We have provided two properties in the argument of this event to set Source and Target Port of the Connector.
+
+Please refer to the code example as below
+
+{% highlight xaml %}
+
+//Hook the ObjectDrawn Event
+(diagram.Info as IGraphInfo).ObjectDrawn += MainWindow_ObjectDrawn;
+
++private void MainWindow_ObjectDrawn(object sender, ObjectDrawnEventArgs args)
+{
+    //SourcePort should be set on Started state
+    if (args.State == DragState.Started)
+    {
+    	if (args.Item is IConnector)
+        {
+        	IConnector connector = args.Item as IConnector;
+        	if (connector.SourceNode != null)
+        	{
+            	if ((connector.SourceNode as NodeViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.SourceNode as NodeViewModel).Ports = new ObservableCollection<IPort>();
+
+				//Set the TargetPort as NodePort to the Node
+                args.SourcePort = new NodePortViewModel();
+			}
+            if (connector.SourceConnector != null)
+            {
+            	if ((connector.SourceConnector as ConnectorViewModel).Ports == null)
+            		//Initialize the Port collection
+                	(connector.SourceConnector as ConnectorViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as ConnectorPort to the Connector
+                args.SourcePort = new ConnectorPortViewModel();
+         	}
+		}
+	}
+
+	//TargetPort should be set on Started state
+    if (args.State == DragState.Completed)
+    {
+    	if (args.Item is IConnector)
+        {
+        	IConnector connector = args.Item as IConnector;
+            if (connector.TargetNode != null)
+            {
+            	if ((connector.TargetNode as NodeViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.TargetNode as NodeViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as NodePort to the Node
+                args.TargetPort = new NodePortViewModel();
+			}
+            if (connector.TargetConnector != null)
+            {
+          		if ((connector.TargetConnector as ConnectorViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.TargetConnector as ConnectorViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as ConnectorPort to the Connector
+                args.TargetPort = new ConnectorPortViewModel();
+        	}
+		}
+	}
+}
+
+{% endhighlight %}
+
+##ConnectionIndicator animation for Node
+
+![](Interaction_images/Interaction_img13.jpeg)
+
+##ConnectionIndicator animation for Connector
+
+![](Interaction_images/Interaction_img14.jpeg)
+
+##ConnectorPort to NodePort Connection
+
+![](Interaction_images/Interaction_img15.jpeg)
+
+## Zoom pan 
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
@@ -219,3 +325,72 @@ The following table illustrates List of Commands with key Gesture.
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/Commands#Command-Manager "Command Manager");
+
+## Customization and Validation on Connector Ends
+
+This support used to decide on which element Connector is going dock with diagramming object at runtime.
+
+### ConnectionParameter
+This is used to Gets or sets the arguments to the ConnectionParameter. Here we are listed the arguments as below:
+| Type | Name | Type | Description |
+|---|---|---|---|
+| Property | Connector | object | Returns the Connector which is edited at runtime. |
+| Property | SourceNode | object | Defines the specific Node as Source of Connector. |
+| Property | TargetNode | object | Defines the specific Node as Target of Connector. |
+| Property | SourcePort | IPort | Defines the specific Port as Source of Connector. |
+| Property | TargetPort | IPort | Defines the specific Port as Target of Connector. |
+| Property | SourcePoint | Point | Defines the specific Point as Source of Connector. |
+| Property | TargetPoint | Point | Defines the specific Point as Source of Connector. |
+| Property | ConnectorEnd | ConnectorEnd | Returns the Connector end which is edited at runtime.
+public enum ConnectorEnd
+    {
+        Source,
+        Target,
+    } |
+| Property | SourceConnector | object | Defines the specific Connector as Source of Connector. |
+| Property | TargetConnector | object | Defines the specific Connector as Target of Connector. |
+
+
+The following code illustrates how to override ValidateConnection
+
+[C#]
+
+<%hightlight C# %>
+
+/// <summary>
+/// Create custom class for diagram
+/// </summary>
+public class CustomDiagram : SfDiagram
+{
+     /// <summary>
+    /// Override the validate connection
+    /// </summary>
+    /// <param name="args">Gets args value</param>
+    protected override void ValidateConnection(ConnectionParameter args)
+    {
+        // set the target node and target port
+        if (args.TargetPort == null && args.TargetNode != null)
+        {
+            if (args.TargetNode is NodeViewModel)
+            {
+                NodeViewModel node = args.TargetNode as NodeViewModel;
+                if (node.Ports != null && (node.Ports as ObservableCollection<IPort>).Count() > 0)
+                {
+                    args.TargetPort = (node.Ports as ObservableCollection<IPort>)[0];
+                }
+            }
+        }
+    }
+}
+
+<#endhighlight>
+
+![](Interaction_images/Interaction_img16.jpeg)
+
+
+## Hit Padding
+
+ Defines the connection with diagramming elements when the connector enters vicinity area of the diagramming elements.
+
+For more information about HitPadding for Node, refer to [Hit Padding](/wpf/sfdiagram/Node#Hit-Padding "Hit Padding").
+For more information about HitPadding for Connector, refer to [Hit Padding](/wpf/sfdiagram/Connector#Hit-Padding "Hit Padding").
