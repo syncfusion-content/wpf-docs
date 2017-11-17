@@ -334,7 +334,7 @@ QuickCommands are used to execute the commonly or frequently used commands aroun
 
 QuickCommand can be created and added in Commands collection programmatically. It can be set for either Node or Connector or both. 
 
-**Add QuickCommand through Commands collection**
+### Add QuickCommand through Commands collection
 
 To create a QuickCommand, you have to define the QuickCommand object and add that to Commands collection of the SelectoViewModel.
 
@@ -487,7 +487,7 @@ quick.VisibilityMode = VisibilityMode.Connector;
 
 QuickCommand can be aligned relative to boundaries of the Node or segments of the Connector. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
 
-**Offset**
+### Offset
 
 The `OffsetX` and `OffsetY` property of QuickCommand is used to align the QuickCommand based on fractions. 0 represents Top / Left corner, 1 represents Bottom / Right corner, and 0.5 represents half of Width / Height.
 
@@ -513,7 +513,7 @@ The following table illustrates all the possible alignments visually with `Offse
 
 ### Margin
 
-**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the QuickCommand with the `Margin` property. The following code example illustrates how to align a QuickCommand based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
+`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the QuickCommand with the `Margin` property. The following code example illustrates how to align a QuickCommand based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
 
 {% highlight c# %}
 quick.Margin=new Thickness(0,70,0,0);
@@ -527,6 +527,7 @@ VerticalAlignment = VerticalAlignment.Top;
 ![](Interaction_images/QuickCommand_img13.jpeg)
 
 ### QuickCommand Interaction 
+
 ### Command
 
 Command is used to execute the certain action. By default, diagram have several commands. For more information about Commands, refer to [Commands] (/wpf/sfdiagram/commands).
