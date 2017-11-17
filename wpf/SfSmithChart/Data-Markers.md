@@ -43,7 +43,7 @@ chart.Series.Add(series);
 
 ## Customizing Marker
 
-The makrer’s interior, stroke, and size can be customized as demonstrated in the below code snippet.
+The markers interior, stroke, and size can be customized as demonstrated in the below code snippet.
 
 {% tabs %}
 
