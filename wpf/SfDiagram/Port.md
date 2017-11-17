@@ -207,7 +207,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 DockPort is different from standard ports like NodePort and ConnectorPort, as it allows you to create connection at any point within specific intervals as shown in the following image.
 
-![](Port_images/Port_img9.jpeg)
+![](Port_images/Port_img12.jpeg)
 
 To add a collection port, you need to define the port object and add it to `Ports` property of Node. The `SourcePoint` and `TargetPoint` properties of DockPort allow you to define its end points. The following code illustrates how to add DockPort to the Node.
 
