@@ -4,7 +4,7 @@ timestamps
   {
   
   def Content="";
-		env.PATH = "C:\\Program Files\\Git\\mingw64\\bin;${env.PATH}"
+		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 
      timeout(time: 7200000, unit: 'MILLISECONDS') {
 String platform='WPF';
