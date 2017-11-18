@@ -176,7 +176,7 @@ diagram.Nodes = nodes;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node_images/Node_img5.jpeg)
+![](Node_images/Node_img5.jpg)
 
 ## Constraints
 
