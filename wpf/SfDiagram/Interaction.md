@@ -192,7 +192,7 @@ QuickCommand can be created and added in Commands collection programmatically. I
 
 ### Add QuickCommand through Commands collection
 
-To create a QuickCommand, you have to define the QuickCommand object and add that to Commands collection of the SelectoViewModel.
+To create a QuickCommand, you have to define the QuickCommand object and add that to Commands collection of the SelectorViewModel.
 
 The following code example illustrates how to create and add a Quick Command in Commands Collection.
 
@@ -244,7 +244,7 @@ quick
 
 Appearance of the QuickCommand can be modified by Shape, ShapeStyle, Content and ContentTemplate.
 
-The following table illustrates the defination of the Shape,ShapeStyle,Content and ContentTemplate.
+The following table illustrates the definition of the Shape,ShapeStyle,Content and ContentTemplate.
 
 | Property | Description |
 |---|---|
