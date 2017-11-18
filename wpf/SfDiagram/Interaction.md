@@ -192,7 +192,7 @@ This SetTool method will be invoked when Mouse/Pointer is over on Diagramming El
 
 Please refer to the code example as below
 
-{% highlight xaml %}
+{% highlight C# %}
 
 //Override the SetTool method
 protected override void SetTool(SetToolArgs args)
@@ -215,7 +215,7 @@ The `ObjectDrawn` event will be invoked while drawing the objects. We have provi
 
 Please refer to the code example as below
 
-{% highlight xaml %}
+{% highlight C# %}
 
 //Hook the ObjectDrawn Event
 (diagram.Info as IGraphInfo).ObjectDrawn += MainWindow_ObjectDrawn;
@@ -332,6 +332,8 @@ This support used to decide on which element Connector is going dock with diagra
 
 ### ConnectionParameter
 This is used to Gets or sets the arguments to the ConnectionParameter. Here we are listed the arguments as below:
+
+
 | Type | Name | Type | Description |
 |---|---|---|---|
 | Property | Connector | object | Returns the Connector which is edited at runtime. |
@@ -355,7 +357,7 @@ The following code illustrates how to override ValidateConnection
 
 [C#]
 
-<%hightlight C# %>
+<% hightlight C# %>
 
 /// <summary>
 /// Create custom class for diagram
@@ -383,9 +385,9 @@ public class CustomDiagram : SfDiagram
     }
 }
 
-<#endhighlight>
+<% endhighlight %>
 
-![](Interaction_images/Interaction_img16.jpeg)
+![](Interaction_images/Interaction_img16.jpg)
 
 
 ## Hit Padding
