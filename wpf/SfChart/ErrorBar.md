@@ -184,6 +184,195 @@ chart.Series.Add(errorBar);
 ![](ErrorBar_images/ErrorBar_3.png)
 
 
+## Direction
+
+[`ErrorBar`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) series allows to view the horizontal and vertical error values in both positive and negative directions.
+
+**Horizontal direction**
+
+[`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows to view the horizontal error value in the following type of directions,
+
+ * Both – It indicates the actual data point value along with specific amount of positive and negative error values.
+ * Minus – It indicates the actual data point value along with specific amount of negative error value.
+ * Plus – It indicates the actual data point value along with specific amount of positive error value.
+
+**Both**
+
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as both.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" HorizontalDirection="Both">
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.HorizontalDirection = ErrorBarDirection.Both;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ErrorBar_images/horizontal_both.png)
+
+**Minus**
+
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as minus.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" HorizontalDirection="Minus">
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.HorizontalDirection = ErrorBarDirection.Minus;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ErrorBar_images/horizontal_minus.png)
+
+**Plus**
+
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as plus.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" HorizontalDirection="Plus">
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.HorizontalDirection = ErrorBarDirection.Plus;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ErrorBar_images/horizontal_plus.png)
+
+**Vertical direction**
+
+[`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows to view the vertical error value in following type of directions,
+
+ * Both - It indicates the actual data point value along with specific amount of positive and negative error values.
+ * Minus - It indicates the actual data point value along with specific amount of negative error value.
+ * Plus - It indicates the actual data point value along with specific amount of positive error value.
+
+**Both**
+
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as both.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" VerticalDirection="Both" >
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.VerticalDirection= ErrorBarDirection.Both;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ErrorBar_images/vertical_both.png)
+
+**Minus**
+
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as minus.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" VerticalDirection="Minus" >
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.VerticalDirection= ErrorBarDirection.Minus;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ErrorBar_images/vertical_minus.png)
+
+**Plus**
+
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as plus.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" VerticalDirection="Plus" >
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.VerticalDirection= ErrorBarDirection.Plus;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ErrorBar_images/vertical_plus.png)
+
+
 ## Type
 
 SfChart supports the following type of error bar series.
