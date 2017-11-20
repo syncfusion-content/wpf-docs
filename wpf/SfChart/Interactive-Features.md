@@ -1131,6 +1131,91 @@ chart.Behaviors.Add(behavior);
 
 ![](Interactive-Features_images/Interactive-Features_img16.jpeg)
 
+**GroupAllPoints**
+
+[`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) supports to group the multiple selected trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property of [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) as GroupAllPoints.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.Behaviors>
+
+<syncfusion:ChartTrackBallBehavior LabelDisplayMode="GroupAllPoints" >
+
+</syncfusion:ChartTrackBallBehavior>
+
+</syncfusion:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
+{
+
+    LabelDisplayMode = TrackballLabelDisplayMode.GroupAllPoints
+
+};
+
+chart.Behaviors.Add(behavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The below screenshot illustrates the trackball label for multiple series, when [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
+
+![](Interactive-Features_images/grouping1.png)
+
+The below screenshot illustrates the trackball label for financial series, when [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
+
+![](Interactive-Features_images/grouping2.png)
+
+
+**TrackBall for Technical Indicators**
+
+In trackball label, the data point value of the technical indicator can also be displayed  by enabling [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) of technical indicator, and it is shown in the below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <chart:SfChart.Behaviors>
+
+                <chart:ChartTrackBallBehavior />
+
+ </chart:SfChart.Behaviors>  
+
+<chart:SfChart.TechnicalIndicators>
+
+                <chart:AverageTrueRangeIndicator ShowTrackballInfo="True" >
+
+                </chart:AverageTrueRangeIndicator>
+
+ </chart:SfChart.TechnicalIndicators>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ChartTrackBallBehavior behavior = new ChartTrackBallBehavior();
+
+chart.Behaviors.Add(behavior);
+
+AverageTrueRangeIndicator average = new AverageTrueRangeIndicator();
+
+average.ShowTrackballInfo = true;
+
+chart.TechnicalIndicators.Add(average);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Interactive-Features_images/indicator.png)
+
+N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) value of technical indicators is false.
 
 [`TrackBallLabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html#) property in [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#) allows you to customize the appearance of series label in trackball.
 
@@ -3630,9 +3715,76 @@ chart.Behaviors.Add(behavior);
 
 ![](Interactive-Features_images/Interactive-Features_img54.jpeg)
 
+**Customization of Crosshair axis labels**
 
+The default appearance of the crosshair axis labels can be customized by using the [`CrosshairLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~CrosshairLabelTemplateProperty.html) property of chart axis, and it can be set as shown in the below code snippet,
 
+{% tabs %}
 
+{% highlight xaml %}
 
+<chart:SfChart.PrimaryAxis>
+    
+    <chart:CategoryAxis ShowTrackBallInfo="True">
+        
+        <chart:CategoryAxis.CrosshairLabelTemplate>
+                
+            <DataTemplate>
+                            
+                 <Border Background="Orange" 
+                                   
+                         CornerRadius="4" 
+                                    
+                          BorderThickness="1" BorderBrush="Black">
 
- 
+                 <TextBlock Margin="2" Text="{Binding ValueX}"/>
+                            
+                </Border>
+                
+            </DataTemplate>
+             
+        </chart:CategoryAxis.CrosshairLabelTemplate>
+                
+    </chart:CategoryAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+                
+       <chart:NumericalAxis ShowTrackBallInfo="True">
+                    
+            <chart:NumericalAxis.CrosshairLabelTemplate>
+                        
+                <DataTemplate>
+                            
+                    <Border Background="Orange" 
+                                   
+                            CornerRadius="4" 
+                            
+                             BorderThickness="1" 
+                             
+                             BorderBrush="Black">
+
+                    <TextBlock  Margin="2" Text="{Binding ValueY}"/>
+                   
+                    </Border>
+                        
+                </DataTemplate>
+            
+            </chart:NumericalAxis.CrosshairLabelTemplate>
+       
+       </chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+<chart:SfChart.Behaviors>
+       
+    <chart:ChartCrossHairBehavior />
+    
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Interactive-Features_images/crossHairTemplate.png)
