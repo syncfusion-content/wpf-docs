@@ -11,5 +11,5 @@ documentation: ug
 
 **MarkupLanguageBase** **class** contains syntax highlighting and outlining implementations for markup languages. **XAML** and **XML** **language** support have been implemented using **MarkupLanguageBase** **class**.
 
-**MarkupLanguageBase** **class** can be directly used as a **base** **class** for implementing a custom markup language. Refer to [Custom Language Support](#_Custom_Language_Support "") topic for more information on how to create custom language in EditControl. Also refer to [XAML](#_XAML "") and [XML](#_XML ) Language Configurations topic to know more about the implementations of XAML and XML language support in EditControl.
+**MarkupLanguageBase** **class** can be directly used as a **base** **class** for implementing a custom markup language. Refer to [Custom Language Support](https://help.syncfusion.com/wpf/syntaxeditor/language-support/custom-language-support) topic for more information on how to configure the custom language in EditControl. 
 
