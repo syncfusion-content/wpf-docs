@@ -28,18 +28,18 @@ The Header is displayed below the animation. The Header property can be used to 
 {% highlight C# %}
 
 // To set the Header for SfBusyIndicator
-SfBusyIndicator busyIndicator = new SfBusyIndicator();
-busyIndicator.Header = "Loading..";
-grid1.Children.Add(busyIndicator);
+SfBusyIndicator SfBusyIndicator = new SfBusyIndicator();
+SfBusyIndicator.Header = "Loading..";
+grid1.Children.Add(SfBusyIndicator);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 'To set the Header for SfBusyIndicator
-Dim busyIndicator As New SfBusyIndicator()
-busyIndicator.Header = "Loading.."
-grid1.Children.Add(busyIndicator)
+Dim SfBusyIndicator As New SfBusyIndicator()
+SfBusyIndicator.Header = "Loading.."
+grid1.Children.Add(SfBusyIndicator)
 
 {% endhighlight %}
 

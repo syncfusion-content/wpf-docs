@@ -26,24 +26,24 @@ The ViewBoxHeight property allows the user to set the height of the ViewBox.
 {% highlight C# %}
 
 // To set the ViewboxHeight for SfBusyIndicator
-SfBusyIndicator busyindicator = new SfBusyIndicator();
-busyindicator.Header = "Loading..";
-busyindicator.Foreground = Brushes.White;
-busyindicator.Background = Brushes.CornflowerBlue;
-busyindicator.ViewboxHeight = 200;
-Grid1.Children.Add(busyindicator);
+SfBusyIndicator SfBusyIndicator = new SfBusyIndicator();
+SfBusyIndicator.Header = "Loading..";
+SfBusyIndicator.Foreground = Brushes.White;
+SfBusyIndicator.Background = Brushes.CornflowerBlue;
+SfBusyIndicator.ViewboxHeight = 200;
+Grid1.Children.Add(SfBusyIndicator);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 ' To set the ViewboxHeight for SfBusyIndicator
-Dim busyindicator As New SfBusyIndicator()
-busyindicator.Header = "Loading.."
-busyindicator.Foreground = Brushes.White
-busyindicator.Background = Brushes.CornflowerBlue
-busyindicator.ViewboxHeight = 200
-Grid1.Children.Add(busyindicator)
+Dim SfBusyIndicator As New SfBusyIndicator()
+SfBusyIndicator.Header = "Loading.."
+SfBusyIndicator.Foreground = Brushes.White
+SfBusyIndicatorBackground = Brushes.CornflowerBlue
+SfBusyIndicator.ViewboxHeight = 200
+Grid1.Children.Add(SfBusyIndicator)
 
 {% endhighlight %}
 
@@ -73,24 +73,24 @@ ViewBoxWidth property allows the user to set the width of the ViewBox.
 {% highlight C# %}
 
 // To set the ViewBoxWidth for SfBusyIndicator
-SfBusyIndicator busyindicator = new SfBusyIndicator();
-busyindicator.Header = "Loading..";
-busyindicator.Foreground = Brushes.White;
-busyindicator.Background = Brushes.CornflowerBlue;
-busyindicator.ViewboxWidth = 50;
-Grid1.Children.Add(busyindicator);
+SfBusyIndicator SfBusyIndicator = new SfBusyIndicator();
+SfBusyIndicator.Header = "Loading..";
+SfBusyIndicator.Foreground = Brushes.White;
+SfBusyIndicator.Background = Brushes.CornflowerBlue;
+SfBusyIndicator.ViewboxWidth = 50;
+Grid1.Children.Add(SfBusyIndicator);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 ' To set the ViewBoxWidth for SfBusyIndicator
-Dim busyindicator As New SfBusyIndicator()
-busyindicator.Header = "Loading.."
-busyindicator.Foreground = Brushes.White
-busyindicator.Background = Brushes.CornflowerBlue
-busyindicator.ViewboxWidth = 50
-Grid1.Children.Add(busyindicator)
+Dim SfBusyIndicator As New SfBusyIndicator()
+SfBusyIndicator.Header = "Loading.."
+SfBusyIndicator.Foreground = Brushes.White
+SfBusyIndicator.Background = Brushes.CornflowerBlue
+SfBusyIndicator.ViewboxWidth = 50
+Grid1.Children.Add(SfBusyIndicator)
 
 {% endhighlight %}
 
