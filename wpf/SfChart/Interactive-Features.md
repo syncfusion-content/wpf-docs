@@ -98,15 +98,15 @@ The following code example illustrates the positioning of tooltip to left of the
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
+<Chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
 
-syncfusion:ChartTooltip.HorizontalAlignment="Left"
+Chart:ChartTooltip.HorizontalAlignment="Left"
 
 XBindingPath="Demand"  YBindingPath="Year2010" />
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" 
+<Chart:ColumnSeries ItemsSource="{Binding Demands}" 
 
-syncfusion:ChartTooltip.HorizontalAlignment="Left" ShowTooltip="True"
+Chart:ChartTooltip.HorizontalAlignment="Left" ShowTooltip="True"
 
 XBindingPath="Demand"  YBindingPath="Year2011"/>
 
@@ -164,15 +164,15 @@ The following code example illustrates the positioning of tooltip to bottom of t
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
+<Chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
 
-syncfusion:ChartTooltip.VerticalAlignment="Bottom"
+Chart:ChartTooltip.VerticalAlignment="Bottom"
 
 XBindingPath="Demand" YBindingPath="Year2010" />
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}"
+<Chart:ColumnSeries ItemsSource="{Binding Demands}"
 
-syncfusion:ChartTooltip.VerticalAlignment="Bottom"
+Chart:ChartTooltip.VerticalAlignment="Bottom"
 
 ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
 
@@ -229,19 +229,19 @@ You can also set the distance for the margin to be positioned from the cursor us
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries Label="2010" ShowTooltip="True"
+<Chart:ColumnSeries Label="2010" ShowTooltip="True"
 
 ItemsSource="{Binding Demands}"   Interior="#777777"
 
-syncfusion:ChartTooltip.TooltipMargin="25"
+Chart:ChartTooltip.TooltipMargin="25"
 
 XBindingPath="Demand" YBindingPath="Year2010" />
 
-<syncfusion:ColumnSeries Label="2011"  ItemsSource="{Binding Demands}"
+<Chart:ColumnSeries Label="2011"  ItemsSource="{Binding Demands}"
 
 Interior="#4A4A4A"
 
-syncfusion:ChartTooltip.TooltipMargin="25"
+Chart:ChartTooltip.TooltipMargin="25"
 
 ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
 
@@ -308,21 +308,21 @@ The tooltip can be positioned at a particular distance from the cursor horizonta
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True"
+<Chart:ColumnSeries ShowTooltip="True"
 
 ItemsSource="{Binding Demands}" 
 
-syncfusion:ChartTooltip.HorizontalOffset="40"
+Chart:ChartTooltip.HorizontalOffset="40"
 
-syncfusion:ChartTooltip.VerticalOffset="40"
+Chart:ChartTooltip.VerticalOffset="40"
 
 XBindingPath="Demand" YBindingPath="Year2010" />
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}"
+<Chart:ColumnSeries ItemsSource="{Binding Demands}"
 
-syncfusion:ChartTooltip.HorizontalOffset="40"
+Chart:ChartTooltip.HorizontalOffset="40"
 
-syncfusion:ChartTooltip.VerticalOffset="40" ShowTooltip="True"
+Chart:ChartTooltip.VerticalOffset="40" ShowTooltip="True"
 
 XBindingPath="Demand"  YBindingPath="Year2011"/>
 
@@ -392,15 +392,15 @@ The following code example demonstrates the duration of the tooltip set as 5 sec
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True"  
+<Chart:ColumnSeries ShowTooltip="True"  
 
-syncfusion:ChartTooltip.ShowDuration="5000"                                          
+Chart:ChartTooltip.ShowDuration="5000"                                          
 
 ItemsSource="{Binding Demands}" Interior="#777777"                                     
 
 XBindingPath="Demand"  YBindingPath="Year2010">                                   
 
-</syncfusion:ColumnSeries>
+</Chart:ColumnSeries>
 
 {% endhighlight %}
 
@@ -443,9 +443,9 @@ The following code example demonstrates the tooltip will be delayed for 1 second
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries Label="2010" ShowTooltip="True"  
+<Chart:ColumnSeries Label="2010" ShowTooltip="True"  
 
-syncfusion:ChartTooltip.InitialShowDelay="1000"                                          
+Chart:ChartTooltip.InitialShowDelay="1000"                                          
 
 ItemsSource="{Binding Demands}" Interior="#777777"                                     
 
@@ -488,15 +488,15 @@ You can also provide animation effects for tooltip by setting [`EnableAnimation`
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries Label="2010" ShowTooltip="True"  
+<Chart:ColumnSeries Label="2010" ShowTooltip="True"  
 
-syncfusion:ChartTooltip.EnableAnimation="True"                                          
+Chart:ChartTooltip.EnableAnimation="True"                                          
 
 ItemsSource="{Binding Demands}" Interior="#777777"                                     
 
 XBindingPath="Demand"  YBindingPath="Year2010">                                   
 
-</syncfusion:ColumnSeries>
+</Chart:ColumnSeries>
 
 {% endhighlight %}
 
