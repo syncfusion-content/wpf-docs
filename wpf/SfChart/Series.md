@@ -123,7 +123,7 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 
 [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property in series,
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -914,7 +914,7 @@ chart.Series.Add(doughnut1);
 
 [`DoughnutHoleSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutHoleSizeProperty.html) is attachable property which gets or sets the double value which is used to customize the doughnut hole size. Its value ranges from 0 to 1 and it can be set as shown in the below code snippet,
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
