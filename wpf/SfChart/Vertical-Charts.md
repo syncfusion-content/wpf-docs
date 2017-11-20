@@ -279,3 +279,49 @@ chart.Series.Add(series2);
 ![](Vertical-Charts_images/VerticalCharts_3.png)
 
 
+## Inversing Axis
+
+`ChartAxis` allows to inverse its rendering position by using its `IsInversed` property and it can be set as shown in the below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis IsInversed="True"/>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis IsInversed="True"/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+
+{
+                
+     IsInversed = true
+            
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+
+{
+               
+    IsInversed = true
+
+ };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Vertical-Charts_images/VerticalCharts_4.png)
+
