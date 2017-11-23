@@ -268,6 +268,39 @@ chart.ColorModel = colorModel;
 ![](Styling-and-Customization_images/palette_6.png)
 
 
+## SegmentColorPath
+
+The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPathProperty.html) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPathProperty.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ColumnSeries  SegmentColorPath="ColorPath">
+
+</chart:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries()
+ 
+{
+        
+   SegmentColorPath = "SegmentColor"
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Styling-and-Customization_images/segmentcolor.png)
+
+N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
+
+
 ## Customize Legends
 
 SfChart provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
@@ -501,6 +534,8 @@ CustomTemplate property is used to customize the chart series. It supports the f
 * StackingColumnSeries
 * StackingColumn100Series
 * StepLineSeries
+* FastLineSeries
+* RangeColumnSeries
 
 The respective segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
 
