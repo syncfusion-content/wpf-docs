@@ -19,6 +19,7 @@ The following APIs are common for the most of the series types:
 * StrokeThickness-Represents the thickness of the series outline.
 * Interior-Represents the brush to fill the series.
 * Palette-Used to define the set of pre-defined or custom colors for the series.
+* IsSeriesVisible – A bool property which is used to enable or disable the series visibility.
 
 ## Column and Bar Charts
 
@@ -93,6 +94,78 @@ BarSeries series = new BarSeries()
 {% endtabs %}
 
 ![](Series_images/bar.png)
+
+**Spacing**
+
+[`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) property of series is used to decide the width of a segment. [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) value ranges from 0 to 1. The following code illustrates how to set [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) property of the series,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Chart:ColumnSeries Chart:ChartSeriesBase.Spacing="0.8"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries()
+
+ChartSeriesBase.SetSpacing(series, 0.8);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/spacing.png)
+
+**SegmentSpacing**
+
+[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property in series,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Chart:SfChart >
+
+<Chart:ColumnSeries SegmentSpacing="0.6"/>
+
+<Chart:ColumnSeries SegmentSpacing="0.6"/>
+
+</Chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ColumnSeries series1 = new ColumnSeries()
+
+{
+
+    SegmentSpacing = 0.6,
+
+};
+
+chart.Series.Add(series1);
+
+ColumnSeries series2 = new ColumnSeries()
+
+{
+
+    SegmentSpacing = 0.6
+
+};
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/SegmentSpacing.png)
 
 ## Line and Spline Charts
 
@@ -267,6 +340,57 @@ chart.Series.Add(series);
 
 ![](Series_images/bubble.png)
 
+**ShowZeroBubbles**
+
+The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~ShowZeroBubblesProperty.html) property. By default, the property value is True.
+The following code illustrates how to set the value to the property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BubbleSeries ShowZeroBubbles="True" >
+
+</chart:BubbleSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BubbleSeries series = new BubbleSeries();
+
+series.ShowZeroBubbles = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/showBubble_true.png)
+
+The below code snippet and images describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~ShowZeroBubblesProperty.html) value is false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BubbleSeries ShowZeroBubbles="False" >
+
+</chart:BubbleSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BubbleSeries series = new BubbleSeries();
+
+series.ShowZeroBubbles = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/showBubble_false.png)
+
 ### Scatter
 
 [`ScatterSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using [`ScatterHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) and [`ScatterWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) property.
@@ -390,6 +514,93 @@ chart.Series.Add(series);
 
 ![](Series_images/splinearea.png)
 
+**SplineType**
+
+[`Spline`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) property. The following spline types are supported by Spline and SplineArea series,
+
+       * Natural
+       * Monotonic
+       * Cardinal
+       * Clamped
+
+**Cardinal**
+
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) value as Cardinal.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Cardinal">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Cardinal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/cardinal.png)
+
+**Monotonic**
+
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) value as Monotonic.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Monotonic">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Monotonic;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/monotonic.png)
+
+**Clamped**
+
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) value as Clamped.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Clamped">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Clamped;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/clamped.png)
+
 
 ### Step Area
 
@@ -470,6 +681,42 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![](Series_images/closedarea.png)
+
+### Step Line
+
+[`StepLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect data points resulting in a step line progression. The following code illustrates how to initialize the [`StepLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StepLineSeries.html) in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:StepLineSeries ItemsSource="{Binding Data}"  
+                      
+                      XBindingPath="XValue" 
+                      
+                      YBindingPath="YValue">
+            
+ </chart:StepLineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+StepLineSeries stepLine = new StepLineSeries();
+
+stepLine.ItemsSource = new ViewModel().Data;
+
+stepLine.XBindingPath = "XValue";
+
+stepLine.YBindingPath = "YValue";
+
+SteplineChart.Series.Add(stepLine);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/stepLine.png)
 
 
 ## Pie and Doughnut Charts
@@ -623,6 +870,72 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![](Series_images/doughnut_1.png)
+
+**DoughnutSize**
+
+The size of doughnut series can be customized by using its [`DoughnutSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutSizeProperty.html) property. The following code illustrates how to use the property in series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart>
+
+<syncfusion:DoughnutSeries DoughnutSize="0.8"/>
+       
+<syncfusion:DoughnutSeries DoughnutSize="0.8"/ >
+
+</syncfusion:SfChart>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DoughnutSeries doughnut = new DoughnutSeries();
+
+doughnut.DoughnutSize = 0.8;
+
+chart.Series.Add(doughnut);
+
+DoughnutSeries doughnut1 = new DoughnutSeries();
+
+doughnut1.DoughnutSize = 0.8;
+
+chart.Series.Add(doughnut1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/HoleSize.png)
+
+**DoughnutHoleSize**
+
+[`DoughnutHoleSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutHoleSizeProperty.html) is attachable property which gets or sets the double value which is used to customize the doughnut hole size. Its value ranges from 0 to 1 and it can be set as shown in the below code snippet,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Chart:SfChart Chart:DoughnutSeries.DoughnutHoleSize="0.2">
+    
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/doughnutHole.png)
+
 
 ### Semi Pie and Doughnut
 
@@ -1368,7 +1681,7 @@ chart.Series.Add(series);
 
 ![](Series_images/drawtype_line.png)
 
-###PolarAngle
+### PolarAngle
 
 [`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported value of `PolarAngle`.Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
 
@@ -1699,6 +2012,124 @@ chart.Series.Add(series);
 {% endtabs %}               
 
 ![](Series_images/candle_1.png)
+
+
+**Comparison Modes**
+
+[`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) property of [`FinancialSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html) is used to compare the current (High, Low, Open, and Close) values with previous (High, Low, Open, and Close) values in the series data points. 
+By default, the `ComparisonMode` value is none.
+
+**Comparing the open values**
+
+While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Open`, the open value of current segment will be compared to open value of previous segment.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:CandleSeries ComparisonMode="Open">
+
+</syncfusion:CandleSeries>
+
+{% endhighlight %}   
+
+{% highlight c# %}
+
+CandleSeries series = new CandleSeries();
+
+series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
+
+{% endhighlight %}
+
+{% endtabs %}     
+
+![](Series_images/open.png)
+
+In the above screenshot, the second segment’s Open value is greater than the first segment’s open value and therefore the stroke color filled with bull fill color.
+
+**Comparing the close values**
+
+While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Close`, the close value of current segment will be compared to the close value of previous segment.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:CandleSeries ComparisonMode="Close">
+
+</syncfusion:CandleSeries>
+
+{% endhighlight %}   
+
+{% highlight c# %}
+
+CandleSeries series = new CandleSeries();
+
+series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
+
+{% endhighlight %}
+
+{% endtabs %}   
+
+![](Series_images/Close.png)
+
+ In the above screenshot, the second segment’s close value is greater than the first segment’s close value and therefore the stroke color is filled with bull fill color.
+
+**Comparing the high values**
+
+While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `High`, the high value of current segment will be compared to the high value of previous segment.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:CandleSeries ComparisonMode="High">
+
+</syncfusion:CandleSeries>
+
+{% endhighlight %}   
+
+{% highlight c# %}
+
+CandleSeries series = new CandleSeries();
+
+series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
+
+{% endhighlight %}
+
+{% endtabs %}   
+
+![](Series_images/high.png)
+
+ In the above screenshot, the second segment’s high value is less than the first segment’s high value and therefore the stroke color is filled with bear fill color.
+
+ **Comparing the low values**
+
+ While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonModeProperty.html) value as `Low`, the low value of current segment will be compared to the low value of previous segment.
+
+ {% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:CandleSeries ComparisonMode="Low">
+
+</syncfusion:CandleSeries>
+
+{% endhighlight %}   
+
+{% highlight c# %}
+
+CandleSeries series = new CandleSeries();
+
+series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
+
+{% endhighlight %}
+
+{% endtabs %}   
+
+![](Series_images/low.png)
+
+In the above screenshot, the second segment’s low value is greater than the first segment’s low value and therefore the stroke color filled with bull fill color.
 
 
 ## Stacking Charts
@@ -2732,6 +3163,394 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![](Series_images/histogram_interval.png)
+
+
+## Box and Whisker 
+
+[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"  
+                          
+                            XBindingPath="Department" 
+                          
+                            YBindingPath="Age">
+
+</chart:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ItemsSource = new BoxWhiskerViewModel().BoxWhiskerData;
+
+boxAndWhisker.XBindingPath = "Department";
+
+boxAndWhisker.YBindingPath = "Age";
+
+boxWhiskerChart.Series.Add(boxAndWhisker);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/boxAndWhisker1.png)
+
+N>By default, the `BoxPlotMode` property value is Exclusive.
+
+**Customize the series Box mode**
+
+The series box plotting mode can be changed by using [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotModeProperty.html) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
+
+* `Exclusive` – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
+* `Inclusive` – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
+* `Normal` – The quartile values are calculated by splitting the list and getting the median values.
+
+**Normal**
+
+The following code illustrates how to define the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotModeProperty.html) value as Normal.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BoxAndWhiskerSeries  BoxPlotMode="Normal">
+
+</chart:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/boxAndWhisker2.png)
+
+**Inclusive**
+
+The following code illustrates how to define the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotModeProperty.html) value as Inclusive.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BoxAndWhiskerSeries  BoxPlotMode="Inclusive">
+
+</chart:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/boxAndWhisker3.png)
+
+**ShowMedian**
+
+The Median values of given dataset is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedianProperty.html) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The following code illustrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedianProperty.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BoxAndWhiskerSeries ShowMedian="True">
+
+</chart:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowMedian = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/boxAndWhisker4.png)
+
+**OutlierTemplate**
+
+The default appearance of the outlier symbol can be customized by using the [`OutlierTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~OutlierTemplateProperty.html) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The following code illustrates how to customize the outlier symbol.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BoxAndWhiskerSeries.OutlierTemplate>
+
+    <DataTemplate>
+
+        <Canvas>
+
+                 <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
+                              
+                         Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+      
+                            Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
+            
+                                    78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
+            
+                                    103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
+           
+                                    54.8249L 121.071,54.8249L 121.071,
+            
+                                    30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
+
+          </Canvas>
+
+    </DataTemplate>
+
+</chart:BoxAndWhiskerSeries.OutlierTemplate>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/boxAndWhisker5.png)
+
+## Waterfall Series
+
+[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries_members.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
+
+The following code illustrates how to use the series in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
+                      
+                       XBindingPath="Category" 
+                      
+                       YBindingPath="Value">
+
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
+
+waterfallSeries.XBindingPath = "Category";
+
+waterfallSeries.YBindingPath = "Value";
+
+chart.Series.Add(waterfallSeries);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/waterfall1.png)
+
+**SummarySegmentPath and SummarySegmentBrush**
+
+[`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummaryBindingPathProperty.html) gets or sets the string value that indicates the sum of previous segments in series. 
+
+The summary segment can be differentiated by applying the [`SummarySegmentBrush`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummarySegmentBrushProperty.html) in series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
+                                  
+                                   XBindingPath="Category"
+                                  
+                                   YBindingPath="Value" Interior="Gray"
+                                  
+                                   SummaryBindingPath="IsSummary"
+                                  
+                                   SummarySegmentBrush="RoyalBlue">
+
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
+
+waterfallSeries.XBindingPath = "Category";
+
+waterfallSeries.YBindingPath = "Value";
+
+waterfallSeries.SummaryBindingPath = "IsSummary";
+
+waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/waterfall2.png)
+
+**NegativeSegmentBrush**
+
+The appearance of the negative segment can be changed by using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~NegativeSegmentBrushProperty.html) property of series.
+
+The following code illustrates how to change the appearance of the negative segment.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries NegativeSegmentBrush="Red">
+
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/waterfall3.png)
+
+**AllowAutoSum**
+
+The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSumProperty.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+
+The below code example illustrates how the AllowAutoSum property value can be set.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries AllowAutoSum="False"
+                       
+                       SummaryBindingPath="IsSummary"
+                       
+                       SummarySegmentBrush="RoyalBlue">
+ 
+ </chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.AllowAutoSum = true;
+
+waterfallSeries.SummaryBindingPath = "IsSummary";
+
+waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/waterfall4.png)
+
+**ConnectorLine**
+
+The connector line of series can be enabled or disabled by using its [`ShowConnector`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ShowConnectorProperty.html) line property. By default, the property value  is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries ShowConnector="False">
+
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ShowConnector = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/waterfall5.png)
+
+**Connector line customization**
+
+The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyleProperty.html) property of the series. The below code example illustrates how to apply style for connector line.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries.ConnectorLineStyle>
+
+<Style TargetType="Line">
+
+<Setter Property="Stroke" Value="Red"/>
+
+<Setter Property="StrokeDashArray" Value="1"/>
+
+<Setter Property="StrokeThickness" Value="2"/>
+
+</Style>
+
+</chart:WaterfallSeries.ConnectorLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Style style = new Style(typeof(Line));
+
+style.Setters.Add(new Setter(Line.StrokeProperty, new SolidColorBrush(Colors.Red)));
+
+style.Setters.Add(new Setter(Line.StrokeDashArrayProperty, new DoubleCollection() { 1 }));
+
+style.Setters.Add(new Setter(Line.StrokeThicknessProperty, 2));
+
+WaterfallSeries series = new WaterfallSeries();
+
+series.ConnectorLineStyle = style;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Series_images/waterfall6.png)
+
 
 ## Fast Charts
 
