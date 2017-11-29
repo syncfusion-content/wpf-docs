@@ -182,6 +182,47 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 {% endhighlight %}
 
+## Enable Dragging in SetTool
+
+This SetTool method will be invoked when Mouse/Pointer is over on Diagramming Element. In this method, We can make decision to dragging the Diagramming elements.
+
+Please refer to the code example as below
+
+{% highlight C# %}
+
+//Override the SetTool method
+protected override void SetTool(SetToolArgs args)
+{
+    if (args.Source is IPort)
+    {
+    	args.Action = ActiveTool.Drag;
+    }
+    else
+    {
+    	base.SetTool(args);
+    }
+}
+
+{% endhighlight %}
+
+### Enable Dragging for NodePort
+
+We can dragging the nodeport using settool method.
+
+![](Interaction_images/Interaction_img32.jpg)
+
+### Enable Dragging for ConnectorPort
+
+We can dragging the connectorport using settool method.
+
+![](Interaction_images/Interaction_img31.jpg)
+
+### Enable Dragging for DockPort thumb
+
+We can dragging the Dockport thumbs using settool method.
+
+![](Interaction_images/Interaction_img30.jpg)
+
 ## Zoom pan 
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
