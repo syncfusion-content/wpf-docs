@@ -1412,7 +1412,7 @@ void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArg
 
 ## VisualStyle
 
-The Appearance of SfDataGrid control is customized using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) property of `SfSkinManager`. Refer to the following built-in themes and available assemblies:
+The ppearance of the SfDataGrid control is customized using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) property of `SfSkinManager`. Refer to the following built-in themes and available assemblies:
 
 <table>
 <tr>
@@ -1555,7 +1555,7 @@ Syncfusion.Themes.VisualStudio2015.Wpf.dll
 
 ### Apply VisualStyle to SfDataGrid
 
-Any built-in themes can be applied to SfDataGrid by setting VisualStyle attached property of the SfSkinManager. To apply theme for SfDatagrid control, follow the code example:
+Any built-in themes can be applied to SfDataGrid by setting VisualStyle attached property of the SfSkinManager. To apply theme for the SfDatagrid control, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1580,7 +1580,7 @@ Any built-in themes can be applied to SfDataGrid by setting VisualStyle attached
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img35.png)
 
-### Apply themes at run time
+### Apply themes at runtime
 
 To apply built-in themes at runtime, use VisualStyle property. Here the ComboBox control is used to switch various built-in themes that are referred in assembly references. 
 
@@ -1706,7 +1706,7 @@ To apply the custom theme, generate the resource dictionary xaml file from Theme
 {% endhighlight %}
 {% endtabs %}
 
-<li> Run the sample and following output will be obtained: </li>
+<li> Run the sample and the following output will be obtained: </li>
 
      ![](Styles-and-Templates_images/Styles-and-Templates_img36.png)
 
