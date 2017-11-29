@@ -207,19 +207,19 @@ protected override void SetTool(SetToolArgs args)
 
 ### Enable Dragging for NodePort
 
-We can dragging the nodeport using settool method.
+We can dragging the node port using set tool method.
 
 ![](Interaction_images/Interaction_img32.jpg)
 
 ### Enable Dragging for ConnectorPort
 
-We can dragging the connectorport using settool method.
+We can dragging the connector port using set tool method.
 
 ![](Interaction_images/Interaction_img31.jpg)
 
 ### Enable Dragging for DockPort thumb
 
-We can dragging the Dockport thumbs using settool method.
+We can dragging the dock port thumbs using set tool method.
 
 ![](Interaction_images/Interaction_img30.jpg)
 
