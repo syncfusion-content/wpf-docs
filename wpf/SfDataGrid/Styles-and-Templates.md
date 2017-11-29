@@ -1412,7 +1412,7 @@ void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArg
 
 ## VisualStyle
 
-The ppearance of the SfDataGrid control is customized using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) property of `SfSkinManager`. Refer to the following built-in themes and available assemblies:
+The appearance of the SfDataGrid control is customized using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) property of `SfSkinManager`. Refer to the following built-in themes and available assemblies:
 
 <table>
 <tr>
