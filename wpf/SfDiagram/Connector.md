@@ -1103,7 +1103,7 @@ diagram.Connectors = lines;
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img23.jpeg)
+![](Connector_images/Connector_img23.jpg)
 
 ##Constraints
 
