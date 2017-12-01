@@ -17,7 +17,7 @@ Typically, SmithChart  has been used two axes that are used to measure and categ
 
 ## Horizontal Axis
 
-Horizontal axis scale is used to measure normalized resistance value. This axis should range from zero to positive infinitive only. It will not allow negative value.
+Horizontal axis scale is used to measure normalized resistance value.
 
 The following topics explain in detail about the axis and its parts.
 
@@ -268,7 +268,7 @@ chart.HorizontalAxis.LabelIntersectAction = LabelIntersectActions.None;
 
 ## Radial Axis
 
-Radial axis scale is used to measure the normalized reactance values. Top circle ranges from 270 to 90 degrees, it will allow positive range like zero to positive infinite. Bottom circle ranges from 90 to 270 degrees, it will allow only negative range like zero to negative infinitive.
+Radial axis scale is used to measure the normalized reactance values.
 
 ### MajorGridlines
 
