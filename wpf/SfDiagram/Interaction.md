@@ -116,7 +116,7 @@ Source and target points of the selected Connectors are represented with two han
 
 ## Interaction on thumb
 
-DiagramThumb is used to allow interaction with Diagram elements. We have provided virtual method to customize the thumb interation. This method will be invoked if any diagram thumb is involved in interaction. 
+DiagramThumb is used to allow interaction with Diagram elements. We have provided virtual method to customize the thumb interaction. This method will be invoked if any diagram thumb is involved in interaction. 
 
 We have provided `ThumbInteractionTool` virtual method in SfDiagram. Argument of this method is type of `InteractionToolArgs`.
 
