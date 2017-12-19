@@ -1072,7 +1072,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Axis Label Border**
 
-[`ChartAxis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ShowLabelBorderProperty.html) property of axis and it can be set as shown in the below code snippet,
+[`ChartAxis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to place border around its label.To place the border around axis, enable [`ShowLabelBorder`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ShowLabelBorderProperty.html) property of axis; it can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -1112,7 +1112,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![](Axis_images/label1.png)
 
-The border color and width can be customized with [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrushProperty.html) and [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidthProperty.html) properties of chart axis and it can be set as shown in the below code snippet,
+The border color and width can be customized with [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrushProperty.html) and [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidthProperty.html) properties of chart axis and it can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -2062,7 +2062,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **IsIndexed**
 
-By default, [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexedProperty.html) property of [`Categoryaxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis_members.html), and it is shown in the below code snippet,
+By default, [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexedProperty.html) property of [`Categoryaxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis_members.html), and it is shown in the following code example,
 
 {% tabs %}
 
@@ -2113,7 +2113,7 @@ When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syn
   * None
   * Sum
 
-The default value of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is None, and it is shown in the below code snippet,
+The default value of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is None, and it is shown in the following code example.
 
 {% tabs %}
 
@@ -2145,7 +2145,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Averege**
 
-The below code snippet illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Average,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Average,
 
 {% tabs %}
 
@@ -2179,7 +2179,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Count**
 
-The below code snippet illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Count,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Count,
 
 {% tabs %}
 
@@ -2213,7 +2213,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Max**
 
-The below code snippet illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Max,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Max,
 
 {% tabs %}
 
@@ -2247,7 +2247,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Min**
 
-The below code snippet illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Min,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Min,
 
 {% tabs %}
 
@@ -2281,7 +2281,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Sum**
 
-The below code snippet illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Sum,
+The followind code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is Sum,
 
 {% tabs %}
 
@@ -2641,7 +2641,7 @@ The following property is common for all types of axes,
 
 **IncludeStripLineRange**
 
-By default, [`striplines`](https://help.syncfusion.com/wpf/sfchart/striplines) are drawn up to the chart axis range, if the provided values (Start and Width) exceed the actual range of chart axis. It can be avoided by using [`IncludeStripLineRange`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~IncludeStriplineRangeProperty.html) property. While enabling [`IncludeStripLineRange`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~IncludeStriplineRangeProperty.html) property, the axis range will be extended up to the provided stripline range. The property can be set as shown in the below code snippet,
+By default, [`striplines`](https://help.syncfusion.com/wpf/sfchart/striplines) are drawn up to the chart axis range, if the provided values (Start and Width) exceed the actual range of chart axis. It can be avoided by using [`IncludeStripLineRange`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~IncludeStriplineRangeProperty.html) property. While enabling [`IncludeStripLineRange`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~IncludeStriplineRangeProperty.html) property, the axis range will be extended up to the provided stripline range. The property can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -2700,7 +2700,7 @@ ChartStripLine stripline = new ChartStripLine()
 **IncludeAnnotationRange**
 
 By default, [`annotations`](https://help.syncfusion.com/wpf/sfchart/annotations) are drawn up to the chart axis range, if the provided values (X1, X2, Y1, and Y2) exceed the actual range of [`chart axis`](https://help.syncfusion.com/wpf/sfchart/axis). It can be avoided by using [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAxisBase~IncludeAnnotationRangeProperty.html) property. While enabling [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAxisBase~IncludeAnnotationRangeProperty.html) property, the axis range will be extended up to the provided annotation range.
-The property is applicable only for linear axes, and it can be set as shown in the below code snippet,
+The property is applicable only for linear axes, and it can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -3361,11 +3361,11 @@ chart.Series.Add(series2);
 
 ![](Axis_images/Axis_img72.jpeg)
 
-In the above image, the LineSeries is plotted based on additional X & Y axis and ColumnSeries (or remaining series) is plotted against the primary and secondary axis.
+In the above screenshot, the LineSeries is plotted based on additional X & Y axes, and ColumnSeries (or remaining series) is plotted based on the primary and secondary axes.
 
 ## Multi-level Labels
 
-[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsProperty.html) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~StartProperty.html) and [`End`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~EndProperty.html) range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
+[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsProperty.html) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~StartProperty.html) and [`End`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~EndProperty.html) range values. You can add any number of labels to an axis. The following code example illustrates how to set a multilevel label.
 
 {% tabs %}
 
@@ -3416,9 +3416,9 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 ![](Axis_images/label3.png)
 
-**Regarding** **Start** **and** **End** **Property**
+**Regarding** **Start** **and** **End** **Properties**
 
-[`Start`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~StartProperty.html) and [`End`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~EndProperty.html) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects, we can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table,
+[`Start`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~StartProperty.html) and [`End`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~EndProperty.html) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects. You can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table.
 
 <table>
 <tr>
@@ -3470,7 +3470,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Customization**
 
-[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidthProperty.html) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrushProperty.html) properties of chart axis.It can be set as shown in the below code snippet,
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidthProperty.html) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrushProperty.html) properties of chart axis.It can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -3530,7 +3530,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Type**
 
-[`Chart Axis`]((https://help.syncfusion.com/wpf/sfchart/axis)) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderTypeProperty.html) property.The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderTypeProperty.html) is `Rectangle`. The another supported border types are `Brace`,`None` and `WithoutTopAndBottomBorder`.
+[`Chart Axis`]((https://help.syncfusion.com/wpf/sfchart/axis)) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html); it can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderTypeProperty.html) property.The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderTypeProperty.html) is `Rectangle`. The another supported border types are `Brace`,`None` and `WithoutTopAndBottomBorder`.
 
 **Rectangle**
 
@@ -4190,7 +4190,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`] text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSizeProperty.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamilyProperty.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) property and it is shown in below code snippet,
+[`ChartMultiLevelLabel's`] text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSizeProperty.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamilyProperty.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) properties; it is shown in following code example.
 
 {% tabs %}
 
@@ -4758,7 +4758,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 ![](Axis_images/label11.png)
 
-The text of [`ChartMultiLavelLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text will automatically trim, when the text width exceeds the width of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it is shown below,
+The text of [`ChartMultiLavelLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) will be trimmed automatically when the text width exceeds the width of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html); it is shown below.
 
 {% tabs %}
 
@@ -4842,6 +4842,6 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 ## Events
 
 * [`ActualRangeChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html#)   - Occurs at the when the range is changed in the axis.
-* [`LabelCreated`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels is created.
+* [`LabelCreated`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are created.
 * [`AxisBoundChanged`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html#)- Occurs when the bounds of the axis changed.
 * [`LabelClicked`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are clicked. Supports for 2D axis.
