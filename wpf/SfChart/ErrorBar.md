@@ -186,7 +186,7 @@ chart.Series.Add(errorBar);
 
 ## Direction
 
-[`ErrorBar`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) series allows to view the horizontal and vertical error values in both positive and negative directions.
+[`ErrorBar`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) series allows you to view the horizontal and vertical error values in both positive and negative directions.
 
 **Horizontal direction**
 
