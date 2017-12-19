@@ -303,7 +303,7 @@ N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, R
 
 ## Customize Legends
 
-SfChart provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
+SfChart provides many options to customize the chart legends. Basically it is an ItemsControl. So, you can customize the ItemTemplate, ItemsPanel, etc.
 
 The following code example demonstrates applying the palette color to the legend icon interior.
 
@@ -537,7 +537,7 @@ CustomTemplate property is used to customize the chart series. It supports the f
 * FastLineSeries
 * RangeColumnSeries
 
-The respective segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
+The respective segment of each series will be your DataTemplate context, which contain the following properties in common. It is used to plot the custom shapes for the series.
 
 * [`XData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~XData.html#)-Returns the actual X value of the segment.
 * [`YData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~YData.html#)-Returns the actual Y value of the segment.
