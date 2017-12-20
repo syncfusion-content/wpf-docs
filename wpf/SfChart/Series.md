@@ -13,13 +13,13 @@ ChartSeries is the visual representation of the data. SfChart offers many types 
 
 The following APIs are common for the most of the series types:
 
-* XBindingPath-A string property that represents the X values for the series.
-* YBindingPath-A string property that represents the Y values for the series.
-* Stroke-Represents the brush for the series outline.
-* StrokeThickness-Represents the thickness of the series outline.
-* Interior-Represents the brush to fill the series.
-* Palette-Used to define the set of pre-defined or custom colors for the series.
-* IsSeriesVisible – A bool property which is used to enable or disable the series visibility.
+* XBindingPath – A string property that represents the X values for the series.
+* YBindingPath – A string property that represents the Y values for the series.
+* Stroke – Represents the brush for the series outline.
+* StrokeThickness – Represents the thickness of the series outline.
+* Interior – Represents the brush to fill the series.
+* Palette – Used to define the set of pre-defined or custom colors for the series.
+* IsSeriesVisible – A bool property, which is used to enable or disable the series visibility.
 
 ## Column and Bar Charts
 
@@ -367,7 +367,7 @@ series.ShowZeroBubbles = true;
 
 ![](Series_images/showBubble_true.png)
 
-The below code snippet and images describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~ShowZeroBubblesProperty.html) value is false.
+The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~ShowZeroBubblesProperty.html) value is false.
 
 {% tabs %}
 
@@ -393,7 +393,7 @@ series.ShowZeroBubbles = false;
 
 ### Scatter
 
-[`ScatterSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using [`ScatterHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) and [`ScatterWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) property.
+[`ScatterSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series when each point being represented by an ellipse with equal size. This size can be defined by using [`ScatterHeight`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) and [`ScatterWidth`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) properties.
 
 {% tabs %}
 
@@ -516,7 +516,7 @@ chart.Series.Add(series);
 
 **SplineType**
 
-[`Spline`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) property. The following spline types are supported by Spline and SplineArea series,
+[`Spline`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) property. The following spline types are supported by Spline and SplineArea series:
 
        * Natural
        * Monotonic
@@ -912,7 +912,7 @@ chart.Series.Add(doughnut1);
 
 **DoughnutHoleSize**
 
-[`DoughnutHoleSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutHoleSizeProperty.html) is attachable property which gets or sets the double value which is used to customize the doughnut hole size. Its value ranges from 0 to 1 and it can be set as shown in the below code snippet,
+[`DoughnutHoleSize`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutHoleSizeProperty.html) is an attachable property. It gets or sets the double value, which is used to customize the doughnut hole size. Its value ranges from 0 to 1, and it can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -939,7 +939,7 @@ DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
 
 ### Semi Pie and Doughnut
 
-By having custom [`StartAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html#) and [`EndAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html#), you can draw pie series in different shapes like semicircular or quarter circular series.
+By using custom [`StartAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html#) and [`EndAngle`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html#) properties, you can draw pie series in different shapes such as semicircular or quarter circular series.
 
 {% tabs %}
 
@@ -1683,7 +1683,7 @@ chart.Series.Add(series);
 
 ### PolarAngle
 
-[`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported value of `PolarAngle`.Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
+[`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degrees. It can be achieved by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported values of `PolarAngle`. Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
 
 **Rotate0**
 
@@ -2045,7 +2045,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 ![](Series_images/open.png)
 
-In the above screenshot, the second segment’s Open value is greater than the first segment’s open value and therefore the stroke color filled with bull fill color.
+In the above screenshot, the second segment’s Open value is greater than the first segment’s open value. So, the stroke color is filled with bull fill color.
 
 **Comparing the close values**
 
@@ -2073,7 +2073,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 ![](Series_images/Close.png)
 
- In the above screenshot, the second segment’s close value is greater than the first segment’s close value and therefore the stroke color is filled with bull fill color.
+ In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
 **Comparing the high values**
 
@@ -2101,7 +2101,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 ![](Series_images/high.png)
 
- In the above screenshot, the second segment’s high value is less than the first segment’s high value and therefore the stroke color is filled with bear fill color.
+ In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
  **Comparing the low values**
 
@@ -2129,7 +2129,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 ![](Series_images/low.png)
 
-In the above screenshot, the second segment’s low value is greater than the first segment’s low value and therefore the stroke color filled with bull fill color.
+In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.
 
 
 ## Stacking Charts
@@ -3447,7 +3447,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSumProperty.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
 
-The below code example illustrates how the AllowAutoSum property value can be set.
+The following code example illustrates how the AllowAutoSum property value can be set.
 
 {% tabs %}
 
@@ -3509,7 +3509,7 @@ waterfallSeries.ShowConnector = false;
 
 **Connector line customization**
 
-The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyleProperty.html) property of the series. The below code example illustrates how to apply style for connector line.
+The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyleProperty.html) property of the series. The following code example illustrates how to apply style for connector line.
 
 {% tabs %}
 

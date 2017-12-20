@@ -1055,6 +1055,56 @@ TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 
 Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/wpf/sfdiagram/Interaction#Connection-Editing "Connection Editing").
 
+## Hit Padding
+
+Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area.
+
+The following code illustrates how to customize the HitPadding 
+
+{% tabs %}
+{% highlight xaml %}
+
+<diagram:SfDiagram.Connectors>
+  <diagram:DiagramCollection>
+    <diagram:Connector SourcePoint="100,100" TargetPoint="200,200" HitPadding="25">
+      <diagram:Connector.ConnectorGeometryStyle>
+        <Style TargetType="Path">
+          <Setter Property="Stroke" Value="Black"></Setter>
+          <Setter Property="Fill" Value="Black"/>
+        </Style>
+      </diagram:Connector.ConnectorGeometryStyle>
+      <diagram:Connector.TargetDecoratorStyle>
+        <Style TargetType="Path">
+          <Setter Property="Stroke" Value="Black"></Setter>
+          <Setter Property="Fill" Value="Black"/>
+        </Style>
+      </diagram:Connector.TargetDecoratorStyle>
+    </diagram:Connector>
+  </diagram:DiagramCollection>
+</diagram:SfDiagram.Connectors>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+diagram.DefaultConnectorType = ConnectorType.Line;
+
+ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+Connector connector = new Connector()
+{
+	SourcePoint = new Point(100, 100),
+	TargetPoint = new Point(200, 200),
+	HitPadding = 25,
+};
+
+lines.Add(connector);
+diagram.Connectors = lines;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Connector_images/Connector_img23.jpg)
+
 ##Constraints
 
 The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/Constraints#ConnectorConstraints "Connector Constraints").

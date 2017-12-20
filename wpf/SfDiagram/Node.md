@@ -141,6 +141,43 @@ N> The AutoBind property is deprecated. Instead of AutoBind, please use this Vie
 
 Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to [Interaction](/wpf/sfdiagram/Interaction "Interaction").
 
+## Hit Padding
+
+Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area.
+
+The following code illustrates how to customize the HitPadding 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:NodeViewModel x:Name="ViewModel"  UnitWidth="100" HitPadding="25"
+                                              UnitHeight="100" OffsetX="200" OffsetY="300">
+</syncfusion:NodeViewModel>
+
+{% endhighlight %}
+{% highlight C# %}
+//Creates the Node collection
+ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+//Create Node
+NodeViewModel node = new NodeViewModel()
+{
+    //Sets the size
+	UnitWidth = 100,UnitHeight = 100,   
+    //Sets the position
+	OffsetX = 200,OffsetY = 300,
+    //Sets pivot point
+	Pivot = new Point(0, 0),
+    //defines the vicinity area of the Node
+    HitPadding = 25
+};
+//Adds the Node to the SfDiagram 
+nodes.Add(node);
+diagram.Nodes = nodes;
+{% endhighlight %}
+{% endtabs %}
+
+![](Node_images/Node_img5.jpg)
+
 ## Constraints
 
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#NodeConstraints "Node Constraints").
