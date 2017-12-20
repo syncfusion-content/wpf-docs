@@ -2073,7 +2073,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 ![](Series_images/Close.png)
 
- In the above screenshot, the second segment’s close value is greater than the first segment’s close value and therefore the stroke color is filled with bull fill color.
+ In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
 **Comparing the high values**
 
@@ -2101,7 +2101,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 ![](Series_images/high.png)
 
- In the above screenshot, the second segment’s high value is less than the first segment’s high value and therefore the stroke color is filled with bear fill color.
+ In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
  **Comparing the low values**
 
@@ -2129,7 +2129,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 ![](Series_images/low.png)
 
-In the above screenshot, the second segment’s low value is greater than the first segment’s low value and therefore the stroke color filled with bull fill color.
+In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.
 
 
 ## Stacking Charts
@@ -3447,7 +3447,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSumProperty.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
 
-The below code example illustrates how the AllowAutoSum property value can be set.
+The following code example illustrates how the AllowAutoSum property value can be set.
 
 {% tabs %}
 
@@ -3509,7 +3509,7 @@ waterfallSeries.ShowConnector = false;
 
 **Connector line customization**
 
-The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyleProperty.html) property of the series. The below code example illustrates how to apply style for connector line.
+The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyleProperty.html) property of the series. The following code example illustrates how to apply style for connector line.
 
 {% tabs %}
 
