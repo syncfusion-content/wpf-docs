@@ -287,6 +287,10 @@ The following code illustrates how to change the appearance of port.
 
 ![](Port_images/Port_img8.jpeg)
 
+## Interaction
+
+Diagram provides support to drag the Port and draw a connector from port interactively. For more information about editing a Port at runtime, refer to [Interaction](/wpf/sfdiagram/Interaction#Enable-Dragging-in-SetTool "Enable Dragging in SetTool").
+
 ## Constraints
 
 The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#PortConstraints "Port Constraints").
