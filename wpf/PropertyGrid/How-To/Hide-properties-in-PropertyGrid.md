@@ -9,7 +9,7 @@ documentation: ug
 
 # Hide properties in PropertyGrid
 
-You can hide the group of properties using HidePropertiesCollection property. You have to add the property names, which must be collapsed into HidePropertiesCollection.
+In PropertyGrid, `HidePropertiesCollection` property is used to hide the mentioned properties which are already present in SelectedObject. Properties can also be hide at the run time using this property.
 
 {% tabs %}
 
@@ -30,3 +30,5 @@ this.propertyGrid.HidePropertiesCollection.Add("ActualHeight");
 {% endhighlight  %}
 
 {% endtabs %}
+
+N>`HidePropertiesCollection` cannot hide the properties which are added through `DynamicDescriptor`.
