@@ -114,6 +114,40 @@ Source and target points of the selected Connectors are represented with two han
 
 ![](Interaction_images/Interaction_img12.jpeg)
 
+## Interaction on thumb
+
+DiagramThumb is used to allow interaction with Diagram elements. We have provided virtual method to customize the thumb interaction. This method will be invoked if any diagram thumb is involved in interaction. 
+
+We have provided `ThumbInteractionTool` virtual method in SfDiagram. Argument of this method is type of `InteractionToolArgs`.
+
+Following table describes the details of the properties for `InteractionToolArgs` 
+
+| Property | Description |
+|---|---|
+| Thumbs | To identify the type of the thumb. |
+| ThumbCorners | To identify the corner of the thumb. |
+| DragConstraints | To customize the interaction of the thumb. |
+ 
+Following code illustrates how to customize the thumb interaction using `ThumbInteractionTool` virtual method.
+
+{% highlight C# %}
+
+//Override the ThumbInteractionTool method
+protected override void ThumbInteractionTool(InteractionToolArgs args)
+{
+    if(args.Thumbs==Thumbs.Resizer)
+    {
+           if(args.ThumbCorners==ThumbCorners.BottomRight)
+           {
+           
+               //Here, Aspect Ratio of the Node is customized based on the Thumb Type.
+               args.DragConstraints = DragConstraints.AspectRatio;
+           }
+    }
+} 
+
+{% endhighlight %}
+
 ## Drag and Drop Nodes over other elements
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the constraints property. The following code illustrates how to enable **dropping**.
@@ -181,6 +215,47 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 }
 
 {% endhighlight %}
+
+## Enable Dragging in SetTool
+
+This SetTool method will be invoked when Mouse/Pointer is over on Diagramming Element. In this method, We can make decision to dragging the Diagramming elements.
+
+Please refer to the code example as below
+
+{% highlight C# %}
+
+//Override the SetTool method
+protected override void SetTool(SetToolArgs args)
+{
+    if (args.Source is IPort)
+    {
+    	args.Action = ActiveTool.Drag;
+    }
+    else
+    {
+    	base.SetTool(args);
+    }
+}
+
+{% endhighlight %}
+
+### Enable Dragging for NodePort
+
+We can dragging the node port using set tool method.
+
+![](Interaction_images/Interaction_img32.jpg)
+
+### Enable Dragging for ConnectorPort
+
+We can dragging the connector port using set tool method.
+
+![](Interaction_images/Interaction_img31.jpg)
+
+### Enable Dragging for DockPort thumb
+
+We can dragging the dock port thumbs using set tool method.
+
+![](Interaction_images/Interaction_img30.jpg)
 
 ## Zoom pan 
 
