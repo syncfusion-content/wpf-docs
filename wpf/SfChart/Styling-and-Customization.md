@@ -537,7 +537,7 @@ CustomTemplate property is used to customize the chart series. It supports the f
 * FastLineSeries
 * RangeColumnSeries
 
-The respective segment of each series will be your DataTemplate context, which contain the following properties in common. It is used to plot the custom shapes for the series.
+The respective segment of each series will be your DataTemplate context, which contains the following properties in common. This will be used to plot the custom shapes for the series.
 
 * [`XData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~XData.html#)-Returns the actual X value of the segment.
 * [`YData`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~YData.html#)-Returns the actual Y value of the segment.
