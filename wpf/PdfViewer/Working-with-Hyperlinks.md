@@ -105,7 +105,7 @@ AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClick
 
 Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
-`Returns the URI clicked in the PDF viewer control.
+'Returns the URI clicked in the PDF viewer control.
 Dim uri As String = args.URI
 
 End Sub
