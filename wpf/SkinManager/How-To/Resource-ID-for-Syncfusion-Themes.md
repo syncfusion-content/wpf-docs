@@ -11,6 +11,8 @@ documentation: ug
 
 The WPF Skin Manager provides a swatch of theme colors that contains all Syncfusion theme brushes. These brushes are used by getting key names for the given particular theme. Brush names are stored as properties in the ThemeColors class.
 
+N> ThemeColors class has been referred at application level by adding Syncfusion.Shared.WPF assembly.
+
 ### Use Case Scenarios
 
 Users can customize brushes easily to get unique colors for all controls in the application.
@@ -29,135 +31,135 @@ Data Type </th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>
-Sets the brush as the background color.</td><td>
+Gets the background color of the control</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 HoverBrush</td><td>
-Sets the brush when the mouse hovers over the control.</td><td>
+Gets the mouse hover color of the control</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 SelectedBrush</td><td>
-Sets the brush for when the control is selected.</td><td>
+Gets the foreground color of selected control</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 BorderBrush</td><td>
-Sets the brush for the border color.</td><td>
+Gets the border color of the control</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 Foreground</td><td>
-Sets the brush as text foreground color.</td><td>
+Gets the foreground color of text</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 ActiveWindowTitleBrush</td><td>
-Sets the brush for the active window header background.</td><td>
+Gets the background color of active window header</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 InActiveWindowTitleBrush</td><td>
-Sets the brush for the inactive window header background.</td><td>
+Gets the background color of inactive window header</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 RibbonPanelBrush</td><td>
-Sets the brush as for the ribbon panel background.</td><td>
+Gets the background color of the ribbon panel</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 MenuBackgroundBrush</td><td>
-Sets the brush as the menu background.</td><td>
+Gets the background color of Menu</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 MenuHoverBrush</td><td>
-Sets the brush when the mouse hovers over a menu item.</td><td>
+Gets the mouse hover color of the MenuItem</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 GalleryHeaderSelectedBrush</td><td>
-Sets the brush when the gallery header is selected.</td><td>
+Gets the foreground color of selected GalleryHeader</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 TrackBrush</td><td>
-Sets the brush in the scrollbar background track.</td><td>
+Gets the background color of scrollbar track</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 HorizontalThumbBrush</td><td>
-Sets the brush for the background in horizontal thumbs.</td><td>
+Gets the background color of horizontal thumb</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 VerticalThumbBrush</td><td>
-Sets the brush for the background in vertical thumbs.</td><td>
+Gets the background color of vertical thumb</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 HorizontalThumbHoverBrush</td><td>
-Sets the brush as the background when the mouse hovers over a horizontal thumb.</td><td>
+Gets the background color of the horizontal thumb when mouse is hovered</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 VerticalThumbHoverBrush</td><td>
-Sets the brush as the background when the mouse hovers over a vertical thumb.</td><td>
+Gets the background color of the vertical thumb when mouse is hovered</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 HorizontalThumbPressedBrush</td><td>
-Sets the brush as the background when a horizontal thumb is pressed.</td><td>
+Gets the background color of pressed horizontal thumb</td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 VerticalThumbPressedBrush</td><td>
-Sets the brush as the background when a vertical thumb is pressed.</td><td>
+Gets the background color of pressed vertical thumb </td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 ColumnHeaderBrush</td><td>
-Sets the brush as the background for the column header.</td><td>
+Gets the background color of column header </td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 TabHoverBrush</td><td>
-Sets the brush as the background when the mouse hovers over the tab item.</td><td>
+Gets the background color of hovered TabItem </td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 TabHoverBorderBrush</td><td>
-Sets the brush as the border when the mouse hovers over the tab item.</td><td>
+Gets the border color of hovered TabItem </td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 <tr>
 <td>
 CardViewGroupingBarBrush</td><td>
-Sets the brush as the background for the CardView grouping header.</td><td>
+Gets the background color of the CardView grouping header </td><td>
 CLR</td><td>
-Brush</td></tr>
+String</td></tr>
 </table>
 
 
@@ -169,9 +171,9 @@ The following code snippet explains how to set the Resource ID through XAML
 
 1. Add the VisualStyle in the sample.
 
-   ~~~csharp
+   ~~~xaml
    
-             syncfusion:SkinStorage.VisualStyle="Office2007Blue”
+             syncfusion:SkinStorage.VisualStyle="Office2013"
 
    ~~~
 
@@ -179,7 +181,7 @@ The following code snippet explains how to set the Resource ID through XAML
 
    ~~~xaml
 
-              <Grid Background="{DynamicResource {x:Static syncfusion:ThemeColors.HoverBrush}}"/>
+             <Grid x:Name="grid" Background="{DynamicResource {x:Static syncfusion:ThemeColors.BackgroundBrush}}">
 
    ~~~
 
@@ -189,7 +191,8 @@ The following code snippet explains how to set the Resource ID through XAML
 
 {% highlight C# %}
 
-Grid.Background = ThemeColors.BackgroundBrush
+SkinStorage.SetVisualStyle(this, "Office2013");
+grid.SetResourceReference(BackgroundProperty, ThemeColors.BackgroundBrush);
 
 {% endhighlight %}
 
