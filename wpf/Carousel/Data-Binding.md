@@ -69,11 +69,11 @@ End Class
 
 public class ViewModel
 {
-private ObservableCollection<Model> headercollection;
+private ObservableCollection<Model> collection;
 public ObservableCollection<Model> HeaderCollection
 {
-get { return headercollection; }
-set { headercollection = value; }
+get { return collection; }
+set { collection = value; }
 }
 public ViewModel()
 {
@@ -96,13 +96,13 @@ HeaderCollection.Add(new Model() { Header = "Item10" });
 {% highlight VB %}
 
 Public Class ViewModel
-Private m_headercollection As ObservableCollection(Of Model)
+Private m_collection As ObservableCollection(Of Model)
 Public Property HeaderCollection() As ObservableCollection(Of Model)
 Get
-Return m_headercollection
+Return m_collection
 End Get
 Set
-m_headercollection = value
+m_collection = value
 End Set
 End Property
 Public Sub New()
