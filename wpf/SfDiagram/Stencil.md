@@ -322,3 +322,23 @@ public class CustomStencil : Stencil
 {% endhighlight %}
 
 ![](Stencil_images/Stencil_img16.jpeg)
+
+## Events
+
+Stencil declares number of events that can be invoked by the user or by the system. These events can be subscribed in application side, which means application will be notified when these events occurred.
+
+Following table describes stencil related events.
+
+| Event | Event Arguments | Description |
+|---|---|---|
+| ExpandEvent | [StencilExpandCollapseEventArgs](/wpf/sfdiagram/Stencil#StencilExpandCollapseEventArgs "StencilExpandCollapseEventArgs") | Occurs when expand the symbol group in the Stencil. |
+| CollpaseEvent | [StencilExpandCollapseEventArgs](/wpf/sfdiagram/Stencil#StencilExpandCollapseEventArgs "StencilExpandCollapseEventArgs") | Occurs when collapse the symbol group in the Stencil. |
+
+# StencilExpandCollapseEventArgs
+
+Following table describes the details of the parameters for StencilExpandCollapseEventArgs.
+
+| Property | Description |
+|---|---|
+| GroupName | Gets the header of the Symbol group. |
+| Cancel | To cancel the action that should be performed because of the event. |
