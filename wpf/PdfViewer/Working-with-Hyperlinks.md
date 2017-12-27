@@ -42,7 +42,7 @@ We can disable the hyperlink navigation in PDF viewer control by wiring the even
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `Hyperlinkclicked` event.    
+// Hooks the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
@@ -59,7 +59,7 @@ pdfViewerControl.HyperlinkClicked -= PdfViewerControl_HyperlinkClicked;
 
 {% highlight vbnet %}
 
-' Hooks the event handler for `Hyperlinkclicked` event
+' Hooks the event handler for `HyperlinkClicked` event
 AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
 
 Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
@@ -78,14 +78,14 @@ RemoveHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkCl
 
 ## How to retrieve the clicked URI from PDF viewer?
 
-We can get the URI which is clicked in the PDF viewer control from the AnnotEventArgs which is passed as a parameter of the HyperlinkClicked event. Please refer the below exemple for more details.
+We can get the URI which is clicked in the PDF viewer control from the AnnotEventArgs which is passed as a parameter of the HyperlinkClicked event. Please refer the below example for more details.
 
 We can navigate to different URL irrespective of the URI clicked in the PDF viewer. Please refer the below example for more details.
 
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `Hyperlinkclicked` event.    
+// Hooks the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
@@ -100,7 +100,7 @@ public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
 
 {% highlight vbnet %}
 
-' Hooks the event handler for `Hyperlinkclicked` event
+' Hooks the event handler for `HyperlinkClicked` event
 AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
 
 Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
@@ -122,7 +122,7 @@ We can navigate to different URL irrespective of the URI clicked in the PDF view
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `Hyperlinkclicked` event.    
+// Hooks the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
@@ -138,7 +138,7 @@ public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
 
 {% highlight vbnet %}
 
-' Hooks the event handler for `Hyperlinkclicked` event.
+' Hooks the event handler for `HyperlinkClicked` event.
 AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
 
 Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
@@ -153,7 +153,7 @@ End Sub
 {% endtabs %}
 
 
-## How to indentify hyperlink detection? 
+## How to identify hyperlink detection? 
 
 `HyperlinkMouseOver` event will be raised when we place the mouse pointer over the URI in the PDF viewer control. 
 
