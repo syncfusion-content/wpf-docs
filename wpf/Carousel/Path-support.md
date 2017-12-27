@@ -13,7 +13,66 @@ Carousel panel arrange its children on a path. User can specify any path and it 
 
 ## Adding Path support to an Application
 
-To set the custom path, use **Path** Property of Carousel control as shown in the below code example
+### VisualMode
+
+In our carousel control, we can set the path using the two different modes of VisualMode property.To use the standard path, the VisualMode property need to set as Standard.And to set the custom path, use VisualMode as **CustomPath** along with **Path** Property of Carousel control. By default, the VisualMode value is Standard for carousel control. The same has been explained in the below code example.
+
+###VisualMode Standard
+
+
+{% tabs %}
+
+{% highlight Xaml %}
+
+<syncfusion:Carousel x:Name="carousel"
+VisualMode="Standard"
+VerticalAlignment="Center"
+HorizontalAlignment="Center"
+ItemsPerPage="5"
+RadiusX="250" Height="257" Width="558" SelectedIndex="4">
+<syncfusion:Carousel.ItemTemplate>
+<DataTemplate>
+<Border Height="100" Width="100" Background="LightBlue">
+<ContentControl Content="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+</Border>
+</DataTemplate>
+</syncfusion:Carousel.ItemTemplate>
+</syncfusion:Carousel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.ItemsSource = New ObservableCollection(Of String)() From { _
+	"Item1", _
+	"Item2", _
+	"Item3", _
+	"Item4", _
+	"Item5", _
+	"Item6", _
+	"Item7", _
+	"Item8", _
+	"Item9" _
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Path-Support_images/StandardVisualMode.jpeg)
+
+###VisualMode as CustomPath
 
 {% tabs %}
 
@@ -82,7 +141,7 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-![](Path-Support_images/Path-Support_img1.jpeg)
+![](Path-Support_images/CustomVisualMode.jpeg)
 
 
 ## Properties

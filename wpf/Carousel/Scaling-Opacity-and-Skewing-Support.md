@@ -17,20 +17,17 @@ Using **TopItemPosition** property, they can change the position of SelectedIt
 
 To enable or disable this feature, use **OpacityEnabled**, **ScalingEnabled**, **SkewXEnabled**, **SkewYEnabled** properties.
 
-The following code illustrates the usage of these properties.
+# Opacity support
+
+In our carousel control, when we set the property OpacityEnabled to true, the opacity for the control will set.
+
+Please find the code snippet for the same:
 
 {% tabs %}
 
 {% highlight Xaml %}
 
-<syncfusion:Carousel x:Name="carousel" VisualMode="CustomPath"  VerticalAlignment="Top"  Height="257" Width="558" ItemsPerPage="5" OpacityEnabled="True" ScalingEnabled="True" >
-
-<syncfusion:Carousel.Path>
-
-<Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-
-</syncfusion:Carousel.Path>
-
+<syncfusion:Carousel x:Name="Carousel" OpacityEnabled="True">
 <syncfusion:Carousel.OpacityFractions>
 
 <syncfusion:PathFractionCollection>
@@ -44,8 +41,50 @@ The following code illustrates the usage of these properties.
 </syncfusion:PathFractionCollection>
 
 </syncfusion:Carousel.OpacityFractions>
+</syncfusion:Carousel>
 
-<syncfusion:Carousel.ScaleFractions>
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.ItemsSource = New ObservableCollection(Of String)() From { _
+	"Item1", _
+	"Item2", _
+	"Item3", _
+	"Item4", _
+	"Item5", _
+	"Item6", _
+	"Item7", _
+	"Item8", _
+	"Item9" _
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+# Scaling feature
+
+In our carousel control, the scaling for the carousel item would be set by using ScalingEnabled property. By default its property is false.
+Please find the code snippet below:
+
+{% tabs %}
+
+{% highlight Xaml %}
+
+<syncfusion:Carousel x:Name="Carousel" SkewAngleXEnabled="True" SkewAngleYEnabled="False">
+
+<syncfusion:Carousel.SkewAngleXFractions>
 
 <syncfusion:PathFractionCollection>
 
@@ -55,22 +94,7 @@ The following code illustrates the usage of these properties.
 
 </syncfusion:PathFractionCollection>
 
-</syncfusion:Carousel.ScaleFractions>
-
-<syncfusion:Carousel.ItemTemplate>
-
-<DataTemplate>
-
-<Border Height="100" Width="100" Background="LightBlue">
-
-<ContentControl Content="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-</Border>
-
-</DataTemplate>
-
-</syncfusion:Carousel.ItemTemplate>
-
+</syncfusion:Carousel.SkewAngleXFractions>
 </syncfusion:Carousel>
 
 
