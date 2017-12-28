@@ -18,6 +18,65 @@ documentation: ug
 
 The Carousel control can be added to an application by using Visual Studio and Blend.
 
+### Creating a Carousel control in C#
+
+The steps to create a Carousel control by using Visual Studio in C# are as follows:
+
+1.	Open Visual Studio.
+
+2.	On the File menu, select New -> Project. This opens the New Project Dialog box.
+
+   ![](Getting-Started_images/Getting-Started_img4.jpeg)
+
+3.  On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
+   
+    ![](Getting-Started_images/Getting-Started_img5.png)
+
+4.	Add the following reference with the sample project:
+    1.	Syncfusion.Shared.WPF.dll
+
+    ![](Getting-Started_images/Getting-Started_img6.jpeg)
+
+5.	Click the C# file, to open the C# file and add the carousel control to the application. Here is the code to create the carousel control in C#:
+
+{% tabs %}
+
+{% highlight C# %}
+
+Carousel carousel = new Carousel();
+carousel.Items.Add(new CarouselItem(){Content="1"});
+carousel.Items.Add(new CarouselItem(){Content="2"});
+carousel.Items.Add(new CarouselItem(){Content="3"});
+carousel.Items.Add(new CarouselItem(){Content="4"});
+carousel.Items.Add(new CarouselItem(){Content="5"});
+this.LayoutRoot.Children.Add(carousel);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim carousel As New Carousel()
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "1" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "2" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "3" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "4" _
+})
+carousel.Items.Add(New CarouselItem() With { _
+	Key .Content = "5" _
+})
+Me.LayoutRoot.Children.Add(carousel)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ###     Creating Carousel control using XAML
 
 
@@ -161,48 +220,4 @@ The below code shows how Carousel can be added to an application by using Visual
 {% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-
-### Creating Carousel control using C#
-
-The below code shows how the Carousel control can be added to an application in C#
-
-{% tabs %}
-
-{% highlight C# %}
-
-Carousel carousel = new Carousel();
-carousel.Items.Add(new CarouselItem(){Content="1"});
-carousel.Items.Add(new CarouselItem(){Content="2"});
-carousel.Items.Add(new CarouselItem(){Content="3"});
-carousel.Items.Add(new CarouselItem(){Content="4"});
-carousel.Items.Add(new CarouselItem(){Content="5"});
-this.LayoutRoot.Children.Add(carousel);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim carousel As New Carousel()
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "1" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "2" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "3" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "4" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "5" _
-})
-Me.LayoutRoot.Children.Add(carousel)
-
-{% endhighlight %}
-
-{% endtabs %}
-
 
