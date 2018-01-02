@@ -13,7 +13,7 @@ SelectedItem is a property in the Carousel that stores the currently selected Ca
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight Xaml %}
 
 <syncfusion:Carousel x:Name="carousel">
             <syncfusion:CarouselItem Content="Item1" x:Name="item1"/>
@@ -25,7 +25,7 @@ SelectedItem is a property in the Carousel that stores the currently selected Ca
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 carousel.SelectedItem = item3;
 
