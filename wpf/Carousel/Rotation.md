@@ -28,7 +28,7 @@ RotationAngle="45"/>
 
 {% tabs %}
 
-{% highlight C#%}
+{% highlight C# %}
 
 Carousel carousel = new Carousel();
 
