@@ -25,7 +25,7 @@ The following section how to add the items programmatically using observable col
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 public class Model
 {
@@ -65,7 +65,7 @@ End Class
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 public class ViewModel
 {
@@ -148,7 +148,7 @@ End Class
 
 {% tabs %}
 
-{% highlight XAML %}
+{% highlight Xaml %}
 
 <Window.DataContext>
 <local:ViewModel/>
@@ -164,7 +164,7 @@ End Class
 
 {% highlight Xaml %}
 
-<<syncfusion:Carousel Name="Carousel"
+<syncfusion:Carousel Name="Carousel"
 Margin="0,-50,10,0"
 ItemsSource="{Binding HeaderCollection}"
 VerticalAlignment="Center"
