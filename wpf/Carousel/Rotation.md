@@ -87,7 +87,7 @@ grid1.Children.Add(carousel)
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <syncfusion:Carousel  x:Name="Carousel"
 VerticalAlignment="Center"
@@ -100,7 +100,7 @@ RotationSpeed="100"/>
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 Carousel carousel = new Carousel();
 
@@ -155,7 +155,7 @@ grid1.Children.Add(carousel)
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <syncfusion:Carousel x:Name="carousel" EnableRotationAnimation="False">
 
@@ -173,11 +173,11 @@ grid1.Children.Add(carousel)
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Carousel carousel = new Carousel();
 
@@ -211,7 +211,7 @@ To enable Touch Support in Carousel, set `EnableTouch` property as true. When th
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:Carousel x:Name="carousel" EnableTouch="True">
             <syncfusion:CarouselItem Content="Item1" x:Name="item1"/>
