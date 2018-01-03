@@ -53,7 +53,7 @@ this.DataContext = new ViewModel();
 
 }
 
-//Intiate the viewmodel class
+//Initiate the viewmodel class
 
 public class ViewModel
 {
