@@ -32,7 +32,7 @@ Please find the code example for the same from below:
 {% endhighlight %}
 
 
-{% highlight C#}
+{% highlight C# %}
 
 public partial class MainWindow : ChromelessWindow
 
@@ -53,7 +53,7 @@ this.DataContext = new ViewModel();
 
 }
 
-//Intiate the viewmodel class
+//Initiate the viewmodel class
 
 public class ViewModel
 {
