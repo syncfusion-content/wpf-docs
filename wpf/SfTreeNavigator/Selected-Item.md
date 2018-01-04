@@ -32,7 +32,7 @@ Please find the code example for the same from below:
 {% endhighlight %}
 
 
-{% highlight C#}
+{% highlight C# %}
 
 public partial class MainWindow : ChromelessWindow
 
