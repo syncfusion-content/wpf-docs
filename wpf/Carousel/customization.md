@@ -17,7 +17,7 @@ Carousel panel arrange its children on a path. User can specify any path and it 
 
 In our carousel control, we can set the path using the two different modes of VisualMode property.To use the standard path, the VisualMode property need to set as Standard.And to set the custom path, use VisualMode as **CustomPath** along with **Path** Property of Carousel control. By default, the VisualMode value is Standard for carousel control. The same has been explained in the below code example.
 
-###VisualMode Standard
+#### VisualMode Standard
 
 
 {% tabs %}
@@ -72,7 +72,7 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 ![](customization_images/StandardVisualMode.jpeg)
 
-###VisualMode as CustomPath
+#### VisualMode as CustomPath
 
 {% tabs %}
 
