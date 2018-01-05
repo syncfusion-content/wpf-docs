@@ -97,31 +97,29 @@ wizardControl.Items.Add(wizardPage2);
 
 ## Wizard Page
 
-You can select the wizard page from the wizard control by using the SelectedWizardPage property.
+`SelectedWizardPage` property is used to select the wizard page from the WizardControl. Since the type of SelectedWizardPage is WizardPage, binding is needed to set selected wizard page through Xaml. The following code explains how to select the wizard page in Xaml,
 
-To set this property, use the below code.
+{% tabs %}
 
-{%tabs%}
-{% highlight xaml %}
+{% highlight XAML %}
 
+<syncfusion:WizardControl Name="WizardControl" SelectedWizardPage="{Binding ElementName=wizard2}" Foreground="SlateBlue">
 
+<syncfusion:WizardPage Title="Wizard Page1" x:Name="wizard1"/>
 
+<syncfusion:WizardPage Title="Wizard Page2" x:Name="wizard2"/>
 
-<syncfusion:WizardControl Name="wizardControl" SelectedWizardPage="wizardPage2" Foreground="SlateBlue">
-
-    <syncfusion:WizardPage Name="wizardPage1" Title="WizardPage1"/>
-
-    <syncfusion:WizardPage Name="wizardPage2" Title="WizardPage2"/>
-
-    <syncfusion:WizardPage Name="wizardPage3" Title="WizardPage3"/>
+<syncfusion:WizardPage Title="Wizard Page3" x:Name="wizard3"/>
 
 </syncfusion:WizardControl>
+
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 // "grid" is the name of grid control
 
@@ -141,7 +139,7 @@ wizardPage1.Title = "Wizard Page1";
 
 wizardPage2.Title = "Wizard Page2";
 
-wizardPage3.Title = "WizardPage3";
+wizardPage3.Title = "Wizard Page3";
 
 wizardControl.Items.Add(wizardPage1);
 
@@ -150,8 +148,10 @@ wizardControl.Items.Add(wizardPage2);
 wizardControl.Items.Add(wizardPage3);
 
 wizardControl.SelectedWizardPage = wizardPage2; 
+
 {% endhighlight %}
-{%endtabs%}
+
+{% endtabs %}
 
 ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
