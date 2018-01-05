@@ -97,7 +97,7 @@ wizardControl.Items.Add(wizardPage2);
 
 ## Wizard Page
 
-`SelectedWizardPage` property is used to select the wizard page from the WizardControl. Since the type of SelectedWizardPage is WizardPage, binding is needed to set selected wizard page through Xaml. The following code explains how to select the wizard page in Xaml,
+`SelectedWizardPage` property is used to select the wizard page from the WizardControl. Since the type of SelectedWizardPage is WizardPage, binding is needed to set selected wizard page through Xaml. The following code explains how to select the wizard page in XAML,
 
 {% tabs %}
 
