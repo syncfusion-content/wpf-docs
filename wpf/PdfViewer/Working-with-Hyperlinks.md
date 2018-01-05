@@ -60,9 +60,9 @@ pdfViewerControl.HyperlinkClicked -= PdfViewerControl_HyperlinkClicked;
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event
-AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
+AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
-Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
+Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
 'Your code here...
 
@@ -70,7 +70,7 @@ End Sub
 
  
 ' Unhooks the event handler for `HyperlinkClicked` event.
-RemoveHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
+RemoveHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 {% endhighlight %}
 {% endtabs %}
@@ -101,9 +101,9 @@ public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event
-AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
+AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
-Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
+Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
 ' Returns the URI clicked in the PDF viewer control.
 Dim uri As String = args.URI
@@ -139,9 +139,9 @@ public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event.
-AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewercontrol_HyperlinkClicked
+AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
-Private Sub PdfViewercontrol_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
+Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
 ' Opens the URI (www.google.com) in a default browser.
 System.Diagnostics.Process.Start("www.google.com")
@@ -178,15 +178,15 @@ pdfViewerControl.HyperlinkMouseOver -= PdfViewerControl_HyperlinkMouseOver;
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkMouseOver` event
-AddHandler pdfviewer.HyperlinkMouseOver, AddressOf PdfViewercontrol_HyperlinkMouseOver
+AddHandler pdfviewer.HyperlinkMouseOver, AddressOf PdfViewerControl_HyperlinkMouseOver
 
-Private Sub PdfViewercontrol_HyperlinkMouseOver(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
+Private Sub PdfViewerControl_HyperlinkMouseOver(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
 End Sub
 
  
 ' Unhooks the event handler for `HyperlinkMouseOver` event.
-RemoveHandler pdfviewer.HyperlinkMouseOver, AddressOf PdfViewercontrol_HyperlinkMouseOver
+RemoveHandler pdfviewer.HyperlinkMouseOver, AddressOf PdfViewerControl_HyperlinkMouseOver
 
 {% endhighlight %}
 {% endtabs %}
