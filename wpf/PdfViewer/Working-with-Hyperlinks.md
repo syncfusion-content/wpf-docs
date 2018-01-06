@@ -22,7 +22,7 @@ Arguments </th><th>
 Type </th></tr>
 <tr>
 <td>
-HyperLinkMouseHover</td><td>
+HyperlinkMouseOver</td><td>
 This event is triggered when the mouse pointer is placed over the URL.</td><td>
 N/A</td><td>
 N/A</td></tr>
