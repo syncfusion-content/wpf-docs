@@ -9,37 +9,35 @@ documentation: ug
 
 # XAML Configuration
 
-XAML configuration is one of the important features of OlapGauge, as it helps the user to configure the control entirely through XAML by eliminating the required code in code behind. 
+XAML configuration is one of the important features of OlapGauge, as it helps the user to configure the control entirely through XAML by eliminating the required code in code behind.
 
-### Properties 
+## Properties
 
 * **DataSource.ConnectionString** - Specifies the connection string of the data manager.
 * **DataSource.ConnectionName** - Specifies the connection name, which is available in App.Config file of the application.
 * **DataSource.DataManagerName** - Specifies the data manager name.
 * **SharedDataManagerName** - Specifies the data manager name, which is available in shared data manager collection.
-* **ReportName** - Species the OlapReport name.
-* **CurrentCubeName** - Specifies the current cube name of a OlapReport.
+* **ReportName** - Species the name of OlapReport.
+* **CurrentCubeName** - Specifies the current cube name of the OlapReport.
 * **CategoricalAxis** - Specifies the categorical axis of the OlapReport.
 * **SeriesAxis** - Specifies the series axis of the OlapReport.
 * **SlicerAxis** - Specifies the slicer axis of the OlapReport.
 * **CalculatedMembers** - Specifies the calculated members of the OlapReport.
 
-Adding an OlapReport to OlapGauge in design time is described in the following code sample:
+The following code snippet illustrates about adding an OlapReport to OlapGauge in design time:
+
+{% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:OlapGauge x:Name="olapGauge" 
-               HorizontalAlignment="Stretch"
-               ReportName="SalesReport"
-               CurrentCubeName="Adventure Works" 
-               SharedDataManagerName="localManager"
-               olapshared:DataSource.DataManagerName="localManager"
-               olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
-
+<syncfusion:OlapGauge x:Name="olapGauge" CurrentCubeName="Adventure Works" ReportName="SalesReport"
+                                         SharedDataManagerName="localManager"
+                                         olapshared:DataSource.DataManagerName="localManager"
+                                         olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
 <!-- Adding Elements to Categorical Axis -->
     <syncfusion:OlapGauge.CategoricalAxis>
-               <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />     <!- Multiple Members where specified by comma separate -->               
-               <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
+               <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />     <!- Multiple Members where specified by comma separate -->
+               <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
     </syncfusion:OlapGauge.CategoricalAxis>
 <!-- Adding Elements to Series Axis -->
     <syncfusion:OlapGauge.SeriesAxis>
@@ -47,14 +45,13 @@ Adding an OlapReport to OlapGauge in design time is described in the following c
                 <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
     </syncfusion:OlapGauge.SeriesAxis>
 </syncfusion:OlapGauge>
-    
+
 {% endhighlight %}
- 
-Run the application and the following output will be generated.
+
+{% endtabs %}
 
 ![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
-A sample demo is available at the following location:     
+A demo sample is available at the following location:
 
-{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Defining Reports\XAML Configuration\ 
-
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Defining Reports\XAML Configuration\
