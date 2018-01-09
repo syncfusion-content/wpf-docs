@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon TabPanelItem
 
-`RibbonTabPanelItem` can set in Ribbon to located below the close button of RibbonWindow. Using that we can place desire items like emotions.
+`RibbonTabPanelItem` is used to display items below application Close button and above the `RibbonBar` content area. It is usually aligned in the right side of the Ribbon and we can place desire items like emoji's, help button etc., in this Tab panel.
 
 
 {% tabs %}
@@ -17,9 +17,9 @@ documentation: ug
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
-<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
+<syncfusion:RibbonTab Name="_ribbonTab" Caption="HOME"  IsChecked="True">
 
-<syncfusion:RibbonBar Name="_ribbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar">
 
 <syncfusion:RibbonMenuItem  Header="NEW" Width="100"></syncfusion:RibbonMenuItem>
 
