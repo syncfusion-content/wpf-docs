@@ -11,71 +11,114 @@ documentation: ug
 
 ## Layout Customization
 
-OlapGauge provides support to display multiple gauges in a structured layout. You can customize the layout by using the **"ColumnsCount"** and **"RowsCount"** properties. These properties are used to specify the number of columns and rows for displaying the control.
+OlapGauge provides support to display multiple gauges in a structured layout. You can customize the layout by using the `ColumnsCount` and `RowsCount` properties. These properties are used to specify the number of columns and rows for displaying the control.
 
 {% tabs %}
 
-{% highlight c# %}
- 
-this.olapGauge.ColumnsCount = 2;
-this.olapGauge.RowsCount = 2;
+{% highlight xaml %}
+
+<syncfusion:OlapGauge x:Name="OlapGauge1" RowsCount="2" ColumnsCount="2"/>
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-  
-Me.olapGauge.ColumnsCount = 2
-Me.olapGauge.RowsCount = 2
+{% highlight c# %}
+
+this.OlapGauge1.ColumnsCount = 2;
+this.OlapGauge1.RowsCount = 2;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.OlapGauge1.ColumnsCount = 2
+Me.OlapGauge1.RowsCount = 2
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Gauge-Customization_images/Gauge-Customization_img1.png)
+![](Gauge-Customization_images/Gauge-customization.png)
 
-A sample demo is available at the following location:
+## Gauge header
 
-{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
-
-## KPI
-
-OlapGauge provides support to display Key Performance Indicators (KPIs) from the OLAP Cube. You can easily view the KPI Value and KPI Goal with the help of _Pointers_ and _Markers_, and the KPI Status and KPI Trend values through user friendly images (Traffic Light, Road Signs and Standard Arrow) in OlapGauge WPF. Each Gauge represents a member against one KPI combination.
-
-![](Gauge-Customization_images/Gauge-Customization_img2.png)
-
-A sample demo is available at the following location:
-
-{system drive}:\Users\\{User Name}\AppData\Local\Syncfusion\EssentialStudio\\{Version Number}\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
-
-## Show/Hide Gauge Header, Factor and Labels
-
-OlapGauge provides support to customize the header, which displays the measure and KPI name. The **"ShowGaugeHeader"** property allows you to show or hide the Gauge header. If the property is set to true, it displays the Gauge header. If it is set to false, then it hides the Gauge header. Similarly **"ShowGaugeFactors"** and **"ShowGaugeLabels"** properties are used for showing and hiding the Gauge factors and labels. The following is the code sample. 
+Gauge header is the combination of details about the measure and KPI. The header components of the OlapGauge can be hidden by using the property of `ShowGaugeHeaders` as specified in the following code snippet:
 
 {% tabs %}
 
-{% highlight c# %}
- 
-this.olapGauge1.ShowGaugeHeaders = false;
-this.olapGauge1.ShowGaugeFactors = false;
-this.olapGauge1.ShowGaugeLabels = false;
+{% highlight xaml %}
+
+<syncfusion:OlapGauge x:Name="OlapGauge1" ShowGaugeHeaders="False"/>
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-  
-Me.olapGauge1.ShowGaugeHeaders = False
-Me.olapGauge1.ShowGaugeFactors = False
-Me.olapGauge1.ShowGaugeLabels = False
+{% highlight c# %}
+
+OlapGauge1.ShowGaugeHeaders = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+OlapGauge1.ShowGaugeHeaders = False
 
 {% endhighlight %}
 
 {% endtabs %}
 
-The following screen shot shows the output.
+![](Gauge-Customization_images/Gauge-customization-header.png)
 
-![](Gauge-Customization_images/Gauge-Customization_img4.png)
+## Gauge label
 
-A sample demo is available at the following location:
+The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the OlapGauge:
 
-{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Product ShowCase\KPI\
+{% tabs %}
 
+{% highlight xaml %}
+
+<syncfusion:OlapGauge x:Name="OlapGauge1" ShowGaugeLabels="False"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+OlapGauge1.ShowGaugeLabels = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+OlapGauge1.ShowGaugeLabels = False
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Gauge-Customization_images/Gauge-customization-label.png)
+
+## Gauge factor
+
+Gauge factor component can be hidden by using the property of `ShowGaugeFactors` as specified in the below code snippet:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:OlapGauge x:Name="OlapGauge1" ShowGaugeFactors="False"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+OlapGauge1.ShowGaugeFactors = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+OlapGauge1.ShowGaugeFactors = False
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Gauge-Customization_images/Gauge-customization-factor.png)
