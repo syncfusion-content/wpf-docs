@@ -11,7 +11,7 @@ documentation: ug
 
 Text box can be used to show the HTML formatted data with the report viewer that is retrieved from the data source. HTML text can be in form of simple or complex expressions. You have to create the placeholder in textbox and show the HTML formatted data from the dataset. The following steps are used to import the HTML text in the report:
 
-1.	Draw a textbox report item. Right click the text box and select “Create Placeholder”.
+1.	Draw a textbox report item. Right-click the text box and select “Create Placeholder”.
 
 ![](HTML-formatted-Data-in-Report_images/textbox_image.png)
 
