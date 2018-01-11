@@ -27,14 +27,14 @@ Text box can be used to show the HTML formatted data with the report viewer that
 
 ![](HTML-formatted-Data-in-Report_images/HTML_Formatted_Data_Output.png)
 
-## Supported HTML tags
+## Supported HTML Tags
 
 * Hyperlinks: `<A HREF>`
 * Fonts: `<FONT>`
 * Header, style and block elements: `<H{n}>, <DIV>, <SPAN>, <P>, <DIV>, <LI>, <HN>`
 * Text format: `<B>, <I>, <U>, <S>`
 
-## Limitations of cascading style sheet attributes
+## Limitations of Cascading Style Sheet Attributes
 
 The following is a list of attributes that are supported:
 
