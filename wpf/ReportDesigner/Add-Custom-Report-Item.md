@@ -185,7 +185,7 @@ internal sealed class CustomEditor: ComponentEditor
 }
 {% endhighlight %}
 
-The custom property editor dialog box invokes the Report Designer `ExpressionEditor` to edit any property as an expression.
+The custom property editor dialog box invokes the report designer `ExpressionEditor` to edit any property as an expression.
 
 {% highlight c# %}
 private void Expression_Click(object sender, RoutedEventArgs e)
@@ -282,13 +282,13 @@ Also, you need to add the created/modified "ReportExtensions.config" file in the
     </configuration>
 {% endhighlight %}
 
-Run the application, output with barcode custom report item is rendered as below:
+Run the application, output with bar code custom report item is rendered as below:
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
-Shows barcode custom report item that is added to built-in report item collections of the report designer.
+Shows bar code custom report item that is added to built-in report item collections of the report designer.
    {:.caption}
 
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
 
-Custom property dialog of the barcode custom report item.
+Custom property dialog of the bar code custom report item.
    {:.caption}
