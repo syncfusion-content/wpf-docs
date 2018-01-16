@@ -13,7 +13,7 @@ A custom report item allows you to add the functionality that is not natively su
 
 ## Creating a custom report item run-time component
 
-The run-time component of the custom report item is implemented by using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component for the bar code custom report item of the report viewer or Report Server rendering.
+The run-time component of the custom report item is implemented by using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component for the barcode custom report item of the report viewer or Report Server rendering.
 
 ### Create report item assembly
 
@@ -196,7 +196,7 @@ The following steps describe how to create a standalone report viewer applicatio
 
 [Create a standalone report viewer application in the WPF Platform.](/wpf/reportviewer/getting-started)
 
-Run the application, output with the bar code custom report item is rendered as below:
+Run the application, output with the barcode custom report item is rendered as below:
 
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
