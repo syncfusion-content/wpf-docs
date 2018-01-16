@@ -9,31 +9,30 @@ documentation: ug
 
 ## Overview
 
-A custom report item allows users to add functionality that's not natively supported in RDL or extend the functionality of existing controls in RDL standard. The run-time component allows to render custom report item in ReportViewer.
+A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in the report viewer.
 
 ## Creating a custom report item run-time component
 
-The custom report item run-time component is implemented using any CLS-compliant language, and is called by the report processor at run
-time. The below section provides detail to create run time component for Barcode custom report item for Report Viewer or Report Server rendering.
+The run-time component of the custom report item is implemented by using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component for the bar code custom report item of the report viewer or Report Server rendering.
 
 ### Create report item assembly
 
-1.	Open the Visual Studio and select class library project type, name the project as "Syncfusion.Extensions.BarcodeCRI" for run-time component.
+1.	Open the Visual Studio and select the class library project type, and then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
 2.	Add the reference "Syncfusion.ReportControls.Wpf" for the extension project.
 3.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
 
->Note: Refer the above assemblies from the below installed location.
+>Note: Refer to above assemblies from the below installed location.
 For report platform: %localappdata%\Syncfusion\ReportsSDK\Samples\Common\Assemblies and
 For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
 
 
-### Implementing the ICustomReportItem Interface
+### Implementing the ICustomReportItem interface
 
-To create a CustomReportItem run-time component need to implement the `ICustomReportItem` interface, it generates following two method stubs.
+To create a CustomReportItem run-time component, you should implement the `ICustomReportItem` interface, it generates the following two method stubs:
 
 Interface methods	|Definition
 ----------|----------
-GenerateReportItemDefinition	|Called first and is used for setting definition properties and creating the Image object that will contain both the definition and instance properties that are used for rendering the item.
+GenerateReportItemDefinition	|Called first and is used for setting definition properties and creating the image object that contains both the definition and instance properties that are used for rendering the item.
 EvaluateReportItemInstance	|Called after the definition objects have been evaluated, and it provides the instance objects that will be used for rendering the item.
 
 {% highlight c# %}
@@ -94,7 +93,7 @@ namespace Syncfusion.Extensions.BarcodeCRI
 
 ### Convert custom report item as image
 
-The custom report item is rendered as image in report viewer, so that the run-time component need to be converted as an image. The following converter is used to generate the image for rendering.
+The custom report item is rendered as image in the report viewer, so that the run-time component need to be converted as an image. The following converter is used to generate the image for rendering:
 
 {% highlight c# %}
 
@@ -151,22 +150,22 @@ internal partial class ImageConversion : UserControl
 
 #### Build project
 
-You can clean and build the extension project, it will generate the run-time component assembly "Syncfusion.Extensions.BarcodeCRI.dll" in bin folder of the project. Copy the generated assembly to the installation location.
+You can clean and build the extension project, it will generate the run-time component assembly "Syncfusion.Extensions.BarcodeCRI.dll" in the bin folder of the project. Copy the generated assembly to the installation location.
 
 **For ReportDesigner:** (C:\Program Files (x86)\Syncfusion\Report Designer\ReportDesigner)
 
 **For ReportServer:**  C:\Program Files (x86)\Syncfusion\Report Server\ReportServer.Web\bin
 
->Note: The installation path refers to the location where Syncfusion ReportDesigner, ReportServer were installed.
+>Note: The installation path refers to the location where the Syncfusion ReportDesigner and the ReportServer were installed.
 
 ## Deploy a custom report item 
 
-To deploy a custom report item, you must modify the application configuration files or create "ReportExtensions.config" file and copy the run-time component assembly (Syncfusion.Extensions.BarcodeCRI) and its dependent assemblies to the bin folder of your application. The deployment requires configuration to process the extensions, following describes about configuration settings.
+To deploy a custom report item, you must modify the application configuration files or create "ReportExtensions.config" file and copy the run-time component assembly (Syncfusion.Extensions.BarcodeCRI) and its dependent assemblies to the bin folder of your application. The deployment requires configuration to process the extensions, and the following describes about configuration settings.
 
-We need to replace the newly created assembly and its dependent assemblies in the application bin folder. 
+You need to replace the newly created assembly and its dependent assemblies in the application bin folder. 
 
-1.	Create "ReportExtensions.config" file in your application.
-2.	The following "configSections" section is mandatory to process the extension inside the control, so add it as same as given in the below.
+1.	Create a "ReportExtensions.config" file in your application.
+2.	The following "configSections" section is mandatory to process the extension in the control, so add it as shown in the following code:
 
 {% highlight xml %}
 <configSections>
@@ -174,13 +173,13 @@ We need to replace the newly created assembly and its dependent assemblies in th
 </configSections>
 {% endhighlight %}
 
-3.	We must add the tag `ReportItem` for all the newly added report item types. It has following attributes.
+3.	You must add the `ReportItem` tag for all newly added report item types. It has following attributes:
 
 Attribute Name |	Description
 ---------|----------
-Name	|Name of your report Item that going to display in list.
-Assembly	|Name of the newly created report Item assembly.
-Type	|Report Item class name with the namespace.
+Name	|Name of your report item that is going to display in the list.
+Assembly	|Name of the newly created report item assembly.
+Type	|Report item class name with the namespace.
 
 {% highlight xml %}
  <ReportingExtensions>
@@ -191,16 +190,16 @@ Type	|Report Item class name with the namespace.
 </configuration>
 {% endhighlight %}
 
-Once config file is created, add it to report viewer application. 
+After creating the config file, add it to the report viewer application.
 
-The following steps describes how to create standalone report viewer application. 
+The following steps describe how to create a standalone report viewer application:
 
-[Create Standalone ReportViewer application in WPF Platform](/wpf/reportviewer/getting-started)
+[Create a standalone report viewer application in the WPF Platform.](/wpf/reportviewer/getting-started)
 
-Run the application, output with barcode custom report item is rendered as below. 
+Run the application, output with the bar code custom report item is rendered as below:
 
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
-Shows invoice report rendered with barcode custom report item
+Shows the invoice report rendered with the barcode custom report item.
    {:.caption}	
 
