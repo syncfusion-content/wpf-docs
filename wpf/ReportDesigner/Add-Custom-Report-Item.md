@@ -258,7 +258,7 @@ To deploy a custom report item, you must modify the application configuration fi
 
 Attribute name	|Description
 --------------|------------------
-Name|	Name of your report item that is going to display in the list.
+Name|	Name of your report item that is going to be displayed in the list.
 Assembly|	Name of the newly created report item assembly.
 Type	|Report item class name with the namespace.
 
