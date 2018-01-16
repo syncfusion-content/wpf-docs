@@ -207,7 +207,7 @@ OnFontChanged()|	Invokes when the font value of the custom report item is change
 OnTextAlignChanged()|	Invokes when the text alignment of the custom report item is changed.
 OnBackgroundColorChanged()|	Invokes when the background color of the custom report item is changed.
 
-In the following example, the change of font family property is handled in the custom component and the style is applied to the bar code custom report item.
+In the following example, the change of font family property is handled in the custom component and the style is applied to the barcode custom report item.
 
 {% highlight c# %}
 public override void OnFontChanged()
@@ -282,7 +282,7 @@ Also, you need to add the created/modified "ReportExtensions.config" file in the
     </configuration>
 {% endhighlight %}
 
-Run the application, output with bar code custom report item is rendered as below:
+Run the application, output with barcode custom report item is rendered as below:
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows barcode custom report item that is added to built-in report item collections of the report designer.
