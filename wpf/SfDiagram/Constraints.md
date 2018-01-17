@@ -21,8 +21,6 @@ Graph constraints allow to enable or disable the following behaviors.
 * Zoom and Pan
 * Undo Redo
 
-For more information about GraphConstraints, refer to [GraphConstraints]. 
-
 **Example** 
 
 The following example illustrates how to disable page editing.
@@ -44,8 +42,6 @@ NodeConstraints allow to enable or disable the following behaviors of Node.
 * Rotate
 * Connect
 * Annotation Dragging
-
-For more information about NodeConstraints, refer to [NodeConstraints]. 
 
 **Example**
 
@@ -82,8 +78,6 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Bridging
 * Annotation dragging
 
-For more information about ConnectorConstraints, refer to [ConnectorConstraints]. 
-
 **Example**
 
 The following code illustrates how to disable selection.
@@ -106,9 +100,7 @@ diagram.Connectors = connectors;
 
 You can enable or disable certain behaviors of port. They are as follows.
 
-* Connect
-
-For more information about PortConstraints, refer to [PortConstraints]. 
+* Connect 
 
 Example
 
@@ -181,8 +173,6 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * Quick Commands
 
-For more information about SelectorConstraints, refer to [SelectorConstraints].
-
 **Example**
 
 The following code illustrates how to hide rotator.
@@ -201,8 +191,6 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 * Show both Horizontal or Vertical Gridlines
 * Show to either Horizontal or Vertical Gridlines
 * Show to both Horizontal or vertical gridlines
-
-For more information about SnapConstraints, refer to [SnapConstraints].
 
 **Example**
 

@@ -180,4 +180,4 @@ diagram.Nodes = nodes;
 
 ## Constraints
 
-The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#NodeConstraints "Node Constraints").
+The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#nodeconstraints "Node Constraints").
