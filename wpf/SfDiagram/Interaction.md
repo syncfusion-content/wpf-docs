@@ -556,6 +556,7 @@ This is used to Gets or sets the arguments to the ConnectionParameter. Here we a
 | Property | SourcePoint | Point | Defines the specific Point as Source of Connector. |
 | Property | TargetPoint | Point | Defines the specific Point as Source of Connector. |
 | Property | ConnectorEnd | ConnectorEnd | Returns the Connector end which is edited at runtime.
+
 public enum ConnectorEnd
     {
         Source,
@@ -569,7 +570,7 @@ The following code illustrates how to override ValidateConnection
 
 [C#]
 
-<% hightlight C# %>
+{% highlight C# %}
 
 /// <summary>
 /// Create custom class for diagram
@@ -597,7 +598,7 @@ public class CustomDiagram : SfDiagram
     }
 }
 
-<% endhighlight %>
+{% endhighlight %}
 
 ![](Interaction_images/Interaction_img16.jpg)
 
@@ -606,8 +607,8 @@ public class CustomDiagram : SfDiagram
 
  Defines the connection with diagramming elements when the connector enters vicinity area of the diagramming elements.
 
-For more information about HitPadding for Node, refer to [Hit Padding](/wpf/sfdiagram/Node#Hit-Padding "Hit Padding").
-For more information about HitPadding for Connector, refer to [Hit Padding](/wpf/sfdiagram/Connector#Hit-Padding "Hit Padding").
+For more information about HitPadding for Node, refer to [Hit Padding](/wpf/sfdiagram/Node#hit-padding "Hit Padding").
+For more information about HitPadding for Connector, refer to [Hit Padding](/wpf/sfdiagram/Connector#hit-hadding "Hit Padding").
 
 ## Zoom pan 
 
@@ -645,6 +646,6 @@ The following table illustrates List of Commands with key Gesture.
 | Ctrl + Shift + ] | BringFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/Commands#Command-Manager "Command Manager");
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/Commands#command-manager "Command Manager");
 
 

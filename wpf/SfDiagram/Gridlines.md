@@ -36,7 +36,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 ![](Gridlines_images/Gridlines_img1.jpeg)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/wpf/sfdiagram/Constraints#SnapConstraints "SnapConstraints").
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/wpf/sfdiagram/Constraints#snapconstraints "SnapConstraints").
 
 ## Appearance
 
@@ -193,7 +193,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to **SnapConstraints**
+To enable/disable snapping to horizontal/vertical lines, refer to [SnapConstraints](/wpf/sfdiagram/Constraints#snapconstraints "SnapConstraints").
 
 ## Snap To Objects
 

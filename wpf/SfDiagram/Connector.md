@@ -1022,7 +1022,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-###Decorator Appearance
+### Decorator Appearance
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -1053,7 +1053,7 @@ TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 
 ## Interaction
 
-Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/wpf/sfdiagram/Interaction#Connection-Editing "Connection Editing").
+Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/wpf/sfdiagram/Interaction#connection-editing "Connection Editing").
 
 ## Hit Padding
 
@@ -1105,7 +1105,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img23.jpg)
 
-##Constraints
+## Constraints
 
-The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/Constraints#ConnectorConstraints "Connector Constraints").
+The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/Constraints#connectorconstraints "Connector Constraints").
 
