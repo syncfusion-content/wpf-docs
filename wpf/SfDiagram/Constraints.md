@@ -12,7 +12,7 @@ documentation: ug
 `Constraints` are used to enable/disable certain behaviors of the diagram, Node and Connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
 
-## GraphConstraints
+## Graph Constraints
 
 Graph constraints allow to enable or disable the following behaviors.
 
@@ -31,7 +31,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 {% endhighlight %}
 
-## NodeConstraints
+## Node Constraints
 
 NodeConstraints allow to enable or disable the following behaviors of Node.
 
@@ -67,7 +67,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-## ConnectorConstraints
+## Connector Constraints
 
 ConnectorConstraints allow to enable or disable certain behaviors of Connectors. They are as follows.
 
@@ -96,7 +96,7 @@ diagram.Connectors = connectors;
 
 {% endhighlight %}
 
-## PortConstraints
+## Port Constraints
 
 You can enable or disable certain behaviors of port. They are as follows.
 
@@ -128,7 +128,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-## AnnotationConstraints
+## Annotation Constraints
 AnnotationConstraints allow to enable or disable the following behaviors of Annotation.
 
 * Selection
@@ -165,7 +165,7 @@ the following code illustrates how to enable annotation dragging.
 
 {% endhighlight %} 
 
-## SelectorConstraints
+## Selector Constraints
 
 Selector visually represents the selected elements with certain editable thumbs. The visually of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows.
 
@@ -183,7 +183,7 @@ The following code illustrates how to hide rotator.
 
 {% endhighlight %}
 
-## SnapConstraints
+## Snap Constraints
 
 Snap Constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
