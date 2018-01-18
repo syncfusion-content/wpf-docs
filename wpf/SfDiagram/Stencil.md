@@ -270,7 +270,7 @@ SfDiagram provides preview support for Stencil. When you drag an item from Stenc
 
 This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
 
-####Enabling preview
+#### Enabling preview
 
 To enable preview for the dragged item from Stencil, set the Constraints property of Stencil to ShowPreview. To disable preview, remove ShowPreview from Constraints property. By default, preview for drag and drop is enabled.
 

@@ -350,6 +350,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter()
 ### Reset Commands
 Reset commands are used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram.
 To execute a reset command, a parameter of type IReset has to be passed.
+
 | Property | Description | Value |
 |---|---|---|
 | Reset | Gets or sets the ZoomPanReset | Enum Reset <br> Reset.Zoom – To reset zoom level to 1 <br> Reset.Pan – To reset Offsets to 0,Reset.ZoomPan | 
@@ -425,6 +426,7 @@ FitToPage commands are used to bring the entire Diagram into the view.
 |---|---|---|
 | FitToPage | Gets or sets whether the Diagram is to fit into the view in terms of its width, height, or entirety. | Enum FitToPage <br> FitToPage.FitToPage <br> FitToPage.FitToHeight <br> FitToPage.FitToWidth |
 | Margin | Gets or sets the margin value from the view to Diagram. | Thickness |
+
 The following code illustrates how to execute FitToPage command.
 
 {% highlight C# %}
@@ -538,8 +540,10 @@ private async void OnSaveCommand(Object obj)
        }
   }
   {% endhighlight %}
+  
 #### Map and user defined command with key gesture:
-//Add new Commands to CommandManager - Ctrl + S -> Save
+
+Add new Commands to CommandManager - Ctrl + S -> Save
             
 {% highlight C# %}			
 sfdiagram.CommandManager.Commands.Add

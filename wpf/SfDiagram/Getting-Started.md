@@ -23,7 +23,7 @@ Let us create flow diagram and automatic layout with SfDiagram.
 
 ### WPF Application
 
- Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90).
+ Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
 
 ### Assembly Reference
 
@@ -405,7 +405,7 @@ Now output will be looks like,
     
 ### Complete Diagram
 
-Now we can integrate all NodeViewModel and corresponding ConnectorViewModel to Diagram. Final XMAL code will be,
+Now we can integrate all NodeViewModel and corresponding ConnectorViewModel to Diagram. Final XAML code will be,
 
 {% tabs %}
 {% highlight xaml %}
@@ -534,6 +534,7 @@ public class Employees : ObservableCollection<Employee>
 
 }
 {% endhighlight %}
+
 ### Initialize Data
 
 Define Employee Information as a Collection. The following code example shows an employee array whose,

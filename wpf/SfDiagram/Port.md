@@ -387,4 +387,4 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
 
 ## Constraints
 
-The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#PortConstraints "Port Constraints").
+The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#portconstraints "Port Constraints").
