@@ -19,7 +19,7 @@ The design-time component is a control that can be used in the Syncfusion Report
 2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf" and "Syncfusion.ReportDesigner.WPF" to an application.
 3.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
 
->Note:  Refer to above assemblies from the below installed location. For report platform: %localappdata%\Syncfusion\ReportsSDK\Samples\Common\Assemblies and
+>Note:  Refer the above assemblies from the below installed location. For report platform: %localappdata%\Syncfusion\ReportsSDK\Samples\Common\Assemblies and
 For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
 
 The following attributes must be set to BarcodeCRIDesigner class:
@@ -222,10 +222,7 @@ public override void OnFontChanged()
 
 ### Build project
 
-You can clean and build the extension project, it will generate the design-time component assembly "Syncfusion.Extensions.BarcodeDesigner.dll" in the bin folder of the project. Copy the generated assembly to the report designer installed location (C:\Program Files (x86)\Syncfusion\Report Designer\ReportDesigner).
-
->Note: The installation path refers to the location where the Syncfusion ReportDesigner was installed.
-
+You can clean and build the extension project, it will generate the design-time component assembly "Syncfusion.Extensions.BarcodeDesigner.dll" in the bin folder of the project. 
 
 
 ## Creating a custom report item run-time component
