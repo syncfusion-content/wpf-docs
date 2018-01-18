@@ -47,8 +47,7 @@ diagram.ExportSettings = settings;
 
 The following code shows how to export the SfDiagram
 {% highlight C# %}
-_//Method to Export the SfDiagram_
-
+//Method to Export the SfDiagram
 diagram.Export();
 {% endhighlight %}
 
