@@ -172,7 +172,7 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 
 {% endhighlight %}
 
-## SymbolGroups
+## Symbol Groups
 
 The SymbolGroupProvider groups the symbols into SymbolGroup based on the MappingName property.
 
@@ -211,7 +211,7 @@ Expand and Collapse can be performed on SymbolGroup (updating the Visibility of 
 | ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img9.jpeg) | ![](Stencil_images/Stencil_img10.jpeg) |
 | All | All the SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img11.jpeg) |
 
-## SymbolFilters
+## Symbol Filters
 
 `SymbolFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
 

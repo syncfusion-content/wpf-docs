@@ -119,7 +119,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img6.jpeg)
 
-## ConnectorPort
+## Connector Port
 
 ### Add Port to Connector
 To add a collection port, you need to define the port object and add it to `Ports` property of Connector. The `Length` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Connector.
@@ -387,4 +387,4 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
 
 ## Constraints
 
-The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#portconstraints "Port Constraints").
+The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#port-constraints "Port Constraints").
