@@ -526,15 +526,15 @@ Please refer to the code example as below
 
 {% endhighlight %}
 
-##ConnectionIndicator animation for Node
+## ConnectionIndicator animation for Node
 
 ![](Interaction_images/Interaction_img13.jpeg)
 
-##ConnectionIndicator animation for Connector
+## ConnectionIndicator animation for Connector
 
 ![](Interaction_images/Interaction_img14.jpeg)
 
-##ConnectorPort to NodePort Connection
+## ConnectorPort to NodePort Connection
 
 ![](Interaction_images/Interaction_img15.jpeg)
 
