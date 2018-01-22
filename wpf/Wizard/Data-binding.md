@@ -126,7 +126,7 @@ items.Add(new Model { Title = "Oberon's Legacy", Content = "In post apocalypse E
 
 items.Add(new Model { Title = "Lover Birds", Content = "When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled."});
 
-items.Add(new Model { Title = "Science Fiction", Content = "After an inadvertant trip through a Heisenberg Uncertainty Device, James discovers the problems of being quantum."});
+items.Add(new Model { Title = "Science Fiction", Content = "After an inadvertent trip through a Heisenberg Uncertainty Device, James discovers the problems of being quantum."});
 
 }
 
