@@ -82,7 +82,7 @@ RaisePropertyChanged("Description");
 
 {% highlight C# %}
 
-private ObservableCollection<Model> pageitems;
+private ObservableCollection<Model> items;
 
 public ObservableCollection<Model> PageItems
 
@@ -92,7 +92,7 @@ get
 
 {
 
-return pageitems;
+return items;
 
 }
 
@@ -100,7 +100,7 @@ set
 
 {
 
-pageitems = value;
+items = value;
 
 RaisePropertyChanged("PageItems");
 
@@ -118,15 +118,15 @@ private void PopulatePageItems()
 
 {
 
-pageitems.Add(new Model { Title = "XML Developer's Guide", Content = "An indepth look at creating applications with XML."});
+items.Add(new Model { Title = "XML Developer's Guide", Content = "An in-depth look at creating applications with XML."});
 
-pageitems.Add(new Model { Title = "Midnight Rain", Content = "A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world."});
+items.Add(new Model { Title = "Midnight Rain", Content = "A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world."});
 
-pageitems.Add(new Model { Title = "Oberon's Legacy", Content = "In postapocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendant."});
+items.Add(new Model { Title = "Oberon's Legacy", Content = "In post apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London."});
 
-pageitems.Add(new Model { Title = "Lover Birds", Content = "When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled."});
+items.Add(new Model { Title = "Lover Birds", Content = "When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled."});
 
-pageitems.Add(new Model { Title = "Science Fiction", Content = "After an inadvertant trip through a Heisenberg Uncertainty Device, James Salway discovers the problems of being quantum."});
+items.Add(new Model { Title = "Science Fiction", Content = "After an inadvertant trip through a Heisenberg Uncertainty Device, James discovers the problems of being quantum."});
 
 }
 
