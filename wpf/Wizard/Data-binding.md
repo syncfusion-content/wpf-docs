@@ -14,7 +14,7 @@ Data Binding is the process of establishing a connection between the application
 
 Below steps will explain on how to add the Items through ItemsSource property of Wizard control.
 
-1. Create a Model class with the necessary properties.
+1.Create a Model class with the necessary properties.
 
 {% highlight C# %}
 
@@ -78,7 +78,7 @@ RaisePropertyChanged("Description");
 
 {% endhighlight %}
 
-2. Create collection of PageItems in ViewModel class as given in the following code snippet:
+2.Create collection of PageItems in ViewModel class as given in the following code snippet:
 
 {% highlight C# %}
 
@@ -110,7 +110,7 @@ RaisePropertyChanged("PageItems");
 
 {% endhighlight %}
 
-3. Populate the PageItems collection as follows.
+3.Populate the PageItems collection as follows.
 
 {% highlight C# %}
 
@@ -132,7 +132,7 @@ pageitems.Add(new Model { Title = "Science Fiction", Content = "After an inadver
 
 {% endhighlight %}
 
-4. Create a ViewModel instance and use it as DataContext for the Root Window as given in the following code snippet,
+4.Create a ViewModel instance and use it as DataContext for the Root Window as given in the following code snippet,
 
 {% highlight XAML %}
 
@@ -144,7 +144,7 @@ pageitems.Add(new Model { Title = "Science Fiction", Content = "After an inadver
 
 {% endhighlight %}
 
-5. Bind the PageItems collection to the ItemsSource property of the WizardControl. Content of the WizardPage can be displayed using the ItemTemplate property.
+5.Bind the PageItems collection to the ItemsSource property of the WizardControl. Content of the WizardPage can be displayed using the ItemTemplate property.
 
 {% highlight XAML %}
 
