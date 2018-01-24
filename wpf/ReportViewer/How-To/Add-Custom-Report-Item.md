@@ -1,33 +1,27 @@
 ---
 layout: post
 title: Custom Report Item
-description: Overview of Custom Report Item
+description: Creating a custom report item run-time component in report viewer]
 platform: WPF
 control: ReportViewer
 documentation: ug
 ---
 
-## Overview
-
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.
-
->Note: You can create a standalone report viewer application with the help of the given [Create a standalone report viewer application in WPF.](/wpf/reportviewer/getting-started)
 
 ## Creating a custom report item run-time component
 
-The run-time component of the custom report item is implemented by using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component for the barcode custom report item for report viewer.
+The run-time component of the custom report item is implemented by using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component with the barcode custom report item in report viewer.
 
 ### Create report item assembly
 
-1.	Open the Visual Studio and select the class library project type, and then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
+1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
 2.	Add the reference "Syncfusion.ReportControls.Wpf" for the extension project.
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-3.png)
+    
+    >Note: Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
 3.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
-
->Note: Refer the above assemblies from the below installed location.
-For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
-
 
 ### Implementing the ICustomReportItem interface
 
@@ -164,14 +158,13 @@ internal partial class ImageConversion : UserControl
 
 You can clean and build the extension project, it will generate the run-time component assembly "Syncfusion.Extensions.BarcodeCRI.dll" in the bin folder of the project.
 
+>Note: You can create a standalone report viewer application with the help of given [Getting Started Documentation.](/wpf/reportviewer/getting-started)
+
 ## Deploy a custom report item 
 
 To deploy a custom report item, you must modify the application configuration files or create "ReportExtensions.config" file and copy the run-time component assembly (Syncfusion.Extensions.BarcodeCRI) and its dependent assemblies to the bin folder of your application. The deployment requires configuration to process the extensions, and the following describes about configuration settings.
 
-You need to replace the newly created assembly and its dependent assemblies in the application bin folder. 
-
-1.	Create a "ReportExtensions.config" file in your application.
-2.	The following "configSections" section is mandatory to process the extension in the control, so add it as shown in the following code.
+Create a "ReportExtensions.config" file in your application. The following "configSections" section is mandatory to process the extension in the control, so add it as shown in the following code.
 
 {% highlight xml %}
 <configSections>
@@ -179,7 +172,7 @@ You need to replace the newly created assembly and its dependent assemblies in t
 </configSections>
 {% endhighlight %}
 
-3.	You must add the `ReportItem` tag for all newly added report item types. It has following attributes.
+You must add the `ReportItem` tag for all newly added report item types. It has following attributes.
 
 <table>
 <tr>
@@ -209,9 +202,7 @@ You need to replace the newly created assembly and its dependent assemblies in t
 </configuration>
 {% endhighlight %}
 
-After creating the config file, add it to the report viewer application.
-
-Run the application, output with the barcode custom report item is rendered as below.
+After creating the config file, add it to the report viewer application. Run the application, output with the barcode custom report item is rendered as below.
 
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
