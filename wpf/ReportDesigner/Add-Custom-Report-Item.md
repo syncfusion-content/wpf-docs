@@ -10,19 +10,22 @@ documentation: ug
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The design-time component allows the custom report item to be defined and manipulated in the design surface of the report designer.
 
+>Note: You can create a standalone report designer application with the help of the given [Create a standalone report designer application](/wpf/reportdesigner/getting-started).
 
 ## Creating a custom report item design-time component
 The design-time component is a control that can be used in the Syncfusion Report Designer like other built-in report items such as Textbox, Tablix, Rectangle, and so on. The following section provides guideline to create a **Barcode** custom report item.
 
 ### Create a report item assembly
-1.	Open the Visual Studio and select the class library project type, and then name the project as "Syncfusion.Extensions.BarcodeDesigner" for the design-time component.
+1.	Open the Visual Studio and select the class library project type, and then name the project as "Syncfusion.Extensions.BarcodeDesigner" for the design-time component. 
+    ![](Add-Custom-Report-Item-images/Custom-Report-Item-4.png)
 2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf" and "Syncfusion.ReportDesigner.WPF" to an application.
+    ![](Add-Custom-Report-Item-images/Custom-Report-Item-5.png)
 3.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
 
->Note:  Refer the above assemblies from the below installed location. For report platform: %localappdata%\Syncfusion\ReportsSDK\Samples\Common\Assemblies and
+>Note:  Refer the above assemblies from the below installed location.
 For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
 
-The following attributes must be set to BarcodeCRIDesigner class:
+The following attributes must be set to BarcodeCRIDesigner class.
 
 Attribute Name	|Description
 ----------|------------
@@ -91,7 +94,7 @@ public override void Draw(Panel panel, ReportItemDrawParams dp)
 
 #### Add custom properties to component
 
-New custom properties can be added to the component to include additional features that are not natively supported in the RDL or to process the current control specific features. The newly created properties need to be added to the `CustomProperties` collection of the report item to serialize within RDL definition. The following code sample describes adding a custom property "BarcodeValue" to set the barcode custom report item value property: 
+New custom properties can be added to the component to include additional features that are not natively supported in the RDL or to process the current control specific features. The newly created properties need to be added to the `CustomProperties` collection of the report item to serialize within RDL definition. The following code sample describes adding a custom property "BarcodeValue" to set the barcode custom report item value property. 
 
 {% highlight c# %}
 [Browsable(true)]
@@ -140,8 +143,7 @@ public void SetCustomProperty(string propertyname, string value)
 #### Modifying component properties
 
 You can modify the properties that are exposed by the design-time component by adding the custom properties dialog or property editors.
-You can right-click the control in the design environment and select the properties in the shortcut menu to display a custom properties window.
-The following code creates a local property to modify the design-time component property of the `CustomData` class:
+The following code creates a local property to modify the design-time component property of the `CustomData` class.
 
 {% highlight c# %}
 [Browsable(true)]
@@ -157,6 +159,8 @@ public string DataSetName
     }
 }
 {% endhighlight %}
+
+You can right-click the control in the design environment and select the properties in the shortcut menu to display a custom properties window.
 
 ### Custom property editor
 
@@ -199,7 +203,7 @@ private void Expression_Click(object sender, RoutedEventArgs e)
 
 ### Modifying the custom component style
 
-The design-time component related style property changes can be handled and applied to the UIElement by overriding style related methods in the below table:
+The design-time component related style property changes can be handled and applied to the UIElement by overriding style related methods in the below table.
 
 Method name	|Description
 ----------|------------
@@ -224,26 +228,11 @@ public override void OnFontChanged()
 
 You can clean and build the extension project, it will generate the design-time component assembly "Syncfusion.Extensions.BarcodeDesigner.dll" in the bin folder of the project. 
 
-
-## Creating a custom report item run-time component
-
-If you want to preview the report in the report designer, then you should create a run-time component.
-
-The following links explain how to create custom report item run-time components:
-
-[Create a custom report item run time component](/wpf/ReportViewer/how-to/Add-Custom-Report-Item)
-Describes how to create a custom report item run-time component in the WPF Platform.
-
-[Create a custom report item run time component](/js/ReportViewer/Add-Custom-Report-Item)
-Describes how to create a custom report item run-time component in the web report viewer platform.
-
-
-
 ## Deploy a custom report item
 
-To deploy a custom report item, you must modify the application configuration files or create "ReportExtensions.config" file and copy the design-time(Syncfusion.Extensions.BarcodeDesigner) assembly into the appropriate application folder for the report designer. The deployment requires configuration to process the extensions. 
+To deploy a custom report item, you must modify the application configuration files or create "ReportExtensions.config" file and copy the design-time(Syncfusion.Extensions.BarcodeDesigner) assembly into the appropriate application folder for created standalone report designer application. The deployment requires configuration to process the extensions. 
 
-1.	The following "configSections" section is mandatory to process the extension inside the control, so add it as shown in the following code:
+1.	The following "configSections" section is mandatory to process the extension inside the control, so add it as shown in the following code.
 
 {% highlight xml %}
 <configSections>
@@ -251,7 +240,7 @@ To deploy a custom report item, you must modify the application configuration fi
 </configSections>
 {% endhighlight %}
 
-2.	You must add the `ReportItem` tag for all newly added report item types. It has following attributes:
+2.	You must add the `ReportItem` tag for all newly added report item types. It has following attributes.
 
 Attribute name	|Description
 --------------|------------------
@@ -259,11 +248,7 @@ Name|	Name of your report item that is going to be displayed in the list.
 Assembly|	Name of the newly created report item assembly.
 Type	|Report item class name with the namespace.
 
-For report designer, you need to replace the newly created assemblies and its dependent assemblies in the following location/appropriate application folders.
-
-C:\Program Files (x86)\Syncfusion\Report Designer\ReportDesigner
-
-Also, you need to add the created/modified "ReportExtensions.config" file in the above location with custom report item details.
+For report designer, you need to replace the newly created assemblies and its dependent assemblies in appropriate application folders.
 
 {% highlight xml %}
     <configuration>
@@ -279,7 +264,9 @@ Also, you need to add the created/modified "ReportExtensions.config" file in the
     </configuration>
 {% endhighlight %}
 
-Run the application, output with bar code custom report item is rendered as below:
+Also, you need to add the created/modified "ReportExtensions.config" file in standalone application.
+
+Run the application, output with bar code custom report item is rendered as below.
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows bar code custom report item that is added to built-in report item collections of the report designer.
@@ -289,3 +276,15 @@ Shows bar code custom report item that is added to built-in report item collecti
 
 Custom property dialog of the bar code custom report item.
    {:.caption}
+
+## Creating a custom report item run-time component
+
+If you want to preview the report in the report designer, then you should create a run-time component.
+
+The following steps explains how to create custom report item run-time components.
+
+[Create a custom report item run time component](/wpf/ReportViewer/how-to/Add-Custom-Report-Item)
+Describes how to create a custom report item run-time component in the WPF report viewer.
+
+[Create a custom report item run time component](/js/ReportViewer/Add-Custom-Report-Item)
+Describes how to create a custom report item run-time component in the web report viewer.
