@@ -236,7 +236,7 @@ To deploy a custom report item, you must modify the application configuration fi
 </configSections>
 {% endhighlight %}
 
-You must add the `ReportItem` tag for all newly added custom report item with following attributes.
+You must add the `ReportItem` tag for all newly added custom report item with the following attributes.
 
 Attribute name	|Description
 --------------|------------------
