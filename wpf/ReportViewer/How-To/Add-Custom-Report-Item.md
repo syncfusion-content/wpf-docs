@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Report Item
-description: Creating a custom report item run-time component in report viewer]
+description: Creating a custom report item run-time component in report viewer
 platform: WPF
 control: ReportViewer
 documentation: ug
