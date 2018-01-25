@@ -176,7 +176,7 @@ You must add the `ReportItem` tag for all newly added custom report item with th
 
 <table>
 <tr>
-<th>Attribute Name</th>
+<th>Attribute</th>
 <th>Description</th>
 </tr>
 <tr>
