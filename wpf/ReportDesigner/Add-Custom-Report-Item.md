@@ -23,7 +23,7 @@ The design-time component is a control that can be used in the Syncfusion Report
 
 The following attributes must be set to BarcodeCRIDesigner class.
 
-Attribute Name	|Description
+Attribute	|Description
 ----------|------------
 Localized name	|This is the attribute used to specify the display name for the custom report item.
 Custom editor	|This is used for the invoke property editor of the custom report item.
@@ -201,7 +201,7 @@ private void Expression_Click(object sender, RoutedEventArgs e)
 
 The design-time component related style property changes can be handled and applied to the UIElement by overriding style related methods in the below table.
 
-Method name	|Description
+Methods	|Description
 ----------|------------
 OnFontChanged()|	Invokes when the font value of the custom report item is changed.
 OnTextAlignChanged()|	Invokes when the text alignment of the custom report item is changed.
@@ -238,7 +238,7 @@ To deploy a custom report item, you must modify the application configuration fi
 
 You must add the `ReportItem` tag for all newly added custom report item with the following attributes.
 
-Attribute name	|Description
+Attribute	|Description
 --------------|------------------
 Name|	Name of your report item that is going to be displayed in the list.
 Assembly|	Name of the newly created report item assembly.
