@@ -27,7 +27,7 @@ Attribute	|Description
 ----------|------------
 Localized name	|This is the attribute used to specify the display name for the custom report item.
 Custom editor	|This is used for the invoke property editor of the custom report item.
-CustomReportItem	|This is the attribute used to identify the type of the custom report item. The name must match with the value of the <Name> attribute of the ReportItem element in the ReportExtension.config file.
+CustomReportItem	|This is the attribute used to identify the type of the custom report item. The name must match with the value of the `<Name>` attribute of the ReportItem element in the ReportExtension.config file.
 ToolboxBitmap|	Icon that represents the custom report item in the user interface.
 
 
