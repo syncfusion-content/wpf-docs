@@ -123,7 +123,7 @@ You can create a workbook with multiple sheets similar to excel, using a Tab con
 Grid with workbook of sheets
 {:.caption}
 
-### Complete Sample Output
+Sample Output
 
 ![](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
 
