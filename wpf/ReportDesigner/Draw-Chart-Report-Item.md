@@ -139,19 +139,19 @@ Add a data source and dataset to the Report Designer.
    
 3. If dataset is already added select available datasets and click Next.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img20.png)
 
 4. Drag to available fields to the corresponding Series,Categories and values and click Next.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img21.png)
 
 5. Select the Style and Layout of the table and click Finish.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img22.png)
    
 6. Then the chart will display with the selected fields.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img20.png)
+   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img23.png)
    
 7. To Apply Styles to the Charts,Right Click on the Chart and select the Chart Properties from the context menu.
 
