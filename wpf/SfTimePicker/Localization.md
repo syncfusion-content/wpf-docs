@@ -13,7 +13,7 @@ Localization is the process of making application as multi-lingual, by formattin
 
 ## Creating Resource file and adding value to the resource string based on Culture
 
-Add a resource file(.resx) in the application and assing key values to the resource string based on the culture. Refer below screenshot,
+Add a resource file(.resx) in the application and assign key values to the resource string based on the culture. Refer below screenshot,
 
 ![](Localization-images/localization-img1.png)
 
