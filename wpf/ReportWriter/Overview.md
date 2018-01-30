@@ -13,9 +13,9 @@ Report Writer is a class library that enables the user to render reports defined
 
 The important features of WPF Report Writer are listed as follows:
 
-* RDL Specification - Supports RDL Specification for the SQL Server 2008 and RDL Specification for the SQL Server 2008 R2 only. List of available report definition formats: [msdn.microsoft.com/library/dd297486(SQL.100)](https://msdn.microsoft.com/library/dd297486(SQL.100).aspx).
-* Data sources - You can use advanced database servers DataSources in Report Writer (SQL and Oracle).
-* Charts - Show all basic types of Charts that are available in Microsoft RDL reports.
+* RDL Specification - Supports RDL specification for the SQL Server 2008 and RDL specification for the SQL Server 2008 R2 only. List of available report definition formats: [msdn.microsoft.com/library/dd297486(SQL.100)](https://msdn.microsoft.com/library/dd297486(SQL.100).aspx).
+* Data sources - You can use advanced database servers Data Sources in Report Writer (SQL and Oracle).
+* Charts - Show all basic types of charts that are available in Microsoft RDL reports.
 * Tablix - Shows the summaries and simple tables.
 * Gauge - Shows measurement values by using expression values.
 * Textbox - Shows textbox data with expression support.
