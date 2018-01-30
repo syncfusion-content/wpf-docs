@@ -27,7 +27,7 @@ You can add tables to the Report Designer and drag the data fields to the table 
    
    * Visibility - To change the display options when the report is initially run.
    
-   * Filter - To add or delete the fields.
+   * Filter - To filter the fields based on the expression.
    
    * Sorting - To sort the fields in ascending order or descending order.
    

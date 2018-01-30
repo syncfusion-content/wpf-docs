@@ -49,7 +49,7 @@ You can follow these steps to add a Gauge to the Report Designer.
    
 8. Click OK.Then the values are updated in the scale.
 
-9. To change the range properties of the Gauge,Right click the gauge and navigate to the Range Properties > ScaleRange1.
+9. To change the range properties of the Gauge,Right click the gauge and navigate to the Range Properties > RadialRange1.
 
    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img6.png)
 
