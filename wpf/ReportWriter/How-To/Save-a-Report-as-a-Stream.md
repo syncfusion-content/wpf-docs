@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Save a report as a stream | ReportWriter | WPF | Syncfusion
-description: save a report as a stream?
+title: Save a report as stream | ReportWriter | WPF | Syncfusion
+description: save a report as a stream
 platform: wpf
 control: ReportWriter
 documentation: ug
 ---
 
-# Save a report as a stream?
+# Save a report as stream
 
 You can save a report as a stream using Save(Stream, WriterFormat) (overloaded method). This method is useful when generating the report on the server side and sending it to a client-side application. The following code explains how to save a report as a stream.
 
