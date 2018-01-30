@@ -7,8 +7,6 @@ control: ReportWriter
 documentation: ug
 ---
 
-# Getting Started
-
 ## Create ReportWriter
 
 This section illustrates how to add ReportWriter to the WPF application. It includes the following steps.
@@ -35,9 +33,9 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
    
 4. Set the following properties to ReportWriter.   
 
-   * reportPath - sets the local file system path of the report.
+   * ReportPath - Set the local file system path of the report.
    
-   * ProcessingMode - Set ProcessingMode as Remote for RDL report and Local for RDLC report.
+   * ReportProcessingMode - Set ProcessingMode as Remote for RDL report and Local for RDLC report.
    
    * Export format - Set Export format as PDF, Excel, Word or HTML.
    
@@ -83,7 +81,7 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
 
 The ReportWriter has support to view and save the RDL reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign `ReportPath`, `ProcessingMode` and `ExportFormat` to ReportWriter.
+1. Assign `ReportPath`, `ReportProcessingMode` and `ExportFormat` to ReportWriter.
 
    ~~~ csharp
    string reportPath = @"..\ReportTemplate\Product Catalog.rdl";
@@ -100,7 +98,7 @@ The ReportWriter has support to view and save the RDL reports. The following cod
 
 The ReportWriter has support to view and save the RDLC reports. The following code helps you to bind data to ReportWriter.
 
-1. Assign `ReportPath`, `ProcessingMode` and `ExportFormat` to ReportWriter.
+1. Assign `ReportPath`, `ReportProcessingMode` and `ExportFormat` to ReportWriter.
 
    ~~~ csharp
    string reportPath = @"..ReportTemplate\RDLC\ProductCatalog.rdlc";
@@ -109,14 +107,14 @@ The ReportWriter has support to view and save the RDLC reports. The following co
    reportWriter.Save("ProductCatalog.doc", WriterFormat.WORD);
    ~~~
    
-2. Add Datasource to the RDLC report.
+2. Add data source to the RDLC report.
 
    ~~~ csharp
    ReportDataSourceCollection dataSources = new ReportDataSourceCollection();
    dataSources.Add(new ReportDataSource { Name = "ProductCatalog", Value = ProductCatalogSource.GetData() });
    ~~~
 
-3. Assign values for the datasource which is given in the RDLC.
+3. Assign values for the data source which is given in the RDLC.
 
    ~~~ csharp
    #region ProductCatalog Details
