@@ -7,7 +7,7 @@ control: ReportWriter
 documentation: ug
 ---
 
-## Adding ReportWriter to an Application
+## Adding ReportWriter to an application
 
 This section illustrates how to add ReportWriter to the WPF application. It includes the following steps.
 
