@@ -74,17 +74,12 @@ For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.
 
 {% tabs %}
 {% highlight c# %}
-			
 //To perform cut operation for selected ranges
-
- var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
- spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
+var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
 
 //To perform cut operation
-
- spreadsheet.ActiveGrid.CopyPaste.Cut();
-
+spreadsheet.ActiveGrid.CopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,17 +87,12 @@ For [Copy](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion
 
 {% tabs %}
 {% highlight c# %}
-
 //To perform copy operation for selected ranges
-
- var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
- spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
+var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
 
 //To perform Copy operation
-
- spreadsheet.ActiveGrid.CopyPaste.Copy();
-
+spreadsheet.ActiveGrid.CopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,19 +100,13 @@ For [Paste](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusio
 
 {% tabs %}
 {% highlight c# %}
-
 //To perform paste operation
-
 spreadsheet.ActiveGrid.CopyPaste.Paste();
 
 //To perform paste operation with range and Paste Options
-
 var copyPaste = spreadsheet.ActiveGrid.CopyPaste as SpreadsheetCopyPaste;
-
 copyPaste.Paste(range);
-
 copyPaste.Paste(range, PasteOptions.Paste);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,9 +139,7 @@ By default, Undo/Redo operations in SfSpreadsheet is enabled. To disable the Und
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.HistoryManager.Enabled = false;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,13 +147,9 @@ To programmatically, invoke the Undo/Redo operations,
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.HistoryManager.Enabled = true;
-
 spreadsheet.HistoryManager.Undo();
-
 spreadsheet.HistoryManager.Redo();
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,9 +165,7 @@ By default, TabItem Context menu is enabled in SfSpreadsheet. To disable the Tab
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.AllowTabItemContextMenu = false;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,14 +173,13 @@ Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Pr
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.IsCustomTabItemContextMenuEnabled = true;
 spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
 
 //Custom TabItem ContextMenus
 
- public ContextMenu CustomTabItemContextMenu()
- {
+public ContextMenu CustomTabItemContextMenu()
+{
     var contextMenu = new ContextMenu();
     var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertRow.png", UriKind.Relative)) };
     var insertRow = new MenuItem() { Header = "InsertRow" };           
@@ -220,7 +195,6 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
     contextMenu.Items.Add(deleteRow);
     return contextMenu;
  }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -232,9 +206,7 @@ By default, Cell Context menu is enabled in SfSpreadsheet. To disable the Cell C
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.AllowCellContextMenu = false;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -244,13 +216,11 @@ Adding the customized menu items in the CellContextMenuOpening Event,
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.ActiveGrid.CellContextMenuOpening += ActiveGrid_CellContextMenuOpening;
 
 void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEventArgs e)
 {
     //Adding Customized Menu item
-        
     MenuItem PasteSpecial = new MenuItem();
     PasteSpecial.Header = "Pastespecial";
     Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
@@ -260,7 +230,6 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
     //Remove the existing Context menu
     spreadsheet.ActiveGrid.CellContextMenu.Items.RemoveAt(2);
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -274,9 +243,7 @@ To enable the comment in SfSpreadsheet, set the [ShowComment](http://help.syncfu
 
 {% tabs %}
 {% highlight c# %}
-
-    spreadsheet.ActiveGrid.ShowComment = true;
-
+spreadsheet.ActiveGrid.ShowComment = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -284,9 +251,7 @@ To set the comments for particular cell at run time,
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.ActiveSheet.Range["E5"].AddComment().Text = "Sample Comment";
 spreadsheet.ActiveGrid.InvalidateCell(5, 5);
-	
 {% endhighlight %}
 {% endtabs %}
