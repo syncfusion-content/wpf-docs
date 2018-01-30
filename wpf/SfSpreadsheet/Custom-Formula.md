@@ -13,22 +13,23 @@ SfSpreadsheet allows you to add custom formulas into its function library. You c
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
-  foreach (var grid in args.GridCollection)
-    AddCustomFormula(grid); 
+
+    foreach (var grid in args.GridCollection)
+        AddCustomFormula(grid); 
   
   //Computing the formula at runtime
+
    var range = spreadsheet.ActiveSheet.Range["B2"];
    spreadsheet.ActiveGrid.SetCellValue(range,"=Find(sample)");
-         
 }  
 
 private void AddCustomFormula(SpreadsheetGrid grid)
 {
+
   // Add a formula named Find to the Library.
    grid.FormulaEngine.AddFunction("Find", new FormulaEngine.LibraryFunction(ComputeLength));      
 }    
@@ -40,6 +41,5 @@ public string ComputeLength(string range)
   //Used to calculate the length of the string
     return range.Length.ToString();
 }   
-
 {% endhighlight %}
 {% endtabs %}
