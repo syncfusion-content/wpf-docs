@@ -7,7 +7,7 @@ control: ReportWriter
 documentation: ug
 ---
 
-## Create ReportWriter
+## Adding ReportWriter to an Application
 
 This section illustrates how to add ReportWriter to the WPF application. It includes the following steps.
 
@@ -31,7 +31,7 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
    * Syncfusion.Shared.Wpf
    * Syncfusion.XlsIO.Base
    
-4. Set the following properties to ReportWriter.   
+4. Set the following properties of ReportWriter.   
 
    * ReportPath - Set the local file system path of the report.
    
@@ -39,7 +39,7 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
    
    * Export format - Set Export format as PDF, Excel, Word or HTML.
    
-5. Add the following code to ReportWriter.
+5. Add the following code to export RDL report to the required export formats.
 
    ~~~ csharp
    string fileName = null;
@@ -77,9 +77,9 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
 
    ![](Getting-Started_images/Getting-Started_img2.png) 
 
-## Generate RDL Report
+## Export RDL Reports
 
-The ReportWriter has support to view and save the RDL reports. The following code helps you to bind data to ReportWriter.
+The ReportWriter allows you to export the RDL report to popular file formats PDF, WORD, EXCEL and HTML. The following code helps you to bind data to ReportWriter.
 
 1. Assign `ReportPath`, `ReportProcessingMode` and `ExportFormat` to ReportWriter.
 
@@ -94,9 +94,9 @@ The ReportWriter has support to view and save the RDL reports. The following cod
 
    ![](Getting-Started_images/Getting-Started_img3.png) 
 
-## Generate RDLC Reports
+## Export RDLC Reports
 
-The ReportWriter has support to view and save the RDLC reports. The following code helps you to bind data to ReportWriter.
+The ReportWriter allows you to export the RDLC report to popular file formats PDF, WORD, EXCEL and HTML. The following code helps you to bind data to ReportWriter.
 
 1. Assign `ReportPath`, `ReportProcessingMode` and `ExportFormat` to ReportWriter.
 
