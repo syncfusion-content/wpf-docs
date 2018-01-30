@@ -18,7 +18,7 @@ In order to customize the cell, please follow the below steps
 * Create  the Custom Cell Renderer
 * Associating the Custom Cell Renderer to SpreadsheetGrid
 
-## Create a DataTemplate
+**Create a DataTemplate**
 
 Create a custom DataTemplate (For ex: Button Template) in the Main window.xaml file,
 
@@ -31,7 +31,7 @@ Create a custom DataTemplate (For ex: Button Template) in the Main window.xaml f
 {% endhighlight %}
 {% endtabs %}
 
-## Override the SpreadsheetColumn class
+**Override the SpreadsheetColumn class**
 
 Create an extension class SpreadsheetColumnExt by overriding the [SpreadsheetColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetColumn.html) Class which holds all the operations related with cells.
 
@@ -78,7 +78,7 @@ base.OnUpdateColumn(out oldElement);
 {% endhighlight %}
 {% endtabs %}
 
-## Create the Custom Cell Renderer
+**Create the Custom Cell Renderer**
 
 Create a SpreadsheetTemplateCellRenderer class by overriding the [SpreadsheetVirtualizingCellRendererBase](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.CellRenderer.SpreadsheetVirtualizingCellRendererBase%602.html) class to display the defined custom renderer element.
 
@@ -137,7 +137,7 @@ protected override void OnInitializeEditElement(RowColumnIndex rowColumnIndex, C
 
 N> If you want to load the default edit element, then no need to override the `OnInitializeEditElement` method.
 
-## Associating the Custom Cell Renderer to SpreadsheetGrid
+**Associating the Custom Cell Renderer to SpreadsheetGrid**
 
 To associate the custom cell renderer in [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html), invoke the [WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorkbookLoaded_EV.html) Event of SfSpreadsheet and initialize the SpreadsheetTemplateCellRenderer and add it to the renderer collection. 
 
