@@ -12,6 +12,7 @@ The Syncfusion WPF controls can be added in a Visual Studio projects by using ei
 
 * Through Designer
 * Through Code-Behind
+* Through Project Template
 
 ## Through Designer
 
@@ -152,3 +153,49 @@ Me.Content = textBoxExt1 'Here this denotes parent Window
 {% endtabs %}
 
 ![](ThroughDragndDrop_images/AddSyncfusionControls_img3.jpeg)
+
+## Through Project Template
+
+Syncfusion provides the Visual Studio Project Templates for the Syncfusion WPF platform to create Syncfusion WPF Application. 
+
+I> The Syncfusion WPF templates are available from v16.4.0.20. 
+
+### Create Syncfusion WPF Project 
+
+The following steps direct you to create the Syncfusion WPF project through the Visual Studio Project Template. 
+
+1. To create a Syncfusion WPF project, choose New Project-> Syncfusion->Windows->Syncfusion WPF Application from Visual Studio
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-1.png)
+
+2. Name the Project, choose the destination location when required and set the Framework of the project, then click OK.  
+
+   N> Minimum target Framework is 4.0 for Syncfusion WPF project templates. 
+
+3. Choose the options to configure the Syncfusion WPF Application by using the following Project Configuration Wizard.  
+  
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-2.png)
+                                                     
+   ### Project configurations: 
+
+   **Language:** Select the language, either C# or VB. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-3.png)
+
+   **Choose Theme:** Choose the required theme. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-4.png)
+
+   **Assemblies From:** Choose the assembly location from where it is going to be added to the project. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-5.png)
+
+   **Select Control:** Choose the control based on your need. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-6.png)
+      
+4. Once the Project Configuration Wizard is done, the Syncfusion WPF project is created with required references and XAML. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-7.png)
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
