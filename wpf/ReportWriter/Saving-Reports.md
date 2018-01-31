@@ -7,22 +7,22 @@ control: ReportWriter
 documentation: ug
 ---
 
-# Saving Reports
+# Saving reports
 
 Essential ReportWriter provides support for saving a report as a PDF, Word, Excel and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
 
-## Saving Report as PDF 
+## Saving report as PDF 
 
 The report generated using the ReportDesigner can be exported as a PDF document using the following code.
 
 {% tabs %}
 {% highlight C# %}
-//Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+//Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 ReportWriter reportWriter = new ReportWriter(reportpath, dataSources);
 reportWriter.Save("Sample.pdf", WriterFormat.PDF);
 {% endhighlight %}
 {% highlight vbnet %}
-'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 Dim reportWriter As New ReportWriter (reportpath, dataSources)
 reportWriter.Save("Sample.pdf", WriterFormat.PDF)
 {% endhighlight %}
@@ -30,18 +30,18 @@ reportWriter.Save("Sample.pdf", WriterFormat.PDF)
 
 ![](Saving-Reports_images/Saving-Reports_img1.png) 
 
-## Saving Report as Excel 
+## Saving report as Excel 
 
 The report generated using the ReportDesigner can be exported as an Excel document using the following code example. 
 
 {% tabs %}
 {% highlight C# %}
-//Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+//Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 reportWriter.Save("Sample.xls", WriterFormat.Excel);
 {% endhighlight %}
 {% highlight vbnet %}
-'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 Dim reportWriter As New ReportWriter (reportPath, dataSources)
 reportWriter.Save("Sample.xls", WriterFormat.Excel)
 {% endhighlight %}
@@ -49,18 +49,18 @@ reportWriter.Save("Sample.xls", WriterFormat.Excel)
 
 ![](Saving-Reports_images/Saving-Reports_img2.png) 
 
-## Saving Report as Word 
+## Saving report as Word 
 
 The report generated using the ReportDesigner can also be exported as a Word document using the following code example.
 
 {% tabs %}
 {% highlight C# %}
-// Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection
+// Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 reportWriter.Save("Sample.doc", WriterFormat.WORD);
 {% endhighlight %}
 {% highlight vbnet %}
-'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 Dim reportWriter As New ReportWriter (reportPath, dataSources)
 reportWriter.Save("Sample.doc", WriterFormat.WORD)
 {% endhighlight %}
@@ -68,18 +68,18 @@ reportWriter.Save("Sample.doc", WriterFormat.WORD)
 
 ![](Saving-Reports_images/Saving-Reports_img3.png) 
 
-## Saving Report as an HTML 
+## Saving report as an HTML 
 
 The report generated using the ReportDesigner can be exported as an HTML document using the following code example. 
 
 {% tabs %}
 {% highlight C# %}
-//Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+//Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 reportWriter.Save("Sample.html", WriterFormat.HTML);
 {% endhighlight %}
 {% highlight vbnet %}
-'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSource" Collection.
+'Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection".
 Dim reportWriter As New ReportWriter (reportPath, dataSources)
 reportWriter.Save("Sample.html", WriterFormat.HTML)
 {% endhighlight %}
