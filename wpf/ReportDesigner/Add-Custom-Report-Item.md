@@ -192,7 +192,7 @@ private void Expression_Click(object sender, RoutedEventArgs e)
 {
     //Displays expression editor dialog box when expression is clicked in custom property dialog.
     ExpressionEditor editor = new ExpressionEditor();
-    //this oldComboValue is represents the user entered value in combo box.
+    //this oldComboValue ui element represents the old value of an invoked property.
     object newValue = editor.EditValue(this, null, this.oldComboValue)
 }
 {% endhighlight %}
@@ -227,7 +227,7 @@ You can clean and build the extension project, it will generate the design-time 
 
 N> You can create a standalone report designer application with the help of given [Getting Started Documentation](/wpf/reportdesigner/getting-started). 
 
-You can download the custom report item extension project of sample barcode for report designer by clicking here  [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659).
+You can download the extension project with barcode custom report item for report designer from here  [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659).
 
 ## Deploy a custom report item
 
