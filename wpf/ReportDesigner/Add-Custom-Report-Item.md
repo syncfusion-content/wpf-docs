@@ -15,7 +15,7 @@ The design-time component is a control that can be used in the Syncfusion Report
 ### Create a report item assembly
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeDesigner" for the design-time component. 
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-4.png)
-2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf", "Syncfusion.ReportDesigner.WPF" and "Syncfusion.SfBarcode.WPF" to an application.
+2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf", "Syncfusion.ReportDesigner.WPF", "Syncfusion.SfBarcode.WPF" and "Syncfusion.Shared.WPF" to an application.
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-5.png)
     
     N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
