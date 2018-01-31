@@ -21,7 +21,6 @@ You can export SfDataGrid to excel by using the [ExportToExcel](http://help.sync
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Converter;
-
 var options = new ExcelExportingOptions();
 options.ExcelVersion = ExcelVersion.Excel2013;
 var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
@@ -210,19 +209,24 @@ if (sfd.ShowDialog() == true)
 {
     using (Stream stream = sfd.OpenFile())
     {
+
         if (sfd.FilterIndex == 1)
             workBook.Version = ExcelVersion.Excel97to2003;
+
         else if (sfd.FilterIndex == 2)
             workBook.Version = ExcelVersion.Excel2010;
+
         else
             workBook.Version = ExcelVersion.Excel2013;
         workBook.SaveAs(stream);
     }
 
     //Message box confirmation to view the created workbook.
+
     if (MessageBox.Show("Do you want to view the workbook?", "Workbook has been created",
                         MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
     {
+
         //Launching the Excel file using the default Application.[MS Excel Or Free ExcelViewer]
         System.Diagnostics.Process.Start(sfd.FileName);
     }
@@ -324,33 +328,34 @@ var workBook = excelEngine.Excel.Workbooks[0];
 
 workBook.Worksheets[0].UsedRange.BorderInside(ExcelLineStyle.Thick, ExcelKnownColors.Black);
 workBook.Worksheets[0].UsedRange.BorderAround(ExcelLineStyle.Thick, ExcelKnownColors.Black);
-
 workBook.Worksheets[0].SaveAsHtml("test.htm", Syncfusion.XlsIO.Implementation.HtmlSaveOptions.Default);
 
 System.Net.Mail.MailMessage myMessage = new System.Net.Mail.MailMessage();
 
 myMessage.To.Add("Support@syncfusion.com");
-
 myMessage.From = new MailAddress("Support@syncfusion.com");
 myMessage.Priority = MailPriority.High;
-
 myMessage.Subject = "Order Details";
 myMessage.IsBodyHtml = true;
 myMessage.Body = new StreamReader("test.htm").ReadToEnd();
 
 SmtpClient client = new SmtpClient("smtp.office365.com", 587);
+
 client.EnableSsl = true;
 client.UseDefaultCredentials = false;
 client.Credentials = new NetworkCredential("Support@syncfusion.com", "test");
 
 int count = 0;
+
 while (count < 3)
 {
+
     try
     {
         client.Send(myMessage);
         count = 3;
     }
+
     catch (Exception ex)
     {
         Console.WriteLine(ex.Message);
@@ -423,17 +428,20 @@ workBook.SaveAs("Sample.xlsx");
 
 private static void ExportingHandler(object sender, GridExcelExportingEventArgs e)
 {
+
       if (e.CellType == ExportCellType.HeaderCell)
       {
           e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.LightPink);
           e.CellStyle.ForeGroundBrush = new SolidColorBrush(Colors.White);
           e.Handled = true;
       }
+
       else if (e.CellType == ExportCellType.RecordCell)
       {
           e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.LightSkyBlue);
           e.Handled = true;
       }
+
       else if (e.CellType == ExportCellType.GroupCaptionCell)
       {
           e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.Wheat);
@@ -463,13 +471,17 @@ workBook.SaveAs("Sample.xlsx");
 
 private static void CellExportingHandler(object sender, GridCellExcelExportingEventArgs e)
 {            
+
      // Based on the column mapping name and the cell type, we can change the cell 
                                           //values while exporting to excel.
      if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "IsClosed")
      {
+
          //if the cell value is True, "Y" will be displayed else "N" will be displayed.
+
          if (e.CellValue.Equals(true))
              e.Range.Cells[0].Value = "Y";
+
          else
              e.Range.Cells[0].Value = "N";
          e.Handled = true;
@@ -496,9 +508,11 @@ workBook.SaveAs("Sample.xlsx");
 
 private static void CellExportingHandler(object sender, GridCellExcelExportingEventArgs e)
 {           
+
      if (!(e.NodeEntry is RecordEntry))
         return;
      var record = e.NodeEntry as RecordEntry;
+
      if ((record.Data as OrderInfo).Country == "Mexico")
      {
          e.Range.CellStyle.ColorIndex = ExcelKnownColors.Green;
@@ -526,6 +540,7 @@ workBook.SaveAs("Sample.xlsx");
 
 private static void CellExportingHandler(object sender, GridCellExcelExportingEventArgs e)
 {
+
     if (e.ColumnName != "OrderID")
         return;
 
@@ -664,6 +679,7 @@ workBook.SaveAs("Sample.xlsx");
 private static void ChildExportingHandler(object sender, GridChildExportingEventArgs e)
 {
        var recordEntry = e.NodeEntry as RecordEntry;
+
        if ((recordEntry.Data as OrderInfo).OrderID == 1002)
           e.Cancel = true;
 }
@@ -685,6 +701,7 @@ options.ChildExportingEventHandler = ChildExportingHandler;
 var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
 var workBook = excelEngine.Excel.Workbooks[0];
 workBook.SaveAs("Sample.xlsx");
+
 private static void ChildExportingHandler(object sender, GridChildExportingEventArgs e)
 {            
       e.ExcludeColumns.Add("OrderID");
@@ -710,9 +727,10 @@ workBook.SaveAs("Sample.xlsx");
 
 private static void CellExportingHandler(object sender, GridCellExcelExportingEventArgs e)
 {
-    if (e.GridViewDefinition == null || e.GridViewDefinition.RelationalColumn !=  
-                             "ProductDetails")
+
+    if (e.GridViewDefinition == null || e.GridViewDefinition.RelationalColumn != "ProductDetails")
         return;
+
     if (e.ColumnName == "OrderID")
     {
         e.Range.CellStyle.Font.Size = 12;
@@ -742,15 +760,10 @@ Reference:
 {% tabs %}
 {% highlight c# %}
 var options = new ExcelExportingOptions();                   
-                    
 options.ExportMode = ExportMode.Value;                 
-
 options.ExcelVersion = ExcelVersion.Excel2013;           
-
 var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-
 IWorkbook workBook = excelEngine.Excel.Workbooks[0];
-
 workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 {% endhighlight %}
 {% endtabs %}
@@ -768,31 +781,19 @@ Reference:
 {% tabs %}
 {% highlight c# %}
 var options = new ExcelExportingOptions();                   
-                    
 options.ExportMode = ExportMode.Value;                 
-
 options.ExcelVersion = ExcelVersion.Excel2013;           
-
 var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
-
 IWorkbook workBook = excelEngine.Excel.Workbooks[0];
 
 IConditionalFormats condition = workBook.ActiveSheet.Range[2,1,this.dataGrid.View.Records.Count+1,this.dataGrid.Columns.Count].ConditionalFormats;
-
 IConditionalFormat condition1 = condition.AddCondition();
-
 condition1.FormatType = ExcelCFType.Formula;
-
 condition1.FirstFormula = "MOD(ROW(),2)=0";
-
 condition1.BackColorRGB = System.Drawing.Color.Pink;
-
 IConditionalFormat condition2 = condition.AddCondition();
-
 condition2.FormatType = ExcelCFType.Formula;
-
 condition2.FirstFormula = "MOD(ROW(),2)=1";
-
 condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endhighlight %}
 {% endtabs %}
