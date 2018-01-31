@@ -15,11 +15,27 @@ The design-time component is a control that can be used in the Syncfusion Report
 ### Create a report item assembly
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeDesigner" for the design-time component. 
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-4.png)
-2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf" and "Syncfusion.ReportDesigner.WPF" to an application.
+2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf", "Syncfusion.ReportDesigner.WPF" and "Syncfusion.SfBarcode.WPF" to an application.
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-5.png)
     
-    >Note:  Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
-3.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
+    N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
+
+3.  Add the following assemblies.
+    
+   * PresentationCore
+   * PresentationFramework
+   * System
+   * System.Core
+   * System.Data
+   * System.Drawing
+   * System.Windows.Forms
+   * System.Xaml
+   * System.Xml
+   * System.Xml.Linq
+   * WindowsBase
+   * Syncfusion.Shared.Wpf
+
+4.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
 
 The following attributes must be set to BarcodeCRIDesigner class.
 
@@ -192,7 +208,7 @@ private void Expression_Click(object sender, RoutedEventArgs e)
 {
     //Displays expression editor dialog box when expression is clicked in custom property dialog.
     ExpressionEditor editor = new ExpressionEditor();
-    objectnewValue = editor.EditValue(this, null, this.oldComboValue);
+    object newValue = editor.EditValue(this, null, "some text");
 }
 {% endhighlight %}
 
@@ -224,7 +240,9 @@ public override void OnFontChanged()
 
 You can clean and build the extension project, it will generate the design-time component assembly "Syncfusion.Extensions.BarcodeDesigner.dll" in the bin folder of the project.
 
->Note: You can create a standalone report designer application with the help of given [Getting Started Documentation](/wpf/reportdesigner/getting-started). 
+N> You can create a standalone report designer application with the help of given [Getting Started Documentation](/wpf/reportdesigner/getting-started). 
+
+Sample barcode custom report item extension project for report designer [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659).
 
 ## Deploy a custom report item
 

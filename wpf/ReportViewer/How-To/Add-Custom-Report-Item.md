@@ -17,11 +17,27 @@ The run-time component of the custom report item is implemented by using CLS-com
 
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
-2.	Add the reference "Syncfusion.ReportControls.Wpf" for the extension project.
+2.	Add the reference "Syncfusion.ReportControls.Wpf" and "Syncfusion.SfBarcode.WPF" for the extension project.
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-3.png)
     
-    >Note: Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
-3.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
+    N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
+
+3.  Add the following assemblies.
+    
+   * PresentationCore
+   * PresentationFramework
+   * System
+   * System.Core
+   * System.Data
+   * System.Drawing
+   * System.Windows.Forms
+   * System.Xaml
+   * System.Xml
+   * System.Xml.Linq
+   * WindowsBase
+   * Syncfusion.Shared.Wpf
+   
+4.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
 
 ### Implementing the ICustomReportItem interface
 
@@ -79,7 +95,7 @@ namespace Syncfusion.Extensions.BarcodeCRI
                 barcodeControl.Background = new SolidColorBrush(Colors.Transparent);
                 barcodeControl.Height = customReportItem.Height.ToPixels();
                 barcodeControl.Width = customReportItem.Width.ToPixels();
-                barcodeControl.Text = barcodeValue;
+                barcodeControl.Text = (string)LookupCustomProperty(customReportItem.CustomProperties, "BarcodeValue");
                 barcodeControl.InvalidateArrange();
                 barcodeControl.UpdateLayout();
                 MemoryStream stream = new ImageConversion().CovertToImage(barcodeControl);
@@ -158,7 +174,9 @@ internal partial class ImageConversion : UserControl
 
 You can clean and build the extension project, it will generate the run-time component assembly "Syncfusion.Extensions.BarcodeCRI.dll" in the bin folder of the project.
 
->Note: You can create a standalone report viewer application with the help of given [Getting Started Documentation.](/wpf/reportviewer/getting-started)
+N> You can create a standalone report viewer application with the help of given [Getting Started Documentation.](/wpf/reportviewer/getting-started)
+
+Sample barcode custom report item extension project for report viewer [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeCRI1898349564).
 
 ## Deploy a custom report item 
 
@@ -199,7 +217,6 @@ You must add the `ReportItem` tag for all newly added custom report item with th
       <ReportItem Name="Barcode" Assembly="Syncfusion.Extensions.BarcodeCRI" Type="Syncfusion.Extensions.BarcodeCRI.BarcodeCustomReportItem" />
     </ReportItems>
   </ReportingExtensions>
-</configuration>
 {% endhighlight %}
 
 After creating the config file, add it to the report viewer application. Run the application, output with the barcode custom report item is rendered as below.
