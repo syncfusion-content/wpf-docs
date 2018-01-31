@@ -24,7 +24,6 @@ You can export SfDataGrid to PDF by using the following extension methods presen
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Converter;
-
 var document = dataGrid.ExportToPdf();
 document.Save("Sample.pdf");
 {% endhighlight %}
@@ -325,9 +324,11 @@ if (sfd.ShowDialog() == true)
     }
 
     //Message box confirmation to view the created Pdf file.
+
     if (MessageBox.Show("Do you want to view the Pdf file?", "Pdf file has been created",
                         MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
     {
+ 
         //Launching the Pdf file using the default Application.
         System.Diagnostics.Process.Start(sfd.FileName);
     }
@@ -369,10 +370,13 @@ document.Save("Sample.pdf");
 
 void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {
+
     if (e.CellType == ExportCellType.HeaderCell)
         e.CellStyle.BackgroundBrush = PdfBrushes.LightSteelBlue;
+
     else if (e.CellType == ExportCellType.GroupCaptionCell)
         e.CellStyle.BackgroundBrush = PdfBrushes.LightGray;
+
     else if (e.CellType == ExportCellType.RecordCell)
         e.CellStyle.BackgroundBrush = PdfBrushes.Wheat;
 }
@@ -394,8 +398,10 @@ document.Save("Sample.pdf");
 
 void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {    
+
     if (e.CellType != ExportCellType.RecordCell)
         return;
+
     //creates a new font from the font file.                
     var font = new PdfTrueTypeFont(@"..\..\Resources\segoeui.ttf", 9f, PdfFontStyle.Regular);
     e.CellStyle.Font = font;
@@ -422,12 +428,17 @@ document.Save("Sample.pdf");
 
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {
+
     // Based on the column mapping name and the cell type, you can change the cell values while exporting to PDF.
+
     if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "IsClosed")
     {
+
         //if the cell value is True, "Y" will be displayed else "N" will be displayed.
+
         if (e.CellValue.Equals("True"))
             e.CellValue = "Y";
+
         else
             e.CellValue = "N";
     }
@@ -449,10 +460,13 @@ PdfExportingOptions options = new PdfExportingOptions();
 options.CellsExportingEventHandler = CellsExportingEventHandler;
 var document = dataGrid.ExportToPdf(options);
 document.Save("Sample.pdf");
+
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {
+
     if (!(e.NodeEntry is OrderInfo))
         return;
+
     if ((e.NodeEntry as OrderInfo).Country == "Mexico")
     {
         var cellStyle = new PdfGridCellStyle();
@@ -479,10 +493,12 @@ document.Save("Sample.pdf");
 
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {    
+
     if (e.CellType != ExportCellType.RecordCell)
         return;
 
     PdfStringFormat format = new PdfStringFormat();
+
     //format the string from right to left.
     format.RightToLeft = true;
     e.PdfGridCell.StringFormat = format;
@@ -505,17 +521,22 @@ document.Save("Sample.pdf");
 
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {  
+ 
     if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "IsClosed")
     {
         var style = new PdfGridCellStyle();
         PdfPen normalBorder = new PdfPen(PdfBrushes.DarkGray, 0.2f);
         System.Drawing.Image image = null;
+ 
         //Images are exported based on the CellValue 
+ 
         if (e.CellValue.Equals("True"))
         {
+ 
             //Access the image from the specified path 
             image = System.Drawing.Image.FromFile(@"..\..\Images\True.png");
         }
+ 
         else
             image = System.Drawing.Image.FromFile(@"..\..\Images\False.png");
 
@@ -523,6 +544,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         style.BackgroundImage = PDFImage.FromImage(image);
         e.PdfGridCell.ImagePosition = PdfGridImagePosition.Fit;
         e.PdfGridCell.Style = style;
+
         //customize the Border color of PdfGridCell
         e.PdfGridCell.Style.Borders.All = normalBorder;
         e.CellValue = null;
@@ -583,6 +605,7 @@ document.Save("Sample.pdf");
 void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArgs e)
 {
     var recordEntry = e.NodeEntry as RecordEntry;
+
     if ((recordEntry.Data as OrderInfo).OrderID == 1002)
         e.Cancel = true;
 }
@@ -604,6 +627,7 @@ options.ExportDetailsView = true;
 options.ChildGridExportingEventHandler = ChildGridExportingEventHandler;
 var document = dataGrid.ExportToPdf(options);
 document.Save("Sample.pdf");
+
 void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArgs e)
 { 
     e.PdfExportingOptions.ExcludeColumns = new List&lt;string&gt;() { "OrderID" };
@@ -629,8 +653,10 @@ document.Save("Sample.pdf");
 
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {
+ 
     if (e.GridViewDefinition == null || e.GridViewDefinition.RelationalColumn != "ProductDetails")                                     
         return;
+ 
     if (e.ColumnName == "OrderID")
     {
         var cellStyle = new PdfGridCellStyle();

@@ -152,8 +152,10 @@ In order to add control manually in C#, do the below steps,
 using Syncfusion.UI.Xaml.Grid;
 namespace WpfApplication1
 {
+ 
     public partial class MainWindow : Window
     {
+ 
         public MainWindow()
         {
             InitializeComponent();
@@ -211,8 +213,7 @@ public class OrderInfo
         set {  shippingCity = value; }
     }
 
-    public OrderInfo(int orderId, string customerName, string country, string     
-    customerId,string shipCity)
+    public OrderInfo(int orderId, string customerName, string country, string customerId,string shipCity)
     {
         this.OrderID = orderId;
         this.CustomerName = customerName;
@@ -547,6 +548,7 @@ this.dataGrid.SortColumnsChanging += dataGrid_SortColumnsChanging;
 
 void dataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
 {
+
     if (e.AddedItems[0].ColumnName == "CustomerName")
     e.Cancel = true;
 }

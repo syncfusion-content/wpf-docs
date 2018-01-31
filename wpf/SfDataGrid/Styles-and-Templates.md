@@ -127,18 +127,20 @@ The below code example shows how to animate the `DataRow` when the row data is c
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
-
 public class CustomDataRow : DataRow
 {
+
     public CustomDataRow()
         : base()
     {                  
     }
      
     protected Storyboard sb = null;
+
     protected override void OnRowDataChanged()
     {
         base.OnRowDataChanged();
+
         if (this.WholeRowElement != null)
         {
             DoubleAnimation animation = new DoubleAnimation
@@ -161,13 +163,16 @@ public class CustomDataRow : DataRow
 
 public class CustomRowGenerator : RowGenerator
 {
+
     public CustomRowGenerator(SfDataGrid dataGrid)
         : base(dataGrid)
     { }
 
     protected override GridDataRow GetDataRow<T>(RowType type)
     {
+
         //Set the customized DataRow.
+
         if (typeof(T) == typeof(DataRow))
             return new CustomDataRow();
         return base.GetDataRow<T>(type);
@@ -186,6 +191,7 @@ this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
 
 public class CustomVirtualizingCellsControl : VirtualizingCellsControl
 {
+
     public CustomVirtualizingCellsControl()
         : base()
     {
@@ -197,8 +203,10 @@ public class CustomVirtualizingCellsControl : VirtualizingCellsControl
         var newValue = e.NewValue as INotifyPropertyChanged;
         newValue.PropertyChanged += NewValue_PropertyChanged;
     }      
+
     private void NewValue_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
+
         if (e.PropertyName == "CustomerID")
             this.Background = new SolidColorBrush(Colors.Pink);
     }
@@ -212,7 +220,9 @@ public class CustomRowGenerator : RowGenerator
 
     protected override VirtualizingCellsControl GetVirtualizingCellsControl<T>()
     {
+ 
         //Set the customized VirtualizingCellsControl
+ 
         if (typeof(T) == typeof(VirtualizingCellsControl))
             return new CustomVirtualizingCellsControl();
         return base.GetVirtualizingCellsControl<T>();
@@ -267,12 +277,14 @@ Similarly, you can able to customize:
 1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
 2. [GridFilterRowCell](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
 The below code example shows how to animate the cell based on the changes occur in another cell using the `DataContextChanged` and `PropertyChanged` events.
+
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
 
 public class CustomGridCell : GridCell
 {       
+
     public CustomGridCell() : base()
     {
         this.DataContextChanged += CustomGridCell_DataContextChanged;            
@@ -284,8 +296,10 @@ public class CustomGridCell : GridCell
         newData.PropertyChanged += Data_PropertyChanged;
     }
     protected Storyboard sb = null;
+
     private void Data_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
+
         if (e.PropertyName == "CustomerID")
         {
             DoubleAnimation animation = new DoubleAnimation
@@ -314,6 +328,7 @@ public class CustomGridCell : GridCell
 
 public class CustomRowGenerator : RowGenerator
 {
+
     public CustomRowGenerator(SfDataGrid dataGrid)
         : base(dataGrid)
     {
@@ -581,7 +596,7 @@ this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
 void dataGrid_AutoGeneratingRelations
               (object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {
-            e.GridViewDefinition.DataGrid.HeaderStyle = (Style)this.Resources["header"];
+    e.GridViewDefinition.DataGrid.HeaderStyle = (Style)this.Resources["header"];
 }
 {% endhighlight %}
 {% endtabs %}
@@ -628,19 +643,24 @@ You can apply the different style to stacked header by overriding the [default r
 {% highlight c# %}
 //Default GridStackedCellRenderer is removed.
 this.dataGrid.CellRenderers.Remove("StackedHeader");
+
 //Customized GridStackedCellRenderer is added.
 this.dataGrid.CellRenderers.Add("StackedHeader", new GridCustomStackedRenderer());
 
 public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 {
+
     public GridCustomStackedRenderer()
     {
 
     }
+
     public override void OnInitializeEditElement(DataColumnBase dataColumn, GridStackedHeaderCellControl uiElement, object dataContext)
     {
+
         if (dataColumn.ColumnIndex == 0)
             uiElement.Style = App.Current.Resources["style1"] as Style;
+
         else if (dataColumn.ColumnIndex == 2) 
             uiElement.Style = App.Current.Resources["style2"] as Style;            
         base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
@@ -966,12 +986,16 @@ Here, custom template applied to TotalPrice and CustomerID columns.
 {% highlight c# %}
 public class GridCellTemplateSelector : DataTemplateSelector
 {
+
     public override DataTemplate SelectTemplate(object item, DependencyObject container)
     {
         var data = (item as DataContextHelper).Record as OrderInfo;
+
         //custom logic is checked.
+
         if (data.TotalPrice < 1005)
             return Application.Current.Resources["CellTemplate1"] as DataTemplate;
+
         else
             return Application.Current.Resources["CellTemplate2"] as DataTemplate;
     }
@@ -1045,10 +1069,13 @@ For example, in the below code example TextBox or DatePicker will be loaded base
 {% highlight c# %}
 public class GridCellEditTemplateSelector : DataTemplateSelector
 {
+ 
     public override DataTemplate SelectTemplate(object item, DependencyObject container)
     {
+ 
         if((item as OrderInfo).TotalPrice < 1005)
             return Application.Current.Resources["textbox"] as DataTemplate;
+ 
         else
             return Application.Current.Resources["DatePicker"] as DataTemplate;            
     }        
@@ -1395,7 +1422,6 @@ You can show the indication of data loading with the help of BusyIndicator by se
 {% highlight c# %}
 sfDataGrid.Loaded += sfDataGrid_Loaded;
 sfDataGrid.ItemsSourceChanged += sfDataGrid_ItemsSourceChanged;
-
 async void sfDataGrid_Loaded(object sender, RoutedEventArgs e)
 {
     this.sfDataGrid.ItemsSource = await (this.DataContext as ViewModel).GetRecords();
@@ -1560,15 +1586,15 @@ Any built-in themes can be applied to SfDataGrid by setting VisualStyle attached
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfDataGrid x:Name="dataGrid"
-							AddNewRowPosition="Top"
-							AllowFiltering="True"
-							sfSkin:SfSkinManager.VisualStyle="Office2016Colorful"
-							ItemsSource="{Binding OrdersDetails}"
-							NavigationMode="Cell"
-							ShowGroupDropArea="True"
-							HideEmptyGridViewDefinition="True"
-							ShowRowHeader="True" />
+<syncfusion:SfDataGrid x:Name="dataGrid"
+						AddNewRowPosition="Top"
+						AllowFiltering="True"
+						sfSkin:SfSkinManager.VisualStyle="Office2016Colorful"
+						ItemsSource="{Binding OrdersDetails}"
+						NavigationMode="Cell"
+						ShowGroupDropArea="True"
+						HideEmptyGridViewDefinition="True"
+						ShowRowHeader="True" />
 						
 {% endhighlight %}
 {% highlight c# %}
@@ -1589,15 +1615,15 @@ To apply built-in themes at runtime, use VisualStyle property. Here the ComboBox
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfDataGrid x:Name="dataGrid"
-							AddNewRowPosition="Top"
-							AllowFiltering="True"
-							sfSkin:SfSkinManager.VisualStyle="Office2016Colorful"
-							ItemsSource="{Binding OrdersDetails}"
-							NavigationMode="Cell"
-							ShowGroupDropArea="True"
-							HideEmptyGridViewDefinition="True"
-							ShowRowHeader="True" />
+<syncfusion:SfDataGrid x:Name="dataGrid"
+						AddNewRowPosition="Top"
+    					AllowFiltering="True"
+						sfSkin:SfSkinManager.VisualStyle="Office2016Colorful"
+						ItemsSource="{Binding OrdersDetails}"
+						NavigationMode="Cell"
+						ShowGroupDropArea="True"
+						HideEmptyGridViewDefinition="True"
+						ShowRowHeader="True" />
 							
 	<StackPanel Margin="5">
 		<TextBlock Margin="5" FontSize="12" FontWeight="Bold" Text="Visual Styles:" />
@@ -1615,35 +1641,41 @@ To apply built-in themes at runtime, use VisualStyle property. Here the ComboBox
 {% endhighlight %}
 {% highlight c# %}
 
-	public class VisualThemesTriggerAction : TargetedTriggerAction<ComboBox>
-	{
-		SfDataGrid grid = (Application.Current.MainWindow as VisualStylesDemo.MainWindow).dataGrid;
+public class VisualThemesTriggerAction : TargetedTriggerAction<ComboBox>
+{
+	SfDataGrid grid = (Application.Current.MainWindow as VisualStylesDemo.MainWindow).dataGrid;
+	/// <summary>
+	/// Invokes the specified parameter.
+	/// </summary>
+	/// <param name="parameter">The parameter.</param>
 
-		/// <summary>
-		/// Invokes the specified parameter.
-		/// </summary>
-		/// <param name="parameter">The parameter.</param>
-		protected override void Invoke(object parameter)
+	protected override void Invoke(object parameter)
+	{
+		var cb = this.AssociatedObject as ComboBox;
+
+		// Apply Visual Style based on the selected theme
+
+		switch (cb.SelectedItem.ToString())
 		{
-			var cb = this.AssociatedObject as ComboBox;
-			// Apply Visual Style based on the selected theme
-			switch (cb.SelectedItem.ToString())
-			{
-				case "Metro":
-					SfSkinManager.SetVisualStyle(grid, VisualStyles.Metro);
-					break;           
-				case "Office2016Colorful":
-					SfSkinManager.SetVisualStyle(grid, VisualStyles.Office2016Colorful);
-					break;
-				case "VisualStudio2015":
-					SfSkinManager.SetVisualStyle(grid, VisualStyles.VisualStudio2015);
-					break;
-				default:
-					SfSkinManager.SetVisualStyle(grid, VisualStyles.Default);
-					break;
-			}
+
+			case "Metro":
+				SfSkinManager.SetVisualStyle(grid, VisualStyles.Metro);
+				break;           
+
+			case "Office2016Colorful":
+				SfSkinManager.SetVisualStyle(grid, VisualStyles.Office2016Colorful);
+				break;
+
+			case "VisualStudio2015":
+				SfSkinManager.SetVisualStyle(grid, VisualStyles.VisualStudio2015);
+				break;
+
+			default:
+				SfSkinManager.SetVisualStyle(grid, VisualStyles.Default);
+				break;
 		}
 	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -1677,14 +1709,14 @@ To apply the custom theme, generate the resource dictionary xaml file from Theme
 {% tabs %}
 {% highlight xaml %}
 
-	<syncfusion:SfDataGrid x:Name="dataGrid"
-							AddNewRowPosition="Top"
-							AllowFiltering="True"
-							ItemsSource="{Binding OrdersDetails}"
-							NavigationMode="Cell"
-							ShowGroupDropArea="True"
-							HideEmptyGridViewDefinition="True"
-							ShowRowHeader="True" />
+<syncfusion:SfDataGrid x:Name="dataGrid"
+						AddNewRowPosition="Top"
+						AllowFiltering="True"
+						ItemsSource="{Binding OrdersDetails}"
+						NavigationMode="Cell"
+						ShowGroupDropArea="True"
+						HideEmptyGridViewDefinition="True"
+						ShowRowHeader="True" />
 							
 							
 {% endhighlight %}
@@ -1695,13 +1727,13 @@ To apply the custom theme, generate the resource dictionary xaml file from Theme
 {% tabs %}
 {% highlight xaml %}
 
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="..\VisualStudioDemos\CS\SfDataGrid.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
+<Application.Resources>
+	<ResourceDictionary>
+		<ResourceDictionary.MergedDictionaries>
+			<ResourceDictionary Source="..\VisualStudioDemos\CS\SfDataGrid.xaml"/>
+		</ResourceDictionary.MergedDictionaries>
+	</ResourceDictionary>
+</Application.Resources>
 
 {% endhighlight %}
 {% endtabs %}

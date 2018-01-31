@@ -335,14 +335,21 @@ To add the WCF Data Service to your web project created in first step,
 {% highlight c# %}
 public class WcfDataService1 : DataService<NORTHWNDEntities>
 {
+
     // This method is called only once to initialize service-wide policies.
+
     public static void InitializeService(DataServiceConfiguration config)
     {
+
         // TODO: set rules to indicate which entity sets and service operations are visible, Updatable , etc.
+
         // Examples:
         config.SetEntitySetAccessRule("*", EntitySetRights.AllRead);
+
         // config.SetEntitySetAccessRule("MyEntitySet", EntitySetRights.AllRead);
+
         // config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
+
         //config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
     }
 }
@@ -446,6 +453,7 @@ To access data from the database created in previous step, create a ViewModel cl
 public class ViewModel
 {
     private List<Order_Detail> orderDetails;
+
     public List<Order_Detail> OrderDetails
     {
         get { return orderDetails; }
@@ -487,6 +495,7 @@ The below code example will save back the changed value of row to data  base.
 {% tabs %}
 {% highlight c# %}
 NORTHWNDEntities northWind;
+
 public MainWindow()
 {
     InitializeComponent();
@@ -570,11 +579,13 @@ To load the database created in previous step in to SfDataGrid, create a ViewMod
 public class ViewModel
 {
     private List<Shipper> shippers;
+
     public List<Shipper> Shippers
     {
         get { return shippers; }
         set { shippers = value; }
     }
+
     public ViewModel()
     {
         NorthwindDataContext northWind = new NorthwindDataContext();
@@ -619,11 +630,8 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 
     Shipper newRecord = args.RowData as Shipper;
     Shipper shipper = (from data in northWind.Shippers
-
                         where data.ShipperID == newRecord.ShipperID
-
                         select data).First() as Shipper;
-
     shipper.CompanyName = newRecord.CompanyName;
     shipper.Phone = newRecord.Phone;
     northWind.SubmitChanges();   
@@ -684,11 +692,13 @@ public partial class MainWindow : Window
 
     SqlConnection connectionString = new SqlConnection("Data Source=SYNCLAPN2712;Initial Catalog=NORTHWND.MDF;Integrated Security=True");
     SqlDataAdapter adapter = null;
+
     public MainWindow()
     {            
         InitializeComponent();
         BindData();
     }
+
     private void BindData()
     {
         connectionString.Open();

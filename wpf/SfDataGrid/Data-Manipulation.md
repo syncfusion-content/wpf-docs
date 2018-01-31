@@ -288,11 +288,12 @@ You can get the row index of AddNewRow where it placed by using the [GridAddNewR
 {% tabs %}
 {% highlight c# %}
 var addNewRowController=this.dataGrid.GetAddNewRowController();
-
 int addNewRowIndex = addNewRowController.GetAddNewRowIndex();
 {% endhighlight %}
 {% endtabs %}
+
 You can check whether the specified row index is AddNewRow index,  by using [SfDataGrid.IsAddNewIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~IsAddNewIndex.html) helper method.
+
 {% tabs %}
 {% highlight c# %}
 bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
@@ -323,6 +324,7 @@ SfDataGrid allows you to set the default values for AddNewRow while initiating, 
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.AddNewRowInitiating += dataGrid_AddNewRowInitiating;
+
 void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
     var data = args.NewObject as OrderInfo;
@@ -372,9 +374,11 @@ You can commit or cancel the new record in AddNewRow by pressing the <kbd>Enter<
 using Syncfusion.UI.Xaml.Grid.Helpers;
 
 //Check whether the data is newly added 
+
 if (this.dataGrid.View.IsAddingNew)
 {
     //Which end edit the current cell. By passing false, it revert the entered value.
+
     if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
         this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
 
@@ -394,6 +398,7 @@ RowColumnIndex rowColumnIndex = new RowColumnIndex();
 
 if (this.dataGrid.View.IsAddingNew)
 {
+
     if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
         this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
 
@@ -401,12 +406,10 @@ if (this.dataGrid.View.IsAddingNew)
 
     //Process the commit operation in AddNewRow.
     var addNewRowController = this.dataGrid.GetAddNewRowController();
-
     addNewRowController.CommitAddNew();
 
     //Gets the row index of AddNewRow 
     rowColumnIndex.RowIndex = addNewRowController.GetAddNewRowIndex();
-
     this.dataGrid.SelectedItems.Clear();
 
     //If the AddNewRowPosition is Top need to move the current cell to next row 
@@ -430,6 +433,7 @@ this.dataGrid.RowValidating += dataGrid_RowValidating;
 
 void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {
+
     if(this.dataGrid.IsAddNewIndex(args.RowIndex))
     {
         var data = args.RowData as OrderInfo;
@@ -613,10 +617,12 @@ In the same way, you can wire [AddNewRowInitiating](http://help.syncfusion.com/c
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingRelations+=dataGrid_AutoGeneratingRelations;
+
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {
     e.GridViewDefinition.DataGrid.AddNewRowInitiating += DataGrid_AddNewRowInitiating;
 }
+
 void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
 
@@ -648,7 +654,6 @@ You can delete record directly in underlying collection also using Remove () or 
 (dataGrid.DataContext as ViewModel).Orders.Remove(dataGrid.CurrentItem as OrderInfo);
 
 // OR
-
 (dataGrid.DataContext as ViewModel).Orders.RemoveAt(2);
 {% endhighlight %}
 {% endtabs %}
@@ -675,6 +680,7 @@ this.dataGrid.RecordDeleting += dataGrid_RecordDeleting;
 void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 {
     var item = args.Items[0] as OrderInfo;
+
     if (item.OrderID == 1005)
     {
         args.Cancel = true;
@@ -717,14 +723,19 @@ this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
 
 public class GridSelectionControllerExt : GridSelectionController
 {
+
     public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
+
     protected override void ProcessKeyDown(KeyEventArgs args)
     {
+
         //Customizes the Delete key operation.
+
         if (args.Key == Key.Delete)
         {
+
             //Gets the cell value of current column.
             var record = this.DataGrid.CurrentItem;
             var currentColumnIndex = this.CurrentCellManager.CurrentCell.ColumnIndex;
@@ -733,11 +744,13 @@ public class GridSelectionControllerExt : GridSelectionController
             var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
             //Returns the cell value when the current column's cell is not set to null.
+
             if (cellVal != null)
             {
                 PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, mappingName);
             }
         }
+
         else
             base.ProcessKeyDown(args);
     }
@@ -756,8 +769,10 @@ this.dataGrid.RecordDeleting += dataGrid_RecordDeleting;
 
 void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 {
+
     foreach(var item in args.Items)
     {
+
         if((item as OrderInfo).OrderID==1001)
         {
             args.Cancel = true;
