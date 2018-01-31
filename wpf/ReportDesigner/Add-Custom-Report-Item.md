@@ -192,7 +192,7 @@ private void Expression_Click(object sender, RoutedEventArgs e)
 {
     //Displays expression editor dialog box when expression is clicked in custom property dialog.
     ExpressionEditor editor = new ExpressionEditor();
-    //this oldComboValue ui element represents the old value of an invoked property.
+    //Here this.oldComboValue ui element represents the old value of an invoked property.
     object newValue = editor.EditValue(this, null, this.oldComboValue)
 }
 {% endhighlight %}
