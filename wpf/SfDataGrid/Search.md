@@ -158,6 +158,7 @@ SfDataGrid process the search operations in [SearchHelper](http://help.syncfusio
 this.dataGrid.SearchHelper = new SearchHelperExt(this.dataGrid);
 public class SearchHelperExt : SearchHelper
 {
+
     public SearchHelperExt(SfDataGrid datagrid)
         : base(datagrid)
     {
@@ -181,6 +182,7 @@ this.sfgrid.SearchHelper.Search("5");
 
 public class SearchHelperExt : SearchHelper
 {
+
     public SearchHelperExt(SfDataGrid datagrid)
         : base(datagrid)
     {
@@ -188,6 +190,7 @@ public class SearchHelperExt : SearchHelper
 
     protected override bool SearchCell(DataColumnBase column, object record, bool ApplySearchHighlightBrush)
     {
+
         if (column.GridColumn.MappingName == "Quantity")
             return base.SearchCell(column, record, ApplySearchHighlightBrush);
         return false;
@@ -227,6 +230,7 @@ You can search the data in SfDataGrid with all the GridColumns which loads TextB
 {% highlight c# %}
 public class ComboBoxColumnExt : GridComboBoxColumn
 {
+
     public ComboBoxColumnExt()
     {
         SetCellType("ComboBoxExt");
@@ -247,22 +251,26 @@ You can change the display element of each column by creating new renderer for t
 {% highlight c# %}
 public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, ComboBox>
 {
+ 
     public ComboBoxRendererExt()
     {
     }
     
     public override object GetControlValue()
     {
+ 
         if (!HasCurrentCellState)
             return null;
         return CurrentCellRendererElement.GetValue(IsInEditing ? Selector.SelectedValueProperty : TextBlock.TextProperty);
     }
 
     // Creates the binding to the Edit-element
+ 
     private void InitializeEditBinding(ComboBox uiElement, GridColumn column)
     {
         var comboBoxColumn = (GridComboBoxColumn)column;
         var source = comboBoxColumn.ValueBinding as Binding;
+ 
         // Creates the bind element to the edit-element.
         var bind = new Binding
         {
@@ -282,6 +290,7 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
         };
         
         uiElement.SetBinding(ComboBox.SelectedValueProperty, bind);
+ 
         // Binding the ItemSource to the GridComboBox.
         var itemsSourceBinding = new Binding { Path = new PropertyPath("ItemsSource"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
         uiElement.SetBinding(ComboBox.ItemsSourceProperty, itemsSourceBinding);
@@ -298,6 +307,7 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
     }
 
     // This will be invoke when the editing is triggered.
+ 
     public override void OnInitializeEditElement(DataColumnBase dataColumn, ComboBox uiElement, object dataContext)
     {
         GridColumn column = dataColumn.GridColumn;
@@ -309,6 +319,7 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
     }
 
     // Display Element initialized for required properties
+
     public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         var column = dataColumn.GridColumn;
@@ -322,6 +333,7 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
     }
 
     // This Display Binding has to be set with the TextBlock.TextProperty.
+ 
     private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
     {
         var customColumn = (ComboBoxColumnExt)column;
