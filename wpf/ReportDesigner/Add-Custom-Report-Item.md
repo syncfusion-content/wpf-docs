@@ -19,23 +19,7 @@ The design-time component is a control that can be used in the Syncfusion Report
     ![](Add-Custom-Report-Item-images/Custom-Report-Item-5.png)
     
     N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
-
-3.  Add the following assemblies.
-    
-   * PresentationCore
-   * PresentationFramework
-   * System
-   * System.Core
-   * System.Data
-   * System.Drawing
-   * System.Windows.Forms
-   * System.Xaml
-   * System.Xml
-   * System.Xml.Linq
-   * WindowsBase
-   * Syncfusion.Shared.Wpf
-
-4.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
+3.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
 
 The following attributes must be set to BarcodeCRIDesigner class.
 
@@ -208,7 +192,7 @@ private void Expression_Click(object sender, RoutedEventArgs e)
 {
     //Displays expression editor dialog box when expression is clicked in custom property dialog.
     ExpressionEditor editor = new ExpressionEditor();
-    object newValue = editor.EditValue(this, null, "some text");
+    object newValue = editor.EditValue(this, null, this.oldCombovalue);
 }
 {% endhighlight %}
 
@@ -242,7 +226,7 @@ You can clean and build the extension project, it will generate the design-time 
 
 N> You can create a standalone report designer application with the help of given [Getting Started Documentation](/wpf/reportdesigner/getting-started). 
 
-Sample barcode custom report item extension project for report designer [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659).
+You can download the custom report item extension project of sample barcode for report designer by clicking here  [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeDesigner647552659).
 
 ## Deploy a custom report item
 
