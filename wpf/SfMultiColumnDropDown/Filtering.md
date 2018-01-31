@@ -46,18 +46,18 @@ By default, SfMultiColumnDropDownControl filter the text based on `DisplayMember
 {% tabs %}
 {% highlight c# %}
 public class CustomMultiColumnControl : SfMultiColumnDropDownControl
+{
+    /// <summary>
+    /// Returns true if the item is displayed in the Filtered List, otherwise returns false.
+    /// </summary>
+    /// <param name="item"></param>
+    /// <returns></returns>
+    
+    protected override bool FilterRecord(object item)
     {
-        /// <summary>
-        /// Returns true if the item is displayed in the Filtered List, otherwise returns false.
-        /// </summary>
-        /// <param name="item"></param>
-        /// <returns></returns>
-        protected override bool FilterRecord(object item)
-        {
-            var _item = item as GrossingMoviesList;
-            var result = (_item.Title.Contains(this.SearchText)) ||
-                      (_item.Cast.Contains(this.SearchText));
-            return result;
+        var _item = item as GrossingMoviesList;
+        var result = (_item.Title.Contains(this.SearchText)) || (_item.Cast.Contains(this.SearchText));
+        return result;
         }
       }
 {% endhighlight %}
