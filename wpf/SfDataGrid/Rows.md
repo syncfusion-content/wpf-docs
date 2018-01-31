@@ -301,21 +301,26 @@ In the below code, if the Reason is `QueryColumnDraggingReason.Dropping` and the
 this.dataGrid.QueryColumnDragging +=dataGrid_QueryColumnDragging;
 
 void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+
+    if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
-        if (e.Reason == QueryColumnDraggingReason.Dropping)
-        {
-            //used to get frozen column index from the  frozen column count
-            var frozenColIndex = dataGrid.FrozenColumnCount +
+
+        //used to get frozen column index from the  frozen column count
+        var frozenColIndex = dataGrid.FrozenColumnCount +
                                               this.dataGrid.ResolveToStartColumnIndex();
-            //cancels dragging from frozen column to non-frozen column
-            if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
-                e.Cancel = true;
-            // cancels dragging from non-frozen column to frozen column
-            if (e.From > frozenColIndex && e.To < frozenColIndex ||
-                 (e.From == frozenColIndex && e.To < frozenColIndex))
-                e.Cancel = true;
-        }
+        //cancels dragging from frozen column to non-frozen column
+
+        if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
+            e.Cancel = true;
+
+        // cancels dragging from non-frozen column to frozen column
+
+        if (e.From > frozenColIndex && e.To < frozenColIndex ||
+             (e.From == frozenColIndex && e.To < frozenColIndex))
+            e.Cancel = true;
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
