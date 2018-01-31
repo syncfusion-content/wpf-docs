@@ -79,8 +79,8 @@ You can keep the popup in SfMultiColumnDropDownControl as always open by using `
 {% highlight c# %}
 sfMultiColumn.Loaded += (o, e) =>
 {
-       var popup = sfMultiColumn.Template.FindName("PART_Popup", sfMultiColumn) as Popup;
-       popup.StaysOpen = true;
+   var popup = sfMultiColumn.Template.FindName("PART_Popup", sfMultiColumn) as Popup;
+   popup.StaysOpen = true;
 };
 {% endhighlight %}
 {% endtabs %}
@@ -99,7 +99,6 @@ sfMultiColumn.PopupClosing += sfMultiColumn_PopupClosing;
 
 void sfMultiColumn_PopupClosing(object sender, PopupClosingEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -114,7 +113,6 @@ sfMultiColumn.PopupClosed += sfMultiColumn_PopupClosed;
 
 void sfMultiColumn_PopupClosed(object sender, PopupClosedEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -129,7 +127,6 @@ sfMultiColumn.PopupOpening += sfMultiColumn_PopupOpening;
 
 void sfMultiColumn_PopupOpening(object sender, PopupOpeningEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -144,7 +141,6 @@ sfMultiColumn.PopupOpened += sfMultiColumn_PopupOpened;
 
 void sfMultiColumn_PopupOpened(object sender, PopupOpenedEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
