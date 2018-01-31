@@ -123,22 +123,22 @@ For example, now unbound row populated based on selected items in SfDataGrid.
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.SelectedItems.Add(collection[4]);
-
 this.dataGrid.SelectedItems.Add(collection[5]);
-
 this.dataGrid.SelectedItems.Add(collection[7]);
-
 dataGrid.QueryUnBoundRow += dataGrid_QueryUnBoundRow;
 
 void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {
+
     if (e.UnBoundAction == UnBoundActions.QueryData)
     {        
+
         if(e.RowColumnIndex.ColumnIndex == 0)
         {
             e.Value = (dataGrid.SelectedItems.OrderBy(item => (item as OrderInfo).OrderID).Last() as OrderInfo).OrderID;
             e.Handled = true;
         }        
+
         else if(e.RowColumnIndex.ColumnIndex == 2)
         {
             e.Value = (dataGrid.SelectedItems.First(item => (item as OrderInfo).CustomerName.Contains("g")) as OrderInfo).CustomerName;
@@ -165,7 +165,6 @@ You can trigger the [QueryUnBoundRow](http://help.syncfusion.com/cr/cref_files/w
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
-
 dataGrid.InValidateUnBoundRow(dataGrid.UnBoundRows[0]);    
 dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endhighlight %}
@@ -181,12 +180,12 @@ You can cancel the editing of unbound row cell by handling the [SfDataGrid.Curre
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
-
 dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
 
 void dataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {            
     var unboundRow = dataGrid.GetUnBoundRow(args.RowColumnIndex.RowIndex);
+
     if (unboundRow == null)
         return;
     args.Cancel = true;    
@@ -202,6 +201,7 @@ You can get the edited value of unbound row cell from [GridUnBoundRowEventsArgs.
 {% highlight c# %}
 void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {
+
     if (e.UnBoundAction == UnBoundActions.CommitData)
     {
         var editedValue = e.Value;
@@ -245,9 +245,11 @@ You can customize the style of unbound row cell by writing style of TargetType [
 {% highlight c# %}
 public class UnboundCellStyleConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         var unboundRowCell = value as GridUnBoundRowCell;
+
         if (unboundRowCell == null || unboundRowCell.ColumnBase.GridUnBoundRowEventsArgs.Value == null) return null;
 
         if(unboundRowCell.ColumnBase.GridUnBoundRowEventsArgs.Value.ToString().Contains("g"))
@@ -334,6 +336,7 @@ Below [GridUnBoundRowCellTextBoxRenderer](http://help.syncfusion.com/cr/cref_fil
 {% highlight c# %}
 public  class GridUnBoundRowCellTextBoxRendererExt : GridUnBoundRowCellTextBoxRenderer
 {
+
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);            
@@ -382,6 +385,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <summary>
     /// Constructor of the renderer.
     /// </summary>
+ 
     public DatePickerRenderer()
     {
 
@@ -391,6 +395,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// Display element creation.
     /// </summary>
     /// <returns></returns>
+ 
     protected override TextBlock OnCreateDisplayUIElement()
     {
         return new TextBlock();
@@ -400,6 +405,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// Edit Element creation.
     /// </summary>
     /// <returns></returns>
+
     protected override DatePicker OnCreateEditUIElement()
     {
         return new DatePicker();
@@ -411,6 +417,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         uiElement.Text = dataColumn.GridUnBoundRowEventsArgs.Value.ToString();
@@ -422,6 +429,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         uiElement.Text = dataColumn.GridUnBoundRowEventsArgs.Value.ToString();        
@@ -435,6 +443,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+ 
     public override void OnInitializeEditElement(DataColumnBase dataColumn, DatePicker uiElement, object dataContext)
     {
         uiElement.SelectedDate = (DateTime?)dataColumn.GridUnBoundRowEventsArgs.Value;
@@ -447,6 +456,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// <param name="dataColumn"></param>
     /// <param name="element"></param>
     /// <param name="dataContext"></param>
+ 
     public override void OnUpdateEditBinding(DataColumnBase dataColumn, DatePicker element, object dataContext)
     {
         element.SelectedDate = (DateTime?)dataColumn.GridUnBoundRowEventsArgs.Value;             
@@ -457,6 +467,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// Method to wire the Selection Changed event
     /// </summary>
     /// <param name="uiElement"></param>
+ 
     protected override void OnWireEditUIElement(DatePicker uiElement)
     {
         base.OnWireEditUIElement(uiElement);
@@ -467,6 +478,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// Method to un wire the Selection Changed event.
     /// </summary>
     /// <param name="uiElement"></param>
+
     protected override void OnUnwireEditUIElement(DatePicker uiElement)
     {
         base.OnUnwireEditUIElement(uiElement);
@@ -478,9 +490,11 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
+  
     public void uiElement_SelectedDateChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
     {
         var datePicker = sender as DatePicker;
+   
         if (datePicker.Tag is DataColumn)
         {
             var dataColumn = datePicker.Tag as DataColumn;
@@ -497,6 +511,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, DatePick
     /// </summary>
     /// <param name="dataColumn"></param>
     /// <param name="currentRendererElement"></param>
+
     protected override void OnEditingComplete(DataColumnBase dataColumn, FrameworkElement currentRendererElement)
     {
         dataColumn.GridUnBoundRowEventsArgs.Value = (currentRendererElement as DatePicker).Text;
@@ -522,14 +537,17 @@ Below code sets the [CellType](http://help.syncfusion.com/cr/cref_files/wpf/sfda
 {% highlight c# %}
 void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {
+
     if (e.UnBoundAction == UnBoundActions.QueryData)
     {        
+
         if(e.RowColumnIndex.ColumnIndex == 0)
         {
             e.CellType = "DatePickerRenderer";                        
             e.Value =  DateTime.Now;
             e.Handled = true;
         }        
+
         else if(e.RowColumnIndex.ColumnIndex == 2)
         {
             e.Value = (dataGrid.SelectedItems.First(item => (item as OrderInfo).CustomerName.Contains("g")) as OrderInfo).CustomerName;
@@ -574,8 +592,10 @@ You can customize the unbound row cells using [GridUnBoundRowEventsArgs.CellTemp
 {% highlight c# %}
 void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {
+ 
     if (e.UnBoundAction == UnBoundActions.QueryData)
     {        
+ 
         if(e.RowColumnIndex.ColumnIndex == 0)
         {
             e.CellType = "UnBoundTemplateColumn";
@@ -583,6 +603,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
             e.Value = (dataGrid.SelectedItems.OrderBy(item => (item as OrderInfo).OrderID).Last() as OrderInfo).OrderID;
             e.Handled = true;
         }        
+ 
         else if(e.RowColumnIndex.ColumnIndex == 2)
         {
             e.Value = (dataGrid.SelectedItems.First(item => (item as OrderInfo).CustomerName.Contains("g")) as OrderInfo).CustomerName;
@@ -603,11 +624,11 @@ You can change the height of unbound row using [SfDataGrid.QueryRowHeight](http:
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
-
 dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;        
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+
     if(dataGrid.IsUnBoundRow(e.RowIndex))
     {
         e.Height = 40;
@@ -650,7 +671,6 @@ You can get the unbound row of specified row index using [GetUnBoundRow](http://
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
-
 var unboundRow = dataGrid.GetUnBoundRow(1);
 {% endhighlight %}
 {% endtabs %}
@@ -662,12 +682,12 @@ You can merge the unbound row cell by setting the Left, Right, Top and Bottom pr
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
-
 dataGrid.QueryCoveredRange += dataGrid_QueryCoveredRange;
 
 void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {
     var unboundRow = this.dataGrid.GetUnBoundRow(e.RowColumnIndex.RowIndex);
+
     if(unboundRow == null)
         return;            
            
@@ -716,13 +736,16 @@ this.FirstLevelNestedGrid.QueryUnBoundRow += FirstLevelNestedGrid_QueryUnBoundRo
 
 void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {
+
     if (e.UnBoundAction == UnBoundActions.QueryData)
     {
+
         if (e.RowColumnIndex.ColumnIndex == 0)
         {
             e.Value = "Total Items";
             e.Handled = true;
         }
+
         else if(e.RowColumnIndex.ColumnIndex == 1)
         {
             e.Value = (e.OriginalSender as SfDataGrid).View.Records.Count();

@@ -151,6 +151,7 @@ You can unsort the data by removing the corresponding [SortColumnDescription](ht
 {% tabs %}
 {% highlight c# %}
 var sortColumnDescription = this.dataGrid.SortColumnDescriptions.FirstOrDefault(col => col.ColumnName == "OrderID");
+
 if (sortColumnDescription!=null)
 {  
     this.dataGrid.SortColumnDescriptions.Remove(sortColumnDescription);
@@ -198,6 +199,7 @@ Public class CustomComparer:IComparer<object>,ISortDirection
         int nameY;
 
         //While data object passed to comparer
+
         if (x.GetType() == typeof(OrderInfo))
         {
             nameX = ((OrderInfo)x).CustomerName.Length;
@@ -205,8 +207,10 @@ Public class CustomComparer:IComparer<object>,ISortDirection
         }
         
         //While sorting groups
+
         else if (x.GetType() == typeof(Group))
         {
+
             //Calculating the group key length
             nameX = ((Group)x).Key.ToString().Length;
             nameY = ((Group)y).Key.ToString().Length;
@@ -219,6 +223,7 @@ Public class CustomComparer:IComparer<object>,ISortDirection
         }
 
         //returns the comparison result based in SortDirection.
+ 
         if (nameX.CompareTo(nameY) > 0)
             return SortDirection == ListSortDirection.Ascending ? 1 : -1;
             
@@ -238,6 +243,7 @@ Public class CustomComparer:IComparer<object>,ISortDirection
     /// <remarks>
     /// SortDirection gets updated only when sorting the groups. For other cases, SortDirection is always ascending.
     /// </remarks>
+
     public ListSortDirection SortDirection
     {
         get { return _SortDirection; }
@@ -290,7 +296,6 @@ this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
 void dataGrid_SortColumnsChanged(object sender, GridSortColumnsChangedEventArgs e)
 {
     var viewModel = this.DataContext as ViewModel;
-    
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
     foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
@@ -342,8 +347,10 @@ You can prevent sorting for the particular column through [GridSortColumnsChangi
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.SortColumnsChanging += dataGrid_SortColumnsChanging;
+
 void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs e)
 {
+
     if (e.AddedItems[0].ColumnName == "OrderID")
     {
         e.Cancel = true;

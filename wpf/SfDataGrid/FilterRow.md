@@ -9,6 +9,7 @@ documentation: ug
 
 # Filter Row 
 SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -20,20 +21,25 @@ SfDataGrid provides built-in row (called FilterRow) to filter the records. You c
 this.dataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
+
 ![](FilterRow_images/FilterRow_img1.png)
 
 You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~GetFilterRowIndex.html)method.
+
 {% tabs %}
 {% highlight c# %}
 int filterRowIndex = this.dataGrid.GetFilterRowIndex();
 {% endhighlight %}
 {% endtabs %}
+
 You can check whether the specified row index is FilterRow index, by using [SfDataGrid.IsFilterRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~IsFilterRowIndex.html) helper method.
+
 {% tabs %}
 {% highlight c# %}
 bool isFilterRowIndex = this.dataGrid.IsFilterRowIndex(1);
 {% endhighlight %}
 {% endtabs %}
+
 **Note:**The above helper methods are available in [Syncfusion.UI.Xaml.Grid.Helpers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers_namespace.html) namespace
 
 ## Built-in Editors
@@ -272,6 +278,7 @@ this.dataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqual
 ## Filtering null values
 You can enable or disable filtering of null values by setting [GridColumn.AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) property. The default value is `true`.
 When null value filtering is enabled, the filter options loaded with two additional options (“Null” and “Not Null”) to filter the null values. ComboBox and MultiSelectComboBox editors, loads with “Blanks” item in drop down to filter the null values. 
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridNumericColumn MappingName="OrderID" 
@@ -318,7 +325,9 @@ this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
 
 void dataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {
+
     //Cancel the editing for filter row cell in OrderID Column
+
     if (args.Column.MappingName == "OrderID" && dataGrid.IsFilterRowIndex(args.RowColumnIndex.RowIndex))
         args.Cancel = true;
 }
@@ -385,6 +394,7 @@ You can customize the filter row cell by overriding the [GridFilterRowCell](http
 {% highlight c# %}
 public class GridFilterRowCellExt : GridFilterRowCell
 {
+
     public GridFilterRowCellExt()
         : base()
     { }
@@ -392,6 +402,7 @@ public class GridFilterRowCellExt : GridFilterRowCell
 
 public class CustomRowGenerator : RowGenerator
 {
+
     public CustomRowGenerator(SfDataGrid dataGrid)
         : base(dataGrid)
     {
@@ -402,9 +413,12 @@ public class CustomRowGenerator : RowGenerator
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <returns>GridCell</returns>
+
     protected override GridCell GetGridCell<T>()
     {
+
         //If the Cell is FilterRowCell return custom FilterRowCell
+
         if (typeof(T) == typeof(GridFilterRowCell))
             return new GridFilterRowCellExt();
         return base.GetGridCell<GridCell>();
@@ -418,14 +432,17 @@ public MainWindow()
 }
 {% endhighlight %}
 {% endtabs %}
+
 ### Customizing filter options for particular columns 
 By default, TextBox editor will display the string related conditions like Begins With, Ends With, Contains, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
+
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.RowGenerator = new CustomRowGenerator(this.dataGrid);
 
 public class GridFilterRowCellExt : GridFilterRowCell
 {
+
     public GridFilterRowCellExt()
         : base()
     { }
@@ -433,12 +450,15 @@ public class GridFilterRowCellExt : GridFilterRowCell
     /// <summary>
     /// Opens the FilterOptionPopup with the FilterOptionList.
     /// </summary>
+ 
     public override void OpenFilterOptionPopup()
     {
         base.OpenFilterOptionPopup();
+ 
         if (this.DataColumn.GridColumn.MappingName != "CustomerID")
             return;
         var list = this.OptionsList();
+ 
         if (list.Count > 0)
             this.FilterOptionsList.ItemsSource = list;
     }
@@ -447,6 +467,7 @@ public class GridFilterRowCellExt : GridFilterRowCell
     /// Populates the FilterOption list which will loaded in FilterOptionPopup for ShipAddress.
     /// </summary>
     /// <returns></returns>
+ 
     private new ObservableCollection<string> OptionsList()
     {
         var list = new ObservableCollection<string>();
@@ -472,9 +493,12 @@ public class CustomRowGenerator : RowGenerator
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <returns>GridCell</returns>
+ 
     protected override GridCell GetGridCell<T>()
     {
+ 
         //If the Cell is FilterRowCell return custom FilterRowCell
+ 
         if (typeof(T) == typeof(GridFilterRowCell))
             return new GridFilterRowCellExt();
         return base.GetGridCell<GridCell>();
@@ -496,13 +520,13 @@ You can customize the default TextBox editor behavior by overriding `GridFilterR
 {% endhighlight %}
 {% highlight c# %}
 public class GridFilterRowTextBoxRendererExt : GridFilterRowTextBoxRenderer
-    {
-        public GridFilterRowTextBoxRendererExt()
-            : base()
-        {
+{
 
-        }
+    public GridFilterRowTextBoxRendererExt()
+        : base()
+    {
     }
+}
     
 public MainWindow()
 {
@@ -527,6 +551,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
     {
         private List<string> numericComboBoxItems;
 
+ 
         public GridFilterRowComboBoxRendererExt()
             : base()
         {
@@ -537,6 +562,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         /// Generate the Items for NumericComboBox
         /// </summary>
         /// <returns></returns>
+ 
         public void SetNumericComboBoxItemsList()
         {
             numericComboBoxItems = new List<string>();
@@ -552,38 +578,49 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         /// </summary>
         /// <param name="uiElement">Corresponding UIElement</param>
         /// <param name="dataColumn">Corresponding Column</param>
+
         protected override void InitializeEditBinding(Syncfusion.Windows.Tools.Controls.ComboBoxAdv uiElement, DataColumnBase dataColumn)
         {
             ObservableCollection<object> selItems = new ObservableCollection<object>();
+
                 //Generate the items for FilterRow                 
                 uiElement.ItemsSource = numericComboBoxItems;
 
                 if (dataColumn.GridColumn.FilteredFrom == FilteredFrom.FilterRow && dataColumn.GridColumn.FilterPredicates.Count > 0)
                 {
+
                     if (numericComboBoxItems != null)
                     {
                         numericComboBoxItems.ForEach(element =>
                         {
+
                             //Check if the filter is already applied or not, if applied means again add the filter
                             bool needToAdd = false;
+
                             switch (element)
                             {
+
                                 case "Between 1001 and 1004":
                                     needToAdd = this.NeedToAdd(dataColumn.GridColumn.FilterPredicates, "1001");
                                     break;
+
                                 case "Between 1005 and 1009":
                                     needToAdd = this.NeedToAdd(dataColumn.GridColumn.FilterPredicates, "1005");
                                     break;
+
                                 case "Between 1010 and 1014":
                                     needToAdd = this.NeedToAdd(dataColumn.GridColumn.FilterPredicates, "1010");
                                     break;
+
                                 case "Between 1015 and 1020":
                                     needToAdd = this.NeedToAdd(dataColumn.GridColumn.FilterPredicates, "1015");
                                     break;
+
                                 case ">1020":
                                     needToAdd = this.NeedToAdd(dataColumn.GridColumn.FilterPredicates, "1020");
                                     break;
                             }
+
                             if (needToAdd)
                                 selItems.Add(element);
                         });
@@ -592,6 +629,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
           
             if (selItems.Count > 0)
                 uiElement.SelectedItems = selItems;
+
             else if (uiElement.SelectedItems != null)
                 uiElement.SelectedItems = null;
             uiElement.AllowMultiSelect = true;
@@ -606,11 +644,14 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         /// <param name="filterPredicate">FilterPredicates for a column</param>
         /// <param name="filterValue">FilterValue for a column</param>
         /// <returns></returns>
+
         private bool NeedToAdd(ObservableCollection<FilterPredicate> filterPredicate, string filterValue)
         {
             bool needToAdd = false;
+
             foreach (var item in filterPredicate)
             {
+
                 if ((item as FilterPredicate).FilterValue.ToString() == filterValue)
                 {
                     needToAdd = true;
@@ -625,10 +666,12 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         /// </summary>
         /// <param name="filterValues">Corresponding Filter Value</param>
         /// <param name="totalItems">Corresponding Filter Items</param>
+
         public override void ProcessMultipleFilters(List<object> filterValues, List<object> totalItems)
         {
             var selectedItems = filterValues.Cast<string>().ToList();
             var total = totalItems.Cast<string>().ToList();
+
             if (selectedItems == null || total == null || filterValues == null)
                 return;
 
@@ -639,28 +682,35 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
                 return;
             }
             var filterPredicates = new List<FilterPredicate>();
+
             if (filterValues.Count > 0)
             {
                 selectedItems.ForEach(item =>
                 {
+
                     switch (item)
                     {
+
                         case "Between 1001 and 1004":
                             filterPredicates.Add(GetFilterPredicates((int)1001, FilterType.GreaterThan, PredicateType.OrElse));
                             filterPredicates.Add(GetFilterPredicates((int)1004, FilterType.LessThan, PredicateType.And));
                             break;
+
                         case "Between 1005 and 1009":
                             filterPredicates.Add(GetFilterPredicates((int)1005, FilterType.GreaterThan, PredicateType.OrElse));
                             filterPredicates.Add(GetFilterPredicates((int)1009, FilterType.LessThan, PredicateType.And));
                             break;
+
                         case "Between 1010 and 1014":
                             filterPredicates.Add(GetFilterPredicates((int)1010, FilterType.GreaterThan, PredicateType.OrElse));
                             filterPredicates.Add(GetFilterPredicates((int)1014, FilterType.LessThan, PredicateType.And));
                             break;
+
                         case "Between 1015 and 1020":
                             filterPredicates.Add(GetFilterPredicates((int)1015, FilterType.GreaterThan, PredicateType.OrElse));
                             filterPredicates.Add(GetFilterPredicates((int)1020, FilterType.LessThan, PredicateType.And));
                             break;
+
                         case ">1020":
                             filterPredicates.Add(GetFilterPredicates((int)1020, FilterType.GreaterThan, PredicateType.Or));
                             break;
@@ -668,17 +718,22 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
                 });
             }
             string _filterText = string.Empty;
+  
             //Creates the FilterText
+  
             if (filterPredicates.Count > 0)
             {
                 var selectItems = ((IList)filterValues).Cast<string>().ToList();
+  
                 for (int i = 0; i < selectedItems.Count; i++)
                 {
                     _filterText += selectedItems[i];
+  
                     if (i != selectedItems.Count - 1)
                         _filterText += " - ";
                 }
-            }
+             }
+  
             if (filterPredicates != null)
                 this.ApplyFilters(filterPredicates, _filterText);
             this.IsValueChanged = false;
@@ -691,6 +746,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         /// <param name="filterType"></param>
         /// <param name="predType"></param>
         /// <returns></returns>
+ 
         private FilterPredicate GetFilterPredicates(object value, FilterType filterType, PredicateType predType)
         {
             return new FilterPredicate()
@@ -709,6 +765,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         /// <param name="filterType"></param>
         /// <param name="predType"></param>
         /// <returns></returns>
+
         private FilterPredicate GetStringFilterPredicates(object value, FilterType filterType, PredicateType predType)
         {
             return new FilterPredicate()
@@ -722,8 +779,10 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
         private void OnPropertyChanged(String prop)
         {
+
             if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(prop));
@@ -746,6 +805,7 @@ You can filter the decimal value in a filter row cell by overriding the [OnIniti
 {% highlight c# %}
 public class StringToNumericConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         return double.Parse(value.ToString());
@@ -758,16 +818,20 @@ public class StringToNumericConverter : IValueConverter
 }
 
 //Remove the existing renderer
+
 if (dataGrid.FilterRowCellRenderers.ContainsKey("Numeric"))
     dataGrid.FilterRowCellRenderers.Remove("Numeric");
+
 //Add the new custom renderer
 dataGrid.FilterRowCellRenderers.Add("Numeric", new GridFilterRowNumericRendererExt());
 
 public class GridFilterRowNumericRendererExt : GridFilterRowNumericRenderer
 {
+
     public override void OnInitializeEditElement(DataColumnBase dataColumn, DoubleTextBox uiElement, object dataContext)
     {
         base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
+
         //Set the NumericDecimalDigits
         uiElement.NumberDecimalDigits = 2;
     }
@@ -786,13 +850,16 @@ By default, in SfDataGrid ComboBox is loaded while enter into edit mode in Filte
 {% highlight c# %}
 sfgrid.FilterRowCellRenderers.Remove("MultiSelectComboBox");
 sfgrid.FilterRowCellRenderers.Add("MultiSelectComboBox", new GridMultiSelectComboBoxRendererExt());
+
 public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRenderer
 {
+
     public GridMultiSelectComboBoxRendererExt():base()
     {
         SupportsRenderOptimization = false;
         IsEditable = false;
     }
+
     protected override void OnWireEditUIElement(Syncfusion.Windows.Tools.Controls.ComboBoxAdv uiElement)
     {
         base.OnWireEditUIElement(uiElement);
@@ -801,8 +868,10 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
 
     void uiElement_PreviewMouseDown(object sender, MouseButtonEventArgs e)
     {
+
         if (this.HasCurrentCellState && this.CurrentCellRendererElement == sender)
             return;
+
         else
         {
             var position = e.GetPosition(DataGrid.GetVisualContainer());

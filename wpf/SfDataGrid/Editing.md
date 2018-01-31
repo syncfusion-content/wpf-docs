@@ -115,8 +115,10 @@ public class Employee : NotificationObject, IEditableObject
     {
         var dict = new Dictionary<string, object>();
         var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+  
         foreach (var pDescriptor in itemProperties)
         {
+  
             if (pDescriptor.CanWrite)
                 dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
         }
@@ -215,6 +217,7 @@ public class Employee : NotificationObject, IEditableObject
 
     public void CancelEdit()
     {
+   
         if (this.storedValues == null)
             return;
 
@@ -222,6 +225,7 @@ public class Employee : NotificationObject, IEditableObject
         {
             var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
             var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
+  
             if (pDesc != null)
                 pDesc.SetValue(this, item.Value);
         }
@@ -229,6 +233,7 @@ public class Employee : NotificationObject, IEditableObject
 
     public void EndEdit()
     {
+ 
         if (this.storedValues != null)
         {
             this.storedValues.Clear();
@@ -242,6 +247,7 @@ public class NotificationObject : INotifyPropertyChanged
 {
     public void RaisePropertyChanged(string propName)
     {
+ 
         if (this.PropertyChanged != null)
         this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
     }
@@ -268,9 +274,9 @@ SfDataGrid triggers the following events during editing.
 {% highlight c# %}
 
 this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
+
 void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs args)
 {
-    
 }
 
 {% endhighlight %}
@@ -286,9 +292,9 @@ void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 {% highlight c# %}
 
 this.dataGrid.CurrentCellEndEdit += dataGrid_CurrentCellEndEdit;
+
 void dataGrid_CurrentCellEndEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs args)
 {
-    
 }
 
 {% endhighlight %}
@@ -305,9 +311,9 @@ void dataGrid_CurrentCellEndEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentC
 {% highlight c# %}
 
 this.dataGrid.CurrentCellValueChanged += dataGrid_CurrentCellValueChanged;
+
 void dataGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs args)
 {
-    
 }
 
 {% endhighlight %}
@@ -329,9 +335,9 @@ N> GridComboBoxColumn and GridMultiColumnDropList, you have to use the CurrentCe
 {% highlight c# %}
 
 this.dataGrid.CurrentCellDropDownSelectionChanged += dataGrid_CurrentCellDropDownSelectionChanged;
+
 void dataGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDropDownSelectionChangedEventArgs args)
 {
-    
 }
 
 {% endhighlight %}
@@ -346,6 +352,7 @@ SfDataGrid allows you to edit the cell programmatically by calling the [BeginEdi
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.Loaded += dataGrid_Loaded;
+
 void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {
     RowColumnIndex rowColumnIndex = new RowColumnIndex(3, 2);
@@ -380,6 +387,7 @@ You can use the [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/
 {% highlight c# %}
 
 this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
+
 void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs args)
 {
     var recordIndex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
@@ -387,6 +395,7 @@ void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
     var mappingName = this.dataGrid.Columns[columnIndex].MappingName;
     var record = this.dataGrid.View.Records.GetItemAt(recordIndex);
     var cellValue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
+
     if (args.RowColumnIndex == new RowColumnIndex(3, 2))
     args.Cancel = true;
 }
@@ -441,6 +450,7 @@ this.dataGrid.CellDoubleTapped += Datagrid_CellDoubleTapped;
 
 private void Datagrid_CellDoubleTapped(object sender, GridCellDoubleTappedEventArgs e)
 {
+
     //you can do your own logic here.
 }
 {% endhighlight %}
@@ -535,10 +545,13 @@ Please follow the below steps to highlight the edited cells.
 {% highlight c# %}
 
 this.dataGrid.CurrentCellValueChanged+=dataGrid_CurrentCellValueChanged;
+
 private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
 {
+
     if (!(args.Record as OrderInfo).EditedColumns.Contains(args.Column.MappingName))
         (args.Record as OrderInfo).EditedColumns.Add(args.Column.MappingName);
+
     //updates the current row index
     this.dataGrid.UpdateDataRow(args.RowColumnIndex.RowIndex);
 }
@@ -573,13 +586,16 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 {% highlight c# %}
 public class CellStyleSelector : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var gridCell = container as GridCell;
+
         if (gridCell.ColumnBase == null || gridCell.ColumnBase.GridColumn == null)
             base.SelectStyle(item, container);
             
         var record = item as OrderInfo;
+
         if (record.EditedColumns.Contains(gridCell.ColumnBase.GridColumn.MappingName))        
             return App.Current.Resources["cellStyle"] as Style;
             
@@ -607,6 +623,7 @@ public class SfDataGridExt : SfDataGrid
     
     protected override void OnTextInput(TextCompositionEventArgs e)
     {
+
         if (!SelectionController.CurrentCellManager.HasCurrentCell)
         {
             base.OnTextInput(e);
@@ -616,18 +633,26 @@ public class SfDataGridExt : SfDataGrid
         //Get the Current Row and Column index from the CurrentCellManager
         var rowColumnIndex = SelectionController.CurrentCellManager.CurrentRowColumnIndex;
         RowGenerator rowGenerator = this.RowGenerator;
+
         //Get the row from the Row index
         var dataRow = rowGenerator.Items.FirstOrDefault(item => item.RowIndex == rowColumnIndex.RowIndex);
+
         //Check whether the dataRow is null or not and the type as DataRow
+
         if (dataRow != null && dataRow is DataRow)
         {
+
             //Get the column from the VisibleColumn collection based on the column index
             var dataColumn = dataRow.VisibleColumns.FirstOrDefault(column => column.ColumnIndex == rowColumnIndex.ColumnIndex);
+
             //Convert the input text to char type 
             char text;
             char.TryParse(e.Text, out text);
+
             //Skip if the column is GridTemplateColumn and the column is not already in editing 
+
             //Allow Editing only pressed letters digits and Minus sign key 
+
             if (dataColumn != null && !(dataColumn.GridColumn is GridTemplateColumn) && !dataColumn.IsEditing && SelectionController.CurrentCellManager.BeginEdit() && (e.Text.Equals("-") || char.IsLetterOrDigit(text)))
                 dataColumn.Renderer.PreviewTextInput(e);
         }
