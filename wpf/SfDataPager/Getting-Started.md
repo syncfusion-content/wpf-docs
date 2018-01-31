@@ -110,16 +110,19 @@ public class OrderInfo
     string country;
     string customerName;
     string shippingCity;
+
     public int OrderID
     {
         get { return orderID; }
         set { orderID = value; }
     }
+
     public string CustomerID
     {
         get { return customerId; }
         set { customerId = value; }
     }
+
     public string CustomerName
     {
         get { return customerName; }
@@ -131,13 +134,14 @@ public class OrderInfo
         get { return country; }
         set { country = value; }
     }
+
     public string ShipCity
     {
         get { return shippingCity; }
         set { shippingCity = value; }
     }
-    public OrderInfo(int orderId, string customerName, string country, string
-    customerId, string shipCity)
+
+    public OrderInfo(int orderId, string customerName, string country, string customerId, string shipCity)
     {
         this.OrderID = orderId;
         this.CustomerName = customerName;
@@ -156,6 +160,7 @@ public class OrderInfo
 public class ViewModel
 {
     ObservableCollection<OrderInfo> orderCollection;
+
     public ObservableCollection<OrderInfo> OrderInfoCollection
     {
         get { return orderCollection; }
@@ -167,6 +172,7 @@ public class ViewModel
         orderCollection = new ObservableCollection<OrderInfo>();
         this.GenerateOrders();
     }
+
     private void GenerateOrders()
     {
         orderCollection.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
