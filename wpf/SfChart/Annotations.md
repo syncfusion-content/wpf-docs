@@ -2023,6 +2023,315 @@ chart.Annotations.Add(annotation);
 
 ![](Annotation_images/Annotation_img26.jpeg)
 
+## Annotation based on axis
+
+The value of X1, X2, Y1, and Y2 properties of annotation will differ based on the axis type. The following table illustrates how to set the values for X1 and X2 properties of annotation based on the corresponding primary axis.
+
+<table>
+
+<tr>
+<th>
+SI.No
+</th>
+<th>
+Axis Type
+</th>
+<th>
+X1 and X2 values
+</th>
+<th>
+Example
+</th>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+CategoryAxis
+</td>
+<td>
+Index based
+</td>
+<td>
+X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value) 
+</td>
+</tr>
+
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+DateTimeCategoryAxis 
+</td>
+<td>
+Index based 
+</td>
+<td>
+X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value) 
+</td>
+</tr>
+
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+DateTimeAxis 
+</td>
+<td>
+Value based 
+</td>
+<td>
+X1 = “2015/01/31”, X2 = “2015/02/01” 
+</td>
+</tr>
+
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+TimeSpanAxis
+</td>
+<td>
+Value based 
+</td>
+<td>
+X1= 00:00:40 X2=00:00:50  
+</td>
+</tr>
+
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+Logarthimic Axis 
+</td>
+<td>
+Value based 
+</td>
+<td>
+X1= 50(XValue) X2=50(XValue) 
+</td>
+</tr>
+
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+Numerical Axis 
+</td>
+<td>
+Value based 
+</td>
+<td>
+X1= 10(XValue) X2=15(XValue)
+</td>
+</tr>
+
+</table>
+
+**CategoryAxis**
+
+The index of the data point will be given as values for X1 and X2 properties.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <chart:SfChart.Annotations>
+       <chart:RectangleAnnotation X1="1" X2="3" Y1="20" Y2="30" 
+                                                          Stroke="Purple" StrokeThickness="2"/>
+   </chart:SfChart.Annotations>
+
+   <chart:SfChart.PrimaryAxis>
+       <chart:CategoryAxis  />
+   </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfChart chart = new SfChart();
+
+            chart.PrimaryAxis = new CategoryAxis();
+
+            chart.SecondaryAxis = new NumericalAxis();
+
+            RectangleAnnotation annotation = new RectangleAnnotation()
+            {
+                X1 = 1, Y1 = 3, X2 = 20, Y2 = 30,
+
+                Stroke = new SolidColorBrush(Colors.Purple),
+
+                StrokeThickness = 2
+            };
+
+            chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Annotation_images/CategoryAnnotation.png)
+
+**DateTimeAxis**
+
+The corresponding DateTime value will be given as values for X1 and X2 properties.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <chart:SfChart.PrimaryAxis>
+      <chart:DateTimeAxis  />
+   </chart:SfChart.PrimaryAxis>
+
+   <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis />
+   </chart:SfChart.SecondaryAxis>
+
+   <chart:SfChart.Annotations>
+      <chart:RectangleAnnotation X1="2015/2/1" X2="2015/4/1" Y1="20" Y2="30" 
+                                  						 Stroke="Purple" StrokeThickness="2"/>
+   </chart:SfChart.Annotations>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ 			SfChart chart = new SfChart();
+
+            chart.PrimaryAxis = new DateTimeAxis();
+
+            chart.SecondaryAxis = new NumericalAxis();
+
+            RectangleAnnotation annotation = new RectangleAnnotation()
+            {
+                X1 = new DateTime(2015,2,1), X2 = new DateTime(2015,4,1), Y1 = 20, Y2 = 30,           
+
+                Stroke = new SolidColorBrush(Colors.Purple),
+
+                StrokeThickness = 2
+            };
+
+             chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Annotation_images/DateTimeAnnotation.png)
+
+**DateTimeCategoryAxis**
+
+The index values of data points will be given as values for X1 and X2 properties.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <chart:SfChart.PrimaryAxis>
+      <chart:DateTimeCategoryAxis />
+   </chart:SfChart.PrimaryAxis>
+
+   <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis />
+   </chart:SfChart.SecondaryAxis>
+
+   <chart:SfChart.Annotations>
+        <chart:RectangleAnnotation X1="1" X2="3" Y1="20" Y2="30" 
+                                  						   Stroke="Purple" StrokeThickness="2"/>
+   </chart:SfChart.Annotations>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfChart chart = new SfChart();
+
+            chart.PrimaryAxis = new DateTimeCategoryAxis();
+
+            chart.SecondaryAxis = new NumericalAxis();
+
+            RectangleAnnotation annotation = new RectangleAnnotation()
+            {
+                X1 = 1, X2 = 3, Y1 = 20, Y2 = 30,
+
+                Stroke = new SolidColorBrush(Colors.Purple),
+
+                StrokeThickness = 2
+            };
+
+             chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Annotation_images/DateTimeCategoryAnnotation.png)
+
+**LogarithmicAxis**
+
+The corresponding log value will be given as values for X1 and X2 properties.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <chart:SfChart.PrimaryAxis>
+      <chart:CategoryAxis  />
+   </chart:SfChart.PrimaryAxis>
+
+   <chart:SfChart.SecondaryAxis>
+       <chart:LogarithmicAxis  />
+   </chart:SfChart.SecondaryAxis>
+
+   <chart:SfChart.Annotations>
+       <chart:RectangleAnnotation X1="1" X2="3" Y1="70" Y2="270" 
+                                                          Stroke="Purple" StrokeThickness="2"/>
+   </chart:SfChart.Annotations>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfChart chart = new SfChart();
+
+            chart.PrimaryAxis = new LogarithmicAxis();
+
+            chart.SecondaryAxis = new NumericalAxis();
+
+            RectangleAnnotation annotation = new RectangleAnnotation()
+            {
+                X1 = 1, X2 = 3, Y1 = 70, Y2 = 270,
+
+                Stroke = new SolidColorBrush(Colors.Purple),
+
+                StrokeThickness = 2
+            };
+
+             chart.Annotations.Add(annotation);
+			 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Annotation_images/LogarithmicAnnotation.png)
+
 ## Events
 
 SfChart provides the following events in [`Annotation`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation_members.html#).
