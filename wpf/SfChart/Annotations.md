@@ -2112,7 +2112,7 @@ X1= 00:00:40 X2=00:00:50
 5
 </td>
 <td>
-Logarthimic Axis 
+Logarithmic Axis 
 </td>
 <td>
 Value based 
