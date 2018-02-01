@@ -160,7 +160,7 @@ You can clean and build the extension project, it will generate the run-time com
 
 N> You can create a standalone report viewer application with the help of given [Getting Started Documentation.](/wpf/reportviewer/getting-started)
 
-You can download the extension project with barcode custom report item for report viewer from here  [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeCRI1898349564).
+You can download the extension project with barcode custom report item for report viewer from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeCRI1898349564).
 
 ## Deploy a custom report item 
 
