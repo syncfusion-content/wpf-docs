@@ -26,13 +26,11 @@ SfDataGrid allows you to merge the range of adjacent cells using [QueryCoveredRa
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.QueryCoveredRange += dataGrid_QueryCoveredRange;
-
 dataGrid.SelectionUnit = GridSelectionUnit.Cell;
 dataGrid.NavigationMode = Syncfusion.UI.Xaml.Grid.NavigationMode.Cell;
 
 void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {
-    
 }
 {% endhighlight %}
 {% endtabs %}
@@ -50,8 +48,10 @@ You can merge the columns in a row by setting the column range using Left and Ri
 {% highlight c# %}
 void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {
+
     if (e.RowColumnIndex.RowIndex == 1)
     {
+
         if (e.RowColumnIndex.ColumnIndex >= 1 && e.RowColumnIndex.ColumnIndex <= 3)
         {
             e.Range = new CoveredCellInfo(1, 3, 1, 1);
@@ -72,8 +72,10 @@ You can merge the range of rows for a particular column by setting the row range
 {% highlight c# %}
 void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {
+
     if (e.RowColumnIndex.ColumnIndex == 1)
     {
+
         if (e.RowColumnIndex.RowIndex >= 1 && e.RowColumnIndex.RowIndex <= 5)
         {
             e.Range = new CoveredCellInfo(1, 1, 1, 5);
@@ -94,7 +96,9 @@ You can merge the range of rows and columns by setting the range using Left, Rig
 {% highlight c# %}
 private void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {    
+ 
     //Merge range
+ 
     if (e.RowColumnIndex.ColumnIndex == 1 && e.RowColumnIndex.RowIndex == 1)
     {                             
         e.Range = new CoveredCellInfo(1, 2, 1, 5);
@@ -126,10 +130,13 @@ IPropertyAccessProvider reflector = null;
 /// <summary>
 /// ItemsSourceChanged event handler.
 /// </summary>
+
 void dataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs e)
 {
+
     if (dataGrid.View != null)
         reflector = dataGrid.View.GetPropertyAccessProvider();
+
     else
         reflector = null;
 }
@@ -137,18 +144,22 @@ void dataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs 
 /// <summary>
 /// QueryCoveredRange event handler
 /// </summary>
+
 void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {    
     var range = GetRange(e.GridColumn, e.RowColumnIndex.RowIndex, e.RowColumnIndex.ColumnIndex, e.Record);
+
     if (range == null)
         return;
 
     // You can know that the range is already exist in Covered Cells by IsInRange method.
+
     if (!dataGrid.CoveredCells.IsInRange(range))
     {  
         e.Range = range;
         e.Handled = true;
     }
+
     //If the calculated range is already exist in CoveredCells, you can get the range using SfDataGrid.GetConflictRange (CoveredCellInfo coveredCellInfo) extension method.
 }
 
@@ -161,6 +172,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 /// <param name="rowData"></param>
 /// <returns> Compares the adjacent cell value and returns the range </returns>
 /// <remark> If the method find that the adjacent values are equal by horizontal then it will merge vertically. And vice versa</remarks>
+
 private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnIndex, object rowData)
 {
     var range = new CoveredCellInfo(columnIndex, columnIndex, rowIndex, rowIndex);
@@ -175,7 +187,9 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
     (this.dataGrid.View.Records.Count + this.dataGrid.TableSummaryRows.Count + this.dataGrid.UnBoundRows.Count + (this.dataGrid.AddNewRowPosition == AddNewRowPosition.Top ? +1 : 0));
 
     // Merge Horizontally
+
     // compare right column               
+
     for (int i = dataGrid.Columns.IndexOf(column); i < this.dataGrid.Columns.Count - 1; i++)
     {
         var compareData = reflector.GetFormattedValue(rowData, dataGrid.Columns[i + 1].MappingName);
@@ -189,6 +203,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
     }
 
     // compare left column.
+
     for (int i = dataGrid.Columns.IndexOf(column); i > 0; i--)
     {
         var compareData = reflector.GetFormattedValue(rowData, dataGrid.Columns[i - 1].MappingName);
@@ -203,7 +218,9 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 
     if (leftColumn != null || rightColumn != null)
     {
+ 
         // set left index
+ 
         if (leftColumn != null)
         {
             var leftColumnIndex = this.dataGrid.ResolveToScrollColumnIndex(this.dataGrid.Columns.IndexOf(leftColumn));
@@ -211,6 +228,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
         }
 
         // set right index
+ 
         if (rightColumn != null)
         {
             var rightColumnIndex = this.dataGrid.ResolveToScrollColumnIndex(this.dataGrid.Columns.IndexOf(rightColumn));
@@ -226,29 +244,36 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 
     // Get previous row data.                
     var startIndex = dataGrid.ResolveStartIndexBasedOnPosition();
+ 
     for (int i = rowIndex - 1; i >= startIndex; i--)
     {
         var previousData = this.dataGrid.GetRecordEntryAtRowIndex(i);
+ 
         if (previousData == null || !previousData.IsRecords)
             break;
         var compareData = reflector.GetFormattedValue((previousData as RecordEntry).Data, column.MappingName);
 
         if (compareData == null)
             break;
+ 
         if (!compareData.Equals(data))
             break;
         previousRowIndex = i;
     }
 
     // get next row data.
+  
     for (int i = rowIndex + 1; i < recordsCount + 1; i++)
     {
         var nextData = this.dataGrid.GetRecordEntryAtRowIndex(i);
+  
         if (nextData == null || !nextData.IsRecords)
             break;
         var compareData = reflector.GetFormattedValue((nextData as RecordEntry).Data, column.MappingName);
+  
         if (compareData == null)
             break;
+  
         if (!compareData.Equals(data))
             break;
         nextRowIndex = i;
@@ -256,8 +281,10 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 
     if (previousRowIndex != -1 || nextRowIndex != -1)
     {
+ 
         if (previousRowIndex != -1)
             range = new CoveredCellInfo(range.Left, range.Right, previousRowIndex, range.Bottom);
+ 
         if (nextRowIndex != -1)
             range = new CoveredCellInfo(range.Left, range.Right, range.Top, nextRowIndex);
         return range;
@@ -297,8 +324,10 @@ FirstLevelNestedGrid.QueryCoveredRange +=FirstLevelNestedGrid_QueryCoveredRange;
 
 private void FirstLevelNestedGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {
+ 
     if(e.RowColumnIndex.ColumnIndex == 1)
     {
+ 
         if(e.RowColumnIndex.RowIndex >= 2 && e.RowColumnIndex.RowIndex <= 3)
         {
             e.Range = new CoveredCellInfo(1, 1, 2, 3);
@@ -319,6 +348,7 @@ You can’t vertically merge the cells of row when it has details view. You can 
 {% highlight c# %}
 void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {     
+
    if (!dataGrid.CanMergeNextRows(rowData))
         return null;  
 }

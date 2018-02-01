@@ -75,17 +75,23 @@ Here, `GridCell` background is changed using `converter`, where converter return
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         int input = (int)value;
+
       //custom condition is checked based on data.
+
         if (input < 1003)
             return new SolidColorBrush(Colors.LightBlue);
+
         else if (input < 1007)
             return new SolidColorBrush(Colors.Bisque);
+
         else
             return DependencyProperty.UnsetValue;
     }
+
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
         throw new NotImplementedException();
@@ -116,17 +122,23 @@ You can also style the cells based on record instead of passing single property 
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var data = value as OrderInfo;
+
         //custom condition is checked based on data.
+
         if (data.OrderID < 1003)
             return new SolidColorBrush(Colors.LightBlue);
+
         else if (data.OrderID < 1007)
             return new SolidColorBrush(Colors.Bisque);
+
         else
             return DependencyProperty.UnsetValue;
     }
+
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
         throw new NotImplementedException();
@@ -194,12 +206,16 @@ N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellSty
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var data = item as OrderInfo;
+
         if (data != null && ((container as GridCell).ColumnBase.GridColumn.MappingName == "TotalPrice"))
         {
+
             //custom condition is checked based on data.
+
             if (data.TotalPrice < 1005)
                 return App.Current.Resources["redCellStyle"] as Style;
             return App.Current.Resources["blueCellStyle"] as Style;
@@ -235,17 +251,23 @@ ItemsSource="{Binding Orders}"/>
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var input = (value as OrderInfo).TotalPrice;
+
        //custom condition is checked based on data.
+
         if (input < 1003)
             return new SolidColorBrush(Colors.Bisque);
+
         else if (input < 1007)
             return new SolidColorBrush(Colors.LightBlue);
+
         else
             return DependencyProperty.UnsetValue;
     }
+
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
         throw new NotImplementedException();
@@ -284,10 +306,12 @@ The record rows ([VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_f
 {% highlight c# %}
 public class CustomRowStyleSelector : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var row = (item as DataRowBase).RowData;
         var data = row as OrderInfo;
+
         if (data.TotalPrice < 1004)
             return App.Current.Resources["rowStyle1"] as Style;
         return App.Current.Resources["rowStyle2"] as Style;
@@ -326,11 +350,14 @@ The appearance of alternating rows can be customized conditionally based on data
 {% highlight c# %}
 public class CustomRowStyleSelector : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var row = (item as DataRowBase).RowData;
         var data = row as OrderInfo;
+
         // Applying alternating background for rows.
+
         if (data.OrderID < 1006)
             return App.Current.Resources["rowStyle1"] as Style;
         return App.Current.Resources["rowStyle2"] as Style;
@@ -380,12 +407,15 @@ The appearance of caption summary cell can be customized conditionally based on 
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var summaryValue = (value as Group).SummaryDetails.SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 1005)
             return new SolidColorBrush(Colors.Red);
         return new SolidColorBrush(Colors.DarkBlue);
@@ -443,12 +473,15 @@ The appearance of caption summary cell can be customized conditionally based on 
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var summaryValue = (item as Group).SummaryDetails.SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 0)
             return App.Current.Resources["captionSummaryStyle"] as Style;
         return base.SelectStyle(item, container);
@@ -503,13 +536,17 @@ Here, caption summary cells are customized based on `TotalPrice` summary column.
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var cell = container as GridCaptionSummaryCell;
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
         {
             var groupKey = (int)(item as Group).Key;
+
             //custom condition is checked.
+
             if (groupKey < 0)
                 return App.Current.Resources["captionSummaryStyle"] as Style;
         }
@@ -558,12 +595,15 @@ The appearance of caption summary row can be customized conditionally based on s
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var summaryValue = (value as Group).SummaryDetails.SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 1005)
             return new SolidColorBrush(Colors.LightBlue);
         return new SolidColorBrush(Colors.Bisque);
@@ -673,15 +713,20 @@ The appearance of caption summary row can be conditionally customized based on [
 {% highlight c# %}
 public class CustomCaptionSummaryRowStyleSelector : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var dataRow = item as DataRowBase;
         var level = dataRow.Level;
+
         //based on group levels, style applied to CaptionSummaryRow
+
         if (level == 1)
             return App.Current.Resources["rowStyle1"] as Style;
+
         else if (level == 2)
             return App.Current.Resources["rowStyle2"] as Style;
+
         else if (level == 3)
             return App.Current.Resources["rowStyle3"] as Style;
         return base.SelectStyle(item, container);
@@ -741,12 +786,15 @@ The appearance of group summary cell can be customized conditionally based on su
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);      
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 1500)
             return new SolidColorBrush(Colors.Red);
         return new SolidColorBrush(Colors.DarkBlue);
@@ -816,12 +864,15 @@ Here, group summary cells are customized based on summary values whether it’s 
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 0)
             return App.Current.Resources["customGroupSummary1"] as Style;
 
@@ -887,15 +938,19 @@ Here, group summary cells are customized based on `TotalPrice` summary column.
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var cell = container as GridGroupSummaryCell;
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
         {            
             var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
             var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
             var calculatedValue = aggregateValue.Value;
+
             //custom condition is checked.
+
             if (aggregateValue.Key != "Count" && (double)calculatedValue < 0)
                 return App.Current.Resources["customGroupSummary1"] as Style;
         }
@@ -954,16 +1009,20 @@ The appearance of group summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);      
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 1500)
             return new SolidColorBrush(Colors.LightBlue);
         return new SolidColorBrush(Colors.Bisque);
     }
+
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
         throw new NotImplementedException();
@@ -1026,13 +1085,16 @@ The appearance of group summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var summaryRecordEntry = (item as SpannedDataRow).RowData;
         var summaryValue = (summaryRecordEntry as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ( (double)calculatedValue < 0)
             return App.Current.Resources["customGroupSummary1"] as Style;
 
@@ -1101,12 +1163,15 @@ The appearance of table summary cell can be customized conditionally based on su
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);      
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 1500)
             return new SolidColorBrush(Colors.Red);
         return new SolidColorBrush(Colors.LightBlue);
@@ -1178,13 +1243,16 @@ The appearance of table summary cell can be customized conditionally based on su
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
         var cell = container as GridTableSummaryCell;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 8500 && cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
             return App.Current.Resources["customTableSummary"] as Style;
 
@@ -1254,10 +1322,13 @@ Here, table summary cells are customized based on `TotalPrice` summary column.
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var cell = container as GridTableSummaryCell;
+
         // column name is checked.
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
             return App.Current.Resources["TableSummaryStyle1"] as Style;
         return App.Current.Resources["TableSummaryStyle2"] as Style;
@@ -1294,12 +1365,15 @@ The appearance of table summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);      
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 1500)
             return new SolidColorBrush(Colors.Bisque);
         return new SolidColorBrush(Colors.LightBlue);
@@ -1375,13 +1449,16 @@ The appearance of table summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var summaryRecordEntry = (item as SpannedDataRow).RowData;
         var summaryValue = (summaryRecordEntry as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 0)
             return App.Current.Resources["customTableSummary"] as Style;
 
@@ -1454,10 +1531,13 @@ Here, horizontal alignment of table summary cells are changed based on column na
 {% highlight c# %}
 public class TableSummaryStyleSelector : StyleSelector
 {
+
     public override Style SelectStyle(object item, DependencyObject container)
     {
         var cell = container as GridTableSummaryCell;
+
         // Horizontal Alignments changed based on MappingName
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
             return App.Current.Resources["TableSummaryStyle1"] as Style;
         return App.Current.Resources["TableSummaryStyle2"] as Style;
@@ -1496,12 +1576,16 @@ Here, row headers are customized based on `AmountPaid` property of underlying re
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         var data = value as OrderInfo;
+
         //custom condition is checked.
+
         if (data.AmountPaid)
             return Brushes.Green;
+
         else
             return Brushes.Red;
     }

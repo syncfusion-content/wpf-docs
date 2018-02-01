@@ -383,9 +383,11 @@ To serialize the above DatePickerColumn, follow the below steps.
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name="SerializableCustomGridColumn")]
+
 public class SerializableCustomGridColumn : SerializableGridColumn
 {
     [DataMember]
+
     public string DateMappingName { get; set; }
 }
 {% endhighlight %}
@@ -399,6 +401,7 @@ dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
 public class SerializationControllerExt : SerializationController
 {
+ 
     public SerializationControllerExt(SfDataGrid dataGrid)
         : base(dataGrid)
     {
@@ -413,13 +416,15 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
-            : base(dataGrid)
-        {
-        }
+
+    public SerializationControllerExt(SfDataGrid dataGrid)
+        : base(dataGrid)
+    {
+    }
 
     protected override SerializableGridColumn GetSerializableGridColumn(GridColumn column)
     {
+
         if (column.MappingName == "OrderDate")
         {
             return new SerializableCustomGridColumn();
@@ -436,13 +441,16 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
-        protected override void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)
+    {
+    }
+
+    protected override void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)
     {
         base.StoreGridColumnProperties(column, serializableColumn);
+
         if (column is DatePickerColumn)
             (serializableColumn as SerializableCustomGridColumn).DateMappingName = (column as DatePickerColumn).DateMappingName;
     }
@@ -456,10 +464,10 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
+    {
+    }
 
     public override Type[] KnownTypes()
     {
@@ -478,17 +486,18 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
+    {
+    }
 
-        protected override GridColumn GetGridColumn(SerializableGridColumn serializableColumn)
-        {
-            if (serializableColumn is SerializableCustomGridColumn)
-                return new DatePickerColumn();
+    protected override GridColumn GetGridColumn(SerializableGridColumn serializableColumn)
+    {
+
+        if (serializableColumn is SerializableCustomGridColumn)
+            return new DatePickerColumn();
             return base.GetGridColumn(serializableColumn);
-        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -499,6 +508,7 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
+
     public SerializationControllerExt(SfDataGrid dataGrid)
         : base(dataGrid)
     {
@@ -555,6 +565,7 @@ this.dataGrid.SerializationController = new SerializationControllerExt(this.data
 
 public class SerializationControllerExt : SerializationController
 {
+
     public SerializationControllerExt(SfDataGrid grid)
         : base(grid)
     {
@@ -564,8 +575,10 @@ public class SerializationControllerExt : SerializationController
     protected override void RestoreColumnProperties(SerializableGridColumn serializableColumn, GridColumn column)
     {
         base.RestoreColumnProperties(serializableColumn, column);
+
         if (column is GridTemplateColumn)
         {
+
             if (column.MappingName == "OrderID")
             {
                 column.CellTemplate = App.Current.Resources["cellTemplate"] as DataTemplate;
