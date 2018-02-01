@@ -42,6 +42,7 @@ public class OrderInfo : IDataErrorInfo
     }     
 
     [Display(AutoGenerateField = false)]
+
     public string Error
     {
         get
@@ -54,6 +55,7 @@ public class OrderInfo : IDataErrorInfo
     {
         get 
         {
+
             if (!columnName.Equals("Country"))
                 return string.Empty;
 
@@ -103,6 +105,7 @@ public class OrderInfo : INotifyDataErrorInfo
 
     public System.Collections.IEnumerable GetErrors(string propertyName)
     {
+
         if (!propertyName.Equals("ShipCity"))
             return null;
 
@@ -113,6 +116,7 @@ public class OrderInfo : INotifyDataErrorInfo
     }
 
     [Display(AutoGenerateField = false)]
+
     public bool HasErrors
     {
         get
@@ -150,6 +154,7 @@ The numeric type like int, double, decimal properties can be validated using [Ra
 {% highlight c# %}
 private int orderID;
 [Range(1001, 1005, ErrorMessage = "OrderID between 1001 and 1005 alone processed")]        
+
 public int OrderID
 {
     get { return orderID; }
@@ -158,6 +163,7 @@ public int OrderID
 
 private decimal price;
 [Range(typeof(decimal),"12","20")]
+
 public decimal Price
 {
     get { return price; }
@@ -172,6 +178,7 @@ The string type property can be validated using [Required](https://msdn.microsof
 {% highlight c# %}
 private string shippingCity;
 [Required]
+
 public string ShipCity
 {
     get { return shippingCity; }
@@ -180,6 +187,7 @@ public string ShipCity
 
 private string customerName;
 [StringLength(17)]
+
 public string CustomerName
 {
     get { return customerName; }
@@ -193,6 +201,7 @@ The data that has heterogeneous type (combination of number, special character) 
 {% tabs %}
 {% highlight c# %}
 [RegularExpressionAttribute(@"^[a-zA-Z]{1,40}$", ErrorMessage="Numbers and special characters not allowed")]
+
 public string CustomerID
 {
     get { return customerId; }
@@ -219,6 +228,7 @@ this.dataGrid.CurrentCellValidating += dataGrid_CurrentCellValidating;
 
 void dataGrid_CurrentCellValidating(object sender, CurrentCellValidatingEventArgs args)
 {
+
     if (args.NewValue.ToString().Equals("1004"))
     {
         args.IsValid = false;
@@ -236,7 +246,6 @@ this.dataGrid.CurrentCellValidated += dataGrid_CurrentCellValidated;
 
 void dataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -256,6 +265,7 @@ this.dataGrid.RowValidating += dataGrid_RowValidating;
 void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {
     var data = args.RowData.GetType().GetProperty("CustomerID").GetValue(args.RowData);
+
     if(data.ToString().Equals("AROUT"))
     {                
         args.IsValid = false;
@@ -273,7 +283,6 @@ this.dataGrid.RowValidated += dataGrid_RowValidated;
 
 void dataGrid_RowValidated(object sender, RowValidatedEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -846,10 +855,12 @@ You can show the error information in row header by setting [IDataErrorInfo.Erro
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false)]
+
 public string Error
 {
     get
     {
+
         if (this.Country.Contains("Germany") || this.Country.Contains("UK"))
             return "Delivery not available for the country " + this.Country;
 
@@ -868,10 +879,12 @@ You can show the error information in row header by setting [INotifyDataErrorInf
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false)]
+
 public bool HasErrors
 {
     get
     {
+
         if (this.ShipCity.Contains("Mexico D.F."))
             return true;
         return false;
@@ -964,6 +977,7 @@ this.FirstLevelNestedGrid.CurrentCellValidating +=FirstLevelNestedGrid_CurrentCe
 
 private void FirstLevelNestedGrid_CurrentCellValidating(object sender, CurrentCellValidatingEventArgs args)
 {
+
     if(args.NewValue.ToString().Equals("Bike2"))
     {
         args.IsValid = false;
@@ -1013,7 +1027,6 @@ When the relation is auto-generated, you can wire the `CurrentCellValidating` an
 {% tabs %}
 {% highlight c# %}
 dataGrid.AutoGenerateRelations = true;
-
 dataGrid.AutoGeneratingRelations +=dataGrid_AutoGeneratingRelations;
 
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
@@ -1057,6 +1070,7 @@ this.FirstLevelNestedGrid.RowValidating +=FirstLevelNestedGrid_RowValidating;
 private void FirstLevelNestedGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {
     var data = args.RowData.GetType().GetProperty("ProductName").GetValue(args.RowData);
+
     if (data.ToString().Equals("Bike1"))
     {
         args.IsValid = false;
@@ -1104,7 +1118,6 @@ When the relation is auto-generated, you can wire the `RowValidating` and `RowVa
 {% tabs %}
 {% highlight c# %}
 dataGrid.AutoGenerateRelations = true;
-
 dataGrid.AutoGeneratingRelations +=dataGrid_AutoGeneratingRelations;
 
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
@@ -1132,6 +1145,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
     int columnIndex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
 
     //We are enabling the RowValidating, CellValidating event if the changes happen in GridCheckBoxColumn
+
     if (this.dataGrid.Columns[columnIndex].CellType == "CheckBox")
     {
         this.dataGrid.GetValidationHelper().SetCurrentRowValidated(false);

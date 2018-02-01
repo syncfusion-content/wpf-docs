@@ -128,6 +128,7 @@ this.dataGrid.GridCopyContent += dataGrid_GridCopyContent;
 
 void dataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 {
+
     if (((e.OriginalSender as SfDataGrid).SelectedItem as OrderInfo).OrderID == 1004)
         e.Handled = true;
 }
@@ -144,6 +145,7 @@ this.dataGrid.GridPasteContent+=dataGrid_GridPasteContent;
 
 void dataGrid_GridPasteContent(object sender, GridCopyPasteEventArgs e)
 {
+
     if (((e.OriginalSender as SfDataGrid).SelectedItem as OrderInfo).OrderID == 1010)
         e.Handled = true;
 }
@@ -180,6 +182,7 @@ The below code example change the clipboard value as 100 instead of cell value 1
 {% highlight c# %}
 void dataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {
+
     if (e.Column.MappingName == "OrderID" && (e.RowData as OrderInfo).OrderID == 1003)
         e.ClipBoardValue = 100;
 }
@@ -194,6 +197,7 @@ The below code example handled the copy operation when `MappingName` of a Column
 {% highlight c# %}
 void dataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {
+
     if (e.Column.MappingName == "Country")
         e.Handled = true;
 }
@@ -233,6 +237,7 @@ The below code example change the clipboard value as Test instead of clipboard v
 {% highlight c# %}
 void dataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {
+
     if (e.Column.MappingName == "CustomerID" && (e.RowData as OrderInfo).CustomerID == "BERGS")
         e.ClipBoardValue = "Test";
 }
@@ -247,6 +252,7 @@ The below code example handled the paste operation when `MappingName` of Column 
 {% highlight c# %}
 void dataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
         e.Handled = true;
 }
@@ -367,6 +373,7 @@ SfDataGrid process the clipboard operations in [GridCutCopyPaste](http://help.sy
 {% highlight c# %}
 public class CustomCopyPaste : GridCutCopyPaste
 {
+
     public CustomCopyPaste(SfDataGrid sfGrid) : base(sfGrid)
     {        
     }
@@ -393,6 +400,7 @@ By default, you can copy one cell and paste it into another cell when Cell Selec
 {% highlight c# %}
 public class CustomCopyPaste : GridCutCopyPaste
 {
+
     public CustomCopyPaste(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
@@ -406,7 +414,9 @@ public class CustomCopyPaste : GridCutCopyPaste
         clipBoardText = Regex.Split(clipBoardText[0], @"\t");
 
         //Get the clipBoardText and check if the clipBoardText is more than one cell
+
         //means call the base.
+
         if (clipBoardText.Count() > 1)
         {
             base.PasteToCell(record, column, value);
@@ -414,7 +424,6 @@ public class CustomCopyPaste : GridCutCopyPaste
         
         //Get the selectedCells for paste the copied cell 
         var selectedCells = this.dataGrid.GetSelectedCells();
-        
         int selectedCellsCount = selectedCells.Count;
         
         for (int i = 0; i < selectedCellsCount; i++)
@@ -424,7 +433,9 @@ public class CustomCopyPaste : GridCutCopyPaste
             column = selectedCells[i].Column;
             
             //Call PasteToCell method with particular record of selectedCells,
+
             //Column of selected records and rowData
+
             if (record != null && column != null)
                 base.PasteToCell(record, column, value);
         }
@@ -441,6 +452,7 @@ By default, you can able to copy one row and paste it into another row when Row 
 {% highlight c# %}
 public class CustomCopyPaste : GridCutCopyPaste
 {
+
     public CustomCopyPaste(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
@@ -448,11 +460,12 @@ public class CustomCopyPaste : GridCutCopyPaste
     protected override void PasteToRow(object clipBoardContent, object selectedRecords)
     {
         var text = Clipboard.GetText();
-        
         string[] clipBoardText = Regex.Split(text, @"\r\n");
 
         //Get the clipBoardText and check if the clipBoardText is more than one row
+
         //means call the base.
+
         if (clipBoardText.Count() > 1)
         {
             base.PasteToRow(clipBoardContent, selectedRecords);
@@ -482,6 +495,7 @@ By default after pasting the clipboard value to SfDataGrid selection is maintain
 {% highlight c# %}
 public class CustomCopyPaste : GridCutCopyPaste
 {
+
     public CustomCopyPaste(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
@@ -499,6 +513,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 
     protected override void PasteToRow(object clipBoardContent, object selectedRecords)
     {
+
         //Added the selected record to list
         selectedItem.Add(selectedRecords);
         
@@ -516,6 +531,7 @@ By default while paste the clipboard value to SfDataGrid, it changes the values 
 {% highlight c# %}
 public class CustomCopyPaste : GridCutCopyPaste
 {
+
     public CustomCopyPaste(SfDataGrid dataGrid)
         : base(dataGrid)
     {
@@ -524,10 +540,10 @@ public class CustomCopyPaste : GridCutCopyPaste
     protected override void PasteToRows(object clipBoardRows)
     {
         var copiedRecord = (string[])clipBoardRows;
-        
         int copiedRecordsCount = copiedRecord.Count();
 
         //Based on the clipboard count added the new record for paste
+ 
         if (copiedRecordsCount > 0)
         {
             //Get the viewModel for adding the record
@@ -543,9 +559,11 @@ public class CustomCopyPaste : GridCutCopyPaste
                     string[] values = Regex.Split(copiedRecord[i], @"\t");
 
                     //Adding the new record by using PasteToCell method by passing the 
+ 
                     //created data, particular column, and clipboard value
                     this.PasteToCell(entity, this.dataGrid.Columns[j], values[j]);
                 }
+ 
                 //Added the pasted record in collection
                 record.Orders.Add(entity);
             }
