@@ -130,7 +130,7 @@ GoToPageCommand allows you to navigate through the pages of the PDF document. Th
 {% endtabs %}
 
 N>
-* If the commandparameter is some other text or invalid page number, the GoToPageCommand does not have any effect.
+* If the command parameter is some other text or invalid page number, the GoToPageCommand does not have any effect.
 
 # Printing PDF
 
