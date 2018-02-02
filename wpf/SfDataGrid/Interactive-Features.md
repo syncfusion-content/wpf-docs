@@ -42,6 +42,7 @@ public class BaseCommand : ICommand
     /// Creates a new command that can always execute.
     /// </summary>
     /// <param name="execute">The execution logic.</param>
+
     public BaseCommand(Action<object> execute)
         : this(execute, null)
     {
@@ -52,8 +53,10 @@ public class BaseCommand : ICommand
     /// </summary>
     /// <param name="execute">The execution logic.</param>
     /// <param name="canExecute">The execution status logic.</param>
+
     public BaseCommand(Action<object> execute, Predicate<object> canExecute)
     {
+
         if (execute == null)
         throw new ArgumentNullException("execute");
         _execute = execute;
@@ -62,6 +65,7 @@ public class BaseCommand : ICommand
     #endregion
     
     #region ICommand Members
+
     public bool CanExecute(object parameter)
     {
         return _canExecute == null ? true : _canExecute(parameter);
@@ -83,12 +87,14 @@ public class BaseCommand : ICommand
 
 public class EmployeeInfoViewModel : INotifyPropertyChanged
 {
+
     public EmployeeInfoViewModel()
     {
         CopyCommand = new ContextMenuDemo.BaseCommand(ShowMessage);
     }
     
     private ICommand copyCommand
+
     public ICommand CopyCommand
     {
         get
@@ -103,6 +109,7 @@ public class EmployeeInfoViewModel : INotifyPropertyChanged
     
     public void ShowMessage(object obj)
     {
+
         if (obj is GridRecordContextMenuInfo)
         {
             var grid = (obj as GridRecordContextMenuInfo).DataGrid;
@@ -168,6 +175,7 @@ While binding the menu item using CommandBinding you can get the command paramet
 
 private static void OnCopyClicked(object obj)
 {
+
     if (obj is GridRecordContextMenuInfo)
     {
         var grid = (obj as GridRecordContextMenuInfo).DataGrid;
@@ -234,6 +242,7 @@ While binding the menu item using CommandBinding you can get the parameter as `G
 
 private static void OnSortAscendingClicked(object obj)
 {
+
     if (obj is GridColumnContextMenuInfo)
     {
         var grid = (obj as GridContextMenuInfo).DataGrid;
@@ -294,6 +303,7 @@ While binding the menu item using CommandBinding you can get the parameter as `G
 
 private static void OnFullExpandClicked(object obj)
 {
+ 
     if (obj is Syncfusion.UI.Xaml.Grid.GridContextMenuInfo)
     {
         var grid = (obj as Syncfusion.UI.Xaml.Grid.GridContextMenuInfo).DataGrid;
@@ -358,6 +368,7 @@ While binding the menu item using CommandBinding you can get the parameter as `G
 
 private static void OnFullCollapseClicked(object obj)
 {
+
     if (obj is GridContextMenuInfo)
     {
         var grid = (obj as GridContextMenuInfo).DataGrid;
@@ -413,6 +424,7 @@ While binding the menu item using CommandBinding you can get the command paramet
 
 private static void OnExpandClicked(object obj)
 {
+ 
     if (obj is GridRecordContextMenuInfo)
     {   
         var grid = (obj as GridRecordContextMenuInfo).DataGrid;
@@ -468,9 +480,11 @@ While binding the menu item using CommandBinding you can get the command paramet
 
 private static void OnClearSummaryClicked(object obj)
 {
+ 
     if (obj is GridRecordContextMenuInfo)
     {
         var grid = (obj as GridRecordContextMenuInfo).DataGrid;
+  
         if (grid.GroupSummaryRows.Any())
         grid.GroupSummaryRows.Clear();
     }
@@ -531,10 +545,12 @@ While binding the menu item using CommandBinding you can get the command paramet
 
 private static void OnTotalSummaryCountClicked(object obj)
 {
+
     if (obj is GridRecordContextMenuInfo)
     {
         var grid = (obj as GridRecordContextMenuInfo).DataGrid;
         var record = (obj as GridRecordContextMenuInfo).Record as SummaryRecordEntry;
+
         if (record != null)
         {
             var summaryRow = new GridSummaryRow() { Name = "totalGroupSummaryRow", Title = "{totalSummary}", ShowSummaryInRow = true };
@@ -597,9 +613,11 @@ You can use the GridContextMenuOpening event to change the menu item when the co
 {% highlight c# %}
 
 this.dataGrid.GridContextMenuOpening += dataGrid_GridContextMenuOpening;
+
 void dataGrid_GridContextMenuOpening(object sender, GridContextMenuEventArgs e)
 {
     e.ContextMenu.Items.Clear();
+
     if(e.ContextMenuType == ContextMenuType.RecordCell)
     {
         e.ContextMenu.Items.Add(new MenuItem() { Header="Record"});
@@ -648,14 +666,17 @@ While dropping columns in ColumnChooser window, the particular column will hided
 {% highlight c# %}
 
 ColumnChooser chooserWindow;
+
 void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {
     chooserWindow = new ColumnChooser(this.dataGrid);
     chooserWindow.Resources.MergedDictionaries.Clear();
     chooserWindow.ClearValue(ColumnChooser.StyleProperty);
+
     //Resources has been added to the Merged Dictionaries     
     chooserWindow.Resources.MergedDictionaries.Add(this.MainGrid.Resources.MergedDictionaries[0]);
     this.dataGrid.GridColumnDragDropController = new GridColumnChooserController(this.dataGrid, chooserWindow);
+
     //ColumnChooser Window will open
     chooserWindow.Show();
     chooserWindow.Owner = this;
@@ -811,21 +832,29 @@ CustomColumnChooserViewModel chooserViewModel = new CustomColumnChooserViewModel
 CustomColumnChooser ColumnChooserView = new CustomColumnChooser(chooserViewModel);
 ColumnChooserView.Owner = Application.Current.MainWindow;
 chooserWindow.Visibility = System.Windows.Visibility.Collapsed;
+
 if ((bool)ColumnChooserView.ShowDialog())
     ClickOKButton(chooserViewModel.ColumnCollection, this.AssociatedObject.dataGrid);
 viewModel.ShowColumnChooser = false;
+
 //This will add or remove the Columns from the SfDataGrid
+
 public void ClickOKButton(ObservableCollection<ColumnChooserItems> ColumnCollection, SfDataGrid dataGrid)
 {
+
     foreach (var item in ColumnCollection)
     {
         var column = dataGrid.Columns.FirstOrDefault(v => v.MappingName == item.Name);
+
         if (column != null)
         {
+
             if (item.IsChecked == false && !column.IsHidden)
             column.IsHidden = true;
+
             else if (item.IsChecked == true && column.IsHidden == true)
             {
+
                 if (column.Width == 0)
                     column.Width = 150;
                 column.IsHidden = false;
@@ -849,6 +878,7 @@ You can change the default appearance of the column chooser window by customizin
 {% highlight c# %}
 
 ColumnChooser chooserWindow;
+
 void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {
     chooserWindow = new ColumnChooser(this.dataGrid);
@@ -1019,13 +1049,18 @@ You can change the background color of the RowHeader by customizing the style of
 
 public class CustomConverter:IValueConverter
 {
+ 
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
+
         //Type casting the value as Data class(Business logic)
         var data = value as Data;
+
         //The Red color is applied to RowHeader if the status value is true otherwise the white color is applied 
+
         if (data.Status == true)
             return Brushes.Red;
+
         else
             return Brushes.Green;
     }
@@ -1211,6 +1246,7 @@ public class ToolTipTemplateSelector : DataTemplateSelector
     /// <summary>
     /// Gets or sets DefaultTemplate.
     /// </summary>
+ 
     public DataTemplate DefaultTemplate
     {
         get { return _defaultTemplate; }
@@ -1222,6 +1258,7 @@ public class ToolTipTemplateSelector : DataTemplateSelector
     /// <summary>
     /// Gets or Sets AlternateTemplate.
     /// </summary>
+
     public DataTemplate AlternateTemplate
     {
         get { return _alternateTemplate; }
@@ -1230,15 +1267,21 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
     public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
     {
+
         //The item that comes from ToolTipTemplate is DataContextHelper. When set SetCellBoundValue to true, it sets DataContextHelper as DataContext to DataTemplate. Refer property section of CellTemplate.
         OrderInfo dataUnit = item as OrderInfo;
+
         if (dataUnit == null) return this.DefaultTemplate;
+
         //use reflection to retrieve property
         Type type = dataUnit.GetType();
         PropertyInfo property = type.GetProperty("OrderID");
+
         //To see what template needs to be select according to the specified property value.
+
         if (property.GetValue(dataUnit, null).ToString().Contains('9') || property.GetValue(dataUnit, null).ToString().Contains('4'))
             return this.AlternateTemplate;
+
         else
             return this.DefaultTemplate;
     }
@@ -1281,6 +1324,7 @@ public class GridSelectionControllerExt : GridSelectionController
     #endregion
 
     #region Properties
+
     public bool IsDragging
     {
         get { return _isDragging; }
@@ -1309,14 +1353,18 @@ public class GridSelectionControllerExt : GridSelectionController
     #endregion
 
     #region Overrides
+
     protected override void ProcessPointerPressed(MouseButtonEventArgs args, RowColumnIndex rowColumnIndex)
     {
         base.ProcessPointerPressed(args, rowColumnIndex);
+   
         if (rowColumnIndex.RowIndex >= this.DataGrid.ResolveStartIndexBasedOnPosition() && rowColumnIndex.ColumnIndex == 0)
         {
             _draggingRecordEntry = DataGrid.GetNodeEntry(rowColumnIndex.RowIndex);
+   
             if (_draggingRecordEntry.IsGroups)
                 this.DataGrid.View.TopLevelGroup.ResetCache = true;
+   
             if (!_draggingRecordEntry.IsRecords)
             {
                 _draggingRecordEntry = null;
@@ -1329,9 +1377,11 @@ public class GridSelectionControllerExt : GridSelectionController
             var p = args.GetPosition(this.visualContainer);                
 
             var gridRect = this.GetControlRect(this.DataGrid);
+
             // Set the Horizontal and Vertical offset for popup screen
             popup.HorizontalOffset = p.X;
             popup.VerticalOffset = p.Y;
+
             //Show the Drag indicator            
             this.ShowDragIndication(gridRect, p);
             popup.IsOpen = true;
@@ -1346,11 +1396,13 @@ public class GridSelectionControllerExt : GridSelectionController
 
     private void OnDrop(object sender, MouseButtonEventArgs e)
     {
+    
         if (!this.IsDragging || this.popup == null)
             return;
 
         if (_draggingRecordEntry.Parent != null)
             DragAndDropWhenGroup(e);
+    
         else
             DragAndDropWithRecord(e);
 
@@ -1363,6 +1415,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
     private void DragOver(object sender, MouseEventArgs e)
     {            
+
         if (!IsDragging || this.popup == null || !(sender is DraggablePopupContentControl))
             return;
         this.draggablePopupContentControl.CaptureMouse();
@@ -1378,8 +1431,10 @@ public class GridSelectionControllerExt : GridSelectionController
             this.SuspendAutoScrolling = true;
             this.DataGrid.AutoScroller.AutoScrolling = AutoScrollOrientation.Vertical;
         }
+
         else
         {
+
             // Set the Horizontal and Vertical offset for popup screen
             popup.HorizontalOffset = p.X;
             popup.VerticalOffset = p.Y;
@@ -1404,11 +1459,13 @@ public class GridSelectionControllerExt : GridSelectionController
 
     private void InitializePopupControl()
     {
+
         if (this.popup != null)
         {
             draggablePopupContentControl.DataContext = _draggingRecordEntry;
             return;
         }
+
 
         //Initialize Popup, UpArrow, DownArrow and DraggablePopupContentControl
         popup = new Popup();
@@ -1449,6 +1506,7 @@ public class GridSelectionControllerExt : GridSelectionController
             return;
 
         int currentRecordIndex = this.DataGrid.ResolveToRecordIndex(currentRowColumnIndex.RowIndex);
+ 
         if (currentRecordIndex == -1)
             return;
 
@@ -1459,15 +1517,19 @@ public class GridSelectionControllerExt : GridSelectionController
             return;
         var recordUnderMouse = nodeEntry as RecordEntry;
         var dataRow = rowGenerator.Items.FirstOrDefault(row => (row.RowType != RowType.HeaderRow && (row.RowData as Orders) == recordUnderMouse.Data as Orders)) as DataRowBase;
+ 
         //Get the WholeRowElement for DataRow
         var wholeRowElement = dataRow.GetType().GetField("WholeRowElement", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(dataRow) as VirtualizingCellsControl;
+ 
         //Get the mouse point position on the VirtualizingCellsControl
         var mousePointOnVirtualizingCellsControl = Mouse.GetPosition(wholeRowElement);
+ 
         //Set the Horizontal and Vertical Offset for UpArrowIndicator and DownArrowIndicator
         upArrowIndicator.HorizontalOffset = DataGrid.RowHeaderWidth;
         downArrowIndicator.HorizontalOffset = DataGrid.RowHeaderWidth;
 
         //Check whether the mouse point is on the top or end of the Row element 
+ 
         if (currentRecordIndex != previousRowIndex || (currentRecordIndex == previousRowIndex && mousePointOnVirtualizingCellsControl.Y < this.DataGrid.RowHeight / 2))
         {
             previousRowIndex = currentRecordIndex;
@@ -1475,6 +1537,7 @@ public class GridSelectionControllerExt : GridSelectionController
             upArrowIndicator.VerticalOffset = mousePoint.Y - mousePointOnVirtualizingCellsControl.Y;
             downArrowIndicator.VerticalOffset = mousePoint.Y - (mousePointOnVirtualizingCellsControl.Y + 22);
         }
+ 
         else if (currentRecordIndex == previousRowIndex && mousePointOnVirtualizingCellsControl.Y > this.DataGrid.RowHeight / 2)
         {
             upArrowIndicator.VerticalOffset = mousePoint.Y + (this.DataGrid.RowHeight - mousePointOnVirtualizingCellsControl.Y);
@@ -1514,6 +1577,7 @@ public class GridSelectionControllerExt : GridSelectionController
         draggingGroup.RemoveRecord(_draggingRecordEntry as RecordEntry, true);
         draggingGroup.SetDirty();
         int indexOfDroppingRecord = (droppingRecordEntry.Parent as Group).Records.IndexOf(droppingRecordEntry as RecordEntry);
+ 
         if (!isSameGroup)
         {
             _draggingRecordEntry.Parent = null;
@@ -1537,44 +1601,56 @@ public class GridSelectionControllerExt : GridSelectionController
         point = rowColumnIndex.RowIndex >  currentRowIndex ? upArrowPoint : downArrowPoint;
         
         rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
+ 
         if (!_isDragging)
             return;
+ 
         if (!(this.DataGrid is DetailsViewDataGrid))
         {
             var vm = DataGrid.DataContext as ViewModel;
+ 
             if (!rowColumnIndex.IsEmpty)
             {
+ 
                 // Get the RecordIndex using RowIndex
                 var index = DataGrid.ResolveToRecordIndex(rowColumnIndex.RowIndex);
+ 
                 if (index != -1)
                 {
                     var dragRecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
+ 
                     // Remove the Selected Row Data from Source
                     vm.OrderDetails.Remove(dragRecord);
+ 
                     // Add the removed Selected Row Data to Source based on RecordIndex
                     vm.OrderDetails.Insert(index, dragRecord);
+ 
                     // Selected Item is reset with new data
                     DataGrid.SelectedItem = vm.OrderDetails[index];
                 }
+ 
                 else
                 {
                     var dragRecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
+ 
                     // Remove the Selected Row Data from Dragging SfDataGrid 
                     vm.OrderDetails.Remove(dragRecord);
+ 
                     // Insert the Selected row data to specified index position of dropping SfDataGrid
                     vm.OrderDetails.Insert(index + 1, dragRecord);
+ 
                     // Selected Item is reset with new dropped row data
                     DataGrid.SelectedItem = (_draggingRecordEntry as RecordEntry).Data;
                     this.MoveCurrentCell(new RowColumnIndex(rowColumnIndex.RowIndex + 1, 1));
                 }
             }
+ 
             else
             {
                 return;
             }
         }
     }
-
     #endregion
 
     #region HelperMethods

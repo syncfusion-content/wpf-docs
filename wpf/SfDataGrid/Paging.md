@@ -44,6 +44,7 @@ Follow the below steps to bind SfDataGrid with SfDataPager.
 public class ViewModel
 {
     private ObservableCollection<OrderInfo> _orders;
+
     public ObservableCollection<OrderInfo> Orders
     {
         get { return _orders; }
@@ -108,8 +109,8 @@ public class OrderInfo
          get {  return shippingCity; }
          set {  shippingCity = value; }
     }
-    public OrderInfo(int orderId, string customerName, string country, string     
-    customerId,string shipCity)
+
+    public OrderInfo(int orderId, string customerName, string country, string customerId,string shipCity)
     {
          this.OrderID = orderId;
          this.CustomerName = customerName;
@@ -215,6 +216,7 @@ public MainWindow()
 private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs args)
 {
     dataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
+
     //resetting cache for all pages.
   (dataPager.PagedSource as PagedCollectionView).ResetCache();
 }
@@ -269,11 +271,13 @@ You can read the data from database in on-demand (here, records are retrieved fr
 public partial class MainWindow : Window
 {
     Northwind northWind;
+ 
     public MainWindow()
     {
         InitializeComponent();
         dataPager.OnDemandLoading += dataPager_OnDemandLoading;
         string connectionString = string.Format(@"Data Source = {0}", ("Northwind.sdf"));
+ 
        //northWind dataProvider connectivity.
         northWind = new Northwind(connectionString);
     }
@@ -346,11 +350,13 @@ public partial class MainWindow : Window
 {
     List<Orders> source = new List<Orders>();
     Northwind northWind;
+  
     public MainWindow()
     {
         InitializeComponent();
         dataPager.OnDemandLoading += dataPager_OnDemandLoading;
         string connectionString = string.Format(@"Data Source = {0}", ("Northwind.sdf"));
+  
        //northwind dataprovider connectivity.
         northWind = new Northwind(connectionString);      
 source = northWind.Orders.ToList(); 
@@ -363,6 +369,7 @@ source = northWind.Orders.ToList();
 
 private List<Orders> ApplyFilter(Northwind NorthwindSource)
 {
+ 
    //records are filtered based on ShipName column
     return NorthwindSource.Orders.Where(item => item.ShipName.Contains(fitlerTextBox.Text)).ToList();
 }
@@ -370,14 +377,19 @@ private List<Orders> ApplyFilter(Northwind NorthwindSource)
 private void FilterBtn_Click(object sender, RoutedEventArgs e)
 {
     source = ApplyFilter(northWind);
+ 
    //page count resets based on filtered records.
+ 
     if (source.Count() < dataPager.PageSize)
         this.dataPager.PageCount = 1;
+ 
     else
     {
         var count = source.Count() / dataPager.PageSize;
+ 
         if (source.Count() % dataPager.PageSize == 0)
             this.dataPager.PageCount = count;
+ 
         else
             this.dataPager.PageCount = count + 1;
     }
@@ -437,16 +449,21 @@ private void DataGrid_SortColumnsChanging(object sender, GridSortColumnsChanging
 {
     (dataPager.PagedSource as PagedCollectionView).ResetCache();
     (dataPager.PagedSource as PagedCollectionView).ResetCacheForPage(dataPager.PageIndex);
+
     if (e.Action == NotifyCollectionChangedAction.Add || e.Action == NotifyCollectionChangedAction.Replace)
     {
         var sortDesc = e.AddedItems[0];
+
         if (sortDesc.SortDirection == ListSortDirection.Ascending)
         {
+
         //records are sorted in ascending order.
             source = source.OfQueryable().AsQueryable().OrderBy(sortDesc.ColumnName).Cast<OrderInfo>().ToList();
         }
+
         else
         {
+
         //records are sorted descending order.
             source =
                 source.OfQueryable()
@@ -485,13 +502,17 @@ public MainWindow()
 }
 
 //async method which return data with some delay
+
 public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startIndex, int pageSize)
 {
     var employees = new List<Employees>();
+
     //wait the method Execution to 2000 milliseconds
     System.Threading.Thread.Sleep(2000);
+
     for (int i = startIndex; i < (startIndex + pageSize); i++)
     {
+
         //Get the Data's to SfDataPager from ViewModel class
         employees.Add(repository.GetEmployees(i,pageSize));
     }
@@ -499,11 +520,14 @@ public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startIndex, 
 }
 
 //Delegate handler marked as async to use await inside
+
 private async void dataPager_OnDemandLoading(object sender, OnDemandLoadingEventArgs args)
 {
     var source = await GetEmployeesDetailsListAsync(args.StartIndex, args.PageSize);
+
     //Data's loaded to SfDataPager dynamically     
      dataPager.LoadDynamicItems(args.StartIndex, source.Take(args.PageSize));
+
     //Resets the previously loaded page data's. It’s optional         
     (dataPager.PagedSource as PagedCollectionView).ResetCache();
 }
@@ -511,12 +535,13 @@ private async void dataPager_OnDemandLoading(object sender, OnDemandLoadingEvent
 {% endhighlight %}
 {% endtabs %}
 
-
 `GetEmployees` method in EmployeeInfoRepository returns the record to SfDataPager.
+
 {% tabs %}
 {% highlight c# %}
 public class EmployeeInfoRepository
 {
+
     public EmployeeInfoRepository()
     {
     }
@@ -525,6 +550,7 @@ public class EmployeeInfoRepository
     {
         int j = 0;
         var employees = new List<Employees>();
+
         for (int i = startIndex; i < (startIndex + pageSize); i++)
         {
             Employees employee = GetEmployee(employees);

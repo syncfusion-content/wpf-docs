@@ -333,14 +333,17 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on OrderI
 {% highlight c# %}
 public class CustomCellTemplateSelector : DataTemplateSelector
 {
+
     public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
     {
+
         if (item == null)
             return null ;
-
         var data = item as OrderInfo;
+
         if (data.OrderID % 2 == 0)
             return Application.Current.MainWindow.FindResource("AlternateTemplate") as DataTemplate;
+
         else
             return Application.Current.MainWindow.FindResource("DefaultTemplate") as DataTemplate;
     }
@@ -388,6 +391,7 @@ public class BaseCommand:ICommand
     /// Creates a new command that always execute.
     /// </summary>
     /// <param name="execute">The execution logic.</param>
+
     public BaseCommand(Action<object> execute)
 
         : this(execute, null)
@@ -399,8 +403,10 @@ public class BaseCommand:ICommand
     /// </summary>
     /// <param name="execute">The execution logic.</param>
     /// <param name="canExecute">The execution status logic.</param>
+
     public BaseCommand(Action<object> execute, Predicate<object> canExecute)
     {
+
         if (execute == null)
             throw new ArgumentNullException("execute");
         _execute = execute;
@@ -409,15 +415,18 @@ public class BaseCommand:ICommand
     #endregion 
 
     #region ICommand Members
+
     public bool CanExecute(object parameter)
     {
         return _canExecute == null ? true : _canExecute(parameter);
     }
+
     public event EventHandler CanExecuteChanged
     {
         add { CommandManager.RequerySuggested += value; }
         remove { CommandManager.RequerySuggested -= value; }
     }
+
     public void Execute(object parameter)
     {
         _execute(parameter);
@@ -434,19 +443,23 @@ Below code, defines the command for `Button` in `ViewModel`.
 public class ViewModel
 {    
     private BaseCommand deleteRecord;
+
     public BaseCommand DeleteRecord
     {
         get
         {
+
             if (deleteRecord == null)
                 deleteRecord = new BaseCommand(OnDeleteRecordClicked, OnCanDelete);
             return deleteRecord;
         }
     }
+
     private static bool OnCanDelete(object obj)
     {
         return true;
     }
+
     private void OnDeleteRecordClicked(object obj)
     {
         //TODO ACTION.
@@ -513,8 +526,10 @@ When column is auto-generated, you can set the `StringFormat` by handling `AutoG
 {% highlight c# %}
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "UnitPrice")
     {
+
         if (e.Column is GridNumericColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
@@ -569,8 +584,10 @@ When column is auto-generated, you can set the `Converter` by handling `AutoGene
 {% highlight c# %}
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "UnitPrice")
     {
+
         if (e.Column is GridNumericColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
@@ -621,6 +638,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {   
+
     if (e.Column.MappingName == "CustomerName")
         e.Column.CellStyle = this.FindResource("cellStyle") as Style;
 }
@@ -655,6 +673,7 @@ In the below code, returns the style based on `OrderID` value. Using `Container`
 {% highlight c# %}
 public class CustomCellStyleSelector : StyleSelector
 {
+
     public override Style SelectStyle(object item, System.Windows.DependencyObject container)
     {
             var gridCell = container as GridCell;
@@ -664,8 +683,10 @@ public class CustomCellStyleSelector : StyleSelector
 
             if (mappingName.Equals("OrderID"))
             {
+
                 if (Convert.ToInt16(cellValue) <= 1005)
                     return App.Current.Resources["cellStyle1"] as Style;
+
                 else
                     return App.Current.Resources["cellStyle2"] as Style;
             }
@@ -697,6 +718,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
     {
         e.Column.CellStyleSelector = new CustomCellStyleSelector();  
@@ -1238,6 +1260,7 @@ Below code, returns the culture-specified date time value instead of default pat
 {% highlight c# %}
 public class CultureFormatConverter:IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         return value;
@@ -1307,24 +1330,17 @@ Using `CellTemplate`, you can format data or conditionally change the properties
 {% highlight c# %}
 //CellTemplate creation.
 DataTemplate cellTemplate = new DataTemplate();
-
 FrameworkElementFactory frameworkElement1 = new FrameworkElementFactory(typeof(TextBlock));
 Binding displayBinding = new Binding() { Path = new PropertyPath("CustomerID") };
-
 frameworkElement1.SetValue(TextBlock.TextProperty, displayBinding);
-                                  
 cellTemplate.VisualTree = frameworkElement1;
             
 //EditTemplate creation.
 DataTemplate editTemplate = new DataTemplate();
-
 FrameworkElementFactory frameworkElement2 = new FrameworkElementFactory(typeof(TextBox));
 Binding editBinding = new Binding() { Path = new PropertyPath("CustomerID"), Mode = BindingMode.TwoWay };
-
 frameworkElement2.SetValue(TextBox.TextProperty, editBinding);     
-
 editTemplate.VisualTree = frameworkElement2;
-
 this.dataGrid.Columns.Add(new GridTemplateColumn() { HeaderText = "Customer ID", MappingName = "CustomerID", CellTemplate = cellTemplate, EditTemplate = editTemplate, SetCellBoundValue = false });
 {% endhighlight %}
 {% endtabs %}
@@ -1459,12 +1475,14 @@ public class CustomEditTemplateSelector:DataTemplateSelector
 {
     public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
     {
+
         if (item == null)
             return null ;
-
         var data = item as OrderInfo;
+
         if (data.OrderID % 2 == 0)
             return App.Current.Resources["AlternateTemplate"] as DataTemplate;
+
         else
             return App.Current.Resources["DefaultTemplate"] as DataTemplate;
     }
@@ -1559,6 +1577,7 @@ this.dataGrid.CellRenderers.Add("ComboBox", new GridCellComboBoxRendererExt());
 
 public class GridCellComboBoxRendererExt:GridCellComboBoxRenderer
 {
+
     protected override void OnEditElementLoaded(object sender, System.Windows.RoutedEventArgs e)
     {
         base.OnEditElementLoaded(sender, e);
@@ -1599,15 +1618,18 @@ Below code returns the group caption based on `GridComboBoxColumn.ItemsSource`.
 {% highlight c# %}
 public class GroupCaptionConverter:IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
+
         if (!(parameter is GridComboBoxColumn))
             return value;
-
         var column = parameter as GridComboBoxColumn;
         var record = value as OrderInfo;
+
         foreach (var item in column.ItemsSource)
         {
+
             if (record.ProductName == (item as OrderDetails).ProductName)
                 return (item as OrderDetails).OrderID;
         }
@@ -1630,9 +1652,11 @@ this.dataGrid.GroupColumnDescriptions.CollectionChanged += GroupColumnDescriptio
 
 void GroupColumnDescriptions_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 {   
+
     if (e.Action == NotifyCollectionChangedAction.Add)
     {
         var groupDescription = e.NewItems[0] as GroupColumnDescription;
+
         if (groupDescription.ColumnName == "ProductName")
             groupDescription.Converter = new GroupCaptionConverter();
     }
@@ -1732,6 +1756,7 @@ this.dataGrid.CellRenderers.Add("MultiColumnDropDown", new GridCellMultiColumnDr
 
 public class GridCellMultiColumnDropDownRendererExt : GridCellMultiColumnDropDownRenderer
 {
+
     protected override void OnEditElementLoaded(object sender, System.Windows.RoutedEventArgs e)
     {
         (sender as SfMultiColumnDropDownControl).AllowImmediatePopup = true;                     
@@ -1878,6 +1903,7 @@ Below code, returns the `Image URI` using `ValueBinding` property.
 {% highlight c# %}
 public class StringToImageConverter:IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         string imageName = value as string+".jpg";
@@ -2069,6 +2095,7 @@ In the below code snippet, converter created to format the DateTimeOffSet value 
 public class DateTimeOffsetFormatConverter : IValueConverter
 {
     private GridDateTimeOffsetColumn cachedColumn;
+
     public DateTimeOffsetFormatConverter(GridDateTimeOffsetColumn column)
     {
         cachedColumn = column;
@@ -2078,14 +2105,19 @@ public class DateTimeOffsetFormatConverter : IValueConverter
     {
         value = ((DateTimeOffset)value).DateTime;
         var column = cachedColumn as GridDateTimeColumn;
+
         if (value == null || DBNull.Value == value)
         {
+
             if (column.AllowNullValue && column.MaxDateTime != System.DateTime.MaxValue && column.NullText == string.Empty)
                 return column.MaxDateTime;
+
             if (column.AllowNullValue && column.NullValue != null)
                 return column.NullValue;
+
             else if (column.AllowNullValue && column.NullText != string.Empty)
                 return column.NullText;
+
             if (column.MaxDateTime != System.DateTime.MaxValue)
                 return column.MaxDateTime;
         }
@@ -2095,6 +2127,7 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 
         if (_columnValue < column.MinDateTime)
             _columnValue = column.MinDateTime;
+
         if (_columnValue > column.MaxDateTime)
             _columnValue = column.MaxDateTime;
 
@@ -2103,34 +2136,48 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 
     private string DateTimeFormatString(DateTime columnValue, GridDateTimeColumn column)
     {
+
         switch (column.Pattern)
         {
+
             case DateTimePattern.ShortDate:
                 return columnValue.ToString("d", column.DateTimeFormat);
+
             case DateTimePattern.LongDate:
                 return columnValue.ToString("D", column.DateTimeFormat);
+
             case DateTimePattern.LongTime:
                 return columnValue.ToString("T", column.DateTimeFormat);
+
             case DateTimePattern.ShortTime:
                 return columnValue.ToString("t", column.DateTimeFormat);
+
             case DateTimePattern.FullDateTime:
                 return columnValue.ToString("F", column.DateTimeFormat);
+
             case DateTimePattern.RFC1123:
                 return columnValue.ToString("R", column.DateTimeFormat);
+
             case DateTimePattern.SortableDateTime:
                 return columnValue.ToString("s", column.DateTimeFormat);
+
             case DateTimePattern.UniversalSortableDateTime:
                 return columnValue.ToString("u", column.DateTimeFormat);
+
             case DateTimePattern.YearMonth:
                 return columnValue.ToString("Y", column.DateTimeFormat);
+
             case DateTimePattern.MonthDay:
                 return columnValue.ToString("M", column.DateTimeFormat);
+
             case DateTimePattern.CustomPattern:
                 return columnValue.ToString(column.CustomPattern, column.DateTimeFormat);
+
             default:
                 return columnValue.ToString("MMMM", column.DateTimeFormat);
         }
     }
+
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         throw new NotImplementedException();
@@ -2139,8 +2186,10 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 
 public class DateTimeOffsetToDateTimeConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
+
         if (value == null)
             return null;
         return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
@@ -2148,6 +2197,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
+
         if (value == null)
             return null;
         return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
@@ -2162,10 +2212,13 @@ In the below code snippet, `GridDateTimeOffsetColumn` column created from `GridD
 {% highlight c# %}
 public class GridDateTimeOffsetColumn : GridDateTimeColumn
 {
+
     protected override void SetDisplayBindingConverter()
     {
+
         if ((DisplayBinding as Binding).Converter == null)
             (DisplayBinding as Binding).Converter = new DateTimeOffsetFormatConverter(this);
+
         if ((ValueBinding as Binding).Converter == null)
             (ValueBinding as Binding).Converter = new DateTimeOffsetToDateTimeConverter();
     }
@@ -2380,9 +2433,11 @@ this.dataGrid.CellRenderers.Add("TextBox", new GridCellTextBoxRendererExt());
 
 public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
 {
+
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
+
         if(dataColumn.GridColumn.MappingName.Equals("CustomerID"))
             uiElement.Foreground = new SolidColorBrush(Colors.Blue);
     }
@@ -2390,6 +2445,7 @@ public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
     public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
+
         if (dataColumn.GridColumn.MappingName.Equals("CustomerID"))
             uiElement.Foreground = new SolidColorBrush(Colors.Blue);
     }
@@ -2412,6 +2468,7 @@ dataGrid.CellRenderers.Add("ComboBox", new GridComboBoxRenderer());
 
 public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, ComboBoxAdv>
 {
+
     public GridComboBoxRenderer()
     {
     }
@@ -2419,6 +2476,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// Create new display element.
     /// </summary>
     /// <returns></returns>
+
     protected override TextBlock OnCreateDisplayUIElement()
     {
         return new TextBlock();
@@ -2427,6 +2485,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// Create new edit element.
     /// </summary>
     /// <returns></returns>
+
     protected override ComboBoxAdv OnCreateEditUIElement()
     {
         return new ComboBoxAdv();
@@ -2437,6 +2496,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
@@ -2449,6 +2509,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <param name="element"></param>
     /// <param name="column"></param>
     /// <param name="dataContext"></param>
+
     private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
     {
         var comboBoxColumn = (GridComboBoxColumn)column;
@@ -2467,6 +2528,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
@@ -2478,6 +2540,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnInitializeEditElement(DataColumnBase dataColumn, ComboBoxAdv uiElement, object dataContext)
     {
         base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
@@ -2490,6 +2553,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnUpdateEditBinding(DataColumnBase dataColumn, ComboBoxAdv element, object dataContext)
     {
         base.OnUpdateEditBinding(dataColumn, element, dataContext);
@@ -2502,6 +2566,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <param name="element"></param>
     /// <param name="column"></param>
     /// <param name="dataContext"></param>
+
     private static void SetEditBinding(ComboBoxAdv element, GridColumn column, object dataContext)
     {
         var comboboxColumn = (GridComboBoxColumn)column;
@@ -2534,6 +2599,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <returns>
     /// True if the parent grid should be allowed to handle keys; false otherwise.
     /// </returns>
+
     protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
     {
         if (!HasCurrentCellState || !IsInEditing)
@@ -2546,6 +2612,7 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
             case Key.Enter:
             case Key.Escape:
                 return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
+
             case Key.Down:
             case Key.Up:
             case Key.Left:
@@ -2557,8 +2624,10 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// <summary>
     /// Gets the control value.
     /// </summary>
+
     public override object GetControlValue()
     {
+
         if (!HasCurrentCellState)
             return base.GetControlValue();
 
@@ -2569,13 +2638,16 @@ public class GridComboBoxRenderer : GridVirtualizingCellRenderer<TextBlock, Comb
     /// Sets the control value.
     /// </summary>
     /// <param name="value">The value.</param>
+
     public override void SetControlValue(object value)
     {
+
         if (!HasCurrentCellState)
             return;
 
         if (IsInEditing)
             ((ComboBoxAdv)CurrentCellRendererElement).SelectedValue = value;
+
         else
             throw new Exception("Value cannot be Set for Unloaded Editor");
     }
@@ -2590,6 +2662,7 @@ Below code, returns the display value from multiple selected items.
 public class DisplayConverter : IValueConverter
 {
     GridColumn cachedColumn;
+
     public DisplayConverter()
     {
 
@@ -2614,6 +2687,7 @@ public class DisplayConverter : IValueConverter
         string selectedItem = string.Empty;
          PropertyDescriptorCollection pdc = null;
          var enumerator = selectedItems.GetEnumerator();
+
         while (enumerator.MoveNext())
         {
             var type = enumerator.Current.GetType();
@@ -2657,23 +2731,27 @@ Below code creates the converter to format the date time value.
 {% highlight c# %}
 public class CustomConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
+
         if (string.IsNullOrEmpty(value.ToString()))
             return null;
         return new ConvertToDateTimeClass().ConvertToDateTime(value);
     }
+
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         return new ConvertToDateTimeClass().ConvertToDateTime(value);
     }
 }    
+
 public class ConvertToDateTimeClass
 {
+
     public string ConvertToDateTime(object value)
     {
         DateTime date = Convert.ToDateTime(value);
-
         return date.Year + "/" + date.Month + "/" +date.Day;
     }
 }
@@ -2686,6 +2764,7 @@ In the below code, new column created with converter using `SetDisplayBindingCon
 {% highlight c# %}
 public class DatePickerColumn : GridColumn
 {
+
     public DatePickerColumn()
     {
         SetCellType("DatePickerRenderer");
@@ -2717,8 +2796,10 @@ In the below code snippet, display and edit `UIElement` defined via `GridVirtual
 /// </summary>
 /// <param name="TextBlock">Display Control</param>
 /// <param name="DatePicker">Edit Control</param>
+
 public class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock, DatePicker>
 {
+
     public DatePickerRenderer()
     {
 
@@ -2735,6 +2816,7 @@ With the below code snippet, you can create the display and edit element for ren
 /// Create new display element.
 /// </summary>
 /// <returns></returns>
+
 protected override TextBlock OnCreateDisplayUIElement()
 {
     return new TextBlock();
@@ -2743,6 +2825,7 @@ protected override TextBlock OnCreateDisplayUIElement()
 /// Create new edit element.
 /// </summary>
 /// <returns></returns>
+
 protected override DatePicker OnCreateEditUIElement()
 {
     return new DatePicker();
@@ -2760,6 +2843,7 @@ With the below code snippet, you can initialize the binding for display element 
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 {
     base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
@@ -2772,6 +2856,7 @@ public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.DataColu
 /// <param name="element"></param>
 /// <param name="column"></param>
 /// <param name="dataContext"></param>
+
 private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
 {
     var customColumn = (DatePickerColumn)column;
@@ -2797,6 +2882,7 @@ With the below code snippet, updates the binding while UI interaction by overrid
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 {
     base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
@@ -2815,6 +2901,7 @@ Similarly, you can initialize and update the binding for edit element by overrid
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnInitializeEditElement(DataColumnBase dataColumn, DatePicker uiElement, object dataContext)
 {
     base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
@@ -2827,6 +2914,7 @@ public override void OnInitializeEditElement(DataColumnBase dataColumn, DatePick
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnUpdateEditBinding(DataColumnBase dataColumn, DatePicker element, object dataContext)
 {
     base.OnUpdateEditBinding(dataColumn, element, dataContext);
@@ -2839,6 +2927,7 @@ public override void OnUpdateEditBinding(DataColumnBase dataColumn, DatePicker e
 /// <param name="element"></param>
 /// <param name="column"></param>
 /// <param name="dataContext"></param>
+
 private static void SetEditBinding(DatePicker element, GridColumn column, object dataContext)
 {
     var customColumn = (DatePickerColumn)column;
@@ -2864,6 +2953,7 @@ You can customize the editor control while loading by overriding [OnEditElementL
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
+
 protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 {
     var datePicker = (sender as DatePicker);
@@ -2877,6 +2967,7 @@ protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
     {
         datePickerTextBox.SelectAll();
     }
+
     else
     {
         datePickerTextBox.Select(datePickerTextBox.SelectedText.Length, 0);
@@ -2898,6 +2989,7 @@ With the below code snippet, you can customize the keyboard interactions for the
 /// <returns>
 /// True if the parent grid should be allowed to handle keys; false otherwise.
 /// </returns>
+
 protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
 {
     if (!HasCurrentCellState || !IsInEditing)
@@ -2915,6 +3007,7 @@ protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEve
         case Key.Enter:
         case Key.Escape:
             return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
+
         case Key.Down:
         case Key.Up:
         case Key.Left:
@@ -2933,8 +3026,10 @@ You can handle the cell value for the custom renderer by overriding [GetControlV
 /// <summary>
 /// Gets the control value.
 /// </summary>
+
 public override object GetControlValue()
 {
+
     if (!HasCurrentCellState)
         return base.GetControlValue();
 
@@ -2945,13 +3040,16 @@ public override object GetControlValue()
 /// Sets the control value.
 /// </summary>
 /// <param name="value">The value.</param>
+
 public override void SetControlValue(object value)
 {
+
     if (!HasCurrentCellState)
         return;
 
     if (IsInEditing)
         ((TextBox)CurrentCellRendererElement).Text = value.ToString();
+
     else
         throw new Exception("Value cannot be Set for Unloaded Editor");
 }
@@ -3025,12 +3123,15 @@ You can restrict the length of user input in both display and edit element using
 {% highlight c# %}
 public class MaxLengthConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         int maxLength = 5;            
         var columnValue = System.Convert.ToString(value);
+
         if (columnValue.Length < maxLength)
             return columnValue;
+
         else
             return columnValue.Substring(0, maxLength);
     }
@@ -3080,10 +3181,13 @@ this.dataGrid.CellRenderers.Add("TextBox", new GridCellTextBoxRendererExt());
 
 public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
 {
+
     public override void OnInitializeEditElement(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, System.Windows.Controls.TextBox uiElement, object dataContext)
     {
+
         if (dataColumn.GridColumn != null && dataColumn.GridColumn.MappingName == "ProductName")
             uiElement.MaxLength = 7;
+
         else
             uiElement.MaxLength = 0;
         base.OnInitializeEditElement(dataColumn, uiElement, dataContext);

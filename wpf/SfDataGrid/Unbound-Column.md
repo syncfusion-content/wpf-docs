@@ -235,6 +235,7 @@ this.dataGrid.QueryUnboundColumnValue += dataGrid_QueryUnboundColumnValue;
 
 void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs e)
 {
+
     if (e.UnBoundAction == UnBoundActions.QueryData)
     {
         var unitPrice = Convert.ToDouble(e.Record.GetType().GetProperty("UnitPrice").GetValue(e.Record));
@@ -290,6 +291,7 @@ this.dataGrid.QueryUnboundColumnValue += dataGrid_QueryUnboundColumnValue;
 
 void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs e)
 {
+
     if(e.UnBoundAction == UnBoundActions.CommitData)
     {
         var editedValue = e.Value;
@@ -305,12 +307,11 @@ You can get the value of `GridUnBoundColumn` using [GetUnBoundCellValue](http://
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
-
 this.dataGrid.CurrentCellValueChanged += dataGrid_CurrentCellValueChanged;
 
 void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
 {
-var updateValue = this.dataGrid.GetUnBoundCellValue(dataGrid.Columns[5], this.dataGrid.CurrentItem); 
+    var updateValue = this.dataGrid.GetUnBoundCellValue(dataGrid.Columns[5], this.dataGrid.CurrentItem); 
 }
 {% endhighlight %}
 {% endtabs %}
@@ -348,6 +349,7 @@ In the below code snippet, Foreground of the cells in GridUnBoundColumn changed 
 {% highlight c# %}
 public class UnboundCellStyleConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         var unboundCell = value as GridCell;
@@ -415,22 +417,25 @@ In the below code snippet, [GridUnBoundCellTextBoxRenderer](http://help.syncfusi
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.CellRenderers.Remove("UnBoundTextColumn");
-
 this.dataGrid.CellRenderers.Add("UnBoundTextColumn", new GridUnBoundCellTextBoxRendererExt());
 
 public class GridUnBoundCellTextBoxRendererExt : GridUnBoundCellTextBoxRenderer
 {
+
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         object cellValue = null;
+
         if (dataContext != null)
             cellValue = DataGrid.GetUnBoundCellValue(dataColumn.GridColumn, dataContext);
         uiElement.Text = cellValue == null ? string.Empty : cellValue.ToString(); ;
         uiElement.Foreground = new SolidColorBrush(Colors.Blue);
     }
+
     public override void OnInitializeEditElement(DataColumnBase dataColumn, TextBox uiElement, object dataContext)
     {                
         object cellValue = null;
+
         if (dataContext != null)
             cellValue = DataGrid.GetUnBoundCellValue(dataColumn.GridColumn, dataContext);
         uiElement.Text = cellValue == null ? string.Empty : cellValue.ToString();        

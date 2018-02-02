@@ -72,22 +72,19 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 1. Create a new WPF application or open an existing WPF application with SfDataGrid and enable Coded UI Test in SfDataGrid. To enable CUITs, you need to set AutomationPeerHelper.EnableCodedUI__as True and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace as shown in the following code example,
 
 
-
+{% tabs %}
 {% highlight c# %}
 
-			using Syncfusion.UI.Xaml.Grid;
+using Syncfusion.UI.Xaml.Grid;
 
-			public MainWindow()
-
-			{
-
-			 InitializeComponent();
-
-			 AutomationPeerHelper.EnableCodedUI = true;
-
-			}
+public MainWindow()
+{
+	 InitializeComponent();
+	 AutomationPeerHelper.EnableCodedUI = true;
+}
 
 {% endhighlight %}
+{% endtabs %}
 
 2. Build the application and launch the .exe file from the bin folder.          
 3. Create a Coded UI Test Project as shown in the following screenshot.               
@@ -139,30 +136,22 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
    {:.caption}
 9. Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
 
-
+{% tabs %}
 {% highlight c# %}
 
+public void RecordedMethod1()
+{
+    #region Variable Declarations
+    WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
+    WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
+	WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
+	WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
+	#endregion
 
-			public void RecordedMethod1()
-
-			  {
-
-				 #region Variable Declarations
-
-				 WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
-
-				 WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
-
-				 WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
-
-				 WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
-
-				  #endregion
-
-			 }
+}
 
 {% endhighlight %}
-
+{% endtabs %}
 
 10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
@@ -284,23 +273,17 @@ AccentBackgroundAccentForegroundAutoEllipsisModeAutoEllipsisTextDisplayModeEnabl
 
 To enable Coded UI Test in SfDataGrid, set AutomationPeerHelper.EnableCodedUI__to True. You can use the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace.
 
-
+{% tabs %}
 {% highlight C# %}
-
-
-
 using Syncfusion.UI.Xaml.Grid;
 
 public MainWindow()
-
 {
-
- InitializeComponent();
-
- AutomationPeerHelper.EnableCodedUI = true;
-
+    InitializeComponent();
+    AutomationPeerHelper.EnableCodedUI = true;
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## Quick Test Professional (QTP)
 

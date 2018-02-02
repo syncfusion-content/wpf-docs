@@ -81,6 +81,7 @@ In the below code, ViewModel defined with `GridVirtualizingCollectionView` by pa
 public class ViewModel
 {
     private GridVirtualizingCollectionView _gridVirtualizingItemsSource;
+
     public GridVirtualizingCollectionView GridVirtualizingItemsSource
     {
         get { return _gridVirtualizingItemsSource; }
@@ -136,12 +137,14 @@ In the below code, `IncrementalList` is initialized by passing Action to its con
 {% highlight c# %}
 Public class ViewModel
 {
+
     public ViewModel()
     {
         IncrementalItemsSource = new IncrementalList<OrderInfo>(LoadMoreItems) { MaxItemCount = 1000 };
     }
 
     private IncrementalList<OrderInfo> _incrementalItemsSource;
+
     public IncrementalList<OrderInfo> IncrementalItemsSource
     {
         get { return _incrementalItemsSource; }
@@ -153,6 +156,7 @@ Public class ViewModel
     /// </summary>
     /// <param name="count"></param>
     /// <param name="baseIndex"></param>
+
     void LoadMoreItems(uint count, int baseIndex)
     {
         var _orders = GenerateOrders();
@@ -229,6 +233,7 @@ public class ViewModel : INotifyPropertyChanged
     /// <summary>
     /// Gets or Sets whether to show the busy indicator.
     /// </summary>
+
     public bool IsBusy
     {
         get { return isBusy; }
@@ -240,6 +245,7 @@ public class ViewModel : INotifyPropertyChanged
     /// </summary>
     /// <param name="count">Specifies the fetch count to load data</param>
     /// <param name="baseIndex">Specifies the index to load data</param>
+
     void LoadMoreItems(uint count, int baseIndex)
     {
         BackgroundWorker worker = new BackgroundWorker();
@@ -305,6 +311,7 @@ public class ViewModel
     NorthwindEntities northwindEntity;
 
     private IncrementalList<Order> _incrementalItemsSource;
+
     public IncrementalList<Order> IncrementalItemsSource
     {
         get { return _incrementalItemsSource; }
@@ -312,6 +319,7 @@ public class ViewModel
     }
 
     private BaseCommand loadItems;
+
     public BaseCommand LoadItems
     {
         get
@@ -346,6 +354,7 @@ public class ViewModel
     /// </summary>
     /// <param name="count"></param>
     /// <param name="baseIndex"></param>
+
     void LoadMoreItems(uint count, int baseIndex)
     {                        
         DataServiceQuery<Order> query = northwindEntity.Orders.Expand("Customer");
