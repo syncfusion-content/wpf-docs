@@ -2307,7 +2307,7 @@ The corresponding log value will be given as values for X1 and X2 properties.
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
             SfChart chart = new SfChart();
 
