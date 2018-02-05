@@ -23,7 +23,7 @@ The `SetLineBackground` function helps to customize the background color of spec
 
 `fullLine` - To specify, whether to highlight full line. 
 
-`brush` - To specify the Brush of background customization. 
+`brush` - To specify the `Brush` of background customization. 
 
 {% tabs %}
 
