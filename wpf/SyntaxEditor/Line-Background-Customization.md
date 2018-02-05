@@ -78,9 +78,9 @@ this.editControl1.ResetLineBackground(this.editControl1.LineNumber)
 {% endtabs %}
 
 
-## Customize the Line Background on demand. 
+## On Demand Line Background Customization 
 
-`OnBeforeLineRender` event used to customize the background color of the line on demand and it can be customized using `OnBeforeLineRender`. The following codes illustrates the same. 
+`OnBeforeLineRender` event used to customize the background color of the line on demand. The following codes illustrates the same. 
 
 {% tabs %}
 
