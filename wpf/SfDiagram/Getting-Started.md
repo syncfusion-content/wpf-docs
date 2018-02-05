@@ -120,7 +120,7 @@ Connectors property is assigned with the ConnectorCollection, that is, Observabl
 
 #### DataBinding
 
-We have provided both ViewModel (Business object) and View (FrameWorkelement) support to visualize our Diagramming elements(Node,Connector,Annotation and Port).
+We have provided ViewModel (Business object) and View (FrameworkElement) support to visualize our Diagramming elements(Node,Connector,Annotation and Port).
 In order to bind the properties of ViewModel to View, need to apply binding style for Diagramming elements in application side.
 Please refer to the [Data-Binding](/wpf/sfdiagram/Data-Binding) to apply binding style.
 
@@ -432,12 +432,12 @@ Now we can connect all nodes using ConnectorViewModel.
      (diagram.Connectors as ConnectorCollection).Add(connector2);
      
   //Creating ConnectorViewModel
-     private ConnectorViewModel CreateConnector(string sourcenodeid, string targetnodeid)
+     private ConnectorViewModel CreateConnector(string source, string target)
      {
          ConnectorViewModel connector = new ConnectorViewModel()
           {
-              SourceNodeID = sourcenodeid,
-              TargetNodeID = targetnodeid,
+              SourceNodeID = source,
+              TargetNodeID = target,
               //Apply Style to TargetDecorator
               TargetDecoratorStyle = this.Resources["TargetDecoratorStyle"] as Style,
               //Apply Style to Geometry of the Connector.
