@@ -67,6 +67,8 @@ The `ResetLineBackground` function helps to reset the background Color for custo
 
 this.editControl1.ResetLineBackground(this.editControl1.LineNumber);
 
+{% endhighlight %}
+
 {% highlight VB %}
 
 ' Reset the background to a specified Line.
@@ -114,6 +116,8 @@ public MainWindow()
    
         }
 }
+
+{% endhighlight %}
 
 {% highlight VB %}
 
