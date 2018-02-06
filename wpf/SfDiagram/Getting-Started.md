@@ -14,6 +14,8 @@ The following section helps you to build your application with SfDiagram.
 ### Creating the project
 
  Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+ 
+## Assembly Reference
 
 ### Adding control via Designer
 
@@ -25,9 +27,10 @@ SfDiagram control can be added to the application by dragging it from Toolbox an
 
 In order to add control manually in XAML, do the below steps,
 
-    1. Add the below required assembly references to the project,
+    1. Add the below required assembly reference to the project,
         Syncfusion.SfDiagram.WPF       
-    2. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf or SfDiagram control namespace Syncfusion.UI.Xaml.Diagram in XAML page.
+    2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or 
+          SfDiagram control namespace **Syncfusion.UI.Xaml.Diagram** in XAML page.
     3. Declare SfDiagram control in XAML page.
     
 {% tabs %}
@@ -49,12 +52,12 @@ In order to add control manually in XAML, do the below steps,
 {% endhighlight %}
 {% endtabs %}
 
-### Adding control manually in C#
+### Adding control manually in C\#
 In order to add control manually in XAML, do the below steps,
 
     1. Add the below required assembly references to the project,
         Syncfusion.SfDiagram.WPF       
-    2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
+    2. Import SfDiagram namespace **Syncfusion.UI.Xaml.Diagram**.
     3. Create SfDiagram control instance and add it to the Grid.
 {% tabs %}
 {% highlight C# %}
@@ -67,7 +70,7 @@ namespace SfDiagram_WPF
         public MainWindow()
         {
             InitializeComponent();
-   <!--Initializes the SfDiagram -->
+   // Initializes the SfDiagram
             SfDiagram diagram=new SfDiagram();
             Root_Grid.Children.Add(diagram);
         }
@@ -76,8 +79,9 @@ namespace SfDiagram_WPF
 {% endhighlight %}
 {% endtabs %}
 
-### Flow Chart
+## Flow Chart
 Let us create a simple flow chart using SfDiagram.
+
 #### Initialize the Diagram
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
@@ -161,7 +165,7 @@ Creating NodeViewModel with Specified Height and Width.
 #### Adding Shape to Node
 
  We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the inbuilt shapes, Shapes dictionary should be merged in Application.  
- Refer to [Shapes](/wpf/sfdiagram/Shapes). 
+ Please refer to [Shapes](/wpf/sfdiagram/Shapes) to know about inbuilt Shapes.
  
 {% tabs %}
 {% highlight xaml %}  
