@@ -16,7 +16,7 @@ If through *XAML*, please refer the below code sample.
 {% highlight xaml %}
 
 <Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid1" VerticalAlignment="Top" VisualStyle="Metro" ShowSubTotalsForChildren="true" ItemSource="{Binding Source={StaticResource data}}">
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid1" VerticalAlignment="Top" VisualStyle="Metro" ShowSubTotalsForChildren="True" ItemSource="{Binding Source={StaticResource data}}">
 
         <syncfusion:PivotGridControl.PivotRows>
             <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
