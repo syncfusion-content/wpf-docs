@@ -64,9 +64,9 @@ The steps to configure the Syncfusion WPF NuGet Packages in Visual Studio are as
 
    **Name**: Name of the package that listed in Available package sources  
    **Source**: Syncfusion WPF NuGet Package feed URL 
-   [http://nuget.syncfusion.com/wpf](http://nuget.syncfusion.com/wpf)
+   [http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf](http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf)
     
-   ![](Installation_images/NuGetConfig2.jpeg)
+   ![](Installation_images/NuGetConfig2.png)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
     
