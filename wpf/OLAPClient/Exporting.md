@@ -299,7 +299,7 @@ saveFileDialog.DefaultExt = "xlsx"
 saveFileDialog.Filter = "Excel (.xlsx)|*.xlsx"
 If saveFileDialog.ShowDialog() = True Then
     Dim fileName As String = saveFileDialog.FileName
-    Dim excelExport As New GridExcelExport(Me.olapGrid.InternalGrid.Engine, Me.olapGrid.GridStyleInfo, Me.olapGrid.InternalGrid.Layout, saveFileDialog.DefaultExt, Me.olapGrid.OlapDataManager.ItemSource == null ? false : true)
+    Dim excelExport As New GridExcelExport(Me.olapGrid.InternalGrid.Engine, Me.olapGrid.GridStyleInfo, Me.olapGrid.InternalGrid.Layout, saveFileDialog.DefaultExt, Me.olapGrid.OlapDataManager.ItemSource == null ? False : True)
     excelExport.Export(fileName)
 End If
 
