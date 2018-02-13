@@ -57,7 +57,7 @@ The following code example demonstrates how to create a document with a section,
 // Creates new instance of SfRichTextBoxAdv control.
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 
-// Creates a new document and .
+// Creates a new document.
 richTextBoxAdv.Document = new DocumentAdv();
 // A section with an empty paragraph will be added internally to ensure minimal child elements.
 
