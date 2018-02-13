@@ -577,6 +577,8 @@ series1.XBindingPath = "Demand";
 
 series1.YBindingPath = "Year2010";
 
+series1.Label = "2010";
+
 ColumnSeries series2 = new ColumnSeries();
 
 series2.XBindingPath = "Demand";
@@ -584,6 +586,8 @@ series2.XBindingPath = "Demand";
 series2.YBindingPath = "Year2011";
 
 series2.ItemsSource = this.Demands;
+
+series2.Label = "2011";
 
 chart.Series.Add(series1);
 
@@ -601,6 +605,8 @@ series1.XBindingPath = "Demand"
 
 series1.YBindingPath = "Year2010"
 
+series1.Label = "2010"
+
 Dim series2 As New ColumnSeries()
 
 series2.XBindingPath = "Demand"
@@ -608,6 +614,8 @@ series2.XBindingPath = "Demand"
 series2.YBindingPath = "Year2011"
 
 series2.ItemsSource = Me.Demands
+
+series2.Label = "2011"
 
 chart.Series.Add(series1)
 
@@ -683,6 +691,8 @@ series1.XBindingPath = "Demand";
 
 series1.YBindingPath = "Year2010";
 
+series1.Label = "2010";
+
 
 ColumnSeries series2 = new ColumnSeries();
 
@@ -691,6 +701,8 @@ series2.XBindingPath = "Demand";
 series2.YBindingPath = "Year2011";
 
 series2.ItemsSource = this.Demands;
+
+series2.Label = "2011";
 
 
 //Adding Series to the Chart Series Collection
@@ -745,6 +757,8 @@ series1.XBindingPath = "Demand"
 
 series1.YBindingPath = "Year2010"
 
+series1.Label = "2010"
+
 
 Dim series2 As New ColumnSeries()
 
@@ -753,6 +767,8 @@ series2.XBindingPath = "Demand"
 series2.YBindingPath = "Year2011"
 
 series2.ItemsSource = Me.Demands
+
+series2.Label = "2011"
 
 
 'Adding Series to the Chart Series Collection
