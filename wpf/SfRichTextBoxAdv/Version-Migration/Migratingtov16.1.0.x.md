@@ -1,7 +1,7 @@
 ---
-title: Migrating UWP SfRichTextBoxAdv control to 16.1.x.x
-description: Migration document of UWP SfRichTextBoxAdv control to 16.1.x.x
-platform: uwp
+title: Migrating WPF SfRichTextBoxAdv control to 16.1.x.x
+description: Migration document of WPF SfRichTextBoxAdv control to 16.1.x.x
+platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes, sfrichtextboxadv
