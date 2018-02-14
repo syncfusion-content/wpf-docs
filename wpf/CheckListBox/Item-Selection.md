@@ -9,7 +9,7 @@ documentation: ug
 
 # Item Selection
 
-When the IsCheckOnFirstClick property is set to True, you can select an item, on the first mouse-click. The default value is True.
+In CheckListBox, selection of item can be done by single click using the property “IsCheckOnFirstClick”. If it is false, then the selection is done when double click is detected. By default, the value of this property is “True”.
 
 Here is the code for setting this property.
 
