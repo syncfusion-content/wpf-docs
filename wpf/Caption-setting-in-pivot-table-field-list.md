@@ -9,7 +9,7 @@ documentation: ug
 
 # Caption setting in pivot table field list
 
-PivotGrid provides support to duplicates the same fields in different names. It can be achieved either by using the `FieldCaption` property of PivotItem and PivotComputationInfo. This feature allows the users to define the multiple items in same underlying type for PivotGridControl adn modifying the same items dynamically.
+PivotGrid provides support to duplicates the same fields in different names. It can be achieved either by using the `FieldCaption` property of PivotItem and PivotComputationInfo. This feature allows the users to define the multiple items in same underlying type for PivotGridControl and modifying the same items dynamically.
 
 ## Setting FieldCaption property through code
 
