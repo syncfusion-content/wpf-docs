@@ -44,3 +44,26 @@ In overview, the view port of the Diagram is highlighted with a red colored rect
 | Constraint | Gets or Sets the OverviewConstraints. | Dependency property | Enum OverviewConstraints  OverviewConstraints.None OverviewConstraints.Pan OverviewConstraints.TapFocus OverviewConstraints.DrawFocus OverviewConstraints.Zoom |
 | FocusBrush | Specifies the color of the viewport area in the preview. | Dependency Property | Brush |
 | UnFocusBrush | Specifies the background of the extended area in the preview. | Dependency Property | Brush |
+
+## Deferred Scrolling
+
+To improve scrolling performance, the outline of a diagram element will be displayed until the UI element is loaded, regardless of the weight of the element.
+
+I> In SfDiagram, we named this support as `Outline`.
+
+Outline is disabled in Diagram by default, to enable this you can use `Constraints` property of the SfDiagram.
+
+{% highlight C# %}
+
+diagram.Constraints |= GraphConstraints.Outline;
+
+{% endhighlight %}
+
+![](Overview-Control_images/Overview-Control_img2.gif)
+
+Outline customization
+{:.caption}
+
+Options are provided to override the appearance, style and interval time of outline. `OutlineSettings` property of Overview will help you to achieve customization of Outline.
+
+Refer to the [OutlineSettings Class members](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html)
