@@ -315,6 +315,8 @@ public class PortCollection : ObservableCollection<IPort>
 
 Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target Nodes/Connectors.
 
+### Connection for NodePort
+
 {% tabs %}
 {% highlight xaml %}
 <!--Initialization of sfdiagram-->
@@ -404,6 +406,134 @@ return node;
 {% endtabs %}
 
 ![](Port_images/Port_img13.jpeg)
+
+### Connector to Connector Routing
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+ <!--Style for ConnectorGeometryStyle-->
+ <Style TargetType="Path" x:Key="getstyle">
+  <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+  <Setter Property="StrokeThickness" Value="1"></Setter>
+  <Setter Property="StrokeDashArray" Value="1.3"></Setter>
+ </Style>
+ <Style TargetType="Path" x:Key="connectorstyle">
+  <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+  <Setter Property="StrokeThickness" Value="1"></Setter>
+ </Style>
+</Window.Resources>
+
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible" DefaultConnectorType="Line">
+ <!--Initialize the Node-->
+ <syncfusion:SfDiagram.Nodes>
+  <syncfusion:NodeCollection>
+   <syncfusion:NodeViewModel UnitHeight="50" UnitWidth="50" OffsetX="100" OffsetY="50" Shape="{StaticResource Rectangle}" ID="node1">
+    <!--Initialize the Annotation-->
+    <syncfusion:NodeViewModel.Annotations>
+     <syncfusion:AnnotationCollection>
+      <syncfusion:AnnotationEditorViewModel Content="Node">
+      </syncfusion:AnnotationEditorViewModel>
+     </syncfusion:AnnotationCollection>
+    </syncfusion:NodeViewModel.Annotations>
+   </syncfusion:NodeViewModel>
+  </syncfusion:NodeCollection>
+ </syncfusion:SfDiagram.Nodes>
+ <!--Initialize the Connector-->
+ <syncfusion:SfDiagram.Connectors>
+  <syncfusion:ConnectorCollection>
+   <syncfusion:ConnectorViewModel ID="connector1" SourceNodeID="node1" TargetPoint="100,160" ConnectorGeometryStyle="{StaticResource getstyle}">
+    <!--Initialize the Port-->
+    <syncfusion:ConnectorViewModel.Ports>
+     <syncfusion:PortCollection>
+      <syncfusion:ConnectorPortViewModel ID="connectorport" Length="0.5">
+      </syncfusion:ConnectorPortViewModel>
+     </syncfusion:PortCollection>
+    </syncfusion:ConnectorViewModel.Ports>
+   </syncfusion:ConnectorViewModel>
+   <syncfusion:ConnectorViewModel SourceConnectorID="connector1" TargetPortID="connectorport" SourcePoint="35,118" ConnectorGeometryStyle="{StaticResource connectorstyle}">
+    <syncfusion:ConnectorViewModel.Annotations>
+     <syncfusion:AnnotationCollection>
+      <syncfusion:AnnotationEditorViewModel Content="Connector">
+      </syncfusion:AnnotationEditorViewModel>
+     </syncfusion:AnnotationCollection>
+    </syncfusion:ConnectorViewModel.Annotations>
+   </syncfusion:ConnectorViewModel>
+  </syncfusion:ConnectorCollection>
+ </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Define NodeCollection
+diagram.Nodes = new NodeCollection();
+NodeViewModel node = new NodeViewModel()
+{
+ ID = "node1",
+ UnitHeight = 50,
+ UnitWidth = 50,
+ OffsetX = 100,
+ OffsetY = 50,
+ Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) },
+ Annotations = new AnnotationCollection()
+ {
+  new AnnotationEditorViewModel()
+  {
+   Content="Node",
+  }
+ }
+};
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+//Define PortProperty
+ConnectorPortViewModel port = new ConnectorPortViewModel()
+{
+ ID = "connectorport",
+ Length = 0.5,
+};
+//Define ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+ConnectorViewModel con1 = new ConnectorViewModel()
+{
+ //Connection from Node to TargetPoint
+ ID = "connector1",
+ SourceNodeID = "node1",
+ TargetPoint = new Point(100, 160),
+ ConnectorGeometryStyle = this.Resources["getstyle"] as Style,
+ //Define PortCollection
+ Ports = new PortCollection()
+ {
+  port,
+ }
+};
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(con1);
+ConnectorViewModel con2 = new ConnectorViewModel()
+{
+ //Connection from SourcePoint to TargetPort of Connector1
+ SourceConnectorID = "connector1",
+ SourcePoint = new Point(35, 118),
+ TargetPortID = "connectorport",
+ ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style,
+ Annotations = new AnnotationCollection()
+ {
+  new AnnotationEditorViewModel()
+  {
+   Content="Connector",
+   Margin=new Thickness(0,0,0,10),
+  },
+ }
+};
+(diagram.Connectors as ConnectorCollection).Add(con2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Port_images/Port_img14.jpeg)
 
 DockPort doesn't allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
