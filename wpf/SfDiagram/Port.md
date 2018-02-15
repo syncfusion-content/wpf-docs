@@ -27,181 +27,191 @@ In order to achieve Properties of ViewModel are bind to View, we have provided t
 
 ## Node Port
 
-### Add ports to Nodes
+To Specify and make connection with Node at Precise Point. 
 
-To add a collection port, you need to define the port object and add it to `Ports` property of Node. The `NodeOffsetX` and `NodeOffsetY` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Node.
+### Define Node Port
 
-The following code illustrates how to add ports to Node.
+`Ports` property of a Node should be initialized with Collection. Port itself having properties to update position, appearance, visibility and interaction with this. 
 
 [XAML]
 
 {% highlight xaml %}
-
 <!--Style for Node-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-	<Setter Property="ShapeStyle">
-    	<Setter.Value>
-        	<Style TargetType="Path">
-            	<Setter Property="Fill" Value="DarkCyan"></Setter>
-				<Setter Property="Stroke" Value="Black"></Setter>
-       	        <Setter Property="StrokeThickness" Value="2"></Setter>
-				<Setter Property="Stretch" Value="Fill"></Setter>
-            </Style>
-		</Setter.Value>
-	</Setter>
-    <Setter Property="Shape">
-    	<Setter.Value>
-        	<RectangleGeometry Rect="0,0,10,10"/>
-       	</Setter.Value>
-	</Setter>
+ <Setter Property="ShapeStyle">
+  <Setter.Value>
+   <Style TargetType="Path">
+    <Setter Property="Fill" Value="#FF5B9BD5"/>
+    <Setter Property="Stretch" Value="Fill"/>
+    <Setter Property="Stroke" Value="#FFEDF1F6 "/>
+   </Style>
+  </Setter.Value>
+ </Setter>
 </Style>
-
-<!--Style for NodePort-->
+<!--style for NodePort-->
 <Style TargetType="syncfusion:NodePort" BasedOn="{StaticResource NodePortBindingStyle}">
-	<Setter Property="ShapeStyle">
-    	<Setter.Value>
-        	<Style TargetType="Path">
-            	<Setter Property="Fill" Value="Black"></Setter>
-                <Setter Property="Stretch" Value="Fill"></Setter>
-            </Style>
-		</Setter.Value>
-	</Setter>
-    <Setter Property="Shape">
-    	<Setter.Value>
-        	<RectangleGeometry Rect="0,0,10,10"/>
-        </Setter.Value>
-	</Setter>
+ <Setter Property="ShapeStyle">
+  <Setter.Value>
+   <Style TargetType="Path">
+    <Setter Property="Stroke" Value="#FF808081"/>
+   </Style>
+  </Setter.Value>
+ </Setter>
 </Style>
 
-{% endhighlight %}
-
-[C#]
-
-{% highlight C# %}
-
-//Create port collection
-public class PortCollection : ObservableCollection<IPort>
-{
-
-}
-
-{% endhighlight %}
-
-[XAML]
-
+{% tabs %}
 {% highlight xaml %}
-
-<!--Initializes the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
-	<!--Initializes the NodeCollection-->
-	<syncfusion:SfDiagram.Nodes>
-		<syncfusion:NodeCollection>
-		    <!--Initializes the Node-->
-        	<syncfusion:NodeViewModel x:Name="node" OffsetX="100" 
-				                      OffsetY="100" UnitHeight="100"
-									  UnitWidth="100">	
-				<!--Initializes the PortCollection-->					  						                                   
-				<syncfusion:NodeViewModel.Ports>
-					<local:PortCollection>
-					    <!--Initializes the NodePort-->
-						<syncfusion:NodePortViewModel x:Name="port" UnitWidth="10"
-                                                      UnitHeight="10" NodeOffsetX="0.5"
-                                                      NodeOffsetY="0.5">
-						</syncfusion:NodePortViewModel>
-					</local:PortCollection>
-                </syncfusion:NodeViewModel.Ports>
-        	</syncfusion:NodeViewModel>
-       	</syncfusion:NodeCollection>
-	</syncfusion:SfDiagram.Nodes>
+  <!--Initializes the NodeCollection-->
+  <syncfusion:SfDiagram.Nodes>
+    <syncfusion:NodeCollection>
+    <!--Initializes the Node-->
+      <syncfusion:NodeViewModel  UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}">
+      <!--Initialization of PortCollection-->
+         <syncfusion:NodeViewModel.Ports>
+           <syncfusion:PortCollection>
+            <!--Initialization of NodePort-->
+             <syncfusion:NodePortViewModel x:Name="port" NodeOffsetX="0.5" NodeOffsetY="0.5">
+             </syncfusion:NodePortViewModel>
+          </syncfusion:PortCollection>
+        </syncfusion:NodeViewModel.Ports>
+      </syncfusion:NodeViewModel>
+    </syncfusion:NodeCollection>
+  </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
 
+{% endhighlight %}
+
+{% highlight C# %}
+//Define Nodes Property
+diagram.Nodes = new NodeCollection();
+
+NodeViewModel node = new NodeViewModel()
+{
+ UnitHeight = 100,
+ UnitWidth = 100,
+ OffsetX = 100,
+ OffsetY = 100,
+ Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+ //Define PortCollection
+ Ports = new PortCollection()
+ {
+ //Define the NodePortViewModel
+   new NodePortViewModel()
+  {
+   //Initializing the position of NodePort
+   NodeOffsetX=0.5,
+   NodeOffsetY=0.5,
+  }
+ }
+};
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+
+{% endhighlight %}			
+{% endtabs %}
 ![](Port_images/Port_img6.jpeg)
 
+>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
+
 ## Connector Port
-
-### Add Port to Connector
-To add a collection port, you need to define the port object and add it to `Ports` property of Connector. The `Length` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Connector.
-
-The following code illustrates how to add ports to Connector.
+ To Specify and make connection with Connector at Precise Length.
+  
+### Define Connector Port  
+`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance,visibility and interaction with this.
 
 [XAML]
 
 {% highlight xaml %}
-
-<!--Style for Connector-->
+<!--Style for the Connector-->
 <Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
-	<Setter Property="TargetDecoratorStyle">
-    	<Setter.Value>
-        	<Style TargetType="Path">
-            	<Setter Property="Fill" Value="Black" />
-                <Setter Property="Stretch" Value="Fill" />
-            </Style>
-		</Setter.Value>
-	</Setter>
+ <Setter Property="ConnectorGeometryStyle">
+  <Setter.Value>
+   <Style TargetType="Path">
+    <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+    <Setter Property="StrokeThickness" Value="1"></Setter>
+   </Style>
+  </Setter.Value>
+ </Setter>
+ <Setter Property="TargetDecoratorStyle">
+  <Setter.Value>
+   <Style TargetType="Path">
+    <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+    <Setter Property="StrokeThickness" Value="1"></Setter>
+   </Style>
+  </Setter.Value>
+ </Setter>
 </Style>
-
-<!--Style for ConnectorPort-->
+<!--Style For ConnectorPort-->
 <Style TargetType="syncfusion:ConnectorPort" BasedOn="{StaticResource ConnectorPortBindingStyle}">
-	<Setter Property="ShapeStyle">
-    	<Setter.Value>
-        	<Style TargetType="Path">
-            	<Setter Property="Fill" Value="Black"></Setter>
-                <Setter Property="Stretch" Value="Fill"></Setter>
-			</Style>
-      	</Setter.Value>
-   	</Setter>
-    <Setter Property="Shape">
-    	<Setter.Value>
-        	<RectangleGeometry Rect="0,0,10,10"/>
-      	</Setter.Value>
-   	</Setter>
+ <Setter Property="ShapeStyle">
+  <Setter.Value>
+   <Style TargetType="Path">
+    <Setter Property="Fill" Value="#FF808081"/>
+   </Style>
+  </Setter.Value>
+ </Setter>
+ <Setter Property="Shape">
+  <Setter.Value>
+   <RectangleGeometry Rect="0,0,10,10"/>
+  </Setter.Value>
+ </Setter>
 </Style>
 
-{% endhighlight %}
-
-[C#]
-
-{% highlight C# %}
-
-//Create port collection
-public class PortCollection : ObservableCollection<IPort>
-{
-
-}
-
-{% endhighlight %}
-
-[XAML]
-
+{% tabs %}
 {% highlight xaml %}
-
-<!--Initializes the SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible" DefaultConnectorType="Line">
-	<!--Initializes the ConnectorCollection-->
-	<syncfusion:SfDiagram.Connectors>
-    	<syncfusion:ConnectorCollection>
-		    <!--Initializes the Connector-->
-        	<syncfusion:ConnectorViewModel x:Name="connector" SourcePoint="100,100" TargetPoint="300,300">
-				<!--Initializes the PortCollection-->
-				<syncfusion:ConnectorViewModel.Ports>
-                	<local:PortCollection>
-					    <!--Initializes the ConnectorPort-->
-                    	<syncfusion:ConnectorPortViewModel x:Name="port" UnitWidth="7"
-                                                           UnitHeight="7" 
-                                                           Length="0.5">
-						</syncfusion:ConnectorPortViewModel>
-					</local:PortCollection>
-                </syncfusion:ConnectorViewModel.Ports>
-			</syncfusion:ConnectorViewModel>
-       	</syncfusion:ConnectorCollection>
-	</syncfusion:SfDiagram.Connectors>
+<!--Initialize the sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+ <!--Initialize the ConnectorCollection-->
+ <syncfusion:SfDiagram.Connectors>
+  <syncfusion:ConnectorCollection>
+   <!--Initialize the Connector-->
+   <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200">
+    <syncfusion:ConnectorViewModel.Ports>
+     <!--Iitializes the PortCollection-->
+     <syncfusion:PortCollection>
+      <!--Initializes the ConnectorPort-->
+      <syncfusion:ConnectorPortViewModel x:Name="Port"  Length="0.5">
+      </syncfusion:ConnectorPortViewModel>
+     </syncfusion:PortCollection>
+    </syncfusion:ConnectorViewModel.Ports>
+   </syncfusion:ConnectorViewModel>
+  </syncfusion:ConnectorCollection>
+ </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
 
+{% endhighlight %}
+
+{% highlight C# %}
+//Define Connector Property
+diagram.Connectors = new ConnectorCollection();
+ConnectorViewModel connector = new ConnectorViewModel()
+{
+ SourcePoint = new Point(100, 100),
+ TargetPoint = new Point(200, 200),
+ //Define the PortCollection
+ Ports = new PortCollection()
+ {
+  //Define the ConnectorPortViewModel
+  new ConnectorPortViewModel()
+  {
+   Length=0.5,
+  }
+ }
+};
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(connector);
+
+{% endhighlight %}
+{% endtabs %}			
+
 ![](Port_images/Port_img7.jpeg)
+
+>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
 
 ## Dock Port
 
@@ -296,9 +306,96 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img10.jpeg)
 
-## Connect with ports
+## Port to Port Connection
 
-Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target Nodes. For More information about creating connections with port, refer to [Connections with Ports](/wpf/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
+Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of source/target Nodes/Connectors.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialization of sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+ <!--Initialization of Nodes-->
+ <syncfusion:SfDiagram.Nodes>
+  <!--Initialization of NodeCollection-->
+  <syncfusion:NodeCollection>
+   <syncfusion:NodeViewModel UnitHeight="75" UnitWidth="75" OffsetX="100" OffsetY="200"  Shape="{StaticResource Diamond}">
+    <!--Initialization of Ports-->
+    <syncfusion:NodeViewModel.Ports>
+     <!--Initialization of PortCollection-->
+     <syncfusion:PortCollection>
+      <syncfusion:NodePortViewModel ID="port1" x:Name="port1" NodeOffsetX="0.5" NodeOffsetY="0">
+      </syncfusion:NodePortViewModel>
+     </syncfusion:PortCollection>
+    </syncfusion:NodeViewModel.Ports>
+   </syncfusion:NodeViewModel>
+   <syncfusion:NodeViewModel UnitHeight="65" UnitWidth="65" OffsetX="200" OffsetY="150" Shape="{StaticResource Rectangle}">
+    <syncfusion:NodeViewModel.Ports>
+     <syncfusion:PortCollection>
+      <syncfusion:NodePortViewModel ID="port2" x:Name="port2" NodeOffsetX="0" NodeOffsetY="0.2">
+      </syncfusion:NodePortViewModel>
+     </syncfusion:PortCollection>
+    </syncfusion:NodeViewModel.Ports>
+   </syncfusion:NodeViewModel> 
+  </syncfusion:NodeCollection>
+ </syncfusion:SfDiagram.Nodes>
+ <!--Initialization of Connectors-->
+ <syncfusion:SfDiagram.Connectors>
+  <!--Initialization of ConnectorCollection-->
+  <syncfusion:ConnectorCollection>
+   <syncfusion:ConnectorViewModel SourcePortID="port1" TargetPortID="port2">
+   </syncfusion:ConnectorViewModel>
+  </syncfusion:ConnectorCollection>
+ </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+{% highllight c# %}
+
+public MainWindow()
+{
+ InitializeComponent();
+ //Define NodeCollection
+ diagram.Nodes = new NodeCollection();
+ //Define NodeProperty
+ NodeViewModel node1 = AddNode(100, 200, 75, 75, "Decision", "nodeport1", 0.5, 0);
+ //Adding Node to Collection
+ (diagram.Nodes as NodeCollection).Add(node1);
+ NodeViewModel node2 = AddNode(200, 150, 65, 65, "Rectangle","nodeport2",0,0.2);
+ (diagram.Nodes as NodeCollection).Add(node2);
+ //Define ConnectorCollection
+ diagram.Connectors = new ConnectorCollection();
+ ConnectorViewModel conn1 = new ConnectorViewModel()
+ {
+  SourcePortID="nodeport1",
+  TargetPortID="nodeport2",
+ };
+ //Adding Connector to Collection
+ (diagram.Connectors as ConnectorCollection).Add(conn1);
+}
+//Method for Creating Node
+public NodeViewModel AddNode(double offsetX, double offsetY, double width, double height, string shape,string id,double nodeoffsetx,double nodeoffsety)
+ {
+  NodeViewModel node = new NodeViewModel();
+  node.OffsetX = offsetX;
+  node.OffsetY = offsetY;
+  node.UnitHeight = height;
+  node.UnitWidth = width;
+  node.Shape = App.Current.Resources[shape];
+  node.Ports = new PortCollection()
+   {
+   new NodePortViewModel()
+    {
+     ID=id,
+     NodeOffsetX=nodeoffsetx,
+     NodeOffsetY=nodeoffsety,
+    }
+  };
+  return node;
+ }
+
+{% endhighlight %}
+{% endtabs %}
 
 DockPort doesn't allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
