@@ -492,7 +492,7 @@ NodeViewModel node = new NodeViewModel()
 //Define PortProperty
 ConnectorPortViewModel port = new ConnectorPortViewModel()
 {
- ID = "connectorport",
+ ID = "connectorPort",
  Length = 0.5,
 };
 //Define ConnectorCollection
@@ -517,7 +517,7 @@ ConnectorViewModel con2 = new ConnectorViewModel()
  //Connection from SourcePoint to TargetPort of Connector1
  SourceConnectorID = "connector1",
  SourcePoint = new Point(35, 118),
- TargetPortID = "connectorport",
+ TargetPortID = "connectorPort",
  ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style,
  Annotations = new AnnotationCollection()
  {
