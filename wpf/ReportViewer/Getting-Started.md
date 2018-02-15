@@ -92,7 +92,7 @@ You can create a simple application through the Visual Studio Designer with the 
    viewer.ProcessingMode = ProcessingMode.Local;
    ~~~
    
-2. Set Datasource to the RDLC Report and `Refersh` the report.
+2. Set Datasource to the RDLC Report and invoke `RefreshReport` to render the report.
 
    ~~~ csharp
    viewer.DataSources.Clear();
