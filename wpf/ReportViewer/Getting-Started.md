@@ -90,14 +90,14 @@ You can create a simple application through the Visual Studio Designer with the 
    Syncfusion.Windows.Reports.Viewer.ReportViewer viewer= new Syncfusion.Windows.Reports.Viewer.ReportViewer;
    viewer.ReportPath=@"../ReportTemplate/RDLC/ProductCatalog.rdlc";
    viewer.ProcessingMode = ProcessingMode.Local;
-   viewer.RefreshReport();
    ~~~
    
-2. Set Datasource to the RDLC Report.
+2. Set Datasource to the RDLC Report and invoke `RefreshReport` to render the report.
 
    ~~~ csharp
    viewer.DataSources.Clear();
    viewer.DataSources.Add(new ReportDataSource { Name = "ProductCatalog", Value = ProductCatalog.GetData() });
+   viewer.RefreshReport();
    ~~~
    
 3. Assign values for the datasource in RDLC.
