@@ -358,41 +358,41 @@ public MainWindow()
  //Define NodeCollection
  diagram.Nodes = new NodeCollection();
  //Define NodeProperty
- NodeViewModel node1 = AddNode(100, 200, 75, 75, "Decision", "nodeport1", 0.5, 0);
+ NodeViewModel node1 = AddNode(100, 200, "Decision", "nodeport1", 0.5, 0);
  //Adding Node to Collection
  (diagram.Nodes as NodeCollection).Add(node1);
- NodeViewModel node2 = AddNode(200, 150, 65, 65, "Rectangle","nodeport2",0,0.2);
+ NodeViewModel node2 = AddNode(200, 150, "Rectangle", "nodeport2", 0, 0.2);
  (diagram.Nodes as NodeCollection).Add(node2);
  //Define ConnectorCollection
  diagram.Connectors = new ConnectorCollection();
  ConnectorViewModel conn1 = new ConnectorViewModel()
  {
-  SourcePortID="nodeport1",
-  TargetPortID="nodeport2",
+  SourcePortID = "nodeport1",
+  TargetPortID = "nodeport2",
  };
  //Adding Connector to Collection
  (diagram.Connectors as ConnectorCollection).Add(conn1);
 }
 //Method for Creating Node
-public NodeViewModel AddNode(double offsetX, double offsetY, double width, double height, string shape,string id,double nodeoffsetx,double nodeoffsety)
+public NodeViewModel AddNode(double offsetX, double offsetY,string shape, string id, double portX, double portY)
+{
+ NodeViewModel node = new NodeViewModel();
+ node.OffsetX = offsetX;
+ node.OffsetY = offsetY;
+ node.UnitHeight = 65;
+ node.UnitWidth = 65;
+ node.Shape = App.Current.Resources[shape];
+ node.Ports = new PortCollection()
  {
-  NodeViewModel node = new NodeViewModel();
-  node.OffsetX = offsetX;
-  node.OffsetY = offsetY;
-  node.UnitHeight = height;
-  node.UnitWidth = width;
-  node.Shape = App.Current.Resources[shape];
-  node.Ports = new PortCollection()
-   {
-   new NodePortViewModel()
-    {
-     ID=id,
-     NodeOffsetX=nodeoffsetx,
-     NodeOffsetY=nodeoffsety,
-    }
-  };
-  return node;
- }
+  new NodePortViewModel()
+  {
+   ID=id,
+   NodeOffsetX=portX,
+   NodeOffsetY=portY,
+  }
+ };
+return node;
+}
 
 {% endhighlight %}
 {% endtabs %}
