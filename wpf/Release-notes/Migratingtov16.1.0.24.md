@@ -50,7 +50,7 @@ section.Blocks.Add(new ParagraphAdv());
 
 {% endtabs %}
 
-The following code example demonstrates how to create a document with a section, a table and a paragraph from scratch using v16.1.x.x and later versions.
+The following code example demonstrates how to create a document with a section, a table and a paragraph from scratch using v16.1.0.24 and later versions.
 {% tabs %}
 {% highlight c# %}
 // Creates new instance of SfRichTextBoxAdv control.
