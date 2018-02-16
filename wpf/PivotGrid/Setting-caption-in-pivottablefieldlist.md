@@ -1,25 +1,24 @@
 ---
 layout: post
-title: Caption setting in pivot table field list.
-description: Caption setting in pivot table field list.
+title: Setting caption in PivotTableFieldList.
+description: Setting caption in PivotTableFieldList.
 platform: wpf
 control: PivotGridControl
 documentation: ug
 ---
 
-# Caption setting in pivot table field list
+# Setting caption in PivotTableFieldList
 
-PivotGrid provides support to duplicates the same fields in different names. It can be achieved either by using the `FieldCaption` property of PivotItem and PivotComputationInfo. This feature allows the users to define the multiple items in same underlying type for PivotGridControl and modifying the same items dynamically.
+PivotGrid provides support to duplicate the same fields in different names. It can be achieved by using the `FieldCaption` property of PivotItem and PivotComputationInfo. This support allows you to define multiple items in same underlying type for PivotGridControl.
 
-## Setting FieldCaption property through code
+The following code sample illustrates about how to set field caption for PivotItem and PivotComputationInfo.
 
-If through *XAML*, please refer the below code sample.
+{% tabs %}
 
 {% highlight xaml %}
 
 <Grid>
     <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" FreezeHeaders="False" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
-
       <syncfusion:PivotGridControl.PivotRows>
          <syncfusion:PivotItem FieldMappingName="Product" FieldCaption="Product_1" TotalHeader="Total"/>
          <syncfusion:PivotItem FieldMappingName="Product" FieldCaption="Product_2" TotalHeader="Total"/>
@@ -34,13 +33,10 @@ If through *XAML*, please refer the below code sample.
          <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Amount"  FieldCaption="Amount_2" Format="#,##" SummaryType="IntTotalSum"/>
          <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Quantity" FieldCaption="Quantity" Format="#,##0"/>
       </syncfusion:PivotGridControl.PivotCalculations>
-
     </syncfusion:PivotGridControl>
 </Grid>
 
 {% endhighlight %}
-
-Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
@@ -85,8 +81,10 @@ public partial class MainWindow: Window {
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo2);
     }
-}     
-	 
+}
+
 {% endhighlight %}
 
-![](Caption-setting-in-pivot-table-field-list-images/FieldCaption.png)
+{% endtabs %}
+
+![](Setting-caption-in-pivottablefieldlist-images/FieldCaption.png)
