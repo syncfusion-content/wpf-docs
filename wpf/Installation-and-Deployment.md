@@ -39,7 +39,7 @@ Syncfusion NuGet Package feed links are configured in Visual Studio in the follo
 
 The steps to configure the Syncfusion WPF NuGet Packages in Visual Studio are as follows,
 
-1. **Syncfusion NuGet Manager** is allows you to **add** the Syncfusion NuGet sources (for available platforms) to NuGet Package Manager. Download the [Syncfusion NuGet Manager](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionNugetManager-1610952973.zip) utility.
+1. **Syncfusion NuGet Manager** is allows you to **add** the Syncfusion NuGet sources (for available platforms) to NuGet Package Manager. Download the [Syncfusion NuGet Manager](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionNuGetManager-2143130196) utility.
 2. Extract zip file and run the SyncfusionNuGetManager.exe
 3. Syncfusion NuGet Manager Window will be opened.
 4. Select the platform **WPF** from **“Select platforms to add”** (Left side of the window) column and click **Add>>** button. Then click **Configure** button.
