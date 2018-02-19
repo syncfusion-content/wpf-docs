@@ -33,7 +33,7 @@ To Specify and make connection with Node at Precise Point.
 
 `Ports` property of a Node should be initialized with Collection. Port itself having properties to update position, appearance, visibility and interaction with this. 
 
-[XAML]
+Please find the common style for Node and NodePort.
 
 {% highlight xaml %}
 <!--Style for Node-->
@@ -63,7 +63,7 @@ To Specify and make connection with Node at Precise Point.
   </Setter.Value>
  </Setter>
 </Style>
-
+{% endhighlight %}
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
@@ -87,7 +87,7 @@ To Specify and make connection with Node at Precise Point.
 
 {% endhighlight %}
 
-{% endhighlight %}
+
 
 {% highlight C# %}
 //Define Nodes Property
@@ -127,7 +127,7 @@ NodeViewModel node = new NodeViewModel()
 ### Define Connector Port  
 `Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance,visibility and interaction with this.
 
-[XAML]
+Please find the common style for Connector and ConnectorPort.
 
 {% highlight xaml %}
 <!--Style for the Connector-->
@@ -164,7 +164,7 @@ NodeViewModel node = new NodeViewModel()
   </Setter.Value>
  </Setter>
 </Style>
-
+{% endhighlight %}
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the sfdiagram-->
@@ -189,7 +189,7 @@ NodeViewModel node = new NodeViewModel()
 
 {% endhighlight %}
 
-{% endhighlight %}
+
 
 {% highlight C# %}
 //Define Connector Property
@@ -228,7 +228,7 @@ To add a collection port, you need to define the port object and add it to `Port
 
 The following code illustrates how to add ports to Node.
 
-[XAML]
+
 
 {% highlight xaml %}
 
