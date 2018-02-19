@@ -18,6 +18,10 @@ Chart can be exported into image format. The following are the supported image f
 * BMP
 * TIFF
 
+The following screenshot illustrates the chart, which has to be exported.
+
+![Chart For Printing](Exporting_images/Exporting.png)
+
 ## Methods
 
 Chart contains the following overloading methods for saving a chart as an image.
@@ -30,16 +34,11 @@ The following code examples illustrates the usage of this method:
 
 {% highlight C# %}
 
-private void Button_Click(object sender, RoutedEventArgs e)
-
+private void SaveImage_Click(object sender, RoutedEventArgs e)
 {
+    this.SampleChart.Save("ExportedChart"); //Save in Debug location
 
-    ExportDemoChart.Save("chart_image.png"); //Save in Debug location
-
-    ExportDemoChart.Save("D:\\Pictures\\Test\\chart_image.png"); 
-
-    //Save in ‘D:\Picture\Test’ location.
-
+    this.SampleChart.Save("D:\\Pictures\\Test\\ExportedChart"); //Save in ‘D:\Picture\Test’ location.
 }
 
 {% endhighlight %}
@@ -52,9 +51,29 @@ This helps to export the chart to any stream as in below code example.
 
 {% highlight C# %}
 
-FileStream fs = File.Create(@"c:\temp\MyTest.png");
+private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
+{
+    SaveFileDialog sfd = new SaveFileDialog();
+    
+	sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
 
-ExportDemoChart.Save(fs,new PngBitmapEncoder());
+    if (sfd.ShowDialog() == true)
+    {
+	
+        using (Stream fs = sfd.OpenFile())
+        {
+		
+            SampleChart.Save(fs, new PngBitmapEncoder());
+			
+        }
+		
+    }
+}
 
 {% endhighlight %}
 
+![Chart For Printing](Exporting_images/ExportLocation.png)
+
+The image will be saved in the specified location in the SaveFileDialog.
+
+![Chart For Printing](Exporting_images/Exported.png)
