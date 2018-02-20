@@ -98,7 +98,7 @@ Stroke="Black" StrokeThickness="1" />
 {% endhighlight %}
 
 {% highlight c# %}
-//Adding Isymbol to SymbolCollection
+//Adding ISymbol to SymbolCollection
 public class SymbolCollection : ObservableCollection<ISymbol>
 {
 }
@@ -143,7 +143,7 @@ The SymbolGroupProvider groups the symbols into SymbolGroup based on the Mapping
 {% highlight xaml %}
 
 <stencil:Stencil x:Name="stencil" ExpandMode="All" 
-		         SymbolSource="{StaticResource symbolcollection}">
+		         SymbolSource="{StaticResource Collection}">
 	<!--Initialize the SymbolGroup-->
 <stencil:Stencil.SymbolGroups>
  <stencil:SymbolGroups>
