@@ -357,7 +357,7 @@ Connector’s `SourcePort` and `TargetPort` properties allow to create connectio
 
 {% endhighlight %}
 
-{% highllight c# %}
+{% highlight c# %}
 public MainWindow()
 {
  InitializeComponent();
