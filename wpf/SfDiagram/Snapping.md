@@ -55,9 +55,7 @@ The `SnapConstraints` property of SnapSettings enables you to show/hide the grid
 </diagram:SfDiagram>
 
 {% endhighlight %}
-{% endtabs %}
 
-{% tabs %}
 {% highlight C# %}
 
 //Shows both Horizontal and Vertical Gridlines
@@ -72,6 +70,7 @@ Options are provided to customize the Style and LineIntervals of Gridlines.
 
 Please refer to the properties to [Customize the Gridlines](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gridlines_members.html).
 
+Please refer to the KB link for [Gridlines customization](https://www.syncfusion.com/kb/8466/how-to-customize-the-appearance-for-gridlines)
 
 ## Snap To Lines
 
