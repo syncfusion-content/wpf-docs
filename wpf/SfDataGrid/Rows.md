@@ -178,7 +178,7 @@ Set the frozen columns count in `left side` of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{'[FooterColumnCount](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterColumnCount.html)'| markdownify }}
+{{'[FooterColumnCount](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen columns in `right side` of the SfDataGrid.
