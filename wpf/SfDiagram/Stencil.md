@@ -35,25 +35,22 @@ ISymbol have `Symbol` and `SymbolTemplate` to visualize the Symbol.
 {% highlight C# %}
 public class SymbolItem : ISymbol
 {
- //Symbol-Any Object
- public object Symbol { get; set; }
+    //Symbol-Any Object
+    public object Symbol { get; set; }
 
- //Custom property for Mapping.
- public object GroupName { get; set; }
+    //Data template to visualize the object.
+    public DataTemplate SymbolTemplate { get; set; }
 
- //Data template to visualize the object.
- public DataTemplate SymbolTemplate { get; set; }
-
- //For cloning the symbol from the given object and data template.
- public ISymbol Clone()
- {
-  return new SymbolItem()
-  {
-   Symbol = this.Symbol,
-   SymbolTemplate = this.SymbolTemplate
-  };
- }
- public object Key { get; set; }
+    //For cloning the symbol from the given object and data template.
+    public ISymbol Clone()
+     {
+         return new SymbolItem()
+          {
+            Symbol = this.Symbol,
+            SymbolTemplate = this.SymbolTemplate
+          };
+     }
+    public object Key { get; set; }
 }
 
 {% endhighlight %}
@@ -61,7 +58,7 @@ public class SymbolItem : ISymbol
 {% tabs %}
 
 {% highlight xaml %}
- <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
+<local:SymbolItem Key="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
  
  {% endhighlight %}
  {% endtabs %}
@@ -105,13 +102,13 @@ Stroke="Black" StrokeThickness="1" />
             <!--Define the SymbolCollection-->
             <local:SymbolCollection>
                 <!--Symbol with SymbolTemplate-->
-                <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond"  SymbolTemplate="{StaticResource Diamond}"/>
+                <local:SymbolItem Key="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
             </local:SymbolCollection>
         </stencil:Stencil.SymbolSource>
         <!--Define the SymbolGroups-->
         <stencil:Stencil.SymbolGroups>
             <stencil:SymbolGroups>
-                <stencil:SymbolGroupProvider MappingName="GroupName">
+                <stencil:SymbolGroupProvider MappingName="key">
                 </stencil:SymbolGroupProvider>
             </stencil:SymbolGroups>
         </stencil:Stencil.SymbolGroups>
