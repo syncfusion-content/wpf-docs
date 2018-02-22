@@ -19,7 +19,7 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 {% endhighlight %}
 
-![](Stencil_images/Stencil_img1.jpeg)
+![](Stencil_images/Stencil_img1.PNG)
 
 ## Symbol
 
@@ -119,7 +119,7 @@ Stroke="Black" StrokeThickness="1" />
 {% endtabs %}
 
 
-![](Stencil_images/Stencil_img2.jpeg)
+![](Stencil_images/Stencil_img2.PNG)
 
 ### Using DiagramElements
 
@@ -153,7 +153,7 @@ DiagramElements such as Node, Connector and Group can be used to visualize the S
 {% endhighlight %}
 {% endtabs %}
 
-![](Stencil_images/Stencil_img17.jpeg)
+![](Stencil_images/Stencil_img17.PNG)
 
 ## Symbol Groups
 
@@ -176,7 +176,7 @@ The `SymbolGroupProvider` groups the symbols into SymbolGroup based on the Mappi
 {% endhighlight %}
 {% endtabs %}
 
-![](Stencil_images/Stencil_img3.jpeg)
+![](Stencil_images/Stencil_img3.PNG)
 
 ## Symbol Filters
 
@@ -199,13 +199,13 @@ private bool Filter(SymbolFilterProvider sender, object symbol)
 
 for Sample, refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter")
 
-![](Stencil_images/Stencil_img12.jpeg)
+![](Stencil_images/Stencil_img12.PNG)
 
 ### SelectedFilter
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-![](Stencil_images/Stencil_img13.jpeg)
+![](Stencil_images/Stencil_img13.PNG)
 
 ## Preview for Drag and Drop
 
@@ -225,11 +225,11 @@ Here, Stencil is an instance of Stencil.
 
 #### Preview of the dragging Symbol
 
-![](Stencil_images/Stencil_img14.jpeg)
+![](Stencil_images/Stencil_img14.PNG)
 
 #### Dragged Symbol
 
-![](Stencil_images/Stencil_img15.jpeg)
+![](Stencil_images/Stencil_img15.PNG)
 
 #### Customization of Preview for Drag and Drop
 
@@ -257,7 +257,7 @@ public class CustomStencil : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![](Stencil_images/Stencil_img16.jpeg)
+![](Stencil_images/Stencil_img16.PNG)
 
 ## Events
 
