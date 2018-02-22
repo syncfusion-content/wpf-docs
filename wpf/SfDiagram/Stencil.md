@@ -11,7 +11,7 @@ documentation: ug
 
 Stencil has a collection of Symbols and it is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram.
 
-[Namespace for Stencil]
+Namespace for Stencil
 
 {% highlight xaml %}
 
@@ -23,19 +23,14 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 ## Symbol
 
-Symbol is used to visualize the elements in Stencil, explained in following ways
+Symbol is used to visualize the elements in Stencil, by following ways:
  
- * 1.ISymbol
- * 2.Using DiagramElements
+ * ISymbol
+ * Using DiagramElements
 
 ### Using ISymbol
 
-ISymbol have 'Symbol' and 'SymbolTemplate' to visualize Symbol.
-
-{% highlight xaml %}
- <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
- 
- {% endhighlight %}
+ISymbol have `Symbol` and `SymbolTemplate` to visualize the Symbol.
 
 {% highlight C# %}
 public class SymbolItem : ISymbol
@@ -62,41 +57,29 @@ public class SymbolItem : ISymbol
 }
 
 {% endhighlight %}
+
+{% tabs %}
+
+{% highlight xaml %}
+ <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
+ 
+ {% endhighlight %}
+ {% endtabs %}
+ 
+ {% tabs %}
+ {% highlight c# %}
+ 
+//Initialize the SymbolItem
+SymbolItem symbol = new SymbolItem();
+
+ {% endhighlight %}
+ {% endtabs %}
  
 #### Define SymbolSource
 
-This is the Collection of objects (i.e,Symbol,Node,Connector etc..). Based on the SymbolSource, the Stencil will populate the Symbols.
+`SymbolSource` is the property of Stencil which is Collection of objects (i.e,Symbol,Node,Connector etc..). Based on the SymbolSource, the Stencil will populate the Symbols.
 
-{% highlight xaml %}
-<Window.Resources>
- <!--Define SymbolTemplate-->
- <DataTemplate x:Key="Diamond">
-  <Path Stretch="Fill" Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z" Fill="White"
-Stroke="Black" StrokeThickness="1" />
- </DataTemplate>
-</Window.Resources>
-<Grid >
- <!--Define the Stencil Element-->
- <stencil:Stencil x:Name="stencil" BorderBrush="#dfdfdf" Grid.Column="0" BorderThickness="1" >
-  <!--Initialize the SymbolSource-->
-  **<stencil:Stencil.SymbolSource>**
-    <!--Define the SymbolCollection-->
-   <local:SymbolCollection>
-    <!--Symbol with SymbolTemplate-->
-    <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
-   </local:SymbolCollection>
-  **</stencil:Stencil.SymbolSource>**
-   <!--Define the SymbolGroups-->
-   <stencil:Stencil.SymbolGroups>
-    <stencil:SymbolGroups>
-     <stencil:SymbolGroupProvider MappingName="GroupName"></stencil:SymbolGroupProvider>
-     </stencil:SymbolGroups>
-    </stencil:Stencil.SymbolGroups>
- </stencil:Stencil>
-</Grid>
-
-{% endhighlight %}
-
+{% tabs %}
 {% highlight c# %}
 //Adding ISymbol to SymbolCollection
 public class SymbolCollection : ObservableCollection<ISymbol>
@@ -104,55 +87,97 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 }
 
 {% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <DataTemplate x:Key="Diamond">
+        <Path Stretch="Fill" Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z" Fill="White"
+Stroke="Black" StrokeThickness="1" />
+    </DataTemplate>
+</Window.Resources>
+<Grid >
+    <!--Define the Stencil Element-->
+    <stencil:Stencil x:Name="stencil" BorderBrush="#dfdfdf" BorderThickness="1" >
+        <!--Initialize the SymbolSource-->
+        <stencil:Stencil.SymbolSource>
+            <!--Define the SymbolCollection-->
+            <local:SymbolCollection>
+                <!--Symbol with SymbolTemplate-->
+                <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond"  SymbolTemplate="{StaticResource Diamond}"/>
+            </local:SymbolCollection>
+        </stencil:Stencil.SymbolSource>
+        <!--Define the SymbolGroups-->
+        <stencil:Stencil.SymbolGroups>
+            <stencil:SymbolGroups>
+                <stencil:SymbolGroupProvider MappingName="GroupName">
+                </stencil:SymbolGroupProvider>
+            </stencil:SymbolGroups>
+        </stencil:Stencil.SymbolGroups>
+    </stencil:Stencil>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ![](Stencil_images/Stencil_img2.jpeg)
 
 ### Using DiagramElements
 
-DiagramElements such as Node, Connector and Group can be host as Symbol.
-  
+DiagramElements such as Node, Connector and Group can be used to visualize the Symbol.
+ 
+ {% tabs %} 
 {% highlight xaml %}
 <Grid>
-<stencil:Stencil Grid.Column="0" BorderThickness="1" BorderBrush="#dfdfdf" x:Name="stencil">
- <!--Initialize the SymbolSource-->
- <stencil:Stencil.SymbolSource>
-  <!--Initialize the SymbolCollection-->
-  <local:SymbolCollection>
-   <!--Define the DiagramElement-Node-->
-   <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Diamond}" Key="Nodes">
-   </syncfusion:NodeViewModel>
-  </local:SymbolCollection>
- </stencil:Stencil.SymbolSource>
- <!--Initialize the SymbolGroup-->
- <stencil:Stencil.SymbolGroups>
-  <stencil:SymbolGroups>
-  <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
-  </stencil:SymbolGroups>
- </stencil:Stencil.SymbolGroups>
-</stencil:Stencil>
+    <!--Define the Stencil-->
+    <stencil:Stencil Grid.Column="0" BorderThickness="1" BorderBrush="#dfdfdf" x:Name="stencil">
+        <!--Initialize the SymbolSource-->
+        <stencil:Stencil.SymbolSource>
+            <!--Initialize the SymbolCollection-->
+     <local:SymbolCollection>
+                <!--Define the DiagramElement-Node-->
+                <syncfusion:NodeViewModel x:Name="node" UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}" Key="Nodes">
+                </syncfusion:NodeViewModel>
+            </local:SymbolCollection>
+        </stencil:Stencil.SymbolSource>
+        <!--Initialize the SymbolGroup-->
+        <stencil:Stencil.SymbolGroups>
+            <stencil:SymbolGroups>
+                <!--Map Symbols Using MappingName-->
+                <stencil:SymbolGroupProvider MappingName="Key">
+                </stencil:SymbolGroupProvider>
+            </stencil:SymbolGroups>
+        </stencil:Stencil.SymbolGroups>
+    </stencil:Stencil>
 </Grid>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Stencil_images/Stencil_img17.jpeg)
 
 ## Symbol Groups
 
-The SymbolGroupProvider groups the symbols into SymbolGroup based on the MappingName property.
+The `SymbolGroupProvider` groups the symbols into SymbolGroup based on the MappingName property.
 
+{% tabs %}
 {% highlight xaml %}
 
 <stencil:Stencil x:Name="stencil" ExpandMode="All" 
 		         SymbolSource="{StaticResource Collection}">
-	<!--Initialize the SymbolGroup-->
-<stencil:Stencil.SymbolGroups>
- <stencil:SymbolGroups>
-  <!--Map Symbols Using MappingName-->
-  <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
- </stencil:SymbolGroups>
-</stencil:Stencil.SymbolGroups>
+    <!--Initialize the SymbolGroup-->
+    <stencil:Stencil.SymbolGroups>
+        <stencil:SymbolGroups>
+            <!--Map Symbols Using MappingName-->
+            <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
+        </stencil:SymbolGroups>
+    </stencil:Stencil.SymbolGroups>
+</stencil:Stencil>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Stencil_images/Stencil_img3.jpeg)
 
@@ -160,18 +185,20 @@ The SymbolGroupProvider groups the symbols into SymbolGroup based on the Mapping
 
 `SymbolFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
 
+{% tabs %}
 {% highlight C# %}
 // Define filtering of Symbols
 private bool Filter(SymbolFilterProvider sender, object symbol)
-{
- if (symbol is NodeViewModel)
-  {
-   if (sender.Content.ToString() == (symbol as NodeViewModel).Key.ToString())
-   return true;
-  }
-}
+     {
+          if (symbol is NodeViewModel)
+              {
+                  if (sender.Content.ToString() == (symbol as NodeViewModel).Key.ToString())
+                  return true;
+              }
+     }
 
 {% endhighlight %}
+{% endtabs %}
 
 for Sample, refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter")
 
@@ -211,24 +238,27 @@ Here, Stencil is an instance of Stencil.
 
 You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
 
+{% tabs %}
 {% highlight C# %}
 public class CustomStencil : Stencil
-{
- //Virtual method to customize the preview of dragging the symbol from Stencil.
- protected override void PrepareDragDropPreview()
- {
-  this.SymbolPreview = new ContentPresenter()
-  {
-   Content = new Rectangle()
-   {
-    Width = 50,
-    Height = 50,
-    Fill = new SolidColorBrush(Colors.SteelBlue)
-   }
-  };
- }
-}
+    {
+        //Virtual method to customize the preview of dragging the symbol from Stencil.
+        protected override void PrepareDragDropPreview()
+        {
+            this.SymbolPreview = new ContentPresenter()
+            {
+                Content = new Rectangle()
+                {
+                    Width = 50,
+                    Height = 50,
+                    Fill = new SolidColorBrush(Colors.SteelBlue)
+                }
+            };
+        }
+    }
+
 {% endhighlight %}
+{% endtabs %}
 
 ![](Stencil_images/Stencil_img16.jpeg)
 
@@ -240,8 +270,8 @@ Following table describes stencil related events.
 
 | Event | Description | Arguments |
 |---|---|---|
-| ExpandEvent | Occurs when expand the symbol group in the Stencil. | On which the Expand Event is raised. | 
-| CollpaseEvent | Occurs when collapse the symbol group in the Stencil. | On which the Collapse Event is raised. |
+| ExpandEvent | Occurs when expand the symbol group in the Stencil. | On which the `ExpandEvent` is raised. | 
+| CollpaseEvent | Occurs when collapse the symbol group in the Stencil. | On which the `CollapseEvent` is raised. |
 
 #### ExpandMode
- ExpandMode of Stencil Can be customized as, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html"ExpandMode")
+ please refer to, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html "ExpandMode")
