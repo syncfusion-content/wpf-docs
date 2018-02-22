@@ -15,17 +15,19 @@ This feature gives optimized performance while loading and dragging items to the
 
 Virtualization is disabled in Diagram by default, to enable this you can use `Constraints` property of the SfDiagram.
 
+{% tabs %}
 {% highlight C# %}
 
-sfdiagram.Constraints = sfdiagram.Constraints | GraphConstraints.Virtualize;
+diagram.Constraints = diagram.Constraints | GraphConstraints.Virtualize;
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Deferred Scrolling
 
 To improve scrolling performance, the outline of a diagram element will be displayed until the UI element is loaded, regardless of the weight of the element. 
 
-I> In SfDiagram, we named this support as `Outline`.
+N> In SfDiagram, we named this support as `Outline`.
 
 Outline is disabled in Diagram by default, to enable this you can use `Constraints` property of the SfDiagram.
 
@@ -37,7 +39,7 @@ diagram.Constraints |= GraphConstraints.Outline;
 
 ![](Virtualization_images/Virtualization_img1.gif)
 
-Outline customization
+###Outline customization
 {:.caption}
 
 Options are provided to override the appearance, style and interval time of outline. `OutlineSettings` property of SfDiagram will help you to achieve customization of Outline.
