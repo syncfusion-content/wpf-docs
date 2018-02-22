@@ -15,7 +15,7 @@ Please refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf
 
 ## Snap To Objects
 
-The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments(samesize,sameposition). Such alignments are visually represented as smart guides.
+The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments(same size,same position). Such alignments are visually represented as smart guides.
 
 Snapping to objects can be enabled by assigning values other than `SnapToObject.None` to `SfDiagram.SnapSettings.SnapToObject`.
 
