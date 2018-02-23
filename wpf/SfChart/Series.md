@@ -3065,6 +3065,49 @@ chart.Series.Add(series);
 
 ![](Series_images/rangearea_closed.png)
 
+### Spline Range Area
+
+[`SplineRangeAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html#) is used to display continuous data points as smooth Bezier curves that vary between [`High`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#) values over intervals of time and across different categories. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineRangeAreaSeries ItemsSource = "{Binding Products}"
+
+                             XBindingPath="ProdName" 
+
+                             High="Stock" 
+
+                             Low="Price"
+
+                             Interior="#BCBCBC" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries();
+
+splineRangeAreaSeries.ItemsSource = new ViewModel().Products;
+
+splineRangeAreaSeries.XBindingPath = "ProdName";
+
+splineRangeAreaSeries.High = "Stock";
+
+splineRangeAreaSeries.Low = "Price";
+
+splineRangeAreaSeries.Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC));
+
+
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spline Range Area Series ](Series_images/splinerangearea.png)
+
 ### Histogram 
 
 [`HistogramSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries.html#) is one of the seven basic tools of quality control. HistogramSeries is often used to plot the density of data.
@@ -4069,3 +4112,90 @@ chart.Series.Add(series);
 
 ![](Series_images/faststackingcolumn.png)
 
+### Fast Range Area
+
+[`FastRangeAreaBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#) is the high performance version of RangeAreaSeries. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
+
+                             XBindingPath="Date" 
+					 
+                             High="HighTemperature" 
+					 
+                             Low="LowTemperature"        
+					                                      
+                             Interior="#7F7F7F" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+FastRangeAreaBitmapSeries fastRangeAreaBitmapSeries = new FastRangeAreaBitmapSeries();
+
+fastRangeAreaBitmapSeries.ItemsSource = new ViewModel().Data;
+
+fastRangeAreaBitmapSeries.XBindingPath = "Date";
+
+fastRangeAreaBitmapSeries.High = "HighTemperature";
+
+fastRangeAreaBitmapSeries.Low = "LowTemperature";
+
+fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
+
+
+chart.Series.Add(fastRangeAreaBitmapSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Fast Range Area Bitmap Series](Series_images/fastrangeareabitmapseries.png)
+
+The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastRangeAreaBitmapSeries as in below code snippet:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
+
+                                 XBindingPath="Date" 
+
+                                 High="HighTemperature" 
+
+                                 Low="LowTemperature" 
+
+                                 EnableAntiAliasing="True" 
+
+                                 Interior="#7F7F7F" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+FastRangeAreaBitmapSeries fastRangeAreaBitmapSeries = new FastRangeAreaBitmapSeries();
+
+fastRangeAreaBitmapSeries.ItemsSource = new ViewModel().Data;
+
+fastRangeAreaBitmapSeries.XBindingPath = "Date";
+
+fastRangeAreaBitmapSeries.High = "HighTemperature";
+
+fastRangeAreaBitmapSeries.Low = "LowTemperature";
+
+fastRangeAreaBitmapSeries.EnableAntiAliasing = true;
+
+fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
+
+
+chart.Series.Add(fastRangeAreaBitmapSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Fast Range Area Bitmap Series With Anit-Aliasing Enabled](Series_images/fastrangeareabitmapantialiasing.png)
