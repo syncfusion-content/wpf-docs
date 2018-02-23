@@ -22,7 +22,7 @@ PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
 //Load the PDF.
 
-pdfViewer1.Load("Template.pdf");
+pdfViewer1.Load("Sample.pdf");
 
 pdfViewer1.GoToPageAtIndex(2);
 
@@ -38,7 +38,7 @@ Private pdfViewer1 As New PdfViewerControl()
 
 'Load the PDF.
 
-pdfViewer1.Load("Template.pdf")
+pdfViewer1.Load("Sample.pdf")
 
 pdfViewer1.GoToPageAtIndex(2)
 

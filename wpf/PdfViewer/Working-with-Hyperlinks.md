@@ -50,7 +50,7 @@ PdfViewerControl pdfViewerControl = new PdfViewerControl();
 
 //Load the PDF.
 
-pdfViewerControl.Load("Template.pdf");
+pdfViewerControl.Load("Sample.pdf");
 
 // Hooks the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
@@ -79,7 +79,7 @@ Private pdfViewerControl As New PdfViewerControl()
 
 'Load the PDF.
 
-pdfViewerControl.Load("Template.pdf")
+pdfViewerControl.Load("Sample.pdf")
 
 AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
