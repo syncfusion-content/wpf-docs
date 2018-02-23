@@ -50,6 +50,16 @@ When you prefer to perform Silent printing with the default printer settings, th
 {% tabs %}
 {% highlight c# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Template.pdf");
+
 // Printing document using Print method
 
 pdfviewer1.Print();
@@ -59,6 +69,16 @@ pdfviewer1.Print();
 
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Template.pdf")
 
 ' Printing document using Print method
 

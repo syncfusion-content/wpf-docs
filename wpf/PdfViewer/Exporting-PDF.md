@@ -16,6 +16,16 @@ Essential PDF Viewer allows selected pages to be exported as raster images. Expo
 {% tabs %}
 {% highlight C# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Template.pdf");
+
 Bitmap img = pdfViewer1.ExportAsImage(0);
 
 
@@ -27,6 +37,16 @@ img.Save("Sample.png", ImageFormat.Png);
 {% endhighlight %}
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Template.pdf")
 
 Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
 

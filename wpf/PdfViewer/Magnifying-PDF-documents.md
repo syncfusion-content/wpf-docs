@@ -14,6 +14,16 @@ PDF Viewer allows you to magnify the PDF document that is being displayed. The f
 {% tabs %}
 {% highlight c# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Template.pdf");
+
 //Magnify the document to 150%
 
 pdfviewer1.ZoomTo(150);
@@ -21,6 +31,16 @@ pdfviewer1.ZoomTo(150);
 
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Template.pdf")
 
 'Magnify the document to 150%
 

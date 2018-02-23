@@ -14,6 +14,16 @@ PDF Viewer provides the total number of the pages in the PDF document that is be
 {% tabs %}
 {% highlight C# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Template.pdf");
+
 // Acquiring the total number of pages in the document being loaded  
 
 int pageCount = pdfviewer1.PageCount;
@@ -23,6 +33,16 @@ int pageCount = pdfviewer1.PageCount;
 
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Template.pdf")
 
 'Acquiring the total number of pages in the document being loaded 
 
