@@ -197,7 +197,7 @@ private bool Filter(SymbolFilterProvider sender, object symbol)
 {% endhighlight %}
 {% endtabs %}
 
-for Sample, refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter")
+For Sample, please refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter")
 
 ![](Stencil_images/Stencil_img12.PNG)
 
@@ -261,14 +261,14 @@ public class CustomStencil : Stencil
 
 ## Events
 
-Expand Event and Collapse Event are notified to provide interaction in SymbolGroup.
+Expand Event and Collapse Event are notified to provide interaction in SymbolGroup. DragEnter Event, DragLeave Event and DragOver Event, ItemDrop Event are notified to provide interaction in diagram.
 
-Following table describes stencil related events.
-
-| Event | Description | Arguments |
-|---|---|---|
-| ExpandEvent | Occurs when expand the symbol group in the Stencil. | On which the `ExpandEvent` is raised. | 
-| CollpaseEvent | Occurs when collapse the symbol group in the Stencil. | On which the `CollapseEvent` is raised. |
+* Expanded - for Arguments please refer to, [Expanded](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Expanded_EV.html "Expanded").
+* Collapsed - for Arguments Please refer to, [Collapsed](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Collapsed_EV.html "Collapsed").
+* DragEnter - for Arguments please refer to, [DragEnter](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragEnter_EV.html "DragEnter").
+* DragOver - for Arguments please refer to, [DragOver](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragOver_EV.html "DragOver").
+* DragLeave - for Arguments please refer to, [DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragLeave_EV.html "DragLeave").
+* ItemDropEvent - for Arguments please refer to, [ItemDropEvent](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ItemDropEvent_EV.html "ItemDropEvent").
 
 #### ExpandMode
- please refer to, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html "ExpandMode")
+ please refer to, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html "ExpandMode").
