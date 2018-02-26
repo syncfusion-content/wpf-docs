@@ -14,26 +14,29 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 
 ## Graph Constraints
 
-Graph constraints allow to enable or disable the following behaviors.
+`GraphConstraints` allow to enable or disable the following behaviors.
 
 * Page Editing
 * Line Bridging
 * Zoom and Pan
 * Undo Redo
+* Routing
 
-**Example** 
+The following code example illustrates how to disable page editing.
 
-The following example illustrates how to disable page editing.
-
+{% tabs %}
 {% highlight C# %}
 
 diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 {% endhighlight %}
+{% endtabs %}
+
+Please refer to the members of [GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html).
 
 ## Node Constraints
 
-NodeConstraints allow to enable or disable the following behaviors of Node.
+`NodeConstraints` allow to enable or disable the following behaviors of Node.
 
 * Selection
 * Deletion
@@ -41,166 +44,154 @@ NodeConstraints allow to enable or disable the following behaviors of Node.
 * Resize
 * Rotate
 * Connect
-* Annotation Dragging
 
-**Example**
+The following code example illustrates how to disable rotation.
 
-The following code illustrates how to disable rotation.
-
+{% tabs %}
 {% highlight C# %}
 
-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
+//Create NodeViewModel collection
+diagram.nodes = new ObservableCollection<NodeViewModel>();
 
-Node node = new Node()
+//Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding")
+NodeViewModel node = new NodeViewModel()
 {
   Constraints = NodeConstraints.Default & ~NodeConstraints.Rotatable,
   UnitWidth = 50,
   UnitHeight = 50,
   OffsetX = 100,
-  OffsetY = 100,
-  Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-  ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+  OffsetY = 100,  
 };
-
-nodes.Add(node);
-diagram.Nodes = nodes;
+ //Add NodeViewModel to Nodes Collection
+(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
 
 {% endhighlight %}
+{% endtabs %}
+
+Please refer to the members of [NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html)
 
 ## Connector Constraints
 
-ConnectorConstraints allow to enable or disable certain behaviors of Connectors. They are as follows.
+`ConnectorConstraints` allow to enable or disable certain behaviors of Connectors. They are as follows.
 
 * Selection
-* Deletion
 * Drag
 * Segment editing
 * Bridging
-* Annotation dragging
+* Delete
 
-**Example**
+The following code example illustrates how to disable selection.
 
-The following code illustrates how to disable selection.
-
+{% tabs %}
 {% highlight C# %}
 
-ObservableCollection<Connector> connectors = new ObservableCollection<Connector>();
+diagram.connectors = new ObservableCollection<ConnectorViewModel>();
 
-Connector connector1 = new Connector()
+//Create ConnectorViewModel (Style Applied from "Data-Binding")
+ConnectorViewModel connector1 = new ConnectorViewModel()
 {
 	Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.Selectable
 };
 
-connectors.Add(connector1);
-diagram.Connectors = connectors;
+(diagram.Connectors as ObservableCollection<ConnectorViewModel>).Add(connector1);
 
 {% endhighlight %}
+{% endtabs %}
+
+Please refer to the members of [ConnectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html)
 
 ## Port Constraints
 
-You can enable or disable certain behaviors of port. They are as follows.
+`PortConstraints` allow to enable or disable certain behaviors of port. They are as follows.
 
 * Connect 
+* Drag
 
-Example
+The following code example illustrates how to disable creating connections with a port.
 
-The following code illustrates how to disable creating connections with a port.
-
+{% tabs %}
 {% highlight C# %}
 
-Node node = new Node()
-{
-	Ports = new ObservableCollection<INodePort>()
+//Create NodePortViewModel (Shape and ShapeStyle Applied from "Data-Binding")
+NodePortViewModel nodeport=	new NodePortViewModel()
 	{
-		new NodePort()
-		{
-			Constraints = PortConstraints.None
-		}
-	},
-	UnitWidth = 50,
-	UnitHeight = 50,
-	OffsetX = 100,
-	OffsetY = 100,
-};
-
-nodes.Add(node);
-diagram.Nodes = nodes;
+      UnitWidth= 10,
+	    UnitHeight= 10,
+			Constraints = PortConstraints.Default & ~PortConstraints.Connectable
+	};
 
 {% endhighlight %}
+{% endtabs %}
+
+Please refer to the members of [PortConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortConstraints.html)
 
 ## Annotation Constraints
-AnnotationConstraints allow to enable or disable the following behaviors of Annotation.
+
+`AnnotationConstraints` allow to enable or disable the following behaviors of Annotation.
 
 * Selection
 * Drag
 * Resize
 * Rotate
 
-**Example**
-the following code illustrates how to enable annotation dragging.
+The following code example illustrates how to enable annotation dragging.
 
+{% tabs %}
 {% highlight C# %}
 
-            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
-            NodeViewModel node = new NodeViewModel()
-            {
-                OffsetX = 200,
-                OffsetY = 200,
-                UnitWidth = 100,
-                UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel
-                Annotations = new ObservableCollection<IAnnotation>()
-                    {
-                        //Create a AnnotationEditorViewModel
-                        new AnnotationEditorViewModel()
-                        {
-                            Content = "Annotation",
-                            //Assign Constraint to Select and Drag.
-                            Constraints =AnnotationConstraints.Selectable |AnnotationConstraints.Draggable,                            
-                        }          
-                    }
-            };
-            //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(node);
+//Create a AnnotationEditorViewModel (Style Applied from "Data-Binding")
+AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
+  {
+      Content="Annotation",
+      //Assign Constraint to Select and Drag
+      Constraints=AnnotationConstraints.Selectable|AnnotationConstraints.Draggable,
+  };
 
-{% endhighlight %} 
+{% endhighlight %}
+{% endtabs %} 
+
+Please refer to the members of [AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html)
 
 ## Selector Constraints
 
-Selector visually represents the selected elements with certain editable thumbs. The visually of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows.
+Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with `SelectorConstraints`. The part of selector is categorized as follows.
 
 * Resizer
 * Rotator
 * Quick Commands
 
-**Example**
+The following code example illustrates how to hide rotator.
 
-The following code illustrates how to hide rotator.
-
+{% tabs %}
 {% highlight C# %}
 
 (diagram.SelectedItems as SelectorViewModel).SelectorConstraints = (diagram.SelectedItems as  SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Rotator;
 
 {% endhighlight %}
+{% endtabs %}
+
+Please refer to the members of [SelectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html)
 
 ## Snap Constraints
 
-Snap Constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
+`SnapConstraints` control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
 * Show only Horizontal or Vertical Gridlines
 * Show both Horizontal or Vertical Gridlines
 * Show to either Horizontal or Vertical Gridlines
 * Show to both Horizontal or vertical gridlines
 
-**Example**
+The following code example illustrates how to show only Horizontal Gridlines
 
-The following code illustrates how to show only Horizontal Gridlines
-
+{% tabs %}
 {% highlight C# %}
 
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
 
 {% endhighlight %}
+{% endtabs %}
+
+Please refer to the members of [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html)
 
 ### Inherit behaviors
 
@@ -208,13 +199,14 @@ Some of the behaviors can be defined through both the specific object (Node/Conn
 
 The following code example illustrates how to inherit the line bridging behavior from the Diagram.
 
+{% tabs %}
 {% highlight C# %}
 
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
-ObservableCollection<Connector> connectors = new ObservableCollection<Connector>();
+ObservableCollection<ConnectorViewModel> connectors = new ObservableCollection<ConnectorViewModel>();
 
-Connector connector1 = new Connector()
+ConnectorViewModel connector1 = new ConnectorViewModel()
 {
 	SourcePoint=new Point(100,100),
 	TargetPoint=new Point(200,200),
@@ -225,6 +217,7 @@ connectors.Add(connector1);
 diagram.Connectors = connectors;
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Bitwise Operations
 
@@ -232,13 +225,15 @@ Bitwise Operations are used to manipulate the flagged enumerations [enum]. In th
 
 ### Add Operation
 
-You can add or enable multiple values at a time	 by using Bitwise ‘|’ (OR) operator.
+You can add or enable multiple values at a time	by using Bitwise ‘|’ (OR) operator.
 
+{% tabs %}
 {% highlight C# %}
 
 node.Constraints = NodeConstraints.Selectable | NodeConstraints.Rotatable;
 
 {% endhighlight %}
+{% endtabs %}
 
 In the above example, you can do both the selection and rotation.
 
@@ -246,11 +241,13 @@ In the above example, you can do both the selection and rotation.
 
 You can remove or disable values by using Bitwise ‘&~’ (XOR) operator.
 
+{% tabs %}
 {% highlight C# %}
 
 node.Constraints = node.Constraints & ~(NodeConstraints.Rotatable);
 
 {% endhighlight %}
+{% endtabs %}
 
 In the above example, Rotation is disabled but other constraints are enabled.
 
@@ -258,11 +255,12 @@ In the above example, Rotation is disabled but other constraints are enabled.
 
 You can check any value by using Bitwise ‘&’ (AND) operator.
 
+{% tabs %}
 {% highlight C# %}
 
 if ((node.Constraints & (NodeConstraints.Rotatable)) == (NodeConstraints.Rotatable))
 
 {% endhighlight %}
+{% endtabs %}
 
-In the above example, you can check whether the rotate constraints are enabled in a Node. When Node constraints have rotate constraints, the expression returns a rotate constraint.
-
+In the above example, you can check whether the rotate constraints are enabled in a Node. When `NodeConstraints` have rotate constraints, the expression returns a rotate constraint.
