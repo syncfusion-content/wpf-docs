@@ -1,0 +1,2820 @@
+diff --git a/wpf/SfDiagram/Annotation.md b/wpf/SfDiagram/Annotation.md
+index b927da0..b6c3b6d 100644
+--- a/wpf/SfDiagram/Annotation.md
++++ b/wpf/SfDiagram/Annotation.md
+@@ -9,235 +9,247 @@ documentation: ug
+ 
+ # Annotation
+ 
+-Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
+-You can add Multiple Labels to a Node/Connector.
++Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.You can add Multiple Labels to a Node/Connector.
+ 
+-## Create Annotation
++## Define Annotation
+ 
+-You can add an Annotation to a Node/Connector by defining the IAnnotation object and adding that to the `Annotations` property  of Node/Connector.The `Content` property of IAnnotation defines the object to be displayed. The following code illustrates how to create an Annotation.
++'Annotation' property of Node/Connector should be initialized with the Collection. Annotation itself having the properties to update the position, alignment and interaction with this.
+ 
+-{% highlight C# %}
++{% tabs %}
++{% highlight xaml %}
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-NodeViewModel node = new NodeViewModel()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 100,
+-	OffsetY = 100,
+-	Annotations=new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation",
+-			Alignment=ConnectorAnnotationAlignment.Center,
+-			HorizontalAlignment=HorizontalAlignment.Center,
+-			VerticalAlignment=VerticalAlignment.Center,
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
++<!--Initialize the SfDiagram-->
++<syncfusion:SfDiagram x:Name="diagram">
++ <!--Initialize the NodeCollection-->
++ <syncfusion:SfDiagram.Nodes>
++  <syncfusion:NodeCollection>
++   <!--Initialize the Node-->
++   <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}">
++    <syncfusion:NodeViewModel.Annotations>
++     <!--Initialize the AnnotationCollection-->
++     <syncfusion:AnnotationCollection>
++      <!--Initialize the Annotation-->
++      <syncfusion:AnnotationEditorViewModel Content="Annotation">
++      </syncfusion:AnnotationEditorViewModel>
++     </syncfusion:AnnotationCollection>
++    </syncfusion:NodeViewModel.Annotations>
++   </syncfusion:NodeViewModel>
++  </syncfusion:NodeCollection>
++ </syncfusion:SfDiagram.Nodes>
++</syncfusion:SfDiagram>
+ 
+-nodes.Add(node);
+-diagram.Nodes = nodes;
++{% endhighlight %}
+ 
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-ConnectorViewModel connector = new ConnectorViewModel()
++{% highlightc# %}
++
++//Define the NodeCollection
++diagram.Nodes = new NodeCollection();
++//Define the Node
++NodeViewModel node = new NodeViewModel()
+ {
+-	SourcePoint = new Point(200, 50),
+-	TargetPoint = new Point(300, 150),
+-	Segments=new ObservableCollection<IConnectorSegment>()
+-	{
+-		new OrthogonalSegment()
+-		{
+-			Direction=OrthogonalDirection.Bottom,
+-			Length=50
+-		}
+-	},
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation",
+-		}
+-	},
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
++    UnitHeight = 100,
++    UnitWidth = 100,
++    OffsetX = 100,
++    OffsetY = 100,
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++    //Define the AnnotationCollection
++    Annotations = new AnnotationCollection()
++    {
++        //Define the Annotation
++        new AnnotationEditorViewModel()
++        {
++            Content="Annotation",
++        }
++    }
+ };
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;   
++//Adding Node to Collection
++(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
+ 
+ {% endhighlight %}
++{%  endtabs %}
+ 
+-![](Annotation_images/Annotation_img1.jpeg)
++N> Annotation for Connector also similar to Node.
++
++![](Annotation_images/Annotation_img1.PNG)
+ 
+ ## Alignment
+ 
+ Annotation can be aligned relative to the Node boundaries. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+ 
++### Annotation of Node
++
+ ### Offset
+ 
+ The `Offset` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
+ 
+ The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
+ 
+-![](Annotation_images/Annotation_img2.jpeg)
+-
+-By using Offset property, without creating the template we can arrange the Annotation.
+-
+-![](Annotation_images/Annotation_img3.jpeg)
++![](Annotation_images/Annotation_img2.PNG)
+ 
+ ### Horizontal and Vertical alignments
+ 
+-The `HorizontalAlignment` property of IAnnotation is used to set how the Annotation is horizontally aligned at the Annotation position determined from the fraction values. The VerticalAlignment property is used to set how Annotation is vertically aligned at the Annotation position.
+-
+-The following table illustrates all the possible alignments visually with **Offset (0, 0)**.
+-
+-| Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
+-|---|---|---|
+-| Left | Top | ![](Annotation_images/Annotation_img4.jpeg) |
+-| Center | | ![](Annotation_images/Annotation_img5.jpeg) |
+-| Right | | ![](Annotation_images/Annotation_img6.jpeg) |
+-| Left | Center | ![](Annotation_images/Annotation_img7.jpeg) |
+-| Center | | ![](Annotation_images/Annotation_img8.jpeg) |
+-| Right | | ![](Annotation_images/Annotation_img9.jpeg) |
+-| Left | Bottom | ![](Annotation_images/Annotation_img10.jpeg) |
+-| Center | | ![](Annotation_images/Annotation_img11.jpeg) |
+-| Right | | ![](Annotation_images/Annotation_img12.jpeg) |
+-
+-The following codes illustrates how to align Annotations.
++The `HorizontalAlignment` property of IAnnotation is used to set how the Annotation is horizontally aligned at the Annotation position determined from the fraction values. The `VerticalAlignment` property is used to set how Annotation is vertically aligned at the Annotation position.
+ 
+-{% highlight C# %}
++{% tabs %}
++{% highlight c# %}
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
++//Define the NodeCollection
++diagram.Nodes = new NodeCollection();
++//Define the Node
+ NodeViewModel node = new NodeViewModel()
+ {
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 100,
+-	OffsetY = 100,
+-	Annotations=new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation",
+-			Offset=new Point(0,0.5),
+-			Alignment=ConnectorAnnotationAlignment.Center,
+-			HorizontalAlignment=HorizontalAlignment.Left,
+-			VerticalAlignment=VerticalAlignment.Center,
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
++    UnitHeight = 100,
++    UnitWidth = 100,
++    OffsetX = 100,
++    OffsetY = 100,
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++    //Define the AnnotationCollection
++    Annotations = new AnnotationCollection()
++    {
++        //Define the Annotation
++        new AnnotationEditorViewModel()
++         {
++             Content="Annotation",
++             HorizontalAlignment=HorizontalAlignment.Left,
++             VerticalAlignment=VerticalAlignment.Top,
++             Offset=new Point(0,0),
++         }
++    }
+ };
+-
+-nodes.Add(node);
+-diagram.Nodes = nodes;
++//Adding Node to Collection
++(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Annotation_images/Annotation_img16.jpeg)
++| Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
++|---|---|---|
++| Left | Top | ![](Annotation_images/Annotation_img3.PNG) |
++| Center | | ![](Annotation_images/Annotation_img4.PNG) |
++| Right | | ![](Annotation_images/Annotation_img5.PNG) |
++| Left | Center | ![](Annotation_images/Annotation_img6.PNG) |
++| Center | | ![](Annotation_images/Annotation_img7.PNG) |
++| Right | | ![](Annotation_images/Annotation_img8.PNG) |
++| Left | Bottom | ![](Annotation_images/Annotation_img9.PNG) |
++| Center | | ![](Annotation_images/Annotation_img10.PNG) |
++| Right | | ![](Annotation_images/Annotation_img11.PNG) |
+ 
+ ### Margin
+ 
+-**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
++`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
+ 
+ {% highlight C# %}
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
++//Define the NodeCollection
++diagram.Nodes = new NodeCollection();
++//Define the Node
+ NodeViewModel node = new NodeViewModel()
+ {
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 100,
+-	OffsetY = 100,
+-	Annotations=new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation",
+-			Margin=new Thickness(0,10,0,0),
+-			Offset=new Point(0.5,1),
+-			Alignment=ConnectorAnnotationAlignment.Center,
+-			HorizontalAlignment=HorizontalAlignment.Center,
+-			VerticalAlignment=VerticalAlignment.Top,
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
++    UnitHeight = 100,
++    UnitWidth = 100,
++    OffsetX = 100,
++    OffsetY = 100,
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++    //Define the AnnotationCollection
++    Annotations = new AnnotationCollection()
++    {
++        //Define the Annotation
++        new AnnotationEditorViewModel()
++        {
++            Content="Annotation",
++            HorizontalAlignment=HorizontalAlignment.Center,
++            VerticalAlignment=VerticalAlignment.Top,
++            Offset=new Point(0.5,1),
++            Margin=new Thickness(0,10,0,0),
++        }
++    }
+ };
+-
+-nodes.Add(node);
+-diagram.Nodes = nodes;
++//Adding Node to Collection
++(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
+ 
+ {% endhighlight %}
+ 
+-![](Annotation_images/Annotation_img17.jpeg)
++![](Annotation_images/Annotation_img12.PNG)
+ 
+-The following code illustrates how to displace Annotation through with the Margin property.
++### Annotation of Connector
+ 
+-{% highlight C# %}
++### Offset
+ 
+-new AnnotationEditorViewModel()
+-{
+-	Content="Annotation",
++The `Offset` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
++
++The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
+ 
+-	//Based on Offset value, we can align the Annotation
+-	Offset = new Point(0,0),
++![](Annotation_images/Annotation_img16.PNG)
+ 
+-	//Align the Annotation with respect to absolute position
+-	Margin = new Thickness(100,100,0,0),
+-}
++### Margin
++
++`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, and Margin values.
++
++{% tabs %}
++{% highlight c# %}
++
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
++{
++    SourcePoint=new Point(200,50),
++    TargetPoint=new Point(300,150),
++    //Define the AnnotationCollection
++    Annotations = new AnnotationCollection()
++    {
++        //Define the Annotation
++        new AnnotationEditorViewModel()
++        {
++            Content = "Annotation",
++            //Initialize the Margin
++            Margin = new Thickness(120, 120, 0, 0),
++            //Initialize the Offset
++            Offset = new Point(0, 0)
++        }
++    }
++};
++//Adding Connector to Collection
++(diagram.Connectors as ObservableCollection<ConnectorViewModel>).Add(connector);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Annotation_images/Annotation_img18.jpeg)
++![](Annotation_images/Annotation_img17.PNG)
+ 
+ ## Wrapping
+ 
+-When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped. The following code illustrates how to wrap a Annotation in a Node.
++When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped.
+ 
++{% tabs %}
+ {% highlight C# %}
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-NodeViewModel node = new NodeViewModel()
++//Define the AnnotationCollection
++Annotations = new AnnotationCollection()
+ {
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 100,
+-	OffsetY = 100,
+-	Annotations=new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation Text Wrapping",
+-			WrapText=TextWrapping.Wrap
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-nodes.Add(node);
+-diagram.Nodes = nodes;
++    //Define the Annotation
++    new AnnotationEditorViewModel()
++    {
++        Content = "Annotation with wrapping text",
++        //Define the WrapText
++        WrapText=TextWrapping.Wrap,
++    }
++}
+ 
+ {% endhighlight %}
+-
+-![](Annotation_images/Annotation_img19.jpeg)
++{% endtabs %}
+ 
+ | Values | Description | Node | Connector|
+ |---|---|---|---|
+-| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img20.jpeg) | ![](Annotation_images/Annotation_img21.jpeg) |
+-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | ![](Annotation_images/Annotation_img23.jpeg) |
+-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img24.png) | ![](Annotation_images/annotation_img25.png) |
++| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img18.PNG) | ![](Annotation_images/Annotation_img21.PNG) |
++| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img19.PNG) | ![](Annotation_images/Annotation_img23.PNG) |
++| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img20.PNG) | ![](Annotation_images/annotation_img25.PNG) |
+ 
+ ## Appearance 
+ 
+-You can change the appearance by ViewTemplate. The following code illustrates how to customize the appearance of an Annotation.
+-
+-[XAML]
++`EditTemplate` and `ViewTemplate` can be customized using Annotation.
+ 
++{% tabs %}
+ {% highlight xaml %}
+ 
+ <DataTemplate x:Key="viewtemplate">
+@@ -248,250 +260,70 @@ You can change the appearance by ViewTemplate. The following code illustrates ho
+ </DataTemplate>
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-[C#]
+-
++{% tabs %}
+ {% highlight C# %}
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-NodeViewModel node = new NodeViewModel()
++//Define the Annotation
++AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
+ {
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 100,
+-	OffsetY = 100,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation Text",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
++    Content = "Annotation",
++    //Define the ViewTemplate
++    ViewTemplate = this.Resources["viewtemplate"] as DataTemplate
+ };
+ 
+-nodes.Add(node);
+-diagram.Nodes = nodes;
+-
+-{% endhighlight %}
+-
+-![](Annotation_images/annotation_img26.png)
+-
+-The Appearance of the Annotation can also be customized with appearance specific properties. The following code illustrates how to customize background and border of a Annotation.
+-
+-[XAML]
+-
+-{% highlight xaml %}
+-
+-<DataTemplate x:Key="viewtemplate">
+-  <Border BorderBrush="Black" BorderThickness="1">
+-    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}"  Background="White" 
+-               Foreground="Black"/>
+-  </Border>
+-</DataTemplate>
+-
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Annotation_images/annotation_img27.png)
++![](Annotation_images/Annotation_img13.PNG)
+ 
+-## Edit
+-
+-Diagram provides support to edit an Annotation at runtime, either programmatically or interactively.
+-
+-Double-clicking any Annotation will enables editing of that. Double-clicking the Node enables first Annotation editing. When the focus of editor is lost, the Annotation for the Node is updated.
++## Interaction
+ 
+-The following code illustrates how to edit the Annotation programmatically.
++Annotation can be Selectable, Draggable, Resizable, Rotatable and Editable.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
+ 
++{% tabs %}
+ {% highlight C# %}
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-NodeViewModel node = new NodeViewModel()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 200,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation",
+-			EditTemplate=this.diagram.Resources["edittemplate"] as DataTemplate,
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-NodeViewModel node1 = new NodeViewModel()
++//Define the Annotation
++AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
+ {
+-	UnitWidth = 100, 
+-	UnitHeight = 100,
+-	OffsetX = 350,
+-	OffsetY = 200,
+-	Constraints = NodeConstraints.Default | NodeConstraints.DragAnnotation,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Annotation",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
++    Content = "Annotation",
++    //Define the Constraints
++    Constraints = AnnotationConstraints.Default,
+ };
+ 
+-nodes.Add(node);
+-nodes.Add(node1);
+-diagram.Nodes = nodes;
+-
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Annotation_images/annotation_img30.png)
+-
+-## Interaction
+-
+-Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction can be controlled by Annotation and it's Parent (Node/Connector). The following code example illustrates how to set `Constraints` to Annotation.
+-
+-{% highlight C# %}
+-
+-            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding".
+-            NodeViewModel node = new NodeViewModel()
+-            {
+-                OffsetX = 200,
+-                OffsetY = 200,
+-                UnitWidth = 100,
+-                UnitHeight = 50,
+-                //Initialize and Add annotation to NodeViewModel.
+-                Annotations = new ObservableCollection<IAnnotation>()
+-                    {
+-                        //Create a AnnotationEditorViewModel.
+-                        new AnnotationEditorViewModel()
+-                        {
+-                            Content = "Annotation",
+-                            //Assign Constraint to Select, Drag, Resize and Rotate Annotation.
+-                            Constraints = AnnotationConstraints.Default
+-                        }          
+-                    }
+-            };
+-            //Add NodeViewModel to Nodes Collection
+-            (Diagram.Nodes as NodeCollection).Add(node);
+-
+-{% endhighlight %}
++![](Annotation_images/Annotation_img14.PNG)
+ 
+-![](Annotation_images/annotation_selection.png)
++For AnnotationConstraints please refer to [AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html "AnnotationConstraints").
+ 
+ ## Rotation
+ Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
+-{% highlight C# %}
+-//Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
+-            NodeViewModel node = new NodeViewModel()
+-            {
+-                OffsetX = 200,
+-                OffsetY = 200,
+-                UnitWidth = 100,
+-                UnitHeight = 50,
+-                //Initialize and Add annotation to NodeViewModel.
+-                Annotations = new ObservableCollection<IAnnotation>()
+-                    {
+-                        //Create a AnnotationEditorViewModel
+-                        new AnnotationEditorViewModel()
+-                        {
+-                            Content = "Annotation",
+-                            //Assign Constraint to Select, Drag and Rotate Annotation.
+-                            Constraints = AnnotationConstraints.Default,
+-                           //This is stop the rotation of Annotation along with its Parent.
+-                            RotationReference=RotationReference.Page
+-                        }          
+-                    }
+-            };
+-            //Add NodeViewModel to Nodes Collection
+-            (Diagram.Nodes as NodeCollection).Add(node);
+-{% endhighlight %}
+-
+-The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).
+-
+-![](Annotation_images/annotation_rotation.png)
+-
+-The below image represents " RotationReference=RotationReference.Parent" for Annotation(Connector).
+-
+-![](Annotation_images/Annotation_ParentRotation.png)
+-
+-
+-## Read Only Annotation
+-
+-Diagram allows to create read only Annotation. You have to set the readOnly property of Annotation to enable/disable the read only mode. The following code illustrates how to enable **ReadOnly** mode.
+ 
++{% tabs %}
+ {% highlight C# %}
+ 
+-NodeViewModel node1 = new NodeViewModel()
++//Define the Annotation
++AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
+ {
+-	UnitWidth = 100, 
+-	UnitHeight = 100,
+-	OffsetX = 100,
+-	OffsetY = 100,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content = "Annotation",
+-			ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
+-			ReadOnly = true
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
++    Content = "Annotation",
++    //Define the RotationReference
++    RotationReference=RotationReference.Page
+ };
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-## Multiple Annotations
+-
+-You can add any number of Annotations to a Node or Connector. The following code illustrates how to add multiple Annotations to a Node.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<AnnotationEditorViewModel> annotations = new ObservableCollection<AnnotationEditorViewModel>();
+-            
+-AnnotationEditorViewModel annotation1 = new AnnotationEditorViewModel()
+-{
+-	Content = "Left",
+-	ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate,
+-	Offset = new Point(0.1, 0.12)
+-};
+-AnnotationEditorViewModel annotation2 = new AnnotationEditorViewModel()
+-{
+-	Content = "Center",
+-	ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
+-	Offset = new Point(0.5, 0.5)
+-};
+-AnnotationEditorViewModel annotation3 = new AnnotationEditorViewModel()
+-{
+-	Content = "Right",
+-	ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
+-	Offset = new Point(0.82, 0.9)
+-};
+-annotations.Add(annotation1);
+-annotations.Add(annotation2);
+-annotations.Add(annotation3);
++The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).
+ 
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-NodeViewModel node = new NodeViewModel()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 100,
+-	OffsetX = 200,
+-	OffsetY = 200,
+-	Annotations = annotations,
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
++![](Annotation_images/Annotation_img15.PNG)
+ 
+-nodes.Add(node);
+-diagram.Nodes = nodes;
++## Multiple Annotations
+ 
+-{% endhighlight %}
++You can add any number of Annotations to a Node or Connector.
++For sample, please refer to [MultipleAnnotation](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/MultipleAnnotation1970891699 "MultipleAnnotation").
+ 
+-![](Annotation_images/annotation_img31.png)
++![](Annotation_images/annotation_img21.PNG)
+diff --git a/wpf/SfDiagram/Connector.md b/wpf/SfDiagram/Connector.md
+index e561816..5efc4bd 100644
+--- a/wpf/SfDiagram/Connector.md
++++ b/wpf/SfDiagram/Connector.md
+@@ -11,56 +11,72 @@ documentation: ug
+ 
+ Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
+ 
+-![](Connector_images/Connector_img1.jpeg)
++![](Connector_images/Connector_img1.PNG)
+ 
+-## Create Connector
++## Define Connector
+ 
+-Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of segments.
++Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of segments. The `SourcePoint` and `TargetPoint` properties of Connector allow you to define the end points of a Connector.
+ 
+-### Add Connectors through Connectors collection
++{% tabs %}
++{% highlight xaml %}
++<!--Style for the Connector-->
++<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
++  <Setter Property="ConnectorGeometryStyle">
++    <Setter.Value>
++      <Style TargetType="Path">
++        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
++        <Setter Property="StrokeThickness" Value="1"></Setter>
++      </Style>
++    </Setter.Value>
++  </Setter>
++  <Setter Property="TargetDecoratorStyle">
++    <Setter.Value>
++      <Style TargetType="Path">
++        <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
++        <Setter Property="StrokeThickness" Value="1"></Setter>
++      </Style>
++    </Setter.Value>
++  </Setter>
++</Style>
+ 
+-The `SourcePoint` and `TargetPoint` properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
++{% endhighlight %}
++{% endtabs %}
+ 
++{% tabs %}
+ {% highlight xaml %}
+-
+-<diagram:SfDiagram.Connectors>
+-  <diagram:DiagramCollection>
+-    <diagram:Connector SourcePoint="100,100" TargetPoint="200,200">
+-      <diagram:Connector.ConnectorGeometryStyle>
+-        <Style TargetType="Path">
+-          <Setter Property="Stroke" Value="Black"></Setter>
+-          <Setter Property="Fill" Value="Black"/>
+-        </Style>
+-      </diagram:Connector.ConnectorGeometryStyle>
+-      <diagram:Connector.TargetDecoratorStyle>
+-        <Style TargetType="Path">
+-          <Setter Property="Stroke" Value="Black"></Setter>
+-          <Setter Property="Fill" Value="Black"/>
+-        </Style>
+-      </diagram:Connector.TargetDecoratorStyle>
+-    </diagram:Connector>
+-  </diagram:DiagramCollection>
+-</diagram:SfDiagram.Connectors>
++<!--Initialize the Sfdiagram-->
++<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line">
++  <syncfusion:SfDiagram.Connectors>
++  <!--Initialize the ConnectorCollection-->
++    <syncfusion:ConnectorCollection>
++    <!--Initialize the Connector-->
++      <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200">
++      </syncfusion:ConnectorViewModel>
++    </syncfusion:ConnectorCollection>
++  </syncfusion:SfDiagram.Connectors>
++</syncfusion:SfDiagram>
+ 
+ {% endhighlight %}
+ 
+ {% highlight C# %}
+-
++//Define the ConnectorType
+ diagram.DefaultConnectorType = ConnectorType.Line;
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
+ {
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 200),
++    //Define the Source and TargetPoint
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(200, 200),
+ };
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img2.jpeg)
++![](Connector_images/Connector_img2.PNG)
+ 
+ ### Connectors from stencil
+ 
+@@ -78,989 +94,387 @@ Connectors can be interactively drawn by clicking and dragging on the Diagram su
+ 
+ ## Connect Nodes
+ 
+-The `SourceNode` and `TargetNode` properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
++The `SourceNode` and `TargetNode` properties allow to define the Nodes to be connected.
+ 
++{% tabs %}
+ {% highlight C# %}
+ 
+-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
+-
+-Node node = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 200,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content = "Task 1",
+-			ViewTemplate  =this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-Node node1 = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 400,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content = "Task 2",
+-			ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-nodes.Add(node);
+-nodes.Add(node1);
+-diagram.Nodes = nodes;
+-
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-
+-ConnectorViewModel connector = new ConnectorViewModel()
++//Define the NodeColllection
++diagram.Nodes = new NodeCollection();
++//Defining the Node
++NodeViewModel node1 = AddNode(100,"Node1");
++NodeViewModel node2 = AddNode(250,"Node2");
++//Adding Node to Collection
++(diagram.Nodes as NodeCollection).Add(node1);
++(diagram.Nodes as NodeCollection).Add(node2);
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector1 = new ConnectorViewModel()
+ {
+-	SourceNode = node,
+-	TargetNode = node1,
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-};
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++    SourceNode=node1,
++    TargetNode=node2,
++    ConnectorGeometryStyle = this.Resources["ConnectorStyle"] as Style,
++};
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector1);
++
++
++//Creating NodeViewmodel
++public NodeViewModel AddNode(double offsetX, string text)
++{
++    NodeViewModel node = new NodeViewModel();
++    node.UnitHeight = 65;
++    node.UnitWidth = 65;
++    node.OffsetX = offsetX;
++    node.OffsetY = 100;
++    node.Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) };
++    node.Annotations = new AnnotationCollection()
++    {
++        new AnnotationEditorViewModel()
++        {
++            Content = text,
++        }
++    };
++     return node;
++}
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img3.jpeg)
++![](Connector_images/Connector_img3.PNG)
+ 
+ N> By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
+ 
+ ## Connections with Ports
+ 
+-The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use NodePort and ConnectorPort.
+-
+-### Using NodePort
+-
+-The following code example illustrates how to create ConnectorPort.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
+-
+-NodePort port1 = new NodePort()
+-{
+-	Width = 10,
+-	Height = 10,
+-	NodeOffsetX = 1,
+-	NodeOffsetY = 0.65,
+-	UnitMode = UnitMode.Fraction,
+-	PortVisibility = PortVisibility.Visible,
+-	Constraints = PortConstraints.Default & ~PortConstraints.InheritPortVisibility,
+-	Shape = new EllipseGeometry() { RadiusX = 10, RadiusY = 10 },
+-	ShapeStyle = this.diagram.Resources["portshapestyle"] as Style
+-};
+-
+-NodePort port2 = new NodePort()
+-{
+-	Width = 10,
+-	Height = 10,
+-	NodeOffsetX = 1,
+-	NodeOffsetY = 0.35,
+-	UnitMode = UnitMode.Fraction,
+-	PortVisibility = PortVisibility.Visible,
+-	Constraints = PortConstraints.Default & ~PortConstraints.InheritPortVisibility,
+-	Shape = new EllipseGeometry() { RadiusX = 10, RadiusY = 10 },
+-	ShapeStyle = this.diagram.Resources["portshapestyle"] as Style
+-};
+-
+-Node task1 = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 350,
+-	OffsetY = 300,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 1",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-Node task2 = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 200,
+-	OffsetY = 250,
+-	Ports = new ObservableCollection<INodePort>()
+-	{
+-		port1,
+-		port2
+-	},
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 2",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-Node task3 = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 350,
+-	OffsetY = 200, 
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 3",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-nodes.Add(task1);
+-nodes.Add(task2);
+-nodes.Add(task3);
+-diagram.Nodes = nodes;
+-
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-ConnectorViewModel connector = new ConnectorViewModel()
+-{
+-	SourcePort = port2,
+-	SourceNode = task2,
+-	TargetNode = task3,
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-};
+-
+-ConnectorViewModel connector1 = new ConnectorViewModel()
+-{
+-	TargetPort = port1,
+-	SourceNode = task1,
+-	TargetNode = task2,
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-};
+-
+-lines.Add(connector);
+-lines.Add(connector1);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
+-
+-![](Connector_images/Connector_img4.jpeg)
+-                 
+-### Using ConnectorPort
+-
+-The following code example illustrates how to create ConnectorPort.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
+-
+-ConnectorPort port = new ConnectorPort()
+-{
+-	Height = 10,
+-       Width = 10,
+-       Length = 0.5,
+-       PortVisibility = PortVisibility.Visible,
+-       UnitMode = UnitMode.Fraction,
+-       Constraints = PortConstraints.Inherit & ~PortConstraints.InheritPortVisibility,
+-       Shape = new EllipseGeometry() { RadiusX = 10, RadiusY = 10 },
+-       ShapeStyle = this.diagram.Resources["portshapestyle"] as Style
+-};
+-
+-Node task1 = new Node()
+-{
+-	UnitWidth = 100,
+-       UnitHeight = 60,
+-       OffsetX = 100,
+-       OffsetY = 100,
+-       Annotations = new ObservableCollection<IAnnotation>()
+-       {
+-       	new AnnotationEditorViewModel()
+-              {
+-              	Content="Task 1",
+-                     ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-       Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-       ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-Node task2 = new Node()
+-{
+-	UnitWidth = 100,
+-       UnitHeight = 60,
+-       OffsetX = 300,
+-       OffsetY = 100,
+-       Annotations = new ObservableCollection<IAnnotation>()
+-       {
+-       	new AnnotationEditorViewModel()
+-              {
+-              	Content="Task 2",
+-                     ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-              }
+-	},
+-       Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-       ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-Node task3 = new Node()
+-{
+-	UnitWidth = 100,
+-       UnitHeight = 60,
+-       OffsetX = 200,
+-       OffsetY = 200,
+-       Annotations = new ObservableCollection<IAnnotation>()
+-       {
+-       	new AnnotationEditorViewModel()
+-              {
+-              	Content="Task 3",
+-                     ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-              }
+-       },
+-       Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-       ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-nodes.Add(task1);
+-nodes.Add(task2);
+-nodes.Add(task3);
+-diagram.Nodes = nodes;
+-
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-ConnectorViewModel connector = new ConnectorViewModel()
+-{
+-	SourceNode = task1,
+-       TargetNode = task2,
+-       Ports=new ObservableCollection<ConnectorPort>()
+-       {
+-       	port
+-       },
+-       ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-       TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-};
+-
+-ConnectorViewModel connector1 = new ConnectorViewModel()
+-{  
+-	SourceConnector=connector,
+-       TargetNode = task3,
+-       SourcePort = port,
+-       ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-       TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-};
+-
+-            
+-lines.Add(connector);
+-lines.Add(connector1);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
+-
+-![](Connector_images/Connector_img5.jpeg)
++The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. 
++For Connections with Ports, please refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
+ 
+ ## Segments
+ 
+ The path of the Connector is defined with a collection of segments.
+ 
+-### Straight
+-
+-Straight segment allows to create a straight line. To create a straight line, you should specify the segment as `StraightSegment` and add a straight segment to collection. The following code example illustrates how to create a default straight segment.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
+-{
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 200),
+-	//Add the Straight Segment to Segments
+-	Segments = new ObservableCollection<IConnectorSegment>()
+-	{
+-		new StraightSegment()
+-		{
+-		}
+-	}
+-};
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
++![](Connector_images/Connector_img31.PNG)
+ 
+-![](Connector_images/Connector_img6.jpeg)
++### Straight
+ 
+-The `Point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
++Straight segment allows to create a straight line. To create a straight line, you should specify the segment as `StraightSegment` and add a straight segment to collection.
+ 
++{% tabs %}
+ {% highlight C# %}
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
+ {
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 300),
+-	//Add the Straight Segment to Segments
+-	Segments = new ObservableCollection<IConnectorSegment>()
+-	{
+-		new StraightSegment()
+-		{
+-			Point=new Point(100,200)
+-		}
+-	}
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(200, 200),
++    //Define the SegmentCollection
++    Segments = new ObservableCollection<IConnectorSegment>()
++    {
++        new StraightSegment()
++        {
++          
++        }
++    }
+ };
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img7.jpeg)
++![](Connector_images/Connector_img6.PNG)
+ 
+ ### Orthogonal
+ 
+-Orthogonal segments are used to create segments that are perpendicular to each other.
+-
+-Set the segment as `OrthogonalSegment` to create the default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
+-{
+-	SourcePoint = new Point(100, 100),
+-       TargetPoint = new Point(200, 200),
+-	//Add the Orthoganal Segment to Segments
+-       Segments = new ObservableCollection<IConnectorSegment>()
+-	{
+-		new OrthogonalSegment()
+-		{
+-		}
+-	}
+-};
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
+-
+-![](Connector_images/Connector_img8.jpeg)
++Orthogonal segments are used to create segments that are perpendicular to each other. Set the segment as `OrthogonalSegment` to create the default orthogonal segment.
+ 
++{% tabs %}
+ {% highlight C# %}
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
+ {
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 200),
+-	//Add the Orthoganal Segment to Segments
+-	Segments = new ObservableCollection<IConnectorSegment>()
+-	{
+-		new OrthogonalSegment()
+-		{
+-			Length = 50,
+-			Direction = OrthogonalDirection.Bottom
+-		} 
+-	}
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(200, 200),
++    //Define the SegmentCollection
++    Segments = new ObservableCollection<IConnectorSegment>()
++    {
++        new OrthogonalSegment()
++        {
++         
++        }
++    }
+ };
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++//Adding Connector to CollectionS
++(diagram.Connectors as ConnectorCollection).Add(connector);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img9.jpeg)
+-
+-#### Avoid overlapping
+-
+-Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes. The following images illustrates how orthogonal segments are re-routed.
+-
+-![](Connector_images/Connector_img10.jpeg)
+-
+-![](Connector_images/Connector_img11.jpeg)
+-
+-N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
++![](Connector_images/Connector_img8.PNG)
+ 
+ ### CubicCurveSegment
+ 
+ Cubic curve segments are used to create curve segments and the curves are configurable with the control points.
+ 
++{% tabs %}
+ {% highlight C# %}
+ 
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
+-{
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 200),
+-	Segments = new ObservableCollection<CubicCurveSegment>()
+-	{
+-
+-		new CubicCurveSegment()
+-		{
+-		}
+-	}
+-};
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
+-
+-![](Connector_images/Connector_img12.jpeg)
+-
+-The `Point1` and `Point2` of cubic curve segment enable you to set the control points. The following code example 
+-
+-{% highlight C# %}
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
+ {
+-	SourcePoint = new Point(100, 200),
+-	TargetPoint = new Point(250, 200),
+-
+-	Segments = new ObservableCollection<CubicCurveSegment>()
+-	{
+-		new CubicCurveSegment()
+-		{
+-			Point1 = new Point(125,75),
+-			Point2 = new Point(225,75)
+-		},
+-	}
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(200, 200),
++    //Define the SegmentCollection
++    Segments = new ObservableCollection<IConnectorSegment>()
++    {
++        new CubicCurveSegment()
++        {
++         
++        }
++    }
+ };
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img13.jpeg)
+-
+-### Complex segments
++![](Connector_images/Connector_img12.PNG)
+ 
+-Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to ConnectorSegments collection. The following code example illustrates how to create a connector with multiple segments.
++#### Avoid overlapping
+ 
+-{% highlight C# %}
++Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes.
+ 
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
+-{
+-	SourcePoint = new Point(100, 200),
+-	TargetPoint = new Point(250, 300),
+-	Segments = new ObservableCollection<IConnectorSegment>()
+-	{
+-		//Segment of length 100px to the bottom
+-		new OrthogonalSegment()
+-		{
+-			Length = 150,
+-			Direction = OrthogonalDirection.Bottom
+-		},
+-		//Defines the segment of 150px length to the right
+-		new OrthogonalSegment()
+-		{
+-			Length = 150,
+-			Direction = OrthogonalDirection.Right
+-		}
+-	}
+-};
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++![](Connector_images/Connector_img10.PNG)
+ 
+-{% endhighlight %}
++![](Connector_images/Connector_img11.PNG)
+ 
+-![](Connector_images/Connector_img14.jpeg)
++N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
+ 
+ ## Decorator
+ 
+ Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector. 
+ 
+-The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
+-{
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 200),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	
+-	// Ellipse shape decorator
+-	SourceDecorator = new EllipseGeometry() { RadiusX = 10, RadiusY = 10 },
+-	SourceDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-
+-	// Arrow shape decorator
+-	TargetDecorator = new PathGeometry()
+-	{
+-		Figures = new PathFigureCollection()
+-		{
+-			new PathFigure()
+-			{
+-				StartPoint = new Point(0, 0),
+-				Segments = new PathSegmentCollection()
+-				{
+-					new PolyLineSegment()
+-					{
+-						Points = new PointCollection()
+-						{
+-							new Point(10, 5),
+-							new Point(0, 10),
+-							new Point(0,0)
+-						}
+-					}
+-				}
+-			}
+-		}
+-	},
+-   
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle"] as Style
+- };
+-
+- Connector connector1 = new Connector()
+- {
+- 	SourcePoint = new Point(300, 100),
+-	TargetPoint = new Point(400, 200),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-
+-	// Diamond shape decorator
+-	SourceDecorator = "M16,0L32,15.999985 16,32.000001 0,15.999985z",
+-	SourceDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-
+-	// Open arrow shape decorator
+-	TargetDecorator = "M2.7330054,0L16.31903,16.055999 1.6030035,31.999999 0,30.518999  
+-                          13.407025,15.994999 1.0660024,1.4089985z",
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle"] as Style
+- };
+-
+-Connector connector2 = new Connector()
+-{
+-	SourcePoint = new Point(500, 100),
+-	TargetPoint = new Point(600, 200),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-
+-	// arrow shape decorator
+-	TargetDecorator = "M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 
+-                          376.892,225.284 Z",
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle"] as Style
+-};
+-
+-lines.Add(connector);
+-lines.Add(connector1);
+-lines.Add(connector2);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
+-
+-![](Connector_images/Connector_img15.jpeg)
+-
+-## Padding
+-
+-Padding is used to leave space between the Connector’s end point and the object to where it is connected.
++The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the shape of the decorators.
+ 
+-The `SourcePadding` and `TargetPadding` properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector. The following code example illustrates how to leave space between the connection end points and source, target Nodes.
++For Sample, please refer to [Decorator](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/DecoratorConnector1321823789 "Decorator")
+ 
+-{% highlight C# %}
++![](Connector_images/Connector_img15.PNG)
+ 
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-ConnectorViewModel connector = new ConnectorViewModel()
+-{
+-	SourceNode = node,
+-	TargetNode = node1,
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(250, 150),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	//Space between source point and source object
+-	SourcePadding = 5,
+-	//Space between target point and target object
+-	TargetPadding = 10
+-};
+-            
+-lines.Add(connector);
+-diagram.Connectors = lines;
+-
+-{% endhighlight %}
+-
+-![](Connector_images/Connector_img16.jpeg)
+-
+-The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges. The following code example illustrates how to leave the space between a Node and its connections.
++## Corner radius
+ 
+-[XAML]
++Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with `CornerRadius` property.
+ 
++{% tabs %}
+ {% highlight xaml %}
+ 
+-<DataTemplate x:Key="viewtemplate">
+-  <TextBlock Text="{Binding Path=Content}" Foreground="White"/>
+-</DataTemplate>
++<!--Initialize the Sfdiagram-->
++<syncfusion:SfDiagram x:Name="diagram">
++  <syncfusion:SfDiagram.Connectors>
++    <syncfusion:ConnectorCollection>
++      <!--Initialize the Connector-->
++      <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200" CornerRadius="10">
++      </syncfusion:ConnectorViewModel>
++    </syncfusion:ConnectorCollection>
++  </syncfusion:SfDiagram.Connectors>
++</syncfusion:SfDiagram>
+ 
+ {% endhighlight %}
+ 
+-[C#]
+-
+ {% highlight C# %}
+ 
+-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
+-
+-Node node = new Node()
+-{
+-	ConnectorPadding = 5,
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 200,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 1",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-Node node1 = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 400,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 2",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-nodes.Add(node);
+-nodes.Add(node1);
+-diagram.Nodes = nodes;
+-
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-
+-ConnectorViewModel connector = new ConnectorViewModel()
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector1 = new ConnectorViewModel()
+ {
+-	SourceNode = node,
+-	TargetNode = node1,
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
++    //Define the CornerRadius
++    CornerRadius = 10,
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(200, 200),
+ };
+-
+-lines.Add(connector);
+-diagram.Connectors = lines;
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector1);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img17.jpeg)
+-
+-The `ConnectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports its connections.
++![](Connector_images/Connector_img21.PNG)
+ 
+-{% highlight C# %}
++## Padding
+ 
+-NodePort port = new NodePort()
+-{
+-	ConnectorPadding = 10,
+-	Width = 10,
+-	Height = 10,
+-	NodeOffsetX = 0,
+-	NodeOffsetY = 0.5,
+-	UnitMode = UnitMode.Fraction,
+-	PortVisibility = PortVisibility.Visible,
+-	Constraints = PortConstraints.Default & ~PortConstraints.InheritPortVisibility,
+-	Shape = new EllipseGeometry() { RadiusX = 10, RadiusY = 10 },
+-	ShapeStyle = this.diagram.Resources["portshapestyle"] as Style
+-};
++Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `SourcePadding` and `TargetPadding` properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector.
+ 
+-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
++{% tabs %}
++{% highlight C# %}
+ 
+-Node node = new Node()
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector1 = new ConnectorViewModel()
+ {
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 200,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 1",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
++    SourceNode=node1,
++    TargetNode=node2,
++    //Space between SourceNode and SourceObject
++    SourcePadding=5,
++    //Space between TargetNode and TargetObject
++    TargetPadding = 5,
++    ConnectorGeometryStyle = this.Resources["ConnectorStyle"] as Style,
+ };
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector1);
+ 
+-Node node1 = new Node()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 400,
+-	OffsetY = 200,
+-	Ports = new ObservableCollection<INodePort>()
+-	{
+-		port
+-	},
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 2",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
++{% endhighlight %}
++{%%}
+ 
+-nodes.Add(node);
+-nodes.Add(node1);
+-diagram.Nodes = nodes;
++![](Connector_images/Connector_img16.PNG)
+ 
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
++## Bridging
+ 
+-ConnectorViewModel connector = new ConnectorViewModel()
+-{
+-	TargetPort = port,
+-	SourceNode = node,
+-	TargetNode = node1,
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-};
++Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`.
++The Direction of Bridge can be customized with property `BridgeDirection`.
+ 
+-lines.Add(connector);
+-diagram.Connectors = lines;
++{% tabs %}
++{% highlight xaml %}
++<Grid>
++  <!--Initialize the SfDiagram with Constraints and BridgeDirection-->
++  <syncfusion:SfDiagram x:Name="diagram" BridgeDirection="Bottom" Constraints="Bridging">
++    <syncfusion:SfDiagram.Connectors>
++      <!--Initialize the ConnectorCollection-->
++      <syncfusion:ConnectorCollection>
++        <!--Initialize the Connector-->
++        <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,300">
++        </syncfusion:ConnectorViewModel>
++        <syncfusion:ConnectorViewModel SourcePoint="250,50" TargetPoint="150,300">
++        </syncfusion:ConnectorViewModel>
++      </syncfusion:ConnectorCollection>
++    </syncfusion:SfDiagram.Connectors>
++  </syncfusion:SfDiagram>
++</Grid>
+ 
+ {% endhighlight %}
+ 
+-![](Connector_images/Connector_img18.jpeg)
+-
+-## Bridging
+-
+-Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`. The following code example illustrates how to enable line bridging.
+-
+ {% highlight C# %}
+ 
+-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
+-
++//Define the BridgeDirection
++diagram.BridgeDirection = BridgeDirection.Bottom;
++//Define Constraints
++diagram.Constraints = diagram.Constraints | GraphConstraints.Bridging;
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
+ ConnectorViewModel connector = new ConnectorViewModel()
+ {
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(250, 300),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-	Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.InheritBridging | 
+-                     ConnectorConstraints.Bridging
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(250, 300)
+ };
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
+ ConnectorViewModel connector1 = new ConnectorViewModel()
+ {
+-	SourcePoint = new Point(250, 50),
+-	TargetPoint = new Point(150, 300),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+-	Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.InheritBridging | 
+-                     ConnectorConstraints.Bridging
++    SourcePoint = new Point(250, 50),
++    TargetPoint = new Point(150, 300),
+ };
+-
+-diagram.BridgeDirection = BridgeDirection.Bottom;
+-diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
+-
+-lines.Add(connector);
+-lines.Add(connector1);
+-diagram.Connectors = lines;
++(diagram.Connectors as ConnectorCollection).Add(connector1);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img19.jpeg)
++![](Connector_images/Connector_img20.PNG)
+ 
+-![](Connector_images/Connector_img20.jpeg)
++N> Bezier segments do not support Bridging.
+ 
+-The direction of the bridge can be customized with the property `BridgeDirection` defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
++## Appearance
+ 
+-The following code example illustrates how to draw the bridge at the bottom direction.
++StrokeThickness, Stroke and style of the Connector and Decorators can be customized with a set of defined properties.
+ 
++{% tabs %}
+ {% highlight xaml %}
+ 
+-<diagram:SfDiagram x:Name="diagram" BridgeDirection="Bottom">
+-<diagram:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,150" 
+-                            Constraints="Bridging">
+-{% endhighlight %}
+-
+-{% highlight C# %}
+-
+-diagram.BridgeDirection = BridgeDirection.Bottom;
+-diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
++<!--Style for ConnectorGeometryStyle-->
++<Style TargetType="Path" x:Key="ConnectorStyle">
++  <Setter Property="Stroke" Value="#FF5B9BD5"/>
++  <Setter Property="StrokeThickness" Value="2"/>
++  <Setter Property="StrokeDashArray" Value="2"/>
++  <Setter Property="Opacity" Value="0.8"/>
++</Style>
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-N> Bezier segments do not support Bridging.
+-
+-## Corner radius
+-
+-Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with `CornerRadius` property.
+-
+-{% highlight C# %}
+-
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-
+-NodeViewModel node1 = new NodeViewModel()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 200,
+-	OffsetY = 200,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 1",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-		}
+-	},
+-	ContentTemplate = this.diagram.Resources["contenttemplate"] as DataTemplate,
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-NodeViewModel node2 = new NodeViewModel()
+-{
+-	UnitWidth = 100,
+-	UnitHeight = 60,
+-	OffsetX = 350,
+-	OffsetY = 300,
+-	Annotations = new ObservableCollection<IAnnotation>()
+-	{
+-		new AnnotationEditorViewModel()
+-		{
+-			Content="Task 1",
+-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
+-    		}
+-	},
+-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+-};
+-
+-nodes.Add(node1);
+-nodes.Add(node2);
+-diagram.Nodes = nodes;
++{% tabs %}
++{% highight c# %}
+ 
+-ObservableCollection<Connector> connectors = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector1 = new ConnectorViewModel()
+ {
+-	SourceNode = node1,
+-	TargetNode = node2,
+-	CornerRadius = 10,
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
++    SourcePoint = new Point(100, 100),
++    TargetPoint = new Point(200, 200),
++    ConnectorGeometryStyle=this.Resources["ConnectorStyle"] as Style,
+ };
+-
+-connectors.Add(connector);
+-diagram.Connectors = connectors;
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector1);
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Connector_images/Connector_img21.jpeg)
+-
+-## Appearance
+-
+-StrokeThickness, Stroke and style of the LineConnector and Decorators can be customized with a set of defined properties.
+-
+-### Segment Appearance
+-
+-The following code example illustrates how to customize the segment appearance.
++![](Connector_images/Connector_img22.PNG)
+ 
+-{% highlight xaml %}
++## Interaction
+ 
+-<Style TargetType="Path" x:Key="connectorstyle">
+-  <Setter Property="Stroke" Value="Green"></Setter>
+-  <Setter Property="StrokeThickness" Value="2"/>
+-  <Setter Property="StrokeDashArray" Value="2"/>
+-  <Setter Property="Opacity" Value="0.8"/>
+-</Style>
+-{% endhighlight %}
++### Connection Editing
+ 
+-{% highlight C# %}
++* Each segment and end points of a selected Connector is editable with some specific handles/thumbs.
+ 
+-ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+-Connector connector = new Connector()
+-{
+-	SourcePoint = new Point(100, 100),
+-	TargetPoint = new Point(200, 200),
+-	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+-};
++### End point handles
+ 
+-lines.Add(connector);
+-diagram.Connectors = lines;
++Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
+ 
+-{% endhighlight %}
++![](Interaction_images/Interaction_img9.jpeg)
+ 
+-### Decorator Appearance
++* If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
+ 
+-The following code example illustrates how to customize the appearance of the decorator.
++* If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
+ 
+-[XAML]
++* If any changes made in the segment of the connector,`ConnectorEditingEvent` will notify the DragState, Item and Thumbtype.To explore about arguments, please refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html) .
+ 
+-{% highlight xaml %}
++### Straight segment editing
+ 
+-<Style x:Key="decoratorstyle1" TargetType="Path">
+-  <Setter Property="Fill" Value="Red" />
+-  <Setter Property="Stroke" Value="Green" />
+-  <Setter Property="StrokeThickness" Value="2" />
+-  <Setter Property="Width" Value="10" />
+-  <Setter Property="Height" Value="10" />
+-  <Setter Property="Stretch" Value="Fill" />
+-</Style>
++* End point of each straight segment is represented by a thumb that enables to edit the segment.
++* Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
++* Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
+ 
+-{% endhighlight %}
++### Orthogonal thumbs
+ 
+-[C#]
++* Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
+ 
+-{% highlight C# %}
++![](Interaction_images/Interaction_img10.jpeg)
+ 
+-TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
++* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
+ 
+-{% endhighlight %}
++![](Interaction_images/Interaction_img11.jpeg)
+ 
+-![](Connector_images/Connector_img22.jpeg)
++### Bezier thumbs
+ 
+-## Interaction
++* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
+ 
+-Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/wpf/sfdiagram/Interaction#connection-editing "Connection Editing").
++![](Connector_images/r.gif)
+ 
+ ## Hit Padding
+ 
+ Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area.
+ 
+-The following code illustrates how to customize the HitPadding 
+-
+ {% tabs %}
+ {% highlight xaml %}
+ 
+diff --git a/wpf/SfDiagram/Node.md b/wpf/SfDiagram/Node.md
+index 7ef0958..b5284a1 100644
+--- a/wpf/SfDiagram/Node.md
++++ b/wpf/SfDiagram/Node.md
+@@ -15,7 +15,7 @@ Nodes are graphical objects used to visually represent the geometrical informati
+ 
+ ## Shapes
+ 
+-We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to  [Shapes](/wpf/sfdiagram/Shapes). 
++We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to [Shapes](/wpf/sfdiagram/Shapes). 
+ 
+ ## Create Node
+ 
+@@ -56,53 +56,122 @@ The following table illustrates how pivot relates Offset values with Node bounda
+ {% highlight xaml %}
+ <!--Style for Node-->
+ <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+-    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
+-    <Setter Property="ShapeStyle">
+-        <Setter.Value>
+-            <Style TargetType="Path">
+-                <Setter Property="Fill" Value="DarkCyan"/>
+-                <Setter Property="Stroke" Value="Black"/>
+-                <Setter Property="StrokeThickness" Value="2"/>
+-                <Setter Property="Stretch" Value="Fill"/>
+-            </Style>
+-        </Setter.Value>
+-    </Setter>
++  <Setter Property="ShapeStyle">
++    <Setter.Value>
++      <Style TargetType="Path">
++        <Setter Property="Fill" Value="#FF5B9BD5"/>
++        <Setter Property="Stretch" Value="Fill"/>
++        <Setter Property="Stroke" Value="#FFEDF1F6 "/>
++      </Style>
++    </Setter.Value>
++  </Setter>
+ </Style>
++
+ {% endhighlight %}
++{% endtabs %}
++
++{% tabs %}
+ {% highlight xaml %}
+-<!--Initialize SfDiagram-->
+-<syncfusion:SfDiagram  x:Name="diagram">
+-    <!--Initialize NodeCollection-->
+-    <syncfusion:SfDiagram.Nodes>
+-        <syncfusion:NodeCollection>
+-            <!--Initialize Node-->
+-            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
+-                                      Pivot="0,0">
+-            </syncfusion:NodeViewModel>
+-        </syncfusion:NodeCollection>
+-    </syncfusion:SfDiagram.Nodes>
++
++<!--Initialize the Sfdiagram-->
++<syncfusion:SfDiagram x:Name="diagram">
++  <syncfusion:SfDiagram.Nodes>
++    <!--Initialize the NOdeCollection-->
++    <syncfusion:NodeCollection>
++      <!--Initialize the Node-->
++      <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Pivot="0,0" Shape="{StaticResource Rectangle}">
++      </syncfusion:NodeViewModel>
++    </syncfusion:NodeCollection>
++  </syncfusion:SfDiagram.Nodes>
+ </syncfusion:SfDiagram>
++
+ {% endhighlight %}
++
+ {% highlight C# %}
+-//Creates the Node collection
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-//Create Node
++//Define the NodeCollection
++diagram.Nodes = new NodeCollection();
++//Define the Node
+ NodeViewModel node = new NodeViewModel()
+ {
+-    //Sets the size
+-	UnitWidth = 100,UnitHeight = 100,   
+-    //Sets the position
+-	OffsetX = 200,OffsetY = 200,
+-    //Sets pivot point
+-	Pivot = new Point(0, 0)
++    //sets the size
++    UnitHeight = 100,
++    UnitWidth = 100,
++    //sets the position
++    OffsetX = 100,
++    OffsetY = 100,
++    //sets the Pivot point
++    Pivot=new Point(0,0),
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+ };
+-//Adds the Node to the SfDiagram 
+-nodes.Add(node);
+-diagram.Nodes = nodes;
++//Adding Node to Collection
++(diagram.Nodes as NodeCollection).Add(node);
++
+ {% endhighlight %}
+ {% endtabs %}
+ 
+-![](Node_images/Node_img3.jpeg)
++![](Node_images/Node_img3.PNG)
++
++## Padding
++
++Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges.
++
++{% tabs %}
++{% highlight c# %}
++
++//Define the NodeCollection
++diagram.Nodes = new NodeCollection();
++//Define the Node
++NodeViewModel node = new NodeViewModel()
++{
++    //Space between the Connector and the Node
++    ConnectorPadding = 5,
++    UnitWidth = 100,
++    UnitHeight = 60,
++    OffsetX = 200,
++    OffsetY = 200,
++    Annotations = new AnnotationCollection()
++    {
++        new AnnotationEditorViewModel()
++        {
++            Content="Node 1",
++        }
++    },
++   Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++};
++
++NodeViewModel node1 = new NodeViewModel()
++{
++    UnitWidth = 100,
++    UnitHeight = 60,
++    OffsetX = 400,
++    OffsetY = 200,
++    Annotations = new AnnotationCollection()
++    {
++        new AnnotationEditorViewModel()
++        {
++            Content="Node 2",
++        }
++    },
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++};
++//Adding node to Collection
++(diagram.Nodes as NodeCollection).Add(node);
++(diagram.Nodes as NodeCollection).Add(node1);
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
++{
++    SourceNode = node,
++    TargetNode = node1,
++};
++//Adding Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
++
++{% endhighlight %}
++{% endtabs %}
++
++![](Node_images/Node_img6.PNG)
+ 
+ ## Appearance
+ 
+@@ -110,26 +179,26 @@ You can customize the appearance of a Node by changing its ShapeStyle. The follo
+ 
+ {% tabs %}
+ {% highlight xaml %}
+-<Style TargetType="Path" x:Key="shapestyle">
+-  <Setter Property="Fill" Value="DarkCyan"></Setter>
+-  <Setter Property="Stroke" Value="Black"/>
++<Style TargetType="Path" x:key="shapestyle">
++  <Setter Property="Fill" Value="#FF41719C"/>
++  <Setter Property="Stretch" Value="Fill"/>
++  <Setter Property="Stroke" Value="#FFEDF1F6"/>
+   <Setter Property="StrokeDashArray" Value="4,5"></Setter>
+   <Setter Property="StrokeThickness" Value="2"></Setter>
+-  <Setter Property="Stretch" Value="Fill"></Setter>   
+ </Style>
+ {% endhighlight %}
+ {% highlight C# %}
+ Style style = new Style(typeof(Path));
+-style.Setters.Add(new Setter(Path.FillProperty, Brushes.DarkCyan));
+-style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.Black));
++style.Setters.Add(new Setter(Path.FillProperty, Brushes.SteelBlue));
++style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.WhiteSmoke));
+ style.Setters.Add(new Setter(Path.StrokeThicknessProperty, 2d));
+-style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));            
++style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));
+ style.Setters.Add(new Setter(Path.StretchProperty, Stretch.Fill));
+ return style;
+ {% endhighlight %}
+ {% endtabs %}
+ 
+-![](Node_images/Node_img4.jpeg)
++![](Node_images/Node_img4.PNG)
+ 
+ ## Data Binding
+ 
+@@ -138,45 +207,45 @@ In order to achieve Properties of ViewModel are bind to View, we have provided t
+ N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
+ 
+ ## Interaction
++## Interaction
+ 
+-Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to [Interaction](/wpf/sfdiagram/Interaction "Interaction").
++Diagram provides support to drag, resize, or rotate the Node interactively. 
+ 
+-## Hit Padding
++## Select
++Node can be selected by clicking on it.
+ 
+-Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area.
++![](Node_images/Node_img6.jpg)
+ 
+-The following code illustrates how to customize the HitPadding 
++To explore about selection and selection related events , refer to [Selection](/wpf/sfdiagram/interaction#selection) .
+ 
+-{% tabs %}
+-{% highlight xaml %}
++## Drag
+ 
+-<syncfusion:NodeViewModel x:Name="ViewModel"  UnitWidth="100" HitPadding="25"
+-                                              UnitHeight="100" OffsetX="200" OffsetY="300">
+-</syncfusion:NodeViewModel>
++* Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
++* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
+ 
+-{% endhighlight %}
+-{% highlight C# %}
+-//Creates the Node collection
+-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+-//Create Node
+-NodeViewModel node = new NodeViewModel()
+-{
+-    //Sets the size
+-	UnitWidth = 100,UnitHeight = 100,   
+-    //Sets the position
+-	OffsetX = 200,OffsetY = 300,
+-    //Sets pivot point
+-	Pivot = new Point(0, 0),
+-    //defines the vicinity area of the Node
+-    HitPadding = 25
+-};
+-//Adds the Node to the SfDiagram 
+-nodes.Add(node);
+-diagram.Nodes = nodes;
+-{% endhighlight %}
+-{% endtabs %}
++* `NodeChangedEvent` will notify the OffsetX and OffsetY changes with their old and new values.Along with that, this event will give information about interaction state. To explore about aruguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
++
++![](Node_images/Drag.gif)
++
++## Resize
++
++* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
++* When one corner of the selector is dragged, opposite corner is in a static position.
++* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
++
++* `NodeChangedEvent` will notify the Height and Width changes with their old and new values.Along with that, this event will give information about  interaction state. To explore about arguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
++
++![](Node_images/Resize.gif)
++
++## Rotate
++
++* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
++* The Node is rotated with reference to the static pivot point.
++* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position").
++
++* `NodeChangedEvent` will notify the Rotate Angle changes with their old and new values.Along with that, this event will give information about iteraction State. To explore about arguments, please refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+ 
+-![](Node_images/Node_img5.jpg)
++![](Node_images/Rotate.gif)
+ 
+ ## Constraints
+ 
+diff --git a/wpf/SfDiagram/Port.md b/wpf/SfDiagram/Port.md
+index a1e298f..25c411d 100644
+--- a/wpf/SfDiagram/Port.md
++++ b/wpf/SfDiagram/Port.md
+@@ -27,7 +27,7 @@ In order to achieve Properties of ViewModel are bind to View, we have provided t
+ 
+ ## Node Port
+ 
+-To Specify and make connection with Node at Precise Point. 
++To specify and make connection with Node at precise Point. 
+ 
+ ### Define Node Port
+ 
+@@ -117,15 +117,15 @@ NodeViewModel node = new NodeViewModel()
+ 
+ {% endhighlight %}			
+ {% endtabs %}
+-![](Port_images/Port_img6.jpeg)
++![](Port_images/Port_img6.PNG)
+ 
+->N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
++>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , refer to the PortVisibility 
+ 
+ ## Connector Port
+- To Specify and make connection with Connector at Precise Length.
++ To specify and make connection with Connector at precise Length.
+   
+ ### Define Connector Port  
+-`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance,visibility and interaction with this.
++`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance, visibility and interaction with this.
+ 
+ Please find the common style for Connector and ConnectorPort.
+ 
+@@ -189,8 +189,6 @@ Please find the common style for Connector and ConnectorPort.
+ 
+ {% endhighlight %}
+ 
+-
+-
+ {% highlight C# %}
+ //Define Connector Property
+ diagram.Connectors = new ConnectorCollection();
+@@ -214,9 +212,9 @@ ConnectorViewModel connector = new ConnectorViewModel()
+ {% endhighlight %}
+ {% endtabs %}			
+ 
+-![](Port_images/Port_img7.jpeg)
++![](Port_images/Port_img7.PNG)
+ 
+->N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
++>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , refer to the PortVisibility 
+ 
+ ## Dock Port
+ 
+@@ -405,7 +403,7 @@ return node;
+ {% endhighlight %}
+ {% endtabs %}
+ 
+-![](Port_images/Port_img13.jpeg)
++![](Port_images/Port_img13.PNG)
+ 
+ ### Connector to Connector Routing
+ 
+@@ -533,10 +531,84 @@ ConnectorViewModel con2 = new ConnectorViewModel()
+ {% endhighlight %}
+ {% endtabs %}
+ 
+-![](Port_images/Port_img14.jpeg)
++![](Port_images/Port_img14.PNG)
+ 
+ DockPort does not allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
+ 
++## Padding
++Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges.
++
++{% tabs %}
++{% highlight c# %}
++
++//Define the NodePort
++NodePortViewModel port = new NodePortViewModel()
++{
++    //Declaring the ConnectorPadding value
++    ConnectorPadding = 10,
++    NodeOffsetX = 0,
++    NodeOffsetY = 0.5,
++};
++//Define the NodeCollection
++diagram.Nodes = new NodeCollection();
++//Define the Node
++NodeViewModel node = new NodeViewModel()
++{
++    UnitWidth = 100,
++    UnitHeight = 60,
++    OffsetX = 200,
++    OffsetY = 200,
++    //Define the AnnotationCollection
++    Annotations = new AnnotationCollection()
++    {
++        //Define the Annotation
++        new AnnotationEditorViewModel()
++        {
++            Content="Node 1",
++        }
++    },
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++};
++
++NodeViewModel node1 = new NodeViewModel()
++{
++    UnitWidth = 100,
++    UnitHeight = 60,
++    OffsetX = 400,
++    OffsetY = 200,
++    //Define the PortCollection
++    Ports = new PortCollection()
++    {
++        port
++    },
++    Annotations = new AnnotationCollection()
++    {
++        new AnnotationEditorViewModel()
++        {
++            Content="Node 2",
++        }
++    },
++    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
++};
++(diagram.Nodes as NodeCollection).Add(node);
++(diagram.Nodes as NodeCollection).Add(node1);
++//Define the ConnectorCollection
++diagram.Connectors = new ConnectorCollection();
++//Define the Connector
++ConnectorViewModel connector = new ConnectorViewModel()
++{
++    TargetPort = port,
++    SourceNode = node,
++    TargetNode = node1,
++};
++//Adding the Connector to Collection
++(diagram.Connectors as ConnectorCollection).Add(connector);
++
++{% endhighlight %}
++{% endtabs %}
++
++![](Port_images/Port_img15.PNG)
++
+ ## Appearance
+ 
+ You can change the shape of port by using its shape property. The appearance of ports can be customized with a set of style specific properties.
+diff --git a/wpf/SfDiagram/Stencil.md b/wpf/SfDiagram/Stencil.md
+index b325227..9f6c88b 100644
+--- a/wpf/SfDiagram/Stencil.md
++++ b/wpf/SfDiagram/Stencil.md
+@@ -11,7 +11,7 @@ documentation: ug
+ 
+ Stencil has a collection of Symbols and it is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram.
+ 
+-[Namespace for Stencil]
++Namespace for Stencil
+ 
+ {% highlight xaml %}
+ 
+@@ -19,23 +19,18 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
+ 
+ {% endhighlight %}
+ 
+-![](Stencil_images/Stencil_img1.jpeg)
++![](Stencil_images/Stencil_img1.PNG)
+ 
+ ## Symbol
+ 
+-Symbol is used to visualize the elements in Stencil, explained in following ways
++Symbol is used to visualize the elements in Stencil using following ways:
+  
+- * 1.ISymbol
+- * 2.Using DiagramElements
++ * ISymbol
++ * Using DiagramElements
+ 
+ ### Using ISymbol
+ 
+-ISymbol have 'Symbol' and 'SymbolTemplate' to visualize Symbol.
+-
+-{% highlight xaml %}
+- <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
+- 
+- {% endhighlight %}
++ISymbol have `Symbol` and `SymbolTemplate` to visualize the Symbol.
+ 
+ {% highlight C# %}
+ public class SymbolItem : ISymbol
+@@ -62,41 +57,32 @@ public class SymbolItem : ISymbol
+ }
+ 
+ {% endhighlight %}
+- 
+-#### Define SymbolSource
+ 
+-This is the Collection of objects (i.e,Symbol,Node,Connector etc..). Based on the SymbolSource, the Stencil will populate the Symbols.
++{% tabs %}
+ 
+ {% highlight xaml %}
+-<Window.Resources>
+- <!--Define SymbolTemplate-->
+- <DataTemplate x:Key="Diamond">
++<DataTemplate x:Key="Diamond">
+   <Path Stretch="Fill" Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z" Fill="White"
+ Stroke="Black" StrokeThickness="1" />
+- </DataTemplate>
+-</Window.Resources>
+-<Grid >
+- <!--Define the Stencil Element-->
+- <stencil:Stencil x:Name="stencil" BorderBrush="#dfdfdf" Grid.Column="0" BorderThickness="1" >
+-  <!--Initialize the SymbolSource-->
+-  **<stencil:Stencil.SymbolSource>**
+-    <!--Define the SymbolCollection-->
+-   <local:SymbolCollection>
+-    <!--Symbol with SymbolTemplate-->
+-    <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
+-   </local:SymbolCollection>
+-  **</stencil:Stencil.SymbolSource>**
+-   <!--Define the SymbolGroups-->
+-   <stencil:Stencil.SymbolGroups>
+-    <stencil:SymbolGroups>
+-     <stencil:SymbolGroupProvider MappingName="GroupName"></stencil:SymbolGroupProvider>
+-     </stencil:SymbolGroups>
+-    </stencil:Stencil.SymbolGroups>
+- </stencil:Stencil>
+-</Grid>
++</DataTemplate>
+ 
+-{% endhighlight %}
++ <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
++ 
++ {% endhighlight %}
++ 
++ {% highlight c# %}
++ 
++//Initialize the SymbolItem
++SymbolItem symbol = new SymbolItem();
++
++ {% endhighlight %}
++ {% endtabs %}
++ 
++#### Define SymbolSource
+ 
++`SymbolSource` is the property of Stencil which is Collection of objects (i.e,Symbol,Node,Connector etc..). Based on the SymbolSource, the Stencil will populate the Symbols.
++
++{% tabs %}
+ {% highlight c# %}
+ //Adding ISymbol to SymbolCollection
+ public class SymbolCollection : ObservableCollection<ISymbol>
+@@ -104,84 +90,128 @@ public class SymbolCollection : ObservableCollection<ISymbol>
+ }
+ 
+ {% endhighlight %}
++{% endtabs %}
++
++{% tabs %}
++{% highlight xaml %}
++<Window.Resources>
++    <DataTemplate x:Key="Diamond">
++        <Path Stretch="Fill" Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z" Fill="White"
++Stroke="Black" StrokeThickness="1" />
++    </DataTemplate>
++</Window.Resources>
++<Grid >
++    <!--Define the Stencil Element-->
++    <stencil:Stencil x:Name="stencil" BorderBrush="#dfdfdf" BorderThickness="1" >
++        <!--Initialize the SymbolSource-->
++        <stencil:Stencil.SymbolSource>
++            <!--Define the SymbolCollection-->
++            <local:SymbolCollection>
++                <!--Symbol with SymbolTemplate-->
++                <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond"  SymbolTemplate="{StaticResource Diamond}"/>
++            </local:SymbolCollection>
++        </stencil:Stencil.SymbolSource>
++        <!--Define the SymbolGroups-->
++        <stencil:Stencil.SymbolGroups>
++            <stencil:SymbolGroups>
++                <stencil:SymbolGroupProvider MappingName="GroupName">
++                </stencil:SymbolGroupProvider>
++            </stencil:SymbolGroups>
++        </stencil:Stencil.SymbolGroups>
++    </stencil:Stencil>
++</Grid>
++
++{% endhighlight %}
++{% endtabs %}
+ 
+-![](Stencil_images/Stencil_img2.jpeg)
++
++![](Stencil_images/Stencil_img2.PNG)
+ 
+ ### Using DiagramElements
+ 
+-DiagramElements such as Node, Connector and Group can be host as Symbol.
+-  
++DiagramElements such as Node, Connector and Group can be used to visualize the Symbol.
++ 
++ {% tabs %} 
+ {% highlight xaml %}
+ <Grid>
+-<stencil:Stencil Grid.Column="0" BorderThickness="1" BorderBrush="#dfdfdf" x:Name="stencil">
+- <!--Initialize the SymbolSource-->
+- <stencil:Stencil.SymbolSource>
+-  <!--Initialize the SymbolCollection-->
+-  <local:SymbolCollection>
+-   <!--Define the DiagramElement-Node-->
+-   <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Diamond}" Key="Nodes">
+-   </syncfusion:NodeViewModel>
+-  </local:SymbolCollection>
+- </stencil:Stencil.SymbolSource>
+- <!--Initialize the SymbolGroup-->
+- <stencil:Stencil.SymbolGroups>
+-  <stencil:SymbolGroups>
+-  <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
+-  </stencil:SymbolGroups>
+- </stencil:Stencil.SymbolGroups>
+-</stencil:Stencil>
++    <!--Define the Stencil-->
++    <stencil:Stencil Grid.Column="0" BorderThickness="1" BorderBrush="#dfdfdf" x:Name="stencil">
++        <!--Initialize the SymbolSource-->
++        <stencil:Stencil.SymbolSource>
++            <!--Initialize the SymbolCollection-->
++     <local:SymbolCollection>
++                <!--Define the DiagramElement-Node-->
++                <syncfusion:NodeViewModel x:Name="node" UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}" Key="Nodes">
++                </syncfusion:NodeViewModel>
++            </local:SymbolCollection>
++        </stencil:Stencil.SymbolSource>
++        <!--Initialize the SymbolGroup-->
++        <stencil:Stencil.SymbolGroups>
++            <stencil:SymbolGroups>
++                <!--Map Symbols Using MappingName-->
++                <stencil:SymbolGroupProvider MappingName="Key">
++                </stencil:SymbolGroupProvider>
++            </stencil:SymbolGroups>
++        </stencil:Stencil.SymbolGroups>
++    </stencil:Stencil>
+ </Grid>
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Stencil_images/Stencil_img17.jpeg)
++![](Stencil_images/Stencil_img17.PNG)
+ 
+ ## Symbol Groups
+ 
+-The SymbolGroupProvider groups the symbols into SymbolGroup based on the MappingName property.
++The `SymbolGroupProvider` groups the symbols into SymbolGroup based on the MappingName property.
+ 
++{% tabs %}
+ {% highlight xaml %}
+ 
+ <stencil:Stencil x:Name="stencil" ExpandMode="All" 
+ 		         SymbolSource="{StaticResource Collection}">
+-	<!--Initialize the SymbolGroup-->
+-<stencil:Stencil.SymbolGroups>
+- <stencil:SymbolGroups>
+-  <!--Map Symbols Using MappingName-->
+-  <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
+- </stencil:SymbolGroups>
+-</stencil:Stencil.SymbolGroups>
++    <!--Initialize the SymbolGroup-->
++    <stencil:Stencil.SymbolGroups>
++        <stencil:SymbolGroups>
++            <!--Map Symbols Using MappingName-->
++            <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
++        </stencil:SymbolGroups>
++    </stencil:Stencil.SymbolGroups>
++</stencil:Stencil>
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-![](Stencil_images/Stencil_img3.jpeg)
++![](Stencil_images/Stencil_img3.PNG)
+ 
+ ## Symbol Filters
+ 
+ `SymbolFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
+ 
++{% tabs %}
+ {% highlight C# %}
+ // Define filtering of Symbols
+ private bool Filter(SymbolFilterProvider sender, object symbol)
+-{
+- if (symbol is NodeViewModel)
+-  {
+-   if (sender.Content.ToString() == (symbol as NodeViewModel).Key.ToString())
+-   return true;
+-  }
+-}
++     {
++          if (symbol is NodeViewModel)
++              {
++                  if (sender.Content.ToString() == (symbol as NodeViewModel).Key.ToString())
++                  return true;
++              }
++     }
+ 
+ {% endhighlight %}
++{% endtabs %}
+ 
+-for Sample, refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter")
++for Sample, refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter").
+ 
+-![](Stencil_images/Stencil_img12.jpeg)
++![](Stencil_images/Stencil_img12.PNG)
+ 
+ ### SelectedFilter
+ 
+ There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
+ 
+-![](Stencil_images/Stencil_img13.jpeg)
++![](Stencil_images/Stencil_img13.PNG)
+ 
+ ## Preview for Drag and Drop
+ 
+@@ -201,47 +231,46 @@ Here, Stencil is an instance of Stencil.
+ 
+ #### Preview of the dragging Symbol
+ 
+-![](Stencil_images/Stencil_img14.jpeg)
+-
+-#### Dragged Symbol
+-
+-![](Stencil_images/Stencil_img15.jpeg)
++![](Stencil_images/Stencil_img14.PNG)
+ 
+ #### Customization of Preview for Drag and Drop
+ 
+ You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
+ 
++{% tabs %}
+ {% highlight C# %}
+ public class CustomStencil : Stencil
+-{
+- //Virtual method to customize the preview of dragging the symbol from Stencil.
+- protected override void PrepareDragDropPreview()
+- {
+-  this.SymbolPreview = new ContentPresenter()
+-  {
+-   Content = new Rectangle()
+-   {
+-    Width = 50,
+-    Height = 50,
+-    Fill = new SolidColorBrush(Colors.SteelBlue)
+-   }
+-  };
+- }
+-}
++    {
++        //Virtual method to customize the preview of dragging the symbol from Stencil.
++        protected override void PrepareDragDropPreview()
++        {
++            this.SymbolPreview = new ContentPresenter()
++            {
++                Content = new Rectangle()
++                {
++                    Width = 50,
++                    Height = 50,
++                    Fill = new SolidColorBrush(Colors.SteelBlue)
++                }
++            };
++        }
++    }
++
+ {% endhighlight %}
++{% endtabs %}
+ 
+ ![](Stencil_images/Stencil_img16.jpeg)
+ 
+ ## Events
+ 
+-Expand Event and Collapse Event are notified to provide interaction in SymbolGroup.
+-
+-Following table describes stencil related events.
++Expand Event and Collapse Event are notified to provide interaction in SymbolGroup. DragEnter Event, DragLeave Event and DragOver Event, ItemDrop Event are notified to provide interaction in diagram.
+ 
+-| Event | Description | Arguments |
+-|---|---|---|
+-| ExpandEvent | Occurs when expand the symbol group in the Stencil. | On which the Expand Event is raised. | 
+-| CollpaseEvent | Occurs when collapse the symbol group in the Stencil. | On which the Collapse Event is raised. |
++* Expanded - for Arguments please refer to, [Expanded](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Expanded_EV.html "Expanded").
++* Collapsed - for Arguments Please refer to, [Collapsed](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Collapsed_EV.html "Collapsed").
++* DragEnter - for Arguments please refer to, [DragEnter](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragEnter_EV.html "DragEnter").
++* DragOver - for Arguments please refer to, [DragOver](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragOver_EV.html "DragOver").
++* DragLeave - for Arguments please refer to, [DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragLeave_EV.html "DragLeave").
++* ItemDropEvent - for Arguments please refer to, [ItemDropEvent](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ItemDropEvent_EV.html "ItemDropEvent").
+ 
+ #### ExpandMode
+- ExpandMode of Stencil Can be customized as, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html"ExpandMode")
+\ No newline at end of file
++ please refer to, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html "ExpandMode").
+\ No newline at end of file
