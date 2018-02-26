@@ -332,7 +332,7 @@ IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 //Zoom to a particular scale.
 
-graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter() 
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter() 
 { 
 	ZoomTo = 2, ZoomCommand = ZoomCommand.ZoomOut 
 });
@@ -340,7 +340,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter()
 
 //Zoom out based on zoom factor.
 
-graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter() 
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter() 
 { 
 	ZoomFactor = 2, ZoomCommand = ZoomCommand.ZoomOut 
 });
@@ -479,8 +479,8 @@ List of Commands and Key Gesture:
 
 | Command | Key | KeyModifier | Parameter |
 |---|---|---|---|
-| Zoom | - | Control | new ZoomPositionParamenter { ZoomCommand=ZoomCommand.ZoomOut} |
-| Zoom | + | Control | new ZoomPositionParamenter { ZoomCommand = ZoomCommand.ZoomIn } |
+| Zoom | - | Control | new ZoomPositionParameter { ZoomCommand=ZoomCommand.ZoomOut} |
+| Zoom | + | Control | new ZoomPositionParameter { ZoomCommand = ZoomCommand.ZoomIn } |
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
 | FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
