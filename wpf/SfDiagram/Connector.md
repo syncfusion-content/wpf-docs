@@ -99,7 +99,7 @@ The `SourceNode` and `TargetNode` properties allow to define the Nodes to be con
 {% tabs %}
 {% highlight C# %}
 
-//Define the NodeColllection
+//Define the NodeCollection
 diagram.Nodes = new NodeCollection();
 //Defining the Node
 NodeViewModel node1 = AddNode(100,"Node1");
@@ -447,7 +447,7 @@ Source and target points of the selected connectors are represented with two han
 
 * If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
-* If any changes made in the segment of the connector,`ConnectorEditingEvent` will notify the DragState, Item and Thumbtype.To explore about arguments, please refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html) .
+* If any changes made in the segment of the connector,`ConnectorEditingEvent` will notify the DragState, Item and ThumbType.To explore about arguments, please refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html) .
 
 ### Straight segment editing
 
