@@ -72,8 +72,17 @@ Stroke="Black" StrokeThickness="1" />
  
  {% highlight c# %}
  
+//Define the SymbolCollection
+stencil.SymbolSource = new SymbolCollection();
 //Initialize the SymbolItem
-SymbolItem symbol = new SymbolItem();
+SymbolItem symbol = new SymbolItem()
+{
+    Key = "Flow Chart",
+    Symbol = "Diamond",
+    SymbolTemplate = this.Resources["Diamond"] as DataTemplate
+};
+//Adding Symbol to Collection
+(stencil.SymbolSource as SymbolCollection).Add(symbol);
 
  {% endhighlight %}
  {% endtabs %}
