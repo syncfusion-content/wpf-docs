@@ -113,7 +113,7 @@ The following code example illustrates how to disable creating connections with 
 {% highlight C# %}
 
 //Create NodePortViewModel (Shape and ShapeStyle Applied from "Data-Binding")
-NodePortViewModel nodeport=	new NodePortViewModel()
+NodePortViewModel port=	new NodePortViewModel()
 	{
       UnitWidth= 10,
 	    UnitHeight= 10,
