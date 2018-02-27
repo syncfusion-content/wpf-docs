@@ -9,29 +9,26 @@ documentation: ug
 
 # Page Settings
 
-Page settings enable to customize the appearance, width, and height of the Diagram page. The size and appearance of the Diagram pages can be customized with the `PageSettings` property.
+Diagram page appearance and size can be customized by using [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram.
 
-The `PageWidth` and `PageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties. 
-
-You can also customize the appearance of off-page regions with the property BackgroundColor.
+The `PageWidth` and `PageHeight` properties of page settings define the size of the page. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram" Background="WhiteSmoke">
-  <diagram:SfDiagram.PageSettings>
-    <diagram:PageSettings PageWidth="500" PageHeight="500" 
-                          PageBorderThickness="4" PageBackground="White"
-                          PageBorderBrush="LightGray" ShowPageBreaks="True"     
-                          MultiplePage="True" PageOrientation="Portrait"/>
-    </diagram:SfDiagram.PageSettings> 
-  <diagram:SfDiagram.SnapSettings>
-    <diagram:SnapSettings SnapConstraints="ShowLines"/>
-  </diagram:SfDiagram.SnapSettings>
-</diagram:SfDiagram>
+<syncfusion:SfDiagram x:Name="diagram" Background="WhiteSmoke">
+  <syncfusion:SfDiagram.PageSettings>
+    <syncfusion:PageSettings PageWidth="500" PageHeight="500"
+PageBorderThickness="4" PageBackground="White"
+PageBorderBrush="LightGray" ShowPageBreaks="True"
+MultiplePage="True" PageOrientation="Portrait"/>
+  </syncfusion:SfDiagram.PageSettings>
+  <syncfusion:SfDiagram.SnapSettings>
+    <syncfusion:SnapSettings SnapConstraints="ShowLines"/>
+  </syncfusion:SfDiagram.SnapSettings>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
-
 
 {% highlight C# %}
 
@@ -49,7 +46,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 {% endhighlight %}
 {% endtabs %}
 
-![](Page-Settings_images/Page_Settings_img2.jpeg)
+![](Page-Settings_images/Page_Settings_img2.PNG)
 
 ## Multiple Page and Page Breaks
 
