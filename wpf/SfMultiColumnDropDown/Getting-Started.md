@@ -119,8 +119,10 @@ using Syncfusion.UI.Xaml.Grid;
 
 namespace WpfApplication1
 {
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -177,8 +179,8 @@ public class OrderInfo
          get {  return shippingCity; }
          set {  shippingCity = value; }
     }
-    public OrderInfo(int orderId, string customerName, string country, string     
-    customerId,string shipCity)
+
+    public OrderInfo(int orderId, string customerName, string country, string customerId,string shipCity)
     {
          this.OrderID = orderId;
          this.CustomerName = customerName;
@@ -197,6 +199,7 @@ public class OrderInfo
 public class ViewModel
 {
     private ObservableCollection<OrderInfo> _orders;
+
     public ObservableCollection<OrderInfo> Orders
     {
         get { return _orders; }
