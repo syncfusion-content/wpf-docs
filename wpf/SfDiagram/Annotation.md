@@ -40,7 +40,7 @@ Annotation is a block of text that can be displayed over a Node or Connector. An
 
 {% endhighlight %}
 
-{% highlightc# %}
+{% highlight c# %}
 
 //Define the NodeCollection
 diagram.Nodes = new NodeCollection();

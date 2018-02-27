@@ -111,10 +111,10 @@ You can access the text displayed in the Textbox by using [SfMultiColumnDropDown
 {% tabs %}
 {% highlight xml %}
 <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="400" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
 <syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
                                          Width=”175”
                                          Height=”30”
