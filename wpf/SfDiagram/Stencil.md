@@ -23,7 +23,7 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 ## Symbol
 
-Symbol is used to visualize the elements in Stencil, by following ways:
+Symbol is used to visualize the elements in Stencil using following ways:
  
  * ISymbol
  * Using DiagramElements
@@ -35,22 +35,25 @@ ISymbol have `Symbol` and `SymbolTemplate` to visualize the Symbol.
 {% highlight C# %}
 public class SymbolItem : ISymbol
 {
-    //Symbol-Any Object
-    public object Symbol { get; set; }
+ //Symbol-Any Object
+ public object Symbol { get; set; }
 
-    //Data template to visualize the object.
-    public DataTemplate SymbolTemplate { get; set; }
+ //Custom property for Mapping.
+ public object GroupName { get; set; }
 
-    //For cloning the symbol from the given object and data template.
-    public ISymbol Clone()
-     {
-         return new SymbolItem()
-          {
-            Symbol = this.Symbol,
-            SymbolTemplate = this.SymbolTemplate
-          };
-     }
-    public object Key { get; set; }
+ //Data template to visualize the object.
+ public DataTemplate SymbolTemplate { get; set; }
+
+ //For cloning the symbol from the given object and data template.
+ public ISymbol Clone()
+ {
+  return new SymbolItem()
+  {
+   Symbol = this.Symbol,
+   SymbolTemplate = this.SymbolTemplate
+  };
+ }
+ public object Key { get; set; }
 }
 
 {% endhighlight %}
@@ -58,16 +61,28 @@ public class SymbolItem : ISymbol
 {% tabs %}
 
 {% highlight xaml %}
-<local:SymbolItem Key="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
+<DataTemplate x:Key="Diamond">
+  <Path Stretch="Fill" Data="M 397.784,287.875L 369.5,316.159L 341.216,287.875L 369.5,259.591L 397.784,287.875 Z" Fill="White"
+Stroke="Black" StrokeThickness="1" />
+</DataTemplate>
+
+ <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
  
  {% endhighlight %}
- {% endtabs %}
  
- {% tabs %}
  {% highlight c# %}
  
+//Define the SymbolCollection
+stencil.SymbolSource = new SymbolCollection();
 //Initialize the SymbolItem
-SymbolItem symbol = new SymbolItem();
+SymbolItem symbol = new SymbolItem()
+{
+    Key = "Flow Chart",
+    Symbol = "Diamond",
+    SymbolTemplate = this.Resources["Diamond"] as DataTemplate
+};
+//Adding Symbol to Collection
+(stencil.SymbolSource as SymbolCollection).Add(symbol);
 
  {% endhighlight %}
  {% endtabs %}
@@ -102,13 +117,13 @@ Stroke="Black" StrokeThickness="1" />
             <!--Define the SymbolCollection-->
             <local:SymbolCollection>
                 <!--Symbol with SymbolTemplate-->
-                <local:SymbolItem Key="Flow Chart" Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
+                <local:SymbolItem GroupName="Flow Chart" Symbol="Diamond"  SymbolTemplate="{StaticResource Diamond}"/>
             </local:SymbolCollection>
         </stencil:Stencil.SymbolSource>
         <!--Define the SymbolGroups-->
         <stencil:Stencil.SymbolGroups>
             <stencil:SymbolGroups>
-                <stencil:SymbolGroupProvider MappingName="key">
+                <stencil:SymbolGroupProvider MappingName="GroupName">
                 </stencil:SymbolGroupProvider>
             </stencil:SymbolGroups>
         </stencil:Stencil.SymbolGroups>
@@ -197,7 +212,7 @@ private bool Filter(SymbolFilterProvider sender, object symbol)
 {% endhighlight %}
 {% endtabs %}
 
-For Sample, please refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter")
+for Sample, refer to [SymbolFilter](http://www.syncfusion.com/downloads/support/directtrac/198906/ze/SymbolFilter-1471608955 "SymbolFilter").
 
 ![](Stencil_images/Stencil_img12.PNG)
 
@@ -227,10 +242,6 @@ Here, Stencil is an instance of Stencil.
 
 ![](Stencil_images/Stencil_img14.PNG)
 
-#### Dragged Symbol
-
-![](Stencil_images/Stencil_img15.PNG)
-
 #### Customization of Preview for Drag and Drop
 
 You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
@@ -257,7 +268,7 @@ public class CustomStencil : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![](Stencil_images/Stencil_img16.PNG)
+![](Stencil_images/Stencil_img16.jpeg)
 
 ## Events
 
