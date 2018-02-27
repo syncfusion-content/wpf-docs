@@ -27,7 +27,7 @@ In order to achieve Properties of ViewModel are bind to View, we have provided t
 
 ## Node Port
 
-To Specify and make connection with Node at Precise Point. 
+To specify and make connection with Node at precise Point. 
 
 ### Define Node Port
 
@@ -117,15 +117,15 @@ NodeViewModel node = new NodeViewModel()
 
 {% endhighlight %}			
 {% endtabs %}
-![](Port_images/Port_img6.jpeg)
+![](Port_images/Port_img6.PNG)
 
->N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
+>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , refer to the PortVisibility 
 
 ## Connector Port
- To Specify and make connection with Connector at Precise Length.
+ To specify and make connection with Connector at precise Length.
   
 ### Define Connector Port  
-`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance,visibility and interaction with this.
+`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance, visibility and interaction with this.
 
 Please find the common style for Connector and ConnectorPort.
 
@@ -189,8 +189,6 @@ Please find the common style for Connector and ConnectorPort.
 
 {% endhighlight %}
 
-
-
 {% highlight C# %}
 //Define Connector Property
 diagram.Connectors = new ConnectorCollection();
@@ -214,9 +212,9 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}			
 
-![](Port_images/Port_img7.jpeg)
+![](Port_images/Port_img7.PNG)
 
->N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
+>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , refer to the PortVisibility 
 
 ## Dock Port
 
@@ -405,7 +403,7 @@ return node;
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img13.jpeg)
+![](Port_images/Port_img13.PNG)
 
 ### Connector to Connector Routing
 
@@ -533,9 +531,83 @@ ConnectorViewModel con2 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img14.jpeg)
+![](Port_images/Port_img14.PNG)
 
 DockPort does not allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
+
+## Padding
+Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges.
+
+{% tabs %}
+{% highlight c# %}
+
+//Define the NodePort
+NodePortViewModel port = new NodePortViewModel()
+{
+    //Declaring the ConnectorPadding value
+    ConnectorPadding = 10,
+    NodeOffsetX = 0,
+    NodeOffsetY = 0.5,
+};
+//Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    UnitWidth = 100,
+    UnitHeight = 60,
+    OffsetX = 200,
+    OffsetY = 200,
+    //Define the AnnotationCollection
+    Annotations = new AnnotationCollection()
+    {
+        //Define the Annotation
+        new AnnotationEditorViewModel()
+        {
+            Content="Node 1",
+        }
+    },
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+};
+
+NodeViewModel node1 = new NodeViewModel()
+{
+    UnitWidth = 100,
+    UnitHeight = 60,
+    OffsetX = 400,
+    OffsetY = 200,
+    //Define the PortCollection
+    Ports = new PortCollection()
+    {
+        port
+    },
+    Annotations = new AnnotationCollection()
+    {
+        new AnnotationEditorViewModel()
+        {
+            Content="Node 2",
+        }
+    },
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+};
+(diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node1);
+//Define the ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+//Define the Connector
+ConnectorViewModel connector = new ConnectorViewModel()
+{
+    TargetPort = port,
+    SourceNode = node,
+    TargetNode = node1,
+};
+//Adding the Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(connector);
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Port_images/Port_img15.PNG)
 
 ## Appearance
 
