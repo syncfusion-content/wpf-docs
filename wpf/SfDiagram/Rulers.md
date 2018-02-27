@@ -9,12 +9,13 @@ documentation: ug
 
 # Rulers
 
-The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
+The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LengthUnit_members.html) of measure is pixels.
 
-## Adding Rulers to the Diagram
+Please refer to Ruler and Units sample from Dashboard->Desktop->WPF->Diagram->GettingStarted->Rulers and Units.
 
-Use the following code example to add the ruler to the Diagram.
+## Define Rulers
 
+{% tabs %}
 {% highlight C# %}
 
 diagramcontrol.HorizontalRuler = new Ruler();
@@ -22,84 +23,31 @@ diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical 
 
 {% endhighlight %}
 
+{% highlight XAML %}
+
+ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.WPF"
+ xmlns:Sync="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
+
+ <Syncfusion:SfDiagram x:Name="diagramcontrol">
+            <Syncfusion:SfDiagram.HorizontalRuler>
+                <Sync:Ruler></Sync:Ruler>
+            </Syncfusion:SfDiagram.HorizontalRuler>
+            <Syncfusion:SfDiagram.VerticalRuler>
+                <Sync:Ruler Orientation="Vertical"></Sync:Ruler>
+            </Syncfusion:SfDiagram.VerticalRuler>
+</Syncfusion:SfDiagram>
+		
+{% endhighlight %}
+{% endtabs %}
+
 ![](Rulers_images/Rulers_img1.jpeg)
 
 ## Customizing the Ruler
 
-By default, ruler segments are arranged based on measurement units.
+By default, ruler segments are arranged based on the `MeasurementUnit`.
 
-Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. Use the following code example to customize the ruler.
-
-{% highlight C# %}
-
-// Customizing the Ruler
-public class CustomRuler : Ruler
-{
-	protected override RulerSegment GetNewSegment()
-       {
-		//Creating a custom segment with 12 intervals.
-		return new CustomSegment() { Intervals = 12 };
-	}
-}
-
-// Customizing RulerSegment
-public class CustomSegment : RulerSegment
-{
-	protected override Tick GetNewTick()
-       {
-		return new CustomTick();
-	}
-
-	public override double GetSegmentWidth()
-       {
-		// Customizing the ruler segment width.
-		return 200;
-	}
-
-	// Customizing the label of the RulerSegment
-	protected override void UpdateLabel(TextBlock label)
-       {
-		base.UpdateLabel(label);
-	}
-}
-
-// Customizing the Ruler ticks.
-
-public class CustomTick : Tick
-{
-
-	// <summary>
-	/// To update the ticks values start value, length, alignment
-	/// </summary>
-	/// <param name="start">Start value</param>
-	/// <param name="length">Length of the tick</param>
-	/// <param name="align">Alignment of the tick</param>
-	
-	protected override void ArrangeTick(out double start, out double length, out  
-                                           TickAlignment align)
-       {
-		start = 0;
-		if (Value % 200 == 0)
-              {
-			length = 20;
-		}
-		else if (Value % 100 == 0 || Value % 100 < 2)
-              {
-			length = 14;
-		}
-		else if (Value % 50 == 0)
-		{
-			length = 9;
-		}
-		else
-		{
-			length = 5;
-		}
-              align = TickAlignment.RightOrBottom;
-       }
-}
-
-{% endhighlight %}
+Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. 
 
 ![](Rulers_images/Rulers_img2.jpeg)
 
+Please refer to the sample to [Customize the Ruler](http://www.syncfusion.com/downloads/support/directtrac/199579/ze/RulerCustomization324121572)
