@@ -148,6 +148,41 @@ protected override void ThumbInteractionTool(InteractionToolArgs args)
 
 {% endhighlight %}
 
+## Preview Dragging
+
+SfDiagram provides support to drag objects as an outline without affecting original object. When multiple elements are selected, outline of every selected element will be moved.
+
+Preview Dragging can be enabled by assigning values other than `PreviewMode.Preview` to `SfDiagram.PreviewSettings.PreviewMode`.
+
+![](Interaction_images/PreviewDragging_img1.gif)
+
+By default, Outline of the connectors connected to the dragging objects will be in disabled state. But, you can able to view the outline of the connectors, by holding dragging objects for certain time span. `ConnectorRefreshingSpan` property of `PreviewSettings` allows you to specify the time span and the value should be greater than 300ms.
+
+{% highlight C# %}
+
+this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode.Preview, ConnectorRefreshingSpan = 300 };
+
+{% endhighlight %}
+
+![](Interaction_images/PreviewDragging_img2.gif)
+
+### Appearance
+
+Appearance of the preview can be modified using `PreviewStyle` property of `PreviewSettings`.
+
+{% highlight C# %}
+
+var previewStyle = new Style();
+previewStyle.TargetType = typeof(Shape);
+previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeProperty, Value = new SolidColorBrush(Colors.CornflowerBlue) });
+previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeThicknessProperty, Value = 1.5 });
+previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeDashArrayProperty, Value = new DoubleCollection { 3, 3 } });
+this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode.Preview, ConnectorRefreshingSpan = 300, PreviewStyle = previewStyle };
+
+{% endhighlight %}
+
+![](Interaction_images/PreviewDragging_img3.gif)
+
 ## Drag and Drop Nodes over other elements
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the constraints property. The following code illustrates how to enable **dropping**.
@@ -215,6 +250,122 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 }
 
 {% endhighlight %}
+
+## Automatic Alignment
+
+SfDiagram provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
+
+Using `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
+
+{% highlight C# %}
+
+// Invoking SelectorChanged Event
+(this.diagram.Info as IGraphInfo).SelectorChangedEvent += OnSelectorChangedEvent;
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args)
+{
+    // Need to adjust selected node's position, if it in contact with any other elements on drag complete
+    if (args.Item is SelectorViewModel && args.NewValue.InteractionState == NodeChangedInteractionState.Dragged)
+    {
+        var selectorViewModel = (SelectorViewModel)args.Item;
+        if (selectorViewModel.Nodes is IEnumerable<object>)
+        {
+            var selectedNodes = ((IEnumerable<object>)selectorViewModel.Nodes).ToList();
+            if (selectedNodes.Count == 1 && selectedNodes[0] is NodeViewModel)
+            {
+                var selectedNode = (NodeViewModel)selectedNodes[0];
+                var collisionState = new CollisionState() { Item = selectedNode };
+                ((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState);
+                        
+                // Re-arranging node's position
+                selectedNode.OffsetX = collisionState.Offset.X;
+                selectedNode.OffsetY = collisionState.Offset.Y;
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+![](Interaction_images/AutomaticAlignment_img1.gif)
+
+In some cases, there may requirement for repositioning overlapping objects, rather than selected object. Using `GetOverlappingObjects` method, you can able to find all overlapping objects(such as Node/Connector/Annotation) for a given node.
+
+{% highlight C# %}
+
+private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args)
+{
+    if (args.Item is SelectorViewModel && args.NewValue.InteractionState == NodeChangedInteractionState.Dragged)
+    {
+        var selectorViewModel = (SelectorViewModel)args.Item;
+        if (selectorViewModel.Nodes is IEnumerable<object>)
+        {
+            var selectedNodes = ((IEnumerable<object>)selectorViewModel.Nodes).ToList();
+            if (selectedNodes.Count == 1 && selectedNodes[0] is NodeViewModel)
+            {
+                var selectedNode = (NodeViewModel)selectedNodes[0];
+                var collisionState = new CollisionState() { Item = selectedNode };
+                
+                // Finding overlapping nodes & connectors for the selected node.
+                var intercepts = ((IGraphInfo)this.diagram.Info).GetOverlappingObjects(collisionState);
+
+                foreach (var intercept in intercepts)
+                {
+                    if (intercept is NodeViewModel)
+                    {
+                        var intersettingNode = (NodeViewModel)intercept;
+                        var collisionState1 = new CollisionState() { Item = intersettingNode };
+                        ((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState1);
+
+                        // Re-arranging node's position
+                        intersettingNode.OffsetX = collisionState1.Offset.X;
+                        intersettingNode.OffsetY = collisionState1.Offset.Y;
+                    }
+                }
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+![](Interaction_images/AutomaticAlignment_img2.gif)
+
+### Spacing
+
+The `Space` property of CollisionState allows you to change the spacing distance.
+
+{% highlight C# %}
+
+var selectedNode = (NodeViewModel)selectedNodes[0];
+var collisionState = new CollisionState() { Item = selectedNode, Space = 5 };
+((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState);
+
+{% endhighlight %}
+
+### Ignore objects as an overlap
+
+By default, annotation's of other elements were also considered as an intercepts for any given node. This can be disabled with the help of `IncludeSubElements` property of CollisionState.
+
+{% highlight C# %}
+
+var selectedNode = (NodeViewModel)selectedNodes[0];
+var collisionState = new CollisionState() { Item = selectedNode, IncludeSubElements = false };
+((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState);
+
+{% endhighlight %}
+
+In addition to this,`IgnoreList` property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
+
+![](Interaction_images/AutomaticAlignment_img3.gif)
+
+A sample application can be downloaded from the following location:
+
+http://www.syncfusion.com/downloads/support/directtrac/177341/ze/Automatic-Alignment942886659 
 
 ## QuickCommand
 
@@ -528,15 +679,15 @@ Please refer to the code example as below
 
 ## ConnectionIndicator animation for Node
 
-![](Interaction_images/Interaction_img13.jpeg)
+![](Interaction_images/Interaction_img16.jpeg)
 
 ## ConnectionIndicator animation for Connector
 
-![](Interaction_images/Interaction_img14.jpeg)
+![](Interaction_images/Interaction_img17.jpeg)
 
 ## ConnectorPort to NodePort Connection
 
-![](Interaction_images/Interaction_img15.jpeg)
+![](Interaction_images/Interaction_img18.jpeg)
 
 ## Customization and Validation on Connector Ends
 
@@ -600,7 +751,7 @@ public class CustomDiagram : SfDiagram
 
 {% endhighlight %}
 
-![](Interaction_images/Interaction_img16.jpg)
+![](Interaction_images/Interaction_img19.jpg)
 
 
 ## Hit Padding
