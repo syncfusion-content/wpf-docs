@@ -679,15 +679,15 @@ Please refer to the code example as below
 
 ## ConnectionIndicator animation for Node
 
-![](Interaction_images/Interaction_img16.jpeg)
+![](Interaction_images/Interaction_img13.jpeg)
 
 ## ConnectionIndicator animation for Connector
 
-![](Interaction_images/Interaction_img17.jpeg)
+![](Interaction_images/Interaction_img14.jpeg)
 
 ## ConnectorPort to NodePort Connection
 
-![](Interaction_images/Interaction_img18.jpeg)
+![](Interaction_images/Interaction_img15.jpeg)
 
 ## Customization and Validation on Connector Ends
 
@@ -751,7 +751,7 @@ public class CustomDiagram : SfDiagram
 
 {% endhighlight %}
 
-![](Interaction_images/Interaction_img19.jpg)
+![](Interaction_images/Interaction_img16.jpg)
 
 
 ## Hit Padding
