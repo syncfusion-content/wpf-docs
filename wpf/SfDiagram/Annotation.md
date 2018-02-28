@@ -137,7 +137,7 @@ NodeViewModel node = new NodeViewModel()
 ### Margin
 
 `Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
-
+{% tabs %}
 {% highlight C# %}
 
 //Define the NodeCollection
@@ -168,6 +168,7 @@ NodeViewModel node = new NodeViewModel()
 (diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Annotation_images/Annotation_img12.PNG)
 

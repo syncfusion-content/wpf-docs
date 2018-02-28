@@ -464,7 +464,7 @@ Source and target points of the selected connectors are represented with two han
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](Connector_images/r.gif)
+![](Connector_images/Bezier3.gif)
 
 ## Hit Padding
 
