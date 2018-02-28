@@ -30,9 +30,9 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 {%highlight c#%}
 
 	PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
-   //Specify the path for Pdfium assembly. 
+	//Specify the path for Pdfium assembly. 
 	pdfViewerControl1.ReferencePath = @"D:\Reference path";
-   //Specify the PDF rendering engine as Pdfium.
+	//Specify the PDF rendering engine as Pdfium.
 	pdfViewerControl1.RenderingEngine =PdfRenderingEngine.Pdfium; 
 	//Load the PDF document 
 	pdfViewerControl1.Load("Sample.pdf");
