@@ -67,12 +67,6 @@ The following table illustrates how pivot relates Offset values with Node bounda
   </Setter>
 </Style>
 
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml %}
-
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
   <syncfusion:SfDiagram.Nodes>
@@ -207,14 +201,13 @@ In order to achieve Properties of ViewModel are bind to View, we have provided t
 N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
 
 ## Interaction
-## Interaction
 
 Diagram provides support to drag, resize, or rotate the Node interactively. 
 
 ## Select
 Node can be selected by clicking on it.
 
-![](Node_images/Node_img6.jpg)
+![](Node_images/Node_img7.jpg)
 
 To explore about selection and selection related events , refer to [Selection](/wpf/sfdiagram/interaction#selection) .
 

@@ -39,11 +39,6 @@ Connector can be created by defining the start and end points. The Path to be dr
   </Setter>
 </Style>
 
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml %}
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line">
   <syncfusion:SfDiagram.Connectors>
@@ -334,7 +329,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 (diagram.Connectors as ConnectorCollection).Add(connector1);
 
 {% endhighlight %}
-{%%}
+{% endtabs %}
 
 ![](Connector_images/Connector_img16.PNG)
 
@@ -469,7 +464,7 @@ Source and target points of the selected connectors are represented with two han
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](Connector_images/r.gif)
+![](Connector_images/Bezier3.gif)
 
 ## Hit Padding
 
