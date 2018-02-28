@@ -39,11 +39,6 @@ Connector can be created by defining the start and end points. The Path to be dr
   </Setter>
 </Style>
 
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml %}
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line">
   <syncfusion:SfDiagram.Connectors>
@@ -334,7 +329,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 (diagram.Connectors as ConnectorCollection).Add(connector1);
 
 {% endhighlight %}
-{%%}
+{% endtabs %}
 
 ![](Connector_images/Connector_img16.PNG)
 
