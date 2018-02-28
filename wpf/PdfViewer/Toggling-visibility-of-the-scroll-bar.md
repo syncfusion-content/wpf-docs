@@ -14,6 +14,16 @@ PDF Viewer supports showing and hiding scrollbar, when you feel to use the PDF V
 {% tabs %}
 {% highlight c# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Sample.pdf");
+
 // Hiding the scrollbar of the PDF Viewer
 
 pdfviewer1.ShowScrollbar = false;
@@ -23,6 +33,16 @@ pdfviewer1.ShowScrollbar = false;
 
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Sample.pdf")
 
 ' Hiding the scrollbar of the PDF Viewer
 

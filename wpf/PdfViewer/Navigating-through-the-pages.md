@@ -14,6 +14,17 @@ PDF Viewer allows you to navigate through the pages of the PDF document. The fol
 {% tabs %}
 {% highlight C# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Sample.pdf");
+
+
 //Navigate to page 2
 
 pdfviewer1.GotoPage(2);
@@ -21,6 +32,16 @@ pdfviewer1.GotoPage(2);
 {% endhighlight %}
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Sample.pdf")
 
 'Navigate to page 2
 
