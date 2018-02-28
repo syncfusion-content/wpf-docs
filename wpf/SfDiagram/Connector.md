@@ -407,7 +407,7 @@ StrokeThickness, Stroke and style of the Connector and Decorators can be customi
 {% endtabs %}
 
 {% tabs %}
-{% highight c# %}
+{% highlight c# %}
 
 //Define the ConnectorCollection
 diagram.Connectors = new ConnectorCollection();
