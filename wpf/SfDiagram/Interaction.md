@@ -188,13 +188,13 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
                 {
                     if (intercept is NodeViewModel)
                     {
-                        var intersettingNode = (NodeViewModel)intercept;
-                        var collisionState1 = new CollisionState() { Item = intersettingNode };
+                        var intersectingNode = (NodeViewModel)intercept;
+                        var collisionState1 = new CollisionState() { Item = intersectingNode };
                         ((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState1);
 
                         // Re-arranging node's position
-                        intersettingNode.OffsetX = collisionState1.Offset.X;
-                        intersettingNode.OffsetY = collisionState1.Offset.Y;
+                        intersectingNode.OffsetX = collisionState1.Offset.X;
+                        intersectingNode.OffsetY = collisionState1.Offset.Y;
                     }
                 }
             }
