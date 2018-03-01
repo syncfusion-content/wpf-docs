@@ -41,7 +41,7 @@ Multiple selected elements are visually represented as shown.
 
 ![](Interaction_images/Interaction_img5.jpeg)
 
-* `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and iteraction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
+* `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
 
 ### Select/Unselect the elements programmatically
 
