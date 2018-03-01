@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-The Localization mechanism support in the DateTimeEdit allows you to localize any string value for a specific culture.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the DateTimeEdit by adding resource file. 
 
 <table>
 <tr>
@@ -81,4 +81,7 @@ Sets the string for the Today Label in DateTimeEdit.</td></tr>
 {{ '_TodayLabel_' | markdownify }}</td></tr>
 </table>
 
+![](Localization_images/Localization_img9.png)
 
+N> To create the localized application, follow the steps mentioned [here](https://help.syncfusion.com/wpf/introduction/common-supports#localization). 
+Also, you can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF_DateTimeEditLocalization1161670264) . 
