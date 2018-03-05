@@ -84,11 +84,11 @@ You can create a CheckListBox control either by using XAML code or C# code. To c
 
 // ........
 
-this.Content = checkListBox;   </td></tr>
+this.Content = checkListBox;   
 
 {%endhighlight%}
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 CheckListBox Control
 {:.caption}

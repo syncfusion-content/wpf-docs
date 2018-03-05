@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Save a Report as a Stream | ReportWriter | WPF | Syncfusion
-description: save a report as a stream?
+title: Save a report as stream | ReportWriter | WPF | Syncfusion
+description: save a report to stream
 platform: wpf
 control: ReportWriter
 documentation: ug
 ---
 
-# Save a Report as a Stream?
+# Save a report as stream
 
-You can save a report as a stream using Save(Stream,WriterFormat) (overloaded method). This method is useful when generating the report on the server side and sending it to a client-side application. The following code explains how to save a report as a stream.
+You can save a report to stream using Save(Stream, WriterFormat) (overloaded method). This method is useful when generating the report on the server side and sending it to a client-side application. The following code explains how to save a report as a stream.
 
 {% tabs %}
 {% highlight C# %}
@@ -17,7 +17,7 @@ You can save a report as a stream using Save(Stream,WriterFormat) (overloaded me
 ReportDataSourceCollection dataSources = new ReportDataSourceCollection();
 dataSources.Add(new ReportDataSource() { Name = "Sales", Value = GetDataSource() });
 
-//Step 2: Instantiate the report writer with the parameter "ReportPath" and ReportDataSource Collection
+//Step 2: Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection"
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 MemoryStream stream = new MemoryStream();
 
@@ -29,7 +29,7 @@ reportWriter.Save(stream, WriterFormat.PDF);
 Dim dataSources As New ReportDataSourceCollection()
 dataSources.Add(New ReportDataSource() With {.Name = "Sales", .Value = GetDataSource()})
 
-'Step 2: Instantiate the report writer with the parameter "ReportPath" and ReportDataSource Collection
+'Step 2: Instantiate the report writer with the parameter "ReportPath" and "ReportDataSourceCollection"
 Dim reportWriter As New ReportWriter(reportPath, dataSources)
 Dim stream As New MemoryStream()
 

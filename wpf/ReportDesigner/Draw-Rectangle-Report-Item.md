@@ -29,7 +29,7 @@ You can insert rectangle in Report Designer using the following steps.
 
    * Fill - To set the background color of the Rectangle.   
    
-   * Border - To set the Rectangle border, border width and background color.
+   * Border - To set the Rectangle border, border width and border color.
    
    ![](Draw-Rectangle-Report-Item_images/Draw-Rectangle-Report-Item_img4.png)
    
