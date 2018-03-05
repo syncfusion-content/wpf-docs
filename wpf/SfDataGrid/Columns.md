@@ -304,6 +304,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
         e.Cancel = true;
 }
@@ -322,8 +323,10 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "UnitPrice")
     {
+
         if (e.Column is GridNumericColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
@@ -343,6 +346,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if(e.Column.MappingName=="OrderID")
     {
         e.Column.AllowEditing = false;
@@ -375,6 +379,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
     {
         e.Column.HeaderTemplate = this.FindResource("headerTemplate") as DataTemplate;
@@ -398,6 +403,7 @@ You can skip the column generation using `AutoGenerateField` property or set the
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false, Description = "OrderID field is not generated in UI")]
+
 public int OrderID
 {
     get { return orderID; }
@@ -413,6 +419,7 @@ You can enable filtering automatically for the field using `Display.AutoGenerate
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateFilter = true, Description = "Filter enabled for CustomerID column")]
+
 public string CustomerID
 {
     get { return customerId; }
@@ -428,6 +435,7 @@ You can change the value of the property using `Editable` attribute.
 {% tabs %}
 {% highlight c# %}
 [Editable(true)]
+
 public string Country
 {
     get { return country; }
@@ -443,6 +451,7 @@ You can customize header text of column using `Display.Name` property.
 {% tabs %}
 {% highlight c# %}
 [Display(Name="Name of the Customer",Description="CustomerName is necessary for identification ")]
+
 public string CustomerName
 {
     get { return customerName; }
@@ -458,12 +467,14 @@ You can change the columns order using `DisplayAttribute.Order` property.
 {% tabs %}
 {% highlight c# %}
 [Display(Order=0)]
+
 public int OrderID
 {
     get { return orderID; }
     set { orderID = value; }
 }
 [Display(Order=-1)]
+
 public string CustomerID
 {
     get { return customerId; }
@@ -483,6 +494,7 @@ You can customize the data format using `DataTypeAttribute.DataType` property.
 {% tabs %}
 {% highlight c# %}
 [DataType(DataType.Currency)]        
+
 public double  UnitPrice
 {
     get { return unitPrice; }
@@ -498,6 +510,7 @@ You can disable the editing for a column using `ReadOnly` attribute.
 {% tabs %}
 {% highlight c# %}
 [ReadOnly(true)]
+
 public string Country
 {
     get { return country; }
@@ -586,9 +599,11 @@ You can also remove the column under one stacked column from StackedHeaderRow.
 {% tabs %}
 {% highlight c# %}
 var childColumns = this.dataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns.Split(',');
+
 foreach (var name in childColumns)
 {
     var column = dataGrid.Columns[name];
+
     if (column == null)
         continue;
     dataGrid.Columns.Remove(column);
@@ -632,6 +647,7 @@ this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
 
 void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {    
+
     if(e.ColumnIndex == 1)            
         e.Cancel = true;         
 }
@@ -676,6 +692,7 @@ this.dataGrid.QueryColumnDragging += dataGrid_QueryColumnDragging;
 void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     var column = dataGrid.Columns[e.From];
+
     if (column.MappingName == "CustomerName" && e.Reason == QueryColumnDraggingReason.Dropping)
     {
         e.Cancel = true;
@@ -694,59 +711,69 @@ this.dataGrid.GridColumnDragDropController = new CustomDragDropController(dataGr
 
 public class CustomDragDropController:GridColumnDragDropController
 {
+
     public CustomDragDropController(SfDataGrid dataGrid): base(dataGrid)
     {
     }        
 
     //Returns whether the popup showed its header or not.
+
     public override bool CanShowPopup(GridColumn column)
     {
         return base.CanShowPopup(column);
     }
 
     //Get the corresponding GridRegion at a given point.
+
     public override GridRegion PointToGridRegion(System.Windows.Point point)
     {
         return base.PointToGridRegion(point);
     }
 
     //Occurs when the GridColumn.Hidden property value changed.
+
     protected override void OnColumnHiddenChanged(GridColumn column)
     {
         base.OnColumnHiddenChanged(column);
     }
 
     //Occurs when the popup content is created.
+
     protected override System.Windows.UIElement CreatePopupContent(GridColumn column)
     {
         return base.CreatePopupContent(column);
     }
 
     //Occurs when the popup content is dropped on DataGrid.
+
     protected override void PopupContentDroppedOnGrid(System.Windows.Point point)
     {
         base.PopupContentDroppedOnGrid(point);
     }
 
     //Occurs when the popup content is dropped on header row.
+
     protected override void PopupContentDroppedOnHeaderRow(int oldIndex, int newColumnIndex)
     {
         base.PopupContentDroppedOnHeaderRow(oldIndex, newColumnIndex);
     }
 
     //Occurs when the popup content is dropped.
+
     protected override void OnPopupContentDropped(System.Windows.Point point, System.Windows.Point pointOverGrid)
     {
         base.OnPopupContentDropped(point, pointOverGrid);
     }
 
     //Occurs when the popup content is dropped on GroupDropArea
+
     protected override void PopupContentDroppedOnGroupDropArea(GridColumn column)
     {
         base.PopupContentDroppedOnGroupDropArea(column);
     }
 
     //Occurs when the popup content position changed.
+
     protected override void OnPopupContentPositionChanged(double HorizontalDelta, double VerticalDelta, System.Windows.Point mousePoint, System.Windows.Point mousePointOverGrid)
     {
         base.OnPopupContentPositionChanged(HorizontalDelta, VerticalDelta, mousePoint, mousePointOverGrid);
@@ -765,6 +792,7 @@ this.dataGrid.QueryColumnDragging += dataGrid_QueryColumnDragging;
 
 void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {    
+
     if (e.Reason == QueryColumnDraggingReason.Dropping)
     {
         var frozenColIndex = this.dataGrid.FrozenColumnCount + this.dataGrid.ResolveToStartColumnIndex();
@@ -856,6 +884,7 @@ public class OrderInfo
     }
 
     [Display(GroupName = "Customer Details")]
+
     public string CustomerID
     {
         get { return customerId; }
@@ -863,6 +892,7 @@ public class OrderInfo
     }
 
     [Display(GroupName = "Customer Details")]        
+
     public string CustomerName
     {
         get { return customerName; }
@@ -870,6 +900,7 @@ public class OrderInfo
     }
 
     [Display(GroupName = "Shipping Details")]
+
     public string Country
     {
         get { return country; }
@@ -877,6 +908,7 @@ public class OrderInfo
     }
 
     [Display(GroupName = "Shipping Details")]
+
     public string ShipCity
     {
         get { return shippingCity; }
@@ -907,12 +939,15 @@ Similarly, you can remove the child columns from particular stacked header direc
 {% highlight c# %}
 var removingColumns = this.dataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns.Split(',').ToList<string>();   
 string childColumns = string.Empty;
+
 foreach(var stackedColumnName in removingColumns.ToList())
 {
+
     if (stackedColumnName.Equals("OrderID"))
     {
         removingColumns.Remove(stackedColumnName);
     }
+
     else
         childColumns = childColumns + stackedColumnName + ",";
 }
@@ -950,6 +985,7 @@ this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
 
 void dataGrid_QueryRowHeight(object sender, Syncfusion.UI.Xaml.Grid.QueryRowHeightEventArgs e)
 {
+
     if(e.RowIndex <this.dataGrid.GetHeaderIndex())
     {
         e.Height = 50;
@@ -1100,6 +1136,7 @@ When the width of the column is explicitly defined or column is resized, then co
 {% highlight c# %}
 foreach (var column in dataGrid.Columns)
 {
+
     if (!double.IsNaN(column.Width))
         column.Width = double.NaN;
 }
@@ -1117,17 +1154,22 @@ this.dataGrid.GridColumnSizer = new GridColumnSizerExt(dataGrid);
 
 public class GridColumnSizerExt:GridColumnSizer
 {
+
     public GridColumnSizerExt(SfDataGrid dataGrid)
         :base(dataGrid)
     {
 
     }        
+
     // Calculate Width for column when ColumnSizer is SizeToCells.        
+
     protected override double CalculateCellWidth(GridColumn column, bool setWidth = true)
     {
         return base.CalculateCellWidth(column, setWidth);
     }
+
     //Calculate Width for the column when ColumnSizer is SizeToHeader
+
     protected override double CalculateHeaderWidth(GridColumn column, bool setWidth = true)
     {
         return base.CalculateHeaderWidth(column, setWidth);
@@ -1191,6 +1233,7 @@ public class ColumnSizerExt : GridColumnSizer
     protected override FormattedText GetFormattedText(GridColumn column, object record, string displayText)
     {
         var formattedText = base.GetFormattedText(column, record, displayText);
+
         if (column.MappingName.Equals("OrderID"))
         {            
             formattedText.SetFontFamily(new FontFamily("TimesNewRoman"));
@@ -1212,6 +1255,7 @@ For example, you can calculate the column width, with specified ratios instead o
 {% highlight c# %}
 public static class StarRatio
 {
+
     public static int GetColumnRatio(DependencyObject obj)
     {
         return (int)obj.GetValue(ColumnRatioProperty);
@@ -1271,8 +1315,10 @@ public class GridColumnSizerExt : GridColumnSizer
             {
                 isRemoved = true;
                 columns.Remove(column);
+
                 foreach (var remColumn in removedColumn)
                 {
+
                     if (!columns.Contains(remColumn))
                     {
                         removedWidth += remColumn.ActualWidth;
@@ -1288,6 +1334,7 @@ public class GridColumnSizerExt : GridColumnSizer
             if (!isRemoved)
             {
                 columns.Remove(column);
+
                 if (!removedColumn.Contains(column))
                     removedColumn.Add(column);
             }
@@ -1334,6 +1381,7 @@ this.dataGrid.GridColumnSizer = new CustomColumnSizer(this.dataGrid);
 
 public class CustomColumnSizer:GridColumnSizer
 {
+
     public CustomColumnSizer(SfDataGrid grid)
         : base(grid)
     {
@@ -1341,21 +1389,25 @@ public class CustomColumnSizer:GridColumnSizer
        
     protected override double CalculateCellWidth(GridColumn column, bool setWidth = true)
     {            
+
         if (column is GridComboBoxColumn)
         {                                
             double colWidth = double.MaxValue;                               
             var source = (column as GridComboBoxColumn).ItemsSource;                
             string maximumComboItemsText = string.Empty;                
             var clientSize = new Size(colWidth, DataGrid.RowHeight);                
+
             foreach (var comboItems in source)
            {
                 string comboItemText = (string)comboItems;
+
                 if (maximumComboItemsText.Length < comboItemText.Length)
                     maximumComboItemsText = comboItemText;                   
             }                
             var measureSize= MeasureText(clientSize,maximumComboItemsText,column,null,GridQueryBounds.Width);
             return measureSize.Width + SystemParameters.ScrollWidth;
         }                
+
         else
             return base.CalculateCellWidth(column, setWidth);
     }      
@@ -1372,6 +1424,7 @@ SfDataGrid provides MVVM support for binding `GridColumn` properties with ViewMo
 public class ViewModel
 {
     private bool _allowFiltering =true;
+
     public bool AllowFiltering
     {
         get { return _allowFiltering; }

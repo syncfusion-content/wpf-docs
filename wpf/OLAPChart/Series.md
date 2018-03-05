@@ -226,8 +226,8 @@ We can use the following code sample for enabling Chart animations:
     OlapDataManager="{Binding DataManager}" Grid.Row="1"  
     Background="Transparent" ColorPalette="Metro"      
     SeriesAnimateOption="Bottom"  
-    SeriesAnimateOneByOne="true"        
-    EnableSeriesAnimation="true"
+    SeriesAnimateOneByOne="True"        
+    EnableSeriesAnimation="True"
     SeriesAnimationDuration="00:00:3" />
 
 {% endhighlight %}

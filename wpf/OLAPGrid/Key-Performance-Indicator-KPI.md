@@ -62,27 +62,14 @@ private OlapReport LoadBasicKPI()
 ''' </summary>
 ''' <returns></returns>
 Private Function LoadBasicKPI() As OlapReport
-    Dim olapReport As New OlapReport()
-    ' Selecting the Cube
+    Dim olapReport As OlapReport = New OlapReport()
     olapReport.CurrentCubeName = "Adventure Works"
-    Dim kpiElement As New KpiElements()
-    ' Specifying the KPI Element name and configuring its Indicators
-    kpiElement.Elements.Add(New KpiElement()
-    {
-        Name = "Internet Revenue",
-        ShowKPIGoal = true,
-        ShowKPIStatus = true,
-        ShowKPIValue = true,
-        ShowKPITrend = true
-    })
-    Dim dimensionElementRow As New DimensionElement()
-    ' Specifying the Name for Row Dimension Element
+    Dim kpiElement As KpiElements = New KpiElements()
+    kpiElement.Elements.Add(New KpiElement With {.Name = "Internet Revenue", .ShowKPIGoal = True, .ShowKPIStatus = True, .ShowKPIValue = True, .ShowKPITrend = True})
+    Dim dimensionElementRow As DimensionElement = New DimensionElement()
     dimensionElementRow.Name = "Date"
-    ' Specifying the Level element
     dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
-    ' Adding Row Elements
     olapReport.SeriesElements.Add(dimensionElementRow)
-    ' Adding Column Elements
     olapReport.CategoricalElements.Add(kpiElement)
     Return olapReport
 End Function

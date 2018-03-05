@@ -19,7 +19,7 @@ You can add a Indicator to the Report Designer using the following steps.
 
    ![](Draw-Indicator-Report-Item_images/Draw-Indicator-Report-Item_img2.png)
 
-3. To Add the Report Items such as text boxes, lines, and images and rectangle to the indicator, click and drag the selected report items to the DataBar.
+3. To Add the Report Items such as text boxes, lines, and images and rectangle to the indicator, click and drag the selected report items to the Indicator.
 
    ![](Draw-Indicator-Report-Item_images/Draw-Indicator-Report-Item_img3.png)
 

@@ -288,7 +288,6 @@ You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http
 {% highlight c# %}
 var group = (dataGrid.View.Groups[0] as Group);
 this.dataGrid.ExpandGroup(group);
-
 this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
@@ -392,20 +391,27 @@ public class GroupDateTimeConverter : IValueConverter
 
         if (days <= dayofweek)
         {
+
             if (days == 0)
                 return "TODAY";
+
             if (days == 1)
                 return "YESTERDAY";
             return saleinfo.Date.DayOfWeek.ToString().ToUpper();
         }
+
         if (difference > 0 && difference <= 7)
             return "LAST WEEK";
+
         if (difference > 7 && difference <= 14)
             return "TWO WEEKS AGO";
+
         if (difference > 14 && difference <= 21)
             return "THREE WEEKS AGO";
+
         if (dt.Year == saleinfo.Date.Year && dt.Month == saleinfo.Date.Month)
             return "EARLIER THIS MONTH";
+
         if (DateTime.Now.AddMonths(-1).Month == saleinfo.Date.Month)
             return "LAST MONTH";
         return "OLDER";
@@ -496,6 +502,7 @@ In the below code snippet, the OrderID column compared and sorted based on the n
 public class SortGroupComparers : IComparer<Group>, ISortDirection
 {
     public ListSortDirection SortDirection { get; set; }
+
     public int Compare(Group x, Group y)
     {
 
@@ -503,6 +510,7 @@ public class SortGroupComparers : IComparer<Group>, ISortDirection
         var xgroupSummary = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
         var ygroupSummary = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
         cmp = ((IComparable)xgroupSummary).CompareTo(ygroupSummary);
+
         if (this.SortDirection == ListSortDirection.Descending)
             cmp = -cmp;
         return cmp;
@@ -570,6 +578,7 @@ this.dataGrid.GroupExpanding += dataGrid_GroupExpanding;
 
 void dataGrid_GroupExpanding(object sender, Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs e)
 {
+
     if (e.Group.Key.Equals(1001))    
         e.Cancel = true;    
 }       
@@ -605,6 +614,7 @@ this.dataGrid.GroupCollapsing += dataGrid_GroupCollapsing;
 
 void dataGrid_GroupCollapsing(object sender, GroupChangingEventArgs e)
 {
+
     if (e.Group.Key.Equals(1001))    
         e.Cancel = true;    
 }

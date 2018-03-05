@@ -58,7 +58,7 @@ To hide the Expanders:
 
 'Displaying the Expander button in Controls
 
-olapReport.ShowExpanders = false 
+olapReport.ShowExpanders = False 
 
 
 
