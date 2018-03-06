@@ -41,12 +41,15 @@ Multiple selected elements are visually represented as shown.
 
 ![](Interaction_images/Interaction_img5.jpeg)
 
+* `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
+
 ### Select/Unselect the elements programmatically
 
 The IsSelected Property is used to select/unselect the elements at runtime.
 
 The following code example illustrates how to select/unselect an item through programmatically.
 
+{% tabs %}
 {% highlight C# %}
 
 // Selects an elements 
@@ -58,95 +61,13 @@ node.IsSelected = true;
 node.IsSelected = false;
 
 {% endhighlight %}
+{% endtabs %}
 
-## Drag
+## Events 
 
-* An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping").
+* `ItemSelectingEvent` and `ItemselectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
 
-![](Interaction_images/Interaction_img6.jpeg)
-
-## Resize
-
-* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
-* When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/wpf/sfdiagram/Gridlines#snapping "Snapping").
-
-![](Interaction_images/Interaction_img7.jpeg)
-
-## Rotate
-
-* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
-* The Node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position").
-
-![](Interaction_images/Interaction_img8.jpeg)
-
-## Connection Editing
-
-* Each segment of a selected Connector is editable with some specific handles/thumbs.
-
-### End point handles
-
-Source and target points of the selected Connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
-
-![](Interaction_images/Interaction_img9.jpeg)
-
-### Straight segment editing
-
-* End point of each straight segment is represented by a thumb that enables to edit the segment.
-* Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
-* Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
-
-### Orthogonal thumbs
-
-* Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
-
-![](Interaction_images/Interaction_img10.jpeg)
-
-* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
-
-![](Interaction_images/Interaction_img11.jpeg)
-
-### Bezier thumbs
-
-* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
-
-![](Interaction_images/Interaction_img12.jpeg)
-
-## Interaction on thumb
-
-DiagramThumb is used to allow interaction with Diagram elements. We have provided virtual method to customize the thumb interaction. This method will be invoked if any diagram thumb is involved in interaction. 
-
-We have provided `ThumbInteractionTool` virtual method in SfDiagram. Argument of this method is type of `InteractionToolArgs`.
-
-Following table describes the details of the properties for `InteractionToolArgs` 
-
-| Property | Description |
-|---|---|
-| Thumbs | To identify the type of the thumb. |
-| ThumbCorners | To identify the corner of the thumb. |
-| DragConstraints | To customize the interaction of the thumb. |
- 
-Following code illustrates how to customize the thumb interaction using `ThumbInteractionTool` virtual method.
-
-{% highlight C# %}
-
-//Override the ThumbInteractionTool method
-protected override void ThumbInteractionTool(InteractionToolArgs args)
-{
-    if(args.Thumbs==Thumbs.Resizer)
-    {
-           if(args.ThumbCorners==ThumbCorners.BottomRight)
-           {
-           
-               //Here, Aspect Ratio of the Node is customized based on the Thumb Type.
-               args.DragConstraints = DragConstraints.AspectRatio;
-           }
-    }
-} 
-
-{% endhighlight %}
+* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
 
 ## Preview Dragging
 
@@ -185,71 +106,21 @@ this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode
 
 ## Drag and Drop Nodes over other elements
 
-Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the constraints property. The following code illustrates how to enable **dropping**.
+Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `AllowDrop` constraints property for both node and connector.
 
+{% tabs %}
 {% highlight C# %}
 
-(diagram.Info as IGraphInfo).ItemDropEvent += MainWindow_ItemDropEvent;
+//Enable of AllowDrop Constraints for Node
 
-ObservableCollection<Node> nodes = new ObservableCollection<Node>();
-
-Node node = new Node()
-{
-	UnitHeight = 100,
-       UnitWidth = 100,
-       OffsetX = 400,
-       OffsetY = 400,
-       Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-       ShapeStyle = this.Resources["shapestyle"] as Style,
-       Constraints = NodeConstraints.Default |  NodeConstraints.AllowDrop
-};
-
-Connector connector = new Connector()
-{
-	SourcePoint = new Point(500, 500),
-       TargetPoint = new Point(600, 600),
-       Constraints = ConnectorConstraints.Default | ConnectorConstraints.AllowDrop
-};
-
-ObservableCollection<Group> groups = new ObservableCollection<Group>();
-
-Group group = new Group()
-{
-	Nodes = new ObservableCollection<Node>
-       {
-       	Node
-	},
-       Connectors = new ObservableCollection<Connector>
-       {
-       	connector
-      	},
-};
-
-groups.Add(group);
-diagram.Groups = groups;
-
-Node node1 = new Node()
-
-{
-	UnitWidth = 100,
-       UnitHeight = 100,
-       OffsetX = 300,
-       OffsetY = 300,
-       Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-       ShapeStyle = this.Resources["shapestyle"] as Style,
-       Constraints=NodeConstraints.Default | NodeConstraints.AllowDrop
-};
-
-nodes.Add(node1);
-diagram.Nodes = nodes;
-
-private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
-{
-	//Source - Node
-       //Target – Group
-}
+Node.Constraints |= NodeConstraints.AllowDrop;
 
 {% endhighlight %}
+{% endtabs %}
+
+## Events
+
+* `ItemDropEvent`, `DragEnter`, `DragOver` and `DragLeave` events will notify you the Source and elements that are interacted with the dropped element(target).To explore about arguments, please refer to [ItemDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html) .
 
 ## Automatic Alignment
 
@@ -317,13 +188,13 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
                 {
                     if (intercept is NodeViewModel)
                     {
-                        var intersettingNode = (NodeViewModel)intercept;
-                        var collisionState1 = new CollisionState() { Item = intersettingNode };
+                        var intersectingNode = (NodeViewModel)intercept;
+                        var collisionState1 = new CollisionState() { Item = intersectingNode };
                         ((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState1);
 
                         // Re-arranging node's position
-                        intersettingNode.OffsetX = collisionState1.Offset.X;
-                        intersettingNode.OffsetY = collisionState1.Offset.Y;
+                        intersectingNode.OffsetX = collisionState1.Offset.X;
+                        intersectingNode.OffsetY = collisionState1.Offset.Y;
                     }
                 }
             }
@@ -614,6 +485,101 @@ For more information about HitPadding for Connector, refer to [Hit Padding](/wpf
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
 * Diagram can be zoomed in or out by using Ctrl + mouse wheel.
+
+## Drawing Tools
+
+Drawing tool allow you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page.
+
+### Shapes
+
+To draw a shape, You have to activate the drawing tool by using the Tool property and you need to set the event for GetDrawType.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style TargetType="Path" x:Key="shapestyle">
+  <Setter Property="Fill" Value="#fbe172"></Setter>
+  <Setter Property="Stroke" Value="Black"/>
+  <Setter Property="Stretch" Value="Fill"></Setter>
+</Style>
+
+<Style TargetType="{x:Type diagram:Node}">
+  <Setter Property="Shape" Value="M13.560 67.524 L 21.941 41.731 L 0.000 25.790 L
+                                  27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000 
+                                  25.790 L 49.061 41.731 L 57.441 67.524 L 35.501 
+                                  51.583 z"></Setter>
+ <Setter Property="ShapeStyle" Value="{StaticResource shapestyle}"></Setter>
+</Style>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//GetDrawType event is used to specify which item have to be drawn by the user.
+
+(diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
+diagram.DrawingTool = DrawingTool.Node;
+diagram.Tool = Tool.ContinuesDraw;
+
+private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
+{
+	args.DrawItem = new TextBlock()
+	{
+		Text="Path",
+		HorizontalAlignment = HorizontalAlignment.Center,
+		VerticalAlignment = VerticalAlignment.Center
+	};
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Tools_images/Tools_img2.jpeg)
+
+* `GetDrawType` event will invoke when start drawing and get DrawItem (i.e which item you will draw) from the user.To explore about arguments, please refer to the [DrawTypeEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DrawTypeEventArgs.html) .
+
+### Connectors
+
+To draw Connectors, you have to set the Connector to DrawingTool property. The drawing tool can be activated by using the Tool property as shown. The following code example illustrates how to draw a straight line Connector.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style x:Key="decoratorstyle" TargetType="Path">
+  <Setter Property="Stroke" Value="Black" />
+  <Setter Property="Fill" Value="Black" />
+  <Setter Property="StrokeThickness" Value="1" />
+</Style>
+
+<Style TargetType="Path" x:Key="connectorstyle">
+  <Setter Property="Stroke" Value="Black"></Setter>
+  <Setter Property="StrokeThickness" Value="2"></Setter>
+</Style>
+
+<Style TargetType="{x:Type diagram:Connector}">
+  <Setter Property="TargetDecoratorStyle" Value="{StaticResource decoratorstyle1}"/>
+  <Setter Property="ConnectorGeometryStyle" Value="{StaticResource connectorstyle}"/>
+</Style>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+diagram.DrawingTool = DrawingTool.Connector;
+diagram.Tool = Tool.DrawOnce;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Tools_images/Tools_img3.jpg)
+
+Diagram allows you to establish connection with Node/Port as soon as you click on the Node/Port.
+
+* `ObjectDrawn` event will invoke with drawing state.To explore about arguments,  please refer to the [ObjectDrawnEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html) .
 
 ## Keyboard
 
