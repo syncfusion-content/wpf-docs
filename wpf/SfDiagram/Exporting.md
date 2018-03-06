@@ -10,6 +10,7 @@ documentation: ug
 # Exporting
 
 SfDiagram provides support to export the desired region of the Diagram to desired formats.Contents of the SfDiagram can be exported as raster image files by using Export method. 
+
 The exporting can be customized by using [ExportSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings_members.html) property of the SfDiagram.
 
 SfDiagram can be exported in the following File formats.
@@ -37,10 +38,8 @@ Diagram.Export();
 {% endhighlight %}
 {% endtabs %}
 
-## VectorImages
+## Export To PDF
 
 SfDiagram provides support to export the Diagram as XPS format by using the `IsSaveToXps` property of `ExportSettings`.
 
-## Export To PDF
-
-We can convert the XPS document into PDF file through Syncfusion.XPS.XPSToPdfConverter.Please refer to the KB link to [Export the SfDiagram as PDF](https://www.syncfusion.com/kb/8494/how-to-export-the-diagram-as-pdf).
+We can convert the XPS document into PDF file through `Syncfusion.XPS.XPSToPdfConverter`.Please refer to the KB link to [Export the SfDiagram as PDF](https://www.syncfusion.com/kb/8494/how-to-export-the-diagram-as-pdf).
