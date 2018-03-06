@@ -40,7 +40,7 @@ Sample Link: WPF Dashboard->SfDiagram->Getting Started->Overview.
 
 ## Interaction
 
-Interaction of Overview can be controlled using `Constraint` proeprty. Overview allows Zoom and Pan interaction on it.
+Interaction of Overview can be controlled using `Constraint` property. Overview allows Zoom and Pan interaction on it.
 
 Please refer to the [OverviewConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OverviewConstraints.html) to know about interactions can be done in Overview.
 

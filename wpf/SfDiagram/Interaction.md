@@ -124,7 +124,7 @@ Node.Constraints |= NodeConstraints.AllowDrop;
 
 SfDiagram provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
-Using [CollisioState](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CollisionState_members.html) and `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
+Using [CollisionState](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CollisionState_members.html) and `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
 
 
 {% tabs %}
@@ -290,7 +290,7 @@ Appearance of the [QuickCommand](https://help.syncfusion.com/cr/cref_files/wpf/s
 
 ![](Interaction_images/QuickCommand_img2.jpg)
 
-Please refer to the sample to achive above customization.
+Please refer to the sample to achieve above customization.
 
 Sample link :[QuickCommand](http://www.syncfusion.com/downloads/support/directtrac/199409/ze/QuickCommand_Sample1221181958.zip).
 
@@ -304,7 +304,7 @@ QuickCommand can be aligned relative to boundaries of the Node or segments of th
 * `HorizontalAlignment` and `VerticalAlignment`properties are used to align the quick commands for horizontal and vertical positions.
 * `Margin` is an absolute value used to add some blank space in any one of its four sides.
 
-The Alignment of QuickCommand is simillar to [Annotation Alignment](/wpf/sfdiagram/Annotation#alignment "Alignment").   
+The Alignment of QuickCommand is similar  to [Annotation Alignment](/wpf/sfdiagram/Annotation#alignment "Alignment").   
 
 ## Automatic Port creation
 
