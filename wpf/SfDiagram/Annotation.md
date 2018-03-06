@@ -281,46 +281,41 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 
 ## Interaction
 
-Annotation can be Selectable, Draggable, Resizable, Rotatable and Editable.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
+Annotation can be Select, Drag, Resize and Rotate by using `Annotation Constraints`.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
+To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) .
 
 {% tabs %}
 {% highlight C# %}
 
-//Define the Annotation
 AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
-{
-    Content = "Annotation",
-    //Define the Constraints
-    Constraints = AnnotationConstraints.Default,
-};
+            {
+                Content = "Annotation",
+                Constraints = AnnotationConstraints.Default,
+            };
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Annotation_images/Annotation_img14.PNG)
+![](Annotation_images/annotation _interaction.gif)
 
-For AnnotationConstraints please refer to [AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html "AnnotationConstraints").
+### Reference for Rotation
 
-## Rotation
-Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
+ * `Rotate Reference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [Rotate Reference](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight C# %}
 
-//Define the Annotation
 AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
-{
-    Content = "Annotation",
-    //Define the RotationReference
-    RotationReference=RotationReference.Page
-};
+            {
+                Content = "Annotation",
+                Constraints = AnnotationConstraints.Default,
+                RotationReference = RotationReference.Parent,
+            };
 
 {% endhighlight %}
 {% endtabs %}
 
-The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).
-
-![](Annotation_images/Annotation_img15.PNG)
+* [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the action, state of action and value changes.
 
 ## Multiple Annotations
 
