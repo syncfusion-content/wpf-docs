@@ -14,7 +14,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 
 ## Graph Constraints
 
-`GraphConstraints` allow to enable or disable the following behaviors.
+[GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allow to enable or disable the following behaviors.
 
 * Page Editing
 * Line Bridging
@@ -32,11 +32,9 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 {% endhighlight %}
 {% endtabs %}
 
-Please refer to the members of [GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html).
-
 ## Node Constraints
 
-`NodeConstraints` allow to enable or disable the following behaviors of Node.
+[NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allow to enable or disable the following behaviors of Node.
 
 * Selection
 * Deletion
@@ -68,11 +66,9 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-Please refer to the members of [NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html)
-
 ## Connector Constraints
 
-`ConnectorConstraints` allow to enable or disable certain behaviors of Connectors. They are as follows.
+[ConnectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allow to enable or disable certain behaviors of Connectors. They are as follows.
 
 * Selection
 * Drag
@@ -96,13 +92,11 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 (diagram.Connectors as ObservableCollection<ConnectorViewModel>).Add(connector1);
 
 {% endhighlight %}
-{% endtabs %}
-
-Please refer to the members of [ConnectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html)
+{% endtabs %} 
 
 ## Port Constraints
 
-`PortConstraints` allow to enable or disable certain behaviors of port. They are as follows.
+[PortConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allow to enable or disable certain behaviors of port. They are as follows.
 
 * Connect 
 * Drag
@@ -123,11 +117,9 @@ NodePortViewModel port=	new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-Please refer to the members of [PortConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortConstraints.html)
-
 ## Annotation Constraints
 
-`AnnotationConstraints` allow to enable or disable the following behaviors of Annotation.
+[AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allow to enable or disable the following behaviors of Annotation.
 
 * Selection
 * Drag
@@ -150,11 +142,9 @@ AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-Please refer to the members of [AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html)
-
 ## Selector Constraints
 
-Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with `SelectorConstraints`. The part of selector is categorized as follows.
+Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with [SelectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html). The part of selector is categorized as follows.
 
 * Resizer
 * Rotator
@@ -170,11 +160,9 @@ The following code example illustrates how to hide rotator.
 {% endhighlight %}
 {% endtabs %}
 
-Please refer to the members of [SelectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html)
-
 ## Snap Constraints
 
-`SnapConstraints` control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
+[SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
 * Show only Horizontal or Vertical Gridlines
 * Show both Horizontal or Vertical Gridlines
@@ -190,8 +178,6 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
 
 {% endhighlight %}
 {% endtabs %}
-
-Please refer to the members of [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html)
 
 ### Inherit behaviors
 
@@ -225,7 +211,7 @@ Bitwise Operations are used to manipulate the flagged enumerations [enum]. In th
 
 ### Add Operation
 
-You can add or enable multiple values at a time	by using Bitwise ‘|’ (OR) operator.
+You can add or enable multiple values at a time	by using Bitwise `|` (OR) operator.
 
 {% tabs %}
 {% highlight C# %}
