@@ -9,7 +9,7 @@ documentation: ug
 
 # Commands
 
-Diagram provides set of Commands to perform the functionalities in application.
+Diagram provides set of commands to perform the functionalities in application.
 
 * Alignment commands
 * Spacing commands
@@ -270,7 +270,7 @@ graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.Zoom });
 
 The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo.
 
-Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram. 
+Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints] (https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
 
 {% tabs %}
 {% highlight C# %}
@@ -377,74 +377,12 @@ List of Commands and Key Gesture:
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
 | Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.HorizontalScroll} |
-| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn | ZoomCommand.ZoomOut} |
+| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn `|` ZoomCommand.ZoomOut} |
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
 
 ### Custom command
 
-User defined commands can also be created and mapped with existing gesture by using command manager. The following code example explains how to register mouse key gesture with Parameter to Save Command (Control + S)
+User defined commands can also be created and mapped with existing gesture by using command manager. The following sample explains how to register mouse key gesture with Parameter to Save Command (Control + S)
 
-#### Create a user defined command: Save command
-
-{% tabs %}
-{% highlight C# %}
-
-//Create ICommand
-private ICommand _save;
-public ICommand Save
-{
-	get { return _save;}
-	set { _save = value; }
-}
-        
-// Initialize Command
-Save = new DelegateCommand(OnSaveCommand);
-         
-// Execute the Save Command
-private void OnSaveCommand(object obj)
-{
-    SaveFileDialog dialog = newSaveFileDialog();
-    Object parameter = (obj as IGestureParameter).Parameter;
-    dialog.FileName = parameter.ToString();
-    dialog.Filter = "XAML File (*.xaml)|*.xaml";
-    if (dialog.ShowDialog() == true)
-    {
-        using (Stream s = File.Open(dialog.FileName, FileMode.CreateNew))
-        {
-            diagram.Save(s);
-        }
-    }
-}
-  
-{% endhighlight %}
-{% endtabs %}
-  
-#### Map and user defined command with key gesture:
-
-Add new Commands to CommandManager - Ctrl + S -> Save
-          
-{% tabs %}		    
-{% highlight C# %}	
-		
-sfdiagram.CommandManager.Commands.Add
-(
-    new GestureCommand()
-	{
-        Command = Save,
-		Gesture = new Gesture
-		{
-			KeyModifiers = ModifierKeys.Control,
-			KeyState = KeyStates.Down,
-			Key = Key.S
-		},
-
-		// Parameter is the name of the file (.xmal)
-		Parameter = "diagram"
-	}
-);
-
-{% endhighlight %}
-{% endtabs %}
-
-Sample link : http://www.syncfusion.com/downloads/support/directtrac/199579/ze/CustomCommand-482516272f10
+Sample link : [Custom Command](http://www.syncfusion.com/downloads/support/directtrac/198544/ze/CustomCommand-1777908354.zip).
