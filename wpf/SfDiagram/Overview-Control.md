@@ -20,12 +20,12 @@ Overview control solved this problem by displaying a preview (overall view) of t
 
 ## Define Overview
 
-Overview Control is available in the Namespace `Syncfusion.UI.Xaml.Diagram.Controls'.
+Overview Control is available in the Namespace `Syncfusion.UI.Xaml.Diagram.Controls`.
 
 {% tabs %}
 {% highlight xaml %}
 
- xmlns:overview="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
+xmlns:overview="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
  
 <overview:Overview Source="{Binding ElementName=diagram}" Height="300" Margin="0,25,0,0"/>
 	
@@ -36,13 +36,15 @@ Overview Control is available in the Namespace `Syncfusion.UI.Xaml.Diagram.Contr
 
 Refer to the Overview Sample from the following link.
 
-Sample Link: WPF Dashboard->SfDiagram->GettingStarted->Overview.
+Sample Link: WPF Dashboard->SfDiagram->Getting Started->Overview.
 
 ## Interaction
 
-`Constraint` property of Overview controls the interaction on Overview. Overview allows Zoom and Pan interaction on it.
+Interaction of Overview can be controlled using `Constraint` proeprty. Overview allows Zoom and Pan interaction on it.
 
-Please refer to the OverviewConstraints,  to explore the [Interactions](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OverviewConstraints.html) can be done in Overview.
+Please refer to the [OverviewConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OverviewConstraints.html) to know about interactions can be done in Overview.
+
+* `OverviewChangedEvent` will notify the interactions in Overview with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs_members.html).
 
 ## Deferred Scrolling
 
