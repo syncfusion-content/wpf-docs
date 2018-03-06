@@ -65,7 +65,7 @@ node.IsSelected = false;
 
 ## Events 
 
-* `ItemSelectingEvent` and `ItemselectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
+* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
 
 * `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
 
@@ -118,25 +118,22 @@ Node.Constraints |= NodeConstraints.AllowDrop;
 {% endhighlight %}
 {% endtabs %}
 
-## Events
-
 * `ItemDropEvent`, `DragEnter`, `DragOver` and `DragLeave` events will notify you the Source and elements that are interacted with the dropped element(target).To explore about arguments, please refer to [ItemDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html) .
 
 ## Automatic Alignment
 
 SfDiagram provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
-Using `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
+Using [CollisionState](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CollisionState_members.html) and `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
 
+
+{% tabs %}
 {% highlight C# %}
 
 // Invoking SelectorChanged Event
 (this.diagram.Info as IGraphInfo).SelectorChangedEvent += OnSelectorChangedEvent;
 
-{% endhighlight %}
-
-{% highlight C# %}
-
+// SelectorChanged event - custom code
 private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args)
 {
     // Need to adjust selected node's position, if it in contact with any other elements on drag complete
@@ -161,11 +158,13 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Interaction_images/AutomaticAlignment_img1.gif)
 
 In some cases, there may requirement for repositioning overlapping objects, rather than selected object. Using `GetOverlappingObjects` method, you can able to find all overlapping objects(such as Node/Connector/Annotation) for a given node.
 
+{% tabs %}
 {% highlight C# %}
 
 private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args)
@@ -203,6 +202,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Interaction_images/AutomaticAlignment_img2.gif)
 
@@ -210,6 +210,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 
 The `Space` property of CollisionState allows you to change the spacing distance.
 
+{% tabs %}
 {% highlight C# %}
 
 var selectedNode = (NodeViewModel)selectedNodes[0];
@@ -217,11 +218,13 @@ var collisionState = new CollisionState() { Item = selectedNode, Space = 5 };
 ((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState);
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Ignore objects as an overlap
 
 By default, annotation's of other elements were also considered as an intercepts for any given node. This can be disabled with the help of `IncludeSubElements` property of CollisionState.
 
+{% tabs %}
 {% highlight C# %}
 
 var selectedNode = (NodeViewModel)selectedNodes[0];
@@ -229,14 +232,13 @@ var collisionState = new CollisionState() { Item = selectedNode, IncludeSubEleme
 ((IGraphInfo)this.diagram.Info).GetCollisionFreeLocation(collisionState);
 
 {% endhighlight %}
+{% endtabs %}
 
 In addition to this,`IgnoreList` property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
 
 ![](Interaction_images/AutomaticAlignment_img3.gif)
 
-A sample application can be downloaded from the following location:
-
-http://www.syncfusion.com/downloads/support/directtrac/177341/ze/Automatic-Alignment942886659 
+A sample application can be downloaded from the following location:[Automatic-Alignment]http://www.syncfusion.com/downloads/support/directtrac/177341/ze/Automatic-Alignment942886659.zip
 
 ## Quick Command
 
@@ -288,7 +290,9 @@ Appearance of the [QuickCommand](https://help.syncfusion.com/cr/cref_files/wpf/s
 
 ![](Interaction_images/QuickCommand_img2.jpg)
 
-Sample link : http://www.syncfusion.com/downloads/support/directtrac/199409/ze/QuickCommand_Sample1221181958
+Please refer to the sample to achieve above customization.
+
+Sample link :[QuickCommand](http://www.syncfusion.com/downloads/support/directtrac/199409/ze/QuickCommand_Sample1221181958.zip).
 
 By default QuickCommand will host on Node. [VisibilityMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~VisibilityMode.html) property is to define the host of the QuickCommand either Node or Connector or both.    
 
@@ -300,7 +304,7 @@ QuickCommand can be aligned relative to boundaries of the Node or segments of th
 * `HorizontalAlignment` and `VerticalAlignment`properties are used to align the quick commands for horizontal and vertical positions.
 * `Margin` is an absolute value used to add some blank space in any one of its four sides.
 
-The Alignment of QuickCommand is simillar to [Annotation Alignment](/wpf/sfdiagram/Annotation#alignment "Alignment").   
+The Alignment of QuickCommand is similar  to [Annotation Alignment](/wpf/sfdiagram/Annotation#alignment "Alignment").   
 
 ## Automatic Port creation
 
@@ -580,6 +584,26 @@ diagram.Tool = Tool.DrawOnce;
 Diagram allows you to establish connection with Node/Port as soon as you click on the Node/Port.
 
 * `ObjectDrawn` event will invoke with drawing state.To explore about arguments,  please refer to the [ObjectDrawnEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html) .
+
+### FreeHand drawing
+
+Draw Bezier connections using freehand drawing. [DrawingTool](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DrawingTool.html) property is used to choose the FreeHand drawing.
+
+{% tabs %}
+{% highlight C# %}
+
+// Enable the FreeHand drawing
+diagram.DrawingTool = DrawingTool.FreeHand;
+
+// Enable the Tool
+//diagram.Tool = Tool.DrawOnce;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Interaction_images/FreeHand_img1.gif)
+
+FreeFormEvent will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs_members.html). 
 
 ## Keyboard
 
