@@ -26,8 +26,9 @@ SfDiagram control can be added to the application by dragging it from Toolbox an
 ### Adding control manually in XAML
 
 In order to add control manually in XAML, do the below steps:
-1. Add the below required assembly reference to the project, ** Syncfusion.SfDiagram.WPF **.
-2. Import Syncfusion WPF schema ** http://schemas.syncfusion.com/wpf ** or SfDiagram control namespace ** Syncfusion.UI.Xaml.Diagram ** in XAML page.
+
+1. Add the below required assembly reference to the project, Syncfusion.SfDiagram.WPF .
+2. Import Syncfusion WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
     
 {% tabs %}
@@ -50,9 +51,11 @@ In order to add control manually in XAML, do the below steps:
 {% endtabs %}
 
 ### Adding control manually in C\#
+
 In order to add control manually in XAML, do the below steps:
-1. Add the below required assembly references to the project,** Syncfusion.SfDiagram.WPF **.
-2. Import SfDiagram namespace **Syncfusion.UI.Xaml.Diagram**.
+
+1. Add the below required assembly references to the project, Syncfusion.SfDiagram.WPF.
+2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
 3. Create SfDiagram control instance and add it to the Grid.
 
 {% tabs %}
@@ -119,7 +122,10 @@ Connectors property is assigned with the ConnectorCollection, that is, Observabl
 {% endtabs %}
 
 #### DataBinding
-Any objects can be added as Node/Connector/Annotation/Group for the diagram. But to have better access to diagram, some interfaces have to be implemented by the such objects. Such interfaces are already implemented as a set of ViewModel classes. There classes will just implement properties, they don’t have any logic. 
+
+Any objects can be added as Node/Connector/Annotation/Group for the diagram. But to have better access to diagram, some interfaces have to be implemented by the such objects. Such interfaces are already implemented as a set of ViewModel classes. 
+There classes will just implement properties, they don’t have any logic. 
+
 By default, View will be generated for each ViewModel and Properties of ViewModel (NodeViewModel) are bind to View (Node). We have changed this Default Behavior (ViewModel to View binding will not work).
 In order to bind the properties of ViewModel to View, need to apply binding style for Diagramming elements in application side.
 
@@ -150,6 +156,7 @@ The following code illustrates how to achieve View to View Model binding by usin
  </Style>
 
 {% endhighlight %}
+
 ### Add Nodes
 
  Let us create and add a NodeViewModel with height, width, shape, shape style,specific position, size and Annotation.

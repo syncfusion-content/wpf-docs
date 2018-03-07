@@ -63,8 +63,6 @@ node.IsSelected = false;
 {% endhighlight %}
 {% endtabs %}
 
-## Events 
-
 * `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
 
 * `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
@@ -400,15 +398,15 @@ Please refer to the code example as below
 
 {% endhighlight %}
 
-## ConnectionIndicator animation for Node
+ ConnectionIndicator animation for Node:
 
 ![](Interaction_images/Interaction_img13.jpeg)
 
-## ConnectionIndicator animation for Connector
+ ConnectionIndicator animation for Connector:
 
 ![](Interaction_images/Interaction_img14.jpeg)
 
-## ConnectorPort to NodePort Connection
+ConnectorPort to NodePort Connection:
 
 ![](Interaction_images/Interaction_img15.jpeg)
 
