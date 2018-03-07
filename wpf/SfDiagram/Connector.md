@@ -119,19 +119,12 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 public NodeViewModel AddNode(double offsetX, string text)
 {
     NodeViewModel node = new NodeViewModel();
-    node.UnitHeight = 65;
-    node.UnitWidth = 65;
+    node.UnitHeight = 60;
+    node.UnitWidth = 100;
     node.OffsetX = offsetX;
     node.OffsetY = 100;
-    node.Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) };
-    node.Annotations = new AnnotationCollection()
-    {
-        new AnnotationEditorViewModel()
-        {
-            Content = text,
-        }
-    };
-     return node;
+    node.Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) };   
+    return node;
 }
 
 {% endhighlight %}
@@ -144,6 +137,7 @@ N> By default, connections are created at the intersecting point of Segments and
 ## Connections with Ports
 
 The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. 
+
 For Connections with Ports, please refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
 
 ## Segments
@@ -168,10 +162,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
     //Define the SegmentCollection
     Segments = new ObservableCollection<IConnectorSegment>()
     {
-        new StraightSegment()
-        {
-          
-        }
+        new StraightSegment()      
     }
 };
 //Adding Connector to Collection
@@ -198,10 +189,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
     //Define the SegmentCollection
     Segments = new ObservableCollection<IConnectorSegment>()
     {
-        new OrthogonalSegment()
-        {
-         
-        }
+        new OrthogonalSegment()      
     }
 };
 //Adding Connector to CollectionS
@@ -231,10 +219,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
     //Define the SegmentCollection
     Segments = new ObservableCollection<IConnectorSegment>()
     {
-        new CubicCurveSegment()
-        {
-         
-        }
+        new CubicCurveSegment()      
     }
 };
 //Adding Connector to Collection
@@ -336,6 +321,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 ## Bridging
 
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`.
+
 The Direction of Bridge can be customized with property `BridgeDirection`.
 
 {% tabs %}
@@ -384,7 +370,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img20.PNG)
+![](Connector_images/bridging.png)
 
 N> Bezier segments do not support Bridging.
 
@@ -404,9 +390,7 @@ StrokeThickness, Stroke and style of the Connector and Decorators can be customi
 </Style>
 
 {% endhighlight %}
-{% endtabs %}
 
-{% tabs %}
 {% highlight c# %}
 
 //Define the ConnectorCollection
@@ -436,7 +420,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](Interaction_images/Interaction_img9.jpeg)
+![](Connector_images/StraightEditing.PNG)
 
 * If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
@@ -453,12 +437,9 @@ Source and target points of the selected connectors are represented with two han
 ### Orthogonal thumbs
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
-
-![](Interaction_images/Interaction_img10.jpeg)
-
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](Interaction_images/Interaction_img11.jpeg)
+![](Connector_images//SegmentEditing.png)
 
 ### Bezier thumbs
 
