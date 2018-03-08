@@ -237,7 +237,7 @@ Installed location path : (%ProgramData%\Report Server\Infrastructure\StartRepor
 <tr>
 <td>SOLUTION</td><td>Ensure whether the data source in a report exists in the referred location.
 <li> For embedded data source, the data source is referred in the local machine </li>
-<li> For shared data source, the data source is existed in the server and used in the local machine. Make sure that the authentication is sufficient to access the data source.
+<li> For shared data source, the data source is existed in the server and used in the local machine. Make sure that the authentication is sufficient to access the data source.</li>
 </td>
 </tr>
 </table>
@@ -621,7 +621,7 @@ Note: Here, name ("Dataset1") is the dataset name used in the report definition.
 </tr>
 
 <tr>
-<td>TEXT</td><td>The value expression for the textrun contains a colon or a line terminator.
+<td>TEXT</td><td>The value expression for the TextRun contains a colon or a line terminator.
 </td>
 </tr>
 
@@ -645,7 +645,7 @@ Colons and line terminators are not valid in expressions.</td>
 </tr>
 
 <tr>
-<td>TEXT</td><td>The tablix report item has an invalid TablixMember in column hierarchy, and the keeptogether property is not set to None.
+<td>TEXT</td><td>The tablix report item has an invalid TablixMember in column hierarchy, and the KeepTogether property is not set to None.
 </td>
 </tr>
 
@@ -911,7 +911,7 @@ Make sure that the field expression is referred to current dataset.</td>
 <tr>
 <td>SOLUTION</td>
 <td>Provide current dataset fields for report item expression. <li> Note : Tablix report item with scope "Dataset1" must contain the fields in the dataset1. If field expression specified in another dataset is required then you should specify the scope. </li>
-<li>Example: =First(Fields!Name.Value, "Dataset2")</td>
+<li>Example: =First(Fields!Name.Value, "Dataset2")</li></td>
 </tr>
 </table>
 
