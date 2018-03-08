@@ -621,7 +621,7 @@ Note: Here, name ("Dataset1") is the dataset name used in the report definition.
 </tr>
 
 <tr>
-<td>TEXT</td><td>The value expression for the textrun contains a colon or a line terminator.
+<td>TEXT</td><td>The value expression for the TextRun contains a colon or a line terminator.
 </td>
 </tr>
 
@@ -645,7 +645,7 @@ Colons and line terminators are not valid in expressions.</td>
 </tr>
 
 <tr>
-<td>TEXT</td><td>The tablix report item has an invalid TablixMember in column hierarchy, and the keeptogether property is not set to None.
+<td>TEXT</td><td>The tablix report item has an invalid TablixMember in column hierarchy, and the KeepTogether property is not set to None.
 </td>
 </tr>
 
