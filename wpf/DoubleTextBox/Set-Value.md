@@ -655,6 +655,70 @@ End Sub
 
 {% endtabs %}
 
+## NumberDecimalDigits Changed
+
+NumberDecimalDigitsChanged – The event occurs when the NumberDecimalDigits property of the DoubleTextBox gets changed.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox NumberDecimalDigitsChanged="DoubleTextBox_NumberDecimalDigitsChanged" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+
+doubleTextBox.NumberDecimalDigitsChanged += DoubleTextBox_NumberDecimalDigitsChanged;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private doubleTextBox As DoubleTextBox = New DoubleTextBox()
+
+doubleTextBox.NumberDecimalDigitsChanged += DoubleTextBox_NumberDecimalDigitsChanged;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+To handle the NumberDecimalDigitsChanged, use this follow code below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+private void DoubleTextBox_NumberDecimalDigitsChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+  {
+           
+   // Insert code to do some operations when the NumberDecimalDigits property is changed 
+  }
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private  Sub DoubleTextBox_MaxValueChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs) 
+
+' Insert code to do some operations when th NumberDecimalDigits  property is changed 
+ 
+End Sub
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Selection Changed
 
 SelectionChanged – The event occurs when the selection in the textbox is changed.
