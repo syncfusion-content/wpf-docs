@@ -537,7 +537,7 @@ Padding is used to leave space between the Connector’s end point and the objec
 {% tabs %}
 {% highlight c# %}
 
-NodePortViewModel nodeport = new NodePortViewModel()
+NodePortViewModel nodePort = new NodePortViewModel()
 {
     //Declaring the ConnectorPadding value
     ConnectorPadding = 10,
@@ -555,7 +555,7 @@ node1.ConnectorPadding = 5;
 NodeViewModel node2 = AddNode(400,200,65,100);
 node2.Ports = new PortCollection()
 {
-    nodeport
+    nodePort
 };
 
 (diagram.Nodes as NodeCollection).Add(node2);
@@ -563,7 +563,7 @@ node2.Ports = new PortCollection()
 diagram.Connectors = new ConnectorCollection();
 ConnectorViewModel conn1 = new ConnectorViewModel()
 {
-    TargetPort=nodeport,
+    TargetPort=nodePort,
     SourceNode = node1,
     TargetNode=node2
 };
