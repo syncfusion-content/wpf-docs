@@ -25,7 +25,7 @@ When a child element of any Group is clicked, its contained Group is selected in
 
 Multiple elements can be selected with the following ways.
 
-* Ctrl+Cick
+* Ctrl+Click
 * Selection rectangle / Rubber band selection
 
 #### Ctrl+Click
