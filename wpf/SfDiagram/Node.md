@@ -70,10 +70,10 @@ The following table illustrates how pivot relates Offset values with Node bounda
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
   <syncfusion:SfDiagram.Nodes>
-    <!--Initialize the NOdeCollection-->
+    <!--Initialize the NodeCollection-->
     <syncfusion:NodeCollection>
       <!--Initialize the Node-->
-      <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Pivot="0,0" Shape="{StaticResource Rectangle}">
+      <syncfusion:NodeViewModel UnitHeight="65" UnitWidth="100" OffsetX="100" OffsetY="100" Pivot="0,0" Shape="{StaticResource Rectangle}">
       </syncfusion:NodeViewModel>
     </syncfusion:NodeCollection>
   </syncfusion:SfDiagram.Nodes>
@@ -88,7 +88,7 @@ diagram.Nodes = new NodeCollection();
 NodeViewModel node = new NodeViewModel()
 {
     //sets the size
-    UnitHeight = 100,
+    UnitHeight = 65,
     UnitWidth = 100,
     //sets the position
     OffsetX = 100,
@@ -111,56 +111,37 @@ Padding is used to leave space between the Connector’s end point and the objec
 
 {% tabs %}
 {% highlight c# %}
-
-//Define the NodeCollection
+//Define NodeCollection
 diagram.Nodes = new NodeCollection();
-//Define the Node
-NodeViewModel node = new NodeViewModel()
-{
-    //Space between the Connector and the Node
-    ConnectorPadding = 5,
-    UnitWidth = 100,
-    UnitHeight = 60,
-    OffsetX = 200,
-    OffsetY = 200,
-    Annotations = new AnnotationCollection()
-    {
-        new AnnotationEditorViewModel()
-        {
-            Content="Node 1",
-        }
-    },
-   Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-};
-
-NodeViewModel node1 = new NodeViewModel()
-{
-    UnitWidth = 100,
-    UnitHeight = 60,
-    OffsetX = 400,
-    OffsetY = 200,
-    Annotations = new AnnotationCollection()
-    {
-        new AnnotationEditorViewModel()
-        {
-            Content="Node 2",
-        }
-    },
-    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-};
-//Adding node to Collection
-(diagram.Nodes as NodeCollection).Add(node);
+//Define NodeProperty
+NodeViewModel node1 = AddNode(200,200,65,100);
+//Space between Connector and Node
+node1.ConnectorPadding = 5;
+//Adding Node to Collection
 (diagram.Nodes as NodeCollection).Add(node1);
-//Define the ConnectorCollection
+NodeViewModel node2 = AddNode(400,200,65,100);
+(diagram.Nodes as NodeCollection).Add(node2);
+//Define ConnectorCollection
 diagram.Connectors = new ConnectorCollection();
-//Define the Connector
-ConnectorViewModel connector = new ConnectorViewModel()
+ConnectorViewModel conn1 = new ConnectorViewModel()
 {
-    SourceNode = node,
-    TargetNode = node1,
+    SourceNode = node1,
+    TargetNode=node2
 };
 //Adding Connector to Collection
-(diagram.Connectors as ConnectorCollection).Add(connector);
+(diagram.Connectors as ConnectorCollection).Add(conn1);
+
+//Method for Creating Node
+public NodeViewModel AddNode(double offsetX, double offsetY,double height,double width)
+{
+    NodeViewModel node = new NodeViewModel();
+    node.OffsetX = offsetX;
+    node.OffsetY = offsetY;
+    node.UnitHeight = height;
+    node.UnitWidth = width;
+    node.Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) } ;
+    return node;
+}
 
 {% endhighlight %}
 {% endtabs %}
