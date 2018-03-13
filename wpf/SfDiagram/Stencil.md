@@ -32,6 +32,7 @@ Symbol is used to visualize the elements in Stencil using following ways:
 
 ISymbol have `Symbol` and `SymbolTemplate` to visualize the Symbol.
 
+{% tabs %}
 {% highlight C# %}
 public class SymbolItem : ISymbol
 {
@@ -57,6 +58,7 @@ public class SymbolItem : ISymbol
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 
@@ -72,8 +74,6 @@ Stroke="Black" StrokeThickness="1" />
  
  {% highlight c# %}
  
-//Define the SymbolCollection
-stencil.SymbolSource = new SymbolCollection();
 //Initialize the SymbolItem
 SymbolItem symbol = new SymbolItem()
 {
@@ -81,8 +81,6 @@ SymbolItem symbol = new SymbolItem()
     Symbol = "Diamond",
     SymbolTemplate = this.Resources["Diamond"] as DataTemplate
 };
-//Adding Symbol to Collection
-(stencil.SymbolSource as SymbolCollection).Add(symbol);
 
  {% endhighlight %}
  {% endtabs %}
@@ -129,6 +127,22 @@ Stroke="Black" StrokeThickness="1" />
         </stencil:Stencil.SymbolGroups>
     </stencil:Stencil>
 </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Define the SymbolCollection
+stencil.SymbolSource = new SymbolCollection();
+//Initialize the SymbolItem
+SymbolItem symbol = new SymbolItem()
+{
+    Key = "Flow Chart",
+    Symbol = "Diamond",
+    SymbolTemplate = this.Resources["Diamond"] as DataTemplate
+};
+//Adding Symbol to Collection
+(stencil.SymbolSource as SymbolCollection).Add(symbol);
 
 {% endhighlight %}
 {% endtabs %}
@@ -272,14 +286,9 @@ public class CustomStencil : Stencil
 
 ## Events
 
-Expand Event and Collapse Event are notified to provide interaction in SymbolGroup. DragEnter Event, DragLeave Event and DragOver Event, ItemDrop Event are notified to provide interaction in diagram.
+`Expanded Event` and `Collapsed Event` are notified to provide interactions in SymbolGroup. To explore about arguments refer to [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html "SymbolGroupExpandCollapseEventArgs")
 
-* Expanded - for Arguments please refer to, [Expanded](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Expanded_EV.html "Expanded").
-* Collapsed - for Arguments Please refer to, [Collapsed](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Collapsed_EV.html "Collapsed").
-* DragEnter - for Arguments please refer to, [DragEnter](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragEnter_EV.html "DragEnter").
-* DragOver - for Arguments please refer to, [DragOver](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragOver_EV.html "DragOver").
-* DragLeave - for Arguments please refer to, [DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~DragLeave_EV.html "DragLeave").
-* ItemDropEvent - for Arguments please refer to, [ItemDropEvent](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ItemDropEvent_EV.html "ItemDropEvent").
+`DragEnter Event`, `DragLeave Event`, `DragOver Event` and  `ItemDropEvent Event` are notified to provide interactions in diagram. To explore about arguments refer to [ItemDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html "ItemDropEventArgs")
 
 #### ExpandMode
  please refer to, [ExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil_members.html "ExpandMode").
