@@ -19,6 +19,7 @@ The `ContentMenu` Constraint helps you to enable/disable the context menu. Diagr
 
 The following code illustrates how to enable/disable the default context menu items.
 
+{% tabs %}
 {% highlight C# %}
 
 //Disable context menu
@@ -28,6 +29,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.ContextMenu;
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.ContextMenu;
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Customize Context Menu
 
@@ -35,6 +37,7 @@ Apart from the default ContextMenu items, you can define some additional menu it
 
 The following code example illustrates how to add custom context menu items to Menu property of SfDiagram.
 
+{% tabs %}
 {% highlight C# %}
 
 DiagramMenuItem menu = new DiagramMenuItem() 
@@ -45,6 +48,7 @@ DiagramMenuItem menu = new DiagramMenuItem()
 Diagram.Menu.MenuItems.Add(menu);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Context-Menu_images/Context-Menu_img2.jpg)
 
@@ -54,6 +58,7 @@ The default value of Menu property for Node and Connector is null.
 
 The following code example illustrates how to set ContextMenu and ContextMenuItems to Node.
 
+{% tabs %}
 {% highlight C# %}
 
 node.Constraints = node.Constraints | NodeConstraints.Menu;
@@ -68,11 +73,13 @@ DiagramMenuItem mi = new DiagramMenuItem()
 (node.Menu.MenuItems as ICollection<DiagramMenuItem>).Add(mi);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Context-Menu_images/Context-Menu_img3.jpg)
 
 You can be notified with events when you click the custom menu items. The following code example illustrates the how to define the event for custom context menu.
 
+{% tabs %}
 {% highlight C# %}
 
 menu.ClickedEvent += menu_ClickedEvent;
@@ -84,11 +91,13 @@ private void menu_ClickedEvent(object sender, MenuItemClickedEventArgs args)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Context Menu Events
 
 You would be notified with events when you click the menu items. The following code example illustrates how to define those events.
 
+{% tabs %}
 {% highlight C# %}
 
 (Diagram.Info as IGraphInfo).MenuItemClickedEvent += MainPage_MenuItemClickedEvent;
@@ -100,3 +109,4 @@ void MainPage_MenuItemClickedEvent(object sender, MenuItemClickedEventArgs args)
 }
 
 {% endhighlight %}
+{% endtabs %}
