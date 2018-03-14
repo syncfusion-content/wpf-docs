@@ -707,8 +707,7 @@ private void DoubleTextBox_NumberDecimalDigitsChanged(DependencyObject d, Depend
 
 {% highlight VB %}
 
-Private  Sub DoubleTextBox_MaxValueChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs) 
-
+Private Sub DoubleTextBox_NumberDecimalDigitsChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs) 
 ' Insert code to do some operations when th NumberDecimalDigits  property is changed 
  
 End Sub
