@@ -25,6 +25,8 @@ The following XAML code shows how to bind the IncreaseZoomCommand to a button.
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+
     <Button Content="ZoomIn" Command="{Binding ElementName=pdfViewerControl, Path= IncreaseZoomCommand, Mode=OneWay}" />
 
 {% endhighlight %}
@@ -34,6 +36,8 @@ The following XAML code shows how to bind the DecreaseZoomCommand to a button.
 
 {% tabs %}
 {% highlight xaml %}
+
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
 
     <Button Content="ZoomOut" Command="{Binding ElementName=pdfViewerControl, Path= DecreaseZoomCommand, Mode= OneWay }" />
 {% endhighlight %}
@@ -58,6 +62,8 @@ The following XAML code shows how to bind the FirstPageCommand to a button.
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Go to first page" Command="{Binding ElementName=pdfViewerControl, Path=FirstPageCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -76,6 +82,8 @@ The following XAML code shows how to bind the LastPageCommand to a button.
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+
     <Button Content="Go to last page" Command="{Binding ElementName=pdfViewerControl, Path=LastPageCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -93,6 +101,8 @@ The following XAML code shows how to bind the NextPageCommand to a button.
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Go to next page" Command="{Binding ElementName=pdfViewerControl, Path=NextPageCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -110,6 +120,8 @@ The following XAML code shows how to bind the PreviousPageCommand to a button.
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Go to previous page" Command="{Binding ElementName=pdfViewerControl, Path= PreviousPageCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -125,6 +137,8 @@ GoToPageCommand allows you to navigate through the pages of the PDF document. Th
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Go to page” Command="{Binding ElementName=pdfViewerControl, Path=GoToPageCommand, Mode= OneWay }" CommandParameter="2" />
 {% endhighlight %}
 {% endtabs %}
@@ -142,6 +156,8 @@ The following XAML code shows how to bind the PrintCommand to a Button.
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Print" Command="{Binding ElementName=pdfViewerControl,Path= PrintCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -172,6 +188,8 @@ The following XAML code shows how to bind the annotation command for line annota
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Line" CommandParameter="Line" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -184,6 +202,8 @@ The following XAML code shows how to bind the annotation command for circle anno
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Circle" CommandParameter="Circle " Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -196,6 +216,8 @@ The following XAML code shows how to bind the annotation command for rectangle a
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Rectangle" CommandParameter="Rectangle" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -208,6 +230,8 @@ The following XAML code shows how to bind the annotation command for ink annotat
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Ink" CommandParameter="Ink" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 
 {% endhighlight %}
@@ -220,6 +244,8 @@ The following XAML code shows how to bind the annotation command for strikethrou
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Strikethrough" CommandParameter="Strikethrough" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 {% endhighlight %}
 {% endtabs %}
@@ -231,6 +257,8 @@ The following XAML code shows how to bind the annotation command for highlight a
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Highlight" CommandParameter="Highlight" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 {% endhighlight %}
 {% endtabs %}
@@ -242,6 +270,8 @@ The following XAML code shows how to bind the annotation command for underline a
 {% tabs %}
 {% highlight xaml %}
 
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
+	
     <Button Content="Underline" CommandParameter="Underline" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 {% endhighlight %}
 {% endtabs %}

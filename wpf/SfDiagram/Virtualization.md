@@ -13,10 +13,30 @@ Virtualization is the process of loading the diagramming objects available in th
 
 This feature gives optimized performance while loading and dragging items to the SfDiagram that consists of many Nodes and Line Connectors.
 
-The following code example illustrates how to enable Virtualization in SfDiagram
-
+{% tabs %}
 {% highlight C# %}
 
-sfdiagram.Constraints = sfdiagram.Constraints | GraphConstraints.Virtualize;
+diagram.Constraints = diagram.Constraints | GraphConstraints.Virtualize;
 
 {% endhighlight %}
+{% endtabs %}
+
+## Deferred Scrolling
+
+To improve scrolling performance, the outline of a diagram element will be displayed until the UI element is loaded, regardless of the weight of the element. 
+
+{% tabs %}
+{% highlight C# %}
+
+diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is only applicable when virtualization is enabled.
+
+![](Virtualization_images/Virtualization_img1.gif)
+
+### Outline customization
+
+Options are provided to override the appearance, style and interval time of outline by using [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) property of SfDiagram.

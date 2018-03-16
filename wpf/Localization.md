@@ -80,3 +80,5 @@ End Class
 {%endhighlight%}
 
 {% endtabs %}
+
+N> If the resource file has been created without defining the culture name (for example, Syncfusion.Tools.WPF.resx), then predefined value has been applied to the resources which is maintained in the dependent assembly. Predefined value has been currently maintained in en-US culture. Also, you can download the default files from [here](https://help.syncfusion.com/wpf/introduction/common-supports#localization)

@@ -80,6 +80,7 @@ The following example displays the MessageBox before the PageChanging,
 private void sfDataPager_PageIndexChanging(object sender, Syncfusion.UI.Xaml.Controls.DataPager.PageIndexChangingEventArgs e)
 {
     MessageBoxResult result = MessageBox.Show("Do you want to change the page?", "Confirm", MessageBoxButton.YesNo);
+
     if (result == MessageBoxResult.No)
     {
         e.Cancel = true;

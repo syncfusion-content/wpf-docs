@@ -14,6 +14,15 @@ PDF Viewer also allows you to save the PDF document that is being displayed in t
 {% tabs %}
 {% highlight c# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Sample.pdf");
 
 
 //Acquire the document loaded into the PDF Viewer
@@ -29,6 +38,16 @@ lDoc.Save("Sample.pdf");
 {% endhighlight %}
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Sample.pdf")
 
 'Acquire the document loaded into the PDF Viewer
 

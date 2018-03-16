@@ -13,8 +13,6 @@ Serialization is the process of saving and loading the Essential Diagram for sta
 
 In SfDiagram, DataContractSerializer is used for Serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram Serialization. It supports saving the SfDiagram to stream. The SfDiagram gets saved with all its properties. On loading, it gets loaded in the current view with all its Nodes and Connectors. As a result, this feature enables you to save the SfDiagram for future use. You can continue working on the SfDiagram by loading the appropriate stream.
 
-The following code example illustrate how to save and load the SfDiagram control to Stream
-
 {% highlight C# %}
 
 //SfDiagram saved to steam
@@ -26,6 +24,8 @@ System.IO.MemoryStream str = new System.IO.MemoryStream();
 sfdiagram.Save(str);
 
 //SfDiagram loaded to stream
+
+str.Position = 0;
 
 sfdiagram.Load(str);
 
@@ -65,6 +65,10 @@ sfdiagram.KnownTypes = () => new List<Type>()
 
 {% endhighlight %}
 
-In the preceding code, NodeContent is unknown type to Serializer. This is similar to IConnector and IGroup.
+If we need to serialize the NodeType property(custom property) of NodeContent(custom class), then we must add DataMember attribute to NodeType property.
+
+In the preceding code, NodeContent is unknown type to Serializer. So, we must specify the type to the KnownTypes of SfDiagram.
+
+I> We should not add DataMember attribute to the inbuilt properties of inbuilt classes(Node, Connector, INode, IConnector,....).
 
 Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/wpf/sfdiagram/Exporting "Exporting").
