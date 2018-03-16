@@ -14,6 +14,16 @@ PDF Viewer supports acquiring the index of the page being displayed in the PDF V
 {% tabs %}
 {% highlight C# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewer1.Load("Sample.pdf");
+
 // Acquiring the number of page being displayed in the Viewer  
 
 int pageCount = pdfviewer1.CurrentPageIndex;
@@ -23,6 +33,16 @@ int pageCount = pdfviewer1.CurrentPageIndex;
 
 
 {% highlight vbnet %}
+
+'Initialize PDF Viewer.
+
+Private pdfViewer1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewer1.Load("Sample.pdf")
 
 ' Acquiring the number of page being displayed in the Viewer  
 

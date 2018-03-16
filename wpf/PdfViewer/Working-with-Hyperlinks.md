@@ -42,6 +42,16 @@ We can disable the hyperlink navigation in PDF viewer control by wiring the even
 {% tabs %}
 {% highlight c# %}
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewerControl = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
+pdfViewerControl.Load("Sample.pdf");
+
 // Hooks the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
@@ -60,6 +70,17 @@ pdfViewerControl.HyperlinkClicked -= PdfViewerControl_HyperlinkClicked;
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event
+
+'Initialize PDF Viewer.
+
+Private pdfViewerControl As New PdfViewerControl()
+
+
+
+'Load the PDF.
+
+pdfViewerControl.Load("Sample.pdf")
+
 AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)

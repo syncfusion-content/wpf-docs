@@ -15,7 +15,7 @@ Nodes are graphical objects used to visually represent the geometrical informati
 
 ## Shapes
 
-We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to  [Shapes](/wpf/sfdiagram/Shapes). 
+We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to [Shapes](/wpf/sfdiagram/Shapes). 
 
 ## Create Node
 
@@ -56,53 +56,116 @@ The following table illustrates how pivot relates Offset values with Node bounda
 {% highlight xaml %}
 <!--Style for Node-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
-    <Setter Property="ShapeStyle">
-        <Setter.Value>
-            <Style TargetType="Path">
-                <Setter Property="Fill" Value="DarkCyan"/>
-                <Setter Property="Stroke" Value="Black"/>
-                <Setter Property="StrokeThickness" Value="2"/>
-                <Setter Property="Stretch" Value="Fill"/>
-            </Style>
-        </Setter.Value>
-    </Setter>
+  <Setter Property="ShapeStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Fill" Value="#FF5B9BD5"/>
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Stroke" Value="#FFEDF1F6 "/>
+      </Style>
+    </Setter.Value>
+  </Setter>
 </Style>
-{% endhighlight %}
-{% highlight xaml %}
-<!--Initialize SfDiagram-->
-<syncfusion:SfDiagram  x:Name="diagram">
-    <!--Initialize NodeCollection-->
-    <syncfusion:SfDiagram.Nodes>
-        <syncfusion:NodeCollection>
-            <!--Initialize Node-->
-            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
-                                      Pivot="0,0">
-            </syncfusion:NodeViewModel>
-        </syncfusion:NodeCollection>
-    </syncfusion:SfDiagram.Nodes>
+
+<!--Initialize the Sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <syncfusion:SfDiagram.Nodes>
+    <!--Initialize the NOdeCollection-->
+    <syncfusion:NodeCollection>
+      <!--Initialize the Node-->
+      <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Pivot="0,0" Shape="{StaticResource Rectangle}">
+      </syncfusion:NodeViewModel>
+    </syncfusion:NodeCollection>
+  </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
+
 {% endhighlight %}
+
 {% highlight C# %}
-//Creates the Node collection
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-//Create Node
+//Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define the Node
 NodeViewModel node = new NodeViewModel()
 {
-    //Sets the size
-	UnitWidth = 100,UnitHeight = 100,   
-    //Sets the position
-	OffsetX = 200,OffsetY = 200,
-    //Sets pivot point
-	Pivot = new Point(0, 0)
+    //sets the size
+    UnitHeight = 100,
+    UnitWidth = 100,
+    //sets the position
+    OffsetX = 100,
+    OffsetY = 100,
+    //sets the Pivot point
+    Pivot=new Point(0,0),
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 };
-//Adds the Node to the SfDiagram 
-nodes.Add(node);
-diagram.Nodes = nodes;
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+
 {% endhighlight %}
 {% endtabs %}
 
-![](Node_images/Node_img3.jpeg)
+![](Node_images/Node_img3.PNG)
+
+## Padding
+
+Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges.
+
+{% tabs %}
+{% highlight c# %}
+
+//Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    //Space between the Connector and the Node
+    ConnectorPadding = 5,
+    UnitWidth = 100,
+    UnitHeight = 60,
+    OffsetX = 200,
+    OffsetY = 200,
+    Annotations = new AnnotationCollection()
+    {
+        new AnnotationEditorViewModel()
+        {
+            Content="Node 1",
+        }
+    },
+   Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+};
+
+NodeViewModel node1 = new NodeViewModel()
+{
+    UnitWidth = 100,
+    UnitHeight = 60,
+    OffsetX = 400,
+    OffsetY = 200,
+    Annotations = new AnnotationCollection()
+    {
+        new AnnotationEditorViewModel()
+        {
+            Content="Node 2",
+        }
+    },
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+};
+//Adding node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node1);
+//Define the ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+//Define the Connector
+ConnectorViewModel connector = new ConnectorViewModel()
+{
+    SourceNode = node,
+    TargetNode = node1,
+};
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(connector);
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Node_images/Node_img6.PNG)
 
 ## Appearance
 
@@ -110,26 +173,26 @@ You can customize the appearance of a Node by changing its ShapeStyle. The follo
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="Path" x:Key="shapestyle">
-  <Setter Property="Fill" Value="DarkCyan"></Setter>
-  <Setter Property="Stroke" Value="Black"/>
+<Style TargetType="Path" x:key="shapestyle">
+  <Setter Property="Fill" Value="#FF41719C"/>
+  <Setter Property="Stretch" Value="Fill"/>
+  <Setter Property="Stroke" Value="#FFEDF1F6"/>
   <Setter Property="StrokeDashArray" Value="4,5"></Setter>
   <Setter Property="StrokeThickness" Value="2"></Setter>
-  <Setter Property="Stretch" Value="Fill"></Setter>   
 </Style>
 {% endhighlight %}
 {% highlight C# %}
 Style style = new Style(typeof(Path));
-style.Setters.Add(new Setter(Path.FillProperty, Brushes.DarkCyan));
-style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.Black));
+style.Setters.Add(new Setter(Path.FillProperty, Brushes.SteelBlue));
+style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.WhiteSmoke));
 style.Setters.Add(new Setter(Path.StrokeThicknessProperty, 2d));
-style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));            
+style.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 5 }));
 style.Setters.Add(new Setter(Path.StretchProperty, Stretch.Fill));
 return style;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node_images/Node_img4.jpeg)
+![](Node_images/Node_img4.PNG)
 
 ## Data Binding
 
@@ -139,44 +202,43 @@ N> The AutoBind property is deprecated. Instead of AutoBind, please use this Vie
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to [Interaction](/wpf/sfdiagram/Interaction "Interaction").
+Diagram provides support to drag, resize, or rotate the Node interactively. 
 
-## Hit Padding
+## Select
+Node can be selected by clicking on it.
 
-Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area.
+![](Node_images/Node_img7.jpg)
 
-The following code illustrates how to customize the HitPadding 
+To explore about selection and selection related events , refer to [Selection](/wpf/sfdiagram/interaction#selection) .
 
-{% tabs %}
-{% highlight xaml %}
+## Drag
 
-<syncfusion:NodeViewModel x:Name="ViewModel"  UnitWidth="100" HitPadding="25"
-                                              UnitHeight="100" OffsetX="200" OffsetY="300">
-</syncfusion:NodeViewModel>
+* Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
 
-{% endhighlight %}
-{% highlight C# %}
-//Creates the Node collection
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-//Create Node
-NodeViewModel node = new NodeViewModel()
-{
-    //Sets the size
-	UnitWidth = 100,UnitHeight = 100,   
-    //Sets the position
-	OffsetX = 200,OffsetY = 300,
-    //Sets pivot point
-	Pivot = new Point(0, 0),
-    //defines the vicinity area of the Node
-    HitPadding = 25
-};
-//Adds the Node to the SfDiagram 
-nodes.Add(node);
-diagram.Nodes = nodes;
-{% endhighlight %}
-{% endtabs %}
+* `NodeChangedEvent` will notify the OffsetX and OffsetY changes with their old and new values.Along with that, this event will give information about interaction state. To explore about aruguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![](Node_images/Node_img5.jpg)
+![](Node_images/Drag.gif)
+
+## Resize
+
+* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
+* When one corner of the selector is dragged, opposite corner is in a static position.
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
+
+* `NodeChangedEvent` will notify the Height and Width changes with their old and new values.Along with that, this event will give information about  interaction state. To explore about arguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+
+![](Node_images/Resize.gif)
+
+## Rotate
+
+* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
+* The Node is rotated with reference to the static pivot point.
+* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position").
+
+* `NodeChangedEvent` will notify the Rotate Angle changes with their old and new values.Along with that, this event will give information about iteraction State. To explore about arguments, please refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+
+![](Node_images/Rotate.gif)
 
 ## Constraints
 

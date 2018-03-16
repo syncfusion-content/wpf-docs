@@ -9,26 +9,22 @@ documentation: ug
 
 # DataSource
 
-SfDiagram is populated with the Node taken from an external hierarchical data source. SfDiagram exposes its specific, data-related properties and allows you to specify the data source fields where the node information is retrieved from.
+Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
-## DataSource Settings
+* The DataSourceSettings of `DataSource` property is used to define the data source as a collection of objects which needs to be populated as diagram.
 
-Two mapping fields are necessary to map a hierarchical datasource with the diagram. Id property is used for unique identification of a record. ParentId property is used to identify the parent object to which a particular object is connected.
+* The DataSourceSettings `Id` property is used to define the unique field of each data.
 
-| Properties | Description | Value |
-|---|---|---|
-| DataSource | Data source based on the diagram that is to be generated. | Object |
-| ParentId | Specifies the mapping parent id property of the data source items. | String |
-| Id | Specified the mapping unique id property of data source items. | String |
-| Root | Specifies the root element of the data source items. | String |
+* The DataSourceSettings `ParentId` property is used to defines the parent field which builds the relationship between id and parent field.
 
-### DataSource
+* The DataSourceSettings `Root` property is used to define root node for the diagram populated from the data source.
 
-The following code example illustrates how to bind data to SfDiagram.
+To explore those properties, see [DataSourceSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
 
+{% tabs %}
 {% highlight xaml %}
 
-<!-- Initializes the employee colletion-->
+<!-- Initializes the employee collection-->
 <local:Employees x:Key="employees">
     <local:Employee Name="Steve" EmpId="1" ParentId="" Designation="CEO"/>
     <local:Employee Name="Kevin" EmpId="2" ParentId="1" Designation="Manager"/>
@@ -62,20 +58,33 @@ The following code example illustrates how to bind data to SfDiagram.
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](DataSource_images/DataSource_img1.png)
 
-## DataSource Root
+Sample Link : [DataSource Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/DataSource-2014750971)
 
-During Automatic Layout, Node without parent is treated as Root of the layout. But, now we have provided the option to specify this Root by using the DataSource settings.
+## Root
 
-The following code illustrates how to specify the root object for the Diagram**.**
+By default, the node without parent is treated as root of the layout. Now, `DataSourceSettings` have option to specify the root node of the layout.
 
+{% tabs %}
 {% highlight C# %}
 
-//Object with id “CEO”, is considered as root of tree layout.
+//object with id “CEO”, is considered as root of tree layout.
 diagram.DataSourceSettings.Root = “CEO”;
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](DataSource_images/DataSource_img2.jpeg)
+
+## Layout with Multiple Parent
+
+Tree layout and data sources will now support nodes having multiple parents.The child Node is arranged in center of the parent positions.
+
+![](DataSource_images/DataSource_img3.png)
+
+Please find [Multi Parent Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/Multi_Parent-231048937) to depict this support.
+
+Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree

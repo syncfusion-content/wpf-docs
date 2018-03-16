@@ -3106,7 +3106,11 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
+<<<<<<< HEAD
 ![Spline Range Series ](Series_images/splinerangearea.png)
+=======
+![Spline Range Area Series ](Series_images/splinerangearea.png)
+>>>>>>> 03e2fdbff065b4e2e8b8c88b8a25aa5623ef53c2
 
 ### Histogram 
 
@@ -4112,7 +4116,10 @@ chart.Series.Add(series);
 
 ![](Series_images/faststackingcolumn.png)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03e2fdbff065b4e2e8b8c88b8a25aa5623ef53c2
 ### Fast Range Area
 
 [`FastRangeAreaBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#) is the high performance version of RangeAreaSeries. 
