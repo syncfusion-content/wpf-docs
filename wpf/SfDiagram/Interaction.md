@@ -15,11 +15,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 ### Single Selection
 
-An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
-
-![](Interaction_images/Interaction_img2.jpeg)
-
-![](Interaction_images/Interaction_img4.jpeg)
+An element can be selected by clicking that element. During single click, all previously selected items are cleared.
 
 ### Selecting a Group
 
@@ -29,11 +25,14 @@ When a child element of any Group is clicked, its contained Group is selected in
 
 Multiple elements can be selected with the following ways.
 
-1. Ctrl+Click
+* Ctrl+Click
+* Selection rectangle / Rubber band selection
+
+#### Ctrl+Click
 
 During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
-2. Selection rectangle / Rubber band selection
+#### Selection rectangle / Rubber band selection
 
 Clicking and dragging the Diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
@@ -77,11 +76,13 @@ Preview Dragging can be enabled by assigning values other than `PreviewMode.Prev
 
 By default, Outline of the connectors connected to the dragging objects will be in disabled state. But, you can able to view the outline of the connectors, by holding dragging objects for certain time span. `ConnectorRefreshingSpan` property of `PreviewSettings` allows you to specify the time span and the value should be greater than 300ms.
 
+{% tabs %}
 {% highlight C# %}
 
 this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode.Preview, ConnectorRefreshingSpan = 300 };
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Interaction_images/PreviewDragging_img2.gif)
 
@@ -89,6 +90,7 @@ this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode
 
 Appearance of the preview can be modified using `PreviewStyle` property of `PreviewSettings`.
 
+{% tabs %}
 {% highlight C# %}
 
 var previewStyle = new Style();
@@ -99,6 +101,7 @@ previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeDashArrayProperty
 this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode.Preview, ConnectorRefreshingSpan = 300, PreviewStyle = previewStyle };
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Interaction_images/PreviewDragging_img3.gif)
 
@@ -314,6 +317,7 @@ This SetTool method will be invoked when Mouse/Pointer is over on Diagramming El
 
 Please refer to the code example as below
 
+{% tabs %}
 {% highlight C# %}
 
 //Override the SetTool method
@@ -330,6 +334,7 @@ protected override void SetTool(SetToolArgs args)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Set Port for intersection
 
@@ -337,6 +342,7 @@ The `ObjectDrawn` event will be invoked while drawing the objects. We have provi
 
 Please refer to the code example as below
 
+{% tabs %}
 {% highlight C# %}
 
 //Hook the ObjectDrawn Event
@@ -397,6 +403,7 @@ Please refer to the code example as below
 }
 
 {% endhighlight %}
+{% endtabs %}
 
  ConnectionIndicator animation for Node:
 
@@ -440,8 +447,7 @@ public enum ConnectorEnd
 
 The following code illustrates how to override ValidateConnection
 
-[C#]
-
+{% tabs %}
 {% highlight C# %}
 
 /// <summary>
@@ -471,6 +477,7 @@ public class CustomDiagram : SfDiagram
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Interaction_images/Interaction_img16.jpg)
 

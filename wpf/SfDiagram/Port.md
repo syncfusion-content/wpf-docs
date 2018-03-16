@@ -35,6 +35,7 @@ To specify and make connection with Node at precise Point.
 
 Please find the common style for Node and NodePort.
 
+{% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
@@ -63,9 +64,7 @@ Please find the common style for Node and NodePort.
   </Setter.Value>
  </Setter>
 </Style>
-{% endhighlight %}
-{% tabs %}
-{% highlight xaml %}
+
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
   <!--Initializes the NodeCollection-->
   <syncfusion:SfDiagram.Nodes>
@@ -86,8 +85,6 @@ Please find the common style for Node and NodePort.
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-
-
 
 {% highlight C# %}
 //Define Nodes Property
@@ -129,6 +126,7 @@ NodeViewModel node = new NodeViewModel()
 
 Please find the common style for Connector and ConnectorPort.
 
+{% tabs %}
 {% highlight xaml %}
 <!--Style for the Connector-->
 <Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
@@ -164,9 +162,7 @@ Please find the common style for Connector and ConnectorPort.
   </Setter.Value>
  </Setter>
 </Style>
-{% endhighlight %}
-{% tabs %}
-{% highlight xaml %}
+
 <!--Initialize the sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
  <!--Initialize the ConnectorCollection-->
@@ -541,68 +537,50 @@ Padding is used to leave space between the Connector’s end point and the objec
 {% tabs %}
 {% highlight c# %}
 
-//Define the NodePort
-NodePortViewModel port = new NodePortViewModel()
+NodePortViewModel nodePort = new NodePortViewModel()
 {
     //Declaring the ConnectorPadding value
     ConnectorPadding = 10,
     NodeOffsetX = 0,
     NodeOffsetY = 0.5,
 };
-//Define the NodeCollection
+//Define NodeCollection
 diagram.Nodes = new NodeCollection();
-//Define the Node
-NodeViewModel node = new NodeViewModel()
+//Define NodeProperty
+NodeViewModel node1 = AddNode(200,200,65,100);
+//Space between Connector and Node
+node1.ConnectorPadding = 5;
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node1);
+NodeViewModel node2 = AddNode(400,200,65,100);
+node2.Ports = new PortCollection()
 {
-    UnitWidth = 100,
-    UnitHeight = 60,
-    OffsetX = 200,
-    OffsetY = 200,
-    //Define the AnnotationCollection
-    Annotations = new AnnotationCollection()
-    {
-        //Define the Annotation
-        new AnnotationEditorViewModel()
-        {
-            Content="Node 1",
-        }
-    },
-    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    nodePort
 };
 
-NodeViewModel node1 = new NodeViewModel()
-{
-    UnitWidth = 100,
-    UnitHeight = 60,
-    OffsetX = 400,
-    OffsetY = 200,
-    //Define the PortCollection
-    Ports = new PortCollection()
-    {
-        port
-    },
-    Annotations = new AnnotationCollection()
-    {
-        new AnnotationEditorViewModel()
-        {
-            Content="Node 2",
-        }
-    },
-    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-};
-(diagram.Nodes as NodeCollection).Add(node);
-(diagram.Nodes as NodeCollection).Add(node1);
-//Define the ConnectorCollection
+(diagram.Nodes as NodeCollection).Add(node2);
+//Define ConnectorCollection
 diagram.Connectors = new ConnectorCollection();
-//Define the Connector
-ConnectorViewModel connector = new ConnectorViewModel()
+ConnectorViewModel conn1 = new ConnectorViewModel()
 {
-    TargetPort = port,
-    SourceNode = node,
-    TargetNode = node1,
+    TargetPort=nodePort,
+    SourceNode = node1,
+    TargetNode=node2
 };
-//Adding the Connector to Collection
-(diagram.Connectors as ConnectorCollection).Add(connector);
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(conn1);
+ 
+//Method for Creating Node
+public NodeViewModel AddNode(double offsetX, double offsetY,double height,double width)
+{
+    NodeViewModel node = new NodeViewModel();
+    node.OffsetX = offsetX;
+    node.OffsetY = offsetY;
+    node.UnitHeight = height;
+    node.UnitWidth = width;
+    node.Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) } ;
+    return node;
+}
 
 {% endhighlight %}
 {% endtabs %}
