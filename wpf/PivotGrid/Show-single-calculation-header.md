@@ -51,10 +51,7 @@ public partial class MainWindow: Window {
         pivotGrid.PivotEngine.ShowSingleCalculationHeader = true;
     }
 }
-	 
+
 {% endhighlight %}
 
 ![](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)
-
-
-

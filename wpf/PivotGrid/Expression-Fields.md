@@ -17,10 +17,9 @@ This property can be defined either in *XAML* and *Code-behind*. If through *XAM
 
 {% highlight xaml %}
 
-      <Grid>
-     <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro"
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro"
             LoadWithDefaultPropertyFields="True"  ItemSource="{Binding   Source={StaticResource data}}" >
-            
             <syncfusion:PivotGridControl.PivotRows>
                 <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" ShowSubTotal="False" />
                 <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
@@ -34,7 +33,7 @@ This property can be defined either in *XAML* and *Code-behind*. If through *XAM
                 <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Quantity" SummaryType="Count" />
             </syncfusion:PivotGridControl.PivotCalculations>
         </syncfusion:PivotGridControl>
-      </Grid>
+    </Grid>
 
 {% endhighlight %}
 
@@ -78,7 +77,7 @@ public partial class MainWindow: Window {
         pivotGrid.LoadWithDefaultPropertyFields = true;
     }
 }
-	 
+
 {% endhighlight %}
 
 ## Creating the Expression Fields
@@ -89,28 +88,28 @@ If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-      <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro"
-            LoadWithDefaultPropertyFields="True"  ItemSource="{Binding   Source={StaticResource data}}" >
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro"
+        LoadWithDefaultPropertyFields="True"  ItemSource="{Binding   Source={StaticResource data}}" >
 
-            <syncfusion:PivotGridControl.AllowedFields>
-                <syncfusion:FieldInfo Name="UnitPrice" Expression="[Amount] + [Quantity]" FieldType="Expression" />
-            </syncfusion:PivotGridControl.AllowedFields>
-            
-            <syncfusion:PivotGridControl.PivotRows>
-                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total"/>
-            </syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotGridControl.PivotColumns>
-                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total"/>
-            </syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotGridControl.PivotCalculations>
-                <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Amount" Format="C" SummaryType="DoubleTotalSum" />
-                <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Quantity" SummaryType="Count" />
-                <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "UnitPrice" FieldHeader="Unit Price" Format = "C" SummaryType="DoubleTotalSum"/>
-            </syncfusion:PivotGridControl.PivotCalculations>
-        </syncfusion:PivotGridControl>
-        
+        <syncfusion:PivotGridControl.AllowedFields>
+            <syncfusion:FieldInfo Name="UnitPrice" Expression="[Amount] + [Quantity]" FieldType="Expression" />
+        </syncfusion:PivotGridControl.AllowedFields>
+
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total"/>
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total"/>
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Amount" Format="C" SummaryType="DoubleTotalSum" />
+            <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Quantity" SummaryType="Count" />
+            <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "UnitPrice"      FieldHeader="Unit Price" Format = "C" SummaryType="DoubleTotalSum"/>
+        </syncfusion:PivotGridControl.PivotCalculations>
+    </syncfusion:PivotGridControl>
+
 {% endhighlight %}
 
 Else if through **Code-behind**, please refer the below code sample.
@@ -159,9 +158,8 @@ public partial class MainWindow: Window {
         };
         pivotGrid.PivotCalculations.Add(m_PivotComputationInfo2);
     }
-}      
+}
 
 {% endhighlight %}
 
 ![](Expression-Field-Images/PivotGrid shows expression fields.png)
-

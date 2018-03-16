@@ -24,41 +24,38 @@ Properties
 * **Format** - Gets or sets the format of filter expression
 * **Evaluator** - Used to evaluate the given value
 
-
-###Defining Filters in XAML
+### Defining Filters in XAML
 
 Create a new FilterExpression under **PivotGridControl.Filters** class. Please refer the code snippet below.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowFieldList="True" ItemSource="{Binding   Source={StaticResource data}}">
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowFieldList="True" ItemSource="{Binding   Source={StaticResource data}}">
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-        <syncfusion:PivotGridControl.Filters>
-            <syncfusion:FilterExpression DimensionHeader="Product" DimensionName="Product" Name="Product" Expression="Product = Bike" />
-        </syncfusion:PivotGridControl.Filters>
-
-    </syncfusion:PivotGridControl>
-</Grid>
+            <syncfusion:PivotGridControl.Filters>
+                <syncfusion:FilterExpression DimensionHeader="Product" DimensionName="Product" Name="Product" Expression="Product = Bike" />
+            </syncfusion:PivotGridControl.Filters>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
+### Defining Filters in Code-Behind
 
-###Defining Filters in Code-Behind
-
-Create a new FilterExpression by using the **FilterExpression** class and add that FilterExpression to **Filters** collection of PivotGrid control. 
+Create a new FilterExpression by using the **FilterExpression** class and add that FilterExpression to **Filters** collection of PivotGrid control.
 
 Please refer the code snippet below.
 
@@ -105,16 +102,14 @@ public partial class MainWindow: Window {
 
     }
 }
-        
+
 {% endhighlight %}
 
 ![](Filtering-by-values-images/PivotGrid shows the filtered values.png)
 
-##Filtering by using FilterPopup
+## Filtering by using FilterPopup
 
 Filters can also be applied to PivotGrid control at runtime using **FilterPopup**. This FilterPopup can be opened by clicking the Filter button in the Grouping Bar item. FilterPopup contains the filter list in which we can uncheck the items we need to filter and click OK.
 This in turns, create a FilterExpression on runtime by using the unchecked items and apply the Filters to PivotGrid control.
 
 ![](Filtering-by-values-images/PivotGrid with FilterPopup.png)
-
-

@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Binding
 
-##Binding PivotGrid to List
+## Binding PivotGrid to List
 
 PivotGrid allows binding a list based collection as its ItemSource. Please refer this topic Binding a data source to PivotGridControl to know more.
 
-##Binding PivotGrid to DataTable
+## Binding PivotGrid to DataTable
 
 PivotGrid allows binding a DataSet from the DataTable as its ItemSource.
 
@@ -38,36 +38,36 @@ public static DataView GetOrderDetails() {
 
 {% endhighlight %}
 
-Then bind the DataSet as ItemSource to the PivotGrid by invoking the appropriate method. It can be done through *XAML* or *Code-behind*. 
+Then bind the DataSet as ItemSource to the PivotGrid by invoking the appropriate method. It can be done through *XAML* or *Code-behind*.
 
 If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
-    <Window.Resources>
-        <ResourceDictionary>
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:OrderDetails}" MethodName="GetOrderDetails" />
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
-        <syncfusion:PivotGridControl Margin="5" Grid.Row="2" x:Name="pivotGrid1" ItemSource="{Binding Source={StaticResource data}}">
-            <syncfusion:PivotGridControl.PivotRows>
-                <syncfusion:PivotItem FieldHeader="OID" FieldMappingName="Order ID" TotalHeader="Total" />
-            </syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotGridControl.PivotColumns>
-                <syncfusion:PivotItem FieldHeader="PID" FieldMappingName="Product ID" TotalHeader="Total" />
-            </syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotGridControl.PivotCalculations>
-                <syncfusion:PivotComputationInfo FieldName="Unit Price" CalculationName="UnitTotal" SummaryType="DoubleTotalSum" Format="#.00" />
-                <syncfusion:PivotComputationInfo FieldName="Quantity" CalculationName="QuantityCalc" SummaryType="Count" Format="C" />
-            </syncfusion:PivotGridControl.PivotCalculations>
-        </syncfusion:PivotGridControl>
-    </Grid>
-</Window>
+    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
+        <Window.Resources>
+            <ResourceDictionary>
+                <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:OrderDetails}" MethodName="GetOrderDetails" />
+            </ResourceDictionary>
+        </Window.Resources>
+        <Grid>
+            <syncfusion:PivotGridControl Margin="5" Grid.Row="2" x:Name="pivotGrid1" ItemSource="{Binding Source={StaticResource data}}">
+                <syncfusion:PivotGridControl.PivotRows>
+                    <syncfusion:PivotItem FieldHeader="OID" FieldMappingName="Order ID" TotalHeader="Total" />
+                </syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotGridControl.PivotColumns>
+                    <syncfusion:PivotItem FieldHeader="PID" FieldMappingName="Product ID" TotalHeader="Total" />
+                </syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotGridControl.PivotCalculations>
+                    <syncfusion:PivotComputationInfo FieldName="Unit Price" CalculationName="UnitTotal" SummaryType="DoubleTotalSum" Format="#.00" />
+                    <syncfusion:PivotComputationInfo FieldName="Quantity" CalculationName="QuantityCalc" SummaryType="Count" Format="C" />
+                </syncfusion:PivotGridControl.PivotCalculations>
+            </syncfusion:PivotGridControl>
+        </Grid>
+    </Window>
 
- {% endhighlight %}
- 
+{% endhighlight %}
+
 Else if, through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
@@ -93,6 +93,3 @@ public partial class MainWindow: Window {
 }
 
 {% endhighlight %}
-
-
-

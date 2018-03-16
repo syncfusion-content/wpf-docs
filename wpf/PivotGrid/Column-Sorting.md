@@ -9,13 +9,13 @@ documentation: ug
 
 # Sorting
 
-PivotGrid control provides sorting option for the calculation columns in PivotGrid in RowPivotsOnly mode. This can be enabled or disabled using `AllowSort` property of `PivotComputationInfo` in PivotGrid control. 
+PivotGrid control provides sorting option for the calculation columns in PivotGrid in RowPivotsOnly mode. This can be enabled or disabled using `AllowSort` property of `PivotComputationInfo` in PivotGrid control.
 
-Property 
+Property:
 
 * **AllowSort** - This property is used to enable or disable the sorting option for column pivots.
 
-Method
+Method:
 
 * **ApplySavedValueSorts** - When RowPivotsOnly is true, this method sorts the pivot based on the information furnished through the arguments.
 
@@ -27,29 +27,29 @@ The property `AllowSort` can be mentioned either in *XAML* or *Code-behind*. If 
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl Name="pivotGrid" SortOption="True" RowPivotsOnly="True">
+    <Grid>
+        <syncfusion:PivotGridControl Name="pivotGrid" SortOption="True" RowPivotsOnly="True">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem AllowFilter="False" FieldHeader="PID" FieldMappingName="PID" TotalHeader="Total" />
-            <syncfusion:PivotItem AllowFilter="False" FieldHeader="Location" FieldMappingName="Location" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo FieldHeader="Color" FieldName="Color" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="Class" FieldName="Class" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="PID" FieldName="PID" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="Units" FieldName="Units" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="Retail" FieldName="Retail" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="Cost" FieldName="Cost" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="TestStr" FieldName="TestStr" Format="0.0" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="TestInt" FieldName="TestInt" Format="0.0" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
-            <syncfusion:PivotComputationInfo FieldHeader="TestDouble" FieldName="TestDouble" Format="0.00" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
-        </syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem AllowFilter="False" FieldHeader="PID" FieldMappingName="PID" TotalHeader="Total" />
+                <syncfusion:PivotItem AllowFilter="False" FieldHeader="Location" FieldMappingName="Location" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo FieldHeader="Color" FieldName="Color" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="Class" FieldName="Class" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="PID" FieldName="PID" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="Units" FieldName="Units" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="Retail" FieldName="Retail" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="Cost" FieldName="Cost" Format="0.0" SummaryType="DoubleTotalSum" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="TestStr" FieldName="TestStr" Format="0.0" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="TestInt" FieldName="TestInt" Format="0.0" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
+                <syncfusion:PivotComputationInfo FieldHeader="TestDouble" FieldName="TestDouble" Format="0.00" PadString="***" SummaryType="DisplayIfDiscreteValuesEqual" AllowSort="True" />
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-    </syncfusion:PivotGridControl>
-</Grid>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
-{% endhighlight %}	
+{% endhighlight %}
 
 Else if through *Code-behind*, please refer the below code sample.
 
@@ -68,9 +68,9 @@ public partial class MainWindow: Window {
         for (int i = 0; i < pivotGrid.PivotCalculations.Count; i++)
             pivotGrid.PivotCalculations[i].AllowSort = true;
     }
-}    
+}
 
-{% endhighlight %}	
+{% endhighlight %}
 
 ## Defining the Method in PivotGrid
 
@@ -101,7 +101,7 @@ public partial class MainWindow: Window {
         };
         pivotGrid.InternalGrid.ApplySavedValueSorts(sortedColumns, listSortDirections);
     }
-}    
+}
 
 {% endhighlight %}
 

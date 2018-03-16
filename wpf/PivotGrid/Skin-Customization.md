@@ -24,13 +24,13 @@ Skin customization would apply particular style settings to the visual elements 
 * Default
 
 The `VisualStyle` property is used to customize the skin. It can be mentioned either in *XAML* or *Code-Behind*.
- 
+
 If through *XAML*, please refer the below code snippet.
 
 {% highlight xaml %}
 
     <Grid>
-            <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" 
+            <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top"
                     VisualStyle="Office2010Blue" ItemSource="{Binding   Source={StaticResource data}}" >
 
             <syncfusion:PivotGridControl.PivotRows>
@@ -45,7 +45,7 @@ If through *XAML*, please refer the below code snippet.
                 <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Amount" Format="C" SummaryType="DoubleTotalSum" />
                 <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Quantity" SummaryType="Count" />
             </syncfusion:PivotGridControl.PivotCalculations>
-        </syncfusion:PivotGridControl>            
+        </syncfusion:PivotGridControl>
     </Grid>
 
 {% endhighlight %}
@@ -94,4 +94,3 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![](Skin-Customization-Images/PivotGrid shows customized visual style.png)
-
