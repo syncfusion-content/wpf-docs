@@ -11,11 +11,11 @@ documentation: ug
 
 PivotGrid provides an option to export its content to various formats. It provides the following exporting options.
 
-   * Excel format - Cell and PivotTable mode
-   * Word format
-   * PDF format
-   * CSV format
-   
+* Excel format - Cell and PivotTable mode
+* Word format
+* PDF format
+* CSV format
+
 ## Export to Excel
 
 PivotGrid can be exported to an excel document using Syncfusion XlsIO libraries. It consist of two exporting modes listed below and it is possible to switch the exporting modes using the `ExportMode` property.
@@ -64,7 +64,7 @@ To export the PivotGrid contents to Word, add the **Syncfusion.PivotGridConverte
 
 Now define the PivotGrid control and bind the data source along with PivotRows, PivotColumns and PivotCalculations. Create an instance for `GridWordExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
 
-Please refer the below code sample. 
+Please refer the below code sample:
 
 {% highlight C# %}
 
@@ -120,7 +120,7 @@ To export the PivotGrid contents to CSV, add the **Syncfusion.PivotGridConverter
 
 Now define the PivotGrid control and bind the data source along with PivotRows, PivotColumns and PivotCalculations. Create an instance of `GridCsvExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
 
-Please refer the below code sample. 
+Please refer the below code sample:
 
 {% highlight C# %}
 
@@ -147,53 +147,53 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 The following table represents the number of rows and columns to be taken in account while exporting the PivotGrid control without affecting its performance.
 
-<table>
-    <tr>
-        <th>
-            Functionality</th>
-        <th>
-            Row Count</th>
-        <th> 
-            Column Count</th>
-    </tr>
-    <tr>
-        <td>
-            Exporting PivotGrid contents to Excel document in Cell mode</td>
-        <td>
-            300</td>
-        <td>
-            70</td>
-    </tr>
-    <tr>
-        <td>
-            Exporting PivotGrid contents to Excel document in PivotTable mode</td>
-        <td>
-            No threshold limit</td>
-        <td>
-            No threshold limit</td>
-    </tr>
-    <tr>
-        <td>
-            Exporting PivotGrid contents to Word document</td>
-        <td>
-            1800</td>
-        <td>
-            70</td>
-    </tr>
-    <tr>
-        <td>
-            Exporting PivotGrid contents to PDF document</td>
-        <td>
-            800</td>
-        <td>
-            70</td>
-    </tr>
-    <tr>
-        <td>
-            Exporting PivotGrid contents to CSV document</td>
-        <td>
-            No threshold limit</td>
-        <td>
-            No threshold limit</td>
-    </tr>
-</table>
+    <table>
+        <tr>
+            <th>
+                Functionality</th>
+            <th>
+                Row Count</th>
+            <th>
+                Column Count</th>
+        </tr>
+        <tr>
+            <td>
+                Exporting PivotGrid contents to Excel document in Cell mode</td>
+            <td>
+                300</td>
+            <td>
+                70</td>
+        </tr>
+        <tr>
+            <td>
+                Exporting PivotGrid contents to Excel document in PivotTable mode</td>
+            <td>
+                No threshold limit</td>
+            <td>
+                No threshold limit</td>
+        </tr>
+        <tr>
+            <td>
+                Exporting PivotGrid contents to Word document</td>
+            <td>
+                1800</td>
+            <td>
+                70</td>
+        </tr>
+        <tr>
+            <td>
+                Exporting PivotGrid contents to PDF document</td>
+            <td>
+                800</td>
+            <td>
+                70</td>
+        </tr>
+        <tr>
+            <td>
+                Exporting PivotGrid contents to CSV document</td>
+            <td>
+                No threshold limit</td>
+            <td>
+                No threshold limit</td>
+        </tr>
+    </table>

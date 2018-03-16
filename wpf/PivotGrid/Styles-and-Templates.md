@@ -20,38 +20,38 @@ Column, row, summary, and value cells of a grid can be formatted independently b
 
 The following properties of the cell can be customized.
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th></tr>
-<tr>
-<td>
-Background</td><td>
-Gets or sets the background color of a grid cell.</td><td>
-Brush</td></tr>
-<tr>
-<td>
-FontFamily</td><td>
-Gets or sets the font family of a grid cell.</td><td>
-FontFamily</td></tr>
-<tr>
-<td>
-FontSize</td><td>
-Gets or sets the font size of a grid cell.</td><td>
-int</td></tr>
-<tr>
-<td>
-FontWeight</td><td>
-Gets or sets the font weight of a grid cell.</td><td>
-FontWeight</td></tr>
-<tr>
-<td>
-Foreground</td><td>
-Gets or sets the foreground color of a grid cell.</td><td>
-Brush</td></tr>
-</table>
+    <table>
+    <tr>
+    <th>
+    Property Name</th><th>
+    Description</th><th>
+    Type</th></tr>
+    <tr>
+    <td>
+    Background</td><td>
+    Gets or sets the background color of a grid cell.</td><td>
+    Brush</td></tr>
+    <tr>
+    <td>
+    FontFamily</td><td>
+    Gets or sets the font family of a grid cell.</td><td>
+    FontFamily</td></tr>
+    <tr>
+    <td>
+    FontSize</td><td>
+    Gets or sets the font size of a grid cell.</td><td>
+    int</td></tr>
+    <tr>
+    <td>
+    FontWeight</td><td>
+    Gets or sets the font weight of a grid cell.</td><td>
+    FontWeight</td></tr>
+    <tr>
+    <td>
+    Foreground</td><td>
+    Gets or sets the foreground color of a grid cell.</td><td>
+    Brush</td></tr>
+    </table>
 
 ### Defining the cell styles in PivotGrid
 
@@ -82,7 +82,7 @@ public partial class MainWindow: Window {
         pivotGrid.SummaryCellStyle.FontFamily = new FontFamily("Calibri");
     }
 }
-    
+
 {% endhighlight %}
 
 ![](Styles-and-Templates-images/PivotGrid shows customized styles.png)
@@ -101,7 +101,7 @@ The expander’s in the Grid can also be customized with any UIElement and it sh
 
 ### Defining Cell Templates in PivotGrid
 
-After defining the PivotGrid control, define your own style for Row, Column, Value, Summary cells and assign that style to the corresponding property in PivotGrid control. 
+After defining the PivotGrid control, define your own style for Row, Column, Value, Summary cells and assign that style to the corresponding property in PivotGrid control.
 
 Here, we defined our own style for row header cells by overriding expander icon and cell's TextBlock. After defining the style, we applied that style to `RowHeaderCellStyle` of PivotGrid control.
 
@@ -112,7 +112,6 @@ Please refer the below code snippet.
     <Window.Resources>
         <ResourceDictionary>
             <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
-            
          <Style x:Key="rowStyle" TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
                 <Setter Property="MinHeight" Value="25"/>
                 <Setter Property="Template">
@@ -143,7 +142,7 @@ Please refer the below code snippet.
                                 </Image>
 
                                 <TextBlock Grid.Column="1" Margin="3,4,2,0"
-                                           Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" 
+                                           Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}"
                                            TextWrapping="Wrap"
                                            VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="12"
                                            />
@@ -151,32 +150,30 @@ Please refer the below code snippet.
                         </ControlTemplate>
                     </Setter.Value>
                 </Setter>
-            </Style>            
+            </Style>
         </ResourceDictionary>
     </Window.Resources>
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-        <syncfusion:PivotGridControl.RowHeaderCellStyle>
-            <syncfusion:PivotGridCellStyle Style="{StaticResource rowStyle}" />
-        </syncfusion:PivotGridControl.RowHeaderCellStyle>
-
-    </syncfusion:PivotGridControl>
-
-</Grid>
+            <syncfusion:PivotGridControl.RowHeaderCellStyle>
+                <syncfusion:PivotGridCellStyle Style="{StaticResource rowStyle}" />
+            </syncfusion:PivotGridControl.RowHeaderCellStyle>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 

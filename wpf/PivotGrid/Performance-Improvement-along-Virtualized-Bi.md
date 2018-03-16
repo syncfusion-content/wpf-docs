@@ -18,7 +18,6 @@ To achieve this, after defining the PivotGrid control, set the properties `Enabl
 
 {% highlight C# %}
 
-
     public partial class MainWindow : Window
     {
         DateTime _startIndex = DateTime.Now;
@@ -124,9 +123,8 @@ To achieve this, after defining the PivotGrid control, set the properties `Enabl
             }
             return c;
         }
-    }    
+    }
 
 {% endhighlight %}
 
 ![](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)
-

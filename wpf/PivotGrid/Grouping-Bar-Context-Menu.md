@@ -15,16 +15,16 @@ The Grouping bar context menu consists of the following menu items:
 * **Show Field List** - Launches the PivotGrid Field List.
 * **Order** – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
 
-   * Move to Beginning - Moves the current item to the first position.
-   * Move to Left - Moves the current item one step towards its left.
-   * Move to Right - Moves the current item one step towards its right.
-   * Move to End - Moves the current item to the last position.
-   * Smallest to Largest—Arranges the pivot fields based on the field header from first letter to the last.
-   * Largest to Smallest—Arranges the pivot fields based on the field header from last letter to the first.
-		 
+* Move to Beginning - Moves the current item to the first position.
+* Move to Left - Moves the current item one step towards its left.
+* Move to Right - Moves the current item one step towards its right.
+* Move to End - Moves the current item to the last position.
+* Smallest to Largest—Arranges the pivot fields based on the field header from first letter to the last.
+* Largest to Smallest—Arranges the pivot fields based on the field header from last letter to the first.
+
 * **Calculated field** - Used to add a new calculation field at run time.
 
-By default, the context menu is enabled in all the areas of the Grouping Bar. `DisableContextMenu` property needs to be set individually for Row, Column and Data Header Area in Grouping Bar in-order to alter its visibility. 
+By default, the context menu is enabled in all the areas of the Grouping Bar. `DisableContextMenu` property needs to be set individually for Row, Column and Data Header Area in Grouping Bar in-order to alter its visibility.
 
 After defining the PivotGrid control, raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
 

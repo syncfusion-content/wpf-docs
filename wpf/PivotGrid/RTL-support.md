@@ -9,29 +9,29 @@ documentation: ug
 
 # RTL Support
 
-PivotGrid provides support to display the contents of the Grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the PivotGrid control to "RightToLeft". 
+PivotGrid provides support to display the contents of the Grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the PivotGrid control to "RightToLeft".
 
 If you want to achieve this through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" FlowDirection="RightToLeft" ItemSource="{Binding   Source={StaticResource data}}">
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" FlowDirection="RightToLeft" ItemSource="{Binding   Source={StaticResource data}}">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-    </syncfusion:PivotGridControl>
-</Grid>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -75,7 +75,7 @@ public partial class MainWindow: Window {
         pivotGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
     }
-}   
+}
 
 {% endhighlight %}
 

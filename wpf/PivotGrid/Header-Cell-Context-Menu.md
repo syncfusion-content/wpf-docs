@@ -9,7 +9,7 @@ documentation: ug
 
 # Expand/Collapse in PivotGrid
 
-Expand/collapse operations can be done at both UI and programmatic level. 
+Expand/collapse operations can be done at both UI and programmatic level.
 
 ## UI Level Expand/Collapse
 
@@ -70,76 +70,76 @@ public partial class MainWindow: Window {
 
 Programmatically, we can expand/collapse any number of rows or columns. This can be done using the following methods.
 
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th></tr>
-<tr>
-<td>
-ExpandRow(string)</td><td>
-Expands the group for the given row UniqueText.</td><td>
-string </td><td>
-void </td></tr>
-<tr>
-<td>
-ExpandColumn(string)</td><td>
-Expands the group for the given column UniqueText.</td><td>
-string</td><td>
-void</td></tr>
-<tr>
-<td>
-CollapseRow(string)</td><td>
-Collapse the group for the given row UniqueText.</td><td>
-string</td><td>
-void</td></tr>
-<tr>
-<td>
-CollapseColumn(string)</td><td>
-Collapse the group for the given column UniqueText.</td><td>
-string</td><td>
-void</td></tr>
-<tr>
-<td>
-{{ '`ExpandRow(List<string>)`' | markdownify }}</td><td>
-Expands the group for the given list of row UniqueText.</td><td>
-{{ '`List<string>`' | markdownify }}</td><td>
-void</td></tr>
-<tr>
-<td>
-{{ '`ExpandColumn(List<string>)`' | markdownify }}</td><td>
-Expands the group for the given list of column UniqueText.</td><td>
-{{ '`List<string>`' | markdownify }}</td><td>
-void</td></tr>
-<tr>
-<td>
-{{ '`CollapseRow(List<string>)`' | markdownify }}</td><td>
-Collapse the group for the given list of row UniqueText.</td><td>
-{{ '`List<string>`' | markdownify }}</td><td>
-void</td></tr>
-<tr>
-<td>
-{{ '`CollapseColumn(List<string>)`' | markdownify }}</td><td>
-Collapse the group for the given list of column UniqueText.</td><td>
-{{ '`List<string>`' | markdownify }}</td><td>
-void</td></tr>
-<tr>
-<td>
-ExpandAllGroup</td><td>
-Expands all the group.</td><td>
--</td><td>
-void</td></tr>
-<tr>
-<td>
-CollapseAllGroup</td><td>
-Collapses all the group.</td><td>
--</td><td>
-void</td></tr>
-</table>
+    <table>
+    <tr>
+    <th>
+    Method </th><th>
+    Description </th><th>
+    Parameters </th><th>
+    Return Type </th></tr>
+    <tr>
+    <td>
+    ExpandRow(string)</td><td>
+    Expands the group for the given row UniqueText.</td><td>
+    string </td><td>
+    void </td></tr>
+    <tr>
+    <td>
+    ExpandColumn(string)</td><td>
+    Expands the group for the given column UniqueText.</td><td>
+    string</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    CollapseRow(string)</td><td>
+    Collapse the group for the given row UniqueText.</td><td>
+    string</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    CollapseColumn(string)</td><td>
+    Collapse the group for the given column UniqueText.</td><td>
+    string</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    {{ '`ExpandRow(List<string>)`' | markdownify }}</td><td>
+    Expands the group for the given list of row UniqueText.</td><td>
+    {{ '`List<string>`' | markdownify }}</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    {{ '`ExpandColumn(List<string>)`' | markdownify }}</td><td>
+    Expands the group for the given list of column UniqueText.</td><td>
+    {{ '`List<string>`' | markdownify }}</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    {{ '`CollapseRow(List<string>)`' | markdownify }}</td><td>
+    Collapse the group for the given list of row UniqueText.</td><td>
+    {{ '`List<string>`' | markdownify }}</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    {{ '`CollapseColumn(List<string>)`' | markdownify }}</td><td>
+    Collapse the group for the given list of column UniqueText.</td><td>
+    {{ '`List<string>`' | markdownify }}</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    ExpandAllGroup</td><td>
+    Expands all the group.</td><td>
+    -</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    CollapseAllGroup</td><td>
+    Collapses all the group.</td><td>
+    -</td><td>
+    void</td></tr>
+    </table>
 
-For programmatically expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter, we can expand/collapse one or more columns/rows as per our requirement. 
+For programmatically expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter, we can expand/collapse one or more columns/rows as per our requirement.
 
 To do so, define the PivotGrid control and raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, use the appropriate methods for expand/collapse operations.
 
@@ -183,30 +183,30 @@ public partial class MainWindow: Window {
     }
 
     void pivotGrid_Loaded(object sender, RoutedEventArgs e) {
-        /// Expands the Bike from row       
+        /// Expands the Bike from row
         pivotGrid.ExpandRow("Bike");
-        /// Collapses the Bike from row        
+        /// Collapses the Bike from row
         pivotGrid.CollapseRow("Bike");
-        /// Expands the Canada from column        
+        /// Expands the Canada from column
         pivotGrid.ExpandColumn("Canada");
-        /// Collapses the Canada from column        
+        /// Collapses the Canada from column
         pivotGrid.CollapseColumn("Canada");
-        /// Collapses the given collection of UniqueText string values for row        
+        /// Collapses the given collection of UniqueText string values for row
         pivotGrid.CollapseRow(new List < string > {
             "Bike",
             "Car"
         });
-        /// Expands the given collection of UniqueText string values for row        
+        /// Expands the given collection of UniqueText string values for row
         pivotGrid.ExpandRow(new List < string > {
             "Bike",
             "Car"
         });
-        /// Collapses the given collection of UniqueText string values for Column        
+        /// Collapses the given collection of UniqueText string values for Column
         pivotGrid.CollapseColumn(new List < string > {
             "Canada",
             "France"
         });
-        /// Expands the given collection of UniqueText string values for Column        
+        /// Expands the given collection of UniqueText string values for Column
         pivotGrid.ExpandColumn(new List < string > {
             "Canada",
             "France"
@@ -219,7 +219,7 @@ public partial class MainWindow: Window {
 }
 
 {% endhighlight %}
-  
+
 ![](Header-Cell-context-menu-images/Context menu for Row headers.png)
 
 _Context menu for Row Headers_
