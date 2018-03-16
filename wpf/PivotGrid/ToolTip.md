@@ -13,31 +13,30 @@ Tooltip holds the respective cell value and its row and column information. It c
 
 ## Adding Tooltip for entire PivotGrid
 
-The `ToolTipEnabled` property can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*. 
+The `ToolTipEnabled` property can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*.
 
 If through *XAML*, please refer the below code snippet.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ToolTipEnabled="True" ItemSource="{Binding   Source={StaticResource data}}">
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ToolTipEnabled="True" ItemSource="{Binding   Source={StaticResource data}}">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-    </syncfusion:PivotGridControl>
-</Grid>
-
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -93,7 +92,7 @@ This can be achieved by setting the appearance of tooltip with respect to each c
 After defining the PivotGrid control, raise the Loaded event of PivotGrid control. Inside the `PivotGrid_Loaded()` event, set the `ToolTipEnabled` property of each cell styles in PivotGrid control.
 
 {% highlight C# %}
-    
+
 public partial class MainWindow: Window {
     PivotGridControl pivotGrid = new PivotGridControl();
     public MainWindow() {
@@ -170,38 +169,37 @@ Please refer the below code snippets.
 
 {% highlight xaml %}
 
-<Window.Resources>
-    <ResourceDictionary>
-        <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
+    <Window.Resources>
+        <ResourceDictionary>
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
 
-        <DataTemplate x:Key="CustomTemplateTooltip">
-            <Border BorderThickness="1" BorderBrush="Black" Background="LightGreen" CornerRadius="2">
-                <StackPanel Margin="5" Orientation="Horizontal" VerticalAlignment="Center">
-                    <TextBlock Text="{ Binding Tag }" VerticalAlignment="Center" />
-                </StackPanel>
-            </Border>
-        </DataTemplate>
+            <DataTemplate x:Key="CustomTemplateTooltip">
+                <Border BorderThickness="1" BorderBrush="Black" Background="LightGreen" CornerRadius="2">
+                    <StackPanel Margin="5" Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="{ Binding Tag }" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Border>
+            </DataTemplate>
 
-    </ResourceDictionary>
-</Window.Resources>
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ToolTipEnabled="True" ItemSource="{Binding   Source={StaticResource data}}">
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ToolTipEnabled="True" ItemSource="{Binding   Source={StaticResource data}}">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-    </syncfusion:PivotGridControl>
-
-</Grid>       
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -213,10 +211,9 @@ public partial class MainWindow: Window {
         pivotGrid.CustomToolTipTemplateKey = "CustomTemplateTooltip";
     }
 }
-	
+
 {% endhighlight %}
 
 Similarly, we can define custom tooltip to specific areas with respect to individual cell styles using `CustomToolTipTemplateKey` property of row, column, summary header and value cell styles.
 
 ![](ToolTip-Images/PivotGrid shows CustomToolTip.png)
-	

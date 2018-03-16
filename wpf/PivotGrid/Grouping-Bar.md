@@ -22,17 +22,17 @@ If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" syncfusion:SkinStorage.VisualStyle="Metro" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
-    <Window.Resources>
-        <ResourceDictionary>
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid Name="grid1">
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowGroupingBar="True" ItemSource="{Binding   Source={StaticResource data}}">
-        </syncfusion:PivotGridControl>
-    </Grid>
-</Window>
+    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" syncfusion:SkinStorage.VisualStyle="Metro" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
+        <Window.Resources>
+            <ResourceDictionary>
+                <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
+            </ResourceDictionary>
+        </Window.Resources>
+        <Grid Name="grid1">
+            <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowGroupingBar="True" ItemSource="{Binding   Source={StaticResource data}}">
+            </syncfusion:PivotGridControl>
+        </Grid>
+    </Window>
 
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ public partial class MainWindow: Window {
         pivotGrid.ItemSource = ProductSales.GetSalesData();
         pivotGrid.ShowGroupingBar = true;
     }
-} 
+}
 
 {% endhighlight %}
 
@@ -63,4 +63,3 @@ _PivotGrid with Grouping Bar_
 ![](Grouping-Bar-Images/PivotGrid without grouping bar.png)
 
 _PivotGrid without Grouping Bar_
-

@@ -9,9 +9,9 @@ documentation: ug
 
 # PivotComputationInfo
 
-PivotComputation holds the information needed for calculations that appear in a PivotGrid control. For each calculation, there is an associated `PivotComputationInfo` object that is added to the PivotCalculations collection. 
+PivotComputation holds the information needed for calculations that appear in a PivotGrid control. For each calculation, there is an associated `PivotComputationInfo` object that is added to the PivotCalculations collection.
 
-Properties: 
+Properties:
 
 * **CalculationName** - Gets or sets what needs to be displayed in the PivotTable if more than one calculation is included in the PivotGrid.
 * **Description** - Gets or sets the description of the calculation.
@@ -39,19 +39,19 @@ Please refer the code sample below.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top" Height="48" Width="117">
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldHeader="Quantity" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-    </syncfusion:PivotGridControl>
-</Grid>
+    <Grid>
+        <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top" Height="48" Width="117">
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldHeader="Quantity" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight%}
 
 ## Defining PivotComputationInfo in Code-Behind
 
-Include the *Syncfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotComputationInfo's for each calculation items. Add the defined PivotComputationInfo's to PivotCalculations collection of PivotGrid control. 
+Include the *Syncfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotComputationInfo's for each calculation items. Add the defined PivotComputationInfo's to PivotCalculations collection of PivotGrid control.
 
 Please refer the below code sample.
 
@@ -70,5 +70,3 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
 }
 
 {% endhighlight %}
-
-

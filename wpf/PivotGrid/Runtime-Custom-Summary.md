@@ -11,12 +11,12 @@ documentation: ug
 
 PivotGrid enables us to set the custom summaries for the PivotItem values at both load time and runtime (using PivotComputationInfo dialog).
 
-For creating a custom SummaryBase class, add a new class and inherit the abstract class `SummaryBase`. Implement your summary logics by overriding Combine(), CombineSummary(),GetResult(), GetInstance(), Reset() methods. 
+For creating a custom SummaryBase class, add a new class and inherit the abstract class `SummaryBase`. Implement your summary logics by overriding Combine(), CombineSummary(),GetResult(), GetInstance(), Reset() methods.
 
 Please refer below code sample.
 
  {% highlight C# %}
- 
+
 public class MyCustomSummaryBase1: SummaryBase {
     public MyCustomSummaryBase1() {}
     private double mTotalValue;
@@ -46,7 +46,6 @@ public class MyCustomSummaryBase1: SummaryBase {
     }
 }
 
-
 public class MyCustomSummaryBase2: SummaryBase {
     private double mTotalValue;
 
@@ -74,43 +73,42 @@ public class MyCustomSummaryBase2: SummaryBase {
         mTotalValue = 0;
     }
 }
- 
+
  {% endhighlight %}
 
 ## Defining Custom Summary in Load time
 
-We can define our own custom SummaryBase to PivotCalculations in PivotGrid by setting the instance of the custom summary in `Summary` property. And this custom summary can be used only if we set `SummaryType` of that PivotCalculation as "Custom". It can be done through *XAML* or *Code-behind*. 
+We can define our own custom SummaryBase to PivotCalculations in PivotGrid by setting the instance of the custom summary in `Summary` property. And this custom summary can be used only if we set `SummaryType` of that PivotCalculation as "Custom". It can be done through *XAML* or *Code-behind*.
 
 If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
-    <Window.Resources>
-        <ResourceDictionary>
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
-            <local:MyCustomSummaryBase1 x:Key="summary1" />
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid Name="grid1">
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
-            <syncfusion:PivotGridControl.PivotRows>
-                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-            </syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotGridControl.PivotColumns>
-                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-            </syncfusion:PivotGridControl.PivotColumns>
+    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
+        <Window.Resources>
+            <ResourceDictionary>
+                <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
+                <local:MyCustomSummaryBase1 x:Key="summary1" />
+            </ResourceDictionary>
+        </Window.Resources>
+        <Grid Name="grid1">
+            <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
+                <syncfusion:PivotGridControl.PivotRows>
+                    <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                    <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+                </syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotGridControl.PivotColumns>
+                    <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                    <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+                </syncfusion:PivotGridControl.PivotColumns>
 
-            <syncfusion:PivotGridControl.PivotCalculations>
-                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="Custom" Summary="{StaticResource summary1}" />
-                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-            </syncfusion:PivotGridControl.PivotCalculations>
-
-        </syncfusion:PivotGridControl>
-    </Grid>
-</Window>
+                <syncfusion:PivotGridControl.PivotCalculations>
+                    <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="Custom" Summary="{StaticResource summary1}" />
+                    <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+                </syncfusion:PivotGridControl.PivotCalculations>
+            </syncfusion:PivotGridControl>
+        </Grid>
+    </Window>
 
 {% endhighlight %}
 
@@ -154,12 +152,12 @@ public partial class MainWindow: Window {
 }
 
 {% endhighlight %}
-     
+
 ## Defining Custom Summary in Runtime
 
 Create an object for all the custom SummaryBase class and set the add object's to PivotSchemaDesigner's `CustomSummaryBaseCollection` property. Hence this property is an ObservableCollection type of SummaryBase that enable the user to add more than one class object. Each object is considered as a unique custom SummaryBase. 
 
-Using the CustomSummaryBaseCollection, we set the summary for the respective columns by its `Summary` property.  
+Using the CustomSummaryBaseCollection, we set the summary for the respective columns by its `Summary` property.
 
 Please refer the below code sample.
 
@@ -179,11 +177,10 @@ public partial class MainWindow: Window {
         };
     }
 }
-	
+
 {% endhighlight %}
 
-To set custom summary at runtime, double-click Items from the PivotSchemaDesigner which will pop-up the *PivotComputationInformation* dialog box. 
+To set custom summary at runtime, double-click Items from the PivotSchemaDesigner which will pop-up the *PivotComputationInformation* dialog box.
 In the *Summarize Value by* combo-box, you can select the pre-defined custom summaries based on your requirement.
 
 ![](RunTime-custom-summary-images/PivotGrid with custom summaries.png)
-
