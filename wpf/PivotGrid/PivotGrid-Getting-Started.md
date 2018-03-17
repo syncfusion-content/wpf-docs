@@ -21,31 +21,31 @@ Once the WPF application is created, goto View menu and select Toolbox option. N
 
 Open Visual Studio IDE and navigating to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-Next you need to add the following dependency assemblies into your WPF Application. To add them to your WPF Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the below mentioned Syncfusion assemblies are found. 
-        
+Next you need to add the following dependency assemblies into your WPF Application. To add them to your WPF Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the below mentioned Syncfusion assemblies are found.
+
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
 * Syncfusion.Linq.Base
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
-  
-N> You can also get the assemblies by browsing to the Default Assembly Location 
+
+N> You can also get the assemblies by browsing to the Default Assembly Location.
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
- 
+
 Then define the PivotGrid control in MainWindow.xaml as shown in the below code sample.
 
 {% highlight XAML %}
 
-<Window
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow"
-    Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
-    </Grid>
-</Window>
+    <Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+        <Grid>
+            <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
+        </Grid>
+    </Window>
 
 {% endhighlight %}
 
@@ -53,31 +53,31 @@ Then define the PivotGrid control in MainWindow.xaml as shown in the below code 
 
 Open Visual Studio IDE and navigating to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-Next you need to add the following dependency assemblies into your WPF Application. To add them to your WPF Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the below mentioned Syncfusion assemblies are found. 
-        
+Next you need to add the following dependency assemblies into your WPF Application. To add them to your WPF Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the below mentioned Syncfusion assemblies are found.
+
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
 * Syncfusion.Linq.Base
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
-  
+
 N> You can also get the assemblies by browsing to the Default Assembly Location
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
- 
-Then, add a Grid container in MainWindow.xaml which will hold the PivotGrid control created and added from code-behind lately. 
+
+Then, add a Grid container in MainWindow.xaml which will hold the PivotGrid control created and added from code-behind lately.
 
 {% highlight XAML %}
 
-<Window
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow"
-    Title="MainWindow" Height="350" Width="525">
-    <Grid Name="grid1">
-    </Grid>
-</Window>
-     
+    <Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+        <Grid Name="grid1">
+        </Grid>
+    </Window>
+
 {% endhighlight %}
 
 Include the *Syncfusion.Windows.Controls.PivotGrid* namespace in MainWindow.xaml.cs to create a PivotGrid control in code-behind.
@@ -88,7 +88,7 @@ Include the *Syncfusion.Windows.Controls.PivotGrid* namespace in MainWindow.xaml
     using System.Windows.Navigation;
     using System.Windows.Shapes;
     using Syncfusion.Windows.Controls.PivotGrid;
-	
+
 {% endhighlight %}
 
 Raise the **Loaded** event of the MainWindow and within that event, create a new instance of the PivotGridControl class. This instance should then be added as a child of the Grid present inside MainWindow.
@@ -106,7 +106,6 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
 
 {% endhighlight %}
 
-
 ## Adding PivotGrid through Expression Blend
 
 Open Blend for Visual Studio and navigating to File > New Project > WPF > WPF Application to create a new WPF application.
@@ -119,14 +118,13 @@ Select the **Projects** tab available in the top-left corner of the Blend IDE, r
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
-    
+
 N> You can also get the assemblies by browsing to the Default Assembly Location
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
- 
+
 Only after adding the above assemblies, PivotGrid control will be automatically added under **Assets** tab. Now choose the **Assets** tab, drag and drop the PivotGridControl from Toolbox to designer section.
 
 ![](PivotGrid-Getting-Started-images/Adding PivotGridControl through expression blend.png)
-
 
 ## Binding a datasource to PivotGridControl
 
@@ -190,7 +188,7 @@ public class ProductSales {
             sales.Country = countries[r.Next(0, countries.GetLength(0))];
             sales.Quantity = r.Next(1, 12);
             /// 1 percent discount for 1 quantity
-            double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+            double discount = (30000*sales.Quantity)*(double.Parse(sales.Quantity.ToString()) / 100);
             sales.Amount = (30000 * sales.Quantity) - discount;
             sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
             sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
@@ -206,27 +204,27 @@ public class ProductSales {
 
     }
 }
-    
+
 {% endhighlight %}
 
-Above mentioned GetSalesData method is used to get the collection that needs to be populated in the PivotGrid control.Now we need to bind the collection to the PivotGrid control as its ItemSource. It can be done through *XAML* or *Code-behind*. 
+Above mentioned GetSalesData method is used to get the collection that needs to be populated in the PivotGrid control.Now we need to bind the collection to the PivotGrid control as its ItemSource. It can be done through *XAML* or *Code-behind*.
 
 If you need to initialize the ItemSource through **XAML**, ObjectDataProvider is used. Please refer the following code.
 
 {% highlight XAML %}
 
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
-    <Window.Resources>
-        <ResourceDictionary>
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
-        <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}" VisualStyle="Metro">
-        </syncfusion:PivotGridControl>
-    </Grid>
-</Window>
-     
+    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApplication1.MainWindow" Title="MainWindow" Height="350" Width="525" xmlns:local="clr-namespace:WpfApplication1">
+        <Window.Resources>
+            <ResourceDictionary>
+                <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData" />
+            </ResourceDictionary>
+        </Window.Resources>
+        <Grid>
+            <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}" VisualStyle="Metro">
+            </syncfusion:PivotGridControl>
+        </Grid>
+    </Window>
+
 {% endhighlight %}
 
  Else, if you need to initialize the Item source through **Code-Behind**, please refer the below code snippet.
@@ -242,34 +240,34 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
     this.grid1.Children.Add(pivotGrid);
     pivotGrid.ItemSource = ProductSales.GetSalesData();
 }
-     
+
 {% endhighlight %}
 
-### Defining the PivotItems and PivotComputations 
+### Defining the PivotItems and PivotComputations
 
  **PivotItem** is a container for items in PivotGrid control. An item can be either a **PivotRow** or **PivotColumn**. Please refer the topic *1.3.1 Pivot Item* for more details.**PivotComputationInfo** holds the value fields for the PivotGrid control. It does have different types of custom calculations and we could summarize the values depends on our requirement. Please refer the topic *1.3.2 PivotComputationInfo* for more details. PivotItems and PivotComputations can be defined through *XAML* and *Code-Behind*.
-   
+
 If you need to define the PivotItems and PivotComputations through **XAML**, refer the code snippet below.
 
 {% highlight XAML %}
 
-<Grid>
-    <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}" VisualStyle="Metro">
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-    </syncfusion:PivotGridControl>
-</Grid>
-    
+    <Grid>
+        <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}" VisualStyle="Metro">
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
+
 {% endhighlight %}
 
 Else, if you need to define in **Code-Behind**, include the *Syncfusion.PivotAnalysis.Base*  namespace in MainWindow.xaml.cs. Please refer the below code snippet.
@@ -281,7 +279,7 @@ Else, if you need to define in **Code-Behind**, include the *Syncfusion.PivotAna
     using System.Windows.Shapes;
     using Syncfusion.Windows.Controls.PivotGrid;
     using Syncfusion.PivotAnalysis.Base;
-	
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -321,11 +319,9 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
     pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
     pivotGrid.ItemSource = ProductSales.GetSalesData();
 }
-    
+
 {% endhighlight %}
 
 **Run** the application, the following output will be generated.
 
 ![](PivotGrid-Getting-Started-images/PivotGrid with Populated values.png)
-
-

@@ -12,18 +12,18 @@ documentation: ug
 Sorting enables you to quickly visualize and understand your data better, organize, find the data that you want and ultimately make more effective decisions. By default, PivotGrid holds built-in Comparers for all data types so that it will populate the data in ascending/descending order according to its data type. You can also define your own custom Comparer in order to view the data based on your requirement.
 
 **Sorting using Custom Comparer**
- 
+
 Sorting the data with your own custom Comparer can be achieved by defining your custom Comparer and initializing its instance to the `Comparer` property of the corresponding PivotItem.
 
 For example, we have defined a custom `ReverseOrderComparer` for the PivotItem. Please find the appropriate code sample below.
 
 {% highlight C# %}
-   
-/// <summary>
-/// ReverseOrderComparer for descending sort order.
-/// </summary>
-public class ReverseOrderComparer: IComparer {
-    public int Compare(object x, object y) {
+
+// ReverseOrderComparer for descending sort order.
+public class ReverseOrderComparer: IComparer
+{
+    public int Compare(object x, object y)
+    {
         if (x == null && y == null)
             return 0;
         else if (y == null)
@@ -41,12 +41,14 @@ In order to apply this comparer to PivotItem, we have created an instance for th
 
 {% highlight C# %}
 
-public MainWindow() {
+public MainWindow()
+{
     InitializeComponent();
     this.Loaded += MainWindow_Loaded;
 }
 
-void MainWindow_Loaded(object sender, RoutedEventArgs e) {
+void MainWindow_Loaded(object sender, RoutedEventArgs e)
+{
     PivotGridControl pivotGrid = new PivotGridControl();
     grid1.Children.Add(pivotGrid);
     PivotItem m_PivotItem = new PivotItem() {
@@ -77,7 +79,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
     pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
     pivotGrid.ItemSource = ProductSales.GetSalesData();
 }
-  
+
 {% endhighlight %}
 
 ![](Sorting-Images/Not Sorted PivotGrid.png)
@@ -87,4 +89,3 @@ _PivotGrid without ReverseOrderComparer_
 ![](Sorting-Images/Sorted PivotGrid.png)
 
 _PivotGrid with ReverseOrderComparer_
-

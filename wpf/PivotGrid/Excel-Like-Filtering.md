@@ -7,11 +7,9 @@ control: PivotGridControl
 documentation: ug
 ---
 
+# Excel-like Filtering
 
-
-#Excel-like Filtering
-
-PivotGrid control provides excel-like sorting and filtering features applied to a PivotItem. We can enable or disable the excel-like sorting and filtering pop-up in PivotGrid by setting the `AllowMultiFunctionalSortFilter` property of Grouping Bar in PivotGrid control. 
+PivotGrid control provides excel-like sorting and filtering features applied to a PivotItem. We can enable or disable the excel-like sorting and filtering pop-up in PivotGrid by setting the `AllowMultiFunctionalSortFilter` property of Grouping Bar in PivotGrid control.
 
 To do so, define the PivotGrid control and raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside the `GroupingBar_Loaded()` event set the value for the `AllowMultiFunctionalSortFilter` property to "true".
 
@@ -67,7 +65,6 @@ public partial class MainWindow: Window {
 
 ![](Excel-Like-Filtering-images/Excel like Filter Popup.png)
 
-
 ## Various features of MultiFunctional Pop-up
 
 **Sort A to Z**
@@ -86,21 +83,20 @@ It is used to clear all the filter changes applied to the corresponding PivotIte
 
 It is used to filter the PivotGrid based on the PivotItem filter labels. It can be done by using the various options which are listed below.
 
-  * Equals
-  * Does not equals
-  * Greater than
-  * Greater than or equal to
-  * Less than
-  * Less than or equal to
-  * Begins with
-  * Does not begins with
-  * Ends with
-  * Does not ends with
-  * Contains
-  * Does not contains
-  * Between
-  * Not between
-
+* Equals
+* Does not equals
+* Greater than
+* Greater than or equal to
+* Less than
+* Less than or equal to
+* Begins with
+* Does not begins with
+* Ends with
+* Does not ends with
+* Contains
+* Does not contains
+* Between
+* Not between
 
 ![](Excel-Like-Filtering-images/Label filter window.png)
 
@@ -110,20 +106,19 @@ _Label Filter window for filtering "Alberta" in State_
 
 It is used to filter the PivotGrid based on the PivotItem field values. It can be done by using the various options which are listed below.
 
-  * Equals
-  * Does not equals
-  * Greater than
-  * Greater than or equal to
-  * Less than
-  * Less than or equal to
-  * Between
-  * Not between
-  * Top 10
+* Equals
+* Does not equals
+* Greater than
+* Greater than or equal to
+* Less than
+* Less than or equal to
+* Between
+* Not between
+* Top 10
 
 ![](Excel-Like-Filtering-images/Value filter window.png)
 
 _Value Filter window for filtering "Alberta" using its Quantity value "677" in State_
-
 
 ![](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
 

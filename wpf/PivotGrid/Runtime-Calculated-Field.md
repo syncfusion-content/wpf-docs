@@ -7,13 +7,13 @@ control: PivotGridControl
 documentation: ug
 ---
 
-#Calculated Field
+# Calculated Field
 
-PivotGrid provides support to insert a new calculated field based on the existing calculated items using the Calculated Field window. This option is available as a menu item in the Grouping Bar context menu. 
+PivotGrid provides support to insert a new calculated field based on the existing calculated items using the Calculated Field window. This option is available as a menu item in the Grouping Bar context menu.
 
 **Inserting a new Calculated Field in PivotGrid**
 
-To insert a new CalculatedField, open the Calculated Field window using the Grouping Bar context menu. Then define a **Name** for the new calculated field. 
+To insert a new CalculatedField, open the Calculated Field window using the Grouping Bar context menu. Then define a **Name** for the new calculated field.
 
 ![](Calculated-Field-images/Defining a name to the new calculated field.png)
 

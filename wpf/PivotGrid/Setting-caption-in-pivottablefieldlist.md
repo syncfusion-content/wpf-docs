@@ -17,24 +17,24 @@ The following code sample illustrates about how to set field caption for PivotIt
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" FreezeHeaders="False" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
-      <syncfusion:PivotGridControl.PivotRows>
-         <syncfusion:PivotItem FieldMappingName="Product" FieldCaption="Product_1" TotalHeader="Total"/>
-         <syncfusion:PivotItem FieldMappingName="Product" FieldCaption="Product_2" TotalHeader="Total"/>
-         <syncfusion:PivotItem FieldMappingName="Date" FieldHeader="Date" FieldCaption="Date" TotalHeader="Total"/>
-      </syncfusion:PivotGridControl.PivotRows>
-      <syncfusion:PivotGridControl.PivotColumns>
-         <syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" FieldCaption="Country" TotalHeader="Total"/>
-         <syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" FieldCaption="State" TotalHeader="Total"/>
-      </syncfusion:PivotGridControl.PivotColumns>
-      <syncfusion:PivotGridControl.PivotCalculations>
-         <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Amount"  FieldCaption="Amount_1" Format="C" SummaryType="DoubleTotalSum"/>
-         <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Amount"  FieldCaption="Amount_2" Format="#,##" SummaryType="IntTotalSum"/>
-         <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Quantity" FieldCaption="Quantity" Format="#,##0"/>
-      </syncfusion:PivotGridControl.PivotCalculations>
-    </syncfusion:PivotGridControl>
-</Grid>
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" FreezeHeaders="False" VerticalAlignment="Top" VisualStyle="Metro" ItemSource="{Binding   Source={StaticResource data}}">
+        <syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotItem FieldMappingName="Product" FieldCaption="Product_1" TotalHeader="Total"/>
+            <syncfusion:PivotItem FieldMappingName="Product" FieldCaption="Product_2" TotalHeader="Total"/>
+            <syncfusion:PivotItem FieldMappingName="Date" FieldHeader="Date" FieldCaption="Date" TotalHeader="Total"/>
+        </syncfusion:PivotGridControl.PivotRows>
+        <syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" FieldCaption="Country" TotalHeader="Total"/>
+            <syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" FieldCaption="State" TotalHeader="Total"/>
+        </syncfusion:PivotGridControl.PivotColumns>
+        <syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Amount"  FieldCaption="Amount_1" Format="C" SummaryType="DoubleTotalSum"/>
+            <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Amount"  FieldCaption="Amount_2" Format="#,##" SummaryType="IntTotalSum"/>
+            <syncfusion:PivotComputationInfo CalculationName="Total" Description="Summation of values" FieldName="Quantity" FieldCaption="Quantity" Format="#,##0"/>
+        </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -87,4 +87,4 @@ public partial class MainWindow: Window {
 
 {% endtabs %}
 
-![](Setting-caption-in-pivottablefieldlist-images/FieldCaption.png)
+![FieldCaption](Setting-caption-in-pivottablefieldlist-images/FieldCaption.png)

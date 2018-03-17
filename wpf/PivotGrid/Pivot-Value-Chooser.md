@@ -14,8 +14,7 @@ Pivot Value Chooser is used to list all the PivotFields available in the data so
 * **ShowPivotValueChooser** - Hides or shows a computation value column chooser dialog that allows users to hide, show, or re-order the PivotCalculations in the PivotGrid.
 * **PossiblePivotCalculations** - Gets or sets a collection of possible PivotCalculations that may appear in the PivotGrid control and lists them in the PivotValueChooser.
 
-
-##Pivot value chooser with possible calculation values
+## Pivot value chooser with possible calculation values
 
 `PossiblePivotCalculations` is a collection where user can define which PivotFields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated PivotFields from the ItemSource of PivotGrid control.
 
@@ -23,7 +22,8 @@ After defining PivotGrid control in RowPivotsOnly mode, raise the loaded event o
 
 {% highlight C# %}
 
-public partial class MainWindow: Window {
+public partial class MainWindow: Window
+{
     public MainWindow() {
         InitializeComponent();
         pivotGrid.Loaded += pivotGrid_Loaded;
@@ -47,7 +47,8 @@ After defining PivotGrid control in RowPivotsOnly mode, raise the loaded event o
 
 {% highlight C# %}
 
-public partial class MainWindow: Window {
+public partial class MainWindow: Window
+{
     public MainWindow() {
         InitializeComponent();
         pivotGrid.Loaded += pivotGrid_Loaded;

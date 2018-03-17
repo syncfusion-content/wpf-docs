@@ -11,7 +11,7 @@ documentation: ug
 
 PivotGrid supports to display the Grid with inner most computations alone, without displaying the total values.
 
-The `InnerMostComputationsOnly` property is used for this requirement and it can be mentioned either in *XAML* or *Code-behind*. 
+The `InnerMostComputationsOnly` property is used for this requirement and it can be mentioned either in *XAML* or *Code-behind*.
 
 If through *XAML*, please refer the below code sample.
 
@@ -37,7 +37,6 @@ If through *XAML*, please refer the below code sample.
 
 </syncfusion:PivotGridControl>
 
-
 {% endhighlight %}
 
 Else if through *Code-behind*, please refer the below code sample.
@@ -61,4 +60,3 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![](Features-in-RowPivotsOnly-images/Innermost Computation only in PivotGrid.png)
-

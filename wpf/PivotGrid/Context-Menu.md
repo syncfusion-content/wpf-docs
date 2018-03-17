@@ -36,6 +36,6 @@ public partial class MainWindow: Window {
     }
 }
 
-{% endhighlight %}	
+{% endhighlight %}
 
 ![](Features-in-RowPivotsOnly-images/PivotGrid shows Context menu.png)
