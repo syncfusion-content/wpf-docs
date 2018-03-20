@@ -65,17 +65,12 @@ To set up desired cell type, the Style.CellType property must be assigned with t
 
 Displaying a Check Box Control in a cell
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 GridStyleInfo style = gridControl1.Model[2, 2];
-
 style.CellType = "CheckBox";
-
 {% endhighlight  %}
+{% endtabs %}
 
 Likewise, you can also add other controls from the table above. A sample output is displayed below.
 
@@ -151,37 +146,22 @@ Let us see how to build different kinds of combo boxes using ChoiceList. This al
 
 Setting Up an Editable Combo Box 
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 StringCollection list = new StringCollection();
-
 list.Add("One");
-
 list.Add("Two");
-
 list.Add("Three");
-
 list.Add("Four");
-
 list.Add("Five");
 
-
-
 //Editable Combo
-
 var combo1 = this.grid.Model[1, 2];
-
 combo1.CellType = "ComboBox";
-
 combo1.ChoiceList = list;
-
 combo1.DropDownStyle = GridDropDownStyle.Editable;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -200,24 +180,15 @@ An Editable Combo Box in a Grid is created
 
 Setting Up Autocomplete Combo Box 
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 //Autocomplete combo
-
 var combo2 = this.grid.Model[2, 2];
-
 combo2.CellType = "ComboBox";
-
 combo2.ChoiceList = list;
-
 combo2.DropDownStyle = GridDropDownStyle.AutoComplete;
-
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -236,23 +207,15 @@ An Autocomplete Combo Box in a Grid is created
 
 Setting Up Exclusive Combo Box 
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 //Exclusive Combo
-
 var combo3 = this.grid.Model[3, 2];
-
 combo3.CellType = "ComboBox";
-
 combo3.ChoiceList = list;
-
 combo3.DropDownStyle = GridDropDownStyle.Exclusive;
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -275,23 +238,15 @@ The combo boxes created using ItemsSource class ensure that the options availabl
 
 Setting up editable combo box
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 //Editable Combo bound to the “FirstName” column of Northwind Employee Table.
-
 var combo1 = this.grid.Model[4, 2];
-
 combo1.CellType = "ComboBox";
-
 combo1.ItemsSource = northWind.Employees.Select(emp => emp.FirstName).ToList();
-
 combo1.DropDownStyle = GridDropDownStyle.Editable;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -310,27 +265,17 @@ An editable Combo Box in a Grid is created.
 
 Setting Up an Autocomplete Combo Box
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 //Autocomplete Combo bound to the “FirstName” column of Northwind Employee Table.
-
 var combo2 = this.grid.Model[5, 2];
-
 combo2.CellType = "ComboBox";
-
 combo2.ItemsSource = northWind.Employees.Select(emp => emp.FirstName).ToList();
-
 combo2.DropDownStyle = GridDropDownStyle.AutoComplete;
-
 combo2.DisplayMember = "FirstName";
-
 combo2.ValueMember = "EmployeeID";
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -349,23 +294,15 @@ An Autocomplete Combo Box in a Grid is created
 
 Setting Up an Exclusive Combo Box
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 //Exclusive Combo bound to the “FirstName” column of Northwind Employee Table.
-
 var combo3 = this.grid.Model[6, 2];
-
 combo3.CellType = "ComboBox";
-
 combo3.ItemsSource = northWind.Employees.Select(emp => emp.FirstName).ToList();
-
 combo3.DropDownStyle = GridDropDownStyle.Exclusive;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -392,37 +329,22 @@ The code snippets below allow the user to construct different List Control Cells
 
 Creating Editable Drop-down List Bound to LINQ Source with ‘FirstName’ as its Display Member.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 var dropdown1 = this.grid.Model[7, 2];
-
 dropdown1.CellType = "DropDownList";
-
 dropdown1.ItemsSource = northWind.Employees.Select(emp =>
-
-        new
-
-        {
-
-            EmployeeID = emp.EmployeeID,
-
-            FirstName = emp.FirstName,
-
-            LastName = emp.LastName,
-
-            Phone = emp.HomePhone
-
-        }).ToList();
-
+new
+{
+    EmployeeID = emp.EmployeeID,
+    FirstName = emp.FirstName,
+    LastName = emp.LastName,
+    Phone = emp.HomePhone
+}).ToList();
 dropdown1.DisplayMember = "FirstName";
-
 dropdown1.DropDownStyle = GridDropDownStyle.Editable;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -441,39 +363,23 @@ An Editable drop-down list is created.
 
 Autocomplete Drop-down List Bound to LINQ source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 var dropdown2 = this.grid.Model[8, 2];
-
 dropdown2.CellType = "DropDownList";
-
 dropdown2.ItemsSource = northWind.Employees.Select(emp =>
-
-        new
-
-        {
-
-            EmployeeID = emp.EmployeeID,
-
-            FirstName = emp.FirstName,
-
-            LastName = emp.LastName,
-
-            Phone = emp.HomePhone
-
-        }).ToList();
-
+new
+{
+    EmployeeID = emp.EmployeeID,
+    FirstName = emp.FirstName,
+    LastName = emp.LastName,
+    Phone = emp.HomePhone
+}).ToList();
 dropdown2.DisplayMember = "FirstName";
-
 dropdown2.ValueMember = "EmployeeID";
-
 dropdown2.DropDownStyle = GridDropDownStyle.AutoComplete;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -490,37 +396,22 @@ Autocomplete Drop-down List Control
 
 Exclusive Drop-down List Bound to LINQ Source with FirstName as its DisplayMember.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 var dropdown3 = this.grid.Model[9, 2];
-
 dropdown3.CellType = "DropDownList";
-
 dropdown3.ItemsSource = northWind.Employees.Select(emp =>
-
-    new
-
-    {
-
-        EmployeeID = emp.EmployeeID,
-
-        FirstName = emp.FirstName,
-
-        LastName = emp.LastName,
-
-        Phone = emp.HomePhone
-
-    }).ToList();
-
+new
+{
+EmployeeID = emp.EmployeeID,
+FirstName = emp.FirstName,
+LastName = emp.LastName,
+Phone = emp.HomePhone
+}).ToList();
 dropdown3.DisplayMember = "FirstName";
-
 dropdown3.DropDownStyle = GridDropDownStyle.Exclusive;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -581,40 +472,24 @@ Number of digits in each group to the left of the decimal.</td></tr>
 
 Creating a Currency Cell with a Negative Currency Value with ‘.’ as the Decimal Separator. 
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 int[] sizes = { 2, 3, 4 };   
-
 grid.Model[6, 2].CellType = "CurrencyEdit";
-
 grid.Model[6, 2].IsEditable = true;
-
 grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
-
 { 
-
 CurrencyDecimalDigits = 4, 
-
 CurrencyDecimalSeparator = ".", 
-
 CurrencyNegativePattern = 0, 
-
 CurrencyPositivePattern = 0, 
-
 CurrencySymbol = "$" 
-
 };
 
 grid.Model[6, 2].NumberFormat.CurrencyGroupSizes = sizes;
-
 grid.Model[6, 2].CellValue = -4.0;
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -631,40 +506,24 @@ Currency Cell
 
 Currency Cell with a Negative Currency Value and a Different Negative Pattern
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 int[] sizes = { 2, 3, 4 };   
-
 grid.Model[10, 2].CellType = "CurrencyEdit";
-
 grid.Model[10, 2].IsEditable = true;
-
 grid.Model[10, 2].NumberFormat = new NumberFormatInfo 
-
 { 
-
     CurrencyDecimalDigits = 2, 
-
     CurrencyDecimalSeparator = ".", 
-
     CurrencyNegativePattern = 5, 
-
     CurrencyPositivePattern = 1, 
-
     CurrencySymbol = "$" 
-
 };
 
 grid.Model[10, 2].NumberFormat.CurrencyGroupSizes = sizes;
-
 grid.Model[10, 2].CellValue = -14.0;
-
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -681,40 +540,24 @@ Currency Cell
 
 Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 int[] sizes = { 2, 3, 4 };   
-
 grid.Model[14, 2].CellType = "CurrencyEdit";
-
 grid.Model[14, 2].IsEditable = true;
-
 grid.Model[14, 2].NumberFormat = new NumberFormatInfo 
-
 {
-
     CurrencyDecimalDigits = 4, 
-
     CurrencyDecimalSeparator = ".", 
-
     CurrencyNegativePattern = 11, 
-
     CurrencyPositivePattern = 2, 
-
     CurrencySymbol = "$"
-
 };
 
 grid.Model[14, 2].NumberFormat.CurrencyGroupSizes = sizes;
-
 grid.Model[14, 2].CellValue = 36.0;
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -823,44 +666,25 @@ Year Month</td><td>
 
 Setting Date and Time Cells with Different Date Time Patterns.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 grid.Model[5, 1].CellType = "DateTimeEdit";
-
 grid.Model[5, 1].DateTimeEdit.DateTimePattern = DateTimePattern.LongTime;
-
 grid.Model[5, 1].CellValue = DateTime.Now;
 
-
-
 grid.Model[7, 1].CellType = "DateTimeEdit";
-
 grid.Model[7, 1].DateTimeEdit.DateTimePattern = DateTimePattern.FullDateTime;
-
 grid.Model[7, 1].CellValue = DateTime.Now;
 
-
-
 grid.Model[9, 1].CellType = "DateTimeEdit";
-
 grid.Model[9, 1].DateTimeEdit.DateTimePattern = DateTimePattern.ShortDate;
-
 grid.Model[9, 1].CellValue = DateTime.Now;
 
-
-
 grid.Model[11, 1].CellType = "DateTimeEdit";
-
 grid.Model[11, 1].DateTimeEdit.DateTimePattern = DateTimePattern.YearMonth;
-
 grid.Model[11, 1].CellValue = DateTime.Now;
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -911,93 +735,53 @@ Number of decimal places</td></tr>
 
 Setting up four Double Edit cells using different group separators and decimal digits.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 int[] sizes = { 2, 3, 4 };
-
 grid.Model[6, 2].CellType = "DoubleEdit";
-
 grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
-
 { 
-
     NumberGroupSeparator = ";", 
-
     NumberDecimalSeparator = ".", 
-
     NumberDecimalDigits = 4 
-
 };
 
 grid.Model[6, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[6, 2].CellValue = 2345.00; 
 
-
-
 grid.Model[8, 2].CellType = "DoubleEdit";
-
 grid.Model[8, 2].NumberFormat = new NumberFormatInfo 
-
 { 
-
     NumberGroupSeparator = ",", 
-
     NumberDecimalSeparator = ".", 
-
     NumberDecimalDigits = 4 
-
 };
 
 grid.Model[8, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[8, 2].CellValue = 12;
 
-
-
 grid.Model[10, 2].CellType = "DoubleEdit";
-
 grid.Model[10, 2].NumberFormat = new NumberFormatInfo 
-
 { 
-
     NumberGroupSeparator = ",", 
-
     NumberDecimalSeparator = ".", 
-
     NumberDecimalDigits = 1 
-
 };
 
 grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[10, 2].CellValue = 100;
 
-
-
 grid.Model[12, 2].CellType = "DoubleEdit";
-
 grid.Model[12, 2].NumberFormat = new NumberFormatInfo 
-
 { 
-
     NumberGroupSeparator = "@", 
-
     NumberDecimalSeparator = ".", 
-
     NumberDecimalDigits = 0 
-
 };
-
 grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[12, 2].CellValue = 12345678.00;.00;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -1047,49 +831,28 @@ Number of digits in each group</td></tr>
 
 Setting up Three Different Integer Edit Cells. 
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 int[] sizes = { 2, 3, 4 };
-
 grid.Model[12, 2].CellType = "IntegerEdit";
-
 grid.Model[12, 2].IsEditable = true;
-
 grid.Model[12, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ","};
-
 grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[12, 2].CellValue = 1;
 
-
-
 grid.Model[8, 2].CellType = "IntegerEdit";
-
 grid.Model[8, 2].IsEditable = true;
-
 grid.Model[8, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ";"};
-
 grid.Model[8, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[8, 2].CellValue = 222222;
 
-
-
 grid.Model[10, 2].CellType = "IntegerEdit";
-
 grid.Model[10, 2].IsEditable = true;
-
 grid.Model[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@"};
-
 grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
-
 grid.Model[10, 2].CellValue = 1000;
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -1114,47 +877,27 @@ MaskEdit cell type allows you to create specially formatted text cells that conf
 
 Setting up Mask Edit cells with different mask string.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 var maskStyleInfo = this.grid.Model[6, 2];
-
 maskStyleInfo.CellType = "MaskEdit";
-
 maskStyleInfo.MaskEdit = GridMaskEditInfo.Default;
-
 maskStyleInfo.MaskEdit.Mask = "00/00/0000";
-
 maskStyleInfo.CellValue = 1232313;
 
-
-
 var maskStyleInfo1 = this.grid.Model[8, 2];
-
 maskStyleInfo1.CellType = "MaskEdit";
-
 maskStyleInfo1.MaskEdit = GridMaskEditInfo.Default;
-
 maskStyleInfo1.MaskEdit.Mask = "00:00:00";
-
 maskStyleInfo1.CellValue = 1232313;
 
-
-
 var maskStyleInfo2 = this.grid.Model[10, 2];
-
 maskStyleInfo2.CellType = "MaskEdit";
-
 maskStyleInfo2.MaskEdit = GridMaskEditInfo.Default;
-
 maskStyleInfo2.MaskEdit.Mask = "00/00/0000";
-
 maskStyleInfo2.CellValue = "12012007";";
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -1217,65 +960,34 @@ The first cell operates in Percent mode of editing while the second cell follows
 
 Double mode displays the values in System.Double format and Percent mode adds a percent sign next to the numbers. 
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 var percentStyleInfo = this.grid.Model[7, 2];
-
 percentStyleInfo.CellType = "PercentEdit";
 
-
-
 percentStyleInfo.NumberFormat = new NumberFormatInfo()
-
 {
-
     PercentSymbol = "%",
-
     PercentGroupSizes = new int[] { 1, 2,  3 },
-
     PercentDecimalDigits = 2,
-
     PercentGroupSeparator = ",",
-
-
-
 };
-
 percentStyleInfo.PercentEditMode = PercentEditMode.PercentMode;
-
 percentStyleInfo.CellValue = 19;
-
-
-
 var percentStyleInfo2 = this.grid.Model[9, 2];
-
 percentStyleInfo2.CellType = "PercentEdit";
 
 percentStyleInfo2.NumberFormat = new NumberFormatInfo()
-
 {
-
     PercentSymbol = "%",
-
     PercentGroupSizes = new int[] { 3 },
-
     PercentDecimalDigits = 4,
-
     PercentGroupSeparator = ",",
-
-
-
 };
-
 percentStyleInfo2.PercentEditMode = PercentEditMode.DoubleMode;
-
 percentStyleInfo2.CellValue = 91;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -1298,82 +1010,41 @@ RichTextBox CellType is used to format the cells, where each character, word or 
 
 RichTextBox CellType can be defined in the Grid using the following code snippet:
 
-
+{% tabs %}
 {% highlight c# %}
- //Cell type as RichText and Cell Value as FlowDocument
+//Cell type as RichText and Cell Value as FlowDocument
+this.grid.Model[rowIndex, colIndex].CellType = "RichText";
+this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 
- this.grid.Model[rowIndex, colIndex].CellType = "RichText";
+//The Cell Value for RichTextBox must be in FlowDocument as shown below. 
 
- this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
+// Flow document type is supported for Rich Text Cell Type.
+FlowDocument _flowDocument = new FlowDocument();
+Paragraph _paragraph = new Paragraph();
 
+Run _run1 = new Run();
+_run1.Text = "This is RichText box Cell Type";
+_run1.TextDecorations = TextDecorations.Underline;
 
+Run _run2 = new Run();
+_run2.Text = "Various formatting can be done in Single Cell.";
+_run1.FontWeight = FontWeights.Bold;
+_run2.Foreground = Brushes.Green;
 
+Run _run3 = new Run();
+_run3.Text = "Rich Text cell type also supports Images";
+_run3.FontSize = 16;
+_run3.FontStyle = FontStyles.Italic;
+_paragraph.Inlines.Add(_run1);
+_paragraph.Inlines.Add(_run2);
+_paragraph.Inlines.Add(_run3);
+_flowDocument.Blocks.Add(_paragraph);
 
-
-The Cell Value for RichTextBox must be in FlowDocument as shown below. 
-
-
-
-
-
-              // Flow document type is supported for Rich Text Cell Type.
-
-              FlowDocument _flowDocument = new FlowDocument();
-
-
-
-              Paragraph _paragraph = new Paragraph();
-
-
-
-              Run _run1 = new Run();
-
-              _run1.Text = "This is RichText box Cell Type";
-
-              _run1.TextDecorations = TextDecorations.Underline;
-
-
-
-              Run _run2 = new Run();
-
-              _run2.Text = "Various formatting can be done in Single Cell.";
-
-              _run1.FontWeight = FontWeights.Bold;
-
-              _run2.Foreground = Brushes.Green;
-
-
-
-              Run _run3 = new Run();
-
-              _run3.Text = "Rich Text cell type also supports Images";
-
-              _run3.FontSize = 16;
-
-              _run3.FontStyle = FontStyles.Italic;
-
-
-
-              _paragraph.Inlines.Add(_run1);
-
-              _paragraph.Inlines.Add(_run2);
-
-              _paragraph.Inlines.Add(_run3);
-
-
-
-              _flowDocument.Blocks.Add(_paragraph);
-
-
-
-              //Cell type as RichText and Cell Value as FlowDocument
-
-              this.grid.Model[rowIndex, colIndex].CellType = "RichText";
-
-              this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
-
+//Cell type as RichText and Cell Value as FlowDocument
+this.grid.Model[rowIndex, colIndex].CellType = "RichText";
+this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ![](Cell-Types_images/Cell-Types_img19.png)
@@ -1439,51 +1110,29 @@ Background brush; applied only when the cell is in focus</td></tr>
 
 The code below sets up two different Up and Down controls in grid cells.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 var updownStyleInfo = this.grid.Model[6, 2];
-
 updownStyleInfo.CellType = "UpDownEdit";
-
 updownStyleInfo.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
-
 updownStyleInfo.UpDownEdit.FocusedBackground = Brushes.Tan;
-
 updownStyleInfo.UpDownEdit.FocusedBorderBrush = Brushes.Red;
-
 updownStyleInfo.UpDownEdit.FocusedForeground = Brushes.Yellow;
-
 updownStyleInfo.UpDownEdit.MaxValue = 10.00;
-
 updownStyleInfo.UpDownEdit.MinValue = 0;
-
 updownStyleInfo.CellValue = 10.000;
 
-
-
 var updownStyleInfo1 = this.grid.Model[8 , 2];
-
 updownStyleInfo1.CellType = "UpDownEdit";
-
 updownStyleInfo1.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
-
 updownStyleInfo1.UpDownEdit.FocusedBackground = Brushes.BlueViolet ;
-
 updownStyleInfo1.UpDownEdit.FocusedBorderBrush = Brushes.Red;
-
 updownStyleInfo1.UpDownEdit.FocusedForeground = Brushes.Bisque ;
-
 updownStyleInfo1.UpDownEdit.MaxValue = 100.00;
-
 updownStyleInfo1.UpDownEdit.MinValue = 0;
-
 updownStyleInfo1.CellValue = 10.000;
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -1516,69 +1165,40 @@ In this case, the grid will maintain its own row heights. When you resize rows t
 
 The code below implements a nested scroll grid. The GridCellNestedScrollGridModel is the model class to be used.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 // Add Nested Scroll Grid cell model.
-
 GridCellNestedScrollGridModel scrollGridModel = new GridCellNestedScrollGridModel();
-
 Model.CellModels.Add("ScrollGrid", scrollGridModel);
-
 Model[40, 2].CellType = "ScrollGrid";
 
-
-
 // Create scroll nested grid.
-
 GridModel nestedGrid = new GridModel();
-
 nestedGrid.Options.AllowSelection = GridSelectionFlags.Cell;
-
 nestedGrid.RowHeights.DefaultLineSize = 20;
-
 nestedGrid.RowCount = 50;
-
 nestedGrid.ColumnWidths.DefaultLineSize = 50;
-
 nestedGrid.ColumnCount = 12;
-
-
-
 Brush headerBrush = ColorHelper.CreateFrozenSolidColorBrush(128, Colors.DarkGray);
-
 nestedGrid.BaseStylesMap["Header"].StyleInfo.Background = headerBrush;
 
-
-
 for (int n = 0; n < nestedGrid.RowCount; n++)
-
 {
 
     for (int c = 0; c < nestedGrid.ColumnCount; c++)
-
     {
-
         GridStyleInfo ci = new GridStyleInfo();
-
         ci.CellType = "TextBox";
-
         ci.CellValue = String.Format("Scroll{0}:{1}", n, c);
-
         nestedGrid.Data[n, c] = ci.Store;
-
     }
-
 }
-
-{% endhighlight  %}
-
 Model[40, 2].CellValue = nestedGrid;
-
 CoveredCells.Add(new CoveredCellInfo(40, 2, 49, 5));
+{% endhighlight  %}
+{% endtabs %}
+
+
 
 
 
@@ -1607,439 +1227,211 @@ The codes below show a grid whose cell contains a nested grid, which again conta
 
 To specify shared row layout, use Shared option of GridNestedAxisLayout enum in the first parameter.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // Add appropriate Nested Grid cell model.
-
 GridCellNestedGridModel shareRow = new GridCellNestedGridModel (GridNestedAxisLayout.Shared, GridNestedAxisLayout.Normal);
-
 Model.CellModels.Add("ShareRowLayoutGrid", shareRow);
 
-
-
 // Setup nested grid with shared row layout
-
 Model[100, 2].CellType = "ShareRowLayoutGrid";
-
 Model[100, 2].BorderMargins.Top = 0;
-
 Model[100, 2].BorderMargins.Left = 0;
-
 Model[100, 2].BorderMargins.Right = 0;
-
 Model[100, 2].BorderMargins.Bottom = 0;
-
 Model[100, 2].Background = SystemColors.InactiveCaptionBrush;
-
 GridModel nestedGridWithSharedRowsModel = GetNestedGridWithSharedRowsModel();
-
 Model[100, 2].CellValue = nestedGridWithSharedRowsModel;
-
 CoveredCells.Add(new CoveredCellInfo(100, 2, 100 + nestedGridWithSharedRowsModel.RowCount - 1, 5));
-
-
-
-
 
 // Setup the top level(parent) nested grid
 
 private GridModel GetNestedGridWithSharedRowsModel()
-
 {
-
 GridModel model = new GridModel();
-
-
-
 Pen gridLinePen = new Pen(Brushes.DarkGray, 1);
-
 gridLinePen.Freeze();
-
-
-
 model.Options.AllowSelection = GridSelectionFlags.Cell;
-
 model.ColumnWidths.DefaultLineSize = 50;
-
 model.ColumnWidths.HeaderLineCount = 1;
-
 model.ColumnCount = 12;
-
-
-
 model.RowHeights.HeaderLineCount = 1;
-
 model.RowHeights.FooterLineCount = 1;
-
 model.RowCount = 601; 
-
 Color clr = Color.FromArgb(128, 0, 0, 0);
-
 Brush headerBrush = new SolidColorBrush(clr);
-
 headerBrush.Freeze();
-
-
-
 Color clr2 = Color.FromArgb(128, 128, 0, 0);
-
 Brush footerBrush = new SolidColorBrush(clr2);
-
 footerBrush.Freeze();
 
-
-
 for (int n = 0; n < model.RowCount; n++)
-
 {
 
     for (int c = 0; c < model.ColumnCount; c++)
-
     {
-
         GridStyleInfo ci = new GridStyleInfo();
-
         ci.CellType = "TextBox";
-
         ci.CellValue = String.Format("{0}:{1}", n, c);
-
         ci.BorderMargins.Top = gridLinePen.Thickness;
-
         ci.BorderMargins.Left = gridLinePen.Thickness;
-
         ci.BorderMargins.Right = gridLinePen.Thickness / 2;
-
         ci.BorderMargins.Bottom = gridLinePen.Thickness / 2;
-
         ci.Borders.Right = gridLinePen;
-
         ci.Background = null;// Brushes.White;
-
         ci.Borders.Bottom = gridLinePen;
-
         model.Data[n, c] = ci.Store;
 
-
-
         if (c == 0 || n == 0)
-
         {
-
             ci.CellType = "Static";
-
             ci.Background = headerBrush;
-
         }
-
-
 
         if (n == model.RowCount - 1)
-
         {
-
             ci.CellType = "Static";
-
             ci.Background = footerBrush;
-
         }
-
     }
-
 }
-
-
-
 GridModel nestedGridWithSharedRowsModel = GetSecondNestedGridWithSharedRowsModel();
-
 model[10, 2].CellType = "ShareRowLayoutGrid";
-
 model[10, 2].BorderMargins.Top = 0;
-
 model[10, 2].BorderMargins.Left = 0;
-
 model[10, 2].BorderMargins.Right = 0;
-
 model[10, 2].BorderMargins.Bottom = 0;
-
 model[10, 2].Background = SystemColors.InactiveCaptionBrush;
 
-
-
 // Creates a nested grid for second level.
-
 model[10, 2].CellValue = nestedGridWithSharedRowsModel;
-
 model.CoveredCells.Add(new CoveredCellInfo(10, 2, 10 + nestedGridWithSharedRowsModel.RowCount - 1, 7));
-
 model.SelectedCells = GridRangeInfo.Empty;
-
-
-
 return model;
-
 }
-
-
 
 // Setup the second level nested grid
 
 private GridModel GetSecondNestedGridWithSharedRowsModel()
-
 {
-
 GridModel model = new GridModel();
-
-
-
 Pen gridLinePen = new Pen(Brushes.DarkGray, 1);
-
 gridLinePen.Freeze();
-
-
-
 model.Options.AllowSelection = GridSelectionFlags.Cell;
-
 model.ColumnWidths.DefaultLineSize = 40;
-
 model.ColumnWidths.HeaderLineCount = 1;
-
 model.ColumnCount = 8;
-
-
-
 model.RowHeights.HeaderLineCount = 1;
-
 model.RowHeights.FooterLineCount = 1;
-
 model.RowCount = 121; // make sure this matched covered cell size ...
-
-
-
 Color clr = Color.FromArgb(128, 0, 0,128);
-
 Brush headerBrush = new SolidColorBrush(clr);
-
 headerBrush.Freeze();
-
-
-
 Color clr2 = Color.FromArgb(128, 0, 128, 0);
-
 Brush footerBrush = new SolidColorBrush(clr2);
-
 footerBrush.Freeze();
 
-
-
 for (int n = 0; n < model.RowCount; n++)
-
 {
 
     for (int c = 0; c < model.ColumnCount; c++)
-
     {
-
         GridStyleInfo ci = new GridStyleInfo();
-
         ci.CellType = "TextBox";
-
         ci.CellValue = String.Format("{0}:{1}", n, c);
-
         ci.BorderMargins.Top = gridLinePen.Thickness;
-
         ci.BorderMargins.Left = gridLinePen.Thickness;
-
         ci.BorderMargins.Right = gridLinePen.Thickness / 2;
-
         ci.BorderMargins.Bottom = gridLinePen.Thickness / 2;
-
         ci.Borders.Right = gridLinePen;
-
         ci.Background = null;// Brushes.White;
-
         ci.Borders.Bottom = gridLinePen;
-
         model.Data[n, c] = ci.Store;
 
-
-
         if (c == 0 || n == 0)
-
         {
-
             ci.CellType = "Static";
-
             ci.Background = headerBrush;
-
         }
-
-
 
         if (n == model.RowCount - 1)
-
         {
-
             ci.CellType = "Static";
-
             ci.Background = footerBrush;
-
         }
-
     }
-
 }
-
-
-
 GridModel nestedGridWithSharedRowsModel = GetThirdNestedGridWithSharedRowsModel();
-
 model[15, 2].CellType = "ShareRowLayoutGrid";
-
 model[15, 2].BorderMargins.Top = 0;
-
 model[15, 2].BorderMargins.Left = 0;
-
 model[15, 2].BorderMargins.Right = 0;
-
 model[15, 2].BorderMargins.Bottom = 0;
-
 model[15, 2].Background = Brushes.Wheat;
 
 // Creates a nested grid for third level.
-
 model[15, 2].CellValue = nestedGridWithSharedRowsModel;
-
 model.CoveredCells.Add(new CoveredCellInfo(15, 2, 15 + nestedGridWithSharedRowsModel.RowCount - 1, 5));
-
 model.SelectedCells = GridRangeInfo.Empty;
-
-
-
 return model;
-
 }
-
-
 
 // Setup the third level nested grid
 
 private GridModel GetThirdNestedGridWithSharedRowsModel()
-
 {
-
 GridModel model = new GridModel();
-
-
-
 Pen gridLinePen = new Pen(Brushes.DarkGray, 1);
-
 gridLinePen.Freeze();
-
-
-
 model.Options.AllowSelection = GridSelectionFlags.Cell;
-
 model.ColumnWidths.DefaultLineSize = 35;
-
 model.ColumnWidths.HeaderLineCount = 1;
-
 model.ColumnCount = 4;
-
-
-
 model.RowHeights.HeaderLineCount = 1;
-
 model.RowHeights.FooterLineCount = 1;
-
 model.RowCount = 31; // make sure this matched covered cell size ...
-
-
-
 Color clr = Color.FromArgb(128, 0, 128, 128);
-
 Brush headerBrush = new SolidColorBrush(clr);
-
 headerBrush.Freeze();
-
-
-
 Color clr2 = Color.FromArgb(128, 128, 128, 0);
-
 Brush footerBrush = new SolidColorBrush(clr2);
-
 footerBrush.Freeze();
 
-
-
 for (int n = 0; n < model.RowCount; n++)
-
 {
 
     for (int c = 0; c < model.ColumnCount; c++)
-
     {
-
         GridStyleInfo ci = new GridStyleInfo();
-
         ci.CellType = "TextBox";
-
         ci.CellValue = String.Format("{0}:{1}", n, c);
-
         ci.BorderMargins.Top = gridLinePen.Thickness;
-
         ci.BorderMargins.Left = gridLinePen.Thickness;
-
         ci.BorderMargins.Right = gridLinePen.Thickness / 2;
-
         ci.BorderMargins.Bottom = gridLinePen.Thickness / 2;
-
         ci.Borders.Right = gridLinePen;
-
         ci.Background = null;// Brushes.White;
-
         ci.Borders.Bottom = gridLinePen;
-
         model.Data[n, c] = ci.Store;
 
-
-
         if (c == 0 || n == 0)
-
         {
-
             ci.CellType = "Static";
-
             ci.Background = headerBrush;
-
         }
-
-
 
         if (n == model.RowCount - 1)
-
         {
-
             ci.CellType = "Static";
-
             ci.Background = footerBrush;
-
         }
-
     }
-
 }
-
 model.SelectedCells = GridRangeInfo.Empty;
-
 return model;
-
 }
 {% endhighlight  %}
-
+{% endtabs %}
 
 #### Output
 
@@ -2062,182 +1454,91 @@ In this case the grid will have its own unique row height but the column widths 
 
 To specify shared column layout, use Shared option of GridNestedAxisLayout enum in the second parameter.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // Add the appropriate nested grid cell model.
-
 GridCellNestedGridModel shareColumn = new GridCellNestedGridModel (GridNestedAxisLayout.Normal, GridNestedAxisLayout.Shared);
-
 Model.CellModels.Add("ShareColumn", shareColumnLayoutGridModel);
-
 Model[60, 1].CellType = "ShareColumnLayoutGrid";
-
-
-
 Model[60, 1].BorderMargins.Top = 0;
-
 Model[60, 1].BorderMargins.Left = 0;
-
 Model[60, 1].BorderMargins.Right = 0;
-
 Model[60, 1].BorderMargins.Bottom = 0;
-
 Model[60, 1].Background = SystemColors.InactiveCaptionBrush;
-
 GridModel nestedGridWithSharedColumnsModel = GetNestedGridWithSharedColumnsModel();
 
-
-
 // Creates a nested grid with shared column layout.
-
 Model[60, 1].CellValue = nestedGridWithSharedColumnsModel;
-
 CoveredCells.Add(new CoveredCellInfo(60, 1, 80, 1 + nestedGridWithSharedColumnsModel.ColumnCount - 1));
-
-
 
 // Sets up a nested grid with column layout shared
 
 private GridModel GetNestedGridWithSharedColumnsModel()
-
 {
-
     GridModel model = new GridModel();
-
-
-
     Pen gridLinePen = new Pen(Brushes.DarkGray, 1);
-
     gridLinePen.Freeze();
-
-
-
     model.Options.AllowSelection = GridSelectionFlags.Cell;
-
     model.ColumnWidths.HeaderLineCount = 1;
-
     model.ColumnCount = 10;
-
-
-
     model.RowHeights.HeaderLineCount = 1;
-
     model.RowHeights.FooterLineCount = 1;
-
     model.RowCount = 13;
-
     model.RowHeights.DefaultLineSize = 30;
-
-
-
     Color clr = Color.FromArgb(128, 0, 0, 0);
-
     Brush headerBrush = new SolidColorBrush(clr);
-
     headerBrush.Freeze();
-
-
-
     Color clr2 = Color.FromArgb(128, 128, 0, 0);
-
     Brush footerBrush = new SolidColorBrush(clr2);
-
     footerBrush.Freeze();
 
-
-
     for (int n = 0; n < model.RowCount; n++)
-
     {
 
         for (int c = 0; c < model.ColumnCount; c++)
-
         {
-
             GridStyleInfo ci = new GridStyleInfo();
-
             ci.CellType = "TextBox";
-
             ci.CellValue = String.Format("{0}:{1}", n, c);
-
             ci.BorderMargins.Top = gridLinePen.Thickness;
-
             ci.BorderMargins.Left = gridLinePen.Thickness;
-
             ci.BorderMargins.Right = gridLinePen.Thickness / 2;
-
             ci.BorderMargins.Bottom = gridLinePen.Thickness / 2;
-
             ci.Borders.Right = gridLinePen;
-
             ci.Background = null;// Brushes.White;
-
             ci.Borders.Bottom = gridLinePen;
-
             model.Data[n, c] = ci.Store;
 
-
-
             if (c == 0 || n == 0)
-
             {
-
                 ci.CellType = "Static";
-
                 ci.Background = headerBrush;
-
             }
 
-
-
             if (c == 3 || n == 3)
-
             {
-
                 ci.CellType = "CheckBox";
-
                 ci.CellValue = false;
-
             }
 
             if (c == 4 || n == 4)
-
             {
-
                 ci.CellType = "Static";
-
                 ci.CellValue = "Static";
-
             }
 
             if (n == model.RowCount - 1)
-
             {
-
                 ci.CellType = "Static";
-
                 ci.Background = footerBrush;
-
             }
-
         }
-
     }
-
-    model.SelectedCells = GridRangeInfo.Empty;
-
-
-
-    return model;
-
+model.SelectedCells = GridRangeInfo.Empty;
+return model;
 }
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -2260,83 +1561,42 @@ In this case, the nested grid maintains its own row heights and column widths. Y
 
 To make rows and columns independent of parent grid, the GridNestedAxisLayout enum must be set to Normal in both the parameters.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // Add Nested Grid cell model.
-
 GridCellNestedGridModel gridModel = new GridCellNestedGridModel (GridNestedAxisLayout.Normal, GridNestedAxisLayout.Normal);
-
 Model.CellModels.Add("Grid", gridModel);
-
-
-
 CoveredCells.Add(new CoveredCellInfo(6, 2, 8, 4));
-
-
-
 Model[6, 2].CellType = "Grid";
 
-
-
 // Create a simple nested grid.
-
 GridModel model = new GridModel();
-
-
-
 model.Options.AllowSelection = GridSelectionFlags.Cell;
-
 model.RowHeights.DefaultLineSize = 20;
-
 model.RowCount = 20;
-
-
-
 model.ColumnWidths.DefaultLineSize = 50;
-
 model.ColumnCount = 8;
-
-
-
 model.HeaderRows = 0;
-
 model.FrozenRows = 0;
-
 model.HeaderColumns = 1;
-
 model.FrozenColumns = 1;
 
-
-
 for (int n = 0; n < model.RowCount; n++)
-
 {
 
     for (int c = 0; c < model.ColumnCount; c++)
-
     {
-
         GridStyleInfo ci = new GridStyleInfo();
-
         ci.CellType = "TextBox";
-
         ci.CellValue = String.Format("{0}:{1}", n, c);
 
         //ci.Background =  transparentBlanchedAlmond;
-
         model.Data[n, c] = ci.Store;
-
     }
-
 }
-
-{% endhighlight  %}
-
 Model[6, 2].CellValue = model;
+{% endhighlight  %}
+{% endtabs %}
 
 
 
@@ -2369,24 +1629,12 @@ To make all cells present in a grid as potential formula cells, you will have to
 
 {%tabs%}
 {% highlight c# %}
-
-
-
-
 // Set up a Formula Cell.
-
 this.gridControl1.BaseStylesMap["Standard"].StyleInfo.CellType = "FormulaCell";
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 '  Set up a Formula Cell.
-
 Me.GridControl1.BaseStylesMap("Standard"). StyleInfo.CellType = "FormulaCell"
-
 {% endhighlight  %}
 {%endtabs%}
 
@@ -2471,313 +1719,184 @@ Here are the steps that are required to add a function to the Function Library.
 
 1. First, define a method that has this signature.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // Define a method whose name is the FormulaName.
 
 public string MyLibraryFormulaName(string args)
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 'Define a method whose name is the FormulaName.
 
 Public Function MyLibraryFormulaName(ByVal args As String) As String
-
 {% endhighlight  %}
+{% endtabs %}
 
 Here MyLibraryFormulaName must be a name that has not been already used in the Function Library and must include only letters and digits. If you want to replace an existing formula with a formula of the same name, first remove the existing formula before adding the new formula. Use the GridFormulaEngine.RemoveFunction method to remove a formula. 
 
 Then, write an implementation for your method. Here we use code to implement a function that will sum only positive numbers that are passed in as either a range like A1:A5 and/or a list such as A1, A4, A10. The code uses the FormulaEngine helper method to extract these values from the cells. The GetCellsFromArgs method will return an array of cells from a range such as A1:A5, and GetValueFromArgs method will take cells such as A3 and return a value such as 123.3. 
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 // Implement Your Method.
 
 public string ComputeSumPosNums(string args)
-
 {
-
     GridFormulaCellModel model = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;
 
-
-
     if(model != null)
-
     {
-
         GridFormulaEngine engine = model.Engine;
-
         double sum = 0d;
-
         double d;
-
         string s1;
-
-
 
         // Loop through any arguments and sum up the positive values.
 
         foreach(string r in args.Split(new char[]{','}))
-
         {
-
-
-
             // Cell range
 
             if(r.IndexOf(':') > -1) 
-
             {
 
                 foreach(string s in engine.GetCellsFromArgs(r))
-
                 {
-
                 // s is a cell line a21 or c3, and so on.
 
                 try
-
                     {
-
                         s1 = engine.GetValueFromArg(s);
-
                     }
 
-
-
                     catch(Exception ex)
-
                     {
-
                         return ex.Message;
-
                     }
 
                     if(s1 != "")
-
                     {
-
                         // Add only if positive.
 
                         if(double.TryParse(s1, NumberStyles.Number, null, out d)
-
                                     && d > 0)
-
                         {
-
                             sum += d; 
-
                         }
-
                     }
-
                 }
-
             }
 
             else
-
             {
 
                 try
-
                 {
-
                     s1 = engine.GetValueFromArg(r);
-
                 }
 
                 catch(Exception ex)
-
                 {
-
                     return ex.Message;
-
                 }
 
                 if(s1 != "")
-
                 {
 
                     if(double.TryParse(s1, NumberStyles.Number, null, out d) && d > 0)
-
                     {
-
                         sum += d; 
-
                     }
-
                 }
-
             }
-
         }        
-
         return sum.ToString();
-
     }
-
     return "";
-
 }
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 ' Implement Your Method.
 
 Public Function ComputeSumPosNums(args As String) As String
+Dim model As GridFormulaCellModel = Me.gridControl1.CellModels("FormulaCell")
+If Not (model Is Nothing) Then
+Dim engine As GridFormulaEngine = model.Engine
+Dim sum As Double = 0.0
+Dim d As Double
+Dim s1 As String
 
-        Dim model As GridFormulaCellModel = Me.gridControl1.CellModels("FormulaCell")
+' Loop through any arguments and sum up the positive values.
+Dim r As String
 
+For Each r In args.Split(New Char() {","c})
 
+' Cell range
 
-        If Not (model Is Nothing) Then
+If r.IndexOf(":"c) > -1 Then  
+Dim s As String
 
-            Dim engine As GridFormulaEngine = model.Engine
+For Each s In engine.GetCellsFromArgs(r)
 
-            Dim sum As Double = 0.0
+' s is a cell line a21 or c3, and so on.
 
-            Dim d As Double
+Try
+s1 = engine.GetValueFromArg(s)
 
-            Dim s1 As String
+Catch ex As Exception
+Return ex.Message
+End Try
 
+If s1 <> "" Then
 
+' Add only if positive.
 
-            ' Loop through any arguments and sum up the positive values.
+If Double.TryParse(s1, NumberStyles.Number, Nothing, d) And d > 0 Then
+sum += d
+End If
+End If
+Next s
+Else
 
-            Dim r As String
+Try
+s1 = engine.GetValueFromArg(r)
 
-            For Each r In args.Split(New Char() {","c})
+Catch ex As Exception
+Return ex.Message
+End Try
 
+If s1 <> "" Then
 
+If Double.TryParse(s1, NumberStyles.Number, Nothing, d) And d > 0 Then
+sum += d
+End If
+End If
+End If
+Next r
+Return sum.ToString()
+End If
+Return ""
 
-                ' Cell range
-
-                If r.IndexOf(":"c) > -1 Then  
-
-                    Dim s As String
-
-                    For Each s In engine.GetCellsFromArgs(r)
-
-
-
-                        ' s is a cell line a21 or c3, and so on.
-
-                        Try
-
-                            s1 = engine.GetValueFromArg(s)
-
-                        Catch ex As Exception
-
-                            Return ex.Message
-
-                        End Try
-
-                        If s1 <> "" Then
-
-
-
-                            ' Add only if positive.
-
-                            If Double.TryParse(s1, NumberStyles.Number, Nothing, d) And d > 0 Then
-
-                                sum += d
-
-                            End If
-
-                        End If
-
-                    Next s
-
-                Else
-
-                    Try
-
-                        s1 = engine.GetValueFromArg(r)
-
-                    Catch ex As Exception
-
-                        Return ex.Message
-
-                    End Try
-
-                    If s1 <> "" Then
-
-                        If Double.TryParse(s1, NumberStyles.Number, Nothing, d) And d > 0 Then
-
-                            sum += d
-
-                        End If
-
-                    End If
-
-                End If
-
-            Next r
-
-            Return sum.ToString()
-
-        End If
-
-        Return ""
-
-
-
-    ' SumPosNums
-
+' SumPosNums
 End Function 
-
 {% endhighlight  %}
+{% endtabs %}
 
 The last step is to actually add your formula to the library. You should do this after the grid has been created, say in a Form.Load event handler.
 
 {%tabs%}
 {% highlight c# %}
-
-
-
-
-
 GridFormulaCellModel cellModel = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;
 
-
-
 // Add a formula named SumPosNums to the Library.
-
 cellModel.Engine.AddFunction("SumPosNums", new GridFormulaEngine.LibraryFunction(ComputeSumPosNums));
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 Dim cellModel As GridFormulaCellModel = Me.gridControl1.CellModels("FormulaCell")
 
-
-
 ' Add a formula named SumPosNums to the Library.
-
 cellModel.Engine.AddFunction("SumPosNums", New GridFormulaEngine.LibraryFunction(AddressOf ComputeSumPosNums))
 {% endhighlight  %}
-
 {%endtabs%}
 
 ### Function Reference Section
@@ -5136,248 +4255,137 @@ For example, let us create a custom drop-down which lists an image alongside tex
 
 #### CellModel class
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 public class CustomeDropDownCellModel : GridCellDropDownCellModel<CustomDropDownRenderer>
-
 {
-
 }
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### CellRenderer Class
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 public class CustomDropDownRenderer : GridCellDropDownCellRenderer<CustomeDropDown>
-
 {
 
     private CustomeDropDownCellModel CustomDropDownModel
-
     {
-
         get
-
         {
-
             return this.CellModel as CustomeDropDownCellModel;
-
         }
-
     }
 
-
-
     public override void OnInitializeContent(CustomeDropDown dropDownControl, GridRenderStyleInfo style)
-
     {
 
         if (dropDownControl.ListBoxPart != null)
-
         {
-
             dropDownControl.ListBoxPart.SelectionChanged -= this.OnComboBoxSelectionChanged;
-
         }
-
-
-
         base.OnInitializeContent(dropDownControl, style);
-
     }
 
-
-
     protected override void ArrangeUIElement(Syncfusion.Windows.Controls.Cells.ArrangeCellArgs aca, CustomeDropDown uiElement, GridRenderStyleInfo style)
-
     {
-
         base.ArrangeUIElement(aca, uiElement, style);
-
         var dropDownControl = uiElement;
 
         if (style.ItemsSource != null)
-
         {
-
             dropDownControl.ListBoxPart.ItemsSource = this.CustomDropDownModel.GetDataSource(style);
-
             dropDownControl.ListBoxPart.DisplayMemberPath = style.HasDisplayMember ? style.DisplayMember : string.Empty;
-
             dropDownControl.ListBoxPart.SelectedValue = this.GetControlValue(style);
 
             if (style.HasValueMember)
-
             {
-
                 dropDownControl.ListBoxPart.SelectedValuePath = style.ValueMember;
-
             }
-
         }
-
-
-
         uiElement.ListBoxPart.SelectionChanged += this.OnComboBoxSelectionChanged;
-
     }
 
-
-
     protected override void SetSelectedIndex(int index)
-
     {
 
         if (index != this.CurrentCellUIElement.ListBoxPart.SelectedIndex)
-
         {
-
             this.CurrentCellUIElement.ListBoxPart.SelectedIndex = index;
-
         }
-
     }
 
-
-
     private void OnComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
-
     {
 
         if (e.AddedItems.Count > 0)
-
         {
-
             var item = e.AddedItems[0].ToString();
-
             this.CustomDropDownModel.ListModel.CurrentIndex = this.CustomDropDownModel.FindValue(this.CurrentStyle, item);
 
-
-
             if (!this.AlreadyTextChanged)
-
             {
-
                 this.CurrentCellUIElement.TextBoxPart.Text = item;
-
             }
-
         }
-
     }
-
 }
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Custom Drop-down control
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 public class CustomeDropDown : GridCellDropDownControlBase
-
 {
 
     public ImageTextListBox ListBoxPart
-
     {
-
         get
-
         {
-
             if (this.PopupContent != null)
-
             {
-
                 return this.PopupContent.Content as ImageTextListBox;
-
             }
-
-
-
             return null;
-
         }
-
     }
-
-
 
     public override void OnApplyTemplate()
-
     {
-
         base.OnApplyTemplate();
-
     }
-
-
 
     protected override void OnContentLoaded(ContentControl popupContent)
-
     {
-
         ImageTextListBox l = new ImageTextListBox(this);
-
         l.Height = 200;
-
         popupContent.Content = l;
 
-
-
         // this will wire the events in the base implementation
-
         base.OnContentLoaded(popupContent);
-
     }
-
 }
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Associate this Cell Type to the Grid
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // Registering the cell model
-
 this.grid.Model.CellModels.Add("CustomDropDown", new CustomeDropDownCellModel());
 
-
-
 // Binding the celltype
-
 var dropdown1 = this.grid.Model[7, 2];
-
 dropdown1.CellType = "CustomDropDown";
-
 dropdown1.ItemsSource = GenerateListBoxContent();
-
 dropdown1.DisplayMember = "Text";
-
 dropdown1.DropDownStyle = GridDropDownStyle.Editable;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -5407,152 +4415,88 @@ The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and ov
 
 #### CellModel Class
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 public class DataTemplateCellModel : GridCellModel<DataTemplateCellRenderer>
-
 {
-
 }
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### CellRenderer Class
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentControl>
-
 {
 
     public DataTemplateCellRenderer()
-
     {
-
         IsFocusable = true;
-
         AllowRecycle = true;
-
     }
 
-
-
     public override void OnInitializeContent(ContentControl uiElement, GridRenderStyleInfo style)
-
     {
-
         base.OnInitializeContent(uiElement, style);
-
         bool found = false;
 
-
-
-        if (style.CellTemplateKey != null)
-
+    if (style.CellTemplateKey != null)
         {
-
             DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellTemplateKey);
-
             found = dt != null;
 
             if (found)
-
                 uiElement.ContentTemplate = dt;
-
         }
 
-
-
         if (!found)
-
             uiElement.ContentTemplate = style.CellTemplate;
 
-
-
         uiElement.Content = style.CellValue;
-
     }
-
-
 
     protected override string GetControlTextFromEditorCore(ContentControl uiElement)
-
     {
-
         return uiElement.Content.ToString();
-
     }
-
 }
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Data Template Definition
 
-
+{% tabs %}
 {% highlight html %}
-
-
-
 <DataTemplate x:Key="editableEmployee">
-
-            <StackPanel Margin="8,0"  Orientation="Horizontal">
-
-                <TextBlock FontWeight="Bold" syncfusion:VisualContainer.WantsMouseInput="False" Text="{Binding Path=Name}" Width="70" />
-
-                <TextBox Text="{Binding Path=Title}" BorderThickness="0"  Padding="0" Margin="0" Width="130" x:Name="tb"/>
-
-            </StackPanel>
-
-        </DataTemplate>
-
+<StackPanel Margin="8,0"  Orientation="Horizontal">
+<TextBlock FontWeight="Bold" syncfusion:VisualContainer.WantsMouseInput="False" Text="{Binding Path=Name}" Width="70" />
+<TextBox Text="{Binding Path=Title}" BorderThickness="0"  Padding="0" Margin="0" Width="130" x:Name="tb"/>
+</StackPanel>
+</DataTemplate>
 {% endhighlight  %}
+{% endtabs %}
 
 #### Setting up the Data Template Cell and assigning the Cell Template
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 grid.Model.CellModels.Add("DataTemplate", new DataTemplateCellModel());
-
 grid.Model.QueryCellInfo += new Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventHandler(Model_QueryCellInfo);
 
-
-
 void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventArgs e)
-
 {
 
     if (e.Cell.RowIndex > 1 && e.Cell.ColumnIndex == 2)
-
     {
-
         e.Style.CellType = "DataTemplate";
-
         e.Style.CellTemplateKey = "editableEmployee";
-
         e.Style.CellValue = employeesSource.Employees[e.Cell.RowIndex % employeesSource.Employees.Count];
-
         e.Style.Background = Brushes.Linen;
-
-
-
     }
-
 }
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -5579,229 +4523,124 @@ It can be built by hosting the Rich Text Box control in grid cells. To host this
 
 #### CellModel class
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 public class RichTextBoxCellModel : GridCellModel<RichTextBoxCellRenderer>
-
 {
-
 }
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### CellRenderer class
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 public class RichTextBoxCellRenderer : GridVirtualizingCellRenderer<RichTextBox>
-
 {
 
     public RichTextBoxCellRenderer()
-
     {
-
         IsControlTextShown = false;
-
         IsFocusable = true;
-
     }
 
-
-
     public override void OnInitializeContent(RichTextBox textBox, GridRenderStyleInfo style)
-
     {
-
         textBox.Padding = new Thickness(0);
-
-
-
         FlowDocument document = GetControlValue(style) as FlowDocument;
 
         if (document == null)
-
             textBox.Document = new FlowDocument();
 
         if (document.Parent != null)
-
         {
-
             var parentTextBox = document.Parent as RichTextBox;
 
             parentTextBox.Document = new FlowDocument();
-
         }
-
         textBox.Document = document;
-
         VirtualizingCellsControl.SetWantsMouseInput(textBox, true);
-
     }
-
-
 
     protected override void OnUnwireUIElement(RichTextBox uiElement)
-
     {
-
         uiElement.Document = new FlowDocument();
-
         base.OnUnwireUIElement(uiElement);
-
     }
-
-
 
     protected override object GetControlValueFromEditorCore(RichTextBox uiElement)
-
     {
-
         return uiElement.Document;
-
     }
-
-
 
     protected override void OnGridPreviewTextInput(TextCompositionEventArgs e)
-
     {
-
         CurrentCell.ScrollInView();
-
         CurrentCell.BeginEdit(true);
-
     }
 
-
-
     protected override bool ShouldGridTryToHandlePreviewKeyDown(KeyEventArgs e)
-
     {
 
         if (CurrentCellUIElement.IsFocused && e.Key != Key.Escape)
-
             return false;
-
-
-
         return true;
-
     }
-
 }
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Setting up Rich Text Box Cell
+
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 grid.Model.CellModels.Add("RichText", new RichTextBoxCellModel());
-
 grid.Model.CellModels.Add("FlowDocumentReader", new FlowDocumentReaderCellModel());
-
 {
 
 // Create a FlowDocument to contain content for the RichTextBox.
-
 FlowDocument myFlowDoc = new FlowDocument();
 
-
-
 // Add paragraphs to the FlowDocument.
-
 myFlowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 1")));
-
 myFlowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 2")));
-
 myFlowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 3")));
-
-
-
 grid.Model[2, 2].CellType = "RichText";
-
 grid.Model[2, 2].CellValue = myFlowDoc;
-
 grid.Model.CoveredCells.Add(new CoveredCellInfo(2, 2, 8, 8));
-
 }
-
-
-
 {
-
 Paragraph myParagraph = new Paragraph();
 
-
-
 // Add some Bold text to the paragraph
-
 myParagraph.Inlines.Add(new Bold(new Run("Some bold text in the paragraph.")));
 
-
-
 // Add some plain text to the paragraph
-
 myParagraph.Inlines.Add(new Run(" Some text that is not bold."));
 
-
-
 // Create a List and populate with three list items.
-
 List myList = new List();
 
-
-
 // First create paragraphs to go into the list item.
-
 Paragraph paragraphListItem1 = new Paragraph(new Run("ListItem 1"));
-
 Paragraph paragraphListItem2 = new Paragraph(new Run("ListItem 2"));
-
 Paragraph paragraphListItem3 = new Paragraph(new Run("ListItem 3"));
 
-
-
 // Add ListItems with paragraphs in them.
-
 myList.ListItems.Add(new ListItem(paragraphListItem1));
-
 myList.ListItems.Add(new ListItem(paragraphListItem2));
-
 myList.ListItems.Add(new ListItem(paragraphListItem3));
 
-
-
 // Create a FlowDocument with the paragraph and list.
-
 FlowDocument myFlowDocument = new FlowDocument();
-
 myFlowDocument.Blocks.Add(myParagraph);
-
 myFlowDocument.Blocks.Add(myList);
 
-
-
 grid.Model[10, 2].CellType = "RichText";
-
 grid.Model[10, 2].CellValue = myFlowDocument;
-
 }
-
-
 {% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -5822,164 +4661,84 @@ Grid provides inherent support to host chart controls. This is achieved by using
 
 1. Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
-
+{% tabs %}
 {% highlight html %}
-
-
-
 <local:MyDataCollection x:Key="SeriesData1"/>
-
-
-
 <DataTemplate x:Key="DataChart">
-
-
-
-            <!--Hosting Chart control in second Row of the Grid-->
-
-            <syncfusion:Chart   x:Name="Chart1" Grid.Row="1" Margin="15">
-
-
-
-                <!--Chart Legend declaration-->
-
-               <syncfusion:Chart.Legends>
-
-                    <syncfusion:ChartLegend />
-
-                </syncfusion:Chart.Legends>
-
-
-
-                <!--Chart area to present chart segments-->
-
-                <syncfusion:ChartArea IsContextMenuEnabled="True" >
-
-
-
-                    <!--Primary Axis(X)-->
-
-                    <syncfusion:ChartArea.PrimaryAxis>
-
-
-
-                        <!--X axis declaration with required property settings-->
-
-                        <syncfusion:ChartAxis Header="Year" Interval="2" >
-
-                        </syncfusion:ChartAxis>
-
-                    </syncfusion:ChartArea.PrimaryAxis>
-
-
-
-                    <!--Secondary Axis(Y)-->
-
-                    <syncfusion:ChartArea.SecondaryAxis>
-
-
-
-                        <!--Y axis declaration with required property settings-->
-
-                        <syncfusion:ChartAxis Header="Profit" SmallTicksPerInterval="0"  LabelFormat="0.00">
-
-                        </syncfusion:ChartAxis>
-
-                    </syncfusion:ChartArea.SecondaryAxis>
-
-
-
-                    <!--Chart 1st series declaration-->
-
-                    <syncfusion:ChartSeries Name="series1" Label="Profit in $"  Type="Spline" StrokeThickness=" 3" Interior="Green"  DataSource="{StaticResource SeriesData1}" 
-
-                                     BindingPathX="Year" BindingPathsY="Y1" IsIndexed="False">
-
-                    </syncfusion:ChartSeries>
-
-                </syncfusion:ChartArea>
-
-            </syncfusion:Chart>
-
-        </DataTemplate >
-
+<!--Hosting Chart control in second Row of the Grid-->
+<syncfusion:Chart   x:Name="Chart1" Grid.Row="1" Margin="15">
+<!--Chart Legend declaration-->
+<syncfusion:Chart.Legends>
+<syncfusion:ChartLegend />
+</syncfusion:Chart.Legends>
+<!--Chart area to present chart segments-->
+<syncfusion:ChartArea IsContextMenuEnabled="True" >
+<!--Primary Axis(X)-->
+<syncfusion:ChartArea.PrimaryAxis>
+<!--X axis declaration with required property settings-->
+<syncfusion:ChartAxis Header="Year" Interval="2" >
+</syncfusion:ChartAxis>
+</syncfusion:ChartArea.PrimaryAxis>
+<!--Secondary Axis(Y)-->
+<syncfusion:ChartArea.SecondaryAxis>
+<!--Y axis declaration with required property settings-->
+<syncfusion:ChartAxis Header="Profit" SmallTicksPerInterval="0"  LabelFormat="0.00">
+</syncfusion:ChartAxis>
+</syncfusion:ChartArea.SecondaryAxis>
+<!--Chart 1st series declaration-->
+<syncfusion:ChartSeries Name="series1" Label="Profit in $"  Type="Spline" StrokeThickness=" 3" Interior="Green"  DataSource="{StaticResource SeriesData1}" 
+BindingPathX="Year" BindingPathsY="Y1" IsIndexed="False">
+</syncfusion:ChartSeries>
+</syncfusion:ChartArea>
+</syncfusion:Chart>
+</DataTemplate >
 {% endhighlight  %}
+{% endtabs %}
 
 Here is the data source definition that is used to define the chart series.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 public class MyData
-
 {
-
     public int Year { get; set; }
-
     public double Y1 { get; set; }
-
     public double Y2 { get; set; }
-
     public double Y3 { get; set; }
-
     public double Y4 { get; set; }
-
 }
 
 public class MyDataCollection : ObservableCollection<MyData>
-
 {
 
     public MyDataCollection()
-
     {
-
         Random rand = new Random(DateTime.Now.Millisecond);
-
         DateTime cdate = DateTime.Today.AddYears(-6);
 
         for (int i = 0; i < 5; i++)
-
         {
-
             this.Add(new MyData()
-
             {
-
                 Year = cdate.AddYears(i).Year,
-
                 Y1 = rand.Next(700, 1200),
-
             });
-
         }
-
     }
-
 }
 {% endhighlight  %}
-
+{% endtabs %}
 
 2. Bind the above template to the grid cell to form a chart cell.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 var cell = grid.Model[2, 2];
-
 cell.CellType = "DataTemplate";
-
 cell.CellTemplateKey = "DataChart";
-
 grid.Model.RowHeights[2] = 400d;
-
 {% endhighlight  %}
+{% endtabs %}
 
 #### Output
 
@@ -6005,65 +4764,38 @@ N> If you use both Image and ImageList properties, then the most recent property
 
 The following code example illustrates how to use these properties.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // Using Vector Images.
-
 ResourceDictionary dictionary = new ResourceDictionary();
-
 dictionary.Source = new Uri(vectorImgSrcUri, UriKind.RelativeOrAbsolute);
-
-
-
 ObservableCollection<Image> imgList = new ObservableCollection<Image>();
-
-
 
 // Loading ImageList.
 
 foreach (string key in dictionary.Keys)
-
 {
-
    Image img = new Image();
-
    img.Source = (DrawingImage)dictionary["Technology"];
-
    imgList.Add(img);   
-
 }
 
 // Setting ImageList.
-
 grid.Model.TableStyle.ImageList = imgList;
 
 // Image property setting.
-
 grid.Model[0, 2].Text = "Technology";
-
 Image img = new Image();
-
 img.Source = new BitmapImage(new Uri("Technology.png", UriKind.Absolute));
-
 grid.Model[0, 2].Image = img;
 
-
-
 // Setting ImageIndex.
-
 grid.Model[1, 2].Text = "Business";
-
 grid.Model[1, 2].ImageIndex = 0;
-
 grid.Model[2, 2].Text = "Software";
-
 grid.Model[2, 2].ImageIndex = 1;
-
 {% endhighlight %}
+{% endtabs %}
 
 The following output is generated using the code above.
 

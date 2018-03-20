@@ -47,15 +47,11 @@ You can change the zoom level of the Grid control by using the ZoomScale propert
 
 The following code illustrates how to change the ZoomScale__of the Grid control:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 gridControl.ZoomScale = 1.5;
-
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img1.png)
 
