@@ -68,44 +68,25 @@ The following set of instructions illustrates the same.
 2.Create a console project as shown below.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <Grid>
-
-    <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-
-        <syncfusion:GridControl x:Name="grid" />
-
-    </ScrollViewer>
-
+<ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <syncfusion:GridControl x:Name="grid" />
+</ScrollViewer>
 </Grid>
-
 {% endhighlight  %}
-
 {% highlight c# %}
 private void InitGrid()
-
 {
-
     var model = this.grid.Model;
-
     model.RowCount = 10;
-
     model.ColumnCount = 10;
-
     model.QueryCellInfo += (s, e) =>
-
     {
-
         e.Style.CellValue = string.Format("Cell {0} / {1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
-
     };
-
 }
-
 {% endhighlight  %}
-
 {% endtabs %}
 
 3.Enter the path where the output of the Window sample has to be saved, in the Output path field.
@@ -119,37 +100,26 @@ N> Mention the output path as the Console application's bin\Debug directory.
 
 The following sample code uses TestApi assemblies.
 
+{% tabs %}
 {% highlight c# %}
 // Initialization Code.
 
 private static AutomationElement GetGridAut(out AutomatedApplication app)
-
 {
-
     string sampleAppPath = "GridUIAutomationDemo.exe";
-
     app = new OutOfProcessApplication(new OutOfProcessApplicationSettings
-
     {
-
         ProcessStartInfo = new ProcessStartInfo(sampleAppPath),
-
         ApplicationImplementationFactory = new UIAutomationOutOfProcessApplicationFactory()
-
     });
-
     app.Start();
-
     app.WaitForMainWindow(TimeSpan.FromSeconds(15));
-
     var rootElement = app.MainWindow as AutomationElement;
-
     var grid = rootElement.AsQueryable(TreeScope.Descendants).First(o => o.ClassName == "GridControl" && o.ControlType ==                     ControlType.DataGrid);
-
     return grid;
-
 }
 {% endhighlight  %}
+{% endtabs %}
 
 N> We have added minimal set of LINQ-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With LINQ-To-UIAutomation library, only First method is supported now.
 
@@ -159,28 +129,21 @@ The Grid Automation element is obtained.
 
 Once you get the actual Grid's Automation Element, you can then make use of different Patterns supported by the control. The following code example illustrates the same.
 
-
+{% tabs %}
 {% highlight c# %}
 var gridPattern = grid.GetCurrentPattern(GridPatternIdentifiers.Pattern) as GridPattern;
-
 var item = gridPattern.GetItem(1, 1);
 
 if (item != null)
-
 {
-
     object value = null;
-
     item.TryGetCurrentPattern(ValuePatternIdentifiers.Pattern, out value);
-
     var valueProvider = value as ValuePattern;
-
     var cellValue = valueProvider.Current.Value;
-
     Console.WriteLine("Item at [1,1] - {0}", cellValue);
-
 }
 {% endhighlight  %}
+{% endtabs %}
 
 ## VS 2010 Coded UI Testing
 
@@ -233,66 +196,48 @@ Initial steps before creating the Coded UI Test project:
 
 N> The following code appears.
 
+{% tabs %}
 {% highlight xaml %}
 <Application x:Class="WpfApplication3.App"
-
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
     StartupUri="Window1.xaml">
-
     <Application.Resources>
-	
 	</Application.Resources>
-
 </Application>
-
 {% endhighlight  %}
+{% endtabs %}
 
 3.Change Application to Syncfusion:GridControlTestApplication as follows.
-
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
-
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
     StartupUri="Window1.xaml">
-
     <syncfusion:GridControlTestApplication.Resources>
-	
-	</syncfusion:GridControlTestApplication.Resources>
-
+		</syncfusion:GridControlTestApplication.Resources>
 </syncfusion:GridControlTestApplication>
-
 {% endhighlight  %}
+{% endtabs %}
 
 4.For the code behind file (App.xaml.cs), make sure to inherit from GridControlTestApplication.
 
+{% tabs %}
 {% highlight c# %}
 namespace WpfApplication3
-
 {
-
     /// <summary>
-
     /// Interaction logic for App.xaml
-
     /// </summary>
 
     public partial class App : GridControlTestApplication
-
     {
-
     }
-
 }
 {% endhighlight  %}
-
+{% endtabs %}
 
 5.Build the application to make it ready for testing.
 
@@ -318,15 +263,13 @@ N> The GridControlTestApplication works only with a single Grid instance in the 
 
 The following code illustrates this.
 
+{% tabs %}
 {% highlight c# %} 
-
 public void HelloWorld_Test()
-
 {
-
 }
-
 {% endhighlight %} 
+{% endtabs %}
 
 4.Build and run the Grid application that you configured.
 
@@ -376,17 +319,15 @@ public void HelloWorld_Test()
 
 The following code generates automatically. 
 
+{% tabs %}
 {% highlight c# %}
 public void HelloWorld_Test()
-
 {
-
      this.UIMap.HelloWorldMethod();
-
      this.UIMap.HelloWorldAssert();
-
 }
 {% endhighlight  %}
+{% endtabs %}
 
 ### Testing the Application with Generated Coded UI Test
 

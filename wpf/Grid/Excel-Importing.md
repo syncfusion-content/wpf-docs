@@ -168,22 +168,15 @@ Importing the single sheet to a GridControl
 
 In order to import the single sheet to grid control, open the file and pass this file as stream to the ImportFromExcel method as illustrated in the following code snippet:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
-
 byte[] file = new byte[fileStream.Length];
-
 fileStream.Read(file, 0, (int)fileStream.Length);
-
 fileStream.Close();
-
 this.gridControl.Model.ImportFromExcel(new MemoryStream(file));
-
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ### Importing the entire workbook to a GridControl
@@ -192,27 +185,17 @@ Open the workbook
 
 To import the entire workbook to a GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
-
 byte[] file = new byte[fileStream.Length];
-
 fileStream.Read(file, 0, (int)fileStream.Length);
-
 fileStream.Close();
-
 ExcelEngine excelEngine = new ExcelEngine();
-
 IApplication application = excelEngine.Excel;
-
 IWorkbook workbook = application.Workbooks.Open(new MemoryStream(file), ExcelOpenType.Automatic);
-
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 ### Import the workbook into GridModel
 
@@ -220,15 +203,11 @@ After opening the workbook, you can import the workbook to GridModel by using th
 
 For importing the workbook you can use the following code snippet.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcel(workBook);
-
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 ### Importing the entire workbook to a virtual GridControl
 
@@ -236,88 +215,58 @@ Open the workbook
 
 To import the entire workbook to a virtual GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet. 
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
-
 byte[] file = new byte[fileStream.Length];
-
 fileStream.Read(file, 0, (int)fileStream.Length);
-
 fileStream.Close();
-
 ExcelEngine excelEngine = new ExcelEngine();
-
 IApplication application = excelEngine.Excel;
-
 IWorkbook workbook = application.Workbooks.Open(new MemoryStream(file), ExcelOpenType.Automatic);
-
-
 {% endhighlight  %}
-
+{% endtabs %}
 
 ### Import the layout into GridModel
 
 After that you can import the workbook by using the ImportFromExcelToVirtualGrid method it will return the model collection. GridModel have only the layout styles, to import the other styles and data for cells you have to use the ConvertExcelRangeToVirtualGrid method.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcelToVirtualGrid(workBook);
-
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 ### Import data into GridModel
 
 To load the data in grid cells, you have to use the ConvertExcelRangeToVirtualGrid method, this will import the formulas, cell value, conditional formats, data validation and the styles from the excel range to grid cells. To import the data into cells you can call the ConvertExcelRangeToVirtualGrid method in QueryCellInfo Event as shown in the following code snippet:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-
 {
-
 GridModel gridModel = sender as GridModel;
 
 if (!e.Style.IsChanged)
-
 {
-
 int index = modelCollection.ToList().IndexOf(gridModel);
-
 IWorksheet sheet = workBook.Worksheets[index];
 
 if (sheet != null)
-
 {
-
 IRange range = sheet.Range;
 
 if (e.Cell.RowIndex >= range.Row && e.Cell.ColumnIndex >= range.Column)
-
 {
-
 IRange rangeToConvert = sheet.Range[e.Cell.RowIndex, e.Cell.ColumnIndex];
-
 GridModelImportExtensions.ConvertExcelRangeToVirtualGrid(e.Style, sheet, rangeToConvert, null);
-
 gridModel.Data[e.Cell.RowIndex, e.Cell.ColumnIndex] = e.Style.Store;
-
 }
-
 }
-
 }
-
 }
 {% endhighlight  %}
+{% endtabs %}
 
 ## How To
 
@@ -325,71 +274,48 @@ gridModel.Data[e.Cell.RowIndex, e.Cell.ColumnIndex] = e.Style.Store;
 
 You can also change the cell type and other styles while importing the workbook to GridControl, for that you have to pass the delegate handler in the importing method as shown in the following code snippet.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 this.gridControl.Model.ImportFromExcel(new MemoryStream(file), ImportHandler);
-
-
 {% endhighlight  %}
-
+{% endtabs %}
 
 Then by using the ImportHandler method you can change the particular Cell Type and styles like background and font styles. When this event was handled, it will not import the data from the excel cell only the user specified data will be applied in the Grid. You can change the cell type as shown in the following code snippet 
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 private void ImoprtHandeler(object sender, ImportingCellFromExcelEventArgs e)
-
 {
 
 if (e.Range.AddressLocal == "C5")
-
 {
-
 e.Cell.CellType = "Static";
-
 e.Cell.CellValue = e.Range.DisplayText;
-
 e.Cell.Background = new SolidColorBrush(Colors.Blue);
-
 e.Cell.Font.FontSize = 15;
-
 e.Cell.Font.FontWeight = FontWeights.Bold;
-
 e.Handled = true;
-
 }
-
 }
-
 {% endhighlight  %}
+{% endtabs %}
 
 ### Enable the ExcelLikeFrozen Row and Column in a GridControl
 
 To enable the thick borders to indicate the Excel like freeze panes, you have to set the ExcelLikeFreezePane property as true as show in the following code snippet.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 grid.Model.Options.ExcelLikeFreezePane = true;
-
 {% endhighlight  %}
+{% endtabs %}
 
 ### Enable the comment service in GridControl
 
 To enable the comment service you have to set the attached property show comment service as true as shown in the following code snippet.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 GridCommentService.SetShowComment(grid, true);
-
-
 {% endhighlight  %}
-
-
+{% endtabs %}

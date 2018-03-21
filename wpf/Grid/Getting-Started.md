@@ -153,29 +153,21 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 5.To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
 
+{% tabs %}
+{%highlight c#%}
+//ScrollViewer defined here
+ScrollViewer ScrollViewer = new ScrollViewer();
 
-      {%highlight c#%}
+//GridControl defined here
+GridControl gridControl = new GridControl();
 
-				//ScrollViewer defined here
+//GridControl set as the content of the ScrollViewer
+ScrollViewer.Content = gridControl;     
 
-				ScrollViewer ScrollViewer = new ScrollViewer();
-
-				//GridControl defined here
-
-				GridControl gridControl = new GridControl();
-
-				//GridControl set as the content of the ScrollViewer
-
-
-
-				ScrollViewer.Content = gridControl;     
-
-				//To bring the Grid control to the view, ScrollViewer should be set as a child of LayoutRoot      
-
-				this.layoutRoot.Children.Add(ScrollViewer);           
-
-
-   {%endhighlight%}
+//To bring the Grid control to the view, ScrollViewer should be set as a child of LayoutRoot      
+this.layoutRoot.Children.Add(ScrollViewer);           
+{%endhighlight%}
+{% endtabs %}
 
 #### Populating the Grid control
 
@@ -183,71 +175,44 @@ The Grid control is a cell-based control, so to populate it, RowCount and Column
 
 1. You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
 
+{% tabs %}
+{%highlight c#%}
+//Specifying row and column count
+gridControl.Model.RowCount = 100;
+gridControl.Model.ColumnCount = 20;
 
-       {%highlight c#%}
+//Looping through the cells and assigning the values based on row and column index
+for (int i = 0; i < 100; i++)
+{
 
-
-
-
-			//Specifying row and column count
-
-			gridControl.Model.RowCount = 100;
-
-			gridControl.Model.ColumnCount = 20;
-
-
-
-			//Looping through the cells and assigning the values based on row and column index
-
-			for (int i = 0; i < 100; i++)
-
-			{
-
-			    for (int j = 0; j < 20; j++)
-
-			    {
-
-			        gridControl.Model[i, j].CellValue = string.Format("{0}/{1}", i, j);
-
-			    }
-
-			}
-			
-			
-			{%endhighlight%}
-
+    for (int j = 0; j < 20; j++)
+    {
+        gridControl.Model[i, j].CellValue = string.Format("{0}/{1}", i, j);
+    }
+}
+{%endhighlight%}
+{% endtabs %}
 
 
 
 2.You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
 
-    {%highlight c#%}
+{% tabs %}
+{%highlight c#%}
+//Specifying row and column count
+gridControl.Model.RowCount = 100;
+gridControl.Model.ColumnCount = 20;
+this.gridControl.QueryCellInfo += new Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventHandler(gridControl_QueryCellInfo);
 
+//Assigning values by handling the QueryCellInfo event
 
-
-			//Specifying row and column count
-
-			gridControl.Model.RowCount = 100;
-
-			gridControl.Model.ColumnCount = 20;
-
-			this.gridControl.QueryCellInfo += new Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventHandler(gridControl_QueryCellInfo);
-
-
-
-			//Assigning values by handling the QueryCellInfo event
-
-			 void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventArgs e)
-
-			        {
-
-			            e.Style.CellValue=string.Format("{0}/{1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
-
-			        }   
-			
-			
-			{%endhighlight%}
-
+void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventArgs e)
+{
+    e.Style.CellValue=string.Format("{0}/{1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
+    
+}   
+{%endhighlight%}
+{% endtabs %}
 
 
 

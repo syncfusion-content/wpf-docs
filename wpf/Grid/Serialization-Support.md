@@ -24,16 +24,15 @@ The following sample application explains the implementation of the Serializatio
 
    In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
 
+{% tabs %}
 {% highlight c# %}
 // To Serialize the GridControl.
-
 this.grid.Model.Serialize("Data.xml");
 
 // To Deserialize the GridControl.
-
 this.grid.Model.Deserialize("Data.xml");
 {% endhighlight  %}
-
+{% endtabs %}
 
 3.Run the application
 
