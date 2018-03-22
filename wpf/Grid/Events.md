@@ -812,6 +812,7 @@ This event can be triggered using the following code:
 {% highlight c# %}
 gridControl.Model.ClipboardCanPaste += new GridCutPasteEventHandler(Model_ClipboardCanPaste);
 {% endhighlight  %}
+{% endtabs %}
 
 ### Event Handler
 
