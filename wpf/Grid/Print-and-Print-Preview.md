@@ -17,9 +17,11 @@ The GridPrintDialog class plays a vital role in the implementation of printing s
 
 Enabling the printing feature is like invoking an API – ShowPrintDialog() on the instances of the grid.
 
+{% tabs %}
 {% highlight c# %}
 this.grid.ShowPrintDialog();
 {% endhighlight  %}
+{% endtabs %}
 
 ### Output
 
@@ -119,38 +121,26 @@ Headers and Footers can be added to the document to be printed.
 * GridControl.PrintFooterTemplate defines the print footer. The content represented by the print header will appear at the top of each printed page and likewise, the content represented by the print footer will appear at the bottom of each printed page. 
 * The height of the header and footer can be adjusted using the GridControl properties- PrintHeaderHeight and PrintFooterHeight.
 
-
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:GridControl x:Name="grid" PrintHeaderHeight="40" PrintFooterHeight="40">
+<syncfusion:GridControl.PrintHeaderTemplate>
+<DataTemplate>
+<Border CornerRadius="5" BorderBrush="Crimson" BorderThickness="2" HorizontalAlignment="Stretch">
+<TextBlock Text="Header Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" />
+</Border>
+</DataTemplate>
+</syncfusion:GridControl.PrintHeaderTemplate>
+<syncfusion:GridControl.PrintFooterTemplate>
 
-    <syncfusion:GridControl.PrintHeaderTemplate>
-
-        <DataTemplate>
-
-            <Border CornerRadius="5" BorderBrush="Crimson" BorderThickness="2" HorizontalAlignment="Stretch">
-
-                <TextBlock Text="Header Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" />
-
-            </Border>
-
-        </DataTemplate>
-
-    </syncfusion:GridControl.PrintHeaderTemplate>
-
-    <syncfusion:GridControl.PrintFooterTemplate>
-
-        <DataTemplate>
-
-            <Border CornerRadius="5" BorderBrush="Red" BorderThickness="2" HorizontalAlignment="Stretch">
-
-                <TextBlock Text="Footer Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" />
-
-            </Border>
-
-        </DataTemplate>
-
-    </syncfusion:GridControl.PrintFooterTemplate>
+<DataTemplate>
+<Border CornerRadius="5" BorderBrush="Red" BorderThickness="2" HorizontalAlignment="Stretch"
+<TextBlock Text="Footer Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" />
+</Border>
+</DataTemplate>
+</syncfusion:GridControl.PrintFooterTemplate>
 {% endhighlight  %}
+{% endtabs %}
 
 ### Output
 

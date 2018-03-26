@@ -11,164 +11,163 @@ documentation: ug
 
 Serialization can be implemented for applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of PivotGridControl to an XML file and it can be loaded at any time.
 
-
 The following properties of PivotGrid can be serialized.
 
 List of Properties which gets Serialized
 
-<table>
-    <tr>
-        <th>
-            Property Name</th>
-        <th>
-            Type</th>
-    </tr>
-    <tr>
-        <td>
-            AllowResizeColumns</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            AllowResizeRows</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            AllowSelection</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            AllowSelectionWithHeaders</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            AutoSizeColumnCount</td>
-        <td>
-            int</td>
-    </tr>
-    <tr>
-        <td>
-            AutoSizeOption</td>
-        <td>
-            GridAutoSizeOption</td>
-    </tr>
-    <tr>
-        <td>
-            AutoSizeRowCount</td>
-        <td>
-            int</td>
-    </tr>
-    <tr>
-        <td>
-            DeferLayoutUpdate</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            Filters</td>
-        <td>{{ '`ObservableCollection(<FilterExpression>)`' | markdownify }}</td>
-    </tr>
-    <tr>
-        <td>
-            FreezeHeaders</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            IsDynamicData</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            PivotCalculations</td>
-        <td>{{ '`ObservableCollection(<PivotComputationInfo>)`' | markdownify }}</td>
-    </tr>
-    <tr>
-        <td>
-            PivotColumns</td>
-        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
-    </tr>
-    <tr>
-        <td>
-            PivotFields</td>
-        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
-    </tr>
-    <tr>
-        <td>
-            PivotRows</td>
-        <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
-    </tr>
-    <tr>
-        <td>
-            ShowCalculationsAsColumns</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            ShowFieldList</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            ShowGrandTotals</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            ShowGroupingBar</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            GroupingBar.AllowFiltering</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            GroupingBar.AllowSorting</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            EnableColumnHeader</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            EnableRowHeader</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            AllowMultiFunctionalSortFilter</td>
-        <td>
-            bool</td>
-    </tr>
-    <tr>
-        <td>
-            VisibleRecords</td>
-        <td>
-            int</td>
-    </tr>
-</table>
+    <table>
+        <tr>
+            <th>
+                Property Name</th>
+            <th>
+                Type</th>
+        </tr>
+        <tr>
+            <td>
+                AllowResizeColumns</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                AllowResizeRows</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                AllowSelection</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                AllowSelectionWithHeaders</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                AutoSizeColumnCount</td>
+            <td>
+                int</td>
+        </tr>
+        <tr>
+            <td>
+                AutoSizeOption</td>
+            <td>
+                GridAutoSizeOption</td>
+        </tr>
+        <tr>
+            <td>
+                AutoSizeRowCount</td>
+            <td>
+                int</td>
+        </tr>
+        <tr>
+            <td>
+                DeferLayoutUpdate</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                Filters</td>
+            <td>{{ '`ObservableCollection(<FilterExpression>)`' | markdownify }}</td>
+        </tr>
+        <tr>
+            <td>
+                FreezeHeaders</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                IsDynamicData</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                PivotCalculations</td>
+            <td>{{ '`ObservableCollection(<PivotComputationInfo>)`' | markdownify }}</td>
+        </tr>
+        <tr>
+            <td>
+                PivotColumns</td>
+            <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
+        </tr>
+        <tr>
+            <td>
+                PivotFields</td>
+            <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
+        </tr>
+        <tr>
+            <td>
+                PivotRows</td>
+            <td>{{ '`ObservableCollection(<PivotItem>)`' | markdownify }}</td>
+        </tr>
+        <tr>
+            <td>
+                ShowCalculationsAsColumns</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                ShowFieldList</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                ShowGrandTotals</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                ShowGroupingBar</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                GroupingBar.AllowFiltering</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                GroupingBar.AllowSorting</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                EnableColumnHeader</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                EnableRowHeader</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                AllowMultiFunctionalSortFilter</td>
+            <td>
+                bool</td>
+        </tr>
+        <tr>
+            <td>
+                VisibleRecords</td>
+            <td>
+                int</td>
+        </tr>
+    </table>
 
 ## Using the Serialization/Deserialization in PivotGrid
 
@@ -178,50 +177,50 @@ The following are the methods which has been used in PivotGrid for serialization
 
 Methods Table
 
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-Serialize()</td><td>
-Serializes the PivotGrid into XML file format using the save file dialog</td><td>
--</td><td>
-void</td></tr>
-<tr>
-<td>
-Deserialize()</td><td>
-Deserialize the PivotGrid from the saved XML file using the open file dialog</td><td>
--</td><td>
-void</td></tr>
-<tr>
-<td>
-Serialize(string fileName)</td><td>
-Serializes the PivotGrid into XML file format and saves it in the specified location</td><td>
-string fileName</td><td>
-void</td></tr>
-<tr>
-<td>
-Deserialize(string filename)</td><td>
-Deserialize the PivotGrid from the specified XML file</td><td>
-string fileName</td><td>
-void</td></tr>
-<tr>
-<td>
-SerializedXmlString()</td><td>
-Serializes some specific properties in PivotGridControl into string format.</td><td>
--</td><td>
-string</td></tr>
-<tr>
-<td>
-Deserialize(string XmlString)</td><td>
-De-serializes the XML string format into PivotGridControl.</td><td>
-string XmlString</td><td>
-void</td></tr>
-</table>
+    <table>
+    <tr>
+    <th>
+    Method</th><th>
+    Description</th><th>
+    Parameters</th><th>
+    Return Type</th></tr>
+    <tr>
+    <td>
+    Serialize()</td><td>
+    Serializes the PivotGrid into XML file format using the save file dialog</td><td>
+    -</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    Deserialize()</td><td>
+    Deserialize the PivotGrid from the saved XML file using the open file dialog</td><td>
+    -</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    Serialize(string fileName)</td><td>
+    Serializes the PivotGrid into XML file format and saves it in the specified location</td><td>
+    string fileName</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    Deserialize(string filename)</td><td>
+    Deserialize the PivotGrid from the specified XML file</td><td>
+    string fileName</td><td>
+    void</td></tr>
+    <tr>
+    <td>
+    SerializedXmlString()</td><td>
+    Serializes some specific properties in PivotGridControl into string format.</td><td>
+    -</td><td>
+    string</td></tr>
+    <tr>
+    <td>
+    Deserialize(string XmlString)</td><td>
+    De-serializes the XML string format into PivotGridControl.</td><td>
+    string XmlString</td><td>
+    void</td></tr>
+    </table>
 
 ### Serialization
 

@@ -23,28 +23,27 @@ Properties:
 * **AllowFilter** - Gets or sets whether to enable or disable filtering for the PivotItem.
 * **AllowSort** - Gets or sets whether to enable or disable sorting for the PivotItem.
 
-
 ## Defining PivotItem in XAML
 
 Create a new PivotItem by using the `PivotGridControl.PivotItem` class. A PivotItem can be either a `PivotRow` or `PivotColumn`. Please refer the code sample below.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}" VisualStyle="Metro">
+    <Grid>
+        <syncfusion:PivotGridControl Name="pivotGrid" HorizontalAlignment="Left" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}" VisualStyle="Metro">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
 
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
 
-    </syncfusion:PivotGridControl>
-</Grid>
-    
-{% endhighlight %} 
+        </syncfusion:PivotGridControl>
+    </Grid>
+
+{% endhighlight %}
 
 ## Defining Pivot Item in Code-Behind
 
@@ -70,5 +69,4 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
     pivotGrid.PivotColumns.Add(n_PivotItem);
 }
 
-{% endhighlight %}	
-
+{% endhighlight %}

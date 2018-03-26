@@ -11,4 +11,4 @@ documentation: ug
 
 The Pivot Computation Information dialog is used to change or edit value formats, summary types, calculation types and the field header.
 
-![](PivotSchemaDesigner-Images/PivotComputationWindow.png)
+![PivotComputationWindow](PivotSchemaDesigner-Images/PivotComputationWindow.png)

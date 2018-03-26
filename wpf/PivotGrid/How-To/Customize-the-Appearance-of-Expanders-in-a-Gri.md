@@ -9,9 +9,11 @@ documentation: ug
 
 # How to customize the appearance of expanders in PivotGrid?
 
-Define your own style for the expander and assign that style to the `ExpanderStyle` property of the PivotGrid control. 
+Define your own style for the expander and assign that style to the `ExpanderStyle` property of the PivotGrid control.
 
 Please refer the below code sample. Here we have defined our own style for expander and assigned it to the `ExpanderStyle` property of the PivotGrid control.
+
+{}
 
 {% highlight xaml %}
 
@@ -52,7 +54,7 @@ Please refer the below code sample. Here we have defined our own style for expan
     </Window.Resources>
 
     <!--Binding the expander style to the grid-->
-    <syncfusion:PivotGridControl Name="pivotGrid" ExpanderStyle="{StaticResource GridExpanderStyle}" HorizontalAlignment="Left" VerticalAlignment="Top"/>  
+    <syncfusion:PivotGridControl Name="pivotGrid" ExpanderStyle="{StaticResource GridExpanderStyle}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     <Grid>
 
 {% endhighlight %}
