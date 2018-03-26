@@ -2,7 +2,7 @@
 layout: post
 title: NuGet Packages | WPF | Syncfusion
 description: NuGet Packages
-platform: WPF
+platform: wpf
 control: NuGet Packages
 documentation: ug
 ---
