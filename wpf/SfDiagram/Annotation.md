@@ -240,11 +240,11 @@ Annotations = new AnnotationCollection()
 {% endhighlight %}
 {% endtabs %}
 
-| Values | Description | Node | Connector|
+| Values | Description | Node |
 |---|---|---|---|
-| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img18.PNG) | ![](Annotation_images/Annotation_img21.PNG) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img19.PNG) | ![](Annotation_images/Annotation_img23.PNG) |
-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img20.PNG) | ![](Annotation_images/annotation_img25.PNG) |
+| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img18.PNG) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img19.PNG) |
+| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img20.PNG) |
 
 ## Appearance 
 
