@@ -41,13 +41,19 @@ Imports Syncfusion.UI.Xaml.Charts
 
 {% endtabs %} 
 
-Then initialize the chart as shown below,
+Then initialize an empty chart with two axes as shown below,
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
  <syncfusion:SfChart> 
+      <syncfusion:SfChart.PrimaryAxis> 
+           <syncfusion:CategoryAxis /> 
+      </syncfusion:SfChart.PrimaryAxis> 
+      <syncfusion:SfChart.SecondaryAxis> 
+           <syncfusion:NumericalAxis/> 
+      </syncfusion:SfChart.SecondaryAxis>
  </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -56,112 +62,37 @@ Then initialize the chart as shown below,
 
 SfChart chart = new SfChart();
 
+CategoryAxis primaryAxis = new CategoryAxis();
+
+chart.PrimaryAxis = primaryAxis; 
+   
+NumericalAxis secondaryAxis = new NumericalAxis();
+
+chart.SecondaryAxis = secondaryAxis;
+
 {% endhighlight %}
 
 {% highlight VB %}
 
 Dim chart As New SfChart()
 
+Dim primaryAxis As New CategoryAxis () 
+
+chart.PrimaryAxis = primaryAxis 
+
+Dim secondaryAxis As New NumericalAxis ()  
+
+chart.SecondaryAxis = secondaryAxis
+
 {% endhighlight %}
 
 {% endtabs %} 
-
-## Add Title
-
-The header of the chart acts as the title, to provide quick information to the user about the data being plotted in the chart. You can set title using  [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~Header.html) property of chart as shown below.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<Grid> 
-   <syncfusion:SfChart Header="Chart" Height="300" Width="500"> 
-   </syncfusion:SfChart> 
-</Grid>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-chart.Header = "Chart";
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-chart.Header = "Chart"
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-Refer [`this`](https://help.syncfusion.com/wpf/sfchart/area#chart-header) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html).
 
 ![](Getting-Started_images/img1.png)
 
-## Add Axes
-
-The following code example illustrates how to add primary (horizontal) and secondary (vertical) axes to the [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html).
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis> 
-       <syncfusion:CategoryAxis Header="Name" /> 
-</syncfusion:SfChart.PrimaryAxis> 
-<syncfusion:SfChart.SecondaryAxis> 
-       <syncfusion:NumericalAxis Header="Height(in cm)" /> 
-</syncfusion:SfChart.SecondaryAxis>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-    //Adding horizontal axis to the chart 
-
-    CategoryAxis primaryAxis = new CategoryAxis();
-
-    primaryAxis.Header = "Name"; 
-
-   chart.PrimaryAxis = primaryAxis; 
-
-    //Adding vertical axis to the chart 
-
-    NumericalAxis secondaryAxis = new NumericalAxis();
-
-    secondaryAxis.Header = "Height(in cm)"; 
-
-   chart.SecondaryAxis = secondaryAxis;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-  'Adding horizontal axis to the chart 
-
-  Dim primaryAxis As New CategoryAxis () 
-
-  primaryAxis.Header = "Name" 
-
-   chart.PrimaryAxis = primaryAxis 
-
-  'Adding vertical axis to the chart
-
-  Dim secondaryAxis As New NumericalAxis () 
-
-  secondaryAxis.Header = "Height(in cm)" 
-
-  chart.SecondaryAxis = secondaryAxis
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-
-N> [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes (primary and secondary axis) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly. 
+N> [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 
 ## Initialize view model
 
@@ -381,6 +312,40 @@ chart.Series.Add(series)
 {% endtabs %} 
 
 N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](http://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
+
+## Add Title
+
+The header of the chart acts as the title, to provide quick information to the user about the data being plotted in the chart. You can set title using  [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~Header.html) property of chart as shown below.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<Grid>
+
+   <syncfusion:SfChart Header="Chart"> 
+   </syncfusion:SfChart> 
+
+</Grid>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+chart.Header = "Chart";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+chart.Header = "Chart"
+
+{% endhighlight %}
+
+{% endtabs %}  
+
+Refer [`this`](https://help.syncfusion.com/wpf/sfchart/area#chart-header) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
+
 
 ## Enable data labels
 
