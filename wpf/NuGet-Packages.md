@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NuGet Packages | WPF | Syncfusion
+title: WPF | NuGet Packages | Syncfusion
 description: NuGet Packages
 platform: wpf
 control: NuGet Packages
