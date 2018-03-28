@@ -9,11 +9,11 @@ documentation: ug
 
 # Themes
 
-SfTreeGrid provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) and also provides support to create custom theme using [theme studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
+SfTreeGrid provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provides support to create custom theme using [theme studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 
 ## Built-in Themes
 
-The appearance of SfTreeGrid control can be customized by [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the `SfSkinManager`. You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
+The appearance of SfTreeGrid control can be customized by [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/sfskinmanager/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
 
 Below example explains how to apply blend theme for SfDataGrid using `SfSkinManager` in an existing application.
 <ul>
@@ -46,10 +46,12 @@ SfSkinManager.SetVisualStyle(treeGrid, VisualStyles.Blend);
 {% endhighlight %}
 {% endtabs %}
 
-![](themes_images/themes_img1.png)
 </li> 
 
-<li>Now run the application, you can see blend theme applied for SfDataGrid.</li>
+![](themes_images/themes_img1.png)
+
+<li>Now run the application, you can see blend theme applied for SfTreeGrid.</li>
+</ul>
 
 N> Refer below theme studio documentation to know more about of `SfSkinManger` it its various features such as theming MS controls, changing themes at runtime and applying theme globally in the application. 
 
