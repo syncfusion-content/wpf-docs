@@ -56,7 +56,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
-### Setting different styles to StackedHeader
+### Setting Different Style for Each Stacked Header
 
 You can apply the different style to stacked header by overriding the [default renderer](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellRendererCollection~ContainsValue.html) of StackedHeader.
 

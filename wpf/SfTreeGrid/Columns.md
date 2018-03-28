@@ -730,6 +730,11 @@ Each [StackedHeaderRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/
 <syncfusion:SfTreeGrid.StackedHeaderRows>
     <syncfusion:StackedHeaderRow>
         <syncfusion:StackedHeaderRow.StackedColumns>
+            <syncfusion:StackedColumn ChildColumns="OrderID,OrderDate,CustomerID,CustomerArea,UnitPrice,Discount" HeaderText="Sales Details" />
+        </syncfusion:StackedHeaderRow.StackedColumns>
+    </syncfusion:StackedHeaderRow>
+    <syncfusion:StackedHeaderRow>
+        <syncfusion:StackedHeaderRow.StackedColumns>
             <syncfusion:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
             <syncfusion:StackedColumn ChildColumns="CustomerID,CustomerArea" HeaderText="Customer Details" />
             <syncfusion:StackedColumn ChildColumns="UnitPrice,Discount" HeaderText="Price Details" />
@@ -741,10 +746,13 @@ Each [StackedHeaderRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/
 {% highlight c# %}
 
 var stackedHeaderRow = new StackedHeaderRow();
-stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details" });
-stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "CustomerID,CustomerArea", HeaderText = "Customer Details" });
-stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "UnitPrice,Discount", HeaderText = "Price Details" });
+stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate,CustomerID,CustomerArea,UnitPrice,Discount", HeaderText = "Sales Details" });
 this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow);
+var stackedHeaderRow1 = new StackedHeaderRow();
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "CustomerID,CustomerArea", HeaderText = "Customer Details" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "UnitPrice,Discount", HeaderText = "Price Details" });
+this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 	
 {% endhighlight %}
 {% endtabs %}
@@ -792,7 +800,7 @@ this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns
 {% endhighlight %}
 {% endtabs %}
 
-### Changing stacked header row height
+### Changing Stacked Header Row Height
 
 You can change the height of StackedHeaderRows by using [GetTreePanel.RowHeights](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel_properties.html) property.
 
