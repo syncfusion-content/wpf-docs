@@ -76,11 +76,11 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 
 ![](Interactive-Features_images/InteractiveFeatures_img2.png)
 
-## Custom ToopTip
+## Templating ToopTip
 
-### Cell ToopTip
+### Templating Cell ToopTip
 
-You can customize the appearance of the tooltip for particular column by setting [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html). `ToolTipTemplate` receives underlying data object as DataContext.
+You can template the appearance of the tooltip for particular column by setting [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html). `ToolTipTemplate` receives underlying data object as DataContext.
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,39 +127,9 @@ public class StringToImageConverter : IValueConverter
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
-### Header ToolTip
+### Loading Different ToolTip Template for Each Cell
 
-You can customize the appearance of header tooltip for particular column by [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property. `ToolTipTemplate` receives underlying data object as DataContext.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window.Resources>
-    <local:StringToImageConverter x:Key="ImageConverter" />
-    <DataTemplate x:Key="headerToolTipTemplate">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Image Height="30" Width="40" Source="\Assets\heading.png" />
-            <TextBlock Grid.Column="1" Text="LastName" VerticalAlignment="Center"/>
-        </Grid>
-    </DataTemplate>
-</Window.Resources>
-
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"  HeaderToolTipTemplate="{StaticResource headerToolTipTemplate}" ShowHeaderToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
-	
-{% endhighlight %}
-{% endtabs %}
-
-![](Interactive-Features_images/InteractiveFeatures_img7.png)
-
-## ToolTip Customization
-
-You can customize the template selector of tooltip by using the 
+You can choose different tooltip template for cell using 
 [TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
 
 The different tooltip template can be loaded in a same column conditionally based on data by setting `TreeGridColumn.ToolTipTemplateSelector`. `ToolTipTemplateSelector` receives underlying data object as DataContext.
@@ -246,6 +216,40 @@ The below image refers the AlternateTemplate which is applied through ToolTipTem
 ![](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1292485348.zip).
+
+### Templating Header ToolTip
+
+You can template the appearance of header tooltip for particular column by [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property. `ToolTipTemplate` receives underlying data object as DataContext.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <local:StringToImageConverter x:Key="ImageConverter" />
+    <DataTemplate x:Key="headerToolTipTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Height="30" Width="40" Source="\Assets\heading.png" />
+            <TextBlock Grid.Column="1" Text="LastName" VerticalAlignment="Center"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+
+<syncfusion:SfTreeGrid.Columns>
+    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"  HeaderToolTipTemplate="{StaticResource headerToolTipTemplate}" ShowHeaderToolTip="True" />
+</syncfusion:SfTreeGrid.Columns>
+	
+{% endhighlight %}
+{% endtabs %}
+
+![](Interactive-Features_images/InteractiveFeatures_img7.png)
+
+## ToolTip Customization
+
+
 
 ## Events
 
