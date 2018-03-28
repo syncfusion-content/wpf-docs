@@ -1664,6 +1664,82 @@ void GroupColumnDescriptions_CollectionChanged(object sender, System.Collections
 {% endhighlight %}
 {% endtabs %}
 
+### Loading Different ItemSource for each row of GridComboBoxColumn
+
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting  [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~ItemsSourceSelector.html) property. In the below example, based on the ShipCountry column the different ItemsSource are loaded to ShipCity column of GridComboBoxColumn by implementing the **IItemsSourceSelector** interface to get the IEnumerable ItemsSource of record from the datacontext.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <local:ItemsSourceSelector x:Key="itemSourceSelector" />
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="sfdatagrid"
+                        AllowEditing="True"
+                        AutoGenerateColumns="False"
+                        ItemsSource="{Binding OrderDetails}"
+                        ColumnSizer="Star">            
+    <interactivity:Interaction.Behaviors>
+        <local:ItemsSourceSelectorBehavior />
+    </interactivity:Interaction.Behaviors>            
+    <syncfusion:SfDataGrid.Columns>        
+        <syncfusion:GridComboBoxColumn MappingName="ShipCountry"  ItemsSource="{Binding Path=DataContext.CountryList, ElementName=sfdatagrid}"/>
+        <syncfusion:GridComboBoxColumn  HeaderText="ShipCity" DisplayMemberPath="ShipCityName"
+                                ItemsSourceSelector="{StaticResource itemSourceSelector}"
+                                MappingName="ShipCityID" SelectedValuePath="ShipCityID"/>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+### Implementing IItemsSourceSelector
+
+ItemsSourceSelector needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+<ul>
+<li> <b>Record</b> – data object associated with row.</li>
+<li> <b> Data Context</b>  – data context of data grid.</li>
+</ul>
+In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and data context of data grid passed to GetItemsSource method.
+
+{% tabs %}
+{% highlight c# %}
+/// <summary>
+/// Implementation class for ItemsSourceSelector interface
+/// </summary>
+public class ItemsSourceSelector : IItemsSourceSelector
+{
+    public IEnumerable GetItemsSource(object record, object dataContext)
+    {
+        if (record == null)
+            return null;
+  
+        var orderinfo = record as OrderDetails;
+        var countryName = orderinfo.ShipCountry;
+  
+        var viewModel = dataContext as ViewModel;
+  
+        //Returns ShipCity collection based on ShipCountry.
+        if (viewModel.ShipCities.ContainsKey(countryName))
+        {
+            ObservableCollection<ShipCityDetails> shipCities = null;
+            viewModel.ShipCities.TryGetValue(countryName, out shipCities);
+            return shipCities.ToList();
+        }
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
+
+![](Column-Types_images/Column-Types_img25.png)
+
+![](Column-Types_images/Column-Types_img26.png)
+
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo-1585046085.zip).
+
 ## GridMultiColumnDropDownList
 
 `GridMultiColumnDropDownList` derived from `GridTextColumnBase` and it displays enumeration as cell contents. It hosts [SfMultiDropDownControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) in editing mode. `GridMultiColumnDropDownList` allows you to define the predefined columns in its drop-down like SfDataGrid.  
