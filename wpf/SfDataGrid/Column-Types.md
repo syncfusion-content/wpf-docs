@@ -1673,8 +1673,9 @@ You can load the different ItemsSource to each row of GridComboBoxColumn by sett
 `ItemsSourceSelector` needs to implement [IItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector.html) interface which requires you to implement [GetItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector~GetItemsSource.html) method which receives the below parameters,
 <ul>
 <li> <b>Record</b> – data object associated with row.</li>
-<li> <b>Data Context</b>  – data context of data grid.</li>
+<li> <b>Data Context</b>  – Data context of data grid.</li>
 </ul>
+
 In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and data context of data grid passed to `GetItemsSource` method.
 
 {% tabs %}
