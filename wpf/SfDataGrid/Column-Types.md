@@ -1666,7 +1666,16 @@ void GroupColumnDescriptions_CollectionChanged(object sender, System.Collections
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting  [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~ItemsSourceSelector.html) property. In the below example, based on the ShipCountry column the different ItemsSource are loaded to ShipCity column of GridComboBoxColumn by implementing the **IItemsSourceSelector** interface to get the IEnumerable ItemsSource of record from the datacontext.
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting  [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~ItemsSourceSelector.html) property. 
+
+### Implementing IItemsSourceSelector
+
+`ItemsSourceSelector` needs to implement [IItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector.html) interface which requires you to implement [GetItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector~GetItemsSource.html) method which receives the below parameters,
+<ul>
+<li> <b>Record</b> – data object associated with row.</li>
+<li> <b>Data Context</b>  – data context of data grid.</li>
+</ul>
+In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and data context of data grid passed to `GetItemsSource` method.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1691,18 +1700,6 @@ You can load the different ItemsSource to each row of GridComboBoxColumn by sett
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-{% endtabs %}
-
-### Implementing IItemsSourceSelector
-
-ItemsSourceSelector needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
-<ul>
-<li> <b>Record</b> – data object associated with row.</li>
-<li> <b> Data Context</b>  – data context of data grid.</li>
-</ul>
-In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and data context of data grid passed to GetItemsSource method.
-
-{% tabs %}
 {% highlight c# %}
 /// <summary>
 /// Implementation class for ItemsSourceSelector interface
