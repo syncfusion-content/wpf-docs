@@ -804,6 +804,7 @@ this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns
 
 You can change the height of StackedHeaderRows by using [GetTreePanel.RowHeights](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel_properties.html) property.
 
+{% tabs %}
 {% highlight c# %}
 
 this.treeGrid.Loaded += TreeGrid_Loaded;
