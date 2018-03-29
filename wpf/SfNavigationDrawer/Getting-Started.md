@@ -153,6 +153,6 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img5.png)    
+![](Getting-Started_images/Getting-Started_img5.png)
                    
 
