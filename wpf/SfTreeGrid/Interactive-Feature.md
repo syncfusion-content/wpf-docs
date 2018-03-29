@@ -76,11 +76,13 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 
 ![](Interactive-Features_images/InteractiveFeatures_img2.png)
 
-## Templating ToopTip
+## Custom ToopTip
 
-### Templating Cell ToopTip
+You can customize the template of cell and header tooltip.
 
-You can template the appearance of the tooltip for particular column by setting [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html). `ToolTipTemplate` receives underlying data object as DataContext.
+### Cell ToopTip
+
+You can customize the appearance of the tooltip for particular column by setting [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html). `ToolTipTemplate` receives underlying data object as DataContext. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,36 +129,92 @@ public class StringToImageConverter : IValueConverter
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
-### Loading Different ToolTip Template for Each Cell
+### Header ToolTip
 
-You can choose different tooltip template for cell using 
-[TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
+You can customize the appearance of header tooltip for particular column by [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property. `ToolTipTemplate` receives underlying data object as DataContext.
 
-The different tooltip template can be loaded in a same column conditionally based on data by setting `TreeGridColumn.ToolTipTemplateSelector`. `ToolTipTemplateSelector` receives underlying data object as DataContext.
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <local:StringToImageConverter x:Key="ImageConverter" />
+    <DataTemplate x:Key="headerToolTipTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Height="30" Width="40" Source="\Assets\heading.png" />
+            <TextBlock Grid.Column="1" Text="{Binding HeaderText}" HorizontalAlignment="Center"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+
+<syncfusion:SfTreeGrid.Columns>
+    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"  HeaderToolTipTemplate="{StaticResource headerToolTipTemplate}" ShowHeaderToolTip="True" />
+</syncfusion:SfTreeGrid.Columns>
+	
+{% endhighlight %}
+{% endtabs %}
+
+![](Interactive-Features_images/InteractiveFeatures_img7.png)
+
+## ToolTip Customization
+
+You can change the appearance of the tooltip by customizing the style with TargetType as `ToolTip`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>        
+    <Style TargetType="ToolTip">
+        <Setter Property="BorderThickness" Value="1,1,1,1" />
+        <Setter Property="BorderBrush" Value="Red" />
+        <Setter Property="Background" Value="SkyBlue" />
+    </Style>
+</Window.Resources>
+
+<syncfusion:SfTreeGrid.Columns>
+    <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowToolTip="True" />
+</syncfusion:SfTreeGrid.Columns>
+	
+{% endhighlight %}
+{% endtabs %}
+
+![](Interactive-Features_images/InteractiveFeatures_img3.png)
+
+You can customize the template selector of tooltip by using the 
+[TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) property. 
+
+The different tooltip template can be loaded in a same column conditionally based on data by setting `TreeGridColumn.ToolTipTemplateSelector`. `ToolTipTemplateSelector` receives underlying data object as DataContext.You can set [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) as `true` to change the DataContext of tooltip template where it sets the DataContext as DataContextHelper. DataContextHelper has below properties to re-use the same template for all columns. 
+ <ul>  
+ <li><b>Record: </b> Gets the record of hovered cell in the SfTreeGrid.  </li>
+ <li><b>Value:  </b> Gets the underlying value of hovered cell. </li> 
+ </ul>
+You can set `SetCellBoundToolTip` as `true`, when you want to bind with underlying cell display text directly.
 
 {% tabs %}
 {% highlight xaml %}
 
 <Window.Resources>
     <DataTemplate x:Key="ToolTip1">
-        <Grid>
-            <Rectangle Fill="Transparent"/>
-            <TextBlock Text="{Binding Id}" FontWeight="Bold" Background="LightPink"/>
+        <Grid>                
+            <TextBlock Text="{Binding Record.Id}" FontWeight="Bold" Foreground="Red" />
         </Grid>
     </DataTemplate>
     <DataTemplate x:Key="ToolTip2">
         <Grid>
-            <Rectangle Fill="Transparent"/>
-            <TextBlock Text="{Binding Id}" FontStyle="Italic" Background="LightGreen"/>
+            <TextBlock Text="{Binding Record.Id}" FontWeight="Bold" Foreground="Green"/>                
         </Grid>
-    </DataTemplate>
+    </DataTemplate>      
 </Window.Resources>
 
 <syncfusion:SfTreeGrid.Columns>
     <syncfusion:TreeGridTextColumn HeaderText="Person ID" MappingName="Id" ShowToolTip="True" >
         <syncfusion:TreeGridTextColumn.ToolTipTemplateSelector>
-            <local:ToolTipTemplateSelector AlternateTemplate="{StaticResource ToolTip2}" 
-                                                DefaultTemplate="{StaticResource ToolTip1}" />
+            <syncfusion:TreeGridTextColumn HeaderText="Person ID" MappingName="Id" 
+                                               DisplayBinding="{Binding Path=Id, StringFormat=c}"
+                                               ShowToolTip="True" SetCellBoundToolTip="True" >
         </syncfusion:TreeGridTextColumn.ToolTipTemplateSelector>
     </syncfusion:TreeGridTextColumn>
 </syncfusion:SfTreeGrid.Columns>
@@ -190,14 +248,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
     public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
     {
-        //The item that comes from ToolTipTemplate is DataContextHelper. When set SetCellBoundValue to true, it sets DataContextHelper as DataContext to DataTemplate. Refer property section of CellTemplate.
-        Employee dataUnit = item as Employee;
-        if (dataUnit == null) return this.DefaultTemplate;
-        //use reflection to retrieve property
-        Type type = dataUnit.GetType();
-        PropertyInfo property = type.GetProperty("Id");
-        //To see what template needs to be select according to the specified property value.
-        if (property.GetValue(dataUnit, null).ToString().Contains("111") || property.GetValue(dataUnit, null).ToString().Contains("333"))
+        var treeGridData = item as TreeGridDataContextHelper;
+        if (treeGridData == null)
+            return this.DefaultTemplate;
+        // To see what template needs to be select according to the specified property value.
+        if ((treeGridData.Record as Employee).Id == (int)treeGridData.Value && ((int)treeGridData.Value % 2) == 0)
             return this.AlternateTemplate;
         else
             return this.DefaultTemplate;
@@ -207,49 +262,15 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-The below image refers the DefaultTemplate which is applied through ToolTipTemplateSelector.
+Refer the below image, the DataTemplate of Tooltip1 style are applied through `ToolTipTemplateSelector` and shown tooltip content as Red color. 
 
 ![](Interactive-Features_images/InteractiveFeatures_img5.png)
 
-The below image refers the AlternateTemplate which is applied through ToolTipTemplateSelector.
+Refer the below image, the DataTemplate of Tooltip2 style are applied through `ToolTipTemplateSelector` and shown tooltip content as Green color. 
 
 ![](Interactive-Features_images/InteractiveFeatures_img6.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1292485348.zip).
-
-### Templating Header ToolTip
-
-You can template the appearance of header tooltip for particular column by [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property. `ToolTipTemplate` receives underlying data object as DataContext.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window.Resources>
-    <local:StringToImageConverter x:Key="ImageConverter" />
-    <DataTemplate x:Key="headerToolTipTemplate">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Image Height="30" Width="40" Source="\Assets\heading.png" />
-            <TextBlock Grid.Column="1" Text="LastName" VerticalAlignment="Center"/>
-        </Grid>
-    </DataTemplate>
-</Window.Resources>
-
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName"  HeaderToolTipTemplate="{StaticResource headerToolTipTemplate}" ShowHeaderToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
-	
-{% endhighlight %}
-{% endtabs %}
-
-![](Interactive-Features_images/InteractiveFeatures_img7.png)
-
-## ToolTip Customization
-
-
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
 
 ## Events
 
@@ -308,11 +329,11 @@ private void TreeGrid_ToolTipClosing(object sender, System.Windows.Controls.Tool
 [CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when hover the cell in the SfTreeGrid.
 
 <ul>
-<li> Column: Gets the Column of hovered cell in the SfTreeGrid.</li>
-<li> Node: Gets the Node of hovered cell.</li>
-<li> Record: Gets the data context of hovered cell.</li>
-<li> RowColumnIndex: Gets the Row,Column index of hovered cell.</li>
-<li> ToolTip: Gets the tooltip of hovered cells</li>
+<li> <b>Column:</b> Gets the Column of hovered cell in the SfTreeGrid.</li>
+<li> <b>Node:</b> Gets the Node of hovered cell.</li>
+<li> <b>Record:</b> Gets the data context of hovered cell.</li>
+<li> <b>RowColumnIndex:</b> Gets the Row,Column index of hovered cell.</li>
+<li> <b>ToolTip:</b> Gets the tooltip of hovered cells</li>
 </ul>
 
 {% tabs %}
@@ -335,48 +356,3 @@ private void TreeGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.TreeG
 }
 {% endhighlight %}
 {% endtabs %}
-
-## Showing ToolTip for Empty Cells
-
-To show the tooltip for empty cells by handling the loaded event of the content loading into the tooltip template.  In the below code, the loaded event of the TextBlock is handled and the parent Tooltip, is found by using the FindAncestor method. When the TextBlock.Text is empty, then set the ToolTip.IsOpen to true and set the text for TextBlock to show the tooltip for cell.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn MappingName="Id" />
-    <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowToolTip="True">
-        <syncfusion:TreeGridTextColumn.ToolTipTemplate>
-            <DataTemplate>
-                <local:ToolTipExt Text="{Binding Path=FirstName}" />
-            </DataTemplate>
-        </syncfusion:TreeGridTextColumn.ToolTipTemplate>
-    </syncfusion:TreeGridTextColumn>    
-</syncfusion:SfTreeGrid.Columns>
-
-{% endhighlight %}
-{% highlight c# %}
-using Microsoft.VisualStudio.PlatformUI;
-
-public class ToolTipExt : TextBlock
-{
-    public ToolTipExt()
-    {
-        this.Loaded += TextBlockExt_Loaded;
-    }
-    void TextBlockExt_Loaded(object sender, RoutedEventArgs e)
-    {
-        if (!string.IsNullOrEmpty(this.Text))
-            return;
-        var tooltip = this.FindAncestor<ToolTip>();
-        if (IsVisible)
-        {
-            this.Text = "Cell value as empty";
-            tooltip.IsOpen = true;                
-        }
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![](Interactive-Features_images/InteractiveFeatures_img8.png)
