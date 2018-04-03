@@ -45,7 +45,7 @@ SfSkinManager.SetVisualStyle(dataGrid, VisualStyles.Blend);
 
 </li> 
 
-![](themes_images/themes_img1.png)
+![](Themes_images/themes_img1.png)
 
 <li>Now run the application, you can see blend theme applied for SfDataGrid.</li>
 </ul>
