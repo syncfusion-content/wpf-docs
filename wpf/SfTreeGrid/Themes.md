@@ -48,10 +48,10 @@ SfSkinManager.SetVisualStyle(treeGrid, VisualStyles.Blend);
 
 </li> 
 
-![](themes_images/themes_img1.png)
-
 <li>Now run the application, you can see blend theme applied for SfTreeGrid.</li>
 </ul>
+
+![](Themes_images/themes_img1.png)
 
 N> Refer below theme studio documentation to know more about of `SfSkinManger` it its various features such as theming MS controls, changing themes at runtime and applying theme globally in the application. 
 
