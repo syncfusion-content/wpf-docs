@@ -107,23 +107,22 @@ Adding GanttControl
 
 You can add Gantt control to the application using the following code:
 
-{% highlight html %}
+{% tabs %}
 
+{% highlight xaml %}
 
-
- <Sync:GanttControl x:Name="Gantt" />
-
+<Sync:GanttControl x:Name="Gantt" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-
  //Initializing Gantt
  GanttControl Gantt = new GanttControl();
 
-
 {% endhighlight  %}
+
+{% endtabs %}
 
 
 When the code runs, an empty Gantt with in-built TaskDetails collection will be displayed.
@@ -132,14 +131,13 @@ Binding Data to GanttControl
 
 Create a collection of tasks and bind it to the newly created GanttControl as given in the following code:
 
-{% highlight html %}
+{% tabs %}
 
+{% highlight xaml %}
 
+<Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
 
- <Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
-
-
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -153,72 +151,73 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 {% highlight c# %}
+[C#]
+
+            GanttItemSource = new ObservableCollection<TaskDetails>();
+
+            GanttItemSource = GetDataSourceStartToStart();
+
+            ObservableCollection<TaskDetails> GetDataSourceStartToStart()
+            {
+                ObservableCollection<TaskDetails> task = ObservableCollection<TaskDetails>();
 
 
-GanttItemSource = new ObservableCollection<TaskDetails>();
+                task.Add(
+                    new TaskDetails
+                        {
+                            TaskId = 1,
+                            TaskName = "Scope",
+                            StartDate = new DateTime(2011, 1, 3),
+                            FinishDate = new DateTime(2011, 1, 14),
+                            Progress = 40d
+                        });
+                task[0].Child.Add(
+                    new TaskDetails
+                        {
+                            TaskId = 2,
+                            TaskName = "Determine project office scope",
+                            StartDate = new DateTime(2011, 1, 3),
+                            FinishDate = new DateTime(2011, 1, 5),
+                            Progress = 20d
+                        });
+                task[0].Child.Add(
+                    new TaskDetails
+                        {
+                            TaskId = 3,
+                            TaskName = "Justify project office via business model",
+                            StartDate = new DateTime(2011, 1, 6),
+                            FinishDate = new DateTime(2011, 1, 7),
+                            Duration = new TimeSpan(1, 0, 0, 0),
+                            Progress = 20d
+                        });
+                task[0].Child.Add(
+                    new TaskDetails
+                        {
+                            TaskId = 4,
+                            TaskName = "Secure executive sponsorship",
+                            StartDate = new DateTime(2011, 1, 10),
+                            FinishDate = new DateTime(2011, 1, 14),
+                            Duration = new TimeSpan(1, 0, 0, 0),
+                            Progress = 20d
+                        });
 
-GanttItemSource = GetDataSourceStartToStart();
+                task[0].Child.Add(
+                    new TaskDetails
+                        {
+                            TaskId = 5,
+                            TaskName = "Secure complete",
+                            StartDate = new DateTime(2011, 1, 14),
+                            FinishDate = new DateTime(2011, 1, 14),
+                            Duration = new TimeSpan(1, 0, 0, 0),
+                            Progress = 20d
+                        });
 
+                return task;
 
-
-ObservableCollection<TaskDetails> GetDataSourceStartToStart()
-{
-ObservableCollection<TaskDetails> task = ObservableCollection<TaskDetails>();
-
-
-task.Add(new TaskDetails { TaskId = 1, TaskName = "Scope", 
-
-                    StartDate = new DateTime(2011, 1, 3), 
-
-                    FinishDate = new DateTime(2011, 1, 14),  Progress = 40d });
-task[0].Child.Add(new TaskDetails { TaskId = 2, 
-
-                    TaskName = "Determine project office scope", 
-
-                    StartDate = new DateTime(2011, 1, 3), 
-
-                    FinishDate = new DateTime(2011, 1, 5), 
-
-                    Progress = 20d });
-task[0].Child.Add(new TaskDetails { TaskId = 3, 
-
-                    TaskName = "Justify project office via business model", 
-
-                    StartDate = new DateTime(2011, 1, 6), 
-
-                    FinishDate = new DateTime(2011, 1, 7), 
-
-                    Duration = new TimeSpan(1, 0, 0, 0), 
-
-                    Progress = 20d });
-task[0].Child.Add(new TaskDetails { TaskId = 4, 
-
-                    TaskName = "Secure executive sponsorship", 
-
-                    StartDate = new DateTime(2011, 1, 10), 
-
-                    FinishDate = new DateTime(2011, 1, 14), 
-
-                    Duration = new TimeSpan(1, 0, 0, 0), 
-
-                    Progress = 20d });
-
-task[0].Child.Add(new TaskDetails { TaskId = 5, 
-
-                    TaskName = "Secure complete", 
-
-                    StartDate = new DateTime(2011, 1, 14), 
-
-                    FinishDate = new DateTime(2011, 1, 14), 
-
-                    Duration = new TimeSpan(1, 0, 0, 0), 
-
-                    Progress = 20d });
-
-return task;
-
-}
+            }
 {% endhighlight  %}
 
 ### Adding GanttControl through Designer
