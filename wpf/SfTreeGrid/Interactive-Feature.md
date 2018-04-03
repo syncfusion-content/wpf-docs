@@ -282,59 +282,9 @@ You can change the appearance of the tooltip by customizing the style with Targe
 
 ## Events
 
-### ToolTipOpening Event
-
-`ToolTipOpening` event occurs when any cell tooltip of an element is open.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"  
-                        AutoExpandMode="RootNodesExpanded" 
-                        ToolTipOpening="TreeGrid_ToolTipOpening"
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"
-                        ColumnSizer="Star"
-                        ExpanderColumn="Id"
-                        ItemsSource="{Binding PersonDetails}">
-{% endhighlight %}
-{% highlight c# %}
-this.treeGrid.ToolTipOpening += TreeGrid_ToolTipOpening;
-
-private void TreeGrid_ToolTipOpening(object sender, System.Windows.Controls.ToolTipEventArgs e)
-{
-            
-}
-{% endhighlight %}
-{% endtabs %}
-
-### ToolTipClosing Event
-
-`ToolTipClosing` event occurs just before any cell tooltip on the element is closed.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"  
-                        AutoExpandMode="RootNodesExpanded" 
-                        ToolTipClosing="TreeGrid_ToolTipClosing"
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"
-                        ColumnSizer="Star"
-                        ExpanderColumn="Id"
-                        ItemsSource="{Binding PersonDetails}">
-{% endhighlight %}
-{% highlight c# %}
-this.treeGrid.ToolTipClosing += TreeGrid_ToolTipClosing;
-
-private void TreeGrid_ToolTipClosing(object sender, System.Windows.Controls.ToolTipEventArgs e)
-{
-          
-}
-{% endhighlight %}
-{% endtabs %}
-
 ### CellToolTipOpening Event
 
-[CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when hover the cell in the SfTreeGrid.
+[CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when any tooltip on the cell is opened.
 
 <ul>
 <li> [Column](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html) Gets the Column of hovered cell in the SfTreeGrid.</li>
