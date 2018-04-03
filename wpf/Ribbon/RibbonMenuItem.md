@@ -135,15 +135,15 @@ The event occurs when the IconSize property of the RibbonMenuItem get changed.
 
 {% highlight C# %}
 
-RibbonMenuItem menuitem = new RibbonMenuItem();
-menuitem.IconSizeChanged += RibbonMenuItem_IconSizeChanged;
+RibbonMenuItem menuItem = new RibbonMenuItem();
+menuItem.IconSizeChanged += RibbonMenuItem_IconSizeChanged;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Private menuitem As RibbonMenuItem = New RibbonMenuItem()
-menuitem.IconSizeChanged += RibbonMenuItem_IconSizeChanged 
+Private menuItem As RibbonMenuItem = New RibbonMenuItem()
+menuItem.IconSizeChanged += RibbonMenuItem_IconSizeChanged 
 
 {% endhighlight %}
 
@@ -194,15 +194,15 @@ The event occurs when the FlowDirection property of the RibbonMenuItem get chang
 
 {% highlight C# %}
 
-RibbonMenuItem menuitem = new RibbonMenuItem();
-menuitem.FlowDirectionChanged += RibbonMenuitem_FlowDirectionChanged;            
+RibbonMenuItem menuItem = new RibbonMenuItem();
+menuItem.FlowDirectionChanged += RibbonMenuItem_FlowDirectionChanged;            
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Private menuitem As RibbonMenuItem = New RibbonMenuItem()
-menuitem.FlowDirectionChanged += RibbonMenuitem_FlowDirectionChanged
+Private menuItem As RibbonMenuItem = New RibbonMenuItem()
+menuItem.FlowDirectionChanged += RibbonMenuItem_FlowDirectionChanged
 
 {% endhighlight %}
 
