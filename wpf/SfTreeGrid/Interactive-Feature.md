@@ -80,10 +80,10 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 
 You can customize the template of cell tooltip and header tooltip.
 
-Cell ToolTipTemplate receives underlying data object as DataContext by default. You can set [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) as `true` to change the DataContext of tooltip template where it sets the DataContext as DataContextHelper. DataContextHelper has below properties to re-use the same template for all columns. 
+Cell ToolTipTemplate receives underlying data object as DataContext by default. You can set [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) as `true` to change the DataContext of tooltip template where it sets the DataContext as DataContextHelper. [TreeGridDataContextHelper](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) has below properties to re-use the same template for all columns. 
  <ul>  
- <li><b>Record: </b> Gets the record of hovered cell in the SfTreeGrid.  </li>
- <li><b>Value:  </b> Gets the underlying value of hovered cell. </li> 
+ <li><b> [Record](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html) : </b> Gets the underlying data record of row which has the cell.  </li>
+ <li><b> [Value](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html) :  </b> Gets the underlying value of cell. </li> 
  </ul>
  
 ### Templating Cell ToolTip
