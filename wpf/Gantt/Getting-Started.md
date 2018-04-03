@@ -164,7 +164,6 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
             {
                 ObservableCollection<TaskDetails> task = ObservableCollection<TaskDetails>();
 
-
                 task.Add(
                     new TaskDetails
                         {
