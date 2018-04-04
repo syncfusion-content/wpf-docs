@@ -227,7 +227,7 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.startDate = value;
-                OnpropertyChanged("StartDate");
+                OnPropertyChanged("StartDate");
             }
 
         }
@@ -244,7 +244,7 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.endDate = value;
-                OnpropertyChanged("EndDate");
+                OnPropertyChanged("EndDate");
             }
         }
 
@@ -260,7 +260,7 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.duration = value;
-                OnpropertyChanged("Duration");
+                OnPropertyChanged("Duration");
             }
         }
 
@@ -276,7 +276,7 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.id = value;
-                OnpropertyChanged("ID");
+                OnPropertyChanged("ID");
             }
         }
 
@@ -292,7 +292,7 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.name = value;
-                OnpropertyChanged("Name");
+                OnPropertyChanged("Name");
             }
         }
 
@@ -308,7 +308,7 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.progress = value;
-                OnpropertyChanged("Progress");
+                OnPropertyChanged("Progress");
             }
         }
 
@@ -321,11 +321,11 @@ The following code illustrates how to bind the external source to Gantt control:
             set
             {
                 this.childCollection = value;
-                OnpropertyChanged("ChildCollection");
+                OnPropertyChanged("ChildCollection");
             }
         }
 
-        private void OnpropertyChanged(string propName)
+        private void OnPropertyChanged(string propName)
         {
             if (this.PropertyChanged != null)
             {
