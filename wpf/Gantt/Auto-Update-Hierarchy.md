@@ -44,8 +44,7 @@ To use the auto updating hierarchy support in an application:
 
 1. Create a simple class structure for business objects.
 
-
-   ~~~csharp
+{% highlight c# %}
 
 		public class Task : NotificationObject
 
@@ -88,8 +87,6 @@ To use the auto updating hierarchy support in an application:
 		}
 
 		}
-
-
 
 		//No need to do the calculation for duration when the end date is changed.
 
@@ -253,16 +250,12 @@ To use the auto updating hierarchy support in an application:
 
 		}
 
-
-   ~~~
+{% endhighlight  %}
 
 
 2. Create a collection of business objects to bind them as ItemsSource for the Gantt control.
 
-
-
-
-   ~~~csharp
+{% highlight c# %}
 
 		TaskDetails = new ObservableCollection<Task>();
 
@@ -430,13 +423,11 @@ To use the auto updating hierarchy support in an application:
 
 		}
 
-   ~~~
+{% endhighlight  %}
 
 3. Set the collection as ItemsSource of the Gantt control.
 
-
-
-   ~~~csharp
+{% highlight c# %}
 
 		<gantt:GanttControl x:Name="Gantt"
 
@@ -467,7 +458,7 @@ To use the auto updating hierarchy support in an application:
 		</gantt:GanttControl>
 
 
-   ~~~
+{% endhighlight  %}
 
 ## Using Custom Logics in Business Objects
 
@@ -475,8 +466,7 @@ To use your own logics in business objects:
 
 1. Create a simple class structure for business objects. Add custom calculations on business objects to update the hierarchy when its state changed.
 
-
-   ~~~csharp
+{% highlight c# %}
 
 		public class Task : NotificationObject
 
@@ -788,13 +778,13 @@ To use your own logics in business objects:
 
 		}
 
-   ~~~
+{% endhighlight  %}
 
 2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
 
 
 
-   ~~~csharp
+{% highlight c# %}
 
 		TaskDetails = new ObservableCollection<Task>();
 
@@ -952,14 +942,14 @@ To use your own logics in business objects:
 
 		}
 
-   ~~~
+{% endhighlight  %}
 
 3. Set the UseAutoUpdateHierarchy property as false to handle the custom calculations on the business objects. Set the collection as ItemsSource of the Gantt control.
 
    N> If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
 
-   ~~~csharp
+{% highlight c# %}
 
 		<gantt:GanttControl x:Name="Gantt"
 
@@ -989,7 +979,7 @@ To use your own logics in business objects:
 
 		</gantt:GanttControl>
 
-   ~~~		
+{% endhighlight  %}	
 
 Output:
 

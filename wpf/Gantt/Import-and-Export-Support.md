@@ -67,7 +67,7 @@ bool</td></tr>
 The following code illustrates how to Import and Export Task Details from or to XML.
 
 {% tabs  %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 <Sync:GanttControl x:Name="Gantt" />

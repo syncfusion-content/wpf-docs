@@ -31,7 +31,7 @@ To add the built-in zooming:
 3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 <Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
@@ -140,7 +140,7 @@ To add custom zooming:
 5. Handle the ZoomChanged event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 

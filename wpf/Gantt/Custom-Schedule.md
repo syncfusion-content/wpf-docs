@@ -143,7 +143,7 @@ To Add CustomNumeric Schedule to an application:
 2. Bind the GanttScheduleRowInfo collection to the CustomScheduleSource property of the Gantt.
 
 The following code illustrates Adding Custom Schedule to an Application:
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -262,7 +262,7 @@ To Add CustomDateTime Schedule to an application:
 The following code illustrates this:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 

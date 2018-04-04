@@ -45,7 +45,7 @@ You can customize the theme using the VisualStyle property.
 The following code illustrates how to set the VisualStyle of Gantt control:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 

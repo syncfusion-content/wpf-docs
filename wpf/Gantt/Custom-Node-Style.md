@@ -54,7 +54,7 @@ MileStone</td></tr>
 The following code illustrates how to define style:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -370,7 +370,7 @@ The following code illustrates how to define style:
 The following code illustrates how to add the styles to the application:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
