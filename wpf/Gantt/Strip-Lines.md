@@ -272,7 +272,7 @@ return stripCollection;
 The following code example illustrates binding the strip line collection to StripLines:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 <sync:GanttControl x:Name="Gantt"

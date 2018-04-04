@@ -66,7 +66,7 @@ Adding the DateTime indicator customization will change the appearance and posit
 
 The following code samples illustrate how to customize the DateTime indicator.
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 
