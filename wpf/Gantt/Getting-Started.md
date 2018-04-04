@@ -135,19 +135,21 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 
 {% highlight xaml %}
 
-<Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
+        <Sync:GanttControl ItemsSource="{Binding TaskCollection}">
+            <Sync:GanttControl.DataContext>
+                <local:ViewModel></local:ViewModel>
+            </Sync:GanttControl.DataContext>
+        </Sync:GanttControl>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-
  //Initializing Gantt
- GanttControl Gantt = new GanttControl();
-
- ViewModel model=  new ViewModel();
- Gantt.ItemsSource = model.GanttItemSource;
-
+GanttControl Gantt = new GanttControl();
+ViewModel model=  new ViewModel();
+this.Gantt.DataContext = model;
+Gantt.ItemsSource = model.GanttItemSource;
 
 {% endhighlight  %}
 
@@ -156,65 +158,72 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 {% highlight c# %}
 [C#]
 
-           ObservableCollection<TaskDetails> GanttItemSource = GetDataSourceStartToStart();
+    public class ViewModel
+    {
+        public ObservableCollection<TaskDetails> TaskCollection { get; set; }
+        public ViewModel()
+        {
+            TaskCollection = this.GetDataSource();
+        }
 
-            ObservableCollection<TaskDetails> GetDataSourceStartToStart()
-            {
-                ObservableCollection<TaskDetails> task = ObservableCollection<TaskDetails>();
-                task.Add(
-                    new TaskDetails
-                        {
-                            TaskId = 1,
-                            TaskName = "Scope",
-                            StartDate = new DateTime(2011, 1, 3),
-                            FinishDate = new DateTime(2011, 1, 14),
-                            Progress = 40d
-                        });
-                task[0].Child.Add(
-                    new TaskDetails
-                        {
-                            TaskId = 2,
-                            TaskName = "Determine project office scope",
-                            StartDate = new DateTime(2011, 1, 3),
-                            FinishDate = new DateTime(2011, 1, 5),
-                            Progress = 20d
-                        });
-                task[0].Child.Add(
-                    new TaskDetails
-                        {
-                            TaskId = 3,
-                            TaskName = "Justify project office via business model",
-                            StartDate = new DateTime(2011, 1, 6),
-                            FinishDate = new DateTime(2011, 1, 7),
-                            Duration = new TimeSpan(1, 0, 0, 0),
-                            Progress = 20d
-                        });
-                task[0].Child.Add(
-                    new TaskDetails
-                        {
-                            TaskId = 4,
-                            TaskName = "Secure executive sponsorship",
-                            StartDate = new DateTime(2011, 1, 10),
-                            FinishDate = new DateTime(2011, 1, 14),
-                            Duration = new TimeSpan(1, 0, 0, 0),
-                            Progress = 20d
-                        });
+        private ObservableCollection<TaskDetails> GetDataSource()
+        {
+            ObservableCollection<TaskDetails> task = new ObservableCollection<TaskDetails>();
+            task.Add(
+                new TaskDetails
+                    {
+                        TaskId = 1,
+                        TaskName = "Scope",
+                        StartDate = new DateTime(2011, 1, 3),
+                        FinishDate = new DateTime(2011, 1, 14),
+                        Progress = 40d
+                    });
+            task[0].Child.Add(
+                new TaskDetails
+                    {
+                        TaskId = 2,
+                        TaskName = "Determine project office scope",
+                        StartDate = new DateTime(2011, 1, 3),
+                        FinishDate = new DateTime(2011, 1, 5),
+                        Progress = 20d
+                    });
+            task[0].Child.Add(
+                new TaskDetails
+                    {
+                        TaskId = 3,
+                        TaskName = "Justify project office via business model",
+                        StartDate = new DateTime(2011, 1, 6),
+                        FinishDate = new DateTime(2011, 1, 7),
+                        Duration = new TimeSpan(1, 0, 0, 0),
+                        Progress = 20d
+                    });
+            task[0].Child.Add(
+                new TaskDetails
+                    {
+                        TaskId = 4,
+                        TaskName = "Secure executive sponsorship",
+                        StartDate = new DateTime(2011, 1, 10),
+                        FinishDate = new DateTime(2011, 1, 14),
+                        Duration = new TimeSpan(1, 0, 0, 0),
+                        Progress = 20d
+                    });
 
-                task[0].Child.Add(
-                    new TaskDetails
-                        {
-                            TaskId = 5,
-                            TaskName = "Secure complete",
-                            StartDate = new DateTime(2011, 1, 14),
-                            FinishDate = new DateTime(2011, 1, 14),
-                            Duration = new TimeSpan(1, 0, 0, 0),
-                            Progress = 20d
-                        });
+            task[0].Child.Add(
+                new TaskDetails
+                    {
+                        TaskId = 5,
+                        TaskName = "Secure complete",
+                        StartDate = new DateTime(2011, 1, 14),
+                        FinishDate = new DateTime(2011, 1, 14),
+                        Duration = new TimeSpan(1, 0, 0, 0),
+                        Progress = 20d
+                    });
 
-                return task;
+            return task;
+        }
+    }
 
-            }
-{% endhighlight  %}
+ {% endhighlight  %}
 
 ### Adding GanttControl through Designer
 
