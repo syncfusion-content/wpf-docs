@@ -64,7 +64,8 @@ Shift down. Converts all the characters that follow to lowercase.</td></tr>
 <td> > </td><td>
 Shift up. Converts all the characters that follow to uppercase.</td></tr>
 </table>
-Regular
+
+## Regular
 
 Expressions that are generated with slightly complex mask elements are under this group, preferable for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
 
@@ -133,10 +134,14 @@ Accepts the matching input one or more times.</td></tr>
 
 For example: The following code example shows the validation for E-mail using Regex Elements.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:SfMaskedEdit x:Name="sfMaskedEdit" MaskType="RegEx" Mask="[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}" Value="someone@example.com" />
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
