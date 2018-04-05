@@ -30,34 +30,24 @@ These steps were explained below for XAML.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-N> This window differs for the Visual Basic project.
 
-T> Select the .NET Framework version respective to your application. The version can be identified as below:
+This window differs for the Visual Basic project.
+
+Select the .NET Framework version respective to your application. The version can be identified as below:
 
 <table>
 <tr>
-<td>
-XX.X450.0.X
-</td>
-<td>
-4.5 Framework
-</td>
+<td>XX.X450.0.X</td>
+<td>4.5 Framework</td>
 </tr>
 <tr>
-<td>
-XX.X451.0.X
-</td>
-<td>
-4.5.1 Framework
-</td>
+<td>XX.X451.0.X</td>
+<td>4.5.1 Framework</td>
 </tr>
 <tr>
-<td>
-XX.X460.0.X
-</td>
-<td>
-4.6 Framework
-</td>
+<td>XX.X460.0.X</td>
+<td>4.6 Framework</td>
+</tr>
 </table>
 
 
