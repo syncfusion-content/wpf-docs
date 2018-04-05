@@ -128,6 +128,8 @@ End Class
 
 Next, create a view model class and initialize a list of `Person` objects as shown below,
 
+{% tabs %}  
+
 {% highlight c# %}
 
 public class ViewModel  
