@@ -29,6 +29,8 @@ Create a new WPF application in the Visual Studio and follow the steps given.
 
 The following code example shows how to create the SfMaskedEdit from XAML.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
@@ -37,6 +39,8 @@ The following code example shows how to create the SfMaskedEdit from XAML.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
@@ -44,6 +48,8 @@ The following code example shows how to create the SfMaskedEdit from XAML.
 ### Create the SfMaskedEdit control by using C#
 
 To create a MaskedEdit control, use the following code.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -54,6 +60,8 @@ SfMaskedEdit maskededit = new SfMaskedEdit() { Text = "SfMaskedEdit", Width = 15
 this.Content = maskededit;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
