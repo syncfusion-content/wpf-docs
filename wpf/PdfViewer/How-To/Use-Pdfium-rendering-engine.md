@@ -11,7 +11,7 @@ documentation: ug
 
 From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering of PDF document using Pdfium rendering engine. Please follow the below steps to use Pdfium PDF rendering in Syncfusion PDF viewer.
 
-1.	Copy the Pdfium assembly’s folder to a local folder from the installation path. The folder name must be “Pdfium”.
+1.	Copy the Pdfium assembly&#39;s folder to a local folder from the installation path. The folder name must be &#34;Pdfium&#34;.
 
 	The Pdfium assemblies will be available in 
     {$SystemDrive}:\Program Files (x86)\Syncfusion\Essential Studio\{Essential Studio version}\Pdfium 
@@ -22,7 +22,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 	
 	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
 	
-2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the “Pdfium” folder. 
+2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34;Pdfium&#34; folder. 
 
 	The following code snippet illustrates the same.
 
@@ -31,7 +31,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 
 	PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
 	//Specify the path for Pdfium assembly. 
-	pdfViewerControl1.ReferencePath = @"D:\Reference path";
+	pdfViewerControl1.ReferencePath = @"D:\Pdfium";
 	//Specify the PDF rendering engine as Pdfium.
 	pdfViewerControl1.RenderingEngine =PdfRenderingEngine.Pdfium; 
 	//Load the PDF document 
@@ -44,7 +44,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 
 	Dim pdfViewerControl1 As New PdfViewerControl()
     'Specify the path for Pdfium assembly
-	pdfViewerControl1.ReferencePath = @"D:\Reference path"
+	pdfViewerControl1.ReferencePath = @"D:\Pdfium"
     'Specify the PDF rendering engine as Pdfium
 	pdfViewerControl1.RenderingEngine =PdfRenderingEngine.Pdfium 
 	'Load the PDF document 
