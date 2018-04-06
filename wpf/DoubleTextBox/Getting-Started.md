@@ -86,12 +86,13 @@ DoubleTextBox exposes the following members:
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Type**<br/><br/></td><td>
-**Data** **Type**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Default** **Value**<br/><br/></td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+DataType</th><th>
+Description</th><th>
+DefaultValue</th>
+</tr>
 <tr>
 <td>
 ApplyNegativeForeground<br/><br/></td><td>
@@ -420,11 +421,11 @@ String.Empty<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Return** **Type**<br/><br/></td><td>
-**Overloads**<br/><br/></td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Return Type</th><th>
+Overloads</th></tr>
 <tr>
 <td>
 Copy()<br/><br/></td><td>
@@ -449,11 +450,11 @@ Zero parameter<br/><br/></td></tr>
 
 <table>
 <tr>
-<td>
-**Name**<br/><br/></td><td>
-**Event** **Type**<br/><br/></td><td>
-**Event** **Args** **Parameter**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th></tr>
 <tr>
 <td>
 ValueChanged<br/><br/></td><td>
