@@ -27,7 +27,7 @@ In order to achieve Properties of ViewModel are bind to View, we have provided t
 
 ## Node Port
 
-To Specify and make connection with Node at Precise Point. 
+To specify and make connection with Node at precise Point. 
 
 ### Define Node Port
 
@@ -35,6 +35,7 @@ To Specify and make connection with Node at Precise Point.
 
 Please find the common style for Node and NodePort.
 
+{% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
 <Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
@@ -63,9 +64,7 @@ Please find the common style for Node and NodePort.
   </Setter.Value>
  </Setter>
 </Style>
-{% endhighlight %}
-{% tabs %}
-{% highlight xaml %}
+
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
   <!--Initializes the NodeCollection-->
   <syncfusion:SfDiagram.Nodes>
@@ -86,8 +85,6 @@ Please find the common style for Node and NodePort.
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-
-
 
 {% highlight C# %}
 //Define Nodes Property
@@ -117,18 +114,19 @@ NodeViewModel node = new NodeViewModel()
 
 {% endhighlight %}			
 {% endtabs %}
-![](Port_images/Port_img6.jpeg)
+![](Port_images/Port_img6.PNG)
 
->N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
+>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , refer to the PortVisibility 
 
 ## Connector Port
- To Specify and make connection with Connector at Precise Length.
+ To specify and make connection with Connector at precise Length.
   
 ### Define Connector Port  
-`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance,visibility and interaction with this.
+`Ports` property of a Connector should be initialized with Collection. Port itself having properties to update position, appearance, visibility and interaction with this.
 
 Please find the common style for Connector and ConnectorPort.
 
+{% tabs %}
 {% highlight xaml %}
 <!--Style for the Connector-->
 <Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
@@ -164,9 +162,7 @@ Please find the common style for Connector and ConnectorPort.
   </Setter.Value>
  </Setter>
 </Style>
-{% endhighlight %}
-{% tabs %}
-{% highlight xaml %}
+
 <!--Initialize the sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
  <!--Initialize the ConnectorCollection-->
@@ -188,8 +184,6 @@ Please find the common style for Connector and ConnectorPort.
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-
-
 
 {% highlight C# %}
 //Define Connector Property
@@ -214,9 +208,9 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}			
 
-![](Port_images/Port_img7.jpeg)
+![](Port_images/Port_img7.PNG)
 
->N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , Refer to the PortVisibility 
+>N The default value of `PortVisibility` is `PortVisibility.MouseOver`. For more information , refer to the PortVisibility 
 
 ## Dock Port
 
@@ -405,7 +399,7 @@ return node;
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img13.jpeg)
+![](Port_images/Port_img13.PNG)
 
 ### Connector to Connector Routing
 
@@ -533,9 +527,65 @@ ConnectorViewModel con2 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img14.jpeg)
+![](Port_images/Port_img14.PNG)
 
 DockPort does not allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
+
+## Padding
+Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges.
+
+{% tabs %}
+{% highlight c# %}
+
+NodePortViewModel nodePort = new NodePortViewModel()
+{
+    //Declaring the ConnectorPadding value
+    ConnectorPadding = 10,
+    NodeOffsetX = 0,
+    NodeOffsetY = 0.5,
+};
+//Define NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define NodeProperty
+NodeViewModel node1 = AddNode(200,200,65,100);
+//Space between Connector and Node
+node1.ConnectorPadding = 5;
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node1);
+NodeViewModel node2 = AddNode(400,200,65,100);
+node2.Ports = new PortCollection()
+{
+    nodePort
+};
+
+(diagram.Nodes as NodeCollection).Add(node2);
+//Define ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+ConnectorViewModel conn1 = new ConnectorViewModel()
+{
+    TargetPort=nodePort,
+    SourceNode = node1,
+    TargetNode=node2
+};
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(conn1);
+ 
+//Method for Creating Node
+public NodeViewModel AddNode(double offsetX, double offsetY,double height,double width)
+{
+    NodeViewModel node = new NodeViewModel();
+    node.OffsetX = offsetX;
+    node.OffsetY = offsetY;
+    node.UnitHeight = height;
+    node.UnitWidth = width;
+    node.Shape = new RectangleGeometry { Rect = new Rect(0, 0, 10, 10) } ;
+    return node;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Port_images/Port_img15.PNG)
 
 ## Appearance
 

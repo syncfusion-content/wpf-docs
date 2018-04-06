@@ -65,6 +65,5 @@ void pivotGrid_SortBegin(object sender, OnSortActionStarted e) {
     Dictionary < int, object > indexesBeforeSort = new Dictionary < int, object > ();
     indexesBeforeSort = e.List;
 }
-		 
-{% endhighlight %}
 
+{% endhighlight %}

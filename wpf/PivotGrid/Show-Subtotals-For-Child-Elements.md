@@ -15,22 +15,22 @@ If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid1" VerticalAlignment="Top" VisualStyle="Metro" ShowSubTotalsForChildren="True" ItemSource="{Binding Source={StaticResource data}}">
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid1" VerticalAlignment="Top" VisualStyle="Metro" ShowSubTotalsForChildren="True" ItemSource="{Binding Source={StaticResource data}}">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>           
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" CalculationType="PercentageOfColumnTotal" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-</Grid>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" CalculationType="PercentageOfColumnTotal" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+    </Grid>
 
 {% endhighlight %}
 
@@ -74,10 +74,7 @@ public partial class MainWindow: Window {
         pivotGrid.PivotEngine.ShowSubTotalsForChildren = true;
     }
 }
-	 
+
 {% endhighlight %}
 
-![](Show-Subtotals-For-Child-Elements-Image/SubtotalsForChildren.png)
-
-
-
+![SubtotalsForChildren](Show-Subtotals-For-Child-Elements-Image/SubtotalsForChildren.png)

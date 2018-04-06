@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Disable Grouping by Specific Fields 
+# Disable Grouping by Specific Fields
 
 PivotGrid control allows to prevent the drag and drop of certain PivotItems either in PivotSchemaDesigner or Grouping Bar.
 
@@ -23,22 +23,22 @@ If setting both the properties through *XAML*, please refer the below code sampl
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowDisabledGroupBackground="True" ItemSource="{Binding   Source={StaticResource data}}">
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" AllowRunTimeGroupByField="False" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" AllowRunTimeGroupByField="False" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" AllowRunTimeGroupByField="False" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-    </syncfusion:PivotGridControl>
-</Grid>
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ShowDisabledGroupBackground="True" ItemSource="{Binding   Source={StaticResource data}}">
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" AllowRunTimeGroupByField="False" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" AllowRunTimeGroupByField="False" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" AllowRunTimeGroupByField="False" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -81,9 +81,7 @@ public partial class MainWindow: Window {
 
     }
 }
-	
+
 {% endhighlight %}
 
 ![](Grouping-Bar-Images/Grouping bar with disabled grouping fields.png)
-
-

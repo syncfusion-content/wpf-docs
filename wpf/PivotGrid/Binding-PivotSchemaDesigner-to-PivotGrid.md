@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding PivotSchemaDesigner to PivotGrid
 
-PivotSchemaDesigner can be bound to the PivotGrid with the help of the `PivotControl` property. After creating a PivotGrid, a new PivotSchemaDesigner is created using the `PivotSchemaDesigner` class and bound to the PivotGrid control using `PivotControl` property of PivotSchemaDesigner. This can be achieved either in *XAML* or in *Code-behind*. 
+PivotSchemaDesigner can be bound to the PivotGrid with the help of the `PivotControl` property. After creating a PivotGrid, a new PivotSchemaDesigner is created using the `PivotSchemaDesigner` class and bound to the PivotGrid control using `PivotControl` property of PivotSchemaDesigner. This can be achieved either in *XAML* or in *Code-behind*.
 
 If through *XAML*, please refer the below code sample.
 
@@ -22,7 +22,7 @@ If through *XAML*, please refer the below code sample.
         </Grid.ColumnDefinitions>
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" VisualStyle="Metro"
              EnableValueEditing="True" ItemSource="{Binding   Source={StaticResource data}}" >
-            
+
             <syncfusion:PivotGridControl.PivotRows>
                 <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
                 <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total"/>
@@ -35,13 +35,13 @@ If through *XAML*, please refer the below code sample.
                 <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Amount" Format="C" SummaryType="DoubleTotalSum" />
                 <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName = "Quantity" SummaryType="Count" />
             </syncfusion:PivotGridControl.PivotCalculations>
-            
+
         </syncfusion:PivotGridControl>
-        
+
         <syncfusion:PivotSchemaDesigner Grid.Column="1" Name="shemaDesginer" VisualStyle="Metro" PivotControl="{Binding ElementName=pivotGrid}"></syncfusion:PivotSchemaDesigner>
     </Grid>
 {% endhighlight %}
-  
+
 Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
@@ -71,12 +71,11 @@ Else if through *Code-behind*, please refer the below code sample.
             pivotGrid.PivotCalculations.Add(m_PivotComputationInfo1);
 
             schemaDesigner.PivotControl = pivotGrid;
-            grid1.Children.Add(schemaDesigner); 
+            grid1.Children.Add(schemaDesigner);
             Grid.SetColumn(schemaDesigner, 1);
         }
      }
-        
+
 {% endhighlight %}
 
-
-![](PivotSchemaDesigner-Images/PivotSchemaDesigner.png)
+![PivotSchemaDesigner](PivotSchemaDesigner-Images/PivotSchemaDesigner.png)

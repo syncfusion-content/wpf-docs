@@ -9,32 +9,31 @@ documentation: ug
 
 # Restrict Row Header Resizing
 
-PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the *ShowFields* button located in the Data Header Area of the Grouping Bar is clicked, the *PivotComputation List* window appears with the PivotCalculation fields. 
+PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the *ShowFields* button located in the Data Header Area of the Grouping Bar is clicked, the *PivotComputation List* window appears with the PivotCalculation fields.
 
-The `AllowRowHeaderAreaAutoSizing` property is set to "false", in-order to display the Computation button (ShowFields button) and to restrict the row header items from being stretched when more items are added to the Computation Area. By default, this property is set to "true". It can be defined both in *XAML* and *Code-behind*. 
+The `AllowRowHeaderAreaAutoSizing` property is set to "false", in-order to display the Computation button (ShowFields button) and to restrict the row header items from being stretched when more items are added to the Computation Area. By default, this property is set to "true". It can be defined both in *XAML* and *Code-behind*.
 
 If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" AllowRowHeaderAreaAutoSizing="False" ItemSource="{Binding   Source={StaticResource data}}">
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" AllowRowHeaderAreaAutoSizing="False" ItemSource="{Binding   Source={StaticResource data}}">
 
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-
-    </syncfusion:PivotGridControl>
-</Grid>
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -42,7 +41,8 @@ Else if through *Code-behind*, please refer the below code sample.
 
 {% highlight C# %}
 
-public partial class MainWindow: Window {
+public partial class MainWindow: Window
+{
     PivotGridControl pivotGrid = new PivotGridControl();
     public MainWindow() {
         InitializeComponent();
@@ -78,8 +78,7 @@ public partial class MainWindow: Window {
         pivotGrid.AllowRowHeaderAreaAutoSizing = false;
     }
 }
-    
+
 {% endhighlight %}
 
 ![](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)
-

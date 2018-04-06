@@ -11,7 +11,7 @@ documentation: ug
 
 Grouping Bar also allows to perform sorting, filtering and summarizing the data in the way user wants at run time. Each Grouping Bar item contains:
 
-* A **caption** string which identifies the fields content. 
+* A **caption** string which identifies the fields content.
 * A **filter button** which end-users can use to filter field values.
 * A **sort indicator** which identifies the sort order applied to the field's values.
 * A **remove button** which used for removing the corresponding item.
@@ -31,10 +31,10 @@ Please refer the properties available in Grouping Bar.
 
 **Background**
 
-We can customize the background color of the Grouping Bar by defining the color to its `Background` property after Grouping Bar is loaded. 
+We can customize the background color of the Grouping Bar by defining the color to its `Background` property after Grouping Bar is loaded.
 
 Include the *System.Windows.Media* namespace in MainWindow.xaml.cs file. After defining the PivotGrid control, raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside the `GroupingBar_Loaded()` event set the value for `Background` property of the Grouping Bar.
-   
+
 Please refer the below code sample.
 
 {% highlight C# %}
@@ -89,10 +89,10 @@ public partial class MainWindow: Window {
 
 **ItemsBackground**
 
-We can customize the background color of the Grouping Bar items by defining the color for `ItemsBackground` property after Grouping Bar is loaded. 
+We can customize the background color of the Grouping Bar items by defining the color for `ItemsBackground` property after Grouping Bar is loaded.
 
 Include the *System.Windows.Media* namespace in MainWindow.xaml.cs file. After defining the PivotGrid control, raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside the `GroupingBar_Loaded()` event set the value for `ItemsBackground` property of the Grouping Bar.
-   
+
 Please refer the below code sample.
 
 {% highlight C# %}
@@ -147,7 +147,7 @@ public partial class MainWindow: Window {
 
 **AllowFiltering**
 
-We can show or hide the filtering option in PivotGrid by setting the `AllowFiltering` property of Grouping Bar in PivotGrid control. 
+We can show or hide the filtering option in PivotGrid by setting the `AllowFiltering` property of Grouping Bar in PivotGrid control.
 
 To do so, define the PivotGrid control and raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside the `GroupingBar_Loaded()` event set the value for `AllowFiltering` property of the Grouping Bar.
 
@@ -265,10 +265,9 @@ The following screen shots shows the PivotGrid without the sorting icons.
 
 ![](Grouping-Bar-Images/PivotGrid without sorting icons.png)
 
-
 **AllowRemove**
 
-We can show or hide the Remove icon in PivotGrid by setting the `AllowRemove` property of Grouping Bar in PivotGrid control. 
+We can show or hide the Remove icon in PivotGrid by setting the `AllowRemove` property of Grouping Bar in PivotGrid control.
 
 To do so, define the PivotGrid control and raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside the `GroupingBar_Loaded()` event set the value for `AllowRemove` property of the Grouping Bar.
 

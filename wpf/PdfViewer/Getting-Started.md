@@ -464,7 +464,7 @@ Following steps demonstrate how to create a simple application with Essential Pd
 
    ~~~xaml
 
-		<syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
+		<Syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
 
 
    ~~~

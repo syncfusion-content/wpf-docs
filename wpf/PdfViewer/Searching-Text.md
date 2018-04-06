@@ -22,6 +22,14 @@ The PDF Viewer control also supports searching text in the PDF document with the
 
 bool IsMatchFound;
 
+//Initialize PDF Viewer.
+
+PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
+
+
+
+//Load the PDF.
+
 pdfViewerControl1.Load("../../Data/Barcode.pdf");
 
 
@@ -39,6 +47,14 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 {% highlight vbnet %}
 
 Dim IsMatchFound As Boolean
+
+'Initialize PDF Viewer.
+
+Private pdfViewerControl1 As New PdfViewerControl()
+
+
+
+'Load the PDF.
 
 pdfViewerControl1.Load("../../Data/Barcode.pdf")
 

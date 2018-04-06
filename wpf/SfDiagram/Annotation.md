@@ -9,72 +9,74 @@ documentation: ug
 
 # Annotation
 
-Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
-You can add Multiple Labels to a Node/Connector.
+Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.You can add Multiple Labels to a Node/Connector.
 
-## Create Annotation
+## Define Annotation
 
-You can add an Annotation to a Node/Connector by defining the IAnnotation object and adding that to the `Annotations` property  of Node/Connector.The `Content` property of IAnnotation defines the object to be displayed. The following code illustrates how to create an Annotation.
+'Annotation' property of Node/Connector should be initialized with the Collection. Annotation itself having the properties to update the position, alignment and interaction with this.
 
-{% highlight C# %}
+{% tabs %}
+{% highlight xaml %}
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-NodeViewModel node = new NodeViewModel()
-{
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 100,
-	OffsetY = 100,
-	Annotations=new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation",
-			Alignment=ConnectorAnnotationAlignment.Center,
-			HorizontalAlignment=HorizontalAlignment.Center,
-			VerticalAlignment=VerticalAlignment.Center,
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-
-nodes.Add(node);
-diagram.Nodes = nodes;
-
-ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
-ConnectorViewModel connector = new ConnectorViewModel()
-{
-	SourcePoint = new Point(200, 50),
-	TargetPoint = new Point(300, 150),
-	Segments=new ObservableCollection<IConnectorSegment>()
-	{
-		new OrthogonalSegment()
-		{
-			Direction=OrthogonalDirection.Bottom,
-			Length=50
-		}
-	},
-	Annotations = new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation",
-		}
-	},
-	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
-};
-
-lines.Add(connector);
-diagram.Connectors = lines;   
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+ <!--Initialize the NodeCollection-->
+ <syncfusion:SfDiagram.Nodes>
+  <syncfusion:NodeCollection>
+   <!--Initialize the Node-->
+   <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}">
+    <syncfusion:NodeViewModel.Annotations>
+     <!--Initialize the AnnotationCollection-->
+     <syncfusion:AnnotationCollection>
+      <!--Initialize the Annotation-->
+      <syncfusion:AnnotationEditorViewModel Content="Annotation">
+      </syncfusion:AnnotationEditorViewModel>
+     </syncfusion:AnnotationCollection>
+    </syncfusion:NodeViewModel.Annotations>
+   </syncfusion:NodeViewModel>
+  </syncfusion:NodeCollection>
+ </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img1.jpeg)
+{% highlight c# %}
+
+//Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    UnitHeight = 100,
+    UnitWidth = 100,
+    OffsetX = 100,
+    OffsetY = 100,
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    //Define the AnnotationCollection
+    Annotations = new AnnotationCollection()
+    {
+        //Define the Annotation
+        new AnnotationEditorViewModel()
+        {
+            Content="Annotation",
+        }
+    }
+};
+//Adding Node to Collection
+(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
+
+{% endhighlight %}
+{%  endtabs %}
+
+N> Annotation for Connector also similar to Node.
+
+![](Annotation_images/Annotation_img1.PNG)
 
 ## Alignment
 
 Annotation can be aligned relative to the Node boundaries. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
+### Annotation of Node
 
 ### Offset
 
@@ -82,162 +84,173 @@ The `Offset` property of IAnnotation is used to align the Annotations based on f
 
 The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
 
-![](Annotation_images/Annotation_img2.jpeg)
-
-By using Offset property, without creating the template we can arrange the Annotation.
-
-![](Annotation_images/Annotation_img3.jpeg)
+![](Annotation_images/Annotation_img2.PNG)
 
 ### Horizontal and Vertical alignments
 
-The `HorizontalAlignment` property of IAnnotation is used to set how the Annotation is horizontally aligned at the Annotation position determined from the fraction values. The VerticalAlignment property is used to set how Annotation is vertically aligned at the Annotation position.
+The `HorizontalAlignment` property of IAnnotation is used to set how the Annotation is horizontally aligned at the Annotation position determined from the fraction values. The `VerticalAlignment` property is used to set how Annotation is vertically aligned at the Annotation position.
 
-The following table illustrates all the possible alignments visually with **Offset (0, 0)**.
+{% tabs %}
+{% highlight c# %}
+
+//Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    UnitHeight = 100,
+    UnitWidth = 100,
+    OffsetX = 100,
+    OffsetY = 100,
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    //Define the AnnotationCollection
+    Annotations = new AnnotationCollection()
+    {
+        //Define the Annotation
+        new AnnotationEditorViewModel()
+         {
+             Content="Annotation",
+             HorizontalAlignment=HorizontalAlignment.Left,
+             VerticalAlignment=VerticalAlignment.Top,
+             Offset=new Point(0,0),
+         }
+    }
+};
+//Adding Node to Collection
+(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
+
+{% endhighlight %}
+{% endtabs %}
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](Annotation_images/Annotation_img4.jpeg) |
-| Center | | ![](Annotation_images/Annotation_img5.jpeg) |
-| Right | | ![](Annotation_images/Annotation_img6.jpeg) |
-| Left | Center | ![](Annotation_images/Annotation_img7.jpeg) |
-| Center | | ![](Annotation_images/Annotation_img8.jpeg) |
-| Right | | ![](Annotation_images/Annotation_img9.jpeg) |
-| Left | Bottom | ![](Annotation_images/Annotation_img10.jpeg) |
-| Center | | ![](Annotation_images/Annotation_img11.jpeg) |
-| Right | | ![](Annotation_images/Annotation_img12.jpeg) |
-
-The following codes illustrates how to align Annotations.
-
-{% highlight C# %}
-
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-NodeViewModel node = new NodeViewModel()
-{
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 100,
-	OffsetY = 100,
-	Annotations=new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation",
-			Offset=new Point(0,0.5),
-			Alignment=ConnectorAnnotationAlignment.Center,
-			HorizontalAlignment=HorizontalAlignment.Left,
-			VerticalAlignment=VerticalAlignment.Center,
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-
-nodes.Add(node);
-diagram.Nodes = nodes;
-
-{% endhighlight %}
-
-![](Annotation_images/Annotation_img16.jpeg)
+| Left | Top | ![](Annotation_images/Annotation_img3.PNG) |
+| Center | | ![](Annotation_images/Annotation_img4.PNG) |
+| Right | | ![](Annotation_images/Annotation_img5.PNG) |
+| Left | Center | ![](Annotation_images/Annotation_img6.PNG) |
+| Center | | ![](Annotation_images/Annotation_img7.PNG) |
+| Right | | ![](Annotation_images/Annotation_img8.PNG) |
+| Left | Bottom | ![](Annotation_images/Annotation_img9.PNG) |
+| Center | | ![](Annotation_images/Annotation_img10.PNG) |
+| Right | | ![](Annotation_images/Annotation_img11.PNG) |
 
 ### Margin
 
-**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
-
+`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
+{% tabs %}
 {% highlight C# %}
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+//Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+//Define the Node
 NodeViewModel node = new NodeViewModel()
 {
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 100,
-	OffsetY = 100,
-	Annotations=new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation",
-			Margin=new Thickness(0,10,0,0),
-			Offset=new Point(0.5,1),
-			Alignment=ConnectorAnnotationAlignment.Center,
-			HorizontalAlignment=HorizontalAlignment.Center,
-			VerticalAlignment=VerticalAlignment.Top,
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+    UnitHeight = 100,
+    UnitWidth = 100,
+    OffsetX = 100,
+    OffsetY = 100,
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    //Define the AnnotationCollection
+    Annotations = new AnnotationCollection()
+    {
+        //Define the Annotation
+        new AnnotationEditorViewModel()
+        {
+            Content="Annotation",
+            HorizontalAlignment=HorizontalAlignment.Center,
+            VerticalAlignment=VerticalAlignment.Top,
+            Offset=new Point(0.5,1),
+            Margin=new Thickness(0,10,0,0),
+        }
+    }
 };
-
-nodes.Add(node);
-diagram.Nodes = nodes;
+//Adding Node to Collection
+(diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Annotation_images/Annotation_img17.jpeg)
+![](Annotation_images/Annotation_img12.PNG)
 
-The following code illustrates how to displace Annotation through with the Margin property.
+### Annotation of Connector
 
-{% highlight C# %}
+### Offset
 
-new AnnotationEditorViewModel()
+The `Offset` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
+
+The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
+
+![](Annotation_images/Annotation_img16.PNG)
+
+### Margin
+
+`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, and Margin values.
+
+{% tabs %}
+{% highlight c# %}
+
+//Define the ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+//Define the Connector
+ConnectorViewModel connector = new ConnectorViewModel()
 {
-	Content="Annotation",
-
-	//Based on Offset value, we can align the Annotation
-	Offset = new Point(0,0),
-
-	//Align the Annotation with respect to absolute position
-	Margin = new Thickness(100,100,0,0),
-}
+    SourcePoint=new Point(200,50),
+    TargetPoint=new Point(300,150),
+    //Define the AnnotationCollection
+    Annotations = new AnnotationCollection()
+    {
+        //Define the Annotation
+        new AnnotationEditorViewModel()
+        {
+            Content = "Annotation",
+            //Initialize the Margin
+            Margin = new Thickness(120, 120, 0, 0),
+            //Initialize the Offset
+            Offset = new Point(0, 0)
+        }
+    }
+};
+//Adding Connector to Collection
+(diagram.Connectors as ObservableCollection<ConnectorViewModel>).Add(connector);
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Annotation_images/Annotation_img18.jpeg)
+![](Annotation_images/Annotation_img17.PNG)
 
 ## Wrapping
 
-When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped. The following code illustrates how to wrap a Annotation in a Node.
+When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped.
 
+{% tabs %}
 {% highlight C# %}
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-NodeViewModel node = new NodeViewModel()
+//Define the AnnotationCollection
+Annotations = new AnnotationCollection()
 {
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 100,
-	OffsetY = 100,
-	Annotations=new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation Text Wrapping",
-			WrapText=TextWrapping.Wrap
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-
-nodes.Add(node);
-diagram.Nodes = nodes;
+    //Define the Annotation
+    new AnnotationEditorViewModel()
+    {
+        Content = "Annotation with wrapping text",
+        //Define the WrapText
+        WrapText=TextWrapping.Wrap,
+    }
+}
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Annotation_images/Annotation_img19.jpeg)
-
-| Values | Description | Node | Connector|
+| Values | Description | Node |
 |---|---|---|---|
-| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img20.jpeg) | ![](Annotation_images/Annotation_img21.jpeg) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | ![](Annotation_images/Annotation_img23.jpeg) |
-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img24.png) | ![](Annotation_images/annotation_img25.png) |
+| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img18.PNG) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img19.PNG) |
+| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img20.PNG) |
 
 ## Appearance 
 
-You can change the appearance by ViewTemplate. The following code illustrates how to customize the appearance of an Annotation.
+`EditTemplate` and `ViewTemplate` can be customized using Annotation.
 
-[XAML]
-
+{% tabs %}
 {% highlight xaml %}
 
 <DataTemplate x:Key="viewtemplate">
@@ -248,250 +261,65 @@ You can change the appearance by ViewTemplate. The following code illustrates ho
 </DataTemplate>
 
 {% endhighlight %}
+{% endtabs %}
 
-[C#]
-
+{% tabs %}
 {% highlight C# %}
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-NodeViewModel node = new NodeViewModel()
+//Define the Annotation
+AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 {
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 100,
-	OffsetY = 100,
-	Annotations = new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation Text",
-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+    Content = "Annotation",
+    //Define the ViewTemplate
+    ViewTemplate = this.Resources["viewtemplate"] as DataTemplate
 };
 
-nodes.Add(node);
-diagram.Nodes = nodes;
-
 {% endhighlight %}
+{% endtabs %}
 
-![](Annotation_images/annotation_img26.png)
-
-The Appearance of the Annotation can also be customized with appearance specific properties. The following code illustrates how to customize background and border of a Annotation.
-
-[XAML]
-
-{% highlight xaml %}
-
-<DataTemplate x:Key="viewtemplate">
-  <Border BorderBrush="Black" BorderThickness="1">
-    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}"  Background="White" 
-               Foreground="Black"/>
-  </Border>
-</DataTemplate>
-
-{% endhighlight %}
-
-![](Annotation_images/annotation_img27.png)
-
-## Edit
-
-Diagram provides support to edit an Annotation at runtime, either programmatically or interactively.
-
-Double-clicking any Annotation will enables editing of that. Double-clicking the Node enables first Annotation editing. When the focus of editor is lost, the Annotation for the Node is updated.
-
-The following code illustrates how to edit the Annotation programmatically.
-
-{% highlight C# %}
-
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-NodeViewModel node = new NodeViewModel()
-{
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 200,
-	OffsetY = 200,
-	Annotations = new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation",
-			EditTemplate=this.diagram.Resources["edittemplate"] as DataTemplate,
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-NodeViewModel node1 = new NodeViewModel()
-{
-	UnitWidth = 100, 
-	UnitHeight = 100,
-	OffsetX = 350,
-	OffsetY = 200,
-	Constraints = NodeConstraints.Default | NodeConstraints.DragAnnotation,
-	Annotations = new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content="Annotation",
-			ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-
-nodes.Add(node);
-nodes.Add(node1);
-diagram.Nodes = nodes;
-
-{% endhighlight %}
-
-![](Annotation_images/annotation_img30.png)
+![](Annotation_images/Annotation_img13.PNG)
 
 ## Interaction
 
-Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction can be controlled by Annotation and it's Parent (Node/Connector). The following code example illustrates how to set `Constraints` to Annotation.
+Annotation can be Select, Drag, Resize and Rotate by using `Annotation Constraints`.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
+To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) .
 
+{% tabs %}
 {% highlight C# %}
 
-            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding".
-            NodeViewModel node = new NodeViewModel()
+AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
             {
-                OffsetX = 200,
-                OffsetY = 200,
-                UnitWidth = 100,
-                UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel.
-                Annotations = new ObservableCollection<IAnnotation>()
-                    {
-                        //Create a AnnotationEditorViewModel.
-                        new AnnotationEditorViewModel()
-                        {
-                            Content = "Annotation",
-                            //Assign Constraint to Select, Drag, Resize and Rotate Annotation.
-                            Constraints = AnnotationConstraints.Default
-                        }          
-                    }
+                Content = "Annotation",
+                Constraints = AnnotationConstraints.Default,
             };
-            //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Annotation_images/annotation_selection.png)
+![](Annotation_images/annotation _interaction.gif)
 
-## Rotation
-Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
+### Reference for Rotation
+
+ * `Rotate Reference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [Rotate Reference](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+
+{% tabs %}
 {% highlight C# %}
-//Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
-            NodeViewModel node = new NodeViewModel()
+
+AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
             {
-                OffsetX = 200,
-                OffsetY = 200,
-                UnitWidth = 100,
-                UnitHeight = 50,
-                //Initialize and Add annotation to NodeViewModel.
-                Annotations = new ObservableCollection<IAnnotation>()
-                    {
-                        //Create a AnnotationEditorViewModel
-                        new AnnotationEditorViewModel()
-                        {
-                            Content = "Annotation",
-                            //Assign Constraint to Select, Drag and Rotate Annotation.
-                            Constraints = AnnotationConstraints.Default,
-                           //This is stop the rotation of Annotation along with its Parent.
-                            RotationReference=RotationReference.Page
-                        }          
-                    }
+                Content = "Annotation",
+                Constraints = AnnotationConstraints.Default,
+                RotationReference = RotationReference.Parent,
             };
-            //Add NodeViewModel to Nodes Collection
-            (Diagram.Nodes as NodeCollection).Add(node);
-{% endhighlight %}
-
-The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).
-
-![](Annotation_images/annotation_rotation.png)
-
-The below image represents " RotationReference=RotationReference.Parent" for Annotation(Connector).
-
-![](Annotation_images/Annotation_ParentRotation.png)
-
-
-## Read Only Annotation
-
-Diagram allows to create read only Annotation. You have to set the readOnly property of Annotation to enable/disable the read only mode. The following code illustrates how to enable **ReadOnly** mode.
-
-{% highlight C# %}
-
-NodeViewModel node1 = new NodeViewModel()
-{
-	UnitWidth = 100, 
-	UnitHeight = 100,
-	OffsetX = 100,
-	OffsetY = 100,
-	Annotations = new ObservableCollection<IAnnotation>()
-	{
-		new AnnotationEditorViewModel()
-		{
-			Content = "Annotation",
-			ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
-			ReadOnly = true
-		}
-	},
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
 
 {% endhighlight %}
+{% endtabs %}
+
+* [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the action, state of action and value changes.
 
 ## Multiple Annotations
 
-You can add any number of Annotations to a Node or Connector. The following code illustrates how to add multiple Annotations to a Node.
+You can add any number of Annotations to a Node or Connector.
+For sample, please refer to [MultipleAnnotation](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/MultipleAnnotation1970891699 "MultipleAnnotation").
 
-{% highlight C# %}
-
-ObservableCollection<AnnotationEditorViewModel> annotations = new ObservableCollection<AnnotationEditorViewModel>();
-            
-AnnotationEditorViewModel annotation1 = new AnnotationEditorViewModel()
-{
-	Content = "Left",
-	ViewTemplate=this.diagram.Resources["viewtemplate"] as DataTemplate,
-	Offset = new Point(0.1, 0.12)
-};
-AnnotationEditorViewModel annotation2 = new AnnotationEditorViewModel()
-{
-	Content = "Center",
-	ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
-	Offset = new Point(0.5, 0.5)
-};
-AnnotationEditorViewModel annotation3 = new AnnotationEditorViewModel()
-{
-	Content = "Right",
-	ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
-	Offset = new Point(0.82, 0.9)
-};
-annotations.Add(annotation1);
-annotations.Add(annotation2);
-annotations.Add(annotation3);
-
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
-NodeViewModel node = new NodeViewModel()
-{
-	UnitWidth = 100,
-	UnitHeight = 100,
-	OffsetX = 200,
-	OffsetY = 200,
-	Annotations = annotations,
-	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
-};
-
-nodes.Add(node);
-diagram.Nodes = nodes;
-
-{% endhighlight %}
-
-![](Annotation_images/annotation_img31.png)
+![](Annotation_images/annotation_img21.PNG)

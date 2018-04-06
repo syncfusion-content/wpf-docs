@@ -15,24 +15,23 @@ If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<Grid>
-    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ItemSource="{Binding   Source={StaticResource data}}">
-        <syncfusion:PivotGridControl.PivotRows>
-            <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotRows>
-        <syncfusion:PivotGridControl.PivotColumns>
-            <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
-            <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
-        </syncfusion:PivotGridControl.PivotColumns>
+    <Grid>
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ItemSource="{Binding   Source={StaticResource data}}">
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Product" FieldMappingName="Product" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="Date" FieldMappingName="Date" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Total" />
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="Total" />
+            </syncfusion:PivotGridControl.PivotColumns>
 
-        <syncfusion:PivotGridControl.PivotCalculations>
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" DisplayOption="Calculations" Format="C" SummaryType="DoubleTotalSum" />
-            <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" DisplayOption="Summary" SummaryType="Count" />
-        </syncfusion:PivotGridControl.PivotCalculations>
-
-    </syncfusion:PivotGridControl>
-</Grid>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" DisplayOption="Calculations" Format="C" SummaryType="DoubleTotalSum" />
+                <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" DisplayOption="Summary" SummaryType="Count" />
+            </syncfusion:PivotGridControl.PivotCalculations>
+        </syncfusion:PivotGridControl>
+    </Grid>
 
 {% endhighlight %}
 
@@ -107,4 +106,3 @@ Data actually present in the PivotEngine but displays the calculation values onl
 Data actually present in the PivotEngine but hides all the calculation values in all the columns of the PivotGrid.
 
 ![](Display-options-Images/PivotComputationinfo using none option.png)
-

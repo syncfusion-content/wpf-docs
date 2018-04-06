@@ -23,102 +23,61 @@ Essential Grid for WPF supports virtual mode, which lets you dynamically provide
 
 In this example, the Grid Control displays 99,000,000 x 1,000,000 cells (i.e., 99 million rows and 1 million columns). It is also possible to resize millions of rows instantly without any performance hits. The data is loaded only on demand through the QueryCellInfo event and the changes are saved back to the data source by the CommitCellInfo event.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 // a really large row and column count.
-
 grid.Model.RowCount = 99000000; // 99 million
-
 grid.Model.ColumnCount = 1000000; // 1 million
 
-
-
 //Resize millions of rows instantly - pixel scrolling is updated accordingly.
-
 grid.Model.RowHeights.SetRange(10, 1999999, 28);
-
-            grid.Model.RowHeights.SetRange(21111111, 21999999, 36);
-
-
+grid.Model.RowHeights.SetRange(21111111, 21999999, 36);
 
 // fill cell contents on demand.
-
 grid.Model.QueryCellInfo += new GridQueryCellInfoEventHandler(Model_QueryCellInfo);
 
-
-
 // save back cell value into dictionary
-
 grid.Model.CommitCellInfo += new GridCommitCellInfoEventHandler(Model_CommitCellInfo);
-
 Dictionary<RowColumnIndex, object> committedValues = new Dictionary<RowColumnIndex, object>();
 
-
-
 void Model_CommitCellInfo(object sender, GridCommitCellInfoEventArgs e)
-
 {
 
-            if (e.Style.HasCellValue)
-
-            {
-
-                committedValues[e.Cell] = e.Style.CellValue;
-
-                e.Handled = true;
-
-            }
-
+    if (e.Style.HasCellValue)
+    {
+        committedValues[e.Cell] = e.Style.CellValue;
+        e.Handled = true;
+    }
 }
-
-
 
 void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-
 {
 
-            if (e.Cell.RowIndex == 0)
+    if (e.Cell.RowIndex == 0)
+    {
+        if (e.Cell.ColumnIndex > 0)
+            e.Style.CellValue = e.Cell.ColumnIndex;
+    }
 
+        else if (e.Cell.RowIndex > 0)
+        {
+
+            if (e.Cell.ColumnIndex == 0)
+                e.Style.CellValue = e.Cell.RowIndex;
+
+            else if (e.Cell.ColumnIndex > 0)
             {
 
-                if (e.Cell.ColumnIndex > 0)
+                if (committedValues.ContainsKey(e.Cell))
+                    e.Style.CellValue = committedValues[e.Cell];
 
-                    e.Style.CellValue = e.Cell.ColumnIndex;
-
-            }
-
-            else if (e.Cell.RowIndex > 0)
-
-            {
-
-                if (e.Cell.ColumnIndex == 0)
-
-                    e.Style.CellValue = e.Cell.RowIndex;
-
-                else if (e.Cell.ColumnIndex > 0)
-
-                {
-
-                    if (committedValues.ContainsKey(e.Cell))
-
-                        e.Style.CellValue = committedValues[e.Cell];
-
-                    else
-
-                        e.Style.CellValue = String.Format("{0}/{1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
-
+                else
+                    e.Style.CellValue = String.Format("{0}/{1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
                 }
-
             }
-
 }
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 ### Output
 
@@ -140,211 +99,112 @@ Placing a UIElement as soon as a cell becomes visible is a time consuming proces
 
 This mechanism will be enabled only if you set SupportsRenderOptimization property to true in the constructor.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 public class VirtualizedCellModel : GridCellModel<VirtualizedCellRenderer>
-
 {
-
 }
 
-
-
 public class VirtualizedCellRenderer : GridVirtualizingCellRenderer<TextBox>
-
 {
 
     public VirtualizedCellRenderer()
-
     {
-
         SupportsRenderOptimization = true;
-
         AllowRecycle = true;
-
         IsControlTextShown = true;
-
         IsFocusable = true;
-
     }
 
-
-
     protected override void OnRender(DrawingContext dc, RenderCellArgs rca, GridRenderStyleInfo cellInfo)
-
     {
 
         if (rca.CellUIElements != null)
-
             return;
 
-
-
         // Only if SupportsRenderOptimization is true, otherwise rca.CellVisuals is never null.
-
         string s = String.Format("Render{0}/{1}", rca.RowIndex, rca.ColumnIndex);
-
         GridTextBoxPaint.DrawText(dc, rca.CellRect, s, cellInfo);
-
     }
 
-
-
     public override void OnInitializeContent(TextBox textBox, GridRenderStyleInfo style)
-
     {
-
         base.OnInitializeContent(textBox, style);
-
-
-
         Thickness margins = style.TextMargins.ToThickness();
-
-
 
         // TextBoxView always has a minimum margin of 2 for left and right.
 
         // Margin is hard coded below so that text box behavior is properly emulated.
-
         margins.Left = Math.Max(0, margins.Left - 2);
-
         margins.Right = Math.Max(0, margins.Right - 2);
-
-
-
         textBox.Padding = margins;
-
         textBox.BorderThickness = new Thickness(0);
-
         VirtualizingCellsControl.SetWantsMouseInput(textBox, true);
-
-
-
         textBox.Text = GetControlText(style);
-
     }
-
-
 
     protected override string GetControlTextFromEditorCore(TextBox uiElement)
-
     {
-
         return uiElement.Text;
-
     }
-
-
 
     protected override void OnInitialize()
-
     {
-
         base.OnInitialize();
-
         ControlText = GetControlText(CurrentStyle);
-
     }
-
-
 
     protected override void OnWireUIElement(TextBox textBox)
-
     {
-
         base.OnWireUIElement(textBox);
-
         textBox.TextChanged += new TextChangedEventHandler(textBox_TextChanged);
-
     }
-
-
 
     protected override void OnUnwireUIElement(TextBox textBox)
-
     {
-
         base.OnUnwireUIElement(textBox);
-
         textBox.TextChanged -= new TextChangedEventHandler(textBox_TextChanged);
-
     }
 
-
-
     void textBox_TextChanged(object sender, TextChangedEventArgs e)
-
     {
-
         TextBox textBox = (TextBox)sender;
 
         if (!this.IsInArrange && IsCurrentCell(textBox))
-
         {
-
             TraceUtil.TraceCurrentMethodInfo(textBox.Text);
 
             if (!SetControlText(textBox.Text))
-
                 RefreshContent(); // reverses change.
-
         }
-
     }
-
-
 
     protected override void OnGridPreviewTextInput(TextCompositionEventArgs e)
-
     {
-
         CurrentCell.ScrollInView();
-
         CurrentCell.BeginEdit(true);
-
     }
 
-
-
     protected override bool ShouldGridTryToHandlePreviewKeyDown(KeyEventArgs e)
-
     {
 
         if (CurrentCellUIElement.IsFocused && e.Key != Key.Escape)
-
             return false;
-
-
-
         return true;
-
     }
-
-
-
 }
-
 {% endhighlight  %}
+{% endtabs %}
 
 Here is the code to bind the above virtual cell to the grid:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 grid.Model.CellModels.Add("VirtualizedCell", new VirtualizedCellModel());
-
 grid.Model.TableStyle.CellType = "VirtualizedCell";
-
 grid.Model.TableStyle.CellValue = "Edit Me!";
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)
 

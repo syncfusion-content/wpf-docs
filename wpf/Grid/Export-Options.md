@@ -35,23 +35,14 @@ You can convert the entire content of a GridData control to an Excel Spreadsheet
 
 The following code illustrates the conversion of the entire Grid content to an Excel Spreadsheet:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 gridControl.Model.ExportToExcel(@"Sample.xls", ExcelVersion.Excel97to2003);
 
-
-
-(or)
-
-
-
+//(or)
 gridControl.Model.ExportToExcel(@"Sample.xlsx", ExcelVersion.Excel2007);
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Export-Options_images/Export-Options_img1.jpeg)
 
@@ -73,67 +64,37 @@ You can convert a selected content of the grid to the specified range in an Exce
 
 Consider that you have a chart in a spreadsheet in the range [A1:I19] and you wish to populate a part of the Spreadsheet starting from E21, with the selected cell data of Grid control. You can use the following code, to achieve the scenario above mentioned:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 ExcelEngine excelEngine = new ExcelEngine();
-
 IApplication application = excelEngine.Excel;
-
 IWorkbook myWorkbook = excelEngine.Excel.Workbooks.Add();
-
 IWorksheet mySheet = myWorkbook.Worksheets[1];
-
 IChart chartShape = mySheet.Charts.Add();
-
 IChartSeries series1 = chartShape.Series.Add();
-
 series1.SerieType = ExcelChartType.Column_Clustered;
-
 chartShape.ChartTitle = "Column_Clustered";
-
 series1.Values = mySheet.Range["B1:B5"];
-
 series1.CategoryLabels = mySheet.Range["A1:A5"];
-
 Random r = new Random();
 
 for (int i = 1; i <= 4; i++)
-
 {
-
     mySheet.Range[i, 1].Number = i;
-
     mySheet.Range[i, 2].Number = r.Next(4000, 6000);
-
 }
 
 for (int i = 1; i <= 4; i++)
-
 {
-
     mySheet.Range[i + 5, 1].Number = i;
-
     mySheet.Range[i + 5, 2].Number = r.Next(4000, 6000);
-
 }
-
-
-
 IRange excelRange = mySheet.Range[21, 5];
-
 GridRangeInfoList rangeList = gridControl.Model.SelectedRanges;
-
 GridRangeInfo range = rangeList[0];
-
 gridControl.Model.ExportToExcel(range, mySheet, excelRange, @"Sample2.xls", ExcelVersion.Excel97to2003);
-
-
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Export-Options_images/Export-Options_img3.jpeg)
 
@@ -151,24 +112,15 @@ The above images shows how a part of the Grid control is exported to a specific 
 
 You can also pass the Excel Engine with the worksheet number, as illustrated by the code below:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 ExcelEngine excelEngine = new ExcelEngine();
-
 IApplication application = excelEngine.Excel;
-
 IWorkbook myWorkbook = excelEngine.Excel.Workbooks.Add();
-
 IWorksheet  mySheet = myWorkbook.Worksheets[0];
-
 gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sample.xlsx", ExcelVersion.Excel2007);
-
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ![](Export-Options_images/Export-Options_img5.jpeg)
@@ -206,23 +158,14 @@ There are two options for exporting a grid control:
 
 You can convert the entire content of a grid control to a CSV file by using the following code:
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 this.gc.Model.ExportToCSV("Sample.csv");
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 Me.gc.Model.ExportToCSV("Sample.csv")
-
-
 {% endhighlight  %}
+{% endtabs %}
 
 When the code runs, the following output displays.
 
@@ -243,42 +186,23 @@ When you are ready to export the entire grid, click Export Whole Grid; the grid 
 ### Export Selected Range
 
 You can convert selected grid content to CSV format by using the following code:
+
 {%tabs%}
-
 {% highlight c# %}
-
-
-
-
-
 GridRangeInfoList rangeList = gc.Model.SelectedRanges;
 
             if (rangeList.Count > 0)
-
             {
-
                 GridRangeInfo range = rangeList[0];
-
                 gc.Model.ExportToCSV(range, "Sample.csv");
-
 }
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 Dim rangeList As GridRangeInfoList = gc.Model.SelectedRanges
-
 If rangeList.Count > 0 Then
-
 Dim range As GridRangeInfo = rangeList(0)
-
 gc.Model.ExportToCSV(range, "Sample.csv")
-
 End If
-
 {% endhighlight  %}
 {%endtabs%}
 

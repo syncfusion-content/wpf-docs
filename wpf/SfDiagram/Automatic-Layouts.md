@@ -11,101 +11,88 @@ documentation: ug
 
 SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
-* Organization Chart
-* Directed Tree Layout
+* Hierarchical Tree Layout
 * Radial Tree
+* Organizational Layout
 
-We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initial steps for all the Layout.
+## Hierarchical Tree Layout
 
-### Create Class for Data
+The Hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
+To arrange the nodes in hierarchical structure, you need to specify the [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as hierarchical tree.
 
-Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
+N> SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
 
-{% highlight C# %}
-
-//Employee Business Object
-public class Employee
-{
-	public string Team { get; set; }
-	public string Role { get; set; }
-	public int EmpiD { get; set; }
-}
-
-//Employee Collection
-public class Employees : ObservableCollection<Employee>
-{
-}
-
-{% endhighlight %}
-
-### Initialize Data Source Settings
-
+{% tabs %}
 {% highlight xaml %}
 
-<!--Initializes the DataSourceSettings -->
-        <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="Empid" 
-        DataSource="{StaticResource Employees}" />
-        
+<local:Employees x:Key="Employees">
+<local:Employee Empid="0" Role="Project Management"></local:Employee>
+<local:Employee Empid= "1"  Role= "R and D Team" Team= "0"/>
+<local:Employee Empid= "3"  Role= "Philosophy" Team= "1"/>
+<local:Employee Empid= "4"  Role= "Organization" Team= "1"/>
+<local:Employee Empid= "156"  Role= "HR Team" Team= "0"/>
+<local:Employee Empid= "13"  Role= "Recruitment" Team= "156"/>
+<local:Employee Empid= "113"  Role= "Training" Team= "156"/>
+<local:Employee Empid= "17"  Role= "Production and Sales Team" Team= "0"/>
+<local:Employee Empid= "119"  Role= "Design" Team= "17"/>
+<local:Employee Empid= "19"  Role= "Operation" Team= "17"/>
+</local:Employees>
+<!--Initializes the Layout-->
+<syncfusion:DirectedTreeLayout x:Key="treeLayout" Orientation="TopToBottom" Type="Hierarchical"
+HorizontalSpacing="80" VerticalSpacing="50"
+SpaceBetweenSubTrees="20"/>
+
+<!--Initializes the LayoutManager-->
+<syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}" />
+
 {% endhighlight %}
+{% endtabs %}
 
-### Visualize the Node and Connector
+![](Automatic-Layouts_images/Automatic-Layouts_img8.jpg)
 
+## Radial-Tree Layout
+
+The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. 
+The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
+
+{% tabs %}
 {% highlight xaml %}
 
-<!--Style for the Node>-->
-        <Style TargetType="syncfusion:Node">
-            <Setter Property="UnitWidth" Value="100" />
-            <Setter Property="UnitHeight" Value="50" />
-            <Setter Property="FontSize" Value="14"></Setter>
-            <Setter Property="Foreground" Value="Black"></Setter>
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-            <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
-            <Setter Property="Shape">
-                <Setter.Value>
-                    <RectangleGeometry Rect="10,10,10,10"></RectangleGeometry>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="ShapeStyle">
-                <Setter.Value>
-                    <Style TargetType="Path">
-                        <Setter Property="Fill" Value="OliveDrab"></Setter>
-                        <Setter Property="Stroke" Value="Black"></Setter>
-                        <Setter Property="StrokeThickness" Value="1"></Setter>
-                        <Setter Property="Stretch" Value="Fill"></Setter>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="ContentTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Border>
-                            <TextBlock Text="{Binding Role}" TextAlignment="Center"
-                            TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Center" 								VerticalAlignment="Center"/>
-                        </Border>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+<local:Employees x:Key="Employees">
+	<local:Employee Empid="0" Role="Project Management"></local:Employee>
+	<local:Employee Empid= "1"  Role= "R and D Team" Team= "0"/>
+	<local:Employee Empid= "3"  Role= "Philosophy" Team= "1"/>
+	<local:Employee Empid= "4"  Role= "Organization" Team= "1"/>
+	<local:Employee Empid= "156"  Role= "HR Team" Team= "0"/>
+	<local:Employee Empid= "13"  Role= "Recruitment" Team= "156"/>
+	<local:Employee Empid= "113"  Role= "Training" Team= "156"/>
+	<local:Employee Empid= "17"  Role= "Production Team" Team= "0"/>
+	<local:Employee Empid= "119"  Role= "Design" Team= "17"/>
+	<local:Employee Empid= "19"  Role= "Operation" Team= "17"/>
+	<local:Employee Empid= "18"  Role= "Sales Team" Team= "0"/>
+	<local:Employee Empid= "113"  Role= "Support and Maintenance" Team= "18"/>
+	<local:Employee Empid= "117"  Role= "Customer Interaction" Team= "18"/>
+</local:Employees>
 
-        <!--< ! -Style for the Connector>-->
-        <Style TargetType="syncfusion:Connector">
-            <Setter Property="ConnectorGeometryStyle">
-                <Setter.Value>
-                    <Style TargetType="Path">
-                        <Setter Property="Stroke" Value="Black" />
-                        <Setter Property="StrokeThickness" Value="1" />
-                    </Style>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="TargetDecorator" Value="null"></Setter>
-        </Style>
+<!--Initializes the Layout-->
+<syncfusion:RadialTreeLayout x:Key="treeLayout"
+HorizontalSpacing="80" VerticalSpacing="50"
+SpaceBetweenSubTrees="20"/>
+
+<!--Initializes the LayoutManager-->
+<syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}" />
 
 {% endhighlight %}
+{% endtabs %}
+
+![](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
 
 ## Organization Layout 
 
-An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart. 
+An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization.
+For LayoutType Please refer to, [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType")
 
+{% tabs %}
 {% highlight xaml %}
 
 _//Initializes data source_
@@ -136,15 +123,16 @@ _//Initializes data source_
 <local:Employee Empid= "25"  Role= "Task Coordination" Team= "17"/>
 </local:Employees>
 
-
 <!--Initializes the Layout-->
-<layout:DirectedTreeLayout x:Key="TreeLayout" HorizontalSpacing="90" VerticalSpacing="50"
-SpaceBetweenSubTrees="20"Orientation="TopToBottom"/>
+<syncfusion:DirectedTreeLayout x:Key="treeLayout" Orientation="TopToBottom" Type="Organization"
+HorizontalSpacing="80" VerticalSpacing="50"
+SpaceBetweenSubTrees="20"/>
 
-<layout:LayoutManager x:Key="LayoutManager"
-Layout="{StaticResource TreeLayout}"/>
+<!--Initializes the LayoutManager-->
+<syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}" />
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img1.jpeg)
 
@@ -152,7 +140,8 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ## Get Layout Info
 
-User can change ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical. The following code example illustrates how to register an event and how to change ChartType and orientation.
+User can change ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical.
+For GetLayoutInfo Please refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~GetLayoutInfo_EV.html "GetLayoutInfo").
 
 **Event Arguments:**
 
@@ -162,6 +151,7 @@ User can change ChartType and Orientation by using GetLayoutInfo event of the Sf
 | | Type | Gets or sets the organizational chart type. |
 | | Orientation | Gets or sets the organizational chart orientation. |
 
+{% tabs %}
 {% highlight C# %}
 
 // Registering an event 
@@ -170,12 +160,15 @@ User can change ChartType and Orientation by using GetLayoutInfo event of the Sf
 
 void diagramcontrol_GetLayoutInfo(object sender, LayoutInfoArgs args)
 {
-	INode node = args.Item;
-	args.Type = ChartType.Alternate;
-	args.Orientation = Orientation.Vertical;
+    if (!args.HasSubTree)
+    {
+        args.Type = ChartType.Alternate;
+        args.Orientation = Orientation.Vertical;
+    }
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 The following table illustrates the different chart orientations and chart types. 
 
@@ -188,122 +181,26 @@ The following table illustrates the different chart orientations and chart types
 | | Right | Vertically arranges the children at the Right side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
 | | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
 
+## Customize Layout
 
-## Directed-Tree Layout
+Diagram layouts can be arranged at the custom positions based upon the layout bounds, margins, and alignments. For LayoutManager please refer to, [LayoutManager](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html "LayoutManager").
 
-The Directed-Tree layout mode enables you to arrange the Nodes in a tree like structure. This layout can be applied to any Diagram that comprises a directed tree graph with unique root and child Nodes. This creates the Diagrams easier because the Node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the Nodes based on the layout root.
-
-To create the Directed Tree Layout, `Type` should be set as `LayoutType.Hierarchical`.
-
-N> SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
-
-{% highlight xaml %}
-
-<local:Employees x:Key="Employees">
-<local:Employee Empid="0" Role="Project Management"></local:Employee>
-<local:Employee Empid= "1"  Role= "R and D Team" Team= "0"/>
-<local:Employee Empid= "3"  Role= "Philosophy" Team= "1"/>
-<local:Employee Empid= "4"  Role= "Organization" Team= "1"/>
-<local:Employee Empid= "156"  Role= "HR Team" Team= "0"/>
-<local:Employee Empid= "13"  Role= "Recruitment" Team= "156"/>
-<local:Employee Empid= "113"  Role= "Training" Team= "156"/>
-<local:Employee Empid= "17"  Role= "Production and Sales Team" Team= "0"/>
-<local:Employee Empid= "119"  Role= "Design" Team= "17"/>
-<local:Employee Empid= "19"  Role= "Operation" Team= "17"/>
-</local:Employees>
-<!--Initializes the Layout-->
-<layout:DirectedTreeLayout x:Key="TreeLayout" HorizontalSpacing="90" VerticalSpacing="50"
-SpaceBetweenSubTrees="20"Orientation="TopToBottom"/>
-
-<layout:LayoutManager x:Key="LayoutManager"
-Layout="{StaticResource TreeLayout}"/>
-
-{% endhighlight %}
-
-![](Automatic-Layouts_images/Automatic-Layouts_img8.jpg)
-
-## Radial-Tree Layout
-
-The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the layout root.
-
-{% highlight xaml %}
-
-<local:Employees x:Key="Employees">
-	<local:Employee Empid="0" Role="Project Management"></local:Employee>
-	<local:Employee Empid= "1"  Role= "R and D Team" Team= "0"/>
-	<local:Employee Empid= "3"  Role= "Philosophy" Team= "1"/>
-	<local:Employee Empid= "4"  Role= "Organization" Team= "1"/>
-	<local:Employee Empid= "156"  Role= "HR Team" Team= "0"/>
-	<local:Employee Empid= "13"  Role= "Recruitment" Team= "156"/>
-	<local:Employee Empid= "113"  Role= "Training" Team= "156"/>
-	<local:Employee Empid= "17"  Role= "Production Team" Team= "0"/>
-	<local:Employee Empid= "119"  Role= "Design" Team= "17"/>
-	<local:Employee Empid= "19"  Role= "Operation" Team= "17"/>
-	<local:Employee Empid= "18"  Role= "Sales Team" Team= "0"/>
-	<local:Employee Empid= "113"  Role= "Support and Maintenance" Team= "18"/>
-	<local:Employee Empid= "117"  Role= "Customer Interaction" Team= "18"/>
-</local:Employees>
-
-<!--< ! -Style for the Node>-->
-<Style TargetType="syncfusion:Node">
-	<Setter Property="UnitWidth" Value="30" />
-	<Setter Property="UnitHeight" Value="30" />
-	<Setter Property="Shape">
-	<Setter.Value>
-		<EllipseGeometry RadiusX="10" RadiusY="10"></EllipseGeometry>
-	</Setter.Value>
-	</Setter>
-	<Setter Property="ShapeStyle">
-	<Setter.Value>
-		<Style TargetType="Path">
-			<Setter Property="Fill" Value="OliveDrab"></Setter>
-			<Setter Property="Stretch" Value="Fill"></Setter>
-		</Style>
-	</Setter.Value>
-	</Setter>
-</Style>
-
-{% endhighlight %}
-
-![](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
-
-### Updating the Layout
-
-When changes are made to content in the SfDiagram. For example, linking new Nodes or adding new Connectors, the layout had to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram.
-
-{% highlight C# %}
-
-SfDiagram diagramcontrol = new SfDiagram(); 
-(diagramcontrol.LayoutManager.Layout as DirectedTreeLayout).UpdateLayout();
-
-{% endhighlight %}
-
-### Layout Bounds, Margins, and Alignments
-
-**Description**
-
-Diagram layouts can be arranged at the custom positions based upon the layout bounds, margins, and alignments.
-
-Example
-
-Layout Alignments and Bounds
-
+{% tabs %}
 {% highlight C# %}
 
 diagramcontrol.LayoutManager = new LayoutManager()
 {
 	Layout = new DirectedTreeLayout()
 	{
-       	Type = LayoutType.Hierarchical,
-	       HorizontalSpacing = 30,
-	       VerticalSpacing = 50,
+       	   Type = LayoutType.Hierarchical,
 	       HorizotalAlignment = HorizontalAlignment.Left,
-		VerticalAlignment = VerticalAlignment.Top,
+		   VerticalAlignment = VerticalAlignment.Top,
 	       Bounds = new Rect(100, 100, 500, 500),
 	       Margin = new Thickness(25, 25, 25, 25) 
 	}
 };
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Automatic-Layouts_images/Automatic-Layouts_img10.jpg)

@@ -18,7 +18,7 @@ documentation: ug
 
 The **Fields section** consists of the list of fields present in the PivotGrid including Row, Column, and Summary elements which is called as **PivotTable Field List**. A field will be added to the PivotGrid if it is checked, or it will be removed from the PivotGrid if it is unchecked. By default, fields will be added to the row label if checked, and added to the column label by simply dragging the field and dropping it onto the column label area. We also support filtering in PivotTable Field List. Filter popup will be opened while clicking on the expander icon in the right corner of each PivotTable Field List items.
 
-![](PivotSchemaDesigner-Images/FieldsSection.png)
+![FieldsSection](PivotSchemaDesigner-Images/FieldsSection.png)
 
 ## Layout Section
 
