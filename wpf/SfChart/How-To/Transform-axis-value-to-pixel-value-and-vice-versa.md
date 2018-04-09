@@ -25,9 +25,9 @@ private void LineChart_MouseMove(object sender, MouseEventArgs e)
 
             {
 
-                X = e.GetPosition(LineChart).X - LineChart.SeriesClipRect.Left-LineChart.Margin.Left,
+                X = e.GetPosition(LineChart).X - LineChart.SeriesClipRect.Left - LineChart.Margin.Left,
 
-                Y = e.GetPosition(LineChart).Y - LineChart.SeriesClipRect.Top-LineChart.Margin.Top 
+                Y = e.GetPosition(LineChart).Y - LineChart.SeriesClipRect.Top - LineChart.Margin.Top 
 
             };
 
