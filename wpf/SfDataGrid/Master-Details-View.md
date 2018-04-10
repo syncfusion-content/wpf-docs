@@ -1806,7 +1806,7 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
 
 ![](Master-Details-View_images/Master-Details-View_img13.png)
 
-[GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is a cell which is placed before each [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). By Default, the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) will be visible. You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) from view, by setting [ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property as `false`.
+[GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can show or hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property to the parent grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1814,7 +1814,19 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="True"
                         ShowDetailsViewIndentCell="False"
-                        ItemsSource="{Binding Orders}" />
+                        ItemsSource="{Binding Orders}" >
+	<syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+									   AutoGenerateColumns="True"/>
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 

@@ -436,9 +436,9 @@ Below are the limitation when using Cell Merging in SfDataGrid.
 
 ### How to 
 
-## Allow cell merging with Row Selection or AllowFrozenGroupHeaders is true
+## Allow cell merging with Row Selection or NavigationMode as Row or AllowFrozenGroupHeaders is true
 
-SfDataGrid does not allow cell merging when [SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) is `Row` or [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is `true`. You can overcome this behavior by setting [ExternalExceptionThrownEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ExternalExceptionThrownEventArgs~Handled.html) to true using [ExternalExceptionThrown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExternalExceptionThrown_EV.html) event.
+SfDataGrid does not allow cell merging when [SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) is `Row` or [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) is `Row` or [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is `true`. You can overcome this behavior by setting [ExternalExceptionThrownEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ExternalExceptionThrownEventArgs~Handled.html) to true using [ExternalExceptionThrown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExternalExceptionThrown_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
