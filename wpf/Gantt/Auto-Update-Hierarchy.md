@@ -161,7 +161,7 @@ To use the auto updating hierarchy support in an application:
 2. Create a collection of business objects to bind them as ItemsSource for the Gantt control.
 
 {% highlight c# %}		
-TaskDetails = new ObservableCollection<Task>();
+            TaskDetails = new ObservableCollection<Task>();
             TaskDetails = GetData();
 
             ObservableCollection<Task> GetData()
@@ -230,7 +230,6 @@ TaskDetails = new ObservableCollection<Task>();
                             EndDate = new DateTime(2012, 7, 12),
                             Complete = 40d,
                         });
-
                 data[2].ChildTask.Add(
                     (new Task()
                          {
@@ -240,7 +239,6 @@ TaskDetails = new ObservableCollection<Task>();
                              EndDate = new DateTime(2012, 7, 15),
                              Complete = 20d
                          }));
-
                 data[2].ChildTask.Add(
                     (new Task()
                          {

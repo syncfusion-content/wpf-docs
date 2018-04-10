@@ -53,50 +53,41 @@ ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}"/>
 
 
 
-            /// Defining the Slider
+/// Defining the Slider
 
-            Slider slider = new Slider();
+Slider slider = new Slider();
 
-            slider.Minimum = 1;
+slider.Minimum = 1;
 
-            slider.Minimum = 600;
+slider.Minimum = 600;
 
+//Hooking the value changed event of the slider
 
+slider.ValueChanged += slider_ValueChanged;
 
-            //Hooking the value changed event of the slider
+//Defining the Gantt
 
-            slider.ValueChanged += slider_ValueChanged;
+GanttControl Gantt = new GanttControl();
 
+Gantt.ItemsSource = view.GanttItemSource;
 
+Gantt.UseOnDemandSchedule = true;
 
-            //Defining the Gantt
+/// <summary>
 
-            GanttControl Gantt = new GanttControl();
+/// Handles the ValueChanged event of the slider control.
 
-            Gantt.ItemsSource = view.GanttItemSource;
+/// </summary>
 
-            Gantt.UseOnDemandSchedule = true;
+void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
 
+{
 
+//Changing the value of zoom factor
 
-        /// <summary>
+this.Gantt.ZoomFactor = (sender as Slider).Value;
 
-        /// Handles the ValueChanged event of the slider control.
-
-        /// </summary>
-
-        void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-
-        {
-
-            //Changing the value of zoom factor
-
-            this.Gantt.ZoomFactor = (sender as Slider).Value;
-
-        }
-
-
-
+}
 
 {% endhighlight  %}
 {% endtabs %}

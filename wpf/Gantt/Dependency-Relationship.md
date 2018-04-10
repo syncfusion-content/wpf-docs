@@ -222,7 +222,7 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 
 {% highlight xaml %}
 
- <Sync:GanttControl ItemsSource="{Binding TaskCollection}" >
+<Sync:GanttControl ItemsSource="{Binding TaskCollection}" >
 
             <Sync:GanttControl.TaskAttributeMapping>
 
@@ -248,7 +248,7 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 
             </Sync:GanttControl.TaskAttributeMapping>
 
-        </Sync:GanttControl>
+</Sync:GanttControl>
  
 {% endhighlight  %}
 

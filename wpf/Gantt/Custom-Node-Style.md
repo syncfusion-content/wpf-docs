@@ -387,49 +387,45 @@ The following code illustrates how to add the styles to the application:
  <sync:TaskAttributeMapping TaskIdMapping="Id"
 
 
-  TaskNameMapping="Name"
+ TaskNameMapping="Name"
 
 
-  StartDateMapping="StDate" 
+ StartDateMapping="StDate" 
 
 
-  ChildMapping="ChildTask"
+ ChildMapping="ChildTask"
 
 
-  FinishDateMapping="EndDate"
+ FinishDateMapping="EndDate"
 
 
-   DurationMapping="Duration"                                            
+ DurationMapping="Duration"                                            
 
 
-   ProgressMapping="Complete"
+ ProgressMapping="Complete"
 
 
-  PredecessorMapping="Predecessor">
+ PredecessorMapping="Predecessor">
+
+ </sync:TaskAttributeMapping>
 
 
+ </sync:GanttControl.TaskAttributeMapping>
 
 
-
-  </sync:TaskAttributeMapping>
-
-
-  </sync:GanttControl.TaskAttributeMapping>
+ <sync:GanttControl.Resources>
 
 
-   <sync:GanttControl.Resources>
+ <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
 
 
-   <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
+ <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
 
 
-  <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
+ </sync:GanttControl.Resources>
 
 
-  </sync:GanttControl.Resources>
-
-
-   </sync:GanttControl>
+</sync:GanttControl>
 
 {% endhighlight  %}
 
