@@ -61,12 +61,12 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
 The following code illustrates this.
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
 
- <gantt:GanttControl x:Name="Gantt"
+<gantt:GanttControl x:Name="Gantt"
 
 Grid.Row="1"
 
@@ -162,7 +162,7 @@ To populate the Resource view Gantt with a date-time schedule:
 The following code sample illustrates this:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 

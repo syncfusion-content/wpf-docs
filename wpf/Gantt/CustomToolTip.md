@@ -34,7 +34,7 @@ DataTemplate</td></tr>
 
 The following code illustrates how to add a custom tooltip to the Gantt control.
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -68,7 +68,7 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
                 <TextBlock Margin="1" Text="Progress:" Grid.Column="0"                           Grid.Row="4" VerticalAlignment="Center"                           FontFamily="Verdana" />
                 <ProgressBar Margin="1" Height="25" Value="{Binding Progress}"                            Grid.Column="1" VerticalAlignment="Center"                             Grid.Row="4" />
             </Grid> 
-        </DataTemplate>
+</DataTemplate>
 
 <Sync:GanttControl x:Name="Gantt" ToolTipTemplate="{StaticResource ToolTipTemp}"/>
 

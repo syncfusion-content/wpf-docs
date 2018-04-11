@@ -31,7 +31,7 @@ To add the built-in zooming:
 3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 <Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
@@ -53,50 +53,41 @@ ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}"/>
 
 
 
-            /// Defining the Slider
+/// Defining the Slider
 
-            Slider slider = new Slider();
+Slider slider = new Slider();
 
-            slider.Minimum = 1;
+slider.Minimum = 1;
 
-            slider.Minimum = 600;
+slider.Minimum = 600;
 
+//Hooking the value changed event of the slider
 
+slider.ValueChanged += slider_ValueChanged;
 
-            //Hooking the value changed event of the slider
+//Defining the Gantt
 
-            slider.ValueChanged += slider_ValueChanged;
+GanttControl Gantt = new GanttControl();
 
+Gantt.ItemsSource = view.GanttItemSource;
 
+Gantt.UseOnDemandSchedule = true;
 
-            //Defining the Gantt
+/// <summary>
 
-            GanttControl Gantt = new GanttControl();
+/// Handles the ValueChanged event of the slider control.
 
-            Gantt.ItemsSource = view.GanttItemSource;
+/// </summary>
 
-            Gantt.UseOnDemandSchedule = true;
+void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
 
+{
 
+//Changing the value of zoom factor
 
-        /// <summary>
+this.Gantt.ZoomFactor = (sender as Slider).Value;
 
-        /// Handles the ValueChanged event of the slider control.
-
-        /// </summary>
-
-        void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-
-        {
-
-            //Changing the value of zoom factor
-
-            this.Gantt.ZoomFactor = (sender as Slider).Value;
-
-        }
-
-
-
+}
 
 {% endhighlight  %}
 {% endtabs %}
@@ -140,7 +131,7 @@ To add custom zooming:
 5. Handle the ZoomChanged event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 

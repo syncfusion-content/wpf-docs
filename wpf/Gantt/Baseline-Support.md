@@ -70,7 +70,7 @@ To add Baseline Table View to an application:
 The following codes illustrate this:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
@@ -227,7 +227,7 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png)
+![](Baseline-Support_images/Baseline-Support_img2.png)
 
 
 
@@ -265,7 +265,7 @@ To add the On-Demand Baseline Column Inclusion to an application you need to ena
 
 The following codes illustrate Adding On-Demand Baseline Column Inclusion to an Application:
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -381,7 +381,7 @@ To add Project Statistics to an application:
 The following codes illustrate adding Project Statistics to an application:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 
