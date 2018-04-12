@@ -33,12 +33,12 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl Gantt = new GanttControl();
-ViewModel model = new ViewModel();
-this.Gantt.DataContext = model;
-Gantt.ItemsSource = model.GanttItemSource;
+    GanttControl Gantt = new GanttControl();
+    ViewModel model = new ViewModel();
+    this.Gantt.DataContext = model;
+    Gantt.ItemsSource = model.GanttItemSource;
 
- public class ViewModel
+    public class ViewModel
     {
         public ObservableCollection<TaskDetails> TaskCollection { get; set; }
         public ViewModel()

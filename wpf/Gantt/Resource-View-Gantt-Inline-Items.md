@@ -66,7 +66,7 @@ The following code illustrates this.
 
 
 
- <gantt:GanttControl x:Name="Gantt"
+<gantt:GanttControl x:Name="Gantt"
 
 Grid.Row="1"
 
