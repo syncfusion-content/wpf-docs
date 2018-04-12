@@ -807,11 +807,13 @@ Gantt Control with Auto Updated Hierarchy
 
 To view samples:
 
-1. Open Syncfusion Dashboard.
-2. Select UI > WPF.
-3. Click Run Samples.
+1. Go to the Syncfusion Essential Studio installed location. 
+    Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
+2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
+3. Click Run Samples for WPF under User Interface Edition panel .
 4. Select Gantt.
-5. Expand Data Binding, and then select External Property Binding.
+5. Expand the Data Binding Features item in the Sample Browser.
+6. Choose the External Property Binding Demo sample to launch.
 
 
 

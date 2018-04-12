@@ -147,11 +147,13 @@ Exported document opened in MS Project
 
 To view samples: 
 
-1. Select Start -> Programs -> Syncfusion -> Essential Studio x.x.xx -> Dashboard.
-1. Click Run Samples for WPF under User Interface Edition panel .
-2. Select Gantt.
-3. Expand the Import Export Features item in the Sample Browser.
-4. Choose the Import Export Demo samples to launch.
+1. Go to the Syncfusion Essential Studio installed location. 
+    Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
+2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
+3. Click Run Samples for WPF under User Interface Edition panel .
+4. Select Gantt.
+5. Expand the Import Export Features item in the Sample Browser.
+6. Choose the Import Export Demo sample to launch.
 
 
 
