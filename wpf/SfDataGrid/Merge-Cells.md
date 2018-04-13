@@ -434,11 +434,11 @@ Below are the limitation when using Cell Merging in SfDataGrid.
 4. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
 5. With DetailsViewDefinition, Cell merging is not supported if [HideEmptyGridViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfgridconverter/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HideEmptyGridViewDefinition.html) is `false` or record has DetailsViewDataGrid.
 
-### How to 
+## How to 
 
-## Allow cell merging with Row Selection or NavigationMode as Row or AllowFrozenGroupHeaders is true
+### Allow cell merging with Row Selection or NavigationMode as Row or AllowFrozenGroupHeaders is true
 
-SfDataGrid does not allow cell merging when [SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) is `Row` or [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) is `Row` or [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is `true`. You can overcome this behavior by setting [ExternalExceptionThrownEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ExternalExceptionThrownEventArgs~Handled.html) to true using [ExternalExceptionThrown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExternalExceptionThrown_EV.html) event.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid.html) does not allow cell merging when [SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) is `Row` or [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) is `Row` or [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is `true`. You can overcome this behavior by setting [ExternalExceptionThrownEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ExternalExceptionThrownEventArgs~Handled.html) to true using [ExternalExceptionThrown](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExternalExceptionThrown_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -446,9 +446,7 @@ dataGrid.ExternalExceptionThrown += dataGrid_ExternalExceptionThrown;
  
 private void dataGrid_ExternalExceptionThrown(ExternalExceptionThrownEventArgs args) 
 { 
-    if (args.Exception is NotSupportedException && 
-        args.Exception.Message == "Merged Cell will not support when SfDataGrid.SelectionUnit is Row or Any, or  
-                                   SfDataGrid.NavigationMode is Row or SfDataGrid.AllowFrozenGroupedHeaders is true") 
+    if (args.Exception is NotSupportedException && args.Exception.Message == "Merged Cell will not support when SfDataGrid.SelectionUnit is Row or Any, or SfDataGrid.NavigationMode is Row or SfDataGrid.AllowFrozenGroupedHeaders is true") 
     { 
         args.Handled = true; 
     } 
