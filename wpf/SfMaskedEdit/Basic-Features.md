@@ -13,12 +13,18 @@ documentation: ug
 
 To mask the input, set the MaskType and Mask property as follows:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
 <syncfusion:SfMaskedEdit MaskType="Simple" Mask="00/00/0000"  HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
 {% endhighlight %}
 
+{% endtabs %}
+
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -32,6 +38,8 @@ maskedEdit.Mask=”00/00/0000”;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 This mask expression allows only numeric inputs in the places of 0.
 
@@ -40,6 +48,8 @@ This mask expression allows only numeric inputs in the places of 0.
 Set the Value property as follows:
 
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
@@ -47,6 +57,10 @@ Set the Value property as follows:
 <syncfusion:SfMaskedEdit MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -62,10 +76,14 @@ maskedEdit.Value=”14/11/2014”;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Setting Prompt Char
 
 ### Set the PromptChar property as follows
 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -75,6 +93,10 @@ maskedEdit.Value=”14/11/2014”;
 <syncfusion:SfMaskedEdit  MaskType="Simple" Mask="00/00/0000" PromptChar="*"  HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -90,6 +112,8 @@ maskedEdit.PromptChar=”*”;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 By default, the prompt character is ‘_’.
 
@@ -97,12 +121,18 @@ By default, the prompt character is ‘_’.
 
 ### Set the Watermark property as follows
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
   <syncfusion:SfMaskedEdit  MaskType="Simple" Mask="00/00/0000" Watermark="Mask"  HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -117,5 +147,7 @@ maskedEdit.Mask=”00/00/0000”;
 maskedEdit.Watermark=”Type here”;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 

@@ -34,7 +34,7 @@ DataTemplate</td></tr>
 
 The following code illustrates how to add a custom tooltip to the Gantt control.
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -68,7 +68,7 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
                 <TextBlock Margin="1" Text="Progress:" Grid.Column="0"                           Grid.Row="4" VerticalAlignment="Center"                           FontFamily="Verdana" />
                 <ProgressBar Margin="1" Height="25" Value="{Binding Progress}"                            Grid.Column="1" VerticalAlignment="Center"                             Grid.Row="4" />
             </Grid> 
-        </DataTemplate>
+</DataTemplate>
 
 <Sync:GanttControl x:Name="Gantt" ToolTipTemplate="{StaticResource ToolTipTemp}"/>
 
@@ -91,11 +91,13 @@ Custom ToolTip Demo
 
 To view samples: 
 
-1. Select Start -> Programs -> Syncfusion -> Essential Studio x.x.xx -> Dashboard.
-1. Click Run Samples for WPF under User Interface Edition panel .
-2. Select Gantt.
-3. Expand the Interactive Features item in the Sample Browser.
-4. Choose the CustomToolTip samples to launch.
+1. Go to the Syncfusion Essential Studio installed location. 
+    Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
+2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
+2. Click Run Samples for WPF under User Interface Edition panel .
+3. Select Gantt.
+4. Expand the Interactive Features item in the Sample Browser.
+5. Choose the CustomToolTip samples to launch.
 
 
 

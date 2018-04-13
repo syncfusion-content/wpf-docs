@@ -70,7 +70,7 @@ To add Baseline Table View to an application:
 The following codes illustrate this:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
@@ -227,7 +227,7 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png)
+![](Baseline-Support_images/Baseline-Support_img2.png)
 
 
 
@@ -265,7 +265,7 @@ To add the On-Demand Baseline Column Inclusion to an application you need to ena
 
 The following codes illustrate Adding On-Demand Baseline Column Inclusion to an Application:
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -331,11 +331,13 @@ this.Gantt.ShowAddNewColumn = true;
 
 To view samples:
 
-1. Select Start -> Programs -> Syncfusion -> Essential Studio x.x.xx -> Dashboard.
-2. Click Run Samples for WPF under User Interface Edition panel.
-3. Select Gantt.
-4. Expand the Baseline Support item in the Sample Browser.
-5. Choose the Baseline Table View sample to launch.
+1. Go to the Syncfusion Essential Studio installed location. 
+    Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
+2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
+3. Click Run Samples for WPF under User Interface Edition panel.
+4. Select Gantt.
+5. Expand the Baseline Support item in the Sample Browser.
+6. Choose the Baseline Table View sample to launch.
 
 ## Project Statistics
 
@@ -381,7 +383,7 @@ To add Project Statistics to an application:
 The following codes illustrate adding Project Statistics to an application:
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 
 
 

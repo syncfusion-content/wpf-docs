@@ -61,12 +61,12 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
 The following code illustrates this.
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
 
- <gantt:GanttControl x:Name="Gantt"
+<gantt:GanttControl x:Name="Gantt"
 
 Grid.Row="1"
 
@@ -162,7 +162,7 @@ To populate the Resource view Gantt with a date-time schedule:
 The following code sample illustrates this:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -244,10 +244,13 @@ Chart Region: The chart will display only the information about the team and the
 
 To view samples: 
 
-1. Open Syncfusion Dashboard.
-2. Select User Interface>WPF.
-3. Click Run Samples.
-1. Navigate to Gantt>Data Binding Item>Resource View Gantt sample.
+1. Go to the Syncfusion Essential Studio installed location. 
+    Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
+2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
+3. Click Run Samples for WPF under User Interface Edition panel.
+4. Select Gantt.
+5. Expand the Data Binding item in the Sample Browser.
+6. Choose the Resource View Gantt sample to launch. 
 
 
 

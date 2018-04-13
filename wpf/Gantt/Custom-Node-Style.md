@@ -54,7 +54,7 @@ MileStone</td></tr>
 The following code illustrates how to define style:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -370,7 +370,7 @@ The following code illustrates how to define style:
 The following code illustrates how to add the styles to the application:
 
 
-{% highlight html %}
+{% highlight xaml %}
 
 
 
@@ -387,49 +387,45 @@ The following code illustrates how to add the styles to the application:
  <sync:TaskAttributeMapping TaskIdMapping="Id"
 
 
-  TaskNameMapping="Name"
+ TaskNameMapping="Name"
 
 
-  StartDateMapping="StDate" 
+ StartDateMapping="StDate" 
 
 
-  ChildMapping="ChildTask"
+ ChildMapping="ChildTask"
 
 
-  FinishDateMapping="EndDate"
+ FinishDateMapping="EndDate"
 
 
-   DurationMapping="Duration"                                            
+ DurationMapping="Duration"                                            
 
 
-   ProgressMapping="Complete"
+ ProgressMapping="Complete"
 
 
-  PredecessorMapping="Predecessor">
+ PredecessorMapping="Predecessor">
+
+ </sync:TaskAttributeMapping>
 
 
+ </sync:GanttControl.TaskAttributeMapping>
 
 
-
-  </sync:TaskAttributeMapping>
-
-
-  </sync:GanttControl.TaskAttributeMapping>
+ <sync:GanttControl.Resources>
 
 
-   <sync:GanttControl.Resources>
+ <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
 
 
-   <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
+ <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
 
 
-  <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
+ </sync:GanttControl.Resources>
 
 
-  </sync:GanttControl.Resources>
-
-
-   </sync:GanttControl>
+</sync:GanttControl>
 
 {% endhighlight  %}
 
@@ -452,11 +448,13 @@ Custom Node Style
 
 To view samples: 
 
-1. Select Start -> Programs -> Syncfusion -> Essential Studio x.x.xx -> Dashboard.
-2. Click Run Samples for WPF under User Interface Edition panel.
-3. Select Gantt.
-4. Expand the Styles item in the Sample Browser.
-5. Choose the Custom Node Style sample to launch.
+1. Go to the Syncfusion Essential Studio installed location. 
+    Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
+2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
+3. Click Run Samples for WPF under User Interface Edition panel.
+4. Select Gantt.
+5. Expand the Styles item in the Sample Browser.
+6. Choose the Custom Node Style sample to launch.
 
 
 

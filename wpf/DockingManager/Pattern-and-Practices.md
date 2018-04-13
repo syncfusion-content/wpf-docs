@@ -862,4 +862,6 @@ The final output of application is given below:
 
 ![](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
+#### **Sample link:** [PRISM Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PRISM_6_DockingManager_Demo1726639343.zip)
+
 
