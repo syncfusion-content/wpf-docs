@@ -7,7 +7,7 @@ control: SfSpreadsheet
 documentation: ug
 ---
 
-# Limitations
+# Limitation
 
 ## Release memory held by AutomationPeer
 
@@ -17,17 +17,17 @@ Create a class derived from `WindowAutomationPeer` and override it's `GetCh
 
 {% tabs %}
 {% highlight c# %}
-
 public class FakeWindowsPeer : WindowAutomationPeer
 {
+
     public FakeWindowsPeer (Window window): base(window)
     { }
+
     protected override List<AutomationPeer> GetChildrenCore()
     {
         return null;
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,18 +35,18 @@ Now override the `OnCreateAutomationPeer` of the window and it returns th
 
 {% tabs %}
 {% highlight c# %}
-
 public partial class MainWindow : Window
 {
+
     public MainWindow()
     {
         InitializeComponent();
     }
+
     protected override AutomationPeer OnCreateAutomationPeer()
     {
         return new FakeWindowsPeer(this);
     }
 }
-
 {% endhighlight %}
 {% endtabs %}

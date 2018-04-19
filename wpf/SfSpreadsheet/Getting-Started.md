@@ -96,9 +96,7 @@ _For_ _Spreadsheet_
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheet x:Name = spreadsheet />
-    
+<syncfusion:SfSpreadsheet x:Name = spreadsheet />
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,9 +108,7 @@ _For_ _Ribbon_
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheetRibbon DataContext= "{Binding ElementName=spreadsheet}"  />
-                                                                                                             
+<syncfusion:SfSpreadsheetRibbon DataContext= "{Binding ElementName=spreadsheet}"  />
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,64 +121,37 @@ Spreadsheet is available in the following namespace “_Syncfusion_._UI_._Xaml_.
 _For_ _Spreadsheet_
 
 {% tabs %}
-
 {% highlight xaml %}
-
-    <Window x:Class="SpreadsheetDemo.MainWindow"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-
-    xmlns:mc="http://schemas.openxmlformats.org/markup- compatibility/2006"
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    syncfusion:SkinStorage.VisualStyle="Office2013"
-
-    mc:Ignorable="d">
-
-    <syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Visible"/>
-
-    </Window>
-    
+<Window x:Class="SpreadsheetDemo.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup- compatibility/2006"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+syncfusion:SkinStorage.VisualStyle="Office2013"
+mc:Ignorable="d">
+<syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Visible"/>
+</Window>
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfSpreadsheet spreadsheet = new SfSpreadsheet();
-
 this.grid.Children.Add(spreadsheet);
-
 {% endhighlight %}
-
 {% endtabs %}
 
 N> To add the `SfSpreadsheetRibbon` in your application, use the `RibbonWindow` since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:RibbonWindow x:Class="SpreadsheetDemo.MainWindow"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    syncfusion:SkinStorage.VisualStyle="Office2013"
-
-    mc:Ignorable="d">
-
-    </syncfusion:RibbonWindow>
-
+<syncfusion:RibbonWindow x:Class="SpreadsheetDemo.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+syncfusion:SkinStorage.VisualStyle="Office2013"
+mc:Ignorable="d">
+</syncfusion:RibbonWindow>
 {% endhighlight %}
 {% endtabs %}
 
@@ -196,9 +165,7 @@ A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight c# %}
-
-    spreadsheet.Create(2);
-
+spreadsheet.Create(2);
 {% endhighlight %}
 {% endtabs %}
 
@@ -208,27 +175,20 @@ The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.s
 
 {% tabs %}
 {% highlight c# %}
-
 //Using Stream,
-
- spreadsheet.Open (Stream file);
+spreadsheet.Open (Stream file);
 
 //Using String,
-
- spreadsheet.Open (string file);
+spreadsheet.Open (string file);
 
 //Using Workbook,
-
- spreadsheet.Open(IWorkbook workbook);
-      
+spreadsheet.Open(IWorkbook workbook);
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-
-    spreadsheet.Open (@"..\..\Data\Outline.xlsx");
-
+spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,9 +203,7 @@ The Excel workbook can be saved in SfSpreadsheet using [Save](http://help.syncfu
 
 {% tabs %}
 {% highlight c# %}
-
-    spreadsheet.Save();
-
+spreadsheet.Save();
 {% endhighlight %}
 {% endtabs %}
 
@@ -255,19 +213,14 @@ The `SaveAs` method in SfSpreadsheet can be used in various ways,
 
 {% tabs %}
 {% highlight c# %}
-
 //Using Stream,
-
- spreadsheet.SaveAs (Stream file);
+spreadsheet.SaveAs (Stream file);
 
 //Using String,
-
- spreadsheet.SaveAs (string file);
+spreadsheet.SaveAs (string file);
 
 //For Dialog box,
-
- spreadsheet.SaveAs();
-      
+spreadsheet.SaveAs();
 {% endhighlight %}
 {% endtabs %}
 
@@ -283,7 +236,6 @@ Create an instance of Syncfusion.UI.Xaml.SpreadsheetHelper.[GraphicChartCellRend
 
 {% tabs %}
 {% highlight c# %}
-
 public MainWindow()
 {
   InitializeComponent();
@@ -291,7 +243,6 @@ public MainWindow()
   //For importing charts,
   this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -301,7 +252,6 @@ Create an instance of Syncfusion.UI.Xaml.SpreadsheetHelper.[SparklineCellRendere
 
 {% tabs %}
 {% highlight c# %}
-
 public MainWindow()
 {
   InitializeComponent();
@@ -309,6 +259,5 @@ public MainWindow()
   //For importing sparklines,
   this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
 }
-
 {% endhighlight %}
 {% endtabs %}

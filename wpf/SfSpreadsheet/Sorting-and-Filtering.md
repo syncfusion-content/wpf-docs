@@ -16,19 +16,12 @@ This section explains about sorting and filtering functionalities in the SfSprea
 By default, Filtering support will be enabled in the SfSpreadsheet, but if you want to disable the Filtering in SfSpreadsheet, set the `AllowFiltering` property of the `SfSpreadsheet` to be false.
 
 {% tabs %}
-
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheet x:Name="spreadsheet" AllowFiltering="False"/>
-
+<syncfusion:SfSpreadsheet x:Name="spreadsheet" AllowFiltering="False"/>
 {% endhighlight %}
-
 {% highlight c# %}
-
 spreadsheet.AllowFiltering = false;
-
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Programmatic Sorting and Filtering
@@ -39,7 +32,6 @@ Programmatically sort the data while importing the workbook by using XlsIO in th
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
@@ -51,7 +43,6 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
     ISortField sortField = sorter.SortFields.Add(1, SortOn.Values, OrderBy.Ascending);
     sorter.Sort();
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,7 +52,6 @@ Programmatically filter the data while importing the workbook by using XlsIO in 
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
@@ -71,7 +61,6 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
     IAutoFilter filter = spreadsheet.Workbook.ActiveSheet.AutoFilters[0];
     filter.AddTextFilter("1");
 } 
-
 {% endhighlight %}
 {% endtabs %}
 

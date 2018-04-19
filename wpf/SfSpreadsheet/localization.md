@@ -21,14 +21,11 @@ Setting of the culture information,
 
 {% tabs %}
 {% highlight c# %}
-   
 public MainWindow()
 {
     System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
-
     InitializeComponent();
 }
-
 {% endhighlight %}
 {% endtabs %}
 
