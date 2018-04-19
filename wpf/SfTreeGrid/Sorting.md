@@ -23,7 +23,7 @@ SfTreeGrid allows you to sort the data against one or more columns either in asc
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.AllowSorting = true;
+this.treeGrid.AllowSorting = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -50,8 +50,8 @@ In another way, you can enable or disable the sorting for particular column by s
 {% endhighlight %}
 {% highlight c# %}
 
-	this.treeGrid.Columns["FirstName"].AllowSorting = true;
-	this.treeGrid.Columns["LastName"].AllowSorting = false;
+this.treeGrid.Columns["FirstName"].AllowSorting = true;
+this.treeGrid.Columns["LastName"].AllowSorting = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -165,8 +165,9 @@ You can unsort the data by removing the corresponding `SortColumnDescription` fr
 {% highlight c# %}
 
 var sortColumnDescription = this.treeGrid.SortColumnDescriptions.FirstOrDefault(col => col.ColumnName == "FirstName");
+
 if (sortColumnDescription != null)
-		  this.treeGrid.SortColumnDescriptions.Remove(sortColumnDescription);
+    this.treeGrid.SortColumnDescriptions.Remove(sortColumnDescription);
 			  
 {% endhighlight %}
 {% endtabs %}
@@ -207,6 +208,7 @@ In the below code snippet, `FirstName` property is compared based on its string 
 
 public class CustomSortComparer : IComparer<object>, ISortDirection
 {
+
 	public int Compare(object x, object y)
 	{
 		var item1 = x as EmployeeInfo;
@@ -214,14 +216,17 @@ public class CustomSortComparer : IComparer<object>, ISortDirection
 		var value1 = item1.FirstName;
 		var value2 = item2.FirstName;
 		int c = 0;
+
 		if (value1 != null && value2 == null)
 		{
 			c = 1;
 		}
+
 		else if (value1 == null && value2 != null)
 		{
 			c = -1;
 		}
+
 		else if (value1 != null && value2 != null)
 		{
 			c = value1.Length.CompareTo(value2.Length);
@@ -235,6 +240,7 @@ public class CustomSortComparer : IComparer<object>, ISortDirection
 
 	//Get or Set the SortDirection value
 	private ListSortDirection _SortDirection;
+
 	public ListSortDirection SortDirection
 	{
 		get { return _SortDirection; }
@@ -295,6 +301,7 @@ this.treeGrid.SortColumnsChanging += TreeGrid_SortColumnsChanging;
 
 private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
 {
+
 	if (e.AddedItems[0].ColumnName == "FirstName")
 	{
 		e.Cancel = true;
