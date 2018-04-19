@@ -30,13 +30,9 @@ For single cell
 
 {% tabs %}
 {% highlight c# %}
-
 IRange range = spreadsheet.ActiveSheet.Range["A5"];
-
 range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
-
 spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,7 +40,6 @@ For selected range of cells,
 
 {% tabs %}
 {% highlight c# %}
-
 var selectedRanges = spreadsheet.ActiveGrid.SelectedRanges;
 
 foreach (var range in selectedRanges)
@@ -53,7 +48,6 @@ foreach (var range in selectedRanges)
   spreadsheet.ActiveSheet.Range[cell].CellStyle.ColorIndex = ExcelKnownColors.Blue;
   spreadsheet.ActiveGrid.InvalidateCell(range, true);
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,40 +57,30 @@ SfSpreadsheet allows the user to apply the font settings such as font color, fon
 
 {% tabs %}
 {% highlight c# %}
-
 IRange range = spreadsheet.Workbook.Worksheets[0].Range["A1:B5"];
 var gridRange = GridExcelHelper.ConvertExcelRangeToGridRange(range);
 
 //Setting the Font Family Name,
-
 range.CellStyle.Font.FontName = "Arial Black";
 
 //Setting the Font Styles,
-
 range.CellStyle.Font.Bold = true;
-
 range.CellStyle.Font.Italic = true;
 
 //Setting the Font Size,
-
 range.CellStyle.Font.Size = 18;
 
 //Setting the Font Effects,
-
 range.CellStyle.Font.Strikethrough = true;
 
 //Setting the UnderLine Types,
-
 range.CellStyle.Font.Underline = ExcelUnderline.Single;
 
 //Setting the Font Color,
-
 range.CellStyle.Font.Color = ExcelKnownColors.Blue;
 
 //Invalidating the range, to update in view,
-
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,22 +90,18 @@ SfSpreadsheet allows the user to apply the borders at runtime for particular cel
 
 {% tabs %}
 {% highlight c# %}
-
 //For a single cell,
-
 IRange range = spreadsheet.Workbook.Worksheets[0].Range["A5"];
 range.Borders.LineStyle = ExcelLineStyle.Dash_dot;
 range.Borders.Color = ExcelKnownColors.Gold;
 spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 //For a range of cells,
-
 IRange excelRange = spreadsheet.Workbook.Worksheets[0].Range["C3:D8"];
 excelRange.BorderAround(ExcelLineStyle.Double, ExcelKnownColors.Green);
 excelRange.BorderInside(ExcelLineStyle.Dotted, ExcelKnownColors.Tan);
 var gridRange = GridExcelHelper.ConvertExcelRangeToGridRange(excelRange);
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,19 +111,15 @@ SfSpreadsheet allows the user to align the content of the cell. The alignment op
 
 {% tabs %}
 {% highlight c# %}
-
 //Applying Horizontal Alignment for the cell "A2",
-
 spreadsheet.Workbook.Worksheets[0].Range["A2"].CellStyle.HorizontalAlignment = ExcelHAlign.HAlignCenter;
 spreadsheet.ActiveGrid.InvalidateCell(2,1);
 
 //Applying Vertical Alignment for the cell "B2",
-
 spreadsheet.Workbook.Worksheets[0].Range["B2"].CellStyle.VerticalAlignment = ExcelVAlign.VAlignBottom;
 spreadsheet.ActiveGrid.InvalidateCell(2,2);
 
 //Applying Orientation for the selected cell or ranges,
-
 spreadsheet.FormatOrientation(90);
 
 //For Indentation,
@@ -156,7 +132,6 @@ spreadsheet.FormatIndent(false);
 
 //Level of indent for selected ranges or cell,
 spreadsheet.FormatIndentLevel(3);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,13 +141,11 @@ SfSpreadsheet allows the user to wrap the text in the cell, if the text is too l
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.ActiveSheet.Range["C4"].Text = "Wrapping the content in the cell";
 spreadsheet.ActiveSheet.Range["C4"].WrapText = true;
 spreadsheet.ActiveSheet.AutofitRow(4);
 spreadsheet.ActiveGrid.SetRowHeight(4, 4, spreadsheet.ActiveSheet.GetRowHeightInPixels(4));
 spreadsheet.ActiveGrid.InvalidateCell(4, 3);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,19 +159,12 @@ For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](ht
 
 {% tabs %}
 {% highlight c# %}
-
 var gridRange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
 var excelRange = gridRange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
-
 var coverCell = new CoveredCellInfo(gridRange.Top, gridRange.Left, gridRange.Bottom, gridRange.Right);
-
 spreadsheet.ActiveGrid.CoveredCells.Add(coverCell);
-
 spreadsheet.ActiveSheet.Range[excelRange].Merge();
-
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,17 +176,11 @@ For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](h
 
 {% tabs %}
 {% highlight c# %}
-
 var gridRange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
 var excelRange = gridRange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
-
 spreadsheet.ActiveGrid.CoveredCells.Clear(gridRange);
-
 spreadsheet.ActiveSheet.Range[excelRange].UnMerge();
-
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -230,7 +190,6 @@ SfSpreadsheet allows the user to view the numbers in the cells with different fo
 
 {% tabs %}
 {% highlight c# %}
-
 //Applying Percentage format for the selected ranges at runtime,
 spreadsheet.Workbook.ActiveSheet.Range["C3"].NumberFormat = "0.00%";
 spreadsheet.ActiveGrid.InvalidateCell(3,3);
@@ -242,8 +201,7 @@ spreadsheet.ActiveGrid.InvalidateCell(1,4);
 //Applying Time format for the selected ranges at runtime,
 spreadsheet.Workbook.ActiveSheet.Range["D4"].NumberFormat = "[$-F400]h:mm:ss AM/PM";
 spreadsheet.ActiveGrid.InvalidateCell(3,4);
-  
-{% endhighlight %}
+  {% endhighlight %}
 {% endtabs %}
 
 The different types of number formats with its notation are
@@ -301,10 +259,8 @@ SfSpreadsheet supports some predefined built in styles of XlsIO. [BuiltInStyles]
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.Workbook.ActiveSheet.Range["A3"].BuiltInStyle = BuiltInStyles.Heading2;
 spreadsheet.ActiveGrid.InvalidateCell(3, 1);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -314,17 +270,12 @@ SfSpreadsheet allows the users to format a table with built in styles of table (
 
 {% tabs %}
 {% highlight c# %}
-
 // Creating a table
-
 IListObject table = spreadsheet.Workbook.ActiveSheet.ListObjects.Create("Table1", spreadsheet.Workbook.ActiveSheet.Range["C1:G5"]);
 
 // Formatting table with a built-in style
-
 table.BuiltInTableStyle = TableBuiltInStyles.TableStyleLight6;
-
 spreadsheet.ActiveGrid.InvalidateCells();
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -338,15 +289,11 @@ SfSpreadsheet provides support to clear the contents of a cell along with its fo
 
 {% tabs %}
 {% highlight c# %}
-
 //To clear the contents along with its formatting in the range,   
-       
 spreadsheet.Workbook.Worksheets[0].Range[4, 5].Clear(true);
 
 //To clear the range with specified ExcelClearOptions,
-           
 spreadsheet.Workbook.Worksheets[0].Range[4, 5].Clear(ExcelClearOptions.ClearConditionalFormats);
-
 {% endhighlight %}
 {% endtabs %}
 

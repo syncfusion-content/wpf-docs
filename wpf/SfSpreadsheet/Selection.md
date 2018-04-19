@@ -17,12 +17,10 @@ By default, Selection behavior will be enabled in `SfSpreadsheet`,but if you wan
 
 {% tabs %}
 {% highlight c# %}
-
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
     spreadsheet.ActiveGrid.AllowSelection = false;
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,9 +30,7 @@ SfSpreadsheet allows the user to access the active cell by using the `CurrentCel
 
 {% tabs %}
 {% highlight c# %}
-
 var cell= spreadsheet.ActiveGrid.SelectionController.CurrentCell;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,9 +40,7 @@ SfSpreadsheet allows the user to access the selected ranges of the `SpreadsheetG
 
 {% tabs %}
 {% highlight c# %}
-
 var rangeList = spreadsheet.ActiveGrid.SelectedRanges;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,7 +52,6 @@ SfSpreadsheet allows the user to add and clear the selection in the Active `Spre
 
 {% tabs %}
 {% highlight c# %}
-
 //To Add the Selection for range,
 spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cells(4,6,5,8));
 
@@ -76,7 +69,6 @@ spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cols(5,10)
 
 //To Clear the Selection,
 spreadsheet.ActiveGrid.SelectionController.ClearSelection();
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,8 +82,7 @@ SfSpreadsheet allows the user to move the current cell to the mentioned cell in 
 //Moves current cell to the mentioned row and column index of cell,
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(5, 5);
 
-For moving the current cell to a different sheet,
-
+//For moving the current cell to a different sheet,
 spreadsheet.SetActiveSheet("Sheet2");
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(6, 5);
 
@@ -104,9 +95,7 @@ SfSpreadsheet allows the user to convert the `GridRangeInfo` into the equivalent
 
 {% tabs %}
 {% highlight c# %}
-
 var excelRange = GridExcelHelper.ConvertGridRangeToExcelRange(GridRangeInfo.Cell(4, 5), spreadsheet.ActiveGrid);
-
 {% endhighlight %}
 {% endtabs %}
 
