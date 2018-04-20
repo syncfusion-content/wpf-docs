@@ -16,19 +16,13 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
 
 {% tabs %}
 {% highlight c# %}
-
 //For Inserting Rows
-
- spreadsheet.ActiveSheet.InsertRow(2, 3);
-
- spreadsheet.ActiveGrid.Model.InsertRows(2, 3);
+spreadsheet.ActiveSheet.InsertRow(2, 3);
+spreadsheet.ActiveGrid.Model.InsertRows(2, 3);
 
 //For Inserting Cols
-
- spreadsheet.ActiveSheet.InsertColumn(3, 2);
-
- spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
-
+spreadsheet.ActiveSheet.InsertColumn(3, 2);
+spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,23 +35,19 @@ Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files
 
 {% tabs %}
 {% highlight c# %}
-
 //To notify when rows are inserted
+spreadsheet.ActiveGrid.Model.RowsInserted += Model_RowsInserted;
 
- spreadsheet.ActiveGrid.Model.RowsInserted += Model_RowsInserted;
-
- void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
- {
- }
+void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
+{
+}
 
 //To notify when Columns are inserted
+spreadsheet.ActiveGrid.Model.ColumnsInserted += Model_ColumnsInserted;
 
- spreadsheet.ActiveGrid.Model.ColumnsInserted += Model_ColumnsInserted;
-
- void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
- {
- }
-
+void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+{
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,19 +57,13 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet.
 
 {% tabs %}
 {% highlight c# %}
-
 //For Deleting Rows
-
- spreadsheet.ActiveSheet.DeleteRow(5, 2);
-
- spreadsheet.ActiveGrid.Model.RemoveRows(5, 2);
+spreadsheet.ActiveSheet.DeleteRow(5, 2);
+spreadsheet.ActiveGrid.Model.RemoveRows(5, 2);
 
 //For Deleting Cols
-
- spreadsheet.ActiveSheet.DeleteColumn(3, 2);
-
- spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
-
+spreadsheet.ActiveSheet.DeleteColumn(3, 2);
+spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,23 +76,19 @@ Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files
 
 {% tabs %}
 {% highlight c# %}
-
 //To notify when rows are deleted
+spreadsheet.ActiveGrid.Model.RowsRemoved += Model_RowsRemoved;
 
- spreadsheet.ActiveGrid.Model.RowsRemoved += Model_RowsRemoved;
-
- void Model_RowsRemoved(object sender, GridRangeRemovedEventArgs e)
- {
- }
+void Model_RowsRemoved(object sender, GridRangeRemovedEventArgs e)
+{
+}
 
 //To notify when columns are deleted
+spreadsheet.ActiveGrid.Model.ColumnsRemoved += Model_ColumnsRemoved;
 
- spreadsheet.ActiveGrid.Model.ColumnsRemoved += Model_ColumnsRemoved;
-
- void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
- {
- }
-
+void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+{
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,19 +98,13 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by [Hid
 
 {% tabs %}
 {% highlight c# %}
-
 //For Hiding Rows,
-
- spreadsheet.ActiveSheet.HideRow(5);
-
- spreadsheet.ActiveGrid.RowHeights.SetHidden(5, 5, true);
+spreadsheet.ActiveSheet.HideRow(5);
+spreadsheet.ActiveGrid.RowHeights.SetHidden(5, 5, true);
 
 //For Hiding Cols,
-
- spreadsheet.ActiveSheet.HideColumn(4);
-
- spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
-
+spreadsheet.ActiveSheet.HideColumn(4);
+spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,19 +114,13 @@ Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](https://help.s
 
 {% tabs %}
 {% highlight c# %}
-
 //For Unhiding Rows,
-
- spreadsheet.ActiveSheet.ShowRow(5, true);
-
- spreadsheet.ActiveGrid.RowHeights.SetHidden(5, 5, false);
+spreadsheet.ActiveSheet.ShowRow(5, true);
+spreadsheet.ActiveGrid.RowHeights.SetHidden(5, 5, false);
 
 //For Unhiding Cols,
-
- spreadsheet.ActiveSheet.ShowColumn(4,true);
-
- spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, false);
-
+spreadsheet.ActiveSheet.ShowColumn(4,true);
+spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, false);
 {% endhighlight %}
 {% endtabs %}
 
@@ -162,19 +130,13 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 
 {% tabs %}
 {% highlight c# %}
-
 //For setting RowHeight for 4th Row
-
- spreadsheet.ActiveGrid.SetRowHeight(4, 4, 30);
-
- spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Row(4), true);
+spreadsheet.ActiveGrid.SetRowHeight(4, 4, 30);
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Row(4), true);
 
 //For setting ColumnWidth for 5th Column
-
- spreadsheet.ActiveGrid.SetColumnWidth(5, 5, 22);
-
- spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
-
+spreadsheet.ActiveGrid.SetColumnWidth(5, 5, 22);
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,17 +148,12 @@ SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet v
 
 {% tabs %}
 {% highlight c# %}
-
 //Freeze panes
 
 //To Freeze 4 rows and 4 columns
-
- spreadsheet.Workbook.ActiveSheet.Range[4, 4].FreezePanes();
-
- spreadsheet.ActiveGrid.FrozenRows = 5;
-
- spreadsheet.ActiveGrid.FrozenColumns = 5;
-
+spreadsheet.Workbook.ActiveSheet.Range[4, 4].FreezePanes();
+spreadsheet.ActiveGrid.FrozenRows = 5;
+spreadsheet.ActiveGrid.FrozenColumns = 5;
 {% endhighlight %}
 {% endtabs %}
 
@@ -206,17 +163,12 @@ SfSpreadsheet provides support to unfreeze the freeze panes in the worksheet of 
 
 {% tabs %}
 {% highlight c# %}
-
 //Unfreeze panes
 
 //To Unfreeze 4 rows and 4 columns
-
- spreadsheet.Workbook.ActiveSheet.RemovePanes();
-
- spreadsheet.ActiveGrid.FrozenRows = 1;
-
- spreadsheet.ActiveGrid.FrozenColumns = 1;
-
+spreadsheet.Workbook.ActiveSheet.RemovePanes();
+spreadsheet.ActiveGrid.FrozenRows = 1;
+spreadsheet.ActiveGrid.FrozenColumns = 1;
 {% endhighlight %}
 {% endtabs %}
 
@@ -228,32 +180,28 @@ You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.co
 
 {% tabs %}
 {% highlight c# %}
-
 //To AutoFit a single column,
-
 spreadsheet.ActiveSheet.AutofitColumn(2);
 spreadsheet.ActiveGrid.SetColumnWidth(2,2,spreadsheet.ActiveSheet.GetColumnWidthInPixels(2)); 
 
 //To AutoFit multiple columns,
-
 spreadsheet.ActiveSheet["A1:D100"].AutofitColumns();
+
 for(int i = 1; i <= 4 ; i++)
 {
    spreadsheet.ActiveGrid.SetColumnWidth(i,i,spreadsheet.ActiveSheet.GetColumnWidthInPixels(i));
 }
 
 //To AutoFit a single row,
-
 spreadsheet.ActiveSheet.AutofitRow(3);
 spreadsheet.ActiveGrid.SetRowHeight(3,3,spreadsheet.ActiveSheet.GetRowHeightInPixels(3)); 
 
 //To AutoFit multiple rows,
-
 spreadsheet.ActiveSheet["B1:B5"].AutofitRows();
+
 for(int i = 1; i <= 5 ; i++)
 {
    spreadsheet.ActiveGrid.SetRowHeight(i,i,spreadsheet.ActiveSheet.GetRowHeightInPixels(i));
 }
-
 {% endhighlight %}
 {% endtabs %}
