@@ -9,7 +9,7 @@ documentation: ug
 
 # Disable toolbar items
 
-To remove the toolbar altogther use PdfDocumentView control instead of PdfViewerControl as described in the [Load PDF without ToolStrip in viewer](https://help.syncfusion.com/wpf/pdfviewer/how-to/load-pdf-without-toolstrip-in-viewer) section. Individual toolbar items from the default toolbar of PDF Viewer can be removed selectively. The following code snippet illustrates disabling the open file button. 
+To remove the toolbar altogether use PdfDocumentView control instead of PdfViewerControl as described in the [Load PDF without ToolStrip in viewer](https://help.syncfusion.com/wpf/pdfviewer/how-to/load-pdf-without-toolstrip-in-viewer) section. Individual toolbar items from the default toolbar of PDF Viewer can be removed selectively. The following code snippet illustrates disabling the open file button. 
 
 
 {% tabs %}
@@ -130,12 +130,12 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
-<td>Fitwidth button</td>
+<td>Fit width button</td>
 <td>PART_ButtonFitWidth</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Fitpage button</td>
+<td>Fit page button</td>
 <td>PART_ButtonFitPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
