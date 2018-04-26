@@ -15,14 +15,14 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 
 1.Open an application in Expression Blend. 
 
-2.Expand the Window, Objects and Timeline.
+2.Expand the Views, choose Other Windows and then choose Objects and Timeline.
 
-3.In the “Objects and Timeline” pane, select Syncfusion the control to modify a style.
+3.In the “Objects and Timeline” pane, select a Syncfusion control to modify a style.
 
 ![](Blend-Support_images/GettingStarted_img1.jpeg)
 
 
-4.Expand the Object, Edit Style menu.
+4.Expand the Format, then choose Edit Style menu.
 
 ![](Blend-Support_images/GettingStarted_img2.jpeg)
 
@@ -41,14 +41,14 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 
 1.Open an application in Expression Blend. 
 
-2.Expand the Window, Objects and Timeline.
+2.Expand the Views, choose Other Windows and then choose Objects and Timeline.
 
-3.In the “Objects and Timeline” pane, select Syncfusion the control to modify a Template.
+3.In the “Objects and Timeline” pane, select a Syncfusion control to modify a Template.
 
 ![](Blend-Support_images/GettingStarted_img4.jpeg)
 
 
-4.Expand the Object and Edit Template
+4.Right click on the Syncfusion control and choose Edit Template
 
 ![](Blend-Support_images/GettingStarted_img5.jpeg)
 
