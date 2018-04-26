@@ -9,7 +9,7 @@ documentation: ug
 
 # View the PDF stream in viewer
 
-PDF files as stream can be viewed in Essential PDF Viewer using the overload available in the Load method. Use the following code example to load the PDF streams in viewer:
+PDF files as stream can be viewed in Essential PDF Viewer using the overload available in the [Load](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Load(Stream).html) method. Use the following code example to load the PDF streams in viewer:
 
 {% tabs %}
 {% highlight c# %}
