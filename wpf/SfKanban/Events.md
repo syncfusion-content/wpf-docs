@@ -9,7 +9,7 @@ documentation: ug
 
 # Events
 
-## ItemTapped
+## CardTapped
 
 This event is triggered when you tap on any card. The argument contains the following information.
 
