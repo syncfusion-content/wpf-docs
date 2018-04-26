@@ -41,7 +41,7 @@ The various elements of a TabControlExt control is illustrated in the below imag
 
 There are two possible ways to create a simple TabControlExt control.
 
-### Through Designer
+### Adding control via designer
 
 To create the TabControlExt control through designer, follow the below steps.
 
@@ -51,23 +51,32 @@ To create the TabControlExt control through designer, follow the below steps.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
-### Programmatically
+### Adding control manually in code
 
-TabControlExt control is created by using either XAML or C# code. The following lines of code can be used to create a TabControlExt control.
+To add control manually in C#, follow the given steps:
+
+1. Add the following required assembly references to the project:
+
+        * Syncfusion.Tools.WPF.dll
+        * SyncfusioN.Shared.WPF.dll
+
+2. Include the namespaces `Syncfusion.Windows.Tools.Controls`
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight C# %}
 
-<!-- Adding TabControlExt -->
-
-<syncfusion:TabControlExt Name="tabControlExt">
-
-</syncfusion:TabControlExt>
+using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+3. Create `TabControlExt` control instance and add it to the Panel.
+
+{% tabs %}
+
+{% highlight C# %}
 
 // Creating instance of the TabControlExt control
 
