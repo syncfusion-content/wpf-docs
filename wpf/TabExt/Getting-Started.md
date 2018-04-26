@@ -51,13 +51,38 @@ To create the TabControlExt control through designer, follow the below steps.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
-### Programmatically
+### Creating TabControlExt Programmatically
 
-TabControlExt control is created by using either XAML or C# code. The following lines of code can be used to create a TabControlExt control.
+TabControlExt control is created by either XAML or C# code. The following steps helps to add required WPF control through code.
+
+* Create a WPF project in Visual Studio and refer to the following assemblies.
+
+1. Syncfusion.Tools.WPF.dll
+2. Syncfusion.Shared.WPF.dll
+
+* Include an XML namespace for the above assemblies to the Main window.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
+
+<Window
+
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* Now add the TabControlExt control with a required optimal name.
+
+{% tabs %}
+
+{% highlight XAML %}
 
 <!-- Adding TabControlExt -->
 
@@ -67,7 +92,7 @@ TabControlExt control is created by using either XAML or C# code. The following 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Creating instance of the TabControlExt control
 
