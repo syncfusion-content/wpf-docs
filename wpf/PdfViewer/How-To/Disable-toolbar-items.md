@@ -91,7 +91,7 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 </tr>
 <tr>
 <td>Page count </td>
-<td>PART_LableTotalPageCount</td>
+<td>PART_LabelTotalPageCount</td>
 <td>System.Windows.Controls.TextBlock</td>
 </tr>
 <tr>
