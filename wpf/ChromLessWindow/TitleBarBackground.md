@@ -13,29 +13,18 @@ The **TitleBarBackground** property can help to set the Background for the Title
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="MainWindow" Height="350" Width="525"  TitleBarBackground="Red"   x:Name="_chromelessWindow"  
-
 syncfusion:SkinStorage.VisualStyle="Metro"  
-
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-
 <Grid>
-
 </Grid>
-
 </syncfusion:ChromelessWindow>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -54,5 +43,3 @@ Me.TitleBarBackground = New SolidColorBrush(Colors.Red)
 The following screen shots illustrate the title bar background changes.
 
 ![](TitleBarBackground_images/TitleBarBackground_img1.jpeg)
-
-
