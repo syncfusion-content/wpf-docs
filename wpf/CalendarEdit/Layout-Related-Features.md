@@ -11,13 +11,12 @@ documentation: ug
 
 This section illustrates the Layout-related features of CalendarEdit control. The following features are discussed:
 
-## Header Background and Foreground Color
+## Header background and foreground color
 
 CalendarEdit control provides the HeaderBackground and HeaderForeground properties to customize the appearance of the header background and foreground. Use the following code examples to set the above properties.
 
 {% tabs %}
 {% highlight xaml %}
-
 
 <!-- Adding calendar with header background and foreground -->
 <syncfusion:CalendarEdit Name="calendarEdit" HeaderBackground="SaddleBrown" HeaderForeground="Bisque"/>
@@ -25,7 +24,6 @@ CalendarEdit control provides the HeaderBackground and HeaderForeground properti
 {% endhighlight %}
 
 {% highlight c# %}
-
 
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
@@ -44,7 +42,7 @@ this.Content = calendarEdit;
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
-## Selection Border Color
+## Selection border color
 
 Whenever a selection is made in the Calendar, the selected day grid can be associated with a border. The color of this selection border of the day grid can be customized using the SelectionBorderBrush property. This dependency property sets the brush value for the selection border brush of the day grid.
 
@@ -71,14 +69,9 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
-
-
-
-
-## Corner Radius for the Selection Border
+## Corner radius for the selection border
 
 You can set the corner radius for the selection border by using the SelectionBorderCornerRadius property. This is dependency property sets the value for the corner radius as follows.
 
@@ -105,8 +98,6 @@ this.Content = calendarEdit;
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
-
-
 ## CalendarEdit
 
 Feature: Foreground for Selected Dates
@@ -132,5 +123,3 @@ calendarEdit1.SelectionForeground = new SolidColorBrush(Colors.Red);
 {% endtabs %}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img4.png)
-
-

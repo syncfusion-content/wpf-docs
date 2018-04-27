@@ -20,25 +20,17 @@ The check box in the CheckListBox Item can be aligned to the left or right side 
 
 To set the CheckBoxAlignment to Right, use the following code.
 
-
+{% tabs %}
 {%highlight xaml%}
 
 <!-- Adding CheckListBox with CheckBoxAlignment -->
-
 <syncfusion:CheckListBox Name="checkListBox" CheckBoxAlignment="Right"> 
-
 <!-- Adding CheckListBox items -->   
-
 <syncfusion:CheckListBoxItem Content="Mexico"/> 
-
 <syncfusion:CheckListBoxItem Content="Canada" />
-  
 <syncfusion:CheckListBoxItem Content="Bermuda" />
-    
 <syncfusion:CheckListBoxItem Content="Belize" /> 
-  
 <syncfusion:CheckListBoxItem Content="Panama" />
-
 </syncfusion:CheckListBox></td></tr>
    
 {%endhighlight%}
@@ -46,17 +38,17 @@ To set the CheckBoxAlignment to Right, use the following code.
 {% highlight c#%}
 
 // Align the Check Box.
-
 checkListBox.CheckBoxAlignment = CheckBoxAlignment.Right;
 
 {%endhighlight%}
+{% endtabs %}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
 CheckBoxAlignment = "Right"
 {:.caption}
 
-## Flow Direction
+## Flow direction
 
 The flow direction for the CheckListBox control is set through the FlowDirection property.
 
@@ -80,25 +72,17 @@ Sets the flow direction for the CheckListBox control. The options provided are a
 
 To set the FlowDirection to RightToLeft, use the below code:
 
-
+{% tabs %}
 {%highlight xaml%}
 
 <!-- Adding CheckListBox with FlowDirection as right  -->
-
 <syncfusion:CheckListBox Name="checkListBox" FlowDirection="RightToLeft"> 
-
 <!-- Adding CheckListBox items --> 
-
 <syncfusion:CheckListBoxItem Content="Mexico"/>  
-
 <syncfusion:CheckListBoxItem Content="Canada" />  
-
 <syncfusion:CheckListBoxItem Content="Bermuda" />  
-
 <syncfusion:CheckListBoxItem Content="Belize" />  
- 
 <syncfusion:CheckListBoxItem Content="Panama" />
-
 </syncfusion:CheckListBox>
    
 {% endhighlight %}
@@ -106,10 +90,10 @@ To set the FlowDirection to RightToLeft, use the below code:
 {%highlight c# %}
 
 // Set FlowDirection property as RightToLeft.
-
 checkListBox.FlowDirection = FlowDirection.RightToLeft;
 
 {%endhighlight%}
+{% endtabs %}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
@@ -146,28 +130,19 @@ Sets the visual style for the CheckListBox control. The options provided are as 
 </td></tr>
 </table>
 
-
 For setting Blend style, refer the below code snippet.
 
-
+{% tabs %}
 {%highlight xaml%}
 
 <!-- Adding CheckListBox with Visual Style as Blend -->
-
 <syncfusion:CheckListBox Name="checkListBox" syncfusion:SkinStorage.VisualStyle="Blend">   
-
 <!-- Adding CheckListBox items -->    
-
 <syncfusion:CheckListBoxItem Content="Mexico"/> 
-   
 <syncfusion:CheckListBoxItem Content="Canada" />  
- 
 <syncfusion:CheckListBoxItem Content="Bermuda" />  
-
 <syncfusion:CheckListBoxItem Content="Belize" />  
-  
 <syncfusion:CheckListBoxItem Content="Panama" />
-
 </syncfusion:CheckListBox>
  
 {%endhighlight%}
@@ -175,10 +150,10 @@ For setting Blend style, refer the below code snippet.
 {%highlight c#%}
 
 // Setting the visual style as Blend.
-
 SkinStorage.SetVisualStyle(checkListBox, "Blend"); 
 
 {%endhighlight%}
+{% endtabs %}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
