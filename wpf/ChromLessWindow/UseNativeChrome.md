@@ -17,23 +17,13 @@ To set this property, use the below code.
 {% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="ChromelessWindow" Height="350" Width="525"  UseNativeChrome="True"   syncfusion:SkinStorage.VisualStyle="Metro" 
-
 x:Name="_chromelessWindow" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
-
 </syncfusion:ChromelessWindow>
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight c# %}
 
