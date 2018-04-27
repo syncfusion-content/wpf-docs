@@ -11,62 +11,37 @@ documentation: ug
 
 History support in AutoComplete means, reuse of the items which are already used in the AutoComplete textbox. AutoComplete allows you to enable this history support by setting the value of the IsHistory property to True. AutoComplete guides you to select an item from the list of items which are added to the history, by using the drop-down button to open the drop-down list.
 
-## Using History Support in an Application 
+## Using history support in an application 
 
 Items can be added to the history using the AddToHistory(String string) and AddToHistory(Object obj) methods, only if that items are present in the data source used with the AutoComplete. Also it supports to save the history while closing the application and to load the history while opening the application using the SaveHistory() and LoadHistory() methods. 
 
 The following mentioned code example can be used to attain these functionalities.
+
+{% tabs %}
 {% highlight c# %}
 
-
-
-
 AutoComplete autoComplete1 = new AutoComplete();
-
 autoComplete1.Loaded += new RoutedEventHandler
-
 (autoComplete1_Loaded);
-
-
-
 void autoComplete1_Loaded(object sender, RoutedEventArgs e)
+{
+    if (autoComplete1!= null)
+    autoComplete1.LoadHistory();
+}
 
-        {
+autoComplete1.SelectionChanged += new SelectionChangedEventHandler(autoComplete1_SelectionChanged);
+private void autoComplete1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+    autoComplete1.AddHistory(autoComplete1.SelectedItem);
+    autoComplete1.SaveHistory();
+}
 
-            if (autoComplete1!= null)
-
-                autoComplete1.LoadHistory();
-
-        }
-
-
-
-autoComplete1.SelectionChanged +=
-
-   new SelectionChangedEventHandler(autoComplete1_SelectionChanged);
-
-
-
-
-
-private void autoComplete1_SelectionChanged(object sender, 
-
-                                             SelectionChangedEventArgs e)
-
-        {
-
-     autoComplete1.AddHistory(autoComplete1.SelectedItem);
-
-     autoComplete1.SaveHistory();
-
-        }
 {% endhighlight %}
-
+{% endtabs %}
 
 ## Tables for properties, methods, and events
 
 ### Properties
-
 
 <table>
 <tr>
@@ -85,10 +60,7 @@ bool(true)</td><td>
 </td></tr>
 </table>
 
-
 ### Methods
-
-
 
 <table>
 <tr>
@@ -141,8 +113,6 @@ Void</td><td>
 </td></tr>
 </table>
 
-
-## Sample Link
+## Sample link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-
