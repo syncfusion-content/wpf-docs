@@ -16,7 +16,7 @@ Auto Append is used to guide the complete text by appending the entered text wit
 Auto Append
 {:.caption}
 
-## Adding auto append aupport to an application 
+## Adding auto append support to an application 
 
 If the IsAutoAppend property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
