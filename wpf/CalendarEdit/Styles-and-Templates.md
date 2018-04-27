@@ -11,207 +11,126 @@ documentation: ug
 
 This section deals with the following Styles and Templates supported by CalendarEdit control. 
 
-## Day Cells Style
+## Day cells style
 
 You can set the style of a day cell, using the DayCellsStyle property. 
 
 To set this property, use the following code.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="WpfApplication4.Window1"
-
-  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-  Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-      <Grid Margin="20">
-
-      <Grid.Resources>
-
-
-
-            <!-- day cell style -->
-
-            <Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayCell}">
-
-              <Setter Property="CornerRadius" Value="0"/>
-
-              <Setter Property="Background" Value="SlateBlue"/>
-
-            </Style>
-
-      </Grid.Resources>
-
-
-
-      <!-- Adding calendar with day cell style -->
-
-      <syncfusion:CalendarEdit Name="calendarEdit" DayCellsStyle="{StaticResource dayCell}"/>
-
-    </Grid>
-
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid Margin="20">
+<Grid.Resources>
+<!-- day cell style -->
+<Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayCell}">
+<Setter Property="CornerRadius" Value="0"/>
+<Setter Property="Background" Value="SlateBlue"/>
+</Style>
+</Grid.Resources>
+<!-- Adding calendar with day cell style -->
+<syncfusion:CalendarEdit Name="calendarEdit" DayCellsStyle="{StaticResource dayCell}"/>
+</Grid>
 </Window>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
-
-
-## Day Name Cells Style
+## Day name cells style
 
 You can set the style of the day name cell, using the DayNameCellsStyle property. Use the following code example to set this property.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="WpfApplication4.Window1"
-
-  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-  Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-    <Grid Margin="20">
-
-      <Grid.Resources>
-
-        <!-- setting style for DayNameCell -->
-
-        <Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayNameCell}">
-
-          <Setter Property="Background" Value="Green"/>
-
-        </Style>
-
-      </Grid.Resources>
-
-
-
-      <!-- Adding calendar with day name cell style -->
-
-      <syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsStyle="{StaticResource dayCell}"/>
-
-    </Grid>
-
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid Margin="20">
+<Grid.Resources>
+<!-- setting style for DayNameCell -->
+<Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayNameCell}">
+<Setter Property="Background" Value="Green"/>
+</Style>
+</Grid.Resources>
+<!-- Adding calendar with day name cell style -->
+<syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsStyle="{StaticResource dayCell}"/>
+</Grid>
 </Window>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
-
-
-## Data Template for Day Cell
+## Data template for day cell
 
 You can create a data template for the day cell, using the DayCellsDataTemplate property. This dependency property sets the day cell data template using the following code example.
 
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <Window x:Class="WpfApplication4.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-  <Grid Margin="20">
-
-    <Grid.Resources>
-
-
-
-      <!-- setting Data Template for DayCell -->
-
-      <DataTemplate x:Key="dayCell" DataType="syncfusion:DayCell">
-
-      <TextBlock
-
-      TextBlock.FontFamily="Tahoma"
-
-      TextBlock.FontStyle="Normal"
-
-      TextBlock.FontSize="15"
-
-      Text="{Binding Day}"/>
-
-      </DataTemplate>
-
-    </Grid.Resources>
-
-
-
-    <!-- Adding calendar -->
-
-    <syncfusion:CalendarEdit Name="calendarEdit" DayCellsDataTemplate="{StaticResource dayCell}"/>
-
-  </Grid>
-
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid Margin="20">
+<Grid.Resources>
+<!-- setting Data Template for DayCell -->
+<DataTemplate x:Key="dayCell" DataType="syncfusion:DayCell">
+<TextBlock
+TextBlock.FontFamily="Tahoma"
+TextBlock.FontStyle="Normal"
+TextBlock.FontSize="15"
+Text="{Binding Day}"/>
+</DataTemplate>
+</Grid.Resources>
+<!-- Adding calendar -->
+<syncfusion:CalendarEdit Name="calendarEdit" DayCellsDataTemplate="{StaticResource dayCell}"/>
+</Grid>
 </Window>
 
 {% endhighlight %}
-
-
+{% endtabs %}
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
 
-
-
-## Data Template for Day Name Cell
+## Data template for day name cell
 
 You can create a data template for the day name cell, using the DayNameCellsDataTemplate property. This dependency property sets the day name cell data template using the following code example.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="WpfApplication4.Window1"
-
-  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-  Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-    <Grid Margin="20">
-
-      <Grid.Resources>
-
-
-
-        <!-- setting Data Template for DayNameCell -->
-
-        <DataTemplate x:Key="dayNameCells" DataType="syncfusion:DayNameCell">
-
-        <TextBlock
-
-        TextBlock.FontFamily="Tahoma"
-
-        TextBlock.FontStyle="Normal"
-
-        TextBlock.FontSize="15"
-
-        Text="{Binding}"/>
-
-        </DataTemplate>
-
-      </Grid.Resources>
-
-
-
-      <!-- Adding calendar -->
-
-      <syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsDataTemplate="{StaticResource dayNameCells}"/>
-
-    </Grid>
-
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid Margin="20">
+<Grid.Resources>
+<!-- setting Data Template for DayNameCell -->
+<DataTemplate x:Key="dayNameCells" DataType="syncfusion:DayNameCell">
+<TextBlock
+TextBlock.FontFamily="Tahoma"
+TextBlock.FontStyle="Normal"
+TextBlock.FontSize="15"
+Text="{Binding}"/>
+</DataTemplate>
+</Grid.Resources>
+<!-- Adding calendar -->
+<syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsDataTemplate="{StaticResource dayNameCells}"/>
+</Grid>
 </Window>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
 
@@ -278,15 +197,13 @@ SelectedDates="{Binding Dates,Mode=TwoWay}"
 {% highlight C# %}
 
 //Define the SpecialDatesCollection property
-
 public SpecialDatesCollection specialDays
 {
-get {return GetValue<SpecialDatesCollection>(SpecialDaysProperty);}
-set (SetValue(SpecialDaysProperty, value); }
+    get {return GetValue<SpecialDatesCollection>(SpecialDaysProperty);} 
+    set (SetValue(SpecialDaysProperty, value); }
 }
 
 //code used to add the collection in SpecialDays
-
 specialDays.Add(new SpecialDate() { Date = new DateTime(2017, 05, 03), CellTemplate = Application.Current.TryFindResource("Daycell1") as DataTemplate });
 specialDays.Add(new SpecialDate() { Date = new DateTime(2017, 05, 13), CellTemplate = Application.Current.TryFindResource("Daycell12") as DataTemplate });
 specialDays.Add(new SpecialDate() { Date = new DateTime(2017, 05, 18), CellTemplate = Application.Current.TryFindResource("Daycell13") as DataTemplate });
@@ -300,18 +217,15 @@ specialDays.Add(new SpecialDate() { Date = new DateTime(2017, 05, 10), CellTempl
 {% highlight VB %}
 
 'Define the SpecialDatesCollection property
-
 Public Property specialDays() As SpecialDatesCollection
-	Get 
-	Return GetValue<SpecialDatesCollection>(SpecialDaysProperty)
-	End Get
-	Set (ByVal Value As SpecialDatesCollection) 
-}
-	End Set
+Get 
+Return GetValue<SpecialDatesCollection>(SpecialDaysProperty)
+End Get
+Set (ByVal Value As SpecialDatesCollection) 
+End Set
 End Property
 
 'code used to add the collection in SpecialDays
-
 Private Function SpecialDate() As specialDays.Add(Shadows
 	 Date = New DateTime(2017, 05, 03), CellTemplate = Application.Current.TryFindResource("Daycell1") as DataTemplate
 End Function
@@ -342,7 +256,6 @@ End Function
 )
 
 {% endhighlight %}
-
 
 {% highlight xaml %}
 
@@ -429,6 +342,3 @@ End Function
 **Output:**
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)
-
-
-
