@@ -16,7 +16,7 @@ For better control customization MVVM pattern can be followed. The following ste
 
 2.Add `Model` class for each element which need to be included in Ribbon control. In this sample class has been created for RibbonTab, RibbonBar and RibbonItem
 
-###Model
+### Model
 
 {% tabs %}
 
@@ -115,7 +115,7 @@ End Class
 
 3.Create `ViewModel` class where the collection has been declared and the items has been populated to it.
 
-###ViewModel
+### ViewModel
 
 {% tabs %}
 
@@ -271,7 +271,7 @@ End Class
 
 4.In XAML bind the collection to Ribbon control and use ItemContainerStyle to bind the inner level items like RibbonBar and RibbonItems
 
-####MainWindow.xaml
+#### MainWindow.xaml
 
 {% tabs %}
 
@@ -377,7 +377,7 @@ ItemsSource="{Binding CustomRibbonTabs}" >
 
 5.Converter class is used to set `SizeForm` for the Ribbon items and to set images.
 
-####Converter.cs
+#### Converter.cs
 
 {% tabs %}
 
@@ -527,11 +527,13 @@ Ribbon control provides PRISM support. The following steps explain about creatin
 
 1.Create new WPF project and add the following references to the solution project.
 		
-   * Microsoft.Practices.Composite.dll
-   * Microsoft.Practices.Composite.Presentation.dll
-   * Microsoft.Practices.Composite.UnityExtensions.dll
    * Microsoft.Practices.ServiceLocation.dll
    * Microsoft.Practices.Unity.dll
+   * Microsoft.Practices.Unity.Configuration.dll
+   * Microsoft.Practices.Unity.RegistrationByConvention.dll
+   * Prism.dll
+   * Prism.Unity.Wpf.dll
+   * Prism.Wpf.dll
 
 2.Rename MainWindow to Shell in the Project
 
@@ -545,15 +547,19 @@ Ribbon control provides PRISM support. The following steps explain about creatin
     {
         protected override DependencyObject CreateShell()
         {
-            Shell shell = new Shell();
-            shell.Show();
-            return shell;
+            return Container.Resolve<Shell>();
         }
-        protected override IModuleCatalog GetModuleCatalog()
+        protected override void InitializeShell()
         {
-            ModuleCatalog catalog = new ModuleCatalog();
+            base.InitializeShell();
+            App.Current.MainWindow = (Shell)this.Shell;
+            App.Current.MainWindow.Show();
+        }
+        protected override void ConfigureModuleCatalog()
+        {
+            base.ConfigureModuleCatalog();
+            ModuleCatalog catalog = (ModuleCatalog)this.ModuleCatalog;
             catalog.AddModule(typeof(HomeTabModule.HomeTabModules));
-            return catalog;
         }
     }
 
@@ -561,26 +567,25 @@ Ribbon control provides PRISM support. The following steps explain about creatin
 
 {% highlight VB %}
 
-Friend Class Bootstrapper
-Inherits UnityBootstrapper
+    Friend Class Bootstrapper
+    Inherits UnityBootstrapper
 
-Protected Overrides Function CreateShell() As DependencyObject
-    
-    Dim shell As New Shell()
-    shell.Show()
-    Return shell
-    
-End Function
+        Protected Overrides Function CreateShell() As DependencyObject
+			Return Container.Resolve(Of Shell)()
+		End Function
+		Protected Overrides Sub InitializeShell()
+			MyBase.InitializeShell()
+			App.Current.MainWindow = CType(Me.Shell, Shell)
+			App.Current.MainWindow.Show()
+		End Sub
+		Protected Overrides Sub ConfigureModuleCatalog()
+			MyBase.ConfigureModuleCatalog()
+			Dim catalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
+			catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
+		End Sub
 
-Protected Overrides Function GetModuleCatalog() As IModuleCatalog
-    
-    Dim catalog As New ModuleCatalog()
-    catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
-    Return catalog
-    
-End Function
 
-End Class
+    End Class
 
 {% endhighlight %}
 
@@ -675,11 +680,13 @@ Right click the Solution project, point to “Add” and then click “NewProjec
 
    Also add following Prism assemblies
 
-    * Microsoft.Practices.Composite.dll
-    * Microsoft.Practices.Composite.Presentation.dll
-    * Microsoft.Practices.Composite.UnityExtensions.dll
     * Microsoft.Practices.ServiceLocation.dll
     * Microsoft.Practices.Unity.dll
+    * Microsoft.Practices.Unity.Configuration.dll
+    * Microsoft.Practices.Unity.RegistrationByConvention.dll
+    * Prism.dll
+    * Prism.Unity.Wpf.dll
+    * Prism.Wpf.dll
 
 7.In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 
@@ -691,16 +698,19 @@ Right click the Solution project, point to “Add” and then click “NewProjec
     {
         protected override DependencyObject CreateShell()
         {
-            Shell shell = new Shell();
-            shell.Show();
-            return shell;
+            return Container.Resolve<Shell>();
         }
-
-        protected override IModuleCatalog GetModuleCatalog()
+        protected override void InitializeShell()
         {
-            ModuleCatalog catalog = new ModuleCatalog();
+            base.InitializeShell();
+            App.Current.MainWindow = (Shell)this.Shell;
+            App.Current.MainWindow.Show();
+        }
+        protected override void ConfigureModuleCatalog()
+        {
+            base.ConfigureModuleCatalog();
+            ModuleCatalog catalog = (ModuleCatalog)this.ModuleCatalog;
             catalog.AddModule(typeof(HomeTabModule.HomeTabModules));
-            return catalog;
         }
     }
 
@@ -711,21 +721,19 @@ Right click the Solution project, point to “Add” and then click “NewProjec
 	Friend Class Bootstrapper
     Inherits UnityBootstrapper
 
-    Protected Overrides Function CreateShell() As DependencyObject
-
-        Dim shell As New Shell()
-        shell.Show()
-        Return shell
-
-    End Function
-
-    Protected Overrides Function GetModuleCatalog() As IModuleCatalog
-
-        Dim catalog As New ModuleCatalog()
-        catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
-        Return catalog
-
-    End Function
+        Protected Overrides Function CreateShell() As DependencyObject
+			Return Container.Resolve(Of Shell)()
+		End Function
+		Protected Overrides Sub InitializeShell()
+			MyBase.InitializeShell()
+			App.Current.MainWindow = CType(Me.Shell, Shell)
+			App.Current.MainWindow.Show()
+		End Sub
+		Protected Overrides Sub ConfigureModuleCatalog()
+			MyBase.ConfigureModuleCatalog()
+			Dim catalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
+			catalog.AddModule(GetType(HomeTabModule.HomeTabModules))
+		End Sub
 	End Class
 
 {% endhighlight %}

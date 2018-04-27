@@ -9,18 +9,18 @@ documentation: ug
 
 # Styles and Templates
 
-The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary and etc.) can be customized using various properties exposed and editing its Style. 
+The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and by editing the elements’ Style. 
 
 ## Control Structure of SfDataGrid
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
 ## Customizing Default Containers
-SfDataGrid arrange the cell and row content using cell and row container’s. Below screenshot shows the VisualTree of SfDataGrid where HeaderCell loaded into the HeaderCellControl and data cells loaded into the VirtualizingCellsControl container. VirtualizingCellsControl container consist of GridCell to load the cell content.
+SfDataGrid arranges the cell and row content using cell and row containers. Below screenshot shows the VisualTree of SfDataGrid where HeaderCell is loaded into the HeaderCellControl and data cells are loaded into the VirtualizingCellsControl container. VirtualizingCellsControl container uses GridCell to load the cell content.
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img31.png)
 
-[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and set it [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Thus, it is possible to customize the row and cell containers by customizing the RowGeneration which cannot be done with styling and conditional styling customization options.
+[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Using this method to customize the row and cell containers allows for customizations that aren’t possible through styling and conditional styling.
 
 ### Row containers
 Below table shows the different types of grid rows and its container.

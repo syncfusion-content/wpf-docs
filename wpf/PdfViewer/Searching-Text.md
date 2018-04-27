@@ -15,7 +15,7 @@ Essential PDF Viewer allows you to search and highlight the text in the PDF docu
 
 
 
-The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code example illustrates how text search can be achieved in the PDF Viewer control.
+The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The [FindText](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~FindText(String,Dictionary%7BInt32,List%7BRectangleF%7D%7D).html) method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code example illustrates how text search can be achieved in the PDF Viewer control.
 
 {% tabs %}
 {% highlight c# %}
