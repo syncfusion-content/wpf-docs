@@ -11,21 +11,17 @@ documentation: ug
 
 Auto Append is used to guide the complete text by appending the entered text with suitable text from the data source, when a text is entered in the AutoComplete textbox. AutoComplete allows you to enable Auto Append using IsAutoAppend property.
 
-
-
 ![](Auto-Append-Support_images/Auto-Append-Support_img1.png)
 
 Auto Append
 {:.caption}
 
-
-
-## Adding Auto Append Support to an Application 
+## Adding auto append aupport to an application 
 
 If the IsAutoAppend property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
+{% tabs %}
 {% highlight xaml %}
-
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/>
 
@@ -33,15 +29,14 @@ If the IsAutoAppend property is set as True, once you enter the text the AutoCom
 
 {% highlight c# %}
 
-
 AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend = true;
+
 {% endhighlight %}
+{% endtabs %}
 
-
-## Tables for properties, and events
+## Tables for properties and events
 
 ### Properties
-
 
 <table>
 <tr>
@@ -60,10 +55,7 @@ bool(true)</td><td>
 </td></tr>
 </table>
 
-
 ### Events
-
-
 
 <table>
 <tr>
@@ -82,8 +74,6 @@ DependencyPropertyChangedCallBack </td><td>
 </td></tr>
 </table>
 
-
-## Sample Link
+## Sample link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-
