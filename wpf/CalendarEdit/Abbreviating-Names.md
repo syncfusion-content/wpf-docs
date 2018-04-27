@@ -25,19 +25,16 @@ To set this property, use the following code:
 
 {% endhighlight %}
 
-
-
 {% highlight c# %}
+
 //Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
 //Disable the DayNameAbbreviatedcalendarEdit.ShowAbbreviatedDayNames = false; 
 //Adding CalendarEdit as window contentthis.Content = calendarEdit;
 
 {% endhighlight %}
 {% endtabs %}
+
 ![](Abbreviating-Names_images/Abbreviating-Names_img1.jpeg)
-
-
-
 
 Abbreviating Month Names
 
@@ -52,7 +49,6 @@ To set the ShowAbbreviatedMonthNames property, use the following code.
 <syncfusion:CalendarEdit Name="calendarEdit" ShowAbbreviatedMonthNames="True"/>
 
 {% endhighlight %}
-
 
 {% highlight c# %}
 
@@ -69,5 +65,3 @@ this.Content = calendarEdit;
 {% endtabs %}
 
 ![](Abbreviating-Names_images/Abbreviating-Names_img2.jpeg)
-
-
