@@ -20,74 +20,46 @@ AutoComplete supports basic core features which are listed as follows.
 * SelectionChanged.
 * TextChanged.
 
-## Using Basic Core Features in an Application
+## Using basic core features in an application
 
 In the SelectionChanged event the SelectedIndex, SelectedItem & SelectedValue properties can be used in the application to get these property values. The properties and events listed can be used in the application as mentioned below.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 
 List<String> Products = new List<String>();
 
 Products.Add("Diagram");
-
 Products.Add("Gauge");
-
 Products.Add("Chart");
-
 Products.Add("Business Intelligence");
 
 AutoComplete autoComplete1 = new AutoComplete();
-
 autoComplete1.CustomSource = Products;
-
 autoComplete1.SelectedIndex = 1;
-
 autoComplete1.IsDropDownOpen = true;
-
 autoComplete1.SelectionChanged += 
 
 new SelectionChangedEventHandler(autoComplete1_SelectionChanged);
-
 autoComplete1.TextChanged += new PropertyChangedCallback(autoComplete1_TextChanged);
-
-
-
-void autoComplete1_TextChanged(DependencyObject d, 
-
-                                   DependencyPropertyChangedEventArgs e)
-
+void autoComplete1_TextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-
-      this.textBlock.Text = this.autoComplete1.Text;
-
+    this.textBlock.Text = this.autoComplete1.Text;
 }
 
-
-
-void autoComplete1_SelectionChanged(object sender, 
-
-                                            SelectionChangedEventArgs e)
-
+void autoComplete1_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
-
-      MessageBox.Show("SelectedItem: " +
-
-      this.autoComplete1.SelectedItem.ToString()+ "\n" + "SelectedValue: "
-
-      + this.autoComplete1.SelectedValue.ToString())
-
+    MessageBox.Show("SelectedItem: " +
+    this.autoComplete1.SelectedItem.ToString()+ "\n" + "SelectedValue: "
+    + this.autoComplete1.SelectedValue.ToString())
 }
+
 {% endhighlight %}
+{% endtabs %}
 
-
-## Tables for Properties, and Events
+## Tables for properties and events
 
 ### Properties
-
-
 
 <table>
 <tr>
@@ -136,7 +108,6 @@ String(null)</td><td>
 
 ### Events
 
-
 <table>
 <tr>
 <th>
@@ -161,8 +132,6 @@ DependencyPropertyChangedCallBack </td><td>
 </td></tr>
 </table>
 
-
-## Sample Link
+## Sample link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-
