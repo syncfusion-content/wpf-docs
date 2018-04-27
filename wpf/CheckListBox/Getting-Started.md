@@ -22,71 +22,53 @@ Here are some highlights about our CheckListBox control.
 
 ## Create CheckListBox control
 
-
 You can create a CheckListBox control either by using XAML code or C# code. To create a CheckListBox control, use the following code.
 
-
+{% tabs %}
 {%highlight xaml%}
 
-
 <!-- Adding CheckListBox -->
-
 <syncfusion:CheckListBox Name="checkListBox">
-
 <!-- Adding CheckListBox items -->  
-  
 <syncfusion:CheckListBoxItem Content="Mexico"/> 
- 
 <syncfusion:CheckListBoxItem Content="Canada" /> 
-  
 <syncfusion:CheckListBoxItem Content="Bermuda" />  
-  
 <syncfusion:CheckListBoxItem Content="Belize" />  
- 
 <syncfusion:CheckListBoxItem Content="Panama" />
-
 </syncfusion:CheckListBox></td></tr>
 	
 {%endhighlight%}
 
-
 {%highlight c#%}
 
 // Creating an instance of CheckListBox
-
-   CheckListBox checkListBox = new CheckListBox();
+CheckListBox checkListBox = new CheckListBox();
    
 // Creating an instance of CheckListBoxItem
-
-   CheckListBoxItem checkListBoxItem1 = new CheckListBoxItem();
+CheckListBoxItem checkListBoxItem1 = new CheckListBoxItem();
    
 // Adding content to CheckListBoxItem
-
-   checkListBoxItem1.Content = "Mexico";
+checkListBoxItem1.Content = "Mexico";
    
 // Adding CheckListBoxItem to CheckListBox
-
-  checkListBox.Items.Add(checkListBoxItem1); 
+checkListBox.Items.Add(checkListBoxItem1); 
   
 // Creating an instance of CheckListBoxItem
-
-   CheckListBoxItem checkListBoxItem2 = new CheckListBoxItem();
+CheckListBoxItem checkListBoxItem2 = new CheckListBoxItem();
    
 // Adding content to CheckListBoxItem
-
-   checkListBoxItem1.Content = "Bermuda";
+checkListBoxItem1.Content = "Bermuda";
    
 // Adding CheckListBoxItem to CheckListBox
-
-   checkListBox.Items.Add(checkListBoxItem2); 
+checkListBox.Items.Add(checkListBoxItem2); 
    
 // ........
 
 // ........
-
 this.Content = checkListBox;   
 
 {%endhighlight%}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
