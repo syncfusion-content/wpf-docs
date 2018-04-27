@@ -11,48 +11,48 @@ documentation: ug
 
 This section guides you on getting started with the ButtonAdv control. It describes you about the control structure, basic settings, implementation and members.
 
-## Control Structure
+## Control structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 Control Structure
 {:.caption}
 
-## Add ButtonAdv Control to an application:
+## Add ButtonAdv control to an application
 
 The ButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
 
-## Setting Label
-
+## Setting label
 
 The following code explains how to declare the ButtonAdv control using XAML.
-{% highlight html %}
 
+{% tabs %}
+{% highlight xaml %}
 
 <sync:ButtonAdv Label="Hello World"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 The ButtonAdv control can be created using the C# code as follows:
 
-
+{% tabs %}
 {% highlight c# %}
 
-
 ButtonAdv button = new ButtonAdv()
-
 button.Label = "Hello World";
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 Typical ButtonAdv Control
 {:.caption}
 
-## Set Size Mode
+## Set size mode
 
 The size mode of the ButtonAdv control can be easily modified by using the property SizeMode. The SizeMode property contains the following values:
 
@@ -60,124 +60,146 @@ The size mode of the ButtonAdv control can be easily modified by using the prope
 * Normal
 * Large
 
-## Small Mode
+## Small mode
 
 When the SizeMode is set to Small, the icon of the ButtonAdv control is displayed without the label.
 
 Use the following code example to set the SizeMode to Small:
 
-{% highlight html %}
+{% tabs %}
+{% highlight xaml %}
+
 <sync:ButtonAdv SizeMode="Small" Label="Hello World"/>
+
 {% endhighlight  %}
 {% highlight c# %}
-ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;
-{% endhighlight  %}
 
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;
+
+{% endhighlight  %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 ButtonAdv Control with Small SizeMode
 {:.caption}
 
-
-
-## Normal Mode
+## Normal mode
 
 The ButtonAdv control retains the default appearance, when the SizeMode is set to Normal.
 
 Use the following code example to set the SizeMode to Normal:
 
-{% highlight html %}
+{% tabs %}
+{% highlight xaml %}
+
 <sync:ButtonAdv SizeMode="Normal" Label="Hello World"/>
+
 {% endhighlight  %}
 {% highlight c# %}
+
 ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 ButtonAdv control with Normal SizeMode
 {:.caption}
 
-## Large Mode
+## Large mode
 
 When the SizeMode is set to Large, the ButtonAdv control is displayed with large icon and provides multiline support.
 
 Use the following code example to set the SizeMode to Large:
 
-{% highlight html %}
+{% tabs %}
+{% highlight xaml %}
+
 <sync:ButtonAdv SizeMode="Large" Label="Hello World"/>
+
 {% endhighlight  %}
 {% highlight c# %}
-ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;
-{% endhighlight  %}
 
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;
+
+{% endhighlight  %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
 ButtonAdv controls with Large SizeMode
 {:.caption}
 
-
-## Setting Image
+## Setting image
 
 The image displayed on the control can be set using the following two properties:
 
 * SmallIcon—To set the image when SizeMode is Normal or Small.
 * LargeIcon—To set the image when SizeMode is Large.
 
-
-
 The SmallIcon property can be set as follows:
-{% highlight html %}
+
+{% tabs %}
+{% highlight xaml %}
+
 <sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
+
 {% endhighlight %}
 {% highlight c# %}
+
 ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img6.png)
-
 
 Small Sized ButtonAdv Control with image
 {:.caption}
 
-
 The SmallIcon property can be set even when the SizeMode is Normal:
 
-{% highlight html %}
+{% tabs %}
+{% highlight xaml %}
+
 <sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
+
 {% endhighlight %}
 {% highlight c# %}
+
 ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img7.png)
-
 
 Normal Sized ButtonAdv Control with Image
 {:.caption}
 
-
 The LargeIcon property can be set as follows:
 
-{% highlight html %}
+{% tabs %}
+{% highlight xaml %}
+
 <sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
+
 {% endhighlight  %}
 {% highlight c# %}
-ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
-{% endhighlight %}
 
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
+
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 Large Sized ButtonAdv Control with Image
 {:.caption}
 
-## Set Icon Width and Height
+## Set icon width and height
 
 The Icon size can be set using the following two properties:
 
@@ -189,30 +211,29 @@ The Icon size can be set using the following two properties:
 ButtonAdv Control with IconSize(80,80)
 {:.caption}
 
-
-
 ![](Getting-Started_images/Getting-Started_img10.png)
 
 ButtonAdv Control with IconSize(20,20)
 {:.caption}
 
-
-
 The IconWidth and IconHeight can be set as follows:
 
-{% highlight html %}
-  <sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  />
+{% tabs %}
+{% highlight xaml %}
+
+<sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  />
+
 {% endhighlight %}
 {% highlight c# %}
+
 ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;
+
 {% endhighlight %}
+{% endtabs %}
 
-
-## ButtonAdv Members
+## ButtonAdv members
 
 ### Properties
-
-
 
 <table>
 <tr>
@@ -313,10 +334,7 @@ Represents the height of the icon.</td><td>
 IconSize</td></tr>
 </table>
 
-
 ### Events
-
-
 
 <table>
 <tr>
@@ -341,5 +359,3 @@ RoutedEventArgs</td><td>
 Occurs when the Button is Checked.</td><td>
 Checked</td></tr>
 </table>
-
-
