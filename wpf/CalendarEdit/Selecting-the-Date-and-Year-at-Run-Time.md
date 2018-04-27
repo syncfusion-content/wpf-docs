@@ -7,7 +7,7 @@ control: CalendarEdit
 documentation: ug
 ---
 
-# Selecting the Date and Year at Run Time
+# Selecting the Date and Year at Runtime
 
 Selecting Date at Run Time
 
@@ -37,15 +37,9 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-
-
 ![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)
 
-
-
-
-
-### Selecting Year at Run Time
+### Selecting Year at Runtime
 
 By setting the AllowYearEditing property to _true_, you can edit the year at run time. This is dependency property indicates whether the year can be edited at run time. It returns the Boolean value that indicates the state of this property.
 
@@ -72,10 +66,6 @@ this.Content = calendarEdit;
 {% endtabs %}
 
 ![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg)
-
-
-
-
 
 {% seealso %}
 

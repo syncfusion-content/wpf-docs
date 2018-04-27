@@ -11,7 +11,7 @@ documentation: ug
 
 This section illustrates the following run-time features of CalendarEdit control:
 
-## Direction for Month Navigation
+## Direction for month navigation
 
 In the CalendarEdit control, the direction of month navigation is horizontal by default. You can also change this direction to vertical by setting the MonthChangeDirection property to Vertical. This dependency property sets the month change direction. Following are the two month change directions.
 
@@ -43,8 +43,6 @@ This section describes the following:
 * Animation Time for Changing the CalendarEdit Mode
 * Animation Time for Month Navigation
 
-
-
 Animation Time for Changing the CalendarEdit Mode
 
 You can set the animation time for changing the mode of the CalendarEdit control, using the ChangeModeTime property. This dependency property sets the calendar mode changing animation time. It returns an integer value.
@@ -73,7 +71,6 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-
 Animation Time for Month Navigation
 
 The time taken to navigate from one month to another month can be controlled using FrameMovingTime the property. This dependency property sets the value for month changing animation time. It returns an integer value.
@@ -101,57 +98,38 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-
 ## ToolTip
 
 You can set tooltip for specific days in the CalendarEdit control, using the SetToolTip method. The following code example illustrates tooltip setting for the current system date. 
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Creating an instance date
-
 Date a = new Date();
 
-
-
 //Creating an instance of tooltip
-
 ToolTip toolTip = new ToolTip();
 
-
-
 //Setting tooltip text
-
 toolTip.Content = "CurrentDate"; 
 
-
-
 //Getting the current day
-
 a.Day = DateTime.Now.Day;   
 
-
-
 //Getting the current month
-
 a.Month = DateTime.Now.Month;  
 
-
-
 //Getting the current year
-
 a.Year = DateTime.Now.Year;
 
-
-
 //Setting tooltip for current date
-
 calendarEdit.SetToolTip(a, toolTip); 
 
 {% endhighlight %}
+{% endtabs %}
 
-## Scrolling to the Selected Date
+## Scrolling to the selected date
 
 CalendarEdit control enables you to navigate to a particular date in the Calendar, by using the ScrollToDate option. To enable this, set the ScrollToDateEnabled property to true. This dependency property indicates whether to scroll to the selected date. 
 
@@ -177,5 +155,3 @@ this.Content = calendarEdit;
 
 {% endhighlight %}
 {% endtabs %}
-
-
