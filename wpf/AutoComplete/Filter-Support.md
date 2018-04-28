@@ -16,34 +16,29 @@ Filter support is used to filter the matched list of items from the linked sourc
 Filter Support
 {:.caption}
 
-
-
-
-## Adding Filter Support to an Application 
+## Adding filter support to an application 
 
 If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items 
 will be displayed in the drop-down list. If this property is set as False the matched list of items will not be 
 displayed in the drop-down list, instead all the items will be displayed.
 
-
-
-
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ## Tables for properties, methods, and events
 
 ### Properties
-
-
 
 <table>
 <tr>
@@ -62,10 +57,7 @@ bool(true)</td><td>
 </td></tr>
 </table>
 
-
 ### Events
-
-
 
 <table>
 <tr>
@@ -84,8 +76,6 @@ DependencyPropertyChangedCallBack </td><td>
 </td></tr>
 </table>
 
-
-## Sample Link
+## Sample link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-

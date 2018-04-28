@@ -18,16 +18,12 @@ When the value of the StringMode property is set as StartChar, AutoComplete begi
 StringMode—StartChar
 {:.caption}
 
-
-
 When the value of the StringMode property is set as IndexBased, starting index value can be set using the StringModeIndex property. In this mode AutoComplete begins its search from the user specified index of the strings in the source list collection and the matching results will be displayed in the drop-down list. In the figure shown below StringModeIndex value is set as “2” and the entered text is “i”. The AutoComplete displays the list of items which has “i” in the specified index.
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img2.png)
 
 StringMode—IndexBased
 {:.caption}
-
-
 
 When the value of the StringMode property is set as AnyChar, the AutoComplete searches for the strings which has substrings entered in the AutoComplete control. In the figure shown below, based on the entered text “I”, the AutoComplete displays the list of items which has as a substring in it.
 
@@ -36,22 +32,20 @@ When the value of the StringMode property is set as AnyChar, the AutoComplete se
 StringMode—AnyChar
 {:.caption}
 
-
-## Using Custom Filtration Support in an Application 
+## Using custom filtration support in an application 
 
 The StringMode property will be used to attain this functionality by setting its value as StartChar or IndexBased or AnyChar.
 
+{% tabs %}
 {% highlight xaml %}
-
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" StringMode="StartChar"/>
 <syncfusion:AutoComplete x:Name="AutoComplete2" StringMode="IndexBased"/>
 <syncfusion:AutoComplete x:Name="AutoComplete3" StringMode="AnyChar"/>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
-
 
 AutoComplete autoComplete1 = new AutoComplete();
 this.autoComplete1.StringMode = StringMode.StartChar;
@@ -62,11 +56,9 @@ AutoComplete autoComplete3 = new AutoComplete();
 this.autoComplete3.StringMode = StringMode.AnyChar;
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ### Properties
-
-
 
 <table>
 <tr>
@@ -85,8 +77,6 @@ StringMode(enum)</td><td>
 </td></tr>
 </table>
 
-
 ## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-

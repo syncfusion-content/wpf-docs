@@ -14,8 +14,6 @@ You can set the selection range mode for CalendarEdit control in two different w
 * CurrentMonth: selects only days, belonging to the current month from the column
 * WholeColumn: selects the whole column
 
-
-
 For setting the selection range mode, use the following code.
 
 {% tabs %}
@@ -38,4 +36,3 @@ this.Content = calendarEdit;
 
 {% endhighlight %}
 {% endtabs %}
-

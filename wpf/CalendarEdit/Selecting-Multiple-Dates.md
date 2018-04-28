@@ -33,13 +33,7 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-
-
 ![](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg)
-
-
-
-
 
 {% seealso %}
 
