@@ -13,7 +13,6 @@ ChromelessWindow now supports changing the FontSize and TitleBarHeight directly 
 
 TitleBarHeight is a property, which is used to change the height of the TitleBar. By default its value is 30 and we can change this default value as desired 
 
-
 Here is the code example for setting the TitleBarHeight Property
 
 {% tabs %}
@@ -21,29 +20,16 @@ Here is the code example for setting the TitleBarHeight Property
 {% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="ChromelessWindow" Height="350" Width="525" TitleBarHeight="60" TitleBarBackground="Pink" 
-
 syncfusion:SkinStorage.VisualStyle="Metro"  x:Name="_chromelessWindow"  
-
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-
 <Grid>
-
 </Grid>
-
 </syncfusion:ChromelessWindow>
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -60,5 +46,3 @@ this.TitleBarHeight = 60;
 {% endtabs %}
 
 ![](TitleBarHeight-Support_images/TitleBarHeight-Support_img1.jpeg)
-
-

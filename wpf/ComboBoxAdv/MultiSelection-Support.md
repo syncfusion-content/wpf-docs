@@ -13,8 +13,6 @@ If we want to select more than one item in the ComboBoxAdv, AllowMultiSelect pro
 
 #### Properties
 
-
-
 <table>
 <tr>
 <th>
@@ -39,28 +37,23 @@ ObservableCollection&lt;object&gt;</td><td>
 NA</td></tr>
 </table>
 
-
-#### Adding Multiple Selections to an Application 
+#### Adding multiple selections to an application 
 
 `AllowMultiSelect` property can be added directly to an application using the following code snippet.
 
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <syncfusion:ComboBoxAdv AllowMultiSelect="True"></syncfusion:ComboBoxAdv></td></tr>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-
 ComboBoxAdv comboBox = new ComboBoxAdv();
 comboBox.AllowMultiSelect = true;
+
 {% endhighlight %}
-
-
-
+{% endtabs %}
 
 ![](ComboBoxAdv_images/ComboBoxAdv_img9.png)
-

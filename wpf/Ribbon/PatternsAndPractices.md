@@ -629,18 +629,23 @@ Ribbon control provides PRISM support. The following steps explain about creatin
 
 5.Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
 
-		{% tabs %}
+{% tabs %}
 
-		{% highlight XAML %}
+{% highlight XAML %}
 
-		xmlns:Cal="http://www.codeplex.com/CompositeWPF"
+xmlns:Cal="http://www.codeplex.com/CompositeWPF"
 
-		{% endhighlight %}
-		{% endtabs %}
+{% endhighlight %}
+
+{% endtabs %}
 		
-	In the below code, a region called “Tabs” has been created to load RibbonTab Module views
-		{% tabs %}
-		{% highlight XAML %}
+        
+In the below code, a region called “Tabs” has been created to load RibbonTab Module views
+
+
+{% tabs %}
+		
+{% highlight XAML %}
 
 	<syncfusion:RibbonWindow x:Class="RibbonDemoSample.Shell"
 
@@ -664,9 +669,9 @@ Ribbon control provides PRISM support. The following steps explain about creatin
 
 	</syncfusion:RibbonWindow>
 
-	{% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
 
 6.Adding Module to the project
 	 
@@ -674,19 +679,20 @@ Right click the Solution project, point to “Add” and then click “NewProjec
 
  Now add following assemblies to the Module project
 
-    * PresentationCore.dll
-    * PresentationFramework.dll
-    * WindowsBase.dll
+   * PresentationCore.dll
+   * PresentationFramework.dll
+   * WindowsBase.dll
 
    Also add following Prism assemblies
 
-    * Microsoft.Practices.ServiceLocation.dll
-    * Microsoft.Practices.Unity.dll
-    * Microsoft.Practices.Unity.Configuration.dll
-    * Microsoft.Practices.Unity.RegistrationByConvention.dll
-    * Prism.dll
-    * Prism.Unity.Wpf.dll
-    * Prism.Wpf.dll
+   * Microsoft.Practices.ServiceLocation.dll
+   * Microsoft.Practices.Unity.dll
+   * Microsoft.Practices.Unity.Configuration.dll
+   * Microsoft.Practices.Unity
+   * RegistrationByConvention.dll
+   * Prism.dll
+   * Prism.Unity.Wpf.dll
+   * Prism.WPF.dll
 
 7.In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 
