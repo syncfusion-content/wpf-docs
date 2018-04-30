@@ -15,6 +15,8 @@ The various elements of the ColorPickerPalette are illustrated in the following 
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
+
+
 * The Selected Color represents the color that you select.
 * The Drop-Down represents a button, ColorPickerPalette window will open when you click on it.
 * The Automatic Color represents the Color, which can be set by you.
@@ -24,7 +26,8 @@ The various elements of the ColorPickerPalette are illustrated in the following 
 * The More Colors Option provides wide range of color in addition to colors in the palette.
 * The Theme Variant Colors represents the Theme colors with variant.
 
-## Add ColorPickerPalette to an application
+## Add ColorPickerPalette to an Application
+
 
 ColorPickerPalette can be added to an application by using XAML or C# code.
 
@@ -33,27 +36,28 @@ ColorPickerPalette can be added to an application by using XAML or C# code.
 The following code example illustrates how to add the ColorPickerPalette control to an application through XAML.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:ColorPickerPalette x:Name="ColorPicker"/>
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Adding through C#
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through C#.
 
-{% tabs %}
 {% highlight C# %}
 
 ColorPickerPalette colorpicker = new ColorPickerPalette();
+
 this.LayoutRoot.Children.Add(colorpicker);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-### Adding through blend
+### Adding through Blend
 
 The following are the step by step procedure for adding ColorPickerPalette control to an application through Microsoft Expression Blend.
 
@@ -65,8 +69,21 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 4. On the Window menu, select Assets. This opens the Assets Library dialog box.
 5. In the search box, type “ColorPickerPalette” then the search results are displayed as shown.
 
+
+
    ![](Getting-Started_images/Getting-Started_img2.png)
+
+
+
+
 
 6. Drag and drop the ColorPickerPalette control to the sample application.
 
+
+
    ![](Getting-Started_images/Getting-Started_img3.png)
+   
+   
+
+
+
