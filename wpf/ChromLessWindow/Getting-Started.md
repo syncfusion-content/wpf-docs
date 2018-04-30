@@ -16,9 +16,7 @@ The following steps will helps to add ChromelessWindow
 
 1) Create WPF project and refer the following assemblies
 
-
 Syncfusion.Shared.WPF.dll
-
 
 2) Include an XML  namespace for the above assemblies to the Main window.
 
@@ -26,19 +24,12 @@ Syncfusion.Shared.WPF.dll
 
 {% highlight XAML %}
 
-
 <Window x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="MainWindow" Height="350" Width="525"    
-
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-
 </Window>
-
 
 {% endhighlight %}
 
@@ -51,19 +42,11 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 {% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="MainWindow" Height="350" Width="525"    
-
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-
-
 </syncfusion:ChromelessWindow>
-
-
 
 {% endhighlight %}
 
@@ -76,41 +59,28 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 {% highlight c# %}
 
 using Syncfusion.Windows.Shared;
-
 public partial class MainWindow : ChromelessWindow
-
 {
-
-public MainWindow()
-
-{
-
-InitializeComponent();             
-
-} 
-
+    public MainWindow()
+    {
+        InitializeComponent();             
+    } 
 }
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Imports Syncfusion.Windows.Shared
-
-  Partial Public Class MainWindow
-  
-	  Inherits ChromelessWindow
-
-		Public Sub New()
-			InitializeComponent()
-		End Sub
-  End Class
+Partial Public Class MainWindow
+Inherits ChromelessWindow
+Public Sub New()
+InitializeComponent()
+End Sub
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
-
-

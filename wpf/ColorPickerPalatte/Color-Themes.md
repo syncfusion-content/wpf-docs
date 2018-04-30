@@ -11,65 +11,42 @@ documentation: ug
 
 The ColorPickerPalette control includes a list of predefined themes. It allows you to set the required themes. Based on the selected themes, combination of selected theme colors will be displayed on the ThemePanel. The default theme if set to “Office” theme. You can also set the visibility of the ThemePanel by using the ThemePanelVisibility Property.
 
-## Use Case Scenarios
+## Use case scenarios
 
 You can use the Color Themes to have colors based on specific themes.
 
-## Adding Color Theme to an Application 
+## Adding color theme to an application 
 
 Color themes can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the Color Theme feature to an application through XAML.
 
+{% tabs %}
 {% highlight xaml %}
-
-
-
-
 
 <sync:ColorPickerPalette x:Name="ColorPicker" Themes="Apex" />
 
 {% endhighlight %}
-
-
+{% endtabs %}
 
 The following code example illustrates how to add the Color Theme feature to an application through C#.
 
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 ColorPickerPalette colorpicker = new ColorPickerPalette();
-
 colorpicker.Themes = PaletteTheme.Apex;
 
 {% endhighlight %}
-
-
+{% endtabs %}
 
 ![](Color-Themes_images/Color-Themes_img1.png)
 
-
-
-
-
 ![](Color-Themes_images/Color-Themes_img2.png)
-
-
-
-
 
 ![](Color-Themes_images/Color-Themes_img3.png)
 
-
-
-
-
 ### Properties
-
-
 
 <table>
 <tr>
@@ -88,8 +65,7 @@ PaletteTheme.Office</td><td>
 </td></tr>
 </table>
 
-
-### Sample Link
+### Sample link
 
 To view samples: 
 
@@ -98,8 +74,7 @@ To view samples:
 3. Now expand the DragAndDropManagerDemo tree-view item in the Sample Browser.
 4. Choose any one of the samples listed under it to launch. 
 
-
-## Creating Custom ColorPalette
+## Creating custom ColorPalette
 
 `ColorPickerPalette` control can be entirely customized with a custom collection of colors. The following properties must be set for creating custom color palette. 
 
@@ -152,13 +127,10 @@ N> `CustomColor` class is available in `Syncfusion.Windows.Tools.Controls` names
 							   CustomHeaderText="Custom Colors">
 							   
 <syncfusion:ColorPickerPalette.CustomColorsCollection>
-
-      <syncfusion:CustomColor Color="SlateBlue" ColorName="Custom SlateBlue"/>
-      ...
-      <syncfusion:CustomColor Color="Navy" ColorName="Custom Navy"/> 
-	         
+<syncfusion:CustomColor Color="SlateBlue" ColorName="Custom SlateBlue"/>
+...
+<syncfusion:CustomColor Color="Navy" ColorName="Custom Navy"/> 
 </syncfusion:ColorPickerPalette.CustomColorsCollection>
-
 </syncfusion:ColorPickerPalette>
 
 {% endhighlight %}
@@ -166,33 +138,20 @@ N> `CustomColor` class is available in `Syncfusion.Windows.Tools.Controls` names
 {% highlight c# %}
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-
 colorPickerPalette.ThemePanelVisibility= Visibility.Collapsed;
-
 colorPickerPalette.StandardPanelVisibility= Visibility.Collapsed;
-
 colorPickerPalette.RecentlyUsedPanelVisibility= Visibility.Collapsed;
-
 colorPickerPalette.MoreColorOptionVisibility= Visibility.Collapsed;
-
 colorPickerPalette.AutomaticColorVisibility= Visibility.Collapsed;
-
 colorPickerPalette.IsCustomTabVisible= Visibility.Visible;
-
 colorPickerPalette.SetCustomColors= true;
-
 colorPickerPalette.CustomHeaderVisibility= Visibility.Visible;
-
 colorPickerPalette.CustomHeaderText="Custom Colors";
-
 ObservableCollection<CustomColor> customColors = new ObservableCollection<CustomColor>();
-
 customColors.Add(new CustomColor() { Color = Colors.SlateBlue, ColorName = "Custom SlateBlue" });
 
 // Add required custom colors
-
 customColors.Add(new CustomColor() { Color = Colors.Navy, ColorName = "Custom Navy" });
-
 colorPalette.CustomColorsCollection = customColors;
 
 {% endhighlight %}
@@ -202,5 +161,3 @@ colorPalette.CustomColorsCollection = customColors;
 The following screenshot shows the custom ColorPalette,
 
 ![](custom-colors-images/customcolor.png)
-
-

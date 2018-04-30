@@ -11,26 +11,23 @@ documentation: ug
 
 You can change the background color of the ColorPickerPalette at mouse over, based on the brush color set in the MouseOverBackground property.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-  
 <syncfusion:ColorPickerPalette  x:Name="ColorPickerPalette1" MouseOverBackground="Green">       
 </syncfusion:ColorPickerPalette>
+
 {% endhighlight %}
 
 {% highlight C#%}
 
-
 ColorPickerPalette ColorPickerPalette1 = new ColorPickerPalette();
 ColorPickerPalette1.MouseOverBackground = Brushes.Green;
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ### Properties
-
-  
 
 <table>
 <tr>
@@ -46,5 +43,3 @@ Gets or sets the MouseOver BackgroundBrush value of the ColorPickerPalette.</td>
 Brush </td><td>
 N/A </td></tr>
 </table>
-
-

@@ -11,41 +11,34 @@ documentation: ug
 
 Expanded Mode allows you to pick colors from the ColorPickerPalette. By setting IsExpanded Property to True, the ColorPickerPalette control can be hosted in Expanded Mode. By default, this mode is set to False.
 
-### Use Case Scenarios
+### Use case scenarios
 
 Expanded Mode can be used when you want to have the ColorPickerPalette without drop down.
 
-## Adding Expanded Mode to an Application 
+## Adding expanded mode to an application 
 
 Expanded Mode can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the Expanded Mode to an application.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <sync:ColorPickerPalette IsExpanded="True"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-    
- ColorPickerPalette colorpicker = new ColorPickerPalette();     
- colorpicker.IsExpanded = true;
-{% endhighlight %}
+ColorPickerPalette colorpicker = new ColorPickerPalette();     
+colorpicker.IsExpanded = true;
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Expanded-Mode_images/Expanded-Mode_img1.png)
 
-
-
-
-
 ### Properties
-
 
 <table>
 <tr>
@@ -64,8 +57,7 @@ False</td><td>
 </td></tr>
 </table>
 
-
-### Sample Link
+### Sample link
 
 To view samples: 
 
@@ -73,6 +65,3 @@ To view samples:
 2. Select Run Locally Installed Samples in WPF Button.
 3. Now expand the DragAndDropManagerDemo tree-view item in the Sample Browser.
 4. Choose any one of the samples listed under it to launch. 
-
-
-
