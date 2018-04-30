@@ -24,15 +24,11 @@ It is possible to type and select date values in the empty DateTimeEdit text box
 {% highlight c# %}
 
 DateTimeEdit myDateTimeEdit = new DateTimeEdit();
-
 myDateTimeEdit.Pattern = DateTimePattern.ShortDate;
-
 myDateTimeEdit.CanEdit = true;
-
 myDateTimeEdit.DateTime = null;
 
 {% endhighlight  %}
-
 
 {% endtabs %}
 
