@@ -7,12 +7,9 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-
 ## Delimiter String Customization
 
 A Delimiter string in a ComboBoxAdv is “A string that can be displayed between the selected items in the ComboBoxAdv”. We can customize this string by using the property called `SelectedValueDelimiter` in the ComboBoxAdv.
-
-
 
 <table>
 <tr>
@@ -31,26 +28,23 @@ String</td><td>
 NA</td></tr>
 </table>
 
-
-### Adding Delimiter String Customization to an Application 
+### Adding delimiter string customization to an application 
 
 Delimiter string customization can be added directly to an application using the following code snippet: 
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:ComboBoxAdv SelectedValueDelimiter="#"></syncfusion:ComboBoxAdv>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
 
 ComboBoxAdv comboBox = new ComboBoxAdv();     
 comboBox.SelectedValueDelimiter = "#";
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ComboBoxAdv_images/ComboBoxAdv_img11.png)
