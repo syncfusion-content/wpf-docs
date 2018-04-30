@@ -81,7 +81,7 @@ You can create a ColorEdit control either by using XAML code or C# code. Use the
 <!-- Adding ColorEdit -->
 <syncfusion:ColorEdit  Name="colorEdit"/>
 
-{% endtabs %}
+{% endhighlight %}
 {% highlight c# %}
 
 //Creating an instance of ColorEdit control
