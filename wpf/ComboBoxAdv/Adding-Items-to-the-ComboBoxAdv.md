@@ -24,6 +24,7 @@ To view samples:
 
 You can use the `DisplayMemberPath` property to set the value for items that needs to be displayed in the drop-down list.The below code snippet will be used to bind the DataSource to the ComboBoxAdv.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:ComboBoxAdv Name="comboBoxAdv" ItemsSource="{Binding Products}"               DisplayMemberPath="Name"                                                         SelectedValue="{Binding SelectedItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
@@ -32,23 +33,14 @@ You can use the `DisplayMemberPath` property to set the value for items that nee
 
 {% highlight c# %}
 
-
-  public class Model
-  
-  { 
-    
+public class Model
+{ 
     public string Name { get; set; }
- 
-  }
-  
-  public class ViewModel : INotifyPropertyChanged
-  
-  {
-  
+}
+    public class ViewModel : INotifyPropertyChanged
+    {
         private string selectedItems;
-  
         public string SelectedItems
-        
         {
             get
             {
@@ -82,10 +74,8 @@ You can use the `DisplayMemberPath` property to set the value for items that nee
             Products.Add(new Model() { Name = "DE" });
             Products.Add(new Model() { Name = "IN" });
             Products.Add(new Model() { Name = "UA" });
-         
         }
         public event PropertyChangedEventHandler PropertyChanged;
-
         public void RaisePropertyChanged(string propertyName)
         {
             var property = PropertyChanged;
@@ -94,3 +84,4 @@ You can use the `DisplayMemberPath` property to set the value for items that nee
         }
     }
 {% endhighlight %}
+{% endtabs %}
