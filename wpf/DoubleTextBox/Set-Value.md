@@ -25,20 +25,12 @@ N> Do not use the Text property to set the value for the DoubleTextBox. Use only
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox textBox = new DoubleTextBox();
-
 textBox.Width = 100;
-
 textBox.Height = 23;
-
 textBox.Value = 100;
-
 Grid1.Children.Add(textBox);
 
 {% endhighlight %}
@@ -46,13 +38,9 @@ Grid1.Children.Add(textBox);
 {% highlight VB %}
 
 Dim textBox As DoubleTextBox =  New DoubleTextBox() 
- 
 textBox.Width = 100
- 
 textBox.Height = 23
- 
 textBox.Value = 100
- 
 Grid1.Children.Add(textBox)
 
 {% endhighlight %}
@@ -60,7 +48,6 @@ Grid1.Children.Add(textBox)
 {% endtabs %}
 
 ![](Set-Value-images/Set-Value-img1.jpeg)
-
 
 ## UseNullOption
 
@@ -72,23 +59,14 @@ DoubleTextBox accepts null values. To enable the null option, the `UseNullOption
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="170" UseNullOption="True" />
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 170;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.UseNullOption = true;
-
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -96,13 +74,9 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 170
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.UseNullOption = True
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
@@ -110,7 +84,6 @@ Grid1.Children.Add(doubleTextBox)
 {% endtabs %}
 
 ![](Set-Value-images/Set-Value-img2.jpeg)
-
 
 ## NullValue
 
@@ -123,23 +96,14 @@ To set the value, when the value of the DoubleTextBox is null the `NullValue` pr
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
                           Width="150" UseNullOption="True" NullValue="10"/>
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 150;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.NullValue = 10;
-
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -147,13 +111,9 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 150
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.NullValue = 10
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
@@ -162,16 +122,15 @@ Grid1.Children.Add(doubleTextBox)
 
 ![](Set-Value-images/Set-Value-img3.jpeg)
 
-
-## Minimum Value
+## Minimum value
 
 Minimum allowed value for the DoubleTextBox. If the new `MinValue` property value is greater than the `MaxValue` property value, then the MaxValue is set equal to the MinValue. If the Value is less than the new MinValue, then the `Value` property is also set equal to the MinValue.
 
-## Maximum Value
+## Maximum value
 
 Maximum allowed value for the DoubleTextBox. If the `MinValue` property is greater than the new `MaxValue` property, then the `MinValue` property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the `Value` property is set equal to the MaxValue.
 
-## Setting Minimum and Maximum Value
+## Setting minimum and maximum value
 
 The Minimum and Maximum value can be changed by using the `MinVal` and `MaxVal` properties of the DoubleTextBox.
 
@@ -185,24 +144,14 @@ The Minimum and Maximum value can be changed by using the `MinVal` and `MaxVal` 
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox textBox = new DoubleTextBox();
-
 textBox.Width = 100;
-
 textBox.Height = 23;
-
 textBox.Value = 100;
-
 textBox.MaxValue = 999.99;
-
 textBox.MinValue = -999.99;
-
 Grid1.Children.Add(textBox);
 
 {% endhighlight %}
@@ -210,17 +159,11 @@ Grid1.Children.Add(textBox);
 {% highlight VB %}
 
 Dim textBox As DoubleTextBox =  New DoubleTextBox() 
- 
 textBox.Width = 100
- 
 textBox.Height = 23
- 
 textBox.Value = 100
- 
 textBox.MaxValue = 999.99
- 
 textBox.MinValue = -999.99
- 
 Grid1.Children.Add(textBox)
 
 {% endhighlight %}
@@ -265,57 +208,33 @@ N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 150;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.MinValue = 10;
-
 doubleTextBox.MaxValue =100;
-
 doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;
-
 doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;
-
 doubleTextBox.MinValueOnExceedMinDigit = true;
-
 doubleTextBox.MaxValueOnExceedMaxDigit = true;
-
 Grid1.Children.Add(doubleTextBox);
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 150
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.MinValue = 10
- 
 doubleTextBox.MaxValue =100
- 
 doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress
- 
 doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus
- 
 doubleTextBox.MinValueOnExceedMinDigit = True
- 
 doubleTextBox.MaxValueOnExceedMaxDigit = True
- 
 Grid1.Children.Add(doubleTextBox)
-
 
 {% endhighlight %}
 
@@ -336,7 +255,7 @@ MinValidation is set to OnKeyPress, it cannot let to enter a value less than the
 ![](Set-Value-images/Set-Value-img6.jpeg)
 
 
-## Value Changed
+## Value changed
 
 ValueChanged – The event occurs when the `Value` property of the DoubleTextBox is changed.
 
@@ -349,15 +268,9 @@ ValueChanged – The event occurs when the `Value` property of the DoubleTextBox
 
 {% endhighlight %}
 
-{% endtabs %}
-
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.ValueChanged+=doubleTextBox_ValueChanged;
 
 {% endhighlight %}
@@ -365,7 +278,6 @@ doubleTextBox.ValueChanged+=doubleTextBox_ValueChanged;
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.ValueChanged+=doubleTextBox_ValueChanged
 
 {% endhighlight %}
@@ -383,9 +295,7 @@ private void doubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 {
 
 // Insert code to do some operations when the value property is changed 
-
 }
-
 
 {% endhighlight %}
 
@@ -394,14 +304,13 @@ private void doubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 Private  Sub doubleTextBox_ValueChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
  
 ' Insert code to do some operations when the value property is changed 
- 
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Text Changed
+## Text changed
 
 TextChanged – The event occurs when the `Value` property of the DoubleTextBox is changed.
 
@@ -413,14 +322,9 @@ TextChanged – The event occurs when the `Value` property of the DoubleTextBox 
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.TextChanged+=doubleTextBox_TextChanged;
 
 {% endhighlight %}
@@ -428,9 +332,7 @@ doubleTextBox.TextChanged+=doubleTextBox_TextChanged;
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.TextChanged+=doubleTextBox_TextChanged
-
 
 {% endhighlight %}
 
@@ -447,7 +349,6 @@ private void DoubleTextBox_TextChanged(object sender, TextChangedEventArgs e)
 {
 
 // Insert code to do some operations when the Text property is changed 
-
 }
 
 {% endhighlight %}
@@ -457,14 +358,13 @@ private void DoubleTextBox_TextChanged(object sender, TextChangedEventArgs e)
 Private  Sub DoubleTextBox_TextChanged(ByVal sender As Object, ByVal e As TextChangedEventArgs)
  
 ' Insert code to do some operations when the Text property is changed 
- 
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Culture Changed
+## Culture changed
 
 CultureChanged – The event occurs when the `Culture` property of the DoubleTextBox is changed.
 
@@ -476,14 +376,9 @@ CultureChanged – The event occurs when the `Culture` property of the DoubleTex
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.CultureChanged += doubleTextBox_CultureChanged;
 
 {% endhighlight %}
@@ -491,7 +386,6 @@ doubleTextBox.CultureChanged += doubleTextBox_CultureChanged;
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.CultureChanged += doubleTextBox_CultureChanged
 
 {% endhighlight %}
@@ -505,24 +399,19 @@ The CultureChanged event can be handled as follows
 {% highlight C# %}
 
 private void DoubleTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
 {
 
 // Insert code to do some operations when the culture property is changed 
-
 }
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.CultureChanged += doubleTextBox_CultureChangedPrivate  Sub DoubleTextBox_CultureChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
  
 ' Insert code to do some operations when the culture property is changed 
- 
 End Sub
 
 
@@ -530,7 +419,7 @@ End Sub
 
 {% endtabs %}
 
-## Maximum Value Changed
+## Maximum value changed
 
 MaxValueChanged – The event occurs when the `MaxValue` property of the DoubleTextBox is changed.
 
@@ -542,14 +431,9 @@ MaxValueChanged – The event occurs when the `MaxValue` property of the DoubleT
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.MaxValueChanged += doubleTextBox_MaxValueChanged;
 
 
@@ -558,7 +442,6 @@ doubleTextBox.MaxValueChanged += doubleTextBox_MaxValueChanged;
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.MaxValueChanged += doubleTextBox_MaxValueChanged
 
 {% endhighlight %}
@@ -572,7 +455,6 @@ To handle the MaxValueChanged event, use the following code.
 {% highlight C# %}
 
 private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
 {      
 
 // Insert code to do some operations when the MaxValue property is changed 
@@ -586,14 +468,13 @@ private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropert
 Private  Sub DoubleTextBox_MaxValueChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)      
  
 ' Insert code to do some operations when the MaxValue property is changed 
- 
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Minimum Value Changed
+## Minimum value changed
 
 MinValueChanged – The event occurs when the `MinValue` property of the DoubleTextBox is changed.
 
@@ -605,14 +486,9 @@ MinValueChanged – The event occurs when the `MinValue` property of the DoubleT
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.MinValueChanged += doubleTextBox_MinValueChanged;
 
 {% endhighlight %}
@@ -620,7 +496,6 @@ doubleTextBox.MinValueChanged += doubleTextBox_MinValueChanged;
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.MinValueChanged += doubleTextBox_MinValueChanged
 
 {% endhighlight %}
@@ -634,7 +509,6 @@ To handle the MinValueChanged event, use this follow code below
 {% highlight C# %}
 
 private void DoubleTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
 {
 
 // Insert code to do some operations when the MinValue property is changed 
@@ -648,14 +522,13 @@ private void DoubleTextBox_MinValueChanged(DependencyObject d, DependencyPropert
 Private  Sub DoubleTextBox_MinValueChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
  
 ' Insert code to do some operations when the MinValue property is changed 
- 
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## NumberDecimalDigits Changed
+## NumberDecimalDigits changed
 
 NumberDecimalDigitsChanged – The event occurs when the NumberDecimalDigits property of the DoubleTextBox gets changed.
 
@@ -667,14 +540,9 @@ NumberDecimalDigitsChanged – The event occurs when the NumberDecimalDigits pro
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.NumberDecimalDigitsChanged += DoubleTextBox_NumberDecimalDigitsChanged;
 
 {% endhighlight %}
@@ -682,7 +550,6 @@ doubleTextBox.NumberDecimalDigitsChanged += DoubleTextBox_NumberDecimalDigitsCha
 {% highlight VB %}
 
 Private doubleTextBox As DoubleTextBox = New DoubleTextBox()
-
 doubleTextBox.NumberDecimalDigitsChanged += DoubleTextBox_NumberDecimalDigitsChanged;
 
 {% endhighlight %}
@@ -697,11 +564,10 @@ To handle the NumberDecimalDigitsChanged, use this follow code below.
 
 
 private void DoubleTextBox_NumberDecimalDigitsChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-  {
+{
            
-   // Insert code to do some operations when the NumberDecimalDigits property is changed 
-  }
-
+// Insert code to do some operations when the NumberDecimalDigits property is changed 
+}
 
 {% endhighlight %}
 
@@ -718,7 +584,7 @@ End Sub
 {% endtabs %}
 
 
-## Selection Changed
+## Selection changed
 
 SelectionChanged – The event occurs when the selection in the textbox is changed.
 
@@ -730,14 +596,9 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-
 doubleTextBox.SelectionChanged += doubleTextBox_SelectionChanged;
 
 {% endhighlight %}
@@ -745,7 +606,6 @@ doubleTextBox.SelectionChanged += doubleTextBox_SelectionChanged;
 {% highlight VB %}
 
 Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
- 
 doubleTextBox.SelectionChanged += doubleTextBox_SelectionChanged
 
 {% endhighlight %}
@@ -758,13 +618,10 @@ To handle the SelectionChanged, the following code is used.
 
 {% highlight C# %}
 
-
 private void DoubleTextBox_SelectionChanged(object sender, RoutedEventArgs e)
-
 {
 
 // Insert code to do some operations when the selection changed.
-
 }
 
 {% endhighlight %}
@@ -774,7 +631,6 @@ private void DoubleTextBox_SelectionChanged(object sender, RoutedEventArgs e)
 Private  Sub DoubleTextBox_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
  
 ' Insert code to do some operations when the selection changed.
- 
 End Sub
 
 {% endhighlight %}

@@ -26,19 +26,12 @@ When the MaxDateTime is set, if the MinDateTime property is greater than the new
 {% highlight c# %}
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
-
 dateTimeEdit.Width = 200;
-
 dateTimeEdit.Height = 25;
-
 dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
-
 dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);
-
 dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);
-
 dateTimeEdit.Pattern = DateTimePattern.LongDate;
-
 this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% endhighlight  %}
