@@ -44,6 +44,16 @@ colorpicker.Themes = PaletteTheme.Apex;
 
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+
+ColorPickerPalette colorpicker = new ColorPickerPalette()
+
+colorpicker.Themes = PaletteTheme.Apex
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Color-Themes_images/Color-Themes_img1.png)
