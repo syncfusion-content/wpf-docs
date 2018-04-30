@@ -74,7 +74,7 @@ To view samples:
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select Run Locally Installed Samples in WPF Button.
-3. Now Search ColorPickerPallette sample and launch it.
+3. Now Search ColorPickerPalette sample and launch it.
 
 
 

@@ -92,7 +92,7 @@ To view samples:
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.
-3. Now select the ColorPickerPallette Sample under it.
+3. Now select the ColorPickerPalette Sample under it.
 
 
 ## Creating Custom ColorPalette

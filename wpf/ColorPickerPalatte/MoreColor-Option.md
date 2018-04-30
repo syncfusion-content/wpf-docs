@@ -63,20 +63,20 @@ The MoreColorIcon property used to set the Icon left to the More Color option .
 
 {% highlight XAML %}
 
-<syncfusion:ColorPickerPalette x:Name="ColorPicker" MoreColorsIcon="Morecolor.png"  MoreColorOptionVisibility="Visible"  Width="100" Height="23" />
+<syncfusion:ColorPickerPalette x:Name="ColorPicker" MoreColorsIcon="More color.png"  MoreColorOptionVisibility="Visible"  Width="100" Height="23" />
 
 {% endhighlight %}
 
 {% highlight C#}
 
-   ColorPicker.Icon = new BitmapImage(new Uri(@"Morecolor.png", UriKind.RelativeOrAbsolute));
+ColorPicker.Icon = new BitmapImage(new Uri(@"color.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 
-ColorPicker.Icon = New BitmapImage(New Uri("Morecolor.png", UriKind.RelativeOrAbsolute))
+ColorPicker.Icon = New BitmapImage(New Uri("color.png", UriKind.RelativeOrAbsolute))
 
 {% endhighlight %}
 
@@ -133,7 +133,7 @@ To view samples:
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.
-3. Now Search ColorPickerPallette sample and launch it. 
+3. Now Search ColorPickerPalette sample and launch it. 
 
 
 
