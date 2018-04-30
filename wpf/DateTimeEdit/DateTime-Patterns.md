@@ -48,7 +48,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Sh
 
 ![](DateTime-Patterns_images/DateTime-Patterns_img1.png)
 
-## Custom Pattern
+## Custom pattern
 
 You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the CustomPattern property.
 
@@ -63,25 +63,18 @@ You can also set the custom pattern for displaying the date in the DateTimeEdit 
 {% highlight c# %}
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
-
 dateTimeEdit.Width = 200;
-
 dateTimeEdit.Height = 25;
-
 dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
-
 dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
 
 //Setting Custom Pattern
-
 dateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";
-
 this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% endhighlight %}
 
 {% endtabs %} 
-
 
 ![](DateTime-Patterns_images/DateTime-Patterns_img2.png)
 
