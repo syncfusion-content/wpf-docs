@@ -15,181 +15,113 @@ In the below code, a DropDownButtonAdv named Change View has been created whose 
 
 * 1.Create a class that holds the properties of the menu items (View model).
 
+{% tabs %}
 {% highlight C# %}
 
 class Model
-
 {
-
-  private string name;
-
-  public string Name
-
-  {
-
-    get
-
+    private string name;
+    public string Name
     {
-
-      return name;
-
+        get
+        {       
+            return name;
+        }
+        set
+        {
+            name = value;
+        }
     }
-
-    set
-
+    private string image;
+    public string Image
     {
-
-      name = value;
-
+        get
+        {
+            return image;
+        }
+        set
+        {
+            image = value;
+        }
     }
-
-  }
-
-  private string image;
-
-  public string Image
- 
-  {
-
-    get
-
-    {
-
-      return image;
-
-    }
-
-    set
-
-    {
-
-      image = value;
-
-    }
-
- }
-
-
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 * 2.Create a list that holds the objects of the class
+
 
 {% highlight C# %}
 
 class ViewModel
-
 {
-
-  private List<Model> dropDownItems;
-
-  public List<Model> DropDownItems
-
-  {
-
-    get
-
+    private List<Model> dropDownItems;
+    public List<Model> DropDownItems
     {
-
-      return dropDownItems;
-
+        get
+        {
+            return dropDownItems;
+        }
+        set
+        {
+            dropDownItems = value;
+        }
     }
-
-    set
-
+    public ViewModel()
     {
-
-      dropDownItems = value;
-
+        DropDownItems = new List<Model>();
+        DropDownItems.Add(new Model() {Name = "Compact",
+        Image = "Images/Single.png"});
+        DropDownItems.Add(new Model() { Name = "Single",  
+        Image= "Images/Compact.png"});
+        DropDownItems.Add(new Model() { Name = "Preview", 
+        Image= "Images/Preview.png"});
     }
-
-  }
-
-  public ViewModel()
-
-  {
-
-    DropDownItems = new List<Model>();
-
-    DropDownItems.Add(new Model() {Name = "Compact",
-
-    Image = "Images/Single.png"});
-
-    DropDownItems.Add(new Model() { Name = "Single",  
-
-    Image= "Images/Compact.png"});
-
-    DropDownItems.Add(new Model() { Name = "Preview", 
-
-    Image= "Images/Preview.png"});
-
-  }
-
- }
+}
 
 {% endhighlight %}
+{% endtabs %}
 
 * 3.Bind the properties of the menu items, to display the item names and their respective icon image.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:DropDownButtonAdv Label="Change View" SizeMode="Large" LargeIcon="Images/images.png" >
-
 <syncfusion:DropDownMenuGroup ItemsSource="{Binding DropDownItems}">
-
 <syncfusion:DropDownMenuGroup.ItemTemplate>
-
 <DataTemplate>
-
 <syncfusion:DropDownMenuItem Header="{Binding Name}">
-
 <syncfusion:DropDownMenuItem.Icon>
-
 <Image Source="{Binding Image}"/>
-
 </syncfusion:DropDownMenuItem.Icon>
-
 </syncfusion:DropDownMenuItem>
-
 </DataTemplate>
-
 </syncfusion:DropDownMenuGroup.ItemTemplate>
-
 </syncfusion:DropDownMenuGroup>
-
 </syncfusion:DropDownButtonAdv> 
 
 {% endhighlight %}
 
-
 {% highlight C# %}
 
 public partial class MainWindow:Window
-
 {
-
    public MainWindow()
-
    {
-
-     InitializeComponent();
-
-     this.DataContext = new ViewModel();
-
+        InitializeComponent();
+        this.DataContext = new ViewModel();
    }
-
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ## ChangeView DropDownButtonAdv
 
 ![](DropDownButtonAdv_Binding_images/DropDownButtonAdv_Binding_img1.jpeg)
 
-
 ## ChangeView DropDownButtonAdv with menu items
 
 ![](DropDownButtonAdv_Binding_images/DropDownButtonAdv_Binding_img2.jpeg)
-
-
