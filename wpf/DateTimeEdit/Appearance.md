@@ -32,10 +32,6 @@ For example, `Blend` style applied for the `DateTimeEdit` control by setting `
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 SkinStorage.SetVisualStyle(datetimeedit, "Blend");

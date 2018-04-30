@@ -9,21 +9,13 @@ documentation: ug
 
 # Getting Started
 
-## Control Structure
-
-
+## Control structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
-
-
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
-### CurrencyTextBox Members
+### CurrencyTextBox members
 
 CurrencyTextBox exposes the following members:
 
@@ -322,7 +314,6 @@ ZeroColor</td></tr>
 
 #### Methods
 
-
 <table>
 <tr>
 <th>
@@ -350,10 +341,7 @@ Void</td><td>
 </td></tr>
 </table>
 
-
 #### Events
-
-
 
 <table>
 <tr>
@@ -407,7 +395,7 @@ Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
 
-### Creating a CurrencyTextBox Control
+### Creating a CurrencyTextBox control
 
 CurrencyTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
@@ -418,74 +406,38 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 1. Open Visual Studio.
 2. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-
-
    ![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-
 
 3. In the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
-
-
    ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-
 
 4. Add the following reference with the sample project:
    * Syncfusion.Shared.WPF.dll
 
-
-
    ![](Getting-Started_images/Getting-Started_img5.png)
-
-
-
-
 
 5. Click the C# file, to open the C# file and add the CurrencyTextBox to the application.
 
+{% tabs %}
+{%highlight c#%}
 
-   {%highlight c#%}
+public partial class MainWindow : Window
+{
+	public MainWindow()
+	{
+		InitializeComponent();
+		Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new Syncfusion.Windows.Shared.CurrencyTextBox();
+		currencyTextBox.Width = 100;
+		currencyTextBox.Height = 25;
+		this.LayoutRoot.Children.Add(currencyTextBox);
+	}
+}
 
-
-
-
-
-			public partial class MainWindow : Window
-
-				{
-
-					public MainWindow()
-
-					{
-
-						InitializeComponent();
-
-						Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new
-
-									  Syncfusion.Windows.Shared.CurrencyTextBox();
-
-						currencyTextBox.Width = 100;
-
-						currencyTextBox.Height = 25;
-
-						this.LayoutRoot.Children.Add(currencyTextBox);
-
-					}
-
-				 }
-		{%endhighlight%}
-
-
+{%endhighlight%}
+{% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img6.png)
-
-   
 
 N> If you do not set any value to the CurrencyTextBox then the default value will be as follows: If the UseNullOption is set to true, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
@@ -505,46 +457,27 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 2. In the Visual Studio Toolbox, click the Syncfusion WPF Toolbox tab and select CurrencyTextBox.
 3. Drag and drop the CurrencyTextBox to Design View, to add the CurrencyTextBox to the application.
 
-
-
    ![](Getting-Started_images/Getting-Started_img7.png)
-
-
-
-
 
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
+{% tabs %}
+{%highlight xaml%}
 
-   {%highlight xaml%}
-
-
-			<Window x:Class="WpfApp.MainWindow"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					Title="CurrencyTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-				<Grid x:Name="LayoutRoot">
-
-					<syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" />
-
-				</Grid>
-
-			</Window>
-			
-	 {%endhighlight%}
-
-
-
+<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="CurrencyTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid x:Name="LayoutRoot">
+<syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" />
+</Grid>
+</Window>
+		
+{%endhighlight%}
+{% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
-   
 {%seealso%}
 
 Creating a CurrencyTextBox by using Expression Blend
@@ -553,28 +486,18 @@ Creating a CurrencyTextBox by using C#
 
 {%endseealso%}
 
-### Creating a CurrencyTextBox by using Expression Blend
+### Creating a CurrencyTextBox by using expression blend
 
 The steps to create a CurrencyTextBox in the application by using Expression Blend are as follows:
 
 1. Open Expression Blend. 
 2. On the File menu, select New Project. This opens the New Project dialog box.
 
-
-
    ![](Getting-Started_images/Getting-Started_img9.png)
-
-
-
-
 
 3. In the Project types panel, select WPF Application and then click OK.
 
-
-
    ![](Getting-Started_images/Getting-Started_img10.png)
-   
-
 
    1. Add the following reference with the sample project:
 
@@ -584,81 +507,52 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
    3. In the Search box, type CurrencyTextBox. This displays the search results.
 
-
-
    ![](Getting-Started_images/Getting-Started_img11.png)
-
-
-
-
 
 4. Drag the CurrencyTextBox control to Design View.
 
-
-
    ![](Getting-Started_images/Getting-Started_img12.png)
 
+{% tabs %}
+{%highlight xaml%}
 
+<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="CurrencyTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid x:Name="LayoutRoot">
+<syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" />
+</Grid>
+</Window>
 
-
-    {%highlight xaml%}
-
-
-
-
-			<Window x:Class="WpfApp.MainWindow"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					Title="CurrencyTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-				<Grid x:Name="LayoutRoot">
-
-					<syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" />
-
-				</Grid>
-
-			</Window>
-
-
+{% endhighlight %}
+{% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
-   {%endhighlight%}
-   
-   
-
-
 ## Blendability
 
-### Setting Value
+### Setting value
 
 You have to use the Value property to set the value for the CurrencyTextBox.
 
 N> Do not use the Text property to set the value for the CurrencyTextBox. Use only the Value property.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-
 currencyTextBox.Value = 100;
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img14.png)
-
-
 
 {%seealso%}
 
@@ -668,28 +562,26 @@ NullValue support
 
 {%endseealso%}
 
-### Setting Minimum and Maximum Value
+### Setting minimum and maximum value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the CurrencyTextBox.
 
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"   MinValue="-999.99" MaxValue="999.99"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-
 currencyTextBox.MinValue = -999.99;
 currencyTextBox.MaxValue = 999.99;
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img15.png)
-
-
 
 {%seealso%}
 
@@ -699,34 +591,31 @@ Binding support
 
 {%endseealso%}
 
-### Setting Watermark
+### Setting watermark
 
 You can set the Watermark for the CurrencyTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
 N> WatermarkText is visible only when the value is null.
 
+{% tabs %}
 {% highlight xaml %}
 
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="100" Value="{x:Null}" MinValue="-999" MaxValue="999"  UseNullOption="True"   WatermarkText="Type Here" WatermarkTextIsVisible="True"/>
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="100" Value="{x:Null}" MinValue="-999" MaxValue="999" 
- UseNullOption="True"   WatermarkText="Type Here" WatermarkTextIsVisible="True"/>
 {% endhighlight %}
 
 {% highlight C# %}
-
 
 currencyTextBox.UseNullOption = true;
 currencyTextBox.NullValue = null;
 currencyTextBox.WatermarkText = "Type Here";
 currencyTextBox.WatermarkTextIsVisible = true;
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img16.png)
-
-
 
 {%seealso%}
 Watermark Template
 {%endseealso%}
-

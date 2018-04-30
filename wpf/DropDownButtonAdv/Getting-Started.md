@@ -29,30 +29,28 @@ The DropDownButtonAdv control is available in the following assembly:
 The following code explains how to add a DropDownButtonAdv control using XAML:
 
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <sync:DropDownButtonAdv Label="Hello World"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 The DropDownButtonAdv control can be created using C# as follows:
 
-
-
+{% tabs %}
 {% highlight C# %}
 
 DropDownButtonAdv button = new DropDownButtonAdv()
-
 button.Label = "Hello World";
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
-### Setting Size Mode
+### Setting size mode
 
 The size mode of the DropDownButtonAdv can be easily modified using the property SizeMode. The SizeMode property contains the following values:
 
@@ -60,42 +58,50 @@ The size mode of the DropDownButtonAdv can be easily modified using the property
 * Normal
 * Large
 
-###Small Mode
+### Small mode
 
 When the SizeMode is set to Small, the icon of the DropDownButtonAdv control is displayed without the label.
 
 Use the following code snippet to set the SizeMode to Small:
 
 
+{% tabs %}
+{% highlight xaml %} 
+<sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/> 
+{% endhighlight %} 
 
-{% highlight xaml %} <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/> {% endhighlight %} 
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small; {% endhighlight %}
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small; 
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
-###Normal Mode
+### Normal mode
 
 The DropDownButtonAdv control retains the default appearance, when the SizeMode is set to Normal, 
 
 Use the following code snippet to set the SizeMode to Normal:
 
+{% tabs %}
+{% highlight xaml %} 
+<sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/> 
+{% endhighlight %}
 
-{% highlight xaml %} <sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/> {% endhighlight %}
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal; {% endhighlight %}
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal; 
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-###Large Mode
+### Large mode
 
 When the SizeMode is set to Large, the DropDownButtonAdv control is displayed with large icon and provides multiline support.
 
@@ -119,7 +125,7 @@ Use the following code snippet to set the SizeMode to Large:
 
 
 
-### Setting Image
+### Setting image
 
 The Image displayed in the control can be set using two properties:
 
@@ -185,7 +191,7 @@ button.LargeIcon = new BitmapImage(new Uri("employee.png"));
 
 
 
-### Adding Items to DropDownButtonAdv
+### Adding items to DropDownButtonAdv
 
 The DropDownMenuGroup acts as a container for the DropDownButtonAdv control, which provides customization such as Resizing, Header and Scrollbar support.
 
@@ -219,7 +225,7 @@ button.Content = menu;
 
 
 
-## DropDownButtonAdv Members
+## DropDownButtonAdv members
 
 ### Properties
 

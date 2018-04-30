@@ -7,22 +7,23 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# Keyboard and Mouse support
+# Keyboard and Mouse Support
 
 Up or down arrows in the DateTimeEdit control spin the selected parts (month, day, year, hour, second, and minute) one step up or down. Mouse Scroll in the DateTimeEdit control spin the selected parts in the DateTime property one step up or down. The spin behavior in the DateTimeEdit control can be enabled by setting the IsScrollingOnCircle property to true.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"  IsScrollingOnCircle="True"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 After selecting any part in the DateTime value if you press the Up or Down arrows (or Scroll the Mouse Up or Down) then the selected value will automatically change.
 
 ![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)
 
-
-## Open and Close DropDown through Keyboard
+## Open and Close drop-down through Keyboard
 
 `DateTimeEdit` dropdown Popup can be opened and closed by pressing Enter key. This behavior can be enabled by setting the `AllowEnter` property of DateTimeEdit to true.
 
@@ -31,22 +32,14 @@ After selecting any part in the DateTime value if you press the Up or Down arrow
 {% highlight XAML %}
 
 <syncfusion:DateTimeEdit x:Name="datetimeedit" CanEdit="False" AllowEnter="True">
-
 </syncfusion:DateTimeEdit>
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 datetimeedit.CanEdit = false;
-
 datetimeedit.AllowEnter = true;
-
 
 {% endhighlight %}
 

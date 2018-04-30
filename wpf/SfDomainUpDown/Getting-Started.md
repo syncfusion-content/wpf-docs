@@ -18,42 +18,21 @@ The following code sample shows how to create the DomainUpDown from code-behind 
 
 {%highlight xaml%}
 
-
-
-
-
 <Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
-
-    <Grid>
-
-
-
-        <editors:SfDomainUpDown x:Name="domainUpDown"
-
-                               HorizontalAlignment="Center"
-
-                               VerticalAlignment="Center"
-
-                               Width="200"/>
-
-    </Grid>
-
+<Grid>
+<editors:SfDomainUpDown x:Name="domainUpDown"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Width="200"/>
+</Grid>
 </Page>
-
 
 {%endhighlight%}
 
 {%highlight c#%}
 
-
-
 SfDomainUpDown domainUpDown = new SfDomainUpDown();
-
-
 
 {%endhighlight%}
 
 {%endtabs%}
-
-
-

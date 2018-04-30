@@ -7,7 +7,7 @@ control: CurrencyTextBox
 documentation: ug
 ---
 
-# Keyboard and Mouse support
+# Keyboard and Mouse Support
 
 Up or down arrows in the CurrencyTextBox spin the values one step up or down. Mouse Scroll in the CurrencyTextBox spin values one step up or down. The spin behavior in the CurrencyTextBox can be enabled by setting the IsScrollingOnCircle property to true.
 

@@ -13,39 +13,34 @@ documentation: ug
 
 CurrencyTextBox provides globalization support through the Culture property. 
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
-
 
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.Value = 1234567;
 currencyTextBox.Culture = new CultureInfo("en-US");
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
-
-
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"Culture="fr-FR" Value="1234567"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
-
 
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
@@ -54,9 +49,9 @@ currencyTextBox.Value = 1234567;
 currencyTextBox.Culture = new CultureInfo("fr-FR");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
-
 
 As you have seen in these samples whenever you change the Culture property the Value is formatted based on the Culture.
 
@@ -64,45 +59,38 @@ As you have seen in these samples whenever you change the Culture property the V
 
 You can customize the Number Format either by using the NumberFormat property or the CurrencyGroupSeparator, CurrencyGroupSizes, CurrencyDecimalDigits, and CurrencyDecimalSeparator, CurrencySymbol, CurrencyNegativePattern, and CurrencyPositivePattern properties.
 
-
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  Value="1234567">   
- <syncfusion:CurrencyTextBox.NumberFormat>        
+<syncfusion:CurrencyTextBox.NumberFormat>        
 <numberformat:NumberFormatInfo CurrencyGroupSeparator="/" CurrencyDecimalDigits="4" CurrencyDecimalSeparator="*"   CurrencySymbol="$"/>  
-  </syncfusion:CurrencyTextBox.NumberFormat></syncfusion:CurrencyTextBox>
+</syncfusion:CurrencyTextBox.NumberFormat></syncfusion:CurrencyTextBox>
+
 {% endhighlight %}
 
 {% highlight C# %}
-
 
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new  Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.Value = 1234567;
-currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator = "/", CurrencyDecimalDigits = 4, CurrencyDecimalSeparator = "*", 
-  CurrencySymbol = "$" };
+currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator = "/", CurrencyDecimalDigits = 4, CurrencyDecimalSeparator = "*", CurrencySymbol = "$" };
+
 {% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
 
-
-
-
-
+{% tabs %}
 {% highlight xaml %}
 
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567" CurrencyGroupSeparator="/" CurrencyDecimalDigits="4"    CurrencyDecimalSeparator="*" CurrencySymbol="$">
+</syncfusion:CurrencyTextBox>
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567"                           
- CurrencyGroupSeparator="/" CurrencyDecimalDigits="4"    CurrencyDecimalSeparator="*" CurrencySymbol="$">
- </syncfusion:CurrencyTextBox>
 {% endhighlight %}
 
 {% highlight C# %}
-
 
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
@@ -112,12 +100,11 @@ currencyTextBox.CurrencyGroupSeparator = "/";
 currencyTextBox.CurrencyDecimalDigits = 4;
 currencyTextBox.CurrencyDecimalSeparator = "*";
 currencyTextBox.CurrencySymbol = "$";
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
-
-
 
 ### CurrencyPositivePattern
 
@@ -148,21 +135,15 @@ $ n</td></tr>
 n $</td></tr>
 </table>
 
+{% tabs %}
 {% highlight xaml %}
 
-
-
-
-
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234" 
-
-                            CurrencyPositivePattern="3"/>
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234" CurrencyPositivePattern="3"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
-
-
 
 ### CurrencyNegativePattern
 
@@ -241,19 +222,12 @@ n- $</td></tr>
 (n $)</td></tr>
 </table>
 
+{% tabs %}
 {% highlight xaml %}
 
-
-
-
-
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" 
-
-                            Value="-1234" CurrencyNegativePattern="0"/>
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="-1234" CurrencyNegativePattern="0"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
-
-
-
