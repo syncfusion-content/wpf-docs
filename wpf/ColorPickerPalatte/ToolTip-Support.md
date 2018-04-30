@@ -13,19 +13,13 @@ The ToolTip is a small hover box with information about the item on which mouse 
 
 For Example: The color can be applied to background or text. The variant color percentage difference details can then be obtained from the base colors.
 
-### Use Case Scenarios
+### Use case scenarios
 
 You can use ToolTip support to know the color name and its variant details.
 
-
-
 ![](ToolTip-Support_images/ToolTip-Support_img1.png)
 
-
-
-
-
-### Sample Link
+### Sample link
 
 To view samples: 
 
@@ -33,6 +27,3 @@ To view samples:
 2. Select   Run Locally Installed Samples in WPF Button.
 3. Now expand the DragAndDropManagerDemo tree-view item in the Sample Browser.
 4. Choose any one of the samples listed under it to launch. 
-
-
-
