@@ -43,9 +43,13 @@ The following code example illustrates how to add the ColorPickerPalette control
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Adding through C#
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through C#.
+
+{% tabs %}
 
 {% highlight C# %}
 
