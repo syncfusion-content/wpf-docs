@@ -40,6 +40,12 @@ SkinStorage.SetVisualStyle(colorPickerPalette, "Metro");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+SkinStorage.SetVisualStyle(colorPickerPalette, "Metro")
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -103,10 +109,17 @@ You can change the background color of the ColorPickerPalette at mouse over, bas
 
 {% endhighlight %}
 
-{% highlight C#%}
+{% highlight C# %}
 
 ColorPickerPalette ColorPickerPalette1 = new ColorPickerPalette();
 ColorPickerPalette1.MouseOverBackground = Brushes.Green;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ColorPickerPalette ColorPickerPalette1 = new ColorPickerPalette()
+ColorPickerPalette1.MouseOverBackground = Brushes.Green
 
 {% endhighlight %}
 

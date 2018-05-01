@@ -39,6 +39,16 @@ The following code example illustrates how to add the Expanded Mode to an applic
  
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+    
+ ColorPickerPalette colorpicker = new ColorPickerPalette()
+      
+ colorpicker.IsExpanded = true
+ 
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Expanded-Mode_images/Expanded-Mode_img1.png)
