@@ -39,11 +39,13 @@ RecentlyUsedPanelVisibility="Collapsed"/>
 
 {% endhighlight %}
 
+{% endtabs %}
 
 The following code example illustrates how to add the Setting Panel Visibilities feature to an application through C#.
 
+{% tabs %}
 
-{% highlight C#%}
+{% highlight C# %}
 
 
 ColorPickerPalette colorpicker = new ColorPickerPalette();
@@ -52,9 +54,21 @@ colorpicker.ThemePanelVisibility = System.Windows.Visibility.Collapsed;
 
 colorpicker.StandardPanelVisibility = System.Windows.Visibility.Collapsed;
 
-colorpicker.RecentlyUsedPanelVisibility = System.Windows.
+colorpicker.RecentlyUsedPanelVisibility = System.Windows.Visibility.Collapsed;
 
-                                          Visibility.Collapsed;
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+ColorPickerPalette colorpicker = new ColorPickerPalette()
+
+colorpicker.ThemePanelVisibility = System.Windows.Visibility.Collapsed
+
+colorpicker.StandardPanelVisibility = System.Windows.Visibility.Collapsed
+
+colorpicker.RecentlyUsedPanelVisibility = System.Windows.Visibility.Collapsed
+
 {% endhighlight %}
 
 {% endtabs %}
