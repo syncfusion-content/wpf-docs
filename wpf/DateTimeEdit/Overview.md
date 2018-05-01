@@ -22,7 +22,7 @@ The core features of the DateTimeEdit are as follows:
 * Provides Watermark support.
 * Provides maximum and minimum value support.
 
-## Control Structure
+## Control structure
 
 ![](Overview_images/Overview_img1.png)
 
@@ -31,8 +31,7 @@ The core features of the DateTimeEdit are as follows:
 ![](Overview_images/Overview_img3.png)
 
 
-
-### DateTimeEdit Members
+### DateTimeEdit members
 
 DateTimeEdit exposes the following members:
 
@@ -275,5 +274,3 @@ DependencyPropertyChangedEventArgs</td><td>
 Occurs when the Calendar Popup opens.</td><td>
 CalendarPopupOpened</td></tr>
 </table>
-
-

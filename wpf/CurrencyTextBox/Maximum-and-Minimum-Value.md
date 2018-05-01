@@ -26,14 +26,12 @@ You can validate the MinValue in two ways:
 
 ## MaxValidation
 
-
 You can validate the MaxValue in two ways:
 
 * OnKeyPress – MaxValue of the CurrencyTextBox is validated on the key press.
 * OnLostFocus – MaxValue of the CurrencyTextBox is validated on the lost focus only.
 
 ## MinValueOnExceedMinDigit
-
 
 If this property is set to true, then when you enter a value less than the MinValue then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
@@ -45,19 +43,14 @@ If this property is set to true, then when you enter a value greater than the Ma
 
 N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
-
-
-
-
+{% tabs %}
 {% highlight xaml %}
 
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  MinValue="-999" MaxValue="999" MinValidation="OnKeyPress" MaxValidation="OnLostFocus"  MinValueOnExceedMinDigit="   MaxValueOnExceedMaxDigit="True"/> 
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  MinValue="-999"
- MaxValue="999"       MinValidation="OnKeyPress" MaxValidation="OnLostFocus"  MinValueOnExceedMinDigit="     MaxValueOnExceedMaxDigit="True"/> 
 {% endhighlight %}
 
 {% highlight C# %}
-
 
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
@@ -68,28 +61,18 @@ currencyTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPre
 currencyTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;
 currencyTextBox.MinValueOnExceedMinDigit = true;
 currencyTextBox.MaxValueOnExceedMaxDigit = true;
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 Initially there is no value assigned to the CurrencyTextBox. So it displays the default value as zero.
 
-
-
 ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)
-
-
 
 MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
 
-
-
 ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)
-
 
 MinValidation is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will be set to the Value property if the MinValueOnExceedMinDigit is set to true, otherwise it will not allow the key press.
 
-
-
 ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img4.png)
-
-
