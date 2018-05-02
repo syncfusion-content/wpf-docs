@@ -6,7 +6,7 @@ platform: wpf
 control: Pattern and Practices
 documentation: ug
 ---
-#Pattern and Practices
+# Pattern and Practices
 
 ## Getting Started with MVVM
 
