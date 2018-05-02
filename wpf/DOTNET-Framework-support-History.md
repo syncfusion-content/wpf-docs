@@ -6,7 +6,7 @@ platform: wpf
 control: .Net Framework support History
 documentation: ug
 ---
-#.NET Framework support History
+# .NET Framework support History
 
 ## Version Compatibility
 
