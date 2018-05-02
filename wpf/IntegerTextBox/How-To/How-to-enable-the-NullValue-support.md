@@ -7,34 +7,24 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# How to enable the NullValue support
+# How to Enable the NullValue Support
 
 IntegerTextBox accepts null values. To enable the null option you have to set the UseNullOption property to true. You can also set the NullValue property for the integer textbox. When you set the null value to the Value property, by default the value of the NullValue (Default value is null) property will be assigned to the Value property.
-
 
 {%tabs%}
 {%highlight xaml%}
 
- 
-
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"  
-
                            UseNullOption="True" NullValue="1"/>
 
 {%endhighlight%}
 
 {%highlight c#%}
 
- 
-
 Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-
 integerTextBox.Width = 150;
-
 integerTextBox.Height = 25;
-
 integerTextBox.UseNullOption = true;
-
 integerTextBox.NullValue = 1;
 
 {%endhighlight%}
@@ -49,32 +39,22 @@ IntegerTextBox
 
 {:.caption}
 
-
-
 {%tabs%}
 {%highlight xaml%}
 
- 
-
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"  
-
                            UseNullOption="True" NullValue="{x:Null}"/>
 
-						   {%endhighlight%}
+{%endhighlight%}
 						   
 {%highlight c#%}
 
- 
-
 Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-
 integerTextBox.Width = 150;
-
 integerTextBox.Height = 25;
-
 integerTextBox.UseNullOption = true;
-
 integerTextBox.NullValue = null;
+
 {%endhighlight%}
 
 {%endtabs%}
