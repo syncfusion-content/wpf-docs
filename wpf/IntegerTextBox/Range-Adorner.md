@@ -13,11 +13,7 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 
 ![](Range-Adorner_images/Range-Adorner_img1.png)
 
-
-
 ## Properties
-
-
 
 <table>
 <tr>
@@ -32,7 +28,7 @@ The Adorner range will displayed based on the value.</td><td>
 bool </td></tr>
 </table>
 
-## Adding Range Adorner to an Application 
+## Adding range adorner to an application 
 
 The EnableRangeAdorner property must be set either in XAML or the code file.
 
@@ -42,6 +38,3 @@ The EnableRangeAdorner property must be set either in XAML or the code file.
 {% highlight C# %} control.EnableRangeAdorner = true;{% endhighlight %} 
 
 {%endtabs%}
-
-
-
