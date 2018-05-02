@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Control Structure
+## Control structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -17,9 +17,7 @@ documentation: ug
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
-## IntegerTextBox Members
+## IntegerTextBox members
 
 IntegerTextBox exposes the following members:
 
@@ -374,7 +372,7 @@ SelectionChanged</td></tr>
 
 
 
-## Creating an IntegerTextBox Control
+## Creating an IntegerTextBox control
 
 IntegerTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
@@ -406,45 +404,28 @@ The steps to create an IntegerTextBox by using Visual Studio in C# are as follow
 
 5. Click the C# file, to open the C# file and add the IntegerTextBox to the application. 
 
+{% tabs %}
+{%highlight c#%}
 
-
-    {%highlight c#%}
-
-			namespace WpfApp
-
-			{
-
-				public partial class MainWindow : Window
-
-				{
-
-					public MainWindow()
-
-					{
-
-						InitializeComponent();
-
-						//Adding IntegerTextBox to Application
-
-						Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new
-
-												Syncfusion.Windows.Shared.IntegerTextBox();
-
-						integerTextBox.Height = 25;
-
-						integerTextBox.Width = 100;
-
-						this.LayoutRoot.Children.Add(integerTextBox);
-
-					}
-
-				}
-
-			}
+namespace WpfApp
+{
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+//Adding IntegerTextBox to Application
+			Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new
+			Syncfusion.Windows.Shared.IntegerTextBox();
+			integerTextBox.Height = 25;
+			integerTextBox.Width = 100;
+			this.LayoutRoot.Children.Add(integerTextBox);
+		}
+	}
+}
 			
-		{%endhighlight%}
-
-
+{%endhighlight%}
+{% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
@@ -474,30 +455,20 @@ The steps to create an IntegerTextBox by using Visual Studio in XAML are as foll
 
 4. On the Properties window, customize the properties of the IntegerTextBox.
 
-    {%highlight xaml%}
+{% tabs %}
+{%highlight xaml%}
 
-			<Window x:Class="WpfApp.MainWindow"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					Title="IntegerTextBox Demo" Height="305" Width="442" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-				<Grid x:Name="LayoutRoot">
-
-					<syncfusion:IntegerTextBox Height="23" HorizontalAlignment="Left" Margin="111,83,0,0" Name="integerTextBox1" VerticalAlignment="Top" Width="120" />
-
-				</Grid>
-
-			</Window>
+<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="IntegerTextBox Demo" Height="305" Width="442" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid x:Name="LayoutRoot">
+<syncfusion:IntegerTextBox Height="23" HorizontalAlignment="Left" Margin="111,83,0,0" Name="integerTextBox1" VerticalAlignment="Top" Width="120" />
+</Grid>
+</Window>
 			
-			
-		{%endhighlight%}
-
-
+{%endhighlight%}
+{% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -553,31 +524,20 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
    ![](Getting-Started_images/Getting-Started_img12.png)
 
-    {%highlight xaml%}
+{% tabs %}
+{%highlight xaml%}
     
-
-
-			<Window x:Class="WpfApp.MainWindow"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					Title="IntegerTextBox Demo" Height="305" Width="442" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-				<Grid x:Name="LayoutRoot">
-
-					<syncfusion:IntegerTextBox Height="23" HorizontalAlignment="Left" Margin="111,83,0,0" Name="integerTextBox1" VerticalAlignment="Top" Width="120" />
-
-				</Grid>
-
-			</Window>
+<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="IntegerTextBox Demo" Height="305" Width="442" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid x:Name="LayoutRoot">
+<syncfusion:IntegerTextBox Height="23" HorizontalAlignment="Left" Margin="111,83,0,0" Name="integerTextBox1" VerticalAlignment="Top" Width="120" />
+</Grid>
+</Window>
 			
-		{%endhighlight%}
-
-
+{%endhighlight%}
+{% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
@@ -590,7 +550,7 @@ Creating an IntegerTextBox by using XAML
 
 {%endseealso%}
 
-## Setting Value
+## Setting value
 
 You have to use the Value property to set the value for the IntegerTextBox.
 
