@@ -51,7 +51,7 @@ class Model
 
 * 2.Create a list that holds the objects of the class
 
-
+{% tabs %}
 {% highlight C# %}
 
 class ViewModel
