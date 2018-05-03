@@ -21,24 +21,21 @@ Color themes can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the Color Theme feature to an application through XAML.
 
+{% tabs %}
+
 {% highlight xaml %}
-
-
-
-
 
 <sync:ColorPickerPalette x:Name="ColorPicker" Themes="Apex" />
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 The following code example illustrates how to add the Color Theme feature to an application through C#.
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 ColorPickerPalette colorpicker = new ColorPickerPalette();
@@ -48,6 +45,16 @@ colorpicker.Themes = PaletteTheme.Apex;
 {% endhighlight %}
 
 
+{% highlight VB %}
+
+
+ColorPickerPalette colorpicker = new ColorPickerPalette()
+
+colorpicker.Themes = PaletteTheme.Apex
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Color-Themes_images/Color-Themes_img1.png)
 
@@ -95,8 +102,7 @@ To view samples:
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.
-3. Now expand the DragAndDropManagerDemo tree-view item in the Sample Browser.
-4. Choose any one of the samples listed under it to launch. 
+3. Now select the ColorPickerPalette Sample under it.
 
 
 ## Creating Custom ColorPalette
@@ -135,7 +141,7 @@ Gets or Sets the header text in Custom tab</td><td>
 string</td></tr>
 </table>
 
-### CustomColor
+## CustomColor
 
 `CustomColor` has the properties `Color` and `ColorName`. `Color` property indicates the color value and `ColorName` is the tooltip shown on mouse hover.
 
@@ -163,7 +169,7 @@ N> `CustomColor` class is available in `Syncfusion.Windows.Tools.Controls` names
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
 
@@ -199,7 +205,9 @@ colorPalette.CustomColorsCollection = customColors;
 
 {% endtabs %}
 
-The following screenshot shows the custom ColorPalette,
+The following screenshot shows the custom ColorPalette
+
+
 
 ![](custom-colors-images/customcolor.png)
 

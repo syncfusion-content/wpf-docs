@@ -11,11 +11,11 @@ documentation: ug
 
 This section explains how to add the `DoubleTextBox` control to an application and its structure.
 
-## Adding DoubleTextBox to a WPF Application
+## Adding DoubleTextBox to a WPF application
 
 `DoubleTextBox` can be added to an application in the following way.
 
-### Create the DoubleTextBox Control to an application by using XAML:
+### Create the DoubleTextBox control to an application by using XAML
 
 The following ways explains how to add DoubleTextBox control using XAML code:
 
@@ -27,13 +27,9 @@ The following ways explains how to add DoubleTextBox control using XAML code:
 {% highlight XAML %}
 
 <Window x:Class="Application_New.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 Title="MainWindow" Height="350" Width="525">
 
 {% endhighlight %}
@@ -65,20 +61,16 @@ The following code illustrate how to add DoubleTextBox control to an application
 {% highlight C# %}
 
 DoubleTextBox textBox = new DoubleTextBox();
-
 textBox.Width = 100;
-
 textBox.Height = 23;
-
 Grid1.Children.Add(textBox);
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 
-## DoubleTextBox Member
+## DoubleTextBox member
 
 DoubleTextBox exposes the following members:
 

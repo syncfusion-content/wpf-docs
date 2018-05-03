@@ -16,19 +16,14 @@ SfSpreadsheet provides support to insert and delete the worksheets in a workbook
 
 {% tabs %}
 {% highlight c# %}
-
 //Insert Sheet
-
  spreadsheet.AddSheet();
 	
 //Insert sheet with name
-
  spreadsheet.AddSheet("Sheet4", 3);
 
 //Delete Sheet
-
- spreadsheet.RemoveSheet("Sheet2");
-
+spreadsheet.RemoveSheet("Sheet2");
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,15 +33,11 @@ SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
 
 {% tabs %}
 {% highlight c# %}
-
 //Hide Sheet
-
- spreadsheet.HideSheet("Sheet 2");
+spreadsheet.HideSheet("Sheet 2");
 
 //Unhide Sheet
-
- spreadsheet.UnhideSheet("Sheet 2");
-
+spreadsheet.UnhideSheet("Sheet 2");
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,10 +47,8 @@ SfSpreadsheet provides support to rename a worksheet in the workbook by using [R
 
 {% tabs %}
 {% highlight c# %}
-
 //Rename sheet
- spreadsheet.RenameSheet("Sheet1");
- 
+spreadsheet.RenameSheet("Sheet1");
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,12 +57,9 @@ SfSpreadsheet provides support to rename a worksheet in the workbook by using [R
 SfSpreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RenameSheet(String,String).html) method.
 
 {% tabs %}
-	
 {% highlight c# %}
-
 //To Rename a sheet programmatically
 spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,19 +96,14 @@ The Protect sheet options are
 
 {% tabs %}
 {% highlight c# %}
-
 //Protect the sheet with password
-
 spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123");
 
 //Protect the sheet with Protection options
-
 spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123", ExcelSheetProtection.FormattingCells);
 
 //Unprotect the sheet
-
 spreadsheet.UnProtectSheet(spreadsheet.ActiveSheet, "123");
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,15 +113,11 @@ SfSpreadsheet provides support to protect the structure and windows of a workboo
 
 {% tabs %}
 {% highlight c# %}
-
 // To Protect the Workbook 
-
 spreadsheet.Protect(true, true, "123");
 
 //To Unprotect the Workbook
-
 spreadsheet.Unprotect("123");
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,15 +127,11 @@ SfSpreadsheet provides support to control the visibility and color of the Gridli
 
 {% tabs %}
 {% highlight c# %}
-
 //To show GridLines
-
 spreadsheet.SetGridLinesVisibility(true);
 
 //To hide GridLines
-
 spreadsheet.SetGridLinesVisibility(false);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -168,11 +141,8 @@ SfSpreadsheet provides support to control the visibility of row and column heade
 
 {% tabs %}
 {% highlight c# %}
-
 //To hide the Header cells visibility
-
 spreadsheet.SetRowColumnHeadersVisibility(false);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -182,10 +152,8 @@ SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The 
 
 {% tabs %}
 {% highlight c# %}
-
 //zoom factor
- spreadsheet.SetZoomFactor("Sheet1", 200);
-
+spreadsheet.SetZoomFactor("Sheet1", 200);
 {% endhighlight %}
 {% endtabs %}
 

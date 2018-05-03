@@ -25,15 +25,12 @@ To add a custom ribbon tab with user defined menu options in `SfSpreadsheetRibbo
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
-
+<syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-
 ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
@@ -61,7 +58,6 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
       ribbon1.Items.Add(ribbonTab);
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,15 +67,12 @@ To add a ribbon items in already existing tab,
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
-
+<syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-
 ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
@@ -98,7 +91,6 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
       ribbonTab.Items.Add(Button1);
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,15 +100,12 @@ To remove the ribbon tab in the SfSpreadsheetRibbon,
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
-
+<syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-
 ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
@@ -124,13 +113,13 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
     var ribbon1 = GridUtil.GetVisualChild<Ribbon>(sender as FrameworkElement);
     
     //To remove the Data tab from the ribbon,
+
     if (ribbon1 != null)
     {
       var item = ribbon1.Items[1];
       ribbon1.Items.Remove(item);
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,15 +130,12 @@ To remove the ribbon menu items in the ribbon tab of SfSpreadsheetRibbon,
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
-
+<syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-
 ribbon.Loaded += ribbon_Loaded;
     
 void ribbon_Loaded(object sender, RoutedEventArgs e)
@@ -164,6 +150,5 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
       ribbonTab.Items.Remove(ribbonTab.Items[1]);
     }
 }
-
 {% endhighlight %}
 {% endtabs %}

@@ -25,11 +25,8 @@ method
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.ActiveSheet.ImportDataTable(data_table, true, 1, 1);
-
 spreadsheet.ActiveGrid.InvalidateCells();
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,13 +39,9 @@ method
 
 {% tabs %}
 {% highlight c# %}
-
 IWorksheet sheet = spreadsheet.Workbook.Worksheets[0];
-
 IRange range = sheet.Range["A1:K50"];
-
 DataTable data_table = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
-
 {% endhighlight %}
 {% endtabs %}
 

@@ -24,33 +24,24 @@ Here are some highlights about our CalendarEdit control.
 * Display area of Calendar control is limited using abbreviated days and months
 * A ToolTip can be set to the required date, or by row and column
 
-## Elaborate Structure of the Control
-
+## Elaborate structure of the control
 
 The various elements of CalendarEdit control are illustrated in the following image.
 
-
-
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-
-## Create CalendarEdit Control
+## Create CalendarEdit control
 
 There are two possible ways to create a simple CalendarEdit control.
 
-#### Through Designer
+#### Through designer
 
 To create the CalendarEdit control through designer, follow the steps:
 
 1. Drag the CalendarEdit control from the toolbox onto the design area.
 2. Set the properties for the CalendarEdit in design mode, by using the Smart Tag feature.
 
-
-
 ![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
 
 #### Programmatically
 
@@ -76,6 +67,3 @@ this.Content = calendarEdit;
 {% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-
-

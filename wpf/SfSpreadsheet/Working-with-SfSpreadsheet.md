@@ -18,19 +18,14 @@ A workbook consists of one or more worksheets stored within the worksheet coll
 
 {% tabs %}
 {% highlight c# %}
-
 //By Specifying the index as,
-
 spreadsheet.Workbook.Worksheets[0]
 
 //By Specifying the sheet name as,
-
 spreadsheet.Workbook.Worksheets["sheet1"]
 
 //Access the Active worksheet as,
-
 spreadsheet.ActiveSheet
-      
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,13 +45,12 @@ Hence you can access the `ActiveGrid` either in the `WorkbookLoaded` or `Workshe
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.WorksheetAdded += spreadsheet_WorksheetAdded;
-
 spreadsheet.WorksheetRemoved += spreadsheet_WorksheetRemoved;
 
 void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
 {
+
    //Access the Active SpreadsheetGrid and hook the events associated with it.
     var grid = spreadsheet.ActiveGrid;
     grid.CurrentCellActivated += grid_CurrentCellActivated;
@@ -64,11 +58,11 @@ void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
 
 void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
 {
+
    //Access the Active SpreadsheetGrid and unhook the events associated with it
     var grid = spreadsheet.ActiveGrid;
     grid.CurrentCellActivated -= grid_CurrentCellActivated;
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,11 +74,9 @@ For your reference, setting the row and column count dynamically for the second 
 
 {% tabs %}
 {% highlight c# %}
-
 var sheet = spreadsheet.Workbook.Worksheets[1];
 spreadsheet.GridCollection[sheet.Name].RowCount = 50;
 spreadsheet.GridCollection[sheet.Name].ColumnCount = 12;
-
 {% endhighlight %}
 {% endtabs %} 
 
@@ -92,14 +84,14 @@ spreadsheet.GridCollection[sheet.Name].ColumnCount = 12;
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
-
 spreadsheet.WorkbookUnloaded += spreadsheet_WorkbookUnloaded;
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
+
   //Hook the events here
+
    foreach (var grid in args.GridCollection)
    {
     grid.QueryRange += grid_QueryRange; 
@@ -108,13 +100,14 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
 {
+
   //Unhook the events here
+
    foreach (var grid in args.GridCollection)
    {
     grid.QueryRange -= grid_QueryRange; 
    }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,9 +119,7 @@ SfSpreadsheet allows you to set the [ActiveSheet](http://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.SetActiveSheet("Sheet5");
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,27 +132,20 @@ The following code shows the several ways of accessing a single cell or range of
 
 {% tabs %}
 {% highlight c# %}
-
 // Access a cell by specifying cell address. 
-
 var cell = spreadsheet.Workbook.Worksheets[0].Range["A3"];
 
 // Access a cell by specifying cell row and column index. 
-
 var cell1 = spreadsheet.Workbook.Worksheets[0].Range[3, 1];
 
 // Access a cells by specifying user defined name.
-
 var cell2 = spreadsheet.Workbook.Worksheets[0].Range["Namerange"];
 
 // Accessing a range of cells by specifying cell's address.
-
 var cell3 = spreadsheet.Workbook.Worksheets[0].Range["A5:C8"];
 
 // Accessing a range of cells specifying cell row and column index.
-
 var cell4 = spreadsheet.Workbook.Worksheets[0].Range[15, 1, 15, 3];
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -175,15 +159,11 @@ SfSpreadsheet allows you to access the value of a cell by using [Value](http://h
 
 {% tabs %}
 {% highlight c# %}
-
 // Access a cell value by using "Value" Property,
-
 var cellValue = spreadsheet.Workbook.Worksheets[1].Range["A3"].Value
 
 // Access a cell value by using "DisplayText" Property. 
-
 var displayValue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,13 +173,9 @@ In SfSpreadsheet, to update the cell value and formula programmatically, [SetCel
 
 {% tabs %}
 {% highlight c# %}
-
 var range = spreadsheet.ActiveSheet.Range[2,2];
-
 spreadsheet.ActiveGrid.SetCellValue(range, "cellValue");
-
 spreadsheet.ActiveGrid.InvalidateCell(2,2);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -211,19 +187,14 @@ The following code illustrates the different way of deleting the value from a ce
 
 {% tabs %}
 {% highlight c# %}
-
 //To clear the contents in the range alone,
-
 spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear();
 
 //To clear the contents along with its formatting in the range,   
-       
 spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(true);
 
 //To clear the range with specified ExcelClearOptions,
-           
 spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(ExcelClearOptions.ClearDataValidations);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -237,7 +208,6 @@ The following code demonstrates the different ways of refreshing the view,
 
 {% tabs %}
 {% highlight c# %}
-
 //Invalidates the mentioned cell in the grid,
 spreadsheet.ActiveGrid.InvalidateCell(3, 3);
 
@@ -254,7 +224,6 @@ spreadsheet.ActiveGrid.InvalidateVisual();
 //Invalidates the cell borders in the range,
 var range = GridRangeInfo.Cells(2, 4, 6, 4);
 spreadsheet.ActiveGrid.InvalidateCellBorders(range);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -264,9 +233,7 @@ SfSpreadsheet allows the user to scroll the grid into mentioned cell, by using [
 
 {% tabs %}
 {% highlight c# %}
-
 spreadsheet.ActiveGrid.ScrollInView(new RowColumnIndex(5, 5));
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -276,19 +243,12 @@ The Formula Bar is located above the worksheet area of the SfSpreadsheet. The fo
 Users can set the visibility state of Formula Bar using [FormulaBarVisibility](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~FormulaBarVisibility.html) property of `SfSpreadsheet`.
 
 {% tabs %}
-
 {% highlight xaml %}
-
-    <syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Collapsed"/>
-
+<syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Collapsed"/>
 {% endhighlight %}
-
 {% highlight c# %}
-
 spreadsheet.FormulaBarVisibility = System.Windows.Visibility.Collapsed;
-
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Identify whether the workbook is modified or not
@@ -297,14 +257,9 @@ spreadsheet.FormulaBarVisibility = System.Windows.Visibility.Collapsed;
 
 {% tabs %}
 {% highlight c# %}
-
 var workbook = spreadsheet.Workbook as WorkbookImpl; 
- 
 BindingFlags bindFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static; 
- 
 var value = typeof(WorkbookImpl).GetProperty("IsCellModified", bindFlags).GetValue(workbook); 
-
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -314,10 +269,8 @@ In Spreadsheet, warning messages, error alerts are displayed while performing so
 
 {% tabs %}
 {% highlight c# %}
-
 //To Suppress message boxes in Spreadsheet
 spreadsheet.DisplayAlerts = false;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -329,14 +282,11 @@ Resuming formula calculation will recalculate all the formula cells in a workboo
 
 {% tabs %}
 {% highlight c# %}
-
 //Resumes the automatic formula calculation
 spreadsheet.ResumeFormulaCalculation();
 
 //Suspends the automatic formula calculation
 spreadsheet.SuspendFormulaCalculation();
-
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -346,13 +296,11 @@ In SfSpreadsheet, popup windows are used to display the options like copy paste 
 
 {% tabs %}
 {% highlight c# %}
-
 //To close the popup
 spreadsheet.ActiveGrid.ShowHidePopup(false);
 
 //To show the closed popup, if needed.
 spreadsheet.ActiveGrid.ShowHidePopup(true);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -362,18 +310,18 @@ SfSpreadsheet provides support to identify when the active sheet is changed by u
 
 {% tabs %}
 {% highlight c# %}
-
 Spreadsheet.PropertyChanged += Spreadsheet_PropertyChanged;
 
 void Spreadsheet_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 {
+
     // when the worksheets in the workbook changed
 	
     if(e.PropertyName == "ActiveSheet")
     {
+
         //Implement code
     }
 }
-
 {% endhighlight %}
 {% endtabs %}

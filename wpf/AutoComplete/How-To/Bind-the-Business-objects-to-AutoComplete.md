@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Bind the Business objects to AutoComplete
+# Bind the Business Objects to AutoComplete
 
 AutoComplete supports binding the Business objects as its Data Source.
 
@@ -17,48 +17,44 @@ Also when binding the Business objects, the DisplayMemberPath and the SelectedVa
 
 You can bind the Business objects to the AutoComplete as mentioned below.
 
-
+{% tabs %}
 {% highlight xaml %}
 
-
-<syncfusion:AutoComplete x:Name="AutoCompleteTextBox" Source="Custom” DisplayMemberPath="Name" SelectedValuePath="EmployeeID">   
+<syncfusion:AutoComplete x:Name="AutoCompleteTextBox" Source="Custom" DisplayMemberPath="Name" SelectedValuePath="EmployeeID">   
 <syncfusion:AutoComplete.CustomSource> 
 <local:EmployeeListCollection/>  
 </syncfusion:AutoComplete.CustomSource>
 </syncfusion:AutoComplete></td></tr>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-
 public class EmployeeList    
 {        
-public int EmployeeID { get; set; }        
-public string Name { get; set; }       
-public string Mailid { get; set; }       
-public EmployeeList() { }        
-public EmployeeList(string name, string mail, int id)        
-{            
-Name = name;            
-Mailid = mail;           
- EmployeeID = id;        
-}    
+    public int EmployeeID { get; set; }        
+    public string Name { get; set; }       
+    public string Mailid { get; set; }       
+    public EmployeeList() { }        
+    public EmployeeList(string name, string mail, int id)        
+    {            
+        Name = name;            
+        Mailid = mail;           
+        EmployeeID = id;        
+    }    
 }    
 public class EmployeeListCollection : ObservableCollection<EmployeeList>   
 {        
- public EmployeeListCollection()        
- {            
- this.Add(new EmployeeList() { EmployeeID = 1001, Name = "John", Mailid = "john@syncfusion.com" });           
- this.Add(new EmployeeList() { EmployeeID = 1002, Name = "Jerry", Mailid = "Jerry@syncfusion.com" });            
- this.Add(new EmployeeList() { EmployeeID = 1003, Name = "Brad", Mailid = "Brad@syncfusion.com" });            
- this.Add(new EmployeeList() { EmployeeID = 1004, Name = "lanze", Mailid = "lanze@syncfusion.com" });            
- this.Add(new EmployeeList() { EmployeeID = 1005, Name = "Chambel", Mailid = "Chambel@syncfusion.com" });           
- this.Add(new EmployeeList() { EmployeeID = 1006, Name = "Crimson", Mailid = "Crimson@syncfusion.com" });        
- }    
- 
+    public EmployeeListCollection()        
+    {            
+        this.Add(new EmployeeList() { EmployeeID = 1001, Name = "John", Mailid = "john@syncfusion.com" });           
+        this.Add(new EmployeeList() { EmployeeID = 1002, Name = "Jerry", Mailid = "Jerry@syncfusion.com" });            
+        this.Add(new EmployeeList() { EmployeeID = 1003, Name = "Brad", Mailid = "Brad@syncfusion.com" });            
+        this.Add(new EmployeeList() { EmployeeID = 1004, Name = "lanze", Mailid = "lanze@syncfusion.com" });            
+        this.Add(new EmployeeList() { EmployeeID = 1005, Name = "Chambel", Mailid = "Chambel@syncfusion.com" });           
+        this.Add(new EmployeeList() { EmployeeID = 1006, Name = "Crimson", Mailid = "Crimson@syncfusion.com" });        
+    }    
 }
+
 {% endhighlight %}
-
-
-
-
+{% endtabs %}

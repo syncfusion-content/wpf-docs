@@ -11,7 +11,7 @@ documentation: ug
 
 This section contains the following topics:
 
-## Setting the Date
+## Setting the date
 
 You can explicitly set the date for the CalendarEdit control, using the Date property. This dependency property sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
 
@@ -39,9 +39,7 @@ this.Content = calendarEdit;
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img1.jpeg)
 
-
-
-## Settings the Days
+## Settings the days
 
 It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the ShowNextMonthDays and ShowPreviousMonthDays properties. 
 
@@ -74,9 +72,7 @@ this.Content = calendarEdit;
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img2.jpeg)
 
-
-
-## Today Row
+## Today row
 
 To know the details of current date in a CalendarEdit control, you need to enable Today Row. Set the TodayRowIsVisible property to true to display today's details. This dependency property indicates whether the today bar is visible or collapsed.
 
@@ -104,12 +100,9 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)
 
-
-
-## Week Number
+## Week number
 
 Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set ShowWeekNumbers property to true as follows.
 
@@ -137,11 +130,7 @@ this.Content = calendarEdit;
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img4.jpeg)
 
-
-
-
-
-## Week Numbers Grid
+## Week numbers grid
 
 It is now possible to edit weekly date in CalendarEdit control. This is achieved by Setting the VisualMode to WeekNumbers as follows.
 
@@ -166,11 +155,7 @@ Run the code. The output is as follows:
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img5.jpeg)
 
-
-
-
-
-### Changing Week Number Grid’s Default Properties
+### Changing week number grids default properties
 
 You can set the color for the border brush, background and foreground for the cells in the Week Numbers Grid. You can also set the corner radius and thickness for the border of the cells in the Week Numbers Grid.
 
@@ -199,11 +184,7 @@ Run the code. The output is as follows:
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img6.jpeg)
 
-
-
-
-
-### Changing Week Number Grid’s Selection Properties
+### Changing week number grids selection properties
 
 You can set the border brush, background and foreground color for the required cell in the Week Numbers Grid. You can also set the corner radius and thickness for the border of the selected cell in the Week Numbers Grid.
 
@@ -233,11 +214,7 @@ Run the code. The output is as follows:
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img7.jpeg)
 
-
-
-
-
-### Changing Week Number Mouse Over Properties
+### Changing week number Mouse over properties
 
 You can set the border brush, background and foreground color for the cell focused in the Week Numbers Grid.
 
@@ -266,9 +243,7 @@ Run the code. The output is as follows:
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img8.jpeg)
 
-
-
-## Customizing the Display of Minimum and Maximum Dates
+## Customizing the display of minimum and maximum dates
 
 Minimum dates and Maximum dates display in CalendarEdit can be customized with two states-True and False. The states can be set by using the property MinMaxHidden:
 
@@ -296,16 +271,8 @@ calendarEdit.MinMaxHidden = false;
 {% endhighlight %}
 {% endtabs %}
 
-
 Run the code. The output is as follows:
 
 ![](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)
 
-
-
-
-
 ![](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)
-
-
-

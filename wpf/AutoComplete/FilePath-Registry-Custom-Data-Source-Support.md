@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# FilePath, Registry & Custom Data Source Support
+# FilePath, Registry, and Custom Data Source Support
 
 AutoComplete can be used with different kinds of Data Source like FilePath, Registry & CustomSource. The Data 
 Source of the AutoComplete control can be set using the Source property.
@@ -20,17 +20,13 @@ system as the source. This is illustrated in the following image.
 Source—FilePath
 {:.caption}
 
-
-
 When the value of the Source property is set as Registry, the AutoComplete loads the values from the Registry. It 
 is used when the Registry keys are required as input. This is illustrated in the image given below.
 
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png)
 
-
 Source—Registry
 {:.caption}
-
 
 When the value of the Source property is set as Custom, the AutoComplete loads the values from the Business objects 
 bounded to the AutoComplete control by using the CustomSource property. This is illustrated in the image given 
@@ -38,18 +34,16 @@ below.
 
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png)
 
-
 Source—Custom
 {:.caption}
 
-
-## Adding Data Source Support to an Application
+## Adding data source support to an application
 
 AutoComplete can be used with different kinds of Data Sources using the Source property. This support can be added 
 to the application as mentioned in the following code example.
 
+{% tabs %}
 {% highlight xaml %}
-
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" Source="FilePath"/>
 <syncfusion:AutoComplete x:Name="AutoComplete2" Source ="Registry"/>
@@ -58,18 +52,20 @@ to the application as mentioned in the following code example.
 <local:CustomerListCollection/>     
 </syncfusion:AutoComplete.CustomSource>
 </syncfusion:AutoComplete>
-{% endhighlight %}
 
+{% endhighlight %}
 
 {% highlight c# %}
 
-
 AutoComplete autoComplete1 = new AutoComplete();
 this.autoComplete1.Source = SourceMode.FilePath;
+
 AutoComplete autoComplete2 = new AutoComplete();
 this.autoComplete2.SelectionMode = SourceMode.Registry;
+
 AutoComplete autoComplete3 = new AutoComplete();
 this.autoComplete3.SelectionMode = SourceMode.Custom;
+
 List<String> products = new List<String>();
 customSource.Add("Diagram");
 customSource.Add("Gauge");
@@ -82,14 +78,13 @@ customSource.Add("Pdf");
 customSource.Add("RichTextBox");
 customSource.Add("ReportBuilder");
 this.autoComplete3.CustomSource = products;
+
 {% endhighlight %}
-
-
+{% endtabs %}
 
 ## Tables for properties, methods, and events
 
 ### Properties
-
 
 <table>
 <tr>
@@ -108,9 +103,7 @@ SourceMode(enum)</td><td>
 </td></tr>
 </table>
 
-
 ### Events
-
 
 <table>
 <tr>
@@ -129,8 +122,6 @@ DependencyPropertyChangedCallBack </td><td>
 </td></tr>
 </table>
 
-
-## Sample Link
+## Sample link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-

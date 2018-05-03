@@ -35,31 +35,31 @@ ColorPickerPalette can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through XAML.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-
-
-   <syncfusion:ColorPickerPalette x:Name="ColorPicker"/>
+<syncfusion:ColorPickerPalette x:Name="ColorPicker"/>
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ### Adding through C#
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through C#.
 
+{% tabs %}
+
 {% highlight C# %}
-
-
 
 ColorPickerPalette colorpicker = new ColorPickerPalette();
 
 this.LayoutRoot.Children.Add(colorpicker);
+
 {% endhighlight %}
 
-
-
+{% endtabs %}
 
 ### Adding through Blend
 

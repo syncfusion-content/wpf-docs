@@ -18,8 +18,6 @@ When the SelectionMode property is set as Single, only one item can be selected 
 SelectionMode-Single
 {:.caption}
 
-
-
 When the SelectionMode is set as Multiple, you can select multiple items by using the SeparatorChar property to separate the selected items. By default the SeparatorChar is “;”. This allows you to select multiple items by using the SelectionMode property. Once an item is selected the SeparatorChar is to be entered in the text box to select the next item.
 
 The following image illustrates the Multiple selection mode.
@@ -28,8 +26,6 @@ The following image illustrates the Multiple selection mode.
 
 SelectionMode—Multiple
 {:.caption}
-
-
 
 When the SelectionMode is set as Extended, you can select multiple items at a time by pressing the Ctrl key. While selecting the multiple items, the selected items will be separated by the SeparatorChar automatically.
 
@@ -44,19 +40,22 @@ Adding Single, Multiple & Extended Selection Support to an Application
 
 The SelectionMode property is used to attain these functionalities by setting its value as Single or Multiple or Extended. By default its value is Single. The following code snippet is used to set the SelectionMode property. 
 
+{% tabs %}
 {% highlight xaml %}
+
 <syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/>
+
 {% endhighlight %}
 {% highlight c# %}
+
 AutoComplete autoComplete1 = new AutoComplete();this.autoComplete2.SelectionMode = SelectionMode.Multiple;
+
 {% endhighlight %}
+{% endtabs %}
 
-
-## Tables for properties, and events
+## Tables for properties and events
 
 ### Property
-
-
 
 <table>
 <tr>
@@ -75,10 +74,7 @@ SelectionMode(Single)</td><td>
 </td></tr>
 </table>
 
-
 ### Events
-
-
 
 <table>
 <tr>
@@ -97,8 +93,6 @@ DependencyPropertyChangedCallBack </td><td>
 </td></tr>
 </table>
 
-
-## Sample Link
+## Sample link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
-
