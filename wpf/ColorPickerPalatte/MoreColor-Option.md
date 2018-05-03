@@ -30,10 +30,11 @@ The following code example illustrates how to add the MoreColor Option to an App
 MoreColorOptionVisibility="Visible" />
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The following code example illustrates how to add the MoreColor Option to an Application through C#.
 
+{% tabs %}
 {% highlight C# %}
 
 
