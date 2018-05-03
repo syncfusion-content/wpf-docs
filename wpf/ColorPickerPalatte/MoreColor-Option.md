@@ -68,7 +68,7 @@ The MoreColorIcon property used to set the Icon left to the More Color option .
 
 {% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
 
 ColorPicker.Icon = new BitmapImage(new Uri(@"color.png", UriKind.RelativeOrAbsolute));
 
