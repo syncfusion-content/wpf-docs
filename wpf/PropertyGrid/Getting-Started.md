@@ -11,7 +11,7 @@ documentation: ug
 
 This section guides you through getting started with the PropertyGrid control. It covers the following topics:
 
-## Visual Structure
+## Visual structure
 
 1. ButtonPanel Items
 1. Group Button — Used to group the properties.
@@ -22,7 +22,7 @@ This section guides you through getting started with the PropertyGrid control. I
 
 
 
-## Creating the Control through Visual Studio
+## Creating the control through Visual Studio
 
 To create the PropertyGrid control:
 
@@ -34,7 +34,7 @@ To create the PropertyGrid control:
 
 2. Configure the properties of the PropertyGrid using the VS Properties window.
 
-## Creating the Control through Expression Blend
+## Creating the control through Expression Blend
 
 The PropertyGrid control can also be created and configured using Microsoft Expression Blend. To create the control through Expression Blend:
 
@@ -55,7 +55,7 @@ The PropertyGrid control can also be created and configured using Microsoft Expr
 
 The user can customize any part of the PropertyGrid using the template editing feature in Expression Blend. 
 
-## Populating the Properties
+## Populating the properties
 
 This section explains how to populate the properties of any selected object.
 
@@ -65,20 +65,17 @@ The user can populate the properties of selected object using XAML.
 
 The following code snippet shows how to create the PropertyGrid control in XAML. 
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid  Name="propertyGrid1" Height="500" Width="300" >
-
-   <syncfusion:PropertyGrid.SelectedObject>
-
-       <Button/>
-
-   </syncfusion:PropertyGrid.SelectedObject>
-
+<syncfusion:PropertyGrid.SelectedObject>
+<Button/>
+</syncfusion:PropertyGrid.SelectedObject>
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
-
+{% endtabs %}
 
 In the above code snippet, the Button is set as SelectedObject for the PropertyGrid; thus, the PropertyGrid shows all the properties available in the Button. 
 
@@ -88,401 +85,239 @@ This will create the property as shown in the following screenshot:
 
 
 
-### Through C&#35;
+### Through C&#35
 
 To create the PropertyGrid control:
 
 1. Include the following namespace to the using directives list for creating the PropertyGrid control in C#.
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
 
-		using Syncfusion.Windows.PropertyGrid;
+using Syncfusion.Windows.PropertyGrid;
 
-   ~~~
-   
+{% endhighlight %}
+{% endtabs %}
+
 2. Create the PropertyGrid as follows:
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
 
-		PropertyGrid pGrid = new PropertyGrid();
+PropertyGrid pGrid = new PropertyGrid();
+pGrid.SelectedObject = new Button();
 
-        pGrid.SelectedObject = new Button();
+{% endhighlight %}
+{% endtabs %}
 
-   ~~~
-   
-### Custom Object
+### Custom object
 
 You can edit the custom object properties using the PropertyGrid. The following example illustrates how to edit the custom object properties.
 
 1. Create a class called Person and define the properties. 
 
-   ~~~ csharp
-
-		[TypeConverter(typeof(ExpandableObjects))]
-
-			public class Person
-
-			{
-
-				public Person()
-
-				{            
-
-					Name = "Johnson";
-
-					Age = 30;
-
-					Mobile = 91983467382;
-
-					Email = "carljohnson@gta.com";
-
-					ID = "0005A";
-
-					DOB = new DateTime(1987, 10, 16);           
-
-				}
-
-
-
-				[CategoryAttribute("Identity")]
-
-				[DisplayNameAttribute("Name")]
-
-				[DescriptionAttribute("Name of the actual person.")]
-
-				public string Name
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-
-
-				[CategoryAttribute("Identity")]
-
-				[DisplayNameAttribute("ID")]
-
-				[DescriptionAttribute("ID of the actual person.")]
-
-				public string ID
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-				[CategoryAttribute("Identity")]
-
-				[DisplayNameAttribute("Date of Birth")]
-
-				[DescriptionAttribute("Birth date of the actual person.")]
-
-				public DateTime DOB
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-				[CategoryAttribute("Contact Details")]
-
-				[DisplayNameAttribute("Email ID")]
-
-				[DescriptionAttribute("Email address of the actual person.")]
-
-				public string Email
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-				[CategoryAttribute("Contact Details")]
-
-				[DisplayNameAttribute("Mobile Number")]
-
-				[DescriptionAttribute("Contact number of the actual person.")]
-
-				public long Mobile
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-				[CategoryAttribute("Identity")]
-
-				[DisplayNameAttribute("Age")]
-
-				[DescriptionAttribute("Age of the actual person.")]
-
-				public int Age
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-
-
-				[CategoryAttribute("Identity")]
-
-				[DisplayNameAttribute("Gender")]
-
-				[DescriptionAttribute("Gender information of the actual person.")]
-
-				public Gender Gender
-
-				{
-
-					get;
-
-					set;
-
-				}
-
-
-
-				[CategoryAttribute("Location")]
-
-				[DisplayNameAttribute("Country")]
-
-				[DescriptionAttribute("Country where the person is located.")]
-
-				public Country Country
-
-				{
-
-					get;
-
-					set;
-
-				}       
-
-			}
-
-
-
-
-
-		  public enum Country
-
-			{
-
-				UnitedStates,
-
-
-
-				Germany,
-
-
-
-				Canada,
-
-
-
-			}
-
-   ~~~
+{% tabs %}
+{% highlight c# %}
+
+[TypeConverter(typeof(ExpandableObjects))]
+public class Person
+{
+	public Person()
+	{            
+		Name = "Johnson";
+		Age = 30;
+		Mobile = 91983467382;
+		Email = "carljohnson@gta.com";
+		ID = "0005A";
+		DOB = new DateTime(1987, 10, 16);           
+	}
+	[CategoryAttribute("Identity")]
+	[DisplayNameAttribute("Name")]
+	[DescriptionAttribute("Name of the actual person.")]
+	public string Name
+	{
+		get;
+		set;
+	}
+	[CategoryAttribute("Identity")]
+	[DisplayNameAttribute("ID")]
+	[DescriptionAttribute("ID of the actual person.")]
+	public string ID
+	{
+		get;
+		set;
+	}
+	[CategoryAttribute("Identity")]
+	[DisplayNameAttribute("Date of Birth")]
+	[DescriptionAttribute("Birth date of the actual person.")]
+	public DateTime DOB
+	{
+		get;
+		set;
+	}
+	[CategoryAttribute("Contact Details")]
+	[DisplayNameAttribute("Email ID")]
+	[DescriptionAttribute("Email address of the actual person.")]
+	public string Email
+	{
+		get;
+		set;
+	}
+    [CategoryAttribute("Contact Details")]
+	[DisplayNameAttribute("Mobile Number")]
+	[DescriptionAttribute("Contact number of the actual person.")]
+	public long Mobile
+	{
+		get;
+		set;
+	}
+	[CategoryAttribute("Identity")]
+	[DisplayNameAttribute("Age")]
+	[DescriptionAttribute("Age of the actual person.")]
+	public int Age
+	{
+		get;
+		set;
+	}
+    [CategoryAttribute("Identity")]
+	[DisplayNameAttribute("Gender")]
+	[DescriptionAttribute("Gender information of the actual person.")]
+	public Gender Gender
+	{
+		get;
+		set;
+	}
+	[CategoryAttribute("Location")]
+	[DisplayNameAttribute("Country")]
+	[DescriptionAttribute("Country where the person is located.")]
+	public Country Country
+	{
+		get;
+		set;
+	}       
+}
+public enum Country
+{
+	UnitedStates,
+	Germany,
+	Canada,
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 2. Set the SelectedObject of the property to the instance of the class Person.
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
 
-		PropertyGrid pGrid = new PropertyGrid();
+PropertyGrid pGrid = new PropertyGrid();
+pGrid.SelectedObject = new Person();
 
-		pGrid.SelectedObject = new Person();
-
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 3. The PropertyGrid will be generated as shown in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
-### Custom Editor
+### Custom editor
 
 The PropertyGrid also provides custom editor support. The following example shows how to create the custom editor.
 
 1. Define the custom editor with the ITypeEditor interface as follows:
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
 
-		public class UpDownEditor : ITypeEditor
-
+public class UpDownEditor : ITypeEditor
+{
+	public void Attach(PropertyViewItem property, PropertyItem info)
+	{
+		if (info.CanWrite)
+		{
+			var binding = new Binding("Value")
 			{
+				Mode = BindingMode.TwoWay,
+				Source = info,
+				ValidatesOnExceptions = true,
+				ValidatesOnDataErrors = true
+			};
+			BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
+		}
+		else
+		{
+			upDown.AllowEdit = false;
+			var binding = new Binding("Value")
+			{
+				Source = info,
+				ValidatesOnExceptions = true,
+				ValidatesOnDataErrors = true
+			};
+			BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
+		}
+	}
+    UpDown upDown;
+	public object Create(PropertyInfo propertyInfo)
+	{
+		upDown = new UpDown()
+		{
+			ApplyZeroColor = false
+		};
+		if (propertyInfo.Name == "FontSize" || propertyInfo.Name == "MinWidth" || propertyInfo.Name == "MinHeight" || propertyInfo.Name == "MaxHeight" || propertyInfo.Name == "MaxWidth" ||
+		propertyInfo.Name == "Height" || propertyInfo.Name == "Width" || propertyInfo.Name == "ActualWidth" || propertyInfo.Name == "ActualHeight")
+		{
+			upDown.MinValue = 0;
+		}
+		if (propertyInfo.Name == "Opacity")
+		{
+			upDown.MinValue = 0.0;
+			upDown.MaxValue = 1.0;
+			upDown.Step = 0.1;
+		}
+		return upDown;
+	}
+	public void Detach(PropertyViewItem property)
+	{
+		throw new NotImplementedException();
+	}
+}
 
+{% endhighlight %}
+{% endtabs %}
 
-
-				public void Attach(PropertyViewItem property, PropertyItem info)
-
-				{
-
-					if (info.CanWrite)
-
-					{
-
-						var binding = new Binding("Value")
-
-						{
-
-							Mode = BindingMode.TwoWay,
-
-							Source = info,
-
-							ValidatesOnExceptions = true,
-
-							ValidatesOnDataErrors = true
-
-						};
-
-						BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
-
-					}
-
-					else
-
-					{
-
-						upDown.AllowEdit = false;
-
-						var binding = new Binding("Value")
-
-						{
-
-
-
-							Source = info,
-
-							ValidatesOnExceptions = true,
-
-							ValidatesOnDataErrors = true
-
-						};
-
-						BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
-
-					}
-
-				}
-
-
-
-				UpDown upDown;
-
-				public object Create(PropertyInfo propertyInfo)
-
-				{
-
-					upDown = new UpDown()
-
-					{
-
-
-
-						ApplyZeroColor = false
-
-					};
-
-
-
-					if (propertyInfo.Name == "FontSize" || propertyInfo.Name == "MinWidth" || propertyInfo.Name == "MinHeight" || propertyInfo.Name == "MaxHeight" || propertyInfo.Name == "MaxWidth" ||
-
-						propertyInfo.Name == "Height" || propertyInfo.Name == "Width" || propertyInfo.Name == "ActualWidth" || propertyInfo.Name == "ActualHeight")
-
-					{
-
-						upDown.MinValue = 0;
-
-					}
-
-					if (propertyInfo.Name == "Opacity")
-
-					{
-
-						upDown.MinValue = 0.0;
-
-						upDown.MaxValue = 1.0;
-
-						upDown.Step = 0.1;
-
-					}
-
-					return upDown;
-
-				}
-
-
-
-				public void Detach(PropertyViewItem property)
-
-				{
-
-					throw new NotImplementedException();
-
-				}
-
-			}
-
-   ~~~
-   
    The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
 
 2. Create an instance of Customer Editor with this UpDownEditor as follows:
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
 
-		CustomEditor upDownEditor = new CustomEditor() 
-		{ 
-			HasPropertyType = true, 			
-			PropertyType = typeof(double), 
-			Editor = new UpDownEditor() 
-		};
+CustomEditor upDownEditor = new CustomEditor() 
+{ 
+	HasPropertyType = true, 			
+	PropertyType = typeof(double), 
+	Editor = new UpDownEditor() 
+};
 
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 3. Add this custom editor instance to the CustomEditorCollection property of the PropertyGrid as follows:
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
+ 
+pgridInstance.CustomEditorCollection.Add(brusheditor); 
 
-		pgridInstance.CustomEditorCollection.Add(brusheditor); 
+{% endhighlight %}
+{% endtabs %}
 
-   ~~~
 The PropertyGrid displays the UpDownEditor as shown in the following screenshot for the double type values.
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
-## Visual Styles
+## Visual styles
 
 The PropertyGrid control supports the following built-in visual styles:
 
@@ -498,26 +333,28 @@ The PropertyGrid control supports the following built-in visual styles:
 
 The visual style can be applied in XAML as follows:
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid
-
 syncfusion:SkinStorage.VisualStyle="Office2010Blue" />   
 
 {% endhighlight %}
+{% endtabs %}
 
 The PropertyGrid control gets the Office2010Blue look.
 
 The visual styles can be applied in C# as follows:
 
+{% tabs %}
 {% highlight c# %}
 
 SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 
 {% endhighlight %}
+{% endtabs %}
 
-## Structure of the PropertyGrid Control
+## Structure of the PropertyGrid control
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -527,7 +364,7 @@ SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 * PropertyGrid—Lists all the properties
 
 
-## Adding PropertyGrid to an Application
+## Adding PropertyGrid to an application
 
 The PropertyGrid control can be added to an application by using Visual Studio and Blend.
 
@@ -548,24 +385,20 @@ Following are the steps to add the PropertyGrid control by using VisualStudio in
    
 4. Click the C# file and add the PropertyGrid control to your application as follows.
 
-   ~~~ csharp
+{% tabs %}
+{% highlight c# %}
 
-		Syncfusion.Windows.PropertyGrid.PropertyGrid propertyGrid = new Syncfusion.Windows.PropertyGrid.PropertyGrid();
-		
-		propertyGrid.Height = 250;
-		
-		propertyGrid.Width = 250;
-		
-		propertyGrid.BorderBrush = new SolidColorBrush(Colors.Gray);
-		
-		propertyGrid.BorderThickness = new Thickness(2);
-		
-		propertyGrid.SelectedObject = new Button();
-		
-		LayoutRoot.Children.Add(propertyGrid);
+Syncfusion.Windows.PropertyGrid.PropertyGrid propertyGrid = new Syncfusion.Windows.PropertyGrid.PropertyGrid();
+propertyGrid.Height = 250;
+propertyGrid.Width = 250;
+propertyGrid.BorderBrush = new SolidColorBrush(Colors.Gray);
+propertyGrid.BorderThickness = new Thickness(2);
+propertyGrid.SelectedObject = new Button();
+LayoutRoot.Children.Add(propertyGrid);
 
-   ~~~
-   
+{% endhighlight %}
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img10.png)
 
 
@@ -578,20 +411,17 @@ Following are the steps to add the PropertyGrid control by using Visual Studio i
 3. Drag-and-drop the PropertyGrid to Design View, to add PropertyGrid to your application.
 4. In the properties window, customize the properties of the PropertyGrid.
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="PropertyGridSample.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="MainWindow" Height="350" Width="525"        xmlns:syncfusion="clr-namespace:Syncfusion.Windows.PropertyGrid;assembly=Syncfusion.PropertyGrid.Wpf">
-    
-	<Grid x:Name="LayoutRoot">
-        
-		<syncfusion:PropertyGrid Margin="109,32,117,47" SelectedObject="{Binding ElementName=LayoutRoot}" BorderBrush="Gray" BorderThickness="2"/>        
-    
-	</Grid>
-	
+<Grid x:Name="LayoutRoot">
+<syncfusion:PropertyGrid Margin="109,32,117,47" SelectedObject="{Binding ElementName=LayoutRoot}" BorderBrush="Gray" BorderThickness="2"/>        
+</Grid>
 </Window>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img11.png)
 
