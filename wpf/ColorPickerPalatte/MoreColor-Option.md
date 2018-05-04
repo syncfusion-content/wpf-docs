@@ -30,10 +30,11 @@ The following code example illustrates how to add the MoreColor Option to an App
 MoreColorOptionVisibility="Visible" />
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The following code example illustrates how to add the MoreColor Option to an Application through C#.
 
+{% tabs %}
 {% highlight C# %}
 
 
@@ -67,7 +68,7 @@ The MoreColorIcon property used to set the Icon left to the More Color option .
 
 {% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
 
 ColorPicker.Icon = new BitmapImage(new Uri(@"color.png", UriKind.RelativeOrAbsolute));
 
