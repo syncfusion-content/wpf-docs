@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon. 
 
-## Add Ribbon
+## Add ribbon
 
 There are several ways to add Syncfusion control in to Visual Studio WPF project, the following steps will helps to add a Ribbon control through XAML Code.
 
@@ -26,13 +26,9 @@ There are several ways to add Syncfusion control in to Visual Studio WPF project
 {% highlight XAML %}
 
 <Window
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow">       
-
 </Window>
 
 {% endhighlight %}
@@ -46,16 +42,10 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow">
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -68,17 +58,13 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% highlight C# %}
 
 using Syncfusion.Windows.Tools.Controls;
-
 public partial class MainWindow : RibbonWindow
-
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Imports Syncfusion.Windows.Tools.Controls
-
 Public class As partial
 
 {% endhighlight %}
@@ -92,68 +78,42 @@ Public class As partial
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.MainWindow">
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon"/>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Set Icon for RibbonWindow
+## Set icon for RibbonWindow
 
 * Icon of the RibbonWindow can be set using the property named `Office2010Icon`. Please refer to the below code.
-
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-  
     x:Class="WPFRibbon.MainWindow"
-    
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-   
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-   
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-   
     xmlns:local="clr-namespace:WPFRibbon"
-   
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    
     xmlns:sfSkinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-    
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    
     Title="MainWindow"
-    
     Office2010Icon="Assets/New Microsoft.png"
-   
     sfSkinManager:SfSkinManager.VisualStyle="Office2016White"
-    
     mc:Ignorable="d">
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon"/>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
 
 {% endhighlight %}
@@ -162,7 +122,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 ![](GettingStarted_images/GettingStarted_img18.jpg)
 
-## Set Visual Styles
+## Set visual styles
 
 Ribbon supports various visual styles by using the `SfSkinManager`. To apply Visual Studio style on the current layout, refer to the following steps.
 
@@ -173,184 +133,112 @@ Ribbon supports various visual styles by using the `SfSkinManager`. To apply Vis
 
 * Include an XML namespace for the SfSkinManager assembly to the MainWindow.
 
-
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon"/>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
 
-
-
 {% endhighlight %}
-
 
 {% endtabs %}
 
 * Now apply the value as `Office2013White` to the `VisualStyle` property of the SfSkinManager for the RibbonWindow.
 
-
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon"/>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
-
 {% endtabs %}
 
-
 ![](GettingStarted_images/GettingStarted_img1.jpg)
-
 
 ## Add RibbonTab
 
 Ribbon control accept `RibbonTab` as children, Here four `RibbonTab` are added and that can hold `RibbonItems` with `RibbonBar`.
 
-
-
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>   
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True"/>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
 
-
-
 {% endhighlight %}
-
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img2.jpg)
 
-
 ## Add RibbonBar
 
 RibbonTab accepts `RibbonBar` as children, here five `RibbonBar` Controls are added inside "HOME" RibbonTab. To set header for RibbonBar, use its `Header` property.
-
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>   
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New"/>
-
 <syncfusion:RibbonBar Name="Delete" Width="150"  Header="Delete"/>
-
 <syncfusion:RibbonBar Name="Respond" Width="90" Header="Respond"/>
-
 <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
-
 <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
 
-
-
 {% endhighlight %}
-
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img3.jpg)
-
 
 ## Add RibbonButton
 
@@ -363,15 +251,10 @@ If the value of `SizeForm` is large,then image of 16 * 16 size has been expanded
 {% highlight XAML %}
 
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">                    
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 </syncfusion:RibbonBar>
 
-
-
 {% endhighlight %}
-
 
 {% endtabs %}
 
@@ -382,68 +265,36 @@ Also add several other Ribbon Button as per the requirement
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>   
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
-
 <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -462,82 +313,43 @@ N> Image of any size has been used for `RibbonButton` and also it supports image
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>   
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
-
 <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -545,118 +357,66 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![](GettingStarted_images/GettingStarted_img5.jpg)
 
-
-
 ## Add SplitButton
 
 SplitButton also appears with a drop arrow. It displays some items while click on it. It accepts `DropDownMenuItem` as its children.  Here, "Delete" RibbonBar holds a `SplitButton` with a caption as "Clean Up" using its `Label` property also holding items like "Clean Up Folder", "Clean Up Conversation" and "Clean Up Folder/SubFolder". It also provides `SizeForm` property for different sizes.
-
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
-
 <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img6.jpg)
-
-
 
 ## Add RibbonGallery
 
@@ -667,124 +427,66 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>   
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img7.jpg)
-
-
 
 ## Add RibbonComboBox
 
@@ -795,273 +497,143 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>   
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-
 ## Add QAT
 
 QuickAccessToolbar (QAT) is used to group the frequently used commands and access the commands easily without having to search for the command in the menu bar. Also it can be placed above or below the ribbon.
-
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar/>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -1070,7 +642,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 ![](GettingStarted_images/GettingStarted_img8.jpg)
 
 
-### Add items to Quick Access Toolbar	
+### Add items to Quick Access toolbar	
 
 `QATMenuItems` property of QuickAccessToolbar used to add items to Dropdown menu of QAT. 
 
@@ -1079,161 +651,85 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img10.jpg)
-
 
 ## Add BackStage
 
@@ -1244,169 +740,88 @@ BackStage can be added by using `BackStage` property of Ribbon. To show the Back
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall" />          
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:Ribbon.BackStage>
-
 <syncfusion:Backstage/>
-
 </syncfusion:Ribbon.BackStage>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img11.jpg)
-
-
-
 
 ## Add BackStageCommandButton
 
@@ -1417,170 +832,87 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall" />
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:Ribbon.BackStage>
-
 <syncfusion:Backstage>
-
 <syncfusion:BackStageCommandButton Header="Save" />
-
 <syncfusion:BackStageCommandButton Header="SaveAttachments" />
-
 <syncfusion:BackStageCommandButton Header="Options" />
-
 <syncfusion:BackStageCommandButton Header="Exit" />
-
 </syncfusion:Backstage>
-
 </syncfusion:Ribbon.BackStage>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -1593,194 +925,101 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 `BackStageTabItem` can also be added inside the BackStage Element.Here four BackStageCommandButtons are added with `Header` property value as "Open", "Print" and "Office Account". 
 
-
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall" />
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:Ribbon.BackStage>
-
 <syncfusion:Backstage>
-
 <syncfusion:BackstageTabItem  Header="Info">
-
 <StackPanel>
-
 <TextBlock FontSize="20" Text="Account Information"/>
-
 <TextBlock FontSize="12" Text="Employ1@syncfusion.com"/>
-
 </StackPanel>
-
 </syncfusion:BackstageTabItem>
-
 <syncfusion:BackstageTabItem  Header="Open"/>
-
 <syncfusion:BackStageCommandButton Header="Save" />
-
 <syncfusion:BackStageCommandButton Header="SaveAttachments" />
-
 <syncfusion:BackstageTabItem  Header="print"/>
-
 <syncfusion:BackstageTabItem  Header="OfficeAccount"/>
-
 <syncfusion:BackStageCommandButton Header="Options" />
-
 <syncfusion:BackStageCommandButton Header="Exit" />
-
 </syncfusion:Backstage>
-
 </syncfusion:Ribbon.BackStage>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -1798,190 +1037,97 @@ BackStageSeparator used to group out similar backstage elements in BackStage. He
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"
-
 xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
 syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall" />
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:Ribbon.BackStage>
-
 <syncfusion:Backstage>
-
 <syncfusion:BackstageTabItem  Header="Info">
-
 <StackPanel>
-
 <TextBlock FontSize="20" Text="Account Information"/>
-
 <TextBlock FontSize="12" Text="Employ1@syncfusion.com"/>
-
 </StackPanel>
-
 </syncfusion:BackstageTabItem>
-
 <syncfusion:BackstageTabItem  Header="Open"/>
-
 <syncfusion:BackStageCommandButton Header="Save" />
-
 <syncfusion:BackStageCommandButton Header="SaveAttachments" />
-
 <syncfusion:BackstageTabItem  Header="print"/>
-
 <syncfusion:BackStageSeparator/>
-
 <syncfusion:BackstageTabItem  Header="OfficeAccount"/>
-
 <syncfusion:BackStageCommandButton Header="Options" />
-
 <syncfusion:BackStageCommandButton Header="Exit" />
-
 </syncfusion:Backstage>
-
 </syncfusion:Ribbon.BackStage>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -1990,171 +1136,93 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 ![](GettingStarted_images/GettingStarted_img14.jpg)
 
 
-## Add Application Menu
+## Add application menu
 
 An Application Menu contains standard commands that are performed like in Microsoft Outlook 2003 UI. Using the `ApplicationMenu` property of the Ribbon, this Menu is viewed by added at the top-left corner of the window.
 
 N>  Visual style is set to `Default` for RibbonWindow in SkinStorage. and BackStage is not applicable when `ApplicationMenu` is used in Ribbon.
 
-
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"       
-
 syncfusion:SkinStorage.VisualStyle="Default" >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="30" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall" />
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:Ribbon.ApplicationMenu>
-
 <syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
-
 </syncfusion:ApplicationMenu>
-
 </syncfusion:Ribbon.ApplicationMenu>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
@@ -2162,194 +1230,104 @@ syncfusion:SkinStorage.VisualStyle="Default" >
 
 ![](GettingStarted_images/GettingStarted_img15.jpg)
 
-### Add Application Items to the Application Menu
+### Add application items to the application menu
 
 ApplicationItems are displayed in bottom of the Application menu. Different `ApplicationItems` are added to an application menu using its `ApplicationItems` property. Here two RibbonButton with its `Label` property as "Options" and "Exits" are added as ApplicationMenuItems.
-
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:RibbonWindow
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.MainWindow"       
-
 syncfusion:SkinStorage.VisualStyle="Default"
-
 >
-
 <Grid>
-
 <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-
 <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
-
 <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
-
 <syncfusion:DropDownMenuItem Header="E-mail Message"/>
-
 <syncfusion:DropDownMenuItem Header="Appointment"/>
-
 <syncfusion:DropDownMenuItem Header="Meeting"/>
-
 <syncfusion:DropDownMenuItem Header="Contact"/>
-
 <syncfusion:DropDownMenuItem Header="Task"/>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
-
 <syncfusion:RibbonButton Label="Ignore"/>
-
 <syncfusion:SplitButton Label="Clean Up">
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
-
 <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
-
 <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
-
 <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
-
 <syncfusion:RibbonButton Label="Meeting"/>
-
 <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
-
 <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
-
 <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="30" ItemWidth="70">
-
 <syncfusion:RibbonGalleryItem  Content="Move to?"/>
-
 <syncfusion:RibbonGalleryItem  Content="Team Email"/>
-
 <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
-
 <syncfusion:RibbonGalleryItem  Content="To Manager"/>
-
 <syncfusion:RibbonGalleryItem  Content="Done"/>
-
 <syncfusion:RibbonGalleryItem  Content="Create New"/>
-
 </syncfusion:RibbonGallery>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
-
 <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
-
 <ComboBoxItem>Person1@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person2@mail.com</ComboBoxItem>
-
 <ComboBoxItem>Person3@mail.com</ComboBoxItem>
-
 </syncfusion:RibbonComboBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 <syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:QuickAccessToolBar>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
-
 <syncfusion:RibbonButton SizeForm="ExtraSmall" />
-
 <syncfusion:QuickAccessToolBar.QATMenuItems>
-
 <syncfusion:RibbonButton Label="Send" />
-
 <syncfusion:RibbonButton Label="Forward" />
-
 <syncfusion:RibbonButton Label="ReplyAll" />
-
 <syncfusion:RibbonButton Label="Delete" />
-
 <syncfusion:RibbonButton Label="Print" />
-
 </syncfusion:QuickAccessToolBar.QATMenuItems>
-
 </syncfusion:QuickAccessToolBar>
-
 </syncfusion:Ribbon.QuickAccessToolBar>
-
 <syncfusion:Ribbon.ApplicationMenu>
-
 <syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="syncfusion.png">
-
 <syncfusion:SimpleMenuButton Label="File" Icon="Document32.png"/>
-
 <syncfusion:ApplicationMenu.MenuItems>
-
 <syncfusion:SimpleMenuButton Label="New" Icon="Document32.png"/>
-
 <syncfusion:SimpleMenuButton Label="Open" Icon="Open32.png" />
-
 </syncfusion:ApplicationMenu.MenuItems>
-
 <syncfusion:ApplicationMenu.ApplicationItems>
-
 <syncfusion:RibbonButton SizeForm = "Small" Label="Options" SmallIcon="Options.png"/>
-
 <syncfusion:RibbonButton SizeForm = "Small" Label="Exit"  SmallIcon="Exit.png"/>
-
 </syncfusion:ApplicationMenu.ApplicationItems>
-
 </syncfusion:ApplicationMenu>
-
 </syncfusion:Ribbon.ApplicationMenu>
-
 </syncfusion:Ribbon>
-
 </Grid>
-
 </syncfusion:RibbonWindow>
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted_img17.jpg)
-
-
