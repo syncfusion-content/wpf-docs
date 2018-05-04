@@ -13,9 +13,7 @@ The EnableExtendedScrolling property is used to change the values based on the c
 
 ![](Extended-Scrolling_images/Extended-Scrolling_img1.png)
 
-
-
-## Adding Extended Scrolling to an Application 
+## Adding extended scrolling to an application 
 
 The EnableExtendedScrolling property must be set either in XAML or the code file.
 
@@ -24,5 +22,3 @@ The EnableExtendedScrolling property must be set either in XAML or the code file
 
 {% highlight C# %}  control.EnableExtendedScrolling = true;{% endhighlight %}
 {%endtabs%}
-
-

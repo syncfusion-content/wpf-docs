@@ -7,6 +7,6 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# How to disable Undo in the IntegerTextBox
+# How to Disable Undo in the IntegerTextBox
 
 Undo operation in the IntegerTextBox can be disabled by setting the IsUndoEnabled property to false.

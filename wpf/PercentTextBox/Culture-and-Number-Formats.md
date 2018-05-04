@@ -52,7 +52,7 @@ percentTextBox.Culture = new CultureInfo("bs-Latn");
 
 As you have seen in these samples whenever you change the Culture property the PercentValue is formatted based on the Culture.
 
-## Number Format
+## Number format
 
 You can customize the Number Format either by using the Number Format property or the PercentGroupSeparator, PercentGroupSizes, PercentDecimalDigits, PercentDecimalSeparator, PercentNegativePattern, PercentPositivePattern, and PercentageSymbol properties.
 
@@ -123,17 +123,14 @@ n%</td></tr>
 % n</td></tr>
 </table>
 
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
 
- 
-
-    
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
-
             PercentValue="1234" PercentPositivePattern="3"/>
 
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 
@@ -203,17 +200,14 @@ n %-</td></tr>
 n- %</td></tr>
 </table>
 
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
 
-    
-
-    
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
-
             PercentValue="1234" PercentNegativePattern="7"/>
 
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 

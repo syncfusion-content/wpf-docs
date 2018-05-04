@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Control Structure
+## Control structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -17,7 +17,7 @@ documentation: ug
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-## PercentTextBox Members
+## PercentTextBox members
 
 PercentTextBox exposes the following members:
 
@@ -410,7 +410,7 @@ Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
 
-## Creating a PercentTextBox Control
+## Creating a PercentTextBox control
 
 PercentTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
@@ -440,39 +440,23 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 
 2. Click the C# file, to open the C# file and add the PercentTextBox to the application. 
 
+{% tabs %}
+{% highlight c# %}
 
- 
-   ~~~csharp   
-
-		public partial class MainWindow : Window
-
-		{
-
-		public MainWindow()
-
-		{
-
-		InitializeComponent();
-
+public partial class MainWindow : Window
+{
+	public MainWindow()
+	{
+        InitializeComponent();
 		Syncfusion.Windows.Shared.PercentTextBox percentTextBox = new Syncfusion.Windows.Shared.PercentTextBox();
-
 		percentTextBox.Width = 150;
-
 		percentTextBox.Height = 25;
-
 		this.LayoutRoot.Children.Add(percentTextBox);
+	}
+}
 
-		}
-
-		}
-
-
-
-   ~~~
-
-
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
@@ -495,34 +479,20 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-    
+<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid x:Name="LayoutRoot">
+<syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
+</Grid>
+</Window>
 
-		<Window x:Class="WpfApp.MainWindow"
-
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-		Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-		<Grid x:Name="LayoutRoot">
-
-		<syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
-
-		</Grid>
-
-		</Window>
-
-
-   ~~~
-
-
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -559,40 +529,25 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
    ![](Getting-Started_images/Getting-Started_img12.png)
 
+{% tabs %}
+{% highlight xaml %}
 
+<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+<Grid x:Name="LayoutRoot">
+<syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
+</Grid>
+</Window>
 
-    
-   ~~~xaml
-
-
-		<Window x:Class="WpfApp.MainWindow"
-
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-		Title="PercentTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-		<Grid x:Name="LayoutRoot">
-
-		<syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
-
-		</Grid>
-
-		</Window>
-
-   ~~~
-
-
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img13.png)
 
 
-## Setting Value
+## Setting value
 
 You have to use the PercentValue property to set value for the PercentTextBox.
 
@@ -615,7 +570,7 @@ percentTextBox.PercentValue = 100;
 
 
 
-## Setting Minimum and Maximum Value
+## Setting minimum and maximum values
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the PercentTextBox.
 
@@ -634,7 +589,7 @@ percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;
 ![](Getting-Started_images/Getting-Started_img15.png)
 
 
-## Setting Watermark
+## Setting watermark
 
 You can set the Watermark for the PercentTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 

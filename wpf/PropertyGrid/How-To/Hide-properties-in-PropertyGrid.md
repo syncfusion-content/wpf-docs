@@ -7,7 +7,7 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Hide properties in PropertyGrid
+# Hide Properties in PropertyGrid
 
 In PropertyGrid, `HidePropertiesCollection` property is used to hide the mentioned properties which are already present in SelectedObject. Properties can also be hide at the run time using this property.
 
@@ -16,7 +16,6 @@ In PropertyGrid, `HidePropertiesCollection` property is used to hide the mention
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"  Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center"  VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black">
-
 </syncfusion:PropertyGrid>
 
 {% endhighlight  %}
@@ -24,7 +23,6 @@ In PropertyGrid, `HidePropertiesCollection` property is used to hide the mention
 {% highlight c# %}
 
 this.propertyGrid.HidePropertiesCollection.Add("ActualWidth");
-
 this.propertyGrid.HidePropertiesCollection.Add("ActualHeight");
 
 {% endhighlight  %}

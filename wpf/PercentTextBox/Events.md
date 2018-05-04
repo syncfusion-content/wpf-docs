@@ -30,20 +30,16 @@ percentTextBox.PercentValueChanged+=new PropertyChangedCallback(PercentTextBox_P
 
 You can handle the event as follows:
 
- {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
  
-  
+void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+//Insert code to do some operations when value of PercentTextBox PercentValue change.
+}
 
-    void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
-        {
-
-            //Insert code to do some operations when value of PercentTextBox PercentValue change.
-
-        }
-
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 
@@ -66,19 +62,16 @@ TextChanged – The event occurs when the PercentValue property of the PercentTe
 
 You can handle the event as follows:
 
- {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
  
-    
-  void PercentTextBox_TextChanged(object sender, TextChangedEventArgs e)
+void PercentTextBox_TextChanged(object sender, TextChangedEventArgs e)
+{
+//Insert code to do some operations when Text of PercentTextBox change.
+}
 
-        {
-
-            //Insert code to do some operations when Text of PercentTextBox change.
-
-        }
-
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
       
@@ -101,20 +94,16 @@ percentTextBox.CultureChanged+=new
 
 You can handle the event as follows:
 
- {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
  
+void PercentTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+//Insert code to do some operations when the Culture property changes.
+}
 
-
-    void PercentTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
-        {
-
-            //Insert code to do some operations when the Culture property changes.
-
-        }
-
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 
@@ -139,20 +128,16 @@ PropertyChangedCallback(PercentTextBox_MaxValueChanged);
 
 You can handle the event as follows:
 
- {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
  
-    
+void PercentTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+//Insert code to do some operations when the MaxValue changed
+}
 
-    void PercentTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
-        {
-
-            //Insert code to do some operations when the MaxValue changed
-
-        }
-
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 
@@ -176,20 +161,16 @@ PropertyChangedCallback(PercentTextBox_MinValueChanged);
 
 You can handle the event as follows:
 
- {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
  
+void PercentTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+//Insert code to do some operations when the MinValue changed
+}
 
-
-    void PercentTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-
-        {
-
-            //Insert code to do some operations when the MinValue changed
-
-        }
-
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 
@@ -214,20 +195,16 @@ RoutedEventHandler(PercentTextBox_SelectionChanged);
 
 You can handle the event as follows:
 
- {% highlight c# %}
+{% tabs %}
+{% highlight c# %}
  
-   
+void PercentTextBox_SelectionChanged(object sender, RoutedEventArgs e)
+{
+//Insert code to do some operations when the Selected Text changed.
+}
 
-   void PercentTextBox_SelectionChanged(object sender, RoutedEventArgs e)
-
-        {
-
-            //Insert code to do some operations when the Selected Text changed.
-
-        }
-
- {% endhighlight %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 

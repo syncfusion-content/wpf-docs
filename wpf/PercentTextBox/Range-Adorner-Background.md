@@ -30,7 +30,8 @@ RangeAdornerBackground</td><td>
 Sets the background color of the adorner.</td><td>
 Color name</td></tr>
 </table>
-# Adding Range Adorner Background to an Application 
+
+## Adding range adorner background to an application 
 
 We have to set the RangeAdornerBackground property either in XAML or the code file.
 
