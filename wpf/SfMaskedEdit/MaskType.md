@@ -21,7 +21,7 @@ Expressions that are generated with very simple mask elements come under this gr
 
 Mask elements in this mask type are as follows:
 
-### Simple Mask elements
+### Simple mask elements
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ Shift up. Converts all the characters that follow to uppercase.</td></tr>
 
 Expressions that are generated with slightly complex mask elements are under this group, preferable for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
 
-### Regular Mask elements
+### Regular mask elements
 
 <table>
 <tr>
@@ -115,7 +115,7 @@ Accepts the input for zero or more times.</td></tr>
 
 Very complex regular expressions come under this category. It accepts input of variable length and allows to use OR expressions.  
 
-### RegEx Mask elements
+### RegEx mask elements
 
 <table>
 <tr>

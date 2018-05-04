@@ -54,7 +54,7 @@ integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");
 
 In the first sample culture is set to “en-US” (US Culture) and in the second sample culture is set to “bs-Latn” (Latin Culture). The US culture uses “,” as the NumberGroupSeparator and the Latin culture uses “.” as the NumberGroupSeparator. When you change the Culture property the Value is formatted based on the Culture.
 
-## Number Format
+## Number format
 
 You can customize the Number Format either by using the NumberFormat property or the NumberGroupSeparator and the NumberGroupSizes property.
 
@@ -110,26 +110,19 @@ You can also change the NumberGroupSizes by using the NumberGroupSizes property.
 
 Here is a sample for setting the NumberGroupSizes by using the NumberFormat property.
 
+{% tabs %}
 {% highlight C# %}
 
-
-
 Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-
 integerTextBox.Width = 150;
-
 integerTextBox.Height = 25;
-
 integerTextBox.Value = 123456789012345;
-
 integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() { 
-
                               NumberGroupSeparator = "/", 
-
                               NumberGroupSizes = new int[] { 2, 3, 4 } };
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
 
@@ -137,25 +130,17 @@ integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {
 
 Here is a sample for setting the NumberGroupSizes by using the NumberGroupSizes property of the integer textbox:
 
+{% tabs %}
 {% highlight C# %}
 
-
-
 Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-
 integerTextBox.Width = 150;
-
 integerTextBox.Height = 25;
-
 integerTextBox.Value = 123456789012345;
-
 integerTextBox.NumberGroupSeparator = "/";
-
 integerTextBox.NumberGroupSizes = new Int32Collection() { 2, 3, 0 };
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
-
-
-

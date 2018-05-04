@@ -16,7 +16,7 @@ MaskedEdit is an enhanced TextBox control that restricts input to conform to a s
 * Culture support.
 * Watermark support.
 
-## Control Structure
+## Control structure
 
 ![](Overview_images/Overview_img1.jpeg)
 

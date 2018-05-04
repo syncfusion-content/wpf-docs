@@ -19,35 +19,31 @@ Add the following assemblies to apply the corresponding theme for Hierarchy Navi
 
 1. Create HierarchyNavigator instance either in XAML or code behind, as shown below.
 
+{% tabs %}
+{% highlight xaml %}
 
-   ~~~xaml
+ <syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
 
+{% endhighlight %}
 
-      <syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
- 
-   ~~~
+{% highlight c# %}
 
-     Or
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
-   ~~~csharp
-
-
-
-    HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
-
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 2. Apply Visual Style as shown below in code behind by calling the static method in SkinStorage class in Syncfusion.Shared.WPF.
 
 ## Window7
 
+{% tabs %}
 {% highlight C# %}
-
-
 
 SkinStorage.SetVisualStyle(this, "Default");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img1.png)
 
@@ -55,13 +51,13 @@ SkinStorage.SetVisualStyle(this, "Default");
 
 ## Office2007Blue 
 
+{% tabs %}
 {% highlight C# %}
-
-
 
 SkinStorage.SetVisualStyle(this, "Office2007Blue");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img2.png)
 
@@ -69,13 +65,13 @@ SkinStorage.SetVisualStyle(this, "Office2007Blue");
 
 ## Office2007Black
 
+{% tabs %}
 {% highlight C# %}
-
-
 
 SkinStorage.SetVisualStyle(this, "Office2007Black");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img3.png)
 
@@ -83,51 +79,56 @@ SkinStorage.SetVisualStyle(this, "Office2007Black");
 
 ## Office2007Silver
 
+{% tabs %}
 {% highlight C# %}
-
-
 
 SkinStorage.SetVisualStyle(this, "Office2007Silver");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img4.png)
 
 
 
 
-## Expression Blend
+## Expression blend
 
+{% tabs %}
 {% highlight C# %}
-
 
 SkinStorage.SetVisualStyle(this, "Blend");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img5.png)
 
 
 
-## Metro Theme
+## Metro theme
 
+{% tabs %}
 {% highlight C# %}
 
 SkinStorage.SetVisualStyle(this, “Metro");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img6.png)
 
 
 
-## Transparent Theme
+## Transparent theme
 
+{% tabs %}
 {% highlight C# %}
 
 SkinStorage.SetVisualStyle(this, “Transparent");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Skins_images/Skins_img7.png)
 

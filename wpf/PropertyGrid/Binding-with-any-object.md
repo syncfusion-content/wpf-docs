@@ -7,11 +7,11 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Binding with any object
+# Binding with any Object
 
 Denotes the object for which PropertyGrid displays Properties. You can set the SelectedObject property to any object.
 
-## Binding SelectedObject in an Application
+## Binding SelectedObject in an application
 
 When the SelectedObject property binds to an object, the properties of that object is then parsed and displayed in the PropertyGrid. In the below example, properties of the Customer class is parsed and displayed in the PropertyGrid.
 
@@ -153,7 +153,7 @@ ObjectDefault Value : Null</td><td>
 </td></tr>
 </table>
 
-#### Sample Link
+#### Sample link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.

@@ -11,23 +11,15 @@ documentation: ug
 
 Watermark is the dummy content displayed in the PercentTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
 
-    
-
-    <syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
-
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
             WatermarkText="Type Here" WatermarkTextIsVisible="True" 
-
             WatermarkOpacity="0.5" UseNullOption="True"/>
 
- {% endhighlight %}
-
-
-
-
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Watermark-Support_images/Watermark-Support_img1.png)
 
@@ -38,41 +30,24 @@ WatermarkText automatically collapses when the control is in focus. When the con
 
 You can customize the Visual appearance of the WatermarkText by using the WatermarkTemplate property.
 
- {% highlight xaml %}
-
-   
+{% tabs %}
+{% highlight xaml %}
 
 <syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
-
 WatermarkText="Type Here" CornerRadius="3" 
-
 WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
-
 UseNullOption="True">
-
 <syncfusion:PercentTextBox.WatermarkTemplate>
-
 <DataTemplate>
-
 <Border Background="LightGray">
-
 <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
-
 </Border>
-
 </DataTemplate>
-
 </syncfusion:PercentTextBox.WatermarkTemplate>
-
 </syncfusion:PercentTextBox>
 
 {% endhighlight %}
-
-
-
-
-
-
+{% endtabs %}
 
 ![](Watermark-Support_images/Watermark-Support_img2.png)
 
