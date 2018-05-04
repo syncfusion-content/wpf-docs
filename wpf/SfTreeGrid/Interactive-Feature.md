@@ -11,11 +11,11 @@ documentation: ug
 
 ## ToolTip
 
-ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfTreeGrid.
+ToolTip supports showing the pop-up window that displays the information when the mouse hovers in a cell of the SfTreeGrid.
 
-### Record Cell ToolTip
+### Record cell ToolTip
 
-You can enable tooltip for the TreeGridCell by setting [SfTreeGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) as `true`.
+You can enable tooltip for the TreeGridCell by setting the [SfTreeGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,7 +34,7 @@ this.treeGrid.ShowToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can enable the tooltip for the particular column by setting the [TreeGridColumn.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowToolTip.html) as `true`.
+You can enable the tooltip of a particular column by setting the [TreeGridColumn.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowToolTip.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,13 +51,13 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> It takes higher priority than  [SfTreeGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html).
+N> It has higher priority than [SfTreeGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html).
 
 ![](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 ### Header ToolTip
 
-You can enable the tooltip for the header cell by setting the [TreeGridColumn.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowHeaderToolTip.html) as `true`.
+You can enable the tooltip of a header cell by setting the [TreeGridColumn.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowHeaderToolTip.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,7 +76,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 
 ![](Interactive-Features_images/InteractiveFeatures_img2.png)
 
-### ToolTip Customization
+### ToolTip customization
 
 You can change the appearance of the ToolTip by customizing the style with TargetType as ToolTip.
 
@@ -100,16 +100,16 @@ You can change the appearance of the ToolTip by customizing the style with Targe
 
 ![](Interactive-Features_images/InteractiveFeatures_img3.png)
 
-You can customize the template of ToolTip by using the [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html) and [TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
+You can customize the template of the ToolTip by using the [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html) and [TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
 
 #### Customize the ToolTip using ToolTipTemplate
 
-You can customize the appearance of the ToolTip for particular column by setting `TreeGridColumn.ToolTipTemplate`. And you can also customize the appearance of header ToolTip for particular column by [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property.
+You can customize the appearance of the ToolTip of a particular column by setting the `TreeGridColumn.ToolTipTemplate`. You can also customize the appearance of the header ToolTip of a particular column by using the [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property.
 
-ToolTipTemplate receives underlying data object as DataContext by default. You can set [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) as `true` to change the DataContext of tooltip template where it sets the DataContext as DataContextHelper. [TreeGridDataContextHelper](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) has below properties to re-use the same template for all columns. 
+The ToolTipTemplate receives underlying data object as DataContext by default. You can set the [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) to `true` to change the DataContext of the tooltip template where it sets the DataContext as DataContextHelper. The [TreeGridDataContextHelper](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) has the following properties to re-use the same template for all columns: 
  <ul>  
- <li><b> [Record](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html) : </b> Gets the underlying data record of row which has the cell.  </li>
- <li><b> [Value](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html) :  </b> Gets the underlying value of cell. </li> 
+ <li><b> [Record](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html): </b> Gets the underlying data record of a row which has the cell.  </li>
+ <li><b> [Value](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html):  </b> Gets the underlying value of a cell. </li> 
  </ul>
 
 {% tabs %}
@@ -155,12 +155,11 @@ public class StringToImageConverter : IValueConverter
 
 ![](Interactive-Features_images/InteractiveFeatures_img4.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
+You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
 #### Customize the ToolTip with ToolTipTemplateSelector
 
-The different ToolTip template can be loaded in a same column conditionally based on data by setting 
-[TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) property. 
+The different ToolTip template can be loaded conditionally in a same column based on the data by setting the [TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -231,28 +230,28 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-The below image refers the DefaultTemplate which is applied through ToolTipTemplateSelector.
+The following image refers the DefaultTemplate applied through ToolTipTemplateSelector.
 
 ![](Interactive-Features_images/InteractiveFeatures_img5.png)
 
-The below image refers the AlternateTemplate which is applied through ToolTipTemplateSelector.
+The following image refers the AlternateTemplate applied through ToolTipTemplateSelector.
 
 ![](Interactive-Features_images/InteractiveFeatures_img6.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
+You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
 
 ## Events
 
-### CellToolTipOpening Event
+### CellToolTipOpening event
 
-[CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when any tooltip on the cell is opened. `CellToolTipOpening` event received [TreeGridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html) as argument which has below properties. 
+The [CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when any tooltip on the cell is opened. The `CellToolTipOpening` event receives the [TreeGridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
-<li> [Column](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html) Gets the Column of hovered cell in the SfTreeGrid.</li>
-<li> [Node](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs~Node.html) Gets the Node of hovered cell.</li>
-<li> [Record](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html) Gets the data context of hovered cell.</li>
-<li> [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html) Gets the Row,Column index of hovered cell.</li>
-<li> [ToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html) Gets the tooltip of hovered cells</li>
+<li> [Column](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html): Gets the hovered cell column in the SfTreeGrid.</li>
+<li> [Node](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs~Node.html): Gets the hovered cell node.</li>
+<li> [Record](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html): Gets data context of the hovered cell.</li>
+<li> [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html): Gets the row and column index of the hovered cell.</li>
+<li> [ToolTip](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html): Gets the tooltip of the hovered cells.</li>
 </ul>
 
 {% tabs %}
