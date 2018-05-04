@@ -57,43 +57,43 @@ To add control manually in C#, follow the given steps:
 
 1. Add the following required assembly references to the project:
 
-        * Syncfusion.Tools.WPF.dll
-        * SyncfusioN.Shared.WPF.dll
+   * Syncfusion.Tools.WPF.dll
+   * Syncfusion.Shared.WPF.dll
 
 2. Include the namespaces `Syncfusion.Windows.Tools.Controls`
 
-{% tabs %}
+   {% tabs %}
 
-{% highlight C# %}
+   {% highlight C# %}
 
-using Syncfusion.Windows.Tools.Controls;
+   using Syncfusion.Windows.Tools.Controls;
 
-{% endhighlight %}
+   {% endhighlight %}
 
-{% endtabs %}
+   {% endtabs %}
 
 3. Create `TabControlExt` control instance and add it to the Panel.
 
-{% tabs %}
+   {% tabs %}
 
-{% highlight C# %}
+   {% highlight C# %}
 
-// Creating instance of the TabControlExt control
+   // Creating instance of the TabControlExt control
 
-TabControlExt tabControlExt = new TabControlExt();
+   TabControlExt tabControlExt = new TabControlExt();
 
-//Creating the instance of StackPanel
+   //Creating the instance of StackPanel
 
-StackPanel stackPanel = new StackPanel();          
+   StackPanel stackPanel = new StackPanel();          
 
-//Adding control to the stack panel
+   //Adding control to the stack panel
 
-stackPanel.Children.Add(tabControlExt); 
+   stackPanel.Children.Add(tabControlExt); 
 
-{% endhighlight %}
+   {% endhighlight %}
 
-{% endtabs %}
+   {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 N> To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
