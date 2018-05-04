@@ -9,7 +9,7 @@ documentation: ug
 
 # Basic Features
 
-## Masking the Input
+## Masking the input
 
 To mask the input, set the MaskType and Mask property as follows:
 
