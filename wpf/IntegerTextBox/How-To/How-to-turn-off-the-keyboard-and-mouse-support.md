@@ -7,6 +7,6 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# How to turn off the keyboard and mouse support
+# How to Turn Off the Keyboard and Mouse Support
 
 Keyboard and Mouse support can be disabled by setting the IsScrollingOnCircle property to false. For more information about this refer the following link keyboard and mouse support.

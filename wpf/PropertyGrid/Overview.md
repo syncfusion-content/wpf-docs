@@ -11,7 +11,7 @@ documentation: ug
 
 The PropertyGrid control provides an interface for browsing the properties of an object with support for Blendability, custom editors, category editors, sorting, and grouping. The PropertyGrid control provides similar features to the Windows Forms PropertyGrid. The PropertyGrid control supports several built-in editors, and custom or category editors can also be added to give the control a custom look and feel.
 
-### Feature Summary
+### Feature summary
 
 * Binding with any objects—Denotes the object for which PropertyGrid displays properties.
 * Custom Editor—CustomEditor support enables you to set custom value editors for particular properties, instead of default editors.
