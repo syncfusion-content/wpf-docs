@@ -10,11 +10,11 @@ documentation: ug
 
 This section explains how to add `UpDown` control to an application and its structure.
 
-## Add UpDown control to an Application
+## Add UpDown control to an application
 
 The `UpDown` control can be added to an application by using the following ways.
 
-### Create the UpDown Control by using XAML
+### Create the UpDown control by using XAML
 
 There are several ways to add Syncfusion control in to the Visual Studio WPF project. The following code example illustrates how to add the `UpDown` control to an application through XAML.
 
@@ -26,16 +26,10 @@ There are several ways to add Syncfusion control in to the Visual Studio WPF pro
 {% highlight XAML %}
 
 <Window x:Class="Application_New.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    
-
 Title="MainWindow" Height="350" Width="525">
-
-
 
 {% endhighlight %}
 
@@ -48,8 +42,6 @@ Title="MainWindow" Height="350" Width="525">
 {% highlight XAML %}
 <syncfusion:UpDown Name="_upDown" Width="100" Height="23"/>
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -57,7 +49,7 @@ Title="MainWindow" Height="350" Width="525">
 ![](GettingStarted-images/GettingStarted-img1.jpeg)
 
 
-###  Create the UpDown Control by using C#:
+###  Create the UpDown control by using C#
 
 The following code example illustrates how to add the `UpDown` control to an application through C#.
 
@@ -66,14 +58,9 @@ The following code example illustrates how to add the `UpDown` control to an app
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -83,8 +70,6 @@ Grid1.Children.Add(updown);
 
 
 ## Structure
-
-
 
 ![](GettingStarted-images/GettingStarted-img3.jpeg)
 
