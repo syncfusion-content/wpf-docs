@@ -12,7 +12,7 @@ documentation: ug
 
 The appearance of the `UpDown` control can be customized by editing its style or by using the properties exposed by the `UpDown` control.
 
-## Customize using Properties
+## Customize using properties
 
 The appearance of the `UpDown` control can be customized using the properties exposed by the control. The appearance of the `UpDown` control can be changed when the following properties are used.
 
@@ -31,23 +31,15 @@ The background color for the `UpDown` control can be customized using the `Focus
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="10" FocusedBackground="Pink" EnableFocusedColors="True" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.EnableFocusedColors = true;
-
 updown.FocusedBackground = Brushes.Pink;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -68,23 +60,15 @@ The BorderBrush color for the `UpDown` control can be customized when it get foc
 
 <syncfusion:UpDown Name="upDown" Value="10" FocusedBorderBrush="Green" EnableFocusedColors="True" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.EnableFocusedColors = true;
-
 updown.FocusedBorderBrush = Brushes.Green;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -105,23 +89,15 @@ The foreground color for the `Updown` control can be customized using the `Focus
 
 <syncfusion:UpDown Name="upDown" Value="10"  FocusedForeground="Red" EnableFocusedColors="True" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.EnableFocusedColors = true;
-
 updown.FocusedForeground = Brushes.Red;
-
 Grid1.Children.Add(updown);          
-
-
 
 {% endhighlight %}
 
@@ -148,23 +124,15 @@ The background for the negative value can be customized using the `NegativeBackg
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="-2" EnableNegativeColors="True" NegativeBackground="Yellow"/>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = -2;
-
 updown.EnableNegativeColors = true;
-
 updown.NegativeBackground = Brushes.Yellow;        
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -182,22 +150,15 @@ The foreground color for the Negative value in the `UpDown` control can be custo
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="-2" EnableNegativeColors="True" NegativeForeground="Blue" />
 
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = -2;
-
 updown.EnableNegativeColors = true;
-
 updown.NegativeForeground = Brushes.Blue;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -216,22 +177,14 @@ The color of the zero value can be changed by using the `ZeroColor` property. Th
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="0" ApplyZeroColor="True"  ZeroColor="DarkViolet" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 UpDown updown = new UpDown();
-
 updown.Value = 0;
-
 updown.ApplyZeroColor = true;
-
 updown.ZeroColor = Brushes.DarkViolet;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -240,7 +193,7 @@ Grid1.Children.Add(updown);
 ![](StylesandTemplates-images/StylesandTemplates-img6.jpeg)
 
 
-## Change the alignment of the text Part in UpDown
+## Change the alignment of the text part in UpDown
 
 The alignment of the text in the `UpDown` control can change by using the `TextAlignment` property. The following code can be used to set the `TextAlignment` for the `UpDown` control.
 
@@ -262,25 +215,16 @@ The `TextAlignment` can set to the `Left` in the `UpDown` control as shown in th
 
 <syncfusion:UpDown Name="upDown" TextAlignment="Left" Value="10" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.TextAlignment = TextAlignment.Left;
-
 Grid1.Children.Add(updown);
 
-
-
 {% endhighlight %}
-
-
 {% endtabs %}
 
 ![](StylesandTemplates-images/StylesandTemplates-img7.jpeg)
@@ -295,21 +239,14 @@ The `TextAlignment` can be set to the `Right` in the `UpDown` control as shown i
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" TextAlignment="Right" Value="10" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.TextAlignment = TextAlignment.Right;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -327,21 +264,14 @@ The `TextAlignment` can be set to the `Center` in the `UpDown` control as shown
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" TextAlignment="Center" Value="10"/>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.TextAlignment = TextAlignment.Center;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -359,21 +289,14 @@ The `TextAlignment` can be set to `Justify` in the `UpDown` control as shown in 
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" TextAlignment="Justify" Value="10"/>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10; 
-
 updown.TextAlignment = TextAlignment.Justify;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -382,7 +305,7 @@ Grid1.Children.Add(updown);
 ![](StylesandTemplates-images/StylesandTemplates-img10.jpeg)
 
 
-## Visual Styles
+## Visual styles
 
 `SkinManager` provides rich and professional look and feel UI for the `UpDown` control. Some of the available visual style are as follows:
 
@@ -404,30 +327,16 @@ For example, the `Blend` style applied for the `UpDown` control shows in the fol
 
 {% highlight XAML %}
 <Window x:Class="Application_New.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:shared="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.Wpf"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 syncfusion:SkinStorage.VisualStyle="Blend"
-
 Title="MainWindow" Height="350" Width="525">
-
 <Grid x:Name="Grid1">
-
 <syncfusion:UpDown x:Name="Updown1" Width="100" Height="23"/>
-
 </Grid>
-
-
-
 </Window>
-
-
 
 {% endhighlight %}
 
@@ -435,10 +344,7 @@ Title="MainWindow" Height="350" Width="525">
 
 SkinStorage.SetVisualStyle(updown, "Blend");
 
-
-
 {% endhighlight %}
-
 
 {% endtabs %}
 
