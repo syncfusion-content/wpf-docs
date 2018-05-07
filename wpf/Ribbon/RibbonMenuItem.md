@@ -10,7 +10,7 @@ documentation: ug
 
 `RibbonMenuItem` used as entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 
-## RibbonMenuItem Header
+## RibbonMenuItem header
 
 The header property used to set the name of the MenuItem. The same has been explained below:
 
@@ -19,17 +19,11 @@ The header property used to set the name of the MenuItem. The same has been expl
 {% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  >
-
 <syncfusion:RibbonBar Name="_ribbonBar1">
-
 <syncfusion:RibbonMenuItem  Header="NEW" Width="100"></syncfusion:RibbonMenuItem>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -43,7 +37,6 @@ Create instance of RibbonMenuItem and add it to RibbonBar through code behind.
 {% highlight C# %}
 
 RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem(){Header = "NEW", Width = 100};
-
 _ribbonBar1.Items.Add(_ribbonMenuItem);
 
 {% endhighlight %}
@@ -64,7 +57,7 @@ _ribbonBar1.Items.Add(_ribbonMenuItem)
 ![](RibbonMenuItem_images/RibbonMenuItem_img1.jpg)
 
 
-## RibbonMenuItem Icon
+## RibbonMenuItem icon
 
 The Icon property used to set the Icon for that RibbonMenuItem. The same has been explained in the below code example:
 
@@ -73,24 +66,24 @@ The Icon property used to set the Icon for that RibbonMenuItem. The same has bee
 {% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-            <syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  >
-                <syncfusion:RibbonBar Name="_ribbonBar1">
-                    <syncfusion:RibbonMenuItem Header="NEW">
-                        <syncfusion:RibbonMenuItem.Icon>
-                            <Image Source="SampleImages\options.png"/>
-                        </syncfusion:RibbonMenuItem.Icon>
-                    </syncfusion:RibbonMenuItem>
-                </syncfusion:RibbonBar>
-            </syncfusion:RibbonTab>
-            <syncfusion:RibbonTab Name="_ribbonTab2" Caption="View">
-                <syncfusion:RibbonBar Name="_ribbonBar2">
-                    <syncfusion:RibbonMenuItem Header="View"  IconBarEnabled="True">
-                        <syncfusion:RibbonMenuItem.Icon>
-                            <Image Source="SampleImages\sharing.png"/>
-                        </syncfusion:RibbonMenuItem.Icon>
-                    </syncfusion:RibbonMenuItem>
-                </syncfusion:RibbonBar>
-            </syncfusion:RibbonTab>
+<syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  >
+<syncfusion:RibbonBar Name="_ribbonBar1">
+<syncfusion:RibbonMenuItem Header="NEW">
+<syncfusion:RibbonMenuItem.Icon>
+<Image Source="SampleImages\options.png"/>
+</syncfusion:RibbonMenuItem.Icon>
+</syncfusion:RibbonMenuItem>
+</syncfusion:RibbonBar>
+</syncfusion:RibbonTab>
+<syncfusion:RibbonTab Name="_ribbonTab2" Caption="View">
+<syncfusion:RibbonBar Name="_ribbonBar2">
+<syncfusion:RibbonMenuItem Header="View"  IconBarEnabled="True">
+<syncfusion:RibbonMenuItem.Icon>
+<Image Source="SampleImages\sharing.png"/>
+</syncfusion:RibbonMenuItem.Icon>
+</syncfusion:RibbonMenuItem>
+</syncfusion:RibbonBar>
+</syncfusion:RibbonTab>
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -129,10 +122,6 @@ The event occurs when the IconSize property of the RibbonMenuItem get changed.
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 RibbonMenuItem menuItem = new RibbonMenuItem();
@@ -157,9 +146,8 @@ To handle the IconSizeChanged event, refer the following code:
 
 private void RibbonMenuItem_IconSizeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-
- // Insert code to do some operations when the IconSize property is changed 
- }
+// Insert code to do some operations when the IconSize property is changed 
+}
 
 
 {% endhighlight %}
@@ -168,8 +156,7 @@ private void RibbonMenuItem_IconSizeChanged(DependencyObject d, DependencyProper
 
 Private Sub RibbonMenuItem_IconSizeChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
 
-‘Insert code to do some operations when the IconSize property is changed
-
+'Insert code to do some operations when the IconSize property is changed
 End Sub
 
 {% endhighlight %}
@@ -187,10 +174,6 @@ The event occurs when the FlowDirection property of the RibbonMenuItem get chang
 <syncfusion:RibbonMenuItem Header="View" FlowDirectionChanged="RibbonMenuItem_FlowDirectionChanged"/>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -215,21 +198,16 @@ To handle the FlowDirectionChanged event, refer the following code:
 {% highlight C# %}
 
 private void RibbonMenuItem_FlowDirectionChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        
 {
-
-            // Insert code to do some operations when the FlowDirection property is changed 
-  } 
-
+// Insert code to do some operations when the FlowDirection property is changed 
+} 
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Private Sub RibbonMenuItem_IconSizeChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
-
-‘Insert code to do some operations when the IconSize property is changed
-
+'Insert code to do some operations when the IconSize property is changed
 End Sub
 
 {% endhighlight %}

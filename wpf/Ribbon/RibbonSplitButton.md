@@ -21,37 +21,21 @@ DropDownMenuItem are the items with `Header` property that is used to set header
 {% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
-
 <syncfusion:RibbonButton   Label="Cut"/>
-
 <syncfusion:RibbonButton   Label="Copy"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Name="_ribbonBar2" Header="RibbonBar2">
-
 <syncfusion:SplitButton Label="Chart">
-
 <syncfusion:DropDownMenuItem Header="PieChart"/>
-
 <syncfusion:DropDownMenuItem Header="ColumnChart"/>
-
 </syncfusion:SplitButton>
-
 <syncfusion:SplitButton Label="Table"/>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="EDIT"  IsChecked="False"/>
-
 <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -65,15 +49,10 @@ Create instance of `DropDownMenuItem` and add it to SplitButton in code behind.
 {% highlight C# %}
 
 SplitButton _splitbutton = new SplitButton() { Label = "Chart" };
-
 DropDownMenuItem _dropDownMenuItem1 = new DropDownMenuItem() { Header = "PieChart" };
-
 DropDownMenuItem _dropDownMenuItem2 = new DropDownMenuItem() { Header = "ColumnChart" };
-
 _splitbutton.Items.Add(_dropDownMenuItem1);
-
 _splitbutton.Items.Add(_dropDownMenuItem2);
-
 _RibbonBar2.Items.Add(_splitbutton);
 
 {% endhighlight %}
@@ -81,15 +60,10 @@ _RibbonBar2.Items.Add(_splitbutton);
 {% highlight VB %}
 
 Dim _splitbutton As New SplitButton() With {.Label = "Chart"}
-
 Dim _dropDownMenuItem1 As New DropDownMenuItem() With {.Header = "PieChart"}
-
 Dim _dropDownMenuItem2 As New DropDownMenuItem() With {.Header = "ColumnChart"}
-
 _splitbutton.Items.Add(_dropDownMenuItem1)
-
 _splitbutton.Items.Add(_dropDownMenuItem2)
-
 _RibbonBar2.Items.Add(_splitbutton)
 
 {% endhighlight %}
@@ -109,9 +83,7 @@ SplitButton have three types of size forms. You can set size forms using its `Si
 {% highlight XAML %}
 
 <syncfusion:SplitButton SizeForm="Large" Label="Large"/>
-
 <syncfusion:SplitButton SizeForm="Small" Label="Small"/>
-
 <syncfusion:SplitButton SizeForm="ExtraSmall" Label="ExtraSmall"/>
 
 {% endhighlight %}
@@ -123,15 +95,10 @@ SplitButton have three types of size forms. You can set size forms using its `Si
 {% highlight C# %}
 
 SplitButton _splitbutton1 = new SplitButton(){Label = "Large",SizeForm= SizeForm.Large};
-
 SplitButton _splitbutton2 = new SplitButton(){Label = "Small",SizeForm= SizeForm.Small};
-
 SplitButton _splitbutton3 = new SplitButton(){Label = "ExtraSmall",SizeForm= SizeForm.ExtraSmall};
-
 _ribbonBar2.Items.Add(_splitbutton1);
-
 _ribbonBar2.Items.Add(_splitbutton2);
-
 _ribbonBar2.Items.Add(_splitbutton3);
 
 {% endhighlight %}
@@ -142,21 +109,16 @@ Dim _splitbutton1 As New SplitButton() With {
 	.Label = "Large",
 	.SizeForm= SizeForm.Large
 }
-
 Dim _splitbutton2 As New SplitButton() With {
 	.Label = "Small",
 	.SizeForm= SizeForm.Small
 }
-
 Dim _splitbutton3 As New SplitButton() With {
 	.Label = "ExtraSmall",
 	.SizeForm= SizeForm.ExtraSmall
 }
-
 _ribbonBar2.Items.Add(_splitbutton1)
-
 _ribbonBar2.Items.Add(_splitbutton2)
-
 _ribbonBar2.Items.Add(_splitbutton3)
 
 {% endhighlight %}

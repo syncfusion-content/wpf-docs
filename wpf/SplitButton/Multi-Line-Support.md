@@ -13,11 +13,13 @@ The label displayed on the button can be a line or two, when the property IsMult
 
 Multiline support can be enabled by using the following code:
 
+{% tabs %}
 {% highlight xaml %}
 
 <sync:SplitButtonAdv SizeMode="Large" IsMultiLine="False"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 

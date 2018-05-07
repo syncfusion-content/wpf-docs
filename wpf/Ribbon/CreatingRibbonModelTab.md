@@ -10,7 +10,7 @@ documentation: ug
 
 Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are available in the core tabs. At this point, the core tab gets disabled.
 
-## Use Case Scenarios
+## Use case scenarios
 
 Print Preview is a Modal Tab which displays Print Preview related commands
 
@@ -20,7 +20,7 @@ Print Preview is a Modal Tab which displays Print Preview related commands
 ![C:/Users/Sugapriyam/Desktop/viji/2.png](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img2.jpeg)
 
 
-## Adding Modal Tabs to an Application
+## Adding modal tabs to an application
 
 To add RibbonTabs as ModalTabs in an application, use `ModalTabCollection` property of the Ribbon. 
 
@@ -28,27 +28,15 @@ To add RibbonTabs as ModalTabs in an application, use `ModalTabCollection` prope
 
 {% highlight XAML %}
 
-
-
 <syncfusion:Ribbon.ModalTabCollection  >
-
 <syncfusion:ModalTabCollection >
-
 <syncfusion:RibbonTab Caption="Print Preview" x:Name="_printPreviewTab">
-
 <syncfusion:RibbonBar Header="Sample Bar">
-
 <syncfusion:RibbonButton Label="Close Tab"/>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 </syncfusion:ModalTabCollection>
-
 </syncfusion:Ribbon.ModalTabCollection>
-
-
 
 {% endhighlight %}
 
@@ -56,7 +44,7 @@ To add RibbonTabs as ModalTabs in an application, use `ModalTabCollection` prope
 
 
 
-## How to handle Modal Tabs in Ribbon
+## How to handle modal tabs in ribbon
 
 The `ShowModalTab` and `CloseModalTabs` method handle the visibility of the Modal Tabs in the Ribbon control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
 
@@ -66,27 +54,17 @@ To show specific Modal Tab in ribbon, call ShowModalTab method. This can be done
 
 {% highlight C# %}
 
-
-
 private void ShowModalTabBtn_Click(object sender, RoutedEventArgs e) 
-
 { 
-
-this._ribbon.ShowModalTab("_printPreviewTab"); 
-
+    this._ribbon.ShowModalTab("_printPreviewTab"); 
 }
 
-
 {% endhighlight %}
-
 
 {% highlight VB %}
 
 Private Sub ShowModalTabBtn_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-
 Me._ribbon.ShowModalTab("_printPreviewTab")
-
 End Sub
 
 {% endhighlight %}
@@ -99,28 +77,18 @@ End Sub
 
 {% highlight C# %}
 
-
 private void CloseModalTabBtn_Click(object sender, RoutedEventArgs e) 
-
 { 
-
-this._ribbon.CloseModalTabs(); 
-
+    this._ribbon.CloseModalTabs(); 
 }
-
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Private Sub CloseModalTabBtn_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-
 Me._ribbon.CloseModalTabs()
-
 End Sub
-
 
 {% endhighlight %}
 

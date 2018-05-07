@@ -20,7 +20,7 @@ Ribbon illustrates the implementation of Office UI with Ribbon items and Backsta
 * RibbonStatusBar
 
 
-## Key Features
+## Key features
 
 * Provides a ribbon window that overrides the default window and can set visual styles of ribbon window to different theme styles.
 * QuickAccessToolbar provides placing of frequently used items. 
