@@ -11,7 +11,7 @@ documentation: ug
 
 The value for `UpDown` can be specified by the Value property. 
 
-## Change Value of UpDown
+## Change value of UpDown
 
 Value of `UpDown` control can be changed by `Value` property. A value can be set for the `UpDown` control as shown in the following code example.
 
@@ -20,21 +20,18 @@ Value of `UpDown` control can be changed by `Value` property. A value can be set
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="10" Width="100" Height="23"/>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Tables for Value Properties and Events
+## Tables for value properties and events
 
 <table>
 <tr>
@@ -84,16 +81,12 @@ The `NullValueText` can be set for the `UpDown` control as shown in the followin
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Width="100" Height="23"  NullValueText="2" Value="{x:Null}" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = null;
-
 updown.NullValueText = "2";
 
 {% endhighlight %}
