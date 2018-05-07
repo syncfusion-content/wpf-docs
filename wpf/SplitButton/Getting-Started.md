@@ -11,52 +11,45 @@ documentation: ug
 
 This section guides you on getting started with the SplitButtonAdv control. It describes you about the control structure, basic settings, implementation and members.
 
-## Control Structure
-
-
+## Control structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
-
-## Adding SplitButtonAdv Control to an Application
+## Adding SplitButtonAdv control to an application
 
 The SplitButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
 
-### Setting Label
+### Setting label
 
 
 The following code explains how to declare a SplitButtonAdv control using XAML:
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <sync:SplitButtonAdv Label="Hello World"/>
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The SplitButtonAdv control can be created through C# as follows:
 
-
-
-
+{% tabs %}
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
-
 button.Label = "Hello World";
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
-### Setting Size Mode
+### Setting size mode
 
 The size mode of the SplitButtonAdv control can be easily changed using the property SizeMode. The SizeMode comprises the following values:
 
@@ -66,7 +59,7 @@ The size mode of the SplitButtonAdv control can be easily changed using the prop
 
 
 
-#### Small Mode
+#### Small mode
 
 When the SizeMode is set to Small, the icon of the DropDownButtonAdv control is displayed without the label.
 
@@ -83,9 +76,7 @@ Use the following code snippet to set the SizeMode to Small:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Small;
 
 {% endhighlight %}
@@ -97,7 +88,7 @@ button.SizeMode = SizeMode.Small;
 
 
 
-#### Normal Mode
+#### Normal mode
 
 The DropDownButtonAdv control retains the default appearance, when the SizeMode is set to Normal, 
 
@@ -114,9 +105,7 @@ Use the following code snippet to set the SizeMode to Normal:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
@@ -127,7 +116,7 @@ button.SizeMode = SizeMode.Normal;
 
 
 
-#### Large Mode
+#### Large mode
 
 When the SizeMode is set to Large, the DropDownButtonAdv control is displayed with large icon and provides multiline support.
 
@@ -144,9 +133,7 @@ Use the following code snippet to set the SizeMode to Large:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Large;
 
 {% endhighlight %}
@@ -157,7 +144,7 @@ button.SizeMode = SizeMode.Large;
 
 
 
-### Setting Image
+### Setting image
 
 The Image displayed in the control can be set using two properties:
 
@@ -179,11 +166,8 @@ The SmallIcon property can be set as follows:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Small;
-
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
@@ -208,11 +192,8 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Normal;
-
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
@@ -235,11 +216,8 @@ The LargeIcon property can be set as follows:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Large;
-
 button.LargeIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
@@ -250,7 +228,7 @@ button.LargeIcon = new BitmapImage(new Uri("employee.png"));
 
 
 
-### Adding Items to SplitButtonAdv
+### Adding items to SplitButtonAdv
 
 The DropDownMenuGroup acts as a container for SplitButtonAdv, which provides customization such as Resizing, Header and Scrollbar support.
 
@@ -262,17 +240,11 @@ The DropDownMenuGroup acts as a container for SplitButtonAdv, which provides cus
 {% highlight xaml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
-
-   <shared:DropDownMenuGroup>
-
-       <shared:DropDownMenuItem Header="Menu Item 1"/>
-
-       <shared:DropDownMenuItem Header="Menu Item 2"/>
-
-       <shared:DropDownMenuItem Header="Menu Item 3"/>
-
-   </shared:DropDownMenuGroup>
-
+<shared:DropDownMenuGroup>
+<shared:DropDownMenuItem Header="Menu Item 1"/>
+<shared:DropDownMenuItem Header="Menu Item 2"/>
+<shared:DropDownMenuItem Header="Menu Item 3"/>
+</shared:DropDownMenuGroup>
 </shared:SplitButtonAdv>
 
 {% endhighlight %}
@@ -280,21 +252,13 @@ The DropDownMenuGroup acts as a container for SplitButtonAdv, which provides cus
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 DropDownMenuGroup menu = new DropDownMenuGroup();
-
 DropDownMenuItem menuItem1 = new DropDownMenuItem();
-
 DropDownMenuItem menuItem2 = new DropDownMenuItem();
-
 DropDownMenuItem menuItem3 = new DropDownMenuItem();
-
 menu.Items.Add(menuItem1);
-
 menu.Items.Add(menuItem2);
-
 menu.Items.Add(menuItem3);
-
 button.Content = menuItem1;
 
 {% endhighlight %}
@@ -305,7 +269,7 @@ button.Content = menuItem1;
 
 
 
-## SplitButtonAdv Members
+## SplitButtonAdv members
 
 ### Properties
 

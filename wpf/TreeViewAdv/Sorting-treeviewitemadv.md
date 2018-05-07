@@ -19,56 +19,31 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending"  >
-
 <!-- Adding TreeViewItemAdv -->
-
 <syncfusion:TreeViewItemAdv Name="treeViewItemAdv"    Header="Marital Status">
-
 <syncfusion:TreeViewItemAdv Header="Single"/>
-
 <syncfusion:TreeViewItemAdv Header="Married"/>
-
 <syncfusion:TreeViewItemAdv Header="Married with Children"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-
 <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-
 <syncfusion:TreeViewItemAdv Header="Tetanus"/>
-
 <syncfusion:TreeViewItemAdv Header="Polio"/>
-
 <syncfusion:TreeViewItemAdv Header="Measles"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Country Information">
-
 <syncfusion:TreeViewItemAdv Header="Canada"/>
-
 <syncfusion:TreeViewItemAdv Header="France"/>
-
 <syncfusion:TreeViewItemAdv Header="Germany"/>
-
 <syncfusion:TreeViewItemAdv Header="UK"/>
-
 <syncfusion:TreeViewItemAdv Header="USA"/>
-
 </syncfusion:TreeViewItemAdv>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 //Sort the item
-
 treeViewAdv.Sorting = SortDirection.Ascending;
 
 {% endhighlight %}
@@ -76,14 +51,13 @@ treeViewAdv.Sorting = SortDirection.Ascending;
 {% highlight VB %}
 
 'Sort the item
-
 treeViewAdv.Sorting = SortDirection.Ascending
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Sorting Field
+## Sorting field
 
 Using SortingField property, you can specify a sorting criteria. This is dependency property, which gets or sets the property name being used as the sorting criteria. The default value is __Header__.
 
@@ -92,57 +66,32 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending" SortingField="Header"  >
-
 <!-- Adding TreeViewItemAdv -->
-
 <syncfusion:TreeViewItemAdv Name="treeViewItemAdv"    Header="Marital Status">
-
 <syncfusion:TreeViewItemAdv Header="Single"/>
-
 <syncfusion:TreeViewItemAdv Header="Married"/>
-
 <syncfusion:TreeViewItemAdv Header="Married with Children"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-
 <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-
 <syncfusion:TreeViewItemAdv Header="Tetanus"/>
-
 <syncfusion:TreeViewItemAdv Header="Polio"/>
-
 <syncfusion:TreeViewItemAdv Header="Measles"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Country Information">
-
 <syncfusion:TreeViewItemAdv Header="Canada"/>
-
 <syncfusion:TreeViewItemAdv Header="France"/>
-
 <syncfusion:TreeViewItemAdv Header="Germany"/>
-
 <syncfusion:TreeViewItemAdv Header="UK"/>
-
 <syncfusion:TreeViewItemAdv Header="USA"/>
-
 </syncfusion:TreeViewItemAdv>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 //Sort the item based on criteria
-
 treeViewAdv.SortingField = "Header";
 
 {% endhighlight %}
@@ -150,7 +99,6 @@ treeViewAdv.SortingField = "Header";
 {% highlight VB %}
 
 'Sort the item based on criteria
-
 treeViewAdv.SortingField = "Header"
 
 {% endhighlight %}

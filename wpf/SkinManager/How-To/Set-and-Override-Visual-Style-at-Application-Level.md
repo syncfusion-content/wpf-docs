@@ -13,51 +13,28 @@ The Visual Styles can also be defined at application level. The VisualStyle prop
 
 The following code snippet explains how to override the Syncfusion Blend Style for the Ribbon Control at the application level.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <Application x:Class="WpfApplication2.App"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 StartupUri="MainWindow.xaml">
-
-
-
 <Application.Resources>
-
 <ResourceDictionary>
-
 <ResourceDictionary.MergedDictionaries>
-
 <ResourceDictionary Source="/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/BlendStyle.xaml"/>
-
 </ResourceDictionary.MergedDictionaries>
-
 <Style TargetType="syncfusion:Ribbon" BasedOn="{StaticResource BlendRibbonStyle}">
-
 <Setter Property="FontSize" Value="19"/>
-
 </Style>
-
 </ResourceDictionary>
-
 </Application.Resources>
-
 </Application>
 
 {% endhighlight %}
+{% endtabs %}
 
 The output is displayed as shown below.
 
-
-
 ![](Set-and-Override-Visual-Style-at-Application-Level_images/Set-and-Override-Visual-Style-at-Application-Level_img1.png)
-
-
-

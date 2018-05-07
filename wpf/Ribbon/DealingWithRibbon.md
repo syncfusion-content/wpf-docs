@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Dealing With Ribbon
+# Dealing with Ribbon
 
 Ribbon can be changed into three different states such as `Normal`, `Hide` and `Adorner`
 
@@ -20,37 +20,21 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 {% highlight XAML %}
 
 <syncfusion:Ribbon  RibbonState="Normal" VerticalAlignment="Top" x:Name="_ribbon" >
-
 <syncfusion:RibbonTab  Caption="Folder" IsChecked="False" >
-
 <syncfusion:RibbonBar  Header="Acions">
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="Copy Folder"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Move Folder"/>
-
 <syncfusion:SplitButton  Label=" Split1 "   SizeForm="Large" >
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="Mark to Download"/>
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="UnMark to Download"/>
-
 </syncfusion:SplitButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Header="Properties">
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Policy"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Folder Properties"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Folder Permissions"/>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -66,37 +50,21 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 {% highlight XAML %}
 
 <syncfusion:Ribbon  RibbonState="Hide" VerticalAlignment="Top" x:Name="_ribbon" >
-
 <syncfusion:RibbonTab  Caption="Folder" IsChecked="False" >
-
 <syncfusion:RibbonBar  Header="Acions">
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="Copy Folder"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Move Folder"/>
-
 <syncfusion:SplitButton  Label=" Split1 "   SizeForm="Large" >
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="Mark to Download"/>
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="UnMark to Download"/>
-
 </syncfusion:SplitButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Header="Properties">
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Policy"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Folder Properties"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Folder Permissions"/>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -113,37 +81,21 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 {% highlight XAML %}
 
 <syncfusion:Ribbon  RibbonState="Adorner" VerticalAlignment="Top" x:Name="_ribbon" >
-
 <syncfusion:RibbonTab  Caption="Folder" IsChecked="False" >
-
 <syncfusion:RibbonBar  Header="Acions">
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="Copy Folder"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Move Folder"/>
-
 <syncfusion:SplitButton  Label=" Split1 "   SizeForm="Large" >
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="Mark to Download"/>
-
 <syncfusion:RibbonButton SizeForm="Small"  Label="UnMark to Download"/>
-
 </syncfusion:SplitButton>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar Header="Properties">
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Policy"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Folder Properties"/>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Folder Permissions"/>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -152,7 +104,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 ![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML7d9bdf5.PNG](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img3.jpeg)
 
-## How to change the RibbonState in run time?
+## How to change the RibbonState in run time
 
 Ribbon State can also be changed at the Runtime.In the below code, Ribbon State has been changed dynamically in the button click event
 
@@ -218,15 +170,10 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 {% highlight XAML %}
 
 <syncfusion:Ribbon.ContextTabGroups>
-
 <syncfusion:ContextTabGroup Label="Table tools" IsGroupVisible="True" BackColor="Green">
-
 <syncfusion:RibbonTab Caption="Tables" IsChecked="True" />
-
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" />
-
 </syncfusion:ContextTabGroup>
-
 </syncfusion:Ribbon.ContextTabGroups>
 
 {% endhighlight %}
@@ -245,23 +192,14 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 {% highlight XAML %}
 
 <syncfusion:Ribbon.ContextTabGroups>
-
 <syncfusion:ContextTabGroup Label="Table Tools" BackColor="Green" IsGroupVisible="True">
-
 <syncfusion:RibbonTab Caption="Tables" IsChecked="True" />
-
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" />
-
 </syncfusion:ContextTabGroup>
-
 <syncfusion:ContextTabGroup Label="Table Grid" BackColor="Red" IsGroupVisible="True">
-
 <syncfusion:RibbonTab Caption="Tables" IsChecked="False" />
-
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" />
-
 </syncfusion:ContextTabGroup>
-
 </syncfusion:Ribbon.ContextTabGroups>
 
 {% endhighlight %}
@@ -271,7 +209,7 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 ![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img2.jpeg)
 
 
-## ContextTabGroup Heading
+## ContextTabGroup heading
 
 The `Label` property of the ContextTabGroup is used to define the Heading for the ContextTabGroup. 
  
@@ -280,15 +218,10 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
 {% highlight XAML %}
 
 <syncfusion:Ribbon.ContextTabGroups>
-
 <syncfusion:ContextTabGroup Label="Table tools" BackColor="Green" IsGroupVisible="True">
-
 <syncfusion:RibbonTab Caption="Tables" IsChecked="True" />
-
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" />
-
 </syncfusion:ContextTabGroup>
-
 </syncfusion:Ribbon.ContextTabGroups>
 
 {% endhighlight %}
@@ -309,23 +242,14 @@ ContextTabGroup visibility can also be changed at the runtime. To change the vis
 {% highlight XAML %}
 
 <syncfusion:Ribbon  VerticalAlignment="Top" >
-
 <syncfusion:Ribbon.ContextTabGroups>
-
 <syncfusion:ContextTabGroup x:Name="_contextTabGroup" Label="Table tools" BackColor="Red"  >
-
 <syncfusion:RibbonTab Caption="Tables" IsChecked="True" >
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="Design" IsChecked="False" >
-
 </syncfusion:RibbonTab>
-
 </syncfusion:ContextTabGroup>
-
 </syncfusion:Ribbon.ContextTabGroups>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -337,11 +261,8 @@ ContextTabGroup visibility can also be changed at the runtime. To change the vis
 {% highlight C# %}
 
 private void Button_Click(object sender, RoutedEventArgs e)
-
 {
-
-_contextTabGroup.IsGroupVisible = true;
-
+    _contextTabGroup.IsGroupVisible = true;
 }
 
 {% endhighlight %}
@@ -349,10 +270,7 @@ _contextTabGroup.IsGroupVisible = true;
 {% highlight VB %}
  
 Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-
 _contextTabGroup.IsGroupVisible = True
-
 End Sub
 
 {% endhighlight %}
