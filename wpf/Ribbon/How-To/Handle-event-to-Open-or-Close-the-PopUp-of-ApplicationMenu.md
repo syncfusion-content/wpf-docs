@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-# Handle PopUp opening and Closing event in ApplicationMenu
+# Handle Pop-Up Opening and Closing Event in ApplicationMenu
 
 To perform the action based on opening and closing of the ApplicationMenu, make use of `IsPopupOpenChanged` event.
 
@@ -15,51 +15,35 @@ To perform the action based on opening and closing of the ApplicationMenu, make 
 
 {% highlight XAML %}
 
-  <syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38"  ApplicationButtonImage="Resources/App.ico" IsPopupOpenChanged="_applicationMenu_IsPopupOpenChanged">
+<syncfusion:ApplicationMenu Name="_applicationMenu" Width="38" Height="38"  ApplicationButtonImage="Resources/App.ico" IsPopupOpenChanged="_applicationMenu_IsPopupOpenChanged">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- private void _applicationMenu_IsPopupOpenChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
- 
- {
-            if((d as ApplicationMenu).IsPopupOpen)
-           
-            {
-           
-                newMenuButton.IsEnabled = false;
-           
-            }
-           
-            else
-           
-            {
-           
-                newMenuButton.IsEnabled = true;
-           
-            }
-
- }
+private void _applicationMenu_IsPopupOpenChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    if((d as ApplicationMenu).IsPopupOpen)
+    {
+        newMenuButton.IsEnabled = false;
+    }
+    else
+    {
+        newMenuButton.IsEnabled = true;
+    }
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub _applicationMenu_IsPopupOpenChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
-  
-    If(TryCast(d, ApplicationMenu)).IsPopupOpen Then
-  
-        newMenuButton.IsEnabled = False
-  
-    Else
-  
-        newMenuButton.IsEnabled = True
-  
-    End If
-
+If(TryCast(d, ApplicationMenu)).IsPopupOpen Then
+newMenuButton.IsEnabled = False
+Else
+newMenuButton.IsEnabled = True
+End If
 End Sub
-
 
 {% endhighlight %}
 {% endtabs %}

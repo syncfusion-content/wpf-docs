@@ -16,25 +16,15 @@ documentation: ug
 {% highlight XAML %}
 
 <syncfusion:RibbonWindow.StatusBar>
-
 <syncfusion:RibbonStatusBar>
-
 <WrapPanel>
-
 <TextBlock Text="Ready" Margin="10,0,0,0" Foreground="AntiqueWhite"/>
-
 <TextBlock Text="Page No 1" Margin="20,0,0,0" Foreground="AntiqueWhite"/>
-
 </WrapPanel>
-
 </syncfusion:RibbonStatusBar>
-
 </syncfusion:RibbonWindow.StatusBar>
-
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch"  VerticalAlignment="Top">
-
 <!--Add RibbonTab and add its Items here-->
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -48,19 +38,12 @@ Create instance of StatusBar and assign it to RibbonStatusBar property of Ribbon
 {% highlight C# %}
 
 RibbonStatusBar _ribbonStatusBar = new RibbonStatusBar();
-
 WrapPanel _wrapPanel = new WrapPanel();
-
 Label _textBlock1 = new Label() { Content = "Ready", Foreground = Brushes.WhiteSmoke };
-
 Label _textBlock2 = new Label() { Content = "Page No 1", Foreground = Brushes.WhiteSmoke };
-
 _wrapPanel.Children.Add(_textBlock1);
-
 _wrapPanel.Children.Add(_textBlock2);
-
 _ribbonStatusBar.Items.Add(_wrapPanel);
-
 _ribbonWindow.StatusBar = _ribbonStatusBar;
 
 {% endhighlight %}
@@ -68,25 +51,18 @@ _ribbonWindow.StatusBar = _ribbonStatusBar;
 {% highlight VB %}
 
 Dim _ribbonStatusBar As New RibbonStatusBar()
-
 Dim _wrapPanel As New WrapPanel()
-
 Dim _textBlock1 As New Label() With {
 	.Content = "Ready",
 	.Foreground = Brushes.WhiteSmoke
 }
-
 Dim _textBlock2 As New Label() With {
 	.Content = "Page No 1",
 	.Foreground = Brushes.WhiteSmoke
 }
-
 _wrapPanel.Children.Add(_textBlock1)
-
 _wrapPanel.Children.Add(_textBlock2)
-
 _ribbonStatusBar.Items.Add(_wrapPanel)
-
 _ribbonWindow.StatusBar = _ribbonStatusBar
 
 {% endhighlight %}

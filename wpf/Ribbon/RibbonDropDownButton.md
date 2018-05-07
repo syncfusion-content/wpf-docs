@@ -21,27 +21,16 @@ DropDownMenuItem are the items with `Header` property that is used to set header
 
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME" >
-
 <syncfusion:RibbonBar Name="_ribbonBar1">
-
 <syncfusion:DropDownButton Label="View"/>
-
 <syncfusion:DropDownButton Label="LayOut"/>
-
 <syncfusion:DropDownButton Name="_dropDownButton" SizeForm = "Large" Width="100" Label="File" >
-
 <syncfusion:DropDownMenuItem Header="New"></syncfusion:DropDownMenuItem>
-
 <syncfusion:DropDownMenuItem Header="Open"></syncfusion:DropDownMenuItem>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 </syncfusion:Ribbon>
 
 
@@ -58,13 +47,9 @@ Create instance of `DropDownMenuItems` and add it to DropDownButton Items in cod
 
 
 DropDownMenuItem _dropDownMenuItem1 = new DropDownMenuItem() {Header="New" };
-
 DropDownMenuItem _dropDownMenuItem2 = new DropDownMenuItem() { Header = "Open" };
-
 _dropDownButton.Items.Add(_dropDownMenuItem1);
-
 _dropDownButton.Items.Add(_dropDownMenuItem2);
-
 
 
 {% endhighlight %}
@@ -72,11 +57,8 @@ _dropDownButton.Items.Add(_dropDownMenuItem2);
 {% highlight VB %}
 
 Dim _dropDownMenuItem1 As New DropDownMenuItem() With {.Header="New"}
-
 Dim _dropDownMenuItem2 As New DropDownMenuItem() With {.Header = "Open"}
-
 _dropDownButton.Items.Add(_dropDownMenuItem1)
-
 _dropDownButton.Items.Add(_dropDownMenuItem2)
 
 
@@ -99,41 +81,23 @@ In DropDownButton, similar items can be grouped together and separated from othe
 
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Caption="HOME" IsChecked="True">
-
 <syncfusion:RibbonBar Name="_ribbonBar">
-
 <syncfusion:DropDownButton Label="View"/>
-
 <syncfusion:DropDownButton Label="LayOut"/>
-
 <syncfusion:DropDownButton Name="_dropDownButton" SizeForm = "Large" Width="100" Label="File" >
-
 <syncfusion:DropDownMenuGroup Name="_dropDownMenuGroup1" Header="Group1">
-
 <syncfusion:DropDownMenuItem Header="New"/>
-
 <syncfusion:DropDownMenuItem Header="Open"/>                            
-
 </syncfusion:DropDownMenuGroup>
-
 <syncfusion:DropDownMenuGroup Name="_dropDownMenuGroup2" Header="Group2">
-
 <syncfusion:DropDownMenuItem Header="Cut"/>
-
 <syncfusion:DropDownMenuItem Header="Copy"/>                      
-
 </syncfusion:DropDownMenuGroup>
-
 </syncfusion:DropDownButton>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab IsChecked="False" Caption="DESIGN"/>
-
 </syncfusion:Ribbon>
 
 
@@ -150,19 +114,12 @@ Create instance of `DropDownMenuItem` and add it to `DropDownMenuGroup` Items.
 
 
 DropDownMenuItem _dropDownMenuItem1 = new DropDownMenuItem() { Header = "New" };
-
 DropDownMenuItem _dropDownMenuItem2 = new DropDownMenuItem() { Header = "Open" };
-
 DropDownMenuItem _DropDownMenuItem3 = new DropDownMenuItem() { Header = "Cut" };
-
 DropDownMenuItem _DropDownMenuItem4 = new DropDownMenuItem() { Header = "Copy" };
-
 _dropDownMenuGroup1.Items.Add(_dropDownMenuItem1);
-
 _dropDownMenuGroup1.Items.Add(_dropDownMenuItem2);
-
 _dropDownMenuGroup2.Items.Add(_dropDownMenuItem3);
-
 _dropDownMenuGroup2.Items.Add(_dropDownMenuItem4);
 
 
@@ -173,19 +130,12 @@ _dropDownMenuGroup2.Items.Add(_dropDownMenuItem4);
 
 
 Dim _dropDownMenuItem1 As New DropDownMenuItem() With {.Header = "New"}
-
 Dim _dropDownMenuItem2 As New DropDownMenuItem() With {.Header = "Open"}
-
 Dim _DropDownMenuItem3 As New DropDownMenuItem() With {.Header = "Cut"}
-
 Dim _DropDownMenuItem4 As New DropDownMenuItem() With {.Header = "Copy"}
-
 _dropDownMenuGroup1.Items.Add(_dropDownMenuItem1)
-
 _dropDownMenuGroup1.Items.Add(_dropDownMenuItem2)
-
 _dropDownMenuGroup2.Items.Add(_dropDownMenuItem3)
-
 _dropDownMenuGroup2.Items.Add(_dropDownMenuItem4)
 
 
@@ -207,35 +157,22 @@ DropDownButton have three types of size forms. You can set size forms using its 
 {% highlight XAML %}
 
 <syncfusion:RibbonBar Name="_ribbonBar2">
-
 <syncfusion:DropDownButton SizeForm = "Large" Label="Large" />
-
 <syncfusion:DropDownButton SizeForm = "Small" Label="Small" />
-
 <syncfusion:DropDownButton SizeForm = "ExtraSmall" Label="ExtraSmall" />
-
 </syncfusion:RibbonBar>
 
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 
 DropDownButton _dropDownButton1 = new DropDownButton() { Label = "Large", SizeForm = SizeForm.Large };
-
 DropDownButton _dropDownButton2 = new DropDownButton() { Label = "Small", SizeForm = SizeForm.Small };
-
 DropDownButton _dropDownButton3 = new DropDownButton() { Label = "ExtraSmall", SizeForm = SizeForm.ExtraSmall };
-
 _ribbonBar2.Items.Add(_dropDownButton1);
-
 _ribbonBar2.Items.Add(_dropDownButton2);
-
 _ribbonBar2.Items.Add(_dropDownButton3);
 
 
@@ -258,11 +195,8 @@ Dim _dropDownButton3 As New DropDownButton() With {
 	.Label = "ExtraSmall",
 	.SizeForm = SizeForm.ExtraSmall
 }
-
 _ribbonBar2.Items.Add(_dropDownButton1)
-
 _ribbonBar2.Items.Add(_dropDownButton2)
-
 _ribbonBar2.Items.Add(_dropDownButton3)
 
 

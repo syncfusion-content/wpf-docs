@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started
 
-## Appearance and Structure of the Control
+## Appearance and structure of the control
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 N> Support for Skins is provided only in Silverlight and not in WPF.
 
-## Adding Tab Navigation Control to an Application 
+## Adding Tab Navigation Control to an application 
 
 To add Tab navigation control to a Visual Studio.NET project:
 
@@ -43,11 +43,11 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 To enable transition effects, items should be added to the control. The following sections explain the methods through which you can add items.
 
-## Properties, Methods, and Events Tables 
+## Properties, methods, and events tables 
 
 ### Properties
 
-#### Tab Navigation Control
+#### Tab Navigation control
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ TransitionEffects (Enum)</td><td>
 </td></tr>
 </table>
 
-#### Tab Navigation Item
+#### Tab Navigation item
 
 <table>
 <tr>
@@ -134,7 +134,7 @@ Occurs whenever the selected item is changed</td></tr>
 </table>
 
 
-#### Samples Link
+#### Samples link
 
 To view samples:
 
