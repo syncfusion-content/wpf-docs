@@ -24,15 +24,10 @@ There are several ways to add Syncfusion control in to Visual Studio WPF project
 {% highlight XAML %}
 
 <Window x:Class="WpfApplication1.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 Title="MainWindow" Height="350" Width="525">
-
 </Window>
 
 {% endhighlight %}
@@ -46,30 +41,21 @@ Title="MainWindow" Height="350" Width="525">
 {% highlight XAML %}
 
 <Window x:Class="WpfApplication1.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 Title="MainWindow" Height="350" Width="525">
-
 <Grid>
-
 <syncfusion:TreeViewAdv x:Name="Tree">
-
 </syncfusion:TreeViewAdv>
-
 </Grid>
-
 </Window>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding TreeView Item to TreeViewAdv Control
+## Adding TreeView item to TreeViewAdv control
 
 The TreeviewItem is added to a TreeViewAdv control either by using XAML. The following code example lets you to create and add treeview items to the TreeViewAdv
 
@@ -78,33 +64,19 @@ The TreeviewItem is added to a TreeViewAdv control either by using XAML. The fol
 {% highlight XAML %}
 
 <Window x:Class="WpfApplication1.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 Title="MainWindow" Height="350" Width="525">
-
 <Grid>
-
 <syncfusion:TreeViewAdv x:Name="Tree">
-
 <syncfusion:TreeViewItemAdv Header="WPF" />
-
 <syncfusion:TreeViewItemAdv Header="Winrt" />
-
 <syncfusion:TreeViewItemAdv Header="Silverlight" />
-
 <syncfusion:TreeViewItemAdv Header="WindowPhone" />
-
 <syncfusion:TreeViewItemAdv Header="UniversalWindows" />
-
 </syncfusion:TreeViewAdv>
-
 </Grid>
-
 </Window>
 
 {% endhighlight %}
@@ -120,35 +92,20 @@ Ribbon supports various visual styles by using the SkinStorage. To apply Visual 
 {% highlight XAML %}
 
 <Window x:Class="WpfApplication1.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 syncfusion:SkinStorage.VisualStyle="Metro"
-
 Title="MainWindow" Height="350" Width="525">
-
 <Grid>
-
 <syncfusion:TreeViewAdv x:Name="Tree">
-
 <syncfusion:TreeViewItemAdv Header="WPF" />
-
 <syncfusion:TreeViewItemAdv Header="Winrt" />
-
 <syncfusion:TreeViewItemAdv Header="Silverlight" />
-
 <syncfusion:TreeViewItemAdv Header="WindowPhone" />
-
 <syncfusion:TreeViewItemAdv Header="UniversalWindows"/>
-
 </syncfusion:TreeViewAdv>
-
 </Grid>
-
 </Window>
 
 {% endhighlight %}
@@ -166,33 +123,19 @@ The following code snippet sets a collection used to generate the Items of the T
 {% highlight XAML %}
 
 <Window x:Class="WpfApplication1.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 syncfusion:SkinStorage.VisualStyle="Metro"
-
 xmlns:local="clr-namespace:WpfApplication1"
-
 Title="MainWindow" Height="350" Width="525">
-
 <Window.Resources>
-
 <local:TechnologyList x:Key="technologyList" />
-
 </Window.Resources>
-
 <Grid>
-
 <syncfusion:TreeViewAdv x:Name="Tree" ItemsSource="{StaticResource technologyList}" >
-
 </syncfusion:TreeViewAdv>
-
 </Grid>
-
 </Window>
 
 {% endhighlight %}
@@ -205,25 +148,15 @@ Title="MainWindow" Height="350" Width="525">
 {% highlight C# %}
 
 public class TechnologyList : ObservableCollection<string>
-
 {
-
-public TechnologyList()
-
-{
-
-this.Add("WPF");
-
-this.Add("Winrt");
-
-this.Add("Silverlight");
-
-this.Add("WindowPhone");
-
-this.Add("UniversalWindows");
-
-}
-
+    public TechnologyList()
+    {
+        this.Add("WPF");
+        this.Add("Winrt");
+        this.Add("Silverlight");
+        this.Add("WindowPhone");
+        this.Add("UniversalWindows");
+    }
 }
 
 {% endhighlight %}
@@ -231,24 +164,14 @@ this.Add("UniversalWindows");
 {% highlight VB %}
 
 Public Class TechnologyList
-	Inherits ObservableCollection(Of String)
-
-
+Inherits ObservableCollection(Of String)
 Public Sub New()
-
-
 Me.Add("WPF")
-
 Me.Add("Winrt")
-
 Me.Add("Silverlight")
-
 Me.Add("WindowPhone")
-
 Me.Add("UniversalWindows")
-
 End Sub
-
 End Class
 
 {% endhighlight %}
@@ -256,5 +179,3 @@ End Class
 {% endtabs %}  
 
 ![](Getting_Started_images/Getting_Started_img2.jpeg)
-
-
