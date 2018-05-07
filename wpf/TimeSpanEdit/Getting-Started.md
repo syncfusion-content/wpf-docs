@@ -9,15 +9,9 @@ documentation: ug
 
 # Getting Started
 
-## Appearance and Structure
-
-
+## Appearance and structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
-
-
-
-
 
 The themes for TimeSpanEdit Control:
 
@@ -30,42 +24,27 @@ The themes for TimeSpanEdit Control:
 * Blend
 * VS2010
 
-
-
-## Adding TimeSpanEdit Control to an Application
+## Adding TimeSpanEdit control to an application
 
 To add TimeSpanEdit control to a Visual Studio.NET project:
 
 1. Open a VS2010 project. The Syncfusion controls are listed in the Toolbox.
 2. Click and drag the TimeSpanEdit control from the toolbox and drop it in the designer.
 
-
-
-
-
    ![C:/Users/riaj/Desktop/timespan2.png](Getting-Started_images/Getting-Started_img2.png)
-
-
-
 
 3. Syncfusion.Shared.WPF assemblies will be added automatically to the application reference.
 
-
-
-   ![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)
-
+  ![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)
 
    Assemblies added into References
    {:.caption}
-
 
 4. Press F4 or open the Properties Window to customize the control by setting the required properties.
 
    ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)
 
-
-
-## TimeSpanEdit Members
+## TimeSpanEdit members
 
 ### Properties
 
@@ -147,7 +126,7 @@ PropertyChangedCallback</td></tr>
 </table>
 
 
-##  Samples Link
+##  Samples link
 
       To view samples:
 
