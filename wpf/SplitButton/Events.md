@@ -28,7 +28,6 @@ The following code adds the Click event handler to the SplitButtonAdv control:
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 button.Click +=new RoutedEventHandler(button_Click);
 
 {% endhighlight %}
@@ -52,7 +51,6 @@ The following code adds the DropDownOpening event handler to the SplitButtonAdv 
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 button.DropDownOpening +=new CancelEventHandler(button_DropDownOpening);
 
 {% endhighlight %}
@@ -77,7 +75,6 @@ The following code adds the DropDownOpened event handler to the SplitButtonAdv c
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 button.DropDownOpened +=new RoutedEventHandler(button_DropDownOpened);
 
 {% endhighlight %}
@@ -101,7 +98,6 @@ The following code adds the DropDownClosing event handler to the SplitButtonAdv 
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 button.DropDownClosing +=new CancelEventHandler(button_DropDownClosing);
 
 {% endhighlight %}
@@ -126,7 +122,6 @@ The following code adds the DropDownClosed event handler to the SplitButtonAdv c
 {% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-
 button.DropDownClosed +=new RoutedEventHandler(button_DropDownClosed);
 
 
