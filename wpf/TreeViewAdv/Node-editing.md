@@ -17,45 +17,26 @@ The following code example illustrates how to set this property.
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv Name="treeViewAdv"  >
-
 <!-- Able to edit this node becuase IsEditable is true-->
-
 <syncfusion:TreeViewItemAdv Name="item1" Header="Marital Status">
-
 <syncfusion:TreeViewItemAdv Header="Single"/>
-
 <syncfusion:TreeViewItemAdv Header="Married"/>
-
 <syncfusion:TreeViewItemAdv Header="Married with Children"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <!-- Unable to edit this node becuase IsEditable is false-->
-
 <syncfusion:TreeViewItemAdv Header="Baby Vaccines" Name="item2" IsEditable="False">
-
 <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-
 <syncfusion:TreeViewItemAdv Header="Tetanus"/>
-
 <syncfusion:TreeViewItemAdv Header="Polio"/>
-
 <syncfusion:TreeViewItemAdv Header="Measles"/>
-
 </syncfusion:TreeViewItemAdv>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 //Set IsEditable is false
-
 item2.IsEditable = false;
 
 {% endhighlight %}
@@ -63,7 +44,6 @@ item2.IsEditable = false;
 {% highlight VB %}
 
 'Set IsEditable is false
-
 item2.IsEditable = False
 
 {% endhighlight %}
@@ -72,7 +52,7 @@ item2.IsEditable = False
 
 ![](Node_editing_images/Node_editing_img1.jpeg)
 
-## Setting Node in EditMode
+## Setting node in EditMode
 
 We can also set a node to be in edit mode when the tree view loads. This is done using the IsInEditMode property. When this property is set to __true__, the particular node will be in edit mode when it loads
 
@@ -81,41 +61,24 @@ We can also set a node to be in edit mode when the tree view loads. This is done
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv Name="treeViewAdv"  >
-
 <syncfusion:TreeViewItemAdv Name="item1" Header="Marital Status" IsInEditMode="True">
-
 <syncfusion:TreeViewItemAdv Header="Single"/>
-
 <syncfusion:TreeViewItemAdv Header="Married"/>
-
 <syncfusion:TreeViewItemAdv Header="Married with Children"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Baby Vaccines" Name="item2"  >
-
 <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-
 <syncfusion:TreeViewItemAdv Header="Tetanus"/>
-
 <syncfusion:TreeViewItemAdv Header="Polio"/>
-
 <syncfusion:TreeViewItemAdv Header="Measles"/>
-
 </syncfusion:TreeViewItemAdv>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 //Set edit mode
-
 item1.IsInEditMode = true;
 
 {% endhighlight %}
@@ -123,7 +86,6 @@ item1.IsInEditMode = true;
 {% highlight VB %}
 
 'Set edit mode
-
 item1.IsInEditMode = True
 
 {% endhighlight %}
@@ -132,7 +94,7 @@ item1.IsInEditMode = True
 
 ![](Node_editing_images/Node_editing_img2.jpeg)
 
-## Node Editing Event
+## Node editing event
 
 The following events are handled when the tree node is in Edit Mode.
 
@@ -146,69 +108,38 @@ The following events are handled when the tree node is in Edit Mode.
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv Name="treeViewAdv"  >
-
 <syncfusion:TreeViewItemAdv Name="treeviewitem" Header="Marital Status" BeforeItemEdit="treeviewitem_BeforeItemEdit" AfterItemEdit="treeviewitem_AfterItemEdit" EditKeyUp="treeviewitem_EditKeyUp" EditKeyDown="treeviewitem_EditKeyDown" >
-
 <syncfusion:TreeViewItemAdv Header="Single"/>
-
 <syncfusion:TreeViewItemAdv Header="Married"/>
-
 <syncfusion:TreeViewItemAdv Header="Married with Children"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Baby Vaccines" Name="item2"  >
-
 <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-
 <syncfusion:TreeViewItemAdv Header="Tetanus"/>
-
 <syncfusion:TreeViewItemAdv Header="Polio"/>
-
 <syncfusion:TreeViewItemAdv Header="Measles"/>
-
 </syncfusion:TreeViewItemAdv>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 private void treeviewitem_BeforeItemEdit(object sender, EditModeChangeEventArgs e)
-
 {
-
-Debug.WriteLine("BeforeItemEdit: old( " + e.OldValue + "), new( " + e.NewValue + ")");
-
+    Debug.WriteLine("BeforeItemEdit: old( " + e.OldValue + "), new( " + e.NewValue + ")");
 }
-
 private void treeviewitem_AfterItemEdit(object sender, EditModeChangeEventArgs e)
-
 {
-
-Debug.WriteLine("AfterItemEdit: old( " + e.OldValue + "), new( " + e.NewValue + ")");
-
+    Debug.WriteLine("AfterItemEdit: old( " + e.OldValue + "), new( " + e.NewValue + ")");
 }
-
 private void treeviewitem_EditKeyUp(object sender, KeyEventArgs e)
-
 {
-
-Debug.WriteLine("Up: " + e.Key);
-
+    Debug.WriteLine("Up: " + e.Key);
 }
-
 private void treeviewitem_EditKeyDown(object sender, KeyEventArgs e)
-
 {
-
-Debug.WriteLine("Down: " + e.Key);
-
+    Debug.WriteLine("Down: " + e.Key);
 }
 
 {% endhighlight %}
@@ -216,31 +147,16 @@ Debug.WriteLine("Down: " + e.Key);
 {% highlight VB %}
 
 Private Sub treeviewitem_BeforeItemEdit(ByVal sender As Object, ByVal e As EditModeChangeEventArgs)
-
-
 Debug.WriteLine("BeforeItemEdit: old( " & e.OldValue & "), new( " & e.NewValue & ")")
-
 End Sub
-
 Private Sub treeviewitem_AfterItemEdit(ByVal sender As Object, ByVal e As EditModeChangeEventArgs)
-
-
 Debug.WriteLine("AfterItemEdit: old( " & e.OldValue & "), new( " & e.NewValue & ")")
-
 End Sub
-
 Private Sub treeviewitem_EditKeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
-
-
 Debug.WriteLine("Up: " & e.Key)
-
 End Sub
-
 Private Sub treeviewitem_EditKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-
-
 Debug.WriteLine("Down: " & e.Key)
-
 End Sub
 
 {% endhighlight %}
