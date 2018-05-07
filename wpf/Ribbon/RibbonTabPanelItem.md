@@ -16,23 +16,14 @@ documentation: ug
 {% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Name="_ribbonTab" Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="_ribbonBar">
-
 <syncfusion:RibbonMenuItem  Header="NEW" Width="100"></syncfusion:RibbonMenuItem>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:Ribbon.TabPanelItem>
-
 <syncfusion:RibbonButton SizeForm="Small" Label="Help"/>
-
 </syncfusion:Ribbon.TabPanelItem>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -46,7 +37,6 @@ Create instance of RibbonButton and assign it to TabPanelItem property of Ribbon
 {% highlight C# %}
 
 RibbonButton _ribbonButton = new RibbonButton() { Label="Help"};
-
 _ribbon.TabPanelItem = _ribbonButton;
 
 {% endhighlight %}
@@ -54,7 +44,6 @@ _ribbon.TabPanelItem = _ribbonButton;
 {% highlight VB %}
 
 Dim _ribbonButton As New RibbonButton() With {.Label="Help"}
-
 _ribbon.TabPanelItem = _ribbonButton
 
 {% endhighlight %}
