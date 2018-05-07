@@ -31,100 +31,64 @@ Please find the code example for the same from below:
 
 {% endhighlight %}
 
-
 {% highlight C# %}
 
 public partial class MainWindow : ChromelessWindow
-
 {
-
-public MainWindow()
-
-{
-
-InitializeComponent();
-
-this.DataContext = new ViewModel();
-
+    public MainWindow()
+    {
+        InitializeComponent();
+        this.DataContext = new ViewModel();
 //Set the selecteditem
-(this.DataContext as ViewModel).SelectedItem = TreeNavigator.Items[1];
-
+        (this.DataContext as ViewModel).SelectedItem = TreeNavigator.Items[1];
+    }
 }
-
-}
-
 //Initiate the viewmodel class
-
-public class ViewModel
-{
-
-private object selecteditem;
-
-public object SelectedItem
-{
-
+    public class ViewModel
+    {
+        private object selecteditem;
+        public object SelectedItem
+        {
 // Get the selecteditem
-get 
-
-{ 
-    return selecteditem;
-
-}
-set
-
-{
+            get 
+            { 
+                return selecteditem;
+            }
+            set
+            {
 //Set the selecteditem
-selecteditem = value;
-}
-}
-}
+                selecteditem = value;
+            }
+        }
+    }
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
 'Initiate the viewmodel class
-
 Partial Public Class MainWindow
-
 Inherits ChromelessWindow
-
 Public Sub New()
-
 InitializeComponent()
-
 Me.DataContext = New ViewModel()
-
 (TryCast(Me.DataContext, ViewModel)).SelectedItem = TreeNavigator.Items(1)
-
 End Sub
-
 Public Class ViewModel
-
 Private selecteditem As Object
 
 'Get the selecteditem
-
 Public Property SelectedItem As Object
-
 Get
-
 Return SelectedItem
-
 End Get
 
 'Set the selecteditem
-
 Set(ByVal value As Object)
-
 selecteditem = value
-
 End Set
-
 End Property
-
 End Class
 
 {% endhighlight %}
@@ -134,4 +98,3 @@ End Class
 ![](Populating-Items_images/Selected_img2.png)
 
 Fig i: Shows the Item has been selected in SfTreeNavigator
-

@@ -10,7 +10,7 @@ documentation: ug
 
 The `UpDown` control supports maximum and minimum value validation. It allows to define when the Minimum and Maximum value validation should occur. 
 
-## Maximum and Minimum Validation
+## Maximum and minimum validation
 
 On setting the `MaxValidation` or `MinValidation` to `OnLostFocus`, then the value in the UpDown control is validated when the UpDown control loses focus. After validation, when the value of the UpDown control is greater than the `MaxValue` or lesser than the `MinValue`, the value of the `Value` property automatically is set to `MaxValue` or `MinValue` respectively.
 
@@ -29,37 +29,25 @@ The `MaxValidation` and `MinValidation` can be set for the UpDown control as sho
 <syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" MaxValidation="OnLostFocus"
             MinValidation="OnKeyPress" MaxValueOnExceedMaxDigit="True" MinValueOnExceedMinDigit="True"/>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10
-
 updown.MaxValue = 100;
-
 updown.MinValue = 0;
-
 updown.MaxValidation = MaxValidation.OnLostFocus;
-
 updown.MinValidation = MinValidation.OnKeyPress;
-
 updown.MinValueOnExceedMinDigit = true;
-
 updown.MaxValueOnExceedMaxDigit = true;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Tables for MaxValidation, MinValidation Properties and Events
+## Tables for MaxValidation, MinValidation properties and events
 
 <table>
 <tr>
