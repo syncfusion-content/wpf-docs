@@ -23,7 +23,7 @@ The DropDownButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
 
-### Setting Label
+### Setting label
 
 
 The following code explains how to add a DropDownButtonAdv control using XAML:

@@ -39,7 +39,7 @@ this.Content = calendarEdit;
 
 ![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)
 
-### Selecting Year at Runtime
+### Selecting year at runtime
 
 By setting the AllowYearEditing property to _true_, you can edit the year at run time. This is dependency property indicates whether the year can be edited at run time. It returns the Boolean value that indicates the state of this property.
 
