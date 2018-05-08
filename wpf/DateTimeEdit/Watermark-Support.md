@@ -24,6 +24,6 @@ Watermark is the dummy content displayed in the DateTimeEdit control when the Da
 
 {% seealso %}
 
-NullValue support
+[NullValue support](/wpf/datetimeedit/null-value-support)
 
 {% endseealso %}
