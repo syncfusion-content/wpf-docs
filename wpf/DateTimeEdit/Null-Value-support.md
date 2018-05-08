@@ -37,8 +37,6 @@ In the example displayed below when you set null to the DateTime property, then 
 
 {% seealso %}
 
-Setting Date
-
-Maximum and Minimum Value
+[Maximum and Minimum Value](/wpf/datetimeedit/maximum-and-minimum-value)
 
 {% endseealso %}

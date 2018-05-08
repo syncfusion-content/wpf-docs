@@ -27,7 +27,7 @@ The date patterns supported by the DateTimeEdit control can be classified into t
 * RFC1123 
 * YearMonth 
 
-The pattern is set by using the Pattern property. The following code snippet illustrates how to set the pattern as FullDateTime:
+The pattern is set by using the Pattern property. The following code snippet illustrates how to set the pattern as ShortDate:
 
 {% tabs %}
 
