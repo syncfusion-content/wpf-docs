@@ -53,7 +53,7 @@ public partial class MainWindow : Window
     }    
 }}
 
-{% endhiglight %}
+{% endhighlight %}
 {% endtabs %}
 
    ![](Getting-Started_images/Getting-Started_img4.png)
