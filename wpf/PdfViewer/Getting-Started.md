@@ -34,7 +34,7 @@ Syncfusion.PdfViewer.WPF</td><td>
 This component contains the rendering area and other related UI elements.</td></tr>
 <tr>
 <td>
-Syncfusion.Shared.Wpf</td><td>
+Syncfusion.Shared.WPF</td><td>
 This component provides various UI styles and themes used in the PdfViewerControl.</td></tr>
 </table>
 
