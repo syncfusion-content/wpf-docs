@@ -23,8 +23,7 @@ Repeat Buttons are used to spin the selected part (month, day, year, hour, secon
 
 {% seealso %}
 
-Keyboard and Mouse support
-
-Setting Date
+[Keyboard and Mouse support](/wpf/datetimeedit/keyboard-and-mouse-support)
 
 {% endseealso %}
+
