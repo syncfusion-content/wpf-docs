@@ -27,7 +27,7 @@ This library handles various compression and decompression operations that are u
 <tr>
 <td>
 Syncfusion.Pdf.Base</td><td>
-This library contains the PDF reader and creator that supports the PdfViewerControl.</td></tr>
+This library contains the PDF reader and creator that supports the `PdfViewerControl`.</td></tr>
 <tr>
 <td>
 Syncfusion.PdfViewer.WPF</td><td>
@@ -35,7 +35,7 @@ This component contains the rendering area and other related UI elements.</td></
 <tr>
 <td>
 Syncfusion.Shared.WPF</td><td>
-This component provides various UI styles and themes used in the PdfViewerControl.</td></tr>
+This component provides various UI styles and themes used in the `PdfViewerControl`.</td></tr>
 </table>
 
 ## Create a simple PDF viewer application 
@@ -85,7 +85,7 @@ Following steps demonstrates creating a simple PDF viewer application in WPF:
 
 ## Display PDF file
    
-The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the PdfViewerControl:
+The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the `PdfViewerControl`:
 
 1. Create a simple class that loads a PDF document  as illustrated in the following code example. Save the class file as PdfReport.cs.
 
