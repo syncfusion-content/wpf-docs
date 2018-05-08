@@ -13,7 +13,7 @@ documentation: ug
 
 DateTimeEdit control can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
-### Creating a DateTimeEdit control in C&#35
+### Creating a DateTimeEdit control in C#
 
 The steps to create a DateTimeEdit control by using Visual Studio in C# are as follows:
 
@@ -59,13 +59,6 @@ public partial class MainWindow : Window
    ![](Getting-Started_images/Getting-Started_img4.png)
 
 
-{% seealso %}
-
-   Creating a DateTimeEdit control in XAML
-
-   Creating a DateTimeEdit control by using Expression Blend
-
-{% endseealso %}
 
 ### Creating a DateTimeEdit control in XAML
 
@@ -93,13 +86,6 @@ The steps to create a DateTimeEdit control by using VisualStudio in XAML are as 
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
-{% seealso %}
-
-Creating a DateTimeEdit control by using C&#35;
-
-Creating a DateTimeEdit control by using Expression Blend
-
-{% endseealso %}
 
 ### Creating a DateTimeEdit control by using expression blend
 
@@ -142,13 +128,6 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
    ![](Getting-Started_images/Getting-Started_img11.png)
 
-{% seealso %}
-
-Creating a DateTimeEdit control by using C&#35;
-
-Creating a DateTimeEdit control in XAML
-
-{% endseealso %}
 
 ## Setting date
 
@@ -174,11 +153,11 @@ N> Use the DateTime property for Binding and Setting the date to the control. Do
 
 {% seealso %}
 
-Culture support
+[Culture support](/wpf/datetimeedit/culture-support)
 
-DateTime Patterns
+[DateTime Patterns](/wpf/datetimeedit/datetime-patterns)
 
-Minimum and Maximum Value
+[Minimum and Maximum Value](/wpf/datetimeedit/maximum-and-minimum-value)
 
 {% endseealso %}
 
@@ -213,8 +192,8 @@ this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% seealso %}
 
-Maximum and Minimum Value
+[Minimum and Maximum Value](/wpf/datetimeedit/maximum-and-minimum-value)
 
-NullValue support
+[NullValue support](/wpf/datetimeedit/null-value-support)
 
 {% endseealso %}
