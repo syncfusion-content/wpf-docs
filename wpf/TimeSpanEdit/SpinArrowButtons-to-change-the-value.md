@@ -7,7 +7,6 @@ control: TimeSpanEdit
 documentation: ug
 ---
 
-# SpinArrowButtons to change the value
+# SpinArrowButtons to Change the Value
 
 The SpinArrowButtons can be used to increase or decrease the values in any field.
-

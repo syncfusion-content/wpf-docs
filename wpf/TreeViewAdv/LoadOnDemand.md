@@ -20,77 +20,42 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv x:Name="treeViewAdv" LoadOnDemand="treeViewAdv_LoadOnDemand">
-
 <syncfusion:TreeViewItemAdv Header="Root1" IsLoadOnDemand="True" LoadingHeader="Loading....." />
-
 <syncfusion:TreeViewItemAdv Header="Root2" IsLoadOnDemand="True" LoadingHeader="Loading....." />
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 public partial class MainWindow : Window
-
 {
-
-public MainWindow()
-
-{
-
-InitializeComponent();
-
-timer = new DispatcherTimer();
-
-timer.Interval = new TimeSpan(0, 0, 0, 0, 800);
-
-timer.Tick += new EventHandler(timer_Tick);
-
-}
-
-private void timer_Tick(object sender, EventArgs e)
-
-{
-
-if(loadingitem!=null)
-
-{
-
-for (int i = 0; i <= 5; i++)
-
-{
-
-loadingitem.Items.Add(new TreeViewItemAdv() { Header = "Node" + i });
-
-}
-
-loadingitem.IsLoadOnDemand = false;
-
-timer.Stop();
-
-}
-
-}
-
-private DispatcherTimer timer;
-
-private TreeViewItemAdv loadingitem;
-
-private void treeViewAdv_LoadOnDemand(object sender, LoadonDemandEventArgs args)
-
-{
-
-loadingitem = args.TreeViewItem as TreeViewItemAdv;
-
-timer.Start();
-
-}
-
+    public MainWindow()
+    {
+        InitializeComponent();
+        timer = new DispatcherTimer();
+        timer.Interval = new TimeSpan(0, 0, 0, 0, 800);
+        timer.Tick += new EventHandler(timer_Tick);
+    }
+    private void timer_Tick(object sender, EventArgs e)
+    {
+        if(loadingitem!=null)
+        {
+            for (int i = 0; i <= 5; i++)
+            {
+                loadingitem.Items.Add(new TreeViewItemAdv() { Header = "Node" + i });
+            }
+            loadingitem.IsLoadOnDemand = false;
+            timer.Stop();
+        }
+    }
+    private DispatcherTimer timer;
+    private TreeViewItemAdv loadingitem;
+    private void treeViewAdv_LoadOnDemand(object sender, LoadonDemandEventArgs args)
+    {
+        loadingitem = args.TreeViewItem as TreeViewItemAdv;
+        timer.Start();
+    }
 }
 
 {% endhighlight %}
@@ -98,56 +63,28 @@ timer.Start();
 {% highlight VB %}
 
 Partial Public Class MainWindow
-	Inherits Window
-
-
+Inherits Window
 Public Sub New()
-
-
 InitializeComponent()
-
 timer = New DispatcherTimer()
-
 timer.Interval = New TimeSpan(0, 0, 0, 0, 800)
-
 AddHandler timer.Tick, AddressOf timer_Tick
-
 End Sub
-
 Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
-
-
 If loadingitem IsNot Nothing Then
-
-
 For i As Integer = 0 To 5
-
-
 loadingitem.Items.Add(New TreeViewItemAdv() With {.Header = "Node" & i})
-
 Next i
-
 loadingitem.IsLoadOnDemand = False
-
 timer.Stop()
-
 End If
-
 End Sub
-
 Private timer As DispatcherTimer
-
 Private loadingitem As TreeViewItemAdv
-
 Private Sub treeViewAdv_LoadOnDemand(ByVal sender As Object, ByVal args As LoadonDemandEventArgs)
-
-
 loadingitem = TryCast(args.TreeViewItem, TreeViewItemAdv)
-
 timer.Start()
-
 End Sub
-
 End Class
 
 {% endhighlight %}
@@ -155,5 +92,3 @@ End Class
 {% endtabs %}  
 
 ![](LoadOnDemand_images/LoadOnDemand_img1.jpeg)
-
-
