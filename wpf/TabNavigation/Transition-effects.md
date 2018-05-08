@@ -7,7 +7,7 @@ control: TabNavigation
 documentation: ug
 ---
 
-# Transition effects
+# Transition Effects
 
 Transition Effect property is used to set the effect for the Tab navigation control. The Transition effect is an enum that contains five values namely:
 

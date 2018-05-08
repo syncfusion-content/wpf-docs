@@ -163,9 +163,9 @@ String</td></tr>
 </table>
 
 
-## Adding Resource ID to an Application
+## Adding resource ID to an application
 
-### Setting Through XAML
+### Setting through XAML
 
 The following code snippet explains how to set the Resource ID through XAML
 
@@ -189,7 +189,7 @@ syncfusion:SkinStorage.VisualStyle="Office2013"
 {% endhighlight %}
 {% endtabs %}
 
-## Setting Through C#
+## Setting through C#
 
 {% tabs %}
 {% highlight C# %}

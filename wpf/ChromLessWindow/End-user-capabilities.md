@@ -6,7 +6,7 @@ platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# End user capabilities
+# End User Capabilities
 
 The user can perform the below listed operations through the UI provided by the ChromelessWindow. 
 

@@ -34,7 +34,7 @@ The DropDirection property can be set as follows:
 
 ![](Drop-Direction_images/Drop-Direction_img1.png)
 
-## To set BottomRight Drop Direction
+## To set BottomRight drop direction
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ The DropDirection property can be set as follows:
 
 ![](Drop-Direction_images/Drop-Direction_img2.png)
 
-## To set Right Drop Direction
+## To set Right drop direction
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,7 +58,7 @@ The DropDirection property can be set as follows:
 
 ![](Drop-Direction_images/Drop-Direction_img3.png)
 
-## To set Left Drop Direction
+## To set Left drop direction
 
 {% tabs %}
 {% highlight xaml %}

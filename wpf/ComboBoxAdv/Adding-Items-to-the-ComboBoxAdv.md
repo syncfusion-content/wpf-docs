@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-## ComboBoxItemAdv: 
+## ComboBoxItemAdv 
 
 It can be added inside the ComboBoxAdv control. It is originally derived from the ComboBoxItem.
 
