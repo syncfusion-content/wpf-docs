@@ -7,11 +7,11 @@ control: UpDown
 documentation: ug
 ---
 
-# Dealing with UpDown control
+# Dealing with UpDown Control
 
 `UpDown` controls allows to change the value by Keyboard or Mouse interaction and it also allows to define increment or decrement when change the value by MouseWheel or clicking Up and Down buttons.
 
-## Keyboard and Mouse Support
+## Keyboard and Mouse support
 
 The `UpDown` control provides keyboard and mouse support to increment or decrement the value in the text box. The keyboard and mouse provide the following supports:
 
@@ -30,26 +30,19 @@ The `IsScrollingOnCircle` property allows to scroll the up and down using the mo
 
 <syncfusion:UpDown Name="upDown" Width="100" Height="23" IsScrollingOnCircle="True" />
 
-
-
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.IsScrollingOnCircle = true;
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Step Value
+## Step value
 
 The `Step` property is used to specify the interval to be incremented or decremented in the `UpDown` control when the repeat buttons are clicked. The `Step` value can be set for the `UpDown` control as shown in the following code example. Here the `Step` value is set to 3 so that the value in the `UpDown` control increases or decreases by 3 on clicking the repeat buttons.
 
@@ -59,27 +52,16 @@ The `Step` property is used to specify the interval to be incremented or decreme
 
 <syncfusion:UpDown Name="upDown" Value="10" Width="100" Height="23" Step="5"/>
 
-
-
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 updown.Step = 5;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -94,26 +76,17 @@ To restrict the change of the values in the `UpDown` control by canceling the `V
 {% highlight C# %}
 
 void upDown_ValueChanging(object sender, ValueChangingEventArgs e) 
-
-{ 
-
-e.Cancel = true; 
-
+{
+    e.Cancel = true; 
 }
-
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Private Sub upDown_ValueChanging(ByVal sender As Object, ByVal e As ValueChangingEventArgs) 
-
 e.Cancel = True
-
 End Sub
-
-
 
 {% endhighlight %}
 
@@ -129,33 +102,22 @@ The `AllowEdit` feature allows to restrict the editing in the `UpDown` control b
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="10" Width="100" Height="23" AllowEdit="False"/>
 
-
-
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 updown.AllowEdit = false;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Animation Speed
+## Animation speed
 
 When a value change in the `UpDown` by using the repeat buttons, the transition from the current value to the new value is animated in the TextBox.
 
@@ -169,25 +131,16 @@ The `AnimationSpeed` can be set for the `UpDown` control as shown in the followi
 
 <syncfusion:UpDown Name="upDown" AnimationSpeed="30" Width="100" Height="23"/>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Value = 10;
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 updown.AnimationSpeed = 30;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 

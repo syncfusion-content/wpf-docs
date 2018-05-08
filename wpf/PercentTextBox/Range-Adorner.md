@@ -31,7 +31,7 @@ The Adorner range will displayed based on the value.</td><td>
 bool </td></tr>
 </table>
 
-## Adding Range Adorner to an Application 
+## Adding range adorner to an application 
 
 We have to set the EnableRangeAdorner property, either in XAML or the code file.
 

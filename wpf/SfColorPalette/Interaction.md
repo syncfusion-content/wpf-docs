@@ -9,7 +9,7 @@ documentation: ug
 
 # Interaction
 
-## Swatches Button
+## Swatches button
 
 ColorPalette having the Swatches button on the right top corner of the control, on clicking the button will navigates to the list of swatches.
 

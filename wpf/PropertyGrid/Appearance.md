@@ -13,7 +13,7 @@ documentation: ug
 
 The PropertyGrid control can easily be editable in blend. You can edit the template of the PropertyGrid control to give a good look and feel for the control using Expression Blend.
 
-### Using Blendability support in an Application
+### Using blendability support in an application
 
 Create the PropertyGrid control using Blend. After creating the PropertyGrid control using Blend, select it and go to “Object” -> “Edit Style” -> “Edit a Copy” to edit the Template of the PropertyGrid control.
 
@@ -29,7 +29,7 @@ What’s produced through the set of steps is quite a bit of XAML which is place
 
 Now you can edit each part in the template and create custom look and feel for the control.
 
-## Background and Foreground support
+## Background and foreground support
 
 You can customize the foreground and background of the PropertyGrid using the following properties,
 
@@ -37,17 +37,18 @@ You can customize the foreground and background of the PropertyGrid using the fo
 * ViewBackground
 * CategoryForeground
 
-### Using Background and Foreground support in an Application
+### Using background and foreground support in an application
 
 Using LineColor, you can set the background for category heading while grouping.Using CategoryForeground, you can set the foreground for category heading.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black">
-
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Appearance_images/Appearance_img4.png)
 
@@ -86,7 +87,7 @@ Brush</td><td>
 </td></tr>
 </table>
 
-#### Sample Link
+#### Sample link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select Run Locally Installed Samples in WPF Button.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-## Positive Foreground
+## Positive foreground
 
 DoubleTextBox allows to apply the different brush for the positive values using the `PositiveForeground` property. 
 
@@ -23,43 +23,26 @@ DoubleTextBox allows to apply the different brush for the positive values using 
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 100;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.Value = 10;
-
 doubleTextBox.EnableFocusColors = true;
-
 doubleTextBox.PositiveForeground = Brushes.DeepPink;
-
 Grid1.Children.Add(doubleTextBox);
-
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 100
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.Value = 10
- 
 doubleTextBox.EnableFocusColors = True
- 
 doubleTextBox.PositiveForeground = Brushes.DeepPink
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
@@ -69,7 +52,7 @@ Grid1.Children.Add(doubleTextBox)
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 
-## Negative Foreground
+## Negative foreground
 
 DoubleTextBox allows to apply the different brush as a foreground for the negative values using the `NegativeForeground` property. 
 
@@ -83,28 +66,16 @@ N> It can be enable by setting ApplyNegativeForeground property to true. By defa
                           Width="100" Height="25" NegativeForeground="DarkOrange"
 						  ApplyNegativeForeground="True"/>
 
-
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 100;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.Value = -10;
-
 doubleTextBox.ApplyNegativeForeground = true;
-
 doubleTextBox.NegativeForeground = Brushes.DarkOrange;
-
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -112,17 +83,11 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 100
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.Value = -10
- 
 doubleTextBox.ApplyNegativeForeground = True
- 
 doubleTextBox.NegativeForeground = Brushes.DarkOrange
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
@@ -144,29 +109,17 @@ The DoubleTextBox allows to set the desired brush as the foreground for the Wate
                           Height="25" UseNullOption="True" WatermarkText="Type here"
 						  WatermarkTextIsVisible="True" WatermarkTextForeground="Red"/>
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 100;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.UseNullOption = true;
-
 doubleTextBox.WatermarkText = "Type Here";
-
 doubleTextBox.WatermarkTextIsVisible = true;
-
 doubleTextBox.WatermarkTextForeground = Brushes.Red;
-
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -174,30 +127,21 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 100
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.UseNullOption = True
- 
 doubleTextBox.WatermarkText = "Type Here"
- 
 doubleTextBox.WatermarkTextIsVisible = True
- 
 doubleTextBox.WatermarkTextForeground = Brushes.Red
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img3.jpeg)
 
-
-## Range Adorner Background
+## Range adorner background
 
 The background color of the range adorner can be set using the `RangeAdornerBackground` property.
 
@@ -210,32 +154,18 @@ The background color of the range adorner can be set using the `RangeAdornerBack
 						  MinValue="10" RangeAdornerBackground="BlueViolet"
 						  EnableRangeAdorner="True"/>
 
-
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 150;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.Value = 50;
-
 doubleTextBox.MinValue = 10;
-
 doubleTextBox.MaxValue = 100;
-
 doubleTextBox.EnableRangeAdorner = true;
-
 doubleTextBox.RangeAdornerBackground = Brushes.BlueViolet;
-
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -244,21 +174,13 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 150
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.Value = 50
- 
 doubleTextBox.MinValue = 10
- 
 doubleTextBox.MaxValue = 100
- 
 doubleTextBox.EnableRangeAdorner = True
- 
 doubleTextBox.RangeAdornerBackground = Brushes.BlueViolet
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
@@ -268,7 +190,7 @@ Grid1.Children.Add(doubleTextBox)
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img4.jpeg)
 
 
-## Zero Color
+## Zero color
 
 The Foreground of the DoubleTextBox can be customized based on the Value property. When zero is assigned as a value to a Value property, then automatically the ZeroColor is set to the Foreground property.
 
@@ -282,25 +204,15 @@ N> The ZeroColor in the DoubleTextBox can be enabled by setting the `ApplyZeroCo
                           Height="25" Value ="0" ApplyZeroColor="True"
 						  ZeroColor="Blue"/>
 
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 100;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.ApplyZeroColor = true;
-
 doubleTextBox.ZeroColor = Brushes.Blue;
-
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -308,24 +220,16 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 100
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.ApplyZeroColor = True
- 
 doubleTextBox.ZeroColor = Brushes.Blue
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
-
-
 {% endtabs %}
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
-
 
 ## WaterMarkTemplate
 
@@ -341,21 +245,13 @@ The Visual appearance of the WatermarkText can be changed using the `WatermarkTe
 						  UseNullOption="True">
 
 <syncfusion:DoubleTextBox.WatermarkTemplate>
-
 <DataTemplate>
-
 <Border Background="Red">
-
 <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
-
 </Border>
-
 </DataTemplate>
-
 </syncfusion:DoubleTextBox.WatermarkTemplate>
-
 </syncfusion:DoubleTextBox>
-
 
 {% endhighlight %}
 
@@ -376,20 +272,12 @@ To rounded the corners of the DoubleTexBox, set the property `CornerRadius` with
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
-
 doubleTextBox.Width = 100;
-
 doubleTextBox.Height = 25;
-
 doubleTextBox.CornerRadius = new CornerRadius(5);   
-                       
 Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
@@ -397,13 +285,9 @@ Grid1.Children.Add(doubleTextBox);
 {% highlight VB %}
 
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
- 
 doubleTextBox.Width = 100
- 
 doubleTextBox.Height = 25
- 
 doubleTextBox.CornerRadius = New CornerRadius(5)   
- 
 Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
@@ -436,28 +320,16 @@ For example, the blend style applied for the DoubleTextBox as shown in the follo
 {% highlight XAML %}
 
 <Window x:Class="WpfApplication4.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
 syncfusion:SkinStorage.VisualStyle="Blend"
-
 Title="MainWindow" Height="350" Width="525">
-
 <Grid x:Name="Grid1">
-
 <syncfusion:DoubleTextBox x:Name="DoubleTextBox1" Width="100" Height="25"/>
-
 </Grid>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -474,5 +346,3 @@ SkinStorage.SetVisualStyle(this, "Blend")
 {% endtabs %}
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
-
-

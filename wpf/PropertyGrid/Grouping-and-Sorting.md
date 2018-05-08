@@ -11,7 +11,7 @@ documentation: ug
 
 PropertyGrid groups the properties based on Category Attribute of the property and you can also sort the properties in both ascending and descending order. Sorting will be done based on the SortDirection property of the PropertyGrid control.
 
-## Using Grouping and Sorting in an Application
+## Using grouping and sorting in an application
 
 You can change the Sorting order by setting the SortDirection property. 
 
@@ -47,8 +47,7 @@ ListSortDirection</td><td>
 </td></tr>
 </table>
 
-
-#### Sample Link
+#### Sample link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.

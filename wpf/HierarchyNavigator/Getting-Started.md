@@ -11,13 +11,13 @@ documentation: ug
 
 The HierarchyNavigator control provides powerful data binding, which is fully customizable by using Expression Blend, making it easy to manage items and templates.
 
-## Control Structure
+## Control structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-## Class Diagram
+## Class diagram
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
@@ -286,7 +286,7 @@ The steps to create a HierarchyNavigator control in a WPF application by using E
 
     
 
-### Editing a HierarchyNavigator Template in Expression Blend
+### Editing a HierarchyNavigator template in Expression Blend
 
 You can edit a HierarchyNavigator control after it is added. The steps to edit a HierarchyNavigator control in Expression Blend are as follows:
 

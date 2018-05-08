@@ -41,7 +41,7 @@ SfColorPalette colorPalette = new SfColorPalette();
 {% endtabs %}
 
 
-## Visual Structure
+## Visual structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 

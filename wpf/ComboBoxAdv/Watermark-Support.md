@@ -7,13 +7,9 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-
-
 ## Default Text
 
 It displays the default text in the ComboBoxAdv when none of the items is selected in the drop down list.
-
-
 
 <table>
 <tr>
@@ -32,25 +28,23 @@ String</td><td>
 NA</td></tr>
 </table>
 
-
-#### Adding DefaultText property to an Application 
+#### Adding DefaultText property to an application 
 
 DefaultText property can be added directly to an application in the following way: 
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:ComboBoxAdv DefaultText="..Choose Items.."></syncfusion:ComboBoxAdv>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-
 ComboBoxAdv comboBox = new ComboBoxAdv();       
 comboBox.DefaultText = "..Choose Items..";
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](ComboBoxAdv_images/ComboBoxAdv_img10.png)

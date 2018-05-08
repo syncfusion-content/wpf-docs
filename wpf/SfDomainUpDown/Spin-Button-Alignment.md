@@ -19,107 +19,61 @@ The spin button’s position in the DomainUpDown control can be changed using Sp
 
 Spin buttons will be aligned on the right side of the control.
 
-
+{% tabs %}
 {%highlight xaml%}
 
-
-
-
 <editors:SfDomainUpDown x:Name="domainUpDown"
-
-                               HorizontalAlignment="Center"
-
-                               VerticalAlignment="Center"
-
-                               Width="200" 
-
-                              SpinButtonsAlignment="Right"
-
-                              ItemsSource="{Binding Employees}">
-
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Width="200" 
+                      SpinButtonsAlignment="Right"
+                      ItemsSource="{Binding Employees}">
  </editors:SfDomainUpDown>
 
-
 {%endhighlight%}
-
-
+{% endtabs %}
 
 ![](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png)
 
-
-
-
-
 ![](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png)
-
-
 
 ## Left
 
 Spin buttons will be aligned on the left side of the control.
 
+{% tabs %}
 {%highlight xaml%}
 
-
-
-
-
 <editors:SfDomainUpDown x:Name="domainUpDown"
-
-                               HorizontalAlignment="Center"
-
-                               VerticalAlignment="Center"
-
-                               Width="200" 
-
-                              SpinButtonsAlignment="Left"
-
-                              ItemsSource="{Binding Employees}">        </editors:SfDomainUpDown>
-
-
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Width="200" 
+                      SpinButtonsAlignment="Left"
+                      ItemsSource="{Binding Employees}">        </editors:SfDomainUpDown>
 
 {%endhighlight%}
-
+{% endtabs %}
 
 ![](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png)
 
-
-
-
-
 ![](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png)
-
-
 
 ## Both
 
 The spin button’s decrement button will be aligned on the left side of the control and the increment button is aligned on the right side of the control.
 
+{% tabs %}
 {%highlight xaml%}
 
-
-
-
-
 <editors:SfDomainUpDown x:Name="domainUpDown"
-
-                               HorizontalAlignment="Center"
-
-                               VerticalAlignment="Center"
-
-                               Width="200" 
-
-                              SpinButtonsAlignment="Both"
-
-                              ItemsSource="{Binding Employees}">        
-
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Width="200" 
+                      SpinButtonsAlignment="Both"
+                      ItemsSource="{Binding Employees}">        
 </editors:SfDomainUpDown>          
 
-
 {%endhighlight%}
-
+{% endtabs %}
 
 ![](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png)
-
-
-

@@ -15,7 +15,7 @@ For Conversion of Excel Workbook in SfSpreadsheet to PDF document, use [Convert]
 
 For viewing the PDF document, you can use [PdfViewerControl](http://help.syncfusion.com/wpf/pdfviewer/getting-started) to load the saved PDF stream.
 
-{% tab %}
+{% tabs %}
 {% highlight c# %}
 //Create the pdf viewer for load the document.
 PdfViewerControl pdfViewer = new PdfViewerControl();

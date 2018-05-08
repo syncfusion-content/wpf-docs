@@ -23,23 +23,21 @@ The Appearance of the AutoComplete control can be changed using the VisualStyle 
 * Metro
 * Transparent 
 
-
-
 The following code example illustrates how different visual styles can be applied to the control.
 
-
+{% tabs %}
 {% highlight xaml %}
 
-
 <syncfusion:AutoComplete Height="25" Width="200" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-
 SkinStorage.SetVisualStyle(autoComplete, "Office2007Blue");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Appearance_images/Appearance_img1.png)
 
@@ -50,8 +48,6 @@ Windows7
 
 Blend
 {:.caption}
-
-
 
 ![](Appearance_images/Appearance_img3.png)
 
@@ -83,24 +79,17 @@ ShinyRed
 ShinyBlue
 {:.caption}
 
-
-
 ![](Appearance_images/Appearance_img9.png)
 
 SyncOrange
 {:.caption}
-
-
 
 ![](Appearance_images/Appearance_img10.png)
 
 Metro
 {:.caption}
 
-
-
 ![](Appearance_images/Appearance_img11.png)
 
 Transparent
 {:.caption}
-

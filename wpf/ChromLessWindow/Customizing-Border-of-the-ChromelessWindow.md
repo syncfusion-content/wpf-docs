@@ -19,26 +19,15 @@ To set the ResizeBorderBrush property, use the below code
 {% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="ChromelessWindow" Height="350" Width="525" ResizeBorderBrush="Maroon" syncfusion:SkinStorage.VisualStyle="Metro"     
-
 x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-
 <Grid>
-
 </Grid>
-
 </syncfusion:ChromelessWindow>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -56,9 +45,7 @@ Me.ResizeBorderBrush = New SolidColorBrush(Colors.Maroon)
 
 ![](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img1.jpeg)
 
-
 **BorderThickness**
-
 
 To set the thickness for the Resizable border, use **ResizableBorderThickness** property of the ChromelessWindow. This property virtually sets the region for the resize pointer to appear. Hence, greater the region, easier it is to resize.
 
@@ -69,26 +56,15 @@ To set this property, use the following code.
 {% highlight XAML %}
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
 Title="ChromelessWindow" Height="350" Width="525" ResizeBorderThickness="8"  syncfusion:SkinStorage.VisualStyle="Metro"     
-
 x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-
 <Grid>
-
 </Grid>
-
 </syncfusion:ChromelessWindow>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -105,5 +81,3 @@ Me.ResizeBorderThickness = New Thickness(8)
 {% endtabs %}
 
 ![](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img2.jpeg)
-
-

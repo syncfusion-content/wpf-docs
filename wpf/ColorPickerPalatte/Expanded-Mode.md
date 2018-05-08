@@ -22,21 +22,34 @@ Expanded Mode can be added to an application by using XAML or C# code.
 The following code example illustrates how to add the Expanded Mode to an application.
 
 
+{% tabs %}
 
 {% highlight xaml %}
 
-
-
 <sync:ColorPickerPalette IsExpanded="True"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
     
- ColorPickerPalette colorpicker = new ColorPickerPalette();     
+ ColorPickerPalette colorpicker = new ColorPickerPalette();
+      
  colorpicker.IsExpanded = true;
+ 
 {% endhighlight %}
 
+
+{% highlight VB %}
+
+    
+ ColorPickerPalette colorpicker = new ColorPickerPalette()
+      
+ colorpicker.IsExpanded = true
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Expanded-Mode_images/Expanded-Mode_img1.png)
 
@@ -53,8 +66,8 @@ The following code example illustrates how to add the Expanded Mode to an applic
 Property </th><th>
 Description </th><th>
 Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+Data Type </th>
+</tr>
 <tr>
 <td>
 IsExpanded</td><td>
@@ -71,8 +84,7 @@ To view samples:
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select Run Locally Installed Samples in WPF Button.
-3. Now expand the DragAndDropManagerDemo tree-view item in the Sample Browser.
-4. Choose any one of the samples listed under it to launch. 
+3. Now Search ColorPickerPalette sample and launch it.
 
 
 

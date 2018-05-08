@@ -41,7 +41,7 @@ The various elements of a TabControlExt control is illustrated in the below imag
 
 There are two possible ways to create a simple TabControlExt control.
 
-### Through Designer
+### Adding control via designer
 
 To create the TabControlExt control through designer, follow the below steps.
 
@@ -51,40 +51,49 @@ To create the TabControlExt control through designer, follow the below steps.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
-### Programmatically
+### Adding control manually in code
 
-TabControlExt control is created by using either XAML or C# code. The following lines of code can be used to create a TabControlExt control.
+To add control manually in C#, follow the given steps:
 
-{% tabs %}
+1. Add the following required assembly references to the project:
 
-{% highlight xaml %}
+   * Syncfusion.Tools.WPF.dll
+   * Syncfusion.Shared.WPF.dll
 
-<!-- Adding TabControlExt -->
+2. Include the namespaces `Syncfusion.Windows.Tools.Controls`
 
-<syncfusion:TabControlExt Name="tabControlExt">
+   {% tabs %}
 
-</syncfusion:TabControlExt>
+   {% highlight C# %}
 
-{% endhighlight %}
+   using Syncfusion.Windows.Tools.Controls;
 
-{% highlight c# %}
+   {% endhighlight %}
 
-// Creating instance of the TabControlExt control
+   {% endtabs %}
 
-TabControlExt tabControlExt = new TabControlExt();
+3. Create `TabControlExt` control instance and add it to the Panel.
 
-//Creating the instance of StackPanel
+   {% tabs %}
 
-StackPanel stackPanel = new StackPanel();          
+   {% highlight C# %}
 
-//Adding control to the stack panel
+   // Creating instance of the TabControlExt control
 
-stackPanel.Children.Add(tabControlExt); 
+   TabControlExt tabControlExt = new TabControlExt();
 
-{% endhighlight %}
+   //Creating the instance of StackPanel
 
-{% endtabs %}
+   StackPanel stackPanel = new StackPanel();          
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+   //Adding control to the stack panel
+
+   stackPanel.Children.Add(tabControlExt); 
+
+   {% endhighlight %}
+
+   {% endtabs %}
+
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 N> To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.

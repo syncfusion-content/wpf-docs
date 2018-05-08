@@ -13,6 +13,7 @@ Data binding is the process of establishing a connection between the application
 
 The following example shows a simple binding between the DateTime property of the DateTimeEdit control and another DateTimeEdit control:
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -20,15 +21,16 @@ The following example shows a simple binding between the DateTime property of th
 
 {% endhighlight  %}
 
-![](Binding-Support_images/Binding-Support_img1.png)
+{% endtabs %}
 
+![](Binding-Support_images/Binding-Support_img1.png)
 
 {% seealso %}
 
 Setting Date
 
-NullValue Support
+[NullValue Support](/wpf/datetimeedit/null-value-support)
 
-Maximum and Minimum Value
+[Maximum and Minimum Value](/wpf/datetimeedit/maximum-and-minimum-value)
 
 {% endseealso %}

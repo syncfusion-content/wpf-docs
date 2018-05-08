@@ -16,13 +16,9 @@ DateTimeFormat property defines the Format to display the date value in the Date
 {% highlight xaml %}
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate">    
-
-	<syncfusion:DateTimeEdit.DateTimeFormat>        
-			
-			<global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>    
-	
-	</syncfusion:DateTimeEdit.DateTimeFormat>
-	
+<syncfusion:DateTimeEdit.DateTimeFormat>        
+<global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>    
+</syncfusion:DateTimeEdit.DateTimeFormat>
 </syncfusion:DateTimeEdit>
 
 {% endhighlight  %}
@@ -30,15 +26,10 @@ DateTimeFormat property defines the Format to display the date value in the Date
 {% highlight c# %}
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
-
 dateTimeEdit.Width = 200;
-
 dateTimeEdit.Height = 25;
-
 dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
-
 dateTimeEdit.Pattern = DateTimePattern.ShortDate;
-
 dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
 {    
 	ShortDatePattern = "MM/dd/yy hh:mm:ss"
@@ -47,6 +38,5 @@ dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
 {% endhighlight  %}
 
 {% endtabs %} 
-
 
 ![](DateTime-Format_images/DateTime-Format_img1.png)

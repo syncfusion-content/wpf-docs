@@ -11,7 +11,7 @@ documentation: ug
 
 The AutoComplete control provides you with the live drop-down hints as you enter the text in AutoComplete Textbox. It guides you by displaying the list of items from the Data Source. You can then select any item from the list instead of entering the whole text again.
 
-## Feature Summary 
+## Feature summary 
 
 Here are the core features of AutoComplete.
 
