@@ -157,8 +157,10 @@ To add control manually in C#, do the below steps,
 using Syncfusion.UI.Xaml.TreeGrid;
 namespace WpfApplication1
 {
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -196,31 +198,37 @@ public class EmployeeInfo
     private string _title;
     double? _salary;
     int _reportsTo;
+
     public string FirstName
     {
         get { return _firstName; }
         set { _firstName = value; }
     }
+
     public string LastName
     {
         get { return _lastName; }
         set { _lastName = value; }
     }
+
     public int ID
     {
         get { return _id; }
         set { _id = value; }
     }
+
     public string Title
     {
         get { return _title; }
         set { _title = value; }
     }
+
     public double? Salary
     {
         get { return _salary; }
         set { _salary = value; }
     }
+
     public int ReportsTo
     {
         get { return _reportsTo; }
@@ -239,17 +247,19 @@ N> If you want your data object (EmployeeInfo class) to automatically reflect pr
 {% highlight c# %}
 public class ViewModel
 {
+
     public ViewModel()
     {
         this.Employees = this.GetEmployees();
     }
-
     private ObservableCollection<EmployeeInfo> _employees;
+
     public ObservableCollection<EmployeeInfo> Employees
     {
         get { return _employees; }
         set { _employees = value; }
     }
+
 private  ObservableCollection<EmployeeInfo> GetEmployees()
  {
         ObservableCollection<EmployeeInfo> employeeDetails = new ObservableCollection<EmployeeInfo>();
@@ -342,8 +352,10 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
 using Syncfusion.UI.Xaml.TreeGrid;
 namespace GettingStarted
 {
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -404,6 +416,7 @@ public class PersonInfo
         get { return _salary; }
         set { _salary = value; }
     }
+ 
     public ObservableCollection<PersonInfo> Children
     {
         get { return _children; }
@@ -424,7 +437,6 @@ public class ViewModel
     {
         this.PersonDetails = this. CreatePersonData();
     }
-
     private ObservableCollection<PersonInfo> _personDetails;
 
     public ObservableCollection<PersonInfo> PersonDetails
@@ -490,8 +502,10 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
 using Syncfusion.UI.Xaml.TreeGrid;
 namespace NestedCollectionDemo
 {
+
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -529,16 +543,19 @@ public class EmployeeInfo
     private string _title;
     double? _salary;
     int _reportsTo;
+
     public string FirstName
     {
         get { return _firstName; }
         set { _firstName = value; }
     }
+
     public string LastName
     {
         get { return _lastName; }
         set { _lastName = value; }
     }
+
     public int ID
     {
         get { return _id; }
@@ -550,11 +567,13 @@ public class EmployeeInfo
         get { return _title; }
         set { _title = value; }
     }
+ 
     public double? Salary
     {
         get { return _salary; }
         set { _salary = value; }
     }
+
     public int ReportsTo
     {
         get { return _reportsTo; }
@@ -574,8 +593,8 @@ public class ViewModel
     {
         this.Employees = this.GetEmployees();
     }
-
     private ObservableCollection<EmployeeInfo> _employees;
+
     public ObservableCollection<EmployeeInfo> Employees
     {
         get { return _employees; }
@@ -621,7 +640,6 @@ public class ViewModel
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Alberts", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
 
         //Purchasing
-
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Ansman-Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Blythe", ID = 27, Salary = 550000, ReportsTo = 7, Title = "Store Keeper" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "David", LastName = "Campbell", ID = 28, Salary = 450000, ReportsTo = 7, Title = "Store Keeper" });
@@ -648,13 +666,16 @@ treeGrid.RequestTreeItems += TreeGrid_RequestTreeItems;
       
 private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEventArgs args)
 {
+
     if (args.ParentItem == null)
     {
         args.ChildItems = viewModel.Employees.Where(x => x.ReportsTo == -1);
     }
+
     else
     {
         EmployeeInfo employee = args.ParentItem as EmployeeInfo;
+
         if (employee != null)
         {
             args.ChildItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);

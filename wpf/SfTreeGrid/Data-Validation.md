@@ -41,6 +41,7 @@ public class OrderInfo : IDataErrorInfo
     }     
 
     [Display(AutoGenerateField = false)]
+ 
     public string Error
     {
         get
@@ -53,6 +54,7 @@ public class OrderInfo : IDataErrorInfo
     {
         get 
         {
+
             if (!columnName.Equals("Country"))
                 return string.Empty;
 
@@ -91,7 +93,6 @@ You can validate the data by implementing the [INotifyDataErrorInfo](https://msd
 public class OrderInfo : INotifyDataErrorInfo
 {
     private List<string> errors = new List<string>();    
-
     private string shippingCity;
 
     public string ShipCity
@@ -102,6 +103,7 @@ public class OrderInfo : INotifyDataErrorInfo
 
     public System.Collections.IEnumerable GetErrors(string propertyName)
     {
+ 
         if (!propertyName.Equals("ShipCity"))
             return null;
 
@@ -112,6 +114,7 @@ public class OrderInfo : INotifyDataErrorInfo
     }
 
     [Display(AutoGenerateField = false)]
+
     public bool HasErrors
     {
         get
@@ -150,6 +153,7 @@ The numeric type like int, double, decimal properties can be validated using [Ra
 {% highlight c# %}
 private int orderID;
 [Range(1001, 1005, ErrorMessage = "OrderID between 1001 and 1005 alone processed")]        
+
 public int OrderID
 {
     get { return orderID; }
@@ -158,6 +162,7 @@ public int OrderID
 
 private decimal price;
 [Range(typeof(decimal),"12","20")]
+
 public decimal Price
 {
     get { return price; }
@@ -172,6 +177,7 @@ The string type property can be validated using [Required](https://msdn.microsof
 {% highlight c# %}
 private string shippingCity;
 [Required]
+
 public string ShipCity
 {
     get { return shippingCity; }
@@ -180,6 +186,7 @@ public string ShipCity
 
 private string customerName;
 [StringLength(17)]
+
 public string CustomerName
 {
     get { return customerName; }
@@ -188,9 +195,11 @@ public string CustomerName
 {% endhighlight %}
 {% endtabs %}
 The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute(v=vs.95).aspx).
+
 {% tabs %}
 {% highlight c# %}
 [RegularExpressionAttribute(@"^[a-zA-Z]{1,40}$", ErrorMessage="Numbers and special characters not allowed")]
+
 public string CustomerID
 {
     get { return customerId; }
@@ -216,6 +225,7 @@ treeGrid.CurrentCellValidating += treeGrid_CurrentCellValidating;
 
 void treeGrid_CurrentCellValidating(object sender, TreeGridCurrentCellValidatingEventArgs e)
 {
+
     if (e.NewValue.ToString().Equals("1004"))
     {
         e.IsValid = false;
@@ -233,7 +243,6 @@ treeGrid.CurrentCellValidated += treeGrid_CurrentCellValidated;
 
 void treeGrid_CurrentCellValidated(object sender, TreeGridCurrentCellValidatedEventArgs e)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -252,6 +261,7 @@ treeGrid.RowValidating += treeGrid_RowValidating;
 void treeGrid_RowValidating(object sender, TreeGridRowValidatingEventArgs e)
 {
     var data = e.RowData.GetType().GetProperty("FirstName").GetValue(e.RowData);
+
     if (data.ToString().Equals("Andrew"))
     {
         e.IsValid = false;
@@ -269,7 +279,6 @@ treeGrid.RowValidated += treeGrid_RowValidated;
 
 void treeGrid_RowValidated(object sender, TreeGridRowValidatedEventArgs e)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -660,13 +669,14 @@ You can show the error information in row header by setting [IDataErrorInfo.Erro
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false)]
+
 public string Error
 {
     get
     {
+
         if (this.Country.Contains("Germany") || this.Country.Contains("UK"))
             return "Delivery not available for the country " + this.Country;
-
         return string.Empty;
     }
 }
@@ -682,10 +692,12 @@ You can show the error information in row header by setting [INotifyDataErrorInf
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false)]
+
 public bool HasErrors
 {
     get
     {
+
         if (this.ShipCity.Contains("Mexico D.F."))
             return true;
         return false;
@@ -708,6 +720,7 @@ treeGrid.CurrentCellValidating += treeGrid_CurrentCellValidating;
 
 void treeGrid_CurrentCellValidating(object sender, TreeGridCurrentCellValidatingEventArgs e)
 {         
+
     if (!(bool)e.NewValue)
     {
         e.IsValid = false;
@@ -716,9 +729,11 @@ void treeGrid_CurrentCellValidating(object sender, TreeGridCurrentCellValidating
 }
 
 treeGrid.RowValidating += treeGrid_RowValidating;
+
 void treeGrid_RowValidating(object sender, TreeGridRowValidatingEventArgs e)
 {
     var status = e.RowData.GetType().GetProperty("Availability").GetValue(e.RowData);
+
     if (!(bool)status)
     {
         e.IsValid = false;
@@ -733,6 +748,7 @@ void treeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
     int columnIndex = this.treeGrid.ResolveToGridVisibleColumnIndex(e.RowColumnIndex.ColumnIndex);
 
     //We are enabling the RowValidating, CellValidating event if the changes happen in TreeGridCheckBoxColumn
+
     if (this.treeGrid.Columns[columnIndex].CellType == "CheckBox")
     {
         this.treeGrid.GetValidationHelper().SetCurrentRowValidated(false);

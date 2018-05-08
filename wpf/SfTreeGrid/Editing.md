@@ -127,6 +127,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the ID.
 	/// </summary>
 	/// <value>The ID.</value>
+
 	public int ID
 	{
 		get
@@ -145,6 +146,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the first name.
 	/// </summary>
 	/// <value>The first name.</value>   
+
 	public string FirstName
 	{
 		get { return _firstName; }
@@ -160,6 +162,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the last name.
 	/// </summary>
 	/// <value>The last name.</value>
+
 	public string LastName
 	{
 		get { return _lastName; }
@@ -175,6 +178,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the title.
 	/// </summary>
 	/// <value>The title.</value>
+
 	public string Title
 	{
 		get
@@ -193,6 +197,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the salary.
 	/// </summary>
 	/// <value>The salary.</value>
+
 	public double? Salary
 	{
 		get
@@ -211,6 +216,7 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the reports to.
 	/// </summary>
 	/// <value>The reports to.</value>
+
 	public int ReportsTo
 	{
 		get
@@ -228,8 +234,10 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	{
 		var dictionary = new Dictionary<string, object>();
 		var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+
 		foreach (var pDescriptor in itemProperties)
 		{
+
 			if (pDescriptor.CanWrite)
 				dictionary.Add(pDescriptor.Name, pDescriptor.GetValue(this));
 		}
@@ -237,24 +245,31 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	}
 
 	private Dictionary<string, object> storedValues;
+
 	public void BeginEdit()
 	{
 		this.storedValues = this.BackUp();
 	}
+
 	public void CancelEdit()
 	{
+
 		if (this.storedValues == null)
 			return;
+
 		foreach (var item in this.storedValues)
 		{
 			var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
 			var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
+
 			if (pDesc != null)
 				pDesc.SetValue(this, item.Value);
 		}
 	}
+
 	public void EndEdit()
 	{           
+
 		if (this.storedValues != null)
 		{
 			this.storedValues.Clear();
@@ -263,8 +278,10 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	}
 
 	public event PropertyChangedEventHandler PropertyChanged;
+
 	public void RaisePropertyChanged(string propertyName)
 	{
+
 		if (PropertyChanged != null)
 			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	}
@@ -294,7 +311,6 @@ this.treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;
 
 void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEventArgs args)
 {
-		   
 }
 	
 {% endhighlight %}
@@ -314,7 +330,6 @@ this.treeGrid.CurrentCellEndEdit += TreeGrid_CurrentCellEndEdit;
 
 void TreeGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
 {
-	
 }
 	
 {% endhighlight %}
@@ -335,7 +350,6 @@ this.treeGrid.CurrentCellValueChanged += TreeGrid_CurrentCellValueChanged;
 
 void TreeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueChangedEventArgs args)
 {
-	
 }
 	
 {% endhighlight %}
@@ -359,7 +373,6 @@ this.treeGrid.CurrentCellDropDownSelectionChanged += TreeGrid_CurrentCellDropDow
 
 void TreeGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDropDownSelectionChangedEventArgs args)
 {
-			
 }
 	
 {% endhighlight %}
@@ -418,6 +431,7 @@ void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEv
 {
 	var mappingName = treeGrid.Columns[args.RowColumnIndex.ColumnIndex].MappingName;
 	var node = treeGrid.View.GetNodeAt(args.RowColumnIndex.RowIndex);
+
 	if (args.RowColumnIndex == new RowColumnIndex(2, 2))
 		args.Cancel = true;
 }
