@@ -7,7 +7,7 @@ control: CurrencyTextBox
 documentation: ug
 ---
 
-# Null Value support
+# Null Value Support
 
 CurrencyTextBox accepts null values. To enable the null option you have to set the UseNullOption property to true. You can also set the NullValue property for the CurrencyTextBox. When you set the null value to the Value property, by default the value of the NullValue (Default value is null)property will be assigned to the Value property. 
 

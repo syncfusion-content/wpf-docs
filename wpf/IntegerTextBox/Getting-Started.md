@@ -581,7 +581,7 @@ NullValue Support
 
 {%endseealso%}
 
-### Setting Minimum and Maximum Value
+### Setting minimum and maximum values
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the IntegerTextBox.
 
@@ -609,7 +609,7 @@ Minimum and Maximum Value
 
 {%endseealso%}
 
-## Setting Watermark
+## Setting watermark
 
 You can set the Watermark for the IntegerTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 

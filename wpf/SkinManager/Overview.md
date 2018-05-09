@@ -220,7 +220,7 @@ The following are the brushes that can be customized in Metro Theme.
 
 
 
-##Setting MetroBackgroundBrush property in XAML
+## Setting MetroBackgroundBrush property in XAML
 
 {% tabs %}
 {% highlight xaml %}
@@ -232,7 +232,7 @@ The following are the brushes that can be customized in Metro Theme.
 {% endhighlight %}
 {% endtabs %}
 
-##Setting MetroBackgroundBrush property in C#
+## Setting MetroBackgroundBrush property in C#
 
 
 {% tabs %}

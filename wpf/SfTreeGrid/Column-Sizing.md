@@ -113,13 +113,10 @@ For example, you can refresh all the column&#39;s width based on the cell conten
 
 {% tabs %}
 {% highlight c# %}
-
 var viewModel = this.treeGrid.DataContext as ViewModel;
 viewModel.PersonDetails.Add(new PersonInfo("Smith", "Anders","Red", new DateTime(2008, 10, 26), null));
-
 this.treeGrid.TreeGridColumnSizer.ResetAutoCalculationforAllColumns();
 this.treeGrid.TreeGridColumnSizer.Refresh();   
-	
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,11 +129,11 @@ When the width of the column is explicitly defined or column is resized, then co
 
 foreach (var column in treeGrid.Columns)
 {
+
 	if (!double.IsNaN(column.Width))
 		column.Width = double.NaN;
 }
 this.treeGrid.TreeGridColumnSizer.Refresh();   
-	
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,28 +143,30 @@ SfTreeGrid process column sizing operations in [TreeGridColumnSizer](http://help
 
 {% tabs %}
 {% highlight c# %}
-
 this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
 public class TreeGridColumnSizerExt:TreeGridColumnSizer
 {
+
 	public TreeGridColumnSizerExt(SfTreeGrid treeGrid)
 		:base(treeGrid)
 	{
-
 	}        
+
 	// Calculate Width for column when ColumnSizer is SizeToCells.        
+
 	protected override double CalculateCellWidth(TreeGridColumn column)
 	{
 		return base.CalculateCellWidth(column);
 	}
+
 	//Calculate Width for the column when ColumnSizer is SizeToHeader
+
 	protected override double CalculateHeaderWidth(TreeGridColumn column)
 	{
 		return base.CalculateHeaderWidth(column);
 	}
 }
-	
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,9 +180,7 @@ You can change the filter icon and sort icon widths for column width calculation
 
 {% tabs %}
 {% highlight c# %}
-
 this.treeGrid.TreeGridColumnSizer.SortIconWidth = 20;
-	
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,11 +190,9 @@ You can change the `font settings` for column width calculation by setting [Tree
 
 {% tabs %}
 {% highlight c# %}
-
 this.treeGrid.TreeGridColumnSizer.FontSize = 10.0;
 this.treeGrid.TreeGridColumnSizer.FontFamily = new FontFamily("TimesNewRoman");
 this.treeGrid.TreeGridColumnSizer.Margin = new Thickness(9, 3, 1, 3);
-	
 {% endhighlight %}
 {% endtabs %}
 
@@ -209,9 +204,9 @@ For example, you can calculate the column width, with specified ratios instead o
 
 {% tabs %}
 {% highlight c# %}
-
 public static class StarRatio
 {
+
 	public static int GetColumnRatio(DependencyObject obj)
 	{
 		return (int)obj.GetValue(ColumnRatioProperty);
@@ -224,7 +219,6 @@ public static class StarRatio
 
 	public static readonly DependencyProperty ColumnRatioProperty = DependencyProperty.RegisterAttached("ColumnRatio", typeof(int), typeof(StarRatio), new PropertyMetadata(1, null));
 }
-	
 {% endhighlight %}
 {% endtabs %}
 
@@ -232,15 +226,16 @@ Below code to define the star width calculation based on the `ColumnRatio`.
 
 {% tabs %}
 {% highlight c# %}
-
 //Assign the customized TreeGridColumnSizerExt to SfTreeGrid.TreeGridColumnSizer
 this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
 public class TreeGridColumnSizerExt : TreeGridColumnSizer
 {
+
 	public TreeGridColumnSizerExt(SfTreeGrid treeGrid) : base(treeGrid)
 	{
 	}
+
 	protected override void SetStarWidth(double remainingColumnWidth, IEnumerable<TreeGridColumn> remainingColumns)
 	{           
 		var removedColumn = new List<TreeGridColumn>();
@@ -269,8 +264,10 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 			{
 				isRemoved = true;
 				columns.Remove(column);
+
 				foreach (var remColumn in removedColumn)
 				{
+
 					if (!columns.Contains(remColumn))
 					{
 						removedWidth += remColumn.ActualWidth;
@@ -286,6 +283,7 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 			if (!isRemoved)
 			{
 				columns.Remove(column);
+
 				if (!removedColumn.Contains(column))
 					removedColumn.Add(column);
 			}
@@ -336,13 +334,12 @@ By default, the `ColumnSizer` calculates auto width based on the column content.
 Below code creates `CustomColumnSizer` to change the width of `TreeGridComboboxColumn` and set to `SfTreeGrid.TreeGridColumnSizer`.
 
 {% tabs %}
-
 {% highlight c# %}
-
 this.TreeGrid.TreeGridColumnSizer = new CustomColumnSizer(this.treeGrid);
 
 public class CustomColumnSizer : TreeGridColumnSizer
 {
+
 	public CustomColumnSizer(SfTreeGrid treeGrid)
 		: base(treeGrid)
 	{
@@ -350,26 +347,29 @@ public class CustomColumnSizer : TreeGridColumnSizer
 
 	protected override double CalculateCellWidth(TreeGridColumn column)
 	{
+
 		if (column is TreeGridComboBoxColumn)
 		{
 			double colWidth = double.MaxValue;
 			var source = (column as TreeGridComboBoxColumn).ItemsSource;
 			string maximumComboItemsText = string.Empty;
 			var clientSize = new Size(colWidth, TreeGrid.RowHeight);
+
 			foreach (var comboItems in source)
 			{
 				string comboItemText = (string)comboItems;
+
 				if (maximumComboItemsText.Length < comboItemText.Length)
 					maximumComboItemsText = comboItemText;
 			}
 			var measureSize = MeasureText(clientSize, maximumComboItemsText, column, null, Syncfusion.UI.Xaml.Grid.GridQueryBounds.Width);
 			return measureSize.Width + SystemParameters.ScrollWidth;
 		}
+
 		else
 			return base.CalculateCellWidth(column);
 	}
 }
-
 {% endhighlight %}
 
 {% endtabs %}

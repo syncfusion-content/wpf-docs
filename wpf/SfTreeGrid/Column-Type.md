@@ -153,11 +153,11 @@ You can use `DisplayBinding` property to format the column in display, by settin
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-					AllowEditing="True"                        
-					AutoExpandMode="RootNodesExpanded"
-					AutoGenerateColumns="False"
-					ChildPropertyName="Children"                        
-					ItemsSource="{Binding EmployeeDetails}">
+  					   AllowEditing="True"                        
+					   AutoExpandMode="RootNodesExpanded"
+					   AutoGenerateColumns="False"
+					   ChildPropertyName="Children"                        
+					   ItemsSource="{Binding EmployeeDetails}">
 	<syncfusion:SfTreeGrid.Columns>
 		<syncfusion:TreeGridTextColumn MappingName="Salary" DisplayBinding="{Binding Path=Salary, StringFormat='{}{0:C}'}"/>
 	</syncfusion:SfTreeGrid.Columns>
@@ -182,31 +182,31 @@ In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar`
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-						AllowEditing="True"
-						AllowSorting="True"
-						AutoExpandMode="RootNodesExpanded"
-						AutoGenerateColumns="False"
-						ChildPropertyName="Children"
-						ColumnSizer="Star"
-						ItemsSource="{Binding EmployeeDetails}"
-						LiveNodeUpdateMode="AllowDataShaping">
+					   AllowEditing="True"
+				       AllowSorting="True"
+					   AutoExpandMode="RootNodesExpanded"
+					   AutoGenerateColumns="False"
+					   ChildPropertyName="Children"
+					   ColumnSizer="Star"
+					   ItemsSource="{Binding EmployeeDetails}"
+					   LiveNodeUpdateMode="AllowDataShaping">
 	<syncfusion:SfTreeGrid.Columns>
 		<syncfusion:TreeGridCurrencyColumn MappingName="Salary" >
 			<syncfusion:TreeGridCurrencyColumn.CellTemplate>
 				<DataTemplate>
 					<Grid>
-						<ProgressBar x:Name="progressBar"
-											Background="Transparent"
-											BorderThickness="0"
-											Maximum="200000"
-											Minimum="0"
-											Visibility="Visible"
-											Value="{Binding Salary}" />
-						<TextBlock HorizontalAlignment="Right"
-										VerticalAlignment="Center"
-										Text="{Binding Salary,
+						<ProgressBar x: Name="progressBar"
+									    Background="Transparent"
+										BorderThickness="0"
+										Maximum="200000"
+										Minimum="0"
+										Visibility="Visible"
+										Value="{Binding Salary}" />
+						<TextBlock  HorizontalAlignment="Right"
+									VerticalAlignment="Center"
+									Text="{Binding Salary,
 														Converter={StaticResource CurrencyConverter}}"
-										TextAlignment="Center" />
+									TextAlignment="Center" />
 					</Grid>
 				</DataTemplate>
 			</syncfusion:TreeGridCurrencyColumn.CellTemplate>
@@ -240,12 +240,12 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 			Text="{Binding Path=Value}"/>
 </DataTemplate>
 
-<syncfusion:SfTreeGrid Name="treeGrid"
-					AutoExpandMode="RootNodesExpanded"
-					AutoGenerateColumns="False"
-					ChildPropertyName="Children"
-					ColumnSizer="Star"
-					ItemsSource="{Binding EmployeeDetails}">
+<syncfusion:SfTreeGrid  Name="treeGrid"
+					    AutoExpandMode="RootNodesExpanded"
+					    AutoGenerateColumns="False"
+					    ChildPropertyName="Children"
+					    ColumnSizer="Star"
+				    	ItemsSource="{Binding EmployeeDetails}">
 				<syncfusion:SfTreeGrid.Columns>
 					<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" 
 												   SetCellBoundValue="True"
@@ -277,15 +277,15 @@ For example, two different templates loaded alternatively in `Salary` column.
 	<local:CustomCellTemplateSelector x:Key="cellTemplateSelector"/>
 	<DataTemplate   x:Key="DefaultTemplate">
 		<TextBlock  Background="Wheat"
-				Foreground="Red"
-				Text="{Binding Path=Id}"
-				TextAlignment="Center" />
+				    Foreground="Red"
+				    Text="{Binding Path=Id}"
+			    	TextAlignment="Center" />
 	</DataTemplate>
 	<DataTemplate   x:Key="AlternateTemplate">
 		<TextBlock  Background="Beige"
-				Foreground="Green"
-				Text="{Binding Path=Id}"
-				TextAlignment="Center" />
+				    Foreground="Green"
+				    Text="{Binding Path=Id}"
+				    TextAlignment="Center" />
 	</DataTemplate>
 </Window.Resources>
 	
@@ -299,14 +299,17 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on Salary
 
 public class CustomCellTemplateSelector : DataTemplateSelector
 {
+
 	public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
 	{
+
 		if (item == null)
 			return null;
-
 		var data = item as Employee;            
+
 		if (data.Id % 2 == 0)
 			return Application.Current.MainWindow.FindResource("AlternateTemplate") as DataTemplate;
+
 		else
 			return Application.Current.MainWindow.FindResource("DefaultTemplate") as DataTemplate;
 	}
@@ -351,23 +354,18 @@ Below command defined in ViewModel is bound to `Button` inside `CellTemplate`. B
 public class BaseCommand : ICommand
 {
 	#region Fields
-
 	readonly Action<object> _execute;
-
 	readonly Predicate<object> _canExecute;
-
 	public event EventHandler CanExecuteChanged;
-
 	#endregion
-
 	#region Constructors
 	
 	/// <summary>
 	/// Creates a new command that always execute.
 	/// </summary>
 	/// <param name="execute">The execution logic.</param>
-	public BaseCommand(Action<object> execute)
 
+	public BaseCommand(Action<object> execute)
 		: this(execute, null)
 	{
 	}
@@ -377,16 +375,16 @@ public class BaseCommand : ICommand
 	/// </summary>
 	/// <param name="execute">The execution logic.</param>
 	/// <param name="canExecute">The execution status logic.</param>
+
 	public BaseCommand(Action<object> execute, Predicate<object> canExecute)
 	{
+
 		if (execute == null)
 			throw new ArgumentNullException("execute");
 		_execute = execute;
 		_canExecute = canExecute;
 	}
-
 	#endregion        
-
 	bool ICommand.CanExecute(object parameter)
 	{
 		return _canExecute == null ? true : _canExecute(parameter);
@@ -409,19 +407,23 @@ Below code, defines the command for `Button` in `ViewModel`.
 public class ViewModel
 {    
 	private BaseCommand deleteRecord;
+
 	public BaseCommand DeleteRecord
 	{
 		get
 		{
+
 			if (deleteRecord == null)
 				deleteRecord = new BaseCommand(OnDeleteRecordClicked, OnCanDelete);
 			return deleteRecord;
 		}
 	}
+
 	private static bool OnCanDelete(object obj)
 	{
 		return true;
 	}
+
 	private void OnDeleteRecordClicked(object obj)
 	{
 		//TODO ACTION.
@@ -499,8 +501,10 @@ When column is auto-generated, you can set the 'StringFormat' by handling 'AutoG
 
 void treeGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
 	if (e.Column.MappingName == "Salary")
 	{
+
 		if (e.Column is TreeGridNumericColumn)
 		{
 			e.Column = new TreeGridTextColumn() { MappingName = "Salary", HeaderText = "Salary" };
@@ -544,6 +548,7 @@ You can format the column using `Converter` property by defining `DisplayBinding
 
 public class CurrencyFormatConverter : IValueConverter
 {
+
 	public object Convert(object value, Type targetType, object parameter, string language)
 	{
 		return string.Format("{0:C2}", value);
@@ -565,10 +570,13 @@ When column is auto-generated, you can set the `Converter` by handling [AutoGene
 
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
+
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "Salary")
 	{
+
 		if (e.Column is TreeGridNumericColumn)
 		{
 			e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
@@ -593,7 +601,7 @@ You can change the font settings such as `FontSize`, `FontFamily`, `FontWeight` 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid"
+<syncfusion:SfTreeGrid  Name="treeGrid"
 						AutoExpandMode="AllNodesExpanded"
 						AutoGenerateColumns="True"
 						ChildPropertyName="ReportsTo"
@@ -626,6 +634,7 @@ this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "FirstName")
 	{
 		 e.Column.CellStyle=this.Resources["cellStyle"] as Style;
@@ -665,18 +674,17 @@ In the below code, returns the style based on `ID` value. Using `Container` you 
 
 public class CustomCellStyleSelector : StyleSelector
 {
+
 	protected override Style SelectStyleCore(object item, DependencyObject container)
 	{
 		var treeGridCell = container as TreeGridCell;
-
 		var mappingName = treeGridCell.ColumnBase.TreeGridColumn.MappingName;
-
 		var record = treeGridCell.DataContext;
-
 		var cellValue = record.GetType().GetProperty(mappingName).GetValue(record);
 
 		if (mappingName.Equals("ID"))
 		{
+
 			if (Convert.ToInt16(cellValue)%3==0)
 				return App.Current.Resources["cellStyle1"] as Style;
 
@@ -718,11 +726,11 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 
 {% tabs %}
 {% highlight c# %}
-
 this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "ID")
 	{
 		e.Column.CellStyleSelector = new CustomCellStyleSelector();
@@ -826,9 +834,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 
 {% highlight c# %}
-
-	treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
-	
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -917,7 +923,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" }
 
 {% highlight c# %}
 
-	this.treeGrid.Columns.Add(new TreeGridCurrencyColumn() { MappingName = "Salary", HeaderText = "Salary" });
+this.treeGrid.Columns.Add(new TreeGridCurrencyColumn() { MappingName = "Salary", HeaderText = "Salary" });
 
 {% endhighlight %}
 {% endtabs %}
@@ -984,7 +990,7 @@ You can display data as percent value or double value using [PercentEditMode](ht
 
 {% highlight c# %}
 
-	this.treeGrid.Columns.Add(new TreeGridPercentColumn() { MappingName = "Hike", HeaderText = "Hike" });
+this.treeGrid.Columns.Add(new TreeGridPercentColumn() { MappingName = "Hike", HeaderText = "Hike" });
 
 {% endhighlight %}
 {% endtabs %}
@@ -1050,7 +1056,7 @@ You can display data as percent value or double value using [PercentEditMode](ht
 
 {% highlight c# %}
 
-	treeGrid.Columns.Add(new TreeGridDateTimeColumn() { MappingName = "DOB", HeaderText = "Employee DOB" });
+treeGrid.Columns.Add(new TreeGridDateTimeColumn() { MappingName = "DOB", HeaderText = "Employee DOB" });
 	
 {% endhighlight %}
 {% endtabs %}
@@ -1144,9 +1150,9 @@ You can allow end-user to increment or decrement the value when 'MouseWheel' or 
 {% highlight xaml %}
 
 <syncfusion:TreeGridDateTimeColumn HeaderText="Employee DOB"
-							   MappingName="DOB" 
-							   AllowNullValue="True" 
-							   NullValue="17/11/2016" />
+							       MappingName="DOB" 
+							       AllowNullValue="True" 
+							       NullValue="17/11/2016" />
 							   
 {% endhighlight %}
 {% endtabs %}
@@ -1208,6 +1214,7 @@ Below code, returns the culture-specified date time value instead of default pat
 
 public class CultureFormatConverter : IValueConverter
 {
+
 	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
 		return value;
@@ -1491,28 +1498,36 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on ID? va
 
 public class CustomEditTemplateSelector : DataTemplateSelector
 {
+
 	public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
 	{
+
 		if (item == null)
 			return null;
 
 		var data = item as Employee;
+
 		if (data.Id % 2 == 0)
 			return App.Current.Resources["AlternateEditTemplate"] as DataTemplate;
+
 		else
 			return App.Current.Resources["DefaultEditTemplate"] as DataTemplate;
 	}
 }
+
 public class CustomCellTemplateSelector : DataTemplateSelector
 {
+
 	public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
 	{
+
 		if (item == null)
 			return null;
-
 		var data = item as Employee;
+
 		if (data.Id % 2 == 0)
 			return Application.Current.MainWindow.FindResource("AlternateCellTemplate") as DataTemplate;
+
 		else
 			return Application.Current.MainWindow.FindResource("DefaultCellTemplate") as DataTemplate;
 	}
@@ -1620,6 +1635,7 @@ treeGrid.CellRenderers.Add("ComboBox", new TreeGridCellComboBoxRendererExt());
 
 public class TreeGridCellComboBoxRendererExt : TreeGridCellComboBoxRenderer
 {
+
 	protected override void OnEditElementLoaded(object sender, System.Windows.RoutedEventArgs e)
 	{
 		base.OnEditElementLoaded(sender, e);
@@ -1854,14 +1870,19 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 	{
 		value = ((DateTime)value);
 		var column = cachedColumn as TreeGridDateTimeColumn;
+
 		if (value == null || DBNull.Value == value)
 		{
+
 			if (column.AllowNullValue && column.MaxDateTime != System.DateTime.MaxValue && column.NullText == string.Empty)
 				return column.MaxDateTime;
+
 			if (column.AllowNullValue && column.NullValue != null)
 				return column.NullValue;
+
 			else if (column.AllowNullValue && column.NullText != string.Empty)
 				return column.NullText;
+
 			if (column.MaxDateTime != System.DateTime.MaxValue)
 				return column.MaxDateTime;
 		}
@@ -1871,6 +1892,7 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 
 		if (_columnValue < column.MinDateTime)
 			_columnValue = column.MinDateTime;
+
 		if (_columnValue > column.MaxDateTime)
 			_columnValue = column.MaxDateTime;
 
@@ -1879,34 +1901,48 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 
 	private string DateTimeFormatString(DateTime columnValue, TreeGridDateTimeColumn column)
 	{
+
 		switch (column.Pattern)
 		{
+
 			case DateTimePattern.ShortDate:
 				return columnValue.ToString("d", column.DateTimeFormat);
+
 			case DateTimePattern.LongDate:
 				return columnValue.ToString("D", column.DateTimeFormat);
+
 			case DateTimePattern.LongTime:
 				return columnValue.ToString("T", column.DateTimeFormat);
+
 			case DateTimePattern.ShortTime:
 				return columnValue.ToString("t", column.DateTimeFormat);
+
 			case DateTimePattern.FullDateTime:
 				return columnValue.ToString("F", column.DateTimeFormat);
+
 			case DateTimePattern.RFC1123:
 				return columnValue.ToString("R", column.DateTimeFormat);
+
 			case DateTimePattern.SortableDateTime:
 				return columnValue.ToString("s", column.DateTimeFormat);
+
 			case DateTimePattern.UniversalSortableDateTime:
 				return columnValue.ToString("u", column.DateTimeFormat);
+
 			case DateTimePattern.YearMonth:
 				return columnValue.ToString("Y", column.DateTimeFormat);
+
 			case DateTimePattern.MonthDay:
 				return columnValue.ToString("M", column.DateTimeFormat);
+
 			case DateTimePattern.CustomPattern:
 				return columnValue.ToString(column.CustomPattern, column.DateTimeFormat);
+
 			default:
 				return columnValue.ToString("MMMM", column.DateTimeFormat);
 		}
 	}
+
 	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
 		throw new NotImplementedException();
@@ -1915,8 +1951,10 @@ public class DateTimeOffsetFormatConverter : IValueConverter
 
 public class DateTimeOffsetToDateTimeConverter : IValueConverter
 {
+
 	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
+
 		if (value == null)
 			return null;
 		return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
@@ -1924,6 +1962,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
 	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
+
 		if (value == null)
 			return null;
 		return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
@@ -1940,8 +1979,10 @@ In the below code snippet, `TreeGridDateTimeOffsetColumn` column created from `T
 
 public class TreeGridDateTimeOffsetColumn : TreeGridDateTimeColumn
 {
+
 	protected override void SetDisplayBindingConverter()
 	{
+
 		if ((DisplayBinding as Binding).Converter == null)
 			(DisplayBinding as Binding).Converter = new DateTimeOffsetFormatConverter(this);
 
@@ -2108,6 +2149,7 @@ this.treeGrid.CellRenderers.Add("TextBox",new TreeGridCellTextBoxRendererExt());
 
 public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {
+
 	public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 	{
 		base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
@@ -2163,6 +2205,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// Create new edit element.
 	/// </summary>
 	/// <returns></returns>
+
 	protected override ComboBoxAdv OnCreateEditUIElement()
 	{
 		return new ComboBoxAdv();
@@ -2174,6 +2217,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <param name="dataColumn"></param>
 	/// <param name="uiElement"></param>
 	/// <param name="dataContext"></param>
+
 	public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, ContentControl uiElement, object dataContext)
 	{
 		SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
@@ -2185,6 +2229,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <param name="element"></param>
 	/// <param name="column"></param>
 	/// <param name="dataContext"></param>
+
 	private static void SetDisplayBinding(ContentControl element, TreeGridColumn column, object dataContext)
 	{
 		var comboBoxColumn = (TreeGridComboBoxColumn)column;
@@ -2204,6 +2249,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <param name="dataColumn"></param>
 	/// <param name="uiElement"></param>
 	/// <param name="dataContext"></param>
+
 	public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, ContentControl uiElement, object dataContext)
 	{
 		SetDisplayBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
@@ -2215,6 +2261,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <param name="dataColumn"></param>
 	/// <param name="uiElement"></param>
 	/// <param name="dataContext"></param>
+
 	public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, ComboBoxAdv uiElement, object dataContext)
 	{
 		SetEditBinding(uiElement, dataColumn.TreeGridColumn, dataContext);
@@ -2226,6 +2273,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <param name="dataColumn"></param>
 	/// <param name="uiElement"></param>
 	/// <param name="dataContext"></param>
+
 	public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, ComboBoxAdv element, object dataContext)
 	{
 		SetEditBinding(element, dataColumn.TreeGridColumn, dataContext);
@@ -2237,6 +2285,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <param name="element"></param>
 	/// <param name="column"></param>
 	/// <param name="dataContext"></param>
+
 	private static void SetEditBinding(ComboBoxAdv element, TreeGridColumn column, object dataContext)
 	{
 		var comboboxColumn = (TreeGridComboBoxColumn)column;
@@ -2271,8 +2320,10 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <returns>
 	/// True if the parent grid should be allowed to handle keys; false otherwise.
 	/// </returns>  
+
 	protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
 	{
+
 		if (!HasCurrentCellState || !IsInEditing)
 			return true;
 
@@ -2283,6 +2334,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 			case Key.Enter:
 			case Key.Escape:
 				return !((ComboBoxAdv)CurrentCellRendererElement).IsDropDownOpen;
+
 			case Key.Down:
 			case Key.Up:
 			case Key.Left:
@@ -2295,11 +2347,12 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// <summary>
 	/// Gets the control value.
 	/// </summary>
+
 	public override object GetControlValue()
 	{
+
 		if (!HasCurrentCellState)
 			return base.GetControlValue();
-
 		return CurrentCellRendererElement.GetValue(IsInEditing ? ComboBoxAdv.SelectedValueProperty : ContentControl.ContentProperty);
 	}
 
@@ -2307,13 +2360,16 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 	/// Set the control value.
 	/// </summary>
 	/// <param name="value">The value.</param>
+
 	public override void SetControlValue(object value)
 	{
+
 		if (!HasCurrentCellState)
 			return;
 
 		if (IsInEditing)
 			((ComboBoxAdv)CurrentCellRendererElement).SelectedValue = value;
+
 		else
 			throw new Exception("Value cannot be Set for Unloaded Editor");
 	}
@@ -2346,19 +2402,24 @@ Below code creates the converter to format the date time value.
 
 public class CustomConverter : IValueConverter
 {
+
 	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
+
 		if (string.IsNullOrEmpty(value.ToString()))
 			return null;
 		return new ConvertToDateTimeClass().ConvertToDateTime(value);
 	}
+
 	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 	{
 		return new ConvertToDateTimeClass().ConvertToDateTime(value);
 	}
 }
+
 public class ConvertToDateTimeClass
 {
+
 	public string ConvertToDateTime(object value)
 	{
 		DateTime date = Convert.ToDateTime(value);
@@ -2377,6 +2438,7 @@ In the below code, new column created with converter using `SetDisplayBindingCon
 
 public class DatePickerColumn : TreeGridColumn
 {
+
 	public DatePickerColumn()
 	{
 		SetCellType("DatePickerRenderer");
@@ -2410,8 +2472,10 @@ In the below code snippet, display and edit `UIElement` defined via `TreeGridVir
 /// </summary>
 /// <param name="TextBlock">Display Control</param>
 /// <param name="DatePicker">Edit Control</param>
+
 public class DatePickerRenderer : TreeGridVirtualizingCellRenderer<TextBlock, DatePicker>
 {
+
 	public DatePickerRenderer()
 	{
 
@@ -2430,6 +2494,7 @@ With the below code snippet, you can create the display and edit element for ren
 /// Create new display element.
 /// </summary>
 /// <returns></returns>
+
 protected override TextBlock OnCreateDisplayUIElement()
 {
 	return new TextBlock();
@@ -2438,6 +2503,7 @@ protected override TextBlock OnCreateDisplayUIElement()
 /// Create new edit element.
 /// </summary>
 /// <returns></returns>
+
 protected override DatePicker OnCreateEditUIElement()
 {
 	return new DatePicker();
@@ -2457,6 +2523,7 @@ With the below code snippet, you can initialize the binding for display element 
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 {
 	base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
@@ -2469,6 +2536,7 @@ public override void OnInitializeDisplayElement(TreeDataColumnBase dataColumn, T
 /// <param name="element"></param>
 /// <param name="column"></param>
 /// <param name="dataContext"></param>
+
 private static void SetDisplayBinding(TextBlock element, TreeGridColumn column, object dataContext)
 {
 	var customColumn = (DatePickerColumn)column;
@@ -2496,6 +2564,7 @@ With the below code snippet, updates the binding while UI interaction by overrid
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnUpdateDisplayBinding(TreeDataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 {
 	base.OnUpdateDisplayBinding(dataColumn, uiElement, dataContext);
@@ -2516,6 +2585,7 @@ Similarly, you can initialize and update the binding for edit element by overrid
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, DatePicker uiElement, object dataContext)
 {
 	base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
@@ -2528,6 +2598,7 @@ public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, Date
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, DatePicker element, object dataContext)
 {
 	base.OnUpdateEditBinding(dataColumn, element, dataContext);
@@ -2540,6 +2611,7 @@ public override void OnUpdateEditBinding(TreeDataColumnBase dataColumn, DatePick
 /// <param name="element"></param>
 /// <param name="column"></param>
 /// <param name="dataContext"></param>
+
 private static void SetEditBinding(DatePicker element, TreeGridColumn column, object dataContext)
 {
 	var customColumn = (DatePickerColumn)column;
@@ -2567,6 +2639,7 @@ You can customize the editor control while loading by overriding [OnEditElementL
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
+
 protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 {
 	var datePicker = (sender as DatePicker);
@@ -2579,6 +2652,7 @@ protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 	{
 		datePickerTextBox.SelectAll();
 	}
+
 	else
 	{
 		datePickerTextBox.Select(datePickerTextBox.SelectedText.Length, 0);
@@ -2602,8 +2676,10 @@ With the below code snippet, you can customize the keyboard interactions for the
 /// <returns>
 /// True if the parent grid should be allowed to handle keys; false otherwise.
 /// </returns>
+
 protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
 {
+
 	if (!HasCurrentCellState || !IsInEditing)
 		return true;
 
@@ -2619,6 +2695,7 @@ protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEve
 		case Key.Enter:
 		case Key.Escape:
 			return !((DatePicker)CurrentCellRendererElement).IsDropDownOpen;
+
 		case Key.Down:
 		case Key.Up:
 		case Key.Left:
@@ -2639,8 +2716,10 @@ You can handle the cell value for the custom renderer by overriding [GetControlV
 /// <summary>
 /// Gets the control value.
 /// </summary>
+
 public override object GetControlValue()
 {
+
 	if (!HasCurrentCellState)
 		return base.GetControlValue();
 
@@ -2651,13 +2730,16 @@ public override object GetControlValue()
 /// Set the control value.
 /// </summary>
 /// <param name="value">The value.</param>
+
 public override void SetControlValue(object value)
 {
+
 	if (!HasCurrentCellState)
 		return;
 
 	if (IsInEditing)
 		((TextBox)CurrentCellRendererElement).Text = value.ToString();
+
 	else
 		throw new Exception("Value cannot be Set for Unloaded Editor");
 }
@@ -2747,14 +2829,19 @@ You can restrict the length of user input in both display and edit element using
 
 public class MaxLengthConverter : IValueConverter
 {
+
 	public object Convert(object value, Type targetType, object parameter, string language)
 	{
+
 		// Define max length for column.
 		int maxLength = 5;
+
 		// Get the ColumnValue
 		var columnValue = System.Convert.ToString(value);
+
 		if (columnValue.Length < maxLength)
 			return columnValue;
+
 		else
 			return columnValue.Substring(0, maxLength);
 
@@ -2810,12 +2897,15 @@ this.treeGrid.CellRenderers.Add("TextBox", new TreeGridCellTextBoxRendererExt())
 
 public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {
+
 	public override void OnInitializeEditElement(TreeDataColumnBase dataColumn, TextBox uiElement, object dataContext)
 	{
+
 		if (dataColumn.TreeGridColumn != null && dataColumn.TreeGridColumn.MappingName == "FirstName")
 		{
 			uiElement.MaxLength = 7;
 		}
+
 		else
 		{
 			uiElement.MaxLength = 0;

@@ -14,7 +14,7 @@ TreeViewAdv allow user to select single or multiple node by setting AllowMultiSe
 * Enable to allow Multiple Selection in TreeViewAdv
 * Selecting an items through AddNodeToSelectedItems Collection
 
-## Selecting an Item through Programmatically
+## Selecting an item through programmatically
 
 You can show a node to be selected, at runtime, when the TreeViewAdv control is loaded, by setting the IsSelected property of a particular node to __true____.__ Here is the code snippet to enable this property.
 
@@ -64,7 +64,7 @@ treeViewItemAdv1.IsSelected = True
 
 ![](Selecting_node_images/Selecting_node_img1.jpeg)
 
-## Enable to Allow Multiple Selection in TreeViewAdv
+## Enable to allow multiple selection in TreeViewAdv
 
 The TreeViewAdv control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the AllowMultiSelect property.
 
@@ -110,7 +110,7 @@ treeViewAdv.AllowMultiSelect = True
 
 ![](Selecting_node_images/Selecting_node_img2.jpeg)
 
-## Selecting an Item through AddNodeToSelectedItems Collection
+## Selecting an item through AddNodeToSelectedItems collection
 
 TreeViewAdv control provides support to select multiple treeview items programmatically. This is achieved by using the AddNodeToSelectedItems method which is used to select multiple items by iterating through each and every item in the TreeViewAdv control.
 
