@@ -13,7 +13,7 @@ documentation: ug
 
 DateTimeEdit control can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
-### Creating a DateTimeEdit control in C#
+### Creating a DateTimeEdit control in code behind
 
 The steps to create a DateTimeEdit control by using Visual Studio in C# are as follows:
 
