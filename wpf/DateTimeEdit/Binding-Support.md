@@ -27,8 +27,6 @@ The following example shows a simple binding between the DateTime property of th
 
 {% seealso %}
 
-Setting Date
-
 [NullValue Support](/wpf/datetimeedit/null-value-support)
 
 [Maximum and Minimum Value](/wpf/datetimeedit/maximum-and-minimum-value)

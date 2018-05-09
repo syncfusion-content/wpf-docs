@@ -57,9 +57,7 @@ N> Dropdown popup of DateTimeEdit cannot be opened by pressing Enter Key when Ca
 
 {% seealso %}
 
-Repeat Buttons
-
-Setting Date
+[Repeat Buttons](/wpf/datetimeedit/repeat-buttons)
 
 {% endseealso %}
 
