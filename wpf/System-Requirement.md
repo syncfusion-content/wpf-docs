@@ -22,11 +22,12 @@ The following frameworks are supported:
 
 ## Development Environments
 
-The following IDEs can be used for development that are [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx) with Microsoft Windows, both 32bit and 64 bit Operating System from XP.
+The following IDEs can be used for development that are [compatible](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2015-compatibility-vs) with Microsoft Windows, both 32bit and 64 bit Operating System from XP.
 
 * Microsoft Visual Studio 2008
 * Microsoft Visual Studio 2010
 * Microsoft Visual Studio 2012
 * Microsoft Visual Studio 2013
 * Microsoft Visual Studio 2015
+* Microsoft Visual Studio 2017
 * Microsoft Expression Blend (optional for above Visual Studio versions)
