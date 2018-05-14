@@ -25,7 +25,7 @@ editControl.Print();
 
 editControl.Print 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -49,7 +49,7 @@ editControl.ShowPrintPreview();
 
 editControl.ShowPrintPreview
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](Printing_images/printdefault.png)
 
@@ -61,7 +61,7 @@ Print preview window has Print and Quick Print Buttons which needs to be clicked
 
 1. Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
-    ![](Printing_images/msprint.png)
+![](Printing_images/msprint.png)
 
 2. Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
 
