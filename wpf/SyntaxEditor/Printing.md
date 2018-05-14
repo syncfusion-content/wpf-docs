@@ -45,7 +45,7 @@ editControl.ShowPrintPreview();
 
 {% highlight VB %}
 
-' Invoke the print Prview Window
+' Invoke the print Preview Window
 
 editControl.ShowPrintPreview
 
@@ -214,7 +214,7 @@ editcontrol.PrintSettings = New PrintSettings
 
 editcontrol.PrintSettings.PrintPageHeaderHeight = 30
 
-editcontrol.PrintSettings.PrintPageHeaderTemplate = CType(Application.Current.Resources("PageHeaderTempalte"),DataTemplate)
+editcontrol.PrintSettings.PrintPageHeaderTemplate = CType(Application.Current.Resources("PageHeaderTemplate"),DataTemplate)
 
 editcontrol.ShowPrintPreview
 
@@ -276,7 +276,7 @@ editcontrol.PrintSettings = New PrintSettings
 
 editcontrol.PrintSettings.PrintPageHeaderHeight = 30
 
-editcontrol.PrintSettings.PrintPageFooterTemplate = CType(Application.Current.Resources("PageFooterTempalte"),DataTemplate)
+editcontrol.PrintSettings.PrintPageFooterTemplate = CType(Application.Current.Resources("PageFooterTemplate"),DataTemplate)
 
 editcontrol.ShowPrintPreview
 
