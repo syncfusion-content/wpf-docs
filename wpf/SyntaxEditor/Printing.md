@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing support in EditControl.
-description: How to print the Syntax Editor and customize the print settings .
+description: How to print the Syntax Editor and customize the print settings.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 ## Printing
 
-EditControl provides support to print the data displayed in the EditControl using `Print` method. 
+EditControl provides support to print the content displayed in the EditControl using `Print` method. 
 
 {% tabs %}
 
