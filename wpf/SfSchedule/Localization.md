@@ -23,7 +23,7 @@ ApplicationLanguages.PrimaryLanguageOverride = "fr-fr";
 
 {% endhighlight  %}
 
-![](Loclization_images/Loclization_img1.jpeg)
+![](Localization_images/Localization_img1.jpeg)
 
 
 
