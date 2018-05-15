@@ -110,13 +110,13 @@ ItemTemplate property of the Tree Navigator can be used to customize the display
                                     VerticalAlignment="Center"
                                     >
 <navigation:SfTreeNavigator.ItemTemplate>
-<primitives:HierarchicalDataTemplate ItemsSource="{Binding Models}">
+<HierarchicalDataTemplate ItemsSource="{Binding Models}">
 <StackPanel Orientation="Horizontal">
 <TextBlock Text="{Binding Header}" 
         Foreground="Green" FontWeight="Bold" 
         VerticalAlignment="Center" Margin="18 0 0 0"/>
 </StackPanel>
-</primitives:HierarchicalDataTemplate>
+</HierarchicalDataTemplate>
 </navigation:SfTreeNavigator.ItemTemplate>
 </navigation:SfTreeNavigator>
 {% endhighlight %}
@@ -126,4 +126,4 @@ This will populate the Tree Navigator as follows.
 
 ![3](Populating-Items_images/Populating-Items_img2.png)
 
-N> HierarchicalDataTemplate available in Syncfusion.SfShared.WPF assembly under the Syncfusion.Windows.Primitives namespace
+
