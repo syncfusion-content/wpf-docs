@@ -51,6 +51,8 @@ editControl.ShowPrintPreview
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Printing_images/printdefault.png)
 
 ### Print
@@ -64,7 +66,6 @@ Print preview window has Print and Quick Print Buttons which needs to be clicked
 ![](Printing_images/msprint.png)
 
 2. Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
-
 
 ## Print Settings
 
