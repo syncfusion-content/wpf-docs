@@ -155,7 +155,7 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding Shape Style to Node
+#### Adding Shape and ShapeStyle to Node
 
  We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the inbuilt shapes, Shapes dictionary should be merged in Application.  
  Please refer to [Shapes](/wpf/sfdiagram/Shapes) to know about inbuilt Shapes.
