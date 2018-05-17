@@ -41,8 +41,6 @@ editControl.ShowPrintPreview();
 
 {% endhighlight %}
 
-{% endtabs %}
-
 {% highlight VB %}
 
 ' Invoke the print Preview Window
