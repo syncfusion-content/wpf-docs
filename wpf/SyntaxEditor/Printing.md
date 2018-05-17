@@ -71,14 +71,14 @@ EditControl provides various options to customize page settings using `EditContr
 
 ### Orientation
 
-EditControl provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting `PrintSettings.PrintPageOrientation` Property.
+EditControl provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting `PrintSettings.Orientation` Property.
 
 {% tabs %}
 {% highlight c# %}
 
 editControl.PrintSettings = new PrintSettings();
 
-editControl.PrintSettings.PrintPageOrientation = PrintOrientation.Landscape;
+editControl.PrintSettings.Orientation = Syncfusion.Windows.Shared.Printing.PrintOrientation.Landscape;
 
 editControl.ShowPrintPreview();
 
@@ -88,7 +88,7 @@ editControl.ShowPrintPreview();
 
 editcontrol.PrintSettings = New PrintSettings
 
-editcontrol.PrintSettings.PrintPageOrientation = PrintOrientation.Landscape
+editcontrol.PrintSettings.Orientation = Syncfusion.Windows.Shared.Printing.PrintOrientation.Landscape
 
 editcontrol.ShowPrintPreview
 
@@ -102,7 +102,7 @@ Print orientation can be changed in print preview at runtime by selecting from o
 
 ### Page size
 
-EditControl provides support to change the page size. Page size can be changed by setting `PrintSettings.PrintPageWidth` and `PrintSettings.PrintPageHeight` properties.
+EditControl provides support to change the page size. Page size can be changed by setting `PrintSettings.PageWidth` and `PrintSettings.PageHeight` properties.
 
 {% tabs %}
 
@@ -110,9 +110,9 @@ EditControl provides support to change the page size. Page size can be changed b
 
 editControl.PrintSettings = new PrintSettings();
 
-editControl.PrintSettings.PrintPageHeight = 800;            
+editControl.PrintSettings.PageHeight = 800;            
 
-editControl.PrintSettings.PrintPageWidth = 800;
+editControl.PrintSettings.PageWidth = 800;
 
 editControl.Print();
 
@@ -122,9 +122,9 @@ editControl.Print();
 
 editControl.PrintSettings = New PrintSettings
 
-editControl.PrintSettings.PrintPageHeight = 800
+editControl.PrintSettings.PageHeight = 800
 
-editControl.PrintSettings.PrintPageWidth = 800
+editControl.PrintSettings.PageWidth = 800
 
 editControl.Print
 
@@ -138,14 +138,14 @@ Page size can be changed in print preview also by selecting from page-size drop-
 
 ### Page margin
 
-EditControl provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting `PrintSettings.PrintPageMargin` property.
+EditControl provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting `PrintSettings.PageMargin` property.
 
 {% tabs %}
 {% highlight c# %}
 
 editControl.PrintSettings = new PrintSettings();
 
-editControl.PrintSettings.PrintPageMargin = new Thickness(5);
+editControl.PrintSettings.PageMargin = new Thickness(5);
 
 editControl.Print();
 
@@ -155,7 +155,7 @@ editControl.Print();
 
 editcontrol.PrintSettings = New PrintSettings
 
-editcontrol.PrintSettings.PrintPageMargin = New Thickness(5)
+editcontrol.PrintSettings.PageMargin = New Thickness(5)
 
 editcontrol.Print
 
@@ -169,7 +169,7 @@ Page margin can be changed in print preview also by selecting from pre-defined p
 
 ## Setting Header and Footer
 
-EditControl provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting `PrintPageHeaderHeight` , `PrintPageHeaderHeight` , `PrintPageHeaderTemplate` , `PrintPageFooterHeight` , `PrintPageFooterTemplate` properties in `PrintSettings`.
+EditControl provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting `PageHeaderHeight` , `PageHeaderTemplate` , `PageFooterHeight` , `PageFooterTemplate` properties in `PrintSettings`.
 
 Steps to add page header while printing,
 
@@ -178,7 +178,7 @@ Steps to add page header while printing,
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-    <DataTemplate x:Key="PageHeaderTempalte">
+    <DataTemplate x:Key="pageHeaderTempalte">
         <Grid Background="Gray">
             <TextBlock Text="Syncfusion" 
                        FontSize="18" 
@@ -191,7 +191,7 @@ Steps to add page header while printing,
 {% endhighlight %}
 {% endtabs %}
 
-2.Set the above defined DataTemplate to `PrintSettings.PrintPageHeaderTemplate` and assign value for `PrintSettings.PrintPageHeaderHeight` property also.
+2.Set the above defined DataTemplate to `PrintSettings.PageHeaderTemplate` and assign value for `PrintSettings.PageHeaderHeight` property also.
 
 {% tabs %}
 
@@ -199,9 +199,9 @@ Steps to add page header while printing,
 
 editcontrol.PrintSettings = new PrintSettings();
 
-editcontrol.PrintSettings.PrintPageHeaderHeight = 30;
+editcontrol.PrintSettings.PageHeaderHeight = 30;
 
-editcontrol.PrintSettings.PrintPageHeaderTemplate = Application.Current.Resources["PageHeaderTempalte"] as DataTemplate;
+editcontrol.PrintSettings.PageHeaderTemplate = Application.Current.Resources["pageHeaderTempalte"] as DataTemplate;
 
 editcontrol.ShowPrintPreview();
 
@@ -211,9 +211,9 @@ editcontrol.ShowPrintPreview();
 
 editcontrol.PrintSettings = New PrintSettings
 
-editcontrol.PrintSettings.PrintPageHeaderHeight = 30
+editcontrol.PrintSettings.PageHeaderHeight = 30
 
-editcontrol.PrintSettings.PrintPageHeaderTemplate = CType(Application.Current.Resources("PageHeaderTemplate"),DataTemplate)
+editcontrol.PrintSettings.PageHeaderTemplate = CType(Application.Current.Resources("pageHeaderTemplate"),DataTemplate)
 
 editcontrol.ShowPrintPreview
 
@@ -221,20 +221,20 @@ editcontrol.ShowPrintPreview
 
 {% endtabs %}
 
-3.Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PrintPageFooterTemplate` also.
+3.Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PageFooterTemplate` also.
 
 ![](Printing_images/header.png)
 
 ### Printing Current Date time and Page number
 
-You can print current Date and Time at each page by setting the  `PrintPageFooterHeight`.
+You can print current Date and Time at each page by setting the  `PageFooterHeight`.
  
 You can get the page number from PrintPageControl.
 
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-    <DataTemplate x:Key="PageFooterTempalte">
+    <DataTemplate x:Key="pageFooterTempalte">
         <Grid>
             <TextBlock HorizontalAlignment="Center" 
                        FontSize="20" 
@@ -261,9 +261,9 @@ You can get the page number from PrintPageControl.
 
 editcontrol.PrintSettings = new PrintSettings();
 
-editcontrol.PrintSettings.PrintPageFooterHeight = 30;
+editcontrol.PrintSettings.PageFooterHeight = 30;
 
-editcontrol.PrintSettings.PrintPageFooterTemplate = Application.Current.Resources["PageFooterTempalte"] as DataTemplate;
+editcontrol.PrintSettings.PageFooterTemplate = Application.Current.Resources["pageFooterTempalte"] as DataTemplate;
 
 editcontrol.ShowPrintPreview();
 
@@ -273,9 +273,9 @@ editcontrol.ShowPrintPreview();
 
 editcontrol.PrintSettings = New PrintSettings
 
-editcontrol.PrintSettings.PrintPageHeaderHeight = 30
+editcontrol.PrintSettings.PageHeaderHeight = 30
 
-editcontrol.PrintSettings.PrintPageFooterTemplate = CType(Application.Current.Resources("PageFooterTemplate"),DataTemplate)
+editcontrol.PrintSettings.PageFooterTemplate = CType(Application.Current.Resources("pageFooterTemplate"),DataTemplate)
 
 editcontrol.ShowPrintPreview
 
