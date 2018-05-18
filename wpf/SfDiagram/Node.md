@@ -24,7 +24,43 @@ A Node can be created and added to the Diagram, either programmatically or inter
 ### Add Node through Nodes collection 
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram.
-For more, refer to  [Add Nodes](/wpf/sfdiagram/Getting-Started#simple Application:Add Nodes "Add Nodes"). 
+
+{% tabs %}
+{% highlight xaml %}
+<syncDiagram:SfDiagram.Nodes>
+    <!--Observable Collection of NodeViewModel-->
+    <syncDiagram:NodeCollection>
+        <!—Declaring the NodeViewModel-->
+        <syncDiagram:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120">                  
+        </syncDiagram:NodeViewModel>
+    </syncDiagram:NodeCollection>
+</syncDiagram:SfDiagram.Nodes>
+
+{% endhighlight %}
+{% highlight c# %}
+// Creating the NodeViewModel
+NodeViewModel Begin = new NodeViewModel()
+{
+    ID = "Begin",
+    UnitWidth = 120,
+    UnitHeight = 40,
+    OffsetX = 300,
+    OffsetY = 60,
+    //Specify shape to the Node from built-in Shape Dictionary
+    Shape = this.Resources["Ellipse"],
+    //Apply style to Shape
+    ShapeStyle = this.Resources["ShapeStyle"] as Style,
+};
+
+// Add Node to Nodes property of the Diagram
+(diagram.Nodes as NodeCollection).Add(Begin);
+
+{% endhighlight %}
+{% endtabs %} 
+
+Now,Node would be like this,
+
+![](Node_images\addNode.png)
 
 ### Add Node from stencil
 
