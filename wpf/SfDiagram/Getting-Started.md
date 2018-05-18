@@ -181,6 +181,7 @@ NodeViewModel Begin = new NodeViewModel()
 </ResourceDictionary>
 
 <syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120"/>
+  {% endhighlight %}
 
 {% highlight c# %} 
 NodeViewModel Begin = new NodeViewModel()
