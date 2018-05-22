@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Printing
+# Printing
 
 EditControl provides support to print the content displayed in the EditControl using `Print` method. 
 
@@ -59,11 +59,11 @@ Print preview window has Print and Quick Print Buttons which needs to be clicked
 
 ![](Printing_images/Print.png)
 
-1. Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
+**Step 1:** Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
 ![](Printing_images/msprint.png)
 
-2. Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
+**Step 2:** Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
 
 ## Print Settings
 
@@ -284,4 +284,3 @@ editcontrol.ShowPrintPreview
 {% endtabs %}
 
 ![](Printing_images/footer.png)
-
