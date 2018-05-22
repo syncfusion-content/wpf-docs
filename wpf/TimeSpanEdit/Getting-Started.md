@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting started
 
-This section describes how to design a `TimeSpanEdit` control in a WPF Forms application and overview of its basic functionalities.
+This section describes how to design a `TimeSpanEdit` control in a WPF application and overview of its basic functionalities.
 
 * Adding TimeSpanEdit control 
 * Structure of the TimeSpanEdit control
 * Appearance 
-* Properties  
-* Events 
+* Properties and Events
+
 
 ## Assembly deployment
 
@@ -55,7 +55,7 @@ Create a new WPF project in the Visual Studio to display the TimeSpanEdit with t
 
 ## Adding control via designer
 
-The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following assembly references will be added automatically:
+The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The below assembly added automatically in project:
 
 * Syncfusion.Shared.WPF.dll
 
@@ -66,7 +66,7 @@ The `TimeSpanEdit` control can be added to the application by dragging it from t
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+1. Add the below assembly to the project:
 	* Syncfusion.Shared.WPF.dll
 
 2. Include the namespace `Syncfusion.Windows.Shared`
@@ -134,7 +134,7 @@ The visual style can be applied for the TimeSpanEdit using the `VisualStyle` pro
 {% highlight Xaml %}
 
 <!--TimeSpanEdit Visual Style -->
-<syncfusion:TimeSpanEdit x:Name="Tiem1"  Width="200" Height="23"  Value="10.2:25:52"  syncfusion:SkinStorage.VisualStyle="Metro" />
+<syncfusion:TimeSpanEdit x:Name="Tiem1"  Width="200" Height="23"  Value="10.2:25:52"  syncfusion:SkinStorage.VisualStyle="Blend" />
 
 {% endhighlight %}
 
