@@ -11,15 +11,10 @@ documentation: ug
 
 This section describes how to design a `TimeSpanEdit` control in a WPF application and overview of its basic functionalities.
 
-* Adding TimeSpanEdit control 
-* Structure of the TimeSpanEdit control
-* Appearance 
-* Properties and Events
-
 
 ## Assembly deployment
 
-The below assembly should be added as references to use the TimeSpanEdit Control in application:
+The below assembly should be added as references to use the TimeSpanEdit Control in any application:
 
 <table>
 <tr>
@@ -55,10 +50,7 @@ Create a new WPF project in the Visual Studio to display the TimeSpanEdit with t
 
 ## Adding control via designer
 
-The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The below assembly added automatically in project:
-
-* Syncfusion.Shared.WPF.dll
-
+The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. **Syncfusion.Shared.WPF** assembly added automatically in project:
 
 ![](Getting-Started_images/img1.png) 
 
@@ -66,8 +58,7 @@ The `TimeSpanEdit` control can be added to the application by dragging it from t
 
 To add control manually in C#, follow the given steps:
 
-1. Add the below assembly to the project:
-	* Syncfusion.Shared.WPF.dll
+1. Add **Syncfusion.Shared.WPF** assembly to the project:
 
 2. Include the namespace `Syncfusion.Windows.Shared`
 
@@ -108,9 +99,9 @@ this.Content = timespan;
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-## Styling
+## Appearance
 
-The UI of TimeSpanEdit can be changed using different Styles.
+Appearance of TimeSpanEdit can be changed using different Styles.
 
 ### Visual Styles
 
@@ -131,14 +122,19 @@ The visual style can be applied for the TimeSpanEdit using the `VisualStyle` pro
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <!--TimeSpanEdit Visual Style -->
 <syncfusion:TimeSpanEdit x:Name="Tiem1"  Width="200" Height="23"  Value="10.2:25:52"  syncfusion:SkinStorage.VisualStyle="Blend" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
+
 //Set Visual Style
 SkinStorage.SetVisualStyle(timespan,"Blend");
 
@@ -201,7 +197,9 @@ SkinStorage.SetVisualStyle(timespan,"Blend")
 ![](Style-images/Transparent.png)
 
 
-## Properties
+## TimeSpanEdit members
+
+### Properties
 
 <table>
 <tr>
@@ -261,7 +259,7 @@ Any string</td></tr>
 </table>
 
 
-## Events
+### Events
 
 <table>
 <tr>
