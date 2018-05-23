@@ -203,16 +203,6 @@ N> ID sets for each node to identify nodes easily while setting connectors.
 #### Adding Annotation to node
    
  To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
- 
- {% highlight xaml %}
-  <!--To apply Style for AnnotationEditorViewModel-->
- <Style TargetType="syncfusion:AnnotationEditor">
- </Style>
- {% endhighlight %} 
-    
-N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
-    By default, `Annotations` property of Node and Connector is null.
-
  Now add the Annotation content to Node.
 
 {% tabs %}
@@ -253,6 +243,9 @@ N> `Annotations` property is a collection, which indicates that more than one An
 Now Node will be looks like,
  
 ![](Getting-Started_images\nodeAnnotation.PNG)
+
+N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
+    By default, `Annotations` property of Node and Connector is Empty.
  
 ### Nodes for Flow Diagram
 
