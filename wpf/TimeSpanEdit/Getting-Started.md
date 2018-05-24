@@ -94,6 +94,7 @@ this.Content = timespan;
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## Structure of the TimeSpanEdit control 
 
