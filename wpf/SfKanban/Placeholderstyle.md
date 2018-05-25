@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-#Placeholder
+# Placeholder
 
 Place holder is used to visualize the multiple categories in the Kanban column. It will appear while dragging the card over the column with multiple categories.
 
