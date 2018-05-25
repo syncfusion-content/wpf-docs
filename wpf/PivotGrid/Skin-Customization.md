@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 138-Skin-Customization
-description: 1.3.8 skin customization
+title: Skin Customization
+description: Skin customization
 platform: wpf
 control: PivotGridControl
 documentation: ug

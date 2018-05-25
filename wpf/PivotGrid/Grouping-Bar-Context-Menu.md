@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13432-Grouping-Bar-Context-Menu
-description: 1.3.4.3.2 grouping bar context menu
+title: Grouping Bar Context Menu
+description: Grouping bar context menu
 platform: wpf
 control: PivotGridControl
 documentation: ug

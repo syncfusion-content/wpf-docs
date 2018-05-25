@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13416-SerializationDeserialization
-description: 1.3.4.16 serialization/deserialization
+title: Serialization/Deserialization
+description: Serialization/deserialization
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -171,7 +171,7 @@ List of Properties which gets Serialized
 
 ## Using the Serialization/Deserialization in PivotGrid
 
-On Serialization, expand and collapse state of PivotGrid cells are maintained. So while de-serializing, the item source specified for the Grid should be as same as that when used in Serialization. This can be ignored by setting IgnoreExpandCollapseOnSerialization property of PivotGrid control to False.
+On Serialization, expand, and collapse state of PivotGrid cells are maintained. So while de-serializing, the item source specified for the Grid should be as same as that when used in Serialization. This can be ignored by setting IgnoreExpandCollapseOnSerialization property of PivotGrid control to False.
 
 The following are the methods which has been used in PivotGrid for serialization/deserialization.
 

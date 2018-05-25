@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotGrid-Getting-Started
-description: pivotgrid getting started
+title: PivotGrid Getting Started
+description: Pivotgrid getting started
 platform: wpf
 control: PivotGridControl
 documentation: ug

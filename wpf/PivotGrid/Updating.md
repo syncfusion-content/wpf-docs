@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 1346-Updating
-description: 1.3.4.6 updating
+title: Updating Values in PivotGrid
+description: Updating values in pivotgrid
 platform: wpf
 control: PivotGridControl
 documentation: ug
 ---
 
-# Updating
+# Updating Values in PivotGrid
 
 PivotGrid provides support to update the values in PivotGrid in real-time and it can be achieved through the `EnableUpdating` property. While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
 
@@ -16,7 +16,7 @@ PivotGrid provides support to update the values in PivotGrid in real-time and it
 
 The `EnableUpdating` property can be mentioned either in *XAML* or in *Code-Behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -41,7 +41,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

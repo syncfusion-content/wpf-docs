@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SubTotals For Child Elements
-description: SubTotals For Child Elements 
+description: SubTotals for child elements
 platform: wpf
 control: PivotGrid
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 By default, PivotGrid will calculate summaries based on the parent nodes available in rows and columns. But now, we can also display subtotals based on the child elements available in rows and columns using `ShowSubTotalsForChildren` property. The property can be set either through *XAML* or through *code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -34,7 +34,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through **code-behind**, please refer the below code sample.
+For **code-behind**, refer to the following code sample.
 
 {% highlight C# %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 132-PivotComputationInfo
-description: 1.3.2 pivotcomputationinfo
+title: PivotComputationInfo
+description: Pivotcomputationinfo
 platform: wpf
 control: PivotGridControl
 documentation: ug

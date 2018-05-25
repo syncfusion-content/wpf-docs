@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Support to improve the scrolling performance
-description: Support to improve the scrolling performance
+title: Scrolling performance of PivotGrid
+description: Scrolling performance of pivotgrid
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-# Improved (Deferred) Scrolling
+# Scrolling performance
 
 Support has been provided to improve the scrolling performance of PivotGrid by updating the data (in the PivotGrid) only when the user releases the thumb on scrolling. It can be achieved by `EnableDeferredScrolling` property of PivotGrid control.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -36,7 +36,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

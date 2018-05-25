@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Disable-Grouping-by-Specific-Fields
-description: disable grouping by specific fields 
+title: Prevent Grouping of Specific PivotItem
+description: Prevent grouping of specific PivotItem in pivotgrid
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-# Disable Grouping by Specific Fields
+# Prevent Grouping of Specific PivotItem
 
 PivotGrid control allows to prevent the drag and drop of certain PivotItems either in PivotSchemaDesigner or Grouping Bar.
 

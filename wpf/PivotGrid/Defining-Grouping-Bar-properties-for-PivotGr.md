@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13431-Defining-Grouping-Bar-properties-for-PivotGrid
-description:      1.3.4.3.1 defining grouping bar properties for pivotgridcontrol
+title: Defining Grouping Bar properties for PivotGrid
+description: Defining grouping bar properties for pivotgrid control
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Grouping Bar also allows to perform sorting, filtering and summarizing the data in the way user wants at run time. Each Grouping Bar item contains:
+Grouping Bar allows to perform sorting, filtering and summarizing the data in the way user wants at run time. Each Grouping Bar item contains:
 
 * A **caption** string which identifies the fields content.
 * A **filter button** which end-users can use to filter field values.

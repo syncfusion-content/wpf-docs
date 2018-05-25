@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1341-Filtering
-description: 1.3.4.1 filtering
+title: Filtering
+description: Filtering
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -19,10 +19,10 @@ Properties
 
 * **Expression** - Gets or sets the well-formed logical expression that defines this FilterExpression.
 * **Name** - Gets or sets the name of this FilterExpression.
-* **DimensionName** - Gets or sets the dimension name for filter expression
-* **DimensionHeader** - Gets or sets the dimension header for filter expression
-* **Format** - Gets or sets the format of filter expression
-* **Evaluator** - Used to evaluate the given value
+* **DimensionName** - Gets or sets the dimension name for filter expression.
+* **DimensionHeader** - Gets or sets the dimension header for filter expression.
+* **Format** - Gets or sets the format of filter expression.
+* **Evaluator** - Used to evaluate the given value.
 
 ### Defining Filters in XAML
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 131-Pivot-Item
-description: 1.3.1 pivot item
+title: Pivot Item
+description: Pivot item
 platform: wpf
 control: PivotGridControl
 documentation: ug

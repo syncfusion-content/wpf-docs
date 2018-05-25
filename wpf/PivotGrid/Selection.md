@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1349-Selection
-description: 1.3.4.9 selection
+title: Selection
+description: Selection process in pivotgrid
 platform: wpf
 control: PivotGridControl
 documentation: ug

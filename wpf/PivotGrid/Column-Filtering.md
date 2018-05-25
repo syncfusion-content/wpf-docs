@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 1352-Column-Filtering
-description:  1.3.5.2 column filtering
+title: Column Filtering in PivotGrid
+description: Column filtering in PivotGrid
 platform: wpf
 control: PivotGridControl
 documentation: ug
 ---
 
-# Filtering
+# Column Filtering
 
 PivotGrid allows you to restrict the display of records by using a mechanism called filter. A filter enables you to extract a subset of records that meet certain criteria.
 
@@ -25,7 +25,7 @@ To do so, define the PivotGrid control in RowPivotsOnly mode. Add the respective
 
 Create the dictionary using `Dictionary` class and add the PivotItems which are to be filtered. Invoke the `ApplySavedValueFilter()` method for applying filters.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13426-GetRawItem
-description: 1.3.4.26 getrawitem
+title: GetRawItem
+description: Define GetRawItemFor method
 platform: wpf
 control: PivotGridControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 136-PivotSchemaDesigner-for-WPF
-description: 1.3.6 pivotschemadesigner for wpf
+title: PivotSchemaDesigner for pivot grid
+description: Pivotschemadesigner for pivot grid
 platform: wpf
 control: PivotGridControl
 documentation: ug

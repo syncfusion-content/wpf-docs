@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 13420-Runtime-Custom-Summary
-description: 1.3.4.20 runtime custom summary
+title: Custom Summary
+description: Define custom summary in runtime and load time
 platform: wpf
 control: PivotGridControl
 documentation: ug
 ---
 
-# Custom Summary (Runtime)
+# Custom Summary
 
 PivotGrid enables us to set the custom summaries for the PivotItem values at both load time and runtime (using PivotComputationInfo dialog).
 
@@ -80,7 +80,7 @@ public class MyCustomSummaryBase2: SummaryBase {
 
 We can define our own custom SummaryBase to PivotCalculations in PivotGrid by setting the instance of the custom summary in `Summary` property. And this custom summary can be used only if we set `SummaryType` of that PivotCalculation as "Custom". It can be done through *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -112,7 +112,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

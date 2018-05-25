@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13421-State-Persistence
-description: 1.3.4.21 state persistence
+title: State Persistence
+description: State persistence
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 PivotGrid allows us to maintain the collapsed or expanded state when the corresponding schema items changed. This can be achieved using the `StatePersistence` property of the PivotGrid control.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -36,7 +36,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

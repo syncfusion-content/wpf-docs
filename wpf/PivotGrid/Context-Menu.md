@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1356-Context-Menu
-description:  1.3.5.6 context menu
+title: Context Menu
+description: Context menu
 platform: wpf
 control: PivotGridControl
 documentation: ug

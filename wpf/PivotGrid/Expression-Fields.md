@@ -13,7 +13,7 @@ PivotGrid provides support to add expression fields and handles other features s
 
 * **LoadWithDefaultPropertyFields** - Gets or sets a value indicating whether PivotGrid control load with default property fields for expression support.
 
-This property can be defined either in *XAML* and *Code-behind*. If through *XAML*, please refer the below code sample.
+This property can be defined either in *XAML* and *Code-behind*. For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -37,7 +37,7 @@ This property can be defined either in *XAML* and *Code-behind*. If through *XAM
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -84,7 +84,7 @@ public partial class MainWindow: Window {
 
 `FieldInfo` class is used to create the expression fields which will be added in the `AllowedFields` collection of PivotGrid control. It can be done either in *XAML* or in *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -112,7 +112,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through **Code-behind**, please refer the below code sample.
+For **Code-behind**, refer to the following code sample.
 
 {% highlight C# %}
 

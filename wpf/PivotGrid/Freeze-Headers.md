@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13410-Freeze-Headers
-description: 1.3.4.10 freeze headers
+title: Freeze Headers
+description: Freeze headers
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -13,7 +13,7 @@ PivotGrid provides built-in support for freezing column and row headers for the 
 
 The `FreezeHeaders` property in PivotGrid control is used to achieve the same. It can be mentioned either in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -37,7 +37,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.s
 
 {% highlight C# %}
 

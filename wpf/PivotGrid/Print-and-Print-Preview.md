@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 13414-Print-and-Print-Preview
+title: Print and Print Preview
 description: print and print preview
 platform: wpf
 control: PivotGridControl

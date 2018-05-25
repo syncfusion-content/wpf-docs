@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 13419-PivotGrid-Field-List
-description: 1.3.4.19 pivotgrid field list
+title: PivotGrid Field List
+description: Pivotgrid field list
 platform: wpf
 control: PivotGridControl
 documentation: ug

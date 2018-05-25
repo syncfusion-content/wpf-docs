@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1357-Pivot-Value-Chooser
-description:  1.3.5.7 pivot value chooser
+title: Pivot Value Chooser
+description: Pivot value chooser
 platform: wpf
 control: PivotGridControl
 documentation: ug

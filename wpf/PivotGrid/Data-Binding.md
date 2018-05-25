@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 133-Data-Binding
-description: 1.3.3 Data Binding
+title: Data Binding
+description: Binding PivotGrid to List and DataTable
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -40,7 +40,7 @@ public static DataView GetOrderDetails() {
 
 Then bind the DataSet as ItemSource to the PivotGrid by invoking the appropriate method. It can be done through *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -68,7 +68,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if, through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

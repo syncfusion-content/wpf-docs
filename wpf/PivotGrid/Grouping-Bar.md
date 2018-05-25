@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 1343-Grouping-Bar
-description: 1.3.4.3 grouping bar
+title: Grouping Bar
+description: Grouping bar
 platform: wpf
 control: PivotGridControl
 documentation: ug
@@ -18,7 +18,7 @@ Grouping Bar allows you to slice and dice the fields between column, row, value 
 
 By default, Grouping Bar is enabled in PivotGrid control. We can show or hide the Grouping Bar by using the `ShowGroupingBar` property of PivotGrid control. It can be done both in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -36,7 +36,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if, through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

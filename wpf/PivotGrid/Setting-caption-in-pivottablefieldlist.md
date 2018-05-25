@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting caption in PivotTableFieldList.
-description: Setting caption in PivotTableFieldList.
+title: Setting caption in PivotTableFieldList
+description: Setting caption in PivotTableFieldList
 platform: wpf
 control: PivotGridControl
 documentation: ug

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 1342-GroupinBar-Sorting-events
-description: 1.3.4.2 sorting events
+title: Sorting events
+description: Sorting events in pivotgrid
 platform: wpf
 control: PivotGridControl
 documentation: ug
 ---
 
-# Sort Events
+# Sorting Events
 
-PivotGrid provides certain sort events to keep track of the sorted value fields, which could be invoked before and after the sort operation.
+PivotGrid provides certain sorting events to keep track of the sorted value fields, which could be invoked before and after the sort operation.
 
 * **SortBegin** - An event that notifies before the sorting action begins and returns the index or position of value fields with its corresponding values in PivotGrid.
 * **SortCompleted** - An event that notifies after the sort option completed and returns the index or position of the sorted value fields with its corresponding values in PivotGrid.
