@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Storing and Retrieving Report as Stream| OLAP Client  | Wpf | Syncfusion
-description: storing and retrieving report as stream
+title: Storing and Retrieving Report as Stream
+description: Storing and retrieving report as stream
 platform: wpf
-control: OLAP Client 
+control: OLAP Client
 documentation: ug
 ---
 
