@@ -9,9 +9,9 @@ documentation: ug
 
 # Placeholder
 
-Place holder is used to visualize the multiple categories in the Kanban column. It will appear while dragging the card over the column with multiple categories.
+The placeholder is used to visualize multiple categories in the Kanban column. It will appear while dragging a card over the column with multiple categories.
 
-### Placeholder Style
+### Placeholder style
 
 [`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
 
