@@ -7,9 +7,13 @@ control: SfKanban
 documentation: ug
 ---
 
-# Placeholder Style
+#Placeholder
 
-* [`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+Place holder is used to visualize the multiple categories in the Kanban column. It will appear while dragging the card over the column with multiple categories.
+
+### Placeholder Style
+
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
 
 * [`Fill`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Fill.html)  	 - This property is used to change the background color of the placeholder.
 * [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Stroke.html) 	 	 - This property is used to change the border color of the placeholder.
