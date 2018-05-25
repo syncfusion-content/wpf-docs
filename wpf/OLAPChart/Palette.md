@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Palette| OlapChart | Wpf | Syncfusion
-description: Palette
+title: Chart Palette
+description: Chart palette
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
-# Palette
+# Chart Palette
 
 Chart Palette is a pre-defined collection of a set of colors that can be applied to a chart series. OlapChart comes with a support of 23 chart palette, which can be used to provide a rich look for your business applications.
 
-The available palettes in the OlapChart control are as follows:      
+The available palettes in the OlapChart control are as follows:
 
 * Default
 * DefaultAlpha

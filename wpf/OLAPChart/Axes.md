@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axes| OlapChart | Wpf | Syncfusion
-description: Axes
+title: Axes of OLAP Area
+description: Axes of OLAP Area
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
-# Axes
+# Axes of OLAP Area
 
 OlapArea contains a minimum of two axes namely primary axis and secondary axis in an OlapChart control. Values or data in the Chart are plotted against these axes.
 

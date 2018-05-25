@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting| OlapChart | Wpf | Syncfusion
-description: Exporting
+title: Exporting of OLAP Chart
+description: Exporting of OLAP Chart into image and document format
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
-# Exporting
+# Exporting of OLAP Chart
 
 OlapChart can be exported into various image and document formats. The following topics illustrate this in detail:
 

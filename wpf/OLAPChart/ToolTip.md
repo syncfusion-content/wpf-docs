@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tooltip| OlapChart | Wpf | Syncfusion
+title: Tooltip
 description: Tooltip
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
