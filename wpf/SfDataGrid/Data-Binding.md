@@ -797,6 +797,6 @@ By default, scrollPosition is not maintained and gets reset, when changing items
                         ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
 {% highlight c# %}
-datagrid.CanMaintainScrollPosition = true;
+dataGrid.CanMaintainScrollPosition = true;
 {% endhighlight %}
 {% endtabs %}
