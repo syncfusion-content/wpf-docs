@@ -3,7 +3,7 @@ layout: post
 title: State Persistence
 description: State persistence
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

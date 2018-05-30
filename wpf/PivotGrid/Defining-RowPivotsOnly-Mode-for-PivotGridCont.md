@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RowPivotsOnly Mode in PivotGrid control
-description: Defining rowpivotsonly mode for pivotgrid control
+title: RowPivotsOnly Mode in Pivot Grid control
+description: Defining rowpivotsonly mode for pivot grid control
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

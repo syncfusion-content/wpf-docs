@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Visibility of GroupingBar in Specific Area
-description: Customize the visibility of groupingbar in specific area
+title: Visibility of Grouping Bar in Specific Area
+description: Customize the visibility of grouping bar in specific area
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 

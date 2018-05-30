@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Selection
-description: Selection process in pivotgrid
+description: Selection process in pivot grid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ PivotGrid provides support to select entire row or column as well as group of ce
 
 The `AllowSelection` property can be used to achieve selection behavior in PivotGrid. It can be done either through *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -40,7 +40,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

@@ -3,7 +3,7 @@ layout: post
 title: Multi-Column Sorting
 description: Multi-column sorting
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

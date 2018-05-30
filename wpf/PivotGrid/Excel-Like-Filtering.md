@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Excel like Filtering
-description: Excel like filtering
+title: Excel-like Filtering
+description: Excel-like filtering
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

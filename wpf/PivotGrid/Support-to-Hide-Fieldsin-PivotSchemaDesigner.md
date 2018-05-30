@@ -3,7 +3,7 @@ layout: post
 title: Hiding Fields in PivotSchemaDesigner
 description: Hiding fields in pivotschemadesigner
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

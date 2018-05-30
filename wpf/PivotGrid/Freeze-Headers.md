@@ -3,7 +3,7 @@ layout: post
 title: Freeze Headers
 description: Freeze headers
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Custom Summary
 description: Define custom summary in runtime and load time
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

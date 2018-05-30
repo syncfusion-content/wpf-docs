@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Column Filtering in PivotGrid
-description: Column filtering in PivotGrid
+title: Column Filtering in Pivot Grid
+description: Column filtering in pivot grid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

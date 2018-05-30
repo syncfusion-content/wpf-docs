@@ -3,7 +3,7 @@ layout: post
 title: Virtualized Binding with Improved Performance
 description: Virtualized binding with improved performance
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

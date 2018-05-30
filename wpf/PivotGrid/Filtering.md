@@ -3,7 +3,7 @@ layout: post
 title: Filtering
 description: Filtering
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

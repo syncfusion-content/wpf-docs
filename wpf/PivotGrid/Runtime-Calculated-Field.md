@@ -3,7 +3,7 @@ layout: post
 title: Calculated Field
 description: To insert calculated field at run-time
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

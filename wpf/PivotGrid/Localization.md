@@ -3,7 +3,7 @@ layout: post
 title: Localization of string resource
 description: Localization of string resource
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

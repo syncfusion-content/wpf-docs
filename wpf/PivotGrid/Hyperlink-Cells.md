@@ -3,7 +3,7 @@ layout: post
 title: Hyperlink Cells
 description: Hyperlink cells
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

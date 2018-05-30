@@ -3,7 +3,7 @@ layout: post
 title: Restrict Auto Resizing of Row Header
 description: Restrict auto resizing of row header
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

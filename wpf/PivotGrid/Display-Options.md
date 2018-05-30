@@ -3,7 +3,7 @@ layout: post
 title: Display Options
 description: Display options for calculation values in pivotgrid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ToolTip
+title: Tooltip
 description: Tooltip
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

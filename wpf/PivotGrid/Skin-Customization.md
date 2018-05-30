@@ -3,7 +3,7 @@ layout: post
 title: Skin Customization
 description: Skin customization
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

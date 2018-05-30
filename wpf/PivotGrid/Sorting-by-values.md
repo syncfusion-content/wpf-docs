@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Sorting by values
+title: Sorting by Values
 description: Sorting by values
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

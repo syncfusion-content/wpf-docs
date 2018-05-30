@@ -3,7 +3,7 @@ layout: post
 title: Conditional Formatting
 description: Conditional formatting
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

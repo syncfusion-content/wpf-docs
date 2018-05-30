@@ -3,7 +3,7 @@ layout: post
 title: Sorting
 description: Sorting
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sorting in PivotGrid
-description: Column sorting in PivotGrid
+title: Column Sorting in Pivot Grid
+description: Column sorting in pivot grid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Column Sorting
+# Column Sorting in Pivot Grid
 
 PivotGrid control provides sorting option for the calculation columns in PivotGrid in RowPivotsOnly mode. This can be enabled or disabled using `AllowSort` property of `PivotComputationInfo` in PivotGrid control.
 

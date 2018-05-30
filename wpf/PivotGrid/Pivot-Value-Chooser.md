@@ -3,7 +3,7 @@ layout: post
 title: Pivot Value Chooser
 description: Pivot value chooser
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

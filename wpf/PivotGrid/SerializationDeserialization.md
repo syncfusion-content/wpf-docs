@@ -3,7 +3,7 @@ layout: post
 title: Serialization/Deserialization
 description: Serialization/deserialization
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

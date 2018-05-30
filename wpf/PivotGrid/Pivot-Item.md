@@ -3,11 +3,11 @@ layout: post
 title: Pivot Item
 description: Pivot item
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# PivotItem
+# Pivot Item
 
 A PivotItem is a container for items in PivotGrid control. An item in a PivotTable field which provides the information needed to define an item. The items are individual data entries in a field category. The PivotItem object is a member of PivotItems collection. It consists of the following fields.
 

@@ -3,7 +3,7 @@ layout: post
 title: GetRawItem
 description: Define GetRawItemFor method
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

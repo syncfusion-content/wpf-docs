@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resizing the PivotGrid
-description: Resizing the pivotgrid to fit its content
+title: Resizing the Pivot Grid
+description: Resizing the pivot grid to fit its content
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# PivotGrid Resizing
+# Resizing the Pivot Grid
 
 PivotGrid provides support for resizing the Grid to fit its content while expanding and collapsing the groups. The Grid will be resized after refreshing the page.
 

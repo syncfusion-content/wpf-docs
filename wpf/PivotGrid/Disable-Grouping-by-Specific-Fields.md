@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Prevent Grouping of Specific PivotItem
-description: Prevent grouping of specific PivotItem in pivotgrid
+description: Prevent grouping of specific PivotItem in pivot grid
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 

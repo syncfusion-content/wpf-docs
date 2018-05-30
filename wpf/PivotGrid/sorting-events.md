@@ -3,7 +3,7 @@ layout: post
 title: Sorting events
 description: Sorting events in pivotgrid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

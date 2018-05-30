@@ -3,7 +3,7 @@ layout: post
 title: Grand Total Row Visibility
 description: Grand Total Row Visibility
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 

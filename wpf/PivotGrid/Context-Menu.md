@@ -3,7 +3,7 @@ layout: post
 title: Context Menu
 description: Context menu
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

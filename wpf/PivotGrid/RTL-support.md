@@ -3,7 +3,7 @@ layout: post
 title: RTL Support
 description: RTL support
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

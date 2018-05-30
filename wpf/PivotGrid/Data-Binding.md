@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Data Binding
-description: Binding PivotGrid to List and DataTable
+description: Binding pivot grid to list and DataTable
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

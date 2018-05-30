@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export Option in PivotGrid
-description: Export the contents to various formats in pivotgrid
+title: Export Option in Pivot Grid
+description: Export the contents to various formats in pivot grid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Export
+# Export Option in Pivot Grid
 
 PivotGrid provides an option to export its content to various formats. It provides the following exporting options.
 

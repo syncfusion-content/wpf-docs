@@ -3,7 +3,7 @@ layout: post
 title: Grouping Bar Context Menu
 description: Grouping bar context menu
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

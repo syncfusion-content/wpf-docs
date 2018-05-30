@@ -3,7 +3,7 @@ layout: post
 title: Asynchronous Data Loading
 description: Asynchronous data loading
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

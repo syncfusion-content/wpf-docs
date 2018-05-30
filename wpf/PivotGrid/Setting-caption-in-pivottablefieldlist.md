@@ -3,11 +3,11 @@ layout: post
 title: Setting caption in PivotTableFieldList
 description: Setting caption in PivotTableFieldList
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Setting caption in PivotTableFieldList
+# Setting Caption in PivotTableFieldList
 
 PivotGrid provides support to duplicate the same fields in different names. It can be achieved by using the `FieldCaption` property of PivotItem and PivotComputationInfo. This support allows you to define multiple items in same underlying type for PivotGridControl.
 

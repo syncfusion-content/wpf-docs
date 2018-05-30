@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display calculations in column and row
+title: Display Calculations in Column and Row
 description: Display calculations in column and row
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Displaying Calculations in Column and Row
+# Display Calculations in Column and Row
 
 PivotGrid provides support to show the calculation values either in column or in row. It can be achieved either by using the `ShowCalculationsAsColumns` property of PivotGrid control or through simple uncheck/check option in PivotSchemaDesigner.
 

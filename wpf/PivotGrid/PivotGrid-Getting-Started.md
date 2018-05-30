@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotGrid Getting Started
-description: Pivotgrid getting started
+title: Pivot Grid Getting Started
+description: Pivot grid getting started
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Creating a simple application with PivotGrid
+# Creating a simple application with Pivot Grid
 
 ## Adding PivotGrid through Designer
 

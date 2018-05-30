@@ -3,7 +3,7 @@ layout: post
 title: Expression Fields
 description: Expression Fields
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 

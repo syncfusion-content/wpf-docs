@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Styles and Templates for grid cells
+title: Styles and Templates for Grid Cells
 description: Styles and templates for grid cells
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

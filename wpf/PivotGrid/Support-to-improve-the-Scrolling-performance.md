@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling performance of PivotGrid
-description: Scrolling performance of pivotgrid
+title: Scrolling Performance of Pivot Grid
+description: Scrolling performance of pivot grid
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 
-# Scrolling performance
+# Scrolling Performance
 
 Support has been provided to improve the scrolling performance of PivotGrid by updating the data (in the PivotGrid) only when the user releases the thumb on scrolling. It can be achieved by `EnableDeferredScrolling` property of PivotGrid control.
 

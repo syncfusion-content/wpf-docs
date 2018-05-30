@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Inner Most Computations
-description: Display inner most computations
+description: Display grid with inner most computations
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Display Inner Most Computations
+# Inner Most Computations
 
 PivotGrid supports to display the Grid with inner most computations alone, without displaying the total values.
 

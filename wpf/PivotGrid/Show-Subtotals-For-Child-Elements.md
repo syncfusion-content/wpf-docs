@@ -3,7 +3,7 @@ layout: post
 title: SubTotals For Child Elements
 description: SubTotals for child elements
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 

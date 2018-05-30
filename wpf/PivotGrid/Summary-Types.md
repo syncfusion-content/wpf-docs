@@ -3,7 +3,7 @@ layout: post
 title: Summary Types
 description: Summary types
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

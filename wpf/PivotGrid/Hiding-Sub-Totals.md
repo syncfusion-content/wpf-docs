@@ -3,7 +3,7 @@ layout: post
 title: Hiding Sub-Totals
 description: Hiding sub-totals
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

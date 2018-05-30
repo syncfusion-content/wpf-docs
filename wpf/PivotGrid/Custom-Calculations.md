@@ -3,7 +3,7 @@ layout: post
 title: Custom Calculations
 description: Custom calculations
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
