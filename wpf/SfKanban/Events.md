@@ -67,8 +67,8 @@ This event is triggered when a card leaves a column while dragging. The argument
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html)         - Used to get the index of the card in source column.
 * [`LeftColumn`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~LeftColumn.html)		- Used to get the column from which the card leaves.
 * [`PreviousCardIndex`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~PreviousCardIndex.html)   -   used to get the index of the card left.
-* [`SelectedColumnIndex`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumnIndex.html) - Used to get the index of dragging card's swimlane column.
-* [`SelectedRowIndex`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedRowIndex.html) - Used to get the index of dragging card's swimlane row.
+* [`SelectedColumnIndex`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumnIndex.html) - Used to get the index of dragging card's column.
+* [`SelectedRowIndex`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedRowIndex.html) - Used to get the index of dragging card's row.
 
 ## CardDragOver
 
