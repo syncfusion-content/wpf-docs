@@ -788,7 +788,7 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### Maintain scroll position when changing the ItemsSource for SfDataGrid
 
-By default, scrollPosition is not maintained and gets reset, when changing itemsSource of grid. But you can maintain the scrollPosition of SfDataGrid, by setting [SfDataGrid.CanMaintainScrollPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanMaintainScrollPosition.html) value to `true`.
+By default, scrollposition is not maintained and gets reset, when changing the ItemsSource of SfDataGrid. But you can maintain the scrollposition of SfDataGrid, by setting [SfDataGrid.CanMaintainScrollPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanMaintainScrollPosition.html) value to `true`.
 
 {% tabs %}
 {% highlight xaml %}
