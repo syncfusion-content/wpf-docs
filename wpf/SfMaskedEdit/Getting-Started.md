@@ -40,7 +40,7 @@ The following code example shows how to create the `SfMaskedEdit` from XAML.
 {% endtabs %}
 
 
-## Adding control manually in CSharp
+## Adding control manually in C Sharp
 
 To create a MaskedEdit control, use the following code.
 

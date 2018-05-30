@@ -48,7 +48,7 @@ Example: Date
 
 Mask = "00/00/0000";
 
-In the above example, we can create Mask for Date  ("dd/mm/yyyy") format. It will accept only digits. So that element ‘0’ is used and the literal ‘/’ is used.
+In the above example, we can create Mask for Date  ("dd/mm/yyyy") format. It will accept only digits. So that element '0' is used and the literal '/' is used.
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ Example: Phone Number
 
 Mask = "(d{3})-\d{3}-\d{4}"
 
-In the above example, we can create a mask for Phone Number("(123)-456-7890"). It will accept only digits. So that element ‘d’ is used. Mobile Number has fixed size. So that element ‘{}’ is used and the literal ‘()’ and ‘-‘ is used.
+In the above example, we can create a mask for Phone Number("(123)-456-7890"). It will accept only digits. So that element 'd' is used. Mobile Number has fixed size. So that element '{}' is used and the literal '()' and '-' is used.
 
 
 {% tabs %}
@@ -112,7 +112,7 @@ Example : Email ID
 
 Mask ="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}"
 
-In the above example, we can create a mask for Mail ID. It will accept both alphabets and digits. So that element ‘A-Za-z0-9’ is used. For accepting any number of characters  element ‘[ ]’ is used and the literal ‘@’ and ‘.’ is used.
+In the above example, we can create a mask for Mail ID. It will accept both alphabets and digits. So that element `A-Z a-z 0-9` is used. For accepting any number of characters  element '[ ]' is used and the literal '@' and '.' is used.
 
 {% tabs %}
 
@@ -195,8 +195,8 @@ Occurs when the value of the `Value` property is changed by either entering the 
 
 {% highlight C# %}
 
-SfMaskedEdit sfmaskedEdit = new SfMaskedEdit();	
-sfmaskedEdit.ValueChanged += SfMaskedEdit_ValueChanged;
+SfMaskedEdit maskededit = new SfMaskedEdit();	
+maskededit.ValueChanged += SfMaskedEdit_ValueChanged;
 
 private void SfMaskedEdit_ValueChanged(object sender, EventArgs e)
 {

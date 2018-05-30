@@ -235,7 +235,7 @@ Accepts any digit. Same as [0-9].</td></tr>
 <tr>
 <td>
 \D</td><td>
-Accepts any nondigit. Same as [^0-9].</td></tr>
+Accepts any non digit. Same as [^0-9].</td></tr>
 <tr>
 <td>
 \w</td><td>
@@ -243,7 +243,7 @@ Accepts any  word character. \w is the same as [a-zA-Z_0-9].</td></tr>
 <tr>
 <td>
 \W</td><td>
-Accepts any  nonword character. \W is the same as [^a-zA-Z_0-9].</td></tr>
+Accepts any  non word character. \W is the same as [^a-zA-Z_0-9].</td></tr>
 <tr>
 <td>
 \s</td><td>
@@ -271,7 +271,7 @@ Accepts the input for n number of times.</td></tr>
 <tr>
 <td>
 {n,}</td><td>
-Accepts the input for atleast n number of times.</td></tr>
+Accepts the input for 'n' and more than 'n' number of times. </td></tr>
 <tr>
 <td>
 {n,m}</td><td>
@@ -318,6 +318,7 @@ maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 {% endtabs %}
 
 ![](MaskOptions_images/mask_option_image5.jpg)
+
 
 
 

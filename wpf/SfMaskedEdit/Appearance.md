@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearence | SfMaskedEdit | Wpf | Syncfusion
-description: Appearence of SfMaskedEdit
+title: Appearance | SfMaskedEdit | Wpf | Syncfusion
+description: Appearance of SfMaskedEdit
 platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
-# Appearence
+# Appearance
 
 The appearance of the `SfMaskedEdit` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` property
 
