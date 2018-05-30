@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tool Bars
-description: Tool bars in OLAP Client
+title: Toolbars
+description: Toolbars in OLAP Client
 platform: wpf
 control: OLAP Client 
 documentation: ug
 ---
 
-# Tool Bars
+# Toolbars
 
 Three toolbars are there in OLAP Client to provide the number of options to perform the different operations.
 
