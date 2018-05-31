@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 1344-Hiding-Sub-Totals
-description: 1.3.4.4 hiding sub-totals
+title: Hiding Sub-Totals
+description: Hiding sub-totals
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
@@ -20,7 +20,7 @@ The sub-total hiding feature is used to show or hide sub-totals in PivotGrid. It
 
 The `ShowSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -44,7 +44,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -93,7 +93,7 @@ public partial class MainWindow: Window {
 
 The `ShowRowSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -117,7 +117,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -166,7 +166,7 @@ public partial class MainWindow: Window {
 
 The `ShowColumnSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -190,7 +190,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -239,7 +239,7 @@ public partial class MainWindow: Window {
 
 It can be achieved by setting the `ShowSubTotal` property to false for the specific PivotItem and it can be mentioned either in *XAML* or *Code-behind*. Note that when `ShowSubTotals` property is set to false and setting this property will do nothing.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight XAML %}
 
@@ -263,7 +263,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
- Else if through *Code-behind*, please refer the below code sample.
+ For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

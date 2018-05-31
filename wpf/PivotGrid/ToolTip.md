@@ -1,21 +1,21 @@
 ---
 layout: post
-title: 13413-ToolTip
-description: 1.3.4.13 tooltip
+title: Tooltip
+description: Tooltip
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
 # Tooltip
 
-Tooltip holds the respective cell value and its row and column information. It can be enabled or disabled using the `TooltipEnabled` boolean property. User can customize the tooltip skin at the sample level and also can set custom text.
+Tooltip holds the respective cell value and its row and column information. It can be enabled or disabled using the `TooltipEnabled` Boolean property. User can customize the tooltip skin at the sample level and also can set custom text.
 
 ## Adding Tooltip for entire PivotGrid
 
 The `ToolTipEnabled` property can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-Behind*.
 
-If through *XAML*, please refer the below code snippet.
+For *XAML*, refer to the following code snippet.
 
 {% highlight xaml %}
 
@@ -40,7 +40,7 @@ If through *XAML*, please refer the below code snippet.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code snippet.
+For *Code-behind*, refer to the following code snippet.
 
 {% highlight C# %}
 

@@ -3,7 +3,7 @@ layout: post
 title: Overview
 description: overview 
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
