@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grand Total Row Visibility
-description: Grand Total Row Visibility
+description: Grand total row visibility in RowPivotsOnly mode
 platform: wpf
 control: Pivot grid
 documentation: ug
