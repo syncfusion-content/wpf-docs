@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started| OlapClient  | Wpf | Syncfusion
-description: getting started
+title: Getting Started
+description: Getting started
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 

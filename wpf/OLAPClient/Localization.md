@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | OlapClient  | Wpf | Syncfusion
-description: localization
+title: Localization of string resource
+description: Localization of string resource in OLAP Client
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
-# Localization
+# Localization of string resource
 
 Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by OlapClient control.
 

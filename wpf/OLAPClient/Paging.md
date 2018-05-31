@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Paging| OlapClient  | Wpf | Syncfusion
-description: paging
+title: Paging
+description: Paging
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
