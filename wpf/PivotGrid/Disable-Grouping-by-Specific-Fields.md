@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Prevent Grouping of Specific PivotItem
-description: Prevent grouping of specific PivotItem in pivot grid
+title: Prevent Grouping of Specific Pivot Item
+description: Prevent grouping of specific pivot item in pivot grid
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Prevent Grouping of Specific PivotItem
+# Prevent Grouping of Specific Pivot Item
 
 PivotGrid control allows to prevent the drag and drop of certain PivotItems either in PivotSchemaDesigner or Grouping Bar.
 
