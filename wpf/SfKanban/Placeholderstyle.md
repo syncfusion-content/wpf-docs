@@ -9,7 +9,7 @@ documentation: ug
 
 # Placeholder
 
-The placeholder is used to visualize multiple categories in the Kanban column. It will appear while dragging a card over the column with multiple categories.
+The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/wpf/sfkanban/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 
 ### Placeholder style
 
