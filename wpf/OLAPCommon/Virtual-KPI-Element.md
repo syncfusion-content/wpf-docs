@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Virtual KPI Element| OLAPCommon  | Wpf | Syncfusion
-description: virtual kpi element
+title: Virtual Key Performance Indicator (KPI) Element
+description: Virtual KPI element
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 

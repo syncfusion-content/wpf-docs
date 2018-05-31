@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Show Single Calculation Header
-description: Show Single Calculation Header
+title: Single Calculation Header
+description: Show single calculation header
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OlapDataProvider| OLAPCommon  | Wpf | Syncfusion
-description: olapdataprovider
+title: OLAPDataProvider
+description: OLAPdataprovider
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 
-# OlapDataProvider
+# OLAPDataProvider
 
 The database connectivity related works are all taken care of by this part of the base. Here we are using Microsoft.AnalysisService.AdomdClient data provider. Establishing the connection, checking the state of the connection and closing the connection are basic operations provided by the general data provider, but we need some information beyond this in order to provide the input for our controls.  
 

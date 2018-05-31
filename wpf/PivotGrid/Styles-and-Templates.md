@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 137-Styles-and-Templates
-description: 1.3.7 styles and templates
+title: Styles and Templates for Grid Cells
+description: Styles and templates for grid cells
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Styles and Templates
+# Styles and Templates for Grid Cells
 
 ## Cell Styles
 

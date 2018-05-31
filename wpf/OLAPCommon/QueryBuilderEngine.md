@@ -1,9 +1,9 @@
 ---
 layout: post
-title: QueryBuilderEngine| OLAPCommon  | Wpf | Syncfusion
-description: querybuilderengine
+title: QueryBuilderEngine
+description: Querybuilderengine
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 

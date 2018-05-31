@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Sub-total-Hiding
-description: sub-total hiding
+title: Grand Total Row Visibility
+description: Grand total row visibility in RowPivotsOnly mode
 platform: wpf
-control: PivotGrid
+control: Pivot grid
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ PivotGrid provides support to make the grand total row always visible in RowPivo
 
 It can be achieved by using the `GrandTotalRowAlwaysVisible` property of PivotGrid control. This property can be defined either in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -39,7 +39,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

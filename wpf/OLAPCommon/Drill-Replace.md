@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Drill Replace| OLAPCommon  | Wpf | Syncfusion
-description: drill replace
+title: Drill Replace
+description: Drill replace
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 

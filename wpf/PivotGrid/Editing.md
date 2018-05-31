@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 1347-Editing
-description: 1.3.4.7 editing
+title: Editing the Value and Total Cells in Pivot Grid
+description: Editing the value and total cells in pivot grid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Editing
+# Editing the Value and Total Cells in Pivot Grid
 
 PivotGrid provides support to edit the value and total cells and it can be achieved by using the `EnableValueEditing` property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted accordingly.
 
@@ -15,7 +15,7 @@ PivotGrid provides support to edit the value and total cells and it can be achie
 
 The `EnableValueEditing` property of PivotGrid control can be used to achieve this requirement and it can be mentioned either in *XAML* or in *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -40,7 +40,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

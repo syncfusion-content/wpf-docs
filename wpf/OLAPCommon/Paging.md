@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging| OLAPCommon  | Wpf | Syncfusion
-description: paging
+title: Paging for Report in OLAP Common
+description: Paging for report in OLAP Common control
 platform: wpf
 control: OLAPCommon 
 documentation: ug
 ---
 
-# Paging
+# Paging for Report in OLAP Common Control
 
 Paging enables the user to view large records by breaking them into smaller segments.
 
