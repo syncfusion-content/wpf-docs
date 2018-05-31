@@ -37,7 +37,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.s
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
