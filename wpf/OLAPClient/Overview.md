@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| OlapClient  | Wpf | Syncfusion
-description: overview
+title: Overview of OLAP Client
+description: Overview of OLAP Client
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
-# OlapClient 
+# OLAP Client
 
 OlapClient control for WPF provides support to browse multidimensional data that is organized in the form of dimensions, measures, named sets, and KPI (key performance indicators) in a Cube format. You can visualize the results in graphical and tabular formats (chart and grid). The OlapClient control is also used to create and edit a report on-the-fly that is stored for later use.
 

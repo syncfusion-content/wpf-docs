@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Named Sets| OlapClient  | Wpf | Syncfusion
-description: named sets
+title: Named Sets
+description: Named sets
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 

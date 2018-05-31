@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OlapClient-Elements| OlapClient  | Wpf | Syncfusion
-description: OlapClient - Elements 
+title: OLAP Client Elements
+description: OLAP Client Elements
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
-# OlapClient: Elements 
+# OLAP Client Elements
 
 ## Cube Selector
 
@@ -267,5 +267,3 @@ On selecting the required report from the report list, the selected report will 
 ## OlapGrid and OlapChart
 
 The [OlapGrid](http://help.syncfusion.com/wpf/olapgrid/overview/) and [OlapChart](http://help.syncfusion.com/wpf/olapchart/overview) controls will be rendered with respect to the operations done at Axis Element Builder.
-
-   

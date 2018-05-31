@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Binding| OlapClient  | Wpf | Syncfusion
-description: data binding
+title: Data Binding
+description: Binding OLAP Client to OLAP Cube
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
