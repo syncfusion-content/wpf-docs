@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Filtering | OlapClient  | Wpf | Syncfusion
-description: filtering
+title: Filtering
+description: Filtering in OLAP Client
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 

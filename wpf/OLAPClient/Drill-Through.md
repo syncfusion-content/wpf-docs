@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill Through| OlapClient  | Wpf | Syncfusion
-description: drill-through
+title: Drill-Through
+description: Drill-Through
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
 # Drill-Through
 
-Drill-Through retrieves raw data that are used to create a specified cell in a Cube. Drill-Through action can be enable/disable using the **EnableDrillThrough** property. 
+Drill-Through retrieves raw data that are used to create a specified cell in a Cube. Drill-Through action can be enable/disable using the **EnableDrillThrough** property.
 
 The following code sample explains you on how to enable the drill-through option in your application.
 

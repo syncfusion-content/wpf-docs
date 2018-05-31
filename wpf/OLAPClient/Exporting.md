@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Exporting| OlapClient  | Wpf | Syncfusion
-description: exporting
+title: Exporting OLAP Chart and OLAP Grid to various forms
+description: Exporting OLAP Chart and OLAP Grid to various forms
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 
-# Exporting
+# Exporting OLAP Chart and OLAP Grid to various forms
 
-When creating OlapReport in OlapClient, the report will be visualized in OlapChart and OlapGrid. OlapClient has the option to 
-export the current view of the OlapChart and OlapGrid to various forms.
+When creating OlapReport in OlapClient, the report will be visualized in OlapChart and OlapGrid. OlapClient has the option to export the current view of the OlapChart and OlapGrid to various forms.
 
 ## Exporting OlapChart
 
@@ -18,9 +17,9 @@ The current view of the OlapChart can be exported to the following forms:
 
 * Word
 * PDF
-* Image 
+* Image
 
-and it can be printed as well. 
+and it can be printed as well.
 
 The user can perform these exports in two ways:
 
@@ -29,7 +28,7 @@ The user can perform these exports in two ways:
 
 ### Through OlapChart Toolbar menu
 
-By clicking the respective icons in the OlapChart toolbar, the user can export the OlapChart to the corresponding mode. 
+By clicking the respective icons in the OlapChart toolbar, the user can export the OlapChart to the corresponding mode.
 
 ![](Exporting_images/Exporting_img1.png)
 

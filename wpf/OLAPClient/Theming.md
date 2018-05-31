@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theming| OlapClient  | Wpf | Syncfusion
-description: theming
+title: Theming
+description: Theming
 platform: wpf
-control: OlapClient 
+control: OLAP Client
 documentation: ug
 ---
 

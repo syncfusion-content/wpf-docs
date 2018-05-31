@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 13433-Restrict-Auto-resizing-of-Row-Header-Area
-description:      1.3.4.3.3 restrict auto-resizing of row header area
+title: Restrict Auto Resizing of Row Header
+description: Restrict auto resizing of row header
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Restrict Row Header Resizing
+# Restrict Auto Resizing of Row Header
 
 PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the *ShowFields* button located in the Data Header Area of the Grouping Bar is clicked, the *PivotComputation List* window appears with the PivotCalculation fields.
 
