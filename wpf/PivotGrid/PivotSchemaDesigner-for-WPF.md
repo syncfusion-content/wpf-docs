@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotSchemaDesigner for Pivot Grid
-description: Pivotschemadesigner for pivot grid
+title: Pivot Schema Designer for Pivot Grid
+description: Pivot schema designer for pivot grid
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# PivotSchemaDesigner for Pivot Grid
+# Pivot Schema Designer for Pivot Grid
 
 **PivotSchemaDesigner** can be supported in PivotGrid, so that it can be presented like an **ExcelPivotTable**. By using the PivotSchemaDesigner, you can add, re-arrange, or remove fields to show data in a PivotGrid exactly the way you want. It contains two sections, consisting of the following items:
 
