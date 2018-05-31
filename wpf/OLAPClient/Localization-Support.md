@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization Support| OLAP Client  | Wpf | Syncfusion
-description: localization support
+title: Localization Support 
+description: Localization support
 platform: wpf
-control: OLAP Client 
+control: OLAP Client
 documentation: ug
 ---
 
 # Localization Support
 
-Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control. 
+Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control.
 
 
 ![](Localization-Support_images/Localization-Support_img1.png)
