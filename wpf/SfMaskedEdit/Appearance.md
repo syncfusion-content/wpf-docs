@@ -23,14 +23,14 @@ We can Customize the `BorderBrush` property as follows
 
 {% highlight xaml %}
 
-<syncfusion:SfMaskedEdit Width="255" Height="46" BorderBrush="Violet"/>
+<syncfusion:SfMaskedEdit Width="255" Height="46" BorderBrush="Blue"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.BorderBrush = Brushes.Violet;
+maskededit.BorderBrush = Brushes.Blue;
 
 {% endhighlight %}
 
