@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization of string resource
-description: Localization of string resource
+title: Localization
+description: Localization
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Localization of String Resource
+# Localization
 
 Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by PivotGrid controls. Localization can be done in below ways.
 
