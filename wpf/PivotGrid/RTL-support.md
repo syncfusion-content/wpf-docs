@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL Support
-description: RTL support
+title: Right to Left Support
+description: Right to left support
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# RTL Support
+# Right to Left Support
 
 PivotGrid provides support to display the contents of the Grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the PivotGrid control to "RightToLeft".
 
