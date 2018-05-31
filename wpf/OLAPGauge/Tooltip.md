@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tooltip | OlapGauge | wpf | Syncfusion
-description: tooltip
+title: Tooltip
+description: Tooltip
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 

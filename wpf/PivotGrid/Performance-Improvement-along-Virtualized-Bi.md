@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 13417-Performance-Improvement-along-Virtualized-Bi
-description: 1.3.4.17 performance improvement along virtualized binding
+title: Virtualized Binding with Improved Performance
+description: Virtualized binding with improved performance
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Virtualized Binding (Performance Improvement)
+# Virtualized Binding with Improved Performance
 
 It provides high loading performance for a large set of records. This feature also helps to load the data in PivotGrid on-demand using the **Index Engine**.
 

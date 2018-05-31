@@ -1,9 +1,9 @@
 ---
 layout: post
-title: XAML Configuration | OlapGauge | wpf | Syncfusion
-description: xaml configuration
+title: XAML Configuration
+description: XAML configuration
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 

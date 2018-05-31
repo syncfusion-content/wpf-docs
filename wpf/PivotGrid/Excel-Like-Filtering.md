@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 1341-Excel like Filtering
-description: 1.3.4.1 excel like filtering
+title: Excel-like Filtering
+description: Excel-like filtering
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

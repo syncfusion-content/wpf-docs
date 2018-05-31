@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Binding | OlapGauge | wpf | Syncfusion
-description: data binding
+title: Data Binding
+description: Binding OLAP Gauge to OLAP cube
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 

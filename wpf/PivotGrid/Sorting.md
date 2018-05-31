@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 1342-GroupinBar-Sorting
-description: 1.3.4.2 sorting
+title: Sorting
+description: Sorting
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 

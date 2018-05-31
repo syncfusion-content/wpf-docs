@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 13423-Custom-Calculations
-description: 1.3.4.23 custom calculations
+title: Custom Calculations
+description: Custom calculations
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
@@ -31,7 +31,7 @@ documentation: ug
 
 `CalculationType` property is used to achieve this requirement. It can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -54,7 +54,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through **Code-behind**, please refer the below code sample.
+For **Code-behind**, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -99,7 +99,7 @@ public partial class MainWindow: Window {
 
 ## Providing expression field calculation for Summaries
 
-To provide calculated field support to summary cells in PivotGrid and to make it behave accordingly, despite any options provided in summaries such as sum, count, max, min, etc..
+To provide calculated field support to summary cells in PivotGrid and to make it behave accordingly, despite any options provided in summaries such as sum, count, max, min, and so on.
 
 It can be achieved by setting the calculation type as "Formula" and by specifying the appropriate formula. Please refer the below code samples and screen-shots.
 
