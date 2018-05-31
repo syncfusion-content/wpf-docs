@@ -44,7 +44,7 @@ Multiple selected elements are visually represented as shown.
 
 ### Select/Unselect the elements programmatically
 
-The IsSelected Property is used to select/unselect the elements at runtime.
+The `IsSelected` Property is used to select/unselect the elements at runtime.
 
 The following code example illustrates how to select/unselect an item through programmatically.
 
