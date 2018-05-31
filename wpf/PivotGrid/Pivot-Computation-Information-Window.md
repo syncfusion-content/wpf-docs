@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 1367-Pivot-Computation-Information-Window
-description:             1.3.6.7 pivot computation information window
+title: Pivot Computation Information Dialog
+description: Pivot computation information dailog
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
 # Pivot Computation Information Dialog
 
-The Pivot Computation Information dialog is used to change or edit value formats, summary types, calculation types and the field header.
+The Pivot Computation Information dialog is used to change or edit value formats, summary types, calculation types, and the field header.
 
 ![PivotComputationWindow](PivotSchemaDesigner-Images/PivotComputationWindow.png)

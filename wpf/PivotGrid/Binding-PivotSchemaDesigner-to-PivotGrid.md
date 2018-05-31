@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 1368-Binding-PivotSchemaDesigner-to-PivotGrid
-description: 1.3.6.8 binding pivotschemadesigner to pivotgrid
+title: Binding PivotSchemaDesigner to Pivot Grid
+description: Binding pivotschemadesigner to pivot grid
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Binding PivotSchemaDesigner to PivotGrid
+# Binding PivotSchemaDesigner to Pivot Grid
 
 PivotSchemaDesigner can be bound to the PivotGrid with the help of the `PivotControl` property. After creating a PivotGrid, a new PivotSchemaDesigner is created using the `PivotSchemaDesigner` class and bound to the PivotGrid control using `PivotControl` property of PivotSchemaDesigner. This can be achieved either in *XAML* or in *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ If through *XAML*, please refer the below code sample.
     </Grid>
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
