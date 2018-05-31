@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming support in OLAP Chart
+title: Zooming Support in OLAP Chart
 description: Zooming support in OLAP Chart
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Zooming support in OLAP Chart
+# Zooming Support in OLAP Chart
 
 OlapChart for WPF allows you to zoom into a narrower range within the OlapChart.
 
