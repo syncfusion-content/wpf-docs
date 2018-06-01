@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OLAP Chart Area
-description: OLAP Chart Area
+description: OLAP chart area
 platform: wpf
 control: OLAP Chart
 documentation: ug
