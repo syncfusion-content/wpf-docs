@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview| OlapChart | Wpf | Syncfusion
-description: overview
+title: Overview
+description: Overview
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
