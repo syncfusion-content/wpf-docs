@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting of OLAP Chart
-description: Exporting of OLAP chart into image and document format
+title: Exporting OLAP Chart
+description: Exporting OLAP chart into image and document format
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Exporting of OLAP Chart
+# Exporting OLAP Chart
 
 OlapChart can be exported into various image and document formats. The following topics illustrate this in detail:
 
