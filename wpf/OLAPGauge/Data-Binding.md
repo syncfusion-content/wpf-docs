@@ -15,7 +15,7 @@ To connect an OLAP cube available in the local machine, the physical path of the
 
 {% highlight c# %}
 
-string connectionString = @"DataSource = system drive:\Offlinecube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
+string connectionString = @"DataSource = system drive:\Cube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
