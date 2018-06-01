@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance| OlapChart | Wpf | Syncfusion
-description: Appearance
+title: Appearance
+description: Customize the appearance of OLAP chart
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

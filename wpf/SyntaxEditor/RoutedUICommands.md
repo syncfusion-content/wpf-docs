@@ -9,9 +9,9 @@ documentation: ug
 
 # RoutedUICommands
 
-**EditCommands** **Members**
+**EditCommands members**
 
-**EditControl** ships with a variety of **built**-**in** **RoutedUICommands** to perform various editing operations in **EditControl** using Commands. **EditCommands** class in **Edit** **Wpf** **library** contains lot of necessary commands. The following are the list of **RoutedUICommands** available in EditControl.
+The EditControl ships with a variety of built-in RoutedUICommands to perform various editing operations in it using commands. The EditCommands class in the Edit WPF library contains lot of necessary commands. The following are the list of RoutedUICommands available in the EditControl.
 
 <table>
 <tr>
@@ -21,7 +21,7 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 Backspace<br/><br/></td><td>
-Performs Backspace key operations.<br/><br/></td></tr>
+Performs backspace key operations.<br/><br/></td></tr>
 <tr>
 <td>
 Collapse All<br/><br/></td><td>
@@ -29,15 +29,15 @@ Collapses all the blocks in the EditControl text.<br/><br/></td></tr>
 <tr>
 <td>
 CommentSelection<br/><br/></td><td>
-Comments selected or individual lines based on the language selected.<br/><br/></td></tr>
+Selects comments or individual lines based on the selected language.<br/><br/></td></tr>
 <tr>
 <td>
 Copy<br/><br/></td><td>
-Performs Copying of text.<br/><br/></td></tr>
+Performs copying of text.<br/><br/></td></tr>
 <tr>
 <td>
 Cut<br/><br/></td><td>
-Cut the text.<br/><br/></td></tr>
+Cuts the text.<br/><br/></td></tr>
 <tr>
 <td>
 DecreaseIndent<br/><br/></td><td>
@@ -45,7 +45,7 @@ Decreases the indent of individual or selected lines.<br/><br/></td></tr>
 <tr>
 <td>
 Delete<br/><br/></td><td>
-Performs Delete key operation.<br/><br/></td></tr>
+Performs delete key operation.<br/><br/></td></tr>
 <tr>
 <td>
 ExpandAll<br/><br/></td><td>
@@ -53,11 +53,11 @@ Expands all the blocks in the EditControl text.<br/><br/></td></tr>
 <tr>
 <td>
 Find<br/><br/></td><td>
-Opens the Find and Replace window with Quick Find tab selected.<br/><br/></td></tr>
+Opens the find and replace window with the selected quick find tab.<br/><br/></td></tr>
 <tr>
 <td>
 FindAllReferences<br/><br/></td><td>
-Finds all the occurrences of the text specified.<br/><br/></td></tr>
+Finds all the occurrences of the specified text.<br/><br/></td></tr>
 <tr>
 <td>
 IncreaseIndent<br/><br/></td><td>
@@ -65,27 +65,27 @@ Increases the indent of individual or selected lines.<br/><br/></td></tr>
 <tr>
 <td>
 New<br/><br/></td><td>
-Resets all the Text in the EditControl.<br/><br/></td></tr>
+Resets all the text in the EditControl.<br/><br/></td></tr>
 <tr>
 <td>
 Open<br/><br/></td><td>
-To Open an existing file. It displays the OpenFileDialog in order  to select the file.<br/><br/></td></tr>
+Opens an existing file and displays the OpenFileDialog to select the file.<br/><br/></td></tr>
 <tr>
 <td>
 Paste<br/><br/></td><td>
-Paste the text copied to the clipboard.<br/><br/></td></tr>
+Paste the copied text to the clipboard.<br/><br/></td></tr>
 <tr>
 <td>
 Redo<br/><br/></td><td>
-Performs Redo operations.<br/><br/></td></tr>
+Performs redo operations.<br/><br/></td></tr>
 <tr>
 <td>
 Replace<br/><br/></td><td>
-Replaces the text specified in the Find What field with the Replace with field in Find and Replace window.<br/><br/></td></tr>
+Replaces the text specified in the Find What field with the field in Find and Replace window.<br/><br/></td></tr>
 <tr>
 <td>
 Save<br/><br/></td><td>
-Saves the text in the EditControl to a File. It displays the SaveFileDialog in order to enter the name and location to save the file.<br/><br/></td></tr>
+Saves the text in the EditControl to a file. It displays the SaveFileDialog to enter the name and location to save the file.<br/><br/></td></tr>
 <tr>
 <td>
 Search<br/><br/></td><td>
@@ -97,11 +97,11 @@ Finds the text specified in the last search within the selected text, without op
 <tr>
 <td>
 SelectAll<br/><br/></td><td>
-Selects All the text in EditControl.  <br/><br/></td></tr>
+Selects all the text in EditControl.  <br/><br/></td></tr>
 <tr>
 <td>
 ShowIntellisense<br/><br/></td><td>
-Displays the IntellisensePopup provided if the IntelliSense items are not empty.<br/><br/></td></tr>
+Displays the provided IntellisensePopup if the IntelliSense items are not empty.<br/><br/></td></tr>
 <tr>
 <td>
 UncommentSelection<br/><br/></td><td>

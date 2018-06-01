@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Area| OlapChart | Wpf | Syncfusion
-description: Area
+title: OLAP Chart Area
+description: OLAP chart area
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

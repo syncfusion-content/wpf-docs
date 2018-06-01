@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Localization| OlapChart | Wpf | Syncfusion
-description: localization
+title: Localization
+description: Localization
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
