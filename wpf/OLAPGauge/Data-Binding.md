@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Binding | OlapGauge | wpf | Syncfusion
-description: data binding
+title: Data Binding
+description: Binding OLAP Gauge to OLAP cube
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ To connect an OLAP cube available in the local machine, the physical path of the
 
 {% highlight c# %}
 
-string connectionString = @"DataSource = system drive:\Offlinecube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
+string connectionString = @"DataSource = system drive:\Cube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
