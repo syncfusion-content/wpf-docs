@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axes of OLAP Chart Area
-description: Axes of OLAP Chart Area
+description: Axes of OLAP chart area
 platform: wpf
 control: OLAP Chart
 documentation: ug
