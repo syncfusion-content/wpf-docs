@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance
-description: Customize the appearance of OLAP Chart
+description: Customize the appearance of OLAP chart
 platform: wpf
 control: OLAP Chart
 documentation: ug
