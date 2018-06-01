@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI| OlapChart | Wpf | Syncfusion
+title: Key Performance Indicator (KPI)
 description: KPI
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
-# KPI
+# Key Performance Indicator (KPI)
 
 KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
 

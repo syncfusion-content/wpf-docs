@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started | OlapGauge | wpf | Syncfusion
-description: getting started
+title: Getting Started
+description: Getting started
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 

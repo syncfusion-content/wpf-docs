@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAPDataManager
-description: OLAPdatamanager
+title: OLAP Data Manager
+description: OLAP data manager
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# OLAPDataManager
+# OLAP Data Manager
 
 OlapDataManager is the most important class in the whole OLAP Base. All the information transfers from the control to OLAP base will happen through this class and this will retain the current state of the base objects. The connection is established in the Data provider of the OLAP Base, but the information required in establishing the connection is given to the data provider through the OlapDataManager. 
 

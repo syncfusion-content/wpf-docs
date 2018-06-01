@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI | OlapGauge | wpf | Syncfusion
-description: kpi
+title: Key Performance Indicator (KPI)
+description: KPI
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 
-# KPI
+# Key Performance Indicator (KPI)
 
 OlapGauge provides support to display Key Performance Indicators (KPIs) from the OLAP Cube. KPI Value is represented with the help of _Pointers_ and KPI Goal is represented with the help of _Markers_. The KPI Status and KPI Trend values are represented through user friendly images like Traffic Light, Road Signs and Standard Arrow in OlapGauge WPF. Each Gauge represents a member against one KPI combination.
 

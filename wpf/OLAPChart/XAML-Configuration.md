@@ -1,9 +1,9 @@
 ---
 layout: post
-title: XAML Configuration| OlapChart | Wpf | Syncfusion
-description: xaml configuration
+title: XAML Configuration
+description: XAML configuration
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

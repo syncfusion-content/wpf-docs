@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | OlapGauge | wpf | Syncfusion
-description: overview
+title: Overview for OLAP Gauge
+description: Overview for OLAP Gauge
 platform: wpf
-control: OlapGauge
+control: OLAP Gauge
 documentation: ug
 ---
 
-# Overview
+# Overview for OLAP Gauge
 
 The OlapGauge control for WPF is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. It allows you to present values against goals in a very intuitive manner. Built-in data binding support allows you to easily bind an OlapGauge to a KPI result from your OLAP database. The OlapGauge control comes with sophisticated customization support that provides endless possibility for control customization.
 

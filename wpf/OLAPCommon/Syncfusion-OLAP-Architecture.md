@@ -3,7 +3,7 @@ layout: post
 title: Syncfusion OLAP Architecture
 description: Syncfusion OLAP architecture
 platform: wpf
-control: OLAP Common 
+control: OLAP Common
 documentation: ug
 ---
 
