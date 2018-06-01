@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Watermark| OlapChart | Wpf | Syncfusion
+title: Watermark
 description: Watermark
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
 # Watermark
 
-OlapChart for WPF supports watermark feature, which can be used to show text, image, or both as a watermark inside the Chart area. 
+OlapChart for WPF supports watermark feature, which can be used to show text, image, or both as a watermark inside the Chart area.
 
 There are many customization options available for the watermarked content. The content can be aligned both horizontally and vertically. It's font style can be changed. The interior of the content can be customized and the opacity can also be varied.
 

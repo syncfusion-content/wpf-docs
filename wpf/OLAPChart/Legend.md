@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Legend| OlapChart | Wpf | Syncfusion
+title: Legend
 description: Legend
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Chart Types| OlapChart | Wpf | Syncfusion
-description: Chart Types
+title: Chart Types
+description: Chart types
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

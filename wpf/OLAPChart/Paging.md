@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging| OlapChart | Wpf | Syncfusion
-description: paging
+title: Paging in OLAP Chart
+description: Paging in OLAP Chart
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
-# Paging
+# Paging in OLAP Chart
 
 Paging in OlapChart provides you the support to load and render large amount of data without any performance constraint.  
 
