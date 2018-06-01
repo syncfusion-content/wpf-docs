@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming Support in OLAP Chart
-description: Zooming support in OLAP Chart
+description: Zooming support in OLAP chart
 platform: wpf
 control: OLAP Chart
 documentation: ug
