@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 13422-Multi-Column-Sorting
-description:            1.3.4.2.2 multi-column sorting
+title: Multi-Column Sorting
+description: Multi-column sorting
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ A separate index number is used at the top of each column to maintain the order 
 
 We can enable the sorting through *XAML* or *Code-behind* using `SortOption` property of PivotGrid control.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -41,7 +41,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -103,7 +103,7 @@ public partial class MainWindow: Window {
 ## Multi-Column Sorting in Row Pivots Only Mode
 
 We can enable sorting through *XAML* or *Code-behind* using `SortOption` property of PivotGrid control in RowPivotsOnly mode.
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -131,7 +131,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

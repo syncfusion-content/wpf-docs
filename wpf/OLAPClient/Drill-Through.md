@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Through
-description: Drill-through
+title: Drill-Through
+description: Drill-Through
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Drill Through
+# Drill-Through
 
 Drill-Through retrieves raw data that are used to create a specified cell in a Cube. Drill-Through action can be enable/disable using the **EnableDrillThrough** property.
 

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: 1355-Inner-Most-Computations
-description: 1.3.5.5 inner most computations
+title: Inner Most Computations
+description: Display grid with inner most computations
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Display Inner Most Computations
+# Inner Most Computations
 
 PivotGrid supports to display the Grid with inner most computations alone, without displaying the total values.
 
 The `InnerMostComputationsOnly` property is used for this requirement and it can be mentioned either in *XAML* or *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -39,7 +39,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 
