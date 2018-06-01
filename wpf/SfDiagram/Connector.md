@@ -24,7 +24,7 @@ Connector can be created by defining the start and end points. The Path to be dr
   <Setter Property="ConnectorGeometryStyle">
     <Setter.Value>
       <Style TargetType="Path">
-        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+        <Setter Property="Stroke" Value="CornflowerBlue"></Setter>
         <Setter Property="StrokeThickness" Value="1"></Setter>
       </Style>
     </Setter.Value>
@@ -32,7 +32,7 @@ Connector can be created by defining the start and end points. The Path to be dr
   <Setter Property="TargetDecoratorStyle">
     <Setter.Value>
       <Style TargetType="Path">
-        <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
+        <Setter Property="Fill" Value="CornflowerBlue"></Setter>
         <Setter Property="StrokeThickness" Value="1"></Setter>
       </Style>
     </Setter.Value>
@@ -363,9 +363,9 @@ The Direction of Bridge can be customized with property `BridgeDirection`.
       <!--Initialize the ConnectorCollection-->
       <syncfusion:ConnectorCollection>
         <!--Initialize the Connector-->
-        <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,300">
+        <syncfusion:ConnectorViewModel SourcePoint="88,183" TargetPoint="250,300">
         </syncfusion:ConnectorViewModel>
-        <syncfusion:ConnectorViewModel SourcePoint="250,50" TargetPoint="150,300">
+        <syncfusion:ConnectorViewModel SourcePoint="150,156" TargetPoint="150,300">
         </syncfusion:ConnectorViewModel>
       </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
@@ -385,14 +385,14 @@ diagram.Connectors = new ConnectorCollection();
 //Define the Connector
 ConnectorViewModel connector = new ConnectorViewModel()
 {
-    SourcePoint = new Point(100, 100),
+    SourcePoint = new Point(88, 183),
     TargetPoint = new Point(250, 300)
 };
 //Adding Connector to Collection
 (diagram.Connectors as ConnectorCollection).Add(connector);
 ConnectorViewModel connector1 = new ConnectorViewModel()
 {
-    SourcePoint = new Point(250, 50),
+    SourcePoint = new Point(150, 156),
     TargetPoint = new Point(150, 300),
 };
 (diagram.Connectors as ConnectorCollection).Add(connector1);
@@ -411,6 +411,8 @@ The `BridgeSpace` property allows to customize the size of bridge in a connector
 {% tabs %}
 {% highlight c# %}
 
+//Define the BridgeDirection
+diagram.BridgeDirection = BridgeDirection.Bottom;
 //Define Constraints
 diagram.Constraints = diagram.Constraints | GraphConstraints.Bridging;
 //Define the ConnectorCollection
@@ -420,14 +422,14 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {
     //Define the Bridge space of the connector
     BridgeSpace=30,
-    SourcePoint = new Point(100, 100),
+    SourcePoint = new Point(88, 183),
     TargetPoint = new Point(250, 300),
 };
 //Adding Connector to Collection
 (diagram.Connectors as ConnectorCollection).Add(connector);
 ConnectorViewModel connector1 = new ConnectorViewModel()
 {
-    SourcePoint = new Point(250, 50),
+    SourcePoint = new Point(150, 156),
     TargetPoint = new Point(150, 300),
 };
 (diagram.Connectors as ConnectorCollection).Add(connector1);
@@ -446,7 +448,7 @@ StrokeThickness, Stroke and style of the Connector and Decorators can be customi
 
 <!--Style for ConnectorGeometryStyle-->
 <Style TargetType="Path" x:Key="ConnectorStyle">
-  <Setter Property="Stroke" Value="#FF5B9BD5"/>
+  <Setter Property="Stroke" Value="CornflowerBlue"/>
   <Setter Property="StrokeThickness" Value="2"/>
   <Setter Property="StrokeDashArray" Value="2"/>
   <Setter Property="Opacity" Value="0.8"/>
@@ -491,7 +493,11 @@ Source and target points of the selected connectors are represented with two han
 
 * If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
-* If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
+* If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState and CauseValue Connector Item with its old and new values.
+* Unknown- On dragging the target thumb of available connector, will notify the Cause as `UnKnown`.
+* Drawing- On drawing a connector in an Element will notify the Cause as `Drawing`.
+
+To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) . 
 
 * If any changes made in the segment of the connector,`ConnectorEditingEvent` will notify the DragState, Item and ThumbType.To explore about arguments, please refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html) .
 

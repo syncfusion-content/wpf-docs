@@ -22,7 +22,7 @@ By default, DiagramPage size is decided based on the diagramming elements positi
 
 <syncfusion:SfDiagram x:Name="diagram" Background="WhiteSmoke">
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PageWidth="500" PageHeight="500" PageBorderThickness="4" PageBackground="White" PageBorderBrush="LightGray" />
+    <syncfusion:PageSettings PageWidth="500" PageHeight="500" PageBorderThickness="4" PageBackground="White" PageBorderBrush="LightGray" MultiplePage="True" ShowPageBreaks="True" />
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 
@@ -36,7 +36,9 @@ diagram.PageSettings.PageHeight = 500;
 diagram.PageSettings.PageBorderThickness = new Thickness(4);
 diagram.PageSettings.PageBackground = new SolidColorBrush(Colors.White);
 diagram.PageSettings.PageBorderBrush = new SolidColorBrush(Colors.LightGray);
-
+diagram.PageSettings.MultiplePage = true;
+diagram.PageSettings.ShowPageBreaks = true;
+            
 {% endhighlight %}
 {% endtabs %}
 

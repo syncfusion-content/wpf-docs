@@ -69,6 +69,6 @@ If we need to serialize the NodeType property(custom property) of NodeContent(cu
 
 In the preceding code, NodeContent is unknown type to Serializer. So, we must specify the type to the KnownTypes of SfDiagram.
 
-I> We should not add DataMember attribute to the inbuilt properties of inbuilt classes(Node, Connector, INode, IConnector,....).
+I> We should not add DataMember attribute to the built-in properties of built-in classes(Node, Connector, INode, IConnector,....).
 
 Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/wpf/sfdiagram/Exporting "Exporting").

@@ -9,9 +9,9 @@ documentation: ug
 
 # Node
 
-Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities
+Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
-![](Node_images/Node_img1.jpeg)
+![](Node_images/Node_Content.PNG)
 
 ## Shapes
 
@@ -60,7 +60,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now,Node would be like this,
 
-![](Node_images\addNode.png)
+![](Node_images/addNode.png)
 
 ### Add Node from stencil
 
@@ -78,7 +78,7 @@ Nodes can be interactively drawn by clicking and dragging the Diagram surface by
 
 ## Position
 
-Position of a Node is controlled by using its `OffsetX` and `OffsetY` properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may except this Offset values to represent the distance between page origin and Node’s top left corner instead of center. `Pivot` property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
+Position of a Node is controlled by using its `OffsetX` and `OffsetY` properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may expect this Offset values to represent the distance between page origin and Node’s top left corner instead of center. `Pivot` property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
 
 The following table illustrates how pivot relates Offset values with Node boundaries.
 
@@ -213,8 +213,8 @@ return style;
 
 ## Flip
 
-Diagram provides support to flip the node.`Flip` is performed to give the mirrored of the Original element.
-Based on the types, gives the mirrored elements as,
+Diagram provides support to flip the node.`Flip` is performed to give the mirrored node of the Original element.
+The flip types are below,
 * Flip
  `Flip` which involves both vertical and horizontal changes of the element. 
 * VerticalFlip
