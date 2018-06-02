@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data-Binding| OlapChart | Wpf | Syncfusion
-description: data binding
+title: Data Binding
+description: Binding OLAP chart to OLAP cube
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

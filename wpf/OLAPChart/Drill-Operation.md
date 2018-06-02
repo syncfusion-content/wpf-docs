@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Drill Operation| OlapChart | Wpf | Syncfusion
-description: drill operation
+title: Drill Operation
+description: Drill operation
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
