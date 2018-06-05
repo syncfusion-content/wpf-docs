@@ -6,15 +6,18 @@ platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
+
+# PromptChar in Mask
+
 ## Default PromptChar in Mask
 
-Displays prompt character for the absence of your input in Mask and its default value is ‘_’.
+Displays prompt character for the absence of your input in mask. Its default value is ‘_’.
 
 ![](PromptChar_In_Mask_Images/PromptChar_In_Mask_Img1.jpg)
 
 ## Custom PromptChar
 
-The following example shows how to customize the prompt character using `PromptChar` property
+The following example shows how to customize the prompt character by using the `PromptChar` property.
 
 {% tabs %}
 
