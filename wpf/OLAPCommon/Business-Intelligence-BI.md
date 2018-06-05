@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Business Intelligence BI| OLAPCommon  | Wpf | Syncfusion
-description: business intelligence (bi)
+title: Business Intelligence (BI)
+description: Business intelligence
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 
