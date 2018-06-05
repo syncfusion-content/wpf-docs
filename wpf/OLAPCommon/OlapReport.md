@@ -34,9 +34,7 @@ These elements come under the following four elements group, which are based on 
 
 All the elements are internally maintained as Item.
 
-## Properties and Methods
-
-### The OlapReport properties and its descriptions
+## Properties
 
 * **CalculatedMembers** - Used to set and get the calculated members of the OlapReport.
 * **CategoricalElements** - Contains the element that are said to be in categorical axis. We can add an element and get the collection of elements that comes under the categorical axis.
@@ -51,13 +49,14 @@ All the elements are internally maintained as Item.
 * **TogglePivot** - Used to swap the elements in the column axis and row axis.
 * **Tag** - Holds the backup information of the OLAP Report.
 
-
 ![](OlapReport_images/OlapReport_img1.png)
 
 Architecture of Items
 {:.caption}
 
-## Dimension Element
+## Elements of OLAP report
+
+### Dimension Element
 
 A simple [dimension](http://msdn.microsoft.com/en-us/library/microsoft.analysisservices.dimension.aspx) object is composed of basic information such as Name, Hierarchy, Level and Members. We can create the dimension element by specifying its name and providing the hierarchy and level name. 
 
@@ -81,11 +80,7 @@ Member element represents a member of a level in a cube, the children of a membe
 
 Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, the number of children, and so on. Member properties are available for all members at a given level.
 
-
-
 ![](Dimension-Element_images/Dimension-Element_img1.png)
-
-
 
 The following code will illustrate the creation of different types of dimensions:
 
@@ -94,8 +89,6 @@ The following code will illustrate the creation of different types of dimensions
 {% tabs %}
 
 {% highlight c# %}
-
-
 
 DimensionElement dimensionElementColumn = new DimensionElement();
 
