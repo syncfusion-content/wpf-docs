@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Syncfusion OLAP Architecture| OLAPCommon  | Wpf | Syncfusion
-description: syncfusion olap architecture
+title: Syncfusion OLAP Architecture
+description: Syncfusion OLAP architecture
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 
 # Syncfusion OLAP Architecture
-
-
 
 Syncfusion OLAP architecture allows you to build a full life cycle reporting solution for your enterprise. Here are the important pieces of the architecture:
 
