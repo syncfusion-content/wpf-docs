@@ -11,7 +11,7 @@ documentation: ug
 
 This class will generate the query from the MDXQuerySpecification. The query generation starts from invoking the GenerateQueryEx() static method of QueryBuilderEngineVersion3, the inner class of QueryBuilderEngine class.
 
-## MDXQuerySpecification
+## MDX Query Specification
 
 MDXQuerySpecification is the base for query creation. The MDXQuerySpecification will categorize the element into three clauses namely:
 
