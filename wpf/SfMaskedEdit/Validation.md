@@ -9,7 +9,7 @@ documentation: ug
 
 # ValidationMode
 
-Input validation happens based on the value of the `ValidationMode` property. The enum values of this property are 
+Input validation is based on the value of `ValidationMode` property. Enum values of this property are: 
 
   * LostFocus
   * KeyPress
@@ -21,11 +21,11 @@ When the `ValidationMode` is KeyPress, the validation is raised for each key pre
 
 ## LostFocus
 
-When the `ValidationMode` is LostFocus, the validation takes place when the control lost its focus
+When the `ValidationMode` is LostFocus, the validation takes place when the control lost its focus.
 
 ## HasError
 
-This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else set to false. The following code example shows the usage of HasError property.
+This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds, or else set to be false. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,17 +49,16 @@ private void sfMaskedEdit_LostFocus(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Validation
+## Custom validation
 
-In `SfMaskedEdit` control there is no event for the validation. The custom validation based on the `ValidationMode` property of `SfMaskedEdit` using attached properties of Validation class. Also `HasError` property has been used for Validation in source level.
+In the `SfMaskedEdit` control, there is no event for the validation. The custom validation is based on the `ValidationMode` property by using the attached properties of Validation class. The `HasError` property is also used for source level validation.
 
-Custom validation can be implemented as follows
+Custom validation can be implemented by as follows:
 
-Step 1. Create a class inherited from `ValidationRule`.
+1. Create a class inherited from `ValidationRule`.
 
-Step 2. Override ValidationResult property and implement custom validation logic.
+2. Override the ValidationResult property and implement custom validation logic.
 
-For Example:
 {% tabs %}
 {% highlight C# %}
 public class NameValidator : ValidationRule
@@ -83,7 +82,8 @@ public class NameValidator : ValidationRule
 
 {% tabs %}
 {% highlight xaml %}
-Step3. Set Triggers for KeyPress and LostFocus ValidationMode
+
+3. Set Triggers for KeyPress and LostFocus validation modes.
 
 		<Trigger Property="ValidationMode" Value="KeyPress">
             <Setter Property="Text">
