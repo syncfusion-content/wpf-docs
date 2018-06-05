@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OlapReport| OLAPCommon | Wpf | Syncfusion
-description: olapreport 
+title: OLAP Report
+description: OLAP report
 platform: wpf
-control: OLAPCommon
+control: OLAP Common
 documentation: ug
 ---
 
-# OlapReport 
+# OLAP Report
 
 OlapReport is an object that contains information about the cube element that has to be included for processing along its axis position and filter and sorting constraints. OlapReport has categorized the elements based on their characteristics as below:
 
@@ -34,11 +34,7 @@ These elements come under the following four elements group, which are based on 
 
 All the elements are internally maintained as Item.
 
-
-## Properties and Methods
-
-### The OlapReport properties and its descriptions:
-
+## Properties
 
 * **CalculatedMembers** - Used to set and get the calculated members of the OlapReport.
 * **CategoricalElements** - Contains the element that are said to be in categorical axis. We can add an element and get the collection of elements that comes under the categorical axis.
@@ -53,15 +49,14 @@ All the elements are internally maintained as Item.
 * **TogglePivot** - Used to swap the elements in the column axis and row axis.
 * **Tag** - Holds the backup information of the OLAP Report.
 
-
 ![](OlapReport_images/OlapReport_img1.png)
 
 Architecture of Items
 {:.caption}
 
-## Dimension Element
+## Elements of OLAP report
 
-
+### Dimension Element
 
 A simple [dimension](http://msdn.microsoft.com/en-us/library/microsoft.analysisservices.dimension.aspx) object is composed of basic information such as Name, Hierarchy, Level and Members. We can create the dimension element by specifying its name and providing the hierarchy and level name. 
 
@@ -73,41 +68,19 @@ Each element of a dimension could be summarized using a [hierarchy](http://en.wi
 
 For example, May 2005 could be summarized into Second Quarter 2005 which in turn would be summarized in the year 2005.
 
-
-
-
-
 ### Level Element
-
-
 
 Level element is the child of hierarchy element which contains a set of members, each of which has the same rank within a hierarchy.
 
 ### Member Element
 
-
-
 Member element represents a member of a level in a cube, the children of a member of level.
 
 ### Member Properties
 
-
-
 Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, the number of children, and so on. Member properties are available for all members at a given level.
 
-
-
 ![](Dimension-Element_images/Dimension-Element_img1.png)
-
-
-
-
-
-
-
-
-
-
 
 The following code will illustrate the creation of different types of dimensions:
 
@@ -116,8 +89,6 @@ The following code will illustrate the creation of different types of dimensions
 {% tabs %}
 
 {% highlight c# %}
-
-
 
 DimensionElement dimensionElementColumn = new DimensionElement();
 

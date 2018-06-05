@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OlapDataProvider| OLAPCommon  | Wpf | Syncfusion
-description: olapdataprovider
+title: OLAP Data Provider
+description: OLAP data provider
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 
-# OlapDataProvider
+# OLAP Data Provider
 
 The database connectivity related works are all taken care of by this part of the base. Here we are using Microsoft.AnalysisService.AdomdClient data provider. Establishing the connection, checking the state of the connection and closing the connection are basic operations provided by the general data provider, but we need some information beyond this in order to provide the input for our controls.  
 
@@ -25,10 +25,10 @@ The important properties and methods in AdomdDataProvider class are tabulated be
 
 ###  Properties
 
-* **CatalogName** - To get the connected database name
-* **ConnectionString** - To set or get the connection string
-* **CurrentCellSet** - To get the currently executed CellSet
-* **GetCubes** - To get the information about the cubes in the connected data source
+* **CatalogName**: Gets the connected database name.
+* **ConnectionString**: Sets or get the connection string.
+* **CurrentCellSet**: Gets the currently executed CellSet.
+* **GetCubes**: Gets the information about the cubes in the connected data source.
 
 
 ### Methods
