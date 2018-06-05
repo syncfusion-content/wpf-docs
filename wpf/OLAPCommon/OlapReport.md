@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP Report and their Elements
-description: OLAP report and their elements
+title: OLAP Report
+description: OLAP report
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# OLAP Report and their Elements
+# OLAP Report
 
 OlapReport is an object that contains information about the cube element that has to be included for processing along its axis position and filter and sorting constraints. OlapReport has categorized the elements based on their characteristics as below:
 
