@@ -112,8 +112,8 @@ In `SelectorChangedEvent` based on the arguments the process occurs,
 * `Block`-If this boolean expression is set true, then the dragging occurs within the given rectangular area. If dragging exceeds than the limit, then it hit back to previous position.
 Based on the `BlockPosition` the dragging of Block occurs.
 * Block Position
- `SourcePosition` the element moves to the previous position if it exceeds the limitation during dragging.
- `CurrentPosition` the element present at the limited area position, it does not hit back to previous position during dragging.
+  `SourcePosition`- the element moves to the previous position if it exceeds the limitation during dragging.
+  `CurrentPosition`- the element present at the limited area position, it does not hit back to previous position during dragging.
 * `Abort`- If this boolean is set to true, then dragging is occurs within the limit.
 * `Cancel`- If this boolean is set to true, then the dragging of element does not occurs.   
 

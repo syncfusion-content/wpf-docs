@@ -91,7 +91,7 @@ The following table illustrates how pivot relates Offset values with Node bounda
 {% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
-<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+<Style TargetType="syncfusion:Node">
   <Setter Property="ShapeStyle">
     <Setter.Value>
       <Style TargetType="Path">
