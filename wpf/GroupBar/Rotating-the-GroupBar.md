@@ -46,6 +46,7 @@ groupBar.RotationAngle = 45;
 {% endhighlight %} 
 {% endtabs %}
 
+![](GroupBar-Items_images/GroupBar_Rotation.png)
 
 {% seealso %}
 
