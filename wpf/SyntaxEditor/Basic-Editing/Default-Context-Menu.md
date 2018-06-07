@@ -9,34 +9,35 @@ documentation: ug
 
 ## Default Context Menu
 
-**ShowDefaultContextMenu**
+ShowDefaultContextMenu
 
-EditControl has a built-in context menu which enables users to easily perform common text editing operations. The default context menu can be enabled/disabled using **ShowDefaultContextMenu** property. By default, this property is set to **true**.
+EditControl has a built-in context menu which enables users to easily perform common text editing operations. The default context menu can be enabled/disabled using `ShowDefaultContextMenu` property. By default, this property is set to `true`.
 
-Set the **ShowDefaultContextMenu** property of EditControl, by using the following code.
+Set the ShowDefaultContextMenu property of EditControl by using the following code.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 <sfedit:EditControl x:Name="editControl" ShowDefaultContextMenu="True"/>
-
-
-
 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 editControl.ShowDefaultContextMenu = true;
 
 
 
 {% endhighlight %}
 
-The following image displays the Outlining Menu Expanded window
+{% endtabs %}
+
+The following image displays the Outlining Menu Expanded window.
 
 ![](Default-Context-Menu_images/Default-Context-Menu_img1.jpeg)
 
 
-**Functionalities** **supported** **by** **EditControl’s** **ContextMenu**
+**Functionalities supported by EditControl’s ContextMenu**
 
 EditControl’s built-in context menu supports the following functionalities.
 
@@ -72,11 +73,11 @@ Selects all the text in the EditControl<br/><br/></td></tr>
 <tr>
 <td>
 Outlining -> Expand All <br/><br/></td><td>
-Expands all the collapsed blocks in the text. This functionality is supported only when the EnableOutlining is set to true and the language supports outlining.<br/><br/></td></tr>
+Expands all the collapsed blocks in the text. This functionality is supported only when the EnableOutlining is set to `true` and the language supports outlining.<br/><br/></td></tr>
 <tr>
 <td>
 Outlining -> Collapse All<br/><br/></td><td>
-Hides all the blocks in the EditControl’s text. This functionality is supported only when the EnableOutlining is set to true and the language supports outlining.<br/><br/></td></tr>
+Hides all the blocks in the EditControl’s text. This functionality is supported only when the EnableOutlining is set to `true` and the language supports outlining.<br/><br/></td></tr>
 <tr>
 <td>
 Increase Indent<br/><br/></td><td>

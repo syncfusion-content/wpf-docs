@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deals with edit control members of the Edit Control for WPF
-description: Explains about edit control members of the Edit Control for WPF
+title: Edit control members of WPF
+description: Explains about edit control members of WPF
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # EditControl Members
 
-**EditControl** **class** contains variety of properties, methods and events to enable the developers utilize this control easily. It is enhanced with maximum possible level of customization and facilities that are provided for the developers to use these controls effectively. This topic discusses about the properties, methods and events available in the EditControl class.
+EditControl class contains variety of properties, methods and events to enable the developers utilize this control easily. It is enhanced with maximum possible level of customization and facilities that are provided for the developers to use these controls effectively. This topic discusses about the properties, methods and events available in the EditControl class.
 
 **Properties**
 
-The following table illustrates the properties in **EditControl** and its usages.
+The following table illustrates the properties in EditControl and its usages.
 
 <table>
 <tr>
 <td>
-Name of the Property<br/><br/></td><td>
+Name of the property<br/><br/></td><td>
 Type<br/><br/></td><td>
 Description<br/><br/></td></tr>
 <tr>
@@ -120,7 +120,7 @@ Gets or sets a value indicating desired width of IntellisensePopup.<br/><br/></t
 <td>
 IsFindResultsTabClosed<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Gets or sets a value indicating whether the Find Results Tab is closed or not. This property has a value true if the Find results tab in the EditControl is closed; otherwise, false.<br/><br/></td></tr>
+Gets or sets a value indicating whether the Find Results Tab is closed or not. This property has a value `true` if the Find results tab in the EditControl is closed; otherwise, `false`.<br/><br/></td></tr>
 <tr>
 <td>
 IsReadOnly<br/><br/></td><td>
@@ -175,7 +175,7 @@ Gets or sets a value indicating whether Find and Replace functionality to enable
 <td>
 ShowLineNumber<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Gets or sets a value indicating whether Line Number to be displayed or not. Set this to True to display the Line number. Default value is true.<br/><br/></td></tr>
+Gets or sets a value indicating whether Line Number to be displayed or not. Set this to `true` to display the Line number. Default value is `true`.<br/><br/></td></tr>
 <tr>
 <td>
 TabSpaces<br/><br/></td><td>

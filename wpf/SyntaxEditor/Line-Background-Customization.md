@@ -7,23 +7,23 @@ control: Syntax Editor
 documentation: ug
 ---
 
-# Line Background customization
+# Line Background Customization
 
-## Apply Line Background customization
+## Applying line background customization
 
 The `SetLineBackground` function helps to customize the background color of specific lines.
 
 ### Method
 
-`SetLineBackground(lineNumber, fullLine, brush)` - Helps to customize the background of Line. 
+`SetLineBackground(lineNumber, fullLine, brush)`: Helps to customize the background of line.
 
 ### Arguments
 
-`lineNumber` - To specify the line number to be customized
+`lineNumber`: Specifies the line number where the cursor is currently located in EditControl.
 
-`fullLine` - To specify, whether to highlight full line. 
+`fullLine`: Specifies whether to highlight full line or not.
 
-`brush` - To specify the `Brush` of background customization. 
+`brush`: Specifies the `Brush` for background customization.
 
 {% tabs %}
 
@@ -47,17 +47,17 @@ this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.
 
 ![](Line-Background-Customization_images/SetLineBackground.png)
 
-## Reset Line Background customization
+## Resetting line background customization
 
-The `ResetLineBackground` function helps to reset the background Color for customized lines. The following codes illustrates the same. 
+The `ResetLineBackground` function helps to reset the background color of customized lines.
 
 ### Method
 
-`ResetLineBackground(lineNumber)` - Helps to reset the background customization of Line. 
+`ResetLineBackground(lineNumber)`: Helps to reset the background customization of line.
 
 ### Arguments
 
-`lineNumber` - To specify the line number to be reset the applied customization. 
+`lineNumber`: Specifies the line number where the cursor is currently located in EditControl.
 
 {% tabs %}
 
@@ -80,9 +80,9 @@ this.editControl1.ResetLineBackground(this.editControl1.LineNumber)
 {% endtabs %}
 
 
-## On Demand Line Background Customization 
+## On demand line background customization
 
-`OnBeforeLineRender` event used to customize the background color of the line on demand. The following codes illustrates the same. 
+The `OnBeforeLineRender` event customizes the background color of the line on demand.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ public MainWindow()
 
 {% endtabs %}
 
-N> We recommend this, when `EditControl` is loaded with huge data.
+N> The on demand line background customization is recommended when the `EditControl` is loaded with huge data.
 
 ![](Line-Background-Customization_images/OnBeforeEvent.png)
 

@@ -9,40 +9,40 @@ documentation: ug
 
 # Getting Started
 
-This section guides you on getting started with the EditControl control. It covers the following topics:
+This section explains how to get started with the EditControl.
 
-##  Adding EditControl control to an Application
+## Adding EditControl to an application
 
-The EditControl  control can be added to an application by using Visual Studio 
+The EditControl can be added to an application by using the Visual Studio.
 
-### Creating the EditControl Control using XAML 
+### Creating an EditControl using XAML 
 
-1. Drag and drop the **EditControl** available in the Visual Studio **Toolbox** as shown below. 
+1. Drag and drop the EditControl available in the Visual Studio Toolbox as follows.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
+N> If the EditControl is not listed in the toolbox, add it manually from the Syncfusion.Edit.Wpf assembly which is to be added to the project references folder.
 
+The EditControl can be created in XAML as follows.
 
-N> If the Edit control is not listed in the toolbox, add it manually from the Syncfusion.Edit.Wpf assembly.The Syncfusion.Edit .Wpf assembly has to be added also to the project References folder.
+{% tabs %}
 
-The EditControl control can be created in XAML as follows.
-
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:EditControl x:Name="editControl1" BorderBrush="Black" BorderThickness="1" Background="White" Foreground="Black" HorizontalAlignment="Left" Height="300" Margin="0" VerticalAlignment="Top" Width="300"/>
-
-
 
 {% endhighlight %}
 
-
-### Creating the EditControl Control using C#
-
-The EditControl control can be created in C# as follows:
+{% endtabs %}
 
 
+### Creating an EditControl using C#
 
-{% highlight c# %}
+The EditControl can be created in C# as follows.
+
+{% tabs %}
+
+{% highlight C# %}
 
 [C#]
 
@@ -50,7 +50,7 @@ EditControl EditControl = new EditControl();
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
