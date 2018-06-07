@@ -15,10 +15,11 @@ With the language support, EditControl enables the users to create, open, modify
 
 The `DocumentLanguage` property in the EditControl class enables the users to select the language. DocumentLanguage is a Language enum type property with default value as Text. The following lines of code can be used to change the DocumentLanguage property.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 <sfedit:EditControl x:Name="editControl" DocumentLanguage="CSharp" DocumentSource="C:\Source.cs" FontSize="13"/>
 
-{% tabs %}
 
 {% endhighlight %}
 

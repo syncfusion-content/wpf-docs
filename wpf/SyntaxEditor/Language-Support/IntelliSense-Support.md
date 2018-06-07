@@ -174,7 +174,9 @@ CustomIntelliSenseItemTemplate}"/>
 
 Create a Custom Business Object implemented using IIntellisenseItem interface by using the following code.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 /// <summary>
 
 /// Business object implemented from IIntelliSenseItem interface in 
@@ -242,6 +244,8 @@ set;
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Creating a custom collection of the business object
 
@@ -449,7 +453,7 @@ set;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ObservableCollection<CustomIntelliSenseItem> customItems = new
 
@@ -553,6 +557,7 @@ EditControl1.IntellisenseCustomItemsSource = customItems;
 
 {% endhighlight %}
 
+{% endtabs %}
 The following screenshot illustrates IntelliSense displaying first-level of items from custom collection.
 
 ![](IntelliSense-Support_images/IntelliSense-Support_img6.jpeg)
