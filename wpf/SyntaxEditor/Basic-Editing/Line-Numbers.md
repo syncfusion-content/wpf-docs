@@ -9,9 +9,11 @@ documentation: ug
 
 ## Line Numbers
 
-Edit WPF enables users to display line numbers for the content in the Edit Control. Line numbers can be displayed or hidden by using the **ShowLineNumber** property of the EditControl class. The following lines of code can be used to display or hide line numbers in Edit Control. 
+Edit WPF enables users to display line numbers for the content in the EditControl. Line numbers can be displayed or hidden by using the `ShowLineNumber` property of the EditControl class. The following lines of code can be used to display or hide line numbers in EditControl.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <sfedit:EditControl Name="editControl" ShowLineNumber="False">
 
@@ -22,14 +24,15 @@ Edit WPF enables users to display line numbers for the content in the Edit Contr
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 editControl.ShowLineNumber = false;
 
 {% endhighlight %}
 
+{% endtabs %}
 
-The following image displays hidden Line Numbers
+The following image displays hidden line numbers.
 
 
 

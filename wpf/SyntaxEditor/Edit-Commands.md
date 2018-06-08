@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Edit Commands of the Edit Control for WPF
+title: Edit Commands of the Edit Control for WPF
 description: Explains about Edit Commands of the Edit Control for WPF
 platform: wpf
 control: Syntax Editor
@@ -9,9 +9,12 @@ documentation: ug
 
 # Edit Commands
 
-Essential Edit for WPF contains built-in **RoutedUICommands** for all editing and file operations like select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the control by using the **Command** property of the external controls like button, menu item and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
+Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command** property of the external controls such as button, menu item, and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
+
 <Menu BorderBrush="LightGray" BorderThickness="0,0,1,2" Grid.ColumnSpan="1">
 
 <MenuItem Header="_File" Background="Transparent" Width="{Binding}" >
@@ -42,8 +45,10 @@ Grid.Row="1" >
 
 {% endhighlight %}
 
+{% endtabs %}
 
-Following image displays “Open” Edit Command window 
+
+The following image displays **Open** edit command window.
 
 ![](Edit-Commands_images/Edit-Commands_img1.jpeg)
 
