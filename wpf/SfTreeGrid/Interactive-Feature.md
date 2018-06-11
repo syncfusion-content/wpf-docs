@@ -235,7 +235,7 @@ The following image shows the DefaultTemplate applied through ToolTipTemplateSel
 
 ![](Interactive-Features_images/InteractiveFeatures_img5.png)
 
-The following image showa the AlternateTemplate applied through ToolTipTemplateSelector.
+The following image shows the AlternateTemplate applied through ToolTipTemplateSelector.
 
 ![](Interactive-Features_images/InteractiveFeatures_img6.png)
 
