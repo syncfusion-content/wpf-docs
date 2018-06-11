@@ -11,11 +11,11 @@ documentation: ug
 
 The PropertyGrid control has support to expand instance properties of a class which has ExpandableObjectConverter as its TypeConverter.
 
-###  Use Case Scenarios
+###  Use case scenarios
 
 Using the PropertyExpandMode property, users can choose whether the nested properties of the selected object can be expanded or not. By setting the PropertyExpandMode as NestedMode, the nested properties of the selected object can be expanded, and by setting the PropertyExpandMode as FlatMode, the selected object is shown in flat mode.
 
-### Tables for Properties
+### Tables for properties
 
 <table>
 <tr>
@@ -33,7 +33,7 @@ Enum</td></tr>
 </table>
 
 
-####  Sample Link
+####  Sample link
 
 1. Select Start>Programs>Syncfusion>Essential Studio xx.x.x.xx>Dashboard.
 2. Select Run Locally Installed Samples in WPF button.
@@ -41,7 +41,7 @@ Enum</td></tr>
 4. Choose the Getting Started samples listed under it to launch. 
 
 
-## Adding Expand Nested Properties in Property Grid to an Application 
+## Adding expand nested properties in property grid to an application 
 
 In the following code sample the PropertyVisibilityMode is set as NestedMode in both XAML and C#.
 
@@ -50,7 +50,6 @@ In the following code sample the PropertyVisibilityMode is set as NestedMode in 
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid Name="propertyGrid" PropertyExpandMode="NestedMode">            
-
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}

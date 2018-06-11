@@ -9,9 +9,11 @@ documentation: ug
 
 ## Selected Text Drag and Drop
 
-It is possible to drag and drop selected text in a paragraph by setting the **AllowDragDrop** property to **True**. Dragging selected text by default will perform a move operation, while dragging using the **Ctrl** key will perform a copy operation.
+It is possible to drag and drop selected text in a paragraph by setting the `AllowDragDrop` property to `true`. Dragging selected text by default will perform a move operation, while dragging using the <kbd>Ctrl</kbd> key will perform a copy operation.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <sfedit:EditControl Name="editControl" AllowDrop="True" EnableOutlining="False"  AllowDragDrop="True">
 
@@ -20,7 +22,7 @@ It is possible to drag and drop selected text in a paragraph by setting the **Al
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 editControl.AllowDragDrop = true;
 
@@ -28,3 +30,4 @@ editControl.AllowDrop = true;
 
 {% endhighlight %}
 
+{% endtabs %}

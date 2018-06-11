@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tool Bar support| OLAP Client  | Wpf | Syncfusion
-description: tool bar support
+title: Toolbars
+description: Toolbars in OLAP Client
 platform: wpf
 control: OLAP Client 
 documentation: ug
 ---
 
-# Tool Bar support
+# Toolbars
 
 Three toolbars are there in OLAP Client to provide the number of options to perform the different operations.
 

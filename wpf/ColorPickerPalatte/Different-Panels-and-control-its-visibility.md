@@ -11,11 +11,11 @@ documentation: ug
 
 The ColorPickerPalette control includes three panels namely ThemePanel, StandardColorPanel, RecentlyUsedPanel. You can set the visibility of these panels by using the ThemePanelVisibility, StandardPanelVisibility, RecentlyUsedPanelVisibility properties respectively. The ThemePanel displays the palette of selected theme colors and their variant colors in the panel. The StandardColorPanel displays a palette of 8 preset colors in panel. The RecentlyUsedColor panel displays the most recently used colors.
 
-## Use Case Scenarios
+## Use case scenarios
 
 You can use the ColorPickerPalette control to view the panels of your choice.
 
-## Adding Setting Panel Visibilities to an Application 
+## Adding setting panel visibilities to an application 
 
 Setting Panel Visibilities can be added to an application by using XAML or C# code.
 
@@ -133,7 +133,7 @@ N/A
 </table>
 
 
-### Sample Link
+### Sample link
 
 To view samples: 
 

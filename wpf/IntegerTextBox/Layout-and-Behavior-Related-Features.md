@@ -21,45 +21,39 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 
 
-## Negative Foreground
+## Negative foreground
 
 The Foreground of the IntegerTextBox can be customized based on the Value property. When a Negative value is assigned to the Value property, then automatically the NegativeForeground value gets assigned to the Foreground property.
 
 Note: The NegativeForeground in the integer textbox can be enabled by setting the ApplyNegativeForeground property to true.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Width="150" Height="25" Value="-123" 
-
                            ApplyNegativeForeground="True" NegativeForeground="Red"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)
 
 
 
-## Zero Color
+## Zero color
 
 The Foreground of the IntegerTextBox can be customized based on the Value property. When zero is assigned as a value to the Value property, then automatically the ZeroColor is set to the Foreground property.
 
 Note: The ZeroColor in the integer textbox can be enabled by setting the ApplyZeroColor property to true.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Width="150" Height="25" Value="0" 
-
                            ApplyZeroColor="True" ZeroColor="Magenta"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)
 

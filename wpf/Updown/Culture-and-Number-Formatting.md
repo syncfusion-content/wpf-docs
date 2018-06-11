@@ -19,26 +19,19 @@ The Number formatting controls how a number is displayed in the `UpDown` control
 {%tabs%}
 
 {% highlight XAML %}
+
 <syncfusion:UpDown Name="upDown" Culture="en-US" Width="100" Height="23" />
-
-
 
 {% endhighlight %}
 
 {% highlight C# %}
+
 UpDown updown = new UpDown();
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
-
 updown.Culture = cultureInfo;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -55,25 +48,16 @@ Grid1.Children.Add(updown);
 
 <syncfusion:UpDown Name="upDown" Culture="bs-Latn" Width="100" Height="23" />
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("bs-Latn");
-
 updown.Culture = cultureInfo;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
@@ -105,16 +89,10 @@ The `NumberFormatInfo` can be set for the `UpDown` control as shown in the follo
 
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Value="5555555">
-
 <syncfusion:UpDown.NumberFormatInfo>
-
 <globalization:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
-
 </ syncfusion:UpDown.NumberFormatInfo>  
-
 </ syncfusion:UpDown>
-
-
 
 {% endhighlight %}
 
@@ -134,34 +112,21 @@ The following code example explains to set the `GroupSeparatorEnabled` for the `
 {% highlight XAML %}
 <syncfusion:UpDown Name="upDown" Width="100" Height="23" Value="1000000" GroupSeperatorEnabled="True" />
 
-
-
-
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 updown.Value = 1000000;
-
 updown.GroupSeperatorEnabled = true;
-
 Grid1.Children.Add(updown);  
 
-
-
 {% endhighlight %}
-
-
 {% endtabs %}
  
-## Tables for NumberFormat Properties and Events of UpDown
+## Tables for NumberFormat properties and events of UpDown
 
 <table>
 <tr>

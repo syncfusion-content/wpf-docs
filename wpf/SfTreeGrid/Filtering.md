@@ -19,6 +19,7 @@ SfTreeGrid provides support for programmatic filtering. It can be achieved by se
 public bool FilerNodes(object o)
 {
     var data = o as Employee;
+
     if (data.Salary > 70000)
         return true;
     return false;

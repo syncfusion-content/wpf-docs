@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Online Analytical Processing OLAP| OLAPCommon  | Wpf | Syncfusion
-description: online analytical processing (olap)
+title: Online Analytical Processing (OLAP)
+description: Online analytical processing (OLAP)
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 

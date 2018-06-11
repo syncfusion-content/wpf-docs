@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Position| OLAPCommon  | Wpf | Syncfusion
-description: drill position
+title: Drill Position Support for OLAP Report
+description: Drill position support for OLAP report
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 
-# Drill Position
+# Drill Position Support for OLAP Report
 
 Drill position enables the user to drill the current position of a selected member in the OlapReport. This will exclude the drilled data of the selected member in other positions by using MDX query.
 

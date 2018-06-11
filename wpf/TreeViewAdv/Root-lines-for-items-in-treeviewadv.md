@@ -15,47 +15,27 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 {% highlight XAML %}
 
 <!-- Adding TreeViewAdv With show root lines -->
-
 <syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="False">
-
 <!-- Adding TreeViewItemAdv -->
-
 <syncfusion:TreeViewItemAdv Header="Marital Status">
-
 <syncfusion:TreeViewItemAdv Header="Single"/>
-
 <syncfusion:TreeViewItemAdv Header="Married"/>
-
 <syncfusion:TreeViewItemAdv Header="Married with Children"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-
 <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-
 <syncfusion:TreeViewItemAdv Header="Tetanus"/>
-
 <syncfusion:TreeViewItemAdv Header="Polio"/>
-
 <syncfusion:TreeViewItemAdv Header="Measles"/>
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="Country Information"/>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 // Show root lines
-
 treeViewAdv.ShowRootLines = false;
 
 {% endhighlight %}
@@ -63,7 +43,6 @@ treeViewAdv.ShowRootLines = false;
 {% highlight VB %}
 
 ' Show root lines
-
 treeViewAdv.ShowRootLines = False
 
 {% endhighlight %}
@@ -71,5 +50,3 @@ treeViewAdv.ShowRootLines = False
 {% endtabs %} 
 
 ![](Root_lines_for_items_in_treeviewadv_images/Root_lines_for_items_in_treeviewadv_img1.jpeg)
-
-

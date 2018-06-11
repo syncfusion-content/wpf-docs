@@ -38,21 +38,25 @@ private void DateTimeEdit_DateTimeChanged(DependencyObject d, DependencyProperty
 This event occurs when the MinDateTime property of the DateTimeEdit control is changed.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:DateTimeEdit Width="150" MinDateTimeChanged="DateTimeEdit_MinDateTimeChanged"/>
 
 {% endhighlight  %}
+
 {% endtabs %}
 
 You can handle the event as follows:
 
 {% tabs %}
+
 {% highlight c# %}
 
 private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## MaxDateTimeChanged
@@ -94,11 +98,15 @@ This event occurs when the Pattern property of the DateTimeEdit control is chang
 You can handle the event as follows:
 
 {% tabs %}
+
 {% highlight c# %}
 
-private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
+private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        
+{  
+}
 
 {% endhighlight  %}
+
 {% endtabs %}
 
 ## CalendarPopupOpened

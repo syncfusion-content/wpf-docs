@@ -17,68 +17,51 @@ If the PercentTextBox is read-only, then no user input or edits are allowed but 
 
 The Corner Radius describes the degree to which corners are rounded. This property has no default value.
 
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
 
-  
+<syncfusion:PercentTextBox x:Name="percentTextBox" PercentValue="123" Height="25" Width="150" CornerRadius="4"/>
 
-    <syncfusion:PercentTextBox x:Name="percentTextBox" PercentValue="123" Height="25" Width="150" CornerRadius="4"/>
-
- {% endhighlight %}
-
-
-
-
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)
 
 
-## Negative Foreground
+## Negative foreground
 
 The Foreground of the PercentTextBox can be customized based on the Value property. When Negative a value is assigned to the PercentValue property, then automatically the NegativeForeground value gets assigned to Foreground property.
 
 N> The NegativeForeground in the PercentTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
 
-   
-
-    <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
-
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
                             CornerRadius="2" PercentValue="-123" NegativeForeground="Red" 
-
                             ApplyNegativeForeground="True"/>
 
- {% endhighlight %}
-
-
-
-
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)
 
 
-## Zero Color
+## Zero color
 
 The Foreground of the PercentTextBox can be customized based on the PercentValue property. When zero is assigned as a value to the PercentValue property, then automatically the ZeroColor is set to the Foreground property.
 
 N> The ZeroColor in the PercentTextBox can be enabled by setting the ApplyZeroColor property to true.
 
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
 
-    
-
-    <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
-
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
                             CornerRadius="2" PercentValue="-123" ZeroColor="Green" 
-
                             ApplyZeroColor="True"/>
 
- {% endhighlight %} 
-
+{% endhighlight %} 
+{% endtabs %}
 
 
 

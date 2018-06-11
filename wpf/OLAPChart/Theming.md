@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theming| OlapChart | Wpf | Syncfusion
+title: Theming
 description: Theming
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 

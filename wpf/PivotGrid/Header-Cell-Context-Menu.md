@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 13415-Expand and Collapse Operations
-description: header cell context menu
+title: Expand/Collapse Rows and Columns
+description: Expand/collapse rows and columns through context menu
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Expand/Collapse in PivotGrid
+# Expand/Collapse Rows and Columns
 
 Expand/collapse operations can be done at both UI and programmatic level.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 13425-Summary-Types
-description: 1.3.4.25 summary types
+title: Summary Types
+description: Summary types
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
@@ -25,7 +25,7 @@ PivotGrid summarizes the data for various data types by using the `SummaryType` 
 
 `SummaryType` property can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
 
-If through *XAML*, please refer the below code sample.
+For *XAML*, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -48,7 +48,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For *Code-behind*, refer to the following code sample.
 
 {% highlight C# %}
 

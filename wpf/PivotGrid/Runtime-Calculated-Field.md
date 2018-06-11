@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Calculated Field
-description: To Insert Calculated Field at Run-Time
+description: To insert calculated field at run-time
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
@@ -19,7 +19,7 @@ To insert a new CalculatedField, open the Calculated Field window using the Grou
 
 _Defining Name for the Calculated Field_
 
-Note that, the **Formula** can be entered by inserting calculation fields through **Fields** section. For inserting numerical operator, you can use formula pop-up as shown in the below screen-shot.
+Note that, the **Formula** can be entered by inserting calculation fields through **Fields** section. For inserting numerical operator, you can use formula pop-up as shown in the below screenshot.
 
 ![](Calculated-Field-images/Formula has been given to the newly created calculated field.png)
 

@@ -20,11 +20,11 @@ Connector can be created by defining the start and end points. The Path to be dr
 {% tabs %}
 {% highlight xaml %}
 <!--Style for the Connector-->
-<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
+<Style TargetType="syncfusion:Connector">
   <Setter Property="ConnectorGeometryStyle">
     <Setter.Value>
       <Style TargetType="Path">
-        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+        <Setter Property="Stroke" Value="CornflowerBlue"></Setter>
         <Setter Property="StrokeThickness" Value="1"></Setter>
       </Style>
     </Setter.Value>
@@ -32,7 +32,7 @@ Connector can be created by defining the start and end points. The Path to be dr
   <Setter Property="TargetDecoratorStyle">
     <Setter.Value>
       <Style TargetType="Path">
-        <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
+        <Setter Property="Fill" Value="CornflowerBlue"></Setter>
         <Setter Property="StrokeThickness" Value="1"></Setter>
       </Style>
     </Setter.Value>
@@ -130,19 +130,21 @@ public NodeViewModel AddNode(double offsetX, string text)
 {% endhighlight %}
 {% endtabs %}
 
+The `SourceNodeID` and `TargetNodeID` properties also allows to define the nodes to be connected, for sample please refer to [ConnectNodes](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/NodeID-1392072082).
+
 ![](Connector_images/Connector_img3.PNG)
 
 N> By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
 
 ## Connections with Ports
 
-The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. 
+The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allow to create connections between some specific points of Source/Target Nodes. 
 
 For Connections with Ports, please refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
 
 ## Segments
 
-The path of the Connector is defined with a collection of segments.
+The path of the Connector is defined with a collection of `Segments`.
 
 ![](Connector_images/Connector_img31.PNG)
 
@@ -202,7 +204,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ### CubicCurveSegment
 
-Cubic curve segments are used to create curve segments and the curves are configurable with the control points.
+Cubic curve segments are used to create curve segments and the curves are configurable with the control points.To create a Curve line, you should specify the segment as `CubicCurveSegment` and add a CubicCurveSegment  to collection.
 
 {% tabs %}
 {% highlight C# %}
@@ -242,13 +244,41 @@ N> Overlapping with Source and Target nodes are only avoided. Other nodes are no
 
 ## Decorator
 
-Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector. 
+Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the `SourceDecorator` and `TargetDecorator` properties of Connector. 
 
 The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the shape of the decorators.
 
 For Sample, please refer to [Decorator](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/DecoratorConnector1321823789 "Decorator")
 
 ![](Connector_images/Connector_img15.PNG)
+
+The `SourceDecoratorPivot` and `TargetDecoratorPivot` properties allows to Customize the position of the decorators in the connector.
+
+## SegmentDecorators
+ 
+ `SegmentDecorator` property allows to customize the shape within the Connector. `SegmentDecoratorStyle` property allows to customize the Style of SegmentDecorator.
+ 
+ {% tabs %}
+ {% highlight c# %}
+ 
+ //Define the collection of SegmentDecorator
+SegmentDecorators = new ObservableCollection<ISegmentDecorator>()
+{
+    //Define the SegmentDecorator
+    new SegmentDecorator()
+    {
+        //Define the Shape of SegmentDecorator
+        Shape = "M0,0 L10,5 L0,10",
+        Length =0.4
+    }
+}
+
+ {% endhighlight %}
+ {% endtabs %}
+ 
+ For Sample, please refer to [SegmentDecorator](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/SegmentDecorator575139946). 
+ 
+ ![](Connector_images/SegmentDecorator.PNG)
 
 ## Corner radius
 
@@ -333,9 +363,9 @@ The Direction of Bridge can be customized with property `BridgeDirection`.
       <!--Initialize the ConnectorCollection-->
       <syncfusion:ConnectorCollection>
         <!--Initialize the Connector-->
-        <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,300">
+        <syncfusion:ConnectorViewModel SourcePoint="88,183" TargetPoint="250,300">
         </syncfusion:ConnectorViewModel>
-        <syncfusion:ConnectorViewModel SourcePoint="250,50" TargetPoint="150,300">
+        <syncfusion:ConnectorViewModel SourcePoint="150,156" TargetPoint="150,300">
         </syncfusion:ConnectorViewModel>
       </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
@@ -355,14 +385,14 @@ diagram.Connectors = new ConnectorCollection();
 //Define the Connector
 ConnectorViewModel connector = new ConnectorViewModel()
 {
-    SourcePoint = new Point(100, 100),
+    SourcePoint = new Point(88, 183),
     TargetPoint = new Point(250, 300)
 };
 //Adding Connector to Collection
 (diagram.Connectors as ConnectorCollection).Add(connector);
 ConnectorViewModel connector1 = new ConnectorViewModel()
 {
-    SourcePoint = new Point(250, 50),
+    SourcePoint = new Point(150, 156),
     TargetPoint = new Point(150, 300),
 };
 (diagram.Connectors as ConnectorCollection).Add(connector1);
@@ -374,6 +404,41 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 N> Bezier segments do not support Bridging.
 
+#### BridgeSpace
+
+The `BridgeSpace` property allows to customize the size of bridge in a connector.
+
+{% tabs %}
+{% highlight c# %}
+
+//Define the BridgeDirection
+diagram.BridgeDirection = BridgeDirection.Bottom;
+//Define Constraints
+diagram.Constraints = diagram.Constraints | GraphConstraints.Bridging;
+//Define the ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+//Define the Connector
+ConnectorViewModel connector = new ConnectorViewModel()
+{
+    //Define the Bridge space of the connector
+    BridgeSpace=30,
+    SourcePoint = new Point(88, 183),
+    TargetPoint = new Point(250, 300),
+};
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(connector);
+ConnectorViewModel connector1 = new ConnectorViewModel()
+{
+    SourcePoint = new Point(150, 156),
+    TargetPoint = new Point(150, 300),
+};
+(diagram.Connectors as ConnectorCollection).Add(connector1);
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Connector_images/bridgespace.png)
+
 ## Appearance
 
 StrokeThickness, Stroke and style of the Connector and Decorators can be customized with a set of defined properties.
@@ -383,7 +448,7 @@ StrokeThickness, Stroke and style of the Connector and Decorators can be customi
 
 <!--Style for ConnectorGeometryStyle-->
 <Style TargetType="Path" x:Key="ConnectorStyle">
-  <Setter Property="Stroke" Value="#FF5B9BD5"/>
+  <Setter Property="Stroke" Value="CornflowerBlue"/>
   <Setter Property="StrokeThickness" Value="2"/>
   <Setter Property="StrokeDashArray" Value="2"/>
   <Setter Property="Opacity" Value="0.8"/>
@@ -412,6 +477,10 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 ## Interaction
 
+#### Draw Connector
+
+* On drawing a connector, `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, please refer to [ObjectDrawn](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html) . 
+
 ### Connection Editing
 
 * Each segment and end points of a selected Connector is editable with some specific handles/thumbs.
@@ -424,7 +493,11 @@ Source and target points of the selected connectors are represented with two han
 
 * If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
-* If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
+* If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState and CauseValue Connector Item with its old and new values.
+* Unknown- On dragging the target thumb of available connector, will notify the Cause as `UnKnown`.
+* Drawing- On drawing a connector in an Element will notify the Cause as `Drawing`.
+
+To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) . 
 
 * If any changes made in the segment of the connector,`ConnectorEditingEvent` will notify the DragState, Item and ThumbType.To explore about arguments, please refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html) .
 
@@ -449,7 +522,7 @@ Source and target points of the selected connectors are represented with two han
 
 ## Hit Padding
 
-Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area.
+Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. `HitPadding` property allow to customize the vicinity area while connecting.
 
 {% tabs %}
 {% highlight xaml %}

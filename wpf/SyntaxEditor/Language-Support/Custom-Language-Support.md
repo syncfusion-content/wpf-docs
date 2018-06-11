@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deals with Custom Language support Provided by Edit Control
-description: Deals with Custom Language support Provided by Edit Control
+title: Custom Language support Provided by Edit Control
+description: Custom Language support Provided by Edit Control
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -9,44 +9,46 @@ documentation: ug
 
 ## Custom Language Support
 
-**EditControl** provides built-in syntax highlighting and outlining support for common procedural languages such as **C#** and **Visual** **Basic**, markup languages like **XAML** and **XML**, and **SQL**. It also allows the developer to create **Custom** **Language** configurations to apply syntax highlighting and outlining.
+The EditControl provides built-in syntax highlighting and outlining support for common procedural languages such as C# and Visual Basic, markup languages like XAML and XML, and SQL. It also allows the developer to create Custom Language configurations to apply syntax highlighting and outlining.
 
-**EditControl’s** Custom Language support helps the developers to create code editors for custom languages by specifying their language configurations class and applying it as a Custom Language in **EditControl**.
+The EditControl’s Custom Language support helps the developers to create code editors for custom languages by specifying their language configurations class and applying it as a Custom Language in EditControl.
 
-**Edit** **WPF** provides the following classes to enable the users create their Custom Languages by inheriting from any of the following base classes.
+The Edit WPF provides the following classes to enable the users create their Custom Languages by inheriting from any of the following base classes.
 
-* LanguageBase 
+* LanguageBase
 * ProceduralLanguageBase
 * MarkupLanguageBase
 
 Each of these classes has basic level of implementations to let the users define minimum set of configurations to get started with the Custom Languages easily.
 
-**Important** **features**
+**Important features**
 
-* Allows the developer to choose the base class considering the complexity and type of language that developer is planning to create. 
+* Allows the developer to choose the base class considering the complexity and type of language that developer is planning to create.
 * Provides much more flexibility to developers than before in writing their custom logics in syntax coloring and outlining.
 
-Supports **DataBinding** of **Lexem** and formats by implementing their custom business classes with **ILexem** and **IFormat** **Interfaces**.
+Supports DataBinding of Lexem and formats by implementing their custom business classes with ILexem and IFormat Interfaces.
 
-**Customization** **of** **features**
+### Customization of features
 
-**Language** **Base** **Classes** 
+**Language** **base** **classes**
 
-As described in earlier topics, **Edit** **WPF** provides three base classes for the developers to choose, in order to create their Custom Languages. Following are the level of implementations available in each of the base classes.
+As described in earlier topics, the Edit WPF provides three base classes for the developers to choose, in order to create their Custom Languages. Following are the level of implementations available in each of the base classes.
 
-**LanguageBase**—Contains implementation that are common for all the languages such as rendering lines, backspace and delete key operations, comment and uncomment commands and provides methods to override language specific functionalities such as **syntax** **coloring**, **outlining** and **IntelliSense**.
+**LanguageBase**: Contains implementation that are common for all the languages such as rendering lines, backspace and delete key operations, comment and uncomment commands and provides methods to override language specific functionalities such as syntax coloring, outlining, and IntelliSense.
 
-**ProceduralLanguageBase**—Contains implementations of **syntax** **highlighting**, **outlining** and **IntelliSense** for procedural languages such **C#** and **Visual** **Basic**.
+**ProceduralLanguageBase**: Contains implementations of syntax highlighting, outlining and IntelliSense for procedural languages such C# and Visual Basic.
 
-**MarkupLanguageBase**—Contains implementation of Regex based **syntax** **highlighting** and **outlining** features specific to markup languages such as **XAML** and **XML**.
+**MarkupLanguageBase**: Contains implementation of Regex based syntax highlighting and outlining features specific to markup languages such as XAML and XML.
 
-**Creating** **a** **Custom** **Language**
+### Creating a custom language
 
-This section of the documentation discusses on creating a **Custom** **Language** configuration with **EditControl**. A language specification document for which custom language is being created will help the users in finding the details of languages such as keywords, literals, comments etc. In this section, a custom language for **IronPython** is created as an example.
+This section of the documentation discusses on creating a Custom Language configuration with EditControl. A language specification document for which custom language is being created will help the users in finding the details of languages such as keywords, literals, comments etc. In this section, a custom language for IronPython is created as an example.
 
-Create a new class inheriting from **ProceduralLanguageBase** class and set basic properties of the language, by using the following code.
+Create a new class inheriting from ProceduralLanguageBase class and set basic properties of the language, by using the following code.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 public class PythonLanguage : ProceduralLanguageBase
 
 {
@@ -79,17 +81,21 @@ this.TextForeground = Brushes.Black;
 
 {% endhighlight %}
 
-Create **Lexem** and **Formats** collection for Custom Language, to enable data binding with **Lexem** and **Format** properties; we have modified the Lexem and Formats property type to **IEnumerable** from **LexemCollection** and **FormatCollection** respectively.
+{% endtabs %}
+
+Create Lexem and Formats collection for Custom Language, to enable data binding with Lexem and Format properties; we have modified the `Lexem` and `Formats` property type to IEnumerable from LexemCollection and FormatCollection respectively.
 
 N> In previous versions,Lexem and Formats were added directly to Lexems and Formats properties of EditLanguage class.Now since it is IEnumerable,a custom collection need to be created and apply it to Lexem and Format properties of custom language class,here it is PythonLanguage class.
 
 **Formats** **for** **IronPython**
 
-Create a collection of **IFormat** implemented classes to apply in **Formats** property of custom language, by using the following code. 
+Create a collection of IFormat implemented classes to apply in Formats property of custom language, by using the following code. 
 
 N> EditControl uses this collection to fetch the color to be applied to the tokens.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <syncfusion:FormatsCollection x:Key="pythonLanguageFormats">
 
@@ -109,13 +115,17 @@ N> EditControl uses this collection to fetch the color to be applied to the toke
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Lexem** **for** **IronPython**
 
-Create a collection of **ILexem** implemented class, by using the following code. 
+Create a collection of ILexem implemented class, by using the following code. 
 
 N> This collection will be applied to Lexem property of the custom language.EditControl uses the Lexem property to retrieve all keywords,comments,literals,preprocessors etc.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 <syncfusion:LexemCollection x:Key="pythonLanguageLexems">
 
 <syncfusion:Lexem StartText="class \w+[\s:\w,()]+" IsRegex="True" IsMultiline="True" ContainsEndText="True" LexemType="CodeSnippet" EndText="\r\n" ScopeLevel="Class" ShowAlternateIntellisenseText="True"  IntellisenseDisplayText="class"/>
@@ -280,9 +290,13 @@ N> This collection will be applied to Lexem property of the custom language.Edit
 
 {% endhighlight %}
 
-Initialize **Lexem** and **Formats** property of **PythonLanguage**, by using the following code.
+{% endtabs %}
 
-{% highlight c# %}
+Initialize Lexem and Formats properties of PythonLanguage by using the following code.
+
+{% tabs %}
+
+{% highlight C# %}
 
 customLanguage.Lexem = this.Resources["pythonLanguageLexems"] as LexemCollection;
 
@@ -292,23 +306,25 @@ customLanguage.Formats = this.Resources["pythonLanguageFormats"] as FormatsColle
 
 {% endhighlight %}
 
-Syntax highlighting will work with these changes itself as the implementations are same for procedural languages. Moreover, if there are any tweaks needs to be done, **ApplyColoring** method can be overridden to apply syntax colorings.
+{% endtabs %}
 
-Outlining in **IronPython** differs when compared to **C#** and **Visual** **Basic** as **IronPython** does not have specific keyword or symbol to mark the close of a block. So the regular expand collapse logic in **ProceduralLanguageBase** needs to be overridden to write custom outlining logic for **IronPython**.
+Syntax highlighting will work with these changes itself as the implementations are same for procedural languages. Moreover, if there are any tweaks needs to be done, ApplyColoring method can be overridden to apply syntax colorings.
 
-To provide interactivity and overcome **UI** **blockages**, **ApplyExpandCollapse** method runs in the Background thread hence any attempt to access resources outside this thread will throw a **thread** **access** **exception**. Therefore helper classes that would serve the necessary information as argument for this **ApplyExpandCollapse** method is created. 
+Outlining in IronPython differs when compared to C# and Visual Basic as IronPython does not have specific keyword or symbol to mark the close of a block. So the regular expand collapse logic in ProceduralLanguageBase needs to be overridden to write custom outlining logic for IronPython.
+
+To provide interactivity and overcome UI blockages, ApplyExpandCollapse method runs in the Background thread hence any attempt to access resources outside this thread will throw a thread access exception. Therefore helper classes that would serve the necessary information as argument for this ApplyExpandCollapse method is created.
 
 **LineItemExpandInformation**
 
 <table>
 <tr>
 <td>
-Name of the Property<br/><br/></td><td>
+Name of the property<br/><br/></td><td>
 Description<br/><br/></td></tr>
 <tr>
 <td>
 ContainsLines<br/><br/></td><td>
-A boolean property to determine whether the line contains child items. Default value is set to false. This property has to be set based on the language’s block configuration. Set this property to true to display a button in the outlining area of EditControl otherwise a line is displayed.<br/><br/></td></tr>
+A boolean property to determine whether the line contains child items. Default value is set to false. This property has to be set based on the language’s block configuration. Set this property to `true` to display a button in the outlining area of EditControl otherwise a line is displayed.<br/><br/></td></tr>
 <tr>
 <td>
 ContainsPreprocessor<br/><br/></td><td>
@@ -320,7 +336,7 @@ Specifies the line number of block’s end. <br/><br/></td></tr>
 <tr>
 <td>
 IsExpanded<br/><br/></td><td>
-Specifies the state of the LineItem. This property displays  '–' symbol for true value and '+' symbol for false value.<br/><br/></td></tr>
+Specifies the state of the LineItem. This property displays  '–' symbol for `true` value and '+' symbol for `false` value.<br/><br/></td></tr>
 <tr>
 <td>
 LineStartBlock<br/><br/></td><td>
@@ -346,14 +362,14 @@ Property values of **LineItemExpandInformation** need to be updated in the **App
 
 **ApplyExpandCollapseArgs**
 
-**ApplyExpandCollapseArgs** class contains following properties to enable the developers get necessary information about the language and content of the **EditControl**.
+ApplyExpandCollapseArgs class contains following properties to enable the developers get necessary information about the language and content of the EditControl.
 
 <table>
 <tr>
 <td>
-Name of the Property<br/><br/></td><td>
+Name of the property<br/><br/></td><td>
 Description<br/><br/></td><td>
-Type of the Property<br/><br/></td></tr>
+Type of the property<br/><br/></td></tr>
 <tr>
 <td>
 Assemblies<br/><br/></td><td>
@@ -388,9 +404,11 @@ List (LineItemExpandInformation)<br/><br/></td></tr>
 
 
 
-Here we proceed to override the **ApplyExpandCollapse** method of **LanguageBase** **class** to apply custom outlining. In this method, use **LanguageBlocks** property from argument as reference for Block definitions. These block definitions are generated using the **Lexem** property. 
+Here we proceed to override the ApplyExpandCollapse method of LanguageBase class to apply custom outlining. In this method, use LanguageBlocks property from argument as reference for Block definitions. These block definitions are generated using the Lexem property.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 /// <summary>
 
@@ -730,7 +748,9 @@ return true;
 
 {% endhighlight %}
 
-The following screenshot displays IronPython Demo Window
+{% endtabs %}
+
+The following screenshot displays IronPython Demo Window.
 
 ![](CustomLanguageSupport_images/CustomLanguageSupport_img4.jpeg)
 

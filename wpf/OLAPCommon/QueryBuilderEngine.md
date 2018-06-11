@@ -1,17 +1,17 @@
 ---
 layout: post
-title: QueryBuilderEngine| OLAPCommon  | Wpf | Syncfusion
-description: querybuilderengine
+title: Query Builder Engine
+description: Query builder engine
 platform: wpf
-control: OLAPCommon 
+control: OLAP Common
 documentation: ug
 ---
 
-# QueryBuilderEngine
+# Query Builder Engine
 
-This class will generate the query from the MDXQuerySpecification. The query generation starts from invoking the GenerateQueryEx() static method of QueryBuilderEngineVersion3, the inner class of QueryBuilderEngine class. 
+This class will generate the query from the MDXQuerySpecification. The query generation starts from invoking the GenerateQueryEx() static method of QueryBuilderEngineVersion3, the inner class of QueryBuilderEngine class.
 
-## MDXQuerySpecification
+## MDX Query Specification
 
 MDXQuerySpecification is the base for query creation. The MDXQuerySpecification will categorize the element into three clauses namely:
 
@@ -47,7 +47,7 @@ To generate a query:
 1. Get the query specification and iterate through the items in each category (With, Select and Where) of specification and separately store the column elements, row elements, filter elements and slice elements.
 2. The filter, slicer and sort elements are moved to the appropriate axis based on their axis property.
 3. Once the initial level categorizing of elements is completed, it starts creating a query string by writing using With or Select.
-4. Now it starts writing the query by checking each and every property. 
+4. Now it starts writing the query by checking each and every property.
 
 
 
@@ -74,9 +74,9 @@ Up to this the Select section of the query was built and now the From section. T
 
 
 
-Finally, the Cell properties will append with the created query and the query string will be returned to the OlapDataManager. By using the newly generated query, the OlapDataManager will invoke the ExecuteCellSet of DataProvide, which will return the CellSet. 
+Finally, the Cell properties will append with the created query and the query string will be returned to the OlapDataManager. By using the newly generated query, the OlapDataManager will invoke the ExecuteCellSet of DataProvide, which will return the CellSet.
 
-This CellSet will be used to create the PivotEngine, which will give the input to the controls. 
+This CellSet will be used to create the PivotEngine, which will give the input to the controls.
 
 
 

@@ -9,16 +9,16 @@ documentation: ug
 
 ## LanguageBase Members
 
-**LanguageBase** **class** in **Syncfusion**.**Windows**.**Edit** **namespace** plays a vital role in the implementation of language support in **EditControl**. In order to include a support for a new or custom language, a class inherited from **LanguageBase** or its sub classes need to be implemented**.** **LanguageBase** contains a number of properties and methods to enable the **custom** **language** **developers** configure their languages easily. This topic discusses about the properties and methods available in the **LanguageBase** **class**.
+LanguageBase class in Syncfusion.Windows.Edit namespace plays a vital role in the implementation of language support in EditControl. In order to include a support for a new or custom language, a class inherited from LanguageBase or its sub classes need to be implemented. LanguageBase contains a number of properties and methods to enable the custom language developers configure their languages easily. This topic discusses about the properties and methods available in the LanguageBase class.
 
-**Properties**
+Properties
 
 The following table lists the properties available in LanguageBase class and its usage.
 
 <table>
 <tr>
 <td>
-Property Name<br/><br/></td><td>
+Property name<br/><br/></td><td>
 Type<br/><br/></td><td>
 Description<br/><br/></td></tr>
 <tr>
@@ -118,9 +118,9 @@ Brush<br/><br/></td><td>
 Gets or sets Foreground brush to be applied when no Lexems are applicable for the text.<br/><br/></td></tr>
 </table>
 
-**Methods**
+Methods
 
-The following table lists the methods available in **LanguageBase** **class** and its purpose.
+The following table lists the methods available in LanguageBase class and its purpose.
 
 <table>
 <tr>
@@ -147,7 +147,7 @@ Helper method to Apply Expansions for the content in the EditControl. This metho
 <td>
 HideIntellisensePopup()<br/><br/></td><td>
 Void<br/><br/></td><td>
-Helper method to Hide Intellisense Popup.<br/><br/></td></tr>
+Helper method to Hide Intellisense Pop-up.<br/><br/></td></tr>
 <tr>
 <td>
 InitializeExpandCollapse()<br/><br/></td><td>
@@ -167,7 +167,7 @@ Helper method to Refresh lines expansions from a specified line number. Line val
 <td>
 ShowIntellisenseBox(EditIntellisenseArgs args)<br/><br/></td><td>
 Void<br/><br/></td><td>
-Helper method to Show the Intellisense popup.<br/><br/></td></tr>
+Helper method to Show the Intellisense pop-up.<br/><br/></td></tr>
 <tr>
 <td>
 SplitTextToLines()<br/><br/></td><td>

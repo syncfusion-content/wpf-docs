@@ -220,7 +220,7 @@ Grid1.Children.Add(doubleTextBox)
 
 The `EnableExtendedScrolling` property is used to change the values based on the click and drag direction of the mouse movements. The range will increase when the mouse moves to the right or top of the screen, and will decrease when the mouse moves in the direction of the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value is false.
 
-### Adding Extended Scrolling to an Application
+### Adding extended scrolling to an application
 
 The EnableExtendedScrolling property must be set either in XAML or the code file.
 

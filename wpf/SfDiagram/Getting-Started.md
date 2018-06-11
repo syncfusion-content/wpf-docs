@@ -121,42 +121,6 @@ Connectors property is assigned with the ConnectorCollection, that is, Observabl
 {% endhighlight %}       
 {% endtabs %}
 
-#### DataBinding
-
-Any objects can be added as Node/Connector/Annotation/Group for the diagram. But to have better access to diagram, some interfaces have to be implemented by the such objects. Such interfaces are already implemented as a set of ViewModel classes. 
-There classes will just implement properties, they don’t have any logic. 
-
-By default, View will be generated for each ViewModel and Properties of ViewModel (NodeViewModel) are bind to View (Node). We have changed this Default Behavior (ViewModel to View binding will not work).
-In order to bind the properties of ViewModel to View, need to apply binding style for Diagramming elements in application side.
-
-The following code illustrates how to achieve View to View Model binding by using “BindingStyle.xaml”
-
-{% highlight xaml %}
-<!--For View to ViewModel binding-->
-<ResourceDictionary.MergedDictionaries>
-     <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
-</ResourceDictionary.MergedDictionaries>
-
-
-<!--To apply Style for NodeViewModel,ConnectorViewModel,NodePortViewModel,ConnectorPortViewModel-->
-<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
-   <!--Common code for NodeViewModel-->
-</Style>
-<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
-   <!--Common code for ConnectorViewModel-->
-</Style>
-<Style TargetType="syncfusion:NodePort" BasedOn="{StaticResource NodePortBindingStyle}">
-   <!--Common code for NodePortViewModel-->
-</Style>
-<Style TargetType="syncfusion:ConnectorPort" BasedOn="{StaticResource ConnectorPortBindingStyle}">
-   <!--Common code for ConnectorPortViewModel-->
-</Style>
-<Style TargetType="syncfusion:AnnotationEditor" BasedOn="{StaticResource AnnotationEditorBindingStyle}">
-   <!--Common code for AnnotationEditorViewModel-->        
- </Style>
-
-{% endhighlight %}
-
 ### Add Nodes
 
  Let us create and add a NodeViewModel with height, width, shape, shape style,specific position, size and Annotation.
@@ -191,51 +155,34 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding Shape to Node
+#### Adding Shape and ShapeStyle to Node
 
- We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the inbuilt shapes, Shapes dictionary should be merged in Application.  
- Please refer to [Shapes](/wpf/sfdiagram/Shapes) to know about inbuilt Shapes.
+ We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the built-in shapes, Shapes dictionary should be merged in Application.  
+ Please refer to [Shapes](/wpf/sfdiagram/Shapes) to know about built-in Shapes.
  
 {% tabs %}
 {% highlight xaml %}  
 <ResourceDictionary>
-<ResourceDictionary.MergedDictionaries>
-   <!--Initialize Shapes-->
-   <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
-   <!--For View to ViewModel binding-->
-   <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BindingStyle.xaml" />
-</ResourceDictionary.MergedDictionaries>  
+    <ResourceDictionary.MergedDictionaries>
+        <!--Initialize Shapes-->
+        <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+            <!--Style for Shape of the Node-->
+            <Style TargetType="Path" x:Key="ShapeStyle">
+                <Setter Property="Fill" Value="#FF5B9BD5"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Stroke" Value="#FFEDF1F6"/>
+            </Style>
+            
+            <!--To apply Style for NodeViewModel-->
+            <Style TargetType="syncfusion:Node">
+                <Setter Property="ShapeStyle" Value="{StaticResource ShapeStyle}"></Setter>
+            </Style>
 </ResourceDictionary>
- 
-<syncfusion:NodeViewModel ID="Begin" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}"/>
-{% endhighlight %}
-{% highlight c# %}
-  NodeViewModel Begin = new NodeViewModel()
-    {
-       ID = "Begin", UnitWidth = 120, UnitHeight = 40, OffsetX = 300, OffsetY = 60,
-       //Specify shape to the Node from built-in Shape Dictionary
-       Shape = this.Resources["Ellipse"],
-    };
-{% endhighlight %}
-{% endtabs %}
 
-#### Adding Shape Style to the Node
+<syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120"/>
+  {% endhighlight %}
 
-{% tabs %}
-{% highlight xaml %} 
-<!--Style for Shape of the Node-->
-<Style TargetType="Path" x:Key="ShapeStyle">
-   <Setter Property="Fill" Value="#FF5B9BD5"/>
-   <Setter Property="Stretch" Value="Fill"/>
-   <Setter Property="Stroke" Value="#FFEDF1F6"/>
-</Style>
-
-<!--To apply Style for NodeViewModel-->
-<Style TargetType="syncDiagram:Node" BasedOn="{StaticResource NodeBindingStyle}">
-   <Setter Property="ShapeStyle" Value="{StaticResource ShapeStyle}"></Setter>
-</Style>      
-
-{% endhighlight %}
 {% highlight c# %} 
 NodeViewModel Begin = new NodeViewModel()
   {
@@ -258,11 +205,9 @@ N> ID sets for each node to identify nodes easily while setting connectors.
    
  To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
  
- As discussed in [Data-Binding](/wpf/sfdiagram/Data-Binding) section, please apply binding style to AnnotationEditor.
- 
  {% highlight xaml %}
   <!--To apply Style for AnnotationEditorViewModel-->
- <Style TargetType="syncDiagram:AnnotationEditor" BasedOn="{StaticResource AnnotationEditorBindingStyle}">
+ <Style TargetType="syncfusion:AnnotationEditor">
  </Style>
  {% endhighlight %} 
     
@@ -428,10 +373,10 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 </Style>
       
 <!--To apply Style for ConnectorViewModel-->
-<Style TargetType="syncDiagram:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
-    <Setter Property="TargetDecoratorStyle" Value="{StaticResource TargetDecoratorStyle}"/>
-    <Setter Property="ConnectorGeometryStyle" Value="{StaticResource ConnectorGeometryStyle}"/>
-</Style>
+ <Style TargetType="syncDiagram:Connector" >
+     <Setter Property="TargetDecoratorStyle" Value="{StaticResource TargetDecoratorStyle}"/>
+     <Setter Property="ConnectorGeometryStyle" Value="{StaticResource ConnectorGeometryStyle}"/>
+ </Style>
 {% endhighlight %} 
 {% highlight c# %}
 ConnectorViewModel connector1 = new ConnectorViewModel()
@@ -495,4 +440,4 @@ Now output will be looks like,
 
 ![](Getting-Started_images\completeDiagram.png)
     
-Please find flow Diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/146841/ze/FlowDiagram_XAML548679344).
+Please find flow Diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/FlowDiagram_XAML-1022159515).

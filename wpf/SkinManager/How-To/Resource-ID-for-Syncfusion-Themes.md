@@ -13,7 +13,7 @@ The WPF Skin Manager provides a swatch of theme colors that contains all Syncfus
 
 N> ThemeColors class has been referred at application level by adding Syncfusion.Shared.WPF assembly.
 
-### Use Case Scenarios
+### Use case scenarios
 
 Users can customize brushes easily to get unique colors for all controls in the application.
 
@@ -163,36 +163,39 @@ String</td></tr>
 </table>
 
 
-## Adding Resource ID to an Application
+## Adding resource ID to an application
 
-### Setting Through XAML
+### Setting through XAML
 
 The following code snippet explains how to set the Resource ID through XAML
 
 1. Add the VisualStyle in the sample.
 
-   ~~~xaml
-   
-             syncfusion:SkinStorage.VisualStyle="Office2013"
+{% tabs %}
+{% highlight xaml %}
+ 
+syncfusion:SkinStorage.VisualStyle="Office2013"
 
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 2. Set Resource ID as shown below.
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-             <Grid x:Name="grid" Background="{DynamicResource {x:Static syncfusion:ThemeColors.BackgroundBrush}}">
+<Grid x:Name="grid" Background="{DynamicResource {x:Static syncfusion:ThemeColors.BackgroundBrush}}">
 
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
-## Setting Through C#
+## Setting through C#
 
-
-
+{% tabs %}
 {% highlight C# %}
 
 SkinStorage.SetVisualStyle(this, "Office2013");
 grid.SetResourceReference(BackgroundProperty, ThemeColors.BackgroundBrush);
 
 {% endhighlight %}
-
+{% endtabs %}

@@ -22,47 +22,28 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 {% highlight XAML %}
 
 <syncfusion:TreeViewAdv >
-
 <syncfusion:TreeViewItemAdv Header="My Computer" x:Name="item1" CollapsedImageSource="folder.png">
-
 <syncfusion:TreeViewItemAdv Header="Music" />
-
 <syncfusion:TreeViewItemAdv Header="Videos"  />
-
 <syncfusion:TreeViewItemAdv Header="Wallpaper.png" />
-
 <syncfusion:TreeViewItemAdv Header="Banner.png"  />
-
 </syncfusion:TreeViewItemAdv>
-
 <syncfusion:TreeViewItemAdv Header="My Network Places" x:Name="item2" ExpandedImageSource="Folder_Expanded.png" >
-
 <syncfusion:TreeViewItemAdv Header="Sever"  />
-
 <syncfusion:TreeViewItemAdv Header="My Folders" />
-
 <syncfusion:TreeViewItemAdv Header="Image1.png" />
-
 <syncfusion:TreeViewItemAdv Header="Image2.png" />
-
 </syncfusion:TreeViewItemAdv>
-
 </syncfusion:TreeViewAdv>
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
 // Set image for collapsed button
-
 item1.CollapsedImageSource = new BitmapImage(new Uri("/folder.png", UriKind.Relative));
 
 // Set image for expand button
-
 item2.ExpandedImageSource = new BitmapImage(new Uri("/Folder_Expanded.png", UriKind.Relative));
 
 {% endhighlight %}
@@ -70,11 +51,9 @@ item2.ExpandedImageSource = new BitmapImage(new Uri("/Folder_Expanded.png", UriK
 {% highlight VB %}
 
 ' Set image for collapsed button
-
 item1.CollapsedImageSource = New BitmapImage(New Uri("/folder.png", UriKind.Relative))
 
 ' Set image for expand button
-
 item2.ExpandedImageSource = New BitmapImage(New Uri("/Folder_Expanded.png", UriKind.Relative))
 
 {% endhighlight %}
@@ -82,5 +61,3 @@ item2.ExpandedImageSource = New BitmapImage(New Uri("/Folder_Expanded.png", UriK
 {% endtabs %}  
 
 ![](Expand_Collapse_images_images/Expand_Collapse_images_img1.jpeg)
-
-

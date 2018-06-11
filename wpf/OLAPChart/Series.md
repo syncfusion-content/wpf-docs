@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Series| OlapChart | Wpf | Syncfusion
+title: Series
 description: Series
 platform: wpf
-control: OlapChart
+control: OLAP Chart
 documentation: ug
 ---
 
@@ -52,7 +52,7 @@ Next i
 
 {% endtabs %}
 
-The following screen-shot shows an OlapChart with Point Labels enabled:
+The following screenshot shows an OlapChart with Point Labels enabled:
 
 ![](Series_images/Series_img1.png)
 

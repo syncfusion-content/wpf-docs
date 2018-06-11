@@ -7,7 +7,11 @@ control: TimeSpanEdit
 documentation: ug
 ---
 
-# Increment/decrement value on scrolling
+# Increment/Decrement Value on Scrolling
 
 The values can be incremented or decremented by scrolling using MouseWheel or Up/Down Arrow Keys.
+
+![](Getting-Started_images/scrolling1.png)
+
+![](Getting-Started_images/scrolling2.png)
 

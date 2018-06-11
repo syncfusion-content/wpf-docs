@@ -9,11 +9,12 @@ documentation: ug
 
 # Overview
 
-TimeSpanEdit is a new control which displays time as Days: Hour: Min: Sec format. The fields can be incremented or decremented using the up/down keys. 
+`TimeSpanEdit` is a control which display the time as Days: Hour: Min: Sec format. The fields can be incremented or decremented using the up/down keys. 
 
-## Use Case Scenario
+## Key features
 
-TimeSpanEdit can be used as a countdown timer. The fields can be custom formatted to help fix targets and deadlines. 
+* **Custom Format String**:  Supports to display the custom string for denote the numerals.
 
+* **Keyboard Navigation**: Supports to move from one field to another using Keyboard.
 
-
+* **SpinArrowButtons**: Supports to increase or decrease the values in any field.

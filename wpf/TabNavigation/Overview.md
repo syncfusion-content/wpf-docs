@@ -13,7 +13,7 @@ Tab Navigation is a new control for displaying the contents of the control with 
 
 The following are the key features of this control:
 
-### Items Source binding
+### Items source binding
 
 Items Source Binding is supported in Tab Navigation control. It helps the control to be applicable to all MVVM based Silverlight applications. It supports the following:
 
@@ -23,7 +23,7 @@ Items Source Binding is supported in Tab Navigation control. It helps the contro
 
 
 
-### Item Templates
+### Item templates
 
 * Data Templates—this is used to display data visually on the UI in a predefined format.
 * Template Selectors—this allows you to choose templates for data items that will be displayed on the UI
@@ -46,7 +46,7 @@ This enhances navigation by providing different navigation or transition effects
 
 Each of the above mentioned features is explained in Features of Tab Navigation section.
 
-### Use Case Scenario
+### Use case scenario
 
 Tab navigation control helps you to use information as banners in web applications such as Picasa. Therefore, it can be used as website banners. As it has virtualization support, it can also be used as tab control.
 

@@ -20,7 +20,7 @@ ScreenTip has four properties.
 4.	HelpText - Specifies the HelpText of the ScreenTip.
 
 
-## Adding Tooltip for Ribbon items
+## Adding tooltip for ribbon items
 
 Ribbon ToolTip  can be set to each Ribbon items by defining ScreenTip inside the ToolTip.
 
@@ -29,91 +29,48 @@ Ribbon ToolTip  can be set to each Ribbon items by defining ScreenTip inside the
 {% highlight XAML %}
 
 <Syncfusion:Ribbon x:Name="_ribbon"   VerticalAlignment="Top">
-
 <Syncfusion:RibbonTab  Caption="Home" IsChecked="False"  >
-
 <Syncfusion:RibbonBar Header="Clipboard">
-
 <Syncfusion:RibbonBar.ToolTip>
-
 <Syncfusion:ScreenTip MinWidth="150" Description="ScreenTip Example" VerticalOffset="10" Content="Represent a ribbon simple buttons"/>
-
 </Syncfusion:RibbonBar.ToolTip>
-
 <Syncfusion:SplitButton  Name="paste" Label="Paste" SizeForm="Large"  LargeIcon="/Resources/Paste16.png">
-
 <Syncfusion:SplitButton.ToolTip>
-
 <Syncfusion:ScreenTip  Description="Paste (Ctrl+V)" Content="Paste the contents of clipboard."/>
-
 </Syncfusion:SplitButton.ToolTip>
-
 </Syncfusion:SplitButton>
-
 <Syncfusion:RibbonButton   Label="Cut" SizeForm="Small"  SmallIcon="/Resources/Cut16.png" >
-
 <Syncfusion:RibbonButton.ToolTip>
-
 <Syncfusion:ScreenTip Description="Cut (Ctrl+X)" Content="Cut the selection and put it on the clipboard."/>
-
 </Syncfusion:RibbonButton.ToolTip>
-
 </Syncfusion:RibbonButton>
-
 <Syncfusion:RibbonButton Name="copy"   Label="Copy" SizeForm="Small"   SmallIcon="/Resources/Copy16.png"  >
-
 <Syncfusion:RibbonButton.ToolTip>
-
 <Syncfusion:ScreenTip Content="Copy the selection and put it on the clipboard" Description="Copy (Ctrl+C)" HelpText="Press F1 for more help."/>
-
 </Syncfusion:RibbonButton.ToolTip>
-
 </Syncfusion:RibbonButton>
-
 <Syncfusion:RibbonButton IsMultiLine="True"  Label="Format Painter" SizeForm="Small"  SmallIcon="/Resources/FormatPainter16.png" >
-
 <Syncfusion:RibbonButton.ToolTip>
-
 <Syncfusion:ScreenTip Content="Copy formatting from one place and apply it to another" Description="Format painter (Ctrl+Shift+C)" ImageSource="/Resources/FormatPainter16.png" HelpText="Press F1 for more help."/>
-
 </Syncfusion:RibbonButton.ToolTip>
-
 </Syncfusion:RibbonButton>
-
 </Syncfusion:RibbonBar>
-
 <Syncfusion:RibbonBar Header="BackStage Operations" >
-
 <Syncfusion:RibbonCheckBox  Content="Cancel BackStage Opening" x:Name="BackStageOpeningCheckBox">
-
 <Syncfusion:RibbonCheckBox.ToolTip>
-
 <Syncfusion:ScreenTip Description="Cancel BackStage" Content="Restrict backstage opening"/>
-
 </Syncfusion:RibbonCheckBox.ToolTip>
-
 </Syncfusion:RibbonCheckBox>
-
 <Syncfusion:RibbonComboBox SelectedIndex="0" FlowDirection="LeftToRight" Width="110">
-
 <Syncfusion:RibbonComboBox.ToolTip>
-
 <Syncfusion:ScreenTip Description="New Items" Content="Create a new item such as Meeting or contact."/>
-
 </Syncfusion:RibbonComboBox.ToolTip>
-
 <Syncfusion:RibbonComboBoxItem>Email_Message</Syncfusion:RibbonComboBoxItem>
-
 <Syncfusion:RibbonComboBoxItem>Meeting</Syncfusion:RibbonComboBoxItem>
-
 <Syncfusion:RibbonComboBoxItem>Appointment</Syncfusion:RibbonComboBoxItem>
-
 </Syncfusion:RibbonComboBox>
-
 </Syncfusion:RibbonBar>
-
 </Syncfusion:RibbonTab>
-
 </Syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -123,7 +80,7 @@ Ribbon ToolTip  can be set to each Ribbon items by defining ScreenTip inside the
 ![](UIforToolTip_images/UIforToolTip_img1.jpeg)
 
 
-## Setting the ToolTip for the Upper and Lower Half of the Split Button
+## Setting the ToolTip for the upper and lower half of the split button
 
 The ToolTip property is used to set the tooltip for the upper half of the Split Button, while the ToggleButtonToolTip property is used to set the tooltip for the drop-down in the lower half of the split button.
 
@@ -132,27 +89,16 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 {% highlight XAML %}
 
 <Syncfusion:SplitButton Label="Paste" SizeForm="Large" >
-
 <Syncfusion:SplitButton.ToolTip>
-
 <Syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32">
-
 <TextBlock Text="Top Tool Tip" />
-
 </Syncfusion:ScreenTip>
-
 </Syncfusion:SplitButton.ToolTip>
-
 <Syncfusion:SplitButton.ToggleButtonToolTip>
-
 <Syncfusion:ScreenTip Description="Toggle Button Tooltip" VerticalOffset="29">
-
 <TextBlock Text="Bottom Tool Tip" />
-
 </Syncfusion:ScreenTip>
-
 </Syncfusion:SplitButton.ToggleButtonToolTip>
-
 </Syncfusion:SplitButton>
 
 {% endhighlight %}
@@ -165,7 +111,7 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 ![](UIforToolTip_images/UIforToolTip_img3.jpeg)
 
 
-## Options for Inserting Help Text in ScreenTip
+## Options for inserting help text in ScreenTip
 
 Essential Tool WPF is enhanced with HelpText option. Users can add help text in ScreenTip. A line separator separates the Screen tip information from help text.
 
@@ -174,13 +120,9 @@ Essential Tool WPF is enhanced with HelpText option. Users can add help text in 
 {% highlight XAML %}
 
 <Syncfusion:RibbonButton IsMultiLine="True"  Label="Format Painter" SizeForm="Small"  SmallIcon="/Resources/FormatPainter16.png" >
-
 <Syncfusion:RibbonButton.ToolTip>
-
 <Syncfusion:ScreenTip Content="Copy formatting from one place and apply it to another" Description="Format painter (Ctrl+Shift+C)" ImageSource="/Resources/FormatPainter16.png" HelpText="Press F1 for more help."/>
-
 </Syncfusion:RibbonButton.ToolTip>
-
 </Syncfusion:RibbonButton>
 
 {% endhighlight %}

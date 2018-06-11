@@ -244,12 +244,10 @@ You can customize or cancel the generated column by handling [AutoGeneratingColu
 
 {% tabs %}
 {% highlight c# %}
-
 this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
-			
 }
 	
 {% endhighlight %}
@@ -264,12 +262,12 @@ You can cancel the specific column adding to the TreeGrid by handling `AutoGener
 In the below code, column generation for `ReportsTo` property is canceled by setting `Cancel` property to `true`. 
 
 {% tabs %}
-{% highlight csharp %}
-
+{% highlight c# %}
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "ReportsTo")
 		e.Cancel = true;
 }
@@ -284,13 +282,14 @@ In the below code, column type for `Salary` property is changed to `TreeGridText
 
 {% tabs %}
 {% highlight c# %}
-
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "Salary")
 	{
+
 		if (e.Column is TreeGridNumericColumn)
 			e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
 	}
@@ -310,6 +309,7 @@ treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "Salary")
 	{
 		e.Column.AllowEditing = false;
@@ -343,8 +343,10 @@ You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_
 {% highlight c# %}
 
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
 	if (e.Column.MappingName == "FirstName")
 	{
 		e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
@@ -371,6 +373,7 @@ You can skip the column generation using `AutoGenerateField` property or set the
 {% highlight c# %}
 
 [Display(AutoGenerateField = false, Description = "Title field is not generated in UI")]
+
 public string Title
 {
 	get
@@ -395,6 +398,7 @@ You can change the value of the property using `Editable` attribute.
 {% highlight c# %}
 
 [Editable(true)]
+
 public string FirstName
 {
 	get
@@ -419,6 +423,7 @@ You can customize header text of column using `Display.Name` property.
 {% highlight c# %}
 
 [Display(Name ="FirstName of the employee",Description ="First Name is necessary for identification")]
+
 public string FirstName
 {
 	get
@@ -443,6 +448,7 @@ You can change the columns order using `DisplayAttribute.Order` property.
 {% highlight c# %}
 
 [Display(Order = 0)]
+
 public string FirstName
 {
 	get { return _firstName; }
@@ -453,6 +459,7 @@ public string FirstName
 	}
 } 
 [Display(Order = -1)]
+
 public string LastName
 {
 	get { return _lastName; }
@@ -478,6 +485,7 @@ You can customize the data format using `DataTypeAttribute.DataType` property.
 {% highlight c# %}
 
 [DataType(DataType.Currency)]
+
 public double? Salary
 {
 	get
@@ -684,6 +692,7 @@ treeGrid.ColumnDragging += TreeGrid_ColumnDragging;
 private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventArgs e)
 {
 	var column = treeGrid.Columns[e.From];
+
 	if(column.MappingName=="FirstName" && e.Reason==QueryColumnDraggingReason.Dropping)
 	{
 		e.Cancel = true;
@@ -834,6 +843,7 @@ SfTreeGrid provides MVVM support for binding `TreeGridColumn` properties with Vi
 public class ViewModel
 {
 	private bool _allowEditing =true;
+
 	public bool AllowEditing
 	{
 		get { return _ allowEditing; }

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting-By-Values
-description: sorting by values
+title: Sorting by Values
+description: Sorting by values
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
-# Sorting-by-Values
+# Sorting by Values
 
 Sorting-by-Values provides the following sort options.
 

@@ -9,88 +9,125 @@ documentation: ug
 
 # Getting Started
 
-## Add SfMaskedEdit to an application
+## Assembly deployment
 
-Namespace : Syncfusion.Windows.Controls.Input
+Namespace: Syncfusion.Windows.Controls.Input
 
 Assembly: Syncfusion.SfInput.WPF
 
 Dependent assembly: Syncfusion.SfShared.WPF
 
-### Create the SfMaskedEdit control by using XAML
+## Adding control via designer
 
-Create a new WPF application in the Visual Studio and follow the steps given.
+Create a new WPF application in the Visual Studio to generate the SfMaskedEdit by dragging the `SfMaskedEdit` control from the toolbox to the designer.
 
-1. Drag and drop the SfMaskedEdit control from the toolbox to the designer. It generates the SfMaskedEdit as shown:
+![](Getting-Started_images/Getting-Started_img1.png)
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+## Adding control manually in XAML
 
-
-
-The following code example shows how to create the SfMaskedEdit from XAML.
+The following code example shows how to create the `SfMaskedEdit` from XAML.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-
-
-<syncfusion:SfMaskedEdit HorizontalAlignment="Left" Margin="103,143,0,0" TextWrapping="Wrap" Text="SfMaskedEdit" VerticalAlignment="Top" Width="255" Height="46"/>
+<syncfusion:SfMaskedEdit Width="255" Height="46"/>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
 
+## Adding control manually in C Sharp
 
-
-### Create the SfMaskedEdit control by using C#
-
-To create a MaskedEdit control, use the following code.
+To create a MaskedEdit control using C Sharp, follow the code.
 
 {% tabs %}
 
-{% highlight C# %}
-
-
+{% highlight c# %}
 
 SfMaskedEdit maskededit = new SfMaskedEdit() { Text = "SfMaskedEdit", Width = 150, Height = 50 };
-
 this.Content = maskededit;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpg)
 
+## Adding mask to the control
 
+To mask the input of SfMaskedEdit, use the `MaskType` and `Mask` properties.
 
-### Create the SfMaskedEdit control by using the Expression Blend
+The `MaskType` property has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular, and RegEx.
 
-The SfMaskedEdit control can also be created and configured by using the ExpressionBlend. The following steps display this.
+The `Mask` property specifies the input without writing any custom validation logic in your application. Mask can be set based on the `MaskType` elements. The `Mask` property may contain literals and special mask characters. You can use the back-slash character to escape any special mask characters to display as literals.
 
-1. Create a WPF project in the Expression Blend and add the reference to the following assemblies.
-   1. Syncfusion.SfInput.WPF
-   2. Syncfusion.SfShared.WPF
-2. Search for the SfMaskedEdit in the toolbox.
+{% tabs %}
 
+{% highlight xaml %}
 
+<syncfusion:SfMaskedEdit MaskType="Simple" Mask="00/00/0000" Width="255" Height="46"/>
+{% endhighlight %}
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+{% highlight c# %}
 
+SfMaskedEdit maskededit = new SfMaskedEdit();
+maskededit.MaskType=MaskType.Simple;
+maskedEdit.Mask="00/00/0000";
 
+{% endhighlight %}
 
-3. Now drag and drop the SfMaskedEdit into the designer. It generates the SfMaskedEdit. Then configure the properties of the SfMaskedEdit control by using the properties area.
+{% endtabs %}
 
-   ![](Getting-Started_images/Getting-Started_img5.jpeg)
+This mask expression allows only numeric inputs in the places of 0.
 
+## Assigning value to the control
 
+By default, the value holds the characters without including prompt characters and the literals defined in the mask. To include the prompt characters and literals, use the ValueMaskFormat property of the control.
 
-This generates the SfMaskedEdit as follows:
+To set value for the control, the `Value` property can be used.
 
-![](Getting-Started_images/Getting-Started_img6.jpeg)
+{% tabs %}
 
+{% highlight xaml %}
 
+<syncfusion:SfMaskedEdit MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" Width="255" Height="46"/>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaskedEdit maskededit = new SfMaskedEdit();
+maskededit.MaskType=MaskType.Simple;
+maskedEdit.Mask="00/00/0000";
+maskedEdit.Value="14/11/2014";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Defining watermark
+
+`Watermark` guides the end user on what should be enter in the text input. It can be displayed when the content of the SfMaskedEdit is empty and the control is not focused.
+
+To set watermark for the control, use the `WaterMark` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfMaskedEdit  MaskType="Simple" Mask="00/00/0000" Watermark="Type here" Width="255" Height="46"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaskedEdit maskededit = new SfMaskedEdit();
+maskededit.MaskType = MaskType.Simple;
+maskedEdit.Mask = "00/00/0000";
+maskedEdit.Watermark = "Type here";
+
+{% endhighlight %}
+
+{% endtabs %}

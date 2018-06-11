@@ -7,11 +7,11 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# CustomEditor support
+# CustomEditor Support
 
 The PropertyGrid control supports several built-in editors, to give a good look and feel for the application (like in Expression Blend). Using CustomEditors or CategoryEditors. CustomEditor support enables you to set custom value editors for particular properties, instead of default editors.
 
-## Adding CustomEditor support to an Application 
+## Adding CustomEditor support to an application 
 
 Using CustomEditorCollection property user can add custom editors to PropertyGrid control. To create CustomEditor user needs to implement ITypeEditor interface. In the below example for Background(Type – Brush), by default ColorPicker will be displayed as ValueEditor. By setting CustomEditor for Background, ColorEdit will be displayed as ValueEditor instead of ColorPicker.
 
@@ -21,10 +21,8 @@ Using CustomEditorCollection property user can add custom editors to PropertyGri
 {% highlight xaml %}
 
 <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"> <br>        
-	
-	<Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn"/> <br> 
-	       
-	<syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/> <br>    
+		                       <Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn"/> <br> 
+	      	<syncfusion:ProGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/> <br>    
 
 </Grid>
 
@@ -120,7 +118,7 @@ CustomEditorCollection</td><td>
 </td></tr>
 </table>
 
-#### Sample Link
+#### Sample link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.

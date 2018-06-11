@@ -7,7 +7,7 @@ control: UpDown
 documentation: ug
 ---
 
-# Maximum and Minimum Value
+# Maximum and Minimum Values
 
 `UpDown` control allows to define the Maximum and Minimum value. The `MaxValue` is the maximum value that can be set for the `UpDown` control and `MinValue` is the minimum value that can be set for the `UpDown` control. 
 
@@ -21,30 +21,22 @@ The maximum and minimum value can be set using the `MaxValue` and `MinValue` pro
 
 <syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" Width="100" Height="23"/>
 
-
 {% endhighlight %}
 
 {% highlight C# %}
 
 UpDown updown = new UpDown();
-
 updown.Width = 100;
-
 updown.Height = 23;
-
 updown.MaxValue = 100;
-
 updown.MinValue = 0;
-
 Grid1.Children.Add(updown);
-
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Tables for MaxValue and MinValue Properties and Events
+## Tables for MaxValue and MinValue properties and events
 
 <table>
 <tr>

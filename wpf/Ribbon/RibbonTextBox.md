@@ -16,25 +16,15 @@ documentation: ug
 {% highlight XAML %}
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-
 <syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
-
 <syncfusion:RibbonBar Name="_ribbonBar2" Header="RibbonBar1">
-
 <syncfusion:RibbonButton   Label="Cut"/>
-
 </syncfusion:RibbonBar>
-
 <syncfusion:RibbonBar  Name="_ribbonBar2" Width="150" Header="RibbonBar2">
-
 <syncfusion:RibbonTextBox  Width="140" Text="RibbonTextBox"></syncfusion:RibbonTextBox>
-
 </syncfusion:RibbonBar>
-
 </syncfusion:RibbonTab>
-
 <syncfusion:RibbonTab Caption="EDIT"  IsChecked="False"/>
-
 </syncfusion:Ribbon>
 
 {% endhighlight %}
@@ -48,7 +38,6 @@ Create instance of RibbonTextBox and add it to RibbonBar through code behind.
 {% highlight C# %}
 
 RibbonTextBox _ribbonTextBox = new RibbonTextBox(){Text = "RibbonTextBox"};
-
 _ribbonBar2.Items.Add(_ribbonTextBox);
 
 {% endhighlight %}
@@ -56,7 +45,6 @@ _ribbonBar2.Items.Add(_ribbonTextBox);
 {% highlight VB %}
 
 Dim _ribbonTextBox As New RibbonTextBox() With {.Text = "RibbonTextBox"}
-
 _ribbonBar2.Items.Add(_ribbonTextBox)
 
 {% endhighlight %}

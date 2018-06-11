@@ -44,7 +44,7 @@ Multiple selected elements are visually represented as shown.
 
 ### Select/Unselect the elements programmatically
 
-The IsSelected Property is used to select/unselect the elements at runtime.
+The `IsSelected` Property is used to select/unselect the elements at runtime.
 
 The following code example illustrates how to select/unselect an item through programmatically.
 
@@ -104,6 +104,20 @@ this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode
 {% endtabs %}
 
 ![](Interaction_images/PreviewDragging_img3.gif)
+
+## Dragging based on DragLimit
+
+Diagram provides support to drag the elements within the given limitations using `EditableArea`, `ScrollLimit.Limited` property and based on `SelectorChangedEvent` enabling/disabling of dragging within the limits occur.
+In `SelectorChangedEvent` based on the arguments the process occurs,
+* `Block`-If this boolean expression is set true, then the dragging occurs within the given rectangular area. If dragging exceeds than the limit, then it hit back to previous position.
+Based on the `BlockPosition` the dragging of Block occurs.
+* Block Position
+  `SourcePosition`- the element moves to the previous position if it exceeds the limitation during dragging.
+  `CurrentPosition`- the element present at the limited area position, it does not hit back to previous position during dragging.
+* `Abort`- If this boolean is set to true, then dragging is occurs within the limit.
+* `Cancel`- If this boolean is set to true, then the dragging of element does not occurs.   
+
+![](Interaction_images/dragging.gif)
 
 ## Drag and Drop Nodes over other elements
 

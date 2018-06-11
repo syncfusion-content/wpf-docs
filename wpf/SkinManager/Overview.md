@@ -11,7 +11,7 @@ documentation: ug
 
 The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
 
-## Feature Summary
+## Feature summary
 
 * 9 Built-In skins support for the Syncfusion controls as well as the Microsoft controls.
 * Applying Custom color for the WPF controls by setting the Single property.
@@ -21,13 +21,13 @@ The Skin Manager Framework provides a convenient way to give the appealing appea
 
 
 
-## Built-In Skins
+## Built-in skins
 
 Skins can be applied to the control by setting the VisualStyle property defined in the Skin Storage class. Set the VisualStyle property to the corresponding theme. This property can be set either in XAML or in C#.
 
 
 
-### Visual Style Property
+### Visual style property
 
 <table>
 <tr>
@@ -53,20 +53,24 @@ The following code snippet explains how to set the VisualStyle property in XAML.
 
 1. Add the following namespace in the sample.
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-   ~~~
-   
+{% endhighlight %}
+{% endtabs %}
+
 2. Set the VisualStyle property for the control as shown below. 
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-		   <syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle="Blend">
-		   </syncfusion:CalendarEdit>  
+<syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle="Blend">
+</syncfusion:CalendarEdit>  
 
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 ## Setting VisualStyle in C#
 
@@ -78,24 +82,24 @@ The following code snippet explains how to set the VisualStyle property in C#.
 
 1. Name the control using the Name attribute.
 
+{% tabs %}
+{% highlight xaml %}
 
+<syncfusion:CalendarEdit Name="calendar">
+</syncfusion:CalendarEdit> 
 
-   ~~~xaml
-
-          <syncfusion:CalendarEdit Name="calendar">
-		  </syncfusion:CalendarEdit> 
-
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 2. Add the following line in code behind file.
 
+{% tabs %}
+{% highlight c# %}
 
-   ~~~csharp
+SkinStorage.SetVisualStyle(calendar, "Blend");
 
-
-          SkinStorage.SetVisualStyle(calendar, "Blend");
-
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 The output is displayed as shown below.
 
@@ -108,13 +112,13 @@ The output is displayed as shown below.
 Calendar with Blend Style
 {:.caption}
 
-## Active Color Scheme
+## Active color scheme
 
 You can set the custom color for the WPF controls by using the ActiveColorScheme property defined in the Skin Manager class. This property can be set either in XAML or in C#.
 
 
 
-### ActiveColorScheme Property
+### ActiveColorScheme property
 
 <table>
 <tr>
@@ -140,27 +144,25 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 1. Add the following namespace in the sample.
 
+{% tabs %}
+{% highlight xaml %}
 
-   ~~~xaml
+xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
-
-            xmlns:syncfusion=http://schemas.syncfusion.com/wpf
-
-
-   ~~~
-
+{% endhighlight %}
+{% endtabs %}
 
 2. Set the ActiveColorScheme property for the control as shown below.
 
+{% tabs %}
+{% highlight xaml %}
 
+<syncfusion:CalendarEdit Name="calendar" syncfusion:SkinManager.ActiveColorScheme="Red">
+</syncfusion:CalendarEdit> 
 
-   ~~~xaml
+{% endhighlight %}
+{% endtabs %}
 
-          <syncfusion:CalendarEdit Name="calendar" syncfusion:SkinManager.ActiveColorScheme="Red">
-		  </syncfusion:CalendarEdit> 
-
-
-   ~~~
    
 ## Setting ActiveColorScheme property in C#
 
@@ -172,30 +174,24 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 1. Name the control using the Name attribute.
 
+{% tabs %}
+{% highlight xaml %}
 
+<syncfusion:CalendarEdit Name="calendar">
+</syncfusion:CalendarEdit> 
 
-   ~~~xaml
-
-				<syncfusion:CalendarEdit Name="calendar">
-				</syncfusion:CalendarEdit> 
-
-
-
-   ~~~   
+{% endhighlight %}
+{% endtabs %}
 
 2. Add the following line in code behind file.
 
+{% tabs %}
+{% highlight c# %}
 
+SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
-   ~~~csharp
-
-             SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
-
-
-
-   ~~~
-
-
+{% endhighlight %}
+{% endtabs %}
 
    The output is displayed as shown below.
 
@@ -206,7 +202,7 @@ The following code snippet explains how to set the ActiveColorScheme property in
 Calendar with Custom Color
 {:.caption}
 
-## Metro Theme Customization
+## Metro theme customization
 
 Our well sophisticated metro theme will support a complete customization over the brushes and fonts. Each and every brushes of Metro Theme can be changed and customized based on the user needs.
 
@@ -224,34 +220,28 @@ The following are the brushes that can be customized in Metro Theme.
 
 
 
-##Setting MetroBackgroundBrush property in XAML
+## Setting MetroBackgroundBrush property in XAML
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
 <syncfusion:ChromelessWindow x:Class="WpfApplication18.MainWindow"       
-
         Title="Window1" Height="350" Width="525" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" syncfusion:SkinStorage.VisualStyle="Metro" syncfusion:SkinStorage.MetroBackgroundBrush="Green">
-
 </syncfusion:ChromelessWindow>
 
 {% endhighlight %}
+{% endtabs %}
+
+## Setting MetroBackgroundBrush property in C#
 
 
-
-##Setting MetroBackgroundBrush property in C#
-
-
-
+{% tabs %}
 {% highlight c# %}
 
 SkinStorage.SetMetroBrush(this, Brushes.Green);
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Overview_images/Overview_img3.png)
@@ -261,7 +251,7 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 Metro Customization Demo
 {:.caption}
 
-## ResourceDictionary Path for Syncfusion Themes
+## ResourceDictionary path for Syncfusion themes
 
 Resource Dictionary path for Syncfusion themes are tabulated below:
 
@@ -271,21 +261,17 @@ Ex:
 
 To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the application:
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
 <ResourceDictionary>
-
 <ResourceDictionary.MergedDictionaries>
-
 <ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/                Office2010BlueStyle.xaml"/>
-
 </ResourceDictionary.MergedDictionaries>
-
 </ResourceDictionary>
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Controls table
 

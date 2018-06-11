@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 1354-Hyperlink Cells
-description:  1.3.5.4 hyperlink cells
+title: Hyperlink Cells
+description: Hyperlink cells
 platform: wpf
-control: PivotGridControl
+control: Pivot grid
 documentation: ug
 ---
 
 # Hyperlink Cells
 
-PivotGrid allows Hyperlinking of cells to retrieve a detailed information about a particular cell. PivotGrid generates a separate event called HyperLinkCellClick for the clicked hyperlink cell with  and the HyperLinkCellClickEventArgs will return the clicked PivotCellInfo.
+PivotGrid allows Hyperlinking of cells to retrieve a detailed information about a particular cell. PivotGrid generates a separate event called HyperLinkCellClick for the clicked hyperlink cell with and the HyperLinkCellClickEventArgs will return the clicked PivotCellInfo.
 
 **Hyperlink Cell** property can be applied individually to the following cells:
 
