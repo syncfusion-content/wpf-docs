@@ -68,62 +68,38 @@ The following code samples illustrate how to customize the DateTime indicator.
 {% tabs %}
 {% highlight xaml %}
 
-
-
 <gantt:GanttControl x:Name="Gantt"
-
-Grid.Row="1"
-
-StickCurrentDateLineTo="Today"
-
-ItemsSource="{Binding TaskDetails}">
-
-<gantt:GanttControl.CurrentDateLine>   
-
-<Line Stroke="Green" 
-
-StrokeDashArray="5 1 5" 
-
-StrokeThickness="2" />
-
-</gantt:GanttControl.CurrentDateLine>
-
-<gantt:GanttControl.TaskAttributeMapping>
-
-<gantt:TaskAttributeMapping TaskIdMapping="Id"
-
-TaskNameMapping="Name"
-
-StartDateMapping="StDate" 
-
-ChildMapping="ChildTask"
-
-FinishDateMapping="EndDate"
-
-DurationMapping="Duration/>
-
-</gantt:GanttControl.TaskAttributeMapping>
-
+                    Grid.Row="1"
+                    StickCurrentDateLineTo="Today"
+                    ItemsSource="{Binding TaskDetails}">
+    <gantt:GanttControl.CurrentDateLine> 
+        <Line Stroke="Green" 
+              StrokeDashArray="5 1 5" 
+              StrokeThickness="2" />
+    </gantt:GanttControl.CurrentDateLine>
+    <gantt:GanttControl.TaskAttributeMapping>
+        <gantt:TaskAttributeMapping TaskIdMapping="Id"
+                                    TaskNameMapping="Name"
+                                    StartDateMapping="StDate" 
+                                    ChildMapping="ChildTask"
+                                    FinishDateMapping="EndDate"
+                                    DurationMapping="Duration" />
+    </gantt:GanttControl.TaskAttributeMapping>
 </gantt:GanttControl>
+
 {% endhighlight  %}
 
 {% highlight c# %}
 
 
 //StrokeDashArray will change the style of Line
-
 DoubleCollection strokeArray = new DoubleCollection();
-
 strokeArray.Add(5);
-
 strokeArray.Add(1);
-
 strokeArray.Add(5);
 
 this.Gantt.CurrentDateLine.Stroke = Brushes.Green;
-
-this.Gantt.vCurrentDateLine.StrokeDashArray = strokeArray;
-
+this.Gantt.CurrentDateLine.StrokeDashArray = strokeArray;
 this.Gantt.CurrentDateLine.StrokeThickness = 1;
 
 {% endhighlight  %}
