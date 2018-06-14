@@ -243,7 +243,25 @@ The following code illustrates this:
 {% tabs %}
 {% highlight xaml %}
 
-	
+<sync:GanttControl Grid.Row="1" x:Name="Gantt" 
+                   ScheduleType="CustomDateTime"                                                                                          VisualStyle="Office2010Black"
+                   ItemsSource="{Binding GanttItemSource}" 
+                   ShowChartLines="False"
+                   ShowNonWorkingHoursBackground="False"
+                   ToolTipTemplate="{StaticResource toolTipTemplate}">
+	<sync:GanttControl.TaskAttributeMapping>
+    	<sync:TaskAttributeMapping TaskIdMapping="Id"
+                                   TaskNameMapping="Name"
+                                   StartDateMapping="StDate" 
+                                   ChildMapping="ChildTask"
+                                   FinishDateMapping="EndDate"
+                                   DurationMapping="Duration"                                            
+                                   ProgressMapping="Complete"
+                                   ResourceInfoMapping="Resource"
+                                   PredecessorMapping="Predecessor"	>
+	    </sync:TaskAttributeMapping>
+	</sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
