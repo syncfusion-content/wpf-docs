@@ -33,18 +33,14 @@ In both the custom schedules, Gantt will get the information from the applicatio
 1. PixelsPerUnit—Gets the information of the pixel value equivalent to one unit in custom measurement.
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
 3. TimeUnit—Gets the information about the type of row, when the schedule type is CustomDateTime. The Time unit can be any one of the following:
+
+* Seconds-represents the corresponding row as second's row.
 * Minutes—represents the corresponding row as minute’s row.
 * Hours—represents the corresponding row as hour’s row.
-* Days—represents the corresponding row as day’s row
-* Weeks—represents the corresponding row as week’s row
-* Months—represents the corresponding row as month’s row
-* Years—represents the corresponding row as year’s row
-
-
-
-
-
-
+* Days—represents the corresponding row as day’s row.
+* Weeks—represents the corresponding row as week’s row.
+* Months—represents the corresponding row as month’s row.
+* Years—represents the corresponding row as year’s row.
 
 ### Use Case Scenario
 
@@ -145,43 +141,24 @@ To Add CustomNumeric Schedule to an application:
 The following code illustrates Adding Custom Schedule to an Application:
 {% highlight xaml %}
 
-
-
-
-<sync:GanttControl Grid.Row="1" ScheduleType="CustomNumeric" 
-
-x:Name="Gantt" VisualStyle="Office2010Black">
-
-<sync:GanttControl.TaskAttributeMapping>
-
-<sync:TaskAttributeMapping 
-
-TaskIdMapping="Id"                                            
-
-TaskNameMapping="Name"                                        
-
-StartPointMapping="Start"                                               
-
-FinishPointMapping="End"                                            
-
-ChildMapping="ChildTask"                                                
-
-ProgressMapping="Complete"
-
-ResourceInfoMapping="Resource">
-
-</sync:TaskAttributeMapping>
-
-</sync:GanttControl.TaskAttributeMapping>
-
-
+<sync:GanttControl Grid.Row="1" 
+                   ScheduleType="CustomNumeric" 
+                   x:Name="Gantt"
+                   VisualStyle="Office2010Black">
+    <sync:GanttControl.TaskAttributeMapping>
+        <sync:TaskAttributeMapping TaskIdMapping="Id"                    
+                                   TaskNameMapping="Name"                
+                                   StartPointMapping="Start" 
+                                   FinishPointMapping="End"              
+                                   ChildMapping="ChildTask"              
+                                   ProgressMapping="Complete"
+                                   ResourceInfoMapping="Resource">
+        </sync:TaskAttributeMapping>
+    </sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
-
 
 // Assigning the custom schedule Items Source
 
