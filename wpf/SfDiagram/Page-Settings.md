@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings
 
-By default, DiagramPage size is decided based on the diagramming elements position. To customize the size and appearance of the DiagramPage, please use [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
+By default, DiagramPage size is decided based on the diagramming elements position. To customize the size and appearance of the DiagramPage, please use [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
 
 * The `PageWidth` and `PageHeight` properties of `PageSettings` define the size of the page. 
 * `PageBorderThickness`, `PageBackground` and `PageBorderBrush` properties allows to define the appearance of page.

@@ -17,7 +17,7 @@ Essential Calculate have built in formula parser to parse the formula into well-
 
 ### Parse Formula
 
-The built-in formula parser will parse the formula into Reverse Polish Notation expression using [ParseFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseFormula.html) method of `CalcEngine` for computing it.
+The built-in formula parser will parse the formula into Reverse Polish Notation expression using [ParseFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseFormula.html) method of `CalcEngine` for computing it.
 The parser uses some tokens to identify the operators, operands. It recognizes and replaces the `NameRanges` with their corresponding value. The parser also recognizes library functions and tokenizes them as well.
 
 `ParseFormula` method accepts a string formula and checks whether it is a valid formula that `CalcEngine` can understand.
@@ -82,7 +82,7 @@ Essential Calculate provides support to calculate the formulas using various com
 
 ### ComputeFormula
 
-[ComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ComputeFormula.html) method of `CalcEngine` computes the parsed formula from `ParseFormula` method and returns the computed value.
+[ComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ComputeFormula.html) method of `CalcEngine` computes the parsed formula from `ParseFormula` method and returns the computed value.
 It uses a stack oriented calculation technique to convert the parsed formula into the value that it represents.
 
 Using ICalcData,
@@ -122,7 +122,7 @@ string result = calcQuick.Engine.ComputeFormula(parsedFormula);
 
 ### ParseAndCompute
 
-The [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~ParseAndCompute.html) method of `CalcQuickBase` parses and computes the given formula string and returns the computed value.
+The [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~ParseAndCompute.html) method of `CalcQuickBase` parses and computes the given formula string and returns the computed value.
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +144,7 @@ string result = calcQuick.ParseAndCompute(formula);
 
 ### ParseAndComputeFormula
 
-The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` parses and computes the given formula string passed in and returns the computed value.
+The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` parses and computes the given formula string passed in and returns the computed value.
 
 Using ICalcData,
 
@@ -191,7 +191,7 @@ string result = calcQuick.Engine.ParseAndComputeFormula(formula);
 
 ## Error Messages
 
-The error messages that are displayed by Essential Calculate can be found in the string arrays such as [ErrorStrings](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ErrorStrings.html) and [FormulaErrorStrings](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaErrorStrings.html) of `CalcEngine`.
+The error messages that are displayed by Essential Calculate can be found in the string arrays such as [ErrorStrings](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ErrorStrings.html) and [FormulaErrorStrings](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaErrorStrings.html) of `CalcEngine`.
 After a `CalcEngine` object has been created, the text of error messages in this array lists can be changed by altering the array values.
 
 * `ErrorStrings` of `CalcEngine` gets or sets the list of error strings which are recognized by Excel such as "#N/A", "#VALUE!", "#REF!", "#DIV/0!", "#NUM!", "#NAME?", "#NULL!".

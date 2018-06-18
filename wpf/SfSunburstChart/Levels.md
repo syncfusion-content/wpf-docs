@@ -11,7 +11,7 @@ documentation: ug
 
 # Levels
 
-Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data in [`Levels`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart~Levels.html) collection of Sunburst chart. Each level of the hierarchy is represented by circle. 
+Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data in [`Levels`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart~Levels.html) collection of Sunburst chart. Each level of the hierarchy is represented by circle. 
 
 The following code shows how to add the hierarchical level in Levels collection.
 
