@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Gantt allows you to export and import the task details. You can export the task details as XML files and import them again when needed. You can open the exported XML files in MS Project too. The XML file, exported from MS Project can also be opened in Gantt control. You can import and export the details using the provided APIs.
 
-### Properties
+## Properties
 
 <table>
 <tr>
@@ -35,7 +35,7 @@ DelegateCommand</td></tr>
 </table>
 
 
-### Methods
+## Methods
 
 <table>
 <tr>
@@ -69,48 +69,43 @@ The following code illustrates how to Import and Export Task Details from or to 
 {% tabs  %}
 {% highlight xaml %}
 
-
 <Sync:GanttControl x:Name="Gantt" />
 
-
 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-<Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
-
-Margin="0,10,0,0" Width="200"                    
-Command="{Binding ExportToXMLCommand, ElementName=gantt}"                    Content="Export To XML" />
-<Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
-
-Margin="0,10,0,0" Width="200"
-Command="{Binding ImportFromXMLCommand, ElementName=gantt}"
-Content="Import From XML" />
+    <Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Margin="0,10,0,0" Width="200"
+            Command="{Binding ExportToXMLCommand, ElementName=gantt}" 
+            Content="Export To XML" />
+    <Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Margin="0,10,0,0" Width="200"
+            Command="{Binding ImportFromXMLCommand, ElementName=gantt}"
+            Content="Import From XML" />
 </StackPanel>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
-
-
 private void SaveButton_Click(object sender, System.Windows.RoutedEventArgs e)
 {
-if (this.Gantt.ExportToXML())
-{
-MessageBox.Show("Tasks exported successfully.", 
-"XML Import/Export", 
-MessageBoxButton.OK, 
-MessageBoxImage.Information);
-}
+    if (this.Gantt.ExportToXML())
+    {
+        MessageBox.Show("Tasks exported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
 }
 
 private void Open_Click(object sender, System.Windows.RoutedEventArgs e)
 {
-if (this.Gantt.ImportFromXML())
-{
-MessageBox.Show("Tasks imported successfully.", 
-"XML Import/Export", 
-MessageBoxButton.OK, 
-MessageBoxImage.Information);
-}
+    if (this.Gantt.ImportFromXML())
+    {
+        MessageBox.Show("Tasks imported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
 }
 
 

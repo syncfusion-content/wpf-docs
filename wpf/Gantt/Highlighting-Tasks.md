@@ -11,14 +11,12 @@ documentation: ug
 
 Highlighting tasks allows you to highlight a specific set of tasks in the Gantt chart region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type IList as input. You can also specify the highlighting brush through the provided API.
 
-### Use Case Scenario
+## Use Case Scenario
 
 * When you like to view some specific set of tasks with a different color, you can easily achieve that by providing that set of tasks as input.
 * This feature also helps the user to highlight tasks that are in a critical path of a project.
 
-### Properties
-
-
+## Properties
 
 <table>
 <tr>
@@ -42,7 +40,7 @@ Brush</td></tr>
 </table>
 
 
-Adding Highlighting Tasks to an Application
+## Adding Highlighting Tasks to an Application
 
 To highlight a set of tasks in Gantt chart region:
 
@@ -53,110 +51,57 @@ To highlight a set of tasks in Gantt chart region:
 {% tabs %}
 {% highlight xaml %}
 
-
-<sync:GanttControl x:Name="Gantt" 
-
-ItemsSource="{Binding GanttItemSource}" 
-
-HighlightedItems="{Binding HighlightedTasks}">
-
+<sync:GanttControl x:Name="Gantt"
+                   ItemsSource="{Binding GanttItemSource}" 
+                   HighlightedItems="{Binding HighlightedTasks}">
 </sync:GanttControl>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-
-
 /// Codes in View Model 
-
 /// <summary>
-
 /// Initializes a new instance of the <see cref="ViewModel"/> class.
-
 /// </summary>
-
 public ViewModel()
-
 {
-
     this.AddHighlightedTasks();
-
 }
-
-
 
 IList _highlightedTasks = new List<Task>();
 
-
-
 /// <summary>
-
 /// Gets or sets the highlighted tasks.
-
 /// </summary>
-
 /// <value>The highlighted tasks.</value>
-
 public IList HighlightedTasks
-
 {
-
     get
-
     {
-
         return _highlightedTasks;
-
     }
-
     set
-
     {
-
         _highlightedTasks = value;
-
         this.OnPropertyChanged("HighlightedTasks");
-
     }
-
 }
-
-
 
 /// <summary>
-
 /// Adds the highlighted tasks.
-
 /// </summary>
-
 internal void AddHighlightedTasks()
-
 {
-
     List<Task> tasks = new List<Task>();
-
-
-
     /// Adding the list of tasks
-
     tasks.AddRange(this.GanttItemSource[0].ChildTask[0].ChildTask[2].ChildTask);
-
     tasks.AddRange(this.GanttItemSource[0].ChildTask[1].ChildTask);
-
-
-
     this.HighlightedTasks = tasks;
-
 }
-
-
 
 /// Adding Highlighted items code behind
-
 this.Gantt.HighlightedItems = this.view.HighlightedTasks;
-
-
 
 {% endhighlight  %}
 {% endtabs  %}
@@ -172,7 +117,7 @@ The following image shows the Gantt with Highlighted Tasks:
 Gantt with Highlighted Tasks
 {:.caption}
 
-### Samples Link
+## Samples Link
 
 To view samples:
 
