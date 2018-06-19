@@ -282,7 +282,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 ## Interaction
 
 Annotation can be Select, Drag, Resize and Rotate by using `AnnotationConstraints`.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
-To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) .
+To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) .
 
 {% tabs %}
 {% highlight C# %}
@@ -300,7 +300,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 
 ### Reference for Rotation
 
- * `RotationReference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+ * `RotationReference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight C# %}
@@ -315,7 +315,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-* [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the action, state of action and value changes.
+* [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the action, state of action and value changes.
 
 ## Multiple Annotations
 

@@ -85,7 +85,7 @@ Following steps demonstrates creating a simple PDF viewer application in WPF:
 
 ## Display PDF file
    
-The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the `PdfViewerControl`:
+The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the `PdfViewerControl`:
 
 1. Create a simple class that loads a PDF document  as illustrated in the following code example. Save the class file as PdfReport.cs.
 

@@ -70,10 +70,10 @@ Syncfusion.Calculate.iOS<br/>
 
 ## Compute formula using CalcQuickBase
 
-The [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) will provide options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables.
-`CalcQuickBase` is predefined derived class from [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html).
+The [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) will provide options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables.
+`CalcQuickBase` is predefined derived class from [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html).
 
-Below example shows the computation of formula using [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~ParseAndCompute.html) method of `CalcQuickBase`.
+Below example shows the computation of formula using [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~ParseAndCompute.html) method of `CalcQuickBase`.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,16 +95,16 @@ string result = calcQuick.ParseAndCompute(formula);
 
 ## Compute formula using ICalcData
 
-Essential Calculate provides calculation support to arbitrary business objects through [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface.
+Essential Calculate provides calculation support to arbitrary business objects through [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface.
 The methods and events used in `ICalcData` interface are
 
-* [GetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~GetValueRowCol.html)       - A method that is used to get the value from mentioned row and column index.
+* [GetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~GetValueRowCol.html)       - A method that is used to get the value from mentioned row and column index.
 
-* [SetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~SetValueRowCol.html)       - A method that is used to set the value to mentioned row and column index.
+* [SetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~SetValueRowCol.html)       - A method that is used to set the value to mentioned row and column index.
 
-* [WireParentObject](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~WireParentObject.html)   - A method that wires the ParentObject after the `CalcEngine` object is created or when a `RegisterGridAsSheet` call is made.
+* [WireParentObject](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~WireParentObject.html)   - A method that wires the ParentObject after the `CalcEngine` object is created or when a `RegisterGridAsSheet` call is made.
 
-* [ValueChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~ValueChanged_EV.html)        - An event that occurs when the value is changed.
+* [ValueChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~ValueChanged_EV.html)        - An event that occurs when the value is changed.
 
 Below example shows the computation of formula using `ICalcData` interface.
 
@@ -165,9 +165,9 @@ calcData.SetValueRowCol(“20”, 1, 2);
 
 ### Evaluation of formula
 
-The `ICalcData` object can be integrated into [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) by passing it through constructor. Now, you can compute the expressions or equations using `CalcEngine`.
+The `ICalcData` object can be integrated into [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) by passing it through constructor. Now, you can compute the expressions or equations using `CalcEngine`.
 
-The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` is used to evaluate the formulas using the values from `ICalcData` object by cell references.
+The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` is used to evaluate the formulas using the values from `ICalcData` object by cell references.
 
 {% tabs %}
 {% highlight c# %}
@@ -187,7 +187,7 @@ string result = engine.ParseAndComputeFormula(formula);
 
 ### CalcQuickBase
  
-The simplest way to use Essential Calculate is through an instance of its [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. But we cannot change the values of the variables at runtime for computation. Also by default, `CalcQuickBase` does not try to track any dependencies among the variables you set, hence to enable automatic recalculation of dependent variables, users need to set the [AutoCalc](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~AutoCalc.html) property to `True`.
+The simplest way to use Essential Calculate is through an instance of its [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. But we cannot change the values of the variables at runtime for computation. Also by default, `CalcQuickBase` does not try to track any dependencies among the variables you set, hence to enable automatic recalculation of dependent variables, users need to set the [AutoCalc](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~AutoCalc.html) property to `True`.
 
 For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/wpf/calculate/working-with-calcquick)
 
@@ -195,7 +195,7 @@ N> Please find the sample which uses `CalcQuickBase` class for computations, [Ca
 
 ### ICalcData
 
-To use Essential Calculate support, we need to derive the class from [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface which allows the [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) class to communicate with arbitrary data sources.
+To use Essential Calculate support, we need to derive the class from [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface which allows the [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) class to communicate with arbitrary data sources.
 To add calculation support to classes that represent data in a row/column format like a Data Grid, then you need to derive the classes inherited from `ICalcData` interface. Since `GetValueRowCol` and `SetValueRowCol` methods 
 of `ICalcData` interface is used to get and set the values of the variables at runtime for computation. `CalcEngine` listens to the `ValueChanged` event of `ICalcData` interface to tracks the dependencies and compute the formulas.
 
@@ -205,8 +205,8 @@ N> Please find the sample which uses `ICalcData` interface for computations, [IC
 
 ## Cross Sheet Reference
 
-[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) provides support to perform the calculation by accessing the values from the different sheets using [RegisterGridAsSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RegisterGridAsSheet.html) method.
-This method registers an `ICalcData` object so it can be referenced in a formula with another `ICalcData` object. [CreateSheetFamilyID](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CreateSheetFamilyID.html) method of `CalcEngine` is used to create a unique family identifier for the sheet.
+[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) provides support to perform the calculation by accessing the values from the different sheets using [RegisterGridAsSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RegisterGridAsSheet.html) method.
+This method registers an `ICalcData` object so it can be referenced in a formula with another `ICalcData` object. [CreateSheetFamilyID](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CreateSheetFamilyID.html) method of `CalcEngine` is used to create a unique family identifier for the sheet.
 In `RegisterGridAsSheet` method, while registering the `ICalcData` objects, users need to pass this unique identifier to mark the `ICalcData` objects are belonging
 to this family. Also cross reference of `ICalcData` objects can be done within the same family.
 
@@ -245,7 +245,7 @@ string result = engine.ParseAndComputeFormula(formula);
 
 ## Compute formulas in different region settings
 
-Essential Calculate have support to compute the formulas in different region settings. The two static members such as [ParseArgumentSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseArgumentSeparator.html) and [ParseDecimalSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseDecimalSeparator.html) of `CalcEngine` class is used to set the separators based on local region settings. By default, the value of `ParseArgumentSeparator` is comma(,) and the value of `ParseDecimalSeparator` is dot(.).
+Essential Calculate have support to compute the formulas in different region settings. The two static members such as [ParseArgumentSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseArgumentSeparator.html) and [ParseDecimalSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseDecimalSeparator.html) of `CalcEngine` class is used to set the separators based on local region settings. By default, the value of `ParseArgumentSeparator` is comma(,) and the value of `ParseDecimalSeparator` is dot(.).
 
 {% tabs %}
 {% highlight c# %}
