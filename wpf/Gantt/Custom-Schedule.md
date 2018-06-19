@@ -28,7 +28,7 @@ Custom DateTime schedule is used to define your own date time schedule, which ca
 
 In both the custom schedules, Gantt will get the information from the application to render the schedule. Gantt will accept the custom schedule information in the form of a collection of GanttScheduleRowInfo object, and process it to draw the schedule. 
 
-## GanttScheduleRowInfo class will have following fields:
+GanttScheduleRowInfo class will have following fields:
 
 1. PixelsPerUnit—Gets the information of the pixel value equivalent to one unit in custom measurement.
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
