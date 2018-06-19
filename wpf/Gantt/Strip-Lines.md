@@ -13,27 +13,37 @@ Essential Gantt provides support for adding Strip Lines in the Gantt chart regio
 
 ## Strip lines in Essential Gantt support the following features:
 
-* Repeat behavior: Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval. The available repeat behaviors are as follows:
+Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval.
+
+* You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
+* Strip line visibility can be toggled by using the ShowStripLines property in GanttControl.
+
+The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
+
+### Repeat behavior
+
+The available repeat behaviors are as follows:
+
 * Year
 * Month
 * Week
 * Day
 * Hour
 * Minute
-* Event: By handling its event, you can customize the strip lines dynamically.
-* Style selector: Used to pass the style of the strip lines dynamically. Based on constraints.
-* Template selector: Used to pass the content template of the strip lines dynamically based on constraints.
-* There are two types of strip lines available in Essential Gantt. They are:
+
+### Style selector
+It used to pass the style of the strip lines dynamically. Based on constraints.
+### Template selector
+It used to pass the content template of the strip lines dynamically based on constraints.
+
+## Types of Striplines
+
+There are two types of strip lines available in Essential Gantt. They are:
+
 * Regular
 * Absolute—Absolute type will place the strip line at any user-defined point. 
-* You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
-* Strip line visibility can be toggled by using the ShowStripLines property.
 
-The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
-
-
-
-### Properties
+## Properties
 
 <table>
 <tr>
@@ -154,8 +164,6 @@ Double</td></tr>
 
 ### Properties
 
-
-
 <table>
 <tr>
 <th>
@@ -200,7 +208,7 @@ This property contains the following values:Regular: This denotes the normal str
 
 ### Events
 
-
+By handling its event, you can customize the strip lines dynamically.
 
 <table>
 <tr>
@@ -234,37 +242,25 @@ The following code illustrates Creating the collection of StripLineInfo.
 StripCollection =  new List<StripLineInfo>();
 
 //Getting the collection of StripLineInfo
-
 StripCollection = GetStripCollection();
 
 //Method will return the collection StripLineInfo
-
 private List<StripLineInfo> GetStripCollection()
 
 {
+    List<StripLineInfo> stripCollection = new List<StripLineInfo>();
+    stripCollection.Add(new StripLineInfo() 
+    { 
+        Content =  "Weekly Team Meeting", 
+        StartDate = new DateTime(2012, 6, 4), 
+        EndDate = new DateTime(2012, 6, 4), 
+        HorizontalContentAlignment = HorizontalAlignment.Center, 
+        VerticalContentAlignment = VerticalAlignment.Center, 
+        Background =  Brushes.Gold, RepeatBehavior = Repeat.Week, RepeatFor = 1,
+        RepeatUpto = new DateTime(2012, 12, 10),
+    });
 
-List<StripLineInfo> stripCollection = new List<StripLineInfo>();
-
-stripCollection.Add(new StripLineInfo() 
-
-{ 
-
-Content =  "Weekly Team Meeting", StartDate = new DateTime(2012, 6, 4), 
-
-EndDate = new DateTime(2012, 6, 4), 
-
-HorizontalContentAlignment = HorizontalAlignment.Center, 
-
-VerticalContentAlignment = VerticalAlignment.Center, 
-
-Background =  Brushes.Gold, RepeatBehavior = Repeat.Week, RepeatFor = 1,
-
-RepeatUpto = new DateTime(2012, 12, 10),
-
-});
-
-return stripCollection;
-
+    return stripCollection;
 }
 
 
@@ -276,35 +272,20 @@ The following code example illustrates binding the strip line collection to Stri
 
 
 <sync:GanttControl x:Name="Gantt"
-
-Grid.Row="1"
-
-ShowStripLines="True"
-
-StripLines="{Binding StripCollection}">
-
-<sync:GanttControl.TaskAttributeMapping>
-
-<sync:TaskAttributeMapping TaskIdMapping="TaskId"
-
-TaskNameMapping="TaskName"
-
-StartDateMapping="StartDate"
-
-FinishDateMapping="FinishDate"
-
-ChildMapping="Child"
-
-DurationMapping="Duration"
-
-ProgressMapping="Progress"
-
-PredecessorMapping="Predecessor"
-
-ResourceInfoMapping="Resources"/>
-
-</sync:GanttControl.TaskAttributeMapping>
-
+                   Grid.Row="1"
+                   ShowStripLines="True"
+                   StripLines="{Binding StripCollection}">
+    <sync:GanttControl.TaskAttributeMapping>
+        <sync:TaskAttributeMapping TaskIdMapping="TaskId"
+                                   TaskNameMapping="TaskName"
+                                   StartDateMapping="StartDate"
+                                   FinishDateMapping="FinishDate"
+                                   ChildMapping="Child"
+                                   DurationMapping="Duration"
+                                   ProgressMapping="Progress"
+                                   PredecessorMapping="Predecessor"
+                                   ResourceInfoMapping="Resources"/>
+    </sync:GanttControl.TaskAttributeMapping>
 </sync:GanttControl>                                                
 
 {% endhighlight  %}

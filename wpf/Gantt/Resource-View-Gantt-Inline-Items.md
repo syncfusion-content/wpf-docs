@@ -22,15 +22,10 @@ The following code illustrates how to add inline items dynamically to the underl
 
 
 //To add dynamic inline items
-
 Item item = new Item() 
-
 { 
-
-StartDate = new DateTime(2012, 01, 19), 
-
-FinishDate = new DateTime(2012, 01, 25) 
-
+    StartDate = new DateTime(2012, 01, 19), 
+    FinishDate = new DateTime(2012, 01, 25) 
 };
 
 viewModel.GanttItemSource[0].SubItems[0].InLineItems.Add(item);
@@ -39,7 +34,7 @@ viewModel.GanttItemSource[0].SubItems[0].InLineItems.Add(item);
 
 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 A resource view is very useful when you need to manage the resources in a project.
 
@@ -51,7 +46,7 @@ You can populate a resource view Gantt by populating the collection of tasks in 
 
 You can populate a Resource view Gantt for both date-time schedules and numeric schedules. 
 
-Resource View Gantt in a Custom Numeric Schedule
+### Resource View Gantt in a Custom Numeric Schedule
 
 To populate a Resource view Gantt in a Custom Numeric Schedule:
 
@@ -63,33 +58,18 @@ The following code illustrates this.
 
 {% highlight xaml %}
 
-
-
-
 <gantt:GanttControl x:Name="Gantt"
-
-Grid.Row="1"
-
-ScheduleType="CustomNumeric"
-
-CustomScheduleSource="{Binding CustomScheduleInfo}"
-
-ItemsSource="{Binding TeamDetails}">
-
-<gantt:GanttControl.TaskAttributeMapping>
-
-<gantt:TaskAttributeMapping TaskNameMapping="Name"
-
-ChildMapping="SubItems"
-
-StartPointMapping="Start"
-
-FinishPointMapping="End"
-
-InLineTaskMapping="InLineItems"/>
-
-</gantt:GanttControl.TaskAttributeMapping>
-
+                    Grid.Row="1"
+                    ScheduleType="CustomNumeric"
+                    CustomScheduleSource="{Binding CustomScheduleInfo}"
+                    ItemsSource="{Binding TeamDetails}">
+    <gantt:GanttControl.TaskAttributeMapping>
+        <gantt:TaskAttributeMapping TaskNameMapping="Name"
+                                    ChildMapping="SubItems"
+                                    StartPointMapping="Start"
+                                    FinishPointMapping="End"
+                                    InLineTaskMapping="InLineItems"/>
+    </gantt:GanttControl.TaskAttributeMapping>
 </gantt:GanttControl>
 
 {% endhighlight  %}
@@ -100,47 +80,31 @@ The following code is the sample data source of a resource view Gantt in a custo
 {% highlight c# %}
 
 
- ObservableCollection<Item> teams = new ObservableCollection<Item>();
-
+ObservableCollection<Item> teams = new ObservableCollection<Item>();
 teams.Add(new Item() { Name = "RDU Team" });
 
 Item Person = new Item() { Name = "Robert" };
-
 Person.InLineItems.Add(new Item() { Start =0, End=2, Name = "Market Analysis", Progress = 50d });
-
 Person.InLineItems.Add(new Item() { Start =2, End=4, Name = "Competitor Analysis", Progress = 20d });
-
 Person.InLineItems.Add(new Item() { Start = 3, End = 6,Name = "Design Spec" });
-
 teams[0].SubItems.Add(Person);
 
 Person = new Item() { Name = "Michael" };
-
 Person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Basic Requirement Analysis", Progress = 40 });
-
 Person.InLineItems.Add(new Item() { Start = 5, End = 7, Name = "Requirement Spec" });
-
 teams[0].SubItems.Add(Person);
 
 Person = new Item() { Name = "Anne" };
-
 Person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Estimation", Progress = 30 });
-
 Person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Budget & Plan Spec" });
-
 teams[0].SubItems.Add(Person);
 
 teams.Add(new Item() { Name = "Graphics Team" });
 
 Person = new Item() { Name = "Madhan" };
-
 Person.InLineItems.Add(new Item() { Start = 0, End = 3, Name = "Identifying UI modules", Progress = 40 });
-
 Person.InLineItems.Add(new Item() { Start = 2, End = 5, Name = "Defining UI Design" });
-
 teams[1].SubItems.Add(Person);
-
-
 
 {% endhighlight  %}
 
@@ -152,7 +116,7 @@ The following shows the Resultant output:
 
 
 
-Resource View Gantt with a Date-Time Schedule:
+### Resource View Gantt with a Date-Time Schedule
 
 To populate the Resource view Gantt with a date-time schedule:
 
@@ -240,7 +204,7 @@ Grid Region:The grid will display only the information about the team and its re
 
 Chart Region: The chart will display only the information about the team and the tasks assigned to each resource in the team (InLineItems). It will not display the information about resources (SubItems).
 
-### Sample Link
+## Sample Link
 
 To view samples: 
 
