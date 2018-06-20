@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Filter Row 
-SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
+SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,7 +24,7 @@ this.dataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 
 ![](FilterRow_images/FilterRow_img1.png)
 
-You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~GetFilterRowIndex.html)method.
+You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~GetFilterRowIndex.html)method.
 
 {% tabs %}
 {% highlight c# %}
@@ -32,7 +32,7 @@ int filterRowIndex = this.dataGrid.GetFilterRowIndex();
 {% endhighlight %}
 {% endtabs %}
 
-You can check whether the specified row index is FilterRow index, by using [SfDataGrid.IsFilterRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~IsFilterRowIndex.html) helper method.
+You can check whether the specified row index is FilterRow index, by using [SfDataGrid.IsFilterRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~IsFilterRowIndex.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -40,10 +40,10 @@ bool isFilterRowIndex = this.dataGrid.IsFilterRowIndex(1);
 {% endhighlight %}
 {% endtabs %}
 
-**Note:**The above helper methods are available in [Syncfusion.UI.Xaml.Grid.Helpers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers_namespace.html) namespace
+**Note:**The above helper methods are available in [Syncfusion.UI.Xaml.Grid.Helpers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers_namespace.html) namespace
 
 ## Built-in Editors
-By default, FilterRow loads the editors based on underlying property type to filter the data easily. You can change the default editors by using [GridColumn.FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html) property.
+By default, FilterRow loads the editors based on underlying property type to filter the data easily. You can change the default editors by using [GridColumn.FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html) property.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTextColumn MappingName="CustomerName"
@@ -79,7 +79,7 @@ TextBox
 TextBox
 </td>
 <td>
-{{'[GridFilterRowTextBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowTextBoxRenderer.html)'| markdownify }}
+{{'[GridFilterRowTextBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowTextBoxRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the string values.
@@ -93,7 +93,7 @@ Numeric
 DoubleTextBox
 </td>
 <td>
-{{'[GridFilterRowNumericRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer.html)'| markdownify }}
+{{'[GridFilterRowNumericRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the numeric values.
@@ -107,7 +107,7 @@ ComboBox
 ComboBoxAdv
 </td>
 <td>
-{{'[GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html)'| markdownify }}
+{{'[GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the specific value from the drop down.
@@ -121,7 +121,7 @@ MultiSelectComboBox
 ComboBoxAdv
 </td>
 <td>
-{{'[GridFilterRowMultiSelectRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowMultiSelectRenderer.html)'| markdownify }}
+{{'[GridFilterRowMultiSelectRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowMultiSelectRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the multiple values from the drop down.
@@ -135,7 +135,7 @@ CheckBox
 CheckBox
 </td>
 <td>
-{{'[GridFilterRowCheckBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCheckBoxRenderer.html)'| markdownify }}
+{{'[GridFilterRowCheckBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCheckBoxRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the Boolean values.
@@ -150,7 +150,7 @@ DateTime
 DateTimeEdit
 </td>
 <td>
-{{'[GridFilterRowDateTimeRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowDateTimeRenderer.html)'| markdownify }}
+{{'[GridFilterRowDateTimeRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowDateTimeRenderer.html)'| markdownify }}
 </td>
 <td>
 Used for filtering the DateTime values.
@@ -159,7 +159,7 @@ Used for filtering the DateTime values.
 </table>
 
 ## Filter options
-Based on the editor type, FilterRowCell displays the filter conditions in dropdown where you can easily switch between the conditions to filter the data. You can disable filter options by setting [GridColumn.FilterRowOptionsVisibility](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowOptionsVisibility.html) property.
+Based on the editor type, FilterRowCell displays the filter conditions in dropdown where you can easily switch between the conditions to filter the data. You can disable filter options by setting [GridColumn.FilterRowOptionsVisibility](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowOptionsVisibility.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,22 +194,22 @@ Below are the filter conditions supported by different filter row editors in SfD
 </tr>
 <tr>
 <td>
-When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, the Numeric editor type are loaded in FilterRowCell.
+When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, the Numeric editor type are loaded in FilterRowCell.
 
 </td>
 <td>
-When string value is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items is dynamic, then TextBox editor type are loaded in FilterRowCell.
+When string value is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items is dynamic, then TextBox editor type are loaded in FilterRowCell.
 
 </td>
 <td>
-When DateTime type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then DateTime editor is loaded in FilterRowCell.
+When DateTime type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then DateTime editor is loaded in FilterRowCell.
 
 </td>
 <td>
-When Boolean type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then CheckBoxEditor is loaded in FilterRowCell
+When Boolean type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then CheckBoxEditor is loaded in FilterRowCell
 </td>
 <td>
-If we need the ComboBox and MultiSelectComboBox we have to set the {{'[FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html)'| markdownify }}.
+If we need the ComboBox and MultiSelectComboBox we have to set the {{'[FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html)'| markdownify }}.
 
 </td>
 </tr>
@@ -262,7 +262,7 @@ Always equals or not equals filter condition will be applied based on selected i
 </td>
 </tr>
 </table>
-You can change the default FilterRow condition for a corresponding column by using [GridColumn.FilterRowCondition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowCondition.html) property.
+You can change the default FilterRow condition for a corresponding column by using [GridColumn.FilterRowCondition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowCondition.html) property.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridNumericColumn MappingName="OrderID" 
@@ -276,7 +276,7 @@ this.dataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqual
 ![](FilterRow_images/FilterRow_img3.png)
 
 ## Filtering null values
-You can enable or disable filtering of null values by setting [GridColumn.AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) property. The default value is `true`.
+You can enable or disable filtering of null values by setting [GridColumn.AllowBlankFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowBlankFilters.html) property. The default value is `true`.
 When null value filtering is enabled, the filter options loaded with two additional options (“Null” and “Not Null”) to filter the null values. ComboBox and MultiSelectComboBox editors, loads with “Blanks” item in drop down to filter the null values. 
 
 {% tabs %}
@@ -304,7 +304,7 @@ this.dataGrid.Columns[2].AllowBlankFilters = true;
 ![](FilterRow_images/FilterRow_img6.png)
 
 ## Instant Filtering
-By default, filters are applied to the columns when moving to other cells or pressing enter key. You can apply filter when typing or selecting in editor itself by setting [GridColumn.ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) as `true`. 
+By default, filters are applied to the columns when moving to other cells or pressing enter key. You can apply filter when typing or selecting in editor itself by setting [GridColumn.ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) as `true`. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTextColumn MappingName="CustomerName"
@@ -318,7 +318,7 @@ this.dataGrid.Columns[2].ImmediateUpdateColumnFilter = true;
 ![](FilterRow_images/FilterRow_img7.png)
 
 ## Disable filtering for a particular FilterRowCell
-By default, you can filter the records by editing filter row cell. You can disable this editing by using [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
+By default, you can filter the records by editing filter row cell. You can disable this editing by using [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
@@ -343,7 +343,7 @@ You can collapse the FilterOption button using `FilterRowOptionsVisibility` prop
 ## Styling
 
 ### FilterRow style
-You can customize the style of filter row by writing style of TargetType [FilterRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html).
+You can customize the style of filter row by writing style of TargetType [FilterRowControl](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html).
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
@@ -356,7 +356,7 @@ You can customize the style of filter row by writing style of TargetType [Filte
 ![](FilterRow_images/FilterRow_img8.png)
 
 ### FilterRowCell style
-You can customize the style of filter row cell by writing style of TargetType [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html).
+You can customize the style of filter row cell by writing style of TargetType [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html).
 {% tabs %}
 {% highlight xaml %}
 <local:FilterRowCellStyleConverter x:Key="filterRowCellStyleConverter"/>
@@ -389,7 +389,7 @@ public class FilterRowCellStyleConverter : IValueConverter
 ![](FilterRow_images/FilterRow_img9.png)
 
 ## Customizing filter row cell
-You can customize the filter row cell by overriding the [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html). You have to override the GetGridCell method in [RowGenerator](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridFilterRowCell`.
+You can customize the filter row cell by overriding the [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html). You have to override the GetGridCell method in [RowGenerator](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridFilterRowCell`.
 {% tabs %}
 {% highlight c# %}
 public class GridFilterRowCellExt : GridFilterRowCell
@@ -434,7 +434,7 @@ public MainWindow()
 {% endtabs %}
 
 ### Customizing filter options for particular columns 
-By default, TextBox editor will display the string related conditions like Begins With, Ends With, Contains, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
+By default, TextBox editor will display the string related conditions like Begins With, Ends With, Contains, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -512,7 +512,7 @@ public class CustomRowGenerator : RowGenerator
 
 ### Customizing the FilterRow Renderer 
 SfDataGrid allows you to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. You can also create new renderers instead of overriding the existing renderer. 
-You can customize the default TextBox editor behavior by overriding `GridFilterRowTextBoxRenderer` class and add the custom renderer to [FilterRowCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterRowCellRenderers.html).
+You can customize the default TextBox editor behavior by overriding `GridFilterRowTextBoxRenderer` class and add the custom renderer to [FilterRowCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterRowCellRenderers.html).
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTextColumn MappingName="CustomerName"
@@ -536,7 +536,7 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 ### Filter based on numeric interval by using the MultiSelectComboBox filter
-By default you can filter the multiple data in the column by using MultiSelectComboBox filter editor type, the below code shows how to filter the data based on range of numeric values by overriding the [ProcessMultipleFilters](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~ProcessMultipleFilters.html) method in [GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html) class.
+By default you can filter the multiple data in the column by using MultiSelectComboBox filter editor type, the below code shows how to filter the data based on range of numeric values by overriding the [ProcessMultipleFilters](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~ProcessMultipleFilters.html) method in [GridFilterRowComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowComboBoxRenderer.html) class.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridNumericColumn MappingName="OrderID" 
@@ -794,8 +794,8 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
 ![](FilterRow_images/FilterRow_img11.png)
 
 ### Numeric filter row conditions for string typed column
-By default, TextBox filter is loaded when underlying property type is string which is bound to a column. The below code shows how to apply the numeric filter row conditions for that particular column using converters in [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html) property.
-You can filter the decimal value in a filter row cell by overriding the [OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer~OnInitializeEditElement.html) method in [GridFilterRowNumericRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer.html) class.
+By default, TextBox filter is loaded when underlying property type is string which is bound to a column. The below code shows how to apply the numeric filter row conditions for that particular column using converters in [ValueBinding](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html) property.
+You can filter the decimal value in a filter row cell by overriding the [OnInitializeEditElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer~OnInitializeEditElement.html) method in [GridFilterRowNumericRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer.html) class.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTextColumn MappingName="Freight"

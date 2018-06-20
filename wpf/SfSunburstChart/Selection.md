@@ -11,7 +11,7 @@ documentation: ug
 
 # Selection
 
-Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
+Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
 
 The below code shows, how to enable the selection behavior.  
 
@@ -41,7 +41,7 @@ chart.Behaviors.Add(selection);
 
 ## SelectionDisplayMode
 
-You can customize the selected segment appearance by using brush or opacity. You can choose between color or opacity using the [`SelectionDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior~SelectionDisplayMode.html) property in the selection behavior 
+You can customize the selected segment appearance by using brush or opacity. You can choose between color or opacity using the [`SelectionDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior~SelectionDisplayMode.html) property in the selection behavior 
 
 * HighlightByColor – To display the selected segment appearance using brush.
 * HighlightByOpacity – To display the selected segment appearance using opacity.
@@ -112,7 +112,7 @@ chart.Behaviors.Add(selection);
 
 ## SelectionType
 
-Sunburst chart provides multiple option to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior~SelectionType.html) property in selection behavior.
+Sunburst chart provides multiple option to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior~SelectionType.html) property in selection behavior.
 
 * Child – To select the child of selected parent.
 * Group – To select the entire categories in group.

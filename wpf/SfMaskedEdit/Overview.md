@@ -7,20 +7,17 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-# Overview
+# SfMaskedEdit
 
-The Masked text box is an advanced version of the Entry control that restricts your input of certain types such as characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
+MaskedEdit is an enhanced TextBox control that restricts input to conform to a specific structure or mask. It uses the Mask property to distinguish between proper and improper inputs. The important features of MaskedEdit are,
 
-![](Overview_images/Overview_img1.jpg)
+* Different mask expressions support.
+* Formats Value.
+* Culture support.
+* Watermark support.
 
-## Key features
+## Control structure
 
-Key features are:
+![](Overview_images/Overview_img1.jpeg)
 
-* The input can be masked with a fixed or variable length by setting the `MaskType` to `Text` or `RegEx`.
-* Custom prompt characters can be set.
-* Input validation can be done either during each key press or when the control lost its focus.
-* Values and clipboard operations can be used with or without literal and prompt characters.
-* Watermark text can be used to display an instruction or important information.
-* The UI of the masked text box can be completely customizable.
 

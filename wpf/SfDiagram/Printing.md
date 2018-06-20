@@ -17,7 +17,7 @@ Print preview is used to show preview the SfDiagram control before printing.
 ![](Printing_images/Printing_img1.png)
 
 ## Customize the Printing
-`PrintStretch` and `Orientation` properties of [PrintingService](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService.html "PrintingService") is used to customize the
+`PrintStretch` and `Orientation` properties of [PrintingService](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService.html "PrintingService") is used to customize the
 page which is to be previewed and printed.
 
 {% tabs %}

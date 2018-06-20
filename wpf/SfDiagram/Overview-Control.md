@@ -42,9 +42,9 @@ Sample Link: WPF Dashboard->SfDiagram->Getting Started->Overview.
 
 Interaction of Overview can be controlled using `Constraint` property. Overview allows Zoom and Pan interaction on it.
 
-Please refer to the [OverviewConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OverviewConstraints.html) to know about interactions can be done in Overview.
+Please refer to the [OverviewConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OverviewConstraints.html) to know about interactions can be done in Overview.
 
-* `OverviewChangedEvent` will notify the interactions in Overview with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs_members.html).
+* `OverviewChangedEvent` will notify the interactions in Overview with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs_members.html).
 
 ## Deferred Scrolling
 
@@ -64,4 +64,4 @@ N> In SfDiagram, we named Deferred Scrolling support as `Outline`.Outline is onl
 
 ### Outline customization
 
-Options are provided to override the appearance, style and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) property of Overview.
+Options are provided to override the appearance, style and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) property of Overview.

@@ -13,23 +13,23 @@ This section explains about the performance and limitations of Essential Calcula
 
 ## To improve the performance
 
-By default, [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) calculates the formulas quickly. But to improve the performance in Essential Calculate, user need to set the following
+By default, [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) calculates the formulas quickly. But to improve the performance in Essential Calculate, user need to set the following
 properties of `CalcEngine`.
 
 **AllowShortCircuitIFs**
 
-If the application contains more nested if formulas for calculation, then setting [AllowShortCircuitIFs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AllowShortCircuitIFs.html) property to `true` computes the formulas
+If the application contains more nested if formulas for calculation, then setting [AllowShortCircuitIFs](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AllowShortCircuitIFs.html) property to `true` computes the formulas
 quickly.
 
 **CalculatingSuspended**
 
-If there are more number of dependent cells in the formulas for calculation, then user can set [CalculatingSuspended](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CalculatingSuspended.html) property to `true`, 
+If there are more number of dependent cells in the formulas for calculation, then user can set [CalculatingSuspended](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CalculatingSuspended.html) property to `true`, 
 to suspend calculations while a series of changes are made to dependent cells either by the user or programmatically.
 
 **UseFormulaValues**
 
-To avoid the repeated calculations for a formula cell which contains more dependency cells, set [UseFormulaValues](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UseFormulaValues.html) property to `true` to
-return the formula value stored in [FormulaInfoTable](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaInfoTable.html).
+To avoid the repeated calculations for a formula cell which contains more dependency cells, set [UseFormulaValues](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UseFormulaValues.html) property to `true` to
+return the formula value stored in [FormulaInfoTable](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaInfoTable.html).
 
 **Parse Formula and Compute Formula**
 
@@ -91,23 +91,23 @@ result = engine.ComputeFormula(parsedFormula);
 
 To avoid the stack overflow exception while computing the formulas iteratively exceeding the maximum capacity, user need to set the following properties of `CalcEngine`,
 
-[**ThrowCircularException**](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ThrowCircularException.html) 
+[**ThrowCircularException**](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ThrowCircularException.html) 
 
 Setting this property to `true` will throw an exception when the circular exception is encountered and also
 avoids the recursive looping.
 
-[**IterationMaxCount**](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~IterationMaxCount.html)
+[**IterationMaxCount**](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~IterationMaxCount.html)
 
 `CalcEngine` provides an option to set iterative calculations and maximum iteration count to calculate the formula having circular references.
 The default value is 0 indicating that iterative calculation support is turned off. `ThrowCircularException` property will be automatically set
 to `true` when you set a non-zero value to `IterationMaxCount`.
 
-[**MaximumRecursiveCalls**](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html)
+[**MaximumRecursiveCalls**](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html)
 
 `CalcEngine` have `MaximumRecursiveCalls` property for which value is 100 by default. So, if the recursive call during calculations exceeds more than 100, 
 stack overflow exception occurs which can be avoided by setting this property to required limit at the sample level.
 
-[**MaxStackDepth**](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaxStackDepth.html)
+[**MaxStackDepth**](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaxStackDepth.html)
 
 `CalcEngine` have `MaxStackDepth` property for which value is 50 by default. So, if the stack size is exceeding more than 50, stack overflow exception 
 occurs which can be avoided by setting this property to required limit at the sample level. 

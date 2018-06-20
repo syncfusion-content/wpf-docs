@@ -9,16 +9,16 @@ documentation: ug
 
 # Working with CalcEngine 
 
-[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) encapsulates the code required to parse and compute the formulas. It manages several library functions, hash tables for Essential Calculate.  
+[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) encapsulates the code required to parse and compute the formulas. It manages several library functions, hash tables for Essential Calculate.  
 All the data's in `CalcEngine` is assumed to be part of a rectangular array reference through cell coordinates.
 
 ## Computation using CalcEngine
 
-The [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) interface allows the `CalcEngine` class to communicate with arbitrary data sources that implement this interface.
+The [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) interface allows the `CalcEngine` class to communicate with arbitrary data sources that implement this interface.
 If any user defined class which implements the `ICalcData` interface needs to be integrated with `CalcEngine`, then that class’s object can be passed as parameter 
 to the `CalcEngine` constructor.
 
-The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` parses and computes the string formula passed in and updates the computed value.
+The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` parses and computes the string formula passed in and updates the computed value.
 
 ### Using ICalcData
 
@@ -47,7 +47,7 @@ string result = engine.ParseAndComputeFormula(formula);
 
 ### Using CalcQuickBase
 
-[CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) is predefined derived class from `ICalcData` interface. So, user can pass the `CalcQuickBase's` object as parameter to the constructor of `CalcEngine` for 
+[CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) is predefined derived class from `ICalcData` interface. So, user can pass the `CalcQuickBase's` object as parameter to the constructor of `CalcEngine` for 
 computations.
 
 {% tabs %}
@@ -83,31 +83,31 @@ Value</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[FormulaInfoTable](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaInfoTable.html) ' | markdownify }}</td><td>
+{{ '[FormulaInfoTable](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaInfoTable.html) ' | markdownify }}</td><td>
 Cell reference</td><td>
 FormulaInfo object</td><td>
 Tracks formula/value information for this cell.</td></tr>
 <tr>
 <td>
-{{ '[DependentCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~DependentCells.html) ' | markdownify }}</td><td>
+{{ '[DependentCells](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~DependentCells.html) ' | markdownify }}</td><td>
 Cell reference</td><td>
 Hashtable object</td><td>
 Tracks cells that depend on this cell.</td></tr>
 <tr>
 <td>
-{{ '[DependentFormulaCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~DependentFormulaCells.html) ' | markdownify }}</td><td>
+{{ '[DependentFormulaCells](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~DependentFormulaCells.html) ' | markdownify }}</td><td>
 Formula cell reference</td><td>
 Hashtable object</td><td>
 Tracks cells in which the formula cell depends upon.</td></tr>
 <tr>
 <td>
-{{ '[NamedRanges](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~NamedRanges.html) ' | markdownify }}</td><td>
+{{ '[NamedRanges](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~NamedRanges.html) ' | markdownify }}</td><td>
 Name string</td><td>
 Value string</td><td>
 Associates the named range with its value.</td></tr>
 <tr>
 <td>
-{{ '[LibraryFunctions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~LibraryFunctions.html) ' | markdownify }}</td><td>
+{{ '[LibraryFunctions](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~LibraryFunctions.html) ' | markdownify }}</td><td>
 Function name</td><td>
 LibraryFunction delegate</td><td>
 Associates the function name with its method.</td></tr>
@@ -117,7 +117,7 @@ Associates the function name with its method.</td></tr>
 
 ### ExcelLikeComputations
 
-To return the result of formula computations of Essential Calculate like Microsoft Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ExcelLikeComputations.html) is set to true.
+To return the result of formula computations of Essential Calculate like Microsoft Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ExcelLikeComputations.html) is set to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,19 +139,19 @@ string result = engine.ParseAndComputeFormula(formula);
 
 ### AllowShortCircuitIFs
 
-To specifically avoid the computing of non-used alternative in IF function calculations, set [AllowShortCircuitIFs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AllowShortCircuitIFs.html) to true.
+To specifically avoid the computing of non-used alternative in IF function calculations, set [AllowShortCircuitIFs](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AllowShortCircuitIFs.html) to true.
 The default value is false for code legacy consistency. But when it is set as true, only the necessary alternative of an IF function is computed which 
 leads to increase in performance.
 
 ### AlwaysComputeDuringRefresh
 
-If `PullUpdatedValue` method is exclusively used to retrieve the computed values, then setting [AlwaysComputeDuringRefresh](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AlwaysComputeDuringRefresh.html) property to false
+If `PullUpdatedValue` method is exclusively used to retrieve the computed values, then setting [AlwaysComputeDuringRefresh](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AlwaysComputeDuringRefresh.html) property to false
 may be more efficient as it will only recompute the value once during the calculations.
 
 ### CalculatingSuspended
 
-[CalculatingSuspended](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CalculatingSuspended.html) property is set to true, to suspend calculations while a series of changes are made to dependent cells either by the user or programmatically. 
-When the changes are complete, set this property to false, and then call [RecalculateRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RecalculateRange.html) to recalculate the affected ranges.
+[CalculatingSuspended](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CalculatingSuspended.html) property is set to true, to suspend calculations while a series of changes are made to dependent cells either by the user or programmatically. 
+When the changes are complete, set this property to false, and then call [RecalculateRange](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RecalculateRange.html) to recalculate the affected ranges.
 
 {% tabs %}
 {% highlight c# %}
@@ -190,20 +190,20 @@ repeated calculations.
 ### CheckDanglingStack
 
 While computing certain formulas, Essential Calculate ignores the dangling value in the calculation stack and returns the computed value.
-If you want this situation flagged as a invalid formula, then set [CheckDanglingStack](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CheckDanglingStack.html) property to true. The default value is false for backward compatibility purpose.
+If you want this situation flagged as a invalid formula, then set [CheckDanglingStack](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CheckDanglingStack.html) property to true. The default value is false for backward compatibility purpose.
 
 ### ForceRefreshCall
 
-If a value changes, then the [Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~Refresh.html) method is called recursively every time whenever the [ValueChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~ValueChanged_EV.html) event of `ICalcData` is fired. Setting this [ForceRefreshCall](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ForceRefreshCall.html) property to false will call the `Refresh` method for only the cells whose calculated value is actually modified.
+If a value changes, then the [Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~Refresh.html) method is called recursively every time whenever the [ValueChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~ValueChanged_EV.html) event of `ICalcData` is fired. Setting this [ForceRefreshCall](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ForceRefreshCall.html) property to false will call the `Refresh` method for only the cells whose calculated value is actually modified.
 
 ### FormulaCharacter
 
-In general, in order for Essential Calculate to recognize a string as containing a formula; then the string is required to start with the [FormulaCharacter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaCharacter.html). 
+In general, in order for Essential Calculate to recognize a string as containing a formula; then the string is required to start with the [FormulaCharacter](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaCharacter.html). 
 A static property that gets or sets the character to identify the formula. The default value is "=".
 
 ### GetValueFromArgPreserveLeadingZeros
 
-If you want to preserve the leading zeros in [GetValueFromArg](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromArg.html) method, then set [GetValueFromArgPreserveLeadingZeros](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromArgPreserveLeadingZeros.html) to true.
+If you want to preserve the leading zeros in [GetValueFromArg](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromArg.html) method, then set [GetValueFromArgPreserveLeadingZeros](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromArgPreserveLeadingZeros.html) to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -228,12 +228,12 @@ string result = engine.GetValueFromArg("A1")
 ### IterationMaxCount
 
 Gets or sets the maximum number of iterative calls that can be made on a cell to avoid circular exception. The default value is 0 indicating that iterative 
-calculation support is turned off. [ThrowCircularException](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ThrowCircularException.html) property will be automatically set to true when you set a non-zero value to [IterationMaxCount](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~IterationMaxCount.html).
+calculation support is turned off. [ThrowCircularException](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ThrowCircularException.html) property will be automatically set to true when you set a non-zero value to [IterationMaxCount](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~IterationMaxCount.html).
 
 ### IterationMaxTolerance
 
 Gets or sets the success tolerance used by the `CalcEngine's` iterative calculation support. The iterations in calculation continues until either the iteration count 
-exceeds IterationMaxCount, or two successive iteration return values have a relative difference less than [IterationMaxTolerance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~IterationMaxTolerance.html). The default value is 0.001.
+exceeds IterationMaxCount, or two successive iteration return values have a relative difference less than [IterationMaxTolerance](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~IterationMaxTolerance.html). The default value is 0.001.
 
 ### LockDependencies
 
@@ -242,7 +242,7 @@ A bool property that gets or sets whether a changed value should trigger depende
 ### MaximumRecursiveCalls
 
 Specifies the maximum number of recursive calls that can be used to compute a cell value.This property comes into play when you have a calculated formula cell that depends on
-another calculated formula that depends on another calculated formula and so on. If the depends on another formula exceeds [MaximumRecursiveCalls](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html), you will see a too complex message displayed in the cell. The default value is 100, but you can set it higher or lower depending upon your expected needs. The purpose of the limit is to avoid a circular 
+another calculated formula that depends on another calculated formula and so on. If the depends on another formula exceeds [MaximumRecursiveCalls](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html), you will see a too complex message displayed in the cell. The default value is 100, but you can set it higher or lower depending upon your expected needs. The purpose of the limit is to avoid a circular 
 reference locking up your application.
 
 ### MaxStackDepth
@@ -294,7 +294,7 @@ Gets or sets whether the `CalcEngine` rethrow any exception raised during the co
 
 ### SupportLogicalOperators
 
- If you want to use any logical operators such as AND, OR, XOR,... in a formula, you can set [SupportLogicalOperators](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~SupportLogicalOperators.html) property of `CalcEngine` as true .
+ If you want to use any logical operators such as AND, OR, XOR,... in a formula, you can set [SupportLogicalOperators](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~SupportLogicalOperators.html) property of `CalcEngine` as true .
 
 {% tabs %}
 {% highlight c# %}
@@ -314,7 +314,7 @@ string result = engine.ParseAndComputeFormula(“=IF("C"="S "OR" C"="C",1,2)”)
 ### SupportsSheetRanges
 
 Gets or sets whether the sheet range notation is supported. The default value is true. For backward compatibility with earlier versions that did
-not support the sheet range notation, you can set [SupportsSheetRanges](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~SupportsSheetRanges.html) property to false.
+not support the sheet range notation, you can set [SupportsSheetRanges](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~SupportsSheetRanges.html) property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -345,11 +345,11 @@ string result = engine.ParseAndComputeFormula(“=SUM(sheet1!B1:B4,sheet2!B1:B4)
 
 ### ThrowCircularException
 
-Gets or sets whether the `CalcEngine` should throw an exception when a circular calculation is encountered. If [ThrowCircularException](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ThrowCircularException.html) property is true, then `CalcEngine` will throw an exception when it detects a circular calculation, else no exception is thrown and the calculation will loop recursively until [MaximumRecursiveCalls](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html) is exceeded.
+Gets or sets whether the `CalcEngine` should throw an exception when a circular calculation is encountered. If [ThrowCircularException](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ThrowCircularException.html) property is true, then `CalcEngine` will throw an exception when it detects a circular calculation, else no exception is thrown and the calculation will loop recursively until [MaximumRecursiveCalls](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~MaximumRecursiveCalls.html) is exceeded.
 
 ### UseDependencies
 
-Gets or sets whether the `CalcEngine` should track dependencies or not. If you invoke [PullUpdatedValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~PullUpdatedValue.html) to access the computations, then setting [UseDependencies](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UseDependencies.html) property to false will make things more 
+Gets or sets whether the `CalcEngine` should track dependencies or not. If you invoke [PullUpdatedValue](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~PullUpdatedValue.html) to access the computations, then setting [UseDependencies](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UseDependencies.html) property to false will make things more 
 efficient as any requested computed value will be fully computed every time it is retrieved. In this situation, the `CalcEngine` does not need to track dependencies.
 
 ### UseNoAmpersandQuotes
@@ -373,7 +373,7 @@ string result = engine.ParseAndComputeFormula("=CONCAT(\"abc\",\"sample\")");
 
 ### UseDatesInCalculations
 
-Gets or sets whether dates can be used as operands in calculations. The default value is false. Setting [UseDatesInCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UseDatesInCalculations.html) property to true, 
+Gets or sets whether dates can be used as operands in calculations. The default value is false. Setting [UseDatesInCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UseDatesInCalculations.html) property to true, 
 you can compute DateTime related calculations in your application.
 
 {% tabs %}
@@ -397,7 +397,7 @@ string result = engine.ParseAndComputeFormula("=(A2-A1)*24");
 
 ### TreatStringsAsZero
 
-Setting the property [TreatStringsAsZero](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~TreatStringsAsZero.html) as true means that if a nonempty string is encountered during an arithmetic 
+Setting the property [TreatStringsAsZero](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~TreatStringsAsZero.html) as true means that if a nonempty string is encountered during an arithmetic 
 operation or computation, it will be treated as zero.
 
 ## Methods in CalcEngine
@@ -447,7 +447,7 @@ string result = engine.GetValueFromParentObject(1, 4);
 {% endhighlight %}
 {% endtabs %}
 
-N> [GetValueFromParentObject](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromParentObject.html) does not accepts the argument as raw number or parsed formula, it only accepts the cell references whereas [GetValueFromArg](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromArg.html) accepts parsed formula, a raw number, or a cell reference
+N> [GetValueFromParentObject](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromParentObject.html) does not accepts the argument as raw number or parsed formula, it only accepts the cell references whereas [GetValueFromArg](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~GetValueFromArg.html) accepts parsed formula, a raw number, or a cell reference
 
 ### ParseAndComputeFormula
 
@@ -468,7 +468,7 @@ A method that computes a parsed formula. For more reference, see [here](https://
 ### UpdateCalcID
 
 Every formula has a calculation ID level associated with it. Every time a formula is retrieved, its calculation ID level is compared with the `CalcEngine`
-ID level. If they do not agree, the formula is recomputed. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UpdateCalcID.html) will force any formula to be recomputed the next time it is retrieved.
+ID level. If they do not agree, the formula is recomputed. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UpdateCalcID.html) will force any formula to be recomputed the next time it is retrieved.
 
 {% tabs %}
 {% highlight c# %}

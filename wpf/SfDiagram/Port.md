@@ -38,7 +38,7 @@ Please find the common style for Node and NodePort.
 {% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
-<Style TargetType="syncfusion:Node">
+<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
  <Setter Property="ShapeStyle">
   <Setter.Value>
    <Style TargetType="Path">
@@ -50,7 +50,7 @@ Please find the common style for Node and NodePort.
  </Setter>
 </Style>
 <!--style for NodePort-->
-<Style TargetType="syncfusion:NodePort">
+<Style TargetType="syncfusion:NodePort" BasedOn="{StaticResource NodePortBindingStyle}">
  <Setter Property="ShapeStyle">
   <Setter.Value>
    <Style TargetType="Path">
@@ -129,7 +129,7 @@ Please find the common style for Connector and ConnectorPort.
 {% tabs %}
 {% highlight xaml %}
 <!--Style for the Connector-->
-<Style TargetType="syncfusion:Connector">
+<Style TargetType="syncfusion:Connector" BasedOn="{StaticResource ConnectorBindingStyle}">
  <Setter Property="ConnectorGeometryStyle">
   <Setter.Value>
    <Style TargetType="Path">
@@ -148,7 +148,7 @@ Please find the common style for Connector and ConnectorPort.
  </Setter>
 </Style>
 <!--Style For ConnectorPort-->
-<Style TargetType="syncfusion:ConnectorPort">
+<Style TargetType="syncfusion:ConnectorPort" BasedOn="{StaticResource ConnectorPortBindingStyle}">
  <Setter Property="ShapeStyle">
   <Setter.Value>
    <Style TargetType="Path">
@@ -227,7 +227,7 @@ The following code illustrates how to add ports to Node.
 {% highlight xaml %}
 
 <!--Style for Node-->
-<Style TargetType="syncfusion:Node">
+<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
     <Setter Property="ShapeStyle">
         <Setter.Value>
             <Style TargetType="Path">
@@ -245,7 +245,7 @@ The following code illustrates how to add ports to Node.
 </Style>
 
 <!--Style for DockPort-->
-<Style TargetType="syncfusion:DockPort">
+<Style TargetType="syncfusion:DockPort" BasedOn="{StaticResource DockPortBindingStyle}">
     <Setter Property="ConnectorGeometryStyle">
         <Setter.Value>
             <Style TargetType="Path">
@@ -598,7 +598,7 @@ The following code illustrates how to change the appearance of port.
 {% highlight xaml %}
 
 <!--Style for NodePort-->
-<Style TargetType="syncfusion:NodePort">
+<Style TargetType="syncfusion:NodePort" BasedOn="{StaticResource NodePortBindingStyle}">
 	<Setter Property="ShapeStyle">
     	<Setter.Value>
         	<Style TargetType="Path">
@@ -655,7 +655,7 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
 {% highlight xaml %}
 
 <!--Style for DockPort-->
-<Style TargetType="syncfusion:DockPort">
+<Style TargetType="syncfusion:DockPort" BasedOn="{StaticResource DockPortBindingStyle}">
     <Setter Property="ConnectorGeometryStyle">
         <Setter.Value>
             <Style TargetType="Path">
