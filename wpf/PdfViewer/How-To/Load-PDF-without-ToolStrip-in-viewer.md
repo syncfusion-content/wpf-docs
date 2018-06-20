@@ -9,7 +9,7 @@ documentation: ug
 
 # Load PDF without ToolStrip in viewer
 
-In order to view PDF without the tools strip, make use of [PdfDocumentView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of PdfViewerControl. Other features and options are similar to PdfViewerControl.
+In order to view PDF without the tools strip, make use of [PdfDocumentView](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of PdfViewerControl. Other features and options are similar to PdfViewerControl.
 
 {% tabs %}
 {% highlight c# %}

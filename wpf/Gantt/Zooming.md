@@ -33,36 +33,60 @@ To add the built-in zooming:
 {% tabs %}
 {% highlight xaml %}
 
+
 <Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
 
+
+
 <sync:GanttControl  x:Name="Gantt" 
-                    ItemsSource="{Binding GanttItemSource}" 
-                    UseOnDemandSchedule="True"
-                    ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}"/>
+
+ItemsSource="{Binding GanttItemSource}" 
+
+UseOnDemandSchedule="True"
+
+ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}"/>
+
+
 
 {% endhighlight  %}
 {% highlight c# %}
 
+
+
 /// Defining the Slider
+
 Slider slider = new Slider();
+
 slider.Minimum = 1;
+
 slider.Minimum = 600;
 
 //Hooking the value changed event of the slider
+
 slider.ValueChanged += slider_ValueChanged;
 
 //Defining the Gantt
+
 GanttControl Gantt = new GanttControl();
+
 Gantt.ItemsSource = view.GanttItemSource;
+
 Gantt.UseOnDemandSchedule = true;
 
 /// <summary>
+
 /// Handles the ValueChanged event of the slider control.
+
 /// </summary>
+
 void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+
 {
-    //Changing the value of zoom factor
-    this.Gantt.ZoomFactor = (sender as Slider).Value;
+
+//Changing the value of zoom factor
+
+this.Gantt.ZoomFactor = (sender as Slider).Value;
+
 }
 
 {% endhighlight  %}
@@ -111,126 +135,247 @@ To add custom zooming:
 {% tabs %}
 {% highlight xaml %}
 
+
+
 <ComboBox x:Name="ZoomBox" 
-          Width="75" 
-          ItemsSource="{Binding ZoomFactors}" 
-          SelectedItem="{Binding ZoomFactor}"/>
+
+Width="75" 
+
+ItemsSource="{Binding ZoomFactors}" 
+
+SelectedItem="{Binding ZoomFactor}"/>
+
+
 
 <sync:GanttControl x:Name="Gantt" 
+
                    ItemsSource="{Binding GanttItemSource}" 
+
                    UseOnDemandSchedule="True"
+
                    ZoomFactor="{Binding ZoomFactor}"
+
                    ZoomChanged="Gantt_ZoomChanged"/>
+
+
 
 {% endhighlight  %}
 {% highlight c# %}
 
+
+
 /// APIs in View Model.
+
+
+
 private List<double> _zoomFactors  = new List<double> { 100d, 200d, 300d, 400d, 600d, 800d, 1000d };
 
+
+
 /// <summary>
+
 /// Gets or sets the zoom factors.
+
 /// </summary>
+
 /// <value>The zoom factors.</value>
+
 public List<double> ZoomFactors
+
 {
+
     get
+
     {
+
         return _zoomFactors;
+
     }
+
     set
+
     {
+
         _zoomFactors = value;
+
         this.OnPropertyChanged("ZoomFactors");
+
     }
+
 }
+
+
 
 private double _zoomFactor;
 
+
+
 /// <summary>
+
 /// Gets or sets the zoom factor.
+
 /// </summary>
+
 /// <value>The zoom factor.</value>
+
 public double ZoomFactor
+
 {
+
     get
+
     {
+
         return _zoomFactor;
+
     }
+
     set
+
     {
+
         _zoomFactor = value;
+
         this.OnPropertyChanged("ZoomFactor");
+
     }
+
 }
 
 /// Event Handler in code behind
+
 /// <summary>
+
 /// Handles the ZoomChanged event of the Gantt control.
+
 /// </summary>
+
 /// <param name="sender">The source of the event.</param>
+
 /// <param name="args">The <see cref="Syncfusion.Windows.Controls.Gantt.ZoomChangedEventArgs"/> instance containing the event data.</param>
+
 private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
+
 {
+
     if (args.ZoomFactor == 100)
+
     {
+
         args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
         {
+
             new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Weeks },
+
             new GanttScheduleRowInfo{CellsPerUnit=1,TimeUnit = TimeUnit.Days, PixelsPerUnit= 20}
+
         };
-    }
-    else if (args.ZoomFactor == 200)
-    {
-        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
-        {
-            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Days, CellTextFormat ="ddd d MMM" },
-            new GanttScheduleRowInfo{CellsPerUnit=12,TimeUnit = TimeUnit.Hours, PixelsPerUnit= 4, CellTextFormat="hh tt"}
-        };
-    }
-    else if (args.ZoomFactor == 300)
-    {
-        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
-        {
-            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Days, CellTextFormat ="ddd d MMM"  },
-            new GanttScheduleRowInfo{CellsPerUnit=6,TimeUnit = TimeUnit.Hours, PixelsPerUnit= 8, CellTextFormat="hh tt"}
-        };
-    }
-    else if (args.ZoomFactor == 400)
-    {
-        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
-        {
-            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Days, CellTextFormat ="ddd d MMM"  },
-            new GanttScheduleRowInfo{CellsPerUnit=1,TimeUnit = TimeUnit.Hours, PixelsPerUnit= 69, CellTextFormat="hh tt"}
-        };
-    }
-    else if (args.ZoomFactor == 600)
-    {
-        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
-        {
-            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Hours, CellTextFormat="hh:mm tt" },
-            new GanttScheduleRowInfo{CellsPerUnit=15,TimeUnit = TimeUnit.Minutes, PixelsPerUnit= 2}
-        };
-    }
-    else if (args.ZoomFactor == 800)
-    {
-        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
-        {
-            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Hours, CellTextFormat="hh:mm tt" },
-            new GanttScheduleRowInfo{CellsPerUnit=5,TimeUnit = TimeUnit.Minutes, PixelsPerUnit= 4}
-        };
-    }
-    else if (args.ZoomFactor == 1000)
-    {
-        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
-        {
-            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Hours, CellTextFormat="hh:mm tt" },
-            new GanttScheduleRowInfo{CellsPerUnit=1,TimeUnit = TimeUnit.Minutes, PixelsPerUnit= 20}
-        };
+
     }
 
+    else if (args.ZoomFactor == 200)
+
+    {
+
+        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
+        {
+
+            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Days, CellTextFormat ="ddd d MMM" },
+
+            new GanttScheduleRowInfo{CellsPerUnit=12,TimeUnit = TimeUnit.Hours, PixelsPerUnit= 4, CellTextFormat="hh tt"}
+
+        };
+
+    }
+
+    else if (args.ZoomFactor == 300)
+
+    {
+
+        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
+        {
+
+            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Days, CellTextFormat ="ddd d MMM"  },
+
+            new GanttScheduleRowInfo{CellsPerUnit=6,TimeUnit = TimeUnit.Hours, PixelsPerUnit= 8, CellTextFormat="hh tt"}
+
+        };
+
+    }
+
+    else if (args.ZoomFactor == 400)
+
+    {
+
+        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
+        {
+
+            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Days, CellTextFormat ="ddd d MMM"  },
+
+            new GanttScheduleRowInfo{CellsPerUnit=1,TimeUnit = TimeUnit.Hours, PixelsPerUnit= 69, CellTextFormat="hh tt"}
+
+        };
+
+    }
+
+    else if (args.ZoomFactor == 600)
+
+    {
+
+        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
+        {
+
+            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Hours, CellTextFormat="hh:mm tt" },
+
+            new GanttScheduleRowInfo{CellsPerUnit=15,TimeUnit = TimeUnit.Minutes, PixelsPerUnit= 2}
+
+        };
+
+    }
+
+    else if (args.ZoomFactor == 800)
+
+    {
+
+        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
+        {
+
+            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Hours, CellTextFormat="hh:mm tt" },
+
+            new GanttScheduleRowInfo{CellsPerUnit=5,TimeUnit = TimeUnit.Minutes, PixelsPerUnit= 4}
+
+        };
+
+    }
+
+    else if (args.ZoomFactor == 1000)
+
+    {
+
+        args.ScheduleHeaderInfo = new List<GanttScheduleRowInfo> 
+
+        {
+
+            new GanttScheduleRowInfo{ CellsPerUnit=1, TimeUnit= TimeUnit.Hours, CellTextFormat="hh:mm tt" },
+
+            new GanttScheduleRowInfo{CellsPerUnit=1,TimeUnit = TimeUnit.Minutes, PixelsPerUnit= 20}
+
+        };
+
+    }
+
+
+
     args.Handled = true;
+
 }
+
 
 {% endhighlight  %}
 {% endtabs %}

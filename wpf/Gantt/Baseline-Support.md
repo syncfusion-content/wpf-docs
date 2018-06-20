@@ -72,36 +72,64 @@ The following codes illustrate this:
 {% tabs %}
 {% highlight xaml %}
 
+
 <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
-                    ItemsSource="{Binding GanttItemSource}"  
-                    ToolTipTemplate="{StaticResource toolTipTemplate}"
-                    ShowBaseline="True">
-    <gantt:GanttControl.TaskAttributeMapping>
-        <gantt:TaskAttributeMapping TaskIdMapping="Id"
-                                    TaskNameMapping="Name"
-                                    DurationMapping="Duration"
-                                    StartDateMapping="StDate"  
-                                    FinishDateMapping="EndDate"
-                                    ChildMapping="ChildTask"  
-                                    ProgressMapping="Complete"
-                                    PredecessorMapping="Predecessor"   
-                                    ResourceInfoMapping="Resource"
-                                    CostMapping="Cost"
-                                    BaselineCostMapping="BaselineCost"
-                                    BaselineFinishMapping="BaselineEnd"
-                                    BaselineStartMapping="BaselineStart" >
-        </gantt:TaskAttributeMapping>
-    </gantt:GanttControl.TaskAttributeMapping>
+
+ItemsSource="{Binding GanttItemSource}"  
+
+ToolTipTemplate="{StaticResource toolTipTemplate}"
+
+ShowBaseline="True">          
+
+<gantt:GanttControl.TaskAttributeMapping>
+
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
+
+TaskNameMapping="Name"
+
+DurationMapping="Duration"
+
+StartDateMapping="StDate"                                           
+
+FinishDateMapping="EndDate"
+
+ChildMapping="ChildTask"  
+
+ProgressMapping="Complete"
+
+PredecessorMapping="Predecessor"                                             
+
+ResourceInfoMapping="Resource"
+
+CostMapping="Cost"
+
+BaselineCostMapping="BaselineCost"
+
+BaselineFinishMapping="BaselineEnd"
+
+BaselineStartMapping="BaselineStart" >
+
+</gantt:TaskAttributeMapping>
+
+</gantt:GanttControl.TaskAttributeMapping>
+
 </gantt:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
+
+
 // To load the Variance Table View 
+
 this.Gantt.LoadVarianceTableView();
 
+
+
 // To load the Default [Editing] View
+
 this.Gantt.LoadDefaultTableView();
+
 
 {% endhighlight  %}
 {% endtabs %}
@@ -239,32 +267,61 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 {% tabs %}
 {% highlight xaml %}
 
+
+
+
+
 <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
-                    ItemsSource="{Binding GanttItemSource}"  
-                    ToolTipTemplate="{StaticResource toolTipTemplate}"
-                    ShowAddNewColumn="True">
-    <gantt:GanttControl.TaskAttributeMapping>
-        <gantt:TaskAttributeMapping TaskIdMapping="Id"
-                                    TaskNameMapping="Name"
-                                    DurationMapping="Duration"
-                                    StartDateMapping="StDate"            
-                                    FinishDateMapping="EndDate"
-                                    ChildMapping="ChildTask"  
-                                    ProgressMapping="Complete"
-                                    PredecessorMapping="Predecessor"     
-                                    ResourceInfoMapping="Resource"
-                                    CostMapping="Cost"
-                                    BaselineCostMapping="BaselineCost"
-                                    BaselineFinishMapping="BaselineEnd"
-                                    BaselineStartMapping="BaselineStart">
-        </gantt:TaskAttributeMapping>
-    </gantt:GanttControl.TaskAttributeMapping>
+
+ItemsSource="{Binding GanttItemSource}"  
+
+ToolTipTemplate="{StaticResource toolTipTemplate}"
+
+ShowAddNewColumn="True">          
+
+<gantt:GanttControl.TaskAttributeMapping>
+
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
+
+TaskNameMapping="Name"
+
+DurationMapping="Duration"
+
+StartDateMapping="StDate"                                           
+
+FinishDateMapping="EndDate"
+
+ChildMapping="ChildTask"  
+
+ProgressMapping="Complete"
+
+PredecessorMapping="Predecessor"                                             
+
+ResourceInfoMapping="Resource"
+
+CostMapping="Cost"
+
+BaselineCostMapping="BaselineCost"
+
+BaselineFinishMapping="BaselineEnd"
+
+BaselineStartMapping="BaselineStart"
+
+>
+
+</gantt:TaskAttributeMapping>
+
+</gantt:GanttControl.TaskAttributeMapping>
+
 </gantt:GanttControl>
+
 
 {% endhighlight  %}
 {% highlight c# %}
 
+
 // Displaying the Add New column drop down 
+
 this.Gantt.ShowAddNewColumn = true;
 
 {% endhighlight  %}
@@ -294,6 +351,8 @@ This will provide enough information about the project. The entire project infor
 This will be useful for Project Leads to take decisions based on the current status. An Organization can use this to present the current statuses of their projects to their clients. They can also use this for analysis before making important decisions on projects.
 
 ### Methods
+
+
 
 <table>
 <tr>
@@ -326,36 +385,63 @@ The following codes illustrate adding Project Statistics to an application:
 {% tabs %}
 {% highlight xaml %}
 
+
+
 <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
-                    ItemsSource="{Binding GanttItemSource}"  
-                    ToolTipTemplate="{StaticResource toolTipTemplate}">
-    <gantt:GanttControl.TaskAttributeMapping>
-        <gantt:TaskAttributeMapping TaskIdMapping="Id"
-                                    TaskNameMapping="Name"
-                                    DurationMapping="Duration"
-                                    StartDateMapping="StDate"            
-                                    FinishDateMapping="EndDate"
-                                    ChildMapping="ChildTask"  
-                                    ProgressMapping="Complete"
-                                    PredecessorMapping="Predecessor"     
-                                    ResourceInfoMapping="Resource"
-                                    CostMapping="Cost"
-                                    BaselineCostMapping="BaselineCost"
-                                    BaselineFinishMapping="BaselineEnd"
-                                    BaselineStartMapping="BaselineStart">
-        </gantt:TaskAttributeMapping>
-    </gantt:GanttControl.TaskAttributeMapping>
+
+ItemsSource="{Binding GanttItemSource}"  
+
+ToolTipTemplate="{StaticResource toolTipTemplate}">          
+
+<gantt:GanttControl.TaskAttributeMapping>
+
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
+
+TaskNameMapping="Name"
+
+DurationMapping="Duration"
+
+StartDateMapping="StDate"                                           
+
+FinishDateMapping="EndDate"
+
+ChildMapping="ChildTask"  
+
+ProgressMapping="Complete"
+
+PredecessorMapping="Predecessor"                                             
+
+ResourceInfoMapping="Resource"
+
+CostMapping="Cost"
+
+BaselineCostMapping="BaselineCost"
+
+BaselineFinishMapping="BaselineEnd"
+
+BaselineStartMapping="BaselineStart"
+
+>
+
+</gantt:TaskAttributeMapping>
+
+</gantt:GanttControl.TaskAttributeMapping>
+
 </gantt:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
+
+
 // To get the Project Statistics 
+
 ProjectInfo projInfo = this.Gantt.GetProjectStatistics(); 
 
 	   (or)
 
 ProjectInfo projInfo = new ProjectInfo();
+
 projInfo = this.Gantt.GetProjectStatistics();      
 
 {% endhighlight  %}
@@ -381,3 +467,6 @@ To view samples:
 3. Select Gantt.
 4. Expand the Baseline Support item in the Sample Browser.
 5. Choose the Project Statistics sample to launch.
+
+
+

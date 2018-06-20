@@ -20,23 +20,23 @@ SfDataGrid provides support to display the concise information about the data ob
  
 ![](Summaries_images/Summaries_img1.png)
 
-Summary rows are represented by using [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) and  each `GridSummaryRow` hold summary information of columns in [SummaryColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~SummaryColumns.html) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html) which carries the name of column ,format and its summary aggregate type.
+Summary rows are represented by using [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) and  each `GridSummaryRow` hold summary information of columns in [SummaryColumns](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~SummaryColumns.html) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html) which carries the name of column ,format and its summary aggregate type.
 
 ## Table Summary
 
 The table summary calculates the summary value over all the records. SfDataGrid allows you to add any number of table summary rows in top and bottom of SfDataGrid.
 
-You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRows.html) collection.
+You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRows.html) collection.
 
 ### Defining summary for column
 
-You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
+You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
 
-1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
+1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
 
-3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
+3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary and [Aggregate Types](#aggregate-types) section to know about different Summary Types.
 
@@ -96,7 +96,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ### Displaying summary for Row
 
-You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to set [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row. 
+You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to set [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row. 
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
  
@@ -157,7 +157,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ### Positioning TableSummaryRow
 
-You can position the table summary either at top or bottom of SfDataGrid by setting [GridTableSummaryRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow~Position.html) property.
+You can position the table summary either at top or bottom of SfDataGrid by setting [GridTableSummaryRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow~Position.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -239,17 +239,17 @@ this.dataGrid.TableSummaryRows.Add(tablesummaryrow2);
 
 Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. SfDataGrid allows you to add any number of group summary rows.
 
-You can add the group summary rows in SfDataGrid by adding the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRows.html) collection.
+You can add the group summary rows in SfDataGrid by adding the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRows.html) collection.
 
 ### Defining summary for column
 
-You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
+You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
 
-1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
+1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
 
-3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
+3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary and [Aggregate Types](#aggregate-types) section to know about different Summary Type’s.
 
@@ -313,7 +313,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 ### Displaying summary for Row
 
-You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row.
+You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row.
  
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary. 
 
@@ -385,7 +385,7 @@ Below screen shot shows the built-in caption summary of Group.
 
 ### Formatting built-in caption summary
 
-By default, the summary value displayed in CaptionSummaryRow  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
+By default, the summary value displayed in CaptionSummaryRow  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
 
 The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 
@@ -414,13 +414,13 @@ You can change group caption format to display column name and count alone by se
 
 ### Defining summary for column
 
-You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
+You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
 
-1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
+1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
 
-3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
+3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary and [Aggregate Types](#aggregate-types) section to know about different Summary Type’s.
 
@@ -481,7 +481,7 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 ### Displaying summary for Row
 
-You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row.
+You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row.
  
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary. 
 
@@ -577,7 +577,7 @@ N> `DoubleAggregate` is used as SummaryType which has Count, Max, Min, Average a
 
 ### Formatting Summary Value
 
-You can format the summary value by setting the appropriate format after the aggregate function followed by colon(:) in  [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property.
+You can format the summary value by setting the appropriate format after the aggregate function followed by colon(:) in  [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property.
 
 In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx?f=255&MSPPError=-2147217396) to know about how to set different format.
 
@@ -606,7 +606,7 @@ In the below code snippet `UnitPrice` column summary is formatted using `c` form
 
 ### Displaying additional Content in Summary
 
-You can append additional content with summary value using  [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property.
+You can append additional content with summary value using  [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property.
 
 In the below code snippet `Total UnitPrice: ` text is appended before summary value.
 
@@ -636,7 +636,7 @@ In the below code snippet `Total UnitPrice: ` text is appended before summary va
 
 ### Formatting Summary for Row using Title Property
 
-You can format the summary value for row using [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  when ShowSummaryInRow set to `true`.
+You can format the summary value for row using [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  when ShowSummaryInRow set to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -663,7 +663,7 @@ You can format the summary value for row using [GridSummaryRow.Title](http://hel
 
 ## Aggregate Types
 
-You can specify the different summary aggregate types by using [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) property and use the built-in function in [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html).
+You can specify the different summary aggregate types by using [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) property and use the built-in function in [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html).
 
 The following are the list of predefined aggregate types and its built-in functions.
 
@@ -716,11 +716,11 @@ Used for custom summaries
 
 SfDataGrid allows you to implement your own aggregate functions, when the built-in aggregate functions don’t meet your requirement.
 
-You can calculate the summary values based on custom logic using [GridSummaryColumn.CustomAggregate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~CustomAggregate.html) property.
+You can calculate the summary values based on custom logic using [GridSummaryColumn.CustomAggregate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~CustomAggregate.html) property.
 
 ### Implementing custom aggregate
 
-1. Create custom aggregate class by deriving from [ISummaryAggregate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISummaryAggregate.html) interface.
+1. Create custom aggregate class by deriving from [ISummaryAggregate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.ISummaryAggregate.html) interface.
 
 2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
  
@@ -780,7 +780,7 @@ public static class LinqExtensions
 {% endhighlight %}
 {% endtabs %}
 
-3.Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) as [Custom](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property is defined based on property name in custom aggregate `StdDev`.
+3.Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) as [Custom](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.Data.WPF~Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property is defined based on property name in custom aggregate `StdDev`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -834,7 +834,7 @@ You can download the sample demo [here](http://www.syncfusion.com/downloads/supp
 
 Each summary cell is associated with its own renderer and you can customize it by overriding the available virtual methods in the renderer. 
 
-There will be specific key for each summary row. You can remove and add the key from [SfDataGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection, when the renderer is need to be customized.
+There will be specific key for each summary row. You can remove and add the key from [SfDataGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection, when the renderer is need to be customized.
 
 <table>
 <tr>
@@ -853,7 +853,7 @@ Key
 Table summary
 </td>
 <td>
-{{'[GridTableSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridTableSummaryCellRenderer.html)'| markdownify }}
+{{'[GridTableSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridTableSummaryCellRenderer.html)'| markdownify }}
 </td>
 <td>
 TableSummary
@@ -864,7 +864,7 @@ TableSummary
 Caption summary
 </td>
 <td>
-{{'[GridCaptionSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCaptionSummaryCellRenderer.html)'| markdownify }}
+{{'[GridCaptionSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCaptionSummaryCellRenderer.html)'| markdownify }}
 </td>
 <td>
 CaptionSummary
@@ -875,7 +875,7 @@ CaptionSummary
 Group summary
 </td>
 <td>
-{{'[GridSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridSummaryCellRenderer.html)'| markdownify }}
+{{'[GridSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridSummaryCellRenderer.html)'| markdownify }}
 </td>
 <td>
 GroupSummary
@@ -886,7 +886,7 @@ GroupSummary
 
 ### Formatting Table Summary
 
-You can apply number format for numeric values displayed on `GridTableSummaryRow` by overriding the `OnUpdateEditBinding` method in [GridTableSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridTableSummaryCellRenderer.html) class.
+You can apply number format for numeric values displayed on `GridTableSummaryRow` by overriding the `OnUpdateEditBinding` method in [GridTableSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridTableSummaryCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -945,7 +945,7 @@ You can download the sample demo [here](http://www.syncfusion.com/downloads/supp
 
 ### Customizing GroupCaptionText
 
-You can apply different group caption text format for available groups based on certain conditions by deriving the [GridCaptionSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCaptionSummaryCellRenderer.html) class .
+You can apply different group caption text format for available groups based on certain conditions by deriving the [GridCaptionSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCaptionSummaryCellRenderer.html) class .
 
 For example, the group caption text is customized based on the group name and items count of the column.
 

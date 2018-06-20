@@ -13,7 +13,7 @@ documentation: ug
 
 ## SegmentCreated Event
 
-This event occurs when segment is created. You can get the segment details as argument from the [`SunburstSegmentCreatedEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSegmentCreatedEventArgs.html) handler. 
+This event occurs when segment is created. You can get the segment details as argument from the [`SunburstSegmentCreatedEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSegmentCreatedEventArgs.html) handler. 
 
 The following example shows how to set the color for each level after creating the segment. 
 
@@ -48,7 +48,7 @@ private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs
 
 ## SelectionChanged
 
-This event occurs whenever you select the segment by enabling selection behavior. You can get the selected segment details as argument from [`SunburstSelectionChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionChangedEventArgs.html) handler. 
+This event occurs whenever you select the segment by enabling selection behavior. You can get the selected segment details as argument from [`SunburstSelectionChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionChangedEventArgs.html) handler. 
 
 The following examples shows how to set the selected segment information.
 

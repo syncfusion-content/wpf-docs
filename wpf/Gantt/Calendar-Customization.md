@@ -106,44 +106,40 @@ The following code illustrates adding Calendar Customization to an Application:
 {% tabs %}
 {% highlight xaml  %}
 
+
+
+
 <!--Gantt Control Calendar Customization and Weekends Customization Info-->
 <sync:GanttControl x:Name="Gantt" Grid.Row="1" WeekBeginsOn="Friday"    
-
                    Weekends="Wednesday,Thursday"
-
-                   ItemsSource="{Binding TaskCollection}"   
-
+                   ItemsSource="{Binding TaskCollection}"                             
                    FiscalYearBeginsOn="June"
-
                    IsFYNumberingEndbled="True" DefaultEndTime="16:00:00" 
-
                    ShowWeekends="True" ExcludeWeekends="True"   
-
                    DefaultStartTime="10:00:00"  
-
                    ShowNonWorkingHoursBackground="True">  
 
-    <sync:GanttControl.TaskAttributeMapping>
+<sync:GanttControl.TaskAttributeMapping>
 
-        <sync:TaskAttributeMapping TaskIdMapping="Id"
+<sync:TaskAttributeMapping TaskIdMapping="Id"
 
-                                   TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                   StartDateMapping="StDate" 
+StartDateMapping="StDate" 
 
-                                   ChildMapping="ChildTask"
+ChildMapping="ChildTask"
 
-                                   FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                   DurationMapping="Duration"
+DurationMapping="Duration"                                            
 
-                                   ProgressMapping="Complete"
+ProgressMapping="Complete"
 
-                                   PredecessorMapping="Predecessor">
+PredecessorMapping="Predecessor">
 
-        </sync:TaskAttributeMapping>
+</sync:TaskAttributeMapping>
 
-    </sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl.TaskAttributeMapping>
 
 </sync:GanttControl>           
 
@@ -151,6 +147,8 @@ The following code illustrates adding Calendar Customization to an Application:
 
 {% endhighlight  %}
 {% highlight c# %}
+
+
 
 
 //To set WeekBeginsOn

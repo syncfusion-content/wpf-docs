@@ -23,7 +23,7 @@ You can customize the node to give a similar look and feel of your product. For 
 
 You can also design the node based on your organization’s logo.
 
-## Adding Custom Node Style to an Application 
+Adding Custom Node Style to an Application 
 
 The following are the steps to add custom node style to an application:
 
@@ -56,76 +56,209 @@ The following code illustrates how to define style:
 
 {% highlight xaml %}
 
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:gantt="http://schemas.syncfusion.com/wpf"
-                    xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt.Chart;assembly=Syncfusion.Gantt.Wpf" >
 
-    <!-- Header Node style-->
+
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+
+                    xmlns:gantt="http://schemas.syncfusion.com/wpf"
+
+
+                    xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt.Chart;assembly=Syncfusion.Gantt.Wpf"
+
+
+                    >
+
+
+ <!-- Header Node style-->
+
+
     <Style TargetType="chart:HeaderNode">
+
+
         <Setter Property="MaxHeight" Value="24"/>
+
+
         <Setter Property="Template">
+
+
             <Setter.Value>
+
+
                 <ControlTemplate TargetType="chart:HeaderNode">
+
+
                     <Border Background="{TemplateBinding Background}" Name="PART_HeaderBorder" 
+
+
                             BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0">
+
+
                         <Grid Width="{TemplateBinding NodeWidth}" VerticalAlignment="Center">
+
+
                             <Grid.ColumnDefinitions>
+
+
                                 <ColumnDefinition Width="10" />
+
+
                                 <ColumnDefinition Width="*" />
+
+
                                 <ColumnDefinition Width="10" />
+
+
                             </Grid.ColumnDefinitions>
-                            <Rectangle HorizontalAlignment="Left" Grid.Column="1" Height="6.4" 
-                                       VerticalAlignment="Top" 
-                                       Width="{TemplateBinding NodeWidth}" 
-                                       Stroke="#FF111111">
+
+
+                            <Rectangle HorizontalAlignment="Left" Grid.Column="1" Height="6.4" VerticalAlignment="Top" Width="{TemplateBinding NodeWidth}" Stroke="#FF111111">
+
+
                                 <Rectangle.Fill>
+
+
                                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+
                                         <GradientStop Color="#FF414141" Offset="0" />
+
+
                                         <GradientStop Color="#FF6D6D6D" Offset="0.087" />
+
+
                                         <GradientStop Color="#FF767676" Offset="0.304" />
+
+
                                         <GradientStop Color="Black" Offset="0.957" />
+
+
                                         <GradientStop Color="#FF343434" Offset="1" />
+
+
                                     </LinearGradientBrush>
+
+
                                 </Rectangle.Fill>
+
+
                             </Rectangle>
+
+
                             <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
+
+
                                   HorizontalAlignment="Left"
+
+
                                   Grid.Column="0"
+
+
                                   Height="11.435"
+
+
                                   Stretch="Fill"
+
+
                                   Stroke="#FF111111"
+
+
                                   VerticalAlignment="Top"
+
+
                                   Width="10.135">
+
+
                                 <Path.Fill>
+
+
                                     <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
+
+
                                         <GradientStop Color="DimGray" Offset="0.008" />
+
+
                                         <GradientStop Color="#FF7F7F7F" Offset="0.511" />
+
+
                                         <GradientStop Color="#FF2A2A2A" Offset="1" />
+
+
                                     </LinearGradientBrush>
+
+
                                 </Path.Fill>
+
+
                             </Path>
+
+
                             <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
+
+
                                   HorizontalAlignment="Left"
+
+
                                   Grid.Column="2"
+
+
                                   Height="11.435"
+
+
                                   Stretch="Fill"
+
+
                                   Stroke="#FF111111"
+
+
                                   VerticalAlignment="Top"
+
+
                                   Width="10.135">
+
+
                                 <Path.Fill>
+
+
                                     <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
+
+
                                         <GradientStop Color="DimGray" Offset="0.008" />
+
+
                                         <GradientStop Color="#FF7F7F7F" Offset="0.511" />
+
+
                                         <GradientStop Color="#FF2A2A2A" Offset="1" />
+
+
                                     </LinearGradientBrush>
+
+
                                 </Path.Fill>
+
+
                             </Path>
+
+
                         </Grid>
+
+
                     </Border>
+
+
                 </ControlTemplate>
+
+
             </Setter.Value>
+
+
         </Setter>
+
+
     </Style>
 
     <!-- Task Node style-->
@@ -155,15 +288,9 @@ The following code illustrates how to define style:
                                 </Thumb.Template>
                             </Thumb>
 
-                            <Border HorizontalAlignment="Left" 
-                                    VerticalAlignment="Center" 
-                                    Width="{TemplateBinding ProgressWidth}" 
-                                    Grid.Column="0" 
-                                    Grid.ColumnSpan="3">
+                            <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="{TemplateBinding ProgressWidth}" Grid.Column="0" Grid.ColumnSpan="3">
                                 <Grid HorizontalAlignment="Stretch" Width="{TemplateBinding ProgressWidth}">
-                                    <Rectangle HorizontalAlignment="Stretch" Height="12" 
-                                               Stroke="#FFD26202" 
-                                               VerticalAlignment="Center">
+                                    <Rectangle HorizontalAlignment="Stretch" Height="12" Stroke="#FFD26202" VerticalAlignment="Center">
                                         <Rectangle.Fill>
                                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                                 <GradientStop Color="#FFFEB300" Offset="0"/>
@@ -188,11 +315,7 @@ The following code illustrates how to define style:
                             <Thumb Cursor="ScrollE" Grid.Column="2" x:Name="PART_RightThumb" HorizontalAlignment="Right">
                                 <Thumb.Template>
                                     <ControlTemplate>
-                                        <Rectangle HorizontalAlignment="Right" 
-                                                   Height="20" 
-                                                   VerticalAlignment="Center" 
-                                                   Width="6" 
-                                                   Stroke="#FFD26202">
+                                        <Rectangle HorizontalAlignment="Right" Height="20" VerticalAlignment="Center" Width="6" Stroke="#FFD26202">
                                             <Rectangle.Fill>
                                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                                     <GradientStop Color="#FFFEB300" Offset="0"/>
@@ -208,10 +331,7 @@ The following code illustrates how to define style:
                             <Thumb Cursor="SizeWE" Grid.Column="0" x:Name="PART_LeftThumb" HorizontalAlignment="Left">
                                 <Thumb.Template>
                                     <ControlTemplate>
-                                        <Border Background="Transparent"
-                                                BorderBrush="Transparent" 
-                                                BorderThickness="0" 
-                                                Width="4" Height="20"/>
+                                        <Border Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Width="4" Height="20"/>
                                     </ControlTemplate>
                                 </Thumb.Template>
                             </Thumb>
@@ -228,12 +348,7 @@ The following code illustrates how to define style:
             <Setter.Value>
                 <ControlTemplate TargetType="chart:MileStone">
                     <Grid>
-                        <Path Stretch="Fill" 
-                              Data="F1 M 551.156,416.878L 552.734,419.766L 555.621,421.344L 552.734,422.922L 551.156,425.81L 549.577,422.922L 546.69,421.344L 549.577,419.766L 551.156,416.878 Z" 
-                              HorizontalAlignment="Left" 
-                              Height="19" Width="19"
-                              VerticalAlignment="Center" 
-                              Stroke="#FFD26202">
+                        <Path Stretch="Fill" Data="F1 M 551.156,416.878L 552.734,419.766L 555.621,421.344L 552.734,422.922L 551.156,425.81L 549.577,422.922L 546.69,421.344L 549.577,419.766L 551.156,416.878 Z "                                               HorizontalAlignment="Left" Height="19" VerticalAlignment="Center" Width="19" Stroke="#FFD26202">
                             <Path.Fill>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#FFFEB300" Offset="0"/>
@@ -257,26 +372,59 @@ The following code illustrates how to add the styles to the application:
 
 {% highlight xaml %}
 
-<sync:GanttControl Grid.Row="1" x:Name="Gantt" 
-                   ItemsSource="{Binding GanttItemSource}"
-                   ToolTipTemplate="{StaticResource toolTipTemplate}"
-                   VisualStyle="Office2010Silver">
-    <sync:GanttControl.TaskAttributeMapping>
-        <sync:TaskAttributeMapping TaskIdMapping="Id"
-                                   TaskNameMapping="Name"
-                                   StartDateMapping="StDate" 
-                                   ChildMapping="ChildTask"
-                                   FinishDateMapping="EndDate"
-                                   DurationMapping="Duration"
-                                   ProgressMapping="Complete"
-                                   PredecessorMapping="Predecessor">
-        </sync:TaskAttributeMapping>
-    </sync:GanttControl.TaskAttributeMapping>
-    
-    <sync:GanttControl.Resources>
-        <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
-        <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
-    </sync:GanttControl.Resources>
+
+
+
+ <sync:GanttControl Grid.Row="1"  x:Name="Gantt" ItemsSource="{Binding GanttItemSource}" ToolTipTemplate="{StaticResource toolTipTemplate}"
+
+
+ VisualStyle="Office2010Silver">
+
+
+ <sync:GanttControl.TaskAttributeMapping>
+
+
+ <sync:TaskAttributeMapping TaskIdMapping="Id"
+
+
+ TaskNameMapping="Name"
+
+
+ StartDateMapping="StDate" 
+
+
+ ChildMapping="ChildTask"
+
+
+ FinishDateMapping="EndDate"
+
+
+ DurationMapping="Duration"                                            
+
+
+ ProgressMapping="Complete"
+
+
+ PredecessorMapping="Predecessor">
+
+ </sync:TaskAttributeMapping>
+
+
+ </sync:GanttControl.TaskAttributeMapping>
+
+
+ <sync:GanttControl.Resources>
+
+
+ <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
+
+
+ <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
+
+
+ </sync:GanttControl.Resources>
+
+
 </sync:GanttControl>
 
 {% endhighlight  %}
@@ -294,7 +442,7 @@ _Custom Node Style_
 
 
 Custom Node Style
-{:.caption}
+{:caption}
 
 ## Samples Link
 

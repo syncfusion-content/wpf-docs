@@ -68,14 +68,7 @@ NA</td></tr>
 <tr>
 <td>
 GanttTaskRelationship</td><td>
-This contains four relationships. They are:
-
-* StartToStart
-* StartToFinish
-* FinishToFinish
-* FinishToStart
-
-You can assign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
+This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can assign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
 Predecessor</td><td>
 Enum</td><td>
 NA</td></tr>
@@ -91,26 +84,31 @@ The following code illustrates how to add the Dependency Relationship between ta
 
 
  // Adding dependency relationship.
-task[0].ChildCollection[1].Predecessors = new ObservableCollection<Predecessor>(
-task[0].ChildCollection[1].Predecessors.Add(new Predecessor()
-                                     {
-                                         GanttTaskIndex = 
-                                         GanttTaskRelationship = GanttTaskRelationship.StartToStart
-                                     });
 
-task[0].ChildCollection[2].Predecessors = new ObservableCollection<Predecessor>();
-task[0].ChildCollection[2].Predecessors.Add(new Predecessor()
-                                     {
-                                         GanttTaskIndex = 
-                                         GanttTaskRelationship = GanttTaskRelationship.StartToFinish
-                                     });
+            task[0].ChildCollection[1].Predecessors = new ObservableCollection<Predecessor>();
 
-task[0].ChildCollection[3].Predecessors = new ObservableCollection<Predecessor>();
-task[0].ChildCollection[3].Predecessors.Add(new Predecessor()
-                                     {
-                                         GanttTaskIndex = 
-                                         GanttTaskRelationship = GanttTaskRelationship.FinishToFinish
-                                     });
+            task[0].ChildCollection[1].Predecessors.Add(new Predecessor()
+                                                 {
+                                                     GanttTaskIndex = 2,
+
+                                                     GanttTaskRelationship = GanttTaskRelationship.StartToStart
+                                                 });
+
+            task[0].ChildCollection[2].Predecessors = new ObservableCollection<Predecessor>();
+            task[0].ChildCollection[2].Predecessors.Add(new Predecessor()
+                                                 {
+                                                     GanttTaskIndex = 3,
+
+                                                     GanttTaskRelationship = GanttTaskRelationship.StartToFinish
+                                                 });
+
+            task[0].ChildCollection[3].Predecessors = new ObservableCollection<Predecessor>();
+            task[0].ChildCollection[3].Predecessors.Add(new Predecessor()
+                                                 {
+                                                     GanttTaskIndex = 3,
+
+                                                     GanttTaskRelationship = GanttTaskRelationship.FinishToFinish
+                                                 });
 
 {% endhighlight  %}
 
@@ -135,6 +133,7 @@ To view samples:
 6. Choose the Predecessor sample to launch. 
 
 ## Dynamic Predecessors and Resources
+
 
 Essential Gantt provides support for dynamic editing of predecessors in the Grid area. Using this feature, you can dynamically add the predecessor on-demand basis to Gantt. You can add/remove the predecessor in the corresponding cell in the GanttGrid.
 
@@ -187,7 +186,7 @@ While creating a new predecessor in Grid, it should be in the following format:
 
 	{Task ID}{GanttTaskRelationship} 
 	
-{% endhighlight  %}
+	{% endhighlight  %}
 
 Here the {GanttTaskRelationship} is any one of the following:
 
@@ -226,18 +225,31 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 {% highlight xaml %}
 
 <Sync:GanttControl ItemsSource="{Binding TaskCollection}" >
-    <Sync:GanttControl.TaskAttributeMapping>
-        <Sync:TaskAttributeMapping TaskIdMapping="Id"
-                                    TaskNameMapping="Name"
-                                    DurationMapping="Duration"
-                                    StartDateMapping="StDate"                                           
-                                    FinishDateMapping="EndDate"
-                                    ChildMapping="ChildTask"  
-                                    ProgressMapping="Complete"
-                                    PredecessorMapping="Predecessors"  
-                                    ResourceInfoMapping="Resource">
-        </Sync:TaskAttributeMapping>
-    </Sync:GanttControl.TaskAttributeMapping>
+
+            <Sync:GanttControl.TaskAttributeMapping>
+
+                <Sync:TaskAttributeMapping TaskIdMapping="Id"
+
+                                            TaskNameMapping="Name"
+
+                                            DurationMapping="Duration"
+
+                                            StartDateMapping="StDate"                                           
+
+                                            FinishDateMapping="EndDate"
+
+                                            ChildMapping="ChildTask"  
+
+                                            ProgressMapping="Complete"
+
+                                            PredecessorMapping="Predecessors"  
+
+                                            ResourceInfoMapping="Resource">
+
+                </Sync:TaskAttributeMapping>
+
+            </Sync:GanttControl.TaskAttributeMapping>
+
 </Sync:GanttControl>
  
 {% endhighlight  %}
@@ -260,4 +272,7 @@ this.viewModel.GanttItemSource[0].ChildCollection[2].Predecessors.Add(new Predec
 //To Add the Dynamic Resources   
 this.viewModel.GanttItemSource[0].ChildTask[2].Resource.Add(new Resource { ID = 3, Name = "Resource3" });
 
+
 {% endhighlight %}
+
+

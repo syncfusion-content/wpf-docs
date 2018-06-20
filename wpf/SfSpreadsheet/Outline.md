@@ -15,7 +15,7 @@ SfSpreadsheet provides support for outlines like in excel which makes your data 
 
 SfSpreadsheet provides support to group the specified range in a worksheet.
 
-To [Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Group.html) the rows/columns
+To [Group](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Group.html) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 SfSpreadsheet provides support to ungroup the specified range in a worksheet.
 
-To [Ungroup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~UnGroup.html) the rows/columns
+To [Ungroup](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~UnGroup.html) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +49,7 @@ spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 ## Collapse or Expand Group
 
-Groups can be Expanded by [ExpandGroup](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
+Groups can be Expanded by [ExpandGroup](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](https://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
 
 {% tabs %}
 {% highlight c# %}
@@ -75,7 +75,7 @@ spreadsheet.RefreshOutlines(false,true);
 {% endhighlight %}
 {% endtabs %}
 
-N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in SfSpreadsheet.
+N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/sfspreadsheet/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in SfSpreadsheet.
 
 ## Change Outline Settings
 

@@ -13,7 +13,7 @@ documentation: ug
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users. 
 
-You can enable or disable the data labels by using [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~ShowLabel.html) property as shown in the below code 
+You can enable or disable the data labels by using [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~ShowLabel.html) property as shown in the below code 
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ N> By default, the ShowLabel property value is True.
 
 ## LabelOverflowMode
 
-When you represent huge data with data labels, they may intersect each other. You can avoid this using the [`LabelOverflowMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~LabelOverflowMode.html) property.
+When you represent huge data with data labels, they may intersect each other. You can avoid this using the [`LabelOverflowMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~LabelOverflowMode.html) property.
 
 The following properties are used to avoid the overlapping.
 
@@ -116,9 +116,9 @@ chart.DataLabelInfo = dataLabelInfo;
 
 ## LabelRotationMode
 
-You can rotate the data label by using [`LabelRotationMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~LabelRotationMode.html) property. 
+You can rotate the data label by using [`LabelRotationMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~LabelRotationMode.html) property. 
 
-The following code shows how to set [`LabelRotationMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as normal and angle. 
+The following code shows how to set [`LabelRotationMode`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as normal and angle. 
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ N> By default, LabelRotationMode value is Angle.
 
 ## Customizing the data labels
 
-You can customize the default appearance or display information about the data point using the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~LabelTemplate.html) property.
+You can customize the default appearance or display information about the data point using the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/sfsunburstchart/Syncfusion.SfSunburstChart.WPF~Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo~LabelTemplate.html) property.
 
 {% highlight xaml %}
 
