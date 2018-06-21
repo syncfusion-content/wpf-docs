@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Printing
 
-SfDiagram provides support to print the diagram with help of [PrintingService](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService.html "PrintingService") proeprty.
+SfDiagram provides support to print the diagram with help of [PrintingService](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService.html "PrintingService") property.
 
 ## Print Preview
  `Print` method of `PrintingService` will show preview of the SfDiagram before printing. Print Preview window has Print and QuickPrint buttons which needs to be clicked to print the SfDiagram.
@@ -27,7 +27,7 @@ SfDiagram provides support to scale the diagram whether to fit on one page or to
 {% tabs %}
 {% highlight C# %}
 
-printdiagram.PrintingService.PrintManager.SelectedScaleIndex = 1;
+diagram.PrintingService.PrintManager.SelectedScaleIndex = 1;
 
 {% endhighlight %}
 {% endtabs %}
@@ -36,7 +36,7 @@ printdiagram.PrintingService.PrintManager.SelectedScaleIndex = 1;
 
 ## Page Settings
 
-SfDiagram provides support to customize or change the orientation, margin, width and height of preview or Print page. The `PageSettings` property of SfDiagram have proeprties for printing customization. 
+SfDiagram provides support to customize or change the orientation, margin, width and height of preview or Print page. The `PageSettings` property of SfDiagram have properties for printing customization. 
 
  N> Any changes in PageSetting will affect both Diagram and Preview
 
@@ -47,8 +47,8 @@ SfDiagram provides support to switch between Portrait and Landscape orientation 
 {% tabs %}
 {% highlight C# %}
 
- printdiagram.PageSettings=new PageSettings();
- printdiagram.PageSettings.PageOrientation=PageOrientation.Landscape;
+ diagram.PageSettings=new PageSettings();
+ diagram.PageSettings.PageOrientation=PageOrientation.Landscape;
 
 {% endhighlight %}
 {% endtabs %}
@@ -64,9 +64,9 @@ SfDiagram provides support to change the page size. Page size can be changed by 
 {% tabs %}
 {% highlight C# %}
 
-  printdiagram.PageSettings=new PageSettings();
-  printdiagram.PageSettings.PageWidth = 800;
-  printdiagram.PageSettings.PageHeight = 800;
+  diagram.PageSettings=new PageSettings();
+  diagram.PageSettings.PageWidth = 800;
+  diagram.PageSettings.PageHeight = 800;
 
 {% endhighlight %}
 {% endtabs %}
@@ -83,7 +83,7 @@ SfDiagram provides support to change the page margins to adjust content in print
 {% tabs %}
 {% highlight C# %}
 
-   printdiagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
+   diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
 
 {% endhighlight %}
 {% endtabs %}
@@ -116,8 +116,8 @@ Steps for setting Header for printing,
 {% tabs %}
 {% highlight c# %}
 
- printdiagram.PrintingService.PrintSettings.PageHeaderHeight = 50;
- printdiagram.PrintingService.PrintSettings.PageHeaderTemplate = this.Resources["PrintHeaderTemplate"] as DataTemplate;
+ diagram.PrintingService.PrintSettings.PageHeaderHeight = 50;
+ diagram.PrintingService.PrintSettings.PageHeaderTemplate = this.Resources["PrintHeaderTemplate"] as DataTemplate;
  
 {% endhighlight %}
 {% endtabs %}
@@ -132,13 +132,13 @@ Refer to the Print and Export Sample from the following link.
 Sample Link: WPF Dashboard->SfDiagram->Getting Started->Print and Export.
 
 ## Classic PrintPreview
-SfDiagram provides backward compatability to show the older or classic print preview before printing.
+SfDiagram provides backward compatibility  to show the older or classic print preview before printing.
 
 {% tabs %}
 {% highlight c# %}
 
-   printdiagram.PrintingService.ShowDialog = true;
-   printdiagram.PrintingService.ShowClassicPrintPreview();
+   diagram.PrintingService.ShowDialog = true;
+   diagram.PrintingService.ShowClassicPrintPreview();
  
 {% endhighlight %}
 {% endtabs %}
