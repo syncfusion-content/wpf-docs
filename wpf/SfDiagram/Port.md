@@ -530,7 +530,86 @@ return node;
 
 ![](Port_images/ConnectorPort.gif)
 
-DockPort does not allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
+### Connection for DockPort
+
+DockPort does not allow direct connection to it as like NodePort and ConnectorPort. But you can able to create connection interactively. 
+
+{% tabs %}
+{% highlight c# %}
+
+diagram.PortVisibility = PortVisibility.Visible;
+//Define the ConnectorPort
+ConnectorPortViewModel cp1 = new ConnectorPortViewModel()
+  {
+    Length = 0.5,
+  };
+ConnectorPortViewModel cp2 = new ConnectorPortViewModel()
+  {
+    Length = 0.5,
+  };
+//Define the DockPort
+DockPortViewModel dock1 = new DockPortViewModel()
+ {
+   SourcePoint = new Point(1, 1),
+   TargetPoint = new Point(1, 0),
+   //Adding ConnectorPort to DockPort
+   Ports = new PortCollection()
+   {
+     cp1
+   }
+ };
+DockPortViewModel dock2 = new DockPortViewModel()
+ {
+   SourcePoint = new Point(0, 0),
+   TargetPoint = new Point(0, 1),
+   Ports = new PortCollection()
+   {
+     cp2
+   }
+ };
+// Define the NodeCollection
+diagram.Nodes = new NodeCollection();
+NodeViewModel node1 = AddNode(100, 100, "Rectangle", 65, 100);
+//Define the PortCollection
+node1.Ports = new PortCollection()
+ {
+   dock1
+ };
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node1);
+NodeViewModel node2 = AddNode(300, 100, "Rectangle", 65, 100);
+node2.Ports = new PortCollection()
+ {
+   dock2
+ };
+(diagram.Nodes as NodeCollection).Add(node2);
+//Define the ConnectorCollection
+diagram.Connectors = new ConnectorCollection();
+ConnectorViewModel connector1 = new ConnectorViewModel()
+{
+  //Adding DockPort's Connector Port as Source and Target Port
+  SourcePort=cp1,
+  TargetPort=cp2
+};
+//Adding Connector to Collection
+(diagram.Connectors as ConnectorCollection).Add(connector1);
+}
+//Method for Creating Node
+public NodeViewModel AddNode(double offsetX, double offsetY, string shape, double height, double width)
+ {
+    NodeViewModel node = new NodeViewModel();
+    node.OffsetX = offsetX;
+    node.OffsetY = offsetY;
+    node.UnitHeight = height;
+    node.UnitWidth = width;
+    node.Shape = App.Current.Resources[shape];
+    return node;
+ }
+{% endhighlight %}
+{% endtabs %}
+![](Port_images/DockPort.png)
+
+For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
 ## Padding
 
