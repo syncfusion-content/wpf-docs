@@ -354,6 +354,8 @@ Line Bridging creates a bridge for lines to smartly cross over other lines, at p
 
 The Direction of Bridge can be customized with property `BridgeDirection`.
 
+![](Connector_images/Bridging1.PNG)
+
 {% tabs %}
 {% highlight xaml %}
 <Grid>
