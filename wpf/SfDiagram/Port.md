@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Diagram for WPF provides support to define ports for making connections.
 
-![](Port_images/Port_img1.PNG)![](Port_images/Port_img2.PNG)
+![](Port_images/Port_img2.PNG)
 
 When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary as shown in the following image.
 
