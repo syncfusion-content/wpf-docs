@@ -353,7 +353,6 @@ SfDataGrid allows you to edit the cell programmatically by calling the [BeginEdi
 {% highlight c# %}
 
 //Add this namespace to access the RowColumnIndex structure type in SfDataGrid
-
 using Syncfusion.UI.Xaml.ScrollAxis;
 
 this.dataGrid.Loaded += dataGrid_Loaded;
@@ -375,7 +374,6 @@ You can call the [EndEdit](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagr
 {% highlight c# %}
 
 //Add this namespace to access the RowColumnIndex structure type in SfDataGrid
-
 using Syncfusion.UI.Xaml.ScrollAxis;
 
 this.dataGrid.Loaded += dataGrid_Loaded;        
@@ -397,7 +395,6 @@ You can use the [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/
 {% highlight c# %}
 
 //Add this namespace to access the RowColumnIndex structure type in SfDataGrid
-
 using Syncfusion.UI.Xaml.ScrollAxis;
 
 this.dataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;
