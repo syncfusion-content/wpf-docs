@@ -162,9 +162,9 @@ toolBar.FloatingBarLocation = new Point(50, 50);
 By default, the ToolBarAdv can be docked to any position. To restrict docking of ToolBarAdv to particular position, the following properties can be used. Each will restrict docking at corresponding positions in ToolBarManager.
 
 * CanDockAtLeft—restricts docking at the left.
-* CanDockAtTop—restricts docking at the left.
-* CanDockAtRight—restricts docking at the left.
-* CanDockAtBottom—restricts docking at the left.
+* CanDockAtTop—restricts docking at the top.
+* CanDockAtRight—restricts docking at the right.
+* CanDockAtBottom—restricts docking at the bottom.
 
 Following code restricts docking at the top:
 
