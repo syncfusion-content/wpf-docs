@@ -18,7 +18,7 @@ SfDiagram provides support to print the diagram with help of [PrintingService](h
  
  For Sample please refer to,[Printing](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/printing-698055447).
 
-![](Printing_images/Printing_img1.png)
+![](Printing_images/printing_1.png)
 
 ### Scaling
 
@@ -123,6 +123,7 @@ Steps for setting Header for printing,
 {% endtabs %}
 
 3. Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PrintPageFooterTemplate` also.
+
  ![](Printing_images/header.png) 
  
  
@@ -130,3 +131,16 @@ Refer to the Print and Export Sample from the following link.
 
 Sample Link: WPF Dashboard->SfDiagram->Getting Started->Print and Export.
 
+## Classic PrintPreview
+SfDiagram provides backward compatability to show the older or classic print preview before printing.
+
+{% tabs %}
+{% highlight c# %}
+
+   printdiagram.PrintingService.ShowDialog = true;
+   printdiagram.PrintingService.ShowClassicPrintPreview();
+ 
+{% endhighlight %}
+{% endtabs %}
+
+ ![](Printing_images/classic.png)
