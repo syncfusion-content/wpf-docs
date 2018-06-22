@@ -332,6 +332,7 @@ Connector’s `SourcePort` or `SourcePortID` and `TargetPort` or `TargetPortID` 
 
 {% endhighlight %}
 
+{% highlight c# %}
 public MainWindow()
 {
  InitializeComponent();
