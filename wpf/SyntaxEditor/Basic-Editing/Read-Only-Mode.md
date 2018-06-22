@@ -9,9 +9,11 @@ documentation: ug
 
 ## Read Only Mode
 
-Edit WPF can also be used as a static control in order to view only the contents of the file. ReadOnly mode is enabled/disabled by using the **IsReadOnly** property of the EditControl class. The following code is used to set the **ReadOnly** mode for EditControl.
+Edit WPF can also be used as a static control in order to view only the contents of the file. ReadOnly mode is enabled/disabled by using the `IsReadOnly` property of the EditControl class. The following code is used to set the ReadOnly mode for EditControl.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight XAML %}
 
 
 <sfedit:EditControl Name="editControl" IsReadOnly="True">
@@ -22,9 +24,10 @@ Edit WPF can also be used as a static control in order to view only the contents
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 editControl.IsReadOnly = true;
 
 {% endhighlight %}
 
+{% endtabs %}
