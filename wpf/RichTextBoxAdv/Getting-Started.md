@@ -16,6 +16,7 @@ The RichTextBoxAdv control can be added to an application by using the following
 1. Microsoft Visual Studio
 2. Microsoft Expression Blend
 
+N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
 
 
 ## Creating the RichTextBoxAdv Control in Visual Studio
