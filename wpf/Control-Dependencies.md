@@ -16,7 +16,7 @@ This page lists the assemblies required for each control to be referred
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -37,7 +37,7 @@ For exporting DataGrid to excel, pdf or csv, the following references need to be
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -57,7 +57,7 @@ Syncfusion.SfGridConverter.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -78,7 +78,7 @@ Syncfusion.SfGrid.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -99,7 +99,7 @@ For exporting TreeGrid to excel, pdf or csv, the following references need to be
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -119,7 +119,7 @@ Syncfusion.SfGridConverter.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -139,7 +139,7 @@ Syncfusion.Grid.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -163,7 +163,7 @@ For exporting SfSpreadsheet to excel or pdf, the following references need to be
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -182,7 +182,7 @@ Syncfusion.SfSpreadsheet.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -200,7 +200,7 @@ Syncfusion.SfSpreadsheet.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -217,7 +217,7 @@ Syncfusion.Calculate.Base
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -242,7 +242,7 @@ Syncfusion.SfRichTextBoxAdv.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -269,7 +269,7 @@ Syncfusion.SfRichTextRibbon.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -288,7 +288,7 @@ Syncfusion.PropertyGrid.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -307,7 +307,7 @@ For printing the Diagram with new enhanced print preview,the below assembly need
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -324,7 +324,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -341,7 +341,7 @@ Syncfusion.SfHeatMap.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -362,7 +362,7 @@ Syncfusion.Gantt.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -379,7 +379,7 @@ Syncfusion.SfKanban.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -396,7 +396,7 @@ Syncfusion.SfBarcode.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -413,7 +413,7 @@ Syncfusion.SfBulletGraph.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -430,7 +430,7 @@ Syncfusion.SfSmithChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -447,7 +447,7 @@ Syncfusion.SfSunburstChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -464,7 +464,7 @@ Syncfusion.SfChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -481,7 +481,7 @@ Syncfusion.SfGauge.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -498,7 +498,7 @@ Syncfusion.SfMaps.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -518,7 +518,7 @@ Syncfusion.SfSchedule.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -535,7 +535,7 @@ Syncfusion.SfChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -552,7 +552,7 @@ Syncfusion.SfChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -569,7 +569,7 @@ Syncfusion.SfChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -586,7 +586,7 @@ Syncfusion.SfChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -603,7 +603,7 @@ Syncfusion.SfTreeMap.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -620,7 +620,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -637,7 +637,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -655,7 +655,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -673,7 +673,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -691,7 +691,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -711,7 +711,7 @@ Syncfusion.Edit.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -729,7 +729,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -746,7 +746,7 @@ Syncfusion.SfAccordion.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -764,7 +764,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -782,7 +782,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -800,7 +800,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -818,7 +818,7 @@ Syncfusion.SfChromelessWindow.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -835,7 +835,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -853,7 +853,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -870,7 +870,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -888,7 +888,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -906,7 +906,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -923,7 +923,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -941,7 +941,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -958,7 +958,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -975,7 +975,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -992,7 +992,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1009,7 +1009,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1026,7 +1026,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1043,7 +1043,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1060,7 +1060,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1077,7 +1077,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1094,7 +1094,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1111,7 +1111,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1128,7 +1128,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1145,7 +1145,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1163,7 +1163,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1190,7 +1190,7 @@ Syncfusion.RichTextDocIOParser.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1210,7 +1210,7 @@ Syncfusion.RichTextRibbon.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1228,7 +1228,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1246,7 +1246,7 @@ Syncfusion.SfSpellChecker.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1264,7 +1264,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1282,7 +1282,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1300,7 +1300,7 @@ Syncfusion.SfRadialMenu.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1318,7 +1318,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1336,7 +1336,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1354,7 +1354,7 @@ Syncfusion.SfInput.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1371,7 +1371,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1388,7 +1388,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1406,7 +1406,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1424,7 +1424,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1441,7 +1441,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1459,7 +1459,7 @@ Syncfusion.SfColorPalette.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1476,7 +1476,7 @@ Syncfusion.SfChart.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1494,7 +1494,7 @@ Syncfusion.SfTreeNavigator.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1512,7 +1512,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1530,7 +1530,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1548,7 +1548,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1565,7 +1565,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1583,7 +1583,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1601,7 +1601,7 @@ Syncfusion.Tools.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1619,7 +1619,7 @@ Syncfusion.SfBusyIndicator.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1637,7 +1637,7 @@ Syncfusion.SfHubTile.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1655,7 +1655,7 @@ Syncfusion.SfRadialMenu.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1672,7 +1672,7 @@ Syncfusion.SfNavigationDrawer.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1690,7 +1690,7 @@ Syncfusion.SfHubTile.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1708,7 +1708,7 @@ Syncfusion.Calculate.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1725,7 +1725,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1742,7 +1742,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1759,7 +1759,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1777,7 +1777,7 @@ Syncfusion.Shared.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1797,7 +1797,7 @@ Syncfusion.PdfViewer.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1825,7 +1825,7 @@ Syncfusion.ReportDesigner.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1852,7 +1852,7 @@ Syncfusion.XlsIO.Base
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1883,7 +1883,7 @@ Syncfusion.ReportViewer.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1908,7 +1908,7 @@ For exporting OLAP chart contents to PDF, word and image, the following referenc
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1925,7 +1925,7 @@ Syncfusion.OlapChartConverter.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1956,7 +1956,7 @@ Syncfusion.OlapClient.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -1976,7 +1976,7 @@ Syncfusion.OlapGauge.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -2002,7 +2002,7 @@ For exporting OLAP grid contents to excel, word, PDF and CSV, the following refe
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -2019,7 +2019,7 @@ Syncfusion.OlapGridConverter.WPF
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
@@ -2042,7 +2042,7 @@ For exporting pivot grid contents to excel, word, PDF and CSV, the following ref
 <table>
 <tr>
 <th>Assembly references </th>
-<th>Nuget package </th>
+<th>NuGet package </th>
 </tr>
 <tr>
 <td> 
