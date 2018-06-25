@@ -9,9 +9,9 @@ documentation: ug
 
 # Node
 
-Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities
+Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
-![](Node_images/Node_img1.jpeg)
+![](Node_images/Node_Content.PNG)
 
 ## Shapes
 
@@ -24,7 +24,43 @@ A Node can be created and added to the Diagram, either programmatically or inter
 ### Add Node through Nodes collection 
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram.
-For more, refer to  [Add Nodes](/wpf/sfdiagram/Getting-Started#simple Application:Add Nodes "Add Nodes"). 
+
+{% tabs %}
+{% highlight xaml %}
+<syncDiagram:SfDiagram.Nodes>
+    <!--Observable Collection of NodeViewModel-->
+    <syncDiagram:NodeCollection>
+        <!—Declaring the NodeViewModel-->
+        <syncDiagram:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120">                  
+        </syncDiagram:NodeViewModel>
+    </syncDiagram:NodeCollection>
+</syncDiagram:SfDiagram.Nodes>
+
+{% endhighlight %}
+{% highlight c# %}
+// Creating the NodeViewModel
+NodeViewModel Begin = new NodeViewModel()
+{
+    ID = "Begin",
+    UnitWidth = 120,
+    UnitHeight = 40,
+    OffsetX = 300,
+    OffsetY = 60,
+    //Specify shape to the Node from built-in Shape Dictionary
+    Shape = this.Resources["Ellipse"],
+    //Apply style to Shape
+    ShapeStyle = this.Resources["ShapeStyle"] as Style,
+};
+
+// Add Node to Nodes property of the Diagram
+(diagram.Nodes as NodeCollection).Add(Begin);
+
+{% endhighlight %}
+{% endtabs %} 
+
+Now,Node would be like this,
+
+![](Node_images/addNode.png)
 
 ### Add Node from stencil
 
@@ -42,7 +78,7 @@ Nodes can be interactively drawn by clicking and dragging the Diagram surface by
 
 ## Position
 
-Position of a Node is controlled by using its OffsetX and OffsetY properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may except this Offset values to represent the distance between page origin and Node’s top left corner instead of center. Pivot property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
+Position of a Node is controlled by using its `OffsetX` and `OffsetY` properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may expect this Offset values to represent the distance between page origin and Node’s top left corner instead of center. `Pivot` property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
 
 The following table illustrates how pivot relates Offset values with Node boundaries.
 
@@ -55,7 +91,7 @@ The following table illustrates how pivot relates Offset values with Node bounda
 {% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
-<Style TargetType="syncfusion:Node" BasedOn="{StaticResource NodeBindingStyle}">
+<Style TargetType="syncfusion:Node">
   <Setter Property="ShapeStyle">
     <Setter.Value>
       <Style TargetType="Path">
@@ -150,7 +186,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY,double height,double
 
 ## Appearance
 
-You can customize the appearance of a Node by changing its ShapeStyle. The following code illustrates how to customize the appearance of the shape.
+You can customize the appearance of a Node by changing its `ShapeStyle`. The following code illustrates how to customize the appearance of the `Shape`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -175,51 +211,62 @@ return style;
 
 ![](Node_images/Node_img4.PNG)
 
-## Data Binding
+## Flip
 
-In order to achieve Properties of ViewModel are bind to View, we have provided the default style for View in “BindingStyle.xaml”. For more information, refer to [Data Binding](/wpf/sfdiagram/Data-Binding).
-
-N> The AutoBind property is deprecated. Instead of AutoBind, please use this View to ViewModel Binding approach.
-
+Diagram provides support to flip the node.`Flip` is performed to give the mirrored node of the Original element.
+The flip types are below,
+* Flip
+ `Flip` which involves both vertical and horizontal changes of the element. 
+* VerticalFlip
+ `VerticalFlip` which involves changes in the vertical direction of the element.
+* HorizontalFlip
+ `HorizontalFlip` which involves changes in the horizontal direction of the element.
+ 
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the Node interactively. 
 
-## Select
+#### Select
 Node can be selected by clicking on it.
 
 ![](Node_images/Node_img7.jpg)
 
 To explore about selection and selection related events , refer to [Selection](/wpf/sfdiagram/interaction#selection) .
 
-## Drag
+#### Drag
 
 * Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
 
-* `NodeChangedEvent` will notify the OffsetX and OffsetY changes with their old and new values.Along with that, this event will give information about interaction state. To explore about aruguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values.Along with that, this event will give information about interaction state. To explore about aruguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![](Node_images/Drag.gif)
 
-## Resize
+#### Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
 
-* `NodeChangedEvent` will notify the Height and Width changes with their old and new values.Along with that, this event will give information about  interaction state. To explore about arguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values.Along with that, this event will give information about  interaction state. To explore about arguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![](Node_images/Resize.gif)
 
-## Rotate
+#### Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
 * The Node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position").
 
-* `NodeChangedEvent` will notify the Rotate Angle changes with their old and new values.Along with that, this event will give information about iteraction State. To explore about arguments, please refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values.Along with that, this event will give information about iteraction State. To explore about arguments, please refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![](Node_images/Rotate.gif)
+
+## Events
+* `ItemTappedEvent` is invoked on clicking the node. To explore about arguments, please refer to [ItemTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
+* `ItemDoubleTappedEvent` is invoked on double clicking the node. To explore about arguments, please refer to [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
+* `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, please refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
+[MouseUpEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
 ## Constraints
 

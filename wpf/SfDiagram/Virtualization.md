@@ -39,4 +39,4 @@ N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is on
 
 ### Outline customization
 
-Options are provided to override the appearance, style and interval time of outline by using [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) property of SfDiagram.
+Options are provided to override the appearance, style and interval time of outline by using [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) property of SfDiagram.

@@ -14,7 +14,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 
 ## Graph Constraints
 
-[GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allow to enable or disable the following behaviors.
+[GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allow to enable or disable the following behaviors.
 
 * Page Editing
 * Line Bridging
@@ -34,7 +34,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 ## Node Constraints
 
-[NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allow to enable or disable the following behaviors of Node.
+[NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allow to enable or disable the following behaviors of Node.
 
 * Selection
 * Deletion
@@ -68,7 +68,7 @@ NodeViewModel node = new NodeViewModel()
 
 ## Connector Constraints
 
-[ConnectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allow to enable or disable certain behaviors of Connectors. They are as follows.
+[ConnectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allow to enable or disable certain behaviors of Connectors. They are as follows.
 
 * Selection
 * Drag
@@ -96,7 +96,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 ## Port Constraints
 
-[PortConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allow to enable or disable certain behaviors of port. They are as follows.
+[PortConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allow to enable or disable certain behaviors of port. They are as follows.
 
 * Connect 
 * Drag
@@ -119,7 +119,7 @@ NodePortViewModel port=	new NodePortViewModel()
 
 ## Annotation Constraints
 
-[AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allow to enable or disable the following behaviors of Annotation.
+[AnnotationConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allow to enable or disable the following behaviors of Annotation.
 
 * Selection
 * Drag
@@ -144,7 +144,7 @@ AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 
 ## Selector Constraints
 
-Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with [SelectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html). The part of selector is categorized as follows.
+Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with [SelectorConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html). The part of selector is categorized as follows.
 
 * Resizer
 * Rotator
@@ -162,7 +162,7 @@ The following code example illustrates how to hide rotator.
 
 ## Snap Constraints
 
-[SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
+[SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
 * Show only Horizontal or Vertical Gridlines
 * Show both Horizontal or Vertical Gridlines

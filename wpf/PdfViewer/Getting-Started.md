@@ -38,6 +38,8 @@ Syncfusion.Shared.WPF</td><td>
 This component provides various UI styles and themes used in the `PdfViewerControl`.</td></tr>
 </table>
 
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
+
 ## Create a simple PDF viewer application 
 
 Following steps demonstrates creating a simple PDF viewer application in WPF:
@@ -85,7 +87,7 @@ Following steps demonstrates creating a simple PDF viewer application in WPF:
 
 ## Display PDF file
    
-The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the `PdfViewerControl`:
+The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the `PdfViewerControl`:
 
 1. Create a simple class that loads a PDF document  as illustrated in the following code example. Save the class file as PdfReport.cs.
 

@@ -28,23 +28,19 @@ Custom DateTime schedule is used to define your own date time schedule, which ca
 
 In both the custom schedules, Gantt will get the information from the application to render the schedule. Gantt will accept the custom schedule information in the form of a collection of GanttScheduleRowInfo object, and process it to draw the schedule. 
 
-## GanttScheduleRowInfo class will have following fields:
+GanttScheduleRowInfo class will have following fields:
 
 1. PixelsPerUnit—Gets the information of the pixel value equivalent to one unit in custom measurement.
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
 3. TimeUnit—Gets the information about the type of row, when the schedule type is CustomDateTime. The Time unit can be any one of the following:
+
+* Seconds-represents the corresponding row as second's row.
 * Minutes—represents the corresponding row as minute’s row.
 * Hours—represents the corresponding row as hour’s row.
-* Days—represents the corresponding row as day’s row
-* Weeks—represents the corresponding row as week’s row
-* Months—represents the corresponding row as month’s row
-* Years—represents the corresponding row as year’s row
-
-
-
-
-
-
+* Days—represents the corresponding row as day’s row.
+* Weeks—represents the corresponding row as week’s row.
+* Months—represents the corresponding row as month’s row.
+* Years—represents the corresponding row as year’s row.
 
 ### Use Case Scenario
 
@@ -145,43 +141,24 @@ To Add CustomNumeric Schedule to an application:
 The following code illustrates Adding Custom Schedule to an Application:
 {% highlight xaml %}
 
-
-
-
-<sync:GanttControl Grid.Row="1" ScheduleType="CustomNumeric" 
-
-x:Name="Gantt" VisualStyle="Office2010Black">
-
-<sync:GanttControl.TaskAttributeMapping>
-
-<sync:TaskAttributeMapping 
-
-TaskIdMapping="Id"                                            
-
-TaskNameMapping="Name"                                        
-
-StartPointMapping="Start"                                               
-
-FinishPointMapping="End"                                            
-
-ChildMapping="ChildTask"                                                
-
-ProgressMapping="Complete"
-
-ResourceInfoMapping="Resource">
-
-</sync:TaskAttributeMapping>
-
-</sync:GanttControl.TaskAttributeMapping>
-
-
+<sync:GanttControl Grid.Row="1" 
+                   ScheduleType="CustomNumeric" 
+                   x:Name="Gantt"
+                   VisualStyle="Office2010Black">
+    <sync:GanttControl.TaskAttributeMapping>
+        <sync:TaskAttributeMapping TaskIdMapping="Id"                    
+                                   TaskNameMapping="Name"                
+                                   StartPointMapping="Start" 
+                                   FinishPointMapping="End"              
+                                   ChildMapping="ChildTask"              
+                                   ProgressMapping="Complete"
+                                   ResourceInfoMapping="Resource">
+        </sync:TaskAttributeMapping>
+    </sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
-
 
 // Assigning the custom schedule Items Source
 
@@ -266,109 +243,73 @@ The following code illustrates this:
 {% tabs %}
 {% highlight xaml %}
 
-
-
-
-	<sync:GanttControl Grid.Row="1" 
-
-	x:Name="Gantt" ScheduleType="CustomDateTime"                                                                                                               
-
-	VisualStyle="Office2010Black"
-
-	ItemsSource="{Binding GanttItemSource}" ShowChartLines="False"
-
-	ShowNonWorkingHoursBackground="False"
-
-	ToolTipTemplate="{StaticResource toolTipTemplate}">
-
+<sync:GanttControl Grid.Row="1" x:Name="Gantt" 
+                   ScheduleType="CustomDateTime"                                                                                          VisualStyle="Office2010Black"
+                   ItemsSource="{Binding GanttItemSource}" 
+                   ShowChartLines="False"
+                   ShowNonWorkingHoursBackground="False"
+                   ToolTipTemplate="{StaticResource toolTipTemplate}">
 	<sync:GanttControl.TaskAttributeMapping>
-
-	<sync:TaskAttributeMapping TaskIdMapping="Id"
-
-	TaskNameMapping="Name"
-
-	StartDateMapping="StDate" 
-
-	ChildMapping="ChildTask"
-
-	FinishDateMapping="EndDate"
-
-	DurationMapping="Duration"                                            
-
-	ProgressMapping="Complete"
-
-	ResourceInfoMapping="Resource"
-
-	PredecessorMapping="Predecessor"
-
-	>
-
-	</sync:TaskAttributeMapping>
-
+    	<sync:TaskAttributeMapping TaskIdMapping="Id"
+                                   TaskNameMapping="Name"
+                                   StartDateMapping="StDate" 
+                                   ChildMapping="ChildTask"
+                                   FinishDateMapping="EndDate"
+                                   DurationMapping="Duration"                                            
+                                   ProgressMapping="Complete"
+                                   ResourceInfoMapping="Resource"
+                                   PredecessorMapping="Predecessor"	>
+	    </sync:TaskAttributeMapping>
 	</sync:GanttControl.TaskAttributeMapping>
-
-	</sync:GanttControl>
-
-
+</sync:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 // Assigning the custom schedule Items Source.
 
-this.Gantt.CustomScheduleSource = this.GetCustomScheduleSource();  
-
-
+this.Gantt.CustomScheduleSource = this.GetCustomScheduleSource();
 
 // Hooks the schedule cell created event to customize the schedule cell appearance.
 
-this.Gantt.ScheduleCellCreated+=new GanttControl.ScheduleCellCreatedEventHandler 
+this.Gantt.ScheduleCellCreated += new GanttControl.ScheduleCellCreatedEventHandler(Gantt_ScheduleCellCreated);
 
-(Gantt_ScheduleCellCreated);           
+// Gets the Custom Schedule Items Info        
 
 
-
-/// Gets the Custom Schedule Items Info        
-
-public  IList<GanttScheduleRowInfo> GetCustomScheduleSource()
+public IList<GanttScheduleRowInfo> GetCustomScheduleSource()
 
 {
 
-List<GanttScheduleRowInfo> RowInfo = new List<GanttScheduleRowInfo>();
+    List<GanttScheduleRowInfo> RowInfo = new List<GanttScheduleRowInfo>();
 
+    // Defining the top most row of the schedule
 
+    // Here we need the Year Schedule in this row. So we are defining  the TimeUnit as years
 
-// Defining the top most row of the schedule
+    RowInfo.Add(new GanttScheduleRowInfo()
+    {
+        TimeUnit = TimeUnit.Years,
+        CellsPerUnit = 1,
+        HorizontalAlignment = HorizontalAlignment.Left
+    });
 
-// Here we need the Year Schedule in this row. So we are defining  the TimeUnit as years
+    // Defining the bottom most row of the schedule
 
-RowInfo.Add(new GanttScheduleRowInfo() { TimeUnit = TimeUnit.Years, 
+    // Here we need to display the three months in a cell so we are defining TimeUnit in months, and cells per Unit as 3 
 
-CellsPerUnit = 1, HorizontalAlignment = HorizontalAlignment.Left });
+    // Bottom Most row should consist information about the pixels per Unit, so we define the pixels per unit as 15 (here this is a one month width).
 
+    RowInfo.Add(new GanttScheduleRowInfo()
+    {
+        TimeUnit = TimeUnit.Months,
+        CellsPerUnit = 3,
+        PixelsPerUnit = 15
+    });
 
-
-// Defining the bottom most row of the schedule
-
-// Here we need to display the three months in a cell so we are defining TimeUnit in months, and cells per Unit as 3 
-
-// Bottom Most row should consist information about the pixels per Unit, so we define the pixels per unit as 15 (here this is a one month width).
-
-RowInfo.Add(new GanttScheduleRowInfo() { TimeUnit = TimeUnit.Months, 
-
-CellsPerUnit = 3, PixelsPerUnit = 15 });
-
-
-
-return RowInfo;
+    return RowInfo;
 
 }
-
-
 
 /// Handles the Schedule cell Created Event of the Gantt 
 
@@ -376,93 +317,73 @@ void Gantt_ScheduleCellCreated(object sender, ScheduleCellCreatedEventArgs args)
 
 {
 
-DateTime currentDate = args.CurrentCell.CellDate;                
+    DateTime currentDate = args.CurrentCell.CellDate;
 
+    if (args.CurrentCell.CellTimeUnit == TimeUnit.Months)
 
+    {
 
-if (args.CurrentCell.CellTimeUnit == TimeUnit.Months)
+        args.CurrentCell.Foreground = new SolidColorBrush(Colors.White);
 
-{
+        // Quarter 1 dates contain months below 3 as we are checking the cell date and changing the content of the cell.
 
-args.CurrentCell.Foreground = new SolidColorBrush(Colors.White);
+        if (currentDate.Month <= 3)
 
+        {
 
+            args.CurrentCell.Content = "Q 1";
 
-// Quarter 1 dates contain months below 3 as we are checking the      
+            args.CurrentCell.CellToolTip = "Quarter 1";
 
-cell date and changing the content of the cell.
+            args.CurrentCell.Background = new SolidColorBrush(Colors.DarkGray);
 
-if (currentDate.Month <= 3)
+        }
 
-{
+        // Quarter 2 dates contain months between 4 – 6 as we are checking the cell dates and changing the content of the cell.
 
-args.CurrentCell.Content = "Q 1";
+        else if (currentDate.Month > 3 && currentDate.Month <= 6)
 
-args.CurrentCell.CellToolTip = "Quarter 1";
+        {
 
-args.CurrentCell.Background = new SolidColorBrush(Colors.DarkGray);
+            args.CurrentCell.Content = "Q 2";
 
-}
+            args.CurrentCell.CellToolTip = "Quarter 2";
 
+            args.CurrentCell.Background = new SolidColorBrush(Colors.LightGray);
 
+        }
 
-// Quarter 2 dates contain months between 4 – 6 as we are checking
+        // Quarter 3 dates contains months between 6 - 9 as we are checking the cell date and changing the Content of the cell.
 
-the cell dates and changing the content of the cell.
+        else if (currentDate.Month > 6 && currentDate.Month <= 9)
 
-else if (currentDate.Month > 3 && currentDate.Month <= 6)
+        {
 
-{
+            args.CurrentCell.Content = "Q 3";
 
-args.CurrentCell.Content = "Q 2";
+            args.CurrentCell.CellToolTip = "Quarter 3";
 
-args.CurrentCell.CellToolTip = "Quarter 2";
+            args.CurrentCell.Background = new SolidColorBrush(Colors.DarkGray);
 
-args.CurrentCell.Background =new SolidColorBrush(Colors.LightGray);
+        }
 
-}
+        // Quarter 4 dates contains months between 9 - 12. So we are checking the cell date and changing the content of the cell.
 
+        else if (currentDate.Month > 9 && currentDate.Month <= 12)
 
+        {
 
-// Quarter 3 dates contains months between 6 - 9 as we are checking
+            args.CurrentCell.Content = "Q 4";
 
-the cell date and changing the Content of the cell.
+            args.CurrentCell.CellToolTip = "Quarter 4";
 
-else if (currentDate.Month > 6 && currentDate.Month <= 9)
+            args.CurrentCell.Background = new SolidColorBrush(Colors.LightGray);
 
-{
+        }
 
-args.CurrentCell.Content = "Q 3";
-
-args.CurrentCell.CellToolTip = "Quarter 3";
-
-args.CurrentCell.Background = new SolidColorBrush(Colors.DarkGray);
-
-}
-
-
-
-// Quarter 4 dates contains months between 9 - 12. So we are checking
-
-the cell date and changing the content of the cell.
-
-else if (currentDate.Month > 9 && currentDate.Month <= 12)
-
-{
-
-args.CurrentCell.Content = "Q 4";
-
-args.CurrentCell.CellToolTip = "Quarter 4";
-
-args.CurrentCell.Background =new SolidColorBrush(Colors.LightGray);
+    }
 
 }
-
-}
-
-}
-
-
 
 {% endhighlight  %}
 {% endtabs %}
@@ -491,7 +412,7 @@ To view samples:
 5. Expand the Custom Schedule item in the Sample Browser.
 6. Choose the Customized Schedule Appearance sample to launch.
 
-ScheduleCellCreatedEventArgs Class
+## ScheduleCellCreatedEventArgs Class
 
 The ScheduleCellCreatedEventArgs consists of the current schedule cell in the name of CurrentCell. It is the GanttScheduleCell type. 
 

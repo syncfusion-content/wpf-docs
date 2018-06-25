@@ -16,9 +16,7 @@ Essential Gantt enables you to customize the appearance of the control. This sup
 * Office2010Silver
 * Metro
 
-### Properties
-
-
+## Properties
 
 <table>
 <tr>
@@ -47,10 +45,7 @@ The following code illustrates how to set the VisualStyle of Gantt control:
 {% tabs %}
 {% highlight xaml %}
 
-
-
 <Sync:GanttControl x:Name="Gantt" VisualStyle="Office2010Blue"/>
-
 
 {% endhighlight %}
 {% highlight c# %}
