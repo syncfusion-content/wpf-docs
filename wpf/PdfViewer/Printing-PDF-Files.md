@@ -17,7 +17,7 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 ## Silent Printing
 
-The [PrintDocument](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PrintDocument.html) property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. This type of printing can be used when trying to print the PDF document with the custom printer settings. The following code sample demonstrates this:
+The [PrintDocument](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PrintDocument.html) property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. This type of printing can be used when trying to print the PDF document with the custom printer settings. The following code sample demonstrates this:
 
 {% tabs %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ dialog.Document.Print()
 {% endhighlight %}
 {% endtabs %}
 
-When you prefer to perform Silent printing with the default printer settings, then using [Print](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Print().html) method in the PDF Viewer control is the best approach. The following code example illustrates the same.
+When you prefer to perform Silent printing with the default printer settings, then using [Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Print().html) method in the PDF Viewer control is the best approach. The following code example illustrates the same.
 
 {% tabs %}
 {% highlight c# %}

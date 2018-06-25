@@ -24,7 +24,7 @@ For example, the name can be defined for the cell range of "A1:D1" as "SUMRANGE"
 
 ## Add Named Ranges
 
-A name can be added for a cell or range of cells using [AddNamedRange](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AddNamedRange.html) method of [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html).
+A name can be added for a cell or range of cells using [AddNamedRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~AddNamedRange.html) method of [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ string result = engine.ParseAndComputeFormula(formula);
 
 ## Remove Named Ranges
 
-A name can be removed from a cell or range of cells using [RemoveNamedRange](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RemoveNamedRange.html) method of [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html).
+A name can be removed from a cell or range of cells using [RemoveNamedRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RemoveNamedRange.html) method of [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ engine.RemoveNamedRange("GROUPCELLS");
 
 ## Manage Named Ranges
 
-The names are maintained in a collection called [NamedRanges](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~NamedRanges.html). Also, the ranges of particular name can be changed or replaced using this collection.
+The names are maintained in a collection called [NamedRanges](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~NamedRanges.html). Also, the ranges of particular name can be changed or replaced using this collection.
 
 {% tabs %}
 {% highlight c# %}

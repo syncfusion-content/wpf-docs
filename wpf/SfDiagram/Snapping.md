@@ -11,7 +11,7 @@ documentation: ug
 
 Defines the gridlines and defines how and when the objects have to be snapped.
 
-Please refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapSettings_members.html) properties.
+Please refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapSettings_members.html) properties.
 
 ## Snap To Objects
 
@@ -30,7 +30,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ![](Gridlines_images/SnapToObject.gif)
 
-Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
+Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
 ## Gridlines
 
@@ -67,7 +67,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 Options are provided to customize the Style and LineIntervals of Gridlines.
 
-Please refer to the [Gridlines](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gridlines_members.html) properties.
+Please refer to the [Gridlines](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gridlines_members.html) properties.
 
 Please refer to the KB link for [Gridlines customization](https://www.syncfusion.com/kb/8466/how-to-customize-the-appearance-for-gridlines)
 
@@ -75,7 +75,7 @@ Please refer to the KB link for [Gridlines customization](https://www.syncfusion
 
 This feature allows the Diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled/disabled with the [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. 
+Snapping to gridlines can be enabled/disabled with the [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. 
 {% tabs %}
 {% highlight C# %}
 

@@ -9,15 +9,15 @@ documentation: ug
 
 # Working with ICalcData
 
-Essential Calculate provides calculation support to arbitrary business objects through [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface. To add calculation support to classes that represent data in a row/column format like a Data Grid, then you need to derive the classes inherited from `ICalcData` interface.
+Essential Calculate provides calculation support to arbitrary business objects through [ICalcData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html) interface. To add calculation support to classes that represent data in a row/column format like a Data Grid, then you need to derive the classes inherited from `ICalcData` interface.
 
 ## Methods and Events in ICalcData
 
-`ICalcData` has three methods and one event. This interface allows the [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) class in Essential Calculate to communicate with arbitrary data sources that implement this interface.
+`ICalcData` has three methods and one event. This interface allows the [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) class in Essential Calculate to communicate with arbitrary data sources that implement this interface.
 
 ### SetValueRowCol
 
-[SetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~SetValueRowCol.html) method is used to set the value to mentioned row and column index. Essential Calculate expects any indexes (rows / column integer values) to be one-based.
+[SetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~SetValueRowCol.html) method is used to set the value to mentioned row and column index. Essential Calculate expects any indexes (rows / column integer values) to be one-based.
 
 An example of defining the `SetValueRowCol` method in custom class(CalcData) is explained below,
 
@@ -57,7 +57,7 @@ public void Main()
 
 ### GetValueRowCol
 
-[GetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~GetValueRowCol.html) method is used to get the value from mentioned row and column index. Essential Calculate expects any indexes (rows / column integer values) to be one-based.
+[GetValueRowCol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~GetValueRowCol.html) method is used to get the value from mentioned row and column index. Essential Calculate expects any indexes (rows / column integer values) to be one-based.
 
 An example of defining the `GetValueRowCol` method in custom class(CalcData) is explained below,
 
@@ -96,12 +96,12 @@ public void Main()
 
 ### WireParentObject
 
-[WireParentObject](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~WireParentObject.html) method that wires the ParentObject after the `CalcEngine` object is created or when a [RegisterGridAsSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RegisterGridAsSheet.html) call is made. The purpose is to give the data object 
+[WireParentObject](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~WireParentObject.html) method that wires the ParentObject after the `CalcEngine` object is created or when a [RegisterGridAsSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RegisterGridAsSheet.html) call is made. The purpose is to give the data object 
 a chance to do any initialization steps it may need, such as subscribe the events to handle the changes in data notifications.
 
 ### ValueChanged
 
-[ValueChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~ValueChanged_EV.html) event of `ICalcData` interface occurs whenever the value is changed. The `CalcEngine` listens to this event and accordingly reacts to data changes.
+[ValueChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData~ValueChanged_EV.html) event of `ICalcData` interface occurs whenever the value is changed. The `CalcEngine` listens to this event and accordingly reacts to data changes.
  It is through this event that formulas are processed and dependencies are tracked by the `CalcEngine`.
 
 {% tabs %}
@@ -200,7 +200,7 @@ CalcEngine engine = new CalcEngine(calcData);
 
 ### Evaluation of formula
 
-The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` is used to evaluate the formulas using the values from `ICalcData` object by cell references.
+The [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine` is used to evaluate the formulas using the values from `ICalcData` object by cell references.
 
 {% tabs %}
 {% highlight c# %}

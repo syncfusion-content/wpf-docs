@@ -161,12 +161,12 @@ Computed Value</th></tr>
 To indicate that a particular string should be treated as a formula, user must start the string with a special character, `FormulaCharacter`("="). This property is static, so you can change the formula character within your code. 
 It's default value is the equal sign, (=).
 
-In general, in order for Essential Calculate to recognize a string as containing a formula; the string is required to start with the [FormulaCharacter](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaCharacter.html). 
-There is one exception though, if you explicitly call a [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) Parse method like `ParseFormula` or `ParseAndComputeFormula`, including the formula character as the first character in the passed string, is optional.
+In general, in order for Essential Calculate to recognize a string as containing a formula; the string is required to start with the [FormulaCharacter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~FormulaCharacter.html). 
+There is one exception though, if you explicitly call a [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) Parse method like `ParseFormula` or `ParseAndComputeFormula`, including the formula character as the first character in the passed string, is optional.
 
 ## Square Brackets, indexers in CalcQuickBase class
 
-If you are using a [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) object to add calculation support to your business object, then you must use strings as indexers on the `CalcQuickBase` instance to get and set values.
+If you are using a [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) object to add calculation support to your business object, then you must use strings as indexers on the `CalcQuickBase` instance to get and set values.
 To register the strings in `CalcQuickBase`, it must be enclosed within square brackets "[ ]". Eg. [A]. These registered variable names are indexer keys.
 
 {% tabs %}
