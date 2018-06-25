@@ -9,7 +9,7 @@ documentation: ug
 
 # Viewing PDF Files 
 
-A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the [Load](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Load(String).html) method. It also requests passwords to open encrypted documents.
+A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the [Load](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Load(String).html) method. It also requests passwords to open encrypted documents.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ pdfViewer1.Load("Template.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-You can load an encrypted document by using the overload in the [Load](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Load(String,String).html) method.
+You can load an encrypted document by using the overload in the [Load](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Load(String,String).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ pdfViewer1.Load("Template.pdf", "password")
 {% endhighlight %}
 {% endtabs %}
 
-You can also load the PDF document by setting its path to the [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/pdf%20viewer/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property
+You can also load the PDF document by setting its path to the [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property
 {% tabs %}
 {% highlight c# %}
 

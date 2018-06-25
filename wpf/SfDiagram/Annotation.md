@@ -13,7 +13,7 @@ Annotation is a block of text that can be displayed over a Node or Connector. An
 
 ## Define Annotation
 
-'Annotation' property of Node/Connector should be initialized with the Collection. Annotation itself having the properties to update the position, alignment and interaction with this.
+`Annotation` property of Node/Connector should be initialized with the Collection. Annotation itself having the properties as `Content`, `Alignment` to update the position, alignment and interaction with this.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ N> Annotation for Connector also similar to Node.
 
 ## Alignment
 
-Annotation can be aligned relative to the Node boundaries. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+Annotation can be aligned relative to the Node boundaries. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over `Alignment`.
 
 ### Annotation of Node
 
@@ -86,7 +86,7 @@ The following image shows the relationship between the Annotation position (blac
 
 ![](Annotation_images/Annotation_img2.PNG)
 
-### Horizontal and Vertical alignments
+### Horizontal and Vertical Alignments
 
 The `HorizontalAlignment` property of IAnnotation is used to set how the Annotation is horizontally aligned at the Annotation position determined from the fraction values. The `VerticalAlignment` property is used to set how Annotation is vertically aligned at the Annotation position.
 
@@ -174,9 +174,9 @@ NodeViewModel node = new NodeViewModel()
 
 ### Annotation of Connector
 
-### Offset
+### Length
 
-The `Offset` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
+The `Length` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
 
 The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
 
@@ -220,7 +220,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ## Wrapping
 
-When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped.
+When text overflows Node boundaries, you can control it by using `WrapText` property. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped.
 
 {% tabs %}
 {% highlight C# %}
@@ -281,8 +281,8 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 
 ## Interaction
 
-Annotation can be Select, Drag, Resize and Rotate by using `Annotation Constraints`.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
-To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) .
+Annotation can be Select, Drag, Resize and Rotate by using `AnnotationConstraints`.The Interaction can be controlled by Annotation and it's Parent (Node/Connector).
+To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) .
 
 {% tabs %}
 {% highlight C# %}
@@ -300,7 +300,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 
 ### Reference for Rotation
 
- * `Rotate Reference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [Rotate Reference](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+ * `RotationReference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight C# %}
@@ -315,7 +315,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-* [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the action, state of action and value changes.
+* [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the action, state of action and value changes.
 
 ## Multiple Annotations
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html).
+SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html).
 If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19.aspx), SfTreeGrid will not refresh the UI automatically.
 
 Below are the ways to bind the data source to SfTreeGrid.
@@ -27,7 +27,7 @@ SfTreeGrid control supports to bind any collection that implements the [IEnumera
 SfTreeGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
 
 1. In UWP, UI won’t get refreshed when you are changing the property value. This is limitation in UWP platform.
-2. SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) - `AllowDataShaping`.
+2. SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) - `AllowDataShaping`.
 
 ## Binding Complex properties
 
@@ -52,7 +52,7 @@ SfTreeGrid control provides support to bind complex property to its columns. 
 
 **Limitations when binding complex property:**
 
-SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html)  - `AllowDataShaping`.
+SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html)  - `AllowDataShaping`.
 
 ## Binding Indexer properties
 
@@ -77,11 +77,11 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() {MappingName="Marks[0]"});
 
 **Limitations when binding complex property:**
 
-SfTreeGrid doesn’t support  [LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) - `AllowDataShaping`.
+SfTreeGrid doesn’t support  [LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) - `AllowDataShaping`.
 
 ## AutoExpandMode
 
-By setting [SfTreeGrid.AutoExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AutoExpandMode.html) property, you can let the SfTreeGrid to expand the nodes while loading.
+By setting [SfTreeGrid.AutoExpandMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AutoExpandMode.html) property, you can let the SfTreeGrid to expand the nodes while loading.
 
 <table>
 <tr>
@@ -147,7 +147,7 @@ You can expand a node based on its level or row index. Here is a list of ways to
 </tr>
 <tr>
 <td>
-{{'[ExpandAllNodes()](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes().html)'| markdownify }}
+{{'[ExpandAllNodes()](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes().html)'| markdownify }}
 </td>
 <td>
 Expands all the nodes including its inner leaf nodes
@@ -155,7 +155,7 @@ Expands all the nodes including its inner leaf nodes
 </tr>
 <tr>
 <td>
-{{'[ExpandAllNodes(int level)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(Int32).html)'| markdownify }}
+{{'[ExpandAllNodes(int level)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(Int32).html)'| markdownify }}
 </td>
 <td>
 Expand all the nodes up to the specified level 
@@ -163,7 +163,7 @@ Expand all the nodes up to the specified level
 </tr>
 <tr>
 <td>
-{{'[ExpandAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(TreeNode).html)'| markdownify }}
+{{'[ExpandAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(TreeNode).html)'| markdownify }}
 </td>
 <td>
 Expand the specific node and its child nodes
@@ -171,7 +171,7 @@ Expand the specific node and its child nodes
 </tr>
 <tr>
 <td>
-{{'[ExpandNode(int rowIndex)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(Int32).html)'| markdownify }}
+{{'[ExpandNode(int rowIndex)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(Int32).html)'| markdownify }}
 </td>
 <td>
 Expand a node at the specific row Index
@@ -179,7 +179,7 @@ Expand a node at the specific row Index
 </tr>
 <tr>
 <td>
-{{'[ExpandNode(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(TreeNode).html)'| markdownify }}
+{{'[ExpandNode(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(TreeNode).html)'| markdownify }}
 </td>
 <td>
 Expands the specific node.
@@ -189,7 +189,7 @@ Expands the specific node.
 
 ### Expand all the nodes
 
-You can expand all the nodes programmatically at runtime by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes().html) method.
+You can expand all the nodes programmatically at runtime by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes().html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -199,7 +199,7 @@ treeGrid.ExpandAllNodes();
 
 ### Expand the nodes based on its level
 
-You can expand the nodes based on the level by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(Int32).html) method by passing level as argument.
+You can expand the nodes based on the level by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(Int32).html) method by passing level as argument.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ treeGrid.ExpandAllNodes(1);
 
 ### Expand the specific node
 
-You can expand the specific node by using [SfTreeGrid.ExpandNode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(TreeNode).html) method.
+You can expand the specific node by using [SfTreeGrid.ExpandNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(TreeNode).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -218,7 +218,7 @@ treeGrid.ExpandNode(node);
 {% endhighlight %}
 {% endtabs %}
 
-You can expand the node at specific index also by using [SfTreeGrid.ExpandNode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(Int32).html) method.
+You can expand the node at specific index also by using [SfTreeGrid.ExpandNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(Int32).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -228,7 +228,7 @@ treeGrid.ExpandNode(2);
 
 ### Expand the specific node based on business object
 
-You can expand the node corresponding to specific data object by resolving node and calling [SfTreeGrid.ExpandNode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(TreeNode).html) method.
+You can expand the node corresponding to specific data object by resolving node and calling [SfTreeGrid.ExpandNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandNode(TreeNode).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -240,7 +240,7 @@ treeGrid.ExpandNode(node);
 
 ### Expand all the nodes
 
-You can expand the specific node and all its child nodes by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(TreeNode).html) methods.
+You can expand the specific node and all its child nodes by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandAllNodes(TreeNode).html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -251,7 +251,7 @@ treeGrid.ExpandAllNodes(node);
 
 ### Cancel the node Expanding using NodeExpanding event
 
-You can cancel the node expanding through [SfTreeGrid.NodeExpanding](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeExpanding_EV.html) event.
+You can cancel the node expanding through [SfTreeGrid.NodeExpanding](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeExpanding_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -281,7 +281,7 @@ private void TreeGrid_NodeExpanding(object sender, NodeExpandingEventArgs e)
 
 ### NodeExpanded Event
 
-You can get the notification once a node is expanded from [TreeGrid.NodeExpanded](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeExpanded_EV.html) event and here you can get the expanded node and its child nodes.
+You can get the notification once a node is expanded from [TreeGrid.NodeExpanded](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeExpanded_EV.html) event and here you can get the expanded node and its child nodes.
 
 {% tabs %}
 {% highlight c# %}
@@ -308,7 +308,7 @@ You can collapse all the tree nodes or specific node and its child nodes. Here i
 </tr>
 <tr>
 <td>
-{{'[CollapseAllNodes()](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes().html)'| markdownify }}
+{{'[CollapseAllNodes()](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes().html)'| markdownify }}
 </td>
 <td>
 Collapse all the nodes in SfTreeGrid
@@ -316,7 +316,7 @@ Collapse all the nodes in SfTreeGrid
 </tr>
 <tr>
 <td>
-{{'[CollapseAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes(TreeNode).html)'| markdownify }}
+{{'[CollapseAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes(TreeNode).html)'| markdownify }}
 </td>
 <td>
 Collapse the specific node and its child nodes
@@ -324,7 +324,7 @@ Collapse the specific node and its child nodes
 </tr>
 <tr>
 <td>
-{{'[CollapseNode(int rowIndex)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(Int32).html)'| markdownify }}
+{{'[CollapseNode(int rowIndex)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(Int32).html)'| markdownify }}
 </td>
 <td>
 Collapse the node at specific row index
@@ -332,7 +332,7 @@ Collapse the node at specific row index
 </tr>
 <tr>
 <td>
-{{'[CollapseNode(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(TreeNode).html)'| markdownify }}
+{{'[CollapseNode(TreeNode treeNode)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(TreeNode).html)'| markdownify }}
 </td>
 <td>
 Collapse the specific node in SfTreeGrid
@@ -342,7 +342,7 @@ Collapse the specific node in SfTreeGrid
 
 ### Collapse all the nodes
 
-You can collapse all the nodes programmatically at runtime by using [SfTreeGrid.CollapseAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes().html) methods
+You can collapse all the nodes programmatically at runtime by using [SfTreeGrid.CollapseAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes().html) methods
 
 {% tabs %}
 {% highlight c# %}
@@ -352,7 +352,7 @@ treeGrid.CollapseAllNodes();
 
 ### Collapse the specific node
 
-You can collapse the specific node by using [SfTreeGrid.CollapseNode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(TreeNode).html) method.
+You can collapse the specific node by using [SfTreeGrid.CollapseNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(TreeNode).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -361,7 +361,7 @@ treeGrid.CollapseNode(node);
 {% endhighlight %}
 {% endtabs %}
 
-You can collapse the node at specific index also by using [SfTreeGrid.CollapseNode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(Int32).html) method.
+You can collapse the node at specific index also by using [SfTreeGrid.CollapseNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(Int32).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -371,7 +371,7 @@ treeGrid.CollapseNode(2);
 
 ### Collapse the specific node based on business object
 
-You can collapse the node corresponding to specific data object by resolving node and calling [SfTreeGrid.CollapseNode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(TreeNode).html) method.
+You can collapse the node corresponding to specific data object by resolving node and calling [SfTreeGrid.CollapseNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseNode(TreeNode).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -383,7 +383,7 @@ treeGrid.CollapseNode(node);
 
 ### Collapse all the nodes
 
-You can collapse the specific node and all its child nodes by using [SfTreeGrid.CollapseAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes(TreeNode).html) methods.
+You can collapse the specific node and all its child nodes by using [SfTreeGrid.CollapseAllNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CollapseAllNodes(TreeNode).html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -394,7 +394,7 @@ treeGrid.CollapseAllNodes(node);
 
 ### Cancel the node collapsing using NodeCollapsing Event
 
-You can cancel the node collapsing operation through [TreeGrid.NodeCollapsing](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeCollapsing_EV.html) event.
+You can cancel the node collapsing operation through [TreeGrid.NodeCollapsing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeCollapsing_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -424,7 +424,7 @@ private void TreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 
 ### NodeCollapsed Event
 
-You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeCollapsed_EV.html) event and here you can get the collapsed node.
+You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeCollapsed_EV.html) event and here you can get the collapsed node.
 
 {% tabs %}
 {% highlight c# %}
@@ -439,7 +439,7 @@ private void TreeGrid_NodeCollapsed(object sender, NodeCollapsedEventArgs e)
 
 ## LiveNodeUpdateMode
 
-SfTreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. SfTreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
+SfTreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. SfTreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
 
 {% tabs %}
 {% highlight xaml %}
@@ -461,7 +461,7 @@ treeGrid.LiveNodeUpdateMode = LiveNodeUpdateMode.AllowDataShaping;
 
 ### ItemsSourceChanged
 
-[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSourceChanged_EV.html) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property.
+[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSourceChanged_EV.html) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property.
 
 This event receives two arguments namely sender that handles SfTreeGrid and `GridItemsSourceChangedEventArgs` as objects.
 The `GridItemsSourceChangedEventArgs` object contains the following properties:
@@ -471,15 +471,15 @@ The `GridItemsSourceChangedEventArgs` object contains the following properties
 
 ## View
 
-SfTreeGrid has the [View](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~View.html) property of type [TreeGridView](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html). `View` is responsible for maintaining and manipulating the nodes and other advanced operations like Sorting. When you bind Collection to `ItemsSource` property of SfTreeGrid or wire `RequestTreeItems` event, then `View` will be created and maintains the operations on nodes.
+SfTreeGrid has the [View](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~View.html) property of type [TreeGridView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html). `View` is responsible for maintaining and manipulating the nodes and other advanced operations like Sorting. When you bind Collection to `ItemsSource` property of SfTreeGrid or wire `RequestTreeItems` event, then `View` will be created and maintains the operations on nodes.
 
 SfTreeGrid creates different types of views derived from TreeGridView based on data population methods.
 
-[TreeGridSelfRelationalView](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridSelfRelationalView.html) -  While populating data using self-relational binding
+[TreeGridSelfRelationalView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridSelfRelationalView.html) -  While populating data using self-relational binding
 
-[TreeGridNestedView](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridNestedView.html)             -  While populating data using nested collection
+[TreeGridNestedView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridNestedView.html)             -  While populating data using nested collection
 
-[TreeGridUnboundView](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridUnboundView.html)         -  While populating data with `RequestTreeItems` event
+[TreeGridUnboundView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridUnboundView.html)         -  While populating data with `RequestTreeItems` event
 
 ### Events
 
@@ -521,7 +521,7 @@ The following are the methods that are associated with `View` which can be used 
 
 **DeferRefresh**
 
-Enter the defer cycle so that you can perform all data operations in view and update once. You can refresh the nodes or completely recreates the nodes by using [TreeViewRefreshMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeViewRefreshMode.html) parameter.
+Enter the defer cycle so that you can perform all data operations in view and update once. You can refresh the nodes or completely recreates the nodes by using [TreeViewRefreshMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeViewRefreshMode.html) parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -535,7 +535,7 @@ using (treeGrid.View.DeferRefresh(TreeViewRefreshMode.NodeRefresh))
 
 **BeginInit and EndInit**
 
-When &lt;code&gt;BeginInit&lt;/code&gt; method is called, it suspends all the updates until &lt;code&gt;EndInit&lt;/code&gt; method is called. You can perform all the update with in these methods and update the view at once. You can refresh the nodes or completely recreates the nodes by using [TreeViewRefreshMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeViewRefreshMode.html) parameter.
+When &lt;code&gt;BeginInit&lt;/code&gt; method is called, it suspends all the updates until &lt;code&gt;EndInit&lt;/code&gt; method is called. You can perform all the update with in these methods and update the view at once. You can refresh the nodes or completely recreates the nodes by using [TreeViewRefreshMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeViewRefreshMode.html) parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -551,7 +551,7 @@ N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `Recur
 ## Helpers
 
 SfTreeGrid has `TreeGridIndexResolver` static class present in `Syncfusion.UI.Xaml.TreeGrid` namespace that has some extension methods used to resolve from row or column index to node or visible column index and vice versa. 
-For example, You can get a node from its row index using [GetNodeAtRowIndex](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver~GetNodeAtRowIndex.html) method.
+For example, You can get a node from its row index using [GetNodeAtRowIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver~GetNodeAtRowIndex.html) method.
 
 {% tabs %}
 {% highlight c# %}
