@@ -52,7 +52,7 @@ Syncfusion.SfGridConverter.WPF
 </tr>
 </table>
 
-##SfDataPager
+## SfDataPager
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ Syncfusion.SfGrid.WPF
 </tr>
 </table>
 
-##SfTreeGrid
+## SfTreeGrid
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ Syncfusion.SfGridConverter.WPF
 </tr>
 </table>
 
-##Grid Control
+## Grid Control
 
 <table>
 <tr>
