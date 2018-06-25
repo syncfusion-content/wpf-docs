@@ -9,510 +9,2048 @@ documentation: ug
 
 # Control Dependencies
 
-The following table illustrates the Control's assembly and its dependencies.
+This page lists the assemblies required for each control to be referred
+
+## SfDataGrid
 
 <table>
 <tr>
-<th>
-Controls</th><th>
-Assembly</th><th>
-Dependencies</th></tr>
-<tr>
-<td>
-SfDataGrid </td><td>
-Syncfusion.SfGrid.WPF</td><td>
-Syncfusion.Data.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-SfDataPager</td><td>
-Syncfusion.SfGrid.WPF</td><td>
-Syncfusion.Data.WPF</td></tr>
-<tr>
-<td>
-SfGridTree</td><td>
-Syncfusion.Grid.WPF</td><td>
-Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base</td></tr>
-<tr>
-<td>
-Spreadsheet</td><td>
-Syncfusion.Spreadsheet.WPF</td><td>
-Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF<br/><br/>Syncfusion.XlsIO.Base</td></tr>
-<tr>
-<td>
-SfRichTextBoxAdv</td><td>
-Syncfusion.SfRichTextBoxAdv.WPF</td><td>
-Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.Shared.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
-<tr>
-<td>
-SfRichTextRibbon</td><td>
-Syncfusion.SfRichTextRibbon.WPF</td><td>
-Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.SfRichTextBoxAdv.WPF<br/>Syncfusion.Shared.WPF<br/>Syncfusion.Tools.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
-<tr>
-<td>
-PropertyGrid</td><td>
-Syncfusion.PropertyGrid.WPF</td><td>
-Syncfusion.Tools.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-Diagram</td><td>
-Syncfusion.Diagram.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-Gantt</td><td>
-Syncfusion.Gantt.WPF</td><td>
-Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.ProjIO.Base</td></tr>
-<tr>
-<td>
-SfBarcode</td><td>
-Syncfusion.SfBarcode.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfBulletGraph</td><td>
-Syncfusion.SfBulletGraph.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfChart</td><td>
-Syncfusion.SfChart.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfGauge</td><td>
-Syncfusion.SfGauge.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfMaps</td><td>
-Syncfusion.SfMaps.WPF</td><td>
-Syncfusion.RichTextBoxAdv.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-SfSchedule </td><td>
-Syncfusion.SfSchedule.WPF</td><td>
-Syncfusion.SfRadialMenu.WPF<br/><br/>Syncfusion.SfShared.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-SfAreaSparkline</td><td>
-Syncfusion.SfChart.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfLineSparkline</td><td>
-Syncfusion.SfChart.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfColumnSparkline</td><td>
-Syncfusion.SfChart.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfWinLossSparkline</td><td>
-Syncfusion.SfChart.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfTreeMap</td><td>
-Syncfusion.SfTreeMap.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-Carousel</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-CardView</td><td>
-Syncfusion.Tools.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-DockingManager</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-DocumentContainer</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-Ribbon</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-SfChromelessWindow</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-TabSplitter</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-TileView</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-AutoComplete</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-ButtonAdv</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-CalendarEdit</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-CheckListBox</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-ColorPicker</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-ColorPickerPalette</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-ComboBoxAdv</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-DateTimeEdit</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-DoubleTextBox</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-DropDownButtonAdv</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-RichTextBoxAdv</td><td>
-Syncfusion.RichTextBoxAdv.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-RichTextDocIOParser</td><td>
-Syncfusion.RichTextDocIOParser.WPF</td><td>
-Syncfusion.Compression.Base<br/>Syncfusion.OfficeChart.Base<br/>Syncfusion.RichTextBoxAdv.WPF<br/>Syncfusion.Shared.WPF<br/><br/>For 3.5 and 4.0 frameworks:<br/>Syncfusion.DocIO.ClientProfile<br/><br/>For 4.5 and higher frameworks:<br/>Syncfusion.DocIO.Base<br/></td></tr>
-<tr>
-<td>
-RichTextRibbon</td><td>
-Syncfusion.RichTextRibbon.WPF</td><td>
-Syncfusion.RichTextBoxAdv.WPF<br/>Syncfusion.Shared.WPF<br/>Syncfusion.Tools.WPF<br/></td></tr>
-<tr>
-<td>
-SfCalculator</td><td>
-Syncfusion.SfInput.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfSpellChecker</td><td>
-Syncfusion.SfSpellChecker.WPF</td><td>
-Syncfusion.SpellChecker.Base</td></tr>
-<tr>
-<td>
-SfDomainUpDown</td><td>
-Syncfusion.SfInput.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfMaskedEdit</td><td>
-Syncfusion.SfInput.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfRadialSlider</td><td>
-Syncfusion.SfRadialMenu.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfRangeSlider</td><td>
-Syncfusion.SfInput.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfRating</td><td>
-Syncfusion.SfInput.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfTextboxExt</td><td>
-Syncfusion.SfInput.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SplitButton</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-TimespanEdit</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-GroupBar</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-HierarchyNavigator</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-MenuAdv</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfColorPalette</td><td>
-Syncfusion.SfShared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfDateTimeRangeNavigator</td><td>
-Syncfusion.SfChart.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfTreeNavigator</td><td>
-Syncfusion.SfTreeNavigator.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-TabControlExt</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-TabNavigation</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-TaskBar</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-ToolBarAdv</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-TreeViewAdv</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-NotifyIcon</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-SfBusyIndicator</td><td>
-Syncfusion.SfBusyIndicator.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfHubTile</td><td>
-Syncfusion.SfShared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SfRadialMenu</td><td>
-Syncfusion.SfRadialMenu.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfColorPalette</td><td>
-Syncfusion.SfColorPalette.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfBusyIndicator</td><td>
-Syncfusion.SfBusyIndicator.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-SfHubTile</td><td>
-Syncfusion.SfHubTile.WPF</td><td>
-Syncfusion.SfShared.WPF</td></tr>
-<tr>
-<td>
-Calculate</td><td>
-Calculate.WPF</td><td>
-Syncfusion.Calculate.Base</td></tr>
-<tr>
-<td>
-SkinManager</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-SpellChecker</td><td>
-Syncfusion.Shared.WPF</td><td>
-</td></tr>
-<tr>
-<td>
-Wizard</td><td>
-Syncfusion.Tools.WPF</td><td>
-Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-DocIO</td><td>
-Syncfusion.DocIO.Base</td><td>
-Syncfusion.Compression.Base<br/><br/>Syncfusion.DocToPdfConverter.Base<br/><br/>Syncfusion.Pdf.Base</td></tr>
-<tr>
-<td>
-PDF</td><td>
-Syncfusion.Pdf.Base</td><td>
-Syncfusion.Compression.Base<br/><br/>Syncfusion.HtmlConverter.Base</td></tr>
-<tr>
-<td>
-PDFViewer</td><td>
-Syncfusion.PdfViewer.WPF</td><td>
-Syncfusion.Compression.Base<br/><br/>Syncfusion.Pdf.Base<br/><br/>Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-XlsIO</td><td>
-Syncfusion.XlsIO.Base</td><td>
-Syncfusion.Compression.Base<br/><br/>Syncfusion.ExcelToPdfConverter.Base<br/><br/>Syncfusion.ExcelChartToImageConverter.Base<br/><br/>Syncfusion.Pdf.Base<br/><br/>Syncfusion.SfChart.WPF<br/><br/>Syncfusion.Shared.WPF</td></tr>
-<tr>
-<td>
-Presentation</td><td>
-Syncfusion.Presentation.Base</td><td>
-Syncfusion.Compression.Base<br/><br/>Syncfusion.OfficeChart.Base<br/><br/>Syncfusion.OfficeChartToImageConverter.Base<br/><br/>Syncfusion.SfChart.WPF<br/><br/>Syncfusion.PresentationToPdfConverter.Base<br/><br/>Syncfusion.Pdf.Base</td></tr>
-<tr>
-<td>
-ReportDesigner</td><td>
-Syncfusion.ReportDesigner.WPF</td><td>
-Syncfusion.Chart.WPF<br/><br/>Syncfusion.Gauge.WPF<br/><br/>Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.SfMaps.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF<br/><br/>Syncfusion.PropertyGrid.WPF<br/><br/>Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.Base<br/><br/>Syncfusion.Pdf.Base<br/><br/>Syncfusion.XlsIO.Base<br/><br/>Syncfusion.ReportControls.WPF<br/><br/>Syncfusion.ReportWriter.Base<br/><br/>Syncfusion.ReportViewer.WPF</td></tr>
-<tr>
-<td>
-ReportWriter</td><td>
-Syncfusion.ReportWriter.Base</td><td>
-Syncfusion.Chart.WPF<br/><br/>Syncfusion.Gauge.WPF<br/><br/>Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.SfMaps.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.Base<br/><br/>Syncfusion.Pdf.Base<br/><br/>Syncfusion.XlsIO.Base<br/><br/>Syncfusion.ReportControls.WPF</td></tr>
-<tr>
-<td>
-ReportViewer</td><td>
-Syncfusion.ReportViewer.WPF</td><td>
-Syncfusion.Chart.WPF<br/><br/>Syncfusion.Gauge.WPF<br/><br/>Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.SfMaps.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Compression.Base<br/><br/>Syncfusion.DocIO.Base<br/><br/>Syncfusion.Pdf.Base<br/><br/>Syncfusion.XlsIO.Base<br/><br/>Syncfusion.ReportControls.WPF<br/><br/>Syncfusion.ReportWriter.Base</td></tr>
-<tr>
-<td>
-OlapChart</td><td>
-Syncfusion.OlapChart.WPF</td><td>
-Syncfusion.Chart.WPF<br/><br/>Syncfusion.Olap.Base<br/><br/>Syncfusion.OlapShared.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF<br/><br/>Syncfusion.Linq.Base</td></tr>
-<tr>
-<td>
-OlapClient</td><td>
-Syncfusion.OlapClient.WPF</td><td>
-Syncfusion.Chart.WPF<br/><br/>Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.Olap.Base<br/><br/>Syncfusion.OlapChart.WPF<br/><br/>Syncfusion.OlapChartConverter.WPF<br/><br/>Syncfusion.OlapGrid.WPF<br/><br/>Syncfusion.OlapGridCommon.WPF<br/><br/>Syncfusion.OlapGridConverter.WPF<br/><br/>Syncfusion.OlapShared.WPF<br/><br/>Syncfusion.OlapTools.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF</td></tr>
-<tr>
-<td>
-OlapGauge</td><td>
-Syncfusion.OlapGauge.WPF</td><td>
-Syncfusion.Gauge.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Olap.Base<br/><br/>Syncfusion.OlapShared.WPF</td></tr>
-<tr>
-<td>
-OlapGrid</td><td>
-Syncfusion.OlapGrid.WPF</td><td>
-Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.Olap.Base<br/><br/>Syncfusion.OlapGridCommon.WPF<br/><br/>Syncfusion.OlapShared.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.Tools.WPF<br/><br/>Syncfusion.Linq.Base</td></tr>
-<tr>
-<td>
-PivotGrid</td><td>
-Syncfusion.PivotAnalysis.WPF</td><td>
-Syncfusion.Grid.WPF<br/><br/>Syncfusion.GridCommon.WPF<br/><br/>Syncfusion.Shared.WPF<br/><br/>Syncfusion.PivotAnalysis.Base<br/><br/>Syncfusion.Linq.Base</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.WPF </br>
+Syncfusion.Data.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.SfGrid.WPF
+</td>
+</tr>
 </table>
 
+### Exporting DataGrid to Excel, PDF and CSV
 
-## SfSkinManager Dependencies
-
-The following table illustrates the SfSkinManager theme's assembly and dependencies:
+For exporting DataGrid to excel, pdf or csv, the following references need to be added in your application.
 
 <table>
 <tr>
-<td>
-Themes</td><td>
-Assembly</td><td>
-Dependencies</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
 <tr>
-<td>
-Blend</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Blend.WPF</td></tr>
+<td> 
+Syncfusion.SfGridConverter.WPF </br>
+Syncfusion.XlsIO.Base </br>
+Syncfusion.Pdf.Base </br>
+Syncfusion.Compression.Base 
+</td>
+<td> 
+Syncfusion.SfGridConverter.WPF
+</td>
+</tr>
+</table>
+
+## SfDataPager
+
+<table>
 <tr>
-<td>
-Metro</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Metro.WPF</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
 <tr>
-<td>
-Office2010Black</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Office2010Black.WPF</td></tr>
+<td> 
+Syncfusion.SfGrid.WPF
+</br>
+Syncfusion.Data.WPF
+</br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfGrid.WPF
+</td>
+</tr>
+</table>
+
+## SfTreeGrid
+
+<table>
 <tr>
-<td>
-Office2010Blue</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Office2010Blue.WPF</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
 <tr>
-<td>
-Office2010Silver</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Office2010Silver.WPF</td></tr>
+<td> 
+Syncfusion.SfGrid.WPF </br>
+Syncfusion.Data.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.SfGrid.WPF
+</td>
+</tr>
+</table>
+
+### Exporting TreeGrid to Excel, PDF and CSV
+
+For exporting TreeGrid to excel, pdf or csv, the following references need to be added in your application.
+
+<table>
 <tr>
-<td>
-Office2013DarkGray</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Office2013DarkGray.WPF</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
 <tr>
-<td>
-Office2013LightGray</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Office2013LightGray.WPF</td></tr>
+<td> 
+Syncfusion.SfGridConverter.WPF </br>
+Syncfusion.XlsIO.Base </br>
+Syncfusion.Pdf.Base </br>
+Syncfusion.Compression.Base 
+</td>
+<td> 
+Syncfusion.SfGridConverter.WPF
+</td>
+</tr>
+</table>
+
+## Grid Control
+
+<table>
 <tr>
-<td>
-Office2013White</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Office2013White.WPF</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
 <tr>
-<td>
-VisualStudio2013</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.VisualStudio2013.WPF</td></tr>
+<td> 
+Syncfusion.Core </br>
+Syncfusion.Grid.WPF </br>
+Syncfusion.GridCommon.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Grid.WPF
+</td>
+</tr>
+</table>
+
+## SfSpreadsheet
+
+<table>
 <tr>
-<td>
-Lime</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Lime.WPF</td></tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
 <tr>
-<td>
-Saffron</td><td>
-Syncfusion.SfSkinManager.WPF</td><td>
-Syncfusion.Themes.Saffron.WPF</td></tr>
+<td> 
+Syncfusion.SfCellGrid.WPF </br>
+Syncfusion.SfGridCommon.WPF </br>
+Syncfusion.SfSpreadsheet.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF </br>
+Syncfusion.XlsIO.Base 
+</td>
+<td> 
+Syncfusion.SfSpreadsheet.WPF
+</td>
+</tr>
+</table>
+
+### Exporting SfSpreadsheet to Excel, PDF
+
+For exporting SfSpreadsheet to excel or pdf, the following references need to be added in your application.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSpreadsheetHelper.WPF </br>
+Syncfusion.ExcelChartToImageConverter.WPF </br>
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfSpreadsheet.WPF
+</td>
+</tr>
+</table> 
+
+### Include chart in SfSpreadsheet
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.ExcelToPDFConverter.Base </br>
+Syncfusion.Pdf.Base
+</td>
+<td> 
+Syncfusion.SfSpreadsheet.WPF
+</td>
+</tr>
+</table> 
+
+## Calculate
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Calculate.Base
+</td>
+<td> 
+Syncfusion.Calculate.Base
+</td>
+</tr>
+</table>
+
+## SfRichTextBoxAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRichTextBoxAdv.WPF </br>
+Syncfusion.Compression.Base </br>
+Syncfusion.OfficeChart.Base </br>
+Syncfusion.Shared.WPF 
+</br>
+For 3.5 and 4.0 frameworks: </br>
+Syncfusion.DocIO.ClientProfile </br>
+For 4.5 and higher frameworks: </br>
+Syncfusion.DocIO.Base 
+</td>
+<td> 
+Syncfusion.SfRichTextBoxAdv.WPF
+</td>
+</tr>
+</table>
+
+## SfRichTextRibbon
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRichTextRibbon.WPF </br>
+Syncfusion.Compression.Base </br>
+Syncfusion.OfficeChart.Base </br>
+Syncfusion.SfRichTextBoxAdv.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF 
+</br>
+For 3.5 and 4.0 frameworks: </br>
+Syncfusion.DocIO.ClientProfile </br>
+For 4.5 and higher frameworks: </br>
+Syncfusion.DocIO.Base 
+</td>
+<td> 
+Syncfusion.SfRichTextRibbon.WPF
+</td>
+</tr>
+</table>
+
+## PropertyGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.PropertyGrid.WPF </br>
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.PropertyGrid.WPF
+</td>
+</tr>
+</table>
+
+## SfDiagram
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfDiagram.WPF
+</td>
+<td> 
+Syncfusion.SfDiagram.WPF
+</td>
+</tr>
+</table>
+
+### Printing and Print Preview
+
+For printing the Diagram with new enhanced print preview,the below assembly need to be added in your application.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## SfHeatMap
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHeatMap.WPF
+</td>
+<td> 
+Syncfusion.SfHeatMap.WPF
+</td>
+</tr>
+</table>
+
+## Gantt
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Gantt.WPF </br>
+Syncfusion.Grid.WPF </br>
+Syncfusion.GridCommon.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.ProjIO.Base
+</td>
+<td> 
+Syncfusion.Gantt.WPF
+</td>
+</tr>
+</table>
+
+## SfKanban
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfKanban.WPF
+</td>
+<td> 
+Syncfusion.SfKanban.WPF
+</td>
+</tr>
+</table>
+
+## SfBarcode
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfBarcode.WPF
+</td>
+<td> 
+Syncfusion.SfBarcode.WPF
+</td>
+</tr>
+</table>
+
+## SfBulletGraph
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfBulletGraph.WPF
+</td>
+<td> 
+Syncfusion.SfBulletGraph.WPF
+</td>
+</tr>
+</table>
+
+## SfSmithChart
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSmithChart.WPF
+</td>
+<td> 
+Syncfusion.SfSmithChart.WPF
+</td>
+</tr>
+</table>
+
+## SfSunburstChart
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSunburstChart.WPF
+</td>
+<td> 
+Syncfusion.SfSunburstChart.WPF
+</td>
+</tr>
+</table>
+
+## SfChart
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+</tr>
+</table>
+
+## SfGauge
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGauge.WPF
+</td>
+<td> 
+Syncfusion.SfGauge.WPF
+</td>
+</tr>
+</table>
+
+## SfMaps
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfMaps.WPF
+</td>
+<td> 
+Syncfusion.SfMaps.WPF
+</td>
+</tr>
+</table>
+
+## SfSchedule
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSchedule.WPF </br>
+Syncfusion.SfRadialMenu.WPF </br>
+Syncfusion.SfShared.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfSchedule.WPF
+</td>
+</tr>
+</table>
+
+## SfAreaSparkline
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+</tr>
+</table>
+
+## SfLineSparkline
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+</tr>
+</table>
+
+## SfColumnSparkline
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+</tr>
+</table>
+
+## SfWinLossSparkline
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+</tr>
+</table>
+
+## SfTreeMap
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTreeMap.WPF
+</td>
+<td> 
+Syncfusion.SfTreeMap.WPF
+</td>
+</tr>
+</table>
+
+## Clock
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## Carousel
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## CardView
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## DockingManager
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## DocumentContainer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## Edit Control
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Edit.WPF </br>
+Syncfusion.GridCommon.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF 
+</td>
+<td> 
+Syncfusion.Edit.WPF
+</td>
+</tr>
+</table>
+
+## SfGridSplitter
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF 
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfAccordion
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfAccordion.WPF
+</td>
+<td> 
+Syncfusion.SfAccordion.WPF
+</td>
+</tr>
+</table>
+
+## SfDatePicker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF 
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfTimePicker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF 
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## Ribbon
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## SfChromelessWindow
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChromelessWindow.WPF </br>
+Syncfusion.Shared.WPF </br>
+</td>
+<td> 
+Syncfusion.SfChromelessWindow.WPF
+</td>
+</tr>
+</table>
+
+## ChromelessWindow
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## TabSplitter
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## TileView
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## AutoComplete
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## ButtonAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## CalendarEdit
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## CheckListBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## ColorPicker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## ColorPickerPalette
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## ComboBoxAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## CurrencyTextBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## DoubleTextBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## IntegerTextBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## MaskedTextBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## PercentTextBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## PinnableListBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## DateTimeEdit
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## DropDownButtonAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## UpDown 
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## RichTextBoxAdv 
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.RichTextBoxAdv.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## RichTextDocIOParser
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.RichTextDocIOParser.WPF </br>
+Syncfusion.Compression.Base </br>
+Syncfusion.OfficeChart.Base </br>
+Syncfusion.RichTextBoxAdv.WPF </br>
+Syncfusion.Shared.WPF 
+</br>
+For 3.5 and 4.0 frameworks: </br>
+Syncfusion.DocIO.ClientProfile </br>
+</br>
+For 4.5 and higher frameworks: </br>
+Syncfusion.DocIO.Base 
+</td>
+<td> 
+Syncfusion.RichTextDocIOParser.WPF
+</td>
+</tr>
+</table>
+
+## RichTextRibbon
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.RichTextRibbon.WPF </br>
+Syncfusion.RichTextBoxAdv.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF 
+</td>
+<td> 
+Syncfusion.RichTextRibbon.WPF
+</td>
+</tr>
+</table>
+
+## SfCalculator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF 
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfSpellChecker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SpellChecker.Base </br>
+Syncfusion.SfSpellChecker.WPF </br>
+</td>
+<td> 
+Syncfusion.SfSpellChecker.WPF
+</td>
+</tr>
+</table>
+
+## SfDomainUpDown
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF </br>
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfMaskedEdit
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF </br>
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfRadialSlider
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRadialMenu.WPF </br>
+Syncfusion.SfShared.WPF </br>
+</td>
+<td> 
+Syncfusion.SfRadialMenu.WPF
+</td>
+</tr>
+</table>
+
+## SfRangeSlider
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF </br>
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfRating
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF </br>
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfTextboxExt
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.WPF </br>
+Syncfusion.SfShared.WPF
+</td>
+<td> 
+Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SplitButton
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## TimespanEdit
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## GroupBar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## HierarchyNavigator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## MenuAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## SfColorPalette
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfColorPalette.WPF </br>
+Syncfusion.SfShared.WPF
+</td>
+<td> 
+Syncfusion.SfColorPalette.WPF
+</td>
+</tr>
+</table>
+
+## SfDateTimeRangeNavigator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+<td> 
+Syncfusion.SfChart.WPF
+</td>
+</tr>
+</table>
+
+## SfTreeNavigator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTreeNavigator.WPF </br>
+Syncfusion.SfShared.WPF
+</td>
+<td> 
+Syncfusion.SfTreeNavigator.WPF
+</td>
+</tr>
+</table>
+
+## TabControlExt
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## TabNavigation
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## TaskBar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## ToolBarAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## TreeViewAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## NotifyIcon
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
+## SfBusyIndicator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfBusyIndicator.WPF </br>
+Syncfusion.SfShared.WPF
+</td>
+<td> 
+Syncfusion.SfBusyIndicator.WPF
+</td>
+</tr>
+</table>
+
+## SfHubTile
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHubTile.WPF </br>
+Syncfusion.SfShared.WPF
+</td>
+<td> 
+Syncfusion.SfHubTile.WPF
+</td>
+</tr>
+</table>
+
+## SfRadialMenu
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRadialMenu.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfRadialMenu.WPF
+</td>
+</tr>
+</table>
+
+## SfNavigationDrawer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfNavigationDrawer.WPF
+</td>
+<td> 
+Syncfusion.SfNavigationDrawer.WPF
+</td>
+</tr>
+</table>
+
+## SfPulsingTile
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHubTile.WPF </br>
+Syncfusion.SfShared.WPF
+</td>
+<td> 
+Syncfusion.SfHubTile.WPF
+</td>
+</tr>
+</table>
+
+## Calculate
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Calculate.Base </br>
+Syncfusion.Calculate.WPF
+</td>
+<td> 
+Syncfusion.Calculate.WPF
+</td>
+</tr>
+</table>
+
+## SkinManager
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## BusyIndicator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## SpellChecker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## Wizard
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## PDFViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Compression.Base </br>
+Syncfusion.Pdf.Base </br>
+Syncfusion.PdfViewer.WPF </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.PdfViewer.WPF
+</td>
+</tr>
+</table>
+
+## ReportDesigner
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Chart.Wpf </br>
+Syncfusion.Gauge.Wpf </br>
+Syncfusion.Grid.Wpf </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.PropertyGrid.Wpf </br>
+Syncfusion.ReportControls.Wpf </br>
+Syncfusion.ReportDesigner.Wpf </br>
+Syncfusion.ReportViewer.Wpf </br>
+Syncfusion.SfMaps.Wpf </br>
+Syncfusion.SfSkinManager.Wpf </br>
+Syncfusion.Shared.Wpf </br>
+Syncfusion.Tools.Wpf
+</td>
+<td> 
+Syncfusion.ReportDesigner.WPF
+</td>
+</tr>
+</table>
+
+## ReportWriter
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Chart.Wpf </br>
+Syncfusion.Compression.Base </br>
+Syncfusion.DocIO.Base </br>
+Syncfusion.Gauge.Wpf </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.Pdf.Base </br>
+Syncfusion.ReportControls.Wpf </br>
+Syncfusion.ReportWriter.Base </br>
+Syncfusion.SfMaps.Wpf </br>
+Syncfusion.Shared.Wpf </br>
+Syncfusion.XlsIO.Base 
+</td>
+<td> 
+
+</td>
+</tr>
+</table>
+
+## ReportViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Chart.Wpf </br>
+Syncfusion.Compression.Base </br>
+Syncfusion.DocIO.Base </br>
+Syncfusion.Gauge.Wpf </br>
+Syncfusion.Grid.Wpf </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.Pdf.Base </br>
+Syncfusion.PropertyGrid.Wpf </br>
+Syncfusion.ReportControls.Wpf </br>
+Syncfusion.ReportViewer.Wpf </br>
+Syncfusion.SfMaps.Wpf </br>
+Syncfusion.SfSkinManager.Wpf </br>
+Syncfusion.Shared.Wpf </br>
+Syncfusion.Tools.Wpf </br>
+Syncfusion.XlsIO.Base </br>
+</td>
+<td> 
+Syncfusion.ReportViewer.WPF
+</td>
+</tr>
+</table>
+
+## OlapChart
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Chart.WPF </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.Olap.Base </br>
+Syncfusion.Olap.Base </br>
+Syncfusion.OlapShared.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF </br>
+</td>
+<td> 
+Syncfusion.OlapChart.WPF
+</td>
+</tr>
+</table>
+
+### Exporting OLAP Chart to PDF, Word and Image
+
+For exporting OLAP chart contents to PDF, word and image, the following reference needs to be added in addition to the above assemblies.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.OlapChartConverter.WPF
+</td>
+<td> 
+Syncfusion.OlapChartConverter.WPF
+</td>
+</tr>
+</table>
+
+## OlapClient
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Chart.WPF </br>
+Syncfusion.Grid.WPF </br>
+Syncfusion.GridCommon.WPF </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.Olap.Base </br>
+Syncfusion.OlapChart.WPF </br>
+Syncfusion.OlapChartConverter.WPF </br>
+Syncfusion.OlapGrid.WPF </br>
+Syncfusion.OlapGridCommon.WPF </br>
+Syncfusion.OlapGridConverter.WPF </br>
+Syncfusion.OlapShared.WPF </br>
+Syncfusion.OlapTools.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF.Resources
+</td>
+<td> 
+Syncfusion.OlapClient.WPF
+</td>
+</tr>
+</table>
+
+## OlapGauge
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Gauge.WPF </br>
+Syncfusion.Olap.Base </br>
+Syncfusion.OlapShared.WPF </br>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.OlapGauge.WPF
+</td>
+</tr>
+</table>
+
+## OlapGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Grid.WPF </br>
+Syncfusion.GridCommon.WPF </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.Olap.Base </br>
+Syncfusion.OlapGridCommon.WPF </br>
+Syncfusion.OlapShared.WPF </br>
+Syncfusion.Shared.WPF </br>
+Syncfusion.Tools.WPF
+</td>
+<td> 
+Syncfusion.OlapGrid.WPF
+</td>
+</tr>
+</table>
+
+### Exporting OLAP Grid to Excel, Word, PDF and CSV
+
+For exporting OLAP grid contents to excel, word, PDF and CSV, the following reference needs to be added in addition to the above assemblies.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.OlapGridConverter.WPF
+</td>
+<td> 
+Syncfusion.OlapGridConverter.WPF
+</td>
+</tr>
+</table>
+
+## PivotGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Grid.WPF </br>
+Syncfusion.GridCommon.WPF </br>
+Syncfusion.Linq.Base </br>
+Syncfusion.PivotAnalysis.Base </br>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.PivotAnalysis.WPF
+</td>
+</tr>
+</table>
+
+### Exporting Pivot Grid to Excel, Word, PDF and CSV
+
+For exporting pivot grid contents to excel, word, PDF and CSV, the following references need to be added in addition to the above assemblies.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.PivotGridConverter.WPF </br>
+Syncfusion.XlsIO.Base
+</td>
+<td> 
+Syncfusion.PivotGridConverter.WPF
+</td>
+</tr>
 </table>
