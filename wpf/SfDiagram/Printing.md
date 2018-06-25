@@ -16,7 +16,7 @@ SfDiagram provides support to print the diagram with help of [PrintingService](h
  * QuickPrint - It directly prints from preview using default printer.
  * Print - It shows an preview to select printer and then printing occurs.
  
- For Sample please refer to,[Printing](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/printing-698055447).
+ For Sample please refer to,[Printing](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/printing-568492764).
 
 ![](Printing_images/printing_1.png)
 
