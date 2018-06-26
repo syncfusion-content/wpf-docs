@@ -750,28 +750,17 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
 
 ## Interaction
 
- Diagram provides the support to drag the port interactively.
+ Diagram provides the support to drag the port interactively using NodePort, ConnectorPort and DockPort.
  
- #### Port Dragging
+#### Port Dragging
  
  ![](Port_images/Interaction.gif)
 
-#### Node Port
+* NodePort - Port Dragging occurs within the limit of node. `PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
  
- Port Dragging occurs within the limit of node.
+* ConnectorPort - Port Dragging occurs within the limit of Connector. `PortChangedEvent` will notify the `Length` changes with their `OldValue` and `NewValue`.
  
-`PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
-
-#### Connector Port
-
- Port Dragging occurs within the limit of Connector.
- 
-`PortChangedEvent` will notify the `Length` changes with their `OldValue` and `NewValue`.
-
-#### Dock Port
- Port Dragging occurs within the limit of node.
- 
-`PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
+* DockPort - Port Dragging occurs within the limit of node. `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
 
  To explore about arguments, please refer to [PortChangedEvent](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 
