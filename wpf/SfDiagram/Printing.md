@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Printing
 
-SfDiagram provides support to print the diagram with help of [PrintingService](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService.html "PrintingService") property.
+SfDiagram provides support to print the diagram with help of [PrintingService](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService.html "PrintingService") property.
 
 ## Print Preview
  `Print` method of `PrintingService` will show preview of the SfDiagram before printing. Print Preview window has Print and QuickPrint buttons which needs to be clicked to print the SfDiagram.

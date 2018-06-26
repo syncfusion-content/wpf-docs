@@ -663,7 +663,7 @@ The visibility of ports depends on the properties of `MouseOver`, `Default`, `Co
 | ValidConnection | Port is Visible on the mousehover over the DiagramElement. |
 | Visible | Port is visible. |
 
-To Know more about PortVisibility, please refer to [PortVisibility](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortVisibility.html).
+To Know more about PortVisibility, please refer to [PortVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortVisibility.html).
 
 
 ## Appearance
@@ -762,7 +762,7 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
  
 * DockPort - Port Dragging occurs within the limit of node. `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
 
- To explore about arguments, please refer to [PortChangedEvent](https://help.syncfusion.com/cr/cref_files/wpf/sfdiagram/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
+ To explore about arguments, please refer to [PortChangedEvent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 
 ## Constraints
 
