@@ -13,7 +13,7 @@ This section lists needed assembly or NuGet references to use any control in the
 
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add syncfusion control.
 
-N> Starting with version 16.2(2018 Vol 2), the Syncfusion.Licensing.dll will be added as reference for all the Syncfusion WPF controls. Please refer to this help topic for more information.
+N> Starting with version 16.2(2018 Vol 2), the Syncfusion.Licensing.dll will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
 ## AutoComplete
 
@@ -1146,6 +1146,8 @@ Syncfusion.SfGridConverter.WPF
 </tr>
 </table>
 
+Refer [themes section](https://help.syncfusion.com/wpf/control-dependencies#SfSkinManager-Dependencies) for theming assembly references.
+
 ## SfDataPager
 
 <table>
@@ -2039,6 +2041,206 @@ Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.Shared.WPF
+</td>
+</tr>
+</table>
+
+## SfSkinManager Dependencies
+
+### Blend
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Blend.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Blend.WPF
+</td>
+</tr>
+</table>
+
+### Metro	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Metro.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Metro.WPF
+</td>
+</tr>
+</table>
+
+### Office2010Black	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2010Black.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2010Black.WPF
+</td>
+</tr>
+</table>
+
+### Office2010Blue	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2010Blue.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2010Blue.WPF
+</td>
+</tr>
+</table>
+
+### Office2010Silver	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2010Silver.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2010Silver.WPF
+</td>
+</tr>
+</table>
+
+### Office2013DarkGray	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2013DarkGray.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2013DarkGray.WPF
+</td>
+</tr>
+</table>
+
+### Office2013LightGray	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2013LightGray.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2013LightGray.WPF
+</td>
+</tr>
+</table>
+
+### Office2013White	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2013White.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2013White.WPF
+</td>
+</tr>
+</table>
+
+### VisualStudio2013	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.VisualStudio2013.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.VisualStudio2013.WPF
+</td>
+</tr>
+</table>
+
+### Lime	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Lime.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Lime.WPF
+</td>
+</tr>
+</table>
+
+### Saffron	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Saffron.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Saffron.WPF
 </td>
 </tr>
 </table>
