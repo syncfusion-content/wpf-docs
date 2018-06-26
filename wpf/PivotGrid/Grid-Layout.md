@@ -92,3 +92,9 @@ Displays the summary data of rows or columns at the end of the value cells.
 Displays the summary data of rows or columns at the beginning of the value cells.
 
 ![](Grid-Layout-Images/PivotGrid with top summary layout.png)
+
+**Excel Like Layout**
+
+It is used to display the summary cells at the bottom alone and the child members appear below the parent member with some indent space..
+
+![](Grid-Layout-Images/PivotGrid with excel like layout.png)
