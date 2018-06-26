@@ -2065,6 +2065,24 @@ Syncfusion.Themes.Blend.WPF
 </tr>
 </table>
 
+### Lime	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Lime.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Lime.WPF
+</td>
+</tr>
+</table>
+
 ### Metro	
 
 <table>
@@ -2079,6 +2097,24 @@ Syncfusion.SfSkinManager.WPF
 </td>
 <td> 
 Syncfusion.Themes.Metro.WPF
+</td>
+</tr>
+</table>
+
+### Saffron	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Saffron.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Saffron.WPF
 </td>
 </tr>
 </table>
@@ -2205,42 +2241,6 @@ Syncfusion.SfSkinManager.WPF
 </td>
 <td> 
 Syncfusion.Themes.VisualStudio2013.WPF
-</td>
-</tr>
-</table>
-
-### Lime	
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Themes.Lime.WPF <br/>
-Syncfusion.SfSkinManager.WPF
-</td>
-<td> 
-Syncfusion.Themes.Lime.WPF
-</td>
-</tr>
-</table>
-
-### Saffron	
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Themes.Saffron.WPF <br/>
-Syncfusion.SfSkinManager.WPF
-</td>
-<td> 
-Syncfusion.Themes.Saffron.WPF
 </td>
 </tr>
 </table>
