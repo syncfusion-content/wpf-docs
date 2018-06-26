@@ -20,8 +20,8 @@ This page lists the assemblies required for each control to be referred
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGrid.WPF </br>
-Syncfusion.Data.WPF </br>
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Data.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -41,9 +41,9 @@ For exporting DataGrid to excel, pdf or csv, the following references need to be
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGridConverter.WPF </br>
-Syncfusion.XlsIO.Base </br>
-Syncfusion.Pdf.Base </br>
+Syncfusion.SfGridConverter.WPF <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Pdf.Base <br/>
 Syncfusion.Compression.Base 
 </td>
 <td> 
@@ -62,9 +62,9 @@ Syncfusion.SfGridConverter.WPF
 <tr>
 <td> 
 Syncfusion.SfGrid.WPF
-</br>
+<br/>
 Syncfusion.Data.WPF
-</br>
+<br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -82,8 +82,8 @@ Syncfusion.SfGrid.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGrid.WPF </br>
-Syncfusion.Data.WPF </br>
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Data.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -103,9 +103,9 @@ For exporting TreeGrid to excel, pdf or csv, the following references need to be
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGridConverter.WPF </br>
-Syncfusion.XlsIO.Base </br>
-Syncfusion.Pdf.Base </br>
+Syncfusion.SfGridConverter.WPF <br/>
+Syncfusion.XlsIO.Base <br/>
+Syncfusion.Pdf.Base <br/>
 Syncfusion.Compression.Base 
 </td>
 <td> 
@@ -123,9 +123,9 @@ Syncfusion.SfGridConverter.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Core </br>
-Syncfusion.Grid.WPF </br>
-Syncfusion.GridCommon.WPF </br>
+Syncfusion.Core <br/>
+Syncfusion.Grid.WPF <br/>
+Syncfusion.GridCommon.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -143,11 +143,11 @@ Syncfusion.Grid.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfCellGrid.WPF </br>
-Syncfusion.SfGridCommon.WPF </br>
-Syncfusion.SfSpreadsheet.WPF </br>
-Syncfusion.Shared.WPF </br>
-Syncfusion.Tools.WPF </br>
+Syncfusion.SfCellGrid.WPF <br/>
+Syncfusion.SfGridCommon.WPF <br/>
+Syncfusion.SfSpreadsheet.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.XlsIO.Base 
 </td>
 <td> 
@@ -167,8 +167,8 @@ For exporting SfSpreadsheet to excel or pdf, the following references need to be
 </tr>
 <tr>
 <td> 
-Syncfusion.SfSpreadsheetHelper.WPF </br>
-Syncfusion.ExcelChartToImageConverter.WPF </br>
+Syncfusion.SfSpreadsheetHelper.WPF <br/>
+Syncfusion.ExcelChartToImageConverter.WPF <br/>
 Syncfusion.SfChart.WPF
 </td>
 <td> 
@@ -186,7 +186,7 @@ Syncfusion.SfSpreadsheet.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.ExcelToPDFConverter.Base </br>
+Syncfusion.ExcelToPDFConverter.Base <br/>
 Syncfusion.Pdf.Base
 </td>
 <td> 
@@ -221,14 +221,14 @@ Syncfusion.Calculate.Base
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRichTextBoxAdv.WPF </br>
-Syncfusion.Compression.Base </br>
-Syncfusion.OfficeChart.Base </br>
+Syncfusion.SfRichTextBoxAdv.WPF <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.OfficeChart.Base <br/>
 Syncfusion.Shared.WPF 
-</br>
-For 3.5 and 4.0 frameworks: </br>
-Syncfusion.DocIO.ClientProfile </br>
-For 4.5 and higher frameworks: </br>
+<br/>
+For 3.5 and 4.0 frameworks: <br/>
+Syncfusion.DocIO.ClientProfile <br/>
+For 4.5 and higher frameworks: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -246,16 +246,16 @@ Syncfusion.SfRichTextBoxAdv.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRichTextRibbon.WPF </br>
-Syncfusion.Compression.Base </br>
-Syncfusion.OfficeChart.Base </br>
-Syncfusion.SfRichTextBoxAdv.WPF </br>
-Syncfusion.Shared.WPF </br>
+Syncfusion.SfRichTextRibbon.WPF <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.OfficeChart.Base <br/>
+Syncfusion.SfRichTextBoxAdv.WPF <br/>
+Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF 
-</br>
-For 3.5 and 4.0 frameworks: </br>
-Syncfusion.DocIO.ClientProfile </br>
-For 4.5 and higher frameworks: </br>
+<br/>
+For 3.5 and 4.0 frameworks: <br/>
+Syncfusion.DocIO.ClientProfile <br/>
+For 4.5 and higher frameworks: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -273,8 +273,8 @@ Syncfusion.SfRichTextRibbon.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.PropertyGrid.WPF </br>
-Syncfusion.Tools.WPF </br>
+Syncfusion.PropertyGrid.WPF <br/>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -345,10 +345,10 @@ Syncfusion.SfHeatMap.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Gantt.WPF </br>
-Syncfusion.Grid.WPF </br>
-Syncfusion.GridCommon.WPF </br>
-Syncfusion.Shared.WPF </br>
+Syncfusion.Gantt.WPF <br/>
+Syncfusion.Grid.WPF <br/>
+Syncfusion.GridCommon.WPF <br/>
+Syncfusion.Shared.WPF <br/>
 Syncfusion.ProjIO.Base
 </td>
 <td> 
@@ -502,9 +502,9 @@ Syncfusion.SfMaps.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfSchedule.WPF </br>
-Syncfusion.SfRadialMenu.WPF </br>
-Syncfusion.SfShared.WPF </br>
+Syncfusion.SfSchedule.WPF <br/>
+Syncfusion.SfRadialMenu.WPF <br/>
+Syncfusion.SfShared.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -641,7 +641,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -659,7 +659,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -677,7 +677,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -695,9 +695,9 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Edit.WPF </br>
-Syncfusion.GridCommon.WPF </br>
-Syncfusion.Shared.WPF </br>
+Syncfusion.Edit.WPF <br/>
+Syncfusion.GridCommon.WPF <br/>
+Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF 
 </td>
 <td> 
@@ -715,7 +715,7 @@ Syncfusion.Edit.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
+Syncfusion.SfInput.WPF <br/>
 Syncfusion.SfShared.WPF 
 </td>
 <td> 
@@ -750,7 +750,7 @@ Syncfusion.SfAccordion.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
+Syncfusion.SfInput.WPF <br/>
 Syncfusion.SfShared.WPF 
 </td>
 <td> 
@@ -768,7 +768,7 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
+Syncfusion.SfInput.WPF <br/>
 Syncfusion.SfShared.WPF 
 </td>
 <td> 
@@ -786,7 +786,7 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -804,8 +804,8 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfChromelessWindow.WPF </br>
-Syncfusion.Shared.WPF </br>
+Syncfusion.SfChromelessWindow.WPF <br/>
+Syncfusion.Shared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfChromelessWindow.WPF
@@ -839,7 +839,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -874,7 +874,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -892,7 +892,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -927,7 +927,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -1149,7 +1149,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.RichTextBoxAdv.WPF </br>
+Syncfusion.RichTextBoxAdv.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -1167,16 +1167,16 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.RichTextDocIOParser.WPF </br>
-Syncfusion.Compression.Base </br>
-Syncfusion.OfficeChart.Base </br>
-Syncfusion.RichTextBoxAdv.WPF </br>
+Syncfusion.RichTextDocIOParser.WPF <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.OfficeChart.Base <br/>
+Syncfusion.RichTextBoxAdv.WPF <br/>
 Syncfusion.Shared.WPF 
-</br>
-For 3.5 and 4.0 frameworks: </br>
-Syncfusion.DocIO.ClientProfile </br>
-</br>
-For 4.5 and higher frameworks: </br>
+<br/>
+For 3.5 and 4.0 frameworks: <br/>
+Syncfusion.DocIO.ClientProfile <br/>
+<br/>
+For 4.5 and higher frameworks: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -1194,9 +1194,9 @@ Syncfusion.RichTextDocIOParser.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.RichTextRibbon.WPF </br>
-Syncfusion.RichTextBoxAdv.WPF </br>
-Syncfusion.Shared.WPF </br>
+Syncfusion.RichTextRibbon.WPF <br/>
+Syncfusion.RichTextBoxAdv.WPF <br/>
+Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF 
 </td>
 <td> 
@@ -1214,7 +1214,7 @@ Syncfusion.RichTextRibbon.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
+Syncfusion.SfInput.WPF <br/>
 Syncfusion.SfShared.WPF 
 </td>
 <td> 
@@ -1232,8 +1232,8 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SpellChecker.Base </br>
-Syncfusion.SfSpellChecker.WPF </br>
+Syncfusion.SpellChecker.Base <br/>
+Syncfusion.SfSpellChecker.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfSpellChecker.WPF
@@ -1250,8 +1250,8 @@ Syncfusion.SfSpellChecker.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
-Syncfusion.SfShared.WPF </br>
+Syncfusion.SfInput.WPF <br/>
+Syncfusion.SfShared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfInput.WPF
@@ -1268,8 +1268,8 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
-Syncfusion.SfShared.WPF </br>
+Syncfusion.SfInput.WPF <br/>
+Syncfusion.SfShared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfInput.WPF
@@ -1286,8 +1286,8 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRadialMenu.WPF </br>
-Syncfusion.SfShared.WPF </br>
+Syncfusion.SfRadialMenu.WPF <br/>
+Syncfusion.SfShared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfRadialMenu.WPF
@@ -1304,8 +1304,8 @@ Syncfusion.SfRadialMenu.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
-Syncfusion.SfShared.WPF </br>
+Syncfusion.SfInput.WPF <br/>
+Syncfusion.SfShared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfInput.WPF
@@ -1322,8 +1322,8 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
-Syncfusion.SfShared.WPF </br>
+Syncfusion.SfInput.WPF <br/>
+Syncfusion.SfShared.WPF <br/>
 </td>
 <td> 
 Syncfusion.SfInput.WPF
@@ -1340,7 +1340,7 @@ Syncfusion.SfInput.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.WPF </br>
+Syncfusion.SfInput.WPF <br/>
 Syncfusion.SfShared.WPF
 </td>
 <td> 
@@ -1392,7 +1392,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1410,7 +1410,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1445,7 +1445,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfColorPalette.WPF </br>
+Syncfusion.SfColorPalette.WPF <br/>
 Syncfusion.SfShared.WPF
 </td>
 <td> 
@@ -1480,7 +1480,7 @@ Syncfusion.SfChart.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfTreeNavigator.WPF </br>
+Syncfusion.SfTreeNavigator.WPF <br/>
 Syncfusion.SfShared.WPF
 </td>
 <td> 
@@ -1498,7 +1498,7 @@ Syncfusion.SfTreeNavigator.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1516,7 +1516,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1534,7 +1534,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1569,7 +1569,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1587,7 +1587,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1605,7 +1605,7 @@ Syncfusion.Tools.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfBusyIndicator.WPF </br>
+Syncfusion.SfBusyIndicator.WPF <br/>
 Syncfusion.SfShared.WPF
 </td>
 <td> 
@@ -1623,7 +1623,7 @@ Syncfusion.SfBusyIndicator.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfHubTile.WPF </br>
+Syncfusion.SfHubTile.WPF <br/>
 Syncfusion.SfShared.WPF
 </td>
 <td> 
@@ -1641,7 +1641,7 @@ Syncfusion.SfHubTile.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRadialMenu.WPF </br>
+Syncfusion.SfRadialMenu.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1676,7 +1676,7 @@ Syncfusion.SfNavigationDrawer.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfHubTile.WPF </br>
+Syncfusion.SfHubTile.WPF <br/>
 Syncfusion.SfShared.WPF
 </td>
 <td> 
@@ -1694,7 +1694,7 @@ Syncfusion.SfHubTile.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Calculate.Base </br>
+Syncfusion.Calculate.Base <br/>
 Syncfusion.Calculate.WPF
 </td>
 <td> 
@@ -1763,7 +1763,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Tools.WPF </br>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1781,9 +1781,9 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Compression.Base </br>
-Syncfusion.Pdf.Base </br>
-Syncfusion.PdfViewer.WPF </br>
+Syncfusion.Compression.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.PdfViewer.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -1801,17 +1801,17 @@ Syncfusion.PdfViewer.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Chart.Wpf </br>
-Syncfusion.Gauge.Wpf </br>
-Syncfusion.Grid.Wpf </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.PropertyGrid.Wpf </br>
-Syncfusion.ReportControls.Wpf </br>
-Syncfusion.ReportDesigner.Wpf </br>
-Syncfusion.ReportViewer.Wpf </br>
-Syncfusion.SfMaps.Wpf </br>
-Syncfusion.SfSkinManager.Wpf </br>
-Syncfusion.Shared.Wpf </br>
+Syncfusion.Chart.Wpf <br/>
+Syncfusion.Gauge.Wpf <br/>
+Syncfusion.Grid.Wpf <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.PropertyGrid.Wpf <br/>
+Syncfusion.ReportControls.Wpf <br/>
+Syncfusion.ReportDesigner.Wpf <br/>
+Syncfusion.ReportViewer.Wpf <br/>
+Syncfusion.SfMaps.Wpf <br/>
+Syncfusion.SfSkinManager.Wpf <br/>
+Syncfusion.Shared.Wpf <br/>
 Syncfusion.Tools.Wpf
 </td>
 <td> 
@@ -1829,16 +1829,16 @@ Syncfusion.ReportDesigner.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Chart.Wpf </br>
-Syncfusion.Compression.Base </br>
-Syncfusion.DocIO.Base </br>
-Syncfusion.Gauge.Wpf </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.Pdf.Base </br>
-Syncfusion.ReportControls.Wpf </br>
-Syncfusion.ReportWriter.Base </br>
-Syncfusion.SfMaps.Wpf </br>
-Syncfusion.Shared.Wpf </br>
+Syncfusion.Chart.Wpf <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.DocIO.Base <br/>
+Syncfusion.Gauge.Wpf <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.ReportControls.Wpf <br/>
+Syncfusion.ReportWriter.Base <br/>
+Syncfusion.SfMaps.Wpf <br/>
+Syncfusion.Shared.Wpf <br/>
 Syncfusion.XlsIO.Base 
 </td>
 <td> 
@@ -1856,21 +1856,21 @@ Syncfusion.XlsIO.Base
 </tr>
 <tr>
 <td> 
-Syncfusion.Chart.Wpf </br>
-Syncfusion.Compression.Base </br>
-Syncfusion.DocIO.Base </br>
-Syncfusion.Gauge.Wpf </br>
-Syncfusion.Grid.Wpf </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.Pdf.Base </br>
-Syncfusion.PropertyGrid.Wpf </br>
-Syncfusion.ReportControls.Wpf </br>
-Syncfusion.ReportViewer.Wpf </br>
-Syncfusion.SfMaps.Wpf </br>
-Syncfusion.SfSkinManager.Wpf </br>
-Syncfusion.Shared.Wpf </br>
-Syncfusion.Tools.Wpf </br>
-Syncfusion.XlsIO.Base </br>
+Syncfusion.Chart.Wpf <br/>
+Syncfusion.Compression.Base <br/>
+Syncfusion.DocIO.Base <br/>
+Syncfusion.Gauge.Wpf <br/>
+Syncfusion.Grid.Wpf <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.Pdf.Base <br/>
+Syncfusion.PropertyGrid.Wpf <br/>
+Syncfusion.ReportControls.Wpf <br/>
+Syncfusion.ReportViewer.Wpf <br/>
+Syncfusion.SfMaps.Wpf <br/>
+Syncfusion.SfSkinManager.Wpf <br/>
+Syncfusion.Shared.Wpf <br/>
+Syncfusion.Tools.Wpf <br/>
+Syncfusion.XlsIO.Base <br/>
 </td>
 <td> 
 Syncfusion.ReportViewer.WPF
@@ -1887,13 +1887,13 @@ Syncfusion.ReportViewer.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Chart.WPF </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.Olap.Base </br>
-Syncfusion.Olap.Base </br>
-Syncfusion.OlapShared.WPF </br>
-Syncfusion.Shared.WPF </br>
-Syncfusion.Tools.WPF </br>
+Syncfusion.Chart.WPF <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.Olap.Base <br/>
+Syncfusion.Olap.Base <br/>
+Syncfusion.OlapShared.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Tools.WPF <br/>
 </td>
 <td> 
 Syncfusion.OlapChart.WPF
@@ -1929,20 +1929,20 @@ Syncfusion.OlapChartConverter.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Chart.WPF </br>
-Syncfusion.Grid.WPF </br>
-Syncfusion.GridCommon.WPF </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.Olap.Base </br>
-Syncfusion.OlapChart.WPF </br>
-Syncfusion.OlapChartConverter.WPF </br>
-Syncfusion.OlapGrid.WPF </br>
-Syncfusion.OlapGridCommon.WPF </br>
-Syncfusion.OlapGridConverter.WPF </br>
-Syncfusion.OlapShared.WPF </br>
-Syncfusion.OlapTools.WPF </br>
-Syncfusion.Shared.WPF </br>
-Syncfusion.Tools.WPF </br>
+Syncfusion.Chart.WPF <br/>
+Syncfusion.Grid.WPF <br/>
+Syncfusion.GridCommon.WPF <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.Olap.Base <br/>
+Syncfusion.OlapChart.WPF <br/>
+Syncfusion.OlapChartConverter.WPF <br/>
+Syncfusion.OlapGrid.WPF <br/>
+Syncfusion.OlapGridCommon.WPF <br/>
+Syncfusion.OlapGridConverter.WPF <br/>
+Syncfusion.OlapShared.WPF <br/>
+Syncfusion.OlapTools.WPF <br/>
+Syncfusion.Shared.WPF <br/>
+Syncfusion.Tools.WPF <br/>
 Syncfusion.Tools.WPF.Resources
 </td>
 <td> 
@@ -1960,9 +1960,9 @@ Syncfusion.OlapClient.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Gauge.WPF </br>
-Syncfusion.Olap.Base </br>
-Syncfusion.OlapShared.WPF </br>
+Syncfusion.Gauge.WPF <br/>
+Syncfusion.Olap.Base <br/>
+Syncfusion.OlapShared.WPF <br/>
 Syncfusion.Shared.WPF 
 </td>
 <td> 
@@ -1980,13 +1980,13 @@ Syncfusion.OlapGauge.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Grid.WPF </br>
-Syncfusion.GridCommon.WPF </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.Olap.Base </br>
-Syncfusion.OlapGridCommon.WPF </br>
-Syncfusion.OlapShared.WPF </br>
-Syncfusion.Shared.WPF </br>
+Syncfusion.Grid.WPF <br/>
+Syncfusion.GridCommon.WPF <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.Olap.Base <br/>
+Syncfusion.OlapGridCommon.WPF <br/>
+Syncfusion.OlapShared.WPF <br/>
+Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF
 </td>
 <td> 
@@ -2023,10 +2023,10 @@ Syncfusion.OlapGridConverter.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.Grid.WPF </br>
-Syncfusion.GridCommon.WPF </br>
-Syncfusion.Linq.Base </br>
-Syncfusion.PivotAnalysis.Base </br>
+Syncfusion.Grid.WPF <br/>
+Syncfusion.GridCommon.WPF <br/>
+Syncfusion.Linq.Base <br/>
+Syncfusion.PivotAnalysis.Base <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
@@ -2046,7 +2046,7 @@ For exporting pivot grid contents to excel, word, PDF and CSV, the following ref
 </tr>
 <tr>
 <td> 
-Syncfusion.PivotGridConverter.WPF </br>
+Syncfusion.PivotGridConverter.WPF <br/>
 Syncfusion.XlsIO.Base
 </td>
 <td> 
