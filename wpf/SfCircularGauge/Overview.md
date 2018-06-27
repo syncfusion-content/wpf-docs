@@ -8,14 +8,37 @@ documentation: ug
 ---
 # Overview
 
-Circular Gauge enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
+The circular gauge helps to visualize numeric values on a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
 
-**Use** **Cases**
+## Key features
 
-* Circular gauges are used as the speedometer, tachometer, fuel, and temperature gauges in a graphical car dashboard.
-* Used in analog clocks.
-* Used in industries to visualize and monitor pressure and temperature.
-* Used to visualize Internet connection speed.
-* Used to visualize the server load.
-* Used to visualize memory usage.
+The [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) is composed of several scales. The scales will be an integrated UI part of the circular gauge.
+
+The [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) is a composite UI element with the following subparts:
+
+* Scales
+* Ranges
+* Pointers
+* Header
+
+The circular gauge control is highly customizable with variety of simple APIs to modify its basic look and feel. You can position the ranges, ticks, labels, and range pointers as needed.
+
+### Scales
+
+The [`Scales`](https://help.syncfusion.com/wpf/sfcirculargauge/scales) contain labels, tick marks, and a rim to customize its basic look and feel. It defines the start angle, sweep direction, sweep angle, overall minimum and maximum values, the frequency of labels, and tick marks.
+
+### Ranges
+
+The [`Ranges`](https://help.syncfusion.com/wpf/sfcirculargauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.
+
+### Pointers
+
+The [`Pointers`](https://help.syncfusion.com/wpf/sfcirculargauge/pointers) are elements that point out the values of the bound property on a scale. A circular scale can contain one or more pointers that can be used to measure different values. Each pointer has the `Value` property, which informs the current value to users visually.
+
+### Header
+
+The [`Header`](https://help.syncfusion.com/wpf/sfcirculargauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
+
+![](Overview_images/Overview_img1.jpeg)
+
 

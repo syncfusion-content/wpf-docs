@@ -7,50 +7,314 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Scale
+## Scale 
 
-The **MainScale** is a linear scale that integrates ticks, labels and scale bar to specify the basic look and feel of the linear gauge. It defines the overall minimum and maximum values, as well as the frequency of labels and ticks through the interval of the scale. It can contain multiple ranges within a scale. It also contains one or more pointers to point out the measures of the linear scale. 
-
-## Customizing MainScale
-
-The range of the main scale can be mentioned by **Minimum** and **Maximum** of the linear scale with defined **Interval**. The width and height of the linear scale is customized by using the **ScaleBarLength** and **ScaleBarSize** properties respectively. The border thickness of the linear scale is changed by using the **ScaleBarBorderThickness** Property. The direction of the linear scale is personalized by setting the **ScaleDirection** property of the linear scale.
+The `MainScale` is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 
 {% tabs %}
-{% highlight xaml %}
 
-        <Gauges:SfLinearGauge Name="linearGauge">
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale ScaleDirection="Forward"
-                                    ScaleBarStroke="Black" 
-                                    ScaleBarSize="20" 
-                                    ScaleBarLength="350"
-                                    ScaleBarBorderThickness="1"
-                                         Interval="1"
-                                    Minimum="0" Maximum="10">
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+{% highlight xml %}
+
+     <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+                                               
+                               <gauge:LinearScale  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                                   MinorTickStroke="Gray" LabelStroke="#424242"                       
+                                                   ScaleBarSize="10" MinorTicksPerInterval="3"/>
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.ScaleDirection = LinearScaleDirection.Forward;
-            _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.Black);
-            _mainScale.ScaleBarSize = 20;
-            _mainScale.ScaleBarLength = 350;
-            _mainScale.ScaleBarBorderThickness = new Thickness(1);
-            _mainScale.Interval = 1;
-            _mainScale.Minimum = 0;
-            _mainScale.Maximum = 10;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Scale_images/Scale_img1.jpeg)
+![](Scale_images/Scale_img1.png)
+
+## Setting minimum and maximum values for a scale
+
+To change the minimum and maximum values of a linear scale, use the `Minimum` and `Maximum` properties as shown in the following code snippet.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale   ScaleBarSize="30"  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                     MinorTickStroke="Gray" LabelStroke="#424242"/>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.ScaleBarSize = 30;
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            sfLinearGauge.MainScale = linearScale;
 
 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Scale_images/Scale_img2.png)
+
+## Setting interval for a scale
+
+The `Interval` property allows to set intervals for scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale Minimum="0" Maximum="500" Interval="100"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   ScaleBarSize="10"/>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Minimum = 0;
+
+            linearScale.Maximum = 500;
+
+            linearScale.Interval = 100;
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 10;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Scale_images/Scale_img3.png)
+
+## Scale customization
+
+You can customize the color, length, size, and position of the `LinearScale` using the `ScaleBarStroke`, `ScaleBarLength`, `ScaleBarSize`, `ScaleBarBorderThickness`, and `ScaleBarBorderBrush` properties, respectively.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale ScaleBarBorderBrush="Red"  ScaleBarStroke="Blue" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242" ScaleBarBorderThickness="3"
+                                   ScaleBarSize="20" MinorTicksPerInterval="3" />
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+             SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Colors.Blue);
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 20;
+
+            linearScale.ScaleBarBorderThickness = new Thickness(3);
+
+            linearScale.ScaleBarBorderBrush = new SolidColorBrush(Colors.Red);
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Scale_images/Scale_img4.png)
+
+## Setting scale direction
+
+You can set the scale position to its forward and backward using the `ScalePosition` property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale ScaleDirection="Backward"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   ScaleBarSize="10" MinorTicksPerInterval="3"/>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleDirection = LinearScaleDirection.Backward;
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Scale_images/Scale_img5.png)
+
+## Setting position for a scale
+
+You can set the scale position using the `ScaleBarPositionFactor` property. First, set the `ElementsPositionMode` to custom, and then set `ScaleBarPositionFactor`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale  ElementsPositionMode="Custom"
+                                   ScaleBarPositionFactor="0.5" TickPositionFactor="0.443"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                    MinorTickSize="9" MajorTickSize="15"
+                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ElementsPositionMode = LinearScalePositionModes.Custom;
+
+            linearScale.ScaleBarPositionFactor = 0.5;
+
+            linearScale.TickPositionFactor = 0.443;
+
+            linearScale.MajorTickSize = 9;
+
+            linearScale.MinorTickSize = 15;
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Scale_images/Scale_img6.png)

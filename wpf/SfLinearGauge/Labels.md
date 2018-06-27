@@ -9,69 +9,349 @@ documentation: ug
 
 # Labels
 
-Labels of the linear scale provide a numeric value to the major ticks that are specified according to the range of the scale.
+`Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
 
-## Customizing Labels
+## Label color customization
 
-The foreground of the label is customized by setting **LabelStroke** of the linear scale. By making use of the **LabelSize** property, the font size of the labels is personalized. The labels can be positioned far away from the ticks by using the **LabelOffset** property.
+The foreground of the label is customized by setting the `LabelStroke` of the linear scale.
 
 {% tabs %}
-{% highlight xaml %}
 
-    <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale LabelStroke="Red" Minimum="0" Maximum="10" Interval="1"  LabelSize="13"  LabelOffset="5">
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="Purple"
+                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.Minimum = 0;
-            _mainScale.Maximum = 10;
-            _mainScale.LabelStroke = new SolidColorBrush(Colors.Red);
-            _mainScale.LabelSize = 13;
-            _mainScale.LabelOffset = 5;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Colors.Purple);
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Labels_images/Labels_img1.jpeg)
+![](Labels_images/Labels_img1.png)
 
-## Label Position
+## Label font customization
 
-The labels in the scale can be placed above or below the linear scale by choosing the following options that are available in the **LabelPosition** property. The default value of **LabelPosition** is below.
-
-1. Above
-2. Below (Default)
+The label font can be customized using the `LabelSize`, `FontFamily`, and `FontStyle` properties. The labels can be positioned far away from the ticks using the `LabelOffset` property.
 
 {% tabs %}
-{% highlight xaml %}
 
-    <Gauges:SfLinearGauge>
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale LabelPosition="Above">
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+{% highlight xml %}
+
+     <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale FontFamily="Monotype Corsiva" 
+                                   FontSize="15" FontStyle="Italic" LabelOffset="15"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242" LabelSize="20"
+                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.LabelPosition = LinearLabelsPosition.Above;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge); 
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.LabelSize = 20;
+
+            linearScale.LabelOffset = 15;
+
+            linearScale.FontFamily = new FontFamily("Monotype Corsiva");
+
+            linearScale.FontStyle = FontStyles.Italic;
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Labels_images/Labels_img2.jpeg)
+![](Labels_images/Labels_img2.png)
+
+## Setting position for labels
+
+The labels in the scale can be placed above or below the linear scale by choosing the following options available in the `LabelPosition` property. The default value of `LabelPosition` property is below.
+
+1.	Above
+2.	Below (Default)
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale LabelPosition="Above"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242" 
+                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.LabelPosition = LinearLabelsPosition.Above;
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Labels_images/Labels_img3.png)
+
+## Setting postfix and prefix for labels
+
+You can postfix and prefix values to the scale labels using the `LabelPostfix` and `LabelPrefix` properties, respectively.
+
+### Setting label postfix
+
+The `LabelPostfix` property allows to postfix the values to scale labels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale Minimum="0" Maximum="50"  LabelPostfix="%" Interval="10"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   ScaleBarSize="10" MinorTicksPerInterval="0" />
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Minimum = 0;
+
+            linearScale.Maximum = 50;
+
+            linearScale.Interval = 10;
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.LabelPostfix = "%";
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 0;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Labels_images/Labels_img4.png)
+
+### Setting label prefix
+
+The `LabelPrefix` property allows to prefix the values to scale labels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale Minimum="0" Maximum="50"  LabelPrefix="$" Interval="10"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242" 
+                                   ScaleBarSize="10" MinorTicksPerInterval="0">
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Minimum = 0;
+
+            linearScale.Maximum = 50;
+
+            linearScale.Interval = 10;
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.LabelPrefix = "$";
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 0;
+
+            sfLinearGauge.MainScale = linearScale;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Labels_images/Labels_img5.png)
+
+## Labels visibility
+
+Labels visibility can be customized using the `LabelVisibility` property of linear scale.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale TickPosition="Cross" LabelVisibility="Collapsed"
+                                    MajorTickSize="20" MinorTickSize="9"
+                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Black"
+                                   MinorTickStroke="Black" LabelStroke="#424242"
+                                   ScaleBarSize="40" MinorTicksPerInterval="3">
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.LabelVisibility = Visibility.Collapsed;
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Black);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Black);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.MajorTickSize = 20;
+
+            linearScale.MinorTickSize = 9;
+
+            linearScale.TickPosition = LinearTicksPosition.Cross;
+
+            linearScale.ScaleBarSize = 40;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Labels_images/Labels_img6.png)

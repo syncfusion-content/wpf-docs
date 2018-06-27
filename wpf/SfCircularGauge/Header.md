@@ -9,29 +9,87 @@ documentation: ug
 
 # Header 
 
-Header support allows you to show text, an image, or any UI content inside the Gauge control. A circular gauge can be made self-descriptive about the data it is measuring through the use of a header. For example, the header could display Speed (in km/h), RPM, etc.
+Header allows you to show text or any UI content inside the gauge control using `GaugeHeader` option. This provides information about the data that is being plotted in the circular gauge.
 
-**Adding Header in Circular Gauge**
+## Header
 
-To add a header in the gauge, the following properties are required:
+The `GaugeHeader` is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
 
-* GaugeHeader
-* GaugeHeaderPosition
-* Header Alignment
+{% tabs %}
 
-## Gauge Header
+{% highlight xml %}
 
-The **GaugeHeader** is an object that can be used to set a unique header for the Circular Gauge. You can add text as well as images as headers in a circular gauge only one header can be added in a circular gauge.
+    <gauge:SfCircularGauge  HeaderAlignment="Center">
 
-## GaugeHeaderPosition
+    <gauge:SfCircularGauge.GaugeHeader>
 
-This property places the header in a circular gauge. The value for **GaugeHeaderPosition** should be specified in offset value. By default, it is placed at (0, 0).
+     <TextBlock Text="Temperature (K)"
 
-## HeaderAlignment
+    Height="40" Width="100"
 
-Gauge header can be positioned by using **HeaderAlignment** property, the default value of this property is Left.
+     FontSize="13" Foreground="Black"/>
 
-It includes the following options.
+    </gauge:SfCircularGauge.GaugeHeader>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+TextBlock textBlock = new TextBlock();
+
+textBlock.Text = "Temperature (K)";
+
+textBlock.Height = 40;
+
+textBlock.Width = 100;
+
+textBlock.FontSize = 13;
+
+textBlock.Foreground = new SolidColorBrush(Colors.Black);
+
+sfCircularGauge.GaugeHeader = textBlock;
+
+sfCircularGauge.HeaderAlignment = HeaderAlignment.Center;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Header_images/Header_img1.png)
+
+## Setting alignment for header
+
+The gauge header can be positioned by using the `HeaderAlignment` property. The default value of this property is Left.
+
+It includes the following options:
 
 * Left
 * Right
@@ -44,115 +102,221 @@ It includes the following options.
 * BottomRight
 * Custom
 
-
 {% tabs %}
-{% highlight xaml %}
 
-     <syncfusion:SfCircularGauge GaugeHeaderPosition="0.45,0.8" HeaderAlignment="Custom">
-            <syncfusion:SfCircularGauge.GaugeHeader>
-                <TextBlock Text="Temperature (K)" 
-                              Height="20" Width="150" 
-                              FontSize="20" Foreground="White"/>
-            </syncfusion:SfCircularGauge.GaugeHeader>
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+    <gauge:SfCircularGauge  HeaderAlignment="Top">
+
+    <gauge:SfCircularGauge.GaugeHeader>
+
+     <TextBlock Text="Temperature (K)"
+
+     Height="40" Width="100"
+
+      FontSize="13" Foreground="Black"/>
+
+     </gauge:SfCircularGauge.GaugeHeader>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
-            circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            TextBlock _textBlock = new TextBlock()
-            {
-                Text = "Temperature (K)",
-                Height = 20,
-                Width = 150,
-                FontSize = 20,
-                Foreground = new SolidColorBrush(Colors.White)
-            };
-            circularGauge.GaugeHeader = _textBlock;
-            this.Grid.Children.Add(circularGauge);
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+TextBlock textBlock = new TextBlock();
+
+textBlock.Text = "Temperature (K)";
+
+textBlock.Height = 40;
+
+textBlock.Width = 100;
+
+textBlock.FontSize = 13;
+
+textBlock.Foreground = new SolidColorBrush(Colors.Black);
+
+sfCircularGauge.GaugeHeader = textBlock;
+
+sfCircularGauge.HeaderAlignment = HeaderAlignment.Top;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Header_images/Header_img1.jpeg)
+![](Header_images/Header_img2.png)
 
+## Setting position for header
 
-**Gauge Header as Text**
+The `GaugeHeaderPosition` property is used to place header in the circular gauge. The value for `GaugeHeaderPosition` should be specified in offset value. In the point value, which has been given for the `GaugeHeaderPosition`, the first value represent x-coordinate and the second value represents y-coordinate. First, set the `HeaderAlignment` to custom, then set the position of header.
 
 {% tabs %}
-{% highlight xaml %}
 
-     <syncfusion:SfCircularGauge  GaugeHeader="Fual Availability"  
-                             GaugeHeaderPosition="0.42,0.65" FontSize="20"  HeaderAlignment="Custom" >
-        </syncfusion:SfCircularGauge>
-        
+{% highlight xml %}
+
+    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.6">
+
+    <gauge:SfCircularGauge.GaugeHeader>
+
+     <TextBlock Text="Temperature (K)"
+
+      Height="40" Width="100"
+
+      FontSize="13" Foreground="Black"/>
+
+    </gauge:SfCircularGauge.GaugeHeader>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+     </gauge:CircularScale>
+
+     </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeader = "Fual Availability";
-            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
-            circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            circularGauge.FontSize = 20;
-            this.Grid.Children.Add(circularGauge);
+  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+  CircularScale mainscale = new CircularScale();
+
+  TextBlock textBlock = new TextBlock();
+
+  textBlock.Text = "Temperature (K)";
+
+  textBlock.Height = 40;
+
+  textBlock.Width = 100;
+
+  textBlock.FontSize = 13;
+
+  textBlock.Foreground = new SolidColorBrush(Colors.Black);
+
+  sfCircularGauge.GaugeHeader = textBlock;
+
+  sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+
+  sfCircularGauge.GaugeHeaderPosition = new Point(0.4, 0.6);
+
+  CircularPointer circularPointer = new CircularPointer();
+
+  circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+  mainscale.Pointers.Add(circularPointer);
+
+  sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Header_images/Header_img2.jpeg)
+![](Header_images/Header_img3.png)
 
-**Gauge Header as UI Element** 
+## Customization of header font
+
+You can customize the header’s text by using the `FontFamily`, `FontStyle`, `FontSize`, and `Foreground` properties.
 
 {% tabs %}
-{% highlight xaml %}
 
-     <syncfusion:SfCircularGauge GaugeHeaderPosition="300,600">
-     <syncfusion:SfCircularGauge.GaugeHeader>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="1"  Text="Fual Availability" 
-                               Foreground="White" FontSize="20" />
-                    <Image Grid.Row="0" Height="20" Width="20"  
-                           Source="Assets/FuelIcon.jpg"/>
-                 </Grid>
-    </syncfusion:SfCircularGauge.GaugeHeader>
-     </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.6"
+    FontFamily="Monotype Corsiva" FontSize="15"
+     FontStyle="Italic"  Foreground="Blue">
+     <gauge:SfCircularGauge.GaugeHeader>
+    <TextBlock Text="Temperature (K)"
+     Height="40" Width="100" />
+     </gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale >
+    <gauge:CircularScale.Pointers>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+    </gauge:CircularScale.Pointers>
+    </gauge:CircularScale>
+     </gauge:SfCircularGauge.Scales>
+    /gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(300, 600);
-            Grid grid1 = new Grid();
-            RowDefinition rowDef1;
-            rowDef1 = new RowDefinition();
-            RowDefinition rowDef2;
-            rowDef2 = new RowDefinition();
-            grid1.RowDefinitions.Add(rowDef1);
-            grid1.RowDefinitions.Add(rowDef2);
-            BitmapImage _mapimage = new BitmapImage(new Uri("Assets/FuelIcon.jpg"));
-            TextBlock _textBlock = new TextBlock()
-            {
-                Text = "Fuel Availability",
-                Foreground = new SolidColorBrush(Colors.White),
-                FontSize = 20
-            };
-            Grid.SetRow(_textBlock, 1);
-            Image image = new Image() { Height = 20, Width = 20 };
-            image.Source = _mapimage;
-            Grid.SetRow(image, 0);
-            circularGauge.GaugeHeader = grid1;
-            this.Grid.Children.Add(circularGauge);
+  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+  CircularScale mainscale = new CircularScale();
+
+  TextBlock textBlock = new TextBlock();
+
+  textBlock.Text = "Temperature (K)";
+
+  textBlock.Height = 40;
+
+  textBlock.Width = 100;
+
+  sfCircularGauge.GaugeHeader = textBlock;
+
+  sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+
+  sfCircularGauge.GaugeHeaderPosition = new Point(0.4, 0.6);
+
+  sfCircularGauge.FontSize = 15;
+
+  sfCircularGauge.FontFamily = new FontFamily("Monotype Corsiva");
+
+  sfCircularGauge.FontStyle = FontStyles.Italic;
+
+  sfCircularGauge.Foreground = new SolidColorBrush(Colors.Blue);
+
+  CircularPointer circularPointer = new CircularPointer();
+
+  circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+  mainscale.Pointers.Add(circularPointer);
+
+  sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Header_images/Header_img3.jpeg)
+![](Header_images/Header_img4.png)
+
+
+
+
+
