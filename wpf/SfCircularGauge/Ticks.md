@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ticks| SfSchedule | Wpf | Syncfusion
-description: Ticks
+title: Ticks | SfCircularGauge | Wpf | Syncfusion
+description: Ticks   
 platform: wpf
-control: SfSchedule
+control: SfCircularGauge
 documentation: ug
 ---
 
@@ -11,118 +11,266 @@ documentation: ug
 
 Ticks help you identify the gauge’s data value by marking the gauge scale in regular increments.
 
-## Tick Stroke Customization
+## Tick customization
 
-The Interval property is used to calculate the tick count for a scale. Like ticks, small ticks are calculated using the MinorTicksPerInterval property.
+The Interval property is used to calculate the tick count for a scale. Similar ticks, small ticks are calculated using the `MinorTicksPerInterval` property.
 
-A tick’s length, stroke, and stroke thickness are set by the TickLength, TickStroke, and TickStrokeThickness UI properties. Like ticks, small ticks use similar UI properties to set the SmallTickLength, SmallTickStroke, and SmallTickStrokeThickness.
+The length, stroke, and stroke thickness of a tick are set using the `TickLength`, `TickStroke`, and `TickStrokeThickness` UI properties, respectively. Similar ticks, the length, stroke, and stroke thickness of a small tick are set using the `SmallTickLength`, `SmallTickStroke`, and `SmallTickStrokeThickness` UI properties, respectively.
+
+### Customize major ticks for scale
 
 {% tabs %}
-{% highlight xaml %}
 
-       <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularSca     MinorTicksPerInterval="3"
+{% highlight xml %}
+
+     <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale     MinorTicksPerInterval="3"
                                             TickLength="20"
-                                            TickStroke="Red"  
-                                            TickStrokeThickness="2" 
+                                            TickStroke="Brown"  
+                                            TickStrokeThickness="2"                                             
+                                            SmallTickStroke="White"
+                                            >
+                     <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                    </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.MinorTicksPerInterval = 3;
+
+mainscale.TickLength = 20;
+
+mainscale.TickStroke = new SolidColorBrush(Colors.Brown);
+
+mainscale.SmallTickStroke = new SolidColorBrush(Colors.White);
+
+mainscale.TickStrokeThickness = 2;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ticks_images/Ticks_img1.png)
+
+### Customize minor ticks for scale
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale     MinorTicksPerInterval="3"
                                             SmallTickLength="10"
-                                            SmallTickStroke="Green"
-                                            SmallTickStrokeThickness="1" 
+                                            SmallTickStroke="Blue"  
+                                            SmallTickStrokeThickness="2"                                             
                                             >
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-        
-{% endhighlight %}
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
 
-{% highlight c# %}
-
-             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.MinorTicksPerInterval = 3;
-            _mainscale.TickLength = 20;
-            _mainscale.TickStroke = new SolidColorBrush(Colors.Red);
-            _mainscale.TickStrokeThickness = 2;
-            _mainscale.SmallTickLength = 10;
-            _mainscale.SmallTickStroke = new SolidColorBrush(Colors.Green);
-            _mainscale.SmallTickStrokeThickness = 1;
-            circularGauge.Scales.Add(_mainscale);
-            this.Grid.Children.Add(circularGauge);
-
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Ticks_images/Ticks_img1.jpeg)
-
-
-## TickOffset
-
-The Major and Minor ticks can be positioned far away from the rim by using the **MajorTickOffset** and **MinorTickOffset** property. The default value of this Offset property value is 0.
-
-{% tabs %}
-{% highlight xaml %}
-
-        <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularSca    MajorTickOffset="10"
-                                            MinorTickOffset="10"
-                                            >
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
+                    </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.MajorTickOffset = 10;
-            _mainscale.MinorTickOffset = 10;
-            circularGauge.Scales.Add(_mainscale);
-            this.Grid.Children.Add(circularGauge);
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-{% endhighlight %}
-{% endtabs %}
+CircularScale mainscale = new CircularScale();
 
-## TickShape
+mainscale.MinorTicksPerInterval = 3;
 
-TickShape is an enum property that provides the option to select shape of the Circular mark ticks, which contains several shapes like rectangle, ellipse, and triangle.
+mainscale.SmallTickLength = 10;
 
-## TickPosition
+mainscale.SmallTickStroke = new SolidColorBrush(Colors.Blue);
 
-The ticks in the scale can be placed inside the scale, outside the scale, or across the scale by selecting one of the options available in the TickPosition property. These options are:
+mainscale.SmallTickStrokeThickness = 2;
 
-1 Inside (Default)
-2 Outside
-3 Cross
-4 Custom
+CircularPointer circularPointer = new CircularPointer();
 
-{% tabs %}
-{% highlight xaml %}
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 
-    <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale TickPosition="Cross" TickShape="Rectangle">
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
+mainscale.Pointers.Add(circularPointer);
 
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
 
-{% highlight c# %}
-
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.TickPosition = TickPosition.Cross;
-            _mainscale.TickShape = TickShape.Rectangle;
-            circularGauge.Scales.Add(_mainscale);
-            this.Grid.Children.Add(circularGauge);
-
-{% endhighlight %}
 {% endtabs %}
 
 ![](Ticks_images/Ticks_img2.png)
+
+## Setting shape for tick
+
+The `TickShape` is an enum property that provides an option to select shape of the circular mark ticks, which contains several shapes such as rectangle, ellipse, and triangle.
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale  TickShape="Triangle"
+                                      MinorTicksPerInterval="3"
+                                      TickStroke="Blue"
+                                      SmallTickStroke="Blue">
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.TickShape = TickShape.Triangle;
+
+mainscale.MinorTicksPerInterval = 3;
+
+mainscale.TickStroke = new SolidColorBrush(Colors.Blue);
+
+mainscale.SmallTickStroke = new SolidColorBrush(Colors.Blue);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ticks_images/Ticks_img3.png)
+
+## Setting position for tick
+
+The major and minor ticks can be positioned far away from the rim using the following two ways:
+ 
+    1. Using the `MajorTickOffset` and `MinorTickOffset` properties. First, set the `TickPosition` property to custom, and then set the offset of the tick.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale  TickPosition="Custom"
+                                      MinorTicksPerInterval="3"
+                                      MinorTickOffset="0.5"
+                                      MajorTickOffset="0.5">
+                   <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+     </gauge:SfCircularGauge>
+
+        {% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.TickPosition = TickPosition.Custom;
+
+mainscale.MajorTickOffset = 0.5;
+
+mainscale.MinorTickOffset = 0.5;
+
+mainscale.MinorTicksPerInterval = 3;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ticks_images/Ticks_img4.png)
+
+    2. Placing the ticks inside the scale, outside the scale, or across the scale by selecting one of the options available in the `TickPosition` property. They are:
+
+1.	Inside (Default)
+2.	Outside
+3.	Cross
+4.	Custom
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale  TickPosition="Outside"
+                                      MinorTicksPerInterval="3"
+                                      Radius="200">
+                   <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.Radius = 200;
+
+mainscale.TickPosition = TickPosition.Outside;
+
+mainscale.MinorTicksPerInterval = 3;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ticks_images/Ticks_img5.png)

@@ -1,217 +1,423 @@
 ---
 layout: post
-title: Labels| SfSchedule | Wpf | Syncfusion
-description: Labels
+title: Labels | SfCircularGauge | Wpf | Syncfusion
+description: Labels 
 platform: wpf
-control: SfSchedule
+control: SfCircularGauge
 documentation: ug
 ---
 
-# Labels
+# Labels 
 
-Scale labels associate a numeric value with major scale tick marks.
+The `Scale` labels associate numeric values with major scale tick marks.
 
-##  Label Customization
+## Label stroke customization
 
-The label stroke can be changed using the **LabelStroke** property. The labels can be positioned far away from the ticks by using the **LabelOffset** property.The size of the Labels can be changed by using the **LabelAutoSizeChange** property. 
+The label color can be changed using the `LabelStroke` property.
 
 {% tabs %}
-{% highlight xaml %}
 
-     <syncfusion:SfCircularGauge x:Name="gauge">
-                <syncfusion:SfCircularGauge.Scales >
-                    <syncfusion:CircularScale LabelStroke="Red"  LabelAutoSizeChange="True"  LabelOffset="10">                              
-                    </syncfusion:CircularScale>
-                </syncfusion:SfCircularGauge.Scales>
-      </syncfusion:SfCircularGauge>
-      
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale LabelStroke="DeepPink">
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.LabelStroke = new SolidColorBrush(Colors.Red);
-            _mainscale.LabelOffset = 10;
-            _mainscale.LabelAutoSizeChange = true;
-            circularGauge.Scales.Add(_mainscale);
-            this.Grid.Children.Add(circularGauge);
-            
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.LabelStroke = new SolidColorBrush(Colors.DeepPink);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Labels_images/Labels_img1.png)
 
-## Smart Labels
+## Label font customization
 
-Smart labels allow you to change the numeric scale type of the labels displayed in a gauge scale. They also help customize labels by adding prefixes or suffixes to the scale labels.
-
-**Enable/Disable Smart Labels**
-
-The **EnableSmartLabels** property is Boolean property that enables or disables the smart label feature of the SfCircularGauge.
-
-## NumericScaleType
-
-The **NumericScaleType** property allows you to set the type of label. The following types can be applied to labels:
-
-* Auto
-* Thousands
-* Millions
-* Billions
-* Trillions
-* Quadrillions
-* Quintillions
+The label font can be customized using the `FontSize`, `FontFamily`, and `FontStyle` properties.
 
 {% tabs %}
-{% highlight xaml %}
 
-       <syncfusion:SfCircularGauge >
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale EnableSmartLabels="False" 
-                                          NumericScaleType="Thousands"/>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale FontFamily="Monotype Corsiva" FontSize="20" 
+                                FontStyle="Italic" >
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.NumericScaleType = NumericScaleType.Thousands;
-            _mainscale.EnableSmartLabels = false;
-            circularGauge.Scales.Add(_mainscale);
-            this.Grid.Children.Add(circularGauge);
+ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
+CircularScale mainscale = new CircularScale();
+
+sfCircularGauge.FontSize = 20;
+
+sfCircularGauge.FontFamily = new FontFamily("Monotype Corsiva");
+
+sfCircularGauge.FontStyle = FontStyles.Italic;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Labels_images/Labels_img2.png)
 
-## Number of Fraction Digits
+## Setting position for labels
 
-The **NoOfFractionalDigits** property is used to set the number of fractional digits to be displayed in the scale labels.
+  The `Labels` can be placed inside the scale, outside the scale, or on the scale using the following two ways:
+     
+     1. Placing the labels by selecting one of the options available in the `LabelPosition` property.
+
+      They are,
+
+1.	Inside (Default)
+2.	Outside
+3.	Custom
 
 {% tabs %}
-{% highlight xaml %}
 
-    <syncfusion:SfCircularGauge >
-            <syncfusion:SfCircularGauge.Scales >
-                <syncfusion:CircularScale  NoOfFractionalDigit="1" />
-            </syncfusion:SfCircularGauge.Scales >
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+     <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale LabelPosition="Outside" >
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.NoOfFractionalDigit = 1;
-            circularGauge.Scales.Add(_mainscale);
-            this.Grid.Children.Add(circularGauge);
-            
+  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.LabelPosition = LabelPosition.Outside;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Labels_images/Labels_img3.png)
 
-## Label Postfix and Prefix
-
-You can set the postfix/Prefix values to the scale labels using **LabelPostfix** and **LabelPrefix** Properties respectively.
-
-**LabelPostfix**
-
-This property allows you to set the postfix values to the scale labels. The label postfixes will be visible even if the **EnableSmartLabels** property is set to false. 
+2.	Positioning the labels far away from the ticks using the `LabelOffset` property. First, set the `LabelPosition` to custom, and then position the label using the `LabelOffset` property.
 
 {% tabs %}
-{% highlight xaml %}
 
-    <syncfusion:SfCircularGauge >
-    <syncfusion:SfCircularGauge.Scales >
-        <syncfusion:CircularScale LabelPostfix="%"/>
-                                  
-    </syncfusion:SfCircularGauge.Scales >
-    </syncfusion:SfCircularGauge>
+{% highlight xml %}
 
-{% endhighlight %}
+    <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale LabelPosition="Custom" LabelOffset="0.5" >
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
+        {% endhighlight %}
 
 {% highlight c# %}
 
-        SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _mainscale = new CircularScale();
-        _mainscale.LabelPostfix = "%";      
-        circularGauge.Scales.Add(_mainscale);
-        this.Grid.Children.Add(circularGauge);
-        
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.LabelPosition = LabelPosition.Custom;
+
+mainscale.LabelOffset = 0.5;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Labels_images/Labels_img4.png)
 
-**LabelPrefix**
+### Setting smart labels
 
-This property allows you to set the prefix values for the scale labels. The label prefixes will be visible even if the **EnableSmartLabels** property is set to false.
+Smart labels allow to change the numeric scale type of the labels displayed in a gauge scale and customize the labels by adding prefixes or suffixes to the scale labels.
+
+### Enable/disable smart labels
+
+The `EnableSmartLabels` property is a Boolean property that enables or disables the smart label feature of the circular gauge.
+
+## Setting numeric scale type
+
+The `NumericScaleType` property allows to set the type of label. The following types can be applied to labels:
+
+•	Auto
+
+•	Thousands
+
+•	Millions
+
+•	Billions
+
+•	Trillions
+
+•	Quadrillions
+
+•	Quintillions
 
 {% tabs %}
-{% highlight xaml %}
 
-    <syncfusion:SfCircularGauge >
-            <syncfusion:SfCircularGauge.Scales >
-                <syncfusion:CircularScale LabelPrefix="$”/>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+     <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale StartValue="0" EndValue="500" EnableSmartLabels="True" NumericScaleType="Thousands">
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
- 
-       SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _mainscale = new CircularScale();
-        _mainscale.LabelPrefix = "$";
-        circularGauge.Scales.Add(_mainscale);
-        this.Grid.Children.Add(circularGauge);
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.StartValue = 0;
+
+mainscale.EndValue = 500;
+
+mainscale.EnableSmartLabels = true;
+
+mainscale.NumericScaleType = NumericScaleType.Thousands;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Labels_images/Labels_img5.png)
 
+## Setting number of fraction digits for labels
 
-## LabelPosition
-
-The Labels in the scale can be placed inside the scale or outside the scale by selecting one of the options available in the **LabelPosition** property. 
-
-These options are:
-
-1. Inside (Default)
-2. Outside
-3. Custom
-4. Custom
+The `NoOfFractionDigit` property is used to set the number of fractional digits to be displayed in the scale labels.
 
 {% tabs %}
-{% highlight xaml %}
 
-        <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales >
-                <syncfusion:CircularScale LabelPosition="Outside">
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales >
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+       <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale NoOfFractionalDigit="3">
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-     SfCircularGauge circularGauge = new SfCircularGauge();
-     CircularScale _mainscale = new CircularScale();
-     _mainscale.LabelPosition = LabelPosition.Outside;
-      circularGauge.Scales.Add(_mainscale);
-      this.Grid.Children.Add(circularGauge);
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.NoOfFractionalDigit = 3;
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Labels_images/Labels_img6.png)
 
+## Setting postfix and prefix for labels
+
+You can postfix/prefix values to the scale labels using the `LabelPostfix` and `LabelPrefix` properties, respectively.
+
+### Label postfix
+
+The `LabelPostfix` property allows to postfix the values to the scale labels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale LabelPostfix="k">
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.LabelPostfix = "k";
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Labels_images/Labels_img7.png)
+
+### Label prefix
+
+The `LabelPrefix` property allows to prefix the values to the scale labels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale LabelPrefix="$">
+
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.LabelPrefix = "$";
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+mainscale.Pointers.Add(circularPointer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Labels_images/Labels_img8.png)
