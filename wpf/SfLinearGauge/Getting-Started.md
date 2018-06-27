@@ -1,269 +1,492 @@
 ---
 layout: post
-title: Linear Gauge Elements | SfLinearGauge | Wpf | Syncfusion
-description: Linear Gauge Elements 
+title: Getting Started | SfLinearGauge | Wpf | Syncfusion
+description: Getting Started 
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
-
 # Getting Started
 
-This section explains you the steps required to configure the **SfLinearGauge** and also explains the steps to add basic elements of **SfLinearGauge** through various API’s available within it.
+This section explains the steps required to configure the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control in a real-time scenario and provides a walk-through on its customization features.
 
-## Configuring SfLinearGauge using Syncfusion Reference Manager
+## Adding gauge references
 
-Syncfusion Reference Manager is used to add Syncfusion Tools.
+Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to know about the assemblies required for adding gauge to your project.
 
-Follow the below steps to add SfLinearGauge Control using Syncfusion Reference Manager.
+### Initialize gauge
 
-Create a simple WPF application using Visual Studio.
-
-![](Getting-Started_images/Getting-Started_img1.jpeg)
-
-Right Click on the Project and select Syncfusion Reference Manager.
-
-![](Getting-Started_images/Getting-Started_img2.jpeg)
-
-The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
-
-![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-Search for **SfLinearGauge** using Search Box and select SfLinearGauge Control.  Click on done to add selected SfLinearGauge Control.
-
-![](Getting-Started_images/Getting-Started_img4.jpeg)
-
-The SfLinearGauge assemblies will be automatically added to the Project after Clicking **OK**.
-
-![](Getting-Started_images/Getting-Started_img5.jpeg)
-
-![](Getting-Started_images/Getting-Started_img6.jpeg)
-
-Create a namespace reference to the SfLinearGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfLinearGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
-
-{% highlight xaml %}
-
-    xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
-    (or)
-    xmlns:LinearGauge ="clr-   
-    namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
-    
-{% endhighlight %}
-
-Add the following code to create a simple SfLinearGauge control.
+Import  the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) namespace to your respective Window as in the following.
 
 {% tabs %}
+
 {% highlight xaml %}
 
-    <Window x:Class="LinearGauge.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Gauges="http://schemas.syncfusion.com/wpf"
-    Title="MainWindow" Height="350" Width="525">
-    <Grid Name="Grid">
-    <Gauges:SfLinearGauge/>
-    </Grid
+xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Gauges;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can initialize an empty [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <gauge:SfLinearGauge/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+this.Content = sfLinearGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Configuring scale
+
+You can configure the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearScale.html) elements using the following APIs available in the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control:
+
+•	ScaleDirection
+
+•	ScaleBarStroke
+
+•	ScaleBarSize
+
+•	ScaleBarLength
+
+•	ScaleBarBorderThickness
+
+•	Interval
+
+•	Minimum
+
+•	Maximum
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"                                
+                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+                    
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding ranges
+
+The scale values can be categorized using the start and end values in `LinearRange`. You can add multiple ranges to a scale using the `Ranges` property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale>
+                      <gauge:LinearScale.Ranges>
+
+                        <gauge:LinearRange StartValue="0" EndValue="40"
+                                           RangeStroke="#27BEB7"  StartWidth="10"
+                                           EndWidth="10" RangeOffset="0.4" />
+
+                        <gauge:LinearRange StartValue="40" EndValue="100"
+                                           RangeStroke="LightCyan" RangeOffset="0.4"
+                                           StartWidth="10"  EndWidth="10"/>
+
+                    </gauge:LinearScale.Ranges>
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 40;
+
+            linearRange.RangeStroke = new SolidColorBrush(Color.FromRgb(39, 190, 183));
+
+            linearRange.StartWidth = 10;
+
+            linearRange.EndWidth = 10;
+
+            linearRange.RangeOffset = 0.4;
+
+            linearScale.Ranges.Add(linearRange);
+
+            LinearRange linearRange1 = new LinearRange();
+
+            linearRange1.StartValue = 40;
+
+            linearRange1.EndValue = 100;
+
+            linearRange1.RangeStroke = new SolidColorBrush(Colors.LightCyan);
+
+            linearRange1.RangeOffset = 0.4;
+
+            linearRange1.StartWidth = 10;
+
+            linearRange1.EndWidth = 10;
+
+            linearScale.Ranges.Add(linearRange1);
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding a symbol pointer
+
+`SymbolPointer` is a shape that can be placed to mark the pointer value in gauge.
+
+{% tabs %}
+
+{% highlight xml %}
+ 
+         <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale>
+
+                    <gauge:LinearScale.Pointers>
+
+                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
+                                             SymbolPointerHeight="10" SymbolPointerWidth="10"
+                                              SymbolPointerPosition="Below" SymbolPointerStroke="#757575"/>
+
+                    </gauge:LinearScale.Pointers>
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            LinearPointer linearPointer = new LinearPointer();
+
+            linearPointer.PointerType = LinearPointerType.SymbolPointer;
+
+            linearPointer.Value = 60;
+
+            linearPointer.SymbolPointerHeight = 10;
+
+            linearPointer.SymbolPointerWidth = 10;
+
+            linearPointer.SymbolPointerPosition = LinearSymbolPointersPosition.Below;
+
+            linearPointer.SymbolPointerStroke = new SolidColorBrush(Color.FromRgb(117, 117, 117));
+
+            linearScale.Pointers.Add(linearPointer);
+
+            sfLinearGauge.MainScale = linearScale;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding a bar pointer
+
+`BarPointer` is used to mark the scale values. This starts at the beginning of gauge and ends at the pointer value.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale>
+
+                    <gauge:LinearScale.Pointers>
+                        
+                        <gauge:LinearPointer PointerType="BarPointer" Value="50" BarPointerStroke="#757575"
+                                             BarPointerStrokeThickness="10"/>
+
+                    </gauge:LinearScale.Pointers>
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+ 
+            LinearPointer linearPointer1 = new LinearPointer();
+
+            linearPointer1.PointerType = LinearPointerType.BarPointer;
+
+            linearPointer1.Value = 50;
+
+            linearPointer1.BarPointerStroke = new SolidColorBrush(Color.FromRgb(117, 117, 117));
+
+            linearPointer1.BarPointerStrokeThickness = 10;
+
+            linearScale.Pointers.Add(linearPointer1);
+
+            sfLinearGauge.MainScale = linearScale;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example is the complete code of the previous configurations.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <Window x:Class="Gauge_GettingStarted.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gauge_GettingStarted"
+        mc:Ignorable="d"
+        xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf">
+        <Grid>
+
+           <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"                               
+                                   ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                    <gauge:LinearScale.Pointers>
+
+                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
+                                             SymbolPointerHeight="10" SymbolPointerWidth="10"
+                                              SymbolPointerPosition="Below" SymbolPointerStroke="#757575"/>
+
+                        <gauge:LinearPointer PointerType="BarPointer" Value="50" BarPointerStroke="#757575"
+                                             BarPointerStrokeThickness="10"/>
+
+                    </gauge:LinearScale.Pointers>
+
+                    <gauge:LinearScale.Ranges>
+
+                        <gauge:LinearRange StartValue="0" EndValue="40"
+                                           RangeStroke="#27BEB7"  StartWidth="10"
+                                           EndWidth="10" RangeOffset="0.4" />
+
+                        <gauge:LinearRange StartValue="40" EndValue="100"
+                                           RangeStroke="LightCyan" RangeOffset="0.4"
+                                           StartWidth="10"  EndWidth="10"/>
+
+
+                    </gauge:LinearScale.Ranges>
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+    </Grid>
+
     </Window>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfLinearGauge lineargauge = new SfLinearGauge();
-    this.Grid.Children.Add(lineargauge);
+using System.Windows;
+
+using System.Windows.Media;
+
+using Syncfusion.UI.Xaml.Gauges;
+
+namespace Gauge_GettingStarted
+
+{
     
+    public partial class MainWindow : Window
+
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224));
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66));
+
+            linearScale.ScaleBarSize = 10;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            //Adding symbol pointer
+
+            LinearPointer linearPointer = new LinearPointer();
+
+            linearPointer.PointerType = LinearPointerType.SymbolPointer;
+
+            linearPointer.Value = 60;
+
+            linearPointer.SymbolPointerHeight = 10;
+
+            linearPointer.SymbolPointerWidth = 10;
+
+            linearPointer.SymbolPointerPosition = LinearSymbolPointersPosition.Below;
+
+            linearPointer.SymbolPointerStroke = new SolidColorBrush(Color.FromRgb(117, 117, 117));
+
+            linearScale.Pointers.Add(linearPointer);
+
+            //Adding bar pointer
+
+            LinearPointer linearPointer1 = new LinearPointer();
+
+            linearPointer1.PointerType = LinearPointerType.BarPointer;
+
+            linearPointer1.Value = 50;
+
+            linearPointer1.BarPointerStroke = new SolidColorBrush(Color.FromRgb(117, 117, 117));
+
+            linearPointer1.BarPointerStrokeThickness = 10;
+
+            linearScale.Pointers.Add(linearPointer1);
+
+            //Adding Range
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 40;
+
+            linearRange.RangeStroke = new SolidColorBrush(Color.FromRgb(39, 190, 183));
+
+            linearRange.StartWidth = 10;
+
+            linearRange.EndWidth = 10;
+
+            linearRange.RangeOffset = 0.4;
+
+            linearScale.Ranges.Add(linearRange);
+
+            LinearRange linearRange1 = new LinearRange();
+
+            linearRange1.StartValue = 40;
+
+            linearRange1.EndValue = 100;
+
+            linearRange1.RangeStroke = new SolidColorBrush(Colors.LightCyan);
+
+            linearRange1.RangeOffset = 0.4;
+
+            linearRange1.StartWidth = 10;
+
+            linearRange1.EndWidth = 10;
+
+            linearScale.Ranges.Add(linearRange1);
+
+            sfLinearGauge.MainScale = linearScale;
+
+            this.Content = sfLinearGauge;
+        }
+    }
+}
+
 {% endhighlight %}
+
 {% endtabs %}
 
-The SfLinearGauge  will be created as shown in the figure below.
+The following screenshot illustrates the result of the previous codes.
 
-![](Getting-Started_images/Getting-Started_img7.png)
-
->**Note:- The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version and Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, 2013 and 2015.**
-
-## Configuring SfLinearGauge
-
-SfLinearGauge exists in the following assembly and namespace.
-
-**Assembly**: Syncfusion.SfGauge.Wpf
-
-**Namespace**: Syncfusion.UI.Xaml.Gauges
-
-Create a namespace reference to the SfLinearGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfLinearGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
-
-{% highlight xaml %}
-
-    xmlns:Gauges="http://schemas.syncfusion.com/wpf" 
-    (or)
-    xmlns:Gauges ="clr-   
-    namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
-    
-{% endhighlight %}
-
-{% highlight xaml %}
-
-    <Gauges:SfLinearGauge/>
-
-{% endhighlight %}
-
-Run the above code and now the default SfLinearGauge can be displays as follows. In order to customize scales and other SfLinearGauge elements, you have to add the respecting element to SfLinearGauge.
-
-![](Getting-Started_images/Getting-Started_img8.png)
-
-As you can see now in the above image, the SfLinearGauge displays its default elements. To customize the basic look and feel of the SfLinearGauge you have to add respective elements to SfLinearGauge, which will be explained in the next section.
-
-## Configuring LinearScale 
-
-You can configure the LinearScale elements by making use of following API’s available in SfLinearGauge.
-
-They are:
-
-* ScaleDirection
-* ScaleBarStroke
-* ScaleBarSize
-* ScaleBarLength
-* ScaleBarBorderThickness
-* Interval
-* Minimum
-* Maximum
-
-{% tabs %}
-{% highlight xaml %}
-
-              <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale ScaleDirection="Forward"
-                                    ScaleBarStroke="White" 
-                                    ScaleBarSize="20" 
-                                    ScaleBarLength="350"
-                                    ScaleBarBorderThickness="1"
-                                    Interval="10"
-                                    Minimum="0" Maximum="100">
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge> 
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            lineargauge.Orientation = Orientation.Horizontal;
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.ScaleDirection = LinearScaleDirection.Forward;
-            _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.White);
-            _mainScale.ScaleBarSize = 20;
-            _mainScale.ScaleBarLength = 350;
-            _mainScale.ScaleBarBorderThickness = new Thickness(1);
-            _mainScale.Interval = 10;
-            _mainScale.Minimum = 0;
-            _mainScale.Maximum = 100;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Getting-Started_images/Getting-Started_img9.jpeg)
-
-## Adding Ranges 
-
-You can add ranges to SfLinearGauge by creating **LinearRange** collection using **Ranges**.
-
-{% tabs %}
-{% highlight xaml %}
-
-     <Gauges:SfLinearGauge>
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale>
-                    <Gauges:LinearScale.Ranges>
-                        <Gauges:LinearRange StartValue="0" EndValue="35" 
-                                            StartWidth="25" EndWidth="10" 
-                                            RangeOffset="5" RangeOpacity="1"
-                                            RangeStroke="Green"/>
-                        <Gauges:LinearRange StartValue="65" EndValue="100" 
-                                            StartWidth="10" EndWidth="25" 
-                                            RangeOffset="5" RangeOpacity="1"
-                                            RangeStroke="Red"/>
-                    </Gauges:LinearScale.Ranges>
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+![](Getting-Started_images/Getting_started_img1.png)
 
 
-{% endhighlight %}
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted23380559).
 
-{% highlight c# %}
-
-           SfLinearGauge lineargauge = new SfLinearGauge();
-           LinearScale _mainScale = new LinearScale();
-           _mainScale.Ranges.Add(new LinearRange()
-           {
-               StartValue = 0,
-               EndValue = 35,
-               StartWidth = 25,
-               EndWidth = 10,
-               RangeOffset = 5,
-               RangeOpacity = 1,
-               RangeStroke = new SolidColorBrush(Colors.Green)
-           });
-           _mainScale.Ranges.Add(new LinearRange() 
-           { 
-               StartValue = 65,
-               EndValue = 100, 
-               StartWidth = 10, 
-               EndWidth = 25,
-               RangeOffset = 5,
-               RangeOpacity = 1,
-               RangeStroke = new SolidColorBrush(Colors.Red) 
-           });
-           lineargauge.MainScale = _mainScale;
-           this.Grid.Children.Add(lineargauge);
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Getting-Started_images/Getting-Started_img10.jpeg)
-
-## Adding Pointers 
-
-You can also add Pointers to SfLinearGauge to point a values on the scale.
-
-{% tabs %}
-{% highlight xaml %}
-
-      <Gauges:SfLinearGauge Name="linearGauge">
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale>
-                    <Gauges:LinearScale.Pointers>
-                        <Gauges:LinearPointer Value="40" PointerType="BarPointer" />
-                        <Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/>
-                    </Gauges:LinearScale.Pointers>
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-           SfLinearGauge lineargauge = new SfLinearGauge();
-           LinearScale _mainScale = new LinearScale();
-           _mainScale.Pointers.Add(new LinearPointer()
-           {
-               Value = 40,
-               PointerType = LinearPointerType.BarPointer
-           });
-           _mainScale.Pointers.Add(new LinearPointer()
-           {
-               Value = 40,
-               PointerType = LinearPointerType.SymbolPointer,
-               SymbolPointerPosition = LinearSymbolPointersPosition.Above
-           });
-           lineargauge.MainScale = _mainScale;
-           this.Grid.Children.Add(lineargauge);
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Getting-Started_images/Getting-Started_img11.jpeg)

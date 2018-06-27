@@ -1,162 +1,112 @@
 ---
 layout: post
-title: Getting Started | SfSchedule | Wpf | Syncfusion
+title: Getting Started | SfCircularGauge | Wpf | Syncfusion
 description: Getting Started
 platform: wpf
-control: SfSchedule
+control: SfCircularGauge
 documentation: ug
 ---
-
 # Getting Started
 
-This section explains you the steps required to configure the **SfCircularGauge** and also explains the steps to add basic elements of **SfCircularGauge** through various API’s available within it.
+This section explains the steps required to configure the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) and add basic elements to it using various APIs.
 
-## Configuring SfCircularGauge using Syncfusion Reference Manager
+## Adding gauge references
 
-Syncfusion Reference Manager is used to add   Syncfusion Tools.
+Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to know how to add Syncfusion controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to know about the assemblies required for adding gauge to your project.
 
-Follow the below steps to add SfCircularGauge using Syncfusion Reference Manager
+### Initialize gauge
 
-Create a simple WPF application using Visual Studio.
-
-![](Getting-Started_images/Getting-Started_img1.jpeg)
-
-Right Click on the Project and _select Syncfusion Reference Manager.
-
-![](Getting-Started_images/Getting-Started_img2.jpeg)
-
-The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
-
-![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-Search for **SfCircularGauge** using Search Box and select SfCircularGauge Control.  Click on done to add selected SfCircularGauge Control.
-
-![](Getting-Started_images/Getting-Started_img4.jpeg)
-
-The SfCircularGauge assemblies will be automatically added to the Project after Clicking **OK**.
-
-![](Getting-Started_images/Getting-Started_img5.jpeg)
-
-![](Getting-Started_images/Getting-Started_img6.png)
-
-Create a namespace reference to the SfCircularGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfCircularGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
-
-{% highlight xaml %}
-
-    xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
-    
-    or
-    
-    xmlns:syncfusion ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
-
-{% endhighlight %}
-
-Add the following code to create a simple SfCircularGauge control.
+Import  the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) namespace to your respective Window as follows.
 
 {% tabs %}
+
 {% highlight xaml %}
 
-    <Window x:Class="SampleCircularGauge.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-    Title="MainWindow" Height="350" Width="525">
-    <Grid Name="Grid" Background="Black">
-    <syncfusion:SfCircularGauge></syncfusion:SfCircularGauge>
-    </Grid>
-</Window>
+xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-    this.Grid.Children.Add(circulargauge); 
+using Syncfusion.UI.Xaml.Gauges;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-The default SfCircularGauge control will be created as shown in the figure below.
-
-![](Getting-Started_images/Getting-Started_img7.png)
-
->**Note:-The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version and Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, 2013 and 2015.**
-
-## Configuring SfCircularGauge
-
-**SfCircularGauge** is available in the following assembly and namespace:
-
-**Assembly**: Syncfusion.SfGauge.Wpf
-
-**Namespace**: Syncfusion.UI.Xaml.Gauges
-
-Create a namespace reference to the SfCircularGauge control using Syncfusion’s global namespace reference **schemas.syncfusion.com** or the SfCircularGauge control’s namespace reference using **Syncfusion.UI.Xaml.Gauges** available in the **Syncfusion.SfGauge.WPF** assembly.
-
-{% highlight xaml %}
-
-    xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
-    
-    or
-    
-    xmlns:syncfusion ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfCircularGauge/>
-    
-{% endhighlight %}
-
-Run the above code and now the default SfCircularGauge can be displays as follows. In order to customize scales and other SfCircularGauge elements, you have to add the respecting element to SfCircularGauge.
-
-![](Getting-Started_images/Getting-Started_img8.png)
-
-As you can see now in the above image, the SfCircularGauge displays its default elements. To customize the basic look and feel of the SfCircularGauge you have to add respective elements to SfCircularGauge, which will be explained in the next section.
-
-## Adding Header 
-
-You can assign a unique header to **SfCircularGauge** by making use of **GaugeHeader** property and you can positioned it wherever you want using **GaugeHeaderPosition** and **HeaderAlignment** property.
+You can initialize an empty [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) control.
 
 {% tabs %}
-{% highlight xaml %}
 
-    <syncfusion:SfCircularGauge GaugeHeaderPosition="0.45,0.8" HeaderAlignment="Custom">
-            <syncfusion:SfCircularGauge.GaugeHeader>
-                <TextBlock Text="Temperature (K)" 
-                              Height="20" Width="150" 
-                              FontSize="20" Foreground="White"/>
-            </syncfusion:SfCircularGauge.GaugeHeader>
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+        <gauge:SfCircularGauge/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-    
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
-            circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            TextBlock _textBlock = new TextBlock()
-            {
-                Text = "Temperature (K)",
-                Height = 20,
-                Width = 150,
-                FontSize = 20,
-                Foreground = new SolidColorBrush(Colors.White)
-            };
-            circularGauge.GaugeHeader = _textBlock;
-            this.Grid.Children.Add(circularGauge);
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+this.Content = sfCircularGauge;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img9.png)
+### Adding headers
 
-## Configuring Scales
+You can assign a unique header to the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) by using the `GaugeHeader` property.
 
-You can configure the **CircularScale** elements by making use of following API’s available in SfCircularGage.
+{% tabs %}
 
-They are:
+{% highlight xml %}
+
+    <gauge:SfCircularGauge Height="500" Width="500" HeaderAlignment="Custom" GaugeHeaderPosition="0.36,0.7">
+
+     <gauge:SfCircularGauge.GaugeHeader>
+
+      <TextBlock Text="Temperature (K)" 
+
+      Height="40" Width="150" 
+
+      FontSize="20" Foreground="Black"/>
+
+      </gauge:SfCircularGauge.GaugeHeader>
+
+     </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+
+sfCircularGauge.GaugeHeaderPosition = new Point(0.36, 0.7);
+
+TextBlock textBlock = new TextBlock();
+
+textBlock.Text = "Temperature (K)";
+
+textBlock.Height = 40;
+
+textBlock.Width = 150;
+
+textBlock.FontSize = 20;
+
+textBlock.Foreground = new SolidColorBrush(Colors.Black);
+
+sfCircularGauge.GaugeHeader = textBlock;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Configuring scales
+
+You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale.html) elements by using the following APIs:
 
 * StartAngle
 * SweepAngle
@@ -167,219 +117,412 @@ They are:
 * LabelStroke
 
 {% tabs %}
-{% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-            <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="0.45,0.8" HeaderAlignment="Custom" >
+{% highlight xml %}
 
-                <syncfusion:SfCircularGauge.GaugeHeader>
+         <gauge:SfCircularGauge.Scales>
 
-                    <TextBlock Text="Temperature (K)" 
-                              Height="40" Width="150" 
-                              FontSize="20" Foreground="White"/>
+             <gauge:CircularScale/>
 
-                </syncfusion:SfCircularGauge.GaugeHeader>
-                <syncfusion:SfCircularGauge.Scales>
-                    <syncfusion:CircularScale StartAngle="135" 
-                                   SweepAngle="270" 
-                                   StartValue="0"
-                                   LabelStroke="White" TickStroke="White"
-                                   EndValue="100"
-                                   Interval="10">
-                    </syncfusion:CircularScale>
-                </syncfusion:SfCircularGauge.Scales>
-            </syncfusion:SfCircularGauge>
-        </Grid>
+       </gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
-            circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            circularGauge.Scales.Add(_mainscale);
-            TextBlock _textBlock = new TextBlock()
-            {
-                Text = "Temperature (K)",
-                Height = 20,
-                Width = 150,
-                FontSize = 20,
-                Foreground = new SolidColorBrush(Colors.White)
-            };
-            circularGauge.GaugeHeader = _textBlock;
-            this.Grid.Children.Add(circularGauge);
+CircularScale mainscale = new CircularScale();
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img10.png)
+### Adding ranges
 
-## Adding Ranges 
-
-You can add ranges to SfCircularGauge by creating ranges collection using **Ranges**.
+You can add ranges to the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularRange.html)  property.
 
 {% tabs %}
-{% highlight xaml %}
-           <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-            <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="0.45,0.8" HeaderAlignment="Custom" >
 
-                <syncfusion:SfCircularGauge.GaugeHeader>
+{% highlight xml %}
 
-                    <TextBlock Text="Temperature (K)" 
-                              Height="40" Width="150" 
-                              FontSize="20" Foreground="White"/>
+     <gauge:SfCircularGauge>
 
-                </syncfusion:SfCircularGauge.GaugeHeader>
-                <syncfusion:SfCircularGauge.Scales>
-                    <syncfusion:CircularScale StartAngle="135" 
-                                   SweepAngle="270" 
-                                   StartValue="0"
-                                   EndValue="100"
-                                   Interval="10">
+     <gauge:SfCircularGauge.Scales>
 
-                        <syncfusion:CircularScale.Ranges>
-                            <syncfusion:CircularRange StartValue="0" 
-                                             EndValue="60" Stroke="#666666" />
-                            <syncfusion:CircularRange StartValue="60" 
-                                             EndValue="100" Stroke="#C1252C" />
-                        </syncfusion:CircularScale.Ranges>
-                    </syncfusion:CircularScale>
-                </syncfusion:SfCircularGauge.Scales>
-            </syncfusion:SfCircularGauge>
-        </Grid>
+             <gauge:CircularScale>
+
+                <gauge:CircularScale.Ranges>
+
+                   <gauge:CircularRange StartValue="0" EndValue="60"/>
+
+                 </gauge:CircularScale.Ranges>
+ 
+             </gauge:CircularScale>
+
+      </gauge:SfCircularGauge.Scales>
+
+      </gauge:SfCircularGauge>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
-            circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 0,
-                EndValue = 60,
-                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0X66, 0X66, 0X66))
-            });
-            _mainscale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 60,
-                EndValue = 100,
-                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0XC1, 0X25, 0X2C))
-            });
-            circularGauge.Scales.Add(_mainscale);
-            TextBlock _textBlock = new TextBlock()
-            {
-                Text = "Temperature (K)",
-                Height = 20,
-                Width = 150,
-                FontSize = 20,
-                Foreground = new SolidColorBrush(Colors.White)
-            };
-            circularGauge.GaugeHeader = _textBlock;
-            this.Grid.Children.Add(circularGauge);
+CircularScale mainscale = new CircularScale();
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 60;
+
+mainscale.Ranges.Add(circularRange);
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img11.png)
+### Adding a needle pointer
 
-
-## Adding Pointers 
-
-You can add Pointers to SfCircularGauge to point a values on the scale.
+Create a `Needle Pointer`, and associate it with a scale that is to be displayed the current value.
 
 {% tabs %}
-{% highlight xaml %}
 
-            <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-            <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="0.45,0.8" HeaderAlignment="Custom" >
+{% highlight xml %}
+ 
+         <gauge:SfCircularGauge.Scales>
 
-                <syncfusion:SfCircularGauge.GaugeHeader>
+              <gauge:CircularScale>
 
-                    <TextBlock Text="Temperature (K)" 
-                              Height="40" Width="150" 
-                              FontSize="20" Foreground="White"/>
+        <gauge:CircularScale.Pointers>
 
-                </syncfusion:SfCircularGauge.GaugeHeader>
-                <syncfusion:SfCircularGauge.Scales>
-                    <syncfusion:CircularScale StartAngle="135" 
-                                   SweepAngle="270" 
-                                   StartValue="0"
-                                   EndValue="100"
-                                   Interval="10">
+             <gauge:CircularPointer PointerType="NeedlePointer" Value="60" 
 
-                        <syncfusion:CircularScale.Ranges>
-                            <syncfusion:CircularRange StartValue="0" 
-                                             EndValue="60" Stroke="#666666" />
-                            <syncfusion:CircularRange StartValue="60" 
-                                             EndValue="100" Stroke="#C1252C" />
-                        </syncfusion:CircularScale.Ranges>
+                    NeedleLengthFactor="0.5" NeedlePointerType="Triangle"
 
-                        <syncfusion:CircularScale.Pointers>
-                            <syncfusion:CircularPointer PointerType="NeedlePointer" Value="10"/>
-                        </syncfusion:CircularScale.Pointers>
-                    </syncfusion:CircularScale>
-                </syncfusion:SfCircularGauge.Scales>
-            </syncfusion:SfCircularGauge>
-        </Grid>
+                     PointerCapDiameter="20" PointerCapStroke="#39B2C6" />
+
+              </gauge:CircularScale.Pointers>
+
+            </gauge:CircularScale>
+
+        </gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
-            circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 0,
-                EndValue = 60,
-                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0X66, 0X66, 0X66))
-            });
-            _mainscale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 60,
-                EndValue = 100,
-                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0XC1, 0X25, 0X2C))
-            });
-            _mainscale.Pointers.Add(new CircularPointer()
-            {
-                PointerType = PointerType.NeedlePointer,
-                Value = 10
-            });
-            circularGauge.Scales.Add(_mainscale);
-            TextBlock _textBlock = new TextBlock()
-            {
-                Text = "Temperature (K)",
-                Height = 20,
-                Width = 150,
-                FontSize = 20,
-                Foreground = new SolidColorBrush(Colors.White)
-            };
-            circularGauge.GaugeHeader = _textBlock;
-            this.Grid.Children.Add(circularGauge);
+CircularScale mainscale = new CircularScale();
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.PointerType = PointerType.NeedlePointer;
+
+circularPointer.NeedleLengthFactor = 0.5;
+
+circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
+
+circularPointer.PointerCapDiameter = 20;
+
+circularPointer.PointerCapStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
+
+circularPointer.Value = 60;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img12.png)
+### Adding a range pointer
+
+The `Range Pointer` provides an alternative way to indicate the current value.
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfCircularGauge.Scales>
+
+           <gauge:CircularScale>
+
+               <gauge:CircularScale.Pointers>
+
+                   <gauge:CircularPointer PointerType="RangePointer" Value="40"/>
+
+              </gauge:CircularScale.Pointers>
+
+           </gauge:CircularScale>
+
+          </gauge:SfCircularGauge.Scales>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CircularScale mainscale = new CircularScale();      
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.PointerType = PointerType.RangePointer;
+
+circularPointer.Value = 40;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding a symbol pointer
+
+The `Symbol Pointer` points to the current value in a scale.
+
+{% tabs %}
+
+{% highlight xml %}
+
+          <gauge:SfCircularGauge.Scales>
+
+              <gauge:CircularScale>
+
+               <gauge:CircularScale.Pointers>
+
+                <gauge:CircularPointer PointerType="SymbolPointer" Value="70" Symbol="InvertedArrow"/>
+
+                 </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+
+               </gauge:SfCircularGauge.Scales>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CircularScale mainscale = new CircularScale();      
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.PointerType = PointerType.SymbolPointer;
+
+circularPointer.Value = 70;
+
+circularPointer.Symbol = Symbol.InvertedArrow;
+
+mainscale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example is the complete code of the previous configurations.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <Window x:Class="GaWPF.MainWindow"
+
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+     xmlns:local="clr-namespace:GaWPF"
+
+     mc:Ignorable="d"
+
+     xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf">
+
+      <Grid>
+
+        <gauge:SfCircularGauge Height="500" Width="500" HeaderAlignment="Custom" GaugeHeaderPosition="0.36,0.7">
+
+          <gauge:SfCircularGauge.GaugeHeader>
+
+                    <TextBlock Text="Temperature (K)" 
+
+                         Height="40" Width="150" 
+
+                          FontSize="20" Foreground="Black"/>
+
+          </gauge:SfCircularGauge.GaugeHeader>
+
+              <gauge:SfCircularGauge.Scales>
+
+                   <gauge:CircularScale Radius="150" >
+
+               <gauge:CircularScale.Ranges>
+
+                 <gauge:CircularRange StartValue="0" EndValue="60"/>
+
+               </gauge:CircularScale.Ranges>
+
+              <gauge:CircularScale.Pointers>
+
+               <gauge:CircularPointer PointerType="NeedlePointer" Value="60" 
+
+                         NeedleLengthFactor="0.5" NeedlePointerType="Triangle"
+
+                         PointerCapDiameter="20" PointerCapStroke="#39B2C6" />
+
+                    <gauge:CircularPointer PointerType="RangePointer" Value="40"/>
+
+                 <gauge:CircularPointer PointerType="SymbolPointer" Value="70" Symbol="InvertedArrow"/>
+
+                </gauge:CircularScale.Pointers>
+
+                    </gauge:CircularScale>
+
+                 </gauge:SfCircularGauge.Scales>
+
+                  </gauge:SfCircularGauge>
+
+      </Grid>
+
+    </Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System.Windows;
+
+using System.Windows.Controls;
+
+using System.Windows.Media;
+
+using Syncfusion.UI.Xaml.Gauges;
+
+namespace GaWPF
+
+{
+
+public partial class MainWindow : Window
+
+{
+
+public MainWindow()
+
+{
+
+InitializeComponent();
+
+//Initializing circular gauge
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+sfCircularGauge.Height = 500;
+
+sfCircularGauge.Width = 500;
+
+//Adding header
+
+sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+
+sfCircularGauge.GaugeHeaderPosition = new Point(0.36, 0.7);
+
+TextBlock textBlock = new TextBlock();
+
+textBlock.Text = "Temperature (K)";
+
+textBlock.Height = 40;
+
+textBlock.Width = 150;
+
+textBlock.FontSize = 20;
+
+textBlock.Foreground = new SolidColorBrush(Colors.Black);
+
+sfCircularGauge.GaugeHeader = textBlock;
+
+//Initializing scales for circular gauge
+
+CircularScale mainscale = new CircularScale();
+
+mainscale.Radius = 150;
+
+//Adding range
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 60;
+
+mainscale.Ranges.Add(circularRange);
+
+//Adding needle pointer
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.PointerType = PointerType.NeedlePointer;
+
+circularPointer.NeedleLengthFactor = 0.5;
+
+circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
+
+circularPointer.PointerCapDiameter = 20;
+
+circularPointer.PointerCapStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
+
+circularPointer.Value = 60;
+
+mainscale.Pointers.Add(circularPointer);
+
+//Adding range pointer
+
+CircularPointer circularPointer1 = new CircularPointer();
+
+circularPointer1.PointerType = PointerType.RangePointer;
+
+circularPointer1.Value = 40;
+
+mainscale.Pointers.Add(circularPointer1);
+
+//Adding symbol pointer
+
+CircularPointer circularPointer2 = new CircularPointer();
+
+circularPointer2.PointerType = PointerType.SymbolPointer;
+
+circularPointer2.Value = 70;
+
+circularPointer2.Symbol = Symbol.InvertedArrow;
+
+mainscale.Pointers.Add(circularPointer2);
+
+sfCircularGauge.Scales.Add(mainscale);
+
+this.Content = sfCircularGauge;
+
+}
+
+}
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the result of the previous codes.
+
+![](Getting-Started_images/Getting_Started_img1.png)
+
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GaugeGettingStarted-260550602).
+
