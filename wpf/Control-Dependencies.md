@@ -13,7 +13,7 @@ This section lists needed assembly or NuGet references to use any control in the
 
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add syncfusion control.
 
-N> Starting with version 16.2(2018 Vol 2), the Syncfusion.Licensing.dll will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
 ## AutoComplete
 
@@ -1146,7 +1146,7 @@ Syncfusion.SfGridConverter.WPF
 </tr>
 </table>
 
-Refer [themes section](https://help.syncfusion.com/wpf/control-dependencies#SfSkinManager-Dependencies) for theming assembly references.
+Refer [themes section](https://help.syncfusion.com/wpf/control-dependencies#sfskinmanager-dependencies) for theming assembly references.
 
 ## SfDataPager
 
@@ -2101,24 +2101,6 @@ Syncfusion.Themes.Metro.WPF
 </tr>
 </table>
 
-### Saffron	
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Themes.Saffron.WPF <br/>
-Syncfusion.SfSkinManager.WPF
-</td>
-<td> 
-Syncfusion.Themes.Saffron.WPF
-</td>
-</tr>
-</table>
-
 ### Office2010Black	
 
 <table>
@@ -2223,6 +2205,24 @@ Syncfusion.SfSkinManager.WPF
 </td>
 <td> 
 Syncfusion.Themes.Office2013White.WPF
+</td>
+</tr>
+</table>
+
+### Saffron	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Saffron.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Saffron.WPF
 </td>
 </tr>
 </table>
