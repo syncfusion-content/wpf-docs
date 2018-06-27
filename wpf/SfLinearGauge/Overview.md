@@ -6,15 +6,26 @@ platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
-
 # Overview
 
-Linear Gauge displays a range of values graphically along the linear scale. It can be very well designated as the linear form of the circular gauge. It measures the values of the scales and can be presented in the horizontal or vertical sliding or meter.
+The [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and presents in the horizontal sliding, vertical sliding, or meter.
 
-**Use Cases**
+The [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control is used to visualize numerical values of a scale in linear manner. By using the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control, you can render thermometer.
 
-* Used in the thermometer.
-* Used in the real world applications such as volume control.
-* Used in the industries to visualize the pressure and temperature and many more.
-* Used in the sensors like equipment.
-* Used to visualize the memory usage.
+## Key features
+
+### Scale
+
+The [`Scale`](https://help.syncfusion.com/wpf/sflineargauge/scale) support adding a scale to linear gauge using horizontal and vertical orientations.
+
+### Ranges
+
+Highlights the desired [`Ranges`](https://help.syncfusion.com/wpf/sflineargauge/ranges) of values in the gauge scale.
+
+### Pointers
+
+The [`Pointers`](https://help.syncfusion.com/wpf/sflineargauge/pointers) supports adding multiple pointers (bar and symbol) to the linear scale.
+
+![](Overview_images/Overview_img1.jpeg)
+
+
