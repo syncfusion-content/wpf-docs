@@ -330,7 +330,7 @@ Description
 
 <tr>
 <td>
-[SfTreeGrid.AllowDragginRows]      (https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)
+[SfTreeGrid.AllowDragginRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)
 </td>
 <td>
 Gets or sets whether end-users can drag the nodes in SfTreeGrid.
@@ -514,7 +514,7 @@ Resources should have DataTemplate definition which we have mentioned in RowDrag
 
 #### Disable the Dragging of Certain Node
 
-You can disable the dragging functionality of specific nodes. To handle this, you need to raise the [RowDragandDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event.  
+You can disable the dragging functionality of specific nodes. To handle this, you need to raise the [SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -534,7 +534,7 @@ private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.T
 
 #### Disable Drop Over Certain Node
 
-You can disable the dropping functionality of specific nodes. To handle this, you need to raise the RowDragandDropController.Drop event.  
+You can disable the dropping functionality of specific nodes. To handle this, you need to raise the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -554,7 +554,7 @@ private void RowDragDropController_Drop(object sender, TreeGridRowDropEventArgs 
 
 #### Disable Default Drag UI
 
-You can disable the dropping functionality of specific nodes. To handle this, you need to raise the [RowDragandDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
+You can disable the dropping functionality of specific nodes. To handle this, you need to raise the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
 
 {% tabs %}
 {% highlight c# %}
