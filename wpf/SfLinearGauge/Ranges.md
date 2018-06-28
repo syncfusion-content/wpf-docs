@@ -21,25 +21,27 @@ The start and end values of ranges are set using the `StartValue` and `EndValue`
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Ranges>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearRange StartValue="0" EndValue="60"
-                                           RangeStroke="#27BEB7"  StartWidth="10"
-                                           EndWidth="10" RangeOffset="0.4" />
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                    </gauge:LinearScale.Ranges>
+    <gauge:LinearScale.Ranges>
 
-                </gauge:LinearScale>
+    <gauge:LinearRange StartValue="0" EndValue="60"
 
-            </gauge:SfLinearGauge.MainScale>
+    RangeStroke="#27BEB7"  StartWidth="10" EndWidth="10" RangeOffset="0.4" />
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale.Ranges>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -93,27 +95,29 @@ The UI element of a range is customized by changing the `RangeStroke` of the lin
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Ranges>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearRange StartValue="0" EndValue="50"
-                                           RangeStroke="#F95C85"  StartWidth="5"
-                                           EndWidth="20"  RangeOpacity="1"/>
+    ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
 
-                    </gauge:LinearScale.Ranges>
+    <gauge:LinearScale.Ranges>
 
-                </gauge:LinearScale>
+    <gauge:LinearRange StartValue="0" EndValue="50" RangeStroke="#F95C85"  StartWidth="5"
+                                           
+    EndWidth="20"  RangeOpacity="1"/>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:LinearScale.Ranges>
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -167,41 +171,45 @@ You can bind the range’s stroke to tick lines and labels within its range by s
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale BindRangeStrokeToLabels="True"
-                                    BindRangeStrokeToTicks="True"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale BindRangeStrokeToLabels="True" BindRangeStrokeToTicks="True"
+                                  
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                                  
+    MinorTickStroke="Gray" LabelStroke="#424242"
+                                  
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                    <gauge:LinearScale.Ranges>
+    <gauge:LinearScale.Ranges>
 
-                        <gauge:LinearRange StartValue="0" EndValue="35" 
-                                            StartWidth="15" EndWidth="15" 
-                                            RangeOffset="5" RangeStroke="Green"/>
-                        <gauge:LinearRange StartValue="35" EndValue="65" 
-                                            StartWidth="15" EndWidth="15" 
-                                            RangeOffset="5" RangeStroke="Yellow"/>
-                        <gauge:LinearRange StartValue="65" EndValue="100" 
-                                            StartWidth="15" EndWidth="15" 
-                                            RangeOffset="5" RangeStroke="Red"/>
+    <gauge:LinearRange StartValue="0" EndValue="35"  StartWidth="15" EndWidth="15" 
 
-                    </gauge:LinearScale.Ranges>
+    RangeOffset="5" RangeStroke="Green"/>
 
-                </gauge:LinearScale>
+    <gauge:LinearRange StartValue="35" EndValue="65" 
 
-            </gauge:SfLinearGauge.MainScale>
+    StartWidth="15" EndWidth="15" RangeOffset="5" RangeStroke="Yellow"/>
+                                            
+    <gauge:LinearRange StartValue="65" EndValue="100"  StartWidth="15" EndWidth="15" 
 
-        </gauge:SfLinearGauge>
+    RangeOffset="5" RangeStroke="Red"/>
+
+    </gauge:LinearScale.Ranges>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-              SfLinearGauge sfLinearGauge = new SfLinearGauge();
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
             LinearScale linearScale = new LinearScale();
 
@@ -289,28 +297,29 @@ Using the `RangeOffset` property, the linear range can be positioned with respec
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale RangePosition="Below"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale RangePosition="Below"
 
-                    <gauge:LinearScale.Ranges>
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearRange StartValue="0" EndValue="60"
-                                           RangeStroke="#27BEB7" RangeOffset="-40" StartWidth="10"
-                                           EndWidth="10"/>
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                    </gauge:LinearScale.Ranges>
+    <gauge:LinearScale.Ranges>
 
-                </gauge:LinearScale>
+    <gauge:LinearRange StartValue="0" EndValue="60" RangeStroke="#27BEB7" RangeOffset="-40" StartWidth="10"
 
-            </gauge:SfLinearGauge.MainScale>
+    EndWidth="10"/>
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale.Ranges>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -369,34 +378,35 @@ The range can be placed above or below the scale by choosing one of the followin
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale RangePosition="Below"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
+    <gauge:LinearScale RangePosition="Below"
 
-                    <gauge:LinearScale.Ranges>
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearRange StartValue="0" EndValue="60"
-                                           RangeStroke="#27BEB7"  StartWidth="10"
-                                           EndWidth="10"  />
+    ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
 
-                    </gauge:LinearScale.Ranges>
+    <gauge:LinearScale.Ranges>
 
-                </gauge:LinearScale>
+    <gauge:LinearRange StartValue="0" EndValue="60"
 
-            </gauge:SfLinearGauge.MainScale>
+     RangeStroke="#27BEB7"  StartWidth="10" EndWidth="10"  />
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale.Ranges>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfLinearGauge sfLinearGauge = new SfLinearGauge();
+          SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
             LinearScale linearScale = new LinearScale();
 
@@ -444,33 +454,33 @@ You can add “n” number of ranges to a scale using the `LinearRange` property
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Ranges>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearRange StartValue="0" EndValue="35" 
-                                            StartWidth="25" EndWidth="10" 
-                                            RangeOffset="5" RangeOpacity="1"
-                                            RangeStroke="Green"/>
+    ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
 
-                        <gauge:LinearRange StartValue="65" EndValue="100" 
-                                            StartWidth="10" EndWidth="25" 
-                                            RangeOffset="5" RangeOpacity="1"
-                                            RangeStroke="Red"/>
+    <gauge:LinearScale.Ranges>
 
-                    </gauge:LinearScale.Ranges>
+    <gauge:LinearRange StartValue="0" EndValue="35"  StartWidth="25" EndWidth="10" 
 
-                </gauge:LinearScale>
+     RangeOffset="5" RangeOpacity="1" RangeStroke="Green"/>
 
-            </gauge:SfLinearGauge.MainScale>
+    <gauge:LinearRange StartValue="65" EndValue="100"  StartWidth="10" EndWidth="25" 
 
-        </gauge:SfLinearGauge>
+     RangeOffset="5" RangeOpacity="1" RangeStroke="Red"/>
+
+    </gauge:LinearScale.Ranges>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 

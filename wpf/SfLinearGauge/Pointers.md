@@ -19,25 +19,27 @@ The `LinearGauge` provides support to mark values using the `BarPointer` and `Sy
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="20" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Pointers>
+     MinorTickStroke="Gray" LabelStroke="#424242" ScaleBarSize="20" MinorTicksPerInterval="3">
 
-                        <gauge:LinearPointer PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC"
-                                             BarPointerStrokeThickness="10"/>
-                    </gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    <gauge:LinearPointer PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC"
 
-            </gauge:SfLinearGauge.MainScale>
+    BarPointerStrokeThickness="10"/>
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -87,26 +89,27 @@ The UI of `Bar pointer` is customized using the `BarPointerStroke` and `BarPoint
 
 {% highlight xml %}
 
-        <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="20" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
 
-                    <gauge:LinearScale.Pointers>
+    ScaleBarSize="20" MinorTicksPerInterval="3">
 
-                        <gauge:LinearPointer PointerType="BarPointer" Value="75" BarPointerStroke="Orange"
-                                             BarPointerStrokeThickness="10"/>
+    <gauge:LinearScale.Pointers>
 
-                    </gauge:LinearScale.Pointers>
+    <gauge:LinearPointer PointerType="BarPointer" Value="75" BarPointerStroke="Orange"
 
-                </gauge:LinearScale>
+    BarPointerStrokeThickness="10"/>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:LinearScale.Pointers>
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -156,27 +159,31 @@ In `SymbolPointer`, the value is pointed by a symbol on the scale.
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Pointers>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
-                                             SymbolPointerHeight="15" SymbolPointerWidth="15"
-                                              SymbolPointerPosition="Above" SymbolPointerStroke="#5B86E5"/>
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                    </gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
 
-            </gauge:SfLinearGauge.MainScale>
+    SymbolPointerHeight="15" SymbolPointerWidth="15"
 
-        </gauge:SfLinearGauge>
+    SymbolPointerPosition="Above" SymbolPointerStroke="#5B86E5"/>
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -230,29 +237,33 @@ You can modify the size of symbol pointer by changing the `SymbolPointerHeight` 
 
 {% highlight xml %}
 
-       <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Pointers>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearPointer   PointerType="SymbolPointer" Value="60"
-                                               SymbolPointerHeight="15" SymbolPointerWidth="20"
-                                               SymbolPointerStroke="DeepSkyBlue"/>
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                    </gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    <gauge:LinearPointer   PointerType="SymbolPointer" Value="60"
 
-            </gauge:SfLinearGauge.MainScale>
+    SymbolPointerHeight="15" SymbolPointerWidth="20"
 
-        </gauge:SfLinearGauge>
+    SymbolPointerStroke="DeepSkyBlue"/>
 
-        {% endhighlight %}
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -299,35 +310,40 @@ You can modify the size of symbol pointer by changing the `SymbolPointerHeight` 
 The `SymbolPointer` in the scale can be placed above, below, or in between the scale by choosing the following options available in the `SymbolPointerPosition` property:
 
 1.	Above
+
 2.	Below (Default)
+
 3.	Cross
 
 {% tabs %}
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" >
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Pointers>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearPointer  PointerType="SymbolPointer" Value="60"
-                                              SymbolPointerPosition="Cross"
-                                              SymbolPointerHeight="10" SymbolPointerWidth="10"
-                                              SymbolPointerStroke="#5B86E5"/>
+    ScaleBarSize="10" MinorTicksPerInterval="3" >
 
-                    </gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    <gauge:LinearPointer  PointerType="SymbolPointer" Value="60"
 
-            </gauge:SfLinearGauge.MainScale>
+    SymbolPointerPosition="Cross" SymbolPointerHeight="10" SymbolPointerWidth="10"
 
-        </gauge:SfLinearGauge>
+    SymbolPointerStroke="#5B86E5"/>
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -379,37 +395,41 @@ The `SymbolPointerStyle` property is used to select symbol pointer style.
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-                    <gauge:LinearScale.Pointers>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
-                                           SymbolPointerStyle="Custom">
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                            <gauge:LinearPointer.SymbolPointerTemplate>
+    <gauge:LinearScale.Pointers>
+
+    <gauge:LinearPointer PointerType="SymbolPointer" Value="60"SymbolPointerStyle="Custom">
+
+    <gauge:LinearPointer.SymbolPointerTemplate>
                                
-                                    <DataTemplate>
-                                        <Rectangle Width="10" Height="10" Stroke="Red" StrokeThickness="10">
-                                        </Rectangle>
-                                   </DataTemplate>
+    <DataTemplate>
+
+    <Rectangle Width="10" Height="10" Stroke="Red" StrokeThickness="10">
+
+    </Rectangle>
+
+    </DataTemplate>
                                 
-                            </gauge:LinearPointer.SymbolPointerTemplate>
+    </gauge:LinearPointer.SymbolPointerTemplate>
                             
-                        </gauge:LinearPointer>
+    </gauge:LinearPointer>
 
-                    </gauge:LinearScale.Pointers>
+    </gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -423,30 +443,28 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="20" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+    MinorTickStroke="Gray" LabelStroke="#424242"
+    ScaleBarSize="20" MinorTicksPerInterval="3">
 
-                    <gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
-                                             SymbolPointerHeight="15" SymbolPointerWidth="15"
-                                              SymbolPointerPosition="Above" SymbolPointerStroke="#5B86E5"/>
+    <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
+     SymbolPointerHeight="15" SymbolPointerWidth="15" SymbolPointerPosition="Above" SymbolPointerStroke="#5B86E5"/>
 
-                        <gauge:LinearPointer PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC"
-                                             BarPointerStrokeThickness="10"/>
+    <gauge:LinearPointer PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC" BarPointerStrokeThickness="10"/>
 
-                    </gauge:LinearScale.Pointers>
+    </gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 

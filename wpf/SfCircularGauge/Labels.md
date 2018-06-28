@@ -21,17 +21,21 @@ The label color can be changed using the `LabelStroke` property.
 
     <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelStroke="DeepPink">
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale LabelStroke="DeepPink">
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -67,24 +71,29 @@ The label font can be customized using the `FontSize`, `FontFamily`, and `FontSt
 
     <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale FontFamily="Monotype Corsiva" FontSize="20" 
-                                FontStyle="Italic" >
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale FontFamily="Monotype Corsiva" FontSize="20" 
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    FontStyle="Italic" >
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- SfCircularGauge sfCircularGauge = new SfCircularGauge();
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale mainscale = new CircularScale();
 
@@ -117,32 +126,38 @@ sfCircularGauge.Scales.Add(mainscale);
       They are,
 
 1.	Inside (Default)
+
 2.	Outside
+
 3.	Custom
 
 {% tabs %}
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelPosition="Outside" >
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale LabelPosition="Outside" >
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale mainscale = new CircularScale();
 
@@ -170,19 +185,23 @@ sfCircularGauge.Scales.Add(mainscale);
 
     <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelPosition="Custom" LabelOffset="0.5" >
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale LabelPosition="Custom" LabelOffset="0.5" >
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
 
-        {% endhighlight %}
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -238,19 +257,23 @@ The `NumericScaleType` property allows to set the type of label. The following t
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale StartValue="0" EndValue="500" EnableSmartLabels="True" NumericScaleType="Thousands">
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale StartValue="0" EndValue="500" EnableSmartLabels="True" NumericScaleType="Thousands">
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -290,19 +313,23 @@ The `NoOfFractionDigit` property is used to set the number of fractional digits 
 
 {% highlight xml %}
 
-       <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale NoOfFractionalDigit="3">
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale NoOfFractionalDigit="3">
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -340,19 +367,23 @@ The `LabelPostfix` property allows to postfix the values to the scale labels.
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelPostfix="k">
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale LabelPostfix="k">
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -386,19 +417,23 @@ The `LabelPrefix` property allows to prefix the values to the scale labels.
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelPrefix="$">
+    <gauge:SfCircularGauge.Scales>
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:CircularScale LabelPrefix="$">
 
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale.Pointers>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
